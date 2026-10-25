@@ -20,8 +20,8 @@
     {
       "baslik": "1. Kütlelerin Etkisi Yasası ve Derişimler Türünden Denge Sabiti (Kc)",
       "metin": [
-        "Sabit sıcaklıkta kapalı bir kapta gerçekleşen genel bir tersinir tepkime düşünelim: aA(g) + bB(g) çift yönlü ok cC(g) + dD(g). Tek basamakta gerçekleşen bu tepkimede ileri yöndeki hız bağıntısı r_ileri = k_i · {us:[A]|a} · {us:[B]|b}, geri yöndeki hız bağıntısı ise r_geri = k_g · {us:[C]|c} · {us:[D]|d} şeklinde yazılır. Sistem dinamik dengeye ulaştığı anda ileri ve geri tepkime hızları birbirine eşitlenir (r_ileri = r_geri).",
-        "Hız ifadeleri eşitlenip hız sabitleri bir tarafta, molar derişimler diğer tarafta toplandığında derişimler türünden denge sabiti (Kc veya Kd) elde edilir: Kc = {kesir:k_i|k_g} = {kesir:{us:[C]|c} · {us:[D]|d},{us:[A]|a} · {us:[B]|b}}. Guldberg ve Waage tarafından ortaya konulan ve 'Kütlelerin Etkisi Yasası' olarak bilinen bu bağıntıya göre; dengedeki bir tepkimede ürünlerin denge derişimlerinin (katsayıları üs olarak alınarak) çarpımının, girenlerin denge derişimlerinin çarpımına oranı sabit sıcaklıkta daima sabittir ve 'Kc' yalnız sıcaklıkla değişir."
+        "Sabit sıcaklıkta kapalı bir kapta gerçekleşen genel bir tersinir tepkime düşünelim: aA(g) + bB(g) çift yönlü ok cC(g) + dD(g). Tek basamakta gerçekleşen bu tepkimede ileri yöndeki hız bağıntısı r{alt:ileri} = k{alt:i} · {us:[A]|a} · {us:[B]|b}, geri yöndeki hız bağıntısı ise r{alt:geri} = k{alt:g} · {us:[C]|c} · {us:[D]|d} şeklinde yazılır. Sistem dinamik dengeye ulaştığı anda ileri ve geri tepkime hızları birbirine eşitlenir (r{alt:ileri} = r{alt:geri}).",
+        "Hız ifadeleri eşitlenip hız sabitleri bir tarafta, molar derişimler diğer tarafta toplandığında derişimler türünden denge sabiti (Kc veya Kd) elde edilir: Kc = {kesir:k{alt:i}|k{alt:g}} = {kesir:{us:[C]|c} · {us:[D]|d},{us:[A]|a} · {us:[B]|b}}. Guldberg ve Waage tarafından ortaya konulan ve 'Kütlelerin Etkisi Yasası' olarak bilinen bu bağıntıya göre; dengedeki bir tepkimede ürünlerin denge derişimlerinin (katsayıları üs olarak alınarak) çarpımının, girenlerin denge derişimlerinin çarpımına oranı sabit sıcaklıkta daima sabittir ve 'Kc' yalnız sıcaklıkla değişir."
       ],
       "kutular": [
         {
@@ -38,9 +38,9 @@
         ],
         "satirlar": [
           [
-            "k_i ve k_g",
+            "k{alt:i} ve k{alt:g}",
             "İleri ve geri tepkime hız sabitleri",
-            "Oranları denge sabitini verir: Kc = {kesir:k_i|k_g}"
+            "Oranları denge sabitini verir: Kc = {kesir:k{alt:i}|k{alt:g}}"
           ],
           [
             "[X]",
@@ -74,7 +74,7 @@
         }
       ],
       "liste": [
-        "Örnek 1 (Homojen): N2(g) + 3H2(g) <-> 2NH3(g)  =>  Kc = {kesir:{us:[NH3]|2}|[N2]·{us:[H2]|3}} ve Kp = {kesir:{us:(P_NH3)|2}|P_N2 · {us:(P_H2)|3}}",
+        "Örnek 1 (Homojen): N2(g) + 3H2(g) <-> 2NH3(g)  =>  Kc = {kesir:{us:[NH3]|2}|[N2]·{us:[H2]|3}} ve Kp = {kesir:{us:(P{alt:NH3})|2}|P{alt:N2} · {us:(P{alt:H2})|3}}",
         "Örnek 2 (Heterojen Katı-Gaz): C(k) + CO2(g) <-> 2CO(g)  =>  C(k) alınmaz; Kc = {kesir:{us:[CO]|2}|[CO2]}",
         "Örnek 3 (Heterojen Sıvı-Suda): NH3(suda) + H2O(s) <-> NH4+(suda) + OH-(suda)  =>  H2O(s) alınmaz; Kc = {kesir:[NH4+]·[OH-]|[NH3]}",
         "Örnek 4 (Yalnız Girenlerde Gaz): Zn(k) + 2HCl(suda) <-> ZnCl2(suda) + H2(g)  =>  Zn(k) alınmaz; Kc = {kesir:[ZnCl2]·[H2],{us:[HCl]|2}}"
@@ -84,20 +84,20 @@
     {
       "baslik": "3. Kısmi Basınçlar Türünden Denge Sabiti (Kp) ve Kp-Kc İlişkisi",
       "metin": [
-        "Gaz fazında gerçekleşen denge tepkimelerinde gazların molar derişimleri yerine kısmi basınçları (P) kullanılarak da denge bağıntısı yazılabilir; buna 'kısmi basınçlar türünden denge sabiti (Kp)' denir. Kp bağıntısına yalnızca gaz (g) fazındaki maddeler alınır; katı (k), sıvı (s) ve sulu çözelti (suda/aq) fazındaki maddeler Kp bağıntısında yer almaz! Örneğin aA(g) + bB(g) çift yönlü ok cC(g) + dD(g) tepkimesi için Kp = {kesir:{us:(P_C)|c} · {us:(P_D)|d},{us:(P_A)|a} · {us:(P_B)|b}} şeklindedir.",
-        "İdeal gaz denkleminden (P·V = n·R·T -> P = {kesir:n|V}·R·T = [M]·R·T) hareketle Kp ile Kc arasında çok önemli bir matematiksel bağıntı türetilir: Kp = Kc · {us:(R·T)|Delta_n}. Bu formülde R ideal gaz sabiti ({kesir:22,4|273} veya 0,082 L·atm/mol·K), T mutlak sıcaklık (Kelvin = °C + 273) ve Delta_n ise 'denklemdeki gaz fazındaki ürünlerin katsayıları toplamı eksi gaz fazındaki girenlerin katsayıları toplamı' (Delta_n = n_ürün(gaz) - n_giren(gaz)) değeridir. Eğer bir tepkimede Delta_n = 0 ise {us:(R·T)|0} = 1 olacağından Kp = Kc olur."
+        "Gaz fazında gerçekleşen denge tepkimelerinde gazların molar derişimleri yerine kısmi basınçları (P) kullanılarak da denge bağıntısı yazılabilir; buna 'kısmi basınçlar türünden denge sabiti (Kp)' denir. Kp bağıntısına yalnızca gaz (g) fazındaki maddeler alınır; katı (k), sıvı (s) ve sulu çözelti (suda/aq) fazındaki maddeler Kp bağıntısında yer almaz! Örneğin aA(g) + bB(g) çift yönlü ok cC(g) + dD(g) tepkimesi için Kp = {kesir:{us:(P{alt:C})|c} · {us:(P{alt:D})|d},{us:(P{alt:A})|a} · {us:(P{alt:B})|b}} şeklindedir.",
+        "İdeal gaz denkleminden (P·V = n·R·T -> P = {kesir:n|V}·R·T = [M]·R·T) hareketle Kp ile Kc arasında çok önemli bir matematiksel bağıntı türetilir: Kp = Kc · {us:(R·T)|Δn}. Bu formülde R ideal gaz sabiti ({kesir:22,4|273} veya 0,082 L·atm/mol·K), T mutlak sıcaklık (Kelvin = °C + 273) ve Δn ise 'denklemdeki gaz fazındaki ürünlerin katsayıları toplamı eksi gaz fazındaki girenlerin katsayıları toplamı' (Δn = n{alt:ürün}(gaz) - n{alt:giren}(gaz)) değeridir. Eğer bir tepkimede Δn = 0 ise {us:(R·T)|0} = 1 olacağından Kp = Kc olur."
       ],
       "kutular": [
         {
-          "baslik": "Köpek Kudurtan Bağıntısı: Kp = Kc · (R·T)^Delta_n",
-          "metin": "Delta_n hesaplanırken yalnız GAZ (g) fazındaki maddelerin katsayıları toplanır! Katı, sıvı ve sulu çözeltilerin katsayıları Delta_n hesabına kesinlikle katılmaz."
+          "baslik": "Köpek Kudurtan Bağıntısı: Kp = Kc · {us:(R·T)|Δn}",
+          "metin": "Δn hesaplanırken yalnız GAZ (g) fazındaki maddelerin katsayıları toplanır! Katı, sıvı ve sulu çözeltilerin katsayıları Δn hesabına kesinlikle katılmaz."
         }
       ],
       "tablo": {
-        "baslik": "Farklı Tepkimelerde Delta_n ve Kp - Kc İlişkisi Örnekleri",
+        "baslik": "Farklı Tepkimelerde Δn ve Kp - Kc İlişkisi Örnekleri",
         "basliklar": [
           "Denge Tepkimesi",
-          "Delta_n = n_ürün(g) - n_giren(g)",
+          "Δn = n{alt:ürün}(g) - n{alt:giren}(g)",
           "Kp ile Kc Arasındaki Bağıntı"
         ],
         "satirlar": [
@@ -128,13 +128,13 @@
     {
       "baslik": "4. Denge Denklemi ve Denge Sabiti İlişkisi (Hess Yasası Uygulaması)",
       "metin": [
-        "Kimyasal denge tepkimeleri üzerinde matematiksel işlemler yapıldığında denge sabiti (Kc veya Kp) belirli kurallara göre değişir. Birincisi: Bir denge tepkimesi ters çevrilirse (girenler ile ürünler yer değiştirirse), yeni tepkimenin denge sabiti ilk denge sabitinin çarpmaya göre tersi olur: Kc_yeni = {kesir:1|Kc}.",
-        "İkincisi: Bir denge tepkimesinin tüm katsayıları herhangi bir n sayısı ile çarpılırsa, bu sayı denge sabitinin üssü olarak yazılır: Kc_yeni = {us:(Kc)|n}. (Örneğin denklem 2 ile çarpılırsa {us:Kc|2}, yarıya bölünürse {us:Kc|1/2} = {kok:Kc} olur.) Üçüncüsü: İki veya daha fazla denge tepkimesi taraf tarafa toplanarak net bir tepkime elde edilirse, net tepkimenin denge sabiti toplanan tepkimelerin denge sabitlerinin çarpımına eşittir: Kc_net = Kc1 · Kc2."
+        "Kimyasal denge tepkimeleri üzerinde matematiksel işlemler yapıldığında denge sabiti (Kc veya Kp) belirli kurallara göre değişir. Birincisi: Bir denge tepkimesi ters çevrilirse (girenler ile ürünler yer değiştirirse), yeni tepkimenin denge sabiti ilk denge sabitinin çarpmaya göre tersi olur: Kc{alt:yeni} = {kesir:1|Kc}.",
+        "İkincisi: Bir denge tepkimesinin tüm katsayıları herhangi bir n sayısı ile çarpılırsa, bu sayı denge sabitinin üssü olarak yazılır: Kc{alt:yeni} = {us:(Kc)|n}. (Örneğin denklem 2 ile çarpılırsa {us:Kc|2}, yarıya bölünürse {us:Kc|1/2} = {kok:Kc} olur.) Üçüncüsü: İki veya daha fazla denge tepkimesi taraf tarafa toplanarak net bir tepkime elde edilirse, net tepkimenin denge sabiti toplanan tepkimelerin denge sabitlerinin çarpımına eşittir: Kc{alt:net} = Kc1 · Kc2."
       ],
       "kutular": [
         {
-          "baslik": "Entalpi (Delta_H) ile Denge Sabiti (Kc) Kural Farkı",
-          "metin": "Entalpide denklem ters çevrilince işaret değişir (-Delta_H), katsayıyla çarpılınca çarpılır, toplanınca toplanırdı. Dengede ise ters çevrilince 1/Kc alınır, katsayı üs olur ({us:Kc|n}), denklemler toplanınca Kc değerleri ÇARPILIR (Kc1 · Kc2)!"
+          "baslik": "Entalpi (ΔH) ile Denge Sabiti (Kc) Kural Farkı",
+          "metin": "Entalpide denklem ters çevrilince işaret değişir (-ΔH), katsayıyla çarpılınca çarpılır, toplanınca toplanırdı. Dengede ise ters çevrilince 1/Kc alınır, katsayı üs olur ({us:Kc|n}), denklemler toplanınca Kc değerleri ÇARPILIR (Kc1 · Kc2)!"
         }
       ],
       "tablo": {
@@ -168,7 +168,7 @@
           [
             "İki Tepkime Taraf Tarafa Toplanırsa",
             "Tepkime 1 + Tepkime 2 = Net Tepkime",
-            "Kc_net = Kc1 · Kc2"
+            "Kc{alt:net} = Kc1 · Kc2"
           ]
         ]
       },
@@ -178,7 +178,7 @@
       "baslik": "5. Başlangıç-Değişim-Denge (BDD) Tablosu ile Nicel Hesaplamalar",
       "metin": [
         "Bir tepkime kabına yalnız girenler veya girenlerle birlikte ürünler konulduğunda sistemin dengeye ulaşma sürecindeki mol ve derişim hesaplamaları 'Başlangıç - Değişim - Denge (BDD)' tablosu kurularak yapılır. Başlangıç satırına kaba konulan ilk mol sayıları yazılır. Değişim satırında ise tepkimenin ilerlediği yönde girenlerin mol sayısı stokiyometrik katsayılarıyla orantılı olarak azalırken (-a·x, -b·x), ürünlerin mol sayısı katsayılarıyla orantılı olarak artar (+c·x, +d·x).",
-        "Denge satırında her maddenin son mol sayısı (n_denge = n_başlangıç ± n_değişim) bulunur. Çok önemli bir adım olarak; denge bağıntısında köşeli parantezler molar derişimi (M = {kesir:n|V}) ifade ettiğinden, denge mol sayıları mutlaka kabın hacmine (V) bölünerek molar derişimlere çevrilir ve Kc bağıntısında yerine yazılır."
+        "Denge satırında her maddenin son mol sayısı (n{alt:denge} = n{alt:başlangıç} ± n{alt:değişim}) bulunur. Çok önemli bir adım olarak; denge bağıntısında köşeli parantezler molar derişimi (M = {kesir:n|V}) ifade ettiğinden, denge mol sayıları mutlaka kabın hacmine (V) bölünerek molar derişimlere çevrilir ve Kc bağıntısında yerine yazılır."
       ],
       "kutular": [
         {
@@ -218,7 +218,7 @@
           [
             "Qc = Kc",
             "Dengededir",
-            "Net ilerleme olmaz (r_i = r_g)",
+            "Net ilerleme olmaz (r{alt:i} = r{alt:g})",
             "Giren ve ürün derişimleri değişmez"
           ],
           [
@@ -241,15 +241,15 @@
   "ornekler": [
     {
       "soru": "Aşağıda verilen heterojen denge tepkimesinin derişimler türünden (Kc) ve kısmi basınçlar türünden (Kp) denge bağıntılarını yazınız:\nFe3O4(k) + 4H2(g) çift yönlü ok 3Fe(k) + 4H2O(g)",
-      "cevap": "Saf katılar olan Fe3O4(k) ve Fe(k) denge bağıntısında yer almaz; yalnız gaz fazındaki H2(g) ve H2O(g) alınır.\nKc = {kesir:{us:[H2O]|4},{us:[H2]|4}}\nKp = {kesir:{us:(P_H2O)|4},{us:(P_H2)|4}}",
-      "cozum": "Saf katılar olan Fe3O4(k) ve Fe(k) denge bağıntısında yer almaz; yalnız gaz fazındaki H2(g) ve H2O(g) alınır.\nKc = {kesir:{us:[H2O]|4},{us:[H2]|4}}\nKp = {kesir:{us:(P_H2O)|4},{us:(P_H2)|4}}",
+      "cevap": "Saf katılar olan Fe3O4(k) ve Fe(k) denge bağıntısında yer almaz; yalnız gaz fazındaki H2(g) ve H2O(g) alınır.\nKc = {kesir:{us:[H2O]|4},{us:[H2]|4}}\nKp = {kesir:{us:(P{alt:H2O})|4},{us:(P{alt:H2})|4}}",
+      "cozum": "Saf katılar olan Fe3O4(k) ve Fe(k) denge bağıntısında yer almaz; yalnız gaz fazındaki H2(g) ve H2O(g) alınır.\nKc = {kesir:{us:[H2O]|4},{us:[H2]|4}}\nKp = {kesir:{us:(P{alt:H2O})|4},{us:(P{alt:H2})|4}}",
       "ipucu": "(k) indisli katıları eleyip yalnız (g) indisli maddelerin katsayılarını üs olarak yazınız."
     },
     {
       "soru": "Tarihte 273 °C sıcaklıkta gerçekleşen 2SO2(g) + O2(g) çift yönlü ok 2SO3(g) tepkimesinin derişimler türünden denge sabiti Kc = 44,8 olduğuna göre kısmi basınçlar türünden denge sabiti Kp kaçtır? (R = {kesir:22,4|273} L·atm/mol·K)",
-      "cevap": "Önce sıcaklığı Kelvin'e çevirelim: T = 273 + 273 = 546 K. Buradan R·T = {kesir:22,4|273} · 546 = 44,8 bulunur. Gaz katsayıları farkı Delta_n = n_ürün(g) - n_giren(g) = 2 - (2 + 1) = -1 dir. Bağıntıda yerine yazılırsa: Kp = Kc · {us:(R·T)|-1} = {kesir:Kc|R·T} = {kesir:44,8|44,8} = 1 bulunur.",
-      "cozum": "Önce sıcaklığı Kelvin'e çevirelim: T = 273 + 273 = 546 K. Buradan R·T = {kesir:22,4|273} · 546 = 44,8 bulunur. Gaz katsayıları farkı Delta_n = n_ürün(g) - n_giren(g) = 2 - (2 + 1) = -1 dir. Bağıntıda yerine yazılırsa: Kp = Kc · {us:(R·T)|-1} = {kesir:Kc|R·T} = {kesir:44,8|44,8} = 1 bulunur.",
-      "ipucu": "T = 546 K için R·T = 44,8 değerini ve Delta_n = 2 - 3 = -1 farkını Kp = Kc·{us:(R·T)|Delta_n} formülünde kullanınız."
+      "cevap": "Önce sıcaklığı Kelvin'e çevirelim: T = 273 + 273 = 546 K. Buradan R·T = {kesir:22,4|273} · 546 = 44,8 bulunur. Gaz katsayıları farkı Δn = n{alt:ürün}(g) - n{alt:giren}(g) = 2 - (2 + 1) = -1 dir. Bağıntıda yerine yazılırsa: Kp = Kc · {us:(R·T)|-1} = {kesir:Kc|R·T} = {kesir:44,8|44,8} = 1 bulunur.",
+      "cozum": "Önce sıcaklığı Kelvin'e çevirelim: T = 273 + 273 = 546 K. Buradan R·T = {kesir:22,4|273} · 546 = 44,8 bulunur. Gaz katsayıları farkı Δn = n{alt:ürün}(g) - n{alt:giren}(g) = 2 - (2 + 1) = -1 dir. Bağıntıda yerine yazılırsa: Kp = Kc · {us:(R·T)|-1} = {kesir:Kc|R·T} = {kesir:44,8|44,8} = 1 bulunur.",
+      "ipucu": "T = 546 K için R·T = 44,8 değerini ve Δn = 2 - 3 = -1 farkını Kp = Kc·{us:(R·T)|Δn} formülünde kullanınız."
     },
     {
       "soru": "Belirli bir sıcaklıkta N2(g) + 3H2(g) çift yönlü ok 2NH3(g) tepkimesinin denge sabiti Kc1 = 16'dır. Aynı sıcaklıkta NH3(g) çift yönlü ok {kesir:1|2}N2(g) + {kesir:3|2}H2(g) tepkimesinin denge sabiti (Kc2) kaçtır?",
@@ -270,10 +270,10 @@
       "ipucu": "Qc'yi hesaplayıp Kc = 4 ile karşılaştırınız; Qc > Kc ise sistem girenlere kayar."
     },
     {
-      "soru": "İleri yöndeki hız sabiti k_i = 6·{us:10|-2} ve geri yöndeki hız sabiti k_g = 1,5·{us:10|-3} olan tek basamaklı bir denge tepkimesinin aynı sıcaklıktaki denge sabiti (Kc) kaçtır?",
-      "cevap": "Denge sabiti ileri hız sabitinin geri hız sabitine oranına eşittir: Kc = {kesir:k_i|k_g} = {kesir:6·{us:10|-2}|1,5·{us:10|-3}} = {kesir:60·{us:10|-3}|1,5·{us:10|-3}} = 40 bulunur.",
-      "cozum": "Denge sabiti ileri hız sabitinin geri hız sabitine oranına eşittir: Kc = {kesir:k_i|k_g} = {kesir:6·{us:10|-2}|1,5·{us:10|-3}} = {kesir:60·{us:10|-3}|1,5·{us:10|-3}} = 40 bulunur.",
-      "ipucu": "Kc = {kesir:k_i|k_g} bağıntısını doğrudan uygulayınız."
+      "soru": "İleri yöndeki hız sabiti k{alt:i} = 6·{us:10|-2} ve geri yöndeki hız sabiti k{alt:g} = 1,5·{us:10|-3} olan tek basamaklı bir denge tepkimesinin aynı sıcaklıktaki denge sabiti (Kc) kaçtır?",
+      "cevap": "Denge sabiti ileri hız sabitinin geri hız sabitine oranına eşittir: Kc = {kesir:k{alt:i}|k{alt:g}} = {kesir:6·{us:10|-2}|1,5·{us:10|-3}} = {kesir:60·{us:10|-3}|1,5·{us:10|-3}} = 40 bulunur.",
+      "cozum": "Denge sabiti ileri hız sabitinin geri hız sabitine oranına eşittir: Kc = {kesir:k{alt:i}|k{alt:g}} = {kesir:6·{us:10|-2}|1,5·{us:10|-3}} = {kesir:60·{us:10|-3}|1,5·{us:10|-3}} = 40 bulunur.",
+      "ipucu": "Kc = {kesir:k{alt:i}|k{alt:g}} bağıntısını doğrudan uygulayınız."
     }
   ],
   "etkinlikler": [
@@ -302,7 +302,7 @@
         "PCl5(g) <-> PCl3(g) + Cl2(g)"
       ],
       "dogru": 2,
-      "aciklama": "CO(g) + H2O(g) <-> CO2(g) + H2(g) tepkimesinde ürünlerdeki gaz katsayıları toplamı (1+1=2) ile girenlerdeki gaz katsayıları toplamı (1+1=2) eşit olduğundan Delta_n = 0 ve Kp = Kc olur.",
+      "aciklama": "CO(g) + H2O(g) <-> CO2(g) + H2(g) tepkimesinde ürünlerdeki gaz katsayıları toplamı (1+1=2) ile girenlerdeki gaz katsayıları toplamı (1+1=2) eşit olduğundan Δn = 0 ve Kp = Kc olur.",
       "tur": "coktan"
     },
     {
@@ -369,11 +369,11 @@
       "tip": "eslestir",
       "ciftler": [
         [
-          "Kc = {kesir:k_i|k_g}",
+          "Kc = {kesir:k{alt:i}|k{alt:g}}",
           "İleri ve geri hız sabitlerinin oranıyla bulunan derişim denge sabiti"
         ],
         [
-          "Kp = Kc · {us:(R·T)|Delta_n}",
+          "Kp = Kc · {us:(R·T)|Δn}",
           "Kısmi basınçlar ile derişimler denge sabitleri arasındaki bağıntı"
         ],
         [
@@ -385,7 +385,7 @@
           "Dengede olmayan sistemin ürünler yönüne (sağa) ilerlemesi"
         ],
         [
-          "Kc_net = Kc1 · Kc2",
+          "Kc{alt:net} = Kc1 · Kc2",
           "İki denge tepkimesi toplandığında net denge sabitinin bulunması"
         ]
       ],

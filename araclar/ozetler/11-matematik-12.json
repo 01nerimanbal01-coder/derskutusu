@@ -82,23 +82,23 @@
   "ornekler": [
     {
       "soru": "Köşegenleri birbirine dik kesişen bir ABCD dışbükey dörtgeninde {uzunluk:AB} = 5 cm, {uzunluk:BC} = 8 cm ve {uzunluk:CD} = 7 cm olduğuna göre {uzunluk:DA} uzunluğu kaç cm'dir? Köşegen uzunlukları {uzunluk:AC} = 10 cm ve {uzunluk:BD} = 12 cm ise bu dörtgenin alanı kaç cm{us:2| }'dir?",
-      "cevap": "Köşegenleri dik kesişen dörtgenlerde karşılıklı kenarların kareleri toplamı birbirine eşittir: {uzunluk:AB}^2 + {uzunluk:CD}^2 = {uzunluk:BC}^2 + {uzunluk:DA}^2 -> 5^2 + 7^2 = 8^2 + {uzunluk:DA}^2 -> 25 + 49 = 64 + {uzunluk:DA}^2 -> 74 - 64 = 10 -> {uzunluk:DA} = {kok:10} cm bulunur. Alanı ise köşegenler dik olduğu için Alan = ({uzunluk:AC} · {uzunluk:BD}) / 2 = (10 · 12) / 2 = 60 cm^2 olur."
+      "cevap": "Köşegenleri dik kesişen dörtgenlerde karşılıklı kenarların kareleri toplamı birbirine eşittir: {us:{uzunluk:AB}|2} + {us:{uzunluk:CD}|2} = {us:{uzunluk:BC}|2} + {us:{uzunluk:DA}|2} -> {us:5|2} + {us:7|2} = {us:8|2} + {us:{uzunluk:DA}|2} -> 25 + 49 = 64 + {us:{uzunluk:DA}|2} -> 74 - 64 = 10 -> {uzunluk:DA} = {kok:10} cm bulunur. Alanı ise köşegenler dik olduğu için Alan = ({uzunluk:AC} · {uzunluk:BD}) / 2 = (10 · 12) / 2 = 60 {us:cm|2} olur."
     },
     {
       "soru": "Alt tabanı a = 14 cm, üst tabanı c = 6 cm ve yüksekliği h = 8 cm olan bir yamuğun orta taban uzunluğunu ve alanını hesaplayınız.",
-      "cevap": "Yamuğun orta taban uzunluğu alt ve üst tabanın aritmetik ortalamasıdır: e = (a + c) / 2 = (14 + 6) / 2 = 10 cm bulunur. Yamuğun alanı ise Alan = e · h = 10 · 8 = 80 cm^2 olarak elde edilir."
+      "cevap": "Yamuğun orta taban uzunluğu alt ve üst tabanın aritmetik ortalamasıdır: e = (a + c) / 2 = (14 + 6) / 2 = 10 cm bulunur. Yamuğun alanı ise Alan = e · h = 10 · 8 = 80 {us:cm|2} olarak elde edilir."
     },
     {
       "soru": "Bir eşkenar dörtgenin köşegen uzunlukları 12 cm ve 16 cm'dir. Bu eşkenar dörtgenin çevresini, alanını ve bir kenarına ait yüksekliğini (h) bulunuz.",
-      "cevap": "Eşkenar dörtgenin köşegenleri birbirini dik ortaladığından köşegen yarıları 6 cm ve 8 cm olan dört adet dik üçgen oluşur. 6-8-10 özel dik üçgeninden bir kenar uzunluğu a = 10 cm ve çevresi 4 · 10 = 40 cm bulunur. Alanı köşegenler çarpımının yarısından Alan = (12 · 16) / 2 = 96 cm^2'dir. Aynı alan a · h = 96 bağıntısına eşit olduğundan 10 · h = 96 -> h = 9,6 cm bulunur."
+      "cevap": "Eşkenar dörtgenin köşegenleri birbirini dik ortaladığından köşegen yarıları 6 cm ve 8 cm olan dört adet dik üçgen oluşur. 6-8-10 özel dik üçgeninden bir kenar uzunluğu a = 10 cm ve çevresi 4 · 10 = 40 cm bulunur. Alanı köşegenler çarpımının yarısından Alan = (12 · 16) / 2 = 96 {us:cm|2}'dir. Aynı alan a · h = 96 bağıntısına eşit olduğundan 10 · h = 96 -> h = 9,6 cm bulunur."
     },
     {
       "soru": "Kenar uzunlukları 6 cm ve 8 cm olan bir ABCD dikdörtgeninde köşegen uzunluğunu, çevresini ve alanını hesaplayınız.",
-      "cevap": "Dikdörtgenin çevresi Ç = 2 · (6 + 8) = 28 cm, alanı ise Alan = 6 · 8 = 48 cm^2'dir. Köşegen uzunluğu dik üçgende Pisagor teoremiyle (6-8-10 üçgeni) {uzunluk:AC} = {uzunluk:BD} = {kok:6{us:2| } + 8{us:2| }} = {kok:100} = 10 cm olarak bulunur."
+      "cevap": "Dikdörtgenin çevresi Ç = 2 · (6 + 8) = 28 cm, alanı ise Alan = 6 · 8 = 48 {us:cm|2}'dir. Köşegen uzunluğu dik üçgende Pisagor teoremiyle (6-8-10 üçgeni) {uzunluk:AC} = {uzunluk:BD} = {kok:6{us:2| } + 8{us:2| }} = {kok:100} = 10 cm olarak bulunur."
     },
     {
       "soru": "Köşegen uzunluğu 8{kok:2} cm olan bir karenin bir kenar uzunluğunu, çevresini ve alanını hesaplayınız.",
-      "cevap": "Bir kenarı a olan karenin köşegen uzunluğu e = a{kok:2} olduğundan a{kok:2} = 8{kok:2} -> a = 8 cm bulunur. Karenin çevresi 4a = 4 · 8 = 32 cm ve alanı Alan = a^2 = 8^2 = 64 cm^2 olur."
+      "cevap": "Bir kenarı a olan karenin köşegen uzunluğu e = a{kok:2} olduğundan a{kok:2} = 8{kok:2} -> a = 8 cm bulunur. Karenin çevresi 4a = 4 · 8 = 32 cm ve alanı Alan = {us:a|2} = {us:8|2} = 64 {us:cm|2} olur."
     },
     {
       "soru": "Özel dörtgenleri (ikizkenar yamuk, paralelkenar, eşkenar dörtgen, dikdörtgen, kare ve deltoid) doğruya göre simetri ekseni sayılarına göre sınıflandırınız.",

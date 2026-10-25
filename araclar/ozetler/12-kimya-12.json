@@ -11,7 +11,7 @@
   "ciktilar": [
     "Organik bileşik kavramının tarihsel gelişimini (vitalizm ve Wöhler sentezi) açıklayarak organik ve anorganik bileşikleri özelliklerine göre ayırt eder.",
     "Organik bir bileşiğin kütlece yüzde bileşiminden veya yanma tepkimesi (elementel analiz) verilerinden yararlanarak basit (kaba) formülünü hesaplar.",
-    "Basit formülü ve mol kütlesi (M_A) bilinen organik bileşiklerin molekül (gerçek) formülünü bularak kimyasal hesaplamalar yapar."
+    "Basit formülü ve mol kütlesi (M{alt:A}) bilinen organik bileşiklerin molekül (gerçek) formülünü bularak kimyasal hesaplamalar yapar."
   ],
   "giris": "Canlıların temel yapı taşlarını, ilaçları, plastikleri, yakıtları ve tekstil ürünlerini oluşturan karbon temelli bileşiklerin dünyası organik kimyanın inceleme alanıdır. On dokuzuncu yüzyılda Friedrich Wöhler'in laboratuvarda anorganik tuzlardan üreyi sentezlemesiyle modern kimya bilimine dönüşen karbon kimyasında, bileşiklerin kimliğini belirlemenin ilk adımı basit ve molekül formüllerinin doğru hesaplanmasıdır.",
   "bolumler": [
@@ -39,9 +39,9 @@
     {
       "baslik": "Basit (Kaba) Formül ve Molekül (Gerçek) Formülü",
       "metin": [
-        "Bir bileşiği oluşturan elementlerin yalnız türünü ve atomlarının birbirine olan {koyu:en sade tam sayılı mol oranını} gösteren formüle {koyu:basit (kaba / ampirik) formül} denir. Bileşiğin bir molekülündeki elementlerin {koyu:gerçek atom sayılarını} gösteren formüle ise {koyu:molekül (gerçek) formülü} adı verilir. Molekül formülü, basit formülün {koyu:n} gibi bir pozitif tam sayıyla genişletilmiş hâlidir: {koyu:Molekül Formülü = n · (Basit Formül)} ve {koyu:M_A (Molekül kütlesi) = n · (Basit formül kütlesi)}.",
+        "Bir bileşiği oluşturan elementlerin yalnız türünü ve atomlarının birbirine olan {koyu:en sade tam sayılı mol oranını} gösteren formüle {koyu:basit (kaba / ampirik) formül} denir. Bileşiğin bir molekülündeki elementlerin {koyu:gerçek atom sayılarını} gösteren formüle ise {koyu:molekül (gerçek) formülü} adı verilir. Molekül formülü, basit formülün {koyu:n} gibi bir pozitif tam sayıyla genişletilmiş hâlidir: {koyu:Molekül Formülü = n · (Basit Formül)} ve {koyu:M{alt:A} (Molekül kütlesi) = n · (Basit formül kütlesi)}.",
         "Örneğin glikoz ({koyu:C₆H₁₂O₆}), asetik asit ({koyu:C₂H₄O₂}) ve formaldehit ({koyu:CH₂O}) farklı organik bileşikler olmalarına rağmen üçünün de atom sayıları sadeleştirildiğinde {koyu:basit formülleri CH₂O} olarak aynı çıkar (glikoz için {koyu:n = 6}, asetik asit için {koyu:n = 2}, formaldehit için {koyu:n = 1}). Benzer şekilde asetilen ({koyu:C₂H₂}) ile benzenin ({koyu:C₆H₆}) basit formülleri {koyu:CH}'dir.",
-        "Bir organik bileşiğin yalnız {koyu:basit formülü} biliniyorsa; bileşiğin yapısındaki elementlerin {koyu:türü}, atomların {koyu:sayıca (molce) birleşme oranı} ve atom kütleleri biliniyorsa {koyu:kütlece yüzde bileşimi (sabit oranı)} bulunabilir. Ancak yalnız basit formüle bakılarak bileşiğin gerçek {koyu:mol kütlesi (M_A)} ve bir molekülündeki {koyu:toplam atom sayısı} bilinemez."
+        "Bir organik bileşiğin yalnız {koyu:basit formülü} biliniyorsa; bileşiğin yapısındaki elementlerin {koyu:türü}, atomların {koyu:sayıca (molce) birleşme oranı} ve atom kütleleri biliniyorsa {koyu:kütlece yüzde bileşimi (sabit oranı)} bulunabilir. Ancak yalnız basit formüle bakılarak bileşiğin gerçek {koyu:mol kütlesi (M{alt:A})} ve bir molekülündeki {koyu:toplam atom sayısı} bilinemez."
       ],
       "kutular": [
         {
@@ -60,20 +60,20 @@
     {
       "baslik": "Yanma Tepkimeleri ve Elementel Analiz Hesaplamaları",
       "metin": [
-        "Organik bileşiklerin formüllerini belirlemek için uygulanan en yaygın yöntem {koyu:yakma analizi}dir. Yapısında karbon, hidrojen ve oksijen bulunabilen bir organik bileşik yeterli oksijen gazı ({koyu:O₂}) ile tamamen yakıldığında {koyu:karbondioksit (CO₂)} ve {koyu:su (H₂O)} oluşur. Kütlenin ve atom sayısının korunumu gereği, oluşan {koyu:CO₂}'nin mol sayısı doğrudan organik bileşikteki {koyu:karbonun (C) mol sayısına} eşittir ({koyu:n_C = n_(CO₂)}). Oluşan {koyu:H₂O}'nun mol sayısının {koyu:2 katı} ise bileşikteki {koyu:hidrojenin (H) mol sayısını} verir ({koyu:n_H = 2 · n_(H₂O)}).",
-        "Bileşikte oksijen ({koyu:O}) atomu bulunup bulunmadığını anlamak için karbon ve hidrojenin kütleleri ({koyu:m_C = n_C · 12} ve {koyu:m_H = n_H · 1}) toplanarak yakılan organik bileşiğin toplam kütlesiyle ({koyu:m_toplam}) karşılaştırılır. Eğer {koyu:m_C + m_H = m_toplam} ise bileşikte oksijen yoktur, bileşik yalnız C ve H'den oluşan bir {koyu:hidrokarbondur}.",
-        "Eğer {koyu:m_C + m_H < m_toplam} ise aradaki kütle farkı bileşiğin yapısındaki oksijene aittir: {koyu:m_O = m_toplam − (m_C + m_H)} ve buradan oksijenin mol sayısı {koyu:n_O = {kesir:m_O|16}} formülüyle bulunur. Son adımda {koyu:C, H ve O} elementlerinin mol sayıları yan yana yazılarak en küçük tam sayılara genişletilir/sadeleştirilir ve {koyu:basit formül} elde edilir; bileşiğin 1 molünün kütlesi ({koyu:M_A}) biliniyorsa {koyu:molekül formülü} de belirlenir."
+        "Organik bileşiklerin formüllerini belirlemek için uygulanan en yaygın yöntem {koyu:yakma analizi}dir. Yapısında karbon, hidrojen ve oksijen bulunabilen bir organik bileşik yeterli oksijen gazı ({koyu:O₂}) ile tamamen yakıldığında {koyu:karbondioksit (CO₂)} ve {koyu:su (H₂O)} oluşur. Kütlenin ve atom sayısının korunumu gereği, oluşan {koyu:CO₂}'nin mol sayısı doğrudan organik bileşikteki {koyu:karbonun (C) mol sayısına} eşittir ({koyu:n{alt:C} = n{alt:CO₂}}). Oluşan {koyu:H₂O}'nun mol sayısının {koyu:2 katı} ise bileşikteki {koyu:hidrojenin (H) mol sayısını} verir ({koyu:n{alt:H} = 2 · n{alt:H₂O}}).",
+        "Bileşikte oksijen ({koyu:O}) atomu bulunup bulunmadığını anlamak için karbon ve hidrojenin kütleleri ({koyu:m{alt:C} = n{alt:C} · 12} ve {koyu:m{alt:H} = n{alt:H} · 1}) toplanarak yakılan organik bileşiğin toplam kütlesiyle ({koyu:m{alt:toplam}}) karşılaştırılır. Eğer {koyu:m{alt:C} + m{alt:H} = m{alt:toplam}} ise bileşikte oksijen yoktur, bileşik yalnız C ve H'den oluşan bir {koyu:hidrokarbondur}.",
+        "Eğer {koyu:m{alt:C} + m{alt:H} < m{alt:toplam}} ise aradaki kütle farkı bileşiğin yapısındaki oksijene aittir: {koyu:m{alt:O} = m{alt:toplam} − (m{alt:C} + m{alt:H})} ve buradan oksijenin mol sayısı {koyu:n{alt:O} = {kesir:m{alt:O}|16}} formülüyle bulunur. Son adımda {koyu:C, H ve O} elementlerinin mol sayıları yan yana yazılarak en küçük tam sayılara genişletilir/sadeleştirilir ve {koyu:basit formül} elde edilir; bileşiğin 1 molünün kütlesi ({koyu:M{alt:A}}) biliniyorsa {koyu:molekül formülü} de belirlenir."
       ],
       "kutular": [
         {
           "tur": "dikkat",
           "baslik": "Dikkat",
-          "metin": "Yanma tepkimesinde dışarıdan O₂ gazı harcandığı için ürünlerdeki toplam oksijen mol sayısından doğrudan bileşikteki oksijen bulunamaz; mutlaka kütle farkından (m_O = m_bileşik − [m_C + m_H]) veya 1 mol bileşiğin yanma denkleminden gidilmelidir."
+          "metin": "Yanma tepkimesinde dışarıdan O₂ gazı harcandığı için ürünlerdeki toplam oksijen mol sayısından doğrudan bileşikteki oksijen bulunamaz; mutlaka kütle farkından (m{alt:O} = m{alt:bileşik} − [m{alt:C} + m{alt:H}]) veya 1 mol bileşiğin yanma denkleminden gidilmelidir."
         },
         {
           "tur": "ipucu",
           "baslik": "İpucu",
-          "metin": "Sorularda CO₂ ve H₂O miktarları Normal Koşullarda (NK'da 1 mol gaz = 22,4 L) hacim olarak veya gram olarak verildiğinde ilk iş bu değerleri n = {kesir:m|M_A} veya n = {kesir:V|22,4} ile mole çevirmektir (C=12, H=1, O=16 → CO₂=44 g/mol, H₂O=18 g/mol)."
+          "metin": "Sorularda CO₂ ve H₂O miktarları Normal Koşullarda (NK'da 1 mol gaz = 22,4 L) hacim olarak veya gram olarak verildiğinde ilk iş bu değerleri n = {kesir:m|M{alt:A}} veya n = {kesir:V|22,4} ile mole çevirmektir (C=12, H=1, O=16 → CO₂=44 g/mol, H₂O=18 g/mol)."
         }
       ],
       "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"260\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"26\" text-anchor=\"middle\" font-size=\"14.5\" font-weight=\"bold\" fill=\"#0f172a\">ELEMENTEL ANALİZ (YANMA TEPKİMESİ) İLE FORMÜL BULMA ADIMLARI</text>\n  <rect x=\"20\" y=\"48\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <text x=\"122\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">1. C ve H Molünü Bulma</text>\n  <text x=\"32\" y=\"95\" font-size=\"10.5\" fill=\"#78350f\">Organik bileşik O₂ ile</text>\n  <text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#78350f\">yakıldığında:</text>\n  <text x=\"32\" y=\"132\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">• n_C = n_(CO₂)</text>\n  <text x=\"40\" y=\"147\" font-size=\"10\" fill=\"#78350f\">(m_C = n_C · 12 g)</text>\n  <text x=\"32\" y=\"170\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#b45309\">• n_H = 2 · n_(H₂O)</text>\n  <text x=\"40\" y=\"185\" font-size=\"10\" fill=\"#78350f\">(m_H = n_H · 1 g)</text>\n  <text x=\"32\" y=\"210\" font-size=\"10\" fill=\"#92400e\">1 mol H₂O'da 2 mol H vardır!</text>\n  <rect x=\"247\" y=\"48\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"350\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">2. Oksijen Kontrolü</text>\n  <text x=\"259\" y=\"95\" font-size=\"10.5\" fill=\"#14532d\">Bileşiğin toplam kütlesi</text>\n  <text x=\"259\" y=\"110\" font-size=\"10.5\" fill=\"#14532d\">(m_toplam) ile karşılaştırılır:</text>\n  <text x=\"259\" y=\"132\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">• m_C + m_H = m_toplam ise:</text>\n  <text x=\"267\" y=\"147\" font-size=\"10\" fill=\"#14532d\">Bileşik yalnız C ve H içerir</text>\n  <text x=\"267\" y=\"162\" font-size=\"10\" font-weight=\"bold\" fill=\"#166534\">(Hidrokarbondur: C_xH_y).</text>\n  <text x=\"259\" y=\"184\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#15803d\">• m_C + m_H &lt; m_toplam ise:</text>\n  <text x=\"267\" y=\"199\" font-size=\"10\" fill=\"#14532d\">Fark oksijen kütlesidir:</text>\n  <text x=\"267\" y=\"214\" font-size=\"10\" font-weight=\"bold\" fill=\"#166534\">n_O = m_O / 16</text>\n  <rect x=\"475\" y=\"48\" width=\"205\" height=\"190\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"577\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">3. Tam Sayıya Çevirme</text>\n  <text x=\"487\" y=\"95\" font-size=\"10.5\" fill=\"#1e3a8a\">• Bulunan n_C : n_H : n_O</text>\n  <text x=\"495\" y=\"110\" font-size=\"10.5\" fill=\"#1e3a8a\">mol sayıları en küçük</text>\n  <text x=\"495\" y=\"125\" font-size=\"10.5\" fill=\"#1e3a8a\">sayıya bölünerek en sade</text>\n  <text x=\"495\" y=\"140\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1d4ed8\">Basit Formül bulunur.</text>\n  <text x=\"487\" y=\"165\" font-size=\"10.5\" fill=\"#1e3a8a\">• Ardından mol kütlesi (M_A)</text>\n  <text x=\"495\" y=\"180\" font-size=\"10.5\" fill=\"#1e3a8a\">kullanılarak n katsayısı ile</text>\n  <text x=\"495\" y=\"195\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e40af\">Molekül Formülü elde edilir.</text>\n</svg>"
@@ -90,11 +90,11 @@
     },
     {
       "soru": "Kütlece %80 karbon (C) ve %20 hidrojen (H) içeren bir organik bileşiğin mol kütlesi 30 g/mol olduğuna göre basit formülünü ve molekül formülünü bulunuz. (H = 1, C = 12 g/mol)",
-      "cevap": "Bileşiğin 100 gramında 80 g C ve 20 g H bulunur. Mol sayıları: n_C = {kesir:80|12} = {kesir:20|3} mol ve n_H = {kesir:20|1} = 20 mol. Oranları: C : H = {kesir:20|3} : 20 = 1 : 3 olduğundan basit formül CH₃'tür. Basit formül kütlesi = 12 + 3·1 = 15 g/mol'dür. n = {kesir:30|15} = 2 bulunduğundan molekül formülü 2·(CH₃) = C₂H₆ (etan) olur."
+      "cevap": "Bileşiğin 100 gramında 80 g C ve 20 g H bulunur. Mol sayıları: n{alt:C} = {kesir:80|12} = {kesir:20|3} mol ve n{alt:H} = {kesir:20|1} = 20 mol. Oranları: C : H = {kesir:20|3} : 20 = 1 : 3 olduğundan basit formül CH₃'tür. Basit formül kütlesi = 12 + 3·1 = 15 g/mol'dür. n = {kesir:30|15} = 2 bulunduğundan molekül formülü 2·(CH₃) = C₂H₆ (etan) olur."
     },
     {
       "soru": "Yalnız C, H ve O elementlerinden oluşan organik bir bileşiğin 9,2 gramı tamamen yakıldığında 0,4 mol CO₂ ve 10,8 gram H₂O oluşmaktadır. Bileşiğin basit formülünü bulunuz. (H = 1, C = 12, O = 16 g/mol)",
-      "cevap": "n_C = n_(CO₂) = 0,4 mol → m_C = 0,4 · 12 = 4,8 g. Su için M_A(H₂O) = 18 g/mol olduğundan n_(H₂O) = {kesir:10,8|18} = 0,6 mol → n_H = 2 · 0,6 = 1,2 mol → m_H = 1,2 · 1 = 1,2 g. C ve H kütle toplamı = 4,8 + 1,2 = 6,0 g'dır. Oksijen kütlesi: m_O = 9,2 − 6,0 = 3,2 g → n_O = {kesir:3,2|16} = 0,2 mol. Mol oranı C_(0,4)H_(1,2)O_(0,2) olup tüm sayılar 0,2'ye bölündüğünde basit formül C₂H₆O bulunur."
+      "cevap": "n{alt:C} = n{alt:CO₂} = 0,4 mol → m{alt:C} = 0,4 · 12 = 4,8 g. Su için M{alt:A}(H₂O) = 18 g/mol olduğundan n{alt:H₂O} = {kesir:10,8|18} = 0,6 mol → n{alt:H} = 2 · 0,6 = 1,2 mol → m{alt:H} = 1,2 · 1 = 1,2 g. C ve H kütle toplamı = 4,8 + 1,2 = 6,0 g'dır. Oksijen kütlesi: m{alt:O} = 9,2 − 6,0 = 3,2 g → n{alt:O} = {kesir:3,2|16} = 0,2 mol. Mol oranı C{alt:0,4}H{alt:1,2}O{alt:0,2} olup tüm sayılar 0,2'ye bölündüğünde basit formül C₂H₆O bulunur."
     },
     {
       "soru": "Bir organik bileşiğin 0,2 molü tamamen yakılmak için 0,6 mol O₂ gazı harcanmakta ve tepkime sonucunda 0,4 mol CO₂ ile 0,6 mol H₂O oluşmaktadır. Bu bileşiğin molekül formülü nedir?",
@@ -102,7 +102,7 @@
     },
     {
       "soru": "Basit formülü CH₂O olan organik bir bileşik için hangi nicelikler kesin olarak bilinebilir, hangilerinin bilinmesi için ek veriye ihtiyaç vardır?",
-      "cevap": "Basit formülü CH₂O olan bileşiğin içerdiği element türleri (C, H, O), atomların molce birleşme oranı (1 : 2 : 1), atom sayısı yüzdeleri (%25 C, %50 H, %25 O) ve atom kütleleri biliniyorsa kütlece yüzde bileşimi (%40 C, %6,67 H, %53,33 O) kesin olarak bilinir. Ancak gerçek molekül formülü (CH₂O mu, C₂H₄O₂ mi, C₆H₁₂O₆ mı olduğu) ve 1 molünün kütlesi (M_A) ek bilgi olmadan bilinemez."
+      "cevap": "Basit formülü CH₂O olan bileşiğin içerdiği element türleri (C, H, O), atomların molce birleşme oranı (1 : 2 : 1), atom sayısı yüzdeleri (%25 C, %50 H, %25 O) ve atom kütleleri biliniyorsa kütlece yüzde bileşimi (%40 C, %6,67 H, %53,33 O) kesin olarak bilinir. Ancak gerçek molekül formülü (CH₂O mu, C₂H₄O₂ mi, C₆H₁₂O₆ mı olduğu) ve 1 molünün kütlesi (M{alt:A}) ek bilgi olmadan bilinemez."
     }
   ],
   "etkinlikler": [
@@ -142,7 +142,7 @@
         "C₃H₆O₂"
       ],
       "dogru": 2,
-      "aciklama": "n_(CO₂) = {kesir:4,48|22,4} = 0,2 mol → n_C = 0,2 mol (m_C = 2,4 g). n_(H₂O) = {kesir:3,6|18} = 0,2 mol → n_H = 0,4 mol (m_H = 0,4 g). Oksijen kütlesi m_O = 6 − (2,4 + 0,4) = 3,2 g → n_O = {kesir:3,2|16} = 0,2 mol. Oran C_(0,2)H_(0,4)O_(0,2) → CH₂O olur.",
+      "aciklama": "n{alt:CO₂} = {kesir:4,48|22,4} = 0,2 mol → n{alt:C} = 0,2 mol (m{alt:C} = 2,4 g). n{alt:H₂O} = {kesir:3,6|18} = 0,2 mol → n{alt:H} = 0,4 mol (m{alt:H} = 0,4 g). Oksijen kütlesi m{alt:O} = 6 − (2,4 + 0,4) = 3,2 g → n{alt:O} = {kesir:3,2|16} = 0,2 mol. Oran C{alt:0,2}H{alt:0,4}O{alt:0,2} → CH₂O olur.",
       "tur": "coktan"
     },
     {
@@ -155,7 +155,7 @@
         "10"
       ],
       "dogru": 3,
-      "aciklama": "0,1 molü 5,6 g ise 1 molü M_A = 56 g/mol'dür. Basit formül CH₂ kütlesi = 12 + 2 = 14 g/mol olduğundan n = {kesir:56|14} = 4 bulunur. Molekül formülü C₄H₈ olup 1 molekülünde 4 + 8 = 12 atom vardır.",
+      "aciklama": "0,1 molü 5,6 g ise 1 molü M{alt:A} = 56 g/mol'dür. Basit formül CH₂ kütlesi = 12 + 2 = 14 g/mol olduğundan n = {kesir:56|14} = 4 bulunur. Molekül formülü C₄H₈ olup 1 molekülünde 4 + 8 = 12 atom vardır.",
       "tur": "coktan"
     },
     {
@@ -181,7 +181,7 @@
           "aciklama": "Atomların molce birleşme oranı aynı olduğu için kütlece yüzde oranları da aynıdır."
         },
         {
-          "metin": "Bir organik bileşiğin yalnız basit formülü bilindiğinde gerçek mol kütlesi (M_A) doğrudan hesaplanabilir.",
+          "metin": "Bir organik bileşiğin yalnız basit formülü bilindiğinde gerçek mol kütlesi (M{alt:A}) doğrudan hesaplanabilir.",
           "dogru": false,
           "aciklama": "Gerçek mol kütlesini bulmak için basit formülün yanında genişletme katsayısı n veya molekül formülü bilinmelidir."
         }
@@ -246,11 +246,11 @@
     {
       "soru": "Karbon, hidrojen ve oksijenden oluşan organik bir bileşiğin 15 gramı yakıldığında 22 gram CO₂ ve 9 gram H₂O oluşmaktadır. Bileşiğin mol kütlesi 60 g/mol olduğuna göre basit formülünü ve molekül formülünü işlem basamaklarıyla bulunuz. (H = 1, C = 12, O = 16 g/mol)",
       "ipuclari": [
-        "CO₂ (M_A = 44 g/mol) ve H₂O (M_A = 18 g/mol) kütlelerinden C ve H elementlerinin mol sayılarını ve kütlelerini bulunuz.",
+        "CO₂ (M{alt:A} = 44 g/mol) ve H₂O (M{alt:A} = 18 g/mol) kütlelerinden C ve H elementlerinin mol sayılarını ve kütlelerini bulunuz.",
         "Bileşiğin toplam kütlesinden (15 g) C ve H kütleleri toplamını çıkararak oksijenin kütlesini ve mol sayısını hesaplayınız.",
-        "Basit formülü bulduktan sonra M_A = 60 g/mol değerini kullanarak molekül formülüne ulaşınız."
+        "Basit formülü bulduktan sonra M{alt:A} = 60 g/mol değerini kullanarak molekül formülüne ulaşınız."
       ],
-      "cevap": "1) CO₂'nin mol kütlesi 44 g/mol olduğundan n_(CO₂) = {kesir:22|44} = 0,5 mol → n_C = 0,5 mol ve m_C = 0,5 · 12 = 6 gramdır. H₂O'nun mol kütlesi 18 g/mol olduğundan n_(H₂O) = {kesir:9|18} = 0,5 mol → n_H = 2 · 0,5 = 1,0 mol ve m_H = 1,0 · 1 = 1 gramdır.\n2) C ve H kütleleri toplamı = 6 + 1 = 7 gramdır. Bileşik 15 gram olduğundan oksijen kütlesi m_O = 15 − 7 = 8 gram ve n_O = {kesir:8|16} = 0,5 mol olur.\n3) Mol sayıları oranı C_(0,5)H_(1,0)O_(0,5) olup 0,5 ile sadeleştirildiğinde basit formül CH₂O bulunur. Basit formül kütlesi = 12 + 2·1 + 16 = 30 g/mol'dür. n = {kesir:60|30} = 2 olduğundan bileşiğin molekül formülü 2 · (CH₂O) = C₂H₄O₂ olarak elde edilir.",
+      "cevap": "1) CO₂'nin mol kütlesi 44 g/mol olduğundan n{alt:CO₂} = {kesir:22|44} = 0,5 mol → n{alt:C} = 0,5 mol ve m{alt:C} = 0,5 · 12 = 6 gramdır. H₂O'nun mol kütlesi 18 g/mol olduğundan n{alt:H₂O} = {kesir:9|18} = 0,5 mol → n{alt:H} = 2 · 0,5 = 1,0 mol ve m{alt:H} = 1,0 · 1 = 1 gramdır.\n2) C ve H kütleleri toplamı = 6 + 1 = 7 gramdır. Bileşik 15 gram olduğundan oksijen kütlesi m{alt:O} = 15 − 7 = 8 gram ve n{alt:O} = {kesir:8|16} = 0,5 mol olur.\n3) Mol sayıları oranı C{alt:0,5}H{alt:1,0}O{alt:0,5} olup 0,5 ile sadeleştirildiğinde basit formül CH₂O bulunur. Basit formül kütlesi = 12 + 2·1 + 16 = 30 g/mol'dür. n = {kesir:60|30} = 2 olduğundan bileşiğin molekül formülü 2 · (CH₂O) = C₂H₄O₂ olarak elde edilir.",
       "tur": "ogretici"
     }
   ],
@@ -259,6 +259,6 @@
     "Organik bileşiklerin temel elementi karbondur (C); ancak CO, CO₂, CS₂, HCN, H₂CO₃, karbonatlar, bikarbonatlar, siyanürler ve karbürler anorganiktir.",
     "Organik bileşikler genellikle kovalent yapılı, erime-kaynama noktaları düşük, yanıcı ve tepkimeleri yavaş olan bileşiklerdir.",
     "Basit (kaba) formül elementlerin en sade tam sayılı mol oranını, molekül (gerçek) formülü ise bir moleküldeki gerçek atom sayılarını gösterir [Molekül F. = n · (Basit F.)].",
-    "Yanma analizinde n_C = n_(CO₂) ve n_H = 2 · n_(H₂O) bağıntılarıyla C ve H bulunur; kütle farkından (m_O = m_toplam − [m_C + m_H]) bileşikteki oksijen molü hesaplanır."
+    "Yanma analizinde n{alt:C} = n{alt:CO₂} ve n{alt:H} = 2 · n{alt:H₂O} bağıntılarıyla C ve H bulunur; kütle farkından (m{alt:O} = m{alt:toplam} − [m{alt:C} + m{alt:H}]) bileşikteki oksijen molü hesaplanır."
   ]
 }

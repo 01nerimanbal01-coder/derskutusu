@@ -18,7 +18,7 @@
     {
       "baslik": "Aynı Doğrultulu Vektörler ve Uç Uca Ekleme Yöntemi",
       "metin": [
-        "İki ya da daha fazla vektörün yaptığı etkiyi tek başına gösteren toplam vektöre {koyu:bileşke vektör (R)} adı verilir. Aynı doğrultu üzerinde bulunan {koyu:aynı yönlü vektörler} (aralarındaki açı {koyu:α = 0°}) toplanırken büyüklükleri doğrudan toplanır ve bileşke vektörün yönü toplanan vektörlerle aynı olur: {koyu:R_max = K + L}. Aynı doğrultuda fakat {koyu:zıt yönlü vektörler} (aralarındaki açı {koyu:α = 180°}) toplanırken büyük vektörün büyüklüğünden küçük vektörün büyüklüğü çıkarılır ve bileşke büyük vektör yönünde olur: {koyu:R_min = |K - L|}.",
+        "İki ya da daha fazla vektörün yaptığı etkiyi tek başına gösteren toplam vektöre {koyu:bileşke vektör (R)} adı verilir. Aynı doğrultu üzerinde bulunan {koyu:aynı yönlü vektörler} (aralarındaki açı {koyu:α = 0°}) toplanırken büyüklükleri doğrudan toplanır ve bileşke vektörün yönü toplanan vektörlerle aynı olur: {koyu:R{alt:max} = K + L}. Aynı doğrultuda fakat {koyu:zıt yönlü vektörler} (aralarındaki açı {koyu:α = 180°}) toplanırken büyük vektörün büyüklüğünden küçük vektörün büyüklüğü çıkarılır ve bileşke büyük vektör yönünde olur: {koyu:R{alt:min} = |K - L|}.",
         "Farklı doğrultulardaki vektörleri {koyu:uç uca ekleme yöntemiyle} toplamak için birinci vektör sabit tutulur; ikinci vektörün {koyu:doğrultusu, yönü ve büyüklüğü değiştirilmeden} (kendisine paralel taşınarak) başlangıç noktası birinci vektörün bitiş ucuna (ok ucuna) getirilir. Toplanacak başka vektörler varsa aynı kural sürdürülür. En son {koyu:ilk vektörün başlangıç noktasından son vektörün bitiş ucuna} çizilen yönlü doğru parçası {koyu:bileşke vektörü (R)} verir.",
         "Uç uca ekleme işleminde vektörlerin eklenme sırası değiştirilse bile bileşke vektörün yönü ve büyüklüğü değişmez ({koyu:A + B = B + A}, değişme özelliği). Uç uca eklenen vektörler kapalı bir çokgen oluşturacak biçimde {koyu:ilk vektörün başlangıç noktasına geri dönüyorsa} bu vektörlerin bileşkesi sıfırdır ({koyu:R = 0})."
       ],
@@ -82,7 +82,7 @@
   "ornekler": [
     {
       "soru": "Büyüklükleri 7 N ve 15 N olan aynı düzlemdeki iki kuvvetin bileşkesinin alabileceği en küçük ve en büyük değerler kaç N'dur?",
-      "cevap": "İki kuvvet aynı yönlü olduğunda (α = 0°) bileşke en büyük değerini alır: R_max = 7 + 15 = 22 N. İki kuvvet zıt yönlü olduğunda (α = 180°) bileşke en küçük değerini alır: R_min = |15 - 7| = 8 N. Bileşke 8 N ≤ R ≤ 22 N aralığındadır."
+      "cevap": "İki kuvvet aynı yönlü olduğunda (α = 0°) bileşke en büyük değerini alır: R{alt:max} = 7 + 15 = 22 N. İki kuvvet zıt yönlü olduğunda (α = 180°) bileşke en küçük değerini alır: R{alt:min} = |15 - 7| = 8 N. Bileşke 8 N ≤ R ≤ 22 N aralığındadır."
     },
     {
       "soru": "Sürtünmesiz yatay düzlemdeki bir cisme doğu yönünde 14 N, batı yönünde 8 N ve kuzey yönünde 8 N büyüklüğünde üç kuvvet aynı anda etki etmektedir. Bileşke kuvvetin büyüklüğü kaç N'dur?",

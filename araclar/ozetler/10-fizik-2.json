@@ -18,10 +18,10 @@
   "ozet": [
     "Farklı hız bölgelerine sahip parçalı sabit hızlı hareketlerde (örneğin ardışık iki taşıyıcı bant veya kademeli koşu bandı), her zaman aralığının hızı o aralığın yer değiştirmesinin süresine oranıyla ({koyu:v = Δx / Δt}) ayrı ayrı bulunur; konum-zaman grafiğinin eğimi hızın değiştiği anda kırılma gösterir.",
     "Çok bölmeli bir konum-zaman ({koyu:x-t}) grafiğinde yukarı doğru eğik doğru {koyu:+x yönünde sabit hızlı hareketi}, yatay doğru {koyu:durma (bekleme, v = 0)} durumunu, aşağı doğru eğik doğru ise {koyu:-x yönünde sabit hızlı hareketi} temsil eder.",
-    "Yön değiştiren veya duraklayan hareketlilerde {koyu:alınan toplam yol} her bölgedeki yer değiştirme büyüklüklerinin mutlak değerce toplamına ({koyu:d = |Δx₁| + |Δx₂| + ...}), {koyu:net yer değiştirme} ise yalnızca son konum ile ilk konum arasındaki vektörel farka ({koyu:Δx = x_son - x_ilk}) eşittir.",
+    "Yön değiştiren veya duraklayan hareketlilerde {koyu:alınan toplam yol} her bölgedeki yer değiştirme büyüklüklerinin mutlak değerce toplamına ({koyu:d = |Δx₁| + |Δx₂| + ...}), {koyu:net yer değiştirme} ise yalnızca son konum ile ilk konum arasındaki vektörel farka ({koyu:Δx = x{alt:son} - x{alt:ilk}}) eşittir.",
     "Aynı anda aynı konumdan {koyu:zıt yönlerde} {koyu:v₁} ve {koyu:v₂} sabit süratleriyle uzaklaşan iki hareketlinin {koyu:t} süre sonra aralarındaki uzaklık {koyu:d = (v₁ + v₂) · t} bağıntısıyla bulunur; birbirine doğru hareket eden iki cismin karşılaşma süresi ise {koyu:t = d / (v₁ + v₂)} eşitliğiyle hesaplanır.",
     "Aynı konumdan {koyu:aynı yönde} farklı sabit hızlarla ({koyu:v₂ > v₁}) harekete geçen iki cisim arasındaki uzaklık her saniye hız farkı kadar artar ve {koyu:t} süre sonunda {koyu:d = (v₂ - v₁) · t} olur.",
-    "Konum-zaman ({koyu:x-t}) grafiğinin her bölgedeki {koyu:eğimi} hız-zaman ({koyu:v-t}) grafiğinin değerini verirken, hız-zaman ({koyu:v-t}) grafiğinin zaman ekseniyle sınırladığı {koyu:alan} yer değiştirmeyi ({koyu:Δx}) verir ve son konum {koyu:x_son = x₀ + Δx} bağıntısıyla bulunur."
+    "Konum-zaman ({koyu:x-t}) grafiğinin her bölgedeki {koyu:eğimi} hız-zaman ({koyu:v-t}) grafiğinin değerini verirken, hız-zaman ({koyu:v-t}) grafiğinin zaman ekseniyle sınırladığı {koyu:alan} yer değiştirmeyi ({koyu:Δx}) verir ve son konum {koyu:x{alt:son} = x₀ + Δx} bağıntısıyla bulunur."
   ],
   "bolumler": [
     {
@@ -62,7 +62,7 @@
             "0 - 9 s Ara Toplamı",
             "4 s + 5 s = 9 s",
             "12 m + (4 m/s · 5 s) = 32 m",
-            "v_ort = 32 / 9 m/s",
+            "v{alt:ort} = 32 / 9 m/s",
             "t = 9 s anında düşey eksende 32 m konumu"
           ]
         ]
@@ -73,7 +73,7 @@
       "baslik": "Çok Bölmeli Konum-Zaman (x-t) Grafiklerinde Durma ve Yön Değiştirme",
       "metin": [
         "Gerçek bir hareketlinin (örneğin buz pateni pistinde kayan bir sporcunun, doğrusal kesim yapan bir CNC makinesinin ya da tören alanını görüntüleyen bir dronun) konum-zaman grafiği incelendiğinde üç temel bölge türüyle karşılaşılır: {koyu:(1) Pozitif eğimli doğru} cismin {koyu:+x} yönünde sabit hızla ilerlediğini, {koyu:(2) Yatay doğru (eğim = 0)} cismin konumunun değişmediğini yani o zaman aralığında {koyu:durduğunu (v = 0)}, {koyu:(3) Negatif eğimli doğru} ise cismin {koyu:-x} yönünde sabit hızla geri döndüğünü gösterir.",
-        "Konum-zaman grafiğinde eğimin işaret değiştirdiği tepe veya çukur kırılma noktaları cismin {koyu:yön değiştirdiği} anlardır. Böyle çok bölmeli bir harekette {koyu:alınan toplam yol (d)} hesaplanırken her bölgede katedilen mesafelerin mutlak değerleri toplanır ({koyu:d = |Δx₁| + |Δx₂| + |Δx₃|}). Buna karşılık {koyu:toplam yer değiştirme (Δx)} bulunurken ara bölgelerdeki gidiş-dönüşlere bakılmaksızın yalnızca hareketin bittiği son konumdan başladığı ilk konum çıkarılır ({koyu:Δx = x_son - x_ilk})."
+        "Konum-zaman grafiğinde eğimin işaret değiştirdiği tepe veya çukur kırılma noktaları cismin {koyu:yön değiştirdiği} anlardır. Böyle çok bölmeli bir harekette {koyu:alınan toplam yol (d)} hesaplanırken her bölgede katedilen mesafelerin mutlak değerleri toplanır ({koyu:d = |Δx₁| + |Δx₂| + |Δx₃|}). Buna karşılık {koyu:toplam yer değiştirme (Δx)} bulunurken ara bölgelerdeki gidiş-dönüşlere bakılmaksızın yalnızca hareketin bittiği son konumdan başladığı ilk konum çıkarılır ({koyu:Δx = x{alt:son} - x{alt:ilk}})."
       ],
       "kutu": {
         "tur": "dikkat",
@@ -85,7 +85,7 @@
     {
       "baslik": "İki Hareketlinin Karşılaşma ve Aralarındaki Uzaklık Problemleri",
       "metin": [
-        "Doğrusal bir yolda aynı anda harekete geçen iki cismin birbirine göre durumu hareket yönlerine bağlıdır. Aynı konumdan aynı anda {koyu:zıt yönlerde} sabit {koyu:v₁} ve {koyu:v₂} süratleriyle harekete geçen iki bisikletlinin her saniye aralarındaki mesafe {koyu:(v₁ + v₂)} kadar açılır; dolayısıyla {koyu:t} süre sonunda aralarındaki uzaklık {koyu:d = (v₁ + v₂) · t} olur. Aralarında başlangıçta {koyu:d} kadar mesafe bulunan K ve L noktalarından {koyu:birbirine doğru} sabit {koyu:v₁} ve {koyu:v₂} süratleriyle gelen iki hareketlinin (örneğin iki elektrikli scooter kullanıcısının) karşılaşma süresi ise {koyu:t_karşılaşma} = {kesir:d|v₁ + v₂} bağıntısıyla bulunur.",
+        "Doğrusal bir yolda aynı anda harekete geçen iki cismin birbirine göre durumu hareket yönlerine bağlıdır. Aynı konumdan aynı anda {koyu:zıt yönlerde} sabit {koyu:v₁} ve {koyu:v₂} süratleriyle harekete geçen iki bisikletlinin her saniye aralarındaki mesafe {koyu:(v₁ + v₂)} kadar açılır; dolayısıyla {koyu:t} süre sonunda aralarındaki uzaklık {koyu:d = (v₁ + v₂) · t} olur. Aralarında başlangıçta {koyu:d} kadar mesafe bulunan K ve L noktalarından {koyu:birbirine doğru} sabit {koyu:v₁} ve {koyu:v₂} süratleriyle gelen iki hareketlinin (örneğin iki elektrikli scooter kullanıcısının) karşılaşma süresi ise {koyu:t{alt:karşılaşma}} = {kesir:d|v₁ + v₂} bağıntısıyla bulunur.",
         "İki hareketlinin ortak konum-zaman ({koyu:x-t}) grafiği çizildiğinde, doğruların {koyu:kesiştiği nokta} iki hareketlinin aynı anda aynı konumda bulunduğunu yani {koyu:karşılaştıklarını (yan yana geldiklerini)} gösterir. Kesişim noktasının yatay eksendeki karşılığı karşılaşma anını ({koyu:t}), düşey eksendeki karşılığı ise karşılaşma konumunu ({koyu:x}) verir. Aynı noktadan {koyu:aynı yönde} farklı sabit hızlarla ({koyu:v₂ > v₁}) başlayan iki koşucunun {koyu:t} süre sonunda aralarındaki uzaklık ise hız büyüklüklerinin farkıyla sürenin çarpımına eşittir: {koyu:d = (v₂ - v₁) · t}."
       ],
       "kutu": {
@@ -132,19 +132,19 @@
       "kutu": {
         "tur": "hatirla",
         "baslik": "Toplam Süreye Bekleme Süresi Dâhildir!",
-        "metin": "Bir yolculuğun tamamı için ortalama sürat veya ortalama hız hesaplanırken, hareketlinin durakta ya da kırmızı ışıkta beklediği süreler (Δt_bekleme) toplam geçen süreye (Δt_toplam) mutlaka eklenir."
+        "metin": "Bir yolculuğun tamamı için ortalama sürat veya ortalama hız hesaplanırken, hareketlinin durakta ya da kırmızı ışıkta beklediği süreler (Δt{alt:bekleme}) toplam geçen süreye (Δt{alt:toplam}) mutlaka eklenir."
       }
     },
     {
       "baslik": "Konum-Zaman (x-t) ve Hız-Zaman (v-t) Grafikleri Arasında Çift Yönlü Dönüşüm",
       "metin": [
-        "Sabit hızlı harekette konum-zaman ({koyu:x-t}) grafiği ile hız-zaman ({koyu:v-t}) grafiği birbirinden doğrudan elde edilebilir. {koyu:x-t grafiğinden v-t grafiğine geçişte} her zaman aralığı için doğrunun {koyu:eğimi} hesaplanır ({koyu:Eğim = {kesir:Δx|Δt} = {kesir:x_son - x_ilk|t_son - t_ilk}}). Eğim pozitif bir sabit sayı ise {koyu:v-t} grafiğinde zaman ekseninin üstünde yatay bir doğru, eğim sıfır ise zaman ekseni üzerinde ({koyu:v = 0}) bir doğru, eğim negatif bir sabit sayı ise zaman ekseninin altında yatay bir doğru çizilir.",
-        "{koyu:v-t grafiğinden x-t grafiğine geçişte} ise hız-zaman grafiği ile zaman ekseni arasında kalan {koyu:taralı alan} hesaplanarak her bölgedeki yer değiştirme ({koyu:Δx = v · Δt}) bulunur. Ancak {koyu:v-t} grafiğinin alanı yalnızca yer değiştirmeyi ({koyu:Δx}) verir; hareketlinin {koyu:x-t} grafiğini doğru noktadan başlatabilmek için soruda verilen {koyu:ilk konumun (x₀)} bilinmesi şarttır. Her bölgenin sonundaki konum {koyu:x_son = x₀ + Δx} eşitliğiyle bulunarak zaman eksenindeki karşılıklarıyla birleştirilir."
+        "Sabit hızlı harekette konum-zaman ({koyu:x-t}) grafiği ile hız-zaman ({koyu:v-t}) grafiği birbirinden doğrudan elde edilebilir. {koyu:x-t grafiğinden v-t grafiğine geçişte} her zaman aralığı için doğrunun {koyu:eğimi} hesaplanır ({koyu:Eğim = {kesir:Δx|Δt} = {kesir:x{alt:son} - x{alt:ilk}|t{alt:son} - t{alt:ilk}}}). Eğim pozitif bir sabit sayı ise {koyu:v-t} grafiğinde zaman ekseninin üstünde yatay bir doğru, eğim sıfır ise zaman ekseni üzerinde ({koyu:v = 0}) bir doğru, eğim negatif bir sabit sayı ise zaman ekseninin altında yatay bir doğru çizilir.",
+        "{koyu:v-t grafiğinden x-t grafiğine geçişte} ise hız-zaman grafiği ile zaman ekseni arasında kalan {koyu:taralı alan} hesaplanarak her bölgedeki yer değiştirme ({koyu:Δx = v · Δt}) bulunur. Ancak {koyu:v-t} grafiğinin alanı yalnızca yer değiştirmeyi ({koyu:Δx}) verir; hareketlinin {koyu:x-t} grafiğini doğru noktadan başlatabilmek için soruda verilen {koyu:ilk konumun (x₀)} bilinmesi şarttır. Her bölgenin sonundaki konum {koyu:x{alt:son} = x₀ + Δx} eşitliğiyle bulunarak zaman eksenindeki karşılıklarıyla birleştirilir."
       ],
       "kutu": {
         "tur": "tanim",
         "baslik": "Grafik Dönüşüm Anahtarı: Eğim ve Alan",
-        "metin": "Konum-Zaman (x-t) ──[ Eğim = Δx / Δt ]──► Hız-Zaman (v-t)\n• Hız-Zaman (v-t) ──[ Alan = v · Δt ve x_son = x₀ + Δx ]──► Konum-Zaman (x-t)"
+        "metin": "Konum-Zaman (x-t) ──[ Eğim = Δx / Δt ]──► Hız-Zaman (v-t)\n• Hız-Zaman (v-t) ──[ Alan = v · Δt ve x{alt:son} = x₀ + Δx ]──► Konum-Zaman (x-t)"
       },
       "gorsel": "<svg viewBox=\"0 0 620 225\" role=\"img\" aria-label=\"Konum-zaman ve hız-zaman grafikleri arasında eğim ve alan ile çift yönlü dönüşüm\">\n    <rect x=\"12\" y=\"12\" width=\"596\" height=\"201\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"310\" y=\"34\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">KONUM-ZAMAN (x-t) VE HIZ-ZAMAN (v-t) GRAFİKLERİ ARASINDA DÖNÜŞÜM</text>\n\n    <!-- Sol: x-t grafiği -->\n    <rect x=\"26\" y=\"48\" width=\"218\" height=\"150\" rx=\"10\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <text x=\"135\" y=\"66\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">Konum-Zaman (x-t) Grafiği</text>\n    <line x1=\"56\" y1=\"158\" x2=\"224\" y2=\"158\" stroke=\"#334155\" stroke-width=\"1.4\"/>\n    <line x1=\"56\" y1=\"178\" x2=\"56\" y2=\"78\" stroke=\"#334155\" stroke-width=\"1.4\"/>\n    <line x1=\"56\" y1=\"138\" x2=\"188\" y2=\"88\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n    <circle cx=\"56\" cy=\"138\" r=\"3.5\" fill=\"#2563eb\"/>\n    <circle cx=\"188\" cy=\"88\" r=\"3.5\" fill=\"#2563eb\"/>\n    <text x=\"48\" y=\"141\" text-anchor=\"end\" font-family=\"Inter,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#2563eb\">x₀</text>\n    <text x=\"48\" y=\"91\" text-anchor=\"end\" font-family=\"Inter,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#2563eb\">x</text>\n    <text x=\"188\" y=\"172\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#334155\">t</text>\n    <text x=\"135\" y=\"188\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"9.5\" font-weight=\"700\" fill=\"#1e40af\">Eğim = (x - x₀) / t = v</text>\n\n    <!-- Orta: Dönüşüm okları -->\n    <rect x=\"254\" y=\"68\" width=\"112\" height=\"46\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\"/>\n    <text x=\"310\" y=\"86\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1d4ed8\">EĞİM AL ──►</text>\n    <text x=\"310\" y=\"102\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"9\" fill=\"#1e3a8a\">v = Δx / Δt</text>\n\n    <rect x=\"254\" y=\"130\" width=\"112\" height=\"52\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\"/>\n    <text x=\"310\" y=\"148\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#15803d\">◄── ALAN BUL</text>\n    <text x=\"310\" y=\"162\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"9\" fill=\"#14532d\">Δx = v · Δt</text>\n    <text x=\"310\" y=\"175\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#166534\">x_son = x₀ + Δx</text>\n\n    <!-- Sağ: v-t grafiği -->\n    <rect x=\"376\" y=\"48\" width=\"218\" height=\"150\" rx=\"10\" fill=\"#ffffff\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n    <text x=\"485\" y=\"66\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#15803d\">Hız-Zaman (v-t) Grafiği</text>\n    <line x1=\"406\" y1=\"158\" x2=\"574\" y2=\"158\" stroke=\"#334155\" stroke-width=\"1.4\"/>\n    <line x1=\"406\" y1=\"178\" x2=\"406\" y2=\"78\" stroke=\"#334155\" stroke-width=\"1.4\"/>\n    <rect x=\"406\" y=\"102\" width=\"132\" height=\"56\" fill=\"#bbf7d0\" opacity=\"0.7\"/>\n    <line x1=\"406\" y1=\"102\" x2=\"538\" y2=\"102\" stroke=\"#16a34a\" stroke-width=\"3\"/>\n    <line x1=\"538\" y1=\"102\" x2=\"538\" y2=\"158\" stroke=\"#16a34a\" stroke-dasharray=\"3,3\"/>\n    <text x=\"398\" y=\"105\" text-anchor=\"end\" font-family=\"Inter,sans-serif\" font-size=\"9.5\" font-weight=\"700\" fill=\"#15803d\">v</text>\n    <text x=\"538\" y=\"172\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#334155\">t</text>\n    <text x=\"472\" y=\"134\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">Alan = Δx = v · t</text>\n    <text x=\"485\" y=\"188\" text-anchor=\"middle\" font-family=\"Inter,sans-serif\" font-size=\"9.5\" font-weight=\"700\" fill=\"#166534\">Eğim = 0 (Sabit Hız)</text>\n    </svg>"
     },
@@ -207,7 +207,7 @@
     },
     {
       "soru": "Doğrusal bir yolda hareket eden K ve L bisikletlileri t = 0 anında aynı konumda yan yana bulunmaktadır. K bisikletlisi batı (-x) yönünde 5 m/s, L bisikletlisi ise doğu (+x) yönünde 6 m/s sabit hızla hareket ettiğine göre 20 s sonra aralarındaki uzaklık kaç metre olur?",
-      "cevap": "Bisikletliler aynı konumdan zıt yönlerde sabit hızlarla uzaklaştıkları için 20 s sonunda K bisikletlisi batıya doğru {koyu:|Δx_K| = 5 · 20 = 100 m}, L bisikletlisi doğuya doğru {koyu:|Δx_L| = 6 · 20 = 120 m} yol alır. Zıt yönlerde gittiklerinden 20 s sonra aralarındaki toplam uzaklık {koyu:d = 100 + 120 = 220 m} (veya doğrudan {koyu:d = (5 + 6) · 20 = 220 m}) bulunur."
+      "cevap": "Bisikletliler aynı konumdan zıt yönlerde sabit hızlarla uzaklaştıkları için 20 s sonunda K bisikletlisi batıya doğru {koyu:|Δx{alt:K}| = 5 · 20 = 100 m}, L bisikletlisi doğuya doğru {koyu:|Δx{alt:L}| = 6 · 20 = 120 m} yol alır. Zıt yönlerde gittiklerinden 20 s sonra aralarındaki toplam uzaklık {koyu:d = 100 + 120 = 220 m} (veya doğrudan {koyu:d = (5 + 6) · 20 = 220 m}) bulunur."
     },
     {
       "soru": "Aralarında 480 m mesafe bulunan doğrusal bir yoldaki K ve L noktalarından Ayla 5 m/s, Burak ise 7 m/s sabit süratle aynı anda birbirlerine doğru scooter ile harekete geçiyor. İki arkadaş harekete başladıktan kaç saniye sonra ve K noktasından kaç metre uzakta karşılaşır?",
@@ -215,7 +215,7 @@
     },
     {
       "soru": "Doğrusal bir pistte t = 0 anında x₀ = 0 konumundan harekete başlayan bir buz patencisi; 0 - 3 s aralığında +24 m konumuna sabit hızla gitmekte, 3 - 5 s aralığında +24 m konumunda durmakta, 5 - 8 s aralığında ise sabit hızla +6 m konumuna geri dönmektedir. Patencinin 0 - 8 s aralığında aldığı toplam yol ve net yer değiştirmesi kaç metredir?",
-      "cevap": "1. bölgede (0 - 3 s) yer değiştirme {koyu:Δx₁ = +24 - 0 = +24 m}; 2. bölgede (3 - 5 s) yer değiştirme {koyu:Δx₂ = 0 m}; 3. bölgede (5 - 8 s) yer değiştirme {koyu:Δx₃ = +6 - 24 = -18 m}’dir. Alınan toplam yol her bölgedeki uzunlukların mutlak değerce toplamı olduğundan {koyu:d = |+24| + |0| + |-18| = 42 m} bulunur. Net yer değiştirme ise yalnızca son konum ile ilk konum arasındaki fark olduğundan {koyu:Δx = x_son - x_ilk = 6 - 0 = +6 m}’dir."
+      "cevap": "1. bölgede (0 - 3 s) yer değiştirme {koyu:Δx₁ = +24 - 0 = +24 m}; 2. bölgede (3 - 5 s) yer değiştirme {koyu:Δx₂ = 0 m}; 3. bölgede (5 - 8 s) yer değiştirme {koyu:Δx₃ = +6 - 24 = -18 m}’dir. Alınan toplam yol her bölgedeki uzunlukların mutlak değerce toplamı olduğundan {koyu:d = |+24| + |0| + |-18| = 42 m} bulunur. Net yer değiştirme ise yalnızca son konum ile ilk konum arasındaki fark olduğundan {koyu:Δx = x{alt:son} - x{alt:ilk} = 6 - 0 = +6 m}’dir."
     },
     {
       "soru": "t = 0 anında x₀ = -10 m konumunda bulunan bir oyuncak arabanın hız-zaman (v-t) grafiğinde; 0 - 4 s aralığında hızı +8 m/s, 4 - 7 s aralığında hızı 0 m/s, 7 - 10 s aralığında ise hızı -4 m/s olarak verilmiştir. Arabanın t = 4 s, t = 7 s ve t = 10 s anlarındaki konumlarını bulunuz.",
@@ -223,7 +223,7 @@
     },
     {
       "soru": "Sabit hızla doğrusal bir rayda hareket eden bir CNC kesim başlığı t = 0 anında x₀ = +45 cm konumundan geçip t = 9 s anında x = -18 cm konumuna ulaşıyor. Kesim başlığının hızını (yönü ve büyüklüğüyle) ve yer değiştirme denklemini yazınız.",
-      "cevap": "Kesim başlığının 9 saniyedeki yer değiştirmesi {koyu:Δx = x_son - x₀ = -18 - (+45) = -63 cm}’dir. Sabit hızı {koyu:v = {kesir:Δx|Δt} = {kesir:-63 cm|9 s} = -7 cm/s} bulunur (yani {koyu:-x} yönünde {koyu:7 cm/s} büyüklüğündedir). Herhangi bir {koyu:t} anındaki yer değiştirme modeli {koyu:Δx = -7 · t} ve konum denklemi {koyu:x(t) = 45 - 7 · t} (cm) şeklindedir."
+      "cevap": "Kesim başlığının 9 saniyedeki yer değiştirmesi {koyu:Δx = x{alt:son} - x₀ = -18 - (+45) = -63 cm}’dir. Sabit hızı {koyu:v = {kesir:Δx|Δt} = {kesir:-63 cm|9 s} = -7 cm/s} bulunur (yani {koyu:-x} yönünde {koyu:7 cm/s} büyüklüğündedir). Herhangi bir {koyu:t} anındaki yer değiştirme modeli {koyu:Δx = -7 · t} ve konum denklemi {koyu:x(t) = 45 - 7 · t} (cm) şeklindedir."
     }
   ],
   "etkinlikler": [
@@ -238,7 +238,7 @@
         "54 m ve 5,4 m/s"
       ],
       "dogru": 0,
-      "aciklama": "İlk 6 s'de Δx₁ = 3 · 6 = 18 m, sonraki 4 s'de Δx₂ = 6 · 4 = 24 m yer değiştirir. Toplam yer değiştirme Δx = 18 + 24 = 42 m ve ortalama hız büyüklüğü v_ort = 42 m / 10 s = 4,2 m/s olur."
+      "aciklama": "İlk 6 s'de Δx₁ = 3 · 6 = 18 m, sonraki 4 s'de Δx₂ = 6 · 4 = 24 m yer değiştirir. Toplam yer değiştirme Δx = 18 + 24 = 42 m ve ortalama hız büyüklüğü v{alt:ort} = 42 m / 10 s = 4,2 m/s olur."
     },
     {
       "tur": "coktan",
@@ -251,7 +251,7 @@
         "165 m"
       ],
       "dogru": 1,
-      "aciklama": "Aynı konumdan aynı yönde sabit hızlarla hareket eden iki cisim arasındaki uzaklık hız farkı ile sürenin çarpımına eşittir: d = (v_Tuna - v_Ada) · t = (7 - 4) · 15 = 3 · 15 = 45 m."
+      "aciklama": "Aynı konumdan aynı yönde sabit hızlarla hareket eden iki cisim arasındaki uzaklık hız farkı ile sürenin çarpımına eşittir: d = (v{alt:Tuna} - v{alt:Ada}) · t = (7 - 4) · 15 = 3 · 15 = 45 m."
     },
     {
       "tur": "coktan",
@@ -264,7 +264,7 @@
         "+35 m"
       ],
       "dogru": 2,
-      "aciklama": "0 - 5 s aralığında yer değiştirme Δx₁ = (-6) · 5 = -30 m, 5 - 9 s (Δt = 4 s) aralığında yer değiştirme Δx₂ = (+5) · 4 = +20 m'dir. Toplam yer değiştirme Δx = -30 + 20 = -10 m olduğundan son konum x_son = x₀ + Δx = +15 + (-10) = +5 m bulunur."
+      "aciklama": "0 - 5 s aralığında yer değiştirme Δx₁ = (-6) · 5 = -30 m, 5 - 9 s (Δt = 4 s) aralığında yer değiştirme Δx₂ = (+5) · 4 = +20 m'dir. Toplam yer değiştirme Δx = -30 + 20 = -10 m olduğundan son konum x{alt:son} = x₀ + Δx = +15 + (-10) = +5 m bulunur."
     },
     {
       "tur": "coktan",
@@ -291,7 +291,7 @@
         {
           "metin": "Hız-zaman (v-t) grafiğinin altında kalan alan biliniyorsa, cismin ilk konumu (x₀) bilinmese bile her andaki gerçek konumu net olarak bulunabilir.",
           "dogru": false,
-          "aciklama": "v-t grafiğinin alanı yalnızca yer değiştirmeyi (Δx) verir; son konum x_son = x₀ + Δx olduğundan ilk konum (x₀) bilinmeden gerçek konum belirlenemez."
+          "aciklama": "v-t grafiğinin alanı yalnızca yer değiştirmeyi (Δx) verir; son konum x{alt:son} = x₀ + Δx olduğundan ilk konum (x₀) bilinmeden gerçek konum belirlenemez."
         },
         {
           "metin": "Yön değiştiren bir hareketlinin aldığı toplam yol daima net yer değiştirmesinin büyüklüğünden daha fazladır.",
@@ -369,11 +369,11 @@
     {
       "tur": "ogretici",
       "soru": "Doğrusal bir yolda t = 0 anında x₀ = +12 m konumunda bulunan bir robot, 0 - 4 s aralığında +x yönünde 5 m/s sabit hızla ilerlemekte, 4 - 6 s aralığında durmakta ve 6 - 10 s aralığında -x yönünde 8 m/s sabit hızla hareket etmektedir. Robotun her bölge sonundaki konumunu, toplam aldığı yolu ve net yer değiştirmesini adım adım bulunuz.",
-      "cevap": "1. Bölge (0 - 4 s): Yer değiştirme {koyu:Δx₁ = (+5) · 4 = +20 m} olup {koyu:t = 4 s} anındaki konum {koyu:x(4) = 12 + 20 = +32 m}’dir. 2. Bölge (4 - 6 s): Robot durduğu için {koyu:Δx₂ = 0 m} ve {koyu:t = 6 s} anındaki konum {koyu:x(6) = +32 m}’dir. 3. Bölge (6 - 10 s): Süre {koyu:Δt₃ = 4 s} ve hız {koyu:-8 m/s} olduğundan yer değiştirme {koyu:Δx₃ = (-8) · 4 = -32 m} olup {koyu:t = 10 s} anındaki son konum {koyu:x(10) = 32 - 32 = 0 m} (başlangıç referans noktası) olur. Robotun aldığı toplam yol {koyu:d = |+20| + |0| + |-32| = 52 m}, net yer değiştirmesi ise {koyu:Δx_toplam = x_son - x₀ = 0 - 12 = -12 m}’dir.",
+      "cevap": "1. Bölge (0 - 4 s): Yer değiştirme {koyu:Δx₁ = (+5) · 4 = +20 m} olup {koyu:t = 4 s} anındaki konum {koyu:x(4) = 12 + 20 = +32 m}’dir. 2. Bölge (4 - 6 s): Robot durduğu için {koyu:Δx₂ = 0 m} ve {koyu:t = 6 s} anındaki konum {koyu:x(6) = +32 m}’dir. 3. Bölge (6 - 10 s): Süre {koyu:Δt₃ = 4 s} ve hız {koyu:-8 m/s} olduğundan yer değiştirme {koyu:Δx₃ = (-8) · 4 = -32 m} olup {koyu:t = 10 s} anındaki son konum {koyu:x(10) = 32 - 32 = 0 m} (başlangıç referans noktası) olur. Robotun aldığı toplam yol {koyu:d = |+20| + |0| + |-32| = 52 m}, net yer değiştirmesi ise {koyu:Δx{alt:toplam} = x{alt:son} - x₀ = 0 - 12 = -12 m}’dir.",
       "ipuclari": [
         "1. Adım: 0 - 4 s aralığındaki yer değiştirmeyi (Δx₁ = +5 · 4) bularak ilk konum x₀ = +12 m ile toplayıp t = 4 s konumunu hesaplayınız.",
         "2. Adım: 4 - 6 s aralığında robot durduğu için (v = 0) konumun değişmediğini belirtip, 6 - 10 s (Δt = 4 s) aralığındaki yer değiştirmeyi (Δx₃ = -8 · 4) bularak t = 10 s son konumunu hesaplayınız.",
-        "3. Adım: Alınan toplam yol için |Δx₁| + |Δx₂| + |Δx₃| toplamını, net yer değiştirme için ise Δx = x_son - x₀ farkını yazınız."
+        "3. Adım: Alınan toplam yol için |Δx₁| + |Δx₂| + |Δx₃| toplamını, net yer değiştirme için ise Δx = x{alt:son} - x₀ farkını yazınız."
       ]
     }
   ]

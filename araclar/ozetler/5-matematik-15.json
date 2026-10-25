@@ -1,0 +1,557 @@
+{
+  "ad": "5-matematik-15",
+  "sinif": 5,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "Geometrik Nicelikler",
+  "konu": "Dikdörtgenin Çevre Uzunluğu ve Alanı",
+  "ciktilar": [
+    "MAT.5.4.1. Kenar uzunlukları doğal sayı olan bir dikdörtgenin çevre uzunluğu verildiğinde kenar uzunluklarını yorumlayabilme: Olası kenar uzunluklarını inceler, verilen çevre uzunluğuna sahip dikdörtgen oluşturur ve farklı dikdörtgenlerin aynı çevre uzunluğuna sahip olabileceğini açıklar.",
+    "MAT.5.4.2. Birim karelerden yola çıkarak dikdörtgenin alanını değerlendirebilme: Alanı ölçmek için birim kareyi ölçüt olarak belirler, dikdörtgenin alanını seçtiği birim karelerle ölçer.",
+    "MAT.5.4.2. Birim kare sayısının dikdörtgenin iki ardışık kenar uzunluğu ile ilişkisini inceler ve alan bağıntısına (iki ardışık kenarın uzunlukları çarpımı) ilişkin yargıda bulunur."
+  ],
+  "giris": "Yeni yılın ilk haftasında dikdörtgenleri bu kez {koyu:bir araştırmacı gibi} inceliyoruz. Önce çevre uzunluğu verilen bir dikdörtgenin olabilecek bütün kenar uzunluklarını sistemli biçimde bulacak, bu dikdörtgenleri kareli kâğıtta, geometri tahtasında ve iple kendimiz oluşturacak, farklı dikdörtgenlerin neden aynı çevreye sahip olabildiğini açıklayacağız. Ardından alanı ölçmek için bir {koyu:ölçüt (birim kare)} seçmeyi, yüzeyi bu birim karelerle boşluksuz kaplayarak saymayı ve sonunda birim kare sayısının iki ardışık kenarla ilişkisinden {koyu:Alan = kısa kenar × uzun kenar} bağıntısına ulaşmayı keşfedeceğiz.",
+  "ozet": [
+    "{koyu:Yarı çevre:} Dikdörtgende bir kısa kenar ile bir uzun kenarın toplamı çevrenin yarısıdır; olası kenar çiftleri bu yarı çevreden başlanarak 1'den itibaren sistemli listelenir.",
+    "{koyu:Dikdörtgen oluşturma:} Verilen çevreye sahip dikdörtgenler kareli kâğıtta, geometri tahtasında, eş çubuklarla veya bir iple oluşturulabilir; kenarlar her zaman ızgara çizgileri üzerinde sayılır.",
+    "{koyu:Aynı çevre, farklı şekil:} Kısa kenara 1 birim eklenip uzun kenardan 1 birim çıkarıldığında yarı çevre değişmez; bu yüzden farklı dikdörtgenler aynı çevre uzunluğuna sahip olabilir.",
+    "{koyu:Ölçüt seçimi:} Alan ölçmek için eş birim kareler ölçüt olarak seçilir; birim kare büyüdükçe sayılan kare sayısı azalır, küçüldükçe artar, bu nedenle sonuç mutlaka birimiyle söylenir.",
+    "{koyu:Birim karelerle ölçme:} Dikdörtgen birim karelerle boşluk bırakmadan ve üst üste bindirmeden kaplanır; kareler tek tek, sıra sıra veya sütun sütun sayılabilir.",
+    "{koyu:Alan bağıntısı:} Bir sıradaki birim kare sayısı bir kenarın, sıra sayısı ardışık kenarın uzunluğuna eşit olduğundan dikdörtgenin alanı iki ardışık kenar uzunluğunun çarpımıdır."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Çevre Uzunluğu Verilen Dikdörtgenin Olası Kenarlarını Sistemli İnceleme",
+      "metin": [
+        "Bir dikdörtgenin karşılıklı kenarları eşit olduğu için dört kenardan yalnız iki farklı uzunluk vardır: {koyu:kısa kenar (a)} ve {koyu:uzun kenar (b)}. Çevre, dört kenarın toplamı olduğundan {koyu:Çevre = a + b + a + b = 2 × (a + b)} yazılır. Bu eşitliği tersinden okursak çevre verildiğinde ilk yapılacak işi buluruz: Çevre uzunluğunu 2'ye bölmek. Elde edilen sayıya {koyu:yarı çevre} diyoruz ve olası her kenar çiftinin toplamı bu sayıya eşit olmak zorundadır.",
+        "Olası kenar uzunluklarını hiçbirini atlamadan bulmak için {koyu:sistemli listeleme} yaparız: Kısa kenara 1'den başlayarak sırayla 1, 2, 3, ... değerlerini veririz; her seferinde uzun kenarı {koyu:yarı çevre − kısa kenar} işlemiyle buluruz. Kısa kenar uzun kenarı geçmeye başladığı anda dururuz; çünkü örneğin 3 cm × 7 cm ile 7 cm × 3 cm aynı dikdörtgenin döndürülmüş hâlidir, yeni bir dikdörtgen değildir. Çevresi 20 cm olan dikdörtgenler için yarı çevre 10 cm'dir ve liste (1, 9), (2, 8), (3, 7), (4, 6), (5, 5) olmak üzere 5 çiftten oluşur.",
+        "Bu inceleme bize iki önemli yargı da kazandırır. Birincisi, kenarları doğal sayı olan bir dikdörtgenin çevresi {koyu:daima çift sayıdır}; çünkü bir doğal sayının 2 katı her zaman çifttir. Çevresi 15 cm veya 27 cm gibi tek sayı olarak verilen bir dikdörtgenin kenarları doğal sayı olamaz. İkincisi, yarı çevre bilindiğinde kaç farklı dikdörtgen çizilebileceğini listelemeden de tahmin edebiliriz: Yarı çevre çiftse yarısı kadar, tekse yarısından küçük en büyük doğal sayı kadar dikdörtgen vardır (yarı çevre 10 ise 5, yarı çevre 11 ise 5 dikdörtgen)."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Verilen Çevre",
+          "Yarı Çevre (a + b)",
+          "Olası Kenar Çiftleri (a, b)",
+          "Farklı Dikdörtgen Sayısı"
+        ],
+        "satirlar": [
+          [
+            "10 cm",
+            "10 ÷ 2 = 5 cm",
+            "(1, 4), (2, 3)",
+            "2"
+          ],
+          [
+            "16 cm",
+            "16 ÷ 2 = 8 cm",
+            "(1, 7), (2, 6), (3, 5), (4, 4)",
+            "4 (biri kare)"
+          ],
+          [
+            "22 cm",
+            "22 ÷ 2 = 11 cm",
+            "(1, 10), (2, 9), (3, 8), (4, 7), (5, 6)",
+            "5"
+          ],
+          [
+            "26 cm",
+            "26 ÷ 2 = 13 cm",
+            "(1, 12), (2, 11), (3, 10), (4, 9), (5, 8), (6, 7)",
+            "6"
+          ],
+          [
+            "15 cm",
+            "15 ÷ 2 doğal sayı değil",
+            "Kenarları doğal sayı olamaz",
+            "0"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Sistemli Listeleme Kuralı",
+          "metin": "Kısa kenarı 1'den başlat, her adımda 1 artır, uzun kenarı yarı çevreden çıkararak bul. Kısa kenar uzun kenara eşit olduğunda ya da onu geçmek üzereyken dur; böylece hiçbir dikdörtgeni atlamaz, hiçbirini iki kez yazmazsın."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Döndürülmüş Dikdörtgen Yeni Değildir",
+          "metin": "2 cm × 8 cm boyutlu dikdörtgeni yan yatırınca 8 cm × 2 cm görünür; ama kenar uzunlukları aynı olduğu için bu aynı dikdörtgendir. Listede yalnız bir kez sayılır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">ÇEVRESİ 20 CM OLAN DİKDÖRTGENLERİ SİSTEMLİ BULMA</text><rect x=\"20\" y=\"50\" width=\"200\" height=\"60\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><text x=\"120\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Çevreyi yaz</text><text x=\"120\" y=\"97\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">Çevre = 20 cm</text><line x1=\"120\" y1=\"110\" x2=\"120\" y2=\"128\" stroke=\"#64748b\" stroke-width=\"2\"/><polygon points=\"114,126 126,126 120,136\" fill=\"#64748b\"/><rect x=\"20\" y=\"140\" width=\"200\" height=\"60\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><text x=\"120\" y=\"165\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">2. İkiye böl</text><text x=\"120\" y=\"187\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">a + b = 20 ÷ 2 = 10 cm</text><line x1=\"120\" y1=\"200\" x2=\"120\" y2=\"218\" stroke=\"#64748b\" stroke-width=\"2\"/><polygon points=\"114,216 126,216 120,226\" fill=\"#64748b\"/><rect x=\"20\" y=\"230\" width=\"200\" height=\"56\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/><text x=\"120\" y=\"253\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">3. a = 1, 2, 3, ... dene</text><text x=\"120\" y=\"274\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">b = 10 − a; a, b'yi geçmesin</text><rect x=\"240\" y=\"52\" width=\"500\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/><text x=\"255\" y=\"77\" font-size=\"13\" fill=\"#1e293b\">a = 1 cm, b = 9 cm</text><rect x=\"430\" y=\"69\" width=\"126\" height=\"6\" fill=\"#93c5fd\" stroke=\"#1d4ed8\"/><text x=\"600\" y=\"77\" font-size=\"12\" fill=\"#15803d\">1 + 9 = 10 uygun</text><rect x=\"240\" y=\"98\" width=\"500\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/><text x=\"255\" y=\"123\" font-size=\"13\" fill=\"#1e293b\">a = 2 cm, b = 8 cm</text><rect x=\"430\" y=\"112\" width=\"112\" height=\"12\" fill=\"#93c5fd\" stroke=\"#1d4ed8\"/><text x=\"600\" y=\"123\" font-size=\"12\" fill=\"#15803d\">2 + 8 = 10 uygun</text><rect x=\"240\" y=\"144\" width=\"500\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/><text x=\"255\" y=\"169\" font-size=\"13\" fill=\"#1e293b\">a = 3 cm, b = 7 cm</text><rect x=\"430\" y=\"155\" width=\"98\" height=\"18\" fill=\"#93c5fd\" stroke=\"#1d4ed8\"/><text x=\"600\" y=\"169\" font-size=\"12\" fill=\"#15803d\">3 + 7 = 10 uygun</text><rect x=\"240\" y=\"190\" width=\"500\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/><text x=\"255\" y=\"215\" font-size=\"13\" fill=\"#1e293b\">a = 4 cm, b = 6 cm</text><rect x=\"430\" y=\"198\" width=\"84\" height=\"24\" fill=\"#93c5fd\" stroke=\"#1d4ed8\"/><text x=\"600\" y=\"215\" font-size=\"12\" fill=\"#15803d\">4 + 6 = 10 uygun</text><rect x=\"240\" y=\"236\" width=\"500\" height=\"40\" rx=\"8\" fill=\"#fdf2f8\" stroke=\"#db2777\"/><text x=\"255\" y=\"261\" font-size=\"13\" fill=\"#1e293b\">a = 5 cm, b = 5 cm</text><rect x=\"430\" y=\"241\" width=\"70\" height=\"30\" fill=\"#f9a8d4\" stroke=\"#be185d\"/><text x=\"600\" y=\"261\" font-size=\"12\" fill=\"#be185d\">Kare: özel dikdörtgen</text></svg>"
+    },
+    {
+      "baslik": "Verilen Çevre Uzunluğuna Sahip Dikdörtgen Oluşturma",
+      "metin": [
+        "Kenar uzunluklarını listelemek işin bir yarısıdır; diğer yarısı bu dikdörtgenleri {koyu:somut olarak oluşturmaktır}. En kullanışlı araç {koyu:kareli kâğıttır}: Her karenin kenarı 1 birim kabul edilir, dikdörtgenin kenarları ızgara çizgilerinin üzerinden çizilir ve kenar uzunluğu, kenar boyunca kaç kare kenarı olduğu sayılarak bulunur. Çevresi 16 birim olan bir dikdörtgen çizmek isteyen öğrenci önce yarı çevreyi (8 birim) bulur, sonra örneğin 3 birim sağa, 5 birim yukarı, 3 birim sola ve 5 birim aşağı giderek başladığı noktaya döner.",
+        "Aynı çalışma {koyu:geometri tahtasında} lastikle, {koyu:eş uzunlukta çubuklarla} (her çubuk 1 birim) veya {koyu:bir iple} de yapılabilir. Örneğin 16 tane eş çubuk verildiğinde bunların hepsini kullanarak oluşturulabilecek dikdörtgenler, çevresi 16 birim olan dikdörtgenlerdir: 1 çubuk-7 çubuk, 2 çubuk-6 çubuk, 3 çubuk-5 çubuk ve 4 çubuk-4 çubuk. Uçları birleştirilmiş 16 cm'lik bir ipi dört parmakla gerip köşeleri dik tuttuğumuzda da hep 16 cm çevreli dikdörtgenler elde ederiz; ip uzamadığı ve kısalmadığı için çevre değişmez.",
+        "Oluşturduğumuz dikdörtgeni mutlaka {koyu:kontrol etmeliyiz}: Karşılıklı kenarlar eşit mi, köşeler dik mi ve dört kenarın toplamı istenen çevreyi veriyor mu? Bu kontrol, 3 + 5 + 3 + 5 = 16 gibi bir toplama işlemiyle hemen yapılır. Bir kenarı verilen dikdörtgen istenirse diğer kenar {koyu:yarı çevre − verilen kenar} işlemiyle bulunur; çevresi 18 birim ve bir kenarı 2 birim olan dikdörtgenin diğer kenarı 9 − 2 = 7 birimdir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Araç",
+          "Dikdörtgen Nasıl Oluşturulur?",
+          "Dikkat Edilecek Nokta"
+        ],
+        "satirlar": [
+          [
+            "Kareli kâğıt",
+            "Kenarlar ızgara çizgileri üzerinden çizilir, kare kenarları sayılır",
+            "Köşeler mutlaka ızgara noktalarına denk gelmeli"
+          ],
+          [
+            "Geometri tahtası",
+            "Lastik, çivilerin arasından dikdörtgen biçiminde gerilir",
+            "İki çivi arası 1 birimdir, çiviler sayılmaz, aralıklar sayılır"
+          ],
+          [
+            "Eş çubuklar",
+            "Verilen çubukların tamamı kenarlara dağıtılır",
+            "Karşılıklı kenarlara eşit sayıda çubuk konmalı"
+          ],
+          [
+            "Uçları birleşik ip",
+            "İp dört köşeden gerilerek dikdörtgen yapılır",
+            "İpin boyu çevreye eşittir, biçim değişse de çevre aynı kalır"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Yürüyerek Çizme Yöntemi",
+          "metin": "Kareli kâğıtta bir köşeden başla: «a birim sağa, b birim yukarı, a birim sola, b birim aşağı» git. Başladığın noktaya döndüysen dikdörtgenin hazır ve çevresi 2 × (a + b) birimdir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Noktaları Değil Aralıkları Say",
+          "metin": "Geometri tahtasında 5 çividen geçen bir kenarın uzunluğu 5 değil 4 birimdir; çünkü uzunluğu çiviler arasındaki aralıklar belirler."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><pattern id=\"kk15a\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><rect width=\"20\" height=\"20\" fill=\"#ffffff\"/><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1\"/></pattern></defs><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">KARELİ KÂĞITTA ÇEVRESİ 16 BİRİM OLAN DİKDÖRTGENLER</text><rect x=\"20\" y=\"40\" width=\"600\" height=\"240\" fill=\"url(#kk15a)\" stroke=\"#94a3b8\"/><rect x=\"40\" y=\"200\" width=\"140\" height=\"20\" fill=\"#93c5fd\" fill-opacity=\"0.8\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><rect x=\"220\" y=\"180\" width=\"120\" height=\"40\" fill=\"#86efac\" fill-opacity=\"0.8\" stroke=\"#15803d\" stroke-width=\"2\"/><rect x=\"380\" y=\"160\" width=\"100\" height=\"60\" fill=\"#fcd34d\" fill-opacity=\"0.8\" stroke=\"#b45309\" stroke-width=\"2\"/><rect x=\"500\" y=\"140\" width=\"80\" height=\"80\" fill=\"#f9a8d4\" fill-opacity=\"0.8\" stroke=\"#be185d\" stroke-width=\"2\"/><rect x=\"30\" y=\"228\" width=\"580\" height=\"46\" rx=\"8\" fill=\"#ffffff\" fill-opacity=\"0.92\"/><text x=\"110\" y=\"246\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">1 birim × 7 birim</text><text x=\"110\" y=\"264\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">1 + 7 + 1 + 7 = 16</text><text x=\"280\" y=\"246\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">2 birim × 6 birim</text><text x=\"280\" y=\"264\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">2 + 6 + 2 + 6 = 16</text><text x=\"430\" y=\"246\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">3 birim × 5 birim</text><text x=\"430\" y=\"264\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">3 + 5 + 3 + 5 = 16</text><text x=\"545\" y=\"246\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#be185d\">4 birim × 4 birim</text><text x=\"545\" y=\"264\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">4 + 4 + 4 + 4 = 16</text><rect x=\"632\" y=\"50\" width=\"118\" height=\"222\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><text x=\"691\" y=\"74\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">Hatırlatma</text><text x=\"691\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">1 kare kenarı</text><text x=\"691\" y=\"116\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">= 1 birim</text><text x=\"691\" y=\"144\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">Kenarlar ızgara</text><text x=\"691\" y=\"160\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">çizgisi üzerinde</text><text x=\"691\" y=\"188\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">Yarı çevre</text><text x=\"691\" y=\"204\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">her birinde 8</text><text x=\"691\" y=\"236\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">4 farklı</text><text x=\"691\" y=\"254\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">dikdörtgen</text></svg>"
+    },
+    {
+      "baslik": "Farklı Dikdörtgenler Neden Aynı Çevreye Sahip Olabilir?",
+      "metin": [
+        "Bir önceki bölümde çevresi 16 birim olan dört farklı dikdörtgen oluşturduk. Şimdi bunun {koyu:nedenini açıklayalım}. Çevre yalnız iki kenarın toplamına (yarı çevreye) bağlıdır; iki kenarın tek tek ne olduğuna bağlı değildir. Toplamı 8 olan pek çok doğal sayı çifti bulunduğu için (1 ve 7, 2 ve 6, 3 ve 5, 4 ve 4) çevresi 16 olan birden fazla dikdörtgen vardır. Yani çevre bir dikdörtgeni tek başına belirlemez; aynı çevre, birbirinden farklı görünen dikdörtgenlere ait olabilir.",
+        "Bu durumu {koyu:kenar aktarma} düşüncesiyle de açıklayabiliriz. 1 × 7 dikdörtgeninin kısa kenarına 1 birim ekleyip uzun kenarından 1 birim çıkarırsak 2 × 6 dikdörtgenini elde ederiz. Bir kenar ne kadar uzadıysa diğeri o kadar kısaldığı için toplam yine 8, çevre yine 16 olur. Bu aktarmayı kenarlar eşitlenene kadar sürdürebiliriz: 1 × 7 → 2 × 6 → 3 × 5 → 4 × 4. Uçları birleşik ip modelinde de durum aynıdır; ipin biçimini değiştirmek ipin boyunu değiştirmez.",
+        "Açıklama yaparken {koyu:matematiksel gerekçe} göstermeliyiz: «Dikdörtgenler farklı çünkü kenar uzunlukları farklı; çevreleri aynı çünkü her birinde bir kısa ve bir uzun kenarın toplamı aynı.» Bu cümle hem benzerliği hem farkı açıklar. Bir arkadaşımız «Çevreleri aynıysa dikdörtgenler de aynıdır» derse, ona 2 × 6 ve 3 × 5 dikdörtgenlerini karşı örnek olarak gösterebiliriz: İkisinin de çevresi 16 birimdir ama biri ince uzun, diğeri kareye daha yakındır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "İddia",
+          "Doğru mu?",
+          "Gerekçe"
+        ],
+        "satirlar": [
+          [
+            "Çevreleri eşit olan dikdörtgenler aynı dikdörtgendir.",
+            "Yanlış",
+            "2 × 6 ve 3 × 5 farklıdır ama ikisinin de çevresi 16 birimdir."
+          ],
+          [
+            "Çevresi 16 olan her dikdörtgende kısa ve uzun kenarın toplamı 8'dir.",
+            "Doğru",
+            "Çevre = 2 × (a + b) olduğundan a + b = 16 ÷ 2 = 8."
+          ],
+          [
+            "Kısa kenar 1 artıp uzun kenar 1 azalırsa çevre değişmez.",
+            "Doğru",
+            "Toplama eklenen ve çıkarılan miktar eşit olduğundan yarı çevre aynı kalır."
+          ],
+          [
+            "Kısa kenar 1 artıp uzun kenar 2 azalırsa çevre değişmez.",
+            "Yanlış",
+            "Yarı çevre 1 azalır, çevre 2 birim küçülür."
+          ],
+          [
+            "1 × 7 ve 7 × 1 aynı çevreye sahip iki farklı dikdörtgendir.",
+            "Yanlış",
+            "Bunlar aynı dikdörtgenin döndürülmüş hâlidir."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Kenar Aktarma",
+          "metin": "Bir dikdörtgenin bir kenarına eklenen uzunluğun aynısını ardışık kenardan çıkarmaya kenar aktarma diyelim. Kenar aktarmada yarı çevre, dolayısıyla çevre uzunluğu değişmez; yalnız dikdörtgenin biçimi değişir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Karşı Örnek Güçlü Bir Gerekçedir",
+          "metin": "Bir genellemenin yanlış olduğunu göstermek için ona uymayan tek bir örnek yeterlidir. «Aynı çevre, aynı dikdörtgen» iddiasını 1 × 7 ve 4 × 4 dikdörtgenleri tek başına çürütür."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">KENAR AKTARMA: BİÇİM DEĞİŞİR, ÇEVRE DEĞİŞMEZ</text><rect x=\"20\" y=\"50\" width=\"150\" height=\"150\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><text x=\"95\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">1 cm × 7 cm</text><rect x=\"46\" y=\"113\" width=\"98\" height=\"14\" fill=\"#93c5fd\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/><text x=\"95\" y=\"170\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">1 + 7 = 8</text><text x=\"95\" y=\"188\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">Çevre = 16 cm</text><rect x=\"210\" y=\"50\" width=\"150\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><text x=\"285\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">2 cm × 6 cm</text><rect x=\"243\" y=\"106\" width=\"84\" height=\"28\" fill=\"#86efac\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"285\" y=\"170\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">2 + 6 = 8</text><text x=\"285\" y=\"188\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">Çevre = 16 cm</text><rect x=\"400\" y=\"50\" width=\"150\" height=\"150\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/><text x=\"475\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">3 cm × 5 cm</text><rect x=\"440\" y=\"99\" width=\"70\" height=\"42\" fill=\"#fcd34d\" stroke=\"#b45309\" stroke-width=\"1.5\"/><text x=\"475\" y=\"170\" text-anchor=\"middle\" font-size=\"12\" fill=\"#78350f\">3 + 5 = 8</text><text x=\"475\" y=\"188\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#78350f\">Çevre = 16 cm</text><rect x=\"590\" y=\"50\" width=\"150\" height=\"150\" rx=\"10\" fill=\"#fdf2f8\" stroke=\"#db2777\" stroke-width=\"1.5\"/><text x=\"665\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#be185d\">4 cm × 4 cm</text><rect x=\"637\" y=\"92\" width=\"56\" height=\"56\" fill=\"#f9a8d4\" stroke=\"#be185d\" stroke-width=\"1.5\"/><text x=\"665\" y=\"170\" text-anchor=\"middle\" font-size=\"12\" fill=\"#831843\">4 + 4 = 8</text><text x=\"665\" y=\"188\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#831843\">Çevre = 16 cm</text><line x1=\"174\" y1=\"125\" x2=\"200\" y2=\"125\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"198,119 208,125 198,131\" fill=\"#475569\"/><line x1=\"364\" y1=\"125\" x2=\"390\" y2=\"125\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"388,119 398,125 388,131\" fill=\"#475569\"/><line x1=\"554\" y1=\"125\" x2=\"580\" y2=\"125\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"578,119 588,125 578,131\" fill=\"#475569\"/><text x=\"190\" y=\"112\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#475569\">+1/−1</text><text x=\"380\" y=\"112\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#475569\">+1/−1</text><text x=\"570\" y=\"112\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#475569\">+1/−1</text><rect x=\"20\" y=\"215\" width=\"720\" height=\"70\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/><text x=\"380\" y=\"242\" text-anchor=\"middle\" font-size=\"13\" fill=\"#4c1d95\">Kısa kenara 1 cm eklenip uzun kenardan 1 cm çıkarıldığında yarı çevre hep 8 cm kalır.</text><text x=\"380\" y=\"268\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#6d28d9\">Sonuç: Aynı çevre uzunluğuna sahip birbirinden farklı dikdörtgenler vardır.</text></svg>"
+    },
+    {
+      "baslik": "Alan Ölçmede Ölçüt Olarak Birim Kare Seçme",
+      "metin": [
+        "Çevre bir şeklin {koyu:sınırının uzunluğudur}, alan ise şeklin {koyu:kapladığı yüzeyin büyüklüğüdür}. Uzunluğu bir cetvelle ölçeriz; peki bir yüzeyi neyle ölçeriz? Bir yüzeyi ölçmek için onu kaplayabilecek, birbirinin aynısı (eş) parçalar seçeriz. Bu parçalara {koyu:ölçüt} denir. Dikdörtgen yüzeyleri ölçmek için en uygun ölçüt {koyu:birim karedir}; çünkü kareler boşluk bırakmadan yan yana ve üst üste dizilebilir, dikdörtgenin dik köşelerine tam oturur.",
+        "Seçtiğimiz birim karenin büyüklüğü sonucu doğrudan etkiler. Kısa kenarı 4 cm, uzun kenarı 6 cm olan bir kartı kenarı 1 cm olan karelerle kaplarsak 24 kare, kenarı 2 cm olan karelerle kaplarsak 6 kare kullanırız. Kartın yüzeyi değişmedi, yalnız ölçüt değişti. Buradan şu yargıya ulaşırız: {koyu:Birim kare büyüdükçe kaplamak için gereken kare sayısı azalır, birim kare küçüldükçe artar.} Bu nedenle bir alanı söylerken «24» demek yetmez; «kenarı 1 cm olan 24 birim kare» ya da kısaca {koyu:24 santimetrekare} demeliyiz.",
+        "Ölçütü seçerken yüzeyin büyüklüğünü de düşünürüz. Bir defter sayfası için kenarı 1 cm olan kare ({koyu:santimetrekare}), sınıfın tabanı için kenarı 1 m olan kare ({koyu:metrekare}) uygundur. Sınıf tabanını santimetrekarelerle ölçmeye kalkarsak binlerce kare saymamız gerekir; bir silgiyi metrekareyle ölçmeye çalışırsak ölçüt yüzeyden büyük kalır. Herkesin aynı sonucu bulabilmesi için ortak kabul edilen bu birimlere {koyu:standart birimler} denir; yapışkan not kâğıdı, fayans veya kareli kâğıt karesi gibi ölçütler ise {koyu:standart olmayan ölçütlerdir}."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Ölçüt (Birim Kare)",
+          "Kenar Uzunluğu",
+          "Uygun Olduğu Yüzey",
+          "Alanın Söylenişi"
+        ],
+        "satirlar": [
+          [
+            "Kareli kâğıdın bir karesi",
+            "1 birim",
+            "Kareli kâğıda çizilen şekiller",
+            "... birimkare"
+          ],
+          [
+            "Santimetrekare",
+            "1 cm",
+            "Defter sayfası, kart, fotoğraf",
+            "... {us:cm|2}"
+          ],
+          [
+            "Desimetrekare",
+            "1 dm (10 cm)",
+            "Masa yüzeyi, pano",
+            "... {us:dm|2}"
+          ],
+          [
+            "Metrekare",
+            "1 m",
+            "Sınıf tabanı, oda, duvar",
+            "... {us:m|2}"
+          ],
+          [
+            "Yapışkan not kâğıdı, fayans",
+            "Standart değil",
+            "Sınıf içi deneme ölçümleri",
+            "... not kâğıdı, ... fayans"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İyi Bir Ölçütün Özellikleri",
+          "metin": "Seçilen birim kareler birbirine eş olmalı, yüzeyi boşluk bırakmadan kaplayabilmeli ve ölçülecek yüzeye göre ne çok büyük ne çok küçük olmalıdır. Sonuç her zaman kullanılan birimle birlikte yazılır."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Çevre ile Alanı Karıştırma",
+          "metin": "Çevre bir uzunluktur ve cm, m gibi birimlerle; alan bir yüzeydir ve {us:cm|2}, {us:m|2} gibi birim karelerle söylenir. «Çevresi 20 santimetrekare» ifadesi yanlıştır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><pattern id=\"bk15a\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\"><rect width=\"30\" height=\"30\" fill=\"#dbeafe\"/><path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1\"/></pattern><pattern id=\"bk15b\" width=\"60\" height=\"60\" patternUnits=\"userSpaceOnUse\"><rect width=\"60\" height=\"60\" fill=\"#dcfce7\"/><path d=\"M 60 0 L 0 0 0 60\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"1.5\"/></pattern></defs><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">AYNI YÜZEY, FARKLI ÖLÇÜT: 4 CM × 6 CM KART</text><rect x=\"60\" y=\"60\" width=\"180\" height=\"120\" fill=\"url(#bk15a)\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"150\" y=\"205\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">Ölçüt: kenarı 1 cm olan kare</text><text x=\"150\" y=\"225\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">24 birim kare</text><rect x=\"300\" y=\"60\" width=\"180\" height=\"120\" fill=\"url(#bk15b)\" stroke=\"#15803d\" stroke-width=\"2\"/><text x=\"390\" y=\"205\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">Ölçüt: kenarı 2 cm olan kare</text><text x=\"390\" y=\"225\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">6 birim kare</text><rect x=\"60\" y=\"242\" width=\"420\" height=\"38\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\"/><text x=\"270\" y=\"266\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">Her büyük kare 4 küçük kareye eşit: 6 × 4 = 24</text><rect x=\"510\" y=\"55\" width=\"230\" height=\"225\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/><text x=\"625\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6d28d9\">Ölçüt Seçme İlkeleri</text><text x=\"525\" y=\"110\" font-size=\"12\" fill=\"#4c1d95\">• Birim kareler eş olmalı</text><text x=\"525\" y=\"136\" font-size=\"12\" fill=\"#4c1d95\">• Boşluk bırakılmamalı</text><text x=\"525\" y=\"162\" font-size=\"12\" fill=\"#4c1d95\">• Üst üste binmemeli</text><text x=\"525\" y=\"188\" font-size=\"12\" fill=\"#4c1d95\">• Birim büyürse sayı azalır</text><text x=\"525\" y=\"214\" font-size=\"12\" fill=\"#4c1d95\">• Birim küçülürse sayı artar</text><text x=\"525\" y=\"240\" font-size=\"12\" fill=\"#4c1d95\">• Sonuç birimiyle söylenir</text><text x=\"625\" y=\"266\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6d28d9\">24 cm² = 6 adet (2 cm × 2 cm)</text></svg>"
+    },
+    {
+      "baslik": "Dikdörtgenin Alanını Birim Karelerle Ölçme",
+      "metin": [
+        "Ölçütü seçtikten sonra sıra {koyu:ölçmeye} gelir. Bir dikdörtgenin alanını birim karelerle ölçmek, dikdörtgenin içini bu karelerle tamamen kaplamak ve kullanılan kareleri saymak demektir. Ölçümün doğru olması için iki kurala mutlaka uyulur: Kareler arasında {koyu:boşluk bırakılmaz} ve kareler {koyu:üst üste bindirilmez}. Boşluk bırakılırsa ölçülmeyen yerler kalır ve alan olduğundan küçük bulunur; kareler üst üste binerse aynı yer iki kez sayılır ve sonuç güvenilmez olur.",
+        "Kaplanmış bir dikdörtgendeki kareleri saymanın birkaç yolu vardır. En basiti kareleri {koyu:tek tek saymaktır}; ancak kare sayısı arttıkça bu yol yorucu olur ve sayma hatasına açıktır. Daha düzenli yol {koyu:sıra sıra saymaktır}: Kısa kenarı 3 birim, uzun kenarı 5 birim olan bir dikdörtgende her sırada 5 kare, toplam 3 sıra vardır; 5 + 5 + 5 = 15 birimkare buluruz. Aynı dikdörtgeni {koyu:sütun sütun} da sayabiliriz: 5 sütunun her birinde 3 kare vardır ve 3 + 3 + 3 + 3 + 3 = 15 eder. İki yolun aynı sonucu vermesi ölçümümüzün doğruluğunu da kontrol eder.",
+        "Bazen dikdörtgenin tamamı değil, yalnız bir kısmı kaplanmış olabilir. Örneğin bir duvarın ilk sırasına 8 fayans, ilk sütununa 6 fayans döşenmişse geri kalanını tek tek döşemeden de tüm duvarın kaç fayans tutacağını söyleyebiliriz: 6 sıranın her birinde 8 fayans olacağından 8 + 8 + 8 + 8 + 8 + 8 = 48 fayans gerekir. Bu düşünce, birim kare sayısının kenarlarla ilişkisini incelemeye açılan kapıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Sayma Yolu",
+          "Nasıl Yapılır?",
+          "3 birim × 5 birim Dikdörtgen İçin"
+        ],
+        "satirlar": [
+          [
+            "Tek tek sayma",
+            "Her kare sırayla işaretlenip sayılır",
+            "1, 2, 3, ..., 15 → 15 birimkare"
+          ],
+          [
+            "Sıra sıra sayma",
+            "Bir sıradaki kareler bulunup sıralar toplanır",
+            "5 + 5 + 5 = 15 birimkare"
+          ],
+          [
+            "Sütun sütun sayma",
+            "Bir sütundaki kareler bulunup sütunlar toplanır",
+            "3 + 3 + 3 + 3 + 3 = 15 birimkare"
+          ],
+          [
+            "Tekrarlı toplamayı çarpmayla yazma",
+            "Eşit sıraların toplamı çarpma ile kısaltılır",
+            "3 × 5 = 15 birimkare"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Kaplamanın İki Altın Kuralı",
+          "metin": "Birim kareler 1) aralarında boşluk kalmadan, 2) birbirinin üzerine binmeden yerleştirilir. Bu iki kurala uyulmayan bir ölçüm alanı doğru göstermez."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İki Yoldan Sayarak Kontrol Et",
+          "metin": "Kareleri önce sıra sıra, sonra sütun sütun say. İki sonuç aynıysa ölçümün doğrudur; farklıysa bir sırayı ya da sütunu yanlış saymışsındır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><pattern id=\"kp15a\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\"><rect width=\"30\" height=\"30\" fill=\"#bbf7d0\"/><path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#15803d\" stroke-width=\"1\"/></pattern></defs><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">BİRİM KARELERLE KAPLAMA: DOĞRU VE HATALI ÖLÇÜM</text><rect x=\"20\" y=\"45\" width=\"230\" height=\"240\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><text x=\"135\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Doğru Kaplama</text><rect x=\"60\" y=\"90\" width=\"150\" height=\"90\" fill=\"url(#kp15a)\" stroke=\"#15803d\" stroke-width=\"2\"/><text x=\"135\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">Her sırada 5 kare, 3 sıra</text><text x=\"135\" y=\"232\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">5 + 5 + 5 = 15</text><text x=\"135\" y=\"258\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Alan = 15 birimkare</text><rect x=\"265\" y=\"45\" width=\"230\" height=\"240\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"380\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b91c1c\">Boşluk Bırakılmış</text><rect x=\"305\" y=\"90\" width=\"150\" height=\"90\" fill=\"#ffffff\" stroke=\"#b91c1c\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><rect x=\"305\" y=\"90\" width=\"30\" height=\"30\" fill=\"#fca5a5\" stroke=\"#b91c1c\"/><rect x=\"345\" y=\"90\" width=\"30\" height=\"30\" fill=\"#fca5a5\" stroke=\"#b91c1c\"/><rect x=\"395\" y=\"90\" width=\"30\" height=\"30\" fill=\"#fca5a5\" stroke=\"#b91c1c\"/><rect x=\"315\" y=\"135\" width=\"30\" height=\"30\" fill=\"#fca5a5\" stroke=\"#b91c1c\"/><rect x=\"375\" y=\"140\" width=\"30\" height=\"30\" fill=\"#fca5a5\" stroke=\"#b91c1c\"/><rect x=\"420\" y=\"145\" width=\"30\" height=\"30\" fill=\"#fca5a5\" stroke=\"#b91c1c\"/><text x=\"380\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" fill=\"#7f1d1d\">Aralardaki yerler ölçülmedi</text><text x=\"380\" y=\"232\" text-anchor=\"middle\" font-size=\"12\" fill=\"#7f1d1d\">Sayılan: 6 kare</text><text x=\"380\" y=\"258\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b91c1c\">Alan olduğundan küçük çıkar</text><rect x=\"510\" y=\"45\" width=\"230\" height=\"240\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"1.5\"/><text x=\"625\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#c2410c\">Üst Üste Binmiş</text><rect x=\"550\" y=\"90\" width=\"150\" height=\"90\" fill=\"#ffffff\" stroke=\"#c2410c\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><rect x=\"550\" y=\"90\" width=\"30\" height=\"30\" fill=\"#fdba74\" fill-opacity=\"0.6\" stroke=\"#c2410c\"/><rect x=\"568\" y=\"96\" width=\"30\" height=\"30\" fill=\"#fdba74\" fill-opacity=\"0.6\" stroke=\"#c2410c\"/><rect x=\"590\" y=\"92\" width=\"30\" height=\"30\" fill=\"#fdba74\" fill-opacity=\"0.6\" stroke=\"#c2410c\"/><rect x=\"610\" y=\"110\" width=\"30\" height=\"30\" fill=\"#fdba74\" fill-opacity=\"0.6\" stroke=\"#c2410c\"/><rect x=\"560\" y=\"130\" width=\"30\" height=\"30\" fill=\"#fdba74\" fill-opacity=\"0.6\" stroke=\"#c2410c\"/><rect x=\"580\" y=\"140\" width=\"30\" height=\"30\" fill=\"#fdba74\" fill-opacity=\"0.6\" stroke=\"#c2410c\"/><rect x=\"650\" y=\"120\" width=\"30\" height=\"30\" fill=\"#fdba74\" fill-opacity=\"0.6\" stroke=\"#c2410c\"/><text x=\"625\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" fill=\"#7c2d12\">Aynı yer iki kez sayıldı</text><text x=\"625\" y=\"232\" text-anchor=\"middle\" font-size=\"12\" fill=\"#7c2d12\">Bazı yerler de boş kaldı</text><text x=\"625\" y=\"258\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#c2410c\">Sonuç güvenilmez</text></svg>"
+    },
+    {
+      "baslik": "Birim Kare Sayısından Alan Bağıntısına Ulaşma",
+      "metin": [
+        "Birim karelerle kaplanmış bir dikdörtgene dikkatle bakalım. Bir sıradaki kare sayısı, o sıranın uzandığı {koyu:kenarın uzunluğuna} eşittir; çünkü kenar boyunca her 1 birime bir kare düşer. Sıra sayısı da {koyu:ardışık kenarın uzunluğuna} eşittir; çünkü o kenar boyunca her 1 birimde yeni bir sıra başlar. Uzun kenarı 7 birim, kısa kenarı 4 birim olan bir dikdörtgende her sırada 7 kare, toplam 4 sıra bulunur ve birim kare sayısı 7 + 7 + 7 + 7 = {koyu:4 × 7 = 28} olur.",
+        "Bu gözlemi farklı dikdörtgenlerle denediğimizde her seferinde aynı sonuca ulaşırız: Sayarak bulduğumuz birim kare sayısı, iki ardışık kenarın uzunluklarının {koyu:çarpımına} eşittir; toplamına değil. Örneğin 3 × 4 dikdörtgeninde 12 birim kare vardır; 3 + 4 = 7 bu sayıyı vermez. Böylece genel bir yargıda bulunabiliriz: {koyu:Dikdörtgenin alanı = kısa kenar × uzun kenar} ya da kısaca {koyu:Alan = a × b}. Ardışık kenarlar bir köşede birleşen kenarlardır; karşılıklı iki kenarı çarpmak bir anlam taşımaz.",
+        "Bu bağıntı bize büyük bir kolaylık sağlar: Artık her kareyi çizip saymak zorunda değiliz. Kenarları 12 m ve 9 m olan bir sınıf tabanının alanını, tabanı metrekarelik karelere ayırmadan 12 × 9 = 108 {us:m|2} olarak buluruz. Yine de bağıntının nereden geldiğini unutmamalıyız; {koyu:a × b}, aslında «b birim karelik a tane sıra» demektir. Alan bulunurken iki kenarın aynı birimle verildiğinden emin oluruz; kenarlar cm ise alan {us:cm|2}, m ise alan {us:m|2} olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kısa Kenar",
+          "Uzun Kenar",
+          "Sayarak Bulunan Birim Kare",
+          "Kenarların Çarpımı",
+          "Kenarların Toplamı"
+        ],
+        "satirlar": [
+          [
+            "2 birim",
+            "3 birim",
+            "6",
+            "2 × 3 = 6 (eşit)",
+            "2 + 3 = 5 (farklı)"
+          ],
+          [
+            "3 birim",
+            "4 birim",
+            "12",
+            "3 × 4 = 12 (eşit)",
+            "3 + 4 = 7 (farklı)"
+          ],
+          [
+            "4 birim",
+            "7 birim",
+            "28",
+            "4 × 7 = 28 (eşit)",
+            "4 + 7 = 11 (farklı)"
+          ],
+          [
+            "5 birim",
+            "5 birim",
+            "25",
+            "5 × 5 = 25 (eşit)",
+            "5 + 5 = 10 (farklı)"
+          ],
+          [
+            "1 birim",
+            "9 birim",
+            "9",
+            "1 × 9 = 9 (eşit)",
+            "1 + 9 = 10 (farklı)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Dikdörtgenin Alan Bağıntısı",
+          "metin": "Dikdörtgenin alanı, iki ardışık kenarının uzunlukları çarpımına eşittir: Alan = kısa kenar × uzun kenar. Kare özel bir dikdörtgen olduğundan karenin alanı = kenar × kenar olur."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Toplam Değil Çarpım",
+          "metin": "Kenarları toplamak yarı çevreyi verir, alanı vermez. 4 × 7 dikdörtgeninde 4 + 7 = 11 yarı çevredir; alan ise 4 × 7 = 28 birimkaredir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><pattern id=\"ab15a\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\"><rect width=\"30\" height=\"30\" fill=\"#dbeafe\"/><path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"1\"/></pattern></defs><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">SIRA × SIRADAKİ KARE SAYISI = KISA KENAR × UZUN KENAR</text><text x=\"225\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">1 sırada 7 birim kare (uzun kenar 7 birim)</text><rect x=\"120\" y=\"90\" width=\"210\" height=\"120\" fill=\"url(#ab15a)\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><rect x=\"120\" y=\"90\" width=\"210\" height=\"30\" fill=\"#fde68a\" fill-opacity=\"0.7\" stroke=\"#b45309\" stroke-width=\"2\"/><text x=\"70\" y=\"140\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">4 sıra</text><text x=\"70\" y=\"158\" text-anchor=\"middle\" font-size=\"11\" fill=\"#15803d\">(kısa kenar</text><text x=\"70\" y=\"174\" text-anchor=\"middle\" font-size=\"11\" fill=\"#15803d\">4 birim)</text><line x1=\"110\" y1=\"92\" x2=\"110\" y2=\"208\" stroke=\"#15803d\" stroke-width=\"2\"/><text x=\"225\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" fill=\"#1e3a8a\">7 + 7 + 7 + 7 = 4 × 7</text><text x=\"225\" y=\"264\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1d4ed8\">= 28 birimkare</text><rect x=\"390\" y=\"55\" width=\"350\" height=\"225\" rx=\"10\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/><text x=\"565\" y=\"80\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#6d28d9\">Alan Bağıntısına Giden Yol</text><text x=\"405\" y=\"108\" font-size=\"12\" fill=\"#4c1d95\">1) Kareleri tek tek say: 28 kare</text><text x=\"405\" y=\"132\" font-size=\"12\" fill=\"#4c1d95\">2) Bir sırayı say (7), sıraları say (4)</text><text x=\"405\" y=\"156\" font-size=\"12\" fill=\"#4c1d95\">3) Sıradaki kare sayısı = bir kenar</text><text x=\"405\" y=\"180\" font-size=\"12\" fill=\"#4c1d95\">4) Sıra sayısı = ardışık kenar</text><text x=\"405\" y=\"204\" font-size=\"12\" fill=\"#4c1d95\">5) Toplam = kenarların çarpımı</text><rect x=\"410\" y=\"222\" width=\"310\" height=\"42\" rx=\"8\" fill=\"#ede9fe\" stroke=\"#6d28d9\" stroke-width=\"1.5\"/><text x=\"565\" y=\"249\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#5b21b6\">Alan = kısa kenar × uzun kenar</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Kenar uzunlukları santimetre cinsinden birer doğal sayı olan bir dikdörtgenin çevre uzunluğu 26 cm'dir. Bu koşula uyan kaç farklı dikdörtgen çizilebilir? Hepsini yazınız.",
+      "cevap": "1. Adım (Yarı çevre): a + b = 26 ÷ 2 = 13 cm.\n2. Adım (Sistemli listeleme): Kısa kenara 1'den başlayarak değer verelim: (1, 12), (2, 11), (3, 10), (4, 9), (5, 8), (6, 7).\n3. Adım (Durma noktası): Kısa kenar 7 olursa uzun kenar 6 olur; bu (6, 7) dikdörtgeninin döndürülmüş hâlidir, yeni değildir.\nSonuç: 6 farklı dikdörtgen çizilebilir. Yarı çevre 13 tek sayı olduğu için listede kare yoktur.",
+      "ipucu": "Önce yarı çevreyi bul, sonra kısa kenarı 1'den başlatıp uzun kenarı geçmeyecek şekilde artır."
+    },
+    {
+      "soru": "Kareli kâğıda çevresi 18 birim ve bir kenarı 3 birim olan bir dikdörtgen çizilecektir. Diğer kenar kaç birim olmalıdır? Çizilen dikdörtgenin içinde kaç birim kare bulunur?",
+      "cevap": "1. Adım (Yarı çevre): 18 ÷ 2 = 9 birim.\n2. Adım (Diğer kenar): 9 − 3 = 6 birim.\n3. Adım (Kontrol): 3 + 6 + 3 + 6 = 18 birim, doğru.\n4. Adım (Birim kare sayısı): Her sırada 6 kare, toplam 3 sıra vardır: 6 + 6 + 6 = 3 × 6 = 18 birim kare.\nSonuç: Diğer kenar 6 birimdir; dikdörtgenin içinde 18 birim kare vardır. Burada çevrenin ve alanın sayıca aynı çıkması bir rastlantıdır; biri uzunluk (birim), diğeri yüzey (birimkare) ölçüsüdür.",
+      "ipucu": "Bilinmeyen kenar = yarı çevre − bilinen kenar. Kareleri saymak için sıra sayısını bir sıradaki kare sayısıyla çarp."
+    },
+    {
+      "soru": "Öğretmen, çevresi 20 birim olan bir dikdörtgen çizmelerini istedi. Ayşe 3 birim × 7 birim, Can 4 birim × 6 birim boyutlarında dikdörtgen çizdi. Can «İkimizin dikdörtgeni farklı, o hâlde birimiz yanlış yaptı.» diyor. Can haklı mıdır? Açıklayınız.",
+      "cevap": "1. Adım (Ayşe'nin çevresi): 2 × (3 + 7) = 2 × 10 = 20 birim.\n2. Adım (Can'ın çevresi): 2 × (4 + 6) = 2 × 10 = 20 birim.\n3. Adım (Yorum): İki dikdörtgenin de yarı çevresi 10 birimdir. Toplamı 10 olan farklı doğal sayı çiftleri bulunduğu için çevresi 20 birim olan birden fazla dikdörtgen vardır.\nSonuç: Can haklı değildir; ikisi de doğru çizmiştir. Ayşe'nin dikdörtgeninin kısa kenarına 1 birim ekleyip uzun kenarından 1 birim çıkarırsak Can'ın dikdörtgenini elde ederiz ve çevre değişmez.",
+      "ipucu": "Her iki dikdörtgenin çevresini hesapla; aynı çevre farklı kenar çiftleriyle elde edilebilir."
+    },
+    {
+      "soru": "Bir masa yüzeyi, kenarı 1 dm (10 cm) olan karelerle boşluksuz kaplandığında 3 sırada 4'er kare, toplam 12 kare kullanılıyor. Aynı masa kenarı 5 cm olan karelerle kaplanırsa kaç kare gerekir?",
+      "cevap": "1. Adım (Masanın kenarları): 3 sıra × 10 cm = 30 cm ve 4 kare × 10 cm = 40 cm. Masa 30 cm × 40 cm'dir.\n2. Adım (Yeni ölçütle sıralar): Kısa kenar boyunca 30 ÷ 5 = 6 sıra, uzun kenar boyunca her sırada 40 ÷ 5 = 8 kare olur.\n3. Adım (Kare sayısı): 6 × 8 = 48 kare.\nKontrol: Kenarı 10 cm olan bir kare, kenarı 5 cm olan 2 × 2 = 4 kareye eşittir; 12 × 4 = 48.\nSonuç: 48 kare gerekir. Ölçüt küçüldüğü için kare sayısı arttı, masanın yüzeyi ise değişmedi.",
+      "ipucu": "Büyük karenin içine kenarı yarısı kadar olan kaç küçük kare sığdığını düşün."
+    },
+    {
+      "soru": "Dikdörtgen biçimindeki bir banyo duvarının en alt sırasına 9 fayans döşenmiştir. Duvarın sol kenarı boyunca alttan üste 5 fayans sığmaktadır. Fayanslar eş ve kare biçimlidir. Duvarın tamamını kaplamak için kaç fayans gerekir?",
+      "cevap": "1. Adım (Bir sıradaki fayans): Her sırada 9 fayans vardır.\n2. Adım (Sıra sayısı): Sol kenar boyunca 5 fayans sığdığına göre duvarda 5 sıra vardır.\n3. Adım (Toplam): 9 + 9 + 9 + 9 + 9 = 5 × 9 = 45 fayans.\nSonuç: 45 fayans gerekir. Bir fayansı 1 birim kare kabul edersek duvarın kenarları 5 birim ve 9 birim, alanı 45 birimkaredir.",
+      "ipucu": "Bir sıradaki fayans sayısı bir kenarı, sıra sayısı ardışık kenarı gösterir."
+    },
+    {
+      "soru": "Elif, dikdörtgenin alanını bulmak için «İki kenarı toplarım.» diyor. Elif'in yargısını kısa kenarı 3 birim, uzun kenarı 4 birim olan dikdörtgeni birim karelerle kaplayarak sınayınız ve doğru bağıntıyı yazınız.",
+      "cevap": "1. Adım (Birim karelerle ölçme): Dikdörtgen kaplandığında her sırada 4 kare, toplam 3 sıra olur: 4 + 4 + 4 = 12 birim kare.\n2. Adım (Elif'in yolu): 3 + 4 = 7. Bu sayı 12 ile eşit değildir; 7 aslında yarı çevredir.\n3. Adım (Çarpma ile deneme): 3 × 4 = 12. Sayarak bulduğumuz sonuçla aynıdır.\nSonuç: Elif'in yargısı yanlıştır. Doğru bağıntı Alan = kısa kenar × uzun kenar = 3 × 4 = 12 birimkaredir.",
+      "ipucu": "Sayarak bulduğun birim kare sayısını hem toplamla hem çarpımla karşılaştır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Kenar uzunlukları doğal sayı olan ve çevre uzunluğu 14 birim olan dikdörtgenler oluşturulacaktır. Aşağıdakilerden hangisi bu dikdörtgenlerden biri olamaz?",
+      "secenekler": [
+        "1 birim ve 6 birim",
+        "2 birim ve 6 birim",
+        "3 birim ve 4 birim",
+        "2 birim ve 5 birim"
+      ],
+      "dogru": 1,
+      "aciklama": "Yarı çevre 14 ÷ 2 = 7 birim olmalıdır. 1 + 6, 3 + 4 ve 2 + 5 toplamları 7'dir; 2 + 6 = 8 olduğundan bu dikdörtgenin çevresi 16 birimdir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kenar uzunlukları santimetre cinsinden doğal sayı olan ve çevre uzunluğu 32 cm olan kaç farklı dikdörtgen vardır?",
+      "secenekler": [
+        "7",
+        "15",
+        "8",
+        "16"
+      ],
+      "dogru": 2,
+      "aciklama": "Yarı çevre 32 ÷ 2 = 16 cm'dir. Kenar çiftleri (1, 15), (2, 14), (3, 13), (4, 12), (5, 11), (6, 10), (7, 9) ve (8, 8) olmak üzere 8 farklı dikdörtgen vardır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kısa kenarı 6 cm, uzun kenarı 8 cm olan bir kart, kenarı 2 cm olan eş karelerle boşluksuz ve üst üste binmeden kaplanacaktır. Kaç kare gerekir?",
+      "secenekler": [
+        "12",
+        "24",
+        "48",
+        "14"
+      ],
+      "dogru": 0,
+      "aciklama": "Kısa kenar boyunca 6 ÷ 2 = 3 sıra, uzun kenar boyunca her sırada 8 ÷ 2 = 4 kare olur. 3 × 4 = 12 kare gerekir. (48, kenarı 1 cm olan karelerle bulunacak sayıdır.)"
+    },
+    {
+      "tur": "coktan",
+      "soru": "Dikdörtgen biçimindeki bir panoyu birim karelerle kaplamaya başlayan Mert, ilk sıraya 7, ilk sütuna 4 birim kare yerleştirmiştir. Panonun tamamı kaplandığında kaç birim kare kullanılmış olur?",
+      "secenekler": [
+        "11",
+        "22",
+        "24",
+        "28"
+      ],
+      "dogru": 3,
+      "aciklama": "Panoda 4 sıra, her sırada 7 birim kare olacaktır: 4 × 7 = 28 birim kare. 11 sayısı kenarların toplamı, 22 ise çevre uzunluğudur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Kenar uzunlukları doğal sayı olan bir dikdörtgenin çevre uzunluğu 27 cm olabilir.",
+          "dogru": false,
+          "aciklama": "Çevre = 2 × (a + b) olduğundan kenarları doğal sayı olan dikdörtgenin çevresi daima çift sayıdır; 27 tek sayıdır."
+        },
+        {
+          "metin": "Çevresi 12 cm olan ve kenarları doğal sayı olan dikdörtgenler 1 cm × 5 cm, 2 cm × 4 cm ve 3 cm × 3 cm boyutlarındadır.",
+          "dogru": true,
+          "aciklama": "Yarı çevre 6 cm'dir; toplamı 6 olan çiftler (1, 5), (2, 4) ve (3, 3)'tür."
+        },
+        {
+          "metin": "Aynı dikdörtgen farklı büyüklükteki birim karelerle ölçüldüğünde her zaman aynı sayı bulunur.",
+          "dogru": false,
+          "aciklama": "Ölçüt büyüdükçe kare sayısı azalır, küçüldükçe artar. Bu yüzden sonuç birimiyle birlikte söylenir."
+        },
+        {
+          "metin": "Alan ölçülürken birim kareler arasında boşluk bırakılmamalı ve kareler üst üste binmemelidir.",
+          "dogru": true,
+          "aciklama": "Boşluk bırakılırsa ölçülmeyen yerler kalır, üst üste binerse aynı yer iki kez sayılır; iki durumda da ölçüm hatalı olur."
+        },
+        {
+          "metin": "Her sırasında 8 birim kare bulunan 3 sıralı bir dikdörtgenin alanı 8 + 3 = 11 birimkaredir.",
+          "dogru": false,
+          "aciklama": "3 sıranın her birinde 8 kare vardır: 8 + 8 + 8 = 3 × 8 = 24 birimkare. Alan kenarların toplamı değil çarpımıdır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Birim kare",
+          "Alan ölçmede ölçüt olarak seçilen, kenar uzunluğu 1 birim olan kare"
+        ],
+        [
+          "Yarı çevre",
+          "Dikdörtgenin bir kısa kenarı ile bir uzun kenarının toplamı"
+        ],
+        [
+          "1 santimetrekare",
+          "Kenar uzunluğu 1 cm olan karenin kapladığı yüzey"
+        ],
+        [
+          "Sıra sayısı × bir sıradaki kare sayısı",
+          "Dikdörtgeni kaplayan toplam birim kare sayısı"
+        ],
+        [
+          "Çevresi 18 cm olan dikdörtgen sayısı",
+          "4 farklı dikdörtgen: 1 × 8, 2 × 7, 3 × 6, 4 × 5"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Kenar uzunlukları doğal sayı olan bir dikdörtgenin çevre uzunluğu daima ___ bir sayıdır.",
+          "cevap": "çift"
+        },
+        {
+          "metin": "Çevresi 30 cm olan bir dikdörtgenin bir kısa kenarı ile bir uzun kenarının toplamı ___ cm'dir.",
+          "cevap": "15"
+        },
+        {
+          "metin": "Alan ölçerken ölçüt olarak seçilen eş karelere ___ kare denir.",
+          "cevap": "birim"
+        },
+        {
+          "metin": "Seçilen birim kare büyüdükçe dikdörtgeni kaplayan birim kare sayısı ___.",
+          "cevap": "azalır"
+        },
+        {
+          "metin": "Dikdörtgenin alanı, iki ardışık kenar uzunluğunun ___ eşittir.",
+          "cevap": "çarpımına"
+        }
+      ],
+      "kelimeler": [
+        "çift",
+        "15",
+        "birim",
+        "azalır",
+        "çarpımına"
+      ],
+      "fazla": [
+        "tek",
+        "artar"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Sınıfınızdaki dikdörtgen biçimli bir panonun kenarlarına çevresi 22 birim olacak şekilde şerit çekilmiştir. Panonun kısa kenarı 4 birimdir. Panonun içi, her biri 1 birim kare olan renkli kartlarla boşluksuz kaplanacaktır. Kartların tanesi 3 TL olduğuna göre panonun uzun kenarını, gereken kart sayısını ve kartlar için ödenecek tutarı bulunuz.",
+      "ipuclari": [
+        "1. adım: Çevreyi 2'ye bölerek yarı çevreyi bul, kısa kenarı çıkararak uzun kenarı hesapla; dört kenarı toplayarak kontrol et.",
+        "2. adım: Bir sıraya uzun kenar kadar kart, kısa kenar kadar sıra yerleşeceğini düşünerek kart sayısını sıra sıra toplama ve çarpma ile bul.",
+        "3. adım: Kart sayısını bir kartın fiyatıyla çarparak toplam tutarı hesapla."
+      ],
+      "cevap": "1. Adım (Uzun kenar): Yarı çevre = 22 ÷ 2 = 11 birim. Uzun kenar = 11 − 4 = 7 birim. Kontrol: 4 + 7 + 4 + 7 = 22 birim.\n2. Adım (Kart sayısı): Her sırada 7 kart, toplam 4 sıra vardır: 7 + 7 + 7 + 7 = 4 × 7 = 28 kart. Yani panonun alanı 28 birimkaredir.\n3. Adım (Tutar): 28 × 3 = 84 TL.\nSonuç: Panonun uzun kenarı 7 birimdir; 28 kart gerekir ve kartlar için 84 TL ödenir."
+    }
+  ]
+}

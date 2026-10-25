@@ -14,7 +14,7 @@
   ],
   "kavramlar": [
     {
-      "terim": "Eş Değer Yay Sabiti (k_eş)",
+      "terim": "Eş Değer Yay Sabiti (k{alt:eş})",
       "tanim": "Birden fazla yayın seri veya paralel bağlanmasıyla oluşan sistemin tek başına yaptığı etkiyi gösteren toplam esneklik sabitidir."
     },
     {
@@ -44,13 +44,13 @@
       "baslik": "Yay Sarkacında Periyot ve Yayların Bağlanması",
       "metin": [
         "Sürtünmesiz ortamda yay sabiti k olan esnek bir yayın ucuna m kütleli bir cisim bağlanarak denge konumundan çekilip bırakıldığında cisim basit harmonik hareket yapar. Yay sarkacının periyodu {koyu:T = 2 · pi · {kok:{kesir:m|k}}} (kodlaması: TAMEK) bağıntısıyla hesaplanır. Bu bağıntıdan görüldüğü üzere yay sarkacının periyodu yalnızca cismin kütlesine (m) ve yayın esneklik sabitinin (k) kareköküne bağlıdır; çekim ivmesine (g), düzlemin eğim açısına ve hareketin genliğine (r) bağlı değildir.",
-        "Birden fazla yayın kullanıldığı sistemlerde periyot hesaplanırken önce {koyu:eş değer yay sabiti (k_eş)} bulunur. Yaylar uç uca {koyu:seri} bağlandığında her yayda aynı kuvvet oluşur ve sistem daha yumuşak hale gelir; eş değer yay sabiti {koyu:{kesir:1|k_eş} = {kesir:1|k_1} + {kesir:1|k_2}} bağıntısıyla (iki yay için {kesir:k_1 · k_2|k_1 + k_2}) bulunur. Yaylar cisme aynı anda {koyu:paralel} bağlandığında ise sistem sertleşir ve eş değer yay sabiti doğrudan toplanarak {koyu:k_eş = k_1 + k_2} olur. Ayrıca boyu L, yay sabiti k olan homojen bir yay n eşit parçaya bölünürse, her bir parçanın yay sabiti {koyu:n · k} değerine yükselir."
+        "Birden fazla yayın kullanıldığı sistemlerde periyot hesaplanırken önce {koyu:eş değer yay sabiti (k{alt:eş})} bulunur. Yaylar uç uca {koyu:seri} bağlandığında her yayda aynı kuvvet oluşur ve sistem daha yumuşak hale gelir; eş değer yay sabiti {koyu:{kesir:1|k{alt:eş}} = {kesir:1|k{alt:1}} + {kesir:1|k{alt:2}}} bağıntısıyla (iki yay için {kesir:k{alt:1} · k{alt:2}|k{alt:1} + k{alt:2}}) bulunur. Yaylar cisme aynı anda {koyu:paralel} bağlandığında ise sistem sertleşir ve eş değer yay sabiti doğrudan toplanarak {koyu:k{alt:eş} = k{alt:1} + k{alt:2}} olur. Ayrıca boyu L, yay sabiti k olan homojen bir yay n eşit parçaya bölünürse, her bir parçanın yay sabiti {koyu:n · k} değerine yükselir."
       ],
       "kutular": [
         {
           "tur": "kural",
           "baslik": "Paralel Bağlama Periyot Kuralı",
-          "metin": "Cisme iki yandan bağlanan yaylar da cisimle birlikte biri sıkışırken diğeri uzadığı için paralel bağlıdır ve eş değer yay sabiti k_eş = k_1 + k_2 olur."
+          "metin": "Cisme iki yandan bağlanan yaylar da cisimle birlikte biri sıkışırken diğeri uzadığı için paralel bağlıdır ve eş değer yay sabiti k{alt:eş} = k{alt:1} + k{alt:2} olur."
         },
         {
           "tur": "ipucu",
@@ -61,7 +61,7 @@
       "tablo": {
         "basliklar": [
           "Bağlama / İşlem Türü",
-          "Eş Değer Yay Sabiti (k_eş)",
+          "Eş Değer Yay Sabiti (k{alt:eş})",
           "Özdeş İki Yay (k, k) İçin Sonuç",
           "Periyot (T) Değişimi"
         ],
@@ -74,15 +74,15 @@
           ],
           [
             "Seri Bağlama",
-            "{kesir:k_1 · k_2|k_1 + k_2}",
+            "{kesir:k{alt:1} · k{alt:2}|k{alt:1} + k{alt:2}}",
             "{kesir:k|2}",
-            "k_eş yarıya iner, periyot {kok:2} katına çıkar"
+            "k{alt:eş} yarıya iner, periyot {kok:2} katına çıkar"
           ],
           [
             "Paralel Bağlama",
-            "k_1 + k_2",
+            "k{alt:1} + k{alt:2}",
             "2k",
-            "k_eş iki katına çıkar, periyot {kesir:1|{kok:2}} katına iner"
+            "k{alt:eş} iki katına çıkar, periyot {kesir:1|{kok:2}} katına iner"
           ],
           [
             "Yayı n Eşit Parçaya Bölme",
@@ -98,7 +98,7 @@
       "baslik": "Basit Sarkaç Periyodu, Çivili ve İvmeli Sistemler",
       "metin": [
         "Ağırlığı önemsiz ve esnemeyen L uzunluğundaki bir ipin ucuna bağlanan noktasal m kütleli cismin, düşeyle yaptığı açı 10 dereceden küçük olmak şartıyla yaptığı salınım hareketine {koyu:basit sarkaç} denir. Basit sarkacın periyodu {koyu:T = 2 · pi · {kok:{kesir:L|g}}} (kodlaması: TOLGA) bağıntısıyla bulunur. Basit sarkacın periyodu ipin uzunluğu (L) ile doğru, ortamın çekim ivmesinin (g) karekökü ile ters orantılıdır; ucuna asılan cismin kütlesine (m) ve küçük açılarda genliğe bağlı değildir.",
-        "Düşey doğrultuda ipin takıldığı bir çivi bulunan {koyu:çivili sarkaç} düzeneğinde, sarkaç hareketinin ilk yarısını (T_1 / 2) uzun ip boyu L_1 ile, çiviye takıldıktan sonraki diğer yarısını (T_2 / 2) ise kısa ip boyu L_2 ile tamamlar. Bu durumda sistemin toplam periyodu iki farklı sarkacın periyotlarının aritmetik ortalamasına eşittir: {koyu:T_sistem = {kesir:T_1 + T_2|2}}. Sarkaç a ivmesiyle hareket eden bir asansör içindeyken ise g yerine {koyu:etkin çekim ivmesi (g_etkin)} kullanılır; yukarı hızlanan veya aşağı yavaşlayan asansörde g_etkin = g + a (periyot azalır), aşağı hızlanan veya yukarı yavaşlayan asansörde ise g_etkin = g - a (periyot artar) olur."
+        "Düşey doğrultuda ipin takıldığı bir çivi bulunan {koyu:çivili sarkaç} düzeneğinde, sarkaç hareketinin ilk yarısını (T{alt:1} / 2) uzun ip boyu L{alt:1} ile, çiviye takıldıktan sonraki diğer yarısını (T{alt:2} / 2) ise kısa ip boyu L{alt:2} ile tamamlar. Bu durumda sistemin toplam periyodu iki farklı sarkacın periyotlarının aritmetik ortalamasına eşittir: {koyu:T{alt:sistem} = {kesir:T{alt:1} + T{alt:2}|2}}. Sarkaç a ivmesiyle hareket eden bir asansör içindeyken ise g yerine {koyu:etkin çekim ivmesi (g{alt:etkin})} kullanılır; yukarı hızlanan veya aşağı yavaşlayan asansörde g{alt:etkin} = g + a (periyot azalır), aşağı hızlanan veya yukarı yavaşlayan asansörde ise g{alt:etkin} = g - a (periyot artar) olur."
       ],
       "kutular": [
         {
@@ -115,8 +115,8 @@
       "liste": [
         "Kütle Bağımsızlığı: Basit sarkaçta kütle iki katına çıkarılsa bile T = 2·pi·{kok:{kesir:L|g}} bağıntısında m yer almadığından periyot değişmez.",
         "Boy Değişimi: Basit sarkacın ip boyu L'den 4L'ye çıkarılırsa periyot {kok:4} = 2 katına çıkar.",
-        "Çivili Sarkaç: L_1 boyuyla T_1 = 6 s ve çivi altındaki L_2 boyuyla T_2 = 2 s olan çivili sarkacın periyodu (6 + 2) / 2 = 4 saniyedir.",
-        "Serbest Düşen Kabin: Serbest düşme yapan (a = g aşağı) bir kabinde g_etkin = 0 olacağından basit sarkaç salınım yapamaz, yay sarkacı ise normal periyoduyla salınır."
+        "Çivili Sarkaç: L{alt:1} boyuyla T{alt:1} = 6 s ve çivi altındaki L{alt:2} boyuyla T{alt:2} = 2 s olan çivili sarkacın periyodu (6 + 2) / 2 = 4 saniyedir.",
+        "Serbest Düşen Kabin: Serbest düşme yapan (a = g aşağı) bir kabinde g{alt:etkin} = 0 olacağından basit sarkaç salınım yapamaz, yay sarkacı ise normal periyoduyla salınır."
       ],
       "gorsel": "<svg viewBox=\"0 0 700 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\"><rect width=\"700\" height=\"260\" rx=\"16\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"350\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#14532d\">Basit Sarkaç Periyodu ve Çivili / İvmeli Sistemler</text><rect x=\"28\" y=\"50\" width=\"205\" height=\"174\" rx=\"12\" fill=\"#ffffff\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"130\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">Basit Sarkaç (Tolga Bağıntısı)</text><line x1=\"90\" y1=\"84\" x2=\"170\" y2=\"84\" stroke=\"#1e293b\" stroke-width=\"4\"/><line x1=\"130\" y1=\"84\" x2=\"165\" y2=\"152\" stroke=\"#16a34a\" stroke-width=\"2.5\"/><circle cx=\"165\" cy=\"158\" r=\"12\" fill=\"#16a34a\"/><text x=\"135\" y=\"125\" font-size=\"11\" font-weight=\"700\" fill=\"#14532d\">L</text><text x=\"130\" y=\"192\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">T = 2 . pi . kök(L / g)</text><text x=\"130\" y=\"210\" text-anchor=\"middle\" font-size=\"10\" fill=\"#14532d\">Kütle (m) periyodu etkilemez</text><rect x=\"248\" y=\"50\" width=\"205\" height=\"174\" rx=\"12\" fill=\"#ffffff\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Çivili Sarkaç Periyodu</text><line x1=\"310\" y1=\"84\" x2=\"390\" y2=\"84\" stroke=\"#1e293b\" stroke-width=\"4\"/><line x1=\"350\" y1=\"84\" x2=\"320\" y2=\"152\" stroke=\"#0284c7\" stroke-width=\"2.5\"/><circle cx=\"320\" cy=\"158\" r=\"10\" fill=\"#0284c7\"/><circle cx=\"350\" cy=\"120\" r=\"4\" fill=\"#dc2626\"/><text x=\"362\" y=\"124\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\">Çivi</text><line x1=\"350\" y1=\"120\" x2=\"372\" y2=\"154\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/><circle cx=\"372\" cy=\"158\" r=\"10\" fill=\"#fb7185\"/><text x=\"350\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#075985\">T_sis = (T1 + T2) / 2</text><text x=\"350\" y=\"210\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0c4a6e\">Yarım salınım L1, yarım salınım L2</text><rect x=\"468\" y=\"50\" width=\"205\" height=\"174\" rx=\"12\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"570\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#6b21a8\">İvmeli Asansörde Sarkaç</text><text x=\"484\" y=\"102\" font-size=\"10.5\" fill=\"#4c1d95\">• Etkin ivme g_etkin = g + a veya g - a</text><text x=\"484\" y=\"126\" font-size=\"10.5\" fill=\"#4c1d95\">• Yukarı hızlanan / aşağı yavaşlayan:</text><text x=\"494\" y=\"144\" font-size=\"10\" font-weight=\"700\" fill=\"#6d28d9\">g_etkin = g + a (Periyot T azalır)</text><text x=\"484\" y=\"168\" font-size=\"10.5\" fill=\"#4c1d95\">• Aşağı hızlanan / yukarı yavaşlayan:</text><text x=\"494\" y=\"186\" font-size=\"10\" font-weight=\"700\" fill=\"#6d28d9\">g_etkin = g - a (Periyot T artar)</text><text x=\"570\" y=\"210\" text-anchor=\"middle\" font-size=\"10\" fill=\"#581c87\">Yay sarkacı asansör ivmesinden etkilenmez</text><text x=\"350\" y=\"246\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"#14532d\">Saniyeleri vuran basit sarkacın periyodu T = 2 saniyedir (gidiş 1 s, dönüş 1 s).</text></svg>"
     },
@@ -124,7 +124,7 @@
       "baslik": "BHH'de Periyot Bölümleri ve Dinamik Büyüklüklerin Analizi",
       "metin": [
         "Basit harmonik hareket yapan bir cismin genlik noktaları (-r ve +r) ile denge noktası (O) arasındaki hareketinde hız büyüklüğü sabit olmadığı için eşit uzunluktaki aralıkları geçme süreleri birbirinden farklıdır. Cismin bir uç noktadan (K: -r) diğer uç noktaya (L: +r) gitmesi {koyu:{kesir:T|2}}, uç noktadan denge noktasına (O) gelmesi ise {koyu:{kesir:T|4}} sürer. K-O ve O-L aralıkları da kendi içinde iki eşit parçaya (-r/2 ve +r/2) bölündüğünde; cisim uç noktadan yarı yola {koyu:{kesir:T|6}} sürede, yarı yoldan denge noktasına ise hızlandığı için {koyu:{kesir:T|12}} sürede ulaşır (T/6 + T/12 = T/4).",
-        "Hareket boyunca cisim üzerine etki eden geri çağırıcı kuvvet {koyu:F = m · {us:w|2} · x} ve ivme {koyu:a = {us:w|2} · x} daima denge noktasına (merkeze) doğrudur ve uzanım (x) ile doğru orantılıdır. Burada açısal hız {koyu:w = {kesir:2 · pi|T}} = 2 · pi · f değerindedir. Denge konumundan (x = 0) geçerken kuvvet ve ivme sıfır, hız ise maksimum değerdedir ({koyu:v_max = w · r}). Uç noktalarda (x = r) ise anlık hız sıfır, kuvvet ve ivme maksimum değerdedir."
+        "Hareket boyunca cisim üzerine etki eden geri çağırıcı kuvvet {koyu:F = m · {us:w|2} · x} ve ivme {koyu:a = {us:w|2} · x} daima denge noktasına (merkeze) doğrudur ve uzanım (x) ile doğru orantılıdır. Burada açısal hız {koyu:w = {kesir:2 · pi|T}} = 2 · pi · f değerindedir. Denge konumundan (x = 0) geçerken kuvvet ve ivme sıfır, hız ise maksimum değerdedir ({koyu:v{alt:max} = w · r}). Uç noktalarda (x = r) ise anlık hız sıfır, kuvvet ve ivme maksimum değerdedir."
       ],
       "kutular": [
         {
@@ -154,7 +154,7 @@
           ],
           [
             "Hız Büyüklüğü (v)",
-            "v_max = w · r",
+            "v{alt:max} = w · r",
             "w · {kok:{us:r|2} - {us:x|2}}",
             "0 (Anlık olarak durur)"
           ],
@@ -162,13 +162,13 @@
             "İvme Büyüklüğü (a)",
             "0 (Sıfır)",
             "{us:w|2} · x (Dengeye doğru)",
-            "a_max = {us:w|2} · r"
+            "a{alt:max} = {us:w|2} · r"
           ],
           [
             "Geri Çağırıcı Kuvvet (F)",
             "0 (Sıfır)",
             "m · {us:w|2} · x (Dengeye doğru)",
-            "F_max = m · {us:w|2} · r"
+            "F{alt:max} = m · {us:w|2} · r"
           ]
         ]
       },
@@ -263,7 +263,7 @@
         {
           "tur": "bilgi",
           "baslik": "Birleşik Sarkaç Kıyaslaması",
-          "metin": "Dünya'da periyotları eşit olan bir yay sarkacı ile basit sarkaç Ay'a götürülürse; yay sarkacının periyodu değişmez, basit sarkacın periyodu ise g_Ay < g_Dünya olduğu için büyür."
+          "metin": "Dünya'da periyotları eşit olan bir yay sarkacı ile basit sarkaç Ay'a götürülürse; yay sarkacının periyodu değişmez, basit sarkacın periyodu ise g{alt:Ay} < g{alt:Dünya} olduğu için büyür."
         }
       ],
       "tablo": {
@@ -276,14 +276,14 @@
         "satirlar": [
           [
             "Yay Sarkacı",
-            "T = 2 · pi · {kok:{kesir:m|k_eş}}",
-            "Cismin kütlesi (m), eş değer yay sabiti (k_eş)",
+            "T = 2 · pi · {kok:{kesir:m|k{alt:eş}}}",
+            "Cismin kütlesi (m), eş değer yay sabiti (k{alt:eş})",
             "Çekim ivmesi (g), asansör ivmesi (a), genlik (r), eğim açısı"
           ],
           [
             "Basit Sarkaç",
-            "T = 2 · pi · {kok:{kesir:L|g_etkin}}",
-            "İp uzunluğu (L), etkin çekim ivmesi (g_etkin)",
+            "T = 2 · pi · {kok:{kesir:L|g{alt:etkin}}}",
+            "İp uzunluğu (L), etkin çekim ivmesi (g{alt:etkin})",
             "Cismin kütlesi (m), küçük açılarda genlik açısı"
           ],
           [
@@ -299,28 +299,28 @@
   ],
   "ornekler": [
     {
-      "soru": "Yay sabitleri sırasıyla k_1 = 60 N/m ve k_2 = 30 N/m olan iki yay önce birbirine seri, sonra paralel bağlanarak uçlarına 2 kg kütleli özdeş cisimler asılıyor. Seri bağlı sistemin periyodu T_s, paralel bağlı sistemin periyodu T_p olduğuna göre T_s / T_p oranını bulunuz.",
-      "cevap": "Seri bağlamada eş değer yay sabiti k_seri = (60 · 30) / (60 + 30) = 1800 / 90 = 20 N/m olur. Paralel bağlamada ise k_paralel = 60 + 30 = 90 N/m bulunur. Yay sarkacında periyot T = 2 · pi · {kok:{kesir:m|k}} olduğundan ve kütleler eşit olduğundan periyotlar oranı yay sabitlerinin karekökü ile ters orantılıdır: T_s / T_p = {kok:{kesir:k_paralel|k_seri}} = {kok:{kesir:90|20}} = {kok:{kesir:9|2}} = {kesir:3|{kok:2}} = {kesir:3{kok:2}|2} bulunur.",
-      "cozum": "Seri bağlamada eş değer yay sabiti k_seri = (60 · 30) / (60 + 30) = 1800 / 90 = 20 N/m olur. Paralel bağlamada ise k_paralel = 60 + 30 = 90 N/m bulunur. Yay sarkacında periyot T = 2 · pi · {kok:{kesir:m|k}} olduğundan ve kütleler eşit olduğundan periyotlar oranı yay sabitlerinin karekökü ile ters orantılıdır: T_s / T_p = {kok:{kesir:k_paralel|k_seri}} = {kok:{kesir:90|20}} = {kok:{kesir:9|2}} = {kesir:3|{kok:2}} = {kesir:3{kok:2}|2} bulunur.",
+      "soru": "Yay sabitleri sırasıyla k{alt:1} = 60 N/m ve k{alt:2} = 30 N/m olan iki yay önce birbirine seri, sonra paralel bağlanarak uçlarına 2 kg kütleli özdeş cisimler asılıyor. Seri bağlı sistemin periyodu T{alt:s}, paralel bağlı sistemin periyodu T{alt:p} olduğuna göre T{alt:s} / T{alt:p} oranını bulunuz.",
+      "cevap": "Seri bağlamada eş değer yay sabiti k{alt:seri} = (60 · 30) / (60 + 30) = 1800 / 90 = 20 N/m olur. Paralel bağlamada ise k{alt:paralel} = 60 + 30 = 90 N/m bulunur. Yay sarkacında periyot T = 2 · pi · {kok:{kesir:m|k}} olduğundan ve kütleler eşit olduğundan periyotlar oranı yay sabitlerinin karekökü ile ters orantılıdır: T{alt:s} / T{alt:p} = {kok:{kesir:k{alt:paralel}|k{alt:seri}}} = {kok:{kesir:90|20}} = {kok:{kesir:9|2}} = {kesir:3|{kok:2}} = {kesir:3{kok:2}|2} bulunur.",
+      "cozum": "Seri bağlamada eş değer yay sabiti k{alt:seri} = (60 · 30) / (60 + 30) = 1800 / 90 = 20 N/m olur. Paralel bağlamada ise k{alt:paralel} = 60 + 30 = 90 N/m bulunur. Yay sarkacında periyot T = 2 · pi · {kok:{kesir:m|k}} olduğundan ve kütleler eşit olduğundan periyotlar oranı yay sabitlerinin karekökü ile ters orantılıdır: T{alt:s} / T{alt:p} = {kok:{kesir:k{alt:paralel}|k{alt:seri}}} = {kok:{kesir:90|20}} = {kok:{kesir:9|2}} = {kesir:3|{kok:2}} = {kesir:3{kok:2}|2} bulunur.",
       "ipucu": "Önce seri ve paralel bağlama için eş değer yay sabitlerini hesaplayıp T = 2·pi·{kok:{kesir:m|k}} bağıntısında oranlayınız."
     },
     {
       "soru": "Yay sabiti k olan homojen bir yay 4 eşit parçaya bölünüyor ve bu parçalardan 2 tanesi birbirine paralel bağlanarak ucuna m kütleli cisim asılıyor. İlk durumda tek yayın ucuna m kütlesi asıldığında periyot T olduğuna göre yeni sistemin periyodu kaç T olur?",
-      "cevap": "Homojen bir yay 4 eşit parçaya bölündüğünde her bir parçanın yay sabiti 4k olur. Bu parçalardan 2 tanesi birbirine paralel bağlandığında sistemin eş değer yay sabiti k_eş = 4k + 4k = 8k değerine ulaşır. İlk durumda T = 2·pi·{kok:{kesir:m|k}} iken yeni durumda T_yeni = 2·pi·{kok:{kesir:m|8k}} = {kesir:T|{kok:8}} = {kesir:T|2{kok:2}} olur.",
-      "cozum": "Homojen bir yay 4 eşit parçaya bölündüğünde her bir parçanın yay sabiti 4k olur. Bu parçalardan 2 tanesi birbirine paralel bağlandığında sistemin eş değer yay sabiti k_eş = 4k + 4k = 8k değerine ulaşır. İlk durumda T = 2·pi·{kok:{kesir:m|k}} iken yeni durumda T_yeni = 2·pi·{kok:{kesir:m|8k}} = {kesir:T|{kok:8}} = {kesir:T|2{kok:2}} olur.",
+      "cevap": "Homojen bir yay 4 eşit parçaya bölündüğünde her bir parçanın yay sabiti 4k olur. Bu parçalardan 2 tanesi birbirine paralel bağlandığında sistemin eş değer yay sabiti k{alt:eş} = 4k + 4k = 8k değerine ulaşır. İlk durumda T = 2·pi·{kok:{kesir:m|k}} iken yeni durumda T{alt:yeni} = 2·pi·{kok:{kesir:m|8k}} = {kesir:T|{kok:8}} = {kesir:T|2{kok:2}} olur.",
+      "cozum": "Homojen bir yay 4 eşit parçaya bölündüğünde her bir parçanın yay sabiti 4k olur. Bu parçalardan 2 tanesi birbirine paralel bağlandığında sistemin eş değer yay sabiti k{alt:eş} = 4k + 4k = 8k değerine ulaşır. İlk durumda T = 2·pi·{kok:{kesir:m|k}} iken yeni durumda T{alt:yeni} = 2·pi·{kok:{kesir:m|8k}} = {kesir:T|{kok:8}} = {kesir:T|2{kok:2}} olur.",
       "ipucu": "n eşit parçaya bölünen yayın her parçasının yay sabitinin n·k olduğunu ve paralel bağlamada toplandığını kullanınız."
     },
     {
-      "soru": "İp uzunluğu L_1 = 1,6 m olan bir basit sarkaç, düşey doğrultuda tavandan 1,2 m aşağıda bulunan bir çiviye takılarak çivili sarkaç sistemi oluşturuyor. Çekim ivmesi g = 10 m/{us:s|2} ve pi = 3 alındığına göre bu çivili sarkacın periyodu kaç saniyedir?",
-      "cevap": "Sarkaç hareketinin ilk yarısını L_1 = 1,6 m ip boyuyla yapar: T_1 = 2 · 3 · {kok:{kesir:1,6|10}} = 6 · {kok:0,16} = 6 · 0,4 = 2,4 saniye. İp tavandan 1,2 m aşağıdaki çiviye takıldığında kalan ip boyu L_2 = 1,6 - 1,2 = 0,4 m olur. İkinci yarım salınım için T_2 = 2 · 3 · {kok:{kesir:0,4|10}} = 6 · {kok:0,04} = 6 · 0,2 = 1,2 saniyedir. Çivili sarkacın periyodu T_sistem = (T_1 + T_2) / 2 = (2,4 + 1,2) / 2 = 1,8 saniye bulunur.",
-      "cozum": "Sarkaç hareketinin ilk yarısını L_1 = 1,6 m ip boyuyla yapar: T_1 = 2 · 3 · {kok:{kesir:1,6|10}} = 6 · {kok:0,16} = 6 · 0,4 = 2,4 saniye. İp tavandan 1,2 m aşağıdaki çiviye takıldığında kalan ip boyu L_2 = 1,6 - 1,2 = 0,4 m olur. İkinci yarım salınım için T_2 = 2 · 3 · {kok:{kesir:0,4|10}} = 6 · {kok:0,04} = 6 · 0,2 = 1,2 saniyedir. Çivili sarkacın periyodu T_sistem = (T_1 + T_2) / 2 = (2,4 + 1,2) / 2 = 1,8 saniye bulunur.",
-      "ipucu": "Çiviye takıldıktan sonra kalan ip boyunun L_2 = 1,6 - 1,2 = 0,4 m olduğuna dikkat ediniz ve T_sis = (T_1 + T_2) / 2 formülünü uygulayınız."
+      "soru": "İp uzunluğu L{alt:1} = 1,6 m olan bir basit sarkaç, düşey doğrultuda tavandan 1,2 m aşağıda bulunan bir çiviye takılarak çivili sarkaç sistemi oluşturuyor. Çekim ivmesi g = 10 m/{us:s|2} ve pi = 3 alındığına göre bu çivili sarkacın periyodu kaç saniyedir?",
+      "cevap": "Sarkaç hareketinin ilk yarısını L{alt:1} = 1,6 m ip boyuyla yapar: T{alt:1} = 2 · 3 · {kok:{kesir:1,6|10}} = 6 · {kok:0,16} = 6 · 0,4 = 2,4 saniye. İp tavandan 1,2 m aşağıdaki çiviye takıldığında kalan ip boyu L{alt:2} = 1,6 - 1,2 = 0,4 m olur. İkinci yarım salınım için T{alt:2} = 2 · 3 · {kok:{kesir:0,4|10}} = 6 · {kok:0,04} = 6 · 0,2 = 1,2 saniyedir. Çivili sarkacın periyodu T{alt:sistem} = (T{alt:1} + T{alt:2}) / 2 = (2,4 + 1,2) / 2 = 1,8 saniye bulunur.",
+      "cozum": "Sarkaç hareketinin ilk yarısını L{alt:1} = 1,6 m ip boyuyla yapar: T{alt:1} = 2 · 3 · {kok:{kesir:1,6|10}} = 6 · {kok:0,16} = 6 · 0,4 = 2,4 saniye. İp tavandan 1,2 m aşağıdaki çiviye takıldığında kalan ip boyu L{alt:2} = 1,6 - 1,2 = 0,4 m olur. İkinci yarım salınım için T{alt:2} = 2 · 3 · {kok:{kesir:0,4|10}} = 6 · {kok:0,04} = 6 · 0,2 = 1,2 saniyedir. Çivili sarkacın periyodu T{alt:sistem} = (T{alt:1} + T{alt:2}) / 2 = (2,4 + 1,2) / 2 = 1,8 saniye bulunur.",
+      "ipucu": "Çiviye takıldıktan sonra kalan ip boyunun L{alt:2} = 1,6 - 1,2 = 0,4 m olduğuna dikkat ediniz ve T{alt:sis} = (T{alt:1} + T{alt:2}) / 2 formülünü uygulayınız."
     },
     {
       "soru": "Duran bir asansör içinde periyodu 4 saniye olan bir basit sarkaç, asansör yukarı yönde a = 6 m/{us:s|2} sabit ivmeyle hızlanırken kaç saniye periyotla salınım yapar? (g = 10 m/{us:s|2})",
-      "cevap": "Asansör durgunken etkin ivme g_1 = g = 10 m/{us:s|2} ve periyot T_1 = 4 saniyedir. Asansör yukarı yönde a = 6 m/{us:s|2} ivmeyle hızlandığında eylemsizlik etkisiyle etkin çekim ivmesi g_2 = g + a = 10 + 6 = 16 m/{us:s|2} olur. İp boyu L sabit olduğundan T_2 / T_1 = {kok:{kesir:g_1|g_2}} = {kok:{kesir:10|16}} = {kesir:{kok:10}|4} olur. Buradan T_2 = 4 · ({kesir:{kok:10}|4}) = {kok:10} saniye bulunur.",
-      "cozum": "Asansör durgunken etkin ivme g_1 = g = 10 m/{us:s|2} ve periyot T_1 = 4 saniyedir. Asansör yukarı yönde a = 6 m/{us:s|2} ivmeyle hızlandığında eylemsizlik etkisiyle etkin çekim ivmesi g_2 = g + a = 10 + 6 = 16 m/{us:s|2} olur. İp boyu L sabit olduğundan T_2 / T_1 = {kok:{kesir:g_1|g_2}} = {kok:{kesir:10|16}} = {kesir:{kok:10}|4} olur. Buradan T_2 = 4 · ({kesir:{kok:10}|4}) = {kok:10} saniye bulunur.",
-      "ipucu": "Yukarı hızlanan asansörde g_etkin = g + a olduğunu ve periyodun çekim ivmesinin karekökü ile ters orantılı olduğunu kullanınız."
+      "cevap": "Asansör durgunken etkin ivme g{alt:1} = g = 10 m/{us:s|2} ve periyot T{alt:1} = 4 saniyedir. Asansör yukarı yönde a = 6 m/{us:s|2} ivmeyle hızlandığında eylemsizlik etkisiyle etkin çekim ivmesi g{alt:2} = g + a = 10 + 6 = 16 m/{us:s|2} olur. İp boyu L sabit olduğundan T{alt:2} / T{alt:1} = {kok:{kesir:g{alt:1}|g{alt:2}}} = {kok:{kesir:10|16}} = {kesir:{kok:10}|4} olur. Buradan T{alt:2} = 4 · ({kesir:{kok:10}|4}) = {kok:10} saniye bulunur.",
+      "cozum": "Asansör durgunken etkin ivme g{alt:1} = g = 10 m/{us:s|2} ve periyot T{alt:1} = 4 saniyedir. Asansör yukarı yönde a = 6 m/{us:s|2} ivmeyle hızlandığında eylemsizlik etkisiyle etkin çekim ivmesi g{alt:2} = g + a = 10 + 6 = 16 m/{us:s|2} olur. İp boyu L sabit olduğundan T{alt:2} / T{alt:1} = {kok:{kesir:g{alt:1}|g{alt:2}}} = {kok:{kesir:10|16}} = {kesir:{kok:10}|4} olur. Buradan T{alt:2} = 4 · ({kesir:{kok:10}|4}) = {kok:10} saniye bulunur.",
+      "ipucu": "Yukarı hızlanan asansörde g{alt:etkin} = g + a olduğunu ve periyodun çekim ivmesinin karekökü ile ters orantılı olduğunu kullanınız."
     },
     {
       "soru": "Sabit derinlikli bir dalga leğeninde su dalgalarının yayılma sürati 12 cm/s'dir. Dalga kaynağı saniyede 4 dalga ürettiğine göre, dalgaların kırınıma uğrayabilmesi için engeller arasındaki yarık genişliği (w) en fazla kaç cm olmalıdır?",
@@ -338,7 +338,7 @@
   "etkinlikler": [
     {
       "tur": "coktan",
-      "soru": "Özdeş ve her birinin yay sabiti k olan iki yay önce birbirine seri bağlanıp ucuna m kütleli cisim asılarak T_1 periyotlu salınım yaptırılıyor. Daha sonra aynı iki yay birbirine paralel bağlanıp ucuna yine m kütleli cisim asılarak T_2 periyotlu salınım yaptırılıyor. Buna göre T_1 / T_2 oranı kaçtır?",
+      "soru": "Özdeş ve her birinin yay sabiti k olan iki yay önce birbirine seri bağlanıp ucuna m kütleli cisim asılarak T{alt:1} periyotlu salınım yaptırılıyor. Daha sonra aynı iki yay birbirine paralel bağlanıp ucuna yine m kütleli cisim asılarak T{alt:2} periyotlu salınım yaptırılıyor. Buna göre T{alt:1} / T{alt:2} oranı kaçtır?",
       "secenekler": [
         "{kesir:1|4}",
         "{kesir:1|2}",
@@ -347,7 +347,7 @@
         "4"
       ],
       "dogru": 3,
-      "aciklama": "Seri bağlamada eş değer yay sabiti k_1 = k/2, paralel bağlamada k_2 = 2k olur. T_1 / T_2 = {kok:{kesir:k_2|k_1}} = {kok:{kesir:2k|k/2}} = {kok:4} = 2 bulunur."
+      "aciklama": "Seri bağlamada eş değer yay sabiti k{alt:1} = k/2, paralel bağlamada k{alt:2} = 2k olur. T{alt:1} / T{alt:2} = {kok:{kesir:k{alt:2}|k{alt:1}}} = {kok:{kesir:2k|k/2}} = {kok:4} = 2 bulunur."
     },
     {
       "tur": "coktan",
@@ -433,7 +433,7 @@
         ],
         [
           "Paralel Bağlı Yaylar",
-          "Eş değer yay sabiti k_eş = k_1 + k_2 olarak toplanır"
+          "Eş değer yay sabiti k{alt:eş} = k{alt:1} + k{alt:2} olarak toplanır"
         ],
         [
           "Su Dalgalarında Kırınım Şartı",
@@ -441,7 +441,7 @@
         ],
         [
           "Çivili Sarkaç Periyodu",
-          "İki farklı ip boyuna ait periyotların aritmetik ortalaması: (T_1 + T_2) / 2"
+          "İki farklı ip boyuna ait periyotların aritmetik ortalaması: (T{alt:1} + T{alt:2}) / 2"
         ]
       ]
     },
@@ -485,19 +485,19 @@
     {
       "tur": "ogretici",
       "soru": "Bir laboratuvar deneyinde öğrencinin elinde özdeş iki yay, bir ip, bir kütle ve bir su dalgası leğeni bulunmaktadır. Öğrencinin: a) Yaylarla kurabileceği en kısa periyotlu yay sarkacını nasıl tasarlayacağını, b) Su dalgası leğeninde doğrusal dalgalardan dairesel dalgalar elde etmek için yarık genişliği ve kaynak frekansını nasıl ayarlaması gerektiğini fiziksel ilkelerle açıklayınız.",
-      "cevap": "a) Yay sarkacında periyodun (T = 2·pi·{kok:{kesir:m|k_eş}}) en kısa olması için eş değer yay sabitinin (k_eş) en büyük olması gerekir. Öğrenci elindeki iki özdeş yayı birbirine paralel bağlarsa eş değer yay sabiti k_eş = k + k = 2k olur ve tek yaya göre periyot {kok:2} kat küçülerek en kısa periyotlu salınım elde edilir. b) Doğrusal su dalgalarından yarıktan geçerken dairesel dalgalar elde etmek kırınım olayıdır ve lambda >= w koşulunu gerektirir. Bunun için öğrenci engeller arasındaki yarık genişliğini (w) mümkün olduğunca daraltmalı ve dalga kaynağının frekansını (f) azaltarak (lambda = v/f uyarınca) gelen dalgaların dalga boyunu büyütmelidir.",
+      "cevap": "a) Yay sarkacında periyodun (T = 2·pi·{kok:{kesir:m|k{alt:eş}}}) en kısa olması için eş değer yay sabitinin (k{alt:eş}) en büyük olması gerekir. Öğrenci elindeki iki özdeş yayı birbirine paralel bağlarsa eş değer yay sabiti k{alt:eş} = k + k = 2k olur ve tek yaya göre periyot {kok:2} kat küçülerek en kısa periyotlu salınım elde edilir. b) Doğrusal su dalgalarından yarıktan geçerken dairesel dalgalar elde etmek kırınım olayıdır ve lambda >= w koşulunu gerektirir. Bunun için öğrenci engeller arasındaki yarık genişliğini (w) mümkün olduğunca daraltmalı ve dalga kaynağının frekansını (f) azaltarak (lambda = v/f uyarınca) gelen dalgaların dalga boyunu büyütmelidir.",
       "ipuclari": [
-        "Yay sarkacında periyodu küçültmek için k_eş değerini büyüten bağlama türünü (seri/paralel) seçiniz.",
+        "Yay sarkacında periyodu küçültmek için k{alt:eş} değerini büyüten bağlama türünü (seri/paralel) seçiniz.",
         "Su dalgalarının yarıktan dairesel çıkmasının kırınım olduğunu ve lambda >= w koşulunu gerektiridiğini belirtiniz.",
         "Dalga boyunu büyütmek için frekansın nasıl değiştirilmesi gerektiğini lambda = v / f bağıntısıyla açıklayınız."
       ]
     }
   ],
   "ozet": [
-    "Yay sarkacının periyodu T = 2·pi·{kok:{kesir:m|k_eş}} bağıntısıyla hesaplanır; cismin kütlesine ve eş değer yay sabitine bağlı olup çekim ivmesinden (g) ve eğim açısından bağımsızdır.",
-    "Yaylar seri bağlandığında 1/k_eş = 1/k_1 + 1/k_2 ile eş değer yay sabiti küçülür; paralel bağlandığında ise k_eş = k_1 + k_2 ile eş değer yay sabiti büyür. Bir yay n eşit parçaya bölünürse her parçanın yay sabiti n·k olur.",
-    "Basit sarkacın periyodu T = 2·pi·{kok:{kesir:L|g_etkin}} bağıntısıyla bulunur; ip uzunluğu ve etkin çekim ivmesine bağlıdır, cismin kütlesine bağlı değildir.",
-    "Çivili sarkaçta sistem periyodu T_sis = (T_1 + T_2) / 2 ile bulunurken; yukarı hızlanan asansörde g_etkin = g + a (periyot azalır), aşağı hızlanan asansörde g_etkin = g - a (periyot artar) alınır.",
+    "Yay sarkacının periyodu T = 2·pi·{kok:{kesir:m|k{alt:eş}}} bağıntısıyla hesaplanır; cismin kütlesine ve eş değer yay sabitine bağlı olup çekim ivmesinden (g) ve eğim açısından bağımsızdır.",
+    "Yaylar seri bağlandığında 1/k{alt:eş} = 1/k{alt:1} + 1/k{alt:2} ile eş değer yay sabiti küçülür; paralel bağlandığında ise k{alt:eş} = k{alt:1} + k{alt:2} ile eş değer yay sabiti büyür. Bir yay n eşit parçaya bölünürse her parçanın yay sabiti n·k olur.",
+    "Basit sarkacın periyodu T = 2·pi·{kok:{kesir:L|g{alt:etkin}}} bağıntısıyla bulunur; ip uzunluğu ve etkin çekim ivmesine bağlıdır, cismin kütlesine bağlı değildir.",
+    "Çivili sarkaçta sistem periyodu T{alt:sis} = (T{alt:1} + T{alt:2}) / 2 ile bulunurken; yukarı hızlanan asansörde g{alt:etkin} = g + a (periyot azalır), aşağı hızlanan asansörde g{alt:etkin} = g - a (periyot artar) alınır.",
     "Su dalgalarında kırınım, doğrusal dalgaların dar bir yarıktan (w) geçerken bükülerek dairesel dalgalara dönüşmesidir ve gerçekleşmesi için dalga boyunun yarık genişliğine eşit veya büyük olması (lambda >= w) gerekir.",
     "Kırınımı artırmak için yarık genişliği (w) daraltılmalı, su derinliği (h) artırılarak dalga hızı ve dalga boyu büyütülmeli ya da kaynak frekansı (f) azaltılmalıdır; kırınıma uğrayan dalganın hızı, frekansı ve dalga boyu değişmez."
   ]

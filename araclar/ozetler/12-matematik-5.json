@@ -15,9 +15,9 @@
   ],
   "giris": "Üstel ve logaritmik fonksiyonların özelliklerini öğrendikten sonra, bu fonksiyonları içeren cebirsel ifadelerin eşitlik ve sıralama durumlarını çözmeye geçiyoruz. Bu bölümde; bilinmeyenin üste bulunduğu {koyu:üstel denklemler} ile {koyu:üstel eşitsizlikleri}, bilinmeyenin logaritma içinde yer aldığı {koyu:logaritmik denklemleri} ve tabanın değerine göre yön değiştirebilen {koyu:logaritmik eşitsizlikleri} tanım kümesi koşullarıyla birlikte inceleyeceğiz.",
   "ozet": [
-    "{koyu:a > 0} ve {koyu:a ≠ 1} olmak üzere {koyu:a^f(x) = a^g(x)} biçimindeki üstel denklemlerde tabanlar eşit olduğundan üsler birbirine eşitlenir: {koyu:f(x) = g(x)}. {koyu:a^f(x) = b} ({koyu:b > 0}) ise {koyu:f(x) = log_a(b)} olur.",
-    "İkinci dereceden ifadeye dönüşebilen üstel veya logaritmik denklemlerde {koyu:a^x = t (t > 0)} veya {koyu:log_a(x) = t} değişken değiştirmesi yapılarak çarpanlara ayırma yöntemi uygulanır.",
-    "{koyu:log_a f(x) = b} denkleminde {koyu:f(x) = a^b}, {koyu:log_a f(x) = log_a g(x)} denkleminde ise {koyu:f(x) = g(x)} eşitliği çözülür; bulunan köklerin {koyu:f(x) > 0, g(x) > 0} ve {koyu:taban > 0, taban ≠ 1} şartlarını sağlayıp sağlamadığı kontrol edilir.",
+    "{koyu:a > 0} ve {koyu:a ≠ 1} olmak üzere {koyu:{us:a|f}(x) = {us:a|g}(x)} biçimindeki üstel denklemlerde tabanlar eşit olduğundan üsler birbirine eşitlenir: {koyu:f(x) = g(x)}. {koyu:{us:a|f}(x) = b} ({koyu:b > 0}) ise {koyu:f(x) = log{alt:a}(b)} olur.",
+    "İkinci dereceden ifadeye dönüşebilen üstel veya logaritmik denklemlerde {koyu:{us:a|x} = t (t > 0)} veya {koyu:log{alt:a}(x) = t} değişken değiştirmesi yapılarak çarpanlara ayırma yöntemi uygulanır.",
+    "{koyu:log{alt:a} f(x) = b} denkleminde {koyu:f(x) = {us:a|b}}, {koyu:log{alt:a} f(x) = log{alt:a} g(x)} denkleminde ise {koyu:f(x) = g(x)} eşitliği çözülür; bulunan köklerin {koyu:f(x) > 0, g(x) > 0} ve {koyu:taban > 0, taban ≠ 1} şartlarını sağlayıp sağlamadığı kontrol edilir.",
     "Üstel ve logaritmik eşitsizliklerde taban {koyu:a > 1} ise eşitsizlik {koyu:yön değiştirmez}; taban {koyu:0 < a < 1} ise eşitsizlik {koyu:yön değiştirir}.",
     "Logaritmik eşitsizliklerde üstel dönüşüm yapmanın yanı sıra logaritması alınan her ifadenin pozitif olma şartı ({koyu:f(x) > 0}) çözüm aralığı ile kesiştirilir."
   ],
@@ -25,21 +25,21 @@
     {
       "baslik": "1. Üstel Denklemler ve Değişken Değiştirme Yöntemi",
       "metin": [
-        "Üssünde bilinmeyen bulunan denklemlere {koyu:üstel denklem} denir. {koyu:a > 0} ve {koyu:a ≠ 1} olmak üzere üstel fonksiyon bire bir olduğundan, {koyu:a^f(x) = a^g(x)} eşitliği ancak ve ancak {koyu:f(x) = g(x)} olduğunda sağlanır. Eğer denklem {koyu:a^f(x) = b} ({koyu:b > 0}) biçimindeyse logaritma tanımı kullanılarak {koyu:f(x) = log_a(b)} yazılır.",
-        "Bazı üstel denklemler {koyu:p . a^(2x) + q . a^x + r = 0} biçiminde verilir. Bu durumda {koyu:a^x = t} değişken değiştirmesi yapılarak denklem {koyu:p . t² + q . t + r = 0} ikinci dereceden denklemine dönüştürülür. Üstel ifadenin görüntüsü daima pozitif olduğu için bulunan {koyu:t} köklerinden yalnız {koyu:t > 0} olanlar alınarak {koyu:a^x = t} eşitliğinden {koyu:x} değerleri hesaplanır."
+        "Üssünde bilinmeyen bulunan denklemlere {koyu:üstel denklem} denir. {koyu:a > 0} ve {koyu:a ≠ 1} olmak üzere üstel fonksiyon bire bir olduğundan, {koyu:{us:a|f}(x) = {us:a|g}(x)} eşitliği ancak ve ancak {koyu:f(x) = g(x)} olduğunda sağlanır. Eğer denklem {koyu:{us:a|f}(x) = b} ({koyu:b > 0}) biçimindeyse logaritma tanımı kullanılarak {koyu:f(x) = log{alt:a}(b)} yazılır.",
+        "Bazı üstel denklemler {koyu:p . {us:a|2x} + q . {us:a|x} + r = 0} biçiminde verilir. Bu durumda {koyu:{us:a|x} = t} değişken değiştirmesi yapılarak denklem {koyu:p . t² + q . t + r = 0} ikinci dereceden denklemine dönüştürülür. Üstel ifadenin görüntüsü daima pozitif olduğu için bulunan {koyu:t} köklerinden yalnız {koyu:t > 0} olanlar alınarak {koyu:{us:a|x} = t} eşitliğinden {koyu:x} değerleri hesaplanır."
       ],
       "kutu": {
         "tur": "dikkat",
         "baslik": "Negatif t Kökleri Çözüm Vermez!",
-        "metin": "Değişken değiştirmede {koyu:3^x = t} dedikten sonra {koyu:(t - 9)(t + 3) = 0} bulursak, {koyu:t = 9} için {koyu:3^x = 9 ⇒ x = 2} kökü gelir; ancak {koyu:3^x} hiçbir gerçek sayı için negatif olamayacağından {koyu:t = -3} değerinden gerçek kök gelmez."
+        "metin": "Değişken değiştirmede {koyu:{us:3|x} = t} dedikten sonra {koyu:(t - 9)(t + 3) = 0} bulursak, {koyu:t = 9} için {koyu:{us:3|x} = 9 ⇒ x = 2} kökü gelir; ancak {koyu:{us:3|x}} hiçbir gerçek sayı için negatif olamayacağından {koyu:t = -3} değerinden gerçek kök gelmez."
       },
       "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">ÜSTEL VE LOGARİTMİK DENKLEMLERİN ÇÖZÜM YÖNTEMLERİ</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#EFF6FF\" stroke=\"#2563EB\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#2563EB\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#2563EB\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">ÜSTEL DENKLEMLER (a^f(x) = a^g(x))</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• a &gt; 0 ve a != 1 olmak üzere:</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  a^f(x) = a^g(x)  &lt;=&gt;  f(x) = g(x)</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• a^f(x) = b ise: f(x) = log_a(b) yazılır.</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Değişken değiştirmeli denklemlerde:</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  p . a^(2x) + q . a^x + r = 0 biçiminde ise</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  a^x = t (t &gt; 0) dönüşümü yapılarak çözülür.</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#ECFDF5\" stroke=\"#059669\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#059669\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">LOGARİTMİK DENKLEMLER (log_a f(x) = b)</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• 1. Tip: log_a f(x) = b  =&gt;  f(x) = a^b</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">• 2. Tip: log_a f(x) = log_a g(x)  =&gt;  f(x) = g(x)</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• 3. Tip: log_g(x) f(x) = b  =&gt;  f(x) = [g(x)]^b</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• ÇOK ÖNEMLİ (TANIM KÜMESİ KONTROLÜ):</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  Bulunan her x kökü için f(x) &gt; 0, g(x) &gt; 0</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  ve taban != 1 şartları mutlaka sağlanmalıdır!</text></svg>"
     },
     {
       "baslik": "2. Logaritmik Denklemler ve Tanım Kümesi Kontrolü",
       "metin": [
-        "İçerisinde bilinmeyenin logaritmasını bulunduran denklemlere {koyu:logaritmik denklem} denir. Üç temel logaritmik denklem kalıbı vardır:\n• {koyu:log_a f(x) = b} biçimindeyse üstel ifadeye çevrilerek {koyu:f(x) = a^b} çözülür.\n• {koyu:log_a f(x) = log_a g(x)} biçimindeyse {koyu:f(x) = g(x)} eşitliği çözülür.\n• {koyu:log_g(x) f(x) = b} biçimindeyse {koyu:f(x) = [g(x)]^b} denklemi çözülür.",
-        "Logaritmik denklemlerde toplama veya çıkarma işlemleri varsa önce {koyu:log_a(M) + log_a(N) = log_a(M . N)} ve {koyu:log_a(M) - log_a(N) = log_a(M / N)} kurallarıyla terimler tek logaritma altında birleştirilir. Denklem çözülüp aday kökler bulunduktan sonra, başlangıçtaki orijinal denklemde yer alan her bir logaritma için {koyu:iç kısım > 0} ve {koyu:taban > 0, taban ≠ 1} şartları kontrol edilir; şartı sağlamayan {koyu:yalancı kökler} çözüm kümesine alınmaz."
+        "İçerisinde bilinmeyenin logaritmasını bulunduran denklemlere {koyu:logaritmik denklem} denir. Üç temel logaritmik denklem kalıbı vardır:\n• {koyu:log{alt:a} f(x) = b} biçimindeyse üstel ifadeye çevrilerek {koyu:f(x) = {us:a|b}} çözülür.\n• {koyu:log{alt:a} f(x) = log{alt:a} g(x)} biçimindeyse {koyu:f(x) = g(x)} eşitliği çözülür.\n• {koyu:log{alt:g}(x) f(x) = b} biçimindeyse {koyu:f(x) = {us:[g(x)]|b}} denklemi çözülür.",
+        "Logaritmik denklemlerde toplama veya çıkarma işlemleri varsa önce {koyu:log{alt:a}(M) + log{alt:a}(N) = log{alt:a}(M . N)} ve {koyu:log{alt:a}(M) - log{alt:a}(N) = log{alt:a}(M / N)} kurallarıyla terimler tek logaritma altında birleştirilir. Denklem çözülüp aday kökler bulunduktan sonra, başlangıçtaki orijinal denklemde yer alan her bir logaritma için {koyu:iç kısım > 0} ve {koyu:taban > 0, taban ≠ 1} şartları kontrol edilir; şartı sağlamayan {koyu:yalancı kökler} çözüm kümesine alınmaz."
       ],
       "kutu": {
         "tur": "kural",
@@ -51,8 +51,8 @@
     {
       "baslik": "3. Üstel ve Logaritmik Eşitsizlikler",
       "metin": [
-        "Üstel eşitsizliklerde tabanın 1'den büyük veya 0 ile 1 arasında olması eşitsizliğin yönünü belirler:\n• Taban {koyu:a > 1} ise üstel fonksiyon artandır ve {koyu:eşitsizlik yön değiştirmez}: {koyu:a^f(x) ≤ a^g(x) ⇔ f(x) ≤ g(x)}.\n• Taban {koyu:0 < a < 1} ise üstel fonksiyon azalandır ve {koyu:eşitsizlik yön değiştirir}: {koyu:a^f(x) ≤ a^g(x) ⇔ f(x) ≥ g(x)}.",
-        "Logaritmik eşitsizliklerde de aynı taban kuralı geçerlidir; ancak buna ek olarak {koyu:logaritmanın içindeki ifadelerin pozitif olma şartı (f(x) > 0 ve g(x) > 0)} unutulmamalıdır:\n• {koyu:a > 1} için {koyu:log_a f(x) < log_a g(x) ⇔ 0 < f(x) < g(x)} ve {koyu:log_a f(x) < b ⇔ 0 < f(x) < a^b}.\n• {koyu:0 < a < 1} için {koyu:log_a f(x) < log_a g(x) ⇔ f(x) > g(x) > 0} ve {koyu:log_a f(x) > b ⇔ 0 < f(x) < a^b}."
+        "Üstel eşitsizliklerde tabanın 1'den büyük veya 0 ile 1 arasında olması eşitsizliğin yönünü belirler:\n• Taban {koyu:a > 1} ise üstel fonksiyon artandır ve {koyu:eşitsizlik yön değiştirmez}: {koyu:{us:a|f}(x) ≤ {us:a|g}(x) ⇔ f(x) ≤ g(x)}.\n• Taban {koyu:0 < a < 1} ise üstel fonksiyon azalandır ve {koyu:eşitsizlik yön değiştirir}: {koyu:{us:a|f}(x) ≤ {us:a|g}(x) ⇔ f(x) ≥ g(x)}.",
+        "Logaritmik eşitsizliklerde de aynı taban kuralı geçerlidir; ancak buna ek olarak {koyu:logaritmanın içindeki ifadelerin pozitif olma şartı (f(x) > 0 ve g(x) > 0)} unutulmamalıdır:\n• {koyu:a > 1} için {koyu:log{alt:a} f(x) < log{alt:a} g(x) ⇔ 0 < f(x) < g(x)} ve {koyu:log{alt:a} f(x) < b ⇔ 0 < f(x) < {us:a|b}}.\n• {koyu:0 < a < 1} için {koyu:log{alt:a} f(x) < log{alt:a} g(x) ⇔ f(x) > g(x) > 0} ve {koyu:log{alt:a} f(x) > b ⇔ 0 < f(x) < {us:a|b}}."
       ],
       "tablo": {
         "basliklar": [
@@ -62,22 +62,22 @@
         ],
         "satirlar": [
           [
-            "a^f(x) < a^g(x)",
+            "{us:a|f}(x) < {us:a|g}(x)",
             "f(x) < g(x) (Yön korunur)",
             "f(x) > g(x) (Yön değişir)"
           ],
           [
-            "log_a f(x) < b",
-            "0 < f(x) < a^b",
-            "f(x) > a^b (ve f(x) > 0)"
+            "log{alt:a} f(x) < b",
+            "0 < f(x) < {us:a|b}",
+            "f(x) > {us:a|b} (ve f(x) > 0)"
           ],
           [
-            "log_a f(x) > b",
-            "f(x) > a^b (ve f(x) > 0)",
-            "0 < f(x) < a^b"
+            "log{alt:a} f(x) > b",
+            "f(x) > {us:a|b} (ve f(x) > 0)",
+            "0 < f(x) < {us:a|b}"
           ],
           [
-            "log_a f(x) < log_a g(x)",
+            "log{alt:a} f(x) < log{alt:a} g(x)",
             "0 < f(x) < g(x)",
             "f(x) > g(x) > 0"
           ]
@@ -93,8 +93,8 @@
   ],
   "ornekler": [
     {
-      "soru": "Üstel biçimde verilen 9^x - 10 . 3^x + 9 = 0 denkleminin gerçek sayılar kümesindeki çözüm kümesini bulunuz.",
-      "cevap": "Denklemde {koyu:9^x = (3^x)²} yazılarak {koyu:3^x = t (t > 0)} değişken değiştirmesi yapılır: {koyu:t² - 10t + 9 = 0 ⇒ (t - 9)(t - 1) = 0} olur. Buradan {koyu:t = 9} ve {koyu:t = 1} bulunur. {koyu:3^x = 9 = 3² ⇒ x = 2} ve {koyu:3^x = 1 = 3⁰ ⇒ x = 0} elde edilir. Çözüm kümesi {koyu:Ç = (0, 2)} olur."
+      "soru": "Üstel biçimde verilen {us:9|x} - 10 . {us:3|x} + 9 = 0 denkleminin gerçek sayılar kümesindeki çözüm kümesini bulunuz.",
+      "cevap": "Denklemde {koyu:{us:9|x} = ({us:3|x})²} yazılarak {koyu:{us:3|x} = t (t > 0)} değişken değiştirmesi yapılır: {koyu:t² - 10t + 9 = 0 ⇒ (t - 9)(t - 1) = 0} olur. Buradan {koyu:t = 9} ve {koyu:t = 1} bulunur. {koyu:{us:3|x} = 9 = 3² ⇒ x = 2} ve {koyu:{us:3|x} = 1 = 3⁰ ⇒ x = 0} elde edilir. Çözüm kümesi {koyu:Ç = (0, 2)} olur."
     },
     {
       "soru": "log₂(5x + 2) = 5 denkleminin gerçek sayılar kümesindeki çözüm kümesini bulunuz.",
@@ -105,15 +105,15 @@
       "cevap": "Logaritmanın çarpım kuralıyla sol taraf birleştirilirse {koyu:log₃((x + 5)(x - 1)) = 3} olur. Üstel biçime çevrildiğinde {koyu:(x + 5)(x - 1) = 3³ = 27 ⇒ x² + 4x - 32 = 0 ⇒ (x + 8)(x - 4) = 0} denklemi elde edilir ve aday kökler {koyu:x₁ = -8}, {koyu:x₂ = 4} bulunur. Logaritmanın tanım kümesi gereği {koyu:x + 5 > 0} ve {koyu:x - 1 > 0} ({koyu:x > 1}) olması gerektiğinden {koyu:x = -8} değeri elenir ve çözüm kümesi {koyu:Ç = (4)} olur."
     },
     {
-      "soru": "(2/5)^(x² + 2x - 18) ≤ (5/2)^x üstel eşitsizliğinin gerçek sayılardaki çözüm kümesini bulunuz.",
-      "cevap": "Sağ taraftaki {koyu:(5/2)^x} ifadesi taban ters çevrilerek {koyu:(2/5)^(-x)} biçiminde yazılır: {koyu:(2/5)^(x² + 2x - 18) ≤ (2/5)^(-x)}. Taban {koyu:0 < 2/5 < 1} olduğu için üstel fonksiyon azalandır ve eşitsizlik {koyu:yön değiştirir}: {koyu:x² + 2x - 18 ≥ -x ⇒ x² + 3x - 18 ≥ 0 ⇒ (x + 6)(x - 3) ≥ 0} elde edilir. Kökler {koyu:x₁ = -6} ve {koyu:x₂ = 3} olup işaret tablosundan çözüm kümesi {koyu:(-∞, -6] ∪ [3, +∞)} bulunur."
+      "soru": "{us:(2/5)|x² + 2x - 18} ≤ {us:(5/2)|x} üstel eşitsizliğinin gerçek sayılardaki çözüm kümesini bulunuz.",
+      "cevap": "Sağ taraftaki {koyu:{us:(5/2)|x}} ifadesi taban ters çevrilerek {koyu:{us:(2/5)|−x}} biçiminde yazılır: {koyu:{us:(2/5)|x² + 2x - 18} ≤ {us:(2/5)|−x}}. Taban {koyu:0 < 2/5 < 1} olduğu için üstel fonksiyon azalandır ve eşitsizlik {koyu:yön değiştirir}: {koyu:x² + 2x - 18 ≥ -x ⇒ x² + 3x - 18 ≥ 0 ⇒ (x + 6)(x - 3) ≥ 0} elde edilir. Kökler {koyu:x₁ = -6} ve {koyu:x₂ = 3} olup işaret tablosundan çözüm kümesi {koyu:(-∞, -6] ∪ [3, +∞)} bulunur."
     },
     {
       "soru": "log₃(2x - 4) ≤ 2 logaritmik eşitsizliğinin çözüm kümesini bulunuz.",
       "cevap": "Taban {koyu:a = 3 > 1} olduğu için eşitsizlik yön değiştirmez; ayrıca logaritmanın içi pozitif olmalıdır ({koyu:2x - 4 > 0}):\n{koyu:0 < 2x - 4 ≤ 3²}\n{koyu:0 < 2x - 4 ≤ 9}\nHer tarafa 4 eklenip 2'ye bölünürse {koyu:4 < 2x ≤ 13 ⇒ 2 < x ≤ 13/2} bulunur. Çözüm aralığı {koyu:(2, 13/2]} olur."
     },
     {
-      "soru": "log_(1/2)(x - 3) > -3 logaritmik eşitsizliğini sağlayan kaç farklı x tam sayısı vardır?",
+      "soru": "log{alt:1/2}(x - 3) > -3 logaritmik eşitsizliğini sağlayan kaç farklı x tam sayısı vardır?",
       "cevap": "Taban {koyu:0 < 1/2 < 1} olduğu için üstel dönüşümde eşitsizlik {koyu:yön değiştirir} ve tanım şartı {koyu:x - 3 > 0} eklenir:\n{koyu:0 < x - 3 < (1/2)⁻³}\n{koyu:0 < x - 3 < 8}\nHer tarafa 3 eklendiğinde {koyu:3 < x < 11} aralığı elde edilir. Bu aralıktaki tam sayılar {koyu:4, 5, 6, 7, 8, 9, 10} olup toplam {koyu:7 farklı tam sayı} vardır."
     }
   ],
@@ -133,7 +133,7 @@
     },
     {
       "tur": "coktan",
-      "soru": "Gerçek sayılarda tanımlı 4^x - 12 . 2^x + 32 = 0 üstel denkleminin kökler toplamı kaçtır?",
+      "soru": "Gerçek sayılarda tanımlı {us:4|x} - 12 . {us:2|x} + 32 = 0 üstel denkleminin kökler toplamı kaçtır?",
       "secenekler": [
         "2",
         "5",
@@ -142,7 +142,7 @@
         "6"
       ],
       "dogru": 1,
-      "aciklama": "2^x = t denirse t² - 12t + 32 = (t - 4)(t - 8) = 0 olur. 2^x = 4 ⇒ x₁ = 2 ve 2^x = 8 ⇒ x₂ = 3 bulunur; kökler toplamı 2 + 3 = 5'tir."
+      "aciklama": "{us:2|x} = t denirse t² - 12t + 32 = (t - 4)(t - 8) = 0 olur. {us:2|x} = 4 ⇒ x₁ = 2 ve {us:2|x} = 8 ⇒ x₂ = 3 bulunur; kökler toplamı 2 + 3 = 5'tir."
     },
     {
       "tur": "coktan",
@@ -159,7 +159,7 @@
     },
     {
       "tur": "coktan",
-      "soru": "(1/3)^(2x - 1) ≥ (1/3)^(x + 4) üstel eşitsizliğinin çözüm kümesi aşağıdakilerden hangisidir?",
+      "soru": "{us:(1/3)|2x - 1} ≥ {us:(1/3)|x + 4} üstel eşitsizliğinin çözüm kümesi aşağıdakilerden hangisidir?",
       "secenekler": [
         "[3, +∞)",
         "[5, +∞)",
@@ -177,12 +177,12 @@
         {
           "metin": "Tabanı 1'den büyük olan üstel ve logaritmik eşitsizliklerde eşitsizlik yönü korunur.",
           "dogru": true,
-          "aciklama": "a > 1 için a^x ve log_a(x) fonksiyonları artan olduğundan eşitsizlik yön değiştirmez."
+          "aciklama": "a > 1 için {us:a|x} ve log{alt:a}(x) fonksiyonları artan olduğundan eşitsizlik yön değiştirmez."
         },
         {
           "metin": "Tabanı 0 ile 1 arasında olan logaritmik eşitsizliklerde üstel dönüşüm yapılırken eşitsizlik yön değiştirir.",
           "dogru": true,
-          "aciklama": "0 < a < 1 için log_a(x) azalan bir fonksiyon olduğundan eşitsizliğin yönü ters döner."
+          "aciklama": "0 < a < 1 için log{alt:a}(x) azalan bir fonksiyon olduğundan eşitsizliğin yönü ters döner."
         },
         {
           "metin": "log₂(x) + log₂(x - 2) = 3 denkleminin çözüm kümesi {-2, 4} kümesidir.",
@@ -190,7 +190,7 @@
           "aciklama": "x(x - 2) = 8 denkleminden x = 4 ve x = -2 çıkar ancak x = -2 değeri logaritmanın içini negatif yaptığı için çözüm kümesi {4} olur."
         },
         {
-          "metin": "e^(3x - 7) > e^(x + 1) eşitsizliğinde e sayısı 1'den büyük olduğu için 3x - 7 > x + 1 yazılır.",
+          "metin": "{us:e|3x - 7} > {us:e|x + 1} eşitsizliğinde e sayısı 1'den büyük olduğu için 3x - 7 > x + 1 yazılır.",
           "dogru": true,
           "aciklama": "Euler sayısı e ≈ 2,718 > 1 olduğundan eşitsizlik yön değiştirmez ve x > 4 bulunur."
         }
@@ -201,7 +201,7 @@
       "soru": "Verilen üstel ve logaritmik ifadeleri gerçek sayılardaki çözümleriyle eşleştiriniz.",
       "ciftler": [
         [
-          "2^(x - 1) = 16",
+          "{us:2|x - 1} = 16",
           "x = 5"
         ],
         [
@@ -217,7 +217,7 @@
           "1 < x < 9"
         ],
         [
-          "(1/2)^x > 8",
+          "{us:(1/2)|x} > 8",
           "x < -3"
         ]
       ]
@@ -239,7 +239,7 @@
           "cevap": "ters"
         },
         {
-          "metin": "p . a^(2x) + q . a^x + r = 0 biçimindeki denklemler ___ değiştirme yöntemiyle ikinci dereceden denkleme indirgenir.",
+          "metin": "p . {us:a|2x} + q . {us:a|x} + r = 0 biçimindeki denklemler ___ değiştirme yöntemiyle ikinci dereceden denkleme indirgenir.",
           "cevap": "değişken"
         }
       ],
@@ -250,8 +250,8 @@
     },
     {
       "tur": "ogretici",
-      "soru": "Başlangıçta 10 arıdan oluşan bir yaban arısı kolonisinin sayısı her hafta ikiye katlanmakta ve n. hafta sonundaki arı sayısı f(n) = 10 . 2^n fonksiyonuyla modellenmektedir. Kolonideki arı sayısının 640'tan az olduğu hafta sayısını (n) üstel eşitsizlik kurarak bulunuz.",
-      "cevap": "Soruda verilen modele göre {koyu:10 . 2^n < 640} eşitsizliği kurulur. Her iki taraf 10'a bölündüğünde {koyu:2^n < 64} ve {koyu:64 = 2⁶} olduğundan {koyu:2^n < 2⁶} elde edilir. Taban {koyu:2 > 1} olduğu için eşitsizlik yön değiştirmez ve {koyu:n < 6} bulunur. Hafta sayısı negatif olamayacağından {koyu:0 ≤ n < 6} aralığındaki haftalarda arı sayısı 640'tan azdır.",
+      "soru": "Başlangıçta 10 arıdan oluşan bir yaban arısı kolonisinin sayısı her hafta ikiye katlanmakta ve n. hafta sonundaki arı sayısı f(n) = 10 . {us:2|n} fonksiyonuyla modellenmektedir. Kolonideki arı sayısının 640'tan az olduğu hafta sayısını (n) üstel eşitsizlik kurarak bulunuz.",
+      "cevap": "Soruda verilen modele göre {koyu:10 . {us:2|n} < 640} eşitsizliği kurulur. Her iki taraf 10'a bölündüğünde {koyu:{us:2|n} < 64} ve {koyu:64 = 2⁶} olduğundan {koyu:{us:2|n} < 2⁶} elde edilir. Taban {koyu:2 > 1} olduğu için eşitsizlik yön değiştirmez ve {koyu:n < 6} bulunur. Hafta sayısı negatif olamayacağından {koyu:0 ≤ n < 6} aralığındaki haftalarda arı sayısı 640'tan azdır.",
       "ipuclari": [
         "İlk ipucu: f(n) < 640 eşitsizliğini yazarak her iki tarafı 10 ile sadeleştiriniz.",
         "İkinci ipucu: 64 sayısını 2 tabanında üstel olarak yazıp taban 2 > 1 olduğu için üsleri karşılaştırınız."

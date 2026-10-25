@@ -1,0 +1,560 @@
+{
+  "ad": "6-matematik-15",
+  "sinif": 6,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "İstatistiksel Araştırma Süreci",
+  "konu": "Kategorik ve Nicel (Kesikli) Veri Dağılımları: İstatistiksel Araştırmayı Baştan Sona Yürütme",
+  "ciktilar": [
+    "MAT.6.5.1. Kategorik veya nicel (kesikli) veri ile çalışabilme ve veriye dayalı karar verebilme (a. Kategorik veya nicel (kesikli) veriye dayanan istatistiksel araştırma gerektiren durumları fark eder; b. Betimleme veya karşılaştırma gerektirebilecek araştırma soruları oluşturur).",
+    "MAT.6.5.1.c-ç. Kategorik veya nicel (kesikli) veriye ulaşmak için plan yapar; araştırma sorusuna uygun hazırlanan anket sorularını kullanarak veri toplar veya hazır veriye ulaşır.",
+    "MAT.6.5.1.d-e. Veri görselleştirme (kök-yaprak gösterimi, nokta grafiği gibi) ve özetleme (aritmetik ortalama, ortanca, tepe değer ve açıklık) araçlarını seçme gerekçelerini belirtir ve toplanan veriyi uygun araçlarla analiz eder.",
+    "MAT.6.5.1.f-g. Araştırmada ulaştığı sonuçlara yönelik gerekçeler sunar; sonuçların araştırma sorusuna ne düzeyde cevap verdiğini değerlendirerek sürece uygun olmayan adımları yeniden planlar."
+  ],
+  "giris": "Geçen haftalarda grafik çizmeyi, ortalama, ortanca, tepe değer ve açıklık hesaplamayı öğrendik. Bu hafta bu araçları gerçek bir {koyu:istatistiksel araştırmanın} içinde kullanıyoruz: Bir durumun araştırma gerektirip gerektirmediğini fark edecek, iyi bir {koyu:araştırma sorusu} yazacak, {koyu:veri toplama planı} ve anket hazırlayacak, verimizi analiz edip sonuçlarımızı gerekçelendireceğiz. Son olarak da araştırmamızı eleştirel gözle değerlendirip gerekirse {koyu:yeniden planlamayı} öğreneceğiz.",
+  "ozet": [
+    "{koyu:Değişkenlik:} Bir soruya verilen cevaplar kişiden kişiye veya zamandan zamana değişiyorsa o durum istatistiksel araştırma gerektirir; tek cevabı olan sorular istatistiksel değildir.",
+    "{koyu:Araştırma sorusu:} Betimleme soruları tek bir grubu anlatır, karşılaştırma soruları iki veya daha fazla grubu kıyaslar; iyi bir soru grubu, ölçülecek değişkeni ve zaman dilimini açıkça belirtir.",
+    "{koyu:Veri toplama planı:} Plan; verinin kimden, nasıl (anket, gözlem, sayma, hazır veri), ne zaman ve kaç kişiden toplanacağını ve nasıl kaydedileceğini belirler; seçilen örneklem araştırılan grubu temsil etmelidir.",
+    "{koyu:Anket soruları:} Anket soruları açık, tek bir şeyi soran, yönlendirmeyen sorular olmalı; kategorik sorularda seçenekler çakışmamalı ve “Diğer” gibi bir seçenekle tüm olasılıkları kapsamalıdır.",
+    "{koyu:Analiz:} Kategorik veri sıklık tablosu ve sütun grafiğiyle, tepe değer kullanılarak; nicel (kesikli) veri nokta grafiği veya kök-yaprak gösterimiyle, ortalama, ortanca, tepe değer ve açıklık kullanılarak analiz edilir.",
+    "{koyu:Gerekçe ve değerlendirme:} Sonuç cümlesi mutlaka sayısal bulgulara dayanır; sonuç soruyu yeterince cevaplamıyorsa soru, örneklem, anket veya veri toplama zamanı gibi uygun olmayan adımlar yeniden planlanır."
+  ],
+  "bolumler": [
+    {
+      "baslik": "İstatistiksel Araştırma Gerektiren Durumları Fark Etme",
+      "metin": [
+        "Her araştırma bir merakla, bir soruyla başlar; ama her soru istatistiksel değildir. “Okulumuzun bahçesinde kaç ağaç var?” sorusunun yalnız bir doğru cevabı vardır; ağaçları bir kez saymak yeterlidir. Oysa “Sınıfımızdaki öğrencilerin kaç kardeşi var?” sorusunun cevabı öğrenciden öğrenciye değişir: Kimi 0, kimi 1, kimi 3 der. Cevapların birbirinden farklı olmasına {koyu:değişkenlik} denir. Bir durumda değişkenlik varsa tek bir kişiye sorarak sonuca ulaşamayız; birçok kişiden {koyu:veri} toplamamız, bu veriyi düzenlememiz ve yorumlamamız gerekir. İşte bu durumlar {koyu:istatistiksel araştırma} gerektirir.",
+        "Günlük yaşamda istatistiksel araştırma gerektiren pek çok durumla karşılaşırız. Okul kantini hangi tostu daha çok hazırlayacağını bilmek ister; bu, öğrencilerin tercihlerine dayanan {koyu:kategorik} bir veridir. Okul kütüphanesi bir öğrencinin ayda kaç kitap ödünç aldığını merak eder; bu ise sayma yoluyla elde edilen {koyu:nicel (kesikli)} bir veridir. Spor öğretmeni öğrencilerin bir dakikada kaç mekik çektiğini, belediye bir mahallede hanelerin kaç araca sahip olduğunu öğrenmek ister. Bu örneklerin hepsinde ortak nokta, cevabın tek bir sayı ya da tek bir kelime olmaması ve bir karar vermek için verilere ihtiyaç duyulmasıdır.",
+        "Bir durumun istatistiksel araştırma gerektirip gerektirmediğini anlamak için kendimize üç soru sorabiliriz: {koyu:1)} Cevap kişiden kişiye ya da zamandan zamana değişiyor mu? {koyu:2)} Cevaba ulaşmak için birden fazla veri toplamak gerekiyor mu? {koyu:3)} Toplanan veri bir durumu anlamamıza veya bir karar vermemize yardım edecek mi? Üç sorunun cevabı da “evet” ise karşımızda istatistiksel bir durum vardır. Tek cevaplı bir soruyu çoğu zaman küçük bir değişiklikle istatistiksel hâle getirebiliriz: “Ali'nin kaç kardeşi var?” yerine “Sınıfımızdaki öğrencilerin kaç kardeşi var?” diye sorarız."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Soru",
+          "Tek cevap mı, değişken mi?",
+          "İstatistiksel mi?",
+          "Veri türü"
+        ],
+        "satirlar": [
+          [
+            "Sınıfımızda kaç sıra var?",
+            "Tek cevap",
+            "Hayır",
+            "—"
+          ],
+          [
+            "Sınıftaki öğrencilerin en sevdiği ders hangisidir?",
+            "Değişken",
+            "Evet",
+            "Kategorik"
+          ],
+          [
+            "Öğrenciler bir haftada kaç test çözüyor?",
+            "Değişken",
+            "Evet",
+            "Nicel (kesikli)"
+          ],
+          [
+            "Ali'nin kaç kardeşi var?",
+            "Tek cevap",
+            "Hayır",
+            "—"
+          ],
+          [
+            "Okulumuzdaki öğrencilerin kardeş sayıları nasıl dağılıyor?",
+            "Değişken",
+            "Evet",
+            "Nicel (kesikli)"
+          ],
+          [
+            "Öğrenciler okula en çok hangi yolla geliyor?",
+            "Değişken",
+            "Evet",
+            "Kategorik"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Değişkenlik",
+          "metin": "Aynı soruya farklı kişilerden ya da farklı zamanlarda farklı cevaplar gelmesine {koyu:değişkenlik} denir. İstatistiksel araştırmanın amacı, bu değişkenliği inceleyerek genel bir eğilim bulmaktır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Soruyu İstatistiksel Hâle Getirme",
+          "metin": "Tek bir kişi veya nesne hakkındaki soruyu bir gruba genişlet: “Benim boyum kaç?” → yerine “Sınıfımızdaki öğrencilerin ayakkabı numaraları kaç?” gibi, cevabı kişiden kişiye değişen bir soru yaz."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">İSTATİSTİKSEL SORU MU, DEĞİL Mİ?</text><rect x=\"20\" y=\"50\" width=\"270\" height=\"230\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><text x=\"155\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b91c1c\">Tek cevaplı soru</text><text x=\"155\" y=\"93\" text-anchor=\"middle\" font-size=\"11\" fill=\"#b91c1c\">(istatistiksel değil)</text><text x=\"40\" y=\"125\" font-size=\"12\" fill=\"#1e293b\">• Sınıfımızda kaç sıra var?</text><text x=\"40\" y=\"160\" font-size=\"12\" fill=\"#1e293b\">• Ali'nin kaç kardeşi var?</text><text x=\"40\" y=\"195\" font-size=\"12\" fill=\"#1e293b\">• Okulumuzun kaç katı var?</text><text x=\"155\" y=\"245\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">Bir kez saymak ya da</text><text x=\"155\" y=\"262\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">bakmak yeterlidir.</text><polygon points=\"380,105 455,165 380,225 305,165\" fill=\"#e0e7ff\" stroke=\"#4f46e5\" stroke-width=\"1.5\"/><text x=\"380\" y=\"160\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#3730a3\">Cevaplar</text><text x=\"380\" y=\"177\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#3730a3\">değişiyor mu?</text><line x1=\"305\" y1=\"165\" x2=\"294\" y2=\"165\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"300\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Hayır</text><line x1=\"455\" y1=\"165\" x2=\"468\" y2=\"165\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"462\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Evet</text><rect x=\"470\" y=\"50\" width=\"270\" height=\"230\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><text x=\"605\" y=\"75\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Değişken cevaplı soru</text><text x=\"605\" y=\"93\" text-anchor=\"middle\" font-size=\"11\" fill=\"#15803d\">(istatistiksel)</text><text x=\"488\" y=\"122\" font-size=\"12\" fill=\"#1e293b\">• Öğrencilerin kardeş sayıları?</text><text x=\"500\" y=\"138\" font-size=\"10.5\" fill=\"#166534\">nicel (kesikli)</text><text x=\"488\" y=\"165\" font-size=\"12\" fill=\"#1e293b\">• En sevilen ders hangisi?</text><text x=\"500\" y=\"181\" font-size=\"10.5\" fill=\"#166534\">kategorik</text><text x=\"488\" y=\"208\" font-size=\"12\" fill=\"#1e293b\">• Haftada kaç test çözülüyor?</text><text x=\"500\" y=\"224\" font-size=\"10.5\" fill=\"#166534\">nicel (kesikli)</text><text x=\"605\" y=\"262\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">Birçok kişiden veri toplanır.</text></svg>"
+    },
+    {
+      "baslik": "Betimleme ve Karşılaştırma Amaçlı Araştırma Soruları Oluşturma",
+      "metin": [
+        "İstatistiksel bir durumu fark ettikten sonraki adım, merakımızı açık bir {koyu:araştırma sorusuna} dönüştürmektir. Araştırma soruları amaçlarına göre ikiye ayrılır. {koyu:Betimleme} soruları tek bir grubun durumunu anlatmayı amaçlar: “6-A sınıfındaki öğrenciler geçen hafta kaç kitap okudu?” Bu soruya cevap verirken tek bir grubun verilerini toplar, dağılımını gösterir ve özetleriz. {koyu:Karşılaştırma} soruları ise iki ya da daha fazla grubu kıyaslar: “6-A ve 6-B sınıflarından hangisinin öğrencileri geçen hafta daha çok kitap okudu?” Bu soruda her iki grubun verisi aynı biçimde toplanır ve özet ölçüleri yan yana konur.",
+        "İyi bir araştırma sorusu üç öğeyi açıkça içerir: {koyu:grup} (veri kimden toplanacak?), {koyu:değişken} (ne sayılacak ya da hangi tercih sorulacak?) ve {koyu:zaman} (hangi dönem kastediliyor?). “Öğrenciler çok kitap okur mu?” sorusu bu açıdan zayıftır: Hangi öğrencilerin kastedildiği belli değildir, “çok” kelimesi herkes için farklı anlam taşır ve zaman dilimi belirtilmemiştir. Aynı merak “Okulumuzdaki 6. sınıf öğrencileri aralık ayında kaç kitap okudu?” biçiminde yazıldığında herkes neyin araştırıldığını aynı şekilde anlar.",
+        "Araştırma sorusu, toplanacak verinin türünü de belirler. Soruda “hangi”, “en çok tercih edilen”, “hangi tür” gibi ifadeler varsa veri genellikle {koyu:kategorik} olur; “kaç”, “kaç tane”, “kaç kez” gibi ifadeler varsa veri sayma ile elde edilen {koyu:nicel (kesikli)} veridir. Veri türü, sonraki adımlarda hangi grafiği ve hangi özetleme ölçüsünü seçeceğimizi yönlendirir. Bu yüzden soruyu yazarken “Bu soruyla toplayacağım veriyi nasıl göstereceğim?” diye düşünmek, araştırmanın geri kalanını kolaylaştırır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Araştırma sorusu",
+          "Amaç",
+          "Veri türü",
+          "Uygun araçlar"
+        ],
+        "satirlar": [
+          [
+            "6-A öğrencileri teneffüste en çok hangi oyunu oynuyor?",
+            "Betimleme",
+            "Kategorik",
+            "Sıklık tablosu, sütun grafiği, tepe değer"
+          ],
+          [
+            "6-A öğrencileri geçen hafta kaç gün kahvaltı yaptı?",
+            "Betimleme",
+            "Nicel (kesikli)",
+            "Nokta grafiği, ortalama, ortanca, açıklık"
+          ],
+          [
+            "Kızlar ve erkekler arasında en çok tercih edilen kulüp farklı mı?",
+            "Karşılaştırma",
+            "Kategorik",
+            "İki sütun grafiği, tepe değerler"
+          ],
+          [
+            "5. ve 6. sınıflardan hangisi kütüphaneden daha çok kitap ödünç aldı?",
+            "Karşılaştırma",
+            "Nicel (kesikli)",
+            "Kök-yaprak veya iki nokta grafiği, ortalama, açıklık"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İyi Araştırma Sorusunun Üç Öğesi",
+          "metin": "{koyu:Grup + Değişken + Zaman}. Örnek: “6-B öğrencilerinin (grup) geçen ay (zaman) okula yürüyerek geldiği gün sayısı (değişken) kaçtır?” Bu üç öğeden biri eksikse soru belirsiz kalır."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Karşılaştırmada Adil Koşullar",
+          "metin": "İki grubu karşılaştırırken her iki gruba da aynı soru, aynı zaman dilimi için sorulmalıdır. 6-A'ya geçen hafta, 6-B'ye geçen ay okunan kitap sayısını sormak adil bir karşılaştırma değildir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">ARAŞTIRMA SORUSUNUN ÖĞELERİ VE AMAÇLARI</text><rect x=\"30\" y=\"50\" width=\"260\" height=\"80\" rx=\"10\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/><text x=\"160\" y=\"72\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6d28d9\">GRUP (kimden?)</text><text x=\"160\" y=\"104\" text-anchor=\"middle\" font-size=\"14\" fill=\"#1e293b\">6-A ve 6-B öğrencileri</text><rect x=\"310\" y=\"50\" width=\"170\" height=\"80\" rx=\"10\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\"/><text x=\"395\" y=\"72\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">ZAMAN (ne zaman?)</text><text x=\"395\" y=\"104\" text-anchor=\"middle\" font-size=\"14\" fill=\"#1e293b\">geçen hafta</text><rect x=\"500\" y=\"50\" width=\"230\" height=\"80\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><text x=\"615\" y=\"72\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">DEĞİŞKEN (ne ölçülecek?)</text><text x=\"615\" y=\"104\" text-anchor=\"middle\" font-size=\"14\" fill=\"#1e293b\">kaç kitap okudu?</text><rect x=\"30\" y=\"155\" width=\"340\" height=\"125\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"200\" y=\"180\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#1d4ed8\">BETİMLEME SORUSU</text><text x=\"200\" y=\"202\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Tek bir grubu anlatır.</text><text x=\"200\" y=\"232\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Örnek: 6-A öğrencileri geçen hafta</text><text x=\"200\" y=\"250\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">kaç kitap okudu?</text><rect x=\"390\" y=\"155\" width=\"340\" height=\"125\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/><text x=\"560\" y=\"180\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#b45309\">KARŞILAŞTIRMA SORUSU</text><text x=\"560\" y=\"202\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">İki ya da daha çok grubu kıyaslar.</text><text x=\"560\" y=\"232\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Örnek: 6-A mı, 6-B mi geçen hafta</text><text x=\"560\" y=\"250\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">daha çok kitap okudu?</text></svg>"
+    },
+    {
+      "baslik": "Veri Toplama Planı Yapma: Kimden, Nasıl, Ne Zaman?",
+      "metin": [
+        "Araştırma sorusu hazır olunca hemen veri toplamaya koşmak yerine bir {koyu:plan} yapılır. Plan beş soruya cevap verir: {koyu:Kimden?} (veriyi hangi kişilerden ya da kayıtlardan alacağız?), {koyu:Nasıl?} (anketle mi, gözlemle mi, sayarak mı, yoksa hazır bir kayıttan mı?), {koyu:Ne zaman ve nerede?} (verileri hangi gün, hangi ortamda toplayacağız?), {koyu:Kaç kişiden?} (sonuca güvenebilmek için yeterli sayıda veri var mı?) ve {koyu:Nasıl kaydedeceğiz?} (çetele, sıklık tablosu ya da liste). İyi yapılmış bir plan, veri toplarken karışıklığı ve veri kaybını önler.",
+        "Planın en önemli kararı, verinin kimden toplanacağıdır. Araştırma sorusu küçük bir grup hakkındaysa (örneğin yalnız 6-A sınıfı), sınıftaki herkese sorulabilir. Ancak soru büyük bir grup hakkındaysa (örneğin okulun tamamı), herkese ulaşmak zor olabilir. Bu durumda büyük grubu temsil edecek daha küçük bir grup seçilir; bu gruba {koyu:örneklem} denir. Örneklem, araştırılan grubu {koyu:temsil etmelidir}: “Okulumuzdaki öğrenciler en çok hangi sporu seviyor?” sorusu için yalnız basketbol takımındaki öğrencilere sormak, sonucu baştan basketbol lehine bozar. Farklı sınıflardan, kız ve erkek öğrencilerden, farklı ilgi alanlarından öğrencilere ulaşmak gerekir.",
+        "Planda zaman ve koşullar da düşünülür. Kitap okuma alışkanlığını araştıran biri verileri sınav haftasında toplarsa öğrenciler normalden az kitap okumuş olabilir; sonuç olağan durumu yansıtmaz. Ayrıca verilerin yazılacağı tablo önceden hazırlanır, anket formu çoğaltılır ve herkese aynı açıklama yapılır. Böylece her katılımcı soruyu aynı şekilde anlar ve toplanan veriler karşılaştırılabilir olur. Bu hafta boyunca örnek projemiz olarak “6-A ve 6-B sınıflarından hangisinin öğrencileri geçen hafta daha çok kitap okudu?” sorusunu ele alacağız."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Plan sorusu",
+          "Örnek projedeki karar (6-A ve 6-B kitap okuma)"
+        ],
+        "satirlar": [
+          [
+            "Kimden?",
+            "6-A ve 6-B sınıflarındaki öğrencilerin tamamından (12'şer öğrenci)"
+          ],
+          [
+            "Nasıl?",
+            "Tek soruluk kısa anket: “Geçen hafta (pazartesi-pazar) kaç kitap okudun?”"
+          ],
+          [
+            "Ne zaman, nerede?",
+            "Pazartesi ilk ders, her iki sınıfta aynı gün"
+          ],
+          [
+            "Kaç kişiden?",
+            "Toplam 24 öğrenci; her sınıftan eşit sayıda veri"
+          ],
+          [
+            "Nasıl kaydedilecek?",
+            "Önce sıralı liste, sonra sıklık tablosu ve nokta grafiği"
+          ],
+          [
+            "Hangi özet ölçüler?",
+            "Ortalama, ortanca, tepe değer ve açıklık"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Örneklem",
+          "metin": "Hakkında bilgi edinmek istediğimiz büyük grubun tamamına ulaşamadığımızda, bu grubu temsil etmesi için seçtiğimiz daha küçük gruba {koyu:örneklem} denir. Örneklem ne kadar iyi temsil ederse sonuçlar o kadar güvenilir olur."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Temsil Etmeyen Örneklem",
+          "metin": "Sorunun konusuyla özel ilgisi olan küçük bir gruba sormak (kantinde sırada bekleyenlere “Kantini sever misin?” diye sormak gibi) sonucu yanlı hâle getirir ve tüm okul için genelleme yapılamaz."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><marker id=\"ok3\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" fill=\"#475569\"/></marker></defs><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">VERİ TOPLAMA PLANININ ADIMLARI</text><rect x=\"20\" y=\"60\" width=\"130\" height=\"100\" rx=\"10\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/><text x=\"85\" y=\"88\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6d28d9\">1. Kimden?</text><text x=\"85\" y=\"115\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Araştırma grubu</text><text x=\"85\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">veya örneklem</text><rect x=\"167\" y=\"60\" width=\"130\" height=\"100\" rx=\"10\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\"/><text x=\"232\" y=\"88\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">2. Nasıl?</text><text x=\"232\" y=\"115\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Anket, gözlem,</text><text x=\"232\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">sayma, hazır veri</text><rect x=\"314\" y=\"60\" width=\"130\" height=\"100\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><text x=\"379\" y=\"88\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">3. Ne zaman?</text><text x=\"379\" y=\"115\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Gün, saat</text><text x=\"379\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">ve ortam</text><rect x=\"461\" y=\"60\" width=\"130\" height=\"100\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/><text x=\"526\" y=\"88\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">4. Kaç kişi?</text><text x=\"526\" y=\"115\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Yeterli ve</text><text x=\"526\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">temsil edici</text><rect x=\"608\" y=\"60\" width=\"130\" height=\"100\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><text x=\"673\" y=\"88\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b91c1c\">5. Kayıt</text><text x=\"673\" y=\"115\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Çetele, liste,</text><text x=\"673\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">sıklık tablosu</text><line x1=\"150\" y1=\"110\" x2=\"164\" y2=\"110\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok3)\"/><line x1=\"297\" y1=\"110\" x2=\"311\" y2=\"110\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok3)\"/><line x1=\"444\" y1=\"110\" x2=\"458\" y2=\"110\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok3)\"/><line x1=\"591\" y1=\"110\" x2=\"605\" y2=\"110\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok3)\"/><rect x=\"20\" y=\"180\" width=\"718\" height=\"100\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"379\" y=\"200\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">Örnek proje: 6-A ve 6-B sınıflarında geçen hafta okunan kitap sayısı</text><text x=\"85\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">6-A ve 6-B</text><text x=\"85\" y=\"250\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">(12'şer öğrenci)</text><text x=\"232\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Tek soruluk</text><text x=\"232\" y=\"250\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">anket formu</text><text x=\"379\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Pazartesi</text><text x=\"379\" y=\"250\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">ilk ders</text><text x=\"526\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Toplam 24</text><text x=\"526\" y=\"250\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">öğrenci</text><text x=\"673\" y=\"232\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">Sıklık tablosu</text><text x=\"673\" y=\"250\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e293b\">ve nokta grafiği</text></svg>"
+    },
+    {
+      "baslik": "Anket Sorusu Hazırlama ve Hazır Veriye Ulaşma",
+      "metin": [
+        "Planımızda veriyi anketle toplamaya karar verdiysek sıra anket sorularını yazmaya gelir. {koyu:Anket}, aynı soruların birçok kişiye aynı biçimde sorulmasıdır. Anket soruları araştırma sorusuna hizmet etmelidir: Araştırma sorumuz “kaç kitap” diyorsa anket sorumuz da kitap sayısını sormalı, kitap türünü değil. Kategorik veri toplanacaksa {koyu:seçenekli} sorular kullanmak işimizi kolaylaştırır. Seçenekler birbiriyle {koyu:çakışmamalı} ve tüm olası cevapları {koyu:kapsamalıdır}; listede olmayan bir cevap için “Diğer” seçeneği eklenir. Nicel (kesikli) veri için ise “Geçen hafta kaç kitap okudun?” gibi cevabı bir sayı olan, açık bir soru sorulur.",
+        "Anket hazırlarken bazı hatalardan kaçınmak gerekir. {koyu:Yönlendirici soru}, katılımcıyı belirli bir cevaba iter: “Kitap okumak çok faydalıdır, sen de her gün okuyor musun?” sorusunu duyan öğrenci “hayır” demekten çekinebilir. {koyu:Belirsiz soru}, kişiden kişiye farklı anlaşılır: “Sık sık spor yapar mısın?” sorusunda “sık sık” kimine haftada bir, kimine her gün demektir. {koyu:İki şeyi birden soran soru} ise cevabı anlamsız kılar: “Matematiği ve fen bilimlerini sever misin?” sorusuna “evet” diyen öğrenci hangisini sevdiğini söylemiş olur? Ayrıca kişisel, utandırıcı veya rahatsız edici sorular sorulmaz; katılımcıların cevapları gizli tutulur.",
+        "Her araştırmada veriyi kendimiz toplamak zorunda değiliz. Bir kurumun daha önce topladığı verilere {koyu:hazır veri} denir: Okul kütüphanesinin ödünç verme kayıtları, okulun devamsızlık listesi, Türkiye İstatistik Kurumunun (TÜİK) yayımladığı nüfus bilgileri veya meteorolojinin günlük kayıtları hazır veriye örnektir. Hazır veri kullanırken verinin {koyu:güvenilir} bir kaynaktan geldiği, {koyu:güncel} olduğu ve araştırma sorumuzla {koyu:aynı şeyi} ölçtüğü kontrol edilir. Anketle ya da kayıtlardan elde edilen veriler önce {koyu:çetele} ile işaretlenir, ardından sıklık tablosuna dönüştürülür."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Hatalı anket sorusu",
+          "Sorun",
+          "Düzeltilmiş hâli"
+        ],
+        "satirlar": [
+          [
+            "Macera kitapları en güzeli, değil mi?",
+            "Yönlendirici",
+            "En çok hangi tür kitap okursun? (Macera / Bilim / Şiir / Mizah / Diğer)"
+          ],
+          [
+            "Çok kitap okur musun?",
+            "Belirsiz (“çok” kişiye göre değişir)",
+            "Geçen hafta kaç kitap okudun?"
+          ],
+          [
+            "Futbolu ve voleybolu sever misin?",
+            "İki şeyi birden soruyor",
+            "En çok sevdiğin spor dalı hangisidir?"
+          ],
+          [
+            "Kaç kardeşin var? (1-2 / 2-3 / 3 ve üzeri)",
+            "Seçenekler çakışıyor ve 0 yok",
+            "Kaç kardeşin var? (0 / 1 / 2 / 3 / 4 ve üzeri)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Yönlendirici Soru Tuzağı",
+          "metin": "Soruda bir seçeneği öven ya da kötüleyen ifade varsa (“faydalı”, “en güzel”, “herkesin bildiği gibi”), soru yönlendiricidir ve toplanan veri gerçek düşünceleri yansıtmaz."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Çeteleyi Beşerli Grupla",
+          "metin": "Çetele tutarken dört dik çizgiden sonra beşinciyi çapraz çiz. Böylece beşerli grupları sayarak toplamı hızlı ve hatasız bulursun: iki tam grup ve üç çizgi = 5 + 5 + 3 = 13."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">ANKET FORMUNDAN SIKLIK TABLOSUNA</text><rect x=\"20\" y=\"50\" width=\"340\" height=\"230\" rx=\"10\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"190\" y=\"74\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">ANKET FORMU</text><text x=\"35\" y=\"102\" font-size=\"12\" fill=\"#1e293b\">1) En çok hangi tür kitap okursun?</text><text x=\"45\" y=\"124\" font-size=\"11\" fill=\"#334155\">( ) Macera  ( ) Bilim  ( ) Şiir  ( ) Mizah  ( ) Diğer</text><text x=\"35\" y=\"156\" font-size=\"12\" fill=\"#1e293b\">2) Geçen hafta kaç kitap okudun? ______</text><rect x=\"35\" y=\"180\" width=\"310\" height=\"85\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"1.2\"/><text x=\"190\" y=\"202\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b91c1c\">HATALI ÖRNEK (yönlendirici)</text><text x=\"190\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">Macera kitapları en güzeli, değil mi?</text><text x=\"190\" y=\"250\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7f1d1d\">Katılımcıyı “evet” demeye iter.</text><rect x=\"380\" y=\"50\" width=\"360\" height=\"230\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><text x=\"425\" y=\"85\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Tür</text><text x=\"540\" y=\"85\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Çetele</text><text x=\"680\" y=\"85\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Sıklık</text><line x1=\"395\" y1=\"95\" x2=\"725\" y2=\"95\" stroke=\"#15803d\" stroke-width=\"1.5\"/><line x1=\"470\" y1=\"68\" x2=\"470\" y2=\"255\" stroke=\"#15803d\" stroke-width=\"1.2\"/><line x1=\"630\" y1=\"68\" x2=\"630\" y2=\"255\" stroke=\"#15803d\" stroke-width=\"1.2\"/><text x=\"425\" y=\"120\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">Macera</text><path d=\"M490 106V120M496 106V120M502 106V120M508 106V120M487 118L511 108M522 106V120M528 106V120M534 106V120\" stroke=\"#14532d\" stroke-width=\"1.8\" fill=\"none\"/><text x=\"680\" y=\"120\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">8</text><text x=\"425\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">Bilim</text><path d=\"M490 136V150M496 136V150M502 136V150M508 136V150M487 148L511 138\" stroke=\"#14532d\" stroke-width=\"1.8\" fill=\"none\"/><text x=\"680\" y=\"150\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">5</text><text x=\"425\" y=\"180\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">Şiir</text><path d=\"M490 166V180M496 166V180M502 166V180\" stroke=\"#14532d\" stroke-width=\"1.8\" fill=\"none\"/><text x=\"680\" y=\"180\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">3</text><text x=\"425\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" fill=\"#14532d\">Mizah</text><path d=\"M490 196V210M496 196V210M502 196V210M508 196V210M487 208L511 198M522 196V210\" stroke=\"#14532d\" stroke-width=\"1.8\" fill=\"none\"/><text x=\"680\" y=\"210\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">6</text><line x1=\"395\" y1=\"225\" x2=\"725\" y2=\"225\" stroke=\"#15803d\" stroke-width=\"1.2\"/><text x=\"425\" y=\"247\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">Toplam</text><text x=\"550\" y=\"247\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#166534\">Tepe değer: Macera</text><text x=\"680\" y=\"247\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">22</text></svg>"
+    },
+    {
+      "baslik": "Toplanan Veriyi Düzenleme, Görselleştirme ve Analiz Etme",
+      "metin": [
+        "Örnek projemizde anket formları toplandı ve öğrencilerin geçen hafta okudukları kitap sayıları küçükten büyüğe sıralandı. {koyu:6-A:} 0, 1, 1, 2, 2, 2, 2, 3, 3, 4, 4, 6. {koyu:6-B:} 1, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4. Veriler sayma yoluyla elde edilmiş tam sayılar olduğu için {koyu:nicel (kesikli)} veridir. Görselleştirme aracı seçerken gerekçemiz şudur: Değerlerin hepsi tek basamaklı ve 0 ile 6 arasında olduğundan {koyu:kök-yaprak gösterimi} bu veri için uygun değildir (tüm sayılar aynı köke düşer). Buna karşılık {koyu:nokta grafiği}, aynı sayı doğrusu üzerinde tekrar eden değerleri üst üste noktalarla göstererek yığılmaları, boşlukları ve uç değerleri tek bakışta ortaya koyar. İki sınıfı aynı ölçekli iki nokta grafiğiyle yan yana çizmek karşılaştırmayı da kolaylaştırır.",
+        "Şimdi özetleme ölçülerini hesaplayalım. 6-A'da verilerin toplamı 0 + 1 + 1 + 2 + 2 + 2 + 2 + 3 + 3 + 4 + 4 + 6 = 30'dur; aritmetik ortalama {kesir:30|12} = 2,5 kitaptır. 12 veri olduğu için ortanca, 6. ve 7. verilerin ortalamasıdır: {kesir:2 + 2|2} = 2. En çok tekrar eden değer 2'dir (4 kez), yani tepe değer 2'dir. Açıklık 6 − 0 = 6'dır. 6-B'de toplam 1 + 2 + 2 + 3 + 3 + 3 + 3 + 3 + 4 + 4 + 4 + 4 = 36, ortalama {kesir:36|12} = 3 kitaptır. Ortanca {kesir:3 + 3|2} = 3, tepe değer 3 (5 kez) ve açıklık 4 − 1 = 3'tür.",
+        "Özetleme ölçüsü seçmenin de gerekçesi olmalıdır. Her iki sınıfta da diğerlerinden çok uzak bir uç değer olmadığı için {koyu:aritmetik ortalama} sınıfları temsil etmek için uygundur; ortanca ve tepe değer de ortalamaya yakın çıkarak bu yorumu destekler. Grupların ne kadar dengeli olduğunu görmek için {koyu:açıklığa} bakarız. Analiz yaparken veri türünü unutmamak gerekir: Bir önceki bölümdeki kitap türü verisi {koyu:kategorik} olduğundan orada ortalama ya da ortanca hesaplanamaz; yalnız sıklıklar karşılaştırılır ve {koyu:tepe değer} (Macera) bulunur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Ölçü",
+          "6-A",
+          "6-B"
+        ],
+        "satirlar": [
+          [
+            "Veri sayısı",
+            "12",
+            "12"
+          ],
+          [
+            "Verilerin toplamı",
+            "30",
+            "36"
+          ],
+          [
+            "Aritmetik ortalama",
+            "30 ÷ 12 = 2,5",
+            "36 ÷ 12 = 3"
+          ],
+          [
+            "Ortanca",
+            "(2 + 2) ÷ 2 = 2",
+            "(3 + 3) ÷ 2 = 3"
+          ],
+          [
+            "Tepe değer",
+            "2 (4 kez)",
+            "3 (5 kez)"
+          ],
+          [
+            "En küçük – en büyük",
+            "0 – 6",
+            "1 – 4"
+          ],
+          [
+            "Açıklık",
+            "6 − 0 = 6",
+            "4 − 1 = 3"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Araç Seçme Gerekçesi",
+          "metin": "Tek basamaklı ve dar aralıkta kesikli veri → {koyu:nokta grafiği}. İki basamaklı ve geniş aralıkta kesikli veri → {koyu:kök-yaprak gösterimi}. Kategorik veri → {koyu:sıklık tablosu ve sütun grafiği}. Uç değer varsa özet için ortanca, yoksa ortalama tercih edilir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Kategorik Veride Hangi Ölçü?",
+          "metin": "“Macera, Bilim, Şiir” gibi kategoriler toplanıp bölünemez; bu yüzden kategorik veride aritmetik ortalama, ortanca ve açıklık hesaplanmaz. Kategorik veriyi özetleyen ölçü {koyu:tepe değerdir}."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 320\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"320\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">6-A VE 6-B: GEÇEN HAFTA OKUNAN KİTAP SAYISI (NOKTA GRAFİĞİ)</text><rect x=\"20\" y=\"48\" width=\"350\" height=\"250\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"195\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1d4ed8\">6-A (12 öğrenci)</text><line x1=\"45\" y1=\"228\" x2=\"345\" y2=\"228\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"60\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">0</text><text x=\"105\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">1</text><text x=\"150\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">2</text><text x=\"195\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">3</text><text x=\"240\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">4</text><text x=\"285\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">5</text><text x=\"330\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">6</text><circle cx=\"60\" cy=\"215\" r=\"7\" fill=\"#2563eb\"/><circle cx=\"105\" cy=\"215\" r=\"7\" fill=\"#2563eb\"/><circle cx=\"105\" cy=\"198\" r=\"7\" fill=\"#2563eb\"/><circle cx=\"150\" cy=\"215\" r=\"7\" fill=\"#2563eb\"/><circle cx=\"150\" cy=\"198\" r=\"7\" fill=\"#2563eb\"/><circle cx=\"150\" cy=\"181\" r=\"7\" fill=\"#2563eb\"/><circle cx=\"150\" cy=\"164\" r=\"7\" fill=\"#2563eb\"/><circle cx=\"195\" cy=\"215\" r=\"7\" fill=\"#2563eb\"/><circle cx=\"195\" cy=\"198\" r=\"7\" fill=\"#2563eb\"/><circle cx=\"240\" cy=\"215\" r=\"7\" fill=\"#2563eb\"/><circle cx=\"240\" cy=\"198\" r=\"7\" fill=\"#2563eb\"/><circle cx=\"330\" cy=\"215\" r=\"7\" fill=\"#2563eb\"/><text x=\"195\" y=\"272\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#1e3a8a\">Ortalama 2,5 · Ortanca 2 · Tepe değer 2</text><text x=\"195\" y=\"289\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e3a8a\">Açıklık 6 − 0 = 6</text><rect x=\"390\" y=\"48\" width=\"350\" height=\"250\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/><text x=\"565\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">6-B (12 öğrenci)</text><line x1=\"415\" y1=\"228\" x2=\"715\" y2=\"228\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"430\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">0</text><text x=\"475\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">1</text><text x=\"520\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">2</text><text x=\"565\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">3</text><text x=\"610\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">4</text><text x=\"655\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">5</text><text x=\"700\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">6</text><circle cx=\"475\" cy=\"215\" r=\"7\" fill=\"#d97706\"/><circle cx=\"520\" cy=\"215\" r=\"7\" fill=\"#d97706\"/><circle cx=\"520\" cy=\"198\" r=\"7\" fill=\"#d97706\"/><circle cx=\"565\" cy=\"215\" r=\"7\" fill=\"#d97706\"/><circle cx=\"565\" cy=\"198\" r=\"7\" fill=\"#d97706\"/><circle cx=\"565\" cy=\"181\" r=\"7\" fill=\"#d97706\"/><circle cx=\"565\" cy=\"164\" r=\"7\" fill=\"#d97706\"/><circle cx=\"565\" cy=\"147\" r=\"7\" fill=\"#d97706\"/><circle cx=\"610\" cy=\"215\" r=\"7\" fill=\"#d97706\"/><circle cx=\"610\" cy=\"198\" r=\"7\" fill=\"#d97706\"/><circle cx=\"610\" cy=\"181\" r=\"7\" fill=\"#d97706\"/><circle cx=\"610\" cy=\"164\" r=\"7\" fill=\"#d97706\"/><text x=\"565\" y=\"272\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#78350f\">Ortalama 3 · Ortanca 3 · Tepe değer 3</text><text x=\"565\" y=\"289\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#78350f\">Açıklık 4 − 1 = 3</text></svg>"
+    },
+    {
+      "baslik": "Sonuçları Gerekçelendirme ve Araştırma Sürecini Değerlendirme",
+      "metin": [
+        "Analiz bittiğinde araştırma sorusuna veriye dayalı bir cevap yazarız. İyi bir {koyu:sonuç cümlesi} hem kararı hem de bu kararın sayısal {koyu:gerekçesini} içerir: “6-B sınıfının öğrencileri geçen hafta ortalama 3 kitap, 6-A sınıfının öğrencileri ise ortalama 2,5 kitap okumuştur. 6-B'nin ortancası (3) ve tepe değeri (3) de 6-A'nınkinden (2 ve 2) büyüktür. Ayrıca 6-B'nin açıklığı (3) 6-A'nın açıklığından (6) küçüktür. Bu nedenle 6-B öğrencileri hem daha çok hem de birbirine daha yakın sayıda kitap okumuştur.” Yalnız “6-B daha çok okuyor” demek bir sonuç değil, gerekçesiz bir iddiadır.",
+        "Sonuca ulaşmak araştırmanın sonu değildir; ardından {koyu:değerlendirme} yapılır: Bulduğumuz sonuç araştırma sorusunu {koyu:ne düzeyde} cevaplıyor? Örnek projemiz “geçen hafta” için açık bir cevap veriyor; ama “6-B öğrencileri her zaman daha çok kitap okur” diye genelleme yapamayız, çünkü yalnız bir haftalık veri topladık. Belki o hafta 6-A'nın bir sınavı vardı. Ayrıca bazı öğrenciler kalın bir romanı, bazıları ince bir hikâyeyi “bir kitap” olarak saymış olabilir. Bu tür {koyu:sınırlılıkları} fark etmek ve raporda belirtmek, araştırmacının dürüstlüğünün göstergesidir.",
+        "Değerlendirmede sürece uygun olmayan bir adım fark edilirse o adıma geri dönülür ve {koyu:yeniden planlanır}. Soru belirsizse yeniden yazılır, örneklem araştırılan grubu temsil etmiyorsa genişletilir, anket sorusu yönlendiriciyse düzeltilir, veri toplama zamanı olağan dışıysa farklı haftalarda tekrar veri toplanır. Bu yüzden istatistiksel araştırma düz bir çizgi değil, bir {koyu:döngüdür}: Soru → plan → veri toplama → analiz → sonuç ve gerekçe → değerlendirme ve gerekirse yeniden başa dönüş. Gerçek araştırmacılar da çalışmalarını bu döngüyü defalarca tekrarlayarak iyileştirir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Fark edilen sorun",
+          "Uygun olmayan adım",
+          "Yeniden planlama"
+        ],
+        "satirlar": [
+          [
+            "Bazı öğrenciler dergi ve çizgi romanları da “kitap” saydı.",
+            "Anket sorusu",
+            "Soruya “dergi ve çizgi roman hariç” açıklaması eklenir."
+          ],
+          [
+            "Veri yalnız sınav haftasında toplandı.",
+            "Veri toplama zamanı",
+            "Birkaç olağan haftanın verisi toplanır."
+          ],
+          [
+            "Soru tüm okul hakkında, veri yalnız iki sınıftan toplandı.",
+            "Örneklem",
+            "Her sınıf düzeyinden öğrenci eklenir."
+          ],
+          [
+            "İki öğrenci formu boş bıraktı.",
+            "Veri toplama",
+            "Eksik veriler tamamlanır ya da gerçek veri sayısı raporda belirtilir."
+          ],
+          [
+            "Soru “Öğrenciler çok okur mu?” biçiminde yazıldı.",
+            "Araştırma sorusu",
+            "Grup, değişken ve zaman belirtilerek yeniden yazılır."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Gerekçeli Sonuç Cümlesi",
+          "metin": "Sonuç cümlesi üç parçadan oluşur: {koyu:Karar} (hangi grup, ne durumda?) + {koyu:Sayısal kanıt} (ortalama, ortanca, tepe değer, açıklık) + {koyu:Sınırlılık} (sonuç hangi grup ve zaman için geçerli?)."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Araştırma Bir Döngüdür",
+          "metin": "Sonuç soruyu tam cevaplamıyorsa bu bir başarısızlık değildir; hangi adımın iyileştirileceğini gösteren değerli bir bilgidir. Araştırmacı o adımı yeniden planlar ve döngüyü yeniden işletir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 320\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><marker id=\"ok6\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" fill=\"#475569\"/></marker></defs><rect width=\"760\" height=\"320\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">İSTATİSTİKSEL ARAŞTIRMA DÖNGÜSÜ</text><rect x=\"305\" y=\"45\" width=\"150\" height=\"46\" rx=\"10\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/><text x=\"380\" y=\"73\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6d28d9\">1. Soru oluştur</text><rect x=\"560\" y=\"95\" width=\"150\" height=\"46\" rx=\"10\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\"/><text x=\"635\" y=\"123\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">2. Plan yap</text><rect x=\"560\" y=\"200\" width=\"150\" height=\"46\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><text x=\"635\" y=\"228\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">3. Veri topla</text><rect x=\"305\" y=\"250\" width=\"150\" height=\"46\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/><text x=\"380\" y=\"278\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">4. Analiz et</text><rect x=\"50\" y=\"200\" width=\"150\" height=\"46\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><text x=\"125\" y=\"222\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b91c1c\">5. Sonuç ve</text><text x=\"125\" y=\"238\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b91c1c\">gerekçe yaz</text><rect x=\"50\" y=\"95\" width=\"150\" height=\"46\" rx=\"10\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"125\" y=\"123\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\">6. Değerlendir</text><line x1=\"455\" y1=\"72\" x2=\"556\" y2=\"103\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok6)\"/><line x1=\"635\" y1=\"141\" x2=\"635\" y2=\"196\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok6)\"/><line x1=\"560\" y1=\"235\" x2=\"459\" y2=\"265\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok6)\"/><line x1=\"305\" y1=\"265\" x2=\"204\" y2=\"235\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok6)\"/><line x1=\"125\" y1=\"200\" x2=\"125\" y2=\"145\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok6)\"/><line x1=\"200\" y1=\"103\" x2=\"301\" y2=\"72\" stroke=\"#7c3aed\" stroke-width=\"2\" stroke-dasharray=\"6 4\" marker-end=\"url(#ok6)\"/><text x=\"235\" y=\"72\" text-anchor=\"middle\" font-size=\"11\" fill=\"#6d28d9\">Gerekirse</text><text x=\"235\" y=\"86\" text-anchor=\"middle\" font-size=\"11\" fill=\"#6d28d9\">yeniden planla</text><rect x=\"265\" y=\"125\" width=\"230\" height=\"95\" rx=\"12\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"380\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">Değerlendirme sorusu:</text><text x=\"380\" y=\"172\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#334155\">Sonuç, araştırma sorusunu</text><text x=\"380\" y=\"190\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#334155\">ne düzeyde cevaplıyor?</text><text x=\"380\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">Uygun olmayan adıma geri dön.</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Aşağıdaki sorulardan hangileri istatistiksel araştırma gerektirir? Gerektirenlerin veri türünü (kategorik / nicel-kesikli) belirtiniz.\nI. Okulumuzun spor salonunda kaç basketbol potası var?\nII. 6. sınıf öğrencileri teneffüste en çok hangi oyunu oynuyor?\nIII. Sınıfımızdaki öğrencilerin evlerinde kaç saksı bitkisi var?\nIV. Sınıf öğretmenimizin doğum günü hangi aydadır?",
+      "cevap": "Her soru için “Cevap kişiden kişiye değişiyor mu?” diye soralım.\n• I. Spor salonundaki pota sayısı tek bir sayıdır; bir kez saymak yeterlidir. Değişkenlik yoktur → istatistiksel değildir.\n• II. Her öğrenci farklı bir oyun söyleyebilir; değişkenlik vardır → istatistiksel araştırma gerektirir. Cevaplar oyun adlarıdır → {koyu:kategorik} veri.\n• III. Kimin evinde 0, kimin evinde 5 saksı vardır; değişkenlik vardır → istatistiksel araştırma gerektirir. Cevaplar sayma ile bulunan tam sayılardır → {koyu:nicel (kesikli)} veri.\n• IV. Tek bir kişinin doğum günü sorulduğu için cevap tektir → istatistiksel değildir.\nSonuç: II (kategorik) ve III (nicel-kesikli) istatistiksel araştırma gerektirir.",
+      "ipucu": "Soru tek bir kişi ya da nesne hakkındaysa ve cevabı bir kez bakarak bulunabiliyorsa istatistiksel değildir."
+    },
+    {
+      "soru": "Okul müdürü 5. ve 6. sınıf öğrencilerinin kahvaltı alışkanlığını merak etmektedir.\na) Bu durum için bir betimleme sorusu yazınız.\nb) Bir karşılaştırma sorusu yazınız.\nc) Karşılaştırma sorusuyla toplanacak verinin türünü, uygun görselleştirme aracını ve özetleme ölçülerini gerekçesiyle belirtiniz.",
+      "cevap": "a) Betimleme sorusu tek grubu anlatır: “6. sınıf öğrencileri geçen hafta kaç gün kahvaltı yaptı?” (Grup: 6. sınıf öğrencileri, zaman: geçen hafta, değişken: kahvaltı yapılan gün sayısı.)\nb) Karşılaştırma sorusu iki grubu kıyaslar: “5. ve 6. sınıf öğrencilerinden hangileri geçen hafta daha çok gün kahvaltı yaptı?”\nc) Cevaplar 0, 1, 2, …, 7 gibi sayma ile elde edilen tam sayılardır → {koyu:nicel (kesikli)} veri. Değerler tek basamaklı ve 0-7 aralığında olduğu için kök-yaprak gösterimi uygun değildir; iki grubun dağılımını aynı ölçekte gösteren {koyu:iki nokta grafiği} seçilir. Grupları özetlemek için aritmetik ortalama (uç değer varsa ortanca), en yaygın gün sayısı için tepe değer, dengeyi görmek için açıklık hesaplanır.",
+      "ipucu": "Betimlemede bir grup, karşılaştırmada en az iki grup vardır. “Kaç gün” sorusu sayma ile cevaplanır."
+    },
+    {
+      "soru": "Bir öğrenci ekran kullanımıyla ilgili araştırma için şu anket sorusunu hazırlamıştır: “Ekran başında çok vakit geçirmenin zararlı olduğunu hepimiz biliyoruz; sen de ekran başında az mı vakit geçiriyorsun?” Bu sorudaki hataları belirleyip araştırmaya uygun nicel (kesikli) veri toplayacak biçimde düzeltiniz.",
+      "cevap": "1. hata – Yönlendirme: “zararlı olduğunu hepimiz biliyoruz” ifadesi katılımcıyı “evet, az vakit geçiriyorum” demeye iter; gerçek davranışı gizleyebilir.\n2. hata – Belirsizlik: “çok” ve “az” kelimeleri herkes için farklı anlam taşır; cevaplar karşılaştırılamaz.\n3. hata – Zaman dilimi yok: Hangi gün ya da hafta kastedildiği belli değildir.\nDüzeltme: “Geçen hafta (pazartesi-pazar) kaç gün tablet, telefon ya da bilgisayarla oyun oynadın? (0 ile 7 arasında bir sayı yaz.)”\nBu soru tarafsızdır, tek bir şeyi sorar, zaman dilimini belirtir ve cevabı sayma ile bulunan bir tam sayıdır; yani nicel (kesikli) veri toplar.",
+      "ipucu": "Önce soruyu övücü ya da kötüleyici ifadelerden arındır, sonra “çok, az, sık” gibi belirsiz kelimeleri sayılabilir bir ölçüyle değiştir."
+    },
+    {
+      "soru": "24 öğrenciye “En sevdiğin meyve hangisidir?” diye sorulmuş ve çetele ile şu sonuçlar elde edilmiştir: Elma 7, Muz 5, Portakal 9, Çilek 3.\na) Sıklık tablosunun toplamının doğru olduğunu kontrol ediniz.\nb) Bu veriyi özetlemek için hangi ölçü kullanılır? Değeri nedir?\nc) Bu veri için hangi grafik uygundur? Neden aritmetik ortalama hesaplanamaz?\nç) Portakalı seçenlerin tüm sınıfa oranını kesir ve yüzde olarak yazınız.",
+      "cevap": "a) 7 + 5 + 9 + 3 = 24. Toplam, ankete katılan öğrenci sayısına eşittir; veri kaybı yoktur.\nb) Veri {koyu:kategorik} olduğu için özet ölçüsü {koyu:tepe değerdir}. En büyük sıklık 9 olduğundan tepe değer {koyu:Portakal}dır.\nc) Kategorilerin sıklıklarını karşılaştırmak için {koyu:sütun grafiği} uygundur. “Elma, Muz, Portakal” gibi meyve adları toplanıp veri sayısına bölünemez; bu nedenle ortalama, ortanca ve açıklık kategorik veride anlamsızdır.\nç) Oran = {kesir:9|24} = {kesir:3|8}. Yüzde: {kesir:3|8} = 0,375 → %37,5.",
+      "ipucu": "Veri türünü belirle: Cevaplar kelime (kategori) ise yalnız sıklıklarla ve tepe değerle çalışılır."
+    },
+    {
+      "soru": "Bir sınıftaki 20 öğrencinin kardeş sayıları sıklık tablosunda verilmiştir:\nKardeş sayısı 0 → 3 öğrenci; 1 → 6 öğrenci; 2 → 7 öğrenci; 3 → 3 öğrenci; 4 → 1 öğrenci.\nBu veri için uygun görselleştirme aracını gerekçesiyle belirtiniz; aritmetik ortalama, ortanca, tepe değer ve açıklığı bulunuz.",
+      "cevap": "Araç seçimi: Kardeş sayısı sayma ile bulunan, 0-4 arasında tek basamaklı bir {koyu:nicel (kesikli)} veridir. Tekrar eden değerleri üst üste noktalarla gösteren {koyu:nokta grafiği} uygundur (0'ın üstünde 3, 1'in üstünde 6, 2'nin üstünde 7, 3'ün üstünde 3, 4'ün üstünde 1 nokta).\n• Toplam = 0 × 3 + 1 × 6 + 2 × 7 + 3 × 3 + 4 × 1 = 0 + 6 + 14 + 9 + 4 = 33.\n• Aritmetik ortalama = {kesir:33|20} = 1,65.\n• Ortanca: 20 veri olduğundan 10. ve 11. veriler ortalanır. 1.-3. veriler 0, 4.-9. veriler 1, 10.-16. veriler 2'dir. 10. ve 11. veri 2 → ortanca = {kesir:2 + 2|2} = 2.\n• Tepe değer: En büyük sıklık 7 → tepe değer 2.\n• Açıklık = 4 − 0 = 4.\nYorum: Bu sınıftaki öğrencilerin çoğunun 1 ya da 2 kardeşi vardır; tipik öğrencinin 2 kardeşi olduğu söylenebilir.",
+      "ipucu": "Sıklık tablosunda toplamı bulmak için her değeri kendi sıklığıyla çarpıp topla; ortanca için sıklıkları birikimli olarak say."
+    },
+    {
+      "soru": "Ayşe, “Okulumuzdaki öğrencilerin en sevdiği spor hangisidir?” sorusunu araştırmak için yalnız kendi basketbol takımındaki 5 arkadaşına sormuş, 4'ü “basketbol” deyince “Okulumuzun en sevdiği spor basketboldur.” sonucuna varmıştır. Bu araştırmayı değerlendirerek uygun olmayan adımları belirleyiniz ve yeniden planlayınız.",
+      "cevap": "1. Değerlendirme: Sonuç soruyu ne düzeyde cevaplıyor? Soru tüm okul hakkındadır, ama veri yalnız 5 kişiden toplanmıştır. Sonuç tüm okul için güvenilir değildir.\n2. Uygun olmayan adımlar:\n• Örneklem temsil etmiyor: Basketbol takımındaki öğrencilerin basketbolu seçmesi beklenir; sonuç baştan yanlıdır.\n• Veri sayısı çok az: 5 kişiyle bir okulun tamamı hakkında genelleme yapılamaz.\n3. Yeniden planlama:\n• Kimden? Her sınıf düzeyinden (5, 6, 7, 8), kız ve erkek, farklı ilgi alanlarından öğrenciler seçilir; örneğin her sınıftan 10'ar öğrenci.\n• Nasıl? Seçenekli anket: “En sevdiğin spor dalı hangisidir? (Futbol / Basketbol / Voleybol / Yüzme / Diğer)”\n• Kayıt ve analiz: Çetele → sıklık tablosu → sütun grafiği; veri kategorik olduğundan sonuç tepe değerle belirtilir.\nBu planla elde edilen sonuç, araştırma sorusuna çok daha güvenilir bir cevap verir.",
+      "ipucu": "Önce araştırma sorusunun hangi grup hakkında olduğuna, sonra verinin kimden toplandığına bak; ikisi örtüşmüyorsa sorun örneklemdedir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdakilerden hangisi istatistiksel bir araştırma sorusudur?",
+      "secenekler": [
+        "Okulumuzun kaç katı vardır?",
+        "Sınıf başkanımızın doğum günü hangi tarihtedir?",
+        "6. sınıf öğrencilerinin geçen ay kütüphaneden ödünç aldığı kitap sayıları nasıl dağılmaktadır?",
+        "Okulumuzun bulunduğu şehrin plaka kodu kaçtır?"
+      ],
+      "dogru": 2,
+      "aciklama": "Ödünç alınan kitap sayısı öğrenciden öğrenciye değişir (değişkenlik vardır) ve birçok kişiden veri toplanmasını gerektirir. Diğer soruların tek bir cevabı vardır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki anket sorularından hangisi yönlendirici bir sorudur?",
+      "secenekler": [
+        "En sevdiğin meyve hangisidir?",
+        "Geçen hafta kaç gün yürüyerek okula geldin?",
+        "Herkesin bildiği gibi kitap okumak çok faydalıdır; sen de her gün kitap okuyor musun?",
+        "Kaç kardeşin var?"
+      ],
+      "dogru": 2,
+      "aciklama": "“Herkesin bildiği gibi … çok faydalıdır” ifadesi katılımcıyı “evet” cevabına iter; bu nedenle soru yönlendiricidir ve gerçek davranışı yansıtmayan veri toplar."
+    },
+    {
+      "tur": "coktan",
+      "soru": "8 öğrencinin geçen hafta kütüphaneye gitme sayıları küçükten büyüğe 1, 2, 2, 3, 4, 4, 4, 6 olarak sıralanmıştır. Bu veri grubunun ortancası ve tepe değeri sırasıyla aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "3,5 ve 4",
+        "4 ve 4",
+        "3,25 ve 4",
+        "3,5 ve 2"
+      ],
+      "dogru": 0,
+      "aciklama": "8 veri olduğundan ortanca 4. ve 5. verilerin ortalamasıdır: (3 + 4) ÷ 2 = 3,5. En çok tekrar eden değer 4'tür (3 kez). 3,25 ise aritmetik ortalamadır (26 ÷ 8)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir öğrenci “Okulumuzdaki öğrenciler en çok hangi sporu seviyor?” sorusu için yalnız kendi sınıfından 6 arkadaşına sormuştur. Araştırmanın hangi adımı yeniden planlanmalıdır?",
+      "secenekler": [
+        "Araştırma sorusu tek cevaplı olduğu için soru tamamen değiştirilmelidir.",
+        "Örneklem okulu temsil etmediği için farklı sınıflardan daha çok öğrenciye ulaşılmalıdır.",
+        "Veri kategorik olduğu için aritmetik ortalama hesaplanmalıdır.",
+        "Veriler kök-yaprak gösterimiyle sunulmalıdır."
+      ],
+      "dogru": 1,
+      "aciklama": "Soru tüm okul hakkındadır ama veri tek sınıftan ve çok az kişiden toplanmıştır; örneklem okulu temsil etmez. Kategorik veride ortalama hesaplanmaz, kök-yaprak gösterimi de nicel veri içindir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir sorunun cevapları kişiden kişiye değişiyorsa bu soru istatistiksel araştırma gerektirebilir.",
+          "dogru": true,
+          "aciklama": "Cevaplardaki değişkenlik, istatistiksel araştırmanın temel şartıdır."
+        },
+        {
+          "metin": "“En sevdiğin renk hangisidir?” sorusuyla toplanan verilerin aritmetik ortalaması hesaplanabilir.",
+          "dogru": false,
+          "aciklama": "Renkler kategorik veridir; toplanıp bölünemez. Bu veri yalnız tepe değerle özetlenir."
+        },
+        {
+          "metin": "Karşılaştırma amaçlı bir araştırma sorusunda en az iki grup bulunur.",
+          "dogru": true,
+          "aciklama": "Karşılaştırma, iki ya da daha fazla grubun aynı değişken açısından kıyaslanmasıdır."
+        },
+        {
+          "metin": "Hazır veri kullanılırken verinin kaynağının güvenilir olup olmadığı önemli değildir.",
+          "dogru": false,
+          "aciklama": "Hazır verinin güvenilir, güncel ve araştırma sorusuyla aynı şeyi ölçen bir kaynaktan gelmesi gerekir."
+        },
+        {
+          "metin": "Sonuç araştırma sorusunu yeterince cevaplamıyorsa sürecin uygun olmayan adımları yeniden planlanabilir.",
+          "dogru": true,
+          "aciklama": "İstatistiksel araştırma bir döngüdür; soru, örneklem, anket veya veri toplama zamanı yeniden düzenlenebilir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "İstatistiksel araştırma sürecine ait kavramları açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Araştırma sorusu",
+          "Neyin, hangi grupta, hangi zaman diliminde inceleneceğini belirten soru"
+        ],
+        [
+          "Örneklem",
+          "Büyük bir grubu temsil etmek için seçilen daha küçük grup"
+        ],
+        [
+          "Yönlendirici soru",
+          "Katılımcıyı belirli bir cevaba iten, yanlı anket sorusu"
+        ],
+        [
+          "Hazır veri",
+          "Bir kurumun kayıtlarından elde edilen, araştırmacının kendisinin toplamadığı veri"
+        ],
+        [
+          "Yeniden planlama",
+          "Sonuç soruyu yeterince cevaplamadığında uygun olmayan adımın düzeltilmesi"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir soruya verilen cevapların kişiden kişiye farklı olmasına ___ denir.",
+          "cevap": "değişkenlik"
+        },
+        {
+          "metin": "“6-A ve 6-B'den hangisi daha çok kitap okudu?” sorusu ___ amaçlı bir araştırma sorusudur.",
+          "cevap": "karşılaştırma"
+        },
+        {
+          "metin": "Tüm okulu temsil etmek üzere farklı sınıflardan seçilen öğrenci grubuna ___ denir.",
+          "cevap": "örneklem"
+        },
+        {
+          "metin": "Katılımcıyı belirli bir cevaba iten anket sorusuna ___ soru denir.",
+          "cevap": "yönlendirici"
+        },
+        {
+          "metin": "Kategorik verileri özetlemek için kullanılan ölçü ___ değerdir.",
+          "cevap": "tepe"
+        }
+      ],
+      "kelimeler": [
+        "değişkenlik",
+        "karşılaştırma",
+        "örneklem",
+        "yönlendirici",
+        "tepe"
+      ],
+      "fazla": [
+        "ortalama",
+        "açıklık"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Okul kütüphanecisi, 6-C sınıfındaki öğrencilerin bir ayda kütüphaneden kaç kitap ödünç aldığını merak etmektedir. Kütüphanenin kayıtlarından sınıftaki 10 öğrencinin aralık ayı verileri şöyledir: 2, 3, 3, 4, 4, 4, 5, 5, 6, 14. Kütüphaneci, gelecek ay her öğrenci için kaç kitap ayırması gerektiğine karar vermek istemektedir. Araştırma sorusunu yazınız, veri türünü ve kaynağını belirtiniz, uygun araçlarla veriyi analiz ediniz ve gerekçeli bir karar önerip araştırmayı değerlendiriniz.",
+      "ipuclari": [
+        "1. adım: Grup, değişken ve zamanı içeren bir betimleme sorusu yaz; verinin sayma ile mi elde edildiğine ve anketle mi yoksa kayıtlardan mı geldiğine karar ver.",
+        "2. adım: Veriler 2 ile 14 arasında olduğundan nokta grafiği çizilebilir; toplamı bulup ortalamayı, 5. ve 6. verilerle ortancayı, tepe değeri ve açıklığı hesapla.",
+        "3. adım: 14 değerinin diğerlerinden çok uzak olup olmadığını incele; uç değer varsa hangi ölçünün sınıfı daha iyi temsil edeceğini seç.",
+        "4. adım: Kararını sayısal gerekçeyle yaz; tek ay ve tek sınıf verisinin sınırlılığını belirterek gerekiyorsa yeniden planlama öner."
+      ],
+      "cevap": "1) Araştırma sorusu: “6-C sınıfındaki öğrenciler aralık ayında kütüphaneden kaç kitap ödünç aldı?” (betimleme sorusu). Veri, sayma ile elde edilen tam sayılardan oluştuğu için nicel (kesikli) veridir; kaynağı kütüphanenin ödünç verme kayıtlarıdır, yani hazır veridir.\n2) Analiz: Toplam = 2 + 3 + 3 + 4 + 4 + 4 + 5 + 5 + 6 + 14 = 50. Aritmetik ortalama = {kesir:50|10} = 5. Veri sayısı 10 olduğu için ortanca 5. ve 6. verilerin ortalamasıdır: {kesir:4 + 4|2} = 4. Tepe değer 4'tür (3 kez). Açıklık = 14 − 2 = 12. Nokta grafiğinde noktalar 2-6 arasında toplanırken 14'ün tek başına çok uzakta kaldığı görülür.\n3) Uç değer: 14, diğer verilerden çok uzaktır; ortalamayı 5'e yükseltmiş, açıklığı da 12'ye çıkarmıştır. 10 öğrencinin 9'u 6 veya daha az kitap almıştır. Bu nedenle sınıfı en iyi ortanca (4) temsil eder; tepe değerin de 4 olması bu yorumu destekler.\n4) Karar ve değerlendirme: “Öğrencilerin ortanca ödünç alma sayısı 4, tepe değeri 4'tür; ortalamayı yükselten 14 bir uç değerdir. Bu yüzden her öğrenci için ayda yaklaşık 4 kitap ayırmak uygundur; çok okuyan öğrenciler için birkaç yedek kitap bulundurulabilir.” Sınırlılık: Veri yalnız bir aya ve sınıftaki 10 öğrenciye aittir; aralıkta tatil ya da etkinlik olmuş olabilir. Kararı güçlendirmek için sınıftaki tüm öğrencilerin birkaç aylık kayıtları incelenerek araştırma yeniden planlanabilir."
+    }
+  ]
+}

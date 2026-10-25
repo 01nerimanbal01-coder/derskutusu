@@ -15,10 +15,10 @@
   ],
   "giris": "Geçtiğimiz hafta serbest düşme ile iki boyutta sabit ivmeli hareketin temel kavramlarını tanıdık. Bu haftaki dersimizde ise {koyu:yatay atış ve eğik atış hareketlerindeki sayısal örüntüleri gözlemleyerek tümevarımsal akıl yürütme} becerimizi derinleştireceğiz. Eşit zaman aralıklarında alınan yatay ve düşey yollardan parabolik yörünge denklemine ulaşacak; {koyu:tümler açıların menzil eşitliğini, maksimum yükseklik-menzil oranını ve serbest düşen hedefe nişan alma problemlerini} bütün yönleriyle analiz edeceğiz.",
   "ozet": [
-    "İki boyutta sabit ivmeli harekette (hava direnci ihmal edildiğinde) yatayda net kuvvet sıfır olduğu için sabit hızlı hareket (x = v₀x · t), düşeyde ise yer çekimi kuvveti etkisinde sabit ivmeli hareket (a_y = g) gerçekleşir.",
+    "İki boyutta sabit ivmeli harekette (hava direnci ihmal edildiğinde) yatayda net kuvvet sıfır olduğu için sabit hızlı hareket (x = v₀x · t), düşeyde ise yer çekimi kuvveti etkisinde sabit ivmeli hareket (a{alt:y} = g) gerçekleşir.",
     "Yatay atılan bir cisim yatayda eşit zaman aralıklarında x, x, x... kadar sabit yol alırken; düşeyde h, 3h, 5h... örüntüsüyle düşer; dolayısıyla t süresi sonunda yatay konumu n·x iken toplam düşey konumu {us:n|2}·h olur (y ∝ {us:x|2} parabolü).",
-    "Belirli bir yükseklikten yatay atılan cismin uçuş süresi t_uçuş = {kok:{kesir:2h|g}} bağıntısıyla yalnız yüksekliğe ve g'ye bağlıdır; yatay ilk hız (v₀) uçuş süresini değiştirmez.",
-    "Eğik atışta tepe noktasına çıkış ve tepe noktasından iniş simetriktir; tepe noktasında düşey hız sıfırlanır (v_y = 0) ve hız vektörü (v₀x) ile ivme vektörü (g) birbirine dik (90°) olur.",
+    "Belirli bir yükseklikten yatay atılan cismin uçuş süresi t{alt:uçuş} = {kok:{kesir:2h|g}} bağıntısıyla yalnız yüksekliğe ve g'ye bağlıdır; yatay ilk hız (v₀) uçuş süresini değiştirmez.",
+    "Eğik atışta tepe noktasına çıkış ve tepe noktasından iniş simetriktir; tepe noktasında düşey hız sıfırlanır (v{alt:y} = 0) ve hız vektörü (v₀x) ile ivme vektörü (g) birbirine dik (90°) olur.",
     "Aynı ilk hız büyüklüğüyle (v₀) eğik atılan cisimlerde atış açısı 45° olduğunda yatay menzil maksimum ({kesir:{us:v₀|2}|g}) olur; birbirini 90°'ye tamamlayan (tümler) açılarda (α + β = 90°) yatay menziller birbirine eşittir.",
     "Eğik atılan bir mermi, atıldığı anda serbest düşmeye bırakılan bir hedefe doğrudan nişan alınmışsa, her ikisi de aynı t sürede yer çekimi nedeniyle {kesir:1|2}g{us:t|2} kadar aşağı sarktığı için havada mutlaka çarpışırlar."
   ],
@@ -27,13 +27,13 @@
       "baslik": "1. Bileşenlerin Bağımsızlığı İlkesi ve İvme-Hız Vektör İlişkisi",
       "metin": [
         "Galileo Galilei'nin ortaya koyduğu {koyu:hareketlerin bağımsızlığı ilkesine} göre, iki boyutta hareket eden bir cismin yatay (x) ve düşey (y) eksenlerdeki hareketleri birbirini etkilemeden eş zamanlı olarak gerçekleşir. Hava direncinin ihmal edildiği ideal ortamda cisme hareket boyunca etki eden tek kuvvet düşey aşağı yönlü {koyu:ağırlık kuvvetidir (G = m · g)}.",
-        "1) {koyu:Yatay Eksen (x)}: Yatay doğrultuda cisme hiçbir kuvvet etki etmez (F_x = 0). Newton'ın ikinci yasasına göre yatay ivme sıfırdır ({koyu:a_x = 0}). Bu nedenle cismin yatay hız bileşeni hareketin başından sonuna kadar büyüklük ve yönce sabit kalır: {koyu:v_x(t) = v₀x = v₀ · cos α = sabit}.",
-        "2) {koyu:Düşey Eksen (y)}: Düşey doğrultuda net kuvvet F_y = m · g olduğundan cisim kütlesinden bağımsız olarak her an düşey aşağı yönlü {koyu:g yer çekimi ivmesiyle} hareket eder. Cisim yükselirken hız vektörü ile ivme vektörü arasındaki açı 90°'den büyüktür (düşey hız azalır); {koyu:tepe noktasında hız vektörü yatay, ivme vektörü düşey olduğu için aralarındaki açı tam 90°'dir}; inişte ise aralarındaki açı 90°'den küçüktür (düşey hız artar)."
+        "1) {koyu:Yatay Eksen (x)}: Yatay doğrultuda cisme hiçbir kuvvet etki etmez (F{alt:x} = 0). Newton'ın ikinci yasasına göre yatay ivme sıfırdır ({koyu:a{alt:x} = 0}). Bu nedenle cismin yatay hız bileşeni hareketin başından sonuna kadar büyüklük ve yönce sabit kalır: {koyu:v{alt:x}(t) = v₀x = v₀ · cos α = sabit}.",
+        "2) {koyu:Düşey Eksen (y)}: Düşey doğrultuda net kuvvet F{alt:y} = m · g olduğundan cisim kütlesinden bağımsız olarak her an düşey aşağı yönlü {koyu:g yer çekimi ivmesiyle} hareket eder. Cisim yükselirken hız vektörü ile ivme vektörü arasındaki açı 90°'den büyüktür (düşey hız azalır); {koyu:tepe noktasında hız vektörü yatay, ivme vektörü düşey olduğu için aralarındaki açı tam 90°'dir}; inişte ise aralarındaki açı 90°'den küçüktür (düşey hız artar)."
       ],
       "kutu": {
         "tur": "onemli",
         "baslik": "Kavram Yanılgısı Uyarısı: Tepe Noktasında İvme Sıfır Değildir!",
-        "metin": "Eğik atılan bir cismin yörüngesinin en üst (tepe) noktasında düşey hızı anlık olarak sıfır (v_y = 0) olur ve toplam hızı yatay hızına (v₀x) eşittir. Ancak cisme etki eden yer çekimi kuvveti devam ettiği için tepe noktasında da ivmesi düşey aşağı yönlü g'dir (asla sıfır olmaz!)."
+        "metin": "Eğik atılan bir cismin yörüngesinin en üst (tepe) noktasında düşey hızı anlık olarak sıfır (v{alt:y} = 0) olur ve toplam hızı yatay hızına (v₀x) eşittir. Ancak cisme etki eden yer çekimi kuvveti devam ettiği için tepe noktasında da ivmesi düşey aşağı yönlü g'dir (asla sıfır olmaz!)."
       },
       "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 270\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"260\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">İKİ BOYUTTA HAREKETİN BAĞIMSIZLIĞI VE BİLEŞEN ANALİZİ</text><rect x=\"20\" y=\"42\" width=\"345\" height=\"205\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#2563eb\"/><rect x=\"20\" y=\"64\" width=\"345\" height=\"8\" fill=\"#2563eb\"/><text x=\"192.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Yatay Bileşen (x Ekseni - Sabit Hızlı)</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Yatay doğrultuda net kuvvet sıfırdır (Fx = 0).</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">• Yatay ivme sıfırdır: ax = 0.</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">• Yatay hız hareket boyunca değişmez:</text><text x=\"32\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  vx(t) = v0x = v0 · cos(a) = sabit</text><text x=\"32\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">• Eşit zaman aralıklarında eşit yatay yollar alınır:</text><text x=\"32\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  x = v0x · t   ve   x_menzil = v0x · t_ucus</text><text x=\"32\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">• Tepe noktasında cismin toplam hızı v0x'e eşittir.</text><rect x=\"395\" y=\"42\" width=\"345\" height=\"205\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"395\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#dc2626\"/><rect x=\"395\" y=\"64\" width=\"345\" height=\"8\" fill=\"#dc2626\"/><text x=\"567.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Düşey Bileşen (y Ekseni - Sabit İvmeli)</text><text x=\"407\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Düşeyde yalnız ağırlık kuvveti etki eder (Fy = -m·g).</text><text x=\"407\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">• Düşey ivme yer çekimi ivmesidir: ay = -g.</text><text x=\"407\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">• Düşey hız her saniye g (10 m/s) kadar değişir:</text><text x=\"407\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">  vy(t) = v0y - g · t   (v0y = v0 · sin(a))</text><text x=\"407\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">• Çıkış süresi: t_cikis = v0y / g,  t_ucus = 2 · t_cikis</text><text x=\"407\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">• Maksimum yükseklik: h_max = (v0y)^2 / (2·g)</text><text x=\"407\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">• Herhangi bir anda hız: v = ((vx)^2 + (vy)^2)^(1/2)</text></svg>"
     },
@@ -54,27 +54,27 @@
     {
       "baslik": "3. Eğik Atışta Zaman, Hız ve Yükseklik Simetrisi",
       "metin": [
-        "Yatayla α açısı yapacak biçimde {koyu:v₀} ilk hızıyla fırlatılan bir cismin hareketini analiz etmek için ilk hız vektörü bileşenlerine ayrılır: Yatay ilk hız {koyu:v₀x = v₀ · cos α} ve düşey ilk hız {koyu:v₀y = v₀ · sin α}. Cisim düşeyde her saniye g kadar yavaşlayarak tepe noktasına {koyu:t_çıkış} = {kesir:v₀y|g} sürede ulaşır. Atıldığı yatay düzleme geri döndüğünde iniş süresi çıkış süresine eşit olduğundan toplam uçuş süresi {koyu:t_uçuş = 2 · t_çıkış = {kesir:2 · v₀y|g} = {kesir:2 · v₀ · sin α|g}} olur.",
-        "Cismin çıkabileceği maksimum yükseklik ({koyu:h_max}), düşey ortalama hız ({kesir:v₀y + 0|2}) ile çıkış süresinin çarpımından veya zamansız hız denkleminden bulunur: {koyu:h_max = {kesir:{us:v₀y|2}|2g} = {kesir:1|2} · g · {us:t_çıkış|2}}.",
-        "{koyu:Tepe Noktasından Sonrası Yatay Atıştır:} Eğik atılan bir cismin tepe noktasından sonraki hareketi, {koyu:h_max} yüksekliğinden {koyu:v₀x} hızıyla yapılan bir yatay atış hareketiyle bire bir aynıdır! Dolayısıyla tepe noktasından itibaren ardışık saniyelerde düşeyde {koyu:5 m, 15 m, 25 m...} (h, 3h, 5h...) kuralı doğrudan uygulanabilir."
+        "Yatayla α açısı yapacak biçimde {koyu:v₀} ilk hızıyla fırlatılan bir cismin hareketini analiz etmek için ilk hız vektörü bileşenlerine ayrılır: Yatay ilk hız {koyu:v₀x = v₀ · cos α} ve düşey ilk hız {koyu:v₀y = v₀ · sin α}. Cisim düşeyde her saniye g kadar yavaşlayarak tepe noktasına {koyu:t{alt:çıkış}} = {kesir:v₀y|g} sürede ulaşır. Atıldığı yatay düzleme geri döndüğünde iniş süresi çıkış süresine eşit olduğundan toplam uçuş süresi {koyu:t{alt:uçuş} = 2 · t{alt:çıkış} = {kesir:2 · v₀y|g} = {kesir:2 · v₀ · sin α|g}} olur.",
+        "Cismin çıkabileceği maksimum yükseklik ({koyu:h{alt:max}}), düşey ortalama hız ({kesir:v₀y + 0|2}) ile çıkış süresinin çarpımından veya zamansız hız denkleminden bulunur: {koyu:h{alt:max} = {kesir:{us:v₀y|2}|2g} = {kesir:1|2} · g · {us:t{alt:çıkış}|2}}.",
+        "{koyu:Tepe Noktasından Sonrası Yatay Atıştır:} Eğik atılan bir cismin tepe noktasından sonraki hareketi, {koyu:h{alt:max}} yüksekliğinden {koyu:v₀x} hızıyla yapılan bir yatay atış hareketiyle bire bir aynıdır! Dolayısıyla tepe noktasından itibaren ardışık saniyelerde düşeyde {koyu:5 m, 15 m, 25 m...} (h, 3h, 5h...) kuralı doğrudan uygulanabilir."
       ],
       "kutu": {
         "tur": "bilgi",
         "baslik": "Yüksekliği Sadece Uçuş Süresinden Bulma Pratiği!",
-        "metin": "Eğik atılan bir cismin ilk hızı veya açısı verilmese bile yalnızca havada kalma (uçuş) süresi t_uçuş biliniyorsa maksimum yüksekliği hemen bulunabilir! Örneğin uçuş süresi 6 s olan bir cismin çıkış süresi 3 s, iniş süresi 3 s'dir; öyleyse h_max = 1/2 · 10 · 3² = 45 metredir (5 + 15 + 25 = 45 m)."
+        "metin": "Eğik atılan bir cismin ilk hızı veya açısı verilmese bile yalnızca havada kalma (uçuş) süresi t{alt:uçuş} biliniyorsa maksimum yüksekliği hemen bulunabilir! Örneğin uçuş süresi 6 s olan bir cismin çıkış süresi 3 s, iniş süresi 3 s'dir; öyleyse h{alt:max} = 1/2 · 10 · 3² = 45 metredir (5 + 15 + 25 = 45 m)."
       }
     },
     {
       "baslik": "4. Menzil Denklemi, Tümler Açılar ve Yükseklik-Menzil Oranı",
       "metin": [
-        "Eğik atışta cismin atıldığı yatay düzleme tekrar çarptığı noktaya kadar aldığı yatay yola {koyu:menzil (x_menzil)} denir. Yatay hız ile uçuş süresi çarpıldığında: {koyu:x_menzil = v₀x · t_uçuş = (v₀ · cos α) · ({kesir:2 · v₀ · sin α|g})}. Trigonometrik yarım açı özdeşliği ({koyu:2 · sin α · cos α = sin(2α)}) kullanıldığında genel menzil bağıntısı elde edilir: {koyu:x_menzil = {kesir:{us:v₀|2} · sin(2α)|g}}.",
-        "Bu bağıntıdan tümevarımsal olarak üç kritik fiziksel sonuç çıkarılır: 1) {koyu:Maksimum Menzil Açısı (45°)}: İlk hız büyüklüğü v₀ sabitken sin(2α) fonksiyonunun alabileceği en büyük değer 1'dir (2α = 90° ⇒ {koyu:α = 45°}). Dolayısıyla bir cismi en uzağa fırlatmak için 45° açıyla atmak gerekir ve bu durumda {koyu:x_max = {kesir:{us:v₀|2}|g}} olur.",
-        "2) {koyu:Tümler Açıların Menzil Eşitliği (α + β = 90°)}: Aynı ilk hız büyüklüğüyle (v₀) atılan iki cismin atış açılarının toplamı 90° ise (örneğin 30° ile 60° veya 15° ile 75°), sin(2α) = sin(2β) olduğundan {koyu:yatay menzilleri birbirine eşittir (x₁ = x₂)}. Ancak büyük açıyla atılan cismin düşey hızı (v₀y) daha büyük olduğu için havada daha uzun süre kalır ve daha yükseğe çıkar. 3) {koyu:Maksimum Yükseklik / Menzil Oranı}: {kesir:h_max|x_menzil} oranı alındığında v₀ ve g sadeleşir ve {koyu:{kesir:h_max|x_menzil} = {kesir:1|4} · tan α} bağıntısı bulunur (45° için {koyu:x_menzil = 4 · h_max})."
+        "Eğik atışta cismin atıldığı yatay düzleme tekrar çarptığı noktaya kadar aldığı yatay yola {koyu:menzil (x{alt:menzil})} denir. Yatay hız ile uçuş süresi çarpıldığında: {koyu:x{alt:menzil} = v₀x · t{alt:uçuş} = (v₀ · cos α) · ({kesir:2 · v₀ · sin α|g})}. Trigonometrik yarım açı özdeşliği ({koyu:2 · sin α · cos α = sin(2α)}) kullanıldığında genel menzil bağıntısı elde edilir: {koyu:x{alt:menzil} = {kesir:{us:v₀|2} · sin(2α)|g}}.",
+        "Bu bağıntıdan tümevarımsal olarak üç kritik fiziksel sonuç çıkarılır: 1) {koyu:Maksimum Menzil Açısı (45°)}: İlk hız büyüklüğü v₀ sabitken sin(2α) fonksiyonunun alabileceği en büyük değer 1'dir (2α = 90° ⇒ {koyu:α = 45°}). Dolayısıyla bir cismi en uzağa fırlatmak için 45° açıyla atmak gerekir ve bu durumda {koyu:x{alt:max} = {kesir:{us:v₀|2}|g}} olur.",
+        "2) {koyu:Tümler Açıların Menzil Eşitliği (α + β = 90°)}: Aynı ilk hız büyüklüğüyle (v₀) atılan iki cismin atış açılarının toplamı 90° ise (örneğin 30° ile 60° veya 15° ile 75°), sin(2α) = sin(2β) olduğundan {koyu:yatay menzilleri birbirine eşittir (x₁ = x₂)}. Ancak büyük açıyla atılan cismin düşey hızı (v₀y) daha büyük olduğu için havada daha uzun süre kalır ve daha yükseğe çıkar. 3) {koyu:Maksimum Yükseklik / Menzil Oranı}: {kesir:h{alt:max}|x{alt:menzil}} oranı alındığında v₀ ve g sadeleşir ve {koyu:{kesir:h{alt:max}|x{alt:menzil}} = {kesir:1|4} · tan α} bağıntısı bulunur (45° için {koyu:x{alt:menzil} = 4 · h{alt:max}})."
       ],
       "kutu": {
         "tur": "onemli",
-        "baslik": "37°, 45° ve 53° Açılarında h_max / x_menzil Oranları",
-        "metin": "h_max / x_menzil = (1/4) · tan α formülüyle: • α = 45° (tan 45° = 1) için h_max / x_menzil = 1/4, • α = 37° (tan 37° = 3/4) için h_max / x_menzil = 3/16, • α = 53° (tan 53° = 4/3) için h_max / x_menzil = 1/3 olur."
+        "baslik": "37°, 45° ve 53° Açılarında h{alt:max} / x{alt:menzil} Oranları",
+        "metin": "h{alt:max} / x{alt:menzil} = (1/4) · tan α formülüyle: • α = 45° (tan 45° = 1) için h{alt:max} / x{alt:menzil} = 1/4, • α = 37° (tan 37° = 3/4) için h{alt:max} / x{alt:menzil} = 3/16, • α = 53° (tan 53° = 4/3) için h{alt:max} / x{alt:menzil} = 1/3 olur."
       },
       "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 265\" width=\"100%\" style=\"max-width:760px;height:auto;display:block;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif\"><rect x=\"5\" y=\"5\" width=\"750\" height=\"255\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"380\" y=\"28\" fill=\"#0f172a\" font-size=\"14.5\" font-weight=\"bold\" text-anchor=\"middle\">EĞİK ATIŞTA TÜMLER AÇILAR, MAKSİMUM MENZİL VE ALTIN ORAN BAĞINTISI</text><rect x=\"20\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"20\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#d97706\"/><rect x=\"20\" y=\"64\" width=\"345\" height=\"8\" fill=\"#d97706\"/><text x=\"192.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Menzil Bağıntısı ve Tümler Açılar (a + b = 90°)</text><text x=\"32\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• Menzil formülü: x_menzil = (v0^2 · sin(2a)) / g</text><text x=\"32\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">• Maksimum menzil: a = 45° iken sin(90°) = 1 olur</text><text x=\"32\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">  ve x_max = v0^2 / g değerine ulaşır.</text><text x=\"32\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Eşit büyüklükte ilk hızla (v0) atılan cisimlerde</text><text x=\"32\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">  atış açıları toplamı 90° ise (örn. 30° ve 60°,</text><text x=\"32\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  20° ve 70°) yatay menzilleri EŞİTTİR (x1 = x2).</text><text x=\"32\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">• Ancak büyük açıyla atılan daha yükseğe çıkar.</text><rect x=\"395\" y=\"42\" width=\"345\" height=\"198\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"395\" y=\"42\" width=\"345\" height=\"30\" rx=\"10\" fill=\"#059669\"/><rect x=\"395\" y=\"64\" width=\"345\" height=\"8\" fill=\"#059669\"/><text x=\"567.5\" y=\"62\" fill=\"#ffffff\" font-size=\"12.5\" font-weight=\"bold\" text-anchor=\"middle\">Yükseklik - Menzil Oranı ve Simetri İlkesi</text><text x=\"407\" y=\"91\" fill=\"#1e293b\" font-size=\"11.5\">• h_max / x_menzil oranı sadece atış açısına bağlıdır:</text><text x=\"407\" y=\"109\" fill=\"#1e293b\" font-size=\"11.5\">  h_max / x_menzil = (1 / 4) · tan(a)</text><text x=\"407\" y=\"127\" fill=\"#1e293b\" font-size=\"11.5\">• Özel durum: a = 45° için h_max = x_menzil / 4</text><text x=\"407\" y=\"145\" fill=\"#1e293b\" font-size=\"11.5\">• Tepe noktasından sonrası tam bir YATAY ATIŞTIR!</text><text x=\"407\" y=\"163\" fill=\"#1e293b\" font-size=\"11.5\">• Çıkış ve iniş simetriktir: Yerden aynı yükseklikteki</text><text x=\"407\" y=\"181\" fill=\"#1e293b\" font-size=\"11.5\">  noktalardan geçerken süratler birbirine eşittir.</text><text x=\"407\" y=\"199\" fill=\"#1e293b\" font-size=\"11.5\">• Tepe noktasında hız ile ivme birbirine DİKTİR (90°).</text></svg>"
     },
@@ -95,8 +95,8 @@
     {
       "baslik": "6. İki Boyutta Atış Hareketlerinin Grafiksel ve Enerjisel Yorumu",
       "metin": [
-        "Yatay ve eğik atış hareketlerinde grafikler çizilirken yatay (x) ve düşey (y) eksenler ayrı ayrı ele alınır: {koyu:Yatay hız-zaman (v_x - t)} grafiği zaman eksenine paralel yatay bir doğrudur ve altındaki alan yatay yer değiştirmeyi (x) verir. {koyu:Düşey hız-zaman (v_y - t)} grafiği ise eğimi -g olan doğrusal bir grafiktir; eğik atışta grafik +v₀y'den başlayıp t_çıkış anında sıfırdan geçer ve -v₀y'ye iner.",
-        "Sürtünmesiz ortamda atılan bir cismin hareketi boyunca mekanik enerjisi korunur ({koyu:E_mekanik = E_kinetik + E_potansiyel = sabit}). Cisim yükselirken kinetik enerjisi azalır, potansiyel enerjisi artar; {koyu:tepe noktasında kinetik enerjisi sıfır olmaz}, sahip olduğu en küçük kinetik enerji {koyu:E_k(min) = {kesir:1|2} · m · {us:v₀x|2} = E_ilk · {us:cos|2}α} değerine eşit olur."
+        "Yatay ve eğik atış hareketlerinde grafikler çizilirken yatay (x) ve düşey (y) eksenler ayrı ayrı ele alınır: {koyu:Yatay hız-zaman (v{alt:x} - t)} grafiği zaman eksenine paralel yatay bir doğrudur ve altındaki alan yatay yer değiştirmeyi (x) verir. {koyu:Düşey hız-zaman (v{alt:y} - t)} grafiği ise eğimi -g olan doğrusal bir grafiktir; eğik atışta grafik +v₀y'den başlayıp t{alt:çıkış} anında sıfırdan geçer ve -v₀y'ye iner.",
+        "Sürtünmesiz ortamda atılan bir cismin hareketi boyunca mekanik enerjisi korunur ({koyu:E{alt:mekanik} = E{alt:kinetik} + E{alt:potansiyel} = sabit}). Cisim yükselirken kinetik enerjisi azalır, potansiyel enerjisi artar; {koyu:tepe noktasında kinetik enerjisi sıfır olmaz}, sahip olduğu en küçük kinetik enerji {koyu:E{alt:k}(min) = {kesir:1|2} · m · {us:v₀x|2} = E{alt:ilk} · {us:cos|2}α} değerine eşit olur."
       ],
       "kutu": {
         "tur": "uyari",
@@ -111,24 +111,24 @@
       "cevap": "1. Cismin uçuş süresi: h₁ = 1/2 · g · t₁² ⇒ 80 = 5 · t₁² ⇒ t₁² = 16 ⇒ t₁ = 4 s. Yatay menzili: x₁ = v₁ · t₁ = 30 · 4 = 120 m.\n2. Cismin uçuş süresi: h₂ = 1/2 · g · t₂² ⇒ 45 = 5 · t₂² ⇒ t₂² = 9 ⇒ t₂ = 3 s. Yatay menzili: x₂ = v₂ · t₂ = 20 · 3 = 60 m.\nMenziller oranı: x₁ / x₂ = 120 / 60 = 2 bulunur."
     },
     {
-      "soru": "Yerden v₀ = 50 m/s büyüklüğündeki hızla, yatayla 53° açı yapacak biçimde eğik olarak atılan bir cismin; a) Havada kalma (uçuş) süresini, b) Çıkabileceği maksimum yüksekliği (h_max), c) Yatay menzilini (x_menzil) hesaplayınız. (g = 10 m/s², sin 53° = 0,8; cos 53° = 0,6)",
-      "cevap": "Önce ilk hız bileşenlerini bulalım: Yatay hız v₀x = 50 · cos 53° = 50 · 0,6 = 30 m/s. Düşey hız v₀y = 50 · sin 53° = 50 · 0,8 = 40 m/s.\na) Çıkış süresi t_çıkış = v₀y / g = 40 / 10 = 4 s. Toplam uçuş süresi t_uçuş = 2 · 4 = 8 s.\nb) Maksimum yükseklik h_max = 1/2 · g · t_çıkış² = 5 · 4² = 80 m.\nc) Yatay menzil x_menzil = v₀x · t_uçuş = 30 · 8 = 240 m. (Kontrol: h_max / x_menzil = 80 / 240 = 1/3 = 1/4 · tan 53°)."
+      "soru": "Yerden v₀ = 50 m/s büyüklüğündeki hızla, yatayla 53° açı yapacak biçimde eğik olarak atılan bir cismin; a) Havada kalma (uçuş) süresini, b) Çıkabileceği maksimum yüksekliği (h{alt:max}), c) Yatay menzilini (x{alt:menzil}) hesaplayınız. (g = 10 m/s², sin 53° = 0,8; cos 53° = 0,6)",
+      "cevap": "Önce ilk hız bileşenlerini bulalım: Yatay hız v₀x = 50 · cos 53° = 50 · 0,6 = 30 m/s. Düşey hız v₀y = 50 · sin 53° = 50 · 0,8 = 40 m/s.\na) Çıkış süresi t{alt:çıkış} = v₀y / g = 40 / 10 = 4 s. Toplam uçuş süresi t{alt:uçuş} = 2 · 4 = 8 s.\nb) Maksimum yükseklik h{alt:max} = 1/2 · g · t{alt:çıkış²} = 5 · 4² = 80 m.\nc) Yatay menzil x{alt:menzil} = v₀x · t{alt:uçuş} = 30 · 8 = 240 m. (Kontrol: h{alt:max} / x{alt:menzil} = 80 / 240 = 1/3 = 1/4 · tan 53°)."
     },
     {
-      "soru": "Hava direncinin önemsiz olduğu ortamda K, L ve M cisimleri eşit büyüklükteki v₀ ilk hızlarıyla sırasıyla yatayla 25°, 45° ve 65° açı yapacak şekilde eğik olarak atılıyor. Cisimlerin yatay menzilleri x_K, x_L, x_M ve maksimum yükseklikleri h_K, h_L, h_M arasındaki büyüklük ilişkilerini karşılaştırınız.",
-      "cevap": "1) Yatay Menzil Karşılaştırması: Aynı ilk hız büyüklüğüyle atılan cisimlerde 45° açıda menzil maksimumdur (x_L en büyüktür). K (25°) ve M (65°) cisimlerinin atış açıları toplamı 25° + 65° = 90° (tümler açılar) olduğu için yatay menzilleri birbirine eşittir. Dolayısıyla: x_L > x_K = x_M.\n2) Maksimum Yükseklik Karşılaştırması: h_max = v₀y² / (2g) olduğundan düşey ilk hız bileşeni (v₀ · sin α) büyük olan cisim daha yükseğe çıkar. sin 65° > sin 45° > sin 25° olduğu için: h_M > h_L > h_K."
+      "soru": "Hava direncinin önemsiz olduğu ortamda K, L ve M cisimleri eşit büyüklükteki v₀ ilk hızlarıyla sırasıyla yatayla 25°, 45° ve 65° açı yapacak şekilde eğik olarak atılıyor. Cisimlerin yatay menzilleri x{alt:K}, x{alt:L}, x{alt:M} ve maksimum yükseklikleri h{alt:K}, h{alt:L}, h{alt:M} arasındaki büyüklük ilişkilerini karşılaştırınız.",
+      "cevap": "1) Yatay Menzil Karşılaştırması: Aynı ilk hız büyüklüğüyle atılan cisimlerde 45° açıda menzil maksimumdur (x{alt:L} en büyüktür). K (25°) ve M (65°) cisimlerinin atış açıları toplamı 25° + 65° = 90° (tümler açılar) olduğu için yatay menzilleri birbirine eşittir. Dolayısıyla: x{alt:L} > x{alt:K} = x{alt:M}.\n2) Maksimum Yükseklik Karşılaştırması: h{alt:max} = v₀y² / (2g) olduğundan düşey ilk hız bileşeni (v₀ · sin α) büyük olan cisim daha yükseğe çıkar. sin 65° > sin 45° > sin 25° olduğu için: h{alt:M} > h{alt:L} > h{alt:K}."
     },
     {
-      "soru": "Yerden eğik olarak atılan bir cismin maksimum yüksekliği h_max = 45 m ve yatay menzili x_menzil = 180 m olarak ölçülüyor. Buna göre cismin atış açısını (α) ve atıldığı ilk hızın büyüklüğünü (v₀) bulunuz. (g = 10 m/s²)",
-      "cevap": "1) Yükseklik-menzil oranı bağıntısını kullanalım: h_max / x_menzil = (1/4) · tan α ⇒ 45 / 180 = 1/4 = (1/4) · tan α ⇒ tan α = 1 ⇒ α = 45°.\n2) h_max = 45 m olduğundan 45 = 5 · t_çıkış² ⇒ t_çıkış = 3 s ve düşey ilk hız v₀y = g · t_çıkış = 30 m/s olur. α = 45° olduğu için yatay hız da v₀x = 30 m/s'dir. İlk hızın büyüklüğü v₀ = 30{kok:2} m/s bulunur."
+      "soru": "Yerden eğik olarak atılan bir cismin maksimum yüksekliği h{alt:max} = 45 m ve yatay menzili x{alt:menzil} = 180 m olarak ölçülüyor. Buna göre cismin atış açısını (α) ve atıldığı ilk hızın büyüklüğünü (v₀) bulunuz. (g = 10 m/s²)",
+      "cevap": "1) Yükseklik-menzil oranı bağıntısını kullanalım: h{alt:max} / x{alt:menzil} = (1/4) · tan α ⇒ 45 / 180 = 1/4 = (1/4) · tan α ⇒ tan α = 1 ⇒ α = 45°.\n2) h{alt:max} = 45 m olduğundan 45 = 5 · t{alt:çıkış²} ⇒ t{alt:çıkış} = 3 s ve düşey ilk hız v₀y = g · t{alt:çıkış} = 30 m/s olur. α = 45° olduğu için yatay hız da v₀x = 30 m/s'dir. İlk hızın büyüklüğü v₀ = 30{kok:2} m/s bulunur."
     },
     {
       "soru": "Yerden 80 metre yükseklikteki bir kulenin tepesinden yatayla 37° açı yapacak biçimde yukarı doğru v₀ = 50 m/s hızla eğik atılan bir taş, kaç saniye sonra kulenin tabanındaki yatay zemine çarpar ve kuleden yatayda kaç metre uzağa düşer? (g = 10 m/s², sin 37° = 0,6; cos 37° = 0,8)",
-      "cevap": "İlk hız bileşenleri: Yatay hız v₀x = 50 · cos 37° = 50 · 0,8 = 40 m/s ve düşey hız v₀y = 50 · sin 37° = 50 · 0,6 = 30 m/s.\n1) Çıkış Süresi ve Tepe Yüksekliği: Taş t_çıkış = v₀y / g = 30 / 10 = 3 s'de tepe noktasına ulaşır ve kule tepesinden h_çıkış = 5 · 3² = 45 m yükselir. Böylece tepe noktasının yerden toplam yüksekliği H = 80 + 45 = 125 m olur.\n2) İniş ve Toplam Uçuş Süresi: Tepe noktasından zemine 125 m düşeceği için 125 = 5 · t_iniş² ⇒ t_iniş² = 25 ⇒ t_iniş = 5 s sürer. Toplam uçuş süresi t_uçuş = t_çıkış + t_iniş = 3 + 5 = 8 s bulunur.\n3) Yatay Menzil: x = v₀x · t_uçuş = 40 · 8 = 320 metre uzağa düşer."
+      "cevap": "İlk hız bileşenleri: Yatay hız v₀x = 50 · cos 37° = 50 · 0,8 = 40 m/s ve düşey hız v₀y = 50 · sin 37° = 50 · 0,6 = 30 m/s.\n1) Çıkış Süresi ve Tepe Yüksekliği: Taş t{alt:çıkış} = v₀y / g = 30 / 10 = 3 s'de tepe noktasına ulaşır ve kule tepesinden h{alt:çıkış} = 5 · 3² = 45 m yükselir. Böylece tepe noktasının yerden toplam yüksekliği H = 80 + 45 = 125 m olur.\n2) İniş ve Toplam Uçuş Süresi: Tepe noktasından zemine 125 m düşeceği için 125 = 5 · t{alt:iniş²} ⇒ t{alt:iniş²} = 25 ⇒ t{alt:iniş} = 5 s sürer. Toplam uçuş süresi t{alt:uçuş} = t{alt:çıkış} + t{alt:iniş} = 3 + 5 = 8 s bulunur.\n3) Yatay Menzil: x = v₀x · t{alt:uçuş} = 40 · 8 = 320 metre uzağa düşer."
     },
     {
       "soru": "‘Bileşenlerin Bağımsızlığı İlkesi ve İvme-Hız Vektör İlişkisi’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
-      "cevap": "Galileo Galilei'nin ortaya koyduğu {koyu:hareketlerin bağımsızlığı ilkesine} göre, iki boyutta hareket eden bir cismin yatay (x) ve düşey (y) eksenlerdeki hareketleri birbirini etkilemeden eş zamanlı olarak gerçekleşir. Hava direncinin ihmal edildiği ideal ortamda cisme hareket boyunca etki eden tek kuvvet düşey aşağı yönlü {koyu:ağırlık kuvvetidir (G = m · g)}. 1) {koyu:Yatay Eksen (x)}: Yatay doğrultuda cisme hiçbir kuvvet etki etmez (F_x = 0). Newton'ın ikinci yasasına göre yatay ivme sıfırdır ({koyu:a_x = 0}). Bu nedenle cismin yatay hız bileşeni hareketin başından sonuna kadar büyüklük ve yönce sabit kalır: {koyu:v_x(t) = v₀x = v₀ · cos α = sabit}."
+      "cevap": "Galileo Galilei'nin ortaya koyduğu {koyu:hareketlerin bağımsızlığı ilkesine} göre, iki boyutta hareket eden bir cismin yatay (x) ve düşey (y) eksenlerdeki hareketleri birbirini etkilemeden eş zamanlı olarak gerçekleşir. Hava direncinin ihmal edildiği ideal ortamda cisme hareket boyunca etki eden tek kuvvet düşey aşağı yönlü {koyu:ağırlık kuvvetidir (G = m · g)}. 1) {koyu:Yatay Eksen (x)}: Yatay doğrultuda cisme hiçbir kuvvet etki etmez (F{alt:x} = 0). Newton'ın ikinci yasasına göre yatay ivme sıfırdır ({koyu:a{alt:x} = 0}). Bu nedenle cismin yatay hız bileşeni hareketin başından sonuna kadar büyüklük ve yönce sabit kalır: {koyu:v{alt:x}(t) = v₀x = v₀ · cos α = sabit}."
     }
   ],
   "etkinlikler": [
@@ -147,25 +147,25 @@
     },
     {
       "tur": "coktan",
-      "soru": "Sürtünmesiz ortamda yerden eğik olarak atılan bir cismin havada kalma (uçuş) süresi 6 saniye ve yatay menzili 120 metredir. Buna göre cismin çıkabileceği maksimum yükseklik (h_max) ve yatay hız bileşeni (v₀x) aşağıdakilerden hangisinde doğru verilmiştir? (g = 10 m/s²)",
+      "soru": "Sürtünmesiz ortamda yerden eğik olarak atılan bir cismin havada kalma (uçuş) süresi 6 saniye ve yatay menzili 120 metredir. Buna göre cismin çıkabileceği maksimum yükseklik (h{alt:max}) ve yatay hız bileşeni (v₀x) aşağıdakilerden hangisinde doğru verilmiştir? (g = 10 m/s²)",
       "secenekler": [
-        "h_max = 45 m, v₀x = 40 m/s",
-        "h_max = 45 m, v₀x = 20 m/s",
-        "h_max = 90 m, v₀x = 20 m/s",
-        "h_max = 80 m, v₀x = 30 m/s",
-        "h_max = 180 m, v₀x = 20 m/s"
+        "h{alt:max} = 45 m, v₀x = 40 m/s",
+        "h{alt:max} = 45 m, v₀x = 20 m/s",
+        "h{alt:max} = 90 m, v₀x = 20 m/s",
+        "h{alt:max} = 80 m, v₀x = 30 m/s",
+        "h{alt:max} = 180 m, v₀x = 20 m/s"
       ],
       "dogru": 1,
-      "aciklama": "Uçuş süresi 6 s ise çıkış süresi t_çıkış = 3 s'dir. Maksimum yükseklik h_max = 1/2 · g · t_çıkış² = 5 · 3² = 45 m olur. Yatay menzil x = v₀x · t_uçuş ⇒ 120 = v₀x · 6 ⇒ v₀x = 20 m/s bulunur."
+      "aciklama": "Uçuş süresi 6 s ise çıkış süresi t{alt:çıkış} = 3 s'dir. Maksimum yükseklik h{alt:max} = 1/2 · g · t{alt:çıkış²} = 5 · 3² = 45 m olur. Yatay menzil x = v₀x · t{alt:uçuş} ⇒ 120 = v₀x · 6 ⇒ v₀x = 20 m/s bulunur."
     },
     {
       "tur": "coktan",
       "soru": "‘İki Boyutta Atış Hareketlerinin Grafiksel ve Enerjisel Yorumu’ kavramı veya konusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
-        "Eğik atılan bir cismin ilk hızı veya açısı verilmese bile münhasıran havada kalma (uçuş) süresi t_uçuş biliniyorsa maksimum.",
+        "Eğik atılan bir cismin ilk hızı veya açısı verilmese bile münhasıran havada kalma (uçuş) süresi t{alt:uçuş} biliniyorsa maksimum.",
         "Galileo Galilei'nin ortaya koyduğu hareketlerin bağımsızlığı ilkesine göre, iki boyutta hareket eden bir cismin yatay (x) ve.",
         "Yatay ve eğik atış hareketlerinde grafikler çizilirken yatay (x) ve düşey (y) eksenler ayrı ayrı ele alınır: Yatay hız-zaman.",
-        "h_max / x_menzil = (1/4) · tan α formülüyle: • α = 45° (tan 45° = 1) için h_max / x_menzil = 1/4, • α = 37° (tan 37° = 3/4).",
+        "h{alt:max} / x{alt:menzil} = (1/4) · tan α formülüyle: • α = 45° (tan 45° = 1) için h{alt:max} / x{alt:menzil} = 1/4, • α = 37° (tan 37° = 3/4).",
         "Bu tür sorularda mermi ile hedefin arasındaki yatay mesafe x ise karşılaşma süresi doğrudan t = x / v₀x ile; nişan alınan."
       ],
       "dogru": 2,
@@ -175,14 +175,14 @@
       "tur": "coktan",
       "soru": "‘Yüksekliği Salt Uçuş Süresinden Bulma Pratiği!’ kavramı veya konusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "secenekler": [
-        "h_max / x_menzil = (1/4) · tan α formülüyle: • α = 45° (tan 45° = 1) için h_max / x_menzil = 1/4, • α = 37° (tan 37° = 3/4).",
+        "h{alt:max} / x{alt:menzil} = (1/4) · tan α formülüyle: • α = 45° (tan 45° = 1) için h{alt:max} / x{alt:menzil} = 1/4, • α = 37° (tan 37° = 3/4).",
         "Galileo Galilei'nin ortaya koyduğu hareketlerin bağımsızlığı ilkesine göre, iki boyutta hareket eden bir cismin yatay (x) ve.",
         "Yatay ve eğik atış hareketlerinde grafikler çizilirken yatay (x) ve düşey (y) eksenler ayrı ayrı ele alınır: Yatay hız-zaman.",
-        "Eğik atılan bir cismin ilk hızı veya açısı verilmese bile münhasıran havada kalma (uçuş) süresi t_uçuş biliniyorsa maksimum.",
+        "Eğik atılan bir cismin ilk hızı veya açısı verilmese bile münhasıran havada kalma (uçuş) süresi t{alt:uçuş} biliniyorsa maksimum.",
         "Bu tür sorularda mermi ile hedefin arasındaki yatay mesafe x ise karşılaşma süresi doğrudan t = x / v₀x ile; nişan alınan."
       ],
       "dogru": 3,
-      "aciklama": "‘Yüksekliği Salt Uçuş Süresinden Bulma Pratiği!’ kapsamında doğru açıklama: Eğik atılan bir cismin ilk hızı veya açısı verilmese bile münhasıran havada kalma (uçuş) süresi t_uçuş biliniyorsa maksimum."
+      "aciklama": "‘Yüksekliği Salt Uçuş Süresinden Bulma Pratiği!’ kapsamında doğru açıklama: Eğik atılan bir cismin ilk hızı veya açısı verilmese bile münhasıran havada kalma (uçuş) süresi t{alt:uçuş} biliniyorsa maksimum."
     },
     {
       "tur": "dy",
@@ -191,7 +191,7 @@
         {
           "metin": "Eğik atılan bir cismin yörüngesinin en tepe noktasında hem hızı hem de ivmesi sıfır olur.",
           "dogru": false,
-          "aciklama": "Yanlıştır; tepe noktasında yalnızca düşey hız (v_y) sıfır olur, cismin yatay hızı (v₀x) ve yer çekimi ivmesi (g) sıfır değildir."
+          "aciklama": "Yanlıştır; tepe noktasında yalnızca düşey hız (v{alt:y}) sıfır olur, cismin yatay hızı (v₀x) ve yer çekimi ivmesi (g) sıfır değildir."
         },
         {
           "metin": "Belirli bir yükseklikten yatay atılan bir cismin ilk hızı iki katına çıkarılırsa havada kalma süresi değişmez, yatay menzili iki katına çıkar.",
@@ -204,9 +204,9 @@
           "aciklama": "Doğrudur; 20° + 70° = 90° (tümler açılar) olduğu için yatay menzilleri birbirine eşittir."
         },
         {
-          "metin": "Yataylla 45° açı yapacak şekilde eğik atılan bir cismin yatay menzili, maksimum yüksekliğinin dört katına (x_menzil = 4 · h_max) eşittir.",
+          "metin": "Yataylla 45° açı yapacak şekilde eğik atılan bir cismin yatay menzili, maksimum yüksekliğinin dört katına (x{alt:menzil} = 4 · h{alt:max}) eşittir.",
           "dogru": true,
-          "aciklama": "Doğrudur; h_max / x_menzil = (1/4) · tan 45° = 1/4 olduğundan x_menzil = 4 · h_max olur."
+          "aciklama": "Doğrudur; h{alt:max} / x{alt:menzil} = (1/4) · tan 45° = 1/4 olduğundan x{alt:menzil} = 4 · h{alt:max} olur."
         },
         {
           "metin": "Eğik atış hareketinde cisim yükselirken hız vektörü ile ivme vektörü arasındaki açı dar açıdır (90°'den küçüktür).",
@@ -225,19 +225,19 @@
       "soru": "İki boyutta sabit ivmeli harekete ait aşağıdaki fiziksel büyüklükleri karşılık gelen matematiksel bağıntılarla eşleştiriniz.",
       "ciftler": [
         [
-          "Eğik atışta uçuş süresi (t_uçuş)",
+          "Eğik atışta uçuş süresi (t{alt:uçuş})",
           "(2 · v₀ · sin α) / g"
         ],
         [
-          "Eğik atışta maksimum yükseklik (h_max)",
+          "Eğik atışta maksimum yükseklik (h{alt:max})",
           "(v₀ · sin α)² / (2 · g)"
         ],
         [
-          "Eğik atışta yatay menzil (x_menzil)",
+          "Eğik atışta yatay menzil (x{alt:menzil})",
           "(v₀² · sin 2α) / g"
         ],
         [
-          "Maksimum yükseklik / menzil oranı (h_max / x_menzil)",
+          "Maksimum yükseklik / menzil oranı (h{alt:max} / x{alt:menzil})",
           "(1 / 4) · tan α"
         ]
       ]

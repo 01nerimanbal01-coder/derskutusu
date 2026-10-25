@@ -18,8 +18,8 @@
     "Belirli bir nokta veya eksen etrafında dönen cismin konum vektörü ({koyu:r}) ile çizgisel momentum vektörünün ({koyu:P = m . v}) vektörel çarpımına {koyu:açısal momentum (L)} denir; büyüklüğü {koyu:L = m . v . r = I . w} olup SI birimi {koyu:kg . m²/s}'dir.",
     "Açısal momentum ({koyu:L}), açısal hız ({koyu:w}) ve tork ({koyu:τ}) vektörel niceliklerdir; yönleri {koyu:sağ el kuralı} ile bulunur (dört parmak dönme yönünü, başparmak vektör yönünü gösterir).",
     "Birim zamandaki açısal hız değişimine {koyu:açısal ivme (α = Δw / Δt)} denir; SI birimi {koyu:rad/s²} olup çizgisel ivme ile arasında {koyu:a = α . r} ilişkisi vardır.",
-    "Dönen bir cisme etki eden net tork, eylemsizlik momenti ile açısal ivmenin çarpımına ve birim zamandaki açısal momentum değişimine eşittir: {koyu:τ_net = I . α = ΔL / Δt}.",
-    "Sisteme dışarıdan etki eden net tork sıfır ise ({koyu:τ_dış = 0}) açısal momentum korunur: {koyu:L_ilk = L_son} yani {koyu:I₁ . w₁ = I₂ . w₂}. Eylemsizlik momenti ({koyu:I}) azaldığında açısal hız ({koyu:w}) aynı oranda artar."
+    "Dönen bir cisme etki eden net tork, eylemsizlik momenti ile açısal ivmenin çarpımına ve birim zamandaki açısal momentum değişimine eşittir: {koyu:τ{alt:net} = I . α = ΔL / Δt}.",
+    "Sisteme dışarıdan etki eden net tork sıfır ise ({koyu:τ{alt:dış} = 0}) açısal momentum korunur: {koyu:L{alt:ilk} = L{alt:son}} yani {koyu:I₁ . w₁ = I₂ . w₂}. Eylemsizlik momenti ({koyu:I}) azaldığında açısal hız ({koyu:w}) aynı oranda artar."
   ],
   "bolumler": [
     {
@@ -39,24 +39,24 @@
       "baslik": "2. Açısal İvme, Tork ve Eylemsizlik Momenti İlişkisi",
       "metin": [
         "Çizgisel harekette birim zamandaki hız değişimine çizgisel ivme ({koyu:a = Δv / Δt}) denildiği gibi, dönme hareketinde de birim zamandaki açısal hız değişimine {koyu:açısal ivme (α)} denir ve {koyu:α = Δw / Δt} ile hesaplanır. Açısal ivmenin SI birimi {koyu:radyan/saniye² (rad/s²)} olup teğetsel çizgisel ivme büyüklüğü ile arasında {koyu:a = α . r} bağıntısı vardır.",
-        "Newton'un İkinci Hareket Yasası ({koyu:F_net = m . a}) dönme hareketine uyarlandığında net kuvvetin yerini {koyu:net tork (τ_net)}, kütlenin yerini {koyu:eylemsizlik momenti (I)} ve çizgisel ivmenin yerini {koyu:açısal ivme (α)} alır. Tork bağıntısında {koyu:τ = F . r = m . a . r} yazılıp {koyu:a = α . r} yerine konulduğunda {koyu:τ = m . r² . α}, buradan da temel dönme dinamiği denklemi olan {koyu:τ_net = I . α} elde edilir."
+        "Newton'un İkinci Hareket Yasası ({koyu:F{alt:net} = m . a}) dönme hareketine uyarlandığında net kuvvetin yerini {koyu:net tork (τ{alt:net})}, kütlenin yerini {koyu:eylemsizlik momenti (I)} ve çizgisel ivmenin yerini {koyu:açısal ivme (α)} alır. Tork bağıntısında {koyu:τ = F . r = m . a . r} yazılıp {koyu:a = α . r} yerine konulduğunda {koyu:τ = m . r² . α}, buradan da temel dönme dinamiği denklemi olan {koyu:τ{alt:net} = I . α} elde edilir."
       ],
       "kutu": {
         "tur": "kural",
         "baslik": "Net Tork ve Açısal Momentum Değişimi",
-        "metin": "Tork denkleminde {koyu:α = Δw / Δt} yerine yazılırsa {koyu:τ_net = I . (Δw / Δt) = Δ(I . w) / Δt = ΔL / Δt} bulunur. Yani bir sisteme etki eden {koyu:net dış tork, birim zamandaki açısal momentum değişimine eşittir}."
+        "metin": "Tork denkleminde {koyu:α = Δw / Δt} yerine yazılırsa {koyu:τ{alt:net} = I . (Δw / Δt) = Δ(I . w) / Δt = ΔL / Δt} bulunur. Yani bir sisteme etki eden {koyu:net dış tork, birim zamandaki açısal momentum değişimine eşittir}."
       },
       "gorsel": "<svg viewBox=\"0 0 680 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block;font-family:'Segoe UI',sans-serif;\"><rect width=\"680\" height=\"250\" rx=\"12\" fill=\"#F8FAFC\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/><text x=\"340\" y=\"26\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#0F172A\" text-anchor=\"middle\">AÇISAL İVME, NET TORK VE EYLEMSİZLİK MOMENTİ</text><rect x=\"20\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#FEF3C7\" stroke=\"#D97706\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#D97706\"/><rect x=\"20\" y=\"62\" width=\"310\" height=\"12\" fill=\"#D97706\"/><text x=\"175.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">AÇISAL İVME (alfa = Delta_w / Delta_t)</text><text x=\"32\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Birim zamandaki açısal hız değişimidir.</text><text x=\"32\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">• Sembolü: alfa, SI birimi: rad / s^2</text><text x=\"32\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Çizgisel ivme ile ilişkisi: a = alfa . r</text><text x=\"32\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Dönme hızı artarken alfa ile w aynı yönlü,</text><text x=\"32\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">  dönme hızı azalırken alfa ile w zıt yönlüdür.</text><text x=\"32\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">• Sabit açısal hızda açısal ivme sıfırdır.</text><rect x=\"350\" y=\"44\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#FEF2F2\" stroke=\"#DC2626\" stroke-width=\"1.8\"/><rect x=\"350\" y=\"44\" width=\"310\" height=\"30\" rx=\"10\" fill=\"#DC2626\"/><rect x=\"350\" y=\"62\" width=\"310\" height=\"12\" fill=\"#DC2626\"/><text x=\"505.0\" y=\"64\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#FFFFFF\" text-anchor=\"middle\">DÖNME HAREKETİNDE NEWTON'UN 2. YASASI</text><text x=\"362\" y=\"92\" font-size=\"10.5\" fill=\"#1E293B\">• Ötelemede F_net = m . a bağıntısının dönme</text><text x=\"362\" y=\"110\" font-size=\"10.5\" fill=\"#1E293B\">  hareketindeki karşılığı: Tork_net = I . alfa</text><text x=\"362\" y=\"128\" font-size=\"10.5\" fill=\"#1E293B\">• Tork = F . r = m . a . r = m . (alfa . r) . r</text><text x=\"362\" y=\"146\" font-size=\"10.5\" fill=\"#1E293B\">• Tork = (m . r^2) . alfa  =&gt;  Tork_net = I . alfa</text><text x=\"362\" y=\"164\" font-size=\"10.5\" fill=\"#1E293B\">• Net tork, birim zamandaki açısal momentum</text><text x=\"362\" y=\"182\" font-size=\"10.5\" fill=\"#1E293B\">  değişimine eşittir: Tork_net = Delta_L / Delta_t</text></svg>"
     },
     {
       "baslik": "3. Açısal Momentumun Korunumu İlkesi",
       "metin": [
-        "Dönen bir cisme veya sisteme dışarıdan etki eden net tork sıfır olduğunda ({koyu:τ_dış = 0}), birim zamandaki açısal momentum değişimi de sıfır olur ({koyu:ΔL = 0}). Bu durumda sistemin ilk açısal momentumu son açısal momentumuna eşit kalır; buna {koyu:açısal momentumun korunumu ilkesi} denir ve matematiksel olarak {koyu:L_ilk = L_son} veya {koyu:I₁ . w₁ = I₂ . w₂} biçiminde yazılır.",
+        "Dönen bir cisme veya sisteme dışarıdan etki eden net tork sıfır olduğunda ({koyu:τ{alt:dış} = 0}), birim zamandaki açısal momentum değişimi de sıfır olur ({koyu:ΔL = 0}). Bu durumda sistemin ilk açısal momentumu son açısal momentumuna eşit kalır; buna {koyu:açısal momentumun korunumu ilkesi} denir ve matematiksel olarak {koyu:L{alt:ilk} = L{alt:son}} veya {koyu:I₁ . w₁ = I₂ . w₂} biçiminde yazılır.",
         "Dış torkun sıfır olduğu bir sistemde kütle dağılımı değişerek eylemsizlik momenti ({koyu:I}) azalırsa, çarpımın sabit kalması için açısal hız ({koyu:w}) artar ve birim zamanda atılan tur sayısı (frekans) büyür. Tersine kütleler dönme ekseninden uzaklaşıp eylemsizlik momenti ({koyu:I}) artarsa açısal hız ({koyu:w}) azalır."
       ],
       "tablo": {
         "basliklar": [
-          "Durum (τ_dış = 0 iken)",
+          "Durum (τ{alt:dış} = 0 iken)",
           "Eylemsizlik Momenti (I)",
           "Açısal Hız (w)",
           "Açısal Momentum (L)"
@@ -116,23 +116,23 @@
     },
     {
       "soru": "Birbirine zincirle bağlı K ve L dişlilerinin yarıçapları sırasıyla r ve 4r, kütleleri ise m ve 3m'dir. L dişlisi saat yönünde sabit w açısal hızıyla döndürüldüğünde K ve L dişlilerinin açısal momentumlarının yönlerini ve büyüklük ilişkisini belirleyiniz.",
-      "cevap": "Zincirle bağlı dişliler {koyu:aynı yönde} (saat yönünde) döner; sağ el kuralına göre dört parmak saat yönünde kıvrıldığında başparmak {koyu:sayfa düzleminden içeriye (-z)} doğruyu gösterir, yani yönleri aynıdır. Zincirin değdiği noktaların çizgisel hızları ({koyu:v}) eşit büyüklükte olduğundan {koyu:L = m . v . r} bağıntısına göre {koyu:L_K = m . v . r} ve {koyu:L_L = 3m . v . 4r = 12 m . v . r} olur; dolayısıyla {koyu:L_L > L_K} bulunur."
+      "cevap": "Zincirle bağlı dişliler {koyu:aynı yönde} (saat yönünde) döner; sağ el kuralına göre dört parmak saat yönünde kıvrıldığında başparmak {koyu:sayfa düzleminden içeriye (-z)} doğruyu gösterir, yani yönleri aynıdır. Zincirin değdiği noktaların çizgisel hızları ({koyu:v}) eşit büyüklükte olduğundan {koyu:L = m . v . r} bağıntısına göre {koyu:L{alt:K} = m . v . r} ve {koyu:L{alt:L} = 3m . v . 4r = 12 m . v . r} olur; dolayısıyla {koyu:L{alt:L} > L{alt:K}} bulunur."
     },
     {
-      "soru": "Eylemsizlik momenti I = 5 kg.m² olan bir çark başlangıçta durgun haldeyken sabit bir net tork etkisiyle 4 saniyede açısal hızını 20 rad/s değerine çıkarıyor. Çarkın açısal ivmesi (α) ve çarka uygulanan net tork (τ_net) kaçtır?",
-      "cevap": "Birim zamandaki açısal hız değişiminden açısal ivme {koyu:α = Δw / Δt = (20 - 0) / 4 = 5 rad/s²} bulunur. Dönme dinamiği bağıntısından net tork {koyu:τ_net = I . α = 5 . 5 = 25 N.m} olarak hesaplanır."
+      "soru": "Eylemsizlik momenti I = 5 kg.m² olan bir çark başlangıçta durgun haldeyken sabit bir net tork etkisiyle 4 saniyede açısal hızını 20 rad/s değerine çıkarıyor. Çarkın açısal ivmesi (α) ve çarka uygulanan net tork (τ{alt:net}) kaçtır?",
+      "cevap": "Birim zamandaki açısal hız değişiminden açısal ivme {koyu:α = Δw / Δt = (20 - 0) / 4 = 5 rad/s²} bulunur. Dönme dinamiği bağıntısından net tork {koyu:τ{alt:net} = I . α = 5 . 5 = 25 N.m} olarak hesaplanır."
     },
     {
       "soru": "Düşey eksen etrafında sürtünmesizce dönen bir tabure üzerindeki öğrenci, kollarını açtığında toplam eylemsizlik momenti 6 kg.m² ve açısal hızı 2 rad/s olmaktadır. Öğrenci kollarını kendine doğru çektiğinde eylemsizlik momenti 2 kg.m² değerine düştüğüne göre son açısal hızı kaç rad/s olur?",
-      "cevap": "Dışarıdan etki eden net tork sıfır ({koyu:τ_dış = 0}) olduğu için açısal momentum korunur: {koyu:I₁ . w₁ = I₂ . w₂}. Verilen değerler yerine yazılırsa {koyu:6 . 2 = 2 . w₂} eşitliğinden öğrencinin son açısal hızı {koyu:w₂ = 6 rad/s} bulunur."
+      "cevap": "Dışarıdan etki eden net tork sıfır ({koyu:τ{alt:dış} = 0}) olduğu için açısal momentum korunur: {koyu:I₁ . w₁ = I₂ . w₂}. Verilen değerler yerine yazılırsa {koyu:6 . 2 = 2 . w₂} eşitliğinden öğrencinin son açısal hızı {koyu:w₂ = 6 rad/s} bulunur."
     },
     {
       "soru": "Bir önceki soruda kolları açıkken 6 kg.m² eylemsizlik momenti ve 2 rad/s açısal hızla dönen öğrencinin kollarını kapattıktan sonra (I₂ = 2 kg.m², w₂ = 6 rad/s) dönme kinetik enerjisinin nasıl değiştiğini hesaplayınız.",
-      "cevap": "İlk durumda dönme kinetik enerjisi {koyu:E_k1 = (1/2) . I₁ . w₁² = (1/2) . 6 . (2)² = 12 J} iken, kollarını kapattığında {koyu:E_k2 = (1/2) . I₂ . w₂² = (1/2) . 2 . (6)² = 36 J} olur. Açısal momentum ({koyu:L = 12 kg.m²/s}) korunduğu halde öğrenci kollarını içeri çekerken kas kuvvetiyle iş yaptığı için dönme kinetik enerjisi {koyu:12 J'den 36 J'e artmıştır}."
+      "cevap": "İlk durumda dönme kinetik enerjisi {koyu:E{alt:k1} = (1/2) . I₁ . w₁² = (1/2) . 6 . (2)² = 12 J} iken, kollarını kapattığında {koyu:E{alt:k2} = (1/2) . I₂ . w₂² = (1/2) . 2 . (6)² = 36 J} olur. Açısal momentum ({koyu:L = 12 kg.m²/s}) korunduğu halde öğrenci kollarını içeri çekerken kas kuvvetiyle iş yaptığı için dönme kinetik enerjisi {koyu:12 J'den 36 J'e artmıştır}."
     },
     {
       "soru": "Bir dönme dolaba uygulanan 40 N.m büyüklüğündeki sabit net tork, 5 saniye boyunca etki etmektedir. Bu sürede dönme dolabın açısal momentumundaki değişim (ΔL) kaç kg.m²/s olur?",
-      "cevap": "Net tork ile açısal momentum değişimi arasındaki {koyu:τ_net = ΔL / Δt} bağıntısından {koyu:ΔL = τ_net . Δt = 40 . 5 = 200 kg.m²/s} olarak bulunur."
+      "cevap": "Net tork ile açısal momentum değişimi arasındaki {koyu:τ{alt:net} = ΔL / Δt} bağıntısından {koyu:ΔL = τ{alt:net} . Δt = 40 . 5 = 200 kg.m²/s} olarak bulunur."
     }
   ],
   "etkinlikler": [
@@ -151,7 +151,7 @@
     },
     {
       "tur": "coktan",
-      "soru": "Sabit bir eksen etrafında dönen katı bir cisme dışarıdan etki eden net tork sıfır (τ_net = 0) ise bu cisim için aşağıdakilerden hangisi doğrudur?",
+      "soru": "Sabit bir eksen etrafında dönen katı bir cisme dışarıdan etki eden net tork sıfır (τ{alt:net} = 0) ise bu cisim için aşağıdakilerden hangisi doğrudur?",
       "secenekler": [
         "Açısal ivmesi sabit ve sıfırdan farklıdır.",
         "Açısal momentum vektörü korunur.",
@@ -160,7 +160,7 @@
         "Merkezcil ivmesi sıfırdır."
       ],
       "dogru": 1,
-      "aciklama": "τ_net = ΔL / Δt = I . α bağıntısına göre net tork sıfır olduğunda açısal ivme sıfırdır (α = 0) ve açısal momentum vektörü (L) hem yön hem büyüklük olarak korunur."
+      "aciklama": "τ{alt:net} = ΔL / Δt = I . α bağıntısına göre net tork sıfır olduğunda açısal ivme sıfırdır (α = 0) ve açısal momentum vektörü (L) hem yön hem büyüklük olarak korunur."
     },
     {
       "tur": "coktan",
@@ -173,7 +173,7 @@
         "8"
       ],
       "dogru": 2,
-      "aciklama": "τ_net = I . α bağıntısından 12 = 4 . α yazılırsa açısal ivme α = 3 rad/s² bulunur."
+      "aciklama": "τ{alt:net} = I . α bağıntısından 12 = 4 . α yazılırsa açısal ivme α = 3 rad/s² bulunur."
     },
     {
       "tur": "coktan",
@@ -205,7 +205,7 @@
         {
           "metin": "Bir sisteme etki eden net dış tork, birim zamandaki açısal momentum değişimine eşittir.",
           "dogru": true,
-          "aciklama": "τ_net = ΔL / Δt bağıntısı gereği birim zamandaki açısal momentum değişimi net torku verir."
+          "aciklama": "τ{alt:net} = ΔL / Δt bağıntısı gereği birim zamandaki açısal momentum değişimi net torku verir."
         },
         {
           "metin": "Tramplenden atlayan bir yüzücü havada vücudunu büzerek topladığında eylemsizlik momenti büyür ve dönüş hızı yavaşlar.",
@@ -224,11 +224,11 @@
         ],
         [
           "Net Tork ve Açısal İvme İlişkisi",
-          "τ_net = I . α"
+          "τ{alt:net} = I . α"
         ],
         [
           "Net Tork ve Açısal Momentum İlişkisi",
-          "τ_net = ΔL / Δt"
+          "τ{alt:net} = ΔL / Δt"
         ],
         [
           "Açısal Momentumun SI Birimi",

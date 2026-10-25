@@ -1,0 +1,671 @@
+{
+  "ad": "11-matematik-15",
+  "sinif": 11,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "Geometrik Şekiller / Nicelikler ve Değişimler (1)",
+  "konu": "Düzgün Çokgen Problemleri ve Trigonometrik Fonksiyonlara Giriş: Sinüs ve Kosinüs Fonksiyonlarının Nitel Özellikleri",
+  "ciktilar": [
+    "MAT.11.2.5. Çokgenlerin kenar, açı, köşegen, simetri ve alan özelliklerini içeren problemler çözebilme: Düzgün çokgenlerde açı-köşegen örüntülerini, düzgün altıgen ve sekizgenin alanını, düzlem kaplama ve yıldız şekli problemlerini çözer.",
+    "MAT.11.2.5.f-h) Çokgen problemlerinde çözümünü kontrol eder, farklı çözüm stratejilerini karşılaştırır ve çözüme ulaştıran stratejilerin hangi problemlere uyarlanabileceğine ilişkin çıkarım yapar.",
+    "MAT.11.3.1.a) f(x) = sin x ve f(x) = cos x (x ∈ ℝ) referans fonksiyonlarının tanım kümesi, görüntü kümesi, işareti, artanlığı-azalanlığı, maksimum-minimum noktaları, sıfırları, bire birliği, tekliği-çiftliği, örtenliği ve periyodunu matematiksel temsilleri kullanarak belirler.",
+    "MAT.11.3.1.b) Sinüs ve kosinüs fonksiyonlarının nitel özellikleri ile birim çember ve grafik temsilleri arasındaki ilişkileri belirler."
+  ],
+  "giris": "Yeni yılı karşıladığımız 15. haftada iki önemli adım atıyoruz. Önce {koyu:Çokgenlerle İlgili Problemler} başlığını düzgün çokgenlerle tamamlıyoruz: açı ve köşegen örüntüleri, düzgün altıgen ile sekizgenin alanı, düzlem kaplama ve yıldız şekilleri bu haftanın geometri durakları. Ardından {koyu:Nicelikler ve Değişimler} ünitesine geçerek birim çemberden yola çıkıp {koyu:f(x) = sin x} ve {koyu:f(x) = cos x} referans fonksiyonlarını tanıyor, bu fonksiyonların grafiklerinden tanım kümesi, görüntü kümesi, periyot, teklik-çiftlik gibi nitel özelliklerini okumayı öğreniyoruz.",
+  "ozet": [
+    "{koyu:Düzgün çokgen:} n kenarlı düzgün çokgende bir dış açı {kesir:360°|n}, bir iç açı 180° − {kesir:360°|n}, köşegen sayısı {kesir:n·(n − 3)|2} ve simetri ekseni sayısı n'dir.",
+    "{koyu:Alan:} Düzgün altıgen 6 eşkenar üçgene ayrılır ve alanı {kesir:3·{us:a|2}·{kok:3}|2}; düzgün sekizgenin alanı 2·{us:a|2}·(1 + {kok:2}) olur.",
+    "{koyu:Düzlem kaplama:} Tek tür düzgün çokgenle düzlem yalnız eşkenar üçgen, kare ve düzgün altıgenle boşluksuz kaplanır; çünkü yalnız bunların iç açıları 360°'yi tam böler.",
+    "{koyu:Birim çember:} x radyanlık yayın bitim noktası P(cos x, sin x) olduğundan sinüs ve kosinüs her reel sayı için tanımlı, görüntüleri [−1, 1] aralığında olan fonksiyonlardır.",
+    "{koyu:Sinüs:} f(x) = sin x tek fonksiyondur, periyodu 2π'dir, sıfırları x = kπ'dir, x = {kesir:π|2} + 2kπ'de maksimum 1 değerini alır.",
+    "{koyu:Kosinüs:} f(x) = cos x çift fonksiyondur, periyodu 2π'dir, sıfırları x = {kesir:π|2} + kπ'dir, x = 2kπ'de maksimum, x = π + 2kπ'de minimum değer alır."
+  ],
+  "bolumler": [
+    {
+      "baslik": "1. Düzgün Çokgenlerde Açı, Köşegen ve Simetri Problemleri",
+      "metin": [
+        "n kenarlı dışbükey bir çokgende bir köşeden {koyu:n − 3} köşegen çizilebilir ve bu köşegenler çokgeni {koyu:n − 2} üçgene ayırır. Bu nedenle iç açılar toplamı {koyu:(n − 2)·180°} olur; dış açılar toplamı ise kenar sayısından bağımsız olarak daima {koyu:360°}'dir. Her köşeden n − 3 köşegen çıkar, ancak her köşegen iki köşeden sayıldığı için toplam köşegen sayısı {kesir:n·(n − 3)|2} formülüyle bulunur. Tüm kenarları ve tüm iç açıları eş olan çokgene {koyu:düzgün çokgen} denir; düzgün çokgende bir dış açı {kesir:360°|n}, bir iç açı ise 180° − {kesir:360°|n} olur.",
+        "Düzgün çokgen problemlerinde ilk iş, problemin {koyu:parçalarını} belirlemektir: Verilen nicelik iç açı mı, dış açı mı, köşegen sayısı mı, yoksa iç açılar toplamı mı? Ardından bu nicelikle kenar sayısı n arasındaki ilişki kurulur. En kullanışlı strateji {koyu:dış açıdan başlamaktır}; çünkü dış açıların toplamı her zaman 360° olduğundan n doğrudan bulunur. Örneğin bir iç açısı 150° olan düzgün çokgenin bir dış açısı 180° − 150° = 30°, kenar sayısı n = {kesir:360°|30°} = 12 olur. Aynı soru (n − 2)·180° = 150°·n denklemiyle de çözülebilir; iki stratejiyi karşılaştırmak çözümü kontrol etmenin güzel bir yoludur.",
+        "Düzgün n-genin {koyu:n tane simetri ekseni} vardır ve şekil merkezi etrafında {kesir:360°|n} ve bunun katları kadar döndürüldüğünde kendisiyle çakışır ({koyu:dönme simetrisi}). n tek ise her simetri ekseni bir köşeden geçip karşı kenarın orta noktasına ulaşır; n çift ise eksenlerin yarısı karşılıklı iki köşeden, diğer yarısı karşılıklı iki kenarın orta noktasından geçer. Ayrıca yalnızca kenar sayısı çift olan düzgün çokgenler {koyu:merkezil simetriye} sahiptir; eşkenar üçgen ve düzgün beşgenin merkezil simetrisi yoktur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Düzgün Çokgen",
+          "n",
+          "Bir İç Açı",
+          "Bir Dış Açı",
+          "Köşegen Sayısı",
+          "Simetri Ekseni"
+        ],
+        "satirlar": [
+          [
+            "Eşkenar üçgen",
+            "3",
+            "60°",
+            "120°",
+            "0",
+            "3"
+          ],
+          [
+            "Kare",
+            "4",
+            "90°",
+            "90°",
+            "2",
+            "4"
+          ],
+          [
+            "Düzgün beşgen",
+            "5",
+            "108°",
+            "72°",
+            "5",
+            "5"
+          ],
+          [
+            "Düzgün altıgen",
+            "6",
+            "120°",
+            "60°",
+            "9",
+            "6"
+          ],
+          [
+            "Düzgün sekizgen",
+            "8",
+            "135°",
+            "45°",
+            "20",
+            "8"
+          ],
+          [
+            "Düzgün onikigen",
+            "12",
+            "150°",
+            "30°",
+            "54",
+            "12"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Dış Açı Stratejisi",
+          "metin": "Düzgün çokgen sorusunda hangi açı verilirse verilsin önce bir dış açıyı bul: dış açı = 180° − iç açı. Sonra n = {kesir:360°|dış açı} ile kenar sayısına ulaş. n bir tam sayı ve n ≥ 3 değilse böyle bir düzgün çokgen yoktur."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Bir Köşeden Çıkan Köşegen ile Toplam Köşegen Karışmasın",
+          "metin": "Bir köşeden n − 3 köşegen çizilir; toplam köşegen sayısı ise {kesir:n·(n − 3)|2} dir. Örneğin sekizgende bir köşeden 5 köşegen çıkar ama toplam köşegen sayısı {kesir:8·5|2} = 20'dir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"27\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Düzgün Çokgenlerde Açı, Köşegen ve Simetri Örüntüsü</text><rect x=\"20\" y=\"40\" width=\"170\" height=\"250\" rx=\"10\" fill=\"#ffffff\" stroke=\"#0284c7\" stroke-width=\"2\"/><rect x=\"200\" y=\"40\" width=\"170\" height=\"250\" rx=\"10\" fill=\"#ffffff\" stroke=\"#16a34a\" stroke-width=\"2\"/><rect x=\"380\" y=\"40\" width=\"170\" height=\"250\" rx=\"10\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"560\" y=\"40\" width=\"170\" height=\"250\" rx=\"10\" fill=\"#ffffff\" stroke=\"#9333ea\" stroke-width=\"2\"/><polygon points=\"105,65 152.6,147.5 57.4,147.5\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"2\"/><line x1=\"105\" y1=\"65\" x2=\"105\" y2=\"147.5\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><rect x=\"246\" y=\"81\" width=\"78\" height=\"78\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"2\"/><line x1=\"246\" y1=\"81\" x2=\"324\" y2=\"159\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"324\" y1=\"81\" x2=\"246\" y2=\"159\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><polygon points=\"465,65 517.3,103 497.3,164.5 432.7,164.5 412.7,103\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"2\"/><line x1=\"465\" y1=\"65\" x2=\"432.7\" y2=\"164.5\" stroke=\"#dc2626\" stroke-width=\"1.3\"/><line x1=\"465\" y1=\"65\" x2=\"497.3\" y2=\"164.5\" stroke=\"#dc2626\" stroke-width=\"1.3\"/><line x1=\"465\" y1=\"65\" x2=\"465\" y2=\"164.5\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><polygon points=\"700,120 672.5,167.6 617.5,167.6 590,120 617.5,72.4 672.5,72.4\" fill=\"#f3e8ff\" stroke=\"#7e22ce\" stroke-width=\"2\"/><line x1=\"590\" y1=\"120\" x2=\"700\" y2=\"120\" stroke=\"#dc2626\" stroke-width=\"1.3\"/><line x1=\"617.5\" y1=\"72.4\" x2=\"672.5\" y2=\"167.6\" stroke=\"#dc2626\" stroke-width=\"1.3\"/><line x1=\"672.5\" y1=\"72.4\" x2=\"617.5\" y2=\"167.6\" stroke=\"#dc2626\" stroke-width=\"1.3\"/><text x=\"105\" y=\"192\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#075985\">Eşkenar Üçgen (n = 3)</text><text x=\"105\" y=\"213\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">İç açı: 60°</text><text x=\"105\" y=\"232\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Dış açı: 120°</text><text x=\"105\" y=\"251\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Köşegen: 0</text><text x=\"105\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Simetri ekseni: 3</text><text x=\"285\" y=\"192\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">Kare (n = 4)</text><text x=\"285\" y=\"213\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">İç açı: 90°</text><text x=\"285\" y=\"232\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Dış açı: 90°</text><text x=\"285\" y=\"251\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Köşegen: 2</text><text x=\"285\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Simetri ekseni: 4</text><text x=\"465\" y=\"192\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">Düzgün Beşgen (n = 5)</text><text x=\"465\" y=\"213\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">İç açı: 108°</text><text x=\"465\" y=\"232\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Dış açı: 72°</text><text x=\"465\" y=\"251\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Köşegen: 5</text><text x=\"465\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Simetri ekseni: 5</text><text x=\"645\" y=\"192\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6b21a8\">Düzgün Altıgen (n = 6)</text><text x=\"645\" y=\"213\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">İç açı: 120°</text><text x=\"645\" y=\"232\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Dış açı: 60°</text><text x=\"645\" y=\"251\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Köşegen: 9</text><text x=\"645\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Simetri ekseni: 6</text></svg>"
+    },
+    {
+      "baslik": "2. Düzgün Altıgen, Düzgün Sekizgen ve Düzgün Çokgenin Alanı",
+      "metin": [
+        "Düzgün bir n-genin merkezinden köşelere çizilen doğru parçaları (çevrel çemberin yarıçapları, r) çokgeni {koyu:n tane eş ikizkenar üçgene} ayırır. Bu üçgenlerin tepe açısı {koyu:merkez açısı} adını alır ve {kesir:360°|n} değerine eşittir. Önceki haftalarda kullandığımız iki kenar ve aradaki açı ile alan formülü burada doğrudan işe yarar: Alan = n · {kesir:1|2} · {us:r|2} · sin({kesir:360°|n}). Merkezden bir kenara indirilen dikmenin uzunluğu (iç teğet çemberin yarıçapı, {koyu:apotem}) h ise alan Alan = {kesir:1|2} · Çevre · h biçiminde de yazılabilir.",
+        "{koyu:Düzgün altıgende} merkez açısı {kesir:360°|6} = 60° olduğundan oluşan altı ikizkenar üçgenin hepsi {koyu:eşkenar üçgendir} ve çevrel çemberin yarıçapı kenar uzunluğuna eşittir (r = a). Buna göre Alan = 6 · {kesir:{us:a|2}·{kok:3}|4} = {kesir:3·{us:a|2}·{kok:3}|2} olur. Düzgün altıgenin 9 köşegeni iki gruba ayrılır: merkezden geçen 3 {koyu:uzun köşegen} 2a uzunluğunda, iki eşkenar üçgenin yüksekliklerinden oluşan 6 {koyu:kısa köşegen} ise a·{kok:3} uzunluğundadır. Altıgeni eşkenar üçgen kafesi gibi düşünmek, karmaşık alan sorularını üçgen saymaya dönüştürür.",
+        "{koyu:Düzgün sekizgen} çoğunlukla bir karenin dört köşesinden eş ikizkenar dik üçgenler kesilerek elde edilir. Kesilen üçgenin dik kenarları x, hipotenüsü sekizgenin kenarı a ise a = x·{kok:2} ve karenin kenarı a + 2x = a·(1 + {kok:2}) olur. Sekizgenin alanı, kare alanından dört köşe üçgeninin alanı çıkarılarak bulunur: Alan = {us:a|2}·{us:(1 + {kok:2})|2} − 4·{kesir:{us:x|2}|2} = {us:a|2}·(3 + 2{kok:2}) − {us:a|2} = 2·{us:a|2}·(1 + {kok:2}). Aynı sonuca merkez açısı 45° olan 8 üçgenle de ulaşılabilir; iki farklı stratejinin aynı sonucu vermesi çözümün doğruluğunu kontrol etmemizi sağlar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Düzgün Çokgen",
+          "Parçalama Yolu",
+          "Alan Formülü",
+          "Ek Bilgi"
+        ],
+        "satirlar": [
+          [
+            "Eşkenar üçgen (kenar a)",
+            "Yükseklik çizilir",
+            "{kesir:{us:a|2}·{kok:3}|4}",
+            "Yükseklik {kesir:a·{kok:3}|2}"
+          ],
+          [
+            "Kare (kenar a)",
+            "Köşegenlerle 4 ikizkenar dik üçgen",
+            "{us:a|2}",
+            "Köşegen a·{kok:2}"
+          ],
+          [
+            "Düzgün altıgen (kenar a)",
+            "6 eşkenar üçgen",
+            "{kesir:3·{us:a|2}·{kok:3}|2}",
+            "Uzun köşegen 2a, kısa köşegen a·{kok:3}"
+          ],
+          [
+            "Düzgün sekizgen (kenar a)",
+            "Kareden 4 köşe üçgeni çıkarılır",
+            "2·{us:a|2}·(1 + {kok:2})",
+            "Çevreleyen kare kenarı a·(1 + {kok:2})"
+          ],
+          [
+            "Genel düzgün n-gen",
+            "n eş ikizkenar üçgen",
+            "n·{kesir:1|2}·{us:r|2}·sin({kesir:360°|n})",
+            "Alan = {kesir:1|2}·Çevre·apotem"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Altıgeni Üçgen Kafesine Dönüştür",
+          "metin": "Düzgün altıgen içinde köşeler veya kenar orta noktaları birleştirilerek oluşan bölgelerin alanı sorulduğunda altıgeni 6 eşkenar üçgene, gerekirse her birini 4 küçük eşkenar üçgene ayır. Böylece alan oranı, küçük üçgen sayılarının oranına dönüşür."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Merkez Açısı ve Dış Açı Eşittir",
+          "metin": "Düzgün n-gende merkez açısı da dış açı da {kesir:360°|n} değerindedir. Bu eşitlik, merkezden çizilen üçgenlerin taban açılarının iç açının yarısı olduğunu gösterir: taban açısı = {kesir:180° − {kesir:360°|n}|2}."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"27\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Düzgün Altıgen ve Düzgün Sekizgende Alanı Parçalayarak Bulma</text><rect x=\"20\" y=\"42\" width=\"350\" height=\"248\" rx=\"10\" fill=\"#ffffff\" stroke=\"#7e22ce\" stroke-width=\"2\"/><polygon points=\"280,140 237.5,213.6 152.5,213.6 110,140 152.5,66.4 237.5,66.4\" fill=\"#f3e8ff\" stroke=\"#6b21a8\" stroke-width=\"2\"/><line x1=\"195\" y1=\"140\" x2=\"280\" y2=\"140\" stroke=\"#7e22ce\" stroke-width=\"1.3\"/><line x1=\"195\" y1=\"140\" x2=\"237.5\" y2=\"213.6\" stroke=\"#7e22ce\" stroke-width=\"1.3\"/><line x1=\"195\" y1=\"140\" x2=\"152.5\" y2=\"213.6\" stroke=\"#7e22ce\" stroke-width=\"1.3\"/><line x1=\"195\" y1=\"140\" x2=\"110\" y2=\"140\" stroke=\"#7e22ce\" stroke-width=\"1.3\"/><line x1=\"195\" y1=\"140\" x2=\"152.5\" y2=\"66.4\" stroke=\"#7e22ce\" stroke-width=\"1.3\"/><line x1=\"195\" y1=\"140\" x2=\"237.5\" y2=\"66.4\" stroke=\"#7e22ce\" stroke-width=\"1.3\"/><polygon points=\"195,140 237.5,66.4 152.5,66.4\" fill=\"#d8b4fe\" stroke=\"#6b21a8\" stroke-width=\"1.5\"/><text x=\"195\" y=\"60\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#581c87\">a</text><text x=\"195\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" fill=\"#581c87\">60°</text><text x=\"300\" y=\"100\" font-size=\"11\" fill=\"#581c87\">r = a</text><text x=\"195\" y=\"246\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#3b0764\">Alan = 6 · a² · karekök(3) / 4 = 3a² · karekök(3) / 2</text><text x=\"195\" y=\"268\" text-anchor=\"middle\" font-size=\"11\" fill=\"#3b0764\">Uzun köşegen = 2a   |   Kısa köşegen = a · karekök(3)</text><rect x=\"390\" y=\"42\" width=\"350\" height=\"248\" rx=\"10\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"2\"/><rect x=\"420\" y=\"58\" width=\"160\" height=\"160\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\"/><polygon points=\"420,58 466.9,58 420,104.9\" fill=\"#fecaca\" stroke=\"#dc2626\" stroke-width=\"1.2\"/><polygon points=\"533.1,58 580,58 580,104.9\" fill=\"#fecaca\" stroke=\"#dc2626\" stroke-width=\"1.2\"/><polygon points=\"580,171.1 580,218 533.1,218\" fill=\"#fecaca\" stroke=\"#dc2626\" stroke-width=\"1.2\"/><polygon points=\"466.9,218 420,218 420,171.1\" fill=\"#fecaca\" stroke=\"#dc2626\" stroke-width=\"1.2\"/><polygon points=\"466.9,58 533.1,58 580,104.9 580,171.1 533.1,218 466.9,218 420,171.1 420,104.9\" fill=\"#ccfbf1\" stroke=\"#0f766e\" stroke-width=\"2\"/><text x=\"500\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#134e4a\">Sekizgen</text><text x=\"500\" y=\"52\" text-anchor=\"middle\" font-size=\"11\" fill=\"#134e4a\">a</text><text x=\"436\" y=\"76\" font-size=\"10\" fill=\"#991b1b\">x</text><text x=\"592\" y=\"80\" font-size=\"11\" fill=\"#0f172a\">Kesilen üçgen:</text><text x=\"592\" y=\"97\" font-size=\"11\" fill=\"#0f172a\">ikizkenar dik</text><text x=\"592\" y=\"120\" font-size=\"11\" fill=\"#0f172a\">a = x · karekök(2)</text><text x=\"592\" y=\"146\" font-size=\"11\" fill=\"#0f172a\">Kare kenarı:</text><text x=\"592\" y=\"163\" font-size=\"11\" fill=\"#0f172a\">a + 2x</text><text x=\"592\" y=\"186\" font-size=\"11\" fill=\"#0f172a\">= a · (1 + karekök(2))</text><text x=\"565\" y=\"246\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#134e4a\">Alan = Kare − 4 üçgen = 2a² · (1 + karekök(2))</text><text x=\"565\" y=\"268\" text-anchor=\"middle\" font-size=\"11\" fill=\"#134e4a\">Kontrol: 8 · (1/2) · r² · sin45° ile aynı sonuç</text></svg>"
+    },
+    {
+      "baslik": "3. Düzlem Kaplama, Yıldız Şekilleri ve Çokgen Problemlerinde Strateji Seçimi",
+      "metin": [
+        "Bir zemini boşluk kalmadan ve üst üste binmeden çokgen karolarla döşemeye {koyu:düzlem kaplama} denir. Kaplamanın her köşesinde buluşan iç açıların toplamı tam olarak {koyu:360°} olmalıdır. Tek tür düzgün çokgen kullanılıyorsa bir köşede k tane çokgen buluşur ve k · (iç açı) = 360° olmalıdır; yani iç açı 360°'nin tam böleni olmalıdır. Eşkenar üçgen (6 × 60°), kare (4 × 90°) ve düzgün altıgen (3 × 120°) bu koşulu sağlar. Düzgün beşgende 3 × 108° = 324° olur ve 36°'lik boşluk kalır; düzgün sekizgende 2 × 135° = 270° olup yine boşluk kalır. Arı peteklerinin altıgen olması, aynı çevreyle daha büyük alan kaplayan ve düzlemi boşluksuz dolduran bu şekle doğada verilen güzel bir örnektir.",
+        "Farklı düzgün çokgenler birlikte kullanıldığında da köşe toplamı 360° olmalıdır: iki sekizgen ve bir kare (135° + 135° + 90°), üç üçgen ve iki kare (3 · 60° + 2 · 90°), iki üçgen ve iki altıgen (60° + 120° + 60° + 120°) bu tür {koyu:yarı düzgün kaplamalara} örnektir. Bir düzgün çokgenin kenarları uzatıldığında ise {koyu:yıldız şekilleri} oluşur. Düzgün beşgende uzatılan kenarların oluşturduğu her uç üçgenin taban açıları dış açıya, yani 72°'ye eşittir; bu yüzden uç açısı 180° − 2 · 72° = 36° olur. Genel olarak n ≥ 5 için uç açısı 180° − 2 · {kesir:360°|n} dir: altıgende 60°, sekizgende 90°.",
+        "Çokgen problemlerini çözerken izlenecek yol bir döngüdür: problemin parçalarını (nicelikler, şekil) belirle, aralarındaki ilişkileri yaz, bunları denklem veya şekil gibi {koyu:matematiksel temsillere} dönüştür, bir strateji seç ve çöz. Ardından {koyu:çözümü kontrol et}: Kenar sayısı tam sayı mı? İç açı 180°'den küçük mü? Alan pozitif mi? Kontrol başarısızsa strateji değiştirilir. Örneğin iç açı formülüyle uzun bir denklem kurmak yerine dış açıyla çalışmak ya da alanı merkezden üçgenlere ayırmak yerine çevreleyen şekilden çıkarmak, aynı soruya farklı ama daha kısa yollar sunar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Köşedeki Düzenleme",
+          "Açı Hesabı",
+          "Toplam",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "6 eşkenar üçgen",
+            "6 × 60°",
+            "360°",
+            "Kaplar"
+          ],
+          [
+            "4 kare",
+            "4 × 90°",
+            "360°",
+            "Kaplar"
+          ],
+          [
+            "3 düzgün altıgen",
+            "3 × 120°",
+            "360°",
+            "Kaplar"
+          ],
+          [
+            "3 düzgün beşgen",
+            "3 × 108°",
+            "324°",
+            "36° boşluk kalır"
+          ],
+          [
+            "2 sekizgen + 1 kare",
+            "135° + 135° + 90°",
+            "360°",
+            "Yarı düzgün kaplama"
+          ],
+          [
+            "3 üçgen + 2 kare",
+            "3 × 60° + 2 × 90°",
+            "360°",
+            "Yarı düzgün kaplama"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Çözümünü Kontrol Et: n Tam Sayı Olmalı",
+          "metin": "Bir iç açısı 140° olan düzgün çokgende dış açı 40°, n = {kesir:360°|40°} = 9 tam sayı olduğu için böyle bir çokgen vardır. İç açısı 130° olsaydı dış açı 50° ve n = 7,2 çıkardı; bu durumda böyle bir düzgün çokgen yoktur."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Yıldız Uç Açısı",
+          "metin": "Düzgün n-genin kenarları uzatılarak oluşan yıldızın her uç açısı 180° − 2·{kesir:360°|n} dir. Beşgende 36° olan uç açılarının toplamı 5 · 36° = 180° eder."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"26\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Düzlem Kaplama Koşulu ve Çokgen Problemlerinde Çözüm Döngüsü</text><rect x=\"20\" y=\"42\" width=\"170\" height=\"120\" rx=\"10\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"105\" y=\"70\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#075985\">Eşkenar Üçgen</text><text x=\"105\" y=\"100\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f172a\">6 × 60° = 360°</text><text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Kaplar</text><rect x=\"205\" y=\"42\" width=\"170\" height=\"120\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"290\" y=\"70\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#166534\">Kare</text><text x=\"290\" y=\"100\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f172a\">4 × 90° = 360°</text><text x=\"290\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Kaplar</text><rect x=\"390\" y=\"42\" width=\"170\" height=\"120\" rx=\"10\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/><text x=\"475\" y=\"70\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#6b21a8\">Düzgün Altıgen</text><text x=\"475\" y=\"100\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f172a\">3 × 120° = 360°</text><text x=\"475\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#15803d\">Kaplar</text><rect x=\"575\" y=\"42\" width=\"165\" height=\"120\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"657\" y=\"70\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#991b1b\">Düzgün Beşgen</text><text x=\"657\" y=\"100\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f172a\">3 × 108° = 324°</text><text x=\"657\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b91c1c\">36° boşluk: Kaplamaz</text><text x=\"380\" y=\"190\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#334155\">Çokgen Problemlerinde Çözüm Döngüsü</text><rect x=\"15\" y=\"205\" width=\"105\" height=\"60\" rx=\"10\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"2\"/><text x=\"67\" y=\"231\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#134e4a\">1. Parçaları</text><text x=\"67\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#134e4a\">belirle</text><rect x=\"140\" y=\"205\" width=\"105\" height=\"60\" rx=\"10\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"2\"/><text x=\"192\" y=\"231\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#134e4a\">2. İlişkileri</text><text x=\"192\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#134e4a\">kur</text><rect x=\"265\" y=\"205\" width=\"105\" height=\"60\" rx=\"10\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"2\"/><text x=\"317\" y=\"231\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#134e4a\">3. Temsile</text><text x=\"317\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#134e4a\">dönüştür</text><rect x=\"390\" y=\"205\" width=\"105\" height=\"60\" rx=\"10\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"2\"/><text x=\"442\" y=\"231\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#134e4a\">4. Strateji</text><text x=\"442\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#134e4a\">seç</text><rect x=\"515\" y=\"205\" width=\"105\" height=\"60\" rx=\"10\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"2\"/><text x=\"567\" y=\"231\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#134e4a\">5. Çöz</text><text x=\"567\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#134e4a\">adım adım</text><rect x=\"640\" y=\"205\" width=\"105\" height=\"60\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"692\" y=\"231\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">6. Kontrol et</text><text x=\"692\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" fill=\"#92400e\">n tam sayı mı?</text><line x1=\"120\" y1=\"235\" x2=\"134\" y2=\"235\" stroke=\"#0f766e\" stroke-width=\"2\"/><polygon points=\"134,230 140,235 134,240\" fill=\"#0f766e\"/><line x1=\"245\" y1=\"235\" x2=\"259\" y2=\"235\" stroke=\"#0f766e\" stroke-width=\"2\"/><polygon points=\"259,230 265,235 259,240\" fill=\"#0f766e\"/><line x1=\"370\" y1=\"235\" x2=\"384\" y2=\"235\" stroke=\"#0f766e\" stroke-width=\"2\"/><polygon points=\"384,230 390,235 384,240\" fill=\"#0f766e\"/><line x1=\"495\" y1=\"235\" x2=\"509\" y2=\"235\" stroke=\"#0f766e\" stroke-width=\"2\"/><polygon points=\"509,230 515,235 509,240\" fill=\"#0f766e\"/><line x1=\"620\" y1=\"235\" x2=\"634\" y2=\"235\" stroke=\"#0f766e\" stroke-width=\"2\"/><polygon points=\"634,230 640,235 634,240\" fill=\"#0f766e\"/><path d=\"M 692 265 L 692 285 L 442 285 L 442 270\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.8\" stroke-dasharray=\"5,3\"/><polygon points=\"437,272 442,265 447,272\" fill=\"#d97706\"/><text x=\"567\" y=\"280\" text-anchor=\"middle\" font-size=\"10\" fill=\"#92400e\">Sonuç uygun değilse strateji değiştir</text></svg>"
+    },
+    {
+      "baslik": "4. Birim Çemberden Trigonometrik Fonksiyonlara: Sinüs ve Kosinüsün Tanımı",
+      "metin": [
+        "Trigonometrik fonksiyonlarda açıları çoğunlukla {koyu:radyan} ile ölçeriz: π radyan = 180°, dolayısıyla 1 radyan yaklaşık 57,3°'dir. Merkezi orijinde ve yarıçapı 1 birim olan çembere {koyu:birim çember} denir; denklemi {us:x|2} + {us:y|2} = 1'dir. Birim çember üzerinde (1, 0) noktasından başlayıp saat yönünün tersine x birim uzunluğunda yay çizildiğinde (x negatifse saat yönünde) yayın bitim noktası P olsun. P noktasının {koyu:apsisi cos x}, {koyu:ordinatı sin x} olarak tanımlanır: P(cos x, sin x). Her reel sayıya birim çember üzerinde tek bir P noktası karşılık geldiği için f(x) = sin x ve f(x) = cos x kuralları ℝ'den ℝ'ye birer {koyu:fonksiyon} belirtir.",
+        "P noktası birim çember üzerinde olduğundan koordinatları çember denklemini sağlar: {us:sin|2}x + {us:cos|2}x = 1. Bu eşitlik bize sinüs ve kosinüs değerlerinin hiçbir zaman −1'den küçük, 1'den büyük olamayacağını söyler: −1 ≤ sin x ≤ 1 ve −1 ≤ cos x ≤ 1. Ayrıca x ve x + 2π sayıları çember üzerinde aynı noktaya karşılık gelir; çünkü 2π birim çemberin çevresidir. Bu nedenle sin(x + 2kπ) = sin x ve cos(x + 2kπ) = cos x (k ∈ ℤ) eşitlikleri her zaman doğrudur. Bu durum, iki fonksiyonun da {koyu:periyodik} olduğunun ilk işaretidir.",
+        "Koordinat eksenleri birim çemberi dört bölgeye ayırır ve sinüs, kosinüs değerlerinin işaretleri P noktasının bulunduğu bölgeye göre belirlenir: I. bölgede (0, {kesir:π|2}) ikisi de pozitif; II. bölgede ({kesir:π|2}, π) sinüs pozitif, kosinüs negatif; III. bölgede (π, {kesir:3π|2}) ikisi de negatif; IV. bölgede ({kesir:3π|2}, 2π) sinüs negatif, kosinüs pozitiftir. Büyük bir reel sayının sinüsünü veya kosinüsünü bulmak için önce 2π'nin katları atılarak sayı [0, 2π) aralığına indirilir ({koyu:esas ölçü}), ardından bölge işareti ve eksene en yakın açı (referans açı) kullanılır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "x (radyan)",
+          "Derece",
+          "sin x",
+          "cos x",
+          "P noktası"
+        ],
+        "satirlar": [
+          [
+            "0",
+            "0°",
+            "0",
+            "1",
+            "(1, 0)"
+          ],
+          [
+            "{kesir:π|6}",
+            "30°",
+            "{kesir:1|2}",
+            "{kesir:{kok:3}|2}",
+            "I. bölge"
+          ],
+          [
+            "{kesir:π|4}",
+            "45°",
+            "{kesir:{kok:2}|2}",
+            "{kesir:{kok:2}|2}",
+            "I. bölge"
+          ],
+          [
+            "{kesir:π|3}",
+            "60°",
+            "{kesir:{kok:3}|2}",
+            "{kesir:1|2}",
+            "I. bölge"
+          ],
+          [
+            "{kesir:π|2}",
+            "90°",
+            "1",
+            "0",
+            "(0, 1)"
+          ],
+          [
+            "π",
+            "180°",
+            "0",
+            "−1",
+            "(−1, 0)"
+          ],
+          [
+            "{kesir:3π|2}",
+            "270°",
+            "−1",
+            "0",
+            "(0, −1)"
+          ],
+          [
+            "2π",
+            "360°",
+            "0",
+            "1",
+            "(1, 0)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Sinüs ve Kosinüs Fonksiyonu",
+          "metin": "Birim çember üzerinde x radyanlık yayın bitim noktası P(a, b) ise cos x = a ve sin x = b'dir. Her x ∈ ℝ için tek bir değer ürettiğinden f(x) = sin x ve f(x) = cos x, tanım kümesi ℝ olan fonksiyonlardır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Esas Ölçüye İndirme",
+          "metin": "{kesir:17π|6} = 2π + {kesir:5π|6} olduğundan sin({kesir:17π|6}) = sin({kesir:5π|6}) = {kesir:1|2} olur. Payı paydanın 2 katına göre bölerek 2π'nin katlarını hızlıca atabilirsin."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Birim Çember: P(cos x, sin x) ve Bölge İşaretleri</text><line x1=\"50\" y1=\"160\" x2=\"315\" y2=\"160\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"38\" x2=\"180\" y2=\"288\" stroke=\"#334155\" stroke-width=\"1.5\"/><circle cx=\"180\" cy=\"160\" r=\"110\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><line x1=\"180\" y1=\"160\" x2=\"250.7\" y2=\"75.7\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><line x1=\"250.7\" y1=\"75.7\" x2=\"250.7\" y2=\"160\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><line x1=\"250.7\" y1=\"75.7\" x2=\"180\" y2=\"75.7\" stroke=\"#16a34a\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><circle cx=\"250.7\" cy=\"75.7\" r=\"5\" fill=\"#1e3a8a\"/><path d=\"M 210 160 A 30 30 0 0 0 199.3 137\" fill=\"none\" stroke=\"#9333ea\" stroke-width=\"2\"/><text x=\"214\" y=\"147\" font-size=\"13\" font-weight=\"bold\" fill=\"#7e22ce\">x</text><text x=\"256\" y=\"66\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">P(cos x, sin x)</text><text x=\"256\" y=\"122\" font-size=\"12\" fill=\"#b91c1c\">sin x</text><text x=\"200\" y=\"70\" font-size=\"12\" fill=\"#15803d\">cos x</text><text x=\"294\" y=\"177\" font-size=\"11\" fill=\"#334155\">(1, 0)</text><text x=\"186\" y=\"46\" font-size=\"11\" fill=\"#334155\">(0, 1)</text><text x=\"38\" y=\"177\" font-size=\"11\" fill=\"#334155\">(−1, 0)</text><text x=\"186\" y=\"286\" font-size=\"11\" fill=\"#334155\">(0, −1)</text><text x=\"280\" y=\"58\" font-size=\"13\" font-weight=\"bold\" fill=\"#64748b\">I</text><text x=\"72\" y=\"58\" font-size=\"13\" font-weight=\"bold\" fill=\"#64748b\">II</text><text x=\"68\" y=\"272\" font-size=\"13\" font-weight=\"bold\" fill=\"#64748b\">III</text><text x=\"280\" y=\"272\" font-size=\"13\" font-weight=\"bold\" fill=\"#64748b\">IV</text><rect x=\"345\" y=\"42\" width=\"395\" height=\"246\" rx=\"10\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"362\" y=\"68\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">Birim çember: x² + y² = 1 (yarıçap 1)</text><text x=\"362\" y=\"91\" font-size=\"12\" fill=\"#0f172a\">Her x reel sayısına tek bir P noktası karşılık gelir.</text><text x=\"362\" y=\"114\" font-size=\"12\" fill=\"#0f172a\">cos x = P'nin apsisi    sin x = P'nin ordinatı</text><text x=\"362\" y=\"137\" font-size=\"12\" font-weight=\"bold\" fill=\"#7e22ce\">sin²x + cos²x = 1   ve   −1 ≤ sin x, cos x ≤ 1</text><text x=\"362\" y=\"160\" font-size=\"12\" fill=\"#0f172a\">x ile x + 2π aynı noktaya gider: periyot 2π</text><text x=\"362\" y=\"188\" font-size=\"12\" fill=\"#15803d\">I. bölge (0, π/2): sin +, cos +</text><text x=\"362\" y=\"211\" font-size=\"12\" fill=\"#b45309\">II. bölge (π/2, π): sin +, cos −</text><text x=\"362\" y=\"234\" font-size=\"12\" fill=\"#b91c1c\">III. bölge (π, 3π/2): sin −, cos −</text><text x=\"362\" y=\"257\" font-size=\"12\" fill=\"#1d4ed8\">IV. bölge (3π/2, 2π): sin −, cos +</text><text x=\"362\" y=\"278\" font-size=\"11\" fill=\"#64748b\">π radyan = 180°</text></svg>"
+    },
+    {
+      "baslik": "5. f(x) = sin x Fonksiyonunun Nitel Özellikleri",
+      "metin": [
+        "f(x) = sin x fonksiyonunun {koyu:tanım kümesi} ℝ, {koyu:görüntü kümesi} [−1, 1] aralığıdır. Değer kümesi ℝ alınırsa (f: ℝ → ℝ) fonksiyon {koyu:örten değildir}, çünkü örneğin 2 sayısı hiçbir x için sin x değeri olamaz; değer kümesi [−1, 1] alındığında ise f: ℝ → [−1, 1] örten olur. Fonksiyonun {koyu:sıfırları}, birim çemberde P noktasının x ekseni üzerine düştüğü yerlerdir: sin x = 0 ⇔ x = kπ (k ∈ ℤ). Grafik x eksenini …, −π, 0, π, 2π, … noktalarında keser; ayrıca sin 0 = 0 olduğundan grafik orijinden geçer.",
+        "[0, 2π] aralığında P noktası (1, 0)'dan (0, 1)'e çıkarken ordinat artar, sonra (−1, 0) ve (0, −1)'e inerken azalır, en sonda yeniden artar. Buna göre sin x fonksiyonu [0, {kesir:π|2}] ve [{kesir:3π|2}, 2π] aralıklarında {koyu:artan}, [{kesir:π|2}, {kesir:3π|2}] aralığında {koyu:azalandır}. {koyu:Maksimum değeri} 1'dir ve x = {kesir:π|2} + 2kπ noktalarında alınır; {koyu:minimum değeri} −1'dir ve x = {kesir:3π|2} + 2kπ noktalarında alınır. {koyu:İşaret} incelemesinde sin x, (0, π) aralığında pozitif, (π, 2π) aralığında negatiftir; bu düzen her 2π'de bir tekrar eder.",
+        "Birim çemberde x ve −x yayları x eksenine göre simetrik noktalara karşılık gelir; bu noktaların ordinatları ters işaretlidir. Bu yüzden her x için {koyu:sin(−x) = −sin x} olur ve sinüs bir {koyu:tek fonksiyondur}; grafiği orijine göre simetriktir. sin(x + 2π) = sin x eşitliğini sağlayan en küçük pozitif sayı 2π olduğu için {koyu:esas periyot} T = 2π'dir. Grafiğe çizilen y = {kesir:1|2} gibi yatay bir doğru grafiği sonsuz noktada kestiğinden sin x ℝ'de {koyu:bire bir değildir}; örneğin sin({kesir:π|6}) = sin({kesir:5π|6}) = {kesir:1|2}. Tanım kümesi [−{kesir:π|2}, {kesir:π|2}] aralığına kısıtlanırsa fonksiyon bu aralıkta artan ve bire bir olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Nitel Özellik",
+          "f(x) = sin x",
+          "Grafikte Nasıl Görülür?"
+        ],
+        "satirlar": [
+          [
+            "Tanım kümesi",
+            "ℝ",
+            "Grafik tüm x ekseni boyunca uzanır"
+          ],
+          [
+            "Görüntü kümesi",
+            "[−1, 1]",
+            "Grafik y = −1 ile y = 1 doğruları arasında kalır"
+          ],
+          [
+            "Sıfırlar",
+            "x = kπ, k ∈ ℤ",
+            "x eksenini kestiği noktalar"
+          ],
+          [
+            "Maksimum noktaları",
+            "({kesir:π|2} + 2kπ, 1)",
+            "Tepe noktaları"
+          ],
+          [
+            "Minimum noktaları",
+            "({kesir:3π|2} + 2kπ, −1)",
+            "Çukur noktaları"
+          ],
+          [
+            "Artan / azalan ([0, 2π])",
+            "Artan: [0, {kesir:π|2}] ve [{kesir:3π|2}, 2π]; azalan: [{kesir:π|2}, {kesir:3π|2}]",
+            "Soldan sağa yükselen ve alçalan kısımlar"
+          ],
+          [
+            "İşaret ([0, 2π])",
+            "(0, π) pozitif, (π, 2π) negatif",
+            "x ekseninin üstü ve altı"
+          ],
+          [
+            "Teklik-çiftlik",
+            "Tek: sin(−x) = −sin x",
+            "Orijine göre simetri"
+          ],
+          [
+            "Periyot",
+            "2π",
+            "Aynı dalga her 2π'de tekrar eder"
+          ],
+          [
+            "Bire birlik / örtenlik",
+            "Bire bir değil; ℝ → ℝ örten değil, ℝ → [−1, 1] örten",
+            "Yatay doğru testi"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Sinüs Tek Fonksiyondur",
+          "metin": "Her x ∈ ℝ için sin(−x) = −sin x. Örneğin sin(−{kesir:π|6}) = −sin({kesir:π|6}) = −{kesir:1|2} ve sin(−{kesir:π|2}) = −1 olur."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Örtenlik Değer Kümesine Bağlıdır",
+          "metin": "Aynı kural farklı değer kümeleriyle farklı sonuç verir: f: ℝ → ℝ, f(x) = sin x örten değildir; f: ℝ → [−1, 1], f(x) = sin x örtendir. Sorularda değer kümesinin nasıl verildiğine mutlaka bak."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"20\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">f(x) = sin x Grafiği ve Nitel Özellikleri ([0, 2π] aralığı)</text><rect x=\"80\" y=\"45\" width=\"140\" height=\"228\" fill=\"#dcfce7\" opacity=\"0.6\"/><rect x=\"220\" y=\"45\" width=\"280\" height=\"228\" fill=\"#fee2e2\" opacity=\"0.6\"/><rect x=\"500\" y=\"45\" width=\"140\" height=\"228\" fill=\"#dcfce7\" opacity=\"0.6\"/><text x=\"150\" y=\"39\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">artan</text><text x=\"360\" y=\"39\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">azalan</text><text x=\"570\" y=\"39\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">artan</text><line x1=\"80\" y1=\"60\" x2=\"640\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/><line x1=\"80\" y1=\"260\" x2=\"640\" y2=\"260\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/><line x1=\"60\" y1=\"160\" x2=\"648\" y2=\"160\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"80\" y1=\"45\" x2=\"80\" y2=\"275\" stroke=\"#334155\" stroke-width=\"1.5\"/><polyline points=\"80,160 103.3,134.1 126.7,110 150,89.3 173.3,73.4 196.7,63.4 220,60 243.3,63.4 266.7,73.4 290,89.3 313.3,110 336.7,134.1 360,160 383.3,185.9 406.7,210 430,230.7 453.3,246.6 476.7,256.6 500,260 523.3,256.6 546.7,246.6 570,230.7 593.3,210 616.7,185.9 640,160\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><circle cx=\"220\" cy=\"60\" r=\"5\" fill=\"#15803d\"/><circle cx=\"500\" cy=\"260\" r=\"5\" fill=\"#b91c1c\"/><circle cx=\"80\" cy=\"160\" r=\"4.5\" fill=\"#7e22ce\"/><circle cx=\"360\" cy=\"160\" r=\"4.5\" fill=\"#7e22ce\"/><circle cx=\"640\" cy=\"160\" r=\"4.5\" fill=\"#7e22ce\"/><text x=\"220\" y=\"54\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Maks. (π/2, 1)</text><text x=\"500\" y=\"283\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Min. (3π/2, −1)</text><text x=\"70\" y=\"64\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">1</text><text x=\"72\" y=\"264\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">−1</text><text x=\"86\" y=\"177\" font-size=\"11\" fill=\"#334155\">0</text><text x=\"220\" y=\"177\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">π/2</text><text x=\"368\" y=\"177\" font-size=\"11\" fill=\"#334155\">π</text><text x=\"500\" y=\"177\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">3π/2</text><text x=\"628\" y=\"177\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">2π</text><rect x=\"652\" y=\"55\" width=\"100\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"662\" y=\"78\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e3a8a\">Tanım: ℝ</text><text x=\"662\" y=\"101\" font-size=\"11\" fill=\"#0f172a\">Görüntü:</text><text x=\"662\" y=\"118\" font-size=\"11\" fill=\"#0f172a\">[−1, 1]</text><text x=\"662\" y=\"141\" font-size=\"11\" fill=\"#0f172a\">Periyot: 2π</text><text x=\"662\" y=\"164\" font-size=\"11\" fill=\"#7e22ce\">Tek fonksiyon</text><text x=\"662\" y=\"181\" font-size=\"10\" fill=\"#7e22ce\">(orijine simetrik)</text><text x=\"662\" y=\"204\" font-size=\"11\" fill=\"#0f172a\">Sıfırlar: kπ</text><text x=\"662\" y=\"227\" font-size=\"11\" fill=\"#0f172a\">Bire bir değil</text><text x=\"662\" y=\"250\" font-size=\"10\" fill=\"#64748b\">(ℝ'de)</text></svg>"
+    },
+    {
+      "baslik": "6. f(x) = cos x Fonksiyonunun Nitel Özellikleri ve Sinüsle Karşılaştırma",
+      "metin": [
+        "f(x) = cos x fonksiyonunun da {koyu:tanım kümesi} ℝ, {koyu:görüntü kümesi} [−1, 1]'dir; bu yüzden f: ℝ → ℝ olarak ele alındığında örten değil, f: ℝ → [−1, 1] olarak ele alındığında örtendir. Kosinüs P noktasının apsisi olduğundan, P noktası y ekseni üzerine düştüğünde değeri sıfırdır: cos x = 0 ⇔ x = {kesir:π|2} + kπ (k ∈ ℤ). {koyu:Maksimum değer} 1, P noktası (1, 0)'da iken yani x = 2kπ'de; {koyu:minimum değer} −1, P noktası (−1, 0)'da iken yani x = π + 2kπ'de alınır. Grafik y eksenini (0, 1) noktasında keser.",
+        "[0, 2π] aralığında P noktası (1, 0)'dan (−1, 0)'a giderken apsis sürekli küçülür, ardından yeniden (1, 0)'a dönerken büyür. Bu nedenle cos x fonksiyonu [0, π] aralığında {koyu:azalan}, [π, 2π] aralığında {koyu:artandır}. İşaret açısından cos x, [0, {kesir:π|2}) ve ({kesir:3π|2}, 2π] aralıklarında pozitif, ({kesir:π|2}, {kesir:3π|2}) aralığında negatiftir. x ve −x yayları x eksenine göre simetrik noktalara gittiğinden apsisleri aynıdır: {koyu:cos(−x) = cos x}. Bu yüzden kosinüs bir {koyu:çift fonksiyondur} ve grafiği y eksenine göre simetriktir. Esas periyodu sinüste olduğu gibi {koyu:2π}'dir ve ℝ'de bire bir değildir; tanım kümesi [0, π] aralığına kısıtlanırsa azalan ve bire bir olur.",
+        "İki grafiği aynı eksen üzerinde çizdiğimizde kosinüs dalgasının sinüs dalgasıyla {koyu:aynı biçimde} olduğunu, yalnızca {kesir:π|2} birim sola kaymış göründüğünü fark ederiz: her x için cos x = sin(x + {kesir:π|2}) olur. Örneğin sinüsün maksimum noktası x = {kesir:π|2} iken kosinüsünki x = 0'dır. Bu gözlem, referans fonksiyonların grafikleri üzerinde yapılan işlemlerle yeni trigonometrik fonksiyonlar elde edilebileceğinin ilk ipucudur. Gerçek yaşamda gelgit yüksekliği, dönme dolaptaki bir kabinin yerden yüksekliği veya alternatif akımın değişimi gibi düzenli tekrar eden olaylar bu dalga biçimleriyle modellenir; periyot tekrar süresini, maksimum-minimum ise en yüksek ve en düşük değeri anlatır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Nitel Özellik",
+          "f(x) = sin x",
+          "f(x) = cos x"
+        ],
+        "satirlar": [
+          [
+            "Tanım kümesi",
+            "ℝ",
+            "ℝ"
+          ],
+          [
+            "Görüntü kümesi",
+            "[−1, 1]",
+            "[−1, 1]"
+          ],
+          [
+            "Sıfırlar",
+            "x = kπ",
+            "x = {kesir:π|2} + kπ"
+          ],
+          [
+            "Maksimum (değer 1)",
+            "x = {kesir:π|2} + 2kπ",
+            "x = 2kπ"
+          ],
+          [
+            "Minimum (değer −1)",
+            "x = {kesir:3π|2} + 2kπ",
+            "x = π + 2kπ"
+          ],
+          [
+            "[0, 2π]'de azalan olduğu aralık",
+            "[{kesir:π|2}, {kesir:3π|2}]",
+            "[0, π]"
+          ],
+          [
+            "[0, 2π]'de negatif olduğu aralık",
+            "(π, 2π)",
+            "({kesir:π|2}, {kesir:3π|2})"
+          ],
+          [
+            "Teklik-çiftlik",
+            "Tek, orijine göre simetrik",
+            "Çift, y eksenine göre simetrik"
+          ],
+          [
+            "Periyot",
+            "2π",
+            "2π"
+          ],
+          [
+            "y eksenini kestiği nokta",
+            "(0, 0)",
+            "(0, 1)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "Kosinüs Çift Fonksiyondur",
+          "metin": "Her x ∈ ℝ için cos(−x) = cos x. Örneğin cos(−{kesir:π|3}) = cos({kesir:π|3}) = {kesir:1|2} ve cos(−π) = cos π = −1 olur. Bu yüzden negatif açılı kosinüs ifadelerinde eksi işareti doğrudan atılabilir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Grafikten Özellik Okuma Sırası",
+          "metin": "Bir trigonometrik grafikte sırasıyla şunlara bak: 1) En yüksek ve en düşük y değeri (görüntü kümesi), 2) Dalganın tekrar ettiği en kısa yatay uzunluk (periyot), 3) x eksenini kestiği yerler (sıfırlar), 4) Orijine mi y eksenine mi simetrik (teklik-çiftlik)."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"20\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">f(x) = cos x Grafiği ve Sinüs ile Karşılaştırma ([0, 2π] aralığı)</text><rect x=\"80\" y=\"45\" width=\"280\" height=\"228\" fill=\"#fee2e2\" opacity=\"0.6\"/><rect x=\"360\" y=\"45\" width=\"280\" height=\"228\" fill=\"#dcfce7\" opacity=\"0.6\"/><text x=\"220\" y=\"39\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">cos x azalan [0, π]</text><text x=\"500\" y=\"39\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">cos x artan [π, 2π]</text><line x1=\"80\" y1=\"60\" x2=\"640\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/><line x1=\"80\" y1=\"260\" x2=\"640\" y2=\"260\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/><line x1=\"60\" y1=\"160\" x2=\"648\" y2=\"160\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"80\" y1=\"45\" x2=\"80\" y2=\"275\" stroke=\"#334155\" stroke-width=\"1.5\"/><polyline points=\"80,160 103.3,134.1 126.7,110 150,89.3 173.3,73.4 196.7,63.4 220,60 243.3,63.4 266.7,73.4 290,89.3 313.3,110 336.7,134.1 360,160 383.3,185.9 406.7,210 430,230.7 453.3,246.6 476.7,256.6 500,260 523.3,256.6 546.7,246.6 570,230.7 593.3,210 616.7,185.9 640,160\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><polyline points=\"80,60 103.3,63.4 126.7,73.4 150,89.3 173.3,110 196.7,134.1 220,160 243.3,185.9 266.7,210 290,230.7 313.3,246.6 336.7,256.6 360,260 383.3,256.6 406.7,246.6 430,230.7 453.3,210 476.7,185.9 500,160 523.3,134.1 546.7,110 570,89.3 593.3,73.4 616.7,63.4 640,60\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"3\"/><circle cx=\"80\" cy=\"60\" r=\"5\" fill=\"#15803d\"/><circle cx=\"640\" cy=\"60\" r=\"5\" fill=\"#15803d\"/><circle cx=\"360\" cy=\"260\" r=\"5\" fill=\"#b91c1c\"/><circle cx=\"220\" cy=\"160\" r=\"4.5\" fill=\"#7e22ce\"/><circle cx=\"500\" cy=\"160\" r=\"4.5\" fill=\"#7e22ce\"/><text x=\"88\" y=\"56\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">Maks. (0, 1)</text><text x=\"360\" y=\"283\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Min. (π, −1)</text><text x=\"70\" y=\"64\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">1</text><text x=\"72\" y=\"264\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">−1</text><text x=\"226\" y=\"177\" font-size=\"11\" fill=\"#334155\">π/2</text><text x=\"360\" y=\"152\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">π</text><text x=\"506\" y=\"177\" font-size=\"11\" fill=\"#334155\">3π/2</text><text x=\"628\" y=\"177\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">2π</text><line x1=\"90\" y1=\"290\" x2=\"120\" y2=\"290\" stroke=\"#c2410c\" stroke-width=\"3\"/><text x=\"126\" y=\"294\" font-size=\"11\" fill=\"#0f172a\">cos x</text><line x1=\"180\" y1=\"290\" x2=\"210\" y2=\"290\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><text x=\"216\" y=\"294\" font-size=\"11\" fill=\"#0f172a\">sin x</text><rect x=\"652\" y=\"55\" width=\"100\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"662\" y=\"78\" font-size=\"11\" font-weight=\"bold\" fill=\"#9a3412\">Tanım: ℝ</text><text x=\"662\" y=\"101\" font-size=\"11\" fill=\"#0f172a\">Görüntü:</text><text x=\"662\" y=\"118\" font-size=\"11\" fill=\"#0f172a\">[−1, 1]</text><text x=\"662\" y=\"141\" font-size=\"11\" fill=\"#0f172a\">Periyot: 2π</text><text x=\"662\" y=\"164\" font-size=\"11\" fill=\"#7e22ce\">Çift fonksiyon</text><text x=\"662\" y=\"181\" font-size=\"10\" fill=\"#7e22ce\">(y eksenine sim.)</text><text x=\"662\" y=\"204\" font-size=\"11\" fill=\"#0f172a\">Sıfırlar:</text><text x=\"662\" y=\"221\" font-size=\"11\" fill=\"#0f172a\">π/2 + kπ</text><text x=\"662\" y=\"244\" font-size=\"10\" fill=\"#9a3412\">cos x =</text><text x=\"662\" y=\"259\" font-size=\"10\" fill=\"#9a3412\">sin(x + π/2)</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir düzgün çokgenin bir iç açısının ölçüsü, bir dış açısının ölçüsünün 4 katıdır. Bu çokgenin kenar sayısını ve köşegen sayısını bulunuz.",
+      "cevap": "1. adım: Bir dış açıya x dersek bir iç açı 4x olur. Bir köşedeki iç ve dış açı bütünler olduğundan x + 4x = 180° → 5x = 180° → x = 36°.\n2. adım: Dış açıların toplamı 360° olduğundan n = {kesir:360°|36°} = 10. Çokgen düzgün ongendir.\n3. adım: Köşegen sayısı = {kesir:n·(n − 3)|2} = {kesir:10·7|2} = 35.\nKontrol: İç açı 4 · 36° = 144° ve (10 − 2)·180° ÷ 10 = 144° olduğundan sonuç tutarlıdır.",
+      "ipucu": "Bir köşedeki iç açı ile dış açının toplamı 180°'dir; önce dış açıyı bulup n = {kesir:360°|dış açı} ile kenar sayısına geçiniz."
+    },
+    {
+      "soru": "Bir kenarı 4 cm olan düzgün altıgenin alanını, uzun köşegeninin ve kısa köşegeninin uzunluğunu bulunuz.",
+      "cevap": "1. adım: Düzgün altıgen merkezden köşelere çizilen doğru parçalarıyla kenarı 4 cm olan 6 eşkenar üçgene ayrılır.\n2. adım: Bir eşkenar üçgenin alanı {kesir:{us:4|2}·{kok:3}|4} = 4{kok:3} {us:cm|2} olduğundan altıgenin alanı 6 · 4{kok:3} = 24{kok:3} {us:cm|2} olur. (Formülle: {kesir:3·{us:4|2}·{kok:3}|2} = 24{kok:3}.)\n3. adım: Uzun köşegen merkezden geçer ve iki kenar uzunluğundadır: 2 · 4 = 8 cm.\n4. adım: Kısa köşegen, iki eşkenar üçgenin yüksekliği toplamıdır: 2 · {kesir:4·{kok:3}|2} = 4{kok:3} cm.",
+      "ipucu": "Düzgün altıgende çevrel çember yarıçapı kenara eşittir; şekli 6 eşkenar üçgene bölmek her uzunluğu ve alanı bulmanızı kolaylaştırır."
+    },
+    {
+      "soru": "Düzgün ABCDE beşgeninde [AC] ve [AD] köşegenleri çiziliyor. m(CAD) kaç derecedir? Bu sonuç A köşesindeki iç açı hakkında ne söyler?",
+      "cevap": "1. adım: Düzgün beşgenin bir iç açısı {kesir:(5 − 2)·180°|5} = 108°'dir.\n2. adım: ABC üçgeninde |AB| = |BC| ve m(B) = 108° olduğundan taban açıları m(BAC) = m(BCA) = {kesir:180° − 108°|2} = 36° olur.\n3. adım: Simetri nedeniyle AED üçgeninde de m(EAD) = 36°'dir.\n4. adım: m(CAD) = m(BAE) − m(BAC) − m(EAD) = 108° − 36° − 36° = 36°.\nSonuç: A köşesinden çıkan iki köşegen 108°'lik iç açıyı üç eşit 36°'lik parçaya böler.",
+      "ipucu": "Düzgün beşgende ardışık iki kenar ve aralarındaki köşegen, tepe açısı 108° olan bir ikizkenar üçgen oluşturur."
+    },
+    {
+      "soru": "sin({kesir:17π|6}) ve cos({kesir:25π|4}) değerlerini birim çember yardımıyla bulunuz.",
+      "cevap": "1. adım: {kesir:17π|6} = {kesir:12π|6} + {kesir:5π|6} = 2π + {kesir:5π|6}. Periyot 2π olduğundan sin({kesir:17π|6}) = sin({kesir:5π|6}).\n2. adım: {kesir:5π|6} = 150° II. bölgededir; referans açısı π − {kesir:5π|6} = {kesir:π|6} ve sinüs II. bölgede pozitiftir. Buna göre sin({kesir:17π|6}) = sin({kesir:π|6}) = {kesir:1|2}.\n3. adım: {kesir:25π|4} = {kesir:24π|4} + {kesir:π|4} = 6π + {kesir:π|4} = 3·(2π) + {kesir:π|4}. Buradan cos({kesir:25π|4}) = cos({kesir:π|4}) = {kesir:{kok:2}|2}.",
+      "ipucu": "Önce 2π'nin tam katlarını atarak açıyı [0, 2π) aralığına indiriniz, sonra P noktasının bulunduğu bölgeye göre işareti belirleyiniz."
+    },
+    {
+      "soru": "A = sin(−{kesir:π|2}) + cos(−{kesir:π|3}) − sin({kesir:π|6}) · cos(−π) ifadesinin değerini sinüsün tekliğini ve kosinüsün çiftliğini kullanarak hesaplayınız.",
+      "cevap": "1. adım: Sinüs tek fonksiyon olduğundan sin(−{kesir:π|2}) = −sin({kesir:π|2}) = −1.\n2. adım: Kosinüs çift fonksiyon olduğundan cos(−{kesir:π|3}) = cos({kesir:π|3}) = {kesir:1|2} ve cos(−π) = cos π = −1.\n3. adım: sin({kesir:π|6}) = {kesir:1|2}.\n4. adım: A = −1 + {kesir:1|2} − {kesir:1|2} · (−1) = −1 + {kesir:1|2} + {kesir:1|2} = 0.",
+      "ipucu": "sin(−x) = −sin x ve cos(−x) = cos x eşitlikleriyle tüm negatif açılardan kurtulunuz; işlem önceliğinde çarpmayı toplamadan önce yapınız."
+    },
+    {
+      "soru": "[0, 2π] aralığında f(x) = sin x ve g(x) = cos x fonksiyonlarının ikisinin birlikte azalan olduğu aralığı ve ikisinin birlikte negatif değer aldığı aralığı bulunuz.",
+      "cevap": "1. adım: sin x, [{kesir:π|2}, {kesir:3π|2}] aralığında azalandır; cos x, [0, π] aralığında azalandır. Kesişim [{kesir:π|2}, π] olur. Yani II. bölgede iki fonksiyon da azalır.\n2. adım: sin x, (π, 2π) aralığında negatiftir; cos x, ({kesir:π|2}, {kesir:3π|2}) aralığında negatiftir. Kesişim (π, {kesir:3π|2}) olur; bu da III. bölgedir.\nKontrol: x = {kesir:2π|3} için sin değeri {kesir:{kok:3}|2}'den, cos değeri −{kesir:1|2}'den itibaren ikisi de küçülmeye devam eder; x = {kesir:5π|4} için ikisi de −{kesir:{kok:2}|2} olup negatiftir.",
+      "ipucu": "Her fonksiyon için istenen özelliğin geçerli olduğu aralığı ayrı ayrı yazıp kesişimlerini alınız; grafik çizmek kesişimi görmeyi kolaylaştırır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki düzgün çokgenlerden hangisinin yalnızca kendi türünden karolarla bir düzlem boşluk kalmadan ve üst üste binmeden kaplanabilir?",
+      "secenekler": [
+        "Düzgün beşgen",
+        "Düzgün altıgen",
+        "Düzgün sekizgen",
+        "Düzgün onikigen"
+      ],
+      "dogru": 1,
+      "aciklama": "Kaplama için iç açı 360°'yi tam bölmelidir. Düzgün altıgenin iç açısı 120° ve 3 × 120° = 360° olur. Beşgende 108°, sekizgende 135°, onikigende 150° iç açıları 360°'yi tam bölmez."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir dış açısı 30° olan düzgün çokgenin köşegen sayısı kaçtır?",
+      "secenekler": [
+        "44",
+        "54",
+        "60",
+        "66"
+      ],
+      "dogru": 1,
+      "aciklama": "n = {kesir:360°|30°} = 12 kenarlıdır. Köşegen sayısı {kesir:12·(12 − 3)|2} = {kesir:108|2} = 54 olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdakilerden hangisi f(x) = cos x fonksiyonunun bir özelliği değildir?",
+      "secenekler": [
+        "Çift fonksiyondur.",
+        "Esas periyodu 2π'dir.",
+        "Görüntü kümesi [−1, 1] aralığıdır.",
+        "x = {kesir:π|2} noktasında maksimum değerini alır."
+      ],
+      "dogru": 3,
+      "aciklama": "cos({kesir:π|2}) = 0 olduğundan x = {kesir:π|2} kosinüsün bir sıfırıdır, maksimum noktası değildir. Kosinüs maksimum değeri olan 1'i x = 2kπ noktalarında alır. Diğer üç ifade doğrudur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "sin({kesir:13π|6}) + cos(−{kesir:2π|3}) toplamının değeri kaçtır?",
+      "secenekler": [
+        "−1",
+        "0",
+        "{kesir:1|2}",
+        "1"
+      ],
+      "dogru": 1,
+      "aciklama": "{kesir:13π|6} = 2π + {kesir:π|6} olduğundan sin({kesir:13π|6}) = sin({kesir:π|6}) = {kesir:1|2}. Kosinüs çift olduğundan cos(−{kesir:2π|3}) = cos({kesir:2π|3}) = −{kesir:1|2} (II. bölge). Toplam {kesir:1|2} − {kesir:1|2} = 0."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Düzgün beşgen karolarla bir düzlem boşluk kalmadan kaplanabilir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; bir köşede 3 beşgen buluşursa 3 × 108° = 324° olur ve 36°'lik boşluk kalır, 4 beşgen ise üst üste biner."
+        },
+        {
+          "metin": "f(x) = sin x tek fonksiyondur ve grafiği orijine göre simetriktir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; her x için sin(−x) = −sin x eşitliği sağlanır."
+        },
+        {
+          "metin": "f(x) = cos x fonksiyonu [0, π] aralığında azalandır.",
+          "dogru": true,
+          "aciklama": "Doğrudur; x, 0'dan π'ye artarken cos x değeri 1'den −1'e sürekli azalır."
+        },
+        {
+          "metin": "f: ℝ → ℝ, f(x) = sin x fonksiyonu örtendir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; görüntü kümesi [−1, 1] olduğundan örneğin 2 değer kümesinde olduğu hâlde hiçbir x'in görüntüsü değildir. Değer kümesi [−1, 1] alınırsa örten olur."
+        },
+        {
+          "metin": "Düzgün altıgenin uzun köşegeninin uzunluğu bir kenarının iki katıdır.",
+          "dogru": true,
+          "aciklama": "Doğrudur; uzun köşegen merkezden geçer ve iki eşkenar üçgenin kenarından oluşur: 2a."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Sol sütundaki kavramları sağ sütundaki uygun açıklamalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Dış açılar toplamı",
+          "Kenar sayısından bağımsız olarak her dışbükey çokgende 360°'dir"
+        ],
+        [
+          "Köşegen sayısı",
+          "n kenarlı çokgende {kesir:n·(n − 3)|2} formülüyle bulunur"
+        ],
+        [
+          "Çift fonksiyon",
+          "f(−x) = f(x) eşitliğini sağlar; cos x bu türdendir ve grafiği y eksenine göre simetriktir"
+        ],
+        [
+          "Tek fonksiyon",
+          "f(−x) = −f(x) eşitliğini sağlar; sin x bu türdendir ve grafiği orijine göre simetriktir"
+        ],
+        [
+          "Periyot",
+          "Her x için f(x + T) = f(x) eşitliğini sağlayan en küçük pozitif T sayısıdır"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir düzgün çokgenin bir dış açısı, 360°'nin çokgenin ___ sayısına bölümüne eşittir.",
+          "cevap": "kenar"
+        },
+        {
+          "metin": "Düzgün altıgen, merkezden köşelere çizilen doğru parçalarıyla altı eş ___ üçgene ayrılır.",
+          "cevap": "eşkenar"
+        },
+        {
+          "metin": "Sinüs ve kosinüs fonksiyonlarının esas periyodu ___ dir.",
+          "cevap": "2π"
+        },
+        {
+          "metin": "f(x) = cos x fonksiyonunun grafiği y eksenine göre simetrik olduğundan bu fonksiyon ___ fonksiyondur.",
+          "cevap": "çift"
+        },
+        {
+          "metin": "f(x) = sin x fonksiyonunun sıfırları k ∈ ℤ olmak üzere x = ___ biçimindedir.",
+          "cevap": "kπ"
+        }
+      ],
+      "kelimeler": [
+        "kenar",
+        "eşkenar",
+        "2π",
+        "çift",
+        "kπ"
+      ],
+      "fazla": [
+        "π",
+        "tek"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir marangoz, kare biçimindeki bir tahtanın dört köşesinden eş ikizkenar dik üçgenler keserek kenar uzunluğu 4 cm olan bir düzgün sekizgen elde ediyor. Kesilen üçgenlerin dik kenar uzunluğunu, başlangıçtaki karenin kenar uzunluğunu ve sekizgenin alanını bulunuz; sonucu formülle kontrol ediniz.",
+      "ipuclari": [
+        "1. adım: Kesilen üçgenin hipotenüsü sekizgenin bir kenarıdır; ikizkenar dik üçgende hipotenüs = dik kenar · {kok:2} bağıntısından dik kenarı bulunuz.",
+        "2. adım: Karenin bir kenarı, sekizgenin bir kenarı ile iki dik kenarın toplamıdır; kare alanını hesaplayınız.",
+        "3. adım: Kare alanından dört üçgenin alanını çıkarınız ve sonucu 2·{us:a|2}·(1 + {kok:2}) formülüyle karşılaştırınız."
+      ],
+      "cevap": "1. adım: Dik kenar x olsun. x·{kok:2} = 4 → x = {kesir:4|{kok:2}} = 2{kok:2} cm.\n2. adım: Karenin kenarı = 4 + 2 · 2{kok:2} = 4 + 4{kok:2} cm. Kare alanı = {us:(4 + 4{kok:2})|2} = 16 + 32{kok:2} + 32 = 48 + 32{kok:2} {us:cm|2}.\n3. adım: Bir köşe üçgeninin alanı {kesir:x · x|2} = {kesir:2{kok:2} · 2{kok:2}|2} = {kesir:8|2} = 4 {us:cm|2}; dört üçgen 16 {us:cm|2} eder.\n4. adım: Sekizgenin alanı = 48 + 32{kok:2} − 16 = 32 + 32{kok:2} = 32·(1 + {kok:2}) {us:cm|2}.\nKontrol: 2·{us:a|2}·(1 + {kok:2}) = 2 · 16 · (1 + {kok:2}) = 32·(1 + {kok:2}) {us:cm|2}; iki yol aynı sonucu verdiği için çözüm doğrudur."
+    }
+  ]
+}

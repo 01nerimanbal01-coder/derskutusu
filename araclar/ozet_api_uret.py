@@ -132,6 +132,7 @@ GÖRSELLER
 
 METİN GÖSTERİMİ (yalnız SVG ve "düz metin" alanları dışındaki metinlerde; site bu işaretleri HTML'e çevirir; başka süslü parantezli gösterim kullanma)
 - {koyu:metin} kalın; {us:x|2} üs (x²); {alt:H|2} alt indis (H₂); {kesir:pay|payda} kesir (pay ve paydada | olmasın); {kok:ifade} karekök, {kok:ifade|3} küp kök; {uzunluk:AB} |AB| (mutlak değer/uzunluk; {kesir} içinde | gerektiğinde de bu kullanılır); {ar:عربي} Arapça (yalnız Arapça/Kur'an/Mesleki Arapça derslerinde).
+- Alt ve üst simgeyi düz yazma (F_net, v_0, x^2, 10^-3 değil): F{alt:net}, v{alt:0}, {us:x|2}, {us:10|−3}; Δ için Delta yazma.
 - √ ∛ ∜ karakterlerini (ve &#8730; gibi karşılıklarını) ve LaTeX'i ($...$, \\frac) asla kullanma. Çarpma için × veya ·, bölme için ÷, eksi için − kullanılabilir.
 - Şu kelime ve kalıplar hiçbir alanda geçmesin (yayın denetimi reddeder): "ders kitabı/kitabı/kitabın/kitabının" ile başlayan atıflar, "MEB kitabı", "kitapta", "kitaptaki", "kitaba göre", "kitabın", "ünitede" (bunun yerine "bu ünite kapsamında" de), "özgün özet", "bu satırda", "kaynak notu". Metin kitaptan alıntı değil, özgün anlatım olmalı.
 
@@ -903,6 +904,48 @@ def tarih_al(ctx, hafta):
     return ctx['tarihler'][hafta]
 
 
+# Fen ve matematikte düz yazılmış alt/üst simge site gösterimine çevrilir: F_net → F{alt:net}, 10^-24 → {us:10|−24}.
+SIMGE_DERS = re.compile(r'^\d+-(matematik|fizik|kimya|biyoloji|fen-bilimleri)$')
+_S_DELTA = re.compile(r'(?<![^\W_])Delta_?(?=[^\W_])')
+_S_ALT = re.compile(r'(?<!\w)([^\W\d_]{1,6})_([^\W_]{1,12}[⁺⁻]*)(?!\w)')     # dosya_adi_gibi zincirler eşleşmez
+_S_ALT_P = re.compile(r'(?<!\w)([^\W\d_]{1,6})_\(([^()]{1,24})\)')            # a_(n-1)
+_S_ALT_K = re.compile(r'(?<=[\])])_([^\W_]{1,6})(?!\w)')                      # [H+]_1
+_S_US = re.compile(r'(\([^()]{1,30}\)|\[[^\[\]]{1,12}\]|\{[a-z]+:[^{}]{1,40}\}|[^\W_]{1,12})\^'
+                 r'(\([^()^]{1,30}\)|[-−+]?[^\W_]{1,8}(?:[.,]\d+)?(?:[+−-](?=[\s,.;:)—]|$))?)')
+_S_URL = re.compile(r'https?://\S+')
+
+
+def _simge_metin(s):
+    if '_' not in s and '^' not in s and 'Delta' not in s:
+        return s
+
+    def us(m):
+        ic = m.group(2)
+        if ic.startswith('(') and ic.endswith(')'):
+            ic = ic[1:-1]
+        return '{us:' + m.group(1) + '|' + re.sub(r'^-', '−', ic) + '}'
+    parcalar, urller = _S_URL.split(s), _S_URL.findall(s)
+    for i, p in enumerate(parcalar):
+        p = _S_DELTA.sub('Δ', p)
+        p = _S_ALT_P.sub(lambda m: f'{m.group(1)}{{alt:{m.group(2)}}}', p)
+        p = _S_ALT.sub(lambda m: f'{m.group(1)}{{alt:{m.group(2)}}}', p)
+        p = _S_ALT_K.sub(lambda m: f'{{alt:{m.group(1)}}}', p)
+        parcalar[i] = _S_US.sub(us, p)
+    return parcalar[0] + ''.join(u + p for u, p in zip(urller, parcalar[1:]))
+
+
+def duz_simge_cevir(d):
+    """Gösterim çözücüsünden geçen içerik alanlarında (görseller, başlık/meta alanları hariç) düz simgeyi çevirir."""
+    def gez(x):
+        if isinstance(x, dict):
+            return {k: (v if k in ('gorsel', 'tur', 'tip') else gez(v)) for k, v in x.items()}
+        if isinstance(x, list):
+            return [gez(v) for v in x]
+        return _simge_metin(x) if isinstance(x, str) else x
+    icerik = ('bolumler', 'ciktilar', 'etkinlikler', 'giris', 'kavramlar', 'ornekler', 'ozet', 'terimler')
+    return {k: (gez(v) if k in icerik else v) for k, v in d.items()}
+
+
 def denetle_ve_kaydet(metin, kimlik, hafta, ctx):
     """(sorunlar, kb). sorunlar boşsa dosyalar yazıldı."""
     t = tarih_al(ctx, hafta)
@@ -912,6 +955,8 @@ def denetle_ve_kaydet(metin, kimlik, hafta, ctx):
         d = json_ayikla(metin)
     except (ValueError, json.JSONDecodeError) as exc:
         return [f'JSON çözülemedi: {exc}'], 0
+    if isinstance(d, dict) and SIMGE_DERS.match(kimlik):
+        d = duz_simge_cevir(d)
     sorunlar = dogrula(d, ctx['e'], ctx['sayfa'])
     if sorunlar:
         return sorunlar, 0

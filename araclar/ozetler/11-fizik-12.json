@@ -53,7 +53,7 @@
         {
           "tur": "ipucu",
           "baslik": "Ortalama İvme Hesabı",
-          "metin": "Belirli iki nokta arasındaki ortalama ivme sorulduğunda a_ort = (v_son - v_ilk) / Δt vektörel fark bağıntısı kullanılır."
+          "metin": "Belirli iki nokta arasındaki ortalama ivme sorulduğunda a{alt:ort} = (v{alt:son} - v{alt:ilk}) / Δt vektörel fark bağıntısı kullanılır."
         }
       ]
     },
@@ -82,7 +82,7 @@
   "ornekler": [
     {
       "soru": "Yarıçapı 2 metre olan çembersel bir yörüngede sabit süratle dolanan bir cisim 12 saniyede 6 tam tur atmaktadır. Cismin periyodunu, frekansını, açısal hızını ve çizgisel hız büyüklüğünü hesaplayınız (π = 3 alınız).",
-      "cevap": "Cisim 12 saniyede 6 tur atıyorsa 1 saniyede 6 / 12 = 0,5 tur atar; dolayısıyla frekansı f = 0,5 Hz (s^-1) ve periyodu T = 1 / f = 2 saniyedir. Açısal hızı ω = 2·π / T = (2 · 3) / 2 = 3 rad/s olur. Çizgisel hız büyüklüğü ise v = ω · r = 3 · 2 = 6 m/s olarak bulunur."
+      "cevap": "Cisim 12 saniyede 6 tur atıyorsa 1 saniyede 6 / 12 = 0,5 tur atar; dolayısıyla frekansı f = 0,5 Hz ({us:s|−1}) ve periyodu T = 1 / f = 2 saniyedir. Açısal hızı ω = 2·π / T = (2 · 3) / 2 = 3 rad/s olur. Çizgisel hız büyüklüğü ise v = ω · r = 3 · 2 = 6 m/s olarak bulunur."
     },
     {
       "soru": "Düzgün çembersel hareket yapan bir cismin sürati sabit olduğu hâlde bu hareket neden ivmeli bir hareket olarak kabul edilir?",
@@ -90,11 +90,11 @@
     },
     {
       "soru": "Yarıçapları sırasıyla r ve 3r olan K ve L kasnakları bir kayışla birbirine bağlanarak döndürülmektedir. Kasnakların kenarındaki noktaların çizgisel hız büyüklükleri oranı {kesir:v{us:K| }|v{us:L| }} ve açısal hız büyüklükleri oranı {kesir:ω{us:K| }|ω{us:L| }} kaçtır?",
-      "cevap": "Bir kayışla birbirine bağlı kasnakların kenarındaki noktalar aynı sürede eşit miktarda kayış ilerlettiği için çizgisel süratleri birbirine eşittir; dolayısıyla v_K / v_L = 1 olur. v = ω · r bağıntısından ω_K · r = ω_L · 3r yazıldığında açısal hızlarının oranı ω_K / ω_L = 3 olarak bulunur."
+      "cevap": "Bir kayışla birbirine bağlı kasnakların kenarındaki noktalar aynı sürede eşit miktarda kayış ilerlettiği için çizgisel süratleri birbirine eşittir; dolayısıyla v{alt:K} / v{alt:L} = 1 olur. v = ω · r bağıntısından ω{alt:K} · r = ω{alt:L} · 3r yazıldığında açısal hızlarının oranı ω{alt:K} / ω{alt:L} = 3 olarak bulunur."
     },
     {
       "soru": "Sürtünmesiz yatay düzlemde 1,5 metre uzunluğundaki bir ipin ucuna bağlı 2 kg kütleli cisim, 6 m/s sabit çizgisel süratle düzgün çembersel hareket yapmaktadır. Cismin merkezcil ivmesini ve ipteki gerilme kuvvetini bulunuz.",
-      "cevap": "Merkezcil ivme a = v^2 / r = 6^2 / 1,5 = 36 / 1,5 = 24 m/s^2 olur. Yatay düzlemde merkezcil kuvvet doğrudan ipteki gerilme kuvvetine eşit olduğundan T_ip = F_m = m · a = 2 · 24 = 48 Newton bulunur."
+      "cevap": "Merkezcil ivme a = {us:v|2} / r = {us:6|2} / 1,5 = 36 / 1,5 = 24 m/{us:s|2} olur. Yatay düzlemde merkezcil kuvvet doğrudan ipteki gerilme kuvvetine eşit olduğundan T{alt:ip} = F{alt:m} = m · a = 2 · 24 = 48 Newton bulunur."
     },
     {
       "soru": "Düzgün çembersel hareket yapan bir cismin konum vektörü (r), çizgisel hız vektörü (v) ve merkezcil ivme vektörü (a) arasındaki yön ilişkilerini açıklayınız.",
@@ -156,7 +156,7 @@
         "4 Newton"
       ],
       "dogru": 3,
-      "aciklama": "Yatay düzlemde ip gerilmesi merkezcil kuvvete eşittir: T = F_m = m · ω² · r = 0,5 · (4)² · 2 = 0,5 · 16 · 2 = 16 N."
+      "aciklama": "Yatay düzlemde ip gerilmesi merkezcil kuvvete eşittir: T = F{alt:m} = m · ω² · r = 0,5 · (4)² · 2 = 0,5 · 16 · 2 = 16 N."
     },
     {
       "tur": "dy",
@@ -240,7 +240,7 @@
     {
       "tur": "ogretici",
       "soru": "Dünya'nın kendi dönme ekseni etrafındaki hareketini düşünerek Ekvator üzerindeki bir K noktası ile 60° Kuzey paralelindeki bir L noktasının periyot, açısal hız, çizgisel hız ve merkezcil ivme büyüklüklerini karşılaştırınız.",
-      "cevap": "Dünya katı bir küre olarak kendi ekseni etrafında dönerken üzerindeki tüm noktalar bir tam turunu aynı sürede (24 saatte) tamamlar. Bu nedenle K ve L noktalarının periyotları (T_K = T_L), frekansları (f_K = f_L) ve açısal hızları (ω_K = ω_L) birbirine eşittir. Ancak Ekvator'daki K noktasının dönme eksenine olan dik uzaklığı (r_K), 60° paralelindeki L noktasının uzaklığından (r_L) daha büyüktür. v = ω · r ve a = ω² · r bağıntıları gereğince K noktasının çizgisel hızı (v_K > v_L) ve merkezcil ivmesi (a_K > a_L) L noktasından daha büyüktür.",
+      "cevap": "Dünya katı bir küre olarak kendi ekseni etrafında dönerken üzerindeki tüm noktalar bir tam turunu aynı sürede (24 saatte) tamamlar. Bu nedenle K ve L noktalarının periyotları (T{alt:K} = T{alt:L}), frekansları (f{alt:K} = f{alt:L}) ve açısal hızları (ω{alt:K} = ω{alt:L}) birbirine eşittir. Ancak Ekvator'daki K noktasının dönme eksenine olan dik uzaklığı (r{alt:K}), 60° paralelindeki L noktasının uzaklığından (r{alt:L}) daha büyüktür. v = ω · r ve a = ω² · r bağıntıları gereğince K noktasının çizgisel hızı (v{alt:K} > v{alt:L}) ve merkezcil ivmesi (a{alt:K} > a{alt:L}) L noktasından daha büyüktür.",
       "ipuclari": [
         "Birlikte dönen katı cisim üzerindeki tüm noktaların T, f ve ω değerlerinin eşit olduğunu belirtiniz.",
         "Ekvator'daki noktanın dönme eksenine olan dik yarıçapının (r) kutuplara yakın noktadan büyük olduğunu açıklayınız.",

@@ -82,27 +82,27 @@
   "ornekler": [
     {
       "soru": "Sabit sıcaklıkta gerçekleşen 2X(g) + Y(g) -> Z(g) tepkimesi için yapılan deneylerde: 1. Deneyde [X]=0,1 M, [Y]=0,2 M iken r = 4·10{us:-4| } M/s; 2. Deneyde [X]=0,2 M, [Y]=0,2 M iken r = 8·10{us:-4| } M/s; 3. Deneyde [X]=0,2 M, [Y]=0,4 M iken r = 3,2·10{us:-3| } M/s ölçülmüştür. Tepkimenin hız bağıntısını ve derecesini bulunuz.",
-      "cevap": "1 ve 2. deneylerde [Y]=0,2 M sabitken [X] derişimi 2 katına çıktığında hız 4·10^-4'ten 8·10^-4'e (2 katına) çıkmıştır; tepkime X'e göre 1. derecedendir. 2 ve 3. deneylerde [X]=0,2 M sabitken [Y] derişimi 0,2 M'dan 0,4 M'a (2 katına) çıktığında hız 8·10^-4'ten 32·10^-4'e (4 katına = 2^2) çıkmıştır; tepkime Y'ye göre 2. derecedendir. Hız bağıntısı r = k · [X] · [Y]^2 ve tepkime derecesi 1 + 2 = 3'tür."
+      "cevap": "1 ve 2. deneylerde [Y]=0,2 M sabitken [X] derişimi 2 katına çıktığında hız 4·{us:10|−4}'ten 8·{us:10|−4}'e (2 katına) çıkmıştır; tepkime X'e göre 1. derecedendir. 2 ve 3. deneylerde [X]=0,2 M sabitken [Y] derişimi 0,2 M'dan 0,4 M'a (2 katına) çıktığında hız 8·{us:10|−4}'ten 32·{us:10|−4}'e (4 katına = {us:2|2}) çıkmıştır; tepkime Y'ye göre 2. derecedendir. Hız bağıntısı r = k · [X] · {us:[Y]|2} ve tepkime derecesi 1 + 2 = 3'tür."
     },
     {
       "soru": "Bir önceki soruda hız bağıntısı r = k · [X] · [Y]{us:2| } olarak bulunan tepkimenin hız sabiti (k) değerini ve birimini hesaplayınız.",
-      "cevap": "1. deney verileri hız bağıntısında yerine yazılırsa: 4·10^-4 = k · (0,1) · (0,2)^2 -> 4·10^-4 = k · 0,1 · 0,04 -> 4·10^-4 = k · 4·10^-3 -> k = 0,1 bulunur. Tepkime derecesi n = 3 olduğu için k'nin birimi (L/mol)^(3-1) · (1/s) = L^2 / (mol^2 · s) olur."
+      "cevap": "1. deney verileri hız bağıntısında yerine yazılırsa: 4·{us:10|−4} = k · (0,1) · {us:(0,2)|2} -> 4·{us:10|−4} = k · 0,1 · 0,04 -> 4·{us:10|−4} = k · 4·{us:10|−3} -> k = 0,1 bulunur. Tepkime derecesi n = 3 olduğu için k'nin birimi {us:(L/mol)|3-1} · (1/s) = {us:L|2} / ({us:mol|2} · s) olur."
     },
     {
       "soru": "Gaz fazında gerçekleşen ve deneysel hız bağıntısı r = k · [A]{us:2| } · [B] olan bir tepkimede sabit sıcaklıkta kabın hacmi yarıya düşürülürse tepkime hızı ve k hız sabiti nasıl değişir?",
-      "cevap": "Sabit sıcaklıkta kabın hacmi yarıya (V/2) düşürülürse M = n/V bağıntısına göre hem A hem de B gazının molar derişimi 2 katına çıkar. Hız bağıntısında yerine yazılırsa r' = k · (2[A])^2 · (2[B]) = 4 · 2 · r = 8r olur; yani tepkime hızı 8 katına çıkar. Sıcaklık sabit olduğu için k hız sabiti değişmez."
+      "cevap": "Sabit sıcaklıkta kabın hacmi yarıya (V/2) düşürülürse M = n/V bağıntısına göre hem A hem de B gazının molar derişimi 2 katına çıkar. Hız bağıntısında yerine yazılırsa r' = k · {us:(2[A])|2} · (2[B]) = 4 · 2 · r = 8r olur; yani tepkime hızı 8 katına çıkar. Sıcaklık sabit olduğu için k hız sabiti değişmez."
     },
     {
       "soru": "Sabit sıcaklıkta A(g) + 2B(g) + C(g) -> Ürünler tepkimesinde: [B] ve [C] sabitken [A] 3 katına çıkarıldığında hız 3 katına çıkıyor; [A] ve [C] sabitken [B] 2 katına çıkarıldığında hız 4 katına çıkıyor; [A] ve [B] sabitken [C] 4 katına çıkarıldığında hız değişmiyor. Bu tepkimenin hız denklemini yazarak mekanizmalı olup olmadığını açıklayınız.",
-      "cevap": "Verilere göre hız A ile 1. dereceden, B ile 2. dereceden orantılıdır; C derişimi hızı etkilemediği için (0. derece) hız denkleminde yer almaz. Hız bağıntısı r = k · [A] · [B]^2 şeklindedir. Bu bağıntı net tepkime denklemindeki C maddesini içermediği için tepkime çok basamaklıdır (mekanizmalıdır)."
+      "cevap": "Verilere göre hız A ile 1. dereceden, B ile 2. dereceden orantılıdır; C derişimi hızı etkilemediği için (0. derece) hız denkleminde yer almaz. Hız bağıntısı r = k · [A] · {us:[B]|2} şeklindedir. Bu bağıntı net tepkime denklemindeki C maddesini içermediği için tepkime çok basamaklıdır (mekanizmalıdır)."
     },
     {
       "soru": "Hız sabiti (k) birimi L{us:3| } / (mol{us:3| } · s) olan homojen gaz fazındaki tek basamaklı bir tepkimenin derecesi kaçtır ve kabın hacmi 2 katına çıkarılırsa hız nasıl değişir?",
-      "cevap": "k birimi (L/mol)^(n-1) · (1/s) formülüyle bulunduğundan n - 1 = 3 -> n = 4 olur; yani tepkimenin derecesi 4'tür. Kabın hacmi 2 katına çıkarılırsa gazların derişimi yarıya (1/2) düşer; 4. dereceden tepkimede hız (1/2)^4 = 1/16 katına iner."
+      "cevap": "k birimi {us:(L/mol)|n-1} · (1/s) formülüyle bulunduğundan n - 1 = 3 -> n = 4 olur; yani tepkimenin derecesi 4'tür. Kabın hacmi 2 katına çıkarılırsa gazların derişimi yarıya (1/2) düşer; 4. dereceden tepkimede hız {us:(1/2)|4} = 1/16 katına iner."
     },
     {
       "soru": "Hız denklemi r = k · [X]{us:2| } ve hız sabiti k = 0,5 L/(mol·s) olan bir tepkimede X'in başlangıç derişimi 0,4 mol/L alındığında başlangıç hızı kaç mol/(L·s) olur?",
-      "cevap": "Verilen değerler r = k · [X]^2 bağıntısında yerine konulursa: r = 0,5 · (0,4)^2 = 0,5 · 0,16 = 0,08 mol/(L·s) (yani 8·10^-2 M/s) olarak tahmin edilir."
+      "cevap": "Verilen değerler r = k · {us:[X]|2} bağıntısında yerine konulursa: r = 0,5 · {us:(0,4)|2} = 0,5 · 0,16 = 0,08 mol/(L·s) (yani 8·{us:10|−2} M/s) olarak tahmin edilir."
     }
   ],
   "etkinlikler": [
@@ -130,7 +130,7 @@
         "mol / (L · s)"
       ],
       "dogru": 1,
-      "aciklama": "Tepkime derecesi n = 2 + 2 = 4'tür. k birimi = (L/mol)^(n-1) · (1/s) = (L/mol)³ · (1/s) = L³ / (mol³ · s) olur."
+      "aciklama": "Tepkime derecesi n = 2 + 2 = 4'tür. k birimi = {us:(L/mol)|n-1} · (1/s) = (L/mol)³ · (1/s) = L³ / (mol³ · s) olur."
     },
     {
       "tur": "coktan",
@@ -156,7 +156,7 @@
         "8 katına çıkar."
       ],
       "dogru": 3,
-      "aciklama": "r_yeni = k · (4·[N₂]) · (1/2·[H₂])² = 4 · (1/4) · r = 1 · r olur; yani başlangıç hızı değişmez."
+      "aciklama": "r{alt:yeni} = k · (4·[N₂]) · (1/2·[H₂])² = 4 · (1/4) · r = 1 · r olur; yani başlangıç hızı değişmez."
     },
     {
       "tur": "dy",
@@ -244,7 +244,7 @@
       "ipuclari": [
         "Çok basamaklı tepkimelerde hızı yavaş basamağın belirlediğini ifade ediniz.",
         "Deney tablosunda kontrol değişkenleri (biri sabitken diğerini değiştirme) yöntemini açıklayınız.",
-        "Derişim katı ile hız katı arasındaki üs ilişkisini (k^x) belirtiniz."
+        "Derişim katı ile hız katı arasındaki üs ilişkisini ({us:k|x}) belirtiniz."
       ]
     }
   ],
@@ -252,7 +252,7 @@
     "Kimyasal tepkimelerin hız bağıntısı net denklemden değil, sabit sıcaklıktaki deneysel başlangıç derişimi-başlangıç hızı verilerinden belirlenir.",
     "Diğer tepkenler sabitken bir maddenin derişimi 2 katına çıkarıldığında hız 1, 2, 4, 8 katına çıkıyorsa o maddeye göre derece sırasıyla 0, 1, 2, 3 olur.",
     "Hız bağıntısındaki derişim üslerinin toplamına tepkime derecesi (mertebesi, n) adı verilir.",
-    "Herhangi bir deneyin verileri hız denkleminde yerine konularak k hız sabitinin sayısal değeri bulunur; birimi (L/mol)^(n-1) · (1/s) formülüyle belirlenir.",
+    "Herhangi bir deneyin verileri hız denkleminde yerine konularak k hız sabitinin sayısal değeri bulunur; birimi {us:(L/mol)|n-1} · (1/s) formülüyle belirlenir.",
     "Sabit sıcaklıkta derişim veya kap hacmi değiştiğinde tepkime hızı hız denklemine göre değişir, ancak k hız sabiti değişmez."
   ]
 }

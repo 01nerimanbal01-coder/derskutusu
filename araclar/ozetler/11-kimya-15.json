@@ -1,0 +1,573 @@
+{
+  "ad": "11-kimya-15",
+  "sinif": 11,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "2. Tema: Çeşitlilik",
+  "konu": "Fiziksel ve Kimyasal Değişimlerde Denge: Deneysel Verilerden Denge Sabiti İfadesinin Keşfi, Tahminler ve İfade Yazma Örüntüleri",
+  "ciktilar": [
+    "KİM.11.2.2. Tepkimelerdeki denge sürecine ilişkin bilimsel gözleme dayalı tahminde bulunabilme",
+    "KİM.11.2.2.d) Bilimsel verilerden hareketle tahminlerinin geçerliliğini sorgular.",
+    "KİM.11.2.3. Denge sabiti ifadesinin oluşturulmasına ilişkin tümevarımsal akıl yürütebilme",
+    "KİM.11.2.3.a) Homojen ve heterojen denge tepkimelerinin denge sabiti ifadelerinde keşfettiği örüntüyü matematiksel olarak modeller."
+  ],
+  "giris": "Geçen hafta Kc ve Kp bağıntılarını, BDD tablosunu ve denklem işlemlerini adım adım uyguladık. Bu hafta bir adım geri çekilip şu soruyu soruyoruz: {koyu:Denge sabiti ifadesi neden bu biçimdedir ve bunu deney verilerinden kendimiz nasıl keşfedebiliriz?} Farklı deneylerin sonuçlarından {koyu:tümevarımla} genel kurala ulaşacak, derişim-zaman grafiklerinden denge süreci hakkında tahminler yapıp bu tahminlerin geçerliliğini verilerle sınayacağız. Ayrıca {koyu:buharlaşma, süblimleşme ve çözünme} gibi fiziksel değişimlerin ve {koyu:iyonlu tepkimelerin} denge ifadelerini yazacak, verilen bir ifadeden tepkime denklemine geri dönmeyi ve Kc biriminin nasıl belirlendiğini öğreneceğiz.",
+  "ozet": [
+    "{koyu:Tümevarım:} Aynı sıcaklıkta farklı başlangıçlarla kurulan dengelerde yalnızca katsayıları üs alan ürün/giren oranı sabit kalır; denge sabiti ifadesi bu deneysel örüntünün matematiksel modelidir.",
+    "{koyu:Tahmin sınaması:} Az sayıda veriyle uyumlu görünen bir hipotez, yeni verilerle çürüyebilir; bir kuralın geçerliliği ancak çok sayıda ve çeşitli deneyle desteklendiğinde güçlenir.",
+    "{koyu:Grafik okuma:} Derişim-zaman grafiğinde eğrilerin yataylaştığı an denge anıdır; dengede derişimler eşit değil sabittir ve değişim miktarlarının oranı tepkime katsayılarını verir.",
+    "{koyu:K büyüklüğü:} K > 10³ ise dengede ürünler, K < 10⁻³ ise girenler baskındır; ancak K tepkimenin hızı hakkında bilgi vermez.",
+    "{koyu:Fiziksel dengeler:} Sıvı-buhar dengesinde Kp suyun buhar basıncına, çözünme dengesinde Kc doygun çözeltinin derişimine karşılık gelir ve ikisi de yalnız sıcaklıkla değişir.",
+    "{koyu:Ters modelleme ve birim:} Denge ifadesinde pay ürünleri, payda girenleri, üsler katsayıları gösterir; Kc birimi (mol/L) üzeri (ürün üsleri toplamı − giren üsleri toplamı) olarak bulunur."
+  ],
+  "bolumler": [
+    {
+      "baslik": "1. Deneysel Verilerden Denge Sabitine: Tümevarımsal Keşif",
+      "metin": [
+        "Bilim insanları denge sabiti ifadesini önce bir formül olarak yazıp sonra deneylere uygulamadı; tam tersine, {koyu:çok sayıda deneyin sonuçlarındaki ortak örüntüyü} fark ederek bu ifadeye ulaştı. Norveçli bilim insanları Guldberg ve Waage 1864'te yayımladıkları çalışmalarda, aynı sıcaklıkta farklı miktarlarda maddeyle başlatılan tepkimelerin denge karışımlarını incelediler ve belirli bir oranın her seferinde aynı çıktığını gösterdiler. Tek tek gözlemlerden genel bir kurala ulaşan bu düşünme biçimine {koyu:tümevarımsal akıl yürütme} denir. Bu hafta biz de aynı yolu izleyerek H₂(g) + I₂(g) ⇌ 2HI(g) tepkimesi için kurgulanmış dört deneyin denge verilerini inceleyeceğiz (sayılar hesap kolaylığı için seçilmiştir).",
+        "Dört deney aynı sıcaklıkta, 1 litrelik kaplarda ama farklı başlangıç miktarlarıyla yapılmıştır; bu nedenle denge derişimleri her deneyde farklıdır. İlk akla gelen hipotez, ürün derişiminin giren derişimlerinin çarpımına oranının sabit olduğudur: {kesir:[HI]|[H₂]·[I₂]}. Deney 1 ve Deney 2'de bu oran 16 çıkar ve hipotez doğru görünür. Ancak Deney 3'te 20, Deney 4'te 80 bulunur; yani {koyu:iki uyumlu veri hipotezi kanıtlamaya yetmemiş}, yeni veriler hipotezi çürütmüştür. İkinci hipotezde HI derişiminin karesi alınır: {kesir:[HI]²|[H₂]·[I₂]}. Bu oran dört deneyde de 64 çıkar. Dikkat edilirse üs olarak kullanılan 2, denkleştirilmiş denklemde HI'nin katsayısıdır.",
+        "Farklı tepkimeler için aynı inceleme yapıldığında hep aynı örüntü ortaya çıkar: {koyu:Ürün derişimleri paya, giren derişimleri paydaya yazılır ve her derişimin üssü o maddenin denkleştirilmiş denklemdeki katsayısına eşittir.} Bu örüntünün genelleştirilmiş matematiksel modeli aA + bB ⇌ cC + dD için K = {kesir:[C]ᶜ·[D]ᵈ|[A]ᵃ·[B]ᵇ} ifadesidir. Böylece geçen hafta hız sabitlerinin oranından türettiğimiz bağıntıya bu kez bağımsız bir yoldan, doğrudan deney verilerinden ulaşmış oluyoruz. İki farklı yöntemin aynı sonucu vermesi, modele olan güvenimizi artıran önemli bir bilimsel kanıttır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Deney (aynı sıcaklık, 1 L)",
+          "[H₂] (M)",
+          "[I₂] (M)",
+          "[HI] (M)",
+          "Hipotez 1: [HI] / ([H₂]·[I₂])",
+          "Hipotez 2: [HI]² / ([H₂]·[I₂])"
+        ],
+        "satirlar": [
+          [
+            "Deney 1",
+            "0,50",
+            "0,50",
+            "4,0",
+            "4,0 ÷ 0,25 = 16",
+            "16 ÷ 0,25 = 64"
+          ],
+          [
+            "Deney 2",
+            "1,00",
+            "0,25",
+            "4,0",
+            "4,0 ÷ 0,25 = 16",
+            "16 ÷ 0,25 = 64"
+          ],
+          [
+            "Deney 3",
+            "0,20",
+            "0,80",
+            "3,2",
+            "3,2 ÷ 0,16 = 20",
+            "10,24 ÷ 0,16 = 64"
+          ],
+          [
+            "Deney 4",
+            "0,10",
+            "0,10",
+            "0,80",
+            "0,80 ÷ 0,01 = 80",
+            "0,64 ÷ 0,01 = 64"
+          ],
+          [
+            "Sonuç",
+            "değişken",
+            "değişken",
+            "değişken",
+            "Sabit değil: hipotez reddedilir",
+            "Her deneyde sabit: Kc = 64"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Tümevarımsal Akıl Yürütme",
+          "metin": "Tek tek gözlem ve deney sonuçlarından hareketle genel bir kurala veya örüntüye ulaşma yöntemidir. Kimyasal dengede bu yöntemle, farklı başlangıç koşullarından bağımsız olarak sabit kalan {koyu:denge sabiti ifadesi} keşfedilir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "İki Uyumlu Veri Kanıt Değildir",
+          "metin": "Hipotez 1, ilk iki deneyde mükemmel çalıştı ama üçüncü ve dördüncü deneyde çöktü. Bir kuralın geçerliliğini sınamak için {koyu:farklı koşulları kapsayan çok sayıda veri} kullanılmalı; tek bir aykırı veri bile hipotezin gözden geçirilmesini gerektirir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Tümevarım: Hangi Oran Her Deneyde Sabit Kalıyor?</text><text x=\"380\" y=\"48\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">H₂(g) + I₂(g) ⇌ 2HI(g) — aynı sıcaklık, farklı başlangıç miktarları, 1 L kap</text><rect x=\"30\" y=\"60\" width=\"700\" height=\"32\" rx=\"6\" fill=\"#dbeafe\" stroke=\"#2563eb\"/><text x=\"75\" y=\"81\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">Deney</text><text x=\"160\" y=\"81\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">[H₂]</text><text x=\"240\" y=\"81\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">[I₂]</text><text x=\"320\" y=\"81\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">[HI]</text><text x=\"470\" y=\"81\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#991b1b\">Hipotez 1: [HI]/([H₂]·[I₂])</text><text x=\"640\" y=\"81\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Hipotez 2: [HI]²/([H₂]·[I₂])</text><rect x=\"30\" y=\"96\" width=\"700\" height=\"28\" rx=\"5\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/><text x=\"75\" y=\"115\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">1</text><text x=\"160\" y=\"115\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">0,50</text><text x=\"240\" y=\"115\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">0,50</text><text x=\"320\" y=\"115\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">4,0</text><text x=\"470\" y=\"115\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">16</text><text x=\"640\" y=\"115\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">64</text><rect x=\"30\" y=\"128\" width=\"700\" height=\"28\" rx=\"5\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\"/><text x=\"75\" y=\"147\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">2</text><text x=\"160\" y=\"147\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">1,00</text><text x=\"240\" y=\"147\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">0,25</text><text x=\"320\" y=\"147\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">4,0</text><text x=\"470\" y=\"147\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">16</text><text x=\"640\" y=\"147\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">64</text><rect x=\"30\" y=\"160\" width=\"700\" height=\"28\" rx=\"5\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/><text x=\"75\" y=\"179\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">3</text><text x=\"160\" y=\"179\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">0,20</text><text x=\"240\" y=\"179\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">0,80</text><text x=\"320\" y=\"179\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">3,2</text><text x=\"470\" y=\"179\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">20  (uymadı!)</text><text x=\"640\" y=\"179\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">64</text><rect x=\"30\" y=\"192\" width=\"700\" height=\"28\" rx=\"5\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\"/><text x=\"75\" y=\"211\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">4</text><text x=\"160\" y=\"211\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">0,10</text><text x=\"240\" y=\"211\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">0,10</text><text x=\"320\" y=\"211\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">0,80</text><text x=\"470\" y=\"211\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">80  (uymadı!)</text><text x=\"640\" y=\"211\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">64</text><rect x=\"30\" y=\"232\" width=\"700\" height=\"54\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"380\" y=\"255\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#14532d\">Sonuç: [HI]² / ([H₂]·[I₂]) = 64 her deneyde sabit</text><text x=\"380\" y=\"275\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#166534\">Genelleme: derişimlerin üsleri = denkleştirilmiş tepkimedeki katsayılar</text></svg>"
+    },
+    {
+      "baslik": "2. Derişim-Zaman Grafiklerinden Denge Sürecine İlişkin Tahminler",
+      "metin": [
+        "Denge sürecini gözlemlemenin en güçlü yollarından biri {koyu:derişim-zaman grafiği} çizmektir. 1 litrelik kapalı bir kaba sabit sıcaklıkta 1,0 mol renksiz N₂O₄ gazı konulduğunu düşünelim. Kapta kısa sürede kahverengi bir renk belirir, çünkü N₂O₄ ayrışarak kahverengi NO₂ gazını oluşturur. Renk önce hızla koyulaşır, sonra koyulaşma yavaşlar ve bir süre sonra {koyu:renk artık değişmez}. Ölçümler, bu anda N₂O₄ derişiminin 0,8 M'de, NO₂ derişiminin 0,4 M'de sabitlendiğini gösterir. Grafikte eğrilerin yataylaştığı bu an, sistemin dengeye ulaştığı andır.",
+        "Grafikten yapılabilecek sağlam bir çıkarım, {koyu:değişim miktarlarının oranının tepkime katsayılarını vermesidir}. N₂O₄ derişimi 1,0'dan 0,8'e inerek 0,2 M azalmış, NO₂ derişimi 0'dan 0,4'e çıkarak 0,4 M artmıştır. Oran 0,2 : 0,4 = 1 : 2 olduğuna göre denklem N₂O₄(g) ⇌ 2NO₂(g) şeklindedir. Böylece denge ifadesini de veriden kurabiliriz: Kc = {kesir:[NO₂]²|[N₂O₄]} = {kesir:(0,4)²|0,8} = {kesir:0,16|0,8} = 0,2. Aynı sıcaklıkta farklı miktarlarda N₂O₄ ile başlansaydı denge derişimleri farklı olurdu ama bu oran yine 0,2 çıkardı.",
+        "Öğrencilerin denge hakkında yaptığı bazı tahminler verilerle sınandığında geçersiz çıkar. Örneğin {koyu:\"Derişimler eşitlenince denge kurulur\"} tahmini yanlıştır: Grafikte denge anında [N₂O₄] = 0,8 M, [NO₂] = 0,4 M'dir; derişimler eşit değil, {koyu:sabittir}. {koyu:\"Denge kurulunca tepkime durur\"} tahmini de yanlıştır: Renk sabit kalsa da moleküller ayrışmaya ve yeniden birleşmeye devam eder; işaretli (izotop) atomlarla yapılan deneyler, dengedeki bir karışıma eklenen işaretli atomların zamanla hem giren hem ürün moleküllerine dağıldığını göstererek dengenin {koyu:dinamik} olduğunu kanıtlar. Bilimsel bir tahmin, ancak gözlem ve ölçümlerle desteklendiğinde geçerli kabul edilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Öğrenci Tahmini",
+          "Veri Ne Gösteriyor?",
+          "Geçerlilik"
+        ],
+        "satirlar": [
+          [
+            "Dengede giren ve ürün derişimleri eşit olur.",
+            "Denge anında [N₂O₄] = 0,8 M, [NO₂] = 0,4 M ölçülmüştür.",
+            "Geçersiz: Derişimler eşit değil, sabittir."
+          ],
+          [
+            "Denge kurulunca tepkime tamamen durur.",
+            "İzotop deneylerinde işaretli atomlar denge sonrasında da her iki tarafa dağılır.",
+            "Geçersiz: İleri ve geri tepkime eşit hızla sürer."
+          ],
+          [
+            "Değişim miktarları katsayılarla orantılıdır.",
+            "Azalma 0,2 M, artma 0,4 M; oran 1 : 2.",
+            "Geçerli: Katsayılar grafikten okunabilir."
+          ],
+          [
+            "Renk sabitlendiğinde sistem dengededir.",
+            "Renk sabitlendiği andan itibaren derişim eğrileri yataydır.",
+            "Geçerli: Gözlenebilir özellik sabitliği dengenin göstergesidir."
+          ],
+          [
+            "Daha fazla N₂O₄ ile başlanırsa Kc büyür.",
+            "Farklı başlangıçlı deneylerde aynı sıcaklıkta oran hep 0,2 çıkar.",
+            "Geçersiz: Kc başlangıç miktarına bağlı değildir."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Grafikten Katsayı Okuma",
+          "metin": "Her maddenin başlangıç ve denge derişimleri arasındaki farkı bulun. Azalan eğriler girenleri, artan eğriler ürünleri gösterir. Değişimleri en küçük tam sayı oranına getirdiğinizde {koyu:tepkime katsayılarını} elde edersiniz."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Denge Durgunluk Değildir",
+          "metin": "Dengede {koyu:makroskobik} özellikler (renk, basınç, derişim) sabittir; {koyu:mikroskobik} düzeyde ise ileri ve geri tepkimeler eşit hızla devam eder. Bu yüzden kimyasal denge dinamik bir dengedir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">N₂O₄(g) ⇌ 2NO₂(g) Derişim-Zaman Grafiği (1 L kap)</text><text x=\"78\" y=\"52\" font-size=\"11\" fill=\"#334155\">Derişim (M)</text><line x1=\"70\" y1=\"58\" x2=\"70\" y2=\"250\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"70\" y1=\"250\" x2=\"480\" y2=\"250\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"62\" y=\"74\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">1,0</text><text x=\"62\" y=\"110\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">0,8</text><text x=\"62\" y=\"182\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">0,4</text><text x=\"62\" y=\"254\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">0</text><line x1=\"70\" y1=\"106\" x2=\"480\" y2=\"106\" stroke=\"#cbd5e1\" stroke-dasharray=\"3,3\"/><line x1=\"70\" y1=\"178\" x2=\"480\" y2=\"178\" stroke=\"#cbd5e1\" stroke-dasharray=\"3,3\"/><path d=\"M70,70 Q150,100 230,106 L470,106\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><path d=\"M70,250 Q150,190 230,178 L470,178\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"230\" y1=\"60\" x2=\"230\" y2=\"250\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"6,4\"/><text x=\"230\" y=\"266\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#475569\">denge anı</text><text x=\"470\" y=\"268\" text-anchor=\"end\" font-size=\"11\" fill=\"#334155\">Zaman</text><text x=\"350\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">N₂O₄ (renksiz)</text><text x=\"350\" y=\"170\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">NO₂ (kahverengi)</text><rect x=\"500\" y=\"50\" width=\"240\" height=\"230\" rx=\"12\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"620\" y=\"74\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">Grafikten Çıkarımlar</text><text x=\"512\" y=\"100\" font-size=\"11.5\" fill=\"#78350f\">• N₂O₄: 1,0 → 0,8 (azalma 0,2)</text><text x=\"512\" y=\"122\" font-size=\"11.5\" fill=\"#78350f\">• NO₂: 0 → 0,4 (artma 0,4)</text><text x=\"512\" y=\"144\" font-size=\"11.5\" fill=\"#78350f\">• Oran 0,2 : 0,4 = 1 : 2</text><text x=\"512\" y=\"166\" font-size=\"11.5\" fill=\"#78350f\">• Denge sonrası eğriler yatay</text><text x=\"512\" y=\"188\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b91c1c\">• Derişimler EŞİT değil, SABİT</text><text x=\"512\" y=\"210\" font-size=\"11.5\" fill=\"#78350f\">• Renk sabitlenir, tepkime sürer</text><rect x=\"516\" y=\"226\" width=\"208\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d97706\"/><text x=\"620\" y=\"251\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">Kc = (0,4)² / 0,8 = 0,2</text></svg>"
+    },
+    {
+      "baslik": "3. Denge Sabitinin Büyüklüğünden Tepkimenin Kapsamını Tahmin Etme",
+      "metin": [
+        "Denge sabitinin sayısal değeri, bir tepkimenin dengeye ulaştığında {koyu:ne ölçüde ürünlere dönüştüğü} hakkında güçlü bir tahmin aracıdır. Denge ifadesinde ürünler payda değil payda yer aldığından (pay = ürünler, payda = girenler), K değeri çok büyükse dengede ürün derişimlerinin giren derişimlerinden çok daha fazla olduğu sonucuna varılır. Genel bir yaklaşım olarak {koyu:K > 10³} ise denge karışımında ürünler baskındır ve tepkime neredeyse tamamlanmış gibi davranır; {koyu:K < 10⁻³} ise girenler baskındır ve çok az ürün oluşur; {koyu:10⁻³ ile 10³} arasında ise dengede hem girenler hem ürünler kayda değer miktarlarda bulunur.",
+        "Örneğin azot ve oksijenden azot monoksit oluşumu N₂(g) + O₂(g) ⇌ 2NO(g) için oda sıcaklığında K değeri son derece küçüktür (yaklaşık {us:10|−30} mertebesinde). Bu yüzden havadaki azot ve oksijen oda sıcaklığında yan yana durduğu hâlde kayda değer miktarda NO oluşmaz. Aynı tepkimenin K değeri sıcaklık yükseldikçe büyür; araç motorları ve yıldırım gibi çok yüksek sıcaklıklı ortamlarda NO oluşumunun artması bununla açıklanır. Buradan bir kez daha görülür ki K'nin sayısal değeri {koyu:sıcaklığa bağlıdır} ve tahmin yapılırken hangi sıcaklıktaki K değerinin kullanıldığı mutlaka belirtilmelidir.",
+        "Bu tahminlerin geçerlilik sınırları da vardır. Birincisi, K bir tepkimenin {koyu:ne kadar hızlı} gerçekleştiğini söylemez. K değeri çok büyük olan bir tepkime, aktifleşme enerjisi yüksekse oda sıcaklığında fark edilemeyecek kadar yavaş ilerleyebilir; hız, birinci temada öğrendiğimiz kinetik konusudur. İkincisi, farklı tepkimelerin K değerleri ancak {koyu:denklem biçimleri benzerse} doğrudan karşılaştırılabilir. A ⇌ B tipindeki iki tepkimede büyük K'li olanın daha çok ürün verdiğini söyleyebiliriz; ama A ⇌ 2B ile A ⇌ B tipindeki tepkimelerde üsler farklı olduğu için K değerlerinin birimi ve anlamı değişir, kaba karşılaştırma yanıltıcı olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "K Değeri Aralığı",
+          "Dengedeki Karışımın Bileşimi",
+          "Tahmin ve Yorum"
+        ],
+        "satirlar": [
+          [
+            "K > 10³",
+            "Ürünler baskın, girenler çok az",
+            "Tepkime büyük ölçüde ürünlere dönüşür; pratikte tamamlanmış gibi kabul edilebilir."
+          ],
+          [
+            "10⁻³ < K < 10³",
+            "Girenler ve ürünler kayda değer miktarda",
+            "Gerçek anlamda bir denge karışımı oluşur; koşullar değiştirilerek verim ayarlanabilir."
+          ],
+          [
+            "K < 10⁻³",
+            "Girenler baskın, ürünler çok az",
+            "Tepkime ileri yönde çok az ilerler; ters tepkime ise ürün yönlüdür."
+          ],
+          [
+            "K ≈ 1 (A ⇌ B tipi)",
+            "[A] ve [B] birbirine yakın",
+            "Örneğin 1 mol A ile başlanırsa dengede yaklaşık 0,5 mol A ve 0,5 mol B bulunur."
+          ],
+          [
+            "Ters tepkime için K′ = 1/K",
+            "Ürün-giren rolü yer değiştirir",
+            "K = {us:10|5} olan tepkimenin tersi için K′ = {us:10|−5}; ters yönde çok az ürün oluşur."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Büyük K, Hızlı Tepkime Demek Değildir",
+          "metin": "Denge sabiti tepkimenin {koyu:kapsamını} (dengede ne kadar ürün olacağını), hız sabiti ise {koyu:hızını} (dengeye ne kadar sürede ulaşılacağını) anlatır. İkisi farklı kavramlardır; K'den hız hakkında tahmin yapılamaz."
+        },
+        {
+          "tur": "kural",
+          "baslik": "Karşılaştırma Yalnız Benzer Denklemler Arasında Anlamlıdır",
+          "metin": "K değerlerini kıyaslayarak \"hangi tepkime daha çok ürün verir\" sorusunu cevaplamak için tepkimelerin aynı sıcaklıkta ve aynı tipte (aynı üs toplamına sahip) olması gerekir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Denge Sabitinin Büyüklüğü ve Tepkimenin Kapsamı</text><text x=\"380\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">K değeri ölçeği (her aralık 10'un kuvvetleriyle büyür)</text><rect x=\"40\" y=\"70\" width=\"250\" height=\"44\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"290\" y=\"70\" width=\"180\" height=\"44\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"470\" y=\"70\" width=\"250\" height=\"44\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"165\" y=\"97\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#991b1b\">K &lt; 10⁻³</text><text x=\"380\" y=\"97\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#92400e\">10⁻³ – 10³</text><text x=\"595\" y=\"97\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#166534\">K &gt; 10³</text><text x=\"40\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">10⁻¹⁰</text><text x=\"290\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">10⁻³</text><text x=\"380\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">1</text><text x=\"470\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">10³</text><text x=\"720\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">10¹⁰</text><rect x=\"40\" y=\"146\" width=\"220\" height=\"86\" rx=\"10\" fill=\"#ffffff\" stroke=\"#dc2626\"/><text x=\"150\" y=\"168\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#991b1b\">Girenler baskın</text><text x=\"150\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">Çok az ürün oluşur</text><text x=\"150\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">Örnek: N₂ + O₂ ⇌ 2NO (25 °C)</text><rect x=\"270\" y=\"146\" width=\"220\" height=\"86\" rx=\"10\" fill=\"#ffffff\" stroke=\"#d97706\"/><text x=\"380\" y=\"168\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">Karşılaştırılabilir</text><text x=\"380\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">Giren ve ürün birlikte</text><text x=\"380\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">Örnek: N₂O₄ ⇌ 2NO₂ (Kc = 0,2)</text><rect x=\"500\" y=\"146\" width=\"220\" height=\"86\" rx=\"10\" fill=\"#ffffff\" stroke=\"#16a34a\"/><text x=\"610\" y=\"168\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">Ürünler baskın</text><text x=\"610\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">Tepkime neredeyse tamamlanır</text><text x=\"610\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">Girenler eser miktarda kalır</text><rect x=\"40\" y=\"244\" width=\"680\" height=\"40\" rx=\"10\" fill=\"#e0e7ff\" stroke=\"#4f46e5\"/><text x=\"380\" y=\"269\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#3730a3\">Uyarı: K tepkimenin NE KADAR ilerlediğini söyler, NE KADAR HIZLI olduğunu söylemez.</text></svg>"
+    },
+    {
+      "baslik": "4. Fiziksel Değişimlerde Denge Sabiti İfadeleri",
+      "metin": [
+        "Denge yalnızca kimyasal tepkimelere özgü değildir; {koyu:hâl değişimleri ve çözünme} gibi fiziksel değişimler de kapalı sistemde dinamik dengeye ulaşır ve bu dengeler için de denge sabiti ifadesi yazılabilir. Kapalı bir kapta bir miktar su bırakıldığında su buharlaşır; kaptaki buhar arttıkça buharın yoğuşma hızı da artar ve sonunda buharlaşma hızı yoğuşma hızına eşitlenir: H₂O(s) ⇌ H₂O(g). Saf sıvı su ifadeye yazılmadığından Kc = [H₂O(g)] ve Kp = P(H₂O) olur. Yani belirli bir sıcaklıktaki {koyu:denge buhar basıncı}, aslında bu fiziksel dengenin Kp değeridir.",
+        "Bu örüntü, daha önceki derslerde öğrendiğimiz bir deneysel gerçeği açıklar: {koyu:Bir sıvının buhar basıncı sıvının miktarına ve kabın hacmine bağlı değildir, yalnız sıcaklığa bağlıdır.} Kp de yalnız sıcaklıkla değiştiğine göre, buhar basıncının bu özelliği denge sabitinin özelliğiyle birebir örtüşür. Benzer şekilde katı iyotun kapalı kapta süblimleşmesi I₂(k) ⇌ I₂(g) dengesinde Kc = [I₂(g)] ve Kp = P(I₂) yazılır; kapta mor renkli iyot buharının yoğunluğu, katı iyot miktarından bağımsız olarak sabit sıcaklıkta sabit kalır.",
+        "Çözünme dengeleri de aynı mantıkla modellenir. Bir şeker çözeltisi doygun hâle geldiğinde dipteki katı şeker ile çözünmüş şeker arasında denge kurulur: C₁₂H₂₂O₁₁(k) ⇌ C₁₂H₂₂O₁₁(suda) ve Kc = [C₁₂H₂₂O₁₁]. Bu, Kc'nin {koyu:doygun çözeltinin derişimine (çözünürlüğe)} eşit olduğu anlamına gelir; dibe ne kadar fazla şeker eklenirse eklensin sabit sıcaklıkta derişim değişmez. İyonik bir katının çözünmesinde, örneğin AgCl(k) ⇌ Ag⁺(suda) + Cl⁻(suda), ifade Kc = [Ag⁺]·[Cl⁻] olur; bu tür ifadeler ilerleyen konularda çözünürlük dengeleri adıyla ayrıntılı işlenecektir. Bir gazın sıvıda çözünmesinde ise, örneğin CO₂(g) ⇌ CO₂(suda), Kc = {kesir:[CO₂(suda)]|[CO₂(g)]} yazılır; gazlı içecek şişesi açıldığında köpürmesi, gaz fazındaki CO₂ azalınca çözünmüş CO₂'nin de azalmak zorunda kalmasıyla ilişkilidir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Fiziksel Değişim",
+          "Denge Denklemi",
+          "Kc İfadesi",
+          "Kp İfadesi / Fiziksel Anlamı"
+        ],
+        "satirlar": [
+          [
+            "Buharlaşma (sıvı-buhar)",
+            "H₂O(s) ⇌ H₂O(g)",
+            "Kc = [H₂O(g)]",
+            "Kp = P(H₂O) = suyun buhar basıncı"
+          ],
+          [
+            "Süblimleşme (katı-buhar)",
+            "I₂(k) ⇌ I₂(g)",
+            "Kc = [I₂(g)]",
+            "Kp = P(I₂) = iyotun süblimleşme basıncı"
+          ],
+          [
+            "Moleküler katının çözünmesi",
+            "C₁₂H₂₂O₁₁(k) ⇌ C₁₂H₂₂O₁₁(suda)",
+            "Kc = [C₁₂H₂₂O₁₁]",
+            "Gaz yok; Kc doygun çözelti derişimidir"
+          ],
+          [
+            "İyonik katının çözünmesi",
+            "AgCl(k) ⇌ Ag⁺(suda) + Cl⁻(suda)",
+            "Kc = [Ag⁺]·[Cl⁻]",
+            "Gaz yok; iyon derişimleri çarpımı sabittir"
+          ],
+          [
+            "Gazın sıvıda çözünmesi",
+            "CO₂(g) ⇌ CO₂(suda)",
+            "Kc = {kesir:[CO₂(suda)]|[CO₂(g)]}",
+            "Gaz derişimi arttıkça çözünen gaz da orantılı artar"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Buhar Basıncı Bir Denge Sabitidir",
+          "metin": "Sabit sıcaklıkta kapalı kapta sıvısıyla dengede olan buharın basıncı, H₂O(s) ⇌ H₂O(g) dengesinin {koyu:Kp} değeridir. Sıcaklık arttıkça buharlaşma (endotermik) ileri yönde ilerlediğinden buhar basıncı, yani Kp büyür."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Fiziksel Dengelerde Faz Kuralı Aynıdır",
+          "metin": "Kimyasal dengelerdeki kural fiziksel dengelerde de geçerlidir: Saf katı (k) ve saf sıvı (s) yazılmaz; gaz (g) ve sulu (suda) türler yazılır. Bu nedenle tek fazın değiştiği fiziksel dengelerin ifadeleri genellikle tek terimlidir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Fiziksel Değişimlerde Denge ve Denge Sabiti İfadeleri</text><rect x=\"20\" y=\"48\" width=\"230\" height=\"196\" rx=\"12\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"135\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\">BUHARLAŞMA</text><rect x=\"95\" y=\"84\" width=\"80\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#1e3a8a\"/><rect x=\"96\" y=\"126\" width=\"78\" height=\"27\" rx=\"4\" fill=\"#93c5fd\"/><circle cx=\"115\" cy=\"100\" r=\"3\" fill=\"#2563eb\"/><circle cx=\"140\" cy=\"108\" r=\"3\" fill=\"#2563eb\"/><circle cx=\"158\" cy=\"96\" r=\"3\" fill=\"#2563eb\"/><text x=\"135\" y=\"176\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e3a8a\">H₂O(s) ⇌ H₂O(g)</text><text x=\"135\" y=\"198\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">Kc = [H₂O(g)]</text><text x=\"135\" y=\"220\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\">Kp = P(H₂O)</text><text x=\"135\" y=\"238\" text-anchor=\"middle\" font-size=\"10\" fill=\"#1e40af\">= buhar basıncı</text><rect x=\"265\" y=\"48\" width=\"230\" height=\"196\" rx=\"12\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/><text x=\"380\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#6b21a8\">SÜBLİMLEŞME</text><rect x=\"340\" y=\"84\" width=\"80\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#6b21a8\"/><rect x=\"350\" y=\"136\" width=\"22\" height=\"16\" rx=\"2\" fill=\"#581c87\"/><rect x=\"378\" y=\"140\" width=\"18\" height=\"12\" rx=\"2\" fill=\"#581c87\"/><circle cx=\"360\" cy=\"100\" r=\"3\" fill=\"#a855f7\"/><circle cx=\"385\" cy=\"112\" r=\"3\" fill=\"#a855f7\"/><circle cx=\"405\" cy=\"98\" r=\"3\" fill=\"#a855f7\"/><text x=\"380\" y=\"176\" text-anchor=\"middle\" font-size=\"12\" fill=\"#6b21a8\">I₂(k) ⇌ I₂(g)</text><text x=\"380\" y=\"198\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">Kc = [I₂(g)]</text><text x=\"380\" y=\"220\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">Kp = P(I₂)</text><text x=\"380\" y=\"238\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7e22ce\">katı miktarından bağımsız</text><rect x=\"510\" y=\"48\" width=\"230\" height=\"196\" rx=\"12\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"625\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">ÇÖZÜNME</text><rect x=\"585\" y=\"84\" width=\"80\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#166534\"/><rect x=\"586\" y=\"100\" width=\"78\" height=\"53\" rx=\"4\" fill=\"#bbf7d0\"/><rect x=\"600\" y=\"142\" width=\"50\" height=\"10\" rx=\"2\" fill=\"#f1f5f9\" stroke=\"#64748b\"/><text x=\"625\" y=\"176\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#166534\">AgCl(k) ⇌ Ag⁺ + Cl⁻</text><text x=\"625\" y=\"198\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">Kc = [Ag⁺]·[Cl⁻]</text><text x=\"625\" y=\"220\" text-anchor=\"middle\" font-size=\"11\" fill=\"#166534\">Şeker için Kc = [şeker]</text><text x=\"625\" y=\"238\" text-anchor=\"middle\" font-size=\"10\" fill=\"#15803d\">= doygun çözelti derişimi</text><rect x=\"20\" y=\"254\" width=\"720\" height=\"36\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\"/><text x=\"380\" y=\"277\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">Ortak örüntü: (k) ve (s) yazılmaz; buhar basıncı ve çözünürlük de yalnız sıcaklıkla değişir.</text></svg>"
+    },
+    {
+      "baslik": "5. İyonlu ve Sulu Ortam Tepkimelerinde Denge İfadesinin Modellenmesi",
+      "metin": [
+        "Sulu çözeltilerde gerçekleşen tepkimelerin çoğunda asıl tepkimeye giren türler {koyu:iyonlardır}. Örneğin kurşun(II) nitrat ve potasyum iyodür çözeltileri karıştırıldığında sarı renkli PbI₂ katısı çöker. Moleküler denklem Pb(NO₃)₂(suda) + 2KI(suda) ⇌ PbI₂(k) + 2KNO₃(suda) şeklinde yazılabilir; ancak K⁺ ve NO₃⁻ iyonları tepkimenin iki tarafında da değişmeden bulunur. Bu tür iyonlara {koyu:seyirci iyon} denir ve tepkimeye katılmadıkları için net iyon denkleminde ve denge ifadesinde yer almazlar. Net iyon denklemi Pb²⁺(suda) + 2I⁻(suda) ⇌ PbI₂(k) olup katı ürün yazılmadığından Kc = {kesir:1|[Pb²⁺]·[I⁻]²} bulunur. Pay kısmında hiçbir tür kalmadığında paya {koyu:1} yazıldığına dikkat ediniz.",
+        "Suyun denge ifadesindeki durumu, bulunduğu faza göre değişir. Zayıf asitlerin suyla tepkimesinde, örneğin CH₃COOH(suda) + H₂O(s) ⇌ CH₃COO⁻(suda) + H₃O⁺(suda), su hem çözücü hem de saf sıvı olduğundan derişimi pratikte değişmez ve ifadeye yazılmaz: Kc = {kesir:[CH₃COO⁻]·[H₃O⁺]|[CH₃COOH]}. Buna karşılık yüksek sıcaklıktaki 2H₂(g) + O₂(g) ⇌ 2H₂O(g) tepkimesinde su {koyu:gaz} hâlindedir ve diğer gazlar gibi derişimi değişebildiği için ifadeye girer: Kc = {kesir:[H₂O]²|[H₂]²·[O₂]}. Aynı formül, farklı faz, farklı kural: Bu örüntü, denge sorularında fiziksel hâl gösterimlerine bakmanın neden ilk adım olduğunu açıkça gösterir.",
+        "Yükseltgenme-indirgenme ve gaz çıkışlı tepkimelerde de aynı model işler. Bakır metali gümüş nitrat çözeltisine daldırıldığında Cu(k) + 2Ag⁺(suda) ⇌ Cu²⁺(suda) + 2Ag(k) dengesinde katı metaller elenir: Kc = {kesir:[Cu²⁺]|[Ag⁺]²}. Kireç taşının asitle tepkimesinde CaCO₃(k) + 2H⁺(suda) ⇌ Ca²⁺(suda) + H₂O(s) + CO₂(g) için katı CaCO₃ ve sıvı su yazılmaz; sulu iyonlar ve gaz yazılır: Kc = {kesir:[Ca²⁺]·[CO₂]|[H⁺]²}. Bütün bu örneklerden çıkan genel model şudur: {koyu:Önce net iyon denklemini yaz, sonra fiziksel hâllere göre (k) ve (s) türlerini ele, kalan (g) ve (suda) türleri katsayılarını üs alarak ürünler paya, girenler paydaya gelecek biçimde yerleştir.} Kp yazılacaksa bu kez yalnız (g) türleri tutulur; sulu iyonlar da elenir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Tepkime (net iyon denklemi)",
+          "İfadeye Alınmayanlar",
+          "Kc İfadesi"
+        ],
+        "satirlar": [
+          [
+            "CH₃COOH(suda) + H₂O(s) ⇌ CH₃COO⁻(suda) + H₃O⁺(suda)",
+            "H₂O(s)",
+            "{kesir:[CH₃COO⁻]·[H₃O⁺]|[CH₃COOH]}"
+          ],
+          [
+            "Pb²⁺(suda) + 2I⁻(suda) ⇌ PbI₂(k)",
+            "PbI₂(k), seyirci K⁺ ve NO₃⁻",
+            "{kesir:1|[Pb²⁺]·[I⁻]²}"
+          ],
+          [
+            "Cu(k) + 2Ag⁺(suda) ⇌ Cu²⁺(suda) + 2Ag(k)",
+            "Cu(k), Ag(k)",
+            "{kesir:[Cu²⁺]|[Ag⁺]²}"
+          ],
+          [
+            "CaCO₃(k) + 2H⁺(suda) ⇌ Ca²⁺(suda) + H₂O(s) + CO₂(g)",
+            "CaCO₃(k), H₂O(s)",
+            "{kesir:[Ca²⁺]·[CO₂]|[H⁺]²}"
+          ],
+          [
+            "2H₂(g) + O₂(g) ⇌ 2H₂O(g)",
+            "Yok (su gaz hâlinde)",
+            "{kesir:[H₂O]²|[H₂]²·[O₂]}"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Denge İfadesi Yazma Algoritması",
+          "metin": "1) Denklemi denkleştir ve seyirci iyonları atarak net iyon denklemini yaz. 2) Fiziksel hâlleri oku; (k) ve (s) türlerini ele. 3) Ürünleri paya, girenleri paydaya yaz; bir tarafta tür kalmazsa oraya 1 koy. 4) Her derişime katsayısını üs olarak ekle."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Aynı Madde, Farklı Faz, Farklı Kural",
+          "metin": "H₂O(s) ifadeye yazılmaz ama H₂O(g) yazılır; Br₂(s) yazılmaz ama Br₂(g) yazılır. Bir maddenin ifadeye girip girmeyeceğini adı değil, {koyu:fiziksel hâli} belirler."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Denge İfadesi Modelleme Akışı (Faz Filtresi)</text><rect x=\"20\" y=\"50\" width=\"160\" height=\"84\" rx=\"12\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"100\" y=\"78\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\">1. Net İyon</text><text x=\"100\" y=\"96\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\">Denklemi</text><text x=\"100\" y=\"118\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#1e40af\">seyirci iyonları at</text><polygon points=\"186,86 204,92 186,98\" fill=\"#64748b\"/><line x1=\"180\" y1=\"92\" x2=\"190\" y2=\"92\" stroke=\"#64748b\" stroke-width=\"2\"/><rect x=\"208\" y=\"50\" width=\"160\" height=\"84\" rx=\"12\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"288\" y=\"78\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#991b1b\">2. Faz Filtresi</text><text x=\"288\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">(k) ve (s) ELENİR</text><text x=\"288\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#7f1d1d\">(g) ve (suda) KALIR</text><polygon points=\"374,86 392,92 374,98\" fill=\"#64748b\"/><line x1=\"368\" y1=\"92\" x2=\"378\" y2=\"92\" stroke=\"#64748b\" stroke-width=\"2\"/><rect x=\"396\" y=\"50\" width=\"160\" height=\"84\" rx=\"12\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"476\" y=\"78\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#92400e\">3. Kesri Kur</text><text x=\"476\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">ürünler → pay</text><text x=\"476\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">girenler → payda</text><polygon points=\"562,86 580,92 562,98\" fill=\"#64748b\"/><line x1=\"556\" y1=\"92\" x2=\"566\" y2=\"92\" stroke=\"#64748b\" stroke-width=\"2\"/><rect x=\"584\" y=\"50\" width=\"156\" height=\"84\" rx=\"12\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"662\" y=\"78\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">4. Üsleri Ekle</text><text x=\"662\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">üs = katsayı</text><text x=\"662\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" fill=\"#14532d\">boş tarafa 1 yaz</text><rect x=\"20\" y=\"152\" width=\"720\" height=\"132\" rx=\"12\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"380\" y=\"176\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">Uygulama: Pb(NO₃)₂(suda) + 2KI(suda) ⇌ PbI₂(k) + 2KNO₃(suda)</text><text x=\"380\" y=\"200\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">Seyirci iyonlar K⁺ ve NO₃⁻ çıkarılır  →  Net: Pb²⁺(suda) + 2I⁻(suda) ⇌ PbI₂(k)</text><text x=\"380\" y=\"224\" text-anchor=\"middle\" font-size=\"12\" fill=\"#991b1b\">PbI₂(k) katı olduğu için elenir → payda hiçbir tür kalmaz → paya 1 yazılır</text><rect x=\"240\" y=\"238\" width=\"280\" height=\"36\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"380\" y=\"262\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#14532d\">Kc = 1 / ([Pb²⁺]·[I⁻]²)</text></svg>"
+    },
+    {
+      "baslik": "6. Denge İfadesinden Denkleme Ters Modelleme ve Kc Biriminin Belirlenmesi",
+      "metin": [
+        "Keşfettiğimiz örüntü iki yönlü kullanılabilir: Denklemden ifadeyi yazabildiğimiz gibi, verilen bir denge ifadesinden de tepkime denklemini {koyu:geri kurabiliriz}. Kural basittir: Paydaki türler ürünler, paydadaki türler girenlerdir; her türün üssü o türün katsayısıdır. Örneğin bir gaz tepkimesi için Kc = {kesir:[NO]⁴·[H₂O]⁶|[NH₃]⁴·[O₂]⁵} verilmişse denklem 4NH₃(g) + 5O₂(g) ⇌ 4NO(g) + 6H₂O(g) olmalıdır. Denklemin denkleşip denkleşmediğini atom sayarak kontrol etmek, tahminimizin geçerliliğini sınamanın kolay bir yoludur: Solda 4 N, 12 H, 10 O; sağda 4 N, 12 H, 4 + 6 = 10 O vardır, denklem denktir.",
+        "Ters modellemenin bir sınırı da vardır ve bu sınırı fark etmek bilimsel düşünmenin parçasıdır. Denge ifadesi saf katı ve sıvıları içermediğinden, {koyu:ifadeye bakarak tepkimede katı veya sıvı bir madde olup olmadığını bilemeyiz.} Örneğin Kc = [CO₂] ifadesi hem CaCO₃(k) ⇌ CaO(k) + CO₂(g) hem de MgCO₃(k) ⇌ MgO(k) + CO₂(g) tepkimesine ait olabilir. Benzer şekilde ifadedeki tüm üsler aynı sayıya bölünebiliyorsa (örneğin {kesir:[C]²|[A]²}), denklemin hangi katsayılarla yazıldığı da ancak ek bilgiyle kesinleşir; çünkü katsayılar değişince K değeri de değişir. Bu nedenle ters modelleme ile kurulan bir denklem, ek deney verisiyle doğrulanmadıkça bir {koyu:tahmin} olarak kalır.",
+        "Denge ifadesinin biçimi, Kc'nin {koyu:birimini} de belirler. Her derişim mol/L birimindedir; bu yüzden Kc'nin birimi (mol/L) üzeri (paydaki üslerin toplamı − paydadaki üslerin toplamı) olur. Bu farka Δ dersek H₂(g) + I₂(g) ⇌ 2HI(g) için Δ = 2 − 2 = 0 ve Kc birimsizdir; PCl₅(g) ⇌ PCl₃(g) + Cl₂(g) için Δ = +1 ve birim mol/L'dir; N₂(g) + 3H₂(g) ⇌ 2NH₃(g) için Δ = 2 − 4 = −2 ve birim (mol/L)⁻², yani L²/mol²'dir. Δ hesaplanırken yalnız ifadede yer alan türlerin üsleri kullanılır; elenen katı ve sıvılar hesaba katılmaz. Güncel kimyada derişimler standart derişime (1 mol/L) oranlanarak kullanıldığından denge sabiti çoğu zaman {koyu:birimsiz} yazılır; birim analizi ise ifadenin doğru kurulup kurulmadığını kontrol etmede yararlı bir araç olarak kalır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Denge Tepkimesi",
+          "İfadedeki Üs Farkı (Δ)",
+          "Kc Birimi"
+        ],
+        "satirlar": [
+          [
+            "H₂(g) + I₂(g) ⇌ 2HI(g)",
+            "2 − (1 + 1) = 0",
+            "Birimsiz"
+          ],
+          [
+            "PCl₅(g) ⇌ PCl₃(g) + Cl₂(g)",
+            "(1 + 1) − 1 = +1",
+            "mol/L"
+          ],
+          [
+            "N₂(g) + 3H₂(g) ⇌ 2NH₃(g)",
+            "2 − (1 + 3) = −2",
+            "L²/mol²"
+          ],
+          [
+            "CaCO₃(k) ⇌ CaO(k) + CO₂(g)",
+            "1 − 0 = +1 (katılar sayılmaz)",
+            "mol/L"
+          ],
+          [
+            "Pb²⁺(suda) + 2I⁻(suda) ⇌ PbI₂(k)",
+            "0 − (1 + 2) = −3",
+            "L³/mol³"
+          ],
+          [
+            "4NH₃(g) + 5O₂(g) ⇌ 4NO(g) + 6H₂O(g)",
+            "(4 + 6) − (4 + 5) = +1",
+            "mol/L"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Ters Modellemede Eksik Bilgi",
+          "metin": "Denge ifadesi katı ve sıvıları göstermez. Bu yüzden ifadeden kurduğunuz denklemde (k) veya (s) türleri olabileceğini unutmayın ve soruda verilen ek bilgileri (renk, çökelti, gaz çıkışı gibi gözlemleri) mutlaka kullanın."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Güncel Yaklaşım: Birimsiz Denge Sabiti",
+          "metin": "Termodinamik tanımda her derişim 1 mol/L'lik standart derişime bölünür; böylece K birimsiz bir sayı olur. Sınavlarda birim sorulmadıkça K'yi birimsiz yazmak kabul görür; birim sorulduğunda ise (mol/L) üzeri Δ kuralı uygulanır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\">Ters Modelleme: İfadeden Denkleme, Denklemden Birime</text><rect x=\"20\" y=\"48\" width=\"300\" height=\"100\" rx=\"12\" fill=\"#e0e7ff\" stroke=\"#4f46e5\" stroke-width=\"2\"/><text x=\"170\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#3730a3\">Verilen Denge İfadesi</text><text x=\"170\" y=\"100\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#312e81\">[NO]⁴·[H₂O]⁶</text><line x1=\"90\" y1=\"108\" x2=\"250\" y2=\"108\" stroke=\"#312e81\" stroke-width=\"1.5\"/><text x=\"170\" y=\"128\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#312e81\">[NH₃]⁴·[O₂]⁵</text><text x=\"60\" y=\"114\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#312e81\">Kc =</text><line x1=\"325\" y1=\"98\" x2=\"405\" y2=\"98\" stroke=\"#64748b\" stroke-width=\"2.5\"/><polygon points=\"405,90 422,98 405,106\" fill=\"#64748b\"/><text x=\"372\" y=\"88\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#475569\">pay = ürün</text><text x=\"372\" y=\"120\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#475569\">üs = katsayı</text><rect x=\"428\" y=\"48\" width=\"312\" height=\"100\" rx=\"12\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"584\" y=\"72\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#166534\">Kurulan Denklem</text><text x=\"584\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#14532d\">4NH₃(g) + 5O₂(g) ⇌ 4NO(g) + 6H₂O(g)</text><text x=\"584\" y=\"126\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#15803d\">Kontrol: 4 N, 12 H, 10 O her iki tarafta</text><rect x=\"20\" y=\"162\" width=\"720\" height=\"124\" rx=\"12\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"380\" y=\"184\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">Kc Birimi = (mol/L) üzeri Δ     Δ = pay üsleri toplamı − payda üsleri toplamı</text><rect x=\"40\" y=\"198\" width=\"160\" height=\"74\" rx=\"10\" fill=\"#f1f5f9\" stroke=\"#64748b\"/><text x=\"120\" y=\"222\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#334155\">Δ = 0</text><text x=\"120\" y=\"244\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Birimsiz</text><text x=\"120\" y=\"262\" text-anchor=\"middle\" font-size=\"10\" fill=\"#64748b\">H₂ + I₂ ⇌ 2HI</text><rect x=\"215\" y=\"198\" width=\"160\" height=\"74\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\"/><text x=\"295\" y=\"222\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">Δ = +1</text><text x=\"295\" y=\"244\" text-anchor=\"middle\" font-size=\"11\" fill=\"#92400e\">mol/L</text><text x=\"295\" y=\"262\" text-anchor=\"middle\" font-size=\"10\" fill=\"#b45309\">PCl₅ ⇌ PCl₃ + Cl₂</text><rect x=\"390\" y=\"198\" width=\"160\" height=\"74\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\"/><text x=\"470\" y=\"222\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#991b1b\">Δ = −2</text><text x=\"470\" y=\"244\" text-anchor=\"middle\" font-size=\"11\" fill=\"#991b1b\">L²/mol²</text><text x=\"470\" y=\"262\" text-anchor=\"middle\" font-size=\"10\" fill=\"#b91c1c\">N₂ + 3H₂ ⇌ 2NH₃</text><rect x=\"565\" y=\"198\" width=\"160\" height=\"74\" rx=\"10\" fill=\"#f3e8ff\" stroke=\"#9333ea\"/><text x=\"645\" y=\"222\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">Δ = −3</text><text x=\"645\" y=\"244\" text-anchor=\"middle\" font-size=\"11\" fill=\"#6b21a8\">L³/mol³</text><text x=\"645\" y=\"262\" text-anchor=\"middle\" font-size=\"10\" fill=\"#7e22ce\">Pb²⁺ + 2I⁻ ⇌ PbI₂(k)</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Sabit sıcaklıkta A(g) ve B(g) gazları arasında kurulan bir dengeyle ilgili üç deneyin denge derişimleri şöyledir:\nDeney 1: [A] = 0,50 M, [B] = 1,0 M\nDeney 2: [A] = 2,0 M, [B] = 2,0 M\nDeney 3: [A] = 0,125 M, [B] = 0,50 M\na) [B]/[A] oranı sabit midir?\nb) [B]²/[A] oranını hesaplayarak tepkime denklemini ve Kc değerini tahmin ediniz. (Tepkime yalnız A gazı konularak başlatılmıştır.)",
+      "cevap": "a) Deney 1: 1,0 ÷ 0,50 = 2; Deney 2: 2,0 ÷ 2,0 = 1; Deney 3: 0,50 ÷ 0,125 = 4. Oran sabit olmadığından A(g) ⇌ B(g) hipotezi verilerle çürütülür.\nb) Deney 1: {kesir:(1,0)²|0,50} = 2; Deney 2: {kesir:(2,0)²|2,0} = {kesir:4|2} = 2; Deney 3: {kesir:(0,50)²|0,125} = {kesir:0,25|0,125} = 2. Oran her deneyde 2 olduğuna göre B'nin üssü 2, A'nın üssü 1'dir.\nTepkime yalnız A ile başlatıldığından A girendir: A(g) ⇌ 2B(g) ve Kc = {kesir:[B]²|[A]} = 2.\nNot: Aynı veriler 2B(g) ⇌ A(g) yazılarak da sabit bir oran (0,5) verir; yönü belirleyen, başlangıçta kaba hangi maddenin konulduğu bilgisidir.",
+      "ipucu": "Her hipotez için üç deneyin de oranını hesaplayın; yalnız birinde bile farklı çıkan oran hipotezi geçersiz kılar."
+    },
+    {
+      "soru": "Aşağıdaki fiziksel değişimlerin derişimler türünden (Kc) denge ifadelerini yazınız; mümkün olanlar için kısmi basınçlar türünden (Kp) ifadeyi de belirtiniz.\na) Br₂(s) ⇌ Br₂(g)\nb) I₂(k) ⇌ I₂(g)\nc) NaCl(k) ⇌ Na⁺(suda) + Cl⁻(suda)\nd) O₂(g) ⇌ O₂(suda)",
+      "cevap": "a) Saf sıvı Br₂(s) yazılmaz: Kc = [Br₂(g)], Kp = P(Br₂). Bu değer bromun o sıcaklıktaki buhar basıncıdır.\nb) Saf katı I₂(k) yazılmaz: Kc = [I₂(g)], Kp = P(I₂).\nc) Saf katı NaCl(k) yazılmaz: Kc = [Na⁺]·[Cl⁻]. Gaz bulunmadığından Kp ifadesi yazılmaz.\nd) Her iki tür de ifadeye girer: Kc = {kesir:[O₂(suda)]|[O₂(g)]}. Bu ifade, gaz fazındaki oksijen derişimi arttıkça sudaki çözünmüş oksijenin de orantılı olarak arttığını gösterir.",
+      "ipucu": "Fiziksel dengelerde de faz kuralı aynıdır: (k) ve (s) elenir, (g) ve (suda) kalır."
+    },
+    {
+      "soru": "Sabit sıcaklıkta 2 litrelik kapalı bir kaba yalnız 0,8 mol X(g) konuluyor. Derişim-zaman grafiğinden, denge kurulduğunda kapta 0,2 mol X(g) ve 1,2 mol Y(g) bulunduğu belirleniyor.\na) Tepkime denklemini yazınız.\nb) Kc değerini ve birimini bulunuz.",
+      "cevap": "a) X'in mol değişimi: 0,8 − 0,2 = 0,6 mol azalma. Y'nin mol değişimi: 0 → 1,2 mol, yani 1,2 mol artma. Değişim oranı 0,6 : 1,2 = 1 : 2 olduğundan denklem X(g) ⇌ 2Y(g) şeklindedir.\nb) Denge derişimleri: [X] = {kesir:0,2|2} = 0,1 M, [Y] = {kesir:1,2|2} = 0,6 M.\nKc = {kesir:[Y]²|[X]} = {kesir:(0,6)²|0,1} = {kesir:0,36|0,1} = 3,6.\nBirim: Δ = 2 − 1 = +1 olduğundan Kc birimi mol/L'dir. Kc = 3,6 mol/L.",
+      "ipucu": "Önce mol değişimlerinin oranından katsayıları bulun, sonra molleri 2 L'ye bölerek derişime çevirin."
+    },
+    {
+      "soru": "Aynı sıcaklıkta üç ayrı 1 litrelik kapta A ⇌ B tipindeki üç farklı gaz tepkimesi, her biri 1 mol giren gazla başlatılıyor. Denge sabitleri K₁ = 2·10⁵, K₂ = 1 ve K₃ = 4·10⁻⁶'dır. Her kapta dengede bulunan giren ve ürün miktarları hakkında tahminde bulununuz.",
+      "cevap": "Tepkimelerin tümü A ⇌ B tipinde olduğundan K = {kesir:[B]|[A]} ve K değerleri doğrudan karşılaştırılabilir. Dengede [A] + [B] = 1 M'dir.\n1. kap (K₁ = 2·10⁵ > 10³): Ürünler baskındır. [B]/[A] = 2·10⁵ olduğundan [A] ≈ {kesir:1|2·10⁵} = 5·10⁻⁶ M, [B] ≈ 1 M. Tepkime neredeyse tamamlanmıştır.\n2. kap (K₂ = 1): [B] = [A] olmalıdır; [A] = [B] = 0,5 M. Giren ve ürün eşit miktardadır.\n3. kap (K₃ = 4·10⁻⁶ < 10⁻³): Girenler baskındır. [B] ≈ 4·10⁻⁶ M, [A] ≈ 1 M. Çok az ürün oluşur.\nSonuç: Dengede en çok ürün 1. kapta, en az ürün 3. kapta bulunur; ancak hangi kabın dengeye daha hızlı ulaştığı K değerlerinden tahmin edilemez.",
+      "ipucu": "K çok büyük veya çok küçükken, baskın türün derişimini yaklaşık 1 M alıp diğerini K bağıntısından bulabilirsiniz."
+    },
+    {
+      "soru": "Aşağıdaki sulu ortam tepkimelerinin Kc ifadelerini yazınız.\na) Zn(k) + Cu²⁺(suda) ⇌ Zn²⁺(suda) + Cu(k)\nb) Ba²⁺(suda) + SO₄²⁻(suda) ⇌ BaSO₄(k)\nc) HF(suda) + H₂O(s) ⇌ F⁻(suda) + H₃O⁺(suda)\nd) Mg(k) + 2H⁺(suda) ⇌ Mg²⁺(suda) + H₂(g)",
+      "cevap": "a) Katı Zn ve Cu elenir: Kc = {kesir:[Zn²⁺]|[Cu²⁺]}.\nb) Katı BaSO₄ elenir, payda tür kalmaz: Kc = {kesir:1|[Ba²⁺]·[SO₄²⁻]}.\nc) Sıvı su elenir: Kc = {kesir:[F⁻]·[H₃O⁺]|[HF]}.\nd) Katı Mg elenir; sulu iyonlar ve gaz kalır, H⁺ katsayısı üs olur: Kc = {kesir:[Mg²⁺]·[H₂]|[H⁺]²}.",
+      "ipucu": "Her türün fiziksel hâlini işaretleyin; payda veya paydada tür kalmazsa oraya 1 yazın."
+    },
+    {
+      "soru": "Gaz fazında gerçekleşen bir denge tepkimesi için derişimler türünden denge ifadesi Kc = {kesir:[NO]⁴·[H₂O]⁶|[NH₃]⁴·[O₂]⁵} olarak veriliyor.\na) Tepkime denklemini yazıp denk olduğunu doğrulayınız.\nb) Kc'nin birimini bulunuz.\nc) Bu ifade tepkimede katı bir katalizör veya katı madde bulunup bulunmadığı hakkında bilgi verir mi?",
+      "cevap": "a) Pay ürünleri, payda girenleri, üsler katsayıları gösterir: 4NH₃(g) + 5O₂(g) ⇌ 4NO(g) + 6H₂O(g). Atom kontrolü: Sol tarafta N = 4, H = 4·3 = 12, O = 5·2 = 10; sağ tarafta N = 4, H = 6·2 = 12, O = 4 + 6 = 10. Denklem denktir.\nb) Δ = (4 + 6) − (4 + 5) = 10 − 9 = +1. Kc birimi (mol/L)¹ = mol/L'dir.\nc) Vermez. Saf katı ve sıvılar ifadede yer almadığından ifade bu konuda kesin bilgi sağlamaz; katalizör ise denge ifadesinde hiçbir zaman yer almaz. Bu bilgi ancak deney gözlemleriyle belirlenebilir.",
+      "ipucu": "Denklemi kurduktan sonra mutlaka atom sayarak kontrol edin; denk olmayan bir denklem, ifadenin yanlış okunduğunu gösterir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "CaO(k) + CO₂(g) ⇌ CaCO₃(k) denge tepkimesinin derişimler türünden denge ifadesi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Kc = [CO₂]",
+        "Kc = {kesir:1|[CO₂]}",
+        "Kc = {kesir:[CaCO₃]|[CaO]·[CO₂]}",
+        "Kc = [CaO]·[CO₂]"
+      ],
+      "dogru": 1,
+      "aciklama": "CaO(k) ve CaCO₃(k) saf katı olduğundan ifadeye yazılmaz. Geriye girenler tarafında yalnız CO₂(g) kalır; pay boş kaldığı için 1 yazılır: Kc = {kesir:1|[CO₂]}."
+    },
+    {
+      "tur": "coktan",
+      "soru": "25 °C'de bir tepkimenin denge sabiti K = 10⁻²⁰ olarak ölçülmüştür. Bu bilgiye dayanan aşağıdaki tahminlerden hangisi geçerlidir?",
+      "secenekler": [
+        "Dengede ürünlerin miktarı girenlere göre çok azdır.",
+        "Tepkime çok yavaş gerçekleşir.",
+        "Bu tepkime hiçbir koşulda ürün oluşturmaz.",
+        "Ters tepkimenin aynı sıcaklıktaki denge sabiti de 10⁻²⁰'dir."
+      ],
+      "dogru": 0,
+      "aciklama": "K < 10⁻³ olduğundan dengede girenler baskındır, çok az ürün oluşur. K hız hakkında bilgi vermez (B yanlış); az da olsa ürün oluşur ve K sıcaklıkla değişir (C yanlış); ters tepkimenin denge sabiti 1/K = 10²⁰'dir (D yanlış)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "X(g) + Y(g) ⇌ Z(g) tepkimesi aynı sıcaklıkta üç farklı kapta farklı başlangıç miktarlarıyla başlatılıyor ve üç kapta da denge kuruluyor. Üç kaptaki dengeler için aşağıdakilerden hangisi kesinlikle aynıdır?",
+      "secenekler": [
+        "Z gazının denge derişimi",
+        "Dengedeki toplam mol sayısı",
+        "{kesir:[Z]|[X]·[Y]} oranının değeri",
+        "Dengeye ulaşma süresi"
+      ],
+      "dogru": 2,
+      "aciklama": "Aynı sıcaklıkta denge sabiti başlangıç miktarlarına bağlı değildir; bu nedenle [Z]/([X]·[Y]) oranı üç kapta da aynıdır. Denge derişimleri, toplam mol sayısı ve dengeye ulaşma süresi başlangıç koşullarına göre değişebilir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir tepkimenin denge ifadesi Kc = {kesir:[Cu²⁺]|[Ag⁺]²} olarak veriliyor. Bu ifadeye uygun tepkime denklemi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Cu²⁺(suda) + 2Ag(k) ⇌ Cu(k) + 2Ag⁺(suda)",
+        "Cu(k) + Ag⁺(suda) ⇌ Cu²⁺(suda) + Ag(k)",
+        "Cu(k) + 2Ag⁺(suda) ⇌ Cu²⁺(suda) + 2Ag(k)",
+        "Cu²⁺(suda) + 2Ag⁺(suda) ⇌ Cu(k) + 2Ag(k)"
+      ],
+      "dogru": 2,
+      "aciklama": "Payda Cu²⁺ olduğundan Cu²⁺ üründür; paydada Ag⁺ karesiyle bulunduğundan Ag⁺ katsayısı 2 olan girendir. Katı Cu ve Ag ifadede görünmez. A seçeneği ters ifadeyi, B seçeneği yanlış üssü (ve denk olmayan yükü), D seçeneği 1/([Cu²⁺]·[Ag⁺]²) ifadesini verir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Aynı sıcaklıkta farklı başlangıç miktarlarıyla kurulan dengelerde denge derişimleri farklı olabilir ama Kc değeri aynıdır.",
+          "dogru": true,
+          "aciklama": "Doğrudur; tümevarımsal incelemede farklı deneylerde derişimler değişirken denge ifadesinin değeri sabit kalmıştır."
+        },
+        {
+          "metin": "Bir sistem dengeye ulaştığında giren ve ürün derişimleri birbirine eşit olur.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; dengede derişimler eşit değil, sabittir. N₂O₄ ⇌ 2NO₂ örneğinde dengede [N₂O₄] = 0,8 M, [NO₂] = 0,4 M'dir."
+        },
+        {
+          "metin": "Kapalı kapta sıvısıyla dengedeki suyun buhar basıncı, H₂O(s) ⇌ H₂O(g) dengesinin Kp değerine eşittir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; saf sıvı su yazılmadığından Kp = P(H₂O) olur ve bu değer buhar basıncıdır."
+        },
+        {
+          "metin": "Denge sabiti çok büyük olan bir tepkime her zaman çok hızlı gerçekleşir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; K tepkimenin kapsamını gösterir, hızını göstermez. Büyük K'li bir tepkime yüksek aktifleşme enerjisi nedeniyle çok yavaş olabilir."
+        },
+        {
+          "metin": "Pb²⁺(suda) + 2I⁻(suda) ⇌ PbI₂(k) tepkimesi için Kc = {kesir:[PbI₂]|[Pb²⁺]·[I⁻]²} yazılır.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; PbI₂ saf katı olduğundan ifadeye yazılmaz. Doğru ifade Kc = {kesir:1|[Pb²⁺]·[I⁻]²} şeklindedir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Tümevarımsal akıl yürütme",
+          "Çok sayıda deney verisindeki ortak örüntüden genel bir kurala ulaşma"
+        ],
+        [
+          "Buhar basıncı",
+          "Sıvı-buhar dengesinin kısmi basınçlar türünden denge sabiti"
+        ],
+        [
+          "Seyirci iyon",
+          "Tepkimenin iki tarafında değişmeden bulunan ve denge ifadesine yazılmayan iyon"
+        ],
+        [
+          "K > 10³",
+          "Dengede ürünlerin baskın olduğu, büyük ölçüde tamamlanan tepkime"
+        ],
+        [
+          "Doygun çözelti derişimi",
+          "Çözünme dengesinde sabit sıcaklıkta değişmeyen ve Kc'ye karşılık gelen derişim"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Çok sayıda deney verisinden genel bir kurala ulaşma yöntemine ___ akıl yürütme denir.",
+          "cevap": "tümevarımsal"
+        },
+        {
+          "metin": "Denge sabiti ifadesinde derişimlerin üsleri, denkleştirilmiş tepkimedeki ___ eşittir.",
+          "cevap": "katsayılara"
+        },
+        {
+          "metin": "Kapalı kapta sıvısıyla dengede olan buharın basıncına ___ basıncı denir.",
+          "cevap": "buhar"
+        },
+        {
+          "metin": "Bir tepkimenin her iki tarafında değişmeden bulunan iyonlara ___ iyon denir.",
+          "cevap": "seyirci"
+        },
+        {
+          "metin": "Derişim-zaman grafiğinde eğrilerin yataylaştığı an, sistemin ___ ulaştığı andır.",
+          "cevap": "dengeye"
+        }
+      ],
+      "kelimeler": [
+        "tümevarımsal",
+        "katsayılara",
+        "buhar",
+        "seyirci",
+        "dengeye"
+      ],
+      "fazla": [
+        "tümdengelimsel",
+        "kısmi"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Sabit sıcaklıkta 2 litrelik kapalı bir kaba yalnız 4 mol SO₃(g) konuluyor. Denge kurulduğunda kapta 2 mol SO₂(g) bulunduğu ölçülüyor. Tepkime 2SO₃(g) ⇌ 2SO₂(g) + O₂(g) şeklindedir.\na) Denge anındaki tüm maddelerin mol sayılarını ve derişimlerini bulunuz.\nb) Kc ifadesini yazıp değerini ve birimini hesaplayınız.\nc) Bir öğrenci, dengede [SO₃] = [SO₂] bulunduğunu görünce \"Denge her zaman giren ve ürün derişimleri eşitlendiğinde kurulur\" tahmininde bulunuyor. Bu tahminin geçerliliğini verilere dayanarak sorgulayınız.\nd) Aynı sıcaklıkta kaba başlangıçta 8 mol SO₃ konulsaydı Kc değeri ne olurdu?",
+      "ipuclari": [
+        "1. adım: 2 mol SO₂ oluştuysa katsayı oranına (2 : 2 : 1) göre 2 mol SO₃ harcanmış ve 1 mol O₂ oluşmuştur; molleri 2 L'ye bölün.",
+        "2. adım: Kc = [SO₂]²·[O₂] / [SO₃]² ifadesine derişimleri yerleştirin; birim için Δ = (2 + 1) − 2 değerini bulun.",
+        "3. adım: Eşitliğin yalnızca bu başlangıç miktarına özgü olup olmadığını, O₂ derişimini ve başka bir başlangıç durumunu düşünerek sınayın; Kc'nin neye bağlı olduğunu hatırlayın."
+      ],
+      "cevap": "a) 2 mol SO₂ oluştuğuna göre katsayılar gereği 2 mol SO₃ harcanmış, 1 mol O₂ oluşmuştur.\nDenge mol sayıları: n(SO₃) = 4 − 2 = 2 mol, n(SO₂) = 2 mol, n(O₂) = 1 mol.\nDerişimler (V = 2 L): [SO₃] = {kesir:2|2} = 1 M, [SO₂] = {kesir:2|2} = 1 M, [O₂] = {kesir:1|2} = 0,5 M.\nb) Kc = {kesir:[SO₂]²·[O₂]|[SO₃]²} = {kesir:(1)²·0,5|(1)²} = 0,5.\nΔ = (2 + 1) − 2 = +1 olduğundan Kc = 0,5 mol/L.\nc) Tahmin geçersizdir. Aynı dengede [O₂] = 0,5 M olup diğerlerine eşit değildir; yani dengedeki derişimlerin tümü eşit değildir. Ayrıca [SO₃] = [SO₂] eşitliği yalnız bu başlangıç miktarına özgü bir rastlantıdır: Örneğin 8 mol SO₃ ile başlansaydı Kc yine 0,5 olacağından denge derişimleri farklı çıkar ve [SO₃] ile [SO₂] artık eşit olmaz. Dengenin ölçütü derişimlerin eşitliği değil, zamanla sabit kalmasıdır.\nd) Kc yalnız sıcaklığa bağlıdır; sıcaklık değişmediği için başlangıçta 8 mol SO₃ konulsa da Kc = 0,5 mol/L olurdu. Değişen yalnızca denge derişimleri olurdu."
+    }
+  ]
+}

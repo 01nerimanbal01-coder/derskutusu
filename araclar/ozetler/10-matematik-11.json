@@ -246,15 +246,15 @@
       "tur": "ogretici",
       "soru": "Bir doğal sayının asal çarpanlarına ayrılışı ile pozitif tam bölen sayısı (PBS) arasındaki ilişkiyi ve iki doğal sayının EBOB-EKOK özelliklerinin gerçek yaşam problemlerine nasıl uygulandığını üç aşamada açıklayınız.",
       "ipuclari": [
-        "Birinci aşamada A = p₁^a₁ · p₂^a₂ · ... asal çarpan açılımından PBS = (a₁ + 1)·(a₂ + 1)... formülünün nasıl elde edildiğini ve tam kare sayıların PBS özelliğini belirtiniz.",
+        "Birinci aşamada A = {us:p₁|a₁} · {us:p₂|a₂} · ... asal çarpan açılımından PBS = (a₁ + 1)·(a₂ + 1)... formülünün nasıl elde edildiğini ve tam kare sayıların PBS özelliğini belirtiniz.",
         "İkinci aşamada iki sayının asal çarpanlarından EBOB ve EKOK'un nasıl bulunduğunu, A · B = EBOB · EKOK ve aralarında asallık önermelerini yazınız.",
         "Üçüncü aşamada gerçek yaşam problemlerinde hangi durumlarda EBOB (parçalama), hangi durumlarda EKOK (birleştirme/periyot) seçildiğini örneklerle değerlendiriniz."
       ],
-      "cevap": "Birinci aşamada 1'den büyük her A doğal sayısı A = p₁^a₁ · p₂^a₂... biçiminde asal çarpanlarına ayrılır; her asal çarpanın üssü 0'dan kendi değerine kadar (aᵢ + 1) farklı biçimde seçilebildiği için Pozitif Tam Bölen Sayısı PBS(A) = (a₁ + 1)·(a₂ + 1)... çarpımıyla bulunur ve üsleri çift olan tam kare sayıların PBS değeri tek sayı çıkar. İkinci aşamada iki sayının ortak asallarının en küçük üslüleri EBOB'u, tüm asalların en büyük üslüleri ise EKOK'u verir; iki sayı için A · B = EBOB(A, B) · EKOK(A, B) eşitliği geçerlidir ve aralarında asal sayılarda EBOB = 1, EKOK = A · B olur. Üçüncü aşamada gerçek yaşamda büyük kütle/alanları eş parçalara ayırma veya çevreye eşit aralıklı ağaç dikme sorularında EBOB; küçük parçaları birleştirip kare/küp yapma, nöbet/zil periyotlarını eşitleme ve kalanlı bölme sorularında ise EKOK modeli kullanılır."
+      "cevap": "Birinci aşamada 1'den büyük her A doğal sayısı A = {us:p₁|a₁} · {us:p₂|a₂}... biçiminde asal çarpanlarına ayrılır; her asal çarpanın üssü 0'dan kendi değerine kadar (aᵢ + 1) farklı biçimde seçilebildiği için Pozitif Tam Bölen Sayısı PBS(A) = (a₁ + 1)·(a₂ + 1)... çarpımıyla bulunur ve üsleri çift olan tam kare sayıların PBS değeri tek sayı çıkar. İkinci aşamada iki sayının ortak asallarının en küçük üslüleri EBOB'u, tüm asalların en büyük üslüleri ise EKOK'u verir; iki sayı için A · B = EBOB(A, B) · EKOK(A, B) eşitliği geçerlidir ve aralarında asal sayılarda EBOB = 1, EKOK = A · B olur. Üçüncü aşamada gerçek yaşamda büyük kütle/alanları eş parçalara ayırma veya çevreye eşit aralıklı ağaç dikme sorularında EBOB; küçük parçaları birleştirip kare/küp yapma, nöbet/zil periyotlarını eşitleme ve kalanlı bölme sorularında ise EKOK modeli kullanılır."
     }
   ],
   "ozet": [
-    "Aritmetiğin Temel Teoremi'ne göre 1'den büyük her doğal sayı A = p₁^a₁ · p₂^a₂ · ... · pₖ^aₖ biçiminde asal çarpanlarının kuvvetleri çarpımı olarak yazılır; Pozitif Tam Bölen Sayısı PBS(A) = (a₁ + 1)·(a₂ + 1)...·(aₖ + 1) formülüyle bulunur.",
+    "Aritmetiğin Temel Teoremi'ne göre 1'den büyük her doğal sayı A = {us:p₁|a₁} · {us:p₂|a₂} · ... · {us:pₖ|aₖ} biçiminde asal çarpanlarının kuvvetleri çarpımı olarak yazılır; Pozitif Tam Bölen Sayısı PBS(A) = (a₁ + 1)·(a₂ + 1)...·(aₖ + 1) formülüyle bulunur.",
     "Bir doğal sayının tam bölen sayısı 2 · PBS'dir, tam bölenlerinin toplamı 0'dır; tam kare doğal sayıların pozitif tam bölen sayısı (PBS) ise daima tek sayıdır.",
     "İki doğal sayının tüm ortak bölenleri EBOB'larının bölenleridir; asal çarpan açılımında ortak asalların küçük üslüleri EBOB'u, tüm asalların büyük üslüleri EKOK'u verir.",
     "Herhangi iki A ve B doğal sayısı için A · B = EBOB(A, B) · EKOK(A, B) eşitliği sağlanır; aralarında asal iki sayı için EBOB = 1 ve EKOK = A · B'dir.",

@@ -20,7 +20,7 @@
     ],
     [
       "Dinamik Denge",
-      "Kapalı bir sistemde sabit sıcaklıkta ileri tepkime hızının geri tepkime hızına eşit olduğu (r_ileri = r_geri), makroskobik özelliklerin sabit kaldığı ancak mikroskobik dönüşümlerin sürdüğü durumdur."
+      "Kapalı bir sistemde sabit sıcaklıkta ileri tepkime hızının geri tepkime hızına eşit olduğu (r{alt:ileri} = r{alt:geri}), makroskobik özelliklerin sabit kaldığı ancak mikroskobik dönüşümlerin sürdüğü durumdur."
     ],
     [
       "Fiziksel Denge",
@@ -62,15 +62,15 @@
       "baslik": "Fiziksel ve Kimyasal Değişimlerde Dinamik Denge Süreci",
       "metin": [
         "Bir sistemde dengenin kurulabilmesi için iki temel şart vardır: {koyu:sistem kapalı olmalı} (madde giriş-çıkışı engellenmeli) ve {koyu:sıcaklık sabit tutulmalıdır}. Denge durumu değişimin türüne göre {koyu:fiziksel denge} ve {koyu:kimyasal denge} olarak sınıflandırılır.",
-        "{koyu:1. Fiziksel Denge:} Maddenin kimyasal kimliği değişmeden fiziksel hâlleri arasında kurulan dengedir. Örneğin sabit sıcaklıkta kapalı bir cam balona konulan saf su başlangıçta hızla buharlaşır ({koyu:H₂O(s) → H₂O(g)}). Zamanla kapta biriken su buharı tanecikleri sıvı yüzeyine çarparak yoğuşmaya başlar ({koyu:H₂O(g) → H₂O(s)}). Birim zamanda buharlaşan su molekülü sayısı ile yoğuşan su molekülü sayısı birbirine eşitlendiğinde ({koyu:r_buharlaşma = r_yoğuşma}), su seviyesi ve denge buhar basıncı sabitlenir: {koyu:H₂O(s) ⇌ H₂O(g)}. Benzer şekilde dibinde katısı bulunan doymuş bir tuz çözeltisinde çözünme hızının çökelme hızına eşitlenmesi de ({koyu:NaCl(k) ⇌ Na⁺(suda) + Cl⁻(suda)}) fiziksel dengedir.",
-        "{koyu:2. Kimyasal Denge:} Kapalı bir kapta sabit sıcaklıkta kimyasal bağların kırılıp oluştuğu tersinir tepkimelerde kurulan dengedir. Örneğin Haber-Bosch süreciyle amonyak sentezinde ({koyu:N₂(g) + 3H₂(g) ⇌ 2NH₃(g)}) başlangıçta kaba konulan N₂ ve H₂ gazlarının derişimi yüksek olduğu için {koyu:ileri tepkime hızı (r_ileri)} maksimumdur; henüz NH₃ oluşmadığı için {koyu:geri tepkime hızı (r_geri)} sıfırdır. Zamanla N₂ ve H₂ harcandıkça {koyu:r_ileri azalır}, oluşan NH₃ miktarı arttıkça {koyu:r_geri artar}. {koyu:t_denge} anında {koyu:r_ileri = r_geri} olur ve tüm maddelerin derişimleri sabit kalır."
+        "{koyu:1. Fiziksel Denge:} Maddenin kimyasal kimliği değişmeden fiziksel hâlleri arasında kurulan dengedir. Örneğin sabit sıcaklıkta kapalı bir cam balona konulan saf su başlangıçta hızla buharlaşır ({koyu:H₂O(s) → H₂O(g)}). Zamanla kapta biriken su buharı tanecikleri sıvı yüzeyine çarparak yoğuşmaya başlar ({koyu:H₂O(g) → H₂O(s)}). Birim zamanda buharlaşan su molekülü sayısı ile yoğuşan su molekülü sayısı birbirine eşitlendiğinde ({koyu:r{alt:buharlaşma} = r{alt:yoğuşma}}), su seviyesi ve denge buhar basıncı sabitlenir: {koyu:H₂O(s) ⇌ H₂O(g)}. Benzer şekilde dibinde katısı bulunan doymuş bir tuz çözeltisinde çözünme hızının çökelme hızına eşitlenmesi de ({koyu:NaCl(k) ⇌ Na⁺(suda) + Cl⁻(suda)}) fiziksel dengedir.",
+        "{koyu:2. Kimyasal Denge:} Kapalı bir kapta sabit sıcaklıkta kimyasal bağların kırılıp oluştuğu tersinir tepkimelerde kurulan dengedir. Örneğin Haber-Bosch süreciyle amonyak sentezinde ({koyu:N₂(g) + 3H₂(g) ⇌ 2NH₃(g)}) başlangıçta kaba konulan N₂ ve H₂ gazlarının derişimi yüksek olduğu için {koyu:ileri tepkime hızı (r{alt:ileri})} maksimumdur; henüz NH₃ oluşmadığı için {koyu:geri tepkime hızı (r{alt:geri})} sıfırdır. Zamanla N₂ ve H₂ harcandıkça {koyu:r{alt:ileri} azalır}, oluşan NH₃ miktarı arttıkça {koyu:r{alt:geri} artar}. {koyu:t{alt:denge}} anında {koyu:r{alt:ileri} = r{alt:geri}} olur ve tüm maddelerin derişimleri sabit kalır."
       ],
       "gorsel": "<svg viewBox=\"0 0 700 250\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\">\n  <rect width=\"700\" height=\"250\" fill=\"#f8fafc\" rx=\"12\"/>\n  <text x=\"350\" y=\"24\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">DİNAMİK DENGE SÜRECİNDE HIZ - ZAMAN VE DERİŞİM - ZAMAN GRAFİKLERİ</text>\n  <rect x=\"20\" y=\"40\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"180\" y=\"60\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\">1. TEPKİME HIZI - ZAMAN GRAFİĞİ</text>\n  <line x1=\"60\" y1=\"205\" x2=\"315\" y2=\"205\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n  <line x1=\"60\" y1=\"205\" x2=\"60\" y2=\"75\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n  <text x=\"52\" y=\"82\" text-anchor=\"end\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#334155\">Hız</text>\n  <text x=\"312\" y=\"220\" text-anchor=\"end\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#334155\">Zaman</text>\n  <path d=\"M 60 85 Q 115 140 185 142 L 305 142\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <path d=\"M 60 205 Q 115 144 185 142 L 305 142\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.5\"/>\n  <line x1=\"185\" y1=\"75\" x2=\"185\" y2=\"205\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4,4\"/>\n  <text x=\"185\" y=\"220\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#475569\">t_denge</text>\n  <text x=\"115\" y=\"102\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#dc2626\">r_ileri (azalır)</text>\n  <text x=\"115\" y=\"190\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#16a34a\">r_geri (artar)</text>\n  <text x=\"245\" y=\"134\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e3a8a\">r_ileri = r_geri</text>\n  <rect x=\"360\" y=\"40\" width=\"320\" height=\"195\" rx=\"10\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/>\n  <text x=\"520\" y=\"60\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#5b21b6\">2. DERİŞİM - ZAMAN GRAFİĞİ</text>\n  <line x1=\"400\" y1=\"205\" x2=\"655\" y2=\"205\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n  <line x1=\"400\" y1=\"205\" x2=\"400\" y2=\"75\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n  <text x=\"394\" y=\"82\" text-anchor=\"end\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#334155\">[M]</text>\n  <text x=\"652\" y=\"220\" text-anchor=\"end\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#334155\">Zaman</text>\n  <path d=\"M 400 85 Q 455 125 525 128 L 645 128\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <path d=\"M 400 205 Q 455 162 525 160 L 645 160\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <line x1=\"525\" y1=\"75\" x2=\"525\" y2=\"205\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4,4\"/>\n  <text x=\"525\" y=\"220\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#475569\">t_denge</text>\n  <text x=\"585\" y=\"120\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#dc2626\">[Tepken] = sabit</text>\n  <text x=\"585\" y=\"152\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#2563eb\">[Ürün] = sabit</text>\n  <text x=\"585\" y=\"185\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">(Eşit olmak zorunda değildir!)</text>\n</svg>",
       "kutular": [
         {
           "tur": "onemli",
           "baslik": "Hızlar Eşitlenir, Derişimler Sabitlenir!",
-          "metin": "Denge anında ileri ve geri tepkime hızları birbirine mutlaka eşittir (r_ileri = r_geri). Ancak tepkenlerin ve ürünlerin denge derişimleri birbirine eşit olmak zorunda değildir; derişimler denge anından itibaren sabit kalır."
+          "metin": "Denge anında ileri ve geri tepkime hızları birbirine mutlaka eşittir (r{alt:ileri} = r{alt:geri}). Ancak tepkenlerin ve ürünlerin denge derişimleri birbirine eşit olmak zorunda değildir; derişimler denge anından itibaren sabit kalır."
         },
         {
           "tur": "bilgi",
@@ -112,7 +112,7 @@
     },
     {
       "soru": "Sabit hacimli kapalı bir kaba 4 mol X(g) ve 4 mol Y(g) konularak başlatılan X(g) + Y(g) ⇌ 2Z(g) tepkimesi dengeye ulaştığında kapta kaç mol Z gazı bulunabilir? Yorumlayınız.",
-      "cevap": "Eğer tepkime tersinmez (%100 verimli) olsaydı 4 mol X ve 4 mol Y tamamen tükenir ve 8 mol Z oluşurdu. Ancak tepkime tersinir bir denge tepkimesi olduğundan giren maddeler tamamen tükenemez. Bu nedenle denge anında kaptaki Z gazı miktarı 0 ile 8 mol arasındadır (0 < n_Z < 8 mol)."
+      "cevap": "Eğer tepkime tersinmez (%100 verimli) olsaydı 4 mol X ve 4 mol Y tamamen tükenir ve 8 mol Z oluşurdu. Ancak tepkime tersinir bir denge tepkimesi olduğundan giren maddeler tamamen tükenemez. Bu nedenle denge anında kaptaki Z gazı miktarı 0 ile 8 mol arasındadır (0 < n{alt:Z} < 8 mol)."
     },
     {
       "soru": "Ağzı açık bir kapta sabit sıcaklıkta CaCO₃(k) + ısı ⇌ CaO(k) + CO₂(g) tepkimesi neden dengeye ulaşamaz? Açıklayınız.",
@@ -120,11 +120,11 @@
     },
     {
       "soru": "Tersinir bir tepkime dengeye ulaştığında makroskobik ve mikroskobik olaylar açısından sistemde neler gözlenir?",
-      "cevap": "Makroskobik (gözlemlenebilir) açıdan renk, basınç, sıcaklık, pH ve madde derişimleri sabit kalır; dışarıdan bakıldığında tepkime durmuş gibi görünür. Mikroskobik (tanecik) açıdan ise ileri ve geri tepkimeler eşit hızda (r_ileri = r_geri) durmaksızın devam eder."
+      "cevap": "Makroskobik (gözlemlenebilir) açıdan renk, basınç, sıcaklık, pH ve madde derişimleri sabit kalır; dışarıdan bakıldığında tepkime durmuş gibi görünür. Mikroskobik (tanecik) açıdan ise ileri ve geri tepkimeler eşit hızda (r{alt:ileri} = r{alt:geri}) durmaksızın devam eder."
     },
     {
       "soru": "Dibinde katısı bulunan doymuş PbI₂(suda) çözeltisine radyoaktif iyot (I*) içeren az miktarda katı PbI*₂ eklendiğinde, çözelti derişimi değişmediği hâlde bir süre sonra hem çözeltide hem de dipteki katıda radyoaktif iyoda rastlanmasının sebebi nedir?",
-      "cevap": "Bu deneysel gözlem, çözünme-çökelme dengesinin statik (durgun) değil dinamik bir süreç olduğunu kanıtlar. Denge anında birim zamanda çözünen PbI₂ miktarı ile çökelen PbI₂ miktarı birbirine eşittir (r_çözünme = r_çökelme); bu nedenle çözelti derişimi sabit kalırken katı ile çözelti arasında iyon alışverişi kesintisiz devam eder."
+      "cevap": "Bu deneysel gözlem, çözünme-çökelme dengesinin statik (durgun) değil dinamik bir süreç olduğunu kanıtlar. Denge anında birim zamanda çözünen PbI₂ miktarı ile çökelen PbI₂ miktarı birbirine eşittir (r{alt:çözünme} = r{alt:çökelme}); bu nedenle çözelti derişimi sabit kalırken katı ile çözelti arasında iyon alışverişi kesintisiz devam eder."
     }
   ],
   "etkinlikler": [
@@ -132,14 +132,14 @@
       "tur": "coktan",
       "soru": "Kapalı bir kapta sabit sıcaklıkta gerçekleşen tersinir bir kimyasal tepkime dinamik dengeye ulaştığında aşağıdaki niceliklerden hangisi ileri ve geri yönde birbirine eşit olmak zorundadır?",
       "secenekler": [
-        "İleri tepkime hızı ile geri tepkime hızı (r_ileri = r_geri)",
+        "İleri tepkime hızı ile geri tepkime hızı (r{alt:ileri} = r{alt:geri})",
         "Tepkenlerin ve ürünlerin mol sayıları toplamı",
         "Tepkenlerin ve ürünlerin molar derişimleri",
-        "İleri ve geri tepkimelerin hız sabitleri (k_ileri ve k_geri)",
+        "İleri ve geri tepkimelerin hız sabitleri (k{alt:ileri} ve k{alt:geri})",
         "Kaptaki katı ve gaz maddelerin kütlece yüzdeleri"
       ],
       "dogru": 0,
-      "aciklama": "Dinamik dengenin temel koşulu ileri tepkime hızının geri tepkime hızına eşit olmasıdır (r_ileri = r_geri); derişimler ve mol sayıları ise sabitlenir ancak eşit olmak zorunda değildir."
+      "aciklama": "Dinamik dengenin temel koşulu ileri tepkime hızının geri tepkime hızına eşit olmasıdır (r{alt:ileri} = r{alt:geri}); derişimler ve mol sayıları ise sabitlenir ancak eşit olmak zorunda değildir."
     },
     {
       "tur": "coktan",
@@ -262,18 +262,18 @@
     {
       "tur": "ogretici",
       "soru": "Kapalı bir kapta sabit sıcaklıkta gerçekleşen tersinir bir tepkimenin başlangıçtan denge anına kadar geçen sürecinde ileri/geri tepkime hızlarının ve madde derişimlerinin nasıl değiştiğini açıklayınız.",
-      "cevap": "Başlangıçta kapta tepkenler bulunduğu için ileri tepkime hızı (r_ileri) en yüksek değerindedir; henüz ürün oluşmadığı için geri tepkime hızı (r_geri) sıfırdır. Zamanla tepkenler harcandıkça derişimleri azalır ve buna bağlı olarak ileri tepkime hızı düşer. Aynı süreçte ürünlerin derişimi arttığı için geri tepkime hızı yükselir. Belirli bir t_denge anında ileri tepkime hızı ile geri tepkime hızı birbirine eşitlenir (r_ileri = r_geri). Bu andan itibaren hem tepkenlerin hem de ürünlerin derişimleri sabit kalır; ancak mikroskobik düzeyde dönüşüm eşit hızla devam eder.",
+      "cevap": "Başlangıçta kapta tepkenler bulunduğu için ileri tepkime hızı (r{alt:ileri}) en yüksek değerindedir; henüz ürün oluşmadığı için geri tepkime hızı (r{alt:geri}) sıfırdır. Zamanla tepkenler harcandıkça derişimleri azalır ve buna bağlı olarak ileri tepkime hızı düşer. Aynı süreçte ürünlerin derişimi arttığı için geri tepkime hızı yükselir. Belirli bir t{alt:denge} anında ileri tepkime hızı ile geri tepkime hızı birbirine eşitlenir (r{alt:ileri} = r{alt:geri}). Bu andan itibaren hem tepkenlerin hem de ürünlerin derişimleri sabit kalır; ancak mikroskobik düzeyde dönüşüm eşit hızla devam eder.",
       "ipuclari": [
-        "Başlangıç anında r_ileri ve r_geri hızlarının durumunu belirtiniz.",
+        "Başlangıç anında r{alt:ileri} ve r{alt:geri} hızlarının durumunu belirtiniz.",
         "Zamanla tepken ve ürün derişimlerinin değişimine bağlı olarak hızların nasıl değiştiğini açıklayınız.",
-        "t_denge anında hızların eşitlendiğini ve derişimlerin sabitlendiğini vurgulayınız."
+        "t{alt:denge} anında hızların eşitlendiğini ve derişimlerin sabitlendiğini vurgulayınız."
       ]
     }
   ],
   "ozet": [
     "Tersinmez tepkimeler tek yönlü (→) ilerler ve tepkenlerden en az biri tükenir; tersinir tepkimeler ise çift yönlüdür (⇌) ve %100 verime ulaşamaz.",
     "Renk tonu, toplam basınç, pH ve elektriksel iletkenlik gibi makroskobik özelliklerin sabitlenmesi tepkimenin dengeye ulaştığını gösterir.",
-    "Dengenin kurulması için sistemin kapalı ve sıcaklığın sabit olması gerekir; denge anında r_ileri = r_geri eşitliği sağlanır.",
+    "Dengenin kurulması için sistemin kapalı ve sıcaklığın sabit olması gerekir; denge anında r{alt:ileri} = r{alt:geri} eşitliği sağlanır.",
     "Maddenin fiziksel hâlleri arasında kurulan dengeye fiziksel denge, kimyasal türler arasında kurulan dengeye kimyasal denge denir.",
     "Minimum enerji eğilimi ısının yazıldığı yönü, maksimum düzensizlik eğilimi ise gaz mol sayısının fazla olduğu yönü destekler."
   ]

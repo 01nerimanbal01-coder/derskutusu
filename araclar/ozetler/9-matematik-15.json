@@ -1,0 +1,593 @@
+{
+  "ad": "9-matematik-15",
+  "sinif": 9,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "GEOMETRİK ŞEKİLLER - EŞLİK VE BENZERLİK",
+  "konu": "Üçgende Açı ve Kenar Özelliklerinin Doğrulanması, İspatı ve Yeni Durumlara Uyarlanması; Geometrik Dönüşümlere Giriş: Yansıma, Öteleme ve Dönme",
+  "ciktilar": [
+    "MAT.9.3.1.a. Üçgende iç ve dış açıların ölçülerinin toplamına, açılara karşılık gelen kenarlarla ilgili özelliklere ve kenarların uzunlukları arasındaki ilişkilere dair farklı doğrulama veya ispatları kullanır.",
+    "MAT.9.3.1.b. Yapılan doğrulama veya ispatları yeni durumlara uyarlayarak değerlendirir.",
+    "MAT.9.4.1.a-b. Geometrik dönüşümlerin (yansıma, öteleme, dönme) özelliklerine ve bir şeklin dönüşüm sonrasındaki görüntüsüne ilişkin varsayımlarda bulunur, incelediği örnekler üzerinden örüntüleri geneller.",
+    "MAT.9.4.1.c-d. Dönüşümlere ilişkin varsayım ve genellemelerini karşılaştırır, önermeler sunar ve bu önermeleri yeni çıkarımlar yapmak için kullanır."
+  ],
+  "giris": "Son iki haftada üçgenin açı-kenar bağıntılarını ve yardımcı elemanlarını tanıdık; bu hafta bu özelliklerin {koyu:neden} doğru olduğunu farklı doğrulama ve ispat yollarıyla gösterecek, ardından aynı akıl yürütmeyi çokgenler, kelebek, ok ucu ve yıldız gibi yeni şekillere uyarlayacağız. Haftanın ikinci yarısında yeni ünitemiz Eşlik ve Benzerlik'e adım atıyoruz: {koyu:yansıma}, {koyu:öteleme} ve {koyu:dönme} dönüşümlerini koordinat düzleminde inceleyecek, şekillerin bu dönüşümler altındaki görüntülerine dair varsayımlarımızı örneklerle sınayıp genellemelere ulaşacağız.",
+  "ozet": [
+    "{koyu:Doğrulama ve ispat:} Ölçme, kesip birleştirme, kâğıt katlama ve dinamik yazılım bir özelliği örneklerde doğrular; paralel doğru çizerek yapılan akıl yürütme ise iç açılar toplamının her üçgende 180° olduğunu ispatlar.",
+    "{koyu:Açı-kenar ve üçgen eşitsizliği ispatı:} Uzun kenar üzerinde ikizkenar üçgen oluşturmak ve dış açı teoremini kullanmak, büyük kenar karşısında büyük açı bulunduğunu ve a < b + c olduğunu kanıtlamanın anahtarıdır.",
+    "{koyu:Yeni durumlara uyarlama:} n-genin iç açıları toplamı (n − 2) · 180°, dış açıları toplamı 360°; kelebekte a + b = c + d, ok ucunda x = a + b + c, beş köşeli yıldızda uç açılar toplamı 180°'dir.",
+    "{koyu:İzometri:} Yansıma, öteleme ve dönme uzunlukları ve açıları korur; bu yüzden bir şekil ile görüntüsü eştir.",
+    "{koyu:Koordinat kuralları:} x eksenine göre (x, −y), y eksenine göre (−x, y), orijine göre (−x, −y), y = x doğrusuna göre (y, x); (a, b) ötelemesinde (x + a, y + b); orijin etrafında pozitif yönde 90° dönmede (−y, x) elde edilir.",
+    "{koyu:Genelleme:} Yansıma yönelimi ters çevirir, öteleme ve dönme korur; iki yansımanın art arda uygulanması eksenler paralelse bir ötelemeye, kesişiyorsa bir dönmeye eşittir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Üçgende Açı Toplamlarının Farklı Doğrulama ve İspat Yolları",
+      "metin": [
+        "Matematikte bir özelliği {koyu:doğrulamak}, onun belirli örneklerde sağlandığını gözlem, ölçme veya deneyle göstermektir; {koyu:ispatlamak} ise tanımlardan ve daha önce kanıtlanmış özelliklerden mantıksal adımlarla ilerleyerek özelliğin istisnasız her durumda doğru olduğunu göstermektir. Bir üçgenin açılarını iletkiyle ölçüp toplamak, köşeleri kesip bir doğru boyunca yan yana dizmek veya kâğıdı katlayarak üç köşeyi tek noktada buluşturmak güçlü doğrulama yöntemleridir. Dinamik geometri yazılımında köşeleri sürükleyerek yüzlerce üçgeni saniyeler içinde incelemek de varsayımımıza güven kazandırır. Ancak sonsuz sayıda üçgenin hepsi denenemeyeceği için bu yöntemler tek başına genel bir sonuç vermez; kesin bilgi için ispat gerekir.",
+        "En bilinen ispat {koyu:paralel doğru} yöntemidir. ABC üçgeninde A köşesinden [BC] kenarına paralel bir d doğrusu çizelim. d ∥ BC ve AB bir kesen olduğundan, d ile [AB] arasında oluşan açı B açısıyla {koyu:iç ters açı} konumundadır ve ölçüsü m(B)'ye eşittir. Aynı şekilde AC keseni için d ile [AC] arasındaki açı m(C)'ye eşittir. A noktasında d doğrusu boyunca yan yana duran bu iki açı ile m(A) birlikte bir {koyu:doğru açı} oluşturur. O hâlde m(A) + m(B) + m(C) = 180° bulunur. Paralel doğru B veya C köşesinden çizilse de aynı sonuca ulaşılır; hangi köşenin seçildiği ispatın geçerliliğini değiştirmez.",
+        "{koyu:Dış açı teoremi} de iki farklı yoldan ispatlanabilir. Birinci yol: [BC] kenarını C'nin ötesine uzatıp D noktasını alalım. ACD dış açısı ile ACB iç açısı bütünler olduğundan m(ACD) = 180° − m(C) olur; iç açılar toplamından 180° − m(C) = m(A) + m(B) olduğu için m(ACD) = m(A) + m(B) elde edilir. İkinci yol: C'den [AB]'ye paralel bir ışın çizilirse dış açı iki parçaya ayrılır; parçalardan biri A açısıyla iç ters, diğeri B açısıyla yöndeş olduğundan sonuç doğrudan görülür. Üç dış açının toplamı ise 3 · 180° − 180° = 360° bulunur. Bunu bir kalemi üçgenin kenarları boyunca gezdirip her köşede dış açı kadar döndürerek de doğrulayabiliriz: kalem başladığı yöne bakarak tam bir tur (360°) atmış olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yöntem",
+          "Nasıl Uygulanır?",
+          "Türü",
+          "Değerlendirme"
+        ],
+        "satirlar": [
+          [
+            "İletkiyle ölçme",
+            "Üç iç açı ölçülüp toplanır.",
+            "Doğrulama",
+            "Ölçme hatası yüzünden 178° veya 181° gibi sonuçlar çıkabilir."
+          ],
+          [
+            "Kesip birleştirme",
+            "Köşeler kesilip bir doğru boyunca yan yana konur.",
+            "Doğrulama",
+            "Üç açının doğru açı oluşturduğu gözle görülür."
+          ],
+          [
+            "Kâğıt katlama",
+            "Tepe, yüksekliğin ayağına; taban köşeleri de aynı noktaya katlanır.",
+            "Doğrulama",
+            "Üç açı tabanda tek noktada buluşur."
+          ],
+          [
+            "Dinamik geometri yazılımı",
+            "Köşeler sürüklenirken toplam izlenir.",
+            "Doğrulama",
+            "Çok sayıda örnek sunar ama yine de sonlu sayıdadır."
+          ],
+          [
+            "Paralel doğru çizme",
+            "Bir köşeden karşı kenara paralel doğru çizilir.",
+            "İspat",
+            "Her üçgende geçerli, kesin sonuç verir."
+          ],
+          [
+            "Kalem döndürme",
+            "Kalem kenarlar boyunca gezdirilip köşelerde döndürülür.",
+            "Doğrulama",
+            "Dış açılar toplamının 360° olduğunu sezdirir."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Doğrulama ile İspat Arasındaki Fark",
+          "metin": "Doğrulama bir özelliğin seçilen örneklerde sağlandığını gösterir ve varsayım kurmamızı sağlar. İspat ise tanımlara ve kanıtlanmış önermelere dayanarak özelliğin her durumda doğru olduğunu gösterir. İyi bir matematikçi önce doğrular, sonra ispatlar."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Bir Örnek İspat Değildir, Bir Karşı Örnek Çürütmeye Yeter",
+          "metin": "Bir önermenin 100 örnekte doğru çıkması onu ispatlamaz; tek bir karşı örnek ise önermeyi çürütmeye yeter. Örneğin 'Her üçgende en büyük açı 90°'den küçüktür' önermesi, açıları 30°, 30° ve 120° olan üçgenle çürütülür."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"14\" width=\"720\" height=\"36\" rx=\"8\" fill=\"#1d4ed8\"/><text x=\"380\" y=\"38\" text-anchor=\"middle\" fill=\"#ffffff\" font-size=\"16\" font-weight=\"bold\">İÇ AÇILAR TOPLAMININ PARALEL DOĞRU İLE İSPATI</text><rect x=\"20\" y=\"62\" width=\"360\" height=\"224\" rx=\"12\" fill=\"#ffffff\" stroke=\"#93c5fd\" stroke-width=\"2\"/><line x1=\"40\" y1=\"100\" x2=\"360\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"350\" y=\"92\" fill=\"#dc2626\" font-size=\"13\" font-weight=\"bold\">d</text><polygon points=\"200,100 80,260 330,260\" fill=\"#dbeafe\" stroke=\"#1d4ed8\" stroke-width=\"2.5\"/><text x=\"200\" y=\"90\" text-anchor=\"middle\" fill=\"#1e3a8a\" font-size=\"14\" font-weight=\"bold\">A</text><text x=\"66\" y=\"276\" text-anchor=\"middle\" fill=\"#1e3a8a\" font-size=\"14\" font-weight=\"bold\">B</text><text x=\"344\" y=\"276\" text-anchor=\"middle\" fill=\"#1e3a8a\" font-size=\"14\" font-weight=\"bold\">C</text><text x=\"156\" y=\"117\" fill=\"#b45309\" font-size=\"14\" font-weight=\"bold\">β</text><text x=\"234\" y=\"117\" fill=\"#047857\" font-size=\"14\" font-weight=\"bold\">θ</text><text x=\"200\" y=\"136\" text-anchor=\"middle\" fill=\"#1e3a8a\" font-size=\"14\" font-weight=\"bold\">α</text><text x=\"106\" y=\"252\" fill=\"#b45309\" font-size=\"14\" font-weight=\"bold\">β</text><text x=\"294\" y=\"252\" fill=\"#047857\" font-size=\"14\" font-weight=\"bold\">θ</text><text x=\"205\" y=\"210\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"12\">d ∥ BC</text><rect x=\"395\" y=\"62\" width=\"345\" height=\"224\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"2\"/><text x=\"410\" y=\"90\" fill=\"#0f172a\" font-size=\"12\">1. A'dan BC'ye paralel d doğrusu çizilir.</text><text x=\"410\" y=\"114\" fill=\"#0f172a\" font-size=\"12\">2. AB kesen: soldaki açı = m(B) = β</text><text x=\"410\" y=\"138\" fill=\"#0f172a\" font-size=\"12\">3. AC kesen: sağdaki açı = m(C) = θ</text><text x=\"424\" y=\"156\" fill=\"#475569\" font-size=\"11\">(paralel doğrularda iç ters açılar eştir)</text><text x=\"410\" y=\"180\" fill=\"#0f172a\" font-size=\"12\">4. A'da yan yana üç açı doğru açıdır.</text><rect x=\"412\" y=\"196\" width=\"311\" height=\"76\" rx=\"10\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"567\" y=\"226\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-size=\"16\" font-weight=\"bold\">β + α + θ = 180°</text><text x=\"567\" y=\"254\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">m(A) + m(B) + m(C) = 180°</text></svg>"
+    },
+    {
+      "baslik": "Açı-Kenar Sıralamasının ve Üçgen Eşitsizliğinin İspatı",
+      "metin": [
+        "Önceki haftalarda sıkça kullandığımız 'büyük kenar karşısında büyük açı bulunur' kuralını şimdi ispatlayalım. ABC üçgeninde b > c, yani {uzunluk:AC} > {uzunluk:AB} olsun. [AC] üzerinde {uzunluk:AD} = {uzunluk:AB} olacak şekilde bir D noktası alalım; AC daha uzun olduğu için D, A ile C arasına düşer. ABD üçgeni ikizkenar olduğundan taban açıları eşittir: m(ABD) = m(ADB) = x. ADB açısı DBC üçgeninin bir dış açısıdır; dış açı teoremine göre x = m(C) + m(DBC) olur, buradan {koyu:x > m(C)} çıkar. Öte yandan D noktası ABC açısının iç bölgesinde olduğu için m(B) = x + m(DBC) olur ve {koyu:m(B) > x} bulunur. İki eşitsizlik birleşince m(B) > x > m(C) yani b > c ise m(B) > m(C) ispatlanmış olur.",
+        "Bu önermenin karşıtı olan 'm(B) > m(C) ise b > c' ifadesi {koyu:olmayana ergi} yöntemiyle ispatlanır. Diyelim ki m(B) > m(C) olduğu hâlde b > c olmasın. Bu durumda iki ihtimal kalır: b = c ise üçgen ikizkenardır ve taban açıları eşit olmalıdır, yani m(B) = m(C) olur; bu varsayımla çelişir. b < c ise az önce yaptığımız ispat (harflerin rolü değişerek) m(B) < m(C) sonucunu verir; bu da çelişkidir. Her iki ihtimal de çelişkiye götürdüğü için geriye tek seçenek kalır: b > c. Böylece açı ile karşısındaki kenar arasındaki sıralamanın iki yönde de geçerli olduğu kesinleşir.",
+        "Üçgen eşitsizliğinin ispatında da aynı fikri, yani ikizkenar üçgen kurmayı kullanırız. [BA] kenarını A'nın ötesine uzatıp {uzunluk:AD} = {uzunluk:AC} = b olacak şekilde D noktasını alalım. ACD üçgeni ikizkenar olduğundan m(ACD) = m(ADC) = y olur. A noktası [BD] üzerinde olduğu için CA ışını BCD açısının içinde kalır ve m(BCD) = m(BCA) + y > y = m(BDC) bulunur. BCD üçgeninde büyük açı karşısında büyük kenar olduğundan {uzunluk:BD} > {uzunluk:BC} olur. {uzunluk:BD} = c + b olduğu için {koyu:a < b + c} elde edilir. Aynı yol b < a + c ve c < a + b eşitsizliklerini verir; bunlardan b − c < a ve c − b < a, yani {uzunluk:b − c} < a sonucuna ulaşılır. Eğer a = b + c olsaydı üç nokta aynı doğru üzerinde olur, üçgen 'düzleşirdi'; eşitsizliğin kesin (eşitsiz) olmasının nedeni budur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Adım",
+          "İfade",
+          "Gerekçe"
+        ],
+        "satirlar": [
+          [
+            "1",
+            "[BA] uzatılır, {uzunluk:AD} = {uzunluk:AC} = b alınır.",
+            "Yardımcı çizim"
+          ],
+          [
+            "2",
+            "m(ACD) = m(ADC) = y",
+            "İkizkenar üçgende taban açıları eşittir."
+          ],
+          [
+            "3",
+            "m(BCD) = m(BCA) + y",
+            "A, [BD] üzerinde olduğundan CA ışını BCD açısının içindedir."
+          ],
+          [
+            "4",
+            "m(BCD) > m(BDC)",
+            "m(BCA) > 0 olduğundan"
+          ],
+          [
+            "5",
+            "{uzunluk:BD} > {uzunluk:BC}",
+            "Büyük açı karşısında büyük kenar bulunur."
+          ],
+          [
+            "6",
+            "b + c > a",
+            "{uzunluk:BD} = {uzunluk:BA} + {uzunluk:AD} = c + b"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Olmayana Ergi Yöntemi",
+          "metin": "Bir önermeyi ispatlamak için sonucun yanlış olduğu varsayılır; bu varsayımdan bilinen bir gerçekle çelişen bir sonuca ulaşılırsa varsayım yanlıştır, dolayısıyla önerme doğrudur. Açı-kenar sıralamasının karşıtı bu yöntemle ispatlanır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Doğru Yardımcı Çizimi Seçmek",
+          "metin": "Açılarla kenarları ilişkilendirmenin en kısa yolu, şekle bir ikizkenar üçgen eklemektir: eşit kenarlar eşit açılar verir, dış açı teoremi de açıları karşılaştırmayı sağlar. Bu iki araç bu hafta yaptığımız ispatların tamamında kullanılır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"14\" width=\"720\" height=\"36\" rx=\"8\" fill=\"#047857\"/><text x=\"380\" y=\"38\" text-anchor=\"middle\" fill=\"#ffffff\" font-size=\"16\" font-weight=\"bold\">İKİZKENAR ÜÇGEN KURARAK İSPAT</text><rect x=\"20\" y=\"62\" width=\"360\" height=\"224\" rx=\"12\" fill=\"#ffffff\" stroke=\"#6ee7b7\" stroke-width=\"2\"/><text x=\"200\" y=\"84\" text-anchor=\"middle\" fill=\"#065f46\" font-size=\"13\" font-weight=\"bold\">1) b &gt; c ise m(B) &gt; m(C)</text><polygon points=\"110,100 55,230 310,230\" fill=\"#d1fae5\" stroke=\"#047857\" stroke-width=\"2.5\"/><line x1=\"55\" y1=\"230\" x2=\"228\" y2=\"177\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"228\" cy=\"177\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"104\" y=\"96\" text-anchor=\"end\" fill=\"#065f46\" font-size=\"13\" font-weight=\"bold\">A</text><text x=\"46\" y=\"244\" fill=\"#065f46\" font-size=\"13\" font-weight=\"bold\">B</text><text x=\"314\" y=\"244\" fill=\"#065f46\" font-size=\"13\" font-weight=\"bold\">C</text><text x=\"236\" y=\"174\" fill=\"#dc2626\" font-size=\"13\" font-weight=\"bold\">D</text><text x=\"68\" y=\"165\" fill=\"#1e3a8a\" font-size=\"12\" font-weight=\"bold\">c</text><text x=\"176\" y=\"132\" fill=\"#1e3a8a\" font-size=\"12\" font-weight=\"bold\">c</text><text x=\"84\" y=\"216\" fill=\"#b91c1c\" font-size=\"12\" font-weight=\"bold\">x</text><text x=\"206\" y=\"176\" fill=\"#b91c1c\" font-size=\"12\" font-weight=\"bold\">x</text><text x=\"200\" y=\"258\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">AD = AB ise ABD ikizkenar: m(ABD) = m(ADB) = x</text><text x=\"200\" y=\"276\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"bold\">x = m(C) + m(DBC), sonuç: m(B) &gt; x &gt; m(C)</text><rect x=\"395\" y=\"62\" width=\"345\" height=\"224\" rx=\"12\" fill=\"#ffffff\" stroke=\"#fcd34d\" stroke-width=\"2\"/><text x=\"520\" y=\"84\" text-anchor=\"middle\" fill=\"#92400e\" font-size=\"13\" font-weight=\"bold\">2) Üçgen eşitsizliği: a &lt; b + c</text><polygon points=\"420,235 540,170 700,235\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"2.5\"/><line x1=\"540\" y1=\"170\" x2=\"692\" y2=\"88\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><line x1=\"692\" y1=\"88\" x2=\"700\" y2=\"235\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"692\" cy=\"88\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"532\" y=\"164\" text-anchor=\"end\" fill=\"#92400e\" font-size=\"13\" font-weight=\"bold\">A</text><text x=\"410\" y=\"250\" fill=\"#92400e\" font-size=\"13\" font-weight=\"bold\">B</text><text x=\"706\" y=\"250\" fill=\"#92400e\" font-size=\"13\" font-weight=\"bold\">C</text><text x=\"700\" y=\"84\" fill=\"#dc2626\" font-size=\"13\" font-weight=\"bold\">D</text><text x=\"472\" y=\"196\" fill=\"#1e3a8a\" font-size=\"12\" font-weight=\"bold\">c</text><text x=\"604\" y=\"122\" fill=\"#1e3a8a\" font-size=\"12\" font-weight=\"bold\">b</text><text x=\"616\" y=\"200\" fill=\"#1e3a8a\" font-size=\"12\" font-weight=\"bold\">b</text><text x=\"560\" y=\"251\" text-anchor=\"middle\" fill=\"#1e3a8a\" font-size=\"12\" font-weight=\"bold\">a</text><text x=\"567\" y=\"266\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">AD = AC ise m(ADC) = m(ACD); m(BCD) &gt; m(BDC)</text><text x=\"567\" y=\"280\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"bold\">BD &gt; BC, yani b + c &gt; a</text></svg>"
+    },
+    {
+      "baslik": "İspatları Yeni Durumlara Uyarlama: Çokgenler ve Özel Şekiller",
+      "metin": [
+        "Üçgende kanıtladığımız özellikler, daha karmaşık şekiller için hazır bir araç kutusudur. Dışbükey bir n-genin bir köşesinden çizilebilen n − 3 köşegen, çokgeni {koyu:n − 2 üçgene} ayırır. Bu üçgenlerin açıları bir araya gelerek tam olarak çokgenin iç açılarını oluşturduğundan iç açılar toplamı {koyu:(n − 2) · 180°} olur: dörtgende 360°, beşgende 540°, altıgende 720°. İspatı farklı bir yoldan da doğrulayabiliriz: çokgenin içinde bir P noktası alıp köşelerle birleştirirsek n üçgen oluşur; toplam n · 180° olur, ancak P çevresindeki tam açı (360°) çokgenin açısı olmadığından çıkarılır ve yine n · 180° − 360° = (n − 2) · 180° bulunur. Her köşedeki dış açı iç açının bütünleri olduğundan dış açılar toplamı n · 180° − (n − 2) · 180° = {koyu:360°} olur ve n'ye bağlı değildir. Düzgün n-gende bir dış açı {kesir:360°|n}, bir iç açı 180° − {kesir:360°|n} değerindedir.",
+        "{koyu:Kelebek şekli:} İki doğru parçası bir E noktasında kesişip uçları birleştirildiğinde, E'de tepe tepeye iki üçgen oluşur. E'deki açılar ters açılar olduğu için eşittir; her iki üçgenin iç açıları toplamı da 180° olduğundan, iki üçgende kalan açıların toplamları da eşit olmalıdır: {koyu:a + b = c + d}. {koyu:Ok ucu (içbükey dörtgen):} D noktası ABC üçgeninin iç bölgesinde olmak üzere ABDC şeklinde [BD] doğru parçası uzatılıp [AC]'yi E'de kessin. ABE üçgeninde dış açı teoreminden m(BEC) = m(BAC) + m(ABD); DEC üçgeninde ise m(BDC) = m(BEC) + m(ACD) olur. Böylece {koyu:m(BDC) = m(BAC) + m(ABD) + m(ACD)}, kısaca x = a + b + c bulunur. Dış açı teoremi iki kez uygulanarak yeni bir kural üretilmiştir.",
+        "{koyu:Beş köşeli yıldız:} Yıldızın uç açılarına a, b, c, d, e diyelim. Bir ucu (örneğin a açısını) içeren ve tabanı yıldızın bir kolu üzerinde duran üçgeni ele alalım. Bu üçgenin diğer iki açısının her biri, yıldızın başka bir küçük üçgeninin dış açısıdır; dış açı teoremine göre bu açılar ikişer uç açının toplamına, yani (b + d) ve (c + e) değerlerine eşittir. Üçgenin iç açıları toplamından a + (b + d) + (c + e) = 180° elde edilir: {koyu:beş köşeli yıldızın uç açıları toplamı her zaman 180°'dir}. Bu sonuç, ölçerek doğrulanabilecek ama ancak üçgen özellikleriyle ispatlanabilecek güzel bir genellemedir. Uyarlamanın sınırlarını da değerlendirmek gerekir: köşegenle üçgenlere ayırma yöntemi dışbükey çokgende doğrudan uygulanır; içbükey şekillerde ise yukarıdaki ok ucu örneğindeki gibi ek çizimlerle akıl yürütmek gerekir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Şekil",
+          "Ulaşılan Sonuç",
+          "Kullanılan Üçgen Özelliği"
+        ],
+        "satirlar": [
+          [
+            "n-genin iç açıları",
+            "(n − 2) · 180°",
+            "Köşegenlerle üçgenlere ayırma ve iç açılar toplamı"
+          ],
+          [
+            "n-genin dış açıları",
+            "360°",
+            "Her köşede iç açı ile dış açının bütünler olması"
+          ],
+          [
+            "Düzgün n-gen",
+            "Bir dış açı = {kesir:360°|n}",
+            "Eş dış açılar ve dış açılar toplamı"
+          ],
+          [
+            "Kelebek",
+            "a + b = c + d",
+            "Ters açıların eşliği ve iç açılar toplamı"
+          ],
+          [
+            "Ok ucu (içbükey dörtgen)",
+            "x = a + b + c",
+            "Dış açı teoreminin iki kez uygulanması"
+          ],
+          [
+            "Beş köşeli yıldız",
+            "Uç açılar toplamı 180°",
+            "Dış açı teoremi ve iç açılar toplamı"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "Düzgün Çokgende Hızlı Hesap",
+          "metin": "Düzgün çokgen sorularında önce dış açıyı bulmak işi kolaylaştırır: iç açı 150° ise dış açı 30°, kenar sayısı 360° ÷ 30° = 12 olur. Bu yol, iç açılar toplamı formülüyle denklem kurmaktan çok daha kısadır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Bir İspatı Uyarlarken Sorulacak Sorular",
+          "metin": "Yeni bir şekille karşılaştığında kendine şunu sor: Bu şeklin içinde hangi üçgenleri görüyorum? Hangi açı bir üçgenin dış açısı? Ters açı veya paralel doğru var mı? Bu sorular, bildiğin üçgen özelliklerini yeni şekle taşımanın yolunu açar."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"14\" width=\"720\" height=\"36\" rx=\"8\" fill=\"#7c3aed\"/><text x=\"380\" y=\"38\" text-anchor=\"middle\" fill=\"#ffffff\" font-size=\"16\" font-weight=\"bold\">AYNI FİKİR, YENİ ŞEKİLLER: ÇOKGEN, KELEBEK, OK UCU</text><rect x=\"20\" y=\"62\" width=\"230\" height=\"224\" rx=\"12\" fill=\"#ffffff\" stroke=\"#c4b5fd\" stroke-width=\"2\"/><text x=\"135\" y=\"84\" text-anchor=\"middle\" fill=\"#5b21b6\" font-size=\"13\" font-weight=\"bold\">Çokgen (n = 5)</text><polygon points=\"135,95 196.8,139.9 173.2,212.6 96.8,212.6 73.2,139.9\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><line x1=\"135\" y1=\"95\" x2=\"173.2\" y2=\"212.6\" stroke=\"#7c3aed\" stroke-width=\"1.5\" stroke-dasharray=\"5 3\"/><line x1=\"135\" y1=\"95\" x2=\"96.8\" y2=\"212.6\" stroke=\"#7c3aed\" stroke-width=\"1.5\" stroke-dasharray=\"5 3\"/><text x=\"168\" y=\"153\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"13\" font-weight=\"bold\">1</text><text x=\"135\" y=\"180\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"13\" font-weight=\"bold\">2</text><text x=\"102\" y=\"153\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"13\" font-weight=\"bold\">3</text><text x=\"135\" y=\"242\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"12\" font-weight=\"bold\">3 üçgen × 180° = 540°</text><text x=\"135\" y=\"262\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"12\">Genel: (n − 2) · 180°</text><rect x=\"265\" y=\"62\" width=\"230\" height=\"224\" rx=\"12\" fill=\"#ffffff\" stroke=\"#c4b5fd\" stroke-width=\"2\"/><text x=\"380\" y=\"84\" text-anchor=\"middle\" fill=\"#5b21b6\" font-size=\"13\" font-weight=\"bold\">Kelebek</text><line x1=\"300\" y1=\"105\" x2=\"460\" y2=\"225\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><line x1=\"460\" y1=\"105\" x2=\"300\" y2=\"225\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><line x1=\"300\" y1=\"105\" x2=\"300\" y2=\"225\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><line x1=\"460\" y1=\"105\" x2=\"460\" y2=\"225\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><text x=\"380\" y=\"152\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"12\" font-weight=\"bold\">E</text><text x=\"308\" y=\"134\" fill=\"#dc2626\" font-size=\"13\" font-weight=\"bold\">a</text><text x=\"308\" y=\"206\" fill=\"#dc2626\" font-size=\"13\" font-weight=\"bold\">b</text><text x=\"444\" y=\"134\" fill=\"#047857\" font-size=\"13\" font-weight=\"bold\">c</text><text x=\"444\" y=\"206\" fill=\"#047857\" font-size=\"13\" font-weight=\"bold\">d</text><text x=\"380\" y=\"250\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\" font-weight=\"bold\">a + b = c + d</text><text x=\"380\" y=\"268\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"11\">E'deki ters açılar eş olduğundan</text><rect x=\"510\" y=\"62\" width=\"230\" height=\"224\" rx=\"12\" fill=\"#ffffff\" stroke=\"#c4b5fd\" stroke-width=\"2\"/><text x=\"625\" y=\"84\" text-anchor=\"middle\" fill=\"#5b21b6\" font-size=\"13\" font-weight=\"bold\">Ok ucu (içbükey dörtgen)</text><polygon points=\"625,100 545,230 625,180 705,230\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><text x=\"625\" y=\"126\" text-anchor=\"middle\" fill=\"#dc2626\" font-size=\"13\" font-weight=\"bold\">a</text><text x=\"566\" y=\"221\" fill=\"#dc2626\" font-size=\"13\" font-weight=\"bold\">b</text><text x=\"676\" y=\"221\" fill=\"#dc2626\" font-size=\"13\" font-weight=\"bold\">c</text><text x=\"625\" y=\"208\" text-anchor=\"middle\" fill=\"#047857\" font-size=\"13\" font-weight=\"bold\">x</text><text x=\"625\" y=\"254\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\" font-weight=\"bold\">x = a + b + c</text><text x=\"625\" y=\"272\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"11\">Dış açı teoremi iki kez</text></svg>"
+    },
+    {
+      "baslik": "Geometrik Dönüşüm Kavramı: Ön Görüntü, Görüntü ve İzometri",
+      "metin": [
+        "Düzlemdeki her noktayı belirli bir kurala göre tek bir noktaya eşleyen işleme {koyu:geometrik dönüşüm} denir. Dönüşüm altında A noktasının eşlendiği nokta A′ (A üssü) ile gösterilir. Dönüşüm uygulanmadan önceki noktaya veya şekle {koyu:ön görüntü}, dönüşümden sonra elde edilene {koyu:görüntü} denir. Gündelik hayatta dönüşümler her yerdedir: aynadaki aksimiz bir yansımadır, yük asansörünün düz yukarı çıkışı bir ötelemedir, saatin yelkovanı dönmeyi gösterir. Çini, kilim ve Selçuklu taş süslemelerindeki motiflerin kendini tekrar ederek bütün bir yüzeyi kaplaması da bu üç dönüşümün ustaca birleştirilmesiyle oluşur.",
+        "Bu hafta inceleyeceğimiz {koyu:yansıma}, {koyu:öteleme} ve {koyu:dönme} dönüşümlerinin ortak özelliği uzunluğu korumalarıdır: herhangi iki nokta arasındaki uzaklık, görüntüleri arasındaki uzaklığa eşittir. Uzaklıkları koruyan dönüşümlere {koyu:izometri} (eşlik dönüşümü) denir. Bir üçgen izometri altında dönüştürüldüğünde üç kenarı da korunur; Kenar-Kenar-Kenar eşliğinden üçgen ile görüntüsü eştir. Bu yüzden açı ölçüleri, çevre ve alan da değişmez; doğrular doğrulara, paralel doğrular paralel doğrulara gönderilir. Bir varsayım kurmak için şeklini aydınger kâğıdına çizip kâğıdı kaydırabilir, ters çevirebilir veya bir raptiye etrafında döndürebilirsin: şeklin boyutunun ve biçiminin hiç değişmediğini görürsün.",
+        "Peki hiçbir şey değişmiyor mu? Değişen iki şey vardır: {koyu:konum} ve bazen {koyu:yönelim}. Yönelim, köşelerin A → B → C sırasıyla dolaşıldığında saat yönünde mi yoksa tersinde mi ilerlendiğini anlatır. Öteleme ve dönmede bu dolanım yönü aynı kalır; yansımada ise ters döner, tıpkı aynada sağ elimizin sol el gibi görünmesi gibi. İkinci ayırt edici özellik {koyu:sabit noktadır}: görüntüsü kendisine eşit olan nokta. Yansımada eksen üzerindeki her nokta sabittir, dönmede yalnızca merkez sabittir, sıfırdan farklı bir ötelemede ise hiç sabit nokta yoktur. Bu iki özellik, verilen bir şekil-görüntü çiftine hangi dönüşümün uygulandığını tahmin etmemizi sağlar: yönelim ters ise yansıma; yönelim aynı ve tüm noktalar aynı yönde aynı miktarda kaymışsa öteleme; yönelim aynı ve bir nokta sabit kalmışsa dönme söz konusudur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kavram",
+          "Anlamı",
+          "Örnek"
+        ],
+        "satirlar": [
+          [
+            "Ön görüntü",
+            "Dönüşümden önceki nokta veya şekil",
+            "ABC üçgeni"
+          ],
+          [
+            "Görüntü",
+            "Dönüşümden sonra elde edilen nokta veya şekil",
+            "A′B′C′ üçgeni"
+          ],
+          [
+            "İzometri",
+            "Noktalar arasındaki uzaklıkları koruyan dönüşüm",
+            "Yansıma, öteleme, dönme"
+          ],
+          [
+            "Yönelim",
+            "Köşelerin sırayla dolaşılma yönü",
+            "ABC saat yönünün tersine sıralanmış"
+          ],
+          [
+            "Sabit nokta",
+            "Dönüşüm altında görüntüsü kendisi olan nokta",
+            "Dönmede merkez, yansımada eksen üzerindeki noktalar"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "İzometri (Eşlik Dönüşümü)",
+          "metin": "Her P ve Q noktası için {uzunluk:PQ} = {uzunluk:P′Q′} koşulunu sağlayan dönüşüme izometri denir. İzometri altında bir şekil ile görüntüsü eştir; uzunluk, açı, çevre ve alan korunur."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Görüntü Gösterimine Dikkat",
+          "metin": "A noktasına bir dönüşüm uygulanınca A′, elde edilen noktaya ikinci bir dönüşüm uygulanınca A″ yazılır. Art arda dönüşümlerde sıra önemlidir; önce yansıtıp sonra ötelemek ile önce öteleyip sonra yansıtmak genellikle farklı noktalar verir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"14\" width=\"720\" height=\"36\" rx=\"8\" fill=\"#0369a1\"/><text x=\"380\" y=\"38\" text-anchor=\"middle\" fill=\"#ffffff\" font-size=\"16\" font-weight=\"bold\">DÖNÜŞÜM: ÖN GÖRÜNTÜ VE GÖRÜNTÜ</text><rect x=\"20\" y=\"62\" width=\"400\" height=\"224\" rx=\"12\" fill=\"#ffffff\" stroke=\"#7dd3fc\" stroke-width=\"2\"/><polygon points=\"80,110 55,230 185,230\" fill=\"#dbeafe\" stroke=\"#1d4ed8\" stroke-width=\"2.5\"/><polygon points=\"270,110 245,230 375,230\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"2.5\"/><line x1=\"88\" y1=\"110\" x2=\"262\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"64\" y1=\"230\" x2=\"237\" y2=\"230\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><polygon points=\"262,105 272,110 262,115\" fill=\"#64748b\"/><text x=\"80\" y=\"100\" text-anchor=\"middle\" fill=\"#1e3a8a\" font-size=\"13\" font-weight=\"bold\">A</text><text x=\"46\" y=\"246\" fill=\"#1e3a8a\" font-size=\"13\" font-weight=\"bold\">B</text><text x=\"186\" y=\"246\" fill=\"#1e3a8a\" font-size=\"13\" font-weight=\"bold\">C</text><text x=\"270\" y=\"100\" text-anchor=\"middle\" fill=\"#92400e\" font-size=\"13\" font-weight=\"bold\">A′</text><text x=\"234\" y=\"246\" fill=\"#92400e\" font-size=\"13\" font-weight=\"bold\">B′</text><text x=\"374\" y=\"246\" fill=\"#92400e\" font-size=\"13\" font-weight=\"bold\">C′</text><text x=\"120\" y=\"272\" text-anchor=\"middle\" fill=\"#1e3a8a\" font-size=\"12\" font-weight=\"bold\">Ön görüntü: ABC</text><text x=\"310\" y=\"272\" text-anchor=\"middle\" fill=\"#92400e\" font-size=\"12\" font-weight=\"bold\">Görüntü: A′B′C′</text><text x=\"215\" y=\"170\" text-anchor=\"middle\" fill=\"#334155\" font-size=\"12\">kural uygulanır</text><rect x=\"435\" y=\"62\" width=\"305\" height=\"224\" rx=\"12\" fill=\"#f0f9ff\" stroke=\"#7dd3fc\" stroke-width=\"2\"/><text x=\"587\" y=\"86\" text-anchor=\"middle\" fill=\"#075985\" font-size=\"13\" font-weight=\"bold\">Yansıma, öteleme ve dönmede</text><text x=\"587\" y=\"104\" text-anchor=\"middle\" fill=\"#075985\" font-size=\"13\" font-weight=\"bold\">KORUNAN özellikler</text><text x=\"455\" y=\"130\" fill=\"#0f172a\" font-size=\"12\">• Kenar uzunlukları (AB = A′B′)</text><text x=\"455\" y=\"152\" fill=\"#0f172a\" font-size=\"12\">• Açı ölçüleri</text><text x=\"455\" y=\"174\" fill=\"#0f172a\" font-size=\"12\">• Çevre ve alan</text><text x=\"455\" y=\"196\" fill=\"#0f172a\" font-size=\"12\">• Paralellik ve doğrusallık</text><line x1=\"455\" y1=\"210\" x2=\"720\" y2=\"210\" stroke=\"#7dd3fc\" stroke-width=\"1.5\"/><text x=\"455\" y=\"232\" fill=\"#b91c1c\" font-size=\"12\" font-weight=\"bold\">Değişebilen: konum ve yönelim</text><text x=\"455\" y=\"252\" fill=\"#334155\" font-size=\"11\">Yansımada köşe sırası ters döner.</text><text x=\"455\" y=\"272\" fill=\"#334155\" font-size=\"11\">Sonuç: Şekil ile görüntüsü EŞTİR.</text></svg>"
+    },
+    {
+      "baslik": "Yansıma ve Öteleme Dönüşümleri",
+      "metin": [
+        "Bir A noktasının d doğrusuna göre {koyu:yansıması}, d'ye göre A'nın tam karşısında ve d'ye aynı uzaklıkta bulunan A′ noktasıdır. Daha kesin bir ifadeyle d doğrusu, [AA′] doğru parçasının {koyu:kenar orta dikmesidir}: AA′ ⊥ d olur ve d, [AA′]'yü orta noktasından keser. Burada geçen haftaların üçgen bilgisi devreye girer: kenar orta dikme üzerindeki her P noktası uç noktalara eşit uzaklıktadır, yani {uzunluk:PA} = {uzunluk:PA′} olur. Bu özellik yansımanın uzunluğu koruduğunu doğrulamaya yardım eder. Eksen üzerindeki noktalar yansımada yerinden kıpırdamaz; bunlar yansımanın sabit noktalarıdır.",
+        "Koordinat düzleminde yansımaları örüntülerle genelleyebiliriz. A(3, 2) noktasını x eksenine göre yansıttığımızda yatay konum aynı kalır, dikey konum işaret değiştirir: A′(3, −2). Pek çok nokta denendiğinde kural {koyu:(x, y) → (x, −y)} olarak genellenir. Aynı yolla y eksenine göre {koyu:(x, y) → (−x, y)}, orijine göre {koyu:(x, y) → (−x, −y)}, y = x doğrusuna göre {koyu:(x, y) → (y, x)}, y = −x doğrusuna göre (x, y) → (−y, −x) kuralları bulunur. Eksen x = k gibi düşey bir doğru olduğunda eksen, [AA′]'nün orta noktasından geçtiği için {kesir:x + x′|2} = k olur ve görüntü (2k − x, y) çıkar; y = k doğrusu için de görüntü (x, 2k − y) olur.",
+        "{koyu:Öteleme}, şeklin bütün noktalarını aynı yönde ve aynı miktarda kaydıran dönüşümdür. (a, b) ötelemesinde her nokta {koyu:(x, y) → (x + a, y + b)} kuralıyla taşınır: a > 0 ise sağa, a < 0 ise sola; b > 0 ise yukarı, b < 0 ise aşağı kayma olur. Örneğin (−4, 1) ötelemesiyle A(3, 2) noktası A′(−1, 3) olur. Ötelemede [AA′], [BB′] ve [CC′] doğru parçaları birbirine eş ve paraleldir; bu yüzden ABB′A′ bir paralelkenar oluşturur. İki öteleme art arda uygulandığında (a, b) ile (c, d) toplanarak tek bir (a + c, b + d) ötelemesi elde edilir; (−a, −b) ötelemesi ise şekli eski yerine geri getirir. Ötelemede yönelim korunur ve (0, 0) dışındaki ötelemelerde hiç sabit nokta yoktur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Dönüşüm",
+          "Kural",
+          "A(3, 2) Noktasının Görüntüsü"
+        ],
+        "satirlar": [
+          [
+            "x eksenine göre yansıma",
+            "(x, y) → (x, −y)",
+            "(3, −2)"
+          ],
+          [
+            "y eksenine göre yansıma",
+            "(x, y) → (−x, y)",
+            "(−3, 2)"
+          ],
+          [
+            "Orijine göre yansıma",
+            "(x, y) → (−x, −y)",
+            "(−3, −2)"
+          ],
+          [
+            "y = x doğrusuna göre yansıma",
+            "(x, y) → (y, x)",
+            "(2, 3)"
+          ],
+          [
+            "y = −x doğrusuna göre yansıma",
+            "(x, y) → (−y, −x)",
+            "(−2, −3)"
+          ],
+          [
+            "x = 1 doğrusuna göre yansıma",
+            "(x, y) → (2 − x, y)",
+            "(−1, 2)"
+          ],
+          [
+            "y = −1 doğrusuna göre yansıma",
+            "(x, y) → (x, −2 − y)",
+            "(3, −4)"
+          ],
+          [
+            "(−4, 1) ötelemesi",
+            "(x, y) → (x − 4, y + 1)",
+            "(−1, 3)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Yansıma Ekseni Orta Dikmedir",
+          "metin": "Bir nokta ile yansıması verildiğinde yansıma ekseni, bu iki noktayı birleştiren doğru parçasının kenar orta dikmesidir. Örneğin A(1, 4) ile A′(5, 4) noktaları x = 3 doğrusuna göre birbirinin yansımasıdır, çünkü orta nokta (3, 4) ve [AA′] yataydır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Ötelemenin Kuralını Bulmak",
+          "metin": "Bir noktanın ötelemeden önceki ve sonraki koordinatları biliniyorsa öteleme miktarı 'görüntü − ön görüntü' farkıyla bulunur. A(2, −1) noktası A′(−3, 4) olmuşsa öteleme (−3 − 2, 4 − (−1)) = (−5, 5) dir; aynı öteleme şeklin diğer bütün noktalarına uygulanır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"10\" width=\"720\" height=\"34\" rx=\"8\" fill=\"#b45309\"/><text x=\"380\" y=\"33\" text-anchor=\"middle\" fill=\"#ffffff\" font-size=\"16\" font-weight=\"bold\">KOORDİNAT DÜZLEMİNDE YANSIMA VE ÖTELEME</text><rect x=\"30\" y=\"52\" width=\"310\" height=\"238\" rx=\"10\" fill=\"#ffffff\" stroke=\"#fcd34d\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><line x1=\"58\" y1=\"60\" x2=\"58\" y2=\"280\"/><line x1=\"80\" y1=\"60\" x2=\"80\" y2=\"280\"/><line x1=\"102\" y1=\"60\" x2=\"102\" y2=\"280\"/><line x1=\"124\" y1=\"60\" x2=\"124\" y2=\"280\"/><line x1=\"146\" y1=\"60\" x2=\"146\" y2=\"280\"/><line x1=\"168\" y1=\"60\" x2=\"168\" y2=\"280\"/><line x1=\"212\" y1=\"60\" x2=\"212\" y2=\"280\"/><line x1=\"234\" y1=\"60\" x2=\"234\" y2=\"280\"/><line x1=\"256\" y1=\"60\" x2=\"256\" y2=\"280\"/><line x1=\"278\" y1=\"60\" x2=\"278\" y2=\"280\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"280\"/><line x1=\"322\" y1=\"60\" x2=\"322\" y2=\"280\"/><line x1=\"58\" y1=\"60\" x2=\"322\" y2=\"60\"/><line x1=\"58\" y1=\"82\" x2=\"322\" y2=\"82\"/><line x1=\"58\" y1=\"104\" x2=\"322\" y2=\"104\"/><line x1=\"58\" y1=\"126\" x2=\"322\" y2=\"126\"/><line x1=\"58\" y1=\"148\" x2=\"322\" y2=\"148\"/><line x1=\"58\" y1=\"192\" x2=\"322\" y2=\"192\"/><line x1=\"58\" y1=\"214\" x2=\"322\" y2=\"214\"/><line x1=\"58\" y1=\"236\" x2=\"322\" y2=\"236\"/><line x1=\"58\" y1=\"258\" x2=\"322\" y2=\"258\"/><line x1=\"58\" y1=\"280\" x2=\"322\" y2=\"280\"/></g><line x1=\"58\" y1=\"170\" x2=\"322\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"190\" y1=\"60\" x2=\"190\" y2=\"280\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"328\" y=\"166\" fill=\"#0f172a\" font-size=\"12\" font-weight=\"bold\">x</text><text x=\"196\" y=\"70\" fill=\"#0f172a\" font-size=\"12\" font-weight=\"bold\">y</text><line x1=\"80\" y1=\"280\" x2=\"300\" y2=\"60\" stroke=\"#7c3aed\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/><text x=\"296\" y=\"76\" text-anchor=\"end\" fill=\"#7c3aed\" font-size=\"11\" font-weight=\"bold\">y = x</text><line x1=\"256\" y1=\"126\" x2=\"256\" y2=\"214\" stroke=\"#dc2626\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><line x1=\"256\" y1=\"126\" x2=\"124\" y2=\"126\" stroke=\"#2563eb\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><circle cx=\"256\" cy=\"126\" r=\"4.5\" fill=\"#0f172a\"/><circle cx=\"256\" cy=\"214\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"124\" cy=\"126\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"124\" cy=\"214\" r=\"4\" fill=\"#047857\"/><circle cx=\"234\" cy=\"104\" r=\"4\" fill=\"#7c3aed\"/><text x=\"262\" y=\"122\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"bold\">A(3, 2)</text><text x=\"262\" y=\"228\" fill=\"#dc2626\" font-size=\"11\" font-weight=\"bold\">(3, −2)</text><text x=\"118\" y=\"121\" text-anchor=\"end\" fill=\"#2563eb\" font-size=\"11\" font-weight=\"bold\">(−3, 2)</text><text x=\"118\" y=\"228\" text-anchor=\"end\" fill=\"#047857\" font-size=\"11\" font-weight=\"bold\">(−3, −2)</text><text x=\"228\" y=\"98\" text-anchor=\"end\" fill=\"#7c3aed\" font-size=\"11\" font-weight=\"bold\">(2, 3)</text><rect x=\"355\" y=\"52\" width=\"385\" height=\"238\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#fcd34d\" stroke-width=\"2\"/><text x=\"547\" y=\"76\" text-anchor=\"middle\" fill=\"#92400e\" font-size=\"13\" font-weight=\"bold\">Kurallar ve A(3, 2) için görüntüler</text><text x=\"370\" y=\"104\" fill=\"#dc2626\" font-size=\"12\" font-weight=\"bold\">x eksenine göre: (x, y) → (x, −y)   (3, −2)</text><text x=\"370\" y=\"128\" fill=\"#2563eb\" font-size=\"12\" font-weight=\"bold\">y eksenine göre: (x, y) → (−x, y)   (−3, 2)</text><text x=\"370\" y=\"152\" fill=\"#047857\" font-size=\"12\" font-weight=\"bold\">Orijine göre: (x, y) → (−x, −y)   (−3, −2)</text><text x=\"370\" y=\"176\" fill=\"#7c3aed\" font-size=\"12\" font-weight=\"bold\">y = x doğrusuna göre: (x, y) → (y, x)   (2, 3)</text><line x1=\"370\" y1=\"192\" x2=\"725\" y2=\"192\" stroke=\"#fcd34d\" stroke-width=\"1.5\"/><text x=\"370\" y=\"214\" fill=\"#92400e\" font-size=\"12\" font-weight=\"bold\">Öteleme (a, b): (x, y) → (x + a, y + b)</text><text x=\"370\" y=\"238\" fill=\"#0f172a\" font-size=\"12\">(−4, 1) ötelemesiyle A(3, 2) → (−1, 3)</text><text x=\"370\" y=\"262\" fill=\"#334155\" font-size=\"11\">Yansımada eksen, AA′ doğru parçasının orta dikmesidir.</text><text x=\"370\" y=\"280\" fill=\"#334155\" font-size=\"11\">Ötelemede tüm noktalar aynı yönde, aynı miktarda kayar.</text></svg>"
+    },
+    {
+      "baslik": "Dönme Dönüşümü ve Dönüşümlerden Genellemelere",
+      "metin": [
+        "O merkezli ve α açılı {koyu:dönme}, her A noktasını {uzunluk:OA} = {uzunluk:OA′} ve m(AOA′) = α olacak şekilde bir A′ noktasına götürür. Dönme yönü belirtilmelidir: matematikte saat ibrelerinin tersi {koyu:pozitif yön}, saat ibreleri yönü negatif yön kabul edilir. Tanım gereği OAA′ üçgeni bir {koyu:ikizkenar üçgendir}; taban açılarının her biri {kesir:180° − α|2} olur. Böylece üçgen bilgimiz dönmeyi incelemede de iş görür. Orijin etrafındaki dönmeler için örüntü şöyledir: pozitif yönde 90° dönmede {koyu:(x, y) → (−y, x)}, 180° dönmede {koyu:(x, y) → (−x, −y)}, 270° (yani negatif yönde 90°) dönmede {koyu:(x, y) → (y, −x)}; 360° dönme ise her noktayı kendisine götürür. Örneğin A(3, 2) noktası 90° dönmeyle A′(−2, 3) olur ve {uzunluk:OA} = {uzunluk:OA′} = {kok:13} birim olduğu doğrulanır.",
+        "Örneklerden önemli genellemeler çıkar. Orijin etrafında 180° dönme ile orijine göre yansıma {koyu:aynı kuralı} verir: (x, y) → (−x, −y). Bir noktayı önce x eksenine, sonra y eksenine göre yansıtırsak (x, y) → (x, −y) → (−x, −y) olur; yani dik kesişen iki eksene göre art arda yansıma 180° dönmeye eşittir. Daha genel olarak {koyu:iki paralel doğruya göre art arda yansıma bir ötelemedir} ve öteleme miktarı doğrular arasındaki uzaklığın iki katıdır: x = 1 ve x = 4 doğrularına göre art arda yansıtmada (x, y) → (2 − x, y) → (8 − (2 − x), y) = (x + 6, y) olur, 6 = 2 · 3'tür. {koyu:Kesişen iki doğruya göre art arda yansıma ise bir dönmedir} ve dönme açısı doğrular arasındaki açının iki katıdır: x ekseni ve y = x doğrusu arasındaki açı 45° olduğundan (x, y) → (x, −y) → (−y, x) ile 90° dönme elde edilir.",
+        "Bu genellemeleri karşılaştırarak önermeler kurabiliriz. Tek bir yansıma yönelimi ters çevirir; iki yansıma art arda uygulanınca yönelim iki kez ters dönüp eski hâline gelir. Bu yüzden {koyu:yönelimi koruyan her izometri (öteleme ve dönme) iki yansımanın birleşimi olarak yazılabilir}. Başka bir önerme: bir şekil ile görüntüsünün yönelimi farklıysa, uygulanan tek bir dönüşüm öteleme ya da dönme olamaz. Dönmenin merkezi bilinmiyorsa önermeler yeni çıkarımlar yaptırır: O merkezi hem A ile A′'ye hem B ile B′'ye eşit uzaklıkta olduğundan [AA′] ve [BB′] doğru parçalarının kenar orta dikmelerinin kesişim noktasıdır. Bu, üçgenin çevrel çember merkezini bulurken kullandığımız fikrin dönüşümlere taşınmış hâlidir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Yansıma",
+          "Öteleme",
+          "Dönme"
+        ],
+        "satirlar": [
+          [
+            "Uzunluk ve açı",
+            "Korunur",
+            "Korunur",
+            "Korunur"
+          ],
+          [
+            "Yönelim",
+            "Ters döner",
+            "Korunur",
+            "Korunur"
+          ],
+          [
+            "Sabit nokta",
+            "Eksen üzerindeki noktalar",
+            "Yok (öteleme sıfırdan farklıysa)",
+            "Yalnız merkez"
+          ],
+          [
+            "Dönüşümü belirleyen",
+            "Yansıma ekseni",
+            "Öteleme miktarı (a, b)",
+            "Merkez, açı ve yön"
+          ],
+          [
+            "Geri getiren dönüşüm",
+            "Aynı yansıma",
+            "(−a, −b) ötelemesi",
+            "Aynı merkezli −α dönmesi"
+          ],
+          [
+            "İki yansımayla elde edilişi",
+            "Tek yansımadır",
+            "Paralel eksenlerle",
+            "Kesişen eksenlerle"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Art Arda Yansımaların Sonucu",
+          "metin": "Eksenler paralel ve aralarındaki uzaklık k ise iki yansıma 2k birimlik bir ötelemeye eşittir. Eksenler θ açısıyla kesişiyorsa iki yansıma, kesişim noktası etrafında 2θ açılı bir dönmeye eşittir. Yansımaların sırası değişirse öteleme veya dönmenin yönü de tersine döner."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Dönme Yönünü Karıştırma",
+          "metin": "Pozitif yön saat ibrelerinin tersidir. Orijin etrafında pozitif yönde 90° dönmede (x, y) → (−y, x), negatif yönde 90° dönmede (x, y) → (y, −x) olur. Örneğin (4, 1) noktası pozitif yönde (−1, 4), negatif yönde (1, −4) olur."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"10\" width=\"720\" height=\"34\" rx=\"8\" fill=\"#be123c\"/><text x=\"380\" y=\"33\" text-anchor=\"middle\" fill=\"#ffffff\" font-size=\"16\" font-weight=\"bold\">ORİJİN ETRAFINDA DÖNME VE DÖNÜŞÜMLERİN KARŞILAŞTIRILMASI</text><rect x=\"30\" y=\"52\" width=\"315\" height=\"238\" rx=\"10\" fill=\"#ffffff\" stroke=\"#fda4af\" stroke-width=\"2\"/><line x1=\"45\" y1=\"178\" x2=\"335\" y2=\"178\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"190\" y1=\"62\" x2=\"190\" y2=\"282\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"326\" y=\"172\" fill=\"#0f172a\" font-size=\"12\" font-weight=\"bold\">x</text><text x=\"196\" y=\"72\" fill=\"#0f172a\" font-size=\"12\" font-weight=\"bold\">y</text><text x=\"182\" y=\"194\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"12\" font-weight=\"bold\">O</text><line x1=\"190\" y1=\"178\" x2=\"256\" y2=\"134\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-dasharray=\"5 3\"/><line x1=\"190\" y1=\"178\" x2=\"146\" y2=\"112\" stroke=\"#be123c\" stroke-width=\"1.5\" stroke-dasharray=\"5 3\"/><line x1=\"190\" y1=\"178\" x2=\"124\" y2=\"222\" stroke=\"#047857\" stroke-width=\"1.5\" stroke-dasharray=\"5 3\"/><path d=\"M 256 134 A 79.3 79.3 0 0 0 146 112\" fill=\"none\" stroke=\"#be123c\" stroke-width=\"2\"/><text x=\"212\" y=\"92\" fill=\"#be123c\" font-size=\"12\" font-weight=\"bold\">90°</text><circle cx=\"256\" cy=\"134\" r=\"4.5\" fill=\"#0f172a\"/><circle cx=\"146\" cy=\"112\" r=\"4.5\" fill=\"#be123c\"/><circle cx=\"124\" cy=\"222\" r=\"4.5\" fill=\"#047857\"/><text x=\"262\" y=\"130\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"bold\">A(3, 2)</text><text x=\"140\" y=\"106\" text-anchor=\"end\" fill=\"#be123c\" font-size=\"11\" font-weight=\"bold\">A′(−2, 3)</text><text x=\"118\" y=\"238\" text-anchor=\"end\" fill=\"#047857\" font-size=\"11\" font-weight=\"bold\">A″(−3, −2)</text><text x=\"200\" y=\"256\" fill=\"#047857\" font-size=\"11\">180°: (x, y) → (−x, −y)</text><text x=\"200\" y=\"274\" fill=\"#be123c\" font-size=\"11\">90°: (x, y) → (−y, x)</text><rect x=\"355\" y=\"52\" width=\"385\" height=\"238\" rx=\"10\" fill=\"#ffffff\" stroke=\"#fda4af\" stroke-width=\"2\"/><rect x=\"362\" y=\"62\" width=\"371\" height=\"28\" rx=\"6\" fill=\"#be123c\"/><text x=\"372\" y=\"81\" fill=\"#ffffff\" font-size=\"12\" font-weight=\"bold\">Özellik</text><text x=\"530\" y=\"81\" text-anchor=\"middle\" fill=\"#ffffff\" font-size=\"12\" font-weight=\"bold\">Yansıma</text><text x=\"618\" y=\"81\" text-anchor=\"middle\" fill=\"#ffffff\" font-size=\"12\" font-weight=\"bold\">Öteleme</text><text x=\"698\" y=\"81\" text-anchor=\"middle\" fill=\"#ffffff\" font-size=\"12\" font-weight=\"bold\">Dönme</text><rect x=\"362\" y=\"96\" width=\"371\" height=\"26\" rx=\"4\" fill=\"#fff1f2\"/><text x=\"372\" y=\"113\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"bold\">Uzunluk, açı</text><text x=\"530\" y=\"113\" text-anchor=\"middle\" fill=\"#047857\" font-size=\"11\">Korunur</text><text x=\"618\" y=\"113\" text-anchor=\"middle\" fill=\"#047857\" font-size=\"11\">Korunur</text><text x=\"698\" y=\"113\" text-anchor=\"middle\" fill=\"#047857\" font-size=\"11\">Korunur</text><text x=\"372\" y=\"141\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"bold\">Yönelim</text><text x=\"530\" y=\"141\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"11\">Ters döner</text><text x=\"618\" y=\"141\" text-anchor=\"middle\" fill=\"#047857\" font-size=\"11\">Aynı</text><text x=\"698\" y=\"141\" text-anchor=\"middle\" fill=\"#047857\" font-size=\"11\">Aynı</text><rect x=\"362\" y=\"152\" width=\"371\" height=\"26\" rx=\"4\" fill=\"#fff1f2\"/><text x=\"372\" y=\"169\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"bold\">Sabit nokta</text><text x=\"530\" y=\"169\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">Eksen</text><text x=\"618\" y=\"169\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">Yok</text><text x=\"698\" y=\"169\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">Merkez</text><text x=\"372\" y=\"197\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"bold\">Belirleyen</text><text x=\"530\" y=\"197\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">Eksen</text><text x=\"618\" y=\"197\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">(a, b)</text><text x=\"698\" y=\"197\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">Merkez, açı</text><rect x=\"362\" y=\"208\" width=\"371\" height=\"26\" rx=\"4\" fill=\"#fff1f2\"/><text x=\"372\" y=\"225\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"bold\">Geri getiren</text><text x=\"530\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">Kendisi</text><text x=\"618\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">(−a, −b)</text><text x=\"698\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">−α dönme</text><text x=\"547\" y=\"258\" text-anchor=\"middle\" fill=\"#be123c\" font-size=\"12\" font-weight=\"bold\">İki yansıma = öteleme (paralel eksen)</text><text x=\"547\" y=\"278\" text-anchor=\"middle\" fill=\"#be123c\" font-size=\"12\" font-weight=\"bold\">İki yansıma = dönme (kesişen eksen)</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "D noktası ABC üçgeninin iç bölgesinde olmak üzere ABDC bir ok ucu (içbükey dörtgen) şeklidir. m(BAC) = 50°, m(ABD) = 25° ve m(ACD) = 35° olduğuna göre m(BDC) kaç derecedir? Sonucu dış açı teoremiyle gerekçelendiriniz.",
+      "cevap": "1. adım: [BD] doğru parçasını D'nin ötesine uzatalım; [AC]'yi E noktasında kessin. 2. adım: ABE üçgeninde BEC açısı E köşesindeki dış açıdır. Dış açı teoremine göre m(BEC) = m(BAE) + m(ABE) = 50° + 25° = 75° bulunur. 3. adım: DEC üçgeninde BDC açısı D köşesindeki dış açıdır (B, D, E doğrusal). Buna göre m(BDC) = m(DEC) + m(DCE) = 75° + 35° = 110° olur. 4. adım: Kontrol: ok ucu kuralı x = a + b + c ile 50° + 25° + 35° = 110° çıkar. Cevap: m(BDC) = 110°.",
+      "ipucu": "Ok ucunun içteki köşesinden geçen kolu uzatarak iki üçgen oluşturun ve dış açı teoremini iki kez uygulayın."
+    },
+    {
+      "soru": "Bir düzgün çokgenin bir iç açısının ölçüsü 140°'dir. Bu çokgenin kenar sayısını ve iç açılarının ölçüleri toplamını bulunuz; sonucu iki farklı yoldan doğrulayınız.",
+      "cevap": "1. adım: Her köşede iç açı ile dış açı bütünlerdir: bir dış açı = 180° − 140° = 40°. 2. adım: Dış açılar toplamı 360° ve düzgün çokgende dış açılar eşit olduğundan kenar sayısı n = 360° ÷ 40° = 9 olur. 3. adım: İç açılar toplamı (n − 2) · 180° = 7 · 180° = 1260° bulunur. 4. adım (doğrulama): 9 eş iç açının toplamı 9 · 140° = 1260° olup aynı sonucu verir. Cevap: Çokgen 9 kenarlıdır (dokuzgen), iç açıları toplamı 1260°'dir.",
+      "ipucu": "Önce dış açıyı bulun; dış açılar toplamının her çokgende 360° olduğunu hatırlayın."
+    },
+    {
+      "soru": "ABC üçgeninin iç bölgesinde bir P noktası alınıyor. (a) {uzunluk:PB} + {uzunluk:PC} < {uzunluk:AB} + {uzunluk:AC} olduğunu üçgen eşitsizliğini kullanarak ispatlayınız. (b) {uzunluk:AB} = 6, {uzunluk:AC} = 8 ve {uzunluk:BC} = 7 birim ise {uzunluk:PB} + {uzunluk:PC} toplamının alabileceği tam sayı değerlerinin sayısını bulunuz.",
+      "cevap": "(a) 1. adım: [BP] doğru parçasını uzatıp [AC]'yi E noktasında kessin. 2. adım: ABE üçgeninde üçgen eşitsizliği: {uzunluk:BE} < {uzunluk:AB} + {uzunluk:AE}, yani {uzunluk:BP} + {uzunluk:PE} < {uzunluk:AB} + {uzunluk:AE}. 3. adım: PEC üçgeninde: {uzunluk:PC} < {uzunluk:PE} + {uzunluk:EC}. 4. adım: İki eşitsizliği taraf tarafa toplayalım: {uzunluk:BP} + {uzunluk:PE} + {uzunluk:PC} < {uzunluk:AB} + {uzunluk:AE} + {uzunluk:PE} + {uzunluk:EC}. Her iki taraftan {uzunluk:PE} sadeleşir ve {uzunluk:AE} + {uzunluk:EC} = {uzunluk:AC} olduğundan {uzunluk:PB} + {uzunluk:PC} < {uzunluk:AB} + {uzunluk:AC} ispatlanır. (b) PBC üçgeninde {uzunluk:BC} < {uzunluk:PB} + {uzunluk:PC} olduğundan 7 < {uzunluk:PB} + {uzunluk:PC} < 6 + 8 = 14 bulunur. Tam sayı değerleri 8, 9, 10, 11, 12, 13 olup 6 tanedir.",
+      "ipucu": "Bir kolu uzatarak iki üçgen oluşturun; iki üçgen eşitsizliğini toplayınca ortak uzunluk sadeleşir."
+    },
+    {
+      "soru": "Beş köşeli bir yıldızın uç açılarından dördünün ölçüleri 30°, 35°, 40° ve 45°'dir. Beşinci uç açının ölçüsünü bulunuz.",
+      "cevap": "1. adım: Beş köşeli yıldızda bir ucu içeren üçgenin diğer iki açısı, dış açı teoremine göre ikişer uç açının toplamına eşittir; bu üçgenin açılar toplamından a + b + c + d + e = 180° sonucu elde edilir. 2. adım: Bilinen açıların toplamı 30° + 35° + 40° + 45° = 150°'dir. 3. adım: Beşinci açı = 180° − 150° = 30° bulunur. Cevap: 30°.",
+      "ipucu": "Beş köşeli yıldızın uç açıları toplamının her zaman 180° olduğunu kullanın."
+    },
+    {
+      "soru": "Köşeleri A(1, 1), B(5, 1) ve C(1, 4) olan ABC üçgeni y = x doğrusuna göre yansıtılıyor. Görüntü üçgenin köşelerini bulunuz; kenar uzunluklarının korunduğunu doğrulayınız ve hangi köşenin sabit kaldığını açıklayınız.",
+      "cevap": "1. adım: y = x doğrusuna göre yansıma kuralı (x, y) → (y, x) dir. A(1, 1) → A′(1, 1), B(5, 1) → B′(1, 5), C(1, 4) → C′(4, 1). 2. adım: Ön görüntüde {uzunluk:AB} = 5 − 1 = 4, {uzunluk:AC} = 4 − 1 = 3 ve Pisagor bağıntısından {uzunluk:BC} = {kok:{us:4|2} + {us:3|2}} = 5 birimdir. 3. adım: Görüntüde {uzunluk:A′B′} = 5 − 1 = 4 (düşey), {uzunluk:A′C′} = 4 − 1 = 3 (yatay) ve {uzunluk:B′C′} = {kok:{us:3|2} + {us:4|2}} = 5 birimdir. Kenarlar korunmuştur; KKK eşliğinden ABC ≅ A′B′C′ olur. 4. adım: A(1, 1) noktası y = x doğrusu üzerinde olduğundan görüntüsü kendisidir; A yansımanın sabit noktasıdır. Ayrıca ABC'de köşeler saat yönünün tersine sıralanırken A′B′C′'de saat yönünde sıralanır: yönelim ters dönmüştür.",
+      "ipucu": "Kuralı her köşeye uygulayın; uzunlukları yatay-düşey farklar ve Pisagor bağıntısıyla hesaplayın."
+    },
+    {
+      "soru": "A(3, 2) noktası orijin etrafında pozitif yönde 90° döndürülerek A′ noktası elde ediliyor. A′ noktasının koordinatlarını bulunuz, {uzunluk:OA} = {uzunluk:OA′} olduğunu doğrulayınız ve OAA′ üçgeninin alanını hesaplayınız.",
+      "cevap": "1. adım: Pozitif yönde 90° dönme kuralı (x, y) → (−y, x) dir; A(3, 2) → A′(−2, 3). 2. adım: {uzunluk:OA} = {kok:{us:3|2} + {us:2|2}} = {kok:13} ve {uzunluk:OA′} = {kok:{us:(−2)|2} + {us:3|2}} = {kok:13}; uzaklıklar eşittir, OAA′ ikizkenar üçgendir. 3. adım: m(AOA′) = 90° olduğundan OAA′ ikizkenar dik üçgendir; alanı = {kesir:{kok:13} · {kok:13}|2} = {kesir:13|2} = 6,5 birimkaredir. 4. adım (kontrol): {uzunluk:AA′} = {kok:{us:5|2} + {us:1|2}} = {kok:26} olup ikizkenar dik üçgende hipotenüs = {kok:13} · {kok:2} = {kok:26} ile uyumludur.",
+      "ipucu": "Dönmede merkeze uzaklık korunur; dönme açısı 90° olduğu için OAA′ ikizkenar dik üçgendir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir düzgün çokgenin bir dış açısının ölçüsü 24° olduğuna göre bu çokgen kaç kenarlıdır?",
+      "secenekler": [
+        "12",
+        "15",
+        "18",
+        "20"
+      ],
+      "dogru": 1,
+      "aciklama": "Dış açılar toplamı her çokgende 360°'dir. Düzgün çokgende dış açılar eşit olduğundan n = 360° ÷ 24° = 15 bulunur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "P(−2, 5) noktası önce x eksenine göre yansıtılıyor, elde edilen nokta orijin etrafında 180° döndürülüyor. Son noktanın koordinatları nedir?",
+      "secenekler": [
+        "(2, 5)",
+        "(−2, −5)",
+        "(2, −5)",
+        "(5, −2)"
+      ],
+      "dogru": 0,
+      "aciklama": "x eksenine göre yansıma: (−2, 5) → (−2, −5). Orijin etrafında 180° dönme (x, y) → (−x, −y) olduğundan (−2, −5) → (2, 5). Bu iki dönüşümün birleşimi y eksenine göre yansımayla aynı sonucu verir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdakilerden hangisi bir şekil bir doğruya göre yansıtıldığında korunmaz?",
+      "secenekler": [
+        "Kenar uzunlukları",
+        "Açı ölçüleri",
+        "Köşelerin dolanım yönü (yönelim)",
+        "Alan"
+      ],
+      "dogru": 2,
+      "aciklama": "Yansıma bir izometridir; uzunluk, açı ve alanı korur. Ancak köşeler saat yönünün tersine sıralanmışsa görüntüde saat yönünde sıralanır; yani yönelim ters döner."
+    },
+    {
+      "tur": "coktan",
+      "soru": "ABC üçgeninde {uzunluk:AC} > {uzunluk:AB} olup [AC] üzerinde {uzunluk:AD} = {uzunluk:AB} olacak şekilde D noktası alınıyor. m(BAC) = 50° ve m(ACB) = 35° olduğuna göre m(DBC) kaç derecedir?",
+      "secenekler": [
+        "25°",
+        "30°",
+        "35°",
+        "40°"
+      ],
+      "dogru": 1,
+      "aciklama": "ABD ikizkenar olduğundan m(ABD) = m(ADB) = (180° − 50°) ÷ 2 = 65°. ADB açısı DBC üçgeninin dış açısıdır: 65° = 35° + m(DBC), buradan m(DBC) = 30°. Kontrol: m(B) = 65° + 30° = 95° ve 50° + 95° + 35° = 180°."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Öteleme dönüşümünde şeklin yönelimi (köşelerin dolanım yönü) ters döner.",
+          "dogru": false,
+          "aciklama": "Ötelemede tüm noktalar aynı yönde aynı miktarda kayar; yönelim korunur. Yönelimi ters çeviren dönüşüm yansımadır."
+        },
+        {
+          "metin": "Bir A noktasının d doğrusuna göre yansıması A′ ise d doğrusu [AA′] doğru parçasının kenar orta dikmesidir.",
+          "dogru": true,
+          "aciklama": "Yansımada AA′ ⊥ d olur ve d, [AA′]'yü orta noktasından keser; bu kenar orta dikmenin tanımıdır."
+        },
+        {
+          "metin": "Orijin etrafında 180° dönme ile orijine göre yansıma her noktayı aynı noktaya götürür.",
+          "dogru": true,
+          "aciklama": "İkisinin kuralı da (x, y) → (−x, −y) şeklindedir."
+        },
+        {
+          "metin": "Bir çokgenin kenar sayısı arttıkça dış açılarının ölçüleri toplamı da artar.",
+          "dogru": false,
+          "aciklama": "Dış açılar toplamı n · 180° − (n − 2) · 180° = 360° olup kenar sayısına bağlı değildir."
+        },
+        {
+          "metin": "Bir üçgende bir dış açının ölçüsü, kendisine komşu olmayan iki iç açının ölçüleri toplamına eşittir.",
+          "dogru": true,
+          "aciklama": "m(ACD) = 180° − m(C) = m(A) + m(B) olduğundan dış açı teoremi doğrudur."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları uygun açıklamalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Yansıma",
+          "Bir eksene göre şekli ayna görüntüsüne taşıyan, yönelimi ters çeviren dönüşüm"
+        ],
+        [
+          "Öteleme",
+          "Tüm noktaları (a, b) kadar aynı yönde ve aynı miktarda kaydıran dönüşüm"
+        ],
+        [
+          "Dönme",
+          "Bir merkez etrafında belirli bir açı kadar çeviren, merkezi sabit bırakan dönüşüm"
+        ],
+        [
+          "İzometri",
+          "Noktalar arasındaki uzaklıkları koruyan dönüşüm"
+        ],
+        [
+          "Sabit nokta",
+          "Bir dönüşüm altında görüntüsü kendisi olan nokta"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Dışbükey bir n-genin iç açılarının ölçüleri toplamı (n − 2) · ___ derecedir.",
+          "cevap": "180"
+        },
+        {
+          "metin": "Dönüşüm uygulanmadan önceki şekle ___ , dönüşümden sonra elde edilen şekle görüntü denir.",
+          "cevap": "ön görüntü"
+        },
+        {
+          "metin": "Orijin etrafında pozitif yönde 90° dönmede (x, y) noktasının görüntüsü (−y, ___) olur.",
+          "cevap": "x"
+        },
+        {
+          "metin": "Yansıma, öteleme ve dönme uzunlukları koruduğu için bir şekil ile görüntüsü ___ olur.",
+          "cevap": "eş"
+        },
+        {
+          "metin": "Bir üçgende herhangi iki kenarın uzunlukları toplamı üçüncü kenarın uzunluğundan ___ .",
+          "cevap": "büyüktür"
+        }
+      ],
+      "kelimeler": [
+        "180",
+        "ön görüntü",
+        "x",
+        "eş",
+        "büyüktür"
+      ],
+      "fazla": [
+        "360",
+        "benzer"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Köşeleri A(2, 1), B(5, 1) ve C(2, 5) olan ABC üçgeni veriliyor. (1) Üçgenin kenar uzunluklarını bulup A açısının dik açı olduğunu doğrulayınız. (2) Üçgeni orijin etrafında pozitif yönde 90° döndürerek A′B′C′ üçgenini elde ediniz ve kenarların korunduğunu gösteriniz. (3) A′B′C′ üçgenini y eksenine göre yansıtarak A″B″C″ üçgenini bulunuz. ABC'den A″B″C″'ye tek bir dönüşümle geçilebilir mi? Yönelimi de değerlendirerek açıklayınız.",
+      "ipuclari": [
+        "1. adım: Yatay ve düşey farklarla {uzunluk:AB} ve {uzunluk:AC}'yi bulun; {uzunluk:BC} için Pisagor bağıntısını kullanın, {us:3|2} + {us:4|2} = {us:5|2} olduğunu kontrol edin.",
+        "2. adım: 90° dönme kuralı (x, y) → (−y, x) ile her köşenin görüntüsünü bulun ve uzunlukları yeniden hesaplayın.",
+        "3. adım: y eksenine göre yansıma kuralı (x, y) → (−x, y) ile A″, B″, C″'yü bulun; bu noktaları ilk köşelerle karşılaştırıp hangi kuralın doğrudan ABC'den A″B″C″'ye götürdüğünü belirleyin."
+      ],
+      "cevap": "(1) {uzunluk:AB} = 5 − 2 = 3 birim (yatay), {uzunluk:AC} = 5 − 1 = 4 birim (düşey) olduğundan [AB] ⊥ [AC] ve m(A) = 90°'dir. {uzunluk:BC} = {kok:{us:3|2} + {us:4|2}} = 5 birim; {us:5|2} = {us:3|2} + {us:4|2} bağıntısı dik açıyı doğrular. (2) (x, y) → (−y, x): A(2, 1) → A′(−1, 2), B(5, 1) → B′(−1, 5), C(2, 5) → C′(−5, 2). {uzunluk:A′B′} = 5 − 2 = 3 (düşey), {uzunluk:A′C′} = −1 − (−5) = 4 (yatay), {uzunluk:B′C′} = {kok:{us:4|2} + {us:3|2}} = 5. Kenarlar korunmuştur; dönme yönelimi de korur. (3) (x, y) → (−x, y): A′(−1, 2) → A″(1, 2), B′(−1, 5) → B″(1, 5), C′(−5, 2) → C″(5, 2). Karşılaştırınca A(2, 1) → A″(1, 2), B(5, 1) → B″(1, 5), C(2, 5) → C″(5, 2) olduğu görülür; bu tam olarak (x, y) → (y, x) kuralıdır. Yani iki dönüşümün birleşimi tek başına y = x doğrusuna göre yansımaya eşittir. Bu sonuç yönelimle de tutarlıdır: dönme yönelimi korur, yansıma ters çevirir; dolayısıyla birleşim yönelimi ters çevirir ve tek bir dönüşüm olarak ancak bir yansıma olabilir. Kenar uzunlukları her aşamada 3, 4 ve 5 birim kalmıştır; ABC ≅ A″B″C″."
+    }
+  ]
+}

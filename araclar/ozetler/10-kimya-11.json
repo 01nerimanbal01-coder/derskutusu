@@ -94,7 +94,7 @@
     },
     {
       "soru": "Aynı sıcaklık ve basınçta bulunan He (Mₐ = 4 g/mol) ve SO₂ (Mₐ = 64 g/mol) gazlarının ortalama kinetik enerjilerini ve difüzyon hızlarını karşılaştırınız.",
-      "cevap": "Her iki gaz aynı sıcaklıkta (T₁ = T₂) bulunduğu için ortalama kinetik enerjileri birbirine eşittir (Eₖ,He = Eₖ,SO₂). Difüzyon hızları oranı ise {kesir:v_He|v_SO₂} = {kok:{kesir:Mₐ,SO₂|Mₐ,He}} = {kok:{kesir:64|4}} = {kok:16} = 4'tür. Yani He gazı SO₂ gazından 4 kat daha hızlı yayılır."
+      "cevap": "Her iki gaz aynı sıcaklıkta (T₁ = T₂) bulunduğu için ortalama kinetik enerjileri birbirine eşittir (Eₖ,He = Eₖ,SO₂). Difüzyon hızları oranı ise {kesir:v{alt:He}|v{alt:SO₂}} = {kok:{kesir:Mₐ,SO₂|Mₐ,He}} = {kok:{kesir:64|4}} = {kok:16} = 4'tür. Yani He gazı SO₂ gazından 4 kat daha hızlı yayılır."
     },
     {
       "soru": "Kinetik Moleküler Teori'ye (KMT) göre gaz taneciklerinin öz hacmi ve tanecikler arası çekim kuvvetleri hakkında hangi varsayımlar yapılır?",
@@ -174,7 +174,7 @@
         {
           "metin": "Sürtünmesiz hareketli pistonlu bir kapta veya elastik balonda bulunan gazın iç basıncı dış atmosfer basıncına eşittir.",
           "dogru": true,
-          "aciklama": "Serbest hareketli pistonlu kaplar ve elastik balonlar sabit basınçlı sistemlerdir (P_iç = P_dış)."
+          "aciklama": "Serbest hareketli pistonlu kaplar ve elastik balonlar sabit basınçlı sistemlerdir (P{alt:iç} = P{alt:dış})."
         },
         {
           "metin": "Helyum (He) ve Neon (Ne) gibi tek atomlu soygazlar hem öteleme hem dönme hem de titreşim hareketi yaparlar.",

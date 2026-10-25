@@ -62,7 +62,7 @@
       "metin": [
         "Katodik koruma (kurban elektrot) yöntemi; boyama veya kaplamanın tek başına yeterli olmadığı ıslak ve tuzlu ortamlarda vazgeçilmezdir. {koyu:Gemi ve yat gövdeleri}, deniz içindeki {koyu:iskele ve petrol platformu ayakları}, yer altına döşenen {koyu:doğal gaz, petrol ve içme suyu çelik boru hatları}, yer altı yakıt tankları, LPG tankları ve evlerdeki {koyu:su ısıtıcı (termosifon/boyler) kazanları} Mg, Al veya Zn kurban elektrotlarla korunur.",
         "Kimya ve Elektrik ünitesi bütüncül olarak değerlendirildiğinde; bütün elektrokimyasal hücrelerde (hem galvanik pilde hem elektrolizde) {koyu:anotta daima yükseltgenme}, {koyu:katotta ise daima indirgenme} gerçekleşir (KİMYA kodlaması).",
-        "Galvanik hücrelerde istemli redoks tepkimesinden elektrik üretilirken ({koyu:E°_pil > 0}), elektroliz hücrelerinde dışarıdan elektrik enerjisi verilerek istemsiz tepkimeler gerçekleştirilir ({koyu:m = {kesir:I · t · M_A|96500 · z}}). Korozyon ise istenmeyen doğal bir galvanik hücre olayı olup katodik koruma ile bu elektrokimyasal süreç tersine çevrilerek kontrol altına alınır."
+        "Galvanik hücrelerde istemli redoks tepkimesinden elektrik üretilirken ({koyu:E°_pil > 0}), elektroliz hücrelerinde dışarıdan elektrik enerjisi verilerek istemsiz tepkimeler gerçekleştirilir ({koyu:m = {kesir:I · t · M{alt:A}|96500 · z}}). Korozyon ise istenmeyen doğal bir galvanik hücre olayı olup katodik koruma ile bu elektrokimyasal süreç tersine çevrilerek kontrol altına alınır."
       ],
       "kutular": [
         {
@@ -102,7 +102,7 @@
     },
     {
       "soru": "Seri bağlı iki elektroliz kabından birinde erimiş {koyu:MgCl₂}, diğerinde erimiş {koyu:AlCl₃} tuzu elektroliz edilmektedir. Birinci kabın katodunda 7,2 gram Mg metali toplandığında ikinci kabın katodunda kaç gram Al metali toplanır? (Mg = 24 g/mol, Al = 27 g/mol)",
-      "cevap": "Birinci kapta toplanan Mg'nin mol sayısı n_Mg = {kesir:7,2|24} = 0,3 moldür. {us:Mg|2+} + {us:2e|-} → Mg(k) yarı tepkimesine göre devreden geçen elektron miktarı n_e = 2 · 0,3 = 0,6 mol elektrondur. Seri bağlı kaplardan eşit miktarda yük geçtiği için ikinci kapta {us:Al|3+} + {us:3e|-} → Al(k) tepkimesine göre 0,6 mol elektronla n_Al = {kesir:0,6|3} = 0,2 mol Al toplanır. Kütle: m_Al = 0,2 · 27 = 5,4 gram Al bulunur."
+      "cevap": "Birinci kapta toplanan Mg'nin mol sayısı n{alt:Mg} = {kesir:7,2|24} = 0,3 moldür. {us:Mg|2+} + {us:2e|-} → Mg(k) yarı tepkimesine göre devreden geçen elektron miktarı n{alt:e} = 2 · 0,3 = 0,6 mol elektrondur. Seri bağlı kaplardan eşit miktarda yük geçtiği için ikinci kapta {us:Al|3+} + {us:3e|-} → Al(k) tepkimesine göre 0,6 mol elektronla n{alt:Al} = {kesir:0,6|3} = 0,2 mol Al toplanır. Kütle: m{alt:Al} = 0,2 · 27 = 5,4 gram Al bulunur."
     }
   ],
   "etkinlikler": [

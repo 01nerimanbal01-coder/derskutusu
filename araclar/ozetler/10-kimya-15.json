@@ -1,0 +1,585 @@
+{
+  "ad": "10-kimya-15",
+  "sinif": 10,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "1. Tema: Etkileşim",
+  "konu": "İdeal Gaz Yasası: Gaz Yasaları Arasındaki Örüntüden İdeal Gaz Denklemine (P · V = n · R · T)",
+  "ciktilar": [
+    "KİM.10.1.10. İdeal gaz denklemini tümevarımsal akıl yürütme yoluyla oluşturabilme",
+    "a) Boyle, Charles ve Avogadro yasaları arasında örüntü oluşturur.",
+    "b) Gazların basınç, hacim, sıcaklık ve mol sayısı değişkenleri arasındaki ilişkiyi genel matematiksel bir eşitlikle ifade eder."
+  ],
+  "giris": "Önceki haftalarda gazların dört değişkeni arasındaki ikili ilişkileri tek tek inceledik. Bu hafta bir bilim insanı gibi düşünerek bu parçaları birleştiriyoruz: Boyle, Charles ve Avogadro yasalarındaki {koyu:ortak örüntüyü} bulacak, deney verilerinden {koyu:tümevarımsal akıl yürütme} ile {koyu:P · V = n · R · T} eşitliğine ulaşacağız. Ardından bu denklemi birim uyumuna dikkat ederek kullanacak, mol kütlesi ve öz kütle hesaplarına uygulayacak ve ideal gaz modelinin sınırlarını tartışacağız.",
+  "ozet": [
+    "{koyu:Tümevarım:} Tek tek yapılan kontrollü deneylerin sonuçlarındaki ortak örüntüden genel bir kurala ulaşma yoludur; ideal gaz denklemi bu yolla oluşturulur.",
+    "{koyu:Üç orantı:} Boyle'a göre V ∝ {kesir:1|P} (n ve T sabit), Charles'a göre V ∝ T (n ve P sabit), Avogadro'ya göre V ∝ n (P ve T sabit) ilişkisi vardır.",
+    "{koyu:Örüntü:} Üç orantı birleştirildiğinde V ∝ {kesir:n · T|P} elde edilir; orantı sabiti R eklenince {koyu:P · V = n · R · T} eşitliğine ulaşılır.",
+    "{koyu:Evrensel gaz sabiti:} Farklı deneylerde {kesir:P · V|n · T} oranı hep aynı çıkar; bu değer R = {kesir:22,4|273} ≈ {koyu:0,082 L · atm/(mol · K)} olup gazın cinsine bağlı değildir.",
+    "{koyu:Birim uyumu:} R = 0,082 kullanıldığında basınç atm, hacim L, sıcaklık K ve madde miktarı mol cinsinden yazılmalıdır.",
+    "{koyu:Türetilmiş biçimler:} n = {kesir:m|M} yazılarak mol kütlesi bulunur; d = {kesir:m|V} ile {koyu:P · M = d · R · T} bağıntısı elde edilir. Gerçek gazlar düşük basınç ve yüksek sıcaklıkta ideal davranışa yaklaşır."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Tümevarımsal Akıl Yürütme: Deney Verilerinden Genel Yasaya",
+      "metin": [
+        "Bilimde {koyu:tümevarımsal akıl yürütme}, tek tek yapılan gözlem ve ölçümlerden yola çıkarak bunlar arasındaki ortak örüntüyü bulma ve bu örüntüyü {koyu:genel bir kural} olarak ifade etme yoludur. Gaz yasalarının gelişimi bunun en güzel örneklerinden biridir. 17. yüzyılda {koyu:Robert Boyle} basınç ile hacim arasındaki ilişkiyi, 18. yüzyılın sonlarında {koyu:Jacques Charles} hacim ile sıcaklık arasındaki ilişkiyi inceledi. 1811'de {koyu:Amedeo Avogadro} aynı sıcaklık ve basınçta eşit hacimdeki gazlarda eşit sayıda tanecik bulunduğu hipotezini ortaya koydu. Bu ayrı ayrı bulguları tek bir eşitlikte birleştiren ise 1834'te {koyu:Émile Clapeyron} oldu.",
+        "Bu yasaların her biri, değişkenlerden ikisi {koyu:sabit (kontrol değişkeni)} tutularak yapılan deneylere dayanır. Örneğin Boyle deneylerinde madde miktarı ve sıcaklık sabit tutulur, hacim değiştirilir (bağımsız değişken) ve basınç ölçülür (bağımlı değişken). Her deney gaz davranışının yalnızca bir yüzünü gösterir. Tümevarımsal düşünce bu parçaları yan yana koyar ve şu soruyu sorar: {koyu:Dört değişkenin hepsi aynı anda değişirse aralarındaki ilişki nasıl ifade edilir?}",
+        "Tümevarımın tersi olan {koyu:tümdengelim} ise genel bir kuraldan özel durumlara ulaşmaktır. Bu hafta önce tümevarımla verilerden P · V = n · R · T denklemine çıkacağız, sonra tümdengelimle bu genel denklemden özel problemlerin cevaplarını bulacağız. Böylece bilimsel bilginin hem nasıl {koyu:üretildiğini} hem de nasıl {koyu:kullanıldığını} görmüş olacağız."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Tümevarım Adımı",
+          "Ne Yapılır?",
+          "Gazlardaki Karşılığı"
+        ],
+        "satirlar": [
+          [
+            "1. Gözlem",
+            "Doğadaki bir olay fark edilir.",
+            "Isıtılan balonun şişmesi, sıkıştırılan şırınganın zorlanması"
+          ],
+          [
+            "2. Kontrollü deney ve ölçüm",
+            "Bir değişken değiştirilir, diğerleri sabit tutulur, sonuçlar kaydedilir.",
+            "n ve T sabitken farklı hacimlerde basıncın ölçülmesi"
+          ],
+          [
+            "3. Örüntü arama",
+            "Verilerde sabit kalan oran veya çarpım aranır.",
+            "P · V çarpımının, {kesir:V|T} ve {kesir:V|n} oranlarının sabit kalması"
+          ],
+          [
+            "4. Genelleme",
+            "Örüntüler tek bir matematiksel eşitlikte birleştirilir.",
+            "{kesir:P · V|n · T} = R ve P · V = n · R · T"
+          ],
+          [
+            "5. Sınama",
+            "Genel kural yeni verilerle denenir.",
+            "Farklı gazlarla ve farklı koşullarda R değerinin yine 0,082 çıkması"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Tümevarım ve Tümdengelim",
+          "metin": "{koyu:Tümevarım:} Özel gözlem ve ölçümlerden genel kurala ulaşmak (deney verileri → P · V = n · R · T). {koyu:Tümdengelim:} Genel kuraldan özel sonuca ulaşmak (P · V = n · R · T → bu kaptaki gazın basıncı 4 atm'dir)."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Tümevarımın Sınırı",
+          "metin": "Tümevarımla elde edilen bir kural, yalnızca denenmiş koşullar için güvenilirdir. İdeal gaz denklemi de çok yüksek basınç ve çok düşük sıcaklıkta tam doğru sonuç vermez. Bu yüzden genellemeler her zaman yeni deneylerle sınanmalıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\"/><text x=\"380\" y=\"36\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">Tümevarımsal Akıl Yürütme: Özelden Genele</text><rect x=\"20\" y=\"62\" width=\"122\" height=\"118\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#1d4ed8\"/><text x=\"81\" y=\"88\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Gözlem</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Isınan balon</text><text x=\"81\" y=\"134\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">şişer, sıkışan</text><text x=\"81\" y=\"152\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">şırınga zorlanır</text><rect x=\"169\" y=\"62\" width=\"122\" height=\"118\" rx=\"10\" fill=\"#ede9fe\" stroke=\"#6d28d9\"/><text x=\"230\" y=\"88\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#6d28d9\">2. Ölçüm</text><text x=\"230\" y=\"116\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">P, V, T, n</text><text x=\"230\" y=\"134\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">değerleri</text><text x=\"230\" y=\"152\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">tabloya yazılır</text><rect x=\"318\" y=\"62\" width=\"122\" height=\"118\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#b45309\"/><text x=\"379\" y=\"88\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#b45309\">3. Örüntü</text><text x=\"379\" y=\"116\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">P · V sabit</text><text x=\"379\" y=\"134\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">V / T sabit</text><text x=\"379\" y=\"152\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">V / n sabit</text><rect x=\"467\" y=\"62\" width=\"122\" height=\"118\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#b91c1c\"/><text x=\"528\" y=\"88\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#b91c1c\">4. Genelleme</text><text x=\"528\" y=\"116\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">P·V / (n·T)</text><text x=\"528\" y=\"134\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">her deneyde</text><text x=\"528\" y=\"152\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">aynı: R</text><rect x=\"616\" y=\"62\" width=\"122\" height=\"118\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#15803d\"/><text x=\"677\" y=\"88\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">5. Sınama</text><text x=\"677\" y=\"116\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Yeni verilerle</text><text x=\"677\" y=\"134\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">PV = nRT</text><text x=\"677\" y=\"152\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">denenir</text><line x1=\"144\" y1=\"121\" x2=\"161\" y2=\"121\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"161,115 168,121 161,127\" fill=\"#475569\"/><line x1=\"293\" y1=\"121\" x2=\"310\" y2=\"121\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"310,115 317,121 310,127\" fill=\"#475569\"/><line x1=\"442\" y1=\"121\" x2=\"459\" y2=\"121\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"459,115 466,121 459,127\" fill=\"#475569\"/><line x1=\"591\" y1=\"121\" x2=\"608\" y2=\"121\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"608,115 615,121 608,127\" fill=\"#475569\"/><rect x=\"60\" y=\"208\" width=\"640\" height=\"66\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#047857\"/><text x=\"380\" y=\"235\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#047857\">Sonuç: Birçok özel deneyden tek bir genel eşitlik</text><text x=\"380\" y=\"259\" text-anchor=\"middle\" font-size=\"14\" fill=\"#1e293b\">Boyle + Charles + Avogadro  ⇒  P · V = n · R · T</text></svg>"
+    },
+    {
+      "baslik": "Boyle, Charles ve Avogadro Yasaları Arasındaki Örüntü",
+      "metin": [
+        "Üç yasayı karşılaştırırken işimizi kolaylaştırmak için hepsinde {koyu:hacmi (V)} bağımlı değişken olarak yazalım. {koyu:Boyle Yasası}na göre n ve T sabitken V = {kesir:k|P}, yani hacim basınçla {koyu:ters orantılıdır} (V ∝ {kesir:1|P}). {koyu:Charles Yasası}na göre n ve P sabitken V = k · T, yani hacim mutlak sıcaklıkla {koyu:doğru orantılıdır} (V ∝ T). {koyu:Avogadro Yasası}na göre P ve T sabitken V = k · n, yani hacim mol sayısıyla {koyu:doğru orantılıdır} (V ∝ n).",
+        "Burada ortaya çıkan örüntü şudur: Hacim aynı anda üç değişkene bağlıdır ve her birine olan bağımlılığı diğerlerinden bağımsız olarak geçerlidir. Matematikte bir nicelik birkaç değişkenle ayrı ayrı orantılıysa, bu değişkenlerin {koyu:çarpımı ve bölümüyle} de orantılıdır. Bir dikdörtgenin alanının hem uzunluğa hem genişliğe doğru orantılı olması ve bu yüzden A ∝ a · b yazılması buna benzer. Aynı mantıkla üç gaz yasası birleştirildiğinde {koyu:V ∝ {kesir:n · T|P}} elde edilir: Hacim, mol sayısı ve mutlak sıcaklıkla doğru, basınçla ters orantılıdır.",
+        "Bu örüntünün doğru olup olmadığını önceki haftalarda öğrendiğimiz {koyu:Gay-Lussac Yasası} ile kontrol edebiliriz. V ∝ {kesir:n · T|P} ifadesinde V ve n sabit tutulursa P ∝ T sonucu çıkar; bu da sabit hacimli kapta basıncın mutlak sıcaklıkla doğru orantılı olması demektir. Yani birleştirilmiş ilişki, ayrıca öğrenilen dördüncü yasayı da {koyu:kendiliğinden içerir}. Bir genellemenin, onu oluşturmakta kullanılmayan bir bulguyu da açıklayabilmesi o genellemenin gücünü gösterir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yasa",
+          "Sabit Tutulanlar",
+          "Orantı",
+          "Örnek Veri (Örüntü)"
+        ],
+        "satirlar": [
+          [
+            "Boyle",
+            "n ve T",
+            "V ∝ {kesir:1|P}",
+            "P: 1 - 2 - 4 atm; V: 12 - 6 - 3 L; P · V = 12 (sabit)"
+          ],
+          [
+            "Charles",
+            "n ve P",
+            "V ∝ T",
+            "T: 200 - 300 - 400 K; V: 4 - 6 - 8 L; {kesir:V|T} = 0,02 (sabit)"
+          ],
+          [
+            "Avogadro",
+            "P ve T",
+            "V ∝ n",
+            "n: 1 - 2 - 3 mol; V: 22,4 - 44,8 - 67,2 L; {kesir:V|n} = 22,4 (sabit)"
+          ],
+          [
+            "Gay-Lussac (sınama)",
+            "n ve V",
+            "P ∝ T",
+            "Birleşik ilişkiden kendiliğinden çıkar"
+          ],
+          [
+            "Birleşik ilişki",
+            "Yok (hepsi değişebilir)",
+            "V ∝ {kesir:n · T|P}",
+            "{kesir:P · V|n · T} oranı sabit kalır"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Orantıları Birleştirme Kuralı",
+          "metin": "Bir nicelik bazı değişkenlerle doğru, bazılarıyla ters orantılıysa: doğru orantılı olanlar {koyu:paya}, ters orantılı olanlar {koyu:paydaya} yazılır. Gazlarda n ve T doğru, P ters orantılı olduğu için V ∝ {kesir:n · T|P} olur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Örüntüyü Tabloda Yakalama",
+          "metin": "Bir veri tablosunda iki nicelik birlikte artıyorsa {koyu:oranlarına} (V ÷ T), biri artarken diğeri azalıyorsa {koyu:çarpımlarına} (P · V) bakınız. Sabit kalan oran veya çarpım, aradığınız örüntüyü gösterir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\"/><text x=\"380\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">Üç Yasadan Tek Bir Örüntü</text><rect x=\"20\" y=\"50\" width=\"220\" height=\"110\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#1d4ed8\"/><rect x=\"20\" y=\"50\" width=\"220\" height=\"28\" rx=\"10\" fill=\"#1d4ed8\"/><text x=\"130\" y=\"69\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">Boyle Yasası</text><text x=\"130\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Sabit: n ve T</text><text x=\"130\" y=\"122\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1d4ed8\">V ∝ 1 / P</text><text x=\"130\" y=\"146\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">P iki katı → V yarısı</text><rect x=\"270\" y=\"50\" width=\"220\" height=\"110\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#15803d\"/><rect x=\"270\" y=\"50\" width=\"220\" height=\"28\" rx=\"10\" fill=\"#15803d\"/><text x=\"380\" y=\"69\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">Charles Yasası</text><text x=\"380\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Sabit: n ve P</text><text x=\"380\" y=\"122\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#15803d\">V ∝ T</text><text x=\"380\" y=\"146\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">T iki katı → V iki katı</text><rect x=\"520\" y=\"50\" width=\"220\" height=\"110\" rx=\"10\" fill=\"#ede9fe\" stroke=\"#6d28d9\"/><rect x=\"520\" y=\"50\" width=\"220\" height=\"28\" rx=\"10\" fill=\"#6d28d9\"/><text x=\"630\" y=\"69\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">Avogadro Yasası</text><text x=\"630\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Sabit: P ve T</text><text x=\"630\" y=\"122\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#6d28d9\">V ∝ n</text><text x=\"630\" y=\"146\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">n iki katı → V iki katı</text><line x1=\"130\" y1=\"162\" x2=\"330\" y2=\"206\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"380\" y1=\"162\" x2=\"380\" y2=\"206\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"630\" y1=\"162\" x2=\"430\" y2=\"206\" stroke=\"#475569\" stroke-width=\"2\"/><rect x=\"190\" y=\"208\" width=\"380\" height=\"74\" rx=\"12\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"2\"/><text x=\"380\" y=\"238\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#b45309\">Ortak örüntü: V ∝ n · T / P</text><text x=\"380\" y=\"264\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Hacim n ve T ile doğru, P ile ters orantılıdır</text></svg>"
+    },
+    {
+      "baslik": "Orantılardan Eşitliğe: Evrensel Gaz Sabiti R'nin Belirlenmesi",
+      "metin": [
+        "Bir orantıyı eşitliğe çevirmek için bir {koyu:orantı sabiti} gerekir. V ∝ {kesir:n · T|P} ilişkisine R sabitini eklersek V = R · {kesir:n · T|P} olur. Eşitliğin iki yanını P ile çarptığımızda gazların dört değişkenini tek bir eşitlikte birleştiren {koyu:İdeal Gaz Denklemi} ortaya çıkar: {koyu:P · V = n · R · T}. Aynı eşitlik R'yi yalnız bırakarak R = {kesir:P · V|n · T} biçiminde de yazılabilir. Bu biçim, R'nin deney verilerinden nasıl hesaplanacağını gösterir.",
+        "R'nin değerini bulmak için ölçümü bilinen bir durum seçilir. {koyu:Normal koşullarda} (0 °C = 273 K ve 1 atm) 1 mol ideal gaz 22,4 L hacim kaplar. Bu değerler yerine konduğunda R = {kesir:1 · 22,4|1 · 273} ≈ {koyu:0,082 L · atm/(mol · K)} bulunur. Tümevarımın sınama adımı burada başlar: Farklı basınç, hacim, mol sayısı ve sıcaklıkta yapılan deneylerde de {kesir:P · V|n · T} oranı hesaplanır. Aşağıdaki tabloda görüldüğü gibi koşullar ne kadar değişirse değişsin oran hep 0,082 çıkar. Bu tutarlılık genellemenin geçerli olduğunu destekler.",
+        "R'ye {koyu:evrensel gaz sabiti} denmesinin nedeni, değerinin gazın cinsine bağlı olmamasıdır. He, N{alt:|2}, O{alt:|2} veya CO{alt:|2} fark etmez; ideal davranış gösteren her gaz için aynı değer kullanılır. R'nin sayısal değeri ise kullanılan birimlere göre değişir. Basınç mmHg cinsinden alınırsa R ≈ 62,4 L · mmHg/(mol · K), enerji birimi joule ile çalışılırsa R ≈ 8,314 J/(mol · K) olur. 10. sınıf hesaplarında çoğunlukla {koyu:0,082} değeri ve atm-litre birimleri kullanılır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Deney",
+          "P (atm)",
+          "V (L)",
+          "n (mol)",
+          "T (K)",
+          "{kesir:P · V|n · T}"
+        ],
+        "satirlar": [
+          [
+            "1",
+            "1",
+            "22,4",
+            "1",
+            "273",
+            "{kesir:22,4|273} ≈ 0,082"
+          ],
+          [
+            "2",
+            "2",
+            "12,3",
+            "1",
+            "300",
+            "{kesir:24,6|300} = 0,082"
+          ],
+          [
+            "3",
+            "1",
+            "49,2",
+            "2",
+            "300",
+            "{kesir:49,2|600} = 0,082"
+          ],
+          [
+            "4",
+            "4",
+            "8,2",
+            "1",
+            "400",
+            "{kesir:32,8|400} = 0,082"
+          ],
+          [
+            "5",
+            "0,5",
+            "65,6",
+            "1",
+            "400",
+            "{kesir:32,8|400} = 0,082"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "R Sabitinin Farklı Birimlerdeki Değerleri",
+          "metin": "R ≈ {koyu:0,082 L · atm/(mol · K)} = {kesir:22,4|273} L · atm/(mol · K) | R ≈ {koyu:62,4 L · mmHg/(mol · K)} | R ≈ {koyu:8,314 J/(mol · K)}. Hangi R değerini seçtiyseniz diğer niceliklerin birimlerini ona uydurmalısınız."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Genel Gaz Denklemiyle Bağlantı",
+          "metin": "Bir gazın iki farklı durumu için R aynı olduğundan {kesir:P1 · V1|n1 · T1} = {kesir:P2 · V2|n2 · T2} yazılabilir. Tek bir durum için ise P · V = n · R · T kullanılır. Yani genel gaz denklemi, ideal gaz denkleminin iki durumlu karşılaştırma biçimidir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\"/><text x=\"380\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">Farklı Deneylerde P·V/(n·T) Oranı Hep Aynı Çıkar</text><line x1=\"80\" y1=\"250\" x2=\"460\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"80\" y1=\"250\" x2=\"80\" y2=\"60\" stroke=\"#1e293b\" stroke-width=\"2\"/><polygon points=\"460,244 470,250 460,256\" fill=\"#1e293b\"/><polygon points=\"74,60 80,50 86,60\" fill=\"#1e293b\"/><text x=\"86\" y=\"58\" font-size=\"12\" fill=\"#1e293b\">P·V/(n·T)</text><text x=\"420\" y=\"275\" font-size=\"12\" fill=\"#1e293b\">Deney no</text><text x=\"66\" y=\"254\" text-anchor=\"end\" font-size=\"12\" fill=\"#1e293b\">0</text><line x1=\"80\" y1=\"140\" x2=\"450\" y2=\"140\" stroke=\"#b91c1c\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/><text x=\"72\" y=\"144\" text-anchor=\"end\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\">0,082</text><circle cx=\"130\" cy=\"140\" r=\"7\" fill=\"#1d4ed8\"/><circle cx=\"200\" cy=\"140\" r=\"7\" fill=\"#1d4ed8\"/><circle cx=\"270\" cy=\"140\" r=\"7\" fill=\"#1d4ed8\"/><circle cx=\"340\" cy=\"140\" r=\"7\" fill=\"#1d4ed8\"/><circle cx=\"410\" cy=\"140\" r=\"7\" fill=\"#1d4ed8\"/><text x=\"130\" y=\"268\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">1</text><text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">2</text><text x=\"270\" y=\"268\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">3</text><text x=\"340\" y=\"268\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">4</text><text x=\"410\" y=\"268\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">5</text><text x=\"270\" y=\"118\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">Koşullar farklı, oran aynı: yatay doğru</text><rect x=\"495\" y=\"62\" width=\"245\" height=\"190\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"617\" y=\"90\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#047857\">Normal Koşullardan R</text><text x=\"617\" y=\"118\" text-anchor=\"middle\" font-size=\"13\" fill=\"#1e293b\">P = 1 atm,  V = 22,4 L</text><text x=\"617\" y=\"142\" text-anchor=\"middle\" font-size=\"13\" fill=\"#1e293b\">n = 1 mol,  T = 273 K</text><text x=\"617\" y=\"172\" text-anchor=\"middle\" font-size=\"14\" fill=\"#1e293b\">R = (1 · 22,4) / (1 · 273)</text><text x=\"617\" y=\"204\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#047857\">R ≈ 0,082</text><text x=\"617\" y=\"228\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">L·atm / (mol·K)</text></svg>"
+    },
+    {
+      "baslik": "İdeal Gaz Denkleminin Kullanımı ve Birim Uyumu",
+      "metin": [
+        "İdeal gaz denklemi, {koyu:tek bir durumdaki} gazı betimler: Kapta bulunan gazın basıncı, hacmi, mol sayısı ve sıcaklığından {koyu:üçü biliniyorsa dördüncüsü} hesaplanabilir. Bu, tümdengelimin uygulamasıdır: Genel eşitlikten belirli bir kaptaki gaz hakkında kesin bir sonuca ulaşırız. Örneğin P = {kesir:n · R · T|V}, V = {kesir:n · R · T|P}, n = {kesir:P · V|R · T} ve T = {kesir:P · V|n · R} biçimleri aynı denklemin farklı yazılışlarıdır.",
+        "Denklemin doğru sonuç vermesi için {koyu:birim uyumu} şarttır. R = 0,082 L · atm/(mol · K) kullanılıyorsa basınç {koyu:atm}, hacim {koyu:litre}, sıcaklık {koyu:Kelvin} ve madde miktarı {koyu:mol} cinsinden yazılmalıdır. Basınç mmHg verilmişse 760'a, cmHg verilmişse 76'ya bölünerek atm'ye çevrilir. Hacim mL ise 1000'e bölünür. Sıcaklık °C ise 273 eklenir. Kütle verilmişse n = {kesir:m|M}, tanecik sayısı verilmişse n = {kesir:N|6,02 · 10{us:|23}} ile mole geçilir.",
+        "Problem çözerken izlenecek düzenli bir yol hata yapma olasılığını azaltır: {koyu:1)} Verilen nicelikleri sembolleriyle listeleyin. {koyu:2)} Her birini R ile uyumlu birime çevirin. {koyu:3)} Denklemi aranan nicelik yalnız kalacak şekilde düzenleyin. {koyu:4)} Değerleri yerine koyup hesaplayın. {koyu:5)} Sonucun birimini ve büyüklüğünü mantıkla kontrol edin. Örneğin birkaç mol gaz için birkaç bin atmosferlik bir basınç bulduysanız muhtemelen bir birim dönüşümünü atlamışsınızdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Verilen Nicelik",
+          "Dönüşüm",
+          "Denklemde Kullanılacak Biçim"
+        ],
+        "satirlar": [
+          [
+            "Basınç: 1520 mmHg",
+            "1520 ÷ 760",
+            "P = 2 atm"
+          ],
+          [
+            "Basınç: 38 cmHg",
+            "38 ÷ 76",
+            "P = 0,5 atm"
+          ],
+          [
+            "Hacim: 4100 mL",
+            "4100 ÷ 1000",
+            "V = 4,1 L"
+          ],
+          [
+            "Sıcaklık: 127 °C",
+            "127 + 273",
+            "T = 400 K"
+          ],
+          [
+            "Kütle: 8,8 g CO{alt:|2} (M = 44 g/mol)",
+            "8,8 ÷ 44",
+            "n = 0,2 mol"
+          ],
+          [
+            "Tanecik: 1,204 · 10{us:|24} molekül",
+            "1,204 · 10{us:|24} ÷ 6,02 · 10{us:|23}",
+            "n = 2 mol"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "En Sık Yapılan Birim Hataları",
+          "metin": "Sıcaklığı °C olarak yazmak (27 yerine 300 K olmalı), hacmi mL bırakmak, basıncı mmHg olarak denkleme koymak ve kütleyi mol sanmak en yaygın hatalardır. Denkleme sayı yazmadan önce her niceliğin birimini kontrol ediniz."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Hazır R · T Değerleri",
+          "metin": "Sık kullanılan sıcaklıklar için R · T çarpımını bilmek hesabı hızlandırır: T = 273 K için R · T = {koyu:22,4}; T = 300 K için {koyu:24,6}; T = 400 K için {koyu:32,8}; T = 500 K için {koyu:41}. Örneğin 300 K'de P · V = n · 24,6 olur."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\"/><text x=\"380\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">Denkleme Girmeden Önce Birimleri Uyumlu Hale Getir</text><rect x=\"20\" y=\"52\" width=\"170\" height=\"104\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#1d4ed8\"/><text x=\"105\" y=\"78\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1d4ed8\">Basınç → atm</text><text x=\"105\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">mmHg ÷ 760</text><text x=\"105\" y=\"124\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">cmHg ÷ 76</text><text x=\"105\" y=\"144\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">760 mmHg = 1 atm</text><rect x=\"205\" y=\"52\" width=\"170\" height=\"104\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#15803d\"/><text x=\"290\" y=\"78\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">Hacim → L</text><text x=\"290\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">mL ÷ 1000</text><text x=\"290\" y=\"124\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">1 dm³ = 1 L</text><text x=\"290\" y=\"144\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">1000 cm³ = 1 L</text><rect x=\"390\" y=\"52\" width=\"170\" height=\"104\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#b91c1c\"/><text x=\"475\" y=\"78\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#b91c1c\">Sıcaklık → K</text><text x=\"475\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">T = t + 273</text><text x=\"475\" y=\"124\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">27 °C = 300 K</text><text x=\"475\" y=\"144\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">127 °C = 400 K</text><rect x=\"575\" y=\"52\" width=\"165\" height=\"104\" rx=\"10\" fill=\"#ede9fe\" stroke=\"#6d28d9\"/><text x=\"657\" y=\"78\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#6d28d9\">Madde → mol</text><text x=\"657\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">n = m / M</text><text x=\"657\" y=\"124\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">n = N ÷ 6,02·10²³</text><text x=\"657\" y=\"144\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">NK: n = V / 22,4</text><line x1=\"105\" y1=\"158\" x2=\"300\" y2=\"204\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"290\" y1=\"158\" x2=\"350\" y2=\"204\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"475\" y1=\"158\" x2=\"410\" y2=\"204\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"657\" y1=\"158\" x2=\"460\" y2=\"204\" stroke=\"#475569\" stroke-width=\"2\"/><rect x=\"230\" y=\"206\" width=\"300\" height=\"74\" rx=\"12\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"2\"/><text x=\"380\" y=\"238\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#b45309\">P · V = n · R · T</text><text x=\"380\" y=\"264\" text-anchor=\"middle\" font-size=\"13\" fill=\"#1e293b\">R = 0,082 L·atm / (mol·K)</text></svg>"
+    },
+    {
+      "baslik": "İdeal Gaz Denkleminin Türetilmiş Biçimleri: Mol Kütlesi ve Öz Kütle",
+      "metin": [
+        "İdeal gaz denkleminin gücü, başka bağıntılarla birleştirilebilmesinden gelir. Madde miktarı n = {kesir:m|M} (m: kütle, M: mol kütlesi) olduğundan denklemde n yerine bu ifade yazılırsa P · V = {kesir:m|M} · R · T elde edilir. Buradan {koyu:M = {kesir:m · R · T|P · V}} bulunur. Böylece kimliği bilinmeyen bir gazın kütlesi, hacmi, basıncı ve sıcaklığı ölçülerek {koyu:mol kütlesi} hesaplanabilir ve gazın ne olduğu hakkında yorum yapılabilir. Laboratuvarlarda uçucu sıvıların mol kütlesi bu yolla belirlenebilir.",
+        "Aynı eşitlikte iki yan V'ye bölünüp düzenlenirse P · M = {kesir:m|V} · R · T olur. {kesir:m|V} oranı gazın {koyu:öz kütlesidir (d)}. Böylece {koyu:P · M = d · R · T} bağıntısına ulaşılır ve öz kütle d = {kesir:P · M|R · T} biçiminde yazılır. Bu ifadeden üç önemli sonuç çıkar: Gazın öz kütlesi basınçla ve mol kütlesiyle {koyu:doğru}, mutlak sıcaklıkla {koyu:ters} orantılıdır. Normal koşullarda ise d = {kesir:M|22,4} g/L olarak hızlıca hesaplanabilir.",
+        "Aynı basınç ve sıcaklıktaki gazlar karşılaştırıldığında öz kütleler yalnızca mol kütlelerine bağlı kalır. Havanın ortalama mol kütlesi yaklaşık {koyu:29 g/mol} olduğundan mol kütlesi 29'dan küçük olan gazlar (H{alt:|2}, He, CH{alt:|4}) havadan hafiftir ve yükselir; büyük olanlar (CO{alt:|2}, Cl{alt:|2}) havadan ağırdır ve yere yakın birikir. Helyum dolu balonların yükselmesi ve karbon dioksitin kuyu diplerinde, mahzenlerde birikerek tehlike oluşturması bu sonucun günlük yaşamdaki karşılıklarıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Gaz",
+          "Mol Kütlesi M (g/mol)",
+          "NK'da Öz Kütle d = {kesir:M|22,4} (g/L)",
+          "Havaya Göre"
+        ],
+        "satirlar": [
+          [
+            "H{alt:|2}",
+            "2",
+            "≈ 0,089",
+            "Çok hafif"
+          ],
+          [
+            "He",
+            "4",
+            "≈ 0,179",
+            "Hafif"
+          ],
+          [
+            "CH{alt:|4}",
+            "16",
+            "≈ 0,714",
+            "Hafif"
+          ],
+          [
+            "N{alt:|2}",
+            "28",
+            "1,25",
+            "Biraz hafif"
+          ],
+          [
+            "O{alt:|2}",
+            "32",
+            "≈ 1,43",
+            "Biraz ağır"
+          ],
+          [
+            "CO{alt:|2}",
+            "44",
+            "≈ 1,96",
+            "Ağır"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Türetilmiş Bağıntılar",
+          "metin": "{koyu:Mol kütlesi:} M = {kesir:m · R · T|P · V} | {koyu:Öz kütle:} d = {kesir:P · M|R · T} | {koyu:NK'da öz kütle:} d = {kesir:M|22,4}. Aynı P ve T'de iki gazın öz kütleleri oranı, mol kütleleri oranına eşittir: {kesir:d1|d2} = {kesir:M1|M2}."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Kapalı Kapta Öz Kütle",
+          "metin": "d = {kesir:P · M|R · T} bağıntısı her durumda doğrudur; ancak sabit hacimli kapalı kapta ısıtma yapıldığında P ve T birlikte arttığı için oran değişmez ve öz kütle sabit kalır. Formülü kullanırken hangi niceliklerin gerçekten değiştiğine dikkat ediniz."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\"/><text x=\"380\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">İdeal Gaz Denkleminden Türetilen Bağıntılar</text><rect x=\"20\" y=\"58\" width=\"160\" height=\"70\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#b45309\"/><text x=\"100\" y=\"90\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">P · V = n · R · T</text><text x=\"100\" y=\"112\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">Başlangıç</text><rect x=\"212\" y=\"58\" width=\"160\" height=\"70\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#1d4ed8\"/><text x=\"292\" y=\"90\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1d4ed8\">n = m / M</text><text x=\"292\" y=\"112\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">yerine yazılır</text><rect x=\"404\" y=\"58\" width=\"160\" height=\"70\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#15803d\"/><text x=\"484\" y=\"90\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">P·V = (m/M)·R·T</text><text x=\"484\" y=\"112\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">kütle ile yazılış</text><rect x=\"596\" y=\"58\" width=\"144\" height=\"70\" rx=\"10\" fill=\"#ede9fe\" stroke=\"#6d28d9\"/><text x=\"668\" y=\"90\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#6d28d9\">d = m / V</text><text x=\"668\" y=\"112\" text-anchor=\"middle\" font-size=\"12\" fill=\"#1e293b\">öz kütle tanımı</text><line x1=\"182\" y1=\"93\" x2=\"204\" y2=\"93\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"204,87 211,93 204,99\" fill=\"#475569\"/><line x1=\"374\" y1=\"93\" x2=\"396\" y2=\"93\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"396,87 403,93 396,99\" fill=\"#475569\"/><line x1=\"566\" y1=\"93\" x2=\"588\" y2=\"93\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"588,87 595,93 588,99\" fill=\"#475569\"/><line x1=\"484\" y1=\"130\" x2=\"200\" y2=\"168\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"668\" y1=\"130\" x2=\"560\" y2=\"168\" stroke=\"#475569\" stroke-width=\"2\"/><rect x=\"40\" y=\"170\" width=\"320\" height=\"100\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"200\" y=\"198\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#047857\">Mol Kütlesi Bulma</text><text x=\"200\" y=\"226\" text-anchor=\"middle\" font-size=\"15\" fill=\"#1e293b\">M = m · R · T / (P · V)</text><text x=\"200\" y=\"252\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">Bilinmeyen gazın kimliği</text><rect x=\"400\" y=\"170\" width=\"320\" height=\"100\" rx=\"12\" fill=\"#fff7ed\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"560\" y=\"198\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#c2410c\">Öz Kütle Bağıntısı</text><text x=\"560\" y=\"226\" text-anchor=\"middle\" font-size=\"15\" fill=\"#1e293b\">P · M = d · R · T</text><text x=\"560\" y=\"252\" text-anchor=\"middle\" font-size=\"12\" fill=\"#475569\">NK'da d = M / 22,4 (g/L)</text></svg>"
+    },
+    {
+      "baslik": "İdeal Gaz Modelinin Varsayımları ve Sınırları",
+      "metin": [
+        "P · V = n · R · T denklemine her koşulda tam uyan gaza {koyu:ideal gaz} denir. İdeal gaz, gerçek gazların davranışını sadeleştiren kuramsal bir {koyu:modeldir}. Bu model üç temel varsayıma dayanır: {koyu:1)} Gaz taneciklerinin öz hacimleri, kabın hacmi yanında ihmal edilecek kadar küçüktür. {koyu:2)} Tanecikler arasında çekim ya da itme kuvveti yoktur; tanecikler yalnız çarpışırken etkileşir. {koyu:3)} Tanecikler arasındaki ve çeperlerle olan çarpışmalar esnektir. Denklemin gazın cinsinden bağımsız olması da bu varsayımlardan kaynaklanır: Taneciklerin büyüklüğü ve birbirini çekmesi hesaba katılmadığı için her gaz aynı şekilde davranır.",
+        "Gerçek gazlarda tanecikler belirli bir hacme sahiptir ve aralarında zayıf da olsa çekim kuvvetleri bulunur. {koyu:Düşük basınç ve yüksek sıcaklıkta} tanecikler birbirinden çok uzak ve çok hızlı olduğu için bu etkiler önemsizleşir ve gaz ideal davranışa yaklaşır. {koyu:Yüksek basınç ve düşük sıcaklıkta} ise tanecikler birbirine yaklaşır, çekim kuvvetleri ve öz hacim önem kazanır; ölçülen değerler denklemden sapar ve gaz sonunda sıvılaşabilir. Ayrıca molekülleri arasında güçlü çekim bulunan NH{alt:|3} ve su buharı gibi gazlar, He ve H{alt:|2} gibi küçük ve apolar gazlardan daha fazla sapma gösterir.",
+        "Bu durum tümevarımsal akıl yürütmenin doğasını yansıtır: Bir genelleme, oluşturulduğu deneylerin koşullarında güvenilirdir ve bu koşulların dışına çıkıldığında yeniden sınanmalıdır. İdeal gaz denkleminin sınırlarının bulunması onun değersiz olduğunu göstermez; aksine günlük koşullarda (oda sıcaklığı ve atmosfer basıncı civarında) çoğu gaz için çok iyi sonuç verir. Bilim insanları sapmaları açıklamak için modeli geliştirmiştir; bu da {koyu:bilimsel bilginin yeni kanıtlarla gelişebilen} yapısını gösterir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "İdeal Gaz (Model)",
+          "Gerçek Gaz"
+        ],
+        "satirlar": [
+          [
+            "Tanecik hacmi",
+            "İhmal edilir",
+            "Belirli bir öz hacmi vardır"
+          ],
+          [
+            "Tanecikler arası çekim",
+            "Yoktur",
+            "Vardır (yüksek basınçta önemlidir)"
+          ],
+          [
+            "P · V = n · R · T uyumu",
+            "Her koşulda tam uyar",
+            "Düşük P ve yüksek T'de yaklaşık uyar"
+          ],
+          [
+            "Sıvılaşma",
+            "Sıvılaşmaz",
+            "Yeterince soğutulup sıkıştırılırsa sıvılaşır"
+          ],
+          [
+            "İdeale en yakın gazlar",
+            "-",
+            "He, H{alt:|2} gibi küçük ve apolar tanecikli gazlar"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "İdeale Yaklaşma Koşulları",
+          "metin": "Gazlar {koyu:düşük basınç} ve {koyu:yüksek sıcaklıkta} ideal davranışa yaklaşır. Basınç arttıkça ve sıcaklık düştükçe ideallikten sapma artar."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Model Ne İşe Yarar?",
+          "metin": "Modeller gerçeği sadeleştirerek anlaşılır kılar. İdeal gaz modeli; balonların, lastiklerin, tüplerin ve solunum sisteminin davranışını büyük ölçüde doğru tahmin eder. Sapmalar ancak çok yüksek basınç veya çok düşük sıcaklık gibi uç koşullarda belirginleşir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#cbd5e1\"/><text x=\"380\" y=\"32\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\">İdeal Gaz Modeli ve Gerçek Gazlar</text><rect x=\"30\" y=\"50\" width=\"330\" height=\"150\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#047857\" stroke-width=\"2\"/><rect x=\"30\" y=\"50\" width=\"330\" height=\"30\" rx=\"10\" fill=\"#047857\"/><text x=\"195\" y=\"70\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">İdeal Gaz (Model)</text><text x=\"195\" y=\"104\" text-anchor=\"middle\" font-size=\"13\" fill=\"#1e293b\">Tanecik hacmi ihmal edilir</text><text x=\"195\" y=\"128\" text-anchor=\"middle\" font-size=\"13\" fill=\"#1e293b\">Tanecikler arası çekim yok</text><text x=\"195\" y=\"152\" text-anchor=\"middle\" font-size=\"13\" fill=\"#1e293b\">Çarpışmalar esnek</text><text x=\"195\" y=\"180\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#047857\">PV = nRT her koşulda geçerli</text><rect x=\"400\" y=\"50\" width=\"330\" height=\"150\" rx=\"12\" fill=\"#fff7ed\" stroke=\"#c2410c\" stroke-width=\"2\"/><rect x=\"400\" y=\"50\" width=\"330\" height=\"30\" rx=\"10\" fill=\"#c2410c\"/><text x=\"565\" y=\"70\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\">Gerçek Gaz</text><text x=\"565\" y=\"104\" text-anchor=\"middle\" font-size=\"13\" fill=\"#1e293b\">Taneciklerin öz hacmi var</text><text x=\"565\" y=\"128\" text-anchor=\"middle\" font-size=\"13\" fill=\"#1e293b\">Zayıf çekim kuvvetleri var</text><text x=\"565\" y=\"152\" text-anchor=\"middle\" font-size=\"13\" fill=\"#1e293b\">Soğutulup sıkışınca sıvılaşır</text><text x=\"565\" y=\"180\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#c2410c\">PV = nRT yaklaşık geçerli</text><rect x=\"60\" y=\"224\" width=\"640\" height=\"14\" rx=\"7\" fill=\"#cbd5e1\"/><rect x=\"60\" y=\"224\" width=\"320\" height=\"14\" rx=\"7\" fill=\"#86efac\"/><rect x=\"380\" y=\"224\" width=\"320\" height=\"14\" rx=\"7\" fill=\"#fdba74\"/><text x=\"60\" y=\"262\" font-size=\"13\" font-weight=\"bold\" fill=\"#047857\">Düşük basınç, yüksek sıcaklık</text><text x=\"60\" y=\"281\" font-size=\"12\" fill=\"#1e293b\">İdeal davranışa yakın</text><text x=\"700\" y=\"262\" text-anchor=\"end\" font-size=\"13\" font-weight=\"bold\" fill=\"#c2410c\">Yüksek basınç, düşük sıcaklık</text><text x=\"700\" y=\"281\" text-anchor=\"end\" font-size=\"12\" fill=\"#1e293b\">İdeallikten sapma artar</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir öğrenci kapalı bir kapta 2 mol gazın 300 K'de 2 atm basınç yaptığını ve 24,6 L hacim kapladığını ölçüyor. Bu verilerden {kesir:P · V|n · T} oranını hesaplayınız ve sonucu yorumlayınız.",
+      "cevap": "{koyu:1. adım:} Pay hesaplanır: P · V = 2 · 24,6 = 49,2. {koyu:2. adım:} Payda hesaplanır: n · T = 2 · 300 = 600. {koyu:3. adım:} Oran: {kesir:49,2|600} = {koyu:0,082}. {koyu:Yorum:} Bulunan değer evrensel gaz sabiti R ile aynıdır. Farklı koşullarda yapılan bu ölçüm de aynı oranı verdiği için P · V = n · R · T genellemesini destekler; bu, tümevarımın sınama adımıdır.",
+      "ipucu": "Önce payı ve paydayı ayrı ayrı hesaplayınız, sonra sonucu R'nin değeriyle karşılaştırınız."
+    },
+    {
+      "soru": "4,1 L hacimli çelik bir kapta 127 °C'de 0,5 mol ideal gaz bulunmaktadır. Gazın basıncı kaç atm'dir? (R = 0,082 L · atm/(mol · K))",
+      "cevap": "{koyu:1. adım:} Sıcaklık Kelvin'e çevrilir: T = 127 + 273 = {koyu:400 K}. {koyu:2. adım:} Denklem basınç için düzenlenir: P = {kesir:n · R · T|V}. {koyu:3. adım:} n · R · T = 0,5 · 0,082 · 400 = 0,5 · 32,8 = 16,4. {koyu:4. adım:} P = {kesir:16,4|4,1} = {koyu:4 atm}.",
+      "ipucu": "400 K için R · T = 32,8 olduğunu hatırlayınız."
+    },
+    {
+      "soru": "6,4 g O{alt:|2} gazı normal koşullarda (0 °C, 1 atm) kaç litre hacim kaplar? (O: 16 g/mol, R = {kesir:22,4|273} L · atm/(mol · K))",
+      "cevap": "{koyu:1. adım:} Mol kütlesi: M(O{alt:|2}) = 2 · 16 = 32 g/mol. {koyu:2. adım:} Mol sayısı: n = {kesir:6,4|32} = {koyu:0,2 mol}. {koyu:3. adım:} T = 0 + 273 = 273 K. V = {kesir:n · R · T|P} = {kesir:0,2 · (22,4/273) · 273|1} = 0,2 · 22,4 = {koyu:4,48 L}. {koyu:Kontrol:} Normal koşullarda 1 mol gaz 22,4 L kapladığından 0,2 mol gaz 4,48 L kaplar; iki yol aynı sonucu verir.",
+      "ipucu": "Kütleyi önce mole çeviriniz; 273 K'de R · T = 22,4 olur."
+    },
+    {
+      "soru": "Kimliği bilinmeyen 8,8 g bir gaz, 27 °C'de 4,1 L hacimli bir kapta 1,2 atm basınç yapmaktadır. Gazın mol kütlesini bulunuz ve hangi gaz olabileceğini yorumlayınız. (R = 0,082 L · atm/(mol · K); C: 12, O: 16 g/mol)",
+      "cevap": "{koyu:1. adım:} T = 27 + 273 = {koyu:300 K}; R · T = 0,082 · 300 = 24,6. {koyu:2. adım:} Mol sayısı: n = {kesir:P · V|R · T} = {kesir:1,2 · 4,1|24,6} = {kesir:4,92|24,6} = {koyu:0,2 mol}. {koyu:3. adım:} Mol kütlesi: M = {kesir:m|n} = {kesir:8,8|0,2} = {koyu:44 g/mol}. {koyu:Yorum:} CO{alt:|2} için M = 12 + 2 · 16 = 44 g/mol olduğundan gaz karbon dioksit olabilir.",
+      "ipucu": "Önce n'yi ideal gaz denkleminden, sonra M'yi M = m ÷ n bağıntısından bulunuz."
+    },
+    {
+      "soru": "127 °C'de ve 4,1 atm basınçta bulunan O{alt:|2} gazının öz kütlesi kaç g/L'dir? (O{alt:|2}: 32 g/mol, R = 0,082 L · atm/(mol · K))",
+      "cevap": "{koyu:1. adım:} T = 127 + 273 = {koyu:400 K}. {koyu:2. adım:} Öz kütle bağıntısı: P · M = d · R · T → d = {kesir:P · M|R · T}. {koyu:3. adım:} Pay: 4,1 · 32 = 131,2. Payda: 0,082 · 400 = 32,8. {koyu:4. adım:} d = {kesir:131,2|32,8} = {koyu:4 g/L}.",
+      "ipucu": "d = (P · M) ÷ (R · T) bağıntısını kullanınız; sıcaklığı Kelvin'e çevirmeyi unutmayınız."
+    },
+    {
+      "soru": "8,2 L hacimli kapalı bir kapta bulunan 0,4 mol ideal gaz 1520 mmHg basınç yapmaktadır. Gazın sıcaklığı kaç °C'dir? (R = 0,082 L · atm/(mol · K))",
+      "cevap": "{koyu:1. adım:} Basınç atm'ye çevrilir: P = {kesir:1520|760} = {koyu:2 atm}. {koyu:2. adım:} Denklem sıcaklık için düzenlenir: T = {kesir:P · V|n · R}. {koyu:3. adım:} Pay: 2 · 8,2 = 16,4. Payda: 0,4 · 0,082 = 0,0328. T = {kesir:16,4|0,0328} = {koyu:500 K}. {koyu:4. adım:} Celsius'a geçiş: t = 500 − 273 = {koyu:227 °C}.",
+      "ipucu": "mmHg cinsinden basıncı 760'a bölerek atm'ye çeviriniz; bulduğunuz Kelvin değerinden 273 çıkarınız."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Sabit T ve n'de V ∝ {kesir:1|P}, sabit P ve n'de V ∝ T, sabit P ve T'de V ∝ n olduğu biliniyor. Bu üç ilişkiyi tek ifadede birleştiren orantı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "V ∝ {kesir:P · T|n}",
+        "V ∝ {kesir:n · P|T}",
+        "V ∝ {kesir:n|P · T}",
+        "V ∝ {kesir:n · T|P}"
+      ],
+      "dogru": 3,
+      "aciklama": "Hacim n ve T ile doğru orantılı olduğundan bu değişkenler paya, P ile ters orantılı olduğundan P paydaya yazılır: V ∝ n · T ÷ P. Orantı sabiti R eklenince P · V = n · R · T elde edilir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "27 °C'de 1 mol ideal gaz 24,6 L hacim kaplamaktadır. Gazın basıncı kaç atm'dir? (R = 0,082 L · atm/(mol · K))",
+      "secenekler": [
+        "0,5",
+        "1",
+        "2",
+        "4"
+      ],
+      "dogru": 1,
+      "aciklama": "T = 27 + 273 = 300 K. P = n · R · T ÷ V = 1 · 0,082 · 300 ÷ 24,6 = 24,6 ÷ 24,6 = 1 atm."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdakilerden hangisi ideal gaz denkleminin tümevarımsal akıl yürütme ile oluşturulmasına en uygun yaklaşımdır?",
+      "secenekler": [
+        "P · V = n · R · T denklemini ezberleyip her soruya doğrudan uygulamak",
+        "Tek bir deneyin sonucunu bütün maddeler için kesin kural kabul etmek",
+        "Farklı kontrollü deneylerden elde edilen P, V, n, T verilerinde sabit kalan oranı bulup genellemeye ulaşmak",
+        "Sıvıların ısınınca genleşmesinden gazlar için denklem çıkarmak"
+      ],
+      "dogru": 2,
+      "aciklama": "Tümevarım, birçok özel gözlem ve ölçümdeki ortak örüntüden genel kurala ulaşmaktır. Farklı deneylerde P · V ÷ (n · T) oranının hep aynı çıkması genellemeyi oluşturur ve destekler."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aynı sıcaklık ve basınçta bulunan aşağıdaki gazlardan hangisinin öz kütlesi en büyüktür? (H: 1, He: 4, C: 12, N: 14, O: 16 g/mol)",
+      "secenekler": [
+        "CO{alt:|2}",
+        "He",
+        "CH{alt:|4}",
+        "N{alt:|2}"
+      ],
+      "dogru": 0,
+      "aciklama": "P · M = d · R · T bağıntısına göre aynı P ve T'de öz kütle mol kütlesiyle doğru orantılıdır. Mol kütleleri: CO₂ = 44, N₂ = 28, CH₄ = 16, He = 4 g/mol. En büyük mol kütlesi CO₂'ye ait olduğu için öz kütlesi de en büyüktür."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Tümevarımsal akıl yürütmede özel gözlem ve ölçümlerden genel bir kurala ulaşılır.",
+          "dogru": true,
+          "aciklama": "İdeal gaz denklemi de farklı deneylerdeki ortak örüntüden oluşturulmuş bir genellemedir."
+        },
+        {
+          "metin": "Evrensel gaz sabiti R'nin değeri gazın cinsine göre değişir.",
+          "dogru": false,
+          "aciklama": "R gazın cinsinden bağımsızdır; bu yüzden evrensel olarak adlandırılır. Değeri yalnızca kullanılan birimlere göre farklı yazılır."
+        },
+        {
+          "metin": "R = 0,082 L · atm/(mol · K) kullanıldığında sıcaklık Kelvin cinsinden yazılmalıdır.",
+          "dogru": true,
+          "aciklama": "Denklemdeki T mutlak sıcaklıktır; T = t + 273 ile Kelvin'e çevrilir."
+        },
+        {
+          "metin": "Aynı basınç ve sıcaklıktaki gazların öz kütleleri mol kütleleriyle doğru orantılıdır.",
+          "dogru": true,
+          "aciklama": "d = P · M ÷ (R · T) bağıntısında P ve T sabitse d yalnızca M'ye bağlı kalır."
+        },
+        {
+          "metin": "İdeal gaz modelinde gaz tanecikleri arasındaki çekim kuvvetleri hesaba katılır.",
+          "dogru": false,
+          "aciklama": "İdeal gaz modelinde tanecikler arası çekim kuvvetleri ve tanecik öz hacimleri ihmal edilir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavram ve bağıntıları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Boyle Yasası",
+          "V ∝ 1/P (n ve T sabitken hacim basınçla ters orantılı)"
+        ],
+        [
+          "Charles Yasası",
+          "V ∝ T (n ve P sabitken hacim mutlak sıcaklıkla doğru orantılı)"
+        ],
+        [
+          "Avogadro Yasası",
+          "V ∝ n (P ve T sabitken hacim mol sayısıyla doğru orantılı)"
+        ],
+        [
+          "Evrensel gaz sabiti R",
+          "Yaklaşık 0,082 L · atm/(mol · K) değerindeki orantı sabiti"
+        ],
+        [
+          "P · M = d · R · T",
+          "Gazın öz kütlesini mol kütlesiyle ilişkilendiren türetilmiş bağıntı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Özel deney sonuçlarındaki ortak örüntüden genel bir kurala ulaşma yoluna ___ denir.",
+          "cevap": "tümevarım"
+        },
+        {
+          "metin": "Sabit basınç ve sıcaklıkta gazın hacminin mol sayısıyla doğru orantılı olduğunu ___ Yasası ifade eder.",
+          "cevap": "Avogadro"
+        },
+        {
+          "metin": "Normal koşul değerlerinden hesaplanan evrensel gaz sabitinin değeri yaklaşık ___ L · atm/(mol · K)'dir.",
+          "cevap": "0,082"
+        },
+        {
+          "metin": "İdeal gaz denkleminde sıcaklık mutlaka ___ cinsinden yazılır.",
+          "cevap": "Kelvin"
+        },
+        {
+          "metin": "P · M = d · R · T bağıntısındaki d harfi gazın ___ değerini gösterir.",
+          "cevap": "öz kütle"
+        }
+      ],
+      "kelimeler": [
+        "tümevarım",
+        "Avogadro",
+        "0,082",
+        "Kelvin",
+        "öz kütle"
+      ],
+      "fazla": [
+        "tümdengelim",
+        "Celsius"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir laboratuvarda kimliği bilinmeyen 12 g gaz, 8,2 L hacimli kapalı bir kaba konuyor. 127 °C'de gazın basıncı 1,2 atm ölçülüyor. a) Gazın mol sayısını, b) mol kütlesini, c) bu koşullardaki öz kütlesini iki farklı yoldan bulunuz, d) gazın normal koşullarda kaplayacağı hacmi hesaplayınız. (R = 0,082 L · atm/(mol · K))",
+      "ipuclari": [
+        "1. adım: Sıcaklığı Kelvin'e çevirip R · T çarpımını hesaplayınız; ardından n = (P · V) ÷ (R · T) ile mol sayısını bulunuz.",
+        "2. adım: Mol kütlesini M = m ÷ n bağıntısıyla hesaplayınız.",
+        "3. adım: Öz kütleyi önce d = m ÷ V, sonra d = (P · M) ÷ (R · T) ile bulup iki sonucu karşılaştırınız.",
+        "4. adım: Normal koşullarda 1 mol gazın 22,4 L kapladığını kullanarak hacmi bulunuz."
+      ],
+      "cevap": "a) T = 127 + 273 = 400 K; R · T = 0,082 · 400 = 32,8. n = {kesir:P · V|R · T} = {kesir:1,2 · 8,2|32,8} = {kesir:9,84|32,8} = {koyu:0,3 mol}. b) M = {kesir:m|n} = {kesir:12|0,3} = {koyu:40 g/mol} (argon gazı olabilir). c) 1. yol: d = {kesir:m|V} = {kesir:12|8,2} ≈ {koyu:1,46 g/L}. 2. yol: d = {kesir:P · M|R · T} = {kesir:1,2 · 40|32,8} = {kesir:48|32,8} ≈ {koyu:1,46 g/L}. İki yolun aynı sonucu vermesi türetilmiş bağıntının tutarlı olduğunu gösterir. d) Normal koşullarda V = n · 22,4 = 0,3 · 22,4 = {koyu:6,72 L}."
+    }
+  ]
+}

@@ -17,28 +17,28 @@
   "ozet": [
     "Konum-zaman (x-t), hız-zaman (v-t) ve ivme-zaman (a-t) grafikleri arasında geçiş yapılırken x -> v -> a yönünde 'EĞİM', a -> v -> x yönünde ise 'GRAFİK ALTI ALAN' kullanılır.",
     "Konum-zaman (x-t) grafiğinin eğimi anlık hızı verir; sabit ivmeli harekette x-t grafiği parabol eğrisi şeklindedir (eğim artıyorsa hızlanan, eğim azalıyorsa yavaşlayan hareket).",
-    "Hız-zaman (v-t) grafiğinin eğimi sabit ivmeyi (a = Delta_v / Delta_t), grafik ile zaman ekseni arasındaki cebirsel alan ise yer değiştirmeyi (Delta_x) verir.",
-    "İvme-zaman (a-t) grafiği ile zaman ekseni arasındaki cebirsel alan hız değişimini (Delta_v = a . t) verir; ilk hız bilinmeden yalnızca a-t grafiğinden son hız bulunamaz.",
-    "Sabit ivmeli hareketin üç temel matematiksel modeli: 1) v = v0 + a . t, 2) Delta_x = v0 . t + (1/2) . a . t², 3) v² = v0² + 2 . a . Delta_x.",
+    "Hız-zaman (v-t) grafiğinin eğimi sabit ivmeyi (a = Δv / Δt), grafik ile zaman ekseni arasındaki cebirsel alan ise yer değiştirmeyi (Δx) verir.",
+    "İvme-zaman (a-t) grafiği ile zaman ekseni arasındaki cebirsel alan hız değişimini (Δv = a . t) verir; ilk hız bilinmeden yalnızca a-t grafiğinden son hız bulunamaz.",
+    "Sabit ivmeli hareketin üç temel matematiksel modeli: 1) v = v0 + a . t, 2) Δx = v0 . t + (1/2) . a . t², 3) v² = v0² + 2 . a . Δx.",
     "Bir hareketlinin hız vektörü (v) ile ivme vektörü (a) aynı işaretliyse cisim hızlanır, zıt işaretliyse cisim yavaşlar."
   ],
   "bolumler": [
     {
       "baslik": "Hareket Grafikleri Arasındaki Dönüşüm Köprüsü: Eğim ve Alan",
       "metin": [
-        "Bir boyutta sabit ivmeli hareketi tanımlayan üç temel büyüklük olan {koyu:konum (x)}, {koyu:hız (v)} ve {koyu:ivme (a)} zamana bağlı grafiklerle ifade edildiğinde, bu üç grafik birbirinden bağımsız değildir; aralarında çift yönlü kusursuz bir matematiksel köprü vardır. Grafik sıralamasını soldan sağa doğru {koyu:x-t -> v-t -> a-t} şeklinde yazdığımızda, sağa doğru her adımda grafiğin {koyu:eğimi} alınır. Yani konum-zaman grafiğinin eğimi hızı, hız-zaman grafiğinin eğimi ise ivmeyi verir.\n\nTers yönde, yani sağdan sola doğru {koyu:a-t -> v-t -> x-t} geçişi yapılırken ise grafik ile yatay zaman ekseni (t) arasında kalan {koyu:cebirsel alan} hesaplanır. İvme-zaman grafiğinin altındaki alan {koyu:hız değişimini (Delta_v)}, hız-zaman grafiğinin altındaki alan ise {koyu:yer değiştirmeyi (Delta_x)} verir. Zaman ekseninin üstündeki alanlar pozitif (+), altındaki alanlar ise negatif (-) işaretli alınır."
+        "Bir boyutta sabit ivmeli hareketi tanımlayan üç temel büyüklük olan {koyu:konum (x)}, {koyu:hız (v)} ve {koyu:ivme (a)} zamana bağlı grafiklerle ifade edildiğinde, bu üç grafik birbirinden bağımsız değildir; aralarında çift yönlü kusursuz bir matematiksel köprü vardır. Grafik sıralamasını soldan sağa doğru {koyu:x-t -> v-t -> a-t} şeklinde yazdığımızda, sağa doğru her adımda grafiğin {koyu:eğimi} alınır. Yani konum-zaman grafiğinin eğimi hızı, hız-zaman grafiğinin eğimi ise ivmeyi verir.\n\nTers yönde, yani sağdan sola doğru {koyu:a-t -> v-t -> x-t} geçişi yapılırken ise grafik ile yatay zaman ekseni (t) arasında kalan {koyu:cebirsel alan} hesaplanır. İvme-zaman grafiğinin altındaki alan {koyu:hız değişimini (Δv)}, hız-zaman grafiğinin altındaki alan ise {koyu:yer değiştirmeyi (Δx)} verir. Zaman ekseninin üstündeki alanlar pozitif (+), altındaki alanlar ise negatif (-) işaretli alınır."
       ],
       "kutu": {
         "tur": "kural",
         "baslik": "Başlangıç Değerlerine Dikkat!",
-        "metin": "Alan hesapları bize son hızı (v) veya son konumu (x) doğrudan vermez; yalnızca değişimi (Delta_v ve Delta_x) verir! Son hızı bulmak için v = v0 + Delta_v, son konumu bulmak için ise x = x0 + Delta_x bağıntısında başlangıç değerlerini (v0, x0) mutlaka eklemeliyiz."
+        "metin": "Alan hesapları bize son hızı (v) veya son konumu (x) doğrudan vermez; yalnızca değişimi (Δv ve Δx) verir! Son hızı bulmak için v = v0 + Δv, son konumu bulmak için ise x = x0 + Δx bağıntısında başlangıç değerlerini (v0, x0) mutlaka eklemeliyiz."
       },
       "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 245\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"245\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#1a5276\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Sabit İvmeli Harekette Grafik Dönüşümleri: Eğim ve Alan Kuralları (FİZ.10.1.3)</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#1a5276\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#1a5276\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Eğim (Türev / Değişim Oranı) İlişkisi</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Konum-Zaman (x-t) grafiğinin EĞİMİ</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  -> Anlık Hızı (v) verir.</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Hız-Zaman (v-t) grafiğinin EĞİMİ</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  -> İvmeyi (a = Δv / Δt) verir.</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Merdiven Kuralı: x -> v -> a yönünde</text><text x=\"30\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">  giderken grafiğin EĞİMİ alınır!</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"175\" rx=\"10\" fill=\"#e8f8f5\" stroke=\"#117864\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#117864\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Alan (Birikim) İlişkisi</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• İvme-Zaman (a-t) grafiğinin zaman ekseniyle</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  arasındaki ALAN -> Hız Değişimini (Δv) verir.</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Hız-Zaman (v-t) grafiğinin zaman ekseniyle</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  arasındaki ALAN -> Yer Değiştirmeyi (Δx) verir.</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">• Merdiven Kuralı: a -> v -> x yönünde</text><text x=\"360\" y=\"202\" font-size=\"11.2\" fill=\"#1c2833\">  giderken grafiğin ALANI alınır!</text></svg>"
     },
     {
       "baslik": "Hız-Zaman (v-t) Grafiğinden İvme-Zaman (a-t) ve Konum-Zaman (x-t) Grafiğine Geçiş",
       "metin": [
-        "Hareket problemlerinin çözümünde en merkezi grafik {koyu:hız-zaman (v-t) grafiğidir}; çünkü hem eğimiyle ivmeyi hem de alanıyla yer değiştirmeyi aynı anda sunar. Sabit ivmeli harekette hız birim zamanda düzgün değiştiği için v-t grafiği {koyu:eğimli bir doğru} parçasıdır. Bu doğrunun eğimi tan(alfa) = (v - v0) / t = {koyu:a (ivme)} değerini verir. Eğim sabitse a-t grafiği zaman eksenine paralel yatay bir doğru olur; doğru yukarı yönlüyse ivme pozitif (+a), aşağı yönlüyse ivme negatif (-a) değer alır.\n\nv-t grafiğinin zaman ekseniyle sınırladığı bölgenin alanı hesaplanırken; zaman ekseninin üstündeki alan {koyu:pozitif yönde yer değiştirmeyi (+Delta_x)}, altındaki alan ise {koyu:negatif yönde yer değiştirmeyi (-Delta_x)} gösterir. Bir hareketlinin yön değiştirdiği an, hızın işaret değiştirdiği yani {koyu:v-t grafiğinin zaman eksenini (v = 0) delip geçtiği} andır."
+        "Hareket problemlerinin çözümünde en merkezi grafik {koyu:hız-zaman (v-t) grafiğidir}; çünkü hem eğimiyle ivmeyi hem de alanıyla yer değiştirmeyi aynı anda sunar. Sabit ivmeli harekette hız birim zamanda düzgün değiştiği için v-t grafiği {koyu:eğimli bir doğru} parçasıdır. Bu doğrunun eğimi tan(alfa) = (v - v0) / t = {koyu:a (ivme)} değerini verir. Eğim sabitse a-t grafiği zaman eksenine paralel yatay bir doğru olur; doğru yukarı yönlüyse ivme pozitif (+a), aşağı yönlüyse ivme negatif (-a) değer alır.\n\nv-t grafiğinin zaman ekseniyle sınırladığı bölgenin alanı hesaplanırken; zaman ekseninin üstündeki alan {koyu:pozitif yönde yer değiştirmeyi (+Δx)}, altındaki alan ise {koyu:negatif yönde yer değiştirmeyi (-Δx)} gösterir. Bir hareketlinin yön değiştirdiği an, hızın işaret değiştirdiği yani {koyu:v-t grafiğinin zaman eksenini (v = 0) delip geçtiği} andır."
       ],
       "kutu": {
         "tur": "dikkat",
@@ -62,23 +62,23 @@
     {
       "baslik": "Grafik Alanından Matematiksel Modellere: Hız ve Konum Denklemlerinin Türetilmesi",
       "metin": [
-        "Sabit ivmeli hareketin matematiksel formülleri ezberlenmesi gereken bağımsız kurallar değil, doğrudan v-t ve a-t grafiklerinin geometrisinden çıkan sonuçlardır. İlk hızı {koyu:v0} olan ve sabit {koyu:a} ivmesiyle t süre hızlanan bir cismin a-t grafiğinin altındaki dikdörtgen alanı Delta_v = a . t hız değişimini verir. Buradan {koyu:v - v0 = a . t} ve birinci temel denklemimiz olan {koyu:v = v0 + a . t} (Zamana Bağlı Hız Denklemi) elde edilir.\n\nAynı hareketin v-t grafiğinin altındaki yamuk alanı ise toplam yer değiştirmeyi (Delta_x) verir. Bu yamuk alanı, altta yüksekliği v0 ve tabanı t olan bir {koyu:dikdörtgen (Alan_1 = v0 . t)} ile üstte tabanı t ve yüksekliği (v - v0) = a . t olan bir {koyu:dik üçgene (Alan_2 = (1/2) . t . (a . t) = (1/2) . a . t²)} ayrılır. İki alan toplandığında ikinci temel denklemimiz olan {koyu:Delta_x = v0 . t + (1/2) . a . t²} (Zamana Bağlı Yer Değiştirme Denklemi) doğrudan kanıtlanmış olur."
+        "Sabit ivmeli hareketin matematiksel formülleri ezberlenmesi gereken bağımsız kurallar değil, doğrudan v-t ve a-t grafiklerinin geometrisinden çıkan sonuçlardır. İlk hızı {koyu:v0} olan ve sabit {koyu:a} ivmesiyle t süre hızlanan bir cismin a-t grafiğinin altındaki dikdörtgen alanı Δv = a . t hız değişimini verir. Buradan {koyu:v - v0 = a . t} ve birinci temel denklemimiz olan {koyu:v = v0 + a . t} (Zamana Bağlı Hız Denklemi) elde edilir.\n\nAynı hareketin v-t grafiğinin altındaki yamuk alanı ise toplam yer değiştirmeyi (Δx) verir. Bu yamuk alanı, altta yüksekliği v0 ve tabanı t olan bir {koyu:dikdörtgen (Alan{alt:1} = v0 . t)} ile üstte tabanı t ve yüksekliği (v - v0) = a . t olan bir {koyu:dik üçgene (Alan{alt:2} = (1/2) . t . (a . t) = (1/2) . a . t²)} ayrılır. İki alan toplandığında ikinci temel denklemimiz olan {koyu:Δx = v0 . t + (1/2) . a . t²} (Zamana Bağlı Yer Değiştirme Denklemi) doğrudan kanıtlanmış olur."
       ],
       "kutu": {
         "tur": "kural",
         "baslik": "Ortalama Hız ile Yer Değiştirme Pratiği",
-        "metin": "Sabit ivmeli harekette hız düzgün değiştiği için ortalama hız, ilk hız ile son hızın aritmetik ortalamasına eşittir: v_ort = (v0 + v) / 2. Buradan yamuk alanı formülü olan Delta_x = ((v0 + v) / 2) . t bağıntısı çok hızlı çözüm sağlar."
+        "metin": "Sabit ivmeli harekette hız düzgün değiştiği için ortalama hız, ilk hız ile son hızın aritmetik ortalamasına eşittir: v{alt:ort} = (v0 + v) / 2. Buradan yamuk alanı formülü olan Δx = ((v0 + v) / 2) . t bağıntısı çok hızlı çözüm sağlar."
       }
     },
     {
       "baslik": "Zamansız Hız Denklemi ve Ardışık Zaman Aralıklarında x, 3x, 5x Özelliği",
       "metin": [
-        "Bazı fizik problemlerinde hareketin süresi (t) verilmez ve sorulmaz; yalnızca ilk hız (v0), son hız (v), ivme (a) ve yer değiştirme (Delta_x) arasındaki ilişki incelenir. Birinci denklemimizden çekilen t = (v - v0) / a ifadesini ortalama hız yer değiştirme bağıntısı olan Delta_x = ((v + v0) / 2) . t içinde yerine koyduğumuzda iki kare farkı özdeşliğinden üçüncü temel modelimiz olan {koyu:v² = v0² + 2 . a . Delta_x} ({koyu:Zamansız Hız Denklemi}) elde edilir. Yavaşlayan harekette ivme hızla zıt yönlü olduğundan formüldeki işaret eksi (-2 . a . Delta_x) olarak uygulanır.\n\nİlk hızsız (v0 = 0) sabit ivmeyle harekete başlayan bir cismin hızı her t sürede v, 2v, 3v, 4v şeklinde artar. v-t grafiğinde her t zaman aralığındaki üçgen ve yamuk alanları hesaplandığında, ardışık eşit zaman dilimlerinde yapılan yer değiştirmelerin {koyu:x, 3x, 5x, 7x, ...} şeklinde tek sayıların katları olarak arttığı görülür (burada ilk t sürede alınan yol x = (1/2) . a . t² değeridir)."
+        "Bazı fizik problemlerinde hareketin süresi (t) verilmez ve sorulmaz; yalnızca ilk hız (v0), son hız (v), ivme (a) ve yer değiştirme (Δx) arasındaki ilişki incelenir. Birinci denklemimizden çekilen t = (v - v0) / a ifadesini ortalama hız yer değiştirme bağıntısı olan Δx = ((v + v0) / 2) . t içinde yerine koyduğumuzda iki kare farkı özdeşliğinden üçüncü temel modelimiz olan {koyu:v² = v0² + 2 . a . Δx} ({koyu:Zamansız Hız Denklemi}) elde edilir. Yavaşlayan harekette ivme hızla zıt yönlü olduğundan formüldeki işaret eksi (-2 . a . Δx) olarak uygulanır.\n\nİlk hızsız (v0 = 0) sabit ivmeyle harekete başlayan bir cismin hızı her t sürede v, 2v, 3v, 4v şeklinde artar. v-t grafiğinde her t zaman aralığındaki üçgen ve yamuk alanları hesaplandığında, ardışık eşit zaman dilimlerinde yapılan yer değiştirmelerin {koyu:x, 3x, 5x, 7x, ...} şeklinde tek sayıların katları olarak arttığı görülür (burada ilk t sürede alınan yol x = (1/2) . a . t² değeridir)."
       ],
       "kutu": {
         "tur": "hatirla",
         "baslik": "Frenleme Mesafesi ve Hızın Karesi İlişkisi",
-        "metin": "Duran bir noktaya kadar sabit ivmeyle fren yapan (v = 0) bir aracın durma mesafesi v0² = 2 . a . Delta_x bağıntısına göre ilk hızın KARESİ ile doğru orantılıdır. Yani hızı 2 katına çıkan bir aracın fren mesafesi 2 katına değil, 4 katına çıkar!"
+        "metin": "Duran bir noktaya kadar sabit ivmeyle fren yapan (v = 0) bir aracın durma mesafesi v0² = 2 . a . Δx bağıntısına göre ilk hızın KARESİ ile doğru orantılıdır. Yani hızı 2 katına çıkan bir aracın fren mesafesi 2 katına değil, 4 katına çıkar!"
       },
       "gorsel": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 235\" width=\"100%\" style=\"max-width:680px;height:auto;display:block;margin:10px auto;font-family:'Segoe UI',system-ui,sans-serif;\"><rect width=\"680\" height=\"235\" rx=\"12\" fill=\"#fbfcfc\" stroke=\"#d5d8dc\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"12\" width=\"652\" height=\"32\" rx=\"8\" fill=\"#6c3483\"/><text x=\"340\" y=\"33\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Grafik Okurken Yön Değiştirme Anlarının Tespiti ve Tek Zaman Dilimi</text><rect x=\"18\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#f5eef8\" stroke=\"#6c3483\" stroke-width=\"1.6\"/><rect x=\"18\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#6c3483\"/><text x=\"175\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Cisim Ne Zaman Yön Değiştirir?</text><text x=\"30\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• Konum-Zaman (x-t) grafiğinde: Grafiğin TEPE</text><text x=\"30\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  veya ÇUKUR (dönüm) noktalarında yön değiştirir!</text><text x=\"30\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">• Hız-Zaman (v-t) grafiğinde: Grafiğin ZAMAN</text><text x=\"30\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">  EKSENİNİ KESTİĞİ (+ bölgesinden - bölgesine</text><text x=\"30\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  veya -'den +'ya geçtiği) anda yön değiştirir!</text><rect x=\"348\" y=\"54\" width=\"314\" height=\"165\" rx=\"10\" fill=\"#eaf2f8\" stroke=\"#2874a6\" stroke-width=\"1.6\"/><rect x=\"348\" y=\"54\" width=\"314\" height=\"28\" rx=\"10\" fill=\"#2874a6\"/><text x=\"505\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">Ardışık Eşit Zamanlarda Yol Oranı (x - 3x - 5x)</text><text x=\"360\" y=\"102\" font-size=\"11.2\" fill=\"#1c2833\">• İlk hızsız (v0 = 0) sabit ivmeyle hızlanan cisim</text><text x=\"360\" y=\"122\" font-size=\"11.2\" fill=\"#1c2833\">  her t süresinde sırasıyla:</text><text x=\"360\" y=\"142\" font-size=\"11.2\" fill=\"#1c2833\">  x, 3x, 5x, 7x, 9x ... kadar yer değiştirir.</text><text x=\"360\" y=\"162\" font-size=\"11.2\" fill=\"#1c2833\">• Toplam konumları ise t² ile orantılı olarak</text><text x=\"360\" y=\"182\" font-size=\"11.2\" fill=\"#1c2833\">  x, 4x, 9x, 16x, 25x ... şeklinde artar.</text></svg>"
     },
@@ -96,28 +96,28 @@
   ],
   "ornekler": [
     {
-      "soru": "Doğrusal bir yolda ilk hızı 6 m/s olan bir araç, 4 m/s² sabit ivme ile 5 saniye boyunca hızlanıyor. Aracın 5. saniye sonundaki hızını (v) ve bu sürede yaptığı yer değiştirmeyi (Delta_x) bulunuz.",
-      "cevap": "Verilenler: v0 = 6 m/s, a = 4 m/s², t = 5 s.\n1) Zamana bağlı hız denkleminden son hız:\nv = v0 + a . t = 6 + 4 . 5 = 6 + 20 = 26 m/s.\n2) Zamana bağlı yer değiştirme denkleminden (veya v-t grafiği yamuk alanından):\nDelta_x = v0 . t + (1/2) . a . t² = 6 . 5 + (1/2) . 4 . (5)² = 30 + 2 . 25 = 80 m.\n(Alternatif: Delta_x = ((v0 + v) / 2) . t = ((6 + 26) / 2) . 5 = 16 . 5 = 80 m.)"
+      "soru": "Doğrusal bir yolda ilk hızı 6 m/s olan bir araç, 4 m/s² sabit ivme ile 5 saniye boyunca hızlanıyor. Aracın 5. saniye sonundaki hızını (v) ve bu sürede yaptığı yer değiştirmeyi (Δx) bulunuz.",
+      "cevap": "Verilenler: v0 = 6 m/s, a = 4 m/s², t = 5 s.\n1) Zamana bağlı hız denkleminden son hız:\nv = v0 + a . t = 6 + 4 . 5 = 6 + 20 = 26 m/s.\n2) Zamana bağlı yer değiştirme denkleminden (veya v-t grafiği yamuk alanından):\nΔx = v0 . t + (1/2) . a . t² = 6 . 5 + (1/2) . 4 . (5)² = 30 + 2 . 25 = 80 m.\n(Alternatif: Δx = ((v0 + v) / 2) . t = ((6 + 26) / 2) . 5 = 16 . 5 = 80 m.)"
     },
     {
       "soru": "Doğrusal bir yolda 30 m/s sabit hızla ilerleyen bir sürücü, kırmızı ışığı görerek frene basıyor ve 5 m/s² büyüklüğünde sabit ivmeyle yavaşlayarak duruyor. Aracın durana kadar geçen süresini ve fren mesafesini hesaplayınız.",
-      "cevap": "Verilenler: v0 = 30 m/s, v_son = 0, yavaşlama ivmesi a = -5 m/s².\n1) Durma süresi: v = v0 + a . t => 0 = 30 - 5 . t => t = 6 s.\n2) Fren mesafesi (Zamansız hız denkleminden veya ortalama hızdan):\nv² = v0² - 2 . a . Delta_x => 0 = (30)² - 2 . 5 . Delta_x => 900 = 10 . Delta_x => Delta_x = 90 m bulunur."
+      "cevap": "Verilenler: v0 = 30 m/s, v{alt:son} = 0, yavaşlama ivmesi a = -5 m/s².\n1) Durma süresi: v = v0 + a . t => 0 = 30 - 5 . t => t = 6 s.\n2) Fren mesafesi (Zamansız hız denkleminden veya ortalama hızdan):\nv² = v0² - 2 . a . Δx => 0 = (30)² - 2 . 5 . Δx => 900 = 10 . Δx => Δx = 90 m bulunur."
     },
     {
       "soru": "t = 0 anında x0 = -15 m konumunda bulunan ve ilk hızı v0 = 4 m/s olan bir hareketlinin ivme-zaman (a-t) grafiği, 0-4 s aralığında sabit a = +3 m/s² değerini göstermektedir. Hareketlinin t = 4 s anındaki hızı ve konumu nedir?",
-      "cevap": "a-t grafiğinin altındaki alan hız değişimini verir:\nDelta_v = a . t = 3 . 4 = +12 m/s.\nSon hız: v = v0 + Delta_v = 4 + 12 = 16 m/s.\n0-4 s aralığında yer değiştirme: Delta_x = ((v0 + v) / 2) . t = ((4 + 16) / 2) . 4 = 10 . 4 = +40 m.\nSon konum: x = x0 + Delta_x = -15 + 40 = +25 m konumudur."
+      "cevap": "a-t grafiğinin altındaki alan hız değişimini verir:\nΔv = a . t = 3 . 4 = +12 m/s.\nSon hız: v = v0 + Δv = 4 + 12 = 16 m/s.\n0-4 s aralığında yer değiştirme: Δx = ((v0 + v) / 2) . t = ((4 + 16) / 2) . 4 = 10 . 4 = +40 m.\nSon konum: x = x0 + Δx = -15 + 40 = +25 m konumudur."
     },
     {
       "soru": "Duruştan (v0 = 0) sabit ivmeyle harekete geçen bir cisim ilk 2 saniyede 12 metre yol alıyor. Cismin ivmesi kaç m/s²'dir ve 2. saniye ile 4. saniye arasında kaç metre yol alır?",
-      "cevap": "İlk hızsız harekette Delta_x = (1/2) . a . t² bağıntısı kullanılır:\n12 = (1/2) . a . (2)² => 12 = 2 . a => a = 6 m/s² bulunur.\nArdışık eşit zaman aralıklarında (her 2 saniyede) alınan yollar x ve 3x oranındadır. İlk 2 saniyede alınan yol x = 12 m olduğuna göre, 2. ile 4. saniye arasındaki ikinci 2 saniyelik dilimde alınan yol 3x = 3 . 12 = 36 m olur."
+      "cevap": "İlk hızsız harekette Δx = (1/2) . a . t² bağıntısı kullanılır:\n12 = (1/2) . a . (2)² => 12 = 2 . a => a = 6 m/s² bulunur.\nArdışık eşit zaman aralıklarında (her 2 saniyede) alınan yollar x ve 3x oranındadır. İlk 2 saniyede alınan yol x = 12 m olduğuna göre, 2. ile 4. saniye arasındaki ikinci 2 saniyelik dilimde alınan yol 3x = 3 . 12 = 36 m olur."
     },
     {
       "soru": "Bir hareketlinin hız-zaman (v-t) grafiğinde hızı t = 0 anında -12 m/s iken düzgün değişerek t = 3 s anında 0 olmakta, aynı eğimle devam ederek t = 5 s anında +8 m/s değerine ulaşmaktadır. Bu hareketlinin 0-5 s aralığındaki ivmesini, yön değiştirdiği anı ve toplam yer değiştirmesini bulunuz.",
-      "cevap": "1) İvme (v-t grafiğinin eğimi): a = (0 - (-12)) / 3 = +4 m/s² (0-5 s boyunca sabittir).\n2) Yön değiştirme anı: Hızın negatiften pozitife geçtiği t = 3 s anıdır.\n3) Yer değiştirme (Cebirsel alan):\n0-3 s aralığında zaman ekseninin altındaki üçgen alanı: Delta_x1 = (-12 . 3) / 2 = -18 m.\n3-5 s aralığında (2 s süre) zaman ekseninin üstündeki üçgen alanı: Delta_x2 = (+8 . 2) / 2 = +8 m.\nToplam yer değiştirme: Delta_x = -18 + 8 = -10 m (başlangıca göre negatif yönde 10 m)."
+      "cevap": "1) İvme (v-t grafiğinin eğimi): a = (0 - (-12)) / 3 = +4 m/s² (0-5 s boyunca sabittir).\n2) Yön değiştirme anı: Hızın negatiften pozitife geçtiği t = 3 s anıdır.\n3) Yer değiştirme (Cebirsel alan):\n0-3 s aralığında zaman ekseninin altındaki üçgen alanı: Δx1 = (-12 . 3) / 2 = -18 m.\n3-5 s aralığında (2 s süre) zaman ekseninin üstündeki üçgen alanı: Δx2 = (+8 . 2) / 2 = +8 m.\nToplam yer değiştirme: Δx = -18 + 8 = -10 m (başlangıca göre negatif yönde 10 m)."
     },
     {
       "soru": "‘Hareket Grafikleri Arasındaki Dönüşüm Köprüsü: Eğim ve Alan’ bölümünde ele alınan temel ilke ve kavramları açıklayınız.",
-      "cevap": "Bir boyutta sabit ivmeli hareketi tanımlayan üç temel büyüklük olan {koyu:konum (x)}, {koyu:hız (v)} ve {koyu:ivme (a)} zamana bağlı grafiklerle ifade edildiğinde, bu üç grafik birbirinden bağımsız değildir; aralarında çift yönlü kusursuz bir matematiksel köprü vardır. Grafik sıralamasını soldan sağa doğru {koyu:x-t -> v-t -> a-t} şeklinde yazdığımızda, sağa doğru her adımda grafiğin {koyu:eğimi} alınır. Yani konum-zaman grafiğinin eğimi hızı, hız-zaman grafiğinin eğimi ise ivmeyi verir.\n\nTers yönde, yani sağdan sola doğru {koyu:a-t -> v-t -> x-t} geçişi yapılırken ise grafik ile yatay zaman ekseni (t) arasında kalan {koyu:cebirsel alan} hesaplanır. İvme-zaman grafiğinin altındaki alan {koyu:hız değişimini (Delta_v)}, hız-zaman grafiğinin altındaki alan ise {koyu:yer değiştirmeyi (Delta_x)} verir. Zaman ekseninin üstündeki alanlar pozitif (+), altındaki alanlar ise negatif (-) işaretli alınır."
+      "cevap": "Bir boyutta sabit ivmeli hareketi tanımlayan üç temel büyüklük olan {koyu:konum (x)}, {koyu:hız (v)} ve {koyu:ivme (a)} zamana bağlı grafiklerle ifade edildiğinde, bu üç grafik birbirinden bağımsız değildir; aralarında çift yönlü kusursuz bir matematiksel köprü vardır. Grafik sıralamasını soldan sağa doğru {koyu:x-t -> v-t -> a-t} şeklinde yazdığımızda, sağa doğru her adımda grafiğin {koyu:eğimi} alınır. Yani konum-zaman grafiğinin eğimi hızı, hız-zaman grafiğinin eğimi ise ivmeyi verir.\n\nTers yönde, yani sağdan sola doğru {koyu:a-t -> v-t -> x-t} geçişi yapılırken ise grafik ile yatay zaman ekseni (t) arasında kalan {koyu:cebirsel alan} hesaplanır. İvme-zaman grafiğinin altındaki alan {koyu:hız değişimini (Δv)}, hız-zaman grafiğinin altındaki alan ise {koyu:yer değiştirmeyi (Δx)} verir. Zaman ekseninin üstündeki alanlar pozitif (+), altındaki alanlar ise negatif (-) işaretli alınır."
     }
   ],
   "etkinlikler": [
@@ -132,7 +132,7 @@
         "Ortalama hız — Hız değişimi"
       ],
       "dogru": 0,
-      "aciklama": "Hız-zaman (v-t) grafiğinin eğimi (Delta_v / Delta_t) ivmeyi, grafik ile zaman ekseni arasındaki cebirsel alan (v . Delta_t) ise yer değiştirmeyi (Delta_x) verir."
+      "aciklama": "Hız-zaman (v-t) grafiğinin eğimi (Δv / Δt) ivmeyi, grafik ile zaman ekseni arasındaki cebirsel alan (v . Δt) ise yer değiştirmeyi (Δx) verir."
     },
     {
       "tur": "coktan",
@@ -153,12 +153,12 @@
       "secenekler": [
         "Bir boyutta sabit ivmeli hareketi tanımlayan üç temel büyüklük olan konum (x), hız (v) ve ivme (a) zamana bağlı grafiklerle.",
         "Hareket problemlerinin çözümünde en merkezi grafik hız-zaman (v-t) grafiğidir; çünkü hem eğimiyle ivmeyi hem de alanıyla yer.",
-        "Sabit ivmeli harekette hız düzgün değiştiği için ortalama hız, ilk hız ile son hızın aritmetik ortalamasına eşittir: v_ort =.",
+        "Sabit ivmeli harekette hız düzgün değiştiği için ortalama hız, ilk hız ile son hızın aritmetik ortalamasına eşittir: v{alt:ort} =.",
         "Bazı fizik problemlerinde hareketin süresi (t) verilmez ve sorulmaz; münhasıran ilk hız (v0), son hız (v), ivme (a) ve yer.",
-        "Alan hesapları bize son hızı (v) veya son konumu (x) doğrudan vermez; münhasıran değişimi (Delta_v ve Delta_x) verir! Son."
+        "Alan hesapları bize son hızı (v) veya son konumu (x) doğrudan vermez; münhasıran değişimi (Δv ve Δx) verir! Son."
       ],
       "dogru": 2,
-      "aciklama": "‘Ortalama Hız ile Yer Değiştirme Pratiği’ kapsamında doğru açıklama: Sabit ivmeli harekette hız düzgün değiştiği için ortalama hız, ilk hız ile son hızın aritmetik ortalamasına eşittir: v_ort =."
+      "aciklama": "‘Ortalama Hız ile Yer Değiştirme Pratiği’ kapsamında doğru açıklama: Sabit ivmeli harekette hız düzgün değiştiği için ortalama hız, ilk hız ile son hızın aritmetik ortalamasına eşittir: v{alt:ort} =."
     },
     {
       "tur": "coktan",
@@ -166,9 +166,9 @@
       "secenekler": [
         "Bazı fizik problemlerinde hareketin süresi (t) verilmez ve sorulmaz; münhasıran ilk hız (v0), son hız (v), ivme (a) ve yer.",
         "Hareket problemlerinin çözümünde en merkezi grafik hız-zaman (v-t) grafiğidir; çünkü hem eğimiyle ivmeyi hem de alanıyla yer.",
-        "Sabit ivmeli harekette hız düzgün değiştiği için ortalama hız, ilk hız ile son hızın aritmetik ortalamasına eşittir: v_ort =.",
+        "Sabit ivmeli harekette hız düzgün değiştiği için ortalama hız, ilk hız ile son hızın aritmetik ortalamasına eşittir: v{alt:ort} =.",
         "Bir boyutta sabit ivmeli hareketi tanımlayan üç temel büyüklük olan konum (x), hız (v) ve ivme (a) zamana bağlı grafiklerle.",
-        "Alan hesapları bize son hızı (v) veya son konumu (x) doğrudan vermez; münhasıran değişimi (Delta_v ve Delta_x) verir! Son."
+        "Alan hesapları bize son hızı (v) veya son konumu (x) doğrudan vermez; münhasıran değişimi (Δv ve Δx) verir! Son."
       ],
       "dogru": 3,
       "aciklama": "‘Hareket Grafikleri Arasındaki Dönüşüm Köprüsü: Eğim ve Alan’ kapsamında doğru açıklama: Bir boyutta sabit ivmeli hareketi tanımlayan üç temel büyüklük olan konum (x), hız (v) ve ivme (a) zamana bağlı grafiklerle."
@@ -180,7 +180,7 @@
         {
           "metin": "İvme-zaman (a-t) grafiği bilinen bir hareketlinin ilk hızı bilinmese bile herhangi bir t anındaki son hızı net olarak hesaplanabilir.",
           "dogru": false,
-          "aciklama": "a-t grafiğinin altındaki alan yalnızca hız değişimini (Delta_v) verir. Son hızı (v = v0 + Delta_v) bulabilmek için ilk hızın (v0) mutlaka bilinmesi gerekir."
+          "aciklama": "a-t grafiğinin altındaki alan yalnızca hız değişimini (Δv) verir. Son hızı (v = v0 + Δv) bulabilmek için ilk hızın (v0) mutlaka bilinmesi gerekir."
         },
         {
           "metin": "Negatif yönde (-x yönünde) hareket eden bir aracın hızlanması için ivmesinin işareti de negatif (-a) olmalıdır.",
@@ -199,14 +199,14 @@
         ],
         [
           "İvme-zaman (a-t) grafiğinin zaman ekseniyle sınırladığı alan",
-          "Hız değişimi (Delta_v = a . t)"
+          "Hız değişimi (Δv = a . t)"
         ],
         [
           "v = v0 + a . t",
           "Zamana bağlı hız denklemi"
         ],
         [
-          "v² = v0² + 2 . a . Delta_x",
+          "v² = v0² + 2 . a . Δx",
           "Zamansız hız denklemi"
         ]
       ]
@@ -232,7 +232,7 @@
     {
       "tur": "ogretici",
       "soru": "Doğrusal bir rayda duruştan (v0 = 0) harekete geçen bir tramvay; ilk 10 saniye boyunca +2 m/s² sabit ivmeyle hızlanıyor, sonraki 20 saniye boyunca ulaştığı sabit hızla ilerliyor ve son 5 saniyede sabit ivmeyle yavaşlayarak diğer istasyonda duruyor. Bu hareketin hız-zaman (v-t) ve ivme-zaman (a-t) grafiklerinin nasıl olacağını betimleyiniz ve iki istasyon arasındaki toplam mesafeyi hesaplayınız.",
-      "cevap": "1) 0-10 s (Hızlanma): v = 0 + 2 . 10 = 20 m/s hıza ulaşır. v-t grafiği 0'dan 20'ye çıkan doğru, a-t grafiği +2 m/s² yatay doğrusudur. Alınan yol: x1 = (20 . 10) / 2 = 100 m.\n2) 10-30 s (Sabit hız, 20 s süre): v-t grafiği 20 m/s'de yatay doğru, ivme a = 0'dır. Alınan yol: x2 = 20 . 20 = 400 m.\n3) 30-35 s (Yavaşlama, 5 s süre): Hız 20 m/s'den 0'a iner. Yavaşlama ivmesi a = (0 - 20) / 5 = -4 m/s² olur. Alınan yol: x3 = (20 . 5) / 2 = 50 m.\nİki istasyon arasındaki toplam mesafe: Delta_x = 100 + 400 + 50 = 550 metredir.",
+      "cevap": "1) 0-10 s (Hızlanma): v = 0 + 2 . 10 = 20 m/s hıza ulaşır. v-t grafiği 0'dan 20'ye çıkan doğru, a-t grafiği +2 m/s² yatay doğrusudur. Alınan yol: x1 = (20 . 10) / 2 = 100 m.\n2) 10-30 s (Sabit hız, 20 s süre): v-t grafiği 20 m/s'de yatay doğru, ivme a = 0'dır. Alınan yol: x2 = 20 . 20 = 400 m.\n3) 30-35 s (Yavaşlama, 5 s süre): Hız 20 m/s'den 0'a iner. Yavaşlama ivmesi a = (0 - 20) / 5 = -4 m/s² olur. Alınan yol: x3 = (20 . 5) / 2 = 50 m.\nİki istasyon arasındaki toplam mesafe: Δx = 100 + 400 + 50 = 550 metredir.",
       "ipuclari": [
         "Konunun temel kavramlarını ve tanımlarını hatırlayınız.",
         "Sebep-sonuç ilişkisini kurarak değerlendiriniz."

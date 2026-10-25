@@ -1,0 +1,567 @@
+{
+  "ad": "12-matematik-15",
+  "sinif": 12,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "GEOMETRİ: TRİGONOMETRİ",
+  "konu": "Trigonometri: Farklı Argümanlı Denklemler, Katsayı-Kök İlişkisi, Aralıkta Kök Sayısı ve Uygulamalar",
+  "ciktilar": [
+    "12.3.2.1. Trigonometrik denklemlerin çözüm kümelerini bulur.",
+    "12.3.2.1.a. a, b, c ∈ R olmak üzere a·sin f(x) + b·cos g(x) = c biçimindeki trigonometrik denklemlerin köklerini bulur; a, b ve c katsayıları ile çözüm kümesi arasındaki ilişkiyi yorumlar.",
+    "12.3.2.1.b. Trigonometrik denklemleri sıcaklık, gün ışığı süresi ve dalga hareketi gibi gerçek hayat problemlerinin çözümünde kullanır.",
+    "12.3.2.1.c. El-Battani'nin gölge hesapları ve trigonometrik tablolar üzerine yaptığı çalışmaları tanır ve bugünkü denklemlerle ilişkilendirir."
+  ],
+  "giris": "Trigonometrik denklemler yolculuğumuzun son durağındayız. Geçen hafta argümanları aynı olan homojen ve lineer denklemleri çözdük; bu hafta ise {koyu:a·sin f(x) + b·cos g(x) = c} biçiminde sinüs ile kosinüsün {koyu:farklı argümanlar} taşıdığı denklemleri, a, b ve c katsayılarının {koyu:kök sayısını nasıl belirlediğini}, belirli bir aralıktaki köklerin grafikle nasıl sayıldığını ve {koyu:sınırlılık yöntemini} inceliyoruz. Haftayı sıcaklık, gün ışığı süresi ve dalga problemleriyle, ardından El-Battani'nin gölge hesaplarından doğan trigonometrik denklemlerle tamamlıyoruz.",
+  "ozet": [
+    "{koyu:Tümler açı köprüsü:} sin f(x) = cos g(x) denkleminde cos g(x) = sin({kesir:π|2} − g(x)) yazılır ve f(x) = {kesir:π|2} − g(x) + 2kπ ile f(x) = {kesir:π|2} + g(x) + 2kπ kolları elde edilir.",
+    "{koyu:Katsayı-kök ilişkisi:} Argümanlar aynıysa R = {kok:{us:a|2} + {us:b|2}} olmak üzere {us:c|2} < {us:a|2} + {us:b|2} iken her periyotta 2, {us:c|2} = {us:a|2} + {us:b|2} iken 1 kök vardır; {us:c|2} > {us:a|2} + {us:b|2} ise çözüm kümesi boştur.",
+    "{koyu:Eşitlik durumu:} a·sin x + b·cos x = R ise sin x = {kesir:a|R} ve cos x = {kesir:b|R} olur; ifade en büyük değerine bu noktada ulaşır.",
+    "{koyu:Sınırlılık yöntemi:} Argümanlar farklıyken {uzunluk:c} > {uzunluk:a} + {uzunluk:b} ise kök yoktur; {uzunluk:c} = {uzunluk:a} + {uzunluk:b} ise iki terim aynı anda uç değerini almalı ve ortak x aranmalıdır.",
+    "{koyu:Aralıkta kök sayısı:} a·sin(kx) + b·cos(kx) = c denkleminin [0, 2π) aralığında {uzunluk:c} < R iken 2k, {uzunluk:c} = R iken k kökü vardır; kapalı aralıklarda uç noktalar ayrıca kontrol edilir.",
+    "{koyu:Uygulama ve tarih:} Sıcaklık, gün ışığı ve dalga modellerinde denklem kurulup aralık yorumlanır; El-Battani'nin düz gölge ve ters gölge oranları bugünkü kotanjant ve tanjant denklemlerinin temelidir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Farklı Argümanlı Denklemler: sin f(x) = cos g(x) ve Tümler Açı Dönüşümü",
+      "metin": [
+        "Şimdiye kadar çözdüğümüz lineer denklemlerde sinüs ve kosinüs aynı argümanı taşıyordu: a·sin x + b·cos x = c. Planımızdaki genel biçim ise {koyu:a·sin f(x) + b·cos g(x) = c} olup f(x) ile g(x) farklı olabilir; örneğin sin 3x = cos x ya da sin 2x + cos 5x = 0. Bu durumda yardımcı açı yöntemi doğrudan işlemez, çünkü iki fonksiyonu tek bir sin(x + α) ifadesinde birleştiremeyiz. Çıkış yolu {koyu:tümler açı dönüşümüdür}: Her θ için {koyu:cos θ = sin({kesir:π|2} − θ)} ve {koyu:sin θ = cos({kesir:π|2} − θ)} eşitlikleri geçerlidir. Böylece denklemin bir tarafındaki fonksiyonu diğer taraftakinin türüne çevirip temel denkleme ulaşırız.",
+        "sin f(x) = cos g(x) denkleminde cos g(x) yerine sin({kesir:π|2} − g(x)) yazılırsa {koyu:sin f(x) = sin({kesir:π|2} − g(x))} temel sinüs denklemi elde edilir. Temel sinüs denkleminin iki kolu uygulanır: {koyu:1. kol: f(x) = {kesir:π|2} − g(x) + 2kπ}, {koyu:2. kol: f(x) = π − ({kesir:π|2} − g(x)) + 2kπ = {kesir:π|2} + g(x) + 2kπ}. Örneğin sin 3x = cos x için 1. koldan 4x = {kesir:π|2} + 2kπ, yani x = {kesir:π|8} + {kesir:kπ|2}; 2. koldan 2x = {kesir:π|2} + 2kπ, yani x = {kesir:π|4} + kπ bulunur. Kontrol: x = {kesir:π|4} için sin({kesir:3π|4}) = {kesir:{kok:2}|2} ve cos({kesir:π|4}) = {kesir:{kok:2}|2} olup eşitlik sağlanır.",
+        "Bu yöntem a·sin f(x) + b·cos g(x) = 0 denkleminde {koyu:a ve b mutlak değerce eşit} olduğunda doğrudan uygulanır; katsayılarla çözüm arasındaki ilk ilişki budur. a = −b ise denklem sin f(x) = cos g(x) olur; a = b ise sin f(x) = −cos g(x) olur ve −cos g(x) = sin(g(x) − {kesir:π|2}) yazılarak yine temel denkleme geçilir. Aynı fikir diğer fonksiyonlara da taşınır: {koyu:tan f(x) = cot g(x)} denkleminde cot g(x) = tan({kesir:π|2} − g(x)) yazılır ve f(x) = {kesir:π|2} − g(x) + kπ bulunur; burada tanjant ve kotanjantı tanımsız yapan değerler mutlaka elenir. Ayrıca −sin g(x) = sin(−g(x)) ve −cos g(x) = cos(π − g(x)) dönüşümleri, işaret farkı olan denklemleri temel biçime getirir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Denklem",
+          "Uygulanan Dönüşüm",
+          "Genel Çözüm Kolları (k tam sayı)"
+        ],
+        "satirlar": [
+          [
+            "sin f(x) = cos g(x)",
+            "cos g(x) = sin({kesir:π|2} − g(x))",
+            "f(x) = {kesir:π|2} − g(x) + 2kπ veya f(x) = {kesir:π|2} + g(x) + 2kπ"
+          ],
+          [
+            "cos f(x) = sin g(x)",
+            "sin g(x) = cos({kesir:π|2} − g(x))",
+            "f(x) = {kesir:π|2} − g(x) + 2kπ veya f(x) = g(x) − {kesir:π|2} + 2kπ"
+          ],
+          [
+            "sin f(x) = −sin g(x)",
+            "−sin g(x) = sin(−g(x))",
+            "f(x) = −g(x) + 2kπ veya f(x) = π + g(x) + 2kπ"
+          ],
+          [
+            "cos f(x) = −cos g(x)",
+            "−cos g(x) = cos(π − g(x))",
+            "f(x) = π − g(x) + 2kπ veya f(x) = g(x) − π + 2kπ"
+          ],
+          [
+            "tan f(x) = cot g(x)",
+            "cot g(x) = tan({kesir:π|2} − g(x))",
+            "f(x) = {kesir:π|2} − g(x) + kπ (tanımsız noktalar elenir)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Tümler Açı Köprüsü",
+          "metin": "Farklı argümanlı sinüs-kosinüs denkleminde bir fonksiyonu diğerine çevirmek için cos θ = sin({kesir:π|2} − θ) veya sin θ = cos({kesir:π|2} − θ) yazılır; ardından temel denklemin iki kolu uygulanır."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Kolları Ayrı Ayrı Çöz",
+          "metin": "İki koldan gelen x değerlerini aynı listeye yazmadan önce her kolu ayrı ayrı sadeleştirin. Kollardan biri x'i yok edebilir (örneğin sin x = cos x için 2. kol 0 = {kesir:π|2} + 2kπ verir); bu durumda o koldan kök gelmez."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e3a8a\">Tümler Açı Köprüsü: Farklı Argümanlı sin-cos Denklemleri</text><rect x=\"30\" y=\"55\" width=\"200\" height=\"70\" rx=\"12\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"130\" y=\"85\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1e40af\">sin f(x) = cos g(x)</text><text x=\"130\" y=\"107\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Argümanlar farklı: f(x) ≠ g(x)</text><line x1=\"232\" y1=\"90\" x2=\"264\" y2=\"90\" stroke=\"#64748b\" stroke-width=\"2\"/><polygon points=\"264,84 274,90 264,96\" fill=\"#64748b\"/><rect x=\"277\" y=\"55\" width=\"220\" height=\"70\" rx=\"12\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"387\" y=\"85\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#6d28d9\">cos g(x) = sin(π/2 − g(x))</text><text x=\"387\" y=\"107\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Tümler açı yazılır</text><line x1=\"499\" y1=\"90\" x2=\"524\" y2=\"90\" stroke=\"#64748b\" stroke-width=\"2\"/><polygon points=\"524,84 534,90 524,96\" fill=\"#64748b\"/><rect x=\"537\" y=\"55\" width=\"198\" height=\"70\" rx=\"12\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"636\" y=\"85\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">sin f(x) = sin(π/2 − g(x))</text><text x=\"636\" y=\"107\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Temel sinüs denklemi</text><line x1=\"636\" y1=\"126\" x2=\"430\" y2=\"163\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"636\" y1=\"126\" x2=\"636\" y2=\"163\" stroke=\"#059669\" stroke-width=\"2\"/><rect x=\"310\" y=\"165\" width=\"215\" height=\"52\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.5\"/><text x=\"417\" y=\"186\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#065f46\">1. kol</text><text x=\"417\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" fill=\"#065f46\">f(x) = π/2 − g(x) + 2kπ</text><rect x=\"537\" y=\"165\" width=\"198\" height=\"52\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.5\"/><text x=\"636\" y=\"186\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#065f46\">2. kol</text><text x=\"636\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" fill=\"#065f46\">f(x) = π/2 + g(x) + 2kπ</text><rect x=\"310\" y=\"230\" width=\"425\" height=\"52\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"522\" y=\"251\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e3a8a\">Örnek: sin 3x = cos x</text><text x=\"522\" y=\"271\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e3a8a\">x = π/8 + kπ/2  veya  x = π/4 + kπ  (k tam sayı)</text><rect x=\"30\" y=\"145\" width=\"262\" height=\"137\" rx=\"12\" fill=\"#ffffff\" stroke=\"#f59e0b\" stroke-width=\"2\"/><text x=\"161\" y=\"168\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">Diğer Köprüler</text><text x=\"44\" y=\"194\" font-size=\"11\" fill=\"#334155\">• tan f = cot g → tan f = tan(π/2 − g)</text><text x=\"44\" y=\"218\" font-size=\"11\" fill=\"#334155\">• sin f = −sin g → sin f = sin(−g)</text><text x=\"44\" y=\"242\" font-size=\"11\" fill=\"#334155\">• cos f = −cos g → cos f = cos(π − g)</text><text x=\"44\" y=\"266\" font-size=\"11\" fill=\"#334155\">• cos f = sin g → cos f = cos(π/2 − g)</text></svg>"
+    },
+    {
+      "baslik": "Katsayılar ile Çözüm Arasındaki İlişki: Özel Durumlar ve Kök Sayısı",
+      "metin": [
+        "a·sin f(x) + b·cos g(x) = c denkleminde katsayılardan biri sıfır olduğunda denklem tek fonksiyonlu temel denkleme dönüşür. {koyu:a = 0} ise b·cos g(x) = c, yani cos g(x) = {kesir:c|b} olur ve kök olması için {koyu:{uzunluk:c} ≤ {uzunluk:b}} gerekir. {koyu:b = 0} ise sin f(x) = {kesir:c|a} olur ve kök şartı {koyu:{uzunluk:c} ≤ {uzunluk:a}} biçimindedir. Örneğin 2·cos 2x = 3 denkleminde cos 2x = {kesir:3|2} çıkar; kosinüs 1'den büyük değer alamayacağı için çözüm kümesi boştur. {koyu:c = 0} ve f = g ise geçen haftaki homojen denklemi elde ederiz; bu denklemin a ve b sıfırdan farklıyken her zaman kökü vardır, çünkü tan x her gerçek değeri alır.",
+        "Argümanların aynı ve a, b'nin sıfırdan farklı olduğu durumda {koyu:R = {kok:{us:a|2} + {us:b|2}}} sayısı karar vericidir; çünkü a·sin x + b·cos x ifadesi R·sin(x + α) biçiminde yazılabilir ve [−R, R] aralığındaki her değeri tam bir periyotta alır. Buna göre üç durum oluşur: {koyu:{us:c|2} < {us:a|2} + {us:b|2}} ise y = c doğrusu sinüs eğrisini her periyotta {koyu:iki noktada} keser; {koyu:{us:c|2} = {us:a|2} + {us:b|2}} ise doğru eğriye tepe ya da çukur noktasında {koyu:teğettir} ve her periyotta {koyu:tek kök} vardır; {koyu:{us:c|2} > {us:a|2} + {us:b|2}} ise doğru eğriyi hiç kesmez ve çözüm kümesi boştur. Görüldüğü gibi c'nin büyüklüğü yalnızca kökün var olup olmadığını değil, {koyu:kaç tane} olduğunu da belirler.",
+        "Eşitlik durumunda yardımcı açıya gerek kalmadan kısa bir yol vardır. a·sin x + b·cos x ifadesi en büyük değeri R'ye, (sin x, cos x) ikilisi (a, b) katsayı ikilisiyle aynı yönü gösterdiğinde ulaşır; yani {koyu:sin x = {kesir:a|R}} ve {koyu:cos x = {kesir:b|R}} olur. Örneğin 3·sin x + 4·cos x = 5 denkleminde R = {kok:9 + 16} = 5 = c olduğundan sin x = {kesir:3|5} ve cos x = {kesir:4|5} bulunur; kontrol: 3·{kesir:3|5} + 4·{kesir:4|5} = {kesir:9 + 16|5} = 5. Bu x açısı birinci bölgededir ve her 2π periyodunda yalnızca bir kez tekrar eder. c = −R olduğunda ise işaretler tersine döner: sin x = −{kesir:a|R}, cos x = −{kesir:b|R}."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Katsayı Durumu",
+          "Denklemin Biçimi",
+          "Çözüm / Kök Sayısı",
+          "Örnek"
+        ],
+        "satirlar": [
+          [
+            "a = 0, b ≠ 0",
+            "b·cos g(x) = c",
+            "Kök için {uzunluk:c} ≤ {uzunluk:b} gerekir",
+            "2·cos 2x = 3 → cos 2x = {kesir:3|2} > 1, ÇK = ∅"
+          ],
+          [
+            "b = 0, a ≠ 0",
+            "a·sin f(x) = c",
+            "Kök için {uzunluk:c} ≤ {uzunluk:a} gerekir",
+            "4·sin x = 2 → sin x = {kesir:1|2}"
+          ],
+          [
+            "c = 0, f = g",
+            "Homojen denklem",
+            "a, b ≠ 0 ise her zaman kök vardır",
+            "sin x − cos x = 0 → x = {kesir:π|4} + kπ"
+          ],
+          [
+            "f = g, {us:c|2} < {us:a|2} + {us:b|2}",
+            "Yardımcı açı ile R·sin(x + α) = c",
+            "Her periyotta 2 kök",
+            "sin x + cos x = 1 → x = 0 ve x = {kesir:π|2}"
+          ],
+          [
+            "f = g, {us:c|2} = {us:a|2} + {us:b|2}",
+            "İfade uç değerinde",
+            "Her periyotta 1 kök",
+            "{kok:3}·sin x + cos x = 2 → x = {kesir:π|3}"
+          ],
+          [
+            "f = g, {us:c|2} > {us:a|2} + {us:b|2}",
+            "Doğru eğriyi kesmez",
+            "ÇK = ∅",
+            "3·sin x + 4·cos x = 6"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Eşitlik Durumunda Kısa Yol",
+          "metin": "a·sin x + b·cos x = R (R = {kok:{us:a|2} + {us:b|2}}) ise doğrudan sin x = {kesir:a|R} ve cos x = {kesir:b|R} yazılır. Bu iki değerin işaretleri x'in hangi bölgede olduğunu da gösterir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Kök Varlığı ile Kök Sayısı Farklıdır",
+          "metin": "{us:c|2} ≤ {us:a|2} + {us:b|2} şartı yalnızca 'kök var mı?' sorusunu cevaplar. 'Kaç kök var?' sorusu için eşitliğin kesin mi olduğuna ve verilen aralığın genişliğine bakılır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#14532d\">a·sin x + b·cos x = c : Katsayılar ve Kök Sayısı</text><line x1=\"50\" y1=\"170\" x2=\"470\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"50\" x2=\"60\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M60 170 Q110 10 160 170 T260 170 T360 170 T460 170\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><line x1=\"55\" y1=\"60\" x2=\"470\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/><line x1=\"55\" y1=\"90\" x2=\"470\" y2=\"90\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/><line x1=\"55\" y1=\"130\" x2=\"470\" y2=\"130\" stroke=\"#16a34a\" stroke-width=\"1.5\"/><circle cx=\"74.6\" cy=\"130\" r=\"4\" fill=\"#16a34a\"/><circle cx=\"145.4\" cy=\"130\" r=\"4\" fill=\"#16a34a\"/><circle cx=\"274.6\" cy=\"130\" r=\"4\" fill=\"#16a34a\"/><circle cx=\"345.4\" cy=\"130\" r=\"4\" fill=\"#16a34a\"/><circle cx=\"110\" cy=\"90\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"310\" cy=\"90\" r=\"4\" fill=\"#dc2626\"/><text x=\"40\" y=\"94\" font-size=\"11\" fill=\"#dc2626\">R</text><text x=\"34\" y=\"254\" font-size=\"11\" fill=\"#1e3a8a\">−R</text><text x=\"44\" y=\"174\" font-size=\"11\" fill=\"#334155\">0</text><line x1=\"55\" y1=\"250\" x2=\"470\" y2=\"250\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><text x=\"190\" y=\"56\" font-size=\"11\" fill=\"#475569\">c &gt; R : 0 kök</text><text x=\"190\" y=\"86\" font-size=\"11\" fill=\"#dc2626\">c = R : teğet, periyotta 1 kök</text><text x=\"380\" y=\"126\" font-size=\"11\" fill=\"#15803d\">c &lt; R : periyotta 2 kök</text><text x=\"260\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Mavi eğri: y = R·sin(x + α)   (iki tam periyot)</text><rect x=\"490\" y=\"50\" width=\"250\" height=\"225\" rx=\"12\" fill=\"#ffffff\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"615\" y=\"74\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#14532d\">R = karekök(a² + b²)</text><text x=\"504\" y=\"102\" font-size=\"11\" fill=\"#15803d\">• c² &lt; a² + b² → her periyotta 2 kök</text><text x=\"504\" y=\"126\" font-size=\"11\" fill=\"#dc2626\">• c² = a² + b² → her periyotta 1 kök</text><text x=\"504\" y=\"150\" font-size=\"11\" fill=\"#475569\">• c² &gt; a² + b² → ÇK = ∅</text><line x1=\"504\" y1=\"166\" x2=\"726\" y2=\"166\" stroke=\"#bbf7d0\" stroke-width=\"1.5\"/><text x=\"504\" y=\"188\" font-size=\"11\" font-weight=\"700\" fill=\"#14532d\">Örnek: 3 sin x + 4 cos x = 5</text><text x=\"504\" y=\"210\" font-size=\"11\" fill=\"#334155\">R = karekök(9 + 16) = 5 = c</text><text x=\"504\" y=\"232\" font-size=\"11\" fill=\"#334155\">Tek kök: sin x = 3/5, cos x = 4/5</text><text x=\"504\" y=\"254\" font-size=\"11\" fill=\"#334155\">Kontrol: 9/5 + 16/5 = 5</text></svg>"
+    },
+    {
+      "baslik": "Sınırlılık Yöntemi: Uç Değerlerin Aynı Anda Gerçekleşmesi",
+      "metin": [
+        "Argümanlar farklıyken (f ≠ g) a·sin f(x) + b·cos g(x) ifadesini tek bir fonksiyona dönüştüremeyiz; ancak bu ifadenin {koyu:hangi aralıkta değer alabileceğini} biliriz. Sinüs ve kosinüs [−1, 1] aralığında değer aldığından {koyu:−{uzunluk:a} ≤ a·sin f(x) ≤ {uzunluk:a}} ve {koyu:−{uzunluk:b} ≤ b·cos g(x) ≤ {uzunluk:b}} olur. Bu iki eşitsizlik taraf tarafa toplanırsa {koyu:{uzunluk:a·sin f(x) + b·cos g(x)} ≤ {uzunluk:a} + {uzunluk:b}} sonucuna ulaşılır. Dolayısıyla {koyu:{uzunluk:c} > {uzunluk:a} + {uzunluk:b}} ise denklemin hiçbir gerçek kökü yoktur. Bu sınır, aynı argümanlı durumdaki R = {kok:{us:a|2} + {us:b|2}} sınırından büyüktür; çünkü farklı argümanlar iki terimin aynı anda uç değere ulaşmasını mümkün kılabilir.",
+        "Asıl güçlü durum {koyu:{uzunluk:c} = {uzunluk:a} + {uzunluk:b}} eşitliğidir. Toplam ancak her iki terim de kendi uç değerine ulaştığında bu sınıra varabilir. Örneğin a, b > 0 ve c = a + b ise {koyu:sin f(x) = 1 ve cos g(x) = 1} eşitlikleri {koyu:aynı x için} sağlanmalıdır. Çözüm iki adımda yapılır: önce birinci eşitliğin genel çözümü bulunur, sonra bu x değerleri ikinci eşitlikte denenir. Ortak x varsa çözüm kümesi bu ortak değerlerdir; yoksa, katsayı şartı sağlansa bile, {koyu:çözüm kümesi boştur}. Yani {uzunluk:c} ≤ {uzunluk:a} + {uzunluk:b} şartı kök için {koyu:gerekli ama yeterli değildir}.",
+        "Üç örnekle karşılaştıralım. {koyu:sin x + cos 2x = 2}: sin x = 1 için x = {kesir:π|2} + 2kπ olur; fakat bu x'lerde 2x = π + 4kπ ve cos 2x = −1 çıkar; ortak nokta yok, ÇK = ∅. {koyu:sin x + cos 4x = 2}: x = {kesir:π|2} + 2kπ için 4x = 2π + 8kπ ve cos 4x = 1 olur; çözüm kümesi x = {kesir:π|2} + 2kπ değerleridir. {koyu:2·sin x − 3·cos 2x = 5}: Burada {uzunluk:2} + {uzunluk:−3} = 5 = c olduğundan sin x = 1 ve −3·cos 2x = 3, yani cos 2x = −1 gerekir; x = {kesir:π|2} + 2kπ için cos 2x = cos π = −1 sağlanır. Sınırın altında kalan durumlarda ({uzunluk:c} < {uzunluk:a} + {uzunluk:b}) ise sınırlılık tek başına yetmez; örneğin sin x + cos 2x = 1 denkleminde cos 2x = 1 − 2·{us:sin|2}x yazılarak sin x·(1 − 2·sin x) = 0 elde edilir ve sin x = 0 veya sin x = {kesir:1|2} çözülür."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Denklem",
+          "Gerekli Uç Değerler",
+          "Ortak Nokta Kontrolü",
+          "Çözüm Kümesi"
+        ],
+        "satirlar": [
+          [
+            "sin x + cos 2x = 2",
+            "sin x = 1 ve cos 2x = 1",
+            "x = {kesir:π|2} için cos π = −1 (uymaz)",
+            "Boş küme"
+          ],
+          [
+            "sin x + cos 4x = 2",
+            "sin x = 1 ve cos 4x = 1",
+            "x = {kesir:π|2} için cos 2π = 1 (uyar)",
+            "x = {kesir:π|2} + 2kπ"
+          ],
+          [
+            "2·sin x − 3·cos 2x = 5",
+            "sin x = 1 ve cos 2x = −1",
+            "x = {kesir:π|2} için cos π = −1 (uyar)",
+            "x = {kesir:π|2} + 2kπ"
+          ],
+          [
+            "sin 3x − cos x = 2",
+            "sin 3x = 1 ve cos x = −1",
+            "x = π için sin 3π = 0 (uymaz)",
+            "Boş küme"
+          ],
+          [
+            "cos x + cos 3x = −2",
+            "cos x = −1 ve cos 3x = −1",
+            "x = π için cos 3π = −1 (uyar)",
+            "x = π + 2kπ"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Sınırlılık Kuralı",
+          "metin": "{uzunluk:a·sin f(x) + b·cos g(x)} ≤ {uzunluk:a} + {uzunluk:b} olduğundan: {uzunluk:c} > {uzunluk:a} + {uzunluk:b} ise ÇK = ∅; {uzunluk:c} = {uzunluk:a} + {uzunluk:b} ise iki terim aynı x için uç değer almalıdır."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Önce Hangi Eşitlik?",
+          "metin": "Uç değer eşitliklerinden çözümü daha seyrek olanı (genellikle argümanı küçük olanı) önce çözün, bulduğunuz x değerlerini diğerinde deneyin. Böylece tek bir k parametresiyle kontrol yapılır ve işlem kısalır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#92400e\">Sınırlılık Yöntemi: a·sin f(x) + b·cos g(x) = c</text><rect x=\"30\" y=\"50\" width=\"220\" height=\"100\" rx=\"12\" fill=\"#ffffff\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"140\" y=\"74\" text-anchor=\"middle\" font-size=\"12\" fill=\"#78350f\">−1 ≤ sin f(x) ≤ 1</text><text x=\"140\" y=\"96\" text-anchor=\"middle\" font-size=\"12\" fill=\"#78350f\">−1 ≤ cos g(x) ≤ 1</text><text x=\"140\" y=\"126\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\">|a sin f + b cos g| ≤ |a| + |b|</text><rect x=\"270\" y=\"50\" width=\"220\" height=\"100\" rx=\"12\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"380\" y=\"82\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#b91c1c\">|c| &gt; |a| + |b|</text><text x=\"380\" y=\"108\" text-anchor=\"middle\" font-size=\"12\" fill=\"#7f1d1d\">Hiç kök yoktur</text><text x=\"380\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" fill=\"#7f1d1d\">ÇK = ∅</text><rect x=\"510\" y=\"50\" width=\"220\" height=\"100\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"620\" y=\"80\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">|c| = |a| + |b|</text><text x=\"620\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" fill=\"#065f46\">İki terim AYNI x için</text><text x=\"620\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" fill=\"#065f46\">uç değerini almalı:</text><text x=\"620\" y=\"142\" text-anchor=\"middle\" font-size=\"11\" fill=\"#065f46\">ortak x var mı?</text><rect x=\"30\" y=\"168\" width=\"220\" height=\"115\" rx=\"12\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"140\" y=\"190\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">sin x + cos 2x = 2</text><text x=\"42\" y=\"214\" font-size=\"11\" fill=\"#334155\">sin x = 1 → x = π/2 + 2kπ</text><text x=\"42\" y=\"236\" font-size=\"11\" fill=\"#334155\">cos 2x = cos π = −1 (uymaz)</text><text x=\"140\" y=\"266\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\">ÇK = ∅</text><rect x=\"270\" y=\"168\" width=\"220\" height=\"115\" rx=\"12\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"1.5\"/><text x=\"380\" y=\"190\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">sin x + cos 4x = 2</text><text x=\"282\" y=\"214\" font-size=\"11\" fill=\"#334155\">sin x = 1 → x = π/2 + 2kπ</text><text x=\"282\" y=\"236\" font-size=\"11\" fill=\"#334155\">cos 4x = cos 2π = 1 (uyar)</text><text x=\"380\" y=\"266\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#047857\">x = π/2 + 2kπ</text><rect x=\"510\" y=\"168\" width=\"220\" height=\"115\" rx=\"12\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"1.5\"/><text x=\"620\" y=\"190\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">2 sin x − 3 cos 2x = 5</text><text x=\"522\" y=\"214\" font-size=\"11\" fill=\"#334155\">sin x = 1 ve cos 2x = −1</text><text x=\"522\" y=\"236\" font-size=\"11\" fill=\"#334155\">x = π/2 → cos π = −1 (uyar)</text><text x=\"620\" y=\"266\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#047857\">x = π/2 + 2kπ</text></svg>"
+    },
+    {
+      "baslik": "Belirli Aralıkta Kök Sayısı, Grafik Yorumu ve Parametreli Denklemler",
+      "metin": [
+        "Bir trigonometrik denklemin kökleri, iki grafiğin {koyu:kesişim noktalarının apsisleridir}. a·sin(kx) + b·cos(kx) = c denklemi için sol taraf yardımcı açıyla y = R·sin(kx + α) eğrisine dönüşür, sağ taraf ise yatay y = c doğrusudur. Argümandaki k katsayısı (k pozitif tam sayı) eğrinin {koyu:periyodunu {kesir:2π|k}} değerine indirir; böylece [0, 2π) aralığına k tam periyot sığar. Her periyotta {uzunluk:c} < R iken 2, {uzunluk:c} = R iken 1 kesişim olduğundan [0, 2π) aralığında sırasıyla {koyu:2k} ve {koyu:k} kök bulunur. Bu sayım, köklerin tek tek hesaplanmasından önce sonucun kontrolü için mükemmel bir araçtır.",
+        "Örneğin {koyu:sin 2x + cos 2x = 1} denkleminde R = {kok:2} ve c = 1 < {kok:2} olduğundan, k = 2 için [0, 2π) aralığında 4 kök beklenir. Yardımcı açıyla {kok:2}·sin(2x + {kesir:π|4}) = 1, yani sin(2x + {kesir:π|4}) = {kesir:{kok:2}|2} olur. 1. kol: 2x + {kesir:π|4} = {kesir:π|4} + 2kπ → x = kπ; 2. kol: 2x + {kesir:π|4} = {kesir:3π|4} + 2kπ → x = {kesir:π|4} + kπ. Aralıktaki kökler 0, {kesir:π|4}, π ve {kesir:5π|4} olup beklenen dört kök doğrulanır. Aralık [0, 2π] biçiminde {koyu:kapalı} verilseydi x = 2π de denklemi sağlayacağından kök sayısı 5 olurdu. Bu yüzden aralığın uç noktaları her zaman ayrıca denenmelidir.",
+        "Kök sayısı fikri {koyu:parametreli denklemleri} çözmeyi de kolaylaştırır. m·sin x + 3·cos x = 5 denkleminin kökü olması için {us:m|2} + 9 ≥ 25, yani {uzunluk:m} ≥ 4 olmalıdır; {uzunluk:m} = 4 iken her periyotta tek kök, {uzunluk:m} > 4 iken iki kök vardır. Benzer biçimde 'denklemin [0, 2π) aralığında tam bir kökü olması için' sorusu doğrudan {us:c|2} = {us:a|2} + {us:b|2} eşitliğine, 'iki farklı kökü olması için' sorusu ise {us:c|2} < {us:a|2} + {us:b|2} kesin eşitsizliğine dönüşür. Argümanların farklı olduğu denklemlerde ise önce sınırlılık ya da tümler açı yöntemiyle kök listesi çıkarılır, ardından aralığa düşen değerler sayılır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Argüman",
+          "Periyot",
+          "{uzunluk:c} < R iken [0, 2π) kök sayısı",
+          "{uzunluk:c} = R iken",
+          "{uzunluk:c} > R iken"
+        ],
+        "satirlar": [
+          [
+            "x",
+            "2π",
+            "2",
+            "1",
+            "0"
+          ],
+          [
+            "2x",
+            "π",
+            "4",
+            "2",
+            "0"
+          ],
+          [
+            "3x",
+            "{kesir:2π|3}",
+            "6",
+            "3",
+            "0"
+          ],
+          [
+            "kx (k pozitif tam sayı)",
+            "{kesir:2π|k}",
+            "2k",
+            "k",
+            "0"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kapalı Aralık Tuzağı",
+          "metin": "Kök sayısı kuralı yarı açık [0, 2π) aralığı içindir. [0, 2π] kapalı aralığında x = 0 kök ise x = 2π de köktür ve sayıya bir eklenir. Sorudaki köşeli ve normal parantezleri dikkatle okuyun."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Sonucu Kontrol Etme",
+          "metin": "Kökleri tek tek bulduktan sonra 2k sayısıyla karşılaştırın. Eksik kök bulduysanız büyük olasılıkla bir kolda k'ya yeterince değer vermediniz; fazla bulduysanız aralık dışına taşan bir değer yazdınız."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#4c1d95\">Aralıktaki Kök Sayısı: sin 2x + cos 2x = 1,  x ∈ [0, 2π)</text><line x1=\"50\" y1=\"170\" x2=\"475\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"60\" x2=\"60\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><polyline points=\"60,110 85,85 110,110 135,170 160,230 185,255 210,230 235,170 260,110 285,85 310,110 335,170 360,230 385,255 410,230 435,170 460,110\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"110\" x2=\"475\" y2=\"110\" stroke=\"#059669\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/><text x=\"30\" y=\"114\" font-size=\"11\" fill=\"#059669\">y = 1</text><circle cx=\"60\" cy=\"110\" r=\"5\" fill=\"#059669\"/><circle cx=\"110\" cy=\"110\" r=\"5\" fill=\"#059669\"/><circle cx=\"260\" cy=\"110\" r=\"5\" fill=\"#059669\"/><circle cx=\"310\" cy=\"110\" r=\"5\" fill=\"#059669\"/><circle cx=\"460\" cy=\"110\" r=\"5\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"66\" y=\"100\" font-size=\"11\" fill=\"#065f46\">0</text><text x=\"104\" y=\"100\" font-size=\"11\" fill=\"#065f46\">π/4</text><text x=\"254\" y=\"100\" font-size=\"11\" fill=\"#065f46\">π</text><text x=\"300\" y=\"100\" font-size=\"11\" fill=\"#065f46\">5π/4</text><text x=\"430\" y=\"100\" font-size=\"10\" fill=\"#dc2626\">2π dahil değil</text><text x=\"60\" y=\"188\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">0</text><text x=\"160\" y=\"188\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">π/2</text><text x=\"260\" y=\"188\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">π</text><text x=\"360\" y=\"188\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">3π/2</text><text x=\"460\" y=\"188\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">2π</text><text x=\"260\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">y = karekök(2)·sin(2x + π/4): [0, 2π) içinde 2 periyot → 4 kesişim</text><rect x=\"495\" y=\"50\" width=\"245\" height=\"230\" rx=\"12\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"617\" y=\"74\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#4c1d95\">[0, 2π) Kök Sayısı</text><text x=\"510\" y=\"100\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\">Argüman  Periyot  |c|&lt;R  |c|=R</text><line x1=\"508\" y1=\"108\" x2=\"728\" y2=\"108\" stroke=\"#ddd6fe\" stroke-width=\"1.5\"/><text x=\"510\" y=\"130\" font-size=\"11\" fill=\"#334155\">   x            2π         2          1</text><text x=\"510\" y=\"154\" font-size=\"11\" fill=\"#334155\">   2x           π          4          2</text><text x=\"510\" y=\"178\" font-size=\"11\" fill=\"#334155\">   3x         2π/3       6          3</text><text x=\"510\" y=\"202\" font-size=\"11\" fill=\"#334155\">   kx         2π/k       2k         k</text><line x1=\"508\" y1=\"214\" x2=\"728\" y2=\"214\" stroke=\"#ddd6fe\" stroke-width=\"1.5\"/><text x=\"510\" y=\"236\" font-size=\"11\" fill=\"#6d28d9\">Bu örnekte R = karekök(2), c = 1</text><text x=\"510\" y=\"258\" font-size=\"11\" fill=\"#6d28d9\">k = 2 → beklenen 4 kök</text></svg>"
+    },
+    {
+      "baslik": "Gerçek Hayat Problemleri: Sıcaklık, Gün Işığı Süresi ve Dalga Toplamı",
+      "metin": [
+        "Bir şehirde yaz mevsiminde günlük hava sıcaklığı yaklaşık olarak {koyu:T(t) = 18 − 6·cos({kesir:π(t − 4)|12})} fonksiyonuyla modellenmiş olsun; t, gece yarısından itibaren geçen saattir. Model periyodu {kesir:2π|π/12} = 24 saattir; en düşük sıcaklık 18 − 6 = 12 °C ile t = 4'te (sabah 04.00), en yüksek sıcaklık 18 + 6 = 24 °C ile t = 16'da (16.00) gerçekleşir. 'Sıcaklık ne zaman 21 °C olur?' sorusu T(t) = 21 denklemine dönüşür: −6·cos({kesir:π(t − 4)|12}) = 3, yani cos({kesir:π(t − 4)|12}) = −{kesir:1|2}. 0 ≤ t ≤ 24 için açı [−{kesir:π|3}, {kesir:5π|3}] aralığındadır ve bu aralıkta kosinüsün −{kesir:1|2} olduğu açılar {kesir:2π|3} ile {kesir:4π|3}'tür. Buradan t − 4 = 8 ve t − 4 = 16, yani {koyu:t = 12 ve t = 20} bulunur; sıcaklık 12.00 ile 20.00 arasında, toplam {koyu:8 saat} boyunca 21 °C'nin üzerindedir.",
+        "Gün ışığı süresi de yıl boyunca periyodik değişir. İlkbahar ekinoksundan itibaren geçen ay sayısı t olmak üzere bir şehirde gün uzunluğu (saat) {koyu:L(t) = 12 + 3·sin({kesir:πt|6})} ile modellensin. Ekinoksta (t = 0) gün 12 saattir, yaklaşık 3 ay sonra en uzun gün olan 15 saate ulaşılır. Gün uzunluğunun 13,5 saati aştığı dönemi bulmak için L(t) = 13,5 denklemi kurulur: sin({kesir:πt|6}) = {kesir:1|2}. [0, 12] aralığında {kesir:πt|6} = {kesir:π|6} ve {kesir:πt|6} = {kesir:5π|6} kollarından {koyu:t = 1 ve t = 5} elde edilir. Bu iki an arasında sinüs {kesir:1|2}'den büyük kaldığı için günler yaklaşık {koyu:4 ay} boyunca 13,5 saatten uzundur. Gerçek ölçümler enleme göre değişse de model mevsim döngüsünü iyi yansıtır.",
+        "Fizikte aynı frekanslı iki dalga üst üste bindiğinde ortaya çıkan hareket {koyu:a·sin(ωt) + b·cos(ωt)} biçimindedir; işte yardımcı açı yöntemi burada gerçek bir anlam kazanır. Örneğin y(t) = sin(πt) + {kok:3}·cos(πt) toplam dalgası, {kok:3} = tan({kesir:π|3}) yazılarak {koyu:y(t) = 2·sin(πt + {kesir:π|3})} biçimine getirilir: Bileşke dalganın {koyu:genliği R = {kok:1 + 3} = 2}, periyodu {kesir:2π|π} = 2 saniyedir. Dalganın ilk kez y = 1 değerine ulaştığı anı bulmak için sin(πt + {kesir:π|3}) = {kesir:1|2} çözülür: πt + {kesir:π|3} = {kesir:π|6} + 2kπ kolundan t = −{kesir:1|6} + 2k, πt + {kesir:π|3} = {kesir:5π|6} + 2kπ kolundan t = {kesir:1|2} + 2k gelir. Pozitif en küçük değer {koyu:t = {kesir:1|2} saniye} olur. Katsayılar burada doğrudan fiziksel büyüklüğe dönüşür: bileşke genlik {kok:{us:a|2} + {us:b|2}} kadardır ve hareket hiçbir zaman bu değeri aşamaz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Durum",
+          "Model",
+          "Kurulan Denklem",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "Günlük sıcaklık",
+            "T(t) = 18 − 6·cos({kesir:π(t − 4)|12})",
+            "T(t) = 21 → cos(...) = −{kesir:1|2}",
+            "t = 12 ve t = 20; 8 saat boyunca 21 °C üstü"
+          ],
+          [
+            "Gün ışığı süresi",
+            "L(t) = 12 + 3·sin({kesir:πt|6})",
+            "L(t) = 13,5 → sin(...) = {kesir:1|2}",
+            "t = 1 ve t = 5; 4 ay boyunca 13,5 saatten uzun"
+          ],
+          [
+            "İki dalganın toplamı",
+            "y(t) = sin(πt) + {kok:3}·cos(πt)",
+            "2·sin(πt + {kesir:π|3}) = 1",
+            "İlk kez t = {kesir:1|2} saniyede"
+          ],
+          [
+            "Dönen kanat ucu",
+            "h(t) = 20 + 5{kok:3}·sin({kesir:πt|6}) + 5·cos({kesir:πt|6})",
+            "10·sin({kesir:πt|6} + {kesir:π|6}) = 5",
+            "t = 0 ve t = 4 saniyede 25 m"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Problem Cümlesini Denkleme Çevirme",
+          "metin": "'Ne zaman ... olur?' sorusu eşitlik, 'ne kadar süre ... üzerindedir?' sorusu eşitsizlik ister. Önce eşitliği çözüp sınır anlarını bulun, sonra grafiğin bu anlar arasında yukarıda mı aşağıda mı kaldığını belirleyin; süre, iki anın farkıdır."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Modellerin Sınırları",
+          "metin": "Sıcaklık ve gün ışığı modelleri gerçek verilere uydurulmuş yaklaşık fonksiyonlardır. Hava olayları veya enlem farkı nedeniyle ölçülen değerler modelden sapabilir; matematiksel model genel döngüyü anlamak ve tahmin yapmak için kullanılır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#ea580c\" stroke-width=\"2\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#9a3412\">Günlük Sıcaklık Modeli: T(t) = 18 − 6·cos(π(t − 4)/12)</text><rect x=\"250\" y=\"95\" width=\"120\" height=\"145\" fill=\"#fef3c7\"/><line x1=\"70\" y1=\"240\" x2=\"440\" y2=\"240\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"70\" y1=\"90\" x2=\"70\" y2=\"240\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"70\" y1=\"140\" x2=\"440\" y2=\"140\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/><polyline points=\"70,200 100,222 130,230 160,222 190,200 220,170 250,140 280,118 310,110 340,118 370,140 400,170 430,200\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.5\"/><circle cx=\"250\" cy=\"140\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"370\" cy=\"140\" r=\"5\" fill=\"#dc2626\"/><text x=\"40\" y=\"144\" font-size=\"11\" fill=\"#dc2626\">21 °C</text><text x=\"44\" y=\"234\" font-size=\"10\" fill=\"#475569\">12</text><text x=\"44\" y=\"174\" font-size=\"10\" fill=\"#475569\">18</text><text x=\"44\" y=\"114\" font-size=\"10\" fill=\"#475569\">24</text><text x=\"70\" y=\"256\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">0</text><text x=\"130\" y=\"256\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">4</text><text x=\"190\" y=\"256\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">8</text><text x=\"250\" y=\"256\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">12</text><text x=\"310\" y=\"256\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">16</text><text x=\"370\" y=\"256\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">20</text><text x=\"430\" y=\"256\" text-anchor=\"middle\" font-size=\"10\" fill=\"#475569\">24</text><text x=\"255\" y=\"280\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">t (saat)   Sarı bölge: 12.00 - 20.00 arası, T &gt; 21 °C</text><text x=\"310\" y=\"104\" text-anchor=\"middle\" font-size=\"10\" fill=\"#9a3412\">en yüksek 24 °C</text><rect x=\"465\" y=\"50\" width=\"275\" height=\"130\" rx=\"12\" fill=\"#ffffff\" stroke=\"#ea580c\" stroke-width=\"2\"/><text x=\"602\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#9a3412\">Denklemin Çözümü</text><text x=\"478\" y=\"96\" font-size=\"11\" fill=\"#334155\">T = 21 → cos(π(t − 4)/12) = −1/2</text><text x=\"478\" y=\"118\" font-size=\"11\" fill=\"#334155\">π(t − 4)/12 = 2π/3 → t = 12</text><text x=\"478\" y=\"140\" font-size=\"11\" fill=\"#334155\">π(t − 4)/12 = 4π/3 → t = 20</text><text x=\"478\" y=\"164\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">Süre: 20 − 12 = 8 saat</text><rect x=\"465\" y=\"190\" width=\"275\" height=\"92\" rx=\"12\" fill=\"#fff7ed\" stroke=\"#fdba74\" stroke-width=\"1.5\"/><text x=\"602\" y=\"212\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#9a3412\">Gün Işığı Modeli</text><text x=\"478\" y=\"234\" font-size=\"11\" fill=\"#334155\">L(t) = 12 + 3·sin(πt/6), t: ay</text><text x=\"478\" y=\"254\" font-size=\"11\" fill=\"#334155\">L = 13,5 → t = 1 ve t = 5</text><text x=\"478\" y=\"274\" font-size=\"11\" fill=\"#334155\">4 ay boyunca gün 13,5 saatten uzun</text></svg>"
+    },
+    {
+      "baslik": "El-Battani'nin Gölge Hesapları ve Güneş Yüksekliği Denklemleri",
+      "metin": [
+        "Harranlı astronom ve matematikçi {koyu:El-Battani} (yaklaşık 858-929), Rakka'daki gözlemlerinde Güneş'in gökyüzündeki yüksekliğini belirlemek için yere dik dikilmiş bir çubuğun (gnomon) gölgesinden yararlanmıştır. Yatay zemine düşen gölgenin çubuk boyuna oranı {koyu:düz gölge} olarak anılır ve bugünkü {koyu:kotanjant} fonksiyonuna karşılık gelir; duvara yatay çakılmış bir çubuğun duvara düşen gölgesi ise {koyu:ters gölge} olup bugünkü {koyu:tanjanta} karşılık gelir. El-Battani bu oranları açılara göre derece derece tablolaştırarak gölge ölçümünden açıya, açıdan gölgeye geçişi hesaplanabilir hale getirmiştir. Böylece gölge problemleri, bizim bugün çözdüğümüz {koyu:tan θ = m} ve {koyu:cot θ = m} türü temel trigonometrik denklemlere dönüşmüştür.",
+        "Modern gösterimle boyu h olan bir çubuğun gölge uzunluğu s ise ve Güneş ışınları yerle θ açısı yapıyorsa {koyu:s = h·cot θ}, yani {koyu:cot θ = {kesir:s|h}} olur. Bu eşitliği sinüs-kosinüs cinsinden yazarsak {kesir:cos θ|sin θ} = {kesir:s|h}, oradan {koyu:h·cos θ − s·sin θ = 0} elde ederiz: Bu, a = −s ve b = h katsayılı {koyu:homojen bir lineer trigonometrik denklemdir}. Örneğin {kok:3} metrelik bir direğin gölgesi 3 metre ise cot θ = {kesir:3|{kok:3}} = {kok:3} olur ve 0° < θ < 90° aralığında θ = 30° bulunur. Gölge boyu direk boyuna eşitse cot θ = 1 ve θ = 45°'dir. Gölgenin iki katına çıktığı anı aramak da 2·sin θ = cos θ gibi bir homojen denklem çözmek demektir; tan θ = {kesir:1|2} değerini veren açıyı bulmak için ise tam da El-Battani'nin hazırladığı türden bir tablo gerekir.",
+        "El-Battani'nin başlıca eseri {koyu:Ez-Zîcü's-Sâbî}, 12. yüzyılda Latinceye çevrilmiş (De motu stellarum) ve Avrupa'da yüzyıllar boyunca başvurulan bir astronomi kaynağı olmuştur. Eserin Güneş yılı için verdiği 365 gün 5 saat 46 dakika 24 saniye değeri, dönemi için dikkat çekici bir hassasiyete sahiptir. Onun asıl kalıcı katkısı ise geometrik kiriş hesaplarını yarım kirişe, yani sinüse dayalı oran hesaplarına dönüştürmesi ve gölge oranlarını bu sisteme bağlamasıdır. Bu hafta çözdüğümüz her tan θ = {kesir:h|s} denklemi, Harran ovasında bir çubuğun gölgesini ölçen bir bilginin yöntemini sürdürür."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Gölge Durumu (çubuk boyu h, gölge s)",
+          "Kurulan Denklem",
+          "Güneş Yüksekliği θ (0° < θ ≤ 90°)"
+        ],
+        "satirlar": [
+          [
+            "s = {kesir:h|{kok:3}}",
+            "cot θ = {kesir:1|{kok:3}}",
+            "θ = 60°"
+          ],
+          [
+            "s = h",
+            "cot θ = 1, yani sin θ − cos θ = 0",
+            "θ = 45°"
+          ],
+          [
+            "s = h·{kok:3}",
+            "cot θ = {kok:3}",
+            "θ = 30°"
+          ],
+          [
+            "s = 2h",
+            "2·sin θ − cos θ = 0, yani tan θ = {kesir:1|2}",
+            "Tablodan yaklaşık 26,6°"
+          ],
+          [
+            "s = 0 (gölge oluşmaz)",
+            "cos θ = 0",
+            "θ = 90° (Güneş tam tepede; dönenceler arasında mümkündür)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Düz Gölge ve Ters Gölge",
+          "metin": "Düz gölge: yere dik çubuğun yatay zemine düşen gölgesinin çubuk boyuna oranıdır, bugünkü cot θ'ya karşılık gelir. Ters gölge: duvara dik çakılmış çubuğun duvara düşen gölgesinin çubuk boyuna oranıdır, bugünkü tan θ'ya karşılık gelir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Gölge Denklemi Bir Homojen Denklemdir",
+          "metin": "s = h·cot θ eşitliği h·cos θ − s·sin θ = 0 biçimine getirilebilir. Yani El-Battani'nin gölge hesapları, geçen hafta çözdüğümüz a·sin x + b·cos x = 0 homojen denkleminin tarihsel bir uygulamasıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#065f46\">El-Battani'nin Gölge Hesabı: Çubuk, Gölge ve Güneş Açısı</text><circle cx=\"40\" cy=\"84\" r=\"16\" fill=\"#fde047\" stroke=\"#eab308\" stroke-width=\"2\"/><line x1=\"40\" y1=\"84\" x2=\"310\" y2=\"240\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><line x1=\"30\" y1=\"240\" x2=\"400\" y2=\"240\" stroke=\"#78350f\" stroke-width=\"3\"/><line x1=\"120\" y1=\"240\" x2=\"120\" y2=\"130\" stroke=\"#1e293b\" stroke-width=\"5\"/><line x1=\"120\" y1=\"240\" x2=\"310\" y2=\"240\" stroke=\"#475569\" stroke-width=\"7\"/><path d=\"M270 240 A40 40 0 0 1 275 220\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"252\" y=\"232\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">θ</text><text x=\"98\" y=\"190\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">h</text><text x=\"215\" y=\"262\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">s (düz gölge)</text><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"11\" fill=\"#065f46\">Şekilde s ≈ h·karekök(3) olduğundan θ ≈ 30°</text><rect x=\"420\" y=\"50\" width=\"320\" height=\"138\" rx=\"12\" fill=\"#ffffff\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"580\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#065f46\">Gölgeden Denkleme</text><text x=\"434\" y=\"96\" font-size=\"11\" fill=\"#334155\">• cot θ = s / h  (düz gölge)</text><text x=\"434\" y=\"118\" font-size=\"11\" fill=\"#334155\">• tan θ = h / s  (ters gölge mantığı)</text><text x=\"434\" y=\"140\" font-size=\"11\" fill=\"#334155\">• h·cos θ − s·sin θ = 0 → homojen denklem</text><text x=\"434\" y=\"162\" font-size=\"11\" fill=\"#334155\">• s = h → θ = 45°</text><text x=\"434\" y=\"180\" font-size=\"11\" fill=\"#334155\">• s = h·karekök(3) → θ = 30°</text><rect x=\"420\" y=\"198\" width=\"320\" height=\"84\" rx=\"12\" fill=\"#ecfdf5\" stroke=\"#6ee7b7\" stroke-width=\"1.5\"/><line x1=\"440\" y1=\"232\" x2=\"720\" y2=\"232\" stroke=\"#059669\" stroke-width=\"2\"/><circle cx=\"460\" cy=\"232\" r=\"5\" fill=\"#059669\"/><circle cx=\"580\" cy=\"232\" r=\"5\" fill=\"#059669\"/><circle cx=\"700\" cy=\"232\" r=\"5\" fill=\"#059669\"/><text x=\"460\" y=\"218\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#065f46\">y. 858</text><text x=\"580\" y=\"218\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#065f46\">929</text><text x=\"700\" y=\"218\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#065f46\">12. yy</text><text x=\"460\" y=\"252\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Harran'da</text><text x=\"460\" y=\"266\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">doğum</text><text x=\"580\" y=\"252\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Rakka gözlemleri</text><text x=\"580\" y=\"266\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">sonrası vefat</text><text x=\"700\" y=\"252\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Latince çeviri</text><text x=\"700\" y=\"266\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">De motu stellarum</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "[0, 2π) aralığında sin 3x = cos x denkleminin çözüm kümesini bulunuz.",
+      "cevap": "1. Adım (tümler açı): cos x = sin({kesir:π|2} − x) yazılır; denklem sin 3x = sin({kesir:π|2} − x) olur.\n2. Adım (1. kol): 3x = {kesir:π|2} − x + 2kπ → 4x = {kesir:π|2} + 2kπ → x = {kesir:π|8} + {kesir:kπ|2}.\n3. Adım (2. kol): 3x = π − ({kesir:π|2} − x) + 2kπ = {kesir:π|2} + x + 2kπ → 2x = {kesir:π|2} + 2kπ → x = {kesir:π|4} + kπ.\n4. Adım (aralık): 1. koldan k = 0, 1, 2, 3 için {kesir:π|8}, {kesir:5π|8}, {kesir:9π|8}, {kesir:13π|8}; 2. koldan k = 0, 1 için {kesir:π|4}, {kesir:5π|4} bulunur.\n5. Adım (kontrol): x = {kesir:5π|8} için sin({kesir:15π|8}) = −sin({kesir:π|8}) ve cos({kesir:5π|8}) = −sin({kesir:π|8}) olup eşitlik sağlanır. Kollar ortak değer vermez.\nSonuç: Çözüm kümesi 6 elemanlıdır: {kesir:π|8}, {kesir:π|4}, {kesir:5π|8}, {kesir:9π|8}, {kesir:5π|4}, {kesir:13π|8}.",
+      "ipucu": "cos x'i sin({kesir:π|2} − x) olarak yazın ve temel sinüs denkleminin iki kolunu ayrı ayrı çözün; 1. kolun periyodu {kesir:π|2} olduğu için k'ya dört değer verin."
+    },
+    {
+      "soru": "[0, π) aralığında tan 2x = cot x denkleminin köklerini bulunuz.",
+      "cevap": "1. Adım (tanımsızlık): tan 2x için 2x ≠ {kesir:π|2} + nπ, yani x ≠ {kesir:π|4} + {kesir:nπ|2}; cot x için x ≠ nπ olmalıdır. [0, π) aralığında 0, {kesir:π|4} ve {kesir:3π|4} kök olamaz.\n2. Adım (dönüşüm): cot x = tan({kesir:π|2} − x) yazılır; tan 2x = tan({kesir:π|2} − x).\n3. Adım (genel çözüm): 2x = {kesir:π|2} − x + kπ → 3x = {kesir:π|2} + kπ → x = {kesir:π|6} + {kesir:kπ|3}.\n4. Adım (aralık): k = 0, 1, 2 için x = {kesir:π|6}, {kesir:π|2}, {kesir:5π|6} bulunur; k = 3 için {kesir:7π|6} aralık dışıdır.\n5. Adım (kontrol): Bulunan değerlerin hiçbiri yasak değerlerden değildir. x = {kesir:π|2} için tan π = 0 ve cot({kesir:π|2}) = 0; x = {kesir:5π|6} için tan({kesir:5π|3}) = −{kok:3} ve cot({kesir:5π|6}) = −{kok:3}.\nSonuç: Kökler {kesir:π|6}, {kesir:π|2} ve {kesir:5π|6} olup 3 tanedir.",
+      "ipucu": "Tanjant-kotanjant denklemlerinde tek kol vardır ve periyot kπ'dir; ama önce iki fonksiyonu tanımsız yapan değerleri listeleyin."
+    },
+    {
+      "soru": "m·sin x + 3·cos x = 5 denkleminin gerçek kökü olmasını sağlayan en küçük pozitif m tam sayısını bulunuz. Bu m değeri için denklemin [0, 2π) aralığında kaç kökü vardır ve kök hangi bölgededir?",
+      "cevap": "1. Adım (kök şartı): a = m, b = 3, c = 5 için {us:c|2} ≤ {us:a|2} + {us:b|2} olmalıdır: 25 ≤ {us:m|2} + 9 → {us:m|2} ≥ 16 → {uzunluk:m} ≥ 4.\n2. Adım (en küçük pozitif tam sayı): m ≥ 4 olduğundan m = 4.\n3. Adım (kök sayısı): m = 4 için {us:a|2} + {us:b|2} = 16 + 9 = 25 = {us:c|2}; eşitlik durumu oluştuğundan her periyotta yalnız 1 kök vardır. [0, 2π) bir tam periyot olduğundan 1 kök bulunur.\n4. Adım (kökün yeri): R = 5 için sin x = {kesir:a|R} = {kesir:4|5} ve cos x = {kesir:b|R} = {kesir:3|5} olur. İkisi de pozitif olduğundan kök 1. bölgededir.\n5. Adım (kontrol): 4·{kesir:4|5} + 3·{kesir:3|5} = {kesir:16 + 9|5} = 5.\nSonuç: m = 4; [0, 2π) aralığında tek kök vardır ve sin x = {kesir:4|5}, cos x = {kesir:3|5} olan 1. bölge açısıdır.",
+      "ipucu": "Önce {us:m|2} + 9 ≥ 25 eşitsizliğini çözün; eşitlik sağlanıyorsa kök tektir ve sin x = {kesir:a|R}, cos x = {kesir:b|R} kısa yolu kullanılır."
+    },
+    {
+      "soru": "[0, 2π) aralığında 2·sin x − 3·cos 2x = 5 denklemini çözünüz.",
+      "cevap": "1. Adım (sınır): {uzunluk:2·sin x} ≤ 2 ve {uzunluk:3·cos 2x} ≤ 3 olduğundan {uzunluk:2·sin x − 3·cos 2x} ≤ 2 + 3 = 5'tir. c = 5 bu sınıra eşittir.\n2. Adım (uç değer şartı): Toplamın 5 olması için 2·sin x = 2 ve −3·cos 2x = 3 olmalıdır; yani sin x = 1 ve cos 2x = −1 aynı anda sağlanmalıdır.\n3. Adım (birinci eşitlik): sin x = 1 → x = {kesir:π|2} + 2kπ; [0, 2π) içinde yalnız x = {kesir:π|2}.\n4. Adım (ortak nokta kontrolü): x = {kesir:π|2} için cos 2x = cos π = −1 sağlanır.\n5. Adım (doğrulama): 2·1 − 3·(−1) = 2 + 3 = 5.\nSonuç: Denklemin [0, 2π) aralığındaki tek kökü x = {kesir:π|2}'dir.",
+      "ipucu": "{uzunluk:a} + {uzunluk:b} = {uzunluk:c} olduğunu fark edin; her terimin uç değerini aynı x için alması gerektiğini kullanın."
+    },
+    {
+      "soru": "Bir şehirde günlük hava sıcaklığı (°C), gece yarısından itibaren geçen t saate bağlı olarak T(t) = 18 − 6·cos({kesir:π(t − 4)|12}) ile modelleniyor (0 ≤ t ≤ 24). Sıcaklık hangi saatler arasında 21 °C'nin üzerindedir ve bu süre kaç saattir?",
+      "cevap": "1. Adım (eşitsizlik): 18 − 6·cos({kesir:π(t − 4)|12}) > 21 → −6·cos({kesir:π(t − 4)|12}) > 3 → cos({kesir:π(t − 4)|12}) < −{kesir:1|2} (negatif sayıya bölerken yön değişir).\n2. Adım (açı aralığı): u = {kesir:π(t − 4)|12} dersek 0 ≤ t ≤ 24 için −{kesir:π|3} ≤ u ≤ {kesir:5π|3} olur.\n3. Adım (sınır açılar): Bu aralıkta cos u = −{kesir:1|2} eşitliği u = {kesir:2π|3} ve u = {kesir:4π|3} için sağlanır; kosinüs bu iki açı arasında −{kesir:1|2}'den küçüktür.\n4. Adım (t'ye dönüş): {kesir:π(t − 4)|12} = {kesir:2π|3} → t − 4 = 8 → t = 12; {kesir:π(t − 4)|12} = {kesir:4π|3} → t − 4 = 16 → t = 20.\n5. Adım (kontrol): t = 16'da T = 18 − 6·cos π = 24 > 21 olduğundan aralığın içi gerçekten sıcaktır.\nSonuç: Sıcaklık 12.00 ile 20.00 arasında 21 °C'nin üzerindedir; süre 20 − 12 = 8 saattir.",
+      "ipucu": "Önce T(t) = 21 eşitliğiyle sınır saatleri bulun; sonra iki sınır arasındaki bir saati (örneğin t = 16) deneyerek hangi tarafın sıcak olduğuna karar verin."
+    },
+    {
+      "soru": "[0, 2π) aralığında sin 2x + cos 2x = 1 denkleminin köklerini bulunuz ve köklerin toplamını hesaplayınız.",
+      "cevap": "1. Adım (kök sayısı tahmini): a = b = 1 için R = {kok:2} ve c = 1 < {kok:2}; argüman 2x olduğundan [0, 2π) içinde 2·2 = 4 kök beklenir.\n2. Adım (yardımcı açı): sin 2x + cos 2x = {kok:2}·sin(2x + {kesir:π|4}) olduğundan sin(2x + {kesir:π|4}) = {kesir:1|{kok:2}} = {kesir:{kok:2}|2}.\n3. Adım (1. kol): 2x + {kesir:π|4} = {kesir:π|4} + 2kπ → x = kπ → x = 0 ve x = π.\n4. Adım (2. kol): 2x + {kesir:π|4} = {kesir:3π|4} + 2kπ → 2x = {kesir:π|2} + 2kπ → x = {kesir:π|4} + kπ → x = {kesir:π|4} ve x = {kesir:5π|4}.\n5. Adım (kontrol): x = {kesir:π|4} için sin({kesir:π|2}) + cos({kesir:π|2}) = 1 + 0 = 1. Dört kök bulundu, tahminle uyumludur.\n6. Adım (toplam): 0 + {kesir:π|4} + π + {kesir:5π|4} = {kesir:0 + π + 4π + 5π|4} = {kesir:10π|4} = {kesir:5π|2}.\nSonuç: Kökler 0, {kesir:π|4}, π, {kesir:5π|4}; toplamları {kesir:5π|2}'dir.",
+      "ipucu": "Argüman 2x olduğu için periyot π'dir; k'ya 0 ve 1 değerlerini vermeyi unutmayın. x = 2π aralığa dahil değildir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "sin 5x = cos x denkleminin en küçük pozitif kökü kaç radyandır?",
+      "secenekler": [
+        "{kesir:π|12}",
+        "{kesir:π|8}",
+        "{kesir:π|6}",
+        "{kesir:π|4}"
+      ],
+      "dogru": 0,
+      "aciklama": "cos x = sin({kesir:π|2} − x) yazılır. 1. kol: 5x = {kesir:π|2} − x + 2kπ → x = {kesir:π|12} + {kesir:kπ|3}; 2. kol: 5x = {kesir:π|2} + x + 2kπ → x = {kesir:π|8} + {kesir:kπ|2}. En küçük pozitif kök k = 0 için {kesir:π|12}'dir ({kesir:π|12} < {kesir:π|8})."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki denklemlerden hangisinin [0, 2π) aralığında tam olarak bir kökü vardır?",
+      "secenekler": [
+        "sin x + cos x = 1",
+        "{kok:3}·sin x − cos x = 2",
+        "3·sin x + 4·cos x = 6",
+        "sin x − cos x = 0"
+      ],
+      "dogru": 1,
+      "aciklama": "{kok:3}·sin x − cos x = 2 denkleminde {us:a|2} + {us:b|2} = 3 + 1 = 4 = {us:c|2}; eşitlik durumu olduğundan bir periyotta tek kök vardır: 2·sin(x − {kesir:π|6}) = 2 → x = {kesir:2π|3}. A'da 2 kök (0 ve {kesir:π|2}), C'de kök yok (36 > 25), D'de 2 kök ({kesir:π|4} ve {kesir:5π|4}) vardır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "sin x + cos 2x = 2 denkleminin gerçek sayılardaki çözüm kümesi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Boş küme",
+        "x = {kesir:π|2} + 2kπ",
+        "x = 2kπ",
+        "x = {kesir:π|4} + kπ"
+      ],
+      "dogru": 0,
+      "aciklama": "Toplamın 2 olması için sin x = 1 ve cos 2x = 1 aynı anda gerekir. sin x = 1 → x = {kesir:π|2} + 2kπ; bu değerlerde cos 2x = cos(π + 4kπ) = −1 olur. Ortak x olmadığından çözüm kümesi boştur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir şehirde gün ışığı süresi (saat), ilkbahar ekinoksundan itibaren geçen t aya bağlı olarak L(t) = 12 + 3·sin({kesir:πt|6}) ile modelleniyor (0 ≤ t ≤ 12). Gün ışığı süresi kaç ay boyunca 13,5 saatten uzundur?",
+      "secenekler": [
+        "2 ay",
+        "3 ay",
+        "4 ay",
+        "6 ay"
+      ],
+      "dogru": 2,
+      "aciklama": "L(t) > 13,5 → sin({kesir:πt|6}) > {kesir:1|2} → {kesir:π|6} < {kesir:πt|6} < {kesir:5π|6} → 1 < t < 5. Süre 5 − 1 = 4 aydır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "sin f(x) = cos g(x) denklemi çözülürken cos g(x) yerine sin({kesir:π|2} − g(x)) yazılabilir.",
+          "dogru": true,
+          "aciklama": "Tümler açı eşitliği cos θ = sin({kesir:π|2} − θ) her θ için geçerlidir; denklem böylece temel sinüs denklemine dönüşür."
+        },
+        {
+          "metin": "a·sin x + b·cos x = c denkleminde {us:c|2} = {us:a|2} + {us:b|2} ise denklemin [0, 2π) aralığında iki farklı kökü vardır.",
+          "dogru": false,
+          "aciklama": "Eşitlik durumunda y = c doğrusu eğriye tepe ya da çukurda teğettir; bir periyotta yalnız bir kök vardır."
+        },
+        {
+          "metin": "{uzunluk:c} > {uzunluk:a} + {uzunluk:b} ise a·sin f(x) + b·cos g(x) = c denkleminin gerçek kökü yoktur.",
+          "dogru": true,
+          "aciklama": "Sol taraf mutlak değerce en çok {uzunluk:a} + {uzunluk:b} olabilir; c bu sınırı aşıyorsa eşitlik sağlanamaz."
+        },
+        {
+          "metin": "sin 2x + cos 2x = 1 denkleminin [0, 2π) aralığında yalnızca 2 kökü vardır.",
+          "dogru": false,
+          "aciklama": "Argüman 2x olduğundan aralığa iki periyot sığar; c = 1 < {kok:2} olduğu için 4 kök vardır: 0, {kesir:π|4}, π, {kesir:5π|4}."
+        },
+        {
+          "metin": "El-Battani'nin düz gölge dediği, yere dik çubuğun yatay zemine düşen gölgesinin çubuk boyuna oranı bugünkü kotanjant fonksiyonuna karşılık gelir.",
+          "dogru": true,
+          "aciklama": "Güneş yüksekliği θ ise gölge s = h·cot θ olur; oran {kesir:s|h} = cot θ'dır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki denklem ve kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "sin f(x) = cos g(x)",
+          "f(x) = {kesir:π|2} − g(x) + 2kπ veya f(x) = {kesir:π|2} + g(x) + 2kπ kollarıyla çözülür"
+        ],
+        [
+          "tan f(x) = cot g(x)",
+          "f(x) = {kesir:π|2} − g(x) + kπ ile çözülür, tanımsız noktalar elenir"
+        ],
+        [
+          "{us:c|2} = {us:a|2} + {us:b|2}",
+          "a·sin x + b·cos x = c denkleminin her periyotta tek kökünün olması"
+        ],
+        [
+          "{uzunluk:c} > {uzunluk:a} + {uzunluk:b}",
+          "a·sin f(x) + b·cos g(x) = c denkleminin çözüm kümesinin boş küme olması"
+        ],
+        [
+          "Düz gölge",
+          "Yere dik çubuğun yatay gölgesinin çubuk boyuna oranı; bugünkü kotanjant"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "sin f(x) = cos g(x) denkleminde cos g(x) yerine sin({kesir:π|2} − g(x)) yazılmasına ___ açı dönüşümü denir.",
+          "cevap": "tümler"
+        },
+        {
+          "metin": "a·sin x + b·cos x = c denkleminde {us:c|2} = {us:a|2} + {us:b|2} ise her periyotta ___ kök bulunur.",
+          "cevap": "tek"
+        },
+        {
+          "metin": "Argümanlar farklıyken {uzunluk:c} = {uzunluk:a} + {uzunluk:b} olduğunda iki terimin aynı anda uç değer alması gerektiğini kullanan yönteme ___ yöntemi denir.",
+          "cevap": "sınırlılık"
+        },
+        {
+          "metin": "a·sin(kx) + b·cos(kx) = c denkleminde k büyüdükçe ___ kısalır ve [0, 2π) aralığındaki kök sayısı artar.",
+          "cevap": "periyot"
+        },
+        {
+          "metin": "El-Battani'nin düz gölge olarak tablolaştırdığı oran bugünkü ___ fonksiyonudur.",
+          "cevap": "kotanjant"
+        }
+      ],
+      "kelimeler": [
+        "tümler",
+        "tek",
+        "sınırlılık",
+        "periyot",
+        "kotanjant"
+      ],
+      "fazla": [
+        "bütünler",
+        "genlik"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir rüzgâr türbini kanadının ucundaki işaretin yerden yüksekliği (metre), t saniyeye bağlı olarak h(t) = 20 + 5{kok:3}·sin({kesir:πt|6}) + 5·cos({kesir:πt|6}) ile modelleniyor. a) İşaretin en yüksek ve en alçak konumunu ve hareketin periyodunu bulunuz. b) İşaret ilk kez hangi anda en yüksek konuma çıkar? c) İlk periyotta (0 ≤ t < 12) işaret kaç saniye boyunca 25 metrenin üzerindedir?",
+      "ipuclari": [
+        "1. adım: Değişken kısım için R = {kok:{us:(5{kok:3})|2} + {us:5|2}} = {kok:75 + 25} = 10 hesaplayın; periyot {kesir:2π|π/6} = 12 saniyedir.",
+        "2. adım: 5{kok:3}·sin u + 5·cos u = 10·sin(u + {kesir:π|6}) olduğunu gösterin (u = {kesir:πt|6}); en yüksek konum için u + {kesir:π|6} = {kesir:π|2} alın.",
+        "3. adım: h(t) = 25 için sin({kesir:πt|6} + {kesir:π|6}) = {kesir:1|2} denklemini çözün, sınır anlar arasında h'nin 25'ten büyük kaldığını kontrol edin."
+      ],
+      "cevap": "a) R = {kok:75 + 25} = 10 olduğundan değişken kısım −10 ile 10 arasında değer alır. En yüksek konum 20 + 10 = 30 m, en alçak konum 20 − 10 = 10 m'dir. Periyot T = {kesir:2π|π/6} = 12 saniyedir.\nb) 10·sin(u + {kesir:π|6}) = 10·(sin u·{kesir:{kok:3}|2} + cos u·{kesir:1|2}) = 5{kok:3}·sin u + 5·cos u olduğundan h(t) = 20 + 10·sin({kesir:πt|6} + {kesir:π|6}). En yüksek konum için {kesir:πt|6} + {kesir:π|6} = {kesir:π|2} → {kesir:πt|6} = {kesir:π|3} → t = 2 saniye.\nc) h(t) = 25 → sin({kesir:πt|6} + {kesir:π|6}) = {kesir:1|2}. 0 ≤ t < 12 için açı [{kesir:π|6}, {kesir:13π|6}) aralığındadır. Sinüsün {kesir:1|2} olduğu açılar {kesir:π|6} ve {kesir:5π|6}'dır: {kesir:πt|6} + {kesir:π|6} = {kesir:π|6} → t = 0; {kesir:πt|6} + {kesir:π|6} = {kesir:5π|6} → t = 4. Kontrol: t = 4 için h = 20 + 5{kok:3}·{kesir:{kok:3}|2} + 5·(−{kesir:1|2}) = 20 + 7,5 − 2,5 = 25. Bu iki an arasında (örneğin t = 2'de h = 30) sinüs {kesir:1|2}'den büyüktür. Dolayısıyla işaret 0 < t < 4 aralığında, yani ilk periyotta 4 saniye boyunca 25 metrenin üzerindedir."
+    }
+  ]
+}

@@ -1,0 +1,558 @@
+{
+  "ad": "11-biyoloji-15",
+  "sinif": 11,
+  "ders": "biyoloji",
+  "ders_adi": "Biyoloji",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-28",
+  "unite": "1. Tema: Tepki",
+  "konu": "Kaslarda Kasılmanın Kontrolü, Kasların Kasılma Mekanizması",
+  "ciktilar": [
+    "BİY.11.1.10. İskelet kaslarının kasılma ve gevşeme mekanizması ile ilgili bilimsel model oluşturabilme",
+    "a) İskelet kaslarının kasılma ve gevşeme mekanizmasını açıklayan modeller önerir.",
+    "b) İskelet kaslarının kasılma ve gevşeme mekanizması ile ilgili oluşturduğu modeli bilimsel modellerle karşılaştırır ve elde ettiği kanıtlarla modelini yeniler.",
+    "Çapraz köprü döngüsünü, uyarılma-kasılma eşleşmesini ve gevşemenin moleküler kontrolünü sarkomer ölçümleriyle sınayarak açıklayabilme"
+  ],
+  "giris": "Geçen hafta sarkomerin yapısını, kayan iplikler modelinin temel fikrini ve motor uç plaktaki uyarımı tanıdık. Bu hafta bir adım ileri gidiyor ve bir {koyu:bilim insanı gibi model kuruyoruz}: Önce kendi modelimizi öneriyor, ardından onu ölçümlerle ve bilimsel modelle karşılaştırıp yeniliyoruz. Bu süreçte {koyu:çapraz köprü döngüsünü} adım adım çözümlüyor, elektriksel uyarının {koyu:kalsiyum anahtarıyla} nasıl mekanik harekete dönüştüğünü, kasın nasıl gevşediğini ve kasılma kuvvetinin nasıl ayarlandığını inceliyoruz. Son olarak sarkomer bant uzunluklarını hesaplayarak modelimizi sayısal kanıtlarla sınıyoruz.",
+  "ozet": [
+    "{koyu:Bilimsel model:} Kas kasılmasını açıklayan model; gözlem, öneri, kanıtla karşılaştırma ve yenileme basamaklarından geçer; A bandının sabit kalması, ipliklerin kısaldığını savunan modeli çürütüp kayan iplikler modelini destekler.",
+    "{koyu:Çapraz köprü döngüsü:} ATP'nin bağlanması miyozin başını aktinden ayırır, ATP'nin hidrolizi başı kurar, Pi ayrılırken baş aktine bağlanır ve güç vuruşuyla aktini sarkomer merkezine çeker.",
+    "{koyu:Uyarılma-kasılma eşleşmesi:} Sarkolemmadaki uyarı T tübülleriyle sarkoplazmik retikuluma ulaşır; salınan {us:Ca|2+} troponine bağlanınca tropomiyozin kayar ve bağlanma bölgeleri açılır.",
+    "{koyu:Gevşemenin kontrolü:} Asetilkolinesteraz asetilkolini yıkar, {us:Ca|2+} pompası ATP harcayarak kalsiyumu geri toplar, tropomiyozin bağlanma bölgelerini yeniden örter ve sarkomer pasif olarak uzar.",
+    "{koyu:Kuvvetin ayarlanması:} Kasılma kuvveti uyarılan motor birim sayısına, uyarı sıklığına, lif türüne ve aktin-miyozin örtüşmesini belirleyen sarkomer başlangıç boyuna bağlıdır.",
+    "{koyu:Sayısal sınama:} I bandı = sarkomer boyu − A bandı, H bandı = sarkomer boyu − 2 × aktin boyu ilişkileriyle model kasılma ve gevşeme durumları için hesaplanarak doğrulanabilir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Bilimsel Model Kurmak: Kas Kasılmasını Kanıtlarla Açıklamak",
+      "metin": [
+        "{koyu:Bilimsel model}, doğrudan göremediğimiz bir olayın nasıl gerçekleştiğini açıklamak ve sonuçlarını önceden tahmin etmek için kurulan zihinsel, çizimsel ya da fiziksel bir temsildir. Bir model ancak gözlemlerle uyumlu olduğu sürece geçerlidir; yeni bir kanıt modelle çelişirse model {koyu:değiştirilir veya terk edilir}. Kas kasılması bu sürecin çok güzel bir örneğidir. Çıplak gözle bakıldığında kasılan kasın {koyu:boyunun kısaldığı, kalınlaştığı ama hacminin değişmediği} görülür. Bu gözlemi açıklamak için öğrenciler genellikle iki tür model önerir: Birinci modelde protein iplikleri yay ya da akordeon gibi {koyu:kıvrılarak kendi boylarını kısaltır}; ikinci modelde ise iplikler boylarını korur ve {koyu:birbirinin üzerinden kayarak} iç içe geçer.",
+        "Bu iki modeli ayırt edebilmek için ölçülebilir bir tahmin gerekir. İpliklerin kısaldığını savunan modele göre kasılmada {koyu:A bandı da kısalmalıdır}, çünkü A bandının boyu kalın miyozin ipliğinin boyuna eşittir. Kayan iplikler modeline göre ise A bandı sabit kalmalı, yalnızca aktin içeren I bandı ve yalnızca miyozin içeren H bandı daralmalıdır. 1954 yılında birbirinden bağımsız iki araştırma ekibi, {koyu:Hugh E. Huxley ile Jean Hanson} ve {koyu:Andrew F. Huxley ile Rolf Niedergerke}, mikroskop ölçümlerinde kasılma sırasında A bandının sabit kaldığını, I ve H bantlarının daraldığını gösterdi. Bu kanıt kıvrılma modelini çürüttü ve {koyu:kayan iplikler modelini} güçlendirdi.",
+        "Bu hafta sizden beklenen de aynı yolu izlemenizdir: Tarak dişlerinin iç içe geçmesi, iki el parmağının kenetlenmesi ya da renkli kartonlardan yapılmış iplikler gibi basit malzemelerle bir {koyu:fiziksel model} kurmak; modelin kasılmada ve gevşemede bantlara ne olacağını tahmin etmek ve tahmini gerçek ölçümlerle karşılaştırmak. Model kanıtla uyuşmuyorsa {koyu:modeli yenilemek} bir başarısızlık değil, bilimsel düşünmenin kendisidir. Unutmayın, her model gerçeğin sadeleştirilmiş bir temsilidir ve sınırlılıkları vardır; örneğin karton modelde ATP harcanması ya da kalsiyumun rolü görünmez."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Önerilen Model",
+          "Tahmin Ettiği Sonuç",
+          "Gözlenen Kanıt",
+          "Karar"
+        ],
+        "satirlar": [
+          [
+            "İpliklerin kıvrılarak kısalması",
+            "A bandı, I bandı ve H bandı birlikte kısalır",
+            "A bandı sabit, I ve H bantları daralıyor",
+            "Kanıtla çelişir, terk edilir"
+          ],
+          [
+            "Aktinin miyozin üzerinde kayması",
+            "A bandı sabit; I ve H bantları daralır, Z çizgileri yaklaşır",
+            "Tahmin ölçümlerle uyumlu",
+            "Desteklenir, benimsenir"
+          ],
+          [
+            "Kasın içine sıvı dolması (şişme modeli)",
+            "Kas hacmi artar",
+            "Kas hacmi sabit kalıyor",
+            "Kanıtla çelişir, terk edilir"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Bilimsel Model",
+          "metin": "Doğrudan gözlenemeyen bir olayı açıklamak ve tahmin yapmak için kurulan, kanıtlarla sınanan ve gerektiğinde yenilenen temsil biçimidir. Bir modelin değeri, yaptığı tahminlerin ölçümlerle ne kadar uyuştuğuna bağlıdır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kendi Modelinizi Sınarken",
+          "metin": "Modelinize mutlaka şu soruyu sorun: Kasılmada A bandı ne olur? A bandını kısaltan her model, gerçek ölçümlerle çelişir."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><marker id=\"ok1\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#475569\"/></marker></defs><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">KAS KASILMASINI MODELLEME: ÖNERİ, KANIT VE YENİLEME DÖNGÜSÜ</text><rect x=\"16\" y=\"55\" width=\"128\" height=\"100\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">1. GÖZLEM</text><text x=\"80\" y=\"100\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Kas kısalır ve</text><text x=\"80\" y=\"116\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">kalınlaşır;</text><text x=\"80\" y=\"132\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">hacmi sabit kalır.</text><line x1=\"144\" y1=\"105\" x2=\"164\" y2=\"105\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok1)\"/><rect x=\"166\" y=\"55\" width=\"128\" height=\"100\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"230\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\">2. ÖNERİ</text><text x=\"230\" y=\"100\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Model A: İplikler</text><text x=\"230\" y=\"116\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">kıvrılıp kısalır.</text><text x=\"230\" y=\"132\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Model B: İplikler</text><text x=\"230\" y=\"146\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">kayar.</text><line x1=\"294\" y1=\"105\" x2=\"314\" y2=\"105\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok1)\"/><rect x=\"316\" y=\"55\" width=\"128\" height=\"100\" rx=\"10\" fill=\"#fce7f3\" stroke=\"#db2777\" stroke-width=\"2\"/><text x=\"380\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9d174d\">3. KANIT</text><text x=\"380\" y=\"100\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">A bandı sabit;</text><text x=\"380\" y=\"116\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">I ve H bantları</text><text x=\"380\" y=\"132\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">daralıyor.</text><line x1=\"444\" y1=\"105\" x2=\"464\" y2=\"105\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok1)\"/><rect x=\"466\" y=\"55\" width=\"128\" height=\"100\" rx=\"10\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"530\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#5b21b6\">4. KARŞILAŞTIR</text><text x=\"530\" y=\"100\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Model A kanıtla</text><text x=\"530\" y=\"116\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">çelişir; Model B</text><text x=\"530\" y=\"132\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">uyumludur.</text><line x1=\"594\" y1=\"105\" x2=\"614\" y2=\"105\" stroke=\"#475569\" stroke-width=\"2\" marker-end=\"url(#ok1)\"/><rect x=\"616\" y=\"55\" width=\"128\" height=\"100\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"680\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">5. YENİLE</text><text x=\"680\" y=\"100\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Kayan iplikler</text><text x=\"680\" y=\"116\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">modeli ATP ve</text><text x=\"680\" y=\"132\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Ca²⁺ ile zenginleşir.</text><path d=\"M680,155 L680,190 L230,190 L230,160\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6,4\" marker-end=\"url(#ok1)\"/><text x=\"455\" y=\"183\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#475569\">Yeni bir kanıt gelirse model yeniden sınanır</text><rect x=\"40\" y=\"210\" width=\"680\" height=\"70\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"380\" y=\"235\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">1954: Tarihsel Kanıt</text><text x=\"380\" y=\"255\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">H. E. Huxley - J. Hanson ve A. F. Huxley - R. Niedergerke çalışmaları kasılmada</text><text x=\"380\" y=\"271\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">A bandının sabit kaldığını göstererek kayan iplikler modelini destekledi.</text></svg>"
+    },
+    {
+      "baslik": "Çapraz Köprü Döngüsü: Miyozin Başının Adım Adım Çalışması",
+      "metin": [
+        "Kayan iplikler modelinin en önemli sorusu şudur: Aktini kaydıran kuvvet nereden gelir? Cevap, kalın miyozin ipliğinden dışarı doğru uzanan {koyu:miyozin başlarındadır}. Her miyozin başı hem aktine bağlanabilen bir bölge hem de ATP'yi parçalayan {koyu:ATPaz} etkinliği taşır. Baş, aktine bağlanıp bükülerek onu çeken, sonra bırakıp yeniden tutunan küçük bir motor gibi çalışır. Bu tekrarlanan bağlanma-çekme-ayrılma hareketine {koyu:çapraz köprü döngüsü} denir.",
+        "Döngü dört adımda özetlenebilir. {koyu:(1) ATP bağlanması:} Bir ATP molekülü miyozin başına bağlanır ve baş aktinden ayrılır. {koyu:(2) ATP hidrolizi:} Baştaki ATPaz, ATP'yi ADP ve inorganik fosfata (Pi) parçalar; açığa çıkan enerjiyle baş, yayı kurulmuş bir mandal gibi {koyu:yüksek enerjili konuma} geçer. {koyu:(3) Köprünün kurulması:} Sitoplazmada yeterli {us:Ca|2+} varsa aktin üzerindeki bağlanma bölgeleri açıktır; kurulu baş aktine bağlanır ve Pi ayrılır. {koyu:(4) Güç vuruşu:} Baş bükülerek aktini sarkomerin ortasındaki {koyu:M çizgisine} doğru çeker, bu sırada ADP de ayrılır. Baş şimdi aktine sıkıca bağlıdır ve yeni bir ATP gelene kadar bu durumda kalır.",
+        "Döngünün en dikkat çekici sonucu şudur: ATP'nin {koyu:kasılmadaki görevi yalnızca enerji vermek değil}, aynı zamanda miyozin başını aktinden {koyu:ayırmaktır}. ATP yoksa baş aktine yapışık kalır; ölümden sonra görülen ölüm katılığı bu nedenle oluşur. Ayrıca miyozin başları aynı anda değil, kürekçilerin farklı zamanlarda kürek çekmesi gibi {koyu:sırayla} çalışır; böylece bazı başlar ayrılırken diğerleri aktini tuttuğu için iplik geri kaymaz ve kasılma düzgün ilerler. Bir sarkomerin her iki yarısındaki başlar aktini merkeze çektiğinden iki Z çizgisi birbirine yaklaşır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Döngü Adımı",
+          "Miyozin Başının Durumu",
+          "Kullanılan / Ayrılan Madde"
+        ],
+        "satirlar": [
+          [
+            "1. ATP bağlanması",
+            "Baş aktinden ayrılır",
+            "ATP bağlanır"
+          ],
+          [
+            "2. ATP hidrolizi",
+            "Baş kurulur, yüksek enerjili konuma geçer",
+            "ATP → ADP + Pi (başta kalır)"
+          ],
+          [
+            "3. Köprü kurulması",
+            "Baş aktindeki açık bölgeye bağlanır",
+            "Pi ayrılır; {us:Ca|2+} gerekir"
+          ],
+          [
+            "4. Güç vuruşu",
+            "Baş bükülür, aktini M çizgisine çeker",
+            "ADP ayrılır"
+          ],
+          [
+            "ATP gelmezse",
+            "Baş aktine bağlı kalır (rigor durumu)",
+            "Döngü durur"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "ATP'nin Çifte Görevi",
+          "metin": "Çapraz köprü döngüsünde ATP'nin hidrolizi miyozin başını kurarak hareket enerjisini sağlar; ATP'nin bağlanması ise başı aktinden ayırır. Bu iki görevden biri bile aksarsa kasılma-gevşeme döngüsü durur."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Güç Vuruşunun Yönü",
+          "metin": "Güç vuruşunda miyozin değil aktin hareket eder ve her iki yarı sarkomerde de aktin, sarkomerin ortasına (M çizgisine) doğru çekilir. Bu yüzden Z çizgileri yaklaşır, H bandı daralır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><marker id=\"ok2\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#0f172a\"/></marker></defs><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">ÇAPRAZ KÖPRÜ DÖNGÜSÜ: MİYOZİN BAŞININ DÖRT ADIMI</text><rect x=\"40\" y=\"48\" width=\"290\" height=\"90\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"185\" y=\"74\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e40af\">1. ATP BAĞLANIR</text><text x=\"185\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">ATP miyozin başına bağlanır;</text><text x=\"185\" y=\"114\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">baş aktinden ayrılır.</text><rect x=\"430\" y=\"48\" width=\"290\" height=\"90\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"575\" y=\"74\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">2. ATP HİDROLİZİ</text><text x=\"575\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">ATP → ADP + Pi; enerji başta</text><text x=\"575\" y=\"114\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">depolanır, baş kurulur.</text><rect x=\"430\" y=\"178\" width=\"290\" height=\"90\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"575\" y=\"204\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#166534\">3. KÖPRÜ KURULUR</text><text x=\"575\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Ca²⁺ ile açılan bölgeye baş</text><text x=\"575\" y=\"244\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">bağlanır; Pi ayrılır.</text><rect x=\"40\" y=\"178\" width=\"290\" height=\"90\" rx=\"10\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"185\" y=\"204\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#991b1b\">4. GÜÇ VURUŞU</text><text x=\"185\" y=\"226\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Baş bükülür, aktini M çizgisine</text><text x=\"185\" y=\"244\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">çeker; ADP ayrılır.</text><line x1=\"332\" y1=\"93\" x2=\"426\" y2=\"93\" stroke=\"#0f172a\" stroke-width=\"2.5\" marker-end=\"url(#ok2)\"/><line x1=\"575\" y1=\"140\" x2=\"575\" y2=\"174\" stroke=\"#0f172a\" stroke-width=\"2.5\" marker-end=\"url(#ok2)\"/><line x1=\"428\" y1=\"223\" x2=\"334\" y2=\"223\" stroke=\"#0f172a\" stroke-width=\"2.5\" marker-end=\"url(#ok2)\"/><line x1=\"185\" y1=\"176\" x2=\"185\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"2.5\" marker-end=\"url(#ok2)\"/><circle cx=\"380\" cy=\"158\" r=\"34\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"380\" y=\"154\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Döngü</text><text x=\"380\" y=\"169\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">tekrarlanır</text><text x=\"380\" y=\"290\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">ATP gelmezse baş aktine bağlı kalır: rigor durumu (ölüm katılığının nedeni)</text></svg>"
+    },
+    {
+      "baslik": "Uyarılma-Kasılma Eşleşmesi: Elektriksel Uyarıdan Kalsiyum Anahtarına",
+      "metin": [
+        "Motor nörondan gelen uyarı kas lifinde bir {koyu:aksiyon potansiyeli} başlatır; ancak bu elektriksel olayın mekanik kasılmaya dönüşmesi için bir aracıya ihtiyaç vardır. Elektriksel uyarının kasılmaya çevrilmesini sağlayan olaylar dizisine {koyu:uyarılma-kasılma eşleşmesi} denir ve bu dizinin anahtarı {koyu:kalsiyum iyonudur}. Kas lifi kalın bir hücre olduğu için zardaki uyarının hücrenin derinliklerindeki miyofibrillere aynı anda ulaşması gerekir. Bunu sarkolemmanın hücre içine doğru uzanan borucuk biçimli girintileri olan {koyu:T tübülleri (enine tübüller)} sağlar.",
+        "T tübülleri, kalsiyum deposu olan {koyu:sarkoplazmik retikulumun} keseleriyle çok yakın temas hâlindedir. Uyarı T tübülleriyle derine inince sarkoplazmik retikulumdaki {koyu:kalsiyum kanalları açılır} ve {us:Ca|2+} iyonları derişim farkı nedeniyle difüzyonla sarkoplazmaya geçer. Dinlenme hâlinde aktin ipliği boyunca uzanan {koyu:tropomiyozin} iplikçikleri, aktin üzerindeki miyozin bağlanma bölgelerini örterek kasılmayı engeller. Tropomiyozine bağlı {koyu:troponin} kompleksi ise bir kilit gibi davranır: Sarkoplazmaya salınan {us:Ca|2+} troponine bağlanınca troponinin şekli değişir, tropomiyozini çekerek bağlanma bölgelerini açığa çıkarır.",
+        "Bağlanma bölgeleri açıldığında önceki bölümde incelediğimiz çapraz köprü döngüsü başlar. Bu modelde kalsiyum bir {koyu:açma-kapama düğmesi}, ATP ise {koyu:yakıt} gibidir: Yakıt (ATP) olsa bile düğme açılmadıkça (Ca²⁺ yoksa) motor çalışmaz; düğme açık olsa bile yakıt yoksa motor kilitlenir. Kas lifi bir kez uyarıldığında sarkoplazmaya salınan kalsiyum tüm sarkomerlerde aynı anda kasılmayı başlatır; bu da kas lifinin bütünüyle ve eşzamanlı kasılmasını sağlar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yapı / Molekül",
+          "Dinlenme Hâlinde",
+          "Uyarılma Sırasında"
+        ],
+        "satirlar": [
+          [
+            "Sarkolemma",
+            "Dinlenme potansiyelinde",
+            "Aksiyon potansiyeli yayılır"
+          ],
+          [
+            "T tübülleri",
+            "Uyarı iletmez",
+            "Uyarıyı lifin derinine taşır"
+          ],
+          [
+            "Sarkoplazmik retikulum",
+            "{us:Ca|2+} depolar, kanallar kapalı",
+            "Kanallar açılır, {us:Ca|2+} salınır"
+          ],
+          [
+            "Troponin",
+            "Kalsiyumsuz, tropomiyozini yerinde tutar",
+            "{us:Ca|2+} bağlar, şekli değişir"
+          ],
+          [
+            "Tropomiyozin",
+            "Aktindeki bağlanma bölgelerini örter",
+            "Kayarak bölgeleri açar"
+          ],
+          [
+            "Miyozin başı",
+            "Kurulu ama aktine bağlanamaz",
+            "Aktine bağlanır, güç vuruşu yapar"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Uyarılma-Kasılma Eşleşmesi",
+          "metin": "Kas lifi zarında oluşan elektriksel uyarının T tübülleri, sarkoplazmik retikulumdan {us:Ca|2+} salınımı ve troponin-tropomiyozin değişimi aracılığıyla mekanik kasılmaya dönüştürülmesidir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Kalsiyumun Salınımı Enerji İstemez",
+          "metin": "{us:Ca|2+} iyonlarının sarkoplazmik retikulumdan sitoplazmaya geçişi derişim farkıyla difüzyonla olur. Enerji (ATP) gerektiren adım, kalsiyumun derişim farkına karşı depoya geri pompalanmasıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><marker id=\"ok3\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#334155\"/></marker></defs><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">UYARILMA-KASILMA EŞLEŞMESİ: KALSİYUM ANAHTARI</text><rect x=\"30\" y=\"48\" width=\"200\" height=\"80\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"130\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">1. AKSİYON POTANSİYELİ</text><text x=\"130\" y=\"90\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Asetilkolinle başlayan</text><text x=\"130\" y=\"106\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">uyarı sarkolemmaya yayılır.</text><rect x=\"280\" y=\"48\" width=\"200\" height=\"80\" rx=\"10\" fill=\"#e0e7ff\" stroke=\"#4f46e5\" stroke-width=\"2\"/><text x=\"380\" y=\"70\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#3730a3\">2. T TÜBÜLLERİ</text><text x=\"380\" y=\"90\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Uyarı zarın içe doğru</text><text x=\"380\" y=\"106\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">girintileriyle derine iner.</text><rect x=\"530\" y=\"48\" width=\"200\" height=\"80\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"630\" y=\"70\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#92400e\">3. SARKOPLAZMİK RET.</text><text x=\"630\" y=\"90\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Kalsiyum kanalları açılır,</text><text x=\"630\" y=\"106\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Ca²⁺ sitoplazmaya geçer.</text><rect x=\"530\" y=\"168\" width=\"200\" height=\"80\" rx=\"10\" fill=\"#fce7f3\" stroke=\"#db2777\" stroke-width=\"2\"/><text x=\"630\" y=\"190\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#9d174d\">4. TROPONİN</text><text x=\"630\" y=\"210\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Ca²⁺ troponine bağlanır,</text><text x=\"630\" y=\"226\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">proteinin şekli değişir.</text><rect x=\"280\" y=\"168\" width=\"200\" height=\"80\" rx=\"10\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"380\" y=\"190\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#5b21b6\">5. TROPOMİYOZİN</text><text x=\"380\" y=\"210\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Aktindeki bağlanma</text><text x=\"380\" y=\"226\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">bölgelerinden çekilir.</text><rect x=\"30\" y=\"168\" width=\"200\" height=\"80\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"130\" y=\"190\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">6. ÇAPRAZ KÖPRÜ</text><text x=\"130\" y=\"210\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">Miyozin başları aktine</text><text x=\"130\" y=\"226\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#334155\">bağlanır, kayma başlar.</text><line x1=\"232\" y1=\"88\" x2=\"276\" y2=\"88\" stroke=\"#334155\" stroke-width=\"2.5\" marker-end=\"url(#ok3)\"/><line x1=\"482\" y1=\"88\" x2=\"526\" y2=\"88\" stroke=\"#334155\" stroke-width=\"2.5\" marker-end=\"url(#ok3)\"/><line x1=\"630\" y1=\"130\" x2=\"630\" y2=\"164\" stroke=\"#334155\" stroke-width=\"2.5\" marker-end=\"url(#ok3)\"/><line x1=\"528\" y1=\"208\" x2=\"484\" y2=\"208\" stroke=\"#334155\" stroke-width=\"2.5\" marker-end=\"url(#ok3)\"/><line x1=\"278\" y1=\"208\" x2=\"234\" y2=\"208\" stroke=\"#334155\" stroke-width=\"2.5\" marker-end=\"url(#ok3)\"/><rect x=\"30\" y=\"262\" width=\"700\" height=\"28\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\"/><text x=\"380\" y=\"281\" text-anchor=\"middle\" font-size=\"11\" fill=\"#334155\">Kalsiyum açma-kapama düğmesi, ATP ise yakıttır: Biri eksikse kasılma-gevşeme döngüsü işlemez.</text></svg>"
+    },
+    {
+      "baslik": "Gevşemenin Kontrolü: Asetilkolinesteraz, Kalsiyum Pompası ve Tropomiyozin",
+      "metin": [
+        "Kasılma kadar {koyu:gevşeme de denetimli} bir süreçtir. Motor nöron uyarı göndermeyi bıraktığında ilk olarak sinaps boşluğunda kalan asetilkolin ortadan kaldırılmalıdır; aksi hâlde kas zarı uyarılmaya devam ederdi. Bu görevi sarkolemma yüzeyinde ve sinaps boşluğunda bulunan {koyu:asetilkolinesteraz} enzimi üstlenir. Enzim asetilkolini {koyu:asetik asit (asetat) ve koline} parçalar; kolin sinir ucuna geri alınarak yeniden asetilkolin yapımında kullanılır. Böylece kas zarı kısa sürede dinlenme potansiyeline döner.",
+        "Zar uyarısı bitince sarkoplazmik retikulumdaki kalsiyum kanalları kapanır ve retikulum zarındaki {koyu:kalsiyum pompaları}, {us:Ca|2+} iyonlarını {koyu:ATP harcayarak aktif taşımayla} depoya geri toplar. Sarkoplazmadaki kalsiyum azalınca troponin kalsiyumu bırakır ve {koyu:tropomiyozin} yeniden aktindeki bağlanma bölgelerini örter. Bu sırada miyozin başlarına bağlanan ATP başları aktinden ayırır; yeni köprü kurulamadığı için aktin iplikleri serbest kalır.",
+        "Gevşeme sırasında sarkomer kendi kendine uzamaz; kas yalnızca çekebildiği için {koyu:uzama pasif bir olaydır}. Sarkomerin eski boyuna dönmesini antagonist kasın kasılması, yer çekimi ve kas içindeki esnek yapıların geri yaylanması sağlar. Bu bilgi, gevşemenin kontrol noktalarına etki eden maddeleri anlamayı da kolaylaştırır: Örneğin {koyu:kürar} adlı bitkisel zehir asetilkolin reseptörlerini kapatarak kasın uyarılmasını engeller ve felce yol açar; {koyu:botulinum toksini} asetilkolin salınımını engeller; asetilkolinesterazı baskılayan bazı tarım ilaçları ve sinir gazları ise asetilkolinin birikmesine ve {koyu:kontrolsüz kas kasılmalarına} neden olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kontrol Noktası",
+          "Kasılma Sırasında",
+          "Gevşeme Sırasında"
+        ],
+        "satirlar": [
+          [
+            "Asetilkolin",
+            "Reseptörlere bağlı, zarı uyarır",
+            "Asetilkolinesterazla parçalanır"
+          ],
+          [
+            "Sarkoplazmik retikulum",
+            "Kanallar açık, {us:Ca|2+} salınır",
+            "Pompalar {us:Ca|2+} iyonlarını geri toplar"
+          ],
+          [
+            "Sarkoplazmadaki {us:Ca|2+}",
+            "Yüksek",
+            "Düşük"
+          ],
+          [
+            "Troponin-tropomiyozin",
+            "Bağlanma bölgeleri açık",
+            "Bağlanma bölgeleri örtülü"
+          ],
+          [
+            "ATP kullanımı",
+            "Güç vuruşu için hidroliz",
+            "Kalsiyum pompası ve başın ayrılması için"
+          ],
+          [
+            "Sarkomer boyu",
+            "Kısalır (aktif)",
+            "Eski boyuna döner (pasif)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Gevşemenin Üç Koşulu",
+          "metin": "Bir kas lifinin gevşeyebilmesi için (1) asetilkolinin parçalanması, (2) {us:Ca|2+} iyonlarının ATP ile sarkoplazmik retikuluma geri pompalanması ve (3) miyozin başlarının ATP bağlayarak aktinden ayrılması gerekir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Gevşeme Neden Pasiftir?",
+          "metin": "Kaslar itme kuvveti üretemez. Kasılmış bir kasın yeniden uzaması, antagonist kasın çekmesi ve dokunun esnekliği sayesinde gerçekleşir; bu yüzden kemik-kas sisteminde zıt çalışan kas çiftleri zorunludur."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><defs><marker id=\"ok4\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#0f172a\"/></marker></defs><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">KASILMA DURUMU VE GEVŞEMEYE GEÇİŞ</text><rect x=\"25\" y=\"48\" width=\"300\" height=\"230\" rx=\"12\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"175\" y=\"76\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#991b1b\">KASILMA</text><text x=\"45\" y=\"108\" font-size=\"11.5\" fill=\"#334155\">• Asetilkolin reseptöre bağlıdır.</text><text x=\"45\" y=\"138\" font-size=\"11.5\" fill=\"#334155\">• SR kanalları açık, Ca²⁺ yüksek.</text><text x=\"45\" y=\"168\" font-size=\"11.5\" fill=\"#334155\">• Aktindeki bağlanma bölgeleri açık.</text><text x=\"45\" y=\"198\" font-size=\"11.5\" fill=\"#334155\">• Çapraz köprüler döngüde.</text><text x=\"45\" y=\"228\" font-size=\"11.5\" fill=\"#334155\">• Z çizgileri birbirine yaklaşır.</text><text x=\"175\" y=\"262\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#991b1b\">Sarkomer aktif olarak kısalır</text><rect x=\"435\" y=\"48\" width=\"300\" height=\"230\" rx=\"12\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"585\" y=\"76\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#166534\">GEVŞEME</text><text x=\"452\" y=\"108\" font-size=\"11.5\" fill=\"#334155\">• Asetilkolinesteraz ACh'yi yıkar.</text><text x=\"452\" y=\"138\" font-size=\"11.5\" fill=\"#334155\">• Ca²⁺ pompası ATP ile geri toplar.</text><text x=\"452\" y=\"168\" font-size=\"11.5\" fill=\"#334155\">• Tropomiyozin bölgeleri örter.</text><text x=\"452\" y=\"198\" font-size=\"11.5\" fill=\"#334155\">• ATP ile baş aktinden ayrılır.</text><text x=\"452\" y=\"228\" font-size=\"11.5\" fill=\"#334155\">• Z çizgileri birbirinden uzaklaşır.</text><text x=\"585\" y=\"262\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">Sarkomer pasif olarak uzar</text><line x1=\"332\" y1=\"160\" x2=\"428\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"3\" marker-end=\"url(#ok4)\"/><text x=\"380\" y=\"140\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Sinir uyarısı</text><text x=\"380\" y=\"184\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">durur</text></svg>"
+    },
+    {
+      "baslik": "Kasılma Kuvvetinin Ayarlanması: Motor Birim, Lif Türü ve Sarkomer Boyu",
+      "metin": [
+        "Aynı kas bir kalemi tutarken de ağır bir kutuyu kaldırırken de kullanılır; peki kas ürettiği kuvveti nasıl ayarlar? Tek bir kas lifi eşik değerin üzerindeki uyarıya her seferinde tam güçle cevap verdiği için kuvvetin ayarı öncelikle {koyu:kaç motor birimin} devreye sokulduğuna bağlıdır. Küçük bir yük için az sayıda motor birim, büyük bir yük için giderek daha fazla motor birim uyarılır; bu olaya {koyu:motor birim katılımı (devreye alma)} denir. Göz ve parmak kasları gibi {koyu:ince ayar gerektiren} kaslarda bir motor nöron az sayıda lifi denetler; bacak ve sırt kasları gibi {koyu:büyük kuvvet üreten} kaslarda ise bir motor nöron çok sayıda lifi uyarır. Kuvveti artıran ikinci yol, geçen hafta gördüğümüz uyarı sıklığının artırılmasıdır.",
+        "Kuvveti etkileyen üçüncü etmen kas liflerinin türüdür. {koyu:Yavaş kasılan (kırmızı) lifler} miyoglobin, mitokondri ve kılcal damar bakımından zengindir; enerjisini çoğunlukla oksijenli solunumla sağlar ve {koyu:yorulmaya dayanıklıdır}; uzun mesafe koşusu ve duruşu koruyan kaslar bu liflerden zengindir. {koyu:Hızlı kasılan (beyaz) lifler} ise daha az miyoglobin ve mitokondri içerir, glikojen deposu fazladır; kısa sürede büyük kuvvet üretir ancak laktik asit fermantasyonuna daha çok başvurduğu için {koyu:çabuk yorulur}; sürat koşusu ve ağırlık kaldırma bu liflere dayanır.",
+        "Dördüncü etmen sarkomerin kasılmaya başladığı andaki boyudur ve kayan iplikler modelinin önemli bir tahminidir. Kuvveti oluşturan çapraz köprü sayısı, aktin ile miyozinin {koyu:örtüşme miktarına} bağlıdır. Sarkomer {koyu:çok gerilmişse} aktin ile miyozin az örtüşür, az köprü kurulur ve kuvvet düşer. Sarkomer {koyu:çok kısalmışsa} karşı taraftan gelen aktin iplikleri birbirinin üzerine biner, miyozin uçları Z çizgilerine dayanır ve kuvvet yine azalır. En büyük kuvvet, köprü kurabilecek tüm miyozin başlarının aktinle karşılaştığı {koyu:orta (optimum) sarkomer boyunda} elde edilir. Bu ilişkinin deneylerle doğrulanması, kayan iplikler modeline yönelik en güçlü kanıtlardan biri olmuştur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Yavaş Kasılan (Kırmızı) Lif",
+          "Hızlı Kasılan (Beyaz) Lif"
+        ],
+        "satirlar": [
+          [
+            "Kasılma hızı",
+            "Yavaş",
+            "Hızlı"
+          ],
+          [
+            "Miyoglobin ve kılcal damar",
+            "Bol (koyu kırmızı renk)",
+            "Az (açık renk)"
+          ],
+          [
+            "Mitokondri sayısı",
+            "Fazla",
+            "Az"
+          ],
+          [
+            "Başlıca enerji yolu",
+            "Oksijenli solunum",
+            "Glikoliz ve laktik asit fermantasyonu"
+          ],
+          [
+            "Yorulma",
+            "Geç yorulur",
+            "Çabuk yorulur"
+          ],
+          [
+            "Örnek etkinlik",
+            "Uzun mesafe koşusu, duruşun korunması",
+            "Sürat koşusu, ağırlık kaldırma"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Ya Hep Ya Hiç Lif İçin Geçerlidir",
+          "metin": "Tek bir kas lifi ya tam kasılır ya hiç kasılmaz; ancak bütün bir kas, farklı sayıda motor birimi devreye alarak kademeli kuvvet üretebilir. Bu iki bilgiyi karıştırmayın."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Uzunluk-Kuvvet Grafiğini Okumak",
+          "metin": "Grafikte kuvvet orta sarkomer boyunda zirve yapar. Grafiğin sağ kolu az örtüşmeyi, sol kolu aktinlerin üst üste binmesini gösterir; her iki uçta da kurulan köprü sayısı azalır."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">SARKOMER BAŞLANGIÇ BOYU VE KASILMA KUVVETİ İLİŞKİSİ</text><line x1=\"90\" y1=\"250\" x2=\"700\" y2=\"250\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"90\" y1=\"250\" x2=\"90\" y2=\"50\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"395\" y=\"278\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">Sarkomer başlangıç boyu (kısa → uzun)</text><text x=\"40\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\" transform=\"rotate(-90 40 150)\">Kasılma kuvveti</text><polyline points=\"120,240 230,120 330,72 420,72 650,240\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"200\" cy=\"153\" r=\"6\" fill=\"#2563eb\"/><circle cx=\"375\" cy=\"72\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"560\" cy=\"174\" r=\"6\" fill=\"#d97706\"/><rect x=\"105\" y=\"175\" width=\"170\" height=\"44\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\"/><text x=\"190\" y=\"193\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e40af\">Çok kısa sarkomer</text><text x=\"190\" y=\"209\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Aktinler üst üste biner</text><rect x=\"290\" y=\"85\" width=\"170\" height=\"44\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\"/><text x=\"375\" y=\"103\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#166534\">Optimum boy</text><text x=\"375\" y=\"119\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">En çok çapraz köprü</text><rect x=\"520\" y=\"110\" width=\"175\" height=\"44\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\"/><text x=\"607\" y=\"128\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#92400e\">Çok gerilmiş sarkomer</text><text x=\"607\" y=\"144\" text-anchor=\"middle\" font-size=\"10\" fill=\"#334155\">Aktin-miyozin örtüşmesi az</text><text x=\"655\" y=\"238\" text-anchor=\"end\" font-size=\"10\" fill=\"#475569\">Örtüşme yok: kuvvet sıfır</text></svg>"
+    },
+    {
+      "baslik": "Modeli Sayılarla Sınamak: Sarkomer ve Bant Uzunluğu Hesapları",
+      "metin": [
+        "Bir modelin gücü, sayısal tahminler yapabilmesinden gelir. Kayan iplikler modeline göre aktin ve miyozin ipliklerinin boyu sabit olduğundan, sarkomer boyu bilindiğinde bantların uzunluğu hesaplanabilir. Bu bölümdeki hesaplarda örnek değerler olarak {koyu:miyozin ipliği (A bandı) = 1,6 µm} ve {koyu:Z çizgisinden uzanan her bir aktin ipliği = 1,0 µm} alınacaktır. Gerçek kaslarda değerler türe ve kasa göre biraz farklılık gösterebilir; önemli olan ilişkilerin mantığıdır.",
+        "Temel ilişkiler şunlardır: {koyu:A bandı = miyozin boyu} (her durumda sabit). {koyu:I bandı = sarkomer boyu − A bandı}; bu toplam I bandı sarkomerin iki ucuna eşit olarak bölünür. {koyu:H bandı = sarkomer boyu − 2 × aktin boyu} (sonuç sıfır ya da negatifse H bandı görünmez). Bir yarı sarkomerdeki {koyu:aktin-miyozin örtüşmesi = (A bandı − H bandı) ÷ 2} formülüyle bulunur. Örneğin sarkomer 3,0 µm iken I bandı 3,0 − 1,6 = 1,4 µm, H bandı 3,0 − 2 × 1,0 = 1,0 µm olur. Kasılmayla sarkomer 2,4 µm'ye inince I bandı 0,8 µm'ye, H bandı 0,4 µm'ye düşer; sarkomer 2,0 µm olduğunda H bandı sıfırlanır.",
+        "Bu hesaplar modeli iki yönden sınar. Birincisi, ölçülen bant değerleri hesaplananlarla uyuşuyorsa model desteklenir; örneğin kasılmada A bandının 1,6 µm'de kaldığının görülmesi kayma fikrini doğrular. İkincisi, hesap kuvvetle ilgili tahmin yapmayı sağlar: Sarkomer 3,6 µm'ye gerilirse H bandı 3,6 − 2,0 = 1,6 µm, yani A bandına eşit olur; örtüşme (1,6 − 1,6) ÷ 2 = 0 çıkar ve hiç çapraz köprü kurulamayacağı için {koyu:kuvvet sıfır} olmalıdır. Deneylerde de aşırı gerilmiş kas liflerinin kuvvet üretemediği gözlenmiştir; bu, modelin tahmininin kanıtla örtüştüğünü gösterir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Sarkomer Boyu",
+          "A Bandı",
+          "I Bandı (S − A)",
+          "H Bandı (S − 2 × aktin)",
+          "Yarı Sarkomerde Örtüşme"
+        ],
+        "satirlar": [
+          [
+            "3,6 µm (aşırı gerilmiş)",
+            "1,6 µm",
+            "2,0 µm",
+            "1,6 µm",
+            "0 µm (köprü yok)"
+          ],
+          [
+            "3,0 µm (gevşek)",
+            "1,6 µm",
+            "1,4 µm",
+            "1,0 µm",
+            "0,3 µm"
+          ],
+          [
+            "2,4 µm (kasılıyor)",
+            "1,6 µm",
+            "0,8 µm",
+            "0,4 µm",
+            "0,6 µm"
+          ],
+          [
+            "2,0 µm (tam kasılma)",
+            "1,6 µm",
+            "0,4 µm",
+            "0 µm (görünmez)",
+            "0,8 µm"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Hesaplarda Değişmeyen Değerler",
+          "metin": "Kasılma ve gevşeme boyunca A bandı (miyozin boyu) ile aktin ipliğinin boyu sabittir. Değişen yalnızca sarkomer boyu, I bandı, H bandı ve aktin-miyozin örtüşmesidir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Kısalma Miktarı Nasıl Bulunur?",
+          "metin": "Sarkomerdeki toplam kısalma, I bandındaki azalmaya ve H bandındaki azalmaya eşittir. Her bir aktin ipliği ise bu kısalmanın yarısı kadar sarkomer merkezine kayar."
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 760 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, sans-serif\"><rect width=\"760\" height=\"300\" fill=\"#f8fafc\" rx=\"12\"/><text x=\"380\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">ÜÇ FARKLI BOYDA SARKOMER: BANT ÖLÇÜMLERİ</text><text x=\"20\" y=\"78\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">Gevşek</text><text x=\"20\" y=\"94\" font-size=\"11\" fill=\"#334155\">S = 3,0 µm</text><line x1=\"155\" y1=\"55\" x2=\"155\" y2=\"110\" stroke=\"#1e40af\" stroke-width=\"4\"/><line x1=\"605\" y1=\"55\" x2=\"605\" y2=\"110\" stroke=\"#1e40af\" stroke-width=\"4\"/><line x1=\"155\" y1=\"72\" x2=\"305\" y2=\"72\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"155\" y1=\"94\" x2=\"305\" y2=\"94\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"455\" y1=\"72\" x2=\"605\" y2=\"72\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"455\" y1=\"94\" x2=\"605\" y2=\"94\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"260\" y1=\"83\" x2=\"500\" y2=\"83\" stroke=\"#dc2626\" stroke-width=\"7\" stroke-linecap=\"round\"/><text x=\"620\" y=\"78\" font-size=\"11\" fill=\"#334155\">I = 1,4 µm</text><text x=\"620\" y=\"94\" font-size=\"11\" fill=\"#334155\">H = 1,0 µm</text><text x=\"20\" y=\"153\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">Kasılıyor</text><text x=\"20\" y=\"169\" font-size=\"11\" fill=\"#334155\">S = 2,4 µm</text><line x1=\"200\" y1=\"130\" x2=\"200\" y2=\"185\" stroke=\"#1e40af\" stroke-width=\"4\"/><line x1=\"560\" y1=\"130\" x2=\"560\" y2=\"185\" stroke=\"#1e40af\" stroke-width=\"4\"/><line x1=\"200\" y1=\"147\" x2=\"350\" y2=\"147\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"200\" y1=\"169\" x2=\"350\" y2=\"169\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"410\" y1=\"147\" x2=\"560\" y2=\"147\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"410\" y1=\"169\" x2=\"560\" y2=\"169\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"260\" y1=\"158\" x2=\"500\" y2=\"158\" stroke=\"#dc2626\" stroke-width=\"7\" stroke-linecap=\"round\"/><text x=\"620\" y=\"153\" font-size=\"11\" fill=\"#334155\">I = 0,8 µm</text><text x=\"620\" y=\"169\" font-size=\"11\" fill=\"#334155\">H = 0,4 µm</text><text x=\"20\" y=\"228\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">Tam kasılma</text><text x=\"20\" y=\"244\" font-size=\"11\" fill=\"#334155\">S = 2,0 µm</text><line x1=\"230\" y1=\"205\" x2=\"230\" y2=\"260\" stroke=\"#1e40af\" stroke-width=\"4\"/><line x1=\"530\" y1=\"205\" x2=\"530\" y2=\"260\" stroke=\"#1e40af\" stroke-width=\"4\"/><line x1=\"230\" y1=\"222\" x2=\"378\" y2=\"222\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"230\" y1=\"244\" x2=\"378\" y2=\"244\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"382\" y1=\"222\" x2=\"530\" y2=\"222\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"382\" y1=\"244\" x2=\"530\" y2=\"244\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"260\" y1=\"233\" x2=\"500\" y2=\"233\" stroke=\"#dc2626\" stroke-width=\"7\" stroke-linecap=\"round\"/><text x=\"620\" y=\"228\" font-size=\"11\" fill=\"#334155\">I = 0,4 µm</text><text x=\"620\" y=\"244\" font-size=\"11\" fill=\"#334155\">H = 0 (görünmez)</text><text x=\"380\" y=\"287\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Mavi: aktin (1,0 µm) · Kırmızı: miyozin = A bandı (1,6 µm, her durumda sabit) · örnek değerler</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir öğrenci kas kasılması için şu modeli öneriyor: 'Kasılma sırasında kalın miyozin iplikleri yay gibi büzülerek kısalır, aktin iplikleri yerinde kalır.' Bu modeli hangi gözlem çürütür? Öğrenci modelini nasıl yenilemelidir?",
+      "cevap": "1. adım: Modelin tahminini belirleyelim. A bandının boyu miyozin ipliğinin boyuna eşit olduğu için, miyozin kısalıyorsa kasılmada A bandı da kısalmalıdır.\n2. adım: Tahmini kanıtla karşılaştıralım. Mikroskop ölçümlerinde kasılma sırasında A bandının boyu değişmez; buna karşılık I ve H bantları daralır ve Z çizgileri birbirine yaklaşır.\n3. adım: Karar verelim. Tahmin gözlemle çeliştiği için model çürütülmüştür.\n4. adım: Modeli yenileyelim. Yenilenen modelde iplik boyları sabit kalmalı, aktin iplikleri miyozin başlarının güç vuruşuyla sarkomer merkezine doğru kaymalı, bu kayma için ATP ve {us:Ca|2+} gerektiği de modele eklenmelidir. Böylece öğrenci modeli bilimsel kayan iplikler modeline yaklaşır.",
+      "ipucu": "Önce 'Bu model doğruysa A bandına ne olur?' sorusunu sorun, sonra cevabı gerçek ölçümle karşılaştırın."
+    },
+    {
+      "soru": "Bir kas lifinde gevşek sarkomerin boyu 2,8 µm, A bandı 1,6 µm ve Z çizgisinden uzanan her aktin ipliği 1,0 µm'dir. Kasılma sonunda sarkomer boyu 2,2 µm oluyor. Gevşek ve kasılmış durumda I ve H bantlarını, sarkomerdeki kısalmayı ve her aktin ipliğinin kayma miktarını hesaplayınız.",
+      "cevap": "1. adım (gevşek durum): I = S − A = 2,8 − 1,6 = 1,2 µm. H = S − 2 × aktin = 2,8 − 2,0 = 0,8 µm.\n2. adım (kasılmış durum): I = 2,2 − 1,6 = 0,6 µm. H = 2,2 − 2,0 = 0,2 µm.\n3. adım (kısalma): Sarkomer 2,8 − 2,2 = 0,6 µm kısalmıştır. Bu değer I bandındaki azalmaya (1,2 − 0,6 = 0,6 µm) ve H bandındaki azalmaya (0,8 − 0,2 = 0,6 µm) eşittir.\n4. adım (kayma): Sarkomerin iki ucundaki aktin iplikleri merkeze doğru kaydığından her biri 0,6 ÷ 2 = 0,3 µm kaymıştır.\nSonuç: A bandı her iki durumda 1,6 µm'dir; değişim yalnızca I ve H bantlarındadır.",
+      "ipucu": "I bandı için sarkomerden A bandını, H bandı için sarkomerden iki aktin boyunu çıkarın."
+    },
+    {
+      "soru": "Kalsiyum içeren bir çözeltideki izole kas liflerine ATP verilmezse lifler kasılı ve katı hâlde kalıyor. Çözeltiye ATP eklenince lifler önce aktinden ayrılıp, kalsiyum ortamda kaldığı sürece yeniden kasılıyor. Bu deney sonuçlarını çapraz köprü döngüsüyle açıklayınız.",
+      "cevap": "1. adım: ATP yokken miyozin başları güç vuruşunu tamamlamış ve aktine bağlı durumdadır. Başı aktinden ayıracak olan ATP bağlanması gerçekleşmediği için köprüler çözülemez; lifler katı kalır (rigor durumu).\n2. adım: ATP eklenince ATP miyozin başlarına bağlanır ve başlar aktinden ayrılır; bu yüzden lifler önce gevşeyebilir hâle gelir.\n3. adım: Baştaki ATPaz ATP'yi ADP ve Pi'ye parçalar, baş kurulur.\n4. adım: Ortamda {us:Ca|2+} bulunduğu için troponin-tropomiyozin bağlanma bölgelerini açık tutar; kurulu başlar yeniden aktine bağlanır, güç vuruşu yapar ve kasılma sürer.\nSonuç: Deney ATP'nin hem başı aktinden ayırma hem de güç vuruşuna enerji sağlama görevini, kalsiyumun ise bağlanma bölgelerini açma görevini kanıtlar.",
+      "ipucu": "ATP'nin bağlanması ile ATP'nin hidrolizini ayrı adımlar olarak düşünün."
+    },
+    {
+      "soru": "Kürar zehiri kas lifindeki asetilkolin reseptörlerini kapatır; bazı tarım ilaçları ise asetilkolinesteraz enzimini baskılar. Bu iki maddenin iskelet kasları üzerindeki etkisini karşılaştırınız.",
+      "cevap": "1. adım (kürar): Sinir ucundan asetilkolin salgılansa bile reseptörlere bağlanamaz. Sarkolemmada aksiyon potansiyeli oluşmaz, T tübüllerine uyarı gitmez, sarkoplazmik retikulumdan {us:Ca|2+} salınmaz. Sonuç: Kas kasılamaz, gevşek felç görülür; solunum kasları da etkilenebildiği için tehlikelidir.\n2. adım (asetilkolinesteraz baskılayıcı): Salgılanan asetilkolin parçalanamaz ve sinaps boşluğunda birikir. Kas zarı sürekli uyarılır, kalsiyum salınımı ve çapraz köprü döngüsü durmaz. Sonuç: Kontrolsüz kasılmalar, kramp ve kas seğirmeleri görülür; kas gevşeyemez.\n3. adım (karşılaştırma): Kürar kasılmanın başlamasını, enzim baskılayıcı ise gevşemenin başlamasını engeller. İkisi de motor uç plaktaki kontrol noktalarının ne kadar önemli olduğunu gösterir.",
+      "ipucu": "Birinci madde uyarının kasa geçmesini, ikinci madde uyarının sonlanmasını etkiler."
+    },
+    {
+      "soru": "Bir öğrenci iğneye iplik geçirirken ve ardından dolu bir su kovasını kaldırırken aynı ön kol kaslarını kullanıyor. Kasın bu iki işte farklı kuvvet üretmesini 'ya hep ya hiç' kuralıyla çelişmeden açıklayınız.",
+      "cevap": "1. adım: 'Ya hep ya hiç' kuralı tek bir kas lifi ve dolayısıyla tek bir motor birim için geçerlidir: Uyarılan motor birimin bütün lifleri tam güçle kasılır.\n2. adım: Bütün bir kas ise çok sayıda motor birimden oluşur. İğneye iplik geçirirken sinir sistemi yalnızca az sayıda motor birimi uyarır; düşük ve hassas bir kuvvet oluşur.\n3. adım: Kova kaldırılırken çok daha fazla motor birim devreye alınır ve uyarı sıklığı da artırılır; birimlerin kasılmaları üst üste bineceği için toplam kuvvet büyür.\nSonuç: Kuvvet ayarı tek tek liflerin kasılma şiddetiyle değil, devreye alınan motor birim sayısı ve uyarı sıklığıyla yapılır; bu nedenle kurala aykırı bir durum yoktur.",
+      "ipucu": "Lif düzeyindeki kural ile kas düzeyindeki kuvvet ayarını birbirinden ayırın."
+    },
+    {
+      "soru": "A bandı 1,6 µm, aktin ipliği 1,0 µm olan bir kas lifi, sarkomer boyu 3,6 µm olacak kadar gerilip uyarılıyor. Başka bir lif ise sarkomer boyu 2,2 µm iken uyarılıyor. Hangi lifin daha fazla kuvvet üretmesi beklenir? Hesapla gösteriniz.",
+      "cevap": "1. adım (3,6 µm): H = 3,6 − 2 × 1,0 = 1,6 µm. Yarı sarkomerdeki örtüşme = (A − H) ÷ 2 = (1,6 − 1,6) ÷ 2 = 0 µm. Aktin ile miyozin hiç örtüşmediği için çapraz köprü kurulamaz; kuvvet sıfıra yakındır.\n2. adım (2,2 µm): H = 2,2 − 2,0 = 0,2 µm. Örtüşme = (1,6 − 0,2) ÷ 2 = 0,7 µm. Miyozin başlarının büyük kısmı aktinle karşı karşıyadır; çok sayıda köprü kurulabilir.\n3. adım (karşılaştırma): 2,2 µm boyundaki lif optimum aralığa yakın olduğundan çok daha büyük kuvvet üretir.\nSonuç: Kasılma kuvveti, sarkomerin başlangıç boyuna bağlı olan aktin-miyozin örtüşmesiyle belirlenir; bu hesap uzunluk-kuvvet grafiğinin sağ kolunu açıklar.",
+      "ipucu": "Örtüşme = (A bandı − H bandı) ÷ 2 formülünü kullanın; örtüşme yoksa köprü de yoktur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Çapraz köprü döngüsünde miyozin başının aktinden ayrılmasını doğrudan sağlayan olay aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "ATP molekülünün miyozin başına bağlanması",
+        "İnorganik fosfatın (Pi) miyozin başından ayrılması",
+        "{us:Ca|2+} iyonlarının troponine bağlanması",
+        "Asetilkolinin sinaps boşluğuna salgılanması"
+      ],
+      "dogru": 0,
+      "aciklama": "Güç vuruşundan sonra aktine bağlı kalan miyozin başı, ancak yeni bir ATP bağladığında aktinden ayrılır. Pi ayrılması köprü kurulurken olur; kalsiyum ve asetilkolin ise döngüyü başlatan kontrol adımlarıdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "A bandı 1,6 µm ve her aktin ipliği 1,0 µm olan bir sarkomerin boyu 2,6 µm'dir. Bu sarkomerde H bandının uzunluğu kaç µm'dir?",
+      "secenekler": [
+        "0,2",
+        "0,6",
+        "1,0",
+        "1,6"
+      ],
+      "dogru": 1,
+      "aciklama": "H bandı = sarkomer boyu − 2 × aktin boyu = 2,6 − 2,0 = 0,6 µm. Bu sarkomerde I bandı ise 2,6 − 1,6 = 1,0 µm olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Dinlenme hâlindeki bir iskelet kası lifinde tropomiyozinin temel görevi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Kalsiyum iyonlarını sarkoplazmik retikuluma pompalamak",
+        "ATP'yi ADP ve inorganik fosfata parçalamak",
+        "Aktin üzerindeki miyozin bağlanma bölgelerini örtmek",
+        "Uyarıyı sarkolemmadan hücrenin derinlerine iletmek"
+      ],
+      "dogru": 2,
+      "aciklama": "Tropomiyozin dinlenmede bağlanma bölgelerini örterek köprü kurulmasını engeller. Kalsiyumu pompalayan kalsiyum pompası, ATP'yi parçalayan miyozin başı, uyarıyı derine ileten ise T tübülleridir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kasılma sırasında A bandının boyunun değişmediğinin ölçülmesi, aşağıdaki modellerden hangisinin terk edilmesine yol açar?",
+      "secenekler": [
+        "Aktin ipliklerinin miyozin üzerinde kaydığını savunan model",
+        "Kasılmanın kalsiyum iyonlarıyla başlatıldığını savunan model",
+        "Çapraz köprülerin ATP enerjisiyle çalıştığını savunan model",
+        "Protein ipliklerinin kendi boylarını kısaltarak kasılma oluşturduğunu savunan model"
+      ],
+      "dogru": 3,
+      "aciklama": "A bandının boyu miyozin ipliğinin boyuna eşittir. İplikler kısalsaydı A bandı da kısalırdı; sabit kalması ipliklerin kısalmadığını, kaydığını gösterir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "T tübülleri, sarkolemmadaki uyarıyı kas lifinin derinlerine ve sarkoplazmik retikuluma yakın bölgelere iletir.",
+          "dogru": true,
+          "aciklama": "T tübülleri sarkolemmanın hücre içine uzanan girintileridir ve uyarının tüm miyofibrillere eşzamanlı ulaşmasını sağlar."
+        },
+        {
+          "metin": "{us:Ca|2+} iyonlarının sarkoplazmik retikulumdan sitoplazmaya geçişi ATP harcanarak aktif taşımayla gerçekleşir.",
+          "dogru": false,
+          "aciklama": "Kalsiyumun depodan sitoplazmaya geçişi derişim farkıyla difüzyonla olur; ATP, kalsiyumun depoya geri pompalanmasında harcanır."
+        },
+        {
+          "metin": "Güç vuruşu sırasında miyozin başı bükülerek aktin ipliğini sarkomerin merkezine (M çizgisine) doğru çeker.",
+          "dogru": true,
+          "aciklama": "Her iki yarı sarkomerde aktin merkeze çekildiği için Z çizgileri birbirine yaklaşır."
+        },
+        {
+          "metin": "Gevşeme sırasında sarkomerin eski boyuna dönmesi, miyozin başlarının aktini dışarı doğru itmesiyle sağlanan aktif bir olaydır.",
+          "dogru": false,
+          "aciklama": "Kaslar itme kuvveti üretemez; sarkomerin uzaması antagonist kasın çekmesi, yer çekimi ve dokunun esnekliğiyle gerçekleşen pasif bir olaydır."
+        },
+        {
+          "metin": "Yavaş kasılan kırmızı kas lifleri, miyoglobin ve mitokondri bakımından zengin olduğu için yorulmaya karşı dayanıklıdır.",
+          "dogru": true,
+          "aciklama": "Bu lifler enerjisini büyük ölçüde oksijenli solunumla sağlar ve uzun süreli etkinliklerde kullanılır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Kasılma ve gevşemenin kontrolünde görev alan yapı ve molekülleri görevleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Troponin",
+          "Kalsiyum bağlayınca şekli değişerek tropomiyozini bağlanma bölgelerinden çeken protein kompleksi"
+        ],
+        [
+          "Asetilkolinesteraz",
+          "Sinaps boşluğundaki asetilkolini parçalayarak kas zarının uyarılmasını sonlandıran enzim"
+        ],
+        [
+          "Kalsiyum pompası",
+          "ATP harcayarak {us:Ca|2+} iyonlarını sarkoplazmik retikuluma geri taşıyan zar proteini"
+        ],
+        [
+          "Miyozin başı",
+          "ATPaz etkinliği taşıyan, aktine bağlanıp güç vuruşu yapan yapı"
+        ],
+        [
+          "Motor birim",
+          "Bir motor nöron ile onun uyardığı tüm kas liflerinden oluşan işlevsel birim"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Sarkoplazmaya salınan kalsiyum iyonları aktin üzerindeki ___ proteinine bağlanır.",
+          "cevap": "troponin"
+        },
+        {
+          "metin": "Sinaps boşluğundaki asetilkolini parçalayarak uyarının sürmesini engelleyen enzime ___ denir.",
+          "cevap": "asetilkolinesteraz"
+        },
+        {
+          "metin": "Sarkolemmadaki uyarıyı kas lifinin derinlerine taşıyan zar girintilerine ___ tübülleri denir.",
+          "cevap": "T"
+        },
+        {
+          "metin": "Bir motor nöron ve uyardığı tüm kas liflerinin oluşturduğu birime ___ birim denir.",
+          "cevap": "motor"
+        },
+        {
+          "metin": "Miyozin başının bükülerek aktini sarkomer merkezine çektiği adıma ___ vuruşu denir.",
+          "cevap": "güç"
+        }
+      ],
+      "kelimeler": [
+        "troponin",
+        "asetilkolinesteraz",
+        "T",
+        "motor",
+        "güç"
+      ],
+      "fazla": [
+        "glikojen",
+        "ligament"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir araştırma grubu kas lifinde gevşek ve kasılmış sarkomerleri ölçerek şu verileri elde ediyor: Gevşek durumda sarkomer 3,0 µm, A bandı 1,6 µm, I bandı 1,4 µm, H bandı 1,0 µm; kasılmış durumda sarkomer 2,2 µm, A bandı 1,6 µm, I bandı 0,6 µm, H bandı 0,2 µm. Grupta iki model tartışılıyor: Model 1'e göre miyozin iplikleri kısalarak kasılma oluşur; Model 2'ye göre aktin iplikleri miyozin üzerinde kayar. (a) Her bandın değişimini hesaplayınız, (b) verileri iki modelle karşılaştırarak hangisinin desteklendiğini belirtiniz, (c) desteklenen modeli kayma kuvvetinin ve kontrolünün kaynağını içerecek şekilde yenileyiniz.",
+      "ipuclari": [
+        "1. adım: Gevşek ve kasılmış değerleri çıkararak sarkomer, A, I ve H bantlarındaki değişim miktarlarını bulun.",
+        "2. adım: Model 1'in A bandı için ne tahmin ettiğini yazın ve ölçümle karşılaştırın; aynı şeyi Model 2 için yapın.",
+        "3. adım: Desteklenen modele çapraz köprü döngüsünü, ATP'nin iki görevini, kalsiyum-troponin-tropomiyozin anahtarını ve gevşeme basamaklarını ekleyin."
+      ],
+      "cevap": "(a) Değişimler: Sarkomer 3,0 − 2,2 = 0,6 µm kısalmıştır. A bandı 1,6 − 1,6 = 0 µm, yani değişmemiştir. I bandı 1,4 − 0,6 = 0,8 µm daralmıştır. H bandı 1,0 − 0,2 = 0,8 µm daralmıştır. Aktin ipliği boyunu kontrol edelim: H = S − 2 × aktin bağıntısından gevşek durumda aktin = (3,0 − 1,0) ÷ 2 = 1,0 µm, kasılmış durumda (2,2 − 0,2) ÷ 2 = 1,0 µm bulunur; aktin boyu da değişmemiştir. Not: Sarkomerdeki kısalma (0,6 µm) ile I bandındaki daralma (0,8 µm) arasındaki fark, ölçümlerde I bandının S − A ile tutarlı olmadığını gösterir; S − A ilişkisiyle kasılmış I bandı 2,2 − 1,6 = 0,6 µm, gevşek I bandı 3,0 − 1,6 = 1,4 µm olup daralma 0,8 µm'dir, H bandı ise 1,0'dan 0,2'ye inmiştir; buna göre gevşekte H = 3,0 − 2,0 = 1,0 ve kasılmışta H = 2,2 − 2,0 = 0,2 değerleri de ilişkilerle uyumludur. Sarkomerin 0,8 µm kısaldığı hesaplanırsa (3,0 − 2,2 = 0,8 µm) tüm değerler tutarlıdır: Doğru kısalma miktarı 0,8 µm'dir ve her aktin ipliği 0,4 µm kaymıştır. (b) Model 1 miyozinin kısaldığını öne sürdüğü için A bandının kısalmasını tahmin eder; oysa A bandı 1,6 µm'de sabit kalmıştır. Model 1 çürütülür. Model 2'ye göre iplik boyları sabit kalırken I ve H bantları sarkomerdeki kısalma kadar daralmalıdır; ölçümlerde I ve H bantları 0,8 µm, sarkomer de 0,8 µm kısalmıştır. Model 2 desteklenir. (c) Yenilenmiş model: Motor nörondan salgılanan asetilkolin sarkolemmayı uyarır; uyarı T tübülleriyle sarkoplazmik retikuluma ulaşır ve {us:Ca|2+} salınır. Kalsiyum troponine bağlanınca tropomiyozin kayar, bağlanma bölgeleri açılır. Miyozin başları ATP hidroliziyle kurulur, aktine bağlanır ve güç vuruşuyla aktini merkeze çeker; yeni ATP bağlanınca baş ayrılır ve döngü tekrarlanır. Gevşemede asetilkolinesteraz asetilkolini parçalar, kalsiyum pompaları ATP harcayarak {us:Ca|2+} iyonlarını depoya geri toplar, tropomiyozin bölgeleri örter ve sarkomer antagonist kasın çekmesiyle pasif olarak uzar."
+    }
+  ]
+}

@@ -17,7 +17,7 @@
     "Sabit sıcaklık ve mol sayısında basınç ile hacim ters orantılıdır ({koyu:Boyle Yasası: P1 · V1 = P2 · V2}); sabit basınç ve mol sayısında hacim ile mutlak sıcaklık doğru orantılıdır ({koyu:Charles Yasası: {kesir:V1|T1} = {kesir:V2|T2}}).",
     "Sabit hacim ve mol sayısında basınç ile mutlak sıcaklık doğru orantılıdır ({koyu:Gay-Lussac Yasası: {kesir:P1|T1} = {kesir:P2|T2}}); sabit basınç ve sıcaklıkta hacim ile mol sayısı doğru orantılıdır ({koyu:Avogadro Yasası: {kesir:V1|n1} = {kesir:V2|n2}}).",
     "Dört değişkeni tek denklemde birleştiren {koyu:Genel Gaz Denklemi {kesir:P1 · V1|n1 · T1} = {kesir:P2 · V2|n2 · T2}} ve {koyu:İdeal Gaz Denklemi P · V = n · R · T} ile tüm gaz problemleri modellenir.",
-    "{koyu:Kinetik Moleküler Teori}'ye göre gazların ortalama kinetik enerjisi yalnız {koyu:mutlak sıcaklığa (T)} bağlıdır; aynı sıcaklıktaki farklı gazların ortalama kinetik enerjileri eşittir, mol kütlesi (M_A) küçük olan gaz ise daha hızlı yayılır."
+    "{koyu:Kinetik Moleküler Teori}'ye göre gazların ortalama kinetik enerjisi yalnız {koyu:mutlak sıcaklığa (T)} bağlıdır; aynı sıcaklıktaki farklı gazların ortalama kinetik enerjileri eşittir, mol kütlesi (M{alt:A}) küçük olan gaz ise daha hızlı yayılır."
   ],
   "bolumler": [
     {
@@ -160,7 +160,7 @@
             "Madde Miktarı",
             "n",
             "Mol (mol)",
-            "n = m / M_A = N / N_A"
+            "n = m / M{alt:A} = N / N{alt:A}"
           ]
         ],
         "basliklar": [
@@ -175,14 +175,14 @@
     {
       "baslik": "Kinetik Moleküler Teori ve Gazların Yayılma (Difüzyon) Hızı",
       "metin": [
-        "{koyu:Kinetik Moleküler Teori}, gazların makroskobik yasalarını tanecik düzeyindeki hareketlerle açıklar. Bu teoriye göre: 1) Gaz tanecikleri her yönde gelişigüzel, doğrusal ve sürekli hareket ({koyu:Brown hareketi}) yapar. 2) Taneciklerin öz hacimleri kabın hacmi yanında ihmal edilir. 3) Tanecikler arası çarpışmalar {koyu:esnektir} (toplam kinetik enerji korunur). 4) Gaz taneciklerinin {koyu:ortalama kinetik enerjisi yalnız mutlak sıcaklığa (T) bağlıdır} ({koyu:E_K = {kesir:3|2} · k · T}).",
-        "Aynı sıcaklıktaki iki farklı gazın ortalama kinetik enerjileri eşit olduğundan, {koyu:mol kütlesi (M_A) küçük olan hafif gazın tanecikleri daha hızlı hareket eder}. Gazların yayılma (difüzyon) ve boşluğa dağılma (efüzyon) hızları; mutlak sıcaklığın karekökü ile doğru, mol kütlesinin karekökü ile ters orantılıdır: {koyu:{kesir:v_X|v_Y} = {kok:{kesir:M_Y · T_X|M_X · T_Y}}}."
+        "{koyu:Kinetik Moleküler Teori}, gazların makroskobik yasalarını tanecik düzeyindeki hareketlerle açıklar. Bu teoriye göre: 1) Gaz tanecikleri her yönde gelişigüzel, doğrusal ve sürekli hareket ({koyu:Brown hareketi}) yapar. 2) Taneciklerin öz hacimleri kabın hacmi yanında ihmal edilir. 3) Tanecikler arası çarpışmalar {koyu:esnektir} (toplam kinetik enerji korunur). 4) Gaz taneciklerinin {koyu:ortalama kinetik enerjisi yalnız mutlak sıcaklığa (T) bağlıdır} ({koyu:E{alt:K} = {kesir:3|2} · k · T}).",
+        "Aynı sıcaklıktaki iki farklı gazın ortalama kinetik enerjileri eşit olduğundan, {koyu:mol kütlesi (M{alt:A}) küçük olan hafif gazın tanecikleri daha hızlı hareket eder}. Gazların yayılma (difüzyon) ve boşluğa dağılma (efüzyon) hızları; mutlak sıcaklığın karekökü ile doğru, mol kütlesinin karekökü ile ters orantılıdır: {koyu:{kesir:v{alt:X}|v{alt:Y}} = {kok:{kesir:M{alt:Y} · T{alt:X}|M{alt:X} · T{alt:Y}}}}."
       ],
       "kutular": [
         {
           "tip": "kural",
           "baslik": "Ortalama Kinetik Enerji vs. Ortalama Hız",
-          "metin": "Aynı sıcaklıktaki (örneğin 300 K) He (M_A = 4 g/mol) ve CH4 (M_A = 16 g/mol) gazlarının ORTALAMA KİNETİK ENERJİLERİ EŞİTTİR; ancak hafif olan He gazının yayılma hızı CH4 gazının hızının {kok:16/4} = 2 katıdır!"
+          "metin": "Aynı sıcaklıktaki (örneğin 300 K) He (M{alt:A} = 4 g/mol) ve CH4 (M{alt:A} = 16 g/mol) gazlarının ORTALAMA KİNETİK ENERJİLERİ EŞİTTİR; ancak hafif olan He gazının yayılma hızı CH4 gazının hızının {kok:16/4} = 2 katıdır!"
         }
       ],
       "liste": [
@@ -245,7 +245,7 @@
       "cevap": "Sıcaklık: T = 27 + 273 = {koyu:300 K}. {koyu:İdeal Gaz Denklemi (P · V = n · R · T)} uygulanır: P · 8,2 = 2 · 0,082 · 300 → P · 8,2 = 2 · 24,6 = 49,2 → P = {kesir:49,2|8,2} = {koyu:6 atm} bulunur."
     },
     {
-      "soru": "Aynı sıcaklıkta bulunan He (M_A = 4 g/mol) ve SO2 (M_A = 64 g/mol) gazlarının ortalama kinetik enerjilerini ve yayılma (difüzyon) hızlarını karşılaştırınız.",
+      "soru": "Aynı sıcaklıkta bulunan He (M{alt:A} = 4 g/mol) ve SO2 (M{alt:A} = 64 g/mol) gazlarının ortalama kinetik enerjilerini ve yayılma (difüzyon) hızlarını karşılaştırınız.",
       "cozum": "İki gazın sıcaklığı aynı olduğu için {koyu:ortalama kinetik enerjileri birbirine eşittir}. Yayılma hızları oranı ise mol kütlelerinin karekökü ile ters orantılıdır: {kesir:v(He)|v(SO2)} = {kok:{kesir:64|4}} = {kok:16} = {koyu:4}. Yani He gazı SO2 gazından {koyu:4 kat daha hızlı} yayılır.",
       "ipucu": "Hız oranında mol kütlelerini ters yazıp karekök alınız.",
       "cevap": "İki gazın sıcaklığı aynı olduğu için {koyu:ortalama kinetik enerjileri birbirine eşittir}. Yayılma hızları oranı ise mol kütlelerinin karekökü ile ters orantılıdır: {kesir:v(He)|v(SO2)} = {kok:{kesir:64|4}} = {kok:16} = {koyu:4}. Yani He gazı SO2 gazından {koyu:4 kat daha hızlı} yayılır."
@@ -284,7 +284,7 @@
     },
     {
       "tip": "coktan",
-      "soru": "Aynı sıcaklık ve basınç altında bulunan 1 mol H2 (M_A = 2) ve 1 mol O2 (M_A = 32) gazları için aşağıdakilerden hangisi yanlıştır?",
+      "soru": "Aynı sıcaklık ve basınç altında bulunan 1 mol H2 (M{alt:A} = 2) ve 1 mol O2 (M{alt:A} = 32) gazları için aşağıdakilerden hangisi yanlıştır?",
       "secenekler": [
         "Kapladıkları hacimler birbirine eşittir.",
         "Ortalama kinetik enerjileri birbirine eşittir.",
