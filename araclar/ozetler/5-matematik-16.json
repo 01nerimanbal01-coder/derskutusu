@@ -1,0 +1,560 @@
+{
+  "ad": "5-matematik-16",
+  "sinif": 5,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "Geometrik Nicelikler",
+  "konu": "Dikdörtgenin Çevre Uzunluğu ve Alanı",
+  "ciktilar": [
+    "MAT.5.4.2. Birim karelerden yola çıkarak dikdörtgenin alanını değerlendirebilme: Birim kare sayısının iki ardışık kenar uzunluğu ile ilişkisini inceler ve alan bağıntısına (iki ardışık kenarın uzunlukları çarpımı) ilişkin yargıda bulunur.",
+    "MAT.5.4.3. Kenar uzunlukları doğal sayı olan bir dikdörtgenin alanının ölçüsü verildiğinde çevre uzunluğunu, çevre uzunluğu verildiğinde alanını yorumlayabilme: Alanı verilen bir dikdörtgenin çevre uzunluğunu, çevre uzunluğu verilen bir dikdörtgenin alanını inceler.",
+    "MAT.5.4.3. Aynı alana sahip farklı dikdörtgenlerin çevre uzunluklarını ve aynı çevre uzunluğuna sahip farklı dikdörtgenlerin alanlarını belirler; aynı çevreye sahip dikdörtgenlerin farklı alanlara, aynı alana sahip dikdörtgenlerin farklı çevre uzunluklarına sahip olabileceğini ifade eder."
+  ],
+  "giris": "Geçen hafta birim kareleri sayarak {koyu:Alan = kısa kenar × uzun kenar} bağıntısına ulaşmıştık. Bu hafta önce bu bağıntıyı farklı dikdörtgenlerle sınayıp kenarlar değiştiğinde alanın nasıl değiştiğine dair yargılarda bulunacağız. Ardından işi tersine çevireceğiz: {koyu:Alanı verilen} bir dikdörtgenin olası kenarlarını ve çevrelerini, {koyu:çevresi verilen} bir dikdörtgenin olası alanlarını sistemli biçimde inceleyecek, sonunda da çevre ile alanın birbirinden bağımsız değişebildiğini karşı örneklerle göstereceğiz.",
+  "ozet": [
+    "{koyu:Alan bağıntısının yargısı:} Dikdörtgende sıra sayısı bir kenara, bir sıradaki kare sayısı ardışık kenara eşit olduğundan alan bu iki kenarın çarpımıdır; bir kenar 2 katına çıkarsa alan da 2 katına çıkar.",
+    "{koyu:Alanı verilen dikdörtgenin kenarları:} Kısa kenara 1'den başlayarak değer verilir, alan bu sayıya kalansız bölünüyorsa uzun kenar alan ÷ kısa kenar olarak bulunur; kısa kenarın kendisiyle çarpımı alanı geçince durulur.",
+    "{koyu:Alandan çevreye:} Alan tek başına çevreyi belirlemez; alanı 24 birimkare olan dikdörtgenlerin çevreleri 50, 28, 22 ve 20 birim olabilir.",
+    "{koyu:Çevreden alana:} Çevre tek başına alanı belirlemez; çevresi 20 birim olan dikdörtgenlerin alanları 9, 16, 21, 24 ve 25 birimkare olabilir.",
+    "{koyu:Kareye yaklaşma:} Alan sabitken kenarlar birbirine yaklaştıkça çevre azalır; çevre sabitken kenarlar birbirine yaklaştıkça alan artar ve en uç değer kare ya da kareye en yakın dikdörtgende görülür.",
+    "{koyu:Bağımsız nicelikler:} Çevresi büyük olan bir dikdörtgenin alanı daha küçük olabilir; 1 × 9 dikdörtgeninin çevresi 20, alanı 9 iken 4 × 4 karesinin çevresi 16, alanı 16'dır."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Alan Bağıntısını Sınama: Kenarlar Değişince Alan Nasıl Değişir?",
+      "metin": [
+        "Geçen hafta birim karelerle kaplanmış dikdörtgenlerde şunu gözlemledik: Her sırada uzun kenar kadar kare vardır ve kısa kenar kadar sıra oluşur. Bu yüzden birim kare sayısı {koyu:sıra sayısı × bir sıradaki kare sayısı} işlemiyle, yani {koyu:Alan = a × b} bağıntısıyla bulunur. Bir bağıntıya güvenmek için onu farklı durumlarda {koyu:sınamak} gerekir. Kısa kenarı 3, uzun kenarı 5 birim olan dikdörtgeni kaplayıp saydığımızda 15 kare buluruz; 3 × 5 = 15 işlemi de aynı sonucu verir. Kare biçimli 4 × 4 dikdörtgende 16 kare sayarız; 4 × 4 = 16 yine tutar. Bağıntı her denemede sayma sonucuyla aynı çıktığı için genel bir yargı olarak kullanılabilir.",
+        "Bağıntının ne dediğini anlamak, kenarlar değiştiğinde alanın nasıl değişeceğini {koyu:hesaplamadan önce tahmin etmemizi} sağlar. 3 × 5 dikdörtgeninin kısa kenarını 2 katına çıkarıp 6 yaparsak sıra sayısı 3'ten 6'ya çıkar; her sırada yine 5 kare olduğundan alan da 15'ten 30'a, yani {koyu:2 katına} çıkar. İki kenarı birden 2 katına çıkarırsak (6 × 10) alan 60 olur; bu 15'in {koyu:4 katıdır}, çünkü hem sıra sayısı hem bir sıradaki kare sayısı 2 katına çıkmıştır. Kısa kenara yalnız 1 birim eklersek (4 × 5) dikdörtgene bir sıra eklenmiş olur ve alan bir sıradaki kare sayısı kadar, yani 5 birimkare artarak 20 olur.",
+        "Bağıntı iki yönlü de kullanılabilir. Kenarlar biliniyorsa alan çarpmayla bulunur; alan ve bir kenar biliniyorsa diğer kenar {koyu:bölmeyle} bulunur, çünkü çarpma ile bölme birbirinin tersidir. Alanı 40 {us:cm|2} ve bir kenarı 5 cm olan dikdörtgenin diğer kenarı 40 ÷ 5 = 8 cm'dir; kontrol için 5 × 8 = 40 işlemine bakarız. Bu düşünce, haftanın geri kalanında alanı verilen dikdörtgenleri incelerken temel aracımız olacak. Unutmayalım: Kenarlar aynı birimle ölçülmeli, sonuç birim kare olarak ({us:cm|2}, {us:m|2}, birimkare) söylenmelidir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Durum",
+          "Kenarlar",
+          "Alan",
+          "Yorum"
+        ],
+        "satirlar": [
+          [
+            "Başlangıç",
+            "3 birim × 5 birim",
+            "15 birimkare",
+            "3 sıra, her sırada 5 kare"
+          ],
+          [
+            "Kısa kenar 2 katı",
+            "6 birim × 5 birim",
+            "30 birimkare",
+            "Sıra sayısı 2 katı, alan 2 katı"
+          ],
+          [
+            "İki kenar da 2 katı",
+            "6 birim × 10 birim",
+            "60 birimkare",
+            "Alan 4 katı (15 × 4 = 60)"
+          ],
+          [
+            "Kısa kenara 1 eklendi",
+            "4 birim × 5 birim",
+            "20 birimkare",
+            "Bir sıra (5 kare) eklendi"
+          ],
+          [
+            "Kare",
+            "4 birim × 4 birim",
+            "16 birimkare",
+            "Alan = kenar × kenar"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Alan Bağıntısının İki Yönlü Kullanımı",
+          "metin": "Kenarlar biliniyorsa: Alan = kısa kenar × uzun kenar. Alan ve bir kenar biliniyorsa: Diğer kenar = Alan ÷ bilinen kenar. Sonucu her zaman çarpma ile kontrol et."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "İki Katı Kenar, Dört Katı Alan",
+          "metin": "Yalnız bir kenar 2 katına çıkarsa alan 2 katına çıkar. İki kenar birlikte 2 katına çıkarsa alan 2 katı değil 4 katı olur; çünkü hem sıra sayısı hem de bir sıradaki kare sayısı 2 katına çıkar."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><defs><pattern id='g16a' width='24' height='24' patternUnits='userSpaceOnUse'><rect width='24' height='24' fill='#dbeafe'/><path d='M 24 0 L 0 0 0 24' fill='none' stroke='#2563eb' stroke-width='1'/></pattern><pattern id='g16b' width='24' height='24' patternUnits='userSpaceOnUse'><rect width='24' height='24' fill='#dcfce7'/><path d='M 24 0 L 0 0 0 24' fill='none' stroke='#16a34a' stroke-width='1'/></pattern></defs><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>BİR KENAR 2 KATINA ÇIKINCA ALAN NE OLUR?</text><rect x='72' y='72' width='120' height='72' fill='url(#g16a)' stroke='#1d4ed8' stroke-width='2'/><text x='132' y='62' text-anchor='middle' font-size='12' fill='#1e293b'>5 birim</text><text x='64' y='112' text-anchor='end' font-size='12' fill='#1e293b'>3 birim</text><text x='132' y='170' text-anchor='middle' font-size='12' fill='#334155'>3 sıra × 5 kare</text><text x='132' y='192' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>Alan = 3 × 5 = 15</text><text x='236' y='138' text-anchor='middle' font-size='11' fill='#475569'>kısa kenar</text><text x='236' y='166' text-anchor='middle' font-size='11' fill='#475569'>2 katı</text><line x1='212' y1='150' x2='252' y2='150' stroke='#64748b' stroke-width='2'/><polygon points='250,144 262,150 250,156' fill='#64748b'/><rect x='288' y='72' width='120' height='144' fill='url(#g16b)' stroke='#15803d' stroke-width='2'/><line x1='288' y1='144' x2='408' y2='144' stroke='#b91c1c' stroke-width='2' stroke-dasharray='6 4'/><text x='348' y='62' text-anchor='middle' font-size='12' fill='#1e293b'>5 birim</text><text x='280' y='148' text-anchor='end' font-size='12' fill='#1e293b'>6 birim</text><text x='348' y='238' text-anchor='middle' font-size='12' fill='#334155'>6 sıra × 5 kare</text><text x='348' y='260' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>Alan = 6 × 5 = 30</text><text x='348' y='282' text-anchor='middle' font-size='11' fill='#b91c1c'>Kesikli çizgi: eski dikdörtgen</text><rect x='450' y='50' width='290' height='232' rx='12' fill='#fff7ed' stroke='#ea580c' stroke-width='1.5'/><text x='595' y='76' text-anchor='middle' font-size='14' font-weight='bold' fill='#c2410c'>YARGILAR</text><text x='595' y='104' text-anchor='middle' font-size='12' fill='#7c2d12'>Sıra sayısı 2 katı → alan 2 katı</text><text x='595' y='124' text-anchor='middle' font-size='12' fill='#7c2d12'>15 birimkare → 30 birimkare</text><text x='595' y='156' text-anchor='middle' font-size='12' fill='#7c2d12'>İki kenar da 2 katı → alan 4 katı</text><text x='595' y='176' text-anchor='middle' font-size='12' fill='#7c2d12'>6 × 10 = 60 = 4 × 15</text><text x='595' y='208' text-anchor='middle' font-size='12' fill='#7c2d12'>Bir sıra eklenirse alan bir sıra artar</text><text x='595' y='228' text-anchor='middle' font-size='12' fill='#7c2d12'>4 × 5 = 20 = 15 + 5</text><text x='595' y='262' text-anchor='middle' font-size='13' font-weight='bold' fill='#c2410c'>Genel bağıntı: Alan = a × b</text></svg>"
+    },
+    {
+      "baslik": "Alanı Verilen Dikdörtgenin Olası Kenar Uzunluklarını Bulma",
+      "metin": [
+        "Çevresi verilen dikdörtgenlerde kenar çiftlerinin {koyu:toplamı} yarı çevreye eşit olmak zorundaydı. Alanı verilen dikdörtgenlerde ise kenar çiftlerinin {koyu:çarpımı} alana eşit olmak zorundadır. Örneğin alanı 12 birimkare olan bir dikdörtgen için 12 kareyi düzgün sıralara dizmeye çalışırız: 1 sırada 12 kare, 2 sırada 6'şar kare ya da 3 sırada 4'er kare dizilebilir. 5 sıraya eşit biçimde dizmeye çalışırsak kareler yetmez ya da artar; çünkü 12 sayısı 5'e kalansız bölünmez. Demek ki alanı 12 birimkare olan ve kenarları doğal sayı olan dikdörtgenler {koyu:1 × 12, 2 × 6 ve 3 × 4} boyutlarındadır.",
+        "Hiçbir dikdörtgeni atlamamak için yine {koyu:sistemli listeleme} yaparız: Kısa kenara 1'den başlayarak sırayla 1, 2, 3, ... değerlerini veririz. Her değer için alanın bu sayıya {koyu:kalansız bölünüp bölünmediğine} bakarız. Kalansız bölünüyorsa bölüm uzun kenardır; kalan varsa o değeri atlarız. Kısa kenarın kendisiyle çarpımı alanı geçtiği anda dururuz, çünkü bundan sonra bulunacak çiftler öncekilerin döndürülmüş hâlidir. Alanı 36 birimkare için 1 × 36, 2 × 18, 3 × 12, 4 × 9 ve 6 × 6 çiftlerini buluruz; 5 değeri atlanır, 7 × 7 = 49 alanı geçtiği için 6'da durulur.",
+        "Bu listelerden ilginç sonuçlar da çıkar. Alanı 7, 13 veya 17 birimkare gibi yalnız 1'e ve kendisine bölünen bir sayı olan dikdörtgenler için {koyu:tek bir dikdörtgen} vardır: 1 × 7, 1 × 13, 1 × 17. Alan 16, 25 veya 36 gibi bir sayının kendisiyle çarpımına eşitse listede bir {koyu:kare} de bulunur. Ayrıca alan bilgisinin yanında bir kenar da verilirse dikdörtgen tek olarak belirlenir: Alanı 36 birimkare ve bir kenarı 4 birim olan dikdörtgenin diğer kenarı 36 ÷ 4 = 9 birimdir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Verilen Alan",
+          "Olası Kenar Çiftleri (a, b)",
+          "Farklı Dikdörtgen Sayısı"
+        ],
+        "satirlar": [
+          [
+            "12 birimkare",
+            "(1, 12), (2, 6), (3, 4)",
+            "3"
+          ],
+          [
+            "16 birimkare",
+            "(1, 16), (2, 8), (4, 4)",
+            "3 (biri kare)"
+          ],
+          [
+            "18 birimkare",
+            "(1, 18), (2, 9), (3, 6)",
+            "3"
+          ],
+          [
+            "24 birimkare",
+            "(1, 24), (2, 12), (3, 8), (4, 6)",
+            "4"
+          ],
+          [
+            "36 birimkare",
+            "(1, 36), (2, 18), (3, 12), (4, 9), (6, 6)",
+            "5 (biri kare)"
+          ],
+          [
+            "13 birimkare",
+            "(1, 13)",
+            "1"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Alandan Kenar Bulmada Sistemli Listeleme",
+          "metin": "Kısa kenarı 1'den başlat ve her adımda 1 artır. Alan bu sayıya kalansız bölünüyorsa uzun kenar = alan ÷ kısa kenar olur. Kısa kenarın kendisiyle çarpımı alanı geçince dur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Çevrede Çıkarma, Alanda Bölme",
+          "metin": "Çevresi verilen dikdörtgende uzun kenar = yarı çevre − kısa kenar işlemiyle bulunur. Alanı verilen dikdörtgende ise uzun kenar = alan ÷ kısa kenar işlemiyle bulunur. Hangi bilginin verildiğine dikkat et."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>ALANI 36 BİRİMKARE OLAN DİKDÖRTGENLERİ SİSTEMLİ BULMA</text><rect x='20' y='50' width='210' height='60' rx='10' fill='#eff6ff' stroke='#2563eb' stroke-width='1.5'/><text x='125' y='75' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>1. a = 1, 2, 3, ... dene</text><text x='125' y='97' text-anchor='middle' font-size='12' fill='#1e3a8a'>a: kısa kenar</text><line x1='125' y1='110' x2='125' y2='128' stroke='#64748b' stroke-width='2'/><polygon points='119,126 131,126 125,136' fill='#64748b'/><rect x='20' y='140' width='210' height='60' rx='10' fill='#f0fdf4' stroke='#16a34a' stroke-width='1.5'/><text x='125' y='165' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>2. 36 ÷ a kalansız mı?</text><text x='125' y='187' text-anchor='middle' font-size='12' fill='#14532d'>Evet ise b = 36 ÷ a</text><line x1='125' y1='200' x2='125' y2='218' stroke='#64748b' stroke-width='2'/><polygon points='119,216 131,216 125,226' fill='#64748b'/><rect x='20' y='230' width='210' height='56' rx='10' fill='#fef3c7' stroke='#d97706' stroke-width='1.5'/><text x='125' y='253' text-anchor='middle' font-size='13' font-weight='bold' fill='#b45309'>3. a × a, 36'yı geçince dur</text><text x='125' y='274' text-anchor='middle' font-size='11' fill='#78350f'>6 × 6 = 36, 7 × 7 = 49</text><rect x='250' y='48' width='490' height='34' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='265' y='70' font-size='13' fill='#1e293b'>a = 1</text><text x='360' y='70' font-size='13' fill='#1e293b'>36 ÷ 1 = 36</text><text x='580' y='70' font-size='12' fill='#15803d'>1 × 36 uygun</text><rect x='250' y='86' width='490' height='34' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='265' y='108' font-size='13' fill='#1e293b'>a = 2</text><text x='360' y='108' font-size='13' fill='#1e293b'>36 ÷ 2 = 18</text><text x='580' y='108' font-size='12' fill='#15803d'>2 × 18 uygun</text><rect x='250' y='124' width='490' height='34' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='265' y='146' font-size='13' fill='#1e293b'>a = 3</text><text x='360' y='146' font-size='13' fill='#1e293b'>36 ÷ 3 = 12</text><text x='580' y='146' font-size='12' fill='#15803d'>3 × 12 uygun</text><rect x='250' y='162' width='490' height='34' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='265' y='184' font-size='13' fill='#1e293b'>a = 4</text><text x='360' y='184' font-size='13' fill='#1e293b'>36 ÷ 4 = 9</text><text x='580' y='184' font-size='12' fill='#15803d'>4 × 9 uygun</text><rect x='250' y='200' width='490' height='34' rx='8' fill='#fef2f2' stroke='#dc2626'/><text x='265' y='222' font-size='13' fill='#1e293b'>a = 5</text><text x='360' y='222' font-size='13' fill='#1e293b'>36 ÷ 5 = 7, kalan 1</text><text x='580' y='222' font-size='12' fill='#b91c1c'>uygun değil, atla</text><rect x='250' y='238' width='490' height='34' rx='8' fill='#fdf2f8' stroke='#db2777'/><text x='265' y='260' font-size='13' fill='#1e293b'>a = 6</text><text x='360' y='260' font-size='13' fill='#1e293b'>36 ÷ 6 = 6</text><text x='580' y='260' font-size='12' fill='#be185d'>6 × 6 kare, son çift</text><text x='495' y='292' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>Sonuç: 5 farklı dikdörtgen</text></svg>"
+    },
+    {
+      "baslik": "Alanı Verilen Dikdörtgenlerin Çevre Uzunluklarını İnceleme",
+      "metin": [
+        "Alanı verilen bir dikdörtgenin çevresini bulmak için önce {koyu:kenar uzunluklarını} bilmemiz gerekir; çünkü çevre kenarların toplamıyla hesaplanır. Bu yüzden iki adımlı çalışırız: 1) Alanı veren kenar çiftlerini sistemli olarak listeleriz. 2) Her çift için {koyu:Çevre = 2 × (a + b)} işlemini yaparız. Alanı 24 birimkare olan dikdörtgenleri ele alalım. Kenar çiftleri (1, 24), (2, 12), (3, 8) ve (4, 6)'dır. Bunların çevreleri sırasıyla 2 × 25 = 50, 2 × 14 = 28, 2 × 11 = 22 ve 2 × 10 = 20 birimdir.",
+        "Bu sonuç bize önemli bir şey söyler: {koyu:Aynı alana sahip dikdörtgenlerin çevre uzunlukları farklı olabilir.} Dört dikdörtgenin de içinde tam 24 birim kare vardır; ama 1 × 24 dikdörtgeni ince uzun bir şerit gibi olduğu için sınırı çok uzundur. Aynı 24 kareyi 4 × 6 biçiminde toplu bir düzene sokunca sınır kısalır. 24 kareyi yan yana dizilmiş bir tren gibi düşünün: Kareler tek sırada dizildiğinde birçok kenar dışarıda kalır; sıralar üst üste toplandıkça karelerin kenarları birbirine değer ve dışarıda kalan sınır azalır.",
+        "Sorularda yalnız alan verilip «Bu dikdörtgenin çevresi kaçtır?» diye sorulursa tek bir cevap veremeyiz; {koyu:olası bütün çevreleri} yazmamız ya da ek bilgi istememiz gerekir. Örneğin alanı 36 birimkare olan dikdörtgenlerin çevresi 74, 40, 30, 26 veya 24 birim olabilir. Ama alanın yanında bir kenar da verilirse çevre tek olarak bulunur: Alanı 36 birimkare ve kısa kenarı 3 birim olan dikdörtgenin uzun kenarı 36 ÷ 3 = 12 birim, çevresi 2 × (3 + 12) = 30 birimdir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kenarlar (a × b)",
+          "Alan",
+          "Yarı Çevre (a + b)",
+          "Çevre 2 × (a + b)"
+        ],
+        "satirlar": [
+          [
+            "1 × 24",
+            "24 birimkare",
+            "25 birim",
+            "50 birim"
+          ],
+          [
+            "2 × 12",
+            "24 birimkare",
+            "14 birim",
+            "28 birim"
+          ],
+          [
+            "3 × 8",
+            "24 birimkare",
+            "11 birim",
+            "22 birim"
+          ],
+          [
+            "4 × 6",
+            "24 birimkare",
+            "10 birim",
+            "20 birim"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Alan Aynı, Çevre Farklı Olabilir",
+          "metin": "Alanı verilen dikdörtgenin çevresi, kenarlar bilinmeden kesin olarak söylenemez. Ya olası bütün çevreleri listele ya da bir kenar uzunluğu gibi ek bilgiyi kullan."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Toplu Şekil, Kısa Sınır",
+          "metin": "Aynı sayıda birim kare ince uzun dizilince çevre büyür, toplu dizilince çevre küçülür. Bu yüzden aynı alanlı dikdörtgenler arasında çevresi en küçük olan, kenarları birbirine en yakın olandır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>ALANI 24 BİRİMKARE OLAN DİKDÖRTGENLERİN ÇEVRELERİ</text><rect x='30' y='55' width='240' height='10' fill='#93c5fd' stroke='#1d4ed8' stroke-width='1.5'/><text x='285' y='65' font-size='12' fill='#1e293b'>1 × 24 → Çevre = 2 × (1 + 24) = 50 birim</text><rect x='30' y='88' width='120' height='20' fill='#86efac' stroke='#15803d' stroke-width='1.5'/><text x='285' y='103' font-size='12' fill='#1e293b'>2 × 12 → Çevre = 2 × (2 + 12) = 28 birim</text><rect x='30' y='128' width='80' height='30' fill='#fcd34d' stroke='#b45309' stroke-width='1.5'/><text x='285' y='148' font-size='12' fill='#1e293b'>3 × 8 → Çevre = 2 × (3 + 8) = 22 birim</text><rect x='30' y='178' width='60' height='40' fill='#f9a8d4' stroke='#be185d' stroke-width='1.5'/><text x='285' y='203' font-size='12' fill='#1e293b'>4 × 6 → Çevre = 2 × (4 + 6) = 20 birim</text><rect x='30' y='236' width='530' height='46' rx='10' fill='#ffffff' stroke='#cbd5e1'/><text x='295' y='256' text-anchor='middle' font-size='12' fill='#334155'>Ölçek: 1 birim = 10 piksel. Dört dikdörtgende de 24 birim kare var.</text><text x='295' y='274' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>Çevreler: 50, 28, 22, 20 birim</text><rect x='575' y='50' width='170' height='232' rx='12' fill='#eff6ff' stroke='#2563eb' stroke-width='1.5'/><text x='660' y='76' text-anchor='middle' font-size='14' font-weight='bold' fill='#1d4ed8'>Sonuç</text><text x='660' y='104' text-anchor='middle' font-size='12' fill='#1e3a8a'>Alan aynı,</text><text x='660' y='122' text-anchor='middle' font-size='12' fill='#1e3a8a'>çevre farklı</text><text x='660' y='154' text-anchor='middle' font-size='12' fill='#1e3a8a'>İnce uzun şekil:</text><text x='660' y='172' text-anchor='middle' font-size='12' fill='#1e3a8a'>çevre büyük</text><text x='660' y='204' text-anchor='middle' font-size='12' fill='#1e3a8a'>Toplu şekil:</text><text x='660' y='222' text-anchor='middle' font-size='12' fill='#1e3a8a'>çevre küçük</text><text x='660' y='258' text-anchor='middle' font-size='13' font-weight='bold' fill='#be185d'>En küçük: 4 × 6</text></svg>"
+    },
+    {
+      "baslik": "Çevresi Verilen Dikdörtgenlerin Alanlarını İnceleme",
+      "metin": [
+        "Şimdi soruyu tersinden soralım: Çevresi bilinen bir dikdörtgenin alanı kaç olabilir? Yine iki adımla çalışırız: 1) Çevreyi 2'ye bölüp yarı çevreyi bulur, toplamı yarı çevreye eşit olan kenar çiftlerini sistemli olarak listeleriz. 2) Her çift için {koyu:Alan = a × b} işlemini yaparız. Çevresi 20 birim olan dikdörtgenlerin yarı çevresi 10 birimdir. Kenar çiftleri (1, 9), (2, 8), (3, 7), (4, 6) ve (5, 5)'tir; alanları ise sırasıyla {koyu:9, 16, 21, 24 ve 25 birimkaredir}.",
+        "Buradan şu yargıya ulaşırız: {koyu:Aynı çevre uzunluğuna sahip dikdörtgenlerin alanları farklı olabilir.} Geçen hafta kenar aktarmanın (bir kenara eklenip diğerinden çıkarılan eşit uzunluk) çevreyi değiştirmediğini görmüştük. Kenar aktarma çevreyi korur ama alanı değiştirir; çünkü çevre kenarların toplamına, alan ise kenarların çarpımına bağlıdır. 1 × 9'dan 2 × 8'e geçerken toplam 10'da kalır, çarpım ise 9'dan 16'ya çıkar. Uçları birleşik 20 cm'lik bir iple dikdörtgenler oluşturduğumuzu düşünelim: İpin boyu hiç değişmez ama ipin çevirdiği yüzey, şekil ince uzundan kareye doğru açıldıkça genişler.",
+        "Alanların nasıl değiştiğine yakından bakalım: 9 → 16 → 21 → 24 → 25. Artış miktarları {koyu:7, 5, 3, 1} şeklindedir; alan her adımda artar ama artış giderek küçülür ve kareye ulaşıldığında en büyük değere varılır. Çevresi verilen bir dikdörtgenin alanı sorulduğunda da tek cevap veremeyiz; ek bilgi yoksa olası bütün alanları yazarız. Bir kenar verildiğinde ise alan tek olarak bulunur: Çevresi 20 birim ve kısa kenarı 3 birim olan dikdörtgenin uzun kenarı 10 − 3 = 7 birim, alanı 3 × 7 = 21 birimkaredir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kenarlar (a × b)",
+          "Çevre",
+          "Alan (a × b)",
+          "Bir Öncekine Göre Artış"
+        ],
+        "satirlar": [
+          [
+            "1 × 9",
+            "20 birim",
+            "9 birimkare",
+            "—"
+          ],
+          [
+            "2 × 8",
+            "20 birim",
+            "16 birimkare",
+            "+7"
+          ],
+          [
+            "3 × 7",
+            "20 birim",
+            "21 birimkare",
+            "+5"
+          ],
+          [
+            "4 × 6",
+            "20 birim",
+            "24 birimkare",
+            "+3"
+          ],
+          [
+            "5 × 5 (kare)",
+            "20 birim",
+            "25 birimkare",
+            "+1"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kenar Aktarma Alanı Korumaz",
+          "metin": "Bir kenara 1 birim ekleyip diğerinden 1 birim çıkarmak çevreyi değiştirmez, ama alanı değiştirir. 3 × 7 dikdörtgeninden 4 × 6 dikdörtgenine geçince çevre 20 birimde kalır, alan 21'den 24'e çıkar."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Önce Toplam, Sonra Çarpım",
+          "metin": "Çevresi verilen dikdörtgende kenar çiftlerini bulmak için toplamı (yarı çevreyi), alanı bulmak için bu çiftlerin çarpımını kullan. İkisini aynı tabloda yazarsan karşılaştırma kolaylaşır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>ÇEVRESİ 20 BİRİM OLAN DİKDÖRTGENLERİN ALANLARI</text><line x1='60' y1='262' x2='565' y2='262' stroke='#334155' stroke-width='2'/><line x1='60' y1='48' x2='60' y2='262' stroke='#334155' stroke-width='2'/><text x='30' y='160' text-anchor='middle' font-size='12' fill='#334155' transform='rotate(-90 30 160)'>Alan (birimkare)</text><rect x='90' y='190' width='60' height='72' rx='4' fill='#93c5fd' stroke='#1d4ed8'/><text x='120' y='184' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>9</text><text x='120' y='280' text-anchor='middle' font-size='12' fill='#1e293b'>1 × 9</text><rect x='190' y='134' width='60' height='128' rx='4' fill='#86efac' stroke='#15803d'/><text x='220' y='128' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>16</text><text x='220' y='280' text-anchor='middle' font-size='12' fill='#1e293b'>2 × 8</text><rect x='290' y='94' width='60' height='168' rx='4' fill='#fcd34d' stroke='#b45309'/><text x='320' y='88' text-anchor='middle' font-size='13' font-weight='bold' fill='#b45309'>21</text><text x='320' y='280' text-anchor='middle' font-size='12' fill='#1e293b'>3 × 7</text><rect x='390' y='70' width='60' height='192' rx='4' fill='#fdba74' stroke='#c2410c'/><text x='420' y='64' text-anchor='middle' font-size='13' font-weight='bold' fill='#c2410c'>24</text><text x='420' y='280' text-anchor='middle' font-size='12' fill='#1e293b'>4 × 6</text><rect x='490' y='62' width='60' height='200' rx='4' fill='#f9a8d4' stroke='#be185d'/><text x='520' y='56' text-anchor='middle' font-size='13' font-weight='bold' fill='#be185d'>25</text><text x='520' y='280' text-anchor='middle' font-size='12' fill='#1e293b'>5 × 5</text><rect x='585' y='48' width='160' height='234' rx='12' fill='#f0fdf4' stroke='#16a34a' stroke-width='1.5'/><text x='665' y='72' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>Yarı çevre: 10</text><text x='665' y='98' text-anchor='middle' font-size='12' fill='#14532d'>Alan artışları:</text><text x='665' y='120' text-anchor='middle' font-size='12' fill='#14532d'>9 → 16: +7</text><text x='665' y='140' text-anchor='middle' font-size='12' fill='#14532d'>16 → 21: +5</text><text x='665' y='160' text-anchor='middle' font-size='12' fill='#14532d'>21 → 24: +3</text><text x='665' y='180' text-anchor='middle' font-size='12' fill='#14532d'>24 → 25: +1</text><text x='665' y='212' text-anchor='middle' font-size='12' fill='#14532d'>Çevre hep 20,</text><text x='665' y='230' text-anchor='middle' font-size='12' fill='#14532d'>alan farklı</text><text x='665' y='262' text-anchor='middle' font-size='13' font-weight='bold' fill='#be185d'>En büyük: 5 × 5</text></svg>"
+    },
+    {
+      "baslik": "Kareye Yaklaşan Dikdörtgenlerde Çevre ve Alanın Değişimi",
+      "metin": [
+        "Önceki iki bölümde elde ettiğimiz listeleri yan yana koyunca ortak bir düzen görürüz. Dikdörtgenleri {koyu:en ince uzun olandan kareye en yakın olana} doğru sıraladığımızda: Alan sabitse çevre sürekli {koyu:azalır}; çevre sabitse alan sürekli {koyu:artar}. Alanı 36 birimkare olan dikdörtgenlerde çevreler 74, 40, 30, 26, 24 diye küçülür ve en küçük çevre 6 × 6 karesindedir. Çevresi 24 birim olan dikdörtgenlerde alanlar 11, 20, 27, 32, 35, 36 diye büyür ve en büyük alan yine 6 × 6 karesindedir.",
+        "Her listede kare bulunmayabilir. Alanı 20 birimkare olan dikdörtgenler 1 × 20, 2 × 10 ve 4 × 5'tir; 20 bir sayının kendisiyle çarpımı olmadığı için kare yoktur. Bu durumda en küçük çevre {koyu:kareye en yakın} dikdörtgende, yani kenarları arasındaki fark en az olan 4 × 5'te görülür (18 birim). Çevresi 22 birim olan dikdörtgenlerde yarı çevre 11 tek sayı olduğu için kare oluşmaz; en büyük alan kenarları 5 ve 6 olan dikdörtgendedir (30 birimkare). Kenarlar arasındaki farka bakmak, hangi dikdörtgenin kareye daha yakın olduğunu anlamanın kolay bir yoludur.",
+        "Bu düzeni bir {koyu:yargı} olarak şöyle ifade edebiliriz: «Kenar uzunlukları doğal sayı olan dikdörtgenler arasında, aynı alana sahip olanların en küçük çevreli olanı, aynı çevreye sahip olanların en büyük alanlı olanı kare ya da kareye en yakın dikdörtgendir.» Bu yargıyı yeni bir sayıyla sınamak her zaman iyi bir alışkanlıktır. Örneğin çevresi 12 birim olan dikdörtgenlerin alanlarını (1 × 5 = 5, 2 × 4 = 8, 3 × 3 = 9) bularak en büyük alanın 3 × 3 karesinde olduğunu kendin doğrulayabilirsin."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Sabit Tutulan",
+          "En İnce Uzun Dikdörtgen",
+          "Kareye En Yakın Dikdörtgen",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "Alan = 36 birimkare",
+            "1 × 36, çevre 74 birim",
+            "6 × 6, çevre 24 birim",
+            "En küçük çevre karede"
+          ],
+          [
+            "Çevre = 24 birim",
+            "1 × 11, alan 11 birimkare",
+            "6 × 6, alan 36 birimkare",
+            "En büyük alan karede"
+          ],
+          [
+            "Alan = 20 birimkare",
+            "1 × 20, çevre 42 birim",
+            "4 × 5, çevre 18 birim",
+            "Kare yok; en küçük çevre 4 × 5'te"
+          ],
+          [
+            "Çevre = 22 birim",
+            "1 × 10, alan 10 birimkare",
+            "5 × 6, alan 30 birimkare",
+            "Kare yok; en büyük alan 5 × 6'da"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Kareye Yaklaşma Yargısı",
+          "metin": "Alan sabitken kenarlar birbirine yaklaştıkça çevre azalır. Çevre sabitken kenarlar birbirine yaklaştıkça alan artar. Kare yoksa uç değer, kenarları arasındaki fark en az olan dikdörtgendedir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Kare de Bir Dikdörtgendir",
+          "metin": "Karenin karşılıklı kenarları eşit ve köşeleri dik olduğu için kare özel bir dikdörtgendir. Bu yüzden 6 × 6 gibi kareler dikdörtgen listelerine dâhil edilir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>İNCE UZUNDAN KAREYE: ÇEVRE VE ALAN NASIL DEĞİŞİR?</text><rect x='20' y='48' width='340' height='236' rx='12' fill='#eff6ff' stroke='#2563eb' stroke-width='1.5'/><text x='190' y='74' text-anchor='middle' font-size='14' font-weight='bold' fill='#1d4ed8'>ALAN SABİT: 36 birimkare</text><text x='50' y='106' font-size='13' fill='#1e3a8a'>1 × 36 → çevre 74 birim</text><text x='50' y='132' font-size='13' fill='#1e3a8a'>2 × 18 → çevre 40 birim</text><text x='50' y='158' font-size='13' fill='#1e3a8a'>3 × 12 → çevre 30 birim</text><text x='50' y='184' font-size='13' fill='#1e3a8a'>4 × 9 → çevre 26 birim</text><text x='50' y='210' font-size='13' font-weight='bold' fill='#be185d'>6 × 6 → çevre 24 birim</text><line x1='320' y1='96' x2='320' y2='206' stroke='#2563eb' stroke-width='3'/><polygon points='312,204 328,204 320,218' fill='#2563eb'/><text x='190' y='246' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>Kareye yaklaştıkça</text><text x='190' y='266' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>çevre AZALIR</text><rect x='400' y='48' width='340' height='236' rx='12' fill='#f0fdf4' stroke='#16a34a' stroke-width='1.5'/><text x='570' y='74' text-anchor='middle' font-size='14' font-weight='bold' fill='#15803d'>ÇEVRE SABİT: 24 birim</text><text x='430' y='100' font-size='13' fill='#14532d'>1 × 11 → alan 11 birimkare</text><text x='430' y='122' font-size='13' fill='#14532d'>2 × 10 → alan 20 birimkare</text><text x='430' y='144' font-size='13' fill='#14532d'>3 × 9 → alan 27 birimkare</text><text x='430' y='166' font-size='13' fill='#14532d'>4 × 8 → alan 32 birimkare</text><text x='430' y='188' font-size='13' fill='#14532d'>5 × 7 → alan 35 birimkare</text><text x='430' y='210' font-size='13' font-weight='bold' fill='#be185d'>6 × 6 → alan 36 birimkare</text><line x1='705' y1='94' x2='705' y2='206' stroke='#16a34a' stroke-width='3'/><polygon points='697,204 713,204 705,218' fill='#16a34a'/><text x='570' y='246' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>Kareye yaklaştıkça</text><text x='570' y='266' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>alan ARTAR</text></svg>"
+    },
+    {
+      "baslik": "Çevre ile Alan Arasındaki İlişkiye Dair Yargılar ve Karşı Örnekler",
+      "metin": [
+        "Çevre ve alan aynı dikdörtgene ait iki farklı niceliktir: Çevre {koyu:sınırın uzunluğunu}, alan {koyu:kaplanan yüzeyi} ölçer. Pek çok öğrenci, biri büyüyünce diğerinin de büyüyeceğini düşünür. Bu düşünceyi sınayalım: Kenarları 1 ve 9 birim olan A dikdörtgeninin çevresi 20 birim, alanı 9 birimkaredir. Kenarı 4 birim olan B karesinin çevresi 16 birim, alanı 16 birimkaredir. A'nın çevresi daha büyük, ama alanı daha küçüktür. Demek ki {koyu:çevresi büyük olan dikdörtgenin alanı küçük olabilir}; tek bir karşı örnek, «çevre büyükse alan da büyüktür» genellemesini çürütür.",
+        "Haftanın bütün çalışmalarını iki temel yargıda toplayabiliriz: 1) {koyu:Aynı çevre uzunluğuna sahip dikdörtgenlerin alanları farklı olabilir} (2 × 8 ve 5 × 5 dikdörtgenlerinin çevresi 20 birim, alanları 16 ve 25 birimkaredir). 2) {koyu:Aynı alana sahip dikdörtgenlerin çevre uzunlukları farklı olabilir} (1 × 24 ve 4 × 6 dikdörtgenlerinin alanı 24 birimkare, çevreleri 50 ve 20 birimdir). Yargıyı kurarken «olabilir» kelimesine dikkat ederiz: Bu, her zaman farklı olacağı anlamına gelmez. Aynı dikdörtgeni döndürdüğümüzde hem çevre hem alan aynı kalır; iki farklı dikdörtgenin çevresi ve alanı aynı anda eşitse aslında kenar uzunlukları da aynıdır.",
+        "Bu ilişkiler gündelik yaşamda da karşımıza çıkar; burada amacımız problem çözmek değil, durumları yorumlamaktır. Aynı uzunlukta bir çitle farklı biçimlerde çevrilen bahçelerin içindeki ekim alanı farklı olur. Aynı sayıda eş kare halıyla döşenen iki oda farklı biçimdeyse süpürgelik uzunlukları farklı olur. Bir durumu yorumlarken önce hangi niceliğin {koyu:sabit} tutulduğunu (çit uzunluğu mu, halı sayısı mı) belirler, sonra diğer niceliğin nasıl değişebileceğini kenar çiftlerini listeleyerek gerekçelendiririz. İlginç bir not olarak 4 × 4 karesinde ve 3 × 6 dikdörtgeninde çevre ile alan sayıca eşit çıkar (16 ile 16, 18 ile 18); ancak biri birim, diğeri birimkare olduğu için bu iki nicelik yine de aynı şey değildir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yargı",
+          "Doğru mu?",
+          "Gerekçe veya Karşı Örnek"
+        ],
+        "satirlar": [
+          [
+            "Aynı çevreli dikdörtgenlerin alanları da aynıdır.",
+            "Yanlış",
+            "2 × 8 ve 5 × 5: çevreleri 20, alanları 16 ve 25."
+          ],
+          [
+            "Aynı alanlı dikdörtgenlerin çevreleri de aynıdır.",
+            "Yanlış",
+            "1 × 24 ve 4 × 6: alanları 24, çevreleri 50 ve 20."
+          ],
+          [
+            "Çevresi büyük olanın alanı da büyüktür.",
+            "Yanlış",
+            "1 × 9: çevre 20, alan 9; 4 × 4: çevre 16, alan 16."
+          ],
+          [
+            "İki dikdörtgenin hem çevresi hem alanı farklı olabilir.",
+            "Doğru",
+            "2 × 3: çevre 10, alan 6; 4 × 5: çevre 18, alan 20."
+          ],
+          [
+            "Kare, aynı çevreli dikdörtgenler içinde en büyük alanlıdır.",
+            "Doğru",
+            "Çevre 16 için alanlar 7, 12, 15 ve 4 × 4 karesinde 16."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Bağımsız Değişen Nicelikler",
+          "metin": "İki nicelikten biri sabit kalırken diğeri değişebiliyorsa ya da biri artarken diğeri azalabiliyorsa bu nicelikler birbirine bağlı biçimde değişmez. Dikdörtgenin çevresi ile alanı böyle iki niceliktir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Olabilir ile Her Zaman Farkı",
+          "metin": "«Aynı çevreli dikdörtgenlerin alanları farklı olabilir» yargısı doğrudur; «her zaman farklıdır» yargısı ise yanlıştır, çünkü bir dikdörtgen ve onun döndürülmüş hâli aynı alana sahiptir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><defs><pattern id='k16f' width='20' height='20' patternUnits='userSpaceOnUse'><rect width='20' height='20' fill='#fde68a'/><path d='M 20 0 L 0 0 0 20' fill='none' stroke='#b45309' stroke-width='1'/></pattern><pattern id='k16g' width='20' height='20' patternUnits='userSpaceOnUse'><rect width='20' height='20' fill='#bfdbfe'/><path d='M 20 0 L 0 0 0 20' fill='none' stroke='#1d4ed8' stroke-width='1'/></pattern></defs><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>KARŞI ÖRNEK: ÇEVRESİ BÜYÜK OLANIN ALANI KÜÇÜK OLABİLİR</text><rect x='40' y='100' width='180' height='20' fill='url(#k16f)' stroke='#b45309' stroke-width='2'/><text x='130' y='92' text-anchor='middle' font-size='13' font-weight='bold' fill='#b45309'>A dikdörtgeni: 1 × 9</text><text x='130' y='148' text-anchor='middle' font-size='12' fill='#1e293b'>Çevre = 2 × (1 + 9) = 20 birim</text><text x='130' y='168' text-anchor='middle' font-size='12' fill='#1e293b'>Alan = 1 × 9 = 9 birimkare</text><rect x='300' y='60' width='80' height='80' fill='url(#k16g)' stroke='#1d4ed8' stroke-width='2'/><text x='340' y='52' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>B karesi: 4 × 4</text><text x='340' y='164' text-anchor='middle' font-size='12' fill='#1e293b'>Çevre = 4 × 4 = 16 birim</text><text x='340' y='184' text-anchor='middle' font-size='12' fill='#1e293b'>Alan = 4 × 4 = 16 birimkare</text><rect x='30' y='210' width='400' height='72' rx='10' fill='#ffffff' stroke='#cbd5e1'/><text x='230' y='236' text-anchor='middle' font-size='13' fill='#1e293b'>Çevre: A &gt; B (20 &gt; 16)</text><text x='230' y='258' text-anchor='middle' font-size='13' fill='#1e293b'>Alan: A &lt; B (9 &lt; 16)</text><text x='230' y='276' text-anchor='middle' font-size='11' font-weight='bold' fill='#b91c1c'>Çevre büyüdü diye alan büyümek zorunda değil</text><rect x='460' y='48' width='280' height='234' rx='12' fill='#fef3c7' stroke='#d97706' stroke-width='1.5'/><text x='600' y='74' text-anchor='middle' font-size='14' font-weight='bold' fill='#b45309'>ÜÇ YARGI</text><text x='475' y='104' font-size='12' font-weight='bold' fill='#78350f'>1. Aynı çevre → alan farklı olabilir</text><text x='490' y='124' font-size='11' fill='#78350f'>2 × 8 ve 5 × 5: alanlar 16 ve 25</text><text x='475' y='158' font-size='12' font-weight='bold' fill='#78350f'>2. Aynı alan → çevre farklı olabilir</text><text x='490' y='178' font-size='11' fill='#78350f'>1 × 24 ve 4 × 6: çevreler 50 ve 20</text><text x='475' y='212' font-size='12' font-weight='bold' fill='#78350f'>3. Büyük çevre → büyük alan değil</text><text x='490' y='232' font-size='11' fill='#78350f'>1 × 9 ve 4 × 4: yandaki karşı örnek</text><text x='600' y='264' text-anchor='middle' font-size='12' font-weight='bold' fill='#b45309'>Çevre ve alan bağımsız değişir</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Alanı 18 {us:cm|2} olan ve kenar uzunlukları santimetre cinsinden doğal sayı olan bütün dikdörtgenleri bulunuz. Her birinin çevre uzunluğunu hesaplayınız. Çevresi en küçük olan hangisidir?",
+      "cevap": "1. Adım (Kenar çiftleri): Kısa kenara 1'den başlayarak değer verelim. 18 ÷ 1 = 18, 18 ÷ 2 = 9, 18 ÷ 3 = 6; 18 ÷ 4 kalanlı, 18 ÷ 5 kalanlı. 5 × 5 = 25 alanı geçtiği için dururuz. Çiftler: (1, 18), (2, 9), (3, 6).\n2. Adım (Çevreler): 2 × (1 + 18) = 38 cm; 2 × (2 + 9) = 22 cm; 2 × (3 + 6) = 18 cm.\n3. Adım (Karşılaştırma): 38 > 22 > 18.\nSonuç: 3 farklı dikdörtgen vardır; çevresi en küçük olan, kenarları birbirine en yakın olan 3 cm × 6 cm dikdörtgenidir (18 cm).",
+      "ipucu": "Önce çarpımı 18 olan doğal sayı çiftlerini sistemli listele, sonra her çiftin çevresini 2 × (a + b) ile hesapla."
+    },
+    {
+      "soru": "Çevre uzunluğu 16 cm olan ve kenarları santimetre cinsinden doğal sayı olan dikdörtgenlerin alanlarını bulunuz. Alanı en büyük olan dikdörtgen hangisidir?",
+      "cevap": "1. Adım (Yarı çevre): 16 ÷ 2 = 8 cm.\n2. Adım (Kenar çiftleri): (1, 7), (2, 6), (3, 5), (4, 4).\n3. Adım (Alanlar): 1 × 7 = 7 {us:cm|2}; 2 × 6 = 12 {us:cm|2}; 3 × 5 = 15 {us:cm|2}; 4 × 4 = 16 {us:cm|2}.\n4. Adım (Yorum): Kenarlar birbirine yaklaştıkça alan 7, 12, 15, 16 diye artmaktadır.\nSonuç: Alanı en büyük olan, kenarı 4 cm olan karedir (16 {us:cm|2}). Dört dikdörtgenin çevresi aynı, alanları farklıdır.",
+      "ipucu": "Çevreden yarı çevreye, yarı çevreden kenar çiftlerine, kenar çiftlerinden alana git."
+    },
+    {
+      "soru": "Bir dikdörtgenin alanı 20 {us:cm|2}, kenarlarından biri 4 cm'dir. Bu dikdörtgenin diğer kenarını ve çevre uzunluğunu bulunuz.",
+      "cevap": "1. Adım (Diğer kenar): Alan = a × b olduğundan diğer kenar = 20 ÷ 4 = 5 cm.\n2. Adım (Kontrol): 4 × 5 = 20 {us:cm|2}, doğru.\n3. Adım (Çevre): 2 × (4 + 5) = 2 × 9 = 18 cm.\nSonuç: Diğer kenar 5 cm, çevre 18 cm'dir. Bir kenar verildiği için çevre tek olarak belirlendi; yalnız alan verilseydi çevre 42, 24 veya 18 cm olabilirdi.",
+      "ipucu": "Alan ve bir kenar biliniyorsa diğer kenar bölmeyle bulunur."
+    },
+    {
+      "soru": "Çevre uzunluğu 30 cm olan bir dikdörtgenin kısa kenarı 6 cm'dir. Bu dikdörtgenin alanını bulunuz. Aynı çevreye sahip ve kısa kenarı 7 cm olan dikdörtgenin alanı bundan büyük müdür, küçük müdür?",
+      "cevap": "1. Adım (Yarı çevre): 30 ÷ 2 = 15 cm.\n2. Adım (Uzun kenar): 15 − 6 = 9 cm. Alan = 6 × 9 = 54 {us:cm|2}.\n3. Adım (İkinci dikdörtgen): Uzun kenar 15 − 7 = 8 cm. Alan = 7 × 8 = 56 {us:cm|2}.\n4. Adım (Karşılaştırma): 56 > 54.\nSonuç: İlk dikdörtgenin alanı 54 {us:cm|2}'dir. Kısa kenarı 7 cm olan dikdörtgenin kenarları birbirine daha yakın olduğu için alanı daha büyüktür (56 {us:cm|2}); çevreleri ise aynıdır.",
+      "ipucu": "Uzun kenarı yarı çevreden kısa kenarı çıkararak bul, sonra kenarları çarp."
+    },
+    {
+      "soru": "Öğretmen, alanı 16 birimkare olan bir dikdörtgen çizmelerini istedi. Ali 2 birim × 8 birim, Zeynep 4 birim × 4 birim boyutlarında şekil çizdi. Ali «Alanlarımız aynı olduğuna göre çevrelerimiz de aynıdır.» diyor. Ali'nin yargısını değerlendiriniz.",
+      "cevap": "1. Adım (Alanlar): Ali: 2 × 8 = 16 birimkare. Zeynep: 4 × 4 = 16 birimkare. İkisi de doğru çizmiştir.\n2. Adım (Çevreler): Ali: 2 × (2 + 8) = 20 birim. Zeynep: 4 × 4 = 16 birim.\n3. Adım (Yorum): Alanlar eşit, çevreler farklıdır.\nSonuç: Ali'nin yargısı yanlıştır. Aynı alana sahip dikdörtgenlerin çevreleri farklı olabilir; kareye en yakın şekil olan Zeynep'in karesinin çevresi daha küçüktür.",
+      "ipucu": "İki şeklin alanını ve çevresini ayrı ayrı hesaplayıp karşılaştır."
+    },
+    {
+      "soru": "Kısa kenarı 3 birim, uzun kenarı 5 birim olan bir dikdörtgenin kısa kenarı 2 katına çıkarılıyor. Yeni dikdörtgenin alanı ve çevresi eskisinin kaç katı olur? Yorumlayınız.",
+      "cevap": "1. Adım (Eski dikdörtgen): Alan = 3 × 5 = 15 birimkare; çevre = 2 × (3 + 5) = 16 birim.\n2. Adım (Yeni dikdörtgen): Kenarlar 6 ve 5 birim. Alan = 6 × 5 = 30 birimkare; çevre = 2 × (6 + 5) = 22 birim.\n3. Adım (Karşılaştırma): 30 = 2 × 15, yani alan 2 katına çıktı. 22, 16'nın 2 katı (32) değildir; çevre yalnız 6 birim arttı.\nSonuç: Alan 2 katına çıkar, çevre ise 2 katına çıkmaz. Sıra sayısı 2 katına çıktığı için alan 2 katı olur; çevrede ise yalnız iki kenar uzar, diğer iki kenar değişmez.",
+      "ipucu": "Önce eski, sonra yeni dikdörtgenin alanını ve çevresini hesapla; sonuçları karşılaştır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Alanı 30 {us:cm|2} olan bir dikdörtgenin kenar uzunlukları aşağıdakilerden hangisi olamaz?",
+      "secenekler": [
+        "5 cm ve 6 cm",
+        "3 cm ve 10 cm",
+        "4 cm ve 8 cm",
+        "2 cm ve 15 cm"
+      ],
+      "dogru": 2,
+      "aciklama": "5 × 6, 3 × 10 ve 2 × 15 çarpımları 30'dur. 4 × 8 = 32 olduğundan bu kenarlar alanı 30 {us:cm|2} olan bir dikdörtgene ait olamaz; zaten 30 sayısı 4'e kalansız bölünmez."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Alanı 24 birimkare olan ve kenarları doğal sayı olan dikdörtgenler arasında çevresi en küçük olanın çevre uzunluğu kaç birimdir?",
+      "secenekler": [
+        "20",
+        "22",
+        "28",
+        "50"
+      ],
+      "dogru": 0,
+      "aciklama": "Kenar çiftleri (1, 24), (2, 12), (3, 8), (4, 6)'dır; çevreleri 50, 28, 22 ve 20 birimdir. En küçük çevre, kenarları birbirine en yakın olan 4 × 6 dikdörtgenindedir: 20 birim."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Çevre uzunluğu 18 cm olan ve kenarları santimetre cinsinden doğal sayı olan dikdörtgenler arasında alanı en büyük olanın alanı kaç {us:cm|2}'dir?",
+      "secenekler": [
+        "18",
+        "20",
+        "81",
+        "8"
+      ],
+      "dogru": 1,
+      "aciklama": "Yarı çevre 9 cm'dir. Çiftler (1, 8), (2, 7), (3, 6), (4, 5); alanlar 8, 14, 18 ve 20 {us:cm|2}'dir. Yarı çevre tek olduğu için kare yoktur; en büyük alan kareye en yakın 4 × 5 dikdörtgeninde: 20 {us:cm|2}."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Alanı 36 {us:cm|2} ve bir kenarı 4 cm olan dikdörtgenin çevre uzunluğu kaç cm'dir?",
+      "secenekler": [
+        "13",
+        "40",
+        "36",
+        "26"
+      ],
+      "dogru": 3,
+      "aciklama": "Diğer kenar 36 ÷ 4 = 9 cm'dir. Çevre = 2 × (4 + 9) = 2 × 13 = 26 cm. 13 yarı çevredir; 36 ise alanın sayı değeridir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Alanı 24 birimkare olan bütün dikdörtgenlerin çevre uzunlukları eşittir.",
+          "dogru": false,
+          "aciklama": "1 × 24 dikdörtgeninin çevresi 50, 4 × 6 dikdörtgeninin çevresi 20 birimdir. Aynı alanlı dikdörtgenlerin çevreleri farklı olabilir."
+        },
+        {
+          "metin": "Çevresi 16 birim olan dikdörtgenler arasında alanı en büyük olan 4 × 4 karesidir.",
+          "dogru": true,
+          "aciklama": "Alanlar 1 × 7 = 7, 2 × 6 = 12, 3 × 5 = 15 ve 4 × 4 = 16 birimkaredir; en büyüğü karededir."
+        },
+        {
+          "metin": "Alanı 13 birimkare olan ve kenarları doğal sayı olan tek dikdörtgen 1 × 13 dikdörtgenidir.",
+          "dogru": true,
+          "aciklama": "13 sayısı yalnız 1'e ve kendisine kalansız bölündüğü için başka kenar çifti yoktur."
+        },
+        {
+          "metin": "Bir dikdörtgenin çevresi başka bir dikdörtgenin çevresinden büyükse alanı da kesinlikle büyüktür.",
+          "dogru": false,
+          "aciklama": "1 × 9 dikdörtgeninin çevresi 20, alanı 9; 4 × 4 karesinin çevresi 16, alanı 16'dır. Çevresi büyük olanın alanı küçük olabilir."
+        },
+        {
+          "metin": "Kısa kenarı 3 birim, uzun kenarı 5 birim olan dikdörtgenin kısa kenarı 2 katına çıkarılırsa alanı 30 birimkare olur.",
+          "dogru": true,
+          "aciklama": "Yeni kenarlar 6 ve 5 birimdir: 6 × 5 = 30 birimkare. Alan 15'ten 30'a, yani 2 katına çıkar."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavram ve durumları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Alan = a × b",
+          "Dikdörtgenin iki ardışık kenar uzunluğunun çarpımı"
+        ],
+        [
+          "Alanı 12 birimkare olan dikdörtgenler",
+          "1 × 12, 2 × 6 ve 3 × 4 olmak üzere 3 farklı dikdörtgen"
+        ],
+        [
+          "Alanı 24 birimkare olan en küçük çevreli dikdörtgen",
+          "4 × 6 dikdörtgeni, çevresi 20 birim"
+        ],
+        [
+          "Çevresi 20 birim olan en büyük alanlı dikdörtgen",
+          "5 × 5 karesi, alanı 25 birimkare"
+        ],
+        [
+          "Bir kenarı 2 katına çıkarılan dikdörtgen",
+          "Alanı da 2 katına çıkar"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Alanı ve bir kenar uzunluğu bilinen dikdörtgenin diğer kenarı, alanın bilinen kenara ___ bulunur.",
+          "cevap": "bölünmesiyle"
+        },
+        {
+          "metin": "Aynı alana sahip dikdörtgenler arasında kenarları birbirine en yakın olanın çevresi en ___ olur.",
+          "cevap": "küçük"
+        },
+        {
+          "metin": "Çevresi 20 birim olan dikdörtgenler arasında alanı en büyük olanı, kenarı 5 birim olan ___.",
+          "cevap": "karedir"
+        },
+        {
+          "metin": "Alanı 36 birimkare olan ve kenarları doğal sayı olan ___ farklı dikdörtgen vardır.",
+          "cevap": "5"
+        },
+        {
+          "metin": "Aynı çevre uzunluğuna sahip dikdörtgenlerin alanları ___ olabilir.",
+          "cevap": "farklı"
+        }
+      ],
+      "kelimeler": [
+        "bölünmesiyle",
+        "küçük",
+        "karedir",
+        "5",
+        "farklı"
+      ],
+      "fazla": [
+        "büyük",
+        "toplanmasıyla"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Alanı 48 birimkare olan ve kenar uzunlukları doğal sayı olan bütün dikdörtgenleri bulunuz. Her birinin çevre uzunluğunu hesaplayınız. Çevresi en büyük ve en küçük olan dikdörtgenleri belirleyiniz ve bu listede kare olup olmadığını açıklayınız.",
+      "ipuclari": [
+        "1. adım: Kısa kenara 1'den başlayarak değer ver; 48 bu sayıya kalansız bölünüyorsa uzun kenarı 48 ÷ kısa kenar olarak yaz. Kısa kenarın kendisiyle çarpımı 48'i geçince dur.",
+        "2. adım: Her kenar çifti için Çevre = 2 × (a + b) işlemini yap ve sonuçları bir tabloda topla.",
+        "3. adım: Çevreleri karşılaştır; en büyük ve en küçük çevreli dikdörtgenleri belirle. 48'in bir sayının kendisiyle çarpımı olup olmadığına bakarak kare olup olmadığını açıkla."
+      ],
+      "cevap": "1. Adım (Kenar çiftleri): 48 ÷ 1 = 48, 48 ÷ 2 = 24, 48 ÷ 3 = 16, 48 ÷ 4 = 12, 48 ÷ 5 kalanlı, 48 ÷ 6 = 8. 7 × 7 = 49 sayısı 48'i geçtiği için dururuz. Çiftler: (1, 48), (2, 24), (3, 16), (4, 12), (6, 8). Toplam 5 dikdörtgen vardır.\n2. Adım (Çevreler): 2 × (1 + 48) = 98; 2 × (2 + 24) = 52; 2 × (3 + 16) = 38; 2 × (4 + 12) = 32; 2 × (6 + 8) = 28 birim.\n3. Adım (Karşılaştırma): Çevresi en büyük olan, en ince uzun 1 × 48 dikdörtgenidir (98 birim). Çevresi en küçük olan, kenarları birbirine en yakın 6 × 8 dikdörtgenidir (28 birim).\n4. Adım (Kare var mı?): 6 × 6 = 36 ve 7 × 7 = 49 olduğundan 48 bir doğal sayının kendisiyle çarpımı değildir; bu yüzden listede kare yoktur, en küçük çevre kareye en yakın olan 6 × 8 dikdörtgenindedir.\nSonuç: Beş dikdörtgenin alanı aynı (48 birimkare), çevreleri 98, 52, 38, 32 ve 28 birim olarak birbirinden farklıdır."
+    }
+  ]
+}

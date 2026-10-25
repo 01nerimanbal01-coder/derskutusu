@@ -1,0 +1,558 @@
+{
+  "ad": "7-matematik-16",
+  "sinif": 7,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "İstatistiksel Araştırma Süreci",
+  "konu": "Kategorik ve Nicel (Sürekli) Veri Dağılımları: Rapor Bütünlüğü, Histogram ve Eğilim Yorumları, Birleşik Ortalama ve Farklı Yorumları Tartışma (Uygulama ve Pekiştirme)",
+  "ciktilar": [
+    "Başkaları tarafından oluşturulan kategorik veya nicel (sürekli) veriye dayalı istatistiksel sonuç ve yorumlara yönelik istatistiksel temellendirme yapar. Bunun için bir raporun araştırma sorusu, veri türü, örneklem, grafik, ölçü ve sonuç bölümlerinin birbiriyle uyumlu olup olmadığını inceler (MAT.7.6.2.a).",
+    "Başkaları tarafından oluşturulan istatistiksel sonuç ve yorumlardaki hataları ya da yanlılıkları tespit eder. Gruplandırılmış veriden kesin değer çıkarmak, sınırlı veriyle uzak geleceği tahmin etmek (dışa kestirim), birleşik ortalamayı yanlış hesaplamak, birim ve yuvarlama karışıklıkları ile soru-sonuç uyumsuzluğu bu hatalar arasındadır (MAT.7.6.2.b).",
+    "Başkaları tarafından oluşturulan istatistiksel sonuç ve yorumları verilere dayalı gerekçelerle kabul eder ya da çürütür. Aynı veriden üretilen farklı yorumları karşılaştırır, eksik yorumları tamamlar ve gerekçeli karşı görüş geliştirir (MAT.7.6.2.c)."
+  ],
+  "giris": "Geçen hafta bir veri dedektifi gibi yanlı örneklemleri, yanıltıcı grafikleri ve yanlış seçilmiş ölçüleri yakaladık. Bu hafta aynı becerileri daha zor durumlarda kullanacağız. Önce bir istatistiksel raporu {koyu:baştan sona bir zincir gibi} inceleyeceğiz. Ardından {koyu:histogram ve gruplandırılmış veri} yorumlarını, {koyu:çizgi grafiğine dayalı tahminleri} ve {koyu:nokta grafiğiyle yapılan grup karşılaştırmalarını} sorgulayacağız. {koyu:Birleşik ortalama, birim ve yuvarlama} hatalarını ters işlemle kontrol etmeyi öğreneceğiz. Son olarak aynı veriden çıkan {koyu:farklı yorumları} saygılı ve gerekçeli biçimde tartışacağız.",
+  "ozet": [
+    "{koyu:Rapor Zinciri:} Araştırma sorusu, veri türü, örneklem, grafik, ölçü ve sonuç birbiriyle uyumlu olmalıdır. Sonuç sorunun ve verinin kapsamını aşarsa iddia geçersiz kalır.",
+    "{koyu:Gruplandırılmış Veri:} Histogramdan aralıklara düşen kişi sayıları ve bu sayıların toplamları okunur. Tek tek değerler, en büyük ya da en küçük değerin kesin hâli ve kesin ortalama bu gösterimden bilinemez.",
+    "{koyu:Eğilim ve Tahmin:} Çizgi grafiğindeki artış ya da azalış eğilimi kısa vadeli ve temkinli tahminlere izin verir. Birkaç veriyle uzak gelecek için kesin tahmin yapmak dışa kestirim hatasıdır.",
+    "{koyu:Grup Karşılaştırma:} Nokta grafikleri örtüşen iki grup için 'genel olarak' ile başlayan iddialar ortanca ve ortalamayla, 'her' ile başlayan iddialar ise tek bir karşı örnekle değerlendirilir.",
+    "{koyu:Hesap Kontrolü:} Birleşik ortalama, grupların toplamları toplanıp toplam kişi sayısına bölünerek bulunur. Ortalama en küçük ve en büyük veri arasında olmalıdır. Yuvarlamadan doğan %99 ya da %101 toplamları hata sayılmaz.",
+    "{koyu:Farklı Yorumlar:} Aynı veriden yapılan iki yorumun ikisi de doğru ama eksik olabilir. Doğru tartışma, yorumları veriyle karşılaştırıp en eksiksiz ve temkinli ifadeyi birlikte kurmaktır."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Bir İstatistiksel Raporu Bütüncül İnceleme: Soru, Veri, Grafik ve Sonuç Uyumu",
+      "metin": [
+        "Bir araştırmanın sonunda hazırlanan rapor bir zincire benzer. Halkaları sırasıyla {koyu:araştırma sorusu}, {koyu:veri türü ve örneklem}, {koyu:grafik}, {koyu:istatistiksel ölçüler} ve {koyu:sonuçtur}. Geçen hafta bu halkalardaki hataları tek tek inceledik. Bu hafta raporun bütününe bakıyoruz. Halkaların her biri tek başına doğru olsa bile birbirine bağlanmıyorsa zincir kopar ve sonuç güvenilmez olur. Bu yüzden başkasının raporunu değerlendirirken sorunun ne olduğunu, verinin bu soruya cevap verip vermediğini ve sonucun gerçekten bu veriden çıkıp çıkmadığını birlikte düşünürüz.",
+        "En sık görülen kopukluk, {koyu:soru ile sonuç arasındaki uyumsuzluktur}. Bir öğrenci grubu 'Yedinci sınıf öğrencileri hafta içi günde kaç saat uyuyor?' sorusunu araştırmış, uyku sürelerini doğru ölçmüş ve ortalamayı 7,6 saat bulmuş olsun. Raporun sonunda 'Uykusuzluk öğrencilerin başarısını düşürüyor' yazıyorsa sonuç soruyu aşmıştır, çünkü başarı puanı hiç toplanmamıştır. İkinci kopukluk {koyu:veri türü ile grafik arasındadır}. 'En sevilen meyve' gibi kategorik bir veri çizgi grafiğiyle gösterilirse kategoriler arasında anlamsız bir artış-azalış izlenimi oluşur. Çizgi grafiği zaman içindeki değişimi gösterir. Kategorik veride sütun ya da daire grafiği kullanılır.",
+        "Üçüncü kopukluk {koyu:değişim iddialarında} görülür. 'Artıyor', 'azalıyor', 'eskisinden daha çok' gibi ifadeler en az iki farklı zamanda, aynı yöntemle toplanmış veri gerektirir. Tek bir anketten 'Kitap okuma alışkanlığı azalıyor' sonucu çıkarılamaz. Bu durumda doğru karar 'bu veriyle karar verilemez' olur. Son olarak sonucu söyleyen cümlenin {koyu:kapsamı} örneklemle aynı olmalıdır. Veriler yalnız 7-C sınıfından toplanmışsa sonuç da '7-C öğrencileri için' diye kurulmalıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Rapor Halkası",
+          "Kontrol Sorusu",
+          "Uyumsuzluk Örneği"
+        ],
+        "satirlar": [
+          [
+            "Araştırma sorusu",
+            "Soru açık ve ölçülebilir mi?",
+            "'Öğrenciler sporu sever mi?' (Kimler, hangi spor, nasıl ölçülecek belirsiz)"
+          ],
+          [
+            "Veri türü",
+            "Veri kategorik mi, nicel (sürekli) mi?",
+            "Boyları 'kısa, orta, uzun' diye kaydedip ortalama boy hesaplamaya çalışmak"
+          ],
+          [
+            "Örneklem",
+            "Sonuçtaki grup ile verinin toplandığı grup aynı mı?",
+            "Yalnız 7-C verisiyle okulun tamamı hakkında yorum yapmak"
+          ],
+          [
+            "Grafik",
+            "Grafik türü veri türüne uygun mu?",
+            "Kategorik veriyi (en sevilen meyve) çizgi grafiğiyle göstermek"
+          ],
+          [
+            "Ölçü",
+            "Ölçü veri türüne ve dağılıma uygun mu?",
+            "Kategorik veride ortalama, uç değer varken yalnız ortalama vermek"
+          ],
+          [
+            "Sonuç",
+            "Sonuç soruya cevap veriyor mu, kapsamı aşıyor mu?",
+            "Uyku süresi sorusundan başarı hakkında sonuç çıkarmak"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Rapor Bütünlüğü",
+          "metin": "Bir istatistiksel raporda araştırma sorusunun, toplanan verinin, seçilen grafiğin, hesaplanan ölçülerin ve yazılan sonucun birbirini desteklemesidir. Halkalardan biri uyumsuzsa rapordaki sonuç {koyu:temellendirilmiş} sayılmaz."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Değişim İddiası İçin İki Zaman Gerekir",
+          "metin": "Bir sonuçta 'artıyor, azalıyor, eskisine göre' gibi kelimeler görürsen kendine sor: Aynı yöntemle, en az iki farklı zamanda toplanmış veri var mı? Yoksa değişim hakkında karar verilemez."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' fill='#f8fafc' rx='12'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>İSTATİSTİKSEL RAPOR ZİNCİRİ: HER HALKA UYUMLU OLMALI</text><rect x='20' y='50' width='128' height='90' rx='10' fill='#eff6ff' stroke='#3b82f6'/><text x='84' y='74' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>1. Araştırma Sorusu</text><text x='84' y='98' text-anchor='middle' font-size='10.5' fill='#334155'>Ne öğrenmek</text><text x='84' y='114' text-anchor='middle' font-size='10.5' fill='#334155'>istiyoruz?</text><polygon points='151,88 165,95 151,102' fill='#64748b'/><rect x='168' y='50' width='128' height='90' rx='10' fill='#f0fdf4' stroke='#22c55e'/><text x='232' y='74' text-anchor='middle' font-size='12' font-weight='bold' fill='#15803d'>2. Veri ve Örneklem</text><text x='232' y='98' text-anchor='middle' font-size='10.5' fill='#334155'>Kimden, nasıl</text><text x='232' y='114' text-anchor='middle' font-size='10.5' fill='#334155'>toplandı?</text><polygon points='299,88 313,95 299,102' fill='#64748b'/><rect x='316' y='50' width='128' height='90' rx='10' fill='#fefce8' stroke='#eab308'/><text x='380' y='74' text-anchor='middle' font-size='12' font-weight='bold' fill='#a16207'>3. Grafik</text><text x='380' y='98' text-anchor='middle' font-size='10.5' fill='#334155'>Veri türüne</text><text x='380' y='114' text-anchor='middle' font-size='10.5' fill='#334155'>uygun mu?</text><polygon points='447,88 461,95 447,102' fill='#64748b'/><rect x='464' y='50' width='128' height='90' rx='10' fill='#faf5ff' stroke='#a855f7'/><text x='528' y='74' text-anchor='middle' font-size='12' font-weight='bold' fill='#7e22ce'>4. Ölçüler</text><text x='528' y='98' text-anchor='middle' font-size='10.5' fill='#334155'>Ortalama, ortanca,</text><text x='528' y='114' text-anchor='middle' font-size='10.5' fill='#334155'>yüzde, açıklık</text><polygon points='595,88 609,95 595,102' fill='#64748b'/><rect x='612' y='50' width='128' height='90' rx='10' fill='#fff1f2' stroke='#f43f5e'/><text x='676' y='74' text-anchor='middle' font-size='12' font-weight='bold' fill='#be123c'>5. Sonuç</text><text x='676' y='98' text-anchor='middle' font-size='10.5' fill='#334155'>Soruya cevap</text><text x='676' y='114' text-anchor='middle' font-size='10.5' fill='#334155'>veriyor mu?</text><text x='380' y='165' text-anchor='middle' font-size='12' font-weight='bold' fill='#475569'>Örnek: Kopuk bir zincir</text><rect x='20' y='178' width='225' height='100' rx='10' fill='#eff6ff' stroke='#3b82f6'/><text x='132' y='204' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>ARAŞTIRMA SORUSU</text><text x='132' y='230' text-anchor='middle' font-size='11' fill='#334155'>7. sınıf öğrencileri hafta içi</text><text x='132' y='248' text-anchor='middle' font-size='11' fill='#334155'>günde kaç saat uyuyor?</text><polygon points='250,221 264,228 250,235' fill='#64748b'/><rect x='268' y='178' width='225' height='100' rx='10' fill='#fef3c7' stroke='#d97706'/><text x='380' y='204' text-anchor='middle' font-size='12' font-weight='bold' fill='#92400e'>KOPUKLUK</text><text x='380' y='230' text-anchor='middle' font-size='11' fill='#334155'>Başarı puanı hiç ölçülmedi;</text><text x='380' y='248' text-anchor='middle' font-size='11' fill='#334155'>sonuç sorunun dışına taştı.</text><polygon points='498,221 512,228 498,235' fill='#64748b'/><rect x='515' y='178' width='225' height='100' rx='10' fill='#fee2e2' stroke='#dc2626'/><text x='627' y='204' text-anchor='middle' font-size='12' font-weight='bold' fill='#b91c1c'>RAPORDAKİ SONUÇ</text><text x='627' y='230' text-anchor='middle' font-size='11' fill='#334155'>'Uykusuzluk öğrencilerin</text><text x='627' y='248' text-anchor='middle' font-size='11' fill='#334155'>başarısını düşürüyor.'</text></svg>"
+    },
+    {
+      "baslik": "Gruplandırılmış Veri Tablosu ve Histogram Yorumlarını Sorgulama",
+      "metin": [
+        "Boy, kütle, süre ve sıcaklık gibi nicel (sürekli) verilerde çoğu değer yalnız bir kez görülür. Bu yüzden veriler genellikle {koyu:eşit genişlikte aralıklara} ayrılır ve her aralığa düşen kişi sayısı bir {koyu:histogramla} gösterilir. Örneğin 30 öğrencinin boy uzunlukları şöyle gruplandırılmış olsun: 140-145 cm aralığında 3, 145-150 cm aralığında 6, 150-155 cm aralığında 10, 155-160 cm aralığında 7, 160-165 cm aralığında 4 öğrenci. Burada '150-155' aralığı 150 cm'yi içerir, 155 cm'yi içermez (150 ≤ boy < 155). Bu kural sayesinde 155 cm boyundaki bir öğrenci iki aralıkta birden sayılmaz.",
+        "Başkalarının histogram yorumlarını değerlendirirken önce şunu sorarız: {koyu:Bu bilgi gruplandırılmış veriden okunabilir mi?} Aralıklara düşen sayılar ve bunların toplamları kesin olarak okunabilir. '150 cm ve üzerindeki öğrenci sayısı 21'dir' iddiası 10 + 7 + 4 = 21 hesabıyla {koyu:kabul edilir}. Bu sayı sınıfın {kesir:21|30} × 100 = %70'idir. '155 cm'den kısa 19 öğrenci var' iddiası da 3 + 6 + 10 = 19 olduğundan kabul edilir. Ortancanın yeri de bulunabilir: 30 verinin ortasındaki 15. ve 16. değerler sıralandığında birikimli sayılar 3, 9 ve 19 olduğundan bu iki değer 150-155 aralığına düşer. 'Ortanca 150-155 cm aralığındadır' iddiası kabul edilir.",
+        "Bazı iddialar ise gruplandırılmış veriyle {koyu:kesin olarak} test edilemez. 'Sınıfta tam 152 cm boyunda bir öğrenci var', 'En uzun öğrenci 165 cm' ya da 'Ortalama boy tam 153,4 cm' gibi cümlelerin doğruluğu bu tablodan anlaşılmaz. Çünkü aralığın içindeki değerlerin nasıl dağıldığını bilmiyoruz. Bu durumda doğru yanıt 'bu veriyle karar verilemez, ham verilere bakmak gerekir' olur. Bir diğer yaygın yanılgı, en kalabalık aralığı çoğunluk sanmaktır. 150-155 aralığı en yüksek sütuna sahiptir ama {kesir:10|30} ≈ %33 olduğundan 'öğrencilerin çoğu 150-155 cm arasındadır' iddiası {koyu:çürütülür}."
+      ],
+      "tablo": {
+        "basliklar": [
+          "İddia",
+          "Gruplandırılmış Veriyle Kontrol",
+          "Karar"
+        ],
+        "satirlar": [
+          [
+            "'Öğrencilerin %70'inin boyu 150 cm ve üzeridir.'",
+            "10 + 7 + 4 = 21; 21 ÷ 30 = 0,70",
+            "Kabul"
+          ],
+          [
+            "'155 cm'den kısa 19 öğrenci var.'",
+            "3 + 6 + 10 = 19",
+            "Kabul"
+          ],
+          [
+            "'Ortanca 150-155 cm aralığındadır.'",
+            "15. ve 16. değerler üçüncü aralıkta (birikimli 9'dan 19'a)",
+            "Kabul"
+          ],
+          [
+            "'Öğrencilerin çoğu 150-155 cm arasındadır.'",
+            "10 ÷ 30 ≈ %33, yarıdan az",
+            "Çürüt"
+          ],
+          [
+            "'En uzun öğrenci tam 165 cm'dir.'",
+            "Son aralık 160 ≤ boy < 165; tam değer bilinmez",
+            "Karar verilemez (165 cm aralığa dâhil bile değildir)"
+          ],
+          [
+            "'Sınıfta tam 152 cm boyunda öğrenci var.'",
+            "Aralık içindeki tek tek değerler bilinmez",
+            "Karar verilemez"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Gruplandırılmış Veride Kesin Değer Aranmaz",
+          "metin": "Histogram ve gruplandırılmış veri tablosu, verilerin {koyu:hangi aralıkta} olduğunu söyler, {koyu:tam olarak kaç} olduğunu söylemez. Tek bir değerle ilgili kesin iddialar ancak ham verilerle test edilebilir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "En Yüksek Sütun Çoğunluk Demek Değildir",
+          "metin": "Histogramda en yüksek sütun, en kalabalık aralığı gösterir. 'Çoğu' denebilmesi için o aralıktaki kişi sayısının toplamın yarısından fazla olması gerekir. Her zaman sütunun değerini toplam kişi sayısıyla karşılaştır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' fill='#f8fafc' rx='12'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>30 ÖĞRENCİNİN BOY UZUNLUKLARI (cm): HİSTOGRAM</text><line x1='60' y1='100' x2='570' y2='100' stroke='#e2e8f0'/><line x1='60' y1='140' x2='570' y2='140' stroke='#e2e8f0'/><line x1='60' y1='180' x2='570' y2='180' stroke='#e2e8f0'/><line x1='60' y1='220' x2='570' y2='220' stroke='#e2e8f0'/><line x1='60' y1='60' x2='570' y2='60' stroke='#e2e8f0'/><rect x='70' y='200' width='100' height='60' fill='#93c5fd' stroke='#1d4ed8'/><rect x='170' y='140' width='100' height='120' fill='#93c5fd' stroke='#1d4ed8'/><rect x='270' y='60' width='100' height='200' fill='#60a5fa' stroke='#1d4ed8'/><rect x='370' y='120' width='100' height='140' fill='#93c5fd' stroke='#1d4ed8'/><rect x='470' y='180' width='100' height='80' fill='#93c5fd' stroke='#1d4ed8'/><text x='120' y='194' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>3</text><text x='220' y='134' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>6</text><text x='320' y='54' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>10</text><text x='420' y='114' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>7</text><text x='520' y='174' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>4</text><line x1='60' y1='60' x2='60' y2='260' stroke='#334155' stroke-width='1.5'/><line x1='60' y1='260' x2='575' y2='260' stroke='#334155' stroke-width='1.5'/><text x='52' y='264' text-anchor='end' font-size='10' fill='#334155'>0</text><text x='52' y='224' text-anchor='end' font-size='10' fill='#334155'>2</text><text x='52' y='184' text-anchor='end' font-size='10' fill='#334155'>4</text><text x='52' y='144' text-anchor='end' font-size='10' fill='#334155'>6</text><text x='52' y='104' text-anchor='end' font-size='10' fill='#334155'>8</text><text x='52' y='64' text-anchor='end' font-size='10' fill='#334155'>10</text><text x='70' y='278' text-anchor='middle' font-size='10' fill='#334155'>140</text><text x='170' y='278' text-anchor='middle' font-size='10' fill='#334155'>145</text><text x='270' y='278' text-anchor='middle' font-size='10' fill='#334155'>150</text><text x='370' y='278' text-anchor='middle' font-size='10' fill='#334155'>155</text><text x='470' y='278' text-anchor='middle' font-size='10' fill='#334155'>160</text><text x='570' y='278' text-anchor='middle' font-size='10' fill='#334155'>165</text><text x='315' y='300' text-anchor='middle' font-size='11' fill='#475569'>Boy uzunluğu (cm) ve dikey eksende öğrenci sayısı</text><rect x='585' y='50' width='165' height='250' rx='10' fill='#ffffff' stroke='#94a3b8'/><text x='595' y='74' font-size='11' font-weight='bold' fill='#15803d'>Söylenebilir:</text><text x='595' y='94' font-size='10' fill='#334155'>150 cm ve üzeri: 21 kişi</text><text x='595' y='112' font-size='10' fill='#334155'>Bu, sınıfın %70'i</text><text x='595' y='130' font-size='10' fill='#334155'>155 cm'den kısa: 19 kişi</text><text x='595' y='148' font-size='10' fill='#334155'>Ortanca 150-155 aralığında</text><text x='595' y='178' font-size='11' font-weight='bold' fill='#b91c1c'>Söylenemez:</text><text x='595' y='198' font-size='10' fill='#334155'>Tam 152 cm olan var mı?</text><text x='595' y='216' font-size='10' fill='#334155'>En uzun boy kaç cm?</text><text x='595' y='234' font-size='10' fill='#334155'>Kesin ortalama kaç?</text><text x='595' y='264' font-size='10' font-weight='bold' fill='#92400e'>Dikkat: En yüksek sütun</text><text x='595' y='282' font-size='10' fill='#92400e'>10 ÷ 30 ≈ %33, çoğunluk değil</text></svg>"
+    },
+    {
+      "baslik": "Çizgi Grafiğinde Eğilim ve Tahmin İddialarını Değerlendirme",
+      "metin": [
+        "Çizgi grafikleri bir niceliğin zaman içinde nasıl değiştiğini gösterir. Grafikte değerler genel olarak artıyorsa {koyu:artış eğilimi}, azalıyorsa {koyu:azalış eğilimi} vardır. Değerler bir artıp bir azalıyorsa {koyu:dalgalanmadan} söz ederiz. Bir okul kütüphanesinden ödünç alınan kitap sayısı eylülde 120, ekimde 150, kasımda 180, aralıkta 210 olsun. Her ay 30 kitaplık bir artış görülür. 'Eylülden aralığa ödünç alınan kitap sayısı düzenli olarak artmıştır' iddiası verilerle uyumlu olduğu için {koyu:kabul edilir}.",
+        "Kütüphane görevlisi 'Bu artış sürerse haziranda 390 kitap ödünç verilecek' diyorsa hesap doğrudur: Aralıktan hazirana 6 ay vardır ve 210 + 6 × 30 = 390 eder. Ancak bu bir {koyu:dışa kestirimdir}. Elimizdeki 4 aylık verinin dışında kalan bir döneme tahmin yapılmaktadır. Sınav dönemleri, tatiller ya da yaz ayının yaklaşması eğilimi değiştirebilir. Bu yüzden tahmin ne kadar uzaktaki bir zamana yapılırsa o kadar güvenilmez olur. 'Ocakta yaklaşık 240 kitap ödünç verilebilir' gibi {koyu:kısa vadeli ve temkinli} bir tahmin makuldür. 'Haziranda kesinlikle 390 kitap ödünç verilecek' gibi kesin bir iddia ise kabul edilemez.",
+        "Eğilimi doğru okumak için {koyu:ardışık farklara} bakmak çok işe yarar. Bir fidanın boyu beş hafta boyunca 2; 3,5; 5; 6 ve 6,5 cm olarak ölçülmüş olsun. 'Fidan her hafta uzamıştır' iddiası kabul edilir; çünkü her ölçüm bir öncekinden büyüktür. 'Fidan her hafta aynı miktarda uzuyor' iddiası ise çürütülür. Haftalık artışlar 1,5; 1,5; 1 ve 0,5 cm olup giderek azalmaktadır. Bu nedenle 'Haftada 1,5 cm uzadığına göre 20 hafta sonra 30 cm'yi geçer' tahmini de çok zayıftır; büyüme hızı yavaşlamaktadır. Ayrıca sürekli verilerde iki ölçüm arasındaki ara değerler ölçülmemiştir; çizgi bu değerler hakkında yalnız {koyu:yaklaşık} bilgi verir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Hafta",
+          "Fidan Boyu (cm)",
+          "Önceki Haftaya Göre Artış (cm)"
+        ],
+        "satirlar": [
+          [
+            "1. hafta",
+            "2",
+            "Ölçüm başlangıcı"
+          ],
+          [
+            "2. hafta",
+            "3,5",
+            "3,5 − 2 = 1,5"
+          ],
+          [
+            "3. hafta",
+            "5",
+            "5 − 3,5 = 1,5"
+          ],
+          [
+            "4. hafta",
+            "6",
+            "6 − 5 = 1"
+          ],
+          [
+            "5. hafta",
+            "6,5",
+            "6,5 − 6 = 0,5"
+          ],
+          [
+            "Yorum",
+            "Her hafta uzamış (kabul)",
+            "Artış azalıyor; 'aynı miktarda uzuyor' iddiası çürütülür"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Dışa Kestirim",
+          "metin": "Eldeki verilerin kapsadığı zaman ya da değer aralığının dışında kalan bir nokta için tahmin yapmaktır. Kısa vadeli dışa kestirimler fikir verebilir. Ancak birkaç veriyle uzak gelecek hakkında kesin iddiada bulunmak {koyu:yanıltıcıdır}."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Ardışık Farkları Hesapla",
+          "metin": "Bir çizgi grafiğine dayalı 'düzenli artıyor, hızlanıyor, yavaşlıyor' iddialarını test etmek için her değerden bir öncekini çıkar. Farklar eşitse artış düzenlidir. Farklar büyüyorsa artış hızlanmakta, küçülüyorsa yavaşlamaktadır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' fill='#f8fafc' rx='12'/><text x='380' y='26' text-anchor='middle' font-size='15' font-weight='bold' fill='#1e293b'>ÖDÜNÇ ALINAN KİTAP SAYISI: ÖLÇÜLEN VERİ VE DIŞA KESTİRİM</text><rect x='300' y='40' width='420' height='230' rx='8' fill='#fef3c7' opacity='0.6'/><text x='470' y='190' text-anchor='middle' font-size='12' font-weight='bold' fill='#92400e'>Tahmin bölgesi: Burada veri yok!</text><text x='470' y='208' text-anchor='middle' font-size='10.5' fill='#92400e'>Tatil, sınav ve yaz ayları eğilimi değiştirebilir.</text><line x1='60' y1='217.5' x2='720' y2='217.5' stroke='#e2e8f0'/><line x1='60' y1='165' x2='720' y2='165' stroke='#e2e8f0'/><line x1='60' y1='112.5' x2='720' y2='112.5' stroke='#e2e8f0'/><line x1='60' y1='60' x2='720' y2='60' stroke='#e2e8f0'/><line x1='60' y1='50' x2='60' y2='270' stroke='#334155' stroke-width='1.5'/><line x1='60' y1='270' x2='720' y2='270' stroke='#334155' stroke-width='1.5'/><text x='52' y='274' text-anchor='end' font-size='10' fill='#334155'>0</text><text x='52' y='221' text-anchor='end' font-size='10' fill='#334155'>100</text><text x='52' y='169' text-anchor='end' font-size='10' fill='#334155'>200</text><text x='52' y='116' text-anchor='end' font-size='10' fill='#334155'>300</text><text x='52' y='64' text-anchor='end' font-size='10' fill='#334155'>400</text><polyline points='80,207 148,191 216,175.5 284,159.75' fill='none' stroke='#2563eb' stroke-width='3'/><polyline points='284,159.75 352,144 420,128.25 488,112.5 556,96.75 624,81 692,65.25' fill='none' stroke='#64748b' stroke-width='2' stroke-dasharray='6,5'/><circle cx='80' cy='207' r='5' fill='#2563eb'/><circle cx='148' cy='191' r='5' fill='#2563eb'/><circle cx='216' cy='175.5' r='5' fill='#2563eb'/><circle cx='284' cy='159.75' r='5' fill='#2563eb'/><circle cx='352' cy='144' r='4' fill='#ffffff' stroke='#64748b'/><circle cx='692' cy='65.25' r='5' fill='#ffffff' stroke='#dc2626' stroke-width='2'/><text x='80' y='196' text-anchor='middle' font-size='11' font-weight='bold' fill='#1d4ed8'>120</text><text x='148' y='180' text-anchor='middle' font-size='11' font-weight='bold' fill='#1d4ed8'>150</text><text x='216' y='164' text-anchor='middle' font-size='11' font-weight='bold' fill='#1d4ed8'>180</text><text x='284' y='148' text-anchor='middle' font-size='11' font-weight='bold' fill='#1d4ed8'>210</text><text x='352' y='133' text-anchor='middle' font-size='10.5' fill='#475569'>240?</text><text x='682' y='56' text-anchor='end' font-size='12' font-weight='bold' fill='#dc2626'>Haziran: 390 mı?</text><text x='80' y='288' text-anchor='middle' font-size='10.5' fill='#334155'>Eyl</text><text x='148' y='288' text-anchor='middle' font-size='10.5' fill='#334155'>Eki</text><text x='216' y='288' text-anchor='middle' font-size='10.5' fill='#334155'>Kas</text><text x='284' y='288' text-anchor='middle' font-size='10.5' fill='#334155'>Ara</text><text x='352' y='288' text-anchor='middle' font-size='10.5' fill='#334155'>Oca</text><text x='420' y='288' text-anchor='middle' font-size='10.5' fill='#334155'>Şub</text><text x='488' y='288' text-anchor='middle' font-size='10.5' fill='#334155'>Mar</text><text x='556' y='288' text-anchor='middle' font-size='10.5' fill='#334155'>Nis</text><text x='624' y='288' text-anchor='middle' font-size='10.5' fill='#334155'>May</text><text x='692' y='288' text-anchor='middle' font-size='10.5' fill='#334155'>Haz</text><line x1='170' y1='306' x2='200' y2='306' stroke='#2563eb' stroke-width='3'/><text x='206' y='310' font-size='11' fill='#334155'>Ölçülen veri (4 ay)</text><line x1='400' y1='306' x2='430' y2='306' stroke='#64748b' stroke-width='2' stroke-dasharray='6,5'/><text x='436' y='310' font-size='11' fill='#334155'>Her ay +30 varsayımıyla tahmin</text></svg>"
+    },
+    {
+      "baslik": "Nokta Grafiğiyle İki Veri Grubuna İlişkin Yorumları Tartışma",
+      "metin": [
+        "İki grubu karşılaştıran iddiaları değerlendirmenin en açık yolu, verileri aynı sayı doğrusu üzerinde iki {koyu:nokta grafiği} olarak görmektir. 7-A sınıfından 10 öğrencinin hafta içi uyku süreleri (saat, en yakın yarım saate yuvarlanmış) 7; 7,5; 8; 8; 8; 8,5; 8,5; 9; 9; 9,5 olsun. 7-B sınıfından 10 öğrencinin uyku süreleri ise 6; 6,5; 7; 7; 7,5; 7,5; 8; 8; 8,5; 10 olsun. 7-A'nın toplamı 83, ortalaması {kesir:83|10} = 8,3 saattir; ortancası {kesir:8 + 8,5|2} = 8,25 saattir. 7-B'nin toplamı 76, ortalaması 7,6 saat, ortancası 7,5 saattir.",
+        "Bu verilerle '7-A öğrencileri genel olarak 7-B öğrencilerinden daha uzun uyuyor' iddiası {koyu:kabul edilir}. Hem ortalama (8,3 ile 7,6) hem ortanca (8,25 ile 7,5) 7-A'da daha büyüktür. Ancak '7-A'daki her öğrenci 7-B'deki her öğrenciden daha uzun uyuyor' iddiası {koyu:çürütülür}. 7-B'deki 10 saat uyuyan öğrenci 7-A'daki herkesten fazla uyur. 7-B'de 8,5 saat uyuyan öğrenci de 7-A'da 7 saat uyuyan öğrenciden fazla uyur. İki grubun değerleri 7 ile 9,5 saat arasında iç içe geçmiştir. Buna {koyu:örtüşme} denir. Örtüşme varken gruplar hakkında 'her, hiçbiri' ile değil, 'genel olarak, çoğunlukla' ile konuşulur.",
+        "Sürekli verilerde 'çoğu' içeren iddiaları sayarak test ederiz. '7-B öğrencilerinin çoğu 8 saatten az uyuyor' iddiasını kontrol edelim. 8'den küçük değerler 6; 6,5; 7; 7; 7,5 ve 7,5'tir. Bu da 10 kişiden 6'sı, yani %60 eder; yarıdan fazla olduğu için iddia kabul edilir. 7-A'da ise 8 saatten az uyuyan yalnız 2 öğrenci (%20) vardır. Yayılım da yorumu etkiler. 7-A'nın açıklığı 9,5 − 7 = 2,5 saat, 7-B'ninki 10 − 6 = 4 saattir; 7-B'nin uyku süreleri daha dağınıktır. Yine de her grupta yalnız 10 öğrenci olduğunu unutmamalıyız. Bu sonuçlar okulun tamamına genellenmeden önce daha büyük bir örneklemle doğrulanmalıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "İddia",
+          "Veriden Hesap",
+          "Karar"
+        ],
+        "satirlar": [
+          [
+            "'7-A genel olarak daha uzun uyuyor.'",
+            "Ortanca 8,25 ile 7,5; ortalama 8,3 ile 7,6",
+            "Kabul"
+          ],
+          [
+            "'7-A'daki herkes 7-B'deki herkesten fazla uyuyor.'",
+            "7-B'de 10 saat ve 8,5 saat uyuyan öğrenciler var",
+            "Çürüt (karşı örnek)"
+          ],
+          [
+            "'7-B öğrencilerinin çoğu 8 saatten az uyuyor.'",
+            "10 kişiden 6'sı, yani %60",
+            "Kabul"
+          ],
+          [
+            "'7-B'nin uyku süreleri daha tutarlıdır.'",
+            "Açıklık: 7-A 2,5 saat, 7-B 4 saat",
+            "Çürüt (7-A daha tutarlı)"
+          ],
+          [
+            "'Okuldaki tüm 7-A'lılar daha uzun uyur.'",
+            "Her sınıftan yalnız 10 öğrenci ölçülmüş",
+            "Karar verilemez (örneklem küçük)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "Örtüşme Varsa 'Her' Denmez",
+          "metin": "İki nokta grafiğinin değerleri aynı aralıkta birlikte bulunuyorsa grupların bazı üyeleri diğer grubun bazı üyelerini geçer. Bu durumda 'her' içeren iddialar karşı örnekle çürütülür. 'Genel olarak' içeren iddialar ise {koyu:ortanca ve ortalama} ile test edilir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Önce Merkez, Sonra Yayılım",
+          "metin": "İki grubu karşılaştırırken önce merkezlere (ortanca, ortalama), sonra yayılıma (açıklık, OMS) bak. Merkezler farklı ama yayılım çok büyükse farkın güvenilirliği azalır; bu durumu yorumunda belirt."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='330' fill='#f8fafc' rx='12'/><text x='380' y='26' text-anchor='middle' font-size='15' font-weight='bold' fill='#1e293b'>HAFTA İÇİ UYKU SÜRELERİ (saat): İKİ SINIFIN NOKTA GRAFİĞİ</text><rect x='225' y='66' width='380' height='226' rx='10' fill='none' stroke='#a855f7' stroke-width='1.5' stroke-dasharray='6,4'/><text x='415' y='58' text-anchor='middle' font-size='11' font-weight='bold' fill='#7e22ce'>Örtüşme bölgesi: 7 ile 9,5 saat arası</text><text x='25' y='64' font-size='13' font-weight='bold' fill='#1d4ed8'>7-A (10 öğrenci)</text><line x1='80' y1='140' x2='680' y2='140' stroke='#334155' stroke-width='1.5'/><circle cx='240' cy='128' r='8' fill='#2563eb'/><circle cx='310' cy='128' r='8' fill='#2563eb'/><circle cx='380' cy='128' r='8' fill='#2563eb'/><circle cx='380' cy='110' r='8' fill='#2563eb'/><circle cx='380' cy='92' r='8' fill='#2563eb'/><circle cx='450' cy='128' r='8' fill='#2563eb'/><circle cx='450' cy='110' r='8' fill='#2563eb'/><circle cx='520' cy='128' r='8' fill='#2563eb'/><circle cx='520' cy='110' r='8' fill='#2563eb'/><circle cx='590' cy='128' r='8' fill='#2563eb'/><text x='100' y='158' text-anchor='middle' font-size='10' fill='#334155'>6</text><text x='170' y='158' text-anchor='middle' font-size='10' fill='#334155'>6,5</text><text x='240' y='158' text-anchor='middle' font-size='10' fill='#334155'>7</text><text x='310' y='158' text-anchor='middle' font-size='10' fill='#334155'>7,5</text><text x='380' y='158' text-anchor='middle' font-size='10' fill='#334155'>8</text><text x='450' y='158' text-anchor='middle' font-size='10' fill='#334155'>8,5</text><text x='520' y='158' text-anchor='middle' font-size='10' fill='#334155'>9</text><text x='590' y='158' text-anchor='middle' font-size='10' fill='#334155'>9,5</text><text x='660' y='158' text-anchor='middle' font-size='10' fill='#334155'>10</text><text x='415' y='180' text-anchor='middle' font-size='11' fill='#1d4ed8'>Ortalama 8,3 · Ortanca 8,25 · Açıklık 2,5</text><text x='25' y='206' font-size='13' font-weight='bold' fill='#c2410c'>7-B (10 öğrenci)</text><line x1='80' y1='280' x2='680' y2='280' stroke='#334155' stroke-width='1.5'/><circle cx='100' cy='268' r='8' fill='#f97316'/><circle cx='170' cy='268' r='8' fill='#f97316'/><circle cx='240' cy='268' r='8' fill='#f97316'/><circle cx='240' cy='250' r='8' fill='#f97316'/><circle cx='310' cy='268' r='8' fill='#f97316'/><circle cx='310' cy='250' r='8' fill='#f97316'/><circle cx='380' cy='268' r='8' fill='#f97316'/><circle cx='380' cy='250' r='8' fill='#f97316'/><circle cx='450' cy='268' r='8' fill='#f97316'/><circle cx='660' cy='268' r='8' fill='#f97316'/><text x='100' y='298' text-anchor='middle' font-size='10' fill='#334155'>6</text><text x='170' y='298' text-anchor='middle' font-size='10' fill='#334155'>6,5</text><text x='240' y='298' text-anchor='middle' font-size='10' fill='#334155'>7</text><text x='310' y='298' text-anchor='middle' font-size='10' fill='#334155'>7,5</text><text x='380' y='298' text-anchor='middle' font-size='10' fill='#334155'>8</text><text x='450' y='298' text-anchor='middle' font-size='10' fill='#334155'>8,5</text><text x='520' y='298' text-anchor='middle' font-size='10' fill='#334155'>9</text><text x='590' y='298' text-anchor='middle' font-size='10' fill='#334155'>9,5</text><text x='660' y='298' text-anchor='middle' font-size='10' fill='#334155'>10</text><text x='415' y='318' text-anchor='middle' font-size='11' fill='#c2410c'>Ortalama 7,6 · Ortanca 7,5 · Açıklık 4</text></svg>"
+    },
+    {
+      "baslik": "Hesaplama, Birim ve Yuvarlama Hatalarını Yakalama: Ters İşlemle Doğrulama",
+      "metin": [
+        "Bazen bir istatistiksel sonuçta örneklem ve grafik sorunsuzdur ama {koyu:hesap} yanlıştır. En sık görülen hata, büyüklükleri farklı iki grubun ortalamalarını doğrudan toplayıp ikiye bölmektir. 25 kişilik bir sınıfın sınav ortalaması 72 olsun. Sınava sonradan giren 5 öğrencinin ortalaması da 90 olsun. 'Tüm sınıfın ortalaması (72 + 90) ÷ 2 = 81 oldu' sonucu yanlıştır. Önce ortalamayı kişi sayısıyla çarparak {koyu:toplamlara} geri döneriz: 25 × 72 = 1800 ve 5 × 90 = 450 puan. Toplam 1800 + 450 = 2250 puan, toplam kişi sayısı 30 olduğundan {koyu:birleşik ortalama} {kesir:2250|30} = {koyu:75} bulunur. 25 kişilik kalabalık grup, ortalamayı kendi değerine yani 72'ye yaklaştırmıştır.",
+        "Hesap sonuçlarını kontrol etmek için {koyu:akıl yürütme denetimleri} de kullanılır. Ortalama her zaman en küçük ve en büyük veri arasında bulunur. Bir hafta boyunca sıcaklıklar 4 °C ile 11 °C arasında ölçüldüyse 'haftalık ortalama 12 °C' sonucu kesinlikle hatalıdır. Açıklık ve ortalama mutlak sapma hiçbir zaman negatif olamaz. Ortanca da veri aralığının dışında olamaz. Bir sonucu {koyu:ters işlemle} doğrulayabiliriz. 'Beş günlük ortalama yağış 6 mm' deniyorsa günlük değerlerin toplamı 5 × 6 = 30 mm olmalıdır. Toplam başka çıkıyorsa hesapta hata vardır.",
+        "{koyu:Birim} karışıklıkları da sonuçları bozar. Bazı boylar metre (1,52 m), bazıları santimetre (150 cm) olarak yazılıp aynı tabloda toplanırsa ortalama anlamsız çıkar. Önce tüm veriler aynı birime çevrilmelidir. {koyu:Yuvarlama} ise farklı bir durumdur. Üç kategoriyi 30'ar kişi seçtiyse her kategori aslında {kesir:1|3} ≈ %33,3'tür. Yüzdeler tam sayıya yuvarlanınca %33 + %33 + %33 = %99 görünür. Bu bir grafik hatası değil, {koyu:yuvarlama farkıdır}. Merkez açılar 120°, 120° ve 120° olduğundan toplam yine 360°'dir. Geçen hafta öğrendiğimiz '%110 toplam hatadır' kuralı geçerliliğini korur. Yalnız %1 civarındaki farklarda önce yuvarlama ihtimali düşünülmelidir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Hata Türü",
+          "Örnek",
+          "Kontrol Yöntemi"
+        ],
+        "satirlar": [
+          [
+            "Yanlış birleşik ortalama",
+            "25 kişi ortalama 72, 5 kişi ortalama 90 için '(72 + 90) ÷ 2 = 81'",
+            "Toplamları bul: (1800 + 450) ÷ 30 = 75"
+          ],
+          [
+            "Aralık dışı ortalama",
+            "Sıcaklıklar 4-11 °C arasında, ortalama 12 °C",
+            "Ortalama en küçük ile en büyük veri arasında olmalı"
+          ],
+          [
+            "Ters işlem tutmaması",
+            "Ortalama 6 mm, 5 gün; ama günlerin toplamı 27 mm",
+            "Ortalama × veri sayısı = toplam olmalı (30 mm)"
+          ],
+          [
+            "Birim karışıklığı",
+            "1,52 m ile 150 cm aynı tabloda toplanmış",
+            "Tüm verileri aynı birime çevir"
+          ],
+          [
+            "Yuvarlama farkı (hata değil)",
+            "%33 + %33 + %33 = %99",
+            "Kesir değerlere bak: her biri {kesir:1|3}, açılar toplamı 360°"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Birleşik Ortalama",
+          "metin": "Farklı büyüklükteki grupların ortak ortalaması bulunurken ortalamalar doğrudan ortalanmaz. Her grubun {koyu:toplamı} (ortalama × kişi sayısı) bulunur, toplamlar toplanır ve sonuç toplam kişi sayısına bölünür. Gruplar eşit büyüklükte ise iki yol aynı sonucu verir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Yuvarlama Farkı Hata Değildir",
+          "metin": "Yüzdeler tam sayıya yuvarlandığında toplam %99 ya da %101 çıkabilir. Bu durumda grafik hatalı sayılmaz; ama %105 veya %110 gibi büyük farklar yuvarlamayla açıklanamaz. Bunlar hesap ya da gösterim hatasıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' fill='#f8fafc' rx='12'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>BİRLEŞİK ORTALAMA: ÖNCE TOPLAMLAR, SONRA BÖLME</text><rect x='20' y='48' width='230' height='112' rx='10' fill='#fee2e2' stroke='#dc2626'/><text x='135' y='72' text-anchor='middle' font-size='13' font-weight='bold' fill='#b91c1c'>YANLIŞ YOL</text><text x='135' y='98' text-anchor='middle' font-size='14' fill='#334155'>(72 + 90) ÷ 2 = 81</text><text x='135' y='124' text-anchor='middle' font-size='11' fill='#334155'>25 kişi ile 5 kişi</text><text x='135' y='142' text-anchor='middle' font-size='11' fill='#334155'>eşit sayılmış!</text><rect x='268' y='48' width='148' height='112' rx='10' fill='#eff6ff' stroke='#3b82f6'/><text x='342' y='72' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>1. Grup</text><text x='342' y='98' text-anchor='middle' font-size='12' fill='#334155'>25 öğrenci × 72</text><text x='342' y='124' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>= 1800 puan</text><text x='424' y='110' text-anchor='middle' font-size='18' font-weight='bold' fill='#475569'>+</text><rect x='432' y='48' width='148' height='112' rx='10' fill='#eff6ff' stroke='#3b82f6'/><text x='506' y='72' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>2. Grup</text><text x='506' y='98' text-anchor='middle' font-size='12' fill='#334155'>5 öğrenci × 90</text><text x='506' y='124' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>= 450 puan</text><polygon points='584,97 596,104 584,111' fill='#64748b'/><rect x='600' y='48' width='140' height='112' rx='10' fill='#dcfce7' stroke='#16a34a'/><text x='670' y='72' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>DOĞRU YOL</text><text x='670' y='98' text-anchor='middle' font-size='12' fill='#334155'>2250 ÷ 30</text><text x='670' y='128' text-anchor='middle' font-size='16' font-weight='bold' fill='#15803d'>= 75</text><line x1='100' y1='225' x2='680' y2='225' stroke='#334155' stroke-width='1.5'/><line x1='100' y1='219' x2='100' y2='231' stroke='#334155'/><line x1='196.7' y1='219' x2='196.7' y2='231' stroke='#334155'/><line x1='293.3' y1='219' x2='293.3' y2='231' stroke='#334155'/><line x1='390' y1='219' x2='390' y2='231' stroke='#334155'/><line x1='486.7' y1='219' x2='486.7' y2='231' stroke='#334155'/><line x1='583.3' y1='219' x2='583.3' y2='231' stroke='#334155'/><line x1='680' y1='219' x2='680' y2='231' stroke='#334155'/><text x='100' y='247' text-anchor='middle' font-size='10.5' fill='#334155'>72</text><text x='196.7' y='247' text-anchor='middle' font-size='10.5' fill='#334155'>75</text><text x='293.3' y='247' text-anchor='middle' font-size='10.5' fill='#334155'>78</text><text x='390' y='247' text-anchor='middle' font-size='10.5' fill='#334155'>81</text><text x='486.7' y='247' text-anchor='middle' font-size='10.5' fill='#334155'>84</text><text x='583.3' y='247' text-anchor='middle' font-size='10.5' fill='#334155'>87</text><text x='680' y='247' text-anchor='middle' font-size='10.5' fill='#334155'>90</text><circle cx='196.7' cy='225' r='8' fill='#16a34a'/><text x='196.7' y='205' text-anchor='middle' font-size='11' font-weight='bold' fill='#15803d'>75 (doğru)</text><circle cx='390' cy='225' r='8' fill='#dc2626'/><text x='390' y='205' text-anchor='middle' font-size='11' font-weight='bold' fill='#b91c1c'>81 (yanlış)</text><text x='100' y='190' text-anchor='middle' font-size='10.5' fill='#1d4ed8'>25 kişi</text><text x='680' y='190' text-anchor='middle' font-size='10.5' fill='#1d4ed8'>5 kişi</text><text x='380' y='280' text-anchor='middle' font-size='11.5' fill='#475569'>Kalabalık grup (25 kişi) birleşik ortalamayı kendi değerine, yani 72'ye yaklaştırır.</text></svg>"
+    },
+    {
+      "baslik": "Aynı Veriden Farklı Yorumlar: Karşı Görüş Geliştirme ve Gerekçeli Tartışma",
+      "metin": [
+        "Aynı veri grubuna bakan iki kişi birbirinden çok farklı sonuçlar söyleyebilir. Okul kantini hakkında 200 öğrenciye tek seçimli bir anket uygulanmış olsun. Sonuçlar şöyledir: 'Çok memnunum' 30 kişi (%15), 'Memnunum' 60 kişi (%30), 'Kararsızım' 40 kişi (%20), 'Memnun değilim' 70 kişi (%35). Okul müdürü 'Memnun olan öğrenciler (%15 + %30 = %45) memnun olmayanlardan (%35) daha fazla' der. Öğrenci temsilcisi ise 'En çok seçilen seçenek Memnun değilim oldu' der. İki cümle de veriyle uyumludur ve {koyu:doğrudur}. Fark, müdürün iki kategoriyi {koyu:birleştirmesinden}, temsilcinin ise kategorileri tek tek karşılaştırmasından kaynaklanır.",
+        "İki doğru yorum birbirini çürütmez; ama ikisi de {koyu:eksiktir}. Müdürün yorumu, memnun olanların yarıdan az olduğunu (%45) söylemez. Temsilcinin yorumu da memnuniyet bildirenlerin toplamda daha fazla olduğunu gizler. Bu veriyle 'Öğrencilerin çoğu kantinden memnun' iddiası çürütülür; çünkü %45, %50'den azdır. 'Öğrencilerin çoğu kantinden memnun değil' iddiası da %35 olduğu için çürütülür. En eksiksiz ifade şudur: 'Memnun olanlar (%45) memnun olmayanlardan (%35) fazladır, ancak yarıdan azdır. Tek tek seçenekler arasında en çok Memnun değilim (%35) seçilmiştir. Öğrencilerin %20'si kararsızdır.' Daire grafiğinde merkez açılar 54°, 108°, 72° ve 126°'dir; toplamları 360° eder.",
+        "Sınıf içinde başkasının yorumunu tartışırken birkaç kurala uyarız. Kişiyi değil {koyu:iddiayı} eleştiririz. 'Sen yanlış düşünüyorsun' yerine 'Bu iddia %45 değerini çoğunluk saymış, oysa %45 yarıdan azdır' deriz. Karşı görüşümüzü mutlaka {koyu:veriyle} destekleriz. Karşımızdakinin doğru söylediği kısmı kabul ederiz ve yalnız eksik ya da hatalı kısmı düzeltiriz. Yeni veri gerekiyorsa bunu öneririz. Örneğin 'Memnun değilim' diyenlerin nedenlerini öğrenmek için hangi konudan (fiyat, çeşit, temizlik) şikâyet ettiklerini soran yeni bir soru eklenebilir. Böylece tartışma bir kazanma yarışı olmaktan çıkar, veriyi en doğru anlatan ortak cümleyi bulma çabasına dönüşür."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yorum",
+          "Veriyle Kontrol",
+          "Karar"
+        ],
+        "satirlar": [
+          [
+            "'Memnun olanlar memnun olmayanlardan fazla.' (Müdür)",
+            "%15 + %30 = %45 ve bu değer %35'ten büyük",
+            "Kabul (ama eksik)"
+          ],
+          [
+            "'En çok seçilen seçenek Memnun değilim.' (Temsilci)",
+            "70 kişi, tek tek en büyük sayı (tepe değer)",
+            "Kabul (ama eksik)"
+          ],
+          [
+            "'Öğrencilerin çoğu kantinden memnun.'",
+            "%45, %50'den küçük",
+            "Çürüt"
+          ],
+          [
+            "'Öğrencilerin çoğu kantinden memnun değil.'",
+            "%35, %50'den küçük",
+            "Çürüt"
+          ],
+          [
+            "'Kararsızlar da aslında memnun değildir.'",
+            "Kararsızların görüşü veride yok",
+            "Karar verilemez (veri yorumun ötesine geçiyor)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "İki Doğru Yorum Birbirini Çürütmez",
+          "metin": "Aynı veriden çıkan iki yorum farklı görünse de ikisi de doğru olabilir. Bu durumda yorumlardan birini seçmek yerine ikisini birleştiren, {koyu:sayılarla desteklenmiş ve temkinli} bir ortak cümle kurulur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Gerekçeli Tartışmanın Dört Adımı",
+          "metin": "1) Karşı tarafın iddiasını doğru aktar. 2) Doğru olan kısmı veriyle kabul et. 3) Eksik ya da hatalı kısmı sayıyla göster. 4) Daha eksiksiz bir ifade öner ya da gerekiyorsa yeni veri toplanmasını iste."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' fill='#f8fafc' rx='12'/><text x='380' y='28' text-anchor='middle' font-size='15' font-weight='bold' fill='#1e293b'>AYNI VERİ, İKİ FARKLI BAKIŞ: KANTİN MEMNUNİYETİ (200 öğrenci)</text><rect x='60' y='60' width='96' height='56' fill='#16a34a'/><rect x='156' y='60' width='192' height='56' fill='#4ade80'/><rect x='348' y='60' width='128' height='56' fill='#cbd5e1'/><rect x='476' y='60' width='224' height='56' fill='#f87171'/><text x='108' y='84' text-anchor='middle' font-size='10.5' font-weight='bold' fill='#ffffff'>Çok memnun</text><text x='108' y='102' text-anchor='middle' font-size='10.5' fill='#ffffff'>%15 (30)</text><text x='252' y='84' text-anchor='middle' font-size='11' font-weight='bold' fill='#14532d'>Memnun</text><text x='252' y='102' text-anchor='middle' font-size='11' fill='#14532d'>%30 (60)</text><text x='412' y='84' text-anchor='middle' font-size='11' font-weight='bold' fill='#334155'>Kararsız</text><text x='412' y='102' text-anchor='middle' font-size='11' fill='#334155'>%20 (40)</text><text x='588' y='84' text-anchor='middle' font-size='11' font-weight='bold' fill='#7f1d1d'>Memnun değil</text><text x='588' y='102' text-anchor='middle' font-size='11' fill='#7f1d1d'>%35 (70)</text><line x1='60' y1='128' x2='348' y2='128' stroke='#15803d' stroke-width='2'/><line x1='60' y1='122' x2='60' y2='134' stroke='#15803d' stroke-width='2'/><line x1='348' y1='122' x2='348' y2='134' stroke='#15803d' stroke-width='2'/><text x='204' y='150' text-anchor='middle' font-size='12' font-weight='bold' fill='#15803d'>Memnun toplamı: %45</text><line x1='476' y1='128' x2='700' y2='128' stroke='#b91c1c' stroke-width='2'/><line x1='476' y1='122' x2='476' y2='134' stroke='#b91c1c' stroke-width='2'/><line x1='700' y1='122' x2='700' y2='134' stroke='#b91c1c' stroke-width='2'/><text x='588' y='150' text-anchor='middle' font-size='12' font-weight='bold' fill='#b91c1c'>En çok seçilen tek seçenek: %35</text><rect x='20' y='168' width='350' height='76' rx='10' fill='#eff6ff' stroke='#3b82f6'/><text x='195' y='190' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>Müdür: 'Memnun olanlar (%45)</text><text x='195' y='208' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>memnun olmayanlardan (%35) fazla.'</text><text x='195' y='230' text-anchor='middle' font-size='11' fill='#334155'>Doğru, ama memnunların yarıdan az olduğunu söylemiyor.</text><rect x='390' y='168' width='350' height='76' rx='10' fill='#fff7ed' stroke='#f97316'/><text x='565' y='190' text-anchor='middle' font-size='12' font-weight='bold' fill='#c2410c'>Temsilci: 'En çok seçilen seçenek</text><text x='565' y='208' text-anchor='middle' font-size='12' font-weight='bold' fill='#c2410c'>Memnun değilim oldu.'</text><text x='565' y='230' text-anchor='middle' font-size='11' fill='#334155'>Doğru, ama toplam memnuniyeti gizliyor.</text><rect x='20' y='256' width='720' height='34' rx='10' fill='#fef3c7' stroke='#d97706'/><text x='380' y='278' text-anchor='middle' font-size='11.5' font-weight='bold' fill='#92400e'>Ortak sonuç: Hiçbir taraf 'çoğunluk' diyemez; %45 de %35 de yarıdan azdır, %20 kararsızdır.</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir öğrenci kulübü 'Yedinci sınıf öğrencileri hafta sonu günde kaç dakika kitap okuyor?' sorusunu araştırmıştır. Veriler yalnız 7-C sınıfındaki 28 öğrenciden bir kez toplanmış ve ortalama 25 dakika bulunmuştur. Raporun sonunda 'Okulumuzda kitap okuma alışkanlığı her geçen yıl azalıyor' yazmaktadır. Bu raporu soru-veri-sonuç uyumu açısından değerlendiriniz.",
+      "cevap": "1) Araştırma sorusu: Yedinci sınıf öğrencilerinin hafta sonu günlük okuma süresi. Soru ölçülebilir ve nettir.\n2) Örneklem: Yalnız 7-C'den 28 öğrenci vardır. Sorudaki grup 'yedinci sınıf öğrencileri', sonuçtaki grup ise 'okulumuz'dur. Örneklem ikisini de tam temsil etmez.\n3) Zaman boyutu: Veri yalnız bir kez toplanmıştır. 'Her geçen yıl azalıyor' iddiası en az iki farklı yılda aynı yöntemle toplanmış veri gerektirir; böyle bir veri yoktur.\n4) Hesap: Ortalama 25 dakika, bu 28 öğrenci için doğru olabilir. Ancak bu değer tek başına azalma ya da artma göstermez.\n5) Karar: Sonuç hem soruyu hem verinin kapsamını aşmaktadır; bu veriyle karar verilemez. Kabul edilebilecek ifade şudur: '7-C'deki 28 öğrencinin hafta sonu günlük okuma süresi ortalaması 25 dakikadır.' Değişim araştırılacaksa farklı sınıflardan rastgele seçilen öğrencilerle her yıl aynı soru sorulmalıdır.",
+      "ipucu": "Sonuç cümlesindeki 'okulumuzda' ve 'her geçen yıl' ifadelerinin veride karşılığı olup olmadığını kontrol ediniz."
+    },
+    {
+      "soru": "40 öğrencinin günlük yürüyüş süreleri (dakika) gruplandırılmıştır: 0-10 aralığında 4, 10-20 aralığında 9, 20-30 aralığında 14, 30-40 aralığında 8, 40-50 aralığında 5 öğrenci (her aralık alt sınırı içerir, üst sınırı içermez). Şu iddiaları değerlendiriniz: a) 'Öğrencilerin yarısından fazlası günde en az 20 dakika yürüyor.' b) 'En çok öğrenci tam 25 dakika yürüyor.' c) 'Ortanca 20-30 dakika aralığındadır.'",
+      "cevap": "1) Toplam kontrolü: 4 + 9 + 14 + 8 + 5 = 40 öğrenci. Tablo tutarlıdır.\n2) a iddiası: En az 20 dakika yürüyenler 14 + 8 + 5 = 27 kişidir. {kesir:27|40} × 100 = %67,5 eder; bu değer %50'den büyük olduğu için iddia kabul edilir.\n3) b iddiası: Gruplandırılmış veride 20-30 aralığının en kalabalık aralık olduğu bilinir. Bu aralıktaki 14 öğrencinin tam olarak kaç dakika yürüdüğü bilinmez. 'Tam 25 dakika' iddiası için bu veriyle karar verilemez; ham verilere bakılmalıdır.\n4) c iddiası: 40 verinin ortanca değeri 20. ve 21. değerlerin ortalamasıdır. Birikimli sayılar 4, 13, 27 olduğundan 14. değerden 27. değere kadar olan veriler 20-30 aralığındadır. 20. ve 21. değerler de bu aralığa düşer. İddia kabul edilir.\n5) Sonuç: a ve c kabul edilir, b için karar verilemez.",
+      "ipucu": "Aralıklara düşen sayıları birikimli olarak toplayınız. Tek bir değerle ilgili kesin iddiaların gruplandırılmış veriden okunamayacağını unutmayınız."
+    },
+    {
+      "soru": "Bir fidanın boyu ilk dört hafta boyunca 4, 6, 8 ve 10 cm olarak ölçülmüştür. Bahçıvan 'Bu fidan her hafta 2 cm uzuyor; 1 yıl yani 52 hafta sonunda boyu 106 cm olacak' demektedir. Bu iddiayı değerlendiriniz.",
+      "cevap": "1) Ardışık farklar: 6 − 4 = 2, 8 − 6 = 2, 10 − 8 = 2 cm. İlk dört haftada artış gerçekten düzenlidir; 'her hafta 2 cm uzadı' kısmı kabul edilir.\n2) Hesap kontrolü: 1. haftada 4 cm ise 52. haftada boy 4 + 51 × 2 = 4 + 102 = 106 cm olur. Hesap doğrudur.\n3) Dışa kestirim: Yalnız 4 haftalık veriyle 48 hafta sonrası tahmin edilmektedir. Bitkilerin büyüme hızı mevsime, suya, ışığa ve bitkinin yaşına göre değişir. Eğilimin bir yıl boyunca aynı kalacağına dair hiçbir veri yoktur.\n4) Kısa vadeli tahmin: '5. haftada yaklaşık 12 cm olabilir' gibi temkinli bir tahmin makuldür.\n5) Karar: 'İlk dört haftada her hafta 2 cm uzadı' kabul edilir. '1 yıl sonunda 106 cm olacak' kesin iddiası ise dışa kestirim hatası içerdiği için kabul edilemez. Bu konuda ölçümler sürdürülmeden karar verilemez.",
+      "ipucu": "Hesabın doğru olması tahminin güvenilir olduğu anlamına gelmez. Verinin kapsadığı süre ile tahmin edilen süreyi karşılaştırınız."
+    },
+    {
+      "soru": "7-A sınıfındaki 30 öğrencinin günlük ortalama okuma süresi 40 dakika, 7-B sınıfındaki 20 öğrencinin ortalaması 50 dakikadır. Bir öğrenci 'İki sınıfın birlikte ortalaması (40 + 50) ÷ 2 = 45 dakikadır' diyor. Bu sonucu tartışınız ve doğru ortalamayı bulunuz.",
+      "cevap": "1) Hata tespiti: Sınıf mevcutları farklıdır (30 ve 20). Ortalamalar doğrudan ortalanamaz; birleşik ortalama hesaplanmalıdır.\n2) 7-A'nın toplam okuma süresi: 30 × 40 = 1200 dakika.\n3) 7-B'nin toplam okuma süresi: 20 × 50 = 1000 dakika.\n4) Birleşik ortalama: (1200 + 1000) ÷ (30 + 20) = {kesir:2200|50} = 44 dakika.\n5) Akıl kontrolü: 44, 40 ile 50 arasındadır ve daha kalabalık olan 7-A'nın ortalamasına (40'a) daha yakındır. Sonuç mantıklıdır.\n6) Karar: '45 dakika' iddiası çürütülür; doğru birleşik ortalama 44 dakikadır.",
+      "ipucu": "Önce her sınıfın ortalamasını öğrenci sayısıyla çarparak toplam süreleri bulunuz."
+    },
+    {
+      "soru": "İki farklı domates fidesi türü aynı koşullarda yetiştirilmiş ve bir ay sonra boyları (cm) ölçülmüştür. X türü: 12, 14, 15, 15, 16, 18. Y türü: 10, 13, 17, 19, 20, 23. Şu iddiaları değerlendiriniz: a) 'Y türü fideler genel olarak daha uzundur.' b) 'Y türündeki her fide X türündeki her fideden uzundur.' c) 'X türünün boyları daha tutarlıdır.'",
+      "cevap": "1) X türü: Toplam 12 + 14 + 15 + 15 + 16 + 18 = 90; ortalama {kesir:90|6} = 15 cm. Ortanca {kesir:15 + 15|2} = 15 cm. Açıklık 18 − 12 = 6 cm.\n2) Y türü: Toplam 10 + 13 + 17 + 19 + 20 + 23 = 102; ortalama {kesir:102|6} = 17 cm. Ortanca {kesir:17 + 19|2} = 18 cm. Açıklık 23 − 10 = 13 cm.\n3) a iddiası: Ortalama (17 ile 15) ve ortanca (18 ile 15) Y'de büyüktür. Kabul edilir.\n4) b iddiası: Y'deki 10 cm'lik fide X'teki tüm fidelerden kısadır; X'teki 18 cm'lik fide de Y'deki 10, 13 ve 17 cm'lik fidelerden uzundur. Tek karşı örnek yeterlidir; iddia çürütülür.\n5) c iddiası: X'in açıklığı (6 cm) Y'nin açıklığından (13 cm) küçüktür. Kabul edilir.\n6) Not: Her türden yalnız 6 fide ölçülmüştür. Bu sonuçlar genellenmeden önce daha çok fideyle denenmelidir.",
+      "ipucu": "'Genel olarak' içeren iddia için merkezi eğilim ölçülerini, 'her' içeren iddia için karşı örneği, 'tutarlı' içeren iddia için açıklığı kullanınız."
+    },
+    {
+      "soru": "160 öğrenciye 'Okula genellikle nasıl gelirsiniz?' diye tek seçimli bir soru sorulmuştur. Yürüyerek 56, servisle 48, toplu taşımayla 32, özel araçla 24 öğrenci gelmektedir. Ece 'Öğrencilerin çoğu okula yürüyerek geliyor' derken Mert 'Öğrencilerin çoğu okula bir taşıtla geliyor' demektedir. İki yorumu tartışınız ve daire grafiğindeki merkez açıları bulunuz.",
+      "cevap": "1) Yüzdeler: Yürüyerek {kesir:56|160} = %35, servis {kesir:48|160} = %30, toplu taşıma {kesir:32|160} = %20, özel araç {kesir:24|160} = %15. Toplam %100'dür.\n2) Ece'nin yorumu: Yürüyerek gelme en çok seçilen seçenektir (tepe değer). Ancak %35, %50'den az olduğu için 'çoğu' denemez. Yorum çürütülür; doğrusu 'En çok tercih edilen yol yürümektir' olur.\n3) Mert'in yorumu: Taşıtla gelenler 48 + 32 + 24 = 104 kişidir. {kesir:104|160} = %65 eder ve %50'den büyüktür. Yorum kabul edilir.\n4) İki yorum aynı veriden çıkmıştır. Ece tek tek kategorilere, Mert birleştirilmiş kategorilere bakmıştır.\n5) Merkez açılar: 0,35 × 360° = 126°, 0,30 × 360° = 108°, 0,20 × 360° = 72°, 0,15 × 360° = 54°. Toplam 360°'dir.\n6) Eksiksiz ifade: 'Öğrencilerin %65'i bir taşıtla gelir, ancak tek başına en çok tercih edilen yol %35 ile yürümektir.'",
+      "ipucu": "Kategorileri tek tek ve birleştirerek ayrı ayrı yüzdeye çeviriniz; 'çoğu' kelimesini %50 ile karşılaştırınız."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "25 öğrencinin okula varış süreleri (dakika) gruplandırılmıştır: 0-5 aralığında 2, 5-10 aralığında 7, 10-15 aralığında 11, 15-20 aralığında 5 öğrenci (aralıklar alt sınırı içerir, üst sınırı içermez). Aşağıdaki yorumlardan hangisi bu veriyle kabul edilebilir?",
+      "secenekler": [
+        "Öğrencilerin çoğu okula 10-15 dakikada varır.",
+        "Okula tam 12 dakikada varan en az bir öğrenci vardır.",
+        "Öğrencilerin %80'i okula 15 dakikadan kısa sürede varır.",
+        "Okula en geç varan öğrencinin süresi tam 20 dakikadır."
+      ],
+      "dogru": 2,
+      "aciklama": "15 dakikadan kısa sürede varanlar 2 + 7 + 11 = 20 kişidir ve {kesir:20|25} = %80 eder. A yanlıştır; 11 ÷ 25 = %44, yarıdan azdır. B ve D tek tek değerlerle ilgilidir ve gruplandırılmış veriden kesin olarak bilinemez. D'de ayrıca son aralık 20'yi içermez."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir kurstaki 10 öğrencinin sınav ortalaması 60, diğer 30 öğrencinin sınav ortalaması 80'dir. Kurs yöneticisi 'Tüm öğrencilerin ortalaması (60 + 80) ÷ 2 = 70' demektedir. Tüm öğrencilerin doğru ortalaması kaçtır?",
+      "secenekler": [
+        "70",
+        "72,5",
+        "75",
+        "80"
+      ],
+      "dogru": 2,
+      "aciklama": "Toplamlar: 10 × 60 = 600 ve 30 × 80 = 2400 puandır. Birleşik ortalama (600 + 2400) ÷ 40 = {kesir:3000|40} = 75 bulunur. Kalabalık grup (30 kişi) ortalamayı 80'e yaklaştırmıştır. 70, grup büyüklüklerini yok sayan hatalı hesaptır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir fırının ilk dört haftalık simit satışları 400, 450, 500 ve 550 adettir. Fırın sahibi 'Bu gidişle bir yıl sonra haftada yaklaşık 3000 simit satacağız' demektedir. Bu iddia için en uygun değerlendirme hangisidir?",
+      "secenekler": [
+        "Kabul edilir; hesap doğru olduğu için eğilim kesinlikle devam eder.",
+        "Kabul edilir; çizgi grafikleri her zaman geleceği doğru gösterir.",
+        "Kısa vadeli bir tahmin (5. hafta için yaklaşık 600) makul olabilir. Ancak 4 haftalık veriyle bir yıl sonrası için yapılan tahmin dışa kestirimdir ve güvenilmez.",
+        "Çürütülür; çünkü satışlar mutlaka azalacaktır."
+      ],
+      "dogru": 2,
+      "aciklama": "Haftalık artış 50'dir; 52. hafta için 400 + 51 × 50 = 2950 ≈ 3000 hesaplanır. Ancak yalnız 4 haftalık veriyle 48 hafta sonrası tahmin edilmektedir; bu bir dışa kestirimdir. D de veriye dayanmayan kesin bir iddiadır. Doğru tutum temkinli, kısa vadeli tahmindir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "90 öğrenciye üç seçenekli tek seçimli bir soru sorulmuş, her seçeneği 30 öğrenci seçmiştir. Daire grafiğinde dilimler %33, %33 ve %33 olarak yazılmıştır. Ayşe 'Toplam %99 ediyor, grafik hatalı' diyor. Bu durum için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Ayşe haklıdır; yüzdelerin toplamı %100 değilse grafik her zaman hatalıdır.",
+        "Ayşe haksızdır; her dilim aslında yaklaşık %33,3'tür. Tam sayıya yuvarlama yüzünden toplam %99 görünür, merkez açılar ise 120°'den toplam 360°'dir.",
+        "Grafik hatalıdır; dilimlerden biri %34 olarak çizilmelidir, çünkü bir seçeneği daha fazla kişi seçmiştir.",
+        "Anket çok seçimli olduğu için toplam %100 etmez."
+      ],
+      "dogru": 1,
+      "aciklama": "Her seçeneği 90 kişiden 30'u seçtiği için her dilim {kesir:1|3} yani yaklaşık %33,3'tür; merkez açılar 120°, 120°, 120°'dir ve toplamları 360° eder. %99, yuvarlamadan kaynaklanan küçük bir farktır, grafik hatası değildir. C'deki gibi bir dilimi değiştirmek veriyi bozar. Anket tek seçimlidir, D yanlıştır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Gruplandırılmış veri tablosundan bir öğrencinin boy uzunluğu kesin olarak okunabilir.",
+          "dogru": false,
+          "aciklama": "Gruplandırılmış veri yalnız hangi aralıkta kaç kişi olduğunu gösterir; tek tek değerler ancak ham verilerden bilinebilir."
+        },
+        {
+          "metin": "Birkaç aylık artış eğilimine dayanarak yıllar sonrası için kesin tahmin yapmak dışa kestirim hatasına yol açabilir.",
+          "dogru": true,
+          "aciklama": "Eğilim, verinin kapsamadığı uzak bir dönemde değişebilir. Bu nedenle uzak tahminler güvenilmezdir."
+        },
+        {
+          "metin": "Bir veri grubunun aritmetik ortalaması, gruptaki en küçük değerden daha küçük olabilir.",
+          "dogru": false,
+          "aciklama": "Ortalama her zaman en küçük ve en büyük değer arasında (ya da bunlara eşit) bulunur. Aksi bir sonuç hesap hatası gösterir."
+        },
+        {
+          "metin": "İki grubun nokta grafikleri örtüşüyorsa 'birinci gruptaki herkes ikinci gruptaki herkesten büyüktür' iddiası çürütülür.",
+          "dogru": true,
+          "aciklama": "Örtüşme, ikinci gruptan bazı değerlerin birinci gruptaki bazı değerleri geçtiğini gösterir. Bu tek karşı örnek iddiayı çürütmeye yeter."
+        },
+        {
+          "metin": "Aynı veriden yapılan farklı iki yorumun ikisi de doğru olabilir.",
+          "dogru": true,
+          "aciklama": "Örneğin biri kategorileri birleştirerek, diğeri tek tek karşılaştırarak doğru ama eksik sonuçlara ulaşabilir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Dışa kestirim",
+          "Eldeki verilerin kapsadığı zaman veya değer aralığının dışında kalan bir nokta için tahmin yapmak"
+        ],
+        [
+          "Birleşik ortalama",
+          "Grupların toplamları toplanıp toplam kişi sayısına bölünerek bulunan ortak ortalama"
+        ],
+        [
+          "Örtüşme",
+          "İki veri grubunun değerlerinin aynı aralıkta iç içe bulunması"
+        ],
+        [
+          "Gruplandırılmış veri",
+          "Verilerin tek tek değil, aralıklara düşen kişi sayılarıyla gösterildiği düzenleme"
+        ],
+        [
+          "Yuvarlama farkı",
+          "Yüzdeler tam sayıya yuvarlandığında toplamın %99 ya da %101 çıkması"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Histogramda bir verinin tam değeri değil, yalnız hangi ___ içinde olduğu bilinir.",
+          "cevap": "aralık"
+        },
+        {
+          "metin": "Dört aylık veriyle bir yıl sonrası için kesin tahmin yapmak dışa ___ hatasıdır.",
+          "cevap": "kestirim"
+        },
+        {
+          "metin": "Aritmetik ortalama, veri grubundaki en küçük ve en büyük değerin ___ yer alır.",
+          "cevap": "arasında"
+        },
+        {
+          "metin": "Farklı büyüklükteki iki grubun birleşik ortalaması bulunurken önce her grubun ___ hesaplanır.",
+          "cevap": "toplamı"
+        },
+        {
+          "metin": "Üç eşit dilimin %33, %33 ve %33 yazılması sonucu oluşan %99 toplamı bir ___ farkıdır.",
+          "cevap": "yuvarlama"
+        }
+      ],
+      "kelimeler": [
+        "aralık",
+        "kestirim",
+        "arasında",
+        "toplamı",
+        "yuvarlama"
+      ],
+      "fazla": [
+        "ortanca",
+        "dışında"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir öğrenci kulübü ekran süresi raporunda şunları yazmıştır: '7-A sınıfındaki 20 öğrencinin günlük ekran süresi ortalaması 2 saat, 7-B'deki 25 öğrencinin 3,2 saat, 7-C'deki 15 öğrencinin 2,4 saattir. Üç sınıfın ortalaması (2 + 3,2 + 2,4) ÷ 3 ≈ 2,53 saattir. Geçen yıl aynı sınıf düzeyinde aynı yöntemle bulunan ortalama 2,2 saatti. Ekran süresi her yıl artıyor ve 3 yıl sonra ortalama kesinlikle 3,5 saati geçecek.' Bu raporu istatistiksel olarak tartışınız.",
+      "ipuclari": [
+        "1. adım: Her sınıfın toplam ekran süresini bularak üç sınıfın birleşik ortalamasını hesaplayınız ve rapordaki 2,53 değeriyle karşılaştırınız.",
+        "2. adım: Bu yıl ile geçen yılın ortalamalarını karşılaştırarak 'arttı' iddiasını değerlendiriniz. Ardından 3 yıl sonrası için yapılan tahminin kaç veri noktasına dayandığını inceleyiniz.",
+        "3. adım: Raporun hangi kısımlarını kabul edeceğinize, hangilerini çürüteceğinize ya da hangileri için 'bu veriyle karar verilemez' diyeceğinize karar veriniz ve daha temkinli bir sonuç cümlesi yazınız."
+      ],
+      "cevap": "1. adım (Birleşik ortalama): 7-A'nın toplamı 20 × 2 = 40 saat, 7-B'nin toplamı 25 × 3,2 = 80 saat, 7-C'nin toplamı 15 × 2,4 = 36 saattir. Toplam 40 + 80 + 36 = 156 saat, toplam öğrenci 20 + 25 + 15 = 60 kişidir. Birleşik ortalama {kesir:156|60} = 2,6 saattir. Rapordaki 2,53 değeri, sınıf mevcutları farklı olduğu hâlde ortalamaların doğrudan ortalanmasından kaynaklanan bir hesap hatasıdır. Akıl kontrolü: En kalabalık sınıf olan 7-B'nin ortalaması (3,2) en yüksektir; bu yüzden doğru ortalamanın 2,53'ten büyük çıkması beklenir.\n2. adım (Artış ve tahmin): Geçen yıl 2,2 saat, bu yıl 2,6 saattir; artış 2,6 − 2,2 = 0,4 saattir. İki değer aynı yöntemle bulunduğu için 'bu yıl geçen yıla göre arttı' kısmı kabul edilir. Ancak 'her yıl artıyor' demek için yalnız iki yıllık veri vardır; düzenli bir eğilimden söz etmek için daha çok yılın verisi gerekir. 3 yıl sonrası için yapılan tahmin yalnız iki veri noktasına dayanan bir dışa kestirimdir. Artış yavaşlayabilir, durabilir ya da tersine dönebilir.\n3. adım (Karar ve temkinli sonuç): a) '≈ 2,53 saat' hesabı çürütülür; doğrusu 2,6 saattir. b) 'Geçen yıla göre arttı' kabul edilir. c) 'Her yıl artıyor' ve '3 yıl sonra kesinlikle 3,5 saati geçecek' iddiaları için bu veriyle karar verilemez; kesin iddia kabul edilemez. Temkinli sonuç cümlesi şöyle olabilir: 'Ölçülen üç sınıftaki 60 öğrencinin günlük ekran süresi ortalaması 2,6 saattir ve geçen yılın aynı yöntemle bulunan 2,2 saatlik ortalamasından 0,4 saat fazladır. Bu artışın sürüp sürmeyeceğini anlamak için ölçümler sonraki yıllarda da aynı yöntemle tekrarlanmalıdır.'"
+    }
+  ]
+}
