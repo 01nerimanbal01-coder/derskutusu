@@ -1,0 +1,624 @@
+{
+  "ad": "9-matematik-16",
+  "sinif": 9,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "EŞLİK VE BENZERLİK",
+  "konu": "Geometrik Dönüşümler: Doğruların Görüntüsü, Herhangi Bir Nokta Etrafında Dönme, Dönüşümü Belirleme, Simetri, Bileşke Dönüşümler ve Dönüşümlerle Problem Çözme",
+  "ciktilar": [
+    "MAT.9.4.1.a. Mevcut bilgisi dâhilinde geometrik dönüşümlerin (yansıma, öteleme, dönme) özelliklerine ve bir geometrik şeklin dönüşüm sonrasında oluşan görüntüsüne ilişkin varsayımlarda bulunur.",
+    "MAT.9.4.1.b. İncelediği örnekler üzerinden dönüşümlerin özelliklerine ve şekillerin dönüşümler altındaki görüntüsüne ilişkin varsayımlarına dayalı örüntüleri geneller.",
+    "MAT.9.4.1.c. Dönüşümlerin özellikleri ve şekillerin dönüşümler altındaki görüntüsüne ilişkin varsayımları ile genellemelerini karşılaştırır.",
+    "MAT.9.4.1.ç-d. Elde ettiği genellemelerden hareketle dönüşümlere ilişkin önermeler sunar ve bu önermeleri başka çıkarımlar yapmak için kullanarak değerlendirir."
+  ],
+  "giris": "Geçen hafta yansıma, öteleme ve dönmeyi tanıdık; noktaların koordinat düzlemindeki görüntülerini bulmayı öğrendik. Bu hafta bir adım ileri gidiyoruz: {koyu:doğruların} dönüşüm altında nasıl davrandığını, orijin dışındaki bir nokta etrafında nasıl döndürme yapılacağını ve yalnızca bir şekil ile görüntüsüne bakarak {koyu:hangi dönüşümün uygulandığını} nasıl belirleyeceğimizi inceleyeceğiz. Ardından {koyu:simetriyi} bir şeklin kendisine eşlenmesi olarak yorumlayacak, art arda uygulanan dönüşümlerden {koyu:kayan yansımaya} ulaşacak ve dönüşümleri en kısa yol ile düzlem kaplama gibi gerçek problemlerde kullanacağız.",
+  "ozet": [
+    "{koyu:Doğruların görüntüsü:} İzometriler doğrusallığı ve orta noktayı korur; öteleme ve 180° dönme bir doğruyu kendisine paralel bir doğruya, 90° dönme ise kendisine dik bir doğruya götürür.",
+    "{koyu:Herhangi bir merkez:} M(a, b) noktasına göre yansımada görüntü (2a − x, 2b − y) olur; M etrafında pozitif yönde 90° dönmede (x, y) → (a − (y − b), b + (x − a)) kuralı kullanılır.",
+    "{koyu:Dönüşümü belirleme:} Yönelim ters dönmüşse yansıma ya da kayan yansıma; korunmuş ve tüm noktalar aynı miktarda kaymışsa öteleme; korunmuş ama kaymalar farklıysa dönme vardır ve merkez orta dikmelerin kesişimidir.",
+    "{koyu:Simetri:} Şekli kendisine eşleyen yansıma ve dönmeler simetrisini belirler; düzgün n-genin n simetri ekseni vardır ve en küçük dönme simetrisi açısı {kesir:360°|n} olur.",
+    "{koyu:Bileşke dönüşümler:} Dönüşümlerin sırası çoğu zaman sonucu değiştirir; bir yansıma ile eksene paralel bir ötelemenin bileşkesi olan kayan yansıma yönelimi ters çevirir ve sabit noktası yoktur.",
+    "{koyu:Problem çözme:} Bir doğruya uğrayan en kısa yol, noktalardan birinin o doğruya göre yansıması alınarak bulunur; düzlemi boşluksuz kaplayan düzgün çokgenler yalnızca eşkenar üçgen, kare ve düzgün altıgendir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Doğruların ve Doğru Parçalarının Dönüşüm Altındaki Görüntüsü",
+      "metin": [
+        "Geçen hafta tek tek noktaların görüntülerini bulduk. Şimdi bir varsayım kuralım: {koyu:bir izometri doğrusal noktaları yine doğrusal noktalara götürür}. Bunu üçgen eşitsizliği bilgimizle gerekçelendirebiliriz. A, B, C aynı doğru üzerinde ve B, A ile C arasında ise {uzunluk:AB} + {uzunluk:BC} = {uzunluk:AC} olur. İzometri uzunlukları koruduğu için {uzunluk:A′B′} + {uzunluk:B′C′} = {uzunluk:A′C′} eşitliği de sağlanır. Üçgen eşitsizliğinde eşitlik ancak üç nokta doğrusal olduğunda gerçekleştiğinden A′, B′, C′ doğrusaldır ve B′ ortadadır. Bu önermenin sonuçları güçlüdür: {koyu:doğru parçası doğru parçasına, doğru doğruya, orta nokta orta noktaya} gider. Örneğin A(2, 1) ile B(6, 5) noktalarının orta noktası (4, 3)'tür. y eksenine göre yansımada A′(−2, 1), B′(−6, 5) olur; [A′B′]'nün orta noktası (−4, 3) olup tam olarak (4, 3) noktasının görüntüsüdür.",
+        "Bir doğrunun görüntüsünü bulmanın iki yolu vardır. {koyu:Birinci yol:} Doğru üzerinden iki nokta seç, bu noktaları dönüştür ve görüntü noktalarından geçen doğruyu yaz. y = 2x + 1 doğrusu üzerinde (0, 1) ve (1, 3) noktaları vardır; x eksenine göre yansımada bunlar (0, −1) ve (1, −3) olur ve bu iki noktadan geçen doğru y = −2x − 1'dir. {koyu:İkinci yol:} Görüntü doğrusu üzerindeki bir (x, y) noktasının ön görüntüsünü yazıp verilen denkleme yerleştir. x eksenine göre yansımada (x, y) noktasının ön görüntüsü (x, −y) olduğundan −y = 2x + 1 yazılır ve yine y = −2x − 1 bulunur. Ötelemede de aynı fikir işler: (3, −2) ötelemesinde görüntüdeki (x, y) noktasının ön görüntüsü (x − 3, y + 2) olduğundan y + 2 = 2(x − 3) + 1, yani y = 2x − 7 elde edilir.",
+        "Bu örneklerden genellemelere ulaşabiliriz. Öteleme ve 180° dönme bir doğruyu {koyu:kendisine paralel} (ya da çakışık) bir doğruya götürür; eğim değişmez. x veya y eksenine göre yansıma eğimin işaretini değiştirir; y = x doğrusuna göre yansıma m eğimini {kesir:1|m} eğimine çevirir. Orijin etrafında 90° dönmede y = 2x + 1 doğrusunun görüntüsü y = {kesir:−x − 1|2} olur; eğimler 2 ve −{kesir:1|2} olup çarpımları −1'dir: {koyu:90° dönme bir doğruyu kendisine dik bir doğruya götürür}. Bazı doğrular dönüşüm altında kendisine eşlenir: x eksenine göre yansımada x ekseni ve x = k biçimindeki düşey doğrular; (2, 4) ötelemesinde ise doğrultusu bu ötelemeyle aynı olan y = 2x + 1 gibi doğrular. Gerçekten y − 4 = 2(x − 2) + 1 düzenlenince yine y = 2x + 1 bulunur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Dönüşüm",
+          "Kural",
+          "y = 2x + 1 Doğrusunun Görüntüsü",
+          "Görüntünün Eğimi"
+        ],
+        "satirlar": [
+          [
+            "x eksenine göre yansıma",
+            "(x, y) → (x, −y)",
+            "y = −2x − 1",
+            "−2"
+          ],
+          [
+            "y eksenine göre yansıma",
+            "(x, y) → (−x, y)",
+            "y = −2x + 1",
+            "−2"
+          ],
+          [
+            "Orijin etrafında 180° dönme",
+            "(x, y) → (−x, −y)",
+            "y = 2x − 1",
+            "2 (paralel)"
+          ],
+          [
+            "y = x doğrusuna göre yansıma",
+            "(x, y) → (y, x)",
+            "y = {kesir:x − 1|2}",
+            "{kesir:1|2}"
+          ],
+          [
+            "Orijin etrafında pozitif yönde 90° dönme",
+            "(x, y) → (−y, x)",
+            "y = {kesir:−x − 1|2}",
+            "−{kesir:1|2} (dik)"
+          ],
+          [
+            "(3, −2) ötelemesi",
+            "(x, y) → (x + 3, y − 2)",
+            "y = 2x − 7",
+            "2 (paralel)"
+          ],
+          [
+            "(2, 4) ötelemesi",
+            "(x, y) → (x + 2, y + 4)",
+            "y = 2x + 1 (kendisi)",
+            "2 (çakışık)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Ters Kuralı Denkleme Yerleştir",
+          "metin": "Bir doğrunun görüntüsünü bulurken görüntüdeki (x, y) noktasının ön görüntüsünü yaz ve bunu verilen denklemde x ile y'nin yerine koy. Örneğin (a, b) ötelemesinde x yerine x − a, y yerine y − b yazılır; x eksenine göre yansımada ise yalnızca y yerine −y yazılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İki Nokta Yeter, Üçüncüsü Kontrol İçin",
+          "metin": "Bir doğru iki noktayla belirlendiği için görüntüsünü bulmak üzere iki noktayı dönüştürmek yeterlidir. Doğru üzerinden üçüncü bir nokta seçip görüntüsünün bulduğun doğruyu sağladığını denetlemek, işlem hatalarını yakalamanın en hızlı yoludur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#1d4ed8'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='bold'>BİR DOĞRUNUN X EKSENİNE GÖRE YANSIMASI</text><rect x='20' y='62' width='360' height='224' rx='12' fill='#ffffff' stroke='#93c5fd' stroke-width='2'/><line x1='35' y1='170' x2='365' y2='170' stroke='#475569' stroke-width='1.5'/><line x1='190' y1='68' x2='190' y2='280' stroke='#475569' stroke-width='1.5'/><text x='356' y='186' fill='#475569' font-size='12' font-weight='bold'>x</text><text x='196' y='80' fill='#475569' font-size='12' font-weight='bold'>y</text><line x1='127.5' y1='270' x2='227.5' y2='70' stroke='#1d4ed8' stroke-width='2.5'/><line x1='127.5' y1='70' x2='227.5' y2='270' stroke='#dc2626' stroke-width='2.5' stroke-dasharray='7 4'/><line x1='215' y1='95' x2='215' y2='245' stroke='#94a3b8' stroke-width='1.5' stroke-dasharray='3 3'/><circle cx='215' cy='95' r='4.5' fill='#1d4ed8'/><circle cx='215' cy='245' r='4.5' fill='#dc2626'/><circle cx='177.5' cy='170' r='4.5' fill='#047857'/><text x='224' y='99' fill='#1e3a8a' font-size='12' font-weight='bold'>A(1, 3)</text><text x='224' y='249' fill='#b91c1c' font-size='12' font-weight='bold'>A′(1, −3)</text><text x='236' y='76' fill='#1d4ed8' font-size='12' font-weight='bold'>y = 2x + 1</text><text x='236' y='272' fill='#dc2626' font-size='12' font-weight='bold'>y = −2x − 1</text><text x='40' y='160' fill='#047857' font-size='11' font-weight='bold'>sabit nokta (−0,5; 0)</text><rect x='395' y='62' width='345' height='224' rx='12' fill='#eff6ff' stroke='#93c5fd' stroke-width='2'/><text x='410' y='88' fill='#1d4ed8' font-size='13' font-weight='bold'>Yöntem 1: İki nokta seç, dönüştür</text><text x='420' y='110' fill='#0f172a' font-size='12'>(0, 1) → (0, −1)     (1, 3) → (1, −3)</text><text x='420' y='130' fill='#0f172a' font-size='12'>Görüntü doğrusu bu iki noktadan geçer.</text><text x='410' y='160' fill='#1d4ed8' font-size='13' font-weight='bold'>Yöntem 2: Ters kuralı denkleme yaz</text><text x='420' y='182' fill='#0f172a' font-size='12'>Görüntüde (x, y) ise ön görüntü (x, −y)</text><text x='420' y='202' fill='#0f172a' font-size='12'>−y = 2x + 1  ⇒  y = −2x − 1</text><rect x='412' y='216' width='311' height='58' rx='10' fill='#ffffff' stroke='#1d4ed8' stroke-width='2'/><text x='567' y='240' text-anchor='middle' fill='#1d4ed8' font-size='13' font-weight='bold'>Eğim 2 iken görüntüde eğim −2</text><text x='567' y='262' text-anchor='middle' fill='#0f172a' font-size='12'>Eksen üzerindeki nokta yerinde kalır.</text></svg>"
+    },
+    {
+      "baslik": "Herhangi Bir Nokta Etrafında Dönme ve Noktaya Göre Yansıma",
+      "metin": [
+        "Geçen hafta orijine göre yansımayı ve orijin etrafındaki dönmeleri inceledik. Peki merkez orijin değil de M(a, b) gibi herhangi bir nokta olursa? {koyu:M noktasına göre yansımada} M, [AA′] doğru parçasının orta noktasıdır. Orta nokta bağıntısından {kesir:x + x′|2} = a ve {kesir:y + y′|2} = b yazılır; buradan {koyu:x′ = 2a − x ve y′ = 2b − y} bulunur. Örneğin A(5, 1) noktasının M(2, 3) noktasına göre yansıması A′(2 · 2 − 5, 2 · 3 − 1) = A′(−1, 5) olur. Bu dönüşümde A, M ve A′ doğrusaldır, {uzunluk:MA} = {uzunluk:MA′} ve m(AMA′) = 180° olduğundan {koyu:M noktasına göre yansıma, M etrafında 180° dönmenin ta kendisidir}. Bu yüzden adında 'yansıma' geçse de şeklin yönelimini korur.",
+        "Merkez M(a, b) olan 90°'lik dönmeyi üç adımda yapabiliriz: önce şekli (−a, −b) kadar öteleyerek M'yi orijine taşı, sonra orijin etrafında bildiğimiz kuralla döndür, son olarak (a, b) kadar öteleyerek merkezi eski yerine getir. M(1, 1) etrafında pozitif yönde 90° döndürülen A(5, 2) noktası için: (5, 2) → (4, 1) → (−1, 4) → (0, 5) bulunur. Bu adımları genellersek pozitif yönde 90° dönme için {koyu:(x, y) → (a − (y − b), b + (x − a))}, negatif yönde 90° dönme için {koyu:(x, y) → (a + (y − b), b − (x − a))} kuralına ulaşırız. Aynı A noktası M(1, 1) etrafında negatif yönde döndürülürse (1 + 1, 1 − 4) = (2, −3) elde edilir. Kontrol olarak {uzunluk:MA} = {kok:{us:4|2} + {us:1|2}} = {kok:17} ve {uzunluk:MA′} = {kok:{us:(−1)|2} + {us:4|2}} = {kok:17} olduğunu görürüz.",
+        "Kareli kâğıtta bu dönmeyi koordinat yazmadan da yapabiliriz. A noktası M'ye göre '4 birim sağ, 1 birim yukarı' konumundadır. Pozitif yönde 90° dönmede bu göreli konum '1 birim sol, 4 birim yukarı' olur; M'den bu kadar gidince A′ bulunur. Örnekleri karşılaştırınca yeni bir varsayım doğar: A(5, 2) noktası orijin etrafında pozitif yönde 90° döndürülürse (−2, 5), M(1, 1) etrafında döndürülürse (0, 5) olur; iki görüntü arasındaki fark (2, 0) ötelemesidir. Genel kurallar karşılaştırıldığında bu farkın her nokta için aynı, yani (a + b, b − a) olduğu görülür. Buradan şu önerme çıkar: {koyu:aynı açı ve aynı yönde fakat farklı merkezli iki dönme birbirinden bir öteleme kadar farklıdır}; merkezin değişmesi görüntünün biçimini, boyutunu ve yönelimini değil yalnızca yerini değiştirir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Dönüşüm",
+          "Kural (merkez M(a, b))",
+          "M(1, 1) için A(5, 2) Noktasının Görüntüsü"
+        ],
+        "satirlar": [
+          [
+            "M noktasına göre yansıma (M etrafında 180° dönme)",
+            "(x, y) → (2a − x, 2b − y)",
+            "(−3, 0)"
+          ],
+          [
+            "M etrafında pozitif yönde 90° dönme",
+            "(x, y) → (a − (y − b), b + (x − a))",
+            "(0, 5)"
+          ],
+          [
+            "M etrafında negatif yönde 90° dönme",
+            "(x, y) → (a + (y − b), b − (x − a))",
+            "(2, −3)"
+          ],
+          [
+            "M etrafında pozitif yönde 270° dönme",
+            "Negatif yönde 90° dönmeyle aynı",
+            "(2, −3)"
+          ],
+          [
+            "Orijin etrafında pozitif yönde 90° dönme (karşılaştırma)",
+            "(x, y) → (−y, x)",
+            "(−2, 5)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Noktaya Göre Yansıma Aslında Bir Dönmedir",
+          "metin": "Bir doğruya göre yansıma yönelimi ters çevirir; ancak bir noktaya göre yansıma, o nokta etrafında 180° dönmeye eşit olduğu için yönelimi korur. İki kavramı karıştırma: 'M noktasına göre yansıma' ile 'M'den geçen bir doğruya göre yansıma' farklı dönüşümlerdir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Göreli Konumla Çalış",
+          "metin": "Merkezden noktaya giden adımları (sağ-sol, yukarı-aşağı) yaz. Pozitif yönde 90° dönmede (p, q) adımları (−q, p) olur, 180° dönmede (−p, −q) olur. Sonra bu yeni adımları merkezden itibaren uygula; formül ezberlemeden doğru sonuca ulaşırsın."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#047857'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='bold'>M(1, 1) NOKTASI ETRAFINDA POZİTİF YÖNDE 90° DÖNME</text><rect x='20' y='62' width='260' height='224' rx='12' fill='#ffffff' stroke='#6ee7b7' stroke-width='2'/><g stroke='#e2e8f0' stroke-width='1'><line x1='60' y1='70' x2='60' y2='250'/><line x1='90' y1='70' x2='90' y2='250'/><line x1='120' y1='70' x2='120' y2='250'/><line x1='150' y1='70' x2='150' y2='250'/><line x1='180' y1='70' x2='180' y2='250'/><line x1='210' y1='70' x2='210' y2='250'/><line x1='240' y1='70' x2='240' y2='250'/><line x1='60' y1='70' x2='240' y2='70'/><line x1='60' y1='100' x2='240' y2='100'/><line x1='60' y1='130' x2='240' y2='130'/><line x1='60' y1='160' x2='240' y2='160'/><line x1='60' y1='190' x2='240' y2='190'/><line x1='60' y1='220' x2='240' y2='220'/></g><line x1='60' y1='250' x2='250' y2='250' stroke='#475569' stroke-width='1.5'/><line x1='60' y1='250' x2='60' y2='66' stroke='#475569' stroke-width='1.5'/><text x='52' y='266' fill='#475569' font-size='11'>O</text><line x1='90' y1='220' x2='210' y2='190' stroke='#047857' stroke-width='2.5'/><line x1='90' y1='220' x2='60' y2='100' stroke='#dc2626' stroke-width='2.5' stroke-dasharray='6 4'/><path d='M 120 212 Q 118 190 100 182' fill='none' stroke='#b45309' stroke-width='2'/><text x='118' y='184' fill='#b45309' font-size='12' font-weight='bold'>90°</text><circle cx='90' cy='220' r='5' fill='#0f172a'/><circle cx='210' cy='190' r='5' fill='#047857'/><circle cx='60' cy='100' r='5' fill='#dc2626'/><text x='96' y='238' fill='#0f172a' font-size='12' font-weight='bold'>M(1, 1)</text><text x='196' y='180' fill='#065f46' font-size='12' font-weight='bold'>A(5, 2)</text><text x='68' y='94' fill='#b91c1c' font-size='12' font-weight='bold'>A′(0, 5)</text><text x='150' y='278' text-anchor='middle' fill='#334155' font-size='11'>4 sağ 1 yukarı → 1 sol 4 yukarı</text><rect x='295' y='62' width='445' height='224' rx='12' fill='#ecfdf5' stroke='#6ee7b7' stroke-width='2'/><text x='312' y='90' fill='#065f46' font-size='13' font-weight='bold'>Üç adımlı yöntem</text><text x='312' y='114' fill='#0f172a' font-size='12'>1. (−1, −1) ötelemesi: M orijine gider, A(5, 2) → (4, 1)</text><text x='312' y='138' fill='#0f172a' font-size='12'>2. Orijin etrafında +90°, (x, y) → (−y, x): (4, 1) → (−1, 4)</text><text x='312' y='162' fill='#0f172a' font-size='12'>3. (1, 1) ötelemesi: (−1, 4) → (0, 5) = A′</text><rect x='312' y='178' width='410' height='92' rx='10' fill='#ffffff' stroke='#047857' stroke-width='2'/><text x='517' y='202' text-anchor='middle' fill='#047857' font-size='13' font-weight='bold'>Genel kural: (x, y) → (a − (y − b), b + (x − a))</text><text x='517' y='226' text-anchor='middle' fill='#0f172a' font-size='12'>Kontrol: MA = MA′ = karekök(17)</text><text x='517' y='250' text-anchor='middle' fill='#0f172a' font-size='12'>Merkez değişirse görüntü yalnızca ötelenir.</text></svg>"
+    },
+    {
+      "baslik": "Şekil ile Görüntüsünden Dönüşümü Belirleme",
+      "metin": [
+        "Şimdiye kadar dönüşüm verilip görüntüyü bulduk. Ters soru daha düşündürücüdür: elimizde bir şekil ve görüntüsü varsa {koyu:hangi dönüşüm uygulanmıştır?} İlk bakılacak özellik {koyu:yönelimdir}. Köşeleri A → B → C sırasıyla dolaşıp yönü not et, sonra A′ → B′ → C′ sırasıyla dolaş. Yönler farklıysa uygulanan izometri tek bir öteleme ya da dönme olamaz; geçen haftaki önermeye göre yönelimi ters çeviren dönüşüm yansıma ya da bu bölümün sonunda göreceğimiz {koyu:kayan yansımadır}. Yönelim aynıysa olasılıklar öteleme ve dönmedir. Aydınger kâğıdıyla da test yapabiliriz: şekli kâğıda çizip kâğıdı ters çevirmeden kaydırarak veya döndürerek görüntünün üzerine oturtabiliyorsak yönelim korunmuştur.",
+        "Yönelim korunmuşsa her köşenin kayma miktarını, yani 'görüntü − ön görüntü' farkını hesapla. Bütün farklar eşitse dönüşüm bu farka eşit bir {koyu:ötelemedir}. Farklar eşit değilse dönüşüm bir {koyu:dönmedir} ve merkez hem A ile A′'ye hem B ile B′'ye eşit uzaklıkta olmalıdır; yani merkez, [AA′] ve [BB′] doğru parçalarının {koyu:kenar orta dikmelerinin kesişim noktasıdır}. Örnek: A(1, 2) → A′(−2, 1) ve B(3, 1) → B′(−1, 3) olsun. Farklar (−3, −1) ve (−4, 2) olup eşit değildir; öteleme yoktur. Orijin için {uzunluk:OA} = {kok:5} = {uzunluk:OA′} ve {uzunluk:OB} = {kok:10} = {uzunluk:OB′} olduğundan O her iki orta dikme üzerindedir; iki orta dikme tek noktada kesiştiği için merkez O(0, 0)'dır. A'dan A′'ye geçerken nokta saat ibrelerinin tersine çeyrek tur döndüğünden dönme pozitif yönde 90°'dir ve (x, y) → (−y, x) kuralı iki nokta için de sağlanır.",
+        "Yönelim ters dönmüşse önce bir yansıma ekseni ara: eksen, [AA′] doğru parçasının kenar orta dikmesidir. A(−1, 3) → A′(3, −1) ise orta nokta (1, 1) olur ve [AA′] eğimi −1 olan doğru üzerindedir; bu doğruya dik ve (1, 1)'den geçen doğru y = x'tir. Diğer köşelerin de aynı eksene göre yansıdığı görülürse dönüşüm y = x doğrusuna göre yansımadır; köşe çiftlerinin orta dikmeleri çakışmıyorsa dönüşüm kayan yansımadır. Bu çalışmalardan önemli bir önerme kurabiliriz: {koyu:bir izometri, doğrusal olmayan üç noktanın görüntüsüyle tamamen belirlenir}. Çünkü düzlemdeki her P noktasının konumu A, B ve C'ye olan uzaklıklarıyla tek türlü belirlenir ve bu uzaklıklar dönüşümde korunur; dolayısıyla P′, A′, B′ ve C′'ye aynı uzaklıktaki tek noktadır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Gözlem",
+          "Çıkarım",
+          "Dönüşümü Belirleyen Bilgi"
+        ],
+        "satirlar": [
+          [
+            "Yönelim aynı, tüm köşeler aynı miktarda kaymış",
+            "Öteleme",
+            "(a, b) = A′ − A"
+          ],
+          [
+            "Yönelim aynı, kayma miktarları farklı",
+            "Dönme",
+            "Merkez: orta dikmelerin kesişimi; açı: m(AOA′)"
+          ],
+          [
+            "Yönelim aynı ve bir nokta yerinde kalmış",
+            "O nokta merkezli dönme",
+            "Merkez sabit nokta, açı bir köşe çiftinden"
+          ],
+          [
+            "Yönelim ters, tüm köşe çiftlerinin orta dikmesi aynı doğru",
+            "Yansıma",
+            "Eksen: bu ortak orta dikme"
+          ],
+          [
+            "Yönelim ters, orta dikmeler çakışmıyor",
+            "Kayan yansıma",
+            "Eksen ve eksene paralel öteleme"
+          ],
+          [
+            "İki farklı nokta yerinde kalmış, yönelim ters",
+            "Bu iki noktadan geçen doğruya göre yansıma",
+            "Sabit noktalardan geçen doğru"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Bir İzometriyi Belirlemek İçin Gereken Bilgi",
+          "metin": "Ötelemeyi tek bir nokta çifti belirler. Dönmenin merkezini bulmak için iki nokta çifti gerekir. Genel olarak doğrusal olmayan üç noktanın görüntüsü bilinen bir izometri tamamen bellidir; dördüncü bir noktanın görüntüsü hesaplanabilir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Aydınger Kâğıdı Testi",
+          "metin": "Şeklin üzerine aydınger kâğıdı koyup çiz. Kâğıdı yalnızca kaydırarak görüntüye oturtabiliyorsan öteleme, bir raptiye etrafında çevirerek oturtabiliyorsan dönme vardır. Oturtmak için kâğıdı ters çevirmen gerekiyorsa yönelim değişmiştir; dönüşüm yansıma ya da kayan yansımadır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='12' width='720' height='34' rx='8' fill='#7c3aed'/><text x='380' y='35' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='bold'>HANGİ DÖNÜŞÜM UYGULANMIŞ? KARAR AKIŞI</text><rect x='270' y='58' width='220' height='38' rx='10' fill='#ede9fe' stroke='#7c3aed' stroke-width='2'/><text x='380' y='82' text-anchor='middle' fill='#4c1d95' font-size='13' font-weight='bold'>Şekil ve görüntüsü verildi</text><line x1='380' y1='96' x2='380' y2='120' stroke='#475569' stroke-width='2'/><circle cx='380' cy='120' r='3' fill='#475569'/><rect x='270' y='122' width='220' height='38' rx='10' fill='#ffffff' stroke='#7c3aed' stroke-width='2'/><text x='380' y='146' text-anchor='middle' fill='#0f172a' font-size='13' font-weight='bold'>Yönelim ters döndü mü?</text><line x1='300' y1='160' x2='180' y2='196' stroke='#dc2626' stroke-width='2'/><circle cx='180' cy='196' r='3' fill='#dc2626'/><text x='222' y='172' fill='#dc2626' font-size='12' font-weight='bold'>Evet</text><line x1='460' y1='160' x2='580' y2='188' stroke='#047857' stroke-width='2'/><circle cx='580' cy='188' r='3' fill='#047857'/><text x='520' y='166' fill='#047857' font-size='12' font-weight='bold'>Hayır</text><rect x='40' y='198' width='280' height='38' rx='10' fill='#fee2e2' stroke='#dc2626' stroke-width='2'/><text x='180' y='222' text-anchor='middle' fill='#7f1d1d' font-size='13' font-weight='bold'>Yansıma ya da kayan yansıma</text><line x1='180' y1='236' x2='180' y2='254' stroke='#475569' stroke-width='2'/><rect x='40' y='256' width='280' height='50' rx='10' fill='#ffffff' stroke='#dc2626' stroke-width='1.5'/><text x='180' y='276' text-anchor='middle' fill='#0f172a' font-size='12'>Eksen: [AA′] doğru parçasının</text><text x='180' y='294' text-anchor='middle' fill='#0f172a' font-size='12'>kenar orta dikmesi</text><rect x='440' y='190' width='280' height='38' rx='10' fill='#d1fae5' stroke='#047857' stroke-width='2'/><text x='580' y='214' text-anchor='middle' fill='#064e3b' font-size='12' font-weight='bold'>Tüm köşeler aynı miktarda mı kaydı?</text><line x1='540' y1='228' x2='505' y2='248' stroke='#475569' stroke-width='2'/><line x1='620' y1='228' x2='655' y2='248' stroke='#475569' stroke-width='2'/><rect x='440' y='250' width='132' height='56' rx='10' fill='#ffffff' stroke='#047857' stroke-width='1.5'/><text x='506' y='272' text-anchor='middle' fill='#047857' font-size='12' font-weight='bold'>Evet: Öteleme</text><text x='506' y='292' text-anchor='middle' fill='#0f172a' font-size='11'>(a, b) = A′ − A</text><rect x='588' y='250' width='132' height='56' rx='10' fill='#ffffff' stroke='#047857' stroke-width='1.5'/><text x='654' y='270' text-anchor='middle' fill='#047857' font-size='12' font-weight='bold'>Hayır: Dönme</text><text x='654' y='286' text-anchor='middle' fill='#0f172a' font-size='10'>Merkez: orta dikmelerin</text><text x='654' y='300' text-anchor='middle' fill='#0f172a' font-size='10'>kesişim noktası</text></svg>"
+    },
+    {
+      "baslik": "Yansıma Simetrisi ve Dönme Simetrisi",
+      "metin": [
+        "Bir dönüşüm bir şekli {koyu:kendisine} eşliyorsa o şekil bu dönüşüme göre simetriktir. Bir doğruya göre yansıma şekli kendisine eşliyorsa bu doğruya {koyu:simetri ekseni} denir; şekil eksen boyunca katlandığında iki yarısı tam olarak üst üste gelir. Bir nokta etrafında 360°'den küçük ve sıfırdan farklı bir açıyla yapılan dönme şekli kendisine eşliyorsa şeklin {koyu:dönme simetrisi} vardır. Tam bir tur boyunca şekli kendisine eşleyen dönmelerin sayısına (360° dahil) dönme simetrisinin {koyu:derecesi} denir. Kare, merkezi etrafında 90°, 180°, 270° ve 360° dönmelerde kendisiyle çakıştığı için 4. dereceden dönme simetrisine sahiptir; en küçük dönme açısı 360° ÷ 4 = 90°'dir.",
+        "Düzgün çokgenleri inceleyerek bir genellemeye ulaşabiliriz. Eşkenar üçgenin 3, karenin 4, düzgün beşgenin 5, düzgün altıgenin 6 simetri ekseni vardır; dönme simetrisi dereceleri de sırasıyla 3, 4, 5 ve 6'dır. Buradan {koyu:düzgün n-genin n simetri ekseni ve n. dereceden dönme simetrisi vardır; en küçük dönme açısı {kesir:360°|n}} önermesi çıkar. Düzgün olmayan dörtgenler daha ilginç bir tablo verir: dikdörtgen ve eşkenar dörtgenin ikişer simetri ekseni ve 180°'lik dönme simetrisi vardır; paralelkenarın genel durumda hiç simetri ekseni yoktur ama 180° dönmede kendisiyle çakışır; ikizkenar yamuğun tek bir simetri ekseni vardır, dönme simetrisi yoktur. Harflerde de aynı inceleme yapılabilir: A ve M düşey, E ve B yatay eksene sahiptir; H ve I iki eksene ve 180° dönme simetrisine sahiptir; N ve Z ise eksensiz olduğu hâlde 180° dönmede kendisiyle çakışır.",
+        "Geçen hafta kesişen iki eksene göre art arda yansımanın, eksenler arasındaki açının iki katı kadar bir dönme olduğunu görmüştük. Bu önermeyi simetriye uygularsak yeni bir çıkarım yaparız: {koyu:bir şeklin θ açısıyla kesişen iki simetri ekseni varsa şekil, kesişim noktası etrafında 2θ açılı dönme simetrisine de sahiptir}. Dikdörtgenin eksenleri 90°'lik açıyla kesiştiği için 180° dönme simetrisi vardır; karenin komşu eksenleri arasındaki açı 45° olduğundan 90° dönme simetrisi vardır. Ters yönde bir çıkarım her zaman doğru değildir: paralelkenar örneği, dönme simetrisi olan bir şeklin simetri ekseni olmayabileceğini gösteren bir karşı örnektir. Selçuklu ve Osmanlı süslemelerinde sıkça görülen sekiz köşeli yıldız motifinin 8 simetri ekseni ve 45°'lik dönme simetrisi vardır; bu motifler, bir küçük parçanın yansıma ve dönmelerle çoğaltılmasıyla oluşturulur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Şekil",
+          "Simetri Ekseni Sayısı",
+          "Dönme Simetrisi Derecesi",
+          "En Küçük Dönme Açısı"
+        ],
+        "satirlar": [
+          [
+            "Eşkenar üçgen",
+            "3",
+            "3",
+            "120°"
+          ],
+          [
+            "Kare",
+            "4",
+            "4",
+            "90°"
+          ],
+          [
+            "Dikdörtgen (kare olmayan)",
+            "2",
+            "2",
+            "180°"
+          ],
+          [
+            "Eşkenar dörtgen (kare olmayan)",
+            "2 (köşegenler)",
+            "2",
+            "180°"
+          ],
+          [
+            "Paralelkenar (genel)",
+            "0",
+            "2",
+            "180°"
+          ],
+          [
+            "İkizkenar yamuk",
+            "1",
+            "1 (dönme simetrisi yok)",
+            "Yok"
+          ],
+          [
+            "Düzgün altıgen",
+            "6",
+            "6",
+            "60°"
+          ],
+          [
+            "Düzgün n-gen",
+            "n",
+            "n",
+            "{kesir:360°|n}"
+          ],
+          [
+            "Çember",
+            "Sonsuz",
+            "Sonsuz",
+            "Her açı"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Dönme Simetrisinin Derecesi",
+          "metin": "Bir şekli tam bir tur boyunca kendisiyle çakıştıran dönmelerin sayısına (360° dönme de sayılır) dönme simetrisinin derecesi denir. Derece n ise en küçük dönme açısı {kesir:360°|n} olur ve şekil bu açının her katında kendisiyle çakışır. Derecesi 1 olan şeklin dönme simetrisi yoktur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Eksenleri Saymanın Kısa Yolu",
+          "metin": "Bir düzgün çokgende kenar sayısı tekse her eksen bir köşeden ve karşı kenarın orta noktasından geçer. Kenar sayısı çiftse eksenlerin yarısı karşılıklı köşelerden, yarısı karşılıklı kenarların orta noktalarından geçer. İki durumda da toplam eksen sayısı kenar sayısına eşittir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#0369a1'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='bold'>SİMETRİ EKSENLERİ VE DÖNME SİMETRİSİ</text><rect x='20' y='62' width='170' height='224' rx='12' fill='#ffffff' stroke='#7dd3fc' stroke-width='2'/><polygon points='105,95 48,194 162,194' fill='#e0f2fe' stroke='#0369a1' stroke-width='2.5'/><g stroke='#dc2626' stroke-width='1.5' stroke-dasharray='5 3'><line x1='105' y1='88' x2='105' y2='204'/><line x1='42' y1='197' x2='140' y2='140'/><line x1='168' y1='197' x2='70' y2='140'/></g><text x='105' y='232' text-anchor='middle' fill='#0c4a6e' font-size='13' font-weight='bold'>Eşkenar üçgen</text><text x='105' y='252' text-anchor='middle' fill='#0f172a' font-size='12'>3 eksen</text><text x='105' y='270' text-anchor='middle' fill='#0f172a' font-size='12'>En küçük dönme: 120°</text><rect x='200' y='62' width='170' height='224' rx='12' fill='#ffffff' stroke='#7dd3fc' stroke-width='2'/><rect x='235' y='100' width='100' height='100' fill='#e0f2fe' stroke='#0369a1' stroke-width='2.5'/><g stroke='#dc2626' stroke-width='1.5' stroke-dasharray='5 3'><line x1='285' y1='88' x2='285' y2='212'/><line x1='223' y1='150' x2='347' y2='150'/><line x1='227' y1='92' x2='343' y2='208'/><line x1='343' y1='92' x2='227' y2='208'/></g><text x='285' y='232' text-anchor='middle' fill='#0c4a6e' font-size='13' font-weight='bold'>Kare</text><text x='285' y='252' text-anchor='middle' fill='#0f172a' font-size='12'>4 eksen</text><text x='285' y='270' text-anchor='middle' fill='#0f172a' font-size='12'>En küçük dönme: 90°</text><rect x='380' y='62' width='170' height='224' rx='12' fill='#ffffff' stroke='#7dd3fc' stroke-width='2'/><rect x='400' y='112' width='130' height='76' fill='#e0f2fe' stroke='#0369a1' stroke-width='2.5'/><g stroke='#dc2626' stroke-width='1.5' stroke-dasharray='5 3'><line x1='465' y1='98' x2='465' y2='202'/><line x1='390' y1='150' x2='540' y2='150'/></g><text x='465' y='232' text-anchor='middle' fill='#0c4a6e' font-size='13' font-weight='bold'>Dikdörtgen</text><text x='465' y='252' text-anchor='middle' fill='#0f172a' font-size='12'>2 eksen</text><text x='465' y='270' text-anchor='middle' fill='#0f172a' font-size='12'>En küçük dönme: 180°</text><rect x='560' y='62' width='170' height='224' rx='12' fill='#ffffff' stroke='#7dd3fc' stroke-width='2'/><polygon points='600,188 625,112 715,112 690,188' fill='#e0f2fe' stroke='#0369a1' stroke-width='2.5'/><circle cx='657.5' cy='150' r='4' fill='#b45309'/><path d='M 680 150 A 22 22 0 0 0 635 150' fill='none' stroke='#b45309' stroke-width='2'/><text x='657' y='140' text-anchor='middle' fill='#b45309' font-size='11' font-weight='bold'>180°</text><text x='645' y='232' text-anchor='middle' fill='#0c4a6e' font-size='13' font-weight='bold'>Paralelkenar</text><text x='645' y='252' text-anchor='middle' fill='#0f172a' font-size='12'>0 eksen</text><text x='645' y='270' text-anchor='middle' fill='#0f172a' font-size='12'>En küçük dönme: 180°</text></svg>"
+    },
+    {
+      "baslik": "Bileşke Dönüşümler: Sıra, Ters Dönüşüm ve Kayan Yansıma",
+      "metin": [
+        "İki dönüşümün art arda uygulanmasıyla elde edilen dönüşüme {koyu:bileşke dönüşüm} denir. Varsayım kuralım: dönüşümlerin sırası sonucu etkiler mi? P(2, 1) noktasını önce x eksenine göre yansıtıp sonra (0, 3) kadar ötelersek (2, −1) → (2, 2) olur. Önce (0, 3) kadar öteleyip sonra yansıtırsak (2, 4) → (2, −4) olur. Sonuçlar farklıdır; demek ki {koyu:sıra genellikle önemlidir}. Ancak öteleme (3, 0) gibi yansıma eksenine paralel olsaydı iki sıra da (5, −1) sonucunu verirdi. Örnekleri karşılaştırınca şu önermeye ulaşırız: bir yansıma ile eksenine paralel bir öteleme sırası değiştirilerek uygulanabilir; eksene paralel olmayan bir ötelemede ise sıra değişince sonuç değişir. Aynı merkezli iki dönmede de sıra önemsizdir; açılar toplanır: orijin etrafında 90° ve ardından 180° dönme, 270°'lik tek bir dönmeye eşittir.",
+        "Bir dönüşümün etkisini geri alan dönüşüme {koyu:ters dönüşüm} denir. (a, b) ötelemesinin tersi (−a, −b) ötelemesi, α açılı dönmenin tersi aynı merkezli −α dönmesi, bir yansımanın tersi ise yine kendisidir. Bir dönüşüm ile tersinin bileşkesi her noktayı kendisine götüren {koyu:özdeşlik dönüşümüdür}. Bileşke dönüşümün tersini alırken sıra da tersine döner: önce yansıtıp sonra ötelediysek, geri dönmek için önce ötelemeyi geri alır, sonra yansıtırız; tıpkı önce çorabı sonra ayakkabıyı giyip çıkarırken önce ayakkabıyı çıkarmamız gibi.",
+        "Bir yansıma ile yansıma eksenine paralel bir ötelemenin bileşkesine {koyu:kayan yansıma} denir. x eksenine göre yansıma ve (4, 0) ötelemesinden oluşan kayan yansımanın kuralı (x, y) → (x + 4, −y) olur. Kumsalda yürüyen birinin ayak izleri bu dönüşüme güzel bir örnektir: sol ayak izi, yürüyüş çizgisine göre yansıtılıp ileri kaydırılınca sağ ayak izine dönüşür. Kayan yansıma yönelimi ters çevirir, çünkü içinde tek bir yansıma vardır; ama yansımadan farklı olarak {koyu:hiç sabit noktası yoktur}. Aynı kayan yansıma iki kez uygulanırsa (x, y) → (x + 8, y) elde edilir; yani iki kayan yansımanın bileşkesi bir ötelemedir. Yansıma sayısına bakarak genel bir önerme kurabiliriz: bileşkede {koyu:çift sayıda yansıma varsa yönelim korunur, tek sayıda yansıma varsa ters döner}. Bu nedenle düzlemdeki her izometri öteleme, dönme, yansıma ya da kayan yansımadan biridir; ilk ikisi yönelimi korur, son ikisi ters çevirir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Bileşke",
+          "Sonuç",
+          "Yönelim"
+        ],
+        "satirlar": [
+          [
+            "(a, b) ve (c, d) ötelemeleri",
+            "(a + c, b + d) ötelemesi",
+            "Korunur"
+          ],
+          [
+            "Aynı merkezli α ve β dönmeleri",
+            "α + β açılı dönme",
+            "Korunur"
+          ],
+          [
+            "Paralel iki eksene göre art arda yansıma",
+            "Öteleme",
+            "Korunur"
+          ],
+          [
+            "Kesişen iki eksene göre art arda yansıma",
+            "Dönme",
+            "Korunur"
+          ],
+          [
+            "Yansıma ve eksene paralel öteleme",
+            "Kayan yansıma",
+            "Ters döner"
+          ],
+          [
+            "Bir yansıma ve bir dönme",
+            "Yansıma ya da kayan yansıma",
+            "Ters döner"
+          ],
+          [
+            "Aynı kayan yansıma iki kez",
+            "Öteleme",
+            "Korunur"
+          ],
+          [
+            "Bir dönüşüm ve tersi",
+            "Özdeşlik dönüşümü",
+            "Korunur"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Yansıma Sayısı Yönelimi Belirler",
+          "metin": "Her yansıma yönelimi bir kez ters çevirir. Bileşke dönüşümde yansıma sayısı çiftse yönelim eski hâline döner, tekse ters kalır. Örneğin iki yansıma ve bir ötelemenin bileşkesi yönelimi korur; üç yansımanın bileşkesi ise yönelimi ters çevirir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Kayan Yansıma Gündelik Hayatta",
+          "metin": "Kumdaki ayak izleri, bazı kenar süslemeleri (şerit motifleri) ve dikey eksen boyunca sırayla dizilmiş yapraklar kayan yansıma örnekleridir. Bu desenlerde bir motif yansıtılıp kaydırılarak tekrar eder; tek başına bir yansıma ya da öteleme deseni üretemez."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#b45309'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='bold'>KAYAN YANSIMA: YANSIMA + EKSENE PARALEL ÖTELEME</text><rect x='20' y='62' width='720' height='224' rx='12' fill='#ffffff' stroke='#fcd34d' stroke-width='2'/><line x1='40' y1='170' x2='720' y2='170' stroke='#475569' stroke-width='2' stroke-dasharray='8 5'/><text x='706' y='162' text-anchor='end' fill='#475569' font-size='12' font-weight='bold'>yansıma ekseni</text><polygon points='60,130 110,130 110,140 75,140 75,152 60,152' fill='#fde68a' stroke='#b45309' stroke-width='2'/><polygon points='160,210 210,210 210,200 175,200 175,188 160,188' fill='#fecaca' stroke='#dc2626' stroke-width='2'/><polygon points='260,130 310,130 310,140 275,140 275,152 260,152' fill='#fde68a' stroke='#b45309' stroke-width='2'/><polygon points='360,210 410,210 410,200 375,200 375,188 360,188' fill='#fecaca' stroke='#dc2626' stroke-width='2'/><polygon points='460,130 510,130 510,140 475,140 475,152 460,152' fill='#fde68a' stroke='#b45309' stroke-width='2'/><polygon points='560,210 610,210 610,200 575,200 575,188 560,188' fill='#fecaca' stroke='#dc2626' stroke-width='2'/><polygon points='660,130 710,130 710,140 675,140 675,152 660,152' fill='#fde68a' stroke='#b45309' stroke-width='2'/><line x1='112' y1='112' x2='158' y2='112' stroke='#0f172a' stroke-width='1.5'/><circle cx='158' cy='112' r='3' fill='#0f172a'/><text x='135' y='104' text-anchor='middle' fill='#0f172a' font-size='11'>100 birim</text><text x='85' y='122' text-anchor='middle' fill='#92400e' font-size='12' font-weight='bold'>F</text><text x='185' y='228' text-anchor='middle' fill='#b91c1c' font-size='12' font-weight='bold'>F′</text><text x='285' y='122' text-anchor='middle' fill='#92400e' font-size='12' font-weight='bold'>F″</text><text x='380' y='252' text-anchor='middle' fill='#0f172a' font-size='13'>F → F′: eksene göre yansıt, sonra 100 birim sağa kaydır (yönelim ters döner).</text><text x='380' y='274' text-anchor='middle' fill='#92400e' font-size='13' font-weight='bold'>F → F″: iki kez uygulanınca 200 birimlik öteleme (yönelim yeniden korunur).</text></svg>"
+    },
+    {
+      "baslik": "Dönüşümlerle Problem Çözme: En Kısa Yol ve Düzlem Kaplama",
+      "metin": [
+        "Dönüşümler yalnızca şekil taşımaya değil, problem çözmeye de yarar. Klasik bir soru: bir d doğrusunun (örneğin bir nehrin) aynı tarafında A ve B noktaları var. A'dan yola çıkıp d üzerindeki bir P noktasına uğrayan ve B'ye giden {koyu:en kısa yol} nasıl bulunur? Çözüm yansımadadır. B'nin d'ye göre yansıması B′ olsun. d, [BB′] doğru parçasının kenar orta dikmesi olduğundan d üzerindeki her Q noktası için {uzunluk:QB} = {uzunluk:QB′} olur. Bu yüzden yolun uzunluğu {uzunluk:AQ} + {uzunluk:QB} = {uzunluk:AQ} + {uzunluk:QB′} olarak yazılabilir. Üçgen eşitsizliğine göre {uzunluk:AQ} + {uzunluk:QB′} ≥ {uzunluk:AB′} olur ve eşitlik ancak A, Q, B′ doğrusal olduğunda sağlanır. Demek ki aranan P noktası, [AB′] doğru parçasının d'yi kestiği noktadır.",
+        "Koordinatlarla somutlaştıralım: A(1, 3), B(7, 1) ve d doğrusu x ekseni olsun. B′(7, −1) olur. A'dan B′'ye giderken x 6 birim artarken y 4 birim azalır; y'nin 3'ten 0'a inmesi için x'in 6 · {kesir:3|4} = 4,5 birim artması gerekir. Buradan P(5,5; 0) bulunur. En kısa yolun uzunluğu {uzunluk:AB′} = {kok:{us:6|2} + {us:4|2}} = {kok:52} = 2{kok:13} ≈ 7,2 birimdir. Bu çözümün bir yan ürünü de vardır: P noktasında [AP]'nin d ile yaptığı açı, [PB]'nin d ile yaptığı açıya eşittir. Işığın aynadan yansıması ve bilardo topunun banttan sekmesi tam olarak bu kurala uyar: {koyu:gelme açısı yansıma açısına eşittir}. Doğa da en kısa yolu yansımayla seçer.",
+        "Dönüşümlerin bir başka uygulaması {koyu:düzlem kaplamadır} (süsleme): bir şeklin öteleme, dönme ve yansımalarla çoğaltılarak düzlemi boşluksuz ve üst üste binmeden doldurması. Yalnız tek tür düzgün çokgen kullanılacaksa bir köşede buluşan çokgenlerin iç açıları toplamı 360° olmalıdır; yani iç açı 360°'nin bir böleni olmalıdır. Düzgün n-genin iç açısı 180° − {kesir:360°|n} olduğundan denemeler şunu gösterir: eşkenar üçgen (60°, bir köşede 6 tane), kare (90°, 4 tane) ve düzgün altıgen (120°, 3 tane) düzlemi kaplar; düzgün beşgenin iç açısı 108° olup 360 ÷ 108 tam sayı değildir, bu yüzden kaplayamaz. Altıdan fazla kenarlı düzgün çokgenlerin iç açısı 120°'den büyük ve 180°'den küçüktür; bir köşeye üç tanesi sığmaz, ikisi de 360°'yi tamamlamaz. Böylece {koyu:düzlemi tek başına kaplayan düzgün çokgenler yalnızca üç tanedir} önermesine ulaşırız. Arıların altıgen peteği, banyo ve mutfak karoları, çini panolar bu önermenin gündelik hayattaki yansımalarıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Düzgün Çokgen",
+          "Bir İç Açı",
+          "360° ÷ İç Açı",
+          "Düzlemi Tek Başına Kaplar mı?"
+        ],
+        "satirlar": [
+          [
+            "Eşkenar üçgen",
+            "60°",
+            "6",
+            "Evet"
+          ],
+          [
+            "Kare",
+            "90°",
+            "4",
+            "Evet"
+          ],
+          [
+            "Düzgün beşgen",
+            "108°",
+            "3,33...",
+            "Hayır"
+          ],
+          [
+            "Düzgün altıgen",
+            "120°",
+            "3",
+            "Evet"
+          ],
+          [
+            "Düzgün sekizgen",
+            "135°",
+            "2,66...",
+            "Hayır (sekizgen ve kare birlikte kaplar)"
+          ],
+          [
+            "Düzgün onikigen",
+            "150°",
+            "2,4",
+            "Hayır"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Bir Doğruya Uğrayan En Kısa Yol",
+          "metin": "A ve B noktaları d doğrusunun aynı tarafındaysa noktalardan birinin d'ye göre yansımasını al (B′). [AB′] doğru parçasının d'yi kestiği P noktası aranan noktadır ve en kısa yolun uzunluğu {uzunluk:AB′} kadardır. Noktalar d'nin farklı taraflarındaysa yansımaya gerek yoktur; [AB] doğrudan d'yi keser."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Kaplama İçin Köşe Koşulu",
+          "metin": "Bir köşede buluşan şekillerin açıları toplamı 360° olmalıdır. Bu koşul farklı düzgün çokgenlerin birlikte kullanıldığı kaplamalar için de geçerlidir: bir düzgün sekizgen köşesinde 135° + 135° + 90° = 360° olduğundan iki sekizgen ve bir kare bir köşede buluşabilir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#be123c'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='bold'>YANSIMA İLE EN KISA YOL</text><rect x='20' y='62' width=\"360\" height='224' rx='12' fill='#ffffff' stroke='#fda4af' stroke-width='2'/><line x1='36' y1='200' x2='364' y2='200' stroke='#0369a1' stroke-width='3'/><text x='350' y='194' fill='#0369a1' font-size='13' font-weight='bold'>d</text><line x1='100' y1='80' x2='180' y2='200' stroke='#94a3b8' stroke-width='1.5'/><line x1='180' y1='200' x2='340' y2='160' stroke='#94a3b8' stroke-width='1.5'/><line x1='100' y1='80' x2='280' y2='200' stroke='#be123c' stroke-width='2.5'/><line x1='280' y1='200' x2='340' y2='160' stroke='#be123c' stroke-width='2.5'/><line x1='280' y1='200' x2='340' y2='240' stroke='#be123c' stroke-width='2' stroke-dasharray='6 4'/><line x1='340' y1='160' x2='340' y2='240' stroke='#64748b' stroke-width='1.5' stroke-dasharray='3 3'/><circle cx='100' cy='80' r='5' fill='#0f172a'/><circle cx='340' cy='160' r='5' fill='#0f172a'/><circle cx='340' cy='240' r='5' fill='#be123c'/><circle cx='280' cy='200' r='5' fill='#be123c'/><circle cx='180' cy='200' r='4' fill='#94a3b8'/><text x='86' y='76' fill='#0f172a' font-size='12' font-weight='bold'>A(1, 3)</text><text x='300' y='150' fill='#0f172a' font-size='12' font-weight='bold'>B(7, 1)</text><text x='292' y='262' fill='#be123c' font-size='12' font-weight='bold'>B′(7, −1)</text><text x='256' y='220' fill='#be123c' font-size='12' font-weight='bold'>P</text><text x='174' y='220' fill='#64748b' font-size='12' font-weight='bold'>Q</text><rect x='395' y='62' width='345' height='224' rx='12' fill='#fff1f2' stroke='#fda4af' stroke-width='2'/><text x='410' y='90' fill='#0f172a' font-size='12'>1. B noktasını d'ye göre yansıt: B′(7, −1)</text><text x='410' y='114' fill='#0f172a' font-size='12'>2. d orta dikme olduğundan her Q için QB = QB′</text><text x='410' y='138' fill='#0f172a' font-size='12'>3. AQ + QB = AQ + QB′ ≥ AB′ (üçgen eşitsizliği)</text><text x='410' y='162' fill='#0f172a' font-size='12'>4. Eşitlik: A, P, B′ doğrusal olduğunda</text><rect x='412' y='178' width='311' height='94' rx='10' fill='#ffffff' stroke='#be123c' stroke-width='2'/><text x='567' y='204' text-anchor='middle' fill='#be123c' font-size='14' font-weight='bold'>P(5,5; 0)</text><text x='567' y='228' text-anchor='middle' fill='#0f172a' font-size='12'>En kısa yol = AB′ = karekök(52) ≈ 7,2 birim</text><text x='567' y='252' text-anchor='middle' fill='#0f172a' font-size='12'>Gelme açısı = yansıma açısı</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "y = 3x − 2 doğrusunun (a) y eksenine göre yansıması ve (b) (1, 4) ötelemesi altındaki görüntüsünün denklemlerini bulunuz. Sonuçları doğru üzerindeki noktalarla doğrulayınız.",
+      "cevap": "(a) 1. adım: y eksenine göre yansımada görüntüdeki (x, y) noktasının ön görüntüsü (−x, y) olur. 2. adım: Denklemde x yerine −x yazılır: y = 3(−x) − 2, yani y = −3x − 2. 3. adım (doğrulama): Doğru üzerindeki (1, 1) noktasının görüntüsü (−1, 1) olur; −3 · (−1) − 2 = 1 sağlanır. (b) 1. adım: (1, 4) ötelemesinde görüntüdeki (x, y) noktasının ön görüntüsü (x − 1, y − 4) olur. 2. adım: y − 4 = 3(x − 1) − 2 yazılır; düzenlenince y = 3x − 1 bulunur. 3. adım (doğrulama): (0, −2) → (1, 2) ve 3 · 1 − 1 = 2; (1, 1) → (2, 5) ve 3 · 2 − 1 = 5 sağlanır. Yorum: Ötelemede eğim 3 olarak korunmuş, doğru kendisine paralel bir doğruya gitmiştir; yansımada eğimin işareti değişmiştir.",
+      "ipucu": "Görüntü noktasının ön görüntüsünü yazıp denklemde yerine koyun; kontrol için doğru üzerinden iki nokta seçin."
+    },
+    {
+      "soru": "A(5, 3) noktası M(2, −1) noktası etrafında (a) pozitif yönde 90°, (b) 180° döndürülüyor. Her iki görüntüyü bulunuz ve merkeze uzaklığın korunduğunu doğrulayınız.",
+      "cevap": "1. adım: A'nın M'ye göre göreli konumu (5 − 2, 3 − (−1)) = (3, 4) yani '3 sağ, 4 yukarı'dır. (a) 2. adım: Pozitif yönde 90° dönmede (p, q) göreli konumu (−q, p) olur: (3, 4) → (−4, 3). 3. adım: M'den bu kadar gidilir: A′(2 − 4, −1 + 3) = A′(−2, 2). Formülle kontrol: (a − (y − b), b + (x − a)) = (2 − 4, −1 + 3) = (−2, 2). (b) 4. adım: 180° dönmede göreli konum (−3, −4) olur; A″(2 − 3, −1 − 4) = A″(−1, −5). Bu, M'ye göre yansıma kuralı (2a − x, 2b − y) = (4 − 5, −2 − 3) ile aynıdır. 5. adım (doğrulama): {uzunluk:MA} = {kok:{us:3|2} + {us:4|2}} = 5; {uzunluk:MA′} = {kok:{us:(−4)|2} + {us:3|2}} = 5; {uzunluk:MA″} = {kok:{us:(−3)|2} + {us:(−4)|2}} = 5. Uzaklık korunmuştur. Cevap: A′(−2, 2), A″(−1, −5).",
+      "ipucu": "Önce A'nın merkeze göre kaç birim sağda ve yukarıda olduğunu bulun, dönmeyi bu göreli konuma uygulayın."
+    },
+    {
+      "soru": "ABC üçgeninin köşeleri A(1, 1), B(2, 4), C(3, 2); A′B′C′ üçgeninin köşeleri A′(5, 1), B′(4, 4), C′(3, 2) olarak veriliyor. ABC üçgenini A′B′C′ üçgenine götüren dönüşümü belirleyiniz.",
+      "cevap": "1. adım (yönelim): ABC'de A sol altta, B en üstte, C sağdadır; A → B → C dolaşımı saat ibreleri yönündedir. A′B′C′'de A′ sağ altta, B′ en üstte, C′ soldadır; A′ → B′ → C′ dolaşımı saat ibrelerinin tersidir. Yönelim ters döndüğünden dönüşüm öteleme veya dönme olamaz; yansıma ya da kayan yansıma olmalıdır. 2. adım (sabit nokta): C(3, 2) noktası C′(3, 2) ile aynıdır; C sabittir. Kayan yansımanın sabit noktası olmadığından dönüşüm bir yansımadır. 3. adım (eksen): [AA′]'nün orta noktası (3, 1) ve [AA′] yataydır; kenar orta dikmesi x = 3 doğrusudur. [BB′]'nün orta noktası (3, 4) ve [BB′] yataydır; orta dikmesi yine x = 3'tür. C de x = 3 üzerindedir. 4. adım (kontrol): x = 3 doğrusuna göre yansıma kuralı (x, y) → (6 − x, y) dir: (1, 1) → (5, 1), (2, 4) → (4, 4), (3, 2) → (3, 2). Cevap: x = 3 doğrusuna göre yansıma.",
+      "ipucu": "Önce yönelimi karşılaştırın, sonra sabit nokta olup olmadığına ve köşe çiftlerinin orta dikmelerine bakın."
+    },
+    {
+      "soru": "Sekiz köşeli yıldız motifinin dış hatları bir düzgün sekizgene yerleştirilmiştir. Düzgün sekizgenin (a) simetri ekseni sayısını, (b) en küçük dönme simetrisi açısını, (c) şekli kendisine eşleyen ve 0° ile 360° arasında kalan dönme açılarını, (d) komşu iki simetri ekseni arasındaki açıyı bulunuz ve (b) ile (d) arasındaki ilişkiyi açıklayınız.",
+      "cevap": "(a) Düzgün n-genin n simetri ekseni vardır; n = 8 olduğundan 8 eksen bulunur (4'ü karşılıklı köşelerden, 4'ü karşılıklı kenarların orta noktalarından geçer). (b) En küçük dönme açısı 360° ÷ 8 = 45°'dir. (c) Bu açının katları: 45°, 90°, 135°, 180°, 225°, 270°, 315°; toplam 7 açı (360° ile birlikte 8 dönme, dönme simetrisinin derecesi 8). (d) 8 eksen merkezden geçer ve 180°'lik açıyı eşit parçalara böler: 180° ÷ 8 = 22,5°. İlişki: Kesişen iki eksene göre art arda yansıma, eksenler arasındaki açının iki katı kadar dönmedir; 2 · 22,5° = 45° olup en küçük dönme simetrisi açısına eşittir.",
+      "ipucu": "Düzgün n-gende eksen sayısı n, en küçük dönme açısı {kesir:360°|n}; eksenler 180°'yi n eşit parçaya böler."
+    },
+    {
+      "soru": "T dönüşümü, önce x eksenine göre yansıma sonra (4, 0) ötelemesi olarak tanımlanıyor. (a) P(1, 2) noktasının T altındaki görüntüsünü bulunuz. (b) Sıra değiştirilirse sonuç değişir mi? (c) T iki kez uygulanırsa hangi dönüşüm elde edilir?",
+      "cevap": "(a) 1. adım: x eksenine göre yansıma: (1, 2) → (1, −2). 2. adım: (4, 0) ötelemesi: (1, −2) → (5, −2). Genel kural: (x, y) → (x + 4, −y). (b) Önce öteleme: (1, 2) → (5, 2); sonra yansıma: (5, 2) → (5, −2). Sonuç aynıdır, çünkü öteleme yansıma eksenine (x eksenine) paraleldir. (c) T'yi (5, −2) noktasına yeniden uygularsak (9, 2) bulunur. Genel olarak (x, y) → (x + 4, −y) → (x + 8, y) olur; bu (8, 0) ötelemesidir. Yorum: T bir kayan yansımadır; yönelimi ters çevirir ve sabit noktası yoktur (x + 4 = x eşitliği hiçbir x için sağlanmaz). İki kez uygulandığında iki yansıma içerdiğinden yönelim korunur ve bir öteleme elde edilir.",
+      "ipucu": "Kuralı (x, y) → (x + 4, −y) biçiminde yazın; sabit nokta için görüntünün kendisine eşit olup olamayacağını kontrol edin."
+    },
+    {
+      "soru": "Bir köyde ev A(1, 3) ve ahır B(7, 1) noktalarındadır; x ekseni bir derenin kıyısını göstermektedir. Çoban evden çıkıp dereden su alacak, sonra ahıra gidecektir. Toplam yolun en kısa olması için dereye hangi noktada uğramalıdır? En kısa yol kaç birimdir?",
+      "cevap": "1. adım: A ve B derenin aynı tarafındadır (y değerleri pozitif). B'nin x eksenine göre yansıması B′(7, −1) olur. 2. adım: Dere [BB′]'nün kenar orta dikmesi olduğundan dere üzerindeki her Q noktası için {uzunluk:QB} = {uzunluk:QB′}; yol uzunluğu {uzunluk:AQ} + {uzunluk:QB′} olur. 3. adım: Üçgen eşitsizliğine göre bu toplam en az {uzunluk:AB′} olur; en küçük değer A, Q, B′ doğrusal olduğunda alınır. 4. adım: A(1, 3)'ten B′(7, −1)'e giderken x 6 artar, y 4 azalır. y'nin 3 azalarak 0 olması için x, 6 · {kesir:3|4} = 4,5 artmalıdır; P(5,5; 0). 5. adım: En kısa yol {uzunluk:AB′} = {kok:{us:6|2} + {us:4|2}} = {kok:52} = 2{kok:13} ≈ 7,21 birim. Kontrol: {uzunluk:AP} = {kok:{us:4,5|2} + {us:3|2}} = {kok:29,25} ≈ 5,41 ve {uzunluk:PB} = {kok:{us:1,5|2} + {us:1|2}} = {kok:3,25} ≈ 1,80; toplam ≈ 7,21.",
+      "ipucu": "Ahırın dereye göre yansımasını alın; evi bu yansıma noktasına birleştiren doğru parçası dereyi aranan noktada keser."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Q(4, −3) noktasının M(1, 2) noktasına göre yansıması aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "(−3, 5)",
+        "(−2, 7)",
+        "(2, −7)",
+        "(−2, −1)"
+      ],
+      "dogru": 1,
+      "aciklama": "M, [QQ′]'nün orta noktasıdır: x′ = 2 · 1 − 4 = −2 ve y′ = 2 · 2 − (−3) = 7. Görüntü (−2, 7) olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "y = x + 4 doğrusunun x eksenine göre yansımasının denklemi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "y = −x + 4",
+        "y = x − 4",
+        "y = −x − 4",
+        "y = x + 4"
+      ],
+      "dogru": 2,
+      "aciklama": "x eksenine göre yansımada görüntüdeki (x, y) noktasının ön görüntüsü (x, −y) dir. −y = x + 4 yazılırsa y = −x − 4 bulunur. Kontrol: (0, 4) noktasının görüntüsü (0, −4) olup bu doğruyu sağlar."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki şekillerden hangisinin hem en az bir simetri ekseni hem de 180°'lik dönme simetrisi vardır?",
+      "secenekler": [
+        "İkizkenar yamuk",
+        "Paralelkenar",
+        "Çeşitkenar üçgen",
+        "Dikdörtgen"
+      ],
+      "dogru": 3,
+      "aciklama": "İkizkenar yamuğun bir simetri ekseni vardır ama dönme simetrisi yoktur. Paralelkenarın 180° dönme simetrisi vardır ama genel durumda simetri ekseni yoktur. Çeşitkenar üçgenin hiçbir simetrisi yoktur. Dikdörtgenin iki ekseni ve 180° dönme simetrisi vardır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "A(3, 1) noktası M(1, 1) noktası etrafında pozitif yönde 90° döndürülürse görüntüsü hangi nokta olur?",
+      "secenekler": [
+        "(3, 3)",
+        "(1, −1)",
+        "(1, 3)",
+        "(−1, 1)"
+      ],
+      "dogru": 2,
+      "aciklama": "A'nın M'ye göre göreli konumu (2, 0) yani 2 birim sağdır. Pozitif yönde 90° dönmede bu (0, 2) yani 2 birim yukarı olur. M'den 2 birim yukarı gidilince (1, 3) bulunur. (1, −1) negatif yönde dönmenin, (−1, 1) ise 180° dönmenin sonucudur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir doğru herhangi bir nokta etrafında 90° döndürülürse görüntüsü kendisine dik bir doğru olur.",
+          "dogru": true,
+          "aciklama": "Dönme açıları korur ve doğrunun doğrultusunu 90° çevirir; örneğin eğimi 2 olan doğrunun görüntüsünün eğimi −{kesir:1|2} olur ve eğimlerin çarpımı −1'dir."
+        },
+        {
+          "metin": "Genel bir paralelkenarın iki simetri ekseni vardır.",
+          "dogru": false,
+          "aciklama": "Genel bir paralelkenarın simetri ekseni yoktur; yalnızca köşegenlerin kesişim noktası etrafında 180° dönme simetrisi vardır. İki ekseni olan dörtgenler dikdörtgen ve eşkenar dörtgendir."
+        },
+        {
+          "metin": "Kayan yansıma, yansıma ekseni üzerindeki noktaları yerinde bırakır.",
+          "dogru": false,
+          "aciklama": "Kayan yansımada eksen üzerindeki noktalar da eksen boyunca kaydırılır; bu dönüşümün hiç sabit noktası yoktur."
+        },
+        {
+          "metin": "Düzgün altıgenin en küçük dönme simetrisi açısı 60°'dir.",
+          "dogru": true,
+          "aciklama": "Düzgün n-gende en küçük dönme açısı {kesir:360°|n} olduğundan altıgen için 360° ÷ 6 = 60° bulunur."
+        },
+        {
+          "metin": "Düzgün beşgenler kullanılarak düzlem boşluksuz ve üst üste binmeden kaplanabilir.",
+          "dogru": false,
+          "aciklama": "Düzgün beşgenin iç açısı 108°'dir; 360 ÷ 108 tam sayı olmadığından bir köşede beşgenler 360°'yi tamamlayamaz."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları uygun açıklamalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Kayan yansıma",
+          "Bir yansıma ile eksenine paralel bir ötelemenin bileşkesi olan, sabit noktası bulunmayan dönüşüm"
+        ],
+        [
+          "Noktaya göre yansıma",
+          "O nokta etrafında 180° dönmeye eşit olan ve yönelimi koruyan dönüşüm"
+        ],
+        [
+          "Simetri ekseni",
+          "Yansıma altında şekli kendisine eşleyen doğru"
+        ],
+        [
+          "Dönme simetrisi",
+          "Şeklin bir nokta etrafında 360°'den küçük bir açıyla döndürüldüğünde kendisiyle çakışması"
+        ],
+        [
+          "Ters dönüşüm",
+          "Bir dönüşümün etkisini geri alarak her noktayı ilk konumuna götüren dönüşüm"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Düzgün n-genin ___ tane simetri ekseni vardır.",
+          "cevap": "n"
+        },
+        {
+          "metin": "M noktasına göre yansımada M, [AA′] doğru parçasının ___ noktasıdır.",
+          "cevap": "orta"
+        },
+        {
+          "metin": "Bir yansıma ile yansıma eksenine paralel bir ötelemenin bileşkesine ___ yansıma denir.",
+          "cevap": "kayan"
+        },
+        {
+          "metin": "Düzlemi tek başına boşluksuz kaplayan düzgün çokgenler eşkenar üçgen, kare ve düzgün ___ dır.",
+          "cevap": "altıgen"
+        },
+        {
+          "metin": "Öteleme ve ___ dönme bir doğruyu kendisine paralel ya da çakışık bir doğruya götürür.",
+          "cevap": "180°"
+        }
+      ],
+      "kelimeler": [
+        "n",
+        "orta",
+        "kayan",
+        "altıgen",
+        "180°"
+      ],
+      "fazla": [
+        "beşgen",
+        "90°"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Köşeleri A(0, 0), B(4, 0), C(4, 4) ve D(0, 4) olan ABCD karesi veriliyor. (1) Karenin merkezini ve dört simetri ekseninin denklemlerini bulunuz. (2) Merkez etrafında pozitif yönde 90° dönmenin kuralını yazıp her köşenin görüntüsünü bularak karenin kendisine eşlendiğini gösteriniz. (3) Önce y = x doğrusuna, sonra x = 2 doğrusuna göre art arda yansımanın (2)'deki dönmeyle aynı kuralı verdiğini gösteriniz ve sonucu eksenler arasındaki açıyla açıklayınız.",
+      "ipuclari": [
+        "1. adım: Merkez köşegenlerin orta noktasıdır; [AC]'nin orta noktasını bulun. Eksenler: kenarların orta noktalarından geçen bir düşey ve bir yatay doğru ile iki köşegen.",
+        "2. adım: M(a, b) etrafında pozitif yönde 90° dönme kuralı (x, y) → (a − (y − b), b + (x − a)) dir; a = b = 2 yazıp sadeleştirin ve dört köşeye uygulayın.",
+        "3. adım: y = x doğrusuna göre yansıma (x, y) → (y, x), x = 2 doğrusuna göre yansıma (x, y) → (4 − x, y) dir; ikisini sırayla uygulayın, x = 2 ile y = x arasındaki açıyı düşünün."
+      ],
+      "cevap": "(1) Merkez, [AC]'nin orta noktası M(2, 2)'dir. Simetri eksenleri: x = 2 (düşey), y = 2 (yatay), y = x (AC köşegeni) ve y = −x + 4 (BD köşegeni; B(4, 0) ve D(0, 4) bu doğruyu sağlar). Kare olduğu için 4 eksen vardır. (2) a = b = 2 için kural (x, y) → (2 − (y − 2), 2 + (x − 2)) = (4 − y, x) olur. A(0, 0) → (4, 0) = B, B(4, 0) → (4, 4) = C, C(4, 4) → (0, 4) = D, D(0, 4) → (0, 0) = A. Her köşe başka bir köşeye gittiğinden kare kendisine eşlenir; karenin 90°'lik dönme simetrisi vardır. (3) Önce y = x: (x, y) → (y, x). Sonra x = 2: (y, x) → (4 − y, x). Bileşke kural (x, y) → (4 − y, x) olup (2)'deki dönme kuralıyla aynıdır. Açıklama: x = 2 ve y = x eksenleri M(2, 2)'de 45°'lik açıyla kesişir; kesişen iki eksene göre art arda yansıma, kesişim noktası etrafında açının iki katı, yani 2 · 45° = 90° dönmeye eşittir. Ayrıca iki yansıma yönelimi iki kez ters çevirdiği için yönelim korunmuştur; bu da sonucun bir dönme olmasıyla tutarlıdır. Bu sonuç, karenin iki simetri ekseni olduğu için dönme simetrisinin de bulunması gerektiği önermesini doğrular."
+    }
+  ]
+}
