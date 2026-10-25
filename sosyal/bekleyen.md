@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 1005 gönderi.
+Toplam 1006 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -10057,4 +10057,14 @@ Bunu biliyor muydunuz? Müşahede: Bir şahsiyeti müşahede etmek; merak ettikl
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 9. sınıf Temel Dinî Bilgiler 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-temel-dini-bilgiler-hafta-15
 #derskutusu #temeldinibilgiler #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-ingilizce-15
+Sıra: 2027-02-16 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-ingilizce-15.png
+
+```
+Bunu biliyor muydunuz? Third Conditional: Geçmişte gerçekleşmemiş bir koşul ve onun hayalî sonucu 'If + had (not) V3, would/could/might (not) have V3' ile anlatılır; gerçek durumun olumlu-olumsuz anlamı tersine çevrilir. Mixed Conditional: Geçmişteki bir olayın bugüne etkisi 'If + had V3, would + V1 (now)' yapısıyla kurulur: 'If I had learned to swim, I wouldn't be afraid of water now.'
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf İngilizce 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-ingilizce-hafta-15
+#derskutusu #ingilizce #11sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
