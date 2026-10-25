@@ -1,0 +1,550 @@
+{
+  "ad": "10-felsefe-16",
+  "sinif": 10,
+  "ders": "felsefe",
+  "ders_adi": "Felsefe",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "4. Ünite: Bilgi Felsefesi",
+  "konu": "Bilgi Felsefesinin Temel Problemlerine Yönelik Argümanların Değerlendirilmesi: Antik Şüphecilik ve Agrippa Üçlemi, Şüpheciliğe Verilen Yanıtlar, Gerekçelendirmenin Yapısı, Bilginin Kaynağına ve Doğruluk Ölçütlerine İlişkin Argümanların Sınanması",
+  "ciktilar": [
+    "FEL.10.4.1. Bilgi felsefesinin konusunu, kavramlarını ve problemlerini muhakeme edebilme",
+    "FEL.10.4.1.c) Bilgi felsefesinin temel problemlerine yönelik düşünce ve argümanları değerlendirir.",
+    "Bilginin imkânı, kaynağı ve doğruluk ölçütleri tartışmalarındaki argümanları öncül-sonuç yapısına ayırarak geçerlilik ve sağlamlık bakımından sınar.",
+    "Şüpheci argümanlara ve bunlara verilen yanıtlara ilişkin gerekçeli bir değerlendirme yapar; kendi görüşünü karşı örnekler ve itirazlar karşısında savunur."
+  ],
+  "giris": "Son üç haftada bilgi felsefesinin büyük sorularını ve bu sorulara filozofların verdiği yanıtları tanıdık. Bu hafta bir adım daha atıyoruz: Görüşleri yalnızca öğrenmekle yetinmeyip {koyu:argümanları tartmayı} öğreneceğiz. Bir argümanın öncüllerini nasıl ayıracağımızı, ne zaman {koyu:geçerli} ve {koyu:sağlam} sayıldığını göreceğiz. Ardından antik şüphecilerin en güçlü argümanlarını, bunlara verilen yanıtları ve {koyu:gerekçelendirme zincirinin nerede bittiği} sorusunu ele alacağız. Haftayı bir felsefi ilkeyi adım adım sınadığımız bir {koyu:değerlendirme atölyesiyle} tamamlayacağız.",
+  "ozet": [
+    "{koyu:Argüman değerlendirme:} Bir felsefi argüman öncüller ve sonuçtan oluşur; öncüller doğruyken sonucun yanlış olamadığı argüman {koyu:geçerli}, hem geçerli hem de öncülleri doğru olan argüman {koyu:sağlam} sayılır.",
+    "{koyu:Antik şüphecilik:} Protagoras bilgiyi bireye göre görecelileştirmiş, Gorgias bilginin imkânını üç basamakta reddetmiş, Pyrrhon ise eşit güçteki karşıt görüşler karşısında yargıyı askıya almayı ({koyu:epokhe}) önermiştir.",
+    "{koyu:Agrippa üçlemi:} Her gerekçe yeni bir gerekçe istediğinde ya {koyu:sonsuza gideriz}, ya {koyu:döngüye gireriz}, ya da bir noktada {koyu:keyfî biçimde dururuz}; bu sorun bütün gerekçelendirme kuramlarının yanıtlaması gereken bir meydan okumadır.",
+    "{koyu:Şüpheciliğe yanıtlar:} Kendini çürütme itirazı, Augustinus'un “Yanılıyorsam varım.” ilkesi, Moore'un sağduyu savunusu ve Putnam'ın fıçıdaki beyin tartışması şüpheciliğe farklı yönlerden karşılık verir; çağdaş felsefede bunlardan {koyu:yanılabilircilik} tutumu doğmuştur.",
+    "{koyu:Gerekçelendirmenin yapısı:} Temelcilik bilgiyi kendiliğinden gerekçeli temel inançlar üzerine kurulu bir bina gibi, tutarlılıkçılık ise inançların birbirini desteklediği bir ağ gibi görür; Haack bu iki görüşü çapraz bulmaca benzetmesiyle birleştirmiştir.",
+    "{koyu:Kaynak ve ölçüt argümanları:} Doğuştan bilgi, tanıklık (haber-i sâdık) ve sezgi tartışmaları ile doğrulanabilirlik ilkesinin kendine uygulandığında zorlanması, bir görüşü değerlendirirken {koyu:öncülleri sınamanın, karşı örnek aramanın ve kendine uygulama testinin} önemini gösterir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Felsefi Argümanı Değerlendirmenin Araçları",
+      "metin": [
+        "Felsefe yalnızca “Kim ne demiş?” sorusunun cevabını ezberlemek değildir. Asıl felsefi iş, bir görüşün {koyu:hangi gerekçelere dayandığını} ve bu gerekçelerin sonucu gerçekten destekleyip desteklemediğini sınamaktır. Bunu yapmanın ilk aracı {koyu:argüman} kavramıdır. Argüman, bir yargıyı (sonuç) başka yargılarla (öncüller) temellendirme girişimidir. Bir argümanı değerlendirirken iki ayrı soru sorarız: {koyu:Birincisi}, öncüller doğru mu? {koyu:İkincisi}, sonuç öncüllerden gerçekten çıkıyor mu? Öncüller doğru olduğu hâlde sonucun yanlış olması imkânsızsa argüman {koyu:geçerlidir}. Geçerli olan ve öncülleri gerçekten doğru olan argümana ise {koyu:sağlam argüman} denir. Bir felsefecinin bizi ikna etmesi için argümanının sağlam olması gerekir.",
+        "Bilgi felsefesinden bir örnek alalım: {koyu:“Bütün bilgiler duyulardan gelir. Duyulardan gelen her şey yanılabilir. O hâlde bütün bilgiler yanılabilir.”} Bu argüman geçerlidir; öncüller doğru kabul edilirse sonuç kaçınılmazdır. Ama sağlam mıdır? Bir rasyonalist hemen ilk öncüle itiraz eder: “7 + 5 = 12” ya da “Bir şey aynı anda hem var hem yok olamaz.” gibi bilgiler duyulardan gelmiyor gibidir. Bu itiraz, genel bir öncülü yanlışlayan tek bir örnek, yani bir {koyu:karşı örnek} sunar. Felsefi değerlendirmede iki temel strateji vardır: Ya {koyu:öncüllerden birinin yanlış olduğunu} gösteririz ya da sonucun öncüllerden {koyu:çıkmadığını} (argümanın geçersiz olduğunu) gösteririz. Sonucu sevmememiz, tek başına argümanı çürütmez.",
+        "Bilgi tartışmalarında sık karşılaşılan bazı akıl yürütme hataları da vardır. {koyu:Kendini çürütme}, bir iddianın kendisine uygulandığında kendi kendini yalanlamasıdır: “Hiçbir şey bilinemez.” diyen kişi, en azından bunu bildiğini ima eder. {koyu:Döngüsel akıl yürütme}, kanıtlanacak olanı öncüllerde gizlice kabul etmektir: Duyuların güvenilir olduğunu yine duyularla kanıtlamaya çalışmak gibi. {koyu:Otoriteye başvurma} ve {koyu:acele genelleme} de iddiaları temellendirmiş gibi görünüp temellendirmeyen hatalardır. Son olarak iyi bir değerlendirici {koyu:hakkaniyet ilkesine} uyar: Karşı görüşü çarpıtmadan, onun en güçlü biçimini ele alır; zayıf bir taslağı devirip zafer ilan etmez."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kavram",
+          "Açıklama",
+          "Bilgi Felsefesinden Örnek"
+        ],
+        "satirlar": [
+          [
+            "Öncül",
+            "Sonucu desteklemek için ileri sürülen yargı",
+            "“Duyular bazen yanıltır.”"
+          ],
+          [
+            "Sonuç",
+            "Öncüllere dayanılarak varılan yargı",
+            "“O hâlde duyulara tam olarak güvenilemez.”"
+          ],
+          [
+            "Geçerlilik",
+            "Öncüller doğruysa sonucun yanlış olamaması",
+            "Bütün A'lar B'dir; x bir A'dır; o hâlde x B'dir."
+          ],
+          [
+            "Sağlamlık",
+            "Geçerli olup öncüllerinin de doğru olması",
+            "Geçerliliğinin yanında öncüllerinin de doğru olduğu gösterilmiş argüman"
+          ],
+          [
+            "Karşı örnek",
+            "Genel bir öncülü yanlışlayan tek örnek",
+            "“Bütün bilgi deneyden gelir.” iddiasına karşı “7 + 5 = 12”"
+          ],
+          [
+            "Kendini çürütme",
+            "İddianın kendine uygulandığında kendini yalanlaması",
+            "“Hiçbir şeyi bilemeyiz; bunu kesinlikle biliyorum.”"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Geçerli Ama Sağlam Olmayan Argüman",
+          "metin": "{koyu:“Bütün kuşlar uçar. Penguen bir kuştur. O hâlde penguen uçar.”} Bu argüman {koyu:geçerlidir}; çünkü öncüller doğru olsaydı sonuç da doğru olurdu. Ancak birinci öncül yanlış olduğu için argüman {koyu:sağlam değildir}. Geçerlilik biçimle, sağlamlık ise hem biçimle hem içerikle ilgilidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Hakkaniyet İlkesi",
+          "metin": "Bir filozofu eleştirmeden önce onun görüşünü {koyu:o filozofun kabul edeceği biçimde} özetlemeye çalış. Septik birine “Sen zaten hiçbir şeye inanmıyorsun.” demek yerine onun hangi gerekçeyle yargıyı askıya aldığını göster. Güçlü biçimi çürütülen görüş gerçekten çürütülmüş olur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 800 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='330' rx='16' fill='#f8fafc'/><text x='400' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Bir Argümanı Değerlendirmenin İki Sorusu</text><rect x='30' y='50' width='230' height='50' rx='10' fill='#eff6ff' stroke='#1d4ed8' stroke-width='2'/><text x='145' y='72' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>Öncül 1</text><text x='145' y='90' text-anchor='middle' font-size='11' fill='#1e293b'>Bütün bilgiler duyulardan gelir.</text><rect x='30' y='110' width='230' height='50' rx='10' fill='#eff6ff' stroke='#1d4ed8' stroke-width='2'/><text x='145' y='132' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>Öncül 2</text><text x='145' y='150' text-anchor='middle' font-size='11' fill='#1e293b'>Duyulardan gelen her şey yanılabilir.</text><line x1='262' y1='105' x2='318' y2='105' stroke='#475569' stroke-width='3'/><polygon points='330,105 316,98 316,112' fill='#475569'/><rect x='332' y='78' width='200' height='54' rx='10' fill='#1d4ed8'/><text x='432' y='101' text-anchor='middle' font-size='12' font-weight='bold' fill='#ffffff'>Sonuç</text><text x='432' y='119' text-anchor='middle' font-size='11' fill='#ffffff'>Bütün bilgiler yanılabilir.</text><rect x='560' y='50' width='210' height='50' rx='10' fill='#fef3c7' stroke='#b45309' stroke-width='2'/><text x='665' y='71' text-anchor='middle' font-size='12' font-weight='bold' fill='#78350f'>Soru 1: Öncüller doğru mu?</text><text x='665' y='89' text-anchor='middle' font-size='11' fill='#1e293b'>Karşı örnek: 7 + 5 = 12</text><rect x='560' y='110' width='210' height='50' rx='10' fill='#ecfdf5' stroke='#047857' stroke-width='2'/><text x='665' y='131' text-anchor='middle' font-size='12' font-weight='bold' fill='#065f46'>Soru 2: Sonuç çıkıyor mu?</text><text x='665' y='149' text-anchor='middle' font-size='11' fill='#1e293b'>Evet, biçim geçerlidir.</text><text x='400' y='190' text-anchor='middle' font-size='13' font-weight='bold' fill='#334155'>Geçerlilik ve Doğruluk Birlikte: Dört Durum</text><rect x='30' y='202' width='180' height='70' rx='10' fill='#047857'/><text x='120' y='228' text-anchor='middle' font-size='12' font-weight='bold' fill='#ffffff'>Geçerli + doğru öncül</text><text x='120' y='250' text-anchor='middle' font-size='13' fill='#ffffff'>SAĞLAM</text><rect x='220' y='202' width='180' height='70' rx='10' fill='#fef3c7' stroke='#b45309' stroke-width='2'/><text x='310' y='228' text-anchor='middle' font-size='12' font-weight='bold' fill='#78350f'>Geçerli + yanlış öncül</text><text x='310' y='250' text-anchor='middle' font-size='12' fill='#1e293b'>sağlam değil</text><rect x='410' y='202' width='180' height='70' rx='10' fill='#fef2f2' stroke='#b91c1c' stroke-width='2'/><text x='500' y='228' text-anchor='middle' font-size='12' font-weight='bold' fill='#7f1d1d'>Geçersiz + doğru öncül</text><text x='500' y='250' text-anchor='middle' font-size='12' fill='#1e293b'>sonuç desteklenmez</text><rect x='600' y='202' width='170' height='70' rx='10' fill='#fef2f2' stroke='#b91c1c' stroke-width='2'/><text x='685' y='228' text-anchor='middle' font-size='12' font-weight='bold' fill='#7f1d1d'>Geçersiz + yanlış</text><text x='685' y='250' text-anchor='middle' font-size='12' fill='#1e293b'>iki kez kusurlu</text><rect x='30' y='284' width='740' height='34' rx='8' fill='#e2e8f0'/><text x='400' y='306' text-anchor='middle' font-size='12' font-weight='bold' fill='#0f172a'>Değerlendirme: öncüle itiraz et ya da sonucun öncüllerden çıkmadığını göster.</text></svg>"
+    },
+    {
+      "baslik": "Antik Şüpheciliğin Argümanları: Sofistlerden Agrippa'ya",
+      "metin": [
+        "Doğru bilginin imkânına yöneltilen ilk sistemli itirazlar Antik Yunan'da, MÖ 5. yüzyılda {koyu:sofistlerle} başlar. {koyu:Protagoras}'ın {koyu:“İnsan her şeyin ölçüsüdür.”} sözü, bilginin kişiden kişiye değiştiği anlamına gelir. Platon'un Theaitetos diyaloğunda tartışılan örnekte aynı rüzgâr birine soğuk, başka birine ılık gelir; Protagoras'a göre ikisi de kendi açısından haklıdır. Bu görüş bir tür {koyu:göreceliktir}: Herkes için geçerli, nesnel bir doğru yoktur. {koyu:Gorgias} ise daha da ileri gider ve üç basamaklı bir argüman kurar: {koyu:Hiçbir şey yoktur; olsa bile bilinemez; bilinse bile başkasına aktarılamaz.} Bu argüman, varlık, bilgi ve dil arasındaki bağı aynı anda sorgular.",
+        "Septisizmi bir yaşam tutumuna dönüştüren düşünür {koyu:Pyrrhon}'dur. Görüşlerini sonraki yüzyıllarda ayrıntılı biçimde aktaran Sextus Empiricus'a göre Pyrrhoncu şüpheci şu yolu izler: Herhangi bir konuda ileri sürülen her görüşe karşı, ona {koyu:eşit güçte} bir karşıt görüş bulunabilir. Bal birine tatlı, hasta birine acı gelir; bir kültürde güzel sayılan başka bir kültürde çirkin sayılır. Böyle bir denge karşısında akıllı kişi hüküm vermekten kaçınır; buna {koyu:epokhe (yargıyı askıya alma)} denir. Epokhenin sonucunda ise kişi kaygıdan kurtulur ve {koyu:ataraxia (ruh dinginliği)} hâline ulaşır. Dikkat edilirse Pyrrhoncu “Hiçbir şey bilinemez.” diye kesin bir hüküm de vermez; yalnızca kendisine görüneni bildirir.",
+        "Antik şüpheciliğin belki de en güçlü argümanı, Sextus Empiricus'un {koyu:Agrippa}'ya dayandırdığı beş tropun bir araya getirilmesinden doğar. Bir iddia ileri sürdüğümüzde şüpheci “Neden?” diye sorar. Gerekçe verdiğimizde aynı soruyu o gerekçe için tekrarlar. Bu durumda yalnızca üç yolumuz vardır: Ya gerekçeler {koyu:sonsuza kadar geriye gider} ve hiçbir yerde temele ulaşmayız; ya bir noktada daha önce kullandığımız bir yargıya döneriz ve {koyu:döngüye gireriz}; ya da bir yerde gerekçe göstermeden {koyu:keyfî biçimde dururuz}. Şüpheciye göre üç yol da gerçek bir temellendirme sağlamaz. Bu sorun bugün {koyu:Agrippa üçlemi} (bazen Münchhausen üçlemi) olarak anılır ve gerekçelendirme konusunda görüş bildiren her filozofun yanıt vermesi gereken bir meydan okuma olarak kabul edilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Düşünür",
+          "Temel İddia",
+          "Güçlü Yönü",
+          "Zayıf Yönü"
+        ],
+        "satirlar": [
+          [
+            "Protagoras",
+            "İnsan her şeyin ölçüsüdür; doğru kişiye göredir.",
+            "Algının kişiden kişiye değiştiğini fark ettirir.",
+            "“Her şey görecelidir.” iddiası da göreceli olmalıdır; kendini zayıflatır."
+          ],
+          [
+            "Gorgias",
+            "Hiçbir şey yoktur; bilinemez; aktarılamaz.",
+            "Varlık, bilgi ve dil ilişkisini sorgulatır.",
+            "İddiasını başkalarına dille aktararak üçüncü tezini fiilen çiğner."
+          ],
+          [
+            "Pyrrhon",
+            "Eşit güçte karşıt görüşler vardır; yargı askıya alınmalıdır.",
+            "Dogmatik aceleciliğe karşı uyarır.",
+            "Günlük yaşamda karar vermeyi güçleştirir."
+          ],
+          [
+            "Agrippa",
+            "Her gerekçe sonsuz gerileme, döngü ya da keyfî duruşla sonuçlanır.",
+            "Gerekçelendirmenin yapısal sorununu açıkça ortaya koyar.",
+            "Kendiliğinden gerekçeli inançların varlığını baştan reddettiği tartışılabilir."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Agrippa'nın Beş Tropu",
+          "metin": "Sextus Empiricus'un aktardığı beş trop şunlardır: {koyu:1) Anlaşmazlık:} Her konuda insanlar farklı düşünür. {koyu:2) Sonsuz geriye gidiş:} Her gerekçe yeni gerekçe ister. {koyu:3) Görelilik:} Her şey algılayana ve koşullara göre görünür. {koyu:4) Varsayım:} Gerekçesiz kabul edilen başlangıç noktası keyfîdir. {koyu:5) Döngüsellik:} Kanıtlanacak olan kanıtta kullanılır."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Görecelik ile Şüphecilik Aynı Şey Değildir",
+          "metin": "Protagoras'a göre her algı {koyu:algılayan için doğrudur}; yani doğru çoktur. Pyrrhon ise hangi görüşün doğru olduğuna {koyu:karar vermez}; yargıyı askıya alır. Görecelik “herkes haklı” der, Pyrrhoncu şüphecilik “bilemiyorum, hüküm vermiyorum” der."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 800 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='330' rx='16' fill='#f8fafc'/><text x='400' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Agrippa Üçlemi: Gerekçe Zinciri Nerede Biter?</text><rect x='300' y='48' width='200' height='40' rx='10' fill='#1e293b'/><text x='400' y='73' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>İddia: A doğrudur.</text><text x='520' y='73' font-size='12' fill='#b91c1c' font-weight='bold'>Neden?</text><rect x='300' y='104' width='200' height='36' rx='10' fill='#e2e8f0'/><text x='400' y='127' text-anchor='middle' font-size='12' fill='#0f172a'>Çünkü B doğrudur.</text><text x='520' y='127' font-size='12' fill='#b91c1c' font-weight='bold'>Peki B neden?</text><line x1='400' y1='88' x2='400' y2='102' stroke='#475569' stroke-width='2'/><line x1='400' y1='140' x2='400' y2='160' stroke='#475569' stroke-width='2'/><line x1='135' y1='160' x2='665' y2='160' stroke='#475569' stroke-width='2'/><line x1='135' y1='160' x2='135' y2='178' stroke='#475569' stroke-width='2'/><line x1='400' y1='160' x2='400' y2='178' stroke='#475569' stroke-width='2'/><line x1='665' y1='160' x2='665' y2='178' stroke='#475569' stroke-width='2'/><rect x='30' y='180' width='210' height='100' rx='12' fill='#fef2f2' stroke='#b91c1c' stroke-width='2'/><text x='135' y='205' text-anchor='middle' font-size='13' font-weight='bold' fill='#7f1d1d'>1. Sonsuz Geriye Gidiş</text><text x='135' y='228' text-anchor='middle' font-size='12' fill='#1e293b'>A ← B ← C ← D ← ...</text><text x='135' y='250' text-anchor='middle' font-size='11' fill='#475569'>Zincir hiç bitmez;</text><text x='135' y='267' text-anchor='middle' font-size='11' fill='#475569'>temele ulaşılmaz.</text><rect x='295' y='180' width='210' height='100' rx='12' fill='#fef3c7' stroke='#b45309' stroke-width='2'/><text x='400' y='205' text-anchor='middle' font-size='13' font-weight='bold' fill='#78350f'>2. Döngüsellik</text><text x='400' y='228' text-anchor='middle' font-size='12' fill='#1e293b'>A ← B ← C ← A</text><text x='400' y='250' text-anchor='middle' font-size='11' fill='#475569'>Kanıtlanacak olan</text><text x='400' y='267' text-anchor='middle' font-size='11' fill='#475569'>kanıtta kullanılır.</text><rect x='560' y='180' width='210' height='100' rx='12' fill='#eff6ff' stroke='#1d4ed8' stroke-width='2'/><text x='665' y='205' text-anchor='middle' font-size='13' font-weight='bold' fill='#1e3a8a'>3. Keyfî Duruş</text><text x='665' y='228' text-anchor='middle' font-size='12' fill='#1e293b'>A ← B ← C (dur!)</text><text x='665' y='250' text-anchor='middle' font-size='11' fill='#475569'>Son halka gerekçesiz</text><text x='665' y='267' text-anchor='middle' font-size='11' fill='#475569'>kabul edilir.</text><rect x='30' y='290' width='740' height='30' rx='8' fill='#e2e8f0'/><text x='400' y='310' text-anchor='middle' font-size='12' font-weight='bold' fill='#0f172a'>Şüpheci sonuç: Üç yol da gerçek temellendirme sağlamaz; öyleyse yargı askıya alınmalıdır.</text></svg>"
+    },
+    {
+      "baslik": "Şüpheciliğe Verilen Yanıtları Tartmak",
+      "metin": [
+        "Şüpheciliğe yöneltilen en eski itiraz {koyu:kendini çürütme} itirazıdır. Aristoteles, Metafizik adlı eserinde çelişmezlik ilkesini reddetmek isteyen birinin, anlamlı tek bir cümle kurduğu anda bu ilkeyi kullanmak zorunda kaldığını belirtir. Benzer biçimde “Hiçbir şey bilinemez.” diyen biri bu cümlenin doğru olduğunu bildiğini ima eder ve kendi sözüyle çelişir. Bu itiraz, {koyu:kesin bir hüküm veren dogmatik şüpheciye} karşı güçlüdür. Ancak Pyrrhoncu şüpheci “Hiçbir şey bilinemez.” diye hüküm vermez; yalnızca yargıyı askıya alır. Bu nedenle değerlendirme yaparken itirazın hangi tür şüpheciliğe yöneldiğine dikkat etmek gerekir: Aynı itiraz birine karşı yıkıcı, ötekine karşı etkisiz olabilir.",
+        "İkinci yanıt, şüphenin içinden kesin bir nokta bulmaktır. Descartes'tan yaklaşık on iki yüzyıl önce {koyu:Augustinus}, Tanrı Devleti adlı eserinde şüphecilere {koyu:“Yanılıyorsam varım.”} diye karşılık verir: Var olmayan biri yanılamaz; öyleyse yanıldığım anda bile var olduğumu bilirim. Üçüncü yanıt 20. yüzyılda {koyu:G. E. Moore}'dan gelir. Moore, 1939'da sunduğu Dış Dünyanın Kanıtı adlı çalışmasında ellerini kaldırıp {koyu:“İşte bir el, işte bir el daha.”} der ve buradan dış dünyanın var olduğu sonucuna varır. Moore'un stratejisi şudur: Ellerimin var olduğuna, şüphecinin “Rüya görüyor olabilirsin.” öncülüne güvendiğimden {koyu:çok daha fazla} güvenirim; öyleyse şüpheci argümanı tersine çevirip onun öncülünü reddetmek daha akılcıdır. Eleştirmenler ise Moore'un şüphecinin tam da sorguladığı şeyi kanıtsız kabul ettiğini, yani {koyu:soruyu dilendiğini} söyler.",
+        "Descartes'ın kötü cin varsayımının çağdaş biçimi {koyu:fıçıdaki beyin} senaryosudur: Bir bilim insanının beynimizi bir fıçıya koyup bilgisayardan gelen sinyallerle bize gerçek bir dünya yaşattığını düşünelim; bunu nasıl ayırt edebiliriz? {koyu:Hilary Putnam} 1981'de yayımlanan Akıl, Doğruluk ve Tarih adlı eserinde bu senaryonun kendini çürüttüğünü savunur: Fıçıdaki bir beyin hiçbir zaman gerçek fıçılarla temas etmediği için onun dilindeki “fıçı” kelimesi gerçek fıçıları göstermez; bu yüzden “Ben fıçıdaki bir beynim.” cümlesi o beyin tarafından söylendiğinde doğru olamaz. Bu yanıtların hiçbiri şüpheciliği tamamen ortadan kaldırmasa da çağdaş felsefede ortak bir sonuç doğmuştur: {koyu:Yanılabilircilik (fallibilizm)}. Buna göre bilmek için yüzde yüz kesinlik gerekmez; iyi gerekçeli inançlar, ilke olarak yanılma ihtimali taşısalar bile bilgi sayılabilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yanıt",
+          "Temsilci",
+          "Ana Fikir",
+          "Tartışmalı Yönü"
+        ],
+        "satirlar": [
+          [
+            "Kendini çürütme itirazı",
+            "Aristoteles",
+            "“Hiçbir şey bilinemez.” iddiası kendini yalanlar.",
+            "Hüküm vermeyen Pyrrhoncu şüpheciye karşı etkisi sınırlıdır."
+          ],
+          [
+            "Şüphenin içinden kesinlik",
+            "Augustinus",
+            "Yanılıyorsam varım; yanılmak için var olmak gerekir.",
+            "Yalnızca benliğin varlığını kurtarır, dış dünyayı değil."
+          ],
+          [
+            "Sağduyu savunusu",
+            "G. E. Moore",
+            "Ellerimin varlığına şüpheci öncülden daha çok güvenirim.",
+            "Şüphecinin sorguladığını kanıtsız kabul ettiği söylenir."
+          ],
+          [
+            "Senaryonun kendini çürütmesi",
+            "Hilary Putnam",
+            "Fıçıdaki beynin sözcükleri gerçek fıçıları gösteremez.",
+            "Dil ile gerçeklik arasındaki bağa ilişkin tartışmalı bir kurama dayanır."
+          ],
+          [
+            "Yanılabilircilik",
+            "Çağdaş epistemoloji",
+            "Bilgi, yanılma ihtimalini sıfırlamayı gerektirmez.",
+            "Septik, kesinlik olmadan neden bilgi dendiğini sorar."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "Yanılabilircilik Teslimiyet Değildir",
+          "metin": "Yanılabilirci biri {koyu:“Belki yanılıyorum ama elimdeki kanıtlar bu sonucu güçlü biçimde destekliyor.”} der. Bu tutum hem dogmatizmin “asla yanılmam” iddiasından hem de septisizmin “hiç hüküm vermem” tutumundan farklıdır. Bilimsel bilgi tam da böyle işler: Sağlam ama düzeltilmeye açık."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Moore Stratejisini Tanıma",
+          "metin": "Bir metinde yazar, şüpheci argümanın sonucunu kabul etmek yerine {koyu:“Bu sonuç o kadar inanılmaz ki öncüllerden biri yanlış olmalı.”} diyorsa Moore'un sağduyu stratejisi kullanılıyordur. Geçerli bir argümanda sonucu reddeden, en az bir öncülü de reddetmek zorundadır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 800 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='330' rx='16' fill='#f8fafc'/><text x='400' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Şüpheci Argümana Dört Yanıt</text><rect x='250' y='48' width='300' height='72' rx='12' fill='#7f1d1d'/><text x='400' y='70' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>Şüpheci Argüman</text><text x='400' y='90' text-anchor='middle' font-size='11' fill='#fee2e2'>Rüyada / fıçıda olmadığımı bilemem.</text><text x='400' y='108' text-anchor='middle' font-size='11' fill='#fee2e2'>O hâlde dış dünyayı bilemem.</text><line x1='400' y1='120' x2='400' y2='140' stroke='#475569' stroke-width='2'/><line x1='110' y1='140' x2='690' y2='140' stroke='#475569' stroke-width='2'/><line x1='110' y1='140' x2='110' y2='156' stroke='#475569' stroke-width='2'/><line x1='303' y1='140' x2='303' y2='156' stroke='#475569' stroke-width='2'/><line x1='497' y1='140' x2='497' y2='156' stroke='#475569' stroke-width='2'/><line x1='690' y1='140' x2='690' y2='156' stroke='#475569' stroke-width='2'/><rect x='20' y='158' width='180' height='112' rx='12' fill='#eff6ff' stroke='#1d4ed8' stroke-width='2'/><text x='110' y='182' text-anchor='middle' font-size='13' font-weight='bold' fill='#1e3a8a'>Aristoteles</text><text x='110' y='204' text-anchor='middle' font-size='11' fill='#1e293b'>Kendini çürütme:</text><text x='110' y='222' text-anchor='middle' font-size='11' fill='#1e293b'>“Hiçbir şey bilinemez”</text><text x='110' y='240' text-anchor='middle' font-size='11' fill='#1e293b'>de bir bilgi iddiasıdır.</text><rect x='213' y='158' width='180' height='112' rx='12' fill='#ecfdf5' stroke='#047857' stroke-width='2'/><text x='303' y='182' text-anchor='middle' font-size='13' font-weight='bold' fill='#065f46'>Augustinus</text><text x='303' y='204' text-anchor='middle' font-size='11' fill='#1e293b'>Yanılıyorsam varım.</text><text x='303' y='222' text-anchor='middle' font-size='11' fill='#1e293b'>Şüphenin içinde</text><text x='303' y='240' text-anchor='middle' font-size='11' fill='#1e293b'>kesin bir nokta</text><rect x='407' y='158' width='180' height='112' rx='12' fill='#fef3c7' stroke='#b45309' stroke-width='2'/><text x='497' y='182' text-anchor='middle' font-size='13' font-weight='bold' fill='#78350f'>G. E. Moore</text><text x='497' y='204' text-anchor='middle' font-size='11' fill='#1e293b'>İşte bir el!</text><text x='497' y='222' text-anchor='middle' font-size='11' fill='#1e293b'>Sağduyu, şüpheci</text><text x='497' y='240' text-anchor='middle' font-size='11' fill='#1e293b'>öncülden daha güçlü</text><rect x='600' y='158' width='180' height='112' rx='12' fill='#f5f3ff' stroke='#6d28d9' stroke-width='2'/><text x='690' y='182' text-anchor='middle' font-size='13' font-weight='bold' fill='#4c1d95'>H. Putnam</text><text x='690' y='204' text-anchor='middle' font-size='11' fill='#1e293b'>Fıçıdaki beyin</text><text x='690' y='222' text-anchor='middle' font-size='11' fill='#1e293b'>senaryosu dil yüzünden</text><text x='690' y='240' text-anchor='middle' font-size='11' fill='#1e293b'>kendini çürütür.</text><rect x='20' y='282' width='760' height='36' rx='8' fill='#1e293b'/><text x='400' y='305' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>Ortak sonuç: Yanılabilircilik, yani kesinlik olmadan da iyi gerekçeli bilgi</text></svg>"
+    },
+    {
+      "baslik": "Gerekçelendirmenin Yapısı: Temelcilik ve Tutarlılıkçılık",
+      "metin": [
+        "Agrippa üçlemi bize şu soruyu sordurur: {koyu:Gerekçe zinciri nerede durur?} Bu soruya verilen ilk büyük yanıt {koyu:temelcilik}tir. Temelciliğe göre bilgimiz bir binaya benzer: Bazı inançlar başka bir inanca dayanmadan, kendiliğinden gerekçelidir; bunlara {koyu:temel inançlar} denir. Diğer bütün inançlarımız bu temel üzerine kurulur. Temelci, Agrippa'nın “keyfî duruş” suçlamasını kabul etmez; çünkü ona göre zincirin durduğu yer keyfî değil, kendiliğinden açık olan bir noktadır. Rasyonalist bir temelci için bu temel, Descartes'ın cogitosu ya da çelişmezlik ilkesi gibi {koyu:apaçık akıl ilkeleridir}; empirist bir temelci için ise “Şu anda önümde kırmızı bir leke görüyorum.” gibi {koyu:doğrudan duyu deneyimleridir}.",
+        "İkinci büyük yanıt {koyu:tutarlılıkçılık}tır. Bu görüşe göre bilginin temeli yoktur, çünkü buna ihtiyacı da yoktur: İnançlar bir binanın katları gibi değil, {koyu:bir ağın düğümleri} gibi birbirini karşılıklı olarak destekler. Bir inanç, geniş ve uyumlu bir inanç sistemine ne kadar iyi oturuyorsa o kadar gerekçelidir. Avusturyalı filozof {koyu:Otto Neurath} bu durumu ünlü bir benzetmeyle anlatır: Bizler, gemilerini hiçbir zaman limana çekip sıfırdan inşa edemeyen, onu açık denizde tahta tahta onarmak zorunda olan denizciler gibiyiz. Bilgimizi düzeltirken ayağımızı bastığımız kalaslar da yine geminin parçasıdır. Tutarlılıkçı, döngü suçlamasına şöyle karşılık verir: Küçük ve kısır bir döngü kusurludur; ama binlerce inancın birbirini desteklediği geniş bir sistem kısır döngü değildir.",
+        "Her iki görüşün de güçlü ve zayıf yönleri vardır. Temelciliğe yöneltilen eleştiri, gerçekten {koyu:yanılmaz temel inançlar} bulmanın zorluğudur: Duyu deneyimi yanıltabilir; apaçık görünen ilkeler tarih boyunca değişmiştir. Tutarlılıkçılığa yöneltilen eleştiri ise iki yönlüdür: Kendi içinde tutarlı ama gerçeklikle hiçbir bağı olmayan bir sistem, örneğin iyi kurgulanmış bir masal evreni, aynı derecede gerekçeli sayılabilir; ayrıca sistemin dış dünyayla bağı belirsiz kalır. Bu güçlükler karşısında {koyu:Susan Haack} 1993'te yayımlanan Kanıt ve Araştırma adlı eserinde iki görüşü birleştiren bir yol önerir ve bunu {koyu:çapraz bulmaca} benzetmesiyle açıklar: Bir kelimenin doğru olduğundan hem ipucuna (deneyim) uygunluğuyla hem de kesiştiği diğer kelimelerle (diğer inançlar) uyumuyla emin oluruz. Böylece deneyim ile tutarlılık birlikte gerekçelendirme sağlar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Karşılaştırma Ölçütü",
+          "Temelcilik",
+          "Tutarlılıkçılık"
+        ],
+        "satirlar": [
+          [
+            "Temel benzetme",
+            "Bina: temel ve üstündeki katlar",
+            "Ağ ya da açık denizde onarılan gemi"
+          ],
+          [
+            "Gerekçe zinciri",
+            "Kendiliğinden gerekçeli temel inançlarda durur.",
+            "Durmaz; inançlar birbirini karşılıklı destekler."
+          ],
+          [
+            "Agrippa'ya yanıtı",
+            "Duruş keyfî değildir; temel apaçıktır.",
+            "Geniş sistemlerde destek, kısır döngü sayılmaz."
+          ],
+          [
+            "Temsilci örnekler",
+            "Descartes (rasyonalist), deneyime dayanan empirist temelciler",
+            "Otto Neurath ve çağdaş tutarlılıkçılar"
+          ],
+          [
+            "Başlıca eleştiri",
+            "Yanılmaz temel inanç bulmak zordur.",
+            "Tutarlı ama gerçekle ilgisiz sistemler de gerekçeli görünebilir."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Gerekçelendirme Kuramı ile Doğruluk Kuramını Karıştırma",
+          "metin": "Geçen hafta tartıştığımız {koyu:tutarlılık kuramı} bir önermenin {koyu:doğruluğunun} ne olduğunu açıklar. Bu hafta gördüğümüz {koyu:tutarlılıkçılık} ise bir inancın {koyu:gerekçeli} olmasının ne olduğunu açıklar. Bir inanç gerekçeli olduğu hâlde yanlış çıkabilir; bu yüzden iki soru ayrı ayrı sorulmalıdır."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Haack'ın Çapraz Bulmacası",
+          "metin": "Çapraz bulmacada bir kelimeye güvenimiz iki kaynaktan gelir: {koyu:İpucu} (deneyimin desteği) ve {koyu:kesişen kelimeler} (diğer inançlarla uyum). Bir kelime ipucuna uyuyor ama kesiştiği kelimelerle çelişiyorsa ya da tam tersi oluyorsa ona olan güvenimiz azalır. Gerekçelendirme de böyle {koyu:iki yönlü} işler."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 800 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='330' rx='16' fill='#f8fafc'/><text x='400' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Gerekçelendirmenin İki Modeli</text><text x='200' y='58' text-anchor='middle' font-size='14' font-weight='bold' fill='#1e3a8a'>Temelcilik: Bina</text><rect x='150' y='72' width='100' height='34' rx='8' fill='#dbeafe' stroke='#1d4ed8' stroke-width='2'/><text x='200' y='94' text-anchor='middle' font-size='11' fill='#1e293b'>Kuramsal bilgi</text><rect x='100' y='114' width='200' height='34' rx='8' fill='#dbeafe' stroke='#1d4ed8' stroke-width='2'/><text x='200' y='136' text-anchor='middle' font-size='11' fill='#1e293b'>Türetilmiş inançlar</text><rect x='60' y='156' width='280' height='34' rx='8' fill='#dbeafe' stroke='#1d4ed8' stroke-width='2'/><text x='200' y='178' text-anchor='middle' font-size='11' fill='#1e293b'>Genellemeler ve çıkarımlar</text><rect x='30' y='198' width='340' height='44' rx='8' fill='#1d4ed8'/><text x='200' y='217' text-anchor='middle' font-size='12' font-weight='bold' fill='#ffffff'>TEMEL İNANÇLAR</text><text x='200' y='234' text-anchor='middle' font-size='11' fill='#dbeafe'>apaçık ilkeler / doğrudan deneyim</text><text x='600' y='58' text-anchor='middle' font-size='14' font-weight='bold' fill='#065f46'>Tutarlılıkçılık: Ağ</text><line x1='520' y1='100' x2='600' y2='80' stroke='#047857' stroke-width='2'/><line x1='600' y1='80' x2='690' y2='105' stroke='#047857' stroke-width='2'/><line x1='520' y1='100' x2='540' y2='180' stroke='#047857' stroke-width='2'/><line x1='690' y1='105' x2='670' y2='190' stroke='#047857' stroke-width='2'/><line x1='540' y1='180' x2='670' y2='190' stroke='#047857' stroke-width='2'/><line x1='600' y1='80' x2='605' y2='140' stroke='#047857' stroke-width='2'/><line x1='605' y1='140' x2='540' y2='180' stroke='#047857' stroke-width='2'/><line x1='605' y1='140' x2='670' y2='190' stroke='#047857' stroke-width='2'/><line x1='520' y1='100' x2='605' y2='140' stroke='#047857' stroke-width='2'/><line x1='690' y1='105' x2='605' y2='140' stroke='#047857' stroke-width='2'/><circle cx='520' cy='100' r='16' fill='#ecfdf5' stroke='#047857' stroke-width='2'/><circle cx='600' cy='80' r='16' fill='#ecfdf5' stroke='#047857' stroke-width='2'/><circle cx='690' cy='105' r='16' fill='#ecfdf5' stroke='#047857' stroke-width='2'/><circle cx='605' cy='140' r='18' fill='#047857'/><circle cx='540' cy='180' r='16' fill='#ecfdf5' stroke='#047857' stroke-width='2'/><circle cx='670' cy='190' r='16' fill='#ecfdf5' stroke='#047857' stroke-width='2'/><text x='605' y='145' text-anchor='middle' font-size='11' font-weight='bold' fill='#ffffff'>inanç</text><text x='600' y='232' text-anchor='middle' font-size='11' fill='#334155'>Her inanç diğerleriyle uyumundan güç alır.</text><rect x='30' y='256' width='740' height='62' rx='10' fill='#e2e8f0'/><text x='400' y='280' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>Haack'ın orta yolu: Çapraz bulmaca</text><text x='400' y='302' text-anchor='middle' font-size='12' fill='#334155'>İpucuna uygunluk (deneyim) + kesişen kelimelerle uyum (tutarlılık) = gerekçelendirme</text></svg>"
+    },
+    {
+      "baslik": "Bilginin Kaynağı Tartışmasında Argümanlar: Doğuştan Bilgi, Tanıklık ve Sezgi",
+      "metin": [
+        "Bilginin kaynağı tartışmasının merkezinde {koyu:doğuştan bilgi} sorusu durur. John Locke, İnsan Anlığı Üzerine Bir Deneme adlı eserinin ilk bölümünde doğuştan ideleri savunanların başlıca argümanını sınar. Bu argümana göre “Ne varsa odur.” ve “Bir şeyin aynı anda hem olması hem olmaması imkânsızdır.” gibi ilkeleri herkes kabul ettiğine göre bu ilkeler doğuştandır. Locke iki itiraz getirir: Birincisi, herkesin bir ilkeyi kabul etmesi gerçekten olsa bile bunun {koyu:başka bir açıklaması} olabilir; insanlar onu deneyimle öğrenmiş olabilir. İkincisi, {koyu:çocuklar} ve hiç eğitim almamış pek çok kişi bu ilkelerden habersizdir; zihinde olup da zihnin hiç farkında olmadığı bir bilgi düşünülemez. Bu, öncüldeki “herkes kabul eder” iddiasına yöneltilmiş bir {koyu:karşı örnek} stratejisidir.",
+        "Leibniz, Locke'a Yeni Denemeler adlı eserinde yanıt verir. Ona göre zorunlu doğrular deneyden çıkarılamaz; çünkü deney yalnızca sınırlı sayıda örnek gösterir, bir şeyin {koyu:her zaman ve zorunlu olarak} böyle olması gerektiğini göstermez. Leibniz zihni boş bir levhaya değil, {koyu:damarlı bir mermer bloğuna} benzetir: Damarlar heykelin biçimini önceden belirler ama heykelin ortaya çıkması için yontmak gerekir. Doğuştan bilgiler de zihinde hazır bilgiler olarak değil, {koyu:eğilimler} olarak bulunur; deney onları ortaya çıkarır. Leibniz, empiristlerin “Duyularda önceden bulunmayan hiçbir şey zihinde yoktur.” ilkesine ünlü bir ekleme yapar: {koyu:“...aklın kendisi hariç.”} Bu yanıt, Locke'un çocuk itirazını da karşılar: Çocuk ilkeyi açıkça dile getiremese de düşünürken onu kullanmaktadır.",
+        "Bilgimizin büyük bölümü ise ne doğrudan deneyden ne de saf akıldan, {koyu:başkalarının bildirmesinden} gelir: Tarih bilgimiz, görmediğimiz şehirlere ilişkin bilgimiz, bilimsel bulgular. İslam düşüncesinde bu kaynak açıkça adlandırılmıştır. Ömer en-Nesefî, Akaid adlı eserinde bilginin sebeplerini üç tane olarak sayar: {koyu:havâss-ı selîme (sağlam duyular)}, {koyu:haber-i sâdık (doğru haber)} ve {koyu:akıl}. Doğru haber, yalan üzerinde birleşmeleri düşünülemeyecek kadar çok kişinin aktardığı {koyu:mütevatir haber} ile peygamberin haberini kapsar. Bu ayrım bugün de değerlidir: Bir tanıklığın güvenilirliği, aktaranın yetkinliğine, dürüstlüğüne ve birbirinden bağımsız tanıkların sayısına bağlıdır. {koyu:Sezgi} ise Bergson ve Gazâlî gibi düşünürlerde doğrudan kavrayış olarak öne çıkar. Sezginin lehine, matematikte ve ahlakta bazı doğruları doğrudan kavradığımız gerçeği gösterilir; aleyhine ise sezginin {koyu:kamusal olarak denetlenmesinin} zor olduğu söylenir. Bu yüzden sağlıklı bir değerlendirme, sezgiyi başka kaynaklarla desteklemeyi önerir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kaynak",
+          "Lehte Argüman",
+          "Aleyhte Argüman"
+        ],
+        "satirlar": [
+          [
+            "Doğuştan akıl ilkeleri (Leibniz)",
+            "Zorunlu ve evrensel doğrular sınırlı deneyden çıkarılamaz.",
+            "Çocuklar bu ilkeleri bilmez; evrensel kabulün başka açıklaması olabilir (Locke)."
+          ],
+          [
+            "Deney (Locke)",
+            "Bütün idelerimiz duyum ve düşünüme kadar izlenebilir.",
+            "Deney zorunluluk veremez; tümevarım problemi çözülmez."
+          ],
+          [
+            "Tanıklık (haber)",
+            "Bilgimizin çoğu başkalarından gelir; onsuz tarih ve bilim olmaz.",
+            "Tanıklar yanılabilir veya yalan söyleyebilir; söylenti bilgi değildir."
+          ],
+          [
+            "Sezgi",
+            "Bazı doğrular doğrudan kavranır; akıl yürütmenin de başlangıcıdır.",
+            "Kamusal denetimi zordur; kişiden kişiye değişebilir."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Haber-i Sâdık",
+          "metin": "Kelam geleneğinde bilgiye ulaştıran doğru haberdir. İki türü vardır: {koyu:Mütevatir haber}, yalan üzerinde birleşmeleri akla uygun olmayan çok sayıda kişinin aktardığı haberdir (örneğin geçmişte yaşamış ünlü kişilerin varlığı). {koyu:Peygamberin haberi} ise mucizeyle desteklenen elçinin bildirdiğidir."
+        },
+        {
+          "tur": "kural",
+          "baslik": "Tanıklığı Değerlendirmenin Üç Sorusu",
+          "metin": "{koyu:1) Yetkinlik:} Aktaran kişi bu konuyu bilebilecek konumda mı? {koyu:2) Dürüstlük:} Yanıltmak için bir çıkarı var mı? {koyu:3) Bağımsız destek:} Birbirinden habersiz başka tanıklar ya da kanıtlar aynı şeyi gösteriyor mu? Sosyal medyada aynı paylaşımın binlerce kez kopyalanması {koyu:bağımsız tanıklık} sayılmaz."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 800 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='330' rx='16' fill='#f8fafc'/><text x='400' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Doğuştan Bilgi Tartışması ve Bilginin Üç Sebebi</text><rect x='30' y='50' width='340' height='130' rx='12' fill='#fef3c7' stroke='#b45309' stroke-width='2'/><text x='200' y='76' text-anchor='middle' font-size='14' font-weight='bold' fill='#78350f'>Locke: Boş Levha</text><rect x='130' y='88' width='140' height='44' rx='4' fill='#ffffff' stroke='#94a3b8' stroke-width='2'/><text x='200' y='115' text-anchor='middle' font-size='11' fill='#94a3b8'>(boş)</text><text x='200' y='152' text-anchor='middle' font-size='11' fill='#1e293b'>Çocuklar çelişmezlik ilkesini bilmez;</text><text x='200' y='168' text-anchor='middle' font-size='11' fill='#1e293b'>öyleyse doğuştan değildir.</text><rect x='430' y='50' width='340' height='130' rx='12' fill='#eff6ff' stroke='#1d4ed8' stroke-width='2'/><text x='600' y='76' text-anchor='middle' font-size='14' font-weight='bold' fill='#1e3a8a'>Leibniz: Damarlı Mermer</text><rect x='530' y='88' width='140' height='44' rx='4' fill='#e2e8f0' stroke='#64748b' stroke-width='2'/><path d='M535 100 Q570 95 590 112 T665 120' stroke='#475569' stroke-width='2' fill='none'/><path d='M540 125 Q580 110 620 122 T665 102' stroke='#475569' stroke-width='1.5' fill='none'/><text x='600' y='152' text-anchor='middle' font-size='11' fill='#1e293b'>İlkeler eğilim olarak vardır;</text><text x='600' y='168' text-anchor='middle' font-size='11' fill='#1e293b'>deney onları ortaya çıkarır.</text><text x='400' y='120' text-anchor='middle' font-size='22' font-weight='bold' fill='#b91c1c'>⇄</text><text x='400' y='206' text-anchor='middle' font-size='13' font-weight='bold' fill='#334155'>Ömer en-Nesefî: Bilginin Üç Sebebi</text><rect x='30' y='218' width='230' height='60' rx='10' fill='#065f46'/><text x='145' y='243' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>Havâss-ı selîme</text><text x='145' y='263' text-anchor='middle' font-size='11' fill='#d1fae5'>sağlam duyular</text><rect x='285' y='218' width='230' height='60' rx='10' fill='#065f46'/><text x='400' y='243' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>Haber-i sâdık</text><text x='400' y='263' text-anchor='middle' font-size='11' fill='#d1fae5'>doğru haber (tanıklık)</text><rect x='540' y='218' width='230' height='60' rx='10' fill='#065f46'/><text x='655' y='243' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>Akıl</text><text x='655' y='263' text-anchor='middle' font-size='11' fill='#d1fae5'>çıkarım ve zorunlu ilkeler</text><rect x='30' y='288' width='740' height='30' rx='8' fill='#e2e8f0'/><text x='400' y='308' text-anchor='middle' font-size='12' font-weight='bold' fill='#0f172a'>Leibniz'in eklemesi: Duyularda olmayan hiçbir şey zihinde yoktur, aklın kendisi hariç.</text></svg>"
+    },
+    {
+      "baslik": "Argüman Değerlendirme Atölyesi: Doğrulanabilirlik İlkesi Örneği",
+      "metin": [
+        "Öğrendiğimiz araçları bütün olarak bir felsefi ilke üzerinde deneyelim. 20. yüzyılın başlarında Viyana'da toplanan bilim insanları ve filozoflardan oluşan {koyu:Viyana Çevresi}, bilgi tartışmalarına kesin bir ölçüt getirmek istedi. Bu düşünürler, {koyu:mantıkçı pozitivistler} olarak anılır ve şu ilkeyi savunurlar: Bir önerme ya tanım gereği doğrudur (analitiktir) ya da deneyle {koyu:doğrulanabilir}; bu ikisinden hiçbiri değilse {koyu:anlamsızdır}. Bu ilkeye göre “Su 100 °C'de kaynar.” anlamlıdır, çünkü deneyle sınanabilir; ama “Varlığın özü değişmezdir.” gibi metafizik önermeler ne doğru ne yanlıştır, yalnızca anlamsızdır. İlke ilk bakışta çok çekicidir: Boş tartışmaları ayıklayan, bilgiyi bilimin sağlam zeminine taşıyan bir süzgeç gibi görünür.",
+        "Şimdi değerlendirme adımlarını uygulayalım. {koyu:Birinci adım}, argümanı yeniden kurmaktır: “Anlamlı her önerme ya analitik ya da deneyle doğrulanabilirdir; metafizik önermeler ikisi de değildir; öyleyse metafizik önermeler anlamsızdır.” Argüman {koyu:geçerlidir}. {koyu:İkinci adım}, öncülleri sınamaktır. İlk öncülü karşı örneklerle deneriz: “Bütün metaller ısıtılınca genleşir.” gibi evrensel bir doğa yasası sonsuz sayıda durumu kapsar ve hiçbir zaman {koyu:tam olarak} doğrulanamaz; ilke katı biçimde uygulanırsa bilimin kendi yasaları da anlamsız sayılır. {koyu:Üçüncü adım}, kendine uygulama testidir: “Anlamlı her önerme ya analitik ya da deneyle doğrulanabilirdir.” cümlesinin kendisi analitik değildir ve hiçbir deneyle doğrulanamaz. Bu durumda ilke, {koyu:kendi ölçütüne göre anlamsız} hâle gelir; yani kendini çürütür.",
+        "{koyu:Dördüncü adım}, alternatifleri görmektir. Karl Popper, 1934'te yayımlanan Araştırmanın Mantığı adlı eserinde doğrulamanın yerine {koyu:yanlışlanabilirliği} önerdi: Bilimsel bir iddia, onu yanlışlayabilecek bir gözlemin ne olduğunu söyleyebilmelidir. Popper bu ölçütü anlamlı ile anlamsızı değil, bilimsel olanla olmayanı ayırmak için kullandı. {koyu:Beşinci adım} ise dengeli bir yargıya varmaktır: Doğrulanabilirlik ilkesi katı biçimiyle savunulamaz; ama bir iddianın {koyu:neyle sınanacağını sorma} alışkanlığı değerini korur. Bu örnek bize önemli bir şey öğretir: Felsefi bir görüşü değerlendirmek onu mahkûm etmek değildir; çürütülen görüşler bile yeni ve daha güçlü düşüncelerin doğmasına yol açar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Değerlendirme Adımı",
+          "Sorulacak Soru",
+          "Doğrulanabilirlik İlkesine Uygulama"
+        ],
+        "satirlar": [
+          [
+            "1. Yeniden kurma",
+            "Öncüller ve sonuç neler?",
+            "Anlamlı önerme analitik ya da doğrulanabilirdir; metafizik ikisi de değildir; öyleyse anlamsızdır."
+          ],
+          [
+            "2. Geçerlilik",
+            "Sonuç öncüllerden çıkıyor mu?",
+            "Evet; biçim geçerlidir."
+          ],
+          [
+            "3. Öncülleri sınama",
+            "Karşı örnek var mı?",
+            "Evrensel doğa yasaları tam olarak doğrulanamaz."
+          ],
+          [
+            "4. Kendine uygulama",
+            "İlke kendi ölçütünü geçiyor mu?",
+            "İlke ne analitik ne doğrulanabilir; kendini çürütür."
+          ],
+          [
+            "5. Alternatif ve yargı",
+            "Daha iyi bir görüş var mı? Ne korunmalı?",
+            "Popper'ın yanlışlanabilirliği; sınanabilirlik sorusu değerini korur."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Kendine Uygulama Testi",
+          "metin": "Bilgiye ölçüt koyan her ilkeye şunu sor: {koyu:“Bu ilke kendi koyduğu ölçütü geçiyor mu?”} “Sadece gözle gördüğüme inanırım.” diyen birinin bu ilkeyi de gözle görüp görmediğini sormak, onun tutumunu yeniden düşünmesini sağlar."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Değerlendirme Mahkûm Etmek Değildir",
+          "metin": "İyi bir felsefi değerlendirme üç şey yapar: Görüşün {koyu:güçlü yanını} kabul eder, {koyu:zayıf yanını} gerekçeyle gösterir ve {koyu:korunmaya değer olanı} ayıklar. “Saçma” ya da “Kesinlikle doğru” gibi gerekçesiz yargılar değerlendirme sayılmaz."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 860 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='860' height='320' rx='16' fill='#f8fafc'/><text x='430' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Beş Adımda Argüman Değerlendirme</text><rect x='20' y='55' width='150' height='120' rx='12' fill='#1e3a8a'/><text x='95' y='88' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>1. Yeniden</text><text x='95' y='106' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>kur</text><text x='95' y='132' text-anchor='middle' font-size='11' fill='#dbeafe'>öncüller ve</text><text x='95' y='148' text-anchor='middle' font-size='11' fill='#dbeafe'>sonuç</text><rect x='188' y='55' width='150' height='120' rx='12' fill='#1d4ed8'/><text x='263' y='88' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>2. Geçerliliği</text><text x='263' y='106' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>sına</text><text x='263' y='132' text-anchor='middle' font-size='11' fill='#dbeafe'>sonuç çıkıyor</text><text x='263' y='148' text-anchor='middle' font-size='11' fill='#dbeafe'>mu?</text><rect x='356' y='55' width='150' height='120' rx='12' fill='#047857'/><text x='431' y='88' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>3. Öncülleri</text><text x='431' y='106' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>sına</text><text x='431' y='132' text-anchor='middle' font-size='11' fill='#d1fae5'>karşı örnek</text><text x='431' y='148' text-anchor='middle' font-size='11' fill='#d1fae5'>ara</text><rect x='524' y='55' width='150' height='120' rx='12' fill='#b45309'/><text x='599' y='88' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>4. Kendine</text><text x='599' y='106' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>uygula</text><text x='599' y='132' text-anchor='middle' font-size='11' fill='#fef3c7'>ilke kendi</text><text x='599' y='148' text-anchor='middle' font-size='11' fill='#fef3c7'>ölçütünü geçiyor mu?</text><rect x='692' y='55' width='150' height='120' rx='12' fill='#6d28d9'/><text x='767' y='88' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>5. Alternatif</text><text x='767' y='106' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>ve yargı</text><text x='767' y='132' text-anchor='middle' font-size='11' fill='#ede9fe'>ne korunmalı?</text><polygon points='186,115 174,108 174,122' fill='#475569'/><polygon points='354,115 342,108 342,122' fill='#475569'/><polygon points='522,115 510,108 510,122' fill='#475569'/><polygon points='690,115 678,108 678,122' fill='#475569'/><rect x='20' y='192' width='820' height='112' rx='12' fill='#e2e8f0'/><text x='430' y='216' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>Uygulama: Viyana Çevresi'nin doğrulanabilirlik ilkesi</text><text x='430' y='240' text-anchor='middle' font-size='12' fill='#334155'>Geçerli biçim, ama doğa yasaları tam doğrulanamaz (karşı örnek).</text><text x='430' y='262' text-anchor='middle' font-size='12' fill='#334155'>İlkenin kendisi ne analitik ne doğrulanabilir: kendi ölçütüne göre anlamsız.</text><text x='430' y='284' text-anchor='middle' font-size='12' fill='#334155'>Alternatif: Popper'ın yanlışlanabilirliği (1934). Korunan: sınanabilirlik sorusu.</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Şu argümanı öncül-sonuç yapısına ayırınız ve değerlendiriniz: “Rüya görürken de her şeyi gerçek sanırız. Şu an rüya görmediğimizi kesin olarak ayırt edecek bir işaret yoktur. O hâlde şu an gördüğümüz dünyanın gerçek olduğunu kesin olarak bilemeyiz.”",
+      "cevap": "{koyu:1. adım – Yapı:} Öncül 1: Rüyada da her şeyi gerçek sanırız. Öncül 2: Rüya ile uyanıklığı kesin olarak ayırt edecek bir işaret yoktur. Sonuç: Gördüğümüz dünyanın gerçek olduğunu kesin olarak bilemeyiz.\n{koyu:2. adım – Geçerlilik:} Öncüller doğruysa uyanık olduğumuzdan kesin olarak emin olamayız; bu nedenle argüman {koyu:geçerlidir}.\n{koyu:3. adım – Öncülleri sınama:} Birinci öncül deneyimimizle uyumludur. İkinci öncüle itiraz edilebilir: Uyanıklıktaki deneyimler birbirine bağlı ve tutarlıdır, rüyalar ise kopuktur; bu bir ayırt etme işareti olabilir. Ancak şüpheci bu işaretin de rüyada taklit edilebileceğini söyler.\n{koyu:4. adım – Sonucun kapsamı:} Sonuç yalnızca {koyu:kesin} bilgiyi reddeder. Yanılabilirci biri, kesinlik olmasa da uyanık olduğumuza dair güçlü gerekçelerimiz olduğunu söyleyebilir.\n{koyu:Sonuç:} Argüman geçerlidir; sağlamlığı ikinci öncülün doğruluğuna bağlıdır. En güçlü yanıt ya ikinci öncüle karşı ayırt edici işaretler göstermek ya da bilginin kesinlik gerektirmediğini savunmaktır.",
+      "ipucu": "Önce argümanı numaralı öncüllere ayır, sonra hangi öncülün en tartışmalı olduğunu bul."
+    },
+    {
+      "soru": "Gorgias'ın “Hiçbir şey yoktur; olsa bile bilinemez; bilinse bile başkasına aktarılamaz.” şeklindeki argümanının üçüncü basamağını kendini çürütme açısından değerlendiriniz.",
+      "cevap": "{koyu:1. adım – Basamağın içeriği:} Üçüncü tez, bir bilgi olsa bile onun dille başkasına aktarılamayacağını söyler.\n{koyu:2. adım – Kendine uygulama:} Gorgias bu tezi bir konuşma ya da yazı aracılığıyla, yani {koyu:dille başkalarına aktarmaktadır}. Dinleyiciler de onun ne demek istediğini anlayıp tartışabilmektedir.\n{koyu:3. adım – Çelişki:} Eğer tez doğruysa Gorgias'ın düşüncesi bize ulaşmamış olmalıydı; ulaştığına göre en azından bu düşünce aktarılabilmiştir. Bu bir {koyu:edimsel çelişkidir}: Söylenen ile söyleme eylemi birbirini yalanlar.\n{koyu:4. adım – Hakkaniyetli değerlendirme:} Gorgias'ı savunan biri, aktarılanın kelimeler olduğunu, zihindeki deneyimin aynısı olmadığını söyleyebilir. Bu, dilin sınırlarına dikkat çeken önemli bir noktadır.\n{koyu:Sonuç:} Üçüncü tez katı biçimiyle kendini çürütür; ama ılımlı biçimiyle dilin deneyimi tam aktaramadığına dair değerli bir uyarı içerir.",
+      "ipucu": "Tezin söylenme biçimi ile tezin içeriğini karşılaştır."
+    },
+    {
+      "soru": "Küçük kardeşiniz size sürekli “Neden?” diye soruyor: “Neden okula gidiyoruz?” – “Öğrenmek için.” – “Neden öğreniyoruz?” – “İyi bir iş bulmak için.” – “Neden iyi iş?” – “Mutlu yaşamak için.” – “Neden mutlu yaşamak?”... Bu diyalog Agrippa üçlemiyle nasıl ilişkilidir? Temelci ve tutarlılıkçı biri bu durumda nasıl yanıt verir?",
+      "cevap": "{koyu:1. adım – Durumun tespiti:} Her yanıt yeni bir “Neden?” sorusunu doğurmaktadır. Bu, Agrippa'nın {koyu:gerekçe zinciri} sorununun gündelik bir örneğidir.\n{koyu:2. adım – Üç seçenek:} Ya soru-cevap sonsuza kadar sürer ({koyu:sonsuz geriye gidiş}), ya bir noktada “Öğrenmek için okula gideriz, okula gitmek de öğrenmek içindir.” gibi başa döneriz ({koyu:döngü}), ya da “Çünkü öyle!” deyip dururuz ({koyu:keyfî duruş}).\n{koyu:3. adım – Temelci yanıt:} “Mutlu yaşamak” gibi bazı amaçlar başka bir şey için değil, {koyu:kendisi için istenir}; bu yüzden zincir burada durur ve bu duruş keyfî değildir. (Aristoteles de mutluluğu kendisi için istenen nihai amaç olarak görür.)\n{koyu:4. adım – Tutarlılıkçı yanıt:} Okul, öğrenme, iş ve mutluluk birbirini karşılıklı destekleyen bir {koyu:amaçlar ağı} oluşturur; tek tek değil, bütün olarak anlam kazanırlar.\n{koyu:Sonuç:} Diyalog, gerekçelendirmenin bir yerde durması gerektiğini ve bu durma noktasının keyfî olup olmadığının felsefi bir soru olduğunu gösterir.",
+      "ipucu": "Zincirin nasıl bitebileceğine dair üç seçeneği diyalog üzerinde tek tek dene."
+    },
+    {
+      "soru": "Bir arkadaşınız “Belki de hepimiz bir bilgisayar simülasyonunun içindeyiz; bu yüzden hiçbir şeyi bilemeyiz.” diyor. Bu iddiayı Moore'un sağduyu stratejisi ve yanılabilircilik açısından değerlendiriniz.",
+      "cevap": "{koyu:1. adım – Argümanı kurma:} Öncül 1: Simülasyonda olmadığımızı kesin olarak bilemeyiz. Öncül 2: Simülasyonda olmadığımızı bilemiyorsak dış dünyaya ilişkin hiçbir şeyi bilemeyiz. Sonuç: Dış dünyaya ilişkin hiçbir şeyi bilemeyiz. Bu, fıçıdaki beyin senaryosunun bir benzeridir ve biçim olarak {koyu:geçerlidir}.\n{koyu:2. adım – Moore'un stratejisi:} Moore, “Şu an elimde bir kalem tuttuğumu biliyorum.” önermesine, “Simülasyonda olmadığımı bilemiyorsam hiçbir şeyi bilemem.” öncülünden çok daha fazla güvendiğini söylerdi. Geçerli bir argümanda sonucu reddeden, bir öncülü de reddetmek zorundadır; Moore ikinci öncülü reddeder.\n{koyu:3. adım – Yanılabilirci yanıt:} Bilmek için yüzde yüz kesinlik gerekmez. Simülasyon ihtimali {koyu:mantıksal olarak} dışlanamasa da onu destekleyen hiçbir kanıt yoktur; dış dünyaya dair inançlarımız ise tutarlı ve güçlü biçimde desteklenmektedir.\n{koyu:4. adım – Hakkaniyet:} Şüpheci argüman yine de değerlidir; çünkü kesinlik ile gerekçeli inanç arasındaki farkı görmemizi sağlar.\n{koyu:Sonuç:} İddia “kesin bilemeyiz” biçimine çekilirse makuldür; “hiçbir şeyi bilemeyiz” biçiminde ise bilginin kesinlik gerektirdiği tartışmalı varsayımına dayanır.",
+      "ipucu": "Önce argümanın öncüllerini yaz; sonra Moore'un hangi öncülü reddettiğini belirle."
+    },
+    {
+      "soru": "Bir dedektif, şüpheli hakkında şu bilgilere sahiptir: Bir tanık şüpheliyi olay yerinde gördüğünü söylüyor; kamera kaydında şüphelinin arabasına benzeyen bir araç var; şüphelinin ayakkabı numarası olay yerindeki izle uyuşuyor. Hiçbir bilgi tek başına kesin değil. Dedektifin akıl yürütmesini temelcilik, tutarlılıkçılık ve Haack'ın çapraz bulmaca modeli açısından değerlendiriniz.",
+      "cevap": "{koyu:1. adım – Temelci bakış:} Temelci, hangi bilginin {koyu:doğrudan ve güvenilir} olduğunu sorar. Ayak izi ölçümü gibi doğrudan gözleme dayanan veriler temel kabul edilip diğerleri buna dayandırılabilir. Ancak hiçbir verinin tek başına yanılmaz olmaması temelciyi zorlar.\n{koyu:2. adım – Tutarlılıkçı bakış:} Tutarlılıkçı, verilerin {koyu:birbirini desteklediğine} dikkat çeker: Tanık ifadesi, kamera kaydı ve ayak izi aynı sonuca işaret ettiği için birlikte güçlüdürler. Tek tek zayıf olan kanıtlar bir ağ oluşturunca güçlenir.\n{koyu:3. adım – Tutarlılıkçılığın riski:} Tutarlı bir hikâye yanlış da olabilir; örneğin biri şüpheliyi suçlu göstermek için delilleri düzenlemiş olabilir. Bu yüzden yalnızca uyuma bakmak yetmez.\n{koyu:4. adım – Haack'ın modeli:} Her kanıt hem kendi {koyu:ipucuna} (doğrudan gözlem, kayıt) uygun olmalı hem de diğer kanıtlarla {koyu:kesişmelidir}. Dedektif, tanığın görüş açısını kontrol ederek ipucunu, diğer kanıtlarla uyumu kontrol ederek kesişmeyi sınar.\n{koyu:Sonuç:} En güvenilir değerlendirme, deneyime dayalı verilerle bunların birbirleriyle uyumunu birlikte gözeten yaklaşımdır.",
+      "ipucu": "Kanıtların tek tek mi yoksa birlikte mi güçlü olduğunu sor."
+    },
+    {
+      "soru": "“Sadece bilimsel deneyle kanıtlanabilen şeyler bilinebilir.” diyen birinin iddiasını kendine uygulama testi ile değerlendiriniz ve bu iddianın korunmaya değer bir yanı olup olmadığını tartışınız.",
+      "cevap": "{koyu:1. adım – İddiayı netleştirme:} İddia, bilginin tek kaynağının ve tek ölçütünün bilimsel deney olduğunu söylemektedir. Bu, mantıkçı pozitivistlerin doğrulanabilirlik ilkesine benzer.\n{koyu:2. adım – Kendine uygulama:} “Sadece deneyle kanıtlanabilen şeyler bilinebilir.” önermesinin kendisi hangi deneyle kanıtlanmıştır? Böyle bir deney yoktur; önerme bir gözlem sonucu değil, bilgi hakkında felsefi bir iddiadır. Öyleyse iddia doğruysa kendisi {koyu:bilinemez}; bu bir {koyu:kendini çürütme} durumudur.\n{koyu:3. adım – Karşı örnekler:} “7 + 5 = 12” ve “Çelişen iki önerme aynı anda doğru olamaz.” gibi bilgiler deneyle değil akılla bilinir. Ayrıca bilimsel deneyin kendisi de mantık ilkelerine dayanır.\n{koyu:4. adım – Korunmaya değer yan:} Doğa hakkındaki iddiaların gözlem ve deneyle sınanması gerektiği fikri son derece değerlidir; batıl inançlara ve temelsiz iddialara karşı güçlü bir koruma sağlar.\n{koyu:Sonuç:} İddia katı biçimiyle kendini çürütür; ama “Doğa hakkındaki iddialar deneyle sınanmalıdır.” biçimine dönüştürülürse savunulabilir ve değerli bir ilke olur.",
+      "ipucu": "İddianın kendisinin hangi yolla bilindiğini sor."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "“Bütün kuğular beyazdır. Bu hayvan bir kuğudur. O hâlde bu hayvan beyazdır.” argümanı için aşağıdakilerden hangisi söylenebilir? (Avustralya'da siyah kuğuların bulunduğunu dikkate alınız.)",
+      "secenekler": [
+        "Hem geçerli hem sağlamdır.",
+        "Geçersizdir ama sağlamdır.",
+        "Geçerlidir ama sağlam değildir.",
+        "Ne geçerlidir ne de bir sonuç içerir."
+      ],
+      "dogru": 2,
+      "aciklama": "Öncüller doğru olsaydı sonuç da zorunlu olarak doğru olurdu; bu yüzden argüman geçerlidir. Ancak siyah kuğular birinci öncülü yanlışlayan bir karşı örnek olduğu için argüman sağlam değildir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir iddiaya gerekçe gösterildikçe her gerekçenin yeniden gerekçelendirilmesi istenirse zincirin ya sonsuza gideceğini, ya döngüye gireceğini, ya da keyfî biçimde duracağını ileri süren sorun aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Agrippa üçlemi",
+        "Gettier durumu",
+        "Tümevarım problemi",
+        "Fıçıdaki beyin senaryosu"
+      ],
+      "dogru": 0,
+      "aciklama": "Gerekçe zincirinin üç çıkışsız seçeneğini ortaya koyan sorun, Sextus Empiricus'un Agrippa'ya dayandırdığı tropların birleşiminden doğan Agrippa üçlemidir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "G. E. Moore'un “İşte bir el, işte bir el daha.” diyerek dış dünyanın varlığını savunmasının temel stratejisi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Dış dünyanın varlığını apaçık akıl ilkelerinden türetmek",
+        "Şüpheyi kalbe doğan bir sezgiyle aşmak",
+        "Bilginin tek kaynağının tanıklık olduğunu göstermek",
+        "Sağduyu önermesine şüpheci öncülden daha çok güvenip şüpheci argümanı tersine çevirmek"
+      ],
+      "dogru": 3,
+      "aciklama": "Moore, ellerinin varlığına şüpheci argümanın öncüllerinden daha fazla güvenildiğini söyler; geçerli bir argümanda sonucu reddeden en az bir öncülü de reddetmek zorunda olduğu için şüpheci öncülü reddeder."
+    },
+    {
+      "tur": "coktan",
+      "soru": "“Anlamlı her önerme ya analitiktir ya da deneyle doğrulanabilir.” ilkesine yöneltilen “Bu ilkenin kendisi ne analitiktir ne de deneyle doğrulanabilir.” itirazı hangi değerlendirme yöntemine örnektir?",
+      "secenekler": [
+        "Otoriteye başvurma",
+        "Kendine uygulama (kendini çürütme) testi",
+        "Acele genelleme",
+        "Döngüsel akıl yürütme"
+      ],
+      "dogru": 1,
+      "aciklama": "İtiraz, ilkeyi kendisine uygulayıp ilkenin kendi koyduğu ölçütü geçemediğini gösterir; bu, kendini çürütme testidir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Pyrrhon'a göre eşit güçte karşıt görüşler karşısında yargıyı askıya almak ruh dinginliğine götürür.",
+          "dogru": true,
+          "aciklama": "Pyrrhoncu şüphecilikte epokhe (yargıyı askıya alma) ataraxia (ruh dinginliği) ile sonuçlanır."
+        },
+        {
+          "metin": "Augustinus'un “Yanılıyorsam varım.” sözü, yanılmak için var olmak gerektiğini vurgular.",
+          "dogru": true,
+          "aciklama": "Var olmayan biri yanılamaz; bu nedenle yanılma anında bile kişinin kendi varlığından emin olabileceği savunulur."
+        },
+        {
+          "metin": "Tutarlılıkçılığa göre bilgi, başka hiçbir inanca dayanmayan temel inançlar üzerine kurulu bir binaya benzer.",
+          "dogru": false,
+          "aciklama": "Bu tanım temelciliğe aittir. Tutarlılıkçılık inançların bir ağ gibi birbirini karşılıklı desteklediğini savunur."
+        },
+        {
+          "metin": "Leibniz zihni, damarları heykelin biçimini önceden belirleyen bir mermer bloğuna benzetmiştir.",
+          "dogru": true,
+          "aciklama": "Leibniz'e göre doğuştan bilgiler zihinde eğilim olarak bulunur; deney onları mermerin yontulması gibi ortaya çıkarır."
+        },
+        {
+          "metin": "Geçerli bir argümanın sonucu her durumda doğrudur.",
+          "dogru": false,
+          "aciklama": "Geçerlilik yalnızca öncüller doğruysa sonucun yanlış olamayacağını gösterir. Öncüllerden biri yanlışsa geçerli bir argümanın sonucu da yanlış olabilir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki düşünürleri bilgi tartışmasındaki görüş ya da benzetmeleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Protagoras",
+          "İnsan her şeyin ölçüsüdür; doğru kişiden kişiye değişir."
+        ],
+        [
+          "Pyrrhon",
+          "Eşit güçteki karşıt görüşler karşısında yargıyı askıya almak (epokhe)"
+        ],
+        [
+          "Otto Neurath",
+          "Bilgimizi, açık denizde tahta tahta onarılan bir gemiye benzetmek"
+        ],
+        [
+          "Ömer en-Nesefî",
+          "Bilginin sebeplerini sağlam duyular, doğru haber ve akıl olarak saymak"
+        ],
+        [
+          "Hilary Putnam",
+          "Fıçıdaki beyin senaryosunun dil nedeniyle kendini çürüttüğünü savunmak"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Hem geçerli olan hem de öncülleri doğru olan argümana ___ argüman denir.",
+          "cevap": "sağlam"
+        },
+        {
+          "metin": "Pyrrhoncu şüphecilikte hüküm vermekten kaçınarak yargıyı askıya almaya ___ denir.",
+          "cevap": "epokhe"
+        },
+        {
+          "metin": "Bilginin, kendiliğinden gerekçeli temel inançlar üzerine kurulduğunu savunan görüşe ___ denir.",
+          "cevap": "temelcilik"
+        },
+        {
+          "metin": "Leibniz zihni boş bir levhaya değil, damarlı bir ___ bloğuna benzetir.",
+          "cevap": "mermer"
+        },
+        {
+          "metin": "Viyana Çevresi'nin anlamlı önermeleri ayırmak için kullandığı ölçüte ___ ilkesi denir.",
+          "cevap": "doğrulanabilirlik"
+        }
+      ],
+      "kelimeler": [
+        "sağlam",
+        "epokhe",
+        "temelcilik",
+        "mermer",
+        "doğrulanabilirlik"
+      ],
+      "fazla": [
+        "ataraxia",
+        "pragmatizm"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Sınıf tartışmasında Efe şöyle diyor: “Hiçbir şeyi bilemeyiz. Çünkü bir şeyi bildiğimizi söylemek için gerekçe göstermemiz gerekir; o gerekçenin de gerekçesi olmalıdır ve bu zincir asla bitmez.” Zeynep ise “Efe kendisiyle çelişiyor, çünkü bunu bildiğini iddia ediyor.” diye karşılık veriyor. Efe'nin argümanını yeniden kurunuz, Zeynep'in itirazını değerlendiriniz ve gerekçelendirme kuramları açısından kendi gerekçeli yargınıza varınız.",
+      "ipuclari": [
+        "1. adım: Efe'nin argümanını numaralı öncüllere ve sonuca ayır; argümanın geçerli olup olmadığını ve hangi antik şüpheci soruna dayandığını belirle.",
+        "2. adım: Zeynep'in itirazının türünü adlandır. Bu itiraz kesin hüküm veren bir şüpheciye mi, yoksa yargıyı askıya alan bir Pyrrhoncuya mı daha güçlü biçimde yönelir? Efe argümanını nasıl yeniden ifade ederse itirazdan kurtulabilir?",
+        "3. adım: Zincirin bitmeyeceği öncülüne temelciliğin, tutarlılıkçılığın ve Haack'ın modelinin nasıl yanıt verdiğini karşılaştır; yanılabilirciliği de dikkate alarak sonuç yargını gerekçelendir."
+      ],
+      "cevap": "{koyu:1. Argümanın yeniden kurulması:} Öncül 1: Bir şeyi bilmek için onu gerekçelendirmek gerekir. Öncül 2: Her gerekçe de ayrıca gerekçelendirilmelidir. Öncül 3: Bu zincir hiçbir zaman sonlanmaz. Sonuç: Hiçbir şeyi bilemeyiz. Öncüller doğru kabul edilirse sonuç çıkar; argüman {koyu:geçerlidir}. Dayandığı sorun, Agrippa üçleminin {koyu:sonsuz geriye gidiş} seçeneğidir.\n{koyu:2. Zeynep'in itirazının değerlendirilmesi:} Zeynep {koyu:kendini çürütme} itirazını kullanmaktadır: Efe “Hiçbir şeyi bilemeyiz.” sonucunu bildiğini iddia ederse kendisiyle çelişir. Bu itiraz, kesin hüküm veren dogmatik bir şüpheciye karşı güçlüdür. Ancak Efe argümanını Pyrrhoncu biçimde yeniden ifade edebilir: “Hiçbir şeyi bilemeyeceğimizi de iddia etmiyorum; yalnızca gerekçelerin bana yetersiz göründüğünü söylüyor ve yargımı askıya alıyorum.” Bu durumda itirazın gücü azalır; dolayısıyla Zeynep'in itirazı haklı ama {koyu:tek başına yeterli değildir}. Asıl tartışılması gereken, Efe'nin öncülleridir.\n{koyu:3. Öncüllerin sınanması:} {koyu:Temelci}, ikinci öncülü reddeder: Bazı inançlar (apaçık akıl ilkeleri ya da “Şu an başım ağrıyor.” gibi doğrudan deneyimler) başka bir gerekçeye ihtiyaç duymaz; zincir burada keyfî olmayan biçimde durur. {koyu:Tutarlılıkçı}, gerekçelendirmenin doğrusal bir zincir olduğu varsayımını reddeder: İnançlar bir ağ gibi birbirini karşılıklı destekler; Neurath'ın gemisi gibi bilgi temelsiz ama sürekli onarılarak ayakta kalır. {koyu:Haack}, iki görüşü birleştirir: Deneyim (ipucu) ve diğer inançlarla uyum (kesişen kelimeler) birlikte gerekçe sağlar. Ayrıca {koyu:yanılabilircilik}, birinci öncüldeki gerekçelendirmenin kesinlik gerektirmediğini hatırlatır.\n{koyu:4. Yargı:} Efe'nin argümanı geçerlidir ama {koyu:sağlamlığı tartışmalıdır}; çünkü “zincir asla bitmez” öncülü, temel inançların ya da karşılıklı desteğin mümkün olmadığını kanıtlanmadan varsayar. Benim yargım şudur: Efe'nin argümanı mutlak kesinliğe ulaşmanın zor olduğunu başarıyla gösterir; ama “hiçbir şeyi bilemeyiz” sonucuna varmak için yeterli değildir. Deneyim ve tutarlılıkla desteklenen, yanılmaya açık ama iyi gerekçeli inançlar bilgi sayılabilir. Bu tartışma, şüphenin düşünmeyi durdurmak için değil, gerekçelerimizi güçlendirmek için kullanıldığında değerli olduğunu gösterir."
+    }
+  ]
+}

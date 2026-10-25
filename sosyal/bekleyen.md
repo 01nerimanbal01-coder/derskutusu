@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 1062 gönderi.
+Toplam 1069 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -10627,4 +10627,74 @@ Bunu biliyor muydunuz? Derinleşen merak: İyi bir inceleme yalnız “ne oldu?�
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 9. sınıf Temel Dinî Bilgiler 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-temel-dini-bilgiler-hafta-16
 #derskutusu #temeldinibilgiler #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-felsefe-16
+Sıra: 2027-02-25 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-felsefe-16.png
+
+```
+Bunu biliyor muydunuz? Argüman değerlendirme: Bir felsefi argüman öncüller ve sonuçtan oluşur; öncüller doğruyken sonucun yanlış olamadığı argüman geçerli, hem geçerli hem de öncülleri doğru olan argüman sağlam sayılır. Antik şüphecilik: Protagoras bilgiyi bireye göre görecelileştirmiş, Gorgias bilginin imkânını üç basamakta reddetmiş, Pyrrhon ise eşit güçteki karşıt görüşler karşısında yargıyı askıya almayı (epokhe) önermiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Felsefe 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-felsefe-hafta-16
+#derskutusu #felsefe #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-hadis-16
+Sıra: 2027-02-25 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-hadis-16.png
+
+```
+Bunu biliyor muydunuz? Dağınık bölümler: İman esaslarıyla ilgili hadisler yalnız Kitâbü'l-Îmân'da değil; melekler için Bed'ü'l-halk, peygamberler için Enbiyâ, ahiret için Rikâk ve Zühd, kader için Kitâbü'l-Kader bölümlerinde de toplanmıştır. İki atıf sistemi: Bir hadis “Müslim, Zühd, 64” gibi bölüm-sıra sistemiyle ya da “Müslim, No. 2999” gibi genel numarayla gösterilebilir; ikisi aynı rivayeti işaret eder.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Hadis 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-hadis-hafta-16
+#derskutusu #hadis #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-kuran-i-kerim-16
+Sıra: 2027-02-26 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-kuran-i-kerim-16.png
+
+```
+Bunu biliyor muydunuz? Okuma mertebeleri: Tahkik ağır ve titiz, tedvir orta hızlı, hadr hızlı okuyuştur; hangisi seçilirse seçilsin tecvit korunur ve seçilen med-gunne ölçüsü okuma boyunca değiştirilmez. Değerlendirme: Mahreç-sıfat, tecvit, vakıf-ibtidâ, akıcılık ve ölçü tutarlılığı ölçütleriyle yapılan dereceli puanlama, tilavetteki güçlü ve geliştirilecek yönleri somut biçimde gösterir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Kur’an-ı Kerim 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-kuran-i-kerim-hafta-16
+#derskutusu #kuranıkerim #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-matematik-16
+Sıra: 2027-02-26 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-matematik-16.png
+
+```
+Bunu biliyor muydunuz? Yatay öteleme: g(x) = f(x − r) = (x − r)² fonksiyonunun grafiği, r > 0 ise referans parabolün r birim sağa, g(x) = (x + r)² ise r birim sola ötelenmişidir; parantezin içini sıfır yapan x değeri tepe noktasının apsisidir. Tepe noktası biçimi: g(x) = a · (x − r)² + k fonksiyonunda referans parabolün her (x, y) noktası (x + r, a · y + k) noktasına gider; tepe noktası T(r, k), simetri ekseni x = r doğrusudur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Matematik 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-matematik-hafta-16
+#derskutusu #matematik #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-peygamberimizin-hayati-16
+Sıra: 2027-02-26 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-peygamberimizin-hayati-16.png
+
+```
+Bunu biliyor muydunuz? Güvene dayalı davet: Kureyş’in sevilen, danışılan ve nesep bilgisiyle tanınan bu tüccarın daveti; Osman b. Affân, Zübeyr b. Avvâm, Abdurrahman b. Avf, Sa’d b. Ebî Vakkās ve Talha b. Ubeydullah’ın İslam’a girmesine vesile olmuştur. İnfak ve özgürlük: İşkence gören Bilâl-i Habeşî, Âmir b. Füheyre ve Zinnîre gibi Müslümanları satın alıp azat etmiştir. Tefsirlerde Leyl suresinin 17-21. ayetlerinin onun bu ihlaslı infakıyla ilişkilendirildiği rivayet edilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Peygamberimizin Hayatı 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-peygamberimizin-hayati-hafta-16
+#derskutusu #peygamberimizinhayatı #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-siyer-16
+Sıra: 2027-02-26 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-siyer-16.png
+
+```
+Bunu biliyor muydunuz? Arka plan: Boykotun hemen ardından gelen ve Ebû Tâlib ile Hz. Hatice'nin vefat ettiği yıl, Hüzün Yılı olarak anılır; Hz. Peygamber hem en büyük koruyucusunu hem de en yakın destekçisini kaybetmiştir. Yolculuğun amacı: Mekke'de himayenin zayıflaması ve baskının artması üzerine Hz. Peygamber, nübüvvetin onuncu yılı Şevval ayında Zeyd b. Hârise ile birlikte Tâif'e giderek Sakîf kabilesini İslam'a ve davete destek vermeye çağırmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Siyer 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-siyer-hafta-16
+#derskutusu #siyer #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-10-tarih-16
+Sıra: 2027-02-26 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-tarih-16.png
+
+```
+Bunu biliyor muydunuz? Devletleşme: Osmanlı'nın aşiret düzeninden kurumsal devlete geçişi; hanedan, para, divan, düzenli ordu, kadılık teşkilatı ve toprak düzeninin birbirini tamamlayarak ortaya çıkmasıyla gerçekleşmiştir. Kapıkulu ve eyalet askerleri: Merkezde padişaha doğrudan bağlı, maaşlı ve sürekli kapıkulu askerleri; taşrada tımar geliriyle geçinen sipahiler ve sınır boylarında akıncılar bulunuyordu.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 10. sınıf Tarih 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-tarih-hafta-16
+#derskutusu #tarih #10sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
