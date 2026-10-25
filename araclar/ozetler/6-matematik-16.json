@@ -1,0 +1,567 @@
+{
+  "ad": "6-matematik-16",
+  "sinif": 6,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "İstatistiksel Araştırma Süreci",
+  "konu": "Kategorik ve Nicel (Kesikli) Veri Dağılımları: Dağılımları Yorumlama, Grupları Karşılaştırma ve Veriye Dayalı Karar Verme",
+  "ciktilar": [
+    "MAT.6.5.1. Kategorik veya nicel (kesikli) veri ile çalışabilme ve veriye dayalı karar verebilme (a-b. İstatistiksel araştırma gerektiren durumları fark eder; betimleme veya karşılaştırma gerektirebilecek araştırma soruları oluşturur).",
+    "MAT.6.5.1.c-ç. Kategorik veya nicel (kesikli) veriye ulaşmak için plan yapar; anket sorularıyla veri toplar veya hazır veriye ulaşır.",
+    "MAT.6.5.1.d-e. Veri görselleştirme (kök-yaprak gösterimi, nokta grafiği gibi) ve özetleme (aritmetik ortalama, ortanca, tepe değer ve açıklık) araçlarını seçme gerekçelerini belirtir; toplanan veriyi uygun araçlarla analiz eder.",
+    "MAT.6.5.1.f-g. Araştırmada ulaştığı sonuçlara yönelik gerekçeler sunar; sonuçların araştırma sorusuna ne düzeyde cevap verdiğini değerlendirerek uygun olmayan adımları yeniden planlar."
+  ],
+  "giris": "Geçen hafta bir istatistiksel araştırmayı baştan sona yürüttük. Bu hafta elimizdeki verileri daha derinlemesine okumayı öğreniyoruz: Farklı büyüklükteki grupları {koyu:oranlarla} karşılaştıracak, iki kategorik değişkeni {koyu:çapraz tabloda} birlikte inceleyecek, nokta grafiğinde dağılımın {koyu:biçimini} yorumlayacak ve iki grubu {koyu:ikili kök-yaprak gösterimiyle} yan yana koyacağız. Ardından veriler değiştiğinde özet ölçülerin nasıl değiştiğini keşfedip gerçek yaşam senaryolarında {koyu:veriye dayalı kararlar} vereceğiz.",
+  "ozet": [
+    "{koyu:Göreli sıklık:} Öğrenci sayıları farklı olan iki grupta kategorik veriler ham sıklıklarla değil, sıklık ÷ toplam biçiminde bulunan oranlarla (kesir veya yüzde) karşılaştırılır.",
+    "{koyu:Çapraz tablo:} İki kategorik değişken (örneğin cinsiyet ve kulüp tercihi) satır ve sütunlarda birlikte gösterilir; satır ve sütun toplamları genel toplamı kontrol etmeye yarar, veriler gruplandırılmış sütun grafiğiyle görselleştirilir.",
+    "{koyu:Dağılımın biçimi:} Nokta grafiğinde verilerin toplandığı yer (yığılma), hiç veri olmayan aralık (boşluk), uzakta kalan değer (uç değer) ve grafiğin iki yanının benzerliği (simetri) yorumlanır.",
+    "{koyu:İkili kök-yaprak:} İki grubun iki basamaklı verileri ortak köklerin iki yanına yazılarak tek bakışta karşılaştırılır; sol taraftaki yapraklar kökten dışarı doğru okunur.",
+    "{koyu:Ölçülerin değişimi:} Tüm verilere aynı sayı eklenirse ortalama, ortanca ve tepe değer o kadar artar, açıklık değişmez; toplam = ortalama × veri sayısı kuralıyla eksik veri bulunur.",
+    "{koyu:Karar verme:} Ortalamaları eşit iki grupta açıklık tutarlılığı gösterir; karar, uygun ölçüye dayanan gerekçeli ve sınırlılıkları belirtilmiş bir rapor cümlesiyle sunulur."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Kategorik Veride Farklı Büyüklükteki Grupları Oranla Karşılaştırma",
+      "metin": [
+        "Bir araştırmada iki sınıfa “Okula nasıl geliyorsun?” diye sorduğumuzu düşünelim. 6-A sınıfında {koyu:20}, 6-B sınıfında {koyu:25} öğrenci vardır. 6-A'da 8 öğrenci, 6-B'de 10 öğrenci yürüyerek geldiğini söylemiştir. İlk bakışta “6-B'de yürüyen öğrenci daha çok” deriz; sayı olarak bu doğrudur. Ancak araştırma sorumuz “Hangi sınıfta yürüyerek gelmek daha yaygındır?” ise bu karşılaştırma adil değildir, çünkü 6-B'de zaten daha çok öğrenci vardır. Kalabalık bir grupta her kategorinin sıklığı doğal olarak büyük çıkabilir. Bu nedenle farklı büyüklükteki grupları karşılaştırırken {koyu:ham sıklık} yerine {koyu:oranları} kullanırız.",
+        "Bir kategorinin sıklığının toplam veri sayısına bölünmesiyle bulunan değere {koyu:göreli sıklık} denir. 6-A'da yürüyenlerin göreli sıklığı {kesir:8|20} = {kesir:2|5}, 6-B'de ise {kesir:10|25} = {kesir:2|5} olur. Paydası 100 olacak biçimde genişletirsek {kesir:2|5} = {kesir:40|100}, yani her iki sınıfta da öğrencilerin {koyu:%40}'ı yürüyerek gelmektedir. Görüldüğü gibi “6-B'de daha çok yürüyen var” cümlesi sayı olarak doğru, ama oran olarak iki sınıf eşittir. Servisle gelenlerde durum farklıdır: 6-A'da {kesir:6|20} = %30, 6-B'de {kesir:9|25} = {kesir:36|100} = %36. Demek ki servis kullanımı 6-B'de daha yaygındır.",
+        "Göreli sıklıkların toplamı her zaman 1'e, yüzdelerin toplamı da %100'e eşittir; bu, hesaplarımızı kontrol etmenin kolay bir yoludur. Oranları görselleştirmek için {koyu:yüzde şeridi} (her sınıf için aynı uzunlukta, kategorilere bölünmüş bir şerit) ya da her sınıf için ayrı ama aynı ölçekli sütun grafikleri kullanılır. Kategorik verinin özet ölçüsü yine {koyu:tepe değerdir}; her iki sınıfta da tepe değer “Yürüyerek”tir. Oranla karşılaştırma, kategorik verilerde ortalama hesaplamadan da güçlü ve adil yorumlar yapmamızı sağlar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Geliş yolu",
+          "6-A sıklık",
+          "6-A oran",
+          "6-B sıklık",
+          "6-B oran"
+        ],
+        "satirlar": [
+          [
+            "Yürüyerek",
+            "8",
+            "8 ÷ 20 = %40",
+            "10",
+            "10 ÷ 25 = %40"
+          ],
+          [
+            "Servis",
+            "6",
+            "6 ÷ 20 = %30",
+            "9",
+            "9 ÷ 25 = %36"
+          ],
+          [
+            "Otomobil",
+            "4",
+            "4 ÷ 20 = %20",
+            "4",
+            "4 ÷ 25 = %16"
+          ],
+          [
+            "Bisiklet",
+            "2",
+            "2 ÷ 20 = %10",
+            "2",
+            "2 ÷ 25 = %8"
+          ],
+          [
+            "Toplam",
+            "20",
+            "%100",
+            "25",
+            "%100"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Göreli Sıklık",
+          "metin": "Bir kategorinin sıklığının toplam veri sayısına oranına {koyu:göreli sıklık} denir: Göreli sıklık = {kesir:kategorinin sıklığı|toplam veri sayısı}. Paydayı 100'e tamamlayarak yüzdeye çevirebiliriz."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Eşit Sıklık, Farklı Oran",
+          "metin": "Otomobille gelen öğrenci sayısı iki sınıfta da 4'tür; ama 6-A'da bu %20, 6-B'de %16'dır. Grupların büyüklüğü farklıysa eşit sıklıklar eşit yaygınlık anlamına gelmez."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='30' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>OKULA GELİŞ YOLU: YÜZDE ŞERİDİYLE KARŞILAŞTIRMA</text><text x='60' y='92' text-anchor='middle' font-size='13' font-weight='bold' fill='#1e293b'>6-A</text><text x='60' y='108' text-anchor='middle' font-size='10.5' fill='#475569'>(20 kişi)</text><rect x='110' y='70' width='240' height='44' fill='#3b82f6'/><rect x='350' y='70' width='180' height='44' fill='#f59e0b'/><rect x='530' y='70' width='120' height='44' fill='#10b981'/><rect x='650' y='70' width='60' height='44' fill='#a855f7'/><text x='230' y='97' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>%40</text><text x='440' y='97' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>%30</text><text x='590' y='97' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>%20</text><text x='680' y='97' text-anchor='middle' font-size='12' font-weight='bold' fill='#ffffff'>%10</text><text x='60' y='172' text-anchor='middle' font-size='13' font-weight='bold' fill='#1e293b'>6-B</text><text x='60' y='188' text-anchor='middle' font-size='10.5' fill='#475569'>(25 kişi)</text><rect x='110' y='150' width='240' height='44' fill='#3b82f6'/><rect x='350' y='150' width='216' height='44' fill='#f59e0b'/><rect x='566' y='150' width='96' height='44' fill='#10b981'/><rect x='662' y='150' width='48' height='44' fill='#a855f7'/><text x='230' y='177' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>%40</text><text x='458' y='177' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>%36</text><text x='614' y='177' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>%16</text><text x='686' y='177' text-anchor='middle' font-size='11' font-weight='bold' fill='#ffffff'>%8</text><rect x='110' y='225' width='14' height='14' rx='3' fill='#3b82f6'/><text x='130' y='237' font-size='12' fill='#1e293b'>Yürüyerek</text><rect x='240' y='225' width='14' height='14' rx='3' fill='#f59e0b'/><text x='260' y='237' font-size='12' fill='#1e293b'>Servis</text><rect x='350' y='225' width='14' height='14' rx='3' fill='#10b981'/><text x='370' y='237' font-size='12' fill='#1e293b'>Otomobil</text><rect x='470' y='225' width='14' height='14' rx='3' fill='#a855f7'/><text x='490' y='237' font-size='12' fill='#1e293b'>Bisiklet</text><rect x='110' y='252' width='600' height='34' rx='8' fill='#e0f2fe' stroke='#0284c7'/><text x='410' y='274' text-anchor='middle' font-size='12' fill='#0c4a6e'>Şeritlerin boyu eşit (%100): Yürüyenlerin oranı iki sınıfta da %40, servis 6-B'de daha yaygın.</text></svg>"
+    },
+    {
+      "baslik": "İki Kategorik Değişkeni Birlikte İnceleme: Çapraz Tablo",
+      "metin": [
+        "Bazen bir araştırmada aynı kişilerden iki farklı kategorik bilgi toplarız. Örneğin okulun 6. sınıflarındaki 40 öğrenciye hem cinsiyetini hem de katılmak istediği kulübü (Satranç, Spor, Müzik) sorduğumuzu düşünelim. Bu iki bilgiyi aynı anda göstermek için satırlarda bir değişkenin, sütunlarda diğer değişkenin kategorilerinin yer aldığı {koyu:çapraz tablo} (iki yönlü tablo) kullanılır. Tablonun her hücresi, iki özelliği birlikte taşıyan öğrenci sayısını gösterir: “Kız ve Müzik” hücresindeki 8, müzik kulübünü seçen kız öğrenci sayısıdır.",
+        "Çapraz tabloda {koyu:satır toplamları} ve {koyu:sütun toplamları} da yazılır. Satır toplamları her gruptaki öğrenci sayısını (20 kız, 20 erkek), sütun toplamları her kulübü seçen toplam öğrenci sayısını (Satranç 11, Spor 17, Müzik 12) verir. Hem satır toplamlarının hem de sütun toplamlarının toplamı {koyu:genel toplamı} (40) vermelidir; bu, verilerin eksiksiz ve doğru işlendiğini gösteren bir kontroldür. Bir hücre boş bırakılmışsa satır ya da sütun toplamından çıkarma yaparak o hücreyi bulabiliriz.",
+        "Çapraz tablo bize tek bir değişkene bakarak göremeyeceğimiz ayrıntıları gösterir. Tüm öğrencilerde tepe değer {koyu:Spor} (17 kişi) olsa da kız öğrencilerde tepe değer {koyu:Müzik} (8), erkek öğrencilerde {koyu:Spor} (10) olmuştur. Yani “Okulda en çok spor kulübü isteniyor” sonucu doğrudur, ama “Kızların çoğu spor kulübü istiyor” sonucu yanlış olur. Bu verileri görselleştirmek için her kulübün üstüne kız ve erkek sütunlarını yan yana çizdiğimiz {koyu:gruplandırılmış sütun grafiği} uygundur. Okul yönetimi bu bilgiyle hem spor kulübünü büyütmeye hem de müzik kulübünü açık tutmaya karar verebilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "",
+          "Satranç",
+          "Spor",
+          "Müzik",
+          "Satır toplamı"
+        ],
+        "satirlar": [
+          [
+            "Kız",
+            "5",
+            "7",
+            "8",
+            "20"
+          ],
+          [
+            "Erkek",
+            "6",
+            "10",
+            "4",
+            "20"
+          ],
+          [
+            "Sütun toplamı",
+            "11",
+            "17",
+            "12",
+            "40"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Çapraz Tablo Kontrolü",
+          "metin": "Satır toplamlarının toplamı = Sütun toplamlarının toplamı = Genel toplam. Örnekte 20 + 20 = 11 + 17 + 12 = 40. Eşitlik sağlanmıyorsa bir hücre yanlış yazılmıştır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Hangi Toplama Göre Oran?",
+          "metin": "“Kızların kaçta kaçı müzik seçti?” sorusunda payda kız sayısıdır: {kesir:8|20}. “Müziği seçenlerin kaçta kaçı kızdır?” sorusunda ise payda müzik sütununun toplamıdır: {kesir:8|12}. Sorunun hangi gruptan söz ettiğine dikkat et."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>KULÜP TERCİHİ: GRUPLANDIRILMIŞ SÜTUN GRAFİĞİ</text><line x1='90' y1='250' x2='600' y2='250' stroke='#334155' stroke-width='2'/><line x1='90' y1='250' x2='90' y2='60' stroke='#334155' stroke-width='2'/><line x1='90' y1='214' x2='600' y2='214' stroke='#cbd5e1'/><line x1='90' y1='178' x2='600' y2='178' stroke='#cbd5e1'/><line x1='90' y1='142' x2='600' y2='142' stroke='#cbd5e1'/><line x1='90' y1='106' x2='600' y2='106' stroke='#cbd5e1'/><line x1='90' y1='70' x2='600' y2='70' stroke='#cbd5e1'/><text x='80' y='254' text-anchor='end' font-size='11' fill='#475569'>0</text><text x='80' y='218' text-anchor='end' font-size='11' fill='#475569'>2</text><text x='80' y='182' text-anchor='end' font-size='11' fill='#475569'>4</text><text x='80' y='146' text-anchor='end' font-size='11' fill='#475569'>6</text><text x='80' y='110' text-anchor='end' font-size='11' fill='#475569'>8</text><text x='80' y='74' text-anchor='end' font-size='11' fill='#475569'>10</text><text x='40' y='160' text-anchor='middle' font-size='11' fill='#475569' transform='rotate(-90 40 160)'>Öğrenci sayısı</text><rect x='130' y='160' width='45' height='90' fill='#ec4899'/><rect x='180' y='142' width='45' height='108' fill='#3b82f6'/><text x='152' y='154' text-anchor='middle' font-size='11' font-weight='bold' fill='#1e293b'>5</text><text x='202' y='136' text-anchor='middle' font-size='11' font-weight='bold' fill='#1e293b'>6</text><rect x='290' y='124' width='45' height='126' fill='#ec4899'/><rect x='340' y='70' width='45' height='180' fill='#3b82f6'/><text x='312' y='118' text-anchor='middle' font-size='11' font-weight='bold' fill='#1e293b'>7</text><text x='362' y='64' text-anchor='middle' font-size='11' font-weight='bold' fill='#1e293b'>10</text><rect x='450' y='106' width='45' height='144' fill='#ec4899'/><rect x='500' y='178' width='45' height='72' fill='#3b82f6'/><text x='472' y='100' text-anchor='middle' font-size='11' font-weight='bold' fill='#1e293b'>8</text><text x='522' y='172' text-anchor='middle' font-size='11' font-weight='bold' fill='#1e293b'>4</text><text x='177' y='270' text-anchor='middle' font-size='12' fill='#1e293b'>Satranç</text><text x='337' y='270' text-anchor='middle' font-size='12' fill='#1e293b'>Spor</text><text x='497' y='270' text-anchor='middle' font-size='12' fill='#1e293b'>Müzik</text><rect x='620' y='70' width='125' height='170' rx='10' fill='#ffffff' stroke='#94a3b8'/><rect x='635' y='88' width='14' height='14' rx='3' fill='#ec4899'/><text x='655' y='100' font-size='12' fill='#1e293b'>Kız</text><rect x='635' y='112' width='14' height='14' rx='3' fill='#3b82f6'/><text x='655' y='124' font-size='12' fill='#1e293b'>Erkek</text><text x='682' y='156' text-anchor='middle' font-size='11' font-weight='bold' fill='#be185d'>Kızlarda tepe</text><text x='682' y='172' text-anchor='middle' font-size='11' fill='#be185d'>değer: Müzik</text><text x='682' y='202' text-anchor='middle' font-size='11' font-weight='bold' fill='#1d4ed8'>Erkeklerde tepe</text><text x='682' y='218' text-anchor='middle' font-size='11' fill='#1d4ed8'>değer: Spor</text></svg>"
+    },
+    {
+      "baslik": "Nokta Grafiğinde Dağılımın Biçimini Okuma",
+      "metin": [
+        "Nokta grafiği yalnız ortalama ve ortanca hesaplamak için değil, verilerin {koyu:nasıl dağıldığını} görmek için de çok değerlidir. Bir nokta grafiğine bakarken dört özelliği ararız: {koyu:Yığılma (küme)}, verilerin çoğunun toplandığı aralıktır. {koyu:Boşluk}, sayı doğrusunda hiç verinin bulunmadığı aralıktır. {koyu:Uç değer}, verilerin büyük bölümünden çok uzakta kalan tek tük değerdir. {koyu:Simetri} ise grafiğin orta noktasının sağ ve sol tarafının birbirine benzemesidir. Bu özellikleri cümleyle anlatmaya {koyu:dağılımı betimlemek} denir.",
+        "Aşağıdaki görselde iki sınıfın 10 soruluk bir testteki doğru sayıları gösterilmiştir. Birinci sınıfta 16 öğrencinin doğru sayıları 4 ile 10 arasında yayılmış ve noktalar 7'nin etrafında bir dağ biçiminde toplanmıştır; 7'nin sağı ve solu birbirine benzer, yani dağılım {koyu:simetriktir}. Bu sınıfta ortalama {kesir:112|16} = 7, ortanca 7 ve tepe değer 7'dir; simetrik dağılımlarda bu üç ölçü birbirine eşit ya da çok yakın çıkar. Açıklık 10 − 4 = 6'dır.",
+        "İkinci sınıfta noktaların çoğu 7 ile 10 arasında {koyu:yığılmıştır}; 3, 4, 5 ve 6 değerlerinde hiç nokta yoktur, yani 3-6 aralığında bir {koyu:boşluk} vardır. 2 doğru yapan tek öğrenci {koyu:uç değerdir}. Bu sınıfta toplam 128, ortalama {kesir:128|16} = 8, ortanca 8 ve tepe değer 8'dir; açıklık ise 10 − 2 = 8'dir. Uç değer açıklığı büyütmüştür: 2 çıkarılsaydı açıklık 10 − 7 = 3 olurdu. Öğretmen bu grafiğe bakarak “Sınıfın büyük bölümü konuyu iyi kavramış, ama 2 doğru yapan arkadaşımız için ek çalışma gerekiyor.” diyebilir. Yalnız ortalamaya baksaydı bu öğrenciyi fark etmeyebilirdi."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Grafikte nasıl görünür?",
+          "Ne anlatır?"
+        ],
+        "satirlar": [
+          [
+            "Yığılma (küme)",
+            "Noktaların üst üste biriktiği aralık",
+            "Tipik (yaygın) değerler bu aralıktadır."
+          ],
+          [
+            "Boşluk",
+            "Sayı doğrusunda noktasız aralık",
+            "O değerleri alan kimse yoktur."
+          ],
+          [
+            "Uç değer",
+            "Diğerlerinden çok uzakta tek nokta",
+            "Açıklığı ve ortalamayı etkiler; ayrıca incelenmelidir."
+          ],
+          [
+            "Simetri",
+            "Ortanın iki yanı birbirine benzer",
+            "Ortalama, ortanca ve tepe değer birbirine yakındır."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Dağılımı Betimlemek",
+          "metin": "Bir veri grubunun nerede yığıldığını, nerede boşluk bulunduğunu, uç değer olup olmadığını ve ne kadar yayıldığını cümlelerle anlatmaya {koyu:dağılımı betimlemek} denir. İyi bir betimleme bir özet ölçüsü ve açıklığı da içerir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Önce Göz, Sonra Hesap",
+          "metin": "Hesaplamaya başlamadan önce nokta grafiğine bir bak: Uç değer görüyorsan ortancanın sınıfı daha iyi temsil edeceğini, simetrik bir dağılım görüyorsan ortalama ile ortancanın yakın çıkacağını tahmin edebilirsin."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 360' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='360' rx='14' fill='#f8fafc'/><text x='380' y='26' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>10 SORULUK TESTTE DOĞRU SAYILARI: DAĞILIMIN BİÇİMİ</text><text x='40' y='62' font-size='12.5' font-weight='bold' fill='#1d4ed8'>1. sınıf (16 öğrenci): simetrik dağılım</text><line x1='40' y1='150' x2='690' y2='150' stroke='#334155' stroke-width='2'/><text x='60' y='168' text-anchor='middle' font-size='11' fill='#475569'>0</text><text x='120' y='168' text-anchor='middle' font-size='11' fill='#475569'>1</text><text x='180' y='168' text-anchor='middle' font-size='11' fill='#475569'>2</text><text x='240' y='168' text-anchor='middle' font-size='11' fill='#475569'>3</text><text x='300' y='168' text-anchor='middle' font-size='11' fill='#475569'>4</text><text x='360' y='168' text-anchor='middle' font-size='11' fill='#475569'>5</text><text x='420' y='168' text-anchor='middle' font-size='11' fill='#475569'>6</text><text x='480' y='168' text-anchor='middle' font-size='11' fill='#475569'>7</text><text x='540' y='168' text-anchor='middle' font-size='11' fill='#475569'>8</text><text x='600' y='168' text-anchor='middle' font-size='11' fill='#475569'>9</text><text x='660' y='168' text-anchor='middle' font-size='11' fill='#475569'>10</text><circle cx='300' cy='138' r='7' fill='#3b82f6'/><circle cx='360' cy='138' r='7' fill='#3b82f6'/><circle cx='360' cy='122' r='7' fill='#3b82f6'/><circle cx='420' cy='138' r='7' fill='#3b82f6'/><circle cx='420' cy='122' r='7' fill='#3b82f6'/><circle cx='420' cy='106' r='7' fill='#3b82f6'/><circle cx='480' cy='138' r='7' fill='#3b82f6'/><circle cx='480' cy='122' r='7' fill='#3b82f6'/><circle cx='480' cy='106' r='7' fill='#3b82f6'/><circle cx='480' cy='90' r='7' fill='#3b82f6'/><circle cx='540' cy='138' r='7' fill='#3b82f6'/><circle cx='540' cy='122' r='7' fill='#3b82f6'/><circle cx='540' cy='106' r='7' fill='#3b82f6'/><circle cx='600' cy='138' r='7' fill='#3b82f6'/><circle cx='600' cy='122' r='7' fill='#3b82f6'/><circle cx='660' cy='138' r='7' fill='#3b82f6'/><text x='130' y='110' font-size='11' fill='#1e3a8a'>ortalama = ortanca</text><text x='130' y='125' font-size='11' fill='#1e3a8a'>= tepe değer = 7</text><text x='40' y='200' font-size='12.5' font-weight='bold' fill='#b45309'>2. sınıf (16 öğrenci): yığılma, boşluk ve uç değer</text><line x1='40' y1='320' x2='690' y2='320' stroke='#334155' stroke-width='2'/><text x='60' y='338' text-anchor='middle' font-size='11' fill='#475569'>0</text><text x='120' y='338' text-anchor='middle' font-size='11' fill='#475569'>1</text><text x='180' y='338' text-anchor='middle' font-size='11' fill='#475569'>2</text><text x='240' y='338' text-anchor='middle' font-size='11' fill='#475569'>3</text><text x='300' y='338' text-anchor='middle' font-size='11' fill='#475569'>4</text><text x='360' y='338' text-anchor='middle' font-size='11' fill='#475569'>5</text><text x='420' y='338' text-anchor='middle' font-size='11' fill='#475569'>6</text><text x='480' y='338' text-anchor='middle' font-size='11' fill='#475569'>7</text><text x='540' y='338' text-anchor='middle' font-size='11' fill='#475569'>8</text><text x='600' y='338' text-anchor='middle' font-size='11' fill='#475569'>9</text><text x='660' y='338' text-anchor='middle' font-size='11' fill='#475569'>10</text><circle cx='180' cy='308' r='7' fill='#ef4444'/><text x='180' y='290' text-anchor='middle' font-size='11' font-weight='bold' fill='#b91c1c'>uç değer</text><rect x='228' y='296' width='204' height='22' rx='6' fill='#fef3c7' stroke='#f59e0b' stroke-dasharray='4 3'/><text x='330' y='311' text-anchor='middle' font-size='11' fill='#92400e'>boşluk (3-6)</text><circle cx='480' cy='308' r='7' fill='#f59e0b'/><circle cx='480' cy='292' r='7' fill='#f59e0b'/><circle cx='480' cy='276' r='7' fill='#f59e0b'/><circle cx='540' cy='308' r='7' fill='#f59e0b'/><circle cx='540' cy='292' r='7' fill='#f59e0b'/><circle cx='540' cy='276' r='7' fill='#f59e0b'/><circle cx='540' cy='260' r='7' fill='#f59e0b'/><circle cx='540' cy='244' r='7' fill='#f59e0b'/><circle cx='540' cy='228' r='7' fill='#f59e0b'/><circle cx='600' cy='308' r='7' fill='#f59e0b'/><circle cx='600' cy='292' r='7' fill='#f59e0b'/><circle cx='600' cy='276' r='7' fill='#f59e0b'/><circle cx='660' cy='308' r='7' fill='#f59e0b'/><circle cx='660' cy='292' r='7' fill='#f59e0b'/><circle cx='660' cy='276' r='7' fill='#f59e0b'/><text x='570' y='214' text-anchor='middle' font-size='11' font-weight='bold' fill='#92400e'>yığılma (7-10)</text></svg>"
+    },
+    {
+      "baslik": "İkili Kök-Yaprak Gösterimiyle İki Grubu Karşılaştırma",
+      "metin": [
+        "Kök-yaprak gösterimini tek bir veri grubu için kullanmayı daha önce öğrenmiştik. İki grubu karşılaştırmak istediğimizde iki ayrı gösterim çizmek yerine {koyu:ikili (sırt sırta) kök-yaprak gösterimi} kullanabiliriz. Bu gösterimde onlar basamakları (kökler) ortadaki sütuna bir kez yazılır; birinci grubun yaprakları kökün {koyu:soluna}, ikinci grubun yaprakları kökün {koyu:sağına} yerleştirilir. Sağ taraftaki yapraklar kökten uzaklaştıkça büyür; sol taraftaki yapraklar da kökten dışarı doğru, yani sağdan sola küçükten büyüğe yazılır. Örneğin solda “7 3 | 2” satırı 23 ve 27 sayılarını gösterir.",
+        "Beden eğitimi dersinde 6-A ve 6-B sınıflarından 10'ar öğrencinin bir dakikada atladığı ip sayısı kaydedilmiştir. {koyu:6-A:} 23, 27, 31, 34, 35, 38, 42, 45, 46, 59. {koyu:6-B:} 18, 29, 33, 36, 41, 44, 47, 48, 52, 56. Veriler sayma ile elde edilmiş, iki basamaklı ve 18-59 gibi geniş bir aralıkta olduğundan nokta grafiği çok uzun olur; kök-yaprak gösterimi ise hem her veriyi korur hem de dağılımın biçimini gösterir. İkili gösterimde 6-A'nın yapraklarının en çok 3 kökünde, 6-B'nin yapraklarının en çok 4 kökünde toplandığı hemen görülür.",
+        "Görsel izlenimi hesaplarla destekleyelim. 6-A'da toplam 380, ortalama {kesir:380|10} = 38; ortanca 5. ve 6. verilerin ortalaması {kesir:35 + 38|2} = 36,5; açıklık 59 − 23 = 36'dır. 6-B'de toplam 404, ortalama {kesir:404|10} = 40,4; ortanca {kesir:41 + 44|2} = 42,5; açıklık 56 − 18 = 38'dir. Her iki grupta da her veri yalnız bir kez geçtiği için tepe değer yoktur. Sonuç: 6-B öğrencileri hem ortalama hem ortanca açısından daha çok ip atlamıştır; açıklıklar birbirine yakın olduğundan iki sınıfın yayılımı benzerdir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Ölçü",
+          "6-A",
+          "6-B"
+        ],
+        "satirlar": [
+          [
+            "Veri sayısı",
+            "10",
+            "10"
+          ],
+          [
+            "Toplam",
+            "380",
+            "404"
+          ],
+          [
+            "Aritmetik ortalama",
+            "380 ÷ 10 = 38",
+            "404 ÷ 10 = 40,4"
+          ],
+          [
+            "Ortanca",
+            "(35 + 38) ÷ 2 = 36,5",
+            "(41 + 44) ÷ 2 = 42,5"
+          ],
+          [
+            "Tepe değer",
+            "Yok (her değer bir kez)",
+            "Yok (her değer bir kez)"
+          ],
+          [
+            "Açıklık",
+            "59 − 23 = 36",
+            "56 − 18 = 38"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İkili Gösterimi Okuma",
+          "metin": "Ortadaki sütun kökleri (onlar basamağını) gösterir. Sağdaki yaprak sağ grubun, soldaki yaprak sol grubun birler basamağıdır. Sol taraf kökten dışarı doğru okunur: “8 5 4 1 | 3” → 31, 34, 35, 38."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Anahtar Yazmayı Unutma",
+          "metin": "İkili gösterimin altına mutlaka bir {koyu:anahtar} yaz: “6-A: 3 | 2 = 23, 6-B: 2 | 9 = 29”. Anahtar olmadan okuyucu hangi tarafın hangi gruba ait olduğunu ve sayıların nasıl okunacağını bilemez."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>İKİLİ KÖK-YAPRAK: BİR DAKİKADA ATLANAN İP SAYISI</text><rect x='200' y='50' width='360' height='210' rx='10' fill='#ffffff' stroke='#94a3b8'/><text x='300' y='76' text-anchor='middle' font-size='12.5' font-weight='bold' fill='#1d4ed8'>6-A yaprakları</text><text x='380' y='76' text-anchor='middle' font-size='12.5' font-weight='bold' fill='#0f172a'>Kök</text><text x='465' y='76' text-anchor='middle' font-size='12.5' font-weight='bold' fill='#b45309'>6-B yaprakları</text><line x1='355' y1='60' x2='355' y2='250' stroke='#334155' stroke-width='2'/><line x1='405' y1='60' x2='405' y2='250' stroke='#334155' stroke-width='2'/><line x1='210' y1='86' x2='550' y2='86' stroke='#cbd5e1'/><text x='380' y='112' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>1</text><text x='420' y='112' font-size='15' fill='#b45309'>8</text><text x='345' y='145' text-anchor='end' font-size='15' fill='#1d4ed8'>7  3</text><text x='380' y='145' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>2</text><text x='420' y='145' font-size='15' fill='#b45309'>9</text><text x='345' y='178' text-anchor='end' font-size='15' fill='#1d4ed8'>8  5  4  1</text><text x='380' y='178' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>3</text><text x='420' y='178' font-size='15' fill='#b45309'>3  6</text><text x='345' y='211' text-anchor='end' font-size='15' fill='#1d4ed8'>6  5  2</text><text x='380' y='211' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>4</text><text x='420' y='211' font-size='15' fill='#b45309'>1  4  7  8</text><text x='345' y='244' text-anchor='end' font-size='15' fill='#1d4ed8'>9</text><text x='380' y='244' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>5</text><text x='420' y='244' font-size='15' fill='#b45309'>2  6</text><rect x='20' y='70' width='165' height='150' rx='10' fill='#eff6ff' stroke='#3b82f6'/><text x='102' y='94' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>6-A</text><text x='102' y='122' text-anchor='middle' font-size='12' fill='#1e293b'>Ortalama: 38</text><text x='102' y='148' text-anchor='middle' font-size='12' fill='#1e293b'>Ortanca: 36,5</text><text x='102' y='174' text-anchor='middle' font-size='12' fill='#1e293b'>Açıklık: 36</text><text x='102' y='200' text-anchor='middle' font-size='11' fill='#475569'>Yığılma: 30'lar</text><rect x='575' y='70' width='165' height='150' rx='10' fill='#fef3c7' stroke='#f59e0b'/><text x='657' y='94' text-anchor='middle' font-size='13' font-weight='bold' fill='#b45309'>6-B</text><text x='657' y='122' text-anchor='middle' font-size='12' fill='#1e293b'>Ortalama: 40,4</text><text x='657' y='148' text-anchor='middle' font-size='12' fill='#1e293b'>Ortanca: 42,5</text><text x='657' y='174' text-anchor='middle' font-size='12' fill='#1e293b'>Açıklık: 38</text><text x='657' y='200' text-anchor='middle' font-size='11' fill='#475569'>Yığılma: 40'lar</text><rect x='160' y='272' width='440' height='34' rx='8' fill='#e2e8f0'/><text x='380' y='294' text-anchor='middle' font-size='12' fill='#0f172a'>Anahtar: 6-A için 3 | 2 = 23   •   6-B için 2 | 9 = 29</text></svg>"
+    },
+    {
+      "baslik": "Veri Değiştiğinde Özet Ölçüler Nasıl Değişir?",
+      "metin": [
+        "Gerçek araştırmalarda veriler sabit kalmaz: Ankete geç kalan bir öğrenci katılır, yanlış yazılmış bir değer düzeltilir ya da her veriye aynı miktar eklenir. Bu değişikliklerin özet ölçüleri nasıl etkilediğini bilmek, sonuçları doğru yorumlamamızı sağlar. 5 öğrencinin geçen ay okuduğu kitap sayıları 2, 3, 3, 5, 7 olsun. Toplam 20, ortalama {kesir:20|5} = 4, ortanca 3, tepe değer 3, açıklık 7 − 2 = 5'tir. Şimdi gruba 10 kitap okuyan bir öğrenci katılsın: Veriler 2, 3, 3, 5, 7, 10 olur. Toplam 30, ortalama {kesir:30|6} = 5'e çıkar; ortanca {kesir:3 + 5|2} = 4 olur; tepe değer yine 3'tür; açıklık 10 − 2 = 8'e yükselir. Büyük bir değerin eklenmesi ortalamayı ve açıklığı en çok etkilemiştir.",
+        "Başka bir durum düşünelim: Kütüphane bir kampanya yapmış ve her öğrenci 2'şer kitap daha okumuş olsun. Yeni veriler 4, 5, 5, 7, 9 olur. Toplam 30, ortalama {kesir:30|5} = 6, ortanca 5, tepe değer 5 ve açıklık 9 − 4 = 5'tir. Görüldüğü gibi {koyu:tüm verilere aynı sayı eklendiğinde} ortalama, ortanca ve tepe değer o sayı kadar artar; ama en büyük ve en küçük değer birlikte arttığı için {koyu:açıklık değişmez}. Benzer biçimde tüm verilerden aynı sayı çıkarılırsa merkezi ölçüler o kadar azalır, açıklık yine aynı kalır.",
+        "Aritmetik ortalamanın tanımından çok kullanışlı bir kural çıkar: {koyu:Verilerin toplamı = Aritmetik ortalama × Veri sayısı}. Bu kuralla bilinmeyen bir veriyi bulabiliriz. Örneğin 6 öğrencinin kardeş sayılarının ortalaması 2 ise toplam 2 × 6 = 12'dir. Beş öğrencinin kardeş sayıları 1, 1, 2, 3, 4 (toplamı 11) ise altıncı öğrencinin kardeş sayısı 12 − 11 = 1'dir. Aynı kural, “Ortalamanın şu değere çıkması için yeni gelen kişinin kaç olması gerekir?” türündeki soruları da çözmemizi sağlar. Ortanca ve tepe değer ise toplamla değil, verilerin sırasıyla ve tekrar sayısıyla ilgilidir; bu yüzden tek bir uç değerden çok az etkilenirler."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Ölçü",
+          "Başlangıç: 2, 3, 3, 5, 7",
+          "10 eklenince: 2, 3, 3, 5, 7, 10",
+          "Herkese +2: 4, 5, 5, 7, 9"
+        ],
+        "satirlar": [
+          [
+            "Toplam",
+            "20",
+            "30",
+            "30"
+          ],
+          [
+            "Aritmetik ortalama",
+            "20 ÷ 5 = 4",
+            "30 ÷ 6 = 5",
+            "30 ÷ 5 = 6"
+          ],
+          [
+            "Ortanca",
+            "3",
+            "(3 + 5) ÷ 2 = 4",
+            "5"
+          ],
+          [
+            "Tepe değer",
+            "3",
+            "3",
+            "5"
+          ],
+          [
+            "Açıklık",
+            "7 − 2 = 5",
+            "10 − 2 = 8",
+            "9 − 4 = 5"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Toplam Kuralı",
+          "metin": "{koyu:Toplam = Ortalama × Veri sayısı}. Eksik veri = (Ortalama × Veri sayısı) − (Bilinen verilerin toplamı). Örnek: 4 verinin ortalaması 5 ve üç veri 3, 6, 7 ise dördüncü veri 20 − 16 = 4'tür."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Kaydırma Açıklığı Değiştirmez",
+          "metin": "Tüm verilere aynı sayı eklemek veya çıkarmak, nokta grafiğindeki bütün noktaları birlikte sağa ya da sola kaydırmak gibidir. Noktalar arasındaki uzaklıklar değişmediği için {koyu:açıklık aynı kalır}."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><defs><marker id='ok16a' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M0 0L10 5L0 10z' fill='#475569'/></marker></defs><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>VERİ DEĞİŞİNCE ÖZET ÖLÇÜLER NE OLUR?</text><rect x='280' y='48' width='200' height='110' rx='10' fill='#e0e7ff' stroke='#4f46e5' stroke-width='1.5'/><text x='380' y='70' text-anchor='middle' font-size='12.5' font-weight='bold' fill='#3730a3'>Başlangıç</text><text x='380' y='90' text-anchor='middle' font-size='13' fill='#1e293b'>2, 3, 3, 5, 7</text><text x='380' y='112' text-anchor='middle' font-size='11.5' fill='#1e293b'>Ortalama 4 • Ortanca 3</text><text x='380' y='130' text-anchor='middle' font-size='11.5' fill='#1e293b'>Tepe değer 3</text><text x='380' y='148' text-anchor='middle' font-size='11.5' fill='#1e293b'>Açıklık 5</text><line x1='300' y1='158' x2='190' y2='178' stroke='#475569' stroke-width='2' marker-end='url(#ok16a)'/><line x1='460' y1='158' x2='570' y2='178' stroke='#475569' stroke-width='2' marker-end='url(#ok16a)'/><rect x='30' y='182' width='320' height='104' rx='10' fill='#fee2e2' stroke='#ef4444' stroke-width='1.5'/><text x='190' y='204' text-anchor='middle' font-size='12.5' font-weight='bold' fill='#b91c1c'>Büyük bir değer (10) eklenince</text><text x='190' y='224' text-anchor='middle' font-size='12' fill='#1e293b'>2, 3, 3, 5, 7, 10</text><text x='190' y='246' text-anchor='middle' font-size='11.5' fill='#1e293b'>Ortalama 4 → 5   •   Ortanca 3 → 4</text><text x='190' y='266' text-anchor='middle' font-size='11.5' fill='#1e293b'>Tepe değer 3 → 3   •   Açıklık 5 → 8</text><rect x='410' y='182' width='320' height='104' rx='10' fill='#dcfce7' stroke='#16a34a' stroke-width='1.5'/><text x='570' y='204' text-anchor='middle' font-size='12.5' font-weight='bold' fill='#15803d'>Her veriye 2 eklenince</text><text x='570' y='224' text-anchor='middle' font-size='12' fill='#1e293b'>4, 5, 5, 7, 9</text><text x='570' y='246' text-anchor='middle' font-size='11.5' fill='#1e293b'>Ortalama 4 → 6   •   Ortanca 3 → 5</text><text x='570' y='266' text-anchor='middle' font-size='11.5' fill='#1e293b'>Tepe değer 3 → 5   •   Açıklık 5 → 5</text><rect x='560' y='50' width='180' height='90' rx='10' fill='#fef3c7' stroke='#f59e0b'/><text x='650' y='74' text-anchor='middle' font-size='12' font-weight='bold' fill='#92400e'>Toplam kuralı</text><text x='650' y='96' text-anchor='middle' font-size='11.5' fill='#1e293b'>Toplam =</text><text x='650' y='114' text-anchor='middle' font-size='11.5' fill='#1e293b'>Ortalama × Veri sayısı</text><text x='650' y='132' text-anchor='middle' font-size='11' fill='#475569'>4 × 5 = 20</text></svg>"
+    },
+    {
+      "baslik": "Veriye Dayalı Karar Senaryoları ve Araştırma Raporu",
+      "metin": [
+        "İstatistiğin asıl amacı, belirsiz durumlarda {koyu:veriye dayalı karar} vermektir. Okul basketbol takımına bir oyuncu seçilecek ve son 5 maçta attıkları sayılara göre iki aday değerlendirilecek olsun. {koyu:Ece:} 8, 9, 10, 11, 12. {koyu:Can:} 2, 4, 10, 16, 18. Her ikisinin toplamı 50, ortalaması {kesir:50|5} = 10 ve ortancası 10'dur. Yalnız ortalamaya bakan biri “İkisi aynı” der. Oysa Ece'nin açıklığı 12 − 8 = 4, Can'ın açıklığı 18 − 2 = 16'dır. Ece her maçta 10'a yakın sayı atarak {koyu:tutarlı} bir performans göstermiş, Can ise bazen çok iyi bazen çok düşük oynamıştır. Takım her maçta güvenilir bir oyuncu istiyorsa Ece; tek maçta çok sayı atma şansı arıyorsa Can seçilebilir. Görüldüğü gibi karar, {koyu:araştırma sorusunun ne istediğine} göre değişir.",
+        "Kategorik verilerle de karar verilir. Okul kantini hangi tostu en çok hazırlayacağına anket sonuçlarının tepe değerine bakarak karar verir. Ancak tepe değerin çok küçük bir farkla öne çıktığı ya da iki kategorinin eşit çıktığı durumlarda karar kesin değildir; böyle bir durumda ikinci bir oylama yapmak veya daha fazla kişiden veri toplamak gibi {koyu:yeniden planlama} gerekir. Nicel verilerde uç değer varsa ortanca, uç değer yoksa ortalama tercih edilir; tutarlılık önemliyse açıklık da hesaba katılır.",
+        "Ulaştığımız sonucu başkalarıyla paylaşmak için kısa bir {koyu:araştırma raporu} yazarız. Rapor şu bölümlerden oluşur: {koyu:Araştırma sorusu}, {koyu:yöntem} (veri kimden, nasıl ve ne zaman toplandı?), {koyu:bulgular} (tablo, grafik ve özet ölçüler), {koyu:sonuç ve karar} (sayısal gerekçesiyle) ve {koyu:sınırlılıklar} (sonuç hangi grup ve zaman için geçerli?). Örneğin basketbol raporunun sonuç cümlesi şöyle olabilir: “İki adayın ortalaması 10 sayıdır; ancak Ece'nin açıklığı 4, Can'ın açıklığı 16'dır. Takım tutarlı bir oyuncu aradığı için Ece seçilmiştir. Karar yalnız son 5 maça dayanmaktadır.”"
+      ],
+      "tablo": {
+        "basliklar": [
+          "Ölçü",
+          "Ece",
+          "Can",
+          "Yorum"
+        ],
+        "satirlar": [
+          [
+            "Toplam sayı",
+            "50",
+            "50",
+            "Eşit"
+          ],
+          [
+            "Aritmetik ortalama",
+            "50 ÷ 5 = 10",
+            "50 ÷ 5 = 10",
+            "Eşit"
+          ],
+          [
+            "Ortanca",
+            "10",
+            "10",
+            "Eşit"
+          ],
+          [
+            "En küçük – en büyük",
+            "8 – 12",
+            "2 – 18",
+            "Can'ın değerleri daha geniş aralıkta"
+          ],
+          [
+            "Açıklık",
+            "12 − 8 = 4",
+            "18 − 2 = 16",
+            "Ece daha tutarlı"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Araştırma Raporunun Bölümleri",
+          "metin": "{koyu:1)} Araştırma sorusu {koyu:2)} Yöntem: kimden, nasıl, ne zaman {koyu:3)} Bulgular: tablo, grafik, özet ölçüler {koyu:4)} Sonuç ve karar: sayısal gerekçe {koyu:5)} Sınırlılıklar ve öneriler: neyin yeniden planlanabileceği."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Eşit Ortalama, Farklı Hikâye",
+          "metin": "Ortalamaları eşit iki grup birbirinin aynısı değildir. Karar vermeden önce mutlaka açıklığa ve mümkünse grafiğe de bak; tutarlılık farkı yalnız orada görünür."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>SON 5 MAÇTA ATILAN SAYI: AYNI ORTALAMA, FARKLI AÇIKLIK</text><text x='200' y='58' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>Ece (açıklık 4)</text><text x='560' y='58' text-anchor='middle' font-size='13' font-weight='bold' fill='#b45309'>Can (açıklık 16)</text><line x1='60' y1='260' x2='340' y2='260' stroke='#334155' stroke-width='2'/><line x1='60' y1='260' x2='60' y2='75' stroke='#334155' stroke-width='2'/><line x1='420' y1='260' x2='700' y2='260' stroke='#334155' stroke-width='2'/><line x1='420' y1='260' x2='420' y2='75' stroke='#334155' stroke-width='2'/><text x='52' y='264' text-anchor='end' font-size='10.5' fill='#475569'>0</text><text x='52' y='174' text-anchor='end' font-size='10.5' fill='#475569'>10</text><text x='52' y='84' text-anchor='end' font-size='10.5' fill='#475569'>20</text><text x='412' y='264' text-anchor='end' font-size='10.5' fill='#475569'>0</text><text x='412' y='174' text-anchor='end' font-size='10.5' fill='#475569'>10</text><text x='412' y='84' text-anchor='end' font-size='10.5' fill='#475569'>20</text><rect x='80' y='188' width='34' height='72' fill='#22c55e'/><rect x='132' y='179' width='34' height='81' fill='#22c55e'/><rect x='184' y='170' width='34' height='90' fill='#22c55e'/><rect x='236' y='161' width='34' height='99' fill='#22c55e'/><rect x='288' y='152' width='34' height='108' fill='#22c55e'/><text x='97' y='182' text-anchor='middle' font-size='11' fill='#1e293b'>8</text><text x='149' y='173' text-anchor='middle' font-size='11' fill='#1e293b'>9</text><text x='201' y='164' text-anchor='middle' font-size='11' fill='#1e293b'>10</text><text x='253' y='155' text-anchor='middle' font-size='11' fill='#1e293b'>11</text><text x='305' y='146' text-anchor='middle' font-size='11' fill='#1e293b'>12</text><rect x='440' y='242' width='34' height='18' fill='#f59e0b'/><rect x='492' y='224' width='34' height='36' fill='#f59e0b'/><rect x='544' y='170' width='34' height='90' fill='#f59e0b'/><rect x='596' y='116' width='34' height='144' fill='#f59e0b'/><rect x='648' y='98' width='34' height='162' fill='#f59e0b'/><text x='457' y='236' text-anchor='middle' font-size='11' fill='#1e293b'>2</text><text x='509' y='218' text-anchor='middle' font-size='11' fill='#1e293b'>4</text><text x='561' y='164' text-anchor='middle' font-size='11' fill='#1e293b'>10</text><text x='613' y='110' text-anchor='middle' font-size='11' fill='#1e293b'>16</text><text x='665' y='92' text-anchor='middle' font-size='11' fill='#1e293b'>18</text><line x1='60' y1='170' x2='340' y2='170' stroke='#1d4ed8' stroke-width='2' stroke-dasharray='6 4'/><line x1='420' y1='170' x2='700' y2='170' stroke='#1d4ed8' stroke-width='2' stroke-dasharray='6 4'/><text x='200' y='280' text-anchor='middle' font-size='11' fill='#475569'>1.   2.   3.   4.   5. maç</text><text x='560' y='280' text-anchor='middle' font-size='11' fill='#475569'>1.   2.   3.   4.   5. maç</text><rect x='200' y='290' width='360' height='24' rx='7' fill='#dbeafe'/><text x='380' y='306' text-anchor='middle' font-size='11.5' fill='#1e3a8a'>Kesik çizgi: ortalama = 10 (iki oyuncuda da)</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Kantin için yapılan ankette 6-C sınıfındaki 30 öğrenciden 12'si, 6-D sınıfındaki 24 öğrenciden 12'si en sevdiği yiyecek olarak tostu seçmiştir. “Tostu seçenler iki sınıfta eşittir.” diyen bir öğrencinin yorumunu değerlendiriniz. Hangi sınıfta tost tercihi daha yaygındır?",
+      "cevap": "1. Ham sıklıklar: İki sınıfta da 12 öğrenci tostu seçmiştir; sayı olarak eşittir.\n2. Ancak sınıf mevcutları farklıdır (30 ve 24); adil karşılaştırma için göreli sıklık bulunur.\n• 6-C: {kesir:12|30} = {kesir:2|5} = {kesir:40|100} → %40\n• 6-D: {kesir:12|24} = {kesir:1|2} = {kesir:50|100} → %50\n3. Sonuç: Öğrencinin yorumu yalnız sayılar için doğrudur; oran olarak tost tercihi {koyu:6-D'de daha yaygındır} (%50 > %40). 6-D'deki öğrencilerin yarısı tostu seçmiştir.",
+      "ipucu": "Grupların büyüklüğü farklıysa her sıklığı kendi grubunun toplamına böl ve oranları karşılaştır."
+    },
+    {
+      "soru": "36 öğrenciye evinde evcil hayvan olup olmadığı sorulmuş ve sonuçlar çapraz tabloya yazılmıştır. Kızların sayısı 18'dir; evcil hayvanı olan kız sayısı 7, evcil hayvanı olan erkek sayısı 9'dur. Toplam 20 öğrencinin evcil hayvanı yoktur.\na) Tablonun boş hücrelerini doldurunuz.\nb) Evcil hayvan sahibi olmak hangi grupta daha yaygındır?",
+      "cevap": "a) Erkek sayısı = 36 − 18 = 18.\n• Evcil hayvanı olmayan kızlar = 18 − 7 = 11.\n• Evcil hayvanı olmayan erkekler = 20 − 11 = 9 (kontrol: 18 − 9 = 9 ✓).\n• Evcil hayvanı olanların toplamı = 7 + 9 = 16 (kontrol: 16 + 20 = 36 ✓).\nTablo: Kız → Var 7, Yok 11, Toplam 18; Erkek → Var 9, Yok 9, Toplam 18; Toplam → Var 16, Yok 20, Genel 36.\nb) Kızlarda {kesir:7|18}, erkeklerde {kesir:9|18} = {kesir:1|2}. Paydalar eşit olduğu için payları karşılaştırırız: 9 > 7. Evcil hayvan sahibi olmak {koyu:erkek öğrencilerde} daha yaygındır.",
+      "ipucu": "Önce bilinen toplamlardan çıkarma yaparak boş hücreleri bul; sonra satır ve sütun toplamlarının genel toplamı verdiğini kontrol et."
+    },
+    {
+      "soru": "15 öğrencinin geçen ay okuduğu dergi sayıları nokta grafiğinde gösterilmiştir: 0'ın üstünde 2, 1'in üstünde 4, 2'nin üstünde 5, 3'ün üstünde 3 ve 7'nin üstünde 1 nokta vardır. Dağılımı betimleyiniz; ortalama, ortanca, tepe değer ve açıklığı bulunuz.",
+      "cevap": "Betimleme: Noktalar 0-3 aralığında {koyu:yığılmıştır}; 4, 5 ve 6 değerlerinde nokta yoktur, yani 4-6 aralığında bir {koyu:boşluk} vardır; 7 dergi okuyan öğrenci {koyu:uç değerdir}.\n• Toplam = 0 × 2 + 1 × 4 + 2 × 5 + 3 × 3 + 7 × 1 = 0 + 4 + 10 + 9 + 7 = 30\n• Ortalama = {kesir:30|15} = 2\n• Ortanca: 15 veri olduğundan 8. veridir. 1.-2. veriler 0, 3.-6. veriler 1, 7.-11. veriler 2 → 8. veri 2, ortanca = 2.\n• Tepe değer: En büyük sıklık 5 → tepe değer 2.\n• Açıklık = 7 − 0 = 7 (uç değer yüzünden büyüktür; 7 olmasaydı açıklık 3 olurdu).\nYorum: Tipik öğrenci ayda 2 dergi okumaktadır.",
+      "ipucu": "Sıklıkları birikimli olarak topla (2, 6, 11, 14, 15); ortancanın hangi değere düştüğünü böylece kolayca bulursun."
+    },
+    {
+      "soru": "İki sınıfın bir haftalık su içme (bardak) verileri ikili kök-yaprak gösterimiyle verilmiştir. Sol: 6-C, sağ: 6-D.\n5 2 | 1 | 4 8\n9 6 3 | 2 | 0 5 7\n9 1 | 3 | 2 6\n  | 4 | 4\na) Her sınıfın verilerini yazınız. b) Ortalama, ortanca ve açıklıkları karşılaştırınız.",
+      "cevap": "a) Sol taraf kökten dışarı doğru okunur.\n• 6-C: 12, 15, 23, 26, 29, 31, 39 (7 öğrenci)\n• 6-D: 14, 18, 20, 25, 27, 32, 36, 44 (8 öğrenci)\nb) 6-C: Toplam = 175, ortalama = {kesir:175|7} = 25; 7 veride ortanca 4. veri = 26; açıklık = 39 − 12 = 27.\n6-D: Toplam = 216, ortalama = {kesir:216|8} = 27; 8 veride ortanca = {kesir:25 + 27|2} = 26; açıklık = 44 − 14 = 30.\nKarşılaştırma: Ortancalar eşittir (26). 6-D'nin ortalaması biraz daha büyüktür (27 > 25), ama 6-D'nin açıklığı da daha büyüktür (30 > 27); 6-D'nin ortalamasını 44 gibi yüksek bir değer yukarı çekmiştir. Tipik öğrenci açısından iki sınıf benzerdir.",
+      "ipucu": "Sol taraftaki “5 2 | 1” satırını sağdan sola oku: önce 2, sonra 5 → 12 ve 15."
+    },
+    {
+      "soru": "Bir kulüpteki 7 öğrencinin bir ayda çözdüğü bulmaca sayılarının ortalaması 6'dır. Kulübe yeni bir öğrenci katılınca 8 öğrencinin ortalaması 7 olmuştur. Yeni öğrenci kaç bulmaca çözmüştür? Bu öğrencinin katılması hangi ölçüyü en çok etkilemiş olabilir?",
+      "cevap": "1. Toplam kuralı: Toplam = Ortalama × Veri sayısı.\n2. İlk 7 öğrencinin toplamı = 6 × 7 = 42.\n3. 8 öğrencinin toplamı = 7 × 8 = 56.\n4. Yeni öğrencinin bulmaca sayısı = 56 − 42 = {koyu:14}.\nKontrol: (42 + 14) ÷ 8 = 56 ÷ 8 = 7 ✓\nYorum: 14, ilk grubun ortalamasından (6) çok büyüktür. Bu değer tek başına ortalamayı 1 artırmıştır; ayrıca gruptaki en büyük değerse açıklığı da büyütür. Ortanca ise yalnız sıralamada bir adım kaydığı için çok daha az etkilenir.",
+      "ipucu": "Ortalamaları doğrudan çıkarma! Önce her durumdaki toplamı bul, sonra toplamların farkını al."
+    },
+    {
+      "soru": "Okul kantininin 10 gün boyunca sattığı sandviç sayıları şöyledir: 18, 20, 20, 21, 22, 22, 22, 23, 24, 48. 48 sandviç satılan gün okulda bir şenlik düzenlenmiştir. Kantin sahibi her gün kaç sandviç hazırlamalıdır? Gerekçeli bir karar yazınız.",
+      "cevap": "1. Veri türü: Sayma ile elde edilen tam sayılar → nicel (kesikli) veri; kaynak kantinin satış kayıtları (hazır veri).\n2. Özet ölçüler:\n• Toplam = 18 + 20 + 20 + 21 + 22 + 22 + 22 + 23 + 24 + 48 = 240; ortalama = {kesir:240|10} = 24.\n• Ortanca: 5. ve 6. veriler 22 ve 22 → {kesir:22 + 22|2} = 22.\n• Tepe değer: 22 (3 kez). Açıklık = 48 − 18 = 30.\n3. Uç değer: 48, şenlik gününe ait olağan dışı bir değerdir ve ortalamayı 24'e çekmiştir. 10 günün 9'unda satış 24 veya altındadır.\n4. Karar: “Olağan günlerde ortanca ve tepe değer 22 olduğundan her gün yaklaşık 22 sandviç hazırlanmalıdır; şenlik gibi özel günlerde sayı artırılmalıdır.” Sınırlılık: Veri yalnız 10 güne aittir; birkaç haftalık kayıt incelenirse karar güçlenir.",
+      "ipucu": "Ortalamayı hesapladıktan sonra veriler arasında olağan dışı bir gün olup olmadığına bak; varsa ortancayı tercih et."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "6-A sınıfındaki 30 öğrencinin 9'u, 6-B sınıfındaki 20 öğrencinin 8'i en sevdiği spor olarak voleybolu seçmiştir. Aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "9 > 8 olduğu için voleybol tercihi 6-A'da daha yaygındır.",
+        "Voleybolu seçenlerin oranı 6-A'da %30, 6-B'de %40'tır.",
+        "İki sınıfta voleybolu seçenlerin oranı eşittir.",
+        "Sınıf mevcutları farklı olduğu için karşılaştırma yapılamaz."
+      ],
+      "dogru": 1,
+      "aciklama": "6-A: 9 ÷ 30 = 3/10 = %30; 6-B: 8 ÷ 20 = 2/5 = %40. Farklı büyüklükteki gruplar oranlarla karşılaştırılır; voleybol tercihi 6-B'de daha yaygındır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir çapraz tabloya göre 5. sınıfta 12 öğrenci ayran, 8 öğrenci süt; 6. sınıfta 9 öğrenci ayran, 11 öğrenci süt tercih etmektedir. Süt tercih eden öğrencilerin kaçta kaçı 6. sınıftadır?",
+      "secenekler": [
+        "11/20",
+        "11/19",
+        "19/40",
+        "8/19"
+      ],
+      "dogru": 1,
+      "aciklama": "Süt tercih edenlerin toplamı 8 + 11 = 19'dur; bunların 11'i 6. sınıftadır: 11/19. 11/20 ise 6. sınıf öğrencilerinin kaçta kaçının süt seçtiğini gösterir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir veri grubundaki her veriye 3 eklenirse aşağıdaki ölçülerden hangisi değişmez?",
+      "secenekler": [
+        "Aritmetik ortalama",
+        "Ortanca",
+        "Tepe değer",
+        "Açıklık"
+      ],
+      "dogru": 3,
+      "aciklama": "Her veri 3 arttığında ortalama, ortanca ve tepe değer de 3 artar. En büyük ve en küçük değer birlikte 3 arttığı için farkları, yani açıklık aynı kalır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "5 öğrencinin bir haftada çözdüğü test sayıları 4, 5, 7, 8 ve x'tir. Bu verilerin aritmetik ortalaması 6 olduğuna göre x kaçtır?",
+      "secenekler": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "dogru": 1,
+      "aciklama": "Toplam = 6 × 5 = 30. Bilinen veriler 4 + 5 + 7 + 8 = 24. x = 30 − 24 = 6."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Öğrenci sayıları farklı iki sınıfta kategorik veriler ham sıklıklarla değil, oranlarla karşılaştırılmalıdır.",
+          "dogru": true,
+          "aciklama": "Kalabalık grupta sıklıklar doğal olarak büyük çıkabilir; adil karşılaştırma göreli sıklıklarla yapılır."
+        },
+        {
+          "metin": "Bir veri grubundaki tüm verilere 5 eklenirse açıklık da 5 artar.",
+          "dogru": false,
+          "aciklama": "En büyük ve en küçük değer birlikte 5 arttığı için aralarındaki fark değişmez; açıklık aynı kalır."
+        },
+        {
+          "metin": "Aritmetik ortalaması 8 olan 5 verinin toplamı 40'tır.",
+          "dogru": true,
+          "aciklama": "Toplam = Ortalama × Veri sayısı = 8 × 5 = 40."
+        },
+        {
+          "metin": "İkili kök-yaprak gösteriminde iki grup için ayrı ayrı kök sütunları çizilir.",
+          "dogru": false,
+          "aciklama": "İkili gösterimde kökler ortada bir kez yazılır; iki grup bu ortak kökün iki yanına yaprak ekler."
+        },
+        {
+          "metin": "Nokta grafiğinde verilerin çoğunun belirli bir aralıkta toplanmasına yığılma (küme) denir.",
+          "dogru": true,
+          "aciklama": "Yığılma, tipik değerlerin bulunduğu aralığı gösterir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Veri dağılımlarını yorumlamada kullanılan kavramları açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Göreli sıklık",
+          "Bir kategorinin sıklığının toplam veri sayısına oranı"
+        ],
+        [
+          "Çapraz tablo",
+          "İki kategorik değişkeni satır ve sütunlarda birlikte gösteren tablo"
+        ],
+        [
+          "Boşluk",
+          "Nokta grafiğinde hiç veri bulunmayan aralık"
+        ],
+        [
+          "Uç değer",
+          "Verilerin büyük bölümünden çok uzakta kalan tek tük değer"
+        ],
+        [
+          "İkili kök-yaprak gösterimi",
+          "İki grubun yapraklarını ortak köklerin iki yanına yazan gösterim"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir kategorinin sıklığının toplam veri sayısına oranına ___ sıklık denir.",
+          "cevap": "göreli"
+        },
+        {
+          "metin": "Cinsiyet ve kulüp tercihi gibi iki kategorik değişkeni birlikte gösteren tabloya ___ tablo denir.",
+          "cevap": "çapraz"
+        },
+        {
+          "metin": "Nokta grafiğinde sayı doğrusu üzerinde hiç verinin bulunmadığı aralığa ___ denir.",
+          "cevap": "boşluk"
+        },
+        {
+          "metin": "Tüm verilerden aynı sayı çıkarıldığında ___ değişmez.",
+          "cevap": "açıklık"
+        },
+        {
+          "metin": "İki grubu ortak köklerin iki yanında gösteren gösterime ___ kök-yaprak gösterimi denir.",
+          "cevap": "ikili"
+        }
+      ],
+      "kelimeler": [
+        "göreli",
+        "çapraz",
+        "boşluk",
+        "açıklık",
+        "ikili"
+      ],
+      "fazla": [
+        "tepe",
+        "örneklem"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Okul gezisi için 6-A (20 öğrenci) ve 6-B (25 öğrenci) sınıflarına “Gezide hangi yeri görmek istersin? (Müze / Planetaryum / Hayvanat bahçesi)” sorusu sorulmuştur. 6-A: Müze 6, Planetaryum 10, Hayvanat bahçesi 4. 6-B: Müze 12, Planetaryum 8, Hayvanat bahçesi 5. İki sınıf aynı otobüsle tek bir yere gidecektir. Verileri çapraz tabloda düzenleyiniz, sınıfları oranlarla karşılaştırınız, ortak bir karar öneriniz ve araştırmayı değerlendiriniz.",
+      "ipuclari": [
+        "1. adım: Satırlara sınıfları, sütunlara gezi yerlerini yazarak çapraz tablo oluştur; satır, sütun ve genel toplamları kontrol et.",
+        "2. adım: Her sınıfta her yerin göreli sıklığını (sıklık ÷ sınıf mevcudu) yüzde olarak bul ve her sınıfın tepe değerini belirle.",
+        "3. adım: Sütun toplamlarına bakarak iki sınıfın birlikte tepe değerini bul; eşitlik varsa kararın neden kesin olmadığını açıkla.",
+        "4. adım: Veri türüne uygun özet ölçüyü gerekçelendir ve kararı netleştirmek için hangi adımın yeniden planlanacağını öner."
+      ],
+      "cevap": "1) Çapraz tablo: 6-A → Müze 6, Planetaryum 10, Hayvanat bahçesi 4, Toplam 20. 6-B → Müze 12, Planetaryum 8, Hayvanat bahçesi 5, Toplam 25. Sütun toplamları: Müze 18, Planetaryum 18, Hayvanat bahçesi 9; genel toplam 45 (20 + 25 = 18 + 18 + 9 = 45 ✓).\n2) Oranlar: 6-A'da Müze 6 ÷ 20 = %30, Planetaryum 10 ÷ 20 = %50, Hayvanat bahçesi 4 ÷ 20 = %20 → tepe değer Planetaryum. 6-B'de Müze 12 ÷ 25 = %48, Planetaryum 8 ÷ 25 = %32, Hayvanat bahçesi 5 ÷ 25 = %20 → tepe değer Müze. İki sınıfın tercihleri farklıdır.\n3) Birlikte: Müze {kesir:18|45} = {kesir:2|5} = %40, Planetaryum {kesir:18|45} = %40, Hayvanat bahçesi {kesir:9|45} = {kesir:1|5} = %20. Veri kategorik olduğundan özet ölçü tepe değerdir; ortalama veya ortanca hesaplanamaz. Ancak Müze ve Planetaryum eşit çıktığı için tek bir tepe değer yoktur ve karar kesin değildir. Yalnız Hayvanat bahçesinin en az tercih edildiği kesin olarak söylenebilir.\n4) Karar ve yeniden planlama: “İki sınıfın 45 öğrencisinden 18'i müzeyi, 18'i planetaryumu seçmiştir; hayvanat bahçesi %20 ile geride kalmıştır. Eşitlik nedeniyle karar için ikinci bir oylama gerekir.” Yeniden planlanan adım veri toplamadır: Yalnız Müze ve Planetaryum seçeneklerinin bulunduğu ikinci bir anket, iki sınıfın tüm öğrencilerine aynı gün ve aynı açıklamayla uygulanır; daha çok oy alan yer gezi yeri olur. Sınırlılık: İlk ankete katılmayan öğrenci varsa ikinci turda onların da görüşü alınmalıdır."
+    }
+  ]
+}

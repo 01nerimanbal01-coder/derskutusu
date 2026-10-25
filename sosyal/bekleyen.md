@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 1006 gönderi.
+Toplam 1044 gönderi.
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -10067,4 +10067,384 @@ Bunu biliyor muydunuz? Third Conditional: Geçmişte gerçekleşmemiş bir koşu
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 11. sınıf İngilizce 15. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-ingilizce-hafta-15
 #derskutusu #ingilizce #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-din-kulturu-16
+Sıra: 2027-02-16 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-din-kulturu-16.png
+
+```
+Bunu biliyor muydunuz? Teşehhüd rivayeti: Sahabe önceleri oturuşta «Allah'a selam olsun, falana selam olsun» derdi; Peygamberimiz «Allah, Selâm'ın ta kendisidir» buyurarak onlara Tahiyyat duasını öğretti (Buhârî, Müslim). Es-Selâm ismi: Haşr suresi 23. ayette bildirildiği gibi Selâm, Allah'ın isimlerindendir; Allah her türlü eksiklikten uzak ve esenliğin kaynağı olduğu için O'na selam dilenmez, O övülür ve yüceltilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Din Kültürü ve Ahlak Bilgisi 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-din-kulturu-ve-ahlak-bilgisi-hafta-16
+#derskutusu #dinkültürü #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-fen-bilimleri-16
+Sıra: 2027-02-16 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-fen-bilimleri-16.png
+
+```
+Bunu biliyor muydunuz? Sistemin yapıları: Destek ve hareket sistemi kemik, kıkırdak ve eklemlerden oluşan iskelet ile hareketi sağlayan kaslardan oluşur; kasları kemiklere tendonlar bağlar. Kemiğin yapısı: Kemik dıştan içe doğru kemik zarı, sık (sert) kemik, süngerimsi kemik ve ilik boşluğundan oluşur; kırmızı kemik iliği kan hücrelerini üretir, sarı kemik iliği yağ depolar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Fen Bilimleri 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-fen-bilimleri-hafta-16
+#derskutusu #fenbilimleri #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-ingilizce-16
+Sıra: 2027-02-16 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-ingilizce-16.png
+
+```
+Bunu biliyor muydunuz? Adjective order: Bir isimden önce birden çok sıfat gelirse sıra genellikle uzunluk/boyut → şekil/biçim → renk → isim şeklindedir: «long curly black hair», «big round brown eyes». Special nouns: «hair» sayılamaz ve tekil kullanılır (She has got long hair); «tooth → teeth», «foot → feet» düzensiz çoğuldur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf İngilizce 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-ingilizce-hafta-16
+#derskutusu #ingilizce #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-kuran-i-kerim-16
+Sıra: 2027-02-16 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-kuran-i-kerim-16.png
+
+```
+Bunu biliyor muydunuz? Dinleyerek başlamak: Tahiyyat, Peygamberimizden bu yana dinleme ve tekrar yoluyla öğretilmiştir; ezbere doğru okuyan birini dikkatle dinleyerek başlanır. Parçalara bölmek: Dua, anlam duraklarına göre dokuz kısa parçaya bölündüğünde ezberlemek kolaylaşır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Kur’an-ı Kerim 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-kuran-i-kerim-hafta-16
+#derskutusu #kuranıkerim #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-matematik-16
+Sıra: 2027-02-17 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-matematik-16.png
+
+```
+Bunu biliyor muydunuz? Alan bağıntısının yargısı: Dikdörtgende sıra sayısı bir kenara, bir sıradaki kare sayısı ardışık kenara eşit olduğundan alan bu iki kenarın çarpımıdır; bir kenar 2 katına çıkarsa alan da 2 katına çıkar. Alanı verilen dikdörtgenin kenarları: Kısa kenara 1'den başlayarak değer verilir, alan bu sayıya kalansız bölünüyorsa uzun kenar alan ÷ kısa kenar olarak bulunur; kısa kenarın kendisiyle çarpımı alanı geçince durulur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Matematik 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-matematik-hafta-16
+#derskutusu #matematik #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-peygamberimizin-hayati-16
+Sıra: 2027-02-17 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-peygamberimizin-hayati-16.png
+
+```
+Bunu biliyor muydunuz? Rehberlik: Peygamberimiz çocuklara örnek olarak, sevgiyle düzelterek, kısa ve akılda kalan öğütler vererek, onlar için dua ederek ve onlara sorumluluk vererek yol göstermiştir. Küçük öğütler: Ömer bin Ebû Seleme'ye öğretilen sofra adabı ve Hz. Hasan'ın sadaka hurmasından sakındırılması, çocukluktaki küçük bir uyarının ömür boyu süren bir alışkanlığa dönüşebildiğini gösterir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Peygamberimizin Hayatı 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-peygamberimizin-hayati-hafta-16
+#derskutusu #peygamberimizinhayatı #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-sosyal-bilgiler-16
+Sıra: 2027-02-17 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-sosyal-bilgiler-16.png
+
+```
+Bunu biliyor muydunuz? Tarihsel bağlam: Yazının bulunuşundan önceki döneme tarih öncesi çağlar denir. Anadolu’daki ilk köyler, insanların avcı-toplayıcılıktan tarıma ve yerleşik hayata geçtiği Cilalı Taş Çağı’nda kurulmuştur. Kaynaklar: Yazı olmadığı için ilk yerleşimlerin sosyal hayatını arkeolojik kazılardan, höyük tabakalarından ve buluntulardan öğreniriz. Buluntular kanıttır, onlardan yaptığımız açıklamalar ise yorumdur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Sosyal Bilgiler 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-sosyal-bilgiler-hafta-16
+#derskutusu #sosyalbilgiler #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-temel-dini-bilgiler-16
+Sıra: 2027-02-17 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-temel-dini-bilgiler-16.png
+
+```
+Bunu biliyor muydunuz? Esmâ-i Hüsnâ: Allah'ın Kur'an-ı Kerim'de ve hadislerde bildirilen en güzel isimleridir; bu isimler Allah'ı bize tanıtır ve O'na bu isimlerle dua etmemiz istenir (Âraf suresi, 180. ayet). Rakîb: Allah'ın her şeyi gözeten, koruyup kollayan ve hiçbir şeyi gözetiminin dışında bırakmayan olduğunu bildirir (Nisâ suresi, 1. ayet; Ahzâb suresi, 52. ayet).
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Temel Dinî Bilgiler 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-temel-dini-bilgiler-hafta-16
+#derskutusu #temeldinibilgiler #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-5-turkce-16
+Sıra: 2027-02-17 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-5-turkce-16.png
+
+```
+Bunu biliyor muydunuz? Hazırlık: Okumaya başlamadan önce başlıktan ve görselden tahmin yürütür, Bil-İste-Öğren tablosu ile ne bildiğimizi ve ne öğrenmek istediğimizi yazarız; okurken tahminlerimizi doğrular ya da düzeltiriz. Varlık kadrosu ve olay örgüsü: Kişileştirilmiş korkuluk, karga, serçe gibi varlıklar hikâyenin varlık kadrosunu oluşturur; olaylar serimde başlar, düğümde merak doruğa çıkar, çözümde ana fikre bağlanır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 5. sınıf Türkçe 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/5-turkce-hafta-16
+#derskutusu #türkçe #5sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-din-kulturu-16
+Sıra: 2027-02-17 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-din-kulturu-16.png
+
+```
+Bunu biliyor muydunuz? Sıdk ve Kizb: Doğruluk anlamına gelen sıdk, sözün gerçeğe, sözün kalbe ve davranışın söze uygun olmasıdır; yalan anlamına gelen kizb ise gerçeğe aykırı söz söylemektir. Kur'an'da Doğruluk: Allah, «Allah'a karşı gelmekten sakının ve doğru söz söyleyin ki Allah işlerinizi düzeltsin...» (Ahzâb Suresi, 70-71. ayetler) buyurarak doğru sözü emreder.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Din Kültürü ve Ahlak Bilgisi 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-din-kulturu-ve-ahlak-bilgisi-hafta-16
+#derskutusu #dinkültürü #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-fen-bilimleri-16
+Sıra: 2027-02-18 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-fen-bilimleri-16.png
+
+```
+Bunu biliyor muydunuz? Işığın Madde ile Etkileşimi: Işık bir maddeye çarptığında yansıyabilir, maddeden geçebilir ya da madde tarafından soğurulabilir; çoğu zaman bu üç olay birlikte gerçekleşir. Soğurulma: Işığın madde tarafından tutularak maddenin içinde kalmasıdır; soğurulan ışık gözümüze ulaşmaz ve enerjisi çoğunlukla ısı enerjisine dönüşerek maddenin sıcaklığını artırır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Fen Bilimleri 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-fen-bilimleri-hafta-16
+#derskutusu #fenbilimleri #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-ingilizce-16
+Sıra: 2027-02-18 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-ingilizce-16.png
+
+```
+Bunu biliyor muydunuz? Whose...?: Bir eşyanın kime ait olduğunu sorar; «Whose wallet is this?» veya «Whose trainers are these?» şeklinde kurulur ve «It's Ali's. / It's mine. / They're hers.» gibi cevaplanır. Possessive pronouns: mine, yours, his, hers, ours, theirs kendinden sonra isim almaz ve ismin yerini tutar: «This is my bag. → This bag is mine.»; kesme işareti almazlar ve «mines» diye bir kelime yoktur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf İngilizce 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-ingilizce-hafta-16
+#derskutusu #ingilizce #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-kuran-i-kerim-16
+Sıra: 2027-02-18 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-kuran-i-kerim-16.png
+
+```
+Bunu biliyor muydunuz? Meal: Meal, Kur'an-ı Kerim'in anlamının başka bir dile aktarılmasıdır; bir sureyi anlamak için sure numarası ve ayet numarasıyla meale başvurulur, parantez içi açıklamalar ve farklı mealler karşılaştırılır. Sınıflandırma: 1 ve 2. ayetler Kureyş'e verilen nimeti hatırlatır, 3. ayet kulluk görevini emreder, 4. ayet ise nimetlerin kaynağı olan doyuran ve güven veren Rabbi tanıtır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Kur’an-ı Kerim 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-kuran-i-kerim-hafta-16
+#derskutusu #kuranıkerim #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-matematik-16
+Sıra: 2027-02-18 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-matematik-16.png
+
+```
+Bunu biliyor muydunuz? Göreli sıklık: Öğrenci sayıları farklı olan iki grupta kategorik veriler ham sıklıklarla değil, sıklık ÷ toplam biçiminde bulunan oranlarla (kesir veya yüzde) karşılaştırılır. Çapraz tablo: İki kategorik değişken (örneğin cinsiyet ve kulüp tercihi) satır ve sütunlarda birlikte gösterilir; satır ve sütun toplamları genel toplamı kontrol etmeye yarar, veriler gruplandırılmış sütun grafiğiyle görselleştirilir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Matematik 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-matematik-hafta-16
+#derskutusu #matematik #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-peygamberimizin-hayati-16
+Sıra: 2027-02-18 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-peygamberimizin-hayati-16.png
+
+```
+Bunu biliyor muydunuz? Bağlamla okumak: Bir davranışı doğru anlamak için olayın yerini, zamanını, kişilerin durumunu ve davranışın arkasındaki niyeti birlikte incelemek gerekir; gözlem ile yorum birbirinden ayrılmalıdır. Paylaşma ve îsâr: Günlerdir aç olan Ebû Hüreyre, Peygamberimizin emriyle süt kâsesini önce Suffe ehline dağıtmış, kendisi en son içmiş; böylece başkasını kendine tercih etmenin güzel bir örneğini göstermiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Peygamberimizin Hayatı 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-peygamberimizin-hayati-hafta-16
+#derskutusu #peygamberimizinhayatı #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-sosyal-bilgiler-16
+Sıra: 2027-02-18 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-sosyal-bilgiler-16.png
+
+```
+Bunu biliyor muydunuz? Dönemin koşulları: Emevilerin Mâverâünnehir seferleri ilk karşılaşmayı sağlamış; 751 Talas Savaşı'nda Abbasi-Karluk iş birliği, Abbasi ordusundaki Türk askerler ve İpek Yolu ticareti iki toplumu birbirine yaklaştırmıştır. Kolay kabulün nedeni: Gök Tanrı inancındaki tek yaratıcı, ahiret, kurban, adalet ve cihan hâkimiyeti anlayışlarının İslamiyet'teki tevhid, ahiret, kurban, adalet ve cihat anlayışına benzemesi kabulü kolaylaştırmıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Sosyal Bilgiler 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-sosyal-bilgiler-hafta-16
+#derskutusu #sosyalbilgiler #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-6-turkce-16
+Sıra: 2027-02-19 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-6-turkce-16.png
+
+```
+Bunu biliyor muydunuz? Dinleme Planı: Dinlemeden önce amaç, dinleme şekli (etkileşimli/etkileşimsiz) ve süre belirlenir; sözlük, çalışma kâğıdı ve grafik düzenleyici gibi araçlar bu plana göre seçilir. Çıkarım: Dinlenen metnin bütününden toplanan kanıtlar ön bilgilerle birleştirilerek açıkça söylenmeyen anlama ulaşılır; bu çıkarım bir yargıya ve uygun bir tepkiye dönüştürülür.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 6. sınıf Türkçe 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/6-turkce-hafta-16
+#derskutusu #türkçe #6sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-arapca-16
+Sıra: 2027-02-19 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-arapca-16.png
+
+```
+Bunu biliyor muydunuz? Beş Duyuyla Betimleme: Duyular (görüyorum), (duyuyorum), (kokluyorum), (dokunuyorum) ve (tadıyorum) fiilleriyle anlatılır. Benzetme için (gibi) ve (sanki) kullanılır. Okuma Metni: Serçelere ölçülü ve düzenli yiyecek bırakan Meryem'in hikâyesinin ana fikri şudur: Kışın zor durumdaki canlılara ölçülü bir şekilde yardım etmek hem onları korur hem de bizi mutlu eder.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Arapça 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-arapca-hafta-16
+#derskutusu #arapça #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-din-kulturu-16
+Sıra: 2027-02-19 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-din-kulturu-16.png
+
+```
+Bunu biliyor muydunuz? Değişmeyen ve Yoruma Açık Alan: Namazın, orucun ve zekâtın farz oluşu dinin değişmeyen esaslarıdır; namazda ellerin bağlanacağı yer, hilalin belirlenme yöntemi veya fitrenin nasıl ödeneceği gibi ayrıntılar ise din anlayışı alanına girer. Anlaşmazlıkta Ölçü: Nisâ suresi 59. ayete göre anlaşmazlığa düşülen konular Allah'a ve Resûl'üne, yani Kur'an ve sünnete götürülür; açık hüküm bulunmayan durumlarda ise ehil âlimler içtihat eder.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Din Kültürü ve Ahlak Bilgisi 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-din-kulturu-ve-ahlak-bilgisi-hafta-16
+#derskutusu #dinkültürü #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-fen-bilimleri-16
+Sıra: 2027-02-19 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-fen-bilimleri-16.png
+
+```
+Bunu biliyor muydunuz? Bilgi Toplama Araçları: Solunum sağlığı hakkında bilgi; resmî sağlık kurumlarının internet siteleri, kütüphane, ansiklopedi, bilimsel dergiler, uzman görüşmesi ve anket gibi araçlarla toplanır. Solunum Hastalıkları: Astım, bronşit, zatürre, grip, verem ve KOAH gibi hastalıklardan korunmak için sigara dumanından uzak durmak, ortamı havalandırmak, aşı olmak ve düzenli spor yapmak gerekir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Fen Bilimleri 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-fen-bilimleri-hafta-16
+#derskutusu #fenbilimleri #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-kuran-i-kerim-16
+Sıra: 2027-02-19 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-kuran-i-kerim-16.png
+
+```
+Bunu biliyor muydunuz? Tilavet ve Tertil: Tilavet, Kur'an-ı Kerim'i kurallarına ve adabına uygun okumaktır; tertil ise harflerin hakkını vererek tane tane, ağır ağır ve anlamını düşünerek okumaktır (Müzzemmil suresi, 4). Okuma Adabı: Fil suresi okunmadan önce istiaze ve besmele çekilir; temiz bir yerde, saygılı bir oturuşla, mümkünse abdestli ve kıbleye dönük okunur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Kur’an-ı Kerim 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-kuran-i-kerim-hafta-16
+#derskutusu #kuranıkerim #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-matematik-16
+Sıra: 2027-02-19 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-matematik-16.png
+
+```
+Bunu biliyor muydunuz? Rapor Zinciri: Araştırma sorusu, veri türü, örneklem, grafik, ölçü ve sonuç birbiriyle uyumlu olmalıdır. Sonuç sorunun ve verinin kapsamını aşarsa iddia geçersiz kalır. Gruplandırılmış Veri: Histogramdan aralıklara düşen kişi sayıları ve bu sayıların toplamları okunur. Tek tek değerler, en büyük ya da en küçük değerin kesin hâli ve kesin ortalama bu gösterimden bilinemez.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Matematik 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-matematik-hafta-16
+#derskutusu #matematik #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-peygamberimizin-hayati-16
+Sıra: 2027-02-20 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-peygamberimizin-hayati-16.png
+
+```
+Bunu biliyor muydunuz? İlk İnananlar: Kadınlardan Hz. Hatice, çocuklardan Hz. Ali, azatlılardan Zeyd bin Harise ve hür erkeklerden Hz. Ebu Bekir ilk Müslümanlardır; Tevbe suresi 100. ayette bu öncülere sâbikûn-ı evvelûn denir. Hz. Hatice: Vahyin ilk gününde Peygamberimizi 'Allah seni asla utandırmaz' diyerek teselli etmiş, insanlar onu yalanladığında onu tasdik etmiş ve malıyla davayı desteklemiştir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Peygamberimizin Hayatı 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-peygamberimizin-hayati-hafta-16
+#derskutusu #peygamberimizinhayatı #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-sosyal-bilgiler-16
+Sıra: 2027-02-20 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-sosyal-bilgiler-16.png
+
+```
+Bunu biliyor muydunuz? Kültür ve Medeniyet: Osmanlı medeniyeti; Türk-İslam geleneğini Anadolu, Balkanlar ve Orta Doğu'nun birikimiyle birleştirerek mimari, vakıf, bilim, sanat ve gündelik hayatta kendine özgü bir yapı oluşturmuştur. Kanıt ve Çıkarım: Yapılar, vakfiyeler, arşiv belgeleri, seyahatnameler, minyatürler ve haritalar Osmanlı medeniyetini tanımamızı sağlayan kanıtlardır; bu kanıtları 'kim, ne zaman, ne amaçla' sorularıyla sorgulayarak çıkarım yaparız.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Sosyal Bilgiler 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-sosyal-bilgiler-hafta-16
+#derskutusu #sosyalbilgiler #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-temel-dini-bilgiler-16
+Sıra: 2027-02-20 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-temel-dini-bilgiler-16.png
+
+```
+Bunu biliyor muydunuz? Esmâü'l-Hüsnâ: Allah'ın Kur'an-ı Kerim ve hadislerde bildirilen en güzel isimleridir; 'En güzel isimler Allah'ındır. O hâlde O'na bu isimlerle dua edin.' (A'râf suresi, 180. ayet). er-Rakîb: Her şeyi an be an gözeten, hiçbir söz, davranış ve niyeti gözünden kaçırmayan, kullarını koruyup kollayan demektir; 'Şüphesiz Allah üzerinizde gözetleyicidir.' (Nisâ suresi, 1. ayet).
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Temel Dinî Bilgiler 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-temel-dini-bilgiler-hafta-16
+#derskutusu #temeldinibilgiler #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-7-turkce-16
+Sıra: 2027-02-20 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-16.png
+
+```
+Bunu biliyor muydunuz? Materyal Seçimi: İzlemeden önce izleme şekli (etkileşimli ya da etkileşimsiz), amaç, süre ve erişim olanakları düşünülür. Sözlük, çalışma kâğıdı ve grafik düzenleyici gibi yardımcı kaynaklar buna göre seçilir. Mizah ve Alay: Mizah birlikte gülmektir, alay ise birine gülmektir. Dijital ortamda paylaşılan bir şaka hızla yayılır ve kalıcı olur. Bu yüzden karşımızdaki kişinin izni ve duygusu her zaman önce gelir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 7. sınıf Türkçe 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-turkce-hafta-16
+#derskutusu #türkçe #7sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-arapca-16
+Sıra: 2027-02-20 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-arapca-16.png
+
+```
+Bunu biliyor muydunuz? Üç temel bağlaç: (çünkü) sebebi, (bu yüzden) sonucu, (fakat) ise zıtlığı bildirir. Zaman bağlantıları: (-dığında), (-meden önce) ve (-dıktan sonra) olayların oluş sırasını gösterir; yazılış sırası ile oluş sırası her zaman aynı değildir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Arapça 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-arapca-hafta-16
+#derskutusu #arapça #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-fen-bilimleri-16
+Sıra: 2027-02-20 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-fen-bilimleri-16.png
+
+```
+Bunu biliyor muydunuz? pH ölçeği: Çözeltilerin asitlik ve bazlık derecesi genellikle 0-14 arasındaki pH değerleriyle gösterilir; pH 7 nötr, 7'den küçük değerler asidik, 7'den büyük değerler bazik ortamı ifade eder. pH ve kuvvet: pH değeri 0'a yaklaştıkça asitlik, 14'e yaklaştıkça bazlık artar; pH değerindeki 1 birimlik azalma, ortamın yaklaşık 10 kat daha asidik olduğunu gösterir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Fen Bilimleri 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-fen-bilimleri-hafta-16
+#derskutusu #fenbilimleri #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-ingilizce-16
+Sıra: 2027-02-21 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-ingilizce-16.png
+
+```
+Bunu biliyor muydunuz? Sıklık zarfları: always (%100), usually (%90), often (%70), sometimes (%50), rarely/seldom (%10) ve never (%0) bir eylemi ne sıklıkla yaptığımızı gösterir; ana fiilden önce, am/is/are'dan sonra gelir. Sıklık soruları: 'How often do you go online?' sorusuna 'every day, once a week, twice a month, three times a day' gibi zaman ifadeleriyle cevap verilir; süre için ise 'How much time do you spend online?' sorulur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf İngilizce 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-ingilizce-hafta-16
+#derskutusu #ingilizce #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-inkilap-tarihi-16
+Sıra: 2027-02-21 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-inkilap-tarihi-16.png
+
+```
+Bunu biliyor muydunuz? İlk Direniş: 15 Mayıs 1919'da İzmir'de Hasan Tahsin'in ilk kurşunu ve 29 Mayıs 1919'da Ayvalık'ta Yarbay Ali Bey'in direnişi, Batı Anadolu'da Kuva-yı Milliye hareketinin başlangıcını simgeler. Bölgesel Kongreler: Balıkesir ve Alaşehir kongreleri, Yunan işgaline karşı silahlı direnişi örgütleyen, asker ve para toplayan yerel kongrelerdir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf T.C. İnkılap Tarihi 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-tc-inkilap-tarihi-ve-ataturkculuk-hafta-16
+#derskutusu #inkılaptarihi #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-kuran-i-kerim-16
+Sıra: 2027-02-21 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-kuran-i-kerim-16.png
+
+```
+Bunu biliyor muydunuz? Sureyi tanıyalım: Furkan suresi Mekke'de inmiş, 77 ayetten oluşan, mushaf sıralamasında 25. suredir. Adını, Kur'an'ın 'hak ile batılı birbirinden ayıran' anlamındaki Furkan ismini anan ilk ayetten alır. Haftanın sınırı: Surenin ilk üç sayfası 1-20. ayetleri kapsar. Bu ayetler 18. cüzün son ayetleridir; 21. ayetle birlikte 19. cüz başlar.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Kur’an-ı Kerim 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-kuran-i-kerim-hafta-16
+#derskutusu #kuranıkerim #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-matematik-16
+Sıra: 2027-02-21 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-matematik-16.png
+
+```
+Bunu biliyor muydunuz? Benzer terimler: Değişkenleri ve üsleri aynı olan terimler toplanırken ya da çıkarılırken yalnız katsayılar işleme girer: 3x + 5x = 8x; parantez önündeki eksi, parantez içindeki her terimin işaretini değiştirir. Tek terimlilerin çarpımı: Önce işaret belirlenir, sonra katsayılar çarpılır, en son aynı harfler üslü, farklı harfler yan yana yazılır: (−3x) · 4x = −12x².
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Matematik 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-matematik-hafta-16
+#derskutusu #matematik #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-peygamberimizin-hayati-16
+Sıra: 2027-02-21 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-peygamberimizin-hayati-16.png
+
+```
+Bunu biliyor muydunuz? Üsve-i hasene: Ahzâb suresi 21. ayet, Peygamberimizin Allah'ı ve ahiret gününü umanlar için en güzel örnek olduğunu bildirir; Hz. Aişe de onun ahlakının Kur'an olduğunu söylemiştir (Müslim). İbadetlerde uygulamalı öğretim: “Namazı benim kıldığımı gördüğünüz gibi kılınız.” (Buhârî) ve “Hac ibadetlerinizi benden alınız.” (Müslim) sözleri, ibadetlerin görerek ve uygulayarak öğrenildiğini gösterir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Peygamberimizin Hayatı 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-peygamberimizin-hayati-hafta-16
+#derskutusu #peygamberimizinhayatı #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-temel-dini-bilgiler-16
+Sıra: 2027-02-21 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-temel-dini-bilgiler-16.png
+
+```
+Bunu biliyor muydunuz? Mesh ruhsatı: Mest üzerine mesh, Peygamberimizin (s.a.v.) uygulamasıyla sabit olan bir kolaylıktır; abdestte ayakları yıkamak yerine mestin üzerini ıslak elle sıvazlamaktır. Mestin şartları: Mest abdestli iken giyilmeli, ayağı topuklarla birlikte örtmeli, üç küçük ayak parmağı genişliğinde yırtığı olmamalı ve üzerinde yürünebilecek kadar sağlam olmalıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Temel Dinî Bilgiler 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-temel-dini-bilgiler-hafta-16
+#derskutusu #temeldinibilgiler #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-8-turkce-16
+Sıra: 2027-02-22 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-turkce-16.png
+
+```
+Bunu biliyor muydunuz? Etkili izleme: Belgesel ya da tanıtım filmi izlenirken önce tahmin yapılır, izlerken anahtar kelimeler not edilir, sonra sorular cevaplanır ve görüş Bence – çünkü – örneğin – bu nedenle sırasıyla bildirilir. Şiir okuma: Şiir; vurgu, tonlama, anlam bütünlüğüne göre duraklama ve uyağa dikkat edilerek duygusuyla okunur; kıta kıta, sesli ve yazarak tekrar etmek ezberi kolaylaştırır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 8. sınıf Türkçe 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/8-turkce-hafta-16
+#derskutusu #türkçe #8sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-biyoloji-16
+Sıra: 2027-02-22 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-biyoloji-16.png
+
+```
+Bunu biliyor muydunuz? Monomer-polimer ilişkisi: Polisakkaritler monosakkaritlerden, proteinler amino asitlerden, nükleik asitler nükleotitlerden oluşur; trigliseritler ise gliserol ve yağ asitlerinden oluştuğu için gerçek bir polimer sayılmaz. Bağ çeşitleri: Monosakkaritler arasında glikozit, amino asitler arasında peptit, nükleotitler arasında fosfodiester, gliserol ile yağ asitleri arasında ester bağı kurulur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Biyoloji 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-biyoloji-hafta-16
+#derskutusu #biyoloji #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-cografya-16
+Sıra: 2027-02-22 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-cografya-16.png
+
+```
+Bunu biliyor muydunuz? Akdeniz iklimi: Yazlar sıcak ve kurak, kışlar ılık ve yağışlıdır; Antalya'da yıllık yağışın yaklaşık %60'ı kışın düşer ve Mayıs-Eylül arası beş ay kuraktır. Her mevsim yağışlı iki iklim: Karadeniz ikliminde (Rize) yağış çok bol ve en çok sonbaharda, Ilıman Okyanusal iklimde (Londra) ise yağış daha az ama yıl boyu düzenlidir; ikisinde de kurak ay yoktur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Coğrafya 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-cografya-hafta-16
+#derskutusu #coğrafya #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-9-din-kulturu-16
+Sıra: 2027-02-22 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-din-kulturu-16.png
+
+```
+Bunu biliyor muydunuz? İbadet: Sözlükte boyun eğmek, itaat etmek, saygı göstermek ve kulluk etmek; terim olarak Allah’ın rızasını kazanmak amacıyla O’nun emirlerine uygun biçimde yapılan saygı ve bağlılık davranışlarıdır. İbadetin amacı: Kur’an’a göre insan ve cinlerin yaratılış amacı Allah’a kulluktur (Zâriyât 51/56); ibadet, kulun Allah’a yakınlaşmasının ve sorumluluk bilincini canlı tutmasının yoludur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 9. sınıf Din Kültürü ve Ahlak Bilgisi 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-din-kulturu-ve-ahlak-bilgisi-hafta-16
+#derskutusu #dinkültürü #9sınıf #bunubiliyormuydunuz #maarifmodeli
 ```

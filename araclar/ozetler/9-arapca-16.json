@@ -1,0 +1,646 @@
+{
+  "ad": "9-arapca-16",
+  "sinif": 9,
+  "ders": "arapca",
+  "ders_adi": "Arapça",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "ÜNİTE 2: OKULDAYIM",
+  "konu": "Ders 2: Okulum (Medresetî) — Okulun Mekânları, Okulda Yaptığım İşler (Birinci Tekil Şahıs Fiiller), Eyne...? Fî... Kalıbı, Vâsi' ve Kebîr Sıfatları, Günün Vakitleri ve Okuma Metni",
+  "ciktilar": [
+    "ARP.9.2.1.2 ve ARP.9.2.1.3. Okul ve sınıfla ilgili dinlediği/izlediği içerikte yer alan bilgileri bir araya getirebilme ve anlamlandırabilme: Okulun mekânlarını, okulda yapılan işleri ve bu işlerin zamanını anlatan kısa diyalogları dinleyerek anlar.",
+    "ARP.9.2.2.3. Okul ve sınıfla ilgili okuduğu içeriği anlamlandırabilme: 'Medresetî' (Okulum) metnini okuyarak mekân, eylem, zaman ve nitelik bilgilerini ayırt eder, metne dayalı sorulara cevap verir.",
+    "ARP.9.2.3.1 ve ARP.9.2.4.1. Okul ve sınıfla ilgili hedef dil yapılarını ve sözcükleri kullanabilme: Okulun mekân adlarını, birinci tekil şahıs geniş zaman fiillerini, 'Eyne...? Fî...' kalıbını, vâsi' ve kebîr sıfatlarını, sabâhan, zuhran, mesâen ve mubekkiran zarflarını bağlama uygun kullanır.",
+    "ARP.9.2.6.3 ve ARP.9.2.6.4. Okul ve sınıfla ilgili yazılarında içerik oluşturabilme ve uygulamaya geçirebilme: Model metinden yararlanarak kendi okulunu ve bir okul gününü anlatan kısa bir Arapça paragraf yazar."
+  ],
+  "giris": "Yeni bir derse başlıyoruz: {koyu:Okulum} ({ar:مَدْرَسَتِي}). Geçen haftalarda sınıfımızın içini, eşyalarını, renklerini ve sayılarını anlatmıştık; bu hafta kapıdan çıkıp okulun bütün mekânlarını geziyoruz. {koyu:Kütüphane}, {koyu:laboratuvar}, {koyu:mescit}, {koyu:kantin} ve {koyu:bahçe} gibi mekânların adlarını öğrenecek, okulda yaptığımız işleri {ar:أَذْهَبُ}, {ar:أَقْرَأُ}, {ar:أُصَلِّي} gibi fiillerle anlatacak, {ar:أَيْنَ الْمُدَرِّسُ؟} diye sorup cevaplayacak ve günümüzü {ar:صَبَاحًا}, {ar:ظُهْرًا}, {ar:مَسَاءً} gibi zaman zarflarıyla sıralayacağız. Haftayı {ar:اَلْمَدْرَسَةُ مِفْتَاحُ النَّجَاحِ} (Okul başarının anahtarıdır) sözüyle taçlandıracağız.",
+  "ozet": [
+    "{koyu:Mekân adları:} Okulda {ar:مَكْتَبَةٌ} (kütüphane), {ar:مُخْتَبَرٌ} (laboratuvar), {ar:مَسْجِدٌ} (mescit), {ar:مَقْصِفٌ} (kantin), {ar:حَدِيقَةٌ} (bahçe) gibi mekânlar bulunur; bu kelimelerin birçoğu {koyu:mef'al/mef'ale} kalıbındaki mekân isimleridir.",
+    "{koyu:Birinci tekil fiiller:} Fiilin başındaki {ar:أ} harfi 'ben' anlamı katar; üç harfli fiillerde üstünle ({ar:أَكْتُبُ}), dört harfli fiillerde ötreyle ({ar:أُسَلِّمُ}, {ar:أُصَلِّي}, {ar:أُحِبُّ}) okunur.",
+    "{koyu:Fiil ve harf-i cer:} {ar:أَذْهَبُ إِلَى}, {ar:أَرْجِعُ إِلَى}, {ar:أَخْرُجُ مِنْ}, {ar:أُسَلِّمُ عَلَى} kalıpları birlikte öğrenilir; {ar:أَدْخُلُ} ise çoğunlukla doğrudan nesne alır: {ar:أَدْخُلُ الصَّفَّ}.",
+    "{koyu:Yer sorma:} {ar:أَيْنَ ...؟} sorusuna {ar:فِي} + esreli isimle cevap verilir: {ar:أَيْنَ الْمُدَرِّسُ؟ هُوَ فِي الْمُخْتَبَرِ}.",
+    "{koyu:Nitelik:} {ar:كَبِيرٌ}/{ar:كَبِيرَةٌ} (büyük) ve {ar:وَاسِعٌ}/{ar:وَاسِعَةٌ} (geniş) sıfatları nitelediği isme cinsiyet ve belirlilik bakımından uyar; akılsız çoğullarda tekil dişil gelir.",
+    "{koyu:Zaman ve veciz söz:} {ar:صَبَاحًا}, {ar:ظُهْرًا}, {ar:مَسَاءً}, {ar:مُبَكِّرًا} zarfları tenvinli üstünle zaman bildirir; {ar:اَلْمَدْرَسَةُ مِفْتَاحُ النَّجَاحِ} sözü okulun başarıya açılan kapı olduğunu anlatır."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Okulumun Mekânları ve Mekân İsmi Kalıbı",
+      "metin": [
+        "Okulumuzu anlatmaya önce adından başlayalım: {ar:مَدْرَسَةٌ} 'okul' demektir; sonuna 'benim' anlamındaki {ar:ـِي} zamiri eklenince yuvarlak te açılır ve {ar:مَدْرَسَتِي} (okulum) olur. Lise öğrencisi olduğumuz için okulumuzun türünü {ar:ثَانَوِيَّةٌ} (lise) kelimesiyle de söyleyebiliriz: {ar:أَنَا طَالِبٌ فِي الثَّانَوِيَّةِ} (Ben lisede öğrenciyim). Okulun içinde birçok mekân vardır: kitap okuduğumuz {ar:مَكْتَبَةٌ} (kütüphane), deney yaptığımız {ar:مُخْتَبَرٌ} (laboratuvar), namaz kıldığımız {ar:مَسْجِدٌ} (mescit), teneffüste bir şeyler yediğimiz {ar:مَقْصِفٌ} (kantin), dinlendiğimiz {ar:حَدِيقَةٌ} (bahçe) ve spor yaptığımız {ar:مَلْعَبٌ} (spor sahası). Binanın parçaları olan {ar:بَابٌ} (kapı) ve {ar:نَافِذَةٌ} (pencere) kelimeleri de hem sınıfı hem okulu anlatırken sık kullanılır.",
+        "Bu kelimelerin birçoğu ortak bir kalıba sahiptir. Arapçada bir işin yapıldığı yeri bildiren kelimelere {koyu:mekân ismi} (ism-i mekân) denir ve çoğunlukla {koyu:{ar:مَفْعَلٌ}}, {koyu:{ar:مَفْعِلٌ}} ya da {koyu:{ar:مَفْعَلَةٌ}} kalıbında gelir. {ar:دَرَسَ} (ders çalıştı) kökünden {ar:مَدْرَسَةٌ} 'ders çalışılan yer', {ar:كَتَبَ} (yazdı) kökünden {ar:مَكْتَبَةٌ} 'kitapların bulunduğu yer', {ar:سَجَدَ} (secde etti) kökünden {ar:مَسْجِدٌ} 'secde edilen yer', {ar:لَعِبَ} (oynadı) kökünden {ar:مَلْعَبٌ} 'oynanan yer' anlamını kazanır. {ar:مُخْتَبَرٌ} kelimesi ise 'denemek, sınamak' anlamındaki {ar:اِخْتَبَرَ} fiilinden türemiştir ve 'deneylerin yapıldığı yer' demektir. Kalıbı tanıyan öğrenci, kökünü bildiği yeni bir mekân kelimesinin anlamını kolayca tahmin edebilir.",
+        "Mekân adlarını cümlede kullanırken cinsiyetlerine ve çoğullarına dikkat ederiz. Sonunda yuvarlak te bulunan {ar:مَدْرَسَةٌ}, {ar:مَكْتَبَةٌ}, {ar:حَدِيقَةٌ}, {ar:نَافِذَةٌ}, {ar:ثَانَوِيَّةٌ} dişildir ve {ar:هَذِهِ} ile gösterilir; {ar:مَسْجِدٌ}, {ar:مُخْتَبَرٌ}, {ar:مَقْصِفٌ}, {ar:بَابٌ}, {ar:مَلْعَبٌ} ise erildir ve {ar:هَذَا} ile gösterilir: {ar:هَذِهِ مَكْتَبَةُ الْمَدْرَسَةِ} (Bu okulun kütüphanesidir), {ar:هَذَا مَسْجِدُ الْمَدْرَسَةِ} (Bu okulun mescididir). Okulda neler bulunduğunu söylemek için daha önce öğrendiğimiz varlık yapısını kullanırız: {ar:فِي مَدْرَسَتِي مَكْتَبَةٌ وَمُخْتَبَرٌ وَمَسْجِدٌ} (Okulumda bir kütüphane, bir laboratuvar ve bir mescit vardır)."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Arapça",
+          "Okunuşu",
+          "Anlamı",
+          "Çoğulu"
+        ],
+        "satirlar": [
+          [
+            "{ar:ثَانَوِيَّةٌ}",
+            "sâneviyye",
+            "lise",
+            "{ar:ثَانَوِيَّاتٌ}"
+          ],
+          [
+            "{ar:مَدْرَسَةٌ}",
+            "medrese",
+            "okul",
+            "{ar:مَدَارِسُ}"
+          ],
+          [
+            "{ar:مَكْتَبَةٌ}",
+            "mektebe",
+            "kütüphane",
+            "{ar:مَكْتَبَاتٌ}"
+          ],
+          [
+            "{ar:مُخْتَبَرٌ}",
+            "muhteber",
+            "laboratuvar",
+            "{ar:مُخْتَبَرَاتٌ}"
+          ],
+          [
+            "{ar:مَسْجِدٌ}",
+            "mescid",
+            "mescit, cami",
+            "{ar:مَسَاجِدُ}"
+          ],
+          [
+            "{ar:مَقْصِفٌ}",
+            "maksif",
+            "kantin",
+            "{ar:مَقَاصِفُ}"
+          ],
+          [
+            "{ar:حَدِيقَةٌ}",
+            "hadîka",
+            "bahçe",
+            "{ar:حَدَائِقُ}"
+          ],
+          [
+            "{ar:مَلْعَبٌ}",
+            "mel'ab",
+            "spor sahası, oyun alanı",
+            "{ar:مَلَاعِبُ}"
+          ],
+          [
+            "{ar:نَافِذَةٌ}",
+            "nâfize",
+            "pencere",
+            "{ar:نَوَافِذُ}"
+          ],
+          [
+            "{ar:بَابٌ}",
+            "bâb",
+            "kapı",
+            "{ar:أَبْوَابٌ}"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Mekân İsmi (İsm-i Mekân)",
+          "metin": "Bir işin yapıldığı yeri bildiren isimler çoğunlukla {ar:مَفْعَلٌ} / {ar:مَفْعِلٌ} / {ar:مَفْعَلَةٌ} kalıbındadır: {ar:لَعِبَ} → {ar:مَلْعَبٌ}, {ar:سَجَدَ} → {ar:مَسْجِدٌ}, {ar:دَرَسَ} → {ar:مَدْرَسَةٌ}."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Mekteb mi, Mektebe mi?",
+          "metin": "Yuvarlak te bir harften ibaret görünse de anlamı değiştirir: {ar:مَكْتَبٌ} çalışma masası ya da büro, {ar:مَكْتَبَةٌ} ise kütüphane demektir. {ar:مَكْتَبُ الْمُدِيرِ} (müdürün odası/masası) ile {ar:مَكْتَبَةُ الْمَدْرَسَةِ} (okulun kütüphanesi) karıştırılmamalıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='16' width='720' height='38' rx='8' fill='#0369a1'/><text x='380' y='41' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='700'>MEDRESETÎ: Okulumun Mekânları</text><g font-size='14' text-anchor='middle'><rect x='20' y='68' width='230' height='70' rx='10' fill='#e0f2fe' stroke='#0284c7'/><text x='135' y='96' font-weight='700' fill='#0c4a6e'>mektebe</text><text x='135' y='120' fill='#334155'>kütüphane (dişil)</text><rect x='265' y='68' width='230' height='70' rx='10' fill='#ede9fe' stroke='#7c3aed'/><text x='380' y='96' font-weight='700' fill='#4c1d95'>muhteber</text><text x='380' y='120' fill='#334155'>laboratuvar (eril)</text><rect x='510' y='68' width='230' height='70' rx='10' fill='#dcfce7' stroke='#16a34a'/><text x='625' y='96' font-weight='700' fill='#14532d'>mescid</text><text x='625' y='120' fill='#334155'>mescit (eril)</text><rect x='20' y='150' width='230' height='70' rx='10' fill='#fef3c7' stroke='#d97706'/><text x='135' y='178' font-weight='700' fill='#78350f'>maksif</text><text x='135' y='202' fill='#334155'>kantin (eril)</text><rect x='265' y='150' width='230' height='70' rx='10' fill='#ecfccb' stroke='#65a30d'/><text x='380' y='178' font-weight='700' fill='#365314'>hadîka</text><text x='380' y='202' fill='#334155'>bahçe (dişil)</text><rect x='510' y='150' width='230' height='70' rx='10' fill='#ffe4e6' stroke='#e11d48'/><text x='625' y='178' font-weight='700' fill='#881337'>mel'ab</text><text x='625' y='202' fill='#334155'>spor sahası (eril)</text></g><rect x='20' y='234' width='720' height='72' rx='10' fill='#ffffff' stroke='#94a3b8'/><text x='380' y='258' text-anchor='middle' font-size='14' font-weight='700' fill='#0f172a'>Mekân ismi kalıbı: mef'al / mef'il / mef'ale</text><text x='380' y='284' text-anchor='middle' font-size='13' fill='#334155'>derese → medrese • ketebe → mektebe • secede → mescid • le'ibe → mel'ab</text></svg>"
+    },
+    {
+      "baslik": "Okulda Ne Yaparım? Birinci Tekil Şahıs Fiiller",
+      "metin": [
+        "Okulda geçen bir günü anlatmak için 'yaparım, yapıyorum' anlamı veren fiillere ihtiyaç duyarız. Arapçada bu anlamı {koyu:muzâri fiil} (geniş-şimdiki zaman) taşır. Fiilin başına gelen {ar:أ} harfi işi yapanın {koyu:'ben'} olduğunu gösterir; bu yüzden ayrıca {ar:أَنَا} demek gerekmez. Bu dersin hedef fiilleri şunlardır: {ar:أَكْتُبُ} (yazarım), {ar:أَدْرُسُ} (ders çalışırım), {ar:أَذْهَبُ} (giderim), {ar:أُسَلِّمُ} (selam veririm), {ar:أُصَلِّي} (namaz kılarım), {ar:أَقْرَأُ} (okurum), {ar:أَخْرُجُ} (çıkarım), {ar:أَدْخُلُ} (girerim), {ar:أَرْجِعُ} (dönerim), {ar:أُحِبُّ} (severim). Bu fiiller bağlama göre hem 'yazarım' hem de 'yazıyorum' şeklinde çevrilebilir: {ar:أَكْتُبُ الدَّرْسَ الْآنَ} (Şimdi dersi yazıyorum), {ar:أَكْتُبُ كُلَّ يَوْمٍ} (Her gün yazarım).",
+        "Baştaki {ar:أ} harfinin harekesi, fiilin geçmiş zaman hâlindeki harf sayısına bağlıdır. Geçmiş zamanı {koyu:üç harfli} olan fiillerde {ar:أ} üstünle okunur: {ar:كَتَبَ} → {ar:أَكْتُبُ}, {ar:ذَهَبَ} → {ar:أَذْهَبُ}, {ar:قَرَأَ} → {ar:أَقْرَأُ}, {ar:خَرَجَ} → {ar:أَخْرُجُ}, {ar:دَخَلَ} → {ar:أَدْخُلُ}, {ar:رَجَعَ} → {ar:أَرْجِعُ}. Geçmiş zamanı {koyu:dört harfli} olan fiillerde ise {ar:أ} ötreyle okunur: {ar:سَلَّمَ} → {ar:أُسَلِّمُ}, {ar:صَلَّى} → {ar:أُصَلِّي}, {ar:أَحَبَّ} → {ar:أُحِبُّ}. Şeddeli harfler iki harf sayıldığı için {ar:سَلَّمَ} ve {ar:صَلَّى} dört harflidir. Üç harfli fiillerde orta harfin harekesi (u, a, i) kelimeden kelimeye değiştiği için {ar:أَكْتُبُ}, {ar:أَذْهَبُ}, {ar:أَرْجِعُ} gibi biçimleri dinleyerek ve tekrar ederek öğrenmek gerekir.",
+        "Bu fiillerin bir kısmı belirli harf-i cerlerle birlikte kullanılır ve bu harf-i cerden sonraki isim esreli okunur. Gitmek ve dönmek 'yönelme' bildirdiği için {ar:إِلَى} alır: {ar:أَذْهَبُ إِلَى الْمَدْرَسَةِ} (Okula giderim), {ar:أَرْجِعُ إِلَى الْبَيْتِ} (Eve dönerim). Çıkmak 'ayrılma' bildirdiği için {ar:مِنْ} alır: {ar:أَخْرُجُ مِنَ الصَّفِّ} (Sınıftan çıkarım). Selam vermek {ar:عَلَى} ile kurulur: {ar:أُسَلِّمُ عَلَى الْمُدَرِّسِ} (Öğretmene selam veririm). {ar:أَدْخُلُ}, {ar:أَقْرَأُ}, {ar:أَكْتُبُ}, {ar:أُحِبُّ} fiilleri ise doğrudan üstünlü nesne alabilir: {ar:أَدْخُلُ الصَّفَّ}, {ar:أَقْرَأُ الْكِتَابَ}, {ar:أُحِبُّ مَدْرَسَتِي}. Olumsuz yapmak için fiilin başına {ar:لَا} getirmek yeterlidir: {ar:لَا أَخْرُجُ مِنَ الصَّفِّ} (Sınıftan çıkmam)."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Geçmiş Zaman (O yaptı)",
+          "Muzâri (Ben yaparım)",
+          "Anlamı",
+          "Okul Bağlamında Örnek"
+        ],
+        "satirlar": [
+          [
+            "{ar:كَتَبَ}",
+            "{ar:أَكْتُبُ}",
+            "yazarım",
+            "{ar:أَكْتُبُ الدَّرْسَ فِي الدَّفْتَرِ} (Dersi deftere yazarım.)"
+          ],
+          [
+            "{ar:دَرَسَ}",
+            "{ar:أَدْرُسُ}",
+            "ders çalışırım",
+            "{ar:أَدْرُسُ فِي الْمَكْتَبَةِ} (Kütüphanede ders çalışırım.)"
+          ],
+          [
+            "{ar:ذَهَبَ}",
+            "{ar:أَذْهَبُ}",
+            "giderim",
+            "{ar:أَذْهَبُ إِلَى الْمَقْصِفِ} (Kantine giderim.)"
+          ],
+          [
+            "{ar:سَلَّمَ}",
+            "{ar:أُسَلِّمُ}",
+            "selam veririm",
+            "{ar:أُسَلِّمُ عَلَى زُمَلَائِي} (Arkadaşlarıma selam veririm.)"
+          ],
+          [
+            "{ar:صَلَّى}",
+            "{ar:أُصَلِّي}",
+            "namaz kılarım",
+            "{ar:أُصَلِّي فِي الْمَسْجِدِ} (Mescitte namaz kılarım.)"
+          ],
+          [
+            "{ar:قَرَأَ}",
+            "{ar:أَقْرَأُ}",
+            "okurum",
+            "{ar:أَقْرَأُ قِصَّةً} (Bir hikâye okurum.)"
+          ],
+          [
+            "{ar:خَرَجَ}",
+            "{ar:أَخْرُجُ}",
+            "çıkarım",
+            "{ar:أَخْرُجُ مِنَ الْبَيْتِ} (Evden çıkarım.)"
+          ],
+          [
+            "{ar:دَخَلَ}",
+            "{ar:أَدْخُلُ}",
+            "girerim",
+            "{ar:أَدْخُلُ الْمُخْتَبَرَ} (Laboratuvara girerim.)"
+          ],
+          [
+            "{ar:رَجَعَ}",
+            "{ar:أَرْجِعُ}",
+            "dönerim",
+            "{ar:أَرْجِعُ إِلَى الْبَيْتِ} (Eve dönerim.)"
+          ],
+          [
+            "{ar:أَحَبَّ}",
+            "{ar:أُحِبُّ}",
+            "severim",
+            "{ar:أُحِبُّ مَدْرَسَتِي} (Okulumu severim.)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Ben Bildiren Elif",
+          "metin": "Muzâri fiilin başındaki {ar:أ} 'ben' anlamı verir. Geçmiş zamanı üç harfli fiillerde üstün ({ar:أَذْهَبُ}), dört harfli fiillerde ötre ({ar:أُسَلِّمُ}) ile okunur. Fiilin son harfi ise ötrelidir: {ar:أَكْتُبُ}, {ar:أَقْرَأُ}."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Fiili Yol Arkadaşıyla Ezberleyin",
+          "metin": "Fiilleri tek başına değil, harf-i ceriyle birlikte tekrar edin: {ar:أَذْهَبُ إِلَى...}, {ar:أَرْجِعُ إِلَى...}, {ar:أَخْرُجُ مِنْ...}, {ar:أُسَلِّمُ عَلَى...}. Böylece cümle kurarken doğru harf-i ceri aramak zorunda kalmazsınız."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='16' width='720' height='38' rx='8' fill='#0f766e'/><text x='380' y='41' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='700'>OKUL GÜNÜM: Birinci Tekil Şahıs Fiiller (ene = ben)</text><g text-anchor='middle'><rect x='30' y='70' width='160' height='66' rx='10' fill='#ccfbf1' stroke='#0d9488'/><text x='110' y='97' font-size='15' font-weight='700' fill='#134e4a'>1. ahrucu</text><text x='110' y='120' font-size='12' fill='#334155'>(evden) çıkarım</text><text x='200' y='109' font-size='18' fill='#0f766e'>→</text><rect x='210' y='70' width='160' height='66' rx='10' fill='#ccfbf1' stroke='#0d9488'/><text x='290' y='97' font-size='15' font-weight='700' fill='#134e4a'>2. ezhebu</text><text x='290' y='120' font-size='12' fill='#334155'>(okula) giderim</text><text x='380' y='109' font-size='18' fill='#0f766e'>→</text><rect x='390' y='70' width='160' height='66' rx='10' fill='#ccfbf1' stroke='#0d9488'/><text x='470' y='97' font-size='15' font-weight='700' fill='#134e4a'>3. edhulu</text><text x='470' y='120' font-size='12' fill='#334155'>(sınıfa) girerim</text><text x='560' y='109' font-size='18' fill='#0f766e'>→</text><rect x='570' y='70' width='160' height='66' rx='10' fill='#fef9c3' stroke='#ca8a04'/><text x='650' y='97' font-size='15' font-weight='700' fill='#713f12'>4. usellimu</text><text x='650' y='120' font-size='12' fill='#334155'>selam veririm</text><rect x='30' y='158' width='160' height='66' rx='10' fill='#ccfbf1' stroke='#0d9488'/><text x='110' y='185' font-size='15' font-weight='700' fill='#134e4a'>5. ektubu</text><text x='110' y='208' font-size='12' fill='#334155'>yazarım</text><text x='200' y='197' font-size='18' fill='#0f766e'>→</text><rect x='210' y='158' width='160' height='66' rx='10' fill='#ccfbf1' stroke='#0d9488'/><text x='290' y='185' font-size='15' font-weight='700' fill='#134e4a'>6. akrau</text><text x='290' y='208' font-size='12' fill='#334155'>okurum</text><text x='380' y='197' font-size='18' fill='#0f766e'>→</text><rect x='390' y='158' width='160' height='66' rx='10' fill='#fef9c3' stroke='#ca8a04'/><text x='470' y='185' font-size='15' font-weight='700' fill='#713f12'>7. usallî</text><text x='470' y='208' font-size='12' fill='#334155'>namaz kılarım</text><text x='560' y='197' font-size='18' fill='#0f766e'>→</text><rect x='570' y='158' width='160' height='66' rx='10' fill='#ccfbf1' stroke='#0d9488'/><text x='650' y='185' font-size='15' font-weight='700' fill='#134e4a'>8. erci'u</text><text x='650' y='208' font-size='12' fill='#334155'>(eve) dönerim</text></g><rect x='30' y='240' width='700' height='46' rx='10' fill='#ffffff' stroke='#94a3b8'/><text x='380' y='260' text-anchor='middle' font-size='13' fill='#134e4a'>Yeşil kutular: 3 harfli fiil, başta e- (ektubu, ezhebu, erci'u)</text><text x='380' y='278' text-anchor='middle' font-size='13' fill='#713f12'>Sarı kutular: 4 harfli fiil, başta u- (usellimu, usallî, uhibbu)</text></svg>"
+    },
+    {
+      "baslik": "Eyne...? Fî...: Kişileri ve Mekânları Sormak",
+      "metin": [
+        "Okulda birini aradığımızda {ar:أَيْنَ} (nerede?) soru kelimesini kullanırız. Kalıp çok basittir: {ar:أَيْنَ} + ötreli belirli isim + {ar:؟}. Örneğin {ar:أَيْنَ الْمُدَرِّسُ؟} (Öğretmen nerede?), {ar:أَيْنَ الطَّالِبُ؟} (Öğrenci nerede?), {ar:أَيْنَ الْمُدِيرُ؟} (Müdür nerede?). Cevapta bulunulan yer {ar:فِي} harf-i ceriyle verilir ve {ar:فِي} kendisinden sonraki ismi esreli yapar: {ar:الْمُدَرِّسُ فِي الْمُخْتَبَرِ} (Öğretmen laboratuvardadır), {ar:الطَّالِبُ فِي الْمَكْتَبَةِ} (Öğrenci kütüphanededir). Türkçedeki '-de, -da' bulunma ekinin Arapçadaki karşılığı bu {ar:فِي} harfidir.",
+        "Cevabı üç farklı uzunlukta verebiliriz. {koyu:Tam cevapta} isim tekrar edilir: {ar:الْمُدَرِّسُ فِي الصَّفِّ}. {koyu:Zamirli cevapta} isim yerine zamir kullanılır; erkek için {ar:هُوَ}, kız için {ar:هِيَ}, topluluk için {ar:هُمْ}: {ar:أَيْنَ الطَّالِبَةُ؟ هِيَ فِي الْمَسْجِدِ}, {ar:أَيْنَ الطُّلَّابُ؟ هُمْ فِي الْحَدِيقَةِ}. {koyu:Kısa cevapta} ise yalnızca yer söylenir: {ar:فِي الْمَقْصِفِ} (Kantinde). Yer bir isim tamlamasıyla anlatılırsa {ar:فِي}'den sonraki ilk kelime esreli ve tenvinsiz, ikinci kelime de esreli olur: {ar:فِي غُرْفَةِ الْمُدَرِّسِينَ} (öğretmenler odasında), {ar:فِي مَسْجِدِ الْمَدْرَسَةِ} (okulun mescidinde), {ar:فِي مَلْعَبِ الْمَدْرَسَةِ} (okulun spor sahasında).",
+        "{ar:أَيْنَ} yalnızca kişilerin değil, eşyaların ve mekânların yerini sormak için de kullanılır: {ar:أَيْنَ الْمَكْتَبَةُ؟ الْمَكْتَبَةُ فِي الطَّابِقِ الثَّانِي} (Kütüphane nerede? Kütüphane ikinci kattadır). Bir yere gidilen yönü sormak için {ar:إِلَى أَيْنَ؟} (nereye?) kalıbı kullanılır: {ar:إِلَى أَيْنَ تَذْهَبُ؟} (Nereye gidiyorsun? - erkeğe), {ar:إِلَى أَيْنَ تَذْهَبِينَ؟} (Nereye gidiyorsun? - kıza). Cevap, öğrendiğimiz birinci tekil fiille verilir: {ar:أَذْهَبُ إِلَى الْمَكْتَبَةِ} (Kütüphaneye gidiyorum). Kısa bir diyalog: Ali: {ar:يَا عُمَرُ، أَيْنَ الْمُدَرِّسُ؟} Ömer: {ar:هُوَ فِي الْمُخْتَبَرِ.} Ali: {ar:وَأَيْنَ زَيْنَبُ؟} Ömer: {ar:هِيَ فِي الْمَكْتَبَةِ.} (Ömer, öğretmen nerede? - O laboratuvarda. - Ya Zeynep nerede? - O kütüphanede.)"
+      ],
+      "tablo": {
+        "basliklar": [
+          "Soru",
+          "Tam / Zamirli Cevap",
+          "Kısa Cevap",
+          "Türkçesi"
+        ],
+        "satirlar": [
+          [
+            "{ar:أَيْنَ الْمُدَرِّسُ؟}",
+            "{ar:هُوَ فِي الْمُخْتَبَرِ}",
+            "{ar:فِي الْمُخْتَبَرِ}",
+            "Öğretmen nerede? - Laboratuvarda."
+          ],
+          [
+            "{ar:أَيْنَ الطَّالِبَةُ؟}",
+            "{ar:هِيَ فِي الْمَكْتَبَةِ}",
+            "{ar:فِي الْمَكْتَبَةِ}",
+            "Kız öğrenci nerede? - Kütüphanede."
+          ],
+          [
+            "{ar:أَيْنَ الطُّلَّابُ؟}",
+            "{ar:هُمْ فِي الْحَدِيقَةِ}",
+            "{ar:فِي الْحَدِيقَةِ}",
+            "Öğrenciler nerede? - Bahçede."
+          ],
+          [
+            "{ar:أَيْنَ الْمُدِيرُ؟}",
+            "{ar:الْمُدِيرُ فِي غُرْفَتِهِ}",
+            "{ar:فِي غُرْفَتِهِ}",
+            "Müdür nerede? - Odasında."
+          ],
+          [
+            "{ar:أَيْنَ الْمَقْصِفُ؟}",
+            "{ar:الْمَقْصِفُ قَرِيبٌ مِنَ الْحَدِيقَةِ}",
+            "{ar:قَرِيبٌ مِنَ الْحَدِيقَةِ}",
+            "Kantin nerede? - Bahçeye yakın."
+          ],
+          [
+            "{ar:إِلَى أَيْنَ تَذْهَبُ؟}",
+            "{ar:أَذْهَبُ إِلَى الْمَسْجِدِ}",
+            "{ar:إِلَى الْمَسْجِدِ}",
+            "Nereye gidiyorsun? - Mescide."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Fî Harfinden Sonra Esre",
+          "metin": "{ar:فِي} bir harf-i cerdir; ardından gelen isim esreli okunur: {ar:الْمَكْتَبَةُ} → {ar:فِي الْمَكْتَبَةِ}. {ar:فِي الْمَكْتَبَةُ} şeklinde ötreli okumak yanlıştır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Zamiri Doğru Seçin",
+          "metin": "Soruda geçen kişinin cinsiyetine bakın: {ar:الْمُدَرِّسُ} → {ar:هُوَ}, {ar:الْمُدَرِّسَةُ} → {ar:هِيَ}, {ar:الطُّلَّابُ} → {ar:هُمْ}. Mekân ve eşyalarda dişil isimler için de {ar:هِيَ} kullanılır: {ar:أَيْنَ الْحَقِيبَةُ؟ هِيَ فِي الصَّفِّ}."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='16' width='720' height='38' rx='8' fill='#7c3aed'/><text x='380' y='41' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='700'>EYNE...? FÎ... : Nerede? ...-de</text><circle cx='60' cy='100' r='22' fill='#c4b5fd'/><text x='60' y='105' text-anchor='middle' font-size='12' font-weight='700' fill='#2e1065'>Ali</text><rect x='92' y='72' width='250' height='56' rx='14' fill='#ede9fe' stroke='#7c3aed'/><text x='217' y='96' text-anchor='middle' font-size='14' font-weight='700' fill='#4c1d95'>Eyne'l-mudarrisu?</text><text x='217' y='116' text-anchor='middle' font-size='12' fill='#334155'>Öğretmen nerede?</text><rect x='418' y='72' width='250' height='56' rx='14' fill='#dcfce7' stroke='#16a34a'/><text x='543' y='96' text-anchor='middle' font-size='14' font-weight='700' fill='#14532d'>Huve fi'l-muhteberi.</text><text x='543' y='116' text-anchor='middle' font-size='12' fill='#334155'>O laboratuvardadır.</text><circle cx='700' cy='100' r='22' fill='#86efac'/><text x='700' y='105' text-anchor='middle' font-size='12' font-weight='700' fill='#14532d'>Ömer</text><rect x='92' y='142' width='250' height='56' rx='14' fill='#ede9fe' stroke='#7c3aed'/><text x='217' y='166' text-anchor='middle' font-size='14' font-weight='700' fill='#4c1d95'>Eyne't-tâlibetu?</text><text x='217' y='186' text-anchor='middle' font-size='12' fill='#334155'>Kız öğrenci nerede?</text><rect x='418' y='142' width='250' height='56' rx='14' fill='#dcfce7' stroke='#16a34a'/><text x='543' y='166' text-anchor='middle' font-size='14' font-weight='700' fill='#14532d'>Hiye fi'l-mektebeti.</text><text x='543' y='186' text-anchor='middle' font-size='12' fill='#334155'>O kütüphanededir.</text><rect x='30' y='214' width='700' height='72' rx='10' fill='#ffffff' stroke='#94a3b8'/><text x='380' y='238' text-anchor='middle' font-size='14' font-weight='700' fill='#0f172a'>Kalıp: eyne + belirli isim (ötreli) ? → huve / hiye / hum + fî + isim (esreli)</text><text x='380' y='264' text-anchor='middle' font-size='13' fill='#334155'>Yön sorusu: ilâ eyne tezhebu? (Nereye gidiyorsun?) → ezhebu ile'l-maksifi. (Kantine gidiyorum.)</text></svg>"
+    },
+    {
+      "baslik": "Okulumu Niteliyorum: Vâsi' ve Kebîr Sıfatları",
+      "metin": [
+        "Okulumuzu anlatırken yalnızca mekânları saymak yetmez; o mekânların nasıl olduğunu da söylemek isteriz. Bu derste iki temel sıfat öne çıkar: {ar:كَبِيرٌ} / {ar:كَبِيرَةٌ} (büyük) ve {ar:وَاسِعٌ} / {ar:وَاسِعَةٌ} (geniş, ferah). {ar:كَبِيرٌ} bir şeyin boyutunun büyüklüğünü anlatır: {ar:مَدْرَسَتِي كَبِيرَةٌ} (Okulum büyüktür), {ar:الْبَابُ كَبِيرٌ} (Kapı büyüktür). {ar:وَاسِعٌ} ise bir yerin içinin geniş ve ferah olduğunu, insanların rahatça hareket edebildiğini anlatır: {ar:الْحَدِيقَةُ وَاسِعَةٌ} (Bahçe geniştir), {ar:الْمَلْعَبُ وَاسِعٌ} (Spor sahası geniştir). Bu iki sıfat birlikte de kullanılabilir: {ar:الْمَكْتَبَةُ كَبِيرَةٌ وَوَاسِعَةٌ} (Kütüphane büyük ve geniştir).",
+        "Sıfatlar zıtlarıyla birlikte öğrenildiğinde daha kalıcı olur: {ar:كَبِيرٌ} (büyük) ↔ {ar:صَغِيرٌ} (küçük), {ar:وَاسِعٌ} (geniş) ↔ {ar:ضَيِّقٌ} (dar). Geçen derste öğrendiğimiz ayrım burada da geçerlidir. Sıfat, belirsiz bir ismin ardından belirsiz gelirse {koyu:sıfat tamlaması} olur: {ar:مَكْتَبَةٌ كَبِيرَةٌ} (büyük bir kütüphane). Belirli bir ismin ardından belirsiz gelirse {koyu:isim cümlesi} kurulur: {ar:الْمَكْتَبَةُ كَبِيرَةٌ} (Kütüphane büyüktür). İyelik zamiri alan isim belirli sayılır; bu yüzden {ar:مَدْرَسَتِي كَبِيرَةٌ} bir cümledir (Okulum büyüktür), {ar:مَدْرَسَتِي الْكَبِيرَةُ} ise bir tamlamadır (benim büyük okulum).",
+        "Sıfatlar akılsız çoğullarla kullanıldığında yine {koyu:tekil dişil} gelir: {ar:النَّوَافِذُ كَبِيرَةٌ} (Pencereler büyüktür), {ar:الْمُخْتَبَرَاتُ وَاسِعَةٌ} (Laboratuvarlar geniştir), {ar:فِي مَدْرَسَتِي حَدَائِقُ وَاسِعَةٌ} (Okulumda geniş bahçeler vardır). Bir isme birden fazla nitelik vermek için sıfatlar {ar:وَ} ile bağlanır: {ar:الْمُخْتَبَرُ كَبِيرٌ وَنَظِيفٌ} (Laboratuvar büyük ve temizdir). Anlamı güçlendirmek için sıfattan sonra {ar:جِدًّا} (çok) eklenebilir: {ar:الْمَلْعَبُ وَاسِعٌ جِدًّا} (Spor sahası çok geniştir). Böylece {ar:مَدْرَسَتِي جَمِيلَةٌ، وَحَدِيقَتُهَا وَاسِعَةٌ جِدًّا} gibi zengin tasvirler kurabiliriz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Eril",
+          "Dişil",
+          "Anlamı",
+          "Zıddı",
+          "Örnek Cümle"
+        ],
+        "satirlar": [
+          [
+            "{ar:كَبِيرٌ}",
+            "{ar:كَبِيرَةٌ}",
+            "büyük",
+            "{ar:صَغِيرٌ} / {ar:صَغِيرَةٌ}",
+            "{ar:مَدْرَسَتِي كَبِيرَةٌ} (Okulum büyüktür.)"
+          ],
+          [
+            "{ar:وَاسِعٌ}",
+            "{ar:وَاسِعَةٌ}",
+            "geniş, ferah",
+            "{ar:ضَيِّقٌ} / {ar:ضَيِّقَةٌ}",
+            "{ar:الْحَدِيقَةُ وَاسِعَةٌ} (Bahçe geniştir.)"
+          ],
+          [
+            "{ar:جَدِيدٌ}",
+            "{ar:جَدِيدَةٌ}",
+            "yeni",
+            "{ar:قَدِيمٌ} / {ar:قَدِيمَةٌ}",
+            "{ar:الْمُخْتَبَرُ جَدِيدٌ} (Laboratuvar yenidir.)"
+          ],
+          [
+            "{ar:نَظِيفٌ}",
+            "{ar:نَظِيفَةٌ}",
+            "temiz",
+            "{ar:وَسِخٌ} / {ar:وَسِخَةٌ}",
+            "{ar:الْمَقْصِفُ نَظِيفٌ} (Kantin temizdir.)"
+          ],
+          [
+            "{ar:جَمِيلٌ}",
+            "{ar:جَمِيلَةٌ}",
+            "güzel",
+            "{ar:قَبِيحٌ} / {ar:قَبِيحَةٌ}",
+            "{ar:الْمَسْجِدُ جَمِيلٌ} (Mescit güzeldir.)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Büyük mü, Geniş mi?",
+          "metin": "{ar:كَبِيرٌ} dıştan görülen büyüklüğü, {ar:وَاسِعٌ} içerideki ferahlığı anlatır. Büyük bir bina eşyalarla dolu olduğu için dar olabilir; küçük bir oda ise düzenli olduğu için ferah görünebilir. Bahçe ve spor sahası için daha çok {ar:وَاسِعٌ} tercih edilir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Akılsız Çoğul Kuralı",
+          "metin": "Eşya ve mekân çoğulları tekil dişil gibi davranır: {ar:الْأَبْوَابُ كَبِيرَةٌ} (Kapılar büyüktür), {ar:الْمَكْتَبَاتُ وَاسِعَةٌ} (Kütüphaneler geniştir). {ar:الْأَبْوَابُ كَبِيرٌ} demek yanlıştır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='16' width='720' height='38' rx='8' fill='#b45309'/><text x='380' y='41' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='700'>OKULUMU NİTELİYORUM: Kebîr ve Vâsi'</text><rect x='20' y='68' width='350' height='150' rx='12' fill='#ffffff' stroke='#d97706'/><rect x='45' y='108' width='90' height='80' rx='4' fill='#fde68a' stroke='#b45309'/><rect x='80' y='158' width='20' height='30' fill='#b45309'/><rect x='160' y='148' width='40' height='40' rx='4' fill='#fef3c7' stroke='#b45309'/><text x='90' y='204' text-anchor='middle' font-size='12' fill='#334155'>büyük</text><text x='180' y='204' text-anchor='middle' font-size='12' fill='#334155'>küçük</text><text x='290' y='120' text-anchor='middle' font-size='15' font-weight='700' fill='#78350f'>kebîr / kebîra</text><text x='290' y='144' text-anchor='middle' font-size='13' fill='#334155'>büyük</text><text x='290' y='172' text-anchor='middle' font-size='15' font-weight='700' fill='#78350f'>sağîr / sağîra</text><text x='290' y='194' text-anchor='middle' font-size='13' fill='#334155'>küçük</text><rect x='390' y='68' width='350' height='150' rx='12' fill='#ffffff' stroke='#16a34a'/><rect x='410' y='100' width='120' height='40' rx='6' fill='#bbf7d0' stroke='#15803d'/><rect x='450' y='155' width='40' height='40' rx='6' fill='#dcfce7' stroke='#15803d'/><text x='470' y='125' text-anchor='middle' font-size='12' fill='#14532d'>geniş bahçe</text><text x='470' y='210' text-anchor='middle' font-size='12' fill='#334155'>dar oda</text><text x='650' y='120' text-anchor='middle' font-size='15' font-weight='700' fill='#14532d'>vâsi' / vâsi'a</text><text x='650' y='144' text-anchor='middle' font-size='13' fill='#334155'>geniş, ferah</text><text x='650' y='172' text-anchor='middle' font-size='15' font-weight='700' fill='#14532d'>dayyik / dayyika</text><text x='650' y='194' text-anchor='middle' font-size='13' fill='#334155'>dar</text><rect x='20' y='232' width='720' height='54' rx='10' fill='#fff7ed' stroke='#fdba74'/><text x='380' y='254' text-anchor='middle' font-size='13' fill='#7c2d12'>medresetî kebîra (Okulum büyüktür) • el-hadîkatu vâsi'a (Bahçe geniştir)</text><text x='380' y='274' text-anchor='middle' font-size='13' fill='#7c2d12'>en-nevâfizu kebîra (Pencereler büyüktür: akılsız çoğul + tekil dişil sıfat)</text></svg>"
+    },
+    {
+      "baslik": "Günün Vakitleri: Sabâhan, Zuhran, Mesâen, Mubekkiran",
+      "metin": [
+        "Okulda yaptığımız işleri anlatırken 'ne zaman' yaptığımızı da söyleriz. Arapçada bazı zaman isimleri sonlarına {koyu:tenvinli üstün} alarak zarf görevine geçer ve Türkçedeki '-leyin, -de' anlamını kazanır: {ar:صَبَاحٌ} (sabah) → {ar:صَبَاحًا} (sabahleyin), {ar:ظُهْرٌ} (öğle) → {ar:ظُهْرًا} (öğleyin), {ar:مَسَاءٌ} (akşam) → {ar:مَسَاءً} (akşamleyin). Bunlara 'erken' anlamındaki {ar:مُبَكِّرًا} zarfı da eklenir; bu kelime 'erken davrandı' anlamındaki {ar:بَكَّرَ} fiilinden gelir. Yazımda bir inceliğe dikkat edelim: tenvinli üstün genellikle sona bir elif ekler ({ar:صَبَاحًا}, {ar:ظُهْرًا}), fakat kelime hemzeyle bitiyorsa elif yazılmaz: {ar:مَسَاءً}.",
+        "Zaman zarfları cümlede genellikle fiilden ve tümleçlerden sonra, cümlenin sonunda yer alır: {ar:أَخْرُجُ مِنَ الْبَيْتِ صَبَاحًا} (Sabahleyin evden çıkarım), {ar:أُصَلِّي فِي مَسْجِدِ الْمَدْرَسَةِ ظُهْرًا} (Öğleyin okulun mescidinde namaz kılarım), {ar:أَدْرُسُ دُرُوسِي مَسَاءً} (Akşamleyin derslerime çalışırım). Vurgu yapmak istediğimizde zarf cümlenin başına da alınabilir: {ar:صَبَاحًا أَذْهَبُ إِلَى الْمَدْرَسَةِ}. İki zarf bir arada da kullanılabilir: {ar:أَذْهَبُ إِلَى الْمَدْرَسَةِ صَبَاحًا مُبَكِّرًا} (Sabah erkenden okula giderim). {ar:مُبَكِّرًا} zarfının zıddı 'geç' anlamındaki {ar:مُتَأَخِّرًا} zarfıdır: {ar:لَا أَدْخُلُ الصَّفَّ مُتَأَخِّرًا} (Sınıfa geç girmem).",
+        "Aynı anlamı {ar:فِي} harf-i ceriyle de verebiliriz: {ar:فِي الصَّبَاحِ} (sabahleyin), {ar:فِي الْمَسَاءِ} (akşamleyin). Bu kelimeleri aslında daha önce selamlaşırken kullanmıştık: {ar:صَبَاحَ الْخَيْرِ} (Günaydın) ve {ar:مَسَاءَ الْخَيْرِ} (İyi akşamlar) ifadelerindeki {ar:صَبَاحَ} ve {ar:مَسَاءَ} aynı köklerdendir. Bir işin zamanını sormak için {ar:مَتَى} (ne zaman?) soru kelimesi kullanılır: {ar:مَتَى تَذْهَبُ إِلَى الْمَكْتَبَةِ؟} (Kütüphaneye ne zaman gidiyorsun?) - {ar:أَذْهَبُ إِلَى الْمَكْتَبَةِ ظُهْرًا} (Öğleyin kütüphaneye giderim). Böylece {ar:أَيْنَ} ile yeri, {ar:مَتَى} ile zamanı sorarak okul günümüzü eksiksiz anlatabiliriz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Zarf",
+          "Okunuşu",
+          "Anlamı",
+          "Okul Gününden Örnek"
+        ],
+        "satirlar": [
+          [
+            "{ar:صَبَاحًا}",
+            "sabâhan",
+            "sabahleyin",
+            "{ar:أَذْهَبُ إِلَى الْمَدْرَسَةِ صَبَاحًا} (Sabahleyin okula giderim.)"
+          ],
+          [
+            "{ar:ظُهْرًا}",
+            "zuhran",
+            "öğleyin",
+            "{ar:آكُلُ فِي الْمَقْصِفِ ظُهْرًا} (Öğleyin kantinde yemek yerim.)"
+          ],
+          [
+            "{ar:مَسَاءً}",
+            "mesâen",
+            "akşamleyin",
+            "{ar:أَكْتُبُ وَاجِبَاتِي مَسَاءً} (Akşamleyin ödevlerimi yazarım.)"
+          ],
+          [
+            "{ar:مُبَكِّرًا}",
+            "mubekkiran",
+            "erken, erkenden",
+            "{ar:أَدْخُلُ الصَّفَّ مُبَكِّرًا} (Sınıfa erken girerim.)"
+          ],
+          [
+            "{ar:مُتَأَخِّرًا}",
+            "mute'ahhiran",
+            "geç",
+            "{ar:لَا أَرْجِعُ إِلَى الْبَيْتِ مُتَأَخِّرًا} (Eve geç dönmem.)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Zaman Bildiren Tenvinli Üstün",
+          "metin": "Zaman ismi sonuna tenvinli üstün alınca '-leyin' anlamı verir: {ar:صَبَاحٌ} → {ar:صَبَاحًا}. Hemzeyle biten kelimelerde elif yazılmaz: {ar:مَسَاءٌ} → {ar:مَسَاءً}."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Metâ ve Eyne Birlikte",
+          "metin": "Bir arkadaşınızın gününü öğrenmek için iki soru yeter: {ar:أَيْنَ؟} (nerede?) ve {ar:مَتَى؟} (ne zaman?). Cevabı tek cümlede birleştirin: {ar:أَدْرُسُ فِي الْمَكْتَبَةِ ظُهْرًا} (Öğleyin kütüphanede ders çalışırım)."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='16' width='720' height='38' rx='8' fill='#c2410c'/><text x='380' y='41' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='700'>GÜNÜN VAKİTLERİ: Ne zaman? (metâ?)</text><path d='M60 200 Q380 40 700 200' fill='none' stroke='#fdba74' stroke-width='3' stroke-dasharray='6 6'/><line x1='40' y1='200' x2='720' y2='200' stroke='#94a3b8' stroke-width='3'/><circle cx='150' cy='150' r='22' fill='#fde047' stroke='#ca8a04' stroke-width='2'/><circle cx='380' cy='96' r='26' fill='#facc15' stroke='#a16207' stroke-width='2'/><circle cx='610' cy='150' r='22' fill='#fb923c' stroke='#c2410c' stroke-width='2'/><rect x='60' y='70' width='110' height='30' rx='15' fill='#dcfce7' stroke='#16a34a'/><text x='115' y='90' text-anchor='middle' font-size='13' font-weight='700' fill='#14532d'>mubekkiran</text><text x='150' y='224' text-anchor='middle' font-size='15' font-weight='700' fill='#0f172a'>sabâhan</text><text x='150' y='244' text-anchor='middle' font-size='12' fill='#475569'>sabahleyin</text><text x='380' y='224' text-anchor='middle' font-size='15' font-weight='700' fill='#0f172a'>zuhran</text><text x='380' y='244' text-anchor='middle' font-size='12' fill='#475569'>öğleyin</text><text x='610' y='224' text-anchor='middle' font-size='15' font-weight='700' fill='#0f172a'>mesâen</text><text x='610' y='244' text-anchor='middle' font-size='12' fill='#475569'>akşamleyin</text><rect x='30' y='256' width='700' height='34' rx='8' fill='#ffedd5' stroke='#fdba74'/><text x='380' y='278' text-anchor='middle' font-size='12' fill='#7c2d12'>ahrucu sabâhan mubekkiran • usallî zuhran • edrusu mesâen (Sabah erken çıkarım, öğleyin namaz kılarım, akşam ders çalışırım)</text></svg>"
+    },
+    {
+      "baslik": "Okuma Metni ve Veciz Söz: el-Medresetu Miftâhu'n-Necâh",
+      "metin": [
+        "Bu hafta öğrendiğimiz mekânları, fiilleri, sıfatları ve zamanları bir araya getiren okuma metnimiz şöyledir: {ar:مَدْرَسَتِي. اِسْمِي أَحْمَدُ. أَنَا طَالِبٌ فِي الثَّانَوِيَّةِ. مَدْرَسَتِي كَبِيرَةٌ وَجَمِيلَةٌ. فِي مَدْرَسَتِي مَكْتَبَةٌ وَمُخْتَبَرٌ وَمَسْجِدٌ وَمَقْصِفٌ. حَدِيقَةُ الْمَدْرَسَةِ وَاسِعَةٌ. أَخْرُجُ مِنَ الْبَيْتِ صَبَاحًا مُبَكِّرًا وَأَذْهَبُ إِلَى الْمَدْرَسَةِ. أَدْخُلُ الصَّفَّ وَأُسَلِّمُ عَلَى الْمُدَرِّسِ. أَقْرَأُ فِي الْمَكْتَبَةِ وَأُصَلِّي فِي الْمَسْجِدِ ظُهْرًا. أَرْجِعُ إِلَى الْبَيْتِ وَأَكْتُبُ وَاجِبَاتِي مَسَاءً. أُحِبُّ مَدْرَسَتِي كَثِيرًا.} Türkçesi: 'Okulum. Adım Ahmet. Ben lisede öğrenciyim. Okulum büyük ve güzeldir. Okulumda bir kütüphane, bir laboratuvar, bir mescit ve bir kantin vardır. Okulun bahçesi geniştir. Sabah erkenden evden çıkar ve okula giderim. Sınıfa girer ve öğretmene selam veririm. Kütüphanede okur, öğleyin mescitte namaz kılarım. Eve döner ve akşamleyin ödevlerimi yazarım. Okulumu çok severim.'",
+        "Metni anlamlandırmak için bilgileri gruplara ayırırız. {koyu:Mekânlar:} {ar:مَكْتَبَةٌ}, {ar:مُخْتَبَرٌ}, {ar:مَسْجِدٌ}, {ar:مَقْصِفٌ}, {ar:حَدِيقَةٌ}. {koyu:Fiiller:} {ar:أَخْرُجُ}, {ar:أَذْهَبُ}, {ar:أَدْخُلُ}, {ar:أُسَلِّمُ}, {ar:أَقْرَأُ}, {ar:أُصَلِّي}, {ar:أَرْجِعُ}, {ar:أَكْتُبُ}, {ar:أُحِبُّ}. {koyu:Zamanlar:} {ar:صَبَاحًا مُبَكِّرًا}, {ar:ظُهْرًا}, {ar:مَسَاءً}. {koyu:Nitelikler:} {ar:كَبِيرَةٌ}, {ar:جَمِيلَةٌ}, {ar:وَاسِعَةٌ}. Ardından metne dayalı sorulara cevap veririz: {ar:هَلْ مَدْرَسَةُ أَحْمَدَ كَبِيرَةٌ؟} → {ar:نَعَمْ، هِيَ كَبِيرَةٌ وَجَمِيلَةٌ}; {ar:أَيْنَ يُصَلِّي أَحْمَدُ؟} → {ar:يُصَلِّي فِي الْمَسْجِدِ}. Bu son sorudaki {ar:يُصَلِّي} fiili 'o kılar' anlamındadır; başındaki {ar:ي} harfi 'o (erkek)' bildirir. Ahmet'ten söz ederken {ar:أُصَلِّي} yerine {ar:يُصَلِّي} kullanılır.",
+        "Haftamızın veciz sözü {ar:اَلْمَدْرَسَةُ مِفْتَاحُ النَّجَاحِ} 'Okul başarının anahtarıdır' anlamına gelir. Söz bir isim cümlesidir: {ar:الْمَدْرَسَةُ} belirli ve ötreli olduğu için mübteda (özne), {ar:مِفْتَاحُ النَّجَاحِ} ise haberdir. Haber kısmı bir isim tamlamasıdır: {ar:مِفْتَاحُ} (anahtarı) tamlanan, {ar:النَّجَاحِ} (başarının) tamlayandır ve esreli okunur. {ar:مِفْتَاحٌ} kelimesi 'açmak' anlamındaki {ar:فَتَحَ} kökünden gelir; tıpkı bir anahtarın kapıyı açması gibi, okulda edinilen bilgi de insanın önündeki başarı kapılarını açar. Bu düşünce Kur'an-ı Kerim'deki {ar:وَقُلْ رَبِّ زِدْنِي عِلْمًا} 'De ki: Rabbim, ilmimi artır.' (Tâhâ Suresi, 114) ayetinde öğretilen bilgi talebiyle de örtüşür: öğrenci, okulunu sevip düzenli çalıştıkça bu anahtarı kullanmayı öğrenir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kelime",
+          "Anlamı",
+          "Cümledeki Görevi"
+        ],
+        "satirlar": [
+          [
+            "{ar:اَلْمَدْرَسَةُ}",
+            "okul",
+            "Mübteda (özne); belirli ve ötreli"
+          ],
+          [
+            "{ar:مِفْتَاحُ}",
+            "anahtarı",
+            "Haber; isim tamlamasının tamlananı, tenvinsiz"
+          ],
+          [
+            "{ar:النَّجَاحِ}",
+            "başarının",
+            "Tamlayan; esreli"
+          ],
+          [
+            "{ar:مَدْرَسَتِي كَبِيرَةٌ}",
+            "Okulum büyüktür.",
+            "Metinden isim cümlesi örneği"
+          ],
+          [
+            "{ar:أَذْهَبُ إِلَى الْمَدْرَسَةِ}",
+            "Okula giderim.",
+            "Metinden fiil + harf-i cer örneği"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "Okul Başarının Anahtarıdır",
+          "metin": "{ar:اَلْمَدْرَسَةُ مِفْتَاحُ النَّجَاحِ} sözünde {ar:مِفْتَاحٌ} 'açma aleti' demektir. Anahtar kullanılmadıkça kapı açılmaz; okul da düzenli çalışan, derse zamanında gelen ve öğrendiğini uygulayan öğrenci için başarıya açılan bir kapıdır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kendi Okulunu Yaz",
+          "metin": "Metni model alarak beş cümlelik bir paragraf yazın: 1) {ar:مَدْرَسَتِي...} + sıfat, 2) {ar:فِي مَدْرَسَتِي...} + mekânlar, 3) sabah yaptığınız iş + {ar:صَبَاحًا}, 4) öğle vakti + {ar:ظُهْرًا}, 5) {ar:أُحِبُّ مَدْرَسَتِي}. Paragrafınızı bir arkadaşınıza sesli okuyun."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='16' width='720' height='38' rx='8' fill='#1e3a8a'/><text x='380' y='41' text-anchor='middle' fill='#ffffff' font-size='16' font-weight='700'>VECİZ SÖZ: el-medresetu miftâhu'n-necâh</text><circle cx='110' cy='140' r='46' fill='#fde68a' stroke='#b45309' stroke-width='4'/><circle cx='110' cy='140' r='18' fill='#f8fafc' stroke='#b45309' stroke-width='3'/><rect x='154' y='130' width='190' height='20' rx='4' fill='#fde68a' stroke='#b45309' stroke-width='3'/><rect x='300' y='150' width='14' height='26' fill='#fde68a' stroke='#b45309' stroke-width='3'/><rect x='326' y='150' width='14' height='20' fill='#fde68a' stroke='#b45309' stroke-width='3'/><text x='250' y='112' text-anchor='middle' font-size='14' font-weight='700' fill='#78350f'>miftâh = anahtar</text><rect x='380' y='76' width='170' height='68' rx='10' fill='#dbeafe' stroke='#2563eb'/><text x='465' y='102' text-anchor='middle' font-size='14' font-weight='700' fill='#1e3a8a'>el-medresetu</text><text x='465' y='124' text-anchor='middle' font-size='12' fill='#334155'>mübteda: okul</text><rect x='565' y='76' width='170' height='68' rx='10' fill='#dcfce7' stroke='#16a34a'/><text x='650' y='102' text-anchor='middle' font-size='14' font-weight='700' fill='#14532d'>miftâhu'n-necâh</text><text x='650' y='124' text-anchor='middle' font-size='12' fill='#334155'>haber: başarının anahtarı</text><rect x='380' y='156' width='355' height='44' rx='10' fill='#ffffff' stroke='#94a3b8'/><text x='557' y='183' text-anchor='middle' font-size='13' fill='#0f172a'>Okul başarının anahtarıdır.</text><rect x='20' y='214' width='715' height='72' rx='10' fill='#eef2ff' stroke='#a5b4fc'/><text x='378' y='238' text-anchor='middle' font-size='13' font-weight='700' fill='#312e81'>Metni okurken 4 grup: mekânlar • fiiller • zamanlar • nitelikler</text><text x='378' y='262' text-anchor='middle' font-size='12' fill='#334155'>mektebe, muhteber, mescid • ezhebu, akrau, usallî • sabâhan, zuhran, mesâen • kebîra, vâsi'a</text><text x='378' y='279' text-anchor='middle' font-size='11' fill='#475569'>usallî = ben kılarım • yusallî = o kılar</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "'Okulumda büyük bir kütüphane ve geniş bir bahçe vardır.' cümlesini Arapçaya çeviriniz.",
+      "cevap": "1. adım: Varlık bildirmek için yer ifadesi başa alınır. 'Okulumda' = {ar:فِي} + {ar:مَدْرَسَتِي}; yuvarlak te iyelik zamiri alınca açılır: {ar:فِي مَدْرَسَتِي}. 2. adım: 'Büyük bir kütüphane' belirsiz bir sıfat tamlamasıdır; {ar:مَكْتَبَةٌ} dişil olduğu için sıfat da dişil gelir: {ar:مَكْتَبَةٌ كَبِيرَةٌ}. 3. adım: 'Geniş bir bahçe' için {ar:حَدِيقَةٌ} dişil olduğundan {ar:حَدِيقَةٌ وَاسِعَةٌ} denir. 4. adım: İki tamlama {ar:وَ} ile bağlanır. Sonuç: {ar:فِي مَدْرَسَتِي مَكْتَبَةٌ كَبِيرَةٌ وَحَدِيقَةٌ وَاسِعَةٌ}.",
+      "ipucu": "Önce mekânların cinsiyetini belirleyin; sıfat, nitelediği isme cinsiyet ve belirsizlik bakımından uyar."
+    },
+    {
+      "soru": "{ar:ذَهَبَ}, {ar:سَلَّمَ}, {ar:قَرَأَ} ve {ar:صَلَّى} fiillerini 'ben' anlamı verecek şekilde muzâriye çeviriniz ve baştaki harekenin nedenini açıklayınız.",
+      "cevap": "1. adım: Harf sayısını belirleyin. {ar:ذَهَبَ} ve {ar:قَرَأَ} üç harflidir; {ar:سَلَّمَ} ve {ar:صَلَّى} şeddeli harf iki sayıldığı için dört harflidir. 2. adım: Üç harfli fiillerde baştaki {ar:أ} üstünle okunur: {ar:أَذْهَبُ} (giderim), {ar:أَقْرَأُ} (okurum). 3. adım: Dört harfli fiillerde {ar:أ} ötreyle okunur: {ar:أُسَلِّمُ} (selam veririm), {ar:أُصَلِّي} (namaz kılarım). 4. adım: Son harf ötrelidir; {ar:أُصَلِّي} ise ye harfiyle bittiği için sonundaki ötre okunuşta görünmez.",
+      "ipucu": "Şeddeli harfi iki harf olarak sayın: {ar:سَلَّمَ} = س + ل + ل + م."
+    },
+    {
+      "soru": "Şu bilgilere göre {ar:أَيْنَ} sorularına zamirli cevap veriniz: Öğretmen laboratuvarda, Zeynep kütüphanede, öğrenciler bahçede. Sorular: {ar:أَيْنَ الْمُدَرِّسُ؟}, {ar:أَيْنَ زَيْنَبُ؟}, {ar:أَيْنَ الطُّلَّابُ؟}",
+      "cevap": "1. adım: {ar:الْمُدَرِّسُ} erkek olduğu için {ar:هُوَ} kullanılır; {ar:فِي} sonraki ismi esreli yapar: {ar:هُوَ فِي الْمُخْتَبَرِ} (O laboratuvardadır). 2. adım: Zeynep kız olduğu için {ar:هِيَ} kullanılır: {ar:هِيَ فِي الْمَكْتَبَةِ} (O kütüphanededir). 3. adım: {ar:الطُّلَّابُ} akıllı çoğul olduğu için {ar:هُمْ} kullanılır: {ar:هُمْ فِي الْحَدِيقَةِ} (Onlar bahçededir).",
+      "ipucu": "Zamiri sorudaki kişinin cinsiyetine ve sayısına göre seçin; {ar:فِي}'den sonra mekânı esreli okuyun."
+    },
+    {
+      "soru": "Boşluklara uygun harf-i cerleri yazınız: {ar:أَخْرُجُ ___ الْبَيْتِ}, {ar:أَذْهَبُ ___ الْمَدْرَسَةِ}, {ar:أُسَلِّمُ ___ الْمُدَرِّسِ}, {ar:أُصَلِّي ___ الْمَسْجِدِ}.",
+      "cevap": "1. adım: Çıkmak ayrılma bildirir: {ar:أَخْرُجُ مِنَ الْبَيْتِ} (Evden çıkarım); {ar:مِنْ} harfi {ar:ال} ile birleşince {ar:مِنَ} okunur. 2. adım: Gitmek yönelme bildirir: {ar:أَذْهَبُ إِلَى الْمَدْرَسَةِ} (Okula giderim). 3. adım: Selam vermek {ar:عَلَى} ile kurulur: {ar:أُسَلِّمُ عَلَى الْمُدَرِّسِ} (Öğretmene selam veririm). 4. adım: Bulunulan yer {ar:فِي} ile anlatılır: {ar:أُصَلِّي فِي الْمَسْجِدِ} (Mescitte namaz kılarım). Her dört cümlede de harf-i cerden sonraki isim esrelidir.",
+      "ipucu": "Türkçedeki eklere bakın: '-den' → {ar:مِنْ}, '-e' (yönelme) → {ar:إِلَى}, '-de' → {ar:فِي}; selam vermek ise {ar:عَلَى} ister."
+    },
+    {
+      "soru": "'Sabah erkenden evden çıkarım, öğleyin okulun mescidinde namaz kılarım ve akşamleyin ders çalışırım.' cümlesini Arapçaya çeviriniz.",
+      "cevap": "1. adım: 'Evden çıkarım' = {ar:أَخْرُجُ مِنَ الْبَيْتِ}; 'sabah erkenden' iki zarfla verilir: {ar:صَبَاحًا مُبَكِّرًا}. 2. adım: 'Okulun mescidinde' bir isim tamlamasıdır; {ar:فِي}'den sonra ilk kelime esreli-tenvinsiz olur: {ar:فِي مَسْجِدِ الْمَدْرَسَةِ}. Fiil {ar:أُصَلِّي}, zarf {ar:ظُهْرًا}. 3. adım: 'Akşamleyin ders çalışırım' = {ar:أَدْرُسُ مَسَاءً}; hemzeyle biten {ar:مَسَاءً} kelimesinde elif yazılmaz. Sonuç: {ar:أَخْرُجُ مِنَ الْبَيْتِ صَبَاحًا مُبَكِّرًا، وَأُصَلِّي فِي مَسْجِدِ الْمَدْرَسَةِ ظُهْرًا، وَأَدْرُسُ مَسَاءً}.",
+      "ipucu": "Zaman zarflarını cümlenin sonuna yerleştirin ve tenvinli üstünle okuyun."
+    },
+    {
+      "soru": "{ar:اَلْمَدْرَسَةُ مِفْتَاحُ النَّجَاحِ} veciz sözünü kelime kelime inceleyiniz; cümle yapısını ve mesajını açıklayınız.",
+      "cevap": "1. adım: Kelimeler: {ar:الْمَدْرَسَةُ} okul, {ar:مِفْتَاحُ} anahtarı, {ar:النَّجَاحِ} başarının. 2. adım: {ar:الْمَدْرَسَةُ} belirli ve ötreli olduğu için mübtedadır; {ar:مِفْتَاحُ النَّجَاحِ} haberdir. 3. adım: Haber bir isim tamlamasıdır; tamlanan {ar:مِفْتَاحُ} tenvin almaz, tamlayan {ar:النَّجَاحِ} esreli okunur. 4. adım: Anlam: 'Okul başarının anahtarıdır.' 5. adım: Mesaj: Anahtar kapıyı açtığı gibi okulda edinilen bilgi ve alışkanlıklar da başarıya giden yolu açar; ancak anahtar ancak kullanıldığında işe yarar, yani öğrencinin düzenli çalışması gerekir.",
+      "ipucu": "{ar:مِفْتَاحٌ} kelimesinin 'açmak' anlamındaki {ar:فَتَحَ} kökünden geldiğini düşünün."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "'Kütüphane' anlamına gelen kelime aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "{ar:مَكْتَبٌ}",
+        "{ar:مَكْتَبَةٌ}",
+        "{ar:مَقْصِفٌ}",
+        "{ar:مُخْتَبَرٌ}"
+      ],
+      "dogru": 1,
+      "aciklama": "{ar:مَكْتَبَةٌ} kütüphane demektir. {ar:مَكْتَبٌ} çalışma masası ya da büro, {ar:مَقْصِفٌ} kantin, {ar:مُخْتَبَرٌ} laboratuvar anlamına gelir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki birinci tekil şahıs fiillerden hangisinin baş harfi doğru harekelenmiştir?",
+      "secenekler": [
+        "{ar:أُصَلِّي}",
+        "{ar:أَسَلِّمُ}",
+        "{ar:أُكْتُبُ}",
+        "{ar:أُذْهَبُ}"
+      ],
+      "dogru": 0,
+      "aciklama": "{ar:صَلَّى} dört harfli olduğu için {ar:أُصَلِّي} ötreyle okunur. {ar:سَلَّمَ} de dört harfli olduğundan {ar:أُسَلِّمُ} olmalıydı; {ar:كَتَبَ} ve {ar:ذَهَبَ} üç harfli olduğundan {ar:أَكْتُبُ} ve {ar:أَذْهَبُ} üstünle okunmalıydı."
+    },
+    {
+      "tur": "coktan",
+      "soru": "{ar:أَيْنَ الطَّالِبَةُ؟} sorusunun doğru cevabı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "{ar:هُوَ فِي الْمَكْتَبَةِ}",
+        "{ar:هِيَ فِي الْمَكْتَبَةُ}",
+        "{ar:هِيَ فِي الْمَكْتَبَةِ}",
+        "{ar:هِيَ إِلَى الْمَكْتَبَةِ}"
+      ],
+      "dogru": 2,
+      "aciklama": "Soru kız öğrenciyle ilgili olduğu için {ar:هِيَ} kullanılır; bulunulan yer {ar:فِي} ile verilir ve ardından gelen isim esreli okunur: {ar:هِيَ فِي الْمَكْتَبَةِ}. A'da zamir eril, B'de isim ötreli, D'de ise yönelme bildiren {ar:إِلَى} yanlış kullanılmıştır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "'Akşamleyin ders çalışırım.' cümlesinin Arapça karşılığı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "{ar:أَدْرُسُ صَبَاحًا}",
+        "{ar:أَكْتُبُ ظُهْرًا}",
+        "{ar:أَدْرُسُ مُبَكِّرًا}",
+        "{ar:أَدْرُسُ مَسَاءً}"
+      ],
+      "dogru": 3,
+      "aciklama": "{ar:أَدْرُسُ} 'ders çalışırım', {ar:مَسَاءً} 'akşamleyin' demektir. {ar:صَبَاحًا} sabahleyin, {ar:ظُهْرًا} öğleyin, {ar:مُبَكِّرًا} erken anlamındadır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "{ar:مَسْجِدٌ} kelimesi {ar:سَجَدَ} kökünden türemiş bir mekân ismidir.",
+          "dogru": true,
+          "aciklama": "{ar:مَسْجِدٌ} {ar:مَفْعِلٌ} kalıbında 'secde edilen yer' anlamında bir mekân ismidir."
+        },
+        {
+          "metin": "{ar:أَذْهَبُ إِلَى الْمَدْرَسَةِ} cümlesi 'O okula gider.' anlamındadır.",
+          "dogru": false,
+          "aciklama": "Baştaki {ar:أ} 'ben' bildirir; cümle 'Okula giderim.' anlamındadır. 'O gider' için {ar:يَذْهَبُ} kullanılır."
+        },
+        {
+          "metin": "{ar:فِي} harf-i cerinden sonra gelen isim esreli okunur.",
+          "dogru": true,
+          "aciklama": "{ar:فِي الْمُخْتَبَرِ}, {ar:فِي الْحَدِيقَةِ} örneklerinde olduğu gibi harf-i cerden sonraki isim esrelidir."
+        },
+        {
+          "metin": "'Pencereler büyüktür.' cümlesi {ar:النَّوَافِذُ كَبِيرٌ} şeklinde kurulur.",
+          "dogru": false,
+          "aciklama": "{ar:نَوَافِذُ} akılsız çoğul olduğu için sıfat tekil dişil gelir: {ar:النَّوَافِذُ كَبِيرَةٌ}."
+        },
+        {
+          "metin": "{ar:مَسَاءً} kelimesinde tenvinli üstün bulunduğu hâlde sonuna elif yazılmaz.",
+          "dogru": true,
+          "aciklama": "Hemzeyle biten kelimelerde tenvinli üstün için ayrıca elif yazılmaz; {ar:صَبَاحًا} ve {ar:ظُهْرًا} ise elifle yazılır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki Arapça ifadeleri Türkçe karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{ar:مُخْتَبَرٌ}",
+          "Laboratuvar"
+        ],
+        [
+          "{ar:أَرْجِعُ إِلَى الْبَيْتِ}",
+          "Eve dönerim"
+        ],
+        [
+          "{ar:أَيْنَ الْمُدَرِّسُ؟}",
+          "Öğretmen nerede?"
+        ],
+        [
+          "{ar:الْحَدِيقَةُ وَاسِعَةٌ}",
+          "Bahçe geniştir"
+        ],
+        [
+          "{ar:مُبَكِّرًا}",
+          "Erken, erkenden"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Okulun kantini Arapçada ___ kelimesiyle ifade edilir.",
+          "cevap": "{ar:مَقْصِفٌ}"
+        },
+        {
+          "metin": "'Namaz kılarım' anlamındaki fiil dört harfli olduğu için ötreyle başlar ve ___ şeklinde okunur.",
+          "cevap": "{ar:أُصَلِّي}"
+        },
+        {
+          "metin": "Bir kişinin nerede olduğunu sormak için ___ soru kelimesi kullanılır.",
+          "cevap": "{ar:أَيْنَ}"
+        },
+        {
+          "metin": "Öğleyin yapılan bir işi anlatırken cümleye ___ zarfı eklenir.",
+          "cevap": "{ar:ظُهْرًا}"
+        },
+        {
+          "metin": "Dişil bir isim olan {ar:الْحَدِيقَةُ} geniş ise ___ sıfatıyla nitelenir.",
+          "cevap": "{ar:وَاسِعَةٌ}"
+        }
+      ],
+      "kelimeler": [
+        "{ar:مَقْصِفٌ}",
+        "{ar:أُصَلِّي}",
+        "{ar:أَيْنَ}",
+        "{ar:ظُهْرًا}",
+        "{ar:وَاسِعَةٌ}"
+      ],
+      "fazla": [
+        "{ar:مَتَى}",
+        "{ar:وَاسِعٌ}"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Okulunuzla ilgili şu bilgiler veriliyor: Okulunuz büyük ve güzel; okulda bir kütüphane, bir laboratuvar ve bir mescit var; bahçe geniş. Sabah erkenden okula gidiyor, sınıfa girip öğretmene selam veriyorsunuz; öğleyin mescitte namaz kılıyor, akşamleyin ödevlerinizi yazıyorsunuz. Önce bu bilgilerle altı cümlelik Arapça bir paragraf yazınız. Ardından bir arkadaşınızın {ar:أَيْنَ الْمُدَرِّسُ؟} sorusuna 'O laboratuvarda.' cevabını Arapça olarak veriniz.",
+      "ipuclari": [
+        "1. adım: Paragrafa {ar:مَدْرَسَتِي} ile başlayın; okul dişil olduğu için {ar:كَبِيرَةٌ} ve {ar:جَمِيلَةٌ} sıfatlarını kullanın. Mekânları {ar:فِي مَدْرَسَتِي...} yapısıyla sayın; bahçe için {ar:وَاسِعَةٌ} deyin.",
+        "2. adım: Fiilleri birinci tekil şahısla ve doğru harf-i cerle kurun: {ar:أَذْهَبُ إِلَى}, {ar:أَدْخُلُ الصَّفَّ}, {ar:أُسَلِّمُ عَلَى}, {ar:أُصَلِّي فِي}, {ar:أَكْتُبُ}.",
+        "3. adım: Zaman zarflarını ({ar:صَبَاحًا مُبَكِّرًا}, {ar:ظُهْرًا}, {ar:مَسَاءً}) cümle sonuna ekleyin; soruya erkek öğretmen için {ar:هُوَ} + {ar:فِي} + esreli mekân ismiyle cevap verin."
+      ],
+      "cevap": "Paragraf: {ar:مَدْرَسَتِي كَبِيرَةٌ وَجَمِيلَةٌ. فِي مَدْرَسَتِي مَكْتَبَةٌ وَمُخْتَبَرٌ وَمَسْجِدٌ. حَدِيقَةُ الْمَدْرَسَةِ وَاسِعَةٌ. أَذْهَبُ إِلَى الْمَدْرَسَةِ صَبَاحًا مُبَكِّرًا. أَدْخُلُ الصَّفَّ وَأُسَلِّمُ عَلَى الْمُدَرِّسِ. أُصَلِّي فِي الْمَسْجِدِ ظُهْرًا، وَأَكْتُبُ وَاجِبَاتِي مَسَاءً.} (Okulum büyük ve güzeldir. Okulumda bir kütüphane, bir laboratuvar ve bir mescit vardır. Okulun bahçesi geniştir. Sabah erkenden okula giderim. Sınıfa girer ve öğretmene selam veririm. Öğleyin mescitte namaz kılar, akşamleyin ödevlerimi yazarım.) Soru-cevap: {ar:أَيْنَ الْمُدَرِّسُ؟} → {ar:هُوَ فِي الْمُخْتَبَرِ.} (O laboratuvardadır.) Kısa cevap olarak yalnızca {ar:فِي الْمُخْتَبَرِ} de söylenebilir. Not: {ar:مُخْتَبَرٌ} erildir ve {ar:فِي}'den sonra esreli okunur; okul ve bahçe dişil olduğu için sıfatlar {ar:ة} alır."
+    }
+  ]
+}
