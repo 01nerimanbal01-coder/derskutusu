@@ -1559,9 +1559,10 @@ body.sunum-iri .ozet-bolum h2 { font-size: 31px !important; }
 
 .asds-baslik-gecis { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding-top: 10px; border-top: 1px dashed var(--cizgi); }
 .asds-gecis-etiket { font-size: 12.5px; font-weight: 750; color: var(--soluk); margin-right: 4px; }
-.asds-gecis-bag { display: inline-flex; align-items: center; min-height: 32px; padding: 0 12px; border-radius: 999px;
+.asds-gecis-bag, .asds-gecis-cip { display: inline-flex; align-items: center; min-height: 32px; padding: 0 12px; border-radius: 999px;
   font-size: 12.5px; font-weight: 750; background: var(--zemin-2); color: var(--metin); border: 1px solid var(--cizgi); text-decoration: none; }
-.asds-gecis-bag:hover { border-color: var(--vurgu); color: var(--vurgu); background: var(--vurgu-acik); text-decoration: none; }
+.asds-gecis-bag:hover, .asds-gecis-cip:hover { border-color: var(--vurgu); color: var(--vurgu); background: var(--vurgu-acik); text-decoration: none; }
+.asds-hafta-sec { min-height: 38px; padding: 0 10px; border-radius: 10px; border: 1px solid var(--cizgi); background: var(--yuzey); color: var(--metin); font: inherit; font-size: 13px; font-weight: 700; margin-left: 6px; }
 
 .asds-sinif-bolum { margin-bottom: 36px; padding: 24px; border-radius: 24px; background: var(--yuzey);
   border: 1.5px solid var(--cizgi); box-shadow: var(--golge); scroll-margin-top: 90px; }
@@ -1591,9 +1592,14 @@ body.sunum-iri .ozet-bolum h2 { font-size: 31px !important; }
 .asds-kart { display: flex; flex-direction: column; gap: 12px; padding: 18px; border-radius: 18px;
   background: var(--zemin-2); border: 1px solid var(--cizgi); transition: border-color .15s, box-shadow .15s; }
 .asds-kart:hover { border-color: color-mix(in srgb, var(--vurgu) 45%, var(--cizgi)); box-shadow: var(--golge); }
-.asds-kart-ust { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
-.asds-deneme-no { display: inline-flex; align-items: center; padding: 4px 10px; border-radius: 8px; font-size: 12px;
+.asds-kart-ust { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.asds-kart-baslik-sol h3 { margin: 4px 0; font-size: 16.5px; font-weight: 800; color: var(--metin); line-height: 1.35; }
+.asds-kart-altbilgi { margin: 0; font-size: 12.5px; color: var(--soluk); line-height: 1.45; }
+.asds-deneme-no, .asds-deneme-rozet { display: inline-flex; align-items: center; padding: 4px 10px; border-radius: 8px; font-size: 11.5px;
   font-weight: 800; background: var(--vurgu-acik); color: var(--vurgu); }
+.asds-kart-meta-sag { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.asds-meta-cip { display: inline-flex; align-items: center; padding: 4px 9px; border-radius: 999px; font-size: 11.5px;
+  font-weight: 750; background: var(--yuzey); color: var(--soluk); border: 1px solid var(--cizgi); }
 .asds-hafta-ad { font-size: 12.5px; font-weight: 700; color: var(--soluk); }
 .asds-kart-baslik { margin: 0; font-size: 16.5px; font-weight: 800; color: var(--metin); line-height: 1.35; }
 .asds-kart-meta { margin: 0; font-size: 13px; color: var(--soluk); line-height: 1.45; }
@@ -1602,8 +1608,12 @@ body.sunum-iri .ozet-bolum h2 { font-size: 31px !important; }
 .asds-kitapcik-kutu { padding: 12px; border-radius: 14px; background: var(--yuzey); border: 1px solid var(--cizgi); }
 .asds-kitapcik-kutu.cevapsiz-kutu { border-left: 4px solid #2563eb; }
 .asds-kitapcik-kutu.cevapli-kutu { border-left: 4px solid #16a34a; background: color-mix(in srgb, #16a34a 5%, var(--yuzey)); }
-.asds-kutu-baslik { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 800;
-  text-transform: uppercase; letter-spacing: .03em; margin-bottom: 9px; color: var(--metin); }
+.asds-kutu-baslik { display: flex; align-items: flex-start; gap: 9px; margin-bottom: 10px; color: var(--metin); }
+.asds-kutu-baslik > div { display: flex; flex-direction: column; gap: 2px; }
+.asds-kutu-baslik strong { font-size: 12.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; color: var(--metin); line-height: 1.3; }
+.asds-kutu-baslik small { font-size: 11.5px; font-weight: 600; color: var(--soluk); line-height: 1.35; }
+.asds-kutu-simge { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 7px; background: var(--zemin-2); color: var(--vurgu); flex: none; margin-top: 1px; }
+.asds-kitapcik-kutu.cevapli-kutu .asds-kutu-simge { color: #16a34a; }
 .asds-kutu-nokta { width: 8px; height: 8px; border-radius: 999px; flex: none; }
 .asds-kutu-nokta.cevapsiz { background: #2563eb; }
 .asds-kutu-nokta.cevapli { background: #16a34a; }
