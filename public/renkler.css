@@ -1,31 +1,37 @@
 /* Ortak renk sistemi. Yalnız ekran için yüklenir; belge ve soru çizimleri değişmez. */
-[data-renk="mor"], body[data-site-renk="mor"] { --kart-ana:#6135BD; --kart-zemin:#EDE3FF; --kart-cizgi:#CDB5F5; --kart-vurgu:#7C3AED; --kart-ikon-yazi:#ffffff; }
-[data-renk="yesil"], body[data-site-renk="yesil"] { --kart-ana:#146B40; --kart-zemin:#DEF6E8; --kart-cizgi:#96D6AF; --kart-vurgu:#16A34A; --kart-ikon-yazi:#ffffff; }
-[data-renk="turuncu"], body[data-site-renk="turuncu"] { --kart-ana:#9C3F0E; --kart-zemin:#FFE7D3; --kart-cizgi:#F5B886; --kart-vurgu:#EA580C; --kart-ikon-yazi:#ffffff; }
-[data-renk="mavi"], body[data-site-renk="mavi"] { --kart-ana:#1E4CBB; --kart-zemin:#DFEBFF; --kart-cizgi:#A9C5F5; --kart-vurgu:#2563EB; --kart-ikon-yazi:#ffffff; }
-[data-renk="pembe"], body[data-site-renk="pembe"] { --kart-ana:#A02B62; --kart-zemin:#FFE1EF; --kart-cizgi:#EEA7C8; --kart-vurgu:#DB2777; --kart-ikon-yazi:#ffffff; }
-[data-renk="sari"], body[data-site-renk="sari"] { --kart-ana:#795209; --kart-zemin:#FFF0BA; --kart-cizgi:#E4C665; --kart-vurgu:#D99A00; --kart-ikon-yazi:#ffffff; }
-[data-renk="turkuaz"], body[data-site-renk="turkuaz"] { --kart-ana:#086B70; --kart-zemin:#D6F5F2; --kart-cizgi:#86D5CD; --kart-vurgu:#0D9488; --kart-ikon-yazi:#ffffff; }
-[data-renk="lacivert"], body[data-site-renk="lacivert"] { --kart-ana:#3B43A2; --kart-zemin:#E7E8FF; --kart-cizgi:#B3B8F1; --kart-vurgu:#6366F1; --kart-ikon-yazi:#ffffff; }
+[data-renk="mor"], body[data-site-renk="mor"] { --kart-ana:#5B21B6; --kart-zemin:#F1EAFF; --kart-cizgi:#CEB6FA; --kart-vurgu:#7C3AED; --kart-ikon-yazi:#ffffff; }
+[data-renk="yesil"], body[data-site-renk="yesil"] { --kart-ana:#146B40; --kart-zemin:#E2F8EB; --kart-cizgi:#95DCAC; --kart-vurgu:#16A34A; --kart-ikon-yazi:#ffffff; }
+[data-renk="turuncu"], body[data-site-renk="turuncu"] { --kart-ana:#9A3412; --kart-zemin:#FFECDC; --kart-cizgi:#F7BA8A; --kart-vurgu:#EA580C; --kart-ikon-yazi:#ffffff; }
+[data-renk="mavi"], body[data-site-renk="mavi"] { --kart-ana:#1D4ED8; --kart-zemin:#E4EEFF; --kart-cizgi:#A7C4FA; --kart-vurgu:#2563EB; --kart-ikon-yazi:#ffffff; }
+[data-renk="pembe"], body[data-site-renk="pembe"] { --kart-ana:#9D174D; --kart-zemin:#FFE4F1; --kart-cizgi:#F2A7CC; --kart-vurgu:#DB2777; --kart-ikon-yazi:#ffffff; }
+[data-renk="sari"], body[data-site-renk="sari"] { --kart-ana:#854D0E; --kart-zemin:#FEF3C7; --kart-cizgi:#EACC6B; --kart-vurgu:#D99A00; --kart-ikon-yazi:#ffffff; }
+[data-renk="turkuaz"], body[data-site-renk="turkuaz"] { --kart-ana:#0F686D; --kart-zemin:#D9F7F4; --kart-cizgi:#88DAD3; --kart-vurgu:#0D9488; --kart-ikon-yazi:#ffffff; }
+[data-renk="lacivert"], body[data-site-renk="lacivert"] { --kart-ana:#3730A3; --kart-zemin:#E8EAFF; --kart-cizgi:#B3B8F5; --kart-vurgu:#6366F1; --kart-ikon-yazi:#ffffff; }
+[data-renk="kirmizi"], body[data-site-renk="kirmizi"] { --kart-ana:#B91C1C; --kart-zemin:#FFE6E8; --kart-cizgi:#F7AEB5; --kart-vurgu:#E11D48; --kart-ikon-yazi:#ffffff; }
+[data-renk="zumrut"], body[data-site-renk="zumrut"] { --kart-ana:#065F46; --kart-zemin:#DCFCE7; --kart-cizgi:#86EFAC; --kart-vurgu:#059669; --kart-ikon-yazi:#ffffff; }
 @media (prefers-color-scheme:dark) {
-:root:not([data-theme="light"]) [data-renk="mor"], :root:not([data-theme="light"]) body[data-site-renk="mor"] { --kart-ana:#D2B8FF; --kart-zemin:#302044; --kart-cizgi:#7757A4; --kart-vurgu:#A881FF; --kart-ikon-yazi:#111b23; }
-:root:not([data-theme="light"]) [data-renk="yesil"], :root:not([data-theme="light"]) body[data-site-renk="yesil"] { --kart-ana:#A2E2B9; --kart-zemin:#163B2C; --kart-cizgi:#478565; --kart-vurgu:#49CE84; --kart-ikon-yazi:#111b23; }
-:root:not([data-theme="light"]) [data-renk="turuncu"], :root:not([data-theme="light"]) body[data-site-renk="turuncu"] { --kart-ana:#FFBF90; --kart-zemin:#462B1D; --kart-cizgi:#9C613B; --kart-vurgu:#FB923C; --kart-ikon-yazi:#111b23; }
-:root:not([data-theme="light"]) [data-renk="mavi"], :root:not([data-theme="light"]) body[data-site-renk="mavi"] { --kart-ana:#B3CEFF; --kart-zemin:#1D3152; --kart-cizgi:#4C71A8; --kart-vurgu:#77A9FF; --kart-ikon-yazi:#111b23; }
-:root:not([data-theme="light"]) [data-renk="pembe"], :root:not([data-theme="light"]) body[data-site-renk="pembe"] { --kart-ana:#FFB6D4; --kart-zemin:#462238; --kart-cizgi:#A6567E; --kart-vurgu:#F472B6; --kart-ikon-yazi:#111b23; }
-:root:not([data-theme="light"]) [data-renk="sari"], :root:not([data-theme="light"]) body[data-site-renk="sari"] { --kart-ana:#F5DB88; --kart-zemin:#3E3317; --kart-cizgi:#927D40; --kart-vurgu:#F7C84B; --kart-ikon-yazi:#111b23; }
-:root:not([data-theme="light"]) [data-renk="turkuaz"], :root:not([data-theme="light"]) body[data-site-renk="turkuaz"] { --kart-ana:#9BE3DF; --kart-zemin:#163C3B; --kart-cizgi:#3D8380; --kart-vurgu:#45D1C3; --kart-ikon-yazi:#111b23; }
-:root:not([data-theme="light"]) [data-renk="lacivert"], :root:not([data-theme="light"]) body[data-site-renk="lacivert"] { --kart-ana:#C5C7FF; --kart-zemin:#292947; --kart-cizgi:#7174AE; --kart-vurgu:#9C9EFF; --kart-ikon-yazi:#111b23; }
+:root:not([data-theme="light"]) [data-renk="mor"], :root:not([data-theme="light"]) body[data-site-renk="mor"] { --kart-ana:#D2B8FF; --kart-zemin:#2B1E42; --kart-cizgi:#7757A4; --kart-vurgu:#A881FF; --kart-ikon-yazi:#111b23; }
+:root:not([data-theme="light"]) [data-renk="yesil"], :root:not([data-theme="light"]) body[data-site-renk="yesil"] { --kart-ana:#A2E2B9; --kart-zemin:#153829; --kart-cizgi:#478565; --kart-vurgu:#49CE84; --kart-ikon-yazi:#111b23; }
+:root:not([data-theme="light"]) [data-renk="turuncu"], :root:not([data-theme="light"]) body[data-site-renk="turuncu"] { --kart-ana:#FFBF90; --kart-zemin:#42281B; --kart-cizgi:#9C613B; --kart-vurgu:#FB923C; --kart-ikon-yazi:#111b23; }
+:root:not([data-theme="light"]) [data-renk="mavi"], :root:not([data-theme="light"]) body[data-site-renk="mavi"] { --kart-ana:#B3CEFF; --kart-zemin:#1B2E4E; --kart-cizgi:#4C71A8; --kart-vurgu:#77A9FF; --kart-ikon-yazi:#111b23; }
+:root:not([data-theme="light"]) [data-renk="pembe"], :root:not([data-theme="light"]) body[data-site-renk="pembe"] { --kart-ana:#FFB6D4; --kart-zemin:#422035; --kart-cizgi:#A6567E; --kart-vurgu:#F472B6; --kart-ikon-yazi:#111b23; }
+:root:not([data-theme="light"]) [data-renk="sari"], :root:not([data-theme="light"]) body[data-site-renk="sari"] { --kart-ana:#F5DB88; --kart-zemin:#3B3016; --kart-cizgi:#927D40; --kart-vurgu:#F7C84B; --kart-ikon-yazi:#111b23; }
+:root:not([data-theme="light"]) [data-renk="turkuaz"], :root:not([data-theme="light"]) body[data-site-renk="turkuaz"] { --kart-ana:#9BE3DF; --kart-zemin:#153938; --kart-cizgi:#3D8380; --kart-vurgu:#45D1C3; --kart-ikon-yazi:#111b23; }
+:root:not([data-theme="light"]) [data-renk="lacivert"], :root:not([data-theme="light"]) body[data-site-renk="lacivert"] { --kart-ana:#C5C7FF; --kart-zemin:#252645; --kart-cizgi:#7174AE; --kart-vurgu:#9C9EFF; --kart-ikon-yazi:#111b23; }
+:root:not([data-theme="light"]) [data-renk="kirmizi"], :root:not([data-theme="light"]) body[data-site-renk="kirmizi"] { --kart-ana:#FFB4BE; --kart-zemin:#431D26; --kart-cizgi:#A3485A; --kart-vurgu:#FB7185; --kart-ikon-yazi:#111b23; }
+:root:not([data-theme="light"]) [data-renk="zumrut"], :root:not([data-theme="light"]) body[data-site-renk="zumrut"] { --kart-ana:#9BF0C2; --kart-zemin:#13392C; --kart-cizgi:#3D8569; --kart-vurgu:#34D399; --kart-ikon-yazi:#111b23; }
 }
-:root[data-theme="dark"] [data-renk="mor"], :root[data-theme="dark"] body[data-site-renk="mor"] { --kart-ana:#D2B8FF; --kart-zemin:#302044; --kart-cizgi:#7757A4; --kart-vurgu:#A881FF; --kart-ikon-yazi:#111b23; }
-:root[data-theme="dark"] [data-renk="yesil"], :root[data-theme="dark"] body[data-site-renk="yesil"] { --kart-ana:#A2E2B9; --kart-zemin:#163B2C; --kart-cizgi:#478565; --kart-vurgu:#49CE84; --kart-ikon-yazi:#111b23; }
-:root[data-theme="dark"] [data-renk="turuncu"], :root[data-theme="dark"] body[data-site-renk="turuncu"] { --kart-ana:#FFBF90; --kart-zemin:#462B1D; --kart-cizgi:#9C613B; --kart-vurgu:#FB923C; --kart-ikon-yazi:#111b23; }
-:root[data-theme="dark"] [data-renk="mavi"], :root[data-theme="dark"] body[data-site-renk="mavi"] { --kart-ana:#B3CEFF; --kart-zemin:#1D3152; --kart-cizgi:#4C71A8; --kart-vurgu:#77A9FF; --kart-ikon-yazi:#111b23; }
-:root[data-theme="dark"] [data-renk="pembe"], :root[data-theme="dark"] body[data-site-renk="pembe"] { --kart-ana:#FFB6D4; --kart-zemin:#462238; --kart-cizgi:#A6567E; --kart-vurgu:#F472B6; --kart-ikon-yazi:#111b23; }
-:root[data-theme="dark"] [data-renk="sari"], :root[data-theme="dark"] body[data-site-renk="sari"] { --kart-ana:#F5DB88; --kart-zemin:#3E3317; --kart-cizgi:#927D40; --kart-vurgu:#F7C84B; --kart-ikon-yazi:#111b23; }
-:root[data-theme="dark"] [data-renk="turkuaz"], :root[data-theme="dark"] body[data-site-renk="turkuaz"] { --kart-ana:#9BE3DF; --kart-zemin:#163C3B; --kart-cizgi:#3D8380; --kart-vurgu:#45D1C3; --kart-ikon-yazi:#111b23; }
-:root[data-theme="dark"] [data-renk="lacivert"], :root[data-theme="dark"] body[data-site-renk="lacivert"] { --kart-ana:#C5C7FF; --kart-zemin:#292947; --kart-cizgi:#7174AE; --kart-vurgu:#9C9EFF; --kart-ikon-yazi:#111b23; }
-:root { --site-serit:linear-gradient(90deg,#7C3AED 0 12.5%,#16A34A 12.5% 25%,#EA580C 25% 37.5%,#2563EB 37.5% 50%,#DB2777 50% 62.5%,#D99A00 62.5% 75%,#0D9488 75% 87.5%,#6366F1 87.5%); }
+:root[data-theme="dark"] [data-renk="mor"], :root[data-theme="dark"] body[data-site-renk="mor"] { --kart-ana:#D2B8FF; --kart-zemin:#2B1E42; --kart-cizgi:#7757A4; --kart-vurgu:#A881FF; --kart-ikon-yazi:#111b23; }
+:root[data-theme="dark"] [data-renk="yesil"], :root[data-theme="dark"] body[data-site-renk="yesil"] { --kart-ana:#A2E2B9; --kart-zemin:#153829; --kart-cizgi:#478565; --kart-vurgu:#49CE84; --kart-ikon-yazi:#111b23; }
+:root[data-theme="dark"] [data-renk="turuncu"], :root[data-theme="dark"] body[data-site-renk="turuncu"] { --kart-ana:#FFBF90; --kart-zemin:#42281B; --kart-cizgi:#9C613B; --kart-vurgu:#FB923C; --kart-ikon-yazi:#111b23; }
+:root[data-theme="dark"] [data-renk="mavi"], :root[data-theme="dark"] body[data-site-renk="mavi"] { --kart-ana:#B3CEFF; --kart-zemin:#1B2E4E; --kart-cizgi:#4C71A8; --kart-vurgu:#77A9FF; --kart-ikon-yazi:#111b23; }
+:root[data-theme="dark"] [data-renk="pembe"], :root[data-theme="dark"] body[data-site-renk="pembe"] { --kart-ana:#FFB6D4; --kart-zemin:#422035; --kart-cizgi:#A6567E; --kart-vurgu:#F472B6; --kart-ikon-yazi:#111b23; }
+:root[data-theme="dark"] [data-renk="sari"], :root[data-theme="dark"] body[data-site-renk="sari"] { --kart-ana:#F5DB88; --kart-zemin:#3B3016; --kart-cizgi:#927D40; --kart-vurgu:#F7C84B; --kart-ikon-yazi:#111b23; }
+:root[data-theme="dark"] [data-renk="turkuaz"], :root[data-theme="dark"] body[data-site-renk="turkuaz"] { --kart-ana:#9BE3DF; --kart-zemin:#153938; --kart-cizgi:#3D8380; --kart-vurgu:#45D1C3; --kart-ikon-yazi:#111b23; }
+:root[data-theme="dark"] [data-renk="lacivert"], :root[data-theme="dark"] body[data-site-renk="lacivert"] { --kart-ana:#C5C7FF; --kart-zemin:#252645; --kart-cizgi:#7174AE; --kart-vurgu:#9C9EFF; --kart-ikon-yazi:#111b23; }
+:root[data-theme="dark"] [data-renk="kirmizi"], :root[data-theme="dark"] body[data-site-renk="kirmizi"] { --kart-ana:#FFB4BE; --kart-zemin:#431D26; --kart-cizgi:#A3485A; --kart-vurgu:#FB7185; --kart-ikon-yazi:#111b23; }
+:root[data-theme="dark"] [data-renk="zumrut"], :root[data-theme="dark"] body[data-site-renk="zumrut"] { --kart-ana:#9BF0C2; --kart-zemin:#13392C; --kart-cizgi:#3D8569; --kart-vurgu:#34D399; --kart-ikon-yazi:#111b23; }
+:root { --site-serit:linear-gradient(90deg,#7C3AED 0%,#2563EB 16%,#0D9488 32%,#16A34A 48%,#D99A00 64%,#EA580C 80%,#E11D48 92%,#DB2777 100%); }
 body > .ust { border-top:4px solid transparent; border-image:var(--site-serit) 1; border-bottom:1px solid var(--cizgi); box-shadow:0 4px 20px rgb(15 23 42 / .03); }
 body .menu > a[data-renk] { background:var(--kart-zemin); color:var(--kart-ana); border:1px solid var(--kart-cizgi); border-radius:11px; font-weight:700; min-height:42px; display:flex; align-items:center; justify-content:center; padding:8px 13px; transition:transform .15s,background .15s,color .15s,box-shadow .15s; }
 body .menu > a[data-renk]:hover, body .menu > a[data-renk][aria-current="page"] { background:var(--kart-ana); color:var(--kart-ikon-yazi); border-color:var(--kart-ana); transform:translateY(-1px); box-shadow:0 4px 12px color-mix(in srgb,var(--kart-ana) 24%,transparent); text-decoration:none; }

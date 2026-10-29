@@ -19,7 +19,37 @@
     { title: 'Sosyal bilimler', color: 'turuncu', keys: ['sosyal-bilgiler', 'tc-inkilap-tarihi-ve-ataturkculuk', 'tarih', 'cografya', 'felsefe'] },
     { title: 'Din kültürü ve meslek dersleri', color: 'turkuaz', keys: ['din-kulturu-ve-ahlak-bilgisi', 'kuran-i-kerim', 'peygamberimizin-hayati', 'temel-dini-bilgiler', 'fikih', 'hadis', 'siyer', 'akaid', 'tefsir', 'dinler-tarihi', 'hitabet-ve-mesleki-uygulama', 'kelam', 'islam-kultur-ve-medeniyeti'] },
   ];
-  const subjectColor = key => subjectGroups.find(g => g.keys.includes(key))?.color || 'lacivert';
+  const SUBJECT_COLOR = {
+    'matematik': 'mavi',
+    'fen-bilimleri': 'yesil',
+    'biyoloji': 'zumrut',
+    'fizik': 'mor',
+    'kimya': 'turkuaz',
+    'turkce': 'kirmizi',
+    'turk-dili-ve-edebiyati': 'kirmizi',
+    'ingilizce': 'lacivert',
+    'arapca': 'sari',
+    'mesleki-arapca': 'sari',
+    'sosyal-bilgiler': 'turuncu',
+    'tc-inkilap-tarihi-ve-ataturkculuk': 'turuncu',
+    'tarih': 'turuncu',
+    'cografya': 'zumrut',
+    'felsefe': 'pembe',
+    'din-kulturu-ve-ahlak-bilgisi': 'turkuaz',
+    'kuran-i-kerim': 'zumrut',
+    'peygamberimizin-hayati': 'yesil',
+    'siyer': 'yesil',
+    'temel-dini-bilgiler': 'turkuaz',
+    'fikih': 'mor',
+    'hadis': 'pembe',
+    'akaid': 'lacivert',
+    'kelam': 'mavi',
+    'tefsir': 'turkuaz',
+    'dinler-tarihi': 'sari',
+    'islam-kultur-ve-medeniyeti': 'turuncu',
+    'hitabet-ve-mesleki-uygulama': 'pembe',
+  };
+  const subjectColor = key => SUBJECT_COLOR[key] || subjectGroups.find(g => g.keys.includes(key))?.color || 'lacivert';
   const gradeColor = grade => colors[((Number(grade) - 5) % colors.length + colors.length) % colors.length];
   // Ders simgeleri (24×24, çizgi): ders kartlarında baş harf yerine; yerel çizim, dışarıdan yükleme yok
   const ICON_PATHS = {

@@ -123,22 +123,24 @@
             el('small', {}, ag ? `${ag.unite} ünite · ${ag.konu} konu` : 'Üniteler ve konular')),
           el('span', { sinif: 'sm-ders-ac', 'aria-hidden': 'true' }, 'Üniteler →')),
         el('div', { sinif: 'sm-eylemler', role: 'group', 'aria-label': `${ad} hızlı erişim` },
-          el('a', { sinif: 'sm-eylem', href: dersHref },
+          el('a', { sinif: 'sm-eylem', 'data-tur': 'ozet', href: dersHref },
             el('span', { sinif: 'sm-eylem-ad' }, simge('kitap'), 'Konu Özeti'),
             el('b', { sinif: 'sm-eylem-sayi' }, ozetSay ? `${ozetSay} hafta` : 'Aç')),
-          el('a', { sinif: 'sm-eylem', href: calismaHref },
+          el('a', { sinif: 'sm-eylem', 'data-tur': 'calisma', href: calismaHref },
             el('span', { sinif: 'sm-eylem-ad' }, simge('kalem'), 'Çalışma Kâğıdı'),
             el('b', { sinif: 'sm-eylem-sayi' }, calismaSay ? `${calismaSay} PDF` : 'Ünite')),
-          el('a', { sinif: 'sm-eylem', href: yaziliHref },
+          el('a', { sinif: 'sm-eylem', 'data-tur': 'yazili', href: yaziliHref },
             el('span', { sinif: 'sm-eylem-ad' }, simge('onay'), 'Yazılı Soruları'),
             el('b', { sinif: 'sm-eylem-sayi' }, yaziliSay ? `${yaziliSay} PDF` : 'Senaryo')),
-          el('a', { sinif: 'sm-eylem', href: planHref },
+          el('a', { sinif: 'sm-eylem', 'data-tur': 'plan', href: planHref },
             el('span', { sinif: 'sm-eylem-ad' }, simge('takvim'), 'Yıllık & Günlük Plan'),
             el('b', { sinif: 'sm-eylem-sayi' }, 'Word/PDF'))));
     };
 
     const merkezCiz = () => {
       if (!smSekmeler || !smDersler || !sinif) return;
+      if (merkez) merkez.dataset.renk = K().gradeColor(sinif);
+      if (alan) alan.dataset.renk = K().gradeColor(sinif);
       $$('.sm-sekme', smSekmeler).forEach((b) => {
         const secili = Number(b.dataset.sinif) === sinif;
         b.setAttribute('aria-selected', String(secili));

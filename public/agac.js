@@ -533,6 +533,17 @@
     const dersCubuk = el('div', { sinif: 'ogt-kokpit-dersler', role: 'group', 'aria-label': 'Branş / ders seçin' });
     const haftaKutu = el('div', { sinif: 'ogt-kokpit-hafta', 'aria-live': 'polite' });
     const matrisKutu = el('div', { sinif: 'ogt-matris' });
+    const kokpitKutu = el('div', { sinif: 'ogt-kokpit', 'data-renk': K().subjectColor(secDers) },
+      el('div', { sinif: 'ogt-kokpit-ust' },
+        el('div', {},
+          el('p', { sinif: 'agac-ust' }, 'Hızlı derse hazırlık kokpiti'),
+          el('h2', { id: 'ogt-kokpit-baslik' }, 'Sınıf ve branşınızı seçin, derse 1 tıkla başlayın'),
+          el('p', { sinif: 'ogt-kokpit-acik' }, 'Seçiminiz bu tarayıcıda hatırlanır; bu haftanın konusu, günlük/yıllık plan, ortak yazılı ve çalışma kâğıdı anında listelenir.')),
+        el('a', { sinif: 'dugme', href: '/ders-dagitim.html' }, simge('takvim'), 'Ders Dağıtım Programı')),
+      sinifCubuk,
+      dersCubuk,
+      haftaKutu,
+      matrisKutu);
     let istekNo = 0;
 
     const ciz = async () => {
@@ -541,6 +552,8 @@
       if (!adayDersler.includes(secDers)) secDers = adayDersler[0];
       const dersAd = dersler.dersler[secDers] || secDers;
       const renk = K().subjectColor(secDers);
+      kokpitKutu.dataset.renk = renk;
+      haftaKutu.dataset.renk = renk;
 
       sinifCubuk.replaceChildren(...siniflar.map((n) => el('button', {
         type: 'button',
@@ -625,18 +638,7 @@
 
     ciz();
     return el('section', { sinif: 'agac-bolum ogt-kokpit-bolum', 'aria-labelledby': 'ogt-kokpit-baslik' },
-      el('div', { sinif: 'kap' },
-        el('div', { sinif: 'ogt-kokpit' },
-          el('div', { sinif: 'ogt-kokpit-ust' },
-            el('div', {},
-              el('p', { sinif: 'agac-ust' }, 'Hızlı derse hazırlık kokpiti'),
-              el('h2', { id: 'ogt-kokpit-baslik' }, 'Sınıf ve branşınızı seçin, derse 1 tıkla başlayın'),
-              el('p', { sinif: 'ogt-kokpit-acik' }, 'Seçiminiz bu tarayıcıda hatırlanır; bu haftanın konusu, günlük/yıllık plan, ortak yazılı ve çalışma kâğıdı anında listelenir.')),
-            el('a', { sinif: 'dugme', href: '/ders-dagitim.html' }, simge('takvim'), 'Ders Dağıtım Programı')),
-          sinifCubuk,
-          dersCubuk,
-          haftaKutu,
-          matrisKutu)));
+      el('div', { sinif: 'kap' }, kokpitKutu));
   }
 
   function ogretmenKok({ dersler, icerikler }, dizin) {

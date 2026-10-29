@@ -553,8 +553,26 @@ ortakVeri.then(({ ayar }) => {
   new MutationObserver(planliTara).observe(document.body, { childList: true, subtree: true });
 })();
 
-// Üst menü hızlı sınıf seçici ("Sınıflar ▾"), "★ Kayıtlılar" bağlantısı ve uzun sayfalarda "Yukarı çık" düğmesi
+// Üst menü hızlı sınıf seçici ("Sınıflar ▾"), "★ Kayıtlılar", Açık/Koyu tema değiştirici ve "Yukarı çık" düğmesi
 (() => {
+  const TEMA_ANAHTAR = 'dk-tema';
+  const sistemKoyuMu = () => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const etkinTema = () => {
+    try {
+      const k = localStorage.getItem(TEMA_ANAHTAR);
+      if (k === 'dark' || k === 'light') return k;
+    } catch {}
+    return sistemKoyuMu() ? 'dark' : 'light';
+  };
+  const temaUygula = (t) => {
+    document.documentElement.dataset.theme = t;
+    document.documentElement.dataset.tema = t === 'dark' ? 'koyu' : 'acik';
+  };
+  try {
+    const kayitliTema = localStorage.getItem(TEMA_ANAHTAR);
+    if (kayitliTema === 'dark' || kayitliTema === 'light') temaUygula(kayitliTema);
+  } catch {}
+
   const anaMenu = $('#ana-menu');
   if (anaMenu && !$('.menu-siniflar', anaMenu)) {
     const siniflar = [
@@ -581,6 +599,26 @@ ortakVeri.then(({ ayar }) => {
     favGuncelle();
     window.addEventListener('storage', favGuncelle);
     if (igBag) igBag.before(favBag); else anaMenu.append(favBag);
+
+    const temaDugme = el('button', {
+      type: 'button',
+      sinif: 'tema-dugme',
+      onclick: () => {
+        const yeni = etkinTema() === 'dark' ? 'light' : 'dark';
+        try { localStorage.setItem(TEMA_ANAHTAR, yeni); } catch {}
+        temaUygula(yeni);
+        temaDugmeGuncelle();
+      },
+    });
+    const temaDugmeGuncelle = () => {
+      const koyu = etkinTema() === 'dark';
+      temaDugme.textContent = koyu ? '☀ Açık' : '☾ Koyu';
+      temaDugme.title = koyu ? 'Açık temaya geç' : 'Koyu (gece) temasına geç';
+      temaDugme.setAttribute('aria-label', temaDugme.title);
+      temaDugme.setAttribute('aria-pressed', String(koyu));
+    };
+    temaDugmeGuncelle();
+    if (igBag) igBag.before(temaDugme); else anaMenu.append(temaDugme);
   }
 
   if (!/^\/(tahta|goruntule)\.html$/.test(location.pathname) && !$('.yukari-cik')) {
