@@ -145,3 +145,39 @@ body.kesif-page { --zemin:#faf9f6; --zemin-2:#f0f2f4; --yuzey:#fff; --yuzey-2:#f
 }
 :root[data-theme="dark"] body.kesif-page { --zemin:#111b23; --zemin-2:#18252e; --yuzey:#1c2b35; --yuzey-2:#233541; --metin:#e8eef1; --soluk:#b0c2cd; --cizgi:#354951; --vurgu:#9dd2b9; --vurgu-acik:#243e34; }
 @media (prefers-reduced-motion:reduce) { .kesif-page * { scroll-behavior:auto!important; transition:none!important; } }
+
+/* ---- 29.10.2026: Kütüphane hızlı süzgeç çipleri, Kaydet (★) favori düğmesi ve Kart / Liste görünümü ---- */
+.kutuphane-hizli-cipler { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+.hizli-cip { font:inherit; font-size:13px; font-weight:750; min-height:38px; padding:0 14px; border-radius:999px;
+  background:var(--yuzey); color:var(--metin); border:1px solid var(--cizgi); cursor:pointer;
+  transition:transform .12s, background .14s, color .14s, border-color .14s; }
+.hizli-cip:hover { transform:translateY(-1px); border-color:var(--vurgu); }
+.hizli-cip[aria-pressed="true"] { background:var(--vurgu); color:#fff; border-color:var(--vurgu); box-shadow:0 4px 12px rgb(39 100 88 / .22); }
+.hizli-cip.favori-cip { color:#b45309; border-color:rgb(245 158 11 / .45); background:rgb(254 243 199 / .55); }
+.hizli-cip.favori-cip[aria-pressed="true"] { background:#d97706; color:#fff; border-color:#d97706; }
+.fav-dugme { margin-left:auto; font:inherit; font-size:11.5px; font-weight:750; padding:3px 9px; border-radius:999px;
+  border:1px solid var(--cizgi); background:var(--zemin-2); color:var(--soluk); cursor:pointer; transition:background .14s, color .14s, border-color .14s; }
+.fav-dugme:hover { border-color:#d97706; color:#b45309; }
+.fav-dugme[aria-pressed="true"] { background:#fef3c7; color:#b45309; border-color:#f59e0b; }
+.kesif-toolbar-sag { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.gorunum-secici { display:inline-flex; padding:3px; border-radius:10px; background:var(--zemin-2); border:1px solid var(--cizgi); }
+.gorunum-dugme { font:inherit; font-size:12.5px; font-weight:750; padding:6px 11px; border-radius:8px; border:0; background:transparent; color:var(--soluk); cursor:pointer; }
+.gorunum-dugme[aria-pressed="true"] { background:var(--yuzey); color:var(--metin); box-shadow:0 1px 3px rgb(15 23 42 / .08); }
+.kesif-page #kartlar.liste-gorunum { grid-template-columns:minmax(0,1fr); gap:10px; }
+.kesif-page #kartlar.liste-gorunum .kart { display:grid; grid-template-columns:minmax(0,1.4fr) auto; align-items:center; gap:8px 18px; padding:14px 18px; border-top-width:1px; border-left:4px solid var(--kart-ana,#6684be); }
+.kesif-page #kartlar.liste-gorunum .kart .ust-bilgi { grid-column:1; margin-bottom:2px; }
+.kesif-page #kartlar.liste-gorunum .kart h3 { grid-column:1; margin:0; font-size:16px; }
+.kesif-page #kartlar.liste-gorunum .kart > p { grid-column:1; margin:0; font-size:13px; -webkit-line-clamp:1; display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden; }
+.kesif-page #kartlar.liste-gorunum .kart .eylemler { grid-column:2; grid-row:1 / 4; padding-top:0; margin:0; justify-content:flex-end; }
+@media (max-width:760px) {
+  .kutuphane-hizli-cipler { flex-wrap:nowrap; overflow-x:auto; padding-bottom:6px; scrollbar-width:thin; }
+  .hizli-cip { flex:none; }
+  .kesif-page #kartlar.liste-gorunum .kart { grid-template-columns:minmax(0,1fr); }
+  .kesif-page #kartlar.liste-gorunum .kart .eylemler { grid-column:1; grid-row:auto; justify-content:flex-start; padding-top:6px; }
+}
+@media (prefers-color-scheme:dark) {
+  :root:not([data-theme="light"]) .hizli-cip.favori-cip { color:#fcd34d; background:rgb(217 119 6 / .18); border-color:rgb(251 191 36 / .35); }
+  :root:not([data-theme="light"]) .fav-dugme[aria-pressed="true"] { background:rgb(217 119 6 / .25); color:#fde68a; border-color:#f59e0b; }
+}
+:root[data-theme="dark"] .hizli-cip.favori-cip { color:#fcd34d; background:rgb(217 119 6 / .18); border-color:rgb(251 191 36 / .35); }
+:root[data-theme="dark"] .fav-dugme[aria-pressed="true"] { background:rgb(217 119 6 / .25); color:#fde68a; border-color:#f59e0b; }

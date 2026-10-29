@@ -553,3 +553,261 @@ ortakVeri.then(({ ayar }) => {
   new MutationObserver(planliTara).observe(document.body, { childList: true, subtree: true });
 })();
 
+// Üst menü hızlı sınıf seçici ("Sınıflar ▾"), "★ Kayıtlılar" bağlantısı ve uzun sayfalarda "Yukarı çık" düğmesi
+(() => {
+  const anaMenu = $('#ana-menu');
+  if (anaMenu && !$('.menu-siniflar', anaMenu)) {
+    const siniflar = [
+      [5, '5. Sınıf', 'mor'], [6, '6. Sınıf', 'yesil'], [7, '7. Sınıf', 'turuncu'], [8, '8. Sınıf · LGS', 'mavi'],
+      [9, '9. Sınıf', 'pembe'], [10, '10. Sınıf', 'sari'], [11, '11. Sınıf', 'turkuaz'], [12, '12. Sınıf · YKS', 'lacivert'],
+    ];
+    const acilir = el('details', { sinif: 'menu-siniflar' },
+      el('summary', { sinif: 'menu-sinif-baslik' }, 'Sınıflar'),
+      el('div', { sinif: 'menu-sinif-panel', role: 'menu', 'aria-label': 'Sınıf seçimi' },
+        ...siniflar.map(([no, ad, renk]) => el('a', { href: `/ogrenci.html?sinif=${no}`, 'data-renk': renk, role: 'menuitem' }, ad)),
+        el('a', { sinif: 'menu-sinif-tahta', href: '/tahta.html', role: 'menuitem' }, '✎ Dijital Tahta')));
+    const ilkBag = anaMenu.querySelector('a');
+    if (ilkBag) ilkBag.after(acilir);
+    document.addEventListener('click', (o) => { if (acilir.open && !acilir.contains(o.target)) acilir.open = false; });
+    document.addEventListener('keydown', (o) => { if (o.key === 'Escape' && acilir.open) acilir.open = false; });
+
+    const igBag = anaMenu.querySelector('.menu-ig');
+    const favSayiOku = () => { try { const l = JSON.parse(localStorage.getItem('dk-favoriler') || '[]'); return Array.isArray(l) ? l.length : 0; } catch { return 0; } };
+    const favBag = el('a', { sinif: 'menu-kayitli', href: '/icerikler.html?favori=1', title: 'Kaydettiğiniz kaynaklar' });
+    const favGuncelle = () => {
+      const n = favSayiOku();
+      favBag.textContent = n ? `★ Kayıtlılar (${n})` : '★ Kayıtlılar';
+    };
+    favGuncelle();
+    window.addEventListener('storage', favGuncelle);
+    if (igBag) igBag.before(favBag); else anaMenu.append(favBag);
+  }
+
+  if (!/^\/(tahta|goruntule)\.html$/.test(location.pathname) && !$('.yukari-cik')) {
+    const yukari = el('button', {
+      type: 'button',
+      sinif: 'yukari-cik',
+      hidden: true,
+      title: 'Sayfanın başına dön',
+      'aria-label': 'Sayfanın başına dön',
+      onclick: () => window.scrollTo({ top: 0, behavior: 'smooth' }),
+    }, '↑');
+    document.body.append(yukari);
+    let kaymaIstek = 0;
+    window.addEventListener('scroll', () => {
+      if (kaymaIstek) return;
+      kaymaIstek = requestAnimationFrame(() => {
+        kaymaIstek = 0;
+        yukari.hidden = window.scrollY < 560;
+      });
+    }, { passive: true });
+  }
+})();
+
+// Konu özeti sayfalarında (/ozet/*.html): tahmini çalışma süresi rozeti ve "★ Konuyu Kaydet" düğmesi
+(() => {
+  const ozetBas = $('.ozet-bas .kap');
+  const ozetGovde = $('article.ozet, main.ozet, .ozet');
+  if (!ozetBas || !ozetGovde || $('.ozet-ust-ek', ozetBas)) return;
+  const kelimeSay = (ozetGovde.textContent || '').trim().split(/\s+/).length;
+  const etkSay = $$('.etk', ozetGovde).length;
+  const dk = Math.max(4, Math.round(kelimeSay / 160) + etkSay * 2);
+  const favAnahtar = location.pathname.replace(/^\/+/, '');
+  const favOku = () => { try { const l = JSON.parse(localStorage.getItem('dk-favoriler') || '[]'); return new Set(Array.isArray(l) ? l : []); } catch { return new Set(); } };
+  const favYaz = (s) => { try { s.size ? localStorage.setItem('dk-favoriler', JSON.stringify([...s])) : localStorage.removeItem('dk-favoriler'); } catch {} };
+  const baslangicFav = favOku().has(favAnahtar);
+  const favBtn = el('button', {
+    type: 'button',
+    sinif: 'ozet-fav-dugme',
+    'aria-pressed': String(baslangicFav),
+    onclick: () => {
+      const s = favOku();
+      if (s.has(favAnahtar)) s.delete(favAnahtar); else s.add(favAnahtar);
+      favYaz(s);
+      const yeni = s.has(favAnahtar);
+      favBtn.setAttribute('aria-pressed', String(yeni));
+      favBtn.textContent = yeni ? '★ Kayıtlı Konu' : '☆ Konuyu Kaydet';
+      const ustFav = $('.menu-kayitli');
+      if (ustFav) ustFav.textContent = s.size ? `★ Kayıtlılar (${s.size})` : '★ Kayıtlılar';
+    },
+  }, baslangicFav ? '★ Kayıtlı Konu' : '☆ Konuyu Kaydet');
+
+  const ekCubuk = el('div', { sinif: 'ozet-ust-ek' },
+    el('span', { sinif: 'ozet-sure-rozet' }, `⏱ Yaklaşık ${dk} dk çalışma${etkSay ? ` · ${etkSay} etkileşimli etkinlik` : ''}`),
+    favBtn);
+  const h1 = $('h1', ozetBas);
+  if (h1) h1.after(ekCubuk); else ozetBas.append(ekCubuk);
+})();
+
+// Sınavlar sayfası (/sinav.html): Canlı LGS & YKS geri sayım panosu ve Net / Başarı Hesaplayıcı
+(() => {
+  const pano = $('#sinav-sayac-pano');
+  const nhDuzen = $('#nh-duzen');
+  if (!pano && !nhDuzen) return;
+
+  if (pano) {
+    const simdi = new Date();
+    const yil = simdi.getMonth() >= 6 ? simdi.getFullYear() + 1 : simdi.getFullYear();
+    const hedefler = {
+      lgs: { tarih: new Date(`${yil}-06-13T09:30:00`), bas: new Date(`${yil - 1}-09-08T09:00:00`), alt: '50 Sözel (75 dk) + 40 Sayısal (80 dk) · 90 Soru' },
+      yks: { tarih: new Date(`${yil}-06-20T10:15:00`), bas: new Date(`${yil - 1}-09-08T09:00:00`), alt: 'TYT 120 Soru (165 dk) · AYT 160 Soru (180 dk)' },
+    };
+    for (const [kod, h] of Object.entries(hedefler)) {
+      const kalanMs = Math.max(0, h.tarih - simdi);
+      const kalanGun = Math.ceil(kalanMs / 864e5);
+      const kalanHafta = Math.max(1, Math.floor(kalanGun / 7));
+      const toplamMs = Math.max(1, h.tarih - h.bas);
+      const gecenOran = Math.min(96, Math.max(8, Math.round(((simdi - h.bas) / toplamMs) * 100)));
+      const yer = $(`[data-sinav-sayac="${kod}"]`, pano);
+      const cubuk = $(`[data-sinav-cubuk="${kod}"]`, pano);
+      if (yer) {
+        yer.replaceChildren(
+          el('b', {}, kalanGun > 0 ? `${kalanGun} gün (${kalanHafta} hafta) kaldı` : 'Sınav dönemi'),
+          el('span', {}, h.alt));
+      }
+      if (cubuk) cubuk.style.width = `${gecenOran}%`;
+    }
+  }
+
+  if (!nhDuzen) return;
+  const tabloKutu = $('#nh-tablo-kutu');
+  const ozetKutu = $('#nh-ozet-kutu');
+  const sekmeler = $$('.nh-sekme');
+  const NH_ANAHTAR = 'dk-net-hesap-v1';
+  const YAPILAR = {
+    lgs: {
+      ad: 'LGS (8. Sınıf)',
+      kural: 3,
+      sinif: 8,
+      tabanPuan: 194.7,
+      testler: [
+        { kod: 'turkce', ad: 'Türkçe', soru: 20, katsayi: 4.34 },
+        { kod: 'tc-inkilap-tarihi-ve-ataturkculuk', ad: 'T.C. İnkılap Tarihi', soru: 10, katsayi: 1.66 },
+        { kod: 'din-kulturu-ve-ahlak-bilgisi', ad: 'Din Kültürü', soru: 10, katsayi: 1.89 },
+        { kod: 'ingilizce', ad: 'İngilizce', soru: 10, katsayi: 1.50 },
+        { kod: 'matematik', ad: 'Matematik', soru: 20, katsayi: 4.25 },
+        { kod: 'fen-bilimleri', ad: 'Fen Bilimleri', soru: 20, katsayi: 4.12 },
+      ],
+    },
+    tyt: {
+      ad: 'YKS – TYT',
+      kural: 4,
+      sinif: 12,
+      tabanPuan: 100,
+      testler: [
+        { kod: 'turk-dili-ve-edebiyati', ad: 'Türkçe', soru: 40, katsayi: 3.3 },
+        { kod: 'tarih', ad: 'Sosyal Bilimler', soru: 20, katsayi: 3.4 },
+        { kod: 'matematik', ad: 'Temel Matematik', soru: 40, katsayi: 3.3 },
+        { kod: 'fizik', ad: 'Fen Bilimleri', soru: 20, katsayi: 3.4 },
+      ],
+    },
+  };
+
+  let durum = { tur: 'lgs', degerler: { lgs: {}, tyt: {} } };
+  try {
+    const kayitli = JSON.parse(localStorage.getItem(NH_ANAHTAR) || 'null');
+    if (kayitli && kayitli.degerler) durum = { tur: kayitli.tur === 'tyt' ? 'tyt' : 'lgs', degerler: { lgs: kayitli.degerler.lgs || {}, tyt: kayitli.degerler.tyt || {} } };
+  } catch {}
+  const kaydet = () => { try { localStorage.setItem(NH_ANAHTAR, JSON.stringify(durum)); } catch {} };
+
+  const bicimNet = (n) => n.toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+  const hesaplaVeGuncelle = () => {
+    const yapi = YAPILAR[durum.tur];
+    const girilen = durum.degerler[durum.tur] || {};
+    let topSoru = 0, topDogru = 0, topYanlis = 0, topNet = 0, hamPuan = yapi.tabanPuan;
+    let enCokKayip = null;
+
+    yapi.testler.forEach((t) => {
+      const kayit = girilen[t.kod] || { d: t.soru - Math.ceil(t.soru * 0.2), y: Math.floor(t.soru * 0.1) };
+      const d = Math.max(0, Math.min(t.soru, Number(kayit.d) || 0));
+      const y = Math.max(0, Math.min(t.soru - d, Number(kayit.y) || 0));
+      const net = Math.max(0, d - y / yapi.kural);
+      const kayipPuan = (t.soru - net) * t.katsayi;
+      if (!enCokKayip || kayipPuan > enCokKayip.kayip) enCokKayip = { ...t, net, kayip: kayipPuan };
+      topSoru += t.soru;
+      topDogru += d;
+      topYanlis += y;
+      topNet += net;
+      hamPuan += net * t.katsayi;
+      const netHucresi = $(`[data-nh-net="${t.kod}"]`, tabloKutu);
+      if (netHucresi) netHucresi.textContent = `${bicimNet(net)} net`;
+    });
+
+    const puan = Math.min(500, Math.max(100, hamPuan));
+    const basari = Math.round((topNet / topSoru) * 100);
+    const bosSayi = Math.max(0, topSoru - topDogru - topYanlis);
+
+    ozetKutu.replaceChildren(
+      el('p', { sinif: 'ust-baslik' }, `${yapi.ad} Deneme Özeti`),
+      el('div', { sinif: 'nh-puan-kart' },
+        el('div', {}, el('small', {}, 'Toplam Net'), el('strong', {}, `${bicimNet(topNet)} / ${topSoru}`)),
+        el('div', {}, el('small', {}, 'Tahmini Puan'), el('strong', {}, puan.toLocaleString('tr-TR', { minimumFractionDigits: 1, maximumFractionDigits: 1 }))),
+        el('div', {}, el('small', {}, 'Başarı Oranı'), el('strong', {}, `%${basari}`))),
+      el('p', { sinif: 'nh-detay-satir' }, `${topDogru} doğru · ${topYanlis} yanlış · ${bosSayi} boş (${yapi.kural} yanlış 1 doğruyu götürür)`),
+      enCokKayip ? el('div', { sinif: 'nh-oneri' },
+        el('strong', {}, `Öncelikli tekrar önerisi: ${enCokKayip.ad}`),
+        el('p', {}, `Bu branşta ${bicimNet(enCokKayip.net)} / ${enCokKayip.soru} nettesin. En hızlı puan artışını bu dersin konu özetleri ve çalışma kâğıtlarıyla sağlayabilirsin.`),
+        el('div', { sinif: 'nh-oneri-dugmeler' },
+          el('a', { sinif: 'dugme ana', href: `/ogrenci.html?sinif=${yapi.sinif}&ders=${encodeURIComponent(enCokKayip.kod)}` }, `${enCokKayip.ad} Üniteleri →`),
+          el('a', { sinif: 'dugme', href: `/icerikler.html?sinif=${yapi.sinif}&ders=${encodeURIComponent(enCokKayip.kod)}&tur=${encodeURIComponent('Çalışma kâğıdı')}` }, 'Çalışma Kâğıtları'))) : null);
+  };
+
+  const tabloCiz = () => {
+    const yapi = YAPILAR[durum.tur];
+    const girilen = durum.degerler[durum.tur] || (durum.degerler[durum.tur] = {});
+    sekmeler.forEach((b) => b.setAttribute('aria-selected', String(b.dataset.nhTur === durum.tur)));
+
+    const satirlar = yapi.testler.map((t) => {
+      if (!girilen[t.kod]) girilen[t.kod] = { d: t.soru - Math.ceil(t.soru * 0.2), y: Math.floor(t.soru * 0.1) };
+      const dInput = el('input', {
+        type: 'number', min: '0', max: String(t.soru), value: String(girilen[t.kod].d),
+        'aria-label': `${t.ad} doğru sayısı`,
+        oninput: () => {
+          let d = Math.max(0, Math.min(t.soru, Number(dInput.value) || 0));
+          let y = Math.max(0, Math.min(t.soru - d, Number(yInput.value) || 0));
+          if (Number(yInput.value) > t.soru - d) yInput.value = String(y);
+          girilen[t.kod] = { d, y };
+          kaydet();
+          hesaplaVeGuncelle();
+        },
+      });
+      const yInput = el('input', {
+        type: 'number', min: '0', max: String(t.soru), value: String(girilen[t.kod].y),
+        'aria-label': `${t.ad} yanlış sayısı`,
+        oninput: () => {
+          let d = Math.max(0, Math.min(t.soru, Number(dInput.value) || 0));
+          let y = Math.max(0, Math.min(t.soru - d, Number(yInput.value) || 0));
+          girilen[t.kod] = { d, y };
+          kaydet();
+          hesaplaVeGuncelle();
+        },
+      });
+      return el('tr', {},
+        el('td', {}, el('strong', {}, t.ad), el('small', { sinif: 'nh-soru-sayi' }, ` (${t.soru} soru)`)),
+        el('td', {}, dInput),
+        el('td', {}, yInput),
+        el('td', { sinif: 'nh-net-hucre', 'data-nh-net': t.kod }, '0,00 net'));
+    });
+
+    tabloKutu.replaceChildren(
+      el('table', { sinif: 'nh-tablo' },
+        el('thead', {}, el('tr', {}, el('th', {}, 'Test / Branş'), el('th', {}, 'Doğru'), el('th', {}, 'Yanlış'), el('th', {}, 'Net'))),
+        el('tbody', {}, ...satirlar)));
+    hesaplaVeGuncelle();
+  };
+
+  sekmeler.forEach((b) => b.addEventListener('click', () => {
+    durum.tur = b.dataset.nhTur === 'tyt' ? 'tyt' : 'lgs';
+    kaydet();
+    tabloCiz();
+  }));
+  $$('[data-hesap-sec]').forEach((a) => a.addEventListener('click', () => {
+    durum.tur = a.dataset.hesapSec === 'tyt' ? 'tyt' : 'lgs';
+    kaydet();
+    tabloCiz();
+  }));
+  tabloCiz();
+})();
+
+

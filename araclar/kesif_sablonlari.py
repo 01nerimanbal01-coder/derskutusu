@@ -1,9 +1,9 @@
 """Keşif sayfalarının ortak görünümü; içerik kaynaklarını değiştirmez."""
 import re
 
-CSS = '<link rel="stylesheet" href="/kesif.css?v=20261029-1">'
-JS = '<script src="/kesif.js?v=20261029-1"></script>'
-RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261029-1" media="screen">'
+CSS = '<link rel="stylesheet" href="/kesif.css?v=20261029-2">'
+JS = '<script src="/kesif.js?v=20261029-2"></script>'
+RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261029-2" media="screen">'
 
 
 def renkli_sayfa(html, ad):
@@ -31,13 +31,14 @@ def kutuphane_govde(govde):
     govde = govde.replace('<form class="suzgec-cubugu"', '''<div class="kesif-library">
       <aside class="kesif-sidebar" aria-label="Kaynak kategorileri"><h2>Kategoriler</h2><div id="kategori-secimleri"></div></aside>
       <div class="kesif-results">
+      <div class="kutuphane-hizli-cipler" id="hizli-suzgecler" role="group" aria-label="Hızlı süzgeçler"></div>
       <details class="suzgec-acilir" open>
       <summary><span>Süzgeçler</span><small id="suzgec-sayi" hidden></small><span class="suzgec-ok" aria-hidden="true">⌄</span></summary>
       <form class="suzgec-cubugu"''')
     govde = govde.replace('</form>', '</form>\n      </details>', 1)   # dar ekranda katlanır (kesif.css, kutuphane.js)
     govde = govde.replace('<p class="sonuc-bilgi">', '<div class="kesif-result-toolbar"><p class="sonuc-bilgi">')
     govde = govde.replace('Seçimleri temizle</button></p>', '''Seçimleri temizle</button></p>
-      <label class="kesif-sort">Sıralama<select id="s-sirala"><option value="yeni">Son eklenen</option><option value="baslik">Başlık A–Z</option><option value="sinif">Sınıf sırası</option></select></label></div>''')
+      <div class="kesif-toolbar-sag"><div class="gorunum-secici" id="gorunum-secici" role="group" aria-label="Görünüm biçimi"><button type="button" class="gorunum-dugme" data-gorunum="kart" aria-pressed="true" title="Kart görünümü">⊞ Kart</button><button type="button" class="gorunum-dugme" data-gorunum="liste" aria-pressed="false" title="Kompakt liste görünümü">☰ Liste</button></div><label class="kesif-sort">Sıralama<select id="s-sirala"><option value="yeni">Son eklenen</option><option value="baslik">Başlık A–Z</option><option value="sinif">Sınıf sırası</option></select></label></div></div>''')
     govde = govde.replace('<div class="kartlar" id="kartlar"></div>', '''<div class="kartlar" id="kartlar"></div>
       <div class="kesif-more" id="daha-alani" hidden><p id="gosterilen-sayi" role="status"></p><button class="dugme" type="button" id="daha-goster">Daha fazla kaynak göster ↓</button></div>''')
     left, sep, right = govde.rpartition('    </div>\n  </section>')

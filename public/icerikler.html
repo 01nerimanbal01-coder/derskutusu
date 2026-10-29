@@ -22,9 +22,9 @@
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "EducationalOrganization", "@id": "https://derskutusu.com/#kurum", "name": "Ders Kutusu", "url": "https://derskutusu.com/", "logo": "https://derskutusu.com/simge-512.png", "email": "info@derskutusu.com", "sameAs": ["https://www.instagram.com/derskutusuinfo/", "https://www.facebook.com/derskutusuinfo", "https://www.youtube.com/@derskutusuinfo"]}, {"@type": "WebPage", "@id": "https://derskutusu.com/icerikler.html#sayfa", "url": "https://derskutusu.com/icerikler.html", "name": "İçerikler · Ders Kutusu", "description": "Sınıfa, derse ve türe göre konu anlatımları, soru çözümleri, videolar, yıllık planlar ve yazılı soruları.", "inLanguage": "tr-TR", "isPartOf": {"@type": "WebSite", "@id": "https://derskutusu.com/#site", "name": "Ders Kutusu", "url": "https://derskutusu.com/"}, "publisher": {"@id": "https://derskutusu.com/#kurum"}}]}</script>
-<link rel="stylesheet" href="/stil.css?v=202610291630">
-<link rel="stylesheet" href="/kesif.css?v=20261029-1">
-<link rel="stylesheet" href="/renkler.css?v=20261029-1" media="screen">
+<link rel="stylesheet" href="/stil.css?v=202610291730">
+<link rel="stylesheet" href="/kesif.css?v=20261029-2">
+<link rel="stylesheet" href="/renkler.css?v=20261029-2" media="screen">
 </head>
 <body data-site-renk="mor" class="kesif-page">
 <a class="atla" href="#icerik">İçeriğe geç</a>
@@ -76,6 +76,7 @@
       <div class="kesif-library">
       <aside class="kesif-sidebar" aria-label="Kaynak kategorileri"><h2>Kategoriler</h2><div id="kategori-secimleri"></div></aside>
       <div class="kesif-results">
+      <div class="kutuphane-hizli-cipler" id="hizli-suzgecler" role="group" aria-label="Hızlı süzgeçler"></div>
       <details class="suzgec-acilir" open>
       <summary><span>Süzgeçler</span><small id="suzgec-sayi" hidden></small><span class="suzgec-ok" aria-hidden="true">⌄</span></summary>
       <form class="suzgec-cubugu" role="search" onsubmit="return false">
@@ -89,7 +90,7 @@
       </details>
       <div class="secili-suzgecler" id="secili-suzgecler" role="group" aria-label="Seçili süzgeçler" hidden></div>
       <div class="kesif-result-toolbar"><p class="sonuc-bilgi"><span id="sonuc-sayi" role="status" aria-live="polite" aria-atomic="true"></span><button type="button" id="temizle" hidden>Seçimleri temizle</button></p>
-      <label class="kesif-sort">Sıralama<select id="s-sirala"><option value="yeni">Son eklenen</option><option value="baslik">Başlık A–Z</option><option value="sinif">Sınıf sırası</option></select></label></div>
+      <div class="kesif-toolbar-sag"><div class="gorunum-secici" id="gorunum-secici" role="group" aria-label="Görünüm biçimi"><button type="button" class="gorunum-dugme" data-gorunum="kart" aria-pressed="true" title="Kart görünümü">⊞ Kart</button><button type="button" class="gorunum-dugme" data-gorunum="liste" aria-pressed="false" title="Kompakt liste görünümü">☰ Liste</button></div><label class="kesif-sort">Sıralama<select id="s-sirala"><option value="yeni">Son eklenen</option><option value="baslik">Başlık A–Z</option><option value="sinif">Sınıf sırası</option></select></label></div></div>
       <div class="kartlar" id="kartlar"></div>
       <div class="kesif-more" id="daha-alani" hidden><p id="gosterilen-sayi" role="status"></p><button class="dugme" type="button" id="daha-goster">Daha fazla kaynak göster ↓</button></div>
       <div class="yakinda" id="icerik-yakinda" hidden>
@@ -146,9 +147,9 @@
   </div>
 </footer>
 
-<script src="/ortak.js?v=20261029-1"></script>
-<script src="/kesif.js?v=20261029-1"></script>
-<script src="/kutuphane.js?v=20261013-2"></script>
+<script src="/ortak.js?v=20261029-2"></script>
+<script src="/kesif.js?v=20261029-2"></script>
+<script src="/kutuphane.js?v=20261029-2"></script>
 <script src="/arama.js?v=20261004-duzen1"></script>
 <script src="/tahta.js?v=20261018-5"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->

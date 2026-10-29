@@ -463,7 +463,130 @@
     { kod: 'kpss', ad: 'KPSS hazırlık', aciklama: 'Öğretmen adayları için konu anlatımı ve testler.', simge: 'onay', renk: 'mor', sayfa: '/kpss.html' },
   ];
 
-  function ogretmenKok({ dersler, icerikler }) {
+  function ogretmenKokpit({ dersler, icerikler }, dizin) {
+    const siniflar = Object.keys(dersler.siniflar).map(Number);
+    let secSinif = 8;
+    let secDers = 'matematik';
+    try {
+      const ks = Number(localStorage.getItem('dk-ogt-sinif'));
+      if (siniflar.includes(ks)) secSinif = ks;
+      const kd = localStorage.getItem('dk-ogt-ders');
+      if (kd) secDers = kd;
+    } catch {}
+    const sinifDersleri = (n) => [...(dersler.siniflar[n] || []), ...(dersler.secmeli?.[n] || [])];
+    if (!sinifDersleri(secSinif).includes(secDers)) secDers = sinifDersleri(secSinif)[0] || 'matematik';
+
+    const sinifCubuk = el('div', { sinif: 'ogt-kokpit-siniflar', role: 'group', 'aria-label': 'Sınıf seçin' });
+    const dersCubuk = el('div', { sinif: 'ogt-kokpit-dersler', role: 'group', 'aria-label': 'Branş / ders seçin' });
+    const haftaKutu = el('div', { sinif: 'ogt-kokpit-hafta', 'aria-live': 'polite' });
+    const matrisKutu = el('div', { sinif: 'ogt-matris' });
+    let istekNo = 0;
+
+    const ciz = async () => {
+      const buIstek = ++istekNo;
+      const adayDersler = sinifDersleri(secSinif);
+      if (!adayDersler.includes(secDers)) secDers = adayDersler[0];
+      const dersAd = dersler.dersler[secDers] || secDers;
+      const renk = K().subjectColor(secDers);
+
+      sinifCubuk.replaceChildren(...siniflar.map((n) => el('button', {
+        type: 'button',
+        sinif: 'ogt-sec-dugme',
+        'data-renk': K().gradeColor(n),
+        'aria-pressed': String(n === secSinif),
+        onclick: () => {
+          secSinif = n;
+          try { localStorage.setItem('dk-ogt-sinif', String(n)); } catch {}
+          ciz();
+        },
+      }, `${n}. Sınıf`)));
+
+      dersCubuk.replaceChildren(...(dersler.siniflar[secSinif] || []).map((d) => el('button', {
+        type: 'button',
+        sinif: 'ogt-ders-dugme',
+        'data-renk': K().subjectColor(d),
+        'aria-pressed': String(d === secDers),
+        onclick: () => {
+          secDers = d;
+          try { localStorage.setItem('dk-ogt-ders', d); } catch {}
+          ciz();
+        },
+      }, dersler.dersler[d] || d)));
+
+      const dersIc = icerikler.filter((i) => Number(i.sinif) === secSinif && i.ders === secDers);
+      const yillikPlan = dersIc.find((i) => i.tur === 'Yıllık plan');
+      const dersKitabi = dersIc.find((i) => i.tur === 'Ders kitabı');
+      const ogretimProg = dersIc.find((i) => i.tur === 'Öğretim programı') || icerikler.find((i) => i.tur === 'Öğretim programı' && i.ders === secDers);
+      const calismalar = dersIc.filter((i) => i.tur === 'Çalışma kâğıdı');
+      const ozetler = dersIc.filter((i) => i.tur === 'Konu anlatımı');
+      const ag = dizin?.[`${secSinif}-${secDers}`];
+
+      const eylemKarti = (simgeAd, kRengi, baslik, alt, href, rozetMetin) => el('a', { sinif: 'ogt-eylem-kart', href, 'data-renk': kRengi },
+        el('span', { sinif: 'ogt-eylem-simge', 'aria-hidden': 'true' }, simge(simgeAd)),
+        el('span', { sinif: 'ogt-eylem-govde' },
+          el('strong', {}, baslik),
+          el('small', {}, alt)),
+        el('span', { sinif: 'ogt-eylem-rozet' }, rozetMetin));
+
+      matrisKutu.replaceChildren(
+        eylemKarti('takvim', 'turuncu', 'Günlük Ders Planı', `${secSinif}. Sınıf ${dersAd} · Okul ve öğretmen adına özel`, `/planlar.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}`, 'Word & PDF'),
+        eylemKarti('takvim', 'mavi', 'Yıllık Plan (TYMM)', yillikPlan ? yillikPlan.baslik : `${secSinif}. Sınıf ${dersAd} haftalık yıllık plan`, yillikPlan ? yol(yillikPlan.hazirla || yillikPlan.dosya || yillikPlan.goruntule) : `/ogretmen.html?kategori=yillik-plan&sinif=${secSinif}`, yillikPlan ? 'Hazır İndir' : 'Planlar'),
+        eylemKarti('onay', 'pembe', 'Ortak Yazılı & Cevaplı Kâğıtlar', `${secSinif}. Sınıf ${dersAd} senaryoları ve cevap anahtarlı PDF'ler`, `/yazili.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}`, 'Senaryo & PDF'),
+        eylemKarti('kalem', 'yesil', 'Çalışma Kâğıtları', calismalar.length ? `${calismalar.length} haftalık çalışma kâğıdı (cevaplı & cevapsız)` : 'Derste kullanmak için çalışma yaprakları', `/icerikler.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}&tur=${encodeURIComponent('Çalışma kâğıdı')}`, calismalar.length ? `${calismalar.length} PDF` : 'Kütüphane'),
+        eylemKarti('kitap', renk, 'Konu Anlatımları & Sunum', ag ? `${ag.unite} ünite · ${ag.konu} konu · Akıllı tahta sunum modu` : `${ozetler.length} haftalık konu özeti`, `/ogrenci.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}`, ozetler.length ? `${ozetler.length} hafta` : 'Üniteler'),
+        eylemKarti('kitap', 'turkuaz', 'Ders Kitabı & Öğretim Programı', dersKitabi ? 'MEB ders kitabı ve TYMM öğrenme çıktıları' : 'TYMM öğretim programı ve resmî belgeler', dersKitabi ? yol(dersKitabi.goruntule || dersKitabi.baglanti) : (ogretimProg ? yol(ogretimProg.goruntule || ogretimProg.dosya) : '/belgeler.html'), dersKitabi ? 'Kitabı Aç' : 'Program')
+      );
+
+      haftaKutu.replaceChildren(el('p', { sinif: 'ogt-hafta-yukleniyor' }, `${secSinif}. Sınıf ${dersAd} bu haftanın ders planı kontrol ediliyor…`));
+      const agacVeri = await veri(`agac/${secSinif}-${secDers}.json`);
+      if (buIstek !== istekNo) return;
+      const buH = agacVeri?.haftalar ? buHafta(agacVeri.haftalar) : null;
+      const hNo = buH?.no ?? null;
+      const hBilgi = hNo && agacVeri?.haftalar?.[hNo];
+      const konular = agacVeri?.uniteler ? agacVeri.uniteler.flatMap((u, ui) => u.konular.map((k) => ({ ...k, unite: u.ad, ui }))) : [];
+      const buKonu = hNo ? konular.find((k) => k.haftalar?.includes(hNo)) : null;
+      const buOzet = hNo ? ozetler.find((i) => Number(i.hafta) === hNo && i.goruntule) : null;
+      const buCalisma = hNo ? calismalar.find((i) => Number(i.hafta) === hNo && (i.hazirla || i.dosya || i.goruntule)) : null;
+
+      if (hNo && (buKonu || buOzet)) {
+        const konuBaslik = buKonu ? (buKonu.ad === buKonu.unite ? buKonu.unite : buKonu.ad) : buOzet.baslik;
+        haftaKutu.replaceChildren(
+          el('div', { sinif: 'ogt-hafta-sol' },
+            el('span', { sinif: 'agac-rozet bu-hafta' }, `${buHaftaEtiket(buH)} · ${hNo}. hafta${hBilgi?.ad ? ' · ' + hBilgi.ad : ''}`),
+            el('strong', {}, `${secSinif}. Sınıf ${dersAd}: ${konuBaslik}`),
+            buKonu ? el('small', {}, `${buKonu.ui + 1}. Ünite: ${buKonu.unite}`) : null),
+          el('div', { sinif: 'ogt-hafta-eylemler' },
+            buOzet ? el('a', { sinif: 'dugme ana', href: yol(buOzet.goruntule) }, simge('oynat'), 'Konu Özeti & Sunum Modu') : null,
+            buCalisma ? el('a', { sinif: 'dugme', href: yol(buCalisma.hazirla || buCalisma.dosya || buCalisma.goruntule) }, simge('indir'), 'Haftanın Çalışma Kâğıdı') : null,
+            el('a', { sinif: 'dugme', href: '/tahta.html' }, simge('kalem'), 'Akıllı Tahta')));
+      } else {
+        haftaKutu.replaceChildren(
+          el('div', { sinif: 'ogt-hafta-sol' },
+            el('strong', {}, `${secSinif}. Sınıf ${dersAd} Derse Hazırlık`),
+            el('small', {}, 'Günlük plan, ortak yazılı ve ders materyallerine aşağıdaki kartlardan tek tıkla ulaşabilirsiniz.')),
+          el('div', { sinif: 'ogt-hafta-eylemler' },
+            el('a', { sinif: 'dugme ana', href: `/planlar.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}` }, simge('takvim'), 'Günlük Plan Hazırla'),
+            el('a', { sinif: 'dugme', href: '/tahta.html' }, simge('kalem'), 'Akıllı Tahta')));
+      }
+    };
+
+    ciz();
+    return el('section', { sinif: 'agac-bolum ogt-kokpit-bolum', 'aria-labelledby': 'ogt-kokpit-baslik' },
+      el('div', { sinif: 'kap' },
+        el('div', { sinif: 'ogt-kokpit' },
+          el('div', { sinif: 'ogt-kokpit-ust' },
+            el('div', {},
+              el('p', { sinif: 'agac-ust' }, 'Hızlı derse hazırlık kokpiti'),
+              el('h2', { id: 'ogt-kokpit-baslik' }, 'Sınıf ve branşınızı seçin, derse 1 tıkla başlayın'),
+              el('p', { sinif: 'ogt-kokpit-acik' }, 'Seçiminiz bu tarayıcıda hatırlanır; bu haftanın konusu, günlük/yıllık plan, ortak yazılı ve çalışma kâğıdı anında listelenir.')),
+            el('a', { sinif: 'dugme', href: '/ders-dagitim.html' }, simge('takvim'), 'Ders Dağıtım Programı')),
+          sinifCubuk,
+          dersCubuk,
+          haftaKutu,
+          matrisKutu)));
+  }
+
+  function ogretmenKok({ dersler, icerikler }, dizin) {
     const ogt = icerikler.filter(kitleUyar(dersler));
     const kategoriKarti = (k) => {
       const sayi = k.tur ? ogt.filter((i) => i.tur === k.tur).length : null;
@@ -473,8 +596,9 @@
         el('h3', {}, k.ad), el('p', {}, k.aciklama), el('span', { sinif: 'agac-basla' }, 'Aç', el('span', { 'aria-hidden': 'true' }, ' →')));
     };
     yerles(
-      basBolum([{ ad: 'Öğretmen Köşesi' }], 'Öğretmen', 'Öğretmen Köşesi', 'Bir kategori seçin: planlar, yazılılar, programlar ve derse hazırlık dosyaları.'),
-      bolum('', el('div', { sinif: 'agac-kategoriler' }, KATEGORILER.map(kategoriKarti))),
+      basBolum([{ ad: 'Öğretmen Köşesi' }], 'Öğretmen', 'Öğretmen Köşesi', 'Sınıf ve branşınızı seçerek bu haftanın dersine hemen başlayın ya da aşağıdaki kategorilerden tüm öğretmen dosyalarına ulaşın.'),
+      ogretmenKokpit({ dersler, icerikler }, dizin),
+      bolum('', baslikSatiri('Tüm öğretmen kategorileri', 'Planlar, ortak yazılılar, öğretim programları ve sınıf içi araçlar.'), el('div', { sinif: 'agac-kategoriler' }, KATEGORILER.map(kategoriKarti))),
       bolum('koyu-zemin', baslikSatiri('Öğretmenlere son eklenenler', null, el('a', { sinif: 'tumu', href: '/icerikler.html?kitle=ogretmen' }, 'Tümünü gör', simge('ok'))),
         kartlar(yeniler(ogt).slice(0, 6), dersler)));
   }
@@ -495,10 +619,52 @@
     const buSinif = ogt.filter((i) => Number(i.sinif) === n);
     const sira = [...dersler.siniflar[n] || [], ...(dersler.secmeli?.[n] || [])];
     const dersAnahtar = [...new Set(buSinif.map((i) => i.ders))].sort((a, b) => (sira.indexOf(a) + 1 || 99) - (sira.indexOf(b) + 1 || 99));
+    let seciliDers = '';
+    const aramaInput = el('input', {
+      type: 'search',
+      sinif: 'agac-konu-ara',
+      placeholder: `${n}. sınıf ${kat.ad.toLocaleLowerCase('tr')} içinde ara…`,
+      'aria-label': 'Dosya ara',
+      autocomplete: 'off',
+    });
+    const kartKapsayici = el('div', {});
+    const listeCiz = () => {
+      const q = normal(aramaInput.value);
+      const suzulen = dersAnahtar
+        .filter((d) => !seciliDers || d === seciliDers)
+        .flatMap((d) => buSinif.filter((i) => i.ders === d && (!q || normal(`${i.baslik} ${i.aciklama || ''} ${dersler.dersler[d] || ''}`).includes(q))));
+      kartKapsayici.replaceChildren(suzulen.length ? kartlar(suzulen, dersler)
+        : bos('Eşleşen dosya bulunamadı', 'Başka bir ders seçin veya arama kutusunu temizleyin.'));
+    };
+    aramaInput.addEventListener('input', listeCiz);
+    const dersSuzgec = dersAnahtar.length > 1 ? el('div', { sinif: 'agac-suzgec-cubuk' },
+      el('div', { sinif: 'agac-suzgec-arama' }, simge('mercek'), aramaInput),
+      el('div', { sinif: 'agac-suzgec-cipler', role: 'group', 'aria-label': 'Ders süzgeci' },
+        el('button', {
+          type: 'button',
+          sinif: 'agac-suzgec-dugme',
+          'aria-pressed': 'true',
+          onclick: (o) => {
+            seciliDers = '';
+            $$('.agac-suzgec-dugme', dersSuzgec).forEach((b) => b.setAttribute('aria-pressed', String(b === o.currentTarget)));
+            listeCiz();
+          },
+        }, `Tümü (${buSinif.length})`),
+        ...dersAnahtar.map((d) => el('button', {
+          type: 'button',
+          sinif: 'agac-suzgec-dugme',
+          'aria-pressed': 'false',
+          onclick: (o) => {
+            seciliDers = d;
+            $$('.agac-suzgec-dugme', dersSuzgec).forEach((b) => b.setAttribute('aria-pressed', String(b === o.currentTarget)));
+            listeCiz();
+          },
+        }, `${dersler.dersler[d] || d} (${buSinif.filter((i) => i.ders === d).length})`)))) : null;
+    listeCiz();
     yerles(
       basBolum([DAL_YOL, katYol, { ad: `${n}. sınıf` }], kat.ad, `${n}. sınıf · ${kat.ad}`, null,
         sinifGecis(dersler, n, (s) => adres({ kategori: kat.kod, sinif: s }), (s) => siniflar.has(s))),
-      bolum('', buSinif.length ? kartlar(dersAnahtar.flatMap((d) => buSinif.filter((i) => i.ders === d)), dersler)
+      bolum('', buSinif.length ? el('div', {}, dersSuzgec, kartKapsayici)
         : bos('Bu sınıfta henüz dosya yok', 'Dosyalar eklendikçe burada listelenecek.', el('a', { sinif: 'dugme', href: katYol.href }, 'Başka sınıf seç'))));
   }
 
@@ -519,7 +685,7 @@
     } else {
       const kat = KATEGORILER.find((k) => k.kod === P.get('kategori') && k.tur);
       if (kat) ogretmenKategori(v, kat, n);
-      else ogretmenKok(v);
+      else ogretmenKok(v, dizin);
     }
     alan.setAttribute('aria-busy', 'false');
     // Bölüm sayfa açıldıktan sonra çizildiği için #yaziliya-hazirlik bağlantısıyla gelindiyse oraya kaydır

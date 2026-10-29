@@ -2,6 +2,13 @@
 // Veriler: veri/dersler.json (sınıf, ders, tür) ve veri/icerikler.json (içerikler).
 
 const parametre = new URLSearchParams(location.search);
+const FAV_ANAHTAR = 'dk-favoriler';
+const GORUNUM_ANAHTAR = 'dk-kutuphane-gorunum';
+const favoriOku = () => { try { const l = JSON.parse(localStorage.getItem(FAV_ANAHTAR) || '[]'); return new Set(Array.isArray(l) ? l : []); } catch { return new Set(); } };
+const favoriYaz = (set) => { try { set.size ? localStorage.setItem(FAV_ANAHTAR, JSON.stringify([...set])) : localStorage.removeItem(FAV_ANAHTAR); } catch {} };
+const kaynakAnahtari = (i) => String(i.goruntule || i.hazirla || i.dosya || i.baglanti || `${i.sinif || ''}-${i.ders || ''}-${i.tur || ''}-${i.hafta || ''}-${i.baslik || ''}`);
+let favoriSet = favoriOku();
+let favoriDegisti = null;
 
 // Ortak içerikler (ör. çalışma kâğıtları) iki kitlede de sayılır ve listelenir.
 function kitleDenetleyici(dersler) {
@@ -14,12 +21,34 @@ function icerikKarti(i, dersler) {
   const adres = i.dosya || i.baglanti;
   // Sınıf zaten rozette: "5. Sınıf Matematik 7. Hafta: …" başlığı "Matematik 7. Hafta: …" olarak kısalır (dar ekranda kart boyu)
   const baslik = String(i.baslik || '').replace(/^\d+\.\s*Sınıf\s+(?=\S)/, '') || i.baslik;
+  const anahtar = kaynakAnahtari(i);
+  const kayitliMi = favoriSet.has(anahtar);
+  const favDugme = el('button', {
+    type: 'button',
+    sinif: 'fav-dugme',
+    'aria-pressed': String(kayitliMi),
+    title: kayitliMi ? 'Kaydedilenlerden çıkar' : 'Daha sonra hızlı erişmek için kaydet',
+    'aria-label': kayitliMi ? 'Kaydedilenlerden çıkar' : 'Kaydet',
+    onclick: (o) => {
+      o.stopPropagation();
+      if (favoriSet.has(anahtar)) favoriSet.delete(anahtar);
+      else favoriSet.add(anahtar);
+      favoriYaz(favoriSet);
+      const yeni = favoriSet.has(anahtar);
+      favDugme.setAttribute('aria-pressed', String(yeni));
+      favDugme.title = yeni ? 'Kaydedilenlerden çıkar' : 'Daha sonra hızlı erişmek için kaydet';
+      favDugme.textContent = yeni ? '★ Kayıtlı' : '☆ Kaydet';
+      if (typeof favoriDegisti === 'function') favoriDegisti();
+    },
+  }, kayitliMi ? '★ Kayıtlı' : '☆ Kaydet');
+
   const kart = el('article', { sinif: 'kart', 'data-renk': window.Kesif?.category(i.tur).color || 'mavi' },
     el('div', { sinif: 'ust-bilgi' },
       i.hafta && el('span', { sinif: 'etiket' }, `${i.hafta}. hafta`),
       i.sinif && el('span', { sinif: 'etiket' }, `${i.sinif}. sınıf`),
       dersAd && el('span', { sinif: 'etiket tur' }, dersAd),
-      i.tur && el('span', { sinif: `etiket ${i.kitle === 'ogretmen' ? 'ogretmen' : 'tur'}` }, i.tur)),
+      i.tur && el('span', { sinif: `etiket ${i.kitle === 'ogretmen' ? 'ogretmen' : 'tur'}` }, i.tur),
+      favDugme),
     el('h3', {}, baslik),
     i.aciklama && el('p', {}, i.aciklama),
     el('div', { sinif: 'eylemler' },
@@ -90,8 +119,28 @@ function icerikSayfasi({ dersler, icerikler }) {
   const sirala = $('#s-sirala');
   if (sirala && ['yeni', 'baslik', 'sinif'].includes(parametre.get('sirala'))) sirala.value = parametre.get('sirala');
   let gorunen = 12;
+  let yalnizFavori = parametre.get('favori') === '1';
   const kategoriAlan = $('#kategori-secimleri');
+  const hizliSuzgecler = $('#hizli-suzgecler');
+  const gorunumSecici = $('#gorunum-secici');
   const kategoriler = window.Kesif?.categories || [];
+
+  // Görünüm seçici (Kart / Kompakt Liste)
+  if (gorunumSecici) {
+    let aktifGorunum = 'kart';
+    try { if (localStorage.getItem(GORUNUM_ANAHTAR) === 'liste') aktifGorunum = 'liste'; } catch {}
+    const gorunumUygula = (kip) => {
+      aktifGorunum = kip;
+      $('#kartlar')?.classList.toggle('liste-gorunum', kip === 'liste');
+      $$('.gorunum-dugme', gorunumSecici).forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.gorunum === kip)));
+      try { localStorage.setItem(GORUNUM_ANAHTAR, kip); } catch {}
+    };
+    gorunumSecici.addEventListener('click', (o) => {
+      const b = o.target.closest('.gorunum-dugme');
+      if (b) gorunumUygula(b.dataset.gorunum);
+    });
+    gorunumUygula(aktifGorunum);
+  }
   alan.sinif.append(...Object.keys(dersler.siniflar).map((n) => el('option', { value: n }, `${n}. sınıf`)));
   const haftalar = [...new Set(icerikler.map((i) => Number(i.hafta)).filter((n) => Number.isInteger(n) && n > 0))].sort((a, b) => a - b);
   alan.hafta.append(...haftalar.map((n) => el('option', { value: String(n) }, `${n}. hafta`)));
@@ -131,22 +180,50 @@ function icerikSayfasi({ dersler, icerikler }) {
   };
   const hepsiniTemizle = () => {
     Object.values(alan).forEach((e) => { e.value = ''; });
+    yalnizFavori = false;
     dersSecenekleri(); turSecenekleri(); ciz();
     alan.sinif.focus();
+  };
+  const hizliCipGuncelle = (f) => {
+    if (!hizliSuzgecler) return;
+    const cipler = [
+      { id: 'tumu', ad: 'Tümü', aktif: !yalnizFavori && !f.sinif && !f.tur && !f.kitle, yap: () => { yalnizFavori = false; alan.sinif.value = ''; alan.kitle.value = ''; dersSecenekleri(); turSecenekleri(); alan.tur.value = ''; ciz(); } },
+      { id: 'favori', ad: `★ Kaydedilenler (${favoriSet.size})`, aktif: yalnizFavori, yap: () => { yalnizFavori = !yalnizFavori; ciz(); } },
+      { id: 'lgs', ad: '8. Sınıf · LGS', aktif: !yalnizFavori && f.sinif === '8' && !f.tur, yap: () => { yalnizFavori = false; alan.sinif.value = '8'; dersSecenekleri(); alan.tur.value = ''; ciz(); } },
+      { id: 'yks', ad: '12. Sınıf · YKS', aktif: !yalnizFavori && f.sinif === '12' && !f.tur, yap: () => { yalnizFavori = false; alan.sinif.value = '12'; dersSecenekleri(); alan.tur.value = ''; ciz(); } },
+      { id: 'ozet', ad: 'Konu Anlatımları', aktif: !yalnizFavori && f.tur === 'Konu anlatımı', yap: () => { yalnizFavori = false; alan.kitle.value = ''; turSecenekleri(); alan.tur.value = 'Konu anlatımı'; ciz(); } },
+      { id: 'calisma', ad: 'Çalışma Kâğıtları PDF', aktif: !yalnizFavori && f.tur === 'Çalışma kâğıdı', yap: () => { yalnizFavori = false; alan.kitle.value = ''; turSecenekleri(); alan.tur.value = 'Çalışma kâğıdı'; ciz(); } },
+      { id: 'plan', ad: 'Yıllık Planlar', aktif: !yalnizFavori && f.tur === 'Yıllık plan', yap: () => { yalnizFavori = false; alan.kitle.value = ''; turSecenekleri(); alan.tur.value = 'Yıllık plan'; ciz(); } },
+      { id: 'kitap', ad: 'Ders Kitapları', aktif: !yalnizFavori && f.tur === 'Ders kitabı', yap: () => { yalnizFavori = false; alan.kitle.value = ''; turSecenekleri(); alan.tur.value = 'Ders kitabı'; ciz(); } },
+    ];
+    hizliSuzgecler.replaceChildren(...cipler.map((c) => el('button', {
+      type: 'button',
+      sinif: `hizli-cip${c.id === 'favori' ? ' favori-cip' : ''}`,
+      'aria-pressed': String(c.aktif),
+      onclick: c.yap,
+    }, c.ad)));
+  };
+  favoriDegisti = () => {
+    const f = Object.fromEntries(Object.entries(alan).map(([a, e]) => [a, e.value.trim()]));
+    hizliCipGuncelle(f);
+    if (yalnizFavori) ciz();
   };
   const ciz = (daha = false) => {
     if (daha !== true) gorunen = 12;
     const f = Object.fromEntries(Object.entries(alan).map(([a, e]) => [a, e.value.trim()]));
-    const sonuc = icerikler.filter((i) => (!f.sinif || String(i.sinif) === f.sinif) && (!f.ders || i.ders === f.ders)
+    hizliCipGuncelle(f);
+    const sonuc = icerikler.filter((i) => (!yalnizFavori || favoriSet.has(kaynakAnahtari(i)))
+      && (!f.sinif || String(i.sinif) === f.sinif) && (!f.ders || i.ders === f.ders)
       && (!f.hafta || String(i.hafta) === f.hafta) && (!f.tur || i.tur === f.tur) && (!f.kitle || kitleUyar(i, f.kitle))
       && (!f.ara || aramaEslesir(`${i.baslik} ${i.aciklama} ${dersler.dersler[i.ders] || ''} ${i.tur}`, f.ara)))
       .sort((a, b) => sirala?.value === 'baslik' ? a.baslik.localeCompare(b.baslik, 'tr')
         : sirala?.value === 'sinif' ? Number(a.sinif || 0) - Number(b.sinif || 0) || a.baslik.localeCompare(b.baslik, 'tr')
         : String(b.tarih || '').localeCompare(String(a.tarih || '')));
     const url = new URLSearchParams(Object.entries(f).filter(([, d]) => d));
+    if (yalnizFavori) url.set('favori', '1');
     if (sirala && sirala.value !== 'yeni') url.set('sirala', sirala.value);
     history.replaceState(null, '', url.toString() ? `?${url}` : location.pathname);
-    const secili = Object.values(f).some(Boolean);
+    const secili = Object.values(f).some(Boolean) || yalnizFavori;
     $('#sonuc-sayi').textContent = `${sonuc.length} içerik`;
     $('#temizle').hidden = !secili;
     const suzgecSayi = $('#suzgec-sayi');

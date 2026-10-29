@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261029-1', 'yazili.js': '20261010-1', 'ortak.js': '20261029-1', 'tahta.js': '20261018-5', 'etkinlik.js': '20261017-9', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261013-2', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
+BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261029-2', 'yazili.js': '20261010-1', 'ortak.js': '20261029-2', 'tahta.js': '20261018-5', 'etkinlik.js': '20261017-9', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261029-2', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -29,7 +29,7 @@ SAYAC = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://s
 # Site ağacı (kullanıcı 11.10.2026): her sayfa kendi dalının kitlesini taşır (üst menü vurgusu, kayan şerit süzgeci).
 KITLE_OGRENCI = ('ogrenci.html', 'kelime.html', 'arapca.html', 'sinav.html')
 KITLE_OGRETMEN = ('ogretmen.html', 'planlar.html', 'yazili.html', 'belgeler.html', 'kpss.html', 'ders-dagitim.html')
-AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261029-1">'
+AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261029-2">'
 
 
 def kitle_bul(ad):
@@ -386,34 +386,43 @@ GOVDE = {
 
 
 def _sinav_govde():
-    """Sınavlar sayfası (LGS, YKS): veri/sinavlar.json + veri/belgeler.json'dan durağan HTML."""
+    """Sınavlar sayfası (LGS, YKS): veri/sinavlar.json + veri/belgeler.json'dan durağan HTML + canlı sayaç ve net hesaplayıcı."""
     import html as _h
     import json as _j
     sv = _j.loads((PUBLIC / 'veri' / 'sinavlar.json').read_text(encoding='utf-8'))
     bl = {b['kimlik']: b for g in _j.loads((PUBLIC / 'veri' / 'belgeler.json').read_text(encoding='utf-8'))['gruplar'] for b in g['belgeler']}
     e = _h.escape
     gecis = ''.join(f'<a href="#{x["kimlik"]}">{e(x["ad"])}</a>' for x in sv['sinavlar'])
+    gecis += '<a href="#net-hesaplayici">Net ve Başarı Hesaplayıcı</a>'
     bolumler = ''
     for n, x in enumerate(sv['sinavlar']):
         lgs = x['kimlik'] == 'lgs'
+        hedef_sinif = '8' if lgs else '12'
         kartlar = ''
         for o in x['oturumlar']:
-            satir = ''.join(
-                f'<tr><td><a href="/icerikler.html?{"sinif=8&amp;" if lgs else ""}ders={t[2]}">{e(t[0])}</a></td><td class="sayi">{t[1]}</td></tr>'
-                for t in o['testler'])
+            satir = ''
+            for t in o['testler']:
+                dk = e(t[2])
+                ozet_url = f'/ogrenci.html?sinif={hedef_sinif}&amp;ders={dk}'
+                calisma_url = f'/icerikler.html?{"sinif=8&amp;" if lgs else ""}ders={dk}&amp;tur=%C3%87al%C4%B1%C5%9Fma%20k%C3%A2%C4%9F%C4%B1d%C4%B1'
+                yazili_url = f'/ogrenci.html?sinif={hedef_sinif}&amp;ders={dk}#yaziliya-hazirlik'
+                satir += (f'<tr><td><a class="sinav-ders-ad" href="{ozet_url}">{e(t[0])}</a>'
+                          f'<span class="sinav-hizli"><a href="{ozet_url}">Konu Özeti</a><a href="{calisma_url}">Çalışma Kâğıdı</a><a href="{yazili_url}">Yazılı PDF</a></span></td>'
+                          f'<td class="sayi">{t[1]}</td></tr>')
             kartlar += (f'<article class="kart sinav-oturum"><h3>{e(o["ad"])}</h3>'
                         f'<p class="sinav-ozet"><b>{o["toplam"]}</b> soru · <b>{o["sure"]}</b> dakika</p>'
-                        f'<table class="sinav-tablo"><thead><tr><th>Test</th><th class="sayi">Soru</th></tr></thead><tbody>{satir}</tbody></table></article>')
+                        f'<table class="sinav-tablo"><thead><tr><th>Test ve hızlı çalışma</th><th class="sayi">Soru</th></tr></thead><tbody>{satir}</tbody></table></article>')
         belge = ''.join(
             f'<li><a href="/goruntule.html?b={k}">{e(bl[k]["baslik"])}</a><span>{e(bl[k].get("kaynak", ""))}</span></li>'
             for k in x['belgeler'] if k in bl)
         if lgs:
-            hazirlik = ('<li><a href="/sinif.html?no=8">8. sınıfın bütün dersleri</a></li>'
-                        '<li><a href="/icerikler.html?sinif=8&amp;tur=Konu%20anlat%C4%B1m%C4%B1">8. sınıf konu özetleri</a></li>'
-                        '<li><a href="/icerikler.html?sinif=8&amp;tur=Yaz%C4%B1l%C4%B1%20senaryosu">8. sınıf ortak yazılı senaryoları</a></li>')
+            hazirlik = ('<li><a href="/ogrenci.html?sinif=8">8. sınıfın bütün dersleri ve üniteleri</a></li>'
+                        '<li><a href="/icerikler.html?sinif=8&amp;tur=Konu%20anlat%C4%B1m%C4%B1">8. sınıf konu özetleri ve etkinlikler</a></li>'
+                        '<li><a href="/icerikler.html?sinif=8&amp;tur=%C3%87al%C4%B1%C5%9Fma%20k%C3%A2%C4%9F%C4%B1d%C4%B1">8. sınıf çalışma kâğıtları (PDF)</a></li>'
+                        '<li><a href="/yazili.html?sinif=8">8. sınıf ortak yazılı senaryoları ve kâğıtları</a></li>')
         else:
-            hazirlik = ''.join(f'<li><a href="/sinif.html?no={k}">{k}. sınıfın bütün dersleri</a></li>' for k in x['siniflar'])
-            hazirlik += '<li><a href="/icerikler.html?tur=Ders%20kitab%C4%B1">Lise ders kitapları</a></li>'
+            hazirlik = ''.join(f'<li><a href="/ogrenci.html?sinif={k}">{k}. sınıfın bütün dersleri ve üniteleri</a></li>' for k in x['siniflar'])
+            hazirlik += '<li><a href="/icerikler.html?tur=Ders%20kitab%C4%B1">Lise MEB ders kitapları</a></li>'
         bolumler += f'''  <section class="bolum{' koyu-zemin' if n % 2 else ''}" id="{x['kimlik']}">
     <div class="kap">
       <div class="bolum-bas"><div><p class="ust-baslik">{e(x['kurum'])} · {e(x['kim'])}</p><h2>{e(x['ad'])}: {e(x['uzun_ad'])}</h2><p>{e(x['not'])}</p></div></div>
@@ -425,15 +434,60 @@ def _sinav_govde():
     </div>
   </section>
 '''
+    sayac_ve_hesap = '''  <section class="bolum sinav-kokpit-bolum" aria-label="Sınav geri sayım panosu">
+    <div class="kap">
+      <div class="sinav-sayac-pano" id="sinav-sayac-pano">
+        <article class="sinav-sayac-kart lgs-kart">
+          <div class="ssk-ust"><span class="ssk-etiket">MEB · 8. Sınıf Merkezî Sınav</span><strong>LGS Hazırlık Takvimi</strong></div>
+          <div class="ssk-zaman" data-sinav-sayac="lgs"><b>Haziran 2027</b><span>50 Sözel (75 dk) + 40 Sayısal (80 dk) · Toplam 90 Soru</span></div>
+          <div class="ssk-cubuk" aria-hidden="true"><i data-sinav-cubuk="lgs" style="width:22%"></i></div>
+          <div class="ssk-eylemler">
+            <a class="dugme ana" href="/ogrenci.html?sinif=8">8. Sınıf Dersleri</a>
+            <a class="dugme" href="#net-hesaplayici" data-hesap-sec="lgs">LGS Net Hesapla ↓</a>
+          </div>
+        </article>
+        <article class="sinav-sayac-kart yks-kart">
+          <div class="ssk-ust"><span class="ssk-etiket">ÖSYM · 12. Sınıf &amp; Mezun</span><strong>YKS (TYT · AYT · YDT) Takvimi</strong></div>
+          <div class="ssk-zaman" data-sinav-sayac="yks"><b>Haziran 2027</b><span>TYT 120 Soru (165 dk) · AYT 160 Soru (180 dk)</span></div>
+          <div class="ssk-cubuk" aria-hidden="true"><i data-sinav-cubuk="yks" style="width:22%"></i></div>
+          <div class="ssk-eylemler">
+            <a class="dugme ana" href="/ogrenci.html?sinif=12">12. Sınıf Dersleri</a>
+            <a class="dugme" href="#net-hesaplayici" data-hesap-sec="tyt">TYT Net Hesapla ↓</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+'''
+    hesaplayici = '''  <section class="bolum koyu-zemin" id="net-hesaplayici" aria-labelledby="nh-baslik">
+    <div class="kap">
+      <div class="bolum-bas">
+        <div>
+          <p class="ust-baslik">Deneme analizi ve çalışma rehberi</p>
+          <h2 id="nh-baslik">LGS ve YKS (TYT) Net &amp; Başarı Hesaplayıcı</h2>
+          <p>Deneme sınavındaki doğru ve yanlış sayılarını gir; branş netlerin, başarı yüzdelerin ve öncelikli çalışman gereken ders anında hesaplansın.</p>
+        </div>
+        <div class="nh-sekmeler" role="tablist" aria-label="Sınav türü">
+          <button type="button" role="tab" class="nh-sekme" data-nh-tur="lgs" aria-selected="true">LGS (8. Sınıf · 3Y=1D)</button>
+          <button type="button" role="tab" class="nh-sekme" data-nh-tur="tyt" aria-selected="false">YKS – TYT (4Y=1D)</button>
+        </div>
+      </div>
+      <div class="nh-duzen" id="nh-duzen">
+        <div class="nh-tablo-kutu" id="nh-tablo-kutu"></div>
+        <aside class="nh-ozet-kutu" id="nh-ozet-kutu" aria-live="polite"></aside>
+      </div>
+    </div>
+  </section>
+'''
     return f'''  <section class="sayfa-bas">
     <div class="kap">
       <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>Sınavlar</span></nav>
-      <h1>Sınavlar</h1>
-      <p>LGS ve YKS'nin oturumları, testleri ve soru sayıları; çıkmış sorular, kılavuzlar ve sitedeki hazırlık kaynakları. Bilgiler resmî belgelerden alınmıştır; yeni yılın belgeleri yayımlanınca güncellenir.</p>
+      <h1>Sınavlar: LGS ve YKS Hazırlık Merkezi</h1>
+      <p>LGS ve YKS oturumları, test-soru dağılımları, deneme net hesaplayıcı, çıkmış sorular ve branş bazlı doğrudan konu özeti / çalışma kâğıdı bağlantıları.</p>
       <nav class="sinif-gecis" aria-label="Sınavlar">{gecis}</nav>
     </div>
   </section>
-{bolumler}'''
+{sayac_ve_hesap}{bolumler}{hesaplayici}'''
 
 
 GOVDE['planlar.html'] = ('Günlük planlar', 'Günlük ders planları: Okul, öğretmen, müdür yardımcısı ve müdür adları her sayfaya yazılır. Plan tüm yıl ya da ay ay, Word veya PDF olarak indirilir.', '''  <section class="sayfa-bas plan-bas">
