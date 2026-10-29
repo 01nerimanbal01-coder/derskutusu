@@ -1532,6 +1532,114 @@ body.sunum-iri .ozet-bolum h2 { font-size: 31px !important; }
 .yd-cikti-suzgec .agac-suzgec-arama svg { width: 16px; height: 16px; color: var(--soluk); flex: none; }
 .yd-cikti-ara-girdi { width: 100%; border: 0; background: transparent; color: var(--metin); font: inherit; font-size: 14px; outline: none; }
 
+/* ASDS — Akademik Süreç Değerlendirme Sınavları (5, 6, 7 ve 8. Sınıf Ayrı Başlıklar + Cevapsız/Cevaplı A & B Kitapçıkları) */
+.asds-ana-bolum { padding-top: 8px; }
+.asds-kontrol-pano { display: flex; flex-direction: column; gap: 14px; padding: 18px 20px; border-radius: 20px;
+  background: var(--yuzey); border: 1.5px solid var(--cizgi); box-shadow: var(--golge); margin-bottom: 28px; }
+.asds-sinif-sekmeler { display: flex; flex-wrap: wrap; gap: 8px; }
+.asds-sekme { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 12px;
+  border: 1.5px solid var(--cizgi); background: var(--zemin-2); color: var(--metin); font: inherit; font-size: 14px;
+  font-weight: 750; cursor: pointer; transition: transform .14s, border-color .14s, background .14s, color .14s; }
+.asds-sekme:hover { border-color: var(--vurgu); transform: translateY(-1px); }
+.asds-sekme strong { font-weight: 800; }
+.asds-sekme small { font-size: 11.5px; font-weight: 700; padding: 2px 7px; border-radius: 999px; background: var(--yuzey); color: var(--soluk); }
+.asds-sekme.aktif { background: linear-gradient(135deg, var(--vurgu), #1d4ed8); color: #fff; border-color: var(--vurgu); box-shadow: 0 6px 16px rgb(36 81 214 / .24); }
+.asds-sekme.aktif small { background: rgb(255 255 255 / .2); color: #fff; }
+
+.asds-suzgec-satir { display: flex; align-items: center; justify-content: space-between; gap: 10px 14px; flex-wrap: wrap; }
+.asds-arama-kutu { display: flex; align-items: center; gap: 8px; flex: 1 1 280px; min-height: 42px; padding: 0 13px;
+  border-radius: 12px; background: var(--zemin-2); border: 1px solid var(--cizgi); }
+.asds-arama-kutu svg { width: 17px; height: 17px; color: var(--soluk); flex: none; }
+.asds-arama-girdi { width: 100%; border: 0; background: transparent; color: var(--metin); font: inherit; font-size: 14px; outline: none; }
+.asds-hafta-secim-kapsayici { display: flex; align-items: center; gap: 8px; }
+.asds-hafta-etiket { font-size: 13px; font-weight: 750; color: var(--soluk); white-space: nowrap; }
+.asds-hafta-secim { min-height: 42px; padding: 0 12px; border-radius: 12px; border: 1px solid var(--cizgi);
+  background: var(--zemin-2); color: var(--metin); font: inherit; font-size: 13.5px; font-weight: 700; cursor: pointer; }
+.asds-sayac-etiket { font-size: 13px; font-weight: 750; color: var(--soluk); white-space: nowrap; }
+
+.asds-baslik-gecis { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding-top: 10px; border-top: 1px dashed var(--cizgi); }
+.asds-gecis-etiket { font-size: 12.5px; font-weight: 750; color: var(--soluk); margin-right: 4px; }
+.asds-gecis-bag { display: inline-flex; align-items: center; min-height: 32px; padding: 0 12px; border-radius: 999px;
+  font-size: 12.5px; font-weight: 750; background: var(--zemin-2); color: var(--metin); border: 1px solid var(--cizgi); text-decoration: none; }
+.asds-gecis-bag:hover { border-color: var(--vurgu); color: var(--vurgu); background: var(--vurgu-acik); text-decoration: none; }
+
+.asds-sinif-bolum { margin-bottom: 36px; padding: 24px; border-radius: 24px; background: var(--yuzey);
+  border: 1.5px solid var(--cizgi); box-shadow: var(--golge); scroll-margin-top: 90px; }
+.asds-sinif-bolum[data-renk="yesil"] { border-top: 5px solid #16a34a; }
+.asds-sinif-bolum[data-renk="turuncu"] { border-top: 5px solid #ea580c; }
+.asds-sinif-bolum[data-renk="mor"] { border-top: 5px solid #7c3aed; }
+.asds-sinif-bolum[data-renk="lacivert"] { border-top: 5px solid #2563eb; }
+
+.asds-sinif-baslik { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px 24px; flex-wrap: wrap;
+  padding-bottom: 18px; margin-bottom: 20px; border-bottom: 1px solid var(--cizgi); }
+.asds-sinif-baslik-sol { display: flex; align-items: flex-start; gap: 14px; flex: 1 1 320px; }
+.asds-sinif-rozet { display: inline-flex; align-items: center; justify-content: center; min-width: 78px; height: 46px;
+  padding: 0 14px; border-radius: 14px; font-size: 15px; font-weight: 850; color: #fff; background: var(--vurgu); flex: none; }
+.asds-sinif-bolum[data-renk="yesil"] .asds-sinif-rozet { background: linear-gradient(135deg, #16a34a, #15803d); }
+.asds-sinif-bolum[data-renk="turuncu"] .asds-sinif-rozet { background: linear-gradient(135deg, #ea580c, #c2410c); }
+.asds-sinif-bolum[data-renk="mor"] .asds-sinif-rozet { background: linear-gradient(135deg, #7c3aed, #6d28d9); }
+.asds-sinif-bolum[data-renk="lacivert"] .asds-sinif-rozet { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+
+.asds-sinif-baslik-sol h3 { margin: 0 0 4px; font-size: clamp(19px, 2.2vw, 23px); font-weight: 850; color: var(--metin); }
+.asds-sinif-baslik-sol p { margin: 0; font-size: 13.5px; color: var(--soluk); line-height: 1.5; }
+.asds-ders-etiketler { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.asds-ders-cip { display: inline-flex; align-items: center; gap: 4px; padding: 5px 11px; border-radius: 999px;
+  font-size: 12px; font-weight: 700; background: var(--zemin-2); color: var(--metin); border: 1px solid var(--cizgi); }
+.asds-ders-cip b { color: var(--vurgu); font-weight: 800; }
+
+.asds-kartlar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.asds-kart { display: flex; flex-direction: column; gap: 12px; padding: 18px; border-radius: 18px;
+  background: var(--zemin-2); border: 1px solid var(--cizgi); transition: border-color .15s, box-shadow .15s; }
+.asds-kart:hover { border-color: color-mix(in srgb, var(--vurgu) 45%, var(--cizgi)); box-shadow: var(--golge); }
+.asds-kart-ust { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.asds-deneme-no { display: inline-flex; align-items: center; padding: 4px 10px; border-radius: 8px; font-size: 12px;
+  font-weight: 800; background: var(--vurgu-acik); color: var(--vurgu); }
+.asds-hafta-ad { font-size: 12.5px; font-weight: 700; color: var(--soluk); }
+.asds-kart-baslik { margin: 0; font-size: 16.5px; font-weight: 800; color: var(--metin); line-height: 1.35; }
+.asds-kart-meta { margin: 0; font-size: 13px; color: var(--soluk); line-height: 1.45; }
+
+.asds-kitapcik-izgara { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 2px; }
+.asds-kitapcik-kutu { padding: 12px; border-radius: 14px; background: var(--yuzey); border: 1px solid var(--cizgi); }
+.asds-kitapcik-kutu.cevapsiz-kutu { border-left: 4px solid #2563eb; }
+.asds-kitapcik-kutu.cevapli-kutu { border-left: 4px solid #16a34a; background: color-mix(in srgb, #16a34a 5%, var(--yuzey)); }
+.asds-kutu-baslik { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: .03em; margin-bottom: 9px; color: var(--metin); }
+.asds-kutu-nokta { width: 8px; height: 8px; border-radius: 999px; flex: none; }
+.asds-kutu-nokta.cevapsiz { background: #2563eb; }
+.asds-kutu-nokta.cevapli { background: #16a34a; }
+
+.asds-dugme-grup { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.asds-dugme-grup.uclu { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.asds-pdf-dugme { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 10px;
+  border: 1px solid var(--cizgi); background: var(--zemin-2); color: var(--metin); text-decoration: none;
+  transition: transform .12s, border-color .12s, background .12s; min-width: 0; }
+.asds-pdf-dugme:hover { transform: translateY(-1px); text-decoration: none; border-color: var(--vurgu); background: var(--vurgu-acik); }
+.asds-pdf-dugme.cevapli:hover { border-color: #16a34a; background: color-mix(in srgb, #16a34a 12%, var(--yuzey)); }
+.asds-pdf-dugme.anahtar:hover { border-color: #d97706; background: color-mix(in srgb, #d97706 12%, var(--yuzey)); }
+
+.asds-harf { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px;
+  border-radius: 8px; font-size: 13px; font-weight: 850; color: #fff; background: #2563eb; flex: none; }
+.asds-harf.b-kitapcik { background: #4f46e5; }
+.asds-harf.cevapli-harf { background: #16a34a; }
+.asds-harf.anahtar-harf { background: #d97706; font-size: 11px; }
+.asds-dugme-metin { display: flex; flex-direction: column; min-width: 0; line-height: 1.2; }
+.asds-dugme-metin strong { font-size: 12.5px; font-weight: 800; color: var(--metin); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.asds-dugme-metin small { font-size: 11px; color: var(--soluk); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.asds-detay-kutu { margin-top: auto; padding-top: 6px; border-top: 1px dashed var(--cizgi); }
+.asds-detay-kutu summary { font-size: 12.5px; font-weight: 750; color: var(--vurgu); cursor: pointer; user-select: none; }
+.asds-kapsam-liste { margin: 8px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: var(--soluk); }
+.asds-kapsam-liste strong { color: var(--metin); }
+
+@media (max-width: 960px) {
+  .asds-kartlar { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .asds-sinif-bolum { padding: 16px; }
+  .asds-dugme-grup, .asds-dugme-grup.uclu { grid-template-columns: 1fr; }
+}
+
+
 
 
 

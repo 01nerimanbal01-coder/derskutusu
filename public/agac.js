@@ -45,7 +45,10 @@
         i.goruntule ? el('a', { sinif: 'dugme ana', href: yol(i.goruntule) }, 'Aç', simge('ok')) : null,
         i.goruntule && i.tur === 'Ders kitabı' ? el('a', { sinif: 'dugme', href: `${yol(i.goruntule)}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç') : null,
         i.hazirla ? el('a', { sinif: 'dugme ana', href: yol(i.hazirla) }, 'Hazırla ve indir', simge('indir')) : null,
-        !i.hazirla && i.dosya ? el('a', { sinif: 'dugme', href: yol(i.dosya), download: '' }, /\.pdf$/i.test(i.dosya) ? 'PDF indir' : 'İndir', simge('indir')) : null,
+        !i.hazirla && i.dosya ? el('a', { sinif: 'dugme', href: yol(i.dosya), download: '' }, i.dosya_b ? 'A (Cevapsız)' : (/\.pdf$/i.test(i.dosya) ? 'PDF indir' : 'İndir'), simge('indir')) : null,
+        i.dosya_b ? el('a', { sinif: 'dugme', href: yol(i.dosya_b), download: '' }, 'B (Cevapsız)', simge('indir')) : null,
+        i.dosya_a_cevapli ? el('a', { sinif: 'dugme', href: yol(i.dosya_a_cevapli), download: '' }, 'A (Cevaplı)', simge('onay')) : null,
+        i.dosya_b_cevapli ? el('a', { sinif: 'dugme', href: yol(i.dosya_b_cevapli), download: '' }, 'B (Cevaplı)', simge('onay')) : null,
         !i.hazirla && !i.dosya && !i.goruntule && i.baglanti ? el('a', { sinif: 'dugme ana', href: i.baglanti, target: '_blank', rel: 'noopener' }, 'Aç', simge('ok')) : null));
   };
   const kartlar = (liste, dersler, secenek) => el('div', { sinif: 'agac-kartlar' }, liste.map((i) => kart(i, dersler, secenek)));
@@ -130,7 +133,7 @@
   const ARACLAR_OGRENCI = [
     { ad: 'İngilizce kelime çalışması', alt: '5 ve 6. sınıf · kart, dinleme, test', href: '/kelime.html', simge: 'ses', renk: 'lacivert' },
     { ad: 'Arapça harf ve kelime', alt: 'Harfler, harekeler, kartlar', href: '/arapca.html', simge: 'kalem', renk: 'turkuaz' },
-    { ad: 'Sınavlar: LGS ve YKS', alt: 'Oturumlar, kılavuzlar, kaynaklar', href: '/sinav.html', simge: 'onay', renk: 'pembe' },
+    { ad: 'Sınavlar: ASDS, LGS ve YKS', alt: '5–8. sınıf A/B cevapsız ve cevaplı deneme kitapçıkları', href: '/sinav.html#asds-bolum-kapsayici', simge: 'onay', renk: 'pembe' },
     { ad: 'Öğrenci kütüphanesi', alt: 'Bütün öğrenci içeriklerinde ara', href: '/icerikler.html?kitle=ogrenci', simge: 'mercek', renk: 'mor' },
   ];
   const aracKarti = (a) => el('a', { sinif: 'agac-arac', href: a.href, 'data-renk': a.renk },
@@ -255,10 +258,17 @@
         el('span', { sinif: 'agac-basla' }, 'Başla', el('span', { 'aria-hidden': 'true' }, ' →')));
     };
     const secmeli = dersler.secmeli?.[n] || [];
+    const asdsKart = (n >= 5 && n <= 8) ? el('a', { sinif: 'agac-ders', href: `/sinav.html?sinif=${n}#asds-sinif-${n}`, 'data-renk': K().gradeColor(n) },
+      el('span', { sinif: 'agac-ders-harf', 'aria-hidden': 'true' }, simge('onay')),
+      el('span', { sinif: 'agac-ders-govde' },
+        el('strong', {}, `${n}. Sınıf ASDS Deneme Sınavları`),
+        el('small', {}, 'Haftalık Akademik Süreç Değerlendirme Sınavları · 45 soru · 40 dk'),
+        el('span', { sinif: 'agac-ders-icerik' }, 'A & B Kitapçığı (Cevapsız PDF) · A & B Kitapçığı (Cevaplı PDF) · Cevap Anahtarı')),
+      el('span', { sinif: 'agac-basla' }, 'Denemeler', el('span', { 'aria-hidden': 'true' }, ' →'))) : null;
     yerles(
       basBolum([DAL_YOL, { ad: `${n}. sınıf` }], 'Öğrenci', `${n}. Sınıf Dersleri`, 'Dersini seç: üniteler ve konular yıllık plana göre sıralı.',
         sinifGecis(dersler, n, (s) => adres({ sinif: s }))),
-      bolum('', el('div', { sinif: 'agac-dersler' }, dersler.siniflar[n].map(dersKarti))),
+      bolum('', el('div', { sinif: 'agac-dersler' }, [...dersler.siniflar[n].map(dersKarti), asdsKart])),
       secmeli.length ? bolum('koyu-zemin', baslikSatiri('Seçmeli dersler'), el('div', { sinif: 'agac-dersler' }, secmeli.map(dersKarti))) : null,
       ogr.length ? bolum('', baslikSatiri(`${n}. sınıfa son eklenenler`, null, el('a', { sinif: 'tumu', href: `/icerikler.html?kitle=ogrenci&sinif=${n}` }, 'Tümünü gör', simge('ok'))),
         kartlar(yeniler(ogr).slice(0, 6), dersler, { dersGoster: true })) : null);
@@ -509,6 +519,7 @@
     { kod: 'ders-dagitim', ad: 'Ders dağıtım programı', aciklama: 'Öğretmen, sınıf ve derslerden haftalık ders programı; PDF ve Excel çıktı, veriler tarayıcıda.', simge: 'takvim', renk: 'turuncu', sayfa: '/ders-dagitim.html' },
     { kod: 'yillik-plan', tur: 'Yıllık plan', ad: 'Yıllık planlar', aciklama: 'Güncel öğretim programına göre haftalık yıllık planlar.', simge: 'takvim', renk: 'mavi' },
     { kod: 'yazili', tur: 'Yazılı senaryosu', ad: 'Yazılı senaryoları ve kâğıtları', aciklama: 'Ortak yazılı konu-soru dağılımları ve cevaplı yazılı kâğıtları.', simge: 'onay', renk: 'pembe', sayfa: '/yazili.html' },
+    { kod: 'asds-deneme', tur: 'Deneme sınavı', ad: 'ASDS Deneme Sınavları (5–8. Sınıf)', aciklama: 'Her sınıf için ayrı başlıkta A ve B kitapçıkları (cevapsız, cevaplı ve cevap anahtarı PDF).', simge: 'onay', renk: 'lacivert', sayfa: '/sinav.html#asds-bolum-kapsayici' },
     { kod: 'ogretim-programi', tur: 'Öğretim programı', ad: 'Öğretim programları', aciklama: 'Öğrenme çıktıları, süreç bileşenleri ve açıklamalar.', simge: 'kitap', renk: 'turkuaz' },
     { kod: 'calisma-kagidi', tur: 'Çalışma kâğıdı', ad: 'Çalışma kâğıtları', aciklama: 'Derste kullanmak için cevaplı ve cevapsız PDF.', simge: 'kalem', renk: 'yesil' },
     { kod: 'belgeler', ad: 'Resmî belgeler', aciklama: 'MEB, ÖDSGM, DÖGM ve ÖSYM kılavuzları ve tabloları.', simge: 'kitap', renk: 'lacivert', sayfa: '/belgeler.html' },
@@ -600,7 +611,9 @@
         eylemKarti('onay', 'pembe', 'Ortak Yazılı & Cevaplı Kâğıtlar', `${secSinif}. Sınıf ${dersAd} senaryoları ve cevap anahtarlı PDF'ler`, `/yazili.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}`, 'Senaryo & PDF'),
         eylemKarti('kalem', 'yesil', 'Çalışma Kâğıtları', calismalar.length ? `${calismalar.length} haftalık çalışma kâğıdı (cevaplı & cevapsız)` : 'Derste kullanmak için çalışma yaprakları', `/icerikler.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}&tur=${encodeURIComponent('Çalışma kâğıdı')}`, calismalar.length ? `${calismalar.length} PDF` : 'Kütüphane'),
         eylemKarti('kitap', renk, 'Konu Anlatımları & Sunum', ag ? `${ag.unite} ünite · ${ag.konu} konu · Akıllı tahta sunum modu` : `${ozetler.length} haftalık konu özeti`, `/ogrenci.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}`, ozetler.length ? `${ozetler.length} hafta` : 'Üniteler'),
-        eylemKarti('kitap', 'turkuaz', 'Ders Kitabı & Öğretim Programı', dersKitabi ? 'MEB ders kitabı ve TYMM öğrenme çıktıları' : 'TYMM öğretim programı ve resmî belgeler', dersKitabi ? yol(dersKitabi.goruntule || dersKitabi.baglanti) : (ogretimProg ? yol(ogretimProg.goruntule || ogretimProg.dosya) : '/belgeler.html'), dersKitabi ? 'Kitabı Aç' : 'Program')
+        (secSinif >= 5 && secSinif <= 8)
+          ? eylemKarti('onay', 'lacivert', 'ASDS Deneme Sınavları (A & B)', `${secSinif}. Sınıf cevapsız ve cevaplı A/B kitapçıkları + anahtar`, `/sinav.html?sinif=${secSinif}#asds-sinif-${secSinif}`, 'A/B PDF')
+          : eylemKarti('kitap', 'turkuaz', 'Ders Kitabı & Öğretim Programı', dersKitabi ? 'MEB ders kitabı ve TYMM öğrenme çıktıları' : 'TYMM öğretim programı ve resmî belgeler', dersKitabi ? yol(dersKitabi.goruntule || dersKitabi.baglanti) : (ogretimProg ? yol(ogretimProg.goruntule || ogretimProg.dosya) : '/belgeler.html'), dersKitabi ? 'Kitabı Aç' : 'Program')
       );
 
       haftaKutu.replaceChildren(el('p', { sinif: 'ogt-hafta-yukleniyor' }, `${secSinif}. Sınıf ${dersAd} bu haftanın ders planı kontrol ediliyor…`));

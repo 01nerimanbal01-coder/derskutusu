@@ -4,6 +4,7 @@
   const categories = [
     ['Konu anlatımı', 'Konu anlatımları', 'Konuyu öğren, slaytla birlikte işle.', 'kitap', 'mor'],
     ['Çalışma kâğıdı', 'Çalışma kâğıtları', 'Pekiştir, çöz ve yazdır.', 'kalem', 'yesil'],
+    ['Deneme sınavı', 'Deneme sınavları (ASDS)', 'Cevapsız ve cevaplı A/B kitapçıkları.', 'onay', 'lacivert'],
     ['Ders planı', 'Günlük planlar', 'Dersine hazırlan; Word veya PDF al.', 'takvim', 'turuncu'],
     ['Yıllık plan', 'Yıllık planlar', 'Öğretim yılını hafta hafta planla.', 'takvim', 'mavi'],
     ['Yazılı senaryosu', 'Yazılı senaryoları', 'Konu ve soru dağılımını incele.', 'onay', 'pembe'],
@@ -109,7 +110,7 @@
     };
     const groups = [
       ['Öğren', 'Konuya ilk adım', ['Konu anlatımı', 'Ders kitabı']],
-      ['Pekiştir', 'Öğrendiklerini uygula', ['Çalışma kâğıdı', 'Kelime çalışması']],
+      ['Pekiştir', 'Öğrendiklerini uygula', ['Çalışma kâğıdı', 'Deneme sınavı', 'Kelime çalışması']],
       ['Derse hazırlan', 'Planla, takip et, değerlendir', ['Ders planı', 'Yıllık plan', 'Yazılı senaryosu', 'Öğretim programı']],
     ];
     grid.replaceChildren(...groups.map(([title, description, types]) =>

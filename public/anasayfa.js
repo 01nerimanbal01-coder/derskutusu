@@ -73,11 +73,12 @@
         const yer = document.querySelector(`[data-vitrin-sayi="${kod}"]`);
         if (yer) yer.textContent = metin;
       };
+      const denemeSay = icerikler.filter((i) => i.tur === 'Deneme sınavı').length;
       if (ozetler.length) yaz('ozet', `${ozetler.length.toLocaleString('tr-TR')} haftalık konu özeti · sesli & etkileşimli`);
       if (calismalar.length) yaz('calisma', `${calismalar.length.toLocaleString('tr-TR')} çalışma kâğıdı · cevapsız & cevaplı PDF`);
       if (toplamYazili) yaz('yazili', `${toplamYazili.toLocaleString('tr-TR')} yazılı PDF · senaryo & öğrenme çıktısı`);
       if (planSay) yaz('plan', `${planSay.toLocaleString('tr-TR')}+ yıllık ve günlük plan · Word & PDF`);
-      yaz('sinav', '8. Sınıf LGS · 12. Sınıf YKS hazırlık ve konu dağılımı');
+      yaz('sinav', denemeSay ? `${denemeSay} ASDS deneme sınavı (5–8. sınıf A/B cevapsız & cevaplı) · LGS & YKS` : '5–8. Sınıf ASDS Deneme Sınavları · LGS & YKS');
       if (belgeSay) yaz('belge', `${belgeSay.toLocaleString('tr-TR')} MEB ders kitabı, öğretim programı & kılavuz`);
     };
     vitrinGuncelle();
@@ -155,8 +156,32 @@
         smSinifBag.href = `/ogrenci.html?sinif=${sinif}`;
         smSinifBag.replaceChildren(`${sinif}. sınıfın bütün dersleri `, simge('ok'));
       }
+      const asdsKart = (sinif >= 5 && sinif <= 8) ? (() => {
+        const asdsHref = `/sinav.html?sinif=${sinif}#asds-sinif-${sinif}`;
+        const asdsSay = icerikler.filter((i) => i.tur === 'Deneme sınavı' && Number(i.sinif) === sinif).length || 8;
+        return el('article', { sinif: 'sm-ders-kart', 'data-renk': K().gradeColor(sinif) },
+          el('a', { sinif: 'sm-ders-ust', href: asdsHref },
+            el('span', { sinif: 'sm-ders-simge', 'aria-hidden': 'true' }, simge('onay')),
+            el('span', { sinif: 'sm-ders-baslik' },
+              el('strong', {}, `${sinif}. Sınıf ASDS Deneme Sınavları`),
+              el('small', {}, `${asdsSay} haftalık sınav · A & B Kitapçığı (Cevapsız ve Cevaplı)`)),
+            el('span', { sinif: 'sm-ders-ac', 'aria-hidden': 'true' }, 'Denemeler →')),
+          el('div', { sinif: 'sm-eylemler', role: 'group', 'aria-label': `${sinif}. Sınıf ASDS Deneme Sınavları hızlı erişim` },
+            el('a', { sinif: 'sm-eylem', 'data-tur': 'ozet', href: asdsHref },
+              el('span', { sinif: 'sm-eylem-ad' }, simge('indir'), 'A & B Cevapsız Kitapçık'),
+              el('b', { sinif: 'sm-eylem-sayi' }, `${asdsSay * 2} PDF`)),
+            el('a', { sinif: 'sm-eylem', 'data-tur': 'calisma', href: asdsHref },
+              el('span', { sinif: 'sm-eylem-ad' }, simge('onay'), 'A & B Cevaplı Kitapçık'),
+              el('b', { sinif: 'sm-eylem-sayi' }, `${asdsSay * 2} PDF`)),
+            el('a', { sinif: 'sm-eylem', 'data-tur': 'yazili', href: asdsHref },
+              el('span', { sinif: 'sm-eylem-ad' }, simge('kalem'), 'Cevap Anahtarları (A/B)'),
+              el('b', { sinif: 'sm-eylem-sayi' }, `${asdsSay} PDF`)),
+            el('a', { sinif: 'sm-eylem', 'data-tur': 'plan', href: `/icerikler.html?sinif=${sinif}&tur=${encodeURIComponent('Deneme sınavı')}` },
+              el('span', { sinif: 'sm-eylem-ad' }, simge('kitap'), 'Kütüphanede Gör'),
+              el('b', { sinif: 'sm-eylem-sayi' }, 'Tümü'))));
+      })() : null;
       smDersler.replaceChildren(
-        el('div', { sinif: 'sm-izgara' }, anaDersler.map((d) => smDersKarti(sinif, d, false))),
+        el('div', { sinif: 'sm-izgara' }, [...anaDersler.map((d) => smDersKarti(sinif, d, false)), asdsKart]),
         secmeliDersler.length ? el('details', { sinif: 'sm-secmeli-kutusu' },
           el('summary', {}, `${sinif}. sınıf seçmeli dersler (${secmeliDersler.length} ders)`),
           el('div', { sinif: 'sm-izgara secmeli' }, secmeliDersler.map((d) => smDersKarti(sinif, d, true)))) : null

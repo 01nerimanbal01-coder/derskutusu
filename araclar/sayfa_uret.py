@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261029-2', 'yazili.js': '20261010-1', 'ortak.js': '20261029-2', 'tahta.js': '20261018-5', 'etkinlik.js': '20261017-9', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261029-2', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1'}
+BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261029-3', 'yazili.js': '20261010-1', 'ortak.js': '20261029-3', 'tahta.js': '20261018-5', 'etkinlik.js': '20261017-9', 'arama.js': '20261004-duzen1', 'kutuphane.js': '20261029-3', 'arapca.js': '202610061430', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261013-1', 'asds.js': '20261029-1'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -392,7 +392,14 @@ def _sinav_govde():
     sv = _j.loads((PUBLIC / 'veri' / 'sinavlar.json').read_text(encoding='utf-8'))
     bl = {b['kimlik']: b for g in _j.loads((PUBLIC / 'veri' / 'belgeler.json').read_text(encoding='utf-8'))['gruplar'] for b in g['belgeler']}
     e = _h.escape
-    gecis = ''.join(f'<a href="#{x["kimlik"]}">{e(x["ad"])}</a>' for x in sv['sinavlar'])
+    gecis = (
+        '<a href="#asds-bolum-kapsayici">Haftalık Denemeler (ASDS)</a>'
+        '<a href="#asds-sinif-5">5. Sınıf Denemeleri</a>'
+        '<a href="#asds-sinif-6">6. Sınıf Denemeleri</a>'
+        '<a href="#asds-sinif-7">7. Sınıf Denemeleri</a>'
+        '<a href="#asds-sinif-8">8. Sınıf (LGS) Denemeleri</a>'
+    )
+    gecis += ''.join(f'<a href="#{x["kimlik"]}">{e(x["ad"])} Rehberi</a>' for x in sv['sinavlar'])
     gecis += '<a href="#net-hesaplayici">Net ve Başarı Hesaplayıcı</a>'
     bolumler = ''
     for n, x in enumerate(sv['sinavlar']):
@@ -479,15 +486,30 @@ def _sinav_govde():
     </div>
   </section>
 '''
+    asds_bolumu = '''  <section class="bolum asds-ana-bolum" id="asds-bolum-kapsayici" aria-labelledby="asds-ana-baslik">
+    <div class="kap">
+      <div class="bolum-bas">
+        <div>
+          <p class="ust-baslik">5, 6, 7 ve 8. Sınıf Haftalık Deneme Sınavları · A &amp; B Kitapçığı</p>
+          <h2 id="asds-ana-baslik">Akademik Süreç Değerlendirme Sınavları (ASDS)</h2>
+          <p>Her bir sınıf için ayrı başlık altında; sınav uygulaması için <b>Cevapsız A ve B Kitapçıkları</b> ile öğretmen ve çözüm kontrolü için <b>Cevaplı A ve B Kitapçıkları + Cevap Anahtarı (PDF)</b> yer alır.</p>
+        </div>
+      </div>
+      <div id="asds-bolum" class="asds-bolum-kutu">
+        <p role="status">Deneme sınavları ve kitapçıklar yükleniyor…</p>
+      </div>
+    </div>
+  </section>
+'''
     return f'''  <section class="sayfa-bas">
     <div class="kap">
-      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>Sınavlar</span></nav>
-      <h1>Sınavlar: LGS ve YKS Hazırlık Merkezi</h1>
-      <p>LGS ve YKS oturumları, test-soru dağılımları, deneme net hesaplayıcı, çıkmış sorular ve branş bazlı doğrudan konu özeti / çalışma kâğıdı bağlantıları.</p>
+      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>Sınavlar ve Denemeler</span></nav>
+      <h1>Sınavlar ve Haftalık Deneme Sınavları (ASDS · LGS · YKS)</h1>
+      <p>5, 6, 7 ve 8. sınıf haftalık Akademik Süreç Değerlendirme Sınavları (Cevapsız &amp; Cevaplı A ve B kitapçıkları), LGS/YKS oturum dağılımları ve etkileşimli net hesaplayıcı.</p>
       <nav class="sinif-gecis" aria-label="Sınavlar">{gecis}</nav>
     </div>
   </section>
-{sayac_ve_hesap}{bolumler}{hesaplayici}'''
+{asds_bolumu}{sayac_ve_hesap}{bolumler}{hesaplayici}'''
 
 
 GOVDE['planlar.html'] = ('Günlük planlar', 'Günlük ders planları: Okul, öğretmen, müdür yardımcısı ve müdür adları her sayfaya yazılır. Plan tüm yıl ya da ay ay, Word veya PDF olarak indirilir.', '''  <section class="sayfa-bas plan-bas">
@@ -681,7 +703,7 @@ GOVDE['ogretmen.html'] = ('Öğretmen Köşesi', 'Öğretmen Köşesi: günlük 
       </ul>
       <p role="status">Yükleniyor…</p>
     </div></section></div>''', ('agac.js',))
-GOVDE['sinav.html'] = ('Sınavlar: LGS ve YKS', 'LGS ve YKS: oturumlar, testler, soru sayıları ve süreler; çıkmış sorular, kılavuzlar ve hazırlık kaynakları.', _sinav_govde(), ())
+GOVDE['sinav.html'] = ('Sınavlar ve Deneme Sınavları (ASDS · LGS · YKS)', '5, 6, 7 ve 8. sınıf haftalık Akademik Süreç Değerlendirme Sınavları (ASDS — Cevapsız ve Cevaplı A & B kitapçıkları), LGS ve YKS hazırlık kaynakları.', _sinav_govde(), ('asds.js',))
 
 # Hakkımızda ve İletişim (14.10.2026, AdSense 'düşük değerli içerik' düzeltmesi)
 GOVDE['hakkimizda.html'] = ('Hakkımızda', 'Ders Kutusu nedir, kimler için hazırlanır, içerikler nasıl hazırlanır ve denetlenir?', '''<div class="metin-sayfa">

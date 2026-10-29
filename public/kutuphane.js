@@ -56,7 +56,11 @@ function icerikKarti(i, dersler) {
       i.goruntule && i.tur === 'Ders kitabı' && el('a', { sinif: 'ac', href: `/${i.goruntule}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç'),
       i.hazirla && el('a', { sinif: 'ac', href: `/${i.hazirla}` }, 'Hazırla ve indir', simge('indir')),
       !i.hazirla && adres && (i.dosya || !i.goruntule) && el('a', { sinif: 'ac', href: i.dosya ? `/${i.dosya}` : adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },
-        i.dosya ? 'İndir' : 'Aç', simge(i.dosya ? 'indir' : 'ok'))));
+        i.dosya_b ? 'A (Cevapsız)' : (i.dosya ? 'İndir' : 'Aç'), simge(i.dosya ? 'indir' : 'ok')),
+      i.dosya_b && el('a', { sinif: 'ac', href: `/${i.dosya_b}`, download: '' }, 'B (Cevapsız)', simge('indir')),
+      i.dosya_a_cevapli && el('a', { sinif: 'ac', href: `/${i.dosya_a_cevapli}`, download: '' }, 'A (Cevaplı)', simge('onay')),
+      i.dosya_b_cevapli && el('a', { sinif: 'ac', href: `/${i.dosya_b_cevapli}`, download: '' }, 'B (Cevaplı)', simge('onay')),
+      i.dosya_anahtar && el('a', { sinif: 'ac', href: `/${i.dosya_anahtar}`, download: '' }, 'Anahtar', simge('kalem'))));
   // Kartın tamamı ilk eyleme götürür (indirme bağlantısı hariç); metin seçimi ve bağlantıya tıklama bozulmaz.
   const birincil = kart.querySelector('a.ac:not([download])');
   if (birincil) {
