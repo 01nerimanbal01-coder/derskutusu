@@ -33,7 +33,8 @@
   const kart = (i, dersler, { dersGoster = true } = {}) => {
     const kat = K().category(i.tur);
     const dersAd = dersler?.dersler?.[i.ders] || i.ders;
-    return el('article', { sinif: 'agac-kart', 'data-renk': kat.color || 'mavi' },
+    const renk = (dersGoster && i.ders && K().subjectColor(i.ders)) || kat.color || 'mavi';
+    return el('article', { sinif: 'agac-kart', 'data-renk': renk },
       el('div', { sinif: 'agac-kart-ust' },
         el('span', { sinif: 'agac-kart-simge', 'aria-hidden': 'true' }, simge(kat.icon || 'kitap')),
         el('span', { sinif: 'agac-etiket' }, i.tur),

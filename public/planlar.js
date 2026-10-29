@@ -42,6 +42,7 @@ const Plan = (() => {
   const buyuk = (s) => s.toLocaleUpperCase('tr-TR');
   const yil = (ay) => (ay < 4 ? 2026 : 2027);
   const dosyaAdi = (plan, ay, uzanti) => (ay == null ? `${plan.ad}.${uzanti}`
+    : typeof ay === 'object' ? `${plan.ad.replace(/-2026-2027$/, '')}-hafta-${String(ay.hafta).padStart(2, '0')}-2026-2027.${uzanti}`
     : `${plan.ad.replace(/-2026-2027$/, '')}-${String(ay + 1).padStart(2, '0')}-${AY_KISA[ay]}-${yil(ay)}.${uzanti}`);
 
   // Kullanıcı bilgileri → doldurma değerleri (boş alan belgede noktalı kalır)
@@ -108,12 +109,17 @@ const Plan = (() => {
     const d = new DOMParser().parseFromString(xml, 'application/xml');
     if (d.getElementsByTagName('parsererror').length) throw new Error('Word şablonu okunamadı');
     const govde = d.getElementsByTagNameNS(W, 'body')[0];
-    if (ay != null) {   // yalnız seçilen ayın haftaları kalır
+    if (ay != null) {   // yalnız seçilen ayın veya tek haftanın sayfaları kalır
       let tut = false, kalan = 0;
+      const tekHafta = typeof ay === 'object' ? Number(ay.hafta) : null;
       for (const e of [...govde.children]) {
         if (e.localName === 'sectPr') continue;
         const im = [...e.getElementsByTagNameNS(W, 'bookmarkStart')].map((x) => x.getAttributeNS(W, 'name') || '').find((n) => n.startsWith('DK_H_'));
-        if (im) { tut = Number(im.split('_')[3]) === ay; if (tut) kalan++; }
+        if (im) {
+          const parca = im.split('_');
+          tut = tekHafta != null ? Number(parca[2]) === tekHafta : Number(parca[3]) === ay;
+          if (tut) kalan++;
+        }
         if (!tut) govde.removeChild(e);
       }
       if (!kalan) throw new Error('Bu ayda plan haftası yok');
@@ -141,7 +147,7 @@ const Plan = (() => {
   async function pdf(plan, ay, bilgi) {
     const [jsPDF, icerik, duz, kalin, logo] = await Promise.all([pdfKutuphane(), al(`/veri/gunluk-plan/${plan.ad}.json`, 'json'),
       al('/kutuphane/font/DKPlan-Regular.ttf'), al('/kutuphane/font/DKPlan-Bold.ttf'), al('/simge-192.png')]);
-    const haftalar = icerik.haftalar.filter((h) => ay == null || AYLAR.indexOf(h.ay) === ay);
+    const haftalar = icerik.haftalar.filter((h) => (ay == null ? true : typeof ay === 'object' ? Number(h.no) === Number(ay.hafta) : AYLAR.indexOf(h.ay) === ay));
     if (!haftalar.length) throw new Error('Bu ayda plan haftası yok');
     const doc = new jsPDF({ unit: 'mm', format: 'a4', compress: true });
     doc.addFileToVFS('DKPlan-Regular.ttf', base64(duz));
@@ -149,7 +155,8 @@ const Plan = (() => {
     doc.addFileToVFS('DKPlan-Bold.ttf', base64(kalin));
     doc.addFont('DKPlan-Bold.ttf', 'DKPlan', 'bold');
     if (icerik.haftalar.some((h) => /[؀-ۿ]/.test(JSON.stringify(h.bolumler)))) doc.setLineHeightFactor(1.45);   // Arapça uzantıları üst üste binmesin
-    doc.setProperties({ title: `${icerik.baslik} ${ay == null ? '2026-2027' : `${AYLAR[ay]} ${yil(ay)}`}`, author: 'Ders Kutusu', creator: 'Ders Kutusu · derskutusu.com' });
+    const baslikEk = ay == null ? '2026-2027' : typeof ay === 'object' ? `${ay.hafta}. Hafta` : `${AYLAR[ay]} ${yil(ay)}`;
+    doc.setProperties({ title: `${icerik.baslik} ${baslikEk}`, author: 'Ders Kutusu', creator: 'Ders Kutusu · derskutusu.com' });
     const dg = degerler(bilgi);
     // sigdir: en çok genişlik (mm); uzun ad bu genişliğe sığacak kadar küçültülür
     const yaz = (metin, x, y, { boy = 10, kalin: k = false, renk = RENK.metin, hiza = 'left', sigdir = 0 } = {}) => {
@@ -257,13 +264,22 @@ const Plan = (() => {
     return zip.generateAsync({ type: 'blob', compression: 'STORE' });
   }
 
-  return { AYLAR, word, pdf, uret, aylikZip, dosyaAdi, yil, arapca };
+  return { AYLAR, word, pdf, uret, aylikZip, dosyaAdi, yil, arapca, al };
 })();
 
 // ---------- Sayfa ----------
 (() => {
   if (!document.getElementById('p-bilgi')) return;
   const ANAHTAR = 'dk-plan-bilgi';
+  const SINIF_ANAHTAR = 'dk-secili-sinif';
+  const SINIF_RENK = { 5: 'mor', 6: 'yesil', 7: 'turuncu', 8: 'mavi', 9: 'pembe', 10: 'sari', 11: 'turkuaz', 12: 'lacivert' };
+  const DERS_RENK = {
+    matematik: 'mavi', 'fen-bilimleri': 'turkuaz', fizik: 'lacivert', kimya: 'mor', biyoloji: 'zumrut',
+    turkce: 'kirmizi', 'turk-dili-ve-edebiyati': 'kirmizi', ingilizce: 'pembe', arapca: 'turkuaz', 'mesleki-arapca': 'turkuaz',
+    'sosyal-bilgiler': 'turuncu', 'tc-inkilap-tarihi-ve-ataturkculuk': 'turuncu', tarih: 'turuncu', cografya: 'zumrut', felsefe: 'sari',
+    'din-kulturu-ve-ahlak-bilgisi': 'yesil', 'kuran-i-kerim': 'zumrut', 'peygamberimizin-hayati': 'yesil', 'temel-dini-bilgiler': 'turkuaz',
+  };
+  const dersRenk = (d) => DERS_RENK[d] || 'mavi';
   const IH = new Set(['arapca', 'mesleki-arapca', 'fikih', 'hadis', 'siyer', 'akaid', 'tefsir', 'dinler-tarihi', 'hitabet-ve-mesleki-uygulama', 'kelam', 'islam-kultur-ve-medeniyeti']);
   const SECMELI = new Set(['kuran-i-kerim', 'peygamberimizin-hayati', 'temel-dini-bilgiler']);
   const BILDIK = ['Bu ayda plan haftası yok', 'Word şablonu okunamadı'];   // kullanıcıya olduğu gibi gösterilen iletiler
@@ -346,13 +362,103 @@ const Plan = (() => {
     }
   };
 
-  const donem = (ay) => (ay == null ? 'Tüm yıl' : `${Plan.AYLAR[ay]} ${Plan.yil(ay)}`);
+  const donem = (ay) => (ay == null ? 'Tüm yıl' : typeof ay === 'object' ? `${ay.hafta}. Hafta` : `${Plan.AYLAR[ay]} ${Plan.yil(ay)}`);
   const indirPanel = () => {
     const p = secili;
-    $('#p-indir').hidden = !p;
+    const kutu = $('#p-indir');
+    kutu.hidden = !p;
     if (!p) return;
+    kutu.dataset.renk = dersRenk(p.ders);
     $('#p-secili-ad').textContent = tamAd(p);
     $('#p-secili-bilgi').textContent = `${p.hafta} haftalık günlük plan · Kaynak: ${p.kaynak} yıllık planı. Seçtiğiniz dönemin her haftası ayrı sayfada.`;
+
+    let ilgili = $('#p-ilgili-cubuk', kutu);
+    if (!ilgili) {
+      ilgili = el('div', { id: 'p-ilgili-cubuk', sinif: 'plan-ilgili-cubuk' });
+      $('#p-secili-bilgi').after(ilgili);
+    }
+    const hedefSinif = p.siniflar.includes(sinif) ? sinif : p.siniflar[0];
+    ilgili.replaceChildren(
+      el('span', { sinif: 'plan-ilgili-etiket' }, 'Bu dersin diğer materyalleri:'),
+      el('a', { sinif: 'plan-ilgili-bag', href: `/ogrenci.html?sinif=${hedefSinif}&ders=${encodeURIComponent(p.ders)}` }, 'Haftalık Konu Özetleri →'),
+      el('a', { sinif: 'plan-ilgili-bag', href: `/yazili.html?sinif=${hedefSinif}&ders=${encodeURIComponent(p.ders)}` }, 'Ortak Yazılılar →'),
+      el('a', { sinif: 'plan-ilgili-bag', href: `/icerikler.html?sinif=${hedefSinif}&ders=${encodeURIComponent(p.ders)}&tur=${encodeURIComponent('Yıllık plan')}` }, 'Yıllık Plan →'));
+
+    let haftaOnizleme = $('#p-hafta-onizleme', kutu);
+    if (!haftaOnizleme) {
+      haftaOnizleme = el('div', { id: 'p-hafta-onizleme', sinif: 'plan-hafta-onizleme' });
+      $('#p-zip').after(haftaOnizleme);
+    }
+    haftaOnizleme.replaceChildren(el('p', { sinif: 'plan-hafta-yukleniyor' }, 'Haftalık plan içeriği yükleniyor…'));
+    Plan.al(`/veri/gunluk-plan/${p.ad}.json`, 'json').then((icerik) => {
+      if (secili !== p || !icerik?.haftalar?.length) return;
+      const haftalar = icerik.haftalar;
+      const hMap = Object.fromEntries(haftalar.map((h) => [h.no, { bas: h.tarih, ad: h.hafta }]));
+      const aktifBul = typeof haftaBul === 'function' ? haftaBul(hMap) : null;
+      let seciliNo = (aktifBul && haftalar.some((h) => h.no === aktifBul.no)) ? aktifBul.no : haftalar[0].no;
+
+      const secSelect = el('select', { sinif: 'plan-hafta-sec', 'aria-label': 'Hafta seçin' },
+        ...haftalar.map((h) => el('option', { value: String(h.no), selected: h.no === seciliNo },
+          `${h.hafta}${aktifBul && h.no === aktifBul.no ? ' (Bu hafta)' : ''}`)));
+      const detayKutu = el('div', { sinif: 'plan-hafta-detay' });
+      const haftaIndirBtn = el('button', {
+        type: 'button',
+        sinif: 'dugme ana plan-hafta-indir',
+        onclick: () => {
+          const b = bicim(), bl = bilgi();
+          isle(async () => [await Plan.uret(p, { hafta: seciliNo }, bl, b), Plan.dosyaAdi(p, { hafta: seciliNo }, b)],
+            `${seciliNo}. Hafta için ${b === 'pdf' ? 'PDF' : 'Word'} dosyası hazırlanıyor…`);
+        },
+      }, simge('indir'), el('span', {}, `${seciliNo}. Haftayı İndir`));
+
+      const haftaCiz = () => {
+        const h = haftalar.find((x) => Number(x.no) === Number(seciliNo)) || haftalar[0];
+        if (!h) return;
+        secSelect.value = String(h.no);
+        const span = haftaIndirBtn.querySelector('span');
+        if (span) span.textContent = `Yalnız ${h.no}. Haftayı İndir (${bicim() === 'pdf' ? 'PDF' : 'Word'})`;
+        const satirlar = [];
+        for (const [, liste] of h.bolumler || []) {
+          for (const [k, d] of liste || []) {
+            if (!d || /^(Dersin adı|Sınıf|Ay \/ Hafta)$/i.test(k)) continue;
+            satirlar.push([k, String(d).trim()]);
+          }
+        }
+        detayKutu.replaceChildren(
+          el('div', { sinif: 'plan-hafta-tablo' },
+            ...satirlar.slice(0, 6).map(([k, d]) => el('div', { sinif: 'plan-hafta-satir' },
+              el('strong', {}, k),
+              el('p', {}, d.length > 340 ? `${d.slice(0, 340)}…` : d)))));
+      };
+
+      secSelect.addEventListener('change', () => { seciliNo = Number(secSelect.value); haftaCiz(); });
+      $$('input[name="p-bicim"]').forEach((r) => r.addEventListener('change', haftaCiz));
+
+      const oncekiBtn = el('button', {
+        type: 'button', sinif: 'dugme plan-hafta-yon', title: 'Önceki hafta',
+        onclick: () => {
+          const idx = haftalar.findIndex((x) => Number(x.no) === Number(seciliNo));
+          if (idx > 0) { seciliNo = haftalar[idx - 1].no; haftaCiz(); }
+        },
+      }, '‹ Önceki');
+      const sonrakiBtn = el('button', {
+        type: 'button', sinif: 'dugme plan-hafta-yon', title: 'Sonraki hafta',
+        onclick: () => {
+          const idx = haftalar.findIndex((x) => Number(x.no) === Number(seciliNo));
+          if (idx >= 0 && idx < haftalar.length - 1) { seciliNo = haftalar[idx + 1].no; haftaCiz(); }
+        },
+      }, 'Sonraki ›');
+
+      haftaCiz();
+      haftaOnizleme.replaceChildren(
+        el('div', { sinif: 'plan-hafta-ust' },
+          el('div', {},
+            el('span', { sinif: 'ust-baslik' }, 'Haftalık kazanım & içerik önizleme'),
+            el('h3', { sinif: 'plan-alt-baslik' }, 'Tek hafta seç, incele veya yalnız o haftayı indir')),
+          el('div', { sinif: 'plan-hafta-araclar' }, oncekiBtn, secSelect, sonrakiBtn, haftaIndirBtn)),
+        detayKutu);
+    }).catch(() => { haftaOnizleme.replaceChildren(); });
+
     const dugme = (ay, ad, alt) => el('button', { type: 'button', sinif: `plan-ay${ay == null ? ' tum' : ''}`, disabled: mesgul, onclick: () => {
       const b = bicim(), bl = bilgi();
       isle(async () => [await Plan.uret(p, ay, bl, b), Plan.dosyaAdi(p, ay, b)], `${donem(ay)} için ${b === 'pdf' ? 'PDF' : 'Word'} dosyası hazırlanıyor…`);
@@ -372,7 +478,7 @@ const Plan = (() => {
 
   const grupAd = (p) => (IH.has(p.ders) || /imam hatip/i.test(p.ek || '') ? 'İmam hatip dersleri' : SECMELI.has(p.ders) ? 'Seçmeli dersler' : 'Ortak dersler');
   const kart = (p) => el('button', {
-    type: 'button', sinif: `plan-ders ders-${p.ders}`, 'aria-pressed': String(p === secili),
+    type: 'button', sinif: `plan-ders ders-${p.ders}`, 'data-renk': dersRenk(p.ders), 'aria-pressed': String(p === secili),
     onclick: () => {
       secili = p;
       if (!mesgul) { durum.className = 'plan-durum'; durum.textContent = ''; }
@@ -401,9 +507,10 @@ const Plan = (() => {
   const siniflar = () => {
     const tum = [...new Set(dizin.flatMap((p) => p.siniflar))].sort((a, b) => a - b);
     $('#p-siniflar').replaceChildren(...tum.map((n) => el('button', {
-      type: 'button', sinif: 'sekme', 'aria-pressed': String(n === sinif), 'data-n': n,
+      type: 'button', sinif: 'sekme', 'data-renk': SINIF_RENK[n] || 'mavi', 'aria-pressed': String(n === sinif), 'data-n': n,
       onclick: () => {
         sinif = n;
+        try { localStorage.setItem(SINIF_ANAHTAR, String(n)); } catch {}
         if (secili && !secili.siniflar.includes(n)) { secili = null; indirPanel(); }
         // sekmeler yeniden kurulmaz: klavye odağı basılan düğmede kalır
         $$('#p-siniflar .sekme').forEach((d) => d.setAttribute('aria-pressed', String(Number(d.dataset.n) === n)));
@@ -419,8 +526,15 @@ const Plan = (() => {
     if (!dizin.length) { $('#p-dersler').replaceChildren(el('p', { sinif: 'plan-bos' }, 'Planlar yüklenemedi. Sayfayı yenileyin.')); return; }
     const prm = new URLSearchParams(location.search);
     const ps = Number(prm.get('sinif'));
+    let kayitliSinif = 8;
+    try { kayitliSinif = Number(localStorage.getItem(SINIF_ANAHTAR)) || 8; } catch {}
     secili = dizin.find((p) => p.ad === prm.get('p')) || null;
-    sinif = secili ? (secili.siniflar.includes(ps) ? ps : secili.siniflar[0]) : (dizin.some((p) => p.siniflar.includes(ps)) ? ps : dizin[0].siniflar[0]);
+    sinif = secili ? (secili.siniflar.includes(ps) ? ps : secili.siniflar[0])
+      : (dizin.some((p) => p.siniflar.includes(ps)) ? ps
+        : (dizin.some((p) => p.siniflar.includes(kayitliSinif)) ? kayitliSinif : dizin[0].siniflar[0]));
+    if (!secili) {
+      secili = dizin.find((p) => p.siniflar.includes(sinif) && p.ders === 'matematik') || dizin.find((p) => p.siniflar.includes(sinif)) || null;
+    }
     if (secili || ps) document.title = secili ? `${tamAd(secili)} günlük planları · Ders Kutusu` : `${sinif}. sınıf günlük planları · Ders Kutusu`;
     siniflar();
     dersler();

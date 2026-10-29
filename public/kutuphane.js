@@ -42,7 +42,8 @@ function icerikKarti(i, dersler) {
     },
   }, kayitliMi ? '★ Kayıtlı' : '☆ Kaydet');
 
-  const kart = el('article', { sinif: 'kart', 'data-renk': window.Kesif?.category(i.tur).color || 'mavi' },
+  const kartRenk = (i.ders && window.Kesif?.subjectColor(i.ders)) || window.Kesif?.category(i.tur).color || 'mavi';
+  const kart = el('article', { sinif: 'kart', 'data-renk': kartRenk },
     el('div', { sinif: 'ust-bilgi' },
       i.hafta && el('span', { sinif: 'etiket' }, `${i.hafta}. hafta`),
       i.sinif && el('span', { sinif: 'etiket' }, `${i.sinif}. sınıf`),

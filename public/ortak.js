@@ -726,10 +726,61 @@ window.dkTamamlanan = dkTamamlanan;
   ustTamamBtn.addEventListener('click', tamamGuncelle);
   altTamamBtn.addEventListener('click', tamamGuncelle);
 
+  // Okuma yazı boyutu seçici (A- / A / A+)
+  const YAZI_ANAHTAR = 'dk-yazi-boy';
+  let yaziBoy = 'normal';
+  try { yaziBoy = localStorage.getItem(YAZI_ANAHTAR) || 'normal'; } catch {}
+  const yaziUygula = (b) => {
+    yaziBoy = b;
+    document.body.classList.toggle('ozet-yazi-buyuk', b === 'buyuk');
+    document.body.classList.toggle('ozet-yazi-iri', b === 'iri');
+    try { b === 'normal' ? localStorage.removeItem(YAZI_ANAHTAR) : localStorage.setItem(YAZI_ANAHTAR, b); } catch {}
+  };
+  yaziUygula(yaziBoy);
+  const yaziSecici = el('div', { sinif: 'ozet-yazi-secici', role: 'group', 'aria-label': 'Yazı boyutu' },
+    ...[['normal', 'A', 'Normal yazı boyutu'], ['buyuk', 'A+', 'Büyük yazı boyutu'], ['iri', 'A++', 'Çok büyük (akıllı tahta) yazı boyutu']].map(([kod, ad, baslik]) =>
+      el('button', {
+        type: 'button',
+        sinif: 'ozet-yazi-dugme',
+        'data-boy': kod,
+        title: baslik,
+        'aria-label': baslik,
+        'aria-pressed': String(yaziBoy === kod),
+        onclick: () => {
+          yaziUygula(kod);
+          $$('.ozet-yazi-dugme', yaziSecici).forEach((d) => d.setAttribute('aria-pressed', String(d.dataset.boy === kod)));
+        },
+      }, ad)));
+
+  // Canlı etkileşimli etkinlik ilerleme rozeti
+  const etkBloklar = $$('.etk', ozetGovde);
+  const etkRozet = etkBloklar.length ? el('a', {
+    sinif: 'ozet-etk-rozet',
+    href: `#${(etkBloklar[0].closest('section') || etkBloklar[0]).id || ''}`,
+    title: 'Etkileşimli etkinliklere git',
+  }) : null;
+  const etkDurumGuncelle = () => {
+    if (!etkRozet) return;
+    const cozulen = etkBloklar.filter((b) =>
+      b.classList.contains('tamam') ||
+      b.querySelector('.dogru, .yanlis, .eslesti, [aria-disabled="true"], button:disabled, input:disabled, .sonuc:not(:empty), .etk-sonuc:not(:empty)')
+    ).length;
+    const hepsi = cozulen >= etkBloklar.length;
+    etkRozet.classList.toggle('tamam', hepsi);
+    etkRozet.textContent = hepsi ? `🎯 Etkinlikler tamam (${cozulen}/${etkBloklar.length})` : `🎯 Etkinlikler: ${cozulen} / ${etkBloklar.length}`;
+  };
+  if (etkRozet) {
+    etkDurumGuncelle();
+    ozetGovde.addEventListener('click', () => setTimeout(etkDurumGuncelle, 40));
+    ozetGovde.addEventListener('change', () => setTimeout(etkDurumGuncelle, 40));
+  }
+
   const ekCubuk = el('div', { sinif: 'ozet-ust-ek' },
-    el('span', { sinif: 'ozet-sure-rozet' }, `⏱ Yaklaşık ${dk} dk çalışma${etkSay ? ` · ${etkSay} etkileşimli etkinlik` : ''}`),
+    el('span', { sinif: 'ozet-sure-rozet' }, `⏱ Yaklaşık ${dk} dk çalışma`),
+    etkRozet,
     favBtn,
-    ustTamamBtn);
+    ustTamamBtn,
+    yaziSecici);
   const h1 = $('h1', ozetBas);
   if (h1) h1.after(ekCubuk); else ozetBas.append(ekCubuk);
 

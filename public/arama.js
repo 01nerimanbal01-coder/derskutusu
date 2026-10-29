@@ -570,13 +570,37 @@ if (typeof document !== 'undefined') {
     });
   }
 
-  // ara.html: bütün sonuçlar
+  // ara.html: bütün sonuçlar + canlı tür süzgeci ve renk kodlu kartlar
   const sayfa = $('#arama-sonuclari');
   if (sayfa) {
     const kutu = $('#arama-kutu');
     const q0 = new URLSearchParams(location.search).get('q') || '';
     kutu.value = q0;
     let gosterilen = 30;
+    let aktifTur = 'tumu';
+    const DERS_RENK = {
+      matematik: 'mavi', 'fen-bilimleri': 'turkuaz', fizik: 'lacivert', kimya: 'mor', biyoloji: 'zumrut',
+      turkce: 'kirmizi', 'turk-dili-ve-edebiyati': 'kirmizi', ingilizce: 'pembe', arapca: 'turkuaz', 'mesleki-arapca': 'turkuaz',
+      'sosyal-bilgiler': 'turuncu', 'tc-inkilap-tarihi-ve-ataturkculuk': 'turuncu', tarih: 'turuncu', cografya: 'zumrut', felsefe: 'sari',
+      'din-kulturu-ve-ahlak-bilgisi': 'yesil', 'kuran-i-kerim': 'zumrut', 'peygamberimizin-hayati': 'yesil', 'temel-dini-bilgiler': 'turkuaz',
+    };
+    const kartRenk = (b) => DERS_RENK[b.ders] || (b.tip === 'belge' ? 'turkuaz' : b.tur === 'Çalışma kâğıdı' ? 'yesil' : /plan/i.test(b.tur || '') ? 'turuncu' : /yazılı/i.test(b.tur || '') ? 'pembe' : 'mavi');
+    const turKategorisi = (b) => {
+      if (b.tip === 'belge' || b.tur === 'Öğretim programı') return 'belge';
+      if (b.tur === 'Konu anlatımı') return 'ozet';
+      if (b.tur === 'Çalışma kâğıdı') return 'calisma';
+      if (/plan/i.test(b.tur || '')) return 'plan';
+      if (/yazılı|test|sınav/i.test(b.tur || '') || b.alt === 'sinav') return 'yazili';
+      return 'diger';
+    };
+
+    let turSuzgecKutu = $('#arama-tur-suzgec');
+    if (!turSuzgecKutu && sayfa.parentElement) {
+      turSuzgecKutu = el('div', { id: 'arama-tur-suzgec', sinif: 'arama-tur-suzgec', role: 'group', 'aria-label': 'Sonuç türü süzgeci', hidden: true });
+      const bilgiEl = $('.sonuc-bilgi', sayfa.parentElement);
+      if (bilgiEl) bilgiEl.before(turSuzgecKutu); else sayfa.before(turSuzgecKutu);
+    }
+
     const ciz = async () => {
       await dizinHazirla();
       const q = kutu.value.trim();
@@ -587,10 +611,34 @@ if (typeof document !== 'undefined') {
       if (r.sorgu.duzeltmeler.length) notlar.push(`Yazım düzeltildi: ${r.sorgu.duzeltmeler.map(([a, b]) => `“${a}” → “${b}”`).join(', ')}`);
       if (r.not) notlar.push(r.not);
       $('#arama-not').replaceChildren(...notlar.map((n) => el('p', {}, n)));
-      $('#arama-sayi').textContent = q ? (r.sonuclar.length ? `${r.sonuclar.length} sonuç` : 'Sonuç bulunamadı') : '';
-      $('#arama-bos').hidden = !!(q && r.sonuclar.length);
-      sayfa.replaceChildren(...r.sonuclar.slice(0, gosterilen).map(({ b }) =>
-        el('article', { sinif: `kart arama-kart ${b.tip}` },
+
+      const tumSonuclar = r.sonuclar;
+      const gruplar = [
+        ['tumu', 'Tümü', tumSonuclar.length],
+        ['ozet', 'Konu Anlatımı', tumSonuclar.filter(({ b }) => turKategorisi(b) === 'ozet').length],
+        ['calisma', 'Çalışma Kâğıdı', tumSonuclar.filter(({ b }) => turKategorisi(b) === 'calisma').length],
+        ['plan', 'Planlar', tumSonuclar.filter(({ b }) => turKategorisi(b) === 'plan').length],
+        ['yazili', 'Yazılı & Sınav', tumSonuclar.filter(({ b }) => turKategorisi(b) === 'yazili').length],
+        ['belge', 'Resmî Belge', tumSonuclar.filter(({ b }) => turKategorisi(b) === 'belge').length],
+      ].filter(([kod, , sayi]) => kod === 'tumu' || sayi > 0);
+
+      if (!gruplar.some(([kod]) => kod === aktifTur)) aktifTur = 'tumu';
+      if (turSuzgecKutu) {
+        turSuzgecKutu.hidden = !(q && tumSonuclar.length > 1 && gruplar.length > 2);
+        turSuzgecKutu.replaceChildren(...gruplar.map(([kod, ad, sayi]) =>
+          el('button', {
+            type: 'button',
+            sinif: 'arama-tur-dugme',
+            'aria-pressed': String(aktifTur === kod),
+            onclick: () => { aktifTur = kod; gosterilen = 30; ciz(); },
+          }, `${ad} (${sayi})`)));
+      }
+
+      const suzulen = aktifTur === 'tumu' ? tumSonuclar : tumSonuclar.filter(({ b }) => turKategorisi(b) === aktifTur);
+      $('#arama-sayi').textContent = q ? (suzulen.length ? `${suzulen.length} sonuç gösteriliyor` : 'Sonuç bulunamadı') : '';
+      $('#arama-bos').hidden = !!(q && tumSonuclar.length);
+      sayfa.replaceChildren(...suzulen.slice(0, gosterilen).map(({ b }) => {
+        const kartEl = el('article', { sinif: `kart arama-kart ${b.tip}`, 'data-renk': kartRenk(b) },
           el('div', { sinif: 'ust-bilgi' },
             el('span', { sinif: `etiket ${b.tip === 'belge' ? 'ogretmen' : b.tip === 'sayfa' ? '' : 'tur'}` }, TUR_ETIKET[b.tip]),
             b.sinif && el('span', { sinif: 'etiket' }, `${b.sinif}. sınıf`),
@@ -598,14 +646,17 @@ if (typeof document !== 'undefined') {
             b.tur && b.tip !== 'sayfa' && b.tur !== TUR_ETIKET[b.tip] && el('span', { sinif: `etiket ${b.kitle === 'ogretmen' ? 'ogretmen' : 'tur'}` }, b.tur)),
           el('h3', {}, el('a', { href: adres(b), ...hedef(b) }, ...vurgula(b.baslik, q))),
           b.aciklama && el('p', {}, b.aciklama),
-          el('a', { sinif: 'ac', href: adres(b), ...hedef(b) }, b.goruntule ? 'Aç' : b.dosya ? 'İndir' : b.dis ? 'Aç' : 'Git', simge('ok')))));
-      $('#daha-fazla').hidden = r.sonuclar.length <= gosterilen;
+          el('a', { sinif: 'ac', href: adres(b), ...hedef(b) }, b.goruntule ? 'Aç' : b.dosya ? 'İndir' : b.dis ? 'Aç' : 'Git', simge('ok')));
+        return kartEl;
+      }));
+      $('#daha-fazla').hidden = suzulen.length <= gosterilen;
     };
     let zaman;
     kutu.addEventListener('input', () => {
       clearTimeout(zaman);
       zaman = setTimeout(() => {
         gosterilen = 30;
+        aktifTur = 'tumu';
         const q = kutu.value.trim();
         history.replaceState(null, '', q ? `?q=${encodeURIComponent(q)}` : location.pathname);
         ciz();
