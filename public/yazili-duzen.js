@@ -50,7 +50,9 @@
       const yer = (d) => { const i = sira.indexOf(d); return i < 0 ? sira.length : i; };
       const tablolar = Object.values(sen?.tablolar || {});
       const siniflar = [...new Set(tablolar.map((x) => x.sinif))].sort((a, b) => a - b);
-      let sec = siniflar.includes(sinif) ? sinif : 0;
+      let kayitliSinif = 8;
+      try { kayitliSinif = Number(localStorage.getItem('dk-secili-sinif')) || 8; } catch {}
+      let sec = siniflar.includes(sinif) ? sinif : (siniflar.includes(kayitliSinif) ? kayitliSinif : (siniflar[0] || 0));
       const bilinmeyen = p.has('sinif') && p.has('ders');
       const dersDugme = (x) => {
         const k = `${x.sinif}-${x.ders}`;
@@ -66,7 +68,7 @@
           bilinmeyen ? el('p', { sinif: 'yd-not' }, 'Bu sınıf ve ders için yazılı bulunamadı; aşağıdan seçebilirsiniz.') : null,
           el('p', { sinif: 'yd-adim', id: 'yd-sinif-b' }, '1. adım: sınıfı seçin'),
           el('div', { sinif: 'yd-sinif-sec', role: 'group', 'aria-labelledby': 'yd-sinif-b' }, siniflar.map((n) => el('button', {
-            type: 'button', sinif: 'sekme', 'aria-pressed': String(n === sec), onclick: () => { sec = n; ciz(true); } }, `${n}. sınıf`))),
+            type: 'button', sinif: 'sekme', 'aria-pressed': String(n === sec), onclick: () => { sec = n; try { localStorage.setItem('dk-secili-sinif', String(n)); } catch {} ciz(true); } }, `${n}. sınıf`))),
           sec ? [el('p', { sinif: 'yd-adim', id: 'yd-ders-b' }, `2. adım: ${sec}. sınıf dersini seçin`),
             el('ul', { sinif: 'yd-dersler', 'aria-labelledby': 'yd-ders-b' },
               tablolar.filter((x) => x.sinif === sec).sort((a, b) => yer(a.ders) - yer(b.ders)).map(dersDugme))]
@@ -85,8 +87,19 @@
     $('nav.yol')?.append(el('span', { 'aria-hidden': 'true' }, '/'), el('span', { 'aria-current': 'page' }, `${sinif}. sınıf ${ad}`));
     giris?.replaceChildren('Bu ders için iki ayrı yazılı türü var; her birinin öğrenci kâğıdı ve cevap anahtarı birlikte. Cevap anahtarları yalnız bu sayfadadır; öğrenciler kâğıtları ',
       el('a', { href: '/ogrenci.html' }, 'Öğrenci'), ' bölümünde yalnızca öğrenci kâğıdı olarak bulur.');
-    secim.replaceChildren(el('p', { sinif: 'yd-secili' }, 'Seçili ders: ', el('strong', {}, `${sinif}. sınıf ${ad}`), ' · ',
-      el('a', { href: `/yazili.html?sinif=${sinif}` }, 'Sınıf ya da dersi değiştir')));
+    const siraSecili = Object.keys(ortak?.dersler?.dersler || {});
+    const yerSecili = (d) => { const i = siraSecili.indexOf(d); return i < 0 ? siraSecili.length : i; };
+    const ayniSinifDersler = Object.values(sen?.tablolar || {}).filter((x) => x.sinif === sinif).sort((a, b) => yerSecili(a.ders) - yerSecili(b.ders));
+    secim.replaceChildren(
+      el('p', { sinif: 'yd-secili' }, 'Seçili ders: ', el('strong', {}, `${sinif}. sınıf ${ad}`), ' · ',
+        el('a', { href: `/yazili.html?sinif=${sinif}` }, 'Tüm sınıflar'), ' · ',
+        el('a', { href: `/ogrenci.html?sinif=${sinif}&ders=${encodeURIComponent(ders)}` }, 'Dersin Konu Özetleri & Çalışma Kâğıtları →')),
+      ayniSinifDersler.length > 1 ? el('nav', { sinif: 'yd-hizli-dersler', 'aria-label': `${sinif}. sınıf diğer ders yazılıları` },
+        ...ayniSinifDersler.map((x) => el('a', {
+          sinif: `yd-hizli-cip${x.ders === ders ? ' aktif' : ''}`,
+          href: `?sinif=${sinif}&ders=${encodeURIComponent(x.ders)}`,
+          'aria-current': x.ders === ders ? 'page' : null,
+        }, dersAd(x.ders, x)))) : null);
 
     // 1 · senaryoya göre (yazili.js çizdi): hazır kâğıt yoksa not, senaryo tablosu da yoksa açıklama
     const hazirKagit = Boolean(kagit?.tablolar?.[anahtar] || kagit?.ulke?.[anahtar]);
@@ -105,12 +118,13 @@
       const k = konular.find((x) => normal(x.ad) === kn) || konular.find((x) => kn && normal(x.ad).includes(kn));
       return k ? { ui: k.ui, ad: `${k.ui + 1}. ünite: ${k.unite}` } : { ui: 999, ad: konular.length ? 'Diğer çıktılar' : '' };
     };
-    const satir = (c) => el('li', { sinif: 'yd-satir' },
+    const satir = (c) => el('li', { sinif: 'yd-satir', 'data-arama': normal(`${c.kod} ${c.ifade} ${c.konu}`) },
       el('div', { sinif: 'yd-govde' }, el('strong', {}, c.kod), el('div', {}, c.ifade), el('small', {}, `${c.konu} · ${c.soru} soru`)),
       el('div', { sinif: 'g-dugmeler' },
         indir(`${cikti.klasor}${c.dosya}.pdf`, 'Öğrenci kâğıdı (PDF)', `${c.kod} ${c.ifade}`, true),
         indir(`${cikti.klasor}${c.dosya}-cevapli.pdf`, 'Cevap anahtarı (PDF)', `${c.kod} ${c.ifade}`, false)));
     let ic;
+    let ciktiSuzgec = null;
     if (liste?.length) {
       const gruplar = new Map();
       for (const c of liste) {
@@ -118,13 +132,47 @@
         if (!gruplar.has(u.ad)) gruplar.set(u.ad, { ...u, kalemler: [] });
         gruplar.get(u.ad).kalemler.push(c);
       }
-      ic = [...gruplar.values()].sort((a, b) => a.ui - b.ui).flatMap((u) => [
-        u.ad ? el('h3', { sinif: 'yd-unite' }, u.ad) : null, el('ol', { sinif: 'yd-liste' }, u.kalemler.map(satir))]);
+      const uniteBloklari = [...gruplar.values()].sort((a, b) => a.ui - b.ui).map((u) => {
+        const bas = u.ad ? el('h3', { sinif: 'yd-unite' }, u.ad) : null;
+        const ol = el('ol', { sinif: 'yd-liste' }, u.kalemler.map(satir));
+        return { bas, ol };
+      });
+      ic = uniteBloklari.flatMap((b) => [b.bas, b.ol]);
+      if (liste.length > 4) {
+        const araInput = el('input', {
+          type: 'search',
+          sinif: 'agac-konu-ara yd-cikti-ara-girdi',
+          placeholder: `Öğrenme çıktısı kodu, kazanım veya konu ara (${liste.length} hazır yazılı kâğıdı)…`,
+          'aria-label': 'Öğrenme çıktısı yazılılarında ara',
+          autocomplete: 'off',
+        });
+        const sayacEl = el('span', { sinif: 'belge-sonuc-sayac' }, `${liste.length} yazılı kâğıdı`);
+        araInput.addEventListener('input', () => {
+          const q = normal(araInput.value);
+          let top = 0;
+          uniteBloklari.forEach(({ bas, ol }) => {
+            let g = 0;
+            $$('.yd-satir', ol).forEach((li) => {
+              const u = !q || String(li.dataset.arama || '').includes(q);
+              li.hidden = !u;
+              if (u) g++;
+            });
+            ol.hidden = g === 0;
+            if (bas) bas.hidden = g === 0;
+            top += g;
+          });
+          sayacEl.textContent = top === liste.length ? `${liste.length} yazılı kâğıdı` : `${top} / ${liste.length} yazılı gösteriliyor`;
+        });
+        ciktiSuzgec = el('div', { sinif: 'agac-suzgec-cubuk yd-cikti-suzgec' },
+          el('div', { sinif: 'agac-suzgec-arama' }, simge('mercek'), araInput),
+          sayacEl);
+      }
     } else ic = [el('p', { sinif: 'yd-bos' }, 'Bu ders için hazırlanıyor. Hazır oldukça burada görünecek.')];
     ana.after(el('section', { sinif: 'bolum y-bolum', id: 'cikti-yazililari', 'aria-labelledby': 'yd-s2-baslik' }, el('div', { sinif: 'kap' },
       el('h2', { sinif: 'yd-baslik', id: 'yd-s2-baslik' }, '2 · Öğrenme çıktısına göre yazılı'),
       el('p', { sinif: 'yd-aciklama' }, 'Her öğrenme çıktısı için ayrı, 2 sayfalık bir kâğıt: tek bir çıktının kazanılıp kazanılmadığını ölçmek ya da çıktı bazlı yazılı yapmak için kullanılır.'),
       liste?.length ? el('p', { sinif: 'yd-not' }, 'Her kâğıt 6–8 açık uçlu soru, 40 dakika, 100 puandır; sorular MEB ders kitabına dayanır. Öğrenci kâğıdındaki karekod cevap anahtarını açar.') : null,
+      ciktiSuzgec,
       ...ic)));
 
     // Bölüm geçişi (eski pembe düğmenin yerine): her başlığa tek dokunuşla atla

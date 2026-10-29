@@ -604,7 +604,41 @@ ortakVeri.then(({ ayar }) => {
   }
 })();
 
-// Konu özeti sayfalarında (/ozet/*.html): tahmini çalışma süresi rozeti ve "★ Konuyu Kaydet" düğmesi
+// Konu tamamlama takibi (dk-tamamlanan-v1) + Konu özeti sayfalarında (/ozet/*.html) çalışma süresi, kaydetme ve tamamlama
+const dkTamamlanan = (() => {
+  const ANAHTAR = 'dk-tamamlanan-v1';
+  const oku = () => {
+    try {
+      const l = JSON.parse(localStorage.getItem(ANAHTAR) || '[]');
+      return new Set(Array.isArray(l) ? l : []);
+    } catch {
+      return new Set();
+    }
+  };
+  const yaz = (set) => {
+    try {
+      if (set.size) localStorage.setItem(ANAHTAR, JSON.stringify([...set]));
+      else localStorage.removeItem(ANAHTAR);
+    } catch {}
+  };
+  const varMi = (anahtarlar) => {
+    const s = oku();
+    const liste = Array.isArray(anahtarlar) ? anahtarlar : [anahtarlar];
+    return liste.some((k) => k && s.has(String(k).replace(/^\/+/, '')));
+  };
+  const degistir = (anahtarlar) => {
+    const s = oku();
+    const liste = (Array.isArray(anahtarlar) ? anahtarlar : [anahtarlar]).filter(Boolean).map((k) => String(k).replace(/^\/+/, ''));
+    if (!liste.length) return false;
+    const tamam = liste.some((k) => s.has(k));
+    liste.forEach((k) => { if (tamam) s.delete(k); else s.add(k); });
+    yaz(s);
+    return !tamam;
+  };
+  return { oku, yaz, varMi, degistir };
+})();
+window.dkTamamlanan = dkTamamlanan;
+
 (() => {
   const ozetBas = $('.ozet-bas .kap');
   const ozetGovde = $('article.ozet, main.ozet, .ozet');
@@ -632,11 +666,49 @@ ortakVeri.then(({ ayar }) => {
     },
   }, baslangicFav ? '★ Kayıtlı Konu' : '☆ Konuyu Kaydet');
 
+  let tamamDurum = dkTamamlanan.varMi(favAnahtar);
+  const ustTamamBtn = el('button', {
+    type: 'button',
+    sinif: 'ozet-tamamla-dugme',
+    'aria-pressed': String(tamamDurum),
+  }, tamamDurum ? '✓ Konu Tamamlandı' : '○ Konuyu Tamamladım');
+  const altTamamBtn = el('button', {
+    type: 'button',
+    sinif: 'dugme ana ozet-alt-tamamla',
+    'aria-pressed': String(tamamDurum),
+  }, tamamDurum ? '✓ Bu Konuyu Tamamladın (Geri Al)' : '✓ Bu Konuyu Tamamladım Olarak İşaretle');
+
+  const tamamGuncelle = () => {
+    tamamDurum = dkTamamlanan.degistir(favAnahtar);
+    ustTamamBtn.setAttribute('aria-pressed', String(tamamDurum));
+    ustTamamBtn.textContent = tamamDurum ? '✓ Konu Tamamlandı' : '○ Konuyu Tamamladım';
+    altTamamBtn.setAttribute('aria-pressed', String(tamamDurum));
+    altTamamBtn.textContent = tamamDurum ? '✓ Bu Konuyu Tamamladın (Geri Al)' : '✓ Bu Konuyu Tamamladım Olarak İşaretle';
+  };
+  ustTamamBtn.addEventListener('click', tamamGuncelle);
+  altTamamBtn.addEventListener('click', tamamGuncelle);
+
   const ekCubuk = el('div', { sinif: 'ozet-ust-ek' },
     el('span', { sinif: 'ozet-sure-rozet' }, `⏱ Yaklaşık ${dk} dk çalışma${etkSay ? ` · ${etkSay} etkileşimli etkinlik` : ''}`),
-    favBtn);
+    favBtn,
+    ustTamamBtn);
   const h1 = $('h1', ozetBas);
   if (h1) h1.after(ekCubuk); else ozetBas.append(ekCubuk);
+
+  const ozetIc = $('.ozet-ic', ozetGovde) || ozetGovde;
+  const esles = favAnahtar.match(/^ozet\/(\d+)-([a-z0-9-]+)-hafta-(\d+)\.html$/);
+  const dersBag = esles ? `/ogrenci.html?sinif=${esles[1]}&ders=${encodeURIComponent(esles[2])}` : '/ogrenci.html';
+  const calismaBag = esles ? `/icerikler.html?sinif=${esles[1]}&ders=${encodeURIComponent(esles[2])}&tur=${encodeURIComponent('Çalışma kâğıdı')}` : '/icerikler.html';
+  const sonKart = el('section', { sinif: 'ozet-bolum ozet-sonu-kart' },
+    el('div', { sinif: 'ozet-sonu-ic' },
+      el('div', { sinif: 'ozet-sonu-metin' },
+        el('strong', {}, 'Bu haftanın konu özetini ve etkinliklerini tamamladın mı?'),
+        el('p', {}, 'Konuyu tamamladığında ünite ağacında ilerleme çubuğun güncellenir. Ardından çalışma kâğıdını çözerek öğrendiklerini pekiştirebilirsin.')),
+      el('div', { sinif: 'ozet-sonu-eylemler' },
+        altTamamBtn,
+        el('a', { sinif: 'dugme', href: calismaBag }, 'Çalışma Kâğıtları →'),
+        el('a', { sinif: 'dugme', href: dersBag }, 'Ünite Ağacına Dön'))));
+  ozetIc.append(sonKart);
 })();
 
 // Sınavlar sayfası (/sinav.html): Canlı LGS & YKS geri sayım panosu ve Net / Başarı Hesaplayıcı

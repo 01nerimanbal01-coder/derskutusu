@@ -292,23 +292,70 @@
     const kaynaklar = dersDuzeyi.map((i) => el('a', { sinif: 'agac-kaynak', href: yol(i.goruntule || i.dosya || i.baglanti || '#'), 'data-renk': K().category(i.tur).color },
       simge(K().category(i.tur).icon || 'kitap'), el('span', {}, el('strong', {}, i.tur), el('small', {}, i.baslik))));
     const buKonu = konular.find((k) => simdi && k.haftalar.includes(simdi));
+    const ilerlemeMetin = el('strong', {}, '');
+    const ilerlemeYuzde = el('span', { sinif: 'agac-ilerleme-yuzde' }, '%0');
+    const ilerlemeDolgu = el('span', { sinif: 'agac-ilerleme-dolgu' });
+    const ilerlemePano = el('div', { sinif: 'agac-ilerleme-pano' },
+      el('div', { sinif: 'agac-ilerleme-ust' },
+        el('span', { sinif: 'agac-ilerleme-etiket' }, 'Çalışma İlerlemen: ', ilerlemeMetin),
+        ilerlemeYuzde),
+      el('div', { sinif: 'agac-ilerleme-cubuk', 'aria-hidden': 'true' }, ilerlemeDolgu));
+
+    const konuAnahtarlari = (k) => [
+      ...k.icerik.filter((i) => i.tur === 'Konu anlatımı' && i.goruntule).map((i) => String(i.goruntule).replace(/^\/+/, '')),
+      `konu:${n}-${d}:${k.kod}`,
+    ];
+    const ilerlemeGuncelle = () => {
+      const top = konular.length || 1;
+      const biten = konular.filter((k) => window.dkTamamlanan && window.dkTamamlanan.varMi(konuAnahtarlari(k))).length;
+      const oran = Math.round((biten / top) * 100);
+      ilerlemeMetin.textContent = `${biten} / ${konular.length} konu tamamlandı`;
+      ilerlemeYuzde.textContent = `%${oran}`;
+      ilerlemeDolgu.style.width = `${oran}%`;
+      const tamamCip = $('[data-suzgec="tamam"]', suzgecCubuk);
+      if (tamamCip) tamamCip.textContent = biten ? `✓ Tamamlananlar (${biten})` : '✓ Tamamlananlar';
+    };
+
     const konuSatiri = (k) => {
       const turler = [...new Set(k.icerik.map((i) => i.tur))];
       const ayni = k.ad === k.unite;
       const ozetOge = k.icerik.find((i) => i.tur === 'Konu anlatımı' && i.goruntule);
       const calismaOge = k.icerik.find((i) => i.tur === 'Çalışma kâğıdı' && (i.hazirla || i.dosya || i.goruntule));
       const ciktiEs = yzBilgi.cikti.filter((c) => ciktiKonulari(c, konular).includes(k));
+      const anahtarlar = konuAnahtarlari(k);
+      const basTamam = Boolean(window.dkTamamlanan && window.dkTamamlanan.varMi(anahtarlar));
+      let liRef = null;
+      const tamamDugme = el('button', {
+        type: 'button',
+        sinif: 'agac-hizli-dugme tamamla',
+        'aria-pressed': String(basTamam),
+        title: 'Bu konuyu çalıştım / tamamladım olarak işaretle',
+        onclick: () => {
+          if (!window.dkTamamlanan) return;
+          const yeni = window.dkTamamlanan.degistir(anahtarlar);
+          tamamDugme.setAttribute('aria-pressed', String(yeni));
+          tamamDugme.textContent = yeni ? '✓ Tamamlandı' : '○ Tamamla';
+          if (liRef) {
+            liRef.dataset.tamam = yeni ? '1' : '0';
+            liRef.classList.toggle('tamamlandi', yeni);
+          }
+          ilerlemeGuncelle();
+          suzgecUygula();
+        },
+      }, basTamam ? '✓ Tamamlandı' : '○ Tamamla');
       const hizliDugmeler = [
         ozetOge ? el('a', { sinif: 'agac-hizli-dugme ozet', href: yol(ozetOge.goruntule), title: 'Konu anlatımını ve etkileşimli etkinlikleri doğrudan aç' }, simge('kitap'), el('span', {}, 'Konu Özeti')) : null,
         calismaOge ? el('a', { sinif: 'agac-hizli-dugme calisma', href: yol(calismaOge.hazirla || calismaOge.dosya || calismaOge.goruntule), title: 'Çalışma kâğıdını aç veya PDF indir' }, simge('kalem'), el('span', {}, 'Çalışma Kâğıdı')) : null,
         ciktiEs.length ? el('a', { sinif: 'agac-hizli-dugme yazili', href: yol(ciktiEs[0].pdf), download: '', title: `Öğrenme çıktısı yazılı kâğıdını indir (${ciktiEs[0].kod})` }, simge('indir'), el('span', {}, 'Yazılı PDF')) : null,
+        tamamDugme,
       ].filter(Boolean);
-      return el('li', {
-        sinif: `agac-konu-satir${hizliDugmeler.length ? ' eylemli' : ''}`,
+      liRef = el('li', {
+        sinif: `agac-konu-satir eylemli${basTamam ? ' tamamlandi' : ''}`,
         'data-arama': normal(`${k.unite} ${k.ad} ${haftaMetni(k.haftalar)}`),
         'data-dolu': k.icerik.length ? '1' : '0',
         'data-calisma': calismaOge ? '1' : '0',
         'data-yazili': ciktiEs.length ? '1' : '0',
+        'data-tamam': basTamam ? '1' : '0',
       },
       el('a', { sinif: `agac-konu${k.icerik.length ? ' dolu' : ''}`, href: adres({ sinif: n, ders: d, konu: k.kod }) },
         el('span', { sinif: 'agac-konu-isaret', 'aria-hidden': 'true' }, k.icerik.length ? '✓' : ''),
@@ -319,7 +366,8 @@
           turler.length ? turler.map((t) => el('span', { sinif: 'agac-rozet', 'data-renk': K().category(t).color }, t)) : el('span', { sinif: 'agac-rozet soluk' }, 'Yakında'),
           ciktiEs.length ? el('span', { sinif: 'agac-rozet', 'data-renk': 'pembe' }, `${ciktiEs.length} yazılı PDF`) : null),
         el('span', { sinif: 'agac-ok', 'aria-hidden': 'true' }, '›')),
-      hizliDugmeler.length ? el('div', { sinif: 'agac-konu-eylemler', 'aria-label': 'Doğrudan materyal bağlantıları' }, ...hizliDugmeler) : null);
+      el('div', { sinif: 'agac-konu-eylemler', 'aria-label': 'Doğrudan materyal bağlantıları' }, ...hizliDugmeler));
+      return liRef;
     };
     const uniteler = agac.uniteler.map((u, ui) => {
       const ks = konular.filter((k) => k.ui === ui);
@@ -351,7 +399,9 @@
           const turUygun = aktifSuzgec === 'tumu'
             || (aktifSuzgec === 'dolu' && li.dataset.dolu === '1')
             || (aktifSuzgec === 'calisma' && li.dataset.calisma === '1')
-            || (aktifSuzgec === 'yazili' && li.dataset.yazili === '1');
+            || (aktifSuzgec === 'yazili' && li.dataset.yazili === '1')
+            || (aktifSuzgec === 'tamam' && li.dataset.tamam === '1')
+            || (aktifSuzgec === 'calisilacak' && li.dataset.tamam !== '1');
           const goster = aramaUygun && turUygun;
           li.hidden = !goster;
           if (goster) uniteGorunen++;
@@ -390,8 +440,11 @@
         suzgecDugme('tumu', 'Tümü'),
         suzgecDugme('dolu', 'İçeriği hazır'),
         suzgecDugme('calisma', 'Çalışma kâğıdı'),
-        yzBilgi.cikti.length ? suzgecDugme('yazili', 'Yazılı PDF') : null),
+        yzBilgi.cikti.length ? suzgecDugme('yazili', 'Yazılı PDF') : null,
+        suzgecDugme('tamam', '✓ Tamamlananlar'),
+        suzgecDugme('calisilacak', '○ Çalışılacaklar')),
       acKapatDugme);
+    ilerlemeGuncelle();
     const bosUyari = el('p', { sinif: 'agac-suzgec-bos', hidden: true }, 'Aramanızla eşleşen konu bulunamadı. Süzgeci temizleyip yeniden deneyin.');
 
     yerles(
@@ -409,7 +462,7 @@
         buKonu ? el('a', { sinif: 'agac-bu-hafta', href: adres({ sinif: n, ders: d, konu: buKonu.kod }) },
           el('span', { sinif: 'agac-rozet bu-hafta' }, `${buHaftaEtiket(buH)} · ${simdi}. hafta`), el('strong', {}, buKonu.ad === buKonu.unite ? buKonu.unite : buKonu.ad), el('span', { 'aria-hidden': 'true' }, '→')) : null)),
       kaynaklar.length ? bolum('agac-ince', el('div', { sinif: 'agac-kaynaklar' }, kaynaklar)) : null,
-      bolum('', baslikSatiri('Üniteler ve konular', 'Konuya dokun ya da sağdaki hızlı düğmelerle doğrudan konu özetini, çalışma kâğıdını ve yazılı PDF kâğıdını aç.'), suzgecCubuk, uniteKapsayici, bosUyari),
+      bolum('', baslikSatiri('Üniteler ve konular', 'Konuya dokun ya da sağdaki hızlı düğmelerle doğrudan konu özetini, çalışma kâğıdını ve yazılı PDF kâğıdını aç.'), ilerlemePano, suzgecCubuk, uniteKapsayici, bosUyari),
       yaziliBolum(yz, n, d, konular),
       disarida.length ? bolum('koyu-zemin', baslikSatiri('Diğer içerikler'), kartlar(disarida, dersler, { dersGoster: false })) : null);
   }

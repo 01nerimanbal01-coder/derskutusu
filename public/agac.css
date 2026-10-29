@@ -516,3 +516,19 @@
   .ogt-kokpit { padding: 18px 16px; border-radius: 16px; }
   .ogt-matris { grid-template-columns: 1fr; }
 }
+
+/* Öğrenci ders çalışma ilerleme çubuğu ve konu tamamlama rozeti */
+.agac-ilerleme-pano { padding: 14px 18px; border-radius: 15px; background: var(--yuzey); border: 1px solid var(--cizgi);
+  margin-bottom: 12px; display: flex; flex-direction: column; gap: 8px; }
+.agac-ilerleme-ust { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 13.5px; color: var(--soluk); }
+.agac-ilerleme-ust strong { color: var(--metin); font-weight: 800; }
+.agac-ilerleme-yuzde { font-weight: 850; font-size: 14px; color: #16a34a; font-variant-numeric: tabular-nums; }
+.agac-ilerleme-cubuk { height: 9px; border-radius: 999px; background: var(--zemin-2); border: 1px solid var(--cizgi); overflow: hidden; }
+.agac-ilerleme-dolgu { display: block; height: 100%; width: 0%; border-radius: inherit;
+  background: linear-gradient(90deg, var(--vurgu), #16a34a); transition: width .25s ease; }
+
+.agac-hizli-dugme.tamamla { cursor: pointer; font: inherit; font-size: 12px; font-weight: 750; }
+.agac-hizli-dugme.tamamla[aria-pressed="true"] { background: #dcfce7; color: #166534; border-color: #22c55e; }
+html[data-tema="koyu"] .agac-hizli-dugme.tamamla[aria-pressed="true"] { background: #14532d; color: #bbf7d0; border-color: #22c55e; }
+.agac-konu-satir.tamamlandi .agac-konu-isaret { background: #16a34a !important; color: #fff !important; border-color: #16a34a !important; }
+
