@@ -45,10 +45,66 @@
   }
 }
 </script>
-<link rel="stylesheet" href="stil.css?v=202610181435">
-<link rel="stylesheet" href="/kesif.css?v=20261017-1">
-<link rel="stylesheet" href="/renkler.css?v=20261017-1" media="screen">
-<link rel="stylesheet" href="/agac.css?v=20261017-1">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Ders Kutusu ücretli mi, üye olmak gerekiyor mu?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Hayır. Bütün içerikler ücretsizdir ve üyelik gerekmez. Konu anlatımlarını açabilir, PDF dosyalarını doğrudan indirebilirsiniz."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "İçerikler hangi programa göre hazırlanıyor?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Konu anlatımları Türkiye Yüzyılı Maarif Modeli ders kitaplarına ve yıllık planlara göre hafta hafta hazırlanır. Metinler özgündür; ders kitabından cümle alınmaz."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Konu anlatımlarını akıllı tahtada kullanabilir miyim?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Evet. Her konu anlatımında sunum modu ve kalemle yazma vardır. Dijital tahta sayfası da kalem, renkler ve kareli zeminle tarayıcıda çalışır."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Çalışma kâğıtları ve yazılılar cevaplı mı?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Çalışma kâğıtları cevapsız ve cevaplı PDF olarak indirilir. Öğrenci sayfalarında yazılıların yalnız öğrenci kâğıdı bulunur; cevaplı kâğıtlar Öğretmen Köşesi'ndedir."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Günlük planlara okul ve öğretmen adını yazabilir miyim?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Evet. Okul, öğretmen ve yönetici adları her sayfaya yazılır; planı tüm yıl ya da ay ay, Word veya PDF olarak indirebilirsiniz. Adlar yalnız tarayıcınızda kalır."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kişisel bilgilerim toplanıyor mu?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Hayır. Sitede üyelik yoktur ve kişisel bilgi istenmez. Ziyaret sayımı çerezsiz yapılır; reklam çerezi yalnız izin verirseniz kullanılır."
+   }
+  }
+ ]
+}
+</script>
+<link rel="stylesheet" href="stil.css?v=202610291630">
+<link rel="stylesheet" href="/kesif.css?v=20261029-1">
+<link rel="stylesheet" href="/renkler.css?v=20261029-1" media="screen">
+<link rel="stylesheet" href="/agac.css?v=20261029-1">
 </head>
 <body data-site-renk="mavi" class="kesif-page">
 <a class="atla" href="#icerik">İçeriğe geç</a>
@@ -131,6 +187,67 @@
     </div>
   </section>
 
+  <section class="bolum sinif-merkezi" id="sinif-merkezi" aria-labelledby="sm-baslik">
+    <div class="kap">
+      <div class="sm-bas">
+        <div>
+          <p class="ust-baslik">Sınıf ve ders merkezi</p>
+          <h2 id="sm-baslik" tabindex="-1">Sınıfını ve dersini seç, materyale doğrudan geç</h2>
+          <p class="sm-aciklama" id="sm-aciklama">Sınıf sekmesine dokun; her dersin konu özetleri, çalışma kâğıtları, yazılı soruları ve planları tek tıkla açılsın.</p>
+        </div>
+        <a class="tumu" id="sm-sinif-bag" href="/ogrenci.html?sinif=8">8. sınıfın bütün üniteleri <svg aria-hidden="true"><use href="#s-ok"/></svg></a>
+      </div>
+      <div class="sm-sekmeler" id="sm-sekmeler" role="tablist" aria-label="Sınıf seçimi">
+        <a href="/ogrenci.html?sinif=5" data-renk="mor">5. Sınıf</a>
+        <a href="/ogrenci.html?sinif=6" data-renk="yesil">6. Sınıf</a>
+        <a href="/ogrenci.html?sinif=7" data-renk="turuncu">7. Sınıf</a>
+        <a href="/ogrenci.html?sinif=8" data-renk="mavi">8. Sınıf · LGS</a>
+        <a href="/ogrenci.html?sinif=9" data-renk="pembe">9. Sınıf</a>
+        <a href="/ogrenci.html?sinif=10" data-renk="sari">10. Sınıf</a>
+        <a href="/ogrenci.html?sinif=11" data-renk="turkuaz">11. Sınıf</a>
+        <a href="/ogrenci.html?sinif=12" data-renk="lacivert">12. Sınıf · YKS</a>
+      </div>
+      <div class="sm-dersler" id="sm-dersler" role="tabpanel" aria-live="polite">
+        <a class="sm-statik" href="/ogrenci.html?sinif=8&amp;ders=matematik" data-renk="mavi"><strong>Matematik</strong><span>Konu anlatımı · Çalışma kâğıdı · Yazılı PDF</span></a>
+        <a class="sm-statik" href="/ogrenci.html?sinif=8&amp;ders=turkce" data-renk="kirmizi"><strong>Türkçe</strong><span>Konu anlatımı · Çalışma kâğıdı · Yazılı PDF</span></a>
+        <a class="sm-statik" href="/ogrenci.html?sinif=8&amp;ders=fen" data-renk="yesil"><strong>Fen Bilimleri</strong><span>Konu anlatımı · Çalışma kâğıdı · Yazılı PDF</span></a>
+        <a class="sm-statik" href="/ogrenci.html?sinif=8&amp;ders=inkilap" data-renk="turuncu"><strong>T.C. İnkılap Tarihi</strong><span>Konu anlatımı · Çalışma kâğıdı · Yazılı PDF</span></a>
+        <a class="sm-statik" href="/ogrenci.html?sinif=8&amp;ders=ingilizce" data-renk="lacivert"><strong>İngilizce</strong><span>Konu anlatımı · Çalışma kâğıdı · Yazılı PDF</span></a>
+        <a class="sm-statik" href="/ogrenci.html?sinif=8&amp;ders=din" data-renk="zumrut"><strong>Din Kültürü</strong><span>Konu anlatımı · Çalışma kâğıdı · Yazılı PDF</span></a>
+      </div>
+      <div class="sm-vitrin-bas">
+        <h3>Materyal türlerine göre hızlı erişim</h3>
+        <a class="tumu" href="/icerikler.html">Tüm kütüphane <svg aria-hidden="true"><use href="#s-ok"/></svg></a>
+      </div>
+      <div class="sm-vitrin" id="sm-vitrin">
+        <a class="sm-vitrin-kart" href="/ogrenci.html" data-renk="mavi" data-vitrin="ozet"><span class="sm-vitrin-simge"><svg aria-hidden="true"><use href="#s-kitap"/></svg></span><div><strong>Konu Anlatımları &amp; Etkinlikler</strong><small data-vitrin-sayi="ozet">Hafta hafta özet, sesli anlatım, etkileşimli etkinlik</small></div></a>
+        <a class="sm-vitrin-kart" href="/icerikler.html?tur=%C3%87al%C4%B1%C5%9Fma+k%C3%A2%C4%9F%C4%B1d%C4%B1" data-renk="yesil" data-vitrin="calisma"><span class="sm-vitrin-simge"><svg aria-hidden="true"><use href="#s-kalem"/></svg></span><div><strong>Çalışma Kâğıtları (PDF)</strong><small data-vitrin-sayi="calisma">Cevapsız öğrenci ve cevaplı öğretmen baskı PDF'leri</small></div></a>
+        <a class="sm-vitrin-kart" href="/yazili.html" data-renk="pembe" data-vitrin="yazili"><span class="sm-vitrin-simge"><svg aria-hidden="true"><use href="#s-onay"/></svg></span><div><strong>Yazılı Soruları &amp; Senaryolar</strong><small data-vitrin-sayi="yazili">Ortak yazılı senaryoları ve öğrenme çıktısı kâğıtları</small></div></a>
+        <a class="sm-vitrin-kart" href="/planlar.html" data-renk="turuncu" data-vitrin="plan"><span class="sm-vitrin-simge"><svg aria-hidden="true"><use href="#s-takvim"/></svg></span><div><strong>Günlük &amp; Yıllık Planlar</strong><small data-vitrin-sayi="plan">Okul ve öğretmen adına özel Word ve PDF planlar</small></div></a>
+        <a class="sm-vitrin-kart" href="/sinav.html" data-renk="mor" data-vitrin="sinav"><span class="sm-vitrin-simge"><svg aria-hidden="true"><use href="#s-buyut"/></svg></span><div><strong>LGS &amp; YKS Sınav Merkezi</strong><small data-vitrin-sayi="sinav">Konu dağılımları, çalışma rehberi ve sınav hazırlık</small></div></a>
+        <a class="sm-vitrin-kart" href="/belgeler.html" data-renk="turkuaz" data-vitrin="belge"><span class="sm-vitrin-simge"><svg aria-hidden="true"><use href="#s-indir"/></svg></span><div><strong>Ders Kitapları &amp; Resmî Belgeler</strong><small data-vitrin-sayi="belge">MEB ders kitapları, öğretim programları ve kılavuzlar</small></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bolum bu-hafta" id="bu-hafta" aria-labelledby="bu-hafta-baslik">
+    <div class="kap">
+      <div class="bh-bas">
+        <div>
+          <p class="ust-baslik">Haftanın konuları</p>
+          <h2 id="bu-hafta-baslik" tabindex="-1">Bu hafta derste</h2>
+          <p class="bh-tarih" id="bh-tarih" aria-live="polite">Sınıfını seç; bu haftanın konu anlatımları burada sıralansın.</p>
+        </div>
+        <div class="bh-gecis">
+          <button class="bh-ok" id="bh-onceki" type="button" hidden><svg aria-hidden="true"><use href="#s-ok"/></svg>Önceki hafta</button>
+          <button class="bh-ok" id="bh-sonraki" type="button" hidden>Sonraki hafta<svg aria-hidden="true"><use href="#s-ok"/></svg></button>
+        </div>
+      </div>
+      <div class="bh-siniflar" id="bh-siniflar" role="group" aria-label="Sınıf seç"><a href="/ogrenci.html?sinif=5">5. sınıf</a><a href="/ogrenci.html?sinif=6">6. sınıf</a><a href="/ogrenci.html?sinif=7">7. sınıf</a><a href="/ogrenci.html?sinif=8">8. sınıf</a><a href="/ogrenci.html?sinif=9">9. sınıf</a><a href="/ogrenci.html?sinif=10">10. sınıf</a><a href="/ogrenci.html?sinif=11">11. sınıf</a><a href="/ogrenci.html?sinif=12">12. sınıf</a></div>
+      <div class="bh-liste" id="bh-liste"></div>
+    </div>
+  </section>
+
   <section class="bolum" id="araclar"><div class="kap"><div class="kesif-araclar"><div><p>SINIFTA VE EVDE</p><h2>Derse küçük yardımcılar</h2><p>Anlat, dinle, tekrar et. Dersin akışına uygun aracı aç.</p></div><div class="kesif-arac-links"><a data-renk="yesil" href="/tahta.html">Dijital tahta <span aria-hidden="true">↗</span></a><a data-renk="turuncu" href="/ders-dagitim.html">Ders dağıtım programı <span aria-hidden="true">↗</span></a><a data-renk="turkuaz" href="/belgeler.html">Resmî belgeler <span aria-hidden="true">↗</span></a><a data-renk="lacivert" href="/arapca.html">Arapça çalışmaları <span aria-hidden="true">↗</span></a><a data-renk="sari" href="/kpss.html">KPSS hazırlık <span aria-hidden="true">↗</span></a></div></div></div></section>
   <section id="sosyal" class="bolum koyu-zemin">
     <div class="kap">
@@ -187,6 +304,24 @@
     </div>
   </section>
 
+  <section id="sss" class="bolum sss" aria-labelledby="sss-baslik">
+    <div class="kap sss-ic">
+      <div>
+        <p class="ust-baslik">Sık sorulan sorular</p>
+        <h2 id="sss-baslik">Merak edilenler</h2>
+        <p class="giris-metin">Bulamadığınız bir soru varsa <a data-eposta href="mailto:info@derskutusu.com">info@derskutusu.com</a> adresine yazabilirsiniz.</p>
+      </div>
+      <div class="sss-liste">
+        <details class="sss-oge" open><summary>Ders Kutusu ücretli mi, üye olmak gerekiyor mu?</summary><p>Hayır. Bütün içerikler ücretsizdir ve üyelik gerekmez. Konu anlatımlarını açabilir, PDF dosyalarını doğrudan indirebilirsiniz.</p></details>
+        <details class="sss-oge"><summary>İçerikler hangi programa göre hazırlanıyor?</summary><p>Konu anlatımları Türkiye Yüzyılı Maarif Modeli ders kitaplarına ve yıllık planlara göre hafta hafta hazırlanır. Metinler özgündür; ders kitabından cümle alınmaz.</p></details>
+        <details class="sss-oge"><summary>Konu anlatımlarını akıllı tahtada kullanabilir miyim?</summary><p>Evet. Her konu anlatımında sunum modu ve kalemle yazma vardır. Dijital tahta sayfası da kalem, renkler ve kareli zeminle tarayıcıda çalışır.</p></details>
+        <details class="sss-oge"><summary>Çalışma kâğıtları ve yazılılar cevaplı mı?</summary><p>Çalışma kâğıtları cevapsız ve cevaplı PDF olarak indirilir. Öğrenci sayfalarında yazılıların yalnız öğrenci kâğıdı bulunur; cevaplı kâğıtlar Öğretmen Köşesi'ndedir.</p></details>
+        <details class="sss-oge"><summary>Günlük planlara okul ve öğretmen adını yazabilir miyim?</summary><p>Evet. Okul, öğretmen ve yönetici adları her sayfaya yazılır; planı tüm yıl ya da ay ay, Word veya PDF olarak indirebilirsiniz. Adlar yalnız tarayıcınızda kalır.</p></details>
+        <details class="sss-oge"><summary>Kişisel bilgilerim toplanıyor mu?</summary><p>Hayır. Sitede üyelik yoktur ve kişisel bilgi istenmez. Ziyaret sayımı çerezsiz yapılır; reklam çerezi yalnız izin verirseniz kullanılır.</p></details>
+      </div>
+    </div>
+  </section>
+
   <section id="iletisim" class="bolum">
     <div class="kap">
       <div class="iletisim-kart" data-renk="pembe">
@@ -239,9 +374,10 @@
 </footer>
 
 <noscript><p class="kap">Bu sayfadaki bazı içerikler JavaScript ile yüklenir.</p></noscript>
-<script src="ortak.js?v=20261021-1"></script>
-<script src="/kesif.js?v=20261004-duzen1"></script>
-<script src="akis.js?v=20261014-2"></script>
+<script src="ortak.js?v=20261029-1"></script>
+<script src="/kesif.js?v=20261029-1"></script>
+<script src="/anasayfa.js?v=20261029-1"></script>
+<script src="akis.js?v=20261029-1"></script>
 <script src="arama.js?v=20261004-duzen1"></script>
 <script src="tahta.js?v=20261018-5"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->

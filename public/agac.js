@@ -49,7 +49,10 @@
         !i.hazirla && !i.dosya && !i.goruntule && i.baglanti ? el('a', { sinif: 'dugme ana', href: i.baglanti, target: '_blank', rel: 'noopener' }, 'Aç', simge('ok')) : null));
   };
   const kartlar = (liste, dersler, secenek) => el('div', { sinif: 'agac-kartlar' }, liste.map((i) => kart(i, dersler, secenek)));
-  const yeniler = (liste) => [...liste].sort((a, b) => String(b.tarih || '').localeCompare(String(a.tarih || '')));
+  // Haftası gelmemiş (gelecek tarihli) kayıtlar "son eklenenler"de haftası gelince görünür (ortak.js yayinda)
+  const yeniler = (liste) => liste.filter((i) => typeof yayinda !== 'function' || yayinda(i)).sort((a, b) => String(b.tarih || '').localeCompare(String(a.tarih || '')));
+  // Ders simgesi (kesif.js); eski önbellekte yoksa baş harf
+  const dersSimgesi = (d, ad, buyuk) => el('span', { sinif: `agac-ders-harf${buyuk ? ' buyuk' : ''}`, 'aria-hidden': 'true' }, K().subjectIcon ? K().subjectIcon(d) : ilkHarf(ad));
 
   // Kitle süzgeci: çalışma kâğıdı iki dalda da (dersler.json "turler" eşlemesi)
   const kitleUyar = (dersler) => {
@@ -57,13 +60,14 @@
     return (i) => (i.kitle || 'ogrenci') === KITLE || turKitle[i.tur] === KITLE;
   };
 
-  // Bu haftanın numarası (planın hafta başlangıç tarihlerinden)
+  // Bu haftanın numarası (planın hafta başlangıç tarihlerinden; ortak.js haftaBul: yerel saat, hafta sonu gelecek hafta)
   const buHafta = (haftalar) => {
-    const bugun = new Date().toISOString().slice(0, 10);
-    let no = null;
-    for (const [n, h] of Object.entries(haftalar || {})) if (h.bas && h.bas <= bugun && (no == null || Number(n) > no)) no = Number(n);
-    return no;
+    const b = typeof haftaBul === 'function' ? haftaBul(haftalar) : null;
+    return b && b.durum !== 'sonra' ? b : null;
   };
+  // Etiket ortak.js HAFTA_ETIKET'ten; "Bu hafta" dışındaki durumlarda hafta numarası da yazılır (ör. "Yeni hafta · 7. hafta")
+  const buHaftaEtiket = (b) => (typeof HAFTA_ETIKET === 'object' && HAFTA_ETIKET[b.durum]) || 'Bu hafta';
+  const buHaftaRozet = (b) => (b.durum === 'hafta' ? 'Bu hafta' : `${buHaftaEtiket(b)} · ${b.no}. hafta`);
   const haftaMetni = (h) => {
     if (!h?.length) return '';
     const s = [...h].sort((a, b) => a - b);
@@ -111,6 +115,16 @@
   });
   const sinifGecis = (dersler, secili, hrefYap, suz = () => true) => el('nav', { sinif: 'agac-gecis', 'aria-label': 'Sınıflar' },
     Object.keys(dersler.siniflar).filter((n) => suz(Number(n))).map((n) => el('a', { href: hrefYap(n), 'data-renk': K().gradeColor(n), 'aria-current': Number(n) === secili ? 'page' : null }, `${n}. sınıf`)));
+  const dersGecis = (dersler, n, seciliDers) => {
+    const ana = dersler.siniflar[n] || [];
+    if (ana.length < 2) return null;
+    return el('nav', { sinif: 'agac-gecis agac-ders-gecis', 'aria-label': `${n}. sınıf dersleri` },
+      ana.map((dk) => el('a', {
+        href: adres({ sinif: n, ders: dk }),
+        'data-renk': K().subjectColor(dk),
+        'aria-current': dk === seciliDers ? 'page' : null,
+      }, dersler.dersler[dk] || dk)));
+  };
 
   // ---------------------------------------------------------------- ÖĞRENCİ
   const ARACLAR_OGRENCI = [
@@ -207,6 +221,7 @@
       el('button', { sinif: 'dugme ana', type: 'submit' }, simge('mercek'), 'Ara'));
     yerles(
       basBolum([{ ad: 'Öğrenci' }], 'Öğrenci', 'Merhaba! Hangi sınıftasın?', 'Sınıfını seç; derslerine, ünitelere ve haftanın konu anlatımlarına ulaş.', arama),
+      typeof sonBakilan === 'object' ? sonBakilan.bolum() : null,
       bolum('', ...sinifIzgarasi(dersler, (n) => adres({ sinif: n }), (n) => {
         const d = [...dersler.siniflar[n], ...(dersler.secmeli?.[n] || [])];
         const c = ogr.filter((i) => Number(i.sinif) === n).length;
@@ -217,7 +232,7 @@
         kartlar(yeniler(ogr).slice(0, 6), dersler)));
   }
 
-  function ogrenciSinif({ dersler, icerikler }, dizin, n) {
+  function ogrenciSinif({ dersler, icerikler }, dizin, n, yz) {
     const ogr = icerikler.filter(kitleUyar(dersler)).filter((i) => Number(i.sinif) === n);
     document.title = `${n}. Sınıf Dersleri · Öğrenci · Ders Kutusu`;
     const dersKarti = (d) => {
@@ -225,9 +240,15 @@
       const ag = dizin?.[`${n}-${d}`];
       const ic = ogr.filter((i) => i.ders === d);
       const say = (t) => ic.filter((i) => i.tur === t).length;
-      const ozet = [say('Konu anlatımı') && sayiYaz(say('Konu anlatımı'), 'konu anlatımı'), say('Çalışma kâğıdı') && sayiYaz(say('Çalışma kâğıdı'), 'çalışma kâğıdı'), say('Ders kitabı') && 'ders kitabı'].filter(Boolean);
+      const yzTop = yz ? (() => { const v = yaziliDers(yz, n, d); return v.senaryo.length + v.deneme.length + v.cikti.length; })() : 0;
+      const ozet = [
+        say('Konu anlatımı') && sayiYaz(say('Konu anlatımı'), 'konu anlatımı'),
+        say('Çalışma kâğıdı') && sayiYaz(say('Çalışma kâğıdı'), 'çalışma kâğıdı'),
+        yzTop && sayiYaz(yzTop, 'yazılı PDF'),
+        say('Ders kitabı') && 'ders kitabı',
+      ].filter(Boolean);
       return el('a', { sinif: 'agac-ders', href: adres({ sinif: n, ders: d }), 'data-renk': K().subjectColor(d) },
-        el('span', { sinif: 'agac-ders-harf', 'aria-hidden': 'true' }, ilkHarf(ad)),
+        dersSimgesi(d, ad),
         el('span', { sinif: 'agac-ders-govde' }, el('strong', {}, ad),
           el('small', {}, ag ? `${ag.unite} ünite · ${ag.konu} konu` : 'Konular hazırlanıyor'),
           el('span', { sinif: 'agac-ders-icerik' }, ozet.length ? ozet.join(' · ') : 'İçerikler hazırlanıyor')),
@@ -243,10 +264,10 @@
         kartlar(yeniler(ogr).slice(0, 6), dersler, { dersGoster: true })) : null);
   }
 
-  async function ogrenciDers({ dersler, icerikler }, n, d) {
+  async function ogrenciDers({ dersler, icerikler }, n, d, yzHazir) {
     const ad = dersler.dersler[d] || d;
     const renk = K().subjectColor(d);
-    const [agac, yz] = await Promise.all([veri(`agac/${n}-${d}.json`), yaziliVeri()]);
+    const [agac, yz] = await Promise.all([veri(`agac/${n}-${d}.json`), yzHazir || yaziliVeri()]);
     const ogr = icerikler.filter(kitleUyar(dersler)).filter((i) => Number(i.sinif) === n && i.ders === d);
     const haftalik = ogr.filter((i) => i.hafta);
     const dersDuzeyi = ogr.filter((i) => !i.hafta);
@@ -255,30 +276,50 @@
     const sinifYol = { ad: `${n}. sınıf`, href: adres({ sinif: n }) };
     if (!agac) {   // yıllık planı olmayan ders: içerikler haftaya göre
       document.title = `${n}. Sınıf ${ad} · Öğrenci · Ders Kutusu`;
-      yerles(basBolum([DAL_YOL, sinifYol, { ad }], `${n}. Sınıf`, ad, null),
+      yerles(basBolum([DAL_YOL, sinifYol, { ad }], `${n}. Sınıf`, ad, null, dersGecis(dersler, n, d)),
         bolum('', ogr.length ? kartlar(yeniler(ogr), dersler, { dersGoster: false }) : bos('İçerikler hazırlanıyor', 'Bu dersin konu anlatımları eklendikçe burada listelenecek.', el('a', { sinif: 'dugme', href: adres({ sinif: n }) }, `${n}. sınıf derslerine dön`))),
         yaziliBolum(yz, n, d, []));
       return;
     }
     const { konular, disarida } = konuyaBagla(agac, haftalik);
-    const simdi = buHafta(agac.haftalar);
-    if (konuKodu) return ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, konuKodu, dersYol, sinifYol, dersDuzeyi, simdi, yz);
+    const buH = buHafta(agac.haftalar);
+    const simdi = buH?.no ?? null;
+    if (konuKodu) return ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, konuKodu, dersYol, sinifYol, dersDuzeyi, simdi, yz, buH);
     document.title = `${n}. Sınıf ${ad}: Üniteler ve Konular · Ders Kutusu`;
     const icerikSay = konular.reduce((t, k) => t + k.icerik.length, 0) + disarida.length;
+    const yzBilgi = yaziliDers(yz, n, d);
+    const yzToplam = yzBilgi.senaryo.length + yzBilgi.deneme.length + yzBilgi.cikti.length;
     const kaynaklar = dersDuzeyi.map((i) => el('a', { sinif: 'agac-kaynak', href: yol(i.goruntule || i.dosya || i.baglanti || '#'), 'data-renk': K().category(i.tur).color },
       simge(K().category(i.tur).icon || 'kitap'), el('span', {}, el('strong', {}, i.tur), el('small', {}, i.baslik))));
     const buKonu = konular.find((k) => simdi && k.haftalar.includes(simdi));
     const konuSatiri = (k) => {
       const turler = [...new Set(k.icerik.map((i) => i.tur))];
       const ayni = k.ad === k.unite;
-      return el('li', {}, el('a', { sinif: `agac-konu${k.icerik.length ? ' dolu' : ''}`, href: adres({ sinif: n, ders: d, konu: k.kod }) },
+      const ozetOge = k.icerik.find((i) => i.tur === 'Konu anlatımı' && i.goruntule);
+      const calismaOge = k.icerik.find((i) => i.tur === 'Çalışma kâğıdı' && (i.hazirla || i.dosya || i.goruntule));
+      const ciktiEs = yzBilgi.cikti.filter((c) => ciktiKonulari(c, konular).includes(k));
+      const hizliDugmeler = [
+        ozetOge ? el('a', { sinif: 'agac-hizli-dugme ozet', href: yol(ozetOge.goruntule), title: 'Konu anlatımını ve etkileşimli etkinlikleri doğrudan aç' }, simge('kitap'), el('span', {}, 'Konu Özeti')) : null,
+        calismaOge ? el('a', { sinif: 'agac-hizli-dugme calisma', href: yol(calismaOge.hazirla || calismaOge.dosya || calismaOge.goruntule), title: 'Çalışma kâğıdını aç veya PDF indir' }, simge('kalem'), el('span', {}, 'Çalışma Kâğıdı')) : null,
+        ciktiEs.length ? el('a', { sinif: 'agac-hizli-dugme yazili', href: yol(ciktiEs[0].pdf), download: '', title: `Öğrenme çıktısı yazılı kâğıdını indir (${ciktiEs[0].kod})` }, simge('indir'), el('span', {}, 'Yazılı PDF')) : null,
+      ].filter(Boolean);
+      return el('li', {
+        sinif: `agac-konu-satir${hizliDugmeler.length ? ' eylemli' : ''}`,
+        'data-arama': normal(`${k.unite} ${k.ad} ${haftaMetni(k.haftalar)}`),
+        'data-dolu': k.icerik.length ? '1' : '0',
+        'data-calisma': calismaOge ? '1' : '0',
+        'data-yazili': ciktiEs.length ? '1' : '0',
+      },
+      el('a', { sinif: `agac-konu${k.icerik.length ? ' dolu' : ''}`, href: adres({ sinif: n, ders: d, konu: k.kod }) },
         el('span', { sinif: 'agac-konu-isaret', 'aria-hidden': 'true' }, k.icerik.length ? '✓' : ''),
         el('span', { sinif: 'agac-konu-govde' }, el('strong', {}, ayni ? 'Ünitenin konuları' : k.ad),
           el('small', {}, [haftaMetni(k.haftalar), tarihMetni(k.haftalar, agac.haftalar)].filter(Boolean).join(' · '))),
         el('span', { sinif: 'agac-konu-turler' },
-          buKonu === k ? el('span', { sinif: 'agac-rozet bu-hafta' }, 'Bu hafta') : null,
-          turler.length ? turler.map((t) => el('span', { sinif: 'agac-rozet', 'data-renk': K().category(t).color }, t)) : el('span', { sinif: 'agac-rozet soluk' }, 'Yakında')),
-        el('span', { sinif: 'agac-ok', 'aria-hidden': 'true' }, '›')));
+          buKonu === k ? el('span', { sinif: 'agac-rozet bu-hafta' }, buHaftaRozet(buH)) : null,
+          turler.length ? turler.map((t) => el('span', { sinif: 'agac-rozet', 'data-renk': K().category(t).color }, t)) : el('span', { sinif: 'agac-rozet soluk' }, 'Yakında'),
+          ciktiEs.length ? el('span', { sinif: 'agac-rozet', 'data-renk': 'pembe' }, `${ciktiEs.length} yazılı PDF`) : null),
+        el('span', { sinif: 'agac-ok', 'aria-hidden': 'true' }, '›')),
+      hizliDugmeler.length ? el('div', { sinif: 'agac-konu-eylemler', 'aria-label': 'Doğrudan materyal bağlantıları' }, ...hizliDugmeler) : null);
     };
     const uniteler = agac.uniteler.map((u, ui) => {
       const ks = konular.filter((k) => k.ui === ui);
@@ -290,22 +331,90 @@
           el('span', { sinif: 'agac-unite-ok', 'aria-hidden': 'true' }, '›')),
         el('ol', { sinif: 'agac-konular' }, ks.map(konuSatiri)));
     });
+    const uniteKapsayici = el('div', { sinif: 'agac-uniteler' }, uniteler);
+    const aramaGirdi = el('input', {
+      type: 'search',
+      sinif: 'agac-konu-ara',
+      placeholder: 'Ünite, konu veya hafta ara (ör. 5. hafta)…',
+      'aria-label': 'Ünite veya konu ara',
+      autocomplete: 'off',
+    });
+    let aktifSuzgec = 'tumu';
+    const suzgecUygula = () => {
+      const sorgu = normal(aramaGirdi.value);
+      let gorunenTop = 0;
+      uniteler.forEach((det) => {
+        const satirlar = $$('.agac-konu-satir', det);
+        let uniteGorunen = 0;
+        satirlar.forEach((li) => {
+          const aramaUygun = !sorgu || String(li.dataset.arama || '').includes(sorgu);
+          const turUygun = aktifSuzgec === 'tumu'
+            || (aktifSuzgec === 'dolu' && li.dataset.dolu === '1')
+            || (aktifSuzgec === 'calisma' && li.dataset.calisma === '1')
+            || (aktifSuzgec === 'yazili' && li.dataset.yazili === '1');
+          const goster = aramaUygun && turUygun;
+          li.hidden = !goster;
+          if (goster) uniteGorunen++;
+        });
+        det.hidden = uniteGorunen === 0;
+        if (uniteGorunen > 0 && (sorgu || aktifSuzgec !== 'tumu')) det.open = true;
+        gorunenTop += uniteGorunen;
+      });
+      bosUyari.hidden = gorunenTop > 0;
+    };
+    const suzgecDugme = (kod, etiket) => el('button', {
+      type: 'button',
+      sinif: 'agac-suzgec-dugme',
+      'aria-pressed': kod === 'tumu' ? 'true' : 'false',
+      'data-suzgec': kod,
+      onclick: (o) => {
+        aktifSuzgec = kod;
+        $$('.agac-suzgec-dugme', suzgecCubuk).forEach((b) => b.setAttribute('aria-pressed', String(b === o.currentTarget)));
+        suzgecUygula();
+      },
+    }, etiket);
+    let hepsiAcik = false;
+    const acKapatDugme = el('button', {
+      type: 'button',
+      sinif: 'agac-ac-kapat',
+      onclick: () => {
+        hepsiAcik = !hepsiAcik;
+        uniteler.forEach((det) => { if (!det.hidden) det.open = hepsiAcik; });
+        acKapatDugme.textContent = hepsiAcik ? 'Tüm üniteleri kapat' : 'Tüm üniteleri aç';
+      },
+    }, 'Tüm üniteleri aç');
+    aramaGirdi.addEventListener('input', suzgecUygula);
+    const suzgecCubuk = el('div', { sinif: 'agac-suzgec-cubuk' },
+      el('div', { sinif: 'agac-suzgec-arama' }, simge('mercek'), aramaGirdi),
+      el('div', { sinif: 'agac-suzgec-cipler', role: 'group', 'aria-label': 'Materyal süzgeci' },
+        suzgecDugme('tumu', 'Tümü'),
+        suzgecDugme('dolu', 'İçeriği hazır'),
+        suzgecDugme('calisma', 'Çalışma kâğıdı'),
+        yzBilgi.cikti.length ? suzgecDugme('yazili', 'Yazılı PDF') : null),
+      acKapatDugme);
+    const bosUyari = el('p', { sinif: 'agac-suzgec-bos', hidden: true }, 'Aramanızla eşleşen konu bulunamadı. Süzgeci temizleyip yeniden deneyin.');
+
     yerles(
       el('section', { sinif: 'agac-bas agac-ders-bas', 'data-renk': renk }, el('div', { sinif: 'kap' },
         konum(KOK_YOL, DAL_YOL, sinifYol, { ad }),
         el('div', { sinif: 'agac-ders-kart' },
-          el('span', { sinif: 'agac-ders-harf buyuk', 'aria-hidden': 'true' }, ilkHarf(ad)),
+          dersSimgesi(d, ad, true),
           el('div', {}, el('p', { sinif: 'agac-ust' }, `${n}. Sınıf`), el('h1', {}, ad),
-            el('div', { sinif: 'agac-cipler' }, el('span', {}, `${agac.uniteler.length} ünite`), el('span', {}, `${konular.length} konu`), el('span', {}, icerikSay ? sayiYaz(icerikSay, 'içerik') : 'İçerikler hazırlanıyor')))),
+            el('div', { sinif: 'agac-cipler' },
+              el('span', {}, `${agac.uniteler.length} ünite`),
+              el('span', {}, `${konular.length} konu`),
+              el('span', {}, icerikSay ? sayiYaz(icerikSay, 'içerik') : 'İçerikler hazırlanıyor'),
+              yzToplam ? el('a', { sinif: 'agac-cip-bag', href: '#yaziliya-hazirlik' }, `${yzToplam} yazılı PDF ↓`) : null))),
+        dersGecis(dersler, n, d),
         buKonu ? el('a', { sinif: 'agac-bu-hafta', href: adres({ sinif: n, ders: d, konu: buKonu.kod }) },
-          el('span', { sinif: 'agac-rozet bu-hafta' }, `Bu hafta · ${simdi}. hafta`), el('strong', {}, buKonu.ad === buKonu.unite ? buKonu.unite : buKonu.ad), el('span', { 'aria-hidden': 'true' }, '→')) : null)),
+          el('span', { sinif: 'agac-rozet bu-hafta' }, `${buHaftaEtiket(buH)} · ${simdi}. hafta`), el('strong', {}, buKonu.ad === buKonu.unite ? buKonu.unite : buKonu.ad), el('span', { 'aria-hidden': 'true' }, '→')) : null)),
       kaynaklar.length ? bolum('agac-ince', el('div', { sinif: 'agac-kaynaklar' }, kaynaklar)) : null,
-      bolum('', baslikSatiri('Üniteler ve konular', 'Konuya dokun; konu anlatımı, etkinlikler ve çalışma kâğıdı açılır.'), el('div', { sinif: 'agac-uniteler' }, uniteler)),
+      bolum('', baslikSatiri('Üniteler ve konular', 'Konuya dokun ya da sağdaki hızlı düğmelerle doğrudan konu özetini, çalışma kâğıdını ve yazılı PDF kâğıdını aç.'), suzgecCubuk, uniteKapsayici, bosUyari),
       yaziliBolum(yz, n, d, konular),
       disarida.length ? bolum('koyu-zemin', baslikSatiri('Diğer içerikler'), kartlar(disarida, dersler, { dersGoster: false })) : null);
   }
 
-  function ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, kod, dersYol, sinifYol, dersDuzeyi, simdi, yz) {
+  function ogrenciKonu({ dersler }, n, d, ad, renk, agac, konular, kod, dersYol, sinifYol, dersDuzeyi, simdi, yz, buH) {
     const ix = konular.findIndex((k) => k.kod === kod);
     if (ix < 0) { location.replace(adres({ sinif: n, ders: d })); return; }
     const k = konular[ix];
@@ -330,7 +439,7 @@
         el('p', { sinif: 'agac-ust' }, `${n}. Sınıf · ${ad} · ${k.ui + 1}. ünite: ${k.unite}`),
         el('h1', {}, baslik),
         el('div', { sinif: 'agac-cipler' }, el('span', {}, haftaMetni(k.haftalar)), tarihMetni(k.haftalar, agac.haftalar) ? el('span', {}, tarihMetni(k.haftalar, agac.haftalar)) : null,
-          simdi && k.haftalar.includes(simdi) ? el('span', { sinif: 'agac-rozet bu-hafta' }, 'Bu hafta') : null))),
+          simdi && buH && k.haftalar.includes(simdi) ? el('span', { sinif: 'agac-rozet bu-hafta' }, buHaftaRozet(buH)) : null))),
       bolum('', k.icerik.length ? el('div', {}, sekmeler, liste)
         : bos('Bu konunun içerikleri hazırlanıyor', 'Konu anlatımı ve çalışma kâğıdı yıllık plan sırasıyla ekleniyor. Bu arada ders kitabından çalışabilirsin.',
           ...dersDuzeyi.filter((i) => i.tur === 'Ders kitabı').flatMap((i) => [el('a', { sinif: 'dugme ana', href: yol(i.goruntule || i.baglanti) }, 'Ders kitabını aç', simge('ok')),
@@ -403,8 +512,9 @@
     if (n && !v.dersler.siniflar[n]) { location.replace(location.pathname); return; }
     if (KITLE === 'ogrenci') {
       const d = P.get('ders');
-      if (n && d && (v.dersler.dersler[d])) await ogrenciDers(v, n, d);
-      else if (n) ogrenciSinif(v, dizin, n);
+      const yz = n ? await yaziliVeri() : null;
+      if (n && d && (v.dersler.dersler[d])) await ogrenciDers(v, n, d, yz);
+      else if (n) ogrenciSinif(v, dizin, n, yz);
       else ogrenciKok(v, dizin);
     } else {
       const kat = KATEGORILER.find((k) => k.kod === P.get('kategori') && k.tur);
