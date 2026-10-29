@@ -1,7 +1,16 @@
 // Codex: Arapça harf ve kelime çalışması. İlerleme yalnız cihazda saklanır.
 (() => {
   const alan = $('#a-alan'); if (!alan) return;
-  const MODLAR = [['harfler','Harfler'],['hareke','Harekeler'],['kartlar','Kartlar'],['dinle','Dinle'],['test','Test'],['yaz','Yaz'],['eslestir','Eşleştir']];
+  const MODLAR = [
+    ['harfler','🔤 Harfler','zumrut'],
+    ['hareke','✨ Harekeler','sari'],
+    ['kartlar','🃏 Kartlar','mavi'],
+    ['dinle','🔊 Dinle & Sözlük','turkuaz'],
+    ['test','📝 Test','pembe'],
+    ['yaz','✍️ Yaz','turuncu'],
+    ['eslestir','🧩 Eşleştir','yesil'],
+  ];
+  const SINIF_RENK = { 5: 'mor', 6: 'yesil', 7: 'turuncu', 8: 'mavi', 9: 'pembe', 10: 'sari', 11: 'turkuaz', 12: 'lacivert' };
   const KEY = 'dk-arapca-ogrenildi-v1';
   const state = { grade:5, topic:1, mode:'harfler' }; let data, learned={};
   try { const value=JSON.parse(localStorage.getItem(KEY)||'{}'); if(value && typeof value==='object' && !Array.isArray(value)) learned=value; } catch {}
@@ -65,9 +74,9 @@
   const listen = s => button('Dinle',()=>say(s));
   let odak=null;
   function controls(){
-    $('#a-sinif').replaceChildren(...data.siniflar.map(g=>el('button',{type:'button',sinif:'sekme','aria-pressed':String(g.sinif===state.grade),onclick:()=>{state.grade=g.sinif;state.topic=g.temalar[0].no;odak='#a-sinif';draw();}},`${g.sinif}. sınıf`)));
-    const select=$('#a-konu');select.replaceChildren(...data.siniflar.find(g=>g.sinif===state.grade).temalar.map(t=>el('option',{value:t.no,selected:t.no===state.topic},`${t.ad} (${t.kelimeler.length} kelime)`)));select.onchange=()=>{state.topic=Number(select.value);draw();};
-    $('#a-modlar').replaceChildren(...MODLAR.map(([m,t])=>el('button',{type:'button',sinif:'sekme','aria-pressed':String(m===state.mode),onclick:()=>{state.mode=m;odak='#a-modlar';draw();}},t)));
+    $('#a-sinif').replaceChildren(...data.siniflar.map(g=>el('button',{type:'button',sinif:'sekme','data-renk':SINIF_RENK[g.sinif]||'zumrut','aria-pressed':String(g.sinif===state.grade),onclick:()=>{state.grade=g.sinif;state.topic=g.temalar[0].no;odak='#a-sinif';draw();}},`${g.sinif}. sınıf`)));
+    const select=$('#a-konu');select.replaceChildren(...data.siniflar.find(g=>g.sinif===state.grade).temalar.map(t=>{const n=t.kelimeler.filter(w=>learned[id(w)]).length;return el('option',{value:t.no,selected:t.no===state.topic},`${t.ad} (${n}/${t.kelimeler.length} kelime)`);}));select.onchange=()=>{state.topic=Number(select.value);draw();};
+    $('#a-modlar').replaceChildren(...MODLAR.map(([m,t,renk])=>el('button',{type:'button',sinif:'sekme','data-renk':renk||'zumrut','aria-pressed':String(m===state.mode),onclick:()=>{state.mode=m;odak='#a-modlar';draw();}},t)));
     // Sekmeler yeniden üretildiği için odak, basılan sekmenin yenisine geri verilir.
     if(odak){$(odak+' [aria-pressed="true"]')?.focus();odak=null;}
   }
@@ -97,14 +106,43 @@
     let i=0,score=0;const qs=mix([['تَ','Üstün'],['تِ','Esre'],['تُ','Ötre'],['جَ','Üstün'],['جِ','Esre'],['جُ','Ötre']]);const exercise=el('div',{sinif:'a-detay'});alan.append(exercise);
     function next(){if(i===qs.length){exercise.replaceChildren(el('p',{},`6 soruda ${score} doğru`),button('Yeniden çalış',draw));return;}const [s,correct]=qs[i],feedback=el('p',{role:'status'});let answered=false;const opts=el('div',{sinif:'k-dugmeler sol'});['Üstün','Esre','Ötre'].forEach(t=>opts.append(button(t,()=>{if(answered)return;answered=true;for(const b of opts.children)b.disabled=true;if(t===correct)score++;feedback.textContent=t===correct?'Doğru!':`Doğrusu: ${correct}.`;exercise.append(button('Sonraki',()=>{i++;next();}));})));exercise.replaceChildren(el('h3',{},`${i+1} / 6 · Bu harfin harekesi hangisi?`),ar(s,'a-buyuk'),opts,feedback);}next();
   }
-  function cards(){let fresh=false,list=[],i=0;const box=el('div',{}),check=el('input',{type:'checkbox',onchange:e=>{fresh=e.target.checked;start();}});alan.append(el('label',{},check,' Yalnız öğrenmediğim kelimeler'),box);
+  function cards(){let fresh=false,list=[],i=0;const box=el('div',{}),check=el('input',{type:'checkbox',onchange:e=>{fresh=e.target.checked;start();}});alan.append(el('label',{sinif:'k-secenek'},check,' Yalnız öğrenmediğim kelimeler'),box);
     function start(){list=mix(words().filter(w=>!fresh||!learned[id(w)]));i=0;next();}
-    function next(){box.replaceChildren();if(i===list.length){box.append(el('p',{},list.length?'Kartların sonuna geldin.':'Bu grupta öğrenmediğin kelime kalmadı.'),button('Yeniden başla',start));return;}
-      const w=list[i],meaning=el('p',{sinif:'a-anlam',hidden:true},w.tr),flip=button('Anlamı göster',()=>{meaning.hidden=!meaning.hidden;flip.textContent=meaning.hidden?'Anlamı göster':'Anlamı gizle';});
-      box.append(el('p',{sinif:'k-sira'},`${i+1} / ${list.length}`),el('div',{sinif:'a-kart'},ar(w.ar,'a-kelime'),meaning,flip,listen(w.ar)),el('div',{sinif:'k-dugmeler'},button('Tekrar edeceğim',()=>{i++;next();}),button('Biliyorum',()=>{mark(w);i++;next();},'dugme ana')));
+    function next(){box.replaceChildren();if(i===list.length){box.append(el('div',{sinif:'k-bitti'},el('p',{},list.length?'Kartların sonuna geldin.':'Bu grupta öğrenmediğin kelime kalmadı.'),button('Yeniden başla',start,'dugme ana')));return;}
+      const w=list[i],meaning=el('p',{sinif:'a-anlam',hidden:true},w.tr),flip=button('Anlamı göster ↻',()=>{meaning.hidden=!meaning.hidden;flip.textContent=meaning.hidden?'Anlamı göster ↻':'Anlamı gizle';});
+      const prevBtn=el('button',{type:'button',sinif:'dugme',disabled:i===0,onclick:()=>{if(i>0){i--;next();}}},'← Önceki');
+      box.append(
+        el('p',{sinif:'k-sira'},`${i+1} / ${list.length}`,learned[id(w)]?el('span',{sinif:'k-rozet'},'✓ Öğrendin'):null),
+        el('div',{sinif:'a-kart'},ar(w.ar,'a-kelime'),meaning,el('div',{sinif:'a-kart-araclar'},flip,listen(w.ar))),
+        el('div',{sinif:'k-dugmeler'},prevBtn,button('Tekrar edeceğim',()=>{i++;next();}),button('✓ Biliyorum',()=>{mark(w);i++;next();},'dugme ana')));
     }start();
   }
-  function listening(){const list=el('ul',{sinif:'a-sozluk'});for(const w of words())list.append(el('li',{},ar(w.ar),el('span',{},w.tr),listen(w.ar)));alan.append(list);}
+  function listening(){
+    let q='',durumFiltre='tumu';
+    const girdi=el('input',{type:'search',sinif:'k-sozluk-ara',placeholder:'Arapça veya Türkçe anlam ara…','aria-label':'Kelime ara',oninput:()=>{q=girdi.value.trim().toLocaleLowerCase('tr');cizListe();}});
+    const filtreKutu=el('div',{sinif:'k-sozluk-filtreler',role:'group','aria-label':'Öğrenme durumu'});
+    const list=el('ul',{sinif:'a-sozluk'});
+    function cizListe(){
+      const tum=words().filter(w=>!q||w.ar.includes(q)||base(w.ar).includes(base(q))||w.tr.toLocaleLowerCase('tr').includes(q));
+      const ogrSay=tum.filter(w=>learned[id(w)]).length;
+      filtreKutu.replaceChildren(...[['tumu',`Tümü (${tum.length})`],['bildi',`✓ Öğrendiklerim (${ogrSay})`],['yeni',`○ Öğrenmediklerim (${tum.length-ogrSay})`]].map(([kod,et])=>
+        el('button',{type:'button',sinif:'k-filtre-cip','aria-pressed':String(durumFiltre===kod),onclick:()=>{durumFiltre=kod;cizListe();}},et)));
+      const suzulen=tum.filter(w=>durumFiltre==='tumu'?true:durumFiltre==='bildi'?Boolean(learned[id(w)]):!learned[id(w)]);
+      list.replaceChildren();
+      if(!suzulen.length){list.append(el('li',{sinif:'k-bos'},'Aramanıza uygun kelime bulunamadı.'));return;}
+      for(const w of suzulen){
+        const bitti=Boolean(learned[id(w)]);
+        const ogrBtn=el('button',{type:'button',sinif:'k-ogren-dugme','aria-pressed':String(bitti),onclick:()=>{
+          if(learned[id(w)])delete learned[id(w)];else learned[id(w)]=true;
+          try{localStorage.setItem(KEY,JSON.stringify(learned));}catch{}
+          progress();controls();cizListe();
+        }},bitti?'✓ Öğrendim':'+ Öğren');
+        list.append(el('li',{sinif:bitti?'bildi':null},ar(w.ar),el('span',{},w.tr),el('div',{sinif:'a-sozluk-eylem'},listen(w.ar),ogrBtn)));
+      }
+    }
+    alan.append(el('div',{sinif:'k-sozluk-panel'},el('div',{sinif:'k-sozluk-ust'},girdi),el('div',{sinif:'k-sozluk-alt'},filtreKutu)),list);
+    cizListe();
+  }
   function quiz(){const qs=mix(words()).slice(0,10),slots=plannedSlots(qs.length);let i=0,score=0;const box=el('div',{});alan.append(box);
     function next(){box.replaceChildren();if(i===qs.length){box.append(el('h3',{},`${qs.length} soruda ${score} doğru`),button('Yeni test',draw));return;}const w=qs[i],fb=el('p',{role:'status',sinif:'etk-geri'}),row=el('div',{sinif:'etk-secenekler'});let answered=false;
       optionsFor(w,words(),slots[i]).forEach(x=>row.append(button(x.tr,e=>{if(answered)return;answered=true;for(const b of row.children)b.disabled=true;if(x===w){score++;e.currentTarget.classList.add('dogru');fb.textContent='Doğru!';}else{e.currentTarget.classList.add('yanlis');fb.textContent=`Doğrusu: ${w.tr}`;}const nb=button('Sonraki soru',()=>{i++;next();odakla(box);},'dugme ana');box.append(nb);nb.focus();},'etk-sec')));

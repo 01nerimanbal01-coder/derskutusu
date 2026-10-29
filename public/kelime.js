@@ -5,9 +5,17 @@
 (() => {
   const alan = $('#k-alan');
   if (!alan) return;
-  const KIPLER = [['kartlar', 'Kartlar'], ['dinle', 'Dinle'], ['test', 'Test'], ['yaz', 'Yaz'], ['eslestir', 'Eşleştir']];
+  const KIPLER = [
+    ['kartlar', '🃏 Kartlar', 'mavi'],
+    ['dinle', '🔊 Dinle', 'turkuaz'],
+    ['test', '📝 Test', 'pembe'],
+    ['yaz', '✍️ Yaz', 'turuncu'],
+    ['eslestir', '🧩 Eşleştir', 'yesil'],
+    ['sozluk', '🔍 Sözlük & Arama', 'mor'],
+  ];
+  const SINIF_RENK = { 5: 'mor', 6: 'yesil', 7: 'turuncu', 8: 'mavi', 9: 'pembe', 10: 'sari', 11: 'turkuaz', 12: 'lacivert' };
   const ANAHTAR = 'dk-kelime-ogrenildi';
-  const durum = { veri: null, sinif: 5, tema: 1, kip: 'kartlar' };
+  const durum = { veri: null, sinif: 8, tema: 1, kip: 'kartlar' };
 
   // ---------- ilerleme (yalnız tarayıcıda) ----------
   let ogrenildi = {};
@@ -65,17 +73,18 @@
   function secimKur() {
     const sinifSekme = $('#k-sinif'); sinifSekme.replaceChildren();
     for (const s of durum.veri.siniflar) {
-      sinifSekme.append(el('button', { type: 'button', sinif: 'sekme', 'aria-pressed': String(s.sinif === durum.sinif),
+      sinifSekme.append(el('button', { type: 'button', sinif: 'sekme', 'data-renk': SINIF_RENK[s.sinif] || 'mavi', 'aria-pressed': String(s.sinif === durum.sinif),
         onclick: () => { durum.sinif = s.sinif; durum.tema = s.temalar[0].no; secimKur(); ciz(); } }, `${s.sinif}. sınıf`));
     }
     const temaSec = $('#k-tema'); temaSec.replaceChildren();
     for (const t of durum.veri.siniflar.find((s) => s.sinif === durum.sinif).temalar) {
-      temaSec.append(el('option', { value: t.no, selected: t.no === durum.tema }, `Theme ${t.no} · ${t.ad} (${t.kelimeler.length})`));
+      const ogrSay = (t.kelimeler || []).filter(bildi).length;
+      temaSec.append(el('option', { value: t.no, selected: t.no === durum.tema }, `Theme ${t.no} · ${t.ad} (${ogrSay}/${t.kelimeler.length})`));
     }
     temaSec.onchange = () => { durum.tema = Number(temaSec.value); ciz(); };
     const kip = $('#k-kipler'); kip.replaceChildren();
-    for (const [ad, yazi] of KIPLER) {
-      kip.append(el('button', { type: 'button', sinif: 'sekme', 'aria-pressed': String(ad === durum.kip),
+    for (const [ad, yazi, renk] of KIPLER) {
+      kip.append(el('button', { type: 'button', sinif: 'sekme', 'data-renk': renk || 'mavi', 'aria-pressed': String(ad === durum.kip),
         onclick: () => { durum.kip = ad; secimKur(); ciz(); } }, yazi));
     }
   }
@@ -103,14 +112,15 @@
       const k = liste[sira];
       const kart = el('button', { type: 'button', sinif: 'k-kart', 'aria-label': `${k.en}. Çevirmek için dokun.`,
         onclick: () => { kart.classList.toggle('cevrik'); kart.setAttribute('aria-label', kart.classList.contains('cevrik') ? `${k.en}: ${k.tr}` : `${k.en}. Çevirmek için dokun.`); } },
-        el('span', { sinif: 'k-yuz on' }, el('b', {}, k.en), k.tur ? el('small', {}, k.tur) : null, el('em', {}, 'Türkçesi için dokun')),
+        el('span', { sinif: 'k-yuz on' }, el('b', {}, k.en), k.tur ? el('small', {}, k.tur) : null, el('em', {}, 'Türkçesi için dokun ↻')),
         el('span', { sinif: 'k-yuz arka' }, el('b', {}, k.tr), el('small', {}, k.en)));
       kutu.append(
-        el('p', { sinif: 'k-sira' }, `${sira + 1} / ${liste.length}`, bildi(k) ? el('span', { sinif: 'k-rozet' }, 'Öğrendin') : null),
+        el('p', { sinif: 'k-sira' }, `${sira + 1} / ${liste.length}`, bildi(k) ? el('span', { sinif: 'k-rozet' }, '✓ Öğrendin') : null),
         el('div', { sinif: 'k-kart-satir' }, kart, sesDugme(k.en)),
         el('div', { sinif: 'k-dugmeler' },
+          el('button', { type: 'button', sinif: 'dugme', disabled: sira === 0, onclick: () => { if (sira > 0) { sira--; goster(); } } }, '← Önceki'),
           el('button', { type: 'button', sinif: 'dugme', onclick: () => { sira++; goster(); } }, 'Tekrar edeceğim'),
-          el('button', { type: 'button', sinif: 'dugme ana', onclick: () => { isaretle(k, true); sira++; goster(); } }, 'Biliyorum')));
+          el('button', { type: 'button', sinif: 'dugme ana', onclick: () => { isaretle(k, true); sira++; goster(); } }, '✓ Biliyorum')));
     }
     kur();
   }
@@ -133,7 +143,21 @@
       sonraki();
     } }, 'Hepsini sırayla dinle');
     for (const k of kelimeler()) {
-      liste.append(el('li', { 'data-en': k.en, sinif: bildi(k) ? 'bildi' : null }, sesDugme(k.en), el('b', {}, k.en), el('span', {}, k.tr), k.tur ? el('small', {}, k.tur) : null));
+      const ogrBtn = el('button', {
+        type: 'button',
+        sinif: 'k-ogren-dugme',
+        'aria-pressed': String(bildi(k)),
+        title: bildi(k) ? 'Öğrendim işaretini kaldır' : 'Öğrendim olarak işaretle',
+        onclick: (e) => {
+          e.stopPropagation();
+          const yeni = !bildi(k);
+          isaretle(k, yeni);
+          ogrBtn.setAttribute('aria-pressed', String(yeni));
+          ogrBtn.textContent = yeni ? '✓ Öğrendim' : '+ Öğren';
+          ogrBtn.closest('li')?.classList.toggle('bildi', yeni);
+        },
+      }, bildi(k) ? '✓ Öğrendim' : '+ Öğren');
+      liste.append(el('li', { 'data-en': k.en, sinif: bildi(k) ? 'bildi' : null }, sesDugme(k.en), el('b', {}, k.en), el('span', {}, k.tr), k.tur ? el('small', {}, k.tur) : null, ogrBtn));
     }
     alan.append(el('div', { sinif: 'k-dugmeler sol' }, tum), liste);
   }
@@ -272,10 +296,91 @@
     kur();
   }
 
-  const CIZ = { kartlar, dinle, test, yaz, eslestir };
+  // ---------- Sözlük & Canlı Arama ----------
+  function sozluk() {
+    let sorgu = '', durumFiltre = 'tumu', tumTemalar = false;
+    const girdi = el('input', {
+      type: 'search',
+      sinif: 'k-sozluk-ara',
+      placeholder: 'İngilizce veya Türkçe kelime ara…',
+      'aria-label': 'Kelime ara',
+      oninput: () => { sorgu = girdi.value.trim().toLocaleLowerCase('tr'); listeCiz(); },
+    });
+    const kapsamKutu = el('input', {
+      type: 'checkbox',
+      onchange: (e) => { tumTemalar = e.target.checked; listeCiz(); },
+    });
+    const filtreKutu = el('div', { sinif: 'k-sozluk-filtreler', role: 'group', 'aria-label': 'Öğrenme durumu filtresi' });
+    const sayac = el('span', { sinif: 'k-sozluk-sayac' });
+    const yazdirBtn = el('button', { type: 'button', sinif: 'dugme', onclick: () => window.print() }, '🖨️ Listeyi Yazdır');
+    const liste = el('ol', { sinif: 'k-liste k-sozluk-liste' });
+
+    const kaynakKelimeler = () => {
+      if (!tumTemalar) return kelimeler().map((k) => ({ ...k, temaNo: durum.tema }));
+      const sinifObj = durum.veri.siniflar.find((s) => s.sinif === durum.sinif);
+      return (sinifObj?.temalar || []).flatMap((t) => (t.kelimeler || []).map((k) => ({ ...k, temaNo: t.no, temaAd: t.ad })));
+    };
+
+    function listeCiz() {
+      const havuz = kaynakKelimeler();
+      const aranan = havuz.filter((k) => !sorgu || k.en.toLocaleLowerCase('en').includes(sorgu) || k.tr.toLocaleLowerCase('tr').includes(sorgu));
+      const ogrenilenSay = aranan.filter(bildi).length;
+      const kalanSay = aranan.length - ogrenilenSay;
+      filtreKutu.replaceChildren(
+        ...[['tumu', `Tümü (${aranan.length})`], ['bildi', `✓ Öğrendiklerim (${ogrenilenSay})`], ['yeni', `○ Öğrenmediklerim (${kalanSay})`]].map(([kod, etiket]) =>
+          el('button', {
+            type: 'button',
+            sinif: 'k-filtre-cip',
+            'aria-pressed': String(durumFiltre === kod),
+            onclick: () => { durumFiltre = kod; listeCiz(); },
+          }, etiket)));
+
+      const suzulen = aranan.filter((k) => durumFiltre === 'tumu' ? true : durumFiltre === 'bildi' ? bildi(k) : !bildi(k));
+      sayac.textContent = `${suzulen.length} kelime gösteriliyor`;
+      liste.replaceChildren();
+      if (!suzulen.length) {
+        liste.append(el('p', { sinif: 'k-bos' }, 'Aramanıza veya seçtiğiniz filtreye uygun kelime bulunamadı.'));
+        return;
+      }
+      for (const k of suzulen) {
+        const ogrBtn = el('button', {
+          type: 'button',
+          sinif: 'k-ogren-dugme',
+          'aria-pressed': String(bildi(k)),
+          onclick: () => {
+            isaretle(k, !bildi(k));
+            secimKur();
+            listeCiz();
+          },
+        }, bildi(k) ? '✓ Öğrendim' : '+ Öğren');
+        const altDetay = [k.tur, tumTemalar ? `Theme ${k.temaNo}` : null].filter(Boolean).join(' · ');
+        liste.append(el('li', { 'data-en': k.en, sinif: bildi(k) ? 'bildi' : null },
+          sesDugme(k.en),
+          el('b', {}, k.en),
+          el('span', {}, k.tr),
+          altDetay ? el('small', {}, altDetay) : null,
+          ogrBtn));
+      }
+    }
+
+    alan.append(
+      el('div', { sinif: 'k-sozluk-panel' },
+        el('div', { sinif: 'k-sozluk-ust' },
+          girdi,
+          el('label', { sinif: 'k-secenek k-tum-tema-sec' }, kapsamKutu, ` ${durum.sinif}. sınıfın tüm temalarında ara`),
+          yazdirBtn),
+        el('div', { sinif: 'k-sozluk-alt' }, filtreKutu, sayac)),
+      liste);
+    listeCiz();
+  }
+
+  const CIZ = { kartlar, dinle, test, yaz, eslestir, sozluk };
   function ciz() {
     if (sesVar) speechSynthesis.cancel();
     alan.replaceChildren();
+    const renk = SINIF_RENK[durum.sinif] || 'mavi';
+    document.body.dataset.siteRenk = renk;
+    alan.closest('.bolum')?.setAttribute('data-renk', renk);
     adresYaz(); ilerlemeGoster();
     const t = temaBul();
     $('#k-tema-baslik').textContent = t ? `${durum.sinif}. sınıf · Theme ${t.no}: ${t.ad}` : '';
@@ -286,7 +391,9 @@
     if (!v) { alan.replaceChildren(el('p', { sinif: 'k-uyari' }, 'Kelimeler yüklenemedi. Sayfayı yenileyin.')); return; }
     durum.veri = v;
     const p = new URLSearchParams(location.search);
-    const s = v.siniflar.find((x) => x.sinif === Number(p.get('s'))) || v.siniflar[0];
+    let kayitliSinif = 8;
+    try { kayitliSinif = Number(localStorage.getItem('dk-sinif')) || 8; } catch {}
+    const s = v.siniflar.find((x) => x.sinif === Number(p.get('s'))) || v.siniflar.find((x) => x.sinif === kayitliSinif) || v.siniflar[0];
     durum.sinif = s.sinif;
     durum.tema = (s.temalar.find((t) => t.no === Number(p.get('t'))) || s.temalar[0]).no;
     if (CIZ[p.get('k')]) durum.kip = p.get('k');

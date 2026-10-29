@@ -23,18 +23,32 @@
     syncGuide();
     level.addEventListener('change', () => { state.level = level.value; save(); syncGuide(); });
     const cards = $$('[data-module]'); let completed = 0;
+    const modRenk = (m) => m.startsWith('turkce') ? 'kirmizi' : m.startsWith('matematik') ? 'mavi' : m.startsWith('tarih') ? 'sari' : m.startsWith('cografya') ? 'zumrut' : 'mor';
     cards.forEach(card => {
+      card.dataset.renk = modRenk(card.dataset.module || '');
       const r = state.modules[card.dataset.module];
       if (!r || r.version !== Number(card.dataset.version || 1)) return;
       const parts = [];
-      if (r.learned) parts.push('Konu çalışıldı');
+      if (r.learned) parts.push('✓ Konu çalışıldı');
       if (r.full && r.full.total === Number(card.dataset.total || 10) && [r.full.correct, r.full.wrong, r.full.blank].every(Number.isInteger)) {
         completed++;
+        card.classList.add('kp-tamam');
         parts.push(`Son tam test: ${r.full.correct} doğru · ${r.full.wrong} yanlış · ${r.full.blank} boş`);
       }
       if (parts.length) $('.kp-progress', card).textContent = parts.join(' — ');
     });
-    $('#kp-total').textContent = `${completed} / ${cards.length} test tamamlandı`;
+    const totalEl = $('#kp-total');
+    if (totalEl) {
+      totalEl.textContent = `${completed} / ${cards.length} modül testi tamamlandı`;
+      if (!$('.kp-ilerleme-cubuk', totalEl.parentElement)) {
+        const bar = document.createElement('div');
+        bar.className = 'kp-ilerleme-cubuk';
+        const ic = document.createElement('i');
+        ic.style.width = `${cards.length ? Math.round((completed / cards.length) * 100) : 0}%`;
+        bar.append(ic);
+        totalEl.after(bar);
+      }
+    }
   }
   const root = $('[data-kp-module]'); if (!root) return;
   const mid = root.dataset.kpModule, version = Number(root.dataset.version);

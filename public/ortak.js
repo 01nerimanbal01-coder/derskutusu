@@ -716,12 +716,37 @@ window.dkTamamlanan = dkTamamlanan;
     'aria-pressed': String(tamamDurum),
   }, tamamDurum ? '✓ Bu Konuyu Tamamladın (Geri Al)' : '✓ Bu Konuyu Tamamladım Olarak İşaretle');
 
+  const haftaHaplariniSenkronla = () => {
+    $$('.ozet-haftalar .hafta-hap').forEach((hap) => {
+      const hrefAnahtar = (hap.getAttribute('href') || '').replace(/^\/+/, '');
+      const idAnahtar = hap.dataset.ozetId || '';
+      let etkTamam = false;
+      if (idAnahtar) {
+        try {
+          const k = JSON.parse(localStorage.getItem('dk_ozet_' + idAnahtar) || 'null');
+          etkTamam = Boolean(k && k.tamam);
+        } catch {}
+      }
+      const bitti = dkTamamlanan.varMi([hrefAnahtar, idAnahtar]) || etkTamam;
+      hap.classList.toggle('tamam', bitti);
+      let rozet = hap.querySelector('.h-tamam');
+      if (bitti && !rozet) {
+        rozet = el('i', { sinif: 'h-tamam', 'aria-label': 'Tamamlandı', title: 'Bu hafta tamamlandı' }, '✓');
+        hap.append(rozet);
+      } else if (!bitti && rozet && !etkTamam) {
+        rozet.remove();
+      }
+    });
+  };
+  haftaHaplariniSenkronla();
+
   const tamamGuncelle = () => {
     tamamDurum = dkTamamlanan.degistir(favAnahtar);
     ustTamamBtn.setAttribute('aria-pressed', String(tamamDurum));
     ustTamamBtn.textContent = tamamDurum ? '✓ Konu Tamamlandı' : '○ Konuyu Tamamladım';
     altTamamBtn.setAttribute('aria-pressed', String(tamamDurum));
     altTamamBtn.textContent = tamamDurum ? '✓ Bu Konuyu Tamamladın (Geri Al)' : '✓ Bu Konuyu Tamamladım Olarak İşaretle';
+    haftaHaplariniSenkronla();
   };
   ustTamamBtn.addEventListener('click', tamamGuncelle);
   altTamamBtn.addEventListener('click', tamamGuncelle);
@@ -786,16 +811,47 @@ window.dkTamamlanan = dkTamamlanan;
 
   const ozetIc = $('.ozet-ic', ozetGovde) || ozetGovde;
   const esles = favAnahtar.match(/^ozet\/(\d+)-([a-z0-9-]+)-hafta-(\d+)\.html$/);
+  const DERS_RENK_HARITA = {
+    turkce: 'kirmizi', 'turk-dili-ve-edebiyati': 'kirmizi', matematik: 'mavi', 'fen-bilimleri': 'yesil',
+    fizik: 'lacivert', kimya: 'pembe', biyoloji: 'zumrut', 'sosyal-bilgiler': 'turuncu',
+    'tc-inkilap-tarihi-ve-ataturkculuk': 'turuncu', tarih: 'sari', cografya: 'zumrut', felsefe: 'mor',
+    ingilizce: 'turkuaz', 'din-kulturu-ve-ahlak-bilgisi': 'mor', arapca: 'sari', 'mesleki-arapca': 'sari',
+    'kuran-i-kerim': 'zumrut', 'peygamberimizin-hayati': 'yesil', siyer: 'yesil', 'temel-dini-bilgiler': 'turkuaz',
+    akaid: 'lacivert', kelam: 'lacivert', fikih: 'mor', hadis: 'pembe', tefsir: 'turkuaz',
+    'dinler-tarihi': 'turuncu', 'hitabet-ve-mesleki-uygulama': 'kirmizi', 'islam-kultur-ve-medeniyeti': 'sari',
+  };
+  const dersRenk = esles ? (DERS_RENK_HARITA[esles[2]] || 'mavi') : 'mor';
+  if (esles) {
+    document.body.dataset.siteRenk = dersRenk;
+    ozetBas.closest('.ozet-bas')?.setAttribute('data-renk', dersRenk);
+    ozetGovde.setAttribute('data-renk', dersRenk);
+  }
   const dersBag = esles ? `/ogrenci.html?sinif=${esles[1]}&ders=${encodeURIComponent(esles[2])}` : '/ogrenci.html';
   const calismaBag = esles ? `/icerikler.html?sinif=${esles[1]}&ders=${encodeURIComponent(esles[2])}&tur=${encodeURIComponent('Çalışma kâğıdı')}` : '/icerikler.html';
-  const sonKart = el('section', { sinif: 'ozet-bolum ozet-sonu-kart' },
+  const yaziliBag = esles ? `/yazili.html?sinif=${esles[1]}&ders=${encodeURIComponent(esles[2])}` : '/yazili.html';
+  const planBag = esles ? `/planlar.html?sinif=${esles[1]}&ders=${encodeURIComponent(esles[2])}` : '/planlar.html';
+  const asdsBag = (esles && Number(esles[1]) >= 5 && Number(esles[1]) <= 8) ? `/sinav.html?sinif=${esles[1]}#asds-sinif-${esles[1]}` : null;
+
+  if (esles && !$('.ozet-materyal-serit', ozetBas)) {
+    const materyalSerit = el('nav', { sinif: 'ozet-materyal-serit', 'data-renk': dersRenk, 'aria-label': 'Bu dersin diğer materyalleri' },
+      el('span', { sinif: 'ozet-materyal-etiket' }, 'Bu dersin materyalleri:'),
+      el('a', { sinif: 'ozet-materyal-hap', href: calismaBag }, '📄 Çalışma Kâğıtları'),
+      el('a', { sinif: 'ozet-materyal-hap', href: yaziliBag }, '📝 Ortak Yazılılar'),
+      el('a', { sinif: 'ozet-materyal-hap', href: planBag }, `📅 Günlük Plan (${esles[3]}. Hafta)`),
+      asdsBag ? el('a', { sinif: 'ozet-materyal-hap', href: asdsBag }, `🎯 ${esles[1]}. Sınıf ASDS Denemeleri`) : null,
+      el('a', { sinif: 'ozet-materyal-hap', href: dersBag }, '📚 Tüm Üniteler'));
+    ekCubuk.after(materyalSerit);
+  }
+
+  const sonKart = el('section', { sinif: 'ozet-bolum ozet-sonu-kart', 'data-renk': dersRenk },
     el('div', { sinif: 'ozet-sonu-ic' },
       el('div', { sinif: 'ozet-sonu-metin' },
         el('strong', {}, 'Bu haftanın konu özetini ve etkinliklerini tamamladın mı?'),
-        el('p', {}, 'Konuyu tamamladığında ünite ağacında ilerleme çubuğun güncellenir. Ardından çalışma kâğıdını çözerek öğrendiklerini pekiştirebilirsin.')),
+        el('p', {}, 'Konuyu tamamladığında ünite ağacında ilerleme çubuğun güncellenir. Ardından çalışma kâğıdını ve yazılı sorularını çözerek öğrendiklerini pekiştirebilirsin.')),
       el('div', { sinif: 'ozet-sonu-eylemler' },
         altTamamBtn,
         el('a', { sinif: 'dugme', href: calismaBag }, 'Çalışma Kâğıtları →'),
+        el('a', { sinif: 'dugme', href: yaziliBag }, 'Ortak Yazılılar →'),
         el('a', { sinif: 'dugme', href: dersBag }, 'Ünite Ağacına Dön'))));
   ozetIc.append(sonKart);
 })();

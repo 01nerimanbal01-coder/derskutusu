@@ -83,6 +83,30 @@
     };
     vitrinGuncelle();
 
+    // Kişisel çalışma durumu ve hızlı araç şeridi (#calisma-durum-serit)
+    if (merkez && !document.getElementById('calisma-durum-serit')) {
+      const diziSay = (anahtar) => { try { const l = JSON.parse(localStorage.getItem(anahtar) || '[]'); return Array.isArray(l) ? l.length : 0; } catch { return 0; } };
+      const nesneSay = (anahtar) => { try { const o = JSON.parse(localStorage.getItem(anahtar) || '{}'); return o && typeof o === 'object' ? Object.keys(o).length : 0; } catch { return 0; } };
+      const tamamSay = diziSay('dk-tamamlanan-v1');
+      const favSay = diziSay('dk-favoriler');
+      const ingSay = nesneSay('dk-kelime-ogrenildi');
+      const arSay = nesneSay('dk-arapca-ogrenildi-v1');
+      const serit = el('div', { sinif: 'calisma-durum-serit', id: 'calisma-durum-serit', role: 'region', 'aria-label': 'Çalışma durumum ve hızlı araçlar' },
+        el('span', { sinif: 'cds-etiket' }, 'Çalışma Panon:'),
+        el('a', { sinif: 'cds-hap', 'data-renk': 'yesil', href: `/ogrenci.html?sinif=${sinif || 8}` },
+          el('b', {}, tamamSay ? `✓ ${tamamSay} Konu Tamamlandı` : '✓ Konu İlerleme Takibi')),
+        el('a', { sinif: 'cds-hap', 'data-renk': 'sari', href: '/icerikler.html?favori=1' },
+          el('b', {}, favSay ? `★ ${favSay} Kayıtlı Materyal` : '★ Kayıtlı Materyallerim')),
+        el('a', { sinif: 'cds-hap', 'data-renk': 'mavi', href: `/kelime.html?s=${sinif || 8}` },
+          el('b', {}, ingSay ? `🃏 ${ingSay} İngilizce Kelime Öğrenildi` : '🃏 İngilizce Kelime Kartları')),
+        el('a', { sinif: 'cds-hap', 'data-renk': 'zumrut', href: `/arapca.html?s=${sinif || 8}` },
+          el('b', {}, arSay ? `🕌 ${arSay} Arapça Kelime Öğrenildi` : '🕌 Arapça Harf & Kelime')),
+        el('a', { sinif: 'cds-hap', 'data-renk': 'mor', href: '/sinav.html#net-hesaplayici' },
+          el('b', {}, '🧮 LGS & TYT Net Hesaplayıcı')));
+      const smBas = merkez.querySelector('.sm-bas');
+      if (smBas) smBas.after(serit);
+    }
+
     // ---- Sınıf ve Ders Hızlı Erişim Merkezi (#sinif-merkezi) ----
     const smSekmeler = document.getElementById('sm-sekmeler');
     const smDersler = document.getElementById('sm-dersler');
