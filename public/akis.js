@@ -58,8 +58,16 @@ function instagramGoster(v, ayar) {
 
   blok.hidden = false;
 
-  // Üst profil çağrı kartı
+  // Üst profil çağrı kartı ve 6 seri vitrini
   if (!$('.ig-vitrin-ust', blok)) {
+    const seriler = [
+      { etiket: '5–8. SINIF SERİSİ', baslik: 'Ortaokul & LGS Görsel Bilgi Kartları', aciklama: 'Türkçe, Matematik, Fen, Sosyal, İnkılap, İngilizce ve Din Kültürü haftalık özet kartları.', renk: 'mavi', sayi: '420+ Kart' },
+      { etiket: '9–12. SINIF SERİSİ', baslik: 'Lise & YKS Konu Özeti Serileri', aciklama: 'Edebiyat, Matematik, Fizik, Kimya, Biyoloji, Tarih, Coğrafya ve Felsefe ders kartları.', renk: 'mor', sayi: '300+ Kart' },
+      { etiket: 'YAZILI PROVALARI', baslik: 'MEB Ortak Yazılı Sınav Hazırlık Serisi', aciklama: '1. ve 2. dönem açık uçlu senaryo soruları, çözüm adımları ve puanlama ipuçları.', renk: 'kirmizi', sayi: '52 Seri' },
+      { etiket: 'DENEME SINAVLARI', baslik: 'ASDS 5, 6, 7 ve 8. Sınıf Deneme Duyuruları', aciklama: 'Yeni yüklenen A/B kitapçıkları, cevap anahtarları ve haftalık deneme takvimi.', renk: 'yesil', sayi: '32 Sınav' },
+      { etiket: 'HİKÂYE & REELS', baslik: 'Günlük Tek Soru – Tek Çözüm Kuşağı', aciklama: 'Hikâyelerde her gün etkileşimli mini testler, kavram yanılgıları ve sınav tüyoları.', renk: 'turuncu', sayi: 'Her Gün' },
+      { etiket: 'ÖĞRETMEN KÖŞESİ', baslik: 'Yıllık & Günlük Plan ve Zümre Paylaşımları', aciklama: 'Haftalık ders planları, çalışma kâğıtları ve yeni eklenen eğitim araçları bildirimleri.', renk: 'turkuaz', sayi: '21 Branş' },
+    ];
     const ustKart = el('div', { sinif: 'ig-vitrin-ust' },
       el('div', { sinif: 'ig-vitrin-kimlik' },
         el('div', { sinif: 'ig-vitrin-avatar' }, simge('instagram')),
@@ -72,29 +80,24 @@ function instagramGoster(v, ayar) {
         el('a', { sinif: 'dk-ig-takip-btn ig-vitrin-btn', href: profil, target: '_blank', rel: 'noopener' },
           simge('instagram'),
           el('span', {}, '@derskutusuinfo Hesabını Takip Et →'))));
+    const seriIzgara = el('div', { sinif: 'gonderiler ig-seri-izgara' },
+      ...seriler.map((s) =>
+        el('a', { sinif: 'ig-seri-kart', 'data-renk': s.renk, href: profil, target: '_blank', rel: 'noopener' },
+          el('div', { sinif: 'ig-seri-ust' },
+            el('span', { sinif: 'ig-seri-etiket' }, s.etiket),
+            el('span', { sinif: 'ig-seri-sayi' }, s.sayi)),
+          el('strong', { sinif: 'ig-seri-baslik' }, s.baslik),
+          el('p', { sinif: 'ig-seri-aciklama' }, s.aciklama),
+          el('span', { sinif: 'ig-seri-alt' }, '📸 @derskutusuinfo’da İncele ve Takip Et →'))));
     const baslikEl = $('.akis-baslik', blok);
-    if (baslikEl) baslikEl.after(ustKart); else blok.prepend(ustKart);
+    if (baslikEl) {
+      baslikEl.after(ustKart, seriIzgara);
+    } else {
+      blok.prepend(ustKart, seriIzgara);
+    }
   }
 
-  if (!liste.length) {
-    const seriler = [
-      { etiket: '5–8. SINIF SERİSİ', baslik: 'Ortaokul & LGS Görsel Bilgi Kartları', aciklama: 'Türkçe, Matematik, Fen, Sosyal, İnkılap, İngilizce ve Din Kültürü haftalık özet kartları.', renk: 'mavi', sayi: '420+ Kart' },
-      { etiket: '9–12. SINIF SERİSİ', baslik: 'Lise & YKS Konu Özeti Serileri', aciklama: 'Edebiyat, Matematik, Fizik, Kimya, Biyoloji, Tarih, Coğrafya ve Felsefe ders kartları.', renk: 'mor', sayi: '300+ Kart' },
-      { etiket: 'YAZILI PROVALARI', baslik: 'MEB Ortak Yazılı Sınav Hazırlık Serisi', aciklama: '1. ve 2. dönem açık uçlu senaryo soruları, çözüm adımları ve puanlama ipuçları.', renk: 'kirmizi', sayi: '52 Seri' },
-      { etiket: 'DENEME SINAVLARI', baslik: 'ASDS 5, 6, 7 ve 8. Sınıf Deneme Duyuruları', aciklama: 'Yeni yüklenen A/B kitapçıkları, cevap anahtarları ve haftalık deneme takvimi.', renk: 'yesil', sayi: '32 Sınav' },
-      { etiket: 'HİKÂYE & REELS', baslik: 'Günlük Tek Soru – Tek Çözüm Kuşağı', aciklama: 'Hikâyelerde her gün etkileşimli mini testler, kavram yanılgıları ve sınav tüyoları.', renk: 'turuncu', sayi: 'Her Gün' },
-      { etiket: 'ÖĞRETMEN KÖŞESİ', baslik: 'Yıllık & Günlük Plan ve Zümre Paylaşımları', aciklama: 'Haftalık ders planları, çalışma kâğıtları ve yeni eklenen eğitim araçları bildirimleri.', renk: 'turkuaz', sayi: '21 Branş' },
-    ];
-    kutu.replaceChildren(...seriler.map((s) =>
-      el('a', { sinif: 'ig-seri-kart', 'data-renk': s.renk, href: profil, target: '_blank', rel: 'noopener' },
-        el('div', { sinif: 'ig-seri-ust' },
-          el('span', { sinif: 'ig-seri-etiket' }, s.etiket),
-          el('span', { sinif: 'ig-seri-sayi' }, s.sayi)),
-        el('strong', { sinif: 'ig-seri-baslik' }, s.baslik),
-        el('p', { sinif: 'ig-seri-aciklama' }, s.aciklama),
-        el('span', { sinif: 'ig-seri-alt' }, '📸 @derskutusuinfo’da İncele ve Takip Et →'))));
-    return;
-  }
+  if (!liste.length) return;
 
   const gorselli = liste.filter((i) => i.gorsel);
   const elle = liste.filter((i) => !i.gorsel && i.baglanti);

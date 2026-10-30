@@ -1886,6 +1886,9 @@ body.dk-ig-kilit-acik { overflow: hidden; }
   background: linear-gradient(135deg, rgb(240 148 51 / .09), rgb(220 39 67 / .09), rgb(188 24 136 / .09));
   border: 1.5px solid rgb(225 48 108 / .28); }
 .dk-ig-banner-sol { display: flex; align-items: center; gap: 14px; flex: 1 1 300px; min-width: 0; }
+.dk-ig-banner-kart-bag { width: 58px; height: 72px; border-radius: 10px; overflow: hidden; flex-shrink: 0;
+  border: 1.5px solid rgb(225 48 108 / .35); box-shadow: 0 6px 14px rgb(220 39 67 / .22); display: block; }
+.dk-ig-banner-kart-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .dk-ig-banner-metin { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .dk-ig-banner-ust { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .dk-ig-banner-ust strong { font-size: 16px; font-weight: 850; color: var(--metin); }
@@ -1935,6 +1938,7 @@ body.dk-ig-kilit-acik { overflow: hidden; }
   font-size: 14px; font-weight: 800; text-decoration: none; }
 .ig-vitrin-btn svg { width: 19px; height: 19px; fill: currentColor; }
 
+.ig-seri-izgara { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 14px; margin-bottom: 18px; }
 .ig-seri-kart { display: flex; flex-direction: column; gap: 8px; padding: 16px 18px; border-radius: 16px;
   background: var(--yuzey); color: var(--metin); border: 1.5px solid var(--kart-cizgi, var(--cizgi));
   border-top: 4px solid var(--kart-vurgu, #e1306c); text-decoration: none;
@@ -1945,18 +1949,34 @@ body.dk-ig-kilit-acik { overflow: hidden; }
 .ig-seri-etiket { font-size: 11px; font-weight: 850; letter-spacing: .05em; color: var(--kart-ana, #e1306c); }
 .ig-seri-sayi { padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 800;
   background: var(--kart-zemin, var(--zemin-2)); color: var(--kart-ana, var(--metin)); }
-.ig-seri-baslik { font-size: 15.5px; font-weight: 850; line-height: 1.32; color: var(--metin); }
+.ig-seri-baslik { font-size: 15.5px; font-weight: 800; line-height: 1.32; color: var(--metin); }
 .ig-seri-aciklama { margin: 0; font-size: 13px; line-height: 1.48; color: var(--soluk); flex: 1; }
 .ig-seri-alt { font-size: 12.5px; font-weight: 800; color: #e1306c; margin-top: 4px; }
+
+/* Sol alt yüzen @derskutusuinfo hızlı takip hapı */
+.dk-ig-yuzen-hap { position: fixed; left: 16px; bottom: 16px; z-index: 41; display: inline-flex; align-items: center;
+  border-radius: 999px; background: var(--yuzey, #fff); border: 1.5px solid rgb(225 48 108 / .42);
+  box-shadow: 0 10px 26px rgb(15 23 42 / .18); padding: 4px 6px 4px 5px; gap: 6px; max-width: calc(100vw - 90px); }
+.dk-ig-yuzen-bag { display: inline-flex; align-items: center; gap: 8px; text-decoration: none !important; color: var(--metin); min-width: 0; }
+.dk-ig-yuzen-ikon { width: 32px; height: 32px; border-radius: 999px; display: grid; place-items: center; flex-shrink: 0;
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: #fff; }
+.dk-ig-yuzen-ikon svg { width: 17px; height: 17px; fill: currentColor; }
+.dk-ig-yuzen-metin { display: flex; flex-direction: column; line-height: 1.18; min-width: 0; padding-right: 4px; }
+.dk-ig-yuzen-metin strong { font-size: 12px; font-weight: 850; color: var(--metin); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dk-ig-yuzen-metin small { font-size: 10.5px; font-weight: 750; color: #e1306c; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dk-ig-yuzen-kapat { width: 22px; height: 22px; border-radius: 999px; border: 0; background: var(--zemin-2);
+  color: var(--soluk); font-size: 11px; font-weight: 800; cursor: pointer; flex-shrink: 0; display: grid; place-items: center; }
+.dk-ig-yuzen-kapat:hover { background: #fee2e2; color: #b91c1c; }
 
 @media (max-width: 520px) {
   .dk-ig-kart { padding: 16px 14px 14px; border-radius: 18px; }
   .dk-ig-qr-kutu { flex-direction: column; align-items: flex-start; }
   .dk-ig-qr-cerceve { width: 68px; height: 68px; }
   .dk-ig-istatistikler { gap: 5px; }
+  .dk-ig-yuzen-hap { left: 10px; bottom: 12px; }
 }
 @media print {
-  .dk-ig-kilit-arka, .dk-ig-sayfa-banner, .dk-ig-indir-toast { display: none !important; }
+  .dk-ig-kilit-arka, .dk-ig-sayfa-banner, .dk-ig-indir-toast, .dk-ig-yuzen-hap { display: none !important; }
 }
 
 

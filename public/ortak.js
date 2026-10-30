@@ -1200,6 +1200,27 @@ window.dkTamamlanan = dkTamamlanan;
     const hedefYer = $('.ozet-sonu-kart') || $('#nh-duzen') || $('#asds-bolum') || $('#yazili-icerik') || $('#p-indir') || $('#sinif-merkezi');
     if (!hedefYer) return;
 
+    const ozetEsles = location.pathname.replace(/^\/+/, '').match(/^ozet\/(\d+)-([a-z0-9-]+)-hafta-(\d+)\.html$/);
+    let kartOnizleme = null;
+    if (ozetEsles) {
+      const kartUrl = `/sosyal/bilgi-${ozetEsles[1]}-${ozetEsles[2]}-${ozetEsles[3]}.png`;
+      const img = el('img', {
+        src: kartUrl,
+        alt: `${ozetEsles[1]}. sınıf Instagram bilgi kartı`,
+        loading: 'lazy',
+        sinif: 'dk-ig-banner-kart-img',
+        onerror: () => { if (kartOnizleme) kartOnizleme.remove(); },
+      });
+      kartOnizleme = el('a', {
+        href: DK_IG_AYAR.PROFIL_URL,
+        target: '_blank',
+        rel: 'noopener',
+        sinif: 'dk-ig-banner-kart-bag',
+        title: `@${DK_IG_AYAR.HESAP} Instagram’da bu konunun bilgi kartını gör`,
+        onclick: (e) => igProfiliAc(e),
+      }, img);
+    }
+
     const paylasBtn = el('button', {
       type: 'button',
       sinif: 'dk-ig-paylas-btn',
@@ -1218,12 +1239,14 @@ window.dkTamamlanan = dkTamamlanan;
 
     const banner = el('aside', { sinif: 'dk-ig-sayfa-banner', 'aria-label': 'Instagram eğitim topluluğu' },
       el('div', { sinif: 'dk-ig-banner-sol' },
-        el('div', { sinif: 'dk-ig-kamera-ikon' }, simge('instagram')),
+        kartOnizleme || el('div', { sinif: 'dk-ig-kamera-ikon' }, simge('instagram')),
         el('div', { sinif: 'dk-ig-banner-metin' },
           el('div', { sinif: 'dk-ig-banner-ust' },
             el('strong', {}, `@${DK_IG_AYAR.HESAP}`),
             el('span', { sinif: 'dk-ig-banner-rozet' }, '750+ Görsel Özet & Yazılı Serisi')),
-          el('p', {}, 'Yeni yazılı sınav kâğıtları, ASDS denemeleri ve günlük görsel konu özeti kartları için Instagram hesabımızı takip edin ve bildirim zilini (🔔) açın.'))),
+          el('p', {}, ozetEsles
+            ? 'Bu dersin görsel bilgi kartı serisi, ortak yazılı sınav soruları ve deneme duyuruları için @derskutusuinfo Instagram hesabımızı takip edin ve bildirim zilini (🔔) açın.'
+            : 'Yeni yazılı sınav kâğıtları, ASDS denemeleri ve günlük görsel konu özeti kartları için Instagram hesabımızı takip edin ve bildirim zilini (🔔) açın.'))),
       el('div', { sinif: 'dk-ig-banner-sag' },
         takipBag,
         paylasBtn));
@@ -1235,6 +1258,38 @@ window.dkTamamlanan = dkTamamlanan;
     }
   };
   sayfaIciIgBannerEkle();
+
+  // Sol altta yüzen hızlı Instagram takip rozeti (kapatılabilir, reklam/tahta araçlarıyla çakışmaz)
+  const yuzenIgHapEkle = () => {
+    if (yasalSayfaMi || /^\/(tahta|goruntule)\.html$/.test(location.pathname)) return;
+    try { if (sessionStorage.getItem('dk-ig-hap-kapali') === '1') return; } catch {}
+    if ($('.dk-ig-yuzen-hap')) return;
+
+    const hap = el('div', { sinif: 'dk-ig-yuzen-hap' },
+      el('a', {
+        href: DK_IG_AYAR.PROFIL_URL,
+        target: '_blank',
+        rel: 'noopener',
+        sinif: 'dk-ig-yuzen-bag',
+        onclick: (e) => igProfiliAc(e),
+      },
+        el('span', { sinif: 'dk-ig-yuzen-ikon' }, simge('instagram')),
+        el('span', { sinif: 'dk-ig-yuzen-metin' },
+          el('strong', {}, `@${DK_IG_AYAR.HESAP}`),
+          el('small', {}, '750+ Ders Kartı · Takip Et'))),
+      el('button', {
+        type: 'button',
+        sinif: 'dk-ig-yuzen-kapat',
+        'aria-label': 'Rozeti gizle',
+        title: 'Gizle',
+        onclick: () => {
+          try { sessionStorage.setItem('dk-ig-hap-kapali', '1'); } catch {}
+          hap.remove();
+        },
+      }, '✕'));
+    document.body.append(hap);
+  };
+  yuzenIgHapEkle();
 
   // PDF / Word / ZIP indirildiğinde sağ altta çıkan "Instagram Bildirim Zili 🔔 & Takip" teşvik kartı
   let bildirimEl = null;
