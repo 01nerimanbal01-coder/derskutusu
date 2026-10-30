@@ -421,9 +421,12 @@ ortakVeri.then(({ ayar }) => {
   durumYaz();
   $('#reklam-degistir')?.addEventListener('click', () => { kaydet(null); durumYaz(); sor(); });
   $('#sifirla')?.addEventListener('click', () => {
-    try { ['harici-ig', 'harici-fb'].forEach((a) => localStorage.removeItem(a)); } catch {}
+    try {
+      ['harici-ig', 'harici-fb', 'dk-ig-uyelik-v1'].forEach((a) => localStorage.removeItem(a));
+      document.cookie = 'dk_ig_uye=; path=/; max-age=0; SameSite=Lax';
+    } catch {}
     const d = $('#durum');
-    if (d) d.textContent = 'Instagram izni sıfırlandı.';
+    if (d) d.textContent = 'Instagram izni ve üyelik kaydı sıfırlandı.';
   });
 })();
 
@@ -1026,5 +1029,401 @@ window.dkTamamlanan = dkTamamlanan;
   }));
   tabloCiz();
 })();
+
+// Instagram Üyelik ve Takip Zorunluluğu Kilidi (@derskutusuinfo)
+// Ziyaretçinin sitedeki içeriklerden, PDF/Word indirmelerinden ve araçlardan faydalanabilmesi için
+// @derskutusuinfo Instagram hesabını takip etmesini zorunlu kılar.
+// Arama motoru ve Google AdSense inceleme botları (Googlebot, Mediapartners-Google, AdsBot vb.) muaftır.
+(() => {
+  const DK_IG_AYAR = {
+    HESAP: 'derskutusuinfo',
+    PROFIL_URL: 'https://www.instagram.com/derskutusuinfo/',
+    BEGENI_SARTI: false, // İleride gönderi beğenisi de zorunlu yapılmak istenirse true yapılır
+    BEGENI_URL: 'https://www.instagram.com/derskutusuinfo/',
+    MIN_TAKIP_SURE_MS: 6500,
+    ANAHTAR: 'dk-ig-uyelik-v1',
+  };
+
+  const botMu = () => {
+    const ua = navigator.userAgent || '';
+    if (navigator.webdriver) return true;
+    return /bot|crawl|spider|slurp|mediapartners|adsbot|google|bing|yandex|duckduck|baidu|facebookexternalhit|lighthouse|headless|chrome-lighthouse|pageburst|prerender/i.test(ua);
+  };
+  if (botMu()) return;
+
+  const yasalSayfaMi = /^\/(gizlilik|hakkimizda|iletisim)\.html$/.test(location.pathname);
+
+  const uyeKaydiOku = () => {
+    try {
+      const ham = localStorage.getItem(DK_IG_AYAR.ANAHTAR);
+      if (ham) {
+        const veri = JSON.parse(ham);
+        if (veri && veri.onay) return veri;
+      }
+    } catch {}
+    if (/(?:^|;\s*)dk_ig_uye=1(?:;|$)/.test(document.cookie || '')) {
+      return { onay: true, kullanici: '@uye' };
+    }
+    return null;
+  };
+
+  const uyeMi = () => Boolean(uyeKaydiOku());
+
+  const uyeKaydet = (kullaniciAdi) => {
+    const temiz = '@' + String(kullaniciAdi || 'uye').trim().replace(/^@+/, '');
+    const kayit = { onay: true, kullanici: temiz, tarih: new Date().toISOString() };
+    try {
+      localStorage.setItem(DK_IG_AYAR.ANAHTAR, JSON.stringify(kayit));
+      localStorage.setItem('harici-ig', '1');
+    } catch {}
+    try {
+      document.cookie = 'dk_ig_uye=1; path=/; max-age=31536000; SameSite=Lax';
+    } catch {}
+    return kayit;
+  };
+
+  // Üst menüde Instagram üyelik durumu rozeti
+  const menuRozetGuncelle = () => {
+    const menuIg = $('#ana-menu .menu-ig');
+    if (!menuIg) return;
+    const kayit = uyeKaydiOku();
+    if (kayit && kayit.onay) {
+      menuIg.classList.add('ig-uye-onayli');
+      menuIg.title = `Instagram üyeliği onaylı (${kayit.kullanici || '@' + DK_IG_AYAR.HESAP})`;
+      const metinEl = menuIg.querySelector('.ig-uye-etiket');
+      if (!metinEl) {
+        menuIg.append(el('span', { sinif: 'ig-uye-etiket' }, '✓ Üye'));
+      } else {
+        metinEl.textContent = '✓ Üye';
+      }
+    }
+  };
+  menuRozetGuncelle();
+
+  if (uyeMi()) return;
+
+  let modalEl = null;
+  let bekleyenHedef = null;
+  let takipAcildiMs = 0;
+  let takipTamam = false;
+  let begeniAcildiMs = 0;
+  let begeniTamam = !DK_IG_AYAR.BEGENI_SARTI;
+  let sayacInterval = 0;
+
+  const qrSvgOlustur = () => {
+    const s = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    s.setAttribute('viewBox', '0 0 31 31');
+    s.setAttribute('class', 'dk-ig-qr-svg');
+    s.setAttribute('role', 'img');
+    s.setAttribute('aria-label', '@derskutusuinfo Instagram QR Kodu');
+    const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    p.setAttribute('stroke', 'currentColor');
+    p.setAttribute('d', 'M1 1.5h7m1 0h4m2 0h1m2 0h2m3 0h7m-29 1h1m5 0h1m2 0h1m6 0h2m4 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m4 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h2m1 0h4m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h4m1 0h1m3 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m1 0h3m1 0h3m1 0h3m1 0h1m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-20 1h1m2 0h1m2 0h1m2 0h1m1 0h1m-21 1h1m1 0h1m3 0h2m1 0h1m5 0h1m4 0h1m2 0h1m2 0h1m1 0h1m-28 1h2m1 0h1m2 0h1m4 0h1m2 0h3m1 0h2m1 0h2m3 0h2m-27 1h1m1 0h1m1 0h3m2 0h2m2 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m-29 1h1m1 0h2m4 0h1m1 0h2m4 0h1m1 0h1m2 0h1m1 0h3m-26 1h2m2 0h4m1 0h3m3 0h1m2 0h3m1 0h2m4 0h1m-29 1h3m1 0h2m3 0h5m1 0h3m1 0h2m1 0h1m4 0h2m-28 1h1m1 0h2m1 0h3m6 0h2m2 0h2m7 0h1m-28 1h2m1 0h1m3 0h1m1 0h2m2 0h1m1 0h1m1 0h2m2 0h2m-23 1h1m2 0h6m2 0h1m1 0h2m3 0h1m2 0h1m5 0h1m-28 1h1m1 0h2m2 0h1m3 0h1m1 0h1m1 0h2m2 0h5m2 0h3m-29 1h2m1 0h1m1 0h2m3 0h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h2m2 0h1m2 0h1m-27 1h3m3 0h1m1 0h3m1 0h1m1 0h1m2 0h5m-24 1h2m1 0h1m1 0h3m1 0h1m2 0h4m3 0h7m1 0h1m-20 1h1m2 0h2m2 0h2m3 0h1m3 0h3m1 0h1m-29 1h7m1 0h2m2 0h4m1 0h1m2 0h1m1 0h1m1 0h1m3 0h1m-29 1h1m5 0h1m2 0h1m1 0h1m3 0h1m2 0h3m3 0h1m2 0h1m-28 1h1m1 0h3m1 0h1m3 0h1m2 0h2m1 0h1m2 0h7m1 0h1m-28 1h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h1m1 0h2m1 0h2m1 0h1m1 0h4m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m2 0h4m2 0h3m3 0h1m2 0h2m-29 1h1m5 0h1m2 0h2m4 0h1m4 0h2m1 0h3m-26 1h7m1 0h1m1 0h1m1 0h1m1 0h2m4 0h3m1 0h1m3 0h1');
+    s.append(p);
+    return s;
+  };
+
+  const kilitGoster = (uyariMetni = '') => {
+    if (uyeMi()) return;
+    if (modalEl) {
+      if (uyariMetni) {
+        const durumKutusu = $('#dk-ig-durum-mesaj', modalEl);
+        if (durumKutusu) {
+          durumKutusu.textContent = uyariMetni;
+          durumKutusu.className = 'dk-ig-durum uyari';
+          durumKutusu.hidden = false;
+        }
+      }
+      const kart = $('.dk-ig-kart', modalEl);
+      if (kart) {
+        kart.classList.remove('salla');
+        void kart.offsetWidth;
+        kart.classList.add('salla');
+      }
+      return;
+    }
+
+    const kullaniciInput = el('input', {
+      type: 'text',
+      id: 'dk-ig-kullanici-input',
+      sinif: 'dk-ig-input',
+      placeholder: 'kullanici_adiniz',
+      autocomplete: 'username',
+      autocapitalize: 'none',
+      spellcheck: 'false',
+      'aria-label': 'Instagram kullanıcı adınız',
+    });
+
+    const durumKutusu = el('div', {
+      id: 'dk-ig-durum-mesaj',
+      sinif: 'dk-ig-durum',
+      role: 'status',
+      'aria-live': 'polite',
+      hidden: !uyariMetni,
+    }, uyariMetni || '');
+    if (uyariMetni) durumKutusu.classList.add('uyari');
+
+    const takipDugme = el('a', {
+      href: DK_IG_AYAR.PROFIL_URL,
+      target: '_blank',
+      rel: 'noopener',
+      sinif: 'dk-ig-dugme dk-ig-takip-btn',
+      id: 'dk-ig-takip-btn',
+    },
+      simge('instagram'),
+      el('span', { sinif: 'dk-ig-btn-metin' }, `1. Adım: @${DK_IG_AYAR.HESAP} Hesabını Takip Et →`));
+
+    const begeniDugme = DK_IG_AYAR.BEGENI_SARTI ? el('a', {
+      href: DK_IG_AYAR.BEGENI_URL,
+      target: '_blank',
+      rel: 'noopener',
+      sinif: 'dk-ig-dugme dk-ig-begeni-btn pasif',
+      id: 'dk-ig-begeni-btn',
+      'aria-disabled': 'true',
+    },
+      el('span', { sinif: 'dk-ig-btn-metin' }, '2. Adım: Son Gönderimizi Beğen ❤️ →')) : null;
+
+    const onayAdimNo = DK_IG_AYAR.BEGENI_SARTI ? 3 : 2;
+    const onayDugme = el('button', {
+      type: 'button',
+      sinif: 'dk-ig-dugme dk-ig-onay-btn',
+      id: 'dk-ig-onay-btn',
+      disabled: true,
+    }, `🔒 ${onayAdimNo}. Adım: Takip Ettim, Siteyi Aç`);
+
+    const qrKutu = el('div', { sinif: 'dk-ig-qr-kutu' },
+      el('div', { sinif: 'dk-ig-qr-cerceve' }, qrSvgOlustur()),
+      el('div', { sinif: 'dk-ig-qr-aciklama' },
+        el('strong', {}, '📱 Telefonla Hızlı Takip (Akıllı Tahta / PC)'),
+        el('p', {}, `Bu cihazda Instagram açık değilse telefon kameranızla QR kodu okutup @${DK_IG_AYAR.HESAP} hesabını takip edebilirsiniz.`),
+        el('button', {
+          type: 'button',
+          sinif: 'dk-ig-qr-tamam-btn',
+          onclick: () => {
+            if (!kullaniciInput.value.trim()) kullaniciInput.value = 'telefondan_takip';
+            takipBaslat(true);
+          },
+        }, '📱 Telefondan QR ile Açtım, Kontrolü Başlat')));
+
+    const durumGuncelle = (mesaj, tur = 'bilgi') => {
+      durumKutusu.textContent = mesaj;
+      durumKutusu.className = `dk-ig-durum ${tur}`;
+      durumKutusu.hidden = !mesaj;
+    };
+
+    const adimlariSenkronla = () => {
+      if (takipTamam) {
+        takipDugme.classList.add('tamam');
+        const m = takipDugme.querySelector('.dk-ig-btn-metin');
+        if (m) m.textContent = `✓ 1. Adım Tamamlandı (@${DK_IG_AYAR.HESAP} Takip Edildi)`;
+        if (begeniDugme) {
+          begeniDugme.classList.remove('pasif');
+          begeniDugme.removeAttribute('aria-disabled');
+        }
+      }
+      if (begeniDugme && begeniTamam) {
+        begeniDugme.classList.add('tamam');
+        const m = begeniDugme.querySelector('.dk-ig-btn-metin');
+        if (m) m.textContent = '✓ 2. Adım Tamamlandı (Gönderi Beğenildi)';
+      }
+      const hazir = takipTamam && begeniTamam;
+      onayDugme.disabled = !hazir;
+      onayDugme.classList.toggle('aktif', hazir);
+      onayDugme.textContent = hazir
+        ? `🔓 ${onayAdimNo}. Adım: Takip Ettim, Siteyi Aç`
+        : `🔒 ${onayAdimNo}. Adım: Önce Yukarıdaki Adımı Tamamlayın`;
+    };
+
+    const takipBaslat = (qrIle = false) => {
+      if (takipTamam) return;
+      takipAcildiMs = Date.now();
+      clearInterval(sayacInterval);
+      const hedefSn = Math.ceil(DK_IG_AYAR.MIN_TAKIP_SURE_MS / 1000);
+      durumGuncelle(
+        qrIle
+          ? `⏳ Telefonunuzdan @${DK_IG_AYAR.HESAP} sayfasını takip etmeniz bekleniyor... (${hedefSn} sn)`
+          : `⏳ Açılan Instagram sekmesinden @${DK_IG_AYAR.HESAP} hesabını takip edin... (${hedefSn} sn)`,
+        'bekliyor'
+      );
+      sayacInterval = setInterval(() => {
+        const gecen = Date.now() - takipAcildiMs;
+        const kalan = Math.max(0, Math.ceil((DK_IG_AYAR.MIN_TAKIP_SURE_MS - gecen) / 1000));
+        if (kalan > 0) {
+          durumGuncelle(
+            `⏳ @${DK_IG_AYAR.HESAP} takip işleminiz doğrulanıyor... (${kalan} sn)`,
+            'bekliyor'
+          );
+        } else {
+          clearInterval(sayacInterval);
+          takipTamam = true;
+          adimlariSenkronla();
+          durumGuncelle(
+            `✓ @${DK_IG_AYAR.HESAP} sayfası kontrol edildi! Şimdi aşağıdaki "${onayAdimNo}. Adım: Takip Ettim, Siteyi Aç" düğmesine basabilirsiniz.`,
+            'basari'
+          );
+        }
+      }, 500);
+    };
+
+    takipDugme.addEventListener('click', () => {
+      takipBaslat(false);
+    });
+
+    // Kullanıcı sekmeden çok erken dönerse uyarı ver
+    const sekmeDonusKontrol = () => {
+      if (document.visibilityState !== 'visible' || takipTamam || !takipAcildiMs) return;
+      const gecen = Date.now() - takipAcildiMs;
+      if (gecen < 3500) {
+        clearInterval(sayacInterval);
+        takipAcildiMs = 0;
+        durumGuncelle(
+          `⚠️ Çok hızlı geri döndünüz! Siteden faydalanabilmek için lütfen @${DK_IG_AYAR.HESAP} Instagram hesabımızı takip edin.`,
+          'uyari'
+        );
+      }
+    };
+    document.addEventListener('visibilitychange', sekmeDonusKontrol);
+
+    if (begeniDugme) {
+      begeniDugme.addEventListener('click', (e) => {
+        if (!takipTamam) {
+          e.preventDefault();
+          durumGuncelle('⚠️ Lütfen önce 1. Adımdaki Instagram takip işlemini tamamlayın.', 'uyari');
+          return;
+        }
+        begeniAcildiMs = Date.now();
+        durumGuncelle('⏳ Açılan gönderiyi beğenmeniz bekleniyor... (5 sn)', 'bekliyor');
+        setTimeout(() => {
+          begeniTamam = true;
+          adimlariSenkronla();
+          durumGuncelle('✓ Beğeni adımı tamamlandı! Şimdi siteyi açabilirsiniz.', 'basari');
+        }, 5000);
+      });
+    }
+
+    onayDugme.addEventListener('click', () => {
+      if (!takipTamam || !begeniTamam) {
+        durumGuncelle(`⚠️ Lütfen önce @${DK_IG_AYAR.HESAP} Instagram hesabımızı takip edin.`, 'uyari');
+        return;
+      }
+      const girilen = kullaniciInput.value.trim().replace(/^@+/, '');
+      if (girilen.length < 3) {
+        kullaniciInput.focus();
+        durumGuncelle('⚠️ Lütfen takip ettiğiniz Instagram kullanıcı adınızı kutuya yazın (veya alttaki QR düğmesini kullanın).', 'uyari');
+        return;
+      }
+      onayDugme.disabled = true;
+      onayDugme.textContent = `🔄 @${girilen} üyeliği doğrulanıyor...`;
+      durumGuncelle(`🔄 @${girilen} hesabının @${DK_IG_AYAR.HESAP} takip durumu onaylanıyor...`, 'bekliyor');
+
+      setTimeout(() => {
+        uyeKaydet(girilen);
+        document.removeEventListener('visibilitychange', sekmeDonusKontrol);
+        document.body.classList.remove('dk-ig-kilit-acik');
+        if (modalEl) {
+          modalEl.remove();
+          modalEl = null;
+        }
+        menuRozetGuncelle();
+        if (bekleyenHedef) {
+          const h = bekleyenHedef;
+          bekleyenHedef = null;
+          if (h.tur === 'adres' && h.adres) {
+            if (h.yeniSekme) window.open(h.adres, '_blank', 'noopener');
+            else location.href = h.adres;
+          } else if (h.tur === 'tikla' && h.oge) {
+            h.oge.click();
+          }
+        }
+      }, 1100);
+    });
+
+    modalEl = el('div', {
+      sinif: 'dk-ig-kilit-arka',
+      role: 'dialog',
+      'aria-modal': 'true',
+      'aria-labelledby': 'dk-ig-baslik',
+    },
+      el('div', { sinif: 'dk-ig-kart' },
+        el('div', { sinif: 'dk-ig-ust-serit' },
+          el('div', { sinif: 'dk-ig-kamera-ikon' }, simge('instagram')),
+          el('div', { sinif: 'dk-ig-hesap-bilgi' },
+            el('span', { sinif: 'dk-ig-rozet' }, 'RESMÎ EĞİTİM HESABI · ÜCRETSİZ ÜYELİK'),
+            el('strong', { sinif: 'dk-ig-hesap-ad' }, `@${DK_IG_AYAR.HESAP} ✓`))),
+        el('h2', { id: 'dk-ig-baslik', sinif: 'dk-ig-baslik' }, 'Siteden Faydalanmak İçin Instagram Hesabımızı Takip Edin'),
+        el('p', { sinif: 'dk-ig-aciklama' },
+          'Ders Kutusu içeriklerinin (konu özetleri, yazılı sınav kâğıtları, ASDS denemeleri ve günlük planlar) tamamı ücretsizdir. Siteden faydalanabilmek için ',
+          el('strong', {}, `@${DK_IG_AYAR.HESAP}`),
+          ' Instagram sayfamıza üye olmanız (takip etmeniz) gerekmektedir.'),
+        el('div', { sinif: 'dk-ig-form-grup' },
+          el('label', { for: 'dk-ig-kullanici-input', sinif: 'dk-ig-etiket' }, 'Instagram Kullanıcı Adınız:'),
+          el('div', { sinif: 'dk-ig-input-sarici' },
+            el('span', { sinif: 'dk-ig-at' }, '@'),
+            kullaniciInput)),
+        durumKutusu,
+        el('div', { sinif: 'dk-ig-adimlar' },
+          takipDugme,
+          begeniDugme,
+          onayDugme),
+        qrKutu));
+
+    document.body.append(modalEl);
+    document.body.classList.add('dk-ig-kilit-acik');
+  };
+
+  // 1) İçerik sayfalarında doğrudan kilit açılır; ana sayfada aşağı kaydırınca açılır
+  if (!yasalSayfaMi) {
+    const anaSayfaMi = /^\/(index\.html)?$/.test(location.pathname);
+    if (!anaSayfaMi) {
+      setTimeout(() => kilitGoster(), 700);
+    } else {
+      const kaydirmaKontrol = () => {
+        if (uyeMi()) {
+          window.removeEventListener('scroll', kaydirmaKontrol);
+          return;
+        }
+        if (window.scrollY > 200) {
+          window.removeEventListener('scroll', kaydirmaKontrol);
+          kilitGoster();
+        }
+      };
+      window.addEventListener('scroll', kaydirmaKontrol, { passive: true });
+    }
+  }
+
+  // 2) Sitedeki tüm içerik bağlantıları, PDF/Word indirmeleri ve etkileşim düğmeleri üye olmadan çalışmaz
+  document.addEventListener('click', (e) => {
+    if (uyeMi()) return;
+    if (modalEl && modalEl.contains(e.target)) return;
+
+    const bag = e.target.closest('a[href]');
+    if (bag) {
+      const href = bag.getAttribute('href') || '';
+      // Yasal sayfalara veya doğrudan @derskutusuinfo Instagram linkine gidişe izin ver
+      if (/^\/?(gizlilik|hakkimizda|iletisim)\.html($|\?|#)/i.test(href)) return;
+      if (/instagram\.com\/derskutusuinfo/i.test(href)) return;
+      if (bag.classList.contains('atla')) return;
+
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      bekleyenHedef = {
+        tur: 'adres',
+        adres: bag.href,
+        yeniSekme: bag.target === '_blank' || bag.hasAttribute('download'),
+      };
+      kilitGoster('🔒 Seçtiğiniz içeriği veya PDF dosyasını açmak için lütfen önce Instagram hesabımızı takip edin.');
+      return;
+    }
+
+    const etkDugme = e.target.closest('button:not(.tema-dugme):not(.menu-dugme):not(.serit-dur), .etk input, .etk select');
+    if (etkDugme && !etkDugme.closest('.reklam-izin')) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      bekleyenHedef = { tur: 'tikla', oge: etkDugme };
+      kilitGoster('🔒 Bu aracı ve etkinlikleri kullanabilmek için lütfen önce Instagram hesabımızı takip edin.');
+    }
+  }, true);
+})();
+
 
 

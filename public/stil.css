@@ -1774,6 +1774,110 @@ body.ozet-yazi-iri .ozet-bolum p, body.ozet-yazi-iri .ozet-bolum li, body.ozet-y
 .cds-hap b { font-weight: 750; }
 .cds-hap:hover { transform: translateY(-1px); background: var(--kart-ana, var(--vurgu)); color: var(--kart-ikon-yazi, #fff); border-color: var(--kart-ana, var(--vurgu)); text-decoration: none; box-shadow: 0 4px 12px color-mix(in srgb, var(--kart-ana, var(--vurgu)) 22%, transparent); }
 
+/* ---- 31.10.2026: @derskutusuinfo Instagram Üyelik ve Takip Zorunluluğu Kilidi ---- */
+body.dk-ig-kilit-acik { overflow: hidden; }
+.menu-ig.ig-uye-onayli { border-color: #22c55e !important; }
+.ig-uye-etiket { display: inline-flex; align-items: center; margin-left: 5px; padding: 1px 7px; border-radius: 999px;
+  font-size: 11px; font-weight: 800; background: #dcfce7; color: #166534; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .ig-uye-etiket { background: #14532d; color: #bbf7d0; }
+}
+:root[data-theme="dark"] .ig-uye-etiket { background: #14532d; color: #bbf7d0; }
+
+.dk-ig-kilit-arka { position: fixed; inset: 0; z-index: 99999; display: flex; align-items: center; justify-content: center;
+  padding: 16px; background: rgb(15 23 42 / .72); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  overflow-y: auto; animation: dkIgBelir .22s ease-out; }
+@keyframes dkIgBelir { from { opacity: 0; } to { opacity: 1; } }
+
+.dk-ig-kart { width: min(540px, 100%); max-height: calc(100dvh - 32px); overflow-y: auto; padding: 24px 24px 20px;
+  border-radius: 22px; background: var(--yuzey, #fff); color: var(--metin, #0f172a);
+  border: 2px solid color-mix(in srgb, #e1306c 38%, var(--cizgi, #e2e8f0));
+  box-shadow: 0 24px 60px rgb(15 23 42 / .38), 0 0 0 1px rgb(255 255 255 / .08) inset; }
+.dk-ig-kart.salla { animation: dkIgSalla .36s ease-in-out; }
+@keyframes dkIgSalla {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-7px); }
+  40%, 80% { transform: translateX(7px); }
+}
+
+.dk-ig-ust-serit { display: flex; align-items: center; gap: 13px; padding: 11px 14px; border-radius: 15px;
+  background: linear-gradient(135deg, rgb(240 148 51 / .12), rgb(220 39 67 / .12), rgb(188 24 136 / .12));
+  border: 1px solid rgb(225 48 108 / .25); margin-bottom: 14px; }
+.dk-ig-kamera-ikon { width: 44px; height: 44px; border-radius: 13px; flex-shrink: 0; display: grid; place-items: center;
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: #fff;
+  box-shadow: 0 6px 16px rgb(220 39 67 / .32); }
+.dk-ig-kamera-ikon svg { width: 24px; height: 24px; fill: currentColor; }
+.dk-ig-hesap-bilgi { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.dk-ig-rozet { font-size: 10.5px; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; color: #e1306c; }
+.dk-ig-hesap-ad { font-size: 17px; font-weight: 850; color: var(--metin); letter-spacing: -.01em; }
+
+.dk-ig-baslik { margin: 0 0 8px; font-size: clamp(18px, 3vw, 21.5px); font-weight: 850; line-height: 1.28; color: var(--metin); }
+.dk-ig-aciklama { margin: 0 0 15px; font-size: 14px; line-height: 1.55; color: var(--soluk); }
+.dk-ig-aciklama strong { color: var(--metin); font-weight: 800; }
+
+.dk-ig-form-grup { margin-bottom: 13px; }
+.dk-ig-etiket { display: block; font-size: 12.5px; font-weight: 800; color: var(--metin); margin-bottom: 6px; }
+.dk-ig-input-sarici { display: flex; align-items: center; border-radius: 12px; border: 1.5px solid var(--cizgi);
+  background: var(--zemin-2, #f8fafc); overflow: hidden; transition: border-color .15s, box-shadow .15s; }
+.dk-ig-input-sarici:focus-within { border-color: #e1306c; box-shadow: 0 0 0 3px rgb(225 48 108 / .16); background: var(--yuzey); }
+.dk-ig-at { padding: 0 10px 0 13px; font-size: 15px; font-weight: 850; color: #e1306c; user-select: none; }
+.dk-ig-input { flex: 1; min-height: 42px; padding: 0 12px 0 2px; border: 0; background: transparent;
+  color: var(--metin); font: inherit; font-size: 14.5px; font-weight: 700; outline: none; }
+
+.dk-ig-durum { margin-bottom: 12px; padding: 10px 13px; border-radius: 12px; font-size: 13px; font-weight: 700; line-height: 1.45; }
+.dk-ig-durum.bekliyor { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+.dk-ig-durum.uyari { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
+.dk-ig-durum.basari { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .dk-ig-durum.bekliyor { background: #1e3a8a; color: #dbeafe; border-color: #3b82f6; }
+  :root:not([data-theme="light"]) .dk-ig-durum.uyari { background: #7f1d1d; color: #fee2e2; border-color: #ef4444; }
+  :root:not([data-theme="light"]) .dk-ig-durum.basari { background: #14532d; color: #dcfce7; border-color: #22c55e; }
+}
+:root[data-theme="dark"] .dk-ig-durum.bekliyor { background: #1e3a8a; color: #dbeafe; border-color: #3b82f6; }
+:root[data-theme="dark"] .dk-ig-durum.uyari { background: #7f1d1d; color: #fee2e2; border-color: #ef4444; }
+:root[data-theme="dark"] .dk-ig-durum.basari { background: #14532d; color: #dcfce7; border-color: #22c55e; }
+
+.dk-ig-adimlar { display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px; }
+.dk-ig-dugme { display: inline-flex; align-items: center; justify-content: center; gap: 9px; width: 100%; min-height: 46px;
+  padding: 10px 16px; border-radius: 13px; font: inherit; font-size: 14.5px; font-weight: 800; text-align: center;
+  text-decoration: none; border: 0; cursor: pointer; transition: transform .13s, box-shadow .15s, opacity .15s, background .15s; }
+.dk-ig-dugme svg { width: 20px; height: 20px; fill: currentColor; flex-shrink: 0; }
+.dk-ig-takip-btn { background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #fff !important; box-shadow: 0 8px 20px rgb(220 39 67 / .28); }
+.dk-ig-takip-btn:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgb(220 39 67 / .38); text-decoration: none; }
+.dk-ig-takip-btn.tamam, .dk-ig-begeni-btn.tamam { background: #16a34a; box-shadow: 0 6px 16px rgb(22 163 74 / .25); }
+
+.dk-ig-begeni-btn { background: linear-gradient(135deg, #ec4899, #e11d48); color: #fff !important; }
+.dk-ig-begeni-btn.pasif { opacity: .45; pointer-events: none; }
+
+.dk-ig-onay-btn { background: var(--zemin-2, #e2e8f0); color: var(--soluk, #64748b); border: 1.5px solid var(--cizgi, #cbd5e1); cursor: not-allowed; }
+.dk-ig-onay-btn.aktif { background: linear-gradient(135deg, #16a34a, #15803d); color: #fff; border-color: #15803d;
+  cursor: pointer; box-shadow: 0 8px 22px rgb(22 163 74 / .32); }
+.dk-ig-onay-btn.aktif:hover { transform: translateY(-1px); box-shadow: 0 10px 26px rgb(22 163 74 / .42); }
+
+.dk-ig-qr-kutu { display: flex; align-items: center; gap: 14px; padding: 12px 14px; border-radius: 14px;
+  background: var(--zemin-2, #f8fafc); border: 1px dashed var(--cizgi, #cbd5e1); }
+.dk-ig-qr-cerceve { width: 78px; height: 78px; padding: 6px; border-radius: 10px; background: #fff; color: #0f172a;
+  border: 1px solid #e2e8f0; flex-shrink: 0; display: grid; place-items: center; }
+.dk-ig-qr-svg { width: 100%; height: 100%; display: block; }
+.dk-ig-qr-aciklama { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.dk-ig-qr-aciklama strong { font-size: 12.5px; font-weight: 800; color: var(--metin); }
+.dk-ig-qr-aciklama p { margin: 0; font-size: 12px; line-height: 1.4; color: var(--soluk); }
+.dk-ig-qr-tamam-btn { align-self: flex-start; margin-top: 3px; padding: 5px 10px; border-radius: 8px;
+  font: inherit; font-size: 11.5px; font-weight: 800; background: var(--yuzey); color: var(--vurgu);
+  border: 1px solid var(--cizgi); cursor: pointer; transition: background .14s, color .14s; }
+.dk-ig-qr-tamam-btn:hover { background: var(--vurgu); color: #fff; border-color: var(--vurgu); }
+
+@media (max-width: 520px) {
+  .dk-ig-kart { padding: 18px 16px 16px; border-radius: 18px; }
+  .dk-ig-qr-kutu { flex-direction: column; align-items: flex-start; }
+  .dk-ig-qr-cerceve { width: 72px; height: 72px; }
+}
+@media print {
+  .dk-ig-kilit-arka { display: none !important; }
+}
+
+
 
 
 
