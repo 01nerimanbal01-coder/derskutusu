@@ -1774,25 +1774,27 @@ body.ozet-yazi-iri .ozet-bolum p, body.ozet-yazi-iri .ozet-bolum li, body.ozet-y
 .cds-hap b { font-weight: 750; }
 .cds-hap:hover { transform: translateY(-1px); background: var(--kart-ana, var(--vurgu)); color: var(--kart-ikon-yazi, #fff); border-color: var(--kart-ana, var(--vurgu)); text-decoration: none; box-shadow: 0 4px 12px color-mix(in srgb, var(--kart-ana, var(--vurgu)) 22%, transparent); }
 
-/* ---- 31.10.2026: @derskutusuinfo Instagram Üyelik ve Takip Zorunluluğu Kilidi ---- */
+/* ---- 31.10.2026: @derskutusuinfo Instagram Üyelik, Takip Zorunluluğu ve Takipçi Artırma Sistemi ---- */
 body.dk-ig-kilit-acik { overflow: hidden; }
 .menu-ig.ig-uye-onayli { border-color: #22c55e !important; }
-.ig-uye-etiket { display: inline-flex; align-items: center; margin-left: 5px; padding: 1px 7px; border-radius: 999px;
+.menu-ig.ig-uye-bekliyor { border-color: #e1306c !important; background: linear-gradient(135deg, rgb(240 148 51 / .14), rgb(225 48 108 / .14)); }
+.ig-uye-etiket { display: inline-flex; align-items: center; margin-left: 5px; padding: 2px 8px; border-radius: 999px;
   font-size: 11px; font-weight: 800; background: #dcfce7; color: #166534; }
+.menu-ig.ig-uye-bekliyor .ig-uye-etiket { background: linear-gradient(135deg, #f09433, #dc2743, #bc1888); color: #fff; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .ig-uye-etiket { background: #14532d; color: #bbf7d0; }
 }
 :root[data-theme="dark"] .ig-uye-etiket { background: #14532d; color: #bbf7d0; }
 
 .dk-ig-kilit-arka { position: fixed; inset: 0; z-index: 99999; display: flex; align-items: center; justify-content: center;
-  padding: 16px; background: rgb(15 23 42 / .72); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  padding: 14px; background: rgb(15 23 42 / .76); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
   overflow-y: auto; animation: dkIgBelir .22s ease-out; }
 @keyframes dkIgBelir { from { opacity: 0; } to { opacity: 1; } }
 
-.dk-ig-kart { width: min(540px, 100%); max-height: calc(100dvh - 32px); overflow-y: auto; padding: 24px 24px 20px;
+.dk-ig-kart { width: min(550px, 100%); max-height: calc(100dvh - 28px); overflow-y: auto; padding: 22px 22px 18px;
   border-radius: 22px; background: var(--yuzey, #fff); color: var(--metin, #0f172a);
-  border: 2px solid color-mix(in srgb, #e1306c 38%, var(--cizgi, #e2e8f0));
-  box-shadow: 0 24px 60px rgb(15 23 42 / .38), 0 0 0 1px rgb(255 255 255 / .08) inset; }
+  border: 2px solid color-mix(in srgb, #e1306c 42%, var(--cizgi, #e2e8f0));
+  box-shadow: 0 24px 60px rgb(15 23 42 / .42), 0 0 0 1px rgb(255 255 255 / .08) inset; }
 .dk-ig-kart.salla { animation: dkIgSalla .36s ease-in-out; }
 @keyframes dkIgSalla {
   0%, 100% { transform: translateX(0); }
@@ -1802,7 +1804,7 @@ body.dk-ig-kilit-acik { overflow: hidden; }
 
 .dk-ig-ust-serit { display: flex; align-items: center; gap: 13px; padding: 11px 14px; border-radius: 15px;
   background: linear-gradient(135deg, rgb(240 148 51 / .12), rgb(220 39 67 / .12), rgb(188 24 136 / .12));
-  border: 1px solid rgb(225 48 108 / .25); margin-bottom: 14px; }
+  border: 1px solid rgb(225 48 108 / .25); margin-bottom: 10px; }
 .dk-ig-kamera-ikon { width: 44px; height: 44px; border-radius: 13px; flex-shrink: 0; display: grid; place-items: center;
   background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: #fff;
   box-shadow: 0 6px 16px rgb(220 39 67 / .32); }
@@ -1811,20 +1813,30 @@ body.dk-ig-kilit-acik { overflow: hidden; }
 .dk-ig-rozet { font-size: 10.5px; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; color: #e1306c; }
 .dk-ig-hesap-ad { font-size: 17px; font-weight: 850; color: var(--metin); letter-spacing: -.01em; }
 
-.dk-ig-baslik { margin: 0 0 8px; font-size: clamp(18px, 3vw, 21.5px); font-weight: 850; line-height: 1.28; color: var(--metin); }
-.dk-ig-aciklama { margin: 0 0 15px; font-size: 14px; line-height: 1.55; color: var(--soluk); }
+.dk-ig-istatistikler { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 12px; }
+.dk-ig-ist-kutu { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 7px 6px;
+  border-radius: 11px; background: var(--zemin-2, #f8fafc); border: 1px solid var(--cizgi, #e2e8f0); }
+.dk-ig-ist-kutu strong { font-size: 13.5px; font-weight: 850; color: #e1306c; }
+.dk-ig-ist-kutu small { font-size: 11px; font-weight: 700; color: var(--soluk); }
+
+.dk-ig-baslik { margin: 0 0 6px; font-size: clamp(17.5px, 2.8vw, 20.5px); font-weight: 850; line-height: 1.28; color: var(--metin); }
+.dk-ig-aciklama { margin: 0 0 10px; font-size: 13.5px; line-height: 1.5; color: var(--soluk); }
 .dk-ig-aciklama strong { color: var(--metin); font-weight: 800; }
 
-.dk-ig-form-grup { margin-bottom: 13px; }
-.dk-ig-etiket { display: block; font-size: 12.5px; font-weight: 800; color: var(--metin); margin-bottom: 6px; }
+.dk-ig-avantajlar { list-style: none; margin: 0 0 13px; padding: 10px 12px; border-radius: 12px;
+  background: var(--zemin-2, #f8fafc); border: 1px solid var(--cizgi, #e2e8f0); display: flex; flex-direction: column; gap: 5px; }
+.dk-ig-avantajlar li { font-size: 12.5px; font-weight: 700; color: var(--metin); line-height: 1.4; }
+
+.dk-ig-form-grup { margin-bottom: 12px; }
+.dk-ig-etiket { display: block; font-size: 12.5px; font-weight: 800; color: var(--metin); margin-bottom: 5px; }
 .dk-ig-input-sarici { display: flex; align-items: center; border-radius: 12px; border: 1.5px solid var(--cizgi);
   background: var(--zemin-2, #f8fafc); overflow: hidden; transition: border-color .15s, box-shadow .15s; }
 .dk-ig-input-sarici:focus-within { border-color: #e1306c; box-shadow: 0 0 0 3px rgb(225 48 108 / .16); background: var(--yuzey); }
 .dk-ig-at { padding: 0 10px 0 13px; font-size: 15px; font-weight: 850; color: #e1306c; user-select: none; }
-.dk-ig-input { flex: 1; min-height: 42px; padding: 0 12px 0 2px; border: 0; background: transparent;
+.dk-ig-input { flex: 1; min-height: 41px; padding: 0 12px 0 2px; border: 0; background: transparent;
   color: var(--metin); font: inherit; font-size: 14.5px; font-weight: 700; outline: none; }
 
-.dk-ig-durum { margin-bottom: 12px; padding: 10px 13px; border-radius: 12px; font-size: 13px; font-weight: 700; line-height: 1.45; }
+.dk-ig-durum { margin-bottom: 11px; padding: 9px 12px; border-radius: 12px; font-size: 12.5px; font-weight: 700; line-height: 1.45; }
 .dk-ig-durum.bekliyor { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
 .dk-ig-durum.uyari { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
 .dk-ig-durum.basari { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
@@ -1837,9 +1849,9 @@ body.dk-ig-kilit-acik { overflow: hidden; }
 :root[data-theme="dark"] .dk-ig-durum.uyari { background: #7f1d1d; color: #fee2e2; border-color: #ef4444; }
 :root[data-theme="dark"] .dk-ig-durum.basari { background: #14532d; color: #dcfce7; border-color: #22c55e; }
 
-.dk-ig-adimlar { display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px; }
-.dk-ig-dugme { display: inline-flex; align-items: center; justify-content: center; gap: 9px; width: 100%; min-height: 46px;
-  padding: 10px 16px; border-radius: 13px; font: inherit; font-size: 14.5px; font-weight: 800; text-align: center;
+.dk-ig-adimlar { display: flex; flex-direction: column; gap: 9px; margin-bottom: 13px; }
+.dk-ig-dugme { display: inline-flex; align-items: center; justify-content: center; gap: 9px; width: 100%; min-height: 45px;
+  padding: 9px 15px; border-radius: 13px; font: inherit; font-size: 14px; font-weight: 800; text-align: center;
   text-decoration: none; border: 0; cursor: pointer; transition: transform .13s, box-shadow .15s, opacity .15s, background .15s; }
 .dk-ig-dugme svg { width: 20px; height: 20px; fill: currentColor; flex-shrink: 0; }
 .dk-ig-takip-btn { background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -1855,26 +1867,96 @@ body.dk-ig-kilit-acik { overflow: hidden; }
   cursor: pointer; box-shadow: 0 8px 22px rgb(22 163 74 / .32); }
 .dk-ig-onay-btn.aktif:hover { transform: translateY(-1px); box-shadow: 0 10px 26px rgb(22 163 74 / .42); }
 
-.dk-ig-qr-kutu { display: flex; align-items: center; gap: 14px; padding: 12px 14px; border-radius: 14px;
+.dk-ig-qr-kutu { display: flex; align-items: center; gap: 14px; padding: 11px 13px; border-radius: 14px;
   background: var(--zemin-2, #f8fafc); border: 1px dashed var(--cizgi, #cbd5e1); }
-.dk-ig-qr-cerceve { width: 78px; height: 78px; padding: 6px; border-radius: 10px; background: #fff; color: #0f172a;
+.dk-ig-qr-cerceve { width: 74px; height: 74px; padding: 6px; border-radius: 10px; background: #fff; color: #0f172a;
   border: 1px solid #e2e8f0; flex-shrink: 0; display: grid; place-items: center; }
 .dk-ig-qr-svg { width: 100%; height: 100%; display: block; }
 .dk-ig-qr-aciklama { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
-.dk-ig-qr-aciklama strong { font-size: 12.5px; font-weight: 800; color: var(--metin); }
-.dk-ig-qr-aciklama p { margin: 0; font-size: 12px; line-height: 1.4; color: var(--soluk); }
-.dk-ig-qr-tamam-btn { align-self: flex-start; margin-top: 3px; padding: 5px 10px; border-radius: 8px;
+.dk-ig-qr-aciklama strong { font-size: 12px; font-weight: 800; color: var(--metin); }
+.dk-ig-qr-aciklama p { margin: 0; font-size: 11.5px; line-height: 1.38; color: var(--soluk); }
+.dk-ig-qr-tamam-btn { align-self: flex-start; margin-top: 2px; padding: 5px 10px; border-radius: 8px;
   font: inherit; font-size: 11.5px; font-weight: 800; background: var(--yuzey); color: var(--vurgu);
   border: 1px solid var(--cizgi); cursor: pointer; transition: background .14s, color .14s; }
 .dk-ig-qr-tamam-btn:hover { background: var(--vurgu); color: #fff; border-color: var(--vurgu); }
 
+/* Sayfa içi @derskutusuinfo Takip ve Paylaşım Banner'ı */
+.dk-ig-sayfa-banner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  margin: 22px 0; padding: 16px 20px; border-radius: 18px;
+  background: linear-gradient(135deg, rgb(240 148 51 / .09), rgb(220 39 67 / .09), rgb(188 24 136 / .09));
+  border: 1.5px solid rgb(225 48 108 / .28); }
+.dk-ig-banner-sol { display: flex; align-items: center; gap: 14px; flex: 1 1 300px; min-width: 0; }
+.dk-ig-banner-metin { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.dk-ig-banner-ust { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.dk-ig-banner-ust strong { font-size: 16px; font-weight: 850; color: var(--metin); }
+.dk-ig-banner-rozet { padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 800;
+  background: rgb(225 48 108 / .14); color: #e1306c; }
+.dk-ig-banner-metin p { margin: 0; font-size: 13px; line-height: 1.48; color: var(--soluk); }
+.dk-ig-banner-sag { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.dk-ig-banner-btn { display: inline-flex; align-items: center; gap: 7px; padding: 9px 16px; border-radius: 11px;
+  font-size: 13.5px; font-weight: 800; text-decoration: none; white-space: nowrap; }
+.dk-ig-banner-btn svg { width: 18px; height: 18px; fill: currentColor; }
+.dk-ig-paylas-btn { padding: 9px 14px; border-radius: 11px; font: inherit; font-size: 13px; font-weight: 800;
+  background: var(--yuzey); color: var(--metin); border: 1.5px solid var(--cizgi); cursor: pointer; white-space: nowrap;
+  transition: transform .12s, border-color .14s; }
+.dk-ig-paylas-btn:hover { transform: translateY(-1px); border-color: #e1306c; color: #e1306c; }
+
+/* PDF / Word İndirme Sonrası Instagram Bildirim Zili Toast Kartı */
+.dk-ig-indir-toast { position: fixed; right: 18px; bottom: 18px; z-index: 99990; width: min(390px, calc(100vw - 36px));
+  padding: 16px 18px; border-radius: 18px; background: var(--yuzey, #fff); color: var(--metin);
+  border: 2px solid #e1306c; box-shadow: 0 18px 42px rgb(15 23 42 / .28); animation: dkIgBelir .22s ease-out; }
+.dk-ig-toast-kapat { position: absolute; top: 10px; right: 10px; width: 28px; height: 28px; border-radius: 999px;
+  border: 0; background: var(--zemin-2); color: var(--soluk); font-size: 13px; font-weight: 800; cursor: pointer; }
+.dk-ig-toast-baslik { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; padding-right: 24px; }
+.dk-ig-toast-baslik strong { font-size: 14px; font-weight: 850; color: var(--metin); }
+.dk-ig-indir-toast p { margin: 0 0 12px; font-size: 12.5px; line-height: 1.48; color: var(--soluk); }
+.dk-ig-toast-eylemler { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.dk-ig-toast-btn { display: inline-flex; align-items: center; gap: 6px; padding: 7px 13px; border-radius: 10px;
+  font-size: 12.5px; font-weight: 800; text-decoration: none; }
+.dk-ig-toast-btn svg { width: 16px; height: 16px; fill: currentColor; }
+.dk-ig-toast-paylas { padding: 7px 11px; border-radius: 10px; font: inherit; font-size: 12px; font-weight: 800;
+  background: var(--zemin-2); color: var(--metin); border: 1px solid var(--cizgi); cursor: pointer; }
+
+/* Ana sayfa (#ig-blok): @derskutusuinfo Instagram Eğitim Vitrini */
+.ig-vitrin-ust { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  margin-bottom: 18px; padding: 18px 22px; border-radius: 18px;
+  background: linear-gradient(135deg, rgb(240 148 51 / .1), rgb(220 39 67 / .1), rgb(188 24 136 / .1));
+  border: 1.5px solid rgb(225 48 108 / .28); }
+.ig-vitrin-kimlik { display: flex; align-items: center; gap: 14px; flex: 1 1 280px; }
+.ig-vitrin-avatar { width: 52px; height: 52px; border-radius: 16px; flex-shrink: 0; display: grid; place-items: center;
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: #fff;
+  box-shadow: 0 8px 20px rgb(220 39 67 / .32); }
+.ig-vitrin-avatar svg { width: 28px; height: 28px; fill: currentColor; }
+.ig-vitrin-baslik-satir { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 3px; }
+.ig-vitrin-baslik-satir strong { font-size: 18px; font-weight: 850; color: var(--metin); }
+.ig-onay-tik { padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 800; background: #dcfce7; color: #166534; }
+.ig-vitrin-metin p { margin: 0; font-size: 13.5px; color: var(--soluk); line-height: 1.45; }
+.ig-vitrin-btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 13px;
+  font-size: 14px; font-weight: 800; text-decoration: none; }
+.ig-vitrin-btn svg { width: 19px; height: 19px; fill: currentColor; }
+
+.ig-seri-kart { display: flex; flex-direction: column; gap: 8px; padding: 16px 18px; border-radius: 16px;
+  background: var(--yuzey); color: var(--metin); border: 1.5px solid var(--kart-cizgi, var(--cizgi));
+  border-top: 4px solid var(--kart-vurgu, #e1306c); text-decoration: none;
+  transition: transform .15s, border-color .15s, box-shadow .15s; }
+.ig-seri-kart:hover { transform: translateY(-3px); border-color: var(--kart-ana, #e1306c); text-decoration: none;
+  box-shadow: 0 12px 26px color-mix(in srgb, var(--kart-ana, #e1306c) 15%, rgb(15 23 42 / .08)); }
+.ig-seri-ust { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.ig-seri-etiket { font-size: 11px; font-weight: 850; letter-spacing: .05em; color: var(--kart-ana, #e1306c); }
+.ig-seri-sayi { padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 800;
+  background: var(--kart-zemin, var(--zemin-2)); color: var(--kart-ana, var(--metin)); }
+.ig-seri-baslik { font-size: 15.5px; font-weight: 850; line-height: 1.32; color: var(--metin); }
+.ig-seri-aciklama { margin: 0; font-size: 13px; line-height: 1.48; color: var(--soluk); flex: 1; }
+.ig-seri-alt { font-size: 12.5px; font-weight: 800; color: #e1306c; margin-top: 4px; }
+
 @media (max-width: 520px) {
-  .dk-ig-kart { padding: 18px 16px 16px; border-radius: 18px; }
+  .dk-ig-kart { padding: 16px 14px 14px; border-radius: 18px; }
   .dk-ig-qr-kutu { flex-direction: column; align-items: flex-start; }
-  .dk-ig-qr-cerceve { width: 72px; height: 72px; }
+  .dk-ig-qr-cerceve { width: 68px; height: 68px; }
+  .dk-ig-istatistikler { gap: 5px; }
 }
 @media print {
-  .dk-ig-kilit-arka { display: none !important; }
+  .dk-ig-kilit-arka, .dk-ig-sayfa-banner, .dk-ig-indir-toast { display: none !important; }
 }
 
 
