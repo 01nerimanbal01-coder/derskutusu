@@ -1,0 +1,302 @@
+{
+  "sinif": 7,
+  "ders": "matematik",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "konu": "Rasyonel Sayılar, Ondalık Gösterim ve Sıralama",
+  "ciktilar": [
+    "MAT.7.1.2. Gerçek yaşam durumlarında rasyonel sayıların ondalık gösterimlerini yansıtabilme",
+    "MAT.7.1.3. Rasyonel sayıların karşılaştırma ve sıralama ilişkilerini yorumlayabilme"
+  ],
+  "hatirla": [
+    "Devirli ondalık gösterim kesre çevrilirken pay, bütün rakamların oluşturduğu sayıdan devretmeyen rakamların (tam kısım dâhil) oluşturduğu sayı çıkarılarak bulunur.",
+    "Paydaya virgülden sonraki devreden rakam sayısı kadar 9, devretmeyen ondalık rakam sayısı kadar 0 yazılır; negatif sayılarda eksi işareti kesrin önünde kalır.",
+    "Her devirli ondalık gösterim bir rasyonel sayıdır; 0,999… gösterimi 1 tam sayısına eşittir.",
+    "Sayı doğrusunda sağdaki rasyonel sayı soldakinden büyüktür; negatif sayılarda sıfırdan uzaklaştıkça (mutlak değer büyüdükçe) sayının değeri küçülür."
+  ],
+  "sorular": [
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Elif, 2,45̅ devirli ondalık gösterimini kesre çevirirken işlem kartındaki dört adımı sırasıyla yazmıştır. Elif ilk hatayı hangi adımda yapmıştır?",
+      "secenekler": [
+        "2. adımda devretmeyen kısmı 24 yerine 4 almıştır.",
+        "1. adımda bütün rakamları 245 yerine 45 yazmıştır.",
+        "3. adımda paydaya 90 yerine 99 yazmıştır.",
+        "4. adımda pay ile paydayı yer değiştirmiştir."
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Kartlarda verilen devirli ondalık gösterimleri kesre çevirerek tablodaki boşlukları doldurunuz. İlk satır örnektir.",
+      "basliklar": [
+        "Devirli gösterim",
+        "Pay işlemi",
+        "Payda",
+        "En sade kesir"
+      ],
+      "satirlar": [
+        [
+          "0,6̅",
+          "6 − 0 = 6",
+          "9",
+          "{kesir:2|3}"
+        ],
+        [
+          "0,35̅",
+          {
+            "b": "35 − 3 = 32"
+          },
+          {
+            "b": "90"
+          },
+          {
+            "b": "{kesir:16|45}"
+          }
+        ],
+        [
+          "0,4̅5̅",
+          {
+            "b": "45 − 0 = 45"
+          },
+          {
+            "b": "99"
+          },
+          {
+            "b": "{kesir:5|11}"
+          }
+        ],
+        [
+          "−1,7̅",
+          {
+            "b": "17 − 1 = 16"
+          },
+          {
+            "b": "9"
+          },
+          {
+            "b": "−{kesir:16|9}"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "İfadeleri rasyonel sayı karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "0,7̅",
+          "{kesir:7|9}"
+        ],
+        [
+          "0,16̅",
+          "{kesir:1|6}"
+        ],
+        [
+          "0,6̅3̅",
+          "{kesir:7|11}"
+        ],
+        [
+          "2,9̅",
+          "3"
+        ],
+        [
+          "−0,4̅",
+          "−{kesir:4|9}"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Ardışık tam sayılar arasındaki her birim aralığın 3 eş parçaya bölündüğü sayı doğrusunda K, L ve M noktaları işaretlenmiştir. Bu noktalara karşılık gelen sayıların doğru sıralanışı hangisidir?",
+      "secenekler": [
+        "L < K < M",
+        "K < L < M",
+        "M < L < K",
+        "K < M < L"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Şemada 0,9; 0,99 ve 0,999 sayılarının 1 tam sayısına uzaklıkları gösterilmiştir. a) 0,999 sayısının 1’e uzaklığı kaçtır? b) Aynı kurala göre 2,9̅ sayısı hangi tam sayıya eşittir? Kesre çevirerek gösteriniz.",
+      "cevap": "a) 1 − 0,999 = 0,001’dir. b) Pay 29 − 2 = 27 ve payda 9 olduğundan 2,9̅ = {kesir:27|9} = 3 tam sayısına eşittir.",
+      "satir": 3
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Rasyonel sayıların gösterimi ve sıralanmasıyla ilgili ifadelerden doğru olanların D, yanlış olanların Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Her devirli ondalık gösterim, payı ve paydası tam sayı olan bir kesre dönüştürülebilir.",
+          "dogru": true
+        },
+        {
+          "metin": "1,3̅6̅ sayısı kesre çevrilirken paydaya 90 yazılır.",
+          "dogru": false
+        },
+        {
+          "metin": "Sayı doğrusunda negatif rasyonel sayılar sıfırın solunda yer alır.",
+          "dogru": true
+        },
+        {
+          "metin": "İki negatif rasyonel sayıdan sıfıra daha yakın olanı daha küçüktür.",
+          "dogru": false
+        },
+        {
+          "metin": "0,999… devirli ondalık gösterimi 1 tam sayısına eşittir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Üç ayrı rasyonel sayı kartında devirli ondalık gösterimlerin kesir karşılıkları verilmiştir. Numaralanmış kartlardaki eşitliklerden hangileri doğrudur?",
+      "secenekler": [
+        "Yalnız I",
+        "I ve II",
+        "I ve III",
+        "I, II ve III"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Dört dağ gözlem istasyonunda aynı gece ölçülen hava sıcaklıkları göstergede verilmiştir. Tablodaki karşılaştırma sorularını cevaplayınız.",
+      "basliklar": [
+        "Karşılaştırma sorusu",
+        "Cevap"
+      ],
+      "satirlar": [
+        [
+          "Sayı doğrusunda en solda yer alan sıcaklık değeri",
+          "−24 °C (Zirve)"
+        ],
+        [
+          "Hava sıcaklığı en yüksek olan istasyon",
+          {
+            "b": "Vadi (+4 °C)"
+          }
+        ],
+        [
+          "Kuzey ile Yamaç sıcaklıklarının < sembolüyle karşılaştırılması",
+          {
+            "b": "−18 °C < −5 °C"
+          }
+        ],
+        [
+          "Dört sıcaklığın küçükten büyüğe sıralanışı",
+          {
+            "b": "−24 < −18 < −5 < +4"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "soru": "3,14̅ devirli ondalık gösterimini en sade kesir biçiminde yazmak için izlenecek adımları 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "Virgül ve devir çizgisi yok sayılarak bütün rakamlardan 314 sayısı oluşturulur.",
+        "Bütün rakamlardan devretmeyen kısım çıkarılarak pay bulunur: 314 − 31 = 283.",
+        "Virgülden sonra bir devreden ve bir devretmeyen rakam olduğundan paydaya 90 yazılır.",
+        "Elde edilen {kesir:283|90} kesrinin sadeleşip sadeleşmediği kontrol edilerek sonuç yazılır."
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Dört su altı araştırma aracının deniz seviyesine (0 m) göre konumları kesirlerle modellenmiştir. Araçların konumlarına ilişkin aşağıdakilerden hangisi yanlıştır?",
+      "secenekler": [
+        "Deniz seviyesine en yakın araç Delta’dır.",
+        "Alfa aracı, Gama aracından daha derindedir.",
+        "Beta aracının konumu −5 m ile −4 m arasındadır.",
+        "Konum değeri en küçük olan araç Beta’dır."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Sayı doğrusundaki konumlarını düşünerek {kesir:5|3}, −{kesir:9|4}, −{kesir:2|3} ve {kesir:1|4} sayılarını küçükten büyüğe sembolle sıralayınız.",
+      "cevap": "Sayı doğrusunda soldan sağa doğru sıralama −{kesir:9|4} < −{kesir:2|3} < {kesir:1|4} < {kesir:5|3} biçimindedir.",
+      "satir": 3
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Bilgi kartlarında −14 ve −6 sayılarının mutlak değerleri ile sayı doğrusundaki yerleri verilmiştir. |−14| > |−6| olduğu hâlde neden −14 < −6 olduğunu açıklayınız.",
+      "cevap": "Mutlak değer sıfıra uzaklığı gösterir (−14’ün uzaklığı 14, −6’nınki 6 birimdir). Negatiflerde sıfırdan uzaklaştıkça değer küçüldüğü için −14 < −6 olur.",
+      "satir": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına uyan kelimeleri kutulara yazınız. Turuncu kutulardaki harfler, ondalık kısımda belirli rakamların sonsuza dek tekrar etmesi durumunu verir.",
+      "satirlar": [
+        {
+          "ipucu": "Devirli gösterim kesre çevrilirken çizginin altına yazılan sayı",
+          "cevap": "PAYDA",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Sayı doğrusunda sıfırın solunda yer alan sayıların işareti",
+          "cevap": "EKSİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Tam kısım ile ondalık kısmı birbirinden ayıran işaret",
+          "cevap": "VİRGÜL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sayı doğrusunu eş parçalara ayıran eşit uzunluklardan her biri",
+          "cevap": "BİRİM",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "{kesir:a|b} biçiminde yazılabilen sayıların kümesi",
+          "cevap": "RASYONEL",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "DEVİR"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız. Bir kavram artacaktır.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Devirli gösterimde devreden her rakam için paydaya bir ___ yazılır.",
+          "cevap": "dokuz"
+        },
+        {
+          "metin": "Pozitif bir rasyonel sayı, negatif rasyonel sayıdan daima ___.",
+          "cevap": "büyüktür"
+        },
+        {
+          "metin": "Pay hesaplanırken tam kısım ___ rakamlara dâhil edilir.",
+          "cevap": "devretmeyen"
+        },
+        {
+          "metin": "Sayı doğrusunda sıfıra olan uzaklığa o sayının ___ değeri denir.",
+          "cevap": "mutlak"
+        }
+      ],
+      "fazla": [
+        "bölüm"
+      ]
+    }
+  ],
+  "yayin_tarihi": "2026-10-12"
+}
