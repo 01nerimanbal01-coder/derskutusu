@@ -41,9 +41,9 @@ def zit_yonerge_kartlari():
 
 def uc_hareke_panosu():
     kutular = [
-        ('1. Kutu (Üstte Çizgi)', 'بَ', MAVI, MAVI_A),
-        ('2. Kutu (Altta Çizgi)', 'بِ', YES, YES_A),
-        ('3. Kutu (Üstte Vâv)', 'بُ', TUR, TUR_A),
+        ('1. Kutu · Üst Çizgi', 'بَ', MAVI, MAVI_A),
+        ('2. Kutu · Alt Çizgi', 'بِ', YES, YES_A),
+        ('3. Kutu · Üst Vâv', 'بُ', TUR, TUR_A),
     ]
     ic = ''
     for i, (bas, harf, renk, arka) in enumerate(kutular):
@@ -79,8 +79,8 @@ def zamir_nezaket_panosu():
 def yazim_adimlari_semasi():
     adimlar = [
         ('Aşama K', 'Önce Gövde', MAVI, MAVI_A),
-        ('Aşama L', 'Sağdan Başla', YES, YES_A),
-        ('Aşama M', 'En Son Hareke', MOR, MOR_A),
+        ('Aşama L', 'Sağdan Sol', YES, YES_A),
+        ('Aşama M', 'Son Hareke', MOR, MOR_A),
         ('Aşama N', 'Sonra Nokta', TUR, TUR_A),
     ]
     ic = ''
@@ -107,12 +107,12 @@ def hel_enti_diyalog_karti():
 def satir_ustu_alti_panosu():
     ic = f'<rect x="6" y="6" width="170" height="88" rx="9" fill="{YES_A}" stroke="{YES}" stroke-width="1.4"/>'
     ic += tr_yazi(91, 24, 'Satır Üstüne Oturanlar', YESIL_K, kalin=True)
-    ic += ar_yazi(91, 56, 'أ · ب · د · ط · ف · ك', LAC)
+    ic += ar_yazi(91, 56, 'أ - ب - د - ط - ف', LAC)
     ic += tr_yazi(91, 80, 'Çizgi altına inmez', LAC)
 
     ic += f'<rect x="184" y="6" width="170" height="88" rx="9" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.4"/>'
     ic += tr_yazi(269, 24, 'Satır Altına İnenler', TUR, kalin=True)
-    ic += ar_yazi(269, 56, 'ح · ر · س · ص · ع · ق', LAC)
+    ic += ar_yazi(269, 56, 'ح - ر - س - ص - ع', LAC)
     ic += tr_yazi(269, 80, 'Kuyruk/çanak alta iner', LAC)
     return svg(360, 100, ic, 'Satır çizgisinin üstüne oturan ve altına inen harfler.', 21)
 
