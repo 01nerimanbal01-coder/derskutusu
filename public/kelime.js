@@ -207,7 +207,10 @@
       });
       function bitis() {
         kutu.append(el('div', { sinif: 'k-bitti' }, el('p', {}, `Test bitti: ${sorular.length} sorudan ${puan} doğru.`),
-          el('button', { type: 'button', sinif: 'dugme ana', onclick: kur }, 'Yeni test')));
+          el('div', { sinif: 'k-dugmeler' },
+            el('button', { type: 'button', sinif: 'dugme ana', onclick: kur }, 'Yeni test'),
+            el('a', { sinif: 'dugme dk-ig-takip-btn', href: 'https://www.instagram.com/derskutusuinfo/', target: '_blank', rel: 'noopener' }, '📸 @derskutusuinfo İngilizce Kartları →'),
+            el('button', { type: 'button', sinif: 'dk-ig-paylas-btn', onclick: (e) => window.dkSayfaPaylas && window.dkSayfaPaylas(e.currentTarget, `🇬🇧 Ders Kutusu İngilizce Kelime Testinde ${sorular.length} soruda ${puan} doğru yaptım! @derskutusuinfo Instagram sayfasını takip et ve sen de dene:`) }, '🟢 WhatsApp’ta Paylaş'))));
       }
       kutu.replaceChildren(el('div', { sinif: 'etk-bas' }, el('h2', {}, `${sorular.length} soruluk test`), sonuc), ol);
     }

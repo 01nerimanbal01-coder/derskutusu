@@ -143,15 +143,32 @@
     alan.append(el('div',{sinif:'k-sozluk-panel'},el('div',{sinif:'k-sozluk-ust'},girdi),el('div',{sinif:'k-sozluk-alt'},filtreKutu)),list);
     cizListe();
   }
+  function igPaylasSatir(){
+    const hafta=Math.min(14,Math.max(1,Number(state.topic)||1));
+    const gorsel=`/sosyal/bilgi-${state.grade}-arapca-${hafta}.png`;
+    const igBtn=button('📸 @derskutusuinfo Arapça Kartları →',()=>{
+      if(typeof window.dkIgKartAc==='function'){
+        window.dkIgKartAc({gorsel,baslik:`${state.grade}. Sınıf Arapça · ${topic().ad}`,baglanti:location.href,tur:'Arapça Bilgi Kartı'});
+      }else{
+        window.open('https://www.instagram.com/derskutusuinfo/','_blank','noopener');
+      }
+    },'dugme');
+    const waBtn=button('🟢 WhatsApp\'ta Paylaş',()=>{
+      if(typeof window.dkSayfaPaylas==='function'){
+        window.dkSayfaPaylas(`${state.grade}. Sınıf Arapça · ${topic().ad}`,location.href,true);
+      }
+    },'dugme');
+    return el('div',{sinif:'k-dugmeler',style:'margin-top:.6rem;justify-content:center;flex-wrap:wrap'},igBtn,waBtn);
+  }
   function quiz(){const qs=mix(words()).slice(0,10),slots=plannedSlots(qs.length);let i=0,score=0;const box=el('div',{});alan.append(box);
-    function next(){box.replaceChildren();if(i===qs.length){box.append(el('h3',{},`${qs.length} soruda ${score} doğru`),button('Yeni test',draw));return;}const w=qs[i],fb=el('p',{role:'status',sinif:'etk-geri'}),row=el('div',{sinif:'etk-secenekler'});let answered=false;
-      optionsFor(w,words(),slots[i]).forEach(x=>row.append(button(x.tr,e=>{if(answered)return;answered=true;for(const b of row.children)b.disabled=true;if(x===w){score++;e.currentTarget.classList.add('dogru');fb.textContent='Doğru!';}else{e.currentTarget.classList.add('yanlis');fb.textContent=`Doğrusu: ${w.tr}`;}const nb=button('Sonraki soru',()=>{i++;next();odakla(box);},'dugme ana');box.append(nb);nb.focus();},'etk-sec')));
+    function next(){box.replaceChildren();if(i===qs.length){box.append(el('h3',{},`${qs.length} soruda ${score} doğru`),button('Yeni test',draw),igPaylasSatir());return;}const w=qs[i],fb=el('p',{role:'status',sinif:'etk-geri'}),row=el('div',{sinif:'etk-secenekler'});let answered=false;
+      optionsFor(w,words(),slots[i]).forEach(x=>row.append(button(x.tr,e=>{if(answered)return;answered=true;for(const b of row.children)x.disabled=true;if(x===w){score++;e.currentTarget.classList.add('dogru');fb.textContent='Doğru!';}else{e.currentTarget.classList.add('yanlis');fb.textContent=`Doğrusu: ${w.tr}`;}const nb=button('Sonraki soru',()=>{i++;next();odakla(box);},'dugme ana');box.append(nb);nb.focus();},'etk-sec')));
       box.append(el('p',{},`${i+1} / ${qs.length}`),el('h3',{},'Türkçe anlamı hangisidir?'),ar(w.ar,'a-kelime'),row,fb);
     }next();
   }
   function keyboard(input){const k=el('div',{sinif:'a-klavye',dir:'rtl',role:'group','aria-label':'Arapça klavye'});const hareke={'َ':'Üstün (fetha)','ِ':'Esre (kesra)','ُ':'Ötre (damma)','ْ':'Cezim (sükûn)','ّ':'Şedde','ً':'İki üstün (tenvin)','ٍ':'İki esre (tenvin)','ٌ':'İki ötre (tenvin)'};const chars=[...data.harfler.map(h=>h.harf),'أ','إ','آ','ء','ؤ','ئ','ة','ى','َ','ِ','ُ','ْ','ّ','ً','ٍ','ٌ'];for(const ch of chars){const b=button(ar(ch),()=>{if(input.readOnly)return;input.focus();input.setRangeText(ch,input.selectionStart,input.selectionEnd,'end');});if(hareke[ch])b.setAttribute('aria-label',hareke[ch]);k.append(b);}k.append(button('Boşluk',()=>{if(!input.readOnly){input.focus();input.setRangeText(' ',input.selectionStart,input.selectionEnd,'end');}}),button('Sil',()=>{if(input.readOnly)return;const s=input.selectionStart,e=input.selectionEnd;input.setRangeText('',s===e?Math.max(0,s-1):s,e,'end');input.focus();}));return k;}
   function writing(){const qs=mix(words()).slice(0,10);let i=0,score=0;const box=el('div',{});alan.append(box);
-    function next(){box.replaceChildren();if(i===qs.length){box.append(el('h3',{},`${qs.length} kelimeden ${score} doğru`),button('Yeni kelimeler',draw));return;}
+    function next(){box.replaceChildren();if(i===qs.length){box.append(el('h3',{},`${qs.length} kelimeden ${score} doğru`),button('Yeni kelimeler',draw),igPaylasSatir());return;}
       const w=qs[i],input=el('input',{type:'text',lang:'ar',dir:'rtl',sinif:'a-ar k-girdi',autocomplete:'off',spellcheck:'false','aria-label':'Arapçasını yaz'}),fb=el('p',{role:'status'}),hint=el('p',{});let done=false,hinted=false;
       const sensitive=words().some(x=>x.ar!==w.ar && base(x.ar)===base(w.ar));
       const form=el('form',{sinif:'k-yaz',onsubmit:e=>{e.preventDefault();if(done){i++;next();return;}if(!input.value.trim()){input.focus();return;}
@@ -163,7 +180,7 @@
     }next();
   }
   function matching(){const ws=mix(words()).filter((x,i,a)=>a.findIndex(y=>meaningKey(y)===meaningKey(x))===i).slice(0,6),left=el('div',{sinif:'etk-sutun'}),right=el('div',{sinif:'etk-sutun'}),feedback=el('p',{role:'status'},'Bir Arapça kelimeyi ve Türkçe karşılığını seç.');let picked=null,leftCount=ws.length;
-    function choose(b,w,side){if(b.disabled)return;if(!picked||picked.side===side){if(picked)picked.b.classList.remove('secili');picked={b,w,side};b.classList.add('secili');return;}const previous=picked;picked=null;previous.b.classList.remove('secili');if(previous.w===w){previous.b.disabled=b.disabled=true;previous.b.classList.add('dogru');b.classList.add('dogru');mark(w);leftCount--;feedback.textContent=leftCount?`${leftCount} çift kaldı.`:'Bütün kelimeleri eşleştirdin.';if(!leftCount)alan.append(button('Yeni eşleştirme',draw));}else feedback.textContent='Bu iki kelime eşleşmiyor. Yeniden dene.';}
+    function choose(b,w,side){if(b.disabled)return;if(!picked||picked.side===side){if(picked)picked.b.classList.remove('secili');picked={b,w,side};b.classList.add('secili');return;}const previous=picked;picked=null;previous.b.classList.remove('secili');if(previous.w===w){previous.b.disabled=b.disabled=true;previous.b.classList.add('dogru');b.classList.add('dogru');mark(w);leftCount--;feedback.textContent=leftCount?`${leftCount} çift kaldı.`:'Bütün kelimeleri eşleştirdin.';if(!leftCount)alan.append(button('Yeni eşleştirme',draw),igPaylasSatir());}else feedback.textContent='Bu iki kelime eşleşmiyor. Yeniden dene.';}
     for(const w of ws){const b=button(ar(w.ar),()=>choose(b,w,'ar'),'etk-sec');left.append(b);}for(const w of mix(ws)){const b=button(w.tr,()=>choose(b,w,'tr'),'etk-sec');right.append(b);}alan.append(feedback,el('div',{sinif:'etk etk-eslestir'},el('div',{sinif:'etk-sutunlar'},left,right)));
   }
   const render={harfler:alphabet,hareke:vowels,kartlar:cards,dinle:listening,test:quiz,yaz:writing,eslestir:matching};

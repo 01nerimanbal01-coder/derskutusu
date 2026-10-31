@@ -796,6 +796,30 @@ window.dkTamamlanan = dkTamamlanan;
     const hepsi = cozulen >= etkBloklar.length;
     etkRozet.classList.toggle('tamam', hepsi);
     etkRozet.textContent = hepsi ? `🎯 Etkinlikler tamam (${cozulen}/${etkBloklar.length})` : `🎯 Etkinlikler: ${cozulen} / ${etkBloklar.length}`;
+    if (hepsi && !$('.dk-ig-etk-kutlama', ozetGovde)) {
+      const sonEtk = etkBloklar[etkBloklar.length - 1];
+      const kutlama = el('div', { sinif: 'dk-ig-sayfa-banner dk-ig-etk-kutlama' },
+        el('div', { sinif: 'dk-ig-banner-sol' },
+          el('div', { sinif: 'dk-ig-kamera-ikon' }, simge('instagram')),
+          el('div', { sinif: 'dk-ig-banner-metin' },
+            el('div', { sinif: 'dk-ig-banner-ust' },
+              el('strong', {}, '🎉 Tebrikler! Tüm Etkinlikleri Tamamladın'),
+              el('span', { sinif: 'dk-ig-banner-rozet' }, '@derskutusuinfo Günlük Soru Kuşağı')),
+            el('p', {}, 'Her gün hikâyelerimizde paylaştığımız yeni nesil 1 Soru – 1 Çözüm serisini kaçırmamak için @derskutusuinfo Instagram hesabımızı takip et ve başarını sınıf grubunda paylaş!'))),
+        el('div', { sinif: 'dk-ig-banner-sag' },
+          el('a', {
+            sinif: 'dk-ig-takip-btn dk-ig-banner-btn',
+            href: 'https://www.instagram.com/derskutusuinfo/',
+            target: '_blank',
+            rel: 'noopener',
+          }, simge('instagram'), el('span', {}, '@derskutusuinfo Hikâyeleri Aç →')),
+          el('button', {
+            type: 'button',
+            sinif: 'dk-ig-paylas-btn',
+            onclick: (ev) => window.dkSayfaPaylas && window.dkSayfaPaylas(ev.currentTarget),
+          }, '🟢 Başarımı Paylaş')));
+      sonEtk.after(kutlama);
+    }
   };
   if (etkRozet) {
     etkDurumGuncelle();

@@ -638,6 +638,8 @@ if (typeof document !== 'undefined') {
       $('#arama-sayi').textContent = q ? (suzulen.length ? `${suzulen.length} sonuç gösteriliyor` : 'Sonuç bulunamadı') : '';
       $('#arama-bos').hidden = !!(q && tumSonuclar.length);
       sayfa.replaceChildren(...suzulen.slice(0, gosterilen).map(({ b }) => {
+        const haftaEs = b.hafta || ((/hafta-(\d+)\.html/.exec(b.goruntule || '') || [])[1]);
+        const igVar = Boolean(b.sinif && b.ders && haftaEs && Number(haftaEs) <= 14 && window.dkIgKartAc);
         const kartEl = el('article', { sinif: `kart arama-kart ${b.tip}`, 'data-renk': kartRenk(b) },
           el('div', { sinif: 'ust-bilgi' },
             el('span', { sinif: `etiket ${b.tip === 'belge' ? 'ogretmen' : b.tip === 'sayfa' ? '' : 'tur'}` }, TUR_ETIKET[b.tip]),
@@ -646,7 +648,13 @@ if (typeof document !== 'undefined') {
             b.tur && b.tip !== 'sayfa' && b.tur !== TUR_ETIKET[b.tip] && el('span', { sinif: `etiket ${b.kitle === 'ogretmen' ? 'ogretmen' : 'tur'}` }, b.tur)),
           el('h3', {}, el('a', { href: adres(b), ...hedef(b) }, ...vurgula(b.baslik, q))),
           b.aciklama && el('p', {}, b.aciklama),
-          el('a', { sinif: 'ac', href: adres(b), ...hedef(b) }, b.goruntule ? 'Aç' : b.dosya ? 'İndir' : b.dis ? 'Aç' : 'Git', simge('ok')));
+          el('div', { sinif: 'eylemler' },
+            el('a', { sinif: 'ac', href: adres(b), ...hedef(b) }, b.goruntule ? 'Aç' : b.dosya ? 'İndir' : b.dis ? 'Aç' : 'Git', simge('ok')),
+            igVar ? el('button', {
+              type: 'button',
+              sinif: 'agac-hizli-dugme ig-kart',
+              onclick: () => window.dkIgKartAc(b.sinif, b.ders, `${b.sinif}. Sınıf ${b.dersAd || b.ders} · ${haftaEs}. Hafta`, [Number(haftaEs)]),
+            }, simge('instagram'), el('span', {}, 'IG Kartı')) : null));
         return kartEl;
       }));
       $('#daha-fazla').hidden = suzulen.length <= gosterilen;
