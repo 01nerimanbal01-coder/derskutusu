@@ -100,7 +100,7 @@ def arastirma_adimlari():
         ('2. Adım', 'Kur’an ve Sünnet', YES, YES_A),
         ('3. Adım', 'Özellik / Görev', TUR, TUR_A),
         ('4. Adım', 'Anahtar Eşleştir', MOR, MOR_A),
-        ('5. Adım', 'Öğretmen Kontrolü', ALTIN, '#fffbe6'),
+        ('5. Adım', 'Kontrol Et', ALTIN, '#fffbe6'),
     ]
     ic = ''
     for i, (ust, alt, renk, arka) in enumerate(adlar):
