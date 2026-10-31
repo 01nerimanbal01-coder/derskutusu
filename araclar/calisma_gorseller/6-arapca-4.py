@@ -86,10 +86,10 @@ def eril_disil_ciftci_karti():
 
 def paragraf_cumle_kartlari():
     kartlar = [
-        ('A', 'هٰذِهِ عائِلَتي - والِدي مُعَلِّمٌ', MAVI, MAVI_A),
-        ('B', 'وَوالِدَتي مُمَرِّضَةٌ ماهِرَةٌ', YES, YES_A),
-        ('C', 'لي عَمٌّ واحِدٌ - طَبّاخٌ ماهِرٌ', TUR, TUR_A),
-        ('D', 'أَنا أُحِبُّ أَقارِبي كَثيرًا', MOR, MOR_A),
+        ('A', 'هٰذِهِ عائِلَتي · والِدي', MAVI, MAVI_A),
+        ('B', 'والِدَتي مُمَرِّضَةٌ', YES, YES_A),
+        ('C', 'لي عَمٌّ طَبّاخٌ', TUR, TUR_A),
+        ('D', 'أُحِبُّ أَقارِبي', MOR, MOR_A),
     ]
     ic = ''
     for i, (bas, ar_metin, renk, arka) in enumerate(kartlar):
@@ -105,12 +105,12 @@ def cezim_sedde_ipucu_panosu():
     ic = f'<rect x="6" y="6" width="170" height="88" rx="9" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.4"/>'
     ic += tr_yazi(91, 24, '1. Grup (Şeddeli)', TUR, kalin=True)
     ic += ar_yazi(91, 56, 'اَلشَّمْسُ - اَلطَّبّاخُ', LAC)
-    ic += tr_yazi(91, 80, 'İlk harfte şedde (ّ ) var', LAC)
+    ic += tr_yazi(91, 80, 'İlk harfte şedde işareti var', LAC)
 
     ic += f'<rect x="184" y="6" width="170" height="88" rx="9" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.4"/>'
     ic += tr_yazi(269, 24, '2. Grup (Cezimli)', MAVI, kalin=True)
     ic += ar_yazi(269, 56, 'اَلْقَمَرُ - اَلْمُعَلِّمُ', LAC)
-    ic += tr_yazi(269, 80, 'Lam harfinde cezim (ْ ) var', LAC)
+    ic += tr_yazi(269, 80, 'Lam harfinde cezim işareti var', LAC)
     return svg(360, 100, ic, 'Şedde ve cezim işaretleriyle şemsî-kamerî ayrımı panosu.', 18)
 
 
