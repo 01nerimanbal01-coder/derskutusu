@@ -62,16 +62,16 @@ def kronoloji_panosu():
     """1839-1909 arası yönetim ve maliye gelişmeleri panosu."""
     adimlar = [
         ('1839 · Tanzimat', 'Kanun üstünlüğü', MAVI, MAVI_A, 4),
-        ('1856 · Islahat', 'Merkez & taşra görev', YES, YES_A, 75),
-        ('1876 · I. Meşrutiyet', 'Kanun-ı Esasi & Meclis', TUR, TUR_A, 146),
-        ('1881 · Düyun-u Um.', 'Dış borç idaresi', KIR, KIR_A, 217),
-        ('1909 · 31 Mart', 'Hareket Ordusu bastırdı', MOR, MOR_A, 288),
+        ('1856 · Islahat', 'Yönetimde görev', YES, YES_A, 75),
+        ('1876 · Meşrutiyet', 'Anayasa & Meclis', TUR, TUR_A, 146),
+        ('1881 · Dış Borç', 'Düyun-u Umumiye', KIR, KIR_A, 217),
+        ('1909 · 31 Mart', 'İsyan bastırıldı', MOR, MOR_A, 288),
     ]
     ic = ''
     for bas, alt, r, z, x in adimlar:
         ic += kutu(x, 4, 68, 68, z, r, 7, 1.3)
-        ic += yazi(x + 34, 24, bas, 10, r)
-        ic += yazi(x + 34, 50, alt, 10, LAC, 'middle', True)
+        ic += yazi(x + 34, 24, bas, 9.5, r)
+        ic += yazi(x + 34, 50, alt, 9.5, LAC, 'middle', True)
     return svg(360, 76, ic, '1839 Tanzimat, 1856 Islahat, 1876 I. Meşrutiyet, 1881 Düyun-u Umumiye ve 1909 31 Mart Olayı kronoloji panosu.', 21)
 
 
@@ -97,16 +97,18 @@ def dis_borc_zinciri():
     ic = kutu(4, 4, 352, 78, KUM, GRI, 8, 1.2)
     ic += yazi(180, 19, 'Osmanlı Dış Borçlanma ve Egemenlik Süreci', 11, LAC)
     kutular = [
-        ('Kırım Savaşı', 'İngiltere’den ilk borç', MAVI, MAVI_A, 10),
-        ('Borçların Artması', 'Ödenemez hâle gelmesi', TUR, TUR_A, 128),
+        ('Kırım Savaşı', 'İlk dış borç alındı', MAVI, MAVI_A, 10),
+        ('Borçların Artması', 'Ödenemez hâle geldi', TUR, TUR_A, 128),
         ('1881 · Kurum: ?', 'İç işlere müdahale', KIR, KIR_A, 246),
     ]
     for i, (b1, b2, r, z, x) in enumerate(kutular):
         ic += kutu(x, 28, 104, 44, z, r, 6, 1.3)
-        ic += yazi(x + 52, 44, b1, 10.5, r)
-        ic += yazi(x + 52, 61, b2, 10.2, LAC, 'middle', True)
+        ic += yazi(x + 52, 44, b1, 10, r)
+        ic += yazi(x + 52, 61, b2, 9.8, LAC, 'middle', True)
         if i < 2:
-            ic += yazi(x + 111, 52, '→', 12, LAC)
+            ax = x + 107
+            ic += f'<line x1="{ax}" y1="50" x2="{ax + 14}" y2="50" stroke="{LAC}" stroke-width="1.6"/>'
+            ic += f'<polygon points="{ax + 18},50 {ax + 12},46 {ax + 12},54" fill="{LAC}"/>'
     return svg(360, 86, ic, 'Kırım Savaşı ilk dış borç, borçların ödenememesi ve 1881 Düyun-u Umumiye İdaresi zinciri.', 22)
 
 
