@@ -1,0 +1,287 @@
+{
+  "baslik": "8. Sınıf Matematik 6. Hafta Çalışma Kâğıdı",
+  "alt_baslik": "Sayılar ve İşlemler — Kareköklü İfadeler: Tam Kare Sayılar ve Karekökleri",
+  "sinif": 8,
+  "ders": "matematik",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-10-12",
+  "renk": "#2451d6",
+  "konu": "Kareköklü İfadeler: Tam Kare Sayılar ve Karekökleri",
+  "ciktilar": [
+    "M.8.1.3.1. Tamkare pozitif tam sayılarla bu sayıların karekökleri arasındaki ilişkiyi belirler.",
+    "M.8.1.3.2. Tam kare olmayan kareköklü bir sayının hangi iki doğal sayı arasında olduğunu belirler."
+  ],
+  "hatirla": [
+    "Pozitif bir tam sayının kendisiyle çarpımına tam kare sayı denir (1, 4, 9, 16, 25, …); asal çarpanlarının üsleri çift olan sayılar tam karedir.",
+    "Karekök almak, sayıyı karesi olarak veren pozitif tam sayıyı bulmaktır: {kok:64} = {kok:{us:8|2}} = 8. Önce kök içi işlem yapılır, sonra karekök alınır.",
+    "Negatif sayıların karekökü tam sayı değildir. Karesel bölgenin bir kenarı alanın kareköküne, çevresi ise bir kenarın 4 katına eşittir.",
+    "Tam kare olmayan doğal sayının karekökü, onu sınırlayan ardışık iki tam karenin karekökleri arasındadır; hangi tam kareye yakınsa o doğal sayıya yakındır."
+  ],
+  "sorular": [
+    {
+      "tur": "tablo",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki kare modellerinden yararlanarak tablodaki karesel bölgelerin kenar ve çevre uzunluğunu yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Karesel Bölgenin Alanı",
+        "Kenar Uzunluğu",
+        "Çevre Uzunluğu (4 · Kenar)"
+      ],
+      "satirlar": [
+        [
+          "64 cm²",
+          "{kok:64} = 8 cm",
+          "4 · 8 = 32 cm"
+        ],
+        [
+          "121 cm²",
+          {
+            "b": "{kok:121} = 11 cm"
+          },
+          {
+            "b": "4 · 11 = 44 cm"
+          }
+        ],
+        [
+          "196 cm²",
+          {
+            "b": "{kok:196} = 14 cm"
+          },
+          {
+            "b": "4 · 14 = 56 cm"
+          }
+        ],
+        [
+          "289 cm²",
+          {
+            "b": "{kok:289} = 17 cm"
+          },
+          {
+            "b": "4 · 17 = 68 cm"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört kartta asal çarpanlarının çarpımı biçiminde verilen sayılardan hangisi {koyu:tam kare değildir?}",
+      "secenekler": [
+        "K kartı: {us:2|4} · {us:3|2}",
+        "L kartı: {us:2|2} · {us:5|2} · {us:7|2}",
+        "M kartı: {us:2|3} · {us:3|2} · 5",
+        "N kartı: {us:3|4} · {us:11|2}"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Tam kare olmayan kareköklü ifadeleri sayı doğrusunda yer aldıkları ardışık iki doğal sayı aralığıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{kok:19}",
+          "4 ile 5 arasında"
+        ],
+        [
+          "{kok:38}",
+          "6 ile 7 arasında"
+        ],
+        [
+          "{kok:75}",
+          "8 ile 9 arasında"
+        ],
+        [
+          "{kok:114}",
+          "10 ile 11 arasında"
+        ],
+        [
+          "{kok:180}",
+          "13 ile 14 arasında"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki bilgi kartlarına göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Karesi 196 olan iki tam sayı vardır (14 ve −14); ancak {kok:196} ifadesinin değeri 14’tür.",
+          "dogru": true
+        },
+        {
+          "metin": "Kök altındaki toplamada {kok:36 + 64} = {kok:36} + {kok:64} = 6 + 8 = 14 eşitliği doğrudur.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir kenarında 16 düğüm bulunan kare motifte toplam 16 · 16 = 256 düğüm yer alır.",
+          "dogru": true
+        },
+        {
+          "metin": "Hiçbir tam sayının karesi negatif olamayacağından −81’in karekökü tam sayı değildir.",
+          "dogru": true
+        },
+        {
+          "metin": "{kok:52} sayısı 49 tam karesine 64’ten daha yakın olduğu için 8’e daha yakındır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Boşlukları kutudaki uygun kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Pozitif bir tam sayının kendisiyle çarpımına ___ sayı denir.",
+          "cevap": "tamkare"
+        },
+        {
+          "metin": "Kare alma işleminin tersi olan işleme ___ alma denir.",
+          "cevap": "karekök"
+        },
+        {
+          "metin": "Asal çarpanlarının tüm üsleri ___ olan sayılar tam karedir.",
+          "cevap": "çift"
+        },
+        {
+          "metin": "Alanı verilen karenin çevresi, bir kenar uzunluğunun ___ katıdır.",
+          "cevap": "dört"
+        },
+        {
+          "metin": "Tam kare olmayan kökler ardışık iki ___ sayı arasındadır.",
+          "cevap": "doğal"
+        }
+      ],
+      "fazla": [
+        "tek"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki işlem kartlarında verilen kareköklü işlemler yapıldığında A + B toplamı kaç bulunur?",
+      "secenekler": [
+        "23",
+        "25",
+        "29",
+        "31"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "soru": "Aşağıdaki kareköklü ve doğal sayıları değerlerine göre en küçükten (1) en büyüğe (5) doğru sıralayınız.",
+      "ogeler": [
+        "{kok:29}",
+        "6",
+        "{kok:44}",
+        "7",
+        "{kok:58}"
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sayı doğrusunda verilen {kok:70} ve {kok:77} sayılarından hangisi 8’e, hangisi 9’a daha yakındır? Açıklayınız.",
+      "cevap": "70 − 64 = 6 < 11 olduğundan {kok:70} sayısı 8’e; 81 − 77 = 4 < 13 olduğundan {kok:77} sayısı 9’a yakındır.",
+      "satir": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde yan yana dizilmiş K (81 cm²), L (144 cm²) ve M (225 cm²) karelerinin alt kenarını oluşturan |AB| uzunluğu kaç cm’dir?",
+      "secenekler": [
+        "32",
+        "36",
+        "40",
+        "45"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sayı doğrusunda 9 ile 10 arasında ve 10’a daha yakın olan K noktası aşağıdakilerden hangisi olabilir?",
+      "secenekler": [
+        "{kok:78}",
+        "{kok:84}",
+        "{kok:88}",
+        "{kok:96}"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "kisa",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki karesel kartonun alanı doğal sayıdır ve bir kenarı 8 cm ile 9 cm arasındadır. Alanı en az ve en çok kaç cm² olabilir?",
+      "cevap": "64 < Alan < 81 olduğundan kartonun alanı en az 65 cm², en çok 80 cm² olabilir.",
+      "satir": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazınız. Turuncu kutulardaki harfler alanın karekökü alındığında bulunan uzunluğu verir.",
+      "satirlar": [
+        {
+          "ipucu": "Verilen sayıyı karesi olarak veren pozitif sayıyı bulma işlemi",
+          "cevap": "KAREKÖK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Karesel bölgede bir kenar uzunluğunun 4 katı olan uzunluk",
+          "cevap": "ÇEVRE",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Karesi tam sayılarda elde edilemeyen sayı işareti",
+          "cevap": "NEGATİF",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Karede bir kenarın kendisiyle çarpımıyla bulunan büyüklük",
+          "cevap": "ALAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Tam kare denetiminde üssünün çiftliğine bakılan asal bölen",
+          "cevap": "ÇARPAN",
+          "anahtar": 2
+        }
+      ],
+      "sonuc": "KENAR"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Kenarlarında eşit sayıda düğüm bulunan kare motiflerde toplam düğüm sayısı 110’dan fazla, 290’dan az ise kaç farklı motif yapılabilir?",
+      "secenekler": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki kartta verilen 540 sayısının neden tam kare olmadığını ve tam kare olması için en az kaçla çarpılacağını yazınız.",
+      "cevap": "3 ve 5’in üsleri tek olduğundan tam kare değildir; en az 3 · 5 = 15 ile çarpılmalıdır.",
+      "satir": 2
+    }
+  ]
+}
