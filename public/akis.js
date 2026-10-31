@@ -101,11 +101,48 @@ function instagramGoster(v, ayar) {
 
   const gorselli = liste.filter((i) => i.gorsel);
   const elle = liste.filter((i) => !i.gorsel && i.baglanti);
-  kutu.replaceChildren(...gorselli.map((i) =>
-    el('a', { sinif: 'gonderi', href: i.baglanti || profil || '#sosyal', target: '_blank', rel: 'noopener' },
-      el('img', { src: i.gorsel, alt: i.aciklama ? i.aciklama.slice(0, 120) : 'Instagram gönderisi', loading: 'lazy' }),
-      i.tur === 'VIDEO' && el('span', { sinif: 'video-isaret', 'aria-hidden': 'true' }),
-      i.aciklama && el('span', { sinif: 'ust-yazi' }, i.aciklama))));
+
+  const kartlariCiz = (seciliSinif = 'tumu') => {
+    const suzulen = gorselli.filter((i) => {
+      if (seciliSinif === 'tumu') return true;
+      if (seciliSinif === 'lise') return Number(i.sinif) >= 9;
+      return String(i.sinif) === String(seciliSinif);
+    });
+    kutu.replaceChildren(...suzulen.map((i) =>
+      el('a', { sinif: 'gonderi', href: i.baglanti || profil || '#sosyal', target: '_blank', rel: 'noopener' },
+        el('img', { src: i.gorsel, alt: i.aciklama ? i.aciklama.slice(0, 120) : 'Instagram gönderisi', loading: 'lazy' }),
+        i.sinif ? el('span', { sinif: 'ig-kart-sinif-etiket' }, `${i.sinif}. Sınıf`) : null,
+        i.tur === 'VIDEO' && el('span', { sinif: 'video-isaret', 'aria-hidden': 'true' }),
+        i.aciklama && el('span', { sinif: 'ust-yazi' }, i.aciklama))));
+  };
+
+  if (gorselli.length && !$('.ig-sinif-suzgec', blok)) {
+    const filtreler = [
+      ['tumu', `Tümü (${gorselli.length})`],
+      ['5', '5. Sınıf'],
+      ['6', '6. Sınıf'],
+      ['7', '7. Sınıf'],
+      ['8', '8. Sınıf · LGS'],
+      ['lise', '9–12. Sınıf · YKS'],
+    ];
+    const suzgecCubuk = el('div', { sinif: 'ig-sinif-suzgec', role: 'group', 'aria-label': 'Instagram kartlarını sınıfa göre süz' },
+      el('span', { sinif: 'ig-suzgec-etiket' }, '📸 Sınıfa göre ders kartları:'),
+      ...filtreler.map(([kod, ad], idx) =>
+        el('button', {
+          type: 'button',
+          sinif: 'ig-suzgec-cip',
+          'data-sinif': kod,
+          'aria-pressed': String(idx === 0),
+          onclick: (e) => {
+            const btn = e.currentTarget;
+            $$('.ig-suzgec-cip', suzgecCubuk).forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+            kartlariCiz(kod);
+          },
+        }, ad)));
+    kutu.before(suzgecCubuk);
+  }
+
+  kartlariCiz('tumu');
   if (elle.length) {
     const gomulu = () => {
       kutu.append(...elle.map((i) => el('div', { sinif: 'gomulu' },

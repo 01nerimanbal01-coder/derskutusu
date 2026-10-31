@@ -970,7 +970,8 @@ window.dkTamamlanan = dkTamamlanan;
         el('p', {}, `Bu branşta ${bicimNet(enCokKayip.net)} / ${enCokKayip.soru} nettesin. En hızlı puan artışını bu dersin konu özetleri ve çalışma kâğıtlarıyla sağlayabilirsin.`),
         el('div', { sinif: 'nh-oneri-dugmeler' },
           el('a', { sinif: 'dugme ana', href: `/ogrenci.html?sinif=${yapi.sinif}&ders=${encodeURIComponent(enCokKayip.kod)}` }, `${enCokKayip.ad} Üniteleri →`),
-          el('a', { sinif: 'dugme', href: `/icerikler.html?sinif=${yapi.sinif}&ders=${encodeURIComponent(enCokKayip.kod)}&tur=${encodeURIComponent('Çalışma kâğıdı')}` }, 'Çalışma Kâğıtları'))) : null);
+          el('a', { sinif: 'dugme', href: `/icerikler.html?sinif=${yapi.sinif}&ders=${encodeURIComponent(enCokKayip.kod)}&tur=${encodeURIComponent('Çalışma kâğıdı')}` }, 'Çalışma Kâğıtları'),
+          el('a', { sinif: 'dugme dk-ig-takip-btn', href: 'https://www.instagram.com/derskutusuinfo/', target: '_blank', rel: 'noopener' }, '📸 @derskutusuinfo Günlük Soru Çöz →'))) : null);
   };
 
   const tabloCiz = () => {
@@ -1171,10 +1172,21 @@ window.dkTamamlanan = dkTamamlanan;
   };
   menuRozetGuncelle();
 
+  // Konu özeti ders kodunu /sosyal/bilgi-<sinif>-<ders>-<hafta>.png dosya adına eşler
+  const SOSYAL_DERS_ESLE = {
+    'tc-inkilap-tarihi-ve-ataturkculuk': 'inkilap-tarihi',
+    'din-kulturu-ve-ahlak-bilgisi': 'din-kulturu',
+    'turk-dili-ve-edebiyati': 'edebiyat',
+  };
+  const sosyalKartYoluBul = (sinif, ders, hafta) => {
+    const d = SOSYAL_DERS_ESLE[ders] || ders;
+    return `/sosyal/bilgi-${sinif}-${d}-${hafta}.png`;
+  };
+
   // Arkadaşına / Sınıf WhatsApp grubuna paylaşım yardımcısı
-  const sayfayiPaylas = async (butonEl) => {
+  const sayfayiPaylas = async (butonEl, ozelMetin = '') => {
     const baslik = document.title || 'Ders Kutusu · 5-12. Sınıf Konu Özetleri ve Yazılılar';
-    const metin = `📚 ${baslik} — Ücretsiz konu özetleri, yazılı soruları ve denemeler için @derskutusuinfo Instagram sayfasını ve sitemizi incele:`;
+    const metin = ozelMetin || `📚 ${baslik} — Ücretsiz konu özetleri, yazılı soruları ve denemeler için @${DK_IG_AYAR.HESAP} Instagram sayfasını (${DK_IG_AYAR.PROFIL_URL}) ve sitemizi incele:`;
     const url = location.href;
     if (navigator.share) {
       try {
@@ -1182,15 +1194,212 @@ window.dkTamamlanan = dkTamamlanan;
         return;
       } catch {}
     }
+    const waUrl = `https://wa.me/?text=${encodeURIComponent(metin + ' ' + url)}`;
+    window.open(waUrl, '_blank', 'noopener');
     try {
       await navigator.clipboard.writeText(`${metin} ${url}`);
       if (butonEl) {
         const eski = butonEl.textContent;
-        butonEl.textContent = '✓ Bağlantı Kopyalandı!';
+        butonEl.textContent = '✓ Paylaşıldı / Kopyalandı!';
         setTimeout(() => { butonEl.textContent = eski; }, 2500);
       }
     } catch {}
   };
+
+  // Etkileşimli Instagram Hikâye (Stories) ve Bilgi Kartı Büyük Önizleme Penceresi
+  let hikayeModalEl = null;
+  const igHikayeModalAc = (baslik, kartlar, baslangic = 0) => {
+    if (hikayeModalEl) hikayeModalEl.remove();
+    let indeks = Math.max(0, Math.min(kartlar.length - 1, baslangic));
+
+    const cubuklar = kartlar.map((_, i) =>
+      el('span', { sinif: 'dk-ig-hikaye-cubuk' + (i <= indeks ? ' dolu' : '') }));
+    const gorselEl = el('img', {
+      src: kartlar[indeks].gorsel,
+      alt: kartlar[indeks].etiket || baslik,
+      sinif: 'dk-ig-hikaye-gorsel',
+    });
+    const altAciklamaEl = el('p', { sinif: 'dk-ig-hikaye-alt-metin' }, kartlar[indeks].etiket || baslik);
+    const sayacEl = el('span', { sinif: 'dk-ig-hikaye-sayac' }, `${indeks + 1} / ${kartlar.length}`);
+
+    const guncelle = (yeniIndeks) => {
+      indeks = (yeniIndeks + kartlar.length) % kartlar.length;
+      gorselEl.src = kartlar[indeks].gorsel;
+      gorselEl.alt = kartlar[indeks].etiket || baslik;
+      altAciklamaEl.textContent = kartlar[indeks].etiket || baslik;
+      sayacEl.textContent = `${indeks + 1} / ${kartlar.length}`;
+      cubuklar.forEach((c, i) => c.classList.toggle('dolu', i <= indeks));
+    };
+
+    const kapat = () => {
+      if (hikayeModalEl) {
+        hikayeModalEl.remove();
+        hikayeModalEl = null;
+      }
+    };
+
+    const paylasBtn = el('button', {
+      type: 'button',
+      sinif: 'dk-ig-paylas-btn',
+      onclick: () => sayfayiPaylas(paylasBtn),
+    }, '🟢 WhatsApp’ta Paylaş');
+
+    hikayeModalEl = el('div', {
+      sinif: 'dk-ig-hikaye-arka',
+      role: 'dialog',
+      'aria-modal': 'true',
+      'aria-label': `${baslik} Instagram hikâye önizlemesi`,
+      onclick: (e) => { if (e.target === hikayeModalEl) kapat(); },
+    },
+      el('div', { sinif: 'dk-ig-hikaye-kutu' },
+        el('div', { sinif: 'dk-ig-hikaye-cubuklar' }, ...cubuklar),
+        el('div', { sinif: 'dk-ig-hikaye-ust' },
+          el('div', { sinif: 'dk-ig-hikaye-profil' },
+            el('span', { sinif: 'dk-ig-yuzen-ikon' }, simge('instagram')),
+            el('div', {},
+              el('strong', {}, `@${DK_IG_AYAR.HESAP} ✓`),
+              el('small', {}, baslik))),
+          sayacEl,
+          el('button', { type: 'button', sinif: 'dk-ig-hikaye-kapat', 'aria-label': 'Kapat', onclick: kapat }, '✕')),
+        el('div', { sinif: 'dk-ig-hikaye-orta' },
+          kartlar.length > 1 ? el('button', {
+            type: 'button',
+            sinif: 'dk-ig-hikaye-yon sol',
+            'aria-label': 'Önceki kart',
+            onclick: () => guncelle(indeks - 1),
+          }, '‹') : null,
+          gorselEl,
+          kartlar.length > 1 ? el('button', {
+            type: 'button',
+            sinif: 'dk-ig-hikaye-yon sag',
+            'aria-label': 'Sonraki kart',
+            onclick: () => guncelle(indeks + 1),
+          }, '›') : null),
+        altAciklamaEl,
+        el('div', { sinif: 'dk-ig-hikaye-alt' },
+          el('a', {
+            href: DK_IG_AYAR.PROFIL_URL,
+            target: '_blank',
+            rel: 'noopener',
+            sinif: 'dk-ig-takip-btn dk-ig-banner-btn',
+            onclick: (e) => igProfiliAc(e),
+          }, simge('instagram'), el('span', {}, `Devamı İçin @${DK_IG_AYAR.HESAP} Takip Et →`)),
+          paylasBtn)));
+
+    document.body.append(hikayeModalEl);
+  };
+
+  // Ana sayfa ve içerik merkezlerinde Instagram "Öne Çıkan Hikâyeler (Stories Highlights)" Halka Şeridi
+  const igHikayeHalkalariEkle = () => {
+    if (yasalSayfaMi || /^\/(tahta|goruntule)\.html$/.test(location.pathname)) return;
+    if ($('.dk-ig-hikaye-serit')) return;
+    const hedef = $('#sinif-merkezi .kap') || $('#ogrenci-agac') || $('#ogretmen-agac') || $('#sinav-sayac-pano');
+    if (!hedef) return;
+
+    const HALKALAR = [
+      {
+        kisa: '8. Sınıf LGS',
+        etiket: 'LGS 2027',
+        kapak: '/sosyal/bilgi-8-matematik-4.png',
+        kartlar: [
+          { gorsel: '/sosyal/bilgi-8-matematik-4.png', etiket: '8. Sınıf Matematik (LGS) · Kareköklü İfadeler ve Yeni Nesil İpuçları' },
+          { gorsel: '/sosyal/bilgi-8-fen-bilimleri-4.png', etiket: '8. Sınıf Fen Bilimleri (LGS) · DNA, Genetik Kod ve Kalıtım Özeti' },
+          { gorsel: '/sosyal/bilgi-8-turkce-4.png', etiket: '8. Sınıf Türkçe (LGS) · Fiilimsiler ve Sözel Mantık Kartları' },
+          { gorsel: '/sosyal/bilgi-8-inkilap-tarihi-4.png', etiket: '8. Sınıf T.C. İnkılap Tarihi · Milli Uyanış Kavram Haritası' },
+        ],
+      },
+      {
+        kisa: '7. Sınıf',
+        etiket: 'Ortaokul',
+        kapak: '/sosyal/bilgi-7-matematik-4.png',
+        kartlar: [
+          { gorsel: '/sosyal/bilgi-7-matematik-4.png', etiket: '7. Sınıf Matematik · Tam Sayılar ve Rasyonel Sayılar Serisi' },
+          { gorsel: '/sosyal/bilgi-7-fen-bilimleri-4.png', etiket: '7. Sınıf Fen Bilimleri · Hücre, Mitoz ve Mayoz Bölünme' },
+          { gorsel: '/sosyal/bilgi-7-turkce-4.png', etiket: '7. Sınıf Türkçe · Fiillerde Kip ve Anlam Kayması' },
+        ],
+      },
+      {
+        kisa: '6. Sınıf',
+        etiket: 'Maarif',
+        kapak: '/sosyal/bilgi-6-fen-bilimleri-4.png',
+        kartlar: [
+          { gorsel: '/sosyal/bilgi-6-matematik-4.png', etiket: '6. Sınıf Matematik · Çarpanlar, Katlar ve Bölünebilme' },
+          { gorsel: '/sosyal/bilgi-6-fen-bilimleri-4.png', etiket: '6. Sınıf Fen Bilimleri · Güneş Sistemi ve Tutulmalar' },
+          { gorsel: '/sosyal/bilgi-6-turkce-4.png', etiket: '6. Sınıf Türkçe · Sözcükte ve Cümlede Anlam' },
+        ],
+      },
+      {
+        kisa: '5. Sınıf',
+        etiket: 'Maarif',
+        kapak: '/sosyal/bilgi-5-matematik-4.png',
+        kartlar: [
+          { gorsel: '/sosyal/bilgi-5-matematik-4.png', etiket: '5. Sınıf Matematik · Doğal Sayılar ve Geometrik Nicelikler' },
+          { gorsel: '/sosyal/bilgi-5-fen-bilimleri-4.png', etiket: '5. Sınıf Fen Bilimleri · Gökyüzündeki Komşularımız ve Kuvvet' },
+          { gorsel: '/sosyal/bilgi-5-turkce-4.png', etiket: '5. Sınıf Türkçe · Okuma ve Anlama Becerileri' },
+        ],
+      },
+      {
+        kisa: '9–10. Sınıf',
+        etiket: 'Lise',
+        kapak: '/sosyal/bilgi-9-matematik-4.png',
+        kartlar: [
+          { gorsel: '/sosyal/bilgi-9-matematik-4.png', etiket: '9. Sınıf Matematik · Gerçek Sayılar ve Cebir Özeti' },
+          { gorsel: '/sosyal/bilgi-9-fizik-4.png', etiket: '9. Sınıf Fizik · Fizik Bilimi ve Kuvvet-Hareket' },
+          { gorsel: '/sosyal/bilgi-10-kimya-4.png', etiket: '10. Sınıf Kimya · Kimyanın Temel Kanunları ve Mol' },
+        ],
+      },
+      {
+        kisa: '11–12 YKS',
+        etiket: 'TYT / AYT',
+        kapak: '/sosyal/bilgi-12-matematik-4.png',
+        kartlar: [
+          { gorsel: '/sosyal/bilgi-12-matematik-4.png', etiket: '12. Sınıf Matematik (AYT) · Üstel ve Logaritmik Fonksiyonlar' },
+          { gorsel: '/sosyal/bilgi-12-fizik-4.png', etiket: '12. Sınıf Fizik (AYT) · Çembersel ve Dönme Hareketi' },
+          { gorsel: '/sosyal/bilgi-11-biyoloji-4.png', etiket: '11. Sınıf Biyoloji (AYT) · İnsan Fizyolojisi ve Sinir Sistemi' },
+        ],
+      },
+      {
+        kisa: 'Çalışma & Plan',
+        etiket: 'PDF / Word',
+        kapak: '/sosyal/afis-07-calisma.png',
+        kartlar: [
+          { gorsel: '/sosyal/afis-07-calisma.png', etiket: '5–12. Sınıf Cevapsız ve Cevaplı Çalışma Kâğıtları Serisi' },
+          { gorsel: '/sosyal/afis-08-gunluk-plan.png', etiket: 'Okul ve Öğretmen Adına Özel Günlük & Yıllık Planlar' },
+        ],
+      },
+    ];
+
+    const serit = el('div', { sinif: 'dk-ig-hikaye-serit', 'aria-label': '@derskutusuinfo Instagram öne çıkan hikâyeler' },
+      el('div', { sinif: 'dk-ig-hikaye-sol' },
+        el('span', { sinif: 'dk-ig-hikaye-canli-nokta' }),
+        el('strong', {}, `@${DK_IG_AYAR.HESAP} Hikâyeler`),
+        el('small', {}, 'Dokun ve Önizle')),
+      el('div', { sinif: 'dk-ig-hikaye-halkalar' },
+        ...HALKALAR.map((h) =>
+          el('button', {
+            type: 'button',
+            sinif: 'dk-ig-halka-btn',
+            title: `${h.kisa} Instagram özet kartlarını önizle`,
+            onclick: () => igHikayeModalAc(`${h.kisa} · ${h.etiket}`, h.kartlar, 0),
+          },
+            el('span', { sinif: 'dk-ig-halka-cerceve' },
+              el('img', { src: h.kapak, alt: h.kisa, loading: 'lazy', sinif: 'dk-ig-halka-img' })),
+            el('span', { sinif: 'dk-ig-halka-ad' }, h.kisa)))),
+      el('a', {
+        href: DK_IG_AYAR.PROFIL_URL,
+        target: '_blank',
+        rel: 'noopener',
+        sinif: 'dk-ig-takip-btn dk-ig-hikaye-takip-mini',
+        onclick: (e) => igProfiliAc(e),
+      }, simge('instagram'), el('span', {}, 'Takip Et')));
+
+    if (hedef.id === 'sinav-sayac-pano') {
+      hedef.before(serit);
+    } else {
+      hedef.prepend(serit);
+    }
+  };
+  igHikayeHalkalariEkle();
 
   // Sayfa içi @derskutusuinfo Takip & Paylaşım Vitrini (Konu özetleri, yazılılar, sınavlar, planlar, öğrenci/öğretmen sayfaları)
   const sayfaIciIgBannerEkle = () => {
@@ -1202,30 +1411,38 @@ window.dkTamamlanan = dkTamamlanan;
 
     const ozetEsles = location.pathname.replace(/^\/+/, '').match(/^ozet\/(\d+)-([a-z0-9-]+)-hafta-(\d+)\.html$/);
     let kartOnizleme = null;
+    let buyutBtn = null;
     if (ozetEsles) {
-      const kartUrl = `/sosyal/bilgi-${ozetEsles[1]}-${ozetEsles[2]}-${ozetEsles[3]}.png`;
+      const kartUrl = sosyalKartYoluBul(ozetEsles[1], ozetEsles[2], ozetEsles[3]);
+      const baslikMetin = ($('h1')?.textContent || `${ozetEsles[1]}. Sınıf ${ozetEsles[3]}. Hafta`).trim();
       const img = el('img', {
         src: kartUrl,
         alt: `${ozetEsles[1]}. sınıf Instagram bilgi kartı`,
         loading: 'lazy',
         sinif: 'dk-ig-banner-kart-img',
-        onerror: () => { if (kartOnizleme) kartOnizleme.remove(); },
+        onerror: () => {
+          if (kartOnizleme) kartOnizleme.remove();
+          if (buyutBtn) buyutBtn.remove();
+        },
       });
-      kartOnizleme = el('a', {
-        href: DK_IG_AYAR.PROFIL_URL,
-        target: '_blank',
-        rel: 'noopener',
+      kartOnizleme = el('button', {
+        type: 'button',
         sinif: 'dk-ig-banner-kart-bag',
-        title: `@${DK_IG_AYAR.HESAP} Instagram’da bu konunun bilgi kartını gör`,
-        onclick: (e) => igProfiliAc(e),
+        title: 'Bu konunun Instagram bilgi kartını büyüt',
+        onclick: () => igHikayeModalAc(`${ozetEsles[1]}. Sınıf · ${ozetEsles[3]}. Hafta`, [{ gorsel: kartUrl, etiket: baslikMetin }], 0),
       }, img);
+      buyutBtn = el('button', {
+        type: 'button',
+        sinif: 'dk-ig-paylas-btn',
+        onclick: () => igHikayeModalAc(`${ozetEsles[1]}. Sınıf · ${ozetEsles[3]}. Hafta`, [{ gorsel: kartUrl, etiket: baslikMetin }], 0),
+      }, '🔍 Bilgi Kartını Büyüt');
     }
 
     const paylasBtn = el('button', {
       type: 'button',
       sinif: 'dk-ig-paylas-btn',
       onclick: () => sayfayiPaylas(paylasBtn),
-    }, '📲 Sınıf Grubunda Paylaş');
+    }, '🟢 WhatsApp’ta Paylaş');
 
     const takipBag = el('a', {
       href: DK_IG_AYAR.PROFIL_URL,
@@ -1249,6 +1466,7 @@ window.dkTamamlanan = dkTamamlanan;
             : 'Yeni yazılı sınav kâğıtları, ASDS denemeleri ve günlük görsel konu özeti kartları için Instagram hesabımızı takip edin ve bildirim zilini (🔔) açın.'))),
       el('div', { sinif: 'dk-ig-banner-sag' },
         takipBag,
+        buyutBtn,
         paylasBtn));
 
     if (hedefYer.classList.contains('ozet-sonu-kart')) {
@@ -1441,6 +1659,29 @@ window.dkTamamlanan = dkTamamlanan;
       el('div', { sinif: 'dk-ig-ist-kutu' }, el('strong', {}, '5–12. Sınıf'), el('small', {}, 'Yazılı & Deneme')),
       el('div', { sinif: 'dk-ig-ist-kutu' }, el('strong', {}, '%100 Ücretsiz'), el('small', {}, 'MEB / TYMM Uyumlu')));
 
+    const ozetSayfaEsles = location.pathname.replace(/^\/+/, '').match(/^ozet\/(\d+)-([a-z0-9-]+)-hafta-(\d+)\.html$/);
+    const kilitKartUrls = ozetSayfaEsles
+      ? [
+          sosyalKartYoluBul(ozetSayfaEsles[1], ozetSayfaEsles[2], ozetSayfaEsles[3]),
+          '/sosyal/bilgi-8-matematik-4.png',
+          '/sosyal/bilgi-8-fen-bilimleri-4.png',
+        ]
+      : [
+          '/sosyal/bilgi-8-matematik-4.png',
+          '/sosyal/bilgi-7-fen-bilimleri-4.png',
+          '/sosyal/bilgi-6-turkce-4.png',
+        ];
+    const kilitOnizlemeSerit = el('div', { sinif: 'dk-ig-kilit-galeri', 'aria-hidden': 'true' },
+      ...kilitKartUrls.map((u, idx) =>
+        el('div', { sinif: 'dk-ig-kilit-kart-mini' + (idx === 0 && ozetSayfaEsles ? ' vurgu' : '') },
+          el('img', {
+            src: u,
+            alt: '',
+            loading: 'lazy',
+            onerror: (ev) => { ev.currentTarget.closest('.dk-ig-kilit-kart-mini')?.remove(); },
+          }),
+          el('span', {}, idx === 0 && ozetSayfaEsles ? '🔒 Bu Konunun Kartı' : '📸 @derskutusuinfo'))));
+
     const avantajListesi = el('ul', { sinif: 'dk-ig-avantajlar' },
       el('li', {}, '📌 Her hafta 5–12. sınıf görsel ders özeti kartları ve sınav soruları'),
       el('li', {}, '📝 Ortak yazılı sınavlarından önce açık uçlu senaryo çözümleri'),
@@ -1619,6 +1860,7 @@ window.dkTamamlanan = dkTamamlanan;
             el('span', { sinif: 'dk-ig-rozet' }, 'RESMÎ EĞİTİM HESABI · ÜCRETSİZ ÜYELİK'),
             el('strong', { sinif: 'dk-ig-hesap-ad' }, `@${DK_IG_AYAR.HESAP} ✓`))),
         istatistikSerit,
+        kilitOnizlemeSerit,
         el('h2', { id: 'dk-ig-baslik', sinif: 'dk-ig-baslik' }, 'Siteden Faydalanmak İçin Instagram Hesabımızı Takip Edin'),
         el('p', { sinif: 'dk-ig-aciklama' },
           'Ders Kutusu içeriklerinin tamamı ücretsizdir. Konu özetleri, yazılı sınav kâğıtları, ASDS denemeleri ve günlük planlara erişmek için ',
