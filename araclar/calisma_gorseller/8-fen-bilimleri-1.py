@@ -109,9 +109,9 @@ def golge_boyu_grafik():
 def isin_enerji_zinciri():
     adlar = [
         ('1. Halka', 'Eksen Eğikliği', MAVI, MAVI_A),
-        ('2. Halka', 'Dik/Dike Yakın Açı', TUR, TUR_A),
-        ('3. Halka', 'Dar Aydınlanma Alanı', YES, YES_A),
-        ('4. Halka', 'Yüksek Birim Enerji', KIR, '#fdeaea'),
+        ('2. Halka', 'Dik / Dike Yakın', TUR, TUR_A),
+        ('3. Halka', 'Dar Aydınlanma', YES, YES_A),
+        ('4. Halka', 'Çok Birim Enerji', KIR, '#fdeaea'),
     ]
     ic = ''
     for i, (ust, alt, renk, arka) in enumerate(adlar):
@@ -153,8 +153,8 @@ def iki_sehir_kure():
     ic += f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{MAVI_A}" stroke="{LAC}" stroke-width="2"/>'
     ic += f'<line x1="{cx - 16}" y1="{cy + 42}" x2="{cx + 16}" y2="{cy - 42}" stroke="{KIR}" stroke-width="1.8" stroke-dasharray="4 2"/>'
     ic += f'<line x1="{cx - 36}" y1="{cy - 12}" x2="{cx + 36}" y2="{cy + 12}" stroke="{LAC}" stroke-width="1.5"/>'
-    ic += f'<circle cx="{cx - 10}" cy="{cy - 16}" r="4.5" fill="{YES}"/><text x="{cx - 2}" y="{cy - 13}" font-size="11" {YAZI} fill="{YESIL_K}">P (KYK)</text>'
-    ic += f'<circle cx="{cx - 18}" cy="{cy + 16}" r="4.5" fill="{MOR}"/><text x="{cx - 10}" y="{cy + 20}" font-size="11" {YAZI} fill="{MOR}">R (GYK)</text>'
+    ic += f'<circle cx="{cx - 8}" cy="{cy - 16}" r="4.5" fill="{YES}"/><text x="{cx + 2}" y="{cy - 12}" font-size="11.5" {YAZI} fill="{YESIL_K}">P</text>'
+    ic += f'<circle cx="{cx - 16}" cy="{cy + 16}" r="4.5" fill="{MOR}"/><text x="{cx - 6}" y="{cy + 20}" font-size="11.5" {YAZI} fill="{MOR}">R</text>'
     # Sağ bilgi
     ic += f'<rect x="348" y="16" width="232" height="86" rx="8" fill="#fff" stroke="{GRI}" stroke-width="1.4"/>'
     ic += yazi(464, 36, '21 Haziran Gözlem Notu', 11.5, LAC)
