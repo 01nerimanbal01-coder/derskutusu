@@ -123,10 +123,10 @@ def sunum_oz_yansitma():
     ic += f'<rect x="4" y="4" width="352" height="22" rx="8" fill="{CAM}"/><rect x="4" y="16" width="352" height="10" fill="{CAM}"/>'
     ic += yazi(180, 19, 'KONUŞMACI ÖZ DEĞERLENDİRME KARTI · Mert', 11, '#fff')
     ic += kutu(12, 32, 336, 24, YES_A, YES, 5, 1.1)
-    ic += yazi(20, 48, 'Güçlü yön: Hedefleri tabloyla eksiksiz karşılaştırdım.', 10.5, LAC, 'start')
+    ic += yazi(20, 48, 'Güçlü yön: Hedefleri tabloyla eksiksiz karşılaştırdım.', 10.2, LAC, 'start')
     ic += kutu(12, 60, 336, 24, KIR_A, KIR, 5, 1.1)
-    ic += yazi(20, 76, 'Gelişmeye açık yön: Not kâğıdına baktım, göz teması kuramadım.', 10.5, LAC, 'start')
-    return svg(360, 94, ic, 'Mert konuşmacı öz değerlendirme kartı: Güçlü yön hedefleri tabloyla eksiksiz karşılaştırdım; Gelişmeye açık yön not kâğıdına baktım, göz teması kuramadım.', 19)
+    ic += yazi(20, 76, 'Gelişmeye açık yön: Notlara baktım, göz teması kuramadım.', 10.2, LAC, 'start')
+    return svg(360, 94, ic, 'Mert konuşmacı öz değerlendirme kartı: Güçlü yön hedefleri tabloyla eksiksiz karşılaştırdım; Gelişmeye açık yön notlara baktım, göz teması kuramadım.', 19)
 
 
 def ifadeler_panosu():
@@ -165,17 +165,17 @@ def metin_bolumleri():
 def yazma_taslagi():
     """Kendini değerlendirme yazısı taslak planı (4 kutu)."""
     satirlar = [
-        ('1. Paragraf:', 'Okuma alışkanlığı ölçütü (kendi yaşamımdan örnek)', MAVI, MAVI_A),
-        ('2. Paragraf:', 'Zaman kullanımı ölçütü (komşumuzun çalışma planı)', TUR, TUR_A),
-        ('3. Paragraf:', 'Sosyal sorumluluk ve yabancı dil ölçütleri bir arada', MOR, MOR_A),
+        ('1. Paragraf:', 'Okuma alışkanlığı ölçütü (yaşamımdan örnek)', MAVI, MAVI_A),
+        ('2. Paragraf:', 'Zaman kullanımı ölçütü (komşumuzun planı)', TUR, TUR_A),
+        ('3. Paragraf:', 'Sosyal sorumluluk ve yabancı dil bir arada', MOR, MOR_A),
         ('4. Adım:', 'Geçiş ifadeleri ile yazım ve noktalama denetimi', YES, YES_A),
     ]
     ic = kutu(4, 4, 352, 102, '#fff', GRI, 8, 1.2)
     for i, (bas, metin, r, z) in enumerate(satirlar):
         y = 10 + i * 23
         ic += kutu(12, y, 336, 20, z, r, 5, 1.1)
-        ic += yazi(20, y + 14, bas, 10.5, r, 'start')
-        ic += yazi(92, y + 14, metin, 10.5, LAC, 'start', True)
+        ic += yazi(18, y + 14, bas, 10, r, 'start')
+        ic += yazi(84, y + 14, metin, 10, LAC, 'start', True)
     return svg(360, 110, ic, 'Kendini değerlendirme yazısı taslak planı: 1. paragraf kendi yaşamımdan örnek, 2. paragraf komşumuzun çalışma planı, 3. paragraf iki ölçüt bir arada, 4. adım yazım ve noktalama denetimi.', 21)
 
 
@@ -183,10 +183,10 @@ def olcut_karti():
     """Okuma alışkanlığı edinme ölçüt kartı."""
     ic = kutu(4, 4, 352, 76, MAVI_A, MAVI, 8, 1.4)
     ic += f'<rect x="4" y="4" width="352" height="22" rx="8" fill="{MAVI}"/><rect x="4" y="16" width="352" height="10" fill="{MAVI}"/>'
-    ic += yazi(180, 19, 'ÖLÇÜT LİSTESİ · 1. Madde', 11.5, '#fff')
-    ic += yazi(180, 44, '“Okuma alışkanlığı edinerek bilgisini ve hayal dünyasını olgunlaştırmak”', 10.5, LAC)
-    ic += yazi(180, 66, 'Son iki yıldaki durum · Kendi yaşamından örnek · Sebep-sonuç ifadesi', 10.5, MAVI, 'middle', True)
-    return svg(360, 84, ic, 'Ölçüt listesi 1. madde: Okuma alışkanlığı edinerek bilgisini ve hayal dünyasını olgunlaştırmak.', 18)
+    ic += yazi(180, 19, 'ÖLÇÜT LİSTESİ · 1. Madde', 11, '#fff')
+    ic += yazi(180, 44, '“Okuma alışkanlığı edinerek bilgi ve hayal dünyasını geliştirmek”', 10, LAC)
+    ic += yazi(180, 66, 'Son iki yıldaki durum · Yaşamdan örnek · Sebep-sonuç ifadesi', 10, MAVI, 'middle', True)
+    return svg(360, 84, ic, 'Ölçüt listesi 1. madde: Okuma alışkanlığı edinerek bilgi ve hayal dünyasını geliştirmek.', 18)
 
 
 def uygula(o):
