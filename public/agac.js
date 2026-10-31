@@ -354,8 +354,16 @@
           suzgecUygula();
         },
       }, basTamam ? '✓ Tamamlandı' : '○ Tamamla');
+      const igHaftalar = (k.haftalar || []).filter((h) => Number(h) >= 1 && Number(h) <= 14);
+      const igDugme = (igHaftalar.length && window.dkIgKartAc) ? el('button', {
+        type: 'button',
+        sinif: 'agac-hizli-dugme ig-kart',
+        title: `@derskutusuinfo Instagram bilgi kartını önizle (${haftaMetni(igHaftalar)})`,
+        onclick: () => window.dkIgKartAc(n, d, `${n}. Sınıf ${ad} · ${ayni ? k.unite : k.ad}`, igHaftalar),
+      }, simge('instagram'), el('span', {}, 'IG Özeti')) : null;
       const hizliDugmeler = [
         ozetOge ? el('a', { sinif: 'agac-hizli-dugme ozet', href: yol(ozetOge.goruntule), title: 'Konu anlatımını ve etkileşimli etkinlikleri doğrudan aç' }, simge('kitap'), el('span', {}, 'Konu Özeti')) : null,
+        igDugme,
         calismaOge ? el('a', { sinif: 'agac-hizli-dugme calisma', href: yol(calismaOge.hazirla || calismaOge.dosya || calismaOge.goruntule), title: 'Çalışma kâğıdını aç veya PDF indir' }, simge('kalem'), el('span', {}, 'Çalışma Kâğıdı')) : null,
         ciktiEs.length ? el('a', { sinif: 'agac-hizli-dugme yazili', href: yol(ciktiEs[0].pdf), download: '', title: `Öğrenme çıktısı yazılı kâğıdını indir (${ciktiEs[0].kod})` }, simge('indir'), el('span', {}, 'Yazılı PDF')) : null,
         tamamDugme,
@@ -497,6 +505,28 @@
       sekme('Tümü', '', k.icerik.length), ...turler.map((t) => sekme(K().category(t).title || t, t, k.icerik.filter((i) => i.tur === t).length)));
     const komsu = (j, yon) => j >= 0 && j < konular.length ? el('a', { sinif: `agac-komsu ${yon}`, href: adres({ sinif: n, ders: d, konu: konular[j].kod }) },
       el('small', {}, yon === 'onceki' ? '← Önceki konu' : 'Sonraki konu →'), el('strong', {}, konular[j].ad === konular[j].unite ? konular[j].unite : konular[j].ad)) : el('span', {});
+    const igKonuHaftalar = (k.haftalar || []).filter((h) => Number(h) >= 1 && Number(h) <= 14);
+    const igKonuCubuk = (igKonuHaftalar.length && window.dkIgKartAc) ? el('div', { sinif: 'dk-ig-sayfa-banner' },
+      el('div', { sinif: 'dk-ig-banner-sol' },
+        el('div', { sinif: 'dk-ig-kamera-ikon' }, simge('instagram')),
+        el('div', { sinif: 'dk-ig-banner-metin' },
+          el('div', { sinif: 'dk-ig-banner-ust' },
+            el('strong', {}, '@derskutusuinfo Görsel Konu Kartları'),
+            el('span', { sinif: 'dk-ig-banner-rozet' }, `${haftaMetni(igKonuHaftalar)} Hazır`)),
+          el('p', {}, `Bu ünitenin (${baslik}) 1 dakikalık Instagram bilgi kartlarını ekranda önizleyebilir veya @derskutusuinfo hesabımızdan kaydedebilirsiniz.`))),
+      el('div', { sinif: 'dk-ig-banner-sag' },
+        el('button', {
+          type: 'button',
+          sinif: 'dk-ig-takip-btn dk-ig-banner-btn',
+          onclick: () => window.dkIgKartAc(n, d, `${n}. Sınıf ${ad} · ${baslik}`, igKonuHaftalar),
+        }, simge('instagram'), el('span', {}, '📸 Instagram Kartlarını Aç')),
+        el('a', {
+          sinif: 'dk-ig-paylas-btn',
+          href: 'https://www.instagram.com/derskutusuinfo/',
+          target: '_blank',
+          rel: 'noopener',
+        }, '@derskutusuinfo Takip Et →'))) : null;
+
     yerles(
       el('section', { sinif: 'agac-bas agac-ders-bas', 'data-renk': renk }, el('div', { sinif: 'kap' },
         konum(KOK_YOL, DAL_YOL, sinifYol, dersYol, { ad: baslik }),
@@ -504,7 +534,7 @@
         el('h1', {}, baslik),
         el('div', { sinif: 'agac-cipler' }, el('span', {}, haftaMetni(k.haftalar)), tarihMetni(k.haftalar, agac.haftalar) ? el('span', {}, tarihMetni(k.haftalar, agac.haftalar)) : null,
           simdi && buH && k.haftalar.includes(simdi) ? el('span', { sinif: 'agac-rozet bu-hafta' }, buHaftaRozet(buH)) : null))),
-      bolum('', k.icerik.length ? el('div', {}, sekmeler, liste)
+      bolum('', igKonuCubuk, k.icerik.length ? el('div', {}, sekmeler, liste)
         : bos('Bu konunun içerikleri hazırlanıyor', 'Konu anlatımı ve çalışma kâğıdı yıllık plan sırasıyla ekleniyor. Bu arada ders kitabından çalışabilirsin.',
           ...dersDuzeyi.filter((i) => i.tur === 'Ders kitabı').flatMap((i) => [el('a', { sinif: 'dugme ana', href: yol(i.goruntule || i.baglanti) }, 'Ders kitabını aç', simge('ok')),
             i.goruntule ? el('a', { sinif: 'dugme', href: `${yol(i.goruntule)}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç') : null]),
@@ -637,6 +667,11 @@
             buKonu ? el('small', {}, `${buKonu.ui + 1}. Ünite: ${buKonu.unite}`) : null),
           el('div', { sinif: 'ogt-hafta-eylemler' },
             buOzet ? el('a', { sinif: 'dugme ana', href: yol(buOzet.goruntule) }, simge('oynat'), 'Konu Özeti & Sunum Modu') : null,
+            (hNo <= 14 && window.dkIgKartAc) ? el('button', {
+              type: 'button',
+              sinif: 'dugme dk-ig-takip-btn',
+              onclick: () => window.dkIgKartAc(secSinif, secDers, `${secSinif}. Sınıf ${dersAd} · ${hNo}. Hafta`, [hNo]),
+            }, simge('instagram'), 'Haftanın IG Kartı') : null,
             buCalisma ? el('a', { sinif: 'dugme', href: yol(buCalisma.hazirla || buCalisma.dosya || buCalisma.goruntule) }, simge('indir'), 'Haftanın Çalışma Kâğıdı') : null,
             el('a', { sinif: 'dugme', href: '/tahta.html' }, simge('kalem'), 'Akıllı Tahta')));
       } else {

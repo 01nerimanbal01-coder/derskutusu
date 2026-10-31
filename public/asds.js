@@ -146,7 +146,23 @@
             el('div', { sinif: 'asds-ha-grid' },
               ...anahtarDizi.map(([dersAd, dizi]) => el('div', { sinif: 'asds-ha-ders' },
                 el('b', {}, dersAd),
-                el('code', {}, dizi.split('').map((harf, idx) => `${idx + 1}-${harf}`).join('  ')))))) : null)));
+                el('code', {}, dizi.split('').map((harf, idx) => `${idx + 1}-${harf}`).join('  ')))))) : null)),
+      el('div', { sinif: 'asds-ig-paylas-satir' },
+        el('a', {
+          sinif: 'asds-ig-bag',
+          href: 'https://www.instagram.com/derskutusuinfo/',
+          target: '_blank',
+          rel: 'noopener',
+        }, simge('instagram'), el('span', {}, '@derskutusuinfo Soru Çözümleri & Yeni Deneme Duyuruları →')),
+        el('button', {
+          type: 'button',
+          sinif: 'dk-ig-paylas-btn asds-wa-btn',
+          onclick: (e) => {
+            if (window.dkSayfaPaylas) {
+              window.dkSayfaPaylas(e.currentTarget, `🎯 ${s.sinif}. Sınıf ${s.hafta_adi} ASDS Deneme Sınavı (A/B Cevapsız & Cevaplı PDF) — @derskutusuinfo Instagram sayfasını takip ederek hemen indir:`);
+            }
+          },
+        }, '🟢 Sınavı WhatsApp / Sınıf Grubunda Paylaş')));
     };
 
     const sinifBolumuCiz = (b) => {

@@ -1289,6 +1289,17 @@ window.dkTamamlanan = dkTamamlanan;
     document.body.append(hikayeModalEl);
   };
 
+  window.dkSosyalKartYolu = sosyalKartYoluBul;
+  window.dkSayfaPaylas = sayfayiPaylas;
+  window.dkIgKartAc = (sinif, ders, baslik, haftalar = [1]) => {
+    const hs = (Array.isArray(haftalar) && haftalar.length ? haftalar : [1]).filter((h) => Number(h) >= 1 && Number(h) <= 16);
+    const liste = (hs.length ? hs : [1]).map((h) => ({
+      gorsel: sosyalKartYoluBul(sinif, ders, h),
+      etiket: `${baslik} · ${h}. Hafta Instagram Bilgi Kartı (@${DK_IG_AYAR.HESAP})`,
+    }));
+    igHikayeModalAc(baslik, liste, 0);
+  };
+
   // Ana sayfa ve içerik merkezlerinde Instagram "Öne Çıkan Hikâyeler (Stories Highlights)" Halka Şeridi
   const igHikayeHalkalariEkle = () => {
     if (yasalSayfaMi || /^\/(tahta|goruntule)\.html$/.test(location.pathname)) return;
