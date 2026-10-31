@@ -96,12 +96,12 @@ def balkan_neden_sonuc():
     ic += yazi(90, 20, 'Savaşın 3 Temel Etkeni', 11, MAVI)
     ic += yazi(14, 38, '1) Milliyetçilik akımı', 10.5, LAC, 'start', True)
     ic += yazi(14, 54, '2) Panslavizm propagandası', 10.5, LAC, 'start', True)
-    ic += yazi(14, 70, '3) Avrupa devletlerinin kışkırtması', 10.5, LAC, 'start', True)
+    ic += yazi(14, 70, '3) Avrupa’nın kışkırtması', 10.5, LAC, 'start', True)
 
     ic += kutu(184, 4, 172, 82, KIR_A, KIR, 8, 1.3)
     ic += yazi(270, 20, 'Ağır Yenilginin 2 İç Nedeni', 11, KIR)
-    ic += yazi(194, 42, '1) Ülke içindeki siyasi çekişmeler', 10.5, LAC, 'start', True)
-    ic += yazi(194, 62, '2) Ordunun savaşa hazır olmaması', 10.5, LAC, 'start', True)
+    ic += yazi(194, 42, '1) Siyasi çekişmeler', 10.5, LAC, 'start', True)
+    ic += yazi(194, 62, '2) Ordunun hazırlıksızlığı', 10.5, LAC, 'start', True)
     return svg(360, 90, ic, 'I. Balkan Savaşı nın 3 etkeni ve Osmanlı nın ağır yenilgi almasının 2 iç nedeni.', 14)
 
 
@@ -144,7 +144,7 @@ def ikinci_balkan_karti():
     ic += yazi(180, 20, 'Londra Antlaşması Sonrası II. Balkan Savaşı (29 Haziran 1913)', 11, MOR)
     ic += kutu(12, 28, 164, 46, '#fff', MOR, 6, 1.2)
     ic += yazi(94, 45, 'Neden: Bulgaristan’ın daha', 10.5, LAC, 'middle', True)
-    ic += yazi(94, 62, 'çok toprak alması (İttifak doğdu)', 10.5, MOR)
+    ic += yazi(94, 62, 'çok toprak alması', 10.5, MOR)
     ic += kutu(184, 28, 164, 46, '#fff', YES, 6, 1.2)
     ic += yazi(266, 45, 'Osmanlı: Enver Paşa ile Edirne', 10.5, LAC, 'middle', True)
     ic += yazi(266, 62, 've Kırklareli’ni geri aldı', 10.5, YES)
