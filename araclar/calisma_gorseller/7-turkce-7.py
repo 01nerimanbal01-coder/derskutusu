@@ -62,17 +62,17 @@ def cekimli_fiil_fisleri_svg():
 def dort_cumle_kip_karti_svg():
     """Soru 4: Dört çekimli fiil ve kip-kişi analiz kartı (3. kartta dinlesin hatası)."""
     kartlar = [
-        ('1. Kart', '“Şiiri coşkuyla okumuşlar.”', 'Fiil: okumuşlar (-muş · 3. çoğul)', MAVI, MAVI_A),
-        ('2. Kart', '“Bu sırrı kimseye söylemezsin.”', 'Fiil: bilmezsin (-mez · 2. tekil)', YES, YES_A),
-        ('3. Kart', '“Kürsüdeki konuşmacıyı dinlesin.”', 'Fiil: dinlesin (İstek · 2. tekil ?)', KIR, KIR_A),
-        ('4. Kart', '“Tören için afiş hazırlayacağız.”', 'Fiil: hazırlayacağız (-acak · 1. çoğul)', TUR, TUR_A),
+        ('1. Kart', 'okumuşlar (3. çoğul)', MAVI, MAVI_A),
+        ('2. Kart', 'bilmezsin (2. tekil)', YES, YES_A),
+        ('3. Kart', 'dinlesin (İstek · 2. tekil)', KIR, KIR_A),
+        ('4. Kart', 'hazırlayacağız (1. çoğul)', TUR, TUR_A),
     ]
     ic = ''
-    for i, (bas, cum, alt, c, z) in enumerate(kartlar):
+    for i, (bas, alt, c, z) in enumerate(kartlar):
         x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 44
         ic += kutu(x, y, 172, 38, z, c, 7, 1.3)
-        ic += yazi(x + 10, y + 15, bas, 10.5, c, 'start')
-        ic += yazi(x + 10, y + 29, alt, 10.5, LAC, 'start', True)
+        ic += yazi(x + 86, y + 15, bas, 10.5, c)
+        ic += yazi(x + 86, y + 29, alt, 10.5, LAC, 'middle', True)
     return svg(360, 92, ic, 'Dört çekimli fiil kartı: 1 okumuşlar, 2 bilmezsin, 3 dinlesin, 4 hazırlayacağız.', 14)
 
 
@@ -91,34 +91,34 @@ def teshis_intak_kartlari_svg():
 def anlam_kaymasi_cizelgesi_svg():
     """Soru 7: Dört cümlelik zaman ve kip çizelgesi."""
     satirlar = [
-        ('I.', 'Önümüzdeki hafta → katılıyor (-yor)', MAVI, MAVI_A),
-        ('II.', '19 Mayıs 1919’da → çıkar (-ar)', TUR, TUR_A),
-        ('III.', 'Her sabah → sular (-r)', YES, YES_A),
-        ('IV.', 'Sabahları mutlaka → içiyorum (-yor)', MOR, MOR_A),
+        ('I.', 'Haftaya → katılıyor', MAVI, MAVI_A),
+        ('II.', '1919’da → çıkar', TUR, TUR_A),
+        ('III.', 'Her sabah → sular', YES, YES_A),
+        ('IV.', 'Sabahları → içiyorum', MOR, MOR_A),
     ]
     ic = kutu(4, 4, 352, 86, KUM, GRI, 8, 1.2)
     for i, (no, m, c, z) in enumerate(satirlar):
         x, y = 10 + (i % 2) * 172, 10 + (i // 2) * 38
         ic += kutu(x, y, 166, 32, z, c, 6, 1.2)
-        ic += yazi(x + 10, y + 20, no, 10.5, c, 'start')
-        ic += yazi(x + 32, y + 20, m, 10.5, LAC, 'start', True)
+        ic += yazi(x + 8, y + 20, no, 10.5, c, 'start')
+        ic += yazi(x + 26, y + 20, m, 10.5, LAC, 'start', True)
     return svg(360, 94, ic, 'Zaman çizelgesi kartları: I önümüzdeki hafta katılıyor, II 19 Mayıs 1919 da çıkar, III her sabah sular, IV sabahları içiyorum.', 14)
 
 
 def dort_pano_kip_svg():
     """Soru 9: A, B, C, D cümle panoları (haber ve dilek kipleri)."""
     panolar = [
-        ('A Panosu', 'düzenleyeceğiz (-ecek)', MAVI, MAVI_A),
-        ('B Panosu', 'astık (-tı)', TUR, TUR_A),
-        ('C Panosu', 'koruruz (-r)', YES, YES_A),
-        ('D Panosu', 'alsın (emir kipi)', MOR, MOR_A),
+        ('A Panosu', ['düzenleyeceğiz', '(-ecek)'], MAVI, MAVI_A),
+        ('B Panosu', ['astık', '(-tı)'], TUR, TUR_A),
+        ('C Panosu', ['koruruz', '(-r)'], YES, YES_A),
+        ('D Panosu', ['alsın', '(emir kipi)'], MOR, MOR_A),
     ]
     ic = ''
-    for i, (ad, fiil, c, z) in enumerate(panolar):
+    for i, (ad, satir, c, z) in enumerate(panolar):
         x = 6 + i * 88
         ic += kutu(x, 6, 82, 62, z, c, 8, 1.4)
-        ic += yazi(x + 41, 22, ad, 10.5, c)
-        ic += yazi(x + 41, 46, fiil, 10.5, LAC, 'middle', True)
+        ic += yazi(x + 41, 21, ad, 10.5, c)
+        ic += duz(x + 41, 38, satir, 10.5, LAC, 'middle', 13)
     return svg(360, 74, ic, 'Dört cümle panosu: A düzenleyeceğiz, B astık, C koruruz, D alsın.', 14)
 
 
@@ -144,7 +144,7 @@ def soz_sanatlari_fisleri_svg():
         ('Benzetme (Teşbih)', 'Zayıfı güçlüye benzetme', MAVI, MAVI_A),
         ('Kişileştirme (Teşhis)', 'İnsan özelliğini doğaya verme', YES, YES_A),
         ('Abartma (Mübalağa)', 'Örnek dize: ?', KIR, KIR_A),
-        ('Karşıtlık (Tezat)', 'Zıt kavramları birlikte kullanma', MOR, MOR_A),
+        ('Karşıtlık (Tezat)', 'Zıt kavramları kullanma', MOR, MOR_A),
     ]
     ic = ''
     for i, (bas, alt, c, z) in enumerate(fisler):
