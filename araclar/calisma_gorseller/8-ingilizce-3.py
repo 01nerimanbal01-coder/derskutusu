@@ -48,16 +48,16 @@ def dort_konusma_ozeti():
     """Dört kısa telefon konuşması özet kartı."""
     kartlar = [
         ('1) David → Bob · Dinner', 'Bob: “Yes, why not?” (Accepts)', YES, YES_A),
-        ('2) Jamie → Tanya · Cinema', 'Tanya: Refuses (homework) → Later', TUR, TUR_A),
-        ('3) Angel → Jenny · Fruit juice', 'Jenny: Refuses (take sister home)', KIR, KIR_A),
+        ('2) Jamie → Tanya · Cinema', 'Tanya: Refuses (has homework)', TUR, TUR_A),
+        ('3) Angel → Jenny · Fruit juice', 'Jenny: Refuses (helps sister)', KIR, KIR_A),
         ('4) Thomas → John · Concert', 'John: Accepts · Meet at 7 p.m.', MAVI, MAVI_A),
     ]
     ic = ''
     for i, (bas, alt, r, z) in enumerate(kartlar):
         x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 46
         ic += kutu(x, y, 172, 40, z, r, 7, 1.3)
-        ic += yazi(x + 10, y + 16, bas, 10.5, r, 'start')
-        ic += yazi(x + 10, y + 31, alt, 10.5, LAC, 'start', True)
+        ic += yazi(x + 8, y + 16, bas, 10.5, r, 'start')
+        ic += yazi(x + 8, y + 31, alt, 10.5, LAC, 'start', True)
     return svg(360, 96, ic, 'Dört konuşma özeti: David-Bob akşam yemeği kabul, Jamie-Tanya sinema ödev nedeniyle ret, Angel-Jenny meyve suyu ret, Thomas-John konser kabul saat 7.', 19)
 
 
@@ -77,7 +77,7 @@ def durum_oneri_fisleri():
     """Dört durum ve öneri fişi."""
     fisler = [
         ('1. fiş · Hungry', 'What about eating something?', YES, YES_A),
-        ('2. fiş · Bored', 'How about watching a comedy film?', MAVI, MAVI_A),
+        ('2. fiş · Bored', 'How about watching a film?', MAVI, MAVI_A),
         ('3. fiş · Very tired', 'Let’s having a rest at home!', KIR, KIR_A),
         ('4. fiş · Free afternoon', 'Shall we play tennis in the park?', MOR, MOR_A),
     ]
@@ -85,9 +85,9 @@ def durum_oneri_fisleri():
     for i, (bas, cum, r, z) in enumerate(fisler):
         x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 44
         ic += kutu(x, y, 172, 38, z, r, 7, 1.3)
-        ic += yazi(x + 10, y + 15, bas, 10.5, r, 'start')
-        ic += yazi(x + 10, y + 30, cum, 10.5, LAC, 'start', True)
-    return svg(360, 92, ic, 'Dört durum ve öneri fişi: 1. What about eating, 2. How about watching, 3. Let s having a rest, 4. Shall we play tennis.', 18)
+        ic += yazi(x + 8, y + 15, bas, 10.5, r, 'start')
+        ic += yazi(x + 8, y + 30, cum, 10.5, LAC, 'start', True)
+    return svg(360, 92, ic, 'Dört durum ve öneri fişi: 1. What about eating, 2. How about watching a film, 3. Let s having a rest, 4. Shall we play tennis.', 18)
 
 
 def debbie_sally_eposta():
@@ -107,8 +107,8 @@ def mandy_davet_karti():
     ic += yazi(180, 19, 'MANDY’S BIRTHDAY PARTY INVITATION CARD', 10.8, '#fff')
     ic += yazi(18, 42, 'Date: Sunday, 21st May', 10.8, LAC, 'start')
     ic += yazi(18, 60, 'Time: 7:30 p.m.', 10.8, LAC, 'start')
-    ic += yazi(190, 42, 'Place: Daisy Café', 10.8, LAC, 'start')
-    ic += yazi(190, 60, 'Dress code: Casual (günlük giyim)', 10.5, LAC, 'start', True)
+    ic += yazi(180, 42, 'Place: Daisy Café', 10.8, LAC, 'start')
+    ic += yazi(180, 60, 'Dress code: Casual (günlük)', 10.5, LAC, 'start', True)
     ic += yazi(180, 79, 'Please send your reply e-mail to mandy@mail.com', 10.5, MOR, 'middle', True)
     return svg(360, 94, ic, 'Mandy doğum günü davet kartı: 21st May, 7:30 p.m., Daisy Cafe, casual giyim.', 19)
 
@@ -118,15 +118,15 @@ def teklif_cevap_uyumu():
     satirlar = [
         ('1) Why don’t we study together?', '→ Sure, it sounds good.', MAVI, MAVI_A),
         ('2) Would you like some orange juice?', '→ No, thanks. I’m full.', YES, YES_A),
-        ('3) How about going for a walk tomorrow?', '→ Cool. See you at five.', CAM, CAM_A),
+        ('3) How about going for a walk?', '→ Cool. See you at five.', CAM, CAM_A),
         ('4) Shall we ride our bikes after school?', '→ No, thanks. I’m full.', KIR, KIR_A),
     ]
     ic = ''
     for i, (sol, sag, r, z) in enumerate(satirlar):
         y = 4 + i * 24
         ic += kutu(4, y, 352, 20, z, r, 5, 1.2)
-        ic += yazi(12, y + 14, sol, 10.5, LAC, 'start')
-        ic += yazi(222, y + 14, sag, 10.5, r, 'start')
+        ic += yazi(10, y + 14, sol, 10.5, LAC, 'start')
+        ic += yazi(216, y + 14, sag, 10.5, r, 'start')
     return svg(360, 100, ic, 'Dört teklif-cevap satırı: 1, 2, 3 uyumlu; 4. satırda bisiklet teklifine I m full cevabı verilmiş.', 19)
 
 
