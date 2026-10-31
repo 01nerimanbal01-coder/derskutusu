@@ -42,24 +42,24 @@ def turkiye_kktc_ortak_pano():
     ic = f'<rect x="6" y="6" width="588" height="114" rx="10" fill="#fbfcff" stroke="{GRI}" stroke-width="1.5"/>'
     ic += yazi(300, 23, 'Türkiye ve KKTC Ortak Kültür ve Tarih Panosu', 11.5, KIR)
     kartlar = [
-        ('Tarih ve Bayrak', '1571 Osmanlı fethi · 1983 KKTC', 'Şeritler: Türkiye ve KKTC', KIR, '#fdeaea'),
-        ('Ortak Mutfak ve İkram', 'Enginar dolması, humus, tarhana,', 'hellim; su ve macunlu kahve', TUR, TUR_A),
-        ('Halk Oyunu ve Giyim', 'Daire biçiminde zeybek oyunu;', 'Trablusgarp’tan Tarabulus kuşağı', MAVI, MAVI_A),
-        ('Ortak El Sanatları', 'Zembil, ahşap baskı, ebru ve', 'el dokuması kilim geleneği', YES, YES_A),
+        ('Tarih ve Bayrak', '1571 fethi, 1983 KKTC, ortak bayrak', KIR, '#fdeaea'),
+        ('Ortak Mutfak ve İkram', 'Humus, tarhana, hellim, macunlu kahve', TUR, TUR_A),
+        ('Halk Oyunu ve Giyim', 'Zeybek oyunu ve Tarabulus kuşağı', MAVI, MAVI_A),
+        ('Ortak El Sanatları', 'Zembil, ahşap baskı, ebru ve kilim', YES, YES_A),
     ]
-    for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
+    for i, (bas, s1, renk, arka) in enumerate(kartlar):
         x = 16 + (i % 2) * 288
         y = 32 + (i // 2) * 42
         ic += f'<rect x="{x}" y="{y}" width="276" height="36" rx="6" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
         ic += yazi(x + 10, y + 14, bas + ':', 10.8, renk, 'start')
-        ic += yazi(x + 10, y + 29, s1 + ' | ' + s2, 10, LAC, 'start', ince=True)
+        ic += yazi(x + 10, y + 29, s1, 10, LAC, 'start', ince=True)
     return svg(600, 126, ic, 'Türkiye ve KKTC ortak kültür panosu: tarih ve bayrak, ortak mutfak ve kahve ikramı, zeybek ve Tarabulus kuşağı, ortak el sanatları.', 24)
 
 
 def karsilasma_durumlari_sema():
     kartlar = [
-        ('1. Kart · Kuşadası', 'Hollandalı Jan Linskens’in', 'dalış ve tatil için gelmesi', MAVI, MAVI_A),
-        ('2. Kart · Rize', 'Ganalı Yahaya Abdulai’nin', 'tıp eğitimi ve horon öğrenmesi', TUR, TUR_A),
+        ('1. Kart · Kuşadası', 'Hollandalı Jan Linskens’in', 'dalış ve tatil ziyareti', MAVI, MAVI_A),
+        ('2. Kart · Rize', 'Ganalı Yahaya Abdulai’nin', 'tıp okuması ve horon', TUR, TUR_A),
         ('3. Kart · Almanya', '1961–1973’te Türk işçilerin', 'gidişi ve dönerin yayılması', YES, YES_A),
         ('4. Kart · Ankara', 'Kızılay iftarında Şakiriye ve', 'tavuk baget paylaşımı', MOR, MOR_A),
     ]
@@ -78,7 +78,7 @@ def selamlasma_dunyasi_svg():
     ulkeler = [
         ('Türk ve Japon (Ortak)', 'Başı hafifçe öne eğerek', 'saygıyla selamlaşma', YES, YES_A),
         ('Filipinler Geleneği', 'Büyüklerin elini alıp', 'alına götürerek selamlama', MAVI, MAVI_A),
-        ('Yunanistan ve Fransa', 'Sırta/omza dokunma veya', 'yanaktan öperek selamlama', TUR, TUR_A),
+        ('Yunanistan ve Fransa', 'Omza dokunma veya', 'yanaktan öperek selamlama', TUR, TUR_A),
         ('Yeni Zelanda (Maori)', 'Burun ve alınları birbirine', 'bastırarak selamlaşma', MOR, MOR_A),
     ]
     ic = ''
