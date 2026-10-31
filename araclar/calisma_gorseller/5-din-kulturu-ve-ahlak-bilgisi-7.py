@@ -91,8 +91,8 @@ def enbiya_duzen_semasi():
 def ihlas_okunus_zinciri():
     kartlar = [
         ('1. Ayet', 'Allah bir ve tektir', MAVI, MAVI_A),
-        ('2. Ayet', 'Hiçbir şeye muhtaç değildir', TUR, TUR_A),
-        ('3. Ayet', 'Doğurmamış ve doğmamıştır', MOR, MOR_A),
+        ('2. Ayet', 'Her şey O’na muhtaçtır', TUR, TUR_A),
+        ('3. Ayet', 'Doğurmamış, doğmamıştır', MOR, MOR_A),
         ('4. Ayet', 'Hiçbir dengi yoktur', YES, YES_A),
     ]
     ic = f'<rect x="6" y="6" width="588" height="24" rx="6" fill="{YESIL_K}"/>'
@@ -100,8 +100,8 @@ def ihlas_okunus_zinciri():
     for i, (ust, alt, renk, arka) in enumerate(kartlar):
         x = 8 + i * 148
         ic += f'<rect x="{x}" y="36" width="136" height="58" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.5"/>'
-        ic += yazi(x + 68, 55, ust, 10.8, renk)
-        ic += yazi(x + 68, 76, alt, 10.0, LAC, ince=True)
+        ic += yazi(x + 68, 55, ust, 10.6, renk)
+        ic += yazi(x + 68, 76, alt, 9.2, LAC, ince=True)
     return svg(600, 100, ic, 'Besmele ve İhlas suresinin dört ayetinin anlam sırası zinciri.', 22)
 
 
