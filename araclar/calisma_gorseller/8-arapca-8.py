@@ -55,13 +55,13 @@ def isim_fiil_kartlari():
 def okuma_tercih_panosu():
     ic = kutu(4, 4, 172, 100, MAVI_A, MAVI, 8)
     ic += yazi_tr(90, 22, 'Selim’in Tercihi', MAVI)
-    ic += yazi_ar(90, 54, 'أُحِبُّ الرِّوَايَاتِ التَّارِيخِيَّةَ', LAC)
+    ic += yazi_ar(90, 54, 'أُحِبُّ الرِّوَايَاتِ', LAC)
     ic += yazi_ar(90, 88, 'وَالْكُتُبَ الدِّينِيَّةَ', LAC)
 
     ic += kutu(184, 4, 172, 100, MOR_A, MOR, 8)
     ic += yazi_tr(270, 22, 'Meryem’in Tercihi', MOR)
-    ic += yazi_ar(270, 54, 'أُفَضِّلُ قِرَاءَةَ الشِّعْرِ', LAC)
-    ic += yazi_ar(270, 88, 'وَلَا أُحِبُّ الْقِصَصَ الطَّوِيلَةَ', LAC)
+    ic += yazi_ar(270, 54, 'أُفَضِّلُ الشِّعْرَ', LAC)
+    ic += yazi_ar(270, 88, 'لَا أُحِبُّ الْقِصَصَ', LAC)
     return svg(360, 108, ic, 'Selim ve Meryem okuma tercihleri kartları.', 22)
 
 
