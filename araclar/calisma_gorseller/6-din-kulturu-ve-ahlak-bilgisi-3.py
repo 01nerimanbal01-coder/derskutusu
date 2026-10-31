@@ -104,17 +104,18 @@ def vahiy_ulasma_yolu_sema():
 
 def kissa_amac_karti():
     ic = f'<rect x="8" y="6" width="584" height="96" rx="10" fill="{MOR_A}" stroke="{MOR}" stroke-width="1.6"/>'
-    ic += yazi(300, 26, 'Kavram Bilgi Kartı: Kur’an-ı Kerim’de Kıssalar', 11.5, MOR)
+    ic += yazi(300, 25, 'Kavram Bilgi Kartı: Kur’an-ı Kerim’de Kıssalar', 11.5, MOR)
     maddeler = [
-        ('Konusu', 'Geçmiş peygamberler ve milletler', MAVI),
-        ('Anlatılış Nedeni', 'İnsanlara ibret ve ders vermek', TUR),
-        ('İçerik Katkısı', 'İnanç ve ahlak mesajlarını somutlaştırmak', YES),
+        ('Konusu', 'Geçmiş peygamberler', 've milletler', MAVI),
+        ('Anlatılış Nedeni', 'İnsanlara ibret ve', 'ders vermek', TUR),
+        ('İçerik Katkısı', 'İnanç ve ahlak mesajlarını', 'somutlaştırmak', YES),
     ]
-    for i, (bas, acik, renk) in enumerate(maddeler):
+    for i, (bas, s1, s2, renk) in enumerate(maddeler):
         x = 18 + i * 190
-        ic += f'<rect x="{x}" y="36" width="180" height="56" rx="7" fill="#fff" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 90, 55, bas, 10.8, renk)
-        ic += yazi(x + 90, 76, acik, 10.1, LAC, ince=True)
+        ic += f'<rect x="{x}" y="34" width="180" height="58" rx="7" fill="#fff" stroke="{renk}" stroke-width="1.4"/>'
+        ic += yazi(x + 90, 50, bas, 10.8, renk)
+        ic += yazi(x + 90, 67, s1, 10.1, LAC, ince=True)
+        ic += yazi(x + 90, 82, s2, 10.1, LAC, ince=True)
     return svg(600, 108, ic, 'Kıssa bilgi kartı: konusu geçmiş peygamber ve milletler, anlatılış nedeni ibret ve ders vermek, katkısı mesajları somutlaştırmak.', 22)
 
 
