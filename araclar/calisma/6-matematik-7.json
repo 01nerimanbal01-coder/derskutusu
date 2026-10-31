@@ -1,0 +1,284 @@
+{
+  "sinif": 6,
+  "ders": "matematik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-10-28",
+  "baslik": "Kesir - Bölme İlişkisi, Sonlu ve Devirli Ondalık Gösterimler ile Yuvarlama",
+  "alt_baslik": "Sayılar ve Nicelikler (2) · 6. Sınıf 7. Hafta",
+  "renk": "#ee7d12",
+  "konu": "Kesir - Bölme İlişkisi, Sonlu ve Devirli Ondalık Gösterimler ile Ondalık Gösterimleri Yuvarlama",
+  "ciktilar": [
+    "MAT.6.1.4. Kesir, bölme ve ondalık gösterim arasındaki ilişkiyi yorumlayabilme",
+    "MAT.6.1.5. Ondalık gösterimleri verilen basamağa kadar yuvarlayabilme"
+  ],
+  "hatirla": [
+    "Her {kesir:a|b} kesri payın paydaya bölünmesini (a ÷ b) anlatır; burada pay bölünen, payda bölen, kesir değeri ise bölümdür.",
+    "Bölme işleminde kalan 0 oluyorsa sonlu ondalık gösterim, kalan sıfır olmayıp rakamlar tekrar ediyorsa devirli ondalık gösterim elde edilir.",
+    "Devirli ondalık gösterimlerde devir çizgisi yalnız tekrar eden rakam grubunun üstüne çizilir; sıralamada devreden basamaklar açılarak karşılaştırılır.",
+    "Ondalık gösterimler yuvarlanırken hedef basamağın hemen sağındaki ilk rakama bakılır; rakam 0–4 ise basamak değişmez, 5–9 ise 1 artırılır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki matematiksel kavramları sağ sütundaki açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Kesir - bölme ilişkisi",
+          "Payın bölünen, paydanın bölen ve kesir değerinin bölüm olması"
+        ],
+        [
+          "Sonlu ondalık gösterim",
+          "Pay paydaya bölündüğünde kalanın sıfır olduğu ondalık yazılış"
+        ],
+        [
+          "Devirli ondalık gösterim",
+          "Virgülden sonraki rakamların belirli kurala göre sonsuza dek tekrar etmesi"
+        ],
+        [
+          "Devir çizgisi",
+          "Yalnızca tekrar eden rakam veya rakam grubunun üzerine konulan yatay çizgi"
+        ],
+        [
+          "Birler basamağına yuvarlama",
+          "Ondalık gösterimi onda birler rakamına bakarak en yakın doğal sayıya yaklaştırma"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görseldeki dört kesir kartından hangisinin payı paydasına bölündüğünde devirli ondalık gösterim elde edilir?",
+      "secenekler": [
+        "1. Kart: {kesir:7|20}",
+        "2. Kart: {kesir:11|8}",
+        "3. Kart: {kesir:8|9}",
+        "4. Kart: {kesir:13|25}"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Kesir-bölme ilişkisi ve ondalık gösterimlerle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "{kesir:14|5} kesri 14 ÷ 5 bölme işlemine eşittir ve ondalık gösterimi 2,8 olur.",
+          "dogru": true
+        },
+        {
+          "metin": "3,4777... devirli ondalık gösteriminde devir çizgisi 47 sayısının tamamının üstüne çizilir.",
+          "dogru": false
+        },
+        {
+          "metin": "26,483 sayısı onda birler basamağına yuvarlandığında 26,5 elde edilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Paydası 3 veya 9 olan en sade kesirlerin ondalık açılımı sonlu ondalık gösterimdir.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir ondalık gösterimi birler basamağına yuvarlarken onda birler basamağındaki rakama bakılır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun sözcüklerle tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Bölme işleminde kalan sıfır oluyorsa gösterim ___ olur.",
+          "cevap": "sonlu"
+        },
+        {
+          "metin": "Tekrar eden rakamların üstüne yatay ___ çizgisi konur.",
+          "cevap": "devir"
+        },
+        {
+          "metin": "En yakın doğal sayıya yuvarlamada ___ basamağı seçilir.",
+          "cevap": "birler"
+        },
+        {
+          "metin": "Sağdaki ilk rakam 5 veya büyükse basamak bir ___.",
+          "cevap": "artırılır"
+        }
+      ],
+      "fazla": [
+        "azaltılır"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görseldeki dolum tesisinde 18 litre zeytinyağı 8 özdeş şişeye eşit olarak paylaştırılmaktadır. Bir şişeye dolan zeytinyağı miktarının ondalık gösterimi kaç litredir?",
+      "secenekler": [
+        "2,15",
+        "2,25",
+        "2,45",
+        "2,75"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Görseldeki laboratuvar ölçüm panosunda verilen ondalık gösterimleri istenen basamaklara yuvarlayarak tabloyu tamamlayınız. İlk satır örnektir.",
+      "basliklar": [
+        "Ondalık Gösterim",
+        "Birler Basamağına",
+        "Onda Birlere",
+        "Yüzde Birlere"
+      ],
+      "satirlar": [
+        [
+          "14,638",
+          "15",
+          "14,6",
+          "14,64"
+        ],
+        [
+          "27,384",
+          {
+            "b": "27"
+          },
+          {
+            "b": "27,4"
+          },
+          {
+            "b": "27,38"
+          }
+        ],
+        [
+          "9,847",
+          {
+            "b": "10"
+          },
+          {
+            "b": "9,8"
+          },
+          {
+            "b": "9,85"
+          }
+        ],
+        [
+          "35,492",
+          {
+            "b": "35"
+          },
+          {
+            "b": "35,5"
+          },
+          {
+            "b": "35,49"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Görseldeki dijital tartıda 6,4a8 kg gelen kavunun kütlesi onda birler basamağına yuvarlandığında 6,5 kg olmaktadır. Buna göre a yerine yazılabilecek rakamları ve toplamını bulunuz.",
+      "cevap": "Onda birlerdeki 4 rakamının 5’e çıkması için a yerine 5, 6, 7, 8 veya 9 gelebilir; toplamları 35 olur.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "soru": "Görselde işlem adımları verilen {kesir:13|6} kesrini bölme yoluyla devirli ondalık gösterime dönüştürme aşamalarını 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "13’ü 6’ya bölerek tam kısmı 2 bulmak ve kalanın 1 olduğunu belirlemek",
+        "Bölümün sağına virgül, kalan 1’in yanına sıfır koyup 10’u 6’ya bölerek onda birler basamağını 1 bulmak",
+        "Yeni kalan 4’ün yanına sıfır ekleyip 40’ı 6’ya bölerek 6 rakamının sürekli tekrar ettiğini görmek",
+        "Bölümü 2,1666... biçiminde yazıp yalnızca tekrar eden 6 rakamının üstüne devir çizgisi koymak"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Görseldeki karşılaştırma kartlarında K = 3,4555... (yalnız 5 devirli), L = 3,4545... (45 devirli) ve M = 3,45 (sonlu) ondalık gösterimleri verilmiştir. Buna göre aşağıdaki ifadelerden hangisi {koyu:yanlıştır?}",
+      "secenekler": [
+        "K sayısının binde birler basamağındaki rakam 5’tir.",
+        "L sayısının binde birler basamağındaki rakam 4’tür.",
+        "M sayısının binde birler basamağındaki değeri 0’dır.",
+        "Üç sayının büyükten küçüğe doğru sıralanışı M > L > K biçimindedir."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görseldeki sayı doğrusunda yüzde birler basamağına yuvarlandığında 4,76 olan üç basamaklı ondalık gösterimlerin aralığı belirtilmiştir. Bu koşulu sağlayan en küçük ve en büyük üç basamaklı ondalık gösterimler sırasıyla hangileridir?",
+      "secenekler": [
+        "4,755 ve 4,764",
+        "4,751 ve 4,769",
+        "4,754 ve 4,765",
+        "4,750 ve 4,760"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "ust",
+      "soru": "Görseldeki bilgi kartında yalnızca 8 rakamı devreden 5,3888... devirli ondalık gösterimi verilmiştir. Bu sayının onda birler ve yüzde birler basamağına yuvarlanmış hâllerini yazınız.",
+      "cevap": "Sayı 5,3888... olarak açıldığında onda birlere yuvarlanışı 5,4; yüzde birlere yuvarlanışı ise 5,39 olur.",
+      "satir": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları kutulara yazınız. Numaralı harflerle bölme işleminde kalanı sıfır olan ondalık gösterim türünü bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Bölme işleminde kalanın hiç artmadığını gösteren rakam",
+          "cevap": "SIFIR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Virgülün hemen sağındaki ilk basamak: ___ birler",
+          "cevap": "ONDA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kesirde paydaya karşılık gelen bölme işlemi terimi",
+          "cevap": "BÖLEN",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Payın paydaya bölünmesiyle elde edilen işlem sonucu",
+          "cevap": "BÖLÜM",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Yuvarlamada sağdaki rakama bakmayı belirleyen ilke",
+          "cevap": "KURAL",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "SONLU"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Görseldeki alışveriş fişinde üç ürünün fiyatları (18,75 TL, 32,40 TL ve 24,85 TL) verilmiştir. Fiyatları birler basamağına yuvarlayarak bulunan tahmini toplamı gerçek toplamla karşılaştırınız.",
+      "cevap": "Yuvarlanan fiyatlar 19 + 32 + 25 = 76 TL’dir; gerçek toplam 76,00 TL ile birebir aynıdır.",
+      "satir": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Paydası 10, 100 veya 1000 olacak biçimde genişletilemeyen en sade hâldeki bir kesrin ondalık gösterimiyle ilgili aşağıdakilerden hangisi her zaman doğrudur?",
+      "secenekler": [
+        "Tam kısmı her zaman sıfıra eşittir.",
+        "Payı paydasına bölündüğünde kalan sıfır olur.",
+        "Rakamları belirli bir kurala göre tekrar eden devirli ondalık gösterimdir.",
+        "Virgülden sonra yalnızca iki basamağı bulunan sonlu bir gösterimdir."
+      ],
+      "dogru": 2
+    }
+  ]
+}
