@@ -35,7 +35,7 @@ def tarik_ailesi_panosu():
         y = 6 + (i // 2) * 52
         ic += f'<rect x="{x}" y="{y}" width="172" height="46" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
         ic += tr_yazi(x + 8, y + 18, bas, renk, 'start', kalin=True)
-        ic += ar_yazi(x + 92, y + 41, ar_metin, LAC)
+        ic += ar_yazi(x + 92, y + 40, ar_metin, LAC).replace('font-size="22"', 'font-size="17"')
     return svg(360, 110, ic, 'Tarık’ın ailesini ve akrabalarını tanıtan dört metin kartı.', 18)
 
 
