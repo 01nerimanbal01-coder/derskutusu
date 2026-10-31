@@ -62,10 +62,10 @@ def gozlem_guvenlik_panosu():
 
 def kaynak_kartlari_tablo():
     kartlar = [
-        ('1. Kart', 'Okul kütüphanesi kitabı ve', 'güvenilir dijital içerik seçimi', MAVI, MAVI_A),
-        ('2. Kart', 'Seçilen kaynaklardan Güneş’in', 'yapısı ve dönüş bilgilerini ayıklama', MOR, MOR_A),
-        ('3. Kart', 'Bulunan bilgileri öğretmenin', 've bilimsel kaynağın bilgisiyle sınama', TUR, TUR_A),
-        ('4. Kart', 'Doğrulanan notları ve çizimleri', 'Güneş Günlüğü’ne kaydedip düzeltme', YES, YES_A),
+        ('1. Kart', 'Kütüphane kitabı ve', 'dijital içerik seçimi', MAVI, MAVI_A),
+        ('2. Kart', 'Kaynaklardan Güneş', 'bilgilerini ayıklama', MOR, MOR_A),
+        ('3. Kart', 'Bilgileri öğretmen ve', 'bilim kaynağıyla sınama', TUR, TUR_A),
+        ('4. Kart', 'Doğru notları Güneş', 'Günlüğü’ne kaydetme', YES, YES_A),
     ]
     ic = ''
     for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
