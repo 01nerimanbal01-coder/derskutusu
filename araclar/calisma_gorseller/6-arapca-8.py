@@ -8,8 +8,8 @@ TR_FONT = 'font-family="Noto Sans, sans-serif" font-size="12"'
 AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="22"'
 
 
-def svg(w, h, ic, etiket, en_fazla=21):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
+def svg(w, h, ic, etiket, en_fazla=17):
+    stil = f' style="max-height:17mm"' if en_fazla else ''
     return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
 
 
