@@ -174,7 +174,7 @@ def dolu_kar_karsilastirma():
     ic += yazi(451, 24, 'Kar Yağışı', 11.5, MAVI)
     ic += f'<circle cx="346" cy="60" r="14" fill="#fff" stroke="{MAVI}" stroke-width="2"/>'
     ic += yazi(346, 64, 'Kar', 10.5, MAVI)
-    ic += yazi(374, 48, '0 °C’un altında su buharı', 10.6, LAC, 'start', ince=True)
+    ic += yazi(374, 48, '0 °C’nin altında su buharı', 10.6, LAC, 'start', ince=True)
     ic += yazi(374, 64, '  soğuyarak katılaşır ve birleşir.', 10.6, LAC, 'start', ince=True)
     ic += yazi(374, 82, 'Yapısı: Küçük buz kristalleri', 10.8, MAVI, 'start')
     return svg(600, 110, ic, 'Dolu (fırtınada aniden donan 5-50 mm buz küreleri) ve kar (0 derece altında birleşen buz kristalleri) karşılaştırma kartları.', 18)
