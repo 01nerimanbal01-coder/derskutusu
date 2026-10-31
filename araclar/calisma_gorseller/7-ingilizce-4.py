@@ -171,12 +171,12 @@ def kelime_kartlari():
 
 
 def cumle_kartlari():
-    """Dört numaralı cümle fişi (IV. fişte Does Mert goes swimming hatası)."""
+    """Dört numaralı cümle fişi (IV. fişte Does Mert goes cycling hatası)."""
     fisler = [
         ('I. fiş', ['Defne always wears a', 'helmet while cycling.'], MAVI, MAVI_A),
         ('II. fiş', ['Our coach is usually in', 'the gym at eight.'], YES, YES_A),
         ('III. fiş', ['Do they often play', 'volleyball at school?'], TUR, TUR_A),
-        ('IV. fiş', ['Does Mert goes swimming', 'on Saturdays?'], KIR, KIR_A),
+        ('IV. fiş', ['Does Mert goes cycling', 'on Saturdays?'], KIR, KIR_A),
     ]
     ic = ''
     for i, (bas, satir, r, z) in enumerate(fisler):
@@ -184,9 +184,9 @@ def cumle_kartlari():
         ic += kutu(x, y, 172, 40, z, r, 7, 1.3)
         ic += f'<rect x="{x + 6}" y="{y + 6}" width="38" height="16" rx="4" fill="{r}"/>'
         ic += yazi(x + 25, y + 17.5, bas, 10, '#fff')
-        ic += yazi(x + 48, y + 17, satir[0], 10, LAC, 'start', True)
-        ic += yazi(x + 48, y + 31, satir[1], 10, LAC, 'start', True)
-    return svg(360, 96, ic, 'Dört cümle fişi: I. fiş Defne always wears a helmet while cycling, II. fiş Our coach is usually in the gym, III. fiş Do they often play volleyball, IV. fiş Does Mert goes swimming on Saturdays.', 23)
+        ic += yazi(x + 48, y + 17, satir[0], 9.8, LAC, 'start', True)
+        ic += yazi(x + 48, y + 31, satir[1], 9.8, LAC, 'start', True)
+    return svg(360, 96, ic, 'Dört cümle fişi: I. fiş Defne always wears a helmet while cycling, II. fiş Our coach is usually in the gym, III. fiş Do they often play volleyball, IV. fiş Does Mert goes cycling on Saturdays.', 24)
 
 
 def pelin_karti():
@@ -195,15 +195,15 @@ def pelin_karti():
     ic += f'<rect x="4" y="4" width="352" height="22" rx="8" fill="{CAM}"/><rect x="4" y="16" width="352" height="10" fill="{CAM}"/>'
     ic += yazi(180, 19, 'ATHLETE CARD · Pelin Kaya', 11.5, '#fff')
     bilgiler = [
-        ('Sport:', 'Archery', 14, 42),
-        ('Training days:', 'Tuesday & Thursday', 184, 42),
-        ('Diet:', 'Healthy food (always)', 14, 68),
-        ('Paragliding:', '0 times (never)', 184, 68),
+        ('Sport:', 'Archery', 14, 58, 42),
+        ('Training:', 'Tue & Thu', 178, 240, 42),
+        ('Diet:', 'Healthy food', 14, 58, 68),
+        ('Paragliding:', '0 times (never)', 178, 252, 68),
     ]
-    for bas, deg, x, y in bilgiler:
-        ic += yazi(x, y, bas, 11, CAM, 'start')
-        ic += yazi(x + 82, y, deg, 11, LAC, 'start', True)
-    return svg(360, 90, ic, 'Pelin sporcu kartı: Sport Archery, Training days Tuesday and Thursday, Diet Healthy food always, Paragliding 0 times never.', 22)
+    for bas, deg, x1, x2, y in bilgiler:
+        ic += yazi(x1, y, bas, 10.5, CAM, 'start')
+        ic += yazi(x2, y, deg, 10.5, LAC, 'start', True)
+    return svg(360, 90, ic, 'Pelin sporcu kartı: Sport Archery, Training Tuesday and Thursday, Diet Healthy food, Paragliding 0 times never.', 24)
 
 
 def spor_ikonlari():
