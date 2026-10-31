@@ -8,7 +8,7 @@ TR_FONT = 'font-family="Noto Sans, sans-serif" font-size="12"'
 AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="22"'
 
 
-def svg(w, h, ic, etiket, en_fazla=18):
+def svg(w, h, ic, etiket, en_fazla=16):
     stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
     return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
 
@@ -34,9 +34,9 @@ def dort_meslek_harfi_tarif():
         x = 6 + (i % 2) * 176
         y = 6 + (i // 2) * 52
         ic += f'<rect x="{x}" y="{y}" width="172" height="46" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += tr_yazi(x + 10, y + 28, bas, renk, 'start', kalin=True)
-        ic += ar_yazi(x + 114, y + 31, ar_metin, LAC)
-    return svg(360, 110, ic, 'Üç şemsî ve bir kamerî meslek kartı.', 18)
+        ic += tr_yazi(x + 8, y + 18, bas, renk, 'start', kalin=True)
+        ic += ar_yazi(x + 92, y + 41, ar_metin, LAC)
+    return svg(360, 110, ic, 'Üç şemsî ve bir kamerî meslek kartı.', 16)
 
 
 def cinsiyet_uyumu_diyalog_kartlari():
@@ -53,7 +53,7 @@ def cinsiyet_uyumu_diyalog_kartlari():
         ic += f'<rect x="{x}" y="{y}" width="172" height="46" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
         ic += tr_yazi(x + 8, y + 18, bas, renk, 'start', kalin=True)
         ic += ar_yazi(x + 92, y + 41, ar_metin, LAC)
-    return svg(360, 110, ic, 'Müzekker ve müennes uyumu kontrol kartları.', 18)
+    return svg(360, 110, ic, 'Müzekker ve müennes uyumu kontrol kartları.', 16)
 
 
 def baba_anne_tarafi_tablo_kartlari():
@@ -68,9 +68,9 @@ def baba_anne_tarafi_tablo_kartlari():
         x = 6 + (i % 2) * 176
         y = 6 + (i // 2) * 52
         ic += f'<rect x="{x}" y="{y}" width="172" height="46" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += tr_yazi(x + 10, y + 28, bas, renk, 'start', kalin=True)
-        ic += ar_yazi(x + 116, y + 31, ar_metin, LAC)
-    return svg(360, 110, ic, 'Baba ve anne tarafı dört akraba kartı.', 18)
+        ic += tr_yazi(x + 8, y + 18, bas, renk, 'start', kalin=True)
+        ic += ar_yazi(x + 92, y + 41, ar_metin, LAC)
+    return svg(360, 110, ic, 'Baba ve anne tarafı dört akraba kartı.', 16)
 
 
 def dayi_teyze_doktor_donusum():
@@ -81,7 +81,7 @@ def dayi_teyze_doktor_donusum():
     ic += f'<rect x="6" y="58" width="348" height="46" rx="8" fill="{MOR_A}" stroke="{MOR}" stroke-width="1.4"/>'
     ic += tr_yazi(14, 85, 'Müennes (Dişil):', MOR, 'start', kalin=True)
     ic += ar_yazi(225, 87, '... خَالَتِي - ... ...', LAC)
-    return svg(360, 110, ic, 'Müzekker cümleyi müennes biçime dönüştürme kartı.', 18)
+    return svg(360, 110, ic, 'Müzekker cümleyi müennes biçime dönüştürme kartı.', 16)
 
 
 def diyalog_sirasi_kartlari():
@@ -98,7 +98,7 @@ def diyalog_sirasi_kartlari():
         ic += f'<rect x="{x}" y="{y}" width="172" height="46" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
         ic += tr_yazi(x + 8, y + 18, bas, renk, 'start', kalin=True)
         ic += ar_yazi(x + 92, y + 41, ar_metin, LAC)
-    return svg(360, 110, ic, 'Dört adımlı akraba ve meslek diyaloğu kartları.', 18)
+    return svg(360, 110, ic, 'Dört adımlı akraba ve meslek diyaloğu kartları.', 16)
 
 
 def semsi_kameri_meslek_tablosu():
@@ -111,14 +111,14 @@ def semsi_kameri_meslek_tablosu():
     ic += tr_yazi(269, 24, 'Kamerî Meslekler', MAVI, kalin=True)
     ic += ar_yazi(269, 54, 'الْمُهَنْدِسُ - الْفَلَّاحُ', LAC)
     ic += ar_yazi(269, 82, 'الْمُعَلِّمُ - الْأَبُ', LAC)
-    return svg(360, 100, ic, 'Şemsî ve kamerî harfle başlayan meslekler tablosu.', 18)
+    return svg(360, 100, ic, 'Şemsî ve kamerî harfle başlayan meslekler tablosu.', 16)
 
 
 def amca_ciftlik_cumle_karti():
     ic = f'<rect x="6" y="14" width="348" height="82" rx="10" fill="{YES_A}" stroke="{YES}" stroke-width="1.5"/>'
     ic += tr_yazi(180, 36, 'Arapça Tanıtım Cümlesi', YESIL_K, kalin=True)
     ic += ar_yazi(180, 74, 'عَمِّي فَلَّاحٌ - هُوَ يَعْمَلُ فِي الْمَزْرَعَةِ', LAC)
-    return svg(360, 106, ic, 'Amcanın çiftçi olduğunu ve çiftlikte çalıştığını belirten kart.', 18)
+    return svg(360, 106, ic, 'Amcanın çiftçi olduğunu ve çiftlikte çalıştığını belirten kart.', 16)
 
 
 def muallim_tabib_donusum_panosu():
@@ -131,7 +131,7 @@ def muallim_tabib_donusum_panosu():
     ic += tr_yazi(269, 24, '2. Dönüşüm (Şemsî)', TUR, kalin=True)
     ic += ar_yazi(269, 56, 'طَبِيبٌ - اَلطَّبِيبُ', LAC)
     ic += tr_yazi(269, 80, 'et-tabîbü', LAC)
-    return svg(360, 100, ic, 'Kamerî ve şemsî iki meslek kelimesinde Harf-i Tarif dönüşümü.', 18)
+    return svg(360, 100, ic, 'Kamerî ve şemsî iki meslek kelimesinde Harf-i Tarif dönüşümü.', 16)
 
 
 def iki_soru_bosluk_karti():
@@ -142,7 +142,7 @@ def iki_soru_bosluk_karti():
     ic += f'<rect x="6" y="58" width="348" height="46" rx="8" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.4"/>'
     ic += tr_yazi(14, 85, '2. Kart:', TUR, 'start', kalin=True)
     ic += ar_yazi(215, 87, '... عَمًّا لَكَ؟ - لِي عَمَّانِ', LAC)
-    return svg(360, 110, ic, 'Meslek ve sayı sorma diyalog kartları.', 18)
+    return svg(360, 110, ic, 'Meslek ve sayı sorma diyalog kartları.', 16)
 
 
 def uygula(o):
