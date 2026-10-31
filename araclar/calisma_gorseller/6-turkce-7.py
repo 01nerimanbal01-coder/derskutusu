@@ -38,10 +38,10 @@ def deyim_kartlari():
 
 def tamlama_panosu():
     tamlamalar = [
-        ('1. Örnek', 'cephe yolu', '(Ne yolu? → Sadece 2. ek almış)', MAVI, MAVI_A),
-        ('2. Örnek', 'atın yelesi', '(Neyin yelesi? → İkisi de ek almış)', YES, YES_A),
-        ('3. Örnek', 'yorgun süvari', '(Nasıl süvari? → Sıfat + İsim)', TUR, TUR_A),
-        ('4. Örnek', 'köy meydanının çeşmesi', '(3 isim birbirine bağlanmış)', MOR, MOR_A),
+        ('1. Örnek', 'cephe yolu', '(Sadece 2. ek almış)', MAVI, MAVI_A),
+        ('2. Örnek', 'atın yelesi', '(İkisi de ek almış)', YES, YES_A),
+        ('3. Örnek', 'yorgun süvari', '(Sıfat + İsim)', TUR, TUR_A),
+        ('4. Örnek', 'köy yolunun çeşmesi', '(3 isim bağlanmış)', MOR, MOR_A),
     ]
     ic = ''
     for i, (bas, ornek, ipucu, renk, arka) in enumerate(tamlamalar):
@@ -49,9 +49,9 @@ def tamlama_panosu():
         ic += f'<rect x="{x}" y="8" width="136" height="84" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
         ic += yazi(x + 68, 25, bas, 10.8, renk)
         ic += f'<line x1="{x + 14}" y1="32" x2="{x + 122}" y2="32" stroke="{renk}" stroke-width="1"/>'
-        ic += yazi(x + 68, 52, ornek, 10.4, LAC)
+        ic += yazi(x + 68, 52, ornek, 10.2, LAC)
         ic += yazi(x + 68, 72, ipucu, 10.0, LAC, ince=True)
-    return svg(600, 100, ic, 'Dört tamlama örneği: cephe yolu, atın yelesi, yorgun süvari ve köy meydanının çeşmesi.', 22)
+    return svg(600, 100, ic, 'Dört tamlama örneği: cephe yolu, atın yelesi, yorgun süvari ve köy yolunun çeşmesi.', 22)
 
 
 def hikaye_parca_karti():
@@ -81,16 +81,16 @@ def zincirleme_tuzak_karti():
 
 def olay_orgusu_zinciri():
     adimlar = [
-        ('Serim Başlangıcı', 'Sandıkların arabaya yüklenmesi', MAVI, MAVI_A),
-        ('Düğüm (Engel)', 'Tipide arabanın çamura batması', TUR, TUR_A),
-        ('Doruk Noktası', 'Atın arabayı çamurdan çekmesi', MOR, MOR_A),
-        ('Çözüm Sonucu', 'Cephane sandıklarının teslimi', YES, YES_A),
+        ('Serim Başlangıcı', 'Mühimmatın yüklenmesi', MAVI, MAVI_A),
+        ('Düğüm (Engel)', 'Çamura saplanması', TUR, TUR_A),
+        ('Doruk Noktası', 'Atın arabayı çekmesi', MOR, MOR_A),
+        ('Çözüm Sonucu', 'Cephanenin teslimi', YES, YES_A),
     ]
     ic = ''
     for i, (ust, alt, renk, arka) in enumerate(adimlar):
         x = 8 + i * 148
         ic += f'<rect x="{x}" y="8" width="136" height="80" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 68, 34, ust, 10.9, renk)
+        ic += yazi(x + 68, 34, ust, 10.8, renk)
         ic += yazi(x + 68, 60, alt, 10.0, LAC, ince=True)
         if i < 3:
             ic += f'<line x1="{x + 137}" y1="48" x2="{x + 147}" y2="48" stroke="{LAC}" stroke-width="1.8"/>'
