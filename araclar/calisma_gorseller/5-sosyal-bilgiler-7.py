@@ -92,7 +92,7 @@ def nufus_etki_zinciri_svg():
         ('Elverişli Konum', 'Düz ova ve kıyı kavşağı', YES, YES_A),
         ('Ulaşım ve Liman', 'Fabrika ve ticaret artışı', MAVI, MAVI_A),
         ('İş Olanakları', 'Yeni istihdam alanları', TUR, TUR_A),
-        ('Yoğun Nüfus', 'Göç alma ve kalabalıklaşma', MOR, MOR_A),
+        ('Yoğun Nüfus', 'Göç alma ve nüfus artışı', MOR, MOR_A),
     ]
     ic = ''
     for i, (ust, alt, renk, arka) in enumerate(adimlar):
