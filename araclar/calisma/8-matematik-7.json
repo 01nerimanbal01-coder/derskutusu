@@ -1,0 +1,271 @@
+{
+  "sinif": 8,
+  "ders": "matematik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-10-28",
+  "baslik": "8. Sınıf Matematik 7. Hafta Çalışma Kâğıdı",
+  "alt_baslik": "Kareköklü İfadeleri Tahmin Etme, a{kok:b} Biçiminde Yazma ve Sıralama",
+  "renk": "#2451d6",
+  "konu": "Kareköklü İfadeler: Tam Kare Olmayan Sayıların Karekökünü Tahmin Etme ve Katsayıyı Kök İçine/Dışına Alma",
+  "ciktilar": [
+    "M.8.1.3.2. Tam kare olmayan kareköklü bir sayının hangi iki doğal sayı arasında olduğunu belirler.",
+    "M.8.1.3.3. Kareköklü bir ifadeyi a{kok:b} biçiminde yazar ve a{kok:b} biçimindeki ifadede katsayıyı kök içine alır."
+  ],
+  "hatirla": [
+    "Tam kare olmayan {kok:x} sayısının hangi iki ardışık doğal sayı arasında olduğunu bulmak için x’ten küçük en büyük tam kare ile x’ten büyük en küçük tam kare belirlenir.",
+    "Kök içindeki sayı, alt ve üst tam kare komşularından hangisine sayıca daha yakınsa kareköklü ifadenin değeri de o doğal sayıya daha yakındır.",
+    "Kök içindeki sayı çarpanlarından biri tam kare olacak biçimde yazıldığında tam kare çarpan kök dışına katsayı olarak çıkar: {kok:{us:a|2} · b} = a{kok:b}.",
+    "Kök dışındaki pozitif katsayı karesi alınarak kök içine girer: a{kok:b} = {kok:{us:a|2} · b}. Kareköklü sayılar sıralanırken katsayılar kök içine alınır; negatif ifadelerde eksi (−) işareti kök dışında kalır."
+  ],
+  "sorular": [
+    {
+      "tur": "tablo",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki komşu tam kareler modelini inceleyerek tabloda verilen kareköklü ölçümlerin sayı doğrusundaki tam sayı sınırlarını ve yakın olduğu ucu tabloya işleyiniz. İlk satır örnektir.",
+      "basliklar": [
+        "Kareköklü sayı",
+        "Bulunduğu doğal sayı aralığı",
+        "Daha yakın olduğu doğal sayı"
+      ],
+      "satirlar": [
+        [
+          "{kok:40}",
+          "6 ile 7 arasında",
+          "6’ya daha yakın"
+        ],
+        [
+          "{kok:58}",
+          {
+            "b": "7 ile 8 arasında"
+          },
+          {
+            "b": "8’e daha yakın"
+          }
+        ],
+        [
+          "{kok:85}",
+          {
+            "b": "9 ile 10 arasında"
+          },
+          {
+            "b": "9’a daha yakın"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki kareköklü ifadeleri sağ sütundaki eşitleriyle eşleştiriniz. Harfleri kutulara yazınız.",
+      "ciftler": [
+        [
+          "{kok:75}",
+          "5{kok:3}"
+        ],
+        [
+          "{kok:98}",
+          "7{kok:2}"
+        ],
+        [
+          "{kok:108}",
+          "6{kok:3}"
+        ],
+        [
+          "4{kok:5}",
+          "{kok:80}"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sayı doğrusu üzerinde K noktası 8 ile 9 doğal sayıları arasında ve 8’e daha yakın bir konumda işaretlenmiştir. Buna göre K noktasına karşılık gelen kareköklü ifade aşağıdakilerden hangisi olabilir?",
+      "secenekler": [
+        "{kok:60}",
+        "{kok:63}",
+        "{kok:68}",
+        "{kok:77}"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Kareköklü ifadelerle ilgili yargılardan doğru olanların D, yanlış olanların Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "{kok:52} sayısı sayı doğrusunda 7 ile 8 doğal sayıları arasındadır ve 7’ye daha yakındır.",
+          "dogru": true
+        },
+        {
+          "metin": "3{kok:6} ifadesinde katsayı kök içine alındığında {kok:18} elde edilir.",
+          "dogru": false
+        },
+        {
+          "metin": "{kok:128} sayısı a{kok:b} biçiminde en sade hâliyle 8{kok:2} olarak yazılır.",
+          "dogru": true
+        },
+        {
+          "metin": "Negatif kareköklü ifadelerde eksi işareti kök içine girmez; −4{kok:2} = −{kok:32} olur.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört eşitlik kartında bazı kareköklü ifadeler a{kok:b} biçiminde yazılmıştır. Numaralanmış kartların hangisindeki eşitlik {koyu:yanlıştır?}",
+      "secenekler": [
+        "I. kart ({kok:48} = 4{kok:3})",
+        "II. kart ({kok:72} = 4{kok:6})",
+        "III. kart ({kok:125} = 5{kok:5})",
+        "IV. kart ({kok:180} = 6{kok:5})"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki karesel bölgelerden 1. bahçenin alanı 60 m², 2. bahçenin alanı 92 m²dir. Her iki bahçenin birer kenar uzunluğunun hangi iki ardışık doğal sayı arasında olduğunu ve hangisine daha yakın olduğunu yazınız.",
+      "cevap": "1. bahçe ({kok:60} m): 7-8 arası, 8’e yakın. 2. bahçe ({kok:92} m): 9-10 arası, 10’a yakın.",
+      "satir": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki cetvel üzerinde sol ucu 0 noktasına hizalanmış bir kalemin sağ ucu 6 cm ile 7 cm arasında ve 7 cm’ye daha yakın bir noktada durmaktadır. Kalemin santimetre cinsinden uzunluğu aşağıdakilerden hangisi olabilir?",
+      "secenekler": [
+        "3{kok:5}",
+        "2{kok:10}",
+        "4{kok:2}",
+        "5{kok:2}"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "soru": "Verilen kareköklü ifadeleri katsayılarını kök içine alarak en küçükten (1) en büyüğe (5) doğru sıralayınız.",
+      "ogeler": [
+        "3{kok:3}",
+        "2{kok:10}",
+        "4{kok:3}",
+        "5{kok:2}",
+        "6{kok:2}"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki çarpan kartında a ve b birer pozitif tam sayı olmak üzere {kok:72} = a{kok:b} eşitliği verilmiştir. Buna göre a + b toplamı aşağıdakilerden hangisi {koyu:olamaz?}",
+      "secenekler": [
+        "73",
+        "20",
+        "11",
+        "10"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "kisa",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki sayı doğrusunda 9 noktasının üzerinde duran bir oyuncak araç, sağa doğru 2{kok:7} birim ilerleyerek L noktasına ulaşıyor. L noktasının hangi iki ardışık doğal sayı arasında olduğunu işlem adımlarıyla bulunuz.",
+      "cevap": "{kok:28} sayısı 5 ile 6 arasındadır; L = 9 + {kok:28} olduğundan 14 ile 15 arasındadır.",
+      "satir": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına uyan matematik kavramlarını kutulara yazınız. Turuncu kutulardaki harfler, tam kare olmayan kareköklü sayıların yaklaşık yerini bulurken yaptığımız işlemi verir.",
+      "satirlar": [
+        {
+          "ipucu": "Karekökü doğal sayı olan 1, 4, 9, 16 gibi sayılara verilen ad: … kare",
+          "cevap": "TAM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sayıyı asal çarpanlarına ayırırken kullandığımız bölen listesi yöntemi",
+          "cevap": "ALGORİTMA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İşlem adımlarını yürüterek bir ifadenin sayısal değerini bulma",
+          "cevap": "HESAPLAMA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sayı doğrusunda iki nokta arasındaki uzaklık",
+          "cevap": "MESAFE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Asal çarpan algoritmasında kök dışına tek çarpan olarak çıkan eş grup",
+          "cevap": "İKİLİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sıfırdan küçük olan ve eksi işareti kök içine girmeyen sayı türü",
+          "cevap": "NEGATİF",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "TAHMİN"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız. Bir kavram artacaktır.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "{kok:68} sayısı sayı doğrusunda 8 ile ___ arasındadır.",
+          "cevap": "dokuz"
+        },
+        {
+          "metin": "{kok:34} sayısı en yakın doğal sayı olarak ___ sayısına yakındır.",
+          "cevap": "altı"
+        },
+        {
+          "metin": "a{kok:b} ifadesinde kök dışındaki a çarpanına ___ denir.",
+          "cevap": "katsayı"
+        },
+        {
+          "metin": "Katsayı kök içine alınırken sayının ___ alınarak çarpılır.",
+          "cevap": "karesi"
+        }
+      ],
+      "fazla": [
+        "yarısı"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki üç yürüyüş parkurunun uzunlukları K = 4{kok:5} km, L = 6{kok:2} km ve M = 5{kok:3} km olarak verilmiştir. Parkurların uzunluklarının büyükten küçüğe doğru sıralanışı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "K > L > M",
+        "K > M > L",
+        "M > K > L",
+        "L > M > K"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki karşılaştırma kartında verilen X = −3{kok:5} ve Y = −2{kok:11} sayılarından hangisinin daha büyük olduğunu katsayıları kök içine alarak gerekçesiyle açıklayınız.",
+      "cevap": "X = −{kok:45}, Y = −{kok:44} olur; sıfıra daha yakın olduğundan Y > X bulunur.",
+      "satir": 2
+    }
+  ]
+}
