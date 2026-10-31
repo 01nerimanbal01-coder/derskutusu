@@ -32,18 +32,18 @@ def gorusme_tablosu():
     ic += f'<rect x="4" y="4" width="172" height="22" rx="8" fill="{MAVI}"/><rect x="4" y="16" width="172" height="10" fill="{MAVI}"/>'
     ic += yazi(90, 19, '3 Akranın 5 Yıllık Hedefleri', 11, '#fff')
     ic += duz(12, 42, [
-        '• Bilim olimpiyatlarına katılmak',
-        '• Müzik aleti çalmayı öğrenmek',
-        '• Yüzme kursunu tamamlamak',
+        '1. Bilim olimpiyatlarına katılmak',
+        '2. Müzik aleti çalmayı öğrenmek',
+        '3. Yüzme kursunu tamamlamak',
     ], 10.5, LAC, 'start', 16)
 
     ic += kutu(184, 4, 172, 92, TUR_A, TUR, 8, 1.3)
     ic += f'<rect x="184" y="4" width="172" height="22" rx="8" fill="{TUR}"/><rect x="184" y="16" width="172" height="10" fill="{TUR}"/>'
     ic += yazi(270, 19, '3 Yetişkinin 5 Yıllık Hedefleri', 11, '#fff')
     ic += duz(192, 42, [
-        '• Mesleki uzmanlığı bitirmek',
-        '• Müzik aleti çalmayı öğrenmek',
-        '• Kendi atölyesini açmak',
+        '1. Mesleki uzmanlığı bitirmek',
+        '2. Müzik aleti çalmayı öğrenmek',
+        '3. Kendi atölyesini açmak',
     ], 10.5, LAC, 'start', 16)
     return svg(360, 100, ic, 'Görüşme çizelgesi: 3 akranın hedefleri bilim olimpiyatlarına katılmak, müzik aleti çalmayı öğrenmek, yüzme kursunu tamamlamak; 3 yetişkinin hedefleri mesleki uzmanlığı bitirmek, müzik aleti çalmayı öğrenmek, kendi atölyesini açmak.', 21)
 
