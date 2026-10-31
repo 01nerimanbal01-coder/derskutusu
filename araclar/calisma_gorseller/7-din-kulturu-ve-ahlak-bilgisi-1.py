@@ -7,8 +7,8 @@ YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
 YAZI_I = 'font-family="Noto Sans, sans-serif" font-weight="500"'
 
 
-def svg(w, h, ic, etiket, en_fazla=20):
-    stil = f' style="max-height:calc({en_fazla}mm * var(--ck-olcek, 1))"' if en_fazla else ''
+def svg(w, h, ic, etiket, en_fazla=17):
+    stil = f' style="max-height:calc(16mm * var(--ck-olcek, 1))"' if en_fazla else ''
     return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
 
 
