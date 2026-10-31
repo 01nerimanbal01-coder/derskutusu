@@ -41,7 +41,9 @@ def aciolcer_okuma_svg():
         x2, y2 = nk(cx, cy, r - 8, d)
         ic += f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{MAVI}" stroke-width="1.4"/>'
         tx, ty = nk(cx, cy, r - 20, d)
-        ic += yazi(tx, ty + 4, f'{d}°', 10, KIR if d == 115 else LAC)
+        dx_off = -16 if d == 115 else 0
+        dy_off = -5 if d in (0, 180) else (6 if d == 115 else 4)
+        ic += yazi(tx + dx_off, ty + dy_off, f'{d}°', 10, KIR if d == 115 else LAC)
     # Açı kolları: KM (0°) ve KL (115°)
     ic += yay(cx, cy, 32, 0, 115, TUR, '#ee7d1233', 2)
     lx, ly = nk(cx, cy, 94, 115)
@@ -51,7 +53,7 @@ def aciolcer_okuma_svg():
     ic += f'<circle cx="{cx}" cy="{cy}" r="3.8" fill="{LAC}"/>'
     ic += yazi(cx, cy + 14, 'K (merkez)', 10.8, LAC)
     ic += yazi(mx + 12, my + 4, 'M', 11.5, TUR)
-    ic += yazi(lx - 10, ly - 2, 'L', 11.5, TUR)
+    ic += yazi(lx - 12, ly + 2, 'L', 11.5, TUR)
     # Sağ açıklama kutusu
     ic += f'<rect x="334" y="18" width="244" height="88" rx="8" fill="#fff" stroke="{TUR}" stroke-width="1.5"/>'
     ic += yazi(456, 38, 'Açıölçer Okuma Bilgisi', 11.5, TUR)
@@ -116,18 +118,18 @@ def hatali_olcum_svg():
     ic = f'<rect x="6" y="6" width="588" height="108" rx="10" fill="#fdeaea" stroke="{KIR}" stroke-width="1.5"/>'
     ic += f'<path d="M{cx - r} {cy} A{r} {r} 0 0 1 {cx + r} {cy} Z" fill="#fff" stroke="{MAVI}" stroke-width="1.8"/>'
     ic += yazi(cx + r - 16, cy - 6, '0°', 10.5, MAVI)
-    ic += yazi(cx, cy - r + 14, '90°', 10.5, MAVI)
+    ic += yazi(cx + 14, cy - r + 15, '90°', 10.5, MAVI)
     ic += yazi(cx - r + 18, cy - 6, '180°', 10.5, MAVI)
     # DEF açısı: EF kolu 25°'de, ED kolu 95°'de (0° çizgisinde değil!)
     ic += yay(cx, cy, 28, 25, 95, KIR, '#d63a3a22', 2)
-    fx, fy = nk(cx, cy, 82, 25)
-    dx, dy = nk(cx, cy, 82, 95)
+    fx, fy = nk(cx, cy, 80, 25)
+    dx, dy = nk(cx, cy, 80, 95)
     ic += f'<line x1="{cx}" y1="{cy}" x2="{fx:.1f}" y2="{fy:.1f}" stroke="{KIR}" stroke-width="2.5"/>'
     ic += f'<line x1="{cx}" y1="{cy}" x2="{dx:.1f}" y2="{dy:.1f}" stroke="{KIR}" stroke-width="2.5"/>'
     ic += f'<circle cx="{cx}" cy="{cy}" r="3.5" fill="{LAC}"/>'
     ic += yazi(cx, cy + 14, 'E (merkez)', 10.5, LAC)
-    ic += yazi(fx + 10, fy + 4, 'F (25°)', 10.5, KIR)
-    ic += yazi(dx - 18, dy + 6, 'D (95°)', 10.5, KIR)
+    ic += yazi(fx + 5, fy + 4, 'F (25°)', 10.5, KIR, 'start')
+    ic += yazi(dx - 6, dy + 4, 'D (95°)', 10.5, KIR, 'end')
     # Sağ uyarı kartı
     ic += f'<rect x="296" y="18" width="282" height="84" rx="8" fill="#fff" stroke="{KIR}" stroke-width="1.4"/>'
     ic += yazi(437, 38, 'Tuna’nın Açıölçer Yerleşimi', 11.5, KIR)
