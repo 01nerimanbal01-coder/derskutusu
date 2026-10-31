@@ -23,10 +23,10 @@ def rozet(x, y, metin, renk, r=11, boy=12):
 def sur_ufleme():
     ic = ''
     kartlar = [
-        ('İsrafil’in Sûra 1. Üflemesi', 'Dünya hayatı ve evrenin düzeni sona erer.', 'K', TUR, TUR_A),
-        ('İsrafil’in Sûra 2. Üflemesi', 'Ölen bütün insanlar yeniden hayata kavuşturulur.', 'L', MAVI, MAVI_A),
+        ('İsrafil’in Sûra 1. Üflemesi', 'Dünya hayatı ve evrenin', 'düzeni sona erer.', 'K', TUR, TUR_A),
+        ('İsrafil’in Sûra 2. Üflemesi', 'Ölen bütün insanlar yeniden', 'hayata kavuşturulur.', 'L', MAVI, MAVI_A),
     ]
-    for i, (bas, aciklama, harf, renk, arka) in enumerate(kartlar):
+    for i, (bas, s1, s2, harf, renk, arka) in enumerate(kartlar):
         x = 6 + i * 298
         ic += f'<rect x="{x}" y="6" width="286" height="122" rx="10" fill="{arka}" stroke="{renk}" stroke-width="1.8"/>'
         ic += f'<rect x="{x}" y="6" width="286" height="28" rx="10" fill="{renk}"/><rect x="{x}" y="22" width="286" height="12" fill="{renk}"/>'
@@ -36,12 +36,12 @@ def sur_ufleme():
         ic += f'<path d="M{sx - 24} {sy + 8} Q{sx - 4} {sy + 6} {sx + 16} {sy - 12} L{sx + 16} {sy + 18} Q{sx - 4} {sy + 10} {sx - 24} {sy + 12} Z" fill="{ALTIN}" stroke="{KAHVE}" stroke-width="1.4"/>'
         ic += f'<ellipse cx="{sx + 16}" cy="{sy + 3}" rx="4" ry="15" fill="#f4d27a" stroke="{KAHVE}" stroke-width="1.4"/>'
         ic += f'<path d="M{sx + 24} {sy - 6} q6 9 0 18 M{sx + 30} {sy - 10} q8 13 0 26" fill="none" stroke="{renk}" stroke-width="1.6" stroke-linecap="round"/>'
-        ic += yazi(x + 178, 58, aciklama[:26], 11.5, LAC, ince=True)
-        ic += yazi(x + 178, 76, aciklama[26:], 11.5, LAC, ince=True)
+        ic += yazi(x + 178, 58, s1, 11.5, LAC, ince=True)
+        ic += yazi(x + 178, 76, s2, 11.5, LAC, ince=True)
         ic += f'<rect x="{x + 78}" y="90" width="130" height="28" rx="8" fill="#fff" stroke="{renk}" stroke-width="1.6" stroke-dasharray="5 3"/>'
         ic += yazi(x + 143, 109, f'Aşama: {harf} ?', 12.5, renk)
     ic += f'<path d="M294 67 H302" stroke="{LAC}" stroke-width="2.2"/><path d="M298 62 l5 5 l-5 5" fill="none" stroke="{LAC}" stroke-width="2"/>'
-    return svg(600, 134, ic, 'İsrafil’in sûra iki kez üflemesi: 1. üfleme ile dünya düzeni sona erer (K aşaması), 2. üfleme ile insanlar yeniden diriltilir (L aşaması).', 25)
+    return svg(600, 134, ic, 'İsrafil’in sûra iki kez üflemesi: 1. üfleme ile dünya düzeni sona erer (K aşaması), 2. üfleme ile insanlar yeniden diriltilir (L aşaması).', 18)
 
 
 def cennet_panosu():
@@ -82,7 +82,7 @@ def ayet_kartlari():
         ic += yazi(x + 18, y + 18, bas, 11.5, renk, 'start')
         ic += yazi(x + 18, y + 36, s1, 11.5, LAC, 'start', ince=True)
         ic += yazi(x + 18, y + 52, s2, 11.5, LAC, 'start', ince=True)
-    return svg(600, 140, ic, 'Dört ayet kartı: 1. Nahl 38 (yeniden diriltme vaadi), 2. İsra 13 (açılmış kitap), 3. Enbiya 47 (adalet terazileri), 4. Tevbe 72 (Adn cennetleri).', 23)
+    return svg(600, 140, ic, 'Dört ayet kartı: 1. Nahl 38 (yeniden diriltme vaadi), 2. İsra 13 (açılmış kitap), 3. Enbiya 47 (adalet terazileri), 4. Tevbe 72 (Adn cennetleri).', 17)
 
 
 def hasir_mahser_sema():
@@ -170,7 +170,7 @@ def mizan_terazisi():
     ic += f'<line x1="555" y1="62" x2="555" y2="80" stroke="{LAC}" stroke-width="1.5"/><rect x="527" y="80" width="56" height="20" rx="5" fill="#fff" stroke="{KIR}" stroke-width="1.5"/>'
     ic += yazi(555, 94, 'Günah', 11, KIR)
     ic += yazi(499, 131, 'Sonuç: Ceza', 11.5, KIR)
-    return svg(600, 144, ic, 'Mizan terazisinin iki durumu (1. terazide sevap ağır, 2. terazide günah ağır) ve Enbiya suresi 47. ayet.', 24)
+    return svg(600, 144, ic, 'Mizan terazisinin iki durumu (1. terazide sevap ağır, 2. terazide günah ağır) ve Enbiya suresi 47. ayet.', 18)
 
 
 def enam_olcu():
