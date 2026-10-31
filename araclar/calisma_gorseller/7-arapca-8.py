@@ -88,10 +88,10 @@ def hareke_farki_kartlari():
 
 def diyalog_akis_sema():
     adimlar = [
-        (4, '1. Adım', 'السَّلَامُ وَالْإِرَادَةُ', MAVI, MAVI_A),
-        (93, '2. Adım', 'تَفَضَّلْ وَالسُّؤَالُ', YES, YES_A),
-        (182, '3. Adım', 'بِكَمِ الْمَجْمُوعُ؟', TUR, TUR_A),
-        (271, '4. Adım', 'الدَّفْعُ وَالْوَدَاعُ', MOR, MOR_A),
+        (4, '1. Selam', 'السَّلَامُ', MAVI, MAVI_A),
+        (93, '2. İkram', 'تَفَضَّلْ', YES, YES_A),
+        (182, '3. Fiyat', 'بِكَمْ؟', TUR, TUR_A),
+        (271, '4. Ödeme', 'النُّقُودُ', MOR, MOR_A),
     ]
     ic = ''
     for x, bas, ar, renk, arka in adimlar:
@@ -126,9 +126,9 @@ def nezaket_konusma_karti():
 
 def liste_sirali_pano():
     kutular = [
-        (4, '1. Önce', 'عُلْبَةُ حَلِيبٍ', MAVI, MAVI_A),
-        (124, '2. Sonra (ثُمَّ)', 'كِيلُو جُبْنٍ', YES, YES_A),
-        (244, '3. Fiyat Sorusu', 'بِكَمِ الْمَجْمُوعُ؟', TUR, TUR_A),
+        (4, '1. Önce', 'حَلِيبٌ', MAVI, MAVI_A),
+        (124, '2. Sonra (ثُمَّ)', 'جُبْنٌ', YES, YES_A),
+        (244, '3. Fiyat Sorusu', 'الْمَجْمُوعُ؟', TUR, TUR_A),
     ]
     ic = ''
     for x, bas, ar, renk, arka in kutular:
