@@ -18,17 +18,17 @@ def yazi(x, y, metin, boy=11.5, renk=LAC, hiza='middle', ek='', ince=False):
 
 
 def turkiye_koordinat_sema():
-    ic = f'<rect x="6" y="6" width="588" height="104" rx="10" fill="#fbfcff" stroke="{GRI}" stroke-width="1.5"/>'
-    ic += yazi(300, 21, 'Türkiye’nin Mutlak (Matematik) Konum Koordinat Çerçevesi', 11.2, LAC)
-    ic += yazi(300, 36, '42° Kuzey Paraleli (Sinop - İnceburun)', 10.1, YESIL_K)
-    ic += f'<rect x="130" y="42" width="340" height="46" rx="8" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="2"/>'
-    ic += yazi(300, 69, 'TÜRKİYE (Anadolu ve Trakya)', 11.2, MAVI)
-    ic += yazi(300, 102, '36° Kuzey Paraleli (Hatay - Beysun)', 10.1, YESIL_K)
-    ic += yazi(68, 62, '26° Doğu', 10.4, TUR)
-    ic += yazi(68, 76, '(Çanakkale)', 10.0, LAC, ince=True)
-    ic += yazi(532, 62, '45° Doğu', 10.4, TUR)
-    ic += yazi(532, 76, '(Iğdır)', 10.0, LAC, ince=True)
-    return svg(600, 116, ic, 'Türkiye’nin 36-42 Kuzey paralelleri ile 26-45 Doğu meridyenleri arasındaki mutlak konum çerçevesi.', 22)
+    ic = f'<rect x="6" y="4" width="588" height="96" rx="10" fill="#fbfcff" stroke="{GRI}" stroke-width="1.5"/>'
+    ic += yazi(300, 18, 'Türkiye’nin Mutlak (Matematik) Konum Koordinat Çerçevesi', 11.0, LAC)
+    ic += yazi(300, 32, '42° Kuzey Paraleli (Sinop - İnceburun)', 10.0, YESIL_K)
+    ic += f'<rect x="130" y="37" width="340" height="44" rx="8" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="2"/>'
+    ic += yazi(300, 63, 'TÜRKİYE (Anadolu ve Trakya)', 11.2, MAVI)
+    ic += yazi(300, 94, '36° Kuzey Paraleli (Hatay - Beysun)', 10.0, YESIL_K)
+    ic += yazi(68, 58, '26° Doğu', 10.4, TUR)
+    ic += yazi(68, 72, '(Çanakkale)', 10.0, LAC, ince=True)
+    ic += yazi(532, 58, '45° Doğu', 10.4, TUR)
+    ic += yazi(532, 72, '(Iğdır)', 10.0, LAC, ince=True)
+    return svg(600, 104, ic, 'Türkiye’nin 36-42 Kuzey paralelleri ile 26-45 Doğu meridyenleri arasındaki mutlak konum çerçevesi.', 22)
 
 
 def dort_ozellik_panosu():
