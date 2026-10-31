@@ -10,7 +10,7 @@
     "M.8.1.2.2. Üslü ifadelerle ilgili temel kuralları anlar, birbirine denk ifadeler oluşturur."
   ],
   "hatirla": [
-    "Sıfırdan farklı bir a tam sayısı ve n tam sayısı için {us:a|0} = 1, {us:a|−n} = {kesir:1|{us:a|n}} ve {kesir:1|{us:a|−n}} = {us:a|n} olur; negatif tabanda parantez işaretin kuvvete katılıp katılmadığını belirler.",
+    "Sıfırdan farklı her a tam sayısının sıfırıncı kuvveti 1’dir ({us:a|0} = 1); negatif üste tabanın çarpmaya göre tersi alınır ve negatif tabanda parantez işaretin kuvvete katılıp katılmadığını belirler.",
     "Aynı tabana sahip iki ifade çarpıldığında kuvvetlerin toplamı, bölündüğünde ise kuvvetlerin farkı ortak tabanın yeni üssü olarak yazılır.",
     "Kuvvetleri birbirine eşit olan ifadelerde çarpma yapılırken tabanların çarpımı, bölme yapılırken tabanların bölümü ortak kuvvetin altına yazılır.",
     "Üslü bir ifadenin kuvveti alınırken üsler çarpılır ({us:({us:a|b})|c} = {us:a|b · c}); bu kuralla aynı değeri veren denk üslü ifadeler oluşturulur."
@@ -55,7 +55,7 @@
             "b": "{kesir:1|{us:(−3)|3}}"
           },
           {
-            "b": "−{kesir:1|27}"
+            "b": "{kesir:−1|27}"
           }
         ]
       ]
@@ -248,7 +248,7 @@
       "tur": "kisa",
       "duzey": "ust",
       "soru": "Görseldeki dikdörtgen levhanın kısa kenar uzunluğu {us:4|5} cm, uzun kenar uzunluğu {us:8|4} cm’dir. Levhanın alanını ve bir kenarı {us:2|7} cm olan eş kare etiketlerden bu levhaya üst üste gelmeden kaç adet sığacağını bulunuz.",
-      "cevap": "Alan {us:2|10} · {us:2|12} = {us:2|22} {us:cm|2}, etiket alanı {us:2|14} {us:cm|2} olur; {us:2|22} ÷ {us:2|14} = {us:2|8} = 256 etiket sığar.",
+      "cevap": "Levha alanı {us:2|22} {us:cm|2} ve bir etiketin alanı {us:2|14} {us:cm|2} olduğundan levhaya {us:2|8} = 256 etiket sığar.",
       "satir": 3
     },
     {
