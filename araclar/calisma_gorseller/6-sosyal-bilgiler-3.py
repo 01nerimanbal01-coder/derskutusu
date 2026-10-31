@@ -44,11 +44,12 @@ def dil_urunleri_panosu():
     ic = ''
     for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
         x = 6 + (i % 2) * 298
-        y = 6 + (i // 2) * 58
-        ic += f'<rect x="{x}" y="{y}" width="286" height="50" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += f'<rect x="{x}" y="{y}" width="8" height="50" rx="4" fill="{renk}"/>'
-        ic += yazi(x + 18, y + 19, bas, 11, renk, 'start')
-        ic += yazi(x + 18, y + 38, f'{s1} {s2}', 10.2, LAC, 'start', ince=True)
+        y = 4 + (i // 2) * 60
+        ic += f'<rect x="{x}" y="{y}" width="286" height="54" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
+        ic += f'<rect x="{x}" y="{y}" width="8" height="54" rx="4" fill="{renk}"/>'
+        ic += yazi(x + 18, y + 17, bas, 10.6, renk, 'start')
+        ic += yazi(x + 18, y + 33, s1, 10.0, LAC, 'start', ince=True)
+        ic += yazi(x + 18, y + 48, s2, 10.0, LAC, 'start', ince=True)
     return svg(600, 124, ic, 'Dil ürünleri panosu: 1. Destan ve ninni, 2. Atasözü ve türkü, 3. Oyunlar (hatalı açıklama), 4. Yazılı eserler.', 23)
 
 
@@ -87,17 +88,18 @@ def mevlana_yunus_karti():
 
 def zimem_zinciri():
     adimlar = [
-        ('1. Adım', 'Ramazanda bakkala gidiş', MAVI, MAVI_A),
-        ('2. Adım', 'Zimem defterinin açılması', TUR, TUR_A),
-        ('3. Adım', 'Sayfaların satın alınması', MOR, MOR_A),
-        ('4. Adım', 'Borçların sessizce silinmesi', YES, YES_A),
+        ('1. Adım', 'Ramazanda', 'bakkala gidiş', MAVI, MAVI_A),
+        ('2. Adım', 'Zimem defterinin', 'açılması', TUR, TUR_A),
+        ('3. Adım', 'Sayfaların satın', 'alınması', MOR, MOR_A),
+        ('4. Adım', 'Borçların sessizce', 'silinmesi', YES, YES_A),
     ]
     ic = ''
-    for i, (ust, alt, renk, arka) in enumerate(adimlar):
+    for i, (ust, s1, s2, renk, arka) in enumerate(adimlar):
         x = 8 + i * 148
         ic += f'<rect x="{x}" y="8" width="136" height="80" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 68, 34, ust, 11.2, renk)
-        ic += yazi(x + 68, 60, alt, 10.2, LAC, ince=True)
+        ic += yazi(x + 68, 28, ust, 11.2, renk)
+        ic += yazi(x + 68, 52, s1, 10.2, LAC, ince=True)
+        ic += yazi(x + 68, 70, s2, 10.2, LAC, ince=True)
         if i < 3:
             ic += f'<line x1="{x + 137}" y1="48" x2="{x + 147}" y2="48" stroke="{LAC}" stroke-width="1.8"/>'
     return svg(600, 96, ic, 'Osmanlı zimem defteri geleneğinin dört adımlı zinciri.', 22)
