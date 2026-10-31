@@ -153,7 +153,7 @@ def paragraf_plan_semasi():
         ic += yazi(x + 54, 24, bas, 10.5, r)
         ic += yazi(x + 54, 39, deger, 10.5, LAC, 'middle', True)
     ic += kutu(10, 52, 340, 38, MOR_A, MOR, 6, 1.2)
-    ic += yazi(180, 67, 'Başlatma (hazırlar) → Sürdürme (bağlar) → Sonlandırma (toparlar)', 10.5, LAC)
+    ic += yazi(180, 67, 'Başlatma (giriş) → Sürdürme (bağlar) → Sonlandırma (sonuç)', 10.5, LAC)
     ic += yazi(180, 82, 'Üç bölüm de seçilen konuya ve hedef kitleye uygun kurulur.', 10.5, MOR, 'middle', True)
     return svg(360, 100, ic, 'Paragraf yazma planı: 1. Konu Kelime madeni, 2. Hedef Kitle Okul öncesi çocuklar, 3. Yazma Ortamı Çizgili defter; altta Başlatma, Sürdürme ve Sonlandırma akışı.', 19)
 
