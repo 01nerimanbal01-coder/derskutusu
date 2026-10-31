@@ -35,7 +35,7 @@ def metin_plani():
     ic = kutu(4, 4, 352, 22, LAC, LAC, 6, 1) + yazi(180, 19.5, 'AÇIKLAYICI METİN TASLAĞI · Okul Kütüphanesinin Kullanımı', 11.5, '#fff')
     bolumler = [
         ('1. Tanıtım', 'K', MAVI, MAVI_A, 4),
-        ('2. Açıklama / Detaylandırma', 'L', TUR, TUR_A, 122),
+        ('2. Açıklama', 'L', TUR, TUR_A, 122),
         ('3. Sonuç', 'M', YES, YES_A, 240),
     ]
     for bas, harf, renk, zemin, x in bolumler:
@@ -113,9 +113,9 @@ def yazit_seridi():
     ic += yazi(180, 20, 'ORHON YAZITLARI · Moğolistan (Karakurum yakınları)', 11.5, LAC)
     ic += f'<line x1="28" y1="56" x2="332" y2="56" stroke="{SOLUK}" stroke-width="2"/>'
     veriler = [
-        (68, '720', 'Tonyukuk Yazıtı', 'Vezir adına', MAVI, MAVI_A),
-        (180, '732', 'Kül Tigin Yazıtı', 'Hükümdar adına', TUR, TUR_A),
-        (292, '735', 'Bilge Kağan Yazıtı', 'Hükümdar adına', YES, YES_A),
+        (68, '720', 'Tonyukuk', 'Vezir adına', MAVI, MAVI_A),
+        (180, '732', 'Kül Tigin', 'Hükümdar adına', TUR, TUR_A),
+        (292, '735', 'Bilge Kağan', 'Hükümdar adına', YES, YES_A),
     ]
     for x, yil, ad, rol, renk, zemin in veriler:
         ic += f'<circle cx="{x}" cy="56" r="5" fill="{renk}"/>'
@@ -127,31 +127,31 @@ def yazit_seridi():
 def yazim_panosu():
     """Dört bilgi fişi: III. fişte '13. ve 14. satırlar' yanlış yazılmış (doğrusu 13 ve 14. satırlar)."""
     fisler = [
-        ('I. fiş', ['Karagöz doğru dürüst bir', 'işte çalışmaz.'], MAVI, MAVI_A),
-        ('II. fiş', ['Oyun adıyla sanıyla Türk', 'kültürüne özgüdür.'], YES, YES_A),
-        ('III. fiş', ['Yazıtın 13. ve 14. satırları', 'birliğin gücünü anlatır.'], TUR, TUR_A),
-        ('IV. fiş', ['Dilimiz yabancı sözlere karşı', 'ayakta durmaya çalışır.'], MOR, MOR_A),
+        ('I. fiş', ['Karagöz doğru dürüst', 'bir işte çalışmaz.'], MAVI, MAVI_A),
+        ('II. fiş', ['Oyun adıyla sanıyla', 'Türk kültürüne özgüdür.'], YES, YES_A),
+        ('III. fiş', ['Yazıtın 13. ve 14. satırı', 'birliği anlatır.'], TUR, TUR_A),
+        ('IV. fiş', ['Dilimiz yabancı sözlere', 'karşı direnir.'], MOR, MOR_A),
     ]
     ic = ''
     for i, (bas, satirlar, renk, zemin) in enumerate(fisler):
         x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 48
         ic += kutu(x, y, 172, 42, zemin, renk, 7, 1.3)
         ic += f'<rect x="{x + 6}" y="{y + 6}" width="38" height="16" rx="4" fill="{renk}"/>' + yazi(x + 25, y + 18, bas, 10, '#fff')
-        ic += duz(x + 50, y + 17, satirlar, 10.5, LAC, 'start', 14)
+        ic += duz(x + 48, y + 17, satirlar, 10, LAC, 'start', 14)
     return svg(360, 100, ic, 'Dört bilgi fişi. I. fiş: Karagöz doğru dürüst bir işte çalışmaz. II. fiş: Oyun adıyla sanıyla Türk kültürüne özgüdür. III. fiş: Yazıtın 13. ve 14. satırları birliğin gücünü anlatır. IV. fiş: Dilimiz yabancı sözlere karşı ayakta durmaya çalışır.', 22)
 
 
 def sozcuk_turetme():
     """Yabancı 'faks' yerine Türkçe 'belge + geçer -> belgegeçer' türetme şeması."""
     ic = kutu(4, 4, 352, 76, KUM, GRI, 8, 1.2)
-    ic += kutu(12, 16, 86, 52, KIR_A, KIR, 6, 1.3)
-    ic += yazi(55, 36, 'faks', 13, KIR) + yazi(55, 54, '(yabancı sözcük)', 9.5, SOLUK)
-    ic += f'<line x1="104" y1="42" x2="128" y2="42" stroke="{SOLUK}" stroke-width="2"/><path d="M124 37 l7 5 l-7 5 z" fill="{SOLUK}"/>'
-    ic += kutu(134, 16, 104, 52, MAVI_A, MAVI, 6, 1.3)
-    ic += yazi(186, 36, 'belge + geçer', 12, MAVI) + yazi(186, 54, '(tanıdık kökler)', 9.5, SOLUK)
-    ic += f'<line x1="244" y1="42" x2="268" y2="42" stroke="{YES}" stroke-width="2"/><path d="M264 37 l7 5 l-7 5 z" fill="{YES}"/>'
-    ic += kutu(274, 16, 74, 52, YES_A, YES, 6, 1.4)
-    ic += yazi(311, 36, 'belgegeçer', 11.5, YES) + yazi(311, 54, '(Türkçe karşılık)', 9, SOLUK)
+    ic += kutu(12, 16, 80, 52, KIR_A, KIR, 6, 1.3)
+    ic += yazi(52, 36, 'faks', 13, KIR) + yazi(52, 54, '(yabancı sözcük)', 9.5, SOLUK)
+    ic += f'<line x1="98" y1="42" x2="120" y2="42" stroke="{SOLUK}" stroke-width="2"/><path d="M116 37 l7 5 l-7 5 z" fill="{SOLUK}"/>'
+    ic += kutu(126, 16, 102, 52, MAVI_A, MAVI, 6, 1.3)
+    ic += yazi(177, 36, 'belge + geçer', 12, MAVI) + yazi(177, 54, '(tanıdık kökler)', 9.5, SOLUK)
+    ic += f'<line x1="234" y1="42" x2="256" y2="42" stroke="{YES}" stroke-width="2"/><path d="M252 37 l7 5 l-7 5 z" fill="{YES}"/>'
+    ic += kutu(262, 16, 86, 52, YES_A, YES, 6, 1.4)
+    ic += yazi(305, 36, 'belgegeçer', 11.5, YES) + yazi(305, 54, '(Türkçe karşılık)', 9, SOLUK)
     return svg(360, 84, ic, 'Sözcük türetme şeması: yabancı sözcük faks yerine tanıdık kökler belge artı geçer birleştirilerek Türkçe karşılık belgegeçer türetilir.', 19)
 
 
