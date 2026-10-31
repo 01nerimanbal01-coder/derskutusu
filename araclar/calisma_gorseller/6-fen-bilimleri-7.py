@@ -70,10 +70,12 @@ def hareket_veri_kartlari():
     ic = ''
     for i, (bas, veri, renk, arka) in enumerate(kartlar):
         x = 8 + i * 148
+        s1, s2 = [p.strip().replace('/', '÷') for p in veri.split('·')]
         ic += kutu(x, 8, 138, 76, arka, renk, 8, 1.5)
         ic += kutu(x, 8, 138, 24, renk, renk, 8, 1)
         ic += yazi(x + 69, 24, bas, 10.6, '#fff')
-        ic += yazi(x + 69, 58, veri.replace('/', '÷'), 10.2, LAC, ince=True)
+        ic += yazi(x + 69, 49, s1, 10.3, LAC, ince=True)
+        ic += yazi(x + 69, 69, s2, 10.3, LAC, ince=True)
     return svg(600, 92, ic, 'K, L, M ve N araçlarının yol, zaman ve sürat verilerini içeren dört kart.', 22)
 
 
