@@ -163,11 +163,11 @@ def nisa135_adalet_karti():
     ic = f'<rect x="6" y="6" width="588" height="94" rx="10" fill="#fbf7ee" stroke="{ALTIN}" stroke-width="1.8"/>'
     ic += f'<rect x="6" y="6" width="10" height="94" rx="4" fill="{ALTIN}"/>'
     ic += yazi(26, 26, 'Nisa suresi 135. ayet mesajı:', 11.8, KAHVE, 'start')
-    ic += yazi(26, 48, '“Ey iman edenler! Kendinizin, anne babanızın ve yakınlarınızın aleyhine bile olsa adaleti titizlikle koruyun.”', 11.2, LAC, 'start', ince=True)
-    ic += f'<rect x="26" y="62" width="260" height="26" rx="6" fill="{YES_A}" stroke="{YES}" stroke-width="1.4"/>'
-    ic += yazi(156, 79, 'Adalet → Güven, barış ve dayanışma', 11, YESIL_K)
-    ic += f'<rect x="310" y="62" width="268" height="26" rx="6" fill="{TUR_A}" stroke="{KIR}" stroke-width="1.4"/>'
-    ic += yazi(444, 79, 'Ayrıcalık / Haksızlık → Güvensizlik ve kargaşa', 11, KIR)
+    ic += yazi(26, 48, '“Ey iman edenler! Kendinizin, anne babanızın ve yakınlarınızın aleyhine bile olsa adaleti titizlikle koruyun.”', 10.6, LAC, 'start', ince=True)
+    ic += f'<rect x="26" y="62" width="266" height="26" rx="6" fill="{YES_A}" stroke="{YES}" stroke-width="1.4"/>'
+    ic += yazi(159, 79, 'Adalet → Güven, barış ve dayanışma', 10.6, YESIL_K)
+    ic += f'<rect x="308" y="62" width="272" height="26" rx="6" fill="{TUR_A}" stroke="{KIR}" stroke-width="1.4"/>'
+    ic += yazi(444, 79, 'Haksızlık → Güvensizlik ve kargaşa', 10.6, KIR)
     return svg(600, 106, ic, 'Nisa suresi 135. ayet mesajı: adaletin toplumsal güvene etkisi ve haksızlığın sonuçları.', 21)
 
 
