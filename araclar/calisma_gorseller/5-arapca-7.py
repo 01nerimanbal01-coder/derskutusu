@@ -51,8 +51,8 @@ def isaret_ismi_kartlari():
         x = 6 + (i % 2) * 176
         y = 6 + (i // 2) * 52
         ic += f'<rect x="{x}" y="{y}" width="172" height="46" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += tr_yazi(x + 10, y + 28, bas, renk, 'start', kalin=True)
-        ic += ar_yazi(x + 124, y + 31, metin, LAC)
+        ic += tr_yazi(x + 8, y + 18, bas, renk, 'start', kalin=True)
+        ic += ar_yazi(x + 96, y + 40, metin, LAC)
     return svg(360, 110, ic, 'Hâzâ ve Hâzihî işaret isimleriyle dört tanıtım kartı.', 18)
 
 
@@ -98,8 +98,8 @@ def ilk_onbir_harf_vagonlari():
         x = 6 + (i % 2) * 176
         y = 6 + (i // 2) * 52
         ic += f'<rect x="{x}" y="{y}" width="172" height="46" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += tr_yazi(x + 10, y + 28, bas, renk, 'start', kalin=True)
-        ic += ar_yazi(x + 116, y + 31, dizi, LAC)
+        ic += tr_yazi(x + 8, y + 18, bas, renk, 'start', kalin=True)
+        ic += ar_yazi(x + 96, y + 40, dizi, LAC)
     return svg(360, 110, ic, 'Elif’ten Ze’ye dört kardeş harf grubu kartı.', 18)
 
 
