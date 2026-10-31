@@ -69,7 +69,7 @@ def dusunce_yollari_kartlari_svg():
         x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 42
         ic += kutu(x, y, 172, 36, z, r, 7, 1.3)
         ic += yazi(x + 10, y + 14, bas, 10.5, r, 'start')
-        ic += yazi(x + 10, y + 28, m, 9.5, LAC, 'start', True)
+        ic += yazi(x + 10, y + 28, m, 9.0, LAC, 'start', True)
     return svg(360, 88, ic, 'Dört cümle kartı: I. kart benzetme, II. kart karşılaştırma, III. kart Heraklit sözü tanık gösterme, IV. kart örneklendirme.', 18)
 
 
