@@ -45,7 +45,7 @@ def kum_saati_sema():
     ic += yazi(483, 74, 've sonunda dönüp', 11.5, LAC, ince=True)
     ic += yazi(483, 94, 'huzurumuza geleceksiniz.”', 11.5, LAC, ince=True)
     ic += yazi(483, 118, '(Tohum, ağaç, balina, yıldızlar)', 10.5, KAHVE, ince=True)
-    return svg(600, 140, ic, 'Kum saati benzetmesi: K kumların tamamı (doğumdan ölüme yaşanan süre), L son kum tanesinin düştüğü an (yaşam süresinin bittiği an) ve Ankebut suresi 57. ayet.', 25)
+    return svg(600, 140, ic, 'Kum saati benzetmesi: K kumların tamamı (doğumdan ölüme yaşanan süre), L son kum tanesinin düştüğü an (yaşam süresinin bittiği an) ve Ankebut suresi 57. ayet.', 16)
 
 
 def rizik_panosu():
@@ -66,7 +66,7 @@ def rizik_panosu():
     ic += yazi(330, 96, 'Uygun Olmayan:', 11, KIR, 'start')
     ic += yazi(424, 96, 'Hırsızlık, şans oyunları,', 11, LAC, 'start', ince=True)
     ic += yazi(330, 112, 'haksız kazanç, tembellik ve dilenmek', 10.5, KIR, 'start', ince=True)
-    return svg(600, 134, ic, 'Rızık panosu: solda doğada rızık için çaba örnekleri, sağda İslam’da helal kazanç ve uygun olmayan yollar.', 25)
+    return svg(600, 134, ic, 'Rızık panosu: solda doğada rızık için çaba örnekleri, sağda İslam’da helal kazanç ve uygun olmayan yollar.', 16)
 
 
 def ayet_hadis_kartlari():
@@ -85,7 +85,7 @@ def ayet_hadis_kartlari():
         ic += yazi(x + 18, y + 18, bas, 11.5, renk, 'start')
         ic += yazi(x + 18, y + 36, s1, 11, LAC, 'start', ince=True)
         ic += yazi(x + 18, y + 51, s2, 11, LAC, 'start', ince=True)
-    return svg(600, 136, ic, 'Dört ayet ve hadis kartı: 1. Necm 39-40, 2. Nisa 71, 3. Bakara 168, 4. Ebu Davud Tıb 1 hadisi.', 25)
+    return svg(600, 136, ic, 'Dört ayet ve hadis kartı: 1. Necm 39-40, 2. Nisa 71, 3. Bakara 168, 4. Ebu Davud Tıb 1 hadisi.', 16)
 
 
 def hicret_tevekkul_sema():
@@ -104,7 +104,7 @@ def hicret_tevekkul_sema():
     ic += yazi(456, 56, 'Endişelenen Hz. Ebu Bekir’e:', 11.5, LAC, ince=True)
     ic += yazi(456, 74, '“Tasalanma! Allah bizimle', 11.5, YESIL_K)
     ic += yazi(456, 92, 'beraberdir.” buyrulması', 11.5, YESIL_K)
-    return svg(600, 120, ic, 'Hicret yolculuğunda tevekkülün iki aşaması: 1. Sevr Mağarası tedbiri, 2. Tevbe suresi 40. ayetteki Allah’a güven.', 23)
+    return svg(600, 120, ic, 'Hicret yolculuğunda tevekkülün iki aşaması: 1. Sevr Mağarası tedbiri, 2. Tevbe suresi 40. ayetteki Allah’a güven.', 16)
 
 
 def veba_olayi_zinciri():
@@ -124,7 +124,7 @@ def veba_olayi_zinciri():
         if i < 4:
             ic += f'<line x1="{x + 104}" y1="48" x2="{x + 117}" y2="48" stroke="{LAC}" stroke-width="2"/>'
             ic += f'<path d="M{x + 113} 43 l5 5 l-5 5" fill="none" stroke="{LAC}" stroke-width="1.8"/>'
-    return svg(600, 96, ic, 'Veba olayının 5 halkalı akış şeması: Serğ Köyü haberi, istişare, kaderden kadere sözü, iki yamaç örneği, hadis ve Medine’ye dönüş.', 22)
+    return svg(600, 96, ic, 'Veba olayının 5 halkalı akış şeması: Serğ Köyü haberi, istişare, kaderden kadere sözü, iki yamaç örneği, hadis ve Medine’ye dönüş.', 16)
 
 
 def basari_tutum_kartlari():
@@ -142,7 +142,7 @@ def basari_tutum_kartlari():
         ic += yazi(x + 14, y + 20, isim + ':', 11.5, renk, 'start')
         ic += yazi(x + 14, y + 36, metin[:46], 10.8, LAC, 'start', ince=True)
         ic += yazi(x + 14, y + 49, metin[46:], 10.8, LAC, 'start', ince=True)
-    return svg(600, 130, ic, 'Dört öğrencinin (Kaan, Mert, Selin, Duru) başarı ve kader konusundaki tutum kartları.', 24)
+    return svg(600, 130, ic, 'Dört öğrencinin (Kaan, Mert, Selin, Duru) başarı ve kader konusundaki tutum kartları.', 16)
 
 
 def bes_nimet_sema():
@@ -160,7 +160,7 @@ def bes_nimet_sema():
         ic += yazi(x + 55, 48, ust, 10.2, LAC, ince=True)
         ic += f'<line x1="{x + 14}" y1="58" x2="{x + 96}" y2="58" stroke="{renk}" stroke-width="1.2" stroke-dasharray="3 2"/>'
         ic += yazi(x + 55, 84, alt, 11.5, renk)
-    return svg(600, 114, ic, 'Beş şeyin kıymetini bilme hadisi şeması: Gençlik, Sağlık ve 1, 2, 3 numaralı boşluklar.', 23)
+    return svg(600, 114, ic, 'Beş şeyin kıymetini bilme hadisi şeması: Gençlik, Sağlık ve 1, 2, 3 numaralı boşluklar.', 16)
 
 
 def iki_yamac_sema():
@@ -178,7 +178,7 @@ def iki_yamac_sema():
     ic += yazi(452, 54, '2. Seçenek: Kıraç Yamaç', 11.5, TUR)
     ic += yazi(452, 72, 'Kurak ve verimsiz alan', 11, LAC, ince=True)
     ic += yazi(452, 90, '→ Allah’ın kaderi içindedir', 11, TUR)
-    return svg(600, 120, ic, 'Hz. Ömer’in verimli yamaç ve kıraç yamaç benzetmesi: her iki seçim de Allah’ın kaderi içindedir.', 23)
+    return svg(600, 120, ic, 'Hz. Ömer’in verimli yamaç ve kıraç yamaç benzetmesi: her iki seçim de Allah’ın kaderi içindedir.', 16)
 
 
 def saglik_kalkan_kart():
@@ -195,7 +195,7 @@ def saglik_kalkan_kart():
     ic += yazi(324, 65, '• İlaçları ve iyileşme yollarını takip etmek', 10.8, LAC, 'start', ince=True)
     ic += yazi(324, 83, '• Şifayı Allah’tan isteyip dua etmek', 10.8, LAC, 'start', ince=True)
     ic += yazi(451, 102, 'Hadis: “Her hastalığın şifası yaratılmıştır.”', 10.8, YESIL_K)
-    return svg(600, 118, ic, 'Sağlığı koruma önlemleri ve hastalanınca yapılacak görevler kartı.', 23)
+    return svg(600, 118, ic, 'Sağlığı koruma önlemleri ve hastalanınca yapılacak görevler kartı.', 16)
 
 
 def uygula(o):
