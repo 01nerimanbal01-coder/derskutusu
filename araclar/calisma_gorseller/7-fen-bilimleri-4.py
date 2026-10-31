@@ -39,7 +39,7 @@ def yildiz_boyutlari():
             sx = cx + r + 12
             ic += f'<line x1="{sx}" y1="{cy}" x2="{nx}" y2="{cy}" stroke="{LAC}" stroke-width="2"/>'
             ic += f'<path d="M{nx - 5} {cy - 4} l5 4 l-5 4" fill="none" stroke="{LAC}" stroke-width="2"/>'
-    return svg(600, 134, ic, 'Küçükten büyüğe sıralanmış dört yıldız modeli: P, R, S ve T.', 25)
+    return svg(600, 134, ic, 'Küçükten büyüğe sıralanmış dört yıldız modeli: P, R, S ve T.', 16)
 
 
 def renk_sicaklik_kartlari():
@@ -76,7 +76,7 @@ def gok_bilimi_kartlari():
         ic += yazi(x + 18, y + 18, bas, 11.5, renk, 'start')
         ic += yazi(x + 18, y + 36, s1, 12, LAC, 'start')
         ic += yazi(x + 18, y + 51, s2, 11, LAC, 'start', ince=True)
-    return svg(600, 136, ic, 'Dört gök bilimi kartı: 1. Aldebaran/Rigel/Antares, 2. Avcı/Başak/Ejderha/Kraliçe, 3. Samanyolu/Andromeda, 4. Tarantula.', 17)
+    return svg(600, 136, ic, 'Dört gök bilimi kartı: 1. Aldebaran/Rigel/Antares, 2. Avcı/Başak/Ejderha/Kraliçe, 3. Samanyolu/Andromeda, 4. Tarantula.', 15)
 
 
 def buyukayi_haritasi():
@@ -157,7 +157,7 @@ def galaksi_olcek():
     ic += f'<path d="M{cx2 - 64} {cy - 12} Q{cx2} {cy - 34} {cx2 + 64} {cy + 12} M{cx2 - 64} {cy + 12} Q{cx2} {cy + 34} {cx2 + 64} {cy - 12}" fill="none" stroke="{MOR}" stroke-width="2.4"/>'
     ic += yazi(cx2, 108, 'Andromeda Galaksisi (Sarmal)', 12, MOR)
     ic += yazi(cx2, 123, 'Çap: Yaklaşık 2 birim (En yakın galaksi)', 11.5, LAC, ince=True)
-    return svg(600, 138, ic, 'Samanyolu galaksisi (çap 1 birim, Avcı kolunda Güneş sistemi) ve Andromeda galaksisi (çap yaklaşık 2 birim).', 17)
+    return svg(600, 138, ic, 'Samanyolu galaksisi (çap 1 birim, Avcı kolunda Güneş sistemi) ve Andromeda galaksisi (çap yaklaşık 2 birim).', 15)
 
 
 def isik_yili_olcek():
