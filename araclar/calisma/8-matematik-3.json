@@ -1,0 +1,307 @@
+{
+  "sinif": 8,
+  "ders": "matematik",
+  "hafta": 3,
+  "tarih": "28 Eylül-2 Ekim 2026",
+  "yayin_tarihi": "2026-10-12",
+  "konu": "Üslü İfadeler: Tam Sayı Kuvvetleri ve Temel Kurallar",
+  "ciktilar": [
+    "M.8.1.2.1. Tam sayıların, tam sayı kuvvetlerini hesaplar.",
+    "M.8.1.2.2. Üslü ifadelerle ilgili temel kuralları anlar, birbirine denk ifadeler oluşturur."
+  ],
+  "hatirla": [
+    "Sıfırdan farklı bir a tam sayısı ve n tam sayısı için {us:a|0} = 1, {us:a|−n} = {kesir:1|{us:a|n}} ve {kesir:1|{us:a|−n}} = {us:a|n} olur; negatif tabanda parantez işaretin kuvvete katılıp katılmadığını belirler.",
+    "Aynı tabana sahip iki ifade çarpıldığında kuvvetlerin toplamı, bölündüğünde ise kuvvetlerin farkı ortak tabanın yeni üssü olarak yazılır.",
+    "Kuvvetleri birbirine eşit olan ifadelerde çarpma yapılırken tabanların çarpımı, bölme yapılırken tabanların bölümü ortak kuvvetin altına yazılır.",
+    "Üslü bir ifadenin kuvveti alınırken üsler çarpılır ({us:({us:a|b})|c} = {us:a|b · c}); bu kuralla aynı değeri veren denk üslü ifadeler oluşturulur."
+  ],
+  "sorular": [
+    {
+      "tur": "tablo",
+      "duzey": "hatirla",
+      "soru": "Görseldeki kuvvet örüntüsünden yararlanarak tablodaki üslü ifadelerin pozitif üslü yazılışlarını ve değerlerini yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Üslü ifade",
+        "Pozitif üslü yazılışı",
+        "Değeri"
+      ],
+      "satirlar": [
+        [
+          "{us:3|−2}",
+          "{kesir:1|{us:3|2}}",
+          "{kesir:1|9}"
+        ],
+        [
+          "{us:2|−5}",
+          {
+            "b": "{kesir:1|{us:2|5}}"
+          },
+          {
+            "b": "{kesir:1|32}"
+          }
+        ],
+        [
+          "{kesir:1|{us:4|−3}}",
+          {
+            "b": "{us:4|3}"
+          },
+          {
+            "b": "64"
+          }
+        ],
+        [
+          "{us:(−3)|−3}",
+          {
+            "b": "{kesir:1|{us:(−3)|3}}"
+          },
+          {
+            "b": "−{kesir:1|27}"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki üslü ifade işlemlerini sağ sütundaki eşdeğer sonuçlarıyla eşleştiriniz. Harfleri kutulara yazınız.",
+      "ciftler": [
+        [
+          "{us:3|8} · {us:3|−5}",
+          "{us:3|3}"
+        ],
+        [
+          "{kesir:{us:3|4}|{us:3|−2}}",
+          "{us:3|6}"
+        ],
+        [
+          "{us:({us:3|−2})|−4}",
+          "{us:3|8}"
+        ],
+        [
+          "{us:3|5} · {us:2|5}",
+          "{us:6|5}"
+        ],
+        [
+          "{kesir:{us:18|4}|{us:6|4}}",
+          "{us:3|4}"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Numaralanmış dört kartta negatif tabanlı veya negatif üslü ifadelerin değerleri hesaplanmıştır. Hangi karttaki eşitlik {koyu:yanlıştır?}",
+      "secenekler": [
+        "I. kart: {us:(−4)|2} = 16",
+        "II. kart: −{us:4|2} = 16",
+        "III. kart: {us:(−2)|−3} = −{kesir:1|8}",
+        "IV. kart: {us:({kesir:2|3})|−2} = {kesir:9|4}"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Doğru olan ifadelerin yanındaki D kutusunu, yanlış olanların yanındaki Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Sıfırdan farklı her tam sayının sıfırıncı kuvveti 1’e eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir sayının üssünün negatif olması, o ifadenin sonucunu her zaman negatif yapar.",
+          "dogru": false
+        },
+        {
+          "metin": "Tabanları aynı iki üslü ifade çarpılırken üsler toplanır ve ortak tabana üs olarak yazılır.",
+          "dogru": true
+        },
+        {
+          "metin": "{kesir:{us:6|5}|{us:6|−2}} bölme işleminin sonucu {us:6|3} ifadesine eşittir.",
+          "dogru": false
+        },
+        {
+          "metin": "{us:2|15} ifadesi, üssün üssü kuralıyla {us:8|5} biçiminde de yazılabilir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Boşlukları kutudaki uygun sözcüklerle tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Negatif üste tabanın çarpmaya göre ___ alınır.",
+          "cevap": "tersi"
+        },
+        {
+          "metin": "Tabanlar aynıysa çarpma işleminde üsler ___.",
+          "cevap": "toplanır"
+        },
+        {
+          "metin": "Tabanlar aynıysa bölme işleminde üsler ___.",
+          "cevap": "çıkarılır"
+        },
+        {
+          "metin": "Üslü bir ifadenin tekrar kuvveti alınırken üsler ___.",
+          "cevap": "çarpılır"
+        },
+        {
+          "metin": "Aynı değeri gösteren farklı üslü yazılışlara ___ denir.",
+          "cevap": "denk"
+        }
+      ],
+      "fazla": [
+        "bölünür"
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Görseldeki üç terimli işlem kartında verilen A, B ve C kutularının değerlerini bularak A + B − C işleminin sonucunu hesaplayınız.",
+      "cevap": "A = 9, B = {us:2|4} = 16 ve C = 1 olur; A + B − C = 9 + 16 − 1 = 24 bulunur.",
+      "satir": 3
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görseldeki işlem ağacında üstteki kutularda yer alan üslü ifadeler okların gösterdiği kurallara göre işleme sokulacaktır. Buna göre en alttaki M kutusuna yazılacak üslü ifade aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "{us:2|6}",
+        "{us:2|10}",
+        "{us:2|14}",
+        "{us:2|18}"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Görseldeki denk ifade halkalarını inceleyerek {us:2|18} ifadesine eşit olan farklı tabanlı yazılışları tabloda tamamlayınız. İlk satır örnektir.",
+      "basliklar": [
+        "İstenen taban",
+        "Üssün üssü yazılışı",
+        "Denk üslü ifade"
+      ],
+      "satirlar": [
+        [
+          "4 tabanında (4 = {us:2|2})",
+          "{us:({us:2|2})|9}",
+          "{us:4|9}"
+        ],
+        [
+          "8 tabanında (8 = {us:2|3})",
+          {
+            "b": "{us:({us:2|3})|6}"
+          },
+          {
+            "b": "{us:8|6}"
+          }
+        ],
+        [
+          "64 tabanında (64 = {us:2|6})",
+          {
+            "b": "{us:({us:2|6})|3}"
+          },
+          {
+            "b": "{us:64|3}"
+          }
+        ],
+        [
+          "512 tabanında (512 = {us:2|9})",
+          {
+            "b": "{us:({us:2|9})|2}"
+          },
+          {
+            "b": "{us:512|2}"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "soru": "Görseldeki beş sayı kartında verilen üslü ifadeleri değerlerine göre en küçükten (1) en büyüğe (5) doğru sıralayınız.",
+      "ogeler": [
+        "−{us:2|3}",
+        "{us:(−2)|−1}",
+        "{us:2|−2}",
+        "{us:9|0}",
+        "{kesir:1|{us:2|−3}}"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görselde verilen yürüyüş parkurunun toplam uzunluğu {us:3|7} metredir. Parkurun başına ve sonuna da birer aydınlatma direği dikilmek şartıyla eşit aralıklarla toplam 82 direk dikildiğine göre ardışık iki direk arasındaki uzaklık kaç metredir?",
+      "secenekler": [
+        "9",
+        "27",
+        "81",
+        "243"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "ust",
+      "soru": "Görseldeki dikdörtgen levhanın kısa kenar uzunluğu {us:4|5} cm, uzun kenar uzunluğu {us:8|4} cm’dir. Levhanın alanını ve bir kenarı {us:2|7} cm olan eş kare etiketlerden bu levhaya üst üste gelmeden kaç adet sığacağını bulunuz.",
+      "cevap": "Alan {us:2|10} · {us:2|12} = {us:2|22} {us:cm|2}, etiket alanı {us:2|14} {us:cm|2} olur; {us:2|22} ÷ {us:2|14} = {us:2|8} = 256 etiket sığar.",
+      "satir": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına uyan matematik kavramlarını kutulara yazınız. Turuncu kutulardaki harfler üslü ifadede tekrarlı çarpılan sayının adını oluşturur.",
+      "satirlar": [
+        {
+          "ipucu": "Negatif üslü ifadeyi pozitife çevirirken tabanın çarpmaya göre alınan durumu",
+          "cevap": "TERSİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yalnız 1’e ve kendisine bölünebilen, 1’den büyük doğal sayı",
+          "cevap": "ASAL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Tabanları aynı iki üslü ifadede üslerin çıkarıldığı işlem",
+          "cevap": "BÖLME",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Eşit aralıklı direk sorularında direk sayısının 1 eksiği olan bölüm",
+          "cevap": "ARALIK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sıfırdan küçük olan sayıların taşıdığı işaret",
+          "cevap": "NEGATİF",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "TABAN"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "{us:25|4} · {us:8|5} çarpımının sonucu kaç basamaklı bir doğal sayıdır?",
+      "secenekler": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Görseldeki kartta Tuna, {us:(−{us:2|4})|3} ile {us:(−{us:2|3})|4} ifadelerinin ikisinin de pozitif ve {us:2|12}’ye eşit olduğunu söylemiştir. Tuna’nın hangi ifadede işaret hatası yaptığını parantezin dışındaki kuvvete göre açıklayınız.",
+      "cevap": "1. ifadede dış kuvvet 3 tek olduğundan sonuç −{us:2|12} olur; 2. ifadede dış kuvvet 4 çift olduğundan sonuç +{us:2|12}’dir.",
+      "satir": 3
+    }
+  ]
+}
