@@ -129,7 +129,7 @@ def dikdortgen_levha_karti():
     ic += kutu(22, 16, 134, 54, YES_A, YES, 6, 1.5)
     ic += yazi(89, 46, 'Alan = a · b = ?', 11.5, YES)
     ic += yazi(89, 82, 'a cm', 11.5, LAC)
-    ic += yazi(170, 46, 'b cm', 11.5, LAC)
+    ic += yazi(175, 46, 'b cm', 11.5, LAC)
     ic += kutu(196, 14, 150, 62, '#fff', MAVI, 7, 1.3)
     ic += yazi(271, 32, 'Verilen Bilgiler', 11, MAVI)
     ic += yazi(271, 50, 'a ve b aralarında asal', 10.5, LAC, 'middle', True)
@@ -165,7 +165,7 @@ def tartisma_en_az_karti():
     ic += kutu(184, 4, 172, 76, YES_A, YES, 8, 1.3)
     ic += yazi(270, 20, 'Eşit Gruplama Örneği', 11, YES)
     ic += yazi(270, 42, 'Paket sayısının en az olması', 10.5, LAC, 'middle', True)
-    ic += yazi(270, 58, 'için paket boyu en büyük (EBOB)!', 10.5, YES)
+    ic += yazi(270, 58, 'için paket boyu EBOB alınır!', 10.5, YES)
     return svg(360, 84, ic, 'Tartışma kartı: En az deniyorsa her zaman EKOK alınır iddiası ile paket sayısının en az olması için EBOB kullanılması.', 22)
 
 
