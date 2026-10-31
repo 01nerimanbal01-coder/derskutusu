@@ -1,0 +1,279 @@
+{
+  "sinif": 6,
+  "ders": "matematik",
+  "hafta": 3,
+  "tarih": "28 Eylül-2 Ekim 2026",
+  "konu": "Asal Sayılar ve Asal Çarpanlar, Ortak Kat ve Ortak Bölen",
+  "ciktilar": [
+    "MAT.6.1.3. Bir doğal sayının asal olma durumunu ve asal çarpanlarını çözümleyebilme",
+    "MAT.6.1.4. Günlük hayat problemleri ya da matematiksel durumlar üzerinden ortak kat ve ortak böleni yorumlayabilme"
+  ],
+  "hatirla": [
+    "Tam iki farklı çarpanı (1 ve kendisi) olan doğal sayılara asal sayı denir; 1 asal değildir, 2 en küçük ve çift olan tek asal sayıdır.",
+    "Yüzlük tabloda Eratosten kalburu uygulanırken 2, 3, 5 ve 7’nin katları çizilir; 1 dışında kalan 25 sayı asaldır.",
+    "Bir doğal sayının asal çarpanları çarpan ağacı veya asal çarpan algoritmasıyla bulunur; sayı asal çarpanlarının çarpımı biçiminde yazılır.",
+    "İki sayının kat listelerinde ortak olanlar ortak kat, bölenlerinde ortak olanlar ortak bölendir; ortak bölenleri yalnız 1 olan iki sayı aralarında asaldır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "İfadeleri asal sayılar ve çarpanlar kavramlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "asal sayı",
+          "1 ve kendisinden başka çarpanı olmayan doğal sayı"
+        ],
+        [
+          "Eratosten kalburu",
+          "Yüzlük tabloda katları eleyerek asal sayıları bulma yöntemi"
+        ],
+        [
+          "asal çarpan",
+          "Bir doğal sayının kalansız bölenleri arasındaki asal sayı"
+        ],
+        [
+          "ortak kat",
+          "İki doğal sayının kat listelerinde birlikte yer alan sayılar"
+        ],
+        [
+          "aralarında asal",
+          "Ortak bölenleri yalnız 1 olan iki doğal sayı ilişkisi"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görselde K sayısının çarpan ağacı ile 84 sayısının asal çarpan algoritması verilmiştir. Buna göre K, L ve M harflerinin yerine gelmesi gereken sayılar aşağıdakilerin hangisinde doğru verilmiştir?",
+      "secenekler": [
+        "K = 60, L = 30, M = 3",
+        "K = 90, L = 45, M = 3",
+        "K = 90, L = 30, M = 7",
+        "K = 120, L = 45, M = 2"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Doğru olan ifadelerin yanındaki D kutusunu, yanlış olanların yanındaki Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Çift olan tek asal sayı 2’dir; 2’den büyük çift sayıların ikiden fazla çarpanı vardır.",
+          "dogru": true
+        },
+        {
+          "metin": "Alanı 11 birimkare olan zemin birimkarelerle yalnız 1 × 11 biçiminde tek dikdörtgenle modellenir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir doğal sayının asal çarpanlarının çarpımı yazılışında her asal sayı en çok bir kez yazılır.",
+          "dogru": false
+        },
+        {
+          "metin": "İki doğal sayının ortak katları sınırsız devam ettiği için ortak katların en büyüğü bulunamaz.",
+          "dogru": true
+        },
+        {
+          "metin": "İki doğal sayının aralarında asal olması için iki sayının da asal sayı olması gerekir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Boşlukları kutudaki uygun sözcüklerle doldurunuz.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Tek çarpanı kendisi olan 1 sayısı ___ sayı kabul edilmez.",
+          "cevap": "asal"
+        },
+        {
+          "metin": "Bir sayıyı kalansız bölen her doğal sayı o sayının bir ___ olur.",
+          "cevap": "çarpanı"
+        },
+        {
+          "metin": "İki sayıyı da kalansız bölen sayılara bu sayıların ortak ___ denir.",
+          "cevap": "böleni"
+        },
+        {
+          "metin": "Ortak bölenleri yalnız 1 olan 8 ile 15 sayıları ___ asaldır.",
+          "cevap": "aralarında"
+        },
+        {
+          "metin": "Algoritmada bölme işlemi bölüm ___ olana kadar sürdürülür.",
+          "cevap": "bir"
+        }
+      ],
+      "fazla": [
+        "katı"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görseldeki dört kartta verilen birimkare sayılarıyla oluşturulabilecek dikdörtgen zeminler ve sayıların asal olma durumu incelenmiştir. Hangi karttaki açıklama {koyu:yanlıştır}?",
+      "secenekler": [
+        "1. kart — 5 birimkare yalnız 1 × 5 olarak dizildiği için 5 asal sayıdır.",
+        "2. kart — 12 birimkare üç farklı dikdörtgen oluşturduğu için 12 asal değildir.",
+        "3. kart — 15 birimkareyle 3 × 5 dikdörtgeni de oluşturulabildiği için 15 asal değildir.",
+        "4. kart — 13 birimkarenin çarpanları 1 ve 13 olduğundan tek dikdörtgen oluşur."
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Görseldeki kartlarda verilen sayı çiftlerinin tüm ortak bölenlerini ve aralarında asal olma durumunu yazarak tabloyu tamamlayınız.",
+      "basliklar": [
+        "Sayı Çifti Kartı",
+        "Ortak Bölenleri",
+        "Aralarında Asal Olma Durumu"
+      ],
+      "satirlar": [
+        [
+          "1. Kart (12 ve 18)",
+          "1, 2, 3 ve 6",
+          "Aralarında asal değildir"
+        ],
+        [
+          "2. Kart (8 ve 25)",
+          {
+            "b": "Yalnız 1"
+          },
+          {
+            "b": "Aralarında asaldır"
+          }
+        ],
+        [
+          "3. Kart (16 ve 24)",
+          {
+            "b": "1, 2, 4 ve 8"
+          },
+          {
+            "b": "Aralarında asal değildir"
+          }
+        ],
+        [
+          "4. Kart (9 ve 14)",
+          {
+            "b": "Yalnız 1"
+          },
+          {
+            "b": "Aralarında asaldır"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Görseldeki sayı doğrusunda 0’dan başlayarak üçer ve beşer birimlik sıçramalar yapılmıştır. İki sıçramanın 30’a kadar aynı anda indiği sayıları ve bu sayıların neyi ifade ettiğini yazınız.",
+      "cevap": "15 ve 30 noktalarında buluşurlar; bu sayılar 3 ile 5’in ilk iki ortak katıdır.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "soru": "Görselde özetlenen Eratosten kalburuyla yüzlük tablodaki asal sayıları bulma adımlarını uygulanış sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "ogeler": [
+        "En küçük asal sayı olan 2’yi işaretleyip 2’nin diğer katlarını çizmek",
+        "Sıradaki asal sayı olan 3’ü işaretleyip 3’ün kalan katlarını çizmek",
+        "Aynı eleme işlemini sırasıyla 5 ve 7 asal sayılarının katlarına uygulamak",
+        "Çizilmeden kalan sayılardan 1’i ayırarak 25 asal sayıyı belirlemek"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Görseldeki 80 metrelik yürüyüş yolunun başında aydınlatma direği ile bank karşılıklı konulmuştur. Direkler 6 metrede bir, banklar 8 metrede bir dizildiğine göre aşağıdakilerden hangisine {koyu:ulaşılamaz}?",
+      "secenekler": [
+        "Direk ve bank başlangıçtan sonra ilk kez 24. metrede karşılıklı gelir.",
+        "48. ve 72. metrelerde de yolun iki yanında karşılıklı bulunur.",
+        "Karşılıklı geldikleri mesafeler 6 ile 8’in ortak katlarından oluşur.",
+        "Yolun 36. ve 60. metrelerinde de direk ile bank karşılıklı durur."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görseldeki 24 L ve 36 L zeytinyağı birbirine karıştırılmadan ve hiç artmayacak biçimde eşit hacimli şişelere doldurulacaktır. Bir şişenin hacmi litre cinsinden aşağıdakilerden hangisi olabilir?",
+      "secenekler": [
+        "1, 2, 3, 4, 6 veya 12 litre",
+        "1, 2, 3, 6, 8 veya 12 litre",
+        "2, 4, 6, 9, 12 veya 18 litre",
+        "6, 12, 24, 36 veya 72 litre"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "ust",
+      "soru": "Görselde Kerem’in 72 sayısı için yaptığı çarpan ağacı çalışması neden hatalıdır? Doğru çarpım yazılışını ve asal çarpanlarını belirtiniz.",
+      "cevap": "Uçtaki 4 ve 9 asal değildir; doğrusu 72 = 2 × 2 × 2 × 3 × 3 ve asal çarpanları 2 ile 3’tür.",
+      "satir": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki kavramları yazınız. Numaralı harflerle yüzlük tabloda asal sayıları bulmak için kullanılan eleme yönteminin adını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "İki sayının kat listelerinde ortak olan sayıların her biri: ortak …",
+          "cevap": "KAT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Tam iki farklı çarpanı bulunan doğal sayı türü",
+          "cevap": "ASAL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bir sayıyı kalansız bölen doğal sayıların diğer adı",
+          "cevap": "BÖLEN",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Asal çarpan algoritmasının en alt satırında ulaşılan bölüm",
+          "cevap": "BİR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Çarpan ağacında asal sayıların yer aldığı en son dallar",
+          "cevap": "UÇLAR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bir sayıyı kalansız bölen ve çarpımı o sayıyı veren sayı",
+          "cevap": "ÇARPAN",
+          "anahtar": 2
+        }
+      ],
+      "sonuc": "KALBUR"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Görseldeki iki dolap kilidinde 30 ve 45 numaraları kayıtlıdır. İki kilidi de açabilen ortak asal şifre kodlarını çarpım adımlarını göstererek bulunuz.",
+      "cevap": "30 = 2 × 3 × 5 ve 45 = 3 × 3 × 5 olur. İki kilitte de ortak bulunan asal şifre kodları 3 ve 5’tir.",
+      "satir": 3
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Asal çarpanları 2, 3 ve 7 olan iki basamaklı bir doğal sayı aşağıdakilerden hangisi olabilir?",
+      "secenekler": [
+        "28",
+        "63",
+        "84",
+        "98"
+      ],
+      "dogru": 2
+    }
+  ],
+  "yayin_tarihi": "2026-10-09"
+}
