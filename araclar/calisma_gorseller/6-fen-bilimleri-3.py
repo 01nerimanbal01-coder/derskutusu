@@ -49,18 +49,19 @@ def tutulma_duzenek_karsilastirma():
 def model_kontrol_hatalari():
     kartlar = [
         ('1. Grup (Güneş Tutulması)', 'Sıra: Fener — Ay (küçük) — Dünya (büyük)', 'Not: Model hatasız kurulmuştur.', YES, YES_A),
-        ('2. Grup (Ay Tutulması)', 'Sıra: Fener — Dünya — Ay (hizadan yukarıda)', 'Not: Hizalama düzeltilmelidir.', MAVI, MAVI_A),
+        ('2. Grup (Ay Tutulması)', 'Sıra: Fener — Dünya — Ay (hiza dışı)', 'Not: Hizalama düzeltilmelidir.', MAVI, MAVI_A),
         ('3. Grup (Ay Tutulması)', 'Sıra: Fener — Dünya (8 cm) — Ay (16 cm)', 'Not: Modelde büyüklük hatası yoktur.', KIR, '#fdeaea'),
         ('4. Grup (Güneş Tutulması)', 'Sıra: Fener — Dünya (büyük) — Ay (küçük)', 'Not: Ortadaki top yanlış seçilmiştir.', TUR, TUR_A),
     ]
     ic = ''
     for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
         x = 6 + (i % 2) * 298
-        y = 6 + (i // 2) * 58
-        ic += f'<rect x="{x}" y="{y}" width="286" height="50" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += f'<rect x="{x}" y="{y}" width="8" height="50" rx="4" fill="{renk}"/>'
-        ic += yazi(x + 16, y + 19, f'{bas}: {s1}', 10.1, LAC, 'start')
-        ic += yazi(x + 16, y + 38, s2, 10.3, renk, 'start', ince=True)
+        y = 4 + (i // 2) * 60
+        ic += f'<rect x="{x}" y="{y}" width="286" height="54" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
+        ic += f'<rect x="{x}" y="{y}" width="8" height="54" rx="4" fill="{renk}"/>'
+        ic += yazi(x + 16, y + 17, bas, 10.6, renk, 'start')
+        ic += yazi(x + 16, y + 33, s1, 10.0, LAC, 'start', ince=True)
+        ic += yazi(x + 16, y + 48, s2, 10.1, renk, 'start')
     return svg(600, 124, ic, 'Dört grubun tutulma modeli ve kontrol notları: 3. grupta Dünya topu Ay’dan küçük olduğu hâlde hatasız denmiştir.', 23)
 
 
