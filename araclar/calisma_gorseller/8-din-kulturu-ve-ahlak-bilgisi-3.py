@@ -134,19 +134,19 @@ def sorumluluk_zinciri():
 
 def kader_bahane_panosu():
     kartlar = [
-        ('Arda', 'Sınav için planlı çalıştım; eksik konularımı tamamlayıp sonucun sorumluluğunu üstlendim.', YES, YES_A),
-        ('Mert', 'Arkadaşımın defterini izinsiz alıp kaybettim; kaderim böyleymiş, benim suçum yok.', KIR, '#fdeaea'),
-        ('Zeynep', 'İyi ile kötüyü ayırt edebildiğim için yaptığım her tercihin hesabını vereceğimi biliyorum.', MAVI, MAVI_A),
-        ('Elif', 'Ödevimi zamanında yapmadım ama talihim kötü olduğu için düşük puan aldım.', TUR, TUR_A),
+        ('Arda', 'Sınav için planlı çalıştım; eksik konularımı', 'tamamlayıp sonucun sorumluluğunu üstlendim.', YES, YES_A),
+        ('Mert', 'Arkadaşımın defterini izinsiz alıp kaybettim;', 'kaderim böyleymiş, benim suçum yok.', KIR, '#fdeaea'),
+        ('Zeynep', 'İyi ile kötüyü ayırt edebildiğim için yaptığım', 'her tercihin hesabını vereceğimi biliyorum.', MAVI, MAVI_A),
+        ('Elif', 'Ödevimi zamanında yapmadım ama talihim kötü', 'olduğu için düşük puan aldım.', TUR, TUR_A),
     ]
     ic = ''
-    for i, (isim, metin, renk, arka) in enumerate(kartlar):
+    for i, (isim, s1, s2, renk, arka) in enumerate(kartlar):
         x = 6 + (i % 2) * 298
         y = 6 + (i // 2) * 60
         ic += f'<rect x="{x}" y="{y}" width="286" height="52" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
         ic += yazi(x + 14, y + 19, isim + ':', 11.5, renk, 'start')
-        ic += yazi(x + 14, y + 34, metin[:46], 10.6, LAC, 'start', ince=True)
-        ic += yazi(x + 14, y + 47, metin[46:], 10.6, LAC, 'start', ince=True)
+        ic += yazi(x + 14, y + 34, s1, 10.6, LAC, 'start', ince=True)
+        ic += yazi(x + 14, y + 47, s2, 10.6, LAC, 'start', ince=True)
     return svg(600, 128, ic, 'Dört öğrencinin (Arda, Mert, Zeynep, Elif) davranış ve kader konusundaki tutum kartları.', 18)
 
 
