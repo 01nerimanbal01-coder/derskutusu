@@ -55,17 +55,17 @@ def dort_uslu_kart_svg():
 def kare_kup_kartlar_svg():
     """Soru 2: Tablo sorusu için dört rasyonel sayı kartı."""
     kartlar = [
-        ('1. Sayı', EKSI, '2', '5', MAVI, MAVI_A),
-        ('2. Sayı', '+', '3', '4', TUR, TUR_A),
-        ('3. Sayı', f'{EKSI}1 ', '1', '2', YES, YES_A),
-        ('4. Sayı', EKSI, '1', '3', MOR, MOR_A),
+        ('1. Sayı', f'({EKSI}', '2', '5', ')', MAVI, MAVI_A),
+        ('2. Sayı', '(+', '3', '4', ')', TUR, TUR_A),
+        ('3. Sayı', f'({EKSI}1 ', '1', '2', ')', YES, YES_A),
+        ('4. Sayı', f'({EKSI}', '1', '3', ')', MOR, MOR_A),
     ]
     ic = ''
-    for i, (bas, isaret, p, q, r, z) in enumerate(kartlar):
+    for i, (bas, isaret, p, q, sag, r, z) in enumerate(kartlar):
         x = 6 + i * 88
         ic += kutu(x, 6, 82, 66, z, r, 8, 1.4)
         ic += yazi(x + 41, 22, bas, 10.5, r)
-        ic += kesir(x + 46, 46, p, q, LAC, 11.5, isaret)
+        ic += kesir(x + 46, 46, p, q, LAC, 11.5, isaret, sag)
     return svg(360, 78, ic, 'Karesi ve küpü hesaplanacak dört rasyonel sayı kartı: eksi 2 bölü 5, artı 3 bölü 4, eksi 1 tam 1 bölü 2 ve eksi 1 bölü 3.', 18)
 
 
