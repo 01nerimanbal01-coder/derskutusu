@@ -18,25 +18,25 @@ def yazi(x, y, metin, boy=11.5, renk=LAC, hiza='middle', ek='', ince=False):
 
 
 def turkiye_koordinat_sema():
-    ic = f'<rect x="6" y="6" width="588" height="96" rx="10" fill="#fbfcff" stroke="{GRI}" stroke-width="1.5"/>'
-    ic += yazi(300, 22, 'Türkiye’nin Mutlak (Matematik) Konum Koordinat Çerçevesi', 11.3, LAC)
-    ic += f'<rect x="130" y="34" width="340" height="50" rx="8" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="2"/>'
-    ic += yazi(300, 62, 'TÜRKİYE (Anadolu ve Trakya)', 11.4, MAVI)
-    ic += yazi(300, 31, '42° Kuzey Paraleli (Sinop - İnceburun)', 10.2, YESIL_K)
-    ic += yazi(300, 96, '36° Kuzey Paraleli (Hatay - Beysun)', 10.2, YESIL_K)
+    ic = f'<rect x="6" y="6" width="588" height="104" rx="10" fill="#fbfcff" stroke="{GRI}" stroke-width="1.5"/>'
+    ic += yazi(300, 21, 'Türkiye’nin Mutlak (Matematik) Konum Koordinat Çerçevesi', 11.2, LAC)
+    ic += yazi(300, 36, '42° Kuzey Paraleli (Sinop - İnceburun)', 10.1, YESIL_K)
+    ic += f'<rect x="130" y="42" width="340" height="46" rx="8" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="2"/>'
+    ic += yazi(300, 69, 'TÜRKİYE (Anadolu ve Trakya)', 11.2, MAVI)
+    ic += yazi(300, 102, '36° Kuzey Paraleli (Hatay - Beysun)', 10.1, YESIL_K)
     ic += yazi(68, 62, '26° Doğu', 10.4, TUR)
     ic += yazi(68, 76, '(Çanakkale)', 10.0, LAC, ince=True)
     ic += yazi(532, 62, '45° Doğu', 10.4, TUR)
     ic += yazi(532, 76, '(Iğdır)', 10.0, LAC, ince=True)
-    return svg(600, 108, ic, 'Türkiye’nin 36-42 Kuzey paralelleri ile 26-45 Doğu meridyenleri arasındaki mutlak konum çerçevesi.', 22)
+    return svg(600, 116, ic, 'Türkiye’nin 36-42 Kuzey paralelleri ile 26-45 Doğu meridyenleri arasındaki mutlak konum çerçevesi.', 22)
 
 
 def dort_ozellik_panosu():
     kartlar = [
-        ('1. Özellik', 'Kuzey Yarım Küre’nin Orta', 'Kuşağı’nda yer alması', MAVI, MAVI_A),
-        ('2. Özellik', 'Güneyden kuzeye güneş ışınları', 'açısının küçülmesi', TUR, TUR_A),
-        ('3. Özellik', 'Batıdan doğuya doğru yükseltinin', 'artması ve sıcaklığın düşmesi', YES, YES_A),
-        ('4. Özellik', 'Doğusu ile batısı arasında 76 dk', 'yerel saat farkı bulunması', MOR, MOR_A),
+        ('1. Özellik', 'Kuzey Yarım Küre Orta', 'Kuşak’ta yer alması', MAVI, MAVI_A),
+        ('2. Özellik', 'Kuzeye gidildikçe güneş', 'açısının küçülmesi', TUR, TUR_A),
+        ('3. Özellik', 'Doğuya gidildikçe yükseltinin', 'artması', YES, YES_A),
+        ('4. Özellik', 'Doğu-batı arasında 76 dk', 'saat farkı olması', MOR, MOR_A),
     ]
     ic = ''
     for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
@@ -71,15 +71,15 @@ def meridyen_saat_cizelgesi():
     ic = f'<rect x="8" y="8" width="584" height="86" rx="10" fill="{KUM}" stroke="{ALTIN}" stroke-width="1.6"/>'
     ic += yazi(300, 26, 'Türkiye Meridyen ve Yerel Saat Farkı Çizelgesi (1 Meridyen = 4 Dakika)', 11.2, KAHVE)
     ic += f'<line x1="80" y1="60" x2="520" y2="60" stroke="{LAC}" stroke-width="2.2"/>'
-    ic += f'<circle cx="150" cy="60" r="6" fill="{MAVI}"/>'
-    ic += yazi(150, 46, 'Bursa (29° Doğu)', 10.8, MAVI)
-    ic += yazi(150, 80, 'Batıda', 10.1, LAC, ince=True)
+    ic += f'<circle cx="130" cy="60" r="6" fill="{MAVI}"/>'
+    ic += yazi(130, 46, 'Bursa (29° Doğu)', 10.6, MAVI)
+    ic += yazi(130, 80, 'Batıda', 10.1, LAC, ince=True)
 
-    ic += f'<circle cx="450" cy="60" r="6" fill="{TUR}"/>'
-    ic += yazi(450, 46, 'Diyarbakır (41° Doğu)', 10.8, TUR)
-    ic += yazi(450, 80, 'Doğuda (Güneş erken doğar)', 10.1, LAC, ince=True)
+    ic += f'<circle cx="470" cy="60" r="6" fill="{TUR}"/>'
+    ic += yazi(470, 46, 'Diyarbakır (41° Doğu)', 10.6, TUR)
+    ic += yazi(470, 80, 'Doğuda', 10.1, LAC, ince=True)
 
-    ic += yazi(300, 52, 'Meridyen farkı: 41° − 29° = 12 meridyen', 10.5, YESIL_K)
+    ic += yazi(300, 48, 'Fark: 41° − 29° = 12 meridyen', 10.4, YESIL_K)
     return svg(600, 102, ic, '29 Doğu Bursa ile 41 Doğu Diyarbakır arasındaki 12 meridyenlik yerel saat çizelgesi.', 22)
 
 
