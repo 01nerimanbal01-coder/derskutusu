@@ -125,7 +125,7 @@ def okul_duzenleme_panosu_svg():
         ('1. Durum', 'Kaldırıma takip şeridi döşenmesi', MAVI, MAVI_A),
         ('2. Durum', 'Üstün yetenekli öğrenciye atölye', YES, YES_A),
         ('3. Durum', 'Laboratuvara kız-erkek eşit erişim', TUR, TUR_A),
-        ('4. Durum', 'Öğrencinin okul gezisine alınmaması', KIR, KIR_A),
+        ('4. Durum', 'Öğrencinin geziye alınmaması', KIR, KIR_A),
     ]
     ic = ''
     for i, (bas, m, r, z) in enumerate(durumlar):
