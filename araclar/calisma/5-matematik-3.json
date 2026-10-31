@@ -22,15 +22,15 @@
       "ciftler": [
         [
           "derece (1°)",
-          "Tam açının 360 eş parçasından birine karşılık gelen standart birim"
+          "Tam açının 360 eş parçasından birine karşılık gelen birim"
         ],
         [
           "tam açı",
-          "Bir ışının başlangıç noktası etrafında bir tam tur dönmesiyle oluşan 360°’lik açı"
+          "Bir ışının bir tam tur dönmesiyle oluşan 360°’lik açı"
         ],
         [
           "doğru açı",
-          "Tam açının yarısı olan ve kolları zıt yönde doğru oluşturan 180°’lik açı"
+          "Tam açının yarısı olan ve zıt yönlü kolları bulunan 180°’lik açı"
         ],
         [
           "geniş açı",
@@ -38,7 +38,7 @@
         ],
         [
           "eş açılar",
-          "Kol uzunlukları veya yönleri farklı olsa da ölçüleri aynı olan açılar"
+          "Kol boyları veya yönleri farklı olsa da ölçüleri aynı olan açılar"
         ]
       ]
     },
@@ -60,15 +60,15 @@
       "soru": "Doğru olan ifadelerin yanındaki D kutusunu, yanlış olanların yanındaki Y kutusunu işaretleyiniz.",
       "ifadeler": [
         {
-          "metin": "Daire biçimli kâğıtları farklı büyüklükte katlayarak yapılan birimlerle aynı açı ölçüldüğünde farklı sayılar bulunur.",
+          "metin": "Farklı büyüklükte katlanan kâğıt dilimleriyle aynı açı ölçüldüğünde farklı sayılar bulunur.",
           "dogru": true
         },
         {
-          "metin": "Bir açının kolları cetvelle uzatıldığında kollar arasındaki dönme miktarı değişmediği için açının ölçüsü de değişmez.",
+          "metin": "Bir açının kolları cetvelle uzatıldığında dönme miktarı değişmediğinden ölçüsü de değişmez.",
           "dogru": true
         },
         {
-          "metin": "Köşesi R, kolları {isin:RP} ve {isin:RS} olan 70°’lik açının ölçüsü {olcu:RPS} = 70° biçiminde yazılır.",
+          "metin": "Köşesi R, kolları {isin:RP} ve {isin:RS} olan 70°’lik açının ölçüsü {olcu:RPS} = 70° diye yazılır.",
           "dogru": false
         },
         {
@@ -78,10 +78,6 @@
         {
           "metin": "Tam açı daire biçimli açıölçerle, doğru açı ise yarım daire biçimli açıölçerle modellenebilir.",
           "dogru": true
-        },
-        {
-          "metin": "İki açının birbirine eş olabilmesi için kollarının mutlaka aynı uzunlukta ve aynı yönde çizilmesi gerekir.",
-          "dogru": false
         }
       ]
     },
@@ -176,16 +172,16 @@
       "tur": "kisa",
       "duzey": "uygula",
       "soru": "Görselde Tuna’nın {aci:DEF} açısını ölçmek için açıölçeri yerleştirdiği konum gösterilmiştir. Tuna’nın yaptığı yerleşim neden hatalıdır ve doğru ölçüyü okumak için ne yapmalıdır?",
-      "cevap": "Köşe merkezdedir ancak kollardan hiçbiri 0° çizgisinde değildir. Tuna açıölçeri döndürüp {isin:EF} kolunu 0° çizgisine getirmelidir.",
-      "satir": 3
+      "cevap": "Kollardan hiçbiri 0° çizgisinde değildir; {isin:EF} kolunu 0° çizgisine getirmelidir.",
+      "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
       "soru": "Görselde ölçüsü 75° olan bir açıyı açıölçer yardımıyla çizme aşamaları verilmiştir. Bu çizim adımlarını uygulanış sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
-        "Cetvelle bir ışın çizmek ve başlangıç noktasını açının köşesi olarak işaretlemek",
-        "Açının köşesini açıölçerin merkezine, çizilen ışını ise 0° çizgisinin üzerine yerleştirmek",
+        "Cetvelle bir ışın çizip başlangıç noktasını köşe olarak işaretlemek",
+        "Köşeyi açıölçerin merkezine, ışını 0° çizgisi üzerine yerleştirmek",
         "Açıölçer üzerinde 75° yazan çizginin hizasına kalemle bir nokta koymak",
         "Açıölçeri kaldırıp köşeden işaretlenen noktaya doğru ikinci ışını çizmek"
       ]
@@ -195,10 +191,10 @@
       "duzey": "ust",
       "soru": "Görselde Mert ve Zeynep eş daire kâğıtlarını farklı sayıda eş dilime katlayarak kendi açı birimlerini oluşturmuş ve aynı pergel açıklığını ölçmüştür. Bu etkinlikle ilgili aşağıdakilerden hangisine {koyu:ulaşılamaz}?",
       "secenekler": [
-        "Zeynep’in oluşturduğu birim dilim, Mert’in birim diliminden daha küçüktür.",
-        "Aynı pergel açıklığını ölçtüklerinde Zeynep’in bulduğu birim sayısı daha fazla çıkar.",
-        "Standart olmayan birimler kullanıldığında aynı açıklık farklı sayılarla ifade edilir.",
-        "Mert ve Zeynep kendi katlama dilimlerini kullandığında pergel açıklığını aynı sayıyla ifade eder."
+        "Zeynep’in oluşturduğu birim dilim Mert’in diliminden daha küçüktür.",
+        "Aynı açıklık ölçüldüğünde Zeynep’in bulduğu birim sayısı daha fazladır.",
+        "Standart olmayan birimlerle aynı açıklık farklı sayılarla ifade edilir.",
+        "Mert ve Zeynep kendi dilimleriyle açıklığı aynı sayıyla ifade eder."
       ],
       "dogru": 3
     },
@@ -218,8 +214,8 @@
       "tur": "kisa",
       "duzey": "ust",
       "soru": "Görselde 1. adımda kolları 5 cm olan 50°’lik {aci:ABC} açısı çizilmiş, 2. adımda ise bu açının kolları cetvelle 10 cm’ye uzatılmıştır. 2. adımda açının ölçüsü ve türü değişir mi? Nedenini yazınız.",
-      "cevap": "Değişmez; açı yine 50° ve dar açıdır. Çünkü açının ölçüsü kolların boyuna değil, aralarındaki dönme miktarına bağlıdır.",
-      "satir": 3
+      "cevap": "Değişmez; açı yine 50° ve dar açıdır. Çünkü ölçü kolların dönme miktarına bağlıdır.",
+      "satir": 2
     },
     {
       "tur": "sifre",
@@ -263,7 +259,7 @@
       "tur": "acik",
       "duzey": "ust",
       "soru": "Görselde Arda ölçüsü 140° olan bir açı çizmek istemiş ancak açıölçerde yanlış yeri işaretleyerek 40°’lik bir açı çizmiştir. Çizime başlamadan önce açının türünü tahmin etmek Arda’ya nasıl yardımcı olurdu?",
-      "cevap": "140°’nin geniş açı olacağını önceden tahmin etseydi, çizdiği açının dar açı olduğunu hemen fark edip ölçümü yeniden kontrol ederdi.",
+      "cevap": "140°’nin geniş açı olacağını tahmin etseydi, çizdiği dar açıyı hemen fark edip ölçümü düzeltirdi.",
       "satir": 3
     },
     {
