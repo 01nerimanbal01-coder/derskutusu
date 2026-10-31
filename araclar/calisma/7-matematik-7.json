@@ -1,0 +1,280 @@
+{
+  "sinif": 7,
+  "ders": "matematik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-10-28",
+  "baslik": "7. Sınıf Matematik 7. Hafta Çalışma Kâğıdı",
+  "alt_baslik": "Rasyonel Sayıların Karesi-Küpü, Çok Adımlı İşlemler ve Problemler",
+  "renk": "#2451d6",
+  "konu": "Rasyonel Sayılarla İşlemler ve Problem Çözme: Kare-Küp, Çok Adımlı İşlemler ve Gerçek Yaşam Problemleri",
+  "ciktilar": [
+    "MAT.7.1.4. Rasyonel sayıların karesini ve küpünü işaret ve parantez kurallarına dikkat ederek hesaplar.",
+    "MAT.7.1.5. Rasyonel sayılarla çok adımlı işlemleri yapar ve gerçek yaşam problemlerini çözer."
+  ],
+  "hatirla": [
+    "Sıfırdan farklı her rasyonel sayının parantez karesi pozitif, küpü ise tabandaki sayının kendi işaretiyle aynıdır.",
+    "Tam sayılı bir kesrin karesi veya küpü hesaplanırken önce tam sayılı kesir bileşik kesre dönüştürülür, sonra pay ve paydanın kuvveti alınır.",
+    "Çok adımlı işlemlerde önce üslü ifadeler ve parantez içleri hesaplanır; merdivenli kesirlerde eşittir hizasındaki ana kesir çizgisi bölünen ile böleni ayırır.",
+    "Bütünün kesir kadarı bulunurken çarpma, kesir kadarı verilen bütün bulunurken bölme yapılır; kalanın kesri sorularında her adımda geriye kalan miktar kullanılır."
+  ],
+  "sorular": [
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki işlem kartlarında dört üslü rasyonel sayı ifadesinin değerleri hesaplanmıştır. Numaralanmış kartların hangisinde yapılan işlem {koyu:yanlıştır?}",
+      "secenekler": [
+        "1. karttaki (−{kesir:3|4})² = +{kesir:9|16} işlemi",
+        "2. karttaki (−1 {kesir:1|2})² = +{kesir:5|4} işlemi",
+        "3. karttaki (−{kesir:2|3})³ = −{kesir:8|27} işlemi",
+        "4. karttaki (−1 {kesir:1|3})³ = −{kesir:64|27} işlemi"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Görseldeki şemada verilen rasyonel sayıların karesini ve küpünü işaret kurallarına dikkat ederek tabloya yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Rasyonel Sayı",
+        "Bileşik Kesir Hâli",
+        "Karesi (2. Kuvvet)",
+        "Küpü (3. Kuvvet)"
+      ],
+      "satirlar": [
+        [
+          "−{kesir:2|5}",
+          "−{kesir:2|5}",
+          "+{kesir:4|25}",
+          "−{kesir:8|125}"
+        ],
+        [
+          "+{kesir:3|4}",
+          "+{kesir:3|4}",
+          {
+            "b": "+{kesir:9|16}"
+          },
+          {
+            "b": "+{kesir:27|64}"
+          }
+        ],
+        [
+          "−1 {kesir:1|2}",
+          {
+            "b": "−{kesir:3|2}"
+          },
+          {
+            "b": "+{kesir:9|4}"
+          },
+          {
+            "b": "−{kesir:27|8}"
+          }
+        ],
+        [
+          "−{kesir:1|3}",
+          "−{kesir:1|3}",
+          {
+            "b": "+{kesir:1|9}"
+          },
+          {
+            "b": "−{kesir:1|27}"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki rasyonel sayı işlemlerini sağ sütundaki doğru sonuçlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "(−{kesir:3|5})²",
+          "+{kesir:9|25}"
+        ],
+        [
+          "(−{kesir:1|4})³",
+          "−{kesir:1|64}"
+        ],
+        [
+          "1 + {kesir:2|3}",
+          "{kesir:5|3}"
+        ],
+        [
+          "1 ÷ (1 − {kesir:1|3})",
+          "{kesir:3|2}"
+        ],
+        [
+          "80 sayısının {kesir:3|4}’ünün {kesir:1|2}’si",
+          "30"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki K ve L merdivenli kesir işlemlerinde ana kesir çizgileri eşittir işaretinin hizasında gösterilmiştir. Buna göre K + L toplamının sonucu kaçtır?",
+      "secenekler": [
+        "{kesir:17|6}",
+        "{kesir:13|6}",
+        "{kesir:11|6}",
+        "{kesir:7|6}"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Görseldeki işlem ağacında verilen (−{kesir:1|2})² ve (−{kesir:1|2})³ değerlerini bularak A ÷ B bölümünün sonucunu adım adım hesaplayınız.",
+      "cevap": "A = +{kesir:1|4} ve B = −{kesir:1|8} olur; A ÷ B = (+{kesir:1|4}) ÷ (−{kesir:1|8}) = −2 bulunur.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Rasyonel sayıların kuvvetleri, çok adımlı işlemler ve problemlerle ilgili ifadelerden doğru olanların D, yanlış olanların Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Sıfırdan farklı negatif bir rasyonel sayının parantez karesi her zaman pozitiftir.",
+          "dogru": true
+        },
+        {
+          "metin": "Negatif bir rasyonel sayının küpü alındığında sonuç pozitif işaretli olur.",
+          "dogru": false
+        },
+        {
+          "metin": "Merdivenli kesirlerde eşittir işaretinin hizasındaki ana kesir çizgisi bölünen ile böleni belirler.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir çokluğun kesir kadarı verilirse tamamını bulmak için verilen sayı kesre bölünür.",
+          "dogru": true
+        },
+        {
+          "metin": "(−{kesir:2|3})³ ifadesinin değeri (−{kesir:2|3})² ifadesinin değerinden daha büyüktür.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki su deposunun başlangıçta {kesir:2|9}’u doludur. Depoya 70 litre daha su eklendiğinde deponun {kesir:5|9}’u dolduğuna göre bu deponun tamamı kaç litre su alır?",
+      "secenekler": [
+        "150",
+        "180",
+        "210",
+        "240"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "soru": "1 + {kesir:2|1 − {kesir:1|3}} çok adımlı işleminin sonucunu bulmak için izlenecek işlem adımlarını baştan sona doğru 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "En alttaki paydada yer alan 1 − {kesir:1|3} çıkarma işlemini yaparak {kesir:2|3} değerini bulmak",
+        "Ana kesir çizgisinin üstündeki 2 sayısını {kesir:2|3} kesrine bölerek 2 · {kesir:3|2} = 3 sonucuna ulaşmak",
+        "Bulunan 3 değerini baştaki 1 tam sayısı ile toplamak",
+        "İşlemin en sade sonucunu 1 + 3 = 4 olarak yazmak"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki kumaş topunun önce {kesir:1|4}’ü, daha sonra kalan kumaşın {kesir:2|3}’ü satılmıştır. Geriye 18 metre kumaş kaldığına göre başlangıçta kumaş topunun tamamı kaç metredir?",
+      "secenekler": [
+        "48",
+        "54",
+        "60",
+        "72"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Görseldeki şemada 135 cm yükseklikten serbest bırakılan esnek bir topun yere her çarptığında düştüğü yüksekliğin {kesir:2|3}’ü kadar yükseldiği modellenmiştir. Top yere 2. çarpmasından sonra kaç cm yükselir?",
+      "cevap": "1. çarpma: 135 · {kesir:2|3} = 90 cm; 2. çarpma: 90 · {kesir:2|3} = 60 cm yükselir.",
+      "satir": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde Tuna’nın [ 1 − (−{kesir:1|2})² ] ÷ {kesir:3|8} çok adımlı işlemini çözerken yazdığı üç adım verilmiştir. Tuna bu işlemin sonucunda hangi sayıya ulaşır?",
+      "secenekler": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları kutulara yazınız. Turuncu kutulardaki harfler, bir rasyonel sayının kendisiyle çarpımını anlatan terimi oluşturur.",
+      "satirlar": [
+        {
+          "ipucu": "Bir sayının kendisiyle kaç kez çarpılacağını gösteren üstteki sayı",
+          "cevap": "KUVVET",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Merdivenli kesirlerde eşittir hizasındaki en uzun kesir çizgisi",
+          "cevap": "ANA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İki tam sayının oranı biçiminde yazılabilen sayıların kümesi",
+          "cevap": "RASYONEL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Tam sayılı kesrin kuvveti alınmadan önce dönüştürüldüğü kesir türü",
+          "cevap": "BİLEŞİK",
+          "anahtar": 3
+        }
+      ],
+      "sonuc": "KARE"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız. Bir kavram artacaktır.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Negatif bir rasyonel sayının küpü daima ___ işaretlidir.",
+          "cevap": "negatif"
+        },
+        {
+          "metin": "Tam sayılı kesirlerin karesi alınırken önce ___ kesre çevrilir.",
+          "cevap": "bileşik"
+        },
+        {
+          "metin": "Bir bütünün kesir kadarını bulmak için ___ işlemi yapılır.",
+          "cevap": "çarpma"
+        },
+        {
+          "metin": "Eşittir hizasındaki en uzun çizgiye ___ kesir çizgisi denir.",
+          "cevap": "ana"
+        }
+      ],
+      "fazla": [
+        "pozitif"
+      ]
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Görseldeki karşılaştırma kartlarında (−{kesir:3|5})² ile −({kesir:3|5})² ifadeleri verilmiştir. Parantezin yeri nedeniyle bu iki ifadenin sonuçlarının neden farklı çıktığını açıklayınız.",
+      "cevap": "İlk ifadede eksi parantez içinde olduğundan +{kesir:9|25}, ikincide dışarıda olduğundan −{kesir:9|25} çıkar.",
+      "satir": 2
+    }
+  ]
+}
