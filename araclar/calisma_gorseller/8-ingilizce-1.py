@@ -24,52 +24,52 @@ def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.3, ek=''):
 def davet_kalip_kartlari():
     """Dört davet kalıbı ve fiil biçimi kartı."""
     kartlar = [
-        ('Would you like to …?', '+ V1 (yalın)', MAVI, MAVI_A, 4),
-        ('How about …?', '+ V-ing', TUR, TUR_A, 92),
-        ('Why don’t we …?', '+ V1 (yalın)', YES, YES_A, 180),
-        ('Let’s …', '+ V1 (yalın)', MOR, MOR_A, 268),
+        ('Would you like to …?', '+ V1 (yalın)', MAVI, MAVI_A, 6),
+        ('How about …?', '+ V-ing', TUR, TUR_A, 134),
+        ('Why don’t we …?', '+ V1 (yalın)', YES, YES_A, 262),
+        ('Let’s …', '+ V1 (yalın)', MOR, MOR_A, 390),
     ]
     ic = ''
     for bas, alt, r, z, x in kartlar:
-        cx = x + 44
-        ic += kutu(x, 4, 86, 76, z, r, 8, 1.3)
+        cx = x + 61
+        ic += kutu(x, 4, 122, 76, z, r, 8, 1.3)
         ic += yazi(cx, 24, bas, 10.5, r)
-        ic += f'<line x1="{x + 10}" y1="34" x2="{x + 76}" y2="34" stroke="{r}" stroke-width="1"/>'
+        ic += f'<line x1="{x + 12}" y1="34" x2="{x + 110}" y2="34" stroke="{r}" stroke-width="1"/>'
         ic += yazi(cx, 56, alt, 11, LAC)
-    return svg(358, 84, ic, 'Dört davet kalıbı kartı: Would you like to + V1, How about + V-ing, Why don t we + V1, Let s + V1.', 22)
+    return svg(518, 84, ic, 'Dört davet kalıbı kartı: Would you like to + V1, How about + V-ing, Why don t we + V1, Let s + V1.', 16)
 
 
 def cevap_kartlari():
     """Dört arkadaşın come over davetine verdiği cevap kartları."""
     kartlar = [
-        ('Mert', 'I’m sorry, I can’t because I have a math test.', KIR, KIR_A),
-        ('Selin', 'Sure, it sounds good. What time shall I come?', YES, YES_A),
-        ('Arda', 'I’d love to, but I can’t. My cousin is coming.', TUR, TUR_A),
-        ('Duru', 'I’m afraid, I can’t. I must finish my homework.', MOR, MOR_A),
+        ('Mert', 'I’m sorry, I can’t. I have a math test.', KIR, KIR_A),
+        ('Selin', 'Sure, it sounds good. What time?', YES, YES_A),
+        ('Arda', 'I’d love to, but my cousin is coming.', TUR, TUR_A),
+        ('Duru', 'I’m afraid I can’t. I have homework.', MOR, MOR_A),
     ]
     ic = ''
     for i, (ad, cum, r, z) in enumerate(kartlar):
-        x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, r, 7, 1.3)
-        ic += yazi(x + 10, y + 15, ad, 10.8, r, 'start')
-        ic += yazi(x + 10, y + 30, cum, 10.2, LAC, 'start', True)
-    return svg(360, 92, ic, 'Dört arkadaşın davet cevabı kartları: Mert, Arda ve Duru reddediyor; Selin kabul ediyor.', 23)
+        x, y = 6 + (i % 2) * 256, 4 + (i // 2) * 44
+        ic += kutu(x, y, 248, 38, z, r, 7, 1.3)
+        ic += yazi(x + 12, y + 15, ad, 10.8, r, 'start')
+        ic += yazi(x + 12, y + 30, cum, 10.5, LAC, 'start', True)
+    return svg(516, 92, ic, 'Dört arkadaşın davet cevabı kartları: Mert, Arda ve Duru reddediyor; Selin kabul ediyor.', 16)
 
 
 def arkadaslik_panosu():
     """Arkadaşlık özellikleri ve kabul/ret kuralları panosu."""
-    ic = kutu(4, 4, 172, 82, MAVI_A, MAVI, 8, 1.3)
-    ic += yazi(90, 20, 'True Friend Qualities', 11, MAVI)
-    ic += yazi(12, 38, 'keeps secrets → trustworthy', 10.5, LAC, 'start', True)
-    ic += yazi(12, 54, 'tells the truth → honest', 10.5, LAC, 'start', True)
-    ic += yazi(12, 70, 'backs me up → supportive', 10.5, LAC, 'start', True)
+    ic = kutu(6, 4, 210, 82, MAVI_A, MAVI, 8, 1.3)
+    ic += yazi(111, 20, 'True Friend Qualities', 11, MAVI)
+    ic += yazi(16, 38, 'keeps secrets → trustworthy', 10.5, LAC, 'start', True)
+    ic += yazi(16, 54, 'tells the truth → honest', 10.5, LAC, 'start', True)
+    ic += yazi(16, 70, 'backs me up → supportive', 10.5, LAC, 'start', True)
 
-    ic += kutu(184, 4, 172, 82, TUR_A, TUR, 8, 1.3)
-    ic += yazi(270, 20, 'Accepting & Refusing', 11, TUR)
-    ic += yazi(192, 38, 'Yes, I’d love to. → Accept', 10.5, YES, 'start')
-    ic += yazi(192, 54, 'I’d love to, but I can’t. → Refuse', 10.5, KIR, 'start')
-    ic += yazi(192, 70, 'What about + V-ing? → Offer', 10.5, LAC, 'start', True)
-    return svg(360, 90, ic, 'Arkadaşlık özellikleri ve kabul-ret kuralları bilgi panosu.', 22)
+    ic += kutu(224, 4, 210, 82, TUR_A, TUR, 8, 1.3)
+    ic += yazi(329, 20, 'Accepting & Refusing', 11, TUR)
+    ic += yazi(234, 38, 'Yes, I’d love to. → Accept', 10.5, YES, 'start')
+    ic += yazi(234, 54, 'I’d love to, but I can’t. → Refuse', 10.5, KIR, 'start')
+    ic += yazi(234, 70, 'What about + V-ing? → Offer', 10.5, LAC, 'start', True)
+    return svg(440, 90, ic, 'Arkadaşlık özellikleri ve kabul-ret kuralları bilgi panosu.', 16)
 
 
 def oneri_fisleri():
@@ -82,28 +82,28 @@ def oneri_fisleri():
     ]
     ic = ''
     for i, (bas, cum, r, z) in enumerate(fisler):
-        x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, r, 7, 1.3)
-        ic += yazi(x + 10, y + 15, bas, 10.5, r, 'start')
-        ic += yazi(x + 10, y + 30, cum, 10.5, LAC, 'start', True)
-    return svg(360, 92, ic, 'Dört öneri fişi: 1. Would you like to have, 2. Let s go, 3. How about watch, 4. What about drinking.', 22)
+        x, y = 6 + (i % 2) * 218, 4 + (i // 2) * 44
+        ic += kutu(x, y, 210, 38, z, r, 7, 1.3)
+        ic += yazi(x + 12, y + 15, bas, 10.5, r, 'start')
+        ic += yazi(x + 12, y + 30, cum, 10.5, LAC, 'start', True)
+    return svg(440, 92, ic, 'Dört öneri fişi: 1. Would you like to have, 2. Let s go, 3. How about watch, 4. What about drinking.', 16)
 
 
 def bora_kaan_mesaji():
     """Bora'nın Kaan'a gönderdiği kısa yürüyüş daveti mesajı."""
-    ic = kutu(4, 4, 352, 80, CAM_A, CAM, 8, 1.4)
-    ic += f'<rect x="4" y="4" width="352" height="20" rx="8" fill="{CAM}"/><rect x="4" y="14" width="352" height="10" fill="{CAM}"/>'
-    ic += yazi(180, 18, 'MESSAGE CARD · From: Bora   To: Kaan', 10.8, '#fff')
-    ic += yazi(16, 42, '“Hi Kaan! Let’s go for a walk tomorrow.”', 11.2, LAC, 'start')
-    ic += yazi(16, 64, 'Check: Event ✓   |   Day ✓   |   Place (Where?) ?   |   Time (What time?) ?', 10.5, CAM, 'start', True)
-    return svg(360, 88, ic, 'Bora nın Kaan a gönderdiği Let s go for a walk tomorrow mesaj kartı.', 22)
+    ic = kutu(6, 4, 428, 80, CAM_A, CAM, 8, 1.4)
+    ic += f'<rect x="6" y="4" width="428" height="20" rx="8" fill="{CAM}"/><rect x="6" y="14" width="428" height="10" fill="{CAM}"/>'
+    ic += yazi(220, 18, 'MESSAGE CARD · From: Bora   To: Kaan', 10.8, '#fff')
+    ic += yazi(18, 42, '“Hi Kaan! Let’s go for a walk tomorrow.”', 11.2, LAC, 'start')
+    ic += yazi(18, 64, 'Check: Event ✓   |   Day ✓   |   Place (Where?) ?   |   Time (What time?) ?', 10.5, CAM, 'start', True)
+    return svg(440, 88, ic, 'Bora nın Kaan a gönderdiği Let s go for a walk tomorrow mesaj kartı.', 16)
 
 
 def arkadas_ozellik_tablosu():
     """Dört arkadaşın davranış ve özellik tablosu."""
-    ic = kutu(4, 4, 352, 94, '#fff', GRI, 8, 1.3)
-    ic += f'<rect x="4" y="4" width="352" height="20" rx="8" fill="{LAC}"/><rect x="4" y="14" width="352" height="10" fill="{LAC}"/>'
-    ic += yazi(180, 18, 'Friends & Their Behaviours', 10.8, '#fff')
+    ic = kutu(6, 4, 448, 94, '#fff', GRI, 8, 1.3)
+    ic += f'<rect x="6" y="4" width="448" height="20" rx="8" fill="{LAC}"/><rect x="6" y="14" width="448" height="10" fill="{LAC}"/>'
+    ic += yazi(230, 18, 'Friends & Their Behaviours', 10.8, '#fff')
     satirlar = [
         ('Tuna', 'keeps secrets & never lies', 'trustworthy / honest', YES),
         ('Ela', 'backs her friends up in trouble', 'supportive', MAVI),
@@ -112,52 +112,52 @@ def arkadas_ozellik_tablosu():
     ]
     for i, (ad, dav, oz, r) in enumerate(satirlar):
         y = 30 + i * 16
-        ic += yazi(14, y + 10, ad, 10.8, r, 'start')
-        ic += yazi(72, y + 10, dav, 10.5, LAC, 'start', True)
-        ic += yazi(242, y + 10, oz, 10.5, r, 'start')
-    return svg(360, 102, ic, 'Tuna, Ela, Can ve Zeynep in arkadaşlık davranışları ve özellikleri tablosu.', 24)
+        ic += yazi(18, y + 10, ad, 10.8, r, 'start')
+        ic += yazi(84, y + 10, dav, 10.5, LAC, 'start', True)
+        ic += yazi(292, y + 10, oz, 10.5, r, 'start')
+    return svg(460, 102, ic, 'Tuna, Ela, Can ve Zeynep in arkadaşlık davranışları ve özellikleri tablosu.', 16)
 
 
 def ret_mesaji_bolumleri():
     """Özür, ret ve gerekçe bölümlerini gösteren şema."""
-    ic = kutu(4, 4, 352, 78, KUM, GRI, 8, 1.2)
-    ic += yazi(180, 19, 'Parts of a Refusal Sentence', 11, LAC)
+    ic = kutu(6, 4, 468, 78, KUM, GRI, 8, 1.2)
+    ic += yazi(240, 19, 'Parts of a Refusal Sentence', 11, LAC)
     parcalar = [
-        ('1. Bölüm', '“I’m sorry,”', MAVI, MAVI_A, 10, 92),
-        ('2. Bölüm', '“I can’t go to the cinema”', KIR, KIR_A, 108, 124),
-        ('3. Bölüm', '“because I have a math test.”', TUR, TUR_A, 238, 112),
+        ('1. Bölüm', '“I’m sorry,”', MAVI, MAVI_A, 14, 114),
+        ('2. Bölüm', '“I can’t go to the cinema”', KIR, KIR_A, 136, 162),
+        ('3. Bölüm', '“because I have a math test.”', TUR, TUR_A, 306, 160),
     ]
     for bas, met, r, z, x, w in parcalar:
         ic += kutu(x, 28, w, 46, z, r, 6, 1.3)
         ic += yazi(x + w / 2, 44, bas, 10.5, r)
         ic += yazi(x + w / 2, 62, met, 10.2, LAC, 'middle', True)
-    return svg(360, 86, ic, 'Ret cümlesinin üç bölümü: I m sorry, I can t go to the cinema, because I have a math test.', 22)
+    return svg(480, 86, ic, 'Ret cümlesinin üç bölümü: I m sorry, I can t go to the cinema, because I have a math test.', 16)
 
 
 def nil_haftasonu_plani():
     """Nil'in hafta sonu planı ve Sude'nin sinema daveti kartı."""
-    ic = kutu(4, 4, 172, 80, MOR_A, MOR, 8, 1.3)
-    ic += yazi(90, 20, 'Nil’s Saturday Plan', 11, MOR)
-    ic += yazi(12, 40, 'Morning: finish homework', 10.5, LAC, 'start', True)
-    ic += yazi(12, 56, 'Afternoon: cousin is coming', 10.5, KIR, 'start')
-    ic += yazi(12, 72, 'Evening: listen to music', 10.5, LAC, 'start', True)
+    ic = kutu(6, 4, 210, 80, MOR_A, MOR, 8, 1.3)
+    ic += yazi(111, 20, 'Nil’s Saturday Plan', 11, MOR)
+    ic += yazi(16, 40, 'Morning: finish homework', 10.5, LAC, 'start', True)
+    ic += yazi(16, 56, 'Afternoon: cousin is coming', 10.5, KIR, 'start')
+    ic += yazi(16, 72, 'Evening: listen to music', 10.5, LAC, 'start', True)
 
-    ic += kutu(184, 4, 172, 80, MAVI_A, MAVI, 8, 1.3)
-    ic += yazi(270, 20, 'Sude’s Invitation', 11, MAVI)
-    ic += yazi(192, 42, '“Would you like to go to the', 10.5, LAC, 'start', True)
-    ic += yazi(192, 57, 'cinema on Saturday afternoon?”', 10.5, LAC, 'start', True)
-    ic += yazi(192, 73, '→ Nil’s reply + because …', 10.5, MAVI, 'start')
-    return svg(360, 88, ic, 'Nil in cumartesi planı (öğleden sonra kuzeni geliyor) ve Sude nin cumartesi öğleden sonra sinema daveti.', 22)
+    ic += kutu(224, 4, 210, 80, MAVI_A, MAVI, 8, 1.3)
+    ic += yazi(329, 20, 'Sude’s Invitation', 11, MAVI)
+    ic += yazi(234, 42, '“Would you like to go to the', 10.5, LAC, 'start', True)
+    ic += yazi(234, 57, 'cinema on Saturday afternoon?”', 10.5, LAC, 'start', True)
+    ic += yazi(234, 73, '→ Nil’s reply + because …', 10.5, MAVI, 'start')
+    return svg(440, 88, ic, 'Nil in cumartesi planı (öğleden sonra kuzeni geliyor) ve Sude nin cumartesi öğleden sonra sinema daveti.', 16)
 
 
 def diyalog_ipucu_karti():
     """Açık uçlu soru için davet ve özürlü ret ipucu kartı."""
-    ic = kutu(4, 4, 352, 74, YES_A, YES, 8, 1.3)
-    ic += yazi(180, 20, 'Dialogue Writing Prompts (Invitation + Refusal with Excuse)', 11, YES)
-    ic += yazi(16, 40, 'Friend A (Invite): Would you like to … / How about … this evening?', 10.5, LAC, 'start', True)
-    ic += yazi(16, 56, 'Friend B (Apology + Refusal): I’m sorry, I can’t. / I’d love to, but I can’t.', 10.5, LAC, 'start', True)
-    ic += yazi(16, 70, 'Friend B (Excuse): … because I have an exam tomorrow.', 10.5, YES, 'start')
-    return svg(360, 82, ic, 'Davet ve sınav gerekçeli ret diyaloğu yazma ipucu kartı.', 22)
+    ic = kutu(6, 4, 428, 74, YES_A, YES, 8, 1.3)
+    ic += yazi(220, 20, 'Dialogue Writing Prompts (Invitation + Refusal with Excuse)', 11, YES)
+    ic += yazi(18, 40, 'Friend A (Invite): Would you like to … / How about … this evening?', 10.5, LAC, 'start', True)
+    ic += yazi(18, 56, 'Friend B (Apology + Refusal): I’m sorry, I can’t. / I’d love to, but I can’t.', 10.5, LAC, 'start', True)
+    ic += yazi(18, 70, 'Friend B (Excuse): … because I have an exam tomorrow.', 10.5, YES, 'start')
+    return svg(440, 82, ic, 'Davet ve sınav gerekçeli ret diyaloğu yazma ipucu kartı.', 16)
 
 
 def uygula(o):
