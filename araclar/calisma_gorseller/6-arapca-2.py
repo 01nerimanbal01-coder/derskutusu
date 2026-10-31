@@ -51,8 +51,8 @@ def hareke_kontrol_kartlari():
         x = 6 + (i % 2) * 176
         y = 6 + (i // 2) * 52
         ic += f'<rect x="{x}" y="{y}" width="172" height="46" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += tr_yazi(x + 10, y + 28, bas, renk, 'start', kalin=True)
-        ic += ar_yazi(x + 114, y + 31, ar_metin, LAC)
+        ic += tr_yazi(x + 8, y + 18, bas, renk, 'start', kalin=True)
+        ic += ar_yazi(x + 96, y + 40, ar_metin, LAC)
     return svg(360, 110, ic, 'Şemsi ve kameri kelimelerde hareke kontrol kartları.', 18)
 
 
@@ -68,8 +68,8 @@ def akraba_meslek_siniflama_kartlari():
         x = 6 + (i % 2) * 176
         y = 6 + (i // 2) * 52
         ic += f'<rect x="{x}" y="{y}" width="172" height="46" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += tr_yazi(x + 14, y + 28, bas, renk, 'start', kalin=True)
-        ic += ar_yazi(x + 106, y + 31, ar_metin, LAC)
+        ic += tr_yazi(x + 8, y + 18, bas, renk, 'start', kalin=True)
+        ic += ar_yazi(x + 96, y + 40, ar_metin, LAC)
     return svg(360, 110, ic, 'Akraba ve meslek sınıflama kartları.', 18)
 
 
@@ -115,8 +115,8 @@ def ay_gunes_kelime_panosu():
         x = 6 + (i % 2) * 176
         y = 6 + (i // 2) * 52
         ic += f'<rect x="{x}" y="{y}" width="172" height="46" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += tr_yazi(x + 10, y + 28, bas, renk, 'start', kalin=True)
-        ic += ar_yazi(x + 118, y + 31, ar_metin, LAC)
+        ic += tr_yazi(x + 8, y + 18, bas, renk, 'start', kalin=True)
+        ic += ar_yazi(x + 96, y + 40, ar_metin, LAC)
     return svg(360, 110, ic, 'Üç kameri ve bir şemsi kelimeden oluşan pano.', 18)
 
 
