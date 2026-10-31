@@ -60,19 +60,19 @@ def olum_kiyamet_panosu():
 
 def dort_kaynak_karti():
     kartlar = [
-        ('1. Kart · Mülk 2', '“Hanginizin daha iyi davranışta', 'bulunacağını denemek için...”', MAVI, MAVI_A),
-        ('2. Kart · Al-i İmran 185', '“Her canlı ölümü tadacaktır...', 'Karşılığınız eksiksiz verilir.”', TUR, TUR_A),
-        ('3. Kart · Buhari Hadisi', '“İnsan hayal içinde yaşarken', 'ölüm çizgisi karşısına çıkar.”', MOR, MOR_A),
-        ('4. Kart · Lokman 34', '“Kıyamet saati hakkındaki bilgi', 'yalnız Allah’ın katındadır.”', YES, YES_A),
+        ('1. Kart · Mülk 2', '“Hanginizin daha iyi iş', 'yapacağını sınamak için...”', MAVI, MAVI_A),
+        ('2. Kart · Al-i İmran 185', '“Her canlı ölümü tadar...', 'Karşılığınız tam verilir.”', TUR, TUR_A),
+        ('3. Kart · Buhari Hadisi', '“İnsan hayal kurarken', 'ecel çizgisi önüne çıkar.”', MOR, MOR_A),
+        ('4. Kart · Lokman 34', '“Kıyamet vaktinin bilgisi', 'yalnız Allah katındadır.”', YES, YES_A),
     ]
     ic = ''
     for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
         x = 8 + i * 148
         ic += f'<rect x="{x}" y="8" width="136" height="86" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 68, 25, bas, 10.8, renk)
+        ic += yazi(x + 68, 25, bas, 10.2, renk)
         ic += f'<line x1="{x + 12}" y1="33" x2="{x + 124}" y2="33" stroke="{renk}" stroke-width="1"/>'
-        ic += yazi(x + 68, 52, s1, 10.0, LAC, ince=True)
-        ic += yazi(x + 68, 70, s2, 10.0, LAC, ince=True)
+        ic += yazi(x + 68, 52, s1, 9.6, LAC, ince=True)
+        ic += yazi(x + 68, 70, s2, 9.6, LAC, ince=True)
     return svg(600, 102, ic, 'Dört ayet ve hadis kartı: 1. Mülk 2, 2. Al-i İmran 185, 3. Buhari Çizgilerin hadisi, 4. Lokman 34.', 19)
 
 
@@ -114,13 +114,14 @@ def cizgilerin_hadisi_sema():
     ic += f'<rect x="28" y="42" width="120" height="44" rx="8" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.5"/>'
     ic += yazi(88, 68, 'İnsan Yaşamı', 10.8, MAVI)
     # Uzun istek ve arzu çizgileri (kesikli, ecel çizgisini aşan)
-    ic += f'<line x1="152" y1="52" x2="460" y2="52" stroke="{MAVI}" stroke-width="2" stroke-dasharray="6 4"/>'
-    ic += f'<line x1="152" y1="76" x2="460" y2="76" stroke="{MAVI}" stroke-width="2" stroke-dasharray="6 4"/>'
-    ic += yazi(470, 68, 'İstek ve Arzular (Uzak Hedefler)', 10.3, MAVI, 'start')
+    ic += f'<line x1="152" y1="52" x2="424" y2="52" stroke="{MAVI}" stroke-width="2" stroke-dasharray="6 4"/>'
+    ic += f'<line x1="152" y1="76" x2="424" y2="76" stroke="{MAVI}" stroke-width="2" stroke-dasharray="6 4"/>'
+    ic += yazi(506, 60, 'İstek ve Arzular', 10.3, MAVI)
+    ic += yazi(506, 76, '(Uzak Hedefler)', 9.8, MAVI, ince=True)
     # Yakındaki ecel çizgisi (dikey kesen)
-    ic += f'<line x1="290" y1="36" x2="290" y2="92" stroke="{KIR}" stroke-width="3"/>'
-    ic += f'<rect x="236" y="34" width="108" height="20" rx="5" fill="#fdeaea" stroke="{KIR}" stroke-width="1.2"/>'
-    ic += yazi(290, 48, 'Ecel Çizgisi', 10.5, KIR)
+    ic += f'<line x1="286" y1="36" x2="286" y2="92" stroke="{KIR}" stroke-width="3"/>'
+    ic += f'<rect x="232" y="34" width="108" height="20" rx="5" fill="#fdeaea" stroke="{KIR}" stroke-width="1.2"/>'
+    ic += yazi(286, 48, 'Ecel Çizgisi', 10.5, KIR)
     return svg(600, 108, ic, 'Çizgilerin hadisi şeması: insanın uzun istek ve arzu çizgileri ile daha yakında onları kesen ecel çizgisi.', 19)
 
 
