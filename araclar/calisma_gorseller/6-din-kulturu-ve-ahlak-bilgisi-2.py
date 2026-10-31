@@ -94,10 +94,10 @@ def hadis_tugla_karti():
 
 def bilgi_toplama_adimlari():
     adimlar = [
-        ('1. BUL', 'Kur’an ve TDV Ansiklopedisi', MAVI, MAVI_A),
-        ('2. NOT ET', 'Bilgiyi kaynak adıyla yaz', CAM, CAM_A),
-        ('3. DOĞRULA', 'Ayet ve hadisle kontrol et', TUR, TUR_A),
-        ('4. KAYDET', 'Şema, 3-2-1 kartı ve günlük', YES, YES_A),
+        ('1. BUL', 'Kur’an ve TDV kaynağı', MAVI, MAVI_A),
+        ('2. NOT ET', 'Kaynak adıyla not et', CAM, CAM_A),
+        ('3. DOĞRULA', 'Ayet ve hadisle sına', TUR, TUR_A),
+        ('4. KAYDET', 'Şema, kart ve günlük', YES, YES_A),
     ]
     ic = ''
     for i, (bas, alt, renk, arka) in enumerate(adimlar):
