@@ -68,18 +68,17 @@ def ogrenci_cozumleme_kartlari():
 def tartim_etiketleri():
     """K, L ve M paketlerinin çözümlenmiş kütle etiketleri."""
     etiketler = [
-        ('K Paketi (g)', '4·10<tspan baseline-shift="super" font-size="75%">1</tspan> + 7·10<tspan baseline-shift="super" font-size="75%">−1</tspan>', '+ 5·10<tspan baseline-shift="super" font-size="75%">−2</tspan>', MAVI, MAVI_A, 4),
-        ('L Paketi (g)', '4·10<tspan baseline-shift="super" font-size="75%">1</tspan> + 8·10<tspan baseline-shift="super" font-size="75%">0</tspan>', '+ 2·10<tspan baseline-shift="super" font-size="75%">−3</tspan>', TUR, TUR_A, 122),
-        ('M Paketi (g)', '4·10<tspan baseline-shift="super" font-size="75%">1</tspan> + 7·10<tspan baseline-shift="super" font-size="75%">0</tspan>', '+ 9·10<tspan baseline-shift="super" font-size="75%">−2</tspan>', YES, YES_A, 240),
+        ('K Paketi (g)', '4·10<tspan baseline-shift="super" font-size="75%">1</tspan> + 7·10<tspan baseline-shift="super" font-size="75%">−1</tspan> + 5·10<tspan baseline-shift="super" font-size="75%">−2</tspan>', MAVI, MAVI_A, 4),
+        ('L Paketi (g)', '4·10<tspan baseline-shift="super" font-size="75%">1</tspan> + 8·10<tspan baseline-shift="super" font-size="75%">0</tspan> + 2·10<tspan baseline-shift="super" font-size="75%">−3</tspan>', TUR, TUR_A, 178),
+        ('M Paketi (g)', '4·10<tspan baseline-shift="super" font-size="75%">1</tspan> + 7·10<tspan baseline-shift="super" font-size="75%">0</tspan> + 9·10<tspan baseline-shift="super" font-size="75%">−2</tspan>', YES, YES_A, 352),
     ]
     ic = ''
-    for bas, ifd1, ifd2, r, z, x in etiketler:
-        ic += kutu(x, 4, 116, 72, z, r, 8, 1.3)
-        ic += yazi(x + 58, 20, bas, 10.5, r)
-        ic += kutu(x + 6, 26, 104, 44, '#fff', r, 6, 1.1)
-        ic += f'<text x="{x + 58}" y="44" text-anchor="middle" font-size="10.5" {YAZI} fill="{LAC}">{ifd1}</text>'
-        ic += f'<text x="{x + 58}" y="61" text-anchor="middle" font-size="10.5" {YAZI} fill="{LAC}">{ifd2}</text>'
-    return svg(360, 80, ic, 'K, L ve M paketlerinin çözümlenmiş gram cinsinden tartım etiketleri.', 22)
+    for bas, ifd, r, z, x in etiketler:
+        ic += kutu(x, 4, 168, 76, z, r, 8, 1.3)
+        ic += yazi(x + 84, 22, bas, 11.5, r)
+        ic += kutu(x + 8, 30, 152, 40, '#fff', r, 6, 1.1)
+        ic += f'<text x="{x + 84}" y="55" text-anchor="middle" font-size="11" {YAZI} fill="{LAC}">{ifd}</text>'
+    return svg(524, 84, ic, 'K, L ve M paketlerinin çözümlenmiş gram cinsinden tartım etiketleri.', 22)
 
 
 def virgul_kaydirma_semasi():
