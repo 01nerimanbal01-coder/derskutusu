@@ -81,9 +81,9 @@ def sayi_dogrusu_k_noktasi():
         ic += kok_ciz(x, 41, '', kk, 10.5, SOLUK)
     # Orta nokta 8,5 çizgisi (x = 179) ve K noktası (x = 158, 8'e daha yakın)
     ic += f'<line x1="179" y1="50" x2="179" y2="58" stroke="{GRI}" stroke-width="1.2" stroke-dasharray="2 2"/>'
-    kx = 158
+    kx = 162
     ic += f'<circle cx="{kx}" cy="54" r="5" fill="{KIR}" stroke="#fff" stroke-width="1.2"/>'
-    ic += kutu(kx - 16, 25, 32, 18, KIR_A, KIR, 5, 1.2)
+    ic += kutu(kx - 11, 25, 22, 18, KIR_A, KIR, 5, 1.2)
     ic += yazi(kx, 38, 'K', 11, KIR)
     return svg(360, 86, ic, 'Sayı doğrusu üzerinde 7, 8, 9 ve 10 doğal sayıları; K noktası 8 ile 9 arasında ve 8e daha yakın.', 14)
 
