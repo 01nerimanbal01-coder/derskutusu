@@ -51,9 +51,9 @@ def kum_saati_sema():
 def rizik_panosu():
     ic = f'<rect x="6" y="6" width="286" height="122" rx="10" fill="{YES_A}" stroke="{YES}" stroke-width="1.6"/>'
     ic += yazi(149, 25, 'Doğada Rızık İçin Çaba', 12, YESIL_K)
-    ic += yazi(20, 48, '• Kuşların uzak ülkelere göç etmesi', 11, LAC, 'start', ince=True)
-    ic += yazi(20, 68, '• Balinaların okyanusları aşması', 11, LAC, 'start', ince=True)
-    ic += yazi(20, 88, '• Arıların uzaktaki çiçekleri bulması', 11, LAC, 'start', ince=True)
+    ic += yazi(20, 48, '- Kuşların uzak ülkelere göç etmesi', 11, LAC, 'start', ince=True)
+    ic += yazi(20, 68, '- Balinaların okyanusları aşması', 11, LAC, 'start', ince=True)
+    ic += yazi(20, 88, '- Arıların uzaktaki çiçekleri bulması', 11, LAC, 'start', ince=True)
     ic += yazi(149, 114, 'Kaynak: Er-Rezzak olan Allah', 11, YESIL_K)
 
     ic += f'<rect x="308" y="6" width="286" height="122" rx="10" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.6"/>'
@@ -184,16 +184,16 @@ def iki_yamac_sema():
 def saglik_kalkan_kart():
     ic = f'<rect x="6" y="6" width="286" height="106" rx="10" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.6"/>'
     ic += yazi(149, 25, 'Hastalanmadan Önce Önlem', 12, MAVI)
-    ic += yazi(22, 47, '• Helal ve temiz gıdalarla beslenmek (Bakara 168)', 10.8, LAC, 'start', ince=True)
-    ic += yazi(22, 65, '• Elbiseyi ve çevreyi temiz tutmak (Müddessir 4–5)', 10.8, LAC, 'start', ince=True)
-    ic += yazi(22, 83, '• Uyku düzeni, dinlenme ve harekete özen göstermek', 10.8, LAC, 'start', ince=True)
+    ic += yazi(22, 47, '- Helal ve temiz gıdalarla beslenmek (Bakara 168)', 10.8, LAC, 'start', ince=True)
+    ic += yazi(22, 65, '- Elbiseyi ve çevreyi temiz tutmak (Müddessir 4–5)', 10.8, LAC, 'start', ince=True)
+    ic += yazi(22, 83, '- Uyku düzeni, dinlenme ve harekete özen göstermek', 10.8, LAC, 'start', ince=True)
     ic += yazi(149, 102, 'Beden ve ruh sağlığını koruma görevi', 10.8, MAVI)
 
     ic += f'<rect x="308" y="6" width="286" height="106" rx="10" fill="{YES_A}" stroke="{YES}" stroke-width="1.6"/>'
     ic += yazi(451, 25, 'Hastalanınca Yapılacaklar', 12, YESIL_K)
-    ic += yazi(324, 47, '• Doktora başvurup tedavi olmak', 10.8, LAC, 'start', ince=True)
-    ic += yazi(324, 65, '• İlaçları ve iyileşme yollarını takip etmek', 10.8, LAC, 'start', ince=True)
-    ic += yazi(324, 83, '• Şifayı Allah’tan isteyip dua etmek', 10.8, LAC, 'start', ince=True)
+    ic += yazi(324, 47, '- Doktora başvurup tedavi olmak', 10.8, LAC, 'start', ince=True)
+    ic += yazi(324, 65, '- İlaçları ve iyileşme yollarını takip etmek', 10.8, LAC, 'start', ince=True)
+    ic += yazi(324, 83, '- Şifayı Allah’tan isteyip dua etmek', 10.8, LAC, 'start', ince=True)
     ic += yazi(451, 102, 'Hadis: “Her hastalığın şifası yaratılmıştır.”', 10.8, YESIL_K)
     return svg(600, 118, ic, 'Sağlığı koruma önlemleri ve hastalanınca yapılacak görevler kartı.', 16)
 
