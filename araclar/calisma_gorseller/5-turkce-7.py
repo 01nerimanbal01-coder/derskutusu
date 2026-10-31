@@ -20,7 +20,7 @@ def hikaye_haritasi_kutulari_svg():
     kutular = [
         ('K Kutusu', '1893 yılının güneşli', 'bir sonbahar sabahı', MAVI, MAVI_A),
         ('L Kutusu', 'Selanik Askerî Rüştiyesi', 'matematik dersliği', TUR, TUR_A),
-        ('M Kutusu', 'Küçük Mustafa ve öğretmeni', 'Yüzbaşı Mustafa Efendi', MOR, MOR_A),
+        ('M Kutusu', 'Mustafa ve öğretmeni', 'Yüzbaşı Mustafa Efendi', MOR, MOR_A),
         ('N Kutusu', 'Başarısıyla öğretmeninden', '“Kemal” adını alması', YES, YES_A),
     ]
     ic = ''
@@ -110,7 +110,7 @@ def konu_ana_fikir_notlari_svg():
 def yazim_kesme_calisma_yapragi_svg():
     cumleler = [
         ('1. Cümle:', 'Selanikli küçük Mustafa kitap okumayı çok severdi.', YES, YES_A),
-        ('2. Cümle:', 'Okulumuzda 29 ekim cumhuriyet bayramı’nı törenle kutladık.', KIR, '#fdeaea'),
+        ('2. Cümle:', '29 ekim cumhuriyet bayramı’nı törenle kutladık.', KIR, '#fdeaea'),
         ('3. Cümle:', 'Mustafa Kemal, Türkçe’yi özenli ve kurallı kullanırdı.', TUR, TUR_A),
         ('4. Cümle:', 'Atatürkün hayatı hepimize ilham kaynağı olmaktadır.', MOR, MOR_A),
     ]
