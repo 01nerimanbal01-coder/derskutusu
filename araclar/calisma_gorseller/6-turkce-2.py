@@ -9,7 +9,7 @@ DUZ = 'font-family="Noto Sans, sans-serif" font-weight="400"'
 
 
 def svg(w, h, ic, etiket, en_fazla=23):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
+    stil = f' style="max-height:calc({en_fazla}mm * var(--ck-olcek, 1))"' if en_fazla else ''
     return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
 
 
