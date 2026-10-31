@@ -57,7 +57,7 @@ def renk_sicaklik_kartlari():
         ic += f'<circle cx="{cx}" cy="58" r="20" fill="{yrenk}" stroke="{kenar}" stroke-width="2"/>'
         ic += yazi(cx, 96, renk_ad, 11.5, LAC)
         ic += yazi(cx, 114, acik, 11, LAC, ince=True)
-    return svg(600, 134, ic, 'Üç yıldız gözlem kartı: X (Mavi-Beyaz), Y (Sarı-Turuncu), Z (Kırmızı).', 17)
+    return svg(600, 134, ic, 'Üç yıldız gözlem kartı: X (Mavi-Beyaz), Y (Sarı-Turuncu), Z (Kırmızı).', 15)
 
 
 def gok_bilimi_kartlari():
@@ -100,7 +100,7 @@ def buyukayi_haritasi():
     ic += f'<line x1="545" y1="108" x2="545" y2="36" stroke="#4ade80" stroke-width="2.4"/>'
     ic += f'<path d="M539 44 l6 -10 l6 10" fill="none" stroke="#4ade80" stroke-width="2.2"/>'
     ic += yazi(545, 24, 'Yön: ?', 12, '#4ade80')
-    return svg(600, 144, ic, 'Büyükayı takımyıldızının 7 yıldızlı cezve şekli ve uçtaki iki yıldız arası uzaklığın 5 katı ilerisindeki K yıldızı.', 17)
+    return svg(600, 144, ic, 'Büyükayı takımyıldızının 7 yıldızlı cezve şekli ve uçtaki iki yıldız arası uzaklığın 5 katı ilerisindeki K yıldızı.', 15)
 
 
 def buyukluk_basamaklari():
