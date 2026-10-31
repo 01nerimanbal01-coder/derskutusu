@@ -138,7 +138,7 @@ def yas_tahmin_gorseli():
     ic += f'<line x1="36" y1="86" x2="264" y2="86" stroke="{LAC}" stroke-width="1.6"/>'
     ic += f'<circle cx="110" cy="48" r="8" fill="{YES}"/>' + yazi(130, 52, 'M Yıldızı (Üst bölge)', 10.3, YESIL_K, 'start')
     ic += f'<circle cx="110" cy="74" r="8" fill="{TUR}"/>' + yazi(130, 78, 'N Yıldızı (Alt bölge)', 10.3, TUR, 'start')
-    ic += yazi(150, 99, 'Sıcaklık / Parlaklık Bölgeleri', 10.0, LAC, ince=True)
+    ic += yazi(150, 99, 'Sıcaklık ve Parlaklık Bölgeleri', 10.0, LAC, ince=True)
 
     ic += f'<rect x="310" y="6" width="282" height="98" rx="10" fill="{YES_A}" stroke="{YES}" stroke-width="1.6"/>'
     ic += yazi(451, 24, '2. Dönme Hızı Gözlem Tablosu', 11.0, YESIL_K)
