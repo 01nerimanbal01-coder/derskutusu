@@ -78,14 +78,14 @@ def dort_ucgen_aci_modelleri_svg():
 
 def ikizkenar_tepe_acisi_svg():
     ic = f'<rect x="6" y="6" width="588" height="106" rx="10" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.6"/>'
-    px, py = 150, 20
+    px, py = 150, 25
     rx, ry = 104, 96
     sx, sy = 196, 96
     ic += f'<polygon points="{px},{py} {rx},{ry} {sx},{sy}" fill="#fff" stroke="{MAVI}" stroke-width="2.4"/>'
     # Eşit kenar çentikleri
-    ic += f'<line x1="122" y1="54" x2="132" y2="58" stroke="{KIR}" stroke-width="2"/>'
-    ic += f'<line x1="178" y1="54" x2="168" y2="58" stroke="{KIR}" stroke-width="2"/>'
-    ic += yazi(px, py - 5, 'P (40°)', 10.8, MAVI)
+    ic += f'<line x1="122" y1="56" x2="132" y2="60" stroke="{KIR}" stroke-width="2"/>'
+    ic += f'<line x1="178" y1="56" x2="168" y2="60" stroke="{KIR}" stroke-width="2"/>'
+    ic += yazi(px, py - 6, 'P (40°)', 10.4, MAVI)
     ic += yazi(rx - 14, ry + 4, 'R (?)', 10.8, KIR)
     ic += yazi(sx + 16, sy + 4, 'S (?)', 10.8, KIR)
 
@@ -146,9 +146,9 @@ def farkli_cember_cesitkenar_svg():
     ic += f'<circle cx="{ax}" cy="{ay}" r="3.2" fill="{LAC}"/>' + yazi(ax - 12, ay + 4, 'A', 11, MAVI)
     ic += f'<circle cx="{bx}" cy="{by}" r="3.2" fill="{LAC}"/>' + yazi(bx + 12, by + 4, 'B', 11, TUR)
     ic += f'<circle cx="{cx}" cy="{cy}" r="3.2" fill="{LAC}"/>' + yazi(cx, cy - 7, 'C', 11, MOR)
-    ic += yazi(138, 48, 'r₁=9 cm', 10.2, MAVI)
-    ic += yazi(212, 48, 'r₂=6 cm', 10.2, TUR)
-    ic += yazi(166, 94, '|AB| = 10 cm', 10.4, LAC)
+    ic += yazi(134, 51, '9 cm', 9.8, MAVI)
+    ic += yazi(216, 40, '6 cm', 9.8, TUR)
+    ic += yazi(171, 91, '10 cm', 9.8, LAC)
 
     ic += f'<rect x="292" y="18" width="286" height="86" rx="8" fill="#fff" stroke="{MOR}" stroke-width="1.4"/>'
     ic += yazi(435, 38, 'İki Farklı Çemberle İnşa Verileri', 11.2, MOR)
