@@ -72,10 +72,10 @@ def kok_gorev_semasi():
 def ozet_kontrol_kartlari():
     """Dört öğrencinin özet hazırlama yöntem kartları."""
     kartlar = [
-        ('I. Kart · Ece', 'Olay sırasını ve ana çizgiyi korudu.', YES, YES_A),
-        ('II. Kart · Kaan', 'Metindeki cümleleri aynen kopyaladı.', KIR, KIR_A),
-        ('III. Kart · Nil', 'Notlarına bakarak kendi cümlelerini kurdu.', MAVI, MAVI_A),
-        ('IV. Kart · Mert', 'Gereksiz ayrıntıları özetten çıkardı.', MOR, MOR_A),
+        ('I. Kart · Ece', 'Olay sırasını korudu.', YES, YES_A),
+        ('II. Kart · Kaan', 'Cümleleri aynen kopyaladı.', KIR, KIR_A),
+        ('III. Kart · Nil', 'Kendi cümlelerini kurdu.', MAVI, MAVI_A),
+        ('IV. Kart · Mert', 'Ayrıntıları özetten çıkardı.', MOR, MOR_A),
     ]
     ic = ''
     for i, (bas, m, r, z) in enumerate(kartlar):
@@ -116,7 +116,7 @@ def gorus_bildirme_panosu():
     ic += yazi(270, 20, 'Emre’nin Yanıtı', 11, YES)
     ic += yazi(270, 38, '“Tarihî öyküler yazmak isterdim;', 10.5, LAC, 'middle', True)
     ic += yazi(270, 53, 'çünkü geçmişteki kahramanları', 10.5, LAC, 'middle', True)
-    ic += yazi(270, 68, 'gençlere tanıtmak çok değerlidir.”', 10.5, YES)
+    ic += yazi(270, 68, 'tanıtmak çok değerlidir.”', 10.5, YES)
     return svg(360, 86, ic, 'Duru ve Emre nin görüş bildirme kartları: Duru gerekçesiz, Emre çünkü diyerek gerekçeli görüş bildirmiştir.', 14)
 
 
@@ -124,7 +124,7 @@ def yaz_koku_fisleri():
     """yaz- kökünden türetilen dört sözcük fişi (3. fiş çekimli fiil)."""
     fisler = [
         ('1. fiş · yazılan', 'Sıfat-fiil (eserleri niteler)', MAVI, MAVI_A),
-        ('2. fiş · yazarak', 'Zarf-fiil (nasıl sunduğunu bildirir)', YES, YES_A),
+        ('2. fiş · yazarak', 'Zarf-fiil (durum bildirir)', YES, YES_A),
         ('3. fiş · yazdı', 'Kip ve kişi ekli yüklem', KIR, KIR_A),
         ('4. fiş · yazmak', 'İsim-fiil (işin adını bildirir)', TUR, TUR_A),
     ]
@@ -153,7 +153,7 @@ def arastir_fiilimsi_karti():
     ic += yazi(180, 20, 'Fiil Kökü: araştır-  →  Üç Farklı Görevde Cümle Kurma', 11, CAM)
     ic += yazi(16, 40, '1. Cümle (İsim-fiil): -mak veya -ma ekiyle işin adını bildirsin.', 10.5, LAC, 'start', True)
     ic += yazi(16, 56, '2. Cümle (Sıfat-fiil): -an veya -dığı ekiyle bir ismi nitelesin.', 10.5, LAC, 'start', True)
-    ic += yazi(16, 72, '3. Cümle (Zarf-fiil): -arak veya -ınca ekiyle zaman ya da durum bildirsin.', 10.5, LAC, 'start', True)
+    ic += yazi(16, 72, '3. Cümle (Zarf-fiil): -arak veya -ınca ekiyle durum bildirsin.', 10.5, LAC, 'start', True)
     return svg(360, 82, ic, 'araştır- fiil kökünden isim-fiil, sıfat-fiil ve zarf-fiil cümleleri kurma ipucu kartı.', 14)
 
 
