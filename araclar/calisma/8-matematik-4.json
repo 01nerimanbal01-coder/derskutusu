@@ -1,0 +1,290 @@
+{
+  "sinif": 8,
+  "ders": "matematik",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-10-12",
+  "konu": "Sayıların Ondalık Gösterimini Çözümleme",
+  "ciktilar": [
+    "M.8.1.2.3. Sayıların ondalık gösterimlerini 10’un tam sayı kuvvetlerini kullanarak çözümler.",
+    "M.8.1.2.4. Verilen bir sayıyı 10’un farklı tam sayı kuvvetlerini kullanarak ifade eder."
+  ],
+  "hatirla": [
+    "Ondalık gösterimdeki her rakamı bulunduğu basamağın değeriyle çarpıp bu çarpımların toplamı olarak yazmaya çözümleme denir.",
+    "Birler basamağının değeri {us:10|0} = 1’dir. Virgülün solunda onlar {us:10|1}, yüzler {us:10|2}; sağında onda birler {us:10|−1}, yüzde birler {us:10|−2}, binde birler {us:10|−3} ile gösterilir.",
+    "Değeri 0 olan basamağın terimi çözümlemede yazılmayabilir; çözümlenmiş biçimden sayıya dönerken eksik olan her üs için o basamağa 0 yazılır.",
+    "Bir sayıyı 10’un pozitif kuvvetiyle çarpınca virgül üs kadar sağa, negatif kuvvetiyle çarpınca sola kayar. a · {us:10|n} yazılışında üs 1 azalırsa katsayıdaki virgül 1 basamak sağa, üs 1 artarsa 1 basamak sola kayar."
+  ],
+  "sorular": [
+    {
+      "tur": "tablo",
+      "duzey": "hatirla",
+      "soru": "Görseldeki basamak değeri şemasından yararlanarak tablodaki ondalık gösterimlerin 10’un tam sayı kuvvetleriyle çözümlenmiş biçimlerini yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Ondalık gösterim",
+        "10’un tam sayı kuvvetleriyle çözümleme"
+      ],
+      "satirlar": [
+        [
+          "64,295",
+          "6 · {us:10|1} + 4 · {us:10|0} + 2 · {us:10|−1} + 9 · {us:10|−2} + 5 · {us:10|−3}"
+        ],
+        [
+          "58,41",
+          {
+            "b": "5 · {us:10|1} + 8 · {us:10|0} + 4 · {us:10|−1} + 1 · {us:10|−2}"
+          }
+        ],
+        [
+          "409,06",
+          {
+            "b": "4 · {us:10|2} + 9 · {us:10|0} + 6 · {us:10|−2}"
+          }
+        ],
+        [
+          "7,083",
+          {
+            "b": "7 · {us:10|0} + 8 · {us:10|−2} + 3 · {us:10|−3}"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Çözümlenmiş ifadeleri karşılık gelen ondalık gösterimlerle eşleştiriniz. Harfleri kutulara yazınız.",
+      "ciftler": [
+        [
+          "8 · {us:10|2} + 4 · {us:10|0} + 9 · {us:10|−2}",
+          "804,09"
+        ],
+        [
+          "8 · {us:10|1} + 4 · {us:10|0} + 9 · {us:10|−1}",
+          "84,9"
+        ],
+        [
+          "8 · {us:10|2} + 4 · {us:10|1} + 9 · {us:10|−3}",
+          "840,009"
+        ],
+        [
+          "8 · {us:10|0} + 4 · {us:10|−2} + 9 · {us:10|−3}",
+          "8,049"
+        ],
+        [
+          "8 · {us:10|1} + 4 · {us:10|−1} + 9 · {us:10|−3}",
+          "80,409"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Numaralanmış kartlarda dört ondalık gösterimin çözümlenmiş biçimleri verilmiştir. Hangi karttaki çözümlemede basamak değeri hatası {koyu:yapılmıştır}?",
+      "secenekler": [
+        "I. kart (408,065)",
+        "II. kart (90,304)",
+        "III. kart (15,72)",
+        "IV. kart (600,08)"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Doğru olan ifadelerin yanındaki D kutusunu, yanlış olanların yanındaki Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Ondalık gösterimde birler basamağındaki rakam {us:10|0} ile çarpılır.",
+          "dogru": true
+        },
+        {
+          "metin": "Binde birler basamağının basamak değeri {kesir:1|1000} yani {us:10|−3}’tür.",
+          "dogru": true
+        },
+        {
+          "metin": "5 · {us:10|2} + 2 · {us:10|0} biçiminde çözümlenen sayı 52’dir.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir sayıyı {us:10|−3} ile çarpmak, virgülü 3 basamak sola kaydırmaktır.",
+          "dogru": true
+        },
+        {
+          "metin": "a · {us:10|n} yazılışında katsayı 10 kat büyütülürse eşitliğin korunması için üs 1 artırılır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Boşlukları kutudaki uygun sözcüklerle tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Sayıyı basamak değerlerinin toplamı biçiminde yazmaya ___ denir.",
+          "cevap": "çözümleme"
+        },
+        {
+          "metin": "Çözümlemede yer almayan her üs için ilgili basamağa ___ yazılır.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "Bir sayıyı 10’un pozitif kuvvetiyle çarpınca virgül ___ kayar.",
+          "cevap": "sağa"
+        },
+        {
+          "metin": "Bir sayıyı 10’un negatif kuvvetiyle çarpınca virgül ___ kayar.",
+          "cevap": "sola"
+        },
+        {
+          "metin": "Eşitlikte katsayıdaki virgül sağa kaydırılırsa 10’un üssü ___.",
+          "cevap": "azalır"
+        }
+      ],
+      "fazla": [
+        "artar"
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Görseldeki tartım etiketlerinde K, L ve M paketlerinin kütleleri gram cinsinden çözümlenmiş olarak verilmiştir. Her paketin kütlesini ondalık gösterimle yazınız.",
+      "cevap": "K paketi: 40,75 g; L paketi: 48,002 g; M paketi: 47,09 g.",
+      "satir": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "İşlem şemasındaki giriş sayılarına okların üzerindeki 10’un kuvvetleriyle çarpma işlemleri uygulandığında K ve L kutularına yazılacak sayılar aşağıdakilerin hangisinde doğru verilmiştir?",
+      "secenekler": [
+        "K = 1,85 ve L = 5,4",
+        "K = 185 ve L = 540",
+        "K = 18,5 ve L = 54",
+        "K = 0,185 ve L = 54"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Görseldeki dönüşüm zincirini inceleyerek tablodaki sayıların verilen 10’un kuvvetlerine göre a katsayısını ve yazılışını tamamlayınız. İlk satır örnektir.",
+      "basliklar": [
+        "Verilen sayı",
+        "İstenen kuvvet",
+        "a · {us:10|n} yazılışı"
+      ],
+      "satirlar": [
+        [
+          "148,6",
+          "{us:10|2}",
+          "1,486 · {us:10|2}"
+        ],
+        [
+          "148,6",
+          "{us:10|−1}",
+          {
+            "b": "1486 · {us:10|−1}"
+          }
+        ],
+        [
+          "0,092",
+          "{us:10|−3}",
+          {
+            "b": "92 · {us:10|−3}"
+          }
+        ],
+        [
+          "0,092",
+          "{us:10|1}",
+          {
+            "b": "0,0092 · {us:10|1}"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "soru": "Görseldeki beş ölçüm kartında yazan ifadeleri değerlerine göre en küçükten (1) en büyüğe (5) doğru sıralayınız.",
+      "ogeler": [
+        "420 · {us:10|−3}",
+        "420 · {us:10|−2}",
+        "0,42 · {us:10|2}",
+        "0,042 · {us:10|4}",
+        "4,2 · {us:10|3}"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Denge kartlarındaki eşitliklerin doğru olması için x ve y yerine gelmesi gereken sayılar aşağıdakilerin hangisinde birlikte verilmiştir?",
+      "secenekler": [
+        "x = 3 ve y = 8,4",
+        "x = 9 ve y = 0,84",
+        "x = 3 ve y = 84",
+        "x = 4 ve y = 8,4"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "ust",
+      "soru": "Görseldeki eşitlik kartında 608,409 sayısının çözümlenmiş biçimi verilmiştir. Buna göre a, b, c, d tam sayılarını ve a + b + c + d toplamını bulunuz.",
+      "cevap": "a = 2, b = 0, c = −1 ve d = −3 olur. Buradan a + b + c + d = 2 + 0 + (−1) + (−3) = −2 bulunur.",
+      "satir": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına uyan matematik kavramlarını kutulara yazınız. Turuncu kutulardaki harfler basamak sistemimizin temelini veren sözcüğü oluşturur.",
+      "satirlar": [
+        {
+          "ipucu": "Virgülle ayrılan tam ve kesir kısmından oluşan gösterim türü",
+          "cevap": "ONDALIK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Virgülün sağındaki basamaklarda 10’un üssünün aldığı işaret",
+          "cevap": "NEGATİF",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sayıyı 10’un negatif kuvvetiyle çarpınca virgülün kaydığı yön",
+          "cevap": "SOLA",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Basamak değerlerini yazarken kullanılan 10’un üslü ifadesi",
+          "cevap": "KUVVET",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Sayıları yazmak için kullanılan 0’dan 9’a kadar sembollerden her biri",
+          "cevap": "RAKAM",
+          "anahtar": 2
+        }
+      ],
+      "sonuc": "ONLUK"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Bir laboratuvarda ölçülen 0,048 · {us:10|5} metre uzunluğundaki fiber kablo, 10’un farklı tam sayı kuvvetleriyle yazılacaktır. Aşağıdakilerden hangisi bu uzunluğa eşit {koyu:değildir}?",
+      "secenekler": [
+        "4,8 · {us:10|3} metre",
+        "480 · {us:10|1} metre",
+        "48 000 · {us:10|−1} metre",
+        "48 · {us:10|3} metre"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Görseldeki kartta 75,083 sayısının çözümlenmiş biçimi verilmiş, iki rakamın yerine ▲ ve ■ sembolleri konmuştur. Çözümlemede neden {us:10|−1} teriminin yer almadığını açıklayınız ve ▲ + ■ toplamını bulunuz.",
+      "cevap": "75,083 sayısının onda birler basamağındaki rakam 0 olduğu için 0 · {us:10|−1} = 0 terimi yazılmamıştır. ▲ = 7 ve ■ = 8 olduğundan ▲ + ■ = 15’tir.",
+      "satir": 3
+    }
+  ]
+}
