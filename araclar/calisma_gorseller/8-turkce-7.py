@@ -24,9 +24,9 @@ def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.3, ek=''):
 def yardimci_ogeler_semasi():
     """Soru 1: Cümlenin yardımcı ögeleri ve soruları 4 kutulu şema."""
     kartlar = [
-        ('Belirtili Nesne', 'Ek: -ı / -i / -u / -ü', 'Soru: Neyi, kimi, nereyi?', MAVI, MAVI_A),
+        ('Belirtili Nesne', 'Ek: -ı, -i, -u, -ü', 'Soru: Neyi, kimi, nereyi?', MAVI, MAVI_A),
         ('Belirtisiz Nesne', 'Ek: Hâl eki almaz', 'Soru: Ne? (Özneden sonra)', TUR, TUR_A),
-        ('Yer Tamlayıcısı', 'Ek: -e / -de / -den', 'Soru: Kime, nerede, nereden?', YES, YES_A),
+        ('Yer Tamlayıcısı', 'Ek: -e, -de, -den', 'Soru: Kime, nerede, nereden?', YES, YES_A),
         ('Zarf Tamlayıcısı', 'Zaman, durum, miktar, yön', 'Soru: Nasıl, ne zaman, niçin?', MOR, MOR_A),
     ]
     ic = ''
@@ -42,12 +42,12 @@ def yardimci_ogeler_semasi():
 def cumle_cozumleme_panosu():
     """Soru 3: Fedakâr Anadolu kadınları cümlesinin 5 parçalı öge çözümleme panosu."""
     ic = kutu(4, 4, 352, 78, KUM, GRI, 8, 1.2)
-    ic += yazi(180, 19, 'Cümle Çözümleme Panosu (YÖN Kuralı: Yüklem → Özne → Nesne → Tamlayıcılar)', 10.5, MAVI)
+    ic += yazi(180, 19, 'Cümle Çözümleme Panosu (YÖN Kuralı)', 10.5, MAVI)
     parcalar = [
-        ('Fedakâr Anadolu', 'kadınları', 'Kim?', MAVI, MAVI_A, 8, 80),
-        ('cephedeki', 'askerlere', 'Kime?', TUR, TUR_A, 92, 68),
-        ('kış', 'boyunca', 'Ne zaman?', MOR, MOR_A, 164, 62),
-        ('cephane', '(ek yok)', 'Ne?', YES, YES_A, 230, 60),
+        ('Anadolu', 'kadınları', 'Kim?', MAVI, MAVI_A, 8, 72),
+        ('cephedeki', 'askerlere', 'Kime?', TUR, TUR_A, 84, 70),
+        ('kış', 'boyunca', 'Ne zaman?', MOR, MOR_A, 158, 66),
+        ('cephane', '(ek yok)', 'Ne?', YES, YES_A, 228, 62),
         ('taşıdı.', '(Yargı)', 'Yüklem', KIR, KIR_A, 294, 58),
     ]
     for s1, s2, soru, r, z, x, w in parcalar:
