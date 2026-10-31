@@ -88,13 +88,13 @@ def gorus_kartlari():
     ic += yazi(90, 20, 'Arda’s Opinion', 11.5, YES)
     ic += yazi(90, 40, '“I think trekking is exciting', 10.5, LAC, 'middle', True)
     ic += yazi(90, 55, 'and terrific!”', 10.5, LAC, 'middle', True)
-    ic += yazi(90, 72, '(Positive: exciting · terrific)', 10.5, YES)
+    ic += yazi(90, 72, '(Positive: exciting)', 10.5, YES)
 
     ic += kutu(184, 4, 172, 78, KIR_A, KIR, 8, 1.3)
     ic += yazi(270, 20, 'Zeynep’s Opinion', 11.5, KIR)
     ic += yazi(270, 40, '“I can’t stand loud music.', 10.5, LAC, 'middle', True)
     ic += yazi(270, 55, 'I think it is unbearable.”', 10.5, LAC, 'middle', True)
-    ic += yazi(270, 72, '(Negative: unbearable · ridiculous)', 10.5, KIR)
+    ic += yazi(270, 72, '(Negative: unbearable)', 10.5, KIR)
     return svg(360, 86, ic, 'Arda ve Zeynep görüş kartları: Arda trekking için exciting ve terrific diyor; Zeynep yüksek sesli müziğe tahammül edemediğini ve unbearable bulduğunu söylüyor.', 18)
 
 
@@ -108,11 +108,12 @@ def zaman_edati_fisleri():
     ]
     ic = ''
     for i, (bas, s1, s2, r, z) in enumerate(fisler):
-        x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 46
-        ic += kutu(x, y, 172, 40, z, r, 7, 1.3)
-        ic += yazi(x + 10, y + 15, bas, 10.5, r, 'start')
-        ic += yazi(x + 10, y + 28, s1 + ' ' + s2, 10.5, LAC, 'start', True)
-    return svg(360, 96, ic, 'Dört zaman edatı fişi: 1. fiş on Tuesdays, 2. fiş at noon, 3. fiş in Saturday morning, 4. fiş in summer.', 18)
+        x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 50
+        ic += kutu(x, y, 172, 46, z, r, 7, 1.3)
+        ic += yazi(x + 10, y + 14, bas, 10.5, r, 'start')
+        ic += yazi(x + 10, y + 27, s1, 10.5, LAC, 'start', True)
+        ic += yazi(x + 10, y + 40, s2, 10.5, LAC, 'start', True)
+    return svg(360, 104, ic, 'Dört zaman edatı fişi: 1. fiş on Tuesdays, 2. fiş at noon, 3. fiş in Saturday morning, 4. fiş in summer.', 18)
 
 
 def siklik_basamaklari():
@@ -155,16 +156,16 @@ def enerji_anket_karti():
 def dinleme_not_kartlari():
     """Üç gencin dinleme notları özet kartları."""
     kartlar = [
-        ('1. Genç · Swim Team', ['Morning training', 'Always wakes up early'], MAVI, MAVI_A, 4),
-        ('2. Genç · Music Class', ['Plays instrument', 'Loves classical · hates pop'], MOR, MOR_A, 122),
-        ('3. Genç · Soccer Lover', ['Training at 7.30 a.m.', 'Home at 6 p.m. · helps mum'], YES, YES_A, 240),
+        ('1. Genç (Swim)', ['Morning training', 'Wakes up early'], MAVI, MAVI_A, 4),
+        ('2. Genç (Music)', ['Plays instrument', 'Likes classical', 'Hates pop music'], MOR, MOR_A, 122),
+        ('3. Genç (Soccer)', ['Training: 7.30 a.m.', 'Home at 6.00 p.m.', 'Helps his mum'], YES, YES_A, 240),
     ]
     ic = ''
     for bas, sat, r, z, x in kartlar:
         ic += kutu(x, 4, 116, 78, z, r, 8, 1.3)
-        ic += yazi(x + 58, 20, bas, 10.5, r)
-        ic += yazi(x + 58, 44, sat[0], 10.5, LAC, 'middle', True)
-        ic += yazi(x + 58, 64, sat[1], 10.5, LAC, 'middle', True)
+        ic += yazi(x + 58, 19, bas, 10.5, r)
+        for k, s_met in enumerate(sat):
+            ic += yazi(x + 58, 37 + k * 16, s_met, 10.5, LAC, 'middle', True)
     return svg(360, 86, ic, 'Üç gencin dinleme notu kartı: 1. genç yüzme takımı sabah antrenmanı, 2. genç müzik dersi klasik müzik sever pop sevmez, 3. genç 7.30 futbol antrenmanı akşam 6 da annesine yardım eder.', 18)
 
 
