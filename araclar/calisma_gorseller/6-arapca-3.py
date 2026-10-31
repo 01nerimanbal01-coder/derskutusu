@@ -104,9 +104,9 @@ def okuma_sorulari_akisi():
 def calisma_mekan_uyumu_kartlari():
     kartlar = [
         ('A', 'اَلْمُعَلِّمُ - غُرْفَةِ النَّوْمِ', KIR, '#fdeaea'),
-        ('B', 'اَلطَّبَّاخَةُ - غُرْفَةِ الْجُلُوسِ', TUR, TUR_A),
+        ('B', 'طَبَّاخَةٌ - غُرْفَةِ الْجُلُوسِ', TUR, TUR_A),
         ('C', 'لَا تَعْمَلُ - الْمَدْرَسَةِ', MOR, MOR_A),
-        ('D', 'اَلسَّائِقُ يَعْمَلُ فِي الْعَمَلِ', YES, YES_A),
+        ('D', 'اَلسَّائِقُ - فِي الْعَمَلِ', YES, YES_A),
     ]
     ic = ''
     for i, (bas, ar_metin, renk, arka) in enumerate(kartlar):
