@@ -25,7 +25,7 @@ def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.3, ek=''):
 def kesir(x, y, pay, payda, renk=LAC, boy=11.5, isaret=''):
     """Pay üstte, payda altta; (x, y) kesir çizgisinin ortası."""
     g = max(len(pay), len(payda)) * boy * 0.62 + 6
-    ic = yazi(x - g / 2 - 2, y + boy * 0.35, isaret, boy, renk, 'end') if isaret else ''
+    ic = f'<line x1="{x - g / 2 - 9:.1f}" y1="{y}" x2="{x - g / 2 - 3:.1f}" y2="{y}" stroke="{renk}" stroke-width="1.6"/>' if isaret else ''
     ic += yazi(x, y - 3, pay, boy, renk)
     ic += f'<line x1="{x - g / 2:.1f}" y1="{y}" x2="{x + g / 2:.1f}" y2="{y}" stroke="{renk}" stroke-width="1.4"/>'
     return ic + yazi(x, y + boy + 1, payda, boy, renk)
