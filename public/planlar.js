@@ -449,13 +449,24 @@ const Plan = (() => {
         },
       }, 'Sonraki ›');
 
+      const igHaftaBtn = el('button', {
+        type: 'button',
+        sinif: 'agac-hizli-dugme ig-kart plan-hafta-yon',
+        title: '@derskutusuinfo Instagram bilgi kartını önizle',
+        onclick: () => {
+          if (window.dkIgKartAc) {
+            window.dkIgKartAc(sinif, p.ders, `${sinif}. Sınıf ${p.dersAd} · ${seciliNo}. Hafta`, [Math.min(14, Math.max(1, Number(seciliNo) || 1))]);
+          }
+        },
+      }, simge('instagram'), el('span', {}, 'IG Özeti'));
+
       haftaCiz();
       haftaOnizleme.replaceChildren(
         el('div', { sinif: 'plan-hafta-ust' },
           el('div', {},
             el('span', { sinif: 'ust-baslik' }, 'Haftalık kazanım & içerik önizleme'),
             el('h3', { sinif: 'plan-alt-baslik' }, 'Tek hafta seç, incele veya yalnız o haftayı indir')),
-          el('div', { sinif: 'plan-hafta-araclar' }, oncekiBtn, secSelect, sonrakiBtn, haftaIndirBtn)),
+          el('div', { sinif: 'plan-hafta-araclar' }, oncekiBtn, secSelect, sonrakiBtn, igHaftaBtn, haftaIndirBtn)),
         detayKutu);
     }).catch(() => { haftaOnizleme.replaceChildren(); });
 

@@ -54,6 +54,15 @@ function icerikKarti(i, dersler) {
     i.aciklama && el('p', {}, i.aciklama),
     el('div', { sinif: 'eylemler' },
       i.goruntule && el('a', { sinif: 'ac', href: `/${i.goruntule}` }, 'Aç', simge('ok')),
+      (i.sinif && i.ders && i.hafta && Number(i.hafta) <= 14) && el('button', {
+        type: 'button',
+        sinif: 'agac-hizli-dugme ig-kart',
+        title: '@derskutusuinfo Instagram bilgi kartını önizle',
+        onclick: (o) => {
+          o.stopPropagation();
+          if (window.dkIgKartAc) window.dkIgKartAc(i.sinif, i.ders, `${i.sinif}. Sınıf ${dersAd} · ${i.hafta}. Hafta`, [Number(i.hafta)]);
+        },
+      }, simge('instagram'), el('span', {}, 'IG Kartı')),
       i.goruntule && i.tur === 'Ders kitabı' && el('a', { sinif: 'ac', href: `/${i.goruntule}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç'),
       i.hazirla && el('a', { sinif: 'ac', href: `/${i.hazirla}` }, 'Hazırla ve indir', simge('indir')),
       !i.hazirla && adres && (i.dosya || !i.goruntule) && el('a', { sinif: 'ac', href: i.dosya ? `/${i.dosya}` : adres, target: i.dosya ? null : '_blank', rel: 'noopener', download: i.dosya ? '' : null },

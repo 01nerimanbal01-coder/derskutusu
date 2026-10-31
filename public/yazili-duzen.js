@@ -93,7 +93,17 @@
     secim.replaceChildren(
       el('p', { sinif: 'yd-secili' }, 'Seçili ders: ', el('strong', {}, `${sinif}. sınıf ${ad}`), ' · ',
         el('a', { href: `/yazili.html?sinif=${sinif}` }, 'Tüm sınıflar'), ' · ',
-        el('a', { href: `/ogrenci.html?sinif=${sinif}&ders=${encodeURIComponent(ders)}` }, 'Dersin Konu Özetleri & Çalışma Kâğıtları →')),
+        el('a', { href: `/ogrenci.html?sinif=${sinif}&ders=${encodeURIComponent(ders)}` }, 'Dersin Konu Özetleri & Çalışma Kâğıtları →'), ' · ',
+        el('button', {
+          type: 'button',
+          sinif: 'agac-hizli-dugme ig-kart',
+          onclick: () => window.dkIgKartAc && window.dkIgKartAc(sinif, ders, `${sinif}. Sınıf ${ad} · Yazılıya Hazırlık`, [1, 2, 3, 4]),
+        }, simge('instagram'), el('span', {}, '📸 Yazılı IG Özeti')), ' ',
+        el('button', {
+          type: 'button',
+          sinif: 'dk-ig-paylas-btn asds-wa-btn',
+          onclick: (e) => window.dkSayfaPaylas && window.dkSayfaPaylas(e.currentTarget),
+        }, '🟢 WhatsApp’ta Paylaş')),
       ayniSinifDersler.length > 1 ? el('nav', { sinif: 'yd-hizli-dersler', 'aria-label': `${sinif}. sınıf diğer ders yazılıları` },
         ...ayniSinifDersler.map((x) => el('a', {
           sinif: `yd-hizli-cip${x.ders === ders ? ' aktif' : ''}`,
