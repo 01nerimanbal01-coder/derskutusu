@@ -36,19 +36,19 @@ def dinamometre_bolme_sema():
 
 def esnek_berk_panosu():
     kartlar = [
-        ('1. Kart · Bulaşık Süngeri', 'Sıkılınca şekli değişir, kuvvet', 'kalkınca eski hâline döner (Esnek).', YES, YES_A),
-        ('2. Kart · Sarmal Yay', 'Esnek maddedir; dinamometrelerin', 'iç yapısında kullanılır.', MAVI, MAVI_A),
-        ('3. Kart · Oyun Hamuru', 'Kuvvet kalktığında kendiliğinden', 'eski şekline geri döner (Hatalı).', KIR, '#fdeaea'),
-        ('4. Kart · Paket Lastiği', 'Esnektir; ancak çok aşırı çekilirse', 'esneklik sınırı aşılır ve kopar.', TUR, TUR_A),
+        ('1. Kart · Bulaşık Süngeri', 'Kuvvet kalkınca eski hâline döner (Esnek).', YES, YES_A),
+        ('2. Kart · Sarmal Yay', 'Esnektir; dinamometre yapısında kullanılır.', MAVI, MAVI_A),
+        ('3. Kart · Oyun Hamuru', 'Kuvvet kalkınca eski şekline döner (Hatalı).', KIR, '#fdeaea'),
+        ('4. Kart · Paket Lastiği', 'Aşırı çekilirse esneklik sınırı aşılır.', TUR, TUR_A),
     ]
     ic = ''
-    for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
+    for i, (bas, m, renk, arka) in enumerate(kartlar):
         x = 6 + (i % 2) * 298
         y = 6 + (i // 2) * 54
         ic += f'<rect x="{x}" y="{y}" width="286" height="46" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.5"/>'
         ic += f'<rect x="{x}" y="{y}" width="7" height="46" rx="3.5" fill="{renk}"/>'
         ic += yazi(x + 16, y + 18, bas, 10.6, renk, 'start')
-        ic += yazi(x + 16, y + 36, f'{s1} {s2}', 10.0, LAC, 'start', ince=True)
+        ic += yazi(x + 16, y + 36, m, 9.8, LAC, 'start', ince=True)
     return svg(600, 116, ic, 'Esnek ve esnek olmayan maddeler panosu: 1. Sünger, 2. Sarmal yay, 3. Oyun hamuru (hatalı), 4. Paket lastiği.', 22)
 
 
