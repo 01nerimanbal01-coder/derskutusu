@@ -8,7 +8,7 @@ YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
 DUZ = 'font-family="Noto Sans, sans-serif" font-weight="400"'
 
 
-def svg(w, h, ic, etiket, en_fazla=22):
+def svg(w, h, ic, etiket, en_fazla=14):
     stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
     return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
 
@@ -44,7 +44,7 @@ def kuresellesme_boyutlari_svg():
         ic += kutu(x, y, 172, 36, z, c, 7, 1.3) + rozet(x + 14, y + 14, no, c)
         ic += yazi(x + 28, y + 17, bas, 10.5, c, 'start')
         ic += yazi(x + 10, y + 31, alt, 10.5, LAC, 'start', True)
-    return svg(360, 114, ic, 'Küreselleşmenin dört boyutu: 1 Bilim ve İletişim, 2 İnsani Dayanışma, 3 Ekonomi ve E-Ticaret soru işaretli, 4 Kültürler Arası Tanışma.', 16)
+    return svg(360, 114, ic, 'Küreselleşmenin dört boyutu: 1 Bilim ve İletişim, 2 İnsani Dayanışma, 3 Ekonomi ve E-Ticaret soru işaretli, 4 Kültürler Arası Tanışma.', 14)
 
 
 def etki_kartlari_svg():
@@ -63,7 +63,7 @@ def etki_kartlari_svg():
         parcalar = m.split(' ', 1)
         ic += yazi(x + 41, 41, parcalar[0], 10.5, LAC)
         ic += yazi(x + 41, 56, parcalar[1], 10.5, LAC, 'middle', True)
-    return svg(360, 76, ic, 'Dört günlük yaşam durumu kartı: 1 tıbbi buluş paylaşımı, 2 hazır gıda yayılması, 3 afette uluslararası yardım, 4 ihtiyaç dışı alışveriş.', 16)
+    return svg(360, 76, ic, 'Dört günlük yaşam durumu kartı: 1 tıbbi buluş paylaşımı, 2 hazır gıda yayılması, 3 afette uluslararası yardım, 4 ihtiyaç dışı alışveriş.', 14)
 
 
 def populer_kultur_panosu_svg():
@@ -80,7 +80,7 @@ def populer_kultur_panosu_svg():
         ic += f'<rect x="{x}" y="6" width="114" height="22" rx="8" fill="{c}"/><rect x="{x}" y="18" width="114" height="10" fill="{c}"/>'
         ic += yazi(x + 57, 21, bas, 10.5, '#fff')
         ic += duz(x + 57, 44, sat, 10.5, LAC, 'middle', 14)
-    return svg(360, 98, ic, 'Popüler kültür panosu: 1 Dil ve iletişimde yabancı kelimeler, 2 Beslenme ve giyimde tek tip markalar, 3 Tüketim alışkanlığında geçici moda akımları.', 16)
+    return svg(360, 98, ic, 'Popüler kültür panosu: 1 Dil ve iletişimde yabancı kelimeler, 2 Beslenme ve giyimde tek tip markalar, 3 Tüketim alışkanlığında geçici moda akımları.', 14)
 
 
 def cinar_agaci_ilkesi_svg():
@@ -88,12 +88,12 @@ def cinar_agaci_ilkesi_svg():
     ic = kutu(4, 4, 352, 86, KUM, GRI, 8, 1.3)
     ic += kutu(12, 12, 152, 70, YES_A, YES, 8, 1.4)
     ic += yazi(88, 28, 'Dallar: Evrensel Gelişim', 11, YES)
-    ic += duz(88, 46, ['Bilim ve teknoloji takibi', 'Uluslararası iş birliği'], 10.5, LAC, 'middle', 15)
+    ic += duz(88, 46, ['Bilim ve teknoloji takibi', 'Uluslararası iş birliği'], 10.5, LAC, 'middle', 14)
     ic += yazi(180, 50, '↔', 13, LAC)
     ic += kutu(196, 12, 152, 70, TUR_A, TUR, 8, 1.4)
     ic += yazi(272, 28, 'Kökler: Millî Kimlik', 11, TUR)
-    ic += duz(272, 46, ['Türkçenin doğru kullanımı', 'Gelenek ve yerli üretim'], 10.5, LAC, 'middle', 15)
-    return svg(360, 94, ic, 'Denge şeması: solda dallar evrensel gelişim bilim ve teknoloji takibi, sağda kökler millî kimlik Türkçenin doğru kullanımı ve yerli üretim.', 16)
+    ic += duz(272, 46, ['Türkçenin doğru kullanımı', 'Gelenek ve yerli üretim'], 10.5, LAC, 'middle', 14)
+    return svg(360, 94, ic, 'Denge şeması: solda dallar evrensel gelişim bilim ve teknoloji takibi, sağda kökler millî kimlik Türkçenin doğru kullanımı ve yerli üretim.', 14)
 
 
 def dort_sorun_karti_svg():
@@ -110,7 +110,7 @@ def dort_sorun_karti_svg():
         ic += kutu(x, y, 172, 38, z, c, 7, 1.3)
         ic += yazi(x + 86, y + 16, bas, 10.5, c)
         ic += yazi(x + 86, y + 31, alt, 10.5, LAC, 'middle', True)
-    return svg(360, 92, ic, 'Dört sorun kartı: 1 sera gazı ve küresel ısınma, 2 sınır aşan salgın hastalıklar, 3 kuraklık ve su kıtlığı, 4 mahalle parkı taş onarımı.', 16)
+    return svg(360, 92, ic, 'Dört sorun kartı: 1 sera gazı ve küresel ısınma, 2 sınır aşan salgın hastalıklar, 3 kuraklık ve su kıtlığı, 4 mahalle parkı taş onarımı.', 14)
 
 
 def bilincli_tuketici_listesi_svg():
@@ -127,19 +127,19 @@ def bilincli_tuketici_listesi_svg():
         y = 32 + i * 18
         ic += kutu(12, y, 336, 15, '#fff', YES, 4, 1)
         ic += yazi(20, y + 11.5, m, 10.5, LAC, 'start', True)
-    return svg(360, 94, ic, 'Bilinçli tüketici kontrol listesi: ihtiyaç listesi hazırlamak, yerli ve millî ürünleri tercih etmek, atıkları geri dönüşüme ayırmak.', 16)
+    return svg(360, 94, ic, 'Bilinçli tüketici kontrol listesi: ihtiyaç listesi hazırlamak, yerli ve millî ürünleri tercih etmek, atıkları geri dönüşüme ayırmak.', 14)
 
 
 def dijital_iletisim_kartlari_svg():
     """Soru 10: Dijital araçların ölçülü kullanımı ile dijital bağımlılık karşılaştırması."""
     ic = kutu(6, 6, 170, 74, KIR_A, KIR, 8, 1.4)
     ic += yazi(91, 22, '1. Durum: Dijital Bağımlılık', 11, KIR)
-    ic += duz(91, 40, ['Saatlerce kesintisiz ekran,', 'aile içi sohbetin azalması'], 10.5, LAC, 'middle', 15)
+    ic += duz(91, 40, ['Saatlerce kesintisiz ekran,', 'aile içi sohbetin azalması'], 10.5, LAC, 'middle', 14)
 
     ic += kutu(184, 6, 170, 74, YES_A, YES, 8, 1.4)
     ic += yazi(269, 22, '2. Durum: Bilinçli Kullanım', 11, YES)
-    ic += duz(269, 40, ['Bilgi ve araştırma için ekran,', 'ortak aile saatinde sohbet'], 10.5, LAC, 'middle', 15)
-    return svg(360, 86, ic, 'Dijital iletişim karşılaştırma kartları: 1 dijital bağımlılık, 2 bilinçli kullanım ve ortak aile sohbeti.', 16)
+    ic += duz(269, 40, ['Bilgi ve araştırma için ekran,', 'ortak aile saatinde sohbet'], 10.5, LAC, 'middle', 14)
+    return svg(360, 86, ic, 'Dijital iletişim karşılaştırma kartları: 1 dijital bağımlılık, 2 bilinçli kullanım ve ortak aile sohbeti.', 14)
 
 
 def bakir_atolyesi_vaka_svg():
@@ -152,7 +152,7 @@ def bakir_atolyesi_vaka_svg():
     ic += kutu(200, 14, 148, 58, MAVI_A, MAVI, 7, 1.3)
     ic += yazi(274, 32, 'Küresel E-Ticaret Ağı', 11, MAVI)
     ic += yazi(274, 50, 'Dünya ülkelerine ihracat', 10.5, LAC, 'middle', True)
-    return svg(360, 86, ic, 'Vaka şeması: geleneksel Anadolu bakır işlemeciliği ok küresel e-ticaret ağı ile dünya ülkelerine ihracat.', 16)
+    return svg(360, 86, ic, 'Vaka şeması: geleneksel Anadolu bakır işlemeciliği ok küresel e-ticaret ağı ile dünya ülkelerine ihracat.', 14)
 
 
 def surdurulebilir_afis_svg():
@@ -164,7 +164,7 @@ def surdurulebilir_afis_svg():
         x = 12 + i * 114
         ic += kutu(x, 30, 108, 40, z, c, 6, 1.3)
         ic += yazi(x + 54, 54, ad, 10.5, c)
-    return svg(360, 84, ic, 'Sürdürülebilir yaşam afişi: Su tasarrufu, Enerji verimliliği, Sıfır atık ve dönüşüm.', 16)
+    return svg(360, 84, ic, 'Sürdürülebilir yaşam afişi: Su tasarrufu, Enerji verimliliği, Sıfır atık ve dönüşüm.', 14)
 
 
 def uygula(o):
