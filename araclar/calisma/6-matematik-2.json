@@ -1,0 +1,278 @@
+{
+  "sinif": 6,
+  "ders": "matematik",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "yayin_tarihi": "2026-10-01",
+  "baslik": "2, 3, 4, 5, 6, 9 ve 10 ile Bölünebilme",
+  "alt_baslik": "Sayılar ve Nicelikler (1) · 6. Sınıf 2. Hafta",
+  "renk": "#ee7d12",
+  "konu": "2, 3, 4, 5, 6, 9 ve 10 ile Bölünebilme",
+  "ciktilar": [
+    "MAT.6.1.2. Bir doğal sayının 2, 3, 4, 5, 6, 9 ve 10 ile tam bölünebilme kriterlerine ilişkin çıkarım yapabilme",
+    "Konu kapsamındaki temel kavramları, modelleri ve ilişkileri örnekler üzerinden çözümler."
+  ],
+  "hatirla": [
+    "Bir doğal sayının 2, 5 ve 10 ile tam bölünebilme durumu incelenirken yalnızca birler basamağındaki son rakama bakılır.",
+    "Sayının son iki basamağının oluşturduğu sayı 4’ün katıysa veya 00 ise sayı 4’e tam bölünür; çift olmak tek başına 4 için yetmez.",
+    "Rakamları toplamı 3’ün katı olan sayılar 3’e, 9’un katı olan sayılar 9’a tam bölünür; 9’a bölünen her sayı 3’e de tam bölünür.",
+    "Bir sayının 6’ya tam bölünebilmesi için hem 2’ye (çift olma) hem de 3’e (rakamlar toplamı 3’ün katı olma) aynı anda bölünmesi gerekir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki bölünebilme kurallarını sağ sütundaki karar ölçütleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "2 ile tam bölünebilme",
+          "Birler basamağının 0, 2, 4, 6 veya 8 rakamlarından biri olması"
+        ],
+        [
+          "4 ile tam bölünebilme",
+          "Son iki basamağın 00 olması veya 4’ün katı bir sayı oluşturması"
+        ],
+        [
+          "5 ile tam bölünebilme",
+          "Birler basamağındaki son rakamın 0 veya 5 olması"
+        ],
+        [
+          "6 ile tam bölünebilme",
+          "Sayının hem çift olması hem de rakamlar toplamının 3’ün katı olması"
+        ],
+        [
+          "9 ile tam bölünebilme",
+          "Basamaklarındaki rakamların toplamının 9’un katı olması"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görseldeki dört sayı kartından hangisinin üzerinde yazan doğal sayı hem 4’e hem de 9’a kalansız bölünür?",
+      "secenekler": [
+        "1. Kart: 2 514",
+        "2. Kart: 3 456",
+        "3. Kart: 4 726",
+        "4. Kart: 5 130"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Bölünebilme kurallarıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "9 ile kalansız bölünebilen her doğal sayı 3 ile de kalansız bölünür.",
+          "dogru": true
+        },
+        {
+          "metin": "Birler basamağı çift olan her doğal sayı 4 ile kalansız bölünür.",
+          "dogru": false
+        },
+        {
+          "metin": "10 ile tam bölünen bir doğal sayı hem 2’ye hem de 5’e tam bölünür.",
+          "dogru": true
+        },
+        {
+          "metin": "3 ile tam bölünen tek doğal sayılar aynı zamanda 6 ile de tam bölünür.",
+          "dogru": false
+        },
+        {
+          "metin": "Son iki basamağı 00 olan doğal sayılar 4 ile kalansız bölünebilme koşulunu sağlar.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun sözcüklerle tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "10 ile tam bölünen sayıların birler basamağı ___ olur.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "3 ve 9 kurallarında sayının rakamlar ___ incelenir.",
+          "cevap": "toplamı"
+        },
+        {
+          "metin": "4 ile bölünebilmede sayının son ___ basamağına bakılır.",
+          "cevap": "iki"
+        },
+        {
+          "metin": "6’ya tam bölünen tüm doğal sayılar ___ sayıdır.",
+          "cevap": "çift"
+        }
+      ],
+      "fazla": [
+        "tek"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görseldeki dört basamaklı 5 4a2 doğal sayısı 3 ile kalansız bölünebildiğine göre a harfinin yerine yazılabilecek rakamların toplamı kaçtır?",
+      "secenekler": [
+        "12",
+        "15",
+        "18",
+        "21"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Görseldeki kontrol panosunda verilen doğal sayıların 2, 3, 4, 5, 6, 9 ve 10 sayılarından hangilerine tam bölündüğünü tabloya yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Doğal Sayı",
+        "Rakamlar Toplamı",
+        "Tam Bölündüğü Sayılar"
+      ],
+      "satirlar": [
+        [
+          "1 260",
+          "9",
+          "2, 3, 4, 5, 6, 9 ve 10"
+        ],
+        [
+          "2 316",
+          {
+            "b": "12"
+          },
+          {
+            "b": "2, 3, 4 ve 6"
+          }
+        ],
+        [
+          "4 275",
+          {
+            "b": "18"
+          },
+          {
+            "b": "3, 5 ve 9"
+          }
+        ],
+        [
+          "3 500",
+          {
+            "b": "8"
+          },
+          {
+            "b": "2, 4, 5 ve 10"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Görseldeki kargo kolisinin dört basamaklı 7 3b0 takip kodu hem 4’e hem de 9’a tam bölünmektedir. Buna göre b yerine hangi rakam gelmelidir? İşlem gerekçenizi yazınız.",
+      "cevap": "7+3+b+0=10+b toplamı 9’un katı olacağından b=8 olur; son iki basamak 80 sayısı 4’e tam bölünür.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "soru": "Görselde verilen dört basamaklı 4 3ab sayısının hem 6’ya hem 5’e tam bölünmesini sağlayan a ve b rakamlarını bulma adımlarını 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "Sayının 5’e tam bölünmesi için birler basamağındaki b rakamının 0 veya 5 olabileceğini belirlemek",
+        "Sayı aynı zamanda 6’ya bölüneceğinden çift olma koşulunu kullanıp b = 0 değerini seçmek",
+        "4 + 3 + a + 0 = 7 + a toplamını 3’ün katı yapacak rakamları araştırmak",
+        "0 ile 9 arasındaki uygun değerleri kontrol ederek a yerine 2, 5 veya 8 gelebileceğini yazmak"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Görseldeki akış şemasında 540 ve 635 sayıları bölen filtrelerinden geçirilmektedir. Buna göre aşağıdaki ifadelerden hangisi {koyu:yanlıştır?}",
+      "secenekler": [
+        "540 sayısı birler basamağı 0 olduğu için 2, 5 ve 10 filtrelerinin tamamından geçer.",
+        "540 sayısının rakamları toplamı 9 ve son iki basamağı 40 olduğundan 4, 6 ve 9’a da bölünür.",
+        "635 sayısı 5 filtresinden geçer ancak tek sayı olduğu için 2, 4, 6 ve 10’a bölünemez.",
+        "635 sayısının rakamları toplamı 14 olduğu için 3 ve 9 filtrelerinden kalansız geçer."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görseldeki dolap şifresi üç basamaklı 64k doğal sayısıdır. Bu sayı 6 ile kalansız bölünebildiğine göre k rakamı aşağıdakilerden hangisi olabilir?",
+      "secenekler": [
+        "0",
+        "2",
+        "4",
+        "6"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "ust",
+      "soru": "Görseldeki konuşma kartında Mert “3’e bölünen her sayı 9’a da bölünür; çift olan her sayı 4’e de bölünür.” demiştir. Her iki iddiayı çürüten birer karşı örnek sayı yazınız.",
+      "cevap": "123 sayısı 3’e bölünür (1+2+3=6) ama 9’a bölünmez; 14 sayısı çifttir ama 4’e tam bölünmez.",
+      "satir": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları kutulara yazınız. Numaralı harflerle 2, 5 ve 10 kurallarında incelenen basamağın adını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Bir doğal sayıyı kalansız bölen sayıların her biri",
+          "cevap": "BÖLEN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "4 ile bölünebilmede incelenen son basamak adedi",
+          "cevap": "İKİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sayıları yazmak için kullanılan 0’dan 9’a kadar semboller",
+          "cevap": "RAKAM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bölünebilme koşulunu belirleyen matematiksel ilke",
+          "cevap": "KURAL",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Birler basamağı 1, 3, 5, 7 veya 9 olan doğal sayı türü",
+          "cevap": "TEK",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Kalansız bölme işleminde kalanın aldığı sayısal değer",
+          "cevap": "SIFIR",
+          "anahtar": 4
+        }
+      ],
+      "sonuc": "BİRLER"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Görseldeki fırında üretilen 468 adet simit altışarlı ve dokuzarlı paketlere hiç artmadan konulabilir mi? Bölünebilme kurallarıyla açıklayınız.",
+      "cevap": "468 sayısı çifttir ve rakamlar toplamı 4+6+8=18 olduğundan 6’lı ve 9’lu paketlere tam bölünür.",
+      "satir": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Rakamları birbirinden farklı dört basamaklı 3 82m doğal sayısı 4 ile kalansız bölünebildiğine göre m yerine aşağıdaki rakamlardan hangisi {koyu:yazılamaz?}",
+      "secenekler": [
+        "0",
+        "4",
+        "6",
+        "8"
+      ],
+      "dogru": 2
+    }
+  ]
+}
