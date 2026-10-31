@@ -98,19 +98,19 @@ def bes_damga_seridi():
 def dort_damga_karti():
     """Soru 4: Bayat, Eymür, Karaeyli (hatalı açıklama) ve Bayundur damga inceleme kartları."""
     kartlar = [
-        ('I · Bayat', 'Damgada bir üçgen vardır.', TUR, TUR_A, '<path d="M14 10V36M21 10V36M21 22L28 10M38 21V36M32 21H44L38 9Z"/>'),
-        ('II · Eymür', 'Damgada bir dörtgen vardır.', YES, YES_A, '<path d="M28 8L37 17L28 26L19 17ZM28 26V40M12 29H44"/>'),
-        ('III · Karaeyli', 'Üç paralel çizgiden oluşur.', KIR, KIR_A, '<path d="M8 26H22V34H8ZM25 34Q35 16 48 34M31 34Q37 25 43 34"/>'),
-        ('IV · Bayundur', 'Küçük ünlü harfi andırır.', MAVI, MAVI_A, '<path d="M14 12H42V23H14M14 12V34H42V40"/>'),
+        ('I · Bayat', 'Üçgen şekli vardır.', TUR, TUR_A, '<path d="M10 10V36M17 10V36M17 22L24 10M34 21V36M28 21H40L34 9Z"/>'),
+        ('II · Eymür', 'Dörtgen şekli vardır.', YES, YES_A, '<path d="M24 8L33 17L24 26L15 17ZM24 26V40M10 29H38"/>'),
+        ('III · Karaeyli', 'Üç paralel çizgi vardır.', KIR, KIR_A, '<path d="M6 26H18V34H6ZM21 34Q30 16 42 34M26 34Q32 25 37 34"/>'),
+        ('IV · Bayundur', 'Ünlü harfe benzer.', MAVI, MAVI_A, '<path d="M12 12H36V23H12M12 12V34H36V40"/>'),
     ]
     ic = ''
     for i, (bas, acik, r, z, cizim) in enumerate(kartlar):
         x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 46
         ic += kutu(x, y, 172, 42, z, r, 7, 1.3)
         ic += f'<g transform="translate({x + 2}, {y})" fill="none" stroke="{r}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">{cizim}</g>'
-        ic += yazi(x + 54, y + 17, bas, 11, r, 'start')
-        ic += yazi(x + 54, y + 33, acik, 10.5, LAC, 'start', True)
-    return svg(360, 96, ic, 'Dört damga inceleme kartı: I Bayat üçgen vardır, II Eymür dörtgen vardır, III Karaeyli üç paralel çizgiden oluşur, IV Bayundur küçük ünlü harfi andırır.', 19)
+        ic += yazi(x + 48, y + 17, bas, 11, r, 'start')
+        ic += yazi(x + 48, y + 33, acik, 10.5, LAC, 'start', True)
+    return svg(360, 96, ic, 'Dört damga inceleme kartı: I Bayat üçgen vardır, II Eymür dörtgen vardır, III Karaeyli üç paralel çizgi vardır, IV Bayundur ünlü harfe benzer.', 19)
 
 
 def deyim_sahne_karti():
@@ -153,7 +153,7 @@ def paragraf_plan_semasi():
         ic += yazi(x + 54, 24, bas, 10.5, r)
         ic += yazi(x + 54, 39, deger, 10.5, LAC, 'middle', True)
     ic += kutu(10, 52, 340, 38, MOR_A, MOR, 6, 1.2)
-    ic += yazi(180, 67, 'Paragraf Yapısı: Başlatma (hazırlar) → Sürdürme (bağlar) → Sonlandırma (toparlar)', 10.5, LAC)
+    ic += yazi(180, 67, 'Başlatma (hazırlar) → Sürdürme (bağlar) → Sonlandırma (toparlar)', 10.5, LAC)
     ic += yazi(180, 82, 'Üç bölüm de seçilen konuya ve hedef kitleye uygun kurulur.', 10.5, MOR, 'middle', True)
     return svg(360, 100, ic, 'Paragraf yazma planı: 1. Konu Kelime madeni, 2. Hedef Kitle Okul öncesi çocuklar, 3. Yazma Ortamı Çizgili defter; altta Başlatma, Sürdürme ve Sonlandırma akışı.', 19)
 
@@ -178,16 +178,16 @@ def cumle_oyunu_karti():
     ic = kutu(4, 4, 352, 84, YES_A, YES, 8, 1.3)
     ic += yazi(180, 20, 'KELİMELERLE CÜMLE KURMA OYUNU · “K” Harfi Listesi', 11, YES)
     etiketler = [
-        ('İsimler:', 'kardeş, kitap, kütüphane', MAVI, 12, 28),
-        ('Sıfat / Fiil:', 'kırmızı, kaybetmek', TUR, 186, 28),
-        ('Deyim:', 'kara kara düşünmek', MOR, 12, 56),
-        ('İkileme:', 'koşa koşa', KIR, 186, 56),
+        ('İsim:', 'kardeş, kitap, kalem', MAVI, 12, 28, 44),
+        ('Sıfat/Fiil:', 'kırmızı, koşmak', TUR, 186, 28, 62),
+        ('Deyim:', 'kara kara düşünmek', MOR, 12, 56, 48),
+        ('İkileme:', 'koşa koşa', KIR, 186, 56, 56),
     ]
-    for bas, m, r, x, y in etiketler:
+    for bas, m, r, x, y, dx in etiketler:
         ic += kutu(x, y, 162, 24, '#fff', r, 5, 1.1)
-        ic += yazi(x + 8, y + 16, bas, 10.5, r, 'start')
-        ic += yazi(x + 74, y + 16, m, 10.5, LAC, 'start', True)
-    return svg(360, 92, ic, 'Kelimelerle cümle kurma oyunu K harfi listesi: kardeş, kitap, kütüphane, kırmızı, kaybetmek, kara kara düşünmek, koşa koşa.', 18)
+        ic += yazi(x + 6, y + 16, bas, 10.5, r, 'start')
+        ic += yazi(x + dx, y + 16, m, 10.5, LAC, 'start', True)
+    return svg(360, 92, ic, 'Kelimelerle cümle kurma oyunu K harfi listesi: kardeş, kitap, kalem, kırmızı, koşmak, kara kara düşünmek, koşa koşa.', 18)
 
 
 def uygula(o):
