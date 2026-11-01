@@ -1,5 +1,5 @@
 {
- "aciklama": "Sınıflar ve dersler. 'siniflar' ortak dersler, 'secmeli' seçmeli ve imam hatip dersleri. İçerikler icerikler.json'da 'sinif' (sayı) ve 'ders' (buradaki kısa ad) alanlarıyla bu listeye bağlanır.",
+ "aciklama": "Sınıflar ve dersler. 'siniflar' ortak dersler, 'secmeli' seçmeli ve imam hatip dersleri, 'ilkokul' yalnız öğretmen planları bulunan 1-4. sınıf dersleri (öğrenci sayfalarında çıkmaz). İçerikler icerikler.json'da 'sinif' (sayı) ve 'ders' (buradaki kısa ad) alanlarıyla bu listeye bağlanır.",
  "kademeler": [
   {
    "ad": "Ortaokul",
@@ -48,7 +48,12 @@
   "dinler-tarihi": "Dinler Tarihi",
   "hitabet-ve-mesleki-uygulama": "Hitabet ve Mesleki Uygulama",
   "kelam": "Kelam",
-  "islam-kultur-ve-medeniyeti": "İslam Kültür ve Medeniyeti"
+  "islam-kultur-ve-medeniyeti": "İslam Kültür ve Medeniyeti",
+  "hayat-bilgisi": "Hayat Bilgisi",
+  "gorsel-sanatlar": "Görsel Sanatlar",
+  "muzik": "Müzik",
+  "beden-egitimi-ve-oyun": "Beden Eğitimi ve Oyun",
+  "insan-haklari-vatandaslik-ve-demokrasi": "İnsan Hakları, Vatandaşlık ve Demokrasi"
  },
  "siniflar": {
   "5": [
@@ -245,6 +250,47 @@
    "mesleki-arapca",
    "kelam",
    "islam-kultur-ve-medeniyeti"
+  ]
+ },
+ "ilkokul": {
+  "1": [
+   "turkce",
+   "matematik",
+   "hayat-bilgisi",
+   "gorsel-sanatlar",
+   "muzik",
+   "beden-egitimi-ve-oyun"
+  ],
+  "2": [
+   "turkce",
+   "matematik",
+   "hayat-bilgisi",
+   "ingilizce",
+   "gorsel-sanatlar",
+   "muzik",
+   "beden-egitimi-ve-oyun"
+  ],
+  "3": [
+   "turkce",
+   "matematik",
+   "hayat-bilgisi",
+   "fen-bilimleri",
+   "ingilizce",
+   "gorsel-sanatlar",
+   "muzik",
+   "beden-egitimi-ve-oyun"
+  ],
+  "4": [
+   "turkce",
+   "matematik",
+   "fen-bilimleri",
+   "sosyal-bilgiler",
+   "ingilizce",
+   "din-kulturu-ve-ahlak-bilgisi",
+   "insan-haklari-vatandaslik-ve-demokrasi",
+   "gorsel-sanatlar",
+   "muzik",
+   "beden-egitimi-ve-oyun"
   ]
  }
 }

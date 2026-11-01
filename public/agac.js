@@ -64,6 +64,13 @@
     return (i) => (i.kitle || 'ogrenci') === KITLE || turKitle[i.tur] === KITLE;
   };
 
+  // İlkokul (1-4) yalnız öğretmen dalında; öğrenci sayfaları 5-12 kalır
+  const ogretmenDersleri = (d) => (d.ilkokul ? {
+    ...d,
+    kademeler: [{ ad: 'İlkokul', siniflar: Object.keys(d.ilkokul).map(Number) }, ...d.kademeler],
+    siniflar: { ...d.ilkokul, ...d.siniflar },
+  } : d);
+
   // Bu haftanın numarası (planın hafta başlangıç tarihlerinden; ortak.js haftaBul: yerel saat, hafta sonu gelecek hafta)
   const buHafta = (haftalar) => {
     const b = typeof haftaBul === 'function' ? haftaBul(haftalar) : null;
@@ -628,6 +635,7 @@
       const calismalar = dersIc.filter((i) => i.tur === 'Çalışma kâğıdı');
       const ozetler = dersIc.filter((i) => i.tur === 'Konu anlatımı');
       const ag = dizin?.[`${secSinif}-${secDers}`];
+      const ilkokul = secSinif < 5;   // ilkokulda yalnız plan dosyaları var
 
       const eylemKarti = (simgeAd, kRengi, baslik, alt, href, rozetMetin) => el('a', { sinif: 'ogt-eylem-kart', href, 'data-renk': kRengi },
         el('span', { sinif: 'ogt-eylem-simge', 'aria-hidden': 'true' }, simge(simgeAd)),
@@ -638,17 +646,17 @@
 
       matrisKutu.replaceChildren(
         eylemKarti('takvim', 'turuncu', 'Günlük Ders Planı', `${secSinif}. Sınıf ${dersAd} · Okul ve öğretmen adına özel`, `/planlar.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}`, 'Word & PDF'),
-        eylemKarti('takvim', 'mavi', 'Yıllık Plan (TYMM)', yillikPlan ? yillikPlan.baslik : `${secSinif}. Sınıf ${dersAd} haftalık yıllık plan`, yillikPlan ? yol(yillikPlan.hazirla || yillikPlan.dosya || yillikPlan.goruntule) : `/ogretmen.html?kategori=yillik-plan&sinif=${secSinif}`, yillikPlan ? 'Hazır İndir' : 'Planlar'),
-        eylemKarti('onay', 'pembe', 'Ortak Yazılı & Cevaplı Kâğıtlar', `${secSinif}. Sınıf ${dersAd} senaryoları ve cevap anahtarlı PDF'ler`, `/yazili.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}`, 'Senaryo & PDF'),
+        eylemKarti('takvim', 'mavi', secSinif === 4 ? 'Yıllık Plan' : 'Yıllık Plan (TYMM)', yillikPlan ? yillikPlan.baslik : `${secSinif}. Sınıf ${dersAd} haftalık yıllık plan`, yillikPlan ? yol(yillikPlan.hazirla || yillikPlan.dosya || yillikPlan.goruntule) : `/ogretmen.html?kategori=yillik-plan&sinif=${secSinif}`, yillikPlan ? 'Hazır İndir' : 'Planlar'),
+        ...(ilkokul ? [] : [eylemKarti('onay', 'pembe', 'Ortak Yazılı & Cevaplı Kâğıtlar', `${secSinif}. Sınıf ${dersAd} senaryoları ve cevap anahtarlı PDF'ler`, `/yazili.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}`, 'Senaryo & PDF'),
         eylemKarti('kalem', 'yesil', 'Çalışma Kâğıtları', calismalar.length ? `${calismalar.length} haftalık çalışma kâğıdı (cevaplı & cevapsız)` : 'Derste kullanmak için çalışma yaprakları', `/icerikler.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}&tur=${encodeURIComponent('Çalışma kâğıdı')}`, calismalar.length ? `${calismalar.length} PDF` : 'Kütüphane'),
         eylemKarti('kitap', renk, 'Konu Anlatımları & Sunum', ag ? `${ag.unite} ünite · ${ag.konu} konu · Akıllı tahta sunum modu` : `${ozetler.length} haftalık konu özeti`, `/ogrenci.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}`, ozetler.length ? `${ozetler.length} hafta` : 'Üniteler'),
         (secSinif >= 5 && secSinif <= 8)
           ? eylemKarti('onay', 'lacivert', 'ASDS Deneme Sınavları (A & B)', `${secSinif}. Sınıf cevapsız ve cevaplı A/B kitapçıkları + anahtar`, `/sinav.html?sinif=${secSinif}#asds-sinif-${secSinif}`, 'A/B PDF')
-          : eylemKarti('kitap', 'turkuaz', 'Ders Kitabı & Öğretim Programı', dersKitabi ? 'MEB ders kitabı ve TYMM öğrenme çıktıları' : 'TYMM öğretim programı ve resmî belgeler', dersKitabi ? yol(dersKitabi.goruntule || dersKitabi.baglanti) : (ogretimProg ? yol(ogretimProg.goruntule || ogretimProg.dosya) : '/belgeler.html'), dersKitabi ? 'Kitabı Aç' : 'Program')
+          : eylemKarti('kitap', 'turkuaz', 'Ders Kitabı & Öğretim Programı', dersKitabi ? 'MEB ders kitabı ve TYMM öğrenme çıktıları' : 'TYMM öğretim programı ve resmî belgeler', dersKitabi ? yol(dersKitabi.goruntule || dersKitabi.baglanti) : (ogretimProg ? yol(ogretimProg.goruntule || ogretimProg.dosya) : '/belgeler.html'), dersKitabi ? 'Kitabı Aç' : 'Program')])
       );
 
       haftaKutu.replaceChildren(el('p', { sinif: 'ogt-hafta-yukleniyor' }, `${secSinif}. Sınıf ${dersAd} bu haftanın ders planı kontrol ediliyor…`));
-      const agacVeri = await veri(`agac/${secSinif}-${secDers}.json`);
+      const agacVeri = ilkokul ? null : await veri(`agac/${secSinif}-${secDers}.json`);
       if (buIstek !== istekNo) return;
       const buH = agacVeri?.haftalar ? buHafta(agacVeri.haftalar) : null;
       const hNo = buH?.no ?? null;
@@ -678,7 +686,7 @@
         haftaKutu.replaceChildren(
           el('div', { sinif: 'ogt-hafta-sol' },
             el('strong', {}, `${secSinif}. Sınıf ${dersAd} Derse Hazırlık`),
-            el('small', {}, 'Günlük plan, ortak yazılı ve ders materyallerine aşağıdaki kartlardan tek tıkla ulaşabilirsiniz.')),
+            el('small', {}, ilkokul ? 'Günlük ve yıllık plana aşağıdaki kartlardan tek tıkla ulaşabilirsiniz.' : 'Günlük plan, ortak yazılı ve ders materyallerine aşağıdaki kartlardan tek tıkla ulaşabilirsiniz.')),
           el('div', { sinif: 'ogt-hafta-eylemler' },
             el('a', { sinif: 'dugme ana', href: `/planlar.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}` }, simge('takvim'), 'Günlük Plan Hazırla'),
             el('a', { sinif: 'dugme', href: '/tahta.html' }, simge('kalem'), 'Akıllı Tahta')));
@@ -779,7 +787,8 @@
       return;
     }
     const n = Number(P.get('sinif')) || null;
-    if (n && !v.dersler.siniflar[n]) { location.replace(location.pathname); return; }
+    const ogt = KITLE === 'ogrenci' ? v : { ...v, dersler: ogretmenDersleri(v.dersler) };
+    if (n && !ogt.dersler.siniflar[n]) { location.replace(location.pathname); return; }
     if (KITLE === 'ogrenci') {
       const d = P.get('ders');
       const yz = n ? await yaziliVeri() : null;
@@ -788,8 +797,8 @@
       else ogrenciKok(v, dizin);
     } else {
       const kat = KATEGORILER.find((k) => k.kod === P.get('kategori') && k.tur);
-      if (kat) ogretmenKategori(v, kat, n);
-      else ogretmenKok(v, dizin);
+      if (kat) ogretmenKategori(ogt, kat, n);
+      else ogretmenKok(ogt, dizin);
     }
     alan.setAttribute('aria-busy', 'false');
     // Bölüm sayfa açıldıktan sonra çizildiği için #yaziliya-hazirlik bağlantısıyla gelindiyse oraya kaydır

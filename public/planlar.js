@@ -272,12 +272,13 @@ const Plan = (() => {
   if (!document.getElementById('p-bilgi')) return;
   const ANAHTAR = 'dk-plan-bilgi';
   const SINIF_ANAHTAR = 'dk-secili-sinif';
-  const SINIF_RENK = { 5: 'mor', 6: 'yesil', 7: 'turuncu', 8: 'mavi', 9: 'pembe', 10: 'sari', 11: 'turkuaz', 12: 'lacivert' };
+  const SINIF_RENK = { 1: 'kirmizi', 2: 'turuncu', 3: 'zumrut', 4: 'turkuaz', 5: 'mor', 6: 'yesil', 7: 'turuncu', 8: 'mavi', 9: 'pembe', 10: 'sari', 11: 'turkuaz', 12: 'lacivert' };
   const DERS_RENK = {
     matematik: 'mavi', 'fen-bilimleri': 'turkuaz', fizik: 'lacivert', kimya: 'mor', biyoloji: 'zumrut',
     turkce: 'kirmizi', 'turk-dili-ve-edebiyati': 'kirmizi', ingilizce: 'pembe', arapca: 'turkuaz', 'mesleki-arapca': 'turkuaz',
     'sosyal-bilgiler': 'turuncu', 'tc-inkilap-tarihi-ve-ataturkculuk': 'turuncu', tarih: 'turuncu', cografya: 'zumrut', felsefe: 'sari',
     'din-kulturu-ve-ahlak-bilgisi': 'yesil', 'kuran-i-kerim': 'zumrut', 'peygamberimizin-hayati': 'yesil', 'temel-dini-bilgiler': 'turkuaz',
+    'hayat-bilgisi': 'zumrut', 'gorsel-sanatlar': 'pembe', muzik: 'mor', 'beden-egitimi-ve-oyun': 'turuncu', 'insan-haklari-vatandaslik-ve-demokrasi': 'sari',
   };
   const dersRenk = (d) => DERS_RENK[d] || 'mavi';
   const IH = new Set(['arapca', 'mesleki-arapca', 'fikih', 'hadis', 'siyer', 'akaid', 'tefsir', 'dinler-tarihi', 'hitabet-ve-mesleki-uygulama', 'kelam', 'islam-kultur-ve-medeniyeti']);
@@ -380,8 +381,9 @@ const Plan = (() => {
     const hedefSinif = p.siniflar.includes(sinif) ? sinif : p.siniflar[0];
     ilgili.replaceChildren(
       el('span', { sinif: 'plan-ilgili-etiket' }, 'Bu dersin diğer materyalleri:'),
-      el('a', { sinif: 'plan-ilgili-bag', href: `/ogrenci.html?sinif=${hedefSinif}&ders=${encodeURIComponent(p.ders)}` }, 'Haftalık Konu Özetleri →'),
-      el('a', { sinif: 'plan-ilgili-bag', href: `/yazili.html?sinif=${hedefSinif}&ders=${encodeURIComponent(p.ders)}` }, 'Ortak Yazılılar →'),
+      ...(hedefSinif < 5 ? [] : [   // ilkokulda konu özeti ve ortak yazılı yok
+        el('a', { sinif: 'plan-ilgili-bag', href: `/ogrenci.html?sinif=${hedefSinif}&ders=${encodeURIComponent(p.ders)}` }, 'Haftalık Konu Özetleri →'),
+        el('a', { sinif: 'plan-ilgili-bag', href: `/yazili.html?sinif=${hedefSinif}&ders=${encodeURIComponent(p.ders)}` }, 'Ortak Yazılılar →')]),
       el('a', { sinif: 'plan-ilgili-bag', href: `/icerikler.html?sinif=${hedefSinif}&ders=${encodeURIComponent(p.ders)}&tur=${encodeURIComponent('Yıllık plan')}` }, 'Yıllık Plan →'));
 
     let haftaOnizleme = $('#p-hafta-onizleme', kutu);
@@ -466,7 +468,7 @@ const Plan = (() => {
           el('div', {},
             el('span', { sinif: 'ust-baslik' }, 'Haftalık kazanım & içerik önizleme'),
             el('h3', { sinif: 'plan-alt-baslik' }, 'Tek hafta seç, incele veya yalnız o haftayı indir')),
-          el('div', { sinif: 'plan-hafta-araclar' }, oncekiBtn, secSelect, sonrakiBtn, igHaftaBtn, haftaIndirBtn)),
+          el('div', { sinif: 'plan-hafta-araclar' }, oncekiBtn, secSelect, sonrakiBtn, sinif < 5 ? null : igHaftaBtn, haftaIndirBtn)),
         detayKutu);
     }).catch(() => { haftaOnizleme.replaceChildren(); });
 
@@ -515,12 +517,14 @@ const Plan = (() => {
       : [el('p', { sinif: 'plan-bos' }, q ? `“${q}” için ${sinif}. sınıfta plan bulunamadı.` : 'Bu sınıf için plan yok.')]));
     $('#p-sonuc').textContent = q ? (liste.length ? `${liste.length} ders bulundu.` : 'Ders bulunamadı.') : '';
   };
+  const okulOrnek = () => { alan.okul.placeholder = `Örnek: Atatürk ${sinif < 5 ? 'İlkokulu' : 'Ortaokulu'}`; };
   const siniflar = () => {
     const tum = [...new Set(dizin.flatMap((p) => p.siniflar))].sort((a, b) => a - b);
     $('#p-siniflar').replaceChildren(...tum.map((n) => el('button', {
       type: 'button', sinif: 'sekme', 'data-renk': SINIF_RENK[n] || 'mavi', 'aria-pressed': String(n === sinif), 'data-n': n,
       onclick: () => {
         sinif = n;
+        okulOrnek();
         try { localStorage.setItem(SINIF_ANAHTAR, String(n)); } catch {}
         if (secili && !secili.siniflar.includes(n)) { secili = null; indirPanel(); }
         // sekmeler yeniden kurulmaz: klavye odağı basılan düğmede kalır
@@ -547,6 +551,7 @@ const Plan = (() => {
       secili = dizin.find((p) => p.siniflar.includes(sinif) && p.ders === 'matematik') || dizin.find((p) => p.siniflar.includes(sinif)) || null;
     }
     if (secili || ps) document.title = secili ? `${tamAd(secili)} günlük planları · Ders Kutusu` : `${sinif}. sınıf günlük planları · Ders Kutusu`;
+    okulOrnek();
     siniflar();
     dersler();
     indirPanel();

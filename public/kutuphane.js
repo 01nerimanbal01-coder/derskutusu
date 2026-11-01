@@ -155,12 +155,13 @@ function icerikSayfasi({ dersler, icerikler }) {
     });
     gorunumUygula(aktifGorunum);
   }
-  alan.sinif.append(...Object.keys(dersler.siniflar).map((n) => el('option', { value: n }, `${n}. sınıf`)));
+  const sinifDersleri = { ...dersler.ilkokul, ...dersler.siniflar };   // 1-4: yalnız öğretmen dosyaları (planlar)
+  alan.sinif.append(...Object.keys(sinifDersleri).map((n) => el('option', { value: n }, `${n}. sınıf`)));
   const haftalar = [...new Set(icerikler.map((i) => Number(i.hafta)).filter((n) => Number.isInteger(n) && n > 0))].sort((a, b) => a - b);
   alan.hafta.append(...haftalar.map((n) => el('option', { value: String(n) }, `${n}. hafta`)));
   const dersSecenekleri = () => {
     const n = alan.sinif.value;
-    const kisa = n ? [...dersler.siniflar[n], ...(dersler.secmeli?.[n] || [])] : Object.keys(dersler.dersler).sort((a, b) => dersler.dersler[a].localeCompare(dersler.dersler[b], 'tr'));
+    const kisa = n ? [...sinifDersleri[n], ...(dersler.secmeli?.[n] || [])] : Object.keys(dersler.dersler).sort((a, b) => dersler.dersler[a].localeCompare(dersler.dersler[b], 'tr'));
     const onceki = alan.ders.value;
     alan.ders.replaceChildren(el('option', { value: '' }, 'Bütün dersler'), ...kisa.map((d) => el('option', { value: d }, dersler.dersler[d])));
     if (kisa.includes(onceki)) alan.ders.value = onceki;

@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'agac.js': '20261031-6', 'yazili.js': '20261010-1', 'ortak.js': '20261031-7', 'tahta.js': '20261018-5', 'etkinlik.js': '20261017-9', 'arama.js': '20261031-7', 'kutuphane.js': '20261031-6', 'arapca.js': '20261031-7', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261031-6', 'asds.js': '20261031-6'}
+BETIK_SURUMLERI = {'goruntule.js': '20261012-1', 'belgeler.js': '20261012-1', 'planlar.js': '20261101-1', 'agac.js': '20261101-1', 'yazili.js': '20261010-1', 'ortak.js': '20261031-7', 'tahta.js': '20261018-5', 'etkinlik.js': '20261017-9', 'arama.js': '20261031-7', 'kutuphane.js': '20261101-1', 'arapca.js': '20261031-7', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261031-6', 'asds.js': '20261031-6'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -512,11 +512,11 @@ def _sinav_govde():
 {asds_bolumu}{sayac_ve_hesap}{bolumler}{hesaplayici}'''
 
 
-GOVDE['planlar.html'] = ('Günlük planlar', 'Günlük ders planları: Okul, öğretmen, müdür yardımcısı ve müdür adları her sayfaya yazılır. Plan tüm yıl ya da ay ay, Word veya PDF olarak indirilir.', '''  <section class="sayfa-bas plan-bas">
+GOVDE['planlar.html'] = ('Günlük planlar', '1-12. sınıf günlük ders planları: Okul, öğretmen, müdür yardımcısı ve müdür adları her sayfaya yazılır. Plan tüm yıl ya da ay ay, Word veya PDF olarak indirilir.', '''  <section class="sayfa-bas plan-bas">
     <div class="kap">
       <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/#ogretmen">Öğretmen</a><span aria-hidden="true">/</span><span>Günlük planlar</span></nav>
       <h1>Günlük ders planları</h1>
-      <p>Okulun adını, kendi adınızı, müdür yardımcısının ve müdürün adını bir kez yazın. İndirdiğiniz planın her sayfasına bu bilgiler kendiliğinden yerleşir. Planı tüm yıl ya da ay ay, Word veya PDF olarak alın.</p>
+      <p>İlkokuldan liseye bütün sınıfların planları burada. Okulun adını, kendi adınızı, müdür yardımcısının ve müdürün adını bir kez yazın. İndirdiğiniz planın her sayfasına bu bilgiler kendiliğinden yerleşir. Planı tüm yıl ya da ay ay, Word veya PDF olarak alın.</p>
       <ol class="plan-adimlar" aria-label="Adımlar">
         <li><span>1</span>Bilgileri yazın</li>
         <li><span>2</span>Sınıfı ve dersi seçin</li>
