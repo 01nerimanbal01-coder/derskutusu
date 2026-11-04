@@ -15,7 +15,7 @@ ALT = re.sub(r'href="#', 'href="/#', re.sub(r'href="([a-z0-9-]+\.html)', r'href=
 ALT_BILGI = re.search(r'<nav aria-label="Bilgi">.*?</nav>', ana, re.S).group(0)
 ALT_BILGI = re.sub(r'href="#', 'href="/#', re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', ALT_BILGI))
 ALT_SOSYAL = re.search(r'<div class="alt-sosyal">.*?</div>', ana, re.S).group(0)
-SURUMLER = [('stil.css', SURUM), ('tahta.js', BETIK_SURUMLERI['tahta.js']), ('kutuphane.js', BETIK_SURUMLERI['kutuphane.js']), ('asds.js', BETIK_SURUMLERI['asds.js']),
+SURUMLER = [('stil.css', SURUM), ('kpss.css', SURUM), ('arapca.css', SURUM), ('tahta.js', BETIK_SURUMLERI['tahta.js']), ('kutuphane.js', BETIK_SURUMLERI['kutuphane.js']), ('asds.js', BETIK_SURUMLERI['asds.js']),
             *((d, re.search(r'v=([\w-]+)', s).group(1)) for d, s in (('kesif.css', KESIF_CSS), ('renkler.css', RENK_CSS), ('agac.css', AGAC_CSS)))]
 REKLAM_ETIKETI = re.compile(r'<script async src="https://pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js\?client=[\w-]+" crossorigin="anonymous"></script>\n?')
 YOL = re.compile(r'<a href="/sinif\.html\?no=(\d+)">(\d+)\. sınıf</a><span aria-hidden="true">/</span><a href="/icerikler\.html\?sinif=(\d+)&amp;ders=([a-z-]+)">')
