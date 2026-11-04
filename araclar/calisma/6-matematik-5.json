@@ -1,0 +1,276 @@
+{
+  "sinif": 6,
+  "ders": "matematik",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-10-14",
+  "baslik": "Deneysel Olasılıkta Tekrar Sayısı ve Ondalık Gösterimlerin Basamak Değerleri",
+  "alt_baslik": "Veriden Olasılığa / Sayılar ve Nicelikler (2) · 6. Sınıf 5. Hafta",
+  "renk": "#ee7d12",
+  "konu": "Deneysel Olasılıkta Tekrar Sayısı ve Ondalık Gösterimlerin Basamak Değerleri",
+  "ciktilar": [
+    "MAT.6.6.1. Bir olayın olasılığını gözleme dayalı tahmin edebilme",
+    "MAT.6.1.5. Gerçek yaşam durumlarında ondalık gösterimlerin basamak değerlerini kesirlerden yararlanarak yorumlayabilme"
+  ],
+  "hatirla": [
+    "Bir deneyde tekrar sayısı arttıkça göreli sıklıktaki dalgalanma azalır ve göreli sıklık belirli bir değerin çevresinde toplanır; en çok tekrarlı veri olasılık tahmini için en güvenilir dayanaktır.",
+    "Belirlenen olasılık değeriyle gelecekteki tekrarlar için kesin sayı değil “yaklaşık” sıklık tahmini yapılır; çok sayıda atışta bir çıktının göreli sıklığı aşırı yüksekse deney aracının hileli olduğu düşünülür.",
+    "Ondalık gösterimde virgülün sağındaki basamaklar sırasıyla onda birler ({kesir:1|10} = 0,1), yüzde birler ({kesir:1|100} = 0,01) ve binde birler ({kesir:1|1000} = 0,001) basamaklarıdır.",
+    "Rakamın basamak değeri, rakam ile bulunduğu basamak değerinin çarpımıdır; sayı basamak değerlerinin toplamı olarak çözümlenir: 14,308 = 10 + 4 + {kesir:3|10} + {kesir:8|1000}."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Sol sütunda verilen ondalık gösterimleri sağ sütundaki kesirli çözümlemeleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "4,68",
+          "4 + {kesir:6|10} + {kesir:8|100}"
+        ],
+        [
+          "4,068",
+          "4 + {kesir:6|100} + {kesir:8|1000}"
+        ],
+        [
+          "0,468",
+          "{kesir:4|10} + {kesir:6|100} + {kesir:8|1000}"
+        ],
+        [
+          "4,608",
+          "4 + {kesir:6|10} + {kesir:8|1000}"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki raptiye atma deneyinde dört farklı tekrar sayısına ait kayıtlar verilmiştir. Sivri ucun yukarı gelme olasılığını tahmin etmek için hangi veriyi kullanmak en güvenilirdir ve bu tahmine göre 1000 atışta sivri ucun {koyu:yaklaşık} kaç kez yukarı gelmesi beklenir?",
+      "secenekler": [
+        "500 atışlık veri ({kesir:320|500} = %64) en güvenilirdir; 1000 atışta yaklaşık 640 kez yukarı gelmesi beklenir.",
+        "10 atışlık veri ({kesir:8|10} = %80) en güvenilirdir; 1000 atışta tam olarak 800 kez yukarı gelmesi beklenir.",
+        "50 atışlık veri ({kesir:29|50} = %58) en güvenilirdir; 1000 atışta yaklaşık 580 kez yukarı gelmesi beklenir.",
+        "Dört aşamanın da güvenilirliği eşittir; 1000 atışta her zaman tam 500 kez yukarı gelmesi beklenir."
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Deneysel olasılıkta tekrar sayısı ve ondalık basamak değerleriyle ilgili ifadelerden doğru olanların D, yanlış olanların Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Aynı madenî parayı 15 kez atan bir öğrencinin 11 tura bulması paranın kesinlikle hileli olduğunu kanıtlar.",
+          "dogru": false
+        },
+        {
+          "metin": "Sınıftaki tüm öğrencilerin deney sonuçlarını tek tabloda birleştirmek tekrar sayısını büyüttüğü için daha güvenilir sonuç verir.",
+          "dogru": true
+        },
+        {
+          "metin": "Ondalık gösterimde her basamağın değeri, hemen sağındaki basamağın değerinin 10 katına eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "0,609 ondalık gösteriminde onda birler ile binde birler arasındaki sıfır silinirse sayının değeri değişmez.",
+          "dogru": false
+        },
+        {
+          "metin": "1 kilogramın {kesir:1|1000}’i 1 gram olduğundan, market terazisindeki 2,345 kg ifadesi 2 kg 345 gram anlamına gelir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun sözcüklerle tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Deneyde tekrar sayısı büyüdükçe göreli sıklıktaki rastgele ___ giderek küçülür.",
+          "cevap": "dalgalanma"
+        },
+        {
+          "metin": "Ondalık gösterimde virgülden sonraki ikinci basamağa ___ birler basamağı denir.",
+          "cevap": "yüzde"
+        },
+        {
+          "metin": "Bir ondalık gösterimi basamak değerlerinin toplamı biçiminde yazma işlemine ___ adı verilir.",
+          "cevap": "çözümleme"
+        },
+        {
+          "metin": "Bir liranın {kesir:1|100}’ü bir ___ olduğundan 18,45 TL ifadesi 18 lira 45 kuruşu gösterir.",
+          "cevap": "kuruş"
+        }
+      ],
+      "fazla": [
+        "onluk"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki basamak tablosunda gösterilen 36,409 sayısıyla ilgili aşağıdaki ifadelerden hangisi {koyu:yanlıştır}?",
+      "secenekler": [
+        "4 rakamı onda birler basamağındadır ve basamak değeri {kesir:4|10} (0,4) olarak yazılır.",
+        "9 rakamı yüzde birler basamağındadır ve basamak değeri {kesir:9|100} (0,09) olarak yazılır.",
+        "Sayının tam kısmı 36, ondalık kısmı ise 409 olup “otuz altı tam binde dört yüz dokuz” diye okunur.",
+        "Sayı 30 + 6 + {kesir:4|10} + {kesir:9|1000} biçiminde kesirlerin toplamı olarak çözümlenir."
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört sayı kartında yer alan {koyu:8 rakamının} bulunduğu basamağın adını ve kesirli basamak değerini tabloya yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Karttaki Sayı",
+        "8 Rakamının Basamağı",
+        "Basamak Değeri"
+      ],
+      "satirlar": [
+        [
+          "1. Kart: 8,42",
+          "Birler basamağı",
+          "8"
+        ],
+        [
+          "2. Kart: 1,85",
+          {
+            "b": "Onda birler basamağı"
+          },
+          {
+            "b": "{kesir:8|10}"
+          }
+        ],
+        [
+          "3. Kart: 5,083",
+          {
+            "b": "Yüzde birler basamağı"
+          },
+          "{kesir:8|100}"
+        ],
+        [
+          "4. Kart: 0,248",
+          "Binde birler basamağı",
+          {
+            "b": "{kesir:8|1000}"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki kapalı torbada mavi ve kırmızı olmak üzere toplam 40 bilye vardır. Geri konularak yapılan 200 çekilişte 70 kez kırmızı bilye geldiğine göre kırmızı gelme göreli sıklığını ve torbadaki yaklaşık kırmızı bilye sayısını bulunuz.",
+      "cevap": "Göreli sıklık %35’tir; torbadaki 40 bilyenin 14 tanesi kırmızıdır.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört kartta verilen ondalık sayıların içindeki {koyu:5 rakamının basamak değerini} küçükten büyüğe doğru (1’den 4’e kadar) sıralayınız.",
+      "ogeler": [
+        "K Kartı: 9,125 sayısındaki 5 rakamının basamak değeri ({kesir:5|1000} = 0,005)",
+        "L Kartı: 4,052 sayısındaki 5 rakamının basamak değeri ({kesir:5|100} = 0,05)",
+        "M Kartı: 0,581 sayısındaki 5 rakamının basamak değeri ({kesir:5|10} = 0,5)",
+        "N Kartı: 5,314 sayısındaki 5 rakamının basamak değeri (5 × 1 = 5)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki deney tablosunda K ve L sayı küplerinin 600’er atışlık sıklık sonuçları verilmiştir. Bu tablodaki verilere dayanarak aşağıdaki yargılardan hangisine ulaşılır?",
+      "secenekler": [
+        "K küpünde 1’den 6’ya tüm yüzlerin sıklıkları 100’e çok yakın olduğundan K küpü ağırlaştırılmış (hileli) bir küptür.",
+        "L küpünde 600 atışın 240’ında (%40) üst yüze 4 sayısı geldiği için L küpünün yüzleri eşit şanslı değildir.",
+        "Her iki küp de 600 kez atıldığı için iki küpte de 4 gelme olayının deneysel olasılığı birbirine eşittir.",
+        "Tekrar sayısı 600 yerine 6 olsaydı küplerin eşit şanslı olup olmadığı çok daha kesin biçimde anlaşılırdı."
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarındaki kavramları kutulara yazarak “bir rakamın bulunduğu haneye göre aldığı değerin belirlediği konum” kavramını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "{kesir:1|1000} kesrinin okunuşunda geçen sayı sözcüğü: “… birler”",
+          "cevap": "BİNDE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Ondalık gösterimde tam kısım ile ondalık kısmı ayıran işaret: “… işareti” (Virgülün eş görevi: tam-ondalık ___)",
+          "cevap": "AYIRAÇ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bir çıktının deneyde kaç kez gerçekleştiğini gösteren sayı",
+          "cevap": "SIKLIK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "{kesir:1|10} kesrine karşılık gelen virgülden sonraki ilk basamak: “… birler”",
+          "cevap": "ONDA",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "100 santimetrenin oluşturduğu temel uzunluk ölçüsü birimi",
+          "cevap": "METRE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Olasılık değerine dayanarak gelecekteki tekrarlar için yapılan öngörü",
+          "cevap": "TAHMİN",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Ondalık gösterimi basamak değerleriyle yazarken kullandığımız a ÷ b ifadesi",
+          "cevap": "KESİR",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "BASAMAK"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki karşılaştırma kartında Mert, “0,705 sayısındaki sıfırın basamak değeri 0 olduğu için sıfırı silip 0,75 yazabiliriz, değer değişmez.” demiştir. Mert’in hatasını 5 rakamının basamak değeri üzerinden açıklayınız.",
+      "cevap": "0 silinirse 5 rakamı yüzde birler basamağına kayar ve değeri 10 kat artar.",
+      "satir": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki kırtasiye ve manav fişinde yer alan ölçüm ve fiyat verilerinin kesirli basamak yorumlarından hangisi {koyu:yanlıştır}?",
+      "secenekler": [
+        "Kalem kutusunun fiyatı olan 45,80 TL, 45 tam lira ve {kesir:8|10} lira (80 kuruş) toplamına eşittir.",
+        "Çantanın şerit uzunluğu olan 1,35 metre, 1 tam metre ve {kesir:35|100} metre (35 santimetre) demektir.",
+        "Elma paketinin kütlesi olan 2,065 kilogram, 2 tam kilogram ve {kesir:65|1000} kilogram (65 gram) toplamıdır.",
+        "Silginin fiyatı olan 9,05 TL, 9 tam lira ve {kesir:5|10} lira olduğundan 9 lira 50 kuruş değerindedir."
+      ],
+      "dogru": 3
+    }
+  ]
+}
