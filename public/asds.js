@@ -39,7 +39,7 @@
       ...haftaSecenekleri.map((h) => el('option', { value: String(h.no) }, h.ad)));
     const araInput = el('input', {
       type: 'search',
-      sinif: 'agac-konu-ara asds-ara-girdi',
+      sinif: 'asds-arama-girdi asds-ara-girdi agac-konu-ara',
       placeholder: 'Hafta, ders, kazanım veya konu ara (ör. Ekim 4. hafta, Güneş, karekök, fiilimsiler)…',
       'aria-label': 'Deneme sınavlarında konu veya hafta ara',
       autocomplete: 'off',
@@ -48,8 +48,8 @@
 
     const suzgecCubugu = el('div', { sinif: 'asds-kontrol-pano' },
       sinifSekmeKutu,
-      el('div', { sinif: 'agac-suzgec-cubuk asds-suzgec-alt' },
-        el('div', { sinif: 'agac-suzgec-arama' }, simge('mercek'), araInput),
+      el('div', { sinif: 'asds-suzgec-satir asds-suzgec-alt agac-suzgec-cubuk' },
+        el('div', { sinif: 'asds-arama-kutu agac-suzgec-arama' }, simge('mercek'), araInput),
         el('label', { sinif: 'asds-hafta-etiket' }, 'Hafta:', haftaSelect),
         sayacRozet));
 
@@ -255,7 +255,7 @@
         el('button', {
           type: 'button',
           role: 'tab',
-          sinif: 'asds-sekme',
+          sinif: secSinif === 0 ? 'asds-sekme aktif' : 'asds-sekme',
           'data-renk': 'mavi',
           'aria-selected': String(secSinif === 0),
           onclick: () => { secSinif = 0; ciz(); },
@@ -263,7 +263,7 @@
         ...sinifBloklari.map((b) => el('button', {
           type: 'button',
           role: 'tab',
-          sinif: 'asds-sekme',
+          sinif: secSinif === Number(b.sinif) ? 'asds-sekme aktif' : 'asds-sekme',
           'data-renk': b.renk,
           'aria-selected': String(secSinif === Number(b.sinif)),
           onclick: () => { secSinif = Number(b.sinif); ciz(); },

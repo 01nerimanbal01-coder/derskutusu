@@ -1,9 +1,9 @@
 """Keşif sayfalarının ortak görünümü; içerik kaynaklarını değiştirmez."""
 import re
 
-CSS = '<link rel="stylesheet" href="/kesif.css?v=20261104-5">'
+CSS = '<link rel="stylesheet" href="/kesif.css?v=20261104-6">'
 JS = '<script src="/kesif.js?v=20261029-2"></script>'
-RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261104-5" media="screen">'
+RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261104-6" media="screen">'
 
 
 def renkli_sayfa(html, ad):

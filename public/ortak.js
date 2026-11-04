@@ -103,7 +103,10 @@ $$('[data-yil]').forEach((e) => { e.textContent = new Date().getFullYear(); });
 (() => {
   const kitle = document.body.dataset.kitle;
   try { if (kitle) localStorage.setItem('dk-rol', kitle); } catch {}
-  if (kitle) $$('#ana-menu a').forEach((a) => { if (a.getAttribute('href') === `/${kitle}.html`) a.setAttribute('aria-current', 'page'); });
+  const sayfaYol = location.pathname.endsWith('/') ? location.pathname : (location.pathname.endsWith('.html') ? location.pathname : `${location.pathname}.html`);
+  const dogrudanBag = $$('#ana-menu > a[href]').find((a) => a.getAttribute('href') === sayfaYol);
+  if (dogrudanBag) dogrudanBag.setAttribute('aria-current', 'page');
+  else if (kitle) $$('#ana-menu > a[href]').forEach((a) => { if (a.getAttribute('href') === `/${kitle}.html`) a.setAttribute('aria-current', 'page'); });
   if (!/^\/(index\.html)?$/.test(location.pathname)) return;
   const eski = { '#siniflar': '/ogrenci.html', '#dersler': '/ogrenci.html', '#ogretmen': '/ogretmen.html', '#kategoriler': '/icerikler.html', '#icerikler': '/icerikler.html' }[location.hash];
   if (eski) { location.replace(eski); return; }

@@ -87,10 +87,10 @@ body .kesif-kategori { display:block; min-height:210px; padding:22px; }
 .kesif-ders-baglari a:hover { border-color:var(--kart-ana); text-decoration:none; }
 .kesif-ders-baglari span { min-width:0; overflow-wrap:anywhere; font-size:14px; font-weight:650; }
 .kesif-ders-baglari small { flex:none; font-size:12px; }
-body.kesif-page .kademe { border-top:5px solid var(--kart-vurgu); }
-body.kesif-page .sinif-kart[data-renk] { background:var(--kart-zemin); border-color:var(--kart-cizgi); border-top:4px solid var(--kart-vurgu); }
+body.kesif-page .kademe { border:1px solid var(--cizgi); }
+body.kesif-page .sinif-kart[data-renk] { background:var(--yuzey); border:1px solid var(--cizgi); }
 body.kesif-page .sinif-kart[data-renk] .sinif-no { color:var(--kart-ana); background:transparent; }
-body .ozellik[data-renk] { border:1px solid var(--kart-cizgi); border-top:5px solid var(--kart-vurgu); background:var(--kart-zemin); }
+body .ozellik[data-renk] { border:1px solid var(--cizgi); background:var(--yuzey); }
 body .ozellik[data-renk] h3 { color:var(--kart-ana); }
 body .ozellik[data-renk] .ozellik-simge { background:var(--kart-ana); color:var(--kart-ikon-yazi); }
 body .ozellik[data-renk] .kart-sayi { color:var(--kart-ana); background:var(--yuzey); }
