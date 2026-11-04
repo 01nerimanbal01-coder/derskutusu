@@ -46,7 +46,26 @@
         const ic = document.createElement('i');
         ic.style.width = `${cards.length ? Math.round((completed / cards.length) * 100) : 0}%`;
         bar.append(ic);
-        totalEl.after(bar);
+        const paylasSatir = document.createElement('div');
+        paylasSatir.className = 'dk-ig-calisma-sonu';
+        paylasSatir.style.marginTop = '10px';
+        const igBag = document.createElement('a');
+        igBag.href = 'https://www.instagram.com/derskutusuinfo/';
+        igBag.target = '_blank';
+        igBag.rel = 'noopener';
+        igBag.className = 'dugme ana';
+        igBag.textContent = '📸 @derskutusuinfo Takip Et →';
+        const wpBtn = document.createElement('button');
+        wpBtn.type = 'button';
+        wpBtn.className = 'dugme';
+        wpBtn.textContent = '🟢 KPSS Merkezini Paylaş';
+        wpBtn.onclick = () => {
+          if (window.dkSayfaPaylas) {
+            window.dkSayfaPaylas(wpBtn, '🎯 Ders Kutusu KPSS Hazırlık Merkezi (Genel Yetenek & Genel Kültür konu anlatımları ve süreli deneme testleri — @derskutusuinfo):');
+          }
+        };
+        paylasSatir.append(igBag, wpBtn);
+        totalEl.after(bar, paylasSatir);
       }
     }
   }

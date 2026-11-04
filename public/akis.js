@@ -79,7 +79,15 @@ function instagramGoster(v, ayar) {
       el('div', { sinif: 'ig-vitrin-eylemler' },
         el('a', { sinif: 'dk-ig-takip-btn ig-vitrin-btn', href: profil, target: '_blank', rel: 'noopener' },
           simge('instagram'),
-          el('span', {}, '@derskutusuinfo Hesabını Takip Et →'))));
+          el('span', {}, '@derskutusuinfo Hesabını Takip Et →')),
+        el('button', {
+          type: 'button',
+          sinif: 'dk-ig-paylas-btn',
+          onclick: (e) => window.dkSayfaPaylas && window.dkSayfaPaylas(
+            e.currentTarget,
+            '📸 @derskutusuinfo Instagram eğitim sayfasında 5–12. sınıf 750+ görsel konu özeti kartı, ortak yazılı provaları ve ASDS denemeleri ücretsiz! Hemen takip et:'
+          ),
+        }, '🟢 Arkadaşına Öner')));
     const seriIzgara = el('div', { sinif: 'gonderiler ig-seri-izgara' },
       ...seriler.map((s) =>
         el('a', { sinif: 'ig-seri-kart', 'data-renk': s.renk, href: profil, target: '_blank', rel: 'noopener' },
@@ -108,8 +116,27 @@ function instagramGoster(v, ayar) {
       if (seciliSinif === 'lise') return Number(i.sinif) >= 9;
       return String(i.sinif) === String(seciliSinif);
     });
-    kutu.replaceChildren(...suzulen.map((i) =>
-      el('a', { sinif: 'gonderi', href: i.baglanti || profil || '#sosyal', target: '_blank', rel: 'noopener' },
+    kutu.replaceChildren(...suzulen.map((i, idx) =>
+      el('a', {
+        sinif: 'gonderi',
+        href: i.baglanti || profil || '#sosyal',
+        target: '_blank',
+        rel: 'noopener',
+        onclick: (e) => {
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+          if (window.dkIgHikayeAc) {
+            e.preventDefault();
+            window.dkIgHikayeAc(
+              '📸 @derskutusuinfo Görsel Ders Kartları',
+              suzulen.map((x) => ({
+                gorsel: x.gorsel,
+                etiket: x.aciklama || `${x.sinif ? x.sinif + '. Sınıf ' : ''}Instagram Bilgi Kartı (@derskutusuinfo)`,
+              })),
+              idx
+            );
+          }
+        },
+      },
         el('img', { src: i.gorsel, alt: i.aciklama ? i.aciklama.slice(0, 120) : 'Instagram gönderisi', loading: 'lazy' }),
         i.sinif ? el('span', { sinif: 'ig-kart-sinif-etiket' }, `${i.sinif}. Sınıf`) : null,
         i.tur === 'VIDEO' && el('span', { sinif: 'video-isaret', 'aria-hidden': 'true' }),

@@ -286,11 +286,34 @@
         liste.replaceChildren(el('div', { sinif: 'bh-bos' }, el('p', {}, `${hafta}. haftanın konu anlatımları hazırlanıyor.`), tumu));
         return;
       }
+      const igHaftaDugme = (hafta <= 14 && ana.length) ? el('button', {
+        type: 'button',
+        sinif: 'dugme dk-ig-onizle-btn',
+        onclick: () => {
+          if (window.dkIgHikayeAc && window.dkSosyalKartYolu) {
+            const kartlar = ana.map((i) => ({
+              gorsel: window.dkSosyalKartYolu(sinif, i.ders, hafta),
+              etiket: `${sinif}. Sınıf ${dersler.dersler[i.ders] || i.ders} · ${hafta}. Hafta: ${konuAdi(i.baslik) || i.baslik} (@derskutusuinfo)`,
+            }));
+            window.dkIgHikayeAc(`${sinif}. Sınıf · ${hafta}. Hafta IG Ders Kartları`, kartlar, 0);
+          } else if (window.dkIgKartAc) {
+            window.dkIgKartAc(sinif, ana[0].ders, `${sinif}. Sınıf · ${hafta}. Hafta`, [hafta]);
+          }
+        },
+      }, `📸 ${sinif}. Sınıf ${hafta}. Hafta IG Kartları (${ana.length} Ders)`) : null;
+      const waHaftaDugme = el('button', {
+        type: 'button',
+        sinif: 'dugme dk-ig-paylas-btn',
+        onclick: (ev) => window.dkSayfaPaylas && window.dkSayfaPaylas(
+          ev.currentTarget,
+          `📚 ${sinif}. Sınıf ${hafta}. Hafta Ders Konu Özetleri, Etkinlikler ve Çalışma Kâğıtları — @derskutusuinfo Instagram sayfasını takip ederek hemen çalış:`
+        ),
+      }, '🟢 Bu Haftayı Paylaş');
       liste.replaceChildren(
         ana.length ? el('div', { sinif: 'bh-kartlar' }, ana.map((i) => kart(i, sinif))) : null,
         secmeli.length ? el('h3', { sinif: 'bh-alt-baslik' }, 'Seçmeli dersler') : null,
         secmeli.length ? el('div', { sinif: 'bh-kartlar kucuk' }, secmeli.map((i) => kart(i, sinif))) : null,
-        el('div', { sinif: 'bh-alt' }, tumu));
+        el('div', { sinif: 'bh-alt' }, igHaftaDugme, waHaftaDugme, tumu));
     };
 
     const sinifSec = async (n, kaydet) => {
