@@ -80,3 +80,11 @@
 .ds-outline label { display: flex; align-items: center; gap: 8px; font-size: 14px; }
 .ds-outline select { max-width: min(680px, 100%); flex: 1; min-height: 40px; }
 @media (max-width: 650px) { .ds-outline { padding: 8px 12px 0; } .ds-outline select { min-width: 0; } }
+.ds-ig-kutu { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 24px; padding: 18px 22px; border-radius: 16px; background: linear-gradient(135deg, #fff5f8, #f3eeff); border: 1.5px solid #e5b8d8; }
+.ds-ig-sol { flex: 1 1 320px; }
+.ds-ig-sol strong { display: block; font-size: clamp(18px, 1.8vw, 22px); color: #831843; margin-bottom: 6px; }
+.ds-ig-sol p { margin: 0; font-size: clamp(15px, 1.5vw, 18px); line-height: 1.45; color: #3f274d; }
+.ds-ig-sag { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.ds-ig-bag, .ds-ig-wa { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 8px 16px; border-radius: 10px; font-size: 16px; font-weight: 700; text-decoration: none; }
+.ds-ig-bag { background: linear-gradient(135deg, #e1306c, #833ab4); color: #fff; }
+.ds-ig-wa { background: #128c7e; color: #fff; }

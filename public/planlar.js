@@ -379,12 +379,27 @@ const Plan = (() => {
       $('#p-secili-bilgi').after(ilgili);
     }
     const hedefSinif = p.siniflar.includes(sinif) ? sinif : p.siniflar[0];
+    const planPaylasUrl = `https://derskutusu.com/planlar.html?sinif=${hedefSinif}&p=${encodeURIComponent(p.ad)}`;
     ilgili.replaceChildren(
       el('span', { sinif: 'plan-ilgili-etiket' }, 'Bu dersin diğer materyalleri:'),
       ...(hedefSinif < 5 ? [] : [   // ilkokulda konu özeti ve ortak yazılı yok
         el('a', { sinif: 'plan-ilgili-bag', href: `/ogrenci.html?sinif=${hedefSinif}&ders=${encodeURIComponent(p.ders)}` }, 'Haftalık Konu Özetleri →'),
         el('a', { sinif: 'plan-ilgili-bag', href: `/yazili.html?sinif=${hedefSinif}&ders=${encodeURIComponent(p.ders)}` }, 'Ortak Yazılılar →')]),
-      el('a', { sinif: 'plan-ilgili-bag', href: `/icerikler.html?sinif=${hedefSinif}&ders=${encodeURIComponent(p.ders)}&tur=${encodeURIComponent('Yıllık plan')}` }, 'Yıllık Plan →'));
+      el('a', { sinif: 'plan-ilgili-bag', href: `/icerikler.html?sinif=${hedefSinif}&ders=${encodeURIComponent(p.ders)}&tur=${encodeURIComponent('Yıllık plan')}` }, 'Yıllık Plan →'),
+      el('a', {
+        sinif: 'plan-paylas-bag',
+        href: `https://api.whatsapp.com/send?text=${encodeURIComponent(`${tamAd(p)} 2026-2027 Günlük Ders Planı (Word & PDF): ${planPaylasUrl}`)}`,
+        target: '_blank',
+        rel: 'noopener',
+        title: 'Bu günlük planı WhatsApp zümre grubunda paylaş',
+      }, '🟢 Planı WhatsApp’ta Paylaş'),
+      el('a', {
+        sinif: 'plan-paylas-bag',
+        href: 'https://www.instagram.com/derskutusuinfo/',
+        target: '_blank',
+        rel: 'noopener',
+        title: '@derskutusuinfo Instagram hesabını takip et',
+      }, '📸 @derskutusuinfo →'));
 
     let haftaOnizleme = $('#p-hafta-onizleme', kutu);
     if (!haftaOnizleme) {
@@ -541,12 +556,16 @@ const Plan = (() => {
     if (!dizin.length) { $('#p-dersler').replaceChildren(el('p', { sinif: 'plan-bos' }, 'Planlar yüklenemedi. Sayfayı yenileyin.')); return; }
     const prm = new URLSearchParams(location.search);
     const ps = Number(prm.get('sinif'));
+    const pd = prm.get('ders');
     let kayitliSinif = 8;
     try { kayitliSinif = Number(localStorage.getItem(SINIF_ANAHTAR)) || 8; } catch {}
     secili = dizin.find((p) => p.ad === prm.get('p')) || null;
     sinif = secili ? (secili.siniflar.includes(ps) ? ps : secili.siniflar[0])
       : (dizin.some((p) => p.siniflar.includes(ps)) ? ps
         : (dizin.some((p) => p.siniflar.includes(kayitliSinif)) ? kayitliSinif : dizin[0].siniflar[0]));
+    if (!secili && pd) {
+      secili = dizin.find((p) => p.siniflar.includes(sinif) && p.ders === pd) || null;
+    }
     if (!secili) {
       secili = dizin.find((p) => p.siniflar.includes(sinif) && p.ders === 'matematik') || dizin.find((p) => p.siniflar.includes(sinif)) || null;
     }

@@ -1675,9 +1675,9 @@ body.sunum-iri .ozet-bolum h2 { font-size: 31px !important; }
 .plan-ilgili-cubuk { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 12px 0 16px; padding: 10px 14px;
   border-radius: 13px; background: var(--zemin-2); border: 1px solid var(--cizgi); }
 .plan-ilgili-etiket { font-size: 12.5px; font-weight: 750; color: var(--soluk); margin-right: 4px; }
-.plan-ilgili-bag { font-size: 12.5px; font-weight: 750; padding: 4px 11px; border-radius: 999px;
+.plan-ilgili-bag, .plan-paylas-bag { font-size: 12.5px; font-weight: 750; padding: 4px 11px; border-radius: 999px;
   background: var(--yuzey); color: var(--kart-ana, var(--vurgu)); border: 1px solid var(--kart-cizgi, var(--cizgi)); text-decoration: none; }
-.plan-ilgili-bag:hover { background: var(--kart-ana, var(--vurgu)); color: var(--kart-ikon-yazi, #fff); border-color: var(--kart-ana, var(--vurgu)); text-decoration: none; }
+.plan-ilgili-bag:hover, .plan-paylas-bag:hover { background: var(--kart-ana, var(--vurgu)); color: var(--kart-ikon-yazi, #fff); border-color: var(--kart-ana, var(--vurgu)); text-decoration: none; }
 
 .plan-hafta-onizleme { margin-top: 20px; padding: 18px 20px; border-radius: 16px;
   background: linear-gradient(155deg, var(--zemin-2), var(--yuzey)); border: 1.5px solid var(--kart-cizgi, var(--cizgi)); }

@@ -2449,6 +2449,6 @@ if (typeof document !== 'undefined') {
 // Konu sayfalarındaki sunum, mevcut tahta ve etkinlik davranışlarını yeniden kullanır.
 if (typeof document !== 'undefined' && document.querySelector('article.ozet')) {
   const ders = document.createElement('script');
-  ders.src = '/ders-slayt.js?v=20261006-1';
+  ders.src = '/ders-slayt.js?v=20261104-1';
   document.head.append(ders);
 }

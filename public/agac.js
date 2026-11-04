@@ -668,6 +668,7 @@
 
       if (hNo && (buKonu || buOzet)) {
         const konuBaslik = buKonu ? (buKonu.ad === buKonu.unite ? buKonu.unite : buKonu.ad) : buOzet.baslik;
+        const paylasUrl = buOzet ? `https://derskutusu.com${yol(buOzet.goruntule)}` : `https://derskutusu.com/planlar.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}`;
         haftaKutu.replaceChildren(
           el('div', { sinif: 'ogt-hafta-sol' },
             el('span', { sinif: 'agac-rozet bu-hafta' }, `${buHaftaEtiket(buH)} · ${hNo}. hafta${hBilgi?.ad ? ' · ' + hBilgi.ad : ''}`),
@@ -681,14 +682,29 @@
               onclick: () => window.dkIgKartAc(secSinif, secDers, `${secSinif}. Sınıf ${dersAd} · ${hNo}. Hafta`, [hNo]),
             }, simge('instagram'), 'Haftanın IG Kartı') : null,
             buCalisma ? el('a', { sinif: 'dugme', href: yol(buCalisma.hazirla || buCalisma.dosya || buCalisma.goruntule) }, simge('indir'), 'Haftanın Çalışma Kâğıdı') : null,
+            el('a', {
+              sinif: 'dugme',
+              href: `https://api.whatsapp.com/send?text=${encodeURIComponent(`${secSinif}. Sınıf ${dersAd} · ${hNo}. Hafta (${konuBaslik}): ${paylasUrl}`)}`,
+              target: '_blank',
+              rel: 'noopener',
+              title: 'Bu haftanın dersini WhatsApp’ta paylaş',
+            }, '🟢 Paylaş'),
             el('a', { sinif: 'dugme', href: '/tahta.html' }, simge('kalem'), 'Akıllı Tahta')));
       } else {
+        const planUrl = `https://derskutusu.com/planlar.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}`;
         haftaKutu.replaceChildren(
           el('div', { sinif: 'ogt-hafta-sol' },
             el('strong', {}, `${secSinif}. Sınıf ${dersAd} Derse Hazırlık`),
             el('small', {}, ilkokul ? 'Günlük ve yıllık plana aşağıdaki kartlardan tek tıkla ulaşabilirsiniz.' : 'Günlük plan, ortak yazılı ve ders materyallerine aşağıdaki kartlardan tek tıkla ulaşabilirsiniz.')),
           el('div', { sinif: 'ogt-hafta-eylemler' },
             el('a', { sinif: 'dugme ana', href: `/planlar.html?sinif=${secSinif}&ders=${encodeURIComponent(secDers)}` }, simge('takvim'), 'Günlük Plan Hazırla'),
+            el('a', {
+              sinif: 'dugme',
+              href: `https://api.whatsapp.com/send?text=${encodeURIComponent(`${secSinif}. Sınıf ${dersAd} 2026-2027 Günlük & Yıllık Planları: ${planUrl}`)}`,
+              target: '_blank',
+              rel: 'noopener',
+              title: 'Zümre WhatsApp grubunda paylaş',
+            }, '🟢 Zümreyle Paylaş'),
             el('a', { sinif: 'dugme', href: '/tahta.html' }, simge('kalem'), 'Akıllı Tahta')));
       }
     };

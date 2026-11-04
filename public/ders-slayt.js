@@ -73,7 +73,7 @@
   trigger.type = 'button'; trigger.id = 'ders-slayt-ac'; trigger.className = 'dugme ana';
   trigger.textContent = 'Slaytla ders işle'; trigger.setAttribute('aria-haspopup', 'dialog');
   actions.prepend(trigger);
-  const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = '/ders-slayt.css?v=20261006-1';
+  const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = '/ders-slayt.css?v=20261104-1';
   document.head.append(css);
 
   const dialog = document.createElement('dialog');
@@ -81,7 +81,7 @@
   dialog.innerHTML = `<div class="ds-shell"><header class="ds-header"><div><p class="ds-eyebrow">DERS KUTUSU · SINIFTA BİRLİKTE</p><h2 id="ds-title"></h2></div><button type="button" data-action="close">Derse dön</button></header>
     <div class="ds-tools"><label>Sunum <select data-control="mode"><option value="lesson">Dersin tamamı</option><option value="questions">Kısa soru seti</option></select></label>
     <button type="button" data-action="restart">Aynı seti baştan</button><button type="button" data-action="new">Yeni soru seti</button>
-    <button type="button" data-action="ink" aria-pressed="false">Kalem</button><button type="button" data-action="fullscreen" aria-pressed="false">Tam ekran</button></div>
+    <button type="button" data-action="ink" aria-pressed="false">Kalem</button><button type="button" data-action="fullscreen" aria-pressed="false">Tam ekran</button><button type="button" data-action="ig-card" title="@derskutusuinfo Instagram ders bilgi kartını aç">📸 IG Kartı</button></div>
     <div class="ds-outline"><label>Bölüme git <select data-control="slide" aria-label="Ders bölümleri"></select></label></div>
     <p class="ds-notice" role="status"></p>
     <div class="ds-stage-wrap"><div class="ds-stage ozet" tabindex="0" aria-label="Ders slaytı"></div><div class="ds-ink" hidden></div></div>
@@ -156,6 +156,13 @@
       if (template.kind === 'topic') {
         steps.push(...node.querySelectorAll('.bolum-metin > *, .bolum-yan > *'));
         steps.forEach((step, index) => { step.hidden = index > 0; });
+      } else if (template.kind === 'ending') {
+        const igBox = document.createElement('div');
+        igBox.className = 'ds-ig-kutu';
+        const baslikMetin = document.querySelector('.ozet-bas h1')?.textContent || 'Bu ders';
+        const paylasUrl = 'https://derskutusu.com' + location.pathname;
+        igBox.innerHTML = `<div class="ds-ig-sol"><strong>📸 @derskutusuinfo · 1 Dakikalık Görsel Ders Kartı</strong><p>Bu konunun (${baslikMetin}) özet bilgi kartını ve sınav ipuçlarını Instagram’da <b>@derskutusuinfo</b> hesabımızdan kaydedebilir veya sınıf grubunuzda paylaşabilirsiniz.</p></div><div class="ds-ig-sag"><button type="button" data-action="ig-card">📸 Bilgi Kartını Aç</button><a class="ds-ig-bag" href="https://www.instagram.com/derskutusuinfo/" target="_blank" rel="noopener">@derskutusuinfo Takip Et →</a><a class="ds-ig-wa" href="https://api.whatsapp.com/send?text=${encodeURIComponent(baslikMetin + ' — Ders Kutusu Konu Özeti: ' + paylasUrl)}" target="_blank" rel="noopener">🟢 WhatsApp’ta Paylaş</a></div>`;
+        frame.append(igBox);
       }
     }
     frame.hidden = true; stage.append(frame);
@@ -275,6 +282,16 @@
         } catch { explain('Tam ekran açılamadı; sunum bu pencerede kullanılabilir.'); }
         finally { control.disabled = false; }
         fullscreenLabel(); break;
+      case 'ig-card': {
+        await close();
+        const m = /^\/ozet\/(\d+)-([a-z0-9-]+)-hafta-(\d+)\.html$/i.exec(location.pathname);
+        if (m && typeof window.dkIgKartAc === 'function') {
+          window.dkIgKartAc(Number(m[1]), m[2], document.querySelector('.ozet-bas h1')?.textContent || 'Ders Kutusu', [Math.min(14, Math.max(1, Number(m[3]) || 1))]);
+        } else {
+          window.open('https://www.instagram.com/derskutusuinfo/', '_blank', 'noopener');
+        }
+        break;
+      }
     }
   });
   stage.addEventListener('click', () => queueMicrotask(updateReveal));
