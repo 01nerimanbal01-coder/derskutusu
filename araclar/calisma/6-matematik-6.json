@@ -1,0 +1,269 @@
+{
+  "sinif": 6,
+  "ders": "matematik",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-10-14",
+  "baslik": "Ondalık Gösterimleri Çözümleme ve Kesir-Bölme İlişkisine Giriş",
+  "alt_baslik": "Sayılar ve Nicelikler (2) · 6. Sınıf 6. Hafta",
+  "renk": "#ee7d12",
+  "konu": "Ondalık Gösterimleri Çözümleme ve Kesir-Bölme İlişkisine Giriş",
+  "ciktilar": [
+    "MAT.6.1.5. Gerçek yaşam durumlarında ondalık gösterimlerin basamak değerlerini kesirlerden yararlanarak yorumlayabilme",
+    "MAT.6.1.6. Kesir ve bölme işlemi arasındaki ilişkiye yönelik tümevarımsal akıl yürütebilme"
+  ],
+  "hatirla": [
+    "Çözümlenmiş toplamdan ondalık gösterime geçerken her terim basamağına yerleştirilir ve boş kalan basamağa 0 yazılır: 5 + {kesir:6|10} + {kesir:9|1000} = 5,609.",
+    "Bir ondalık gösterim farklı biçimlerde yazılabilir: 0,75 = {kesir:7|10} + {kesir:5|100} = {kesir:75|100} = {kesir:750|1000}; ondalık kısmın sonuna sıfır eklemek sayının değerini değiştirmez (0,4 = 0,40 = 0,400).",
+    "Para ve ölçü birimlerinde {kesir:1|100} lira = 1 kuruş, {kesir:1|100} m = 1 cm, {kesir:1|1000} kg = 1 g ve {kesir:1|1000} L = 1 mL olarak yorumlanır.",
+    "İki doğal sayının bölümü bir kesirdir (a ÷ b = {kesir:a|b}, b ≠ 0); paydası 2, 4, 5, 8, 20, 25, 50 olan kesirler genişletilerek paydası 10, 100 veya 1000 yapılır ve ondalık gösterime çevrilir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Verilen kesir-bölme ifadelerini ve basamak toplamlarını karşılık gelen ondalık sayılarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "6 + {kesir:4|10} + {kesir:8|1000}",
+          "6,408"
+        ],
+        [
+          "38 ÷ 1000 ({kesir:38|1000})",
+          "0,038"
+        ],
+        [
+          "3 ÷ 4 ({kesir:3|4} = {kesir:75|100})",
+          "0,75"
+        ],
+        [
+          "5 ÷ 8 ({kesir:5|8} = {kesir:625|1000})",
+          "0,625"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki basamak kartlarında karışık verilen {kesir:7|100} + 8 + {kesir:3|1000} toplamının ondalık gösterimi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "8,073",
+        "8,703",
+        "8,73",
+        "0,873"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Ondalık gösterimleri çözümleme ve kesir-bölme ilişkisiyle ilgili ifadelerden doğru olanların D, yanlış olanların Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Ondalık kısmın en sağına sıfır eklemek veya sondaki sıfırı silmek sayının değerini değiştirmez (0,6 = 0,60 = 0,600).",
+          "dogru": true
+        },
+        {
+          "metin": "0,9 ile 0,85 karşılaştırılırken 85 sayısı 9’dan büyük olduğu için 0,85 > 0,9 olur.",
+          "dogru": false
+        },
+        {
+          "metin": "5 ekmeğin 8 kişiye eşit paylaştırılması 5 ÷ 8 işlemiyle çözülür ve kişi başına {kesir:5|8} ekmek düşer.",
+          "dogru": true
+        },
+        {
+          "metin": "9 ÷ 100 işleminin sonucunda virgülün sağında iki basamak bulunacağından sonuç 0,09 olur.",
+          "dogru": true
+        },
+        {
+          "metin": "{kesir:11|3} kesrinin paydası bir doğal sayıyla genişletilerek 10, 100 veya 1000 yapılabilir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun sözcüklerle tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Kesir çizgisi matematikte ___ işlemi işaretiyle aynı görevi üstlenir.",
+          "cevap": "bölme"
+        },
+        {
+          "metin": "Çözümlenmiş toplamdan ondalık gösterime geçerken verilmeyen basamağın yerine ___ yazılır.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "Paydası 25 olan bir kesri ondalık gösterime çevirmek için kesri ___ ile genişletip paydayı 100 yaparız.",
+          "cevap": "dört"
+        },
+        {
+          "metin": "Bir market etiketindeki 0,650 kilogramlık peynir paketi toplam 650 ___ kütleye sahiptir.",
+          "cevap": "gram"
+        }
+      ],
+      "fazla": [
+        "çarpma"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki eşdeğerlik panosunda 0,45 sayısı için yazılan dört kesir ifadesinden hangisi 0,45 sayısına eşit {koyu:değildir}?",
+      "secenekler": [
+        "1. Kart: {kesir:4|10} + {kesir:5|100}",
+        "2. Kart: {kesir:45|100}",
+        "3. Kart: {kesir:4|10} + {kesir:5|1000}",
+        "4. Kart: {kesir:450|1000}"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki paylaşım kartlarını inceleyerek bölme işlemini, paydası 100 veya 1000 olan genişletilmiş kesri ve ondalık gösterimi tabloya yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Paylaşım Durumu",
+        "Bölme ve Kesir",
+        "Genişletilmiş Kesir",
+        "Ondalık Gösterim"
+      ],
+      "satirlar": [
+        [
+          "1. 1 elma, 4 kişi",
+          "1 ÷ 4 = {kesir:1|4}",
+          "{kesir:25|100}",
+          "0,25"
+        ],
+        [
+          "2. 9 L su, 20 şişe",
+          "9 ÷ 20 = {kesir:9|20}",
+          {
+            "b": "{kesir:45|100}"
+          },
+          {
+            "b": "0,45"
+          }
+        ],
+        [
+          "3. 7 m ip, 25 parça",
+          "7 ÷ 25 = {kesir:7|25}",
+          "{kesir:28|100}",
+          {
+            "b": "0,28"
+          }
+        ],
+        [
+          "4. 3 kg un, 8 paket",
+          "3 ÷ 8 = {kesir:3|8}",
+          {
+            "b": "{kesir:375|1000}"
+          },
+          "0,375"
+        ]
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki market etiketinde bir zeytinyağı şişesi için “Hacim: 0,850 L — Fiyat: 145,60 TL” yazmaktadır. Hacmi mililitre, fiyatı lira ve kuruş cinsinden basamak değerleriyle kısaca açıklayınız.",
+      "cevap": "0,850 L = {kesir:850|1000} L olduğundan 850 mililitredir; 145,60 TL = 145 + {kesir:60|100} TL olduğundan 145 lira 60 kuruştur.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde verilen dört sayıyı, hepsini virgülden sonra üç basamaklı ondalık gösterime tamamlayarak {koyu:küçükten büyüğe} doğru 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "62 ÷ 1000 işleminin sonucu (0,062)",
+        "{kesir:1|4} kesrinin ondalık gösterimi (0,250)",
+        "{kesir:3|5} kesrinin ondalık gösterimi (0,600)",
+        "0,62 ondalık gösterimi (0,620)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki eşit paylaşım problemine göre 11 metrelik bir kurdele 4 eş parçaya kesildiğinde her bir parçanın metre cinsinden uzunluğu aşağıdakilerden hangisiyle {koyu:gösterilemez}?",
+      "secenekler": [
+        "11 ÷ 4 işleminin sonucu",
+        "2 tam {kesir:3|4} metre",
+        "2,75 metre",
+        "{kesir:4|11} metre"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki kavramları kutulara yazarak “paydası 10, 100 veya 1000 olan kesirlerin virgülle yazılan gösterimi” kavramını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "0,1 ondalık gösterimine karşılık gelen birim kesrin paydası",
+          "cevap": "ON",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "1 kilogramın içindeki gram veya 1 litrenin içindeki mililitre sayısı",
+          "cevap": "BİN",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Bölme işlemi kesirle yazıldığında bölenin yazıldığı alt kısım",
+          "cevap": "PAYDA",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Eşit paylaşımda bölünen sayının kesirde yazıldığı üst kısım",
+          "cevap": "PAY",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Kesir çizgisinin temsil ettiği temel matematiksel işlem",
+          "cevap": "BÖLME",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Çözümlenmiş toplamda boş kalan basamağın yerine yazılan rakam",
+          "cevap": "SIFIR",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "İki doğal sayının bölümünü gösteren a ÷ b ifadesinin yazılış biçimi",
+          "cevap": "KESİR",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "ONDALIK"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki öğrenci çözüm kartında Kaan, “54 ÷ 1000 = 0,54” yazmıştır. Kaan’ın yaptığı basamak hatasını açıklayarak doğru ondalık gösterimi yazınız.",
+      "cevap": "Payda 1000 olduğu için virgülden sonra 3 basamak bulunmalıdır; doğru gösterim 0,045’tir.",
+      "satir": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki yüzme yarışı skorbordunda dört sporcunun 50 metre bitiriş süreleri saniye cinsinden verilmiştir. Süresi en kısa olan yarışmayı kazandığına göre birinci olan sporcu hangisidir?",
+      "secenekler": [
+        "1. Kulvar — Tuna (28,4 saniye)",
+        "2. Kulvar — Emir (28,35 saniye)",
+        "3. Kulvar — Bora (28,09 saniye)",
+        "4. Kulvar — Arda (28,50 saniye)"
+      ],
+      "dogru": 2
+    }
+  ]
+}
