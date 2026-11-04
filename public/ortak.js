@@ -1394,12 +1394,12 @@ window.dkTamamlanan = dkTamamlanan;
         ],
       },
       {
-        kisa: 'Çalışma & Plan',
-        etiket: 'PDF / Word',
+        kisa: 'Plan & Kâğıt',
+        etiket: '1–12. Sınıf',
         kapak: '/sosyal/afis-07-calisma.png',
         kartlar: [
           { gorsel: '/sosyal/afis-07-calisma.png', etiket: '5–12. Sınıf Cevapsız ve Cevaplı Çalışma Kâğıtları Serisi' },
-          { gorsel: '/sosyal/afis-08-gunluk-plan.png', etiket: 'Okul ve Öğretmen Adına Özel Günlük & Yıllık Planlar' },
+          { gorsel: '/sosyal/afis-08-gunluk-plan.png', etiket: '1–12. Sınıf (İlkokul–Ortaokul–Lise) Okul ve Öğretmen Adına Özel Günlük & Yıllık Planlar' },
         ],
       },
     ];
@@ -1436,15 +1436,38 @@ window.dkTamamlanan = dkTamamlanan;
   };
   igHikayeHalkalariEkle();
 
-  // Sayfa içi @derskutusuinfo Takip & Paylaşım Vitrini (Konu özetleri, yazılılar, sınavlar, planlar, öğrenci/öğretmen sayfaları)
+  // Sayfa içi @derskutusuinfo Takip & Paylaşım Vitrini (Konu özetleri, çalışma kâğıtları, yazılılar, sınavlar, planlar, öğrenci/öğretmen sayfaları)
   const sayfaIciIgBannerEkle = () => {
     if (yasalSayfaMi || /^\/(tahta|goruntule)\.html$/.test(location.pathname)) return;
     if ($('.dk-ig-sayfa-banner')) return;
 
-    const hedefYer = $('.ozet-sonu-kart') || $('#nh-duzen') || $('#asds-bolum') || $('#yazili-icerik') || $('#p-indir') || $('#sinif-merkezi');
+    const temizYol = location.pathname.replace(/^\/+/, '');
+    const ozetEsles = temizYol.match(/^ozet\/(\d+)-([a-z0-9-]+)-hafta-(\d+)\.html$/)
+      || temizYol.match(/^calisma\/(\d+)-([a-z0-9-]+)-(\d+)\.html$/);
+
+    // Çalışma kâğıdı sayfalarında (.ck-web-bas .g-dugmeler) üst çubuğa "📸 Bu Konunun IG Kartı" ve "🟢 WhatsApp’ta Paylaş" düğmelerini ekle
+    const ckUstDugmeler = $('.ck-web-bas .g-dugmeler');
+    if (ckUstDugmeler && ozetEsles && !$('.ck-ig-kart-btn', ckUstDugmeler)) {
+      const ckKartUrl = sosyalKartYoluBul(ozetEsles[1], ozetEsles[2], ozetEsles[3]);
+      const ckBaslik = ($('h1')?.textContent || `${ozetEsles[1]}. Sınıf ${ozetEsles[3]}. Hafta`).trim();
+      const igKartBtn = el('button', {
+        type: 'button',
+        sinif: 'dugme ck-ig-kart-btn',
+        title: 'Bu çalışma kâğıdının @derskutusuinfo Instagram özet kartını ekranda aç',
+        onclick: () => igHikayeModalAc(`${ozetEsles[1]}. Sınıf · ${ozetEsles[3]}. Hafta IG Özeti`, [{ gorsel: ckKartUrl, etiket: ckBaslik }], 0),
+      }, '📸 IG Özeti');
+      const ckWpBtn = el('button', {
+        type: 'button',
+        sinif: 'dugme ck-wp-paylas-btn',
+        title: 'Çalışma kâğıdını WhatsApp’ta paylaş',
+        onclick: () => sayfayiPaylas(ckWpBtn),
+      }, '🟢 WhatsApp’ta Paylaş');
+      ckUstDugmeler.append(igKartBtn, ckWpBtn);
+    }
+
+    const hedefYer = $('.ozet-sonu-kart') || $('.ck-sayfalar') || $('#nh-duzen') || $('#asds-bolum') || $('#yazili-icerik') || $('#p-indir') || $('#sinif-merkezi');
     if (!hedefYer) return;
 
-    const ozetEsles = location.pathname.replace(/^\/+/, '').match(/^ozet\/(\d+)-([a-z0-9-]+)-hafta-(\d+)\.html$/);
     let kartOnizleme = null;
     let buyutBtn = null;
     if (ozetEsles) {
@@ -1497,7 +1520,7 @@ window.dkTamamlanan = dkTamamlanan;
             el('strong', {}, `@${DK_IG_AYAR.HESAP}`),
             el('span', { sinif: 'dk-ig-banner-rozet' }, '750+ Görsel Özet & Yazılı Serisi')),
           el('p', {}, ozetEsles
-            ? 'Bu dersin görsel bilgi kartı serisi, ortak yazılı sınav soruları ve deneme duyuruları için @derskutusuinfo Instagram hesabımızı takip edin ve bildirim zilini (🔔) açın.'
+            ? 'Bu dersin görsel bilgi kartı serisi, çalışma kâğıtları, ortak yazılı sınav soruları ve deneme duyuruları için @derskutusuinfo Instagram hesabımızı takip edin ve bildirim zilini (🔔) açın.'
             : 'Yeni yazılı sınav kâğıtları, ASDS denemeleri ve günlük görsel konu özeti kartları için Instagram hesabımızı takip edin ve bildirim zilini (🔔) açın.'))),
       el('div', { sinif: 'dk-ig-banner-sag' },
         takipBag,
@@ -1694,7 +1717,9 @@ window.dkTamamlanan = dkTamamlanan;
       el('div', { sinif: 'dk-ig-ist-kutu' }, el('strong', {}, '5–12. Sınıf'), el('small', {}, 'Yazılı & Deneme')),
       el('div', { sinif: 'dk-ig-ist-kutu' }, el('strong', {}, '%100 Ücretsiz'), el('small', {}, 'MEB / TYMM Uyumlu')));
 
-    const ozetSayfaEsles = location.pathname.replace(/^\/+/, '').match(/^ozet\/(\d+)-([a-z0-9-]+)-hafta-(\d+)\.html$/);
+    const kilitTemizYol = location.pathname.replace(/^\/+/, '');
+    const ozetSayfaEsles = kilitTemizYol.match(/^ozet\/(\d+)-([a-z0-9-]+)-hafta-(\d+)\.html$/)
+      || kilitTemizYol.match(/^calisma\/(\d+)-([a-z0-9-]+)-(\d+)\.html$/);
     const kilitKartUrls = ozetSayfaEsles
       ? [
           sosyalKartYoluBul(ozetSayfaEsles[1], ozetSayfaEsles[2], ozetSayfaEsles[3]),

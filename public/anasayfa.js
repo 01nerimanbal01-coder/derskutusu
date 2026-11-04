@@ -101,6 +101,8 @@
           el('b', {}, ingSay ? `🃏 ${ingSay} İngilizce Kelime Öğrenildi` : '🃏 İngilizce Kelime Kartları')),
         el('a', { sinif: 'cds-hap', 'data-renk': 'zumrut', href: `/arapca.html?s=${sinif || 8}` },
           el('b', {}, arSay ? `🕌 ${arSay} Arapça Kelime Öğrenildi` : '🕌 Arapça Harf & Kelime')),
+        el('a', { sinif: 'cds-hap', 'data-renk': 'turuncu', href: '/planlar.html?sinif=1' },
+          el('b', {}, '🎒 1–4. Sınıf İlkokul & 5–12 Günlük Planlar')),
         el('a', { sinif: 'cds-hap', 'data-renk': 'mor', href: '/sinav.html#net-hesaplayici' },
           el('b', {}, '🧮 LGS & TYT Net Hesaplayıcı')));
       const smBas = merkez.querySelector('.sm-bas');

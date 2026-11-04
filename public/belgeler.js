@@ -25,7 +25,17 @@ function belgeKarti(b, dersler, grupAd) {
     b.goruntule && el('a', { sinif: 'ac', href: `/${b.goruntule}` }, 'Aç', simge('ok')),
     b.goruntule && /^kitap-/.test(b.kimlik || '') && !b.dosya && el('a', { sinif: 'ac', href: `/${b.goruntule}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç'),
     b.dosya && el('a', { sinif: 'ac', href: `/${b.dosya}`, download: '' }, 'İndir', simge('indir')),
-    !b.goruntule && !b.dosya && el('a', { sinif: 'ac', href: b.baglanti, target: '_blank', rel: 'noopener' }, 'Aç', simge('ok'))));
+    !b.goruntule && !b.dosya && el('a', { sinif: 'ac', href: b.baglanti, target: '_blank', rel: 'noopener' }, 'Aç', simge('ok')),
+    el('button', {
+      type: 'button',
+      sinif: 'ac belge-wp-btn',
+      title: 'Bu resmî belgeyi WhatsApp’ta paylaş',
+      onclick: () => {
+        const hedef = b.goruntule ? `${location.origin}/${b.goruntule}` : b.dosya ? `${location.origin}/${b.dosya}` : (b.baglanti || location.href);
+        const metin = `📄 ${b.baslik} — Ders Kutusu (@derskutusuinfo):\n${hedef}`;
+        window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(metin)}`, '_blank', 'noopener');
+      },
+    }, '🟢 Paylaş')));
 }
 
 Promise.all([veri('belgeler.json'), ortakVeri]).then(([belgeler, { dersler }]) => {

@@ -94,6 +94,24 @@
     result.append(h, paragraph(`${expired ? 'Süre tamamlandı. ' : ''}${active.length} soru değerlendirildi. Açıklamalar her sorunun altında açıldı.`));
     if (missed.length) result.append(paragraph(`Tekrar konuların: ${[...new Set(missed.map(q => q.dataset.topic))].join(', ')}.`));
     else result.append(paragraph('Bu çalışmadaki bütün soruları doğru yanıtladın.'));
+    const igKutu = document.createElement('div');
+    igKutu.className = 'dk-ig-calisma-sonu';
+    const igBag = document.createElement('a');
+    igBag.href = 'https://www.instagram.com/derskutusuinfo/';
+    igBag.target = '_blank';
+    igBag.rel = 'noopener';
+    igBag.className = 'dugme ana';
+    igBag.textContent = '📸 @derskutusuinfo KPSS & Ders Kartlarını Takip Et';
+    const wpBtn = document.createElement('button');
+    wpBtn.type = 'button';
+    wpBtn.className = 'dugme';
+    wpBtn.textContent = '🟢 Sonucumu WhatsApp’ta Paylaş';
+    wpBtn.onclick = () => {
+      const m = `🎯 KPSS (${document.title.split('·')[0].trim()}) sonucum: ${correct} doğru, ${wrong} yanlış, ${blank} boş! Ücretsiz KPSS testleri ve @derskutusuinfo ders kartları:\n${location.href}`;
+      window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(m)}`, '_blank', 'noopener');
+    };
+    igKutu.append(igBag, wpBtn);
+    result.append(igKutu);
     result.hidden = false; retry.hidden = !missed.length; reset.hidden = false;
     timer.textContent = expired ? 'Süre bitti' : 'Tamamlandı'; result.focus();
   }
