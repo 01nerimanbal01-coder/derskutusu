@@ -21,6 +21,126 @@
   const devam = typeof sonBakilan === 'object' ? sonBakilan.bolum() : null;
   if (devam) (merkez || alan).before(devam);
 
+  // ---- Karşılama sahnesi: Canlı Etkileşimli Ders Önizlemesi (#m-canli-kart) ----
+  const canliKart = document.getElementById('m-canli-kart');
+  if (canliKart) {
+    const gorselYer = document.getElementById('m-canli-gorsel');
+    const etiketYer = document.getElementById('m-canli-etiket');
+    const soruYer = document.getElementById('m-canli-soru');
+    const siklarYer = document.getElementById('m-canli-siklar');
+    const donutYer = document.getElementById('m-canli-donut');
+    const kesirHtml = (p, q) => `<span class="m-kesir"><b>${p}</b><i></i><b>${q}</b></span>`;
+    const ORNEKLER = {
+      mat: {
+        etiket: '6. Sınıf · Kesirler',
+        soru: 'Modeldeki boyalı bölge toplamda hangi kesre denk olur?',
+        svg: `<svg viewBox="0 0 360 128" role="img" aria-label="Sekiz eş parçaya bölünmüş 3 boyutlu kesir modeli">
+          <defs>
+            <linearGradient id="mg-zemin" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F0F7FF"/><stop offset="100%" stop-color="#E1EEFF"/></linearGradient>
+            <linearGradient id="mg-dolu" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2B7FFF"/><stop offset="100%" stop-color="#0A58D6"/></linearGradient>
+            <linearGradient id="mg-ek" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FF982E"/><stop offset="100%" stop-color="#F06A00"/></linearGradient>
+            <linearGradient id="mg-bos" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#E7EFFB"/></linearGradient>
+          </defs>
+          <rect x="4" y="4" width="352" height="120" rx="16" fill="url(#mg-zemin)"/>
+          <g transform="translate(28, 28)">
+            <rect x="0" y="6" width="304" height="58" rx="11" fill="#BDD2F2"/>
+            <rect x="0" y="0" width="304" height="58" rx="11" fill="url(#mg-bos)" stroke="#B8CEEE" stroke-width="1.2"/>
+            <rect x="4" y="4" width="35" height="50" rx="7" fill="url(#mg-dolu)"/>
+            <rect x="41.5" y="4" width="35" height="50" rx="7" fill="url(#mg-dolu)"/>
+            <rect x="79" y="4" width="35" height="50" rx="7" fill="url(#mg-dolu)"/>
+            <rect x="116.5" y="4" width="35" height="50" rx="7" fill="url(#mg-dolu)"/>
+            <rect x="154" y="4" width="35" height="50" rx="7" fill="url(#mg-dolu)"/>
+            <rect x="191.5" y="4" width="35" height="50" rx="7" fill="url(#mg-ek)" stroke="#CC5600" stroke-width="1" stroke-dasharray="3 2"/>
+            <text x="209" y="34" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="800">+1</text>
+            <rect x="229" y="4" width="35" height="50" rx="7" fill="url(#mg-bos)" stroke="#CBD9EE"/>
+            <rect x="266.5" y="4" width="33.5" height="50" rx="7" fill="url(#mg-bos)" stroke="#CBD9EE"/>
+          </g>
+          <text x="180" y="109" text-anchor="middle" fill="#23406E" font-size="11" font-weight="700">8 eş parçadan 5 maviye 1 turuncu parça eklendi</text>
+        </svg>`,
+        siklar: [kesirHtml(5, 8), kesirHtml(3, 4), kesirHtml(1, 2)],
+        dogru: 1,
+        aciklama: 'Doğru! 8 eş parçadan 6 parça boyalıdır; sadeleştirince dörtte üç kesrine denk olur.',
+        yanlis: 'İpucu: 5 mavi + 1 turuncu = 6 boyalı parça eder. Sekizde altıyı 2 ile sadeleştirmeyi dene.',
+        bag: '/ogrenci.html?sinif=6&ders=matematik',
+      },
+      fen: {
+        etiket: '8. Sınıf · Basınç',
+        soru: 'Aynı sıvıyla dolu kapta K ve L noktalarındaki sıvı basınçları nasıl sıralanır?',
+        svg: `<svg viewBox="0 0 360 128" role="img" aria-label="Sıvı dolu dereceli kapta K ve L noktalarının derinlikleri">
+          <defs>
+            <linearGradient id="fg-sivi" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#60A5FA" stop-opacity="0.65"/><stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.88"/></linearGradient>
+          </defs>
+          <rect x="4" y="4" width="352" height="120" rx="16" fill="#EEF8F4"/>
+          <rect x="112" y="16" width="136" height="96" rx="10" fill="#FFFFFF" stroke="#64748B" stroke-width="1.8"/>
+          <path d="M114 34 H246 V103 Q246 110 239 110 H121 Q114 110 114 103 Z" fill="url(#fg-sivi)"/>
+          <ellipse cx="180" cy="34" rx="66" ry="5" fill="#93C5FD"/>
+          <circle cx="156" cy="56" r="5" fill="#FF7A00" stroke="#FFFFFF" stroke-width="1.5"/>
+          <text x="170" y="60" fill="#FFFFFF" font-size="13" font-weight="800">K (10 cm)</text>
+          <circle cx="156" cy="94" r="5" fill="#FACC15" stroke="#FFFFFF" stroke-width="1.5"/>
+          <text x="170" y="98" fill="#FFFFFF" font-size="13" font-weight="800">L (30 cm)</text>
+        </svg>`,
+        siklar: ['K > L', 'L > K', 'K = L'],
+        dogru: 1,
+        aciklama: 'Harika! Aynı cins sıvıda derinlik arttıkça sıvı basıncı artar; L noktası daha derindedir.',
+        yanlis: 'İpucu: Sıvı basıncı sıvının açık yüzeyine olan derinlikle doğru orantılıdır.',
+        bag: '/ogrenci.html?sinif=8&ders=fen',
+      },
+      tur: {
+        etiket: '7. Sınıf · Söz Sanatları',
+        soru: 'Yukarıdaki dizelerde altı çizili ifadeyle hangi söz sanatı yapılmıştır?',
+        svg: `<svg viewBox="0 0 360 128" role="img" aria-label="Şiir dizesi kartı">
+          <rect x="4" y="4" width="352" height="120" rx="16" fill="#FFF7ED"/>
+          <rect x="26" y="20" width="308" height="88" rx="12" fill="#FFFFFF" stroke="#FCD34D" stroke-width="1.4"/>
+          <text x="180" y="54" text-anchor="middle" fill="#0D244F" font-size="14" font-weight="700">“Rüzgâr bu sabah pencereme</text>
+          <text x="180" y="78" text-anchor="middle" fill="#D97706" font-size="14.5" font-weight="800" text-decoration="underline">eski bir masalı fısıldadı.”</text>
+        </svg>`,
+        siklar: ['Benzetme', 'Kişileştirme', 'Abartma'],
+        dogru: 1,
+        aciklama: 'Doğru! İnsana ait “masal fısıldama” özelliği rüzgâra verilerek kişileştirme yapılmıştır.',
+        yanlis: 'İpucu: “Fısıldamak” insana özgü bir eylemdir; doğadaki bir varlığa aktarılmış.',
+        bag: '/ogrenci.html?sinif=7&ders=turkce',
+      },
+    };
+    let aktifKod = 'mat';
+    const ornekCiz = (kod) => {
+      const o = ORNEKLER[kod];
+      if (!o) return;
+      aktifKod = kod;
+      $$('.m-canli-sekme', canliKart).forEach((b) => b.setAttribute('aria-selected', String(b.dataset.ornek === kod)));
+      if (etiketYer && o.etiket) etiketYer.textContent = o.etiket;
+      if (gorselYer) gorselYer.innerHTML = o.svg;
+      if (soruYer) soruYer.textContent = o.soru;
+      if (siklarYer) {
+        siklarYer.innerHTML = o.siklar.map((metin, i) =>
+          `<button type="button" class="m-canli-sik" data-sec="${i}" ${i === o.dogru ? 'data-dogru="1"' : ''} data-kilit-muaf="1">${metin}</button>`
+        ).join('');
+      }
+      if (donutYer) {
+        donutYer.className = 'm-canli-donut';
+        donutYer.textContent = 'Bir seçeneğe dokunarak anlık geri bildirimi dene.';
+      }
+    };
+    canliKart.addEventListener('click', (ev) => {
+      const sekme = ev.target.closest('.m-canli-sekme');
+      if (sekme) { ornekCiz(sekme.dataset.ornek); return; }
+      const sik = ev.target.closest('.m-canli-sik');
+      if (!sik) return;
+      const o = ORNEKLER[aktifKod];
+      const secilen = Number(sik.dataset.sec);
+      $$('.m-canli-sik', siklarYer).forEach((b) => b.classList.remove('dogru', 'yanlis'));
+      if (secilen === o.dogru) {
+        sik.classList.add('dogru');
+        donutYer.className = 'm-canli-donut dogru';
+        donutYer.innerHTML = '';
+        donutYer.append(o.aciklama + ' ', el('a', { href: o.bag, sinif: 'm-canli-bag' }, 'Konuya geç →'));
+      } else {
+        sik.classList.add('yanlis');
+        donutYer.className = 'm-canli-donut yanlis';
+        donutYer.textContent = o.yanlis;
+      }
+    });
+  }
+
   const takvimSoz = {};
   const takvim = (n, dersler) => {
     if (!takvimSoz[n]) {
@@ -92,21 +212,21 @@
       const ingSay = nesneSay('dk-kelime-ogrenildi');
       const arSay = nesneSay('dk-arapca-ogrenildi-v1');
       const serit = el('div', { sinif: 'calisma-durum-serit', id: 'calisma-durum-serit', role: 'region', 'aria-label': 'Çalışma durumum ve hızlı araçlar' },
-        el('span', { sinif: 'cds-etiket' }, 'Çalışma Panon:'),
+        el('span', { sinif: 'cds-etiket' }, 'Hızlı Erişim:'),
         el('a', { sinif: 'cds-hap', 'data-renk': 'yesil', href: `/ogrenci.html?sinif=${sinif || 8}` },
-          el('b', {}, tamamSay ? `✓ ${tamamSay} Konu Tamamlandı` : '✓ Konu İlerleme Takibi')),
+          simge('onay'), el('b', {}, tamamSay ? `${tamamSay} Konu Tamamlandı` : 'İlerleme Takibi')),
         el('a', { sinif: 'cds-hap', 'data-renk': 'sari', href: '/icerikler.html?favori=1' },
-          el('b', {}, favSay ? `★ ${favSay} Kayıtlı Materyal` : '★ Kayıtlı Materyallerim')),
+          simge('yildiz'), el('b', {}, favSay ? `${favSay} Kayıtlı Materyal` : 'Kayıtlılarım')),
         el('a', { sinif: 'cds-hap', 'data-renk': 'mavi', href: `/kelime.html?s=${sinif || 8}` },
-          el('b', {}, ingSay ? `🃏 ${ingSay} İngilizce Kelime Öğrenildi` : '🃏 İngilizce Kelime Kartları')),
+          simge('kartlar'), el('b', {}, ingSay ? `${ingSay} İngilizce Kelime` : 'İngilizce Kelimeler')),
         el('a', { sinif: 'cds-hap', 'data-renk': 'zumrut', href: `/arapca.html?s=${sinif || 8}` },
-          el('b', {}, arSay ? `🕌 ${arSay} Arapça Kelime Öğrenildi` : '🕌 Arapça Harf & Kelime')),
+          simge('kitap'), el('b', {}, arSay ? `${arSay} Arapça Kelime` : 'Arapça Çalışmaları')),
         el('a', { sinif: 'cds-hap', 'data-renk': 'turuncu', href: '/planlar.html?sinif=1' },
-          el('b', {}, '🎒 1–4. Sınıf İlkokul & 5–12 Günlük Planlar')),
+          simge('takvim'), el('b', {}, '1–12. Sınıf Günlük Planlar')),
         el('a', { sinif: 'cds-hap', 'data-renk': 'mor', href: '/sinav.html#net-hesaplayici' },
-          el('b', {}, '🧮 LGS & TYT Net Hesaplayıcı')),
-        el('a', { sinif: 'cds-hap', 'data-renk': 'pembe', href: 'https://www.instagram.com/derskutusuinfo/', target: '_blank', rel: 'noopener', title: '@derskutusuinfo Instagram hesabını takip et' },
-          el('b', {}, '📸 @derskutusuinfo (Instagram Takip Et →)')));
+          simge('pusula'), el('b', {}, 'LGS & YKS Net Hesaplayıcı')),
+        el('a', { sinif: 'cds-hap cds-hap-ig', 'data-renk': 'pembe', href: 'https://www.instagram.com/derskutusuinfo/', target: '_blank', rel: 'noopener', title: '@derskutusuinfo Instagram hesabını takip et' },
+          simge('instagram'), el('b', {}, '@derskutusuinfo')));
       const smBas = merkez.querySelector('.sm-bas');
       if (smBas) smBas.after(serit);
     }
@@ -173,8 +293,8 @@
             el('b', { sinif: 'sm-eylem-sayi' }, yaziliSay ? `${yaziliSay} PDF` : 'Senaryo')),
           el('a', { sinif: 'sm-eylem', 'data-tur': 'plan', href: planHref },
             el('span', { sinif: 'sm-eylem-ad' }, simge('takvim'), 'Yıllık & Günlük Plan'),
-            el('b', { sinif: 'sm-eylem-sayi' }, 'Word/PDF')),
-          igDugme)));
+            el('b', { sinif: 'sm-eylem-sayi' }, 'Word · PDF')),
+          igDugme));
     };
 
     const merkezCiz = () => {
@@ -313,15 +433,15 @@
             window.dkIgKartAc(sinif, ana[0].ders, `${sinif}. Sınıf · ${hafta}. Hafta`, [hafta]);
           }
         },
-      }, `📸 ${sinif}. Sınıf ${hafta}. Hafta IG Kartları (${ana.length} Ders)`) : null;
+      }, simge('instagram'), `${sinif}. Sınıf ${hafta}. Hafta Ders Kartları (${ana.length} Ders)`) : null;
       const waHaftaDugme = el('button', {
         type: 'button',
         sinif: 'dugme dk-ig-paylas-btn',
         onclick: (ev) => window.dkSayfaPaylas && window.dkSayfaPaylas(
           ev.currentTarget,
-          `📚 ${sinif}. Sınıf ${hafta}. Hafta Ders Konu Özetleri, Etkinlikler ve Çalışma Kâğıtları — @derskutusuinfo Instagram sayfasını takip ederek hemen çalış:`
+          `${sinif}. Sınıf ${hafta}. Hafta Ders Konu Özetleri, Etkinlikler ve Çalışma Kâğıtları — @derskutusuinfo Instagram sayfasını takip ederek hemen çalış:`
         ),
-      }, '🟢 Bu Haftayı Paylaş');
+      }, simge('paylas'), 'Bu Haftayı Paylaş');
       liste.replaceChildren(
         ana.length ? el('div', { sinif: 'bh-kartlar' }, ana.map((i) => kart(i, sinif))) : null,
         secmeli.length ? el('h3', { sinif: 'bh-alt-baslik' }, 'Seçmeli dersler') : null,

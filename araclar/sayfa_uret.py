@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261104-2', 'belgeler.js': '20261104-3', 'planlar.js': '20261104-2', 'agac.js': '20261104-3', 'yazili.js': '20261010-1', 'ortak.js': '20261104-2', 'tahta.js': '20261104-2', 'etkinlik.js': '20261017-9', 'arama.js': '20261104-2', 'kutuphane.js': '20261104-2', 'kelime.js': '20261104-2', 'arapca.js': '20261104-2', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261104-3', 'asds.js': '20261104-2'}
+BETIK_SURUMLERI = {'goruntule.js': '20261104-2', 'belgeler.js': '20261104-3', 'planlar.js': '20261104-2', 'agac.js': '20261104-3', 'yazili.js': '20261010-1', 'ortak.js': '20261104-5', 'tahta.js': '20261104-2', 'etkinlik.js': '20261017-9', 'arama.js': '20261104-2', 'kutuphane.js': '20261104-2', 'kelime.js': '20261104-2', 'arapca.js': '20261104-2', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261104-3', 'asds.js': '20261104-2'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -29,7 +29,7 @@ SAYAC = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://s
 # Site ağacı (kullanıcı 11.10.2026): her sayfa kendi dalının kitlesini taşır (üst menü vurgusu, kayan şerit süzgeci).
 KITLE_OGRENCI = ('ogrenci.html', 'kelime.html', 'arapca.html', 'sinav.html')
 KITLE_OGRETMEN = ('ogretmen.html', 'planlar.html', 'yazili.html', 'belgeler.html', 'kpss.html', 'ders-dagitim.html')
-AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261104-1">'
+AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261104-5">'
 
 
 def kitle_bul(ad):

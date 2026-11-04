@@ -1,9 +1,9 @@
 /* "Yeni eklenenler" kayan şeridi — ortak.js kurar ve bu dosyayı yükler (kullanıcı 11.10.2026).
    Dar ekranda üst bilginin altında yatay şerit; 1440 px ve üstünde sağ kenarda sabit dikey sütun (sayfa o kadar daralır, hiçbir şeyi örtmez). */
 .serit { position: relative; z-index: 20; display: flex; align-items: center; gap: 12px; padding: 8px 0 8px clamp(12px, 3vw, 28px);
-  background: var(--zemin-2); border-bottom: 1px solid var(--cizgi); }
+  background: var(--zemin); border-bottom: 1px solid var(--cizgi); }
 .serit-bas { display: flex; align-items: center; gap: 10px; flex: none; }
-.serit-baslik { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--vurgu); white-space: nowrap; }
+.serit-baslik { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 800; letter-spacing: 0; text-transform: none; color: var(--metin); white-space: nowrap; }
 .serit-baslik::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--yesil);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--yesil) 22%, transparent); }
 .serit-tumu { font-size: 13px; font-weight: 700; }
@@ -48,11 +48,11 @@
   .serit-ad { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1660px) {
   body.serit-var { padding-right: 268px; }
   .serit { position: fixed; top: 0; right: 0; bottom: 0; width: 268px; z-index: 31; flex-direction: column; align-items: stretch; gap: 0;
     padding: 0; border-bottom: 0; border-left: 1px solid var(--cizgi); }
-  .serit-bas { height: 69px; padding: 0 14px 0 18px; border-bottom: 1px solid var(--cizgi); }
+  .serit-bas { height: 73px; padding: 0 14px 0 18px; border-bottom: 1px solid var(--cizgi); }
   .serit-tumu { margin-left: auto; }
   .serit-pencere { padding: 0 14px;
     -webkit-mask-image: linear-gradient(180deg, transparent, #000 28px, #000 calc(100% - 28px), transparent);

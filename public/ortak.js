@@ -278,7 +278,7 @@ ortakVeri.then(({ ayar }) => {
 (() => {
   const ust = $('header.ust');
   if (!ust || /^\/(tahta|goruntule)\.html$/.test(location.pathname)) return;   // tam ekran araç sayfaları
-  const SERIT_SURUM = '20261013-1', EN_COK = 18;
+  const SERIT_SURUM = '20261104-5', EN_COK = 18;
   const kisaTarih = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'short' });
   const yol = (a) => (/^(https?:)?\//.test(a) ? a : `/${a}`);
   const stil = el('link', { rel: 'stylesheet', href: `${kok}serit.css?v=${SERIT_SURUM}` });
@@ -586,7 +586,7 @@ ortakVeri.then(({ ayar }) => {
       el('summary', { sinif: 'menu-sinif-baslik' }, 'Sınıflar'),
       el('div', { sinif: 'menu-sinif-panel', role: 'menu', 'aria-label': 'Sınıf seçimi' },
         ...siniflar.map(([no, ad, renk]) => el('a', { href: `/ogrenci.html?sinif=${no}`, 'data-renk': renk, role: 'menuitem' }, ad)),
-        el('a', { sinif: 'menu-sinif-tahta', href: '/tahta.html', role: 'menuitem' }, '✎ Dijital Tahta')));
+        el('a', { sinif: 'menu-sinif-tahta', href: '/tahta.html', role: 'menuitem' }, 'Dijital Akıllı Tahta')));
     const ilkBag = anaMenu.querySelector('a');
     if (ilkBag) ilkBag.after(acilir);
     document.addEventListener('click', (o) => { if (acilir.open && !acilir.contains(o.target)) acilir.open = false; });
@@ -2012,7 +2012,7 @@ window.dkTamamlanan = dkTamamlanan;
       return;
     }
 
-    const etkDugme = e.target.closest('button:not(.tema-dugme):not(.menu-dugme):not(.serit-dur), .etk input, .etk select');
+    const etkDugme = e.target.closest('button:not(.tema-dugme):not(.menu-dugme):not(.serit-dur):not([data-kilit-muaf]), .etk input, .etk select');
     if (etkDugme && !etkDugme.closest('.reklam-izin')) {
       e.preventDefault();
       e.stopImmediatePropagation();

@@ -12,6 +12,8 @@ ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 MENU = re.search(r'<nav class="menu" id="ana-menu"[^>]*>.*?</nav>', ana, re.S).group(0)
 ALT = re.search(r'<nav aria-label="Site">.*?</nav>', ana, re.S).group(0)
 ALT = re.sub(r'href="#', 'href="/#', re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', ALT))
+ALT_BILGI = re.search(r'<nav aria-label="Bilgi">.*?</nav>', ana, re.S).group(0)
+ALT_BILGI = re.sub(r'href="#', 'href="/#', re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', ALT_BILGI))
 ALT_SOSYAL = re.search(r'<div class="alt-sosyal">.*?</div>', ana, re.S).group(0)
 SURUMLER = [('stil.css', SURUM), ('tahta.js', BETIK_SURUMLERI['tahta.js']), ('kutuphane.js', BETIK_SURUMLERI['kutuphane.js']),
             *((d, re.search(r'v=([\w-]+)', s).group(1)) for d, s in (('kesif.css', KESIF_CSS), ('renkler.css', RENK_CSS), ('agac.css', AGAC_CSS)))]
@@ -24,6 +26,7 @@ def guncelle(yol):
     t = eski = yol.read_text(encoding='utf-8')
     t = re.sub(r'<nav class="menu" id="ana-menu"[^>]*>.*?</nav>', lambda m: MENU, t, count=1, flags=re.S)
     t = re.sub(r'<nav aria-label="Site">.*?</nav>', lambda m: ALT, t, count=1, flags=re.S)
+    t = re.sub(r'<nav aria-label="Bilgi">.*?</nav>', lambda m: ALT_BILGI, t, count=1, flags=re.S)
     t = re.sub(r'<div class="alt-sosyal">.*?</div>', lambda m: ALT_SOSYAL, t, count=1, flags=re.S)
     t = YOL.sub(lambda m: (f'<a href="/ogrenci.html">Öğrenci</a><span aria-hidden="true">/</span><a href="/ogrenci.html?sinif={m[1]}">{m[2]}. sınıf</a>'
                            f'<span aria-hidden="true">/</span><a href="/ogrenci.html?sinif={m[3]}&amp;ders={m[4]}">'), t)
