@@ -1200,7 +1200,7 @@ const Tahta = (() => {
         x.font = `700 ${13 * oran}px -apple-system, "Segoe UI", Roboto, Arial, sans-serif`;
         x.fillStyle = d.zemin === 'koyu' ? '#e9eef6' : '#0b2257';
         x.textAlign = 'right'; x.textBaseline = 'middle';
-        x.fillText('derskutusu.com', c.width - b - p - 8 * oran, c.height - p - b / 2);
+        x.fillText('derskutusu.com · @derskutusuinfo', c.width - b - p - 8 * oran, c.height - p - b / 2);
         coz(c.toDataURL('image/png'));
       };
       img.onload = bitir; img.onerror = bitir; img.src = '/simge-192.png';
@@ -2288,6 +2288,7 @@ const Tahta = (() => {
       yukle: (cizgiler) => { d.cizgiler = cizgiler; d.secili = []; d.gecmis = []; d.ileri = []; hepsiniCiz(); guncelle(); },
       png: () => alt.toDataURL('image/png'),
       pngLogolu,
+      gorselEkle: gorselVerisiEkle,
       // Yakınlaştırmada çizgiler içerikle birlikte ölçeklenir.
       olcekle: (k) => {
         const hepsi = new Set([...d.cizgiler, ...[...d.gecmis, ...d.ileri].flatMap((g) => g.cizgiler || g.ogeler || (g.cizgi ? [g.cizgi] : [...(g.eski || []), ...(g.yeni || [])]))]);
@@ -2405,6 +2406,172 @@ if (typeof document !== 'undefined') {
       t.pngLogolu().then((adres) => { const a = document.createElement('a'); a.href = adres; a.download = `derskutusu-tahta-${no + 1}.png`; a.click(); });
     });
     document.getElementById('t-tam')?.addEventListener('click', () => (document.fullscreenElement ? document.exitFullscreen() : document.getElementById('tahta-alan').requestFullscreen?.()));
+    document.getElementById('t-paylas')?.addEventListener('click', () => {
+      const metin = 'Ders Kutusu Akıllı Tahta — Tarayıcıda çalışan ücretsiz ders, soru çözümü ve etkileşimli tahta (@derskutusuinfo): ' + location.href;
+      if (typeof window.dkSayfaPaylas === 'function') {
+        window.dkSayfaPaylas(document.getElementById('t-paylas'), metin);
+      } else {
+        window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(metin), '_blank');
+      }
+    });
+
+    const igKartDugme = document.getElementById('t-ig-kart');
+    if (igKartDugme) {
+      igKartDugme.addEventListener('click', () => {
+        let modal = document.getElementById('t-ig-modal');
+        if (modal) modal.remove();
+        modal = document.createElement('div');
+        modal.id = 't-ig-modal';
+        modal.className = 'dk-ig-hikaye-arka';
+        modal.setAttribute('role', 'dialog');
+        modal.setAttribute('aria-modal', 'true');
+        modal.setAttribute('aria-label', 'Akıllı Tahta Instagram Konu Kartı');
+
+        const DERSLER = [
+          { kod: 'matematik', ad: 'Matematik', siniflar: [5, 6, 7, 8, 9, 10, 11, 12] },
+          { kod: 'turkce', ad: 'Türkçe', siniflar: [5, 6, 7, 8] },
+          { kod: 'edebiyat', ad: 'Türk Dili ve Edebiyatı', siniflar: [9, 10, 11, 12] },
+          { kod: 'fen-bilimleri', ad: 'Fen Bilimleri', siniflar: [5, 6, 7, 8] },
+          { kod: 'fizik', ad: 'Fizik', siniflar: [9, 10, 11, 12] },
+          { kod: 'kimya', ad: 'Kimya', siniflar: [9, 10, 11, 12] },
+          { kod: 'biyoloji', ad: 'Biyoloji', siniflar: [9, 10, 11, 12] },
+          { kod: 'sosyal-bilgiler', ad: 'Sosyal Bilgiler', siniflar: [5, 6, 7] },
+          { kod: 'inkilap-tarihi', ad: 'T.C. İnkılap Tarihi', siniflar: [8] },
+          { kod: 'tarih', ad: 'Tarih', siniflar: [9, 10, 11, 12] },
+          { kod: 'cografya', ad: 'Coğrafya', siniflar: [9, 10, 11, 12] },
+          { kod: 'din-kulturu', ad: 'Din Kültürü ve Ahlak Bilgisi', siniflar: [5, 6, 7, 8, 9, 10, 11, 12] },
+          { kod: 'ingilizce', ad: 'İngilizce', siniflar: [5, 6, 7, 8, 9, 10, 11, 12] },
+        ];
+
+        modal.innerHTML = `
+          <div class="dk-ig-hikaye-kutu" style="max-width:520px;gap:12px;">
+            <div class="dk-ig-hikaye-ust">
+              <div class="dk-ig-hikaye-profil">
+                <img src="/sosyal/profil-logo.png" alt="@derskutusuinfo" class="dk-ig-avatar" onerror="this.src='/simge-192.png'">
+                <div>
+                  <strong>Akıllı Tahtaya Konu Kartı Ekle</strong>
+                  <span style="font-size:12px;opacity:.85">@derskutusuinfo Instagram Bilgi Kartları</span>
+                </div>
+              </div>
+              <button type="button" class="dk-ig-kapat" id="t-ig-kapat" aria-label="Kapat">✕</button>
+            </div>
+            <p style="font-size:13.5px;color:#cbd5e1;margin:0;">Sınıf, ders ve haftayı seçip kartı doğrudan tahtaya yapıştırabilir (üzerine kalemle çözebilir) ya da büyük ekranda açabilirsiniz.</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));gap:10px;">
+              <label style="display:flex;flex-direction:column;gap:4px;font-size:12.5px;font-weight:700;">
+                Sınıf:
+                <select id="t-ig-sinif" style="height:38px;border-radius:10px;padding:0 8px;background:#1e293b;color:#fff;border:1px solid #334155;">
+                  <option value="8" selected>8. Sınıf (LGS)</option>
+                  <option value="5">5. Sınıf</option>
+                  <option value="6">6. Sınıf</option>
+                  <option value="7">7. Sınıf</option>
+                  <option value="9">9. Sınıf</option>
+                  <option value="10">10. Sınıf</option>
+                  <option value="11">11. Sınıf</option>
+                  <option value="12">12. Sınıf (YKS)</option>
+                </select>
+              </label>
+              <label style="display:flex;flex-direction:column;gap:4px;font-size:12.5px;font-weight:700;">
+                Ders:
+                <select id="t-ig-ders" style="height:38px;border-radius:10px;padding:0 8px;background:#1e293b;color:#fff;border:1px solid #334155;">
+                </select>
+              </label>
+              <label style="display:flex;flex-direction:column;gap:4px;font-size:12.5px;font-weight:700;">
+                Hafta:
+                <select id="t-ig-hafta" style="height:38px;border-radius:10px;padding:0 8px;background:#1e293b;color:#fff;border:1px solid #334155;">
+                  ${Array.from({ length: 16 }, (_, i) => `<option value="${i + 1}" ${i === 3 ? 'selected' : ''}>${i + 1}. Hafta</option>`).join('')}
+                </select>
+              </label>
+            </div>
+            <div style="border-radius:12px;overflow:hidden;background:#000;border:1px solid #334155;display:flex;justify-content:center;align-items:center;min-height:190px;max-height:220px;">
+              <img id="t-ig-onizleme-img" src="/sosyal/bilgi-8-matematik-4.png" alt="Önizleme" style="max-height:210px;width:auto;object-fit:contain;display:block;">
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;">
+              <button type="button" class="dugme ana" id="t-ig-ekle" style="flex:1;min-width:130px;justify-content:center;height:42px;">🖼️ Tahtaya Ekle</button>
+              <button type="button" class="dugme" id="t-ig-buyuk" style="flex:1;min-width:130px;justify-content:center;height:42px;">👁️ Hikâye Boyutunda Aç</button>
+              <button type="button" class="dugme" id="t-ig-paylas" style="justify-content:center;height:42px;">🟢 Paylaş</button>
+            </div>
+            <div style="text-align:center;">
+              <a href="https://www.instagram.com/derskutusuinfo/" target="_blank" rel="noopener" style="font-size:12.5px;color:#f43f5e;font-weight:700;text-decoration:none;">📸 @derskutusuinfo Instagram Sayfasına Git →</a>
+            </div>
+          </div>
+        `;
+        document.body.append(modal);
+
+        const sinifSel = modal.querySelector('#t-ig-sinif');
+        const dersSel = modal.querySelector('#t-ig-ders');
+        const haftaSel = modal.querySelector('#t-ig-hafta');
+        const imgEl = modal.querySelector('#t-ig-onizleme-img');
+        const kapatBtn = modal.querySelector('#t-ig-kapat');
+        const ekleBtn = modal.querySelector('#t-ig-ekle');
+        const buyukBtn = modal.querySelector('#t-ig-buyuk');
+        const paylasBtn = modal.querySelector('#t-ig-paylas');
+
+        const dersleriGuncelle = () => {
+          const s = Number(sinifSel.value) || 8;
+          const uygun = DERSLER.filter((d) => d.siniflar.includes(s));
+          const eski = dersSel.value;
+          dersSel.innerHTML = uygun.map((d) => `<option value="${d.kod}">${d.ad}</option>`).join('');
+          if (uygun.some((d) => d.kod === eski)) dersSel.value = eski;
+        };
+
+        const resimUrlBul = () => {
+          const s = sinifSel.value;
+          const d = dersSel.value;
+          const h = haftaSel.value;
+          return typeof window.dkSosyalKartYolu === 'function' ? window.dkSosyalKartYolu(s, d, h) : `/sosyal/bilgi-${s}-${d}-${h}.png`;
+        };
+
+        const guncelleResim = () => {
+          const url = resimUrlBul();
+          imgEl.src = url;
+          imgEl.onerror = () => { imgEl.src = '/sosyal/bilgi-8-matematik-4.png'; };
+        };
+
+        dersleriGuncelle();
+        guncelleResim();
+
+        sinifSel.addEventListener('change', () => { dersleriGuncelle(); guncelleResim(); });
+        dersSel.addEventListener('change', guncelleResim);
+        haftaSel.addEventListener('change', guncelleResim);
+
+        kapatBtn.addEventListener('click', () => modal.remove());
+        modal.addEventListener('click', (e) => { if (e.target === modal) modal.remove(); });
+
+        ekleBtn.addEventListener('click', () => {
+          const url = resimUrlBul();
+          if (typeof t.gorselEkle === 'function') {
+            t.gorselEkle(url);
+          }
+          modal.remove();
+        });
+
+        buyukBtn.addEventListener('click', () => {
+          const s = sinifSel.value;
+          const d = dersSel.value;
+          const h = Number(haftaSel.value) || 1;
+          const dObj = DERSLER.find((x) => x.kod === d);
+          const baslik = `${s}. Sınıf ${dObj ? dObj.ad : d}`;
+          if (typeof window.dkIgKartAc === 'function') {
+            window.dkIgKartAc(s, d, baslik, [h]);
+          } else {
+            window.open(resimUrlBul(), '_blank');
+          }
+        });
+
+        paylasBtn.addEventListener('click', () => {
+          const s = sinifSel.value;
+          const dObj = DERSLER.find((x) => x.kod === dersSel.value);
+          const dAd = dObj ? dObj.ad : dersSel.value;
+          const h = haftaSel.value;
+          const metin = `📚 Ders Kutusu ${s}. Sınıf ${dAd} (${h}. Hafta) Akıllı Tahta ve Instagram Konu Kartı (@derskutusuinfo): https://derskutusu.com/tahta.html`;
+          if (typeof window.dkSayfaPaylas === 'function') {
+            window.dkSayfaPaylas(paylasBtn, metin);
+          } else {
+            window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(metin), '_blank');
+          }
+        });
+      });
+    }
     sayfaYaz();
   } else {
     // Öteki sayfalar: sağ altta kalem düğmesi → sayfanın üstüne yaz

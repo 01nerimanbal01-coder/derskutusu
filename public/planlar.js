@@ -495,6 +495,47 @@ const Plan = (() => {
       dugme(null, 'Tüm yıl', `${p.hafta} hafta`),
       ...p.aylar.map(([a, n]) => dugme(Plan.AYLAR.indexOf(a), a, `${n} hafta`)));
     $('#p-zip').disabled = mesgul;
+
+    let zumreBar = $('#p-zumre-bar', kutu);
+    if (!zumreBar) {
+      zumreBar = el('div', { id: 'p-zumre-bar', sinif: 'plan-zumre-bar' });
+      $('#p-durum').after(zumreBar);
+    }
+    const paylasMetin = `${tamAd(p)} 2026-2027 Günlük Ders Planı (Word & PDF) — Ders Kutusu (@derskutusuinfo): ${planPaylasUrl}`;
+    zumreBar.replaceChildren(
+      el('button', {
+        type: 'button',
+        sinif: 'dugme plan-zumre-paylas-btn',
+        title: 'Bu dersin günlük planını WhatsApp zümre veya okul grubunda paylaş',
+        onclick: (e) => {
+          if (typeof window.dkSayfaPaylas === 'function') {
+            window.dkSayfaPaylas(e.currentTarget, paylasMetin);
+          } else {
+            window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(paylasMetin), '_blank');
+          }
+        },
+      }, '🟢 Zümre & Okul Grubuyla Paylaş'),
+      ...(hedefSinif < 5 ? [] : [
+        el('button', {
+          type: 'button',
+          sinif: 'dugme plan-ig-seri-btn',
+          title: 'Bu dersin 1–8. hafta Instagram konu kartlarını ekranda incele',
+          onclick: () => {
+            if (typeof window.dkIgKartAc === 'function') {
+              window.dkIgKartAc(hedefSinif, p.ders, `${hedefSinif}. Sınıf ${p.dersAd} · Instagram Konu Kartları`, [1, 2, 3, 4, 5, 6, 7, 8]);
+            }
+          },
+        }, simge('instagram'), el('span', {}, '📸 Bu Dersin IG Kart Serisi')),
+      ]),
+      el('a', {
+        sinif: 'dugme plan-ig-profil-btn',
+        href: 'https://www.instagram.com/derskutusuinfo/',
+        target: '_blank',
+        rel: 'noopener',
+        title: '@derskutusuinfo Instagram hesabını takip et',
+      }, '📸 @derskutusuinfo Takip Et →')
+    );
+
     onizle();
   };
   $('#p-zip').addEventListener('click', () => {
