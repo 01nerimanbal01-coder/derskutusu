@@ -43,6 +43,8 @@ function icerikKarti(i, dersler) {
   }, kayitliMi ? '★ Kayıtlı' : '☆ Kaydet');
 
   const kartRenk = (i.ders && window.Kesif?.subjectColor(i.ders)) || window.Kesif?.category(i.tur).color || 'mavi';
+  const paylasYol = i.goruntule ? `/${i.goruntule}` : i.hazirla ? `/${i.hazirla}` : i.dosya ? `/${i.dosya}` : (i.baglanti || '/icerikler.html');
+  const paylasTam = /^https?:/.test(paylasYol) ? paylasYol : `https://derskutusu.com${paylasYol}`;
   const kart = el('article', { sinif: 'kart', 'data-renk': kartRenk },
     el('div', { sinif: 'ust-bilgi' },
       i.hafta && el('span', { sinif: 'etiket' }, `${i.hafta}. hafta`),
@@ -54,7 +56,7 @@ function icerikKarti(i, dersler) {
     i.aciklama && el('p', {}, i.aciklama),
     el('div', { sinif: 'eylemler' },
       i.goruntule && el('a', { sinif: 'ac', href: `/${i.goruntule}` }, 'Aç', simge('ok')),
-      (i.sinif && i.ders && i.hafta && Number(i.hafta) <= 14) && el('button', {
+      (i.sinif && Number(i.sinif) >= 5 && i.ders && i.hafta && Number(i.hafta) <= 14) && el('button', {
         type: 'button',
         sinif: 'agac-hizli-dugme ig-kart',
         title: '@derskutusuinfo Instagram bilgi kartını önizle',
@@ -70,7 +72,14 @@ function icerikKarti(i, dersler) {
       i.dosya_b && el('a', { sinif: 'ac', href: `/${i.dosya_b}`, download: '' }, 'B (Cevapsız)', simge('indir')),
       i.dosya_a_cevapli && el('a', { sinif: 'ac', href: `/${i.dosya_a_cevapli}`, download: '' }, 'A (Cevaplı)', simge('onay')),
       i.dosya_b_cevapli && el('a', { sinif: 'ac', href: `/${i.dosya_b_cevapli}`, download: '' }, 'B (Cevaplı)', simge('onay')),
-      i.dosya_anahtar && el('a', { sinif: 'ac', href: `/${i.dosya_anahtar}`, download: '' }, 'Anahtar', simge('kalem'))));
+      i.dosya_anahtar && el('a', { sinif: 'ac', href: `/${i.dosya_anahtar}`, download: '' }, 'Anahtar', simge('kalem')),
+      el('a', {
+        sinif: 'agac-hizli-dugme wa-paylas',
+        href: `https://api.whatsapp.com/send?text=${encodeURIComponent(`${i.baslik || baslik} — Ders Kutusu: ${paylasTam}`)}`,
+        target: '_blank',
+        rel: 'noopener',
+        title: 'Bu kaynağı WhatsApp’ta paylaş',
+      }, '🟢 Paylaş')));
   // Kartın tamamı ilk eyleme götürür (indirme bağlantısı hariç); metin seçimi ve bağlantıya tıklama bozulmaz.
   const birincil = kart.querySelector('a.ac:not([download])');
   if (birincil) {
@@ -208,6 +217,7 @@ function icerikSayfasi({ dersler, icerikler }) {
       { id: 'yks', ad: '12. Sınıf · YKS', aktif: !yalnizFavori && f.sinif === '12' && !f.tur, yap: () => { yalnizFavori = false; alan.sinif.value = '12'; dersSecenekleri(); alan.tur.value = ''; ciz(); } },
       { id: 'ozet', ad: 'Konu Anlatımları', aktif: !yalnizFavori && f.tur === 'Konu anlatımı', yap: () => { yalnizFavori = false; alan.kitle.value = ''; turSecenekleri(); alan.tur.value = 'Konu anlatımı'; ciz(); } },
       { id: 'calisma', ad: 'Çalışma Kâğıtları PDF', aktif: !yalnizFavori && f.tur === 'Çalışma kâğıdı', yap: () => { yalnizFavori = false; alan.kitle.value = ''; turSecenekleri(); alan.tur.value = 'Çalışma kâğıdı'; ciz(); } },
+      { id: 'gunluk', ad: 'Günlük Planlar (1–12)', aktif: !yalnizFavori && f.tur === 'Ders planı', yap: () => { yalnizFavori = false; alan.kitle.value = ''; turSecenekleri(); alan.tur.value = 'Ders planı'; ciz(); } },
       { id: 'plan', ad: 'Yıllık Planlar', aktif: !yalnizFavori && f.tur === 'Yıllık plan', yap: () => { yalnizFavori = false; alan.kitle.value = ''; turSecenekleri(); alan.tur.value = 'Yıllık plan'; ciz(); } },
       { id: 'kitap', ad: 'Ders Kitapları', aktif: !yalnizFavori && f.tur === 'Ders kitabı', yap: () => { yalnizFavori = false; alan.kitle.value = ''; turSecenekleri(); alan.tur.value = 'Ders kitabı'; ciz(); } },
     ];

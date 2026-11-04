@@ -29,11 +29,14 @@
   const bos = (baslik, metin, ...eylem) => el('div', { sinif: 'agac-bos', role: 'status' }, el('span', { sinif: 'agac-bos-simge', 'aria-hidden': 'true' }, simge('kitap')),
     el('div', {}, el('h3', {}, baslik), el('p', {}, metin), eylem.length ? el('div', { sinif: 'agac-bos-eylem' }, ...eylem) : null));
 
-  // İçerik kartı: kütüphanedeki kartla aynı eylemler (Aç, Hazırla ve indir, İndir)
+  // İçerik kartı: kütüphanedeki kartla aynı eylemler (Aç, Hazırla ve indir, İndir, IG Kartı, Paylaş)
   const kart = (i, dersler, { dersGoster = true } = {}) => {
     const kat = K().category(i.tur);
     const dersAd = dersler?.dersler?.[i.ders] || i.ders;
     const renk = (dersGoster && i.ders && K().subjectColor(i.ders)) || kat.color || 'mavi';
+    const paylasYol = yol(i.goruntule || i.hazirla || i.dosya || i.baglanti || location.pathname);
+    const paylasTam = /^https?:/.test(paylasYol) ? paylasYol : `https://derskutusu.com${paylasYol}`;
+    const igVar = Boolean(i.sinif && Number(i.sinif) >= 5 && i.ders && i.hafta && Number(i.hafta) <= 14 && window.dkIgKartAc);
     return el('article', { sinif: 'agac-kart', 'data-renk': renk },
       el('div', { sinif: 'agac-kart-ust' },
         el('span', { sinif: 'agac-kart-simge', 'aria-hidden': 'true' }, simge(kat.icon || 'kitap')),
@@ -44,13 +47,26 @@
       i.aciklama ? el('p', {}, i.aciklama) : null,
       el('div', { sinif: 'agac-kart-eylem' },
         i.goruntule ? el('a', { sinif: 'dugme ana', href: yol(i.goruntule) }, 'Aç', simge('ok')) : null,
+        igVar ? el('button', {
+          type: 'button',
+          sinif: 'agac-hizli-dugme ig-kart',
+          title: '@derskutusuinfo Instagram bilgi kartını önizle',
+          onclick: () => window.dkIgKartAc(i.sinif, i.ders, `${i.sinif}. Sınıf ${dersAd} · ${i.hafta}. Hafta`, [Number(i.hafta)]),
+        }, simge('instagram'), el('span', {}, 'IG Kartı')) : null,
         i.goruntule && i.tur === 'Ders kitabı' ? el('a', { sinif: 'dugme', href: `${yol(i.goruntule)}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç') : null,
         i.hazirla ? el('a', { sinif: 'dugme ana', href: yol(i.hazirla) }, 'Hazırla ve indir', simge('indir')) : null,
         !i.hazirla && i.dosya ? el('a', { sinif: 'dugme', href: yol(i.dosya), download: '' }, i.dosya_b ? 'A (Cevapsız)' : (/\.pdf$/i.test(i.dosya) ? 'PDF indir' : 'İndir'), simge('indir')) : null,
         i.dosya_b ? el('a', { sinif: 'dugme', href: yol(i.dosya_b), download: '' }, 'B (Cevapsız)', simge('indir')) : null,
         i.dosya_a_cevapli ? el('a', { sinif: 'dugme', href: yol(i.dosya_a_cevapli), download: '' }, 'A (Cevaplı)', simge('onay')) : null,
         i.dosya_b_cevapli ? el('a', { sinif: 'dugme', href: yol(i.dosya_b_cevapli), download: '' }, 'B (Cevaplı)', simge('onay')) : null,
-        !i.hazirla && !i.dosya && !i.goruntule && i.baglanti ? el('a', { sinif: 'dugme ana', href: i.baglanti, target: '_blank', rel: 'noopener' }, 'Aç', simge('ok')) : null));
+        !i.hazirla && !i.dosya && !i.goruntule && i.baglanti ? el('a', { sinif: 'dugme ana', href: i.baglanti, target: '_blank', rel: 'noopener' }, 'Aç', simge('ok')) : null,
+        el('a', {
+          sinif: 'dugme',
+          href: `https://api.whatsapp.com/send?text=${encodeURIComponent(`${i.baslik} — Ders Kutusu: ${paylasTam}`)}`,
+          target: '_blank',
+          rel: 'noopener',
+          title: 'WhatsApp’ta paylaş',
+        }, '🟢 Paylaş')));
   };
   const kartlar = (liste, dersler, secenek) => el('div', { sinif: 'agac-kartlar' }, liste.map((i) => kart(i, dersler, secenek)));
   // Haftası gelmemiş (gelecek tarihli) kayıtlar "son eklenenler"de haftası gelince görünür (ortak.js yayinda)

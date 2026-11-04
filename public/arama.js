@@ -583,6 +583,7 @@ if (typeof document !== 'undefined') {
       turkce: 'kirmizi', 'turk-dili-ve-edebiyati': 'kirmizi', ingilizce: 'pembe', arapca: 'turkuaz', 'mesleki-arapca': 'turkuaz',
       'sosyal-bilgiler': 'turuncu', 'tc-inkilap-tarihi-ve-ataturkculuk': 'turuncu', tarih: 'turuncu', cografya: 'zumrut', felsefe: 'sari',
       'din-kulturu-ve-ahlak-bilgisi': 'yesil', 'kuran-i-kerim': 'zumrut', 'peygamberimizin-hayati': 'yesil', 'temel-dini-bilgiler': 'turkuaz',
+      'hayat-bilgisi': 'zumrut', 'gorsel-sanatlar': 'pembe', muzik: 'mor', 'beden-egitimi-ve-oyun': 'turuncu', 'insan-haklari-vatandaslik-ve-demokrasi': 'sari',
     };
     const kartRenk = (b) => DERS_RENK[b.ders] || (b.tip === 'belge' ? 'turkuaz' : b.tur === 'Çalışma kâğıdı' ? 'yesil' : /plan/i.test(b.tur || '') ? 'turuncu' : /yazılı/i.test(b.tur || '') ? 'pembe' : 'mavi');
     const turKategorisi = (b) => {
@@ -639,7 +640,9 @@ if (typeof document !== 'undefined') {
       $('#arama-bos').hidden = !!(q && tumSonuclar.length);
       sayfa.replaceChildren(...suzulen.slice(0, gosterilen).map(({ b }) => {
         const haftaEs = b.hafta || ((/hafta-(\d+)\.html/.exec(b.goruntule || '') || [])[1]);
-        const igVar = Boolean(b.sinif && b.ders && haftaEs && Number(haftaEs) <= 14 && window.dkIgKartAc);
+        const igVar = Boolean(b.sinif && Number(b.sinif) >= 5 && b.ders && haftaEs && Number(haftaEs) <= 14 && window.dkIgKartAc);
+        const paylasYol = adres(b) || '/';
+        const paylasTam = /^https?:/.test(paylasYol) ? paylasYol : `https://derskutusu.com${paylasYol}`;
         const kartEl = el('article', { sinif: `kart arama-kart ${b.tip}`, 'data-renk': kartRenk(b) },
           el('div', { sinif: 'ust-bilgi' },
             el('span', { sinif: `etiket ${b.tip === 'belge' ? 'ogretmen' : b.tip === 'sayfa' ? '' : 'tur'}` }, TUR_ETIKET[b.tip]),
@@ -654,7 +657,14 @@ if (typeof document !== 'undefined') {
               type: 'button',
               sinif: 'agac-hizli-dugme ig-kart',
               onclick: () => window.dkIgKartAc(b.sinif, b.ders, `${b.sinif}. Sınıf ${b.dersAd || b.ders} · ${haftaEs}. Hafta`, [Number(haftaEs)]),
-            }, simge('instagram'), el('span', {}, 'IG Kartı')) : null));
+            }, simge('instagram'), el('span', {}, 'IG Kartı')) : null,
+            el('a', {
+              sinif: 'agac-hizli-dugme wa-paylas',
+              href: `https://api.whatsapp.com/send?text=${encodeURIComponent(`${b.baslik} — Ders Kutusu: ${paylasTam}`)}`,
+              target: '_blank',
+              rel: 'noopener',
+              title: 'WhatsApp’ta paylaş',
+            }, '🟢 Paylaş')));
         return kartEl;
       }));
       $('#daha-fazla').hidden = suzulen.length <= gosterilen;

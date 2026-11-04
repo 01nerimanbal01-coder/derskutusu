@@ -132,7 +132,14 @@
       el('div', { sinif: 'yd-govde' }, el('strong', {}, c.kod), el('div', {}, c.ifade), el('small', {}, `${c.konu} · ${c.soru} soru`)),
       el('div', { sinif: 'g-dugmeler' },
         indir(`${cikti.klasor}${c.dosya}.pdf`, 'Öğrenci kâğıdı (PDF)', `${c.kod} ${c.ifade}`, true),
-        indir(`${cikti.klasor}${c.dosya}-cevapli.pdf`, 'Cevap anahtarı (PDF)', `${c.kod} ${c.ifade}`, false)));
+        indir(`${cikti.klasor}${c.dosya}-cevapli.pdf`, 'Cevap anahtarı (PDF)', `${c.kod} ${c.ifade}`, false),
+        el('a', {
+          sinif: 'dugme',
+          href: `https://api.whatsapp.com/send?text=${encodeURIComponent(`${sinif}. Sınıf ${ad} · ${c.kod} (${c.ifade}) Yazılı Kâğıdı: https://derskutusu.com${cikti.klasor}${c.dosya}.pdf`)}`,
+          target: '_blank',
+          rel: 'noopener',
+          title: 'Bu yazılı kâğıdını WhatsApp’ta paylaş',
+        }, '🟢 Paylaş')));
     let ic;
     let ciktiSuzgec = null;
     if (liste?.length) {
