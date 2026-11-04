@@ -2068,10 +2068,10 @@ body.dk-ig-kilit-acik { overflow: hidden; }
   .dk-ig-kilit-arka, .dk-ig-sayfa-banner, .dk-ig-indir-toast, .dk-ig-yuzen-hap, .dk-ig-hikaye-serit, .dk-ig-hikaye-arka { display: none !important; }
 }
 
-.tahta-ustbar .ig-takip-mini { display: inline-flex; align-items: center; gap: 4px; padding: 0 12px; border-radius: 10px;
+.tahta-ustbar .ig-takip-mini, .g-dugmeler .ig-takip-mini { display: inline-flex; align-items: center; gap: 4px; padding: 0 12px; border-radius: 10px;
   background: linear-gradient(135deg, rgb(225 48 108 / .12), rgb(240 148 51 / .12)); border: 1px solid rgb(225 48 108 / .28);
   color: #e1306c; font-weight: 700; font-size: 13px; text-decoration: none; }
-.tahta-ustbar .ig-takip-mini:hover { background: linear-gradient(135deg, #f09433, #e1306c); color: #fff; border-color: transparent; }
+.tahta-ustbar .ig-takip-mini:hover, .g-dugmeler .ig-takip-mini:hover { background: linear-gradient(135deg, #f09433, #e1306c); color: #fff; border-color: transparent; }
 
 .plan-zumre-bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 14px; padding: 12px 14px;
   border-radius: 12px; background: var(--zemin-2); border: 1px solid var(--cizgi); }

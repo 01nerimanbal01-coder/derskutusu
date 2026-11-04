@@ -104,7 +104,9 @@
         el('a', { sinif: 'cds-hap', 'data-renk': 'turuncu', href: '/planlar.html?sinif=1' },
           el('b', {}, '🎒 1–4. Sınıf İlkokul & 5–12 Günlük Planlar')),
         el('a', { sinif: 'cds-hap', 'data-renk': 'mor', href: '/sinav.html#net-hesaplayici' },
-          el('b', {}, '🧮 LGS & TYT Net Hesaplayıcı')));
+          el('b', {}, '🧮 LGS & TYT Net Hesaplayıcı')),
+        el('a', { sinif: 'cds-hap', 'data-renk': 'pembe', href: 'https://www.instagram.com/derskutusuinfo/', target: '_blank', rel: 'noopener', title: '@derskutusuinfo Instagram hesabını takip et' },
+          el('b', {}, '📸 @derskutusuinfo (Instagram Takip Et →)')));
       const smBas = merkez.querySelector('.sm-bas');
       if (smBas) smBas.after(serit);
     }
@@ -141,6 +143,16 @@
         : dersHref;
       const yaziliHref = yaziliSay ? `${dersHref}#yaziliya-hazirlik` : `/yazili.html?sinif=${n}&ders=${encodeURIComponent(d)}`;
       const planHref = `/planlar.html?sinif=${n}&ders=${encodeURIComponent(d)}`;
+      const igHaftalar = [1, 2, 3, 4, 5, 6, 7, 8];
+      const igDugme = (n >= 5 && window.dkIgKartAc) ? el('button', {
+        type: 'button',
+        sinif: 'sm-eylem sm-eylem-ig',
+        'data-tur': 'ig',
+        title: `@derskutusuinfo ${ad} Instagram konu kartlarını aç`,
+        onclick: () => window.dkIgKartAc(n, d, `${n}. Sınıf ${ad} Instagram Konu Kartları`, igHaftalar),
+      },
+        el('span', { sinif: 'sm-eylem-ad' }, simge('instagram'), el('span', {}, 'Instagram Kartları')),
+        el('b', { sinif: 'sm-eylem-sayi' }, '1–8. Hafta →')) : null;
 
       return el('article', { sinif: `sm-ders-kart${secmeliMi ? ' secmeli' : ''}`, 'data-renk': renk },
         el('a', { sinif: 'sm-ders-ust', href: dersHref },
@@ -161,7 +173,8 @@
             el('b', { sinif: 'sm-eylem-sayi' }, yaziliSay ? `${yaziliSay} PDF` : 'Senaryo')),
           el('a', { sinif: 'sm-eylem', 'data-tur': 'plan', href: planHref },
             el('span', { sinif: 'sm-eylem-ad' }, simge('takvim'), 'Yıllık & Günlük Plan'),
-            el('b', { sinif: 'sm-eylem-sayi' }, 'Word/PDF'))));
+            el('b', { sinif: 'sm-eylem-sayi' }, 'Word/PDF')),
+          igDugme)));
     };
 
     const merkezCiz = () => {

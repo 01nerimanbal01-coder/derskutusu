@@ -329,10 +329,36 @@
     const ilerlemeMetin = el('strong', {}, '');
     const ilerlemeYuzde = el('span', { sinif: 'agac-ilerleme-yuzde' }, '%0');
     const ilerlemeDolgu = el('span', { sinif: 'agac-ilerleme-dolgu' });
+
+    const ilerlemePaylasBtn = el('button', {
+      type: 'button',
+      sinif: 'agac-hizli-dugme',
+      style: 'background:#25d366;color:#fff;border-color:#25d366;font-weight:700;',
+      title: 'Çalışma ilerlemenizi WhatsApp’ta paylaşın',
+      onclick: (e) => {
+        const metin = `📚 ${n}. Sınıf ${ad} dersinde çalışma ilerlemem: ${ilerlemeMetin.textContent} (${ilerlemeYuzde.textContent}) — Ders Kutusu (@derskutusuinfo): ${location.href}`;
+        if (typeof window.dkSayfaPaylas === 'function') {
+          window.dkSayfaPaylas(e.currentTarget, metin);
+        } else {
+          window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(metin), '_blank');
+        }
+      },
+    }, '🟢 İlerlememi Paylaş');
+
+    const dersIgSeriBtn = (n >= 5 && window.dkIgKartAc) ? el('button', {
+      type: 'button',
+      sinif: 'agac-hizli-dugme ig-kart',
+      title: `${n}. Sınıf ${ad} 1–8. hafta Instagram kart serisini incele`,
+      onclick: () => {
+        window.dkIgKartAc(n, d, `${n}. Sınıf ${ad} Instagram Konu Kartları`, [1, 2, 3, 4, 5, 6, 7, 8]);
+      },
+    }, simge('instagram'), el('span', {}, '📸 IG Kart Serisi')) : null;
+
     const ilerlemePano = el('div', { sinif: 'agac-ilerleme-pano' },
       el('div', { sinif: 'agac-ilerleme-ust' },
         el('span', { sinif: 'agac-ilerleme-etiket' }, 'Çalışma İlerlemen: ', ilerlemeMetin),
-        ilerlemeYuzde),
+        ilerlemeYuzde,
+        el('div', { sinif: 'agac-ilerleme-araclar', style: 'display:inline-flex;gap:6px;margin-left:auto;align-items:center;' }, dersIgSeriBtn, ilerlemePaylasBtn)),
       el('div', { sinif: 'agac-ilerleme-cubuk', 'aria-hidden': 'true' }, ilerlemeDolgu));
 
     const konuAnahtarlari = (k) => [

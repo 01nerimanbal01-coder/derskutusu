@@ -533,6 +533,20 @@ veri('belgeler.json').then(async (belgeler) => {
       },
       title: 'Bu belgeyi veya açık sayfayı WhatsApp’ta paylaş',
     }, '🟢 WhatsApp’ta Paylaş');
+    const igKartBtn = (b.sinif && Number(b.sinif) >= 5 && b.ders && typeof window.dkIgKartAc === 'function') ? el('button', {
+      sinif: 'dugme',
+      type: 'button',
+      title: 'Bu dersin @derskutusuinfo Instagram özet kartlarını aç',
+      onclick: () => window.dkIgKartAc(b.sinif, b.ders, `${b.sinif}. Sınıf ${b.baslik}`, [1, 2, 3, 4, 5, 6, 7, 8]),
+    }, '📸 IG Kartları') : null;
+    const igTakipBtn = el('a', {
+      sinif: 'dugme ig-takip-mini',
+      href: 'https://www.instagram.com/derskutusuinfo/',
+      target: '_blank',
+      rel: 'noopener',
+      title: '@derskutusuinfo Instagram sayfasını ziyaret et',
+    }, '@derskutusuinfo');
+
     const dugmeler = [
       kendimiz && el('button', { sinif: 'dugme ana', type: 'button', onclick: () => window.kalemAc?.() }, el('span', { 'aria-hidden': 'true' }, '✎'), 'Kalemle yaz'),
       !kendimiz && !yerelPanel && b.cerceve && el('button', { sinif: 'dugme ana', type: 'button', onclick: () => window.kalemAc?.() }, el('span', { 'aria-hidden': 'true' }, '✎'), 'Kalemle yaz'),
@@ -540,6 +554,8 @@ veri('belgeler.json').then(async (belgeler) => {
       uzak && yerelDugme(false),
       ustKopyaBtn,
       wpPaylasBtn,
+      igKartBtn,
+      igTakipBtn,
       b.dosya && el('a', { sinif: 'dugme', href: `/${b.dosya}`, download: '' }, simge('indir'), 'İndir'),
       resmi && el('a', { sinif: 'dugme', href: resmi, target: '_blank', rel: 'noopener' }, 'Resmî kaynak', simge('ok')),
       (kendimiz || (b.cerceve && !yerelPanel)) && el('button', { sinif: 'dugme', type: 'button', onclick: () => (document.fullscreenElement ? document.exitFullscreen() : alan.requestFullscreen?.()) }, simge('buyut'), 'Tam ekran'),

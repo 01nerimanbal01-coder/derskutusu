@@ -432,6 +432,12 @@
 .sm-eylem[data-tur="yazili"] .sm-eylem-ad svg { color: #db2777; }
 .sm-eylem[data-tur="plan"] { background: rgb(234 88 12 / .05); border-color: rgb(234 88 12 / .2); }
 .sm-eylem[data-tur="plan"] .sm-eylem-ad svg { color: #ea580c; }
+.sm-eylem[data-tur="ig"] { grid-column: 1 / -1; background: linear-gradient(135deg, rgb(225 48 108 / .06), rgb(240 148 51 / .06)); border-color: rgb(225 48 108 / .22); color: #e1306c; }
+.sm-eylem[data-tur="ig"] .sm-eylem-ad svg { color: #e1306c; }
+.sm-eylem[data-tur="ig"] .sm-eylem-sayi { color: #e1306c; border-color: rgb(225 48 108 / .25); background: var(--yuzey); }
+.sm-eylem[data-tur="ig"]:hover { background: linear-gradient(135deg, #f09433, #e1306c); color: #fff; border-color: transparent; }
+.sm-eylem[data-tur="ig"]:hover .sm-eylem-ad svg { color: #fff; }
+.sm-eylem[data-tur="ig"]:hover .sm-eylem-sayi { color: #fff; background: rgb(0 0 0 / .2); border-color: transparent; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .sm-eylem[data-tur="ozet"] .sm-eylem-ad svg { color: #93c5fd; }
   :root:not([data-theme="light"]) .sm-eylem[data-tur="calisma"] .sm-eylem-ad svg { color: #86efac; }
