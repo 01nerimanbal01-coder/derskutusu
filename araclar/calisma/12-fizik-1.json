@@ -1,0 +1,253 @@
+{
+  "sinif": 12,
+  "ders": "fizik",
+  "hafta": 1,
+  "tarih": "14-18 Eylül 2026",
+  "yayin_tarihi": "2026-09-14",
+  "konu": "Düzgün Çembersel Hareket ve Merkezcil Kuvvet",
+  "ciktilar": [
+    "12.1.1.1. Düzgün çembersel hareketi açıklar.",
+    "12.1.1.2. Düzgün çembersel harekette merkezcil kuvvetin bağlı olduğu değişkenleri analiz eder."
+  ],
+  "hatirla": [
+    "Sabit süratle çembersel yörüngede dolanan cismin hız büyüklüğü değişmez ancak hız vektörünün yönü sürekli değişir.",
+    "Periyot (T) bir tam tur için geçen süre (s), frekans (f) birim zamandaki tur sayısıdır ({us:s|−1}); aralarında T · f = 1 bağıntısı vardır.",
+    "Hızın yön değişiminden doğan merkezcil ivme yörünge merkezine doğrudur; büyüklüğü a = {kesir:v²|r} veya a = {us:ω|2}r formülüyle hesaplanır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki çembersel hareket büyüklüklerini sağ sütundaki fiziksel tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Periyot (T)",
+          "Cismin bir tam turu tamamlaması için geçen süre"
+        ],
+        [
+          "Frekans (f)",
+          "Cismin birim zamanda yaptığı tam dolanım sayısı"
+        ],
+        [
+          "Çizgisel hız (v)",
+          "Yörüngeye teğet olan anlık hız vektörü"
+        ],
+        [
+          "Açısal hız (ω)",
+          "Yarıçap vektörünün birim zamanda taradığı radyan cinsinden açı"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki r yarıçaplı dairesel yörüngede sabit süratle dolanan cismin K noktasından geçerken çizgisel hız, merkezcil ivme ve merkezcil kuvvet vektörlerinin yönleri aşağıdakilerden hangisinde {koyu:doğru} verilmiştir?",
+      "secenekler": [
+        "Hız yörüngeye teğet, ivme ve kuvvet çember merkezine doğrudur.",
+        "Hız, ivme ve kuvvetin üçü de çember merkezine yönelmiştir.",
+        "Hız merkeze doğru, ivme ve kuvvet yörüngeye teğettir.",
+        "Hız ve ivme teğet, kuvvet ise çember dışına doğrudur."
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dairesel düzenekte periyodu 4 saniye olan cismin frekansını birimiyle yazınız.",
+      "cevap": "Frekans f = {kesir:1|T} = {kesir:1|4} {us:s|−1} (Hertz) değerine eşittir.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki hız ve ivme vektör ilişkilerine göre yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Düzgün çembersel harekette cismin sürati sabit olduğundan çizgisel ivmesi sıfırdır.",
+          "dogru": false
+        },
+        {
+          "metin": "Merkezcil ivme vektörü her an yörünge merkezine doğru yönelmiştir.",
+          "dogru": true
+        },
+        {
+          "metin": "Çizgisel hız büyüklüğü v = ω · r bağıntısıyla hesaplanır.",
+          "dogru": true
+        },
+        {
+          "metin": "Periyot ile frekansın çarpımı daima 1 değerine eşittir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Düzgün çembersel harekette kullanılan büyüklükleri inceleyerek tablodaki boş hücreleri tamamlayınız.",
+      "basliklar": [
+        "Fiziksel Büyüklük",
+        "Sembol",
+        "SI Birimi"
+      ],
+      "satirlar": [
+        [
+          "Periyot",
+          "T",
+          "Saniye (s)"
+        ],
+        [
+          "Frekans",
+          {
+            "b": "f"
+          },
+          "Hertz ({us:s|−1})"
+        ],
+        [
+          "Açısal hız",
+          "ω",
+          {
+            "b": "Radyan/saniye (rad/s)"
+          }
+        ],
+        [
+          "Merkezcil ivme",
+          {
+            "b": "a"
+          },
+          {
+            "b": "Metre/{us:saniye|2} (m/{us:s|2})"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde verilen özdeş kütleli cisimlerin merkezcil kuvvetlerini (F = m · {us:ω|2} · r) en büyükten en küçüğe doğru 1'den 4'e kadar sıralayınız.",
+      "ogeler": [
+        "ω açısal hızında 4r yarıçapında dolanan K cismi",
+        "2ω açısal hızında r yarıçapında dolanan L cismi",
+        "ω açısal hızında 2r yarıçapında dolanan M cismi",
+        "ω açısal hızında r yarıçapında dolanan N cismi"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki virajlı yolda sabit süratle ilerleyen aracın kaymadan güvenle dönebilmesini sağlayan merkezcil kuvveti oluşturan temel etki aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Tekerlekler ile yol yüzeyi arasındaki sürtünme kuvveti",
+        "Aracın motorunun ürettiği ileri çekiş kuvveti",
+        "Araca etki eden havanın kaldırma kuvveti",
+        "Aracın yer çekimine karşı uyguladığı tepki kuvveti"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Sabit açısal hızla dönen bir platformda yarıçap 2 katına çıkarılırsa merkezcil ivme nasıl değişir?",
+      "cevap": "Açısal hız sabitken yarıçap 2 katına çıkarsa ivme de 2 katına çıkar.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki fiziksel bağıntıları temsil ettikleri hareket formülleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "v = 2πr / T",
+          "Çizgisel hızın periyoda bağlı bağıntısı"
+        ],
+        [
+          "ω = 2π / T",
+          "Açısal hızın periyoda bağlı bağıntısı"
+        ],
+        [
+          "a = {kesir:v²|r}",
+          "Merkezcil ivmenin çizgisel hıza bağlı ifadesi"
+        ],
+        [
+          "F = m · {us:ω|2} · r",
+          "Merkezcil kuvvetin açısal hıza bağlı ifadesi"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Çembersel hareketin dinamik ilkeleriyle ilgili yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Düzgün çembersel hareket yapan bir cismin hız vektörü ile ivme vektörü daima birbirine diktir.",
+          "dogru": true
+        },
+        {
+          "metin": "Yarıçap vektörü merkezden cisme, merkezcil kuvvet vektörü ise merkez doğrultusundadır.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir cismin açısal hızı artırıldığında çizgisel hızının büyüklüğü kesinlikle azalır.",
+          "dogru": false
+        },
+        {
+          "metin": "Virajı dönen bir arabada hissedilen savrulma hissi eylemsizlik etkisidir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki hareket ipuçlarından yararlanarak bulmacayı çözünüz. Turuncu anahtar kutulardaki harflerle şifrelenmiş dinamik terimini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Cismin seçilen başlangıç noktasına göre yönlü uzaklığı",
+          "cevap": "KONUM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Dairesel bir pistte başlangıç noktasına bir kez geri dönme",
+          "cevap": "TUR",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Karayollarında doğrusal yolun yön değiştirdiği kavisli bölüm",
+          "cevap": "VİRAJ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Birim zamandaki hız değişimi vektörü",
+          "cevap": "İVME",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Bir tam salınım veya dolanım için geçen süre",
+          "cevap": "PERİYOT",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Eğriye yalnız tek bir noktada değen doğru çizgisi",
+          "cevap": "TEĞET",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "KUVVET"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Yatay düzlemde bir ipin ucunda döndürülen taşın ipi aniden koparsa taş hangi doğrultuda hareketine devam eder?",
+      "cevap": "İpin koptuğu andaki çizgisel hız yönünde, çembere teğet olarak fırlar.",
+      "satir": 2
+    }
+  ]
+}

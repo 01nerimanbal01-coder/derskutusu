@@ -1,0 +1,247 @@
+{
+  "sinif": 10,
+  "ders": "matematik",
+  "hafta": 1,
+  "tarih": "14-18 Eylül 2026",
+  "konu": "Dik Üçgende Trigonometrik Oranlar ve Trigonometrik Özdeşlikler",
+  "ciktilar": [
+    "MAT.10.1.1. Dik üçgende trigonometrik oranlara (sinüs, kosinüs, tanjant, kotanjant) ve trigonometrik özdeşliklere ilişkin çıkarım yapabilme"
+  ],
+  "hatirla": [
+    "Dik üçgende bir dar açının sinüsü karşı/hipotenüs, kosinüsü komşu/hipotenüs, tanjantı karşı/komşu, kotanjantı komşu/karşıdır.",
+    "Her dar açı için sin²α + cos²α = 1 ve tan α · cot α = 1 temel trigonometrik özdeşlikleri sağlanır.",
+    "Ölçüleri toplamı 90° olan tümler açılardan birinin sinüsü diğerinin kosinüsüne; birinin tanjantı diğerinin kotanjantına eşittir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Dik üçgende bir α dar açısına ait trigonometrik oranları kenar oranlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "sin α",
+          "Açının baktığı dik kenarın hipotenüse bölümü"
+        ],
+        [
+          "cos α",
+          "Açıya bitişik dik kenarın hipotenüse bölümü"
+        ],
+        [
+          "tan α",
+          "Açının baktığı dik kenarın bitişik dik kenara bölümü"
+        ],
+        [
+          "cot α",
+          "Açıya bitişik dik kenarın baktığı dik kenara bölümü"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki ABC dik üçgeninde |AB| = 6 br, |BC| = 8 br ve |AC| = 10 br olduğuna göre tan α + cot α toplamı kaçtır?",
+      "secenekler": [
+        "{kesir:25|12}",
+        "{kesir:7|12}",
+        "{kesir:12|25}",
+        "{kesir:5|6}"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dik üçgende bir dar açının sinüs değeri sin x = {kesir:3|5} olduğuna göre cos x değerini yazınız.",
+      "cevap": "Pisagor bağıntısından komşu kenar 4 birim, cos x = {kesir:4|5} olur.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Trigonometrik özdeşlikler ve bağıntılarla ilgili yargılardan doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Herhangi bir x dar açısı için sin²x + cos²x = 1 eşitliği daima sağlanır.",
+          "dogru": true
+        },
+        {
+          "metin": "Tümler iki açıdan birinin sinüsü diğerinin kotanjantına daima eşittir.",
+          "dogru": false
+        },
+        {
+          "metin": "Birbirini 90°ye tamamlayan α ve β açıları için tan α = cot β eşitliği geçerlidir.",
+          "dogru": true
+        },
+        {
+          "metin": "Tan x ile cot x oranlarının çarpımı her dar açı için sıfıra eşittir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Özel açıların trigonometrik değerleri tablosundaki boşlukları uygun sayılarla doldurunuz.",
+      "basliklar": [
+        "Açı Ölçüsü",
+        "sinüs",
+        "kosinüs",
+        "tanjant"
+      ],
+      "satirlar": [
+        [
+          "30°",
+          "{kesir:1|2}",
+          {
+            "b": "{kesir:{kok:3}|2}"
+          },
+          "{kesir:{kok:3}|3}"
+        ],
+        [
+          "45°",
+          {
+            "b": "{kesir:{kok:2}|2}"
+          },
+          "{kesir:{kok:2}|2}",
+          "1"
+        ],
+        [
+          "60°",
+          "{kesir:{kok:3}|2}",
+          "{kesir:1|2}",
+          {
+            "b": "{kok:3}"
+          }
+        ],
+        [
+          "Açı Özdeşliği",
+          "sin²x + cos²x",
+          {
+            "b": "1"
+          },
+          "tan x · cot x = 1"
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde verilen dik üçgende trigonometrik oranla uzunluk hesaplama basamaklarını 1'den 4'e kadar sıralayınız.",
+      "ogeler": [
+        "Problemi dik üçgen çizerek ve verilen uzunlukları yerleştirerek modelleme",
+        "İstenen açıya göre karşı, komşu dik kenarları ve hipotenüsü belirleme",
+        "Verilen ve aranan kenarları içeren doğru trigonometrik oranı seçme",
+        "Kurulan trigonometrik denklemden bilinmeyen uzunluğu hesaplama"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki cebirsel kartta verilen {kesir:1 − cos²x|sin x} ifadesinin en sade biçimi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "sin x",
+        "cos x",
+        "tan x",
+        "cot x"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "10 metrelik bir merdiven duvara 30°lik eğimle dayandığında duvardaki yükselme yüksekliği (h = 10 · sin30°) kaç metredir?",
+      "cevap": "h = 10 · sin30° = 10 · {kesir:1|2} = 5 metredir.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Tümler açıların trigonometrik değerlerini birbirine eşit olan karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "sin 20°",
+          "cos 70°"
+        ],
+        [
+          "tan 35°",
+          "cot 55°"
+        ],
+        [
+          "cos 40°",
+          "sin 50°"
+        ],
+        [
+          "cot 15°",
+          "tan 75°"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Dik üçgen ve trigonometrik oranların özellikleri hakkında doğru ifadelere D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Bir dik üçgende hipotenüs uzunluğu her iki dik kenardan daima büyüktür.",
+          "dogru": true
+        },
+        {
+          "metin": "Dar açı büyüdükçe sinüs değeri küçülür, kosinüs değeri büyür.",
+          "dogru": false
+        },
+        {
+          "metin": "tan α ifadesi karşı dik kenarın komşu dik kenara bölünmesiyle bulunur.",
+          "dogru": true
+        },
+        {
+          "metin": "sin 45° değeri ile cos 45° değeri birbirine daima eşittir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarına karşılık gelen geometri ve trigonometri kavramlarını yazınız. Numaralı kutulardan 'ORAN' kelimesini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Komşu dik kenarın hipotenüse oranını veren fonksiyon",
+          "cevap": "KOSİNÜS",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Dik kenarların kareleri toplamının hipotenüs karesine eşitliği",
+          "cevap": "PİSAGOR",
+          "anahtar": 6
+        },
+        {
+          "ipucu": "Aynı noktadan çıkan iki ışının oluşturduğu geometrik şekil",
+          "cevap": "AÇI",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Boyutu ve alanı olmayan en temel geometrik eleman",
+          "cevap": "NOKTA",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "ORAN"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "sin²40° + cos²40° + tan 40° · cot 40° işleminin sonucunu özdeşlikleri kullanarak açıklayınız.",
+      "cevap": "sin²40° + cos²40° = 1 ve tan 40° · cot 40° = 1 olduğundan toplam 1 + 1 = 2 olur.",
+      "satir": 2
+    }
+  ],
+  "yayin_tarihi": "2026-11-04"
+}

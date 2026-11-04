@@ -1,0 +1,247 @@
+{
+  "sinif": 12,
+  "ders": "matematik",
+  "hafta": 1,
+  "tarih": "14-18 Eylül 2026",
+  "yayin_tarihi": "2026-09-14",
+  "konu": "Üstel Fonksiyon ve Grafiği",
+  "ciktilar": [
+    "12.1.1.1. Üstel fonksiyonu açıklar."
+  ],
+  "hatirla": [
+    "a > 0 ve a ≠ 1 olmak üzere f(x) = {us:a|x} biçimindeki fonksiyonlara üstel fonksiyon denir; tanım kümesi ℝ, değer kümesi ℝ⁺'dır.",
+    "Taban a > 1 ise fonksiyon artandır; 0 < a < 1 ise fonksiyon azalandır. Üstel fonksiyonlar daima bire bir ve örtendir.",
+    "Üstel fonksiyonların grafikleri x eksenini kesmez (y = 0 yatay asimptottur) ve her a değeri için daima (0, 1) noktasından geçer."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki üstel fonksiyon türlerini sağ sütundaki grafik özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "f(x) = {us:3|x}",
+          "Tabanı 1'den büyük olduğu için daima artan üstel fonksiyon"
+        ],
+        [
+          "g(x) = {us:({kesir:1|2})|x}",
+          "Tabanı 0 ile 1 arasında olduğu için daima azalan üstel fonksiyon"
+        ],
+        [
+          "Yatay asimptot y = 0",
+          "Grafiğin sonsuza giderken yaklaştığı ama asla kesmediği x ekseni"
+        ],
+        [
+          "f(0) = 1 noktası",
+          "Tüm temel üstel fonksiyon grafiklerinin ortak kesişim noktası"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki koordinat düzleminde f(x) = {us:2|x} fonksiyonunun grafiği çizilmiştir. Bu grafiğe göre f(3) - f(-1) işleminin sonucu kaçtır?",
+      "secenekler": [
+        "{kesir:15|2}",
+        "{kesir:13|2}",
+        "{kesir:7|2}",
+        "8"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "f(x) = {us:(2a - 5)|x} fonksiyonunun bir üstel fonksiyon belirtmesi için a'nın sağlaması gereken koşulu yazınız.",
+      "cevap": "2a - 5 > 0 ve 2a - 5 ≠ 1 olduğundan a > {kesir:5|2} ve a ≠ 3 olmalıdır.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki üstel fonksiyon özelliklerine göre yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "f: ℝ → ℝ⁺ tanımlı f(x) = {us:a|x} üstel fonksiyonu bire bir ve örten bir fonksiyondur.",
+          "dogru": true
+        },
+        {
+          "metin": "Tabanı negatif olan h(x) = {us:(−3)|x} ifadesi gerçek sayılarda üstel bir fonksiyondur.",
+          "dogru": false
+        },
+        {
+          "metin": "0 < a < 1 olduğunda f(x) = {us:a|x} fonksiyonunun grafiği soldan sağa doğru azalır.",
+          "dogru": true
+        },
+        {
+          "metin": "Üstel fonksiyonların grafikleri y eksenini daima (0, a) noktasında keser.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Verilen üstel fonksiyonların x değerlerine karşılık gelen görüntülerini hesaplayarak tabloyu tamamlayınız.",
+      "basliklar": [
+        "x Değeri",
+        "f(x) = {us:2|x}",
+        "g(x) = {us:({kesir:1|2})|x}"
+      ],
+      "satirlar": [
+        [
+          "-1",
+          "{kesir:1|2}",
+          "2"
+        ],
+        [
+          "0",
+          "1",
+          {
+            "b": "1"
+          }
+        ],
+        [
+          "1",
+          {
+            "b": "2"
+          },
+          "{kesir:1|2}"
+        ],
+        [
+          "2",
+          {
+            "b": "4"
+          },
+          {
+            "b": "{kesir:1|4}"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde verilen üstel ifadelerin değerlerini küçükten büyüğe doğru 1'den 4'e kadar sıralayınız.",
+      "ogeler": [
+        "{us:2|−2} = {kesir:1|4}",
+        "{us:2|−1} = {kesir:1|2}",
+        "{us:2|0} = 1",
+        "{us:2|2} = 4"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki koordinat düzleminde verilen artan f(x) = {us:a|x} ve azalan g(x) = {us:b|x} grafiklerine göre a ve b tabanlarının büyüklük aralıkları aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "a > 1 ve 0 < b < 1",
+        "0 < a < 1 ve b > 1",
+        "a > 1 ve b > 1",
+        "a < 0 ve b > 0"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "f(x) = {us:5|x} fonksiyonunun grafiğinin y eksenini kestiği noktanın koordinatlarını yazınız.",
+      "cevap": "x = 0 için f(0) = {us:5|0} = 1 olduğundan kesim noktası (0, 1)'dir.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki fonksiyon kavramlarını üstel fonksiyonlardaki karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Tanım kümesi",
+          "Tüm gerçek sayılar kümesi (ℝ)"
+        ],
+        [
+          "Değer kümesi",
+          "Pozitif gerçek sayılar kümesi (ℝ⁺)"
+        ],
+        [
+          "Bire birlik",
+          "Farklı x değerlerinin daima farklı görüntülere gitmesi"
+        ],
+        [
+          "Örtenlik",
+          "Değer kümesindeki her pozitif elemanın bir eşleşeni olması"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Üstel fonksiyonların matematiksel modelleriyle ilgili yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Üstel fonksiyonların grafikleri hiçbir zaman x ekseninin altına inmez.",
+          "dogru": true
+        },
+        {
+          "metin": "f(x) = {us:1|x} sabit fonksiyonu üstel fonksiyon sınıfına dâhil edilir.",
+          "dogru": false
+        },
+        {
+          "metin": "a > 1 için x değerleri büyüdükçe {us:a|x} değerleri de büyür.",
+          "dogru": true
+        },
+        {
+          "metin": "Bakteri çoğalması ve bileşik artış hesapları üstel modellerle ifade edilebilir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki matematik ipuçlarından yararlanarak bulmacayı çözünüz. Turuncu anahtar kutulardaki harfleri birleştirerek üstel kavramı bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "İki ile tam bölünemeyen tam sayı türü",
+          "cevap": "TEK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Eğrinin sonsuzda yaklaştığı ancak asla kesmediği doğru",
+          "cevap": "ASİMPTOT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Her farklı girdiye farklı çıktı üreten fonksiyon özelliği",
+          "cevap": "BİREBİR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Girdisi büyüdükçe çıktısı da daima büyüyen fonksiyon",
+          "cevap": "ARTAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Koordinat düzleminde yer belirten boyutsuz geometrik öge",
+          "cevap": "NOKTA",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "TABAN"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Laboratuvardaki bakteri sayısının başlangıçta N olduğu ve her saat 3 katına çıktığı bilindiğine göre t saat sonraki bakteri sayısını veren üstel fonksiyonu yazınız.",
+      "cevap": "Başlangıçta N bakteri varsa t saat sonra f(t) = N · {us:3|t} fonksiyonu olur.",
+      "satir": 2
+    }
+  ]
+}

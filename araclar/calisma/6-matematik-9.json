@@ -1,0 +1,261 @@
+{
+  "sinif": 6,
+  "ders": "matematik",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Kesir, Ondalık ve Yüzde Gösterimleriyle Çok Adımlı Dört İşlem Problemleri Çözme, Kısa Yollar ve Problem Kurma",
+  "ciktilar": [
+    "MAT.6.1.7.c-e: Gerçek yaşam problemlerinde kesir, ondalık ve yüzde gösterimlerini ortak temsile dönüştürerek çok adımlı işlemleri çözebilme",
+    "MAT.6.1.7.f-g: Çözüm yollarını tahminle kontrol edebilme, çözüme ulaştırmayan stratejiyi değiştirebilme ve kısa çözüm yollarını değerlendirebilme",
+    "MAT.6.1.7.ğ-h: Geliştirdiği çözüm stratejilerini farklı gerçek yaşam durumlarına genelleyebilme ve verilen işlemlere uygun yeni problem kurabilme"
+  ],
+  "hatirla": [
+    "Kesir, ondalık ve yüzdeyi bir arada içeren çok adımlı problemlerde tüm veriler ortak gösterime çevrilir; “bütünün kesri” ile “kalanın kesri” ifadeleri şerit diyagramla modellenir.",
+    "Kalan miktarın verildiği parçadan bütüne problemlerinde kalan miktar kalan parça sayısına bölünüp toplam parça sayısıyla çarpılır (ters işlem stratejisi).",
+    "Etiket fiyatına %30 indirim uygulandığında kısa yoldan 0,70 ile çarpılır; ardışık indirimlerde ikinci indirim birinci indirimli satış fiyatı üzerinden hesaplanır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Kesir, ondalık ve yüzde hesaplamalarında kullanılan kısa yol ifadelerini eşdeğer işlem adımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Bir ürünün %35 indirimli satış fiyatını tek adımda bulmak",
+          "Etiket fiyatını 0,65 ondalık gösterimiyle çarpmak"
+        ],
+        [
+          "Bir miktar meyve suyunu 0,25 litrelik kutulara doldurmak",
+          "Toplam litre miktarını 4 doğal sayısıyla çarpmak"
+        ],
+        [
+          "Bir sayının {kesir:2|5}’i ile %30’unun toplamını hesaplamak",
+          "Sayının %70’ini (0,7 katını) bulmak"
+        ],
+        [
+          "Beşte ikisi harcanınca geriye 90 TL kalan paranın tamamını bulmak",
+          "90 sayısını 3’e bölüp çıkan sonucu 5 ile çarpmak"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki şerit modelinde bir su deposunun önce %20’si ({kesir:1|5}’i), daha sonra {koyu:kalan suyun} {kesir:1|4}’ü bahçe sulamasında kullanılmıştır. Geriye 180 litre su kaldığına göre deponun tamamı kaç litredir?",
+      "secenekler": [
+        "240 litre",
+        "280 litre",
+        "300 litre",
+        "360 litre"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki mağaza ardışık indirim panosunu inceleyerek tablodaki eksik 1. indirimli fiyat ve kasadaki son satış fiyatı hücrelerini tamamlayınız. İlk satır örnektir.",
+      "basliklar": [
+        "Ürün ve Etiket Fiyatı",
+        "1. İndirim Sonrası Fiyat",
+        "Kasada Ek %10 İndirimli Son Fiyat"
+      ],
+      "satirlar": [
+        [
+          "1. Mont (1000 TL · %20 indirim)",
+          "800 TL",
+          "720 TL"
+        ],
+        [
+          "2. Bot (600 TL · %25 indirim)",
+          {
+            "b": "450 TL"
+          },
+          {
+            "b": "405 TL"
+          }
+        ],
+        [
+          "3. Çanta (500 TL · %30 indirim)",
+          {
+            "b": "350 TL"
+          },
+          "315 TL"
+        ],
+        [
+          "4. Kazak (400 TL · %15 indirim)",
+          "340 TL",
+          {
+            "b": "306 TL"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Çok adımlı kesir, ondalık ve yüzde problemleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir sayının %20 kârlı (zamlı) satış fiyatını tek adımda bulmak için o sayıyı 1,20 ile çarpabiliriz.",
+          "dogru": true
+        },
+        {
+          "metin": "Etiket fiyatına art arda yapılan %20 ve %10’luk iki indirim, başlangıç fiyatında toplam %30 indirime eşittir.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir doğal sayıyı 0,2 ondalık gösterimine bölmek, o doğal sayıyı 5 ile çarpmakla aynı sonucu verir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir telin önce {kesir:1|3}’ü, sonra kalan telin yarısı kesilirse geriye başlangıçtaki telin {kesir:1|3}’ü kalır.",
+          "dogru": true
+        },
+        {
+          "metin": "Problem kurarken gerçek yaşam mantığına bakılmaksızın otobüsteki yolcu sayısı ondalıklı çıkacak biçimde sayılar seçilebilir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun matematiksel kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Kesir, ondalık ve yüzdeyi birlikte içeren problemlerde veriler ___ bir gösterime dönüştürülür.",
+          "cevap": "ortak"
+        },
+        {
+          "metin": "Geriye kalan miktarın verildiği problemlerde bütüne ulaşmak için ___ işlem stratejisi uygulanır.",
+          "cevap": "ters"
+        },
+        {
+          "metin": "Ondalık çarpma işlemlerinde virgül hatasını önlemek için sayılar yuvarlanarak ___ yapılır.",
+          "cevap": "tahmin"
+        },
+        {
+          "metin": "Doğrulanan bir çözüm yolunu benzer yapıdaki yeni problemlere uyarlamaya ___ denir.",
+          "cevap": "genelleme"
+        }
+      ],
+      "fazla": [
+        "rastgele"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki bütçe planına göre aylık 3000 TL geliri olan Mert; parasının {kesir:1|4}’ünü ulaşıma, %35’ini yemeğe, {koyu:kalan parasının} 0,3’ünü ise kitap alışverişine ayırıyor. Mert’in geriye kaç TL tasarrufu kalır?",
+      "secenekler": [
+        "720 TL",
+        "840 TL",
+        "900 TL",
+        "960 TL"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki terzi atölyesinde bulunan 24 metre kumaşın {kesir:1|4}’ü ile ceket dikilmiş, kalan kumaşın tamamı ise her biri 0,75 metre kumaş gerektiren yelekler için kullanılmıştır. Toplam kaç adet yelek dikilmiştir?",
+      "secenekler": [
+        "18 yelek",
+        "20 yelek",
+        "24 yelek",
+        "28 yelek"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki manav kasasında kilogramı 22,5 TL’den alınan 80 kg armudun %10’u ezildiği için ayrılmış, kalan sağlam armutların kilogramı 30 TL’den satılmıştır. Manavın net kârını işlemle bulunuz.",
+      "cevap": "Maliyet: 1800 TL. Sağlam: 72 kg × 30 = 2160 TL. Net kâr: 2160 − 1800 = 360 TL.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde verilen çok adımlı problem çözme ve stratejiyi genelleme sürecini doğru uygulama sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "ogeler": [
+        "Problemdeki kesir, ondalık ve yüzde verilerini analiz ederek şerit diyagram veya tablo ile temsil etmek",
+        "Tüm verileri en uygun ortak sayı diline çevirip kısa çözüm stratejisini uygulayarak sonucu bulmak",
+        "Bulunan sonucu yuvarlama tahmini ve ters işlem sağlamasıyla kontrol edip doğruluğunu onaylamak",
+        "Başarılı olan çözüm stratejisini farklı bağlamdaki problemlere genelleyip özgün bir problem kurmak"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki matematiksel işlem kartında verilen «360 × (1 − {kesir:1|4} − 0,35)» ifadesiyle çözülebilecek uygun gerçek yaşam problemi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "360 sayfalık eserin önce dörtte birini, sonra kalan sayfaların %35’ini okuyan Eda’nın kalan sayfası",
+        "360 TL paranın önce {kesir:1|4}’ünü, sonra başlangıçtaki paranın 0,35’ini harcayan Ali’nin geriye kalan parası",
+        "360 km yolun {kesir:1|4}’ü gidildikten sonra üzerine 0,35 km daha eklenirse oluşan toplam yol uzunluğu",
+        "360 litrelik deponun %35’i dolu iken depoya deponun dörtte biri kadar daha su eklenmesi"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “etiket fiyatından yapılan indirim sonucunda ödenen bedel” ile ilgili kavramı (İNDİRİM) bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Kesir problemlerini görselleştirmek için çizilen eş bölmeli model",
+          "cevap": "ŞERİT",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Virgüllü sayı gösterimi türü",
+          "cevap": "ONDALIK",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Pay ve paydadan oluşan ifadelerde çizginin altındaki sayı",
+          "cevap": "PAYDA",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Pay, payda ve kesir çizgisinden oluşan sayı gösterimi",
+          "cevap": "KESİR",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Satış fiyatının maliyetten yüksek olmasıyla elde edilen kazanç",
+          "cevap": "KÂR",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Payı 1 olan kesirlere verilen ad: ___ kesir",
+          "cevap": "BİRİM",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "İşlem öncesinde sayıları yuvarlayarak yapılan yaklaşık hesap",
+          "cevap": "TAHMİN",
+          "anahtar": 3
+        }
+      ],
+      "sonuc": "İNDİRİM"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki “Kısa Yol ve Tahmin Kartı”nda yer alan «640 × 0,25 + 45 ÷ 0,5» işleminin kesir eşdeğerlikleri kullanılarak zihinden kısa yoldan nasıl çözüleceğini adım adım açıklayınız.",
+      "cevap": "0,25 = {kesir:1|4} için 640÷4=160; 0,5 = {kesir:1|2} için 45×2=90 bulunur: 160 + 90 = 250.",
+      "satir": 2
+    }
+  ]
+}

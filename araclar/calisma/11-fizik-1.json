@@ -1,0 +1,252 @@
+{
+  "sinif": 11,
+  "ders": "fizik",
+  "hafta": 1,
+  "tarih": "14-18 Eylül 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Serbest Düşmede Hız Değişimi ve İvme",
+  "ciktilar": [
+    "FİZ.11.1.1. Serbest düşme hareketi yapan cisimlerin ivmesine yönelik tümevarımsal akıl yürütebilme."
+  ],
+  "hatirla": [
+    "Serbest düşme; hava sürtünmesinin ihmal edildiği ortamda yalnızca yer çekimi kuvveti etkisiyle ilk hızsız (v₀ = 0) bırakılan cismin düzgün hızlanan hareketidir.",
+    "Havasız ortamda düşen tüm cisimlerin ivmesi yer çekimi ivmesine (g ≈ 10 m/s²) eşittir; ivme cismin kütlesine, hacmine veya geometrisine bağlı değildir.",
+    "Serbest düşmede cisim her saniye hızını g kadar artırır (10 m/s, 20 m/s, 30 m/s...) ve ardışık eşit zaman aralıklarında katettiği yollar h, 3h, 5h, 7h oranlarını izler."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sol sütundaki serbest düşme kavramlarını sağ sütundaki fiziksel tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Yer çekimi ivmesi (g)",
+          "Havasız ortamda serbest düşen cisimlerin birim zamandaki hız değişimi"
+        ],
+        [
+          "İlk hız (v0 = 0)",
+          "Cismin harekete başladığı anda sahip olduğu başlangıç hızı"
+        ],
+        [
+          "Düşülen yol (h)",
+          "t sürede {kesir:1|2}·g·t{us:|2} bağıntısıyla katettiği düşey mesafe"
+        ],
+        [
+          "Hız-zaman doğrusunun eğimi",
+          "Hareketteki sabit yer çekimi ivmesinin sayısal değerini vermesi"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki havasız düşme tüpünde aynı yükseklikten serbest bırakılan m kütleli demir bilye ile 10m kütleli kurşun güllenin hareketiyle ilgili hangisi {koyu:doğrudur?}",
+      "secenekler": [
+        "Kurşun gülle daha ağır olduğu için yere daha kısa sürede ulaşır.",
+        "Havasız ortamda ivmeleri eşit (g) olduğundan yere aynı anda ve aynı hızla çarparlar.",
+        "Demir bilye kütlesi küçük olduğu için yer çekiminden daha az etkilenip geç düşer.",
+        "Kütlesi büyük olan cismin ivmesi kütleyle orantılı olarak 10 katına çıkar."
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Hava direncinin ihmal edildiği ortamda serbest bırakılan bir taş 3 saniye sonra yere ulaşıyorsa yere çarpma hızı kaç m/s'dir? (g = 10 m/s{us:|2})",
+      "cevap": "v = g·t = 10 · 3 = 30 m/s'dir.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Serbest düşme hareketine ilişkin ifadeleri Doğru (D) veya Yanlış (Y) olarak işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Havasız ortamda serbest bırakılan cismin ivmesi düşüş süresince sabit kalır.",
+          "dogru": true
+        },
+        {
+          "metin": "Serbest düşen bir cismin hızı zamanın karesiyle orantılı olarak artış gösterir.",
+          "dogru": false
+        },
+        {
+          "metin": "Serbest düşmede ardışık saniyelerde alınan yollar h, 3h, 5h kuralına uyar.",
+          "dogru": true
+        },
+        {
+          "metin": "Cismin kütlesi iki katına çıkarılırsa yer çekimi ivmesi de iki katına çıkar.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Tabloda hava direncinin önemsiz olduğu ortamda serbest düşen bir cismin hareket verilerini inceleyerek boş hücreleri tamamlayınız. (g = 10 m/s{us:|2})",
+      "basliklar": [
+        "Zaman (s)",
+        "Anlık Hız v (m/s)",
+        "Düşülen Yol h (m)",
+        "O Saniyedeki Yol"
+      ],
+      "satirlar": [
+        [
+          "1. saniye sonu",
+          "10 m/s",
+          "5 m",
+          "5 m (h)"
+        ],
+        [
+          "2. saniye sonu",
+          {
+            "b": "20 m/s"
+          },
+          "20 m",
+          "15 m (3h)"
+        ],
+        [
+          "3. saniye sonu",
+          "30 m/s",
+          {
+            "b": "45 m"
+          },
+          "25 m (5h)"
+        ],
+        [
+          "4. saniye sonu",
+          {
+            "b": "40 m/s"
+          },
+          "80 m",
+          {
+            "b": "35 m (7h)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Hava direncinin ihmal edildiği ortamda serbest bırakılan bir cismin ilk 4 saniye içinde her bir saniyede aldığı yolları küçükten büyüğe sıralayınız.",
+      "ogeler": [
+        "1. saniyede alınan düşey yol: 5 m (h)",
+        "2. saniyede alınan düşey yol: 15 m (3h)",
+        "3. saniyede alınan düşey yol: 25 m (5h)",
+        "4. saniyede alınan düşey yol: 35 m (7h)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki hız-zaman grafiğine göre, 0-4 saniye aralığında serbest düşen bir cismin katettiği toplam düşey yol kaç metredir? (g = 10 m/s{us:|2})",
+      "secenekler": [
+        "40 metre",
+        "60 metre",
+        "80 metre",
+        "100 metre"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Serbest düşme yapan bir cismin hız-zaman grafiğinin altında kalan alan hangi fiziksel büyüklüğü verir?",
+      "cevap": "Cismin düşerken aldığı yer değiştirmeyi (toplam yolu) verir.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sol sütundaki serbest düşme durumlarını sağ sütundaki büyüklük değerleriyle eşleştiriniz. (g = 10 m/s{us:|2})",
+      "ciftler": [
+        [
+          "2 saniye düşen cismin anlık hızı",
+          "20 m/s"
+        ],
+        [
+          "2 saniyede katettiği toplam düşey yol",
+          "20 metre"
+        ],
+        [
+          "45 metre yüksekten düşüş süresi",
+          "3 saniye"
+        ],
+        [
+          "Her saniyedeki hız artış miktarı",
+          "10 m/s"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Serbest düşmede ivme ve hız değişimine ilişkin yargıları Doğru (D) veya Yanlış (Y) olarak işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Serbest düşme hareketi yapan cismin konum-zaman grafiği parabolik bir eğridir.",
+          "dogru": true
+        },
+        {
+          "metin": "Hava direnci ihmal edildiğinde kuş tüyü ile kurşun bilye aynı yükseklikten aynı sürede düşer.",
+          "dogru": true
+        },
+        {
+          "metin": "Serbest düşen cismin ivmesi yere yaklaşırken sürekli artar.",
+          "dogru": false
+        },
+        {
+          "metin": "Cismin bırakıldığı anda hızı sıfır olsa bile yer çekimi ivmesi g'ye eşittir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı kutulardaki harflerle şifre kavramı bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Serbest düşmede cismin aşağı yönde ivmelenmesini sağlayan yer çekimi etkisi",
+          "cevap": "KUVVET",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Ardışık saniyelerde alınan yollar arasındaki h, 3h, 5h sayısal ilişkisi",
+          "cevap": "ORAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Cisme etki eden yer çekimi kuvvetinin SI sistemindeki birimi",
+          "cevap": "NEWTON",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Düşülen dikey mesafenin metre cinsinden ölçülen fiziksel boyutu",
+          "cevap": "UZUNLUK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Serbest düşmede alınan toplam yolun uluslararası standart birimi",
+          "cevap": "METRE",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "KONUM"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Havasız ortamda serbest düşen bir cismin kütlesi neden yere düşme süresini etkilemez?",
+      "cevap": "g = F/m bağıntısında m kütleleri sadeleştiği için ivme kütleden bağımsızdır.",
+      "satir": 2
+    }
+  ]
+}

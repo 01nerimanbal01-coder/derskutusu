@@ -1,0 +1,260 @@
+{
+  "sinif": 5,
+  "ders": "matematik",
+  "hafta": 9,
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-10-31",
+  "konu": "Çok Basamaklı Doğal Sayıları (7, 8 ve 9 Basamaklı Sayılar, Milyonlar Bölüğü) Okuma ve Yazma",
+  "ciktilar": [
+    "MAT.5.1.1. Günlük hayattaki nüfus, mesafe ve üretim verilerinden hareketle 7, 8 ve 9 basamaklı doğal sayıların bölük ve basamak yapısını çözümleyebilme",
+    "MAT.5.1.2. Milyonlar bölüğünü içeren çok basamaklı doğal sayıları kurallarına uygun okuyabilme ve eksik basamaklarına sıfır yerleştirerek rakamla yazabilme"
+  ],
+  "hatirla": [
+    "Çok basamaklı doğal sayılar sağdan sola doğru üçerli gruplara (bölüklere) ayrılır: Sağdan ilk üç basamak birler bölüğü, ortadaki üç basamak binler bölüğü, soldaki üç basamak ise milyonlar bölüğüdür.",
+    "Milyonlar bölüğünde sağdan sola doğru 7. basamak milyonlar, 8. basamak on milyonlar ve 9. basamak yüz milyonlar basamağı olarak adlandırılır.",
+    "Sayılar soldan sağa doğru okunurken her bölükteki sayı okunup sonuna bölük adı («milyon», «bin») söylenir; birler bölüğünün adı söylenmez ve tamamı «000» olan bölük okunuşta atlanır.",
+    "Okunuşu verilen sayı rakamla yazılırken milyonlar bölüğünün sağındaki binler ve birler bölüğü mutlaka 3’er basamaklı olmalıdır; eksik basamakların soluna sıfır (0) yazılır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütunda verilen «649 208 175» dokuz basamaklı doğal sayısına ait kavramları sağ sütundaki karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Milyonlar bölüğündeki sayı",
+          "Altı yüz kırk dokuz (649)"
+        ],
+        [
+          "Binler bölüğündeki sayı",
+          "İki yüz sekiz (208)"
+        ],
+        [
+          "On milyonlar basamağındaki rakam",
+          "Sekizinci basamakta yer alan 4 rakamı"
+        ],
+        [
+          "On binler basamağındaki rakam",
+          "Beşinci basamakta yer alan 0 rakamı"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki astronomi bilgi kartında Dünya ile Güneş arasındaki yaklaşık uzaklığın okunuşu «Yüz kırk dokuz milyon altı yüz bin» kilometre olarak verilmiştir. Bu uzaklığın rakamla yazılışı hangisidir?",
+      "secenekler": [
+        "149 600 000",
+        "149 060 000",
+        "149 000 600",
+        "140 960 000"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört il ve ülke veri kartında verilen çok basamaklı doğal sayıların milyonlar bölüğünü ve Türkçe okunuşunu tabloya yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Rakamla Yazılışı",
+        "Milyonlar Bölüğü",
+        "Doğru Okunuşu"
+      ],
+      "satirlar": [
+        [
+          "1. 15 907 000",
+          "15",
+          "On beş milyon dokuz yüz yedi bin"
+        ],
+        [
+          "2. 85 000 412",
+          {
+            "b": "85"
+          },
+          {
+            "b": "Seksen beş milyon dört yüz on iki"
+          }
+        ],
+        [
+          "3. 308 040 006",
+          {
+            "b": "308"
+          },
+          {
+            "b": "Üç yüz sekiz milyon kırk bin altı"
+          }
+        ],
+        [
+          "4. 7 001 050",
+          {
+            "b": "7"
+          },
+          {
+            "b": "Yedi milyon bin elli"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Çok basamaklı doğal sayıların bölükleri, okunuşu ve yazılışıyla ilgili ifadelerden doğru olanların D, yanlış olanların Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Altı basamaklı en büyük doğal sayı olan 999 999’a 1 eklendiğinde yedi basamaklı en küçük doğal sayı (1 000 000) elde edilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Okunuşu «Kırk milyon sekiz bin üç» olan doğal sayı rakamla 40 800 003 biçiminde yazılır.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir doğal sayının binler bölüğündeki rakamların tamamı sıfır (000) ise okunuşta «bin» kelimesi söylenmez.",
+          "dogru": true
+        },
+        {
+          "metin": "Dokuz basamaklı bir doğal sayının en solundaki basamağın adı yüz milyonlar basamağıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Bölükler ayrılırken en soldaki basamaktan başlanarak sağa doğru üçerli gruplama yapılır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerde boş bırakılan yerleri kutudaki uygun kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Çok basamaklı sayılarda sağdan sola doğru ayrılan her üç basamaklı gruba ___ adı verilir.",
+          "cevap": "bölük"
+        },
+        {
+          "metin": "Binler bölüğünün hemen solunda yer alan ve 7, 8, 9. basamakları kapsayan bölüğe ___ bölüğü denir.",
+          "cevap": "milyonlar"
+        },
+        {
+          "metin": "Okunuşu verilen sayıda adı geçmeyen bölüğün üç basamağına da ___ rakamı yazılır.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "Sekiz basamaklı bir doğal sayının en solundaki basamak ___ basamağıdır.",
+          "cevap": "on milyonlar"
+        }
+      ],
+      "fazla": [
+        "yüzler"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki bölük yapbozunda K, L ve M kartları birleştirilerek dokuz basamaklı «604 018 590» sayısı oluşturulmuştur. Bu sayının okunuşu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Altı yüz kırk milyon yüz seksen bin beş yüz doksan",
+        "Altı yüz dört milyon on sekiz bin beş yüz doksan",
+        "Altı yüz dört milyon yüz seksen bin beş yüz dokuz",
+        "Altı milyon kırk bin on sekiz yüz beş yüz doksan"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde üç ayrı kart üzerine «920», «5» ve «38» sayıları yazılmıştır. Bu üç kart birer bölüğü oluşturacak biçimde yan yana dizildiğinde yazılabilecek dokuz basamaklı en küçük doğal sayı hangisidir?",
+      "secenekler": [
+        "005 038 920",
+        "920 038 005",
+        "920 005 038",
+        "038 005 920"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki basamak tablosunda verilen «572 084 619» sayısının milyonlar bölüğündeki sayı ile binler bölüğündeki sayının toplamını işlem yaparak bulunuz.",
+      "cevap": "Milyonlar bölüğü 572, binler bölüğü 84 (084) olduğundan toplamları: 572 + 84 = 656’dır.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört kartta okunuşları veya bölük bilgileri verilen doğal sayıları basamak sayılarına göre en az basamaklıdan en çok basamaklıya (6, 7, 8 ve 9 basamaklı) 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "Dokuz yüz seksen beş bin dört yüz yirmi (985 420 — 6 basamaklı)",
+        "Sekiz milyon üç yüz kırk bin on (8 340 010 — 7 basamaklı)",
+        "Yetmiş üç milyon altı bin doksan (73 006 090 — 8 basamaklı)",
+        "İki yüz on milyon beş yüz bin kırk (210 500 040 — 9 basamaklı)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görselde «830 416 295» doğal sayısının basamak çarkı verilmiştir. Bu sayıdaki rakamların bulunduğu basamaklarla ilgili aşağıdakilerden hangisi {koyu:yanlıştır?}",
+      "secenekler": [
+        "Yüz milyonlar basamağındaki rakam 8, milyonlar basamağındaki rakam 0’dır.",
+        "Binler bölüğündeki rakamların sayı değerleri toplamı 4 + 1 + 6 = 11’dir.",
+        "On milyonlar basamağındaki 3 rakamı ile yüzler basamağındaki 2 rakamının farkı 1’dir.",
+        "On binler basamağında 4 rakamı, binler basamağında ise 1 rakamı bulunmaktadır."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “altı basamaklı sayıların soluna eklenen 7, 8 ve 9. basamakların oluşturduğu bölük adı” kavramını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Bir sayıda rakamın bulunduğu yere verilen ad",
+          "cevap": "BASAMAK",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "En sağdaki ilk üç basamağın oluşturduğu bölük",
+          "cevap": "BİRLER",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Sağdan sola üçer rakamlık sayı gruplarının her biri",
+          "cevap": "BÖLÜK",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Dokuz basamaklı sayının en solundaki basamak: … milyonlar",
+          "cevap": "YÜZ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İki basamaklı en küçük doğal sayının okunuşu",
+          "cevap": "ON",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Birler bölüğünün hemen solundaki ikinci bölük: … bölüğü",
+          "cevap": "BİNLER",
+          "anahtar": 2
+        }
+      ],
+      "sonuc": "MİLYON"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki hata analizi kartında Kerem «Beş yüz iki milyon dokuz bin yedi» sayısını «502 9 7» şeklinde 5 basamaklı yazmıştır. Kerem’in yaptığı hatayı ve sayının doğru yazılışını açıklayınız.",
+      "cevap": "Eksik basamaklara sıfır koymayı unutmuştur; her bölük 3 basamakla 502 009 007 yazılır.",
+      "satir": 2
+    }
+  ]
+}

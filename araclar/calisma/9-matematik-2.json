@@ -1,0 +1,247 @@
+{
+  "sinif": 9,
+  "ders": "matematik",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "konu": "Gerçek Sayıların Üslü ve Köklü Gösterimleri ile Yapılan İşlemler (2. Bölüm)",
+  "ciktilar": [
+    "9.1.1. Gerçek sayıların üslü ve köklü gösterimleriyle yapılan işlemlere dair muhakeme yapabilme"
+  ],
+  "hatirla": [
+    "Köklü gösterim rasyonel üslü sayıdır: {kok:a|3} = a^{kesir:1|n} ve {kok:a · b} = {kok:a} · {kok:b} kuralları geçerlidir.",
+    "Paydasında köklü ifade bulunan kesirlerin pay ve paydası eşlenik ile çarpılarak payda rasyonel yapılır.",
+    "Kök dereceleri eşit olan köklü sayılarda toplama ve çıkarma yapılabilmesi için kök içlerinin de eşit olması gerekir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Köklü ve üslü gösterim kurallarını eşit oldukları ifadelerle eşleştiriniz.",
+      "ciftler": [
+        [
+          "{kok:a|3}",
+          "a^{kesir:1|n} (Rasyonel üs gösterimi)"
+        ],
+        [
+          "{kok:a · b}",
+          "{kok:a} · {kok:b} (Kök içinde çarpma kuralı)"
+        ],
+        [
+          "({kok:x})²",
+          "x (Karekökün karesi kuralı)"
+        ],
+        [
+          "ᵐ({kok:a)|3}",
+          "ᵐ · {kok:a|3} (Kökün kökü kuralı)"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki cebirsel kartta verilen {kok:75} − {kok:12} işleminin en sade sonucu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "3{kok:3}",
+        "2{kok:3}",
+        "4{kok:3}",
+        "5{kok:3}"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki {kok:48} sayısını a{kok:b} biçiminde en sade katsayıyla yazınız.",
+      "cevap": "48 = 16 · 3 olduğundan {kok:48} = 4{kok:3} şeklinde sadeleştirilir.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Köklü ve üslü gösterimlerle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "{kok:a²} ifadesi gerçek sayılarda mutlak değer |a| olarak çıkar.",
+          "dogru": true
+        },
+        {
+          "metin": "{kok:9 + 16} ifadesinin değeri {kok:9} + {kok:16} toplamına eşittir.",
+          "dogru": false
+        },
+        {
+          "metin": "Paydası {kok:a} olan kesir {kok:a} ile genişletilerek rasyonel yapılır.",
+          "dogru": true
+        },
+        {
+          "metin": "Negatif bir sayının çift dereceli kökü gerçek sayı belirtir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Köklü ifadelerde eşlenik ve rasyonel yapma tablosundaki boşlukları doldurunuz.",
+      "basliklar": [
+        "Köklü Kesir",
+        "Eşlenik Çarpan",
+        "Paydası Rasyonel Hâli"
+      ],
+      "satirlar": [
+        [
+          "{kesir:1|{kok:2}}",
+          "{kok:2}",
+          {
+            "b": "{kesir:{kok:2}|2}"
+          }
+        ],
+        [
+          "{kesir:3|{kok:3}}",
+          {
+            "b": "{kok:3}"
+          },
+          "{kok:3}"
+        ],
+        [
+          {
+            "b": "{kesir:2|{kok:5}}"
+          },
+          "{kok:5}",
+          "{kesir:2{kok:5}|5}"
+        ],
+        [
+          "{kesir:1|{kok:3} − 1}",
+          "{kok:3} + 1",
+          {
+            "b": "{kesir:{kok:3} + 1|2}"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde verilen paydası köklü olan kesri rasyonel yapma basamaklarını 1'den 4'e sıralayınız.",
+      "ogeler": [
+        "Kesrin paydasında bulunan köklü terimin eşleniğini belirleme",
+        "Kesrin hem payını hem paydasını eşlenik çarpanla çarpma",
+        "Paydadaki kökten kurtulup rasyonel tam sayıya ulaşma",
+        "Pay ve paydadaki ortak katsayıları sadeleştirerek en sade biçimi bulma"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki sayı doğrusunda {kok:50} sayısının bulunduğu aralık aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "7 ile 8 tam sayıları arasında (7'ye daha yakın)",
+        "6 ile 7 tam sayıları arasında (6'ya daha yakın)",
+        "8 ile 9 tam sayıları arasında (9'a daha yakın)",
+        "5 ile 6 tam sayıları arasında (5'e daha yakın)"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "{kok:50} sayısının hangi ardışık iki tam sayı arasında yer aldığını yazınız.",
+      "cevap": "{kok:49} = 7 ve {kok:64} = 8 olduğundan 7 ile 8 tam sayıları arasındadır.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Köklü sayı işlemlerini sonuçlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{kok:18}",
+          "3{kok:2}"
+        ],
+        [
+          "{kok:32}",
+          "4{kok:2}"
+        ],
+        [
+          "{kok:50}",
+          "5{kok:2}"
+        ],
+        [
+          "{kok:72}",
+          "6{kok:2}"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Köklü ifadelerde sıralama ve kök derecesiyle ilgili ifadelere D veya Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Kök dereceleri eşit pozitif sayılardan kök içi büyük olan daha büyüktür.",
+          "dogru": true
+        },
+        {
+          "metin": "Kök derecesi farklı köklü sayılar dereceleri eşitlenmeden çarpılabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Tek dereceli köklerin içi negatif gerçek sayılar alabilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Sıfırın bütün pozitif dereceli kökleri tanımsızdır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarına karşılık gelen matematik kavramlarını yazınız. Numaralı kutulardan 'KÖKLÜ' kelimesini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Bir sayının üssünü belirten kuvvet derecesi",
+          "cevap": "KUVVET",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bir büyüklüğü değerlendirmek için kullanılan birim",
+          "cevap": "ÖLÇÜ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Değişkenin veya kökün önünde çarpan olarak duran sayı",
+          "cevap": "KATSAYI",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bir fonksiyonun yaklaştığı sınır değer",
+          "cevap": "LİMİT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Taban ve kuvvetten oluşan matematiksel gösterim",
+          "cevap": "ÜSLÜ",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "KÖKLÜ"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "{kesir:6|{kok:3}} kesrinin paydasını rasyonel yaparak sonucunu açıklayınız.",
+      "cevap": "Pay ve payda {kok:3} ile çarpıldığında 6{kok:3} / 3 = 2{kok:3} bulunur.",
+      "satir": 2
+    }
+  ],
+  "yayin_tarihi": "2026-11-04"
+}
