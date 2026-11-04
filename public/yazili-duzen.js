@@ -58,7 +58,7 @@
         const k = `${x.sinif}-${x.ders}`;
         const hazir = Boolean(kagit?.tablolar?.[k] || kagit?.ulke?.[k]);
         const n = cikti?.tablolar?.[k]?.length;
-        return el('li', {}, el('a', { sinif: 'yd-ders', href: `?sinif=${x.sinif}&ders=${encodeURIComponent(x.ders)}` },
+        return el('li', {}, el('a', { sinif: 'yd-ders', 'data-renk': window.Kesif?.subjectColor(x.ders) || 'mavi', href: `?sinif=${x.sinif}&ders=${encodeURIComponent(x.ders)}` },
           dersAd(x.ders, x),
           el('small', {}, `Senaryo: ${hazir ? 'tablo ve hazır kâğıt' : 'tablo'}`),
           el('small', {}, `Öğrenme çıktısı: ${n ? `${n} kâğıt` : 'hazırlanıyor'}`)));
@@ -68,7 +68,7 @@
           bilinmeyen ? el('p', { sinif: 'yd-not' }, 'Bu sınıf ve ders için yazılı bulunamadı; aşağıdan seçebilirsiniz.') : null,
           el('p', { sinif: 'yd-adim', id: 'yd-sinif-b' }, '1. adım: sınıfı seçin'),
           el('div', { sinif: 'yd-sinif-sec', role: 'group', 'aria-labelledby': 'yd-sinif-b' }, siniflar.map((n) => el('button', {
-            type: 'button', sinif: 'sekme', 'aria-pressed': String(n === sec), onclick: () => { sec = n; try { localStorage.setItem('dk-secili-sinif', String(n)); } catch {} ciz(true); } }, `${n}. sınıf`))),
+            type: 'button', sinif: 'sekme', 'data-renk': window.Kesif?.gradeColor(n) || 'mavi', 'aria-pressed': String(n === sec), onclick: () => { sec = n; try { localStorage.setItem('dk-secili-sinif', String(n)); } catch {} ciz(true); } }, `${n}. sınıf`))),
           sec ? [el('p', { sinif: 'yd-adim', id: 'yd-ders-b' }, `2. adım: ${sec}. sınıf dersini seçin`),
             el('ul', { sinif: 'yd-dersler', 'aria-labelledby': 'yd-ders-b' },
               tablolar.filter((x) => x.sinif === sec).sort((a, b) => yer(a.ders) - yer(b.ders)).map(dersDugme))]
@@ -114,6 +114,23 @@
     // 1 · senaryoya göre (yazili.js çizdi): hazır kâğıt yoksa not, senaryo tablosu da yoksa açıklama
     const hazirKagit = Boolean(kagit?.tablolar?.[anahtar] || kagit?.ulke?.[anahtar]);
     const aciklama1 = $('.yd-aciklama', ana);
+    const yDugmeler = $('#y-dugmeler', ana);
+    if (yDugmeler && !$('.yd-senaryo-ig-btn', yDugmeler)) {
+      yDugmeler.append(
+        el('button', {
+          type: 'button',
+          sinif: 'dugme yd-senaryo-ig-btn',
+          onclick: () => window.dkIgKartAc && window.dkIgKartAc(sinif, ders, `${sinif}. Sınıf ${ad} · Ortak Yazılı Hazırlık`, [1, 2, 3, 4, 5, 6]),
+        }, '📸 Yazılı IG Kartları (1–6. Hafta)'),
+        el('button', {
+          type: 'button',
+          sinif: 'dugme dk-ig-paylas-btn',
+          onclick: (e) => window.dkSayfaPaylas && window.dkSayfaPaylas(
+            e.currentTarget,
+            `📝 ${sinif}. Sınıf ${ad} 1. Dönem Ortak Yazılı Senaryoları, Öğrenci Kâğıtları ve Cevap Anahtarları — @derskutusuinfo Instagram sayfasını takip ederek hemen indir:`
+          ),
+        }, '🟢 Senaryoyu Paylaş'));
+    }
     if (!t) {
       $('.y-secim', ana).hidden = true;
       $('#y-tablo').replaceChildren(el('p', { sinif: 'yd-bos' }, 'Bu ders için ÖDSGM ortak yazılı senaryosu yayımlanmamış.'));

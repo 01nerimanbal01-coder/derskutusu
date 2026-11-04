@@ -6,8 +6,11 @@ const normalBelge = (s) => String(s || '').toLocaleLowerCase('tr-TR')
 
 function belgeKarti(b, dersler, grupAd) {
   const dersAd = b.ders && dersler?.dersler[b.ders];
+  const renk = (b.ders && window.Kesif?.subjectColor(b.ders)) || (b.sinif && window.Kesif?.gradeColor(b.sinif)) || 'mavi';
+  const igVar = Boolean(b.sinif && Number(b.sinif) >= 5 && b.ders && window.dkIgKartAc);
   return el('article', {
     sinif: 'kart belge-kart',
+    'data-renk': renk,
     'data-arama': normalBelge(`${b.baslik || ''} ${b.aciklama || ''} ${dersAd || ''} ${b.kaynak || ''} ${grupAd || ''}`),
     'data-kitle': b.kitle || 'ortak',
     'data-sinif': b.sinif ? String(b.sinif) : '',
@@ -26,6 +29,12 @@ function belgeKarti(b, dersler, grupAd) {
     b.goruntule && /^kitap-/.test(b.kimlik || '') && !b.dosya && el('a', { sinif: 'ac', href: `/${b.goruntule}&yerel=1`, title: 'Kitabın bilgisayarınızdaki PDF dosyasını açar; internet beklenmez' }, 'Bilgisayardan aç'),
     b.dosya && el('a', { sinif: 'ac', href: `/${b.dosya}`, download: '' }, 'İndir', simge('indir')),
     !b.goruntule && !b.dosya && el('a', { sinif: 'ac', href: b.baglanti, target: '_blank', rel: 'noopener' }, 'Aç', simge('ok')),
+    igVar ? el('button', {
+      type: 'button',
+      sinif: 'ac belge-ig-btn',
+      title: 'Bu dersin @derskutusuinfo Instagram özet kartlarını aç',
+      onclick: () => window.dkIgKartAc && window.dkIgKartAc(b.sinif, b.ders, `${b.sinif}. Sınıf ${dersAd || b.ders}`, [1, 2, 3, 4]),
+    }, '📸 IG Kartı') : null,
     el('button', {
       type: 'button',
       sinif: 'ac belge-wp-btn',
@@ -52,11 +61,13 @@ Promise.all([veri('belgeler.json'), ortakVeri]).then(([belgeler, { dersler }]) =
           el('div', {}, el('p', { sinif: 'ust-baslik belge-grup-sayi' }, `${g.belgeler.length} belge`), el('h2', {}, g.ad), g.aciklama && el('p', {}, g.aciklama))),
         el('div', { sinif: 'kartlar' }, g.belgeler.map((b) => belgeKarti(b, dersler, g.ad))))));
 
-  let aktifKitle = 'tumu';
-  let aktifSinif = 'tumu';
+  const P = new URLSearchParams(location.search);
+  let aktifKitle = ['ogrenci', 'ogretmen'].includes(P.get('kitle')) ? P.get('kitle') : 'tumu';
+  let aktifSinif = ['ortaokul', 'lise', '5', '6', '7', '8', '9', '10', '11', '12'].includes(P.get('sinif')) ? P.get('sinif') : 'tumu';
   const aramaGirdi = el('input', {
     type: 'search',
     sinif: 'belge-ara-girdi',
+    value: P.get('q') || '',
     placeholder: 'Belge, ders kitabı, öğretim programı veya branş ara…',
     'aria-label': 'Resmî belgelerde ara',
     autocomplete: 'off',
@@ -135,5 +146,6 @@ Promise.all([veri('belgeler.json'), ortakVeri]).then(([belgeler, { dersler }]) =
         ...['5', '6', '7', '8', '9', '10', '11', '12'].map((s) => sinifDugme(s, `${s}. Sınıf`)))));
 
   belgeGruplari.replaceChildren(suzgecBolum, ...bolumler, bosMesaj);
+  if (aktifKitle !== 'tumu' || aktifSinif !== 'tumu' || aramaGirdi.value.trim()) suzgecUygula();
   if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
 });
