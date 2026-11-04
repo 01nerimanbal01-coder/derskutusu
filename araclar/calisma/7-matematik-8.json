@@ -1,0 +1,265 @@
+{
+  "baslik": "7. Sınıf Matematik 8. Hafta Çalışma Kâğıdı",
+  "alt_baslik": "Rasyonel Sayılarla Çok Adımlı İşlem Problemleri ve Cisimlerin Farklı Yönlerden Görünümleri",
+  "renk": "#2451d6",
+  "sinif": 7,
+  "ders": "matematik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-10-31",
+  "konu": "Rasyonel Sayılarla Çok Adımlı İşlem Problemleri ve Üç Boyutlu Cisimlerin Farklı Yönlerden İki Boyutlu Görünümleri (MAT.7.1.4 & MAT.7.2.1)",
+  "ciktilar": [
+    "MAT.7.1.4. Rasyonel sayılarla işlem önceliğine dikkat ederek çok adımlı işlemleri ve gerçek yaşam problemlerini çözer.",
+    "MAT.7.2.1. Birim küplerden oluşturulmuş üç boyutlu yapıların önden, arkadan, üstten, sağdan ve soldan iki boyutlu görünümlerini belirler."
+  ],
+  "hatirla": [
+    "Çok adımlı rasyonel sayı işlemlerinde sırasıyla üslü ifadeler, parantez içi, çarpma veya bölme ve en son toplama veya çıkarma yapılır.",
+    "Bütünün kesir kadarı bulunurken çarpma, kesir kadarı verilen bütün bulunurken bölme yapılır; kalanın kesri sorularında kalan miktar üzerinden gidilir.",
+    "Birim küp yapılarına dik bakıldığında önden ile arkadan görünüm ve sağdan ile soldan görünüm birbirinin ayna simetriğidir.",
+    "Üstten görünüm karelerine sütunlardaki küp sayılarının yazıldığı şemaya kat planı denir; her hizadaki en büyük sayı o yönden görünen yüksekliği verir."
+  ],
+  "sorular": [
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört işlem kartında çok adımlı rasyonel sayı ifadeleri verilmiştir. İşlem önceliği kurallarına göre hangi karttaki işlemin sonucu {kesir:5|2} rasyonel sayısına eşittir?",
+      "secenekler": [
+        "1 numaralı işlem kartı",
+        "2 numaralı işlem kartı",
+        "3 numaralı işlem kartı",
+        "4 numaralı işlem kartı"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kodlanmış üst görünüm (kat planı) şemasını inceleyerek yapının özelliklerini tablodaki boşluklara yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "İncelenen Özellik / Bakış Yönü",
+        "Hesaplama Yöntemi",
+        "Birim Küp / Kare Sayısı"
+      ],
+      "satirlar": [
+        [
+          "Yapıdaki toplam birim küp sayısı",
+          "3 + 2 + 1 + 4",
+          "10 birim küp"
+        ],
+        [
+          "Önden görünümdeki kare sayısı",
+          "Sol max(3, 1) + Sağ max(2, 4)",
+          {
+            "b": "7 birim kare"
+          }
+        ],
+        [
+          "Sağdan görünümdeki kare sayısı",
+          {
+            "b": "Üst max(3, 2) + Alt max(1, 4)"
+          },
+          "7 birim kare"
+        ],
+        [
+          "Üstten görünümdeki kare sayısı",
+          "Tabandaki dolu sütun adedi",
+          {
+            "b": "4 birim kare"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki matematiksel ifadeleri ve kavramları sağ sütundaki doğru karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "1 − {kesir:1|4} ÷ {kesir:1|2} işleminin sonucu",
+          "{kesir:1|2}"
+        ],
+        [
+          "60 sayısının {kesir:2|5}’inin {kesir:3|4}’ü",
+          "18"
+        ],
+        [
+          "Arkadan görünüm",
+          "Önden görünümün dikey eksene göre simetriği olan çizim"
+        ],
+        [
+          "Kat planı",
+          "Üst görünüm karelerine sütunlardaki küp adedinin yazılması"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki su deposunun önce {kesir:1|3}’ü, daha sonra kalan suyun {kesir:2|5}’i bahçe sulamasında kullanılmıştır. Depoda geriye 36 litre su kaldığına göre başlangıçta dolu olan deponun tamamı kaç litre su alır?",
+      "secenekler": [
+        "75 litre su alır",
+        "80 litre su alır",
+        "90 litre su alır",
+        "105 litre su alır"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde bir birim küp yapısının önden görünümündeki sütun yükseklikleri soldan sağa 3, 1 ve 2 kare olarak verilmiştir. Bu yapının arkadan görünümünde soldan sağa kaçar kare görülür? Nedenini yazınız.",
+      "cevap": "Soldan sağa 2, 1, 3 kare; önden görünümün simetriğidir.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Rasyonel sayı problemleri ve cisimlerin görünümleriyle ilgili ifadelerden doğru olanların D, yanlış olanların Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Çok adımlı rasyonel sayı işlemlerinde parantez içindeki işlem toplama ve çıkarmadan önce yapılır.",
+          "dogru": true
+        },
+        {
+          "metin": "Kesir kadarı verilen bir bütünün tamamını bulmak için verilen sayı kesir ile çarpılır.",
+          "dogru": false
+        },
+        {
+          "metin": "Birim küplerden oluşan bir yapının sağdan görünümü ile soldan görünümündeki kare sayıları birbirine eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Üstten kat planındaki karelerin içine yazılan sayıların toplamı yapıyı oluşturan toplam birim küp sayısını verir.",
+          "dogru": true
+        },
+        {
+          "metin": "İki boyutlu dik görünümler çizilirken arkada kalan küpler öndeki küplerden daha küçük karelerle çizilir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki tek sıralı kat planında soldan sağa sütunlardaki birim küp sayıları [2, 4, 1] olarak verilmiştir. Bu yapının önden iki boyutlu görünümü aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Soldan sağa sırasıyla 2, 4 ve 1 kareden oluşan toplam 7 karelik görünüm",
+        "Soldan sağa sırasıyla 1, 4 ve 2 kareden oluşan toplam 7 karelik görünüm",
+        "Soldan sağa her sütunda 4 kareden oluşan toplam 12 karelik görünüm",
+        "Yalnızca tabandaki 3 eş kareden oluşan tek katlı görünüm"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki 2 − [ 3 ÷ (1 + {kesir:1|2}) ] merdivenli kesir işlemini doğru çözmek için izlenecek işlem adımlarını 1’den 4’e kadar numaralandırınız.",
+      "ogeler": [
+        "En alttaki paydada bulunan 1 + {kesir:1|2} toplama işlemini yaparak {kesir:3|2} sonucunu bulmak",
+        "Ana kesir çizgisinin üstündeki 3 sayısını {kesir:3|2} kesrine bölerek 3 · {kesir:2|3} = 2 değerine ulaşmak",
+        "Baştaki 2 tam sayısından bölme işleminin sonucu olan 2 sayısını çıkarmak",
+        "Çok adımlı işlemin en sade sonucunu 2 − 2 = 0 olarak yazmak"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki bilgi kartında üç boyutlu birim küp yapılarının görünüm kuralları özetlenmiştir. Buna göre aşağıdaki ifadelerden hangisi {koyu:yanlıştır?}",
+      "secenekler": [
+        "Önden görünümdeki kare sayısı arkadan görünümdeki kare sayısına eşittir.",
+        "Üstten görünüm yapının taban yerleşim planını gösterir.",
+        "Aynı bakış hizasında en yüksek sütundaki küp sayısı kadar kare görünür.",
+        "Yapıdan herhangi bir küp çıkarıldığında tüm yönlerden görünümler kesinlikle değişir."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları kutulara yazınız. Numaralı kutulardaki harfler, pay ve paydadan oluşan ifadeyi adlandıran terimi verir.",
+      "satirlar": [
+        {
+          "ipucu": "Çok adımlı işlemlerde parantezden önce hesaplanan üslü ifade değeri",
+          "cevap": "KUVVET",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bölü çizgilerinin alt alta dizildiği çok adımlı işlem türü",
+          "cevap": "MERDİVEN",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Kat planında üst üste dizilen birim küplerin oluşturduğu dikey dizi",
+          "cevap": "SÜTUN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Üç boyutlu yapıları oluşturmakta kullanılan eş büyüklükteki küplerin her biri",
+          "cevap": "BİRİM",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Paydası sıfırdan farklı tam sayılardan oluşan ve Q harfiyle gösterilen sayı grubu",
+          "cevap": "RASYONEL",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "KESİR"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Çok adımlı işlemlerde üslü ifadelerden hemen sonra ___ içi işlemler yapılır.",
+          "cevap": "parantez"
+        },
+        {
+          "metin": "Kesir kadarı verilen bütünün tamamını bulmak için verilen miktar kesre ___.",
+          "cevap": "bölünür"
+        },
+        {
+          "metin": "Bir yapının sağdan görünümü ile ___ görünümü birbirinin simetriğidir.",
+          "cevap": "soldan"
+        },
+        {
+          "metin": "Önden görünümde her dikey sütundaki en ___ sayı kadar kare çizilir.",
+          "cevap": "büyük"
+        }
+      ],
+      "fazla": [
+        "küçük"
+      ]
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki kat planında ön sol köşede yer alan 1 birim küplük K sütunu yapıdan tamamen çıkarılıyor. Bu işlem sonucunda yapının önden görünümünün değişmeyip üstten görünümünün değişmesinin nedenini açıklayınız.",
+      "cevap": "Önden görünüm değişmez (arkasında küp var); üstten görünüm değişir.",
+      "satir": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki bisiklet parkurunun tamamının önce {kesir:2|7}’sini, ardından {kesir:3|7}’sini giden bir sporcunun bitişe ulaşması için geriye 24 kilometre yolu kalmıştır. Buna göre bisiklet parkurunun tamamı kaç kilometredir?",
+      "secenekler": [
+        "70 kilometre uzunluğundadır",
+        "84 kilometre uzunluğundadır",
+        "91 kilometre uzunluğundadır",
+        "98 kilometre uzunluğundadır"
+      ],
+      "dogru": 1
+    }
+  ]
+}
