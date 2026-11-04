@@ -84,9 +84,22 @@
       el('strong', {}, baslik),
       el('small', {}, altMetin)));
 
+    const KAPSAM_DERS_KOD = (sinif, ad) => {
+      const a = normal(ad);
+      if (a.includes('turkce')) return ['turkce', 'turkce'];
+      if (a.includes('matematik')) return ['matematik', 'matematik'];
+      if (a.includes('fen')) return ['fen-bilimleri', 'fen-bilimleri'];
+      if (a.includes('inkilap')) return ['tc-inkilap-tarihi-ve-ataturkculuk', 'inkilap-tarihi'];
+      if (a.includes('sosyal')) return ['sosyal-bilgiler', 'sosyal-bilgiler'];
+      if (a.includes('din')) return ['din-kulturu-ve-ahlak-bilgisi', 'din-kulturu'];
+      if (a.includes('ingilizce')) return ['ingilizce', 'ingilizce'];
+      return ['', ''];
+    };
+
     const sinavKarti = (s, b) => {
       const etiketBaz = `${s.sinif}. Sınıf ${s.ad}`;
       const anahtarDizi = Object.entries(s.anahtar_a || {});
+      const hNo = Math.min(14, Math.max(1, Number(s.deneme_no) || 1));
       return el('article', {
         sinif: 'asds-kart',
         id: s.kimlik,
@@ -138,9 +151,24 @@
           el('small', {}, `${(s.kapsam || []).length} ders kapsamı ▾`)),
         el('div', { sinif: 'asds-detay-icerik' },
           el('div', { sinif: 'asds-kapsam-liste' },
-            ...(s.kapsam || []).map(([dAd, dKonu]) => el('div', { sinif: 'asds-kapsam-satir' },
-              el('strong', {}, dAd),
-              el('span', {}, dKonu)))),
+            ...(s.kapsam || []).map(([dAd, dKonu]) => {
+              const [dersKod] = KAPSAM_DERS_KOD(s.sinif, dAd);
+              return el('div', { sinif: 'asds-kapsam-satir' },
+                el('strong', {}, dAd),
+                el('span', { sinif: 'asds-kapsam-konu' }, dKonu),
+                dersKod ? el('span', { sinif: 'asds-kapsam-baglar' },
+                  el('a', {
+                    sinif: 'asds-kapsam-bag',
+                    href: `/ozet/${s.sinif}-${dersKod}-hafta-${hNo}.html`,
+                    title: `${s.sinif}. Sınıf ${dAd} ${hNo}. Hafta konu özetini aç`,
+                  }, '📖 Konu Özeti'),
+                  el('button', {
+                    type: 'button',
+                    sinif: 'asds-kapsam-bag asds-kapsam-ig',
+                    title: `${s.sinif}. Sınıf ${dAd} ${hNo}. Hafta Instagram bilgi kartını aç`,
+                    onclick: () => window.dkIgKartAc && window.dkIgKartAc(s.sinif, dersKod, `${s.sinif}. Sınıf ${dAd}`, [hNo]),
+                  }, '📸 IG Kartı')) : null);
+            })),
           anahtarDizi.length ? el('div', { sinif: 'asds-hizli-anahtar' },
             el('p', { sinif: 'asds-ha-baslik' }, 'A Kitapçığı Hızlı Cevap Dizisi (B kitapçığı anahtarı PDF içindedir):'),
             el('div', { sinif: 'asds-ha-grid' },
@@ -148,6 +176,27 @@
                 el('b', {}, dersAd),
                 el('code', {}, dizi.split('').map((harf, idx) => `${idx + 1}-${harf}`).join('  ')))))) : null)),
       el('div', { sinif: 'asds-ig-paylas-satir' },
+        el('button', {
+          type: 'button',
+          sinif: 'dk-ig-paylas-btn asds-ig-kart-btn',
+          onclick: () => {
+            const kartlar = [
+              { gorsel: `/sosyal/asds-kare-${s.sinif}-sinif-1080x1080.png`, etiket: `${s.sinif}. Sınıf · ${s.hafta_adi} ASDS Deneme Sınavı (@derskutusuinfo)` },
+              ...(s.kapsam || []).map(([dAd, dKonu]) => {
+                const [, sosyalKod] = KAPSAM_DERS_KOD(s.sinif, dAd);
+                return sosyalKod ? {
+                  gorsel: `/sosyal/bilgi-${s.sinif}-${sosyalKod}-${hNo}.png`,
+                  etiket: `${s.sinif}. Sınıf ${dAd} · ${hNo}. Hafta: ${dKonu} (@derskutusuinfo)`,
+                } : null;
+              }).filter(Boolean),
+            ];
+            if (window.dkIgHikayeAc) {
+              window.dkIgHikayeAc(`${s.sinif}. Sınıf · Deneme ${s.deneme_no} (${s.hafta_adi})`, kartlar, 0);
+            } else if (window.dkIgKartAc) {
+              window.dkIgKartAc(s.sinif, 'matematik', `${s.sinif}. Sınıf · Deneme ${s.deneme_no}`, [hNo]);
+            }
+          },
+        }, `📸 Bu Denemenin IG Konu Kartları (${(s.kapsam || []).length} Ders)`),
         el('a', {
           sinif: 'asds-ig-bag',
           href: 'https://www.instagram.com/derskutusuinfo/',

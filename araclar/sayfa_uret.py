@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261104-1', 'belgeler.js': '20261104-1', 'planlar.js': '20261104-1', 'agac.js': '20261104-2', 'yazili.js': '20261010-1', 'ortak.js': '20261104-1', 'tahta.js': '20261104-1', 'etkinlik.js': '20261017-9', 'arama.js': '20261104-2', 'kutuphane.js': '20261104-2', 'arapca.js': '20261031-7', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261104-2', 'asds.js': '20261031-6'}
+BETIK_SURUMLERI = {'goruntule.js': '20261104-1', 'belgeler.js': '20261104-1', 'planlar.js': '20261104-1', 'agac.js': '20261104-2', 'yazili.js': '20261010-1', 'ortak.js': '20261104-2', 'tahta.js': '20261104-1', 'etkinlik.js': '20261017-9', 'arama.js': '20261104-2', 'kutuphane.js': '20261104-2', 'kelime.js': '20261104-2', 'arapca.js': '20261104-2', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261104-2', 'asds.js': '20261104-2'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -353,15 +353,18 @@ GOVDE = {
       <article class="kart katki-kart">
         <h2>Paylaşın</h2>
         <p>Siteyi zümrenizle, öğrencilerinizle ve velilerle paylaşın. Ne kadar çok kişi kullanırsa o kadar çok içerik hazırlayabiliriz.</p>
-        <button class="dugme" type="button" id="katki-paylas">Bağlantıyı paylaş</button>
+        <div class="katki-sosyal">
+          <button class="dugme ana" type="button" id="katki-paylas">Bağlantıyı paylaş</button>
+          <a class="dugme" href="https://api.whatsapp.com/send?text=Ders%20Kutusu%20%E2%80%94%201%E2%80%9312.%20s%C4%B1n%C4%B1f%20g%C3%BCnl%C3%BCk%20ve%20y%C4%B1ll%C4%B1k%20planlar%2C%20konu%20%C3%B6zetleri%2C%20ortak%20yaz%C4%B1l%C4%B1lar%20ve%20ASDS%20denemeleri%20(%40derskutusuinfo)%3A%20https%3A%2F%2Fderskutusu.com%2F" target="_blank" rel="noopener">🟢 WhatsApp’ta Paylaş</a>
+        </div>
         <p class="katki-not" id="katki-durum" aria-live="polite"></p>
       </article>
       <article class="kart katki-kart">
         <h2>Takip edin</h2>
         <p>Yeni içerikleri ilk siz görün. Takip etmek ve videolara yorum bırakmak da bize destek olur.</p>
         <div class="katki-sosyal">
+          <a class="dugme ana" href="https://www.instagram.com/derskutusuinfo/" data-sosyal="instagram" target="_blank" rel="noopener"><svg><use href="#s-instagram"/></svg>@derskutusuinfo · Instagram</a>
           <a class="dugme" href="https://www.youtube.com/@derskutusuinfo" data-sosyal="youtube" target="_blank" rel="noopener"><svg><use href="#s-youtube"/></svg>YouTube</a>
-          <a class="dugme" href="https://www.instagram.com/derskutusuinfo/" data-sosyal="instagram" target="_blank" rel="noopener"><svg><use href="#s-instagram"/></svg>Instagram</a>
           <a class="dugme" href="https://www.facebook.com/derskutusuinfo" data-sosyal="facebook" target="_blank" rel="noopener"><svg><use href="#s-facebook"/></svg>Facebook</a>
         </div>
       </article>

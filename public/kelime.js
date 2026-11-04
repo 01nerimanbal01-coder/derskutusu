@@ -92,7 +92,52 @@
     const k = kelimeler(); const n = k.filter(bildi).length;
     $('#k-ilerleme-sayi').textContent = `${n} / ${k.length}`;
     $('#k-ilerleme-cubuk').style.width = `${k.length ? (100 * n / k.length) : 0}%`;
+    const ilKutu = $('.kelime-ilerleme');
+    if (ilKutu && !$('.k-ust-ig-btn', ilKutu)) {
+      ilKutu.append(
+        el('button', {
+          type: 'button',
+          sinif: 'cip-dugme k-ust-ig-btn',
+          onclick: () => {
+            const h1 = Math.min(14, Math.max(1, (Number(durum.tema) || 1) * 2 - 1));
+            if (window.dkIgKartAc) window.dkIgKartAc(durum.sinif, 'ingilizce', `${durum.sinif}. Sınıf İngilizce · Theme ${durum.tema}`, [h1, Math.min(14, h1 + 1)]);
+          },
+        }, '📸 IG Kartı'),
+        el('button', {
+          type: 'button',
+          sinif: 'cip-dugme k-ust-wa-btn',
+          onclick: (e) => window.dkSayfaPaylas && window.dkSayfaPaylas(
+            e.currentTarget,
+            `🇬🇧 ${durum.sinif}. Sınıf İngilizce (Theme ${durum.tema}) kelime kartları ve sesli alıştırmalar — @derskutusuinfo Instagram sayfasını takip ederek çalış:`
+          ),
+        }, '🟢 Paylaş'));
+    }
   }
+
+  const igPaylasKutu = (ozelMesaj = '') => {
+    const h1 = Math.min(14, Math.max(1, (Number(durum.tema) || 1) * 2 - 1));
+    const h2 = Math.min(14, h1 + 1);
+    return el('div', { sinif: 'k-dugmeler', style: 'margin-top:.65rem;justify-content:center;flex-wrap:wrap' },
+      el('button', {
+        type: 'button',
+        sinif: 'dugme dk-ig-onizle-btn',
+        onclick: () => window.dkIgKartAc && window.dkIgKartAc(durum.sinif, 'ingilizce', `${durum.sinif}. Sınıf İngilizce · Theme ${durum.tema}`, [h1, h2]),
+      }, `📸 ${durum.sinif}. Sınıf İngilizce IG Kartları`),
+      el('a', {
+        sinif: 'dugme dk-ig-takip-btn',
+        href: 'https://www.instagram.com/derskutusuinfo/',
+        target: '_blank',
+        rel: 'noopener',
+      }, '@derskutusuinfo Takip Et →'),
+      el('button', {
+        type: 'button',
+        sinif: 'dk-ig-paylas-btn',
+        onclick: (e) => window.dkSayfaPaylas && window.dkSayfaPaylas(
+          e.currentTarget,
+          ozelMesaj || `🇬🇧 ${durum.sinif}. Sınıf İngilizce (Theme ${durum.tema}) kelime çalışmasını tamamladım! @derskutusuinfo Instagram sayfasını takip et ve sen de dene:`
+        ),
+      }, '🟢 WhatsApp’ta Paylaş'));
+  };
 
   // ---------- Kartlar ----------
   function kartlar() {
@@ -103,10 +148,11 @@
     function kur() { liste = karistir(kelimeler().filter((k) => !yalnizYeni || !bildi(k))); sira = 0; goster(); }
     function goster() {
       kutu.replaceChildren();
-      if (!liste.length) { kutu.append(el('p', { sinif: 'k-bos' }, 'Bu temadaki bütün kelimeleri öğrendin. Tebrikler!')); return; }
+      if (!liste.length) { kutu.append(el('p', { sinif: 'k-bos' }, 'Bu temadaki bütün kelimeleri öğrendin. Tebrikler!'), igPaylasKutu()); return; }
       if (sira >= liste.length) {
         kutu.append(el('div', { sinif: 'k-bitti' }, el('p', {}, `${liste.length} kartın hepsine baktın.`),
-          el('button', { type: 'button', sinif: 'dugme ana', onclick: kur }, 'Kartları karıştır, yeniden başla')));
+          el('button', { type: 'button', sinif: 'dugme ana', onclick: kur }, 'Kartları karıştır, yeniden başla'),
+          igPaylasKutu()));
         return;
       }
       const k = liste[sira];
@@ -207,10 +253,8 @@
       });
       function bitis() {
         kutu.append(el('div', { sinif: 'k-bitti' }, el('p', {}, `Test bitti: ${sorular.length} sorudan ${puan} doğru.`),
-          el('div', { sinif: 'k-dugmeler' },
-            el('button', { type: 'button', sinif: 'dugme ana', onclick: kur }, 'Yeni test'),
-            el('a', { sinif: 'dugme dk-ig-takip-btn', href: 'https://www.instagram.com/derskutusuinfo/', target: '_blank', rel: 'noopener' }, '📸 @derskutusuinfo İngilizce Kartları →'),
-            el('button', { type: 'button', sinif: 'dk-ig-paylas-btn', onclick: (e) => window.dkSayfaPaylas && window.dkSayfaPaylas(e.currentTarget, `🇬🇧 Ders Kutusu İngilizce Kelime Testinde ${sorular.length} soruda ${puan} doğru yaptım! @derskutusuinfo Instagram sayfasını takip et ve sen de dene:`) }, '🟢 WhatsApp’ta Paylaş'))));
+          el('button', { type: 'button', sinif: 'dugme ana', onclick: kur }, 'Yeni test'),
+          igPaylasKutu(`🇬🇧 Ders Kutusu ${durum.sinif}. Sınıf İngilizce Kelime Testinde ${sorular.length} soruda ${puan} doğru yaptım! @derskutusuinfo Instagram sayfasını takip et ve sen de dene:`)));
       }
       kutu.replaceChildren(el('div', { sinif: 'etk-bas' }, el('h2', {}, `${sorular.length} soruluk test`), sonuc), ol);
     }
@@ -227,7 +271,8 @@
       const goster = () => {
         if (i >= sorular.length) {
           kutu.replaceChildren(el('div', { sinif: 'k-bitti' }, el('p', {}, `${sorular.length} kelimeden ${dogru} tanesini doğru yazdın.`),
-            el('button', { type: 'button', sinif: 'dugme ana', onclick: kur }, 'Yeni 10 kelime')));
+            el('button', { type: 'button', sinif: 'dugme ana', onclick: kur }, 'Yeni 10 kelime'),
+            igPaylasKutu(`🇬🇧 Ders Kutusu ${durum.sinif}. Sınıf İngilizce Yazma Çalışmasında ${sorular.length} kelimeden ${dogru} doğru yaptım! @derskutusuinfo Instagram sayfasını takip et ve sen de dene:`)));
           return;
         }
         const k = sorular[i]; let ipucu = 0, bitti = false;
@@ -285,7 +330,9 @@
           kalan--; isaretle(a.k, true);
           if (!kalan) {
             durumYaz.textContent = hata ? `Bitti! ${hata} yanlış denemeyle eşleştirdin.` : 'Bitti! Hiç yanlış yapmadın.';
-            kutu.append(el('div', { sinif: 'k-bitti' }, el('button', { type: 'button', sinif: 'dugme ana', onclick: kur }, 'Yeni eşleştirme')));
+            kutu.append(el('div', { sinif: 'k-bitti' },
+              el('button', { type: 'button', sinif: 'dugme ana', onclick: kur }, 'Yeni eşleştirme'),
+              igPaylasKutu()));
           }
         } else {
           hata++;

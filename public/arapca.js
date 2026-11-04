@@ -36,7 +36,24 @@
   }
   const id = w => `${state.grade}|${w.ar}`;
   const mark = w => {learned[id(w)]=true;try{localStorage.setItem(KEY,JSON.stringify(learned));}catch{} progress();};
-  function progress(){const n=words().filter(w=>learned[id(w)]).length;$('#a-ilerleme').textContent=`${n} / ${words().length}`;$('#a-cubuk').style.width=`${100*n/words().length}%`;}
+  function progress(){
+    const n=words().filter(w=>learned[id(w)]).length;
+    $('#a-ilerleme').textContent=`${n} / ${words().length}`;
+    $('#a-cubuk').style.width=`${100*n/words().length}%`;
+    const ilKutu=$('.kelime-ilerleme');
+    if(ilKutu&&!$('.a-ust-ig-btn',ilKutu)){
+      ilKutu.append(
+        el('button',{type:'button',sinif:'cip-dugme a-ust-ig-btn',onclick:()=>{
+          const dKod=state.grade>=11?'mesleki-arapca':'arapca';
+          const h=Math.min(14,Math.max(1,Number(state.topic)||1));
+          if(window.dkIgKartAc)window.dkIgKartAc(state.grade,dKod,`${state.grade}. Sınıf Arapça · ${topic().ad}`,[h,Math.min(14,h+1)]);
+        }},'📸 IG Kartı'),
+        el('button',{type:'button',sinif:'cip-dugme a-ust-wa-btn',onclick:(e)=>window.dkSayfaPaylas&&window.dkSayfaPaylas(
+          e.currentTarget,
+          `🕌 ${state.grade}. Sınıf Arapça (${topic().ad}) harf ve kelime çalışması — @derskutusuinfo Instagram sayfasını takip ederek çalış:`
+        )},'🟢 Paylaş'));
+    }
+  }
   // Farklı harfler (ör. أ/ا, ة/ه, ي/ى) birleştirilmez. Hareke ve uzatma çizgisi isteğe bağlıdır.
   const base = s => s.normalize('NFC').replace(/[\u064B-\u0652\u0670\u0640]/g,'').replace(/[.!?؟،,؛]/g,'').replace(/\s+/g,' ').trim();
   // Saf yazım denetimi; ekran veya ses özelliği gerektirmez.
@@ -94,7 +111,7 @@
   function odakla(kap){const h=kap.querySelector('h3');if(h){h.tabIndex=-1;h.focus();}}
   function letterQuiz(){
     const qs=mix(data.harfler).slice(0,10);let i=0,score=0;
-    function next(){alan.replaceChildren();if(i===qs.length){alan.append(el('h3',{},`10 soruda ${score} doğru`),button('Harflere dön',draw));return;}
+    function next(){alan.replaceChildren();if(i===qs.length){alan.append(el('h3',{},`10 soruda ${score} doğru`),button('Harflere dön',draw),igPaylasSatir());return;}
       const q=qs[i],fb=el('p',{role:'status'}),opts=mix([q,...mix(data.harfler.filter(h=>h!==q)).slice(0,3)]);let answered=false;
       const row=el('div',{sinif:'a-harf-sec'});opts.forEach(h=>{const b=button(ar(h.harf,'a-buyuk'),()=>{if(answered)return;answered=true;for(const x of row.children)x.disabled=true;if(h===q){score++;fb.textContent='Doğru!';}else fb.replaceChildren('Doğru harf: ',ar(q.harf),' — '+q.ad);const nb=button('Sonraki soru',()=>{i++;next();odakla(alan);},'dugme ana');alan.append(nb);nb.focus();});row.append(b);});
       alan.append(el('p',{},`${i+1} / 10`),el('h3',{},`“${q.ad}” hangi harftir?`),row,fb);
@@ -104,11 +121,11 @@
     const box=el('div',{sinif:'a-hareke'});for(const [s,t,d] of [['بَ','Üstün (fetha)','Harfin üstündeki kısa çizgi.'],['بِ','Esre (kesra)','Harfin altındaki kısa çizgi.'],['بُ','Ötre (damma)','Harfin üstündeki kıvrımlı işaret.']])box.append(el('div',{},ar(s,'a-buyuk'),el('h3',{},t),el('p',{},d),listen(s)));
     alan.append(el('p',{},'Noktalar harfi, harekeler kısa sesi ayırt etmeyi sağlar.'),box);
     let i=0,score=0;const qs=mix([['تَ','Üstün'],['تِ','Esre'],['تُ','Ötre'],['جَ','Üstün'],['جِ','Esre'],['جُ','Ötre']]);const exercise=el('div',{sinif:'a-detay'});alan.append(exercise);
-    function next(){if(i===qs.length){exercise.replaceChildren(el('p',{},`6 soruda ${score} doğru`),button('Yeniden çalış',draw));return;}const [s,correct]=qs[i],feedback=el('p',{role:'status'});let answered=false;const opts=el('div',{sinif:'k-dugmeler sol'});['Üstün','Esre','Ötre'].forEach(t=>opts.append(button(t,()=>{if(answered)return;answered=true;for(const b of opts.children)b.disabled=true;if(t===correct)score++;feedback.textContent=t===correct?'Doğru!':`Doğrusu: ${correct}.`;exercise.append(button('Sonraki',()=>{i++;next();}));})));exercise.replaceChildren(el('h3',{},`${i+1} / 6 · Bu harfin harekesi hangisi?`),ar(s,'a-buyuk'),opts,feedback);}next();
+    function next(){if(i===qs.length){exercise.replaceChildren(el('p',{},`6 soruda ${score} doğru`),button('Yeniden çalış',draw),igPaylasSatir());return;}const [s,correct]=qs[i],feedback=el('p',{role:'status'});let answered=false;const opts=el('div',{sinif:'k-dugmeler sol'});['Üstün','Esre','Ötre'].forEach(t=>opts.append(button(t,()=>{if(answered)return;answered=true;for(const b of opts.children)b.disabled=true;if(t===correct)score++;feedback.textContent=t===correct?'Doğru!':`Doğrusu: ${correct}.`;exercise.append(button('Sonraki',()=>{i++;next();}));})));exercise.replaceChildren(el('h3',{},`${i+1} / 6 · Bu harfin harekesi hangisi?`),ar(s,'a-buyuk'),opts,feedback);}next();
   }
   function cards(){let fresh=false,list=[],i=0;const box=el('div',{}),check=el('input',{type:'checkbox',onchange:e=>{fresh=e.target.checked;start();}});alan.append(el('label',{sinif:'k-secenek'},check,' Yalnız öğrenmediğim kelimeler'),box);
     function start(){list=mix(words().filter(w=>!fresh||!learned[id(w)]));i=0;next();}
-    function next(){box.replaceChildren();if(i===list.length){box.append(el('div',{sinif:'k-bitti'},el('p',{},list.length?'Kartların sonuna geldin.':'Bu grupta öğrenmediğin kelime kalmadı.'),button('Yeniden başla',start,'dugme ana')));return;}
+    function next(){box.replaceChildren();if(i===list.length){box.append(el('div',{sinif:'k-bitti'},el('p',{},list.length?'Kartların sonuna geldin.':'Bu grupta öğrenmediğin kelime kalmadı.'),button('Yeniden başla',start,'dugme ana'),igPaylasSatir()));return;}
       const w=list[i],meaning=el('p',{sinif:'a-anlam',hidden:true},w.tr),flip=button('Anlamı göster ↻',()=>{meaning.hidden=!meaning.hidden;flip.textContent=meaning.hidden?'Anlamı göster ↻':'Anlamı gizle';});
       const prevBtn=el('button',{type:'button',sinif:'dugme',disabled:i===0,onclick:()=>{if(i>0){i--;next();}}},'← Önceki');
       box.append(
@@ -145,20 +162,21 @@
   }
   function igPaylasSatir(){
     const hafta=Math.min(14,Math.max(1,Number(state.topic)||1));
-    const gorsel=`/sosyal/bilgi-${state.grade}-arapca-${hafta}.png`;
-    const igBtn=button('📸 @derskutusuinfo Arapça Kartları →',()=>{
+    const dKod=state.grade>=11?'mesleki-arapca':'arapca';
+    const igBtn=button(`📸 ${state.grade}. Sınıf Arapça IG Kartları`,()=>{
       if(typeof window.dkIgKartAc==='function'){
-        window.dkIgKartAc({gorsel,baslik:`${state.grade}. Sınıf Arapça · ${topic().ad}`,baglanti:location.href,tur:'Arapça Bilgi Kartı'});
+        window.dkIgKartAc(state.grade,dKod,`${state.grade}. Sınıf Arapça · ${topic().ad}`,[hafta,Math.min(14,hafta+1)]);
       }else{
         window.open('https://www.instagram.com/derskutusuinfo/','_blank','noopener');
       }
-    },'dugme');
-    const waBtn=button('🟢 WhatsApp\'ta Paylaş',()=>{
+    },'dugme dk-ig-onizle-btn');
+    const takipBag=el('a',{sinif:'dugme dk-ig-takip-btn',href:'https://www.instagram.com/derskutusuinfo/',target:'_blank',rel:'noopener'},'@derskutusuinfo Takip Et →');
+    const waBtn=button('🟢 WhatsApp\'ta Paylaş',(e)=>{
       if(typeof window.dkSayfaPaylas==='function'){
-        window.dkSayfaPaylas(`${state.grade}. Sınıf Arapça · ${topic().ad}`,location.href,true);
+        window.dkSayfaPaylas(e.currentTarget,`🕌 ${state.grade}. Sınıf Arapça (${topic().ad}) harf ve kelime çalışmasını tamamladım! @derskutusuinfo Instagram sayfasını takip et ve sen de dene:`);
       }
-    },'dugme');
-    return el('div',{sinif:'k-dugmeler',style:'margin-top:.6rem;justify-content:center;flex-wrap:wrap'},igBtn,waBtn);
+    },'dk-ig-paylas-btn');
+    return el('div',{sinif:'k-dugmeler',style:'margin-top:.6rem;justify-content:center;flex-wrap:wrap'},igBtn,takipBag,waBtn);
   }
   function quiz(){const qs=mix(words()).slice(0,10),slots=plannedSlots(qs.length);let i=0,score=0;const box=el('div',{});alan.append(box);
     function next(){box.replaceChildren();if(i===qs.length){box.append(el('h3',{},`${qs.length} soruda ${score} doğru`),button('Yeni test',draw),igPaylasSatir());return;}const w=qs[i],fb=el('p',{role:'status',sinif:'etk-geri'}),row=el('div',{sinif:'etk-secenekler'});let answered=false;

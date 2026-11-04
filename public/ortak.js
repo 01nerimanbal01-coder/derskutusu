@@ -879,7 +879,12 @@ window.dkTamamlanan = dkTamamlanan;
         altTamamBtn,
         el('a', { sinif: 'dugme', href: calismaBag }, 'Çalışma Kâğıtları →'),
         el('a', { sinif: 'dugme', href: yaziliBag }, 'Ortak Yazılılar →'),
-        el('a', { sinif: 'dugme', href: dersBag }, 'Ünite Ağacına Dön'))));
+        el('a', { sinif: 'dugme', href: dersBag }, 'Ünite Ağacına Dön'),
+        el('button', {
+          type: 'button',
+          sinif: 'dugme dk-ig-paylas-btn',
+          onclick: (ev) => window.dkSayfaPaylas && window.dkSayfaPaylas(ev.currentTarget),
+        }, '🟢 Konu Özetini Paylaş'))));
   ozetIc.append(sonKart);
 })();
 
@@ -995,6 +1000,19 @@ window.dkTamamlanan = dkTamamlanan;
         el('div', { sinif: 'nh-oneri-dugmeler' },
           el('a', { sinif: 'dugme ana', href: `/ogrenci.html?sinif=${yapi.sinif}&ders=${encodeURIComponent(enCokKayip.kod)}` }, `${enCokKayip.ad} Üniteleri →`),
           el('a', { sinif: 'dugme', href: `/icerikler.html?sinif=${yapi.sinif}&ders=${encodeURIComponent(enCokKayip.kod)}&tur=${encodeURIComponent('Çalışma kâğıdı')}` }, 'Çalışma Kâğıtları'),
+          el('button', {
+            type: 'button',
+            sinif: 'dugme dk-ig-onizle-btn',
+            onclick: () => window.dkIgKartAc && window.dkIgKartAc(yapi.sinif, enCokKayip.kod, `${yapi.sinif}. Sınıf ${enCokKayip.ad} · Hızlı Tekrar`, [1, 2, 3, 4]),
+          }, `📸 ${enCokKayip.ad} IG Kartları`),
+          el('button', {
+            type: 'button',
+            sinif: 'dugme dk-ig-paylas-btn',
+            onclick: (ev) => window.dkSayfaPaylas && window.dkSayfaPaylas(
+              ev.currentTarget,
+              `🎯 ${yapi.ad} Deneme Sonucum: ${bicimNet(topNet)} / ${topSoru} Net (~${puan.toLocaleString('tr-TR', { minimumFractionDigits: 1, maximumFractionDigits: 1 })} Puan, %${basari} Başarı) — Sen de netini hesapla ve @derskutusuinfo ders kartlarıyla çalış:`
+            ),
+          }, '🟢 Net Sonucumu Paylaş'),
           el('a', { sinif: 'dugme dk-ig-takip-btn', href: 'https://www.instagram.com/derskutusuinfo/', target: '_blank', rel: 'noopener' }, '📸 @derskutusuinfo Günlük Soru Çöz →'))) : null);
   };
 
@@ -1209,8 +1227,10 @@ window.dkTamamlanan = dkTamamlanan;
 
   // Arkadaşına / Sınıf WhatsApp grubuna paylaşım yardımcısı
   const sayfayiPaylas = async (butonEl, ozelMetin = '') => {
+    const btn = (butonEl && typeof butonEl === 'object' && 'textContent' in butonEl) ? butonEl : null;
+    const ekMetin = typeof butonEl === 'string' ? butonEl : ozelMetin;
     const baslik = document.title || 'Ders Kutusu · 5-12. Sınıf Konu Özetleri ve Yazılılar';
-    const metin = ozelMetin || `📚 ${baslik} — Ücretsiz konu özetleri, yazılı soruları ve denemeler için @${DK_IG_AYAR.HESAP} Instagram sayfasını (${DK_IG_AYAR.PROFIL_URL}) ve sitemizi incele:`;
+    const metin = ekMetin || `📚 ${baslik} — Ücretsiz konu özetleri, yazılı soruları ve denemeler için @${DK_IG_AYAR.HESAP} Instagram sayfasını (${DK_IG_AYAR.PROFIL_URL}) ve sitemizi incele:`;
     const url = location.href;
     if (navigator.share) {
       try {
@@ -1222,10 +1242,10 @@ window.dkTamamlanan = dkTamamlanan;
     window.open(waUrl, '_blank', 'noopener');
     try {
       await navigator.clipboard.writeText(`${metin} ${url}`);
-      if (butonEl) {
-        const eski = butonEl.textContent;
-        butonEl.textContent = '✓ Paylaşıldı / Kopyalandı!';
-        setTimeout(() => { butonEl.textContent = eski; }, 2500);
+      if (btn) {
+        const eski = btn.textContent;
+        btn.textContent = '✓ Paylaşıldı / Kopyalandı!';
+        setTimeout(() => { btn.textContent = eski; }, 2500);
       }
     } catch {}
   };
@@ -1315,7 +1335,13 @@ window.dkTamamlanan = dkTamamlanan;
 
   window.dkSosyalKartYolu = sosyalKartYoluBul;
   window.dkSayfaPaylas = sayfayiPaylas;
+  window.dkIgHikayeAc = igHikayeModalAc;
   window.dkIgKartAc = (sinif, ders, baslik, haftalar = [1]) => {
+    if (sinif && typeof sinif === 'object' && sinif.gorsel) {
+      const b = sinif.baslik || 'Ders Kutusu Instagram Bilgi Kartı';
+      igHikayeModalAc(b, [{ gorsel: sinif.gorsel, etiket: `${b} (@${DK_IG_AYAR.HESAP})` }], 0);
+      return;
+    }
     const hs = (Array.isArray(haftalar) && haftalar.length ? haftalar : [1]).filter((h) => Number(h) >= 1 && Number(h) <= 16);
     const liste = (hs.length ? hs : [1]).map((h) => ({
       gorsel: sosyalKartYoluBul(sinif, ders, h),
@@ -1465,7 +1491,7 @@ window.dkTamamlanan = dkTamamlanan;
       ckUstDugmeler.append(igKartBtn, ckWpBtn);
     }
 
-    const hedefYer = $('.ozet-sonu-kart') || $('.ck-sayfalar') || $('#nh-duzen') || $('#asds-bolum') || $('#yazili-icerik') || $('#p-indir') || $('#sinif-merkezi');
+    const hedefYer = $('.ozet-sonu-kart') || $('.ck-sayfalar') || $('#nh-duzen') || $('#asds-bolum') || $('#yazili-icerik') || $('#p-indir') || $('#sinif-merkezi') || $('#k-alan') || $('#a-alan') || $('#belge-gruplari') || $('#kartlar') || $('#arama-sonuclari');
     if (!hedefYer) return;
 
     let kartOnizleme = null;
