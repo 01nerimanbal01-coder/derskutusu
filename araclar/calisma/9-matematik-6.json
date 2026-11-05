@@ -1,0 +1,267 @@
+{
+  "sinif": 9,
+  "ders": "matematik",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Gerçek Sayıların İşlem Özelliklerini Cebirsel Olarak İfade Etme",
+  "ciktilar": [
+    "Gerçek sayıların toplama ve çarpma işlemlerine ait cebirsel özellikleri (kapalılık, değişme, birleşme, birim, ters, dağılma) ifade eder.",
+    "Sayısal işlemler ile cebirsel özdeşlikler (tam kare ve iki kare farkı) arasında analojik akıl yürütme yapar.",
+    "Gerçek sayıların sıralama (eşitsizlik) özelliklerini cebirsel olarak inceler ve sıfır çarpan özelliğini uygular."
+  ],
+  "hatirla": [
+    "Toplamada birim eleman 0, ters eleman -a; çarpmada birim eleman 1, yutan eleman 0, ters eleman {kesir:1|a} (a ≠ 0).",
+    "Tam kare: {us:(a+b)|2} = {us:a|2} + 2ab + {us:b|2}, {us:(a-b)|2} = {us:a|2} - 2ab + {us:b|2}; İki kare farkı: {us:a|2} - {us:b|2} = (a - b)·(a + b).",
+    "Sıfır çarpan özelliği: a·b = 0 ⇔ a = 0 veya b = 0; Eşitsizlik negatif sayıyla çarpılır/bölünürse yön değiştirir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Cebirsel özdeşlikleri ve gerçek sayı özelliklerini karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{us:(a + b)|2} tam kare özdeşliği",
+          "{us:a|2} + 2ab + {us:b|2}"
+        ],
+        [
+          "{us:(a - b)|2} tam kare özdeşliği",
+          "{us:a|2} - 2ab + {us:b|2}"
+        ],
+        [
+          "{us:a|2} - {us:b|2} iki kare farkı özdeşliği",
+          "(a - b) · (a + b)"
+        ],
+        [
+          "a · (b + c) = a · b + a · c",
+          "Çarpmanın toplama üzerine soldan dağılma özelliği"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki tam kare özdeşliğine göre x + y = 8 ve {us:x|2} + {us:y|2} = 40 olduğuna göre x · y çarpımı kaçtır?",
+      "secenekler": [
+        "8",
+        "12",
+        "16",
+        "24"
+      ],
+      "dogru": 1,
+      "cozum": "{us:(x + y)|2} = {us:x|2} + 2xy + {us:y|2} eşitliğinden {us:8|2} = 40 + 2xy ⇒ 24 = 2xy ⇒ x · y = 12 bulunur."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "İki kare farkı özdeşliğinden yararlanarak {kesir:{us:2026|2} - {us:2024|2}|4} işleminin sonucunu bulunuz.",
+      "cevap": "(2026 - 2024)·(2026 + 2024) = 2 · 4050 = 8100 olur.",
+      "satir": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Gerçek sayıların cebirsel ve sıralama özellikleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Gerçek sayılarda toplamada birim eleman 0, çarpmada birim eleman 1'dir.",
+          "dogru": true
+        },
+        {
+          "metin": "Sıfırdan farklı her a ve b gerçek sayısı için {us:(a + b)|2} = {us:a|2} + {us:b|2} eşitliği doğrudur.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir eşitsizliğin her iki tarafı negatif bir sayıyla çarpılırsa eşitsizlik yön değiştirir.",
+          "dogru": true
+        },
+        {
+          "metin": "Karesi kendisinden küçük olan ({us:x|2} < x) gerçek sayılar 0 ile 1 arasındadır (0 < x < 1).",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Sayısal işlemler ile cebirsel özdeşlikler arasındaki analojik akıl yürütme tablosunu tamamlayınız.",
+      "basliklar": [
+        "Sayısal İşlem",
+        "Cebirsel Modelleme (Özdeşlik)",
+        "Hesaplanan Sonuç"
+      ],
+      "satirlar": [
+        [
+          "{us:103|2} = {us:(100 + 3)|2}",
+          "{us:100|2} + 2·100·3 + {us:3|2}",
+          {
+            "b": "10000 + 600 + 9 = 10609"
+          }
+        ],
+        [
+          "{us:98|2} = {us:(100 - 2)|2}",
+          "{us:100|2} - 2·100·2 + {us:2|2}",
+          {
+            "b": "10000 - 400 + 4 = 9604"
+          }
+        ],
+        [
+          "97 · 103 = (100 - 3)·(100 + 3)",
+          "{us:100|2} - {us:3|2} (İki kare farkı)",
+          {
+            "b": "10000 - 9 = 9991"
+          }
+        ],
+        [
+          "17 · 99 = 17 · (100 - 1)",
+          "17·100 - 17·1 (Dağılma özelliği)",
+          {
+            "b": "1700 - 17 = 1683"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki gruplandırma ve sıfır çarpan yöntemiyle {us:x|2} - 3x - xy + 3y = 0 denklemini çözme adımlarını sıralayınız.",
+      "ogeler": [
+        "Terimleri ikişerli gruplandırarak ilk grubu x, ikinci grubu -y ortak çarpan parantezine alma: x(x - 3) - y(x - 3) = 0",
+        "Her iki terimde ortak olan (x - 3) parantezine alarak ifadeyi çarpım biçimine dönüştürme: (x - 3)·(x - y) = 0",
+        "Gerçek sayıların sıfır çarpan özelliğini (a·b = 0 ⇔ a = 0 veya b = 0) çarpanlara uygulama",
+        "Çarpanları ayrı ayrı sıfıra eşitleyerek x = 3 veya x = y çözüm bağıntılarını elde etme"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Görseldeki eşitsizlik kurallarına göre a < b < 0 olmak üzere aşağıdakilerden hangisi kesinlikle doğrudur?",
+      "secenekler": [
+        "a · b < 0",
+        "a + b > 0",
+        "{us:a|2} < {us:b|2}",
+        "a · b > {us:b|2}"
+      ],
+      "dogru": 3,
+      "cozum": "a < b eşitsizliğinin her iki tarafı negatif olan b sayısı (b < 0) ile çarpılırsa yön değişir ve a · b > {us:b|2} olur."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları uygun matematik kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Cebirsel ifadelerde ortak çarpan parantezine alma, ___ özelliğinin ters yönüdür.",
+          "cevap": "dağılma"
+        },
+        {
+          "metin": "Bilinmeyenlerin her gerçek sayı değeri için doğru olan eşitliklere ___ denir.",
+          "cevap": "özdeşlik"
+        },
+        {
+          "metin": "a < b ve b < c iken a < c olması sıralama bağıntısının ___ özelliğidir.",
+          "cevap": "geçişme"
+        }
+      ],
+      "fazla": [
+        "birim"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Cebirsel ifadeleri çarpanlarına ayrılmış biçimleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "6{us:x|2}y - 9x{us:y|2}",
+          "3xy · (2x - 3y) (Ortak çarpan parantezi)"
+        ],
+        [
+          "{us:x|2} - 16{us:y|2}",
+          "(x - 4y) · (x + 4y) (İki kare farkı)"
+        ],
+        [
+          "{us:x|2} - 10x + 25",
+          "{us:(x - 5)|2} (Tam kare özdeşliği)"
+        ],
+        [
+          "ax + ay + bx + by",
+          "(x + y) · (a + b) (Gruplandırma yöntemi)"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Ters eleman, özdeşlik ve denklemlerle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "(2x - 6) sayısının çarpmaya göre tersi tanımsız ise 2x - 6 = 0 olup x = 3'tür.",
+          "dogru": true
+        },
+        {
+          "metin": "995 · 1005 çarpımı iki kare farkı özdeşliğiyle {us:1000|2} - {us:5|2} biçiminde yazılır.",
+          "dogru": true
+        },
+        {
+          "metin": "{us:x|2} = 5x denkleminde sadece x = 5 kökü vardır, x = 0 denklemi sağlamaz.",
+          "dogru": false
+        },
+        {
+          "metin": "a < 0 < b iken a ile b'nin çarpımı daima negatiftir (a · b < 0).",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "İki gerçek sayının toplamının yine gerçek sayı olması özelliği (9 harf)",
+          "cevap": "KAPALILIK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Çarpmanın toplama üzerine uygulanması özelliği (7 harf)",
+          "cevap": "DAĞILMA",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Toplamada 0, çarpmada 1 olan etkisiz eleman (5 harf)",
+          "cevap": "BİRİM",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Sayılar yerine harf ve sembollerle işlem yapan matematik dalı (5 harf)",
+          "cevap": "CEBİR",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "KARE"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "x - {kesir:1|x} = 4 olduğuna göre {us:x|2} + {kesir:1|{us:x|2}} ifadesinin değerini tam kare özdeşliğiyle bulunuz.",
+      "cevap": "İki tarafın karesi alınırsa {us:x|2} - 2 +.",
+      "satir": 1
+    }
+  ]
+}

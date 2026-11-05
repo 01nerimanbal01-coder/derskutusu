@@ -1,0 +1,251 @@
+{
+  "sinif": 7,
+  "ders": "arapca",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Kırtasiyede ve Giyim Mağazasında Alışveriş (فِي الْمَكْتَبَةِ وَمَحَلِّ الْمَلَابِسِ), Fiyat Sorma (بِكَمْ هٰذَا؟), Renkler ve 2. Ünite Genel Değerlendirmesi (ARP.7.2)",
+  "ciktilar": [
+    "Kırtasiyede ({ar:فِي الْمَكْتَبَةِ}) ve giyim mağazasında ({ar:فِي مَحَلِّ الْمَلَابِسِ}) geçen kısa ve basit alışveriş diyaloglarını okuyarak temel sorular sorar ve cevap verir.",
+    "Okul gereçleri ile kıyafet isimlerini, renk sıfatlarını ({ar:أَبْيَضُ، أَسْوَدُ، أَحْمَرُ، أَزْرَقُ}) ve basit bağlaçları ({ar:وَ، أَوْ، أَمْ، ثُمَّ}) cümle içinde doğru tanır.",
+    "Bakkalda, kırtasiyede, halk pazarında ve giyim mağazasında ne istediğini 1-19 arası sayıları ve fiyat sorma ({ar:بِكَمْ هٰذَا؟}) kalıplarını kullanarak yazılı olarak ifade eder."
+  ],
+  "hatirla": [
+    "Kırtasiye ({ar:الْمَكْتَبَةُ}) alışverişinde {ar:دَفْتَرٌ} (defter), {ar:قَلَمٌ} (kalem), {ar:مِمْحَاةٌ} (silgi), {ar:مِسْطَرَةٌ} (cetvel) ve {ar:حَقِيبَةٌ} (çanta) kelimeleri kullanılır.",
+    "Giyim mağazasında ({ar:مَحَلُّ الْمَلَابِسِ}) {ar:قَمِيصٌ} (gömlek), {ar:بِنْطَالٌ} (pantolon), {ar:فُسْتَانٌ} (elbise), {ar:سُتْرَةٌ} (ceket) ve {ar:حِذَاءٌ} (ayakkabı) başlıca kıyafetlerdir.",
+    "Fiyat sorulurken eriller için «{ar:بِكَمْ هٰذَا؟}», dişiller için «{ar:بِكَمْ هٰذِهِ؟}» kalıbı kullanılır ve «{ar:بِـ ... لِيرَاتٍ / لِيرَةً}» ile cevap verilir.",
+    "Renk sıfatlarında eril/dişil uyumu gözetilir: {ar:أَبْيَضُ/بَيْضَاءُ} (beyaz), {ar:أَسْوَدُ/سَوْدَاءُ} (siyah), {ar:أَحْمَرُ/حَمْرَاءُ} (kırmızı), {ar:أَزْرَقُ/زَرْقَاءُ} (mavi), {ar:أَخْضَرُ/خَضْرَاءُ} (yeşil)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki Arapça kırtasiye ve giyim ifadelerini sağ sütundaki Türkçe karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{ar:قَمِيصٌ أَبْيَضُ وَبِنْطَالٌ أَسْوَدُ}",
+          "Beyaz bir gömlek ve siyah bir pantolon"
+        ],
+        [
+          "{ar:حَقِيبَةٌ زَرْقَاءُ وَدَفْتَرٌ كَبِيرٌ}",
+          "Mavi bir çanta ve büyük bir defter"
+        ],
+        [
+          "{ar:بِكَمْ هٰذِهِ السُّتْرَةُ الْجَمِيلَةُ؟}",
+          "Bu güzel ceket kaç lira?"
+        ],
+        [
+          "{ar:أُرِيدُ مِسْطَرَةً وَمِمْحَاةً وَمِقَصًّا}",
+          "Bir cetvel, bir silgi ve bir makas istiyorum"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kırtasiye diyalog kartına göre müşterinin istediği ürünlerin toplam fiyatı kaç liradır?",
+      "secenekler": [
+        "12 Türk lirası ({ar:اثْنَتَا عَشْرَةَ لِيرَةً})",
+        "15 Türk lirası ({ar:خَمْسَ عَشْرَةَ لِيرَةً})",
+        "18 Türk lirası ({ar:ثَمَانِيَ عَشْرَةَ لِيرَةً})",
+        "19 Türk lirası ({ar:تِسْعَ عَشْرَةَ لِيرَةً})"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki mağaza etiketlerini inceleyerek ürünlerin satıldığı mekânı ve Türkçe anlamlarını tabloya yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Ürün ve Rengi",
+        "Satıldığı Mekân",
+        "Türkçe Anlamı"
+      ],
+      "satirlar": [
+        [
+          "1. {ar:قَلَمٌ أَحْمَرُ}",
+          "{ar:فِي الْمَكْتَبَةِ} (Kırtasiyede)",
+          {
+            "b": "Kırmızı kalem"
+          }
+        ],
+        [
+          "2. {ar:فُسْتَانٌ أَخْضَرُ}",
+          {
+            "b": "{ar:فِي مَحَلِّ الْمَلَابِسِ}"
+          },
+          {
+            "b": "Yeşil elbise"
+          }
+        ],
+        [
+          "3. {ar:حَقِيبَةٌ صَفْرَاءُ}",
+          {
+            "b": "{ar:فِي الْمَكْتَبَةِ} (Kırtasiyede)"
+          },
+          "Sarı çanta"
+        ],
+        [
+          "4. {ar:حِذَاءٌ أَسْوَدُ}",
+          "{ar:فِي مَحَلِّ الْمَلَابِسِ}",
+          {
+            "b": "Siyah ayakkabı"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Kırtasiye, giyim mağazası, renkler ve fiyat sorma kalıplarıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Arapçada müennes (dişil) bir ürünün fiyatı sorulurken «{ar:بِكَمْ هٰذِهِ؟}» kalıbı kullanılır.",
+          "dogru": true
+        },
+        {
+          "metin": "{ar:أَحْمَرُ} kelimesi mavi rengi, {ar:أَزْرَقُ} kelimesi ise kırmızı rengi ifade eder.",
+          "dogru": false
+        },
+        {
+          "metin": "Tercih sorusu olan «{ar:أَتُفَضِّلُ الْأَبْيَضَ أَمِ الْأَسْوَدَ؟}» cümlesinde {ar:أَمْ} «yoksa» anlamındadır.",
+          "dogru": true
+        },
+        {
+          "metin": "{ar:مِسْطَرَةٌ} ve {ar:مِبْرَاةٌ} kelimeleri giyim mağazasında satılan kışlık kıyafet isimleridir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun Arapça kelimelerle tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Öğrenci kırtasiyeden yazı yazmak için bir ___ ({ar:دَفْتَرٌ}) ve kurşun kalem satın aldı.",
+          "cevap": "defter"
+        },
+        {
+          "metin": "Müşteri mağaza görevlisine «___ {ar:هٰذَا الْقَمِيصُ؟}» diyerek gömleğin fiyatını sordu.",
+          "cevap": "بِكَمْ"
+        },
+        {
+          "metin": "Önce kırtasiyeye gittim, ___ ({ar:ثُمَّ}) giyim mağazasından yeni bir ceket aldım.",
+          "cevap": "sonra"
+        }
+      ],
+      "fazla": [
+        "fırın"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki giyim vitrininde yer alan «{ar:أَتُفَضِّلُ الْقَمِيصَ الْأَزْرَقَ أَمِ الْقَمِيصَ الْأَبْيَضَ؟}» sorusuna müşteri hangi cevabı vermiştir?",
+      "secenekler": [
+        "Mavi gömleği tercih ettiğini söylemiştir.",
+        "Beyaz gömleği tercih ettiğini söylemiştir.",
+        "Siyah pantolonu tercih ettiğini söylemiştir.",
+        "Kırmızı ceketi satın almak istediğini belirtmiştir."
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki renk-ürün eşleşme kartlarından hangisinde eril-dişil (müzekker-müennes) renk uyumu {koyu:doğru} kullanılmıştır?",
+      "secenekler": [
+        "1. Kart: {ar:قَلَمٌ حَمْرَاءُ} (Kırmızı kalem)",
+        "2. Kart: {ar:حَقِيبَةٌ زَرْقَاءُ} (Mavi çanta)",
+        "3. Kart: {ar:فُسْتَانٌ بَيْضَاءُ} (Beyaz elbise)",
+        "4. Kart: {ar:مِمْحَاةٌ أَخْضَرُ} (Yeşil silgi)"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kırtasiye fişinde yazılı olan «{ar:أُرِيدُ ثَلَاثَةَ دَفَاتِرَ وَقَلَمَيْنِ بِعَشْرِ لِيرَاتٍ}» cümlesini Türkçeye çeviriniz.",
+      "cevap": "On liraya üç defter ve iki kalem istiyorum.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki giyim mağazası alışveriş diyaloğunu anlamlı bir konuşma akışı oluşturacak biçimde 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "Müşteri: {ar:السَّلَامُ عَلَيْكُمْ، هَلْ عِنْدَكَ قَمِيصٌ أَبْيَضُ؟} (Beyaz gömlek var mı?)",
+        "Satıcı: {ar:وَعَلَيْكُمُ السَّلَامُ، نَعَمْ تَفَضَّلْ هٰذَا قَمِيصٌ أَبْيَضُ.} (Evet, buyurun.)",
+        "Müşteri: {ar:بِكَمْ هٰذَا الْقَمِيصُ؟} (Bu gömlek kaç lira?)",
+        "Satıcı: {ar:بِسَبْعَ عَشْرَةَ لِيرَةً.} (On yedi lira.)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki 2. ünite değerlendirme panosunda yer alan dört alışveriş mekânından hangisi karşısındaki ürünle {koyu:yanlış} eşleştirilmiştir?",
+      "secenekler": [
+        "1. {ar:الْمَخْبَزُ} — {ar:خُبْزٌ طَازَجٌ وَكَعْكٌ} (Fırın: ekmek ve simit)",
+        "2. {ar:الْمَكْتَبَةُ} — {ar:دَفْتَرٌ وَمِسْطَرَةٌ} (Kırtasiye: defter ve cetvel)",
+        "3. {ar:مَحَلُّ الْمَلَابِسِ} — {ar:جَزَرٌ وَبَصَلٌ} (Giyim mağazası: havuç ve soğan)",
+        "4. {ar:الْبَقَّالُ} — {ar:جُبْنٌ وَزَيْتُونٌ} (Bakkal: peynir ve zeytin)"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki kelimelerin Türkçe karşılıklarını kutulara yazınız. Numaralı harflerle «okulda yazı yazılan çizgili veya kareli gereç» kavramını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Kıyafetlerin asıldığı mobilya ({ar:خِزَانَةٌ})",
+          "cevap": "DOLAP",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Arapçada {ar:فُسْتَانٌ} kelimesiyle ifade edilen giysi",
+          "cevap": "ELBİSE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "«{ar:بِكَمْ هٰذَا؟}» sorusuyla öğrenilen ürün bedeli",
+          "cevap": "FİYAT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kırtasiyede satılan {ar:مِسْطَرَةٌ} kelimesinin karşılığı",
+          "cevap": "CETVEL",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Giyim mağazasında satılan {ar:سُتْرَةٌ} kelimesinin karşılığı",
+          "cevap": "CEKET",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "{ar:لَوْنٌ} (çoğulu {ar:أَلْوَانٌ}) kelimesinin Türkçe anlamı",
+          "cevap": "RENK",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "DEFTER"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki alışveriş listesine göre kırtasiyeden mavi bir çanta ve kırmızı bir kalem almak isteyen öğrencinin kuracağı Arapça cümleyi ve anlamını yazınız.",
+      "cevap": "«أُرِيدُ حَقِيبَةً زَرْقَاءَ وَقَلَمًا أَحْمَرَ» (Mavi bir çanta ve kırmızı bir kalem istiyorum.)",
+      "satir": 2
+    }
+  ]
+}

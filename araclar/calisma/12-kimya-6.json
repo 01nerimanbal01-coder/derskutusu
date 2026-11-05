@@ -1,0 +1,262 @@
+{
+  "sinif": 12,
+  "ders": "kimya",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Elektrot Potansiyelleri ve Redoks Tepkimelerinin İstemliliği",
+  "ciktilar": [
+    "Standart Hidrojen Elektrodunun (SHE) referans kabul edilmesini ve standart elektrot potansiyellerini açıklar.",
+    "Standart indirgenme ve yükseltgenme potansiyellerini kullanarak elementlerin aktiflik sıralamasını belirler.",
+    "Redoks tepkimelerinin istemliliğini standart hücre potansiyeli (E°{alt:hücre}) üzerinden yorumlar."
+  ],
+  "hatirla": [
+    "Standart Hidrojen Elektrodunun (SHE) 25 °C, 1 atm ve 1 M H{us:+|} çözeltisindeki potansiyeli referans olarak E° = 0,00 V kabul edilmiştir.",
+    "Yarı tepkime ters çevrilirse E° işaret değiştirir; ancak bir katsayıyla çarpılır veya bölünürse E° değeri kesinlikle değişmez.",
+    "E°{alt:hücre} = E°{alt:yüks}(Anot) + E°{alt:ind}(Katot) > 0 ise redoks tepkimesi istemlidir (kendiliğinden gerçekleşir)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Elektrokimyasal potansiyel kavramlarını açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "E° = 0,00 V",
+          "Standart Hidrojen Elektrodunun (SHE) referans potansiyeli"
+        ],
+        [
+          "E°{alt:hücre} > 0",
+          "Kendiliğinden gerçekleşen (istemli) redoks tepkimesi"
+        ],
+        [
+          "E°{alt:hücre} < 0",
+          "Kendiliğinden gerçekleşmeyen (istemsiz) redoks tepkimesi"
+        ],
+        [
+          "E°{alt:yüks} büyük metal",
+          "Galvanik hücrede yükseltgenerek anot olan aktif metal"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki standart indirgenme potansiyellerine göre Mg(k) + 2Ag{us:+|}(suda) -> Mg{us:2+|}(suda) + 2Ag(k) tepkimesinin E°{alt:hücre} değeri kaç V'tur?",
+      "secenekler": [
+        "+3,17 V",
+        "+1,57 V",
+        "+3,97 V",
+        "-1,57 V"
+      ],
+      "dogru": 0,
+      "cozum": "Mg yükseltgenir (E°{alt:yüks} = +2,37 V), Ag{us:+|} indirgenir (E°{alt:ind} = +0,80 V, 2 ile çarpılmaz): 2,37 + 0,80 = +3,17 V."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Bir yarı tepkime denklemi 2 katsayısıyla çarpılıp ters çevrilirse standart elektrot potansiyeli (E°) nasıl değişir?",
+      "cevap": "Katsayıyla çarpılması E° değerini değiştirmez; yalnızca.",
+      "satir": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Elektrot potansiyelleri ve aktiflikle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Aktif metallerin (Zn, Mg, Fe) standart indirgenme potansiyelleri negatiftir (E°{alt:ind} < 0).",
+          "dogru": true
+        },
+        {
+          "metin": "Standart yükseltgenme potansiyeli en büyük olan metal, en kuvvetli yükseltgen maddedir.",
+          "dogru": false
+        },
+        {
+          "metin": "Cu, Ag, Hg, Pt ve Au gibi soy metallerin standart indirgenme potansiyelleri pozitiftir.",
+          "dogru": true
+        },
+        {
+          "metin": "Aktif bir metal çubuk, kendisinden pasif bir metalin tuz çözeltisine daldırılırsa aşınır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Aktiflik sıralaması Mg > Fe > Cu olan metaller için kapta çözelti saklama ve istemlilik tablosunu tamamlayınız.",
+      "basliklar": [
+        "Metal Kap ve Çözelti",
+        "Tepkime İstemliliği",
+        "Kapta Saklanma Durumu"
+      ],
+      "satirlar": [
+        [
+          "Fe kapta CuSO{alt:4|}",
+          "İstemlidir (Fe > Cu, E° > 0)",
+          {
+            "b": "Saklanamaz (Fe kap aşınır)"
+          }
+        ],
+        [
+          "Cu kapta FeSO{alt:4|}",
+          "İstemsizdir (Cu < Fe, E° < 0)",
+          {
+            "b": "Güvenle saklanabilir"
+          }
+        ],
+        [
+          "Mg kapta FeSO{alt:4|}",
+          "İstemlidir (Mg > Fe, E° > 0)",
+          {
+            "b": "Saklanamaz (Mg kap aşınır)"
+          }
+        ],
+        [
+          "Fe kapta MgSO{alt:4|}",
+          "İstemsizdir (Fe < Mg, E° < 0)",
+          {
+            "b": "Güvenle saklanabilir"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde standart indirgenme potansiyelleri verilen metalleri metalik aktifliklerine göre küçükten büyüğe sıralayınız.",
+      "ogeler": [
+        "Ag metali: E°(Ag{us:+|}/Ag) = +0,80 V (En pasif / yarı soy)",
+        "Cu metali: E°(Cu{us:2+|}/Cu) = +0,34 V (Pasif / yarı soy)",
+        "Zn metali: E°(Zn{us:2+|}/Zn) = -0,76 V (Aktif metal)",
+        "Mg metali: E°(Mg{us:2+|}/Mg) = -2,37 V (En aktif metal)"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki X, Y, Z metallerinin yükseltgenme potansiyelleri X > Y > Z olduğuna göre hangi kapta çözelti saklanamaz?",
+      "secenekler": [
+        "X metalinden yapılmış kapta Z(NO{alt:3|}){alt:2|} çözeltisi",
+        "Z metalinden yapılmış kapta Y(NO{alt:3|}){alt:2|} çözeltisi",
+        "Y metalinden yapılmış kapta X(NO{alt:3|}){alt:2|} çözeltisi",
+        "Z metalinden yapılmış kapta X(NO{alt:3|}){alt:2|} çözeltisi"
+      ],
+      "dogru": 0,
+      "cozum": "Kabın aşınması için kap metalinin katyondan aktif olması gerekir. X > Z olduğu için X kabı Z{us:2+|} iyonlarıyla tepkime verir ve delinir."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Elektrokimyasal pillerde yükseltgenme yarı tepkimesinin gerçekleştiği elektroda ___ denir.",
+          "cevap": "anot"
+        },
+        {
+          "metin": "Elektron verme eğilimi hidrojenden büyük olan metaller asitlerle tepkimeye girerek ___ gazı çıkarır.",
+          "cevap": "hidrojen"
+        },
+        {
+          "metin": "X kabında Y{us:+|} çözeltisinin saklanabilmesi için X metalinin Y metalinden daha ___ olması gerekir.",
+          "cevap": "pasif"
+        }
+      ],
+      "fazla": [
+        "katot"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Galvanik pil bileşenlerini ve yarı tepkime kurallarını karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Anot Elektrot",
+          "Yükseltgenmenin gerçekleştiği ve zamanla kütlesi azalan elektrot"
+        ],
+        [
+          "Katot Elektrot",
+          "İndirgenmenin gerçekleştiği ve E°{alt:ind} değeri büyük olan elektrot"
+        ],
+        [
+          "İndirgen Madde",
+          "Karşısındakini indirgeyip kendisi yükseltgenen aktif metal"
+        ],
+        [
+          "Yoğun Özellik",
+          "E° potansiyelinin madde miktarına ve katsayıya bağlı olmaması"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Redoks istemliliği ve SHE ile ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Tek bir yarı hücrenin mutlak elektrot potansiyeli voltmetreyle doğrudan ölçülebilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Standart potansiyeli E° = -0,65 V olan bir redoks tepkimesi belirtilen yönde istemsizdir.",
+          "dogru": true
+        },
+        {
+          "metin": "Zn(k) + Cu{us:2+|}(suda) -> Zn{us:2+|}(suda) + Cu(k) tepkimesinde E° = +1,10 V olup istemlidir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bakır (Cu) metali HCl çözeltisine atıldığında istemli olarak H{alt:2|} gazı açığa çıkarır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Yükseltgenmenin gerçekleştiği elektrot (4 harf)",
+          "cevap": "ANOT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Elektron alışverişiyle gerçekleşen indirgenme-yükseltgenme tepkimesi (6 harf)",
+          "cevap": "REDOKS",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Birim yük başına düşen potansiyel farkı birimi, V ile gösterilir (4 harf)",
+          "cevap": "VOLT",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "ARV"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "E°{alt:ind}(Fe{us:2+|}/Fe) = -0,44 V ve E°{alt:ind}(Cu{us:2+|}/Cu) = +0,34 V olduğuna göre Fe–Cu galvanik pilinin standart potansiyelini hesaplayınız.",
+      "cevap": "Fe daha aktif olduğundan anot olur (E°{alt:yüks} = +0,44 V).",
+      "satir": 1
+    }
+  ]
+}

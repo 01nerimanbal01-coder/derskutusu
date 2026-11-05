@@ -1,0 +1,267 @@
+{
+  "sinif": 9,
+  "ders": "cografya",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Mekânın Aynası Haritalar: Harita Elemanları, Projeksiyonlar, Harita Türleri ve Ölçek",
+  "ciktilar": [
+    "Haritanın tanımını, kroki ile farkını ve temel harita elemanlarını (başlık, ölçek, lejant, yön oku, koordinat) açıklar.",
+    "Harita çizimlerinde oluşan bozulmaların nedenlerini ve silindirik, konik, düzlem projeksiyon yöntemlerini karşılaştırır.",
+    "Haritaları kullanım amaçlarına ve ölçeklerine göre sınıflandırır; kesir ve çizgi ölçeklerle uzunluk hesaplamaları yapar."
+  ],
+  "hatirla": [
+    "Kuşbakışı çizimin harita sayılması için ölçek şarttır; ölçeksiz taslak çizimlere kroki denir.",
+    "Bozulmaları azaltmak için Ekvator'da Silindirik, Orta Kuşak'ta (Türkiye) Konik, Kutuplarda Düzlem projeksiyon kullanılır.",
+    "Gerçek Uzunluk = Harita Uzunluğu × Ölçek Paydası; cm'den km'ye çevirirken 5 sıfır silinir ({kesir:1|500.000} ölçekte 1 cm = 5 km)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Haritacılık kavramlarını ve projeksiyon yöntemlerini açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Lejant (Harita Anahtarı)",
+          "Haritadaki özel işaret, sembol ve renklerin anlamını açıklayan bölüm"
+        ],
+        [
+          "Silindirik Projeksiyon",
+          "Ekvator ve çevresini (0°-30°) en az bozulmayla gösteren yöntem"
+        ],
+        [
+          "Konik Projeksiyon",
+          "Orta kuşak ülkelerini (Türkiye, 30°-60°) en az hatayla gösteren yöntem"
+        ],
+        [
+          "Düzlem Projeksiyon",
+          "Kutup bölgelerini ve dar alanları en az bozulmayla gösteren yöntem"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki projeksiyon kurallarına göre silindirik projeksiyonla çizilen Dünya haritasında hangi ülkede bozulma en fazladır?",
+      "secenekler": [
+        "Brezilya",
+        "Endonezya",
+        "Norveç",
+        "Kenya"
+      ],
+      "dogru": 2,
+      "cozum": "Silindirik projeksiyonda Ekvator'dan kutuplara gidildikçe bozulma artar; kutuplara en yakın olan Norveç'te bozulma en fazladır."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "{kesir:1|600.000} ölçekli bir haritada iki kent arası 8 cm ölçüldüğüne göre gerçek kuş uçuşu uzaklık kaç km'dir?",
+      "cevap": "Paydadan 5 sıfır silinirse 1 cm = 6 km olur; Gerçek Uzunluk.",
+      "satir": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Harita bilgisi ve ölçek özellikleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Kuşbakışı çizilen ancak ölçeği bulunmayan taslak çizimlere kroki denir.",
+          "dogru": true
+        },
+        {
+          "metin": "Harita çizimlerinde oluşan bozulmaların temel nedeni Dünya'nın küresel şeklidir.",
+          "dogru": true
+        },
+        {
+          "metin": "Siyasi (idari) haritalardan dağların yükselti ve eğim değerleri doğrudan okunabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "{kesir:1|25.000} ölçekli haritanın ayrıntıyı gösterme gücü {kesir:1|2.000.000}'dan fazladır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Büyük ölçekli ({kesir:1|20.000}) ve küçük ölçekli ({kesir:1|5.000.000}) haritaların karşılaştırma tablosunu tamamlayınız.",
+      "basliklar": [
+        "Karşılaştırma Ölçütü",
+        "Büyük Ölçekli Harita",
+        "Küçük Ölçekli Harita"
+      ],
+      "satirlar": [
+        [
+          "Ölçek paydasındaki sayı",
+          "Küçüktür",
+          {
+            "b": "Büyüktür"
+          }
+        ],
+        [
+          "Gösterilen gerçek alan",
+          "Dar alanı gösterir",
+          {
+            "b": "Geniş alanı gösterir"
+          }
+        ],
+        [
+          "Ayrıntıyı gösterme gücü",
+          "Fazladır (Yüksektir)",
+          {
+            "b": "Azdır (Düşüktür)"
+          }
+        ],
+        [
+          "Hata ve bozulma oranı",
+          "Azdır",
+          {
+            "b": "Fazladır"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kesir ölçekten gerçek uzunluk hesaplama basamaklarını uygulama sırasına diziniz.",
+      "ogeler": [
+        "Harita üzerindeki iki nokta arasındaki uzunluğu cetvelle santimetre (cm) olarak ölçme",
+        "Kesir ölçeğin paydasından 5 sıfır silerek 1 cm'nin kaç km olduğunu bulma",
+        "Harita uzunluğu (cm) ile 1 cm'ye karşılık gelen gerçek km değerini çarpma",
+        "Elde edilen kuş uçuşu gerçek uzunluğu kilometre (km) birimiyle yazma"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki harita türlerine göre aşağıdakilerden hangisi belirli bir konuya odaklanan 'tematik (özel) harita' örneğidir?",
+      "secenekler": [
+        "Türkiye Fiziki Haritası",
+        "Dünya Siyasi Haritası",
+        "Avrupa İdari Bölünüş Haritası",
+        "Türkiye Deprem Tehlike ve Fay Hatları Haritası"
+      ],
+      "dogru": 3,
+      "cozum": "Deprem, toprak, iklim veya maden dağılışı gibi tek bir özel konuya odaklanan haritalar tematik haritalardır."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları uygun coğrafi kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Harita çizimi ve haritacılıkla ilgilenen bilim dalına ___ adı verilir.",
+          "cevap": "kartografya"
+        },
+        {
+          "metin": "Dağ, ova ve yükselti basamaklarını renklerle gösteren haritalara ___ harita denir.",
+          "cevap": "fiziki"
+        },
+        {
+          "metin": "Gerçek alan ile izdüşüm alan arasındaki fark fazlaysa bölge ___ ve dağlıktır.",
+          "cevap": "engebeli"
+        }
+      ],
+      "fazla": [
+        "siyasi"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Türk-İslam tarihinin önemli haritacılarını ünlü eserleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Pîrî Reis",
+          "1513 Dünya Haritası ve Kitâb-ı Bahriye (Denizcilik kitabı)"
+        ],
+        [
+          "Kaşgarlı Mahmud",
+          "Dîvânu Lugâti't-Türk eserindeki Türk Dünyası Haritası"
+        ],
+        [
+          "El-İdrîsî",
+          "Orta Çağ'da çizdiği küresel dünya haritası ve Kitâbü Rucâr"
+        ],
+        [
+          "Kâtip Çelebi",
+          "Coğrafya ve harita bilgilerini derlediği Cihannüma adlı eser"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Harita ölçekleri ve projeksiyonlarla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Fotokopiyle büyütülen haritalarda çizgi (grafik) ölçek doğru sonuç vermeye devam eder.",
+          "dogru": true
+        },
+        {
+          "metin": "Türkiye 36°-42° Kuzey orta kuşağında yer aldığı için Konik projeksiyonla çizilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Ölçeği {kesir:1|20.000}'e kadar olan en ayrıntılı haritalara duvar atlası denir.",
+          "dogru": false
+        },
+        {
+          "metin": "Gerçekte 120 km olan uzaklığı 4 cm gösteren haritanın ölçeği {kesir:1|3.000.000}'dur.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Haritadaki küçültme oranını gösteren temel eleman (5 harf)",
+          "cevap": "ÖLÇEK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Haritadaki sembol ve renklerin açıklandığı harita anahtarı (6 harf)",
+          "cevap": "LEJANT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Eşit bölmeli doğru parçası üzerinde gösterilen grafik ölçek (5 harf)",
+          "cevap": "ÇİZGİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kutup bölgelerini en az bozulmayla gösteren projeksiyon (6 harf)",
+          "cevap": "DÜZLEM",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "ÖLÇÜ"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Aynı boyuttaki iki kâğıda çizilen Dünya haritası ile Ankara haritasını ölçek ve ayrıntı gücü bakımından karşılaştırınız.",
+      "cevap": "Ankara dar alan olduğundan az küçültülmüştür; ölçeği daha.",
+      "satir": 1
+    }
+  ]
+}

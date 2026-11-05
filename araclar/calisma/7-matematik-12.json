@@ -1,0 +1,250 @@
+{
+  "sinif": 7,
+  "ders": "matematik",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Kategorik ve Nicel (Sürekli) Veri Dağılımları: Çizgi Grafiği, Sütun Grafiği, Daire Grafiği ile Aritmetik Ortalama, Ortanca (Medyan) ve Tepe Değer (Mod) (MAT.7.6.1)",
+  "ciktilar": [
+    "Kategorik (nitel) ve nicel (kesikli/sürekli) veriye dayanan istatistiksel araştırma soruları oluşturur ve veri toplama planı yapar (MAT.7.6.1.a-ç).",
+    "Veri türüne ve araştırma amacına uygun görselleştirme aracını (sütun grafiği, çizgi grafiği, daire grafiği, nokta grafiği) gerekçeleriyle seçer ve dönüştürür (MAT.7.6.1.d-e).",
+    "Veri dağılımlarını aritmetik ortalama, ortanca (medyan), tepe değer (mod), açıklık ve ortalama mutlak sapma ile özetleyerek veriye dayalı karar verir (MAT.7.6.1.d-g)."
+  ],
+  "hatirla": [
+    "Zamana bağlı sürekli değişimler {koyu:çizgi grafiği}, kategoriler arası miktar karşılaştırması {koyu:sütun grafiği}, bir bütünün parçalarının bütüne oranı {koyu:daire grafiği} ({koyu:360°}) ile gösterilir.",
+    "Daire grafiğinde bir grubun merkez açısı: {koyu:(Grubun Verisi ÷ Toplam Veri) × 360°} bağıntısıyla hesaplanır.",
+    "{koyu:Aritmetik Ortalama} = Verilerin Toplamı ÷ Veri Sayısı; {koyu:Ortanca (Medyan)} küçükten büyüğe sıralı veride tam ortadaki değer; {koyu:Tepe Değer (Mod)} en çok tekrar eden değerdir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki istatistiksel kavram ve grafik türlerini sağ sütundaki açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Çizgi Grafiği",
+          "Bir verinin zamana bağlı sürekli artış ve azalışını gösteren grafik türü"
+        ],
+        [
+          "Daire Grafiği (360°)",
+          "Bir bütünün parçalarının bütün içindeki payını merkez açılarla gösteren grafik"
+        ],
+        [
+          "Ortanca (Medyan)",
+          "Küçükten büyüğe sıralanan veri grubunda tam ortada yer alan değer"
+        ],
+        [
+          "Tepe Değer (Mod)",
+          "Bir veri grubunda frekansı en yüksek olan (en çok tekrar eden) değer"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki 5 günlük sıcaklık çizgi grafiğine göre bu haftanın sıcaklık {koyu:aritmetik ortalaması} ve {koyu:açıklığı} kaç °C’dir?",
+      "secenekler": [
+        "Aritmetik ortalama: 18 °C — Açıklık: 8 °C",
+        "Aritmetik ortalama: 20 °C — Açıklık: 10 °C",
+        "Aritmetik ortalama: 20 °C — Açıklık: 8 °C",
+        "Aritmetik ortalama: 22 °C — Açıklık: 10 °C"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki okul kulübü öğrenci sayılarını inceleyerek her kulübün yüzdesini ve daire grafiğindeki merkez açısını tabloya yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Kulüp ve Öğrenci Sayısı",
+        "Bütündeki Yüzdesi (%)",
+        "Daire Grafiği Merkez Açısı"
+      ],
+      "satirlar": [
+        [
+          "1. Bilim Kulübü (18 öğrenci)",
+          "%25",
+          {
+            "b": "90°"
+          }
+        ],
+        [
+          "2. Spor Kulübü (27 öğrenci)",
+          {
+            "b": "%37,5"
+          },
+          {
+            "b": "135°"
+          }
+        ],
+        [
+          "3. Sanat Kulübü (15 öğrenci)",
+          "—",
+          {
+            "b": "75°"
+          }
+        ],
+        [
+          "4. Doğa Kulübü (12 öğrenci)",
+          {
+            "b": "%16,6 (1/6)"
+          },
+          "60°"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Veri türleri, grafikler ve merkezi eğilim ölçüleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir veri grubundaki tüm sayılar birbirinden farklıysa o veri grubunun tepe değeri (modu) yoktur.",
+          "dogru": true
+        },
+        {
+          "metin": "Çift sayıda terimi olan sıralı bir veri grubunda ortanca (medyan), ortadaki iki sayının farkına eşittir.",
+          "dogru": false
+        },
+        {
+          "metin": "Daire grafiğinde toplam verinin {kesir:1|3}’ünü oluşturan bir kategorinin merkez açısı 120° olur.",
+          "dogru": true
+        },
+        {
+          "metin": "Öğrencilerin tuttukları futbol takımları veya göz renkleri nicel (sürekli) veriye örnektir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun istatistik kavramlarıyla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Bir veri grubundaki en büyük değer ile en küçük değer arasındaki farka ___ denir.",
+          "cevap": "açıklık"
+        },
+        {
+          "metin": "Veri grubunda aşırı büyük veya aşırı küçük bir uç değer bulunduğunda ___ daha güvenilir bir ölçüt olur.",
+          "cevap": "medyan"
+        },
+        {
+          "metin": "Bir bütünü oluşturan parçaların oranlarını karşılaştırmak için en uygun görselleştirme aracı ___ grafiğidir.",
+          "cevap": "daire"
+        }
+      ],
+      "fazla": [
+        "yarıçap"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki veri kartında verilen {koyu:8, 12, 10, 12, 15, 12, 18, 25} sayı dizisinin {koyu:ortancası (medyan)} ve {koyu:tepe değeri (mod)} aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Ortanca (Medyan): 12 — Tepe Değer (Mod): 12",
+        "Ortanca (Medyan): 13,5 — Tepe Değer (Mod): 15",
+        "Ortanca (Medyan): 14 — Tepe Değer (Mod): 12",
+        "Ortanca (Medyan): 12 — Tepe Değer (Mod): 25"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki daire grafiğinde 180 ağaç bulunan bir bahçedeki meyve ağaçlarının dağılımı verilmiştir. Bahçede kaç adet {koyu:elma ağacı} vardır?",
+      "secenekler": [
+        "60 adet elma ağacı vardır",
+        "70 adet elma ağacı vardır",
+        "75 adet elma ağacı vardır",
+        "80 adet elma ağacı vardır"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sütun grafiğinde 4 öğrencinin okuduğu sayfa sayıları verilmiştir. Bu verinin {koyu:aritmetik ortalamasını} ve {koyu:ortalama mutlak sapmasını} işlemle bulunuz.",
+      "cevap": "Ortalama = (20+30+40+50)÷4 = 35 sayfa. Mutlak sapmalar.",
+      "satir": 1
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört farklı araştırma durumunu {koyu:aritmetik ortalaması en küçük olandan en büyük olana} doğru 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "A Grubu: 6, 8, 10, 12 (Ortalama = 9)",
+        "B Grubu: 10, 14, 15, 17 (Ortalama = 14)",
+        "C Grubu: 15, 18, 20, 23 (Ortalama = 19)",
+        "D Grubu: 20, 22, 26, 28 (Ortalama = 24)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki iki basketbolcunun 5 maçlık sayı tablosuna göre aritmetik ortalamaları eşit (20 sayı) olduğu hâlde hangi oyuncunun performansı {koyu:daha istikrarlıdır}?",
+      "secenekler": [
+        "Kaan (Açıklığı 4 sayı olduğu için dağılımı daha dar ve istikrarlıdır)",
+        "Mert (Açıklığı 26 sayı olduğu için ortalaması daha yüksektir)",
+        "İkisinin de açıklığı eşit olduğu için istikrarları aynıdır",
+        "Mert (Son maçta 34 sayı attığı için her zaman daha istikrarlıdır)"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki istatistik kavramlarını kutulara yazınız. Numaralı harflerle «sıralı bir veri grubunda tam ortada bulunan değer",
+      "satirlar": [
+        {
+          "ipucu": "Veri grubunda en çok tekrar eden değerin (tepe değer) kısa adı",
+          "cevap": "MOD",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İstatistiksel araştırma sorusuyla toplanan bilgi ve ölçümler",
+          "cevap": "VERİ",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Merkez açıların toplamı 360° olan parça-bütün grafiği türü",
+          "cevap": "DAİRE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Paydası 100 olan kesirlerle ifade edilen oran gösterimi",
+          "cevap": "YÜZDE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "En büyük veri ile en küçük veri arasındaki fark",
+          "cevap": "AÇIKLIK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kategorik verileri dikdörtgen çubuklarla karşılaştıran grafik türü",
+          "cevap": "SÜTUN",
+          "anahtar": 4
+        }
+      ],
+      "sonuc": "MEDYAN"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki çalışan maaşları listesinde (20, 22, 22, 24, 26, 28, 120 bin TL) tipik maaşı temsil etmek için aritmetik ortalama mı yoksa ortanca",
+      "cevap": "120 bin TL aşırı uç değer olduğu için ortalamayı (37,4 bin TL).",
+      "satir": 1
+    }
+  ]
+}

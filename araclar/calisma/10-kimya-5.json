@@ -1,0 +1,290 @@
+{
+  "sinif": 10,
+  "ders": "kimya",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-10-14",
+  "konu": "Mol Kavramı: Avogadro Sayısı, Atomik Kütle Birimi, Mol Kütlesi ve Mol Hesaplamaları",
+  "ciktilar": [
+    "Mol kavramını, Avogadro sayısını (N_A), atomik kütle birimini (akb) ve mol kütlesini (M_A) açıklar.",
+    "Mol sayısı, kütle, tanecik sayısı ve gaz hacmi arasında nicel dönüşümler yapar.",
+    "İzotop atomların doğadaki bolluk yüzdelerinden ortalama atom kütlesini hesaplar."
+  ],
+  "hatirla": [
+    "12 gram karbon-12 izotopunun içerdiği atom sayısına Avogadro sayısı (N{alt:A} = 6,02 × {us:10|23}) ve bu sayıdaki taneciğe 1 mol denir.",
+    "1 tane {us:12|}C atomunun kütlesinin {kesir:1|12}'sine 1 akb denir; 1 gram = N{alt:A} akb eşitliği geçerlidir.",
+    "Mol hesaplama bağıntıları: n = {kesir:m|M{alt:A}}, n = {kesir:N|N{alt:A}}, NK'da (0 °C, 1 atm) n = {kesir:V|22,4} ve oda koşullarında n = {kesir:V|24,5}."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Mol kavramıyla ilgili temel terimleri ve bağıntıları karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Avogadro Sayısı (N{alt:A})",
+          "6,02 × {us:10|23} tane tanecik içeren 1 mollük birim"
+        ],
+        [
+          "Atomik Kütle Birimi (1 akb)",
+          "1 tane {us:12|}C atomunun kütlesinin {kesir:1|12}'sine eşit kütle ({kesir:1|N{alt:A}} g)"
+        ],
+        [
+          "Mol Kütlesi (M{alt:A})",
+          "Bir maddenin 1 molünün gram cinsinden kütlesi (g/mol)"
+        ],
+        [
+          "Normal Koşullarda (NK) Molar Hacim",
+          "0 °C ve 1 atm'de 1 mol ideal gazın kapladığı 22,4 L hacim"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-5 mol dönüşüm köprüsü\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">MOL KAVRAMI DÖNÜŞÜM KÖPRÜSÜ</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Tanecik</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">n = N / N_A</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Kütle (g)</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">n = m / M_A</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">NK Hacim</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">n = V / 22,4 L</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Oda Koşulu</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">n = V / 24,5 L</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Mol kütlesi M{alt:A} = 44 g/mol olan CO{alt:2} gazının 22 gramı normal koşullarda (NK) kaç litre hacim kaplar?",
+      "secenekler": [
+        "11,2 L",
+        "22,4 L",
+        "44,8 L",
+        "5,6 L"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-5 CO2 mol hacim hesabı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">22 GRAM CO₂ GAZININ NK ANALİZİ</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. Adım: Mol Sayısı (n)</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">M_A(CO₂) = 12 + 2·16 = 44 g/mol</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">n = 22 / 44 = 0,5 mol CO₂</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">2. Adım: NK Gaz Hacmi (V)</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">1 mol gaz NK'da 22,4 L</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">V = 0,5 · 22,4 = 11,2 L</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "1 tane su (H{alt:2}O) molekülünün kütlesi ile 1 mol su (H{alt:2}O) molekülünün kütlesini birimlerini belirterek yazınız. (H: 1, O: 16)",
+      "cevap": "1 tane H{alt:2}O molekülü 18 akb ({kesir:18|N{alt:A}}.",
+      "satir": 1,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-5 akb ve gram farkı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1 TANE VE 1 MOL SU (H₂O) FARKI</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Mikroskobik: 1 Tane H₂O</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Kütle = 18 akb</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Gram karşılığı = 18 / N_A g</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Makroskobik: 1 Mol H₂O</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">N_A tane molekül içerir</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Kütle = 18 gram (18·N_A akb)</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Mol kavramı ve tanecik hesaplamalarıyla ilgili ifadeleri Doğru/Yanlış olarak belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "1 gram madde, N{alt:A} (6,02 × {us:10|23}) atomik kütle birimine (akb) eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Normal koşullarda 1 mol sıvı su (H{alt:2}O) tam 22,4 litre hacim kaplar.",
+          "dogru": false
+        },
+        {
+          "metin": "0,5 mol H{alt:2}SO{alt:4} bileşiği toplam 3,5 mol atom içerir.",
+          "dogru": true
+        },
+        {
+          "metin": "Farklı elementlerin 1'er mol atomlarının gram cinsinden kütleleri birbirine eşittir.",
+          "dogru": false
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-5 bileşik atom analizi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">1 MOL H₂SO₄ BİLEŞİĞİNİN ATOM ANALİZİ</text><rect x=\"12\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Hidrojen (H)</text><text x=\"66.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">2 mol H atomu</text><text x=\"66.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">2 gram H</text><rect x=\"126\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Kükürt (S)</text><text x=\"180.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">1 mol S atomu</text><text x=\"180.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">32 gram S</text><rect x=\"240\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Oksijen (O)</text><text x=\"294.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">4 mol O atomu</text><text x=\"294.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">64 gram O (Toplam 7 mol)</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "soru": "Verilen maddelerin mol sayısı, kütle ve NK gaz hacmi tablosundaki boşlukları tamamlayınız. (CH{alt:4}: 16, O{alt:2}: 32, SO{alt:3}: 80 g/mol)",
+      "basliklar": [
+        "Madde",
+        "Mol Sayısı (n)",
+        "Kütle / NK Hacim"
+      ],
+      "satirlar": [
+        [
+          "CH{alt:4} gazı",
+          "0,5 mol",
+          {
+            "b": "8 gram / 11,2 L"
+          }
+        ],
+        [
+          "O{alt:2} gazı",
+          {
+            "b": "2 mol"
+          },
+          "64 gram / 44,8 L"
+        ],
+        [
+          "SO{alt:3} gazı",
+          "0,25 mol",
+          {
+            "b": "20 gram / 5,6 L"
+          }
+        ],
+        [
+          "He gazı (4 g/mol)",
+          {
+            "b": "1,5 mol"
+          },
+          "6 gram / 33,6 L"
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Kütlesi bilinen bir bileşikteki toplam atom sayısını bulmak için izlenecek işlem basamaklarını sıralayınız.",
+      "ogeler": [
+        "Elementlerin bağıl atom kütlelerini toplayarak bileşiğin mol kütlesini (M{alt:A}) hesaplama",
+        "Verilen kütleyi mol kütlesine bölerek (n = {kesir:m|M{alt:A}}) bileşiğin mol sayısını bulma",
+        "Bileşiğin mol sayısını 1 formüldeki atom sayısıyla çarparak toplam atom molünü bulma",
+        "Bulunan atom mol sayısını Avogadro sayısı (N{alt:A}) ile çarparak tane cinsinden atom sayısına ulaşma"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-5 işlem basamakları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">KÜTLEDEN ATOM SAYISINA 4 ADIM</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. M_A Bul</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Formül ağırlığı</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">2. n = m/M_A</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Bileşik molü</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">3. Atom Molü</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">n × atom sayısı</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">4. Tane Sayısı</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Atom molü × N_A</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Doğada {us:35|}Cl izotopu %75, {us:37|}Cl izotopu %25 bollukta bulunur. Klor elementinin ortalama atom kütlesi kaç akb'dir?",
+      "secenekler": [
+        "35,5",
+        "36,0",
+        "35,2",
+        "36,5"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-5 ortalama atom kütlesi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">KLOR İZOTOPLARI ORTALAMA ATOM KÜTLESİ</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">İzotop Bolluk Verileri</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">³⁵Cl: %75 bolluk</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">³⁷Cl: %25 bolluk</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Ağırlıklı Ortalama Hesabı</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">(35·75 + 37·25) / 100</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Ortalama A = 35,5 akb</text></svg>"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Atom kütlesi belirlenirken uluslararası referans alınan izotop ___ izotopudur.",
+          "cevap": "karbon-12"
+        },
+        {
+          "metin": "Oda koşullarında (25 °C, 1 atm) 1 mol ideal gaz ___ litre hacim kaplar.",
+          "cevap": "24,5"
+        },
+        {
+          "metin": "Proton sayıları aynı, nötron sayıları farklı atomlara ___ atomlar denir.",
+          "cevap": "izotop"
+        }
+      ],
+      "fazla": [
+        "22,4"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "0,2 mol C{alt:3}H{alt:8} (propan, M{alt:A} = 44 g/mol) gazı için nicelikleri değerleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Bileşiğin kütlesi (m = n · M{alt:A})",
+          "8,8 gram"
+        ],
+        [
+          "İçerdiği karbon (C) atomu mol sayısı",
+          "0,6 mol C atomu"
+        ],
+        [
+          "İçerdiği toplam atom mol sayısı",
+          "2,2 mol atom"
+        ],
+        [
+          "Normal koşullarda kapladığı hacim",
+          "4,48 litre"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-5 C3H8 analizi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">0,2 MOL C₃H₈ (PROPAN) ÖZET KARTI</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Kütle (m)</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">0,2 × 44 = 8,8 g</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Karbon Molü</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">0,2 × 3 = 0,6 mol C</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Hidrojen Molü</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">0,2 × 8 = 1,6 mol H</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Toplam Atom</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">2,2 × N_A tane</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "soru": "3,01 × {us:10|23} tane molekül içeren N{alt:2}O{alt:3} gazı kaç gramdır? (N: 14, O: 16, N{alt:A} = 6,02 × {us:10|23})",
+      "secenekler": [
+        "38 gram",
+        "76 gram",
+        "19 gram",
+        "46 gram"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarından yararlanarak kavramları yazınız ve 6,02 × {us:10|23} sayısına adını veren bilim insanını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "1 tane karbon-12 atomunun 12'de birine eşit kütle birimi",
+          "cevap": "AKB",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kimyada değerlik elektronlarını veya hacim (V) simgesini karşılayan terim",
+          "cevap": "VALANS",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "6,02 × 10{us:|2}{us:|3} tane tanecikten oluşan miktar birimi",
+          "cevap": "MOL",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Maddenin 1 molünün tartıldığı temel kütle birimi",
+          "cevap": "GRAM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Elementin tüm özelliklerini taşıyan en küçük yapı taşı",
+          "cevap": "ATOM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Oda sıcaklığında 24,5 L hacim kaplayan standart koşul: ___ koşulu",
+          "cevap": "ODA",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Atom kütlelerinin belirlenmesinde seçilen karbon-12 ölçütü",
+          "cevap": "REFERANS",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Proton sayıları aynı, nötron sayıları farklı atomlar",
+          "cevap": "İZOTOP",
+          "anahtar": 2
+        }
+      ],
+      "kelime": "AVOGADRO",
+      "sonuc": "AVOGADRO"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Periyodik tabloda birçok elementin atom kütlesinin tam sayı değil de küsuratlı (örneğin Cl = 35,5) çıkmasının nedenini açıklayınız.",
+      "cevap": "Elementlerin doğada farklı kütle numaralı.",
+      "satir": 1,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-5 izotop ortalaması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">BAĞIL ATOM KÜTLESİ VE İZOTOP ORTALAMASI</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Referans Standart</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Karbon-12 (¹²C = 12,000 akb)</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">1 akb = 1 / N_A gram</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Küsuratlı Değer Nedeni</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Doğadaki izotop karışımı</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Bolluk yüzdesine göre ortalama</text></svg>"
+    }
+  ]
+}

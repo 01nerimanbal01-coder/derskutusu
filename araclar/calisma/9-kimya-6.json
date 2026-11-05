@@ -1,0 +1,267 @@
+{
+  "sinif": 9,
+  "ders": "kimya",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Atom Orbitalleri ve Elektron Dizilimi: Aufbau, Pauli, Hund ve Küresel Simetri",
+  "ciktilar": [
+    "Modern atom teorisinde s, p, d, f alt kabuklarındaki orbital sayılarını, maksimum elektron kapasitelerini ve bağıl enerji sırasını açıklar.",
+    "Aufbau kuralı, Pauli dışlama ilkesi ve Hund kuralını uygulayarak atom ve iyonların temel hâl elektron dizilimlerini yazar.",
+    "Tam dolu ve yarı dolu orbital sayılarını belirler; küresel simetri ve izoelektronik tanecik kavramlarını çözümler."
+  ],
+  "hatirla": [
+    "Orbital bağıl enerji artış sırası (Aufbau): 1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p (4s orbitalinin enerjisi 3d'den düşüktür!).",
+    "Pauli ilkesine göre bir orbitale en fazla zıt spinli 2 elektron (↑↓) yerleşir; Hund kuralına göre eş enerjili orbitallere elektronlar önce tek tek aynı spinli yerleşir.",
+    "Küresel simetri kararlılığı nedeniyle {alt:|24}Cr atomu ...{us:4s|1} {us:3d|5}, {alt:|29}Cu atomu ise ...{us:4s|1} {us:3d|10} temel hâl dizilimine sahiptir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Elektron dizilimi kurallarını ve kavramlarını açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Aufbau (İnşa) Kuralı",
+          "Elektronların en düşük enerjili orbitalden (1s) başlayarak sırayla yerleşmesi"
+        ],
+        [
+          "Pauli Dışlama İlkesi",
+          "Bir orbitaldeki en fazla 2 elektronun zıt spinli (↑↓) olmak zorunda olması"
+        ],
+        [
+          "Hund Kuralı",
+          "Eş enerjili orbitallere elektronların önce birer birer aynı yönlü (↑ ↑ ↑) yerleşmesi"
+        ],
+        [
+          "İzoelektronik Tanecikler",
+          "Elektron sayıları ve dizilimleri aynı, proton sayıları farklı olan tanecikler"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki temel hâl elektron dizilimine göre Kükürt ({alt:|16}S) atomuyla ilgili aşağıdakilerden hangisi yanlıştır?",
+      "secenekler": [
+        "Temel hâl dizilimi {us:3s|2} {us:3p|4} ile sonlanır",
+        "Toplam 7 tane tam dolu orbitali vardır",
+        "Toplam 2 tane yarı dolu orbitali vardır",
+        "3d alt kabuğunda 4 elektronu bulunur"
+      ],
+      "dogru": 3,
+      "cozum": "{alt:|16}S atomunun dizilimi {us:3p|4} ile sonlanır ve 3d orbitalleri tamamen boştur (7 tam dolu, 2 yarı dolu orbitali vardır)."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Temel hâldeki Fosfor ({alt:|15}P) atomunun elektron dizilimini yazarak tam dolu ve yarı dolu orbital sayılarını bulunuz.",
+      "cevap": "{alt:|15}P: {us:1s|2} {us:2s|2} {us:2p|6} {us:3s|2} {us:3p|3}.",
+      "satir": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Orbitaller ve elektron dizilimiyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Orbital türü ne olursa olsun (s, p, d, f) tek bir orbital en fazla 2 elektron alabilir.",
+          "dogru": true
+        },
+        {
+          "metin": "2. temel enerji düzeyinde (n = 2) 2s, 2p ve 2d orbitalleri bulunur.",
+          "dogru": false
+        },
+        {
+          "metin": "Çok elektronlu atomlarda 4s orbitalinin bağıl enerjisi 3d orbitalinden daha düşüktür.",
+          "dogru": true
+        },
+        {
+          "metin": "{alt:|24}Cr atomunun ...{us:4s|1} {us:3d|5} dizilimi dışarıdan enerji alınmış uyarılmış hâldir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Temel hâldeki atomların elektron dizilimi son terimini, tam dolu ve yarı dolu orbital sayılarını tabloda tamamlayınız.",
+      "basliklar": [
+        "Element Atomu",
+        "Temel Hâl Dizilimi",
+        "Tam ve Yarı Dolu Orbital Sayısı"
+      ],
+      "satirlar": [
+        [
+          "Karbon ({alt:|6}C)",
+          "{us:1s|2} {us:2s|2} {us:2p|2}",
+          {
+            "b": "2 tam dolu, 2 yarı dolu"
+          }
+        ],
+        [
+          "Azot ({alt:|7}N)",
+          "{us:1s|2} {us:2s|2} {us:2p|3}",
+          {
+            "b": "2 tam dolu, 3 yarı dolu"
+          }
+        ],
+        [
+          "Oksijen ({alt:|8}O)",
+          "{us:1s|2} {us:2s|2} {us:2p|4}",
+          {
+            "b": "3 tam dolu, 2 yarı dolu"
+          }
+        ],
+        [
+          "Kalsiyum ({alt:|20}Ca)",
+          "... {us:3s|2} {us:3p|6} {us:4s|2}",
+          {
+            "b": "10 tam dolu, 0 yarı dolu"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki Aufbau kuralına göre elektronların alt kabuklara yerleşim sırasını düşük enerjiden yüksek enerjiye diziniz.",
+      "ogeler": [
+        "1. enerji düzeyindeki 1s orbitalinin 2 elektronla tam dolması ({us:1s|2})",
+        "2. enerji düzeyindeki 2s ve 2p orbitallerinin sırasıyla dolması ({us:2s|2} {us:2p|6})",
+        "3. enerji düzeyindeki 3s ve 3p orbitallerinin sırasıyla dolması ({us:3s|2} {us:3p|6})",
+        "Önce 4s orbitalinin dolması ({us:4s|2}), ardından 3d alt kabuğuna elektron geçmesi ({us:3d|10})"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki özel küresel simetri kuralına göre Bakır ({alt:|29}Cu) atomunun temel hâl elektron dizilimi hangi orbital ile sonlanır?",
+      "secenekler": [
+        "{us:4s|2} {us:3d|9}",
+        "{us:4s|1} {us:3d|10}",
+        "{us:4s|2} {us:4p|5}",
+        "{us:3p|6} {us:3d|10}"
+      ],
+      "dogru": 1,
+      "cozum": "{alt:|29}Cu atomunda küresel simetri kararlılığı için 4s'den bir elektron 3d'ye geçer ve dizilim ...{us:4s|1} {us:3d|10} ile biter."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları uygun kimya kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Elektronların çekirdek etrafında bulunma olasılığının yüksek olduğu bölgelere ___ denir.",
+          "cevap": "orbital"
+        },
+        {
+          "metin": "d alt kabuğu eş enerjili 5 orbitalden oluşur ve en fazla ___ elektron alır.",
+          "cevap": "10"
+        },
+        {
+          "metin": "Atomun son alt kabuğunun yarı dolu veya tam dolu olmasıyla kazandığı kararlılığa ___ simetri denir.",
+          "cevap": "küresel"
+        }
+      ],
+      "fazla": [
+        "yörünge"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Atom ve iyon taneciklerini temel hâl elektron dizilimleri veya orbital özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "{alt:|11}{us:Na|+} iyonu (10 elektron)",
+          "{us:1s|2} {us:2s|2} {us:2p|6} ({alt:|10}Ne ve {alt:|9}{us:F|-} ile izoelektronik)"
+        ],
+        [
+          "{alt:|24}Cr atomu (24 elektron)",
+          "... {us:3p|6} {us:4s|1} {us:3d|5} (Toplam 6 yarı dolu orbital)"
+        ],
+        [
+          "{alt:|21}Sc atomu (21 elektron)",
+          "... {us:3p|6} {us:4s|2} {us:3d|1} (İlk d bloğu geçiş metali)"
+        ],
+        [
+          "{alt:|22}{us:Ti|2+} iyonu (20 elektron)",
+          "... {us:3p|6} {us:3d|2} (Elektron önce en dış 4s'den kopar)"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "İyon dizilimleri ve orbital şemalarıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "{alt:|11}{us:Na|+},{alt:|9}{us:F|-} ve {alt:|10}Ne tanecikleri 10 elektronlu olup birbirleriyle izoelektroniktir.",
+          "dogru": true
+        },
+        {
+          "metin": "Atom numarası 20'den büyük katyonlarda elektron önce 3d'den değil 4s'den koparılır.",
+          "dogru": true
+        },
+        {
+          "metin": "Hund kuralına göre {us:2p|3} alt kabuğunda 1 tam dolu ve 1 yarı dolu orbital bulunur.",
+          "dogru": false
+        },
+        {
+          "metin": "n = 3 temel enerji düzeyinde (3s, 3p, 3d) toplam 9 orbital ve en çok 18 elektron bulunur.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Elektronların en düşük enerjili orbitalden başlayarak yerleşmesi ilkesi (6 harf)",
+          "cevap": "AUFBAU",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "En dış katmandaki elektron sayısına verilen ad: Değerlik ___ (8 harf)",
+          "cevap": "ELEKTRON",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Elektronların bulunma olasılığının yüksek olduğu uzay bölgesi (7 harf)",
+          "cevap": "ORBİTAL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "En dış alt kabuğun yarı veya tam dolu olması: Küresel ___ (7 harf)",
+          "cevap": "SİMETRİ",
+          "anahtar": 2
+        }
+      ],
+      "sonuc": "ATOM"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Krom ({alt:|24}Cr) atomunun temel hâl diziliminin neden {us:4s|2} {us:3d|4} değil de {us:4s|1} {us:3d|5} şeklinde bittiğini açıklayınız.",
+      "cevap": "Atom küresel simetri kararlılığına ulaşmak için 4s'deki bir.",
+      "satir": 1
+    }
+  ]
+}

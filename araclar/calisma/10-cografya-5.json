@@ -1,0 +1,280 @@
+{
+  "sinif": 10,
+  "ders": "cografya",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-10-14",
+  "konu": "Mekânsal Verilerin Haritalara Aktarılması: Harita Oluşturma Sürecinin Adımları ve Uygulama Örnekleri",
+  "ciktilar": [
+    "Mekânsal verileri haritaya aktarma sürecinin altı temel adımını sırasıyla açıklar.",
+    "Harita üzerindeki konumsal, doğrusal ve yüz ölçümsel verileri nokta, çizgi ve alan sembolleriyle eşleştirir.",
+    "Başlık, lejant, ölçek, yön oku ve coğrafi koordinat gibi temel harita elemanlarını doğru kullanır."
+  ],
+  "hatirla": [
+    "Harita oluşturma süreci; amaç belirleme, araç-yöntem seçme, veri toplama, harita türü seçme, verileri harita elemanlarıyla aktarma ve kullanıp düzenleme adımlarından oluşur.",
+    "Mekânsal veriler haritaya nokta (zirve, kuyu, okul), çizgi (akarsu, yol, fay) ve alan (göl, orman, il sınırı) sembolleriyle aktarılır.",
+    "Haritada kullanılan özel işaret ve renklerin ne anlama geldiğini açıklayan bölüme lejant (harita anahtarı) denir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Coğrafi unsurları haritaya aktarılırken kullanılan geometrik sembol türleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Dağ zirvesi, su kuyusu ve afet toplanma noktası",
+          "Nokta sembolü"
+        ],
+        [
+          "Akarsu ağı, kara yolu, demir yolu ve diri fay hattı",
+          "Çizgi sembolü"
+        ],
+        [
+          "Göl yüzeyi, ormanlık bölge ve tarım arazisi",
+          "Alan sembolü"
+        ],
+        [
+          "Harita işaretlerinin açıklandığı kılavuz tablo",
+          "Lejant (Harita anahtarı)"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-5 sembol türleri\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">MEKÂNSAL VERİ SEMBOL TÜRLERİ</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Nokta (●)</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Zirve, Kuyu, Okul</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Çizgi (—)</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Akarsu, Yol, Fay</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Alan (■)</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Göl, Orman, İl</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Lejant</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Sembol anahtarı</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Bir ilçenin deprem toplanma alanlarını gösterecek harita tasarımında ilk yapılması gereken adım hangisidir?",
+      "secenekler": [
+        "Harita oluşturma amacını net olarak belirlemek",
+        "Toplanan verileri lejant kutusuna yerleştirmek",
+        "Basılı haritayı kullanıcı görüşüne göre düzenlemek",
+        "Çizgi ölçeği kesir ölçeğe dönüştürüp boyamak"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-5 ilk iki adım\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">HARİTA TASARIMINDA İLK İKİ ADIM</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. Amaç Belirleme</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Ne için ve kime çizilecek?</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Örn: Afet toplanma haritası</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">2. Araç ve Yöntem Seçme</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">CBS, GPS, Uydu görüntüsü</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Altlık harita ve ölçek seçimi</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Haritadaki küçültme oranını gösteren ve iki nokta arasındaki gerçek uzaklığı hesaplamaya yarayan harita elemanı nedir?",
+      "cevap": "Ölçek (kesir ölçek veya çizgi ölçek).",
+      "satir": 2,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-5 harita elemanları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">TEMEL HARİTA ELEMANLARI</text><rect x=\"12\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Başlık &amp; Çerçeve</text><text x=\"66.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Konuyu ve sınırı verir</text><text x=\"66.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Üst orta bölümde</text><rect x=\"126\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Ölçek &amp; Yön Oku</text><text x=\"180.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Mesafe ve Kuzey (K)</text><text x=\"180.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">1/100.000 veya çizgi</text><rect x=\"240\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Lejant &amp; Koordinat</text><text x=\"294.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">İşaretler ve enlem-boylam</text><text x=\"294.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Harita anahtarı kutusu</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Harita oluşturma süreci ve sembollerle ilgili ifadeleri Doğru/Yanlış olarak belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Akarsular, kara yolları ve boru hatları haritada çizgi sembolüyle gösterilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Lejant olmadan tematik bir haritadaki özel renk ve semboller eksiksiz okunabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "CBS yazılımları, GPS ve uydu görüntüleri mekânsal veri toplama ve işleme araçlarıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Van Gölü ve Konya Ovası gibi geniş yüzeyler nokta sembolüyle haritaya aktarılır.",
+          "dogru": false
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-5 çizgisel ve alansal veriler\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">DOĞRUSAL VE ALANSAL VERİ AYRIMI</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Çizgisel (Doğrusal) Veriler</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Akarsu, Kara yolu, Demir yolu</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Boru hattı, Fay kuşağı</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Alansal (Yüzeysel) Veriler</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Göl, Baraj, Orman sahası</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Tarım alanı, İdari bölge</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "soru": "Harita elemanları ve üstlendikleri görevler tablosundaki boşlukları tamamlayınız.",
+      "basliklar": [
+        "Harita Elemanı",
+        "Temel Görevi",
+        "Örnek Gösterim"
+      ],
+      "satirlar": [
+        [
+          "Başlık",
+          {
+            "b": "Haritanın konusunu ve alanını belirtir"
+          },
+          "Türkiye Fiziki Haritası"
+        ],
+        [
+          "Lejant",
+          "Sembol ve renklerin anlamını açıklar",
+          {
+            "b": "Harita sağ alt kutusu"
+          }
+        ],
+        [
+          "Ölçek",
+          {
+            "b": "Küçültme oranını ve mesafeyi verir"
+          },
+          "1 / 500.000"
+        ],
+        [
+          "Yön Oku",
+          "Kuzey doğrultusunu gösterir",
+          {
+            "b": "K (Kuzey) ibresi"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Mekânsal verilerin haritalara aktarılması sürecindeki adımları baştan sona doğru sıralayınız.",
+      "ogeler": [
+        "Harita oluşturma amacının belirlenmesi ve araç-yöntem seçimi",
+        "Saha çalışması, GPS veya uzaktan algılama ile mekânsal verilerin toplanması",
+        "Amaca uygun harita türünün (genel/tematik) seçilip verilerin sembollerle aktarılması",
+        "Hazırlanan haritanın kontrol edilerek kullanılması ve yeniden düzenlenmesi"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-5 süreç adımları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">HARİTA OLUŞTURMA SÜRECİ (6 ADIM)</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1-2. Amaç &amp; Araç</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Hedef ve CBS seçimi</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">3. Veri Toplama</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Saha, GPS, İstatistik</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">4-5. Tür &amp; Aktarım</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Sembol ve elemanlar</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">6. Düzenleme</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Kontrol ve güncelleme</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Bir araştırmacı Türkiye'deki fındık üretim bölgelerini, ana demir yolu hatlarını ve liman kentlerini aynı haritada gösterecektir. Sırasıyla hangi sembolleri kullanmalıdır?",
+      "secenekler": [
+        "Alan — Çizgi — Nokta",
+        "Nokta — Alan — Çizgi",
+        "Çizgi — Nokta — Alan",
+        "Alan — Nokta — Çizgi"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-5 karma sembol seçimi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">KARMA HARİTADA SEMBOL SEÇİMİ</text><rect x=\"12\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Fındık Bölgesi</text><text x=\"66.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Yüzey kaplar</text><text x=\"66.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Alan Sembolü (■)</text><rect x=\"126\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Demir Yolu Hattı</text><text x=\"180.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Doğrusal uzanır</text><text x=\"180.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Çizgi Sembolü (—)</text><rect x=\"240\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Liman Kenti</text><text x=\"294.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Konumsal merkezdir</text><text x=\"294.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Nokta Sembolü (●)</text></svg>"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Belirli bir konuya (iklim, nüfus, tarım) odaklanan özel haritalara ___ harita denir.",
+          "cevap": "tematik"
+        },
+        {
+          "metin": "Haritadaki özel işaretlerin açıklandığı bölüme harita anahtarı veya ___ adı verilir.",
+          "cevap": "lejant"
+        },
+        {
+          "metin": "Haritalanan bölgenin Dünya üzerindeki mutlak konumunu ___ ağ çizgileri gösterir.",
+          "cevap": "koordinat"
+        }
+      ],
+      "fazla": [
+        "izoplet"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Harita oluşturma adımlarını bu adımlarda yapılan örnek çalışmalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "2. Adım: Araç ve Yöntem Seçme",
+          "CBS yazılımı, dron veya altlık harita belirleme"
+        ],
+        [
+          "3. Adım: Veri Toplama",
+          "Arazide GPS ile konum ölçümü ve istatistik derleme"
+        ],
+        [
+          "4. Adım: Harita Türü Seçme",
+          "Fiziki, siyasi veya tematik harita türüne karar verme"
+        ],
+        [
+          "5. Adım: Verileri Haritaya Aktarma",
+          "Nokta, çizgi, alan sembolleri ve lejantı yerleştirme"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-5 teknolojiler\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">VERİ TOPLAMA VE AKTARMA TEKNOLOJİLERİ</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">GPS / GNSS</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Hassas nokta konumu</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Uzaktan Algılama</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Uydu ve dron verisi</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">İstatistik Kurumu</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Nüfus ve ekonomik veri</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">CBS (GIS)</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Katmanlı harita üretimi</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "soru": "Okul bahçesi ve yakın çevresinin afet tahliye krokisini/haritasını çizen bir öğrencinin acil çıkış güzergâhını hangi sembolle göstermesi en uygundur?",
+      "secenekler": [
+        "Yönlü çizgi (ok) sembolüyle",
+        "Eş yükselti eğrisiyle",
+        "Koyu mavi alan dolgusuyla",
+        "Yalnızca kesir ölçek rakamıyla"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarından yararlanarak kavramları yazınız ve harita işaretlerini açıklayan şifre kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Gemi ve yük indirme noktası olan kıyı tesisi",
+          "cevap": "LİMAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Ekvator'a paralel uzanan açısal koordinat çizgisi",
+          "cevap": "ENLEM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kayaç ve yer yapısını inceleyen yer bilimi",
+          "cevap": "JEOLOJİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Göl ve orman gibi geniş yüzeyleri gösteren sembol türü",
+          "cevap": "ALAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Zirve ve kuyu gibi konumsal verileri gösteren sembol",
+          "cevap": "NOKTA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Belirli bir konuya odaklanan özel harita türü",
+          "cevap": "TEMATİK",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "LEJANT",
+      "sonuc": "LEJANT"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Harita oluşturma sürecinin son adımında 'haritayı kullanma ve yeniden düzenleme' aşamasının bulunmasının önemini açıklayınız.",
+      "cevap": "Kullanımda fark edilen eksiklikleri gidermek ve değişen güncel mekânsal verileri haritaya işlemek için gereklidir.",
+      "satir": 2,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-5 yeniden düzenleme\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">6. ADIM: KULLANMA VE YENİDEN DÜZENLEME</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Harita Kontrolü</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Sembol ve ölçek doğruluğu</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Okunabilirlik testi</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Güncelleme Süreci</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Yeni yol, bina ve sınırların eklenmesi</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Dinamik CBS katmanı yenileme</text></svg>"
+    }
+  ]
+}

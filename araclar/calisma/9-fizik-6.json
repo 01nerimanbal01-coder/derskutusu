@@ -1,0 +1,267 @@
+{
+  "sinif": 9,
+  "ders": "fizik",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Skaler ve Vektörel Nicelikler",
+  "ciktilar": [
+    "Fiziksel nicelikleri skaler (yönsüz) ve vektörel (yönlü) nicelikler olarak sınıflandırır ve karşılaştırır.",
+    "Bir vektörün dört temel elemanını (başlangıç noktası, doğrultu, yön, büyüklük) belirler; eşit ve zıt vektörleri ayırt eder.",
+    "Vektörlerin skalerle çarpımını ve aynı/zıt yönlü veya dik vektörlerin bileşkesini (R) hesaplar."
+  ],
+  "hatirla": [
+    "Yalnız sayı ve birimle ifade edilen nicelikler skaler (kütle, zaman, sıcaklık, alınan yol, sürat); yön de gerektirenler vektöreldir (kuvvet, ağırlık, yer değiştirme, hız, ivme).",
+    "Eşit vektörlerin (K = L) yön ve büyüklükleri aynıdır; zıt vektörlerin (K = -M) büyüklükleri eşit ancak yönleri 180° terstir.",
+    "Aynı yönlü vektörler toplanır (R = {alt:F|1} + {alt:F|2}), zıt yönlüler çıkarılır (R = |{alt:F|1} - {alt:F|2}|), dik vektörlerde Pisagor ({us:R|2} = {us:F|2}{alt:|1} + {us:F|2}{alt:|2}) uygulanır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Vektör kavramlarını ve fiziksel nicelik gruplarını açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Skaler Nicelik",
+          "Yalnız sayı ve birimle ifade edilen yönsüz büyüklük (kütle, sürat, enerji)"
+        ],
+        [
+          "Vektörel Nicelik",
+          "Sayı ve birimin yanında doğrultu ve yön gerektiren büyüklük (kuvvet, hız)"
+        ],
+        [
+          "Bileşke Vektör (R)",
+          "Birden fazla vektörün etkisini tek başına yapabilen toplam vektör"
+        ],
+        [
+          "Dengeleyici Kuvvet (-R)",
+          "Bileşke kuvvetle eşit büyüklükte ve zıt yönlü olup sistemi dengeleyen kuvvet"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki sınıflandırma tablosuna göre aşağıdaki fiziksel nicelik çiftlerinden hangisinin her ikisi de vektöreldir?",
+      "secenekler": [
+        "Kuvvet — Yer değiştirme",
+        "Alınan yol — Sürat",
+        "Kütle — Sıcaklık",
+        "Zaman — Basınç"
+      ],
+      "dogru": 0,
+      "cozum": "Kuvvet ve yer değiştirme yönlü (vektörel) niceliklerdir; diğer seçeneklerdeki tüm nicelikler skalerdir."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Sürtünmesiz yatay düzlemdeki cisme Doğu'ya 15 N ve 10 N, Batı'ya 18 N etki ediyorsa bileşke ve dengeleyici kuvvet nedir?",
+      "cevap": "Doğu toplamı 25 N olduğundan R = 25 - 18 = 7 N Doğu.",
+      "satir": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Skaler ve vektörel niceliklerle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Fizikteki 7 temel büyüklüğün (kütle, uzunluk, zaman, sıcaklık vb.) tamamı skalerdir.",
+          "dogru": true
+        },
+        {
+          "metin": "Büyüklükleri eşit olan iki vektörün yönleri farklı olsa bile bu vektörler eşittir.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir vektör negatif bir sayıyla (-2 gibi) çarpıldığında yönü 180° ters döner.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir cisme etki eden bileşke kuvvet sıfır ise (R = 0) cisim dengelenmiş kuvvetler etkisindedir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Birbirine karıştırılan fiziksel nicelik ikililerini skaler ve vektörel oluşlarına göre tabloda tamamlayınız.",
+      "basliklar": [
+        "Karşılaştırılan Alan",
+        "Skaler Nicelik (Yönsüz)",
+        "Vektörel Nicelik (Yönlü)"
+      ],
+      "satirlar": [
+        [
+          "Madde miktarı ve çekim etkisi",
+          "Kütle (m — birimi kg)",
+          {
+            "b": "Ağırlık (G — birimi N)"
+          }
+        ],
+        [
+          "Yörünge uzunluğu ve konum farkı",
+          "Alınan Yol (x — birimi m)",
+          {
+            "b": "Yer Değiştirme (Δx — birimi m)"
+          }
+        ],
+        [
+          "Birim zamandaki hareket",
+          "Sürat (v — yol / zaman)",
+          {
+            "b": "Hız (v — yer değiştirme / zaman)"
+          }
+        ],
+        [
+          "Yüzey etkisi ve toplam dik etki",
+          "Basınç (P — birimi Pa)",
+          {
+            "b": "Basınç Kuvveti (F — birimi N)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki uç uca ekleme yöntemiyle iki vektörün (K + L) bileşkesini bulma adımlarını sıraya diziniz.",
+      "ogeler": [
+        "Birinci vektörü (K) yönü, doğrultusu ve büyüklüğü korunacak biçimde düzleme çizme",
+        "İkinci vektörün (L) başlangıç noktasını K vektörünün ok ucuna (bitiş noktasına) taşıma",
+        "K vektörünün başlangıç noktasını L vektörünün ok ucuna birleştiren yönlü doğruyu çizme",
+        "Başlangıçtan son ok ucuna çizilen bu yeni vektörü bileşke vektör (R = K + L) olarak adlandırma"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dik vektör kuralına göre aynı noktaya Doğu yönünde 12 N ve Kuzey yönünde 5 N iki kuvvet etki ederse bileşke kaç N olur?",
+      "secenekler": [
+        "7 N",
+        "13 N",
+        "17 N",
+        "60 N"
+      ],
+      "dogru": 1,
+      "cozum": "Doğu ve Kuzey birbirine diktir (90°). Pisagor bağıntısından {us:R|2} = {us:12|2} + {us:5|2} = 169 ve R = 13 N bulunur."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları uygun fizik kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir vektörün sayısal değerine ve ok uzunluğuna o vektörün ___ (şiddeti) denir.",
+          "cevap": "büyüklüğü"
+        },
+        {
+          "metin": "Doğrultuları ve boyları aynı, yönleri 180° ters olan vektörlere ___ vektörler denir.",
+          "cevap": "zıt"
+        },
+        {
+          "metin": "Uç uca eklenen vektörler kapalı çokgen oluşturup başlangıca dönerse bileşke ___ olur.",
+          "cevap": "sıfır"
+        }
+      ],
+      "fazla": [
+        "skaler"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Bir vektörün dört temel elemanını görev ve tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Başlangıç Noktası",
+          "Vektörün cisme etki ettiği uygulama noktası"
+        ],
+        [
+          "Doğrultu",
+          "Vektörün üzerinde bulunduğu taşıyıcı doğru (Örn: Doğu-Batı doğrultusu)"
+        ],
+        [
+          "Yön",
+          "Vektörün ok ucunun gösterdiği taraf (Örn: +x veya Doğu yönü)"
+        ],
+        [
+          "Büyüklük (|A|)",
+          "Vektörün birim cinsinden sayısal şiddeti (daima sıfır veya pozitiftir)"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Vektör işlemleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Doğu yönüne giden araç ile Batı yönüne giden aracın doğrultuları aynı, yönleri zıttır.",
+          "dogru": true
+        },
+        {
+          "metin": "Büyüklükleri 7 N ve 11 N olan iki kuvvetin bileşkesi en az 4 N, en çok 18 N olabilir.",
+          "dogru": true
+        },
+        {
+          "metin": "K ve M zıt vektörler ise |K| = -|M| eşitliği doğrudur.",
+          "dogru": false
+        },
+        {
+          "metin": "Birbirine dik 6 N ve 8 N büyüklüğündeki iki kuvvetin bileşkesi 10 N'dur.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Birim zamandaki hız değişimini veren vektörel nicelik (4 harf)",
+          "cevap": "İVME",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yönü, doğrultusu ve büyüklüğü olan doğru parçası (6 harf)",
+          "cevap": "VEKTÖR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kütle ile hızın çarpımına eşit olan vektörel nicelik (8 harf)",
+          "cevap": "MOMENTUM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İş yapabilme yeteneği olan skaler nicelik (6 harf)",
+          "cevap": "ENERJİ",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "İVME"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "400 m'lik dairesel pistte başladığı noktaya dönerek 1 tam turu 50 s'de koşan atletin süratini ve hızını karşılaştırınız.",
+      "cevap": "Alınan yol 400 m olduğundan skaler sürati 8 m/s'dir; ancak.",
+      "satir": 1
+    }
+  ]
+}

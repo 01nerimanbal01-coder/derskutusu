@@ -1,0 +1,245 @@
+{
+  "sinif": 5,
+  "ders": "matematik",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Doğal Sayılarla Dört İşlem İçeren Gerçek Yaşam Problemlerini Çözme (Çok Adımlı Problemler, Kalanın Yorumlanması ve Çözüm Stratejileri) (MAT.5.1.2 & MAT.5.1.3)",
+  "ciktilar": [
+    "Doğal sayılarla dört işlem gerektiren gerçek yaşam problemlerinde verilen ve istenen bileşenler arasındaki ilişkiyi belirleyerek uygun matematiksel temsillere (şema, tablo, kutu modeli) dönüştürür (MAT.5.1.2).",
+    "Kalanlı bölme işlemi içeren günlük yaşam problemlerinde kalanın ihmal edilmesi, sonucun bir üst tam sayıya tamamlanması veya doğrudan kalanın kullanılması durumlarını bağlama göre yorumlar.",
+    "Çok adımlı problemlerde tahmin ve çözüm stratejilerini uygular, bulduğu sonucu kontrol eder ve kullandığı stratejiyi benzer problemlere geneller (MAT.5.1.3)."
+  ],
+  "hatirla": [
+    "Problem çözme sürecinde önce {koyu:verilenler ve istenenler} belirlenip {koyu:kutu/şema modeli} çizilir; ardından strateji uygulanır ve işlem {koyu:ters işlem veya tahminle} kontrol edilir.",
+    "Kalanlı bölme problemlerinde {koyu:«En fazla kaç tam ürün/paket alınabilir?»} denildiğinde kalan ihmal edilir ve cevap {koyu:Bölüm} olur.",
+    "Kalanlı bölmede {koyu:«Tüm yolcuların taşınması veya tüm ürünlerin kolilenmesi için en az kaç araç/koli gerekir?»} denildiğinde kalanlar açıkta bırakılamayacağından cevap {koyu:Bölüm + 1} olur."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki problem durumlarını sağ sütundaki çözüm stratejileriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "86 yolcunun 20 kişilik otobüslerle taşınması için gereken en az otobüs sayısı",
+          "Kalan 6 yolcu için bölüme 1 eklenir (Bölüm + 1 = 5 otobüs)"
+        ],
+        [
+          "86 TL ile tanesi 20 TL olan defterlerden en fazla kaç adet alınabileceği",
+          "Kalan 6 TL yeni deftere yetmediği için ihmal edilir (Bölüm = 4 defter)"
+        ],
+        [
+          "Biri diğerinin 3 katından 10 fazla olan iki sayının toplamından küçük sayıyı bulma",
+          "Toplamdan 10 çıkarılıp (3 + 1 = 4) eş kata bölünür (Kutu modeli)"
+        ],
+        [
+          "Peşinat verildikten sonra kalan borcun eşit taksitlere bölünmesi",
+          "(Toplam Fiyat − Peşinat) ÷ Taksit Sayısı bağıntısı uygulanır"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki okul gezisine katılacak 148 öğrenci ve 7 öğretmen, her biri 30 yolcu alan servis araçlarıyla taşınacaktır. Bu gezi için",
+      "secenekler": [
+        "4 servis aracı gerekir",
+        "5 servis aracı gerekir",
+        "6 servis aracı gerekir",
+        "7 servis aracı gerekir"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki bölme işlemlerini gerçek yaşam durumlarına göre yorumlayarak bölüm, kalan ve problem sonucunu tabloya yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Problem Durumu ve İşlem",
+        "Bölüm ve Kalan",
+        "Problem Cevabı"
+      ],
+      "satirlar": [
+        [
+          "1. 125 yumurta 12’li kutulara: En fazla kaç tam kutu dolar?",
+          "Bölüm: 10, Kalan: 5",
+          {
+            "b": "10 tam kutu dolar"
+          }
+        ],
+        [
+          "2. 125 yumurtanın tamamı için 12’li kutulardan en az kaç kutu gerekir?",
+          "Bölüm: 10, Kalan: 5",
+          {
+            "b": "11 kutu gerekir (Bölüm + 1)"
+          }
+        ],
+        [
+          "3. 250 TL ile tanesi 40 TL olan kitaplardan en fazla kaç kitap alınır?",
+          {
+            "b": "Bölüm: 6, Kalan: 10"
+          },
+          {
+            "b": "6 kitap alınır (Kalan 10 TL artar)"
+          }
+        ],
+        [
+          "4. 95 fidan her sıraya 8 fidan dikilince son sıraya kaç fidan kalır?",
+          "Bölüm: 11, Kalan: 7",
+          {
+            "b": "7 fidan kalır (Kalan kullanılır)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Doğal sayılarla dört işlem problemleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir bölme işleminde kalan sayı her zaman bölenden küçük olmak zorundadır.",
+          "dogru": true
+        },
+        {
+          "metin": "130 litre zeytinyağının tamamını 5 litrelik bidonlara doldurmak için 25 bidon yeterlidir.",
+          "dogru": false
+        },
+        {
+          "metin": "Son durumu verilen ve başlangıçtaki sayıyı soran problemlerde sondan başa doğru ters işlemler uygulanır.",
+          "dogru": true
+        },
+        {
+          "metin": "Biri diğerinin 4 katı olan iki sayının toplamı verildiğinde toplam sayı 4’e bölünerek küçük sayı bulunur.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun matematiksel ifadelerle tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Kalanlı bir bölme işleminde Bölünen = (Bölen × ___) + Kalan eşitliği her zaman sağlanır.",
+          "cevap": "Bölüm"
+        },
+        {
+          "metin": "290 sayfalık bir kitabın ilk gün 50 sayfasını okuyan Efe, kalan sayfaları günde 30 sayfa okuyarak ___ günde bitirir.",
+          "cevap": "8"
+        },
+        {
+          "metin": "Biri diğerinin 3 katı olan iki sayının toplamı kutu modelinde toplam ___ eş kutu ile gösterilir.",
+          "cevap": "4"
+        }
+      ],
+      "fazla": [
+        "6"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kampanyalı bilgisayarı alan bir aile 4.500 TL peşinat ödemiş, kalan tutarı 6 eşit aylık taksite böldürmüştür. Aylık",
+      "secenekler": [
+        "2.150 TL",
+        "2.250 TL",
+        "2.400 TL",
+        "3.000 TL"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kat (kutu) modeline göre bir çiftlikteki koyunların sayısı, keçilerin sayısının 4 katından 15 fazladır. Toplam 190 hayvan",
+      "secenekler": [
+        "32 keçi vardır",
+        "35 keçi vardır",
+        "38 keçi vardır",
+        "41 keçi vardır"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki fırında üretilen 380 simidin 44 tanesi sabah satılmış, kalan simitler her birinde 12 simit bulunan kutulara",
+      "cevap": "Kalan simit: 380 − 44 = 336 adet. Kutu sayısı: 336 ÷ 12.",
+      "satir": 1
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki çok adımlı problemi çözmek için izlenmesi gereken işlem basamaklarını {koyu:1’den 4’e kadar} doğru sırayla numaralandırınız.",
+      "ogeler": [
+        "1. Adım: 3 gömleğin toplam tutarını bulmak için 3 ile 450 TL’yi çarpmak (1.350 TL)",
+        "2. Adım: Gömlek tutarına 950 TL pantolon fiyatını ekleyerek toplam harcamayı bulmak (2.300 TL)",
+        "3. Adım: Kasaya verilen 2.500 TL’den toplam harcamayı çıkarmak (200 TL para üstü)",
+        "4. Adım: Sonucu ters işlemle (2.300 + 200 = 2.500 TL) kontrol etmek"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki sinema salonunda tam bilet 120 TL, öğrenci bileti 80 TL’dir. Gösterimi 25 yetişkin ve 40 öğrenci izlediğine göre gişede",
+      "secenekler": [
+        "5.800 TL gelir elde edilmiştir",
+        "6.000 TL gelir elde edilmiştir",
+        "6.200 TL gelir elde edilmiştir",
+        "6.600 TL gelir elde edilmiştir"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki matematik kavramlarını kutulara yazınız. Numaralı harflerle «bölme işleminde paylaştırılamayan ve bölenden küçük",
+      "satirlar": [
+        {
+          "ipucu": "Kat problemlerinde çoklukları eş parçalarla görselleştirdiğimiz çizim (... modeli)",
+          "cevap": "KUTU",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Çıkarma işleminde birinci sayıdan eksiltilen ikinci sayı",
+          "cevap": "ÇIKAN",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Bölme işleminde bölünenin içinde bölenin kaç kez olduğunu gösteren sonuç",
+          "cevap": "BÖLÜM",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Toplama işleminde toplanan sayıların oluşturduğu sonuç",
+          "cevap": "TOPLAM",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Bir problemi işlem yapmadan önce yuvarlama yoluyla yaklaşık bulma",
+          "cevap": "TAHMİN",
+          "anahtar": 5
+        }
+      ],
+      "sonuc": "KALAN"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki «110 ÷ 8 = 13 (Kalan 6)» işleminin; A) «110 m kumaştan 8 m’lik kaç masa örtüsü çıkar?» ve B) «110 kişilik grup 8 kişilik çadırlara en az",
+      "cevap": "A’da kalan 6 m kumaştan yeni örtü çıkmayacağı için.",
+      "satir": 1
+    }
+  ]
+}
