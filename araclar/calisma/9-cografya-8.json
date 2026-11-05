@@ -1,0 +1,256 @@
+{
+  "sinif": 9,
+  "ders": "cografya",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Mekânsal Bilgi Teknolojilerinin Bileşenleri: CBS (GIS), Uzaktan Algılama (UA) ve Küresel Konumlandırma (GPS/GNSS)",
+  "ciktilar": [
+    "Mekânsal bilgi teknolojilerini oluşturan Coğrafi Bilgi Sistemleri (CBS), Uzaktan Algılama (UA) ve Küresel Konumlandırma Sistemi (GPS/GNSS) bileşenlerini tanımlar.",
+    "CBS'nin beş temel unsurunu (donanım, yazılım, veri, insan, yöntem) ve mekânsal veri modellerini (vektörel: nokta-çizgi-poligon ve raster/hücresel veri) çözümler.",
+    "GPS, Uzaktan Algılama ve CBS bileşenleri arasındaki veri akışı ilişkisini afet yönetimi, şehir planlaması, tarım ve çevre izleme örnekleri üzerinden değerlendirir."
+  ],
+  "hatirla": [
+    "Mekânsal bilgi teknolojileri; GPS/GNSS (konum), Uzaktan Algılama (uydu/İHA) ve CBS (katmanlı analiz) unsurlarıdır.",
+    "CBS'nin 5 temel unsuru Donanım, Yazılım, Veri, İnsan ve Yöntemdir; en zahmetli ve kritik bileşen veridir.",
+    "Vektörel veri nokta, çizgi ve poligon (alan) ile; raster veri ise eşit kare piksellerle (uydu görüntüsü) sunulur."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki mekânsal bilgi teknolojisi bileşenlerini ve veri modellerini açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Küresel Konumlandırma (GPS/GNSS)",
+          "Uydulardan gelen sinyallerle enlem, boylam, yükselti ve zamanı belirleme"
+        ],
+        [
+          "Uzaktan Algılama (UA)",
+          "Fiziksel temas kurmadan uydu veya İHA sensörleriyle yeryüzünü görüntüleme"
+        ],
+        [
+          "Coğrafi Bilgi Sistemleri (CBS)",
+          "Mekânsal verileri katmanlar hâlinde depolama, sorgulama ve analiz etme"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-cografya-8 bileşenler\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">MEKÂNSAL BİLGİ TEKNOLOJİLERİNİN 3 BİLEŞENİ</text><rect x=\"12\" y=\"28\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. GPS / GNSS</text><line x1=\"22\" y1=\"54\" x2=\"110\" y2=\"54\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"66.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Enlem, boylam, yükselti</text><text x=\"66.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">En az 4 uydu sinyali</text><rect x=\"126\" y=\"28\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">2. Uzaktan Algılama</text><line x1=\"136\" y1=\"54\" x2=\"224\" y2=\"54\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"180.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Uydu ve İHA sensörleri</text><text x=\"180.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Temassız görüntü (Raster)</text><rect x=\"240\" y=\"28\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">3. CBS (GIS)</text><line x1=\"250\" y1=\"54\" x2=\"338\" y2=\"54\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"294.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Donanım, Yazılım, Veri</text><text x=\"294.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Katmanlı mekânsal analiz</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki vektörel veri modeline göre deprem merkez üssü, akarsu yatağı ve göl alanı sırasıyla nasıl gösterilir?",
+      "secenekler": [
+        "Çizgi — Nokta — Poligon (Alan)",
+        "Nokta — Çizgi — Poligon (Alan)",
+        "Poligon (Alan) — Çizgi — Nokta",
+        "Piksel — Nokta — Çizgi"
+      ],
+      "dogru": 1,
+      "cozum": "Vektörel modelde deprem merkez üssü veya kuyu 'nokta', akarsu veya kara yolu 'çizgi', göl veya il sınırı 'poligon' ile gösterilir.",
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-cografya-8 veri modelleri\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">CBS KONUMSAL VERİ MODELLERİ: VEKTÖREL VE RASTER</text><rect x=\"12\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"93.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Vektörel Veri Modeli (Koordinatlı)</text><line x1=\"22\" y1=\"54\" x2=\"164\" y2=\"54\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"93.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Nokta: Kuyu, okul, deprem üssü</text><text x=\"93.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Çizgi: Yol, akarsu · Poligon: Göl, orman</text><rect x=\"186\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Raster (Hücresel) Veri Modeli</text><line x1=\"196\" y1=\"54\" x2=\"338\" y2=\"54\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"267.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Eşit kare hücreler (Pikseller) matrisi</text><text x=\"267.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Uydu görüntüsü, hava fotoğrafı, DEM</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki uzaktan algılama sistemlerine göre gece ve bulutlu havalarda bile görüntü alabilen sistem hangisidir?",
+      "secenekler": [
+        "Yalnız Güneş ışığını bekleyen pasif optik kameralar",
+        "Kendi sinyalini gönderip yansımayı ölçen aktif radar ve LiDAR",
+        "Sadece basılı kağıt atlaslar ve geleneksel duvar haritaları",
+        "Uydudan bağımsız çalışan mekanik rüzgârölçerler"
+      ],
+      "dogru": 1,
+      "cozum": "Radar ve LiDAR gibi aktif algılayıcılar kendi elektromanyetik sinyalini gönderdiği için gece ve bulutlu havada görüntü alabilir.",
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-cografya-8 algılayıcılar\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">UZAKTAN ALGILAMADA SENSÖR TÜRLERİ VE UYDULARIMIZ</text><rect x=\"12\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"93.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Pasif Algılayıcılar</text><line x1=\"22\" y1=\"54\" x2=\"164\" y2=\"54\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"93.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Güneşten yansıyan doğal ışığı ölçer</text><text x=\"93.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Gündüz ve bulutsuz havada etkindir</text><rect x=\"186\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Aktif Algılayıcılar (Radar / LiDAR)</text><line x1=\"196\" y1=\"54\" x2=\"338\" y2=\"54\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"267.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Kendi sinyalini gönderip yansımayı ölçer</text><text x=\"267.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Gece ve bulutlu havada görüntü alır</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Mekânsal bilgi teknolojileriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Bir GPS alıcısının 3 boyutlu (enlem, boylam, yükselti) konum bulması için en az 4 uydu gerekir.",
+          "dogru": true
+        },
+        {
+          "metin": "Raster veri modelinde piksel boyutu küçüldükçe görüntünün mekânsal çözünürlüğü azalır.",
+          "dogru": false
+        },
+        {
+          "metin": "CBS'nin beş temel bileşeni donanım, yazılım, veri, insan (kullanıcı) ve yöntemdir.",
+          "dogru": true
+        },
+        {
+          "metin": "RASAT, GÖKTÜRK-1, GÖKTÜRK-2 ve İMECE Türkiye'nin yer gözlem uyduları arasındadır.",
+          "dogru": true
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-cografya-8 CBS unsurları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">CBS BEŞ TEMEL BİLEŞENİ VE GÖZLEM UYDULARIMIZ</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"77\" rx=\"5\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Donanım &amp; Yazılım</text><line x1=\"18\" y1=\"54\" x2=\"82\" y2=\"54\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Bilgisayar, sunucu</text><text x=\"50.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">CBS analiz programları</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"77\" rx=\"5\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Veri (En Kritik)</text><line x1=\"104\" y1=\"54\" x2=\"168\" y2=\"54\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Konumsal (Grafik)</text><text x=\"136.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Öznitelik (Tablo) verisi</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"77\" rx=\"5\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">İnsan &amp; Yöntem</text><line x1=\"190\" y1=\"54\" x2=\"254\" y2=\"54\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Uzman kullanıcı</text><text x=\"222.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Analiz kuralları planı</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"77\" rx=\"5\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Türk Uyduları</text><line x1=\"276\" y1=\"54\" x2=\"340\" y2=\"54\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">BİLSAT, RASAT</text><text x=\"308.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">GÖKTÜRK-1/2, İMECE</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "sutun": "sol",
+      "soru": "Coğrafi unsurların CBS ortamındaki veri modelini ve geometrik temsil türünü tabloda tamamlayınız.",
+      "basliklar": [
+        "Coğrafi Unsur / Veri",
+        "Veri Modeli (Vektörel/Raster)",
+        "Temsil Biçimi"
+      ],
+      "satirlar": [
+        [
+          "Kara yolları, demir yolları ve fay hatları",
+          "Vektörel veri modeli",
+          {
+            "b": "Çizgi (Line) katmanı"
+          }
+        ],
+        [
+          "Orman sınırları, baraj gölleri ve ilçe sınırları",
+          "Vektörel veri modeli",
+          {
+            "b": "Poligon / Alan (Polygon) katmanı"
+          }
+        ],
+        [
+          "İMECE uydusundan alınan multispektral görüntü",
+          "Raster (Hücresel) veri modeli",
+          {
+            "b": "Eşit kare hücreler (Piksel matrisi)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Bir orman yangınına müdahalede mekânsal bilgi teknolojilerinin çalışma akışını 1'den 4'e doğru sıralayınız.",
+      "ogeler": [
+        "Gözlem uydusu ve İHA sensörlerinin (Uzaktan Algılama) dumanı ve termal ısı artışını tespit etmesi",
+        "Yangın ihbar noktasının ve sahadaki itfaiye araçlarının anlık koordinatlarının GPS ile belirlenmesi",
+        "CBS ortamında rüzgâr yönü, eğim, orman sıklığı ve yol ağı katmanlarının üst üste çakıştırılması",
+        "CBS analizi sonucunda yangının ilerleme yönünün ve en hızlı müdahale rotasının haritalanması"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-cografya-8 yangın akışı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e0f4f8\" stroke=\"#0e8fa8\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">ORMAN YANGINI YÖNETİMİNDE MEKÂNSAL TEKNOLOJİ AKIŞI</text><rect x=\"8\" y=\"28\" width=\"79\" height=\"77\" rx=\"5\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"47.5\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. Uzaktan Algılama</text><text x=\"47.5\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Uydu/İHA termal</text><text x=\"47.5\" y=\"89.0\" text-anchor=\"middle\" font-size=\"7.1\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Duman ve ısı tespiti</text><polygon points=\"88.5,62 93.5,66.5 88.5,71\" fill=\"#0e8fa8\"/><rect x=\"95\" y=\"28\" width=\"79\" height=\"77\" rx=\"5\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"134.5\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">2. GPS / GNSS</text><text x=\"134.5\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Yangın ve ekiplerin</text><text x=\"134.5\" y=\"89.0\" text-anchor=\"middle\" font-size=\"7.1\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Anlık koordinatı</text><polygon points=\"175.5,62 180.5,66.5 175.5,71\" fill=\"#0e8fa8\"/><rect x=\"182\" y=\"28\" width=\"79\" height=\"77\" rx=\"5\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"221.5\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">3. CBS Katmanları</text><text x=\"221.5\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Rüzgâr, eğim, sıklık</text><text x=\"221.5\" y=\"89.0\" text-anchor=\"middle\" font-size=\"7.1\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Yol ağı çakıştırma</text><polygon points=\"262.5,62 267.5,66.5 262.5,71\" fill=\"#0e8fa8\"/><rect x=\"269\" y=\"28\" width=\"79\" height=\"77\" rx=\"5\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.5\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">4. Müdahale Planı</text><text x=\"308.5\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Yayılım yönü tahmini</text><text x=\"308.5\" y=\"89.0\" text-anchor=\"middle\" font-size=\"7.1\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">En kısa rota hesabı</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Yeni bir güneş enerjisi santrali için CBS'de eğim, güneşlenme süresi ve ulaşım haritalarının üst üste incelenmesi nedir?",
+      "secenekler": [
+        "Mekânsal katman (örtüşüm) analizi ve en uygun yer seçimi",
+        "Yalnızca pasif algılayıcılarla atmosfer basıncı ölçümü",
+        "Sözel verilerin koordinatsız metin belgesine dönüştürülmesi",
+        "GPS uydularının yörünge yüksekliğinin değiştirilmesi"
+      ],
+      "dogru": 0,
+      "cozum": "Farklı tematik veri katmanlarının CBS'de çakıştırılarak en uygun konumun belirlenmesine katman (örtüşüm) analizi denir.",
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-cografya-8 katman analizi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">CBS KATMAN (ÖRTÜŞÜM) ANALİZİ İLE YER SEÇİMİ</text><rect x=\"12\" y=\"28\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. Katman: Topoğrafya</text><line x1=\"22\" y1=\"54\" x2=\"110\" y2=\"54\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"66.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Eğim ve bakı haritası</text><text x=\"66.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Sayısal yükselti (DEM)</text><rect x=\"126\" y=\"28\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">2. Katman: İklim &amp; Arazi</text><line x1=\"136\" y1=\"54\" x2=\"224\" y2=\"54\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"180.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Güneşlenme süresi</text><text x=\"180.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Orman ve tarım sınırı</text><rect x=\"240\" y=\"28\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">3. Katman: Beşerî Ağ</text><line x1=\"250\" y1=\"54\" x2=\"338\" y2=\"54\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"294.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Ulaşım ve enerji hattı</text><text x=\"294.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Çakıştırma -&gt; En uygun yer</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "CBS'de bir ilin haritadaki sınır çizgisi ile o ile ait nüfus ve okullaşma oranı tablosu hangi iki veri türünü oluşturur?",
+      "secenekler": [
+        "Konumsal (grafik) veri ve Öznitelik (sözel/sayısal tablo) verisi",
+        "Aktif radar verisi ve Pasif termal uydu verisi",
+        "Enlem derecesi ve Başlangıç meridyeni sapması",
+        "Analog hava fotoğrafı ve Fiziki kabartma maketi"
+      ],
+      "dogru": 0,
+      "cozum": "Haritadaki şekil ve koordinat bilgisi 'konumsal veri', ona bağlı tablo bilgileri ise 'öznitelik verisi'dir.",
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-cografya-8 konumsal öznitelik\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#0e8fa8\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">CBS VERİ YAPISI: KONUMSAL VE ÖZNİTELİK VERİSİ</text><rect x=\"12\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#e0f4f8\" stroke=\"#0e8fa8\" stroke-width=\"0.75\"/><text x=\"93.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Konumsal (Grafik) Veri</text><line x1=\"22\" y1=\"54\" x2=\"164\" y2=\"54\" stroke=\"#0e8fa8\" stroke-width=\"0.6\"/><text x=\"93.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Haritadaki nokta, çizgi, poligon</text><text x=\"93.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Enlem-boylam koordinat sınırları</text><rect x=\"186\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Öznitelik (Sözel / Sayısal) Tablosu</text><line x1=\"196\" y1=\"54\" x2=\"338\" y2=\"54\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"267.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Unsura ait nüfus, alan, debisi</text><text x=\"267.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Sorgulanabilir veri tabanı sütunları</text></svg>"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Yeryüzünü eşit büyüklükteki kare hücreler (pikseller) dizisiyle gösteren modele ___ veri modeli denir.",
+          "cevap": "raster"
+        },
+        {
+          "metin": "Güneş'ten yansıyan doğal enerjiyi kaydeden uydu sensörlerine ___ algılayıcılar adı verilir.",
+          "cevap": "pasif"
+        },
+        {
+          "metin": "CBS'nin beş temel bileşeni içinde toplanması en zahmetli ve en kritik olan unsur ___ bileşenidir.",
+          "cevap": "veri"
+        }
+      ],
+      "fazla": [
+        "vektörel"
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak yer gözlem uydumuzun adını oluşturan şifreyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Fiziksel temas olmadan havadan görüntü alan insansız araç, kısaca (3 harf)",
+          "cevap": "İHA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "CBS'nin 5 bileşeninden analiz kurallarını belirten unsur (6 harf)",
+          "cevap": "YÖNTEM",
+          "anahtar": 5
+        },
+        {
+          "ipucu": "Vektörel ve raster bilgileri barındıran en kritik CBS unsuru (4 harf)",
+          "cevap": "VERİ",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Mekânsal verileri katmanlarla analiz eden sistemin kısaltması (3 harf)",
+          "cevap": "CBS",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Ekvator'a olan açısal uzaklığı belirten koordinat bileşeni (5 harf)",
+          "cevap": "ENLEM",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "İMECE"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavrama",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Bir göl alanının son 20 yıldaki kuruma oranını belirlemek için Uzaktan Algılama ve CBS birlikte nasıl kullanılır?",
+      "cevap": "Farklı yıllara ait uydu görüntüleri (UA) alınır, CBS'de göl poligonları çakıştırılarak alan kaybı.",
+      "satir": 3,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-cografya-8 göl değişimi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">ZAMANSAL DEĞİŞİM ANALİZİ (GÖL ALANI TAKİBİ)</text><rect x=\"12\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"93.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">1. Aşama: Çok Zamanlı Uydu Verisi</text><line x1=\"22\" y1=\"54\" x2=\"164\" y2=\"54\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"93.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">2005 ve 2025 uydu görüntüleri (UA)</text><text x=\"93.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Raster piksel katmanlarının alınması</text><rect x=\"186\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">2. Aşama: CBS Sınır ve Alan Analizi</text><line x1=\"196\" y1=\"54\" x2=\"338\" y2=\"54\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"267.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Göl kıyı çizgilerinin vektörel çizimi</text><text x=\"267.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Alan farkı (km^2) ve kuraklık hesabı</text></svg>"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "soru": "Deprem sonrasında hasar tespiti ve çadırkent yer seçiminde GPS, Uzaktan Algılama ve CBS'nin görev paylaşımını açıklayınız.",
+      "cevap": "UA yıkımı görüntüler, GPS ekiplerin konumunu verir, CBS ise eğim ve zemin katmanlarını analiz edip.",
+      "satir": 3
+    }
+  ]
+}

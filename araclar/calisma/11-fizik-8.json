@@ -1,0 +1,258 @@
+{
+  "sinif": 11,
+  "ders": "fizik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Newton'ın Hareket Yasalarının Serbest Cisim Diyagramlarıyla Yorumlanması (FİZ.11.1.5)",
+  "ciktilar": [
+    "Farklı düzlemlerdeki cisimler üzerine etki eden gerçek kuvvetleri serbest cisim diyagramı üzerinde gösterir.",
+    "Yatay, düşey ve eğik düzlemde sürtünmeli ve sürtünmesiz hareket eden cisimlerin ivmelerini hesaplar.",
+    "Birbirine iple bağlı veya temas halindeki çoklu cisim sistemlerinde ortak ivmeyi, ip gerilmesini ve etki-tepki kuvvetlerini analiz eder."
+  ],
+  "hatirla": [
+    "Serbest cisim diyagramında yalnız gerçek dış kuvvetler (G, N, T, F, {alt:f|s}) çizilir; m·a eylemsizlik çizilmez.",
+    "Eğik düzlemde paralel bileşen m·g·sinα, dik bileşen N = m·g·cosα'dır; sürtünmesiz ivme a = g·sinα olur.",
+    "Bağlı cisimlerde önce {alt:F|net} = {alt:m|top}·a ile ortak ivme, sonra tek kütle denklemiyle T bulunur."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Dinamik sistemlerdeki kavram ve bağıntıları doğru karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Serbest Cisim Diyagramı",
+          "Cisme etki eden gerçek dış kuvvetlerin (G, N, T, F, f) gösterildiği şema"
+        ],
+        [
+          "m·g·sinα Bileşeni",
+          "Eğik düzlem üzerindeki cismi düzleme paralel aşağı çeken ağırlık bileşeni"
+        ],
+        [
+          "N = m·g·cosα Kuvveti",
+          "Eğik düzlem yüzeyinin cisme dik olarak uyguladığı normal tepki kuvveti"
+        ]
+      ],
+      "sutun": "sol"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Sürtünmesiz yatay düzlemde iple bağlı {alt:m|1} = 2 kg ve {alt:m|2} = 3 kg kütleli iki cisim F = 20 N yatay kuvvetle çekiliyor. Sistemin ivmesi ve aradaki T ip gerilmesi kaçtır?",
+      "secenekler": [
+        "a = 4 m/{us:s|2} ve T = 8 N",
+        "a = 4 m/{us:s|2} ve T = 12 N",
+        "a = 5 m/{us:s|2} ve T = 10 N",
+        "a = 2 m/{us:s|2} ve T = 6 N"
+      ],
+      "dogru": 0,
+      "cozum": "a = F / ({alt:m|1} + {alt:m|2}) = 20 / 5 = 4 m/{us:s|2}. Arkadaki {alt:m|1} = 2 kg kütleyi çeken ip gerilmesi T = {alt:m|1}·a = 2·4 = 8 N olur.",
+      "sutun": "sol"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Serbest cisim diyagramı ve Newton yasalarıyla ilgili ifadelere D veya Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Serbest cisim diyagramında {alt:F|net} veya eylemsizlik kuvveti ayrı bir kuvvet vektörü olarak çizilmez.",
+          "dogru": true
+        },
+        {
+          "metin": "Sürtünmesiz eğik düzlemde serbest bırakılan cismin ivmesi cismin kütlesine bağlı olarak değişir.",
+          "dogru": false
+        },
+        {
+          "metin": "Duran bir cisme uygulanan kuvvet maksimum statik sürtünmeyi aşamazsa sürtünme kuvveti uygulanan kuvvete eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Yan yana temas eden iki cismin birbirine uyguladığı etki ve tepki kuvvetleri eşit büyüklükte ve zıt yönlüdür.",
+          "dogru": true
+        }
+      ],
+      "sutun": "sol"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Yüzeyin cisme dik doğrultuda uyguladığı tepki kuvvetine ___ kuvvet (N) denir.",
+          "cevap": "normal"
+        },
+        {
+          "metin": "Hareket halindeki cisme harekete zıt yönde etki eden sürtünmeye ___ sürtünme kuvveti denir.",
+          "cevap": "kinetik"
+        },
+        {
+          "metin": "Sürtünmesiz eğik düzlemde cismin kayma ivmesi yer çekimi ivmesi ve açının ___ değerine bağlıdır.",
+          "cevap": "sinüs"
+        }
+      ],
+      "fazla": [
+        "merkezcil",
+        "impuls"
+      ],
+      "sutun": "sol"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": false,
+      "soru": "Yatay düzlemde duran 4 kg kütleli cisme ait statik sürtünme katsayısı {alt:k|s} = 0,5'tir (g = 10 m/{us:s|2}). Cisme yatay F = 14 N kuvvet uygulanırsa sürtünme kuvveti kaç N olur?",
+      "secenekler": [
+        "14 N",
+        "20 N",
+        "6 N",
+        "0 N"
+      ],
+      "dogru": 0,
+      "cozum": "Maksimum statik sürtünme {alt:f|s,max} = k·m·g = 0,5·4·10 = 20 N'dur. Uygulanan 14 N kuvvet 20 N'u aşamadığı için cisim durur ve {alt:f|s} = 14 N olur.",
+      "sutun": "sol"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "gorsel_var": false,
+      "soru": "Farklı düzeneklerdeki net kuvvet ve ivme bağıntılarını (sürtünmesiz ortamda) tamamlayınız.",
+      "basliklar": [
+        "Düzenek Türü",
+        "Net Kuvvet ({alt:F|net})",
+        "Sistem İvmesi (a)"
+      ],
+      "satirlar": [
+        [
+          "Sürtünmesiz Eğik Düzlem",
+          "m · g · sinα",
+          {
+            "b": "g · sinα (kütleden bağımsız)"
+          }
+        ],
+        [
+          "Yatayda İple Bağlı {alt:m|1} ve {alt:m|2}",
+          "F (Uygulanan yatay kuvvet)",
+          {
+            "b": "{kesir:F|{alt:m|1} + {alt:m|2}}"
+          }
+        ],
+        [
+          "Atwood Düzeneği ({alt:m|1} > {alt:m|2})",
+          "({alt:m|1} - {alt:m|2}) · g",
+          {
+            "b": "{kesir:({alt:m|1} - {alt:m|2}) · g|{alt:m|1} + {alt:m|2}}"
+          }
+        ]
+      ],
+      "sutun": "sol"
+    },
+    {
+      "tur": "siralama",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "İple bağlı çoklu cisim sistemlerinde ip gerilmesini (T) bulmak için izlenen çözüm adımlarını sıralayınız.",
+      "ogeler": [
+        "Sistemdeki her bir cisim için gerçek dış kuvvetleri içeren serbest cisim diyagramını çizmek",
+        "Hareket doğrultusundaki net kuvveti belirleyip sürtünme varsa f = k·N değerini hesaplamak",
+        "Tüm sistem için {alt:F|net} = {alt:m|toplam} · a denklemini yazarak ortak ivmeyi (a) bulmak",
+        "Kütlelerden yalnız birini seçip kendi {alt:F|net} = m · a denkleminde T ip gerilmesini çözmek"
+      ],
+      "sutun": "sag"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Sürtünmesiz sabit makaralı Atwood düzeneğinde {alt:m|1} = 6 kg ve {alt:m|2} = 4 kg kütleli cisimler serbest bırakılıyor (g = 10 m/{us:s|2}). Sistemin ivmesi kaç m/{us:s|2} olur?",
+      "secenekler": [
+        "2 m/{us:s|2}",
+        "4 m/{us:s|2}",
+        "5 m/{us:s|2}",
+        "10 m/{us:s|2}"
+      ],
+      "dogru": 0,
+      "cozum": "{alt:F|net} = ({alt:m|1} - {alt:m|2})·g = (6 - 4)·10 = 20 N. Toplam kütle 6 + 4 = 10 kg olduğundan a = 20 / 10 = 2 m/{us:s|2} bulunur.",
+      "sutun": "sag"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Serbest cisim diyagramı çizilirken 'eylemsizlik kuvveti'nin (m·a) neden gösterilmemesi gerektiğini açıklayınız.",
+      "cevap": "Diyagramda yalnız gerçek dış kuvvetler çizilir.",
+      "satir": 2,
+      "sutun": "sag"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Eğik düzlem açısı α = 30° olan sürtünmesiz bir düzlemde serbest bırakılan 5 kg kütleli cismin ivmesi kaç m/{us:s|2}'dir? (g = 10 m/{us:s|2}, sin30° = 0,5)",
+      "secenekler": [
+        "5 m/{us:s|2}",
+        "8 m/{us:s|2}",
+        "10 m/{us:s|2}",
+        "25 m/{us:s|2}"
+      ],
+      "dogru": 0,
+      "cozum": "Sürtünmesiz eğik düzlemde ivme kütleden bağımsız olup a = g·sin30° = 10·0,5 = 5 m/{us:s|2} olur.",
+      "sutun": "sag"
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": false,
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Hareket halindeki cisme etki eden sürtünme türü (7 harf)",
+          "cevap": "KİNETİK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Net kuvvet etkisinde olmayan, hızı sıfır olan cismin durumu (6 harf)",
+          "cevap": "DURGUN",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Birim zamandaki hız değişimi (4 harf)",
+          "cevap": "İVME",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Yönü ve doğrultusu olan fiziksel büyüklük (6 harf)",
+          "cevap": "VEKTÖR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Maddenin eylemsizlik ölçüsü olan skaler büyüklük (5 harf)",
+          "cevap": "KÜTLE",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Duran cisme etki eden sürtünme türü (6 harf)",
+          "cevap": "STATİK",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "KUVVET",
+      "sutun": "sag"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": false,
+      "soru": "Eğik düzlemde eğim açısı α artırıldığında normal kuvvet (N) ve sürtünme kuvveti ({alt:f|k}) nasıl değişir? Gerekçesiyle açıklayınız.",
+      "cevap": "Açı α arttıkça cosα küçüldüğü için normal kuvvet (N = m·g·cosα) azalır; buna bağlı olarak sürtünme kuvveti ({alt:f|k} = k·N) de azalır.",
+      "satir": 3,
+      "sutun": "sag"
+    }
+  ]
+}

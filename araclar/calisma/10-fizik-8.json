@@ -1,0 +1,245 @@
+{
+  "sinif": 10,
+  "ders": "fizik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Kuvvet-Yer Değiştirme Grafiği, Fiziksel Anlamda İş, Enerji ve Mekanik Güç İlişkisi",
+  "ciktilar": [
+    "Fiziksel anlamda işin gerçekleşme şartlarını açıklayarak kuvvet, yer değiştirme ve iş arasındaki matematiksel modeli (W = F·Δx) kurar.",
+    "Kuvvet-yer değiştirme (F-x) grafiğinin altında kalan alandan yararlanarak pozitif iş, negatif iş ve net işi hesaplar.",
+    "Yapılan net işin cismin kinetik enerjisindeki değişime eşit olduğunu (W{alt:net} = ΔE) ve birim zamanda yapılan işin mekanik gücü (P = W/t) verdiğini uygular."
+  ],
+  "hatirla": [
+    "Fiziksel iş (W = F·Δx) kuvvet ile kuvvet doğrultusundaki yer değiştirmenin çarpımıdır; birimi Joule'dür.",
+    "F-x grafiğinin alanı işi verir; net iş kinetik enerji değişimine eşittir (W{alt:net} = ΔE{alt:k}).",
+    "Birim zamanda yapılan işe mekanik güç (P = {kesir:W|t}) denir; SI birimi Watt (J/s) olup skalerdir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki iş, enerji ve güç kavramlarını matematiksel modelleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "W = F · Δx",
+          "Kuvvet doğrultusunda Δx kadar yer değiştiren cisim üzerinde yapılan iş"
+        ],
+        [
+          "W{alt:net} = ΔE{alt:k} = E{alt:k,son} - E{alt:k,ilk}",
+          "Net işin kinetik enerji değişimine eşit olduğunu belirten İş-Enerji Teoremi"
+        ],
+        [
+          "P = {kesir:W|t} = {kesir:ΔE|t}",
+          "Birim zamanda yapılan işi gösteren mekanik güç bağıntısı"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki sürtünmeli yatay düzlemde duran cisme F = 30 N yatay kuvvet ve f{alt:s} = 10 N sürtünme kuvveti etki ederken cisim 5 m çekiliyor. Net iş kaç Joule'dür?",
+      "secenekler": [
+        "50",
+        "100",
+        "150",
+        "200"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki fiziksel iş kurallarına göre ifadelerin Doğru (D) veya Yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Sırtında çantayla yatay yolda sabit hızla yürüyen öğrencinin çantaya uyguladığı düşey kuvvet iş yapmaz.",
+          "dogru": true
+        },
+        {
+          "metin": "İş ve mekanik güç yönlü (vektörel) büyüklükler olup birimleri Newton'dur.",
+          "dogru": false
+        },
+        {
+          "metin": "Hareket yönüne zıt etki eden sürtünme kuvvetinin yaptığı iş negatiftir (-W{alt:s}) ve ısıya dönüşür.",
+          "dogru": true
+        },
+        {
+          "metin": "Sabit duvara 100 N kuvvet uygulayan sporcu duvarı hareket ettiremese de 100 J iş yapar.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki uygun fizik kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Kuvvet-yer değiştirme (F-x) grafiğinin yatay eksenle arasında kalan ___ yapılan işi verir.",
+          "cevap": "alan"
+        },
+        {
+          "metin": "Uluslararası Birim Sistemi'nde (SI) iş ve enerjinin birimi ___, gücün birimi ise Watt'tır.",
+          "cevap": "Joule"
+        },
+        {
+          "metin": "Bir cisim üzerine yapılan pozitif net iş cismin ___ enerjisini artırır.",
+          "cevap": "kinetik"
+        }
+      ],
+      "fazla": [
+        "ivme"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki Kuvvet-Yer Değiştirme (F-x) grafiğine göre 0 - 6 m aralığında kuvvetin yaptığı net iş kaç Joule'dür?",
+      "secenekler": [
+        "40",
+        "60",
+        "80",
+        "100"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "soru": "Tablodaki sistemler için yapılan işi (W) ve mekanik gücü (P) hesaplayarak tamamlayınız.",
+      "basliklar": [
+        "Uygulanan Kuvvet ve Yol",
+        "Geçen Süre (t)",
+        "Yapılan İş (W) ve Güç (P)"
+      ],
+      "satirlar": [
+        [
+          "F = 40 N, Δx = 10 m",
+          "t = 8 s",
+          {
+            "b": "W = 400 J, P = 50 W"
+          }
+        ],
+        [
+          "F = 120 N, Δx = 5 m",
+          "t = 12 s",
+          {
+            "b": "W = 600 J, P = 50 W"
+          }
+        ],
+        [
+          "F = 200 N, Δx = 15 m",
+          "t = 10 s",
+          {
+            "b": "W = 3000 J, P = 300 W"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "satir": 2,
+      "soru": "Görseldeki A ve B vinçleri aynı 2000 J'lük yükü farklı sürelerde (t{alt:A} = 4 s, t{alt:B} = 10 s) aynı yüksekliğe çıkarıyor. Yaptıkları işleri ve güçlerini karşılaştırınız.",
+      "cevap": "Yaptıkları işler eşittir (2000 J)."
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki F-x grafiğinden yararlanarak başlangıçta durgun olan bir cismin son kinetik enerjisini bulma adımlarını 1'den 4'e kadar sıralayınız.",
+      "ogeler": [
+        "Grafiğin konum ekseni üstünde kalan alanından pozitif işi (+W{alt:1}) hesaplama",
+        "Grafiğin konum ekseni altında kalan alanından negatif işi (-W{alt:2}) hesaplama",
+        "Cebirsel toplamla net işi (W{alt:net} = W{alt:1} - W{alt:2}) belirleme",
+        "İş-Enerji Teoremi (W{alt:net} = ΔE{alt:k}) ile cismin son kinetik enerjisini bulma"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki yatay düzlemde ilk kinetik enerjisi 30 J olan cisme 4 m boyunca net 25 N kuvvet hareket yönünde uygulanıyor. Cismin son kinetik enerjisi kaç J olur?",
+      "secenekler": [
+        "70",
+        "100",
+        "130",
+        "150"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "soru": "Gücü 1,5 kW (1500 Watt) olan bir elektrikli vinç 10 saniyede en fazla kaç kilojoule (kJ) mekanik iş yapabilir?",
+      "secenekler": [
+        "1,5 kJ",
+        "15 kJ",
+        "150 kJ",
+        "300 kJ"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarından yararlanarak kavramları yazınız ve anahtar harflerle şifreyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "İş ve enerjinin SI birim sistemindeki birimi",
+          "cevap": "JOULE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Hareketli cismin referans noktasına göre bulunduğu yer",
+          "cevap": "KONUM",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Cisme uygulanarak iş yapılmasını sağlayan etki",
+          "cevap": "KUVVET",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "F-x grafiğinin altında kalan ve işi veren geometrik büyüklük",
+          "cevap": "ALAN",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "İş yapabilme yeteneği",
+          "cevap": "ENERJİ",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "JOULE",
+      "sonuc": "JOULE"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "satir": 2,
+      "soru": "Görseldeki günlük hayat durumlarından hangilerinde fiziksel anlamda iş yapıldığını ve hangilerinde yapılmadığını gerekçesiyle açıklayınız.",
+      "cevap": "Market arabasını itmede F ve Δx paralel olduğundan iş yapılır."
+    }
+  ]
+}

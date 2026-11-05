@@ -1,0 +1,261 @@
+{
+  "sinif": 9,
+  "ders": "fizik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Vektörlerin Toplanması: Aynı Doğrultulu Vektörler, Uç Uca Ekleme, Paralelkenar ve Dik Bileşenlerine Ayırma Yöntemi",
+  "ciktilar": [
+    "Aynı doğrultulu vektörlerin bileşkesini yön ve büyüklüklerine göre hesaplar; iki vektörün bileşkesinin alabileceği maksimum ve minimum sınırları belirler.",
+    "Farklı doğrultudaki vektörlerin bileşkesini uç uca ekleme ve paralelkenar yöntemleriyle bulur; özel açılı (60°, 90°, 120°) eşit vektörlerin bileşkesini geneller.",
+    "Kartezyen koordinat sisteminde verilen vektörleri yatay ve düşey dik bileşenlerine (Fx = F·cos α, Fy = F·sin α) ayırarak bileşke vektörü hesaplar."
+  ],
+  "hatirla": [
+    "İki vektörün bileşkesi |F{alt:1}-F{alt:2}| <= R <= F{alt:1}+F{alt:2} aralığındadır; açı arttıkça R azalır.",
+    "Eşit büyüklükteki (F) iki vektörün bileşkesi: α=60° için F{kok:3}, α=90° için F{kok:2}, α=120° için F kadardır.",
+    "Dik bileşenler F{alt:x} = F·cos α ve F{alt:y} = F·sin α ile bulunur;Pisagor ile R hesaplanır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki özel açılı eşit büyüklükteki (F) iki vektörün durumlarını bileşke büyüklükleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Aynı yönlü iki eşit vektör (α = 0°)",
+          "R = 2F (Maksimum bileşke)"
+        ],
+        [
+          "Aralarında 60° açı bulunan iki eşit vektör",
+          "R = F{kok:3}"
+        ],
+        [
+          "Birbirine dik iki eşit vektör (α = 90°)",
+          "R = F{kok:2}"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-fizik-8 özel açılar\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">ÖZEL AÇILI EŞİT VEKTÖRLERİN (F1 = F2 = F) BİLEŞKESİ</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"77\" rx=\"5\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">α = 0° (Aynı Yön)</text><line x1=\"18\" y1=\"54\" x2=\"82\" y2=\"54\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">R_max = 2F</text><text x=\"50.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Doğrudan toplanır</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"77\" rx=\"5\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">α = 60° Özel Açısı</text><line x1=\"104\" y1=\"54\" x2=\"168\" y2=\"54\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">R = F·kok3</text><text x=\"136.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Açıortay üzerinde</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"77\" rx=\"5\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">α = 90° (Dik Açı)</text><line x1=\"190\" y1=\"54\" x2=\"254\" y2=\"54\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">R = F·kok2</text><text x=\"222.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Pisagor bağıntısı</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"77\" rx=\"5\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">α = 120° Özel Açısı</text><line x1=\"276\" y1=\"54\" x2=\"340\" y2=\"54\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">R = F</text><text x=\"308.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">α = 180° ise R_min = 0</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki gibi sürtünmesiz yatay düzlemde aynı doğrultulu F{alt:1}=12 N (+x), F{alt:2}=5 N (+x) ve F{alt:3}=7 N (-x) kuvvetlerinin bileşkesi nedir?",
+      "secenekler": [
+        "+x yönünde 10 N",
+        "-x yönünde 10 N",
+        "+x yönünde 24 N",
+        "+x yönünde 14 N"
+      ],
+      "dogru": 0,
+      "cozum": "Aynı yönlüler toplanır, zıt yönlü çıkarılır: R = (12 + 5) - 7 = +10 N (+x yönünde 10 N).",
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-fizik-8 aynı doğrultulu vektörler\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">AYNI DOĞRULTULU VEKTÖRLERİN BİLEŞKESİ (R)</text><rect x=\"14\" y=\"28\" width=\"332\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><line x1=\"30\" y1=\"54\" x2=\"170\" y2=\"54\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><polygon points=\"170,50 178,54 170,58\" fill=\"#2451d6\"/><text x=\"100.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">F1 = 12 N (+x)</text><line x1=\"185\" y1=\"54\" x2=\"255\" y2=\"54\" stroke=\"#12a150\" stroke-width=\"0.75\"/><polygon points=\"255,50 263,54 255,58\" fill=\"#12a150\"/><text x=\"222.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">F2 = 5 N (+x)</text><line x1=\"160\" y1=\"82\" x2=\"70\" y2=\"82\" stroke=\"#d63a3a\" stroke-width=\"0.75\"/><polygon points=\"70,78 62,82 70,86\" fill=\"#d63a3a\"/><text x=\"115.0\" y=\"75.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d63a3a\">F3 = 7 N (-x)</text><text x=\"265.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">R = (12 + 5) - 7 = +10 N (+x)</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görselde yatay +x ekseniyle 37° açı yapan 20 N büyüklüğündeki F kuvvetinin dik bileşenleri (F{alt:x}, F{alt:y}) kaç N'dir? (cos37°=0,8; sin37°=0,6)",
+      "secenekler": [
+        "F{alt:x} = 12 N, F{alt:y} = 16 N",
+        "F{alt:x} = 16 N, F{alt:y} = 12 N",
+        "F{alt:x} = 10 N, F{alt:y} = 10 N",
+        "F{alt:x} = 20 N, F{alt:y} = 15 N"
+      ],
+      "dogru": 1,
+      "cozum": "F{alt:x} = F·cos37° = 20·0,8 = 16 N ve F{alt:y} = F·sin37° = 20·0,6 = 12 N bulunur.",
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-fizik-8 dik bileşenler\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">VEKTÖRÜN DİK BİLEŞENLERİNE AYRILMASI (F = 20 N, α = 37°)</text><rect x=\"12\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"93.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Yatay Bileşen (Fx = F · cos α)</text><line x1=\"22\" y1=\"54\" x2=\"164\" y2=\"54\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"93.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">cos 37° = 0,8</text><text x=\"93.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Fx = 20 · 0,8 = 16 N (+x yönünde)</text><rect x=\"186\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Düşey Bileşen (Fy = F · sin α)</text><line x1=\"196\" y1=\"54\" x2=\"338\" y2=\"54\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"267.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">sin 37° = 0,6</text><text x=\"267.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Fy = 20 · 0,6 = 12 N (+y yönünde)</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Vektörlerin toplanmasıyla ilgili aşağıdaki ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Uç uca eklenen vektörler ilk vektörün başlangıç noktasına dönerse bileşke sıfırdır (R = 0).",
+          "dogru": true
+        },
+        {
+          "metin": "Başlangıç noktaları birleştirilen iki vektör arasındaki açı arttıkça bileşke büyür.",
+          "dogru": false
+        },
+        {
+          "metin": "Farklı büyüklükteki iki vektörün bileşkesi, büyük olan vektöre daha yakındır.",
+          "dogru": true
+        },
+        {
+          "metin": "Vektörlerin toplanmasında değişme özelliği vardır (A + B = B + A).",
+          "dogru": true
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-fizik-8 vektör kuralları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">UÇ UCA EKLEME VE PARALELKENAR KURALI ÖZELLİKLERİ</text><rect x=\"12\" y=\"28\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Uç Uca Ekleme</text><line x1=\"22\" y1=\"54\" x2=\"110\" y2=\"54\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"66.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">İlk başlangıçtan</text><text x=\"66.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Son bitiş ucuna R çizilir</text><rect x=\"126\" y=\"28\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Kapalı Çokgen</text><line x1=\"136\" y1=\"54\" x2=\"224\" y2=\"54\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"180.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Başlangıca dönerse</text><text x=\"180.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Bileşke R = 0 olur</text><rect x=\"240\" y=\"28\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Açı ve Büyüklük</text><line x1=\"250\" y1=\"54\" x2=\"338\" y2=\"54\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"294.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Açı büyüdükçe R küçülür</text><text x=\"294.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">R büyük vektöre yakındır</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "sutun": "sol",
+      "soru": "Verilen iki vektörün alabileceği minimum, maksimum ve dik (90°) durumdaki bileşke büyüklüklerini tabloda tamamlayınız.",
+      "basliklar": [
+        "Vektör Büyüklükleri",
+        "R{alt:min} ve R{alt:max} Aralığı",
+        "Dik İken (α = 90°) Bileşke (R)"
+      ],
+      "satirlar": [
+        [
+          "F{alt:1} = 3 N ve F{alt:2} = 4 N",
+          "1 N <= R <= 7 N",
+          {
+            "b": "5 N ({kok:9 + 16})"
+          }
+        ],
+        [
+          "F{alt:1} = 6 N ve F{alt:2} = 8 N",
+          "2 N <= R <= 14 N",
+          {
+            "b": "10 N ({kok:36 + 64})"
+          }
+        ],
+        [
+          "F{alt:1} = 5 N ve F{alt:2} = 12 N",
+          "7 N <= R <= 17 N",
+          {
+            "b": "13 N ({kok:25 + 144})"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "kavrama",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Dik bileşenlerine ayırma yöntemiyle birden fazla vektörün bileşkesini bulma adımlarını 1'den 4'e doğru sıralayınız.",
+      "ogeler": [
+        "Her bir vektörü F{alt:x} = F·cos α ve F{alt:y} = F·sin α bağıntılarıyla yatay ve düşey bileşenlerine ayırma",
+        "Yatay eksendeki bileşenleri yön işaretlerine dikkat ederek toplama (R{alt:x} = ΣF{alt:x})",
+        "Düşey eksendeki bileşenleri yön işaretlerine dikkat ederek toplama (R{alt:y} = ΣF{alt:y})",
+        "Pisagor bağıntısı R = {kok:{us:R{alt:x}|2} + {us:R{alt:y}|2}} ile net bileşke vektörün büyüklüğünü hesaplama"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-fizik-8 bileşen adımları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e0f4f8\" stroke=\"#0e8fa8\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">DİK BİLEŞENLERLE BİLEŞKE HESAPLAMA ADIMLARI</text><rect x=\"8\" y=\"28\" width=\"79\" height=\"77\" rx=\"5\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"47.5\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. Bileşene Ayır</text><text x=\"47.5\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Fx = F·cos α</text><text x=\"47.5\" y=\"89.0\" text-anchor=\"middle\" font-size=\"7.1\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Fy = F·sin α</text><polygon points=\"88.5,62 93.5,66.5 88.5,71\" fill=\"#0e8fa8\"/><rect x=\"95\" y=\"28\" width=\"79\" height=\"77\" rx=\"5\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"134.5\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">2. Yatay Toplam</text><text x=\"134.5\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Rx = ΣFx</text><text x=\"134.5\" y=\"89.0\" text-anchor=\"middle\" font-size=\"7.1\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">(+x ve -x toplamı)</text><polygon points=\"175.5,62 180.5,66.5 175.5,71\" fill=\"#0e8fa8\"/><rect x=\"182\" y=\"28\" width=\"79\" height=\"77\" rx=\"5\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"221.5\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">3. Düşey Toplam</text><text x=\"221.5\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Ry = ΣFy</text><text x=\"221.5\" y=\"89.0\" text-anchor=\"middle\" font-size=\"7.1\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">(+y ve -y toplamı)</text><polygon points=\"262.5,62 267.5,66.5 262.5,71\" fill=\"#0e8fa8\"/><rect x=\"269\" y=\"28\" width=\"79\" height=\"77\" rx=\"5\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.5\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">4. Pisagor (R)</text><text x=\"308.5\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">R^2 = Rx^2 + Ry^2</text><text x=\"308.5\" y=\"89.0\" text-anchor=\"middle\" font-size=\"7.1\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Net bileşke boyu</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Başlangıç noktaları aynı noktada olan 10 N büyüklüğündeki iki kuvvet arasındaki açı 120° ise bileşke kaç N olur?",
+      "secenekler": [
+        "20 N",
+        "10{kok:3} N",
+        "10{kok:2} N",
+        "10 N"
+      ],
+      "dogru": 3,
+      "cozum": "Eşit büyüklükteki (F = 10 N) iki vektör arasındaki açı 120° olduğunda bileşke R = F = 10 N olur.",
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-fizik-8 120 derece\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">PARALELKENAR YÖNTEMİNDE α = 120° ÖZEL DURUMU</text><rect x=\"12\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"93.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Verilen Vektörler</text><line x1=\"22\" y1=\"54\" x2=\"164\" y2=\"54\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"93.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">F1 = 10 N ve F2 = 10 N (Eşit)</text><text x=\"93.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Başlangıç noktaları ortak, α = 120°</text><rect x=\"186\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Bileşke Vektör (R)</text><line x1=\"196\" y1=\"54\" x2=\"338\" y2=\"54\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"267.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">R = F = 10 N büyüklüğündedir</text><text x=\"267.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Tam açıortay (60° - 60°) üzerindedir</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Büyüklükleri 7 N ve 9 N olan iki vektörün bileşkesinin büyüklüğü (R) aşağıdakilerden hangisi olamaz?",
+      "secenekler": [
+        "1 N",
+        "2 N",
+        "11 N",
+        "16 N"
+      ],
+      "dogru": 0,
+      "cozum": "R{alt:min} = |9 - 7| = 2 N ve R{alt:max} = 9 + 7 = 16 N olduğundan bileşke 2 N <= R <= 16 N aralığındadır; 1 N olamaz.",
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-fizik-8 bileşke sınırları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#0e8fa8\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">İKİ VEKTÖRÜN BİLEŞKE SINIRLARI (7 N ve 9 N)</text><rect x=\"12\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#e0f4f8\" stroke=\"#0e8fa8\" stroke-width=\"0.75\"/><text x=\"93.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Minimum Bileşke (α = 180°, Zıt Yön)</text><line x1=\"22\" y1=\"54\" x2=\"164\" y2=\"54\" stroke=\"#0e8fa8\" stroke-width=\"0.6\"/><text x=\"93.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">R_min = |F1 - F2| = |9 - 7| = 2 N</text><text x=\"93.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Bileşke 2 N’den küçük OLAMAZ!</text><rect x=\"186\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Maksimum Bileşke (α = 0°, Aynı Yön)</text><line x1=\"196\" y1=\"54\" x2=\"338\" y2=\"54\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"267.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">R_max = F1 + F2 = 9 + 7 = 16 N</text><text x=\"267.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Değer aralığı: 2 N &lt;= R &lt;= 16 N</text></svg>"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki uygun fizik kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "İki veya daha fazla vektörün yaptığı etkiyi tek başına yapan vektöre ___ vektör (R) denir.",
+          "cevap": "bileşke"
+        },
+        {
+          "metin": "Vektörlerin başlangıç noktalarını birleştirip köşegeni çizme yöntemine ___ yöntemi denir.",
+          "cevap": "paralelkenar"
+        },
+        {
+          "metin": "Eşit büyüklükteki iki vektörün bileşkesi her zaman iki vektörün tam ortasındaki ___ üzerindedir.",
+          "cevap": "açıortay"
+        }
+      ],
+      "fazla": [
+        "skaler"
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak yönlü doğru parçasını belirten şifreyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Büyüklüğü ve yönü olan niceliklerin genel adı (8 harf)",
+          "cevap": "VEKTÖREL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yatay x ve düşey y doğrularının her biri (5 harf)",
+          "cevap": "EKSEN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Paralelkenarda başlangıç noktasından karşı köşeye çizilen doğru (7 harf)",
+          "cevap": "KÖŞEGEN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Vektörlerin uç uca eklenmesiyle yapılan işlem (7 harf)",
+          "cevap": "TOPLAMA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yönü olmayan, yalnız sayı ve birimle belirtilen nicelik, yönsüz/.... (6 harf)",
+          "cevap": "YÖNSÜZ",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Koordinat eksenlerinin kesiştiği (0,0) başlangıç noktası (6 harf)",
+          "cevap": "ORİJİN",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "VEKTÖR"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavrama",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Uç uca ekleme yönteminde bileşke vektörün başlangıç ve bitiş noktası nasıl belirlenir?",
+      "cevap": "İlk vektörün başlangıç noktasından son eklenen vektörün bitiş ucuna (ok ucuna) doğru çizilerek.",
+      "satir": 3,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"9-fizik-8 iki yöntem\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">UÇ UCA EKLEME İLE PARALELKENAR YÖNTEMİ FARKI</text><rect x=\"12\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"93.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Uç Uca Ekleme Yöntemi</text><line x1=\"22\" y1=\"54\" x2=\"164\" y2=\"54\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"93.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">2. vektörün başlangıcı 1.’nin ucuna gelir</text><text x=\"93.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">İlk başlangıçtan son uca R çizilir</text><rect x=\"186\" y=\"28\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Paralelkenar Yöntemi</text><line x1=\"196\" y1=\"54\" x2=\"338\" y2=\"54\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"267.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">İki vektörün başlangıç noktası birleştirilir</text><text x=\"267.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Ortak başlangıçtan köşegen R çizilir</text></svg>"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "soru": "Aynı noktaya etki eden F{alt:1}=8 N (+x), F{alt:2}=2 N (-x) ve F{alt:3}=8 N (+y) kuvvetlerinin bileşkesini nasıl bulursunuz?",
+      "cevap": "Önce R{alt:x} = 8 - 2 = 6 N (+x) ve R{alt:y} = 8 N (+y) bulunur; dik olduklarından R = {kok:36 + 64} = 10 N elde edilir.",
+      "satir": 3
+    }
+  ]
+}

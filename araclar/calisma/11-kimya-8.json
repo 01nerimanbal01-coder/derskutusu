@@ -1,0 +1,253 @@
+{
+  "sinif": 11,
+  "ders": "kimya",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Kimyasal Tepkimelerde Hız: Tepken ve Ürün Derişimleriyle Ortalama Tepkime Hızı ve Hızın Zamanla Değişimi",
+  "ciktilar": [
+    "Kimyasal tepkimelerin ortalama hızını birim zamanda harcanan tepken veya oluşan ürün miktarındaki değişim üzerinden matematiksel olarak ifade eder.",
+    "Tepkime denkleminin stokiyometrik katsayılarını kullanarak farklı maddelerin harcanma ve oluşma hızları arasındaki orantıyı kurar.",
+    "Tepken ve ürün derişimlerinin zamanla değişim grafiklerini yorumlayarak tepkime hızının zamanla neden azaldığını tanecik boyutuyla açıklar."
+  ],
+  "hatirla": [
+    "Ortalama tepkime hızı birim zamanda harcanan tepken (-Δ[R]/Δt) veya oluşan ürün (+Δ[P]/Δt) derişim değişimidir.",
+    "Harcanma ve oluşma hızları stokiyometrik katsayılarla doğru orantılıdır: r = -Δ[A]/(a·Δt) = +Δ[C]/(c·Δt).",
+    "Zamanla tepken derişimi ve etkin çarpışma sayısı azaldığı için tepkime hızı zamanla azalır (eğri eğimi küçülür)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Kimyasal tepkimelerde hız kavramlarını matematiksel ve fiziksel karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "r = -Δ[R] / Δt",
+          "Tepken derişimi zamanla azaldığı için hızı pozitif yapan ortalama hız bağıntısı"
+        ],
+        [
+          "mol / (L · s) veya M/s",
+          "Uluslararası birim sisteminde (SI) ortalama tepkime hızının standart birimi"
+        ],
+        [
+          "Kesen Doğrunun Eğimi",
+          "Derişim-zaman grafiğinde iki zaman noktası ({alt:t|1}-{alt:t|2}) arasındaki ortalama hız"
+        ]
+      ],
+      "sutun": "sol"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki {alt:N|2}(g) + 3{alt:H|2}(g) -> 2{alt:NH|3}(g) tepkimesinde {alt:H|2} gazının harcanma hızı 0,6 M/s ise {alt:NH|3}'ün oluşma hızı kaç M/s'dir?",
+      "secenekler": [
+        "0,4 M/s",
+        "0,2 M/s",
+        "0,6 M/s",
+        "1,2 M/s"
+      ],
+      "dogru": 0,
+      "cozum": "Hızlar katsayılarla orantılıdır: r({alt:H|2})/3 = r({alt:NH|3})/2 -> 0,6 / 3 = r({alt:NH|3}) / 2 -> r({alt:NH|3}) = 0,4 M/s bulunur.",
+      "sutun": "sol"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Tepkime hızı ve derişim-zaman grafikleriyle ilgili ifadelere D veya Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Tepkenlerin derişim değişimi Δ[R] negatif olduğu için hız bağıntısının önüne (-) işareti konulur.",
+          "dogru": true
+        },
+        {
+          "metin": "Sabit sıcaklıkta gerçekleşen bir tepkimenin hızı başlangıçtan bitişe kadar sabit kalır.",
+          "dogru": false
+        },
+        {
+          "metin": "Denkleştirilmiş tepkimede maddelerin hızları stokiyometrik katsayılarıyla doğru orantılıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Zamanla tepken derişimi azaldığından birim zamandaki etkin çarpışma sayısı ve tepkime hızı azalır.",
+          "dogru": true
+        }
+      ],
+      "sutun": "sol"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Birim zamanda harcanan tepken veya oluşan ürün miktarındaki değişime ___ tepkime hızı denir.",
+          "cevap": "ortalama"
+        },
+        {
+          "metin": "Maddelerin harcanma ve oluşma hızları arasındaki oranı tepkime denklemindeki ___ katsayılar belirler.",
+          "cevap": "stokiyometrik"
+        },
+        {
+          "metin": "Derişim-zaman grafiğinde eğriye bir t anında çizilen teğetin eğimi ___ hızı verir.",
+          "cevap": "anlık"
+        }
+      ],
+      "fazla": [
+        "entalpi",
+        "katalizör"
+      ],
+      "sutun": "sol"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": false,
+      "soru": "2 L'lik sabit hacimli bir kapta X gazının mol sayısı 10 saniyede 1,2 molden 0,4 mole düşmektedir. X'in ortalama harcanma hızı kaç mol/(L·s)'dir?",
+      "secenekler": [
+        "0,04 mol/(L·s)",
+        "0,08 mol/(L·s)",
+        "0,12 mol/(L·s)",
+        "0,40 mol/(L·s)"
+      ],
+      "dogru": 0,
+      "cozum": "Başlangıç derişimi 1,2/2 = 0,6 M; son derişim 0,4/2 = 0,2 M. r = -Δ[X]/Δt = (0,6 - 0,2) / 10 = 0,04 mol/(L·s) olur.",
+      "sutun": "sol"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "gorsel_var": false,
+      "soru": "{alt:C|3}{alt:H|8}(g) + 5{alt:O|2}(g) -> 3{alt:CO|2}(g) + 4{alt:H|2}O(g) tepkimesinde {alt:C|3}{alt:H|8} hızı 0,1 M/s iken diğer maddelerin hızlarını tamamlayınız.",
+      "basliklar": [
+        "Madde Türü",
+        "Denklem Katsayısı",
+        "Harcanma / Oluşma Hızı (M/s)"
+      ],
+      "satirlar": [
+        [
+          "{alt:O|2} (Tepken)",
+          "5",
+          {
+            "b": "5 · 0,1 = 0,5 M/s (Harcanma hızı)"
+          }
+        ],
+        [
+          "{alt:CO|2} (Ürün)",
+          "3",
+          {
+            "b": "3 · 0,1 = 0,3 M/s (Oluşma hızı)"
+          }
+        ],
+        [
+          "{alt:H|2}O (Ürün)",
+          "4",
+          {
+            "b": "4 · 0,1 = 0,4 M/s (Oluşma hızı)"
+          }
+        ]
+      ],
+      "sutun": "sol"
+    },
+    {
+      "tur": "siralama",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Bir kimyasal tepkimede tepkime hızının zamanla azalmasının tanecik boyutuyla neden-sonuç zincirini sıralayınız.",
+      "ogeler": [
+        "Tepkime başladığında tepken derişiminin ve tepkime hızının en yüksek değerde olması",
+        "Zaman ilerledikçe tepken taneciklerinin ürüne dönüşerek birim hacimdeki sayısının azalması",
+        "Tanecikler arası birim zamanda gerçekleşen etkin çarpışma sayısının düşmesi",
+        "Tepkime hızının zamanla azalarak tepkenlerden biri bittiğinde sıfıra ulaşması"
+      ],
+      "sutun": "sag"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "2A(g) + B(g) -> 3C(g) tepkimesi için genel tepkime hızı ve madde hızları arasındaki bağıntı aşağıdakilerden hangisinde doğru verilmiştir?",
+      "secenekler": [
+        "r = -{kesir:Δ[A]|2·Δt} = -{kesir:Δ[B]|Δt} = +{kesir:Δ[C]|3·Δt}",
+        "r = -2·{kesir:Δ[A]|Δt} = -{kesir:Δ[B]|Δt} = +3·{kesir:Δ[C]|Δt}",
+        "r = +{kesir:Δ[A]|2·Δt} = +{kesir:Δ[B]|Δt} = -{kesir:Δ[C]|3·Δt}",
+        "r = -{kesir:Δ[A]|3·Δt} = -{kesir:Δ[B]|2·Δt} = +{kesir:Δ[C]|Δt}"
+      ],
+      "dogru": 0,
+      "cozum": "Genel tepkime hızında tepkenlerin önüne (-), ürünlerin önüne (+) konur ve her maddenin hızı kendi katsayısına bölünür.",
+      "sutun": "sag"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Sabit sıcaklıkta gerçekleşen bir tepkimede derişim-zaman grafiğinin doğrusal olmayıp eğrisel olmasının nedenini açıklayınız.",
+      "cevap": "Zamanla tepken derişimi azaldığından etkin çarpışma sayısı ve tepkime hızı sürekli düşer.",
+      "satir": 2,
+      "sutun": "sag"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Belirli bir sıcaklıkta gerçekleşen tepkimede bir tepkenin derişimi 0-10 s aralığında 1,0 M'dan 0,4 M'a, 10-20 s aralığında ise 0,4 M'dan 0,1 M'a düşüyor. Bu iki aralıktaki ortalama hızlar ({alt:r|1} ve {alt:r|2}) kaç M/s'dir?",
+      "secenekler": [
+        "{alt:r|1} = 0,06 M/s ve {alt:r|2} = 0,03 M/s",
+        "{alt:r|1} = 0,04 M/s ve {alt:r|2} = 0,01 M/s",
+        "{alt:r|1} = 0,60 M/s ve {alt:r|2} = 0,30 M/s",
+        "{alt:r|1} = 0,03 M/s ve {alt:r|2} = 0,06 M/s"
+      ],
+      "dogru": 0,
+      "cozum": "İlk 10 saniyede {alt:r|1} = (1,0 - 0,4)/10 = 0,06 M/s; ikinci 10 saniyede {alt:r|2} = (0,4 - 0,1)/10 = 0,03 M/s olup hız zamanla azalmıştır.",
+      "sutun": "sag"
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": false,
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Birim hacimdeki (1 L) çözeltide çözünen mol sayısı (8 harf)",
+          "cevap": "MOLARİTE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Belirli bir zaman aralığı için hesaplanan hız türü (8 harf)",
+          "cevap": "ORTALAMA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Belirli bir t anında teğetin eğimiyle bulunan hız (5 harf)",
+          "cevap": "ANLIK",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Taneciklerin ürüne dönüşmesini sağlayan etkin temas (8 harf)",
+          "cevap": "ÇARPIŞMA",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Kimyasal tepkime sonucunda oluşan maddelerin adı (4 harf)",
+          "cevap": "ÜRÜN",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "MOLAR",
+      "sutun": "sag"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": false,
+      "soru": "Tepkenlerin ortalama hız bağıntısında neden eksi (-) işareti kullanılırken ürünlerde artı (+) işareti kullanıldığını açıklayınız.",
+      "cevap": "Tepken derişimi zamanla azaldığından Δ[R] negatif çıkar.",
+      "satir": 2,
+      "sutun": "sag"
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "sinif": 12,
+  "ders": "fizik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Gök Cisimleri Üzerine Çalışmalar ve Kepler Kanunları (Yörüngeler, Alanlar ve Periyotlar Kanunu)",
+  "ciktilar": [
+    "Tarihsel süreçte gök cisimlerinin hareketini açıklamak için geliştirilen modelleri ve Türk-İslam bilginlerinin katkılarını açıklar.",
+    "Kepler'in Yörüngeler ve Alanlar kanunlarını gezegenlerin hız, enerji ve açısal momentum değişimleriyle ilişkilendirir.",
+    "Kepler'in Periyotlar Kanunu'nu kullanarak gezegenlerin ortalama yörünge yarıçapları ile dolanım periyotları arasındaki matematiksel bağıntıyı uygular."
+  ],
+  "hatirla": [
+    "Kepler'in 1. Kanunu'na (Yörüngeler Kanunu) göre her gezegen, odaklarından birinde Güneş bulunan elips biçiminde bir yörüngede dolanır.",
+    "Kepler'in 2. Kanunu'na (Alanlar Kanunu) göre yarıçap vektörü eşit sürede eşit alanlar tarar; gezegen Güneş'e yaklaşırken hızı artar, açısal momentumu korunur.",
+    "Kepler'in 3. Kanunu'na (Periyotlar Kanunu) göre aynı yıldız etrafında dolanan gezegenler için {kesir:{us:R|3}|{us:T|2}} oranı sabittir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Gök bilimi tarihindeki çalışmaları ve Kepler kanunlarını açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Yörüngeler Kanunu",
+          "Her gezegenin odaklarından birinde Güneş bulunan elips yörüngede dolanması"
+        ],
+        [
+          "Alanlar Kanunu",
+          "Güneş'i gezegene birleştiren yarıçap vektörünün eşit sürede eşit alan taraması"
+        ],
+        [
+          "Periyotlar Kanunu",
+          "Ortalama yörünge yarıçapının küpünün periyodun karesine oranının sabit olması"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki gibi aynı yıldız etrafında dolanan K ve L gezegenlerinin ortalama yarıçapları oranı {kesir:R{alt:K}|R{alt:L}} = {kesir:1|4} ise periyotları oranı {kesir:T{alt:K}|T{alt:L}} kaçtır?",
+      "secenekler": [
+        "{kesir:1|8}",
+        "{kesir:1|4}",
+        "{kesir:1|16}",
+        "{kesir:1|2}"
+      ],
+      "dogru": 0,
+      "cozum": "Kepler'in Periyotlar Kanunu'na göre {kesir:{us:T{alt:K}|2}|{us:T{alt:L}|2}} = {kesir:{us:R{alt:K}|3}|{us:R{alt:L}|3}} = {kesir:{us:1|3}|{us:4|3}} = {kesir:1|64} olur. Her iki tarafın karekökü alındığında {kesir:T{alt:K}|T{alt:L}} = {kesir:1|8} bulunur."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Eliptik yörüngede dolanan bir gezegen Güneş'e yaklaşırken çizgisel hızı arttığı hâlde açısal momentumunun değişmemesinin (korunmasının) nedeni nedir?",
+      "cevap": "Gezegene etki eden kütle çekim kuvvetinin doğrultusu dönme merkezi olan Güneş'ten geçtiği için net.",
+      "satir": 3
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Gezegen hareketleri ve Kepler kanunlarıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Batlamyus, Almagest adlı eserinde Dünya merkezli (jeosentrik) evren modelini savunmuştur.",
+          "dogru": true
+        },
+        {
+          "metin": "Gezegen eliptik yörüngede Güneş'ten uzaklaşırken eylemsizlik momenti (I = m·{us:r|2}) artar.",
+          "dogru": true
+        },
+        {
+          "metin": "Güneş'e olan ortalama uzaklığı artan gezegenlerin Güneş etrafındaki dolanım periyodu azalır.",
+          "dogru": false
+        },
+        {
+          "metin": "Gezegen Güneş'e en yakın konumdan (günberi) geçerken kütle çekim potansiyel enerjisi en büyüktür.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Eliptik yörüngede dolanan bir gezegenin Güneş'e yaklaşırken (günberiye giderken) fiziksel niceliklerindeki değişimi tabloda tamamlayınız.",
+      "basliklar": [
+        "Fiziksel Nicelik",
+        "Güneş'e Yaklaşırken Değişimi",
+        "Fiziksel Nedeni / Bağıntısı"
+      ],
+      "satirlar": [
+        [
+          "Çizgisel Hız (v) ve Kinetik Enerji",
+          "Artar",
+          {
+            "b": "Yarıçap (r) azalırken eşit sürede eşit alan tarama zorunluluğu"
+          }
+        ],
+        [
+          "Kütle Çekim Potansiyel Enerjisi",
+          "Azalır",
+          {
+            "b": "Toplam mekanik enerji korunurken kinetik enerjinin artması"
+          }
+        ],
+        [
+          "Açısal Momentum (L) ve Mekanik Enerji",
+          "Değişmez (Korunur)",
+          {
+            "b": "Kütle çekim kuvvetinin Güneş'e göre torkunun sıfır olması"
+          }
+        ],
+        [
+          "Eylemsizlik Momenti (I)",
+          "Azalır",
+          {
+            "b": "I = m·{us:r|2} bağıntısında yörünge yarıçapının (r) küçülmesi"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki gök bilimi kuramlarını tarihsel gelişim sırasına göre eskiden yeniye doğru sıralayınız.",
+      "ogeler": [
+        "Batlamyus'un Dünya merkezli (jeosentrik) evren modelini ortaya koyması",
+        "Uluğ Bey ve Ali Kuşçu'nun Semerkant Rasathanesi'nde Zîc-i Uluğ Bey'i hazırlaması",
+        "Kopernik'in gezegenlerin Güneş etrafında dolandığı Güneş merkezli modeli savunması",
+        "Kepler'in Tycho Brahe'nin verileriyle elips yörünge kanunlarını kanıtlaması"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki elips yörüngede periyodu 12 ay olan gezegenin tüm yörünge alanı 6S'dir. Yarıçap vektörü 2S'lik alanı kaç ayda tarar?",
+      "secenekler": [
+        "4 ay",
+        "2 ay",
+        "3 ay",
+        "6 ay"
+      ],
+      "dogru": 0,
+      "cozum": "Kepler'in Alanlar Kanunu'na göre taranan alan geçen süreyle doğru orantılıdır. 6S'lik tüm alan 12 ayda taranıyorsa, 2S'lik alan {kesir:2S|6S} · 12 = 4 ayda taranır."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Gezegenlerin merkezdeki Güneş etrafında dolandığını savunan modeli 16. yüzyılda ___ ortaya koymuştur.",
+          "cevap": "Kopernik"
+        },
+        {
+          "metin": "Bir gezegen eliptik yörüngede Güneş'e yaklaşırken çizgisel hızı ve ___ enerjisi artar.",
+          "cevap": "kinetik"
+        },
+        {
+          "metin": "Kepler, gezegen kanunlarını hocası ___ tarafından kaydedilen gözlem verilerini inceleyerek bulmuştur.",
+          "cevap": "Tycho Brahe"
+        }
+      ],
+      "fazla": [
+        "potansiyel"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Gezegen yörüngelerine ait matematiksel ifadeleri karşılık gelen niceliklerle eşleştiriniz.",
+      "ciftler": [
+        [
+          "R = {kesir:r{alt:min} + r{alt:max}|2}",
+          "Elips yörüngede dolanan gezegenin ortalama yörünge yarıçapı"
+        ],
+        [
+          "{kesir:{us:R1|3}|{us:T1|2}} = {kesir:{us:R2|3}|{us:T2|2}}",
+          "Kepler'in 3. Kanunu (Periyotlar Kanunu) matematiksel bağıntısı"
+        ],
+        [
+          "{kesir:A1|A2} = {kesir:t1|t2}",
+          "Alanlar Kanunu'nda taranan alanların geçen sürelerle doğru orantısı"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Yörünge hareketiyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Elips yörüngede Güneş elipsin tam merkezinde değil, iki odak noktasından birinde bulunur.",
+          "dogru": true
+        },
+        {
+          "metin": "Galileo Galilei, geliştirdiği teleskopla Jüpiter'in uydularını gözlemleyerek Güneş merkezli modeli desteklemiştir.",
+          "dogru": true
+        },
+        {
+          "metin": "Aynı gezegen etrafında dolanan iki uydudan yörünge yarıçapı büyük olanın çizgisel sürati de büyüktür.",
+          "dogru": false
+        },
+        {
+          "metin": "Gezegenin Güneş'e en yakın olduğu noktaya günberi, en uzak olduğu noktaya günöte denir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Gezegenlerin hareketini üç temel kanunla açıklayan Alman gök bilimci (6 harf)",
+          "cevap": "KEPLER",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Gezegenlerin Güneş etrafındaki yörüngesinin geometrik şekli (5 harf)",
+          "cevap": "ELİPS",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Gezegenin yörüngesinde bir tam dolanımı için geçen süre (7 harf)",
+          "cevap": "PERİYOT",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "KİP"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Dünya'nın Güneş'e ortalama uzaklığı 1 AU ve periyodu 1 yıldır. Güneş'e en yakın 2 AU, en uzak 6 AU mesafede dolanan asteroidin periyodu kaç yıldır?",
+      "cevap": "Ortalama yarıçap R = {kesir:2+6|2} = 4 AU olur. {kesir:{us:4|3}|{us:T|2}} = 1 bağıntısından {us:T|2} = 64 ve T = 8 yıl bulunur.",
+      "satir": 3
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "sinif": 12,
+  "ders": "biyoloji",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Genetik Şifre ve Protein Sentezinin Mekanizması (Transkripsiyon, Translasyon, Santral Dogma ve Polizom)",
+  "ciktilar": [
+    "Genetik şifre kavramını, üçlü nükleotit kombinasyonlarını, başlangıç ve durdurucu kodonların işlevlerini açıklar.",
+    "Protein sentezinde gerçekleşen transkripsiyon ve translasyon basamaklarını moleküler düzeyde analiz eder.",
+    "Santral dogma sürecindeki tek yönlü bilgi akışını ve polizom (poliribozom) yapısının hücreye sağladığı avantajı değerlendirir."
+  ],
+  "hatirla": [
+    "Dört çeşit nükleotit üçlü diziler ({us:4|3}=64) hâlinde okunur; 64 kodondan 61'i anlamlı kodon, 3'ü (UAA, UAG, UGA) durdurucu kodondur.",
+    "Transkripsiyonda DNA'nın kalıp ipliğinden RNA polimerazla mRNA sentezlenir; translasyonda mRNA şifresi ribozomda polipeptide çevrilir.",
+    "Santral dogmada bilgi akışı DNA -> mRNA -> Protein yönündedir; polizom yapısı aynı proteinden kısa sürede çok sayıda üretilmesini sağlar."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Protein sentezi ve genetik şifreyle ilgili kavramları açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "AUG",
+          "Protein sentezini başlatan ve Metiyonin amino asidini şifreleyen kodon"
+        ],
+        [
+          "UAA, UAG, UGA",
+          "Karşılığında tRNA bulunmayan ve sentezi sonlandıran durdurucu kodonlar"
+        ],
+        [
+          "Transkripsiyon",
+          "DNA'nın kalıp zincirinden RNA polimeraz enzimiyle mRNA sentezlenmesi"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki 90 amino asitlik bir polipeptit sentezinde görev yapan mRNA kodon sayısı (X), tRNA sayısı (Y) ve peptit bağı sayısı (Z) kaçtır?",
+      "secenekler": [
+        "X = 91, Y = 90, Z = 89",
+        "X = 90, Y = 90, Z = 90",
+        "X = 90, Y = 89, Z = 89",
+        "X = 91, Y = 91, Z = 89"
+      ],
+      "dogru": 0,
+      "cozum": "90 amino asit için 90 anlamlı kodon + 1 durdurucu kodon = 91 kodon (X=91) görev yapar. Durdurucu kodonun tRNA karşılığı olmadığından 90 tRNA (Y=90) kullanılır ve 90 - 1 = 89 peptit bağı (Z=89) kurulur."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "DNA üzerinde bir nokta mutasyonuyla kodonun üçüncü nükleotidi değiştiği hâlde sentezlenen proteinin yapısının bozulmamasının nedeni nedir?",
+      "cevap": "20 çeşit amino asidi 61 anlamlı kodon şifrelediği için bir amino asit birden fazla kodonla.",
+      "satir": 3
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Genetik şifre ve santral dogma olaylarıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Bir mRNA molekülünde amino asit şifreleyen anlamlı kodon çeşidi sayısı en fazla 61'dir.",
+          "dogru": true
+        },
+        {
+          "metin": "Durdurucu kodonların (UAA, UAG, UGA) karşılığında özel tRNA antikodonları bulunur.",
+          "dogru": false
+        },
+        {
+          "metin": "Transkripsiyon sırasında DNA'nın ilgili gen bölgesini açıp mRNA sentezleyen enzim RNA polimerazdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Hücredeki her protein sentezinden hemen önce DNA'nın kendini eşlemesi (replikasyon) zorunludur.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Santral dogma basamaklarını gerçekleşme zamanı ve harcanan temel yapı taşları açısından karşılaştırma tablosunda tamamlayınız.",
+      "basliklar": [
+        "Santral Dogma Olayı",
+        "Gerçekleşme Zamanı",
+        "Harcanan Temel Yapı Taşları"
+      ],
+      "satirlar": [
+        [
+          "Replikasyon (DNA -> DNA)",
+          "Yalnız hücre bölünmesi öncesinde",
+          {
+            "b": "Deoksiribonükleotitler (A, T, G, S), deoksiriboz"
+          }
+        ],
+        [
+          "Transkripsiyon (DNA -> mRNA)",
+          "Hücre yaşamı boyunca (protein ihtiyacı oldukça)",
+          {
+            "b": "Ribonükleotitler (A, U, G, S), riboz şekeri"
+          }
+        ],
+        [
+          "Translasyon (mRNA -> Protein)",
+          "Hücre yaşamı boyunca (protein ihtiyacı oldukça)",
+          {
+            "b": "Serbest amino asitler (peptit bağı kurulur)"
+          }
+        ],
+        [
+          "Polizomda Çoklu Okuma",
+          "Aynı proteinden çok miktarda gerektiğinde",
+          {
+            "b": "Tek mRNA üzerinde çok sayıda ribozom ve amino asit"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki ökaryot bir hücrede protein sentezi basamaklarını gerçekleşme sırasına göre baştan sona sıralayınız.",
+      "ogeler": [
+        "Çekirdekte DNA'nın kalıp ipliğinden RNA polimeraz ile mRNA sentezlenmesi",
+        "mRNA'nın çekirdek porlarından sitoplazmaya geçip ribozomun küçük alt birimine bağlanması",
+        "AUG kodonuna uygun tRNA'nın Metiyonin getirmesi ve büyük alt birimin katılması",
+        "Amino asitler arasında peptit bağlarının kurulması ve durdurucu kodonda sentezin bitmesi"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki gibi aynı mRNA üzerinde sıralanan üç ribozomdan oluşan bir polizomda üretilen üç polipeptit için hangisi farklıdır?",
+      "secenekler": [
+        "Ribozomlarda sentezin tamamlanma zamanı",
+        "Polipeptitlerdeki toplam amino asit sayısı",
+        "Polipeptitlerdeki amino asitlerin dizilimi",
+        "Kurulan toplam peptit bağı sayısı"
+      ],
+      "dogru": 0,
+      "cozum": "Ribozomlar mRNA'ya sırayla tutunduğu için sentezin tamamlanma zamanları farklıdır; ancak aynı mRNA okunduğundan üretilen polipeptitlerin amino asit sayısı, çeşidi ve dizilişi özdeştir."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "mRNA üzerindeki üçlü dizilere kodon, tRNA üzerindeki karşılıklarına ise ___ denir.",
+          "cevap": "antikodon"
+        },
+        {
+          "metin": "Translasyon başlangıcında mRNA ilk olarak ribozomun ___ alt birimine tutunur.",
+          "cevap": "küçük"
+        },
+        {
+          "metin": "DNA'daki genetik bilginin mRNA aracılığıyla proteine tek yönlü aktarılmasına ___ denir.",
+          "cevap": "santral dogma"
+        }
+      ],
+      "fazla": [
+        "büyük"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Kalıp DNA zincirindeki üçlü baz dizilerini, sentezlenecek mRNA kodonlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "3'- T A S -5' (Kalıp DNA)",
+          "5'- A U G -3' (Başlangıç kodonu - Metiyonin)"
+        ],
+        [
+          "3'- A S S -5' (Kalıp DNA)",
+          "5'- U G G -3' (Triptofan amino asidi kodonu)"
+        ],
+        [
+          "3'- A T T -5' (Kalıp DNA)",
+          "5'- U A A -3' (Durdurucu kodon - Stop)"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Transkripsiyon ve translasyon özellikleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Transkripsiyon veya translasyon sırasında oluşan hatalar kalıtsal değildir, yalnız o proteini etkiler.",
+          "dogru": true
+        },
+        {
+          "metin": "Metiyonin (AUG) ve Triptofan (UGG) amino asitleri yalnızca birer çeşit kodonla şifrelenir.",
+          "dogru": true
+        },
+        {
+          "metin": "Polipeptit zincirindeki amino asit dizisinden geriye doğru mRNA ve DNA sentezlenebilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Aynı bireyin karaciğer ve mide hücrelerinde aktif genler farklı olduğu için farklı proteinler üretilir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "mRNA üzerindeki üçlü nükleotit dizilerine verilen ad (5 harf)",
+          "cevap": "KODON",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "AUG başlangıç kodonunun tRNA üzerindeki tamamlayıcı antikodon karşılığı (3 harf)",
+          "cevap": "UAS",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Aynı mRNA'ya çok sayıda ribozomun bağlanmasıyla oluşan yapı (7 harf)",
+          "cevap": "POLİZOM",
+          "anahtar": 2
+        }
+      ],
+      "sonuc": "KAL"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Kalıp DNA zincirinde 150 nükleotit bulunan bir genden (son üçlü durdurucu kodondur) sentezlenen polipeptitte kaç amino asit ve peptit bağı bulunur?",
+      "cevap": "150 nükleotit = 50 kodon eder.",
+      "satir": 2
+    }
+  ]
+}

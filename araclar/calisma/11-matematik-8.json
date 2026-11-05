@@ -1,0 +1,253 @@
+{
+  "sinif": 11,
+  "ders": "matematik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Özel Dörtgenler: Eşkenar Dörtgen, Dikdörtgen, Kare ve Deltoidin Açı, Kenar, Köşegen ve Alan Özellikleri",
+  "ciktilar": [
+    "Eşkenar dörtgen, dikdörtgen, kare ve deltoidin kenar, açı ve köşegen özelliklerini paralelkenar ve ikizkenar üçgen bağıntılarıyla ilişkilendirerek açıklar.",
+    "Özel dörtgenlerin çevre ve alan bağıntılarını kullanarak geometrik uzunluk ve alan problemlerini çözer.",
+    "Paralelkenar, eşkenar dörtgen, dikdörtgen, kare ve deltoid arasındaki hiyerarşik kapsama ilişkilerini matematiksel gerekçeleriyle yorumlar."
+  ],
+  "hatirla": [
+    "Eşkenar dörtgende dört kenar eşittir, köşegenler dik kesişir ve açıortaydır; Alan = a·h = {kesir:e·f|2}.",
+    "Dikdörtgende açılar 90° ve köşegenler eşittir (e={kok:{us:a|2}+{us:b|2}}); karede köşegen a{kok:2}'dir.",
+    "Deltoid tabanları ortak iki ikizkenar üçgendir; köşegenleri dik kesişir ve her kare aynı zamanda deltoiddir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Özel dörtgenleri ayırt edici köşegen ve açı özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Eşkenar Dörtgen",
+          "Dört kenarı eşit olan, köşegenleri birbirini dik ortalayan ve açıortay olan paralelkenar"
+        ],
+        [
+          "Dikdörtgen",
+          "İç açıları 90° olan ve köşegen uzunlukları birbirine eşit olup birbirini ortalayan dörtgen"
+        ],
+        [
+          "Kare",
+          "Köşegenleri hem eşit uzunlukta olan hem de birbirini 45°-45° açılarla dik ortalayan düzgün dörtgen"
+        ]
+      ],
+      "sutun": "sol"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki eşkenar dörtgende köşegen uzunlukları |AC| = 16 cm ve |BD| = 12 cm olduğuna göre bu eşkenar dörtgenin çevresi ve alanı kaçtır?",
+      "secenekler": [
+        "Çevre = 40 cm, Alan = 96 {us:cm|2}",
+        "Çevre = 40 cm, Alan = 192 {us:cm|2}",
+        "Çevre = 28 cm, Alan = 96 {us:cm|2}",
+        "Çevre = 56 cm, Alan = 48 {us:cm|2}"
+      ],
+      "dogru": 0,
+      "cozum": "Köşegenler dik ortalanır: 6-8-10 dik üçgeninden bir kenar a = 10 cm, Çevre = 4·10 = 40 cm. Alan = (16·12)/2 = 96 {us:cm|2} olur.",
+      "sutun": "sol"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Özel dörtgenlerin özellikleriyle ilgili ifadelere D veya Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Dikdörtgenin köşegen uzunlukları birbirine eşittir ancak kare değilse köşegenler dik kesişmez.",
+          "dogru": true
+        },
+        {
+          "metin": "Her paralelkenar aynı zamanda bir eşkenar dörtgen ve dikdörtgendir.",
+          "dogru": false
+        },
+        {
+          "metin": "Kare; hem dikdörtgenin, hem eşkenar dörtgenin hem de deltoidin tüm özelliklerini taşır.",
+          "dogru": true
+        },
+        {
+          "metin": "Köşegenleri birbirine dik olan dörtgenlerin alanı köşegenler çarpımının yarısı ({kesir:e·f|2}) ile bulunur.",
+          "dogru": true
+        }
+      ],
+      "sutun": "sol"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Eşkenar dörtgende ve karede köşegenler iç açıları iki eş parçaya böldüğü için ___ görevindedir.",
+          "cevap": "açıortay"
+        },
+        {
+          "metin": "Tabanları ortak iki farklı ikizkenar üçgenin birleşmesiyle oluşan dörtgene ___ denir.",
+          "cevap": "deltoid"
+        },
+        {
+          "metin": "Herhangi bir dörtgenin kenar orta noktalarının birleştirilmesiyle oluşan dörtgen daima ___ olur.",
+          "cevap": "paralelkenar"
+        }
+      ],
+      "fazla": [
+        "yamuk",
+        "kenarortay"
+      ],
+      "sutun": "sol"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": false,
+      "soru": "Köşegen uzunluğu 8{kok:2} cm olan bir karenin alanı kaç {us:cm|2} ve çevresi kaç cm'dir?",
+      "secenekler": [
+        "Alan = 64 {us:cm|2}, Çevre = 32 cm",
+        "Alan = 128 {us:cm|2}, Çevre = 32 cm",
+        "Alan = 64 {us:cm|2}, Çevre = 16 cm",
+        "Alan = 32 {us:cm|2}, Çevre = 24 cm"
+      ],
+      "dogru": 0,
+      "cozum": "Karede e = a{kok:2} = 8{kok:2} -> a = 8 cm. Alan = {us:a|2} = 64 {us:cm|2} ve Çevre = 4a = 32 cm bulunur.",
+      "sutun": "sol"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "gorsel_var": false,
+      "soru": "Özel dörtgenlerin köşegen ve alan özelliklerini karşılaştırmalı tabloda tamamlayınız.",
+      "basliklar": [
+        "Özel Dörtgen",
+        "Köşegen Özelliği",
+        "Alan Bağıntısı"
+      ],
+      "satirlar": [
+        [
+          "Dikdörtgen",
+          "Köşegenler eşittir (e = f), ortalanır",
+          {
+            "b": "Alan = a · b"
+          }
+        ],
+        [
+          "Eşkenar Dörtgen",
+          "Köşegenler dik ortalanır, açıortaydır",
+          {
+            "b": "Alan = a · h = {kesir:e · f|2}"
+          }
+        ],
+        [
+          "Kare",
+          "Köşegenler eşit, dik ortalanır (45°)",
+          {
+            "b": "Alan = {us:a|2} = {kesir:{us:e|2}|2}"
+          }
+        ]
+      ],
+      "sutun": "sol"
+    },
+    {
+      "tur": "siralama",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Özel dörtgenler hiyerarşisini en genel kümeden en özel kümeye (kapsanan kümeye) doğru sıralayınız.",
+      "ogeler": [
+        "Dörtgen (Dört kenarlı ve iç açıları toplamı 360° olan genel çokgen)",
+        "Paralelkenar (Karşılıklı kenar çiftleri birbirine paralel ve eşit olan dörtgen)",
+        "Eşkenar Dörtgen veya Dikdörtgen (Kenarları eşit ya da açıları 90° olan paralelkenar)",
+        "Kare (Hem eşkenar dörtgenin hem de dikdörtgenin tüm şartlarını sağlayan düzgün dörtgen)"
+      ],
+      "sutun": "sag"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "ABCD bir deltoid olup |AB| = |AD|, |BC| = |CD|, m(A) = 70° ve m(C) = 50° ise birbirine eş olan m(B) ve m(D) açılarından her biri kaç derecedir?",
+      "secenekler": [
+        "120°",
+        "110°",
+        "100°",
+        "130°"
+      ],
+      "dogru": 0,
+      "cozum": "Deltoidde simetri ekseni olmayan köşegenin uçlarındaki açılar eşittir: m(B) = m(D). 70° + 50° + 2·m(B) = 360° -> 2·m(B) = 240° -> m(B) = 120°.",
+      "sutun": "sag"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Eşkenar dörtgen ile deltoid arasındaki en temel kenar ve köşegen farkını açıklayınız.",
+      "cevap": "Eşkenar dörtgende 4 kenar eşittir ve 2 köşegen ortalanır.",
+      "satir": 2,
+      "sutun": "sag"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Kısa kenarı 5 cm, uzun kenarı 12 cm olan bir dikdörtgenin köşegen uzunluğu ve alanı kaçtır?",
+      "secenekler": [
+        "Köşegen = 13 cm, Alan = 60 {us:cm|2}",
+        "Köşegen = 17 cm, Alan = 60 {us:cm|2}",
+        "Köşegen = 13 cm, Alan = 30 {us:cm|2}",
+        "Köşegen = 15 cm, Alan = 65 {us:cm|2}"
+      ],
+      "dogru": 0,
+      "cozum": "5-12-13 özel dik üçgeninden köşegen e = 13 cm; Alan = a·b = 5·12 = 60 {us:cm|2} bulunur.",
+      "sutun": "sag"
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": false,
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Hem dikdörtgen hem eşkenar dörtgen olan düzgün dörtgen (4 harf)",
+          "cevap": "KARE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Tabanları ortak iki ikizkenar üçgenden oluşan dörtgen (7 harf)",
+          "cevap": "DELTOİD",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Komşu olmayan iki köşeyi birleştiren doğru parçası (7 harf)",
+          "cevap": "KÖŞEGEN",
+          "anahtar": 6
+        },
+        {
+          "ipucu": "Eşkenar dörtgende köşegenlerin açıyı ikiye bölme özelliği (8 harf)",
+          "cevap": "AÇIORTAY",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İç açıları toplamı 360 derece olan dört köşeli çokgen (7 harf)",
+          "cevap": "DÖRTGEN",
+          "anahtar": 2
+        }
+      ],
+      "sonuc": "KENAR",
+      "sutun": "sag"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": false,
+      "soru": "'Her kare bir dikdörtgen ve eşkenar dörtgendir; fakat her dikdörtgen bir kare değildir.' önermesini matematiksel olarak açıklayınız.",
+      "cevap": "Kare 90° açılarıyla dikdörtgen, eşit kenarlarıyla eşkenar dörtgendir.",
+      "satir": 2,
+      "sutun": "sag"
+    }
+  ]
+}

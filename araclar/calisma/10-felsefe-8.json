@@ -1,0 +1,250 @@
+{
+  "sinif": 10,
+  "ders": "felsefe",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Mantığın Temel Kavramları (Terim, Önerme, Çıkarım), Doğruluk ve Geçerlilik ile Argümantasyon Süreci",
+  "ciktilar": [
+    "Düşünme ve dil ilişkisi bağlamında kavram, terim, önerme, çıkarım, doğruluk, gerçeklik ve geçerlilik kavramlarını ayırt eder.",
+    "Verilen metinlerdeki ifadeleri bağlamından koparmadan öncül (dayanak) ve sonuç (sav) önermelerine ayırarak argümanın yapısını çözümler.",
+    "Felsefi ve gündelik argümanları anlamını değiştirmeden kendi cümleleriyle nesnel ve tutarlı biçimde yeniden ifade eder."
+  ],
+  "hatirla": [
+    "Kavram varlığın zihindeki soyut tasarımı, terim ise dildeki dilsel karşılığıdır.",
+    "Önerme doğru veya yanlış yargı bildirir; soru, emir, istek ve ünlemler önerme değildir.",
+    "Tümdengelim genelden özele, tümevarım özelden genele, analoji özelden öze akıl yürütmedir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki mantık ve argümantasyon kavramlarını tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Önerme",
+          "Doğru ya da yanlış bir doğruluk değeri taşıyan yargı cümlesi"
+        ],
+        [
+          "Geçerlilik",
+          "Bir çıkarımda sonuç önermesinin öncüllerden mantıksal zorunlulukla çıkması"
+        ],
+        [
+          "Tümdengelim (Dedüksiyon)",
+          "Genel ilkelerden özel yargılara zorunlu olarak ulaşan akıl yürütme"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki cümle türleri tablosuna göre aşağıdakilerden hangisi mantık açısından bir {koyu:önermedir}?",
+      "secenekler": [
+        "Keşke herkes felsefi tartışmalarda sabırlı olsa!",
+        "Argümanlarını kanıtlarla desteklemeye özen gösteriniz.",
+        "Türkiye'nin başkenti Ankara'dır ve İç Anadolu'da yer alır.",
+        "Bugün mantık dersinde hangi çıkarım türlerini işleyeceğiz?"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki gerçeklik, doğruluk ve geçerlilik şemasına göre ifadelerin Doğru (D) veya Yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Gerçeklik varlığın bir özelliğidir; doğruluk ise önermenin gerçekliğe uygunluğudur.",
+          "dogru": true
+        },
+        {
+          "metin": "Dilek, emir ve soru cümleleri doğru veya yanlış yargı bildirdiği için önerme sayılır.",
+          "dogru": false
+        },
+        {
+          "metin": "'Çünkü, zira, เนื่องจาก/şundan dolayı' gibi ifadeler argümanda öncül (gerekçe) belirtecidir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir argümanı yeniden ifade ederken metnin bağlamını koparıp kişisel yorum katmak gerekir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki uygun felsefe ve mantık kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Nesnelerin ortak özelliklerini kapsayan zihinsel tasarıma kavram, dildeki adına ___ denir.",
+          "cevap": "terim"
+        },
+        {
+          "metin": "Tek tek gözlemlerden hareketle genel bir yasaya ulaşma yöntemine ___ adı verilir.",
+          "cevap": "tümevarım"
+        },
+        {
+          "metin": "Argümanda 'o hâlde, dolayısıyla, demek ki' belirteçlerinden sonra gelen ana iddiaya ___ önermesi denir.",
+          "cevap": "sonuç"
+        }
+      ],
+      "fazla": [
+        "ünlem"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki argüman kartında yer alan «Bütün insanlar ölümlüdür. Sokrates insandır. O hâlde Sokrates ölümlüdür.» çıkarımının türü nedir?",
+      "secenekler": [
+        "Tümdengelim (Genelden özele zorunlu çıkarım)",
+        "Eksik tümevarım (Özelden genele olasılıklı çıkarım)",
+        "Analoji (Özelden özele benzeşim)",
+        "Safsata (Hatalı ve geçersiz çıkarım)"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "soru": "Tablodaki akıl yürütme örneklerinin çıkarım yönünü ve türünü tamamlayınız.",
+      "basliklar": [
+        "Akıl Yürütme Örneği",
+        "Düşünme Yönü",
+        "Çıkarım Türü"
+      ],
+      "satirlar": [
+        [
+          "Tüm metaller ısıtılınca genleşir; bakır da metaldir, genleşir.",
+          "Genelden özele",
+          {
+            "b": "Tümdengelim"
+          }
+        ],
+        [
+          "Demir, bakır ve çinko elektriği iletir; öyleyse tüm metaller iletir.",
+          "Özelden genele",
+          {
+            "b": "Tümevarım"
+          }
+        ],
+        [
+          "Dünya ve Mars gezegendir; Dünya'da atmosfer var, Mars'ta da olabilir.",
+          "Özelden özele",
+          {
+            "b": "Analoji (Benzeşim)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "satir": 3,
+      "soru": "Görseldeki çok anlamlılık ve belirsizlik kartını inceleyiniz. Dildeki kavram kargaşası doğru düşünmeyi nasıl etkiler?",
+      "cevap": "Sözcüklerin çok anlamlı veya belirsiz olması akıl yürütmede anlam kaymasına ve hatalı çıkarımlara yol."
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki bir metnin argüman yapısını çözümleme adımlarını 1'den 4'e kadar doğru sırayla numaralandırınız.",
+      "ogeler": [
+        "Metni bütüncül olarak okuyup bağlamını ve tartışılan temel sorunu belirleme",
+        "Sonuç belirteçlerinden ('o hâlde, demek ki') yararlanarak savunulan sonuç önermesini bulma",
+        "Öncül belirteçlerinden ('çünkü, zira') yararlanarak sonucu destekleyen öncülleri ayırma",
+        "Argümanı bağlamından koparmadan ve anlamını bozmadan kendi cümleleriyle yeniden ifade etme"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki «Özgür irade olmadan ahlaki sorumluluk olmaz; çünkü insan yalnız kendi seçtiği eylemlerden sorumludur.» argümanında sonuç önermesi hangisidir?",
+      "secenekler": [
+        "Özgür irade olmadan ahlaki sorumluluk olmaz.",
+        "İnsan yalnız kendi seçtiği eylemlerden sorumludur.",
+        "Ahlaki kurallar toplumdan topluma değişir.",
+        "Hiçbir insan eylemlerinde özgür değildir."
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "soru": "Öncülleri doğru olduğu hâlde sonucun öncüllerden zorunlu olarak çıkmadığı hatalı ve yanıltıcı akıl yürütmelere ne ad verilir?",
+      "secenekler": [
+        "Safsata (Mantık hatası)",
+        "Sağlam (Sound) argüman",
+        "Tutarlı önerme",
+        "Bilimsel hipotez"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarından yararlanarak kavramları yazınız ve anahtar harflerle şifreyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Doğru düşünmenin kurallarını inceleyen disiplin",
+          "cevap": "MANTIK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Özelden özele benzerlik yoluyla yapılan akıl yürütme",
+          "cevap": "ANALOJİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Doğru veya yanlış yargı bildiren cümle",
+          "cevap": "ÖNERME",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Kavramın dilde sözcükle ifade edilmiş hâli",
+          "cevap": "TERİM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Öncüllerden sonuca ulaşma işlemi (Akıl yürütme)",
+          "cevap": "ÇIKARIM",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Nesnelerin zihindeki soyut ve genel tasarımı",
+          "cevap": "KAVRAM",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "MANTIK",
+      "sonuc": "MANTIK"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "satir": 3,
+      "soru": "Görseldeki 'Doğruluk' ve 'Geçerlilik' karşılaştırmasına göre bir çıkarımın 'sağlam argüman' sayılması için hangi iki şart birlikte gerçekleşmelidir?",
+      "cevap": "Hem öncül önermelerinin bilgi bakımından gerçeğe uygun (doğru) olması hem de çıkarım biçiminin."
+    }
+  ]
+}

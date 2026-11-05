@@ -1,0 +1,254 @@
+{
+  "sinif": 12,
+  "ders": "matematik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Genel Terimi veya İndirgeme Bağıntısı Verilen Sayı Dizileri, Aritmetik Dizi ve Özellikleri (12.2.1.2 & 12.2.1.3)",
+  "ciktilar": [
+    "Genel terimi veya indirgeme bağıntısı verilen sayı dizilerinin terimlerini, işaretlerini ve tam sayı olan terimlerini bulur.",
+    "Aritmetik dizinin tanımını yaparak ortak fark ve genel terim bağıntısını problem çözümlerinde uygular.",
+    "Aritmetik dizinin özelliklerini ve ilk n terim toplamı ({alt:S|n}) formülünü gerçek hayat ve matematik problemlerinde kullanır."
+  ],
+  "hatirla": [
+    "Bir terimi önceki terimler cinsinden verilen dizilere indirgemeli dizi denir; ardışık terimleri arasındaki farkı sabit (d) olan diziler aritmetik dizidir.",
+    "Aritmetik dizide genel terim {alt:a|n} = {alt:a|1} + (n - 1)·d = {alt:a|p} + (n - p)·d olup indisler toplamı eşit olan terimlerin toplamları eşittir.",
+    "Aritmetik dizinin ilk n terim toplamı {alt:S|n} = {kesir:n|2}·({alt:a|1} + {alt:a|n}) = {kesir:n|2}·[2{alt:a|1} + (n - 1)·d] ve n. terimi {alt:a|n} = {alt:S|n} - {alt:S|n-1} bağıntısıyla bulunur."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sayı dizileri ve aritmetik dizi kavramlarını matematiksel bağıntılarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Ortak Fark (d)",
+          "Aritmetik dizide ardışık iki terim arasındaki sabit fark ({alt:a|n+1} - {alt:a|n})"
+        ],
+        [
+          "{alt:a|1} + (n - 1)·d",
+          "İlk terimi {alt:a|1} ve ortak farkı d olan aritmetik dizinin genel terimi"
+        ],
+        [
+          "{kesir:n|2}·({alt:a|1} + {alt:a|n})",
+          "Aritmetik dizinin ilk n teriminin toplamını ({alt:S|n}) veren formül"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki ({alt:a|n}) aritmetik dizisinde {alt:a|5} = 14 ve {alt:a|12} = 35 olduğuna göre bu dizinin 20. terimi ({alt:a|20}) kaçtır?",
+      "secenekler": [
+        "59",
+        "53",
+        "56",
+        "62"
+      ],
+      "dogru": 0,
+      "cozum": "Ortak fark d = {kesir:{alt:a|12} - {alt:a|5}|12 - 5} = {kesir:35 - 14|7} = 3 bulunur. Buradan {alt:a|20} = {alt:a|12} + (20 - 12)·d = 35 + 8·3 = 59 elde edilir."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Genel terimi {alt:a|n} = {kesir:4n + 30|n} olan bir sayı dizisinin kaç teriminin tam sayı olduğunu nasıl buluruz?",
+      "cevap": "Genel terim 4 + {kesir:30|n} olarak ayrılır; 30 sayısının pozitif tam bölenleri (1, 2, 3, 5, 6, 10, 15, 30) seçilerek 8 terim bulunur.",
+      "satir": 3
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Diziler ve aritmetik dizi özellikleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Genel terimi {alt:a|n} = 5n - 2 olan bir aritmetik dizinin ortak farkı d = 5'tir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir aritmetik dizide {alt:a|4} ile {alt:a|12} terimlerinin aritmetik ortalaması {alt:a|8} terimine eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "İlk n terim toplamı {alt:S|n} olan bir dizide 7. terim {alt:a|7} = {alt:S|7} + {alt:S|6} bağıntısıyla bulunur.",
+          "dogru": false
+        },
+        {
+          "metin": "Genel terimi {alt:a|n} = {kesir:n - 7|n + 2} olan dizinin negatif olan 6 tane terimi vardır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Verilen dizi koşullarından istenen terim ve toplam değerlerini hesaplayarak tabloyu tamamlayınız.",
+      "basliklar": [
+        "Verilen Dizi Bilgisi",
+        "İstenen Nicelik",
+        "Hesaplama ve Sonuç"
+      ],
+      "satirlar": [
+        [
+          "{alt:a|1} = 4 ve ortak fark d = 3",
+          "İlk 10 terim toplamı ({alt:S|10})",
+          {
+            "b": "{alt:S|10} = {kesir:10|2}·(2·4 + 9·3) = 5·35 = 175"
+          }
+        ],
+        [
+          "{alt:a|2} + {alt:a|6} + {alt:a|10} + {alt:a|14} = 48",
+          "8. terim ({alt:a|8})",
+          {
+            "b": "4 · {alt:a|8} = 48 -> {alt:a|8} = 12"
+          }
+        ],
+        [
+          "İlk n terim toplamı {alt:S|n} = 2{us:n|2} + 3n",
+          "6. terim ({alt:a|6})",
+          {
+            "b": "{alt:a|6} = {alt:S|6} - {alt:S|5} = 90 - 65 = 25"
+          }
+        ],
+        [
+          "5 ile 29 arasına 5 terim yerleştirilmesi",
+          "Oluşan aritmetik dizinin ortak farkı",
+          {
+            "b": "d = {kesir:29 - 5|5 + 1} = {kesir:24|6} = 4"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki {alt:a|1} = 4 ve {alt:a|n+1} - {alt:a|n} = 5 indirgemeli dizisinde {alt:a|10} terimini bulma adımlarını sıralayınız.",
+      "ogeler": [
+        "İndirgeme bağıntısında n = 1, 2, ..., 9 değerlerini sırasıyla alt alta yazmak",
+        "Elde edilen 9 eşitliği taraf tarafa toplayarak ara terimleri sadeleştirmek",
+        "Sol tarafta kalan {alt:a|10} - {alt:a|1} farkını sağdaki 9 · 5 = 45 çarpımına eşitlemek",
+        "{alt:a|1} = 4 değerini yerine yazarak {alt:a|10} = 4 + 45 = 49 sonucuna ulaşmak"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki genel terimi {alt:a|n} = {us:n|2} - 9n + 14 olan sayı dizisinin en küçük terimi kaçtır?",
+      "secenekler": [
+        "-6",
+        "-5",
+        "-4",
+        "0"
+      ],
+      "dogru": 0,
+      "cozum": "Tepe noktası apsisi r = {kesir:9|2} = 4,5 olur. Pozitif tam sayı olarak 4,5'e en yakın n = 4 veya n = 5 yazıldığında {alt:a|4} = 16 - 36 + 14 = -6 bulunur."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Herhangi bir terimi kendisinden önceki terimlere bağlı tanımlanan dizilere ___ dizi denir.",
+          "cevap": "indirgemeli"
+        },
+        {
+          "metin": "Aritmetik dizide her terim, kendisine eşit uzaklıktaki iki terimin ___ ortalamasıdır.",
+          "cevap": "aritmetik"
+        },
+        {
+          "metin": "Ortak farkı sıfır (d = 0) olan bir aritmetik dizinin tüm terimleri eşit olup ___ dizidir.",
+          "cevap": "sabit"
+        }
+      ],
+      "fazla": [
+        "geometrik"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Aritmetik dizi özelliklerini karşılık gelen eşitliklerle eşleştiriniz.",
+      "ciftler": [
+        [
+          "d = {kesir:{alt:a|n} - {alt:a|p}|n - p}",
+          "İki terimi bilinen aritmetik dizide ortak farkı veren formül"
+        ],
+        [
+          "{alt:a|k} + {alt:a|m} = {alt:a|p} + {alt:a|r}",
+          "İndisler toplamı k + m = p + r olduğunda sağlanan terim toplamı eşitliği"
+        ],
+        [
+          "d = {kesir:y - x|k + 1}",
+          "x ile y arasına k tane terim yerleştirildiğinde oluşan ortak fark"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Aritmetik dizi uygulamalarıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Bir aritmetik dizide {alt:a|3} + {alt:a|11} = 36 ise ortanca terim olan {alt:a|7} = 18'dir.",
+          "dogru": true
+        },
+        {
+          "metin": "İlk n terim toplamı {alt:S|n} verilen her dizide {alt:a|1} = {alt:S|1} eşitliği geçerlidir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir dizinin genel teriminde n değişkeni yerine negatif tam sayılar da yazılabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Sonlu bir aritmetik dizide baştan ve sondan eşit uzaklıktaki terimlerin toplamı sabittir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Tanım kümesi pozitif tam sayılar olan fonksiyonlara verilen ad (4 harf)",
+          "cevap": "DİZİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Aritmetik dizide ardışık iki terim arasındaki sabit farkın niteliği (5 harf)",
+          "cevap": "ORTAK",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Dizinin n. sıradaki elemanına verilen ad (5 harf)",
+          "cevap": "TERİM",
+          "anahtar": 4
+        }
+      ],
+      "sonuc": "DTM"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "İlk sırada 12 koltuk bulunan ve her sırada koltuk sayısı 4 artan 15 sıralı bir konferans salonunda son sıradaki ve toplam koltuk sayısını bulunuz.",
+      "cevap": "15. sırada {alt:a|15} = 12 + 14·4 = 68 koltuk vardır. Toplam koltuk {alt:S|15} = {kesir:15|2}·(12 + 68) = 600 bulunur.",
+      "satir": 3
+    }
+  ]
+}

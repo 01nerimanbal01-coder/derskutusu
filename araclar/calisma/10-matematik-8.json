@@ -1,0 +1,245 @@
+{
+  "sinif": 10,
+  "ders": "matematik",
+  "hafta": 8,
+  "tarih": "2-6 Kasım 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "İki Kategorik Değişkenli Veriler: İki Yönlü Sıklık Tabloları, Koşullu Göreli Sıklıklar ve Kümelenmiş/Yığılmış Sütun Grafikleriyle İlişki Analizi",
+  "ciktilar": [
+    "İki kategorik değişken arasındaki ilişkililiği sorgulayan istatistiksel araştırma soruları oluşturur ve verileri iki yönlü sıklık tablosuyla özetler.",
+    "İki yönlü sıklık tablolarından yararlanarak marjinal (kenar), birleşik (ortak) ve satır/sütun koşullu göreli sıklıkları hesaplar.",
+    "Kümelenmiş ve %100 yığılmış sütun grafikleriyle görselleştirilen koşullu göreli sıklıkları karşılaştırarak iki kategorik değişken arasında ilişki olup olmadığına karar verir."
+  ],
+  "hatirla": [
+    "İki kategorik değişkenin sıklıkları satır ve sütunlardan oluşan iki yönlü tabloyla özetlenir.",
+    "Kenar toplamının genel toplama oranı marjinal; iç hücrenin genel toplama oranı birleşik sıklıktır.",
+    "Koşullu göreli sıklıklar eşitse iki değişken bağımsızdır; farklıysa aralarında ilişki vardır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki iki yönlü sıklık tablosu ve göreli sıklık kavramlarını tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Marjinal (Kenar) Göreli Sıklık",
+          "Satır veya sütun kenar toplamının genel toplama (n) bölünmesiyle bulunan oran"
+        ],
+        [
+          "Birleşik (Ortak) Göreli Sıklık",
+          "Tablodaki bir iç hücre sıklığının genel toplama (n) bölünmesiyle bulunan oran"
+        ],
+        [
+          "Satır Koşullu Göreli Sıklığı",
+          "Bir iç hücre sıklığının bulunduğu satırın toplamına bölünmesiyle elde edilen oran"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki 100 öğrencilik 'Sınıf Düzeyi - Kulüp Tercihi' tablosuna göre 10. sınıf öğrencisi olma koşuluyla Robotik kulübünü seçme koşullu göreli sıklığı kaçtır?",
+      "secenekler": [
+        "{kesir:30|100} = %30",
+        "{kesir:30|50} = %60",
+        "{kesir:30|60} = %50",
+        "{kesir:50|100} = %50"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki göreli sıklık ve bağımsızlık kurallarına göre ifadelerin Doğru (D) veya Yanlış (Y) olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Cinsiyet, kan grubu ve tercih edilen ulaşım türü kategorik (nitel) değişken örnekleridir.",
+          "dogru": true
+        },
+        {
+          "metin": "Satır koşullu göreli sıklığı hesaplanırken iç hücre değeri genel toplama bölünür.",
+          "dogru": false
+        },
+        {
+          "metin": "İki kategorik değişkenin koşullu göreli sıklıkları birbirine eşitse değişkenler arasında ilişki yoktur.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir satırdaki tüm koşullu göreli sıklıkların toplamı daima 2'ye (%200) eşittir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki uygun istatistik kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Sayısal büyüklük yerine nitelik veya grup bildiren değişkenlere ___ değişken denir.",
+          "cevap": "kategorik"
+        },
+        {
+          "metin": "Bir değişkenin belirli bir düzeyi sabit tutularak hesaplanan orana ___ göreli sıklık denir.",
+          "cevap": "koşullu"
+        },
+        {
+          "metin": "Koşullu göreli sıklıklar kategoriler arasında belirgin biçimde farklıysa değişkenler arasında ___ vardır.",
+          "cevap": "ilişki"
+        }
+      ],
+      "fazla": [
+        "medyan"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki 200 kişilik tabloda 'Hem Egzersiz Yapan hem Düzenli Uyuyan' kişilerin birleşik (ortak) göreli sıklığı kaçtır?",
+      "secenekler": [
+        "{kesir:90|120} = %75",
+        "{kesir:90|200} = %45",
+        "{kesir:120|200} = %60",
+        "{kesir:90|110} = %{kesir:900|11}"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "soru": "80 öğrencinin Yabancı Dil (İngilizce: 50, Almanca: 30) ve Kurs (Katılan / Katılmayan) tablosuna göre göreli sıklıkları tamamlayınız.",
+      "basliklar": [
+        "İstenen Göreli Sıklık Türü",
+        "Oran Gösterimi",
+        "Yüzde (%) Değeri"
+      ],
+      "satirlar": [
+        [
+          "İngilizce seçenlerin marjinal göreli sıklığı",
+          "{kesir:50|80}",
+          {
+            "b": "%62,5"
+          }
+        ],
+        [
+          "Hem Almanca seçip hem kursa katılan (12 kişi) birleşik sıklığı",
+          "{kesir:12|80}",
+          {
+            "b": "%15"
+          }
+        ],
+        [
+          "Almanca seçenler içinde kursa katılan (12 kişi) satır koşullu sıklığı",
+          "{kesir:12|30}",
+          {
+            "b": "%40"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "satir": 3,
+      "soru": "Görseldeki %100 yığılmış sütun grafiğinde A ve B gruplarının renk bölmeleri tamamen aynı hizada (%60'a %40) çıkmıştır. Bu durum iki değişken hakkında ne gösterir?",
+      "cevap": "Koşullu göreli sıklık dağılımları birbirine eşit (%60 ve %40) olduğundan iki kategorik değişken."
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki iki kategorik değişken arasındaki ilişkiyi istatistiksel olarak analiz etme adımlarını 1'den 4'e kadar sıralayınız.",
+      "ogeler": [
+        "İki kategorik değişkeni içeren araştırma sorusunu oluşturup verileri toplama",
+        "Gözlem sayılarını satır ve sütun toplamlarıyla iki yönlü sıklık tablosuna yerleştirme",
+        "Açıklayıcı değişkene göre satır veya sütun koşullu göreli sıklıklarını hesaplama",
+        "Koşullu göreli sıklıkları %100 yığılmış grafikle karşılaştırarak ilişki kararı verme"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki 'Çalışma Yöntemi - Başarı Durumu' koşullu göreli sıklık grafiğine göre aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Aralıklı tekrarda başarı (%80) çok daha yüksektir; ilişki vardır.",
+        "Çalışma yöntemi ile başarı arasında hiçbir ilişki yoktur.",
+        "Son gün çalışanların başarılı olma koşullu sıklığı %80'dir.",
+        "Her iki grupta da başarısız olma oranı birbirine eşittir."
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "soru": "İki yönlü bir sıklık tablosunda A satırının toplamı 40, B satırının toplamı 60'tır. Değişkenlerin tamamen bağımsız olması için A satırında 1. sütun sıklığı 10 ise B satırında 1. sütun sıklığı kaç olmalıdır?",
+      "secenekler": [
+        "10",
+        "15",
+        "20",
+        "25"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarından yararlanarak kavramları yazınız ve anahtar harflerle şifreyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Satır ve sütun kesişimlerinden oluşan veri özetleme aracı",
+          "cevap": "TABLO",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kenar toplamlarının genel toplama oranını veren göreli sıklık",
+          "cevap": "MARJİNAL",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "İç hücrenin genel toplama oranını veren ortak göreli sıklık",
+          "cevap": "BİRLEŞİK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Belirli bir kategori şartı altında hesaplanan göreli sıklık",
+          "cevap": "KOŞULLU",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Sıklığın toplam gözlem sayısına bölünmesiyle elde edilen değer",
+          "cevap": "ORAN",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "TABLO",
+      "sonuc": "TABLO"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "satir": 2,
+      "soru": "Görseldeki sıklık tablosunda grup mevcutları birbirinden çok farklı olduğunda (örneğin 1. grup 200 kişi, 2. grup 40 kişi) ilişki analizi için neden ham sıklıklar yerine koşullu göreli sıklıklar kullanılmalıdır?",
+      "cevap": "Grup mevcutları farklı olduğunda ham sayılar yanıltıcı olur."
+    }
+  ]
+}
