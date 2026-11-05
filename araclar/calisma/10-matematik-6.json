@@ -1,0 +1,280 @@
+{
+  "sinif": 10,
+  "ders": "matematik",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-10-21",
+  "konu": "Sinüs ve Kosinüs Teoremleri",
+  "ciktilar": [
+    "Üçgende yükseklik ve dik üçgende trigonometrik oranlardan yararlanarak sinüs teoremini doğrular ve uygular.",
+    "Pisagor teoremi ve trigonometrik özdeşlikleri kullanarak kosinüs teoremini ispatlar.",
+    "Kenar ve açı elemanları verilen üçgenlerde uygun teoremi seçerek uzunluk, açı ve alan problemlerini çözer."
+  ],
+  "hatirla": [
+    "Sinüs Teoremi: Bir ABC üçgeninde çevrel çember yarıçapı R olmak üzere {kesir:a|sin A} = {kesir:b|sin B} = {kesir:c|sin C} = 2R eşitliği geçerlidir.",
+    "Kosinüs Teoremi: {us:a|2} = {us:b|2} + {us:c|2} - 2·b·c·cos A bağıntısı ile iki kenar ve aradaki açıdan üçüncü kenar bulunur.",
+    "Bütünler iki açının (α + β = 180°) sinüsleri birbirine eşit (sin(180°-α) = sin α), kosinüsleri zıt işaretlidir (cos(180°-α) = -cos α)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Üçgenlerde trigonometrik teorem ve özdeşlikleri matematiksel ifadeleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Sinüs Teoremi",
+          "{kesir:a|sin A} = {kesir:b|sin B} = {kesir:c|sin C} = 2R"
+        ],
+        [
+          "Kosinüs Teoremi",
+          "{us:a|2} = {us:b|2} + {us:c|2} - 2 · b · c · cos A"
+        ],
+        [
+          "Bütünler Açılarda Sinüs",
+          "sin(180° - α) = sin α"
+        ],
+        [
+          "Bütünler Açılarda Kosinüs",
+          "cos(180° - α) = -cos α"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-6 teoremler özeti\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">SİNÜS VE KOSİNÜS TEOREMLERİ ÖZETİ</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Sinüs Teoremi</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">a/sinA = b/sinB = 2R</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Kosinüs Teoremi</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">a² = b² + c² - 2bc·cosA</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Pisagor Özel Hâli</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">A = 90° -&gt; a² = b² + c²</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Bütünler Açılar</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">cos(180°-α) = -cos α</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Bir ABC üçgeninde b = 5 cm, c = 8 cm ve m(A) = 60° olduğuna göre a kenarı kaç cm'dir? (cos 60° = {kesir:1|2})",
+      "secenekler": [
+        "7",
+        "6",
+        "9",
+        "{kok:39}"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-6 kosinüs hesabı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">KOSİNÜS TEOREMİ İLE KENAR HESABI</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Verilen Elemanlar (KAK)</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">b = 5 cm, c = 8 cm, m(A) = 60°</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">cos 60° = 1/2</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Bağıntıda Yerine Koyma</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">a² = 5² + 8² - 2 · 5 · 8 · (1/2)</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">a² = 25 + 64 - 40 = 49 -&gt; a = 7 cm</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Kosinüs teoremi bağıntısı ({us:a|2} = {us:b|2} + {us:c|2} - 2bc·cos A), A açısı 90° olduğunda neden Pisagor teoremine dönüşür?",
+      "cevap": "cos 90° = 0 olduğu için -2·b·c·cos 90° terimi sıfırlanır ve eşitlik doğrudan {us:a|2} = {us:b|2} + {us:c|2} Pisagor bağıntısına dönüşür.",
+      "satir": 2,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-6 Pisagor ilişkisi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">KOSİNÜS TEOREMİNDEN PİSAGOR'A GEÇİŞ</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Genel Kosinüs Bağıntısı</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">a² = b² + c² - 2·b·c·cos A</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Dar açıda cos A &gt; 0, genişte cos A &lt; 0</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">A = 90° (Dik Üçgen) Durumu</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">cos 90° = 0 olduğundan çarpım sıfırlanır</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Doğrudan a² = b² + c² elde edilir</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Sinüs ve kosinüs teoremleriyle ilgili ifadeleri Doğru/Yanlış olarak belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Üç kenar uzunluğu bilinen bir üçgenin iç açıları kosinüs teoremi yardımıyla bulunabilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Geniş açılı bir üçgende geniş açının kosinüs değeri pozitif (+) işaretlidir.",
+          "dogru": false
+        },
+        {
+          "metin": "Sinüs teoremindeki {kesir:a|sin A} oranı çevrel çemberin çapına (2R) eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "cos 120° değeri cos 60° değerine yani +{kesir:1|2}'ye eşittir.",
+          "dogru": false
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-6 teorem seçimi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">HANGİ DURUMDA HANGİ TEOREM SEÇİLİR?</text><rect x=\"12\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">İki Açı + Bir Kenar</text><text x=\"66.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">AÇK verilen üçgenler</text><text x=\"66.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Sinüs Teoremi uygulanır</text><rect x=\"126\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">İki Kenar + Aradaki Açı</text><text x=\"180.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">KAK verilen üçgenler</text><text x=\"180.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Kosinüs Teoremi uygulanır</text><rect x=\"240\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Üç Kenar Uzunluğu</text><text x=\"294.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">KKK verilen üçgenler</text><text x=\"294.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Kosinüs ile açı bulunur</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "soru": "Elemanları verilen ABC üçgenlerinde kullanılacak teoremi ve aranan uzunluğu bularak tabloyu tamamlayınız.",
+      "basliklar": [
+        "Verilen Elemanlar",
+        "Uygun Teorem",
+        "Hesaplanan Değer"
+      ],
+      "satirlar": [
+        [
+          "b = 3, c = 4, m(A) = 90°",
+          "Pisagor / Kosinüs",
+          {
+            "b": "a = 5 cm"
+          }
+        ],
+        [
+          "a = 6, m(A) = 30°, m(B) = 45°",
+          {
+            "b": "Sinüs Teoremi"
+          },
+          "b = 6{kok:2} cm"
+        ],
+        [
+          "b = 4, c = 6, m(A) = 60°",
+          "Kosinüs Teoremi",
+          {
+            "b": "a = 2{kok:7} cm"
+          }
+        ],
+        [
+          "a = 8, m(A) = 30°",
+          {
+            "b": "Sinüs Teoremi (a/sinA = 2R)"
+          },
+          "Çevrel yarıçap R = 8 cm"
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Bir ABC üçgeninde A köşesinden indirilen h yüksekliği yardımıyla Sinüs Teoremini doğrulama adımlarını sıralayınız.",
+      "ogeler": [
+        "ABC üçgeninde A köşesinden [BC] kenarına dik [AH] = h yüksekliğini indirme",
+        "Oluşan ABH dik üçgeninde sin B = {kesir:h|c} oranından h = c · sin B eşitliğini yazma",
+        "Oluşan ACH dik üçgeninde sin C = {kesir:h|b} oranından h = b · sin C eşitliğini yazma",
+        "İki h ifadesini birbirine eşitleyip (c · sin B = b · sin C) {kesir:b|sin B} = {kesir:c|sin C} bağıntısını elde etme"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-6 sinüs ispatı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">SİNÜS TEOREMİNİN İSPAT BASAMAKLARI</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. Dikme İndirme</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">A'dan [BC]'ye h çizilir</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">2. Sol Dik Üçgen</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">sin B = h/c -&gt; h = c·sin B</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">3. Sağ Dik Üçgen</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">sin C = h/b -&gt; h = b·sin C</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">4. Eşitleme</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">b / sin B = c / sin C</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Bir ABC üçgeninde m(A) = 30°, m(B) = 45° ve a = 6 cm ise b kenarı kaç cm'dir? (sin 30° = {kesir:1|2}, sin 45° = {kesir:{kok:2}|2})",
+      "secenekler": [
+        "6",
+        "6{kok:2}",
+        "3{kok:2}",
+        "12"
+      ],
+      "dogru": 1,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-6 sinüs uygulaması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">SİNÜS TEOREMİ UYGULAMASI</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Verilenler (İki Açı ve Bir Kenar)</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">m(A) = 30° (sin 30° = 1/2)</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">m(B) = 45° (sin 45° = √2/2), a = 6 cm</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Oran Eşitliği (a / sin A = b / sin B)</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">6 / (1/2) = b / (√2 / 2)</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">12 = 2b / √2 -&gt; b = 6√2 cm</text></svg>"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları uygun matematik kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "İki kenar uzunluğu ve aralarındaki açı biliniyorsa üçüncü kenar ___ teoremi ile bulunur.",
+          "cevap": "kosinüs"
+        },
+        {
+          "metin": "Üçgenin üç köşesinden geçen çembere ___ çember adı verilir.",
+          "cevap": "çevrel"
+        },
+        {
+          "metin": "Birbirini 180°'ye tamamlayan bütünler iki açının ___ değerleri birbirine eşittir.",
+          "cevap": "sinüs"
+        }
+      ],
+      "fazla": [
+        "içteğet"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Özel açıların ve bütünler açıların trigonometrik değerlerini karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "sin 30° ve sin 150°",
+          "{kesir:1|2}"
+        ],
+        [
+          "cos 60°",
+          "{kesir:1|2}"
+        ],
+        [
+          "cos 120°",
+          "-{kesir:1|2}"
+        ],
+        [
+          "sin 60° ve sin 120°",
+          "{kesir:{kok:3}|2}"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-6 özel açılar\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">BÜTÜNLER VE ÖZEL AÇI DEĞERLERİ</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">sin 30° = sin 150°</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Değeri: 1 / 2</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">cos 60° = 1 / 2</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">cos 120° = -1 / 2</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">sin 45° = sin 135°</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Değeri: √2 / 2</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">sin 60° = sin 120°</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Değeri: √3 / 2</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "soru": "ABC üçgeninde a = 10 cm ve sin A = {kesir:5|8} olduğuna göre çevrel çemberin yarıçapı (R) kaç cm'dir?",
+      "secenekler": [
+        "4",
+        "6",
+        "8",
+        "16"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarından yararlanarak kavramları yazınız ve doğruluğu ispatlanabilen matematiksel önerme anlamına gelen şifreyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Üçgenlerde açı ve kenar bağıntılarını inceleyen matematik dalı",
+          "cevap": "TRİGONOMETRİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Üçgenin köşelerinden geçen çemberin adı (...... çember)",
+          "cevap": "ÇEVREL",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "a{us:|2} = b{us:|2} + c{us:|2} - 2bc·cosA bağıntısına adını veren trigonometrik fonksiyon",
+          "cevap": "KOSİNÜS",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Sinüs teoreminde R harfi ile gösterilen çember elemanı",
+          "cevap": "YARIÇAP",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Üçgende a, b, c harfleriyle gösterilen doğru parçalarından her biri",
+          "cevap": "KENAR",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Sinüs teoremini doğrulamak için köşeden tabana indirilen yükseklik",
+          "cevap": "DİKME",
+          "anahtar": 3
+        }
+      ],
+      "kelime": "TEOREM",
+      "sonuc": "TEOREM"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Kenar uzunlukları a = 7 cm, b = 3 cm ve c = 5 cm olan bir ABC üçgeninde A açısının ölçüsü kaç derecedir?",
+      "cevap": "{us:7|2} = {us:3|2} + {us:5|2} - 2·3·5·cos A -> 49 = 34 - 30·cos A -> cos A = -{kesir:1|2} olduğundan m(A) = 120° bulunur.",
+      "satir": 2,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-6 üç kenardan açı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">ÜÇ KENARI BİLİNEN ÜÇGENDE AÇI BULMA</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Kenarlar: a = 7, b = 3, c = 5</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">a² = b² + c² - 2·b·c·cos A</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">49 = 9 + 25 - 2 · 3 · 5 · cos A</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Açı Hesabı</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">49 = 34 - 30·cos A -&gt; 30·cos A = -15</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">cos A = -1/2 -&gt; m(A) = 120°</text></svg>"
+    }
+  ]
+}

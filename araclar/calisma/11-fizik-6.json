@@ -1,0 +1,267 @@
+{
+  "sinif": 11,
+  "ders": "fizik",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Newton’ın Hareket Yasaları ve Serbest Cisim Diyagramları",
+  "ciktilar": [
+    "Newton’ın Hareket Yasaları (Eylemsizlik, Dinamiğin Temel Prensibi ve Etki-Tepki) ile ilgili tümevarımsal akıl yürütür.",
+    "Cisimlere etki eden kuvvetleri serbest cisim diyagramı (SCD) üzerinde göstererek yorumlar.",
+    "Yatay düzlem, eğik düzlem ve makaralı sistemlerde ivme ile ip gerilmesi problemlerini çözer."
+  ],
+  "hatirla": [
+    "Net kuvvet sıfır ise (F{alt:net} = 0) ivme sıfırdır (a = 0); net kuvvet sıfırdan farklı ise F{alt:net} = m . a bağıntısına göre cisim ivmelenir.",
+    "Serbest cisim diyagramında (SCD) yalnızca cisme dışarıdan etki eden gerçek kuvvetler (G, N, T, f{alt:s}, F) çizilir; m.a gösterilmez.",
+    "Eğik düzlemde ağırlığın yüzeye paralel bileşeni m.g.sin α, yüzeye dik bileşeni (normal kuvvet) ise N = m.g.cos α olur."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Newton'ın hareket yasalarını ve dinamik bağıntılarını açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "F{alt:net} = 0  =>  a = 0",
+          "Newton'ın 1. Yasası: Duran cisim durur, hareketli cisim sabit hızla gider"
+        ],
+        [
+          "F{alt:net} = m . a",
+          "Newton'ın 2. Yasası: Cisim net kuvvet yönünde ivmeli hareket yapar"
+        ],
+        [
+          "F{alt:AB} = -F{alt:BA}",
+          "Newton'ın 3. Yasası: Farklı iki cisim arasındaki eşit ve zıt yönlü etki-tepki"
+        ],
+        [
+          "f{alt:s} = k . N",
+          "Yüzeyin normal kuvveti ile sürtünme katsayısına bağlı sürtünme kuvveti"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki yatay sürtünmeli düzlemde (k = 0,25) duran 4 kg kütleli cisme yatay 30 N kuvvet uygulandığında cismin ivmesi kaç m/{us:s|2} olur? (g = 10 m/{us:s|2})",
+      "secenekler": [
+        "5",
+        "7,5",
+        "2,5",
+        "10"
+      ],
+      "dogru": 0,
+      "cozum": "Normal kuvvet N = 4.10 = 40 N ve sürtünme kuvveti f_s = 0,25.40 = 10 N'dur. F_net = 30 - 10 = 20 N => a = 20 / 4 = 5 m/s{us:|2} bulunur."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Masa üzerinde duran bir kitaba etki eden ağırlık (G) ile masanın kitaba uyguladığı normal kuvvet (N) neden etki-tepki çifti değildir?",
+      "cevap": "Etki ve tepki kuvvetleri iki farklı cisme etki etmelidir; oysa.",
+      "satir": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Dinamik ve serbest cisim diyagramlarıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Sabit hızla doğrusal hareket yapan bir cisme etki eden net kuvvet sıfırdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Serbest cisim diyagramında eylemsizlik kuvveti olarak m.a vektörü mutlaka çizilmelidir.",
+          "dogru": false
+        },
+        {
+          "metin": "Sürtünmesiz eğik düzlemde serbest bırakılan cismin ivmesi (a = g.sin α) kütleden bağımsızdır.",
+          "dogru": true
+        },
+        {
+          "metin": "İp gerilme kuvveti bağlı olduğu cismi her zaman ip doğrultusunda çeker, asla itemez.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Farklı fiziksel sistemlerdeki kuvvet ve ivme büyüklüklerini verilen değerlere göre (g = 10 m/{us:s|2}) tamamlayınız.",
+      "basliklar": [
+        "Fiziksel Sistem",
+        "Verilen Değerler",
+        "Hesaplanan Sonuç"
+      ],
+      "satirlar": [
+        [
+          "Sürtünmesiz Yatay Düzlem",
+          "m = 5 kg, yatay kuvvet F = 35 N",
+          {
+            "b": "İvme a = 7 m/s{us:|2}"
+          }
+        ],
+        [
+          "Sürtünmesiz Eğik Düzlem",
+          "α = 37° (sin 37° = 0,6), m = 8 kg",
+          {
+            "b": "İvme a = 6 m/s{us:|2}"
+          }
+        ],
+        [
+          "Atwood Makara Düzeneği",
+          "Asılı kütleler m1 = 7 kg ve m2 = 3 kg",
+          {
+            "b": "Sistem ivmesi a = 4 m/s{us:|2}"
+          }
+        ],
+        [
+          "Statik Sürtünmeli Yüzey",
+          "f_s(max) = 20 N iken uygulanan F = 14 N",
+          {
+            "b": "Sürtünme kuvveti f_s = 14 N (a = 0)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki iple birbirine bağlı iki cisim sisteminde ip gerilmesini (T) bulmak için izlenecek çözüm adımlarını sıraya diziniz.",
+      "ogeler": [
+        "Cisimlere dışarıdan etki eden tüm gerçek kuvvetleri serbest cisim diyagramında gösterme",
+        "Varsa yüzeylerin normal kuvvetlerini (N) ve sürtünme kuvvetlerini (f{alt:s} = k.N) hesaplama",
+        "Tüm sistemi tek kütle gibi düşünerek F{alt:net}(sistem) = m{alt:toplam} . a denkleminden ortak ivmeyi bulma",
+        "Cisimlerden yalnız birinin diyagramında F{alt:net} = m . a yazarak T ip gerilmesini hesaplama"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki sürtünmesiz yatay düzlemde iple bağlı m{alt:1} = 2 kg ve m{alt:2} = 3 kg kütleli cisimler F = 30 N kuvvetle çekildiğinde aradaki T ip gerilmesi kaç N olur?",
+      "secenekler": [
+        "12",
+        "18",
+        "6",
+        "15"
+      ],
+      "dogru": 0,
+      "cozum": "Sistem ivmesi a = 30 / (2 + 3) = 6 m/s{us:|2} olur. Arkadaki m1 = 2 kg kütleli cismi yalnızca T ipi çektiğinden T = m1 . a = 2 . 6 = 12 N bulunur."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Maddelerin mevcut hareket durumlarını koruma eğilimine ___ adı verilir.",
+          "cevap": "eylemsizlik"
+        },
+        {
+          "metin": "Bir cisme etki eden ivme vektörü daima ___ kuvvet vektörü ile aynı yönlüdür.",
+          "cevap": "net"
+        },
+        {
+          "metin": "Hareket hâlindeki cisimlere yüzey tarafından uygulanan sürtünmeye ___ sürtünme kuvveti denir.",
+          "cevap": "kinetik"
+        }
+      ],
+      "fazla": [
+        "statik"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Eğik düzlem ve serbest cisim diyagramı büyüklüklerini matematiksel karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "m . g",
+          "Düşey aşağı yönde yerin merkezine doğru etki eden ağırlık kuvveti"
+        ],
+        [
+          "m . g . sin α",
+          "Eğik düzlem üzerindeki cismin ağırlığının hareket doğrultusundaki bileşeni"
+        ],
+        [
+          "m . g . cos α",
+          "Eğik düzlem yüzeyinin cisme dik olarak uyguladığı normal kuvvet (N)"
+        ],
+        [
+          "{kesir:F{alt:net}|a}",
+          "Bir cisme uygulanan net kuvvetin ivmeye oranı olan sabit kütle (m)"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Kuvvet ve hareket yasalarıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Yavaşlayan doğrusal hareket yapan bir cisimde hız vektörü ile ivme vektörü zıt yönlüdür.",
+          "dogru": true
+        },
+        {
+          "metin": "Statik sürtünme katsayısı genellikle kinetik sürtünme katsayısından daha küçüktür.",
+          "dogru": false
+        },
+        {
+          "metin": "Aynı ipin her noktasındaki gerilme kuvveti büyüklüğü (kütleli olmayan ideal ipte) eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "SI birim sisteminde kg . m/{us:s|2} çarpımı kuvvet birimi olan Newton'a (N) eşittir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Birim zamandaki hız değişimi (a = F_net / m) (4 harf)",
+          "cevap": "İVME",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bir cisme uygulanan itme veya çekme etkisi (6 harf)",
+          "cevap": "KUVVET",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Hareketi kuvvetle ilişkilendirerek inceleyen mekanik alt dalı (7 harf)",
+          "cevap": "DİNAMİK",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Cisme etki eden tüm kuvvetlerin vektörel toplamı, bileşke kuvvet (3 harf)",
+          "cevap": "NET",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "İVME"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Duran bir sandığa maksimum statik sürtünme kuvveti 25 N iken yatay 18 N kuvvet uygulanırsa sandığın ivmesi ve sürtünme kuvveti ne olur?",
+      "cevap": "Uygulanan 18 N kuvvet 25 N sınırını aşamadığından sandık.",
+      "satir": 1
+    }
+  ]
+}

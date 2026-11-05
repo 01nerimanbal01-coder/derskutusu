@@ -1,0 +1,245 @@
+{
+  "sinif": 6,
+  "ders": "matematik",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Gerçek Yaşam Durumlarında Kesir, Ondalık Gösterim ve Yüzde İçeren Problemleri Çözme ve Standart Uzunluk Ölçme Birimleri Arası Dönüşümler (MAT.6.1.7 & MAT.6.1.8)",
+  "ciktilar": [
+    "Gerçek yaşam durumlarında karşılaşılan kesir, ondalık ve yüzde gösterimleri ile ilgili dört işlem gerektiren problemleri uygun temsiller ve stratejiler kullanarak çözer (MAT.6.1.7.a-e).",
+    "Problemlerin sonucuna ilişkin tahminde bulunur, çözüm yollarını kontrol eder ve geliştirdiği stratejileri farklı problem durumlarına geneller (MAT.6.1.7.f-h).",
+    "Uzunluk ölçme birimlerinden metreyi (m) ölçüt olarak belirler; standart uzunluk ölçme birimleri (km, hm, dam, m, dm, cm, mm) arasında dönüşüm ve karşılaştırmalar yapar (MAT.6.1.8)."
+  ],
+  "hatirla": [
+    "Bir bütünün {kesir:a|b} kadarını bulmak için bütün kesirle {koyu:çarpılır}; {kesir:a|b} kadarı verilen bütünün tamamını bulmak için verilen sayı kesre {koyu:bölünür}.",
+    "Problemlerde {koyu:%50 = 0,5 = }{kesir:1|2}, {koyu:%25 = 0,25 = }{kesir:1|4}, {koyu:%75 = 0,75 = }{kesir:3|4} ve {koyu:%20 = 0,2 = }{kesir:1|5} dönüşümleri kullanılarak aynı gösterim üzerinden işlem yapılır.",
+    "Standart uzunluk ölçme temel birimi {koyu:metre (m)}dir; büyükten küçüğe sıralama {koyu:km – hm – dam – m – dm – cm – mm} şeklindedir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki gösterim ve uzunluk ifadelerini sağ sütundaki eş değer karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{kesir:3|4} = 0,75 = %75",
+          "Bir bütünün dört eş parçasından üçünü gösteren eş değer ifadeler"
+        ],
+        [
+          "1 kilometre (km) = 1.000 metre (m)",
+          "Metrenin 1000 katı olan standart uzunluk ölçme birimi"
+        ],
+        [
+          "1 metre (m) = 10 desimetre (dm) = 100 santimetre (cm)",
+          "Temel uzunluk birimi metrenin alt basamak dönüşümleri"
+        ],
+        [
+          "{kesir:2|5}’i 40 olan sayının tamamını bulma",
+          "40 ÷ {kesir:2|5} = 100 (Parçadan bütüne geçiş işlemi)"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki 240 sayfalık romanın birinci hafta {kesir:1|4}’ünü, ikinci hafta ise tüm kitabın %35’ini okuyan Zeynep’in geriye okumadığı kaç sayfası kalmıştır?",
+      "secenekler": [
+        "84 sayfası kalmıştır",
+        "96 sayfası kalmıştır",
+        "108 sayfası kalmıştır",
+        "144 sayfası kalmıştır"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki standart uzunluk ölçme basamaklarını kullanarak verilen uzunlukların metre (m) ve santimetre (cm) cinsinden değerlerini",
+      "basliklar": [
+        "Verilen Uzunluk",
+        "Metre (m) Karşılığı",
+        "Santimetre (cm) Karşılığı"
+      ],
+      "satirlar": [
+        [
+          "1. Yürüyüş Parkuru: 2,4 km",
+          "2.400 m",
+          {
+            "b": "240.000 cm"
+          }
+        ],
+        [
+          "2. Okul Bahçesi: 8,5 dam",
+          {
+            "b": "85 m"
+          },
+          {
+            "b": "8.500 cm"
+          }
+        ],
+        [
+          "3. Sınıf Kapısı: 21 dm",
+          {
+            "b": "2,1 m"
+          },
+          "210 cm"
+        ],
+        [
+          "4. Çalışma Masası: 1.500 mm",
+          "1,5 m",
+          {
+            "b": "150 cm"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Kesir, ondalık, yüzde problemleri ve uzunluk birimleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir ürünün fiyatına %20 indirim yapmak, ürün fiyatının {kesir:1|5}’i kadar indirim yapmakla aynıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Uzunluk ölçme basamaklarında santimetreden (cm) metreye (m) çıkarken sayı 100 ile çarpılır.",
+          "dogru": false
+        },
+        {
+          "metin": "Kilogramı 42,5 TL olan elmadan 2,4 kg alan bir kişinin ödeyeceği tutar 102 TL’dir.",
+          "dogru": true
+        },
+        {
+          "metin": "3,05 kilometre uzunluğundaki bir tünel 305 metreye eşittir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun matematiksel ifadelerle tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Standart uzunluk ölçme birimlerinde metrenin binde birine ({kesir:1|1000} m) ___ adı verilir.",
+          "cevap": "milimetre"
+        },
+        {
+          "metin": "Etiket fiyatı 600 TL olan bir mont %25 indirimle satıldığında ___ TL’ye alınır.",
+          "cevap": "450"
+        },
+        {
+          "metin": "Bir telin {kesir:3|7}’ü 24 cm olduğuna göre bu telin tamamı ___ cm’dir.",
+          "cevap": "56"
+        }
+      ],
+      "fazla": [
+        "150"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki 3,6 km uzunluğundaki caddenin bakım çalışmasında şimdiye kadar yolun {kesir:2|3}’ü tamamlanmıştır. Geriye tamamlanmayan kaç metre (m) yol kalmıştır?",
+      "secenekler": [
+        "800 metre yol kalmıştır",
+        "1.200 metre yol kalmıştır",
+        "1.800 metre yol kalmıştır",
+        "2.400 metre yol kalmıştır"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kırtasiye fişine göre tanesi 34,75 TL olan 4 adet defter ve %20 indirimli satış fiyatı 160 TL olan bir çanta alan",
+      "secenekler": [
+        "289 TL öder",
+        "299 TL öder",
+        "309 TL öder",
+        "329 TL öder"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki 5 metre uzunluğundaki kurdeleden önce 140 cm, sonra 18 dm kesilip kullanılıyor. Geriye kalan kurdelenin uzunluğu kaç santimetredir?",
+      "cevap": "5 m = 500 cm ve 18 dm = 180 cm’dir. Kullanılan: 140 +.",
+      "satir": 1
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört farklı uzunluk ölçüsünü {koyu:en kısadan en uzuna} doğru 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "1. K şeridi: 850 mm (0,85 m)",
+        "2. L şeridi: 240 cm (2,4 m)",
+        "3. M şeridi: 1,5 dam (15 m)",
+        "4. N şeridi: 0,08 km (80 m)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki «Kalanın Kesri» modeline göre maaşının önce {kesir:1|5}’ini kiraya, kalan parasının {kesir:1|4}’ünü mutfak giderlerine ayıran bir memurun geriye maaşının yüzde kaçı kalmıştır?",
+      "secenekler": [
+        "%45’i kalmıştır",
+        "%55’i kalmıştır",
+        "%60’ı kalmıştır",
+        "%75’i kalmıştır"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki matematik kavramlarını kutulara yazınız. Numaralı harflerle «standart uzunluk ölçme temel birimi» kavramını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Metrenin binde biri olan en küçük standart uzunluk birimi",
+          "cevap": "MİLİMETRE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bir bütünün eş parçalarından kaç tanesinin alındığını gösteren ifade (pay/payda)",
+          "cevap": "KESİR",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "İşlem yapmadan önce sayıları yuvarlayarak yaklaşık sonuç bulma",
+          "cevap": "TAHMİN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Paydası 100 olan kesirlerin % sembolü ile gösterimi (%25 → dörtte ...)",
+          "cevap": "BİR",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Metrenin onda biri olan uzunluk ölçme birimi (dm)",
+          "cevap": "DESİMETRE",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "METRE"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki terzi atölyesinde 12 metrelik kumaşın önce %25’i, sonra 350 cm’si kullanılmıştır. Kalan kumaşın kaç metre olduğunu",
+      "cevap": "12 m’nin %25’i ({kesir:1|4}’ü) = 3 m’dir. 350 cm = 3,5 m’dir. Toplam kullanılan: 3 + 3,5 = 6,5 m; kalan kumaş: 12 − 6,5 = 5,5 metredir.",
+      "satir": 1
+    }
+  ]
+}

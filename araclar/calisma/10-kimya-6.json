@@ -1,0 +1,271 @@
+{
+  "sinif": 10,
+  "ders": "kimya",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-10-21",
+  "konu": "Mol Kavramı: Gazların Molar Hacmi, Tanecik-Kütle-Hacim İlişkileri ve Karışım Hesaplamaları",
+  "ciktilar": [
+    "Saf maddelerin mol sayısı, tanecik sayısı, kütlesi ve gaz hacmi arasındaki ilişkileri tümdengelimsel akıl yürüterek belirler.",
+    "Normal koşullarda (0°C, 1 atm) ve standart/oda koşullarında (25°C, 1 atm) ideal gazların molar hacmini kullanarak hesaplamalar yapar.",
+    "Bileşiklerde atom-mol dağılımını, izotoplarda ortalama atom kütlesini ve gaz karışımlarında mol problemlerini çözer."
+  ],
+  "hatirla": [
+    "Üçlü mol bağıntısı: n = {kesir:N|N{alt:A}} = {kesir:m|M{alt:A}} = {kesir:V{alt:NK}|22,4} (Normal koşullar: 0 °C, 1 atm'de 1 mol gaz = 22,4 L).",
+    "Standart (oda) koşullarında (25 °C, 1 atm) 1 mol ideal gaz 24,5 L hacim kaplar; bu değerler yalnız GAZ fazı için geçerlidir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Mol kavramındaki nicel dönüşüm bağıntılarını ve sabitleri açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "n = {kesir:V{alt:NK}|22,4}",
+          "Normal koşullarda (0 °C, 1 atm) ideal gazın mol sayısını bulma"
+        ],
+        [
+          "n = {kesir:V{alt:OK}|24,5}",
+          "Standart oda koşullarında (25 °C, 1 atm) gazın molünü bulma"
+        ],
+        [
+          "n = {kesir:m|M{alt:A}}",
+          "Kütlesi ve mol kütlesi bilinen saf maddenin molünü bulma"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-6 mol bağıntıları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">MOL - KÜTLE - HACİM BAĞINTILARI</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Tanecik -&gt; Mol</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">n = N / N_A</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Kütle -&gt; Mol</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">n = m / M_A</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">NK Gaz Hacmi</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">0°C, 1 atm: 22,4 L/mol</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Oda Koşulu Hacim</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">25°C, 1 atm: 24,5 L/mol</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Normal koşullarda 11,2 L hacim kaplayan CH{alt:4} gazı kaç gramdır ve toplam kaç mol atom içerir? (C: 12, H: 1)",
+      "secenekler": [
+        "8 gramdır, 2,5 mol atom içerir",
+        "16 gramdır, 5 mol atom içerir",
+        "8 gramdır, 0,5 mol atom içerir",
+        "4 gramdır, 2,5 mol atom içerir"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-6 CH4 mol hesabı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">NK GAZ HACMİNDEN KÜTLEYE GEÇİŞ (CH₄)</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. Adım: Hacimden Mol Bulma</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">NK'da V = 11,2 L CH₄ gazı</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">n = 11,2 / 22,4 = 0,5 mol CH₄</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">2. Adım: Molden Kütle ve Atom</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">m = 0,5 · 16 = 8 gram CH₄</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Toplam atom = 0,5 · 5 = 2,5 mol atom</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Normal koşullarda (0 °C ve 1 atm) 1 mol H{alt:2}O'nun hacmi neden 22,4 Litre değildir?",
+      "cevap": "22,4 L molar hacim yalnız gazlar içindir; 0 °C ve 1 atm'de H{alt:2}O gaz değil sıvı/katı fazda olduğundan yaklaşık 18 mL gelir.",
+      "satir": 1,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-6 fiziksel hal uyarısı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">MOLAR HACİMDE FİZİKSEL HÂL KURALI</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Gaz Fazındaki Maddeler</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">0°C, 1 atm'de 1 mol He(g), O₂(g)</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">22,4 Litre hacim kaplar</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Sıvı ve Katı Faz (Örn: H₂O)</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">0°C, 1 atm'de H₂O sıvı/katı hâldedir!</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">1 mol H₂O(s) ≈ 18 mL (22,4 L DEĞİL!)</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Gazların molar hacmi ve bileşiklerde mol ilişkileriyle ilgili ifadeleri Doğru/Yanlış olarak belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Oda koşullarında (25 °C, 1 atm) 1 mol ideal He gazı 24,5 Litre hacim kaplar.",
+          "dogru": true
+        },
+        {
+          "metin": "0,5 mol CO{alt:2} gazı toplam 0,5 mol atom içerir.",
+          "dogru": false
+        },
+        {
+          "metin": "Aynı sıcaklık ve basınçta eşit hacimli ideal gazların mol ve tanecik sayıları eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "1 tane {us:12|}C atomunun kütlesi 12 gramdır.",
+          "dogru": false
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-6 Avogadro ve bileşik\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">AVOGADRO YASASI VE ATOM-MOL ANALİZİ</text><rect x=\"12\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Avogadro Yasası</text><text x=\"66.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Aynı T ve P altında</text><text x=\"66.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Eşit mol gaz = Eşit hacim</text><rect x=\"126\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">C₃H₈O Bileşiği (1 mol)</text><text x=\"180.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">3 mol C + 8 mol H + 1 mol O</text><text x=\"180.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Toplam 12 mol atom içerir</text><rect x=\"240\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Ortalama Atom Kütlesi</text><text x=\"294.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Σ(İzotop Kütlesi × %Bolluk)</text><text x=\"294.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">100'e bölünerek bulunur</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "soru": "Gaz örneklerine ait mol, kütle, NK hacmi ve toplam atom molü tablosundaki boşlukları tamamlayınız. (H:1, C:12, N:14, O:16)",
+      "basliklar": [
+        "Madde ve Miktarı",
+        "Kütlesi (gram)",
+        "NK'daki Hacmi ve Atom Molü"
+      ],
+      "satirlar": [
+        [
+          "0,5 mol O{alt:2} gazı",
+          {
+            "b": "16 gram"
+          },
+          "11,2 L — 1,0 mol atom"
+        ],
+        [
+          "0,2 mol NH{alt:3} gazı",
+          "3,4 gram",
+          {
+            "b": "4,48 L — 0,8 mol atom"
+          }
+        ],
+        [
+          "1,5 mol CO{alt:2} gazı",
+          {
+            "b": "66 gram"
+          },
+          "33,6 L — 4,5 mol atom"
+        ],
+        [
+          "0,4 mol CH{alt:4} gazı",
+          "6,4 gram",
+          {
+            "b": "8,96 L — 2,0 mol atom"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Toplam atom sayısı (N) verilen bir C{alt:2}H{alt:6} gaz örneğinin NK'daki hacmini bulma basamaklarını sıraya diziniz.",
+      "ogeler": [
+        "Verilen toplam atom sayısını Avogadro sayısına (N{alt:A}) bölerek toplam atom mol sayısını bulma",
+        "1 mol C{alt:2}H{alt:6} 8 mol atom içerdiğinden, toplam atom molünü 8'e bölerek bileşik molünü (n) bulma",
+        "Elde edilen bileşik mol sayısının gaz fazında olduğunu kontrol etme",
+        "Bileşik mol sayısını (n) 22,4 L/mol ile çarparak normal koşullardaki hacmi hesaplama"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-6 hesaplama adımları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">BİLEŞİKTE ATOM SAYISINDAN HACMİ BULMA</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. Atom Molü</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Toplam atom molünü bul</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">2. Bileşik Molü</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Formül sayısına böl (n)</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">3. Kütle Hesabı</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">m = n · M_A ile kontrol</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">4. NK Hacmi</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">V = n · 22,4 L çarpımı</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Toplam 1,2 mol atom içeren SO{alt:3} gazı kaç gramdır ve NK'da kaç L hacim kaplar? (S: 32, O: 16)",
+      "secenekler": [
+        "32 g ve 8,96 L",
+        "24 g ve 6,72 L",
+        "24 g ve 22,4 L",
+        "80 g ve 6,72 L"
+      ],
+      "dogru": 1,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-6 SO3 analizi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">BİLEŞİKTE ATOM MOLÜNDEN KÜTLE HESABI (SO₃)</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Atom Sayısı Analizi (1 mol SO₃ = 4 mol atom)</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Toplam 1,2 mol atom içeren SO₃ gazı</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">n(SO₃) = 1,2 / 4 = 0,3 mol SO₃</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Kütle ve NK Hacim Hesabı (M_A = 80)</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">m = 0,3 · 80 = 24 gram SO₃</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">V_NK = 0,3 · 22,4 = 6,72 Litre</text></svg>"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları uygun kimya kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "0 °C sıcaklık ve 1 atm basınç şartlarına kimyada ___ koşullar (NK) denir.",
+          "cevap": "normal"
+        },
+        {
+          "metin": "Proton sayıları aynı, nötron sayıları farklı atomların ağırlıklı ortalamasına ortalama ___ kütlesi denir.",
+          "cevap": "atom"
+        },
+        {
+          "metin": "1 akb kütle değeri gram cinsinden ___ gram değerine eşittir.",
+          "cevap": "1/N_A"
+        }
+      ],
+      "fazla": [
+        "izobar"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "0,2 mol C{alt:2}H{alt:6} (etan) gazına ait nicel büyüklükleri sayısal değerleriyle eşleştiriniz. (H: 1, C: 12)",
+      "ciftler": [
+        [
+          "Bileşiğin toplam kütlesi",
+          "6 gram (0,2 × 30 g/mol)"
+        ],
+        [
+          "Normal koşullardaki (NK) hacmi",
+          "4,48 Litre (0,2 × 22,4 L)"
+        ],
+        [
+          "İçerdiği karbon (C) atomu molü",
+          "0,4 mol C atomu"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-6 C2H6 analizi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">0,2 MOL C₂H₆ GAZININ NİCEL ANALİZİ</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Bileşik Kütlesi</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">0,2 · 30 = 6 gram</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">NK'daki Hacmi</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">0,2 · 22,4 = 4,48 L</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Karbon Atomu</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">0,2 · 2 = 0,4 mol C</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Toplam Atom</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">0,2 · 8 = 1,6 mol atom</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "soru": "Doğada %{alt:75} oranında {us:35|}Cl ve %{alt:25} oranında {us:37|}Cl izotopu bulunan klorun ortalama atom kütlesi kaçtır?",
+      "secenekler": [
+        "35,2",
+        "35,5",
+        "36,0",
+        "36,5"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarından yararlanarak kavramları yazınız ve proton sayısı aynı, kütle numarası farklı atomları belirten şifreyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Tanecikler arası çekim kuvveti ihmal edilen kuramsal gaz (..... gaz)",
+          "cevap": "İDEAL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Normal koşullarda 1 molü 22,4 L hacim kaplayan maddenin fiziksel hâli",
+          "cevap": "GAZ",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "6,02 × 10{us:|2}{us:|3} tane tanecikten oluşan madde miktarı birimi",
+          "cevap": "MOL",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Elementin tüm kimyasal özelliklerini taşıyan en küçük yapı taşı",
+          "cevap": "ATOM",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "0 °C sıcaklık ve 1 atm basınç şartlarının adı",
+          "cevap": "NORMAL",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Laboratuvarda gazların toplandığı cam kap (Deney ....)",
+          "cevap": "TÜP",
+          "anahtar": 2
+        }
+      ],
+      "kelime": "İZOTOP",
+      "sonuc": "İZOTOP"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "NK'da 11,2 L hacim kaplayan He ve CH{alt:4} gaz karışımı 4,4 gramdır. Karışımdaki CH{alt:4} kaç moldür? (He: 4, CH{alt:4}: 16)",
+      "cevap": "Toplam mol n = {kesir:11,2|22,4} = 0,5 mol. CH{alt:4} = x mol ise 16x + 4(0,5 - x) = 4,4 -> 12x = 2,4 -> x = 0,2 mol CH{alt:4}.",
+      "satir": 1,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-kimya-6 gaz karışımı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">GAZ KARIŞIMI PROBLEMİ (He ve CH₄)</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Verilen Karışım Bilgileri</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">n_toplam = 0,5 mol (NK hacmi 11,2 L)</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">m_toplam = 4,4 gram (He=4, CH₄=16)</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Denklem Çözümü (x mol CH₄)</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">16x + 4(0,5 - x) = 4,4 -&gt; 12x = 2,4</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">x = 0,2 mol CH₄ ve 0,3 mol He</text></svg>"
+    }
+  ]
+}

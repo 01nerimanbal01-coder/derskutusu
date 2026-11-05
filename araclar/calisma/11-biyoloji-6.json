@@ -1,0 +1,263 @@
+{
+  "sinif": 11,
+  "ders": "biyoloji",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Sinir Sistemi: Reseptörler, Nöronların Yapısı, İmpuls İletimi ve Sinaps",
+  "ciktilar": [
+    "Duyu reseptörlerini algıladıkları uyaran çeşitlerine ve bulundukları duyu organlarına göre sınıflandırır.",
+    "Nöronların yapısal kısımlarını, görevlerine göre nöron çeşitlerini ve glia (destek) hücrelerinin işlevlerini açıklar.",
+    "Nöron boyunca elektrokimyasal impuls oluşumunu, iletim hızını etkileyen faktörleri ve sinapslardaki kimyasal iletim mekanizmasını analiz eder."
+  ],
+  "hatirla": [
+    "Bir nöron içinde impuls iletim yönü Dendrit -> Hücre Gövdesi -> Akson iken, sinapsta Akson Ucu -> Dendrit yönündedir.",
+    "Tek bir nöronda impuls hızı yalnızca miyelin kılıf varlığına ve akson çapına bağlıdır; uyaran şiddeti hızı değiştirmez, impuls sayısını artırır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Nöronun kısımlarını ve glia yapılarını temel görevleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Dendrit",
+          "Uyartıları alıp nöronun hücre gövdesine ileten kısa uzantılar"
+        ],
+        [
+          "Akson",
+          "Hücre gövdesinden aldığı impulsu sinaptik uçlara taşıyan uzun uzantı"
+        ],
+        [
+          "Schwann Hücresi",
+          "Çevresel sinir sistemi nöronlarında miyelin kılıf üreten glia hücresi"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki özdeş iki nörondan K nöronuna eşik değerde, L nöronuna ise eşik değerin 4 katı şiddetinde uyaran verildiğinde",
+      "secenekler": [
+        "İmpuls hızları eşittir; L'de oluşan impuls sayısı daha fazladır.",
+        "L nöronundaki impuls iletim hızı K nöronunun 4 katı olur.",
+        "K nöronunda impuls oluşmaz, yalnızca L nöronunda oluşur.",
+        "L nöronunda aksiyon potansiyeli genliği 4 katına çıkar."
+      ],
+      "dogru": 0,
+      "cozum": "Nöronlar özdeş olduğundan impuls hızları eşittir; uyaran şiddetinin artması yalnızca birim zamanda oluşan impuls sayısını (frekansını) artırır."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Olgunlaşmış bir sinir hücresinin (nöronun) mitoz bölünme geçirememesinin ve miyelinli aksonlarda iletimin çok hızlı",
+      "cevap": "Olgun nöronda sentrozom olmadığından bölünemez; miyelinli.",
+      "satir": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sinir sistemi ve impuls iletimiyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Dinlenme (polarizasyon) hâlindeki bir nöronun hücre dışı (+), hücre içi (-) yüklüdür.",
+          "dogru": true
+        },
+        {
+          "metin": "Depolarizasyon sırasında voltaj kapılı Na{us:+|} kanalları açılır ve Na{us:+|} difüzyonla hücre içine girer.",
+          "dogru": true
+        },
+        {
+          "metin": "Çok sayıda nörondan oluşan bir sinir kordonunda Ya Hep Ya Hiç Yasası aynen geçerlidir.",
+          "dogru": false
+        },
+        {
+          "metin": "Nöron boyunca impuls iletimi elektrokimyasal, sinaps boşluğunda ise kimyasal yolla gerçekleşir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Duyu reseptörü çeşitlerini algıladıkları uyaran ve bulundukları duyu organlarına göre tamamlayınız.",
+      "basliklar": [
+        "Reseptör Çeşidi",
+        "Algıladığı Uyaran",
+        "Bulunduğu Duyu Organı"
+      ],
+      "satirlar": [
+        [
+          "Fotoreseptör",
+          "Işık enerjisi",
+          {
+            "b": "Göz (Ağ tabaka / Retina)"
+          }
+        ],
+        [
+          "Kemoreseptör",
+          "Sıvıda çözünen kimyasal madde",
+          {
+            "b": "Burun ve Dil"
+          }
+        ],
+        [
+          "Mekanoreseptör",
+          "Basınç, dokunma, ses ve hareket",
+          {
+            "b": "Deri ve İç kulak"
+          }
+        ],
+        [
+          "Termoreseptör",
+          "Sıcaklık ve soğukluk değişimi",
+          {
+            "b": "Deri ve Hipotalamus"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sinaps bölgesinde impulsun bir nörondan diğerine aktarılma basamaklarını oluş sırasına diziniz.",
+      "ogeler": [
+        "İmpulsun akson ucuna ulaşmasıyla hücre içine Ca{us:2+|} iyonlarının girmesi",
+        "Sinaptik keselerden nörotransmitter maddelerin ekzositozla boşluğa salgılanması",
+        "Nörotransmitterlerin sinaps boşluğunda difüzyonla yayılarak dendrit reseptörlerine bağlanması",
+        "Komşu nöronun dendrit zarındaki Na{us:+|} kanallarının açılarak depolarizasyonun başlaması"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki refleks yayında eline sıcak cisim değen bir bireyin elini çekmesi sürecinde uyartıyı merkezî sinir sisteminden kaslara",
+      "secenekler": [
+        "Motor (Götürücü) nöron",
+        "Duyu (Getirici) nöronu",
+        "Ara (Merkez) nöron",
+        "Mikroglia hücresi"
+      ],
+      "dogru": 0,
+      "cozum": "Duyu nöronu uyartıyı reseptörden merkeze taşır, ara nöron değerlendirir, motor nöron ise cevabı merkezden kas veya salgı bezine (efektöre) götürür."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Nöron gövdesinde protein sentezinin yoğun olduğu granüllü ER kümelerine ___ cisimcikleri denir.",
+          "cevap": "Nissl"
+        },
+        {
+          "metin": "Merkezî sinir sistemindeki nöronların aksonlarında miyelin kılıfı ___ hücreleri oluşturur.",
+          "cevap": "oligodendrosit"
+        },
+        {
+          "metin": "Sinapslarda impulsun karşı nörona geçmesini engelleyerek yalnız hedef organın uyarılmasını sağlayan duruma ___ direnç denir.",
+          "cevap": "seçici"
+        }
+      ],
+      "fazla": [
+        "astrosit"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Glia (destek) hücrelerini ve sinaptik kavramları görevleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Mikroglia",
+          "Fagositoz yaparak sinir sistemini mikroorganizmalara karşı savunma"
+        ],
+        [
+          "Astrosit",
+          "Kan-beyin bariyerini oluşturarak madde alışverişini düzenleme"
+        ],
+        [
+          "Ependim Hücresi",
+          "Beyin-omurilik sıvısı (BOS) üreterek sinir sistemini koruma"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Nöron fizyolojisi ve duyu reseptörleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Akson çapının artması iç direnci azalttığı için nöronda impuls iletim hızını artırır.",
+          "dogru": true
+        },
+        {
+          "metin": "Sinaps boşluğunda nörotransmitter maddelerin yayılması aktif taşımayla gerçekleşir.",
+          "dogru": false
+        },
+        {
+          "metin": "Nöronda impuls iletimi sırasında oksijenli solunum hızlanır, ATP harcanır ve ısı açığa çıkar.",
+          "dogru": true
+        },
+        {
+          "metin": "Kemoreseptörlerin uyarılabilmesi için koku ve tat maddelerinin mukus veya tükürükte çözünmesi gerekir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Sinir dokusunun uyartı alıp ileten özelleşmiş yapı ve görev birimi hücresi (5 harf)",
+          "cevap": "NÖRON",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Motor nöronun uyartıyı taşıdığı tepki organı olan kas veya salgı bezi (7 harf)",
+          "cevap": "EFEKTÖR",
+          "anahtar": 5
+        },
+        {
+          "ipucu": "İç ve dış çevreden gelen fiziksel veya kimyasal uyaranları alan özel yapı (8 harf)",
+          "cevap": "RESEPTÖR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Hücre gövdesinden çıkan ve impulsu diğer hücrelere taşıyan tek uzun uzantı (5 harf)",
+          "cevap": "AKSON",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Nöron gövdesinde bulunan granüllü endoplazmik retikulum kümeleri (5 harf)",
+          "cevap": "NİSSL",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "NÖRON"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Bir nöron boyunca gerçekleşen impuls iletimi ile iki nöron arasındaki sinapsta gerçekleşen impuls iletimini hız ve",
+      "cevap": "Nöron boyunca iletim elektrokimyasal olduğundan çok hızlıdır.",
+      "satir": 1
+    }
+  ]
+}

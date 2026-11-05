@@ -1,0 +1,272 @@
+{
+  "sinif": 11,
+  "ders": "kimya",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Standart Oluşum Entalpileriyle Tepkime Entalpisinin Hesaplanması",
+  "ciktilar": [
+    "Standart molar oluşum entalpisi kavramını ve elementlerin standart koşullardaki referans entalpi değerlerini açıklar.",
+    "Kimyasal tepkimelerin standart tepkime entalpilerini, ürünlerin ve girenlerin standart oluşum entalpilerini kullanarak hesaplar.",
+    "Stokiyometrik katsayılar ve maddenin fiziksel hâlinin tepkime entalpisi üzerindeki etkisini yorumlar."
+  ],
+  "hatirla": [
+    "Standart koşullarda (25 °C ve 1 atm) en kararlı fiziksel hâlinde ve allotropunda bulunan serbest elementlerin (O{alt:2}(g), C(grafit), Fe(k)) oluşum entalpisi sıfırdır (ΔH°{alt:f} = 0).",
+    "1 mol bileşiğin kendi kararlı elementlerinden sentezlenmesi sırasındaki ısı değişimine standart molar oluşum entalpisi (ΔH°{alt:f}) denir.",
+    "Standart tepkime entalpisi ΔH°{alt:tepkime} = Σ n.ΔH°{alt:f}(Ürünler) - Σ m.ΔH°{alt:f}(Girenler) bağıntısıyla hesaplanır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Termokimyasal kavramları ve referans değerleri doğru karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "25 °C (298 K) ve 1 atm",
+          "Termokimyada kabul edilen standart ölçüm koşulları"
+        ],
+        [
+          "Standart Molar Oluşum Entalpisi",
+          "1 mol bileşiğin kararlı elementlerinden oluşmasındaki ısı değişimi"
+        ],
+        [
+          "O{alt:2}(g), H{alt:2}(g), C(grafit), Br{alt:2}(s)",
+          "Standart oluşum entalpisi sıfır (ΔH°{alt:f} = 0) kabul edilen elementler"
+        ],
+        [
+          "Σ ΔH°{alt:f}(Ürünler) - Σ ΔH°{alt:f}(Girenler)",
+          "Standart tepkime entalpisini (ΔH°{alt:tepkime}) veren temel bağıntı"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki oluşum entalpisi değerlerine göre CH{alt:4}(g) + 2O{alt:2}(g) -> CO{alt:2}(g) + 2H{alt:2}O(s) tepkimesinin standart entalpi değişimi (ΔH°) kaç kJ'dür?",
+      "secenekler": [
+        "-891",
+        "-605",
+        "+891",
+        "-1041"
+      ],
+      "dogru": 0,
+      "cozum": "ΔH° = [ΔH°_f(CO2) + 2.ΔH°_f(H2O)] - [ΔH°_f(CH4) + 0] = [-394 + 2.(-286)] - (-75) = -966 + 75 = -891 kJ bulunur."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "CO(g) + {kesir:1|2}O{alt:2}(g) -> CO{alt:2}(g) tepkimesinde 1 mol CO{alt:2}(g) oluşmasına rağmen bu tepkimenin entalpisi neden CO{alt:2}'nin standart molar oluşum entalpisi değildir?",
+      "cevap": "Çünkü girenlerdeki CO(g) kararlı bir element değil bir.",
+      "satir": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Standart oluşum ve tepkime entalpileriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Standart koşullarda C(grafit) için ΔH°{alt:f} = 0 iken, allotropu olan C(elmas) için ΔH°{alt:f} sıfırdan farklıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "N{alt:2}(g) + 3H{alt:2}(g) -> 2NH{alt:3}(g) tepkimesinde ΔH° = -92 kJ ise NH{alt:3}(g)'nin molar oluşum entalpisi -46 kJ/mol'dür.",
+          "dogru": true
+        },
+        {
+          "metin": "Aynı bileşiğin katı, sıvı ve gaz hâllerinin standart molar oluşum entalpileri birbirine eşittir.",
+          "dogru": false
+        },
+        {
+          "metin": "Ürünlerin oluşum entalpileri toplamı girenlerinkinden küçükse tepkime ekzotermiktir (ΔH° < 0).",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Verilen tepkime ve standart oluşum entalpisi verilerine göre tabloyu tamamlayınız.",
+      "basliklar": [
+        "Kimyasal Tepkime veya Madde",
+        "Verilen Entalpi Bilgisi",
+        "İstenen Termokimyasal Değer"
+      ],
+      "satirlar": [
+        [
+          "C(grafit) + O2(g) -> CO2(g)",
+          "ΔH°_f[CO2(g)] = -394 kJ/mol",
+          {
+            "b": "Tepkime entalpisi ΔH° = -394 kJ"
+          }
+        ],
+        [
+          "N2(g) + 3H2(g) -> 2NH3(g)",
+          "ΔH°_tepkime = -92 kJ",
+          {
+            "b": "ΔH°_f[NH3(g)] = -46 kJ/mol"
+          }
+        ],
+        [
+          "2SO2(g) + O2(g) -> 2SO3(g)",
+          "SO2: -297, SO3: -396 kJ/mol",
+          {
+            "b": "Tepkime entalpisi ΔH° = -198 kJ"
+          }
+        ],
+        [
+          "H2O(s) -> H2O(g) dönüşümü",
+          "Sıvıdan gaza geçiş ısı alır",
+          {
+            "b": "ΔH°_f[H2O(g)] > ΔH°_f[H2O(s)]"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki standart oluşum entalpilerini kullanarak belirli kütledeki maddenin tepkimesinden açığa çıkan ısıyı bulma adımlarını sıraya diziniz.",
+      "ogeler": [
+        "Tepkime denklemini denkleştirerek serbest kararlı elementlerin oluşum entalpisi yerine sıfır (0) yazma",
+        "Ürünlerin ve girenlerin ΔH°{alt:f} değerlerini denklemdeki mol katsayılarıyla ayrı ayrı çarpıp toplama",
+        "ΔH°{alt:tepkime} = Σ ΔH°{alt:f}(Ürünler) - Σ ΔH°{alt:f}(Girenler) formülüyle standart tepkime entalpisini bulma",
+        "Verilen madde kütlesini mole (n = {kesir:m|M{alt:A}}) çevirip stokiyometrik orantıyla açığa çıkan ısıyı hesaplama"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki koşullara göre aşağıdaki tepkimelerden hangisinin standart entalpi değişimi (ΔH°) doğrudan ürünün standart molar oluşum entalpisine (ΔH°{alt:f}) eşittir?",
+      "secenekler": [
+        "C(grafit, k) + 2H{alt:2}(g) -> CH{alt:4}(g)",
+        "CO(g) + {kesir:1|2}O{alt:2}(g) -> CO{alt:2}(g)",
+        "2H{alt:2}(g) + O{alt:2}(g) -> 2H{alt:2}O(s)",
+        "CaO(k) + CO{alt:2}(g) -> CaCO{alt:3}(k)"
+      ],
+      "dogru": 0,
+      "cozum": "Yalnızca C(grafit, k) + 2H2(g) -> CH4(g) tepkimesinde 1 mol bileşik kendi elementlerinin en kararlı hâllerinden sentezlenmektedir."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Standart koşullarda bromun en kararlı fiziksel hâli olan Br{alt:2}(s) sıvısının oluşum entalpisi ___ kabul edilir.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "Oksijenin O{alt:2}(g) allotropunun oluşum entalpisi sıfır iken ___ (O{alt:3}) gazının oluşum entalpisi sıfırdan farklıdır.",
+          "cevap": "ozon"
+        },
+        {
+          "metin": "Bir tepkimede ΔH° = -400 kJ ise tepkime sırasında ortama +400 kJ ısı ___ çıkar.",
+          "cevap": "açığa"
+        }
+      ],
+      "fazla": [
+        "elmas"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Maddeleri ve tepkime türlerini termokimyasal özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Fe(k), Na(k) ve Hg(s)",
+          "25 °C ve 1 atm'de ΔH°{alt:f} = 0 kJ/mol olan kararlı metaller"
+        ],
+        [
+          "ΔH°{alt:f}[H{alt:2}O(s)] = -286 kJ/mol",
+          "1 mol sıvı su oluşurken 286 kJ ısı açığa çıktığını gösteren değer"
+        ],
+        [
+          "Endotermik Tepkime (ΔH° > 0)",
+          "Ürünlerin toplam oluşum entalpisinin girenlerinkinden büyük olduğu tepkime"
+        ],
+        [
+          "Molar Yanma Entalpisi",
+          "1 mol maddenin O{alt:2}(g) ile tamamen yanması sırasındaki ısı değişimi"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Termokimyasal hesaplamalarla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Termokimyada standart koşullar 0 °C sıcaklık ve 1 atm basınç (NŞA) olarak alınır.",
+          "dogru": false
+        },
+        {
+          "metin": "Tepkime denklemi hangi katsayıyla çarpılırsa tepkime entalpisi (ΔH°) de aynı sayıyla çarpılır.",
+          "dogru": true
+        },
+        {
+          "metin": "H{us:+|}(suda) + OH{us:-|}(suda) -> H{alt:2}O(s) tepkimesinin ΔH° değeri suyun molar oluşum entalpisidir.",
+          "dogru": false
+        },
+        {
+          "metin": "Suyun gaz hâlinin oluşum entalpisi (-242 kJ/mol), sıvı hâlininkinden (-286 kJ/mol) daha büyüktür.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "6,02 x 10{us:|2}{us:|3} tanecik içeren madde miktarı birimi (3 harf)",
+          "cevap": "MOL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Oksijenin oluşum entalpisi sıfırdan farklı olan O3 formundaki allotropu (4 harf)",
+          "cevap": "OZON",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sabit basınçta gerçekleşen tepkimedeki ısı değişimi, H (7 harf)",
+          "cevap": "ENTALPİ",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Karbon elementinin standart oluşum entalpisi sıfır kabul edilen en kararlı allotropu (6 harf)",
+          "cevap": "GRAFİT",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Tepkime sonunda oluşan yeni maddeler (7 harf)",
+          "cevap": "ÜRÜNLER",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "MOLAR"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "CaCO{alt:3}(k) -> CaO(k) + CO{alt:2}(g) tepkimesinde ΔH° = +178 kJ, ΔH°{alt:f}[CaO] = -635 ve ΔH°{alt:f}[CO{alt:2}] = -394 kJ/mol ise ΔH°{alt:f}[CaCO{alt:3}] kaç kJ/mol'dür?",
+      "cevap": "ΔH° = [(-635) + (-394)] - ΔH°_f(CaCO3) = +178 => -1029.",
+      "satir": 1
+    }
+  ]
+}

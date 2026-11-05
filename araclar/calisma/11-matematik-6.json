@@ -1,0 +1,267 @@
+{
+  "sinif": 11,
+  "ders": "matematik",
+  "hafta": 6,
+  "tarih": "19-23 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Dörtgenlerin Özellikleri",
+  "ciktilar": [
+    "Üçgenlerde açı, benzerlik ve alan özelliklerinden yola çıkarak genel dörtgenlerin açı, köşegen ve alan bağıntılarını doğrular.",
+    "Yamuk, paralelkenar, eşkenar dörtgen, dikdörtgen, kare ve deltoidin kenar, açı, köşegen, simetri ve alan özelliklerini karşılaştırır.",
+    "Özel dörtgenlerin hiyerarşik sınıflandırmasını ve özelliklerini kullanarak geometri problemlerini çözer."
+  ],
+  "hatirla": [
+    "Her konveks dörtgenin iç açıları toplamı ve dış açıları toplamı 360°'dir; köşegenli alan bağıntısı Alan = {kesir:1|2} . |AC| . |BD| . sin α şeklindedir.",
+    "Yamukta orta taban uzunluğu e = {kesir:a + c|2} ve alan Alan = {kesir:a + c|2} . h formülüyle bulunur.",
+    "Paralelkenarda köşegenler birbirini ortalar; eşkenar dörtgen, kare ve deltoidde köşegenler birbirini dik keser ve açıortay özelliği gösterir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Dörtgenlerle ilgili matematiksel bağıntıları doğru karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{kesir:a + c|2}",
+          "Alt tabanı a, üst tabanı c olan yamuğun orta taban uzunluğu"
+        ],
+        [
+          "{kesir:1|2} . e . f . sin α",
+          "Köşegen uzunlukları e ve f olan dörtgenin sinüslü alan bağıntısı"
+        ],
+        [
+          "{us:a|2} + {us:c|2} = {us:b|2} + {us:d|2}",
+          "Köşegenleri dik kesişen dörtgende karşılıklı kenarların kareleri toplamı"
+        ],
+        [
+          "{kesir:|a - c||2}",
+          "Yamukta köşegenlerin orta taban üzerinde ayırdığı parçanın uzunluğu"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki köşegenleri dik kesişen ABCD dörtgeninde |AB| = 5 cm, |BC| = 8 cm ve |CD| = 9 cm olduğuna göre |AD| = x kaç cm'dir?",
+      "secenekler": [
+        "{kok:42}",
+        "6",
+        "{kok:38}",
+        "7"
+      ],
+      "dogru": 0,
+      "cozum": "Köşegenleri dik kesişen dörtgende 5{us:|2} + 9{us:|2} = 8{us:|2} + x{us:|2} => 25 + 81 = 64 + x{us:|2} => x{us:|2} = 42 => x = {kok:42} cm bulunur."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Köşegen uzunlukları toplamı |AC| + |BD| = 28 cm ve alanı 96 {us:cm|2} olan bir dörtgenin kenar orta noktalarını birleştiren KLMN paralelkenarının çevresi ve alanı kaçtır?",
+      "cevap": "Varignon teoremine göre Çevre(KLMN) = |AC| + |BD| = 28 cm ve Alan(KLMN) = 96 / 2 = 48 cm{us:|2} olur.",
+      "satir": 1
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Özel dörtgenlerin özellikleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Her konveks dörtgenin hem iç açıları toplamı hem de dış açıları toplamı 360°'dir.",
+          "dogru": true
+        },
+        {
+          "metin": "İkizkenar yamukta ve dikdörtgende köşegen uzunlukları birbirine eşittir (|AC| = |BD|).",
+          "dogru": true
+        },
+        {
+          "metin": "Genel bir dikdörtgenin köşegenleri her zaman birbirini dik keser ve açıortaydır.",
+          "dogru": false
+        },
+        {
+          "metin": "Paralelkenarda ardışık iki iç açının açıortayları birbirine dik (90°) kesişir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Özel dörtgenlerin köşegen, simetri ve alan özelliklerini verilen bilgilere göre tamamlayınız.",
+      "basliklar": [
+        "Özel Dörtgen",
+        "Verilen Uzunluk Bilgileri",
+        "Hesaplanan Uzunluk / Alan"
+      ],
+      "satirlar": [
+        [
+          "Yamuk",
+          "Alt taban a = 14 cm, üst c = 6 cm, h = 8 cm",
+          {
+            "b": "Orta taban = 10 cm, Alan = 80 cm{us:|2}"
+          }
+        ],
+        [
+          "Eşkenar Dörtgen",
+          "Köşegenleri e = 12 cm ve f = 16 cm",
+          {
+            "b": "Kenar = 10 cm, Alan = 96 cm{us:|2}"
+          }
+        ],
+        [
+          "Dik Köşegenli Dik Yamuk",
+          "Üst taban c = 4 cm, alt taban a = 9 cm",
+          {
+            "b": "Yükseklik h = {kok:4.9} = 6 cm"
+          }
+        ],
+        [
+          "Kare",
+          "Bir kenar uzunluğu a = 6 cm",
+          {
+            "b": "Köşegen = 6{kok:2} cm, Alan = 36 cm{us:|2}"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki ikizkenar yamukta (|AB| = 20 cm, |DC| = 8 cm, |AD| = |BC| = 10 cm) alanı bulmak için izlenecek adımları sıraya diziniz.",
+      "ogeler": [
+        "Üst tabanın D ve C köşelerinden alt tabana [DH] ve [CK] dikmelerini indirerek ortada dikdörtgen oluşturma",
+        "Alt tabanda yanlarda kalan eş parçaları |AH| = |KB| = {kesir:20 - 8|2} = 6 cm olarak hesaplama",
+        "AHD dik üçgeninde (6-8-10 özel üçgeni) yamuğun yüksekliğini h = 8 cm olarak bulma",
+        "Alan = {kesir:20 + 8|2} . 8 = 14 . 8 = 112 {us:cm|2} bağıntısıyla yamuğun alanını hesaplama"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki konveks ABCD dörtgeninde m(C) = 115° ve m(D) = 65° olduğuna göre A ve B ardışık iç açıortaylarının kesiştiği E",
+      "secenekler": [
+        "90°",
+        "85°",
+        "95°",
+        "100°"
+      ],
+      "dogru": 0,
+      "cozum": "Ardışık iki iç açıortayın kesişim açısı diğer iki açının aritmetik ortalamasıdır: m(AEB) = (115° + 65°) / 2 = 180° / 2 = 90°."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Tabanları ortak iki farklı ikizkenar üçgenin birleşmesiyle oluşan dörtgene ___ denir.",
+          "cevap": "deltoid"
+        },
+        {
+          "metin": "Hem dikdörtgenin hem de eşkenar dörtgenin tüm özelliklerini taşıyan düzgün dörtgen ___'dir.",
+          "cevap": "kare"
+        },
+        {
+          "metin": "Karşılıklı kenarları paralel ve eşit olan, köşegenleri birbirini ortalayan dörtgene ___ denir.",
+          "cevap": "paralelkenar"
+        }
+      ],
+      "fazla": [
+        "yamuk"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Özel dörtgenleri doğru simetri ve köşegen özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Kare",
+          "4 tane doğru (yansıma) simetri ekseni bulunan ve köşegenleri 45°-45° bölen dörtgen"
+        ],
+        [
+          "Eşkenar Dörtgen",
+          "Kenarları eşit olup köşegenleri dik kesişen ve 2 simetri ekseni olan paralelkenar"
+        ],
+        [
+          "Genel Paralelkenar",
+          "Dönme simetrisi olan ancak yansıma (doğru) simetri ekseni bulunmayan dörtgen"
+        ],
+        [
+          "İkizkenar Yamuk",
+          "Tabanların orta noktalarını birleştiren 1 tane simetri ekseni olan yamuk"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Dörtgenler hiyerarşisi ve özellikleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Her kare aynı zamanda hem bir dikdörtgen hem de bir eşkenar dörtgendir.",
+          "dogru": true
+        },
+        {
+          "metin": "Her eşkenar dörtgen aynı zamanda bir deltoid ve bir paralelkenardır.",
+          "dogru": true
+        },
+        {
+          "metin": "Deltoidde her iki köşegen de birbirini iki eş parçaya böler (ortalar).",
+          "dogru": false
+        },
+        {
+          "metin": "Paralelkenarın köşegenleri paralelkenarın alanını dört eşit üçgensel bölgeye ayırır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Dört kenarı eşit, dört açısı 90° olan düzgün dörtgen (4 harf)",
+          "cevap": "KARE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "En az iki kenarı birbirine paralel olan dörtgen (5 harf)",
+          "cevap": "YAMUK",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Tabanları ortak iki ikizkenar üçgenden oluşan özel dörtgen (7 harf)",
+          "cevap": "DELTOİD",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Komşu olmayan iki köşeyi birleştiren doğru parçası (7 harf)",
+          "cevap": "KÖŞEGEN",
+          "anahtar": 3
+        }
+      ],
+      "sonuc": "KALE"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Çevresi 40 cm ve köşegenlerinden birinin uzunluğu 12 cm olan bir eşkenar dörtgenin diğer köşegen uzunluğunu ve alanını hesaplayınız.",
+      "cevap": "Bir kenar 40/4 = 10 cm, yarı köşegen 6 cm olur. 6-8-10 üçgeninden diğer köşegen 16 cm ve Alan = (12.16)/2 = 96 cm{us:|2} bulunur.",
+      "satir": 1
+    }
+  ]
+}
