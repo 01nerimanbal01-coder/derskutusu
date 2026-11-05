@@ -1,0 +1,250 @@
+{
+  "sinif": 7,
+  "ders": "matematik",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Günlük Hayat Durumlarında Dikdörtgenler Prizmasının Yüzey Alanı ve Hacmi İle Modellenen Problemleri Çözme ve Sıvı Ölçme Birimleri (MAT.7.4.6)",
+  "ciktilar": [
+    "Günlük hayat durumlarında dikdörtgenler prizması ile modellenen cisimlerin yüzey alanı ve hacmine yönelik problemlerde matematiksel bileşenleri belirler (MAT.7.4.6.a-b).",
+    "Hacim ölçme birimleri (m{us:|3}, dm{us:|3}, cm{us:|3}) ile sıvı ölçme birimleri (L, mL) arasındaki dönüşümleri (1 dm{us:|3} = 1 L, 1 cm{us:|3} = 1 mL) problem çözümlerinde uygular (MAT.7.4.5-6).",
+    "Kaplama, boyama (yüzey alanı) ve sıvı doldurma, koli yerleştirme (hacim) problemlerini çözmek için stratejiler geliştirir (MAT.7.4.6.d-g)."
+  ],
+  "hatirla": [
+    "Ayrıtları {koyu:a, b, c} olan dikdörtgenler prizmasının yüzey alanı {koyu:2·(a·b + a·c + b·c)}, küpün yüzey alanı {koyu:6·}{us:a|2} bağıntısıyla bulunur (kaplama ve boyama).",
+    "Dikdörtgenler prizmasının hacmi {koyu:V = Taban Alanı · Yükseklik = a · b · c}, küpün hacmi {koyu:V = }{us:a|3} bağıntısıyla hesaplanır (iç kapasite ve istifleme).",
+    "Hacim birimleri 1000’er, sıvı birimleri 10’ar değişir; aralarındaki köprü {koyu:1 }{us:dm|3}{koyu: = 1 L = 1000 mL}, {koyu:1 }{us:cm|3}{koyu: = 1 mL} ve {koyu:1 }{us:m|3}{koyu: = 1000 L} eşitlikleridir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki matematiksel bağıntı ve dönüşümleri sağ sütundaki karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "2 · (a·b + a·c + b·c)",
+          "Kapalı dikdörtgenler prizmasının yüzey alanı bağıntısı"
+        ],
+        [
+          "a · b · c (Taban Alanı × Yükseklik)",
+          "Dikdörtgenler prizmasının hacim bağıntısı"
+        ],
+        [
+          "1 dm{us:|3} = 1000 cm{us:|3}",
+          "1 Litre (L) = 1000 Mililitre (mL) sıvı ölçüsü karşılığı"
+        ],
+        [
+          "a·b + 2 · (a·c + b·c)",
+          "Üstü açık dikdörtgenler prizması havuzun 5 yüzünün alanı"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kapalı hediye kutusunun tüm dış yüzeyini kaplamak için kaç {us:dm|2} kâğıt gerekir ve hacmi kaç {us:dm|3}’tür?",
+      "secenekler": [
+        "Yüzey alanı 47 dm{us:|2} — Hacmi 60 dm{us:|3}",
+        "Yüzey alanı 94 dm{us:|2} — Hacmi 60 dm{us:|3}",
+        "Yüzey alanı 94 dm{us:|2} — Hacmi 120 dm{us:|3}",
+        "Yüzey alanı 120 dm{us:|2} — Hacmi 94 dm{us:|3}"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dikdörtgenler prizması kapların hacmini ({us:cm|3}) ve tam dolduğunda alacağı sıvı miktarını (L) tabloya yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Prizmatik Kap ve Ayrıtları",
+        "Hacmi (cm{us:|3})",
+        "Sıvı Kapasitesi (Litre)"
+      ],
+      "satirlar": [
+        [
+          "1. Meyve Suyu (10×5×20 cm)",
+          "1.000 cm{us:|3}",
+          {
+            "b": "1 Litre"
+          }
+        ],
+        [
+          "2. Zeytinyağı Tenekesi (20×10×25 cm)",
+          {
+            "b": "5.000 cm{us:|3}"
+          },
+          {
+            "b": "5 Litre"
+          }
+        ],
+        [
+          "3. Cam Akvaryum (50×30×40 cm)",
+          {
+            "b": "60.000 cm{us:|3}"
+          },
+          "60 Litre"
+        ],
+        [
+          "4. Su Deposu (100×50×60 cm)",
+          "300.000 cm{us:|3}",
+          {
+            "b": "300 Litre"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Prizmaların yüzey alanı, hacmi ve sıvı ölçme birimleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Hacim ölçümü ile sıvı ölçümü arasındaki dönüşümde 1 desimetreküp (1 dm{us:|3}) tam 1 litreye eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir ayrıtı 5 cm olan küp biçimindeki kapalı bir tahta blokun tüm yüzey alanı 125 cm{us:|2}’dir.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir dikdörtgenler prizmasının tüm ayrıtları 2 katına çıkarılırsa hacmi 8 katına çıkar.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir kaptaki su farklı taban alanına sahip başka bir prizmatik kaba döküldüğünde suyun hacmi değişir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun matematiksel kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Kapalı bir kutuyu kaplamak için gereken karton miktarı hesaplanırken prizmanın ___ alanı bulunur.",
+          "cevap": "yüzey"
+        },
+        {
+          "metin": "Sıvı ölçme birimlerine geçişte 1 {us:cm|3} hacim tam 1 ___ sıvıya karşılık gelir.",
+          "cevap": "mililitre"
+        },
+        {
+          "metin": "İki eş küp yan yana yapıştırıldığında oluşan kare prizmanın dış yüzey alanı ___ kare yüz kadar azalır.",
+          "cevap": "iki"
+        }
+      ],
+      "fazla": [
+        "çevre"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dikdörtgenler prizması biçimli akvaryumun {kesir:3|4}’ü su ile doludur. Akvaryumda kaç litre su vardır?",
+      "secenekler": [
+        "120 litre su vardır",
+        "160 litre su vardır",
+        "180 litre su vardır",
+        "240 litre su vardır"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki üstü açık yüzme havuzunun tabanı ve yan duvarları fayansla kaplanacaktır. Bu iş için toplam kaç {us:m|2} fayans gerekir?",
+      "secenekler": [
+        "120 m{us:|2} fayans gerekir",
+        "124 m{us:|2} fayans gerekir",
+        "148 m{us:|2} fayans gerekir",
+        "184 m{us:|2} fayans gerekir"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki büyük kolinin içine, bir ayrıtı 10 cm olan küp kutulardan boşluk kalmadan en fazla kaç adet sığacağını işlemle yazınız.",
+      "cevap": "V(koli) = 60·40·30 = 72.000 cm{us:|3}, V(küp) = 1.000 cm{us:|3}; 72.000.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört farklı prizmatik kapta bulunan sıvı miktarlarını {koyu:azdan çoğa} doğru 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "K kabı: 450 cm{us:|3} süt (0,45 L)",
+        "L kabı: 1,2 dm{us:|3} meyve suyu (1,2 L)",
+        "M kabı: 2500 mL zeytinyağı (2,5 L)",
+        "N kabı: 0,04 m{us:|3} içme suyu (40 L)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki 1. kapta bulunan suyun tamamı boş olan 2. kaba döküldüğünde 2. kaptaki suyun yüksekliği ({koyu:h}) kaç cm olur?",
+      "secenekler": [
+        "6 cm yüksekliğe ulaşır",
+        "8 cm yüksekliğe ulaşır",
+        "10 cm yüksekliğe ulaşır",
+        "12 cm yüksekliğe ulaşır"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle «altı dikdörtgensel yüzden oluşan üç boyutlu geometrik cisim» kavramını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Tüm ayrıtları birbirine eşit olan özel dikdörtgenler prizması",
+          "cevap": "KÜP",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Bir desimetreküp hacme eşit olan temel sıvı ölçme birimi",
+          "cevap": "LİTRE",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Bir cismin uzayda (boşlukta) kapladığı yer miktarı",
+          "cevap": "HACİM",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Kaplama ve boyama sorularında alanı hesaplanan dış kısım",
+          "cevap": "YÜZEY",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Bin desimetreküpe (1000 L) eşit olan hacim ölçme birimi",
+          "cevap": "METREKÜP",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Prizmada komşu iki yüzün kesiştiği doğru parçası",
+          "cevap": "AYRIT",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "PRİZMA"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki bir ayrıtı 4 cm olan iki eş küp yapıştırılarak kare prizma elde edildiğinde toplam hacmin ve yüzey alanının nasıl değiştiğini açıklayınız.",
+      "cevap": "Toplam hacim değişmez (128 cm{us:|3} kalır); yapışan 2 kare yüz içeride kaldığı için yüzey alanı.",
+      "satir": 2
+    }
+  ]
+}

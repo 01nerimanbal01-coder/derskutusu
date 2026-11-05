@@ -1,0 +1,267 @@
+{
+  "sinif": 9,
+  "ders": "kimya",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Atom Orbitalleri ve Elektron Dizilimi: Orbital Türleri ve Atom Orbitallerinin Bağıl Enerjileri",
+  "ciktilar": [
+    "Modern atom teorisinde orbital (elektron bulutu) kavramını, enerji düzeylerini (katmanları) ve s, p, d, f alt kabuklarını açıklar.",
+    "Verilere dayalı olarak atom orbitallerinin bağıl enerjilerine ilişkin önermeler oluşturur ve (n + l) kuralını uygular.",
+    "Atom orbitallerinin bağıl enerjilerine ilişkin bilimsel veriye dayalı olan ve olmayan önermeleri karşılaştırır."
+  ],
+  "hatirla": [
+    "Her n. enerji düzeyinde {us:n|2} tane orbital ve en fazla 2{us:n|2} tane elektron bulunur.",
+    "s, p, d, f alt kabukları sırasıyla 1, 3, 5, 7 orbitalden oluşur; en fazla 2, 6, 10, 14 elektron alır.",
+    "Madelung-Kletchkowski (n + l) kuralına göre (n + l) büyüdükçe enerji artar; eşitlikte n büyük olanın enerjisi büyüktür (s=0, p=1, d=2, f=3)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Alt kabuk (orbital) türlerini alt orbital sayıları ve elektron kapasiteleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "s alt kabuğu (l = 0)",
+          "1 orbital — En fazla 2 elektron ({us:s|2})"
+        ],
+        [
+          "p alt kabuğu (l = 1)",
+          "3 orbital — En fazla 6 elektron ({us:p|6})"
+        ],
+        [
+          "d alt kabuğu (l = 2)",
+          "5 orbital — En fazla 10 elektron ({us:d|10})"
+        ],
+        [
+          "f alt kabuğu (l = 3)",
+          "7 orbital — En fazla 14 elektron ({us:f|14})"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki (n + l) kuralına göre çok elektronlu bir atomda 3d, 4s ve 4p orbitallerinin bağıl enerjileri küçükten büyüğe nasıl sıralanır?",
+      "secenekler": [
+        "4s < 3d < 4p",
+        "3d < 4s < 4p",
+        "4s < 4p < 3d",
+        "4p < 3d < 4s"
+      ],
+      "dogru": 0,
+      "cozum": "4s (4+0=4), 3d (3+2=5) ve 4p (4+1=5); eşitlikte n büyük olan büyük olduğundan 4s < 3d < 4p olur."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "3. temel enerji düzeyinde (n = 3, M katmanı) hangi orbital türleri bulunur ve bu katman en fazla kaç elektron alır?",
+      "cevap": "3s, 3p ve 3d orbitalleri (toplam {us:3|2} = 9 orbital) bulunur; en fazla.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Atom orbitalleri ve bağıl enerjilerle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Bir tek orbital (kutu) zıt spinli en fazla 2 elektron alabilir.",
+          "dogru": true
+        },
+        {
+          "metin": "1. temel enerji düzeyinde (K katmanı) hem 1s hem de 1p orbitali bulunur.",
+          "dogru": false
+        },
+        {
+          "metin": "Çok elektronlu atomda 2{alt:p|x}, 2{alt:p|y} ve 2{alt:p|z} orbitalleri eş enerjilidir.",
+          "dogru": true
+        },
+        {
+          "metin": "Baş kuantum sayısı büyüdükçe s orbitalinin hacmi ve enerjisi artar (1s < 2s < 3s).",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Temel enerji düzeylerini içerdiği orbital türleri, toplam orbital ({us:n|2}) ve elektron kapasitesine (2{us:n|2}) göre tamamlayınız.",
+      "basliklar": [
+        "Katman (n)",
+        "Bulunan Alt Kabuklar",
+        "Toplam Orbital ve Maks. Elektron"
+      ],
+      "satirlar": [
+        [
+          "n = 1 (K)",
+          "Yalnızca 1s",
+          {
+            "b": "1 orbital — 2 elektron"
+          }
+        ],
+        [
+          "n = 2 (L)",
+          "2s ve 2p",
+          {
+            "b": "4 orbital — 8 elektron"
+          }
+        ],
+        [
+          "n = 3 (M)",
+          "3s, 3p ve 3d",
+          {
+            "b": "9 orbital — 18 elektron"
+          }
+        ],
+        [
+          "n = 4 (N)",
+          "4s, 4p, 4d ve 4f",
+          {
+            "b": "16 orbital — 32 elektron"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki Aufbau (inşa) sırasına göre verilen dört alt kabuğu bağıl enerjisi en düşük olandan en yüksek olana sıralayınız.",
+      "ogeler": [
+        "2s orbitali (n = 2, l = 0 ➔ n + l = 2)",
+        "2p orbitali (n = 2, l = 1 ➔ n + l = 3)",
+        "3p orbitali (n = 3, l = 1 ➔ n + l = 4)",
+        "3d orbitali (n = 3, l = 2 ➔ n + l = 5)"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki karşılaştırma panosuna göre Bohr \"yörünge\" kavramı ile Modern Teori \"orbital\" kavramı için hangisi doğrudur?",
+      "secenekler": [
+        "Yörünge 2 boyutlu dairesel yol, orbital 3 boyutlu olasılık bölgesidir",
+        "Yörüngede belirsizlik ilkesi geçerli, orbitalde hız ve konum kesindir",
+        "Her yörünge en fazla 2 elektron, her orbital en fazla 18 elektron alır",
+        "Yörünge çok elektronlu, orbital yalnız tek elektronlu atomları açıklar"
+      ],
+      "dogru": 0,
+      "cozum": "Bohr yörüngesi 2B çembersel yoldur; modern atom teorisindeki orbital ise 3B elektron bulutu olasılık bölgesidir."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kimya kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Küresel simetriye sahip olan ve her katmanda 1 tane bulunan orbital türü ___ orbitalidir.",
+          "cevap": "s"
+        },
+        {
+          "metin": "d orbitalleri ___ temel enerji düzeyinden (M katmanından) itibaren başlar.",
+          "cevap": "3."
+        },
+        {
+          "metin": "İçinde yalnızca 1 elektron bulunan orbitale ___ dolu orbital denir.",
+          "cevap": "yarı"
+        }
+      ],
+      "fazla": [
+        "tam"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Kuantum ve orbital kavramlarını açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Baş Kuantum Sayısı (n)",
+          "Orbitalin temel enerji düzeyini ve çekirdeğe uzaklığını belirler"
+        ],
+        [
+          "İkincil Kuantum Sayısı (l)",
+          "Orbitalin alt kabuk türünü (s, p, d, f) ve uzaysal şeklini belirler"
+        ],
+        [
+          "Dejener Orbitaller",
+          "Aynı alt kabukta bulunan eş enerjili yönelim orbitalleri ({alt:p|x}={alt:p|y}={alt:p|z})"
+        ],
+        [
+          "Pauli İlkesi",
+          "Bir orbitalde zıt spinli (↑↓) en fazla 2 elektron bulunabilmesi"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Atom orbitallerinin enerjileriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Tek elektronlu Hidrojen atomunda aynı katmandaki 2s ve 2p enerjileri eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Çok elektronlu atomlarda 3p dolduktan sonra elektron 3d yerine 4s'ye yerleşir.",
+          "dogru": true
+        },
+        {
+          "metin": "2. temel enerji düzeyinde 2s, 2p ve 2d olmak üzere 9 orbital vardır.",
+          "dogru": false
+        },
+        {
+          "metin": "4p ve 5s orbitallerinin (n+l) değeri eşit (5) olup 5s'nin enerjisi 4p'den büyüktür.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Elektronun bulunma olasılığının yüksek olduğu 3B bölge (7 harf)",
+          "cevap": "ORBİTAL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Temel enerji düzeylerine verilen diğer ad (6 harf)",
+          "cevap": "KATMAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Elektronların kendi ekseni etrafındaki dönme yönü (4 harf)",
+          "cevap": "SPİN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Çift loblu (papyon) şekle sahip, 3 alt orbitalden oluşan tür (1 harf)",
+          "cevap": "P",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "OKSP"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "\"Baş kuantum sayısı (n) büyük olan her orbitalin enerjisi, n sayısı küçük olan tüm orbitallerden büyüktür.\" önermesi neden yanlıştır?",
+      "cevap": "Çok elektronlu atomlarda (n+l) kuralı geçerlidir; 4s orbitalinin (4+0=4) enerjisi 3d.",
+      "satir": 2
+    }
+  ]
+}

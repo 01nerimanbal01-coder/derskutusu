@@ -1,0 +1,282 @@
+{
+  "sinif": 9,
+  "ders": "fizik",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Temel ve Türetilmiş Nicelikler",
+  "ciktilar": [
+    "Birimleri SI birim sisteminde verilen temel ve türetilmiş niceliklerin niteliklerini tanımlar.",
+    "Birimleri SI birim sisteminde verilen temel ve türetilmiş nicelikleri niteliklerine göre ayrıştırır ve gruplandırır.",
+    "Temel niceliklerin sembollerini, SI birimlerini ve ölçme araçlarını türetilmiş niceliklerin birim türetme bağıntılarıyla ilişkilendirir."
+  ],
+  "hatirla": [
+    "7 temel nicelik (KISAMUZ): Kütle (kg), Işık şiddeti (cd), Sıcaklık (K), Akım şiddeti (A), Madde miktarı (mol), Uzunluk (m), Zaman (s).",
+    "Yedi temel niceliğin tamamı yönsüz yani skalerdir; temel olup vektörel olan hiçbir nicelik yoktur.",
+    "Türetilmiş nicelikler birden fazla temel nicelikle tanımlanır: Kuvvet (N = kg·{kesir:m|{us:s|2}}), Enerji (J = kg·{kesir:{us:m|2}|{us:s|2}})."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Temel fiziksel nicelikleri SI birimleri ve ölçme araçlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Kütle (m)",
+          "Kilogram (kg) — Eşit kollu terazi"
+        ],
+        [
+          "Işık Şiddeti (I)",
+          "Kandela (cd) — Fotometre"
+        ],
+        [
+          "Sıcaklık (T)",
+          "Kelvin (K) — Termometre"
+        ],
+        [
+          "Akım Şiddeti (i)",
+          "Amper (A) — Ampermetre"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki KISAMUZ tablosuna göre aşağıda verilen fiziksel nicelik ve SI birimi eşleştirmelerinden hangisi yanlıştır?",
+      "secenekler": [
+        "Sıcaklık — Santigrat derece (°C)",
+        "Uzunluk — Metre (m)",
+        "Zaman — Saniye (s)",
+        "Madde miktarı — Mol (mol)"
+      ],
+      "dogru": 0,
+      "cozum": "SI birim sisteminde sıcaklığın standart birimi santigrat derece (°C) değil Kelvin (K)'dir."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Kuvvet birimi Newton (N) ve iş/enerji birimi Joule (J)'ün temel SI birimleri (kg, m, s) cinsinden karşılıklarını yazınız.",
+      "cevap": "1 Newton = kg·{kesir:m|{us:s|2}} ve 1 Joule = N·m = kg·{kesir:{us:m|2}|{us:s|2}} olarak ifade edilir.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Temel ve türetilmiş niceliklerle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Fizikteki 7 temel niceliğin tamamı yönsüz yani skaler büyüklüktür.",
+          "dogru": true
+        },
+        {
+          "metin": "Dinamometre ile ölçülen ve birimi Newton olan ağırlık temel bir niceliktir.",
+          "dogru": false
+        },
+        {
+          "metin": "SI birim sisteminde elektrik akım şiddeti temel, elektrik yükü (Coulomb) türetilmiştir.",
+          "dogru": true
+        },
+        {
+          "metin": "Türetilmiş niceliklerin tamamı yönlü (vektörel) büyüklük olmak zorundadır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Fiziksel nicelikleri temel/türetilmiş ve skaler/vektörel olma niteliklerine göre tamamlayınız.",
+      "basliklar": [
+        "Fiziksel Nicelik",
+        "SI Birimi",
+        "Nitelik Grubu"
+      ],
+      "satirlar": [
+        [
+          "Zaman (t)",
+          "Saniye (s)",
+          {
+            "b": "Temel ve Skaler"
+          }
+        ],
+        [
+          "Kuvvet (F)",
+          "Newton (N)",
+          {
+            "b": "Türetilmiş ve Vektörel"
+          }
+        ],
+        [
+          "Enerji / İş (E, W)",
+          "Joule (J)",
+          {
+            "b": "Türetilmiş ve Skaler"
+          }
+        ],
+        [
+          "Hız (v)",
+          "{kesir:m|s}",
+          {
+            "b": "Türetilmiş ve Vektörel"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki türetilmiş birim elde etme sürecini uzunluktan güce doğru kademeli sıraya diziniz.",
+      "ogeler": [
+        "Temel nicelik olan uzunluk (m) ve zamanı (s) ölçme",
+        "Uzunluğu zamana bölerek hız ({kesir:m|s}) ve ivmeyi ({kesir:m|{us:s|2}}) türetme",
+        "Kütle ile ivmeyi çarparak kuvvet birimi Newton'u (kg·{kesir:m|{us:s|2}}) bulma",
+        "Kuvvetle yolu çarpıp zamana bölerek güç birimi Watt'a (kg·{kesir:{us:m|2}|{us:s|3}}) ulaşma"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki birim dönüşüm kartına göre 'Sıcaklığı 27 °C olan ortamda 72 {kesir:km|h} süratle giden araç' verilerinin SI karşılığı nedir?",
+      "secenekler": [
+        "300 K ve 20 {kesir:m|s}",
+        "27 K ve 72 {kesir:m|s}",
+        "246 K ve 25 {kesir:m|s}",
+        "300 K ve 200 {kesir:m|s}"
+      ],
+      "dogru": 0,
+      "cozum": "T(K) = 27 + 273 = 300 K ve v = {kesir:72|3,6} = 20 {kesir:m|s} olarak SI birimlerine çevrilir."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki birim ve kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Birim yüzeye dik etki eden kuvvet olan basıncın ({kesir:F|A}) SI birimi ___ (Pa)'dır.",
+          "cevap": "Pascal"
+        },
+        {
+          "metin": "Kütlenin hacme bölünmesiyle ({kesir:m|V}) bulunan öz kütlenin SI birimi ___ olarak yazılır.",
+          "cevap": "{kesir:kg|{us:m|3}}"
+        },
+        {
+          "metin": "Sıcaklık farkı nedeniyle aktarılan ısının SI birimi kalori değil ___ (J)'dür.",
+          "cevap": "Joule"
+        }
+      ],
+      "fazla": [
+        "Watt"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Türetilmiş nicelikleri SI birimleri ve temel birim açılımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "İvme (a)",
+          "{kesir:m|{us:s|2}} — Birim zamandaki hız değişimi"
+        ],
+        [
+          "Elektrik Yükü (q)",
+          "Coulomb (C) = Amper · saniye (A · s)"
+        ],
+        [
+          "Güç (P)",
+          "Watt (W) = {kesir:Joule|saniye} = kg · {kesir:{us:m|2}|{us:s|3}}"
+        ],
+        [
+          "Hacim (V)",
+          "Metreküp ({us:m|3}) — Uzunluğun üçüncü kuvveti"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Ölçüm araçları ve birim sistemiyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Kumpas ve şerit metre temel bir nicelik olan uzunluğu ölçmek için kullanılır.",
+          "dogru": true
+        },
+        {
+          "metin": "Sürat ve alınan yol türetilmiş ve skaler; hız ve yer değiştirme türetilmiş ve vektöreldir.",
+          "dogru": true
+        },
+        {
+          "metin": "Kütlenin SI birim sistemindeki standart birimi gram (g)'dır.",
+          "dogru": false
+        },
+        {
+          "metin": "Kalorimetre kabı sıcaklığı doğrudan Kelvin cinsinden ölçen temel araçtır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Sıcaklığın SI birim sistemindeki standart birimi (6 harf)",
+          "cevap": "KELVİN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Birim zamandaki hız değişimini ifade eden vektörel nicelik (4 harf)",
+          "cevap": "İVME",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yön bilgisi gerektirmeyen, yalnız sayı ve birimle tanımlanan nicelik (6 harf)",
+          "cevap": "SKALER",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Elektrik akım şiddetinin SI birim sistemindeki birimi (5 harf)",
+          "cevap": "AMPER",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Avogadro sayısı kadar tanecik içeren madde miktarı birimi (3 harf)",
+          "cevap": "MOL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İki nokta arasındaki mesafeyi belirten temel nicelik (7 harf)",
+          "cevap": "UZUNLUK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kronometre ile ölçülen ve SI birimi saniye olan temel nicelik (5 harf)",
+          "cevap": "ZAMAN",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "KİSAMUZ"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "'Kütle' ile 'Ağırlık' kavramlarını temel/türetilmiş olma, SI birimi ve ölçme aracı bakımından karşılaştırınız.",
+      "cevap": "Kütle temel-skalerdir (kg, teraziyle ölçülür); ağırlık türetilmiş-vektöreldir (N, dinamometreyle ölçülür).",
+      "satir": 2
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "sinif": 9,
+  "ders": "matematik",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Sayı Kümeleri ve İşlem Özellikleri",
+  "ciktilar": [
+    "Doğal sayılar, tam sayılar, rasyonel sayılar, irrasyonel sayılar ve gerçek sayılar kümelerinin temel özelliklerine (sıralama, arada olma ve işlem özellikleri) ilişkin varsayımlarda bulunur.",
+    "Farklı sayı kümelerinde toplama, çıkarma, çarpma ve bölme işlemlerinin kapalılık, değişme, birleşme, etkisiz eleman, ters eleman ve dağılma özelliklerini inceler.",
+    "Sayı kümelerinde elde ettiği örüntülerden genellemeler yapar ve varsayımların doğruluğunu cebirsel muhakeme veya karşı örnek yardımıyla değerlendirir."
+  ],
+  "hatirla": [
+    "Alt küme ilişkisi: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ ve ℚ ∪ ℚ' = ℝ, ℚ ∩ ℚ' = ∅.",
+    "Gerçek sayılarda toplamada birim eleman 0, ters eleman -a; çarpmada birim eleman 1, yutan eleman 0, ters eleman {kesir:1|a}'dır.",
+    "ℚ ve ℝ kümelerinde iki farklı sayı arasında sonsuz sayı bulunur (yoğunluk / arada olma özelliği)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Gerçek sayılar kümesindeki cebirsel eşitlikleri işlem özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "a + (-a) = 0",
+          "Toplama işlemine göre ters eleman özelliği"
+        ],
+        [
+          "a · (b + c) = a · b + a · c",
+          "Çarpmanın toplama üzerine soldan dağılma özelliği"
+        ],
+        [
+          "(a + b) + c = a + (b + c)",
+          "Toplama işleminde birleşme özelliği"
+        ],
+        [
+          "a · 1 = 1 · a = a",
+          "Çarpma işleminde etkisiz (birim) eleman özelliği"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki kapalılık tablosuna göre sayı kümelerinin dört işleme göre kapalılık özelliğiyle ilgili hangisi yanlıştır?",
+      "secenekler": [
+        "İrrasyonel sayılar kümesi (ℚ') toplama ve çarpmaya göre kapalıdır",
+        "Doğal sayılar kümesi (ℕ) toplama ve çarpmaya göre kapalıdır",
+        "Tam sayılar kümesi (ℤ) çıkarma işlemine göre kapalıdır",
+        "Gerçek sayılar kümesi (ℝ) toplamaya ve çarpmaya göre kapalıdır"
+      ],
+      "dogru": 0,
+      "cozum": "{kok:2} ile -{kok:2}'nin toplamı 0 ∈ ℚ ve {kok:2} ile {kok:8}'in çarpımı 4 ∈ ℚ olduğundan ℚ' kapalı değildir."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Gerçek sayılarda x = -{kesir:3|5} sayısının toplamaya göre tersi A, çarpmaya göre tersi B ise A · B ve A + B kaçtır?",
+      "cevap": "A = {kesir:3|5} ve B = -{kesir:5|3} olup A · B = -1 ve A + B = {kesir:3|5} - {kesir:5|3} = -{kesir:16|15} bulunur.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sayı kümeleri ve işlem özellikleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Gerçek sayılar kümesinde 0 sayısının çarpma işlemine göre tersi yoktur.",
+          "dogru": true
+        },
+        {
+          "metin": "Doğal sayılar kümesi (ℕ) çıkarma işlemine göre kapalı bir kümedir.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir rasyonel sayı ile bir irrasyonel sayının toplamı daima irrasyoneldir.",
+          "dogru": true
+        },
+        {
+          "metin": "Tam sayılar kümesinde (ℤ) ardışık iki tam sayı arasında sonsuz tam sayı vardır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Verilen gerçek sayıları ait oldukları en dar sayı kümesi ve rasyonel/irrasyonel olma durumuna göre tamamlayınız.",
+      "basliklar": [
+        "Verilen Sayı",
+        "Değeri / Özelliği",
+        "Ait Olduğu Küme Grubu"
+      ],
+      "satirlar": [
+        [
+          "{kok:36}",
+          "6 (Tam kare kök)",
+          {
+            "b": "Doğal (ℕ), Tam (ℤ) ve Rasyonel (ℚ)"
+          }
+        ],
+        [
+          "-9",
+          "Negatif tam değer",
+          {
+            "b": "Tam (ℤ), Rasyonel (ℚ) ve Gerçek (ℝ)"
+          }
+        ],
+        [
+          "{kesir:7|12}",
+          "İki tam sayının oranı",
+          {
+            "b": "Rasyonel (ℚ) ve Gerçek (ℝ)"
+          }
+        ],
+        [
+          "{kok:15}",
+          "Kök dışına tam çıkamaz",
+          {
+            "b": "İrrasyonel (ℚ') ve Gerçek (ℝ)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sayı kümelerinde matematiksel muhakeme ve genelleme adımlarını sıraya diziniz.",
+      "ogeler": [
+        "Sayı kümelerindeki işlem örüntülerini inceleyerek örnekler oluşturma",
+        "Örüntüden hareketle matematiksel bir varsayım (iddia) kurma",
+        "Varsayımı cebirsel ispatla veya karşı örnek arayarak test etme",
+        "Doğrulanan varsayımı gerekli koşullarıyla genel kural olarak yazma"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki yoğunluk (arada olma) şemasına göre rasyonel (ℚ) ve gerçek (ℝ) sayılarla ilgili hangisi her zaman doğrudur?",
+      "secenekler": [
+        "İki farklı rasyonel sayı arasında sonsuz rasyonel sayı vardır",
+        "Rasyonel ve irrasyonel sayıların kesişimi gerçek sayıları verir",
+        "Her gerçek sayının çarpmaya göre tersi bir tam sayıdır",
+        "İki irrasyonel sayının çarpımı her zaman irrasyonel sayıdır"
+      ],
+      "dogru": 0,
+      "cozum": "ℚ ve ℝ yoğun kümeler olduğundan her a < b için a < {kesir:a+b|2} < b koşuluyla arada sonsuz sayı bulunur."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki matematiksel kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "İki gerçek sayı arasında sonsuz gerçek sayı bulunmasına ___ özelliği denir.",
+          "cevap": "yoğunluk"
+        },
+        {
+          "metin": "Gerçek sayılar kümesinde çarpma işleminin ___ elemanı 0'dır.",
+          "cevap": "yutan"
+        },
+        {
+          "metin": "Bir iddianın yanlışlığını kanıtlayan tek bir geçersizlik örneğine ___ örnek denir.",
+          "cevap": "karşı"
+        }
+      ],
+      "fazla": [
+        "birim"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sayı kümelerini yapısal tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Doğal Sayılar (ℕ)",
+          "{0, 1, 2, 3, ...} kümesi; en küçük elemanı 0'dır"
+        ],
+        [
+          "Tam Sayılar (ℤ)",
+          "{..., -2, -1, 0, 1, 2, ...} kümesi; çıkarmaya göre kapalıdır"
+        ],
+        [
+          "Rasyonel Sayılar (ℚ)",
+          "a, b ∈ ℤ ve b ≠ 0 için {kesir:a|b} biçiminde yazılabilen sayılar"
+        ],
+        [
+          "İrrasyonel Sayılar (ℚ')",
+          "π, e, {kok:3} gibi iki tam sayının oranı şeklinde yazılamayan sayılar"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Ters eleman ve sıralama özellikleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Tam sayılar kümesinde (ℤ) çarpmaya göre tersi yine tam sayı olan yalnız 1 ve -1 vardır.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir eşitsizliğin her iki tarafı negatif bir sayıyla çarpılırsa eşitsizlik yön değiştirir.",
+          "dogru": true
+        },
+        {
+          "metin": "Devirli ondalık gösterimler (0,333... gibi) irrasyonel sayıdır.",
+          "dogru": false
+        },
+        {
+          "metin": "Sıfırdan farklı bir rasyonel sayı ile bir irrasyonel sayının çarpımı daima irrasyoneldir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Rasyonel ve irrasyonel sayıların birleşimiyle oluşan küme, gerçek (4 harf)",
+          "cevap": "REEL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Toplamada 0, çarpmada 1 olan etkisiz eleman (5 harf)",
+          "cevap": "BİRİM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "a + (-a) = 0 eşitliğindeki (-a) elemanının adı (4 harf)",
+          "cevap": "TERS",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İki sayı arasında sonsuz sayı bulunması özelliği, yoğun (5 harf)",
+          "cevap": "YOĞUN",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "RBTY"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "\"Bir rasyonel sayı ile bir irrasyonel sayının çarpımı her zaman irrasyoneldir.\" iddiasını çürüten karşı örneği yazınız.",
+      "cevap": "Rasyonel sayı 0 ∈ ℚ ve irrasyonel sayı {kok:5} ∈ ℚ' seçildiğinde 0 · {kok:5} = 0 ∈ ℚ (rasyonel) olur; iddia a = 0 için yanlıştır.",
+      "satir": 2
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "baslik": "3. Ünite: Basınç — Açık Hava Basıncı, Gaz Basıncı ve Teknolojik Uygulamalar",
+  "alt_baslik": "Toriçelli Deneyi, Barometre, Kapalı Kap Gaz Basıncı ve Pascal Prensibi Uygulamaları (F.8.3.1.2 & F.8.3.1.3)",
+  "sinif": 8,
+  "ders": "fen-bilimleri",
+  "hafta": 11,
+  "renk": "#2451d6",
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Açık Hava Basıncı (Toriçelli Deneyi, Barometre), Kapalı Kaplardaki Gaz Basıncı ve Basıncın Günlük Yaşam ile Teknolojideki Uygulamaları (F.8.3.1.2 & F.8.3.1.3)",
+  "ciktilar": [
+    "Atmosferdeki gazların ağırlık ve hareketinden kaynaklanan açık hava basıncını deneysel kanıtlarla açıklar (F.8.3.1.2).",
+    "Toriçelli deneyinde cam borudaki sıvı seviyesinin yükselti ve sıvı yoğunluğuna bağlılığını, boru kesiti ve eğiminden bağımsızlığını analiz eder.",
+    "Katı, sıvı ve gazların basınç özelliklerinin günlük yaşam ve teknolojideki kullanım alanlarına (hidrolik fren, su cenderesi, vantuz, hava yastığı) örnekler verir (F.8.3.1.3)."
+  ],
+  "hatirla": [
+    "Dünya’yı saran atmosfer tabakasının birim yüzeye uyguladığı açık hava basıncı «barometre» ile ölçülür; deniz seviyesinde ve 0 °C’de yapılan Toriçelli deneyinde açık hava basıncı 76 cm yüksekliğindeki cıva sütununu dengeler.",
+    "Barometredeki dik sıvı yüksekliği (h); borunun kalınlığına (kesit alanına), şekline ve eğik tutulmasına bağlı DEĞİLDİR. Deniz seviyesinden yükseklere çıkıldıkça açık hava basıncı ve h azalır; cıva yerine yoğunluğu daha küçük bir sıvı kullanılırsa h artar.",
+    "Kapalı kaptaki gazlar tanecik çarpmalarıyla kabın her noktasına EŞİT basınç uygular. Kapalı kaplardaki sıvı ve gazların uygulanan basıncı her yöne aynen iletmesine «Pascal Prensibi» denir (hidrolik fren, lift, kriko, berber koltuğu)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Gaz ve sıvı basıncıyla ilgili sol sütundaki bilimsel araç ve kavramları sağ sütundaki açıklamalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Barometre",
+          "Açık hava (atmosfer) basıncını ölçmek için kullanılan düzenek"
+        ],
+        [
+          "Magdeburg yarım küreleri",
+          "Havası boşaltılan metal kürelerle açık hava basıncının gücünü kanıtlayan deney"
+        ],
+        [
+          "Hidrolik fren ve lift",
+          "Sıvıların basıncı her yöne aynen iletmesi (Pascal Prensibi) ile çalışan araçlar"
+        ],
+        [
+          "Manometre",
+          "Kapalı kaplar içindeki gazların basıncını ölçmeye yarayan alet"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Deniz seviyesinde ve 0 °C sıcaklıkta aynı cıva çanağına daldırılan I (kesiti S, dik), II (kesiti 3S, dik) ve III (kesiti S, eğik) cam borularındaki dik cıva yükseklikleri arasındaki ilişki hangisidir?",
+      "secenekler": [
+        "h{alt:1} > h{alt:3} > h{alt:2}",
+        "h{alt:1} = h{alt:2} = h{alt:3} = 76 cm",
+        "h{alt:2} > h{alt:1} = h{alt:3}",
+        "h{alt:3} > h{alt:1} > h{alt:2}"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Teknoloji kartlarındaki dört uygulamanın dayandığı basınç türünü (Katı / Sıvı-Pascal / Açık Hava-Gaz) ve temel amacını tabloya yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Teknolojik Uygulama",
+        "İlgili Basınç Türü",
+        "Çalışma İlkesi ve Amacı"
+      ],
+      "satirlar": [
+        [
+          "1. Sanayi tipi araç kaldırma lifti",
+          "Sıvı basıncı (Pascal)",
+          {
+            "b": "Basıncı aynen ileterek ağır aracı kaldırmak"
+          }
+        ],
+        [
+          "2. İş makinelerinde geniş palet",
+          {
+            "b": "Katı basıncı"
+          },
+          {
+            "b": "Yüzeyi büyüterek zemine batmayı önlemek"
+          }
+        ],
+        [
+          "3. Cama bastırılan plastik vantuz",
+          {
+            "b": "Açık hava basıncı"
+          },
+          {
+            "b": "İç havayı boşaltıp dış basınçla tutunmak"
+          }
+        ],
+        [
+          "4. Otomobil hava yastığı (Airbag)",
+          {
+            "b": "Kapalı kap gaz basıncı"
+          },
+          {
+            "b": "Gaz basıncını her yöne eşit iletip korumak"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Açık hava basıncı, kapalı kap gaz basıncı ve basınç uygulamalarıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Deniz kıyısından yüksek bir dağın zirvesine doğru tırmanan dağcının yanındaki barometrede okunan değer giderek azalır.",
+          "dogru": true
+        },
+        {
+          "metin": "Toriçelli deneyinde cıva yerine yoğunluğu çok daha küçük olan su kullanılsaydı borudaki sıvı seviyesi 76 cm’den daha kısa olurdu.",
+          "dogru": false
+        },
+        {
+          "metin": "Çelik oksijen tüpünün içindeki gazın tüpün üst noktasına uyguladığı basınç, alt tabanına uyguladığı basınca eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Deniz seviyesinde şişirilip bırakılan esnek uçan balon gökyüzünde yükseldikçe dış basınç azaldığı için hacmi büyür.",
+          "dogru": true
+        },
+        {
+          "metin": "Berber koltuklarının pedalla yükseltilmesi katıların basıncı her yöne eşit iletmesi prensibine dayanır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri kutudaki uygun kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Aynı ortamda yapılan barometre deneyinde kullanılan sıvının ___ küçüldükçe cam borudaki sıvı yüksekliği artar.",
+          "cevap": "yoğunluğu"
+        },
+        {
+          "metin": "Yeryüzünden yukarı çıkıldıkça hava tabakasının kalınlığı ve tanecik sayısı seyrekleştiği için açık hava basıncı ___.",
+          "cevap": "azalır"
+        },
+        {
+          "metin": "İtfaiye merdivenleri ve damperli kamyon kasaları sıvıların basıncı iletmesini açıklayan ___ Prensibi ile çalışır.",
+          "cevap": "Pascal"
+        },
+        {
+          "metin": "Ağzına kadar su dolu bardağın üzerine kâğıt kapatılıp ters çevrildiğinde suyun dökülmemesi ___ hava basıncını kanıtlar.",
+          "cevap": "açık"
+        }
+      ],
+      "fazla": [
+        "artar"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Dağ kesiti üzerinde gösterilen K, L ve M noktalarında aynı sıcaklıkta özdeş cıvalı barometrelerle h{alt:K} = 76 cm, h{alt:L} = 71 cm ve h{alt:M} = 65 cm ölçülmüştür. K noktasında şişirilen esnek balon L ve M noktalarına götürülürse hacmi (V) nasıl sıralanır?",
+      "secenekler": [
+        "V{alt:K} > V{alt:L} > V{alt:M}",
+        "V{alt:K} = V{alt:L} = V{alt:M}",
+        "V{alt:M} > V{alt:L} > V{alt:K}",
+        "V{alt:L} > V{alt:M} > V{alt:K}"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Deney şemasında içi boş metal teneke kutu bir süre ısıtıldıktan sonra ağzı hava almayacak şekilde kapatılıp soğumaya bırakıldığında kutunun içe doğru büzüldüğü görülüyor. Bu olayın temel nedeni hangisidir?",
+      "secenekler": [
+        "Soğuyan kutunun iç gaz basıncının düşmesi ve dıştaki açık hava basıncının kutuyu sıkıştırması",
+        "Isıtma işlemi sırasında kutu dışındaki açık hava basıncının iki katına çıkması",
+        "Metal kutunun ağırlığının soğuma sırasında artarak katı basıncını büyütmesi",
+        "Kutu kapatıldığında dışarıdaki atmosfer gazlarının tamamen yok olması"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Deniz seviyesinde 0 °C’de kurulan X (cıva, d = 13,6 {kesir:g|{us:cm|3}}) ve Y (etanol, d = 0,8 {kesir:g|{us:cm|3}}) barometrelerinden hangisinde sıvı sütunu daha yüksek olur? Nedenini yazınız.",
+      "cevap": "Y borusunda daha yüksek olur; sıvı yoğunluğu küçüldükçe h yüksekliği artar.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cam şişe ve haşlanmış yumurta deneyinde yumurtanın şişe içine kendiliğinden girme sürecini oluş sırasına göre 1’den 4’e doğru sıralayınız.",
+      "ogeler": [
+        "Cam şişenin içinde yanan kâğıt parçasının şişedeki havayı ısıtıp genleştirmesi",
+        "Şişe ağzına soyulmuş yumurtanın kapatılmasıyla içerideki alevin sönüp havanın soğuması",
+        "Soğuyan şişenin iç gaz basıncının dışarıdaki açık hava basıncından küçük hâle gelmesi",
+        "Dıştaki daha büyük açık hava basıncının yumurtayı dar şişenin içine doğru itmesi"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Kapalı çelik gaz tüpü ve otomobil hidrolik fren düzeneğinin yer aldığı şemaya göre aşağıdaki çıkarımlardan hangisi {koyu:yanlıştır?}",
+      "secenekler": [
+        "Çelik tüp içindeki gazın K, L ve M noktalarına uyguladığı gaz basınçları birbirine eşittir.",
+        "Fren pedalına basıldığında oluşan sıvı basıncı borulardaki fren yağıyla balatalara aynen iletilir.",
+        "Hidrolik fren sisteminin çalışmasında sıvıların sıkıştırılamaz kabul edilmesi ve Pascal ilkesi etkilidir.",
+        "Çelik tüpün tabanındaki M noktası daha derinde olduğu için gaz basıncı K noktasından büyüktür."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki fen kavramlarını kutulara yazınız. Numaralı harflerle sıvıların basıncı her yöne aynen iletmesi ilkesine adını veren bilim insanını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Meyve suyunu açık hava basıncı yardımıyla içmeye yarayan ince boru",
+          "cevap": "PİPET",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Açık hava basıncını ölçmek amacıyla kullanılan bilimsel araç",
+          "cevap": "BAROMETRE",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Su cenderesi ve hidrolik sistemlerde basıncı ileten akışkan madde hâli",
+          "cevap": "SIVI",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Toriçelli’nin yoğunluğu büyük olduğu için deneyinde kullandığı metal sıvı",
+          "cevap": "CIVA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İçindeki hava boşaltılınca dış basınçla cama yapışan esnek plastik araç",
+          "cevap": "VANTUZ",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Sanayide otomobilleri sıvı basıncıyla yukarı kaldıran hidrolik düzenek",
+          "cevap": "LİFT",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "PASCAL"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Gözlem kartında su damlası bulunan çay tabağının çay bardağıyla birlikte kalktığı görülüyor. Bu olayda suyun ve açık hava basıncının rolünü açıklayınız.",
+      "cevap": "Su aradaki havayı keser; alttan etkiyen açık hava basıncı tabağı tutar.",
+      "satir": 2
+    }
+  ]
+}

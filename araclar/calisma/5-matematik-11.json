@@ -1,0 +1,274 @@
+{
+  "sinif": 5,
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Doğal Sayılarla Dört İşlem (Çok Basamaklı Sayılarda Toplama, Çıkarma, Çarpma ve Bölme) ile Zihinden İşlem ve Tahmin Stratejileri",
+  "ciktilar": [
+    "MAT.5.1.3: Çok basamaklı doğal sayılarla toplama ve çıkarma işlemlerini basamak hizalaması, elde aktarımı, onluk bozma ve terimler arası ilişkilerle yapabilme",
+    "MAT.5.1.4: Doğal sayılarla çarpma ve bölme işlemlerini gerçekleştirebilme; kalanlı bölmede «Bölünen = (Bölen × Bölüm) + Kalan» ve «Kalan < Bölen» kurallarını uygulayabilme",
+    "MAT.5.1.5: Dört işlem gerektiren gerçek yaşam problemlerinde zihinden işlem kısayollarını ve yuvarlama / uyuşan sayılarla tahmin stratejilerini kullanabilme"
+  ],
+  "hatirla": [
+    "Toplama ve çıkarmada aynı basamaklar alt alta hizalanarak sağdan sola işlem yapılır; verilmeyen terimler için «Toplanan = Toplam − Diğer Toplanan» ve «Eksilen = Çıkan + Fark» bağıntıları kullanılır.",
+    "Çarpmada onlar basamağı ile çarpım 1 basamak, yüzler basamağı ile çarpım 2 basamak sola kaydırılır; bölmede ise en soldaki basamaktan başlanır ve indirilen rakam bölünmüyorsa bölüme «0» konur.",
+    "Her bölme işleminde «Bölünen = (Bölen × Bölüm) + Kalan» eşitliği geçerlidir ve kalan sayı daima bölen sayıdan küçüktür (0 ≤ Kalan < Bölen)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Sol sütunda verilen dört işlem bağıntılarını ve zihinden işlem kısayollarını sağ sütundaki karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Toplam − Bilinen Toplanan",
+          "Toplama işleminde verilmeyen toplananı bulma işlemi"
+        ],
+        [
+          "Çıkan + Fark",
+          "Çıkarma işleminde verilmeyen eksilen sayıyı bulma işlemi"
+        ],
+        [
+          "(Bölen × Bölüm) + Kalan",
+          "Kalanlı bölme işleminde bölünen sayıyı veren temel bağıntı"
+        ],
+        [
+          "Sayıyı 10 ile çarpıp 2’ye bölmek",
+          "Bir doğal sayıyı zihinden kısa yoldan 5 ile çarpma stratejisi"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki kalanlı bölme işlemi kartında bölen 18, bölüm 30 ve kalan K doğal sayısıdır. Buna göre bölünen sayının (A) alabileceği en",
+      "secenekler": [
+        "557",
+        "540",
+        "558",
+        "541"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört işlem ve strateji kartını inceleyerek uygulanan kuralı veya zihinden işlem kısayolunu ve işlem sonucunu",
+      "basliklar": [
+        "İşlem Kartı",
+        "Uygulanan Strateji / Kural",
+        "İşlem Sonucu"
+      ],
+      "satirlar": [
+        [
+          "1. 3 618 ÷ 18",
+          "İndirilen 1’de 18 yok → Bölüme 0 konur",
+          {
+            "b": "201"
+          }
+        ],
+        [
+          "2. 72 × 5 (Zihinden)",
+          {
+            "b": "10 ile çarpıp 2’ye bölme (720 ÷ 2)"
+          },
+          {
+            "b": "360"
+          }
+        ],
+        [
+          "3. 35 × 8 (Zihinden)",
+          {
+            "b": "Üç kez üst üste 2 katını alma (70→140→280)"
+          },
+          {
+            "b": "280"
+          }
+        ],
+        [
+          "4. 418 ÷ 7 (Tahmin)",
+          {
+            "b": "Uyuşan sayıya tamamlama (420 ÷ 7)"
+          },
+          {
+            "b": "60"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Dört işlem kuralları, zihinden işlem ve tahmin stratejileriyle ilgili ifadelerden doğru olanların D, yanlış olanların Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Çıkarma işleminde verilmeyen «Çıkan» terimi bulmak için «Eksilen» sayıdan «Fark» çıkarılır.",
+          "dogru": true
+        },
+        {
+          "metin": "Bölensiz kalan olmayacağı gibi, kalanlı bir bölme işleminde kalan sayı bölen sayıdan büyük olabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir doğal sayıyı zihinden 9 ile çarpmak için sayının 10 katından sayının kendisi çıkarılır.",
+          "dogru": true
+        },
+        {
+          "metin": "Sonunda sıfır bulunan 250 × 40 işleminin çarpım sonucunda toplam iki adet sıfır yer alır.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir doğal sayıyı en yakın yüzlüğe yuvarlarken onlar basamağındaki rakamın 5 veya 5’ten büyük olup olmadığına bakılır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Cümlelerde boş bırakılan yerleri kutudaki uygun kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Toplama, çıkarma ve çarpmaya birler basamağından başlanırken bölme işlemine en ___ basamaktan başlanır.",
+          "cevap": "soldaki"
+        },
+        {
+          "metin": "Bölme işleminde yukarıdan yeni bir rakam indirildiği hâlde sayı bölene bölünmüyorsa bölüme bir ___ eklenir.",
+          "cevap": "sıfır"
+        },
+        {
+          "metin": "Kalanlı bir bölme işleminde kalan sayı her zaman bölen sayıdan ___ olmak zorundadır.",
+          "cevap": "küçük"
+        },
+        {
+          "metin": "Bölme sonucunu tahmin ederken bölüneni bölenin tam katına yaklaştırma yöntemine ___ sayılar stratejisi denir.",
+          "cevap": "uyuşan"
+        }
+      ],
+      "fazla": [
+        "sağdaki"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört bölme işlemi kartından hangisinin bölüm sonucu «201» sayısına eşittir?",
+      "secenekler": [
+        "1. Kart: 2 520 ÷ 12 işlemi",
+        "2. Kart: 6 432 ÷ 32 işlemi",
+        "3. Kart: 4 590 ÷ 15 işlemi",
+        "4. Kart: 3 800 ÷ 19 işlemi"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki elma bahçesinde toplanan 230 kg elmanın tamamı, her biri en fazla 12 kg elma alabilen kasalara konulacaktır. Hiç elma açıkta",
+      "secenekler": [
+        "18 kasa",
+        "19 kasa",
+        "20 kasa",
+        "21 kasa"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki mağaza etiketlerinde dizüstü bilgisayar 28 640 TL, yazıcı ise 7 290 TL’dir. Fiyatları en yakın binliğe yuvarlayarak tahmini toplam tutarı",
+      "cevap": "Tahmin: 29 000 + 7 000 = 36 000 TL. Gerçek toplam: 28 640 + 7 290 = 35 930 TL.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört zihinden işlem kartının sonuçlarını hesaplayarak en küçük sonuçtan en büyük sonuca doğru 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "24 × 5 işlemi (240 ÷ 2 = 120)",
+        "45 × 4 işlemi (45 × 2 = 90, 90 × 2 = 180)",
+        "30 × 8 işlemi (30 → 60 → 120 → 240)",
+        "1 500 ÷ 5 işlemi (1 500 × 2 = 3 000, 3 000 ÷ 10 = 300)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki fabrika üretim ve sevkiyat panosunda verilen bilgilere göre aşağıdaki hesaplamalardan hangisi {koyu:yanlıştır?}",
+      "secenekler": [
+        "Ocak ve Şubat aylarında üretilen toplam ürün sayısı 425 600 + 384 400 = 810 000 adettir.",
+        "Ocak ayı üretimi Şubat ayı üretiminden 425 600 − 384 400 = 41 200 adet daha fazladır.",
+        "Her kolide 24 ürün varsa 350 kolide toplam 350 × 24 = 8 400 adet ürün taşınır.",
+        "Üretilen 4 816 ürün 16’şarlı kolilere konulduğunda toplam 31 koli tam olarak dolar."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “sayıları yuvarlayarak veya uyuşan sayılar kullanarak yaklaşık",
+      "satirlar": [
+        {
+          "ipucu": "Toplama işleminde toplanan sayıların verdiği sonuç",
+          "cevap": "TOPLAM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bölme işleminde eşit paylaştırılamayıp geriye kalan miktar: kalan / …",
+          "cevap": "ARTAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Alt alta toplama ve çıkarmada aynı basamakları aynı sütuna getirme",
+          "cevap": "HİZALAMA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yedi, sekiz ve dokuzuncu basamakların oluşturduğu bölük: … bölüğü",
+          "cevap": "MİLYONLAR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bir sayıyı zihinden 4 ile çarpmak için üst üste … kez 2 katı alınır",
+          "cevap": "İKİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Çıkarma işleminde komşu basamaktan alınan 10 birimlik grup",
+          "cevap": "ONLUK",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "TAHMİN"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki hata analizi kartında Tuna «3 514 ÷ 7» işleminin bölümünü «52» olarak bulmuştur. Tuna’nın hangi adımı atladığını ve doğru",
+      "cevap": "35 ÷ 7 = 5 işleminden sonra yukarıdan indirilen 1 rakamı 7’ye bölünmediği için bölüme 0 konulmalı, ardından 4.",
+      "satir": 2
+    }
+  ],
+  "ders": "matematik"
+}

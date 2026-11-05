@@ -1,0 +1,250 @@
+{
+  "sinif": 8,
+  "ders": "matematik",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Veri Analizi: Çizgi Grafiği, Sütun Grafiği ve Daire Grafiği Oluşturma, Yorumlama ve Grafikler Arasında Dönüşüm Yapma (M.8.4.1.1 & M.8.4.1.2)",
+  "ciktilar": [
+    "En fazla üç veri grubuna ait çizgi ve sütun grafiklerini okur, karşılaştırır ve yorumlar (M.8.4.1.1).",
+    "Verileri sütun, daire veya çizgi grafiği ile gösterir; daire grafiğinde merkez açıları ve yüzdeleri hesaplar (M.8.4.1.2).",
+    "Farklı grafik gösterimlerinin üstün ve zayıf yönlerini değerlendirerek grafikler arasında uygun dönüşümleri yapar (M.8.4.1.2)."
+  ],
+  "hatirla": [
+    "{koyu:Çizgi grafiği} verilerin zamana bağlı sürekli değişimini (artış/azalış), {koyu:sütun grafiği} ise en fazla üç veri grubunun kategoriler arası karşılaştırmasını gösterir.",
+    "{koyu:Daire grafiği} bir bütünün parçalarının bütün içindeki oranını gösterir; merkez açılar toplamı {koyu:360°}, yüzdeler toplamı {koyu:%100}’dür.",
+    "Bir dilimin merkez açısı {koyu:Merkez Açı = }{kesir:Grubun Verisi|Toplam Veri}{koyu: × 360°} bağıntısıyla ve doğru orantıyla hesaplanır ({koyu:%10 = 36°}, {koyu:%25 = 90°}, {koyu:%50 = 180°})."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki daire grafiği yüzdelik paylarını sağ sütundaki merkez açılarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "%50 (Bütünün yarısı: 1/2)",
+          "180° merkez açı"
+        ],
+        [
+          "%25 (Bütünün çeyreği: 1/4)",
+          "90° merkez açı"
+        ],
+        [
+          "%20 (Bütünün beşte biri: 1/5)",
+          "72° merkez açı"
+        ],
+        [
+          "%10 (Bütünün onda biri: 1/10)",
+          "36° merkez açı"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sütun grafiğinde 8. sınıf şubelerinin öğrenci sayıları verilmiştir. Bu veriler daire grafiğine aktarıldığında {koyu:8-B}",
+      "secenekler": [
+        "90° merkez açı olur",
+        "120° merkez açı olur",
+        "150° merkez açı olur",
+        "180° merkez açı olur"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kütüphanede bulunan toplam 180 kitabın türlere göre dağılımını kullanarak yüzde ve daire grafiği merkez açılarını",
+      "basliklar": [
+        "Kitap Türü ve Sayısı",
+        "Bütün İçindeki Oranı",
+        "Merkez Açısı (360°)"
+      ],
+      "satirlar": [
+        [
+          "1. Roman (60 adet)",
+          "60 / 180 = 1/3",
+          {
+            "b": "120°"
+          }
+        ],
+        [
+          "2. Hikâye (45 adet)",
+          {
+            "b": "45 / 180 = 1/4 (%25)"
+          },
+          {
+            "b": "90°"
+          }
+        ],
+        [
+          "3. Şiir (30 adet)",
+          {
+            "b": "30 / 180 = 1/6"
+          },
+          "60°"
+        ],
+        [
+          "4. Bilim (45 adet)",
+          "45 / 180 = 1/4 (%25)",
+          {
+            "b": "90°"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Grafik türleri ve veri analiziyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Daire grafiğinde tüm veri gruplarına ait merkez açıların toplamı daima 360 derecedir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir bütünün %20'sini temsil eden veri grubunun daire grafiğindeki merkez açısı 60 derecedir.",
+          "dogru": false
+        },
+        {
+          "metin": "Merkez açıları bilinen bir daire grafiğinde toplam veri sayısı bilinmeden gerçek eleman sayıları bulunamaz.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir ilin beş günlük sıcaklık değişimini göstermek için en uygun gösterim daire grafiğidir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun matematiksel kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Bir verinin zamana bağlı sürekli artış veya azalışını göstermek için en uygun grafik ___ grafiğidir.",
+          "cevap": "çizgi"
+        },
+        {
+          "metin": "Daire grafiğinde bütünün üçte birini ({kesir:1|3}) temsil eden dilimin merkez açısı ___ derecedir.",
+          "cevap": "120"
+        },
+        {
+          "metin": "Veri grubundaki tüm sayıların toplamının veri adedine bölünmesiyle ___ ortalama bulunur.",
+          "cevap": "aritmetik"
+        }
+      ],
+      "fazla": [
+        "150"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki daire grafiğinde çiftçinin ürettiği tahılların merkez açıları verilmiştir. Çiftçi {koyu:54 ton mısır} ürettiğine göre",
+      "secenekler": [
+        "72 ton buğday üretmiştir",
+        "84 ton buğday üretmiştir",
+        "90 ton buğday üretmiştir",
+        "108 ton buğday üretmiştir"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki çizgi grafiğinde bir mağazanın dört günlük tişört satış sayıları verilmiştir. Bu dört günün {koyu:günlük ortalama} satışı kaç adettir?",
+      "secenekler": [
+        "36 adet tişört",
+        "38 adet tişört",
+        "40 adet tişört",
+        "42 adet tişört"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki aile bütçesi sütun grafiği daire grafiğine dönüştürüldüğünde {koyu:kira (%35)} ve {koyu:mutfak (%25)} giderlerinin",
+      "cevap": "%1 = 3,6° olduğundan Kira: 35 × 3,6° = 126°; Mutfak.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört günde çözülen toplam 360 sorunun daire grafiği merkez açılarını {koyu:küçükten büyüğe} doğru 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "Çarşamba günü: 60 soru (60° merkez açı)",
+        "Pazartesi günü: 80 soru (80° merkez açı)",
+        "Salı günü: 100 soru (100° merkez açı)",
+        "Perşembe günü: 120 soru (120° merkez açı)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki üretim grafiğinde K ürününden {koyu:20 adet daha} üretilirse yeni oluşturulacak daire grafiğinde {koyu:M}",
+      "secenekler": [
+        "160° iken 144° olur (16° azalır)",
+        "160° iken 150° olur (10° azalır)",
+        "144° iken 160° olur (16° artar)",
+        "Merkez açısı değişmez, 160° kalır"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki veri analizi kavramlarını kutulara yazınız. Numaralı harflerle «sayısal verileri çizgi, sütun veya daire ile",
+      "satirlar": [
+        {
+          "ipucu": "Zamana bağlı sürekli değişimi gösteren grafik türü",
+          "cevap": "ÇİZGİ",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Merkez açıları toplamı 360 derece olan parça-bütün grafiği",
+          "cevap": "DAİRE",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Sütun grafiğini daire grafiğine çevirirken 360 derece ile kurulan bağıntı",
+          "cevap": "ORANTI",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Sütun grafiğinde dikey eksenin yanıltıcı olmaması için başladığı sayı",
+          "cevap": "SIFIR",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Grafiklerle görselleştirilen sayısal bilgi, ölçüm sonucu",
+          "cevap": "VERİ",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Bir veri grubundaki en büyük değer ile en küçük değer arasındaki fark",
+          "cevap": "AÇIKLIK",
+          "anahtar": 3
+        }
+      ],
+      "sonuc": "GRAFİK"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki araştırma konularından hangisinde çizgi, hangisinde daire grafiği kullanmanın daha uygun olduğunu gerekçesiyle açıklayınız.",
+      "cevap": "Sıcaklık takibinde zamana bağlı değişim olduğundan çizgi grafiği; bütçe paylarında parça-bütün.",
+      "satir": 2
+    }
+  ]
+}

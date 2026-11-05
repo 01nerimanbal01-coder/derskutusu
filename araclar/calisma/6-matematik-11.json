@@ -1,0 +1,275 @@
+{
+  "sinif": 6,
+  "ders": "matematik",
+  "hafta": 11,
+  "tarih": "30 Kasım-4 Aralık 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Sözel Olarak Verilen Bir Duruma Uygun Cebirsel İfade Yazma, Değişken, Terim, Katsayı, Sabit Terim ve Cebirsel İfadelerin Değerini Bulma",
+  "ciktilar": [
+    "MAT.6.2.1.a: Gerçek yaşam durumlarında bilinmeyen nicelikleri değişken kullanarak cebirsel ifadeye dönüştürebilme ve cebirsel ifadeyi sözel olarak açıklayabilme",
+    "MAT.6.2.1.b: Bir cebirsel ifadede yer alan değişken, terim, katsayı, sabit terim ve benzer terim kavramlarını işaretleriyle birlikte belirleyebilme",
+    "MAT.6.2.1.c: Cebirsel ifadelerde değişkenin alacağı farklı doğal sayı veya rasyonel sayı değerleri için işlem önceliğini gözeterek sayısal değeri hesaplayabilme"
+  ],
+  "hatirla": [
+    "Bilinmeyen nicelikleri temsil eden x, y, a, n gibi harflere değişken; en az bir değişken ve bir işlem içeren ifadelere cebirsel ifade denir.",
+    "İşlem sırasına dikkat edilir: «Bir sayının 3 katının 4 fazlası» 3x + 4 iken, «Bir sayının 4 fazlasının 3 katı» parantezle 3 · (x + 4) şeklinde yazılır.",
+    "+ ve − ile ayrılan her parçaya terim, harfsiz terime sabit terim, sayısal çarpanlara katsayı (sabit terim de katsayıdır; x’in katsayısı 1’dir), harfi ve üssü aynı olanlara benzer terim denir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Bilinmeyen sayı «x» olmak üzere sol sütundaki sözel ifadeleri sağ sütundaki cebirsel karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Bir sayının 5 katının 3 eksiği",
+          "5x − 3 cebirsel ifadesi"
+        ],
+        [
+          "Bir sayının 3 eksiğinin 5 katı",
+          "5 · (x − 3) cebirsel ifadesi"
+        ],
+        [
+          "Bir sayının dörtte birinin 2 fazlası",
+          "{kesir:x|4} + 2 cebirsel ifadesi"
+        ],
+        [
+          "Bir sayının 2 fazlasının dörtte biri",
+          "{kesir:x + 2|4} cebirsel ifadesi"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki şerit modelinde eş uzunluktaki 4 mavi çubuk (her biri «a» cm) ve 3 sarı birim küp (her biri «2» cm) uç uca eklenmiştir. Şeridin toplam uzunluğunu veren cebirsel",
+      "secenekler": [
+        "Cebirsel ifade: 4a + 6 — Sayısal değeri: 38 cm",
+        "Cebirsel ifade: 3a + 8 — Sayısal değeri: 32 cm",
+        "Cebirsel ifade: 4 · (a + 2) — Sayısal değeri: 40 cm",
+        "Cebirsel ifade: 6a + 4 — Sayısal değeri: 52 cm"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki cebirsel ifade çözümleme kartlarını inceleyerek tablodaki eksik terim sayısı, sabit terim ve katsayılar toplamı hücrelerini",
+      "basliklar": [
+        "Cebirsel İfade",
+        "Terim Sayısı ve Sabit Terim",
+        "Katsayılar Toplamı"
+      ],
+      "satirlar": [
+        [
+          "1. 5x + 2y + 7",
+          "3 terimli · Sabit: +7",
+          {
+            "b": "5 + 2 + 7 = 14"
+          }
+        ],
+        [
+          "2. 8a − 3b + 10",
+          {
+            "b": "3 terimli · Sabit: +10"
+          },
+          {
+            "b": "8 − 3 + 10 = 15"
+          }
+        ],
+        [
+          "3. 6m + n − 4",
+          {
+            "b": "3 terimli · Sabit: −4"
+          },
+          "6 + 1 − 4 = 3"
+        ],
+        [
+          "4. 9k + 5",
+          "2 terimli · Sabit: +5",
+          {
+            "b": "9 + 5 = 14"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Cebirsel ifadelerin bileşenleri ve değer bulma kurallarıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "«7x − 11» cebirsel ifadesinin sabit terimi +11 değil, işaretiyle birlikte alınan −11’dir.",
+          "dogru": true
+        },
+        {
+          "metin": "«4a + b + 6» ifadesinde önünde sayı yazmayan «+b» teriminin katsayısı 0 kabul edilir.",
+          "dogru": false
+        },
+        {
+          "metin": "«5xy» terimi ile «−8yx» terimi değişkenleri ve kuvvetleri aynı olduğu için benzer terimlerdir.",
+          "dogru": true
+        },
+        {
+          "metin": "«3n» cebirsel ifadesinde n = 6 değeri yerine yazıldığında ifadenin değeri iki basamaklı 36 sayısı olur.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir cebirsel ifadedeki sabit terim, aynı zamanda o ifadenin katsayılarından biridir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun matematiksel kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Cebirsel ifadelerde bilinmeyen niceliği temsil eden x, y, k gibi harflere ___ denir.",
+          "cevap": "değişken"
+        },
+        {
+          "metin": "Toplama ve çıkarma işaretleriyle birbirinden ayrılan her bir parçaya ___ adı verilir.",
+          "cevap": "terim"
+        },
+        {
+          "metin": "Değişkenleri ve bu değişkenlerin üsleri birebir aynı olan terimlere ___ terim denir.",
+          "cevap": "benzer"
+        },
+        {
+          "metin": "Yanında hiçbir değişken (harf) bulunmayan sayısal terime ___ terim adı verilir.",
+          "cevap": "sabit"
+        }
+      ],
+      "fazla": [
+        "payda"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki kumbara ve su deposu kartlarında verilen iki gerçek yaşam durumuna karşılık gelen cebirsel ifadeler aşağıdakilerden",
+      "secenekler": [
+        "1. Durum: 120 + 6x — 2. Durum: 250 − 4y",
+        "1. Durum: 120x + 6 — 2. Durum: 250 + 4y",
+        "1. Durum: 6 · (120 + x) — 2. Durum: 4y − 250",
+        "1. Durum: 120 − 6x — 2. Durum: 250 + 4y"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki işlem önceliği kartında verilen «3 · {us:x|2} − 4x + 9» cebirsel ifadesinin «x = 4» için sayısal değeri kaçtır?",
+      "secenekler": [
+        "33",
+        "41",
+        "49",
+        "137"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki dikdörtgen bahçenin kısa kenarı «k» metre, uzun kenarı ise «2k + 3» metredir. Bahçenin çevresini veren cebirsel ifadeyi yazınız ve «k = 5»",
+      "cevap": "Çevre = k + k + (2k + 3) + (2k + 3) = 6k + 6 metre. k = 5 için Çevre =.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görselde verilen «2 · (m + 5) + {us:m|2} − 6» cebirsel ifadesinin «m = 3» için değerini bulma adımlarını işlem önceliğine göre",
+      "ogeler": [
+        "Cebirsel ifadede gördüğümüz her «m» değişkeninin yerine 3 sayısını yazmak: 2 · (3 + 5) + {us:3|2} − 6",
+        "Üslü ifadeyi ve parantez içindeki toplamayı hesaplamak: {us:3|2} = 9 ve (3 + 5) = 8 bulmak",
+        "Çarpma işlemini öncelikli olarak gerçekleştirmek: 2 · 8 = 16 değerine ulaşmak",
+        "Soldan sağa toplama ve çıkarma işlemlerini tamamlayarak 16 + 9 − 6 = 19 sonucunu bulmak"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört terim kartından hangi ikisi birbirleriyle {koyu:benzer terimdir?}",
+      "secenekler": [
+        "I. Kart (6{us:a|2}) ile II. Kart (6a) — Katsayıları aynı olduğu için",
+        "II. Kart (6a) ile III. Kart (6b) — Kuvvetleri aynı olduğu için",
+        "II. Kart (6a) ile IV. Kart (−9a) — Değişkeni ve kuvveti aynı olduğu için",
+        "I. Kart (6{us:a|2}) ile IV. Kart (−9a) — Harfleri aynı olduğu için"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “bir cebirsel ifadede terimlerin başındaki sayısal çarpan” kavramını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "{us:x|2} üslü ifadesinin okunuşunda sayının ikinci kuvveti",
+          "cevap": "KARESİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yanında hiçbir değişken bulunmayan sayısal terim: ___ terim",
+          "cevap": "SABİT",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Cebirsel ifadede + ve − işaretleriyle ayrılan her bir bölüm",
+          "cevap": "TERİM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bilinmeyen sayıyı göstermek için kullanılan harf veya işaret",
+          "cevap": "SEMBOL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Önce toplama yapılıp sonra katı alınırken kullanılan işlem ayraçları",
+          "cevap": "PARANTEZ",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Bir niceliğin 2 eş parçaya bölünmesini anlatan sözel ifade",
+          "cevap": "YARISI",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Cebirsel ifadede fazlası denildiğinde kullanılan toplama işareti",
+          "cevap": "ARTI",
+          "anahtar": 3
+        }
+      ],
+      "sonuc": "KATSAYI"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki “Kırtasiye Alışverişi Kartı”na göre, tanesi «p» TL olan kalemlerden 4 tane alan ve 15 TL indirim kuponu kullanan Zeynep’in 100 TL verdiğinde alacağı para üstünü cebirsel",
+      "cevap": "Ödenecek tutar (4p − 15) TL’dir; para üstü 100 − (4p − 15) = 115 − 4p TL olur. p = 18 için: 4 · 18 − 15 = 57.",
+      "satir": 2
+    }
+  ]
+}

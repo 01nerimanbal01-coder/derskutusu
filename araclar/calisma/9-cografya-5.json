@@ -1,0 +1,267 @@
+{
+  "sinif": 9,
+  "ders": "cografya",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Mekânın Aynası Haritalar: Harita Okuma, Mekânsal İlişkileri Çözümleme ve Harita Uygulamaları",
+  "ciktilar": [
+    "Haritaya ait bileşenlerden (başlık, lejant, ölçek, yön oku, koordinat ağı) yararlanarak farklı türdeki haritaları okur.",
+    "Haritaya ait bileşenlerden yararlanarak haritadaki doğal ve beşerî olay, olgu ve mekânlar arası ilişkileri çözümler.",
+    "Haritada yer alan olay, olgu veya mekânların özellik, konum, dağılış ve ilişkileri ile değişim ve harita türüne ilişkin çıkarım yapar."
+  ],
+  "hatirla": [
+    "Fiziki haritalarda renkler bitki örtüsünü değil yükselti basamaklarını gösterir (0-500 m yeşil, 500-1000 m sarı, 1000-1500 m turuncu, >1500 m kahverengi).",
+    "İzohipslerde V büklümünün sivri ucu yüksek yeri gösteriyorsa vadi, alçak yeri gösteriyorsa sırttır; sık eğrilerde eğim fazladır.",
+    "Gerçek Uzunluk: GU = HU × Ölçek Paydası; Eğim (%): {kesir:h|L} × 100 (h ve L aynı birime çevrilir)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Topografya (izohips) haritasındaki yer şekillerini özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Vadi",
+          "İzohips V büklümünün sivri ucunun yüksek yeri gösterdiği akarsu yatağı"
+        ],
+        [
+          "Sırt",
+          "İzohips V büklümünün sivri ucunun alçak yeri gösterdiği yamaç ayrımı"
+        ],
+        [
+          "Boyun",
+          "Birbirinden ayrı iki tepe arasında kalan çevresine göre alçak geçit"
+        ],
+        [
+          "Falez (Yalıyar)",
+          "İzohips eğrilerinin deniz kıyısında üst üste çakıştığı dik kıyı uçurumu"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki eğim bağıntısına göre 200 m yükseltideki K noktası ile 1000 m yükseltideki L noktası arası yatay uzaklık 16 km ise eğim yüzde kaçtır?",
+      "secenekler": [
+        "%5",
+        "%8",
+        "%10",
+        "%20"
+      ],
+      "dogru": 0,
+      "cozum": "h = 1000 - 200 = 800 m ve L = 16 km = 16.000 m olduğundan Eğim (%) = {kesir:800|16000} × 100 = %5 bulunur."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Fiziki Türkiye haritasında Çukurova'nın yeşil, Konya Ovası'nın ise sarı tonlarla gösterilmesinin temel nedeni nedir?",
+      "cevap": "Fiziki haritada renkler yükselti basamağını gösterir; Çukurova 0-200 m, Konya.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İzohips ve harita okuma ilkeleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Bir akarsuyun her iki yamacındaki ilk komşu izohipslerin yükseltisi birbirine eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Haritanın ölçeği büyüdükçe ardışık iki izohips arası yükselti farkı (eküidistans) küçülür.",
+          "dogru": true
+        },
+        {
+          "metin": "Aynı akarsu ağzında hem delta ovası hem de haliç aynı anda oluşabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Fiziki haritalardaki yeşil renkli alanlar her zaman gür orman örtüsünü temsil eder.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Fiziki ve tematik harita unsurlarını temsil ettikleri coğrafi verilerle tamamlayınız.",
+      "basliklar": [
+        "Harita Unsuru / Türü",
+        "Gösterim Yöntemi",
+        "Temsil Ettiği Coğrafi Veri"
+      ],
+      "satirlar": [
+        [
+          "Yeşil Renk Basamağı",
+          "Fiziki renklendirme",
+          {
+            "b": "0 - 500 metre arası alçak yükselti"
+          }
+        ],
+        [
+          "Kahverengi Basamağı",
+          "Fiziki renklendirme",
+          {
+            "b": "1500 metre üzeri yüksek dağlık alan"
+          }
+        ],
+        [
+          "Koroplet Haritası",
+          "Dereceli renk tonları",
+          {
+            "b": "İdari sınırlar içinde nüfus yoğunluğu oranı"
+          }
+        ],
+        [
+          "Akış (Çizgi) Haritası",
+          "Yönlü ve kalınlığı değişen oklar",
+          {
+            "b": "Göç, ticaret veya ulaşım hareket yönü"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki harita okuma ve mekânsal çözümleme adımlarını uygulama sırasına diziniz.",
+      "ogeler": [
+        "Harita başlığını okuyarak konuyu ve kullanım amacını belirleme",
+        "Lejantı (harita anahtarını) inceleyerek sembol ve renkleri çözme",
+        "Koordinat ağı, yön oku ve ölçekle konum ve mesafeyi saptama",
+        "Doğal ve beşerî unsurlar arasındaki mekânsal ilişkiden çıkarım yapma"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki {kesir:1|300000} ölçekli haritada iki şehir arasındaki uzaklık 5 cm ölçülmüştür. Kuş uçuşu gerçek uzaklık kaç km'dir?",
+      "secenekler": [
+        "15 km",
+        "30 km",
+        "45 km",
+        "60 km"
+      ],
+      "dogru": 0,
+      "cozum": "GU = 5 × 300.000 = 1.500.000 cm; 5 sıfır silinerek kilometreye çevrilir ve 15 km bulunur."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki coğrafi kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Topografya haritasında ardışık iki izohips arasındaki sabit yükselti farkına ___ denir.",
+          "cevap": "eküidistans"
+        },
+        {
+          "metin": "Akarsuyun taşıdığı alüvyonları sığ kıyıda biriktirmesiyle oluşan çıkıntıya ___ ovası denir.",
+          "cevap": "delta"
+        },
+        {
+          "metin": "İzohips haritasında iki nokta arasındaki yer şeklinin yandan görünüş grafiğine ___ denir.",
+          "cevap": "profil"
+        }
+      ],
+      "fazla": [
+        "haliç"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Harita kavramlarını ve tematik yöntemleri açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "İzobat",
+          "Deniz ve göllerde aynı derinliğe sahip noktaları birleştiren eğri"
+        ],
+        [
+          "Kapalı Çukur (Çanak)",
+          "İzohips haritasında yükseltinin azaldığı yöne ok (→) çizilen krater/obruk"
+        ],
+        [
+          "Noktalama Haritası",
+          "Nüfus veya tarım ürünü miktarını belirli değerli noktalarla gösteren harita"
+        ],
+        [
+          "İzoplet (Eş Değer)",
+          "İzoterm veya izobar gibi sürekli verileri eş değer eğrilerle gösteren harita"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Profil çıkarma ve mekânsal dağılışla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "İzohipslerin sıklaştığı yerlerde yamaç eğimi fazla, kıta sahanlığı dardır.",
+          "dogru": true
+        },
+        {
+          "metin": "Deniz kıyısı çizgisi her zaman 0 metre yükselti değerine sahiptir.",
+          "dogru": true
+        },
+        {
+          "metin": "Eğim hesaplanırken yükselti farkı metre, yatay uzaklık kilometre olarak bölünür.",
+          "dogru": false
+        },
+        {
+          "metin": "Demir yolu hatları maliyetin düşmesi için genellikle akarsu vadilerini ve boyunları izler.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen coğrafya kavramlarını yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Harita üzerindeki sembol ve renklerin açıklandığı harita anahtarı (6 harf)",
+          "cevap": "LEJANT",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Büyük ölçekli, sadece dağları değil mülkiyet sınırlarını da gösteren çizim (8 harf)",
+          "cevap": "KADASTRO",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Deniz seviyesinden aynı yükseltideki noktaları birleştiren eğri (7 harf)",
+          "cevap": "İZOHİPS",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Haritadaki küçültme oranını belirten temel bileşen (5 harf)",
+          "cevap": "ÖLÇEK",
+          "anahtar": 4
+        }
+      ],
+      "sonuc": "EDİK"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Bir bölgenin fiziki haritası ile nüfus dağılış haritasını karşılaştıran bir öğrenci, yer şekilleri ve yerleşme arasında nasıl bir ilişki kurar?",
+      "cevap": "Yüksek ve eğimli dağlık alanlarda ulaşım güçlüğü nedeniyle nüfus seyrekleşir.",
+      "satir": 2
+    }
+  ]
+}
