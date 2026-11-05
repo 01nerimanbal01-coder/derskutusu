@@ -1,0 +1,189 @@
+{
+  "sinif": 11,
+  "ders": "matematik",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "İki Nicel Değişkenli Verileri İnceleme, Yanlılıklar ve İstatistiksel Yorumlama",
+  "ciktilar": [
+    "MAT.11.1.2. Başkaları tarafından oluşturulan iki nicel değişkenli verilerin ilişkililiğine dayalı istatistiksel sonuç veya yorumları tartışabilme"
+  ],
+  "hatirla": [
+    "Korelasyon-nedensellik yanılgısı; iki değişken arasında matematiksel bir bağ bulunmasının doğrudan bir sebep-sonuç ilişkisi anlamına gelmediğini unutan mantık hatasıdır.",
+    "Örneklem yanlılığı; verilerin evreni temsil etmeyen taraflı bir gruptan toplanması sonucu analizlerin yanıltıcı çıkmasıdır.",
+    "Ekstrapolasyon hatası; doğrusal modelin eldeki veri sınırlarının çok ötesindeki aşırı uç değerler için tahmin yapmada körü körüne kullanılmasıdır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İstatistikte sık düşülen yanılgı ve hata türlerini tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Korelasyon Yanılgısı",
+          "İlişki yüksek çıktı diye birinin diğerine sebep olduğunu varsaymak"
+        ],
+        [
+          "Örneklem Yanlılığı",
+          "Veri toplanan grubun ana kütleyi temsil etmeyen taraflı yapıda olması"
+        ],
+        [
+          "Ekstrapolasyon Hatası",
+          "Gözlem aralığının çok dışındaki aşırı uçlar için hatalı tahmin yürütme"
+        ],
+        [
+          "Aykırı Değer Etkisi",
+          "Kümeden uzak tek bir noktanın korelasyon katsayısını yapay saptırması"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Bir gazete haberinde 'Kahve tüketimi ile gelir düzeyi arasında güçlü pozitif ilişki bulundu; bu yüzden günde üç fincan kahve içmek insanı zengin yapar' denilmiştir. Bu haberdeki temel istatistiksel mantık hatası nedir?",
+      "secenekler": [
+        "Korelasyonu nedensellik gibi yorumlayıp üçüncü değişkenleri görmezden gelme hatası",
+        "Grafik çiziminde dikey eksenin yatay eksenden daha uzun gösterilmesi hatası",
+        "Kahve fiyatlarının borsa döviz kurlarından bağımsız belirlenmesi hatası",
+        "Verilerin sadece tek bir kahve türü üzerinden hesaplanması hatası"
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Görseldeki 0-10 yaş arası çocukların boy ve yaş verisine dayalı regresyon doğrusu (y = 6x + 75) kullanılarak bir kişinin 50 yaşındaki boyunun 375 cm olarak tahmin edilmesi hangi hatadır?",
+      "secenekler": [
+        "Negatif korelasyonu pozitif yönlü okuma hatası",
+        "Örneklem kümesindeki medyan değerini yanlış hesaplama hatası",
+        "Modeli veri aralığının çok ötesine uygulayan ekstrapolasyon hatası",
+        "Standart sapma değerini sıfırdan küçük kabul etme hatası"
+      ],
+      "cevap": "C",
+      "dogru": 2
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Boş bırakılan yere uygun kavramı yazınız.",
+      "cumleler": [
+        {
+          "metin": "İki nicel değişken arasında güçlü matematiksel ilişki bulunsa dahi biri diğerinin kesin sebebi olmak zorunda değildir; bu duruma ___ yanılgısı denir.",
+          "cevap": "nedensellik"
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "degerlendir",
+      "soru": "Bir anket şirketinin 'Halkın teknolojiye bakışı' araştırmasını sadece bir yazılım şirketinin çalışanlarına uygulayarak genel bir rapor yayımlaması hangi istatistiksel kusurdur?",
+      "secenekler": [
+        "Eksenlerin logaritmik ölçekte çizilmemiş olması",
+        "Toplumun bütününü temsil etmeyen yanlı bir örneklem seçilmiş olması",
+        "Katılımcıların tamamının aynı şehirden seçilmiş olması",
+        "Anket sorularının internet üzerinden yanıtlanmış olması"
+      ],
+      "cevap": "B",
+      "dogru": 1
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "İstatistiksel analiz adımlarını taşıdıkları doğrulama işlevleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Serpilme Grafiği",
+          "Veri noktalarının doğrusal bir eğilim gösterip göstermediğini görme"
+        ],
+        [
+          "Korelasyon Katsayısı (r)",
+          "İlişkinin sayısal yönünü (-1 ile +1 arası) ve derecesini ölçme"
+        ],
+        [
+          "Artık (Kalıntı) Analizi",
+          "Modelden sapan gerçek değerlerin dağılımını kontrol etme"
+        ],
+        [
+          "Alan Kısıtı Belirleme",
+          "Doğrusal modelin geçerli olduğu güvenilir gözlem aralığını çizme"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Serpilme diyagramında yer alan sekiz veri noktasının yedisi r = +0,90 eğiliminde iken tek bir uç noktanın katsayıyı r = +0,35'e düşürmesi karşısında ne yapılmalıdır?",
+      "secenekler": [
+        "Bütün veriler çöpe atılarak araştırmadan tamamen vazgeçilmelidir",
+        "Grafiğin eğim açısı yapay olarak kırk beş dereceye yükseltilmelidir",
+        "Kalan yedi noktanın tamamı da grafikten derhal silinmelidir",
+        "O uç noktanın ölçüm hatası veya özel bir durum olup olmadığı incelenmelidir"
+      ],
+      "cevap": "D",
+      "dogru": 3
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Boş bırakılan yere uygun kavramı yazınız.",
+      "cumleler": [
+        {
+          "metin": "Eldeki veri kümesinin sınırları içerisinde kalarak ara değerler için yapılan tahmine ___ (içdeğerbiçim) denir.",
+          "cevap": "interpolasyon"
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Bir kentte sokak lambalarının sayısı ile kütüphanelerdeki kitap sayısı arasında r = +0,88 pozitif ilişki görülmüştür. Bu iki değişken arasındaki ortak gizli etken nedir?",
+      "secenekler": [
+        "Şehrin toplam nüfusunun ve yerleşim alanının büyümesi değişkeni",
+        "Sokak lambalarının kitap okumayı gece boyunca zorunlu kılması",
+        "Kütüphanelerdeki kitapların elektrik enerjisiyle basılması",
+        "Şehirdeki yağış miktarının her yıl düzenli olarak düşmesi"
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "degerlendir",
+      "soru": "Başkaları tarafından yayımlanan bir istatistiksel grafiği eleştirel gözle incelerken hangisine dikkat etmek en öncelikli bilimsel tutumdur?",
+      "secenekler": [
+        "Verilerin güvenilir bir kaynaktan toplanıp toplanmadığına ve yanlılık olup olmadığına",
+        "Grafiğin hangi renk tonlarıyla basıldığına ve gölgelendirme efektlerine",
+        "Yazı puntosunun diğer ders kitaplarıyla aynı boyutta olup olmadığına",
+        "Rapordaki matematiksel denklemlerin en az on satır uzunluğunda olmasına"
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Boş bırakılan yere uygun kavramı yazınız.",
+      "cumleler": [
+        {
+          "metin": "Model denkleminde gözlenen gerçek değer ile modelin tahmin ettiği değer arasındaki farka ___ (hata) denir.",
+          "cevap": "kalıntı"
+        }
+      ]
+    },
+    {
+      "tur": "acik",
+      "duzey": "analiz",
+      "soru": "İstatistikte iki değişken arasında yüksek korelasyon çıkmasının neden her zaman nedensellik anlamına gelmediğini açıklayınız.",
+      "cevap": "Çünkü her iki değişkeni de aynı anda etkileyen üçüncü bir gizli faktör bulunabilir."
+    }
+  ]
+}

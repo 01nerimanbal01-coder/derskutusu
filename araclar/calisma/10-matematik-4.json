@@ -1,0 +1,264 @@
+{
+  "sinif": 10,
+  "ders": "matematik",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Üçgende Yardımcı Elemanların Özellikleri ve Üçgenin Alanı",
+  "ciktilar": [
+    "Üçgenin yardımcı elemanlarının kesim noktalarını ve özelliklerini belirler.",
+    "Üçgenin temel alan bağıntısını, taban-yükseklik ilişkisini ve taban-alan oranlarını analiz eder.",
+    "Kenarortayların alan paylaşımını, eşkenar üçgenin alanını ve sinüs alan teoremini kullanır."
+  ],
+  "hatirla": [
+    "Üçgenin temel alanı: Alan = (Taban · Yükseklik) / 2 = (a · ha) / 2.",
+    "Yükseklikleri eşit olan üçgenlerin alanları oranı taban uzunlukları oranına eşittir.",
+    "Kenarortaylar üçgeni 6 eşit alana böler; ağırlık merkezi köşelerle birleştirildiğinde 3 eşit alan oluşur.",
+    "Eşkenar üçgen alanı: a² · {kok:3} / 4; Sinüs alan bağıntısı: ½ · a · b · sin(C)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Üçgenin yardımcı elemanlarının kesim noktalarını adlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Kenarortayların kesim noktası",
+          "Ağırlık merkezi (G)"
+        ],
+        [
+          "İç açıortayların kesim noktası",
+          "İç teğet çemberin merkezi (I)"
+        ],
+        [
+          "Yüksekliklerin kesim noktası",
+          "Diklik merkezi (H)"
+        ],
+        [
+          "Kenar orta dikmelerin kesim noktası",
+          "Çevrel çemberin merkezi (O)"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-4 temel kurallar ve kavramlar kartı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><rect x=\"10\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Temel Alan</text><line x1=\"18\" y1=\"40\" x2=\"82\" y2=\"40\" stroke=\"#2451d6\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alan = (Taban · Yükseklik) / 2</text><rect x=\"96\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Eşkenar Alan</text><line x1=\"104\" y1=\"40\" x2=\"168\" y2=\"40\" stroke=\"#12a150\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alan = a² · {kok:3} / 4</text><rect x=\"182\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Sinüs Alan</text><line x1=\"190\" y1=\"40\" x2=\"254\" y2=\"40\" stroke=\"#ee7d12\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alan = ½ · a · b · sin(C)</text><rect x=\"268\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Kenarortay &amp; Alan</text><line x1=\"276\" y1=\"40\" x2=\"340\" y2=\"40\" stroke=\"#7c3aed\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">G üçgeni 6 eşit alana böler</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Bir ABC üçgeninde [BC] kenarının uzunluğu 14 cm ve bu kenara ait yükseklik h = 6 cm olduğuna göre A(ABC) kaç cm² olur?",
+      "secenekler": [
+        "42",
+        "84",
+        "48",
+        "28"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-4 ana konu ve kavramsal model şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">ÜÇGENDE TEMEL ALAN BAĞINTISI VE YÜKSEKLİK</text><rect x=\"16\" y=\"34\" width=\"160\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"96.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">[BC] = 14 cm, h = 6 cm</text><text x=\"96.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alan = (14 · 6) / 2 = 42 cm²</text><rect x=\"184\" y=\"34\" width=\"160\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"264.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Dik Üçgen Alanı: Dik kenarlar çarpımı / 2</text><text x=\"264.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alan = (b · c) / 2</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "gorsel_var": true,
+      "soru": "Bir kenar uzunluğu 6 cm olan eşkenar üçgenin alanını hesaplayınız.",
+      "cevap": "Alan = 6² · {kok:3} / 4 = 9{kok:3} cm².",
+      "satir": 2,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-4 model ve yasa karşılaştırma şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Eşkenar Üçgenin Alanı ve Kök 3 Bağıntısı</text><rect x=\"16\" y=\"34\" width=\"156\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"94.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Bir Kenarı a = 6 cm</text><text x=\"94.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alan = 6² · {kok:3} / 4 = 9{kok:3} cm²</text><rect x=\"188\" y=\"34\" width=\"156\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"266.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Bir Kenarı a = 4 cm</text><text x=\"266.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alan = 4² · {kok:3} / 4 = 4{kok:3} cm²</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Üçgenin alanı ve yardımcı elemanlarıyla ilgili ifadeleri Doğru/Yanlış olarak belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Üç kenarortayın üçgen içinde ayırdığı 6 üçgenin alanları birbirine eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Geniş açılı üçgenlerde diklik merkezi üçgenin daima iç bölgesindedir.",
+          "dogru": false
+        },
+        {
+          "metin": "Yükseklikleri eşit iki üçgenin alanları oranı tabanları oranına eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Dik üçgenin alanı dik kenarlarının çarpımına eşittir (ikiye bölünmez).",
+          "dogru": false
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-4 sınıflandırma ve ayrıntı şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Yükseklikleri Eşit Üçgenlerde Taban-Alan Oranı</text><rect x=\"14\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"66.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Taban 3 cm</text><text x=\"66.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alan = 15 cm² (1k)</text><rect x=\"126\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"178.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Taban 6 cm</text><text x=\"178.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alan = 30 cm² (2k)</text><rect x=\"238\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"290.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Sonuç</text><text x=\"290.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alanlar oranı tabanlar oranına eşittir</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Üçgen alan tablosundaki boşlukları tamamlayınız.",
+      "basliklar": [
+        "Üçgen Türü",
+        "Verilen Değerler",
+        "Alan Bağıntısı",
+        "Hesaplanan Alan"
+      ],
+      "satirlar": [
+        [
+          "Çeşitkenar Üçgen",
+          "a = 10 cm, ha = 6 cm",
+          "(a · ha) / 2",
+          {
+            "b": "30 cm²"
+          }
+        ],
+        [
+          "Eşkenar Üçgen",
+          "Kenar a = 4 cm",
+          "a² · {kok:3} / 4",
+          {
+            "b": "4{kok:3} cm²"
+          }
+        ],
+        [
+          "Dik Üçgen",
+          "Dik kenarlar 6 cm ve 8 cm",
+          "(b · c) / 2",
+          {
+            "b": "24 cm²"
+          }
+        ],
+        [
+          "Açılı Üçgen",
+          "a = 8, b = 10, C = 30°",
+          "½ · a · b · sin(30°)",
+          {
+            "b": "20 cm²"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Sinüs alan teoremiyle üçgen alanı hesaplama adımlarını sıraya diziniz.",
+      "ogeler": [
+        "Üçgenin bilinen iki kenar uzunluğunu ve aralarındaki açıyı belirleme",
+        "Aralarındaki açının sinüs değerini trigonometrik tablodan bulma",
+        "İki kenar uzunluğu ile açının sinüsünü birbirleriyle çarpma",
+        "Elde edilen çarpımı ikiye bölerek üçgenin net alanına ulaşma"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-4 süreç ve akış basamakları modeli\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">SİNÜS ALAN TEOREMİ İLE ALAN HESAPLAMA AKIŞI</text><rect x=\"10\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">1. Kenarlar</text><text x=\"50.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">İki kenar boyu a ve b</text><rect x=\"96\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">2. Açı</text><text x=\"136.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Aralarındaki açı α</text><rect x=\"182\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">3. Sinüs</text><text x=\"222.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">sin(α) trigonometrik değer</text><rect x=\"268\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">4. Çarpım</text><text x=\"308.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alan = ½ · a · b · sin(α)</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "ABC üçgeninde D noktası [BC] üzerinde olup |BD| = 3 cm, |DC| = 6 cm'dir. Alan(ABD) = 15 cm² olduğuna göre Alan(ADC) kaç cm²'dir?",
+      "secenekler": [
+        "30",
+        "45",
+        "20",
+        "25"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-4 karşılaştırma ve ilişki diyagramı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">Kenarortayların Üçgeni 6 Eşit Alana Bölmesi (6S)</text><rect x=\"14\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"66.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Ağırlık Merkezi (G)</text><text x=\"66.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">3 kenarortayın kesişim noktası</text><rect x=\"126\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"178.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Her Bölge = S</text><text x=\"178.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Tüm 6 üçgenin alanı birbirine eşit</text><rect x=\"238\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"290.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Toplam Alan</text><text x=\"290.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alan(ABC) = 6 · S</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "gorsel_var": true,
+      "soru": "Bir üçgende kenarortay doğrusunun üçgen alanını bölme oranını yazınız.",
+      "cevap": "Alanı iki eşit parçaya böler (1:1 oranı).",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Üçgen alan teoremlerini formül yapılarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Temel alan bağıntısı",
+          "Taban ile o tabana ait yüksekliğin çarpımının yarısı"
+        ],
+        [
+          "Sinüs alan bağıntısı",
+          "İki kenar ile aradaki açının sinüsünün çarpımının yarısı"
+        ],
+        [
+          "Eşkenar üçgen alanı",
+          "Bir kenarın karesi ile kök 3 çarpımının dörde bölümü"
+        ],
+        [
+          "Ağırlık merkezi alan paylaşımı",
+          "Üç kenarortayın alanı 6 eşit üçgene bölmesi"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-4 temel terminoloji kavram kartları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e0f4f8\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><rect x=\"10\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Alan</text><line x1=\"18\" y1=\"42\" x2=\"82\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">İki boyutlu yüzey büyüklüğü</text><rect x=\"96\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Yükseklik (h)</text><line x1=\"104\" y1=\"42\" x2=\"168\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Köşeden kenara inen dikme</text><rect x=\"182\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Ağırlık Merkezi</text><line x1=\"190\" y1=\"42\" x2=\"254\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Kenarortay kesim noktası</text><rect x=\"268\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Sinüs Alan</text><line x1=\"276\" y1=\"42\" x2=\"340\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Açılı üçgen alan formülü</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Üçgenin ağırlık merkezi ve alan özellikleriyle ilgili ifadeleri Doğru/Yanlış olarak belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Ağırlık merkezi köşelere birleştirildiğinde oluşan 3 üçgenin alanı eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "İç teğet çemberin merkezi kenarlara eşit uzaklıkta dikmeler indirir.",
+          "dogru": true
+        },
+        {
+          "metin": "Geniş açılı üçgenin alanı bulunurken yükseklik daima içeriden çizilmelidir.",
+          "dogru": false
+        },
+        {
+          "metin": "Dik üçgende dik kenarlardan biri taban, diğeri o tabanın yüksekliğidir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarından yararlanarak geometri kavramlarını yazınız. Numaralı kutulardan 'TABAN' kelimesini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Matematikte kanıtlanabilen önerme ve aksiyom kuralı",
+          "cevap": "TEOREM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bir açıyı iki eşit ölçüye bölen doğru parçası",
+          "cevap": "AÇIORTAY",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Geometrik elemanlar arasındaki matematiksel eşitlik",
+          "cevap": "BAĞINTI",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bir düzlem parçasının iki boyutlu yüzey ölçüsü",
+          "cevap": "ALAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Doğruların kesiştiği boyutsuz geometrik yer",
+          "cevap": "NOKTA",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "TABAN",
+      "sonuc": "TABAN",
+      "gorsel": "<svg viewBox=\"0 0 360 96\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-4 dersi şifre anahtar harf kutuları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"88\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">ANAHTAR KAVRAM ŞİFRE ŞERİDİ: T - A - B - A - N</text><rect x=\"48\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"72.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">1</text><text x=\"72.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">T</text><rect x=\"103\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"127.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">2</text><text x=\"127.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">A</text><rect x=\"158\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"182.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">3</text><text x=\"182.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">B</text><rect x=\"213\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"237.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">4</text><text x=\"237.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">A</text><rect x=\"268\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"292.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">5</text><text x=\"292.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">N</text></svg>"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Bir üçgende kenarortay doğrusunun üçgenin alanını neden iki eşit parçaya böldüğünü açıklayınız.",
+      "cevap": "Tabanları eşit ve ortak tepe noktasından inen yükseklikleri aynı olduğu içindir.",
+      "satir": 2
+    }
+  ]
+}

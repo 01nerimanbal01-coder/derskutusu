@@ -1,0 +1,263 @@
+{
+  "sinif": 10,
+  "ders": "cografya",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Mekânsal Bilgi Teknolojilerinin Bileşenleri (CBS, Uzaktan Algılama, GPS) ve Afet Yönetiminde AYDES Uygulaması",
+  "ciktilar": [
+    "Mekânsal bilgi teknolojilerinin bileşenlerini ve kullanım alanlarını çözümler.",
+    "Uydu görüntülerindeki unsurları nokta, çizgi ve alan verileriyle analiz eder.",
+    "Afet yönetiminde AFAD ve AYDES sistemlerinin önemini değerlendirir."
+  ],
+  "hatirla": [
+    "Mekânsal bilgi teknolojileri; CBS, Uzaktan Algılama ve GPS/GNSS sistemlerinden oluşur.",
+    "AYDES (Afet Yönetim Karar Destek Sistemi), AFAD tarafından afet müdahale ve tahliyeyi koordine etmek için kullanılır.",
+    "Uzaktan algılama uyduları temassız veri toplarken, CBS bu verileri katmanlar hâlinde çakıştırır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Mekânsal teknoloji bileşenlerini görevleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Uzaktan Algılama (UA)",
+          "Uydularla temas etmeden yeryüzünden veri toplama"
+        ],
+        [
+          "Coğrafi Bilgi Sistemleri (CBS)",
+          "Konum tabanlı verileri depolama ve analiz etme"
+        ],
+        [
+          "GPS / GNSS",
+          "Uydulardan gelen sinyallerle anlık koordinat belirleme"
+        ],
+        [
+          "AYDES",
+          "Afet anında acil müdahale ve tahliyeyi koordine etme"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-4 temel kurallar ve kavramlar kartı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><rect x=\"10\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">CBS</text><line x1=\"18\" y1=\"40\" x2=\"82\" y2=\"40\" stroke=\"#2451d6\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Mekânsal analiz ve katmanlama</text><rect x=\"96\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Uzaktan Algılama</text><line x1=\"104\" y1=\"40\" x2=\"168\" y2=\"40\" stroke=\"#12a150\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Uydu ve radar sensörleri</text><rect x=\"182\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">GPS / GNSS</text><line x1=\"190\" y1=\"40\" x2=\"254\" y2=\"40\" stroke=\"#ee7d12\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Küresel koordinat konumu</text><rect x=\"268\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">AYDES</text><line x1=\"276\" y1=\"40\" x2=\"340\" y2=\"40\" stroke=\"#7c3aed\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Afet Yönetim Karar Destek</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Deprem sonrasında yıkılan binaların tespiti ve acil tahliye koordinasyonunda AFAD hangi sistemden yararlanır?",
+      "secenekler": [
+        "AYDES (Afet Yönetim Karar Destek Sistemi)",
+        "Klasik basılı topoğrafya haritası",
+        "Yalnızca barometre ve termometre kayıtları",
+        "Geleneksel pusula ve nivo ölçüm aletleri"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-4 ana konu ve kavramsal model şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">AFAD VE AYDES AFET MÜDAHALE SİSTEMİ</text><rect x=\"16\" y=\"34\" width=\"160\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"96.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">AYDES Acil Müdahale Koordinasyonu</text><text x=\"96.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Enkaz, kaçış yolları ve ekipler</text><rect x=\"184\" y=\"34\" width=\"160\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"264.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">CBS Tabanlı Risk Haritaları</text><text x=\"264.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Toplanma alanları ve çadır kentler</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "gorsel_var": true,
+      "soru": "AYDES sisteminin afet yönetimindeki açılımını ve temel işlevini yazınız.",
+      "cevap": "Afet Yönetim Karar Destek Sistemi; kriz anında koordinasyon ve müdahale sağlar.",
+      "satir": 2,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-4 model ve yasa karşılaştırma şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Uydu Görüntülerinde Vektör Geometri Tipleri</text><rect x=\"16\" y=\"34\" width=\"156\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"94.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Nokta &amp; Çizgi</text><text x=\"94.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Yangın kulesi &amp; Tahliye yolu</text><rect x=\"188\" y=\"34\" width=\"156\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"266.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Poligon (Alan)</text><text x=\"266.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Hasarlı bölge &amp; Çadır alanı</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Mekânsal teknolojilerle ilgili ifadeleri Doğru/Yanlış olarak belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Uzaktan algılama yangınların yayılma yönünü anlık izleyebilir.",
+          "dogru": true
+        },
+        {
+          "metin": "GPS sinyalleri yer altındaki kayaçların kimyasal yaşını doğrudan ölçer.",
+          "dogru": false
+        },
+        {
+          "metin": "CBS'de toplanma alanları poligon, kaçış yolları çizgi ile gösterilir.",
+          "dogru": true
+        },
+        {
+          "metin": "AYDES sistemi yalnızca afet bittikten 1 yıl sonra çalıştırılır.",
+          "dogru": false
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-4 sınıflandırma ve ayrıntı şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Mekânsal Afet Yönetiminin Üç Evresi</text><rect x=\"14\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"66.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Afet Öncesi</text><text x=\"66.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Fay ve zemin risk analizi</text><rect x=\"126\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#d63a3a\" stroke-width=\"1.2\"/><text x=\"178.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d63a3a\">Afet Anı</text><text x=\"178.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">AYDES ile anlık sevk ve idare</text><rect x=\"238\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"290.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Afet Sonrası</text><text x=\"290.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Uyduyla hasar tespiti</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Afet yönetim evreleri ve teknoloji tablosunu tamamlayınız.",
+      "basliklar": [
+        "Afet Yönetim Evresi",
+        "Kullanılan Teknoloji",
+        "Uygulama Alanı",
+        "Amaç"
+      ],
+      "satirlar": [
+        [
+          "Afet Öncesi (Zarar Azaltma)",
+          "CBS & Eğim/Fay Analizi",
+          "Riskli zemin haritalama",
+          {
+            "b": "Güvenli yerleşim planı"
+          }
+        ],
+        [
+          "Afet Anı (Müdahale)",
+          {
+            "b": "AYDES & GPS"
+          },
+          "Arama kurtarma ekiplerini sevk etme",
+          "Enkazdan hızlı can kurtarma"
+        ],
+        [
+          "Afet Sonrası (İyileştirme)",
+          "Uzaktan Algılama Uyduları",
+          {
+            "b": "Hasar tespiti ve enkaz hacmi"
+          },
+          "Yeniden inşa planlaması"
+        ],
+        [
+          "Erken Uyarı Süreci",
+          "Deprem İstasyonları & Radar",
+          "Sarsıntı dalgalarını algılama",
+          {
+            "b": "Gaz ve elektrik hatlarını kesme"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Bir sel felaketinde AYDES ve mekânsal teknolojilerin kullanım basamaklarını sıraya diziniz.",
+      "ogeler": [
+        "Meteoroloji radarı ve uydu verileriyle aşırı yağış uyarısının sisteme düşmesi",
+        "CBS taşkın modellemesiyle su altında kalacak riskli alanların tespiti",
+        "AYDES üzerinden tahliye güzergâhlarının belirlenip acil ekiplerin sevki",
+        "Sel çekildikten sonra yüksek çözünürlüklü uyduyla hasar alanlarının haritalanması"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-4 süreç ve akış basamakları modeli\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">SEL VE TAŞKIN KRİZİNDE AYDES KULLANIM AKIŞI</text><rect x=\"10\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">1. Radar İkaz</text><text x=\"50.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Aşırı yağış uyarısı</text><rect x=\"96\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">2. CBS Modelleme</text><text x=\"136.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Taşkın sahası tespiti</text><rect x=\"182\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">3. Tahliye</text><text x=\"222.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">AYDES rota sevki</text><rect x=\"268\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">4. İyileştirme</text><text x=\"308.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Hasar haritalama</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Şehir planlamasında heyelan riski yüksek dik yamaçların yerleşime kapatılmasında CBS'nin en büyük avantajı nedir?",
+      "secenekler": [
+        "Eğim, jeoloji ve yağış katmanlarını üst üste bindirerek nesnel risk haritası üretmesi",
+        "Şehirdeki tüm konutların inşaat maliyetini piyasaya göre düşürmesi",
+        "Yamaçlardaki yer çekimi kuvvetini uydularla sıfıra indirmesi",
+        "Arazideki tüm orman örtüsünü temizleyip zemini çıplak kayaya çevirmesi"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-4 karşılaştırma ve ilişki diyagramı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">Uzaktan Algılama Sensör Türleri ve İşlevleri</text><rect x=\"14\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"66.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Optik Uydular</text><text x=\"66.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Yüksek çözünürlük yer tespiti</text><rect x=\"126\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"178.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Radar Uydular</text><text x=\"178.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Gece ve bulutlu veri</text><rect x=\"238\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#d63a3a\" stroke-width=\"1.2\"/><text x=\"290.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d63a3a\">Termal Sensör</text><text x=\"290.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Yangın ve ısı odağı</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "gorsel_var": true,
+      "soru": "CBS'de bir yangın kulesi ile bir kaçış karayolu hangi vektör geometrisiyle gösterilir?",
+      "cevap": "Yangın kulesi nokta (point), kaçış yolu ise çizgi (line) geometrisiyle gösterilir.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Uzaktan algılama uydu türlerini izledikleri alanlarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Meteoroloji uyduları",
+          "Atmosferdeki bulut hareketleri ve fırtına izleme"
+        ],
+        [
+          "Yüksek çözünürlüklü optik uydular",
+          "Kentsel yapılaşma, parsel ve hasar tespiti"
+        ],
+        [
+          "Radar uyduları",
+          "Gece ve bulutlu havada yer deformasyonu"
+        ],
+        [
+          "Termal kızılötesi uydular",
+          "Orman yangını odakları ve sıcaklık anomalileri"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-4 temel terminoloji kavram kartları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e0f4f8\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><rect x=\"10\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">CBS</text><line x1=\"18\" y1=\"42\" x2=\"82\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Konum tabanlı sistem</text><rect x=\"96\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">AYDES</text><line x1=\"104\" y1=\"42\" x2=\"168\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Karar destek yazılımı</text><rect x=\"182\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Raster</text><line x1=\"190\" y1=\"42\" x2=\"254\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Hücre piksel verisi</text><rect x=\"268\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Vektör</text><line x1=\"276\" y1=\"42\" x2=\"340\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Nokta-çizgi-alan</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "CBS veri modelleriyle ilgili ifadeleri Doğru/Yanlış olarak belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "GPS cihazı en az 4 uydu ile 3 boyutlu konum (X, Y, Z) üretir.",
+          "dogru": true
+        },
+        {
+          "metin": "Vektör veriler piksel adı verilen ızgara hücrelerinden oluşur.",
+          "dogru": false
+        },
+        {
+          "metin": "Öznitelik tabloları nesnelerin ad, nüfus, derinlik bilgilerini tutar.",
+          "dogru": true
+        },
+        {
+          "metin": "Afet yönetiminde mekânsal teknolojiler sadece depremde kullanılır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarından yararlanarak coğrafi teknoloji kavramlarını yazınız. Numaralı kutulardan 'AYDES' kelimesini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Can ve mal kaybına yol açan yıkıcı doğa veya insan olayı",
+          "cevap": "AFET",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kriz ve afet süreçlerini sevk ve idare etme sanatı",
+          "cevap": "YÖNETİM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yer kabuğundaki fay hatlarının kırılmasıyla oluşan sarsıntı",
+          "cevap": "DEPREM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Tehlikeden önce toplumu uyaran erken ikaz sistemi",
+          "cevap": "ERKEN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Birbiriyle uyumlu çalışan donanım ve yazılım bütünü",
+          "cevap": "SİSTEM",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "AYDES",
+      "sonuc": "AYDES",
+      "gorsel": "<svg viewBox=\"0 0 360 96\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-cografya-4 dersi şifre anahtar harf kutuları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"88\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">ANAHTAR KAVRAM ŞİFRE ŞERİDİ: A - Y - D - E - S</text><rect x=\"48\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"72.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">1</text><text x=\"72.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">A</text><rect x=\"103\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"127.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">2</text><text x=\"127.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">Y</text><rect x=\"158\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"182.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">3</text><text x=\"182.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">D</text><rect x=\"213\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"237.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">4</text><text x=\"237.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">E</text><rect x=\"268\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"292.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">5</text><text x=\"292.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">S</text></svg>"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Afet yönetiminde AYDES gibi karar destek sistemlerinin kriz anındaki can kurtarma rolünü açıklayınız.",
+      "cevap": "Enkaz, yol ve toplanma verilerini birleştirerek ekiplerin doğru yere hızla ulaşmasını sağlar.",
+      "satir": 2
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "sinif": 11,
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "İki Boyutta Sabit İvmeli Hareket: Yatay ve Eğik Atış Problemleri",
+  "ciktilar": [
+    "FİZ.11.1.3. İki boyutta sabit ivmeli hareket ile ilgili tümevarımsal akıl yürütebilme"
+  ],
+  "hatirla": [
+    "Yatay atışta yatay hız (V₀) hareket boyunca sabittir; düşeyde ise serbest düşme (h = 1/2 g.t²) gerçekleşir.",
+    "Eğik atışta uçuş süresi düşey ilk hıza (V₀y = V₀.sinθ) bağlıdır: t_uçuş = 2.V₀y / g; maksimum yükseklik h_max = V₀y² / 2g.",
+    "Yatay menzil X = V₀x . t_uçuş bağıntısıyla hesaplanır; sürtünmesiz ortamda 45° açıyla en büyük menzile ulaşılır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Atış hareketlerindeki kinematik nicelikleri matematiksel bağıntılarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Maksimum Yükseklik (h_max)",
+          "Eğik atışta düşey hızın karesinin 2g'ye oranı (V₀y² / 2g)"
+        ],
+        [
+          "Uçuş Süresi (t_uçuş)",
+          "Düşey hız bileşeninin iki katının yerçekimine oranı (2.V₀y / g)"
+        ],
+        [
+          "Yatay Menzil (X)",
+          "Yatay hız bileşeni ile toplam havada kalma süresinin çarpımı"
+        ],
+        [
+          "Serbest Düşme Yolu",
+          "Sürtünmesiz ortamda düşeyde alınan yol (1/2 g.t²)"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 125\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Atış hareketleri formül kartları.\"><rect x=\"6\" y=\"8\" width=\"82\" height=\"108\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><rect x=\"14\" y=\"16\" width=\"66\" height=\"26\" rx=\"4\" fill=\"#12a150\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"47.0\" y=\"33.0\" text-anchor=\"middle\" font-size=\"12.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ffffff\">1</text><text x=\"47.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">1. h_max</text><line x1=\"14\" y1=\"72\" x2=\"80\" y2=\"72\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"47.0\" y=\"92.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">V₀y² / 2g Formülü</text><rect x=\"94\" y=\"8\" width=\"82\" height=\"108\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><rect x=\"102\" y=\"16\" width=\"66\" height=\"26\" rx=\"4\" fill=\"#2451d6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"135.0\" y=\"33.0\" text-anchor=\"middle\" font-size=\"12.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ffffff\">2</text><text x=\"135.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">2. t_uçuş</text><line x1=\"102\" y1=\"72\" x2=\"168\" y2=\"72\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"135.0\" y=\"92.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">2.V₀y / g Süresi</text><rect x=\"182\" y=\"8\" width=\"82\" height=\"108\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><rect x=\"190\" y=\"16\" width=\"66\" height=\"26\" rx=\"4\" fill=\"#ee7d12\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"223.0\" y=\"33.0\" text-anchor=\"middle\" font-size=\"12.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ffffff\">3</text><text x=\"223.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">3. X_menzil</text><line x1=\"190\" y1=\"72\" x2=\"256\" y2=\"72\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"223.0\" y=\"92.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">V₀x . t_uçuş Yolu</text><rect x=\"270\" y=\"8\" width=\"82\" height=\"108\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><rect x=\"278\" y=\"16\" width=\"66\" height=\"26\" rx=\"4\" fill=\"#7c3aed\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"311.0\" y=\"33.0\" text-anchor=\"middle\" font-size=\"12.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ffffff\">4</text><text x=\"311.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">4. V_bileşke</text><line x1=\"278\" y1=\"72\" x2=\"344\" y2=\"72\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"311.0\" y=\"92.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">√(Vx² + Vy²) Büyüklüğü</text></svg>",
+      "en_fazla": 34
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Yerden 50 m/s hızla ve yatayla 53° açı yapacak şekilde fırlatılan bir cismin çıkabileceği maksimum yükseklik kaç metredir? (g = 10 m/s², sin53° = 0,8, cos53° = 0,6)",
+      "secenekler": [
+        "80 metre",
+        "45 metre",
+        "125 metre",
+        "180 metre"
+      ],
+      "cevap": "A",
+      "gorsel": "<svg viewBox=\"0 0 360 125\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Eğik atış maksimum yükseklik hesabı.\"><rect x=\"6\" y=\"6\" width=\"348\" height=\"112\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">EĞİK ATIŞ: V₀ = 50 m/s (53°) KİNEMATİK ÇÖZÜMÜ</text><rect x=\"20\" y=\"36\" width=\"145\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"92.0\" y=\"56.0\" text-anchor=\"middle\" font-size=\"9.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Hız Bileşenleri</text><text x=\"92.0\" y=\"76.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">V₀x = 50.0,6 = 30 m/s</text><text x=\"92.0\" y=\"92.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#ee7d12\">V₀y = 50.0,8 = 40 m/s</text><rect x=\"195\" y=\"36\" width=\"145\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"56.0\" text-anchor=\"middle\" font-size=\"9.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">h_max Hesabı</text><text x=\"267.0\" y=\"76.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">h = (40)² / (2.10)</text><text x=\"267.0\" y=\"92.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#12a150\">h_max = 80 metre</text></svg>",
+      "en_fazla": 34,
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Görseldeki 80 metre yüksekliğindeki uçurumdan yatay 20 m/s hızla atılan cismin yere çarpma anındaki toplam hız büyüklüğü kaç m/s olur? (g = 10 m/s²)",
+      "secenekler": [
+        "20 m/s",
+        "30 m/s",
+        "20{kok:5} m/s",
+        "50 m/s"
+      ],
+      "cevap": "C",
+      "gorsel": "<svg viewBox=\"0 0 360 125\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Yatay atış bileşke hız hesabı.\"><rect x=\"6\" y=\"6\" width=\"348\" height=\"112\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">YATAY ATIŞ: h = 80 m, V₀ = 20 m/s ÇARPMA HIZI</text><rect x=\"16\" y=\"36\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"64.0\" y=\"56.0\" text-anchor=\"middle\" font-size=\"9.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Düşme Süresi</text><text x=\"64.0\" y=\"76.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">80 = 5.t²</text><text x=\"64.0\" y=\"92.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#2451d6\">t = 4 saniye</text><rect x=\"132\" y=\"36\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"56.0\" text-anchor=\"middle\" font-size=\"9.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Düşey Hız</text><text x=\"180.0\" y=\"76.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">Vy = 10.4</text><text x=\"180.0\" y=\"92.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#ee7d12\">Vy = 40 m/s</text><rect x=\"248\" y=\"36\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"296.0\" y=\"56.0\" text-anchor=\"middle\" font-size=\"9.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">Bileşke Hız</text><text x=\"296.0\" y=\"76.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">V = √(20² + 40²)</text><text x=\"296.0\" y=\"92.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#12a150\">V = 20√5 m/s</text></svg>",
+      "en_fazla": 34,
+      "dogru": 2
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Boş bırakılan yere uygun kavramı yazınız.",
+      "gorsel": "<svg viewBox=\"0 0 360 125\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Tümler açılarda menzil eşitliği şeması.\"><rect x=\"6\" y=\"6\" width=\"348\" height=\"112\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">TÜMLER AÇILARDA (θ₁ + θ₂ = 90°) EŞİT MENZİL KURALI</text><rect x=\"16\" y=\"36\" width=\"70\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0f6b45\" stroke-width=\"0.75\"/><text x=\"51.0\" y=\"54.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">30° Açı</text><line x1=\"22\" y1=\"62\" x2=\"80\" y2=\"62\" stroke=\"#0f6b45\" stroke-width=\"0.75\"/><text x=\"51.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">Düşük tepe, eşit menzil</text><rect x=\"102\" y=\"36\" width=\"70\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0f6b45\" stroke-width=\"0.75\"/><text x=\"137.0\" y=\"54.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">45° Açı</text><line x1=\"108\" y1=\"62\" x2=\"166\" y2=\"62\" stroke=\"#0f6b45\" stroke-width=\"0.75\"/><text x=\"137.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">Maksimum yatay menzil</text><rect x=\"188\" y=\"36\" width=\"70\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0f6b45\" stroke-width=\"0.75\"/><text x=\"223.0\" y=\"54.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">60° Açı</text><line x1=\"194\" y1=\"62\" x2=\"252\" y2=\"62\" stroke=\"#0f6b45\" stroke-width=\"0.75\"/><text x=\"223.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">Yüksek tepe, eşit menzil</text><rect x=\"274\" y=\"36\" width=\"70\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0f6b45\" stroke-width=\"0.75\"/><text x=\"309.0\" y=\"54.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">Kural</text><line x1=\"280\" y1=\"62\" x2=\"338\" y2=\"62\" stroke=\"#0f6b45\" stroke-width=\"0.75\"/><text x=\"309.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">Sin(2θ₁) = Sin(2θ₂)</text></svg>",
+      "en_fazla": 34,
+      "cumleler": [
+        {
+          "metin": "Eğik atış hareketinde cismin yerçekimi ivmesi etkisiyle düşey hızının sıfır olduğu en üst konuma ___ noktası denir.",
+          "cevap": "tepe"
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "degerlendir",
+      "soru": "Hava sürtünmesinin ihmal edildiği bir ortamda aynı büyüklükteki V₀ hızıyla atılan iki cismin menzillerinin birbirine tam eşit olması için hangi şart sağlanmalıdır?",
+      "secenekler": [
+        "Atılış açılarının toplamının 180 dereceye eşit olması şartı",
+        "Atılış açılarının toplamının 90 dereceye (tümler açıya) eşit olması şartı",
+        "Cisimlerin kütlelerinin birbirine kesinlikle eşit olması şartı",
+        "Cisimlerin aynı anda serbest düşmeye bırakılması şartı"
+      ],
+      "cevap": "B",
+      "dogru": 1
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Eğik atışta özel açı değerlerini ortaya çıkan kinematik sonuçlarla eşleyiniz.",
+      "ciftler": [
+        [
+          "45 Derece Açı",
+          "Aynı hız için sürtünmesiz ortamda elde edilen en büyük menzil"
+        ],
+        [
+          "30° ve 60° Açılar",
+          "Aynı ilk hızda birbirine tam eşit çıkan yatay menzil değerleri"
+        ],
+        [
+          "90 Derece Açı",
+          "Yatay hızı sıfır olan ve maksimum yüksekliğe çıkan düşey atış"
+        ],
+        [
+          "Tepe Noktası Açısı",
+          "Hız vektörünün yer düzlemine tam paralel olduğu anlık durum"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 125\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Özel açılar kinematik tablosu.\"><rect x=\"6\" y=\"6\" width=\"348\" height=\"112\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">ÖZEL AÇILAR VE KİNEMATİK PARAMETRELER TABLOSU</text><rect x=\"16\" y=\"30\" width=\"328\" height=\"18\" rx=\"2\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"55.0\" y=\"43.0\" text-anchor=\"middle\" font-size=\"8.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Fırlatma Açısı</text><text x=\"130.0\" y=\"43.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">Uçuş Süresi (t)</text><text x=\"210.0\" y=\"43.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">Tepe Yüksekliği (h)</text><text x=\"295.0\" y=\"43.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">Yatay Menzil (X)</text><rect x=\"16\" y=\"50\" width=\"328\" height=\"18\" rx=\"2\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"55.0\" y=\"63.0\" text-anchor=\"middle\" font-size=\"8.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">30 Derece</text><text x=\"130.0\" y=\"63.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">V₀ / g</text><text x=\"210.0\" y=\"63.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">V₀² / 8g</text><text x=\"295.0\" y=\"63.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">√3 V₀² / 2g</text><rect x=\"16\" y=\"70\" width=\"328\" height=\"18\" rx=\"2\" fill=\"#ffffff\" stroke=\"#0f6b45\" stroke-width=\"0.75\"/><text x=\"55.0\" y=\"83.0\" text-anchor=\"middle\" font-size=\"8.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">45 Derece</text><text x=\"130.0\" y=\"83.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">√2 V₀ / g</text><text x=\"210.0\" y=\"83.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">V₀² / 4g</text><text x=\"295.0\" y=\"83.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">V₀² / g (Maksimum)</text><rect x=\"16\" y=\"90\" width=\"328\" height=\"18\" rx=\"2\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"55.0\" y=\"103.0\" text-anchor=\"middle\" font-size=\"8.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">60 Derece</text><text x=\"130.0\" y=\"103.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">√3 V₀ / g</text><text x=\"210.0\" y=\"103.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">3V₀² / 8g</text><text x=\"295.0\" y=\"103.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">√3 V₀² / 2g</text></svg>",
+      "en_fazla": 34
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Yerden 30 m/s ilk hızla yatayla 30° açı yapacak şekilde fırlatılan bir taş kaç saniye havada kalır? (g = 10 m/s², sin30° = 0,5)",
+      "secenekler": [
+        "1 saniye",
+        "2 saniye",
+        "3 saniye",
+        "6 saniye"
+      ],
+      "cevap": "C",
+      "gorsel": "<svg viewBox=\"0 0 360 125\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Sürtünmeli ve ideal yörünge kesiti.\"><rect x=\"6\" y=\"6\" width=\"348\" height=\"112\" rx=\"6\" fill=\"#e0f4f8\" stroke=\"#0e8fa8\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">HAVA SÜRTÜNMESİNİN ATIŞ YÖRÜNGESİNE ETKİSİ</text><rect x=\"20\" y=\"36\" width=\"145\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"92.0\" y=\"56.0\" text-anchor=\"middle\" font-size=\"9.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">İdeal Sürtünmesiz</text><text x=\"92.0\" y=\"76.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">Simetrik parabol yörünge</text><text x=\"92.0\" y=\"92.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#12a150\">Maksimum menzil &amp; yükseklik</text><rect x=\"195\" y=\"36\" width=\"145\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"56.0\" text-anchor=\"middle\" font-size=\"9.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Gerçek Sürtünmeli</text><text x=\"267.0\" y=\"76.0\" text-anchor=\"middle\" font-size=\"8.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">Asimetrik basık yörünge</text><text x=\"267.0\" y=\"92.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#ee7d12\">Daha kısa menzil ve süre</text></svg>",
+      "en_fazla": 34,
+      "dogru": 2
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Boş bırakılan yere uygun kavramı yazınız.",
+      "cumleler": [
+        {
+          "metin": "Yatay atış hareketinde cismin atıldığı düşey doğrultudan yere çarptığı noktaya kadar yatayda aldığı mesafeye ___ denir.",
+          "cevap": "menzil"
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Hava direncinin olduğu gerçek bir ortamda atılan bir gülle ile sürtünmesiz model karşılaştırıldığında gerçek harekette hangi durum gözlenir?",
+      "secenekler": [
+        "Uçuş süresi, çıkabileceği tepe noktası ve yatay menzil değeri daha küçük olur",
+        "Maksimum menzile ulaşmak için gereken fırlatma açısı kırk beş dereceden büyük olur",
+        "Cismin yere çarpma anındaki kinetik enerjisi başlangıç enerjisinden daha büyük olur",
+        "Güllenin yatay hız bileşeni sürtünme nedeniyle hareket boyunca sürekli artar"
+      ],
+      "cevap": "A",
+      "gorsel": "<svg viewBox=\"0 0 360 125\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Atış problemi çözüm adımları kartı.\"><rect x=\"6\" y=\"6\" width=\"348\" height=\"112\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">İKİ BOYUTTA PROBLEM ÇÖZME STRATEJİSİ</text><rect x=\"16\" y=\"36\" width=\"70\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"51.0\" y=\"54.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">1. Bileşenler</text><line x1=\"22\" y1=\"62\" x2=\"80\" y2=\"62\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"51.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">V₀x ve V₀y ayrılır</text><rect x=\"102\" y=\"36\" width=\"70\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"137.0\" y=\"54.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">2. Zaman (t)</text><line x1=\"108\" y1=\"62\" x2=\"166\" y2=\"62\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"137.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">Düşey hareketten bulunur</text><rect x=\"188\" y=\"36\" width=\"70\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"223.0\" y=\"54.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">3. Yol (X)</text><line x1=\"194\" y1=\"62\" x2=\"252\" y2=\"62\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"223.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">Yatayda X = V₀x.t</text><rect x=\"274\" y=\"36\" width=\"70\" height=\"70\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"309.0\" y=\"54.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">4. Vektör</text><line x1=\"280\" y1=\"62\" x2=\"338\" y2=\"62\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"309.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"500\" fill=\"#0b2257\">Pisagorla çarpma hızı</text></svg>",
+      "en_fazla": 34,
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "degerlendir",
+      "soru": "Yatay atılan bir cismin ilk hızı V₀ iki katına çıkarıldığında uçuş süresi ve yatay menzili nasıl değişir?",
+      "secenekler": [
+        "Uçuş süresi iki katına çıkar, menzili ise değişmez sabit kalır",
+        "Uçuş süresi değişmez sabit kalır, yatay menzili iki katına çıkar",
+        "Hem uçuş süresi hem yatay menzili aynı anda yarıya iner",
+        "Uçuş süresi dört katına çıkarken yatay menzili sıfırlanır"
+      ],
+      "cevap": "B",
+      "dogru": 1
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Boş bırakılan yere uygun kavramı yazınız.",
+      "gorsel": "<svg viewBox=\"0 0 360 125\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Kinematik sentez akış kutuları.\"><rect x=\"6\" y=\"6\" width=\"348\" height=\"112\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"24.0\" text-anchor=\"middle\" font-size=\"10.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">İKİ BOYUTLU HAREKETİN VEKTÖREL SENTEZİ</text><rect x=\"16\" y=\"42\" width=\"75\" height=\"52\" rx=\"4\" fill=\"#ffffff\" stroke=\"#0f6b45\" stroke-width=\"0.75\"/><text x=\"53.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"8.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Faz 1</text><text x=\"53.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">Fırlatma Hızı</text><rect x=\"101\" y=\"42\" width=\"75\" height=\"52\" rx=\"4\" fill=\"#ffffff\" stroke=\"#0f6b45\" stroke-width=\"0.75\"/><text x=\"138.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"8.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Faz 2</text><text x=\"138.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">Eksen Ayırımı</text><rect x=\"186\" y=\"42\" width=\"75\" height=\"52\" rx=\"4\" fill=\"#ffffff\" stroke=\"#0f6b45\" stroke-width=\"0.75\"/><text x=\"223.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"8.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Faz 3</text><text x=\"223.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">Ortak Süre (t)</text><rect x=\"271\" y=\"42\" width=\"75\" height=\"52\" rx=\"4\" fill=\"#ffffff\" stroke=\"#0f6b45\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"8.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Faz 4</text><text x=\"308.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0f6b45\">Konum Vektörü</text></svg>",
+      "en_fazla": 34,
+      "cumleler": [
+        {
+          "metin": "Eğik atışta cismin tepe noktasında potansiyel enerjisi maksimum iken kinetik enerjisi sadece ___ hızından kaynaklanır.",
+          "cevap": "yatay"
+        }
+      ]
+    },
+    {
+      "tur": "acik",
+      "duzey": "analiz",
+      "soru": "Yatay atılan bir cismin ilk hızının artırılmasının yere düşme süresini neden etkilemediğini yazınız.",
+      "cevap": "Düşey hareket serbest düşmedir; süre sadece yükseklik ve yerçekimine bağlıdır."
+    }
+  ],
+  "ders": "fizik"
+}

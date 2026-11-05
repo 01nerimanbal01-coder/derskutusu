@@ -1,0 +1,270 @@
+{
+  "sinif": 9,
+  "ders": "arapca",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Med (Uzatma) Harfleri (ا، و، ي), Sınıf İçi Yönergeler (اِقْرَأْ، اُكْتُبْ، أَعِدْ، اِسْتَمِعْ), Memnuniyet ve Vedalaşma İfadeleri",
+  "ciktilar": [
+    "Arapçadaki üç med (uzatma) harfini ({ar:ا، و، ي}) ve kendilerinden önceki harekelerle (fetha, damme, kesra) uyumunu doğru telaffuz eder.",
+    "Sınıf içinde kullanılan temel emir/yönerge fiillerini ({ar:اِقْرَأْ}/{ar:اِقْرَئِي، اُكْتُبْ}/{ar:اُكْتُبِي، أَعِدْ}/{ar:أَعِيدِي، اِسْتَمِعْ}/{ar:اِسْتَمِعِي}) eril ve dişil muhataba göre ayırt eder.",
+    "Tanışma ve selamlaşma diyaloglarında memnuniyet ({ar:تَشَرَّفْتُ، فُرْصَةٌ سَعِيدَةٌ}), teşekkür ({ar:شُكْرًا} / {ar:عَفْوًا}) ve vedalaşma ({ar:إِلى اللِّقاءِ، مَعَ السَّلامَةِ، في أَمانِ اللّٰهِ}) kalıplarını kullanır."
+  ],
+  "hatirla": [
+    "Med harfleri ({ar:ا، و، ي}); fetha ile elif, damme ile vav, kesra ile ye ses uzatması yapar.",
+    "Sınıf emirleri müzekker muhatapta cezimli ({ar:اِقْرَأْ}), müennes muhatapta sonuna ye alarak ({ar:اِقْرَئِي}) söylenir.",
+    "{ar:تَشَرَّفْتُ} (memnun oldum), {ar:مَعَ السَّلَامَةِ} (selametle), {ar:فِي أَمَانِ اللَّهِ} (Allah'a emanet) veda kalıplarıdır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Med (uzatma) harflerini uzattıkları hareke türleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Elif ({ar:ا})",
+          "Fetha (üstün) harekesini uzatır"
+        ],
+        [
+          "Vav ({ar:و})",
+          "Damme (ötre) harekesini uzatır"
+        ],
+        [
+          "Ye ({ar:ي})",
+          "Kesra (esre) harekesini uzatır"
+        ],
+        [
+          "Sükûn ({ar:ـْ})",
+          "Harfi cezim ile durdurarak okutur"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sınıf yönerge levhasına göre öğretmenin bir kız öğrenciye 'Metni oku!' derken kullanması gereken emir fiili hangisidir?",
+      "secenekler": [
+        "{ar:اِقْرَأْ}",
+        "{ar:اِقْرَئِي}",
+        "{ar:اُكْتُبْ}",
+        "{ar:اِسْتَمِعْ}"
+      ],
+      "dogru": 1,
+      "cozum": "Müennes muhataba hitap eden emir fiillerinin sonuna uzatıcı ye ({ar:ي}) harfi eklenir."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Arapçada birinden ayrılırken 'Görüşmek üzere' anlamında kullanılan veda ifadesini yazınız.",
+      "cevap": "{ar:إِلَى اللِّقَاءِ} veya {ar:مَعَ السَّلَامَةِ} ifadesi kullanılır.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Med harfleri ve sınıf içi yönergelerle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Med harfleri harekesiz olup kendinden önceki harekeyi uzatır.",
+          "dogru": true
+        },
+        {
+          "metin": "Kız öğrenciye 'Yaz!' derken {ar:اُكْتُبْ} fiili kullanılır.",
+          "dogru": false
+        },
+        {
+          "metin": "{ar:شُكْرًا} (teşekkür) sözüne {ar:عَفْوًا} (rica ederim) ile karşılık verilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Vav ({ar:و}) harfi fetha (üstün) harekesini uzatmak için gelir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Sınıf içi emir fiillerini muhatap cinsiyetine ve Türkçe anlamına göre gruplandırınız.",
+      "basliklar": [
+        "Eylem",
+        "Müzekker (Erkek)",
+        "Müennes (Kız)",
+        "Türkçe Anlamı"
+      ],
+      "satirlar": [
+        [
+          "Okuma",
+          "{ar:اِقْرَأْ}",
+          "{ar:اِقْرَئِي}",
+          {
+            "b": "Metni oku"
+          }
+        ],
+        [
+          "Yazma",
+          "{ar:اُكْتُبْ}",
+          "{ar:اُكْتُبِي}",
+          {
+            "b": "Deftere yaz"
+          }
+        ],
+        [
+          "Dinleme",
+          "{ar:اِسْتَمِعْ}",
+          "{ar:اِسْتَمِعِي}",
+          {
+            "b": "Dikkatle dinle"
+          }
+        ],
+        [
+          "Tekrar",
+          "{ar:أَعِدْ}",
+          "{ar:أَعِيدِي}",
+          {
+            "b": "Cümleyi tekrarla"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde verilen ders içi etkinlik uygulama adımlarını sıraya diziniz.",
+      "ogeler": [
+        "Yönergeyi dikkatle dinleme ({ar:اِسْتَمِعْ})",
+        "Tahtadaki metni sesli okuma ({ar:اِقْرَأْ})",
+        "Cümleyi telaffuzla tekrar etme ({ar:أَعِدْ})",
+        "Önemli kısımları deftere yazma ({ar:اُكْتُبْ})"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki tanışma diyaloğunda '{ar:تَشَرَّفْتُ بِمَعْرِفَتِكَ}' (Tanıştığıma memnun oldum) diyen kişiye nezaketle hangi karşılık verilir?",
+      "secenekler": [
+        "{ar:فُرْصَةٌ سَعِيدَةٌ}",
+        "{ar:لَا أَعْرِفُ}",
+        "{ar:صَبَاحُ الْخَيْرِ}",
+        "{ar:مَا اسْمُكَ؟}"
+      ],
+      "dogru": 0,
+      "cozum": "{ar:تَشَرَّفْتُ} ifadesine karşılık 'Ben de çok memnun oldum' anlamında {ar:فُرْصَةٌ سَعِيدَةٌ} denir."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavrama",
+      "soru": "Med harfi olan ye ({ar:ي}) harfinin uzatma yapabilmesi için önceki harfin harekesi ne olmalıdır?",
+      "cevap": "Önceki harfin harekesi kesra (esre) olmalıdır.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Arapça nezaket ve vedalaşma kalıplarını anlamlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{ar:تَشَرَّفْتُ}",
+          "Tanıştığıma memnun oldum"
+        ],
+        [
+          "{ar:شُكْرًا}",
+          "Teşekkür ederim"
+        ],
+        [
+          "{ar:عَفْوًا}",
+          "Rica ederim"
+        ],
+        [
+          "{ar:فِي أَمَانِ اللَّهِ}",
+          "Allah'a emanet olunuz"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Arapça emir kipleri ve vedalaşmayla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "{ar:أَعِيدِي} emri kız öğrenciye hitaben 'Tekrar et!' demektir.",
+          "dogru": true
+        },
+        {
+          "metin": "Med harfleri üzerinde belirgin bir tenvin işareti bulunur.",
+          "dogru": false
+        },
+        {
+          "metin": "{ar:مَعَ السَّلَامَةِ} ayrılırken esenlik dileme ifadesidir.",
+          "dogru": true
+        },
+        {
+          "metin": "{ar:اِسْتَمِعْ} fiili susmak anlamına gelen bir eylemdir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarına karşılık gelen Arapça fonetik kavramını bulunuz.",
+      "ipucu": "Sesli harflerin ses değerini bir elif miktarı uzatma kuralı (6 Harf).",
+      "harfler": [
+        {
+          "no": 1,
+          "harf": "U"
+        },
+        {
+          "no": 2,
+          "harf": "Z"
+        },
+        {
+          "no": 3,
+          "harf": "A"
+        },
+        {
+          "no": 4,
+          "harf": "T"
+        },
+        {
+          "no": 5,
+          "harf": "M"
+        },
+        {
+          "no": 6,
+          "harf": "A"
+        }
+      ],
+      "kelime": "UZATMA",
+      "satirlar": [
+        {
+          "ipucu": "Sesli harflerin ses değerini bir elif miktarı uzatma kuralı (6 Harf).",
+          "cevap": "UZATMA",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "U"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Arapçada emir fiillerinin erkek ve kız muhataplara göre nasıl farklılaştığını açıklayınız.",
+      "cevap": "Müennes muhatapta fiilin sonuna cezim yerine ye ({ar:ي}) harfi eklenir.",
+      "satir": 2
+    }
+  ]
+}

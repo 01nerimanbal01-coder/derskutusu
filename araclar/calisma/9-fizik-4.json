@@ -1,0 +1,262 @@
+{
+  "sinif": 9,
+  "ders": "fizik",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Fizik Bilimi İle İlgili Kariyer Keşfi",
+  "ciktilar": [
+    "Bilim ve teknoloji alanında faaliyet gösteren ulusal (TÜBİTAK, TENMAK, TUA, ASELSAN) ve uluslararası (CERN, NASA, ESA) kurum ve kuruluşların çalışma alanlarını açıklar.",
+    "Fizik biliminin alt dallarıyla ilişkili meslekleri, mühendislik alanlarını ve kariyer olanaklarını sorgular.",
+    "Bilim araştırma merkezlerinde yürütülen çalışmaların günlük hayata, teknolojiye ve ülke ekonomisine katkılarını değerlendirir."
+  ],
+  "hatirla": [
+    "Ulusal araştırma kurumları: TÜBİTAK, TENMAK (Nükleer/Enerji), TUA (Uzay), ASELSAN (Savunma).",
+    "Uluslararası merkezler: CERN (Parçacık fiziği), NASA (Havacılık/Uzay), ESA (Avrupa Uzay Ajansı).",
+    "Fizik; malzeme mühendisliği, optik mühendisliği, nükleer tıp ve yazılımın temel dayanağıdır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Bilim araştırma kurumlarını çalışma alanlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "TÜBİTAK",
+          "Türkiye'de bilimsel ve teknolojik araştırmaları koordine eden çatı kurum"
+        ],
+        [
+          "TENMAK",
+          "Türkiye Enerji, Nükleer ve Maden Araştırma Kurumu"
+        ],
+        [
+          "CERN",
+          "İsviçre-Fransa sınırındaki Avrupa Nükleer Araştırma Merkezi"
+        ],
+        [
+          "NASA",
+          "Amerika Birleşik Devletleri Ulusal Havacılık ve Uzay Dairesi"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki devasa tünel şemasına göre dünyanın en büyük parçacık hızlandırıcısına (LHC) ev sahipliği yapan bilim merkezi hangisidir?",
+      "secenekler": [
+        "NASA",
+        "CERN",
+        "ESA",
+        "TUA"
+      ],
+      "dogru": 1,
+      "cozum": "CERN (Avrupa Nükleer Araştırma Merkezi), atom altı parçacık çarpışmalarıyla maddenin temel yapısını araştırır."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Türkiye'de uzay teknolojileri, uydu sistemleri ve millî uzay programını yürüten kurum hangisidir?",
+      "cevap": "Türkiye Uzay Ajansı (TUA)'dır.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Bilimsel araştırma merkezleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "CERN'de yapılan temel fizik araştırmaları internetin (WWW) doğumuna öncülük etmiştir.",
+          "dogru": true
+        },
+        {
+          "metin": "TENMAK yalnızca geleneksel kömür madenciliği üzerine araştırmalar yapar.",
+          "dogru": false
+        },
+        {
+          "metin": "ASELSAN radar, elektro-optik ve savunma teknolojileri geliştirir.",
+          "dogru": true
+        },
+        {
+          "metin": "Fizik mezunları yalnızca okullarda öğretmenlik yapabilir, sanayide çalışamaz.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Bilim ve araştırma kurumlarını faaliyet alanlarına göre gruplandırınız.",
+      "basliklar": [
+        "Kurum Adı",
+        "Kapsamı",
+        "Temel Faaliyet Alanı",
+        "İlgili Fizik Dalı"
+      ],
+      "satirlar": [
+        [
+          "ASELSAN",
+          "Ulusal",
+          "Radar ve savunma sistemleri",
+          {
+            "b": "Elektromanyetizma"
+          }
+        ],
+        [
+          "CERN",
+          "Uluslararası",
+          "Parçacık hızlandırıcı ve çarpıştırıcı",
+          {
+            "b": "Yüksek enerji fiziği"
+          }
+        ],
+        [
+          "TENMAK",
+          "Ulusal",
+          "Nükleer enerji ve bor teknolojileri",
+          {
+            "b": "Nükleer fizik"
+          }
+        ],
+        [
+          "ESA",
+          "Uluslararası",
+          "Avrupa uzay araştırmaları ve uydular",
+          {
+            "b": "Mekanik ve astrofizik"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde verilen araştırma merkezinde teknolojik ürün geliştirme basamaklarını sıraya diziniz.",
+      "ogeler": [
+        "Temel fizik yasalarına dayalı kuramsal model tasarlama",
+        "Laboratuvar ortamında prototip cihaz üretme",
+        "Sensör ve ölçüm aletleriyle test verileri toplama",
+        "Sanayi ve günlük kullanıma uygun teknolojiye dönüştürme"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki tıbbi radyoterapi cihazı şemasına göre kanser teşhis ve tedavisinde cihaz geliştiren fizik uzmanlık alanı hangisidir?",
+      "secenekler": [
+        "Medikal / Nükleer Fizik",
+        "Termodinamik",
+        "Klasik Mekanik",
+        "Jeofizik"
+      ],
+      "dogru": 0,
+      "cozum": "Medikal fizikçiler ve nükleer fizik uzmanları hastanelerdeki radyasyon cihazlarının tasarımı ve güvenliğinden sorumludur."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "soru": "Fizik prensiplerini kullanarak nano boyutta mikroçipler ve süper iletken malzemeler üreten mühendislik alanı nedir?",
+      "cevap": "Malzeme bilimi ve nanoteknoloji mühendisliğidir.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Fizikle ilişkili meslek alanlarını uzmanlıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Optik Mühendisi",
+          "Lazer, fiber kablo ve mercek sistemleri tasarımı"
+        ],
+        [
+          "Nükleer Fizikçi",
+          "Radyasyon güvenliği ve nükleer santral işletimi"
+        ],
+        [
+          "Biyofizikçi",
+          "Hücre zarı potansiyeli ve sinirsel iletim mekaniği"
+        ],
+        [
+          "Jeofizik Mühendisi",
+          "Yer kabuğu deprem dalgaları ve yer altı haritalama"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Fizik biliminin kariyer ve teknoloji ilişkisiyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Temel bilim araştırmaları doğrudan tıp ve iletişim teknolojilerini besler.",
+          "dogru": true
+        },
+        {
+          "metin": "TUA yalnızca yurt dışından hazır uydu satın almakla görevlidir.",
+          "dogru": false
+        },
+        {
+          "metin": "Fizik bilimi algoritmik düşünme ve analitik problem çözme becerisi kazandırır.",
+          "dogru": true
+        },
+        {
+          "metin": "CERN laboratuvarı atmosferdeki hava tahminlerini yürütmek için kurulmuştur.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarına karşılık gelen araştırma merkezini bulunuz.",
+      "ipucu": "Avrupa Nükleer Araştırma Merkezi'nin uluslararası kısaltması (4 Harf).",
+      "harfler": [
+        {
+          "no": 1,
+          "harf": "C"
+        },
+        {
+          "no": 2,
+          "harf": "E"
+        },
+        {
+          "no": 3,
+          "harf": "R"
+        },
+        {
+          "no": 4,
+          "harf": "N"
+        }
+      ],
+      "kelime": "CERN",
+      "satirlar": [
+        {
+          "ipucu": "Avrupa Nükleer Araştırma Merkezi'nin uluslararası kısaltması (4 Harf).",
+          "cevap": "CERN",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "C"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Bilim araştırma merkezlerinde (ör. CERN veya ASELSAN) yürütülen çalışmaların ülke ekonomisine katkısını açıklayınız.",
+      "cevap": "Yüksek katma değerli yerli teknolojiler ve patentler üretilmesini sağlar.",
+      "satir": 2
+    }
+  ]
+}

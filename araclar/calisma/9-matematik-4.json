@@ -1,0 +1,274 @@
+{
+  "sinif": 9,
+  "ders": "matematik",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Gerçek Sayı Aralıklarının Gösterimi ve Aralıklarla İlgili İşlemlerde Küme Sembollerinin Kullanımı",
+  "ciktilar": [
+    "Gerçek sayı aralıklarını (açık, kapalı, yarı açık ve sınırsız aralıklar) sayı doğrusu, eşitsizlik ve aralık parantezleriyle gösterir.",
+    "Küme sembollerini (∈, ∉, ⊂, ⊄, ∪, ∩, \\, A') gerçek sayı aralıklarının gösteriminde doğru kullanır.",
+    "Gerçek sayı aralıklarıyla ilgili birleşim (∪), kesişim (∩), fark (\\) ve tümleyen (A') işlemlerini sayı doğrusu yardımıyla gerçekleştirir."
+  ],
+  "hatirla": [
+    "Aralık işlemleri: A ∪ B (tüm elemanlar), A ∩ B (ortak elemanlar), A \\ B (A'da olup B'de olmayanlar).",
+    "Tümleyen: A' = R \\ A (evrensel küme olan gerçek sayılardan A kümesinin çıkarılmasıdır).",
+    "Sonsuz taraf daima açık yay ayraçla (parantezle) gösterilir: (-∞, b] veya (a, ∞)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Gerçek sayı aralık işlemlerini anlamlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "A ∪ B (Birleşim)",
+          "Her iki aralıktaki tüm elemanların kümesi"
+        ],
+        [
+          "A ∩ B (Kesişim)",
+          "Her iki aralıkta ortak bulunan elemanların kümesi"
+        ],
+        [
+          "A \\ B (Fark)",
+          "A aralığında bulunup B aralığında yer almayan elemanlar"
+        ],
+        [
+          "A' (Tümleyen)",
+          "Gerçek sayılar kümesinde A aralığı dışındaki elemanlar"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sayı doğrularında verilen A = [-2, 5) ve B = (1, 8] aralıkları için A \\ B fark kümesi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "[-2, 1]",
+        "(-2, 1)",
+        "[5, 8]",
+        "[-2, 8]"
+      ],
+      "dogru": 0,
+      "cozum": "A kümesinde olup B kümesinde olmayan elemanlar -2'den 1'e kadardır; 1 sayısı B'de açık olduğundan fark kümesine dahildir: [-2, 1]."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "A = [3, ∞) aralığının gerçek sayılar kümesindeki tümleyeni (A') nedir?",
+      "cevap": "A' = (-∞, 3) açık aralığıdır.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Gerçek sayı aralık işlemleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Bir aralığın kendisiyle tümleyeninin kesişimi boş kümedir.",
+          "dogru": true
+        },
+        {
+          "metin": "Sonsuz sembolü (∞) aralık uç noktasında köşeli ayraçla kapatılabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Sayı doğrusunda iki ayrık aralığın kesişimi boş kümedir.",
+          "dogru": true
+        },
+        {
+          "metin": "[2, 6] aralığında yalnızca 5 tane gerçek sayı bulunur.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "A = [-1, 3] ve B = (2, 6] aralıklarıyla yapılan küme işlemlerini sonuçlandırınız.",
+      "basliklar": [
+        "Küme İşlemi",
+        "A Aralığı",
+        "B Aralığı",
+        "İşlem Sonucu"
+      ],
+      "satirlar": [
+        [
+          "A ∪ B",
+          "[-1, 3]",
+          "(2, 6]",
+          {
+            "b": "[-1, 6]"
+          }
+        ],
+        [
+          "A ∩ B",
+          "[-1, 3]",
+          "(2, 6]",
+          {
+            "b": "(2, 3]"
+          }
+        ],
+        [
+          "A \\ B",
+          "[-1, 3]",
+          "(2, 6]",
+          {
+            "b": "[-1, 2]"
+          }
+        ],
+        [
+          "B \\ A",
+          "[-1, 3]",
+          "(2, 6]",
+          {
+            "b": "(3, 6]"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde verilen sayı doğrusunda aralık işlemlerini gerçekleştirme basamaklarını sıraya diziniz.",
+      "ogeler": [
+        "Gerçek sayı doğrusu çizip sınır noktalarını işaretleme",
+        "Her iki aralığı farklı renk veya taramayla gösterme",
+        "Taralı bölgelerin çakıştığı ortak kısmı kesişim (∩) olarak alma",
+        "Sadece birinci aralıkta kalan bölgeyi fark (\\) kümesi olarak yazma"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sayı doğrusunda gösterilen A = (-∞, 4] ve B = [-1, ∞) aralıkları için A ∩ B kesişim kümesi hangisidir?",
+      "secenekler": [
+        "[-1, 4]",
+        "(-∞, ∞)",
+        "(-1, 4)",
+        "Boş küme"
+      ],
+      "dogru": 0,
+      "cozum": "-1 ile 4 arasındaki sayılar her iki aralıkta da yer alır ve uç noktalar dahildir: [-1, 4]."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "A = (2, 7) açık aralığında bulunan en büyük tam sayı değeri kaçtır?",
+      "cevap": "7 hariç tutulduğundan en büyük tam sayı 6'dır.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "[0, 4] ve [2, 6] aralıklarıyla yapılan işlemleri sonuçlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "[0, 4] ∪ [2, 6]",
+          "[0, 6]"
+        ],
+        [
+          "[0, 4] ∩ [2, 6]",
+          "[2, 4]"
+        ],
+        [
+          "[0, 4] \\ [2, 6]",
+          "[0, 2)"
+        ],
+        [
+          "[2, 6] \\ [0, 4]",
+          "(4, 6]"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Aralık cebiri ve sembollerle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "A alt küme B ise A ∩ B = A eşitliği sağlanır.",
+          "dogru": true
+        },
+        {
+          "metin": "Sayı doğrusunda açık parantez noktası içi dolu daireyle gösterilir.",
+          "dogru": false
+        },
+        {
+          "metin": "R \\ (-∞, 0) kümesi [0, ∞) aralığına karşılık gelir.",
+          "dogru": true
+        },
+        {
+          "metin": "(-1, 1) aralığındaki her sayının karesi negatif bir değerdir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarına karşılık gelen matematik terimini bulunuz.",
+      "ipucu": "İki kümenin veya aralığın ortak elemanlarının oluşturduğu küme (7 Harf).",
+      "harfler": [
+        {
+          "no": 1,
+          "harf": "K"
+        },
+        {
+          "no": 2,
+          "harf": "E"
+        },
+        {
+          "no": 3,
+          "harf": "S"
+        },
+        {
+          "no": 4,
+          "harf": "İ"
+        },
+        {
+          "no": 5,
+          "harf": "Ş"
+        },
+        {
+          "no": 6,
+          "harf": "İ"
+        },
+        {
+          "no": 7,
+          "harf": "M"
+        }
+      ],
+      "kelime": "KESİŞİM",
+      "satirlar": [
+        {
+          "ipucu": "İki kümenin veya aralığın ortak elemanlarının oluşturduğu küme (7 Harf).",
+          "cevap": "KESİŞİM",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "K"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Fark işlemi (A \\ B) yapılırken B kümesinin dahil olan sınır noktasının fark kümesine etkisini açıklayınız.",
+      "cevap": "B'de dahil olan sınır noktası fark kümesinde açık (dahil olmayan) duruma gelir.",
+      "satir": 2
+    }
+  ]
+}

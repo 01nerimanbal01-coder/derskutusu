@@ -1,0 +1,286 @@
+{
+  "sinif": 12,
+  "ders": "kimya",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "12.1.2. Elektrokimyasal Hücrelerin Çalışma İlkesi (Daniell Pili), Tuz Köprüsü ve Pil Şeması",
+  "ciktilar": [
+    "12.1.1.3. İndirgenme-yükseltgenme tepkimelerini denkleştirir.",
+    "12.1.1.4. İndirgenme-yükseltgenme tepkimeleri ile elektrik enerjisi arasındaki ilişkiyi açıklar.",
+    "12.1.2.1. Elektrot ve elektrokimyasal hücre kavramlarını açıklar."
+  ],
+  "hatirla": [
+    "Standart Daniell pilinde Zn anot, Cu ise katottur; pil tepkimesi Zn(k) + Cu²⁺(suda) ⇄ Zn²⁺(suda) + Cu(k) şeklindedir.",
+    "Pil şeması gösterimi Anot || Katot sırasıyla yazılır: Zn(k) | Zn²⁺(1 M) || Cu²⁺(1 M) | Cu(k).",
+    "Anotta çinko çubuk aşınarak çözeltiye Zn²⁺ iyonları geçer; katotta çözeltideki Cu²⁺ iyonları indirgenerek çubuk üzerinde toplanır.",
+    "Tuz köprüsündeki anyonlar anota, katyonlar katota göç ederek elektrik devresini tamamlar."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki Daniell pili bileşenlerini elektrokimyasal sembolik gösterimleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Anot Yarı Tepkimesi",
+          "Zn(k) → Zn²⁺(suda) + 2e⁻ (Yükseltgenme)"
+        ],
+        [
+          "Katot Yarı Tepkimesi",
+          "Cu²⁺(suda) + 2e⁻ → Cu(k) (İndirgenme)"
+        ],
+        [
+          "Tuz Köprüsü Ayracı",
+          "Pil şemasındaki çift dikey çizgi (||) simgesi"
+        ],
+        [
+          "Faz Sınırı Ayracı",
+          "Katı elektrot ile çözelti arasındaki tek dikey çizgi (|)"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki standart Zn-Cu Daniell pilinin şematik kısa gösterimi aşağıdakilerden hangisinde {koyu:doğru} olarak verilmiştir?",
+      "secenekler": [
+        "Zn(k) | Zn²⁺(1 M) || Cu²⁺(1 M) | Cu(k)",
+        "Cu(k) | Cu²⁺(1 M) || Zn²⁺(1 M) | Zn(k)",
+        "Zn²⁺(1 M) | Zn(k) || Cu(k) | Cu²⁺(1 M)",
+        "Zn(k) | Cu²⁺(1 M) || Zn²⁺(1 M) | Cu(k)"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki Daniell pili çalışırken kütlesi zamanla azalan (aşınan) elektrot çubuğunun metalik adını yazınız.",
+      "cevap": "Çinko (Zn) elektrottur.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki galvanik Daniell hücresine göre yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Daniell pilinde toplam net tepkime dinamik bir denge tepkimesidir.",
+          "dogru": true
+        },
+        {
+          "metin": "Dış devrede elektronlar Cu katottan Zn anota doğru kendiliğinden akar.",
+          "dogru": false
+        },
+        {
+          "metin": "Katot kabına saf su eklendiğinde pil gerilimi Le Chatelier ilkesine göre azalır.",
+          "dogru": true
+        },
+        {
+          "metin": "Tuz köprüsündeki potasyum (K⁺) iyonları anot hücresine göç eder.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Daniell pili çalışırken gerçekleşen değişimleri elektrot ve çözeltilere göre tabloda işaretleyiniz.",
+      "satir_basliklari": [
+        "Zn metal çubuğunun kütlesi",
+        "Anot kabındaki Zn²⁺ iyon derişimi",
+        "Cu metal çubuğunun kütlesi",
+        "Katot kabındaki Cu²⁺ iyon derişimi"
+      ],
+      "sutun_basliklari": [
+        "Zamanla Artar",
+        "Zamanla Azalır"
+      ],
+      "matris": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          false,
+          true
+        ]
+      ],
+      "basliklar": [
+        "Özellik / Kriter",
+        "Zamanla Artar",
+        "Zamanla Azalır"
+      ],
+      "satirlar": [
+        [
+          "Zn metal çubuğunun kütlesi",
+          {
+            "b": "—"
+          },
+          {
+            "b": "✓"
+          }
+        ],
+        [
+          "Anot kabındaki Zn²⁺ iyon derişimi",
+          {
+            "b": "✓"
+          },
+          {
+            "b": "—"
+          }
+        ],
+        [
+          "Cu metal çubuğunun kütlesi",
+          {
+            "b": "✓"
+          },
+          {
+            "b": "—"
+          }
+        ],
+        [
+          "Katot kabındaki Cu²⁺ iyon derişimi",
+          {
+            "b": "—"
+          },
+          {
+            "b": "✓"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Görseldeki pil şemasını standart kurallara uygun olarak soldan sağa doğru 1'den 4'e kadar sıralayınız.",
+      "ogeler": [
+        "Anot metalik elektrodu: Zn(k)",
+        "Anot sulu çözeltisi: Zn²⁺(1 M)",
+        "Katot sulu çözeltisi: Cu²⁺(1 M)",
+        "Katot metalik elektrodu: Cu(k)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki Daniell pilinde E°(Zn²⁺/Zn) = -0,76 V ve E°(Cu²⁺/Cu) = +0,34 V olduğuna göre standart pil potansiyeli kaç Volttur?",
+      "secenekler": [
+        "+1,10 V",
+        "+0,42 V",
+        "-0,42 V",
+        "-1,10 V"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "soru": "Pil şeması gösteriminde iki yarı hücre arasındaki tuz köprüsünü simgeleyen noktalama işaretini yazınız.",
+      "cevap": "Çift dikey çizgidir (||).",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kimyasal müdahaleleri pil gerilimine olan etkileriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Anot kabına saf su eklenmesi",
+          "Zn²⁺ derişimi azalır, denge ürünlere kayar ve pil gerilimi artar"
+        ],
+        [
+          "Katot kabına saf su eklenmesi",
+          "Cu²⁺ derişimi azalır, denge girenlere kayar ve pil gerilimi azalır"
+        ],
+        [
+          "Sıcaklığın artırılması",
+          "Piller ekzotermik olduğundan denge girenlere kayar ve gerilim düşer"
+        ],
+        [
+          "Pilin dengeye ulaşması",
+          "Tepkime durur, pil tükenir ve net potansiyel sıfır (0 V) olur"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "analiz",
+      "soru": "Pil potansiyeline etki eden faktörlere dair yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Elektrotların yüzey alanının büyütülmesi pil potansiyelini değiştirmez.",
+          "dogru": true
+        },
+        {
+          "metin": "Galvanik piller ekzotermik olduğu için soğuk ortamda pil potansiyeli artar.",
+          "dogru": true
+        },
+        {
+          "metin": "Anot çözeltisine Zn(NO₃)₂ tuzu eklenip çözünürse pil gerilimi artar.",
+          "dogru": false
+        },
+        {
+          "metin": "Pil tepkimesi dengeye ulaştığında elektrokimyasal pil tükenmiş olur.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki elektrokimya ipuçlarından yararlanarak bulmacayı çözünüz. Turuncu anahtar kutulardaki harflerle şifrelenmiş pil mucidi bilginin soyadını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "İki elektrot arasındaki elektriksel gerilimi ölçen alet",
+          "cevap": "VOLTMETRE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Maddenin elektron vererek değerliğini artırması olayı",
+          "cevap": "OKSİTLENME",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Modern şarjlı pillerde kullanılan en hafif alkali metal",
+          "cevap": "LİTYUM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Tuz köprüsünde çözünerek yük denkliği sağlayan bileşik",
+          "cevap": "TUZ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yükseltgenmenin gerçekleştiği negatif kutup elektrodu",
+          "cevap": "ANOT",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "VOLTA"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Anot kabına saf su eklendiğinde Daniell pilinin geriliminin neden arttığını Le Chatelier ilkesiyle açıklayınız.",
+      "cevap": "Zn²⁺ derişimi düşer; sistem dengeyi sağlamak için ürünler yönüne kayarak gerilimi artırır.",
+      "satir": 2
+    }
+  ]
+}

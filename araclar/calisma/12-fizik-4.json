@@ -1,0 +1,290 @@
+{
+  "sinif": 12,
+  "ders": "fizik",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Açısal Momentum, Açısal İvme, Tork-Açısal Momentum İlişkisi ve Korunumu (12.1.3.1-12.1.3.3)",
+  "ciktilar": [
+    "12.1.3.1. Açısal momentumun fiziksel bir nicelik olarak anlamını açıklar; çizgisel momentum, eylemsizlik momenti ve açısal hız ile ilişkisini kurar.",
+    "12.1.3.2. Açısal ivme ve tork kavramlarını kullanarak dönme hareketinin dinamiğini yorumlar.",
+    "12.1.3.3. Açısal momentumun korunumunu analiz eder ve günlük hayat örnekleriyle açıklar."
+  ],
+  "hatirla": [
+    "Dönen bir cismin açısal momentumu vektörel bir nicelik olup L = I·ω veya noktasal parçacık için L = m·v·r formülüyle hesaplanır; birimi kg·m²/s'dir.",
+    "Açısal momentumun yönü sağ el kuralıyla bulunur: Dört parmak dönme yönünü kavrarken başparmak açısal momentum vektörünün yönünü gösterir.",
+    "Cisme etki eden net dış tork sıfır olduğunda (Στ_dış = 0) açısal momentum korunur: L_ilk = L_son veya I_ilk · ω_ilk = I_son · ω_son.",
+    "Buz patencisi kollarını kapattığında eylemsizlik momenti (I) küçülür; açısal momentum korunduğundan açısal hızı (ω) artar."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki dönme dinamiği büyüklüklerini sembolleri ve SI birimleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Açısal Momentum (L)",
+          "kg·m²/s birimine sahip vektörel dönme miktarı"
+        ],
+        [
+          "Tork (τ)",
+          "N·m birimine sahip açısal momentum değişim hızı"
+        ],
+        [
+          "Açısal İvme (α)",
+          "rad/s² birimine sahip birim zamandaki açısal hız değişimi"
+        ],
+        [
+          "Eylemsizlik Momenti (I)",
+          "kg·m² birimine sahip dönme eylemsizliği direnci"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sürtünmesiz yatay döner tabloda kolları açık dönen bir balerin, kollarını aniden göğsüne doğru kapattığında eylemsizlik momenti (I) ve açısal hızı (ω) nasıl değişir?",
+      "secenekler": [
+        "Eylemsizlik momenti küçülür, açısal hızı artar.",
+        "Eylemsizlik momenti büyür, açısal hızı azalır.",
+        "Her iki büyüklük de açısal momentumla birlikte artar.",
+        "Dış tork oluştuğu için açısal hızı tamamen sıfırlanır."
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki eylemsizlik momenti I = 4 kg·m² olan tekerlek ω = 5 rad/s açısal hızla dönerken açısal momentumu kaç kg·m²/s olur?",
+      "cevap": "L = I · ω = 4 · 5 = 20 kg·m²/s olarak bulunur.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki açısal momentum yasalarına göre yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Sisteme etki eden net dış tork sıfır olduğunda açısal momentum daima korunur.",
+          "dogru": true
+        },
+        {
+          "metin": "Açısal momentum skaler bir büyüklük olup yönü ve işareti bulunmaz.",
+          "dogru": false
+        },
+        {
+          "metin": "Güneş etrafında eliptik yörüngede dolanan gezegen Güneş'e yaklaştıkça çizgisel hızı artar.",
+          "dogru": true
+        },
+        {
+          "metin": "Buz pateni sporcusu kollarını açtığında dönme kinetik enerjisi kendiliğinden artar.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Dönme hareketindeki büyüklükleri öteleme hareketindeki karşılıklarıyla tabloda işaretleyiniz.",
+      "satir_basliklari": [
+        "Açısal Momentum (L)",
+        "Eylemsizlik Momenti (I)",
+        "Tork (τ)",
+        "Açısal Hız (ω)"
+      ],
+      "sutun_basliklari": [
+        "Çizgisel Momentum (P) veya Kütle (m)",
+        "Kuvvet (F) veya Doğrusal Hız (v)"
+      ],
+      "matris": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ]
+      ],
+      "basliklar": [
+        "Özellik / Kriter",
+        "Çizgisel Momentum (P) veya Kütle (m)",
+        "Kuvvet (F) veya Doğrusal Hız (v)"
+      ],
+      "satirlar": [
+        [
+          "Açısal Momentum (L)",
+          {
+            "b": "✓"
+          },
+          {
+            "b": "—"
+          }
+        ],
+        [
+          "Eylemsizlik Momenti (I)",
+          {
+            "b": "✓"
+          },
+          {
+            "b": "—"
+          }
+        ],
+        [
+          "Tork (τ)",
+          {
+            "b": "—"
+          },
+          {
+            "b": "✓"
+          }
+        ],
+        [
+          "Açısal Hız (ω)",
+          {
+            "b": "—"
+          },
+          {
+            "b": "✓"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Görseldeki eliptik yörüngede dolanan gezegenin Güneş'e olan konumlarındaki çizgisel hız büyüklüklerini en büyükten en küçüğe doğru 1'den 3'e sıralayınız.",
+      "ogeler": [
+        "Enberi Noktası (Güneş'e en yakın konum — r_min)",
+        "Orta Yörünge Noktası (Ortalama uzaklık konumu)",
+        "Enöte Noktası (Güneş'e en uzak konum — r_max)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki r yarıçaplı dairesel yörüngede m kütleli parçacık saat yönünün tersine dolanmaktadır. Sağ el kuralına göre açısal momentum vektörünün yönü nasıldır?",
+      "secenekler": [
+        "Sayfa düzleminden dışa doğru (⊙)",
+        "Sayfa düzleminden içe doğru (⊗)",
+        "Çember merkezinden cisme doğru dışarıya",
+        "Çizgisel hız vektörüne zıt doğrultuda"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "soru": "Birim zamandaki açısal momentum değişimine eşit olan dönme momenti büyüklüğünün adını yazınız.",
+      "cevap": "Torktur (döndürme momentidir).",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki açısal momentum formüllerini kullanım durumlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "L = I · ω",
+          "Sabit eksen etrafında dönen katı cisimlerin açısal momentumu"
+        ],
+        [
+          "L = m · v · r",
+          "Merkeze göre dairesel dolanan noktasal parçacığın açısal momentumu"
+        ],
+        [
+          "τ = ΔL / Δt",
+          "Açısal momentumun zamanla değişim hızı olan net dış tork"
+        ],
+        [
+          "I₁ · ω₁ = I₂ · ω₂",
+          "Net dış tork sıfırken açısal momentumun korunumu eşitliği"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "analiz",
+      "soru": "Açısal momentum dinamiği ve Kepler yasalarına dair yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Gezegenlere etki eden kütleçekim kuvveti güneşe doğru olduğundan güneşe göre torku sıfırdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Helikopterlerde kuyruk pervanesi gövdenin zıt yönde dönmesini engellemek için bulunur.",
+          "dogru": true
+        },
+        {
+          "metin": "Açısal momentum korunduğunda dönme kinetik enerjisi de daima kesinlikle sabit kalır.",
+          "dogru": false
+        },
+        {
+          "metin": "Kollarını kapatan patencinin dönme kinetik enerjisi kasların yaptığı iş sebebiyle artar.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki dönme ipuçlarından yararlanarak bulmacayı çözünüz. Turuncu anahtar kutulardaki harflerle şifrelenmiş dönme direnci terimini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Dönme yarıçapının ve kuvvetin bağlı olduğu dönme noktası",
+          "cevap": "MERKEZ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Gezegenin Güneş etrafında çizdiği eliptik yörünge hattı",
+          "cevap": "ORBİT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Güneş'e en yakın konumdaki hızın ulaştığı en yüksek değer",
+          "cevap": "MAKSİMUM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Dönme hareketine karşı kütle dağılımının gösterdiği direnç",
+          "cevap": "EYLEMSİZLİK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Tork ve kuvvet birimlerinin dayandığı temel soyadı",
+          "cevap": "NEWTON",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kuvvetin bir eksen etrafında oluşturduğu döndürme etkisi",
+          "cevap": "TORK",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "MOMENT"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Döner sandalyede dönen bir kişinin kollarını açtığında dönme hızının neden azaldığını açıklayınız.",
+      "cevap": "Eylemsizlik momenti artar; dış tork sıfır olduğundan açısal hız azalır.",
+      "satir": 2
+    }
+  ]
+}

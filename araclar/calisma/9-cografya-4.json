@@ -1,0 +1,265 @@
+{
+  "sinif": 9,
+  "ders": "cografya",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Mekânın Aynası Haritalar: Harita Unsurları, Projeksiyonlar, Harita Türleri ve Ölçek",
+  "ciktilar": [
+    "Haritanın tanımını, kroki ile farkını ve bir haritada bulunması gereken beş temel unsuru (başlık, ölçek, lejant, yön oku, koordinat) açıklar.",
+    "Dünya'nın küresel şeklinden kaynaklanan harita bozulmalarını azaltmak için kullanılan projeksiyon yöntemlerini (silindirik, konik, düzlem) karşılaştırır.",
+    "Haritaları kullanım amaçlarına (genel ve tematik) ve ölçeklerine (büyük, orta, küçük ölçekli) göre sınıflandırarak harita uygulamaları yapar."
+  ],
+  "hatirla": [
+    "Haritanın 5 unsuru: Başlık, ölçek, lejant (işaretler tablosu), yön oku ve koordinatlardır.",
+    "Projeksiyonlar: Silindirik (Ekvator), Konik (Orta kuşak), Düzlem (Kutuplar) alan bozulmasını en aza indirir.",
+    "Ölçek paydası büyüdükçe ölçek küçülür, ayrıntı azalır ve kapsanan alan genişler."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Projeksiyon türlerini en az bozulmayla gösterdikleri coğrafi alanlarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Silindirik Projeksiyon",
+          "Ekvator ve çevresindeki tropikal sahalar"
+        ],
+        [
+          "Konik Projeksiyon",
+          "Orta kuşak ülkeleri ve ılıman enlemler"
+        ],
+        [
+          "Düzlem Projeksiyon",
+          "Kutuplar ve dar alanların haritaları"
+        ],
+        [
+          "Kesikli Projeksiyon",
+          "Okyanusları bölerek kıta alanlarını koruma"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki harita şablonuna göre Türkiye'nin fiziki haritası çizilirken bozulmayı en aza indirmek için hangi projeksiyon yöntemi tercih edilmelidir?",
+      "secenekler": [
+        "Silindirik projeksiyon",
+        "Konik projeksiyon",
+        "Düzlem projeksiyon",
+        "Silindirik kutup projeksiyonu"
+      ],
+      "dogru": 1,
+      "cozum": "Türkiye orta kuşakta (36°-42° Kuzey) yer aldığı için konik projeksiyon en az bozulmayı verir."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Haritada kullanılan renk, çizgi ve sembollerin ne anlama geldiğini gösteren harita anahtarına ne ad verilir?",
+      "cevap": "Lejant (harita işaretleri anahtarı) adı verilir.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Harita unsurları ve ölçekle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Bir çizimin harita sayılabilmesi için belirli ölçeğe göre küçültülmesi şarttır.",
+          "dogru": true
+        },
+        {
+          "metin": "Krokilerde matematiksel bir ölçek ve koordinat ağı zorunludur.",
+          "dogru": false
+        },
+        {
+          "metin": "1 / 20.000 ölçekli harita, 1 / 500.000 ölçeğe göre daha büyük ölçeklidir.",
+          "dogru": true
+        },
+        {
+          "metin": "Silindirik projeksiyonda kutuplara gidildikçe alan bozulması azalır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Büyük ve küçük ölçekli harita özelliklerini karşılaştırınız.",
+      "basliklar": [
+        "Harita Niteliği",
+        "Büyük Ölçekli Harita",
+        "Küçük Ölçekli Harita"
+      ],
+      "satirlar": [
+        [
+          "Ölçek Paydası",
+          "Küçüktür (ör. 1 / 25.000)",
+          {
+            "b": "Büyüktür (ör. 1 / 1.000.000)"
+          }
+        ],
+        [
+          "Gösterilen Alan",
+          "Dar alanları gösterir",
+          {
+            "b": "Geniş kıtaları gösterir"
+          }
+        ],
+        [
+          "Ayrıntı Düzeyi",
+          "Ayrıntı fazladır",
+          {
+            "b": "Ayrıntı azdır"
+          }
+        ],
+        [
+          "Bozulma Oranı",
+          "Hata ve bozulma azdır",
+          {
+            "b": "Hata ve bozulma fazladır"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde verilen harita hazırlama basamaklarını mantıksal işlem sırasına diziniz.",
+      "ogeler": [
+        "Haritanın kullanım amacını ve başlığını belirleme",
+        "Bölgenin enlemine uygun projeksiyon yöntemini seçme",
+        "Ayrıntı ihtiyacına göre küçültme ölçeğini saptama",
+        "Coğrafi koordinatları ve lejant sembollerini yerleştirme"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki 1 / 2.000.000 ölçekli dünya atlas haritasının özelliği aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Gösterilen coğrafi alanın çok dar olması",
+        "Ayrıntıyı gösterme gücünün oldukça az olması",
+        "Ölçek paydasındaki sayının küçük olması",
+        "Harita üzerinde sokak ve binaların seçilebilmesi"
+      ],
+      "dogru": 1,
+      "cozum": "Paydası büyük olan haritalar küçük ölçeklidir; ayrıntı az, kapsanan alan geniştir."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "soru": "Dünya'nın küresel yüzeyinin düzleme aktarılması sırasında oluşan şekil ve alan bozulmalarını azaltan yönteme ne denir?",
+      "cevap": "Projeksiyon (izdüşüm) yöntemi denir.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Harita unsurlarını temel işlevleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Başlık",
+          "Haritanın konusunu ve amacını belirtme"
+        ],
+        [
+          "Ölçek",
+          "Küçültme oranını ve mesafe hesabını verme"
+        ],
+        [
+          "Yön Oku",
+          "Coğrafi kuzey doğrultusunu gösterme"
+        ],
+        [
+          "Koordinat",
+          "Enlem ve boylamla mutlak konumu belirleme"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Harita türleri ve projeksiyonlarla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Haritalarda küresel şekilden kaynaklanan bozulmalar tamamen sıfırlanamaz.",
+          "dogru": true
+        },
+        {
+          "metin": "Tematik haritalar yalnızca dağ ve akarsu yükseltilerini gösterir.",
+          "dogru": false
+        },
+        {
+          "metin": "Çizgi ölçek yardımıyla haritada kuş uçuşu mesafe pratik olarak ölçülür.",
+          "dogru": true
+        },
+        {
+          "metin": "Büyük ölçekli haritalarda hata payı küçük ölçeklilere göre daha fazladır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarına karşılık gelen harita terimini bulunuz.",
+      "ipucu": "Haritadaki simge, işaret ve renklerin anlamını açıklayan anahtar cetveli (6 Harf).",
+      "harfler": [
+        {
+          "no": 1,
+          "harf": "L"
+        },
+        {
+          "no": 2,
+          "harf": "E"
+        },
+        {
+          "no": 3,
+          "harf": "J"
+        },
+        {
+          "no": 4,
+          "harf": "A"
+        },
+        {
+          "no": 5,
+          "harf": "N"
+        },
+        {
+          "no": 6,
+          "harf": "T"
+        }
+      ],
+      "kelime": "LEJANT",
+      "satirlar": [
+        {
+          "ipucu": "Haritadaki simge, işaret ve renklerin anlamını açıklayan anahtar cetveli (6 Harf).",
+          "cevap": "LEJANT",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "L"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Kroki ile harita arasındaki temel farkı ölçek açısından kısaca açıklayınız.",
+      "cevap": "Harita belirli bir ölçekle çizilir, kroki ise ölçeksiz ve kabataslaktır.",
+      "satir": 2
+    }
+  ]
+}

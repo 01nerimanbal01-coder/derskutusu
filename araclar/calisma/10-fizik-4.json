@@ -1,0 +1,265 @@
+{
+  "sinif": 10,
+  "ders": "fizik",
+  "hafta": 4,
+  "tarih": "5-9 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Bir Boyutta Sabit İvmeli Hareket: Hız-Zaman, İvme-Zaman Grafikleri, Hareket Denklemleri ve Serbest Düşme",
+  "ciktilar": [
+    "Hız-zaman ve ivme-zaman grafiklerini kullanarak ivme, hız değişimi ve yer değiştirmeyi hesaplar.",
+    "Hız ve ivme vektörlerinin yön ilişkisinden hızlanma ve yavaşlama durumlarını analiz eder.",
+    "Sabit ivmeli hareket denklemlerini ve serbest düşme hareketini yorumlar."
+  ],
+  "hatirla": [
+    "Sabit ivmeli harekette v-t grafiğinin eğimi ivmeyi (a), alanı ise yer değiştirmeyi (Δx) verir.",
+    "Hız ve ivme aynı yönlüyse cisim hızlanır (v · a > 0); zıt yönlüyse yavaşlar (v · a < 0).",
+    "Hava sürtünmesi önemsiz ortamda serbest düşen cismin ivmesi g = 10 m/s²'dir; h = 5t² formülü geçerlidir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Hareket grafikleri ve fiziksel anlamlarını eşleştiriniz.",
+      "ciftler": [
+        [
+          "v-t grafiğinin eğimi",
+          "İvmeyi (a) verir"
+        ],
+        [
+          "v-t grafiğinin altındaki alan",
+          "Yer değiştirmeyi (Δx) verir"
+        ],
+        [
+          "a-t grafiğinin altındaki alan",
+          "Hız değişimini (Δv) verir"
+        ],
+        [
+          "x-t grafiğinin eğimi",
+          "Anlık hızı (v) verir"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-4 temel kurallar ve kavramlar kartı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><rect x=\"10\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">v-t Eğimi</text><line x1=\"18\" y1=\"40\" x2=\"82\" y2=\"40\" stroke=\"#2451d6\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">İvmeyi (a = Δv/Δt) verir</text><rect x=\"96\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">v-t Alanı</text><line x1=\"104\" y1=\"40\" x2=\"168\" y2=\"40\" stroke=\"#12a150\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Yer değiştirmeyi (Δx) verir</text><rect x=\"182\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">a-t Alanı</text><line x1=\"190\" y1=\"40\" x2=\"254\" y2=\"40\" stroke=\"#ee7d12\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Hız değişimini (Δv) verir</text><rect x=\"268\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Serbest Düşme</text><line x1=\"276\" y1=\"40\" x2=\"340\" y2=\"40\" stroke=\"#7c3aed\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">İvme g = 10 m/s², h = 5t²</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Durgun hâlden (v₀ = 0) sabit 4 m/s² ivmeyle harekete başlayan bir vagonun 5 saniye sonraki hızı ve aldığı yol nedir?",
+      "secenekler": [
+        "Hızı 20 m/s, aldığı yol 50 metredir",
+        "Hızı 15 m/s, aldığı yol 40 metredir",
+        "Hızı 25 m/s, aldığı yol 60 metredir",
+        "Hızı 10 m/s, aldığı yol 30 metredir"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-4 ana konu ve kavramsal model şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">SABİT İVMELİ HAREKET DENKLEMLERİ VE HESAP</text><rect x=\"16\" y=\"34\" width=\"160\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"96.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Hız: v = v₀ + a · t</text><text x=\"96.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = 0 + 4 · 5 = 20 m/s</text><rect x=\"184\" y=\"34\" width=\"160\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"264.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Yol: Δx = v₀t + ½ · a · t²</text><text x=\"264.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Δx = ½ · 4 · 25 = 50 metre</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "gorsel_var": true,
+      "soru": "Hava direnci önemsiz ortamda serbest bırakılan bir bilyenin 3 saniye sonundaki hızını (g = 10 m/s²) hesaplayınız.",
+      "cevap": "v = g · t = 10 · 3 = 30 m/s.",
+      "satir": 2,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-4 model ve yasa karşılaştırma şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Serbest Düşmede Hız ve Alınan Yol (g = 10 m/s²)</text><rect x=\"16\" y=\"34\" width=\"156\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"94.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">1. saniyede: v = 10 m/s</text><text x=\"94.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alınan yol h₁ = 5 m</text><rect x=\"188\" y=\"34\" width=\"156\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"266.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">2. saniyede: v = 20 m/s</text><text x=\"266.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alınan yol h₂ = 15 m (Top. 20 m)</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sabit ivmeli hareket ve serbest düşmeyle ilgili ifadeleri Doğru/Yanlış olarak belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Serbest düşen cisim 1. saniyede 5 m, 2. saniyede 15 m yol alır.",
+          "dogru": true
+        },
+        {
+          "metin": "Hız ve ivme vektörleri zıt yönlü cisim düzgün hızlanır.",
+          "dogru": false
+        },
+        {
+          "metin": "Havasız ortamda tüy ile demir bilye aynı anda yere düşer.",
+          "dogru": true
+        },
+        {
+          "metin": "İvme-zaman grafiği zaman eksenine paralelse ivme sıfırdır.",
+          "dogru": false
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-4 sınıflandırma ve ayrıntı şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Serbest Düşmede Saniyelik Yol Oranları (h, 3h, 5h)</text><rect x=\"14\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"66.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">t = 1 s</text><text x=\"66.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">5 m yol katedilir (h)</text><rect x=\"126\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"178.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">t = 2 s</text><text x=\"178.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">15 m yol katedilir (3h)</text><rect x=\"238\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"290.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">t = 3 s</text><text x=\"290.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">25 m yol katedilir (5h)</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Serbest düşen bir cismin saniyelere göre hız ve yol tablosunu (g = 10 m/s²) tamamlayınız.",
+      "basliklar": [
+        "Zaman (t)",
+        "Anlık Hız (v)",
+        "O Saniyede Alınan Yol (h)",
+        "Toplam Düşüş Yolu (H)"
+      ],
+      "satirlar": [
+        [
+          "1. saniye",
+          "10 m/s",
+          "5 m",
+          {
+            "b": "5 m"
+          }
+        ],
+        [
+          "2. saniye",
+          {
+            "b": "20 m/s"
+          },
+          "15 m",
+          "20 m"
+        ],
+        [
+          "3. saniye",
+          "30 m/s",
+          {
+            "b": "25 m"
+          },
+          "45 m"
+        ],
+        [
+          "4. saniye",
+          {
+            "b": "40 m/s"
+          },
+          "35 m",
+          {
+            "b": "80 m"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Serbest düşmeye bırakılan 80 m yüksekliğindeki bir cismin saniye adımlarını sıraya diziniz.",
+      "ogeler": [
+        "t = 1 s: Hızı 10 m/s olur ve ilk 5 m mesafeyi kateder",
+        "t = 2 s: Hızı 20 m/s olur ve toplam 20 m düşmüş olur",
+        "t = 3 s: Hızı 30 m/s olur ve toplam 45 m mesafeye ulaşır",
+        "t = 4 s: Hızı 40 m/s ile toplam 80 m yolu tamamlayıp yere çarpar"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-4 süreç ve akış basamakları modeli\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">SERBEST DÜŞEN CİSMİN ZAMANLA DÜŞÜŞ BASAMAKLARI</text><rect x=\"10\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">t = 1 s</text><text x=\"50.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = 10 m/s, H = 5 m</text><rect x=\"96\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">t = 2 s</text><text x=\"136.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = 20 m/s, H = 20 m</text><rect x=\"182\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">t = 3 s</text><text x=\"222.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = 30 m/s, H = 45 m</text><rect x=\"268\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">t = 4 s</text><text x=\"308.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = 40 m/s, H = 80 m</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "İlk hızı 30 m/s olan araç fren yaparak 6 m/s² sabit ivmeyle yavaşlıyor. Durana kadar aldığı fren mesafesi kaç metredir?",
+      "secenekler": [
+        "75 metredir",
+        "90 metredir",
+        "60 metredir",
+        "45 metredir"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-4 karşılaştırma ve ilişki diyagramı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">Hız ve İvme Vektörleri Yön İlişkisi</text><rect x=\"14\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"66.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Hızlanan Hareket</text><text x=\"66.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v ve a aynı yönlü (v · a &gt; 0)</text><rect x=\"126\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#d63a3a\" stroke-width=\"1.2\"/><text x=\"178.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d63a3a\">Yavaşlayan Hareket</text><text x=\"178.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v ve a zıt yönlü (v · a &lt; 0)</text><rect x=\"238\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"290.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Serbest Düşme</text><text x=\"290.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"6.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Aşağı yönde düzgün hızlanır</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "gorsel_var": true,
+      "soru": "Zamana bağlı olmayan sabit ivmeli hareket formülünü (zamansız hız denklemi) yazınız.",
+      "cevap": "v² = v₀² ± 2 · a · Δx.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Hareket türleri ile hız ve ivme vektörlerinin durumunu eşleştiriniz.",
+      "ciftler": [
+        [
+          "Düzgün hızlanan hareket",
+          "Hız ve ivme vektörleri aynı yönlü (v · a > 0)"
+        ],
+        [
+          "Düzgün yavaşlayan hareket",
+          "Hız ve ivme vektörleri zıt yönlü (v · a < 0)"
+        ],
+        [
+          "Sabit hızlı hareket",
+          "İvme vektörü sıfır (a = 0)"
+        ],
+        [
+          "Serbest düşme hareketi",
+          "İvme daima yer çekimi yönünde ve sabittir"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-4 temel terminoloji kavram kartları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e0f4f8\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><rect x=\"10\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">İvme (a)</text><line x1=\"18\" y1=\"42\" x2=\"82\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Birim zamandaki hız değişimi</text><rect x=\"96\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Konum (x)</text><line x1=\"104\" y1=\"42\" x2=\"168\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Referansa olan yönlü uzaklık</text><rect x=\"182\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Yer Çekimi (g)</text><line x1=\"190\" y1=\"42\" x2=\"254\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Düşüş ivmesi ~10 m/s²</text><rect x=\"268\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Fren Mesafesi</text><line x1=\"276\" y1=\"42\" x2=\"340\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Durana kadar alınan yol</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "İvmeli hareketle ilgili ifadeleri Doğru/Yanlış olarak belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Yer çekimi ivmesi Dünya yüzeyinde yaklaşık 10 m/s² kabul edilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Hava sürtünmesinde limit hıza ulaşan cismin ivmesi sıfır olur.",
+          "dogru": true
+        },
+        {
+          "metin": "Duran bir cismin ivmesi olamaz çünkü hızı sıfırdır.",
+          "dogru": false
+        },
+        {
+          "metin": "Konum-zaman grafiğindeki parabolik eğri hareketin ivmeli olduğunu gösterir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarından yararlanarak fizik kavramlarını yazınız. Numaralı kutulardan 'DÜŞME' kelimesini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Fiziksel büyüklükler arasındaki matematiksel bağıntı",
+          "cevap": "DENKLEM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Üç kenarlı geometrik şekil (v-t grafiği alanı)",
+          "cevap": "ÜÇGEN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Vektörel bir büyüklüğün sayısal değeri ve şiddeti",
+          "cevap": "ŞİDDET",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "SI sisteminde yer değiştirmenin temel uzunluk birimi",
+          "cevap": "METRE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Hız-zaman grafiğinde doğrunun dikliğini belirten ivme oranı",
+          "cevap": "EĞİM",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "DÜŞME",
+      "sonuc": "DÜŞME",
+      "gorsel": "<svg viewBox=\"0 0 360 96\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-4 dersi şifre anahtar harf kutuları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"88\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">ANAHTAR KAVRAM ŞİFRE ŞERİDİ: D - Ü - Ş - M - E</text><rect x=\"48\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"72.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">1</text><text x=\"72.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">D</text><rect x=\"103\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"127.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">2</text><text x=\"127.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">Ü</text><rect x=\"158\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"182.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">3</text><text x=\"182.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">Ş</text><rect x=\"213\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"237.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">4</text><text x=\"237.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">M</text><rect x=\"268\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"292.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">5</text><text x=\"292.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">E</text></svg>"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Havasız ortamda tüy ile çekiç aynı yükseklikten bırakıldığında neden aynı anda yere düşer?",
+      "cevap": "Kütleye bağlı olmaksızın her iki cisme de aynı yer çekimi ivmesi (g) etki eder.",
+      "satir": 2
+    }
+  ]
+}
