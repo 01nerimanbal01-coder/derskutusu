@@ -1,0 +1,265 @@
+{
+  "baslik": "Ondalık İfadelerin Karekökleri ve Gerçek (Reel) Sayılar",
+  "alt_baslik": "1. Ünite: Sayılar ve İşlemler — Ondalık Karekök Alma, Rasyonel ve İrrasyonel Sayılar Kümesi (M.8.1.3.7 & M.8.1.3.8)",
+  "sinif": 8,
+  "hafta": 10,
+  "renk": "#2451d6",
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Ondalık İfadelerin Kareköklerini Belirleme ve Gerçek Sayılar (Rasyonel ve İrrasyonel Sayılar Kümesi) (M.8.1.3.7 & M.8.1.3.8)",
+  "ciktilar": [
+    "Kesir olarak yazıldığında payı ve paydası tam kare olan ondalık gösterimlerin kareköklerini belirler ve işlemlerde uygular (M.8.1.3.7).",
+    "İki tam sayının oranı ({kesir:a|b}, b ≠ 0) şeklinde yazılabilen rasyonel sayılar (Q) ile yazılamayan irrasyonel sayıları (I) ayırt eder (M.8.1.3.8).",
+    "Gerçek (reel) sayılar kümesini rasyonel ve irrasyonel sayıların birleşimi (R = Q ∪ I) olarak kavrar ve devirli ondalık açılımları kesre çevirir."
+  ],
+  "hatirla": [
+    "Ondalık bir ifadenin karekökü alınırken önce paydası 100 veya 10000 olacak şekilde {kesir:a|b} kesrine çevrilir, ardından pay ve paydanın karekökü ayrı ayrı alınır: {kok:1,44} = {kok:{kesir:144|100}} = {kesir:12|10} = 1,2. Karekök içindeki virgülden sonraki basamak sayısı dışarı çıkarken yarıya iner ({kok:0,09} = 0,3 iken {kok:0,9} = {kesir:3|{kok:10}} irrasyoneldir!).",
+    "a ve b tam sayı (b ≠ 0) olmak üzere {kesir:a|b} biçiminde yazılabilen doğal sayılar (N), tam sayılar (Z), kesirler, sonlu ondalık sayılar, devirli ondalık açılımlar (0,444... = {kesir:4|9}) ve tam karelerin karekökleri «rasyonel sayı (Q)»dır.",
+    "Kök dışına tam çıkamayan kareköklü ifadeler ({kok:2}, {kok:5}, {kok:0,4}), çember sabiti «π (pi) sayısı» ve virgülden sonrası düzensiz sonsuza giden açılımlar (2,101001000...) «irrasyonel sayı (I)»dır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki kareköklü ve devirli ifadeleri sağ sütundaki eşitleri veya sayı kümesi özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "{kok:2,25} + {kok:0,04} işleminin sonucu",
+          "Bir tam onda yedi (1,7 — Rasyonel sayı)"
+        ],
+        [
+          "{kok:0,0121} ifadesinin ondalık değeri",
+          "Sıfır tam yüzde on bir (0,11 — Rasyonel sayı)"
+        ],
+        [
+          "1,777... (7 devrediyor) sayısının karekökü",
+          "Dört bölü üç ({kesir:4|3} — Rasyonel sayı)"
+        ],
+        [
+          "{kok:0,9} ifadesinin sayı kümesi niteliği",
+          "Paydası tam kare olmayan irrasyonel sayı ({kesir:3|{kok:10}})"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Alanları 3,61 {us:m|2} ve 1,96 {us:m|2} olan karesel iki bahçe birbirine bitişik olarak yerleştirilmiştir. Bu iki karenin birer",
+      "secenekler": [
+        "3,1",
+        "3,3",
+        "3,5",
+        "3,7"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Sayı kartlarında verilen ifadelerin rasyonel kesir yazılışını, kök dışına çıkmış değerini ve ait olduğu kümeyi (Rasyonel - Q veya İrrasyonel - I)",
+      "basliklar": [
+        "Verilen İfade",
+        "Kesir / Kök Değeri",
+        "Sayı Kümesi (Q / I)"
+      ],
+      "satirlar": [
+        [
+          "1. {kok:1,69}",
+          "{kesir:13|10} = 1,3",
+          {
+            "b": "Rasyonel Sayı (Q)"
+          }
+        ],
+        [
+          "2. {kok:0,0064}",
+          {
+            "b": "{kesir:8|100} = 0,08"
+          },
+          {
+            "b": "Rasyonel Sayı (Q)"
+          }
+        ],
+        [
+          "3. {kok:1,6}",
+          {
+            "b": "{kesir:4|{kok:10}}"
+          },
+          {
+            "b": "İrrasyonel Sayı (I)"
+          }
+        ],
+        [
+          "4. {kok:2,89}",
+          {
+            "b": "{kesir:17|10} = 1,7"
+          },
+          {
+            "b": "Rasyonel Sayı (Q)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Ondalık karekökler ve gerçek sayılar kümesiyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Karekök içinde toplama işlemi bulunan {kok:0,36 + 0,64} ifadesinin sonucu 0,6 + 0,8 = 1,4 değil, {kok:1,00} = 1’dir.",
+          "dogru": true
+        },
+        {
+          "metin": "Geometri sorularında π yerine işlem kolaylığı için alınan 3,14 ve {kesir:22|7} sayıları irrasyonel sayılardır.",
+          "dogru": false
+        },
+        {
+          "metin": "Her tam sayı aynı zamanda bir rasyonel sayıdır ve her rasyonel sayı aynı zamanda bir gerçek (reel) sayıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Karekök içindeki negatif sayı olan {kok:-36} ifadesi -6 tam sayısına eşit olup gerçek sayılar kümesinin elemanıdır.",
+          "dogru": false
+        },
+        {
+          "metin": "İki irrasyonel sayının çarpımı bir rasyonel sayı olabilir; örneğin {kok:12} ile {kok:3} çarpıldığında sonuç 6 olur.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerde boş bırakılan yerleri kutudaki uygun kavram veya sayılarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Karekök içinde virgülden sonra dört basamağı bulunan {kok:0,0256} ifadesi kök dışına ___ olarak çıkar.",
+          "cevap": "0,16"
+        },
+        {
+          "metin": "Virgülden sonraki basamakları belirli bir kurala göre tekrar eden ___ ondalık gösterimler rasyonel sayıdır.",
+          "cevap": "devirli"
+        },
+        {
+          "metin": "Bir çemberin çevresinin çapına oranı olan π sayısı ve {kok:7} ifadesi ___ sayılar kümesinde yer alır.",
+          "cevap": "irrasyonel"
+        },
+        {
+          "metin": "Sayı doğrusu üzerindeki bütün noktalar eksiksiz olarak ___ sayılar kümesiyle eşleşir.",
+          "cevap": "gerçek"
+        }
+      ],
+      "fazla": [
+        "1,6"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "İşlem panosunda verilen {kesir:{kok:2,56} - {kok:0,49}|{kok:0,0081}} rasyonel ifadesinin değeri aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "{kesir:9|10}",
+        "1",
+        "10",
+        "100"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Dört bölmeden oluşan sayı hedef tahtasında yazılı olan sayılardan hangisi «irrasyonel sayılar (I)» kümesinin bir elemanıdır?",
+      "secenekler": [
+        "I. Bölme: {kok:0,4}",
+        "II. Bölme: -{kok:1,44}",
+        "III. Bölme: 0,555... (5 devrediyor)",
+        "IV. Bölme: {kok:0,0009}"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Basamak kartında a ve b sıfırdan farklı birer rakam olmak üzere üç basamaklı 1ab sayısı için {kok:1,ab} ifadesinin bir rasyonel sayı olduğu",
+      "cevap": "1ab tam kare olmalı ve rakamları sıfırdan farklı olmalıdır: 1,21 (kökü 1,1).",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Devirli ondalık gösterimi 2,777... (7 devrediyor) olan sayının karekökünün alınma basamaklarını baştan sona 1’den 4’e doğru sıralayınız.",
+      "ogeler": [
+        "Devirli ondalık açılımın kesre çevirme formülüyle (Sayının tamamı - Devretmeyen kısım) payının 27 - 2 = 25 olarak bulunması",
+        "Virgülden sonra devreden bir basamak olduğu için paydaya 9 yazılarak sayının {kesir:25|9} rasyonel kesrine dönüştürülmesi",
+        "Elde edilen kesrin karekök içine alınarak pay ve paydanın ayrı ayrı karekökünün ({kesir:{kok:25}|{kok:9}}) hesaplanması",
+        "Karekök işleminden {kesir:5|3} sonucunun bulunması ve iki tam sayının oranı olduğu için rasyonel sayı olduğunun doğrulanması"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Gerçek sayılar kümesi (R) ve alt kümelerini (N, Z, Q, I) gösteren Venn şemasına göre aşağıdaki ifadelerden hangisi {koyu:yanlıştır?}",
+      "secenekler": [
+        "-{kok:81} ifadesinin değeri -9 olduğu için Tam Sayılar (Z) ve Rasyonel Sayılar (Q) bölgesine yazılır.",
+        "{kok:0,25} ifadesinin değeri 0,5 olduğu için Z kümesinin dışındaki Rasyonel Sayılar (Q) bölgesine yazılır.",
+        "π sayısı ve {kok:15} sayısı Q kümesiyle kesişimi olmayan İrrasyonel Sayılar (I) bölgesine yazılır.",
+        "0,333... devirli ondalık sayısı sonsuza kadar devam ettiği için İrrasyonel Sayılar (I) bölgesine yazılır."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki matematiksel kavramları kutulara yazınız. Numaralı harflerle rasyonel ve irrasyonel sayıların birleşimi olan kümenin adını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Kare ve çember gibi şekillerin alan ve çevrelerini inceleyen matematik dalı",
+          "cevap": "GEOMETRİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Rasyonel ve irrasyonel sayıların birleşimi olan gerçek sayıların diğer adı",
+          "cevap": "REEL",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "İki tam sayının oranı şeklinde yazılabilen sayılar kümesi (Q)",
+          "cevap": "RASYONEL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Çokgenlerin bütün kenar uzunluklarının toplamı",
+          "cevap": "ÇEVRE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Virgülden sonraki basamakları tekrar eden ondalık gösterim türü",
+          "cevap": "DEVİRLİ",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Karesi verilen sayıyı bulma işlemini simgeleyen sembolün adı",
+          "cevap": "KAREKÖK",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "GERÇEK"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Karşılaştırma kartında verilen K = {kok:0,16} ve L = {kok:1,6} ifadelerinden hangisinin rasyonel, hangisinin irrasyonel olduğunu kesre",
+      "cevap": "K = {kok:{kesir:16|100}} = {kesir:4|10} = 0,4 olup pay.",
+      "satir": 2
+    }
+  ],
+  "ders": "matematik"
+}

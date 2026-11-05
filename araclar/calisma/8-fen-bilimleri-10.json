@@ -1,0 +1,277 @@
+{
+  "baslik": "3. Ünite: Basınç — Katı Basıncı ve Sıvı Basıncı",
+  "alt_baslik": "Katı Basıncı Değişkenleri, Günlük Yaşam Uygulamaları, Sıvı Basıncı ve Pascal Prensibi (F.8.3.1.1 & F.8.3.1.2)",
+  "sinif": 8,
+  "ders": "fen-bilimleri",
+  "hafta": 10,
+  "renk": "#2451d6",
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Katı Basıncı ve Sıvı Basıncı: Katı Basıncını Etkileyen Değişkenler (Ağırlık ve Yüzey Alanı) ile Sıvı Basıncını Etkileyen Değişkenler (Derinlik ve Yoğunluk) ve Pascal Prensibi (F.8.3.1.1 & F.8.3.1.2)",
+  "ciktilar": [
+    "Katı basıncını etkileyen değişkenleri (cismin ağırlığı ve temas yüzey alanı) kontrollü deney düzenekleriyle analiz eder ve Pascal (Pa) birimini tanır.",
+    "Günlük yaşam ve teknolojide katı basıncını artırmaya veya azaltmaya yönelik uygulamaları yüzey alanı değişimiyle açıklar.",
+    "Sıvı basıncının sıvı derinliği ve yoğunluğu ile ilişkisini test eder; kabın şekline bağlı olmadığını ve Pascal Prensibi uygulamalarını kavrar."
+  ],
+  "hatirla": [
+    "Birim yüzeye dik olarak etki eden kuvvete «basınç (P)» denir ve birimi «Pascal (Pa)»dır. Katı basıncı cismin ağırlığı (dik kuvvet) ile DOĞRU orantılı, yere temas eden yüzey alanı ile TERS orantılıdır (P = {kesir:G|S}).",
+    "Kar ayakkabısı, iş makinesi paleti, çok tekerlekli tır ve ördek/deve ayağı yüzey alanını büyütüp katı basıncını AZALTIR; bilenmiş bıçak ağzı, sivri çivi/raptiye ucu, krampon dişleri ve kış lastik zinciri ise yüzeyi küçültüp basıncı ARTIRIR.",
+    "Sıvı basıncı, noktanın açık yüzeye olan dik uzaklığı (derinlik, h) ve sıvının yoğunluğu (d) ile DOĞRU orantılıdır; kabın şekline, genişliğine veya kaptaki toplam sıvı hacmine bağlı değildir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Sol sütunda verilen günlük yaşam ve teknoloji uygulamalarını sağ sütundaki bilimsel ilkelerle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Karda geniş tabanlı kar ayakkabısı (hedik) giyilmesi",
+          "Temas yüzey alanını büyüterek katı basıncını azaltma"
+        ],
+        [
+          "Futbolcu kramponlarının tabanında sivri dişler bulunması",
+          "Temas yüzey alanını küçülterek katı basıncını artırma"
+        ],
+        [
+          "Baraj duvarlarının tabana inildikçe daha kalın inşa edilmesi",
+          "Derinlik arttıkça büyüyen sıvı basıncına dayanıklılık sağlama"
+        ],
+        [
+          "Hidrolik fren ve sanayi liftlerinde ağır araçların durdurulup kaldırılması",
+          "Kapalı kaptaki sıvının basıncı her yöne eşit iletmesi (Pascal)"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Özdeş küplerle oluşturulan K, L ve M düzeneklerinin kum zeminde bıraktıkları iz derinlikleri karşılaştırılacaktır. Bir araştırmacı",
+      "secenekler": [
+        "K ve L düzenekleri (Yüzey alanları eşit, ağırlıkları farklı)",
+        "L ve M düzenekleri (Ağırlıkları eşit, temas yüzey alanları farklı)",
+        "K ve M düzenekleri (Hem ağırlıkları hem yüzey alanları farklı)",
+        "Yalnız K düzeneği (Tek düzenekle bağımsız değişken testi)"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Basınç deney kartlarında verilen işlemler sonucunda zemine veya kap tabanına etki eden basıncın nasıl değiştiğini (Artar,",
+      "basliklar": [
+        "Uygulanan Deneysel İşlem",
+        "Basınç Değişimi",
+        "Bilimsel Nedeni"
+      ],
+      "satirlar": [
+        [
+          "1. Yatay duran tuğlanın dik konuma getirilmesi",
+          "Artar",
+          {
+            "b": "Ağırlık sabitken temas yüzey alanı küçülür"
+          }
+        ],
+        [
+          "2. Düzgün homojen silindirin dikey ikiye kesilmesi",
+          {
+            "b": "Değişmez"
+          },
+          {
+            "b": "Ağırlık ve taban alanı aynı oranda azalır"
+          }
+        ],
+        [
+          "3. Su dolu kaba aynı sıcaklıkta biraz daha su eklenmesi",
+          {
+            "b": "Artar"
+          },
+          {
+            "b": "Kap tabanındaki sıvı derinliği (h) artar"
+          }
+        ],
+        [
+          "4. Kaptaki h derinlikli su yerine h derinlikli yağ konulması",
+          {
+            "b": "Azalır"
+          },
+          {
+            "b": "Yağın yoğunluğu suyun yoğunluğundan küçüktür"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Katı ve sıvı basıncıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Katı cisimler kendilerine uygulanan dik kuvveti aynı doğrultuda ve aynı büyüklükte iletirken, basıncı yüzey alanına göre değiştirir.",
+          "dogru": true
+        },
+        {
+          "metin": "Ağır yük taşıyan tren ve tırlarda tekerlek sayısının artırılması zemine yapılan basıncı artırmak içindir.",
+          "dogru": false
+        },
+        {
+          "metin": "Sıvı içindeki bir noktanın basıncı hesaplanırken noktanın sıvının en üst açık yüzeyine olan dik uzaklığı (derinliği) alınır.",
+          "dogru": true
+        },
+        {
+          "metin": "Taban alanları S ve 3S olan iki kaba eşit yüksekliğe kadar saf su konulursa geniş kaptaki sıvı basıncı 3 kat büyük olur.",
+          "dogru": false
+        },
+        {
+          "metin": "İtfaiye merdivenleri, damperli kamyonlar ve berber koltukları Pascal Prensibi’nden yararlanılarak tasarlanmıştır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Cümlelerde boş bırakılan yerleri kutudaki uygun kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Uluslararası birim sisteminde birim yüzeye dik etki eden kuvvetin yani basıncın birimi ___ olarak adlandırılır.",
+          "cevap": "Pascal"
+        },
+        {
+          "metin": "Kontrollü bir deneyde araştırmacının etkisini gözlemlemek amacıyla kendi değiştirdiği değişkene ___ değişken denir.",
+          "cevap": "bağımsız"
+        },
+        {
+          "metin": "Su dolu bir pet şişenin yan yüzeyinde açılan üç delikten en alttakinden suyun en uzağa fışkırması ___ etkisiyle açıklanır.",
+          "cevap": "derinlik"
+        },
+        {
+          "metin": "Eşit yükseklikte su ve tuzlu su bulunan iki özdeş kaptan tuzlu suyun tabana daha fazla basınç yapması ___ farkındandır.",
+          "cevap": "yoğunluk"
+        }
+      ],
+      "fazla": [
+        "hacim"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Yan yüzeyinde X, Y ve Z muslukları bulunan su dolu deponun muslukları aynı anda açıldığında suların yatayda ulaştığı mesafeler",
+      "secenekler": [
+        "x{alt:X} > x{alt:Y} > x{alt:Z}",
+        "x{alt:X} = x{alt:Y} = x{alt:Z}",
+        "x{alt:Z} > x{alt:Y} > x{alt:X}",
+        "x{alt:Y} > x{alt:Z} > x{alt:X}"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Şekilleri ve kesit alanları birbirinden farklı olan I, II ve III numaralı kaplarda belirtilen yükseklik ve yoğunluklarda sıvılar",
+      "secenekler": [
+        "P{alt:K} = P{alt:L} > P{alt:M}",
+        "P{alt:L} > P{alt:K} > P{alt:M}",
+        "P{alt:M} > P{alt:K} = P{alt:L}",
+        "P{alt:K} > P{alt:L} = P{alt:M}"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Raptiye modelinde parmakla geniş baş kısmına (S{alt:1}) F kuvveti uygulandığında sivri uç kısmının (S{alt:2}) mantar panoya kolayca",
+      "cevap": "Katılar kuvveti aynen ilettiği için kuvvetler eşittir (F{alt:1}.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Otomobillerdeki hidrolik fren sisteminin çalışma sürecini gösteren şemadaki olayları pedala basılmasından tekerleğin durmasına",
+      "ogeler": [
+        "Sürücünün fren pedalına ayağıyla dik bir kuvvet uygulayarak ana silindirdeki pistonu itmesi",
+        "Pistonun itilmesiyle kapalı fren boruları içindeki hidrolik sıvıda yüksek bir basınç oluşması",
+        "Oluşan sıvı basıncının Pascal Prensibi gereğince fren borularıyla tüm tekerlek silindirlerine eşit büyüklükte iletilmesi",
+        "Tekerlek pistonlarının fren balatalarını disklere sıkıştırmasıyla sürtünmenin artması ve aracın güvenli biçimde durması"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Yarısına kadar su dolu olan kesik koni biçimindeki kapalı kap, dar tabanı (S) üzerinden geniş tabanı (3S) üzerine ters çevrilerek",
+      "secenekler": [
+        "P{alt:katı} artar — P{alt:sıvı} artar",
+        "P{alt:katı} değişmez — P{alt:sıvı} azalır",
+        "P{alt:katı} azalır — P{alt:sıvı} artar",
+        "P{alt:katı} azalır — P{alt:sıvı} azalır"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarındaki fiziksel kavramları kutulara yazınız. Numaralı harflerle birim yüzeye dik etki eden kuvvetin adını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Kontrollü deneyde bağımsız değişkene bağlı olarak sonucu değişen değişken",
+          "cevap": "BAĞIMLI",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Katı basıncı ile doğru orantılı olan, birimi Newton olan yer çekimi kuvveti",
+          "cevap": "AĞIRLIK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kapalı kaptaki basıncı her yöne eşit ileten akışkan madde hâli",
+          "cevap": "SIVI",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sıvı basıncını etkileyen, birim hacimdeki madde miktarını gösteren özellik (öz kütle)",
+          "cevap": "YOĞUNLUK",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "İş makinelerinde yüzey alanını büyüterek toprağa batmayı önleyen geniş düzenek",
+          "cevap": "PALET",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Temas yüzey alanını küçülterek yüksek basınçla tahtaya saplanan sivri metal araç",
+          "cevap": "ÇİVİ",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "BASNPÇ"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Su cenderesi düzeneğinde küçük kesitli pistona (S{alt:1}) küçük bir F kuvveti uygulanarak geniş kesitli pistondaki (S{alt:2}) ağır otomobilin",
+      "cevap": "Su cenderesi Pascal Prensibi ile çalışır: Küçük.",
+      "satir": 2
+    }
+  ]
+}

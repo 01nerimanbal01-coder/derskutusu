@@ -1,0 +1,262 @@
+{
+  "sinif": 5,
+  "hafta": 10,
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-10-31",
+  "konu": "Çok Basamaklı Doğal Sayılarda Basamak Değeri, Bölükler, Sayıları Çözümleme ve Büyüklük-Küçüklük Karşılaştırması",
+  "ciktilar": [
+    "MAT.5.1.1: Altıdan çok basamaklı (7, 8 ve 9 basamaklı) doğal sayıların bölüklerini, basamak adlarını, sayı ve basamak değerlerini belirleyebilme",
+    "MAT.5.1.1: Çok basamaklı doğal sayıları basamak değerlerinin toplamı ve basamak birimleriyle çarpımı biçiminde çözümleyebilme",
+    "MAT.5.1.2: Çok basamaklı doğal sayıları basamak sayısı ve basamaklardaki rakam örüntüleri üzerinden karşılaştırarak sıralayabilme"
+  ],
+  "hatirla": [
+    "Bir sayıda rakamın bulunduğu basamağa bakılmaksızın gösterdiği kendi değerine sayı değeri; rakamın bulunduğu basamak birimiyle (1, 10, 100, ..., 100 000 000) çarpımına ise basamak değeri denir.",
+    "Onluk sayı sisteminde her basamağın değeri, hemen sağındaki basamağın değerinin 10 katıdır; birler basamağındaki rakamın sayı değeri ile basamak değeri birbirine eşittir.",
+    "Bir doğal sayıyı basamak değerlerinin toplamı şeklinde yazmaya çözümleme denir; çözümlenmiş sayıda adı geçmeyen (atlanan) her basamağın yerine mutlaka 0 (sıfır) yazılır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütunda verilen «738 409 615» doğal sayısına ait ifadeleri sağ sütundaki doğru değerleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "3 rakamının basamak değeri",
+          "Otuz milyon (30 000 000)"
+        ],
+        [
+          "4 rakamının basamak değeri",
+          "Dört yüz bin (400 000)"
+        ],
+        [
+          "Milyonlar bölüğündeki rakamların sayı değerleri toplamı",
+          "7 + 3 + 8 = 18"
+        ],
+        [
+          "Sayı değeri ile basamak değeri eşit olan rakam",
+          "Birler basamağındaki 5 rakamı"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki basamak çözümleme kartında verilen «(9 × 100 000 000) + (5 × 1 000 000) + (7 × 10 000) + (4 × 100) + (8 × 1)» ifadesinin",
+      "secenekler": [
+        "905 070 408",
+        "950 070 408",
+        "905 700 480",
+        "95 070 408"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki «864 259 137» doğal sayısının basamak kartlarını inceleyerek belirtilen rakamın bulunduğu basamak adını ve basamak değerini",
+      "basliklar": [
+        "İncelenen Rakam",
+        "Bulunduğu Basamak Adı",
+        "Basamak Değeri"
+      ],
+      "satirlar": [
+        [
+          "1. 8 Rakamı",
+          "Yüz milyonlar basamağı",
+          {
+            "b": "800 000 000"
+          }
+        ],
+        [
+          "2. 6 Rakamı",
+          {
+            "b": "On milyonlar basamağı"
+          },
+          {
+            "b": "60 000 000"
+          }
+        ],
+        [
+          "3. 5 Rakamı",
+          {
+            "b": "On binler basamağı"
+          },
+          {
+            "b": "50 000"
+          }
+        ],
+        [
+          "4. 9 Rakamı",
+          {
+            "b": "Binler basamağı"
+          },
+          {
+            "b": "9 000"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Basamak değeri, çözümleme ve sayı karşılaştırma kurallarıyla ilgili yargıların doğru olanlarına D, yanlış olanlarına Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Sıfır (0) rakamı hangi basamakta bulunursa bulunsun hem sayı değeri hem de basamak değeri 0’dır.",
+          "dogru": true
+        },
+        {
+          "metin": "Sekiz basamaklı en büyük doğal sayı olan 99 999 999, dokuz basamaklı 100 000 000 sayısından büyüktür.",
+          "dogru": false
+        },
+        {
+          "metin": "Onluk sayı sisteminde yüz binler basamağının değeri, on binler basamağının değerinin 10 katıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Basamak sayıları eşit olan iki doğal sayıyı karşılaştırırken en soldaki basamaktan başlanır.",
+          "dogru": true
+        },
+        {
+          "metin": "Rakamları birbirinden farklı 8 basamaklı en küçük doğal sayı 12 345 678 olarak yazılır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerde boş bırakılan yerleri kutudaki uygun kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Bir doğal sayıyı rakamlarının basamak değerlerinin toplamı biçiminde yazma işlemine ___ denir.",
+          "cevap": "çözümleme"
+        },
+        {
+          "metin": "Rakamın bulunduğu basamağı dikkate almadan gösterdiği kendi değerine ___ değeri adı verilir.",
+          "cevap": "sayı"
+        },
+        {
+          "metin": "Dokuz basamaklı bir doğal sayının en solunda (en büyük basamağında) ___ milyonlar basamağı yer alır.",
+          "cevap": "yüz"
+        },
+        {
+          "metin": "Karşılaştırma sembollerinde sivri uç her zaman daha ___ olan doğal sayıyı gösterir.",
+          "cevap": "küçük"
+        }
+      ],
+      "fazla": [
+        "büyük"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sayı kartında verilen «462 196 380» doğal sayısında bulunan iki adet «6» rakamının basamak değerleri arasındaki fark kaçtır?",
+      "secenekler": [
+        "60 006 000",
+        "59 994 000",
+        "59 940 000",
+        "5 994 000"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki karşılaştırma terazi kartında «548 ▲32 910 > 548 675 100» eşitsizliğinin doğru olabilmesi için yüz binler basamağındaki «▲» yerine",
+      "secenekler": [
+        "6 + 7 + 8 + 9 = 30",
+        "7 + 8 = 15",
+        "7 + 8 + 9 = 24",
+        "8 + 9 = 17"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki yedi rakam kartını (0, 2, 3, 5, 6, 8, 9) birer kez kullanarak yazılabilecek yedi basamaklı en büyük doğal sayı ile",
+      "cevap": "En büyük yedi basamaklı sayı: 9 865 320.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört baraj gölünün su kapasitesi verilerini en küçük kapasiteden en büyük kapasiteye doğru 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "K Barajı: 68 450 900 metreküp (8 basamaklı)",
+        "L Barajı: 680 120 500 metreküp (9 basamaklı, on binler basamağı 2)",
+        "M Barajı: 680 190 000 metreküp (9 basamaklı, on binler basamağı 9)",
+        "N Barajı: 684 005 300 metreküp (9 basamaklı, milyonlar basamağı 4)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki bilgi panosunda «307 540 829» doğal sayısının analizi yapılmıştır. Panodaki bilgilere göre aşağıdaki ifadelerden hangisi {koyu:yanlıştır?}",
+      "secenekler": [
+        "Yüz milyonlar basamağındaki 3’ün basamak değeri 300 000 000’dur.",
+        "Binler bölüğündeki rakamların basamak değerleri toplamı 540 000’dir.",
+        "Sayıdaki rakamların sayı değerleri toplamı 3+0+7+5+4+0+8+2+9 = 38’dir.",
+        "On milyonlar basamağındaki 0 rakamı silinirse sayının değeri değişmez."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “çok basamaklı doğal sayıları küçüktür (<) veya büyüktür (>) sembolleriyle",
+      "satirlar": [
+        {
+          "ipucu": "Çözümlenmiş sayıda adı geçmeyen eksik basamakların yerine yazılan rakam",
+          "cevap": "SIFIR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Birler ve binler bölüğündeki toplam basamak sayısı",
+          "cevap": "ALTI",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Sayı değeri ile basamak değerinin eşit olduğu en sağdaki basamak",
+          "cevap": "BİRLER",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Bir doğal sayıda rakamların bulunduğu hanelerin her biri",
+          "cevap": "BASAMAK",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Sağdan sola doğru ayrılan üçer basamaklı rakam grupları",
+          "cevap": "BÖLÜK",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Basamak sayıları farklı iki sayıdan daha büyük olanın basamak sayısı özelliği",
+          "cevap": "FAZLA",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "SIRALA"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki iki doğal sayıyı («715 482 300» ile «715 428 900») hangi basamaktaki rakamlara bakarak karşılaştırdığımızı ve hangisinin daha büyük",
+      "cevap": "İkisi de 9 basamaklıdır; milyonlar bölüğü (715=715) ve yüz binler basamağı (4=4).",
+      "satir": 2
+    }
+  ],
+  "ders": "matematik"
+}

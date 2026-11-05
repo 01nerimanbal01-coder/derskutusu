@@ -1,0 +1,258 @@
+{
+  "sinif": 7,
+  "hafta": 10,
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-10-31",
+  "konu": "Geometrik Nicelikler (1) — Dikdörtgenler Prizmasının Hacim Bağıntısı (V = a·b·c) ve Standart Hacim Ölçme Birimleri (m{us:|3}, dm{us:|3}, cm{us:|3}, mm{us:|3}) (MAT.7.4.4 & MAT.7.4.5)",
+  "ciktilar": [
+    "MAT.7.4.4. Birim küpleri katman ve sütun stratejileriyle sayarak dikdörtgenler prizmasının hacim bağıntısını (Taban Alanı × Yükseklik = a·b·c) değerlendirir.",
+    "MAT.7.4.5. Standart hacim ölçme birimleri (m{us:|3}, dm{us:|3}, cm{us:|3}, mm{us:|3}) arasında dönüşüm yapar ve sıvı ölçme birimleriyle (1 dm{us:|3} = 1 L, 1 cm{us:|3} = 1 mL) ilişkilendirir."
+  ],
+  "hatirla": [
+    "Farklı üç ayrıtının uzunluğu a, b ve c birim olan dikdörtgenler prizmasının hacmi V = Taban Alanı × Yükseklik = (a · b) · c bağıntısıyla hesaplanır.",
+    "Taban ayrıtı a ve yüksekliği c olan kare prizmanın hacmi V = {us:a|2} · c; tüm ayrıtları a olan küpün hacmi ise V = {us:a|3} formülüyle bulunur.",
+    "Standart hacim ölçme birimleri ({us:m|3} → {us:dm|3} → {us:cm|3} → {us:mm|3}) biner biner büyür ve küçülür: aşağı her basamakta 1 000 ile çarpılır, yukarı çıkarken 1 000’e bölünür.",
+    "Hacim ve sıvı ölçme birimleri arasındaki üç altın köprü eşitliği: 1 {us:dm|3} = 1 L (litre), 1 {us:cm|3} = 1 mL (mililitre) ve 1 {us:m|3} = 1 000 {us:dm|3} = 1 000 L’dir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki hacim bağıntılarını ve birim dönüşümlerini sağ sütundaki doğru karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "V = (a · b) · c",
+          "Dikdörtgenler prizmasının hacim bağıntısı (Taban Alanı × Yükseklik)"
+        ],
+        [
+          "1 {us:m|3} (metreküp)",
+          "1 000 {us:dm|3} (1 000 litre sıvı kapasitesi)"
+        ],
+        [
+          "1 {us:dm|3} (desimetreküp)",
+          "1 000 {us:cm|3} (1 litre sıvı kapasitesi)"
+        ],
+        [
+          "1 {us:cm|3} (santimetreküp)",
+          "1 000 {us:mm|3} (1 mililitre sıvı kapasitesi)"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dikdörtgenler prizmasının taban ayrıtları 7 cm ve 4 cm, yüksekliği ise 5 cm olarak verilmiştir. Bu prizmanın taban alanı ve hacmi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Taban Alanı = 28 {us:cm|2} ve Hacim = 140 {us:cm|3}",
+        "Taban Alanı = 11 {us:cm|2} ve Hacim = 55 {us:cm|3}",
+        "Taban Alanı = 20 {us:cm|2} ve Hacim = 140 {us:cm|3}",
+        "Taban Alanı = 28 {us:cm|2} ve Hacim = 166 {us:cm|3}"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki birim dönüşüm kartlarını inceleyerek yapılan işlemi (×1 000 / ÷1 000) ve elde edilen sonucu tablodaki boşluklara yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Verilen Hacim Ölçüsü",
+        "Uygulanan İşlem",
+        "Dönüştürülen Değer"
+      ],
+      "satirlar": [
+        [
+          "5,2 {us:m|3} → {us:dm|3}",
+          "1 basamak aşağı (× 1 000)",
+          {
+            "b": "5 200 {us:dm|3}"
+          }
+        ],
+        [
+          "90 000 {us:cm|3} → {us:dm|3}",
+          {
+            "b": "1 basamak yukarı (÷ 1 000)"
+          },
+          {
+            "b": "90 {us:dm|3}"
+          }
+        ],
+        [
+          "0,08 {us:dm|3} → {us:cm|3}",
+          "1 basamak aşağı (× 1 000)",
+          {
+            "b": "80 {us:cm|3}"
+          }
+        ],
+        [
+          "14 000 {us:mm|3} → {us:cm|3}",
+          {
+            "b": "1 basamak yukarı (÷ 1 000)"
+          },
+          "14 {us:cm|3}"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Prizmaların hacmi ve standart hacim ölçme birimleriyle ilgili yargılardan doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Hacmi ve taban alanı bilinen bir dikdörtgenler prizmasının yüksekliğini bulmak için hacim, taban alanına bölünür.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir ayrıtının uzunluğu 6 cm olan küpün hacmi 6 · 3 = 18 {us:cm|3} olarak hesaplanır.",
+          "dogru": false
+        },
+        {
+          "metin": "Standart hacim ölçme birimleri üç boyutlu olduğu için her basamakta 1 000’er kat büyür veya küçülür.",
+          "dogru": true
+        },
+        {
+          "metin": "Ayrıt uzunlukları 1 dm (10 cm) olan küp biçimindeki bir kap tam 1 litre (1 000 mL) sıvı alır.",
+          "dogru": true
+        },
+        {
+          "metin": "Sıvı ölçme birimlerinden 1 litre (L), hacim ölçme birimlerinden 1 metreküpe ({us:m|3}) eşittir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun kavram ve sayılarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Bir cismin uzayda (boşlukta) kapladığı yere o cismin ___ adı verilir.",
+          "cevap": "hacmi"
+        },
+        {
+          "metin": "Uluslararası standartlarda temel hacim ölçme birimi ___ ({us:m|3}) olarak kabul edilir.",
+          "cevap": "metreküp"
+        },
+        {
+          "metin": "Bir ayrıtının uzunluğu 4 cm olan küpün hacmi {us:4|3} = ___ {us:cm|3}’tür.",
+          "cevap": "64"
+        },
+        {
+          "metin": "Hacim ölçüsü olan 1 santimetreküp ({us:cm|3}), sıvı ölçüsü olan 1 ___ (mL) değerine eşittir.",
+          "cevap": "mililitre"
+        }
+      ],
+      "fazla": [
+        "alanı"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kare prizmanın hacmi 450 {us:cm|3} ve kare tabanının bir ayrıt uzunluğu 5 cm olduğuna göre soru işaretiyle gösterilen yükseklik (h) kaç santimetredir?",
+      "secenekler": [
+        "15 santimetre yüksekliğindedir",
+        "18 santimetre yüksekliğindedir",
+        "25 santimetre yüksekliğindedir",
+        "90 santimetre yüksekliğindedir"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki meyve suyu kutusunun ayrıt uzunlukları 10 cm, 8 cm ve 25 cm’dir. Bu kutu tamamen doluyken içinde kaç litre (L) meyve suyu bulunur?",
+      "secenekler": [
+        "0,2 litre meyve suyu bulunur",
+        "1,6 litre meyve suyu bulunur",
+        "2 litre meyve suyu bulunur",
+        "20 litre meyve suyu bulunur"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki su tankında başlangıçta 3,2 {us:m|3} su vardır. Bu suyun 700 {us:dm|3}’lük kısmı tarla sulamasında kullanıldığına göre tankta kaç litre (L) su kalmıştır?",
+      "cevap": "3,2 {us:m|3} = 3 200 {us:dm|3} = 3 200 L’dir.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki problem kartında ayrıtları 40 cm, 30 cm ve 50 cm olan bir akvaryumun kaç litre su alacağını bulmak için izlenecek çözüm adımlarını 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "Akvaryumun taban ayrıtlarını çarparak taban alanını 40 · 30 = 1 200 {us:cm|2} olarak bulmak",
+        "Taban alanını yükseklikle çarparak hacmi 1 200 · 50 = 60 000 {us:cm|3} olarak hesaplamak",
+        "Bulunan 60 000 {us:cm|3} değerini 1 000’e bölerek 60 {us:dm|3} birimine dönüştürmek",
+        "1 {us:dm|3} = 1 L eşitliğinden yararlanarak akvaryumun 60 litre su alacağını yazmak"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki büyük kolinin ayrıtları 12 cm, 16 cm ve 20 cm’dir. Bu kolinin içine bir ayrıtı 4 cm olan küp biçimindeki hediye kutularından hiç boşluk kalmadan kaç adet sığar?",
+      "secenekler": [
+        "12 adet küp kutu sığar",
+        "24 adet küp kutu sığar",
+        "48 adet küp kutu sığar",
+        "60 adet küp kutu sığar"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki geometri ve ölçme kavramlarını kutulara yazınız. Numaralı harflerle «alt ve üst tabanı birbirine eş ve paralel olan üç boyutlu geometrik cisim» kavramını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Altı yüzü de birbirine eş karelerden oluşan özel prizma",
+          "cevap": "KÜP",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Prizmalarda komşu iki yüzün kesiştiği doğru parçası (kenar)",
+          "cevap": "AYRIT",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Hacmi ölçmek için prizmanın içine dizilen eş küplerden her biri: ___ küp",
+          "cevap": "BİRİM",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Prizmanın dışını saran dikdörtgensel bölgelerin her biri",
+          "cevap": "YÜZEY",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Üç boyutlu cisimlerin uzayda kapladığı yerin ölçüsü (V)",
+          "cevap": "HACİM",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Hacim bağıntısında yükseklik ile çarpılan alt yüzey: ___ alanı",
+          "cevap": "TABAN",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "PRİZMA"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki K dikdörtgenler prizması ile L küpünün hacimleri birbirine eşittir. K prizmasının ayrıtları 9 cm, 4 cm ve 6 cm olduğuna göre L küpünün bir ayrıtı (a) kaç santimetredir? İşlemle açıklayınız.",
+      "cevap": "K prizmasının hacmi V = 9 · 4 · 6 = 216 {us:cm|3}’tür.",
+      "satir": 2
+    }
+  ],
+  "ders": "matematik"
+}

@@ -1,0 +1,265 @@
+{
+  "sinif": 6,
+  "ders": "matematik",
+  "hafta": 10,
+  "tarih": "23-27 Kasım 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Kesir, Ondalık ve Yüzde Gösterimleriyle Çok Adımlı Gerçek Yaşam Problemleri ve 2. Tema Genel Değerlendirmesi (MAT.6.1.7)",
+  "ciktilar": [
+    "MAT.6.1.7.a-e: Gerçek yaşam problemlerinde kesir, ondalık ve yüzde bileşenlerini belirleyerek uygun temsillerle çok adımlı işlemleri çözebilme",
+    "MAT.6.1.7.f-g: Çözüm yollarını tahmin ve ters işlemle kontrol edebilme, çözüme ulaştırmayan stratejiyi değiştirip kısa yolları karşılaştırabilme",
+    "MAT.6.1.7.ğ-h: Geliştirdiği çözüm stratejilerini finansal okuryazarlık ve sürdürülebilirlik bağlamlarına genelleyebilme; 2. Temayı değerlendirebilme"
+  ],
+  "hatirla": [
+    "Kesir, ondalık ve yüzdeleri bir arada içeren problemlerde en uygun ortak dil seçilir: Paydası 2, 4, 5, 10, 20, 25 olan kesirlerde ondalık/yüzdeye; paydası 3, 6, 7, 9 olan problemlerde ise kesir ve şerit modeline geçilir.",
+    "“Kalanın kesri” problemlerinde şerit diyagramı kullanılır: Bir bütünden önce {kesir:1|5}’i (%20’si), sonra kalanın {kesir:3|4}’ü ayrılırsa; 5 eş parçadan önce 1’i, ardından kalan 4 parçanın 3’ü gider ve geriye 1 parça ({kesir:1|5}) kalır.",
+    "Finansal okuryazarlıkta kampanyalı ürünlerin ekonomikliği «birim fiyat» (Toplam tutar ÷ Miktar) ile karşılaştırılır; bir doğal sayıyı 1’den küçük kesirle çarpmak sonucu küçültürken, 1’den küçük kesre bölmek sonucu büyütür."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Sol sütundaki çok adımlı işlem ifadelerini sağ sütundaki doğru sayısal sonuçlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "300 TL’nin önce %20’si, sonra kalanın yarısı harcanırsa geriye kalan",
+          "120 TL"
+        ],
+        [
+          "%20 indirimli satış fiyatı 240 TL olan ürünün indirimsiz etiket fiyatı",
+          "300 TL"
+        ],
+        [
+          "48 sayısının {kesir:3|4}’ü ile 0,25’inin farkı",
+          "24"
+        ],
+        [
+          "18 litrelik zeytinyağının 0,75 litrelik şişelere tam dolumuyla oluşan şişe sayısı",
+          "24 şişe"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki şerit modeline göre bir okul kütüphanesindeki kitapların önce %20’si, daha sonra {koyu:kalan kitapların} {kesir:2|4}’ü raflara dizilmiştir. Geriye dizilmeyen 140 kitap",
+      "secenekler": [
+        "350 kitap",
+        "400 kitap",
+        "420 kitap",
+        "450 kitap"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört marketin bal kampanyası panosunu inceleyerek tablodaki eksik indirimli satış fiyatı ve 1 kg birim fiyatı hücrelerini",
+      "basliklar": [
+        "Market ve Miktar",
+        "İndirimli Satış Tutarı",
+        "1 kg Birim Fiyatı"
+      ],
+      "satirlar": [
+        [
+          "1. K Marketi (1,5 kg = 360 TL)",
+          "360 TL (İndirimsiz)",
+          {
+            "b": "360 ÷ 1,5 = 240 TL"
+          }
+        ],
+        [
+          "2. L Marketi (2 kg = 500 TL, %10 ind.)",
+          {
+            "b": "450 TL"
+          },
+          {
+            "b": "450 ÷ 2 = 225 TL"
+          }
+        ],
+        [
+          "3. M Marketi (2,5 kg = 550 TL)",
+          "550 TL (İndirimsiz)",
+          {
+            "b": "550 ÷ 2,5 = 220 TL"
+          }
+        ],
+        [
+          "4. N Marketi (4 kg = 1200 TL, %25 ind.)",
+          {
+            "b": "900 TL"
+          },
+          "900 ÷ 4 = 225 TL"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Kesir, ondalık ve yüzde problemlerinde strateji seçimiyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Paydası 3 veya 7 olan bir kesirle ondalık sayının toplandığı problemlerde tüm sayıları kesre çevirmek tam sonuç verir.",
+          "dogru": true
+        },
+        {
+          "metin": "Etiket fiyatı üzerinden önce %10 zam, sonra zamlı fiyat üzerinden %10 indirim yapılan ürün başlangıç fiyatına döner.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir doğal sayıyı 0,25’e ({kesir:1|4}’e) böldüğümüzde elde edilen bölüm başlangıçtaki sayıdan 4 kat daha büyük olur.",
+          "dogru": true
+        },
+        {
+          "metin": "Yüzde otuz beşi (%35’i) harcanan bir paranın kalan kısmını tek adımda bulmak için para 0,35 ile çarpılır.",
+          "dogru": false
+        },
+        {
+          "metin": "Ondalık gösterimlerle çarpma ve bölme işlemlerinde yuvarlama tahmini yapmak virgül hatalarını fark etmeyi sağlar.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun kavram veya sayılarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Kesir, ondalık ve yüzde içeren problemlerde işlem yapmadan önce veriler ___ gösterime çevrilir.",
+          "cevap": "ortak"
+        },
+        {
+          "metin": "Bir sayıyı 1’den küçük pozitif bir kesirle çarptığımızda işlemin sonucu başlangıçtaki sayıdan ___ olur.",
+          "cevap": "küçük"
+        },
+        {
+          "metin": "Yüzde kırkı (%40’ı) gidilen bir yolun kalan kısmını tek adımda bulmak için yol ___ ile çarpılır.",
+          "cevap": "0,60"
+        },
+        {
+          "metin": "Bir problemde kullanılan başarılı çözüm modelini benzer durumlara uyarlamaya ___ denir.",
+          "cevap": "genelleme"
+        }
+      ],
+      "fazla": [
+        "büyük"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki sürdürülebilir su tasarrufu kartına göre bozuk bir musluk günde 13,5 litre su akıtmaktadır. Tamir edilen bu musluk sayesinde 20 günde kurtarılan suyun {kesir:2|3}’si ile bahçedeki sebzeler",
+      "secenekler": [
+        "150 litre",
+        "180 litre",
+        "210 litre",
+        "270 litre"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki bisiklet parkuru panosuna göre 18 km’lik parkurun 1. etabında yolun {kesir:1|3}’ini geçen Mert, kalan yolu dakikada 0,4 km sabit hızla tamamlamıştır.",
+      "secenekler": [
+        "20 dakikada",
+        "25 dakikada",
+        "30 dakikada",
+        "35 dakikada"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki işlem kartında verilen «(45 − 7,5) ÷ 1,25» işlemine uygun gerçek yaşam bağlamlı bir problem kurunuz ve işlemin sonucunu yazınız.",
+      "cevap": "Problem: 45 m kumaşın 7,5 metresini ayıran bir terzi, kalan kumaşı 1,25 metrelik eş parçalara bölerse kaç.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görselde verilen dört matematiksel işlemin sonuçlarını en küçük sonuçtan en büyük sonuca doğru 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "K İşlemi: 60 × 0,25 (60 sayısının çeyreği = 15)",
+        "L İşlemi: 60 × {kesir:2|5} (60 sayısının %40’ı = 24)",
+        "M İşlemi: 60 ÷ 1,5 (600 ÷ 15 = 40)",
+        "N İşlemi: 60 ÷ 0,5 (60 sayısının yarım içindeki adedi = 120)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki «Ekolojik Bahçe Ekim Planı»na göre 800 metrekarelik bahçenin {kesir:3|8}’ine domates, 0,25’ine biber, kalan kısmına ise çilek ekilmiştir. Bu bahçeyle ilgili",
+      "secenekler": [
+        "Domates ekilen alan bahçenin %37,5’ine karşılık gelir ve 300 metrekaredir.",
+        "Biber ekilen alan bahçenin çeyreğine ({kesir:1|4}’üne) karşılık gelir ve 200 metrekaredir.",
+        "Çilek ekilen alan 800 − (300 + 200) = 300 metrekare olup domates alanına eşittir.",
+        "Biber ve çilek ekilen alanların toplamı tüm bahçenin yarısından (%50’sinden) azdır."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “bir ürünün toplam tutarının miktarına bölünmesiyle bulunan 1 kg veya 1 L",
+      "satirlar": [
+        {
+          "ipucu": "Kesir ve yüzde problemlerinde eş parçaların birleşerek oluşturduğu tamam",
+          "cevap": "BÜTÜN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Pay, payda ve kesir çizgisiyle gösterilen rasyonel ifade",
+          "cevap": "KESİR",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "0,25 ondalık gösterimine ve %25’e karşılık gelen dörtte birlik parça",
+          "cevap": "ÇEYREK",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Sayıları yuvarlayarak işlem sonucunu yaklaşık olarak öngörme stratejisi",
+          "cevap": "TAHMİN",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "0,5 ondalık gösterimine ve %50’ye karşılık gelen ikide birlik parça",
+          "cevap": "YARIM",
+          "anahtar": 4
+        }
+      ],
+      "sonuc": "BİRİM"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki «{kesir:1|3} + 0,25» işleminde neden ondalık gösterime dönüştürme stratejisinin tam sonuç vermediğini ve hangi stratejiyle çözülmesi",
+      "cevap": "{kesir:1|3} kesri devirli ondalık sayıya (0,333. ) dönüştüğü için.",
+      "satir": 2
+    }
+  ]
+}
