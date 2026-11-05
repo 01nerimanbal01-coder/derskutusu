@@ -21,6 +21,32 @@ def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
     return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
 
 
+def kok_ciz(cx, y, on_metin, ic_metin, son_metin='', renk=LAC, boy=8.2, ince=False):
+    ic_str = str(ic_metin)
+    on_str = str(on_metin) if on_metin else ''
+    son_str = str(son_metin) if son_metin else ''
+    w_ic = max(12, len(ic_str) * (boy * 0.62) + 4)
+    w_on = len(on_str) * (boy * 0.56) + (2 if on_str else 0)
+    w_son = len(son_str) * (boy * 0.56) + (2 if son_str else 0)
+    toplam_w = w_on + 9 + w_ic + w_son
+    sol = cx - toplam_w / 2
+    out = ''
+    if on_str:
+        out += yazi(sol + w_on - 1, y, on_str, boy, renk, 'end', ince=ince)
+    rx = sol + w_on
+    ust_y = y - boy * 0.95
+    orta_y = y - boy * 0.38
+    alt_y = y + 1.2
+    out += (f'<path d="M{rx:.1f} {orta_y:.1f} L{rx + 2.2:.1f} {orta_y - 1.2:.1f} '
+            f'L{rx + 5.0:.1f} {alt_y:.1f} L{rx + 8.5:.1f} {ust_y:.1f} '
+            f'H{rx + 9 + w_ic:.1f}" fill="none" stroke="{renk}" stroke-width="0.75" '
+            f'stroke-linecap="round" stroke-linejoin="round"/>')
+    out += yazi(rx + 9 + w_ic / 2, y, ic_str, boy, renk, 'middle', ince=ince)
+    if son_str:
+        out += yazi(rx + 9 + w_ic + 1, y, son_str, boy, renk, 'start', ince=ince)
+    return out
+
+
 def atis_turleri_kartlari():
     kartlar = [
         ('1. Serbest Düşme', 'İlk Hızsız (V0=0)', YES, YES_A),
@@ -128,7 +154,7 @@ def yatay_menzil_grafik_kartlari():
     ic = kutu(6, 6, 348, 112, TUR_A, TUR)
     ic += yazi(180, 22, 'YATAY ATIŞ KİNEMATİK ADIMLARI', 10.0, TUR)
     kartlar = [
-        ('1. Düşme Süresi', 't = √(2h/g)', 16),
+        ('1. Düşme Süresi', None, 16),
         ('2. Yatay Menzil', 'X = Vx . t', 102),
         ('3. Çarpma Hızı', 'V² = Vx² + Vy²', 188),
         ('4. İvme Sabiti', 'a = g = 10 m/s²', 274),
@@ -137,7 +163,10 @@ def yatay_menzil_grafik_kartlari():
         ic += kutu(x, 36, 70, 70, '#ffffff', TUR)
         ic += yazi(x + 35, 54, b, 8.2, TUR)
         ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{TUR}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, a, 8.0, LAC, ince=True)
+        if a is None:
+            ic += kok_ciz(x + 35, 82, 't = ', '2h/g', '', LAC, 8.0, ince=True)
+        else:
+            ic += yazi(x + 35, 82, a, 8.0, LAC, ince=True)
     return svg(360, 125, ic, 'Yatay atış kinematik adımları kartı.', 34)
 
 

@@ -27,6 +27,32 @@ def yazi(x, y, metin, boy=10.2, renk=LAC, hiza="middle", ince=False):
 def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.5):
     return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
 
+
+def kok_ciz(cx, y, on_metin, ic_metin, son_metin='', renk=LAC, boy=9.2, ince=False):
+    ic_str = str(ic_metin)
+    on_str = str(on_metin) if on_metin else ''
+    son_str = str(son_metin) if son_metin else ''
+    w_ic = max(12, len(ic_str) * (boy * 0.62) + 4)
+    w_on = len(on_str) * (boy * 0.56) + (2 if on_str else 0)
+    w_son = len(son_str) * (boy * 0.56) + (2 if son_str else 0)
+    toplam_w = w_on + 10 + w_ic + w_son
+    sol = cx - toplam_w / 2
+    out = ''
+    if on_str:
+        out += yazi(sol + w_on - 1, y, on_str, boy, renk, 'end', ince=ince)
+    rx = sol + w_on
+    ust_y = y - boy * 0.95
+    orta_y = y - boy * 0.38
+    alt_y = y + 1.5
+    out += (f'<path d="M{rx:.1f} {orta_y:.1f} L{rx + 2.5:.1f} {orta_y - 1.5:.1f} '
+            f'L{rx + 5.5:.1f} {alt_y:.1f} L{rx + 9.5:.1f} {ust_y:.1f} '
+            f'H{rx + 10 + w_ic:.1f}" fill="none" stroke="{renk}" stroke-width="1.2" '
+            f'stroke-linecap="round" stroke-linejoin="round"/>')
+    out += yazi(rx + 10 + w_ic / 2, y, ic_str, boy, renk, 'middle', ince=ince)
+    if son_str:
+        out += yazi(rx + 10 + w_ic + 1, y, son_str, boy, renk, 'start', ince=ince)
+    return out
+
 def dort_donme_kavrami_karti():
     kartlar = [
         ('1. Eylemsizlik', 'Dönme Direnci · I = k·m·r²', MAVI, MAVI_A),
@@ -102,7 +128,7 @@ def dort_nokta_hiz_karti():
         ('1. Tepe Noktası', 'v_yer = 2v', KIR, KIR_A),
         ('2. Merkez (O)', 'v_yer = v', MAVI, MAVI_A),
         ('3. Taban Noktası', 'v_yer = 0 (Sıfır)', YES, YES_A),
-        ('4. Yan Kenar', 'v_yer = √2 v', MOR, MOR_A),
+        ('4. Yan Kenar', None, MOR, MOR_A),
     ]
     ic = ''
     for i, (ad, alt, r, z) in enumerate(kartlar):
@@ -110,7 +136,10 @@ def dort_nokta_hiz_karti():
         ic += kutu(x, 6, 82, 96, z, r)
         ic += yazi(x + 41, 28, ad, 9.8, r)
         ic += f'<line x1="{x + 8}" y1="38" x2="{x + 74}" y2="38" stroke="{r}" stroke-width="1"/>'
-        ic += yazi(x + 41, 70, alt, 9.2, LAC, ince=True)
+        if alt is None:
+            ic += kok_ciz(x + 41, 70, 'v_yer = ', '2', ' v', LAC, 9.2, ince=True)
+        else:
+            ic += yazi(x + 41, 70, alt, 9.2, LAC, ince=True)
     return svg(360, 110, ic, "Dört nokta anlık hız kartı.", 34)
 
 def sifre_donme_panosu():
