@@ -1,0 +1,249 @@
+{
+  "sinif": 12,
+  "ders": "kimya",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "yayin_tarihi": "2026-09-21",
+  "konu": "Redoks Tepkimelerinin Denkleştirilmesi, Elektrik Enerjisi, Elektrotlar ve Elektrokimyasal Hücreler",
+  "ciktilar": [
+    "12.1.1.1. Redoks tepkimelerini tanır ve denkleştirir.",
+    "12.1.2.1. Elektrik enerjisi ve kimyasal dönüşümler arasındaki ilişkiyi açıklar.",
+    "12.1.2.2. Standart elektrot potansiyellerini ve elektrokimyasal hücreleri analiz eder."
+  ],
+  "hatirla": [
+    "Redoks denkleştirmede temel ilke, verilen toplam elektron sayısının alınan toplam elektron sayısına eşit olmasıdır.",
+    "Galvanik hücrede (pil) kendiliğinden gerçekleşen redoks tepkimesiyle kimyasal enerji elektrik enerjisine dönüşür.",
+    "Anotta yükseltgenme, katotta indirgenme gerçekleşir (ANOT-YÜKSELTGENME / KATOT-İNDİRGENME); tuz köprüsü yük denkliğini korur."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki elektrokimyasal hücre ögelerini sağ sütundaki işlevleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Anot elektrot",
+          "Yükseltgenmenin gerçekleştiği ve elektronların dış devreye verildiği kutup"
+        ],
+        [
+          "Katot elektrot",
+          "İndirgenmenin gerçekleştiği ve çözeltideki iyonların elektron aldığı kutup"
+        ],
+        [
+          "Tuz köprüsü",
+          "İki yarı hücre arasındaki yük denkliğini anyon ve katyon göçüyle sağlayan boru"
+        ],
+        [
+          "Voltmetre",
+          "İki elektrot arasındaki standart potansiyel farkını ölçen cihaz"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki standart Daniell pili modelinde anotta Zn çubuğu, katotta Cu çubuğu bulunmaktadır. Pil çalışırken tuz köprüsündeki iyonların hareketi ve elektrot kütlelerindeki değişim aşağıdakilerden hangisinde {koyu:doğru} verilmiştir?",
+      "secenekler": [
+        "Anyonlar anoda, katyonlar katoda göçer; Zn aşınır, Cu kütlesi artar.",
+        "Katyonlar anoda göçer; her iki elektrotun da kütlesi zamanla artar.",
+        "Anyonlar katoda göçer; Zn elektrotun kütlesi artar, Cu aşınır.",
+        "Tuz köprüsünde hiçbir iyon hareketi gerçekleşmez; akım anında kesilir."
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki elektrokimyasal hücrede elektronların dış devredeki akış yönünü yazınız.",
+      "cevap": "Elektronlar dış devrede iletken tel üzerinden anottan katoda doğru akar.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki galvanik hücre ilkelerine göre yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Galvanik hücrelerde anotta daima yükseltgenme, katotta daima indirgenme olur.",
+          "dogru": true
+        },
+        {
+          "metin": "Tuz köprüsü devreden çıkarılırsa pil çalışmaya aynı gerilimle devam eder.",
+          "dogru": false
+        },
+        {
+          "metin": "Standart elektrot potansiyeli hidrojen elektrot referans alınarak ({us:E|0} = 0,00 V) ölçülür.",
+          "dogru": true
+        },
+        {
+          "metin": "Redoks denkleştirmede atom sayısı korunurken toplam elektriksel yük değişebilir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Elektrokimyasal pilin bileşenlerini ve çalışma mekanizmasını inceleyerek tabloyu tamamlayınız.",
+      "basliklar": [
+        "Hücre Bileşeni",
+        "Temel Görevi",
+        "Gerçekleşen Süreç"
+      ],
+      "satirlar": [
+        [
+          "Anot Yarı Hücresi",
+          "Elektron üretimi ve dış devreye verme",
+          "Yükseltgenme yarı tepkimesi"
+        ],
+        [
+          "Katot Yarı Hücresi",
+          {
+            "b": "Elektron alma ve iyon indirgeme"
+          },
+          "İndirgenme yarı tepkimesi"
+        ],
+        [
+          "Tuz Köprüsü",
+          "Yük denkliğini koruma",
+          {
+            "b": "Anyonlar anoda, katyonlar katoda göçer"
+          }
+        ],
+        [
+          "Dış Devre (Tel)",
+          {
+            "b": "Elektron iletimi"
+          },
+          {
+            "b": "Anottan katoda elektron akışı"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki redoks tepkimesi yarı tepkime denkleştirme adımlarını 1'den 4'e kadar sıralayınız.",
+      "ogeler": [
+        "Yükseltgenme ve indirgenme yarı tepkimelerini ayrı ayrı yazma",
+        "Oksijen ve hidrojen dışındaki ana atomları uygun katsayılarla denkleştirme",
+        "Yarı tepkimelerde alınan ve verilen elektronları yük denkliğiyle eşitleme",
+        "Yarı tepkimeleri toplayarak net redoks denklemini ve su denkliğini elde etme"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki potansiyel tablosuna göre {us:Zn|2+} / Zn için {us:E|0} = −0,76 V ve {us:Cu|2+} / Cu için {us:E|0} = +0,34 V olduğuna göre standart pil potansiyeli ({us:E|pil}) kaç Volttur?",
+      "secenekler": [
+        "+1,10 V",
+        "+0,42 V",
+        "−1,10 V",
+        "+0,76 V"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Pil çalışırken katot kabındaki pozitif yük azalmasını dengelemek için tuz köprüsünden katoda hangi iyonlar göç eder?",
+      "cevap": "Pozitif yük azalmasını dengelemek için tuz köprüsünden katyonlar göç eder.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki elektrokimya kavramlarını tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Galvanik hücre",
+          "Kendiliğinden gerçekleşen kimyasal tepkimeyle elektrik üreten pil"
+        ],
+        [
+          "Elektrolitik hücre",
+          "Dışarıdan elektrik verilerek kendiliğinden olmayan tepkimeyi yürüten sistem"
+        ],
+        [
+          "Standart hidrojen elektrot",
+          "Potansiyeli 0,00 V kabul edilen uluslararası referans yarı hücresi"
+        ],
+        [
+          "İstemli tepkime",
+          "Standart hücre potansiyeli sıfırdan büyük ({us:E|0} > 0) olan süreç"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Elektrokimyasal potansiyel ve hücre özellikleriyle ilgili yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Standart pil potansiyeli pozitif olan kimyasal sistemler istemli olarak çalışır.",
+          "dogru": true
+        },
+        {
+          "metin": "Anot elektrotunun kütlesi çözeltiye iyon geçişi nedeniyle zamanla azalır.",
+          "dogru": true
+        },
+        {
+          "metin": "Katot yarı hücresinde çözeltideki metal katyonları yükseltgenerek kütle kaybeder.",
+          "dogru": false
+        },
+        {
+          "metin": "Tuz köprüsünde anyonlar katot kabına doğru hareket eder.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki elektrokimya ipuçlarından yararlanarak bulmacayı çözünüz. Turuncu anahtar kutulardaki harfleri birleştirerek indirgenme kutbunu bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Tuz köprüsünden katot kabına göç eden pozitif yüklü iyon",
+          "cevap": "KATYON",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yükseltgenmenin gerçekleştiği elektrokimyasal hücre elektrotu",
+          "cevap": "ANOT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İki yarı hücre arasında iyonik iletkenliği sağlayan köprü maddesi",
+          "cevap": "TUZ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Elektron alışverişiyle oluşan ikili oksijenli kimyasal bileşik",
+          "cevap": "OKSİT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Maddelerin kimyasal değişime uğradığı elektrokimyasal süreç",
+          "cevap": "TEPKİME",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "KATOT"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Bir elektrokimyasal hücrede tuz köprüsünün işlevini ve bulunmadığı takdirde pilin durumunu açıklayınız.",
+      "cevap": "Yük denkliğini sağlar; tuz köprüsü olmazsa kutuplanma olur ve akım durur.",
+      "satir": 2
+    }
+  ]
+}

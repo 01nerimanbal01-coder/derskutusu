@@ -1,0 +1,259 @@
+{
+  "baslik": "Kareköklü İfadelerde Toplama-Çıkarma ve Doğal Sayı Yapan Çarpanlar",
+  "alt_baslik": "1. Ünite: Sayılar ve İşlemler — Kök İçlerini Eşitleme, Çevre Problemleri ve k{kok:b} Çarpanları (M.8.1.3.5 & M.8.1.3.6)",
+  "sinif": 8,
+  "hafta": 9,
+  "renk": "#2451d6",
+  "tarih": "9-13 Kasım 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Kareköklü İfadelerde Toplama ve Çıkarma İşlemleri ile Kareköklü Bir İfadeyi Doğal Sayı Yapan Çarpanlar (M.8.1.3.5 & M.8.1.3.6)",
+  "ciktilar": [
+    "Kök içleri aynı olan veya a{kok:b} biçimine dönüştürülerek eşitlenen kareköklü ifadelerde toplama ve çıkarma işlemlerini yapar.",
+    "Çokgenlerin çevre uzunluğu, tel bükme ve parça kesme problemlerini kareköklü ifadelerde toplama ve çıkarma kurallarıyla çözer.",
+    "Kareköklü bir ifade ile çarpıldığında sonucu bir doğal sayı yapan çarpanlara (k{kok:b}) farklı örnekler verir."
+  ],
+  "hatirla": [
+    "Kareköklü ifadelerde toplama ve çıkarma yapılabilmesi için terimlerin karekök içindeki sayılarının birebir eşit olması şarttır; ortak kök hiç değiştirilmeden yazılır, yalnız katsayılar toplanır veya çıkarılır: a{kok:x} + b{kok:x} - c{kok:x} = (a + b - c){kok:x}.",
+    "Kök içleri farklı olan ifadeler doğrudan toplanamaz ({kok:a} + {kok:b} ≠ {kok:a + b}); önce her terim tam kare çarpanları kök dışına çıkarılarak a{kok:b} biçimine getirilir. Kök içleri eşitlenemiyorsa işlem olduğu gibi bırakılır.",
+    "Alanı A olan karesel bölgenin bir kenar uzunluğu {kok:A}, çevre uzunluğu ise 4{kok:A}’dır; dikdörtgenin çevresi kısa ve uzun kenarların toplamının 2 katıdır.",
+    "En sade hali a{kok:b} olan kareköklü bir ifadeyi doğal sayı yapan en küçük pozitif çarpan {kok:b} sayısıdır; ayrıca {kok:b}’nin tüm pozitif tam sayı katları (2{kok:b}, 3{kok:b}, 4{kok:b}, ... yani k{kok:b}) bu ifadeyi doğal sayı yapar."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki kareköklü toplama-çıkarma işlemlerini ve ifadeleri sağ sütundaki karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{kok:80} + {kok:20} - {kok:5} işleminin sonucu",
+          "Beş kök beş (5{kok:5})"
+        ],
+        [
+          "{kok:108} - {kok:27} işleminin sonucu",
+          "Üç kök üç (3{kok:3})"
+        ],
+        [
+          "{kok:63} sayısını doğal sayı yapan çarpan",
+          "Kök yedi ({kok:7}) veya katları"
+        ],
+        [
+          "{kok:96} sayısını doğal sayı yapan çarpan",
+          "Kök altı ({kok:6}) veya katları"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Kısa kenar uzunluğu {kok:28} cm ve uzun kenar uzunluğu {kok:175} cm olan dikdörtgen biçimindeki resim çerçevesinin çevre uzunluğu kaç santimetredir?",
+      "secenekler": [
+        "7{kok:7}",
+        "14{kok:7}",
+        "10{kok:7}",
+        "20{kok:7}"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Çarpan eşleştirme kartlarındaki kareköklü ifadelerin en sade a{kok:b} yazılışını ve ifadeyi doğal sayı yapan iki farklı çarpanını ({kok:b} ve 2{kok:b}) tabloya yazınız. İlk satır örnektir.",
+      "basliklar": [
+        "Verilen İfade",
+        "a{kok:b} Biçimi",
+        "Doğal Sayı Yapan İki Çarpan"
+      ],
+      "satirlar": [
+        [
+          "1. {kok:50}",
+          "5{kok:2}",
+          "{kok:2} ve 2{kok:2} ({kok:8})"
+        ],
+        [
+          "2. {kok:75}",
+          {
+            "b": "5{kok:3}"
+          },
+          {
+            "b": "{kok:3} ve 2{kok:3} ({kok:12})"
+          }
+        ],
+        [
+          "3. {kok:40}",
+          {
+            "b": "2{kok:10}"
+          },
+          {
+            "b": "{kok:10} ve 2{kok:10} ({kok:40})"
+          }
+        ],
+        [
+          "4. {kok:99}",
+          {
+            "b": "3{kok:11}"
+          },
+          {
+            "b": "{kok:11} ve 2{kok:11} ({kok:44})"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Kareköklü ifadelerde toplama, çıkarma ve doğal sayı yapan çarpanlarla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Kök içleri eşit olan 9{kok:6} - 4{kok:6} + {kok:6} işleminin sonucu 6{kok:6} ifadesine eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Ayrı karekökler içinde verilen {kok:36} + {kok:64} işleminin sonucu {kok:100} yani 10 doğal sayısıdır.",
+          "dogru": false
+        },
+        {
+          "metin": "{kok:24} sayısı ile {kok:54} sayısı birbiriyle çarpıldığında her ikisi de kök içinde 6 barındırdığı için sonuç doğal sayı olur.",
+          "dogru": true
+        },
+        {
+          "metin": "Yedi kök iki (7{kok:2}) ifadesinden kök iki ({kok:2}) çıkarıldığında kökler sadeleşir ve sonuç 7 doğal sayısı olur.",
+          "dogru": false
+        },
+        {
+          "metin": "Alanı 80 cm² olan karesel bir bölgenin bir kenar uzunluğu 4{kok:5} cm, çevre uzunluğu ise 16{kok:5} cm’dir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerde boş bırakılan yerleri kutudaki uygun sayı veya ifadelerle tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Kareköklü ifadelerde {kok:32} + {kok:18} toplama işleminin en sade sonucu ___ ifadesidir.",
+          "cevap": "7{kok:2}"
+        },
+        {
+          "metin": "Bir kenar uzunluğu 3{kok:5} cm olan eşkenar üçgenin çevre uzunluğu ___ santimetredir.",
+          "cevap": "9{kok:5}"
+        },
+        {
+          "metin": "Karekök içindeki {kok:48} ifadesi {kok:3} ile çarpıldığında sonuç ___ doğal sayısına eşit olur.",
+          "cevap": "12"
+        },
+        {
+          "metin": "Aynı kök sembolü içinde verilen {kok:36 + 64} işleminin sonucu ___ doğal sayısıdır.",
+          "cevap": "10"
+        }
+      ],
+      "fazla": [
+        "14"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Çarpan çarkının merkezinde yer alan {kok:72} sayısı, çarkın dilimlerindeki kareköklü ifadelerden hangisi ile çarpılırsa sonuç bir doğal sayı {koyu:olur?}",
+      "secenekler": [
+        "{kok:12}",
+        "{kok:20}",
+        "{kok:50}",
+        "{kok:48}"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Toplam uzunluğu {kok:300} metre olan bir elektrik kablosundan önce {kok:75} metre, ardından {kok:12} metre uzunluğunda iki parça kesilip kullanılmıştır. Geriye kaç metre kablo kalmıştır?",
+      "secenekler": [
+        "3{kok:3}",
+        "4{kok:3}",
+        "5{kok:3}",
+        "6{kok:3}"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Kenarları çakışık olarak yan yana dizilen üç karesel kartonun alanları sırasıyla 45 cm², 20 cm² ve 5 cm² olarak verilmiştir. Tabandaki K ile L noktaları arasındaki toplam uzunluğu işlem yaparak bulunuz.",
+      "cevap": "Kenarlar 3{kok:5}, 2{kok:5} ve {kok:5} cm’dir; |KL| = 3{kok:5} + 2{kok:5} + {kok:5} = 6{kok:5} cm olur.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Kök içleri farklı verilen «{kok:147} - {kok:48} + {kok:27}» işleminin çözüm basamaklarını işlem önceliğine göre 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "Her bir kareköklü terimin içindeki sayı, en büyük tam kare çarpanıyla çarpım biçiminde (49 · 3, 16 · 3 ve 9 · 3) ayrılır.",
+        "Tam kare çarpanlar karekök dışına katsayı olarak çıkarılarak ifadeler 7{kok:3}, 4{kok:3} ve 3{kok:3} biçimine dönüştürülür.",
+        "Kök içleri eşitlenen terimlerin katsayıları ortak kök önünde (7 - 4 + 3){kok:3} şeklinde bir araya getirilir.",
+        "Katsayılar arasındaki işlem tamamlanarak sonuç en sade biçimde 6{kok:3} olarak yazılır."
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Dört sayı kartında K = {kok:20}, L = {kok:27}, M = {kok:45} ve N = {kok:75} ifadeleri verilmiştir. Bu kartlarla yapılan aşağıdaki işlemlerden hangisinin sonucu bir doğal sayı {koyu:değildir?}",
+      "secenekler": [
+        "K · M çarpma işleminin sonucu",
+        "L · N çarpma işleminin sonucu",
+        "{kesir:N|L} bölme işleminin sonucu",
+        "K + M toplama işleminin sonucu"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki matematik kavramlarını kutulara yazınız. Numaralı harflerle bir çokgenin bütün kenar uzunluklarının toplamını ifade eden kavramı bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "a{kok:b} ifadesini doğal sayı yapmak için çarptığımız k{kok:b} ifadesinin adı",
+          "cevap": "ÇARPAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Üç kenarlı kapalı geometrik şekil",
+          "cevap": "ÜÇGEN",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Araştırma sonucunda toplanan sayısal bilgilerin her biri",
+          "cevap": "VERİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Pay ve payda biçiminde kesir olarak yazılabilen sayı kümesi",
+          "cevap": "RASYONEL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sol ve sağ tarafın aynı değerde olduğunu gösteren matematiksel bağıntı",
+          "cevap": "EŞİTLİK",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "ÇEVRE"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Kenar uzunlukları {kok:12} cm ve {kok:48} cm olan dikdörtgenin çevre uzunluğunu hesaplayınız; ardından bu çevre uzunluğunu doğal sayı yapan en küçük pozitif kareköklü çarpanı ve çarpım sonucunu yazınız.",
+      "cevap": "Çevre = 2·(2{kok:3}+4{kok:3}) = 12{kok:3} cm’dir. En küçük çarpan {kok:3} olup 12{kok:3}·{kok:3} = 36’dır.",
+      "satir": 2
+    }
+  ],
+  "ders": "matematik"
+}

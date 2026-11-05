@@ -1,0 +1,253 @@
+{
+  "sinif": 12,
+  "ders": "fizik",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "yayin_tarihi": "2026-09-21",
+  "konu": "Düzgün Çembersel Hareket Yapan Cisimlerin Hareket Analizi ve Araçların Emniyetli Dönüş Şartları",
+  "ciktilar": [
+    "12.1.1.2. Düzgün çembersel harekette merkezcil kuvvetin bağlı olduğu değişkenleri analiz eder.",
+    "12.1.1.3. Yatay, düşey ve eğimli zeminlerde düzgün çembersel hareket yapan cisimlerin serbest cisim diyagramlarını çizerek hareketini analiz eder."
+  ],
+  "hatirla": [
+    "Yatay virajda aracın güvenle dönebilmesi için tekerlekler arasındaki sürtünme kuvveti merkezcil kuvveti karşılamalıdır: {us:v|max} = {kok:k · g · r}.",
+    "Eğimli virajda sürtünmesiz emniyetli dönüş şartı tan α = {kesir:v²|g · r} bağıntısıyla belirlenir; araç kütlesinden bağımsızdır.",
+    "Düşey düzlemde çembersel harekette ip gerilmesi en alt noktada maksimum ({us:T|alt} = {us:F|m} + mg), en üst noktada minimumdur ({us:T|üst} = {us:F|m} − mg)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki viraj modellerini sağ sütundaki emniyetli dönüş şartlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Yatay viraj emniyeti",
+          "Sürtünme kuvvetinin merkezcil kuvvete eşit ya da büyük olması şartı"
+        ],
+        [
+          "Eğimli viraj emniyeti",
+          "Yolun eğim açısı ve yer çekimiyle sağlanan sürtünmesiz dönüş dengesi"
+        ],
+        [
+          "Düşeyde en alt nokta",
+          "İp gerilmesinin merkezcil kuvvet ile ağırlığın toplamına eşit olduğu yer"
+        ],
+        [
+          "Düşeyde en üst nokta",
+          "İp gerilmesinin merkezcil kuvvetten ağırlığın çıkarılmasıyla bulunduğu yer"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sürtünme katsayısı k = 0,4 olan 100 m yarıçaplı yatay viraja giren bir aracın güvenle dönebileceği maksimum sürat (g = 10 m/{us:s|2}) kaç m/s'dir?",
+      "secenekler": [
+        "20 m/s",
+        "10 m/s",
+        "30 m/s",
+        "40 m/s"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki eğimli viraj modelinde güvenli dönüş hızının aracın kütlesine bağlı olup olmadığını yazınız.",
+      "cevap": "tan α = {kesir:v²|g·r} bağıntısında sadeleştiği için kütleye bağlı değildir.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki viraj ve ip gerilmesi analizine göre yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Yatay virajda güvenli dönüş için maksimum hız aracın kütlesinden bağımsızdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Düşey düzlemde dönerken ip gerilmesinin en büyük olduğu yer çemberin en üst noktasıdır.",
+          "dogru": false
+        },
+        {
+          "metin": "Eğimli virajlarda yolun dış kenarı iç kenarına göre daha yüksek inşa edilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Viraj yarıçapı artırıldığında aracın güvenle dönebileceği maksimum hız azalır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Düzgün çembersel hareket yapan cisimlerin konumlarına göre kuvvet bağıntılarını inceleyerek tabloyu tamamlayınız.",
+      "basliklar": [
+        "Çembersel Hareket Konumu",
+        "İp Gerilmesi Bağıntısı",
+        "Minimum / Maksimum Durum"
+      ],
+      "satirlar": [
+        [
+          "En Alt Nokta",
+          "{us:T|alt} = {us:F|merkezcil} + mg",
+          "Maksimum ip gerilmesi"
+        ],
+        [
+          "En Üst Nokta",
+          {
+            "b": "{us:T|üst} = {us:F|merkezcil} − mg"
+          },
+          "Minimum ip gerilmesi"
+        ],
+        [
+          "Yatay Hizadaki Nokta",
+          "{us:T|yatay} = {us:F|merkezcil}",
+          {
+            "b": "Ağırlık ipe dik olduğundan katkı yapmaz"
+          }
+        ],
+        [
+          "Eğimli Viraj (Sürtünmesiz)",
+          {
+            "b": "tan α = {kesir:v²|g·r}"
+          },
+          {
+            "b": "Kütleden bağımsız emniyetli dönüş"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki düşey düzlemde döndürülen cismin ip gerilmelerini en büyükten en küçüğe doğru 1'den 4'e kadar sıralayınız.",
+      "ogeler": [
+        "Yörüngenin en alt noktasından geçerken oluşan ip gerilmesi",
+        "Yatay doğrultudan (merkez seviyesinden) geçerken oluşan ip gerilmesi",
+        "Düşeyle açı yapan üst ara konumdan geçerken oluşan ip gerilmesi",
+        "Yörüngenin en üst noktasından geçerken oluşan ip gerilmesi"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki düşey dairesel rayda m kütleli cisim en üst noktadan düşmeden ancak geçebilmektedir. Bu anda rayın cisme uyguladığı tepki kuvveti (N) kaç Newton'dur?",
+      "secenekler": [
+        "0 N",
+        "1 mg N",
+        "2 mg N",
+        "3 mg N"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Yatay bir virajda yolun sürtünme katsayısı 4 katına çıkarılırsa maksimum emniyetli sürat kaç katına çıkar?",
+      "cevap": "Hız karekök ile orantılı olduğundan maksimum sürat 2 katına çıkar.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki dairesel hareket düzeneklerini temel fiziksel işleyişleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Konik sarkaç",
+          "Yatay düzlemde çembersel hareket yapan asılı ip sistemi"
+        ],
+        [
+          "Döner silindir",
+          "Duvarındaki sürtünmeyle cismi düşürmeden döndüren düzenek"
+        ],
+        [
+          "Lunapark treni",
+          "Düşey çembersel rayda takla atan eğlence aracı"
+        ],
+        [
+          "Eğimli pist",
+          "Sürtünmesiz emniyetli dönüş sağlayan kavisli yarış yolu"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Dairesel hareket dinamikleriyle ilgili yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Konik sarkaçta ip gerilmesinin düşey bileşeni cismin ağırlığını dengeler.",
+          "dogru": true
+        },
+        {
+          "metin": "Düşey düzlemde ip gerilmesi daima sabittir ve yer çekimi ivmesinden etkilenmez.",
+          "dogru": false
+        },
+        {
+          "metin": "Yağışlı havalarda yatay virajda sürtünme azaldığı için emniyetli hız düşer.",
+          "dogru": true
+        },
+        {
+          "metin": "Dönen silindirde cismin düşmemesi için sürtünme katsayısının minimum değeri kütleye bağlıdır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki viraj ve dinamik ipuçlarından yararlanarak bulmacayı çözünüz. Turuncu anahtar kutulardaki harfleri birleştirerek gizli mekanik terimini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Tekerlek ile yol arasında kaymayı önleyen teğetsel kuvvet",
+          "cevap": "SÜRTÜNME",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Eğimli virajda yolun yatay zeminle yaptığı köşe derecesi",
+          "cevap": "AÇI",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Açısal ölçü birimi olan temel trigonometrik dairesel birim",
+          "cevap": "RADYAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Çembersel harekette daima merkeze doğru yönelen net etki",
+          "cevap": "KUVVET",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yer çekiminin cisme uyguladığı düşey aşağı yönlü kuvvet",
+          "cevap": "AĞIRLIK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Dairesel yörüngede dönen kütleye sahip nesne parçası",
+          "cevap": "CİSİM",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "SARKAC"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Karayolları mühendislerinin yüksek hızlı otoyol virajlarını neden içe doğru eğimli inşa ettiklerini açıklayınız.",
+      "cevap": "Merkezcil kuvveti ağırlık bileşeniyle sağlayıp savrulmayı önlemek içindir.",
+      "satir": 2
+    }
+  ]
+}

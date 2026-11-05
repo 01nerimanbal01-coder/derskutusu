@@ -1,0 +1,257 @@
+{
+  "sinif": 10,
+  "ders": "fizik",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "konu": "Sabit Hızlı Hareket (Parçalı Hareket Grafikleri, İki Hareketlinin Karşılaşması ve Grafik Dönüşümleri)",
+  "ciktilar": [
+    "FİZ.10.1.1. Yatay doğrultuda sabit hızlı hareket ile ilgili tümevarımsal akıl yürütebilme",
+    "Parçalı sabit hızlı hareketlerde konum-zaman ve hız-zaman grafiklerini yorumlayabilme",
+    "Aynı ya da zıt yönde sabit hızla hareket eden iki cismin karşılaşma süresi ile aralarındaki uzaklığı hesaplayabilme",
+    "Konum-zaman ve hız-zaman grafikleri arasında çift yönlü dönüşüm yapabilme"
+  ],
+  "hatirla": [
+    "Konum-zaman (x-t) grafiğinin eğimi hareketlinin hızını verir; eğim pozitifse ileri, negatifse geriye doğru hareketi gösterir.",
+    "Hız-zaman (v-t) grafiğinin zaman ekseniyle sınırladığı alan yer değiştirmeyi (Δx = v · t) verir; sabit hızda ivme sıfırdır.",
+    "Aralarında d mesafe bulunan iki araç birbirine doğru sabit hızlarla hareket ederse karşılaşma süresi t = d / (v₁ + v₂) olur."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Hareket grafiklerinin temel matematiksel özelliklerini anlamlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "x-t grafiğinde eğim",
+          "Hareketlinin hızını (v) verir"
+        ],
+        [
+          "v-t grafiğinde alan",
+          "Cismin yer değiştirmesini (Δx) verir"
+        ],
+        [
+          "x-t grafiğinde yatay çizgi",
+          "Hareketlinin durduğunu gösterir"
+        ],
+        [
+          "v-t grafiğinde yatay doğru",
+          "Sabit hızlı hareketi temsil eder"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Birbirine doğru sırasıyla 20 m/s ve 30 m/s sabit hızlarla koşan iki sporcu arasındaki başlangıç mesafesi 500 m olduğuna göre bu sporcular kaç saniye sonra karşılaşır?",
+      "secenekler": [
+        "10",
+        "25",
+        "15",
+        "50"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki yatay sürtünmesiz rayda v = 15 m/s değişmeyen süratle kayan deney kızağının 4 saniyelik net konum farkını hesaplayınız.",
+      "cevap": "Δx = v · t = 15 · 4 = 60 metrelik konum değişimi gerçekleşir.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sabit hızlı hareket ve grafiklerle ilgili ifadeleri doğru/yanlış olarak işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Konum-zaman grafiğinin zaman eksenine paralel olduğu aralıklarda hız sıfırdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Zıt yönde giden iki hareketli için karşılaşma süresi hızların farkına bölünerek bulunur.",
+          "dogru": false
+        },
+        {
+          "metin": "v-t diyagramında yatay eksenin alt tarafında sınırlanan bölge eksi yöndeki konum değişimini simgeler.",
+          "dogru": true
+        },
+        {
+          "metin": "Sabit hızlı hareket yapan bir cismin ivmesi zamanla düzenli olarak artış gösterir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Aşağıdaki tabloda parçalı hareket yapan bir aracın değerlerini tamamlayınız.",
+      "basliklar": [
+        "Zaman Aralığı (s)",
+        "Hız (m/s)",
+        "Süre (s)",
+        "Yer Değiştirme (m)"
+      ],
+      "satirlar": [
+        [
+          "0 - 4",
+          "+10",
+          "4",
+          {
+            "b": "+40"
+          }
+        ],
+        [
+          "4 - 6",
+          "0 (Duruyor)",
+          "2",
+          {
+            "b": "0"
+          }
+        ],
+        [
+          "6 - 10",
+          "-5",
+          "4",
+          {
+            "b": "-20"
+          }
+        ],
+        [
+          "Toplam (0 - 10)",
+          "Değişken",
+          "10",
+          {
+            "b": "+20"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Konum-zaman (x-t) grafiğinden hız-zaman (v-t) grafiği çizme adımlarını sıraya koyunuz.",
+      "ogeler": [
+        "Konum-zaman grafiğindeki farklı eğimli zaman aralıklarını tespit etme",
+        "Her zaman aralığı için v = Δx / Δt formülüyle eğimi (hızı) hesaplama",
+        "Hızın pozitif, negatif veya sıfır olma durumuna göre işaretini belirleme",
+        "Hesaplanan sabit hız değerlerini hız-zaman ekseninde yatay doğrularla çizme"
+      ],
+      "dogru": null
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Aynı yönde giden iki araçtan arkadakinin hızı 25 m/s, öndekinin hızı 15 m/s'dir. Aralarındaki mesafe 100 m olduğuna göre arkadaki araç öndekine kaç saniyede yetişir?",
+      "secenekler": [
+        "20",
+        "10",
+        "5",
+        "25"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Hız-zaman grafiğinde t = 0 anında v = -12 m/s olan araç 5 saniyede kaç metre yer değiştirir?",
+      "cevap": "Δx = (-12) · 5 = -60 metredir (eksi yönde 60 m).",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Fiziksel hareket büyüklüklerini SI birimleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Konum (x)",
+          "Metre (m)"
+        ],
+        [
+          "Zaman (t)",
+          "Saniye (s)"
+        ],
+        [
+          "Hız (v)",
+          "Metre / saniye (m/s)"
+        ],
+        [
+          "İvme (a)",
+          "Metre / saniye kare (m/s²)"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Doğrusal hareket kavramlarıyla ilgili hükümleri değerlendiriniz.",
+      "ifadeler": [
+        {
+          "metin": "Alınan yol skaler, yer değiştirme ise yönlü (vektörel) bir büyüklüktür.",
+          "dogru": true
+        },
+        {
+          "metin": "Doğrusal bir yolda sabit süratle ilerleyen cismin hız vektörü sürekli değişir.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir hareketli başladığı konuma geri dönerse net yer değiştirmesi sıfır olur.",
+          "dogru": true
+        },
+        {
+          "metin": "Konum-zaman grafiğindeki doğrunun eğimi arttıkça cismin sürati azalır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarından yararlanarak fizik kavramlarını yazınız. Numaralı kutulardan 'KONUM' kelimesini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Bir cismin referans noktasına olan yönlü uzaklığı",
+          "cevap": "KONUM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Koordinat sisteminin başlangıç merkez noktası",
+          "cevap": "ORİJİN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sabit hızlı harekette sıfır olan bileşke kuvvet türü",
+          "cevap": "NETKUVVET",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İki nokta arasındaki en kısa doğrusal aralık",
+          "cevap": "UZAKLIK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "SI sisteminde yer değiştirmenin temel uzunluk birimi",
+          "cevap": "METRE",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "KONUM",
+      "sonuc": "KONUM"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Bir hareketlinin aldığı yol ile yer değiştirmesi hangi durumda büyüklükçe birbirine eşit olur?",
+      "cevap": "Hareketli tek bir doğrultuda ve hiç yön değiştirmeden ilerlediğinde eşittir.",
+      "satir": 2
+    }
+  ],
+  "yayin_tarihi": "2026-11-05"
+}

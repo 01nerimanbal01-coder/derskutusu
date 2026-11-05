@@ -1,0 +1,257 @@
+{
+  "sinif": 11,
+  "ders": "fizik",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Serbest Düşme Hareketi ile İlgili Veriler, Matematiksel Modeller ve Grafikler",
+  "ciktilar": [
+    "FİZ.11.1.2. Serbest düşme hareketi ile ilgili kanıt kullanabilme."
+  ],
+  "hatirla": [
+    "Serbest düşmede anlık hız v = g·t ve alınan düşey yol h = {kesir:1|2}·g·t{us:|2} bağıntısıyla hesaplanır; ivme sabit yer çekimi ivmesidir (g ≈ 10 m/s²).",
+    "Eşit zaman aralıklarında (t sürede h, 2t sürede 4h, 3t sürede 9h...) katettiği yollar h, 3h, 5h, 7h oranlarını izler.",
+    "Hız-zaman grafiğinin eğimi sabit yer çekimi ivmesini (g), grafiğin altında kalan alan ise yer değiştirmeyi (düşülen toplam yüksekliği) verir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sol sütundaki serbest düşme grafik özelliklerini sağ sütundaki fiziksel karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Hız-zaman grafiğinin eğimi",
+          "Hareketteki sabit yer çekimi ivmesi (g = 10 m/s²)"
+        ],
+        [
+          "Hız-zaman grafiğinin altındaki alan",
+          "Cismin düşerken katettiği toplam düşey yer değiştirme (h)"
+        ],
+        [
+          "Konum-zaman grafiğinin eğrisi",
+          "Zamanın karesiyle orantılı hızlanan parabolik yol değişimi"
+        ],
+        [
+          "İvme-zaman grafiğinin altındaki alan",
+          "Cismin hızındaki birim zamandaki toplam artış miktarı (Δv)"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki v-t grafiğine göre, serbest düşen bir cismin ilk 3 saniyede aldığı yol ile 4. saniye içinde tek başına aldığı yol kaçar metredir? (g = 10 m/s²)",
+      "secenekler": [
+        "İlk 3 saniye: 30 m — 4. saniyede: 40 m",
+        "İlk 3 saniye: 45 m — 4. saniyede: 35 m",
+        "İlk 3 saniye: 20 m — 4. saniyede: 25 m",
+        "İlk 3 saniye: 45 m — 4. saniyede: 80 m"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Hava direncinin ihmal edildiği ortamda serbest bırakılan cisim 80 metre yüksekten yere kaç saniyede düşer? (g = 10 m/s²)",
+      "cevap": "h = {kesir:1|2}gt² => 80 = 5t² => t = 4 saniyede düşer.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Serbest düşme hareketinin grafik ve matematiksel modellerine dair ifadeleri Doğru (D) veya Yanlış (Y) olarak işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Serbest düşme yapan cismin ivme-zaman grafiği zaman eksenine paralel sabit bir doğrudur.",
+          "dogru": true
+        },
+        {
+          "metin": "Cismin kütlesi arttıkça hız-zaman grafiğinin eğimi de kütleyle orantılı dikleşir.",
+          "dogru": false
+        },
+        {
+          "metin": "Serbest düşmede cisim 3t anında toplam 9h kadar düşey mesafe katetmiş olur.",
+          "dogru": true
+        },
+        {
+          "metin": "Havasız ortamda aşağı yönde ilk hızla fırlatılan cisim ilk hızsız serbest düşme yapar.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Tabloda serbest düşen bir cismin t, 2t, 3t ve 4t anlarındaki hız ve konum verilerini inceleyerek boş hücreleri tamamlayınız. (g = 10 m/s², t = 1 s)",
+      "basliklar": [
+        "Zaman Evresi",
+        "Anlık Hız v (m/s)",
+        "Toplam Yol h (m)",
+        "Grafik Alan Oranı"
+      ],
+      "satirlar": [
+        [
+          "t anı (1. saniye)",
+          "10 m/s",
+          "5 m",
+          "1 birim (h)"
+        ],
+        [
+          "2t anı (2. saniye)",
+          {
+            "b": "20 m/s"
+          },
+          "20 m",
+          "4 birim (4h)"
+        ],
+        [
+          "3t anı (3. saniye)",
+          "30 m/s",
+          {
+            "b": "45 m"
+          },
+          "9 birim (9h)"
+        ],
+        [
+          "4t anı (4. saniye)",
+          {
+            "b": "40 m/s"
+          },
+          "80 m",
+          {
+            "b": "16 birim (16h)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Serbest düşen bir cismin 1., 2., 3. ve 4. saniye aralıklarında katettiği düşey yolları küçükten büyüğe sıralayınız.",
+      "ogeler": [
+        "0 - 1 saniye aralığında alınan yol: 5 metre (h)",
+        "1 - 2 saniye aralığında alınan yol: 15 metre (3h)",
+        "2 - 3 saniye aralığında alınan yol: 25 metre (5h)",
+        "3 - 4 saniye aralığında alınan yol: 35 metre (7h)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki ivme-zaman grafiğinde serbest düşen cismin ivmesi a = 10 m/s² olarak sabittir. 5 saniyelik düşüş sonunda cismin hızındaki toplam değişim kaç m/s olur?",
+      "secenekler": [
+        "25 m/s",
+        "50 m/s",
+        "75 m/s",
+        "125 m/s"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Serbest düşen bir cismin t sürede ulaştığı v hızını düşülen h yoluna bağlayan zamansız hız formülü nedir?",
+      "cevap": "v² = 2·g·h bağıntısıdır.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sol sütundaki düşüş sürelerini sağ sütundaki toplam düşüş mesafeleriyle eşleştiriniz. (g = 10 m/s²)",
+      "ciftler": [
+        [
+          "1 saniye düşüş",
+          "5 metre toplam yol"
+        ],
+        [
+          "2 saniye düşüş",
+          "20 metre toplam yol"
+        ],
+        [
+          "3 saniye düşüş",
+          "45 metre toplam yol"
+        ],
+        [
+          "4 saniye düşüş",
+          "80 metre toplam yol"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Düşey hareket modellerine ilişkin yargıları Doğru (D) veya Yanlış (Y) olarak işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Serbest düşen cismin her saniye hızındaki artış miktarı birbirine eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Yatay atılan bir cismin düşeydeki hareketi serbest düşme hareketinden tamamen farklıdır.",
+          "dogru": false
+        },
+        {
+          "metin": "Serbest düşmede hız-zaman grafiğinin başlangıç noktası orijindir (v0 = 0).",
+          "dogru": true
+        },
+        {
+          "metin": "Hava direnci olduğunda cisim hızlanmaya devam eder, limit hıza asla ulaşamaz.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı kutulardaki harflerle şifre kavramı bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Hareketteki hız, ivme ve konum değişimini gösteren çizim",
+          "cevap": "GRAFİK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Cismin birim zamandaki yer değiştirme miktarı vektörü",
+          "cevap": "RADYAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Hız-zaman grafiğinin altında kalan yer değiştirme bölgesi",
+          "cevap": "ALAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yer çekimi etkisiyle cismin serbestçe aşağı yönelmesi",
+          "cevap": "FİZİK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Birim zamandaki hız değişimini gösteren sabit vektör",
+          "cevap": "İVME",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Düşülen mesafenin dikey koordinat düzlemindeki konumu",
+          "cevap": "KONUM",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "GRAFİK"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Serbest düşme hareketinde hız-zaman grafiğinin altındaki alanın konumu vermesinin geometrik sebebini yazınız.",
+      "cevap": "Hız ile zamanın çarpımı yer değiştirmeyi verdiğinden üçgenin alanı h yoluna eşittir.",
+      "satir": 2
+    }
+  ]
+}

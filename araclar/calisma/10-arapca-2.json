@@ -1,0 +1,251 @@
+{
+  "sinif": 10,
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "konu": "Akrabalarım ve Meslekleri: Muhatap-Mütekellim Zamirleri, 'Ailemle Tanışalım' Metni, Fiil-Harf-i Cer Kullanımı ve Mesleklerin Çoğulları",
+  "ciktilar": [
+    "ARP.10.1.1. Akrabalar ve güzel davranışlarla ilgili dinleme/izleme ve okuma metinlerini anlamlandırabilme",
+    "ARP.10.1.2. Muhatap ({ar:أَنْتَ، أَنْتِ، أَنْتُمَا، أَنْتُمْ، أَنْتُنَّ}) ve mütekellim ({ar:أَنَا، نَحْنُ}) zamirlerini meslek isimleri ve müzari fiillerle sayı-cinsiyet uyumuna göre kullanabilme",
+    "ARP.10.1.3. Aile bireylerinin mesleklerini, yaptıkları işleri ({ar:يُدَافِعُ عَنْ، يُحَافِظُ عَلَى، تَهْتَمُّ بِـ، يَسُوقُ، يَطْبُخُ}) ve meslek çoğullarını sözlü ve yazılı anlatımda kullanabilme"
+  ],
+  "hatirla": [
+    "İkinci şahıs (muhatap) zamirleri tekilde {ar:أَنْتَ / أَنْتِ}, ikilde {ar:أَنْتُمَا}, çoğulda {ar:أَنْتُمْ / أَنْتُنَّ} biçimindedir.",
+    "Birinci şahıs (mütekellim) zamirleri tekilde {ar:أَنَا} (ben), ikil ve çoğulda ortak olarak {ar:نَحْنُ} (biz) şeklinde kullanılır.",
+    "Düzenli eril meslek çoğulları {ar:ـُونَ} ekiyle ({ar:مُعَلِّمُونَ}), düzenli dişil çoğullar {ar:ـَات} ekiyle ({ar:مُمَرِّضَات}) yapılır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Arapça kişi zamirlerini Türkçe anlamlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{ar:أَنْتَ}",
+          "Sen (eril muhatap)"
+        ],
+        [
+          "{ar:أَنْتِ}",
+          "Sen (dişil muhatap)"
+        ],
+        [
+          "{ar:أَنْتُمَا}",
+          "Siz ikiniz (eril/dişil ikil)"
+        ],
+        [
+          "{ar:نَحْنُ}",
+          "Biz (mütekellim çoğul)"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki iki mühendisi ({ar:مُهَنْدِسَانِ}) göstererek 'Siz ikiniz fabrikada çalışıyorsunuz' demek için boşluğa hangi ifade gelmelidir?",
+      "secenekler": [
+        "{ar:أَنْتُمَا تَعْمَلَانِ فِي الْمَصْنَعِ}",
+        "{ar:أَنْتُمْ تَعْمَلُونَ فِي الْمَدْرَسَةِ}",
+        "{ar:أَنْتُنَّ تَعْمَلْنَ فِي الْمُسْتَشْفَى}",
+        "{ar:أَنْتَ تَعْمَلُ فِي الشَّرِكَةِ}"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "{ar:يُدَافِعُ الْجُنْدِيُّ عَنِ الْوَطَنِ} cümlesindeki fiilin Türkçe karşılığı nedir?",
+      "cevap": "Asker vatanı savunur; fiil 'savunur / müdafaa eder' anlamındadır.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Arapçada zamirler ve fiil çekimleriyle ilgili ifadeleri doğru/yanlış olarak işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "{ar:نَحْنُ} zamiri hem ikil hem çoğul için ortak birinci şahıs zamiridir.",
+          "dogru": true
+        },
+        {
+          "metin": "{ar:أَنْتُمْ} zamiri muhatap dişil çoğul şahıslar için kullanılır.",
+          "dogru": false
+        },
+        {
+          "metin": "{ar:طَبِيب} kelimesinin kurallı eril çoğulu {ar:طَبِيبُونَ} şeklinde yapılır.",
+          "dogru": false
+        },
+        {
+          "metin": "{ar:مُمَرِّضَة} meslek isminin kurallı çoğulu {ar:مُمَرِّضَات} şeklindedir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Aşağıdaki tabloda boş bırakılan tekil veya çoğul meslek isimlerini tamamlayınız.",
+      "basliklar": [
+        "Zamir",
+        "Tekil Meslek",
+        "Çoğul Meslek",
+        "Anlamı"
+      ],
+      "satirlar": [
+        [
+          "{ar:أَنْتَ}",
+          "{ar:مُعَلِّم}",
+          {
+            "b": "{ar:مُعَلِّمُونَ}"
+          },
+          "Öğretmenler"
+        ],
+        [
+          "{ar:أَنْتِ}",
+          "{ar:مُهَنْدِسَة}",
+          {
+            "b": "{ar:مُهَنْدِسَات}"
+          },
+          "Kadın mühendisler"
+        ],
+        [
+          "{ar:نَحْنُ}",
+          {
+            "b": "{ar:طَبِيب}"
+          },
+          "{ar:أَطِبَّاء}",
+          "Doktorlar"
+        ],
+        [
+          "{ar:أَنَا}",
+          {
+            "b": "{ar:شُرْطِيّ}"
+          },
+          "{ar:شُرْطَة}",
+          "Polisler"
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Arapça kendini ve mesleğini tanıtma diyaloğunun mantıksal cümle sırasını oluşturunuz.",
+      "ogeler": [
+        "Selamlama ve iyi dilek ifadesiyle söze başlama ({ar:السَّلَامُ عَلَيْكُمْ})",
+        "Mütekellim zamiriyle adını ve öğrenciliğini bildirme ({ar:أَنَا طَالِبٌ})",
+        "Aile bireyinin mesleğini tanıtarak ifade etme ({ar:أَبِي مُهَنْدِسٌ})",
+        "Çalıştığı yeri harf-i cer ile cümleye bağlama ({ar:فِي الشَّرِكَةِ})"
+      ],
+      "dogru": null
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "{ar:أَنْتُنَّ ..... فِي الْمُسْتَشْفَى} cümlesinde kadınlar topluluğuna hitap eden doğru fiil çekimi hangisidir?",
+      "secenekler": [
+        "{ar:تَعْمَلُونَ}",
+        "{ar:تَعْمَلْنَ}",
+        "{ar:يَعْمَلْنَ}",
+        "{ar:تَعْمَلَانِ}"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "{ar:يَسُوقُ السَّائِقُ الْحَافِلَةَ} cümlesinin Türkçe tercümesini yazınız.",
+      "cevap": "Şoför otobüsü sürer / kullanır.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Fiil ve harf-i cer tamlamalarını Türkçe anlamlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{ar:يُدَافِعُ عَنْ}",
+          "Bir değeri veya vatanı savunmak"
+        ],
+        [
+          "{ar:يُحَافِظُ عَلَى}",
+          "Bir şeyi korumak ve gözetmek"
+        ],
+        [
+          "{ar:تَهْتَمُّ بِـ}",
+          "Bir işle ilgilenmek ve özen göstermek"
+        ],
+        [
+          "{ar:يَسُوقُ}",
+          "Bir taşıtı sevk edip sürmek"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Arapça dil bilgisi ve söz varlığıyla ilgili hükümleri doğru/yanlış olarak değerlendiriniz.",
+      "ifadeler": [
+        {
+          "metin": "{ar:أَنْتُمَا} zamiri hem iki erkek hem iki kadın muhatap için ortak kullanılır.",
+          "dogru": true
+        },
+        {
+          "metin": "{ar:أَنْتِ} zamirinden sonra gelen müzari fiil {ar:ـِينَ} ekiyle biter.",
+          "dogru": true
+        },
+        {
+          "metin": "{ar:يُحَافِظُ} fiili daima {ar:عَنْ} harf-i ceri ile kullanılır.",
+          "dogru": false
+        },
+        {
+          "metin": "{ar:مُهَنْدِس} eril kelimesinin çoğulu {ar:مُهَنْدِسَات} olarak yazılır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarına karşılık gelen Arapça dil bilgisi kavramlarını yazınız. Numaralı kutulardan 'AİLE' kelimesini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Babanın erkek kardeşini ifade eden Türkçe akrabalık adı",
+          "cevap": "AMCA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İki kişi için kullanılan dil bilgisi çekim terimi",
+          "cevap": "İKİL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Arapça okulda ders veren öğretmen mesleğinin adı",
+          "cevap": "MUALLİM",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Arapçada tekil birinci şahıs zamiri ({ar:أَنَا})",
+          "cevap": "ENE",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "AİLE",
+      "sonuc": "AİLE"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Arapçada {ar:أَنْتُمْ} ile {ar:أَنْتُنَّ} zamirleri arasındaki kullanım farkını belirtiniz.",
+      "cevap": "{ar:أَنْتُمْ} erkekler, {ar:أَنْتُنَّ} kadınlar çoğulu için kullanılır.",
+      "satir": 2
+    }
+  ],
+  "ders": "arapca",
+  "yayin_tarihi": "2026-11-05"
+}

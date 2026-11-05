@@ -1,0 +1,246 @@
+{
+  "sinif": 11,
+  "ders": "cografya",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Mekânsal Sorunlara Coğrafi Çözümler (Sünger Şehirler, Mumbai, Müsilaj) ve Web Tabanlı CBS Uygulamaları",
+  "ciktilar": [
+    "COĞ.11.1.1. Mekânsal sorunların çözümünde coğrafya biliminin katkılarını yapılandırabilme",
+    "COĞ.11.2.1. Web tabanlı CBS aracılığı ile harita uygulamaları yapabilme"
+  ],
+  "hatirla": [
+    "Sünger şehir modeli; geçirgen zeminler, yağmur bahçeleri ve yeşil çatılarla kentsel sel riskini azaltıp suyun yeraltına doğal süzülüşünü sağlayan ekolojik çözümdür.",
+    "Marmara Denizi'ndeki müsilaj ve Mumbai'deki aşırı kentsel yoğunluk; havza ölçeğinde çok kriterli mekânsal analizlerle çözülebilecek coğrafi çevre sorunlarıdır.",
+    "Web tabanlı CBS; bulut bilişim altyapısıyla raster ve vektör katmanlarını internet tarayıcısında haritalandırma, analiz etme ve paylaşma kolaylığı sağlar."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sol sütundaki mekânsal çözüm ve CBS kavramlarını sağ sütundaki işlevleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Sünger şehir modeli",
+          "Kentsel yağmur suyunu yeraltına süzerek sel baskınlarını önleyen ekolojik tasarım"
+        ],
+        [
+          "Web tabanlı CBS",
+          "Bulut sunucular üzerinden mekânsal verileri tarayıcıda analiz etme platformu"
+        ],
+        [
+          "Vektör veri modeli",
+          "Mekânsal unsurları nokta, çizgi ve poligon (alan) geometrisiyle gösterme"
+        ],
+        [
+          "Raster veri modeli",
+          "Uydu ve hava fotoğraflarını eşit boyutlu piksel ızgaralarıyla temsil etme"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kentsel hidroloji modeline göre, geleneksel betonlaşmış şehirlerin yerine 'sünger şehir' uygulamasına geçilmesinin en temel coğrafi faydası hangisidir?",
+      "secenekler": [
+        "Şehir içi yollarda asfalt kalınlığını artırarak suyun hızla akmasını sağlamak",
+        "Yüzey akışını azaltıp yağmur suyunu yer altı akiferlerine kazandırmak",
+        "Kentsel su ihtiyacını tamamen komşu havzalardan karşılamak",
+        "Tüm tarım arazilere yüksek katlı yerleşim binaları inşa etmek"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Marmara Denizi'ndeki müsilaj sorununu çözmek için atık su havzalarının koordinatlı analizinde kullanılan bilişim aracına ne denir?",
+      "cevap": "Web tabanlı Coğrafi Bilgi Sistemleri (Web CBS) adı verilir.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Mekânsal çözümler ve CBS teknolojilerine ilişkin ifadeleri Doğru (D) veya Yanlış (Y) olarak işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Sünger şehir yaklaşımı yalnızca kurak bölgelerde uygulanır, yağışlı kentlere uygun değildir.",
+          "dogru": false
+        },
+        {
+          "metin": "Web tabanlı CBS uygulamaları kullanıcıların mekânsal verilere çevrim içi erişimini sağlar.",
+          "dogru": true
+        },
+        {
+          "metin": "Öz nitelik tablosu; haritadaki mekânsal varlıkların sayısal ve sözel bilgilerini içerir.",
+          "dogru": true
+        },
+        {
+          "metin": "Vektör verilerde nehirler nokta ile, meteoroloji istasyonları ise poligon ile gösterilir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Tabloda verilen mekânsal sorunları, vaka alanını ve coğrafi çözüm önerisini inceleyerek boş hücreleri tamamlayınız.",
+      "basliklar": [
+        "Mekânsal Sorun Vaka Analizi",
+        "Örnek Coğrafi Saha",
+        "Önerilen Coğrafi Çözüm"
+      ],
+      "satirlar": [
+        [
+          "Kentsel ani sel ve su baskını",
+          "Sünger Şehir (Wuhan)",
+          "Geçirgen kaldırımlar ve yağmur bahçeleri"
+        ],
+        [
+          "Denizel kirlilik ve müsilaj",
+          {
+            "b": "Marmara Denizi Havzası"
+          },
+          "İleri biyolojik atık su arıtımı ve havza denetimi"
+        ],
+        [
+          "Aşırı nüfus ve gecekondulaşma",
+          "Mumbai Metropolü",
+          {
+            "b": "Çok merkezli kentsel planlama ve altyapı ıslahı"
+          }
+        ],
+        [
+          "Tarımsal taban suyu kirliliği",
+          "Ergene Havzası",
+          {
+            "b": "Arıtma tesisleri ve organik tarım teşviki"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Web tabanlı CBS ile mekânsal bir çevre sorununu haritalandırma adımlarını sıraya koyunuz.",
+      "ogeler": [
+        "Sorun sahasına ait koordinatlı raster ve vektör veri setlerinin temini",
+        "Verilerin bulut tabanlı CBS platformuna katmanlar hâlinde yüklenmesi",
+        "Öz nitelik tabloları üzerinden mekânsal sorgulama ve çakıştırma yapılması",
+        "İnteraktif tematik haritanın üretilerek karar vericilerle paylaşılması"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki CBS katman yapısında nehirler, il sınırları ve göller vektör formatta hangi geometrik tiplerle sırasıyla {koyu:doğru} eşleştirilmiştir?",
+      "secenekler": [
+        "Nehir: Nokta — İl Sınırı: Çizgi — Göl: Poligon",
+        "Nehir: Çizgi — İl Sınırı: Çizgi — Göl: Poligon (Alan)",
+        "Nehir: Poligon — İl Sınırı: Nokta — Göl: Çizgi",
+        "Nehir: Piksel — İl Sınırı: Poligon — Göl: Nokta"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "CBS'de bir harita katmanındaki nesnelerin ad, nüfus, alan gibi sözel bilgilerini tutan yapıya ne denir?",
+      "cevap": "Öz nitelik tablosu (öznitelik verisi) adı verilir.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sol sütundaki veri türlerini sağ sütundaki CBS gösterim formatlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Deprem rasathanesi istasyonu",
+          "Vektör nokta geometrisi"
+        ],
+        [
+          "Doğal gaz iletim boru hattı",
+          "Vektör çizgi geometrisi"
+        ],
+        [
+          "Milli park koruma sahası",
+          "Vektör poligon (alan) geometrisi"
+        ],
+        [
+          "Sayısal yükseklik haritası (DEM)",
+          "Raster piksel ızgara modeli"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Web CBS ve masaüstü CBS karşılaştırmasına ilişkin yargıları Doğru (D) veya Yanlış (Y) olarak işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Web tabanlı CBS haritaları tarayıcı üzerinden her an güncellenebilir ve paylaşılabilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Masaüstü CBS yazılımları bulut depolama olmadan internet bağımlı çalışır.",
+          "dogru": false
+        },
+        {
+          "metin": "Sünger şehir modeli kentsel ısı adası etkisini de yeşil alanlarla hafifletir.",
+          "dogru": true
+        },
+        {
+          "metin": "Müsilaj oluşumunda yalnızca doğal deniz dalgaları etkilidir, insan atıklarının rolü yoktur.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı kutulardaki harflerle şifre kavramı bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Web CBS uygulamalarının veri depoladığı internet tabanlı sunucu altyapısı",
+          "cevap": "BULUT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Farklı tematik harita verilerinin üst üste getirilerek analiz edilmesi",
+          "cevap": "UYDU",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Mekânsal unsurların nokta, çizgi ve poligonla temsil edildiği CBS modeli",
+          "cevap": "LİSTE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Mekân üzerindeki kentsel ve doğal alanların coğrafi yerleşimi",
+          "cevap": "UZAY",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Mekânsal nesnelerin koordinatlarının harita üzerinde gösterilmesi",
+          "cevap": "TABLO",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "BULUT"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Sünger şehir tasarımının geleneksel beton şehir altyapısına göre en büyük çevresel üstünlüğü nedir?",
+      "cevap": "Yağmur suyunu sele dönüştürmeden yeraltı kaynaklarına doğal filtreyle kazandırmasıdır.",
+      "satir": 2
+    }
+  ]
+}

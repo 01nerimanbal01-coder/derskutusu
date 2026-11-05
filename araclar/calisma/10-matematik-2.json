@@ -1,0 +1,254 @@
+{
+  "sinif": 10,
+  "ders": "matematik",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "konu": "Dik Üçgende Trigonometrik Oranlar, Özdeşlik Uygulamaları, Birim Çember, Geniş Açılar ve Yönlü Açılar",
+  "ciktilar": [
+    "MAT.10.1.1. Dik üçgende trigonometrik oranlara (sinüs, kosinüs, tanjant, kotanjant) ve trigonometrik özdeşliklere ilişkin çıkarım yapabilme."
+  ],
+  "hatirla": [
+    "Birim çember, analitik düzlemde merkezi orijin O(0,0) ve yarıçapı 1 birim olan x² + y² = 1 çemberidir; P noktasının koordinatları (cos α, sin α)'dır.",
+    "Geniş açılarda (90° < α < 180°) tümler ve bütünler ilişkileri geçerlidir: sin(180°-α) = sin α (pozitif), cos(180°-α) = -cos α (negatif) olur.",
+    "Başlangıç kolu sabit tutulup saat yönünün tersine döndürülen açılar pozitif yönlü, saat yönünde döndürülen açılar negatif yönlüdür."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Birim çember üzerindeki geniş açıların trigonometrik değerlerini eşleştiriniz.",
+      "ciftler": [
+        [
+          "sin 150°",
+          "+{kesir:1|2}"
+        ],
+        [
+          "cos 120°",
+          "-{kesir:1|2}"
+        ],
+        [
+          "sin 135°",
+          "+{kesir:{kok:2}|2}"
+        ],
+        [
+          "cos 135°",
+          "-{kesir:{kok:2}|2}"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Birim çember üzerinde pozitif yönlü 120°lik yayın bitim noktasının koordinatları aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "(-{kesir:1|2}, {kesir:{kok:3}|2})",
+        "({kesir:1|2}, -{kesir:{kok:3}|2})",
+        "(-{kesir:{kok:3}|2}, {kesir:1|2})",
+        "({kesir:{kok:2}|2}, {kesir:{kok:2}|2})"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "sin x + cos x = {kesir:4|3} olduğuna göre sin x · cos x çarpımı kaçtır?",
+      "cevap": "Karesi alınırsa 1 + 2sinx cosx = {kesir:16|9} olup çarpım {kesir:7|18} çıkar.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Birim çember ve trigonometrik fonksiyonlarla ilgili hükümleri değerlendiriniz.",
+      "ifadeler": [
+        {
+          "metin": "Birim çemberin analitik düzlemdeki denklemi x² + y² = 1 biçimindedir.",
+          "dogru": true
+        },
+        {
+          "metin": "İkinci bölgedeki bütün geniş açıların kosinüs değerleri daima pozitiftir.",
+          "dogru": false
+        },
+        {
+          "metin": "Saat ibresinin dönme yönünün tersi pozitif açı yönü olarak kabul edilir.",
+          "dogru": true
+        },
+        {
+          "metin": "sin 120° değeri ile cos 30° değeri sayısal olarak birbirine eşittir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Aşağıdaki tabloda geniş açıların trigonometrik değerlerini tamamlayınız.",
+      "basliklar": [
+        "Açı Ölçüsü",
+        "sinüs (y)",
+        "kosinüs (x)",
+        "tanjant (y/x)"
+      ],
+      "satirlar": [
+        [
+          "120°",
+          "{kesir:{kok:3}|2}",
+          {
+            "b": "-{kesir:1|2}"
+          },
+          "-{kok:3}"
+        ],
+        [
+          "135°",
+          {
+            "b": "{kesir:{kok:2}|2}"
+          },
+          "-{kesir:{kok:2}|2}",
+          "-1"
+        ],
+        [
+          "150°",
+          "{kesir:1|2}",
+          {
+            "b": "-{kesir:{kok:3}|2}"
+          },
+          "-{kesir:{kok:3}|3}"
+        ],
+        [
+          "180°",
+          "0",
+          "-1",
+          {
+            "b": "0"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Birim çember üzerinde bir açının trigonometrik koordinatlarını belirleme adımlarını sıraya koyunuz.",
+      "ogeler": [
+        "Açının başlangıç kolunu pozitif x ekseni doğrultusuna yerleştirme",
+        "Açı ölçüsü kadar saat yönünün tersinde pozitif yönde dönme",
+        "Açının bitim kolunun birim çemberi kestiği P(x, y) noktasını işaretleme",
+        "P noktasının apsisini cos α, ordinatını sin α değeri olarak okuma"
+      ],
+      "dogru": null
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Herhangi bir reel x açısı için sin²140° + cos²140° ifadesinin sayısal değeri kaçtır?",
+      "secenekler": [
+        "0",
+        "1",
+        "-1",
+        "{kesir:1|2}"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "tan 135° + cot 135° toplamının sayısal sonucunu bulunuz.",
+      "cevap": "tan 135° = -1 ve cot 135° = -1 olduğundan toplam (-1) + (-1) = -2 olur.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Yönlü açı kavramlarını geometrik karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Saat yönünün tersi",
+          "Pozitif (+) dönme yönü"
+        ],
+        [
+          "Saat ibresi yönü",
+          "Negatif (-) dönme yönü"
+        ],
+        [
+          "Pozitif x ekseni",
+          "Standart açının başlangıç kolu"
+        ],
+        [
+          "Çemberdeki P noktası",
+          "(cos α, sin α) koordinat çifti"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Trigonometri ve koordinat düzlemiyle ilgili kuralları değerlendiriniz.",
+      "ifadeler": [
+        {
+          "metin": "Birim çember üzerindeki her noktanın orijine uzaklığı daima 1 birimdir.",
+          "dogru": true
+        },
+        {
+          "metin": "Tanjant fonksiyonu ikinci bölgedeki geniş açılarda daima pozitif değer alır.",
+          "dogru": false
+        },
+        {
+          "metin": "Birbirini 180°ye tamamlayan bütünler açıların sinüs değerleri eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "sin 90° değeri sıfıra, cos 90° değeri ise bire eşittir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarından yararlanarak trigonometri kavramlarını yazınız. Numaralı kutulardan 'BİRİM' kelimesini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Yarıçapı 1 birim olan trigonometrik referans çemberi",
+          "cevap": "BİRİM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Geniş açıların koordinat düzleminde yer aldığı bölge sayısı",
+          "cevap": "İKİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bir çemberde 2π değerine karşılık gelen açı ölçü birimi",
+          "cevap": "RADYAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yönlü açılarda saatin dönme yönüyle belirlenen artı-eksi durumu",
+          "cevap": "İŞARET",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Birim çemberin analitik düzlemdeki O(0,0) referans noktası",
+          "cevap": "MERKEZ",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "BİRİM",
+      "sonuc": "BİRİM"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Geniş açılarda (90° < α < 180°) neden sinüs pozitif iken kosinüs negatiftir?",
+      "cevap": "2. bölgede ordinat y > 0 iken apsis x < 0 olduğu için sin (+) ve cos (-) olur.",
+      "satir": 2
+    }
+  ],
+  "yayin_tarihi": "2026-11-05"
+}

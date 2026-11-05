@@ -1,0 +1,248 @@
+{
+  "sinif": 12,
+  "ders": "matematik",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "yayin_tarihi": "2026-09-21",
+  "konu": "Logaritma Fonksiyonu, En Geniş Tanım Kümesi, Grafiği, 10 Tabanında ve Doğal Logaritma",
+  "ciktilar": [
+    "12.1.2.1. Logaritma fonksiyonu ile üstel fonksiyonu ilişkilendirerek problemler çözer.",
+    "12.1.2.2. 10 ve e tabanında logaritma fonksiyonunu tanımlayarak problemler çözer."
+  ],
+  "hatirla": [
+    "a > 0 ve a ≠ 1 olmak üzere f(x) = {us:a|x} üstel fonksiyonunun ters fonksiyonuna logaritma fonksiyonu denir: y = logₐ x ⇔ x = {us:a|y}.",
+    "f(x) = log{alt:g(x)} h(x) fonksiyonunun tanımlı olması için: h(x) > 0, g(x) > 0 ve g(x) ≠ 1 koşulları aynı anda sağlanmalıdır.",
+    "Tabanı 10 olan logaritmaya bayağı (onluk) logaritma (log x), tabanı Euler sayısı e olan logaritmaya doğal logaritma (ln x) denir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki logaritma türlerini sağ sütundaki temel matematiksel özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "logₐ x = y",
+          "{us:a|y} = x üstel eşitliğinin logaritmik karşılığı"
+        ],
+        [
+          "log x (Bayağı log)",
+          "Tabanı 10 olan ve tabanı yazılmayan logaritma"
+        ],
+        [
+          "ln x (Doğal log)",
+          "Tabanı irrasyonel e sayısı (≈ 2,718) olan logaritma"
+        ],
+        [
+          "x = 1 kesişim noktası",
+          "Tüm temel logaritma eğrilerinin x eksenini kestiği (1, 0) noktası"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki koordinat düzleminde f(x) = log₂ x fonksiyonunun grafiği verilmiştir. Bu fonksiyona göre f(8) + f({kesir:1|4}) işleminin sonucu kaçtır?",
+      "secenekler": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "f(x) = log₃ (2x − 8) fonksiyonunun en geniş gerçek sayı tanım kümesini yazınız.",
+      "cevap": "2x − 8 > 0 eşitsizliğinden tanım kümesi (4, ∞) açık aralığıdır.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki logaritma fonksiyonu grafik ilkelerine göre yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Logaritma fonksiyonu ile üstel fonksiyon birbirinin tersi olan fonksiyonlardır.",
+          "dogru": true
+        },
+        {
+          "metin": "Negatif gerçek sayıların ve sıfırın reel sayılarda logaritması tanımlıdır.",
+          "dogru": false
+        },
+        {
+          "metin": "Doğal logaritma fonksiyonunda ln e = 1 ve ln 1 = 0 eşitlikleri geçerlidir.",
+          "dogru": true
+        },
+        {
+          "metin": "f(x) = logₐ x grafiği y eksenini daima (0, 1) noktasında keser.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Tabandaki farklı logaritma fonksiyonlarının x değerlerine karşılık gelen görüntülerini hesaplayarak tabloyu tamamlayınız.",
+      "basliklar": [
+        "x Değeri",
+        "f(x) = log₂ x",
+        "g(x) = ln x"
+      ],
+      "satirlar": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "2",
+          "1",
+          {
+            "b": "ln 2"
+          }
+        ],
+        [
+          "e",
+          {
+            "b": "log₂ e"
+          },
+          "1"
+        ],
+        [
+          "4",
+          {
+            "b": "2"
+          },
+          {
+            "b": "ln 4"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde verilen logaritmik değerleri küçükten büyüğe doğru 1'den 4'e kadar sıralayınız.",
+      "ogeler": [
+        "log₂ ({kesir:1|8}) = −3",
+        "log₂ ({kesir:1|2}) = −1",
+        "log₂ 1 = 0",
+        "log₂ 4 = 2"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "f(x) = log{alt:x−2} (10 − x) fonksiyonunu tanımlı yapan kaç farklı x tam sayısı vardır?",
+      "secenekler": [
+        "6",
+        "5",
+        "7",
+        "8"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "f(x) = log₅ x fonksiyonunun x = 125 için aldığı değeri hesaplayınız.",
+      "cevap": "{us:5|3} = 125 olduğundan log₅ 125 = 3 değerini alır.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki logaritmik ifadeleri sayısal veya geometrik karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "log 100",
+          "Tabanı 10 olduğundan değeri 2'ye eşit olan ifade"
+        ],
+        [
+          "ln {us:e|4}",
+          "Tabanı e olduğundan değeri 4'e eşit olan doğal logaritma"
+        ],
+        [
+          "Düşey asimptot x = 0",
+          "Logaritma grafiğinin yaklaştığı fakat kesmediği y ekseni"
+        ],
+        [
+          "Artan logaritma",
+          "Tabanı a > 1 olduğunda soldan sağa yükselen eğri"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Logaritma fonksiyonunun analitik özellikleriyle ilgili yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "a > 1 ise f(x) = logₐ x fonksiyonu artandır; 0 < a < 1 ise azalandır.",
+          "dogru": true
+        },
+        {
+          "metin": "y = logₐ x ile y = {us:a|x} grafikler y = x doğrusuna göre simetriktir.",
+          "dogru": true
+        },
+        {
+          "metin": "Logaritmanın tabanı pozitif olmak şartıyla 1 sayısına eşit olabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Ses şiddeti düzeyi (desibel) ve deprem büyüklüğü logaritmik ölçekle hesaplanır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki matematik ipuçlarından yararlanarak bulmacayı çözünüz. Turuncu anahtar kutulardaki harfleri birleştirerek gizli matematiksel kavramı bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Logaritma grafiğinin yaklaştığı x = 0 asimptot çizgisi",
+          "cevap": "DÜŞEY",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "On tabanına göre tanımlanan bayağı logaritma türü",
+          "cevap": "ONLUK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Koordinat düzleminde logaritma fonksiyonunun çizim profili",
+          "cevap": "EĞRİ",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Grafiğin sonsuza giderken yaklaştığı ama kesmediği doğru",
+          "cevap": "ASİMPTOT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Üstel fonksiyonun tersi olan temel cebirsel işlem dalı",
+          "cevap": "LOGARİTMA",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "DOĞAL"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "f(x) = {us:a|x} üstel fonksiyonu ile {us:f|−1}(x) = logₐ x fonksiyonunun grafikleri arasındaki geometrik simetriyi açıklayınız.",
+      "cevap": "Birbirinin tersi oldukları için grafikleri y = x doğrusuna göre simetriktir.",
+      "satir": 2
+    }
+  ]
+}

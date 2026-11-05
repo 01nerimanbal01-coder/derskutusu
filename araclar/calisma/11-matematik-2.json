@@ -1,0 +1,250 @@
+{
+  "sinif": 11,
+  "ders": "matematik",
+  "hafta": 2,
+  "tarih": "21-25 Eylül 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "İki Nicel Değişkenli Verilerin Analizi: Serpme Diyagramı ve Korelasyon Katsayısı",
+  "ciktilar": [
+    "MAT.11.1.1. İki nicel değişkenli veri ile çalışabilme ve iki nicel değişken arasındaki ilişkililiğe dayalı karar verebilme."
+  ],
+  "hatirla": [
+    "Serpme (saçılma) diyagramında veri noktaları sağa yukarı doğru eğilim gösteriyorsa pozitif, sağa aşağı doğru eğilim gösteriyorsa negatif doğrusal ilişki vardır.",
+    "Korelasyon katsayısı (r); -1 <= r <= +1 aralığındadır; r = +1 mükemmel pozitif doğrusal, r = -1 mükemmel negatif doğrusal, r = 0 ilişkisizliği gösterir.",
+    "Korelasyon analizi iki değişken arasındaki ilişkinin yönünü ve gücünü ölçer; ancak yüksek korelasyon olması iki değişken arasında kesin bir nedensellik olduğunu kanıtlamaz."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sol sütundaki korelasyon katsayısı (r) değerlerini sağ sütundaki doğrusal ilişki türleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "r = +0,85",
+          "Güçlü düzeyde pozitif doğrusal ilişki"
+        ],
+        [
+          "r = -0,90",
+          "Çok güçlü düzeyde negatif doğrusal ilişki"
+        ],
+        [
+          "r = 0,05",
+          "İki nicel değişken arasında doğrusal ilişki yok (ilişkisiz)"
+        ],
+        [
+          "r = -0,40",
+          "Orta-zayıf düzeyde negatif doğrusal ilişki"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki serpme diyagramında veri noktaları x eksenindeki değerler arttıkça y eksenindeki değerlerin de düzenli biçimde arttığı sağa yukarı bir eğilim çizgisi etrafında toplanmıştır. Bu dağılım hangi ilişkiyi gösterir?",
+      "secenekler": [
+        "Negatif yönlü doğrusal ilişkiyi",
+        "Pozitif yönlü doğrusal ilişkiyi",
+        "Değişkenler arasında tam bağımsızlığı",
+        "Korelasyon katsayısının sıfır olduğunu"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Korelasyon katsayısı (r) matematiksel olarak hangi iki reel sayı aralığında değer alır?",
+      "cevap": "-1 ile +1 kapalı aralığında (-1 <= r <= +1) değer alır.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Serpme diyagramı ve korelasyon analizine ilişkin ifadeleri Doğru (D) veya Yanlış (Y) olarak işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Korelasyon katsayısının mutlak değeri |r| bire yaklaştıkça ilişkinin gücü artar.",
+          "dogru": true
+        },
+        {
+          "metin": "İki değişken arasında r = 0,92 bulunması birinin diğerine kesin sebep olduğunu ispatlar.",
+          "dogru": false
+        },
+        {
+          "metin": "Serpme diyagramında eğilim çizgisi verilerin genel doğrultusunu özetler.",
+          "dogru": true
+        },
+        {
+          "metin": "Negatif korelasyonda değişkenlerden biri artarken diğeri de eş zamanlı artış gösterir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Tabloda verilen değişken çiftlerini, beklenen korelasyon yönünü ve r katsayısı tahminini inceleyerek boş hücreleri tamamlayınız.",
+      "basliklar": [
+        "Değişken Çifti",
+        "İlişkinin Yönü",
+        "Tahmini Korelasyon (r)"
+      ],
+      "satirlar": [
+        [
+          "Ders çalışma süresi ve sınav başarısı",
+          "Pozitif doğrusal",
+          "0,70 &lt; r &lt; 0,90"
+        ],
+        [
+          "Aracın hızı ve varış süresi",
+          {
+            "b": "Negatif doğrusal"
+          },
+          "-0,80 &lt; r &lt; -0,95"
+        ],
+        [
+          "Ayakkabı numarası ve matematik zekâsı",
+          {
+            "b": "İlişkisiz (Bağımsız)"
+          },
+          "r ≈ 0"
+        ],
+        [
+          "Rakım (yükseklik) ve açık hava basıncı",
+          "Negatif doğrusal",
+          {
+            "b": "-0,85 &lt; r &lt; -1,00"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "İki nicel değişkenli bir veri setinin korelasyon analiz basamaklarını sıraya koyunuz.",
+      "ogeler": [
+        "İki değişken için eşleşmiş sayısal veri çiftlerinin (x, y) toplanması",
+        "Verilerin koordinat düzleminde serpme diyagramı olarak işaretlenmesi",
+        "Noktaların dağılımına uygun bir doğrusal eğilim çizgisinin çizilmesi",
+        "Korelasyon katsayısının (r) hesaplanıp ilişkinin gücünün yorumlanması"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört serpme diyagramından hangisi 'r katsayısının -1'e çok yakın olduğu mükemmele yakın negatif bir ilişkiyi' temsil eder?",
+      "secenekler": [
+        "Noktaların daire şeklinde rastgele dağıldığı diyagram",
+        "Noktaların sağa aşağı inen dar bir doğru boyunca dizildiği diyagram",
+        "Noktaların sağa yukarı dik bir doğru boyunca dizildiği diyagram",
+        "Noktaların yatay düz bir çizgi üzerinde toplandığı diyagram"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "İki nicel değişken arasında güçlü korelasyon olmasına rağmen nedensellik bulunmaması durumunu özetleyen istatistik ilkesi nedir?",
+      "cevap": "Korelasyon nedensellik (neden-sonuç bağı) anlamına gelmez ilkesidir.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sol sütundaki r katsayısı aralıklarını sağ sütundaki niteleme sınıflarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "0,80 &lt;= |r| &lt;= 1,00",
+          "Çok güçlü doğrusal ilişki"
+        ],
+        [
+          "0,60 &lt;= |r| &lt; 0,80",
+          "Güçlü doğrusal ilişki"
+        ],
+        [
+          "0,40 &lt;= |r| &lt; 0,60",
+          "Orta düzeyde doğrusal ilişki"
+        ],
+        [
+          "0,00 &lt;= |r| &lt; 0,20",
+          "İhmal edilebilir / Çok zayıf ilişki"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Bölgelere göre sayım oranı (BSO) ve serpme diyagramına ilişkin yargıları Doğru (D) veya Yanlış (Y) olarak işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "BSO yönteminde eksenlerin ortalama noktaları orijin kabul edilerek 4 bölgeye ayrılır.",
+          "dogru": true
+        },
+        {
+          "metin": "1. ve 3. bölgelerdeki nokta sayısı fazlaysa negatif korelasyon kararı verilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Eğilim çizgisi tüm noktaların üzerinden geçmek zorunda olan tekil bir çizgidir.",
+          "dogru": false
+        },
+        {
+          "metin": "Aykırı değerler korelasyon katsayısının değerini önemli ölçüde saptırabilir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı kutulardaki harflerle şifre kavramı bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "İki nicel değişkenin koordinat düzleminde noktalarla gösterildiği grafik",
+          "cevap": "SERPME",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Noktaların genel gidişatını ve yönünü gösteren denge doğrusu",
+          "cevap": "EĞİLİM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Korelasyon katsayısını simgeleyen matematiksel küçük harf",
+          "cevap": "REEL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İki değişkenin aynı yönde birlikte artış gösterdiği ilişki türü",
+          "cevap": "POZİTİF",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İlişkinin yönünü ve kuvvetini ölçen katsayı",
+          "cevap": "MODEL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Araştırma kapsamındaki hedef bireylerin tamamı",
+          "cevap": "EVREN",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "SERPME"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "İki nicel değişken arasında r = 0,88 bulunmasına rağmen 'biri diğerinin sebebidir' denememesinin gerekçesini açıklayınız.",
+      "cevap": "Üçüncü bir gizli değişken her ikisini de aynı anda etkiliyor olabilir.",
+      "satir": 2
+    }
+  ]
+}
