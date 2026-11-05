@@ -65,7 +65,14 @@ def uclu_sema(baslik, uclu, etiket, ana_renk=YES, arka_renk=YES_A):
     return svg(ic, etiket)
 
 def g0():
-    return kart4('ÜÇGENDE ALAN TEMEL BAĞINTILARI', [('Taban × Yükseklik', 'A = (a · h_a) / 2'), ('Sinüs Alan', 'A = ½ · b · c · sin A'), ('Eşkenar Üçgen', 'A = (a² · √3) / 4'), ('Benzerlik-Alan', 'A₁ / A₂ = k²')], '10-matematik-5 alan bağıntıları')
+    svg = kart4('ÜÇGENDE ALAN TEMEL BAĞINTILARI', [('Taban × Yükseklik', 'A = (a · h_a) / 2'), ('Sinüs Alan', 'A = ½ · b · c · sin A'), ('Eşkenar Üçgen', '__ESKENAR__'), ('Benzerlik-Alan', 'A₁ / A₂ = k²')], '10-matematik-5 alan bağıntıları')
+    return svg.replace(
+        '<text x="222.0" y="78.0" text-anchor="middle" font-size="7.5" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">__ESKENAR__</text>',
+        '<text x="207.5" y="78.0" text-anchor="end" font-size="7.5" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">A = (a² · </text>'
+        '<path d="M 208.5 75.0 L 210.0 75.0 L 211.5 78.5 L 214.0 70.5 L 220.5 70.5" fill="none" stroke="#0b2257" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>'
+        '<text x="217.2" y="78.0" text-anchor="middle" font-size="7.5" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">3</text>'
+        '<text x="221.5" y="78.0" text-anchor="start" font-size="7.5" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">) / 4</text>'
+    )
 
 def g1():
     return karsilastir2('SİNÜS ALAN TEOREMİ UYGULAMASI', 'Verilen Ölçüler', '|AB| = 8 cm, |AC| = 10 cm', 'Aradaki açı: m(A) = 30° (sin 30° = ½)', 'Alan Hesabı', 'Alan = ½ · 8 · 10 · sin 30°', 'Alan = 40 · ½ = 20 cm²', '10-matematik-5 sinüs alan hesabı')
