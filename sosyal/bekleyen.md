@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 774 gönderi (Instagram: 0 bekleyen — 1716/1716 yayında; Facebook: 774 bekleyen).
+Toplam 811 gönderi (Instagram: 21 bekleyen — 1732/1753 yayında; Facebook: 811 bekleyen).
 
 ## bilgi-7-turkce-7
 Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
@@ -7747,4 +7747,522 @@ Bunu biliyor muydunuz? Hobi Sorma ve Anlatma: «Mâ hivâyetuke?» ve «Mâzâ t
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 10. sınıf Arapça 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/10-arapca-hafta-16
 #derskutusu #arapça #10sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## seri-yazili-11-matematik
+Sıra: 2026-11-05 20:03 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-11-matematik-1.png
+
+```
+Matematik ortak yazılısı: her senaryoya ayrı kâğıt 📝
+11. sınıf Matematik için 12 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 7 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: İstatistiksel Araştırma Süreci, Geometrik Şekiller ve Nicelikler ve Değişimler.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=11&ders=matematik
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, sınav haftası lazım olacak. 📌
+#derskutusu #ortakyazılı #11sınıf #matematik #yazılısınavı
+```
+
+## seri-yazili-10-ingilizce
+Sıra: 2026-11-05 20:18 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-10-ingilizce-1.png
+
+```
+10. sınıf İngilizce ortak yazılısı için hazır kâğıtlar 📝
+10. sınıf İngilizce için 10 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Revision 1, Revision 2, School Life & Education, Classroom Life & Learning ve Personal Life And Well-Being.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=10&ders=ingilizce
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Faydalı bulduysanız İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #ortakyazılı #10sınıf #ingilizce #yazılısınavı
+```
+
+## seri-yazili-11-din-kulturu-ve-ahlak-bilgisi
+Sıra: 2026-11-05 20:33 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-11-din-kulturu-ve-ahlak-bilgisi-1.png
+
+```
+11. sınıf Din Kültürü ve Ahlak Bilgisi: senaryonuzu seçin, kâğıdı indirin 📝
+11. sınıf Din Kültürü ve Ahlak Bilgisi için 10 sınav kâğıdı hazır: 1. ortak yazılı için 4 ve 2. ortak yazılı için 6 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Kader, İrade ve Sorumluluk, Din, Felsefe, Bilim ve Sanat ve İslam Medeniyeti ve Gönül Coğrafyamız.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=11&ders=din-kulturu-ve-ahlak-bilgisi
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #ortakyazılı #11sınıf #dinkültürü #yazılısınavı
+```
+
+## seri-yazili-12-turk-dili-ve-edebiyati
+Sıra: 2026-11-05 20:48 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-12-turk-dili-ve-edebiyati-1.png
+
+```
+Türk Dili ve Edebiyatı ortak yazılısı: her senaryoya ayrı kâğıt 📝
+12. sınıf Türk Dili ve Edebiyatı için 10 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Giriş, Hikâye ve Şiir.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=12&ders=turk-dili-ve-edebiyati
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, sınav haftası lazım olacak. 📌
+#derskutusu #ortakyazılı #12sınıf #türkdiliveedebiyatı #yazılısınavı
+```
+
+## seri-yazili-9-fizik
+Sıra: 2026-11-05 21:03 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-9-fizik-1.png
+
+```
+9. sınıf Fizik ortak yazılısı için hazır kâğıtlar 📝
+9. sınıf Fizik için 10 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Fizik Bilimi ve Kariyer Keşfi ve Kuvvet ve Hareket.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=9&ders=fizik
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Faydalı bulduysanız Fizik öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #ortakyazılı #9sınıf #fizik #yazılısınavı
+```
+
+## seri-yazili-10-kimya
+Sıra: 2026-11-05 21:18 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-10-kimya-1.png
+
+```
+10. sınıf Kimya: senaryonuzu seçin, kâğıdı indirin 📝
+10. sınıf Kimya için 13 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 8 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Etkileşim.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=10&ders=kimya
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #ortakyazılı #10sınıf #kimya #yazılısınavı
+```
+
+## seri-yazili-11-biyoloji
+Sıra: 2026-11-05 21:33 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-11-biyoloji-1.png
+
+```
+Biyoloji ortak yazılısı: her senaryoya ayrı kâğıt 📝
+11. sınıf Biyoloji için 10 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Tepki.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=11&ders=biyoloji
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, sınav haftası lazım olacak. 📌
+#derskutusu #ortakyazılı #11sınıf #biyoloji #yazılısınavı
+```
+
+## seri-yazili-11-tarih
+Sıra: 2026-11-05 21:48 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-11-tarih-1.png
+
+```
+11. sınıf Tarih ortak yazılısı için hazır kâğıtlar 📝
+11. sınıf Tarih için 12 sınav kâğıdı hazır: 1. ortak yazılı için 6 ve 2. ortak yazılı için 6 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Değişen Dünyada Osmanlı (1683-1789) ve Dönüşüm Sürecinde Osmanlı (1789-1908).
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=11&ders=tarih
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Faydalı bulduysanız Tarih öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #ortakyazılı #11sınıf #tarih #yazılısınavı
+```
+
+## seri-yazili-9-cografya
+Sıra: 2026-11-05 22:03 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-9-cografya-1.png
+
+```
+9. sınıf Coğrafya: senaryonuzu seçin, kâğıdı indirin 📝
+9. sınıf Coğrafya için 12 sınav kâğıdı hazır: 1. ortak yazılı için 6 ve 2. ortak yazılı için 6 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Coğrafyanın Doğası, Mekânsal Bilgi Teknolojileri ve Doğal Sistemler ve Süreçler.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=9&ders=cografya
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #ortakyazılı #9sınıf #coğrafya #yazılısınavı
+```
+
+## seri-yazili-10-felsefe
+Sıra: 2026-11-05 22:18 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-10-felsefe-1.png
+
+```
+Felsefe ortak yazılısı: her senaryoya ayrı kâğıt 📝
+10. sınıf Felsefe için 9 sınav kâğıdı hazır: 1. ortak yazılı için 4 ve 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Felsefenin Doğası, Felsefe, Mantık ve Argümantasyon, Varlık Felsefesi ve Bilgi Felsefesi.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=10&ders=felsefe
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, sınav haftası lazım olacak. 📌
+#derskutusu #ortakyazılı #10sınıf #felsefe #yazılısınavı
+```
+
+## seri-yazili-9-matematik
+Sıra: 2026-11-05 22:33 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-9-matematik-1.png
+
+```
+9. sınıf Matematik ortak yazılısı için hazır kâğıtlar 📝
+9. sınıf Matematik için 4 sınav kâğıdı hazır: 1. ortak yazılı için 4 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Sayılar ve Nicelikler ve Değişimler.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=9&ders=matematik
+Nasıl indirilir? Sayfada senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Faydalı bulduysanız Matematik öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #ortakyazılı #9sınıf #matematik #yazılısınavı
+```
+
+## seri-yazili-9-ingilizce
+Sıra: 2026-11-05 22:48 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-9-ingilizce-1.png
+
+```
+9. sınıf İngilizce: senaryonuzu seçin, kâğıdı indirin 📝
+9. sınıf İngilizce için 10 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Revision 1, Revision 2, School Life, Classroom Life ve Personal Life: Physical Appearance & Personality.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=9&ders=ingilizce
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #ortakyazılı #9sınıf #ingilizce #yazılısınavı
+```
+
+## seri-yazili-10-din-kulturu-ve-ahlak-bilgisi
+Sıra: 2026-11-05 23:03 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-10-din-kulturu-ve-ahlak-bilgisi-1.png
+
+```
+Din Kültürü ve Ahlak Bilgisi ortak yazılısı: her senaryoya ayrı kâğıt 📝
+10. sınıf Din Kültürü ve Ahlak Bilgisi için 10 sınav kâğıdı hazır: 1. ortak yazılı için 4 ve 2. ortak yazılı için 6 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: İslam’da Varlık ve Bilgi, Allah’ı Tanımak ve İslam’ın Evrensel Mesajları.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=10&ders=din-kulturu-ve-ahlak-bilgisi
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, sınav haftası lazım olacak. 📌
+#derskutusu #ortakyazılı #10sınıf #dinkültürü #yazılısınavı
+```
+
+## seri-yazili-11-turk-dili-ve-edebiyati
+Sıra: 2026-11-05 23:18 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-11-turk-dili-ve-edebiyati-1.png
+
+```
+11. sınıf Türk Dili ve Edebiyatı ortak yazılısı için hazır kâğıtlar 📝
+11. sınıf Türk Dili ve Edebiyatı için 8 sınav kâğıdı hazır: 1. ortak yazılı için 3 ve 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Bir Diyeceğim Var! ve Kültür Yolculuğu.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=11&ders=turk-dili-ve-edebiyati
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Faydalı bulduysanız Türk Dili ve Edebiyatı öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #ortakyazılı #11sınıf #türkdiliveedebiyatı #yazılısınavı
+```
+
+## seri-yazili-12-fizik
+Sıra: 2026-11-05 23:33 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-12-fizik-1.png
+
+```
+12. sınıf Fizik: senaryonuzu seçin, kâğıdı indirin 📝
+12. sınıf Fizik için 8 sınav kâğıdı hazır: 1. ortak yazılı için 4 ve 2. ortak yazılı için 4 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Çembersel Hareket, Basit Harmonik Hareket ve Dalga Mekaniği.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=12&ders=fizik
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #ortakyazılı #12sınıf #fizik #yazılısınavı
+```
+
+## seri-yazili-11-kimya
+Sıra: 2026-11-05 23:48 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-11-kimya-1.png
+
+```
+Kimya ortak yazılısı: her senaryoya ayrı kâğıt 📝
+11. sınıf Kimya için 12 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 7 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Etkileşim ve Çeşitlilik.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=11&ders=kimya
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, sınav haftası lazım olacak. 📌
+#derskutusu #ortakyazılı #11sınıf #kimya #yazılısınavı
+```
+
+## seri-yazili-12-biyoloji
+Sıra: 2026-11-06 00:03 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-12-biyoloji-1.png
+
+```
+12. sınıf Biyoloji ortak yazılısı için hazır kâğıtlar 📝
+12. sınıf Biyoloji için 9 sınav kâğıdı hazır: 1. ortak yazılı için 4 ve 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Genden Proteine ve Canlılarda Enerji Dönüşümleri.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=12&ders=biyoloji
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Faydalı bulduysanız Biyoloji öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #ortakyazılı #12sınıf #biyoloji #yazılısınavı
+```
+
+## seri-yazili-9-tarih
+Sıra: 2026-11-06 00:18 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-9-tarih-1.png
+
+```
+9. sınıf Tarih: senaryonuzu seçin, kâğıdı indirin 📝
+9. sınıf Tarih için 12 sınav kâğıdı hazır: 1. ortak yazılı için 6 ve 2. ortak yazılı için 6 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Geçmişin İnşa Sürecinde Tarih ve Eski Çağ Medeniyetleri.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=9&ders=tarih
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #ortakyazılı #9sınıf #tarih #yazılısınavı
+```
+
+## seri-yazili-10-cografya
+Sıra: 2026-11-06 00:33 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-10-cografya-1.png
+
+```
+Coğrafya ortak yazılısı: her senaryoya ayrı kâğıt 📝
+10. sınıf Coğrafya için 12 sınav kâğıdı hazır: 1. ortak yazılı için 6 ve 2. ortak yazılı için 6 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Coğrafyanın Doğası, Mekânsal Bilgi Teknolojileri, Doğal Sistemler ve Süreçler ve Beşerî Sistemler ve Süreçler.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=10&ders=cografya
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, sınav haftası lazım olacak. 📌
+#derskutusu #ortakyazılı #10sınıf #coğrafya #yazılısınavı
+```
+
+## seri-yazili-11-felsefe
+Sıra: 2026-11-06 00:48 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-11-felsefe-1.png
+
+```
+11. sınıf Felsefe ortak yazılısı için hazır kâğıtlar 📝
+11. sınıf Felsefe için 11 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 6 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Çevre Sorunları ve Felsefe, Teknoloji ve Hayat ve Akıl ve İnanç.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=11&ders=felsefe
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Faydalı bulduysanız Felsefe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #ortakyazılı #11sınıf #felsefe #yazılısınavı
+```
+
+## seri-yazili-12-matematik
+Sıra: 2026-11-06 01:03 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-12-matematik-1.png
+
+```
+12. sınıf Matematik: senaryonuzu seçin, kâğıdı indirin 📝
+12. sınıf Matematik için 15 sınav kâğıdı hazır: 1. ortak yazılı için 8 ve 2. ortak yazılı için 7 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Sayılar ve Cebir ve Geometri.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=12&ders=matematik
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #ortakyazılı #12sınıf #matematik #yazılısınavı
+```
+
+## seri-yazili-11-ingilizce
+Sıra: 2026-11-06 01:18 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-11-ingilizce-1.png
+
+```
+İngilizce ortak yazılısı: her senaryoya ayrı kâğıt 📝
+11. sınıf İngilizce için 10 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Future Jobs, Hobbies And Skills, Hard Times, What A Life ve Back To The Past.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=11&ders=ingilizce
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, sınav haftası lazım olacak. 📌
+#derskutusu #ortakyazılı #11sınıf #ingilizce #yazılısınavı
+```
+
+## seri-yazili-9-din-kulturu-ve-ahlak-bilgisi
+Sıra: 2026-11-06 01:33 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-9-din-kulturu-ve-ahlak-bilgisi-1.png
+
+```
+9. sınıf Din Kültürü ve Ahlak Bilgisi ortak yazılısı için hazır kâğıtlar 📝
+9. sınıf Din Kültürü ve Ahlak Bilgisi için 11 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 6 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Allah-İnsan İlişkisi, İslam’da İnanç Esasları ve İslam’da İbadetler.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=9&ders=din-kulturu-ve-ahlak-bilgisi
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Faydalı bulduysanız Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #ortakyazılı #9sınıf #dinkültürü #yazılısınavı
+```
+
+## seri-yazili-10-turk-dili-ve-edebiyati
+Sıra: 2026-11-06 01:48 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-10-turk-dili-ve-edebiyati-1.png
+
+```
+10. sınıf Türk Dili ve Edebiyatı: senaryonuzu seçin, kâğıdı indirin 📝
+10. sınıf Türk Dili ve Edebiyatı için 5 sınav kâğıdı hazır: 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Sözün Ezgisi ve Kelimelerin Ritmi.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=10&ders=turk-dili-ve-edebiyati
+Nasıl indirilir? Sayfada senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #ortakyazılı #10sınıf #türkdiliveedebiyatı #yazılısınavı
+```
+
+## seri-yazili-11-fizik
+Sıra: 2026-11-06 02:03 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-11-fizik-1.png
+
+```
+Fizik ortak yazılısı: her senaryoya ayrı kâğıt 📝
+11. sınıf Fizik için 9 sınav kâğıdı hazır: 1. ortak yazılı için 4 ve 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Kuvvet ve Hareket ve Elektrik ve Manyetizma.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=11&ders=fizik
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, sınav haftası lazım olacak. 📌
+#derskutusu #ortakyazılı #11sınıf #fizik #yazılısınavı
+```
+
+## seri-yazili-12-kimya
+Sıra: 2026-11-06 02:18 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-12-kimya-1.png
+
+```
+12. sınıf Kimya ortak yazılısı için hazır kâğıtlar 📝
+12. sınıf Kimya için 15 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 10 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Kimya ve Elektrik ve Karbon Kimyasına Giriş.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=12&ders=kimya
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Faydalı bulduysanız Kimya öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #ortakyazılı #12sınıf #kimya #yazılısınavı
+```
+
+## seri-yazili-9-biyoloji
+Sıra: 2026-11-06 02:33 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-9-biyoloji-1.png
+
+```
+9. sınıf Biyoloji: senaryonuzu seçin, kâğıdı indirin 📝
+9. sınıf Biyoloji için 6 sınav kâğıdı hazır: 1. ortak yazılı için 3 ve 2. ortak yazılı için 3 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Yaşam.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=9&ders=biyoloji
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #ortakyazılı #9sınıf #biyoloji #yazılısınavı
+```
+
+## seri-yazili-10-tarih
+Sıra: 2026-11-06 02:48 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-10-tarih-1.png
+
+```
+Tarih ortak yazılısı: her senaryoya ayrı kâğıt 📝
+10. sınıf Tarih için 12 sınav kâğıdı hazır: 1. ortak yazılı için 6 ve 2. ortak yazılı için 6 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Türkistan’dan Türkiye’ye (1040-1299) ve Beylikten Devlete Osmanlı (1299-1453).
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=10&ders=tarih
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, sınav haftası lazım olacak. 📌
+#derskutusu #ortakyazılı #10sınıf #tarih #yazılısınavı
+```
+
+## seri-yazili-12-cografya
+Sıra: 2026-11-06 03:03 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-12-cografya-1.png
+
+```
+12. sınıf Coğrafya ortak yazılısı için hazır kâğıtlar 📝
+12. sınıf Coğrafya için 12 sınav kâğıdı hazır: 1. ortak yazılı için 6 ve 2. ortak yazılı için 6 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Doğal Sistemler ve Beşeri Sistemler.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=12&ders=cografya
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Faydalı bulduysanız Coğrafya öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #ortakyazılı #12sınıf #coğrafya #yazılısınavı
+```
+
+## seri-yazili-10-matematik
+Sıra: 2026-11-06 03:18 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-10-matematik-1.png
+
+```
+10. sınıf Matematik: senaryonuzu seçin, kâğıdı indirin 📝
+10. sınıf Matematik için 10 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Geometrik Şekiller, İstatistiksel Araştırma Süreci, Sayılar ve Nicelikler ve Değişimler.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=10&ders=matematik
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #ortakyazılı #10sınıf #matematik #yazılısınavı
+```
+
+## seri-yazili-12-ingilizce
+Sıra: 2026-11-06 03:33 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-12-ingilizce-1.png
+
+```
+İngilizce ortak yazılısı: her senaryoya ayrı kâğıt 📝
+12. sınıf İngilizce için 10 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Music, Friendship, Human Rights, Coming Soon ve Psychology.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=12&ders=ingilizce
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, sınav haftası lazım olacak. 📌
+#derskutusu #ortakyazılı #12sınıf #ingilizce #yazılısınavı
+```
+
+## seri-yazili-12-din-kulturu-ve-ahlak-bilgisi
+Sıra: 2026-11-06 03:48 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-12-din-kulturu-ve-ahlak-bilgisi-1.png
+
+```
+12. sınıf Din Kültürü ve Ahlak Bilgisi ortak yazılısı için hazır kâğıtlar 📝
+12. sınıf Din Kültürü ve Ahlak Bilgisi için 12 sınav kâğıdı hazır: 1. ortak yazılı için 6 ve 2. ortak yazılı için 6 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: İslam ve Bilim, Anadolu'da İslam ve İslam Düşüncesinde Tasavvufi Yorumlar.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=12&ders=din-kulturu-ve-ahlak-bilgisi
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Faydalı bulduysanız Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #ortakyazılı #12sınıf #dinkültürü #yazılısınavı
+```
+
+## seri-yazili-9-turk-dili-ve-edebiyati
+Sıra: 2026-11-06 04:03 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-9-turk-dili-ve-edebiyati-1.png
+
+```
+9. sınıf Türk Dili ve Edebiyatı: senaryonuzu seçin, kâğıdı indirin 📝
+9. sınıf Türk Dili ve Edebiyatı için 7 sınav kâğıdı hazır: 1. ortak yazılı için 3 ve 2. ortak yazılı için 4 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Sözün İnceliği ve Anlam Arayışı.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=9&ders=turk-dili-ve-edebiyati
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #ortakyazılı #9sınıf #türkdiliveedebiyatı #yazılısınavı
+```
+
+## seri-yazili-10-fizik
+Sıra: 2026-11-06 04:18 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-10-fizik-1.png
+
+```
+Fizik ortak yazılısı: her senaryoya ayrı kâğıt 📝
+10. sınıf Fizik için 9 sınav kâğıdı hazır: 1. ortak yazılı için 4 ve 2. ortak yazılı için 5 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Kuvvet ve Hareket ve Enerji.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=10&ders=fizik
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, sınav haftası lazım olacak. 📌
+#derskutusu #ortakyazılı #10sınıf #fizik #yazılısınavı
+```
+
+## seri-yazili-9-kimya
+Sıra: 2026-11-06 04:33 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-9-kimya-1.png
+
+```
+9. sınıf Kimya ortak yazılısı için hazır kâğıtlar 📝
+9. sınıf Kimya için 14 sınav kâğıdı hazır: 1. ortak yazılı için 5 ve 2. ortak yazılı için 9 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Etkileşim ve Çeşitlilik.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=9&ders=kimya
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Faydalı bulduysanız Kimya öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #ortakyazılı #9sınıf #kimya #yazılısınavı
+```
+
+## seri-yazili-10-biyoloji
+Sıra: 2026-11-06 04:48 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-10-biyoloji-1.png
+
+```
+10. sınıf Biyoloji: senaryonuzu seçin, kâğıdı indirin 📝
+10. sınıf Biyoloji için 6 sınav kâğıdı hazır: 1. ortak yazılı için 3 ve 2. ortak yazılı için 3 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Enerji.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=10&ders=biyoloji
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #ortakyazılı #10sınıf #biyoloji #yazılısınavı
+```
+
+## seri-yazili-11-cografya
+Sıra: 2026-11-06 05:03 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-yazili-11-cografya-1.png
+
+```
+Coğrafya ortak yazılısı: her senaryoya ayrı kâğıt 📝
+11. sınıf Coğrafya için 12 sınav kâğıdı hazır: 1. ortak yazılı için 6 ve 2. ortak yazılı için 6 senaryo. Her senaryonun kâğıdı ayrı; hepsinin cevap anahtarı var.
+Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular özgün ve MEB ders kitabıyla uyumlu. Her kâğıt 2 sayfa, sınav süresi 40 dakika.
+Üniteler: Coğrafyanın Doğası, Mekânsal Bilgi Teknolojileri, Doğal Sistemler ve Süreçler, Beşerî Sistemler ve Süreçler ve Ekonomik Faaliyetler ve Etkileri.
+👉 Doğrudan ders sayfası: https://derskutusu.com/yazili?sinif=11&ders=cografya
+Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, sınav haftası lazım olacak. 📌
+#derskutusu #ortakyazılı #11sınıf #coğrafya #yazılısınavı
 ```
