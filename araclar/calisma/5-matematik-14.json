@@ -1,0 +1,238 @@
+{
+  "sinif": 5,
+  "ders": "matematik",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Doğal Sayılarla Dört İşlem İçeren Problem Çözme Dikdörtgenin Çevre Uzunluğu ve Alanı",
+  "ciktilar": [
+    "MAT.5.1.2. Doğal sayılar ve işlemler içeren gerçek yaşam problemlerini çözebilme: Çok adımlı problemlerde uygun stratejileri seçer, uygular, sonucu tahminle karşılaştırır ve çözüm yollarını geneller.",
+    "MAT.5.4.1. Kenar uzunlukları doğal sayı olan bir dikdörtgenin çevre uzunluğu verildiğinde kenar uzunluklarını yorumlayabilme: Aynı çevreye sahip dikdörtgenlerin olası kenar çiftlerini ve alan değişimini analiz eder."
+  ],
+  "hatirla": [
+    "Kenarları a ve b olan dikdörtgenin çevresi Ç = 2 x (a + b), yarı çevresi a + b = Ç ÷ 2 ve alanı A = a x b'dir.",
+    "Çevresi sabit olan dikdörtgenlerde kenarlar birbirine yaklaştıkça alan büyür, uzaklaştıkça alan küçülür.",
+    "Alanı sabit olan dikdörtgenlerde ise kenarlar birbirine yaklaştıkça çevre küçülür, uzaklaştıkça çevre büyür."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "sutun": "sol",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki dikdörtgen ve problem bilgilerini doğru sayısal sonuçlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Çevresi 28 cm olan dikdörtgenin yarı çevresi (a + b)",
+          "14 cm"
+        ],
+        [
+          "Çevresi 28 cm olan dikdörtgenin en büyük doğal sayı alanı (7 x 7)",
+          "49 {us:cm|2}"
+        ],
+        [
+          "Çevresi 28 cm olan dikdörtgenin en küçük doğal sayı alanı (1 x 13)",
+          "13 {us:cm|2}"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "sutun": "sol",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki gibi 36 cm uzunluğundaki bir telin tamamıyla kenarları doğal sayı olan bir dikdörtgen yapılıyor. Alanı en fazla kaç {us:cm|2} olur?",
+      "secenekler": [
+        "17 {us:cm|2}",
+        "72 {us:cm|2}",
+        "80 {us:cm|2}",
+        "81 {us:cm|2}"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "tablo",
+      "sutun": "sol",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki alanı 24 {us:cm|2} olan dikdörtgenlerin doğal sayı kenar çiftlerine göre çevre uzunluklarını tabloda tamamlayınız.",
+      "basliklar": [
+        "Kısa ve Uzun Kenar Çifti",
+        "Yarı Çevre (a + b)",
+        "Çevre Uzunluğu 2 x (a + b)"
+      ],
+      "satirlar": [
+        [
+          "1 cm ve 24 cm (Kenarlar en uzak)",
+          "1 + 24 = 25 cm",
+          {
+            "b": "50 cm (En büyük çevre)"
+          }
+        ],
+        [
+          "2 cm ve 12 cm",
+          "2 + 12 = 14 cm",
+          {
+            "b": "28 cm"
+          }
+        ],
+        [
+          "4 cm ve 6 cm (Kenarlar en yakın)",
+          "4 + 6 = 10 cm",
+          {
+            "b": "20 cm (En küçük çevre)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "sutun": "sol",
+      "duzey": "hatirla",
+      "soru": "Dört işlem problemleri ile dikdörtgenin çevre ve alanı hakkındaki ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Kenar uzunlukları doğal sayı olan bir dikdörtgenin çevre uzunluğu daima çift bir doğal sayıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Çevre uzunlukları birbirine eşit olan iki farklı dikdörtgenin alanları da her zaman birbirine eşittir.",
+          "dogru": false
+        },
+        {
+          "metin": "148 öğrencinin 45 kişilik otobüslere taşınması probleminde kalan 13 öğrenci için 1 otobüs daha gerekir (3 + 1 = 4).",
+          "dogru": true
+        },
+        {
+          "metin": "İki dikdörtgen birer kenarından yapıştırıldığında oluşan yeni şeklin çevresi, iki çevrenin toplamına eşittir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "sutun": "sol",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun sayı ve kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Çevresi 40 cm olan bir dikdörtgenin kısa kenarı 8 cm ise uzun kenarı ___ cm'dir.",
+          "cevap": "12"
+        },
+        {
+          "metin": "Aynı çevreye sahip dikdörtgenlerde kenar uzunlukları birbirine yaklaştıkça dikdörtgenin alanı ___.",
+          "cevap": "büyür"
+        },
+        {
+          "metin": "Biri diğerinin 3 katından 10 fazla olan iki sayının toplamı 90 ise küçük sayı ___ olur.",
+          "cevap": "20"
+        }
+      ],
+      "fazla": [
+        "küçülür"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "sutun": "sol",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki okul kütüphanesine her kolide 24 kitap bulunan 15 koli kitap gelmiştir. 40 kitap ayrılıp kalanlar 8 rafa eşit dizilirse her rafa kaç kitap düşer?",
+      "secenekler": [
+        "38 kitap",
+        "40 kitap",
+        "42 kitap",
+        "45 kitap"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "sutun": "sag",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kısa kenarı 12 m, uzun kenarı 20 m olan bahçenin etrafına 3 m kapı boşluğu bırakılarak 2 sıra tel çekilecektir. Kaç metre tel gerekir?",
+      "secenekler": [
+        "61 metre",
+        "122 metre",
+        "125 metre",
+        "128 metre"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "sutun": "sag",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki birer kısa kenarı (4 cm) çakıştırılarak birleştirilen eş iki dikdörtgenin (4 cm x 9 cm) oluşturduğu yeni şeklin dış çevresi kaç cm'dir?",
+      "cevap": "Uzun kenar 9 + 9 = 18 cm olur, kısa kenar 4 cm kalır. Yeni dış çevre = 2 x.",
+      "satir": 4
+    },
+    {
+      "tur": "siralama",
+      "sutun": "sag",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki alanı 36 {us:cm|2} olan dört dikdörtgeni çevre uzunluklarına göre {koyu:en küçükten en büyüğe} doğru 1'den 4'e sıralayınız.",
+      "ogeler": [
+        "1. Kenarları 6 cm ve 6 cm olan dikdörtgen (Çevre = 24 cm)",
+        "2. Kenarları 4 cm ve 9 cm olan dikdörtgen (Çevre = 26 cm)",
+        "3. Kenarları 3 cm ve 12 cm olan dikdörtgen (Çevre = 30 cm)",
+        "4. Kenarları 2 cm ve 18 cm olan dikdörtgen (Çevre = 40 cm)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "sutun": "sag",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki kumbarada Kerem'in parası, Elif'in parasının 4 katından 15 TL eksiktir. İkisinin paraları toplamı 235 TL ise Elif'in kaç TL'si vardır?",
+      "secenekler": [
+        "44 TL",
+        "50 TL",
+        "185 TL",
+        "200 TL"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "sifre",
+      "sutun": "sag",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki matematik kavramlarını yazarak numaralı harflerle yüzey miktarı kavramını (şifreyi) bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Sayıları birbirine ekleyerek yapılan temel işlem",
+          "cevap": "TOPLAMA",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Bölme işleminde bölünenin bölene eşit paylaştırılması sonucu",
+          "cevap": "BÖLÜM",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Dikdörtgenin alanını bulurken kısa ve uzun kenar arasında yapılan işlem",
+          "cevap": "ÇARPMA",
+          "anahtar": 5
+        },
+        {
+          "ipucu": "Dikdörtgeni sınırlayan doğru parçalarından her biri",
+          "cevap": "KENAR",
+          "anahtar": 2
+        }
+      ],
+      "sonuc": "ALAN"
+    },
+    {
+      "tur": "acik",
+      "sutun": "sag",
+      "duzey": "ust",
+      "soru": "Çevresi 32 m olan dikdörtgen bir bahçenin alanının en büyük ve en küçük doğal sayı değerlerini bularak karşılaştırınız.",
+      "cevap": "Yarı çevre 16 m'dir. Kenarlar 8 m ve 8 m seçilirse en büyük alan 64 {us:m|2}; 1 m ve 15 m seçilirse en küçük alan 15 {us:m|2} olur.",
+      "satir": 4
+    }
+  ]
+}

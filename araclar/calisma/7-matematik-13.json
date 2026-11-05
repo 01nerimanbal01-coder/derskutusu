@@ -1,0 +1,244 @@
+{
+  "sinif": 7,
+  "ders": "matematik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Nicel (Sürekli) Verilerde Gruplandırılmış Veri Tablosu, Histogram, Çizgi ve Daire Grafiği Yorumlama ile Veriye Dayalı Karar Verme (MAT.7.6.1)",
+  "ciktilar": [
+    "Kategorik veya nicel (sürekli) veri dağılımlarını nokta grafiği, çizgi grafiği, sütun grafiği ve daire grafiği ile görselleştirerek grafikler arası dönüşüm yapar (MAT.7.6.1.d-e).",
+    "Veri setindeki uç (aykırı) değerlerin aritmetik ortalama ve ortanca üzerindeki etkisini analiz ederek uygun özetleme aracını gerekçeleriyle seçer (MAT.7.6.1.d-f).",
+    "Açıklık ve ortalama mutlak sapma değerlerini hesaplayarak iki farklı veri grubunun tutarlılığını karşılaştırır ve veriye dayalı karar verir (MAT.7.6.1.e-g)."
+  ],
+  "hatirla": [
+    "Nokta grafiği yığılma ve uç değerleri; çizgi grafiği ise zamana bağlı sürekli değişimi gösterir.",
+    "Daire grafiği 360° (%100) olup merkez açı: {kesir:Grup Verisi|Toplam Veri} × 360° ile bulunur.",
+    "Uç değer varsa ortanca seçilir; ortalaması eşit gruplardan OMS’si küçük olan daha tutarlıdır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Sol sütundaki veri analizi kavramlarını sağ sütundaki görevleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Nokta Grafiği",
+          "Verilerdeki yığılmayı, simetriyi ve uç değerleri sayı doğrusunda gösterme"
+        ],
+        [
+          "Ortanca (Medyan)",
+          "Aşırı uç değer bulunan veri setinde merkezi en doğru temsil eden ölçü"
+        ],
+        [
+          "Ortalama Mutlak Sapma",
+          "Verilerin aritmetik ortalamaya olan mutlak uzaklıklarının ortalaması"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki nokta grafiğinde 7 öğrencinin günlük okuduğu sayfa sayıları verilmiştir. Hangi değer {koyu:uç değerdir} ve grup hangi ölçüyle özetlenmelidir?",
+      "secenekler": [
+        "20 uç değerdir; aritmetik ortalama seçilmelidir.",
+        "90 uç değerdir; ortanca (medyan = 25) seçilmelidir.",
+        "25 uç değerdir; tepe değer (mod) seçilmelidir.",
+        "Uç değer yoktur; açıklık seçilmelidir."
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki spor kulübünün toplam 120 öğrencilik branş dağılımını yüzdelik ve daire grafiği merkez açısıyla tamamlayınız.",
+      "basliklar": [
+        "Branş ve Öğrenci",
+        "Bütündeki Yüzdesi",
+        "Merkez Açısı"
+      ],
+      "satirlar": [
+        [
+          "Yüzme (30 öğrenci)",
+          "%25 ({kesir:1|4})",
+          {
+            "b": "90°"
+          }
+        ],
+        [
+          "Basketbol (60 öğrenci)",
+          "%50 ({kesir:1|2})",
+          {
+            "b": "180°"
+          }
+        ],
+        [
+          "Okçuluk (24 öğrenci)",
+          "%20 ({kesir:1|5})",
+          {
+            "b": "72°"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Grafik yorumlama ve veriye dayalı karar verme ifadelerinden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Bir bütünün %10’unu temsil eden dilimin daire grafiğindeki merkez açısı 36 derecedir.",
+          "dogru": true
+        },
+        {
+          "metin": "Veri setine çok büyük bir uç değer eklendiğinde aritmetik ortalama hiç değişmez.",
+          "dogru": false
+        },
+        {
+          "metin": "Ortalamaları eşit iki gruptan ortalama mutlak sapması küçük olan daha istikrarlıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Zamana bağlı sıcaklık değişimini göstermek için en uygun araç daire grafiğidir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki 5 günlük sıcaklık çizgi grafiğine göre sıcaklıkların {koyu:açıklığı} ve {koyu:aritmetik ortalaması} kaç °C’dir?",
+      "secenekler": [
+        "Açıklık: 8 °C — Ortalama: 18 °C",
+        "Açıklık: 10 °C — Ortalama: 20 °C",
+        "Açıklık: 12 °C — Ortalama: 20 °C",
+        "Açıklık: 10 °C — Ortalama: 22 °C"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki şemaya göre bir veri grubunun {koyu:ortalama mutlak sapmasını (OMS)} hesaplama adımlarını baştan sona sıralayınız.",
+      "ogeler": [
+        "Verilerin toplamını veri sayısına bölerek aritmetik ortalamayı bulma",
+        "Her bir verinin aritmetik ortalamaya olan pozitif uzaklığını (mutlak farkını) hesaplama",
+        "Bulunan tüm mutlak uzaklık değerlerini birbiriyle toplama",
+        "Uzaklıklar toplamını veri sayısına bölerek ortalama mutlak sapmaya ulaşma"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki atış puanları tablosuna göre ortalamaları 10 olan Kaan ve Mert’in {koyu:ortalama mutlak sapmaları} ve tutarlılık kararı hangisidir?",
+      "secenekler": [
+        "Kaan OMS = 1,2; Mert OMS = 3,2 → Kaan daha istikrarlıdır.",
+        "Kaan OMS = 3,2; Mert OMS = 1,2 → Mert daha istikrarlıdır.",
+        "Her ikisinin OMS değeri 2,0 olup tutarlılıkları eşittir.",
+        "Mert’in açıklığı büyük olduğu için Mert daha istikrarlıdır."
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Çok sayıdaki sürekli veriyi eşit genişlikli aralıklara ayırarak ___ sıklık tablosu oluşturulur.",
+          "cevap": "gruplandırılmış"
+        },
+        {
+          "metin": "Daire grafiğinde bütünün üçte birini ({kesir:1|3}) gösteren dilimin merkez açısı ___ derecedir.",
+          "cevap": "120"
+        },
+        {
+          "metin": "Verilerin ortada yoğunlaşıp iki yana dengeli dağıldığı nokta grafiğine ___ dağılım denir.",
+          "cevap": "simetrik"
+        }
+      ],
+      "fazla": [
+        "olasılık"
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki boy uzunluğu gruplandırılmış sıklık tablosuna göre sınıfta {koyu:150 cm ve üzerinde} boya sahip kaç öğrenci vardır?",
+      "cevap": "150–159 cm aralığında 11, 160–169 cm’de 6 öğrenci vardır; toplam 11 + 6 = 17 öğrencidir.",
+      "satir": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki daire grafiğinde 180 kitaplık sınıf kitaplığının tür dağılımı verilmiştir. Kitaplıkta kaç adet {koyu:bilim kitabı} vardır?",
+      "secenekler": [
+        "27 adet bilim kitabı vardır.",
+        "36 adet bilim kitabı vardır.",
+        "40 adet bilim kitabı vardır.",
+        "45 adet bilim kitabı vardır."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarındaki kavramları yazarak verilerin ortalamadan uzaklaşma ölçüsünü belirten şifreyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Verilerin ortada toplanıp iki yana eşit dağılması (8 harf)",
+          "cevap": "SİMETRİK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "En büyük veri ile en küçük veri arasındaki fark (7 harf)",
+          "cevap": "AÇIKLIK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Daire grafiğinde her kategorinin bütünden aldığı dilim oranı (3 harf)",
+          "cevap": "PAY",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Uç değer olduğunda seçilen ortanca değerin diğer adı (6 harf)",
+          "cevap": "MEDYAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Daire dilimlerinin merkezde oluşturduğu geometrik açıklık (3 harf)",
+          "cevap": "AÇI",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "SAPMA"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki 6 çalışan maaş verisinde (22, 24, 25, 25, 26 ve 128 bin TL) grubu temsil için aritmetik ortalama mı yoksa ortanca mı seçilmelidir? Açıklayınız.",
+      "cevap": "128 bin TL uç değerdir ve ortalamayı saptırır; bu yüzden 25 bin TL olan ortanca seçilmelidir.",
+      "satir": 3
+    }
+  ]
+}

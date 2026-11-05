@@ -1,0 +1,242 @@
+{
+  "sinif": 6,
+  "ders": "matematik",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Kategorik ve Nicel (Kesikli) Veri Dağılımları",
+  "ciktilar": [
+    "MAT.6.5.1. Kategorik veya nicel (kesikli) veri ile çalışabilme ve veriye dayalı karar verebilme (ç. Verileri görselleştirir ve özetler, d. Bulguları yorumlar, e. İstatistiksel sonuç ve çıkarımları tartışır)."
+  ],
+  "hatirla": [
+    "Kategorik veride {koyu:sütun/daire}; kesikli nicel veride {koyu:nokta} ve {koyu:kök-yaprak} seçilir.",
+    "Ortalama = {kesir:Toplam|Veri Sayısı}; {koyu:ortanca} ortadaki, {koyu:tepe değer} en sık değerdir.",
+    "Açıklık = En Büyük - En Küçük; uç değer varken {koyu:ortanca}, eşit ortalamada {koyu:küçük açıklık} seçilir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "sutun": "sol",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki «12, 15, 15, 18, 20» veri kartına göre istatistiksel ölçüleri sonuçlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Aritmetik Ortalama ({kesir:Toplam|Veri Sayısı})",
+          "16 ({kesir:80|5} işleminin sonucu)"
+        ],
+        [
+          "Ortanca (Medyan) ve Tepe Değer (Mod)",
+          "15 (Ortadaki ve en çok tekrar eden)"
+        ],
+        [
+          "Açıklık (En Büyük - En Küçük)",
+          "8 (20 - 12 işleminin sonucu)"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "sutun": "sol",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kök-yaprak gösteriminde 9 öğrencinin puanları verilmiştir. Ortanca (medyan) ve açıklık kaçtır?",
+      "secenekler": [
+        "Ortanca: 72, Açıklık: 20",
+        "Ortanca: 75, Açıklık: 22",
+        "Ortanca: 75, Açıklık: 24",
+        "Ortanca: 79, Açıklık: 22"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "sutun": "sol",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki araştırma konularının veri türünü ve en uygun görselleştirme aracını tabloda tamamlayınız.",
+      "basliklar": [
+        "Araştırma Konusu",
+        "Veri Türü",
+        "Uygun Görsel Araç"
+      ],
+      "satirlar": [
+        [
+          "Sevilen spor dallarının bütündeki payı",
+          "Kategorik veri",
+          {
+            "b": "Daire veya sütun grafiği"
+          }
+        ],
+        [
+          "12 öğrencinin kardeş sayıları dağılımı",
+          "Nicel (kesikli) veri",
+          {
+            "b": "Nokta grafiği"
+          }
+        ],
+        [
+          "20 öğrencinin iki basamaklı sınav puanları",
+          "Nicel (kesikli) veri",
+          {
+            "b": "Kök-yaprak gösterimi"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "sutun": "sol",
+      "duzey": "hatirla",
+      "soru": "Veri görselleştirme ve merkezi eğilim ölçüleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Kök-yaprak gösteriminde yaprak sütunundaki rakamların toplam adedi veri sayısına eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Veri grubunda aşırı büyük bir uç değer bulunduğunda grubu en iyi aritmetik ortalama temsil eder.",
+          "dogru": false
+        },
+        {
+          "metin": "Ortalamaları eşit olan iki gruptan açıklığı daha küçük olan grubun verileri daha tutarlıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Kök-yaprak gösteriminde verisi olmayan ara kök satırı tablodan tamamen silinir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "sutun": "sol",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Bir veri grubunda en çok tekrar eden değere ___ (mod) adı verilir.",
+          "cevap": "tepe değer"
+        },
+        {
+          "metin": "Küçükten büyüğe sıralı çift sayıda veride ortadaki iki sayının ortalaması ___ verir.",
+          "cevap": "ortancayı"
+        },
+        {
+          "metin": "Sütun grafiğinde dikey eksenin sıfırdan başlamaması ___ yorumlara yol açar.",
+          "cevap": "yanıltıcı"
+        }
+      ],
+      "fazla": [
+        "açıklığı"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "sutun": "sol",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki nokta grafiğinde 8 öğrencinin okuduğu kitap sayıları verilmiştir. Ortalama ve tepe değer kaçtır?",
+      "secenekler": [
+        "Ortalama: 4, Tepe değer: 2",
+        "Ortalama: 3, Tepe değer: 4",
+        "Ortalama: 4, Tepe değer: 7",
+        "Ortalama: 5, Tepe değer: 2"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "sutun": "sag",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki 5 günlük soru sayılarında «65» uç değerdir. Grubu en doğru temsil eden ölçü ve değeri hangisidir?",
+      "secenekler": [
+        "Aritmetik ortalama: 25",
+        "Açıklık: 51",
+        "Ortanca (medyan): 15",
+        "En büyük değer: 65"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "kisa",
+      "sutun": "sag",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki iki okçunun ortalaması da 80 puandır. Turnuvaya hangisi seçilmelidir? Açıklıkla açıklayınız.",
+      "cevap": "Efe seçilmelidir; açıklığı daha küçük (4 < 30) olduğu için atışları çok daha istikrarlıdır.",
+      "satir": 3
+    },
+    {
+      "tur": "siralama",
+      "sutun": "sag",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki K, L, M ve N veri gruplarını açıklıklarına göre {koyu:en tutarlıdan en dağınığa} 1’den 4’e sıralayınız.",
+      "ogeler": [
+        "1. K Grubu: En küçük 18, en büyük 24 (Açıklık = 6)",
+        "2. L Grubu: En küçük 12, en büyük 22 (Açıklık = 10)",
+        "3. M Grubu: En küçük 25, en büyük 40 (Açıklık = 15)",
+        "4. N Grubu: En küçük 10, en büyük 32 (Açıklık = 22)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "sutun": "sag",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki sütun grafiğinde B mağazasının satışı A’nın 3 katı gibi görünmektedir. Bunun yanıltıcı nedeni nedir?",
+      "secenekler": [
+        "Yatay eksende mağaza adlarının harfle gösterilmesi",
+        "Sütunların farklı renklerle boyanmış olması",
+        "Verilerin tam sayılarla ifade edilmesi",
+        "Dikey eksenin 0 yerine 90’dan başlatılması"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "sutun": "sag",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki istatistik kavramlarını yazarak numaralı harflerle kesikli grafik türünü (şifreyi) bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Sayma veya ölçmeyle elde edilen sayısal veri türü",
+          "cevap": "NİCEL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "En çok tekrar eden tepe değerin üç harfli diğer adı",
+          "cevap": "MOD",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "İki basamaklı veride onlar basamağının yazıldığı sütun",
+          "cevap": "KÖK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sıralı veri grubunun tam ortasındaki değer (medyan)",
+          "cevap": "ORTANCA",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "En büyük değer ile en küçük değer arasındaki fark",
+          "cevap": "AÇIKLIK",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "NOKTA"
+    },
+    {
+      "tur": "acik",
+      "sutun": "sag",
+      "duzey": "ust",
+      "soru": "Kök-yaprak gösteriminin normal sütun grafiğine göre sağladığı en önemli üstünlüğü kısaca açıklayınız.",
+      "cevap": "Hiçbir bireysel veri değeri kaybolmaz ve tüm veriler küçükten büyüğe sıralı biçimde korunur.",
+      "satir": 3
+    }
+  ]
+}

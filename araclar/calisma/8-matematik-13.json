@@ -1,0 +1,244 @@
+{
+  "sinif": 8,
+  "ders": "matematik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Bir Olayın Olma Olasılığı: Deney, Çıktı, Örnek Uzay, Olay, Eş Olasılıklı Olaylar, Kesin Olay (1) ve İmkânsız Olay (0) Kavramları (M.8.5.1.1 - M.8.5.1.4)",
+  "ciktilar": [
+    "Bir olaya ait olası durumları belirler; deney, çıktı, örnek uzay ve olay kavramlarını örneklerle açıklar (M.8.5.1.1).",
+    "'Daha fazla', 'eşit' ve 'daha az' olasılıklı olayları ayırt eder; eşit şansa sahip olan olaylarda her bir çıktının olasılık değerinin 1/n olduğunu kavrar (M.8.5.1.2 & M.8.5.1.3).",
+    "Olasılık değerinin 0 ile 1 arasında (0 ve 1 dahil) olduğunu, imkânsız olayın olasılığının 0, kesin olayın olasılığının 1 olduğunu ve tümleyen ilişkisini uygular (M.8.5.1.4 & M.8.5.1.5)."
+  ],
+  "hatirla": [
+    "Olasılık: P(A) = {kesir:İstenen Çıktı Sayısı|Tüm Çıktıların Sayısı} olup 0 ≤ P(A) ≤ 1 aralığındadır.",
+    "n eş olasılıklı çıktının her birinin olasılığı {kesir:1|n}’dir; imkânsız olay 0, kesin olay 1’dir.",
+    "Bir olayın olma olasılığı ile olmama (tümleyen) olasılığının toplamı daima 1’e eşittir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Sol sütundaki olasılık kavramlarını sağ sütundaki matematiksel karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Örnek Uzay (Tüm Olası Durumlar)",
+          "Bir deneyde gerçekleşebilecek bütün çıktıların oluşturduğu küme"
+        ],
+        [
+          "İmkânsız Olay ve Kesin Olay",
+          "Gerçekleşme olasılığı 0 olan olay ile olasılığı 1 (%100) olan olay"
+        ],
+        [
+          "Eş Olasılıklı n Çıktıdan Her Biri",
+          "Her bir tekil çıktının {kesir:1|n} eşit şansa sahip olması"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki özdeş harf kartları («MATEMATİK») torbaya atılıp rastgele bir kart çekiliyor. Hangi harfin gelme olasılığı {koyu:eş olasılıklı değildir}?",
+      "secenekler": [
+        "M ve A harflerinin gelmesi (ikisi de 2’şer adet)",
+        "A ve T harflerinin gelmesi (ikisi de 2’şer adet)",
+        "E ve K harflerinin gelmesi (ikisi de 1’er adet)",
+        "M ve İ harflerinin gelmesi (biri 2, diğeri 1 adet)"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki hilesiz zar atma deneyinde verilen olayların olasılık değerini en sade kesir veya tam sayıyla yazınız.",
+      "basliklar": [
+        "Zar Deneyindeki Olay",
+        "İstenen Çıktılar",
+        "Olasılık Değeri"
+      ],
+      "satirlar": [
+        [
+          "Üst yüze asal sayı gelmesi",
+          "{2, 3, 5} (3 çıktı)",
+          {
+            "b": "{kesir:1|2}"
+          }
+        ],
+        [
+          "Üst yüze 7 gelmesi (İmkânsız)",
+          "Boş küme (0 çıktı)",
+          {
+            "b": "0"
+          }
+        ],
+        [
+          "Üst yüze 7’den küçük sayı gelmesi",
+          "{1,2,3,4,5,6} (6 çıktı)",
+          {
+            "b": "1 (Kesin Olay)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Basit olayların olma olasılığıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Hiçbir olayın olma olasılığı negatif veya 1’den büyük ({kesir:5|4} gibi) olamaz.",
+          "dogru": true
+        },
+        {
+          "metin": "8 eş dilimli bir çarkta her bir dilimin gelme olasılığı {kesir:1|8}’dir.",
+          "dogru": true
+        },
+        {
+          "metin": "Yağmur yağma olasılığı %35 ise yağmama olasılığı %75’tir.",
+          "dogru": false
+        },
+        {
+          "metin": "Hilesiz bir madeni para atıldığında yazı gelmesi ile tura gelmesi eş olasılıklıdır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki torbada özdeş 4 kırmızı, 5 mavi ve 3 sarı top vardır. Rastgele çekilen bir topun {koyu:mavi olmama} olasılığı kaçtır?",
+      "secenekler": [
+        "{kesir:5|12}",
+        "{kesir:7|12}",
+        "{kesir:1|3}",
+        "{kesir:3|4}"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki 4 olayın gerçekleşme olasılıklarını {koyu:en küçükten en büyüğe} (0’dan 1’e doğru) sıralayınız.",
+      "ogeler": [
+        "Sadece rakam yazılı kartlardan iki basamaklı sayı çekilmesi (Olasılık = 0)",
+        "Hilesiz bir zarda üst yüze 6 gelmesi olayı (Olasılık = {kesir:1|6})",
+        "Hilesiz bir madeni parada üst yüze tura gelmesi olayı (Olasılık = {kesir:1|2})",
+        "{2, 4, 6, 8} kartlarından rastgele seçilen sayının çift olması (Olasılık = 1)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki sınıf tablosundan rastgele seçilen bir öğrencinin {koyu:gözlüklü kız öğrenci} olma olasılığı kaçtır?",
+      "secenekler": [
+        "{kesir:1|5}",
+        "{kesir:3|10}",
+        "{kesir:2|5}",
+        "{kesir:1|6}"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun olasılık kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Sonucu önceden kesin olarak bilinemeyen rastgele işlemlere olasılıkta ___ denir.",
+          "cevap": "deney"
+        },
+        {
+          "metin": "Bir olayın olma olasılığı {kesir:3|8} ise olmama (tümleyen) olasılığı ___ değerine eşittir.",
+          "cevap": "{kesir:5|8}"
+        },
+        {
+          "metin": "Gerçekleşmesi her durumda %100 garanti olan olaya ___ olay adı verilir.",
+          "cevap": "kesin"
+        }
+      ],
+      "fazla": [
+        "medyan"
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki 1’den 20’ye kadar (1 ve 20 dâhil) numaralı kartlardan çekilen kartın {koyu:tam kare sayı} olma olasılığını en sade kesirle bulunuz.",
+      "cevap": "Tam kare çıktılar {1, 4, 9, 16} olup 4 tanedir. Olasılık = {kesir:4|20} = {kesir:1|5} bulunur.",
+      "satir": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki daire grafiğine göre kulüpten rastgele seçilen bir öğrencinin {koyu:Robotik} bölümünde olma olasılığı kaçtır?",
+      "secenekler": [
+        "{kesir:1|4}",
+        "{kesir:5|12}",
+        "{kesir:1|3}",
+        "{kesir:1|6}"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarındaki kavramları yazarak bir deneyde elde edilebilecek sonuçların her birini belirten şifreyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Eş dilimlere ayrılıp döndürülen olasılık aracı (4 harf)",
+          "cevap": "ÇARK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Madeni parada «tura» dışındaki diğer olası sonuç (4 harf)",
+          "cevap": "YAZI",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Gerçekleşme olasılığı 1 olan olay türü (5 harf)",
+          "cevap": "KESİN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İçinden rastgele renkli bilye çekilen deney kabı (5 harf)",
+          "cevap": "TORBA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Rakamların bir araya gelerek oluşturduğu matematiksel çokluk (4 harf)",
+          "cevap": "SAYI",
+          "anahtar": 3
+        }
+      ],
+      "sonuc": "ÇIKTI"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki kutuda 6 beyaz ve bir miktar siyah top vardır. Siyah çekilme olasılığı {kesir:2|5} ise kutuda kaç siyah top vardır?",
+      "cevap": "Beyaz olasılığı {kesir:3|5}’tir. 3 pay = 6 beyaz ise 1 pay = 2’dir; siyah = 2 × 2 = 4 toptur.",
+      "satir": 2
+    }
+  ]
+}

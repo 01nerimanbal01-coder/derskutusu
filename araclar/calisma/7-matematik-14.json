@@ -1,0 +1,258 @@
+{
+  "sinif": 7,
+  "ders": "matematik",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Kategorik ve Nicel (Sürekli) Veri Dağılımları: Grafik Dönüşümleri, Merkezi Eğilim ve Yayılım Ölçüleri ile Karar Verme",
+  "ciktilar": [
+    "Kategorik ve nicel (kesikli/sürekli) verileri gerektiren istatistiksel araştırma soruları oluşturur ve uygun veri toplama planı yapar (MAT.7.6.1.a-c).",
+    "Veri dağılımlarını nokta, çizgi, sütun ve daire grafikleriyle görselleştirir; aritmetik ortalama, ortanca, tepe değer, açıklık ve ortalama mutlak sapma ile yorumlar (MAT.7.6.1.d-e).",
+    "İstatistiksel sonuçları ve merkezi eğilim-yayılım ölçülerini kullanarak iki veri grubunu karşılaştırır, karar verir ve gerekirse araştırma sürecini yeniden planlar (MAT.7.6.1.f-g)."
+  ],
+  "hatirla": [
+    "Parça-bütün oranında daire grafiği (Açı = {kesir:Veri|Toplam} · 360°), karşılaştırmada sütun grafiği seçilir.",
+    "Veri grubunda çok küçük veya çok büyük uç (aykırı) değer varsa ortanca (medyan) daha güvenilirdir.",
+    "Açıklık = En büyük değer - En küçük değerdir; açıklık küçüldükçe verilerin tutarlılığı artar."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Veri analizi grafik türlerini ve istatistiksel ölçüleri kullanım amaçlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Daire Grafiği",
+          "Bir bütünün parçalarının bütüne olan oranını merkez açılarla (360°) gösterme"
+        ],
+        [
+          "Çizgi Grafiği",
+          "Bir verinin zamana bağlı (saat, gün, ay, yıl) sürekli değişimini izleme"
+        ],
+        [
+          "Ortanca (Medyan)",
+          "Uç (aykırı) değer bulunan veri gruplarında merkezi eğilimi temsil etme"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"7-matematik-14 grafik ve ölçü kartları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"19.0\" text-anchor=\"middle\" font-size=\"9.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">GRAFİK TÜRLERİ VE İSTATİSTİKSEL ÖLÇÜLER</text><rect x=\"10\" y=\"27\" width=\"80\" height=\"77\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"44.0\" text-anchor=\"middle\" font-size=\"8.3\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Daire Grafiği</text><line x1=\"16\" y1=\"52\" x2=\"84\" y2=\"52\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"69.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Parça / Bütün · 360°</text><text x=\"50.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Merkez açı oranı</text><rect x=\"96\" y=\"27\" width=\"80\" height=\"77\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"44.0\" text-anchor=\"middle\" font-size=\"8.3\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Çizgi Grafiği</text><line x1=\"102\" y1=\"52\" x2=\"170\" y2=\"52\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"69.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Zamana bağlı değişim</text><text x=\"136.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Sürekli nicel veri</text><rect x=\"182\" y=\"27\" width=\"80\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#d97706\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"44.0\" text-anchor=\"middle\" font-size=\"8.3\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d97706\">Ortanca (Medyan)</text><line x1=\"188\" y1=\"52\" x2=\"256\" y2=\"52\" stroke=\"#d97706\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"69.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Sıralı ortadaki değer</text><text x=\"222.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Uç değerde güvenilir</text><rect x=\"268\" y=\"27\" width=\"80\" height=\"77\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"44.0\" text-anchor=\"middle\" font-size=\"8.3\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Açıklık (Ranj)</text><line x1=\"274\" y1=\"52\" x2=\"342\" y2=\"52\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"69.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">En büyük - En küçük</text><text x=\"308.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Tutarlılık ölçüsü</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki sütun grafiğinde verilen 72 kitap daire grafiğine dönüştürülürse {koyu:Fen} kitaplarının merkez açısı kaç derece olur?",
+      "secenekler": [
+        "90°",
+        "120°",
+        "150°",
+        "60°"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"7-matematik-14 kütüphane kitap dağılımı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"19.0\" text-anchor=\"middle\" font-size=\"9.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">SINIF KÜTÜPHANESİ KİTAP DAĞILIMI (TOPLAM 72 KİTAP)</text><rect x=\"12\" y=\"27\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Türkçe: 30 Kitap</text><text x=\"66.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Oran: 30 / 72</text><text x=\"66.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Açı: 150°</text><rect x=\"126\" y=\"27\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#d97706\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d97706\">Matematik: 24 Kitap</text><text x=\"180.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Oran: 24 / 72</text><text x=\"180.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Açı: 120°</text><rect x=\"240\" y=\"27\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Fen: 18 Kitap</text><text x=\"294.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Oran: 18 / 72 = 1/4</text><text x=\"294.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Açı: ? Derece</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki iki öğrencinin 5 deneme puanını inceleyerek istatistiksel ölçüleri tabloya yazınız.",
+      "basliklar": [
+        "Öğrenci ve Puanları",
+        "Aritmetik Ortalama",
+        "Açıklık ve Yorum"
+      ],
+      "satirlar": [
+        [
+          "Ali: 78, 80, 80, 80, 82",
+          "Toplam 400 ÷ 5 = 80",
+          {
+            "b": "Açıklık = 4 (Daha tutarlı)"
+          }
+        ],
+        [
+          "Can: 60, 70, 80, 90, 100",
+          "Toplam 400 ÷ 5 = 80",
+          {
+            "b": "Açıklık = 40 (Dalgalı)"
+          }
+        ],
+        [
+          "Efe: 10, 85, 85, 90, 90",
+          "Uç değer: 10 puan",
+          {
+            "b": "Ortanca (Medyan) = 85 seçilir"
+          }
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"7-matematik-14 öğrenci puan analizi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"19.0\" text-anchor=\"middle\" font-size=\"9.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">DENEME PUANLARI: ORTALAMA VE AÇIKLIK ANALİZİ</text><rect x=\"12\" y=\"27\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"93.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Ali: 78, 80, 80, 80, 82</text><text x=\"93.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Ortalama: 80 · Açıklık: 82 - 78 = 4</text><text x=\"93.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Yorum: Puanlar birbirine çok yakın</text><rect x=\"186\" y=\"27\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#d97706\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d97706\">Can: 60, 70, 80, 90, 100</text><text x=\"267.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Ortalama: 80 · Açıklık: 100 - 60 = 40</text><text x=\"267.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Yorum: Puanlar çok dalgalı (geniş)</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "soru": "Veri türleri, grafikler ve merkezi eğilim ölçüleriyle ilgili ifadeleri Doğru/Yanlış olarak belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Öğrencilerin boy uzunluğu, kütlesi ve hava sıcaklığı ölçmeyle elde edilen nicel (sürekli) veridir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir veri grubunda en çok tekrar eden değere açıklık (ranj) adı verilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Daire grafiğinde toplam verinin {kesir:1|4}'ünü temsil eden dilimin merkez açısı 90°dir.",
+          "dogru": true
+        },
+        {
+          "metin": "Aritmetik ortalamaları eşit olan iki gruptan açıklığı büyük olan grup daha istikrarlıdır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları uygun istatistik kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Kan grubu, sevilen renk ve kitap türü gibi nitelik belirten verilere ___ veri denir.",
+          "cevap": "kategorik"
+        },
+        {
+          "metin": "Küçükten büyüğe sıralanan veri grubunun tam ortasındaki değere ___ (medyan) denir.",
+          "cevap": "ortanca"
+        },
+        {
+          "metin": "Bir mağazada en çok satılan ayakkabı numarasını belirlemek için ___ değer (mod) kullanılır.",
+          "cevap": "tepe"
+        }
+      ],
+      "fazla": [
+        "çizgi"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Görseldeki veri kartında verilen «12, 14, 14, 15, 16, 17, 82» dizisini en doğru temsil eden merkezi eğilim ölçüsü hangisidir?",
+      "secenekler": [
+        "Ortanca (Medyan = 15), çünkü 82 uç (aykırı) değerdir.",
+        "Aritmetik ortalama, çünkü uç değer ortalamayı hiç etkilemez.",
+        "Açıklık (Ranj = 70), çünkü en küçük değeri gösterir.",
+        "Daire grafiği, çünkü veriler kategorik isimlerden oluşmaktadır."
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"7-matematik-14 uç değer kartı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"19.0\" text-anchor=\"middle\" font-size=\"9.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">UÇ (AYKIRI) DEĞERİN MERKEZİ EĞİLİME ETKİSİ</text><rect x=\"12\" y=\"27\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"93.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Veri Dizisi: 12, 14, 14, 15, 16, 17, 82</text><text x=\"93.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Uç Değer: 82 (Diğerlerinden çok uzak)</text><text x=\"93.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Aritmetik Ortalama: 170 ÷ 7 ≈ 24,3 (Yanıltıcı)</text><rect x=\"186\" y=\"27\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#d97706\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d97706\">Doğru Temsil Ölçüsü: Ortanca (Medyan)</text><text x=\"267.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Sıralı 7 verinin tam ortası (4. terim) = 15</text><text x=\"267.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Mod (Tepe Değer) = 14</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki daire grafiğinde 360 kişilik bir okulda {koyu:Yüzme (110°)} kulübünü seçen öğrenci sayısı kaçtır?",
+      "secenekler": [
+        "110",
+        "90",
+        "160",
+        "75"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"7-matematik-14 daire grafiği kulüp dağılımı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"19.0\" text-anchor=\"middle\" font-size=\"9.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">SPOR KULÜBÜ DAİRE GRAFİĞİ (TOPLAM 360 ÖĞRENCİ)</text><rect x=\"12\" y=\"27\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Basketbol: 160°</text><text x=\"66.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">360° de 160°</text><text x=\"66.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">160 Öğrenci</text><rect x=\"126\" y=\"27\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#d97706\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d97706\">Yüzme: 110°</text><text x=\"180.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">360° de 110°</text><text x=\"180.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">? Öğrenci</text><rect x=\"240\" y=\"27\" width=\"108\" height=\"77\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Voleybol: 90°</text><text x=\"294.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">360° de 90°</text><text x=\"294.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">90 Öğrenci</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki sıcaklık ve bütçe araştırmalarından hangisinde çizgi grafiği, hangisinde daire grafiği kullanılmalıdır?",
+      "cevap": "Sıcaklıkta zamana bağlı değişim için çizgi grafiği.",
+      "satir": 2,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"7-matematik-14 grafik seçimi karşılaştırması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"19.0\" text-anchor=\"middle\" font-size=\"9.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">ARAŞTIRMA KONUSUNA GÖRE GRAFİK SEÇİMİ</text><rect x=\"12\" y=\"27\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"93.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. Araştırma: 7 Günlük Sıcaklık</text><text x=\"93.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Zaman içinde sürekli değişim izlenir</text><text x=\"93.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Uygun Grafik: Çizgi Grafiği</text><rect x=\"186\" y=\"27\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#d97706\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d97706\">2. Araştırma: Aile Bütçesi Payları</text><text x=\"267.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Kira, mutfak, eğitim bütünün parçasıdır</text><text x=\"267.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Uygun Grafik: Daire Grafiği</text></svg>"
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Sütun grafiğindeki verileri daire grafiğine dönüştürürken izlenen işlem basamaklarını sıralayınız.",
+      "ogeler": [
+        "Tüm kategorilerdeki veri sayılarını toplayarak bütünü (toplamı) bulma",
+        "Her bir kategorinin bütün içindeki kesir oranını ({kesir:Veri|Toplam}) yazma",
+        "Bulunan oranı 360° ile çarparak her dilimin merkez açısını hesaplama",
+        "Daire üzerinde merkez açıları çizip kategori adlarını ve derecelerini yazma"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"7-matematik-14 daire grafiği dönüşüm adımları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e0f4f8\" stroke=\"#0e8fa8\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"19.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">SÜTUN GRAFİĞİNDEN DAİRE GRAFİĞİNE GEÇİŞ</text><rect x=\"10\" y=\"28\" width=\"78\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"49.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. Toplam Bul</text><text x=\"49.0\" y=\"67.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Tüm verileri topla</text><text x=\"49.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Bütün = T</text><polygon points=\"90,64 95,60 95,68\" fill=\"#0e8fa8\"/><rect x=\"96\" y=\"28\" width=\"78\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"135.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">2. Oran Kur</text><text x=\"135.0\" y=\"67.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Veri / Toplam</text><text x=\"135.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Kesir oranı</text><polygon points=\"176,64 181,60 181,68\" fill=\"#0e8fa8\"/><rect x=\"182\" y=\"28\" width=\"78\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#d97706\" stroke-width=\"0.75\"/><text x=\"221.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d97706\">3. Açıyı Bul</text><text x=\"221.0\" y=\"67.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">(Veri / T) × 360°</text><text x=\"221.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Merkez açı</text><polygon points=\"262,64 267,60 267,68\" fill=\"#0e8fa8\"/><rect x=\"268\" y=\"28\" width=\"78\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"307.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">4. Dilim Çiz</text><text x=\"307.0\" y=\"67.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Açıları yerleştir</text><text x=\"307.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Daire grafiği</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "Verileri «8, 10, 10, 12, 15, 17» olan bir grubun {koyu:tepe değeri (mod)} ve {koyu:açıklığı} sırasıyla kaçtır?",
+      "secenekler": [
+        "Mod = 10, Açıklık = 9",
+        "Mod = 12, Açıklık = 8",
+        "Mod = 10, Açıklık = 17",
+        "Mod = 11, Açıklık = 7"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarından yararlanarak kavramları bulunuz ve uç değerden etkilenmeyen ölçü şifresini çözünüz.",
+      "satirlar": [
+        {
+          "ipucu": "En çok tekrar eden tepe değerin diğer adı",
+          "cevap": "MOD",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sütun ve çizgi grafiklerinde yatay ve dikey doğrultuların her biri",
+          "cevap": "EKSEN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bütünün parçalarını 360° merkez açıyla gösteren grafik türü",
+          "cevap": "DAİRE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Verilerin ne kadar dağıldığını gösteren ölçü grubu (Açıklık)",
+          "cevap": "YAYILIM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "En büyük veri ile en küçük veri arasındaki fark (Ranj)",
+          "cevap": "AÇIKLIK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Sayma veya ölçme ile sayısal olarak ifade edilen veri türü",
+          "cevap": "NİCEL",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "MEDYAN",
+      "sonuc": "MEDYAN"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Görseldeki iki okçunun 5 atış puanına göre ortalamaları eşit olduğu hâlde yarışmaya hangisi seçilmelidir? Neden?",
+      "cevap": "Ortalamaları eşit (9) olsa da 1. okçunun açıklığı 2, 2. okçunun açıklığı 6'dır. açıklığı küçük olan 1.",
+      "satir": 3,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"width:100%;max-height:24mm;display:block;margin:1mm auto;\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"7-matematik-14 okçu seçim analizi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"19.0\" text-anchor=\"middle\" font-size=\"9.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">İKİ OKÇUNUN 5 ATIŞ PUANI VE İSTİKRAR KARARI</text><rect x=\"12\" y=\"27\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"93.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. Okçu: 8, 9, 9, 9, 10 Puan</text><text x=\"93.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Aritmetik Ortalama: 9 · Açıklık: 10 - 8 = 2</text><text x=\"93.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Sapma az -&gt; Yüksek tutarlılık ve istikrar</text><rect x=\"186\" y=\"27\" width=\"162\" height=\"77\" rx=\"6\" fill=\"#fff1df\" stroke=\"#d97706\" stroke-width=\"0.75\"/><text x=\"267.0\" y=\"45.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d97706\">2. Okçu: 6, 8, 9, 10, 12 Puan</text><text x=\"267.0\" y=\"66.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Aritmetik Ortalama: 9 · Açıklık: 12 - 6 = 6</text><text x=\"267.0\" y=\"86.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Sapma fazla -&gt; Düşük tutarlılık</text></svg>"
+    }
+  ]
+}

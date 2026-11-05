@@ -1,0 +1,244 @@
+{
+  "sinif": 6,
+  "ders": "arapca",
+  "hafta": 14,
+  "tarih": "21-25 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Okulun Bölümleri, Okulda Bulunan Eşyalar, Sıra Sayıları, Yer-Yön Zarfları ve Hedef Dil Yapıları",
+  "ciktilar": [
+    "ARP.6.2.1. Okulun bölümlerini, okul eşyalarını, sıra sayılarını ve yer-yön zarflarını içeren dinleme metinlerini anlamlandırır.",
+    "ARP.6.2.2/3. Okuldaki mekânların katlarını ve konumlarını sıra sayıları ile yer-yön zarflarını kullanarak sözlü olarak ifade eder.",
+    "ARP.6.2.4/5. Okul ortamındaki hedef dil yapılarını, sosyal nezaket ifadelerini ve ilim konulu ayet, hadis ile veciz sözleri okuyup yazar."
+  ],
+  "hatirla": [
+    "Birimler: {ar:مَكْتَبَةٌ} (kütüphane), {ar:مُخْتَبَرٌ} (laboratuvar), {ar:مَقْصَفٌ} (kantin).",
+    "Kat sorusu «{ar:فِي أَيِّ طَابِقٍ؟}» ile sorulur; sıra sayısı ({ar:اَلْأَوَّلُ}) isimden sonra gelir.",
+    "Zarflar: {ar:بِجَانِبِ} (yanında), {ar:بَيْنَ} (arasında); veciz söz: {ar:مَنْ جَدَّ وَجَدَ}."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "sutun": "sol",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki okul bölümlerini ve tamlamaları Türkçe karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{ar:غُرْفَةُ الْمُدِيرِ / غُرْفَةُ الْمُعَلِّمِينَ}",
+          "Müdür odası / Öğretmenler odası"
+        ],
+        [
+          "{ar:اَلْمَكْتَبَةُ / اَلْمُخْتَبَرُ}",
+          "Kütüphane / Fen laboratuvarı"
+        ],
+        [
+          "{ar:اَلصَّالَةُ الرِّيَاضِيَّةُ / اَلْمَقْصَفُ}",
+          "Spor salonu / Okul kantini"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "sutun": "sol",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki okul kat planına göre «{ar:فِي أَيِّ طَابِقٍ الْمُخْتَبَرُ؟}» sorusunun doğru cevabı hangisidir?",
+      "secenekler": [
+        "{ar:اَلْمُخْتَبَرُ فِي الطَّابِقِ الْأَوَّلِ.}",
+        "{ar:اَلْمُخْتَبَرُ فِي الطَّابِقِ الثَّانِي.}",
+        "{ar:اَلْمُخْتَبَرُ فِي الطَّابِقِ الثَّالِثِ.}",
+        "{ar:اَلْمُخْتَبَرُ فِي حَدِيقَةِ الْمَدْرَسَةِ.}"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "tablo",
+      "sutun": "sol",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki okul eşyalarının tekil ve çoğul Arapça biçimleri ile anlamlarını tabloda tamamlayınız.",
+      "basliklar": [
+        "Tekil (Müfred)",
+        "Çoğul (Cemî)",
+        "Türkçe Anlamı"
+      ],
+      "satirlar": [
+        [
+          "{ar:كِتَابٌ}",
+          "{ar:كُتُبٌ}",
+          {
+            "b": "Kitap / Kitaplar"
+          }
+        ],
+        [
+          "{ar:رَفٌّ}",
+          "{ar:رُفُوفٌ}",
+          {
+            "b": "Raf / Kitap rafları"
+          }
+        ],
+        [
+          "{ar:مِقْعَدٌ}",
+          "{ar:مَقَاعِدُ}",
+          {
+            "b": "Sıra / Öğrenci sıraları"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "sutun": "sol",
+      "duzey": "hatirla",
+      "soru": "Okul birimleri, sıra sayıları ve dil kurallarıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Arapçada sıra sayıları nitelediği isimden sonra gelir: «{ar:اَلطَّابِقُ الْأَوَّلُ}» (birinci kat) gibi.",
+          "dogru": true
+        },
+        {
+          "metin": "Yer-yön zarflarından ({ar:بِجَانِبِ، أَمَامَ}) sonra gelen ismin son harekesi ötreli okunur.",
+          "dogru": false
+        },
+        {
+          "metin": "Sonunda «{ar:ة}» bulunan müennes isimlerle «vardır» anlamında «{ar:تُوجَدُ}» fiili kullanılır.",
+          "dogru": true
+        },
+        {
+          "metin": "«{ar:لَوْحَةُ الْإِعْلَانَاتِ}» tamlaması fen laboratuvarındaki mikroskop anlamına gelir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "sutun": "sol",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun Arapça ifadelerle tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Kütüphane, sınıf ile laboratuvarın arasındadır: «{ar:اَلْمَكْتَبَةُ} ___ {ar:الصَّفِّ وَالْمُخْتَبَرِ.}»",
+          "cevap": "{ar:بَيْنَ}"
+        },
+        {
+          "metin": "Ben altıncı sınıftayım derken «{ar:أَنَا فِي الصَّفِّ} ___» cümlesi kurulur.",
+          "cevap": "{ar:السَّادِسِ}"
+        },
+        {
+          "metin": "Sınava giren arkadaşımıza başarı dilemek için «___» ifadesini söyleriz.",
+          "cevap": "{ar:بِالتَّوْفِيقِ}"
+        }
+      ],
+      "fazla": [
+        "{ar:تَحْتَ}"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "sutun": "sol",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki koridor krokisine göre kütüphanenin ({ar:اَلْمَكْتَبَةُ}) konumu hangi cümlede doğru verilmiştir?",
+      "secenekler": [
+        "{ar:اَلْمَكْتَبَةُ تَحْتَ الْمَقْصَفِ.}",
+        "{ar:اَلْمَكْتَبَةُ بِجَانِبِ غُرْفَةِ الْمُعَلِّمِينَ.}",
+        "{ar:اَلْمَكْتَبَةُ خَلْفَ حَدِيقَةِ الْمَدْرَسَةِ.}",
+        "{ar:اَلْمَكْتَبَةُ فَوْقَ الصَّالَةِ الرِّيَاضِيَّةِ.}"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "sutun": "sag",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki eşya-birim kartlarına göre hangi cümlede eşya ile bulunduğu okul bölümü doğru eşleşmiştir?",
+      "secenekler": [
+        "{ar:فِي الْمُخْتَبَرِ يُوجَدُ مِجْهَرٌ وَحَاسُوبٌ.}",
+        "{ar:فِي الْمَقْصَفِ تُوجَدُ سَبُّورَةٌ ذَكِيَّةٌ.}",
+        "{ar:فِي دَوْرَةِ الْمِيَاهِ تُوجَدُ رُفُوفٌ وَقَامُوسٌ.}",
+        "{ar:فِي الْمَمَرِّ يُوجَدُ مِقْعَدٌ وَكُرَةٌ أَرْضِيَّةٌ.}"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "sutun": "sag",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki «{ar:هَلْ يُمْكِنُنِي الدُّخُولُ؟ — تَفَضَّلْ / تَفَضَّلِي}» diyaloğunun anlamını ve farkını yazınız.",
+      "cevap": "«Girebilir miyim? — Buyur» demektir; erkeğe «tefaddal», kıza «tefaddalî» denir.",
+      "satir": 3
+    },
+    {
+      "tur": "siralama",
+      "sutun": "sag",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki okul içi tanışma ve kütüphane sorma diyaloğunu anlam akışına göre 1’den 4’e sıralayınız.",
+      "ogeler": [
+        "1. Selam verip «{ar:فِي أَيِّ صَفٍّ أَنْتَ؟}» (Kaçıncı sınıftasın?) diye sorma",
+        "2. «{ar:أَنَا فِي الصَّفِّ السَّادِسِ.}» (Ben altıncı sınıftayım.) diyerek cevaplama",
+        "3. «{ar:فِي أَيِّ طَابِقٍ الْمَكْتَبَةُ؟}» (Kütüphane kaçıncı kattadır?) sorusunu yöneltme",
+        "4. «{ar:فِي الطَّابِقِ الثَّانِي، شُكْرًا — عَفْوًا}» diyerek yeri söyleyip teşekkürleşme"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "sutun": "sag",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki Tâhâ Suresi 114. ayet («{ar:وَقُلْ رَبِّ زِدْنِي عِلْمًا}») ve veciz söze göre hangisi yanlıştır?",
+      "secenekler": [
+        "Ayette Allah’tan ilmimizi artırması için dua edilmesi öğütlenir.",
+        "«{ar:مَنْ جَدَّ وَجَدَ}» gayretle çalışanın kazanacağını anlatır.",
+        "Hadiste ilim öğrenmenin her Müslümana farz olduğu bildirilir.",
+        "«{ar:مَنْ جَدَّ وَجَدَ}» sınıfa girerken izin isteme kalıbıdır."
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "sifre",
+      "sutun": "sag",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki okul bölümleri ve eşyalarının Türkçe adlarını yazarak numaralı harflerle şifreyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Teneffüste yiyecek ve içecek alınan okul birimi ({ar:اَلْمَقْصَفُ})",
+          "cevap": "KANTİN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Okulda namaz kılınan ibadet bölümü ({ar:اَلْمَسْجِدُ})",
+          "cevap": "MESCİT",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Sınıf duvarına asılan coğrafi çizim ({ar:خَرِيطَةٌ})",
+          "cevap": "HARİTA",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Sınıfta eşyaların konulduğu kapaklı mobilya ({ar:خِزَانَةٌ})",
+          "cevap": "DOLAP",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Laboratuvarda küçük canlıları inceleme aracı ({ar:مِجْهَرٌ})",
+          "cevap": "MİKROSKOP",
+          "anahtar": 8
+        }
+      ],
+      "sonuc": "KİTAP"
+    },
+    {
+      "tur": "acik",
+      "sutun": "sag",
+      "duzey": "ust",
+      "soru": "«{ar:مَنْ جَدَّ وَجَدَ}» veciz sözünün Türkçe anlamını ve öğrencinin okul başarısına katkısını açıklayınız.",
+      "cevap": "«Ciddiyetle çalışan hedefine ulaşır» demektir; düzenli çalışmanın başarı.",
+      "satir": 4
+    }
+  ]
+}
