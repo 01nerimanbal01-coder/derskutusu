@@ -1,0 +1,263 @@
+{
+  "sinif": 11,
+  "ders": "matematik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Özel Dörtgenler: Yamuk ve Paralelkenarın Açı, Kenar, Köşegen ve Alan Özellikleri",
+  "ciktilar": [
+    "Yamuk, ikizkenar yamuk ve dik yamuğun açı, kenar, orta taban, köşegen ve alan özelliklerini keşfeder ve problem çözümlerinde kullanır.",
+    "Paralelkenarın açı, kenar, köşegen ve komşu açıortay özelliklerini genel dörtgen özellikleriyle ilişkilendirerek doğrular.",
+    "Yamuk ve paralelkenarda köşegenlerin oluşturduğu üçgensel bölgelerin alan oranlarını kullanarak gerçek yaşam ve geometri problemlerini çözer."
+  ],
+  "hatirla": [
+    "Yamukta orta taban |EF| = {kesir:a + c|2}, köşegenlerin orta tabanda ayırdığı parça |KL| = {kesir:|a - c||2} ve alan Alan = {kesir:a + c|2} · h bağıntısıyla bulunur.",
+    "Köşegenleri dik kesişen dik yamukta {us:h|2} = a · c iken, köşegenleri dik kesişen ikizkenar yamukta h = {kesir:a + c|2} olur; yan üçgen alanları eşittir ({us:S|2} = S{alt:alt} · S{alt:üst})."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Yamuk ve paralelkenardaki temel uzunluk ve alan bağıntılarını açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "|KL| = {kesir:|a - c||2}",
+          "Yamukta köşegenlerin orta taban üzerinde ayırdığı orta parçanın uzunluğu"
+        ],
+        [
+          "{us:h|2} = a · c",
+          "Köşegenleri dik kesişen dik yamukta yükseklik ile tabanlar arasındaki bağıntı"
+        ],
+        [
+          "{us:S|2} = S{alt:alt} · S{alt:üst}",
+          "Yamukta köşegenlerin oluşturduğu eş yan üçgenlerle alt-üst alanların bağıntısı"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki [AB] // [DC] yamuğunda köşegenler O noktasında kesişmektedir. Alan(DOC) = 9 {us:cm|2} ve Alan(AOB) = 25 {us:cm|2} olduğuna göre tüm yamuğun alanı kaç {us:cm|2}’dir?",
+      "secenekler": [
+        "64",
+        "49",
+        "56",
+        "60"
+      ],
+      "dogru": 0,
+      "cozum": "Yan üçgenlerin alanı S ise S{us:|2} = 9 · 25 = 225 => S = 15 cm{us:|2} olur. Tüm yamuğun alanı = 9 + 25 + 15 + 15 = 64 cm{us:|2} bulunur."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Bir paralelkenarda ardışık iki köşeden çizilen iç açıortayların neden daima dik (90°) kesiştiğini açı özellikleriyle açıklayınız.",
+      "cevap": "Paralelkenarda ardışık iki açının toplamı 180° (2α + 2β = 180°).",
+      "satir": 3
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Yamuk ve paralelkenar özellikleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "İkizkenar yamukta köşegen uzunlukları birbirine eşittir (|AC| = |BD|).",
+          "dogru": true
+        },
+        {
+          "metin": "Köşegenleri dik kesişen ikizkenar yamukta yükseklik orta taban uzunluğuna eşittir (h = {kesir:a + c|2}).",
+          "dogru": true
+        },
+        {
+          "metin": "Her paralelkenarın köşegen uzunlukları birbirine eşittir ve köşegenler dik kesişir.",
+          "dogru": false
+        },
+        {
+          "metin": "Paralelkenarda iki köşegen çizildiğinde alanı birbirine eşit olan dört üçgen oluşur.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Özel dörtgenlere ait verilen uzunluk ve alan bilgilerini kullanarak tablodaki istenen değerleri tamamlayınız.",
+      "basliklar": [
+        "Özel Dörtgen",
+        "Verilen Bilgiler",
+        "Hesaplanan Sonuç"
+      ],
+      "satirlar": [
+        [
+          "Yamuk (Orta Taban)",
+          "Alt taban a = 18 cm, üst taban c = 6 cm",
+          {
+            "b": "|EF| = 12 cm ve |KL| = 6 cm"
+          }
+        ],
+        [
+          "Dik Yamuk ([AC] ⊥ [BD])",
+          "Alt taban a = 16 cm, üst taban c = 4 cm",
+          {
+            "b": "h{us:|2} = 16 · 4 = 64 => h = 8 cm"
+          }
+        ],
+        [
+          "İkizkenar Yamuk",
+          "a = 14 cm, c = 6 cm, yan kenar = 5 cm",
+          {
+            "b": "Dikme tabanı = 4 cm, h = 3 cm, Alan = 30 cm{us:|2}"
+          }
+        ],
+        [
+          "Paralelkenar",
+          "Kenarlar 10 cm ve 8 cm, aradaki açı 30°",
+          {
+            "b": "Alan = 10 · 8 · sin 30° = 40 cm{us:|2}"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki ikizkenar yamukta |AB| = 22 cm, |DC| = 10 cm ve yan kenar |AD| = |BC| = 10 cm olduğuna göre yamuğun alanını bulma",
+      "ogeler": [
+        "Üst köşeler olan D ve C’den alt tabana [DH] ve [CK] dikmelerini indirerek ortada 10 cm’lik dikdörtgen oluşturma",
+        "Alt tabanda yanlarda kalan eş parçaları |AH| = |KB| = {kesir:22 - 10|2} = 6 cm olarak hesaplama",
+        "AHD dik üçgeninde (6-8-10 özel üçgeni) yamuğun yüksekliğini h = 8 cm olarak bulma",
+        "Alan = {kesir:22 + 10|2} · 8 = 16 · 8 = 128 {us:cm|2} bağıntısıyla alanı hesaplama"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki ABCD paralelkenarında E noktası [DC] kenarı üzerindedir. Alan(AEB) = 36 {us:cm|2} ve |AB| = 12 cm olduğuna göre [AB] kenarına ait yükseklik kaç cm’dir?",
+      "secenekler": [
+        "6",
+        "3",
+        "9",
+        "12"
+      ],
+      "dogru": 0,
+      "cozum": "Alan(ABCD) = 2 · Alan(AEB) = 2 · 36 = 72 cm{us:|2} olur. Alan = |AB| · h => 72 = 12 · h => h = 6 cm bulunur."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Yamukta aynı yan kenarın uçlarındaki iç açıların (karşı durumlu açıların) toplamı ___ derecedir.",
+          "cevap": "180"
+        },
+        {
+          "metin": "Paralelkenarda ardışık iki köşeye ait iç açıortayların dik kesiştiği nokta ___ taban üzerindedir.",
+          "cevap": "orta"
+        },
+        {
+          "metin": "Paralelkenarın köşegen uzunlukları e ve f ile kenarları arasında {us:e|2} + {us:f|2} = ___ · ({us:a|2} + {us:b|2}) bağıntısı vardır.",
+          "cevap": "2"
+        }
+      ],
+      "fazla": [
+        "4"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Yamuk ve paralelkenardaki geometrik özellikleri sonuçlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "İkizkenar yamukta üstten indirilen dikmeler",
+          "Alt tabanda uzunluğu {kesir:a - c|2} olan iki eş dik üçgen tabanı ayırır"
+        ],
+        [
+          "Yamukta köşegenlerin oluşturduğu kelebek",
+          "Üst ve alt üçgenlerin benzerlik oranı k = {kesir:c|a}, alan oranı {us:k|2} olur"
+        ],
+        [
+          "Paralelkenarda köşegenlerin kesişim noktası",
+          "Her iki köşegeni de iki eş parçaya bölen ağırlık merkezidir"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Yamuk ve paralelkenarla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Paralelkenarın karşılıklı kenar uzunlukları ve karşılıklı iç açılarının ölçüleri birbirine eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir yamukta köşegenlerin yanlarda oluşturduğu iki üçgenin alanları her zaman birbirine eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Dik yamukta yan kenarlardan ikisi de tabanlara diktir.",
+          "dogru": false
+        },
+        {
+          "metin": "Her paralelkenar aynı zamanda karşılıklı kenarları paralel olan özel bir yamuktur.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Yamuğun paralel alt ve üst tabanları arasındaki dik uzaklık (9 harf)",
+          "cevap": "YÜKSEKLİK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Orta taban ile yüksekliğin çarpımına eşit olan bölge büyüklüğü (4 harf)",
+          "cevap": "ALAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "En az iki karşıt kenarı paralel olan özel dörtgen (5 harf)",
+          "cevap": "YAMUK",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "İkizkenar yamukta iki köşegende birbirine eşit olan ölçü (7 harf)",
+          "cevap": "UZUNLUK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Paralelkenarda birbirini ortalayan ve alanı 4 eş üçgene bölen doğru parçası (7 harf)",
+          "cevap": "KÖŞEGEN",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "YAMUK"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Köşegenleri dik kesişen bir dik yamukta alt taban a = 9 cm ve üst taban c = 4 cm ise yamuğun yüksekliğini (h) ve alanını hesaplayınız.",
+      "cevap": "Köşegenleri dik kesişen dik yamukta h{us:|2} = a · c = 9 · 4 = 36 => h = 6 cm olur. Alan = ((9 + 4) / 2) · 6 = 6,5 · 6 = 39 cm{us:|2} bulunur.",
+      "satir": 4
+    }
+  ]
+}

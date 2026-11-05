@@ -1,0 +1,253 @@
+{
+  "sinif": 12,
+  "ders": "matematik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Gerçek Sayı Dizileri, Sonlu-Sabit-Eşit Diziler ve İndirgemeli Diziler",
+  "ciktilar": [
+    "Dizi kavramını fonksiyonlarla ilişkilendirerek açıklar ve genel terimi verilen bir dizinin terimlerini bulur.",
+    "Sonlu dizi, sabit dizi ve eşit dizileri tanımlayarak bunlarla ilgili işlemler yapar.",
+    "İndirgemeli dizileri, Fibonacci sayı dizisini, üçgensel ve karesel sayı dizilerini örneklerle inceler."
+  ],
+  "hatirla": [
+    "Tanım kümesi Z{us:+|} = {1, 2, 3, ...} olan her f : Z{us:+|} → R fonksiyonuna gerçek sayı dizisi, f(n) = a{alt:n} ifadesine ise dizinin genel terimi denir.",
+    "Sabit dizide tüm terimler eşittir: a{alt:n} = {kesir:p.n + r|s.n + t} sabit dizi ise {kesir:p|s} = {kesir:r|t} olur; her n ∈ Z{us:+|} için a{alt:n} = b{alt:n} ise diziler eşittir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Özel sayı dizilerini genel terimleri veya indirgeme bağıntılarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Üçgensel Sayı Dizisi",
+          "a{alt:n} = {kesir:n . (n + 1)|2} → (1, 3, 6, 10, 15, ...)"
+        ],
+        [
+          "Karesel Sayı Dizisi",
+          "b{alt:n} = {us:n|2} → (1, 4, 9, 16, 25, ...)"
+        ],
+        [
+          "Fibonacci Sayı Dizisi",
+          "F{alt:1} = 1, F{alt:2} = 1 ve F{alt:n} = F{alt:n-1} + F{alt:n-2}"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki kurallara göre aşağıda verilen ifadelerden hangisi bir gerçek sayı dizisinin genel terimi olamaz?",
+      "secenekler": [
+        "a{alt:n} = {kesir:n + 2|n - 4}",
+        "b{alt:n} = {kesir:2n + 1|n + 3}",
+        "c{alt:n} = {us:n|2} - 3n + 5",
+        "d{alt:n} = {us:(-1)|n} . (n + 1)"
+      ],
+      "dogru": 0,
+      "cozum": "a{alt:n} = {kesir:n + 2|n - 4} ifadesi n = 4 ∈ Z{us:+|} için paydayı sıfır yaptığından tanımsızdır ve gerçek sayı dizisi belirtmez."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Genel terimi a{alt:n} = {kesir:6n - k|2n + 4} olan (a{alt:n}) dizisi sabit dizi olduğuna göre k gerçek sayısı ve dizinin 10. terimi (a{alt:10}) kaçtır?",
+      "cevap": "Sabit dizide {kesir:6|2} = {kesir:-k|4} eşitliğinden k = -12 bulunur; tüm terimler {kesir:6|2} = 3 olduğundan a{alt:10} = 3'tür.",
+      "satir": 3
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Gerçek sayı dizileriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Gerçek sayı dizilerinin tanım kümesi pozitif tam sayılar kümesidir (Z{us:+|}).",
+          "dogru": true
+        },
+        {
+          "metin": "Sadece ilk üç terimi 2, 4, 6 olarak verilen bir dizinin 4. terimi genel terim verilmeden de kesinlikle 8'dir.",
+          "dogru": false
+        },
+        {
+          "metin": "Üçgensel sayı dizisinin 5. terimi a{alt:5} = {kesir:5 . 6|2} = 15'tir.",
+          "dogru": true
+        },
+        {
+          "metin": "Fibonacci sayı dizisinde 1, 1, 2, 3, 5, 8 terimlerinden sonra gelen 7. terim 13'tür.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Verilen özel sayı dizilerinin 4, 5 ve 6. terimlerini hesaplayarak tabloyu tamamlayınız.",
+      "basliklar": [
+        "Dizi Adı ve Kuralı",
+        "İlk Üç Terimi",
+        "4, 5 ve 6. Terimleri"
+      ],
+      "satirlar": [
+        [
+          "Üçgensel Dizi: {kesir:n.(n+1)|2}",
+          "1, 3, 6",
+          {
+            "b": "10, 15, 21"
+          }
+        ],
+        [
+          "Karesel Dizi: {us:n|2}",
+          "1, 4, 9",
+          {
+            "b": "16, 25, 36"
+          }
+        ],
+        [
+          "Fibonacci: F{alt:n}=F{alt:n-1}+F{alt:n-2}",
+          "1, 1, 2",
+          {
+            "b": "3, 5, 8"
+          }
+        ],
+        [
+          "Aritmetik Kural: 2n + 1",
+          "3, 5, 7",
+          {
+            "b": "9, 11, 13"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki a{alt:1} = 2 ve a{alt:n+1} = a{alt:n} + 3n indirgemeli dizisinin ilk 4 terimini küçükten büyüğe doğru sıralayınız.",
+      "ogeler": [
+        "1. Terim: a{alt:1} = 2 (Başlangıç terimi)",
+        "2. Terim: a{alt:2} = a{alt:1} + 3(1) = 2 + 3 = 5",
+        "3. Terim: a{alt:3} = a{alt:2} + 3(2) = 5 + 6 = 11",
+        "4. Terim: a{alt:4} = a{alt:3} + 3(3) = 11 + 9 = 20"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki A{alt:5} = {1, 2, 3, 4, 5} kümesinde tanımlı a{alt:n} = 3n - 2 sonlu dizisinin terimleri toplamı kaçtır?",
+      "secenekler": [
+        "35",
+        "30",
+        "40",
+        "45"
+      ],
+      "dogru": 0,
+      "cozum": "Terimler a{alt:1}=1, a{alt:2}=4, a{alt:3}=7, a{alt:4}=10, a{alt:5}=13 olup toplamları 1 + 4 + 7 + 10 + 13 = 35 bulunur."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Her terimi kendinden önceki terimler cinsinden tanımlanan dizilere ___ dizi denir.",
+          "cevap": "indirgemeli"
+        },
+        {
+          "metin": "Karşılıklı bütün terimleri birbirine eşit olan (a{alt:n} = b{alt:n}) dizilere ___ diziler denir.",
+          "cevap": "eşit"
+        },
+        {
+          "metin": "Tanım kümesi A{alt:k} = {1, 2, ..., k} olan dizilere k terimli ___ dizi adı verilir.",
+          "cevap": "sonlu"
+        }
+      ],
+      "fazla": [
+        "üçgensel"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Dizilerle ilgili temel kavramları tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "İndis (n)",
+          "Dizinin tanım kümesindeki pozitif tam sayı sıra numarası (n ∈ Z{us:+|})"
+        ],
+        [
+          "Genel Terim (a{alt:n})",
+          "Dizinin n. terimini tek ve kesin biçimde belirleyen kural"
+        ],
+        [
+          "Sabit Dizi",
+          "Bütün terimleri aynı c gerçek sayısına eşit olan (c, c, c, ...) dizisi"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Özel sayı dizileri ve özellikleri ile ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "1'den başlayan ardışık n tane tek doğal sayının toplamı n. karesel sayıyı ({us:n|2}) verir.",
+          "dogru": true
+        },
+        {
+          "metin": "Gerçek sayı dizilerinde n yerine negatif tam sayılar veya sıfır yazılabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Ardışık iki üçgensel sayının toplamı daima bir karesel sayıya eşittir (a{alt:n} + a{alt:n+1} = {us:(n+1)|2}).",
+          "dogru": true
+        },
+        {
+          "metin": "a{alt:n} = {kok:n - 3} ifadesi n = 1 ve n = 2 için gerçek sayı belirtmediğinden dizi değildir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Tanım kümesi pozitif tam sayılar (Z+) olan fonksiyon (4 harf)",
+          "cevap": "DİZİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Dizideki a(n) ifadesinde n pozitif tam sayısına verilen ad (5 harf)",
+          "cevap": "İNDİS",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Bütün terimleri birbirine eşit olan dizi türü (5 harf)",
+          "cevap": "SABİT",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "DİS"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "f(x) = {kesir:1|x - 5} fonksiyonunun neden bir gerçek sayı dizisi belirtmediğini, g(n) = {kesir:1|2n - 5} ifadesinin ise neden dizi belirttiğini açıklayınız.",
+      "cevap": "f(n), n = 5 ∈ Z{us:+|} için tanımsızdır; g(n)'de ise 2n - 5 = 0 kökü 2,5 ∉ Z{us:+|} olduğundan her pozitif tam sayıda tanımlıdır.",
+      "satir": 3
+    }
+  ]
+}

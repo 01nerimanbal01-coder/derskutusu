@@ -1,0 +1,253 @@
+{
+  "sinif": 12,
+  "ders": "fizik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Kütle Çekim Potansiyel Enerjisi, Kurtulma ve Bağlanma Enerjisi",
+  "ciktilar": [
+    "İki gök cismi arasındaki kütle çekim potansiyel enerjisini açıklar ve negatif işaretin fiziksel anlamını yorumlar.",
+    "Gezegen yüzeyindeki bir cismin çekim alanından tamamen çıkması için gereken kurtulma enerjisini ve kurtulma hızını analiz eder.",
+    "Yörüngede dolanan bir uydunun toplam mekanik enerjisini ve bağlanma enerjisini yörünge yarıçapıyla ilişkilendirir."
+  ],
+  "hatirla": [
+    "Kütle çekim potansiyel enerjisi E{alt:p} = -G . {kesir:M . m|d} olup sonsuzda sıfırdır (d → ∞ iken E{alt:p} = 0); uzaklık arttıkça E{alt:p} artar.",
+    "Gezegen yüzeyinden kurtulma enerjisi E{alt:kurtulma} = +G . {kesir:M . m|R} ve kurtulma hızı v{alt:kurtulma} = {kok:{kesir:2 . G . M|R}} olup cismin kütlesine (m) bağlı değildir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Kütle çekim enerjileri ve uydu dinamiğine ait kavramları matematiksel bağıntılarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Kütle Çekim Potansiyel Enerjisi",
+          "E{alt:p} = -G . {kesir:M . m|d}"
+        ],
+        [
+          "Yüzeyden Kurtulma Enerjisi",
+          "E{alt:kurtulma} = +G . {kesir:M . m|R}"
+        ],
+        [
+          "Uydunun Toplam Mekanik Enerjisi",
+          "E{alt:t} = -{kesir:1|2} . G . {kesir:M . m|r}"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki gibi M kütleli gezegen etrafında r yarıçaplı yörüngeden 2r yarıçaplı yörüngeye çıkarılan m kütleli",
+      "secenekler": [
+        "Potansiyel ve toplam enerjisi artar, bağlanma enerjisi azalır.",
+        "Potansiyel enerjisi azalır, kinetik enerjisi artar.",
+        "Kinetik ve bağlanma enerjisi artar, toplam enerjisi azalır.",
+        "Potansiyel, kinetik ve toplam enerjisi değişmez."
+      ],
+      "dogru": 0,
+      "cozum": "Yörünge yarıçapı r arttıkça önünde eksi (-) işareti bulunan E{alt:p} ve E{alt:t} sıfıra yaklaşarak artar; E{alt:k} ve E{alt:bağlanma} ise azalır."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Aynı gezegenin yüzeyinden fırlatılan m ve 3m kütleli iki uzay aracının kurtulma enerjileri ve kurtulma hızları arasındaki ilişki nedir?",
+      "cevap": "3m kütleli aracın kurtulma enerjisi m kütlelinin 3 katıdır; ancak.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Kütle çekim potansiyel, kurtulma ve bağlanma enerjisiyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Kütle çekim potansiyel enerjisi iki gök cismi arasındaki uzaklık sonsuz olduğunda sıfır kabul edilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir gezegenin yüzeyinden fırlatılan roketin kurtulma hızı roketin kütlesi arttıkça artar.",
+          "dogru": false
+        },
+        {
+          "metin": "R yarıçaplı çembersel yörüngede dolanan uydunun kinetik enerjisi E{alt:k} = +{kesir:1|2} . G . {kesir:M . m|r} kadardır.",
+          "dogru": true
+        },
+        {
+          "metin": "Güneş sisteminde yüzeyinden kurtulma hızı en büyük olan gök cismi Güneş'tir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "r yarıçaplı yörüngede dolanan ve potansiyel enerjisi E{alt:p} = -2E olan bir uydunun enerji tablosunu E cinsinden tamamlayınız.",
+      "basliklar": [
+        "Enerji Türü",
+        "Genel Bağıntı",
+        "E{alt:p} = -2E İken Değeri"
+      ],
+      "satirlar": [
+        [
+          "Kütle Çekim Potansiyel Enerjisi (E{alt:p})",
+          "-G . {kesir:M . m|r}",
+          {
+            "b": "-2E"
+          }
+        ],
+        [
+          "Kinetik Enerji (E{alt:k})",
+          "+{kesir:1|2} . G . {kesir:M . m|r}",
+          {
+            "b": "+E"
+          }
+        ],
+        [
+          "Toplam Mekanik Enerji (E{alt:t})",
+          "-{kesir:1|2} . G . {kesir:M . m|r}",
+          {
+            "b": "-E"
+          }
+        ],
+        [
+          "Bağlanma Enerjisi (E{alt:bağlanma})",
+          "+{kesir:1|2} . G . {kesir:M . m|r}",
+          {
+            "b": "+E"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki Güneş sistemi gök cisimlerini yüzeylerinden kurtulma hızlarına göre küçükten büyüğe doğru sıralayınız.",
+      "ogeler": [
+        "Ay (Yüzeyinden kurtulma hızı en düşük gök cismi: ~8.280 km/h)",
+        "Mars (Kütlesi ve çekim ivmesi Dünya'dan küçük gezegen)",
+        "Jüpiter (Gezegenler içinde kurtulma hızı en yüksek dev gezegen)",
+        "Güneş (Sistemdeki tüm kütlenin merkezinde yer alan yıldız)"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki M kütleli gezegen etrafında 3d yarıçaplı yörüngede 9m kütleli X uydusu, 4d yarıçaplı yörüngede 12m kütleli Y uydusu dolanmaktadır. Potansiyel enerjileri oranı {kesir:E{alt:p}(X)|E{alt:p}(Y)} kaçtır?",
+      "secenekler": [
+        "1",
+        "{kesir:3|4}",
+        "{kesir:4|3}",
+        "{kesir:9|16}"
+      ],
+      "dogru": 0,
+      "cozum": "E{alt:p}(X) = -G.M.(9m)/(3d) = -3.G.Mm/d ve E{alt:p}(Y) = -G.M.(12m)/(4d) = -3.G.Mm/d olduğundan oranları 1'dir."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Gezegen yüzeyindeki cismi çekim alanından tamamen çıkarmak için gereken minimum enerjiye ___ enerjisi denir.",
+          "cevap": "kurtulma"
+        },
+        {
+          "metin": "Yörüngede dolanan uydunun toplam enerjisini sıfır yaparak yörüngeden koparan enerjiye ___ enerjisi denir.",
+          "cevap": "bağlanma"
+        },
+        {
+          "metin": "Kütle çekim potansiyel enerjisi bağıntısındaki eksi (-) işareti sistemin çekim kuvvetiyle ___ olduğunu gösterir.",
+          "cevap": "bağlı"
+        }
+      ],
+      "fazla": [
+        "merkezcil"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Uydunun yörünge yarıçapı (r) artırıldığında fiziksel niceliklerde gerçekleşen değişimleri eşleştiriniz.",
+      "ciftler": [
+        [
+          "Çizgisel Hız (v) ve Kinetik Enerji (E{alt:k})",
+          "Gezegenden uzaklaşıldığı için azalır"
+        ],
+        [
+          "Kütle Çekim Potansiyel Enerjisi (E{alt:p})",
+          "Negatif değeri sıfıra yaklaştığı için artar"
+        ],
+        [
+          "Toplam Mekanik Enerji (E{alt:t})",
+          "Dışarıdan iş yapılarak üst yörüngeye çıkıldığı için artar"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Uydu enerjileri ve kurtulma hızıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Bir uydunun bağlanma enerjisi büyüklükçe toplam mekanik enerjisinin mutlak değerine eşittir (E{alt:bağlanma} = |E{alt:t}|).",
+          "dogru": true
+        },
+        {
+          "metin": "Yörüngede dolanan bir uydunun potansiyel enerjisinin büyüklüğü kinetik enerjisinin iki katıdır (|E{alt:p}| = 2E{alt:k}).",
+          "dogru": true
+        },
+        {
+          "metin": "Gezegene daha yakın yörüngede dolanan özdeş bir uydunun bağlanma enerjisi daha küçüktür.",
+          "dogru": false
+        },
+        {
+          "metin": "Kütle çekim potansiyel enerjisinin SI birim sistemindeki birimi Joule'dür (J).",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Gezegen etrafında belirli bir yörüngede dolanan gök cismi veya uzay aracı (4 harf)",
+          "cevap": "UYDU",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İş yapabilme yeteneği; birimi Joule olan skaler büyüklük (6 harf)",
+          "cevap": "ENERJİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Uydunun gezegen etrafında izlediği çembersel veya eliptik yol (7 harf)",
+          "cevap": "YÖRÜNGE",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "UEY"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Kütle çekim potansiyel enerjisi ve uydunun toplam mekanik enerjisi bağıntılarının önünde neden eksi (-) işareti bulunduğunu",
+      "cevap": "Potansiyel enerji sonsuzda sıfır seçildiği ve cisim gezegene kütle.",
+      "satir": 2
+    }
+  ]
+}

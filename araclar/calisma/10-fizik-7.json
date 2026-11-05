@@ -1,0 +1,266 @@
+{
+  "sinif": 10,
+  "ders": "fizik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-10-28",
+  "konu": "Bir Boyutta Sabit İvmeli Hareket: Serbest Düşme Hareketi, Matematiksel Modeller ve Grafikler",
+  "ciktilar": [
+    "Hava direncinin ihmal edildiği ortamda serbest düşme hareketini bir boyutta sabit ivmeli hareketin özel bir durumu (a = g, v{alt:0} = 0) olarak açıklar.",
+    "Serbest düşme hareketine ait hız (v = g·t), düşey yol (h = {kesir:1|2}g·t{us:2|}) ve zamansız hız (v{us:2|} = 2g·h) bağıntılarıyla problem çözer.",
+    "Serbest düşme yapan bir cismin konum-zaman, hız-zaman ve ivme-zaman grafiklerini çizer ve yorumlar."
+  ],
+  "hatirla": [
+    "Havasız ortamda ilk hızsız (v{alt:0} = 0) bırakılan her cisim kütlesinden bağımsız olarak sabit g ≈ 10 m/s{us:2|} ivmeyle hızlanır.",
+    "Temel denklemler: v = g·t = 10t, düşey yer değiştirme h = {kesir:1|2}g·t{us:2|} = 5t{us:2|} ve zamansız hız v{us:2|} = 2g·h."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Serbest düşme hareketine ait fiziksel nicelikleri matematiksel bağıntılarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Anlık Hız Bağıntısı",
+          "v = g · t (Her saniye hız g kadar artar)"
+        ],
+        [
+          "Düşey Yer Değiştirme (Yükseklik)",
+          "h = {kesir:1|2} · g · t{us:2|} (Zamanın karesiyle orantılı)"
+        ],
+        [
+          "Zamansız Hız Bağıntısı",
+          "v{us:2|} = 2 · g · h (Süre bilinmeden hız-yol ilişkisi)"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-7 temel bagintilar\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">SERBEST DÜŞME TEMEL BAĞINTILARI</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">İlk Hız</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v₀ = 0 (Serbest)</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">İvme Sabit</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">a = g = 10 m/s²</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Anlık Hız</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = g · t = 10t</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Düşey Yol</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">h = ½g·t² = 5t²</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Havasız ortamda belirli yükseklikten serbest bırakılan cisim yere 5 s'de çarpıyor. h ve v nedir? (g = 10 m/s{us:2|})",
+      "secenekler": [
+        "h = 125 m, v = 50 m/s",
+        "h = 80 m, v = 40 m/s",
+        "h = 100 m, v = 50 m/s",
+        "h = 125 m, v = 25 m/s"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-7 galileo deneyi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">HAVASIZ ORTAMDA KÜTLE BAĞIMSIZLIĞI</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Demir Gülle (m₁ = 10 kg)</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Etki eden kuvvet: G₁ = m₁·g</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">İvme: a₁ = G₁ / m₁ = g</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Kuş Tüyü (m₂ = 2 g)</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Etki eden kuvvet: G₂ = m₂·g</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">İvme: a₂ = G₂ / m₂ = g (Aynı anda!)</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Serbest düşmeye bırakılan bir cismin '3. saniye sonunda düştüğü toplam mesafe' ile 'yalnız 3. saniye içinde aldığı yol' kaç metredir? (g = 10 m/s{us:2|})",
+      "cevap": "3. saniye sonunda toplam h = 5·3{us:2|} = 45 m düşer; yalnız 3. saniye içinde ise (5, 15, 25 kuralından) 25 m yol alır.",
+      "satir": 3,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-7 saniye farki\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">TOPLAM SÜRE İLE O SANİYE İÇİNDEKİ YOL</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">t Saniye SONUNDA Toplam Yol</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">h = 5·t² (1 s-&gt;5 m, 2 s-&gt;20 m,</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">3 s-&gt;45 m, 4 s-&gt;80 m, 5 s-&gt;125 m)</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">n. Saniye İÇİNDE Alınan Yol</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Δh = 5 m, 15 m, 25 m, 35 m, 45 m</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Örn: Yalnız 4. sn içinde 35 m!</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "Serbest düşme hareketi ve grafikleriyle ilgili ifadeleri Doğru/Yanlış olarak belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Havasız ortamda serbest düşen cismin ivmesi kütlesinden bağımsızdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Serbest düşen cismin hızı zamanın karesiyle (t{us:2|}) doğru orantılı artar.",
+          "dogru": false
+        },
+        {
+          "metin": "Hız-zaman (v-t) grafiğinin altında kalan alan düşülen yüksekliği (h) verir.",
+          "dogru": true
+        },
+        {
+          "metin": "Eşit zaman aralıklarında alınan düşey yollar h, 3h, 5h, 7h ile orantılıdır.",
+          "dogru": true
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-7 grafikler\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">SERBEST DÜŞME HAREKET GRAFİKLERİ (- YÖN)</text><rect x=\"12\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">İvme-Zaman (a-t)</text><text x=\"66.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">a = -g sabit doğru</text><text x=\"66.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Alan -&gt; Hız değişimi (Δv)</text><rect x=\"126\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Hız-Zaman (v-t)</text><text x=\"180.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Orijinden eğimi -g doğru</text><text x=\"180.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Alan -&gt; Düşey yol (-h)</text><rect x=\"240\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Konum-Zaman (y-t)</text><text x=\"294.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Eğimi artan parabol</text><text x=\"294.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Eğim -&gt; Anlık hız (v)</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "soru": "g = 10 m/s{us:2|} olan ortamda serbest düşen cismin değer tablosundaki boşlukları tamamlayınız.",
+      "basliklar": [
+        "Geçen Süre (t)",
+        "Anlık Hız (v = 10t)",
+        "O Saniyede Yol",
+        "Toplam Yükseklik (h = 5t{us:2|})"
+      ],
+      "satirlar": [
+        [
+          "1 saniye",
+          "10 m/s",
+          "5 m",
+          {
+            "b": "5 m"
+          }
+        ],
+        [
+          "2 saniye",
+          {
+            "b": "20 m/s"
+          },
+          "15 m",
+          "20 m"
+        ],
+        [
+          "3 saniye",
+          "30 m/s",
+          {
+            "b": "25 m"
+          },
+          "45 m"
+        ],
+        [
+          "4 saniye",
+          "40 m/s",
+          "35 m",
+          {
+            "b": "80 m"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "80 metre yükseklikten serbest bırakılan bir cismin t = 1, 2, 3 ve 4. saniye sonundaki durumlarını sıraya diziniz.",
+      "ogeler": [
+        "t = 1 s sonunda hızı 10 m/s olur ve toplam 5 m düşerek yerden 75 m yükseklikte bulunur",
+        "t = 2 s sonunda hızı 20 m/s olur ve toplam 20 m düşerek yerden 60 m yükseklikte bulunur",
+        "t = 3 s sonunda hızı 30 m/s olur ve toplam 45 m düşerek yerden 35 m yükseklikte bulunur",
+        "t = 4 s sonunda son saniyede 35 m daha alarak toplam 80 m düşer ve 40 m/s hızla yere çarpar"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-7 saniye tablosu\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">SANİYE SANİYE HIZ VE TOPLAM YÜKSEKLİK</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">t = 1 s Sonu</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = 10 m/s | h = 5 m</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">t = 2 s Sonu</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = 20 m/s | h = 20 m</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">t = 3 s Sonu</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = 30 m/s | h = 45 m</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">t = 4 s Sonu</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = 40 m/s | h = 80 m</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Yerden h yükseklikten serbest bırakılan cisim yere v hızıyla çarpıyor. 4h yükseklikten bırakılırsa kaç v ile çarpar?",
+      "secenekler": [
+        "v",
+        "2v",
+        "4v",
+        "8v"
+      ],
+      "dogru": 1,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-7 tek sayilar\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">GALİLEO TEK SAYILAR KURALI (h - 3h - 5h)</text><rect x=\"12\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">0 - t Aralığı</text><text x=\"66.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alınan yol: h (5 m)</text><text x=\"66.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Son hız: v (10 m/s)</text><rect x=\"126\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">t - 2t Aralığı</text><text x=\"180.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alınan yol: 3h (15 m)</text><text x=\"180.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Toplam yol: 4h (20 m)</text><rect x=\"240\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">2t - 3t Aralığı</text><text x=\"294.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alınan yol: 5h (25 m)</text><text x=\"294.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Toplam yol: 9h (45 m)</text></svg>"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları uygun fizik kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Havasız ortamda ilk hızsız bırakılan cisimlerin yer çekimi etkisindeki hareketine ___ düşme denir.",
+          "cevap": "serbest"
+        },
+        {
+          "metin": "Serbest düşme hareketinde hız-zaman (v-t) grafiğinin eğimi ___ ivmesini (g) verir.",
+          "cevap": "yer çekimi"
+        },
+        {
+          "metin": "Serbest düşen cismin konum-zaman grafiği doğrusal değil, eğimi artan bir ___ eğrisidir.",
+          "cevap": "parabol"
+        }
+      ],
+      "fazla": [
+        "sabit hızlı"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "g = 10 m/s{us:2|} ortamında serbest bırakılan cismin verilerini doğru sonuçlarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Yalnızca 4. saniye içinde aldığı yol",
+          "Δh = 35 m"
+        ],
+        [
+          "180 m yükseklikten bırakıldığında uçuş süresi",
+          "t = 6 s (180 = 5t{us:2|})"
+        ],
+        [
+          "Yere 30 m/s hızla çarpan cismin ortalama hızı",
+          "v{alt:ort} = 15 m/s"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-7 sayisal degerler\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">ZAMANSIZ HIZ VE ORTALAMA HIZ (g=10)</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">h = 20 m -&gt; t = 2 s</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = 20 m/s, v_ort = 10</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">h = 45 m -&gt; t = 3 s</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = 30 m/s, v_ort = 15</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">h = 80 m -&gt; t = 4 s</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = 40 m/s, v_ort = 20</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">h = 180 m -&gt; t = 6 s</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">v = 60 m/s, v_ort = 30</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "soru": "m kütleli K cismi 2t sürede, 3m kütleli L cismi 3t sürede serbest düşerek yere çarpıyor. {kesir:h{alt:K}|h{alt:L}} oranı kaçtır?",
+      "secenekler": [
+        "{kesir:2|3}",
+        "{kesir:4|27}",
+        "{kesir:4|9}",
+        "{kesir:2|9}"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarından yararlanarak kavramları yazınız ve serbest düşmede kütleden bağımsız sabit büyüklüğü bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Havasız ortamda serbest düşme yasalarını kanıtlayan bilim insanı",
+          "cevap": "GALİLEO",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Cismi hızlandıran yer çekimi etkisi (G = m·g)",
+          "cevap": "KUVVET",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Hava direncinin sıfır olduğu boşluk ortamı",
+          "cevap": "VAKUM",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Hız-zaman grafiğinde dikey değişimin yatay değişime oranı",
+          "cevap": "EĞİM",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "İVME",
+      "sonuc": "İVME"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Kuyudan serbest bırakılan taş 3 s'de dibe çarpıyor. Kuyunun derinliğini, çarpma hızını ve ortalama hızını bulunuz. (g=10 m/s{us:2|})",
+      "cevap": "Derinlik: h = 5·3{us:2|} = 45 m. Çarpma hızı: v = 10·3 = 30 m/s. Ortalama hız: v{alt:ort} = {kesir:0+30|2} = 15 m/s.",
+      "satir": 3,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-fizik-7 kuyu problemi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">KUYUYA BIRAKILAN TAŞ PROBLEMİ (t = 3 s)</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Kuyunun Derinliği (h)</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">h = ½ · g · t² = 5 · 3² = 45 m</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Ardışık yollar: 5 + 15 + 25 = 45 m</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Çarpma Hızı ve Ortalama Hız</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Son hız: v = g · t = 10 · 3 = 30 m/s</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Ortalama hız: v_ort = (0 + 30)/2 = 15 m/s</text></svg>"
+    }
+  ]
+}

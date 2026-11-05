@@ -1,0 +1,263 @@
+{
+  "sinif": 11,
+  "ders": "kimya",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Kimyasal Tepkimelerde Hız: Çarpışma Teorisi, Etkin Çarpışma, Aktifleşmiş Kompleks ve Aktivasyon Enerjisi",
+  "ciktilar": [
+    "Çarpışma teorisini kullanarak bir kimyasal tepkimenin gerçekleşmesi için gereken etkin çarpışma şartlarını açıklar.",
+    "İleri ve geri aktivasyon enerjisi, aktifleşmiş kompleks ve tepkime entalpisi (ΔH) kavramlarını potansiyel enerji (PE) diyagramları üzerinde ilişkilendirir.",
+    "Endotermik ve ekzotermik tepkimelerin potansiyel enerji - tepkime koordinatı grafiklerini yorumlayarak sayısal problemleri çözer."
+  ],
+  "hatirla": [
+    "Etkin (ürünle sonuçlanan) çarpışma için iki şart aynı anda sağlanmalıdır: 1) Uygun geometrik doğrultu ve yön, 2) Yeterli kinetik enerji (>= E{alt:a}).",
+    "Aktivasyon enerjisi (E{alt:a}) daima pozitiftir; sıcaklıkla değişmez, yalnızca katalizör kullanıldığında düşer ve E{alt:a} küçüldükçe tepkime hızlanır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Çarpışma teorisi ve potansiyel enerji diyagramı kavramlarını açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Etkin Çarpışma",
+          "Uygun doğrultuda ve yeterli kinetik enerjiyle gerçekleşip ürün oluşturan çarpışma"
+        ],
+        [
+          "Aktifleşmiş Kompleks",
+          "Tepe noktasında oluşan, bağların kopup oluştuğu en yüksek enerjili kararsız ara hâl"
+        ],
+        [
+          "E{alt:ai} (İleri Aktivasyon Enerjisi)",
+          "Aktifleşmiş kompleksin potansiyel enerjisi ile girenlerin enerjisi arasındaki fark"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki potansiyel enerji (PE) grafiğinde girenlerin enerjisi 20 kJ, tepe noktası (aktifleşmiş kompleks) 95 kJ ve ürünlerin enerjisi 45 kJ ise E{alt:ai}, E{alt:ag} ve ΔH kaç kJ’dür?",
+      "secenekler": [
+        "Eai = 75, Eag = 50, ΔH = +25",
+        "Eai = 95, Eag = 45, ΔH = -25",
+        "Eai = 75, Eag = 50, ΔH = -25",
+        "Eai = 50, Eag = 75, ΔH = +25"
+      ],
+      "dogru": 0,
+      "cozum": "E_ai = 95 - 20 = 75 kJ; E_ag = 95 - 45 = 50 kJ ve ΔH = E_ai - E_ag = 75 - 50 = +25 kJ (veya 45 - 20 = +25 kJ) bulunur."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Bir kapta saniyede milyarlarca tanecik çarpışmasına rağmen neden çarpışmaların yalnızca çok küçük bir kısmı ürünle sonuçlanır?",
+      "cevap": "Çünkü her çarpışma uygun geometrik doğrultuda gerçekleşmez ve.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Çarpışma teorisi ve aktivasyon enerjisiyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "İleri ve geri aktivasyon enerjilerinin (E{alt:ai} ve E{alt:ag}) değeri daima pozitiftir, asla negatif olamaz.",
+          "dogru": true
+        },
+        {
+          "metin": "Tepkime sıcaklığını artırmak aktivasyon enerjisi (E{alt:a}) değerini küçülterek tepkimeyi hızlandırır.",
+          "dogru": false
+        },
+        {
+          "metin": "Ekzotermik tepkimelerde geri aktivasyon enerjisi ileri aktivasyon enerjisinden büyüktür (E{alt:ag} > E{alt:ai}).",
+          "dogru": true
+        },
+        {
+          "metin": "Aktifleşmiş kompleks kararlı bir bileşik olmayıp ya ürünlere ya da girenlere dönüşür.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Farklı kimyasal tepkimelere ait enerji tablosundaki eksik büyüklükleri (PE{alt:AK} = PE{alt:g} + E{alt:ai} ve ΔH = E{alt:ai} - E{alt:ag}) hesaplayarak tamamlayınız.",
+      "basliklar": [
+        "Tepkime",
+        "Verilen Enerji Değerleri (kJ)",
+        "Hesaplanan Değer ve Tepkime Türü"
+      ],
+      "satirlar": [
+        [
+          "I. Tepkime",
+          "E_ai = 80 kJ, E_ag = 110 kJ",
+          {
+            "b": "ΔH = -30 kJ (Ekzotermik)"
+          }
+        ],
+        [
+          "II. Tepkime",
+          "E_ai = 90 kJ, ΔH = +35 kJ",
+          {
+            "b": "E_ag = 90 - 35 = 55 kJ (Endotermik)"
+          }
+        ],
+        [
+          "III. Tepkime",
+          "PE_g = 30 kJ, PE_AK = 100 kJ, PE_ü = 10 kJ",
+          {
+            "b": "E_ai = 70 kJ, E_ag = 90 kJ, ΔH = -20 kJ"
+          }
+        ],
+        [
+          "IV. Tepkime",
+          "I. (E_ai=80) ve II. (E_ai=90) Hız Karşılaştırması",
+          {
+            "b": "Aynı koşullarda I. tepkime daha hızlıdır (E_ai küçük)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki H{alt:2}(g) + Cl{alt:2}(g) -> 2HCl(g) tepkimesinin çarpışma teorisine göre gerçekleşme basamaklarını oluş sırasına diziniz.",
+      "ogeler": [
+        "H{alt:2} ve Cl{alt:2} moleküllerinin uygun geometrik doğrultuda ve yeterli kinetik enerjiyle çarpışması",
+        "Taneciklerin kinetik enerjisinin potansiyel enerjiye dönüşmesiyle H-H ve Cl-Cl bağlarının zayıflaması",
+        "Tepe noktasında en yüksek potansiyel enerjili kararsız [H···H···Cl···Cl] aktifleşmiş kompleksinin oluşması",
+        "Eski bağların tamamen kopup yeni H-Cl bağlarının oluşmasıyla enerji açığa çıkarak ürünlerin oluşması"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki aynı koşullarda gerçekleşen üç tepkimenin ileri aktivasyon enerjileri E{alt:ai,1} = 45 kJ, E{alt:ai,2} = 70 kJ ve E{alt:ai,3} = 115 kJ ise hızları arasındaki ilişki nedir?",
+      "secenekler": [
+        "r1 > r2 > r3",
+        "r3 > r2 > r1",
+        "r1 = r2 = r3",
+        "r2 > r1 > r3"
+      ],
+      "dogru": 0,
+      "cozum": "Aktivasyon enerjisi (E_ai) engeli ne kadar küçükse aşılması o kadar kolaydır ve tepkime o kadar hızlıdır: r1 > r2 > r3."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir kimyasal tepkimenin hızı birim zamanda gerçekleşen ___ çarpışma sayısıyla doğru orantılıdır.",
+          "cevap": "etkin"
+        },
+        {
+          "metin": "Endotermik tepkimelerde ürünlerin potansiyel enerjisi girenlerin potansiyel enerjisinden ___ olur.",
+          "cevap": "büyük"
+        },
+        {
+          "metin": "Aktivasyon enerjisi değerini düşürerek hem ileri hem geri tepkimeyi hızlandıran maddeye ___ denir.",
+          "cevap": "katalizör"
+        }
+      ],
+      "fazla": [
+        "inhibitör"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Potansiyel enerji diyagramındaki ifadeleri karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "PE{alt:AK} - PE{alt:girenler}",
+          "İleri tepkimenin başlaması için gereken ileri aktivasyon enerjisi (E{alt:ai})"
+        ],
+        [
+          "PE{alt:AK} - PE{alt:ürünler}",
+          "Tepkimenin ters yönde gerçekleşmesi için gereken geri aktivasyon enerjisi (E{alt:ag})"
+        ],
+        [
+          "E{alt:ai} > E{alt:ag} (ΔH > 0)",
+          "Isı alarak gerçekleşen endotermik tepkimenin enerji bağıntısı"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Potansiyel enerji diyagramları ve tepkime hızıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Potansiyel enerji grafiğinin tepe noktası aktifleşmiş kompleksin potansiyel enerjisini gösterir.",
+          "dogru": true
+        },
+        {
+          "metin": "ΔH = PE{alt:ürünler} - PE{alt:girenler} formülü ile ΔH = E{alt:ai} - E{alt:ag} formülü aynı sonucu verir.",
+          "dogru": true
+        },
+        {
+          "metin": "Uygun doğrultuda çarpışan taneciklerin enerjisi E{alt:a}’dan düşük olsa bile mutlaka ürün oluşur.",
+          "dogru": false
+        },
+        {
+          "metin": "Katalizör, E{alt:ai} ve E{alt:ag} değerlerini eşit miktarda düşürdüğü için ΔH değerini değiştirmez.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "ΔH > 0 ve Eai > Eag olan ısı alan tepkime türü (10 harf)",
+          "cevap": "ENDOTERMİK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kimyasal bağların kopup yeni bağların oluştuğu dönüşüm (7 harf)",
+          "cevap": "TEPKİME",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Eşik enerjisini (Ea) düşürerek tepkimeyi hızlandıran madde (9 harf)",
+          "cevap": "KATALİZÖR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Tepe noktasındaki kararsız ara kompleksin sıfatı (11 harf)",
+          "cevap": "AKTİFLEŞMİŞ",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Etkin çarpışma için aşılması gereken eşik büyüklüğü (6 harf)",
+          "cevap": "ENERJİ",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "ETKİN"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Sıcaklığı artırmanın ve katalizör kullanmanın aktivasyon enerjisini (E{alt:a}) ve etkin çarpışma sayısını nasıl etkilediğini karşılaştırarak açıklayınız.",
+      "cevap": "Sıcaklık E_a’yı değiştirmez, tanecik hızını artırıp etkin çarpışmayı.",
+      "satir": 2
+    }
+  ]
+}

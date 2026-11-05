@@ -1,0 +1,247 @@
+{
+  "sinif": 8,
+  "ders": "matematik",
+  "hafta": 12,
+  "tarih": "7-11 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Sütun, Daire ve Çizgi Grafikleri Arasında Uygun Dönüşümler Yapma, Çoklu Veri Analizi Problemleri ve Basit Olayların Olma Olasılığına Giriş (M.8.4.1.2 & M.8.5.1.1)",
+  "ciktilar": [
+    "Verileri sütun, daire veya çizgi grafiği ile gösterir; merkez açı, yüzde ve kat (EBOB) yöntemlerini kullanarak bu gösterimler arasında uygun dönüşümleri yapar (M.8.4.1.2).",
+    "Sütun, çizgi ve daire grafiklerinin birbirlerine göre üstün ve zayıf yönlerini değerlendirir; birden fazla grafiği birleştiren veri analizi problemlerini çözer (M.8.4.1.2).",
+    "Olasılık kavramına giriş yaparak deney, çıktı, olay ve bir olaya ait olası durumları belirler; 'daha fazla', 'eşit' ve 'daha az' olasılıklı olayları ayırt eder (M.8.5.1.1 & M.8.5.1.2)."
+  ],
+  "hatirla": [
+    "Grafikler arası dönüşümde daire grafiğinin tamamı {koyu:360°} veya {koyu:%100} kabul edilir; {koyu:Merkez Açı = (Grup Verisi ÷ Toplam Veri) × 360°} bağıntısı kullanılır.",
+    "Daire grafiğindeki açılar {koyu:EBOB} ile sadeleştirilerek her dilimin miktarı {koyu:k} kat cinsinden hızlıca yazılabilir (Örn: {koyu:90° : 120° : 150° → 3k : 4k : 5k})."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki veri analizi ve olasılık kavramlarını sağ sütundaki açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Sütun → Daire Grafiği Dönüşümü",
+          "Veri toplamını 360° ile orantılayarak her kategorinin merkez açısını bulma"
+        ],
+        [
+          "Deney ve Çıktı",
+          "Yeni sonuçları gözlemlemek için yapılan işlem (zar atma) ve elde edilen her bir sonuç"
+        ],
+        [
+          "Eşit Olasılıklı Olaylar",
+          "Bir deneyde istenen çıktı (eleman) sayıları birbirine eşit olan olaylar"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sütun grafiğinde bir kurstaki öğrencilerin branş dağılımı verilmiştir. Bu veriler {koyu:daire grafiğine} dönüştürüldüğünde {koyu:Yüzme} branşının merkez açısı kaç derece olur?",
+      "secenekler": [
+        "108° merkez açıya sahip olur",
+        "120° merkez açıya sahip olur",
+        "135° merkez açıya sahip olur",
+        "150° merkez açıya sahip olur"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki daire grafiği açılarını (90°, 120°, 150°) ve toplam 720 ton üretimi kullanarak tabloyu doldurunuz. İlk satır örnektir.",
+      "basliklar": [
+        "Tahıl Türü ve Açısı",
+        "EBOB (30°) ile Kat Oranı",
+        "Üretim Miktarı (Ton)"
+      ],
+      "satirlar": [
+        [
+          "1. Arpa (90°)",
+          "3k",
+          {
+            "b": "180 ton"
+          }
+        ],
+        [
+          "2. Mısır (120°)",
+          {
+            "b": "4k"
+          },
+          {
+            "b": "240 ton"
+          }
+        ],
+        [
+          "3. Buğday (150°)",
+          {
+            "b": "5k"
+          },
+          {
+            "b": "300 ton"
+          }
+        ],
+        [
+          "4. Toplam (360°)",
+          "12k (k = 60 ton)",
+          {
+            "b": "720 ton"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Grafik dönüşümleri ve basit olayların olma olasılığıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir daire grafiğinde sadece merkez açılara bakılarak kategorilerin gerçek sayısal değerleri kesin olarak bilinemez, yalnız oranları bilinir.",
+          "dogru": true
+        },
+        {
+          "metin": "Hilesiz bir zar havaya atıldığında üst yüze asal sayı gelmesi olayının çıktıları {1, 3, 5} olmak üzere 3 tanedir.",
+          "dogru": false
+        },
+        {
+          "metin": "«ANKARA» kelimesinin harfleri eş kartlara yazılıp çekildiğinde A harfi gelme olasılığı, K harfi gelme olasılığından daha fazladır.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir madeni para atıldığında yazı veya tura gelmesi eşit olasılıklı olaylardır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun matematiksel kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Bir daire grafiğinde tüm veri grubunun %20’sini ({kesir:1|5}’ini) temsil eden dilimin merkez açısı ___ derecedir.",
+          "cevap": "72"
+        },
+        {
+          "metin": "Bir olasılık deneyinde gerçekleşmesi mümkün olan tüm sonuçların sayısına ___ durum sayısı denir.",
+          "cevap": "olası"
+        },
+        {
+          "metin": "Zamana bağlı sıcaklık, döviz veya üretim değişimini süreklilik içinde görmek için en uygun grafik ___ grafiğidir.",
+          "cevap": "çizgi"
+        }
+      ],
+      "fazla": [
+        "hipotenüs"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki çoklu grafikte 1. grafik bir galerideki 120 aracın tür dağılımını, 2. grafik ise otomobillerin yakıt türünü göstermektedir. Galeride kaç adet {koyu:elektrikli otomobil} vardır?",
+      "secenekler": [
+        "18 adet elektrikli otomobil vardır",
+        "24 adet elektrikli otomobil vardır",
+        "30 adet elektrikli otomobil vardır",
+        "36 adet elektrikli otomobil vardır"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kutuda 1’den 12’ye kadar (1 ve 12 dâhil) numaralanmış özdeş toplar vardır. Kutudan rastgele çekilen bir top için hangi olayın {koyu:olası durum (çıktı) sayısı} {koyu:en fazladır}?",
+      "secenekler": [
+        "Numarasının tam kare sayı olması (1, 4, 9)",
+        "Numarasının asal sayı olması (2, 3, 5, 7, 11)",
+        "Numarasının 12’nin doğal sayı çarpanı (böleni) olması (1, 2, 3, 4, 6, 12)",
+        "Numarasının 3’ün katı olan bir sayı olması (3, 6, 9, 12)"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki çizgi grafiğinde bir fidanın 4 aylık boy değişimi verilmiştir. Fidanın 4 aydaki {koyu:toplam uzama miktarını} ve {koyu:aylık ortalama uzama miktarını} hesaplayınız.",
+      "cevap": "Başlangıç boyu 20 cm, 4. ay boyu 48 cm’dir. Toplam uzama =.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki renkli top torbasından (8 Mavi, 5 Kırmızı, 3 Yeşil, 1 Sarı) rastgele çekilen bir topun renk olasılıklarını {koyu:en az olasılıklıdan en fazla olasılıklıya} doğru 1’den 4’e sıralayınız.",
+      "ogeler": [
+        "Sarı top gelmesi olayı (1 olası durum — En az olasılıklı)",
+        "Yeşil top gelmesi olayı (3 olası durum)",
+        "Kırmızı top gelmesi olayı (5 olası durum)",
+        "Mavi top gelmesi olayı (8 olası durum — En fazla olasılıklı)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki torbada 6 kırmızı, 10 mavi ve 4 siyah bilye vardır. Çekilen bilyenin her renkten gelme olasılığının {koyu:eşit olasılıklı} olması için torbaya en az kaç bilye {koyu:eklenmelidir}?",
+      "secenekler": [
+        "4 kırmızı ve 6 siyah olmak üzere toplam 10 bilye eklenmelidir",
+        "2 kırmızı ve 4 siyah olmak üzere toplam 6 bilye eklenmelidir",
+        "Sadece 6 adet siyah bilye eklenmelidir",
+        "4 mavi ve 4 kırmızı olmak üzere toplam 8 bilye eklenmelidir"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle «verileri çizgi, sütun veya daire biçiminde",
+      "satirlar": [
+        {
+          "ipucu": "Sütun grafiğinde karşılaştırılan her bir veri kategorisi",
+          "cevap": "GRUP",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Merkez açıları toplamı 360° olan parça-bütün grafiği",
+          "cevap": "DAİRE",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Daire grafiğinde her bir dilimin merkezde oluşturduğu geometrik açıklık",
+          "cevap": "AÇI",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Çıktı sayısı çok olan olayın olasılık durumu (daha ___ olasılıklı)",
+          "cevap": "FAZLA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Zamana bağlı sürekli değişimleri gösteren grafik türü",
+          "cevap": "ÇİZGİ",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "EBOB yöntemiyle açıların sadeleştirilip k ile ifade edilmesi",
+          "cevap": "KAT",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "GRAFİK"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki iki okulun daire grafiklerinde kız öğrencilerin merkez açısı 180° (%50) olarak verilmiştir. «Her iki okuldaki",
+      "cevap": "Yanlıştır; daire grafiği sadece oranı (%50) gösterir. A.",
+      "satir": 2
+    }
+  ]
+}

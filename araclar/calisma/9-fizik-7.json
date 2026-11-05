@@ -1,0 +1,258 @@
+{
+  "sinif": 9,
+  "ders": "fizik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Vektörler: Kartezyen Koordinat Sisteminde Gösterim, Eşit-Zıt Vektörler ve Bileşke Vektör Hesabı",
+  "ciktilar": [
+    "İki ve üç boyutlu kartezyen koordinat sisteminde vektörleri çizer; eşit vektör, zıt vektör ve skalerle çarpımı açıklar.",
+    "Vektörlerin bileşkesini uç uca ekleme, paralelkenar ve dik bileşenlerine ayırma yöntemleriyle belirler.",
+    "Aralarında özel açılar (0°, 60°, 90°, 120°, 180°) bulunan vektörlerin bileşke büyüklüğünü hesaplar."
+  ],
+  "hatirla": [
+    "Başlangıcı orijin (0, 0) olan A(x, y) vektörünün büyüklüğü |A| = {kok:{us:x|2} + {us:y|2}}; dik bileşenleri {alt:A|x} = A·cosθ ve {alt:A|y} = A·sinθ ile bulunur.",
+    "İki vektörün bileşkesi |A - B| ≤ R ≤ A + B aralığındadır; vektörler arasındaki açı büyüdükçe bileşke R küçülür."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Büyüklükleri eşit ve 10 N olan iki kuvvetin ({alt:F|1} = {alt:F|2} = 10 N) aralarındaki açıya göre bileşke büyüklüklerini (R) eşleştiriniz.",
+      "ciftler": [
+        [
+          "Aralarındaki açı θ = 0° (Aynı yönlü)",
+          "R = 20 N"
+        ],
+        [
+          "Aralarındaki açı θ = 60°",
+          "R = 10{kok:3} N"
+        ],
+        [
+          "Aralarındaki açı θ = 90° (Dik)",
+          "R = 10{kok:2} N"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kartezyen toplama kuralına göre başlangıcı orijin O(0, 0) olan A(-3, 5) ve B(6, -1) vektörlerinin bileşkesi R = A +",
+      "secenekler": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "dogru": 2,
+      "cozum": "{alt:R|x} = -3 + 6 = 3 ve {alt:R|y} = 5 + (-1) = 4 olur. R(3, 4) vektörünün büyüklüğü |R| = {kok:{us:3|2} + {us:4|2}} = 5 birimdir."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Büyüklükleri 6 N ve 10 N olan iki kuvvetin bileşkesinin (R) alabileceği en küçük ve en büyük değer aralığını yazınız.",
+      "cevap": "|10 - 6| ≤ R ≤ 10 + 6 kuralına göre bileşke en küçük 4 N.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Vektörlerin özellikleri ve işlemleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Doğrultusu, yönü ve büyüklüğü değiştirilmeden bir vektör uzayda paralel olarak taşınabilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir A vektörü -2 sayısı ile çarpıldığında yönü değişmez, yalnız büyüklüğü 2 katına çıkar.",
+          "dogru": false
+        },
+        {
+          "metin": "Başlangıç noktaları ortak iki vektör arasındaki açı arttıkça bileşke vektörün büyüklüğü azalır.",
+          "dogru": true
+        },
+        {
+          "metin": "Uç uca eklenen vektörler başladığı noktaya dönüp kapalı çokgen oluşturursa bileşke sıfırdır (R = 0).",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Yatay (+x) ekseniyle θ açısı yapan kuvvetlerin yatay ({alt:F|x} = F·cosθ) ve düşey ({alt:F|y} = F·sinθ) bileşenlerini tabloda tamamlayınız. (cos37°=0,8; sin37°=0,6; cos53°=0,6; sin53°=0,8)",
+      "basliklar": [
+        "Kuvvet ve Açısı",
+        "Yatay Bileşen ({alt:F|x})",
+        "Düşey Bileşen ({alt:F|y})"
+      ],
+      "satirlar": [
+        [
+          "F = 10 N, θ = 37°",
+          "10 · 0,8 = 8 N",
+          {
+            "b": "10 · 0,6 = 6 N"
+          }
+        ],
+        [
+          "F = 20 N, θ = 53°",
+          {
+            "b": "20 · 0,6 = 12 N"
+          },
+          "20 · 0,8 = 16 N"
+        ],
+        [
+          "F = 50 N, θ = 37°",
+          "50 · 0,8 = 40 N",
+          {
+            "b": "50 · 0,6 = 30 N"
+          }
+        ],
+        [
+          "F = 15 N, θ = 0° (+x yönü)",
+          {
+            "b": "15 N"
+          },
+          "0 N"
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dik bileşen yöntemine göre düzlemdeki birden fazla vektörün bileşkesini (R) bulma adımlarını sıraya diziniz.",
+      "ogeler": [
+        "Her vektörü F·cosθ ve F·sinθ bağıntılarıyla x ve y dik bileşenlerine ayırma",
+        "Yatay eksendeki bileşenleri yön işaretlerine dikkat ederek toplama ({alt:R|x} = Σ{alt:F|x})",
+        "Düşey eksendeki bileşenleri yön işaretlerine dikkat ederek toplama ({alt:R|y} = Σ{alt:F|y})",
+        "Pisagor bağıntısı |R| = {kok:{us:R|2}{alt:|x} + {us:R|2}{alt:|y}} ile bileşke büyüklüğünü hesaplama"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki özel açı kurallarına göre büyüklükleri eşit ({alt:F|1} = {alt:F|2} = 12 N) olan iki kuvvet arasındaki açı 120° ise bileşke kaç N’dir?",
+      "secenekler": [
+        "6",
+        "12",
+        "12{kok:2}",
+        "12{kok:3}"
+      ],
+      "dogru": 1,
+      "cozum": "Eşit büyüklükteki (F) iki vektör arasındaki açı 120° olduğunda bileşke vektörün büyüklüğü vektörlerden birine eşittir: R = F = 12 N."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Birden fazla vektörün yaptığı etkiyi tek başına yapabilen vektöre ___ vektör (R) denir.",
+          "cevap": "bileşke"
+        },
+        {
+          "metin": "İki vektörün başlangıç noktalarını birleştirip köşegenle toplam bulma yöntemine ___ yöntemi denir.",
+          "cevap": "paralelkenar"
+        },
+        {
+          "metin": "Vektör çıkarmada A - B işlemi, B vektörünün ___ çevrilip A vektörü ile toplanmasıdır.",
+          "cevap": "ters"
+        }
+      ],
+      "fazla": [
+        "skaler"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Kartezyen koordinatları verilen vektörleri Pisagor bağıntısıyla hesaplanan büyüklükleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "K(3, 4) vektörü",
+          "|K| = 5 birim"
+        ],
+        [
+          "L(-6, 8) vektörü",
+          "|L| = 10 birim"
+        ],
+        [
+          "M(5, -12) vektörü",
+          "|M| = 13 birim"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Eşit, zıt ve dik vektörlerle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "K ve L zıt vektörler ise vektörel olarak K = -L yazılır ve büyüklükleri |K| = |L| eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Büyüklükleri 6 N ve 10 N olan iki kuvvetin bileşkesi 3 N olabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Birbirine dik (90°) olan 6 N ve 8 N büyüklüğündeki iki kuvvetin bileşkesi 10 N'dir.",
+          "dogru": true
+        },
+        {
+          "metin": "Üç boyutlu kartezyen koordinat sisteminde birbirine dik x, y ve z eksenleri bulunur.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Sayı ve birimin yanında yön de belirten fiziksel büyüklük (6 harf)",
+          "cevap": "VEKTÖR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kartezyen koordinat sisteminde yatay (x) eksenin adı (5 harf)",
+          "cevap": "APSİS",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Başlangıç noktası (0, 0) olan koordinat merkezi (6 harf)",
+          "cevap": "ORİJİN",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Yalnız sayı ve birimle ifade edilen yönsüz büyüklük (6 harf)",
+          "cevap": "SKALER",
+          "anahtar": 5
+        }
+      ],
+      "sonuc": "VARR"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Bir gemiyi her biri 100 kN kuvvet uygulayan iki römorkör çekerken aralarındaki açı 60° iken mi yoksa 120° iken mi",
+      "cevap": "60° iken bileşke R = 100{kok:3} kN, 120° iken R = 100 kN olur; açı küçüldükçe bileşke büyüdüğü için 60° iken daha büyüktür.",
+      "satir": 3
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "sinif": 12,
+  "ders": "biyoloji",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "DNA'nın Kendini Eşlemesi (Replikasyon) ve Aziz Sancar'ın Bilime Katkısı",
+  "ciktilar": [
+    "DNA'nın yarı korunumlu (semikonservatif) eşlenme mekanizmasını Meselson ve Stahl deneyleriyle açıklar.",
+    "Prokaryot ve ökaryot hücrelerde replikasyon orijini farkını ve replikasyonda görevli temel enzimlerin (helikaz, DNA polimeraz, DNA ligaz) işlevlerini açıklar.",
+    "Prof. Dr. Aziz Sancar'ın DNA onarım mekanizmaları üzerine yaptığı çalışmaları ve örnek bilim insanı kimliğini değerlendirir."
+  ],
+  "hatirla": [
+    "Meselson ve Stahl, {us:15|N} (ağır) ve {us:14|N} (normal) azot izotoplarıyla E. coli bakterilerinde DNA'nın yarı korunumlu eşlendiğini kanıtlamıştır.",
+    "Replikasyonda helikaz hidrojen bağlarını açar, DNA polimeraz yeni nükleotitleri ekler, DNA ligaz ise parçaları fosfodiester bağıyla birleştirir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "DNA replikasyonunda görev alan yapıları ve enzimleri işlevleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Helikaz",
+          "İki zincir arasındaki zayıf hidrojen bağlarını kopararak sarmalı açma"
+        ],
+        [
+          "DNA Polimeraz",
+          "Kalıp zincirin karşısına uygun yeni deoksiribonükleotitleri ekleme"
+        ],
+        [
+          "DNA Ligaz",
+          "DNA parçacıklarını fosfodiester bağlarıyla uç uca birleştirme"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki Meselson-Stahl deneyinde ağır azotlu ({us:15|N}{us:15|N}) DNA'ya sahip bir bakteri normal azotlu ({us:14|N}) ortamda 1 kez bölündüğünde oluşan DNA'ların durumu nedir?",
+      "secenekler": [
+        "%100 melez ({us:15|N}{us:14|N}) DNA oluşur.",
+        "%50 ağır ({us:15|N}{us:15|N}), %50 normal ({us:14|N}{us:14|N}) oluşur.",
+        "%100 normal ({us:14|N}{us:14|N}) DNA oluşur.",
+        "%25 melez, %75 normal DNA oluşur."
+      ],
+      "dogru": 0,
+      "cozum": "Yarı korunumlu eşlenmede ata DNA'nın her bir {us:15|N} zinciri kalıp olur ve karşısına {us:14|N} zinciri sentezlenir; ilk bölünmede tüm DNA'lar melez ({us:15|N}{us:14|N}) olur."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Ökaryot hücrelerin DNA'sı prokaryotlara göre çok daha uzun olmasına rağmen replikasyonun kısa sürede tamamlanmasını",
+      "cevap": "Ökaryotların doğrusal DNA'larında tek değil, çok sayıda replikasyon.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "DNA replikasyonu ve Prof. Dr. Aziz Sancar'ın çalışmalarıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Helikaz enzimi DNA zincirleri arasındaki hidrojen bağlarını koparırken ATP harcamaz.",
+          "dogru": true
+        },
+        {
+          "metin": "Prokaryot hücrelerin halkasal DNA'sında yüzlerce replikasyon orijini bulunur.",
+          "dogru": false
+        },
+        {
+          "metin": "DNA ligaz enzimi kesintili sentezlenen DNA parçalarını birleştirirken ATP enerjisi harcar.",
+          "dogru": true
+        },
+        {
+          "metin": "Prof. Dr. Aziz Sancar, kazandığı Nobel Ödülü madalyasını ve sertifikasını Anıtkabir'e bağışlamıştır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Ağır azotlu ({us:15|N}{us:15|N}) bir DNA'nın normal azotlu ({us:14|N}) ortamda art arda eşlenmesi tablosunu tamamlayınız.",
+      "basliklar": [
+        "Eşlenme Sırası",
+        "Toplam DNA Sayısı",
+        "Melez ({us:15|N}{us:14|N}) ve Normal ({us:14|N}{us:14|N}) DNA Sayısı"
+      ],
+      "satirlar": [
+        [
+          "Başlangıç (0. eşlenme)",
+          "1 adet DNA",
+          {
+            "b": "1 ağır ({us:15|N}{us:15|N}), 0 melez, 0 normal"
+          }
+        ],
+        [
+          "1. Eşlenme sonu",
+          "2 adet DNA",
+          {
+            "b": "2 melez ({us:15|N}{us:14|N}), 0 normal ({us:14|N}{us:14|N})"
+          }
+        ],
+        [
+          "2. Eşlenme sonu",
+          "4 adet DNA",
+          {
+            "b": "2 melez ({us:15|N}{us:14|N}), 2 normal ({us:14|N}{us:14|N})"
+          }
+        ],
+        [
+          "3. Eşlenme sonu",
+          "8 adet DNA",
+          {
+            "b": "2 melez ({us:15|N}{us:14|N}), 6 normal ({us:14|N}{us:14|N})"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki DNA replikasyonu basamaklarını gerçekleşme sırasına göre baştan sona sıralayınız.",
+      "ogeler": [
+        "Replikasyon orijinlerinin belirlenmesi ve eşlenmenin başlaması",
+        "Helikaz enziminin zayıf hidrojen bağlarını açarak replikasyon çatalını oluşturması",
+        "DNA polimerazın kalıp zincirlerin karşısına uygun yeni nükleotitleri eklemesi",
+        "DNA ligazın DNA parçacıklarını fosfodiester bağlarıyla birleştirerek eşlenmeyi tamamlaması"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görselde özetlenen çalışmalardan hangisi Prof. Dr. Aziz Sancar'a 2015 Nobel Kimya Ödülü'nü kazandıran temel keşiftir?",
+      "secenekler": [
+        "UV hasarlı DNA'da nükleotit kesip çıkarma onarım mekanizması",
+        "Bakterilerde transformasyon olayının keşfedilmesi",
+        "Bakteriyofajlarda {us:32|P} izotopuyla DNA kalıtımının kanıtlanması",
+        "Akyuvar çekirdeğinde nüklein maddesinin ilk kez ayrıştırılması"
+      ],
+      "dogru": 0,
+      "cozum": "Prof. Dr. Aziz Sancar, morötesi (UV) ışınlarla hasar gören DNA'nın 'nükleotit kesip çıkarma onarımı' mekanizmasını haritalandırarak 2015 Nobel Kimya Ödülü'nü almıştır."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları kutudaki kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Oluşan her yeni DNA'nın bir eski bir yeni zincir taşımasına ___ eşlenme denir.",
+          "cevap": "yarı korunumlu"
+        },
+        {
+          "metin": "DNA parçacıklarını fosfodiester bağlarıyla uç uca birleştiren enzim ___ enzimidir.",
+          "cevap": "DNA ligaz"
+        },
+        {
+          "metin": "Aziz Sancar, canlılarda uyku-uyanıklık döngüsünü yöneten ___ ritim genlerini de aydınlatmıştır.",
+          "cevap": "sirkadiyen"
+        }
+      ],
+      "fazla": [
+        "helikaz"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Prof. Dr. Aziz Sancar ve DNA eşlenmesi kavramlarını açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Meselson ve Stahl",
+          "{us:15|N} ve {us:14|N} izotoplarıyla yarı korunumlu eşlenmeyi kanıtlayan bilim insanları"
+        ],
+        [
+          "Nükleotit Kesip Çıkarma",
+          "UV ışınlarıyla hasar gören DNA dizilerinin kesilip doğru bazlarla onarılması"
+        ],
+        [
+          "Sirkadiyen Ritim",
+          "Canlılarda DNA onarım hızını ve metabolizmayı etkileyen biyolojik saat"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Replikasyon hesaplamaları ve enzimleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Bir DNA molekülü n kez eşlendiğinde ortamda toplam {us:2|n} adet DNA molekülü oluşur.",
+          "dogru": true
+        },
+        {
+          "metin": "DNA polimeraz enzimi yeni sentezlenen zincirdeki eşlenme hatalarını da denetler ve düzeltir.",
+          "dogru": true
+        },
+        {
+          "metin": "Ağır azotlu bir DNA normal azotlu ortamda kaç kez eşlenirse eşlensin melez DNA sayısı daima 2 kalır.",
+          "dogru": true
+        },
+        {
+          "metin": "Hücre bölünmesi olmadan da hücre içindeki çekirdek DNA'sı sürekli kendini eşler.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "2015 Nobel Kimya Ödülü sahibi Türk bilim insanının soyadı (6 harf)",
+          "cevap": "SANCAR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Nükleotitlerin yapısına katılan ve Meselson-Stahl deneyinde izotopu kullanılan element (4 harf)",
+          "cevap": "AZOT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "DNA onarım mekanizmasıyla kazanılan uluslararası bilim ödülü (5 harf)",
+          "cevap": "NOBEL",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "SAN"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Prof. Dr. Aziz Sancar'ın aydınlattığı 'nükleotit kesip çıkarma onarımı' mekanizması hücrelerde çalışmasaydı canlılarda hangi",
+      "cevap": "UV ve kimyasal kaynaklı DNA hasarları kalıcı mutasyonlara.",
+      "satir": 2
+    }
+  ]
+}

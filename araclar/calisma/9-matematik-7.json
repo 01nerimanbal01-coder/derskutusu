@@ -1,0 +1,258 @@
+{
+  "sinif": 9,
+  "ders": "matematik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Doğrusal Fonksiyonlar ve Nitel Özellikleri: Referans Fonksiyon f(x) = x ve g(x) = ax + b Analizi",
+  "ciktilar": [
+    "Gerçek sayıların işlem özelliklerinden yararlanarak f(x) = x referans fonksiyonundan türetilen g(x) = a(x ± r) ± k = ax + b fonksiyonlarını ifade eder.",
+    "Doğrusal fonksiyonların tanım/görüntü kümesi, işareti, sıfırı (kökü), artanlığı-azalanlığı, maksimum-minimum ve bire bir-örtenlik özelliklerini analiz eder.",
+    "Sabit değişim oranına (eğime) sahip gerçek yaşam durumlarını doğrusal fonksiyonlarla modeller ve yorumlar."
+  ],
+  "hatirla": [
+    "f: ℝ → ℝ, f(x) = x doğrusal referans fonksiyonunun grafiği orijinden (0, 0) geçer ve eğimi a = 1'dir.",
+    "g(x) = ax + b fonksiyonunda a değişim oranıdır (eğim = {kesir:Δy|Δx}); grafik y-eksenini (0, b) noktasında, x-eksenini sıfırı olan x = -{kesir:b|a} noktasında keser."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "f: ℝ → ℝ, f(x) = 2x - 8 doğrusal fonksiyonuna ait nitel özellikleri doğru karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Fonksiyonun değişim oranı (eğimi)",
+          "a = 2 (Gerçek sayılarda artan fonksiyon)"
+        ],
+        [
+          "Grafiğin y-eksenini kestiği nokta",
+          "(0, -8) noktası"
+        ],
+        [
+          "Fonksiyonun sıfırı (x-kesim apsisi)",
+          "x = 4"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki cebirsel düzenleme kuralına göre f(x) = 2(x + 4) - 5(x - 1) fonksiyonunun standart yazılışı ve eğimi hangisidir?",
+      "secenekler": [
+        "f(x) = -3x + 13, Eğim = -3",
+        "f(x) = -3x + 3, Eğim = -3",
+        "f(x) = 7x + 13, Eğim = 7",
+        "f(x) = 3x - 13, Eğim = 3"
+      ],
+      "dogru": 0,
+      "cozum": "Dağılma özelliğiyle f(x) = 2x + 8 - 5x + 5 = -3x + 13 olur; x'in katsayısı a = -3 eğimdir."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Grafiği A(1, 5) ve B(4, 17) noktalarından geçen g(x) = ax + b doğrusal fonksiyonunun kuralını ve sıfırını (kökünü) bulunuz.",
+      "cevap": "Eğim a = {kesir:17 - 5|4 - 1} = 4. g(1) = 4(1) + b = 5 ⇒ b = 1, yani g(x) = 4x + 1. Sıfırı: 4x + 1 = 0 ⇒ x = -{kesir:1|4}.",
+      "satir": 3
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Doğrusal fonksiyonların nitel özellikleriyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "f: ℝ → ℝ, f(x) = x referans fonksiyonunun grafiği orijinden (0, 0) geçer ve eğimi 1'dir.",
+          "dogru": true
+        },
+        {
+          "metin": "g(x) = ax + b fonksiyonunda a > 0 ise fonksiyon gerçek sayılar kümesinde azalandır.",
+          "dogru": false
+        },
+        {
+          "metin": "Tanım kümesi tüm gerçek sayılar (ℝ) olan f(x) = 3x - 5 fonksiyonunun maksimum değeri yoktur.",
+          "dogru": true
+        },
+        {
+          "metin": "f: ℝ → ℝ, f(x) = 6 sabit fonksiyonu bire bir ve örten bir fonksiyondur.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Gerçek sayılar kümesinde tanımlı doğrusal fonksiyonların eğimini, sıfırını ve artanlık/azalanlık durumunu tabloda tamamlayınız.",
+      "basliklar": [
+        "Fonksiyon Kuralı",
+        "Eğimi (a) ve Sıfırı",
+        "Artanlık / Azalanlık Durumu"
+      ],
+      "satirlar": [
+        [
+          "f(x) = 3x - 12",
+          "a = 3, Sıfırı: x = 4",
+          {
+            "b": "Gerçek sayılarda artan (a > 0)"
+          }
+        ],
+        [
+          "g(x) = -2x + 10",
+          {
+            "b": "a = -2, Sıfırı: x = 5"
+          },
+          "Gerçek sayılarda azalan (a < 0)"
+        ],
+        [
+          "h(x) = 5x + 15",
+          "a = 5, Sıfırı: x = -3",
+          {
+            "b": "Gerçek sayılarda artan (a > 0)"
+          }
+        ],
+        [
+          "k(x) = -4x - 8",
+          {
+            "b": "a = -4, Sıfırı: x = -2"
+          },
+          "Gerçek sayılarda azalan (a < 0)"
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki analiz adımlarına göre g(x) = -3(x - 2) + 6 fonksiyonunun nitel özelliklerini belirleme basamaklarını sıraya diziniz.",
+      "ogeler": [
+        "Dağılma ve birleşme özellikleriyle fonksiyonu g(x) = -3x + 12 standart biçiminde yazma",
+        "Eğim a = -3 < 0 olduğundan fonksiyonun gerçek sayılarda azalan olduğunu belirleme",
+        "x = 0 için y-kesimini (0, 12) ve g(x) = 0 için sıfırını x = 4 olarak hesaplama",
+        "Azalan olduğu için (-∞, 4) aralığında pozitif, (4, ∞) aralığında negatif olduğunu yazma"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kapalı aralık kuralına göre f: [-3, 4] → ℝ, f(x) = -2x + 7 fonksiyonunun alabileceği en büyük ve en küçük",
+      "secenekler": [
+        "10",
+        "12",
+        "13",
+        "14"
+      ],
+      "dogru": 1,
+      "cozum": "Uç noktalarda: f(-3) = -2(-3) + 7 = 13 (maksimum) ve f(4) = -2(4) + 7 = -1 (minimum). Toplamları: 13 + (-1) = 12 bulunur."
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Cümlelerdeki boşlukları uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "f: ℝ → ℝ, f(x) = x fonksiyonuna doğrusal ___ fonksiyon (veya birim fonksiyon) denir.",
+          "cevap": "referans"
+        },
+        {
+          "metin": "f(x) = ax + b fonksiyonunda f(x) = 0 denklemini sağlayan x = -{kesir:b|a} değerine fonksiyonun ___ denir.",
+          "cevap": "sıfırı"
+        },
+        {
+          "metin": "a ≠ 0 olmak üzere f: ℝ → ℝ, f(x) = ax + b doğrusal fonksiyonu hem ___ hem de örtendir.",
+          "cevap": "bire bir"
+        }
+      ],
+      "fazla": [
+        "periyodik"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Gerçek yaşam durumlarını kendilerini modelleyen doğrusal fonksiyon kurallarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "25 cm dikilen ve ayda 3 cm uzayan fidanın x. aydaki boyu",
+          "f(x) = 3x + 25"
+        ],
+        [
+          "40 L su bulunan depoya dakikada 15 L su eklenirken x. dakikadaki su",
+          "f(x) = 15x + 40"
+        ],
+        [
+          "120 L su bulunan depodan dakikada 8 L su boşalırken x. dakikadaki su",
+          "f(x) = -8x + 120"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "f: ℝ → ℝ, f(x) = -4x + 20 doğrusal fonksiyonuyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Fonksiyonun grafiği y-eksenini (0, 20) noktasında keser.",
+          "dogru": true
+        },
+        {
+          "metin": "Fonksiyonun sıfırı (x-eksenini kestiği noktanın apsisi) x = 5'tir.",
+          "dogru": true
+        },
+        {
+          "metin": "x ∈ (5, ∞) aralığında fonksiyon pozitif değerlidir (f(x) > 0).",
+          "dogru": false
+        },
+        {
+          "metin": "Bağımsız değişken x değeri 1 birim arttığında f(x) değeri 4 birim azalır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Doğrusal fonksiyonda dikey değişimin yatay değişime sabit oranı (4 harf)",
+          "cevap": "EĞİM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "f(x) = 0 denklemini sağlayan x değerine verilen diğer ad (3 harf)",
+          "cevap": "KÖK",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Görüntü kümesi değer kümesine eşit olan fonksiyon türü (5 harf)",
+          "cevap": "ÖRTEN",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Eğimi a > 0 olan doğrusal fonksiyonların değişim yönü (5 harf)",
+          "cevap": "ARTAN",
+          "anahtar": 4
+        }
+      ],
+      "sonuc": "EÖTN"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "200 m yükseklikten havalanıp dakikada 150 m yükselen bir İHA en çok 20 dk yükseldiğine göre h(t) kuralını ve görüntü kümesini yazınız.",
+      "cevap": "Kural: h(t) = 150t + 200 (t ∈ [0, 20]). En az h(0) = 200 m, en.",
+      "satir": 2
+    }
+  ]
+}
