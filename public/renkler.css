@@ -63,8 +63,8 @@ body .kesif-hero h1 { font-size:clamp(36px,4.2vw,62px); margin-block:18px; }
 body .kesif-hero h1 em { color:var(--kart-ana); }
 body .kesif-kicker { color:var(--kart-ana); border-color:var(--kart-cizgi); background:var(--kart-zemin); box-shadow:0 1px 3px rgb(15 23 42 / .04); }
 body .kesif-kicker::before { background:var(--kart-ana); }
-body .kesif-bul { border-color:var(--kart-cizgi); box-shadow:7px 8px 0 var(--kart-zemin); }
-body .kesif-bul::before { background:var(--site-serit); }
+body .kesif-bul { border-color:var(--cizgi); box-shadow:0 8px 28px rgb(13 36 79 / .06); }
+body .kesif-bul::before { display:none; }
 .kesif-rota { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin:22px 0 0; padding:0; list-style:none; }
 .kesif-rota a { display:flex; align-items:center; gap:9px; min-height:54px; padding:9px; background:var(--kart-zemin); color:var(--kart-ana); border:1px solid var(--kart-cizgi); border-radius:12px; font-size:13px; font-weight:700; }
 .kesif-rota b { width:28px; height:28px; flex:none; display:grid; place-items:center; border-radius:9px; background:var(--kart-ana); color:var(--kart-ikon-yazi); }

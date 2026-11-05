@@ -1099,7 +1099,6 @@ window.dkTamamlanan = dkTamamlanan;
     if (navigator.webdriver) return true;
     return /bot|crawl|spider|slurp|mediapartners|adsbot|google|bing|yandex|duckduck|baidu|facebookexternalhit|lighthouse|headless|chrome-lighthouse|pageburst|prerender/i.test(ua);
   };
-  if (botMu()) return;
 
   const mobilCihazTuru = () => {
     const ua = navigator.userAgent || '';
@@ -1207,12 +1206,12 @@ window.dkTamamlanan = dkTamamlanan;
       menuIg.classList.add('ig-uye-onayli');
       menuIg.classList.remove('ig-uye-bekliyor');
       menuIg.title = `Instagram üyeliği onaylı (${kayit.kullanici || '@' + DK_IG_AYAR.HESAP})`;
-      metinEl.textContent = '✓ @derskutusuinfo';
+      metinEl.textContent = '✓';
     } else {
       menuIg.classList.add('ig-uye-bekliyor');
       menuIg.classList.remove('ig-uye-onayli');
       menuIg.title = `@${DK_IG_AYAR.HESAP} Instagram hesabımızı takip edin`;
-      metinEl.textContent = '@derskutusuinfo Takip Et';
+      metinEl.textContent = 'Takip';
     }
   };
   menuRozetGuncelle();
@@ -1525,56 +1524,61 @@ window.dkTamamlanan = dkTamamlanan;
       }
     }
 
-    // sinif.html sayfasında seçilen sınıfın tüm ana ders IG kartlarını açan ve sayfayı paylaşan hızlı çubuk
-    if (/^sinif\.html$/i.test(temizYol) && !$('.sinif-ig-cubuk')) {
-      const sinifSayfaKap = $('.sayfa-bas .kap');
-      if (sinifSayfaKap) {
-        const sp = new URLSearchParams(location.search);
-        const sNo = Math.max(5, Math.min(12, Number(sp.get('s') || sp.get('sinif')) || 8));
-        const branslar = sNo <= 8
-          ? [
-              ['matematik', 'Matematik'],
-              ['fen-bilimleri', 'Fen Bilimleri'],
-              ['turkce', 'Türkçe'],
-              [sNo === 8 ? 'tc-inkilap-tarihi-ve-ataturkculuk' : 'sosyal-bilgiler', sNo === 8 ? 'T.C. İnkılap Tarihi' : 'Sosyal Bilgiler'],
-              ['ingilizce', 'İngilizce'],
-              ['din-kulturu-ve-ahlak-bilgisi', 'Din Kültürü'],
-            ]
-          : [
-              ['matematik', 'Matematik'],
-              ['turk-dili-ve-edebiyati', 'Türk Dili ve Edebiyatı'],
-              ['fizik', 'Fizik'],
-              ['kimya', 'Kimya'],
-              ['biyoloji', 'Biyoloji'],
-              ['tarih', 'Tarih'],
-            ];
-        const sinifKartlari = branslar.map(([kod, ad]) => ({
-          gorsel: sosyalKartYoluBul(sNo, kod, 4),
-          etiket: `${sNo}. Sınıf ${ad} · Instagram Konu Özeti Kartı (@${DK_IG_AYAR.HESAP})`,
-        }));
-        const sinifCubuk = el('div', { sinif: 'g-dugmeler y-ust sinif-ig-cubuk' },
-          el('button', {
-            type: 'button',
-            sinif: 'dugme ck-ig-kart-btn',
-            onclick: () => igHikayeModalAc(`${sNo}. Sınıf · Tüm Dersler IG Konu Kartları`, sinifKartlari, 0),
-          }, `📸 ${sNo}. Sınıf IG Konu Kartları (${sinifKartlari.length} Ders)`),
-          el('button', {
-            type: 'button',
-            sinif: 'dugme ck-wp-paylas-btn',
-            onclick: (ev) => sayfayiPaylas(ev.currentTarget, `📚 ${sNo}. Sınıf Tüm Dersler Konu Özetleri, Çalışma Kâğıtları ve Yazılılar (@${DK_IG_AYAR.HESAP}):`),
-          }, '🟢 Sınıf Sayfasını Paylaş'),
-          el('a', {
-            sinif: 'dugme',
-            href: DK_IG_AYAR.PROFIL_URL,
-            target: '_blank',
-            rel: 'noopener',
-            onclick: (e) => igProfiliAc(e),
-          }, `📸 @${DK_IG_AYAR.HESAP}`));
-        sinifSayfaKap.append(sinifCubuk);
-      }
+    // sinif.html ve ogrenci.html sayfasında seçilen sınıfın tüm ana ders IG kartlarını açan ve sayfayı paylaşan hızlı çubuk
+    const sinifCubukEkle = () => {
+      if (!/^(sinif|ogrenci)\.html$/i.test(temizYol) || $('.sinif-ig-cubuk')) return;
+      const sinifSayfaKap = $('.sayfa-bas .kap') || $('#agac .agac-bas .kap');
+      if (!sinifSayfaKap) return;
+      const sp = new URLSearchParams(location.search);
+      const sNo = Math.max(5, Math.min(12, Number(sp.get('no') || sp.get('s') || sp.get('sinif')) || 8));
+      const branslar = sNo <= 8
+        ? [
+            ['matematik', 'Matematik'],
+            ['fen-bilimleri', 'Fen Bilimleri'],
+            ['turkce', 'Türkçe'],
+            [sNo === 8 ? 'tc-inkilap-tarihi-ve-ataturkculuk' : 'sosyal-bilgiler', sNo === 8 ? 'T.C. İnkılap Tarihi' : 'Sosyal Bilgiler'],
+            ['ingilizce', 'İngilizce'],
+            ['din-kulturu-ve-ahlak-bilgisi', 'Din Kültürü'],
+          ]
+        : [
+            ['matematik', 'Matematik'],
+            ['turk-dili-ve-edebiyati', 'Türk Dili ve Edebiyatı'],
+            ['fizik', 'Fizik'],
+            ['kimya', 'Kimya'],
+            ['biyoloji', 'Biyoloji'],
+            ['tarih', 'Tarih'],
+          ];
+      const sinifKartlari = branslar.map(([kod, ad]) => ({
+        gorsel: sosyalKartYoluBul(sNo, kod, 4),
+        etiket: `${sNo}. Sınıf ${ad} · Instagram Konu Özeti Kartı (@${DK_IG_AYAR.HESAP})`,
+      }));
+      const sinifCubuk = el('div', { sinif: 'g-dugmeler y-ust sinif-ig-cubuk' },
+        el('button', {
+          type: 'button',
+          sinif: 'dugme ck-ig-kart-btn',
+          onclick: () => igHikayeModalAc(`${sNo}. Sınıf · Tüm Dersler IG Konu Kartları`, sinifKartlari, 0),
+        }, `📸 ${sNo}. Sınıf IG Konu Kartları (${sinifKartlari.length} Ders)`),
+        el('button', {
+          type: 'button',
+          sinif: 'dugme ck-wp-paylas-btn',
+          onclick: (ev) => sayfayiPaylas(ev.currentTarget, `📚 ${sNo}. Sınıf Tüm Dersler Konu Özetleri, Çalışma Kâğıtları ve Yazılılar (@${DK_IG_AYAR.HESAP}):`),
+        }, '🟢 Sınıf Sayfasını Paylaş'),
+        el('a', {
+          sinif: 'dugme',
+          href: DK_IG_AYAR.PROFIL_URL,
+          target: '_blank',
+          rel: 'noopener',
+          onclick: (e) => igProfiliAc(e),
+        }, `📸 @${DK_IG_AYAR.HESAP}`));
+      sinifSayfaKap.append(sinifCubuk);
+    };
+    sinifCubukEkle();
+    const agacKok = $('#agac');
+    if (agacKok && 'MutationObserver' in window) {
+      new MutationObserver(() => sinifCubukEkle()).observe(agacKok, { childList: true });
     }
 
-    const hedefYer = $('.ozet-sonu-kart') || $('.ck-sayfalar') || $('#nh-duzen') || $('#asds-bolum') || $('#yazili-icerik') || $('#p-indir') || $('#sinif-merkezi') || $('#ders-listesi') || $('#k-alan') || $('#a-alan') || $('#belge-gruplari') || $('#kartlar') || $('#arama-sonuclari');
+    const hedefYer = $('.ozet-sonu-kart') || $('.ck-sayfalar') || $('#nh-duzen') || $('#asds-bolum') || $('#yazili-icerik') || $('#p-indir') || $('#sinif-merkezi') || $('#agac') || $('#ders-listesi') || $('#k-alan') || $('#a-alan') || $('#belge-gruplari') || $('#kartlar') || $('#arama-sonuclari');
     if (!hedefYer) return;
 
     let kartOnizleme = null;
@@ -1646,7 +1650,7 @@ window.dkTamamlanan = dkTamamlanan;
 
   // Sol altta yüzen hızlı Instagram takip rozeti (kapatılabilir, reklam/tahta araçlarıyla çakışmaz)
   const yuzenIgHapEkle = () => {
-    if (yasalSayfaMi || /^\/(tahta|goruntule)\.html$/.test(location.pathname)) return;
+    if (botMu() || yasalSayfaMi || /^\/(tahta|goruntule)\.html$/.test(location.pathname)) return;
     try { if (sessionStorage.getItem('dk-ig-hap-kapali') === '1') return; } catch {}
     if ($('.dk-ig-yuzen-hap')) return;
 
@@ -1724,7 +1728,7 @@ window.dkTamamlanan = dkTamamlanan;
     }
   });
 
-  if (uyeMi()) return;
+  if (uyeMi() || botMu()) return;
 
   let modalEl = null;
   let bekleyenHedef = null;

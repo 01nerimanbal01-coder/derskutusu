@@ -407,7 +407,7 @@
   box-shadow: 0 4px 12px color-mix(in srgb, var(--kart-vurgu, var(--vurgu)) 22%, transparent); }
 .bh-simge svg, .devam-simge svg { width: 24px; height: 24px; }
 .bh-govde, .devam-govde { display: flex; flex-direction: column; gap: 4px; min-width: 0; flex: 1; }
-.bh-govde small, .devam-govde small { font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--kart-ana); }
+.bh-govde small, .devam-govde small { font-size: 12.5px; font-weight: 750; letter-spacing: normal; text-transform: none; color: var(--kart-ana); }
 .bh-govde strong { font-size: 15.5px; line-height: 1.4; font-weight: 750; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .bh-kartlar.kucuk .bh-kart { padding: 14px; }
 .bh-kartlar.kucuk .bh-govde strong { font-size: 14px; -webkit-line-clamp: 2; }
@@ -416,7 +416,7 @@
 .bh-git svg, .bh-tamam svg { width: 15px; height: 15px; transition: transform .15s; }
 .bh-kart:hover .bh-git svg { transform: translateX(3px); }
 .bh-tamam { color: #146b40; }   /* küçük yazı: açık zeminde 4,5:1 üstü (koyu tema aşağıda) */
-.bh-alt-baslik { font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--soluk); margin: 26px 0 12px; }
+.bh-alt-baslik { font-size: 13.5px; font-weight: 750; letter-spacing: normal; text-transform: none; color: var(--soluk); margin: 26px 0 12px; }
 .bh-alt { margin-top: 20px; }
 .bh-tumu { display: inline-flex; align-items: center; gap: 8px; font-weight: 750; font-size: 14.5px; }
 .bh-tumu svg { width: 16px; height: 16px; }
