@@ -21,12 +21,38 @@ def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
     return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
 
 
+def kok_ciz(cx, y, on_metin, ic_metin, son_metin='', renk=LAC, boy=8.0, ince=False):
+    ic_str = str(ic_metin)
+    on_str = str(on_metin) if on_metin else ''
+    son_str = str(son_metin) if son_metin else ''
+    w_ic = max(10, len(ic_str) * (boy * 0.62) + 4)
+    w_on = len(on_str) * (boy * 0.56) + (2 if on_str else 0)
+    w_son = len(son_str) * (boy * 0.56) + (2 if son_str else 0)
+    toplam_w = w_on + 9 + w_ic + w_son
+    sol = cx - toplam_w / 2
+    out = ''
+    if on_str:
+        out += yazi(sol + w_on - 1, y, on_str, boy, renk, 'end', ince=ince)
+    rx = sol + w_on
+    ust_y = y - boy * 0.95
+    orta_y = y - boy * 0.38
+    alt_y = y + 1.2
+    out += (f'<path d="M{rx:.1f} {orta_y:.1f} L{rx + 2.2:.1f} {orta_y - 1.2:.1f} '
+            f'L{rx + 5.0:.1f} {alt_y:.1f} L{rx + 8.5:.1f} {ust_y:.1f} '
+            f'H{rx + 9 + w_ic:.1f}" fill="none" stroke="{renk}" stroke-width="0.75" '
+            f'stroke-linecap="round" stroke-linejoin="round"/>')
+    out += yazi(rx + 9 + w_ic / 2, y, ic_str, boy, renk, 'middle', ince=ince)
+    if son_str:
+        out += yazi(rx + 9 + w_ic + 1, y, son_str, boy, renk, 'start', ince=ince)
+    return out
+
+
 def kinematik_baginti_kartlari():
     kartlar = [
         ("1. h_max", "V₀y² / 2g Formülü", YES, YES_A),
         ("2. t_uçuş", "2.V₀y / g Süresi", MAVI, MAVI_A),
         ("3. X_menzil", "V₀x . t_uçuş Yolu", TUR, TUR_A),
-        ("4. V_bileşke", "√(Vx² + Vy²) Büyüklüğü", MOR, MOR_A),
+        ("4. V_bileşke", None, MOR, MOR_A),
     ]
     ic = ""
     for i, (ad, oz, r, z) in enumerate(kartlar):
@@ -36,7 +62,10 @@ def kinematik_baginti_kartlari():
         ic += yazi(x + 41, 33, str(i + 1), 12.0, "#ffffff")
         ic += yazi(x + 41, 62, ad, 8.4, r)
         ic += f'<line x1="{x + 8}" y1="72" x2="{x + 74}" y2="72" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 41, 92, oz, 7.8, LAC, ince=True)
+        if oz is None:
+            ic += kok_ciz(x + 41, 92, '', 'Vx² + Vy²', '', LAC, 7.8, ince=True)
+        else:
+            ic += yazi(x + 41, 92, oz, 7.8, LAC, ince=True)
     return svg(360, 125, ic, "Atış hareketleri formül kartları.", 34)
 
 
@@ -67,8 +96,8 @@ def yatay_atis_carpan_kesiti():
     ic += yazi(180, 92, "Vy = 40 m/s", 8.4, TUR, ince=True)
     ic += kutu(248, 36, 96, 70, "#ffffff", YES)
     ic += yazi(296, 56, "Bileşke Hız", 9.0, YESIL_K)
-    ic += yazi(296, 76, "V = √(20² + 40²)", 8.4, LAC, ince=True)
-    ic += yazi(296, 92, "V = 20√5 m/s", 8.4, YES, ince=True)
+    ic += kok_ciz(296, 76, "V = ", "20² + 40²", "", LAC, 8.0, ince=True)
+    ic += kok_ciz(296, 92, "V = 20", "5", " m/s", YES, 8.2, ince=True)
     return svg(360, 125, ic, "Yatay atış bileşke hız hesabı.", 34)
 
 
@@ -94,18 +123,18 @@ def atis_karsilastirma_tablosu():
     ic += yazi(180, 20, "ÖZEL AÇILAR VE KİNEMATİK PARAMETRELER TABLOSU", 9.8, MOR)
     satirlar = [
         ("Fırlatma Açısı", "Uçuş Süresi (t)", "Tepe Yüksekliği (h)", "Yatay Menzil (X)", MOR),
-        ("30 Derece", "V₀ / g", "V₀² / 8g", "√3 V₀² / 2g", MAVI),
-        ("45 Derece", "√2 V₀ / g", "V₀² / 4g", "V₀² / g (Maksimum)", YESIL_K),
-        ("60 Derece", "√3 V₀ / g", "3V₀² / 8g", "√3 V₀² / 2g", TUR),
+        ("30 Derece", "V₀ / g", "V₀² / 8g", ("", "3", " V₀² / 2g"), MAVI),
+        ("45 Derece", ("", "2", " V₀ / g"), "V₀² / 4g", "V₀² / g (Maksimum)", YESIL_K),
+        ("60 Derece", ("", "3", " V₀ / g"), "3V₀² / 8g", ("", "3", " V₀² / 2g"), TUR),
     ]
     for i, (k1, k2, k3, k4, r) in enumerate(satirlar):
         y = 30 + i * 20
         bg = "#ffffff" if i > 0 else MOR_A
         ic += kutu(16, y, 328, 18, bg, r, r=2)
         ic += yazi(55, y + 13, k1, 8.0, r)
-        ic += yazi(130, y + 13, k2, 7.8, LAC, ince=(i > 0))
+        ic += kok_ciz(130, y + 13, k2[0], k2[1], k2[2], LAC, 7.8, ince=True) if isinstance(k2, tuple) else yazi(130, y + 13, k2, 7.8, LAC, ince=(i > 0))
         ic += yazi(210, y + 13, k3, 7.8, LAC, ince=(i > 0))
-        ic += yazi(295, y + 13, k4, 7.8, LAC, ince=(i > 0))
+        ic += kok_ciz(295, y + 13, k4[0], k4[1], k4[2], LAC, 7.8, ince=True) if isinstance(k4, tuple) else yazi(295, y + 13, k4, 7.8, LAC, ince=(i > 0))
     return svg(360, 125, ic, "Özel açılar kinematik tablosu.", 34)
 
 

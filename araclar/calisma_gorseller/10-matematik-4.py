@@ -21,15 +21,45 @@ def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
 def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2, ek=""):
     return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"{ek}/>'
 
+
+def kok_ciz(cx, y, on_metin, ic_metin, son_metin='', renk=LAC, boy=7.8, ince=False):
+    ic_str = str(ic_metin)
+    on_str = str(on_metin) if on_metin else ''
+    son_str = str(son_metin) if son_metin else ''
+    w_ic = max(10, len(ic_str) * (boy * 0.62) + 4)
+    w_on = len(on_str) * (boy * 0.56) + (2 if on_str else 0)
+    w_son = len(son_str) * (boy * 0.56) + (2 if son_str else 0)
+    toplam_w = w_on + 9 + w_ic + w_son
+    sol = cx - toplam_w / 2
+    out = ''
+    if on_str:
+        out += yazi(sol + w_on - 1, y, on_str, boy, renk, 'end', ince=ince)
+    rx = sol + w_on
+    ust_y = y - boy * 0.95
+    orta_y = y - boy * 0.38
+    alt_y = y + 1.2
+    out += (f'<path d="M{rx:.1f} {orta_y:.1f} L{rx + 2.2:.1f} {orta_y - 1.2:.1f} '
+            f'L{rx + 5.0:.1f} {alt_y:.1f} L{rx + 8.5:.1f} {ust_y:.1f} '
+            f'H{rx + 9 + w_ic:.1f}" fill="none" stroke="{renk}" stroke-width="1.1" '
+            f'stroke-linecap="round" stroke-linejoin="round"/>')
+    out += yazi(rx + 9 + w_ic / 2, y, ic_str, boy, renk, 'middle', ince=ince)
+    if son_str:
+        out += yazi(rx + 9 + w_ic + 1, y, son_str, boy, renk, 'start', ince=ince)
+    return out
+
+
 def g0():
     ic = kutu(4, 4, 352, 92, GRI_A, GRI)
-    kartlar = [('Temel Alan', 'Alan = (Taban · Yükseklik) / 2', '#2451d6', '#e8eefe'), ('Eşkenar Alan', 'Alan = a² · {kok:3} / 4', '#12a150', '#e3f6ea'), ('Sinüs Alan', 'Alan = ½ · a · b · sin(C)', '#ee7d12', '#fff1df'), ('Kenarortay & Alan', 'G üçgeni 6 eşit alana böler', '#7c3aed', '#f0e9fe')]
+    kartlar = [('Temel Alan', 'Alan = (Taban · Yükseklik) / 2', '#2451d6', '#e8eefe'), ('Eşkenar Alan', None, '#12a150', '#e3f6ea'), ('Sinüs Alan', 'Alan = ½ · a · b · sin(C)', '#ee7d12', '#fff1df'), ('Kenarortay & Alan', 'G üçgeni 6 eşit alana böler', '#7c3aed', '#f0e9fe')]
     for i, (b, d, c, a) in enumerate(kartlar):
         x = 10 + i * 86
         ic += kutu(x, 10, 80, 80, a, c, 6, 1.2)
         ic += yazi(x + 40, 30, b, 9, c)
         ic += f'<line x1="{x + 8}" y1="40" x2="{x + 72}" y2="40" stroke="{c}" stroke-width="0.8"/>'
-        ic += yazi(x + 40, 62, d, 7.5, LAC, ince=True)
+        if d is None:
+            ic += kok_ciz(x + 40, 62, 'Alan = a² · ', '3', ' / 4', LAC, 7.5, ince=True)
+        else:
+            ic += yazi(x + 40, 62, d, 7.5, LAC, ince=True)
     return svg(360, 100, ic, '10-matematik-4 temel kurallar ve kavramlar kartı', 34)
 def g1():
     ic = kutu(4, 4, 352, 92, MAVI_A, MAVI)
@@ -46,10 +76,10 @@ def g2():
     ic += yazi(180, 22, 'Eşkenar Üçgenin Alanı ve Kök 3 Bağıntısı', 11, YES)
     ic += kutu(16, 34, 156, 54, '#ffffff', '#12a150', 6, 1.2)
     ic += yazi(94, 52, 'Bir Kenarı a = 6 cm', 9, '#12a150')
-    ic += yazi(94, 72, 'Alan = 6² · {kok:3} / 4 = 9{kok:3} cm²', 7.5, LAC, ince=True)
+    ic += kok_ciz(94, 72, 'Alan = 36 / 4 · ', '3', ' = 9 kök 3 cm²', LAC, 7.4, ince=True)
     ic += kutu(188, 34, 156, 54, '#ffffff', '#2451d6', 6, 1.2)
     ic += yazi(266, 52, 'Bir Kenarı a = 4 cm', 9, '#2451d6')
-    ic += yazi(266, 72, 'Alan = 4² · {kok:3} / 4 = 4{kok:3} cm²', 7.5, LAC, ince=True)
+    ic += kok_ciz(266, 72, 'Alan = 16 / 4 · ', '3', ' = 4 kök 3 cm²', LAC, 7.4, ince=True)
     return svg(360, 100, ic, '10-matematik-4 model ve yasa karşılaştırma şeması', 34)
 def g3():
     ic = kutu(4, 4, 352, 92, TUR_A, TUR)
