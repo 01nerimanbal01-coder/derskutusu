@@ -31,6 +31,32 @@ def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
     return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
 
 
+def kok_ciz(cx, y, on_metin, ic_metin, son_metin='', renk=LAC, boy=10, ince=False):
+    ic_str = str(ic_metin)
+    on_str = str(on_metin) if on_metin else ''
+    son_str = str(son_metin) if son_metin else ''
+    w_ic = max(12, len(ic_str) * (boy * 0.62) + 4)
+    w_on = len(on_str) * (boy * 0.56) + (2 if on_str else 0)
+    w_son = len(son_str) * (boy * 0.56) + (2 if son_str else 0)
+    toplam_w = w_on + 10 + w_ic + w_son
+    sol = cx - toplam_w / 2
+    out = ''
+    if on_str:
+        out += yazi(sol + w_on - 1, y, on_str, boy, renk, 'end', ince=ince)
+    rx = sol + w_on
+    ust_y = y - boy * 0.95
+    orta_y = y - boy * 0.38
+    alt_y = y + 1.5
+    out += (f'<path d="M{rx:.1f} {orta_y:.1f} L{rx + 2.5:.1f} {orta_y - 1.5:.1f} '
+            f'L{rx + 5.5:.1f} {alt_y:.1f} L{rx + 9.5:.1f} {ust_y:.1f} '
+            f'H{rx + 10 + w_ic:.1f}" fill="none" stroke="{renk}" stroke-width="1.3" '
+            f'stroke-linecap="round" stroke-linejoin="round"/>')
+    out += yazi(rx + 10 + w_ic / 2, y, ic_str, boy, renk, 'middle', ince=ince)
+    if son_str:
+        out += yazi(rx + 10 + w_ic + 1, y, son_str, boy, renk, 'start', ince=ince)
+    return out
+
+
 def dort_viraj_modeli_karti():
     modeller = [
         ('1. Yatay Viraj', 'Fs ≥ m·v² / r dengesi', MAVI, MAVI_A),
@@ -59,7 +85,7 @@ def yatay_viraj_hesap_modeli():
 
     ic += kutu(190, 36, 150, 58, TUR_A, TUR)
     ic += yazi(265, 54, 'v² = k·g·r = 0,4·10·100 = 400', 9.8, TUR)
-    ic += yazi(265, 74, 'v_max = √400 = 20 m/s', 10.0, LAC)
+    ic += kok_ciz(265, 74, 'v_max = ', '400', ' = 20 m/s', LAC, 9.6)
     return svg(360, 110, ic, 'Yatay virajda maksimum güvenli hız hesabı.', 34)
 
 
@@ -75,7 +101,7 @@ def viraj_dinamik_vektor_karti():
     ic = kutu(6, 6, 170, 98, YES_A, YES)
     ic += yazi(91, 26, 'Yatay Viraj Dengesi', 10.4, YES)
     ic += yazi(91, 50, 'Fs = k·m·g = m·v² / r', 9.5, LAC, ince=True)
-    ic += yazi(91, 76, 'v_max = √(k·g·r)', 9.6, YES)
+    ic += kok_ciz(91, 76, 'v_max = ', 'k·g·r', '', YES, 9.6)
 
     ic += kutu(184, 6, 170, 98, TUR_A, TUR)
     ic += yazi(269, 26, 'Eğimli Viraj Dengesi', 10.4, TUR)

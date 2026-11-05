@@ -21,20 +21,50 @@ def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
 def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2, ek=""):
     return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"{ek}/>'
 
+
+def kok_ciz(cx, y, on_metin, ic_metin, son_metin='', renk=LAC, boy=10, ince=False):
+    ic_str = str(ic_metin)
+    on_str = str(on_metin) if on_metin else ''
+    son_str = str(son_metin) if son_metin else ''
+    w_ic = max(12, len(ic_str) * (boy * 0.62) + 4)
+    w_on = len(on_str) * (boy * 0.56) + (2 if on_str else 0)
+    w_son = len(son_str) * (boy * 0.56) + (2 if son_str else 0)
+    toplam_w = w_on + 10 + w_ic + w_son
+    sol = cx - toplam_w / 2
+    out = ''
+    if on_str:
+        out += yazi(sol + w_on - 1, y, on_str, boy, renk, 'end', ince=ince)
+    rx = sol + w_on
+    ust_y = y - boy * 0.95
+    orta_y = y - boy * 0.38
+    alt_y = y + 1.5
+    out += (f'<path d="M{rx:.1f} {orta_y:.1f} L{rx + 2.5:.1f} {orta_y - 1.5:.1f} '
+            f'L{rx + 5.5:.1f} {alt_y:.1f} L{rx + 9.5:.1f} {ust_y:.1f} '
+            f'H{rx + 10 + w_ic:.1f}" fill="none" stroke="{renk}" stroke-width="1.3" '
+            f'stroke-linecap="round" stroke-linejoin="round"/>')
+    out += yazi(rx + 10 + w_ic / 2, y, ic_str, boy, renk, 'middle', ince=ince)
+    if son_str:
+        out += yazi(rx + 10 + w_ic + 1, y, son_str, boy, renk, 'start', ince=ince)
+    return out
+
+
 def g0_genis_acilar():
     ic = kutu(4, 4, 352, 92, GRI_A, GRI)
     degerler = [
-        ('sin 150°', '+1/2', MAVI, MAVI_A),
-        ('cos 120°', '-1/2', TUR, TUR_A),
-        ('sin 135°', '+√2/2', YES, YES_A),
-        ('cos 135°', '-√2/2', MOR, MOR_A)
+        ('sin 150°', '+1/2', None, MAVI, MAVI_A),
+        ('cos 120°', '-1/2', None, TUR, TUR_A),
+        ('sin 135°', None, ('+', '2', '/2'), YES, YES_A),
+        ('cos 135°', None, ('-', '2', '/2'), MOR, MOR_A)
     ]
-    for i, (b, val, c, a) in enumerate(degerler):
+    for i, (b, val, kok_bilgi, c, a) in enumerate(degerler):
         x = 10 + i * 86
         ic += kutu(x, 10, 80, 80, a, c, 6, 1.2)
         ic += yazi(x + 40, 32, b, 11, c)
         ic += f'<line x1="{x + 8}" y1="42" x2="{x + 72}" y2="42" stroke="{c}" stroke-width="0.8"/>'
-        ic += yazi(x + 40, 64, val, 12, LAC)
+        if kok_bilgi:
+            ic += kok_ciz(x + 40, 64, kok_bilgi[0], kok_bilgi[1], kok_bilgi[2], LAC, 11)
+        else:
+            ic += yazi(x + 40, 64, val, 12, LAC)
     return svg(360, 100, ic, 'Geniş açılarda trigonometrik oran kartları', 34)
 
 
@@ -55,8 +85,8 @@ def g1_birim_cember_120():
     ic += kutu(176, 12, 170, 76, '#f4f8fe', MAVI, 6, 1.2)
     ic += yazi(261, 30, '120° BİTİM NOKTASI', 10, MAVI)
     ic += yazi(261, 48, 'cos 120° = -cos 60° = -1/2', 9.5, LAC)
-    ic += yazi(261, 64, 'sin 120° = sin 60° = √3/2', 9.5, LAC)
-    ic += yazi(261, 78, 'P = (-1/2, √3/2)', 10, TUR)
+    ic += kok_ciz(261, 64, 'sin 120° = sin 60° = ', '3', '/2', LAC, 9.2)
+    ic += kok_ciz(261, 78, 'P = (-1/2, ', '3', '/2)', TUR, 9.8)
     return svg(360, 100, ic, 'Birim çember üzerinde 120 derecelik açı koordinatları', 34)
 
 
