@@ -13,7 +13,7 @@ def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
     return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
 
 def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
+    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}"/>'
 
 def kart4(etiket, veri):
     ic = kutu(4, 4, 352, 107, GRI_A, GRI)
@@ -50,7 +50,7 @@ def g1():
     return uclu('Yörünge yarıçapı artışının enerjilere etkisi', 'UYDU YÖRÜNGESİ: r → 2r ÇIKARILDIĞINDA ENERJİ DEĞİŞİMİ', ('Potansiyel ve Toplam', 'Sıfıra yaklaşır, ARTAR', YES, YES_A), ('Kinetik Enerji (Ek)', 'Hız düşer, AZALIR', KIR, KIR_A), ('Bağlanma Enerjisi', 'Koparmak kolay, AZALIR', MOR, MOR_A), MAVI, MAVI_A)
 
 def g2():
-    return pano('Kurtulma enerjisi ve kurtulma hızı karşılaştırması', 'KURTULMA ENERJİSİ VE KURTULMA HIZI İLİŞKİSİ', 'E(kurtulma) = +G·M·m / R (Cismin m kütlesiyle doğru orantılıdır)', 'v(kurtulma) = √(2·G·M / R) (Cismin m kütlesine bağlı DEĞİLDİR!)', CAM, CAM_A, '#eaf7fa')
+    return pano('Kurtulma enerjisi ve kurtulma hızı karşılaştırması', 'KURTULMA ENERJİSİ VE KURTULMA HIZI İLİŞKİSİ', 'E(kurtulma) = +G·M·m / R (Cismin m kütlesiyle doğru orantılıdır)', '__F12_1__', CAM, CAM_A, '#eaf7fa')
 
 def g3():
     return kart4('Çekim potansiyel ve kurtulma özellikleri', [('Sonsuzda Ep', 'd → ∞ iken Ep = 0', MAVI, MAVI_A), ('Kurtulma Hızı', 'Kütleye (m) bağlı değil', YES, YES_A), ('Kinetik Enerji', '+G·M·m / (2r)', TUR, TUR_A), ('Güneş', 'En yüksek kurtulma hızı', MOR, MOR_A)])
@@ -65,7 +65,7 @@ def g7():
     return pano('Kurtulma, bağlanma ve bağlı sistem kavramları', 'ÇEKİM ALANINDAN KURTULMA VE BAĞLANMA ENERJİSİ', 'Yüzeyden Sonsuza: Kurtulma Enerjisi · Yörüngeden Sonsuza: Bağlanma Enerjisi', 'Negatif (-) toplam enerji, uydunun gezegene kütle çekimiyle bağlı olduğunu gösterir.', YES, YES_A, '#eaf8f0')
 
 def g8():
-    return kart4('Yörünge yarıçapı r arttıkça değişimler', [('Hız ve Ek', 'Azalır (v ∝ 1/√r)', KIR, KIR_A), ('Potansiyel (Ep)', 'Artar (0’a yaklaşır)', YES, YES_A), ('Toplam (Et)', 'Artar (Üst yörünge)', MAVI, MAVI_A), ('Bağlanma (Ebağ)', 'Azalır (Kolay kopar)', MOR, MOR_A)])
+    return kart4('Yörünge yarıçapı r arttıkça değişimler', [('Hız ve Ek', '__F12_2__', KIR, KIR_A), ('Potansiyel (Ep)', 'Artar (0’a yaklaşır)', YES, YES_A), ('Toplam (Et)', 'Artar (Üst yörünge)', MAVI, MAVI_A), ('Bağlanma (Ebağ)', 'Azalır (Kolay kopar)', MOR, MOR_A)])
 
 def uygula(o):
     s = o['sorular']
@@ -77,3 +77,15 @@ def uygula(o):
     s[6]['gorsel'] = g6()
     s[7]['gorsel'] = g7()
     s[8]['gorsel'] = g8()
+
+_eski_uygula = uygula
+def _temizle12(svg_s):
+    svg_s = svg_s.replace('<text x="180.0" y="82.0" text-anchor="middle" font-size="8.5" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">__F12_1__</text>', '<text x="88.0" y="82.0" text-anchor="end" font-size="8.2" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">v(kurtulma) = </text><path d="M 88.8 78.9 L 90.1 78.9 L 91.5 82.6 L 93.8 74.1 L 138.8 74.1" fill="none" stroke="#5b6479" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/><text x="116.3" y="82.0" text-anchor="middle" font-size="8.2" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">2·G·M / R</text><text x="139.3" y="82.0" text-anchor="start" font-size="8.2" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">  (m kütlesine bağlı DEĞİLDİR!)</text>')
+    svg_s = svg_s.replace('<text x="50.0" y="72.0" text-anchor="middle" font-size="8.0" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">__F12_2__</text>', '<text x="58.0" y="72.0" text-anchor="end" font-size="7.6" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">Azalır: v ∝ 1/</text><path d="M 58.8 69.1 L 60.1 69.1 L 61.5 72.6 L 63.8 64.7 L 70.4 64.7" fill="none" stroke="#0b2257" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/><text x="67.1" y="72.0" text-anchor="middle" font-size="7.6" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">r</text>')
+    return svg_s
+
+def uygula(o):
+    _eski_uygula(o)
+    for q in o['sorular']:
+        if q.get('gorsel'):
+            q['gorsel'] = _temizle12(q['gorsel'])

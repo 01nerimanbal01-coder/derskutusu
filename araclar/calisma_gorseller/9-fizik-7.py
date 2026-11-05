@@ -13,7 +13,7 @@ def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
     return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
 
 def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
+    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}"/>'
 
 def dörtlu_kart(etiket, kartlar):
     ic = kutu(4, 4, 352, 107, GRI_A, GRI)
@@ -46,15 +46,15 @@ def bilgi_panosu(etiket, baslik, satir1, satir2, c=CAM, d=CAM_A, ic_d='#eaf7fa')
 def g0():
     return dörtlu_kart('Eşit iki vektörde özel açılar', [
         ('θ = 0° (Aynı)', 'R = 2F (Maksimum)', MAVI, MAVI_A),
-        ('θ = 60°', 'R = F√3', YES, YES_A),
-        ('θ = 90° (Dik)', 'R = F√2 (Pisagor)', TUR, TUR_A),
+        ('θ = 60°', '__G0_1__', YES, YES_A),
+        ('θ = 90° (Dik)', '__G0_2__', TUR, TUR_A),
         ('θ = 120°', 'R = F (Kendisine eşit)', MOR, MOR_A)
     ])
 def g1():
     return uclu_pano('Kartezyen koordinat sisteminde vektör', 'KARTEZYEN SİSTEMDE VEKTÖR GÖSTERİMİ VE TOPLAMA', [
         ('A(x, y) Gösterimi', 'Başlangıç O(0, 0)', MAVI, '#f4f8fe'),
         ('Bileşke R(Rx, Ry)', 'Rx = Ax+Bx, Ry = Ay+By', YES, YES_A),
-        ('Büyüklük |R|', '√(Rx² + Ry²)', TUR, TUR_A)
+        ('Büyüklük |R|', '__G1_1__', TUR, TUR_A)
     ], MAVI, MAVI_A)
 def g2():
     return bilgi_panosu('Bileşke vektör sınır değerleri', 'İKİ VEKTÖRÜN BİLEŞKE ARALIĞI: |A - B| ≤ R ≤ A + B',
@@ -72,12 +72,12 @@ def g5():
         ('1. Bileşen Ayır', 'Fx=Fcosθ, Fy=Fsinθ', MAVI, MAVI_A),
         ('2. Yatay Topla', 'Rx = ΣFx hesapla', YES, YES_A),
         ('3. Düşey Topla', 'Ry = ΣFy hesapla', TUR, TUR_A),
-        ('4. Pisagor Al', 'R = √(Rx² + Ry²)', MOR, MOR_A)
+        ('4. Pisagor Al', '__G5_1__', MOR, MOR_A)
     ])
 def g6():
     return uclu_pano('Eşit kuvvetlerde açı etkisi', 'F₁ = F₂ = F İKEN AÇIYA GÖRE BİLEŞKE', [
-        ('θ = 60° İken', 'R = F√3 (Daha büyük)', YES, YES_A),
-        ('θ = 90° İken', 'R = F√2 (Dik köşegen)', MAVI, '#f4f8fe'),
+        ('θ = 60° İken', '__G6_1__', YES, YES_A),
+        ('θ = 90° İken', '__G6_2__', MAVI, '#f4f8fe'),
         ('θ = 120° İken', 'R = F (Tek kuvvete eşit)', TUR, TUR_A)
     ], YES, YES_A)
 def g7():
@@ -102,3 +102,19 @@ def uygula(o):
     s[6]['gorsel'] = g6()
     s[7]['gorsel'] = g7()
     s[8]['gorsel'] = g8()
+
+_eski_uygula = uygula
+def _temizle9(svg_s):
+    svg_s = svg_s.replace('<text x="136.0" y="72.0" text-anchor="middle" font-size="8.2" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">__G0_1__</text>', '<text x="135.0" y="72.0" text-anchor="end" font-size="8.2" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">R = F</text><path d="M 135.8 68.9 L 137.1 68.9 L 138.5 72.6 L 140.8 64.1 L 147.8 64.1" fill="none" stroke="#0b2257" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/><text x="144.3" y="72.0" text-anchor="middle" font-size="8.2" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">3</text>')
+    svg_s = svg_s.replace('<text x="222.0" y="72.0" text-anchor="middle" font-size="8.2" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">__G0_2__</text>', '<text x="206.0" y="72.0" text-anchor="end" font-size="7.6" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">R = F</text><path d="M 206.8 69.1 L 208.1 69.1 L 209.5 72.6 L 211.8 64.7 L 218.4 64.7" fill="none" stroke="#0b2257" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/><text x="215.1" y="72.0" text-anchor="middle" font-size="7.6" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">2</text><text x="218.9" y="72.0" text-anchor="start" font-size="7.6" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257"> (dik)</text>')
+    svg_s = svg_s.replace('<text x="290.0" y="78.0" text-anchor="middle" font-size="8.2" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">__G1_1__</text>', '<path d="M 264.8 75.0 L 266.1 75.0 L 267.5 78.6 L 269.8 70.3 L 313.8 70.3" fill="none" stroke="#5b6479" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/><text x="291.8" y="78.0" text-anchor="middle" font-size="8.0" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">Rx² + Ry²</text>')
+    svg_s = svg_s.replace('<text x="308.0" y="68.0" text-anchor="middle" font-size="8.2" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">__G5_1__</text>', '<text x="286.0" y="68.0" text-anchor="end" font-size="7.4" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">R = </text><path d="M 286.8 65.2 L 288.1 65.2 L 289.5 68.6 L 291.8 60.9 L 324.0 60.9" fill="none" stroke="#0b2257" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/><text x="307.9" y="68.0" text-anchor="middle" font-size="7.4" font-family="Noto Sans, sans-serif" font-weight="400" fill="#0b2257">Rx²+Ry²</text>')
+    svg_s = svg_s.replace('<text x="66.0" y="78.0" text-anchor="middle" font-size="8.2" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">__G6_1__</text>', '<text x="48.0" y="78.0" text-anchor="end" font-size="7.5" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">R = F</text><path d="M 48.8 75.2 L 50.1 75.2 L 51.5 78.6 L 53.8 70.8 L 60.3 70.8" fill="none" stroke="#5b6479" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/><text x="57.1" y="78.0" text-anchor="middle" font-size="7.5" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">3</text><text x="60.8" y="78.0" text-anchor="start" font-size="7.5" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479"> (büyük)</text>')
+    svg_s = svg_s.replace('<text x="178.0" y="78.0" text-anchor="middle" font-size="8.2" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">__G6_2__</text>', '<text x="162.0" y="78.0" text-anchor="end" font-size="7.6" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">R = F</text><path d="M 162.8 75.1 L 164.1 75.1 L 165.5 78.6 L 167.8 70.7 L 174.4 70.7" fill="none" stroke="#5b6479" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/><text x="171.1" y="78.0" text-anchor="middle" font-size="7.6" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">2</text><text x="174.9" y="78.0" text-anchor="start" font-size="7.6" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479"> (dik)</text>')
+    return svg_s
+
+def uygula(o):
+    _eski_uygula(o)
+    for q in o['sorular']:
+        if q.get('gorsel'):
+            q['gorsel'] = _temizle9(q['gorsel'])
