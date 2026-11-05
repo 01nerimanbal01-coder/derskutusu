@@ -1,0 +1,261 @@
+{
+  "sinif": 11,
+  "ders": "fizik",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Newton'ın Hareket Yasaları ve Serbest Cisim Diyagramları (FİZ.11.1.4)",
+  "ciktilar": [
+    "FİZ.11.1.4. Newton'ın Hareket Yasaları ile ilgili tümevarımsal akıl yürütebilme.",
+    "Bir cisme uygulanan temas ve alan kuvvetlerini serbest cisim diyagramı üzerinde yön ve büyüklükleriyle gösterir.",
+    "Yatay ve eğik düzlemlerde sürtünmeli veya sürtünmesiz sistemlerde ivmeyi ve ip gerilmelerini hesaplar."
+  ],
+  "hatirla": [
+    "Serbest cisim diyagramında cisme uygulanan tüm temas ve alan kuvvetleri yön ve büyüklükleriyle gösterilir.",
+    "Net kuvvet sıfır değilse sistem kütlesiyle ters, net kuvvetle doğru orantılı ivme kazanır ({kesir:F|m} = a).",
+    "Sürtünmeli eğik düzlemde cismin hareket yönüne zıt kinetik sürtünme kuvveti f_k = k · m · g · cos(θ) bağıntısıyla bulunur."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Newton'ın hareket yasalarını temel fiziksel ilkeleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Eylemsizlik Prensibi",
+          "Bir cisim üzerine etki eden net kuvvet sıfır ise cisim mevcut hareket durumunu korur."
+        ],
+        [
+          "Temel Yasa",
+          "Net bir kuvvet etkisindeki cisim kuvvet yönünde kütlesiyle ters orantılı ivme kazanır."
+        ],
+        [
+          "Etki-Tepki Yasası",
+          "İki cisim arasındaki etkileşimde kuvvetler eşit büyüklükte, zıt yönde ve farklı cisimlerdedir."
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Yatay ve sürtünmesiz bir zeminde duran 4 kg kütleli bir bloğa 24 N büyüklüğünde yatay bir kuvvet uygulandığında bloğun ivmesi kaç m/s{us:|2} olur?",
+      "secenekler": [
+        "Temel yasa uyarınca ivme net kuvvetin kütleye bölünmesiyle 6 m/s{us:|2} olarak hesaplanır.",
+        "Cismin eylemsizlik direnci nedeniyle ivme sıfır kalır ve blok sabit hızla.",
+        "Kuvvet ile kütlenin çarpımı neticesinde cisim 96 m/s{us:|2} büyüklüğünde bir ivmeye ulaşır.",
+        "Zeminin tepki kuvveti yatay kuvvete eşit olduğundan cisim yalnızca 12 m/s{us:|2} ivme kazanır."
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Masa üzerinde duran bir kitabın serbest cisim diyagramı çizilirken hangi kuvvet çifti kesinlikle gösterilmez?",
+      "secenekler": [
+        "Kitabın kütlesine etki eden düşey ve aşağı yönlü yer çekimi kuvveti.",
+        "Masa yüzeyinin kitaba düşey doğrultuda yukarı yönde uyguladığı normal.",
+        "Kitabın masaya uyguladığı düşey etki kuvveti kitabın kendi diyagramına.",
+        "Yatay yönde herhangi bir itme olmadığından yatay sürtünme kuvveti sıfır."
+      ],
+      "cevap": "C",
+      "dogru": 2
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Newton mekaniğine ait aşağıdaki cümlelerde boş bırakılan yerleri kavram bankasından seçerek tamamlayınız.",
+      "kelime_bankasi": [
+        "Eylemsizlik",
+        "Kinetik sürtünme",
+        "Statik sürtünme",
+        "İvme"
+      ],
+      "cumleler": [
+        {
+          "on": "Duran bir cismin durmaya, hareket edenin hareketine devam etme eğilimine ",
+          "bosluk": "Eylemsizlik",
+          "son": " denir.",
+          "metin": "Duran bir cismin durmaya, hareket edenin hareketine devam etme eğilimine ____ denir.",
+          "cevap": "Eylemsizlik"
+        },
+        {
+          "on": "Harekete geçmemiş bir cisme uygulanan kuvvete karşı oluşan sürtünmeye ",
+          "bosluk": "Statik sürtünme",
+          "son": " adı verilir.",
+          "metin": "Harekete geçmemiş bir cisme uygulanan kuvvete karşı oluşan sürtünmeye ____ adı verilir.",
+          "cevap": "Statik sürtünme"
+        },
+        {
+          "on": "Kayarak hareket eden bir cisim ile zemin arasında oluşan sürtünme kuvvetine ",
+          "bosluk": "Kinetik sürtünme",
+          "son": " denir.",
+          "metin": "Kayarak hareket eden bir cisim ile zemin arasında oluşan sürtünme kuvvetine ____ denir.",
+          "cevap": "Kinetik sürtünme"
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Eğim açısı 30° olan sürtünmesiz bir eğik düzlemde serbest bırakılan bir cismin kayma ivmesi yer çekimi ivmesi g cinsinden nedir? (sin 30° = 0,5)",
+      "secenekler": [
+        "Cismin kütlesine bağlı olarak ivme büyüklüğü g ile 2g arasında doğrusal.",
+        "Eğik düzleme paralel yer çekimi bileşeni g · sin 30° olduğundan ivme 0,5g.",
+        "Eğik düzlemin tepki kuvveti yatay bileşeni dengelediği için ivme tam g.",
+        "Düşey doğrultudaki kuvvet dengelendiğinden cisim ivmesiz ve sabit hızla."
+      ],
+      "cevap": "B",
+      "dogru": 1
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Fiziksel durumlar ile bunlara etki eden net kuvvet ve ivme bağıntılarını eşleştiriniz.",
+      "ciftler": [
+        [
+          "Duran veya sabit hızlı cisim",
+          "Üzerine etki eden net kuvvet sıfırdır, ivme büyüklüğü de sıfırdır."
+        ],
+        [
+          "Düzgün hızlanan cisim",
+          "Hareket yönünde uygulanan sabit net kuvvet etkisinde sabit bir ivmeyle hızlanır."
+        ],
+        [
+          "Sürtünmeli zeminde kayan blok",
+          "Net kuvvet F - f_k olup cismin ivmesi (F - f_k) / m bağıntısıyla hesaplanır."
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Aralarında bir iple bağlı m{alt:1} ve m{alt:2} kütleli iki cisim sürtünmesiz yatay zeminde F kuvvetiyle çekildiğinde ip",
+      "secenekler": [
+        "İp gerilmesi uygulanan F kuvvetinin büyüklüğüne daima eşit olup kütle.",
+        "İpteki gerilme kuvveti her iki kütlenin ağırlıkları toplamına eşit bir.",
+        "Sistemin ivmesi sıfır olduğundan ip gerilmesi m{alt:1} kütlesinin eylemsizliğine eşittir.",
+        "İp yalnızca arkadaki m{alt:1} kütlesini ivmelendirdiği için T = m{alt:1} · {kesir:F|m{alt:1} + m{alt:2}} bağıntısıyla bulunur."
+      ],
+      "cevap": "D",
+      "dogru": 3
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Kuvvet ve hareket kavramlarına ait boşlukları uygun kavramla tamamlayınız.",
+      "kelime_bankasi": [
+        "Bileşke kuvvet",
+        "Tepki kuvveti",
+        "Kütle",
+        "Ağırlık"
+      ],
+      "cumleler": [
+        {
+          "on": "Bir cisme etki eden tüm kuvvetlerin vektörel toplamına ",
+          "bosluk": "Bileşke kuvvet",
+          "son": " denir.",
+          "metin": "Bir cisme etki eden tüm kuvvetlerin vektörel toplamına ____ denir.",
+          "cevap": "Bileşke kuvvet"
+        },
+        {
+          "on": "Bir cismin sahip olduğu değişmeyen madde miktarına ",
+          "bosluk": "Kütle",
+          "son": " denir.",
+          "metin": "Bir cismin sahip olduğu değişmeyen madde miktarına ____ denir.",
+          "cevap": "Kütle"
+        },
+        {
+          "on": "Kütleye etki eden yer çekimi kuvvetinin büyüklüğüne ",
+          "bosluk": "Ağırlık",
+          "son": " adı verilir.",
+          "metin": "Kütleye etki eden yer çekimi kuvvetinin büyüklüğüne ____ adı verilir.",
+          "cevap": "Ağırlık"
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Yukarı yönde 'a' ivmesiyle hızlanan bir asansörün tavanına asılı m kütleli cismin ipindeki gerilme kuvveti nasıl değişir?",
+      "secenekler": [
+        "Eylemsizlik etkisiyle hissedilen net kuvvet artar ve ip gerilmesi T = m ·.",
+        "Asansör hızlandığı için ip gerilmesi yer çekiminden bağımsız hale gelerek.",
+        "İp gerilmesi yer çekimi ivmesinden ivme çıkarılarak T = m · (g - a).",
+        "Cismin kütlesi ivmelenme anında azaldığından ipteki gerilme kuvveti sabit."
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Katı yüzeyler arasındaki sürtünme katsayısı ve sürtünme kuvvetiyle ilgili hangi bilimsel yargı doğrudur?",
+      "secenekler": [
+        "Yüzey alanı iki katına çıkarıldığında sürtünme kuvveti de aynı oranda iki.",
+        "Statik sürtünme katsayısı kinetik sürtünme katsayısından her zaman daha.",
+        "Sürtünme kuvveti temas eden yüzey alanının büyüklüğüne değil, yüzeyin.",
+        "Kinetik sürtünme kuvveti cismin kayma hızı arttıkça hızla doğru orantılı."
+      ],
+      "cevap": "C",
+      "dogru": 2
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Dinamik yasalarına ait boşlukları kavram bankasından seçerek doldurunuz.",
+      "kelime_bankasi": [
+        "Normal kuvvet",
+        "Denge",
+        "Net kuvvet",
+        "Vektör"
+      ],
+      "cumleler": [
+        {
+          "on": "Yüzeyin cisme uyguladığı dik basma direncine ",
+          "bosluk": "Normal kuvvet",
+          "son": " denir.",
+          "metin": "Yüzeyin cisme uyguladığı dik basma direncine ____ denir.",
+          "cevap": "Normal kuvvet"
+        },
+        {
+          "on": "Bir cisim üzerindeki kuvvetlerin toplamı sıfır ise cisim statik veya dinamik ",
+          "bosluk": "Denge",
+          "son": " halindedir.",
+          "metin": "Bir cisim üzerindeki kuvvetlerin toplamı sıfır ise cisim statik veya dinamik ____ halindedir.",
+          "cevap": "Denge"
+        },
+        {
+          "on": "İvmeyi belirleyen toplam kuvvete ",
+          "bosluk": "Net kuvvet",
+          "son": " adı verilir.",
+          "metin": "İvmeyi belirleyen toplam kuvvete ____ adı verilir.",
+          "cevap": "Net kuvvet"
+        }
+      ]
+    },
+    {
+      "tur": "acik",
+      "duzey": "uygula",
+      "soru": "Bir masada duran kitabın ağırlığına karşılık gelen tepki kuvveti hangi cisme uygulanır?",
+      "satir": 2,
+      "cevap": "Kitabın ağırlığının tepki kuvveti Dünya'nın merkezine."
+    }
+  ]
+}

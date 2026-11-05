@@ -1,0 +1,261 @@
+{
+  "sinif": 11,
+  "ders": "matematik",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Dörtgenlerin Özellikleri: Açı, Kenar ve Köşegen Bağıntıları (MAT.11.2.1)",
+  "ciktilar": [
+    "MAT.11.2.1. Üçgenlerde açı, benzerlik ve alan özelliklerinden yola çıkarak dörtgenlerin açı, kenar, köşegen ve alan özelliklerine ilişkin muhakeme yapabilme.",
+    "Dörtgenlerde iç ve dış açılar toplamını, ardışık ve karşılıklı iç açıortayların oluşturduğu açıları hesaplar.",
+    "Köşegenleri dik kesişen dörtgenlerde kenar kareleri bağıntısını, Varignon orta noktalar paralelkenarını ve alan formüllerini problem çözümlerinde uygular."
+  ],
+  "hatirla": [
+    "Bir dışbükey dörtgenin iç açılarının ölçüleri toplamı ile dış açılarının ölçüleri toplamı 360° dir.",
+    "Köşegenleri dik kesişen bir dörtgende karşılıklı kenar uzunluklarının kareleri toplamı birbirine eşittir (a{us:|2} + c{us:|2} = b{us:|2} + d",
+    "Bir dörtgenin kenar orta noktalarının birleştirilmesiyle elde edilen Varignon dörtgeni daima bir paralelkenardır ve alanı dörtgenin alanının"
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Dörtgenlere ait temel teorem ve bağıntıları doğru tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Dörtgende İç Açılar",
+          "Bütün dışbükey dörtgenlerde iç açıların ölçüleri toplamı daima 360° dir."
+        ],
+        [
+          "Varignon Paralelkenarı",
+          "Dörtgenin kenar orta noktalarının birleştirilmesiyle oluşan paralelkenardır."
+        ],
+        [
+          "Dik Köşegen Bağıntısı",
+          "Köşegenleri dik kesişen dörtgende karşılıklı kenarların kareleri toplamı eşittir."
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Köşegenleri dik kesişen bir ABCD dışbükey dörtgeninde kenar uzunlukları |AB|=5 cm, |BC|=7 cm ve |CD|=8 cm olduğuna göre |AD| kenarı kaç cm dir?",
+      "secenekler": [
+        "a{us:|2} + c{us:|2} = b{us:|2} + d{us:|2} bağıntısından 25 + 64 = 49 + x{us:|2} olup x = {kok:40} cm bulunur.",
+        "Pisagor teoremi gereğince hipotenüs uzunlukları toplanarak x = 10 cm.",
+        "Karşılıklı kenarların aritmetik ortalaması alındığında x = 6 cm elde edilir.",
+        "Köşegenlerin dikliği yalnız alan hesabında geçerli olduğundan x hesaplanamaz."
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Bir ABCD dörtgeninin kenar orta noktaları birleştirilerek elde edilen KLMN Varignon paralelkenarının çevresi neye eşittir?",
+      "secenekler": [
+        "ABCD dörtgeninin dört kenar uzunluğunun toplamının tam yarısına eşittir.",
+        "Dörtgenin ağırlık merkezinden geçen iç teğet çemberin çevre uzunluğuna.",
+        "ABCD dörtgeninin köşegen uzunluklarının toplamına (e + f) daima eşittir.",
+        "Dörtgenin alanı ile köşegenlerin dik kesişme açısının tanjantının çarpımıdır."
+      ],
+      "cevap": "C",
+      "dogru": 2
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Dörtgenler geometrisine ait aşağıdaki cümlelerde boşlukları uygun kavramla tamamlayınız.",
+      "kelime_bankasi": [
+        "Varignon paralelkenarı",
+        "Köşegen",
+        "Açıortay",
+        "Dışbükey"
+      ],
+      "cumleler": [
+        {
+          "on": "Ardışık olmayan iki köşeyi birleştiren doğru parçasına ",
+          "bosluk": "Köşegen",
+          "son": " adı verilir.",
+          "metin": "Ardışık olmayan iki köşeyi birleştiren doğru parçasına ____ adı verilir.",
+          "cevap": "Köşegen"
+        },
+        {
+          "on": "Tüm iç açıları 180 dereceden küçük olan çokgenlere ",
+          "bosluk": "Dışbükey",
+          "son": " dörtgen denir.",
+          "metin": "Tüm iç açıları 180 dereceden küçük olan çokgenlere ____ dörtgen denir.",
+          "cevap": "Dışbükey"
+        },
+        {
+          "on": "Kenar orta noktalarının sırayla birleşmesiyle ",
+          "bosluk": "Varignon paralelkenarı",
+          "son": " oluşur.",
+          "metin": "Kenar orta noktalarının sırayla birleşmesiyle ____ oluşur.",
+          "cevap": "Varignon paralelkenarı"
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Bir ABCD dörtgeninde komşu A ve B köşelerinden çizilen iç açıortaylar arasındaki dar veya geniş açının ölçüsü α nasıl ifade edilir?",
+      "secenekler": [
+        "Komşu açıların ölçüleri farkının yarısı alınarak α = |m(A) - m(B)| / 2.",
+        "Kalan diğer iki açının ölçüleri toplamının yarısına eşittir: α = {kesir:m(C) + m(D)|2}.",
+        "Dörtgenin iç açılar toplamı dörde bölünerek α daima 90° olarak sabitlenir.",
+        "Köşegenlerin kesişim açısının tümleri alınarak α = 90° - θ şeklinde."
+      ],
+      "cevap": "B",
+      "dogru": 1
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Dörtgen çeşitleri ile köşegenlerinin geometrik özelliklerini eşleştiriniz.",
+      "ciftler": [
+        [
+          "Paralelkenar",
+          "Köşegenleri birbirini tam ortalar fakat dik kesişmek veya eşit olmak zorunda değildir."
+        ],
+        [
+          "Eşkenar Dörtgen",
+          "Köşegenleri birbirini dik ortalar ve aynı zamanda köşelerin açıortayıdır."
+        ],
+        [
+          "Dikdörtgen",
+          "Köşegen uzunlukları birbirine eşittir ve birbirini tam ortalar."
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Köşegen uzunlukları e = 12 cm ve f = 16 cm olan ve köşegenleri dik kesişen bir dörtgenin alanı kaç cm{us:|2} dir?",
+      "secenekler": [
+        "Köşegenlerin çarpımı doğrudan alanı verdiğinden 192 cm{us:|2} olarak bulunur.",
+        "Köşegenler dik olduğunda alan çevre uzunluğunun karesine eşit olup 144 cm{us:|2} dir.",
+        "Varignon teoremi uyarınca köşegenlerin kareleri toplamının yarısı 200 cm{us:|2} dir.",
+        "Alan = {kesir:1|2} · e · f · sin 90° bağıntısıyla {kesir:12 · 16|2} = 96 cm{us:|2} hesaplanır."
+      ],
+      "cevap": "D",
+      "dogru": 3
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Geometri kavramlarına ait aşağıdaki cümlelerde boşlukları kavram bankasından seçerek tamamlayınız.",
+      "kelime_bankasi": [
+        "İç açılar toplamı",
+        "Kirişler dörtgeni",
+        "Teğetler dörtgeni",
+        "Simetri"
+      ],
+      "cumleler": [
+        {
+          "on": "Tüm köşeleri aynı çember üzerinde bulunan dörtgene ",
+          "bosluk": "Kirişler dörtgeni",
+          "son": " denir.",
+          "metin": "Tüm köşeleri aynı çember üzerinde bulunan dörtgene ____ denir.",
+          "cevap": "Kirişler dörtgeni"
+        },
+        {
+          "on": "Tüm kenarları aynı çembere teğet olan geometrik şekle ",
+          "bosluk": "Teğetler dörtgeni",
+          "son": " adı verilir.",
+          "metin": "Tüm kenarları aynı çembere teğet olan geometrik şekle ____ adı verilir.",
+          "cevap": "Teğetler dörtgeni"
+        },
+        {
+          "on": "Dışbükey bir dörtgende ",
+          "bosluk": "İç açılar toplamı",
+          "son": " 360 derecedir.",
+          "metin": "Dışbükey bir dörtgende ____ 360 derecedir.",
+          "cevap": "İç açılar toplamı"
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Bir ABCD dörtgeninde karşılıklı A ve C açılarının iç açıortayları arasındaki dar açının ölçüsü nasıl hesaplanır?",
+      "secenekler": [
+        "Açıortaylar arasındaki dar açı diğer iki açının farkının mutlak değerinin yarısına eşittir: {kesir:|m(B) - m(D)||2}.",
+        "Karşılıklı açıların ölçüleri toplamının yarısına eşittir: {kesir:m(A) + m(C)|2}.",
+        "Dörtgenin köşegenlerinin kesişim açısının yarısına daima denk bir değer alır.",
+        "Açıortaylar daima paralel olduğundan aralarındaki açı sıfır derece kabul."
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Dışbükey bir dörtgenin tüm dış açılarının ölçüleri toplamı hakkında hangi bilgi doğrudur?",
+      "secenekler": [
+        "Kenar uzunlukları değiştikçe dış açılar toplamı 180° ile 540° arasında.",
+        "İç açılar toplamından daima 90° eksik olup 270° olarak hesaplanır.",
+        "Bütün dışbükey çokgenlerde olduğu gibi dörtgende de dış açılar toplamı.",
+        "Yalnızca kare ve dikdörtgende 360° olup çeşitkenar dörtgenlerde tanımsızdır."
+      ],
+      "cevap": "C",
+      "dogru": 2
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "en_fazla": 24,
+      "soru": "Dörtgen yapılarına ait boşlukları kavram bankasından seçerek doldurunuz.",
+      "kelime_bankasi": [
+        "Kenar orta noktası",
+        "Yamuk",
+        "Paralelkenar",
+        "Deltoid"
+      ],
+      "cumleler": [
+        {
+          "on": "Yalnız iki kenarı birbirine paralel olan dörtgene ",
+          "bosluk": "Yamuk",
+          "son": " denir.",
+          "metin": "Yalnız iki kenarı birbirine paralel olan dörtgene ____ denir.",
+          "cevap": "Yamuk"
+        },
+        {
+          "on": "Karşılıklı kenarları paralel ve eşit olan dörtgen ",
+          "bosluk": "Paralelkenar",
+          "son": " olarak adlandırılır.",
+          "metin": "Karşılıklı kenarları paralel ve eşit olan dörtgen ____ olarak adlandırılır.",
+          "cevap": "Paralelkenar"
+        },
+        {
+          "on": "Tabanları ortak iki ikizkenar üçgenin birleşimiyle oluşan şekil ",
+          "bosluk": "Deltoid",
+          "son": " şeklidir.",
+          "metin": "Tabanları ortak iki ikizkenar üçgenin birleşimiyle oluşan şekil ____ şeklidir.",
+          "cevap": "Deltoid"
+        }
+      ]
+    },
+    {
+      "tur": "acik",
+      "duzey": "uygula",
+      "soru": "Köşegenleri dik kesişen bir dörtgenin alan formülü köşegenler cinsinden nasıldır?",
+      "satir": 2,
+      "cevap": "Köşegen uzunluklarının çarpımının yarısına eşittir."
+    }
+  ]
+}
