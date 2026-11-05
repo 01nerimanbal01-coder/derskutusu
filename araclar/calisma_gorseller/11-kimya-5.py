@@ -143,11 +143,11 @@ def uygula(o):
     s[10]["gorsel"] = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 125" style="max-height:24mm">
   <rect x="35" y="15" width="290" height="95" rx="8" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="0.75"/>
   <rect x="50" y="28" width="260" height="22" rx="3" fill="#E1F5FE" stroke="#81D4FA" stroke-width="0.5"/>
-  <text x="180" y="42" font-family="Noto Sans" font-size="8" fill="#0277BD" text-anchor="middle">1. Basamak: C(k) + {kesir:1|2}O₂(g) -&gt; CO(g)  [ΔH₁ = -110 kJ]</text>
+  <text x="180" y="42" font-family="Noto Sans" font-size="8" fill="#0277BD" text-anchor="middle">1. Basamak: C(k) + 0,5 O₂(g) → CO(g)  [ΔH₁ = -110 kJ]</text>
 
   <rect x="50" y="54" width="260" height="22" rx="3" fill="#E1F5FE" stroke="#81D4FA" stroke-width="0.5"/>
-  <text x="180" y="68" font-family="Noto Sans" font-size="8" fill="#0277BD" text-anchor="middle">2. Basamak: CO(g) + {kesir:1|2}O₂(g) -&gt; CO₂(g)  [ΔH₂ = -283 kJ]</text>
+  <text x="180" y="68" font-family="Noto Sans" font-size="8" fill="#0277BD" text-anchor="middle">2. Basamak: CO(g) + 0,5 O₂(g) → CO₂(g)  [ΔH₂ = -283 kJ]</text>
 
   <rect x="50" y="80" width="260" height="22" rx="3" fill="#E8F5E9" stroke="#81C784" stroke-width="0.5"/>
-  <text x="180" y="94" font-family="Noto Sans" font-size="8" font-weight="bold" fill="#1B5E20" text-anchor="middle">Net: C(k) + O₂(g) -&gt; CO₂(g)  [ΔH_net = -393 kJ]</text>
+  <text x="180" y="94" font-family="Noto Sans" font-size="8" font-weight="bold" fill="#1B5E20" text-anchor="middle">Net: C(k) + O₂(g) → CO₂(g)  [ΔH = -393 kJ]</text>
 </svg>'''

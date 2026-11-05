@@ -46,8 +46,8 @@ def uygula(o):
   <rect x="235" y="20" width="115" height="85" rx="5" fill="#FFF9C4" stroke="#FFF176" stroke-width="0.75"/>
   <text x="292" y="38" font-family="Noto Sans" font-size="8" font-weight="bold" fill="#F57F17" text-anchor="middle">Dik Köşegen Bağıntısı</text>
   <text x="292" y="58" font-family="Noto Sans" font-size="9" font-weight="bold" fill="#E65100" text-anchor="middle">a² + c² = b² + d²</text>
-  <text x="292" y="75" font-family="Noto Sans" font-size="8" fill="#BF360C" text-anchor="middle">25 + 64 = 49 + x²</text>
-  <text x="292" y="92" font-family="Noto Sans" font-size="8" font-weight="bold" fill="#BF360C" text-anchor="middle">x = √40 cm</text>
+  <text x="292" y="75" font-family="Noto Sans" font-size="8" fill="#BF360C" text-anchor="middle">a = 5, b = 7, c = 8</text>
+  <text x="292" y="92" font-family="Noto Sans" font-size="8" font-weight="bold" fill="#BF360C" text-anchor="middle">d = x = ? cm</text>
 </svg>'''
 
     # S3 (indeks 2): Varignon Paralelkenarı Şeması
