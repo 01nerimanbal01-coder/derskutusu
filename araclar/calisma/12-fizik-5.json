@@ -1,0 +1,253 @@
+{
+  "sinif": 12,
+  "ders": "fizik",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Açısal Momentum - Tork İlişkisi ve Açısal Momentumun Korunumu (12.1.3.3 & 12.1.3.4)",
+  "ciktilar": [
+    "Açısal momentumu çizgisel momentumla ilişkilendirerek eylemsizlik momenti ve açısal hız cinsinden ifade eder.",
+    "Açısal ivme, net tork ve eylemsizlik momenti arasındaki matematiksel ilişkiyi Newton'un hareket yasalarıyla açıklar.",
+    "Dışarıdan net bir tork etki etmediğinde açısal momentumun korunduğunu günlük hayat örnekleriyle analiz eder."
+  ],
+  "hatirla": [
+    "Dönen bir cismin açısal momentumu L = I · ω formülüyle verilir; birimi kg·m{us:|2}/s olup dönme eksenine göre vektörel bir niceliktir.",
+    "Açısal momentumun zamanla değişimi cisme etki eden net torka eşittir: τ_net = ΔL/Δt = I · α (Burada α açısal ivmedir).",
+    "Dönmekte olan bir sisteme dışarıdan net bir tork uygulanmıyorsa (Στ_dış = 0), sistemin açısal momentumu korunur: L_ilk = L_son."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Görseldeki dönme dinamiği niceliklerini SI birimleri ve temel formülleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Açısal Momentum (L)",
+          "L = I · ω bağıntısıyla hesaplanır ve birimi kg·m{us:|2}/s'dir"
+        ],
+        [
+          "Net Tork (τ)",
+          "τ = I · α bağıntısıyla hesaplanır ve birimi N·m'dir"
+        ],
+        [
+          "Eylemsizlik Momenti (I)",
+          "Dönmeye karşı gösterilen direnç olup birimi kg·m{us:|2}'dir"
+        ],
+        [
+          "Açısal İvme (α)",
+          "Birim zamandaki açısal hız değişimi olup birimi rad/s{us:|2}'dir"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Sürtünmesiz yatay düzlemde dönen bir tekerleğe dönme eksenine göre etki eden net dış tork sıfır olduğunda (Στ_dış = 0) hangi fiziksel",
+      "secenekler": [
+        "Açısal momentum vektörü",
+        "Çizgisel ivme büyüklüğü",
+        "Merkezcil kuvvet vektörü",
+        "Potansiyel enerji miktarı"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Dönme hareketinde net tork ile açısal ivme arasındaki ilişkiyi eylemsizlik momenti (I) cinsinden ifade eden formülü yazınız.",
+      "satir": 2,
+      "cevap": "τ = I · α"
+    },
+    {
+      "tur": "dy",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Açısal momentum ve dönme dinamiği hakkındaki ifadeleri Doğru (D) veya Yanlış (Y) olarak işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir cisme etki eden net dış tork sıfırdan farklıysa açısal momentum zamanla değişir.",
+          "dogru": true
+        },
+        {
+          "metin": "Buz patencisi kollarını açtığında eylemsizlik momenti küçülür ve dönme hızı artar.",
+          "dogru": false
+        },
+        {
+          "metin": "Açısal momentum çizgisel momentumun konum vektörüyle vektörel çarpımıdır (L = r × p).",
+          "dogru": true
+        },
+        {
+          "metin": "Dış tork uygulanmayan sistemlerde açısal momentumun yönü ve büyüklüğü daima korunur.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Öteleme ve dönme dinamiği arasındaki analog nicelikleri tablodaki boşluklara uygun şekilde tamamlayınız.",
+      "basliklar": [
+        "Öteleme Hareketi",
+        "Dönme Hareketi Karşılığı"
+      ],
+      "satirlar": [
+        [
+          "Kuvvet (F)",
+          {
+            "b": "Tork (τ)"
+          }
+        ],
+        [
+          "Kütle (m)",
+          {
+            "b": "Eylemsizlik momenti (I)"
+          }
+        ],
+        [
+          "Çizgisel momentum (p = m·v)",
+          {
+            "b": "Açısal momentum (L = I·ω)"
+          }
+        ],
+        [
+          "Çizgisel ivme (a)",
+          {
+            "b": "Açısal ivme (α)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Kollarını yana açarak dönen bir buz patencisinin kollarını göğsüne kapatması sırasında gerçekleşen olayları sırasıyla diziniz.",
+      "ogeler": [
+        "Kolların ve ağırlıkların dönme eksenine doğru çekilmesi",
+        "Kütlenin dönme eksenine yaklaşmasıyla r yarıçapının küçülmesi",
+        "Patencinin eylemsizlik momentinin (I) azalması",
+        "Net dış tork sıfır olduğundan açısal momentumun (L) korunması",
+        "Açısal hızın (ω) artarak patencinin daha hızlı dönmeye başlaması"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Dönen bir platform üzerindeki jimnastikçi elindeki dambılları yana açarak eylemsizlik momentini 2 katına çıkarırsa",
+      "secenekler": [
+        "Yarıya iner",
+        "2 katına çıkar",
+        "4 katına çıkar",
+        "Değişmez"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "soru": "Noktasal bir parçacığın konum vektörü r ve çizgisel momentum vektörü p ise parçacığın orijine göre açısal momentum vektörü L nasıl ifade edilir?",
+      "satir": 2,
+      "cevap": "L = r × p"
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Görseldeki dönme kavramlarını fiziksel açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Açısal Hız (ω)",
+          "Dönme ekseni etrafında birim zamanda taranan açının radyan cinsinden değeri"
+        ],
+        [
+          "Çizgisel Hız (v)",
+          "Dairesel yörüngede teğet doğrultusunda birim zamanda alınan yol"
+        ],
+        [
+          "Merkezcil İvme",
+          "Hız vektörünün yön değişiminden kaynaklanan ve merkeze yönelen ivme"
+        ],
+        [
+          "Teğetsel İvme",
+          "Çizgisel hızın büyüklüğündeki değişimden kaynaklanan yörüngeye teğet ivme"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "analiz",
+      "soru": "Güneş etrafında dolanan gezegenlerin hareketi hakkındaki yargıları Doğru (D) veya Yanlış (Y) olarak değerlendiriniz.",
+      "ifadeler": [
+        {
+          "metin": "Gezegene etki eden kütle çekim kuvveti Güneş merkezine yöneldiğinden Güneş'e göre torku sıfırdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Gezegen Güneş'e yaklaştığında açısal momentumu artar.",
+          "dogru": false
+        },
+        {
+          "metin": "Güneş'e yaklaşan gezegenin yarıçapı azaldığı için çizgisel ve açısal hızı artar.",
+          "dogru": true
+        },
+        {
+          "metin": "Kepler'in alanlar yasası açısal momentumun korunumunun doğrudan bir sonucudur.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Görseldeki dinamik ipuçlarından yararlanarak bulmacayı çözünüz. Anahtar kutulardaki harflerle şifrelenmiş kinematik hareket türünü bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Sabit bir eksen etrafında dairesel yörünge izleme hareketi",
+          "cevap": "DÖNÜŞ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Fiziksel niceliklerin büyüklük ve birimle saptanma işlemi",
+          "cevap": "ÖLÇÜM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Hareket ve dinamik yasalarını sistemleştiren İngiliz fizikçi",
+          "cevap": "NEWTON",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kütle ile hızın çarpımına eşit vektörel hareket miktarı",
+          "cevap": "MOMENTUM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Cismin etrafında dolandığı veya simetri aldığı referans doğrusu",
+          "cevap": "EKSEN",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "DÖNME"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Güneş etrafında eliptik yörüngede dolanan bir gezegen Güneş'e yaklaştığında çizgisel hızının artma nedenini açısal momentumla açıklayınız.",
+      "satir": 2,
+      "cevap": "Dış tork sıfır olduğundan açısal momentum korunur."
+    }
+  ]
+}

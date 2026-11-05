@@ -1,0 +1,250 @@
+{
+  "sinif": 12,
+  "ders": "kimya",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Elektrot Potansiyelleri, Standart Hidrojen Elektrodu (SHE) ve Aktiflik (12.1.3)",
+  "ciktilar": [
+    "Standart elektrot potansiyellerini Standart Hidrojen Elektrodu (SHE) referansıyla açıklar ve standart pil potansiyelini hesaplar.",
+    "Elektrokimyasal hücreleri hücre diyagramı (pil şeması) ile gösterir ve yarı hücre potansiyellerinden anot-katot bölmelerini belirler.",
+    "Metallerin aktiflik sırasını, asitlerle tepkimelerini ve bir metal kapta çözelti saklanıp saklanamayacağını yorumlar."
+  ],
+  "hatirla": [
+    "Standart Hidrojen Elektrodu (SHE), 25 °C, 1 atm H{alt:2} gazı ve 1 M H{us:|+} içeren platin elektrottur; potansiyeli kabul gereği 0,00 V'tur.",
+    "İndirgenme potansiyeli küçük olan (yükseltgenme eğilimi büyük olan) yarı hücre anot, indirgenme potansiyeli büyük olan katottur.",
+    "Standart pil gerilimi: E°_pil = E°_yükseltgenme(anot) + E°_indirgenme(katot) formülüyle bulunur; istemli tepkimelerde E°_pil > 0'dır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Görseldeki elektrokimya kavramlarını görevleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Anot",
+          "Yükseltgenmenin gerçekleştiği, elektronların dış devreye verildiği elektrot"
+        ],
+        [
+          "Katot",
+          "İndirgenmenin gerçekleştiği, dış devreden gelen elektronların alındığı elektrot"
+        ],
+        [
+          "SHE",
+          "Standart koşullarda elektrot potansiyeli 0,00 V kabul edilen referans hidrojen elektrodu"
+        ],
+        [
+          "Tuz Köprüsü",
+          "Yarı hücreler arasındaki yük denkliğini anyon ve katyon göçüyle sağlayan düzenek"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Zn{us:|2}{us:|+}/Zn standart indirgenme potansiyeli -0,76 V, Cu{us:|2}{us:|+}/Cu standart indirgenme potansiyeli +0,34 V olduğuna göre kurulan standart Zn-Cu",
+      "secenekler": [
+        "+1,10 V",
+        "+0,42 V",
+        "-1,10 V",
+        "-0,42 V"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "25 °C sıcaklık, 1 atm basınç ve 1 M H{us:|+} derişiminde Standart Hidrojen Elektrodunun kabul edilen potansiyel değeri kaç volttur?",
+      "satir": 2,
+      "cevap": "0,00 V"
+    },
+    {
+      "tur": "dy",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Elektrokimyasal hücreler ve aktiflik hakkındaki ifadeleri Doğru (D) veya Yanlış (Y) olarak işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "İndirgenme potansiyeli daha pozitif olan metal katot elektrot olarak davranır.",
+          "dogru": true
+        },
+        {
+          "metin": "Dış devrede elektronlar daima katottan anota doğru hareket eder.",
+          "dogru": false
+        },
+        {
+          "metin": "Tuz köprüsündeki anyonlar anot yarı hücresine doğru göç ederek yük dengesini korur.",
+          "dogru": true
+        },
+        {
+          "metin": "Standart pil gerilimi pozitif olan redoks tepkimeleri kendiliğinden yürür (istemlidir).",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Yarı hücre süreçlerini ve gerçekleşen kimyasal olayları tablodaki boşluklara uygun şekilde tamamlayınız.",
+      "basliklar": [
+        "Yarı Hücre",
+        "Olay",
+        "Kütle Değişimi"
+      ],
+      "satirlar": [
+        [
+          "Anot Bölmesi",
+          {
+            "b": "Yükseltgenme"
+          },
+          "Elektrot kütlesi azalır"
+        ],
+        [
+          "Katot Bölmesi",
+          {
+            "b": "İndirgenme"
+          },
+          "Elektrot kütlesi artar"
+        ],
+        [
+          "Tuz Köprüsü",
+          "Yük denkliği",
+          {
+            "b": "Anyon anota, katyon katoda"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Zn, Fe, Cu ve Ag metallerini yükseltgenme potansiyellerine göre en aktif olandan en pasif olana doğru sıralayınız.",
+      "ogeler": [
+        "Çinko (Zn) metali",
+        "Demir (Fe) metali",
+        "Bakır (Cu) metali",
+        "Gümüş (Ag) metali"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Yükseltgenme eğilimi H{alt:2} gazından daha küçük olan soy metallerden yapılmış bir kapta 1 M HCl çözeltisi aşınma olmadan",
+      "secenekler": [
+        "Bakır (Cu) kap",
+        "Magnezyum (Mg) kap",
+        "Alüminyum (Al) kap",
+        "Çinko (Zn) kap"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "soru": "Galvanik bir pilde iletken tel üzerinden elektronların akış yönü hangi elektrottan hangi elektroda doğrudur?",
+      "satir": 2,
+      "cevap": "Anottan katoda doğrudur"
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Görseldeki pil terimlerini tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Standart Pil Potansiyeli",
+          "Standart koşullarda iki yarı hücre potansiyelinin cebirsel toplamı"
+        ],
+        [
+          "Aktif Metal",
+          "Elektron verme eğilimi yüksek olup kolayca yükseltgenebilen metal"
+        ],
+        [
+          "Pasif Metal",
+          "Elektron verme eğilimi düşük olup aşınmaya dirençli metal"
+        ],
+        [
+          "Voltmetre",
+          "Anot ve katot arasındaki potansiyel farkını doğrudan ölçen gösterge"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "analiz",
+      "soru": "Metal aktifliği ve saklama koşullarıyla ilgili yargıları Doğru (D) ya da Yanlış (Y) olarak değerlendiriniz.",
+      "ifadeler": [
+        {
+          "metin": "Aktif bir metal, kendisinden daha pasif metal katyonu içeren çözeltiye daldırıldığında aşınır.",
+          "dogru": true
+        },
+        {
+          "metin": "Cu metalinden yapılmış bir kapta AgNO{alt:3} çözeltisi saklanırsa kapta aşınma meydana gelir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bir yarı tepkime ters çevrildiğinde standart elektrot potansiyelinin işareti değişmez.",
+          "dogru": false
+        },
+        {
+          "metin": "Yarı tepkime bir katsayı ile çarpıldığında standart potansiyel (E°) değeri de o sayıyla çarpılır.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Görseldeki elektrokimya ipuçlarından yararlanarak bulmacayı çözünüz. Anahtar kutulardaki harflerle şifrelenmiş indirgenme elektrodunu bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Katot yarı hücresine doğru göç eden artı yüklü iyon",
+          "cevap": "KATYON",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Pilde yükseltgenmenin gerçekleştiği negatif kutup elektrodu",
+          "cevap": "ANOT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yarı hücreleri bağlayan köprüde çözünmüş iyonik bileşik",
+          "cevap": "TUZ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Maddenin elektron vererek değerliğini artırması olayı",
+          "cevap": "OKSİTLENME",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kimyasal türlerin birbirine dönüşümünü gösteren süreç",
+          "cevap": "TEPKİME",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "KATOT"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Çinko (Zn) çubuk bakır sülfat (CuSO{alt:4}) çözeltisine daldırıldığında gerçekleşen redoks reaksiyonunu ve nedenini açıklayınız.",
+      "satir": 2,
+      "cevap": "Zn metali Cu'dan aktif olduğundan yükseltgenir ve."
+    }
+  ]
+}

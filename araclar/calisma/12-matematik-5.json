@@ -1,0 +1,258 @@
+{
+  "sinif": 12,
+  "ders": "matematik",
+  "hafta": 5,
+  "tarih": "12-16 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Üstel ve Logaritmik Denklemler ile Eşitsizlikler (12.1.3.1)",
+  "ciktilar": [
+    "Üstel denklemlerin çözüm kümelerini taban eşitleme, logaritma alma ve değişken değiştirme yöntemleriyle bulur.",
+    "Logaritmik denklemlerin çözüm kümelerini logaritma özelliklerini ve tanım kümesi koşullarını dikkate alarak belirler.",
+    "Üstel ve logaritmik eşitsizliklerin çözüm kümelerini tabanın 1'den büyük veya 0 ile 1 arasında olma durumuna göre analitik olarak çözer."
+  ],
+  "hatirla": [
+    "a{us:|x} = b denkleminde a > 0 ve a ≠ 1 iken x = log{alt:a}b şeklinde çözülür; tabanlar eşitlenebiliyorsa aᶠ⁽{us:|x}⁾ = aᵍ⁽{us:|x}⁾ ⇔ f(x) = g(x) olur.",
+    "log{alt:a}f(x) = b denkleminde f(x) = aᵇ bulunur; bulunan kök mutlaka tanım aralığını (f(x) > 0) sağlamalıdır.",
+    "log{alt:a}f(x) < log{alt:a}g(x) eşitsizliğinde: a > 1 ise yön korunur (0 < f(x) < g(x)), 0 < a < 1 ise yön değişir (f(x) > g(x) > 0)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Görseldeki üstel ve logaritmik denklemleri en uygun çözüm yöntemiyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "2{us:|x}{us:|+}{us:|1} = 16",
+          "Her iki tarafı 2 tabanında yazarak üsleri birbirine eşitleme yöntemi"
+        ],
+        [
+          "3{us:|x} = 5",
+          "Her iki tarafın 3 tabanına göre logaritmasını alarak x = log{alt:3}5 yazma"
+        ],
+        [
+          "4{us:|x} - 5·2{us:|x} + 4 = 0",
+          "t = 2{us:|x} değişken dönüşümü uygulayarak ikinci dereceden denklem kurma"
+        ],
+        [
+          "log{alt:2}(x - 1) = 3",
+          "Üstel forma dönüştürerek x - 1 = 2{us:|3} bağıntısından köke ulaşma"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "3{us:|2}{us:|x}{us:|-}{us:|1} = 27 üstel denklemini sağlayan x reel sayısı kaçtır?",
+      "secenekler": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "log{alt:2}(x - 3) = 4 denkleminin reel sayılardaki çözüm kümesini bulunuz.",
+      "satir": 2,
+      "cevap": "{19}"
+    },
+    {
+      "tur": "dy",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Logaritmik denklem ve eşitsizlikler hakkındaki ifadeleri Doğru (D) veya Yanlış (Y) olarak işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Logaritmik denklemlerde bulunan kökler logaritması alınan ifadeyi daima pozitif yapmalıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "0 < a < 1 tabanlı logaritmik eşitsizliklerde eşitsizlik yönü aynı kalır.",
+          "dogru": false
+        },
+        {
+          "metin": "a > 1 durumunda log{alt:a}f(x) < log{alt:a}g(x) eşitsizliği 0 < f(x) < g(x) şeklinde çözülür.",
+          "dogru": true
+        },
+        {
+          "metin": "Üstel fonksiyonların görüntü kümesi tüm reel sayılar kümesidir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Üstel ve logaritmik eşitsizlik kurallarını tablodaki boşluklara uygun şekilde tamamlayınız.",
+      "basliklar": [
+        "Eşitsizlik Biçimi",
+        "Taban Aralığı",
+        "Dönüşen Eşitsizlik"
+      ],
+      "satirlar": [
+        [
+          "log{alt:a}f(x) ≤ log{alt:a}g(x)",
+          "a > 1",
+          {
+            "b": "0 < f(x) ≤ g(x)"
+          }
+        ],
+        [
+          "log{alt:a}f(x) ≤ log{alt:a}g(x)",
+          "0 < a < 1",
+          {
+            "b": "f(x) ≥ g(x) > 0"
+          }
+        ],
+        [
+          "aᶠ⁽{us:|x}⁾ < aᵍ⁽{us:|x}⁾",
+          "a > 1",
+          {
+            "b": "f(x) < g(x)"
+          }
+        ],
+        [
+          "aᶠ⁽{us:|x}⁾ < aᵍ⁽{us:|x}⁾",
+          "0 < a < 1",
+          {
+            "b": "f(x) > g(x)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "log{alt:3}(2x - 1) ≤ 2 eşitsizliğinin çözüm kümesini bulma adımlarını mantıksal sıraya diziniz.",
+      "ogeler": [
+        "Tanım kümesi gereği 2x - 1 > 0 yani x > 1/2 koşulunu belirleme",
+        "Taban 3 > 1 olduğundan eşitsizlik yönünü koruyarak açma",
+        "2x - 1 ≤ 3{us:|2} bağıntısından 2x - 1 ≤ 9 eşitsizliğini yazma",
+        "2x ≤ 10 bağıntısından x ≤ 5 sonucunu elde etme",
+        "Tanım aralığı ile kesiştirerek Ç.K. = (1/2, 5] kümesini oluşturma"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "log{alt:1}/{alt:2}(x - 1) > -2 eşitsizliğinin gerçel sayılardaki en geniş çözüm aralığı hangisidir?",
+      "secenekler": [
+        "(1, 5)",
+        "(1, 4)",
+        "(2, 5)",
+        "(0, 5)"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "soru": "4{us:|x} - 3·2{us:|x} - 4 = 0 denkleminde t = 2{us:|x} dönüşümü yapıldığında denklemi sağlayan x gerçel kökü kaçtır?",
+      "satir": 2,
+      "cevap": "2"
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Görseldeki logaritmik ifadeleri sayısal değerleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "log{alt:2}(32)",
+          "5"
+        ],
+        [
+          "log{alt:3}(1/9)",
+          "-2"
+        ],
+        [
+          "ln(e{us:|3})",
+          "3"
+        ],
+        [
+          "log{alt:5}(1)",
+          "0"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "analiz",
+      "soru": "Üstel ve logaritmik denklemlerin çözüm kümeleriyle ilgili yargıları Doğru (D) ya da Yanlış (Y) olarak değerlendiriniz.",
+      "ifadeler": [
+        {
+          "metin": "e{us:|x} = -3 denkleminin gerçel sayılar kümesindeki çözüm kümesi boş kümedir.",
+          "dogru": true
+        },
+        {
+          "metin": "log(x{us:|2}) = 2 denkleminin gerçel sayılarda iki farklı kökü vardır (x = 10 ve x = -10).",
+          "dogru": true
+        },
+        {
+          "metin": "ln(x) = 0 denkleminin kökü x = 0 sayısıdır.",
+          "dogru": false
+        },
+        {
+          "metin": "log{alt:a}x fonksiyonunun grafiği x eksenini daima (1, 0) noktasında keser.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "en_fazla": 34,
+      "soru": "Görseldeki matematiksel ipuçlarından yararlanarak bulmacayı çözünüz. Anahtar kutulardaki harflerle şifrelenmiş üstel ve logaritma kavramını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Bir eğriye yalnızca tek bir noktada temas eden doğru",
+          "cevap": "TEĞET",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Eğrinin sonsuzda yaklaştığı ancak asla kesmediği sınır doğru",
+          "cevap": "ASİMPTOT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İki kümenin elemanları arasındaki kurala dayalı ilişki",
+          "cevap": "BAĞINTI",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İki reel sayı arasındaki tüm değerleri kapsayan alt küme",
+          "cevap": "ARALIK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Geometride boyutu olmayan en temel konum birimi",
+          "cevap": "NOKTA",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "TABAN"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "0 < a < 1 durumunda log{alt:a}f(x) < log{alt:a}g(x) eşitsizliği çözülürken eşitsizlik yönünün değişme nedenini açıklayınız.",
+      "satir": 2,
+      "cevap": "Taban 1'den küçük olduğunda logaritma fonksiyonu."
+    }
+  ]
+}
