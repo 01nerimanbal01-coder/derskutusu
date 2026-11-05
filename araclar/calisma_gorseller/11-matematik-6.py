@@ -13,7 +13,7 @@ def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
     return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
 
 def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
+    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}"/>'
 
 def g0():
     ic = kutu(4, 4, 352, 107, GRI_A, GRI)
@@ -28,7 +28,7 @@ def g0():
 def g1():
     ic = kutu(4, 4, 352, 107, MAVI_A, MAVI) + yazi(180, 24, 'KÖŞEGENLERİ DİK KESİŞEN DÖRTGENDE KENAR BAĞINTISI', 10, MAVI)
     ic += kutu(16, 36, 156, 64, '#f4f8fe', MAVI) + yazi(94, 56, 'Verilenler: a=5, b=8, c=9 cm', 9.5, MAVI) + yazi(94, 78, '[AC] ⊥ [BD] (Dik köşegenler)', 8.5, SOLUK, ince=True)
-    ic += kutu(188, 36, 156, 64, YES_A, YES) + yazi(266, 56, 'Bağıntı: a² + c² = b² + d²', 9.5, YES) + yazi(266, 78, '5² + 9² = 8² + x² => x = √42', 8.5, SOLUK, ince=True)
+    ic += kutu(188, 36, 156, 64, YES_A, YES) + yazi(266, 56, 'Bağıntı: a² + c² = b² + d²', 9.5, YES) + '<text x="282.0" y="78.0" text-anchor="end" font-size="8.5" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">5² + 9² = 8² + x²  =>  x = </text><path d="M 283.0 74.8 L 284.4 74.8 L 285.9 78.6 L 288.3 69.9 L 300.8 69.9" fill="none" stroke="#5b6479" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/><text x="294.6" y="78.0" text-anchor="middle" font-size="8.5" font-family="Noto Sans, sans-serif" font-weight="400" fill="#5b6479">42</text>'
     return svg(360, 115, ic, '11. sınıf Matematik 6. hafta görselleri g1', 34)
 
 def g2():
