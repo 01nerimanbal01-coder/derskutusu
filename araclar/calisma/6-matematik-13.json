@@ -1,0 +1,250 @@
+{
+  "sinif": 6,
+  "ders": "matematik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Standart Uzunluk Ölçme Birimleriyle İlgili Problemler ve İstatistiksel Araştırma Sürecine Giriş: Kategorik ve Nicel (Kesikli) Veri Dağılımları (MAT.6.1.8 & MAT.6.5.1)",
+  "ciktilar": [
+    "MAT.6.1.8. Karşılaştığı günlük hayat ve matematiksel problem durumlarında metreyi (m) ölçüt alarak standart uzunluk ölçme birimleri (km, hm, dam, m, dm, cm, mm) arasında dönüşüm ve karşılaştırmalar yapar.",
+    "MAT.6.5.1.a-ç. Kategorik veya nicel (kesikli) veriye dayanan istatistiksel araştırma gerektiren durumları fark eder, betimleme veya karşılaştırma gerektiren araştırma soruları oluşturur ve veri toplama planı yapar.",
+    "MAT.6.5.1.d-e. Kategorik ve nicel (kesikli) verileri ayırt ederek uygun görselleştirme (nokta grafiği, kök-yaprak gösterimi, sıklık tablosu) ve özetleme (aritmetik ortalama, ortanca, tepe değer, açıklık) araçlarıyla analiz eder."
+  ],
+  "hatirla": [
+    "Uzunluk ölçme birimleri basamak sırası: {koyu:km – hm – dam – m – dm – cm – mm}; aşağı her adımda {koyu:10 ile çarpılır}, yukarı her adımda {koyu:10’a bölünür} (1 km = 1000 m, 1 m = 100 cm = 1000 mm).",
+    "İstatistiksel araştırma sorusu: {koyu:Hedef grubu net olmalı}, {koyu:veri toplamayı gerektirmeli} ve sonuçları {koyu:değişebilirlik} göstermelidir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki uzunluk dönüşümü ve istatistik kavramlarını sağ sütundaki karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "1 m = 10 dm = 100 cm = 1000 mm",
+          "Metre ölçüt alınarak alt basamak birimlerine onar kat dönüşüm"
+        ],
+        [
+          "Kategorik (Nitel) Veri",
+          "Göz rengi, tutulan takım ve sevilen meyve gibi sözel gruplama verileri"
+        ],
+        [
+          "Nicel (Kesikli) Veri",
+          "Sınıftaki öğrencilerin kardeş sayısı ve okudukları kitap sayısı gibi tam sayılı veriler"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki yürüyüş parkurunda 1. etap 2,4 km, 2. etap 850 m ve 3. etap 15 000 cm olduğuna göre parkurun toplam uzunluğu kaç metredir?",
+      "secenekler": [
+        "3100 m",
+        "3250 m",
+        "3400 m",
+        "3550 m"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki araştırma konularının veri türünü (Kategorik / Nicel Kesikli) ve uygun grafik aracını yazarak tabloyu tamamlayınız.",
+      "basliklar": [
+        "Araştırma Konusu",
+        "Veri Türü",
+        "Uygun Görselleştirme Aracı"
+      ],
+      "satirlar": [
+        [
+          "1. 6/A sınıfının en sevdiği spor dalları",
+          "Kategorik (Nitel) Veri",
+          {
+            "b": "Sıklık Tablosu / Sütun Grafiği"
+          }
+        ],
+        [
+          "2. Öğrencilerin bir ayda okuduğu kitap sayısı",
+          {
+            "b": "Nicel (Kesikli) Veri"
+          },
+          {
+            "b": "Nokta Grafiği"
+          }
+        ],
+        [
+          "3. 20 öğrencinin matematik sınav puanları",
+          {
+            "b": "Nicel (Kesikli) Veri"
+          },
+          "Kök-Yaprak Gösterimi"
+        ],
+        [
+          "4. Okul kantininde en çok tercih edilen meyveler",
+          "Kategorik (Nitel) Veri",
+          {
+            "b": "Sıklık Tablosu / Sütun Grafiği"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Uzunluk ölçme birimleri ve istatistiksel araştırma süreciyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Farklı birimlerle verilen uzunluklar toplanırken veya çıkarılırken önce tüm birimler aynı ortak birime çevrilir.",
+          "dogru": true
+        },
+        {
+          "metin": "«Okul müdürümüzün boyu kaç santimetredir?» sorusu değişebilirlik içerdiği için istatistiksel araştırma sorusudur.",
+          "dogru": false
+        },
+        {
+          "metin": "Sıralı bir veri grubunda tam ortada yer alan değere ortanca (medyan), en çok tekrar eden değere tepe değer (mod) denir.",
+          "dogru": true
+        },
+        {
+          "metin": "Kök-yaprak gösteriminde «3 | 5» ifadesi 35 sayısını temsil eder.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun sayı ve kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Uzunluğu 4,5 m olan bir kurdele, her biri 50 cm olan eş parçalara kesilirse toplam ___ parça elde edilir.",
+          "cevap": "9"
+        },
+        {
+          "metin": "Bir veri grubundaki en büyük değerden en küçük değerin çıkarılmasıyla ___ bulunur.",
+          "cevap": "açıklık"
+        },
+        {
+          "metin": "Verilerin toplamının veri sayısına bölünmesiyle elde edilen merkezî eğilim ölçüsüne aritmetik ___ denir.",
+          "cevap": "ortalama"
+        }
+      ],
+      "fazla": [
+        "ortanca"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört sorudan hangisi hedef grubu belli olan ve değişebilirlik içeren bir {koyu:istatistiksel araştırma sorusudur}?",
+      "secenekler": [
+        "1: Türkiye’nin başkenti hangi ilimizdir?",
+        "2: 1 kilometre kaç metredir?",
+        "3: Okulumuzdaki 6. sınıfların günde çözdüğü soru sayısı kaçtır?",
+        "4: Matematik öğretmenimizin memleketi neresidir?"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kök-yaprak gösteriminde (Kök 1: 2, 5, 5 | Kök 2: 0, 4, 8, 9) verilen 7 öğrencinin puanlarına göre tepe",
+      "secenekler": [
+        "Tepe değer: 12 — Açıklık: 15",
+        "Tepe değer: 15 — Açıklık: 17",
+        "Tepe değer: 20 — Açıklık: 17",
+        "Tepe değer: 15 — Açıklık: 29"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki 3 m 60 cm uzunluğundaki ahşap çıtanın uçlarından 4 dm ve 200 mm kesilip atılırsa geriye kaç santimetre çıta kalır?",
+      "cevap": "Toplam çıta = 360 cm. Kesilenler: 4 dm = 40 cm ve 200 mm.",
+      "satir": 1
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dört farklı uzunluk ölçüsünü metreye (veya santimetreye) çevirerek {koyu:en kısadan en uzuna} doğru 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "1. 800 mm (= 80 cm = 0,8 m — En kısa)",
+        "2. 15 dm (= 150 cm = 1,5 m)",
+        "3. 4 m (= 400 cm)",
+        "4. 0,02 km (= 20 m = 2000 cm — En uzun)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki nokta grafiğinde 5 gün boyunca çözülen test sayıları (4, 6, 6, 8, 11) verilmiştir. Bu verilerin aritmetik",
+      "secenekler": [
+        "Aritmetik ortalama: 6 — Ortanca: 6",
+        "Aritmetik ortalama: 7 — Ortanca: 6",
+        "Aritmetik ortalama: 7 — Ortanca: 8",
+        "Aritmetik ortalama: 8 — Ortanca: 6"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle «veri grubundaki en büyük değer ile en küçük değer",
+      "satirlar": [
+        {
+          "ipucu": "Verilerin sıklıklarını satır ve sütunlarda düzenli gösteren araç",
+          "cevap": "TABLO",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Bir uzunluğu standart birimlerle karşılaştırıp değerini bulma",
+          "cevap": "ÖLÇME",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Bir verinin veri grubunda kaç kez tekrar ettiğini gösteren sayı",
+          "cevap": "SIKLIK",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Renk ve sevilen spor gibi sözel nitelik bildiren veri türü",
+          "cevap": "KATEGORİK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Veri toplamının veri sayısına bölünmesiyle bulunan değer (aritmetik ...)",
+          "cevap": "ORTALAMA",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Nicel verileri ifade ederken kullandığımız matematiksel değer",
+          "cevap": "SAYI",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Verileri onlar ve birler basamağına ayıran gösterim (...-yaprak)",
+          "cevap": "KÖK",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "AÇIKLIK"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki «en sevilen kitap türü» ve «bir haftada okunan sayfa sayısı» verilerinin türünü ve hangi grafiklerle",
+      "cevap": "Kitap türü kategorik veridir (sıklık tablosu/sütun grafiği).",
+      "satir": 1
+    }
+  ]
+}

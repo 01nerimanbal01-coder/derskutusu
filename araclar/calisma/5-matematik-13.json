@@ -1,0 +1,241 @@
+{
+  "sinif": 5,
+  "ders": "matematik",
+  "hafta": 13,
+  "tarih": "14-18 Aralık 2026",
+  "yayin_tarihi": "2026-11-05",
+  "konu": "Doğal Sayılarla Dört İşlem Problemleri ve Dikdörtgenin Çevre Uzunluğu İle Alanına Giriş (MAT.5.1.2 & MAT.5.4.1)",
+  "ciktilar": [
+    "Doğal sayılarla dört işlem gerektiren gerçek yaşam problemlerini çözerken kullandığı stratejileri (kat modeli, seçenek karşılaştırma, tersinden çalışma) farklı problem durumlarına geneller.",
+    "Kenar uzunlukları doğal sayı olan bir dikdörtgenin çevre uzunluğu verildiğinde olası kısa ve uzun kenar uzunluklarını yarı çevre ilişkisiyle belirler.",
+    "Farklı kenar uzunluklarına sahip dikdörtgenlerin aynı çevre uzunluğuna sahip olabileceğini açıklar ve bu dikdörtgenlerin birimkare cinsinden alanlarını karşılaştırır."
+  ],
+  "hatirla": [
+    "Dört işlem problemlerinde {koyu:kat (kutu) modeli}, {koyu:seçenek karşılaştırma} ve son sonuçtan başa doğru {koyu:tersinden çalışma} stratejileri farklı gerçek yaşam durumlarına genellenir.",
+    "Kenar uzunlukları {koyu:a} ve {koyu:b} olan dikdörtgenin çevre uzunluğu: {koyu:Çevre = 2 × (a + b)}; bir kısa kenar ile bir uzun kenarın toplamı {koyu:yarı çevreye (Çevre ÷ 2)} eşittir.",
+    "Yarı çevresi aynı olan farklı doğal sayı çiftleriyle {koyu:aynı çevre uzunluğuna sahip farklı dikdörtgenler} oluşturulabilir (örneğin Çevre = 20 cm için 1+9, 2+8, 3+7, 4+6, 5+5)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Sol sütundaki matematiksel kural ve stratejileri sağ sütundaki açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Tersinden Çalışma Stratejisi",
+          "Sonuçtan başlayarak yapılan işlemlerin tersini (toplama ↔ çıkarma, çarpma ↔ bölme) uygulamak"
+        ],
+        [
+          "Yarı Çevre Kuralı (Çevre ÷ 2)",
+          "Dikdörtgende bir kısa kenar ile bir uzun kenarın uzunlukları toplamını bulmak"
+        ],
+        [
+          "Kenarlar Birbirine Yaklaştıkça",
+          "Sabit çevreli dikdörtgenlerin birimkare cinsinden alanının en büyük değere ulaşması"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki kat modeline göre bir kırtasiyede satılan kalem ve silgilerin toplam sayısı 120, kalem sayısı silgi sayısının 3 katından 8 fazla ise kaç silgi satılmıştır?",
+      "secenekler": [
+        "24 silgi",
+        "28 silgi",
+        "30 silgi",
+        "32 silgi"
+      ],
+      "dogru": 1
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki çevre uzunluğu 20 cm (yarı çevresi 10 cm) olan dikdörtgenlerin olası doğal sayı kenarlarını ve alanlarını tabloya yazınız.",
+      "basliklar": [
+        "Kısa Kenar (cm)",
+        "Uzun Kenar (cm)",
+        "Alanı (Kısa × Uzun br{us:|2})"
+      ],
+      "satirlar": [
+        [
+          "1. Dikdörtgen: 1 cm",
+          "9 cm (1 + 9 = 10)",
+          {
+            "b": "1 × 9 = 9 br{us:|2} (En küçük alan)"
+          }
+        ],
+        [
+          "2. Dikdörtgen: 2 cm",
+          {
+            "b": "8 cm (2 + 8 = 10)"
+          },
+          {
+            "b": "2 × 8 = 16 br{us:|2}"
+          }
+        ],
+        [
+          "3. Dikdörtgen: 3 cm",
+          "7 cm (3 + 7 = 10)",
+          {
+            "b": "3 × 7 = 21 br{us:|2}"
+          }
+        ],
+        [
+          {
+            "b": "4. Dikdörtgen: 4 cm"
+          },
+          "6 cm (4 + 6 = 10)",
+          "4 × 6 = 24 br{us:|2}"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Dört işlem problemleri ve dikdörtgenin çevre-alan ilişkisiyle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Çevre uzunluğu 36 cm olan bir dikdörtgenin bir kısa kenarı ile bir uzun kenarının toplamı 18 cm’dir.",
+          "dogru": true
+        },
+        {
+          "metin": "Çevre uzunlukları birbirine eşit olan iki farklı dikdörtgenin alanları da her zaman birbirine eşittir.",
+          "dogru": false
+        },
+        {
+          "metin": "Kısa kenarı 7 m, uzun kenarı 15 m olan dikdörtgen şeklindeki bahçenin çevresi 2 × (7 + 15) = 44 m’dir.",
+          "dogru": true
+        },
+        {
+          "metin": "Tersinden çalışma stratejisinde son adımda 15 eklenmişse, başlangıç sayısını bulurken 15 çıkarılır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Cümlelerdeki boşlukları kutuda verilen uygun sayı ve kavramlarla tamamlayınız.",
+      "kelimeler": true,
+      "cumleler": [
+        {
+          "metin": "Kısa kenarı 9 cm ve uzun kenarı 14 cm olan bir dikdörtgenin çevre uzunluğu ___ cm’dir.",
+          "cevap": "46"
+        },
+        {
+          "metin": "Çevresi 30 cm olan bir dikdörtgenin bir kısa kenarı ile bir uzun kenarının toplamı (yarı çevresi) ___ cm’dir.",
+          "cevap": "15"
+        },
+        {
+          "metin": "Çevre uzunluğu sabit olan dikdörtgenlerde kenar uzunlukları birbirine yaklaştıkça dikdörtgenin ___ büyür.",
+          "cevap": "alanı"
+        }
+      ],
+      "fazla": [
+        "23"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki tersinden çalışma şemasında bir sayının 4 katının 18 eksiği 82 olduğuna göre başlangıçtaki sayı kaçtır?",
+      "secenekler": [
+        "16",
+        "20",
+        "25",
+        "28"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki dikdörtgen çerçevelerden hangisinin çevre uzunluğu 28 cm (yarı çevresi 14 cm) {koyu:değildir}?",
+      "secenekler": [
+        "K Dikdörtgeni: Kısa kenar 3 cm — Uzun kenar 11 cm",
+        "L Dikdörtgeni: Kısa kenar 5 cm — Uzun kenar 9 cm",
+        "M Dikdörtgeni: Kısa kenar 6 cm — Uzun kenar 8 cm",
+        "N Dikdörtgeni: Kısa kenar 4 cm — Uzun kenar 12 cm"
+      ],
+      "dogru": 3
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki 24 m telle çevrilecek dikdörtgen hobi bahçesinin kenarları doğal sayı olacağına göre alanı en fazla kaç metrekare olur?",
+      "cevap": "Yarı çevre = 24 ÷ 2 = 12 m’dir. Kenarlar en yakın 6 m ve 6 m seçilirse alan 6 × 6 = 36 m{us:|2} (5 m × 7 m ise 35 m{us:|2}) olur.",
+      "satir": 2
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki çevre uzunlukları 24 cm olan dört dikdörtgeni alanlarına göre {koyu:en küçükten en büyüğe} doğru 1’den 4’e kadar sıralayınız.",
+      "ogeler": [
+        "1. Kenarları 1 cm ve 11 cm olan dikdörtgen (Alan = 11 br{us:|2})",
+        "2. Kenarları 2 cm ve 10 cm olan dikdörtgen (Alan = 20 br{us:|2})",
+        "3. Kenarları 4 cm ve 8 cm olan dikdörtgen (Alan = 32 br{us:|2})",
+        "4. Kenarları 5 cm ve 7 cm olan dikdörtgen (Alan = 35 br{us:|2})"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki iki tarife paketinden A Paketi 350 TL sabit ücret + GB başına 20 TL, B Paketi 500 TL sabit ücret + GB başına 10 TL’dir. Ayda 20 GB kullanan biri için hangisi doğrudur?",
+      "secenekler": [
+        "A Paketi 750 TL, B Paketi 700 TL; B Paketi 50 TL daha ucuzdur",
+        "A Paketi 650 TL, B Paketi 700 TL; A Paketi 50 TL daha ucuzdur",
+        "Her iki paket de 750 TL tutar",
+        "B Paketi 600 TL tutar ve 150 TL daha ucuzdur"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "İpuçlarındaki matematik kavramlarını kutulara yazınız. Numaralı harflerle «şeklin tüm kenar uzunluklarının toplamı» kavramını bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Üç kenarı ve üç köşesi bulunan çokgen",
+          "cevap": "ÜÇGEN",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Dikdörtgeni sınırlayan doğru parçalarından her biri",
+          "cevap": "KENAR",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Uzunluk ölçmek ve doğru çizmek için kullanılan araç",
+          "cevap": "CETVEL",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Alan ölçmede kullanılan 1 birim kenarlı eş karelerden her biri",
+          "cevap": "BİRİMKARE",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Kısaca «m» ile gösterilen temel uzunluk ölçme birimi",
+          "cevap": "METRE",
+          "anahtar": 1
+        }
+      ],
+      "sonuc": "ÇEVRE"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Görseldeki P (2 cm × 9 cm) ve R (5 cm × 6 cm) dikdörtgenlerinin çevrelerini ve alanlarını hesaplayarak «eşit çevreli dikdörtgenlerin alanları» hakkındaki çıkarımınızı yazınız.",
+      "cevap": "İkisinin de çevresi 2 × 11 = 22 cm’dir. Fakat P’nin alanı 18 br{us:|2}, R’nin alanı 30 br{us:|2}’dir; kenarlar yaklaştıkça alan büyür.",
+      "satir": 2
+    }
+  ]
+}

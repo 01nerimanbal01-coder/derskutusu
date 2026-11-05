@@ -1,0 +1,277 @@
+{
+  "sinif": 10,
+  "ders": "matematik",
+  "hafta": 7,
+  "tarih": "26-30 Ekim 2026",
+  "yayin_tarihi": "2026-10-28",
+  "konu": "İki Kategorik Değişkenli Veriler: İki Yönlü Sıklık Tabloları, Koşullu Göreli Sıklık ve Sütun Grafikleri",
+  "ciktilar": [
+    "İki kategorik değişken arasındaki ilişkiyi incelemek üzere araştırma sorusu oluşturur ve verileri iki yönlü sıklık tablosuyla düzenler.",
+    "İki yönlü tablolardan yararlanarak marjinal (kenar), birleşik (ortak) ve koşullu göreli sıklıkları (yüzdeleri) hesaplar.",
+    "Verileri kümelenmiş ve yığılmış sütun grafikleriyle görselleştirerek iki kategorik değişken arasında ilişki olup olmadığını yorumlar."
+  ],
+  "hatirla": [
+    "Birleşik göreli sıklıkta hücre sıklığı genel toplama (N) bölünür; marjinal göreli sıklıkta satır/sütun toplamı genel toplama (N) bölünür.",
+    "Koşullu göreli sıklıkta hücre değeri yalnızca ait olduğu satır toplamına (satır koşullu) veya sütun toplamına (sütun koşullu) bölünür.",
+    "Koşullu göreli sıklıklar gruplar arasında belirgin değişiyorsa iki değişken arasında ilişki vardır; birbirine eşit/yakınsa ilişki yoktur."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "İki kategorik değişkenli veri analizindeki kavramları tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Kategorik (Nitel) Değişken",
+          "Gözlemleri sayısal ölçüm yerine sınıflara/gruplara ayıran değişken"
+        ],
+        [
+          "Marjinal Göreli Sıklık",
+          "Tablodaki bir satır veya sütun toplamının genel toplama (N) oranı"
+        ],
+        [
+          "Birleşik Göreli Sıklık",
+          "Tablo içindeki bir hücre sıklığının genel toplama (N) oranı"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-7 temel kavramlar\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">İKİ YÖNLÜ TABLO VE SIKLIK TÜRLERİ</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Kategorik Değişken</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Nitel sınıflandırma</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Marjinal Sıklık</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Kenar toplamı / N</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Birleşik Sıklık</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">İç hücre / Genel N</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Koşullu Sıklık</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">İç hücre / Satır-Sütun</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "250 kişilik ankette 150 gencin 120'si, 100 yetişkinin 30'u sosyal medya kullanıyor. Sosyal medya kullanan gençlerin birleşik göreli sıklığı kaçtır?",
+      "secenekler": [
+        "%48",
+        "%30",
+        "%60",
+        "%80"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-7 birlesik kosullu\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">BİRLEŞİK VE KOŞULLU GÖRELİ SIKLIK (N=250)</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Birleşik Göreli Sıklık (Payda = 250)</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Tüm katılımcılarda sosyal medya genci:</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">120 / 250 = 48 / 100 = %48</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Koşullu Göreli Sıklık (Payda = 150)</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Gençlerin içinde sosyal medya oranı:</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">120 / 150 = 4 / 5 = %80</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavra",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "120 öğrencilik ankette 50 kızın 30'u, 70 erkeğin 42'si Robotik seçmiştir. Cinsiyet ile atölye tercihi arasında ilişki var mıdır?",
+      "cevap": "Kızlarda koşullu sıklık {kesir:30|50} = %60, erkeklerde {kesir:42|70} = %60'tır. Oranlar eşit olduğundan ilişki yoktur.",
+      "satir": 2,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-7 bagimsizlik\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">ATÖLYE ANKETİNDE BAĞIMSIZLIK (N=120)</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Kızlarda Robotik Koşullu Sıklığı</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">50 kızdan 30'u Robotik seçti:</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">30 / 50 = 0,60 (%60)</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Erkeklerde Robotik Koşullu Sıklığı</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">70 erkekten 42'si Robotik seçti:</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">42 / 70 = 0,60 (%60 -&gt; İlişki YOK!)</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "İki yönlü sıklık tabloları ve grafiklerle ilgili ifadeleri Doğru/Yanlış olarak belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Tablonun en sağ sütunu ve en alt satırındaki toplamlara marjinal sıklık denir.",
+          "dogru": true
+        },
+        {
+          "metin": "Birleşik göreli sıklık hesaplanırken hücre değeri yalnız satır toplamına bölünür.",
+          "dogru": false
+        },
+        {
+          "metin": "Tablodaki tüm iç hücrelerin birleşik göreli sıklıklarının toplamı 1'e (%100'e) eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "Farklı büyüklükteki grupları karşılaştırırken koşullu göreli sıklık kullanılmalıdır.",
+          "dogru": true
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-7 payda kurali\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">GÖRELİ SIKLIKTA PAYDAYA NE YAZILIR?</text><rect x=\"12\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Marjinal Göreli</text><text x=\"66.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Kenar Toplamı / N</text><text x=\"66.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Genel toplam paydada</text><rect x=\"126\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Birleşik Göreli</text><text x=\"180.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Hücre Değeri / N</text><text x=\"180.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Genel toplam paydada</text><rect x=\"240\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Koşullu Göreli</text><text x=\"294.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Hücre / Satır(Sütun)</text><text x=\"294.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Yalnız alt grup paydada!</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "soru": "Bir okulda 9 ve 10. sınıfların yabancı dil tercihini gösteren iki yönlü tablodaki boşlukları tamamlayınız.",
+      "basliklar": [
+        "Sınıf Düzeyi",
+        "İngilizce",
+        "Almanca",
+        "Satır Toplamı (Marjinal)"
+      ],
+      "satirlar": [
+        [
+          "9. Sınıf",
+          "60",
+          {
+            "b": "20"
+          },
+          "80"
+        ],
+        [
+          "10. Sınıf",
+          {
+            "b": "90"
+          },
+          "30",
+          "120"
+        ],
+        [
+          "Sütun Toplamı",
+          "150",
+          "50",
+          {
+            "b": "200"
+          }
+        ],
+        [
+          "Göreli Oran (%)",
+          {
+            "b": "%75 (150/200)"
+          },
+          "%25 (50/200)",
+          "%100"
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "sutun": "sol",
+      "gorsel_var": true,
+      "soru": "İki kategorik değişken arasındaki ilişkiyi inceleyen istatistiksel araştırma basamaklarını sıraya diziniz.",
+      "ogeler": [
+        "İki kategorik değişken arasındaki ilişkiyi sorgulayan araştırma sorusu oluşturma",
+        "Örneklemden veri toplama ve ham verileri iki yönlü çapraz sıklık tablosuna yerleştirme",
+        "Grupları karşılaştırmak için koşullu göreli sıklıkları hesaplayıp sütun grafiği çizme",
+        "Koşullu yüzdelerin değişimine bakarak iki değişken arasında ilişki olup olmadığını yorumlama"
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-7 arastirma adimlari\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">İSTATİSTİKSEL ARAŞTIRMA SÜRECİ (4 ADIM)</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. Araştırma Sorusu</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">İki kategorik değişken</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">2. Veri Toplama</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Anket ve gözlem planı</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">3. İki Yönlü Tablo</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Göreli sıklık ve grafik</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">4. Sonuç Yorumu</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">İlişki / bağımsızlık</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "Her ana kategoriyi %100'lük tek sütun alıp alt kategorilerin koşullu yüzdelerini üst üste gösteren grafik hangisidir?",
+      "secenekler": [
+        "Çizgi grafiği",
+        "Yığılmış (bölünmüş) sütun grafiği",
+        "Serpilme diyagramı",
+        "Histogram"
+      ],
+      "dogru": 1,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-7 sutun grafikleri\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">SÜTUN GRAFİKLERİ VE İLİŞKİ YORUMU</text><rect x=\"12\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"66.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Kümelenmiş Sütun</text><text x=\"66.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Alt gruplar yan yana</text><text x=\"66.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Sıklık veya % kıyaslar</text><rect x=\"126\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Yığılmış Sütun</text><text x=\"180.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">%100 tek sütun içinde</text><text x=\"180.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Koşullu % üst üste</text><rect x=\"240\" y=\"28\" width=\"108\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"294.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">İlişki Ölçütü</text><text x=\"294.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Dilimler farklıysa -&gt; İlişki</text><text x=\"294.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Aynıysa -&gt; Bağımsız</text></svg>"
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "kelimeler": true,
+      "soru": "Cümlelerdeki boşlukları uygun istatistik kavramlarıyla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "“Erkek öğrencilerin yüzde kaçı basketbol oynuyor?” sorusu bir ___ göreli sıklık sorusudur.",
+          "cevap": "koşullu"
+        },
+        {
+          "metin": "Koşullu göreli sıklıklar gruplar arasında çok farklıysa iki değişken arasında ___ vardır.",
+          "cevap": "ilişki"
+        },
+        {
+          "metin": "Alt kategorilere ait sütunların yan yana çizildiği grafiğe ___ sütun grafiği denir.",
+          "cevap": "kümelenmiş"
+        }
+      ],
+      "fazla": [
+        "medyan"
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "200 kişilik okul anketinde (80 kız, 120 erkek; 80 kızın 20'si satrançta) oranları sonuçlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Kız öğrencilerin marjinal göreli sıklığı",
+          "{kesir:80|200} = %40"
+        ],
+        [
+          "Satranç kulübündeki kızların birleşik göreli sıklığı",
+          "{kesir:20|200} = %10"
+        ],
+        [
+          "Kızlar içinde satrançta olma koşullu göreli sıklığı",
+          "{kesir:20|80} = %25"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-7 anket oranlari\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">200 KİŞİLİK KULÜP ANKETİ (80 KIZ, 120 ERKEK)</text><rect x=\"10\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"50.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Marjinal Kız Oranı</text><line x1=\"18\" y1=\"58\" x2=\"82\" y2=\"58\" stroke=\"#2451d6\" stroke-width=\"0.6\"/><text x=\"50.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">80 / 200 = %40</text><rect x=\"96\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.75\"/><text x=\"136.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Birleşik Satranç Kız</text><line x1=\"104\" y1=\"58\" x2=\"168\" y2=\"58\" stroke=\"#12a150\" stroke-width=\"0.6\"/><text x=\"136.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">20 / 200 = %10</text><rect x=\"182\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"222.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Kız Koşullu Satranç</text><line x1=\"190\" y1=\"58\" x2=\"254\" y2=\"58\" stroke=\"#ee7d12\" stroke-width=\"0.6\"/><text x=\"222.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">20 / 80 = %25</text><rect x=\"268\" y=\"28\" width=\"80\" height=\"76\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"0.75\"/><text x=\"308.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Toplam Birleşik Oran</text><line x1=\"276\" y1=\"58\" x2=\"340\" y2=\"58\" stroke=\"#7c3aed\" stroke-width=\"0.6\"/><text x=\"308.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">200 / 200 = 1 (%100)</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "sutun": "sag",
+      "soru": "Aşağıdaki değişken çiftlerinden hangisinin her ikisi de 'kategorik (nitel) değişken'dir?",
+      "secenekler": [
+        "Hava sıcaklığı (°C) — Dondurma satışı",
+        "Boy uzunluğu (cm) — Ayakkabı numarası",
+        "Kan grubu (A, B, AB, 0) — Göz rengi",
+        "Araç hızı (km/sa) — Fren mesafesi (m)"
+      ],
+      "dogru": 2
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "sutun": "sag",
+      "soru": "İpuçlarından yararlanarak kavramları yazınız ve verinin tekrarlanma sayısını belirten istatistik terimini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "İki yönlü tabloda yatay dizilerin her biri",
+          "cevap": "SATIR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Koşullu yüzdelerin aynı sütunda üst üste gösterildiği grafik (... sütun)",
+          "cevap": "YIĞILMIŞ",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Sayısal olmayan, nitel sınıflandırma belirten değişken",
+          "cevap": "KATEGORİK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İki yönlü sıklık tablosunun diğer adı (Kontenjans ...)",
+          "cevap": "TABLO",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Veri toplama ve gözlem adedini belirleme işlemi",
+          "cevap": "SAYIM",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Bir alt gruba göre sınırlandırılmış göreli sıklık türü",
+          "cevap": "KOŞULLU",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "SIKLIK",
+      "sonuc": "SIKLIK"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "sutun": "sag",
+      "gorsel_var": true,
+      "soru": "A ilacı kullanan 60 hastanın 48'i, B ilacı kullanan 40 hastanın 20'si iyileşmiştir. Koşullu sıklıklarla ilişkiyi yorumlayınız.",
+      "cevap": "A ilacında iyileşme {kesir:48|60} = %80, B ilacında {kesir:20|40} = %50'dir. Koşullu yüzdeler farklı olduğundan iki değişken ilişkilidir.",
+      "satir": 2,
+      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:32mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"10-matematik-7 ilac analizi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"180.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">HASTANE İLAÇ ETKİNLİĞİ ANALİZİ (N=100)</text><rect x=\"14\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#2451d6\" stroke-width=\"0.75\"/><text x=\"94.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">A İlacı Grubu (60 Hasta)</text><text x=\"94.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">48 hasta iyileşti -&gt; Koşullu sıklık:</text><text x=\"94.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">48 / 60 = %80 iyileşme oranı</text><rect x=\"186\" y=\"28\" width=\"160\" height=\"76\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#ee7d12\" stroke-width=\"0.75\"/><text x=\"266.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">B İlacı Grubu (40 Hasta)</text><text x=\"266.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">20 hasta iyileşti -&gt; Koşullu sıklık:</text><text x=\"266.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">20 / 40 = %50 (%80 != %50 -&gt; İlişki VAR!)</text></svg>"
+    }
+  ]
+}
