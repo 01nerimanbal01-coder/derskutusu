@@ -1474,27 +1474,107 @@ window.dkTamamlanan = dkTamamlanan;
     const ozetEsles = temizYol.match(/^ozet\/(\d+)-([a-z0-9-]+)-hafta-(\d+)\.html$/)
       || temizYol.match(/^calisma\/(\d+)-([a-z0-9-]+)-(\d+)\.html$/);
 
-    // Çalışma kâğıdı sayfalarında (.ck-web-bas .g-dugmeler) üst çubuğa "📸 Bu Konunun IG Kartı" ve "🟢 WhatsApp’ta Paylaş" düğmelerini ekle
-    const ckUstDugmeler = $('.ck-web-bas .g-dugmeler');
-    if (ckUstDugmeler && ozetEsles && !$('.ck-ig-kart-btn', ckUstDugmeler)) {
-      const ckKartUrl = sosyalKartYoluBul(ozetEsles[1], ozetEsles[2], ozetEsles[3]);
-      const ckBaslik = ($('h1')?.textContent || `${ozetEsles[1]}. Sınıf ${ozetEsles[3]}. Hafta`).trim();
+    // Konu özeti (.ozet-bas .g-dugmeler) ve çalışma kâğıdı (.ck-web-bas .g-dugmeler) üst çubuğuna "📸 IG Özeti" ve "🟢 WhatsApp’ta Paylaş" düğmelerini ekle
+    const ustDugmeler = $('.ck-web-bas .g-dugmeler') || $('.ozet-bas .g-dugmeler');
+    if (ustDugmeler && ozetEsles && !$('.ck-ig-kart-btn', ustDugmeler)) {
+      const sinifNo = Number(ozetEsles[1]) || 8;
+      const dersKod = ozetEsles[2];
+      const haftaNo = Number(ozetEsles[3]) || 1;
+      const ckBaslik = ($('h1')?.textContent || `${sinifNo}. Sınıf ${haftaNo}. Hafta`).trim();
+      const haftalar = [haftaNo, (haftaNo % 8) + 1, ((haftaNo + 1) % 8) + 1, ((haftaNo + 2) % 8) + 1];
+      const seri = haftalar.map((h, idx) => ({
+        gorsel: sosyalKartYoluBul(sinifNo, dersKod, h),
+        etiket: idx === 0 ? `${ckBaslik} · ${h}. Hafta IG Özeti` : `${sinifNo}. Sınıf · ${h}. Hafta IG Özeti (@${DK_IG_AYAR.HESAP})`,
+      }));
       const igKartBtn = el('button', {
         type: 'button',
         sinif: 'dugme ck-ig-kart-btn',
-        title: 'Bu çalışma kâğıdının @derskutusuinfo Instagram özet kartını ekranda aç',
-        onclick: () => igHikayeModalAc(`${ozetEsles[1]}. Sınıf · ${ozetEsles[3]}. Hafta IG Özeti`, [{ gorsel: ckKartUrl, etiket: ckBaslik }], 0),
+        title: 'Bu konunun @derskutusuinfo Instagram özet kartı serisini ekranda aç',
+        onclick: () => igHikayeModalAc(`${sinifNo}. Sınıf · ${haftaNo}. Hafta IG Özeti`, seri, 0),
       }, '📸 IG Özeti');
       const ckWpBtn = el('button', {
         type: 'button',
         sinif: 'dugme ck-wp-paylas-btn',
-        title: 'Çalışma kâğıdını WhatsApp’ta paylaş',
+        title: 'Bu sayfayı WhatsApp’ta paylaş',
         onclick: () => sayfayiPaylas(ckWpBtn),
       }, '🟢 WhatsApp’ta Paylaş');
-      ckUstDugmeler.append(igKartBtn, ckWpBtn);
+      ustDugmeler.append(igKartBtn, ckWpBtn);
+
+      const fkartAraclar = $('.fkart-araclar');
+      if (fkartAraclar && !$('.fkart-ig-btn', fkartAraclar)) {
+        fkartAraclar.append(
+          el('button', {
+            type: 'button',
+            sinif: 'dugme fkart-ig-btn',
+            title: 'Bu konunun görsel Instagram kartını aç',
+            onclick: () => igHikayeModalAc(`${sinifNo}. Sınıf · ${haftaNo}. Hafta IG Özeti`, seri, 0),
+          }, '📸 IG Kartı')
+        );
+      }
+
+      const etkBas = $('#etkinlikler .etk-bas');
+      if (etkBas && !$('.etk-wp-btn', etkBas)) {
+        etkBas.append(
+          el('button', {
+            type: 'button',
+            sinif: 'dugme etk-wp-btn',
+            title: 'Bu etkinliği arkadaşlarınla WhatsApp’ta paylaş',
+            onclick: (ev) => sayfayiPaylas(ev.currentTarget, `🎯 ${ckBaslik} Etkileşimli Etkinlikleri — Sen de çöz ve @${DK_IG_AYAR.HESAP} ders kartlarını incele:`),
+          }, '🟢 Etkinliği Paylaş')
+        );
+      }
     }
 
-    const hedefYer = $('.ozet-sonu-kart') || $('.ck-sayfalar') || $('#nh-duzen') || $('#asds-bolum') || $('#yazili-icerik') || $('#p-indir') || $('#sinif-merkezi') || $('#k-alan') || $('#a-alan') || $('#belge-gruplari') || $('#kartlar') || $('#arama-sonuclari');
+    // sinif.html sayfasında seçilen sınıfın tüm ana ders IG kartlarını açan ve sayfayı paylaşan hızlı çubuk
+    if (/^sinif\.html$/i.test(temizYol) && !$('.sinif-ig-cubuk')) {
+      const sinifSayfaKap = $('.sayfa-bas .kap');
+      if (sinifSayfaKap) {
+        const sp = new URLSearchParams(location.search);
+        const sNo = Math.max(5, Math.min(12, Number(sp.get('s') || sp.get('sinif')) || 8));
+        const branslar = sNo <= 8
+          ? [
+              ['matematik', 'Matematik'],
+              ['fen-bilimleri', 'Fen Bilimleri'],
+              ['turkce', 'Türkçe'],
+              [sNo === 8 ? 'tc-inkilap-tarihi-ve-ataturkculuk' : 'sosyal-bilgiler', sNo === 8 ? 'T.C. İnkılap Tarihi' : 'Sosyal Bilgiler'],
+              ['ingilizce', 'İngilizce'],
+              ['din-kulturu-ve-ahlak-bilgisi', 'Din Kültürü'],
+            ]
+          : [
+              ['matematik', 'Matematik'],
+              ['turk-dili-ve-edebiyati', 'Türk Dili ve Edebiyatı'],
+              ['fizik', 'Fizik'],
+              ['kimya', 'Kimya'],
+              ['biyoloji', 'Biyoloji'],
+              ['tarih', 'Tarih'],
+            ];
+        const sinifKartlari = branslar.map(([kod, ad]) => ({
+          gorsel: sosyalKartYoluBul(sNo, kod, 4),
+          etiket: `${sNo}. Sınıf ${ad} · Instagram Konu Özeti Kartı (@${DK_IG_AYAR.HESAP})`,
+        }));
+        const sinifCubuk = el('div', { sinif: 'g-dugmeler y-ust sinif-ig-cubuk' },
+          el('button', {
+            type: 'button',
+            sinif: 'dugme ck-ig-kart-btn',
+            onclick: () => igHikayeModalAc(`${sNo}. Sınıf · Tüm Dersler IG Konu Kartları`, sinifKartlari, 0),
+          }, `📸 ${sNo}. Sınıf IG Konu Kartları (${sinifKartlari.length} Ders)`),
+          el('button', {
+            type: 'button',
+            sinif: 'dugme ck-wp-paylas-btn',
+            onclick: (ev) => sayfayiPaylas(ev.currentTarget, `📚 ${sNo}. Sınıf Tüm Dersler Konu Özetleri, Çalışma Kâğıtları ve Yazılılar (@${DK_IG_AYAR.HESAP}):`),
+          }, '🟢 Sınıf Sayfasını Paylaş'),
+          el('a', {
+            sinif: 'dugme',
+            href: DK_IG_AYAR.PROFIL_URL,
+            target: '_blank',
+            rel: 'noopener',
+            onclick: (e) => igProfiliAc(e),
+          }, `📸 @${DK_IG_AYAR.HESAP}`));
+        sinifSayfaKap.append(sinifCubuk);
+      }
+    }
+
+    const hedefYer = $('.ozet-sonu-kart') || $('.ck-sayfalar') || $('#nh-duzen') || $('#asds-bolum') || $('#yazili-icerik') || $('#p-indir') || $('#sinif-merkezi') || $('#ders-listesi') || $('#k-alan') || $('#a-alan') || $('#belge-gruplari') || $('#kartlar') || $('#arama-sonuclari');
     if (!hedefYer) return;
 
     let kartOnizleme = null;

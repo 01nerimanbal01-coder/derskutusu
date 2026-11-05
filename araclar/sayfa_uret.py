@@ -611,7 +611,7 @@ GOVDE['ders-dagitim.html'] = ('Ders dağıtım programı', 'Okullar için ücret
         }, function () { });
       })();
       </script>
-      <p><a class="dugme ana" href="/ders-dagitim-uygulama.html">Tam ekranda aç</a> <a class="dugme" href="#ddp-nasil">Nasıl kullanılır?</a> <a class="dugme" href="https://api.whatsapp.com/send?text=Okullar%20i%C3%A7in%20%C3%BCcretsiz%20Ders%20Da%C4%9F%C4%B1t%C4%B1m%20Program%C4%B1%20(PDF%20ve%20Excel%20%C3%A7%C4%B1kt%C4%B1l%C4%B1)%3A%20https%3A%2F%2Fderskutusu.com%2Fders-dagitim.html" target="_blank" rel="noopener">🟢 Okul Yönetimiyle Paylaş</a> <a class="dugme" href="https://www.instagram.com/derskutusuinfo/" target="_blank" rel="noopener"><svg><use href="#s-instagram"/></svg>@derskutusuinfo</a></p>
+      <div class="g-dugmeler y-ust"><a class="dugme ana" href="/ders-dagitim-uygulama.html">Tam ekranda aç</a> <a class="dugme" href="#ddp-nasil">Nasıl kullanılır?</a> <a class="dugme" href="https://api.whatsapp.com/send?text=Okullar%20i%C3%A7in%20%C3%BCcretsiz%20Ders%20Da%C4%9F%C4%B1t%C4%B1m%20Program%C4%B1%20(PDF%20ve%20Excel%20%C3%A7%C4%B1kt%C4%B1l%C4%B1)%3A%20https%3A%2F%2Fderskutusu.com%2Fders-dagitim.html" target="_blank" rel="noopener">🟢 Okul Yönetimiyle Paylaş</a> <a class="dugme" href="https://www.instagram.com/derskutusuinfo/" target="_blank" rel="noopener"><svg><use href="#s-instagram"/></svg>@derskutusuinfo</a></div>
     </div>
   </section>
   <div class="kap ddp-kap">
