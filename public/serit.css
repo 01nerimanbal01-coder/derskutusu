@@ -7,9 +7,9 @@
 .serit-baslik::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--yesil);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--yesil) 22%, transparent); }
 .serit-tumu { font-size: 13px; font-weight: 700; }
-.serit-dur { display: grid; place-items: center; width: 30px; height: 30px; padding: 0; border: 1px solid var(--cizgi); border-radius: 9px;
-  background: var(--yuzey); color: var(--metin); font: 700 10px/1 inherit; cursor: pointer; }
-.serit-dur:hover { border-color: var(--vurgu); color: var(--vurgu); }
+.serit-dur { display: grid; place-items: center; width: 30px; height: 30px; padding: 0; border: 0; border-radius: 9px;
+  background: var(--zemin-2); color: var(--metin); font: 700 10px/1 inherit; cursor: pointer; }
+.serit-dur:hover { background: var(--vurgu-acik); color: var(--vurgu); }
 .serit-dur:focus-visible, .serit-kart:focus-visible { outline: 2px solid var(--vurgu); outline-offset: 2px; }
 
 .serit-pencere { flex: 1; min-width: 0; overflow: hidden;
@@ -19,9 +19,9 @@
 .serit-liste { display: flex; margin: 0; padding: 0; list-style: none; }
 /* Öğe arası boşluk dolgu ile verilir: iki kopya tam eşit uzunlukta olur, döngü kesintisiz kayar. */
 .serit-oge { flex: none; width: 264px; padding-right: 10px; }
-.serit-kart { display: grid; gap: 2px; height: 100%; padding: 7px 12px 8px 13px; border: 1px solid var(--cizgi);
-  border-radius: 14px; background: var(--yuzey); color: var(--metin); box-shadow: 0 2px 8px rgb(13 36 79 / .03); transition: border-color .15s, box-shadow .15s, transform .15s; }
-.serit-kart:hover { text-decoration: none; border-color: color-mix(in srgb, var(--ders, var(--vurgu)) 55%, var(--cizgi)); box-shadow: var(--golge); transform: translateY(-1px); }
+.serit-kart { display: grid; gap: 2px; height: 100%; padding: 7px 12px 8px 13px; border: 0;
+  border-radius: 14px; background: var(--zemin-2); color: var(--metin); box-shadow: none; transition: background .15s, box-shadow .15s, transform .15s; }
+.serit-kart:hover { text-decoration: none; background: var(--vurgu-acik); box-shadow: 0 4px 12px rgb(13 36 79 / .05); transform: translateY(-1px); }
 .serit-ust { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 11.5px; font-weight: 750; letter-spacing: normal; }
 .serit-tur { display: inline-flex; align-items: center; gap: 5px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-transform: none;
   color: color-mix(in srgb, var(--ders, var(--vurgu)) 76%, var(--metin)); }

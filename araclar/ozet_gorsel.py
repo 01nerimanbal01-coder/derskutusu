@@ -26,9 +26,8 @@ def svg_baslat(w=760, h=250):
 
 def arka_plan(svg_obj, w, h, renk):
     arka = renk.get("arka", "#f8fafc") if isinstance(renk, dict) else "#f8fafc"
-    cizgi = renk.get("cizgi", "#cbd5e1") if isinstance(renk, dict) else "#cbd5e1"
     svg_obj["ic"].append(
-        f'<rect width="{w}" height="{h}" rx="12" fill="{arka}" stroke="{cizgi}" stroke-width="1.5"/>'
+        f'<rect width="{w}" height="{h}" rx="12" fill="{arka}"/>'
     )
 
 def baslik_eki(svg_obj, w, baslik, alt_baslik, renk):
@@ -45,9 +44,8 @@ def baslik_eki(svg_obj, w, baslik, alt_baslik, renk):
 def kutu(svg_obj, x, y, w, h, baslik, maddeler, renk):
     orta = renk.get("orta", "#2563eb") if isinstance(renk, dict) else "#2563eb"
     kart_arka = renk.get("kart_arka", "#ffffff") if isinstance(renk, dict) else "#ffffff"
-    cizgi = renk.get("cizgi", "#cbd5e1") if isinstance(renk, dict) else "#cbd5e1"
     svg_obj["ic"].append(
-        f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="8" fill="{kart_arka}" stroke="{cizgi}" stroke-width="1.5"/>'
+        f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="8" fill="{kart_arka}"/>'
     )
     svg_obj["ic"].append(
         f'<rect x="{x}" y="{y}" width="{w}" height="28" rx="8" fill="{orta}"/>'
@@ -71,7 +69,7 @@ def kart_Akis(svg_obj, x, y, w, h, kartlar, renk):
         kx = x + i * (kw + aralik)
         baslik, aciklama = item if isinstance(item, (list, tuple)) else (str(item), "")
         svg_obj["ic"].append(
-            f'<rect x="{kx}" y="{y}" width="{kw}" height="{h}" rx="8" fill="#ffffff" stroke="{orta}" stroke-width="1.5"/>'
+            f'<rect x="{kx}" y="{y}" width="{kw}" height="{h}" rx="8" fill="#ffffff"/>'
         )
         svg_obj["ic"].append(
             f'<rect x="{kx}" y="{y}" width="{kw}" height="26" rx="8" fill="{orta}"/>'
@@ -89,7 +87,7 @@ def merkez_Etiket(svg_obj, cx, cy, merkez_baslik, kollar, renk):
     koyu = renk.get("koyu", "#1e3a8a") if isinstance(renk, dict) else "#1e3a8a"
     mw, mh = 140, 40
     svg_obj["ic"].append(
-        f'<rect x="{cx - mw/2}" y="{cy - mh/2}" width="{mw}" height="{mh}" rx="10" fill="{koyu}" stroke="{orta}" stroke-width="2"/>'
+        f'<rect x="{cx - mw/2}" y="{cy - mh/2}" width="{mw}" height="{mh}" rx="10" fill="{koyu}"/>'
     )
     svg_obj["ic"].append(
         f'<text x="{cx}" y="{cy + 6}" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">{html.escape(str(merkez_baslik))}</text>'
@@ -106,7 +104,7 @@ def merkez_Etiket(svg_obj, cx, cy, merkez_baslik, kollar, renk):
         kx, ky = yonler[idx]
         baslik, aciklama = item if isinstance(item, (list, tuple)) else (str(item), "")
         svg_obj["ic"].append(
-            f'<rect x="{kx}" y="{ky}" width="140" height="44" rx="6" fill="#ffffff" stroke="{orta}" stroke-width="1.5"/>'
+            f'<rect x="{kx}" y="{ky}" width="140" height="44" rx="6" fill="#ffffff"/>'
         )
         svg_obj["ic"].append(
             f'<text x="{kx + 70}" y="{ky + 18}" text-anchor="middle" font-size="10.5" font-weight="bold" fill="{koyu}">{html.escape(str(baslik))}</text>'

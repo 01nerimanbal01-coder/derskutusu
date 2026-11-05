@@ -45,8 +45,8 @@ body .sayfa-bas:not(.ozet-bas), body .kp-hero, body .g-bas { background:radial-g
 body .sayfa-bas:not(.ozet-bas) h1, body .kp-hero h1 { color:var(--metin); text-wrap:balance; }
 body .sayfa-bas:not(.ozet-bas) .dugme.ana, body .kp-actions .dugme.ana { background:#FF7A00; border-color:#FF7A00; color:#FFFFFF; box-shadow:0 3px 0 #CC5E00; }
 body .sayfa-bas:not(.ozet-bas) .dugme.ana:hover, body .kp-actions .dugme.ana:hover { background:#F06D00; border-color:#F06D00; }
-body :is(.plan-bilgi,.plan-kutu,.kp-preferences,.kp-side-card) { border:1px solid var(--cizgi); border-radius:20px; background:var(--yuzey); }
-body .kp-module-card { border:1px solid var(--cizgi); border-radius:18px; background:var(--yuzey); }
+body :is(.plan-bilgi,.plan-kutu,.kp-preferences,.kp-side-card) { border:0; border-radius:20px; background:var(--zemin-2); box-shadow:none; }
+body .kp-module-card { border:0; border-radius:18px; background:var(--zemin-2); box-shadow:none; }
 body .sekmeler .sekme, body .sinif-gecis a { border-color:var(--cizgi); background:var(--yuzey); color:var(--metin); min-height:42px; border-radius:999px; font-weight:700; }
 body .sekmeler .sekme:hover, body .sinif-gecis a:hover { border-color:var(--vurgu); color:var(--vurgu); }
 body .sekmeler .sekme[aria-pressed="true"], body .sinif-gecis a[aria-current="page"] { background:var(--vurgu); border-color:var(--vurgu); color:#FFFFFF; box-shadow:0 4px 12px rgb(10 102 255 / .22); }

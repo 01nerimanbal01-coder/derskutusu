@@ -4,7 +4,7 @@
   --cizgi: #c6d0e1; --vurgu: #204ac5; --vurgu-koyu: #173790; --vurgu-acik: #e8eefe;
   --sicak-acik: #fff4dc; --yesil: #126239; --yesil-acik: #e3f6ec; --kirmizi: #a12b23; --kirmizi-acik: #fde8e7; color-scheme: light;
   width: min(1440px, calc(100vw - 24px)); max-width: none; height: calc(100dvh - 24px); max-height: none;
-  margin: auto; padding: 0; border: 1px solid var(--ds-line); border-radius: 20px;
+  margin: auto; padding: 0; border: 0; border-radius: 20px;
   background: var(--ds-bg); color: var(--ds-text); font-family: inherit; overflow: hidden; }
 .ds[open] { display: flex; flex-direction: column; }
 .ds::backdrop { background: rgb(10 20 40 / .75); }
@@ -24,7 +24,7 @@
 .ds-tools label { display: flex; gap: 8px; align-items: center; font-size: 14px; }
 .ds select { min-height: 48px; max-width: 220px; padding: 8px; }
 .ds-notice { margin: 10px 24px; font-size: 13px; line-height: 1.45; }
-.ds-stage-wrap { flex: 1; min-height: 0; position: relative; margin: 0 24px; background: var(--ds-card); border: 1px solid var(--ds-line); border-radius: 16px; overflow: hidden; }
+.ds-stage-wrap { flex: 1; min-height: 0; position: relative; margin: 0 24px; background: var(--ds-card); border: 0; border-radius: 16px; overflow: hidden; }
 .ds-stage { height: 100%; overflow: auto; overscroll-behavior: contain; padding: clamp(18px, 3vw, 44px); color: var(--ds-text); font-size: clamp(20px, 2vw, 30px); line-height: 1.6; }
 .ds-slide { max-width: 1100px; margin: auto; }
 .ds-slide-tag { color: var(--ds-accent); font-size: 14px; font-weight: 750; margin: 0 0 14px; }
@@ -80,7 +80,7 @@
 .ds-outline label { display: flex; align-items: center; gap: 8px; font-size: 14px; }
 .ds-outline select { max-width: min(680px, 100%); flex: 1; min-height: 40px; }
 @media (max-width: 650px) { .ds-outline { padding: 8px 12px 0; } .ds-outline select { min-width: 0; } }
-.ds-ig-kutu { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 24px; padding: 18px 22px; border-radius: 16px; background: linear-gradient(135deg, #fff5f8, #f3eeff); border: 1.5px solid #e5b8d8; }
+.ds-ig-kutu { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 24px; padding: 18px 22px; border-radius: 16px; background: linear-gradient(135deg, #fff5f8, #f3eeff); border: 0; }
 .ds-ig-sol { flex: 1 1 320px; }
 .ds-ig-sol strong { display: block; font-size: clamp(18px, 1.8vw, 22px); color: #831843; margin-bottom: 6px; }
 .ds-ig-sol p { margin: 0; font-size: clamp(15px, 1.5vw, 18px); line-height: 1.45; color: #3f274d; }
