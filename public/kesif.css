@@ -33,23 +33,23 @@ body.kesif-page { --zemin:#ffffff; --zemin-2:#f0f7ff; --yuzey:#ffffff; --yuzey-2
 .kesif-bul select { width:100%; min-height:48px; margin-top:7px; border:1px solid var(--cizgi); border-radius:8px; padding:10px 12px; background:var(--zemin); color:var(--metin); font:inherit; }
 .kesif-bul .dugme { width:100%; margin-top:10px; justify-content:space-between; }
 .kesif-kategoriler { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
-.kesif-kategori { position:relative; padding:23px; min-height:210px; background:var(--yuzey); border:1px solid var(--cizgi); border-radius:20px; color:var(--metin); box-shadow:0 4px 16px rgb(13 36 79 / .04); transition:transform .15s,border-color .15s,box-shadow .15s; }
-.kesif-kategori:hover { transform:translateY(-3px); border-color:color-mix(in srgb,var(--kart-ana,var(--vurgu)) 55%,var(--cizgi)); box-shadow:0 14px 32px rgb(13 36 79 / .08); text-decoration:none; }
+.kesif-kategori { position:relative; padding:23px; min-height:210px; background:var(--yuzey); border:0; border-radius:20px; color:var(--metin); box-shadow:0 4px 16px rgb(13 36 79 / .05); transition:transform .15s,box-shadow .15s; }
+.kesif-kategori:hover { transform:translateY(-3px); box-shadow:0 14px 32px rgb(13 36 79 / .09); text-decoration:none; }
 .kesif-ikon { display:inline-flex; align-items:center; justify-content:center; width:43px; height:43px; border:0; background:var(--kart-ana); border-radius:12px; color:var(--kart-ikon-yazi); font-size:22px; }
 .kesif-adet { float:right; display:inline-flex; align-items:center; color:var(--kart-ana); background:var(--yuzey); border:1px solid var(--kart-cizgi); border-radius:999px; font-size:11px; font-weight:750; padding:6px 9px; margin-top:7px; white-space:nowrap; }
 .kesif-kategori h3 { font-size:18px; letter-spacing:-.025em; margin:20px 0 8px; color:var(--kart-ana); }
 .kesif-kategori p { max-width:90%; font-size:13px; line-height:1.6; color:var(--soluk); }
 .kesif-git { position:absolute; right:18px; bottom:17px; font-size:22px; color:var(--kart-ana); }
 .kesif-page .kademeler { grid-template-columns:1fr 1fr; gap:24px; }
-.kesif-page .kademe { padding:24px; background:var(--yuzey); border:1px solid var(--cizgi); border-radius:18px; }
+.kesif-page .kademe { padding:24px; background:var(--yuzey); border:0; border-radius:18px; box-shadow:0 4px 16px rgb(13 36 79 / .04); }
 .kesif-page .kademe-ad { font-size:15px; margin-bottom:20px; }
 .kesif-page .sinif-izgara { grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
-.kesif-page .sinif-kart { display:flex; flex-direction:column; align-items:flex-start; gap:6px; padding:18px 14px; min-height:150px; border-radius:12px; background:#edf3ee; border-color:#d4e2d7; }
+.kesif-page .sinif-kart { display:flex; flex-direction:column; align-items:flex-start; gap:6px; padding:18px 14px; min-height:150px; border-radius:12px; background:#edf3ee; border:0; }
 .kesif-page .sinif-no { font-size:32px; color:#32674e; }
 .kesif-page .sinif-bilgi { font-size:11px; }
 .kesif-page .sinif-ok { display:none; }
 .kesif-page .koyu-zemin { background:var(--zemin-2); }
-.kesif-page .ozellik { border:1px solid var(--cizgi); border-radius:14px; }
+.kesif-page .ozellik { border:0; background:var(--zemin-2); border-radius:14px; }
 .kesif-araclar { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,2fr); gap:35px; align-items:center; background:#203c39; color:#fff; padding:32px 38px; border-radius:20px; }
 .kesif-araclar > * { min-width:0; }
 .kesif-araclar h2 { font-size:27px; font-weight:800; letter-spacing:-.025em; margin:6px 0 10px; }
@@ -61,7 +61,7 @@ body.kesif-page { --zemin:#ffffff; --zemin-2:#f0f7ff; --yuzey:#ffffff; --yuzey-2
 .kesif-page .sayfa-bas h1 { font-size:clamp(32px,4vw,50px); font-weight:850; letter-spacing:-.04em; }
 .kesif-page .sayfa-bas p { max-width:760px; }
 .kesif-library { display:grid; grid-template-columns:240px minmax(0,1fr); gap:32px; }
-.kesif-sidebar { align-self:start; position:sticky; top:96px; border:1px solid var(--cizgi); border-radius:18px; padding:18px 12px; background:var(--yuzey); box-shadow:0 2px 10px rgb(15 23 42 / .03); }
+.kesif-sidebar { align-self:start; position:sticky; top:96px; border:0; border-radius:18px; padding:18px 12px; background:var(--zemin-2); box-shadow:none; }
 .kesif-sidebar h2 { font-size:13.5px; font-weight:800; letter-spacing:-.01em; margin:0 10px 12px; color:var(--soluk); }
 .kesif-sidebar button { display:flex; align-items:center; gap:10px; width:100%; border:1px solid transparent; border-radius:11px; background:transparent; color:var(--metin); padding:10px; margin-block:2px; font:inherit; font-size:13.5px; font-weight:650; text-align:left; cursor:pointer; min-height:44px; transition:border-color .15s,background .15s,color .15s; }
 .kesif-sidebar button svg { color:var(--kart-ana,var(--vurgu)); width:17px; height:17px; flex:none; }
@@ -71,7 +71,7 @@ body.kesif-page { --zemin:#ffffff; --zemin-2:#f0f7ff; --yuzey:#ffffff; --yuzey-2
 .kesif-sidebar button[aria-pressed="true"] { background:#0a66ff; color:#ffffff; border-color:#0a66ff; box-shadow:0 4px 12px rgb(10 102 255 / .24); font-weight:750; }
 .kesif-sidebar button[aria-pressed="true"] :is(svg,small) { color:#ffffff; }
 .kesif-sidebar button[aria-pressed="true"] small { background:rgb(255 255 255 / .2); }
-.kesif-page .suzgec-cubugu { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; padding:22px; border-radius:16px; background:var(--yuzey); border:1px solid var(--cizgi); box-shadow:0 2px 10px rgb(15 23 42 / .03); align-items:end; }
+.kesif-page .suzgec-cubugu { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; padding:22px; border-radius:16px; background:var(--zemin-2); border:0; box-shadow:none; align-items:end; }
 .kesif-page .suzgec-cubugu label { min-width:0; font-size:12.5px; font-weight:700; }
 .kesif-page .suzgec-cubugu .arama { grid-column:auto; }
 .kesif-page .suzgec-cubugu :is(select,input) { width:100%; min-height:46px; background:var(--zemin); font-size:14.5px; border-radius:11px; }
@@ -80,18 +80,18 @@ body.kesif-page { --zemin:#ffffff; --zemin-2:#f0f7ff; --yuzey:#ffffff; --yuzey-2
 .kesif-sort { display:flex; align-items:center; gap:8px; color:var(--soluk); font-size:12.5px; font-weight:650; }
 .kesif-sort select { border:1px solid var(--cizgi); border-radius:10px; padding:9px 11px; background:var(--yuzey); color:var(--metin); min-height:42px; font:inherit; }
 .kesif-page .kartlar { grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
-.kesif-page .kart { border:1px solid var(--cizgi); border-radius:20px; background:var(--yuzey); padding:22px; min-width:0; box-shadow:0 4px 16px rgb(13 36 79 / .04); transition:transform .16s cubic-bezier(.2,.8,.2,1),border-color .16s,box-shadow .16s; }
+.kesif-page .kart { border:0; border-radius:20px; background:var(--yuzey); padding:22px; min-width:0; box-shadow:0 4px 16px rgb(13 36 79 / .05); transition:transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .16s; }
 .kesif-page .kart h3 { font-size:18px; font-weight:750; line-height:1.38; margin-block:12px 10px; letter-spacing:-.02em; color:var(--metin); }
 .kesif-page .kart > p { font-size:13.5px; line-height:1.65; }
 .kesif-page .etiket { background:var(--kart-zemin,var(--zemin-2)); color:var(--kart-ana,var(--soluk)); font-size:11.5px; font-weight:750; border-radius:999px; }
 .kesif-page .kart .eylemler { padding-top:18px; }
 .kesif-page .kart .ac { min-height:40px; }
 .kesif-page .kart.tiklanir { cursor:pointer; }
-.kesif-page .kart.tiklanir:hover { transform:translateY(-3px); border-color:color-mix(in srgb,var(--vurgu) 45%,var(--cizgi)); box-shadow:0 14px 32px rgb(13 36 79 / .08); }
+.kesif-page .kart.tiklanir:hover { transform:translateY(-3px); box-shadow:0 14px 32px rgb(13 36 79 / .09); }
 .suzgec-acilir > summary { display:none; }
 .kesif-more { text-align:center; margin-top:28px; }
 .kesif-more p { font-size:12px; color:var(--soluk); margin-bottom:12px; }
-.kesif-page .ders-kart { border-radius:20px; border:1px solid var(--cizgi); background:var(--yuzey); box-shadow:0 4px 16px rgb(13 36 79 / .04); }
+.kesif-page .ders-kart { border-radius:20px; border:0; background:var(--yuzey); box-shadow:0 4px 16px rgb(13 36 79 / .05); }
 .kesif-page .ders-harf { border-radius:12px; }
 .kesif-page .sinif-gecis a[aria-current="page"] { background:#276458; color:#fff; border-color:#276458; }
 .kesif-page :is(input,select,button,a):focus-visible { outline:3px solid #b77321; outline-offset:3px; }

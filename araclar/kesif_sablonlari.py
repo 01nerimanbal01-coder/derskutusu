@@ -1,7 +1,7 @@
 """Keşif sayfalarının ortak görünümü; içerik kaynaklarını değiştirmez."""
 import re
 
-CSS = '<link rel="stylesheet" href="/kesif.css?v=20261104-7">'
+CSS = '<link rel="stylesheet" href="/kesif.css?v=20261105-1">'
 JS = '<script src="/kesif.js?v=20261029-2"></script>'
 RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261104-7" media="screen">'
 

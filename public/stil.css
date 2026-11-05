@@ -861,7 +861,13 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .g-c { stroke: var(--g-cizgi); } .g-ys, .g-ms, .g-ts, .g-os, .g-c { fill: none; }
 .ozet-gorsel svg rect.g-ys, .ozet-gorsel svg rect.g-ms, .ozet-gorsel svg rect.g-ts, .ozet-gorsel svg rect.g-os, .ozet-gorsel svg rect.g-c,
 .ozet-gorsel svg rect[rx]:not([stroke-dasharray]) { stroke: none !important; }
-.ozet-gorsel svg > rect:first-child[width="760"], .ozet-gorsel svg > rect:first-child[width="100%"] { fill: transparent !important; stroke: none !important; }
+.ozet-gorsel svg > rect:first-child[x="0"][y="0"],
+.ozet-gorsel svg > rect:first-child[x="2"][y="2"],
+.ozet-gorsel svg > rect:first-child[x="4"][y="4"],
+.ozet-gorsel svg > rect:first-child[width="760"],
+.ozet-gorsel svg > rect:first-child[width="700"],
+.ozet-gorsel svg > rect:first-child[width="680"],
+.ozet-gorsel svg > rect:first-child[width="100%"] { fill: transparent !important; stroke: none !important; }
 /* Matematik sembolleri (MEB gösterimi): şapkalı açı, çift oklu doğru */
 .s-aci, .s-dogru { position: relative; display: inline-block; padding-top: .34em; line-height: 1; white-space: nowrap; }
 .s-aci::before, .s-dogru::before { content: ''; position: absolute; left: .02em; right: .02em; top: 0; height: .34em; background: currentColor;
@@ -1368,7 +1374,7 @@ body.sunum-iri .ozet-bolum h2 { font-size: 31px !important; }
   .ust, .alt, .okuma-cubuk, .ozet-haftalar, .ozet-ic-cubuk, .ozet-yan, .ozet-hafta-gecis, .ozet-kartlar-bolum, .gorsel-ipucu, .gorsel-buyut-btn, .sunum-cubuk, .ozet-buyutec, .sosyal-davet, .menu-ig { display: none !important; }
   body { background: #fff !important; color: #000 !important; font-size: 11.5pt; }
   .kap { width: 100% !important; margin: 0 !important; }
-  .ozet-bas { background: none !important; padding: 0 0 12px !important; border-bottom: 2px solid #000 !important; }
+  .ozet-bas { background: none !important; padding: 0 0 12px !important; border: 0 !important; }
   .ozet-bolum, .ornek, .etk, .ozet-kutu, .ozet-gorsel, .ozet-cikti, .ozet-giris-kart, .ozet-son, .ozet-tablo { break-inside: avoid; border: 0 !important; box-shadow: none !important; }
   .sesli-ar::after, .sesli-en::after { content: none !important; }
 }

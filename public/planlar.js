@@ -170,10 +170,10 @@ const Plan = (() => {
     const tablo = (satirlar, y) => {
       const kokluHucreler = new WeakMap();
       doc.autoTable({
-        startY: y, body: satirlar.map((r) => r.map(arapca)), theme: 'grid',
+        startY: y, body: satirlar.map((r) => r.map(arapca)), theme: 'plain',
         margin: { left: SAYFA.sol, right: 210 - SAYFA.sag, top: SAYFA.ust, bottom: 297 - SAYFA.alt },
-        styles: { font: 'DKPlan', fontSize: 9, textColor: RENK.metin, lineColor: RENK.cizgi, lineWidth: 0.2, cellPadding: { top: 1.2, bottom: 1.2, left: 1.8, right: 1.8 }, valign: 'top', overflow: 'linebreak' },
-        columnStyles: { 0: { cellWidth: 46, fontStyle: 'bold', fillColor: RENK.golge }, 1: { cellWidth: 'auto' } },
+        styles: { font: 'DKPlan', fontSize: 9, textColor: RENK.metin, lineWidth: 0, cellPadding: { top: 1.5, bottom: 1.5, left: 2.2, right: 2.2 }, valign: 'top', overflow: 'linebreak' },
+        columnStyles: { 0: { cellWidth: 46, fontStyle: 'bold', fillColor: RENK.golge }, 1: { cellWidth: 'auto', fillColor: [250, 252, 255] } },
         didParseCell: (v) => { if (v.column.index === 1 && /^\n+$/.test(v.cell.raw || '')) v.cell.styles.minCellHeight = 16; },
         willDrawCell: ({ cell }) => {
           if (cell.text.some((s) => /[√∛∜]/.test(s))) {
@@ -181,6 +181,11 @@ const Plan = (() => {
           }
         },
         didDrawCell: ({ cell }) => {
+          doc.saveGraphicsState();
+          doc.setDrawColor(226, 232, 240);
+          doc.setLineWidth(0.15);
+          doc.line(cell.x, cell.y + cell.height, cell.x + cell.width, cell.y + cell.height);
+          doc.restoreGraphicsState();
           const satirlar = kokluHucreler.get(cell); if (!satirlar) return;
           cell.text = satirlar;
           const em = cell.styles.fontSize / doc.internal.scaleFactor, pos = cell.getTextPos();
