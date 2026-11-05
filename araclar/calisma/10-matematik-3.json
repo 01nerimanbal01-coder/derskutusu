@@ -1,0 +1,262 @@
+{
+  "sinif": 10,
+  "ders": "matematik",
+  "hafta": 3,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Üçgende Yardımcı Elemanlar: Açıortay, Kenarortay, Kenar Orta Dikme ve Yükseklik",
+  "ciktilar": [
+    "10.1.2. Üçgenin yardımcı elemanlarının özellikleri ile ilgili çıkarım yapabilme"
+  ],
+  "hatirla": [
+    "İç açıortayların kesim noktası (I) üçgenin iç teğet çemberinin merkezidir; kenarlara olan dik uzaklıkları birbirine eşittir.",
+    "Kenarortayların kesim noktası ağırlık merkezidir (G); köşeye 2 birim, kenara 1 birim (2:1 kuralı) oranında böler; dik üçgende muhteşem üçlü oluşur.",
+    "Yüksekliklerin kesişim noktası diklik merkezidir (H); kenar orta dikmelerin kesişim noktası ise çevrel çemberin merkezidir (O)."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Üçgendeki yardımcı elemanları kesiştikleri özel merkez noktalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "İç açıortayların kesişimi",
+          "İç teğet çemberin merkezi (I)"
+        ],
+        [
+          "Kenarortayların kesişimi",
+          "Üçgenin ağırlık merkezi (G)"
+        ],
+        [
+          "Kenar orta dikmelerin kesişimi",
+          "Çevrel çemberin merkezi (O)"
+        ],
+        [
+          "Yüksekliklerin kesişimi",
+          "Üçgenin diklik merkezi (H)"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Üçgende kenarortay ve ağırlık merkezi özellikleri kartı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><rect x=\"10\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Ağırlık Merkezi (G)</text><line x1=\"18\" y1=\"40\" x2=\"82\" y2=\"40\" stroke=\"#2451d6\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Kenarortayların kesişim noktası</text><rect x=\"96\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">2:1 Kuralı</text><line x1=\"104\" y1=\"40\" x2=\"168\" y2=\"40\" stroke=\"#12a150\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Köşeye 2k, kenara k birim</text><rect x=\"182\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Muhteşem Üçlü</text><line x1=\"190\" y1=\"40\" x2=\"254\" y2=\"40\" stroke=\"#ee7d12\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Dik üçgende hipotenüs kenarortayı</text><rect x=\"268\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">6 Eşit Alan (6S)</text><line x1=\"276\" y1=\"40\" x2=\"340\" y2=\"40\" stroke=\"#7c3aed\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">G üçgeni 6 eşit alana böler</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "ABC üçgeninde G ağırlık merkezidir. AD kenarortay doğrusu üzerinde |AG| = 8 br olduğuna göre |GD| uzunluğu kaç birimdir?",
+      "secenekler": [
+        "4",
+        "8",
+        "2",
+        "6"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Üçgende kenarortay üzerinde ağırlık merkezinin 2k ya k oranı şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">ABC ÜÇGENİNDE AĞIRLIK MERKEZİ VE 2:1 ORANI</text><polygon points=\"50,84 130,34 190,84\" fill=\"none\" stroke=\"#2451d6\" stroke-width=\"2\"/><line x1=\"130\" y1=\"34\" x2=\"120\" y2=\"84\" stroke=\"#ee7d12\" stroke-width=\"1.5\"/><circle cx=\"123\" cy=\"67\" r=\"3\" fill=\"#d63a3a\"/><text x=\"135.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d63a3a\">G</text><text x=\"138.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">2k</text><text x=\"132.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">k</text><rect x=\"205\" y=\"34\" width=\"140\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"275.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">|AG| = 2 · |GD|</text><text x=\"275.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Köşe mesafesi kenarın iki katıdır</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Bir dik üçgende hipotenüse ait kenarortayın uzunluğu ile hipotenüs arasındaki bağıntı nedir?",
+      "cevap": "Kenarortay uzunluğu hipotenüsün tam yarısına eşittir (muhteşem üçlü).",
+      "satir": 2,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Dik üçgende hipotenüse ait muhteşem üçlü kenarortay bağıntısı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">DİK ÜÇGENDE MUHTEŞEM ÜÇLÜ KURALI</text><polygon points=\"50,84 50,34 170,84\" fill=\"none\" stroke=\"#12a150\" stroke-width=\"2\"/><rect x=\"50\" y=\"74\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#12a150\" stroke-width=\"1\"/><line x1=\"50\" y1=\"84\" x2=\"110\" y2=\"59\" stroke=\"#ee7d12\" stroke-width=\"1.8\"/><rect x=\"190\" y=\"34\" width=\"155\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"267.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">|AD| = |BD| = |DC|</text><text x=\"267.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Hipotenüse ait kenarortay parçalara eşittir</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Üçgende yardımcı elemanlar ve merkezlerle ilgili hükümleri değerlendiriniz.",
+      "ifadeler": [
+        {
+          "metin": "Ağırlık merkezi (G) her üçgende daima üçgenin iç bölgesinde yer alır.",
+          "dogru": true
+        },
+        {
+          "metin": "Geniş açılı bir üçgende diklik merkezi (H) üçgenin dış bölgesindedir.",
+          "dogru": true
+        },
+        {
+          "metin": "Eşkenar üçgende açıortay, kenarortay ve yükseklik merkezleri çakışıktır.",
+          "dogru": true
+        },
+        {
+          "metin": "Çevrel çemberin merkezi kenarortayların kesişim noktasıdır.",
+          "dogru": false
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Ağırlık merkezinin üçgeni 6 eşit alana bölme kuralı şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">KENARORTAYLARIN AYIRDIĞI 6 EŞİT ALAN (6S)</text><polygon points=\"50,84 110,34 170,84\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"2\"/><line x1=\"110\" y1=\"34\" x2=\"110\" y2=\"84\" stroke=\"#0b2257\" stroke-width=\"1\"/><line x1=\"50\" y1=\"84\" x2=\"140\" y2=\"59\" stroke=\"#0b2257\" stroke-width=\"1\"/><line x1=\"170\" y1=\"84\" x2=\"80\" y2=\"59\" stroke=\"#0b2257\" stroke-width=\"1\"/><rect x=\"190\" y=\"34\" width=\"155\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"267.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Alan(ABC) = 6 · S</text><text x=\"267.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">3 kenarortay alanı 6 eşit üçgene böler</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Aşağıdaki tabloda üçgenin özel merkezlerinin niteliklerini tamamlayınız.",
+      "basliklar": [
+        "Özel Merkez",
+        "Kesişen Yardımcı Eleman",
+        "İlişkili Çember",
+        "Geniş Açılı Üçgende Konumu"
+      ],
+      "satirlar": [
+        [
+          "Ağırlık Merkezi (G)",
+          "Kenarortaylar",
+          "Çember ilişkisi yok",
+          {
+            "b": "Daima üçgenin içinde"
+          }
+        ],
+        [
+          "İç Teğet Çember Merkezi (I)",
+          {
+            "b": "İç açıortaylar"
+          },
+          "İç teğet çember",
+          "Daima üçgenin içinde"
+        ],
+        [
+          "Diklik Merkezi (H)",
+          "Yükseklikler",
+          "Çember ilişkisi yok",
+          {
+            "b": "Üçgenin dış bölgesinde"
+          }
+        ],
+        [
+          "Çevrel Çember Merkezi (O)",
+          {
+            "b": "Kenar orta dikmeler"
+          },
+          "Çevrel çember",
+          "Üçgenin dış bölgesinde"
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Pergel ve cetvel kullanarak bir açının açıortay doğrusunu çizme basamaklarını sıraya koyunuz.",
+      "ogeler": [
+        "Pergelin sivri ucunu açının köşesine koyup her iki kolu kesen bir yay çizme",
+        "Kollardaki kesişim noktalarından eşit yarıçaplı iki yay çizerek kesiştirme",
+        "İki yayın kesiştiği iç noktayı belirleyip cetvelle köşe noktasıyla birleştirme",
+        "Açıyı iki eşit ölçüye bölen açıortay ışınını tamamlayarak kontrol etme"
+      ],
+      "dogru": null,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Kenarortay uzunluk teoremi matematiksel formül kartı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">KENARORTAY UZUNLUK TEOREMİ FORMÜLÜ</text><rect x=\"16\" y=\"34\" width=\"328\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"13\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">2 · Va² = b² + c² - (a² / 2)</text><text x=\"180.0\" y=\"74.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Üç kenarın uzunluğu bilinen üçgende kenarortay hesabı</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Bir ikizkenar üçgende tabana indirilen yükseklik aynı zamanda açıortay ve kenarortaydır. Bu kural geometri literatüründe hangi kısaltmayla anılır?",
+      "secenekler": [
+        "KASİ Kuralı",
+        "YAKİ Kuralı",
+        "PİSAGOR İlkesi",
+        "ÖKLİD Bağıntısı"
+      ],
+      "dogru": 1,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Dik üçgende kenarortaylar arası özel Pisagor bağıntısı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">DİK ÜÇGENDE KENARORTAYLAR ARASINDAKİ BAĞINTI</text><rect x=\"16\" y=\"34\" width=\"328\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"13\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">5 · Va² = Vb² + Vc²</text><text x=\"180.0\" y=\"74.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">m(A) = 90° olan dik üçgende kenarortay kareleri ilişkisi</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Çeşitkenar bir üçgende aynı köşeden çizilen yükseklik (h_a), açıortay (n_A) ve kenarortay (v_a) arasındaki uzunluk sıralamasını yazınız.",
+      "cevap": "h_a ≤ n_A ≤ v_a (Yükseklik en kısa, kenarortay en uzundur).",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Üçgen türlerini diklik merkezinin (H) konumuyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Dar açılı üçgen",
+          "Üçgenin iç bölgesinde yer alır"
+        ],
+        [
+          "Dik üçgen",
+          "Dik açının bulunduğu köşe üzerindedir"
+        ],
+        [
+          "Geniş açılı üçgen",
+          "Geniş açının karşısındaki dış bölgededir"
+        ],
+        [
+          "Eşkenar üçgen",
+          "Tüm diğer merkezlerle tam çakışır"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Üçgenin yardımcı elemanları ve merkezleri karşılaştırma kartı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e0f4f8\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><rect x=\"10\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Kenarortay (V)</text><line x1=\"18\" y1=\"42\" x2=\"82\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Kenarı iki eşit parçaya böler, G kesişim</text><rect x=\"96\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Açıortay (n)</text><line x1=\"104\" y1=\"42\" x2=\"168\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Açıyı iki eşit parçaya böler, I iç teğet</text><rect x=\"182\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Yükseklik (h)</text><line x1=\"190\" y1=\"42\" x2=\"254\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Köşeden karşı kenara inen dikme, H diklik</text><rect x=\"268\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Orta Dikme</text><line x1=\"276\" y1=\"42\" x2=\"340\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Kenarın ortasından geçen dik doğru</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Üçgen elemanları ve teorem kurallarıyla ilgili hükümleri işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "İç açıortay üzerindeki her nokta açının kollarına eşit dik uzaklıktadır.",
+          "dogru": true
+        },
+        {
+          "metin": "Ağırlık merkezi kenarortayı köşeye 1, kenara 2 oranında böler.",
+          "dogru": false
+        },
+        {
+          "metin": "Bir üçgende kenar orta dikmelerin üçü de daima tek bir noktada kesişir.",
+          "dogru": true
+        },
+        {
+          "metin": "Dik üçgende çevrel çemberin merkezi hipotenüsün tam orta noktasıdır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarından yararlanarak geometri kavramlarını yazınız. Numaralı kutulardan 'KENAR' kelimesini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Üçgenin bir köşesini karşı kenarın orta noktasına birleştiren doğru",
+          "cevap": "KENARORTAY",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Tüm kenar uzunlukları ve iç açıları eşit olan mükemmel üçgen",
+          "cevap": "EŞKENAR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Doğruların veya doğru parçalarının kesiştiği boyutsuz yer",
+          "cevap": "NOKTA",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kenarortayların kesiştiği fiziksel denge merkezi",
+          "cevap": "AĞIRLIK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "İç teğet çemberin kenarlara olan dik mesafesi",
+          "cevap": "YARIÇAP",
+          "anahtar": 2
+        }
+      ],
+      "kelime": "KENAR",
+      "sonuc": "KENAR",
+      "gorsel": "<svg viewBox=\"0 0 360 96\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Geometri dersi şifre anahtar harf kutuları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"88\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">ANAHTAR KAVRAM ŞİFRE ŞERİDİ: K - E - N - A - R</text><rect x=\"45\" y=\"32\" width=\"46\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"68.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">1</text><text x=\"68.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">K</text><rect x=\"100\" y=\"32\" width=\"46\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"123.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">2</text><text x=\"123.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">E</text><rect x=\"155\" y=\"32\" width=\"46\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"178.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">3</text><text x=\"178.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">N</text><rect x=\"210\" y=\"32\" width=\"46\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"233.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">4</text><text x=\"233.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">A</text><rect x=\"265\" y=\"32\" width=\"46\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"288.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">5</text><text x=\"288.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">R</text></svg>"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Üçgende ağırlık merkezinin kenarortay doğrusunu bölme oranını köşeye ve kenara göre belirtiniz.",
+      "cevap": "Köşeye 2 birim, kenara 1 birim oranında (2:1 kuralı) böler.",
+      "satir": 2
+    }
+  ]
+}

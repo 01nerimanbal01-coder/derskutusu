@@ -1,0 +1,190 @@
+{
+  "sinif": 11,
+  "ders": "cografya",
+  "hafta": 3,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Mekânsal Sorunlar Karşısında Coğrafya Bilimi ve Web Tabanlı CBS Uygulamaları",
+  "ciktilar": [
+    "COĞ.11.1.1. Mekânsal sorunların çözümünde coğrafya biliminin katkılarını yapılandırabilme",
+    "COĞ.11.2.1. Web tabanlı CBS aracılığı ile harita uygulamaları yapabilme"
+  ],
+  "hatirla": [
+    "Coğrafi Bilgi Sistemleri (CBS); donanım, yazılım, veri, insan ve yöntem bileşenlerinden oluşan çok katmanlı bir karar destek mekanizmasıdır.",
+    "Mekânsal veriler vektör (nokta, çizgi, poligon) ve raster (piksel, hücre) olmak üzere iki temel veri modelinde depolanır.",
+    "Tampon bölge (buffer) ve çakıştırma (overlay) analizleri afet risk yönetimi ve doğru yer seçimi kararlarında hayati önem taşır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sol sütundaki CBS bileşenlerini sağ sütundaki temel işlevleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Donanım",
+          "Bilgisayar, sunucu, GPS alıcısı ve tarayıcı gibi fiziksel aygıtlar"
+        ],
+        [
+          "Yazılım",
+          "Mekânsal verileri depolayan, analiz eden ve haritalayan programlar"
+        ],
+        [
+          "Vektör Veri",
+          "Mekânsal detayları nokta, çizgi ve alan olarak depolayan veri yapısı"
+        ],
+        [
+          "Raster Veri",
+          "Uydu görüntüleri ve yükseklik verilerini piksellerle gösteren yapı"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Bir belediyenin taşkın risk haritası hazırlarken nehir yatağını 'çizgi', yerleşim birimlerini 'poligon' ve su kuyularını 'nokta' olarak",
+      "secenekler": [
+        "Piksel tabanlı raster veri modeli",
+        "Geometrik detayları koordinatlarla saklayan vektör veri modeli",
+        "Sadece metin içeren istatistiksel veri modeli",
+        "Üç boyutlu animasyon modeli"
+      ],
+      "cevap": "B",
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Taşkın riski taşıyan bir akarsu çevresinde 500 metrelik koruma kuşağı oluşturulup yapılaşmanın yasaklanması CBS'de hangi mekânsal",
+      "secenekler": [
+        "En kısa yol ağ analizi",
+        "Tampon bölge (buffer) analizi",
+        "Spektral yansıma analizi",
+        "Jeotermal gradyent hesabı"
+      ],
+      "cevap": "B",
+      "dogru": 0
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Boş bırakılan yere uygun kavramı yazınız.",
+      "cumleler": [
+        {
+          "metin": "CBS ortamında harita üzerindeki her bir grafik nesneye ait ad, nüfus, alan ve derinlik gibi bilgilerin tutulduğu tabloya ___ tablosu denir.",
+          "cevap": "öznitelik"
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "soru": "Web tabanlı CBS platformlarının klasik basılı haritalara göre afet yönetiminde sağladığı en büyük üstünlük hangisidir?",
+      "secenekler": [
+        "Farklı kurumlardan gelen verilerin anlık güncellenmesi ve internet üzerinden eş zamanlı paylaşılabilmesi",
+        "Sadece siyah-beyaz renkte çıktı vererek kâğıt tasarrufu sağlaması",
+        "İnternet bağlantısı olmasa dahi küresel uyduları doğrudan yönlendirebilmesi",
+        "Mekândaki yükselti farklarını tamamen ortadan kaldırarak düzleştirmesi"
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Sol sütundaki analiz kriterlerini sağ sütundaki yer seçimi katmanıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Eğim Analizi",
+          "Heyelan ve erozyon riski yüksek dik yamaçları eleme"
+        ],
+        [
+          "Fay Hattı Tamponu",
+          "Deprem riski nedeniyle fay zonuna güvenli mesafe koyma"
+        ],
+        [
+          "Ulaşım Ağı Erişimi",
+          "Ana arterlere ve kavşak noktalarına yakınlık belirleme"
+        ],
+        [
+          "Sulak Alan Koruması",
+          "İçme suyu havzası çevresinde yapılaşmayı sınırlandırma"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "degerlendir",
+      "gorsel_var": true,
+      "soru": "Görseldeki çok kriterli çakıştırma (overlay) analizinde eğim, jeoloji, ulaşım ve mülkiyet katmanları üst üste bindirilmiştir. Bu analiz",
+      "secenekler": [
+        "Bölgenin yıllık ortalama sıcaklık değerini ölçmek",
+        "Doğal afet riskini en aza indirecek en uygun yerleşim alanını belirlemek",
+        "Akarsuyun debisini yapay olarak artırmak",
+        "Maden rezervlerinin dünya borsa fiyatlarını tahmin etmek"
+      ],
+      "cevap": "B",
+      "dogru": 0
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Boş bırakılan yere uygun kavramı yazınız.",
+      "cumleler": [
+        {
+          "metin": "Web tabanlı CBS uygulamalarında harita arka planı olarak sıklıkla kullanılan yüksek çözünürlüklü fotoğraflara ___ görüntüsü denir.",
+          "cevap": "uydu"
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Sayısal Yükseklik Modeli (DEM) verisi kullanılarak bir havzanın eğim, bakı ve akış yönü haritaları türetilmiştir. Bu haritalar hangi mekânsal",
+      "secenekler": [
+        "Taşkın ve erozyon riskli alanların önceden modellenmesinde",
+        "Yeraltı madenlerinin kimyasal bileşiminin tespit edilmesinde",
+        "Gök taşlarının atmosferdeki sürtünme hızının hesaplanmasında",
+        "Uluslararası deniz ticaret hukuku kurallarının belirlenmesinde"
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Büyükşehirlerde acil servis ambulanslarının ve itfaiye araçlarının olay yerine en hızlı şekilde ulaşabilmesi için web tabanlı CBS'de",
+      "secenekler": [
+        "En kısa ve en hızlı rota belirleyen ağ (network) analizi",
+        "Tek boyutlu spektral yansıma analizi",
+        "Tekrarlı poligon bölme analizi",
+        "Radyokarbon yaş tayini analizi"
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Boş bırakılan yere uygun kavramı yazınız.",
+      "cumleler": [
+        {
+          "metin": "Farklı coğrafi katmanların sayısal ortamda üst üste getirilerek ortak kesişim veya birleşimlerinin alınması işlemine ___ analizi denir.",
+          "cevap": "çakıştırma"
+        }
+      ]
+    },
+    {
+      "tur": "acik",
+      "duzey": "analiz",
+      "soru": "Tampon bölge (buffer) analizinin kentsel afet yönetimindeki temel işlevini yazınız.",
+      "cevap": "Tehlike kaynağı çevresinde etki alanını belirleyip."
+    }
+  ]
+}

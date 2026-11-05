@@ -1,0 +1,257 @@
+{
+  "sinif": 10,
+  "ders": "cografya",
+  "hafta": 3,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "CBS ve Uzaktan Algılamanın Uygulama Alanları",
+  "ciktilar": [
+    "COĞ.10.2.1. Örnek uygulamalar üzerinden CBS ve uzaktan algılamanın kullanım alanlarını özetleyebilme"
+  ],
+  "hatirla": [
+    "Coğrafi Bilgi Sistemleri (CBS); konuma dayalı mekânsal verileri toplayan, depolayan, katmanlar halinde analiz eden yazılım ve donanım bütünüdür.",
+    "Uzaktan algılama; yeryüzüyle doğrudan fiziksel temas kurmadan uçak veya uydu algılayıcılarıyla yansıtılan elektromanyetik verileri kaydetmektir.",
+    "CBS ve uzaktan algılama afet yönetimi, orman yangını izleme, şehir planlama, tarımsal rekolte tahmini ve arazi kullanım analizinde kritik rol oynar."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Mekânsal bilgi teknolojilerini temel işlevleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "CBS (Coğrafi Bilgi Sistemi)",
+          "Konuma dayalı çok katmanlı mekânsal analiz ve sorgulama"
+        ],
+        [
+          "Uzaktan Algılama (UA)",
+          "Uydularla temas kurmadan yeryüzü verilerini kaydetme"
+        ],
+        [
+          "GNSS / GPS teknolojisi",
+          "Uydulardan gelen sinyallerle anlık hassas konum belirleme"
+        ],
+        [
+          "Raster veri modeli",
+          "Görüntüyü piksel ve hücre ızgaralarıyla temsil etme"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Mekânsal veri modelleri ve CBS ilkeleri kartı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><rect x=\"10\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Vektör Veri</text><line x1=\"18\" y1=\"40\" x2=\"82\" y2=\"40\" stroke=\"#2451d6\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Nokta, çizgi, poligon geometri</text><rect x=\"96\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Raster Veri</text><line x1=\"104\" y1=\"40\" x2=\"168\" y2=\"40\" stroke=\"#12a150\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Piksel ve hücre ızgara matrisi</text><rect x=\"182\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Öznitelik Verisi</text><line x1=\"190\" y1=\"40\" x2=\"254\" y2=\"40\" stroke=\"#ee7d12\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Mekânsal nesnenin sözel tablosu</text><rect x=\"268\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Katman Analizi</text><line x1=\"276\" y1=\"40\" x2=\"340\" y2=\"40\" stroke=\"#7c3aed\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Üst üste bindirme (Overlay)</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Geniş bir coğrafi alanda çıkan orman yangınının ilerleme yönünü ve yanan alanın büyüklüğünü anlık izlemede en etkili teknoloji hangisidir?",
+      "secenekler": [
+        "Uydu tabanlı termal uzaktan algılama ve CBS analizi",
+        "Klasik pusulalı kâğıt topoğrafya haritası incelemesi",
+        "Meteoroloji istasyonundan elle rüzgâr gülü çizilmesi",
+        "Bölgedeki yerel kütüphane arşiv kayıtlarının taranması"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Vektör veri modelleri nokta çizgi alan şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">VEKTÖR VERİ TİPLERİ VE YERYÜZÜ TEMSİLLERİ</text><rect x=\"14\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"66.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Nokta (Point)</text><text x=\"66.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Kuyu, zirve, yangın kulesi</text><rect x=\"126\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"178.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Çizgi (Line)</text><text x=\"178.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Karayolu, akarsu, fay hattı</text><rect x=\"238\" y=\"34\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"290.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Poligon (Area)</text><text x=\"290.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Göl, orman, il sınırları</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "CBS'de vektör veri modelini oluşturan üç temel geometrik bileşeni yazınız.",
+      "cevap": "Nokta, çizgi ve poligon (kapalı alan) bileşenleridir.",
+      "satir": 2,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Raster veri modeli piksel ızgarası ve çözünürlük şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">RASTER VERİ IZGARA YAPISI VE PİKSEL ÇÖZÜNÜRLÜĞÜ</text><rect x=\"30\" y=\"34\" width=\"15\" height=\"13\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"46\" y=\"34\" width=\"15\" height=\"13\" fill=\"#c8e6c9\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"62\" y=\"34\" width=\"15\" height=\"13\" fill=\"#81c784\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"78\" y=\"34\" width=\"15\" height=\"13\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"30\" y=\"48\" width=\"15\" height=\"13\" fill=\"#c8e6c9\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"46\" y=\"48\" width=\"15\" height=\"13\" fill=\"#81c784\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"62\" y=\"48\" width=\"15\" height=\"13\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"78\" y=\"48\" width=\"15\" height=\"13\" fill=\"#c8e6c9\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"30\" y=\"62\" width=\"15\" height=\"13\" fill=\"#81c784\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"46\" y=\"62\" width=\"15\" height=\"13\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"62\" y=\"62\" width=\"15\" height=\"13\" fill=\"#c8e6c9\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"78\" y=\"62\" width=\"15\" height=\"13\" fill=\"#81c784\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"30\" y=\"76\" width=\"15\" height=\"13\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"46\" y=\"76\" width=\"15\" height=\"13\" fill=\"#c8e6c9\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"62\" y=\"76\" width=\"15\" height=\"13\" fill=\"#81c784\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"78\" y=\"76\" width=\"15\" height=\"13\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"0.8\"/><rect x=\"110\" y=\"34\" width=\"234\" height=\"56\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"227.0\" y=\"52.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Hücre (Piksel) Boyutu ve Detay</text><text x=\"227.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Piksel küçüldükçe mekânsal çözünürlük ve doğruluk artar.</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "CBS ve uzaktan algılama teknolojileriyle ilgili ifadeleri değerlendiriniz.",
+      "ifadeler": [
+        {
+          "metin": "CBS'de farklı tematik haritalar üst üste katmanlaştırılarak analiz edilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Uzaktan algılama uyduları sadece gündüzleri görünür ışık bandında kayıt yapabilir.",
+          "dogru": false
+        },
+        {
+          "metin": "Piksel boyutu küçüldükçe uzaktan algılama görüntüsünün çözünürlüğü artar.",
+          "dogru": true
+        },
+        {
+          "metin": "Türkiye'nin yerli yüksek çözünürlüklü gözlem uydusu İMECE yörüngede görevdedir.",
+          "dogru": true
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Coğrafi bilgi sistemlerinde katman üst üste bindirme modeli\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">CBS ÇOK KATMANLI MEKÂNSAL ÇAKIŞTIRMA (OVERLAY)</text><rect x=\"10\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">1. Arazi Örtüsü</text><text x=\"50.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Orman, tarım, yerleşim</text><rect x=\"96\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">2. Eğim ve Yükseklik</text><text x=\"136.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Topoğrafik konturlar</text><rect x=\"182\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">3. Jeoloji ve Zemin</text><text x=\"222.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Kayaç türü, deprem fayı</text><rect x=\"268\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">4. Sonuç Analizi</text><text x=\"308.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Yerleşime uygun alanlar</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Aşağıdaki tabloda CBS mekânsal veri türlerinin özelliklerini tamamlayınız.",
+      "basliklar": [
+        "Veri Modeli",
+        "Geometrik Yapı",
+        "Temsil Edilen Coğrafi Varlık",
+        "Örnek Gösterim"
+      ],
+      "satirlar": [
+        [
+          "Vektör (Nokta)",
+          "Tekil koordinat (x, y)",
+          {
+            "b": "Yangın kulesi, kuyu, zirve"
+          },
+          "Sembolik işaret"
+        ],
+        [
+          "Vektör (Çizgi)",
+          "Birbirine bağlı noktalar",
+          {
+            "b": "Akarsu, fay hattı, karayolu"
+          },
+          "Doğrusal hat"
+        ],
+        [
+          "Vektör (Poligon)",
+          "Kapalı sınır alanı",
+          "Göl, orman alanı, il sınırı",
+          {
+            "b": "Renkli alan dolgusu"
+          }
+        ],
+        [
+          "Raster",
+          {
+            "b": "Piksel ızgaraları (grid)"
+          },
+          "Uydu görüntüsü, sayısal yükseklik",
+          "Sayısal matris"
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "CBS ile bir akarsu havzasında taşkın risk haritası üretme aşamalarını sıralayınız.",
+      "ogeler": [
+        "Havzaya ait sayısal yükseklik modeli (DEM) ve topoğrafya verilerini CBS'ye aktarma",
+        "Eğim, yağış miktarı, toprak geçirgenliği ve bitki örtüsü katmanlarını oluşturma",
+        "Katmanları ağırlıklı çakıştırma analiziyle birleştirerek risk katsayılarını hesaplama",
+        "Olası su basma sınırlarını poligon olarak çizip taşkın tahliye planını raporlama"
+      ],
+      "dogru": null,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Mekânsal veri üretme ve dijitalleştirme yöntemleri kartı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">MEKÂNSAL VERİ TOPLAMA VE DİJİTALLEŞTİRME YÖNTEMLERİ</text><rect x=\"10\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Uzaktan Algılama</text><text x=\"50.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Uydu ve uçak sensörleri</text><rect x=\"96\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">GNSS / GPS</text><text x=\"136.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Uydudan hassas koordinat</text><rect x=\"182\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">LIDAR Tarama</text><text x=\"222.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Lazer ile 3B yükseklik</text><rect x=\"268\" y=\"34\" width=\"80\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Yersel Ölçüm</text><text x=\"308.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Total station ve teodolit</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Türkiye'nin yerli imkânlarla ürettiği ve metre altı çözünürlükle yeryüzü gözlemi yapan uydumuz hangisidir?",
+      "secenekler": [
+        "TÜRKSAT 4A",
+        "İMECE",
+        "KANDİLLİ 1",
+        "RASAT MINI"
+      ],
+      "dogru": 1,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"GPS uydu sinyalleriyle yer konumu tespit şeması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">GNSS / GPS KÜRESEL KONUMLANDIRMA İLKESİ</text><rect x=\"40\" y=\"42\" width=\"20\" height=\"12\" rx=\"3\" fill=\"#2451d6\"/><line x1=\"50\" y1=\"54\" x2=\"180\" y2=\"78\" stroke=\"#2451d6\" stroke-dasharray=\"3,2\" stroke-width=\"1\"/><rect x=\"110\" y=\"32\" width=\"20\" height=\"12\" rx=\"3\" fill=\"#2451d6\"/><line x1=\"120\" y1=\"44\" x2=\"180\" y2=\"78\" stroke=\"#2451d6\" stroke-dasharray=\"3,2\" stroke-width=\"1\"/><rect x=\"230\" y=\"32\" width=\"20\" height=\"12\" rx=\"3\" fill=\"#2451d6\"/><line x1=\"240\" y1=\"44\" x2=\"180\" y2=\"78\" stroke=\"#2451d6\" stroke-dasharray=\"3,2\" stroke-width=\"1\"/><rect x=\"300\" y=\"42\" width=\"20\" height=\"12\" rx=\"3\" fill=\"#2451d6\"/><line x1=\"310\" y1=\"54\" x2=\"180\" y2=\"78\" stroke=\"#2451d6\" stroke-dasharray=\"3,2\" stroke-width=\"1\"/><circle cx=\"180\" cy=\"78\" r=\"6\" fill=\"#ee7d12\" stroke=\"#0b2257\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"92.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">En az 4 uydu ile hassas (X, Y, Z, Zaman) konumu</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Uzaktan algılamada piksel boyutu 30 metreden 1 metreye indirildiğinde mekânsal çözünürlük nasıl değişir?",
+      "cevap": "Mekânsal çözünürlük belirgin biçimde artar ve detaylar netleşir.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "CBS uygulama alanlarını çözdükleri pratik sorunlarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Afet Yönetimi",
+          "Deprem sonrası toplanma alanları ve enkaz tahliye koridorları"
+        ],
+        [
+          "Şehir Planlama",
+          "Yeni metro hatları, yeşil alanlar ve nüfus yoğunluğu dengesi"
+        ],
+        [
+          "Tarımsal İzleme",
+          "Kuraklık tespiti, ürün rekolte tahmini ve sulama optimizasyonu"
+        ],
+        [
+          "Ormancılık",
+          "Kaçak ağaç kesimi ve orman yangını hasar tespit analizi"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Coğrafi bilgi sisteminin 4 temel bileşeni kartı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e0f4f8\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><rect x=\"10\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Donanım</text><line x1=\"18\" y1=\"42\" x2=\"82\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Bilgisayar, sunucu, GPS alıcısı</text><rect x=\"96\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Yazılım</text><line x1=\"104\" y1=\"42\" x2=\"168\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">CBS analiz ve haritalama araçları</text><rect x=\"182\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Veri</text><line x1=\"190\" y1=\"42\" x2=\"254\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Mekânsal ve öznitelik tabloları</text><rect x=\"268\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">Yöntem</text><line x1=\"276\" y1=\"42\" x2=\"340\" y2=\"42\" stroke=\"#0e8fa8\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Standart coğrafi analiz kuralları</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Mekânsal teknolojiler ve analiz kabiliyetleriyle ilgili hükümleri değerlendiriniz.",
+      "ifadeler": [
+        {
+          "metin": "CBS'de konuma bağlı verilerin yanında tablosal öznitelik bilgileri de saklanır.",
+          "dogru": true
+        },
+        {
+          "metin": "Kâğıt haritalar mekânsal sorgulama ve anlık güncellemede CBS'den daha pratiktir.",
+          "dogru": false
+        },
+        {
+          "metin": "GNSS alıcıları en az dört uydudan sinyal alarak üç boyutlu konum belirler.",
+          "dogru": true
+        },
+        {
+          "metin": "Uzaktan algılama verileri ormanların klorofil sağlığını ölçmek için kullanılır.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarından yararlanarak coğrafi teknoloji kavramlarını yazınız. Numaralı kutulardan 'UYDU' kelimesini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Yeryüzü gözlemi ve uzaktan algılama yapan yapay yörünge aracı",
+          "cevap": "UYDU",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Deniz seviyesinden dikey mesafeyi gösteren fiziki ölçü",
+          "cevap": "YÜKSELTİ",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Coğrafi unsurların yeryüzü üzerindeki yayılış ve konumlanma biçimi",
+          "cevap": "DAĞILIM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Doğal veya beşerî mekânı oluşturan ayırt edici ögelerin bütünü",
+          "cevap": "UNSUR",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "UYDU",
+      "sonuc": "UYDU",
+      "gorsel": "<svg viewBox=\"0 0 360 96\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Coğrafya dersi şifre anahtar harf kutuları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"88\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">ANAHTAR KAVRAM ŞİFRE ŞERİDİ: U - Y - D - U</text><rect x=\"65\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"89.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">1</text><text x=\"89.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">U</text><rect x=\"125\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"149.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">2</text><text x=\"149.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">Y</text><rect x=\"185\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"209.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">3</text><text x=\"209.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">D</text><rect x=\"245\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"269.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">4</text><text x=\"269.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">U</text></svg>"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "CBS'nin geleneksel basılı kâğıt haritalara göre sağladığı en büyük iki avantajı belirtiniz.",
+      "cevap": "Hızlı güncellenebilirlik ve çok katmanlı mekânsal sorgulama imkânıdır.",
+      "satir": 2
+    }
+  ]
+}

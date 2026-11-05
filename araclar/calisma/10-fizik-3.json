@@ -1,0 +1,257 @@
+{
+  "sinif": 10,
+  "ders": "fizik",
+  "hafta": 3,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Bir Boyutta Sabit İvmeli Hareket: İvme ve Hız Değişimi İlişkisi",
+  "ciktilar": [
+    "FİZ.10.1.2. İvme ve hız değişimi arasındaki ilişkiye yönelik tümevarımsal akıl yürütebilme"
+  ],
+  "hatirla": [
+    "İvme (a), birim zamandaki hız değişimidir (a = Δv / Δt); hız vektörü ile ivme vektörü aynı yönlüyse cisim hızlanır, zıt yönlüyse yavaşlar.",
+    "Sabit ivmeli harekette hız-zaman (v-t) grafiği eğik bir doğrudur; grafiğin eğimi ivmeyi, altındaki alan ise yer değiştirmeyi verir.",
+    "Durgun halden sabit a ivmesiyle hızlanan cismin eşit zaman aralıklarında aldığı yollar x, 3x, 5x, 7x... (tek sayılar kuralı) oranındadır."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İvmeli hareket grafiklerinin geometrik anlamlarını eşleştiriniz.",
+      "ciftler": [
+        [
+          "v-t grafiğinde eğim",
+          "Hareketlinin ivmesini (a) verir"
+        ],
+        [
+          "a-t grafiğinde alan",
+          "Cismin hız değişimini (Δv) verir"
+        ],
+        [
+          "v-t grafiğinde alan",
+          "Cismin yer değiştirmesini (Δx) verir"
+        ],
+        [
+          "v ve a aynı işaretli",
+          "Cismin hızlanan hareket yaptığını gösterir"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Hız-zaman grafiği eğim ve alan ilkeleri kartı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><rect x=\"10\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">v-t Eğimi</text><line x1=\"18\" y1=\"40\" x2=\"82\" y2=\"40\" stroke=\"#2451d6\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">İvmeyi (a = Δv/Δt) verir</text><rect x=\"96\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">v-t Alanı</text><line x1=\"104\" y1=\"40\" x2=\"168\" y2=\"40\" stroke=\"#12a150\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Yer değiştirmeyi (Δx) verir</text><rect x=\"182\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Pozitif İvme</text><line x1=\"190\" y1=\"40\" x2=\"254\" y2=\"40\" stroke=\"#ee7d12\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Hız vektörü yönünde artış</text><rect x=\"268\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"30.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Negatif İvme</text><line x1=\"276\" y1=\"40\" x2=\"340\" y2=\"40\" stroke=\"#7c3aed\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Ters yönde yavaşlama / hızlanma</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Durgun halden harekete başlayan bir araç a = 4 m/s² sabit ivmeyle düzgün hızlandığına göre 5 saniye sonundaki hızı kaç m/s olur?",
+      "secenekler": [
+        "20",
+        "40",
+        "10",
+        "50"
+      ],
+      "dogru": 0,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Düzgün hızlanan hareket ivme ve alınan yol hesabı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e8eefe\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">DÜZGÜN HIZLANAN HAREKET VE İVME HESABI</text><line x1=\"24\" y1=\"56\" x2=\"336\" y2=\"56\" stroke=\"#2451d6\" stroke-width=\"2\"/><circle cx=\"50\" cy=\"56\" r=\"10\" fill=\"#ee7d12\" stroke=\"#0b2257\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"38.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">t = 0 (v₀ = 0)</text><circle cx=\"280\" cy=\"56\" r=\"10\" fill=\"#12a150\" stroke=\"#0b2257\" stroke-width=\"1.2\"/><text x=\"280.0\" y=\"38.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">t = 4 s (v = 20 m/s)</text><text x=\"165.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">a = (20 - 0) / 4 = 5 m/s²</text><text x=\"165.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Δx = 1/2 · a · t² = 1/2 · 5 · 16 = 40 m</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Hız vektörü pozitif yönde iken ivme vektörü negatif yönde olan bir cismin hareketi nasıldır?",
+      "cevap": "Cisim pozitif yönde düzgün yavaşlayan hareket yapar.",
+      "satir": 2,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Hız-zaman grafiği altındaki alan ile yer değiştirme hesabı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">HIZ-ZAMAN (v-t) GRAFİĞİNDE ALAN = YER DEĞİŞTİRME</text><line x1=\"60\" y1=\"84\" x2=\"300\" y2=\"84\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><line x1=\"60\" y1=\"84\" x2=\"60\" y2=\"34\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><line x1=\"60\" y1=\"84\" x2=\"240\" y2=\"40\" stroke=\"#12a150\" stroke-width=\"2.2\"/><polygon points=\"60,84 240,84 240,40\" fill=\"#c8e6c9\" fill-opacity=\"0.6\"/><text x=\"44.0\" y=\"42.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">20</text><text x=\"240.0\" y=\"94.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">t = 4 s</text><text x=\"160.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Alan = (20 · 4)/2 = 40 m</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sabit ivmeli hareket yasalarıyla ilgili hükümleri değerlendiriniz.",
+      "ifadeler": [
+        {
+          "metin": "İvme-zaman grafiğinin zaman ekseniyle sınırladığı alan yer değiştirmeyi verir.",
+          "dogru": false
+        },
+        {
+          "metin": "Durgun halden hızlanan cisim eşit t sürelerinde x, 3x, 5x yollarını alır.",
+          "dogru": true
+        },
+        {
+          "metin": "Sabit hızlı hareket yapan cisimlerin ivmesi sıfıra eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "İvme vektörel bir büyüklük olup SI sistemindeki birimi m/s² dir.",
+          "dogru": true
+        }
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Düzgün yavaşlayan hareket fren mesafesi ve duruş süresi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#fff1df\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">DÜZGÜN YAVAŞLAYAN HAREKET VE FRENLEME</text><line x1=\"24\" y1=\"56\" x2=\"336\" y2=\"56\" stroke=\"#ee7d12\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"56\" r=\"10\" fill=\"#d63a3a\" stroke=\"#0b2257\" stroke-width=\"1.2\"/><text x=\"60.0\" y=\"38.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d63a3a\">v₁ = 30 m/s</text><circle cx=\"280\" cy=\"56\" r=\"10\" fill=\"#9aa6bd\" stroke=\"#0b2257\" stroke-width=\"1.2\"/><text x=\"280.0\" y=\"38.0\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#5b6479\">v₂ = 0 (Durdu)</text><text x=\"170.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Fren İvmesi: a = -6 m/s²</text><text x=\"170.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Duruş Süresi: t = 30 / 6 = 5 s</text></svg>"
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "soru": "Durgun halden a = 2 m/s² ivmeyle hızlanan bir cismin değer tablosundaki boşlukları tamamlayınız.",
+      "basliklar": [
+        "Zaman (s)",
+        "Hız (m/s)",
+        "O Aralıkta Alınan Yol (m)",
+        "Toplam Yer Değiştirme (m)"
+      ],
+      "satirlar": [
+        [
+          "1",
+          "2",
+          {
+            "b": "1"
+          },
+          "1"
+        ],
+        [
+          "2",
+          "4",
+          "3",
+          {
+            "b": "4"
+          }
+        ],
+        [
+          "3",
+          {
+            "b": "6"
+          },
+          "5",
+          "9"
+        ],
+        [
+          "4",
+          "8",
+          {
+            "b": "7"
+          },
+          "16"
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "İvme-zaman grafiğinden konum-zaman grafiğini elde etme basamaklarını sıraya koyunuz.",
+      "ogeler": [
+        "İvme-zaman grafiğindeki alanları hesaplayarak her aralıktaki hız değişimlerini (Δv) bulma",
+        "İlk hız değerine hız değişimlerini ekleyerek her anın anlık hızını saptama",
+        "Elde edilen hız değerleriyle hız-zaman (v-t) grafiğini çizme",
+        "Hız-zaman grafiğinin altındaki alanlardan yer değiştirmeleri bularak x-t eğrisini çizme"
+      ],
+      "dogru": null,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"İvme-zaman grafiği altındaki dikdörtgen alan ile hız değişimi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">İVME-ZAMAN GRAFİĞİNDEN HIZ DEĞİŞİMİNE GEÇİŞ</text><line x1=\"60\" y1=\"84\" x2=\"280\" y2=\"84\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><line x1=\"60\" y1=\"84\" x2=\"60\" y2=\"34\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><rect x=\"60\" y=\"44\" width=\"160\" height=\"40\" fill=\"#f0e9fe\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/><text x=\"44.0\" y=\"54.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">a = 4</text><text x=\"220.0\" y=\"94.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">t = 5 s</text><text x=\"140.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">Alan = a · t = 4 · 5 = 20 m/s (Δv)</text></svg>"
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "gorsel_var": true,
+      "soru": "Durgun halden sabit ivmeyle hızlanan bir araç ilk t süresinde x kadar yol aldığına göre 3t anına kadar toplam kaç x yol alır?",
+      "secenekler": [
+        "3",
+        "9",
+        "6",
+        "12"
+      ],
+      "dogru": 1,
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Hızlanan ve yavaşlayan hareket vektör işaretleri karşılaştırması\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#eef1f6\" stroke=\"#9aa6bd\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"10.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">HIZLANAN VE YAVAŞLAYAN HAREKET GRAFİKLERİ</text><rect x=\"16\" y=\"34\" width=\"156\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"94.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Hızlanan Hareket (v · a &gt; 0)</text><text x=\"94.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Hız ve ivme vektörleri aynı yönlüdür</text><rect x=\"188\" y=\"34\" width=\"156\" height=\"54\" rx=\"6\" fill=\"#ffffff\" stroke=\"#d63a3a\" stroke-width=\"1.2\"/><text x=\"266.0\" y=\"50.0\" text-anchor=\"middle\" font-size=\"9\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d63a3a\">Yavaşlayan Hareket (v · a &lt; 0)</text><text x=\"266.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Hız ve ivme vektörleri zıt yönlüdür</text></svg>"
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "a = 6 m/s² sabit ivmeyle yavaşlayan bir araç durana kadar 3 saniye geçtiğine göre ilk hızı kaç m/s'dir?",
+      "cevap": "v₀ = a · t = 6 · 3 = 18 m/s dir.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sabit ivmeli hareket formüllerini fiziksel durumlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "v = v₀ + a·t",
+          "Zamana bağlı hız denklemi"
+        ],
+        [
+          "x = v₀·t + 1/2 a·t²",
+          "Zamana bağlı konum denklemi"
+        ],
+        [
+          "v² = v₀² + 2·a·x",
+          "Zamansız hız denklemi"
+        ],
+        [
+          "a = Δv / Δt",
+          "Ortalama ivme tanım bağıntısı"
+        ]
+      ],
+      "gorsel": "<svg viewBox=\"0 0 360 100\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Mekanik temel büyüklükler ve SI birimleri kartı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"92\" rx=\"6\" fill=\"#e0f4f8\" stroke=\"#0e8fa8\" stroke-width=\"1.2\"/><rect x=\"10\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#2451d6\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Konum (x)</text><line x1=\"18\" y1=\"42\" x2=\"82\" y2=\"42\" stroke=\"#2451d6\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Metre (m)</text><rect x=\"96\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#ee7d12\" stroke-width=\"1.2\"/><text x=\"136.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Zaman (t)</text><line x1=\"104\" y1=\"42\" x2=\"168\" y2=\"42\" stroke=\"#ee7d12\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Saniye (s)</text><rect x=\"182\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"222.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Hız (v)</text><line x1=\"190\" y1=\"42\" x2=\"254\" y2=\"42\" stroke=\"#12a150\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Metre/saniye (m/s)</text><rect x=\"268\" y=\"10\" width=\"80\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"1.2\"/><text x=\"308.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">İvme (a)</text><line x1=\"276\" y1=\"42\" x2=\"340\" y2=\"42\" stroke=\"#7c3aed\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Metre/saniye² (m/s²)</text></svg>"
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Doğrusal ivmeli hareketle ilgili yargıları işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir cismin ivmesi pozitifse cisim kesinlikle hızlanmaktadır.",
+          "dogru": false
+        },
+        {
+          "metin": "Eğer hareketli negatif yönde gidiyorsa pozitif ivme onu yavaşlatır.",
+          "dogru": true
+        },
+        {
+          "metin": "Konum-zaman grafiğinde eğrinin parabolik olması hareketin ivmeli olduğunu gösterir.",
+          "dogru": true
+        },
+        {
+          "metin": "Tek sayılar kuralı sadece ilk hızı sıfır olan sabit ivmeli hareketlerde geçerlidir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarından yararlanarak fizik kavramlarını yazınız. Numaralı kutulardan 'İVME' kelimesini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Birim zamandaki hız değişimi vektörü",
+          "cevap": "İVME",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "SI sisteminde hız ve süratin sembolik harfi",
+          "cevap": "VEKTÖR",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "SI sisteminde yer değiştirme ve yolun temel uzunluk birimi",
+          "cevap": "METRE",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Hız-zaman grafiğinde doğrunun dikliğini belirten matematiksel oran",
+          "cevap": "EĞİM",
+          "anahtar": 0
+        }
+      ],
+      "kelime": "İVME",
+      "sonuc": "İVME",
+      "gorsel": "<svg viewBox=\"0 0 360 96\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Fizik dersi şifre anahtar harf kutuları\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"88\" rx=\"6\" fill=\"#e3f6ea\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"11.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">ANAHTAR KAVRAM ŞİFRE ŞERİDİ: İ - V - M - E</text><rect x=\"65\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"89.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">1</text><text x=\"89.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">İ</text><rect x=\"125\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"149.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">2</text><text x=\"149.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">V</text><rect x=\"185\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"209.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">3</text><text x=\"209.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">M</text><rect x=\"245\" y=\"32\" width=\"48\" height=\"48\" rx=\"6\" fill=\"#eaf8f0\" stroke=\"#12a150\" stroke-width=\"1.2\"/><text x=\"269.0\" y=\"46.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">4</text><text x=\"269.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">E</text></svg>"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Bir hareketlinin sürati artarken ivmesi negatif işaretli olabilir mi? Açıklayınız.",
+      "cevap": "Evet; hareketli negatif yönde hızlanıyorsa ivmesi de negatif olur.",
+      "satir": 2
+    }
+  ]
+}

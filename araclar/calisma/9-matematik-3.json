@@ -1,0 +1,269 @@
+{
+  "sinif": 9,
+  "ders": "matematik",
+  "hafta": 3,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Gerçek Sayıların Üslü ve Köklü Gösterimleri ile Gerçek Sayı Aralıkları",
+  "ciktilar": [
+    "9.1.1. Gerçek sayıların üslü ve köklü gösterimleriyle yapılan işlemlere dair muhakeme yapabilme",
+    "9.1.2. Gerçek sayı aralıklarının gösteriminde ve aralıklarla ilgili işlemlerde küme sembol ve işlemlerinden yararlanabilme"
+  ],
+  "hatirla": [
+    "Kapalı aralık [a, b] uç noktaları içerir; açık aralık (a, b) uç noktaları içermez.",
+    "Aralıkların kesişimi ({ar:∩}) ortak elemanları, birleşimi ({ar:∪}) tüm elemanları kapsar.",
+    "Üslü sayılarda tabanlar aynıysa çarparken üsler toplanır: {us:a|m} · {us:a|n} = {us:a|m+n}."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Aralık gösterimlerini sayı doğrusu durumlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "[2, 5]",
+          "2 ve 5 dahil, arasındaki tüm gerçek sayılar"
+        ],
+        [
+          "(2, 5)",
+          "2 ve 5 hariç, arasındaki tüm gerçek sayılar"
+        ],
+        [
+          "[2, 5)",
+          "2 dahil, 5 hariç yarı açık aralık"
+        ],
+        [
+          "(2, 5]",
+          "2 hariç, 5 dahil yarı açık aralık"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sayı doğrularında gösterilen A = [-3, 4) ve B = [1, 7] aralıkları için A ∩ B kesişim kümesi hangisidir?",
+      "secenekler": [
+        "[1, 4)",
+        "[-3, 7]",
+        "(1, 4]",
+        "(-3, 1]"
+      ],
+      "dogru": 0,
+      "cozum": "Kesişim kümesinde her iki aralıkta ortak olan sayılar yer alır: [1, 4) aralığıdır."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "x bir gerçek sayı olmak üzere -2 < x ≤ 5 eşitsizliğinin aralık gösterimini yazınız.",
+      "cevap": "Aralık gösterimi (-2, 5] biçimindedir.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Gerçek sayı aralıkları ve üslü sayılarla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "[1, 6] kapalı aralığında sonsuz sayıda gerçek sayı bulunur.",
+          "dogru": true
+        },
+        {
+          "metin": "(3, 7) açık aralığının en küçük elemanı 4 sayısıdır.",
+          "dogru": false
+        },
+        {
+          "metin": "İki reel sayı aralığının birleşimi her iki aralığı da kapsar.",
+          "dogru": true
+        },
+        {
+          "metin": "Negatif sayıların çift kuvvetleri daima negatif bir değer üretir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Aralık türlerini uç noktaların kümeye dahil olma durumuna göre gruplandırınız.",
+      "basliklar": [
+        "Aralık Gösterimi",
+        "Uç Noktalar",
+        "Kümeye Dahillik Durumu",
+        "Aralık Türü"
+      ],
+      "satirlar": [
+        [
+          "[a, b]",
+          "a ve b",
+          "Her iki uç nokta dahil",
+          {
+            "b": "Kapalı aralık"
+          }
+        ],
+        [
+          "(a, b)",
+          "a ve b",
+          "Her iki uç nokta hariç",
+          {
+            "b": "Açık aralık"
+          }
+        ],
+        [
+          "[a, b)",
+          "a ve b",
+          "a dahil, b hariç",
+          {
+            "b": "Yarı açık aralık"
+          }
+        ],
+        [
+          "(a, ∞)",
+          "Yalnızca a",
+          "a hariç sonsuza kadar",
+          {
+            "b": "Açık ışın"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde verilen eşitsizlik çözümünü aralık olarak ifade etme basamaklarını sıraya diziniz.",
+      "ogeler": [
+        "Eşitsizliği sadeleştirip bilinmeyeni yalnız bırakma",
+        "Sayı doğrusu üzerinde sınır noktalarını işaretleme",
+        "Dahillik durumuna göre açık veya içi dolu nokta koyma",
+        "Çözüm kümesini parantez ve köşeli ayraçla aralık olarak yazma"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki cebirsel kartta verilen {us:2|5} · {us:2|3} / {us:2|4} işleminin sonucu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "16",
+        "8",
+        "32",
+        "64"
+      ],
+      "dogru": 0,
+      "cozum": "Pay: 2^(5+3) = 2^8. Payda: 2^4. Sonuç: 2^(8-4) = 2^4 = 16."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "{kok:81} + {us:3|2} işleminin sayısal değerini yazınız.",
+      "cevap": "9 + 9 = 18 olarak bulunur.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Üslü sayıları sonuçlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{us:2|6}",
+          "64"
+        ],
+        [
+          "{us:3|4}",
+          "81"
+        ],
+        [
+          "{us:5|3}",
+          "125"
+        ],
+        [
+          "{us:10|3}",
+          "1000"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Üslü ve köklü sayılarla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Tabanları aynı üslü sayılar bölünürken payın üssünden paydanın üssü çıkarılır.",
+          "dogru": true
+        },
+        {
+          "metin": "Sıfır dışındaki bir reel sayının sıfırıncı kuvveti sıfıra eşittir.",
+          "dogru": false
+        },
+        {
+          "metin": "{kok:x} köklü ifadesinin tanımlı olması için x ≥ 0 olmalıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "[0, 1] kapalı aralığında hiçbir rasyonel sayı bulunmaz.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarına karşılık gelen matematik kavramını bulunuz.",
+      "ipucu": "Sayı doğrusunda iki nokta arasındaki tüm gerçek sayıların oluşturduğu alt küme (6 Harf).",
+      "harfler": [
+        {
+          "no": 1,
+          "harf": "A"
+        },
+        {
+          "no": 2,
+          "harf": "R"
+        },
+        {
+          "no": 3,
+          "harf": "A"
+        },
+        {
+          "no": 4,
+          "harf": "L"
+        },
+        {
+          "no": 5,
+          "harf": "I"
+        },
+        {
+          "no": 6,
+          "harf": "K"
+        }
+      ],
+      "kelime": "ARALIK",
+      "satirlar": [
+        {
+          "ipucu": "Sayı doğrusunda iki nokta arasındaki tüm gerçek sayıların oluşturduğu alt küme (6 Harf).",
+          "cevap": "ARALIK",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "A"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Açık aralık ile kapalı aralık arasındaki temel farkı uç noktalar açısından belirtiniz.",
+      "cevap": "Kapalı aralıkta uç noktalar kümeye dahildir, açık.",
+      "satir": 2
+    }
+  ]
+}

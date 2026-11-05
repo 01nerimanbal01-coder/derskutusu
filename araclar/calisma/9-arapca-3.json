@@ -1,0 +1,269 @@
+{
+  "sinif": 9,
+  "ders": "arapca",
+  "hafta": 3,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Tanışma (التَّعَارُف): İsim, Memleket ve Uyruk Sorma, Ayrı ve Bitişik Zamirler, İşaret İsimleri (هٰذَا / هٰذِهِ)",
+  "ciktilar": [
+    "ARP.9.1.4. Tanışma diyaloglarında geçen isim, memleket, milliyet ve hal hatır sorma ifadelerini dinleyerek/okuyarak anlamlandırabilme.",
+    "ARP.9.1.5. Tekil kişi zamirlerini ({ar:أَنَا، أَنْتَ، أَنْتِ، هُوَ، هِيَ}), bitişik iyelik zamirlerini ({ar:ـِي، ـكَ، ـكِ، ـهُ، ـهَا}) ve işaret isimlerini ({ar:هٰذَا، هٰذِهِ}) müzekker-müennes uyumuna göre kullanabilme.",
+    "ARP.9.1.6. Kendisini ve arkadaşlarını tanıtan kısa sözlü ve yazılı Arapça diyaloglar oluşturabilme."
+  ],
+  "hatirla": [
+    "{ar:مَا اسْمُكَ؟} erkek için, {ar:مَا اسْمُكِ؟} kız için 'Adın ne?' sorusudur.",
+    "{ar:أَنَا} (ben), {ar:أَنْتَ} (sen - e), {ar:أَنْتِ} (sen - k), {ar:هُوَ} (o - e), {ar:هِيَ} (o - k) kişi zamirleridir.",
+    "{ar:هٰذَا} eril (müzekker), {ar:هٰذِهِ} dişil (müennes) varlıklar için 'bu' anlamına gelen işaret ismidir."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Arapça kişi zamirlerini Türkçe karşılıklarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{ar:أَنَا}",
+          "Ben (tekil konuşan kişi)"
+        ],
+        [
+          "{ar:أَنْتَ}",
+          "Sen (muhatap erkek)"
+        ],
+        [
+          "{ar:أَنْتِ}",
+          "Sen (muhatap kız)"
+        ],
+        [
+          "{ar:هُوَ}",
+          "O (üçüncü şahıs erkek)"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki tanışma panosuna göre kız öğrenciye memleketi sorulurken hangi soru cümlesi kurulmalıdır?",
+      "secenekler": [
+        "{ar:مِنْ أَيْنَ أَنْتَ؟}",
+        "{ar:مِنْ أَيْنَ أَنْتِ؟}",
+        "{ar:مَا اسْمُكَ؟}",
+        "{ar:كَيْفَ حَالُكَ؟}"
+      ],
+      "dogru": 1,
+      "cozum": "Kız muhataba hitap ederken sen zamiri {ar:أَنْتِ} kesreli kullanılır."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Müennes (dişil) bir nesneyi işaret ederken {ar:هٰذَا} yerine hangi işaret ismi kullanılır?",
+      "cevap": "{ar:هٰذِهِ} işaret ismi kullanılır.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Arapça zamirler ve işaret isimleriyle ilgili yargılardan doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "{ar:ـِي} bitişik zamiri ismin sonuna gelerek 'benim' anlamı katar.",
+          "dogru": true
+        },
+        {
+          "metin": "{ar:هٰذَا} işaret ismi kız öğrenciler için kullanılır.",
+          "dogru": false
+        },
+        {
+          "metin": "{ar:مِنْ أَيْنَ أَنْتَ؟} sorusuna {ar:أَنَا مِنْ تُرْكِيَا} cevabı verilebilir.",
+          "dogru": true
+        },
+        {
+          "metin": "{ar:هُوَ} zamiri dişil (müennes) varlıklar içindir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Verilen Arapça sözcükleri zamir türü ve cinsiyet durumuna göre sınıflandırınız.",
+      "basliklar": [
+        "Sözcük",
+        "Zamir / Kelime Türü",
+        "Cinsiyet Durumu"
+      ],
+      "satirlar": [
+        [
+          "{ar:أَنْتَ}",
+          "Kişi Zamiri",
+          {
+            "b": "Müzekker (Erkek)"
+          }
+        ],
+        [
+          "{ar:هِيَ}",
+          "Kişi Zamiri",
+          {
+            "b": "Müennes (Kız)"
+          }
+        ],
+        [
+          "{ar:هٰذَا}",
+          "İşaret İsmi",
+          {
+            "b": "Müzekker (Eril)"
+          }
+        ],
+        [
+          "{ar:هٰذِهِ}",
+          "İşaret İsmi",
+          {
+            "b": "Müennes (Dişil)"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görselde verilen tanışma diyaloğu basamaklarını mantıksal sıraya diziniz.",
+      "ogeler": [
+        "Selamlaşma ({ar:السَّلَامُ عَلَيْكُمْ})",
+        "İsim sorma ({ar:مَا اسْمُكَ؟})",
+        "Memleket sorma ({ar:مِنْ أَيْنَ أَنْتَ؟})",
+        "Tanışmaktan memnuniyet ({ar:فُرْصَة سَعِيدَة})"
+      ],
+      "dogru_sira": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki sınıf levhasında '{ar:هٰذِهِ طَالِبَةٌ ...}' cümlesinde boşluğa müennes uyuma göre hangi kelime gelmelidir?",
+      "secenekler": [
+        "{ar:جَدِيدَةٌ}",
+        "{ar:جَدِيدٌ}",
+        "{ar:كَبِيرٌ}",
+        "{ar:طَوِيلٌ}"
+      ],
+      "dogru": 0,
+      "cozum": "Müennes isim olan {ar:طَالِبَةٌ} kelimesini niteleyen sıfat kapalı te ({ar:ة}) alır."
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "'{ar:مَا اسْمُكَ؟}' sorusuna bir erkek öğrenci adını belirterek nasıl yanıt verir?",
+      "cevap": "{ar:اسْمِي ...} kalıbıyla adını söyleyerek yanıt verir.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Arapça soru kalıplarını anlamlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{ar:مَا اسْمُكَ؟}",
+          "Adın nedir?"
+        ],
+        [
+          "{ar:مِنْ أَيْنَ أَنْتَ؟}",
+          "Nerelisin?"
+        ],
+        [
+          "{ar:مَا جِنْسِيَّتُكَ؟}",
+          "Uyruğun nedir?"
+        ],
+        [
+          "{ar:كَيْفَ حَالُكَ؟}",
+          "Nasılsın?"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Arapça dil kurallarıyla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+      "ifadeler": [
+        {
+          "metin": "Arapçada eril varlıklara müzekker, dişil varlıklara müennes denir.",
+          "dogru": true
+        },
+        {
+          "metin": "{ar:طَالِبَةٌ} kelimesi müzekker bir isimdir.",
+          "dogru": false
+        },
+        {
+          "metin": "{ar:أَنَا تُرْكِيٌّ} diyen bir kişi Türk olduğunu belirtmektedir.",
+          "dogru": true
+        },
+        {
+          "metin": "Bitişik iyelik zamirleri kelimenin başına eklenir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "İpuçlarına karşılık gelen Arapça tanışma kavramını bulunuz.",
+      "ipucu": "Yeni biriyle karşılaşıldığında yapılan selamlaşma ve bilgi alışverişi süreci (7 Harf).",
+      "harfler": [
+        {
+          "no": 1,
+          "harf": "T"
+        },
+        {
+          "no": 2,
+          "harf": "A"
+        },
+        {
+          "no": 3,
+          "harf": "N"
+        },
+        {
+          "no": 4,
+          "harf": "I"
+        },
+        {
+          "no": 5,
+          "harf": "Ş"
+        },
+        {
+          "no": 6,
+          "harf": "M"
+        },
+        {
+          "no": 7,
+          "harf": "A"
+        }
+      ],
+      "kelime": "TANIŞMA",
+      "satirlar": [
+        {
+          "ipucu": "Yeni biriyle karşılaşıldığında yapılan selamlaşma ve bilgi alışverişi süreci (7 Harf).",
+          "cevap": "TANIŞMA",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "T"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Arapçada müzekker ve müennes ayrımının zamir kullanımındaki etkisini kısaca açıklayınız.",
+      "cevap": "Erkek ve kadın muhataplar için farklı zamirler.",
+      "satir": 2
+    }
+  ]
+}

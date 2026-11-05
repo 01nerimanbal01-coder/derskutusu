@@ -1,0 +1,189 @@
+{
+  "sinif": 11,
+  "ders": "matematik",
+  "hafta": 3,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "İki Nicel Değişkenli Veriler: Serpilme Diyagramı ve Korelasyon",
+  "ciktilar": [
+    "MAT.11.1.1. İki nicel değişkenli veri ile çalışabilme ve iki nicel değişken arasındaki ilişkililiğe dayalı karar verebilme"
+  ],
+  "hatirla": [
+    "Serpilme diyagramı (saçılım grafiği), iki nicel değişken arasındaki ilişkinin yönünü ve gücünü görselleştiren iki boyutlu nokta bulutudur.",
+    "Korelasyon katsayısı (r), -1 ile +1 arasında değer alır; r > 0 ise pozitif, r < 0 ise negatif, r = 0 ise doğrusal ilişki yokluğunu ifade eder.",
+    "İki değişken arasında yüksek korelasyon bulunması, aralarında mutlaka bir sebep-sonuç (nedensellik) ilişkisi olduğunu tek başına kanıtlamaz."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Sol sütundaki korelasyon katsayısı değerlerini sağ sütundaki doğrusal ilişki nitelikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "r = +0,95",
+          "Güçlü düzeyde aynı yönlü (pozitif) doğrusal ilişki"
+        ],
+        [
+          "r = -0,88",
+          "Güçlü düzeyde ters yönlü (negatif) doğrusal ilişki"
+        ],
+        [
+          "r = +0,20",
+          "Çok zayıf düzeyde pozitif doğrusal ilişki"
+        ],
+        [
+          "r = 0,00",
+          "İki nicel değişken arasında doğrusal ilişki bulunmaması"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Görseldeki serpilme diyagramında noktaların sol alttan sağ üste doğru dar bir eksen etrafında kümelendiği görülmektedir. Bu iki",
+      "secenekler": [
+        "Güçlü pozitif yönlü doğrusal ilişki",
+        "Güçlü negatif yönlü doğrusal ilişki",
+        "Korelasyon katsayısının tam -1 olması",
+        "Değişkenler arasında hiçbir bağlantı olmaması"
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Bir aracın sabit bir mesafeyi katederken ortalama sürati ile varış süresi arasındaki ilişki araştırılıyor. Bu iki değişken",
+      "secenekler": [
+        "Sürat arttıkça süre azaldığından negatif korelasyondur",
+        "Her iki değişken aynı anda arttığından pozitif korelasyondur",
+        "İki değişken arasında hiçbir ilişki bulunmadığından sıfır korelasyondur",
+        "Sürat ile zaman birbirine her zaman eşit olduğundan birim korelasyondur"
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Boş bırakılan yere uygun kavramı yazınız.",
+      "cumleler": [
+        {
+          "metin": "İki nicel değişken arasındaki doğrusal ilişkinin yönünü ve gücünü gösteren -1 ile +1 arasındaki katsayıya ___ katsayısı denir.",
+          "cevap": "korelasyon"
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "soru": "Hava sıcaklığı ile kışlık mont satışları arasındaki korelasyon katsayısı r = -0,85 olarak hesaplanmıştır. Bu sonuca göre hangisi kesinlikle doğrudur?",
+      "secenekler": [
+        "Hava sıcaklığı arttıkça kışlık mont satışları genel olarak azalmaktadır",
+        "Mont satışı hava sıcaklığının doğrudan tek fiziksel nedenidir",
+        "Sıcaklık ile satış miktarları her zaman birbirine tam eşittir",
+        "Korelasyon negatif olduğu için toplanan veri seti geçersizdir"
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Sol sütundaki değişken ikililerini sağ sütundaki beklenen korelasyon yönüyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Çalışma süresi ile sınav notu",
+          "Pozitif Korelasyon"
+        ],
+        [
+          "Kullanılan telefon yaşı ile batarya ömrü",
+          "Negatif Korelasyon"
+        ],
+        [
+          "Ayakkabı numarası ile genel zekâ puanı",
+          "Sıfır Korelasyon (İlişkisiz)"
+        ],
+        [
+          "Alınan yol ile harcanan yakıt miktarı",
+          "Pozitif Korelasyon"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Serpilme diyagramı üzerine çizilen en uygun doğrusal model y = 2x + 10 olarak belirlenmiştir. Buna göre x = 20 birim olduğunda bu modele",
+      "secenekler": [
+        "30",
+        "40",
+        "50",
+        "60"
+      ],
+      "cevap": "C",
+      "dogru": 0
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "degerlendir",
+      "soru": "Boş bırakılan yere uygun kavramı yazınız.",
+      "cumleler": [
+        {
+          "metin": "İki nicel değişken arasında istatistiksel ilişkinin yüksek çıkması, aralarında doğrudan bir ___-sonuç bağı olduğunu kanıtlamaz.",
+          "cevap": "sebep"
+        }
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Serpilme diyagramında diğer noktalardan çok uzakta yer alan 'aykırı değer' (uç değer) bir veri noktasının bulunması",
+      "secenekler": [
+        "Korelasyon katsayısını yanıltıcı şekilde düşürebilir veya yapay olarak yükseltebilir",
+        "Korelasyon katsayısını kesinlikle her zaman tam 0 yapar",
+        "Grafiğin eksenlerini otomatik olarak yer değiştirir",
+        "İstatistiksel hesaplamalarda hiçbir değişiklik yaratmaz"
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "coktan",
+      "duzey": "degerlendir",
+      "soru": "Bir araştırmacı dondurma satışları ile boğulma vakaları arasında r = +0,82 gibi yüksek bir pozitif korelasyon bulmuştur. Bu ilişkinin",
+      "secenekler": [
+        "Her iki durumu da yaz aylarında artıran sıcak hava değişkeni",
+        "Dondurmanın insanları yüzmeye zorlaması",
+        "Deniz suyunun dondurma üretiminde kullanılması",
+        "Dondurma külahlarının suda çözünmemesi"
+      ],
+      "cevap": "A",
+      "dogru": 0
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "kavrama",
+      "gorsel_var": true,
+      "soru": "Boş bırakılan yere uygun kavramı yazınız.",
+      "cumleler": [
+        {
+          "metin": "İki nicel değişkenin değerlerinin kartezyen koordinat sisteminde noktalar hâlinde işaretlenmesiyle oluşturulan grafiğe ___ diyagramı denir.",
+          "cevap": "serpilme"
+        }
+      ]
+    },
+    {
+      "tur": "acik",
+      "duzey": "analiz",
+      "soru": "Korelasyon katsayısının (r) -0,88 çıkması iki değişken arasında nasıl bir ilişkiyi gösterir?",
+      "cevap": "Biri artarken diğerinin azaldığı güçlü ve ters yönlü."
+    }
+  ]
+}

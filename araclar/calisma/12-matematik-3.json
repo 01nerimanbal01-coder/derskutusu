@@ -1,0 +1,283 @@
+{
+  "sinif": 12,
+  "ders": "matematik",
+  "hafta": 3,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Logaritma Fonksiyonunun Özellikleri, Taban Değiştirme Kuralı ve Uygulamaları (12.1.2.3)",
+  "ciktilar": [
+    "12.1.2.3. Logaritma fonksiyonunun özelliklerini kullanarak işlemler yapar."
+  ],
+  "hatirla": [
+    "Herhangi bir a tabanında 1'in logaritması sıfırdır ({us:log|a} 1 = 0); tabanın kendisine göre logaritması 1'dir ({us:log|a} a = 1, log 10 = 1, ln e = 1).",
+    "Çarpımın logaritması toplamaya dönüşür: {us:log|a}(x · y) = {us:log|a} x + {us:log|a} y; bölümün logaritması farka dönüşür: {us:log|a}({kesir:x|y}) = {us:log|a} x - {us:log|a} y.",
+    "Kuvvet kuralı: {us:log|a}({us:x|n}) = n · {us:log|a} x ve {us:log|{us:a|m}}({us:x|n}) = {kesir:n|m} · {us:log|a} x."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki logaritma cebirsel özelliklerini sağdaki denk eşitlikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Çarpımın Logaritması",
+          "{us:log|a}(x · y) = {us:log|a} x + {us:log|a} y"
+        ],
+        [
+          "Bölümün Logaritması",
+          "{us:log|a}({kesir:x|y}) = {us:log|a} x - {us:log|a} y"
+        ],
+        [
+          "Taban Değiştirme",
+          "{us:log|a} b = {kesir:ln b|ln a}"
+        ],
+        [
+          "Kuvvet Kuralı",
+          "{us:log|a}({us:x|n}) = n · {us:log|a} x"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki logaritma zincir kuralı panosuna göre, {us:log|2} 3 · {us:log|3} 4 · {us:log|4} 8 çarpımının sayısal değeri kaçtır?",
+      "secenekler": [
+        "3",
+        "2",
+        "4",
+        "1"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki {us:log|2} 24 - {us:log|2} 3 işleminin sayısal sonucunu yazınız.",
+      "cevap": "{us:log|2}(24/3) = {us:log|2} 8 = 3 olarak bulunur.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki logaritma kurallarına göre yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Her pozitif a tabanında (a ≠ 1) log_a 1 değeri daima 0'a eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "log_a (x + y) ifadesi log_a x + log_a y ifadesine daima eşittir.",
+          "dogru": false
+        },
+        {
+          "metin": "ln e değeri doğal logaritma tabanında 1'e eşittir.",
+          "dogru": true
+        },
+        {
+          "metin": "log_a b ifadesi 1 / log_b a şeklinde ters çevrilebilir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Logaritmik ifadelerin tanımlılık durumlarını x değişkeninin aralığına göre tabloda işaretleyiniz.",
+      "satir_basliklari": [
+        "{us:log|2}(x - 3) ifadesi",
+        "{us:log|(x-2)}(5) ifadesi",
+        "{us:log|3}(6 - x) ifadesi",
+        "ln(x) ifadesi"
+      ],
+      "sutun_basliklari": [
+        "x > 3 Aralığında Tanımlı",
+        "x < 3 Aralığında da Tanımlı Olabilir"
+      ],
+      "matris": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ]
+      ],
+      "satirlar": [
+        [
+          "{us:log|2}(x - 3) ifadesi",
+          {
+            "b": "✓"
+          },
+          {
+            "b": "—"
+          }
+        ],
+        [
+          "{us:log|(x-2)}(5) ifadesi",
+          {
+            "b": "✓"
+          },
+          {
+            "b": "—"
+          }
+        ],
+        [
+          "{us:log|3}(6 - x) ifadesi",
+          {
+            "b": "—"
+          },
+          {
+            "b": "✓"
+          }
+        ],
+        [
+          "ln(x) ifadesi",
+          {
+            "b": "—"
+          },
+          {
+            "b": "✓"
+          }
+        ]
+      ],
+      "basliklar": [
+        "Özellik / Kriter",
+        "x > 3 Aralığında Tanımlı",
+        "x < 3 Aralığında da Tanımlı Olabilir"
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Görseldeki logaritmik değerleri küçükten büyüğe doğru 1'den 4'e kadar sıralayınız.",
+      "ogeler": [
+        "{us:log|2} 2 = 1",
+        "{us:log|2} 8 = 3",
+        "{us:log|2} 16 = 4",
+        "{us:log|2} 32 = 5"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki taban değiştirme kuralına göre, log 2 = x ve log 3 = y olduğuna göre {us:log|2} 3 ifadesinin x ve y türünden eşiti hangisidir?",
+      "secenekler": [
+        "{kesir:y|x}",
+        "{kesir:x|y}",
+        "x · y",
+        "x + y"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "soru": "Doğal logaritma fonksiyonunun tabanı olan ve yaklaşık 2,718 değerine sahip sayının simgesini yazınız.",
+      "cevap": "e sayısıdır (Euler sayısı).",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki üslü-logaritmik ifadeleri sayısal değerleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "{us:2|{us:log|2} 7}",
+          "Tabanlar aynı olduğundan sonuç 7'dir"
+        ],
+        [
+          "{us:e|ln 5}",
+          "Doğal taban sadeleştiğinde sonuç 5'tir"
+        ],
+        [
+          "{us:10|log 9}",
+          "Onluk taban sadeleştiğinde sonuç 9'dur"
+        ],
+        [
+          "{us:3|{us:log|3} 4}",
+          "Taban özelliği gereği sonuç 4'tür"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "analiz",
+      "soru": "Logaritmik fonksiyon işlemlerine dair yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "1'den büyük bir tam sayının onluk logaritmasının tam kısmına 1 eklenerek basamak sayısı bulunur.",
+          "dogru": true
+        },
+        {
+          "metin": "log(a / b) işlemi (log a) / (log b) bölüm işlemine eşdeğerdir.",
+          "dogru": false
+        },
+        {
+          "metin": "Tabanı 1'den büyük olan logaritma fonksiyonu artandır.",
+          "dogru": true
+        },
+        {
+          "metin": "Taban 0 ile 1 arasındayken x büyüdükçe logaritma değeri artar.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki logaritma ipuçlarından yararlanarak bulmacayı çözünüz. Turuncu anahtar kutulardaki harflerle şifrelenmiş logaritma bileşenini bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Logaritma fonksiyonunun varlık ve değer koşulu",
+          "cevap": "TANIM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Logaritma grafiğinin yaklaştığı ama değmediği sınır",
+          "cevap": "ASİMPTOT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Logaritmada farka dönüşen kesirli işlem",
+          "cevap": "BÖLÜM",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Taban 1'den büyükken fonksiyonun grafik eğilimi",
+          "cevap": "ARTAN",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Doğal logaritmanın mucidi İskoç matematikçi",
+          "cevap": "NEPER",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "TABAN"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "{us:log|a}(x·y) ifadesinin neden log_a x + log_a y biçiminde toplamaya dönüştüğünü üslü sayılar mantığıyla açıklayınız.",
+      "cevap": "Üslü sayılar çarpılırken üsler toplandığı için.",
+      "satir": 2
+    }
+  ]
+}

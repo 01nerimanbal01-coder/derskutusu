@@ -1,0 +1,284 @@
+{
+  "sinif": 12,
+  "ders": "fizik",
+  "hafta": 3,
+  "tarih": "28 Eylül - 2 Ekim 2026",
+  "yayin_tarihi": "2026-11-04",
+  "konu": "Dönerek Öteleme Hareketi, Eylemsizlik Momenti ve Dönme Kinetik Enerjisi (12.1.2.1-12.1.2.3)",
+  "ciktilar": [
+    "12.1.2.1. Dönerek öteleme hareketini analiz eder.",
+    "12.1.2.2. Eylemsizlik momenti kavramını açıklar.",
+    "12.1.2.3. Dönme ve dönerek öteleme hareketi yapan cismin kinetik enerjisinin bağlı olduğu değişkenleri açıklar."
+  ],
+  "hatirla": [
+    "Kaymadan yuvarlanan bir cisim hem dönme hem de öteleme hareketi yapar; kütle merkezinin hızı v = ω·r bağıntısıyla ifade edilir.",
+    "Dönme hareketine karşı gösterilen dönme direncinin ölçüsüne eylemsizlik momenti (I) denir; formülü I = k·m·r² olup kütle dağılımına ve dönme eksenine bağlıdır.",
+    "Dönerek ötelenen cismin toplam kinetik enerjisi öteleme ve dönme enerjilerinin toplamıdır: {us:E|top} = {kesir:1|2}m{us:v|2} + {kesir:1|2}I{us:ω|2}."
+  ],
+  "sorular": [
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki dönme dinamiklerine ait fiziksel büyüklükleri tanımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Eylemsizlik Momenti (I)",
+          "Cismin dönme hareketindeki açısal hız değişimine karşı gösterdiği direnç"
+        ],
+        [
+          "Öteleme Hızı (v)",
+          "Dönen cismin kütle merkezinin birim zamandaki doğrusal yer değiştirmesi"
+        ],
+        [
+          "Dönme Kinetik Enerjisi",
+          "{kesir:1|2}I{us:ω|2} bağıntısıyla hesaplanan dönme hareket enerjisi"
+        ],
+        [
+          "Yuvarlanma Hareketi",
+          "Kayma olmaksızın dönme ve ötelemenin eş zamanlı gerçekleştiği hareket"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki r yarıçaplı tekerlek kaymadan sabit v süratiyle yuvarlanmaktadır. Tekerleğin en üst noktasının yere göre anlık",
+      "secenekler": [
+        "2 v",
+        "1 v",
+        "0 v",
+        "3 v"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki eylemsizlik momenti I = 2 kg·m² olan tekerlek ω = 4 rad/s açısal hızla dönerken dönme kinetik enerjisi kaç Joule olur?",
+      "cevap": "E = {kesir:1|2}·I·ω² = {kesir:1|2}·2·16 = 16 Joule.",
+      "satir": 2
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki yuvarlanma dinamiklerine göre yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Kaymadan yuvarlanan cismin yerle temas ettiği anlık temas noktasının yere göre anlık hızı sıfırdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Eylemsizlik momenti yalnızca cismin toplam kütlesine bağlı olup dönme eksenine bağlı değildir.",
+          "dogru": false
+        },
+        {
+          "metin": "Kütlesi ve yarıçapı eşit olan kürenin eylemsizlik momenti, içi boş silindirden daha küçüktür.",
+          "dogru": true
+        },
+        {
+          "metin": "Dönerek öteleme yapan cismin toplam kinetik enerjisinde dönme enerjisi hesaba katılmaz.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "tablo",
+      "duzey": "analiz",
+      "soru": "Geometrik cisimlerin eylemsizlik momenti katsayılarını ve eğik düzlemdeki yarış üstünlüklerini tabloda işaretleyiniz.",
+      "satir_basliklari": [
+        "Dolu Küre (I = {kesir:2|5}m{us:r|2})",
+        "Dolu Silindir (I = {kesir:1|2}m{us:r|2})",
+        "İnce Halka (I = m{us:r|2})",
+        "Noktasal Parçacık (I = m{us:r|2})"
+      ],
+      "sutun_basliklari": [
+        "Eğik Düzlemde Daha Hızlı İner",
+        "Eğik Düzlemde Daha Yavaş İner"
+      ],
+      "matris": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ]
+      ],
+      "satirlar": [
+        [
+          "Dolu Küre (I = {kesir:2|5}m{us:r|2})",
+          {
+            "b": "✓"
+          },
+          {
+            "b": "—"
+          }
+        ],
+        [
+          "Dolu Silindir (I = {kesir:1|2}m{us:r|2})",
+          {
+            "b": "✓"
+          },
+          {
+            "b": "—"
+          }
+        ],
+        [
+          "İnce Halka (I = m{us:r|2})",
+          {
+            "b": "—"
+          },
+          {
+            "b": "✓"
+          }
+        ],
+        [
+          "Noktasal Parçacık (I = m{us:r|2})",
+          {
+            "b": "—"
+          },
+          {
+            "b": "✓"
+          }
+        ]
+      ],
+      "basliklar": [
+        "Özellik / Kriter",
+        "Eğik Düzlemde Daha Hızlı İner",
+        "Eğik Düzlemde Daha Yavaş İner"
+      ]
+    },
+    {
+      "tur": "siralama",
+      "duzey": "analiz",
+      "gorsel_var": true,
+      "soru": "Görseldeki eşit kütle ve yarıçaplı cisimleri, aynı eğik düzlemden serbest bırakıldıklarında alt uca ulaşma sürelerine göre",
+      "ogeler": [
+        "Dolu Küre (I = {kesir:2|5}mr²)",
+        "Dolu Silindir (I = {kesir:1|2}mr²)",
+        "İçi Boş Halka Silindir (I = mr²)"
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki yatay düzlemde kaymadan yuvarlanan m kütleli ve r yarıçaplı dolu silindirin (I = {kesir:1|2}m{us:r|2}) dönme kinetik enerjisinin",
+      "secenekler": [
+        "{kesir:1|2}",
+        "{kesir:1|4}",
+        "1",
+        "2"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "kisa",
+      "duzey": "hatirla",
+      "soru": "Dönme eksenine göre kütle dağılımına bağlı olan dönme direnci büyüklüğünün adını yazınız.",
+      "cevap": "Eylemsizlik momentidir.",
+      "satir": 2
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "uygula",
+      "gorsel_var": true,
+      "soru": "Görseldeki tekerlek noktalarını yere göre anlık hız büyüklükleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "En Üst Tepe Noktası",
+          "Yere göre anlık hızı 2v büyüklüğündedir"
+        ],
+        [
+          "Kütle Merkezi (Göbek)",
+          "Yere göre anlık hızı v büyüklüğündedir"
+        ],
+        [
+          "Zemine Değen Temas Noktası",
+          "Yere göre anlık hızı 0 (sıfır) büyüklüğündedir"
+        ],
+        [
+          "Ön Uç Çember Noktası",
+          "Yere göre anlık hızı {kok:2}v büyüklüğündedir"
+        ]
+      ]
+    },
+    {
+      "tur": "dy",
+      "duzey": "analiz",
+      "soru": "Dönme ve eylemsizlik dinamiklerine dair yargılardan doğru olanlara D, yanlış olanlara Y işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Buz pateni sporcusu kollarını kapattığında eylemsizlik momenti küçülür ve açısal hızı artar.",
+          "dogru": true
+        },
+        {
+          "metin": "Kaymadan yuvarlanan bir tekerleğe etki eden statik sürtünme kuvveti mekanik enerjiyi ısıya dönüştürür.",
+          "dogru": false
+        },
+        {
+          "metin": "Dönme kinetik enerjisi açısal hızın karesiyle doğru orantılıdır.",
+          "dogru": true
+        },
+        {
+          "metin": "Kütle merkezinden geçen eksene göre eylemsizlik momenti daima en küçük değerindedir.",
+          "dogru": true
+        }
+      ]
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "gorsel_var": true,
+      "soru": "Görseldeki dönme dinamiği ipuçlarından yararlanarak bulmacayı çözünüz. Turuncu anahtar kutulardaki harflerle şifrelenmiş kinematik hareketi bulunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Dönerek ötelenen yuvarlak dairesel gövde",
+          "cevap": "DİSK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kütle merkezinin doğrusal yönde ilerlemesi",
+          "cevap": "ÖTELEME",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Kuvvet ve tork birimi temel dayanağı",
+          "cevap": "NEWTON",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Dönme hareketine karşı direncin ölçüsü",
+          "cevap": "MOMENT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Cismin hareket ve dönme iş kapasitesi",
+          "cevap": "ENERJİ",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "DÖNME"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "soru": "Aynı eğik düzlemden kaymadan yuvarlanan dolu kürenin içi boş halkadan neden daha önce indiğini açıklayınız.",
+      "cevap": "Dolu kürenin eylemsizlik momenti küçüktür; enerjisi.",
+      "satir": 2
+    }
+  ]
+}
