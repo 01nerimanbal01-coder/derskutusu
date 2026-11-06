@@ -44,16 +44,16 @@
           <rect x="4" y="4" width="352" height="120" rx="16" fill="url(#mg-zemin)"/>
           <g transform="translate(28, 28)">
             <rect x="0" y="6" width="304" height="58" rx="11" fill="#BDD2F2"/>
-            <rect x="0" y="0" width="304" height="58" rx="11" fill="url(#mg-bos)" stroke="#B8CEEE" stroke-width="1.2"/>
+            <rect x="0" y="0" width="304" height="58" rx="11" fill="url(#mg-bos)"/>
             <rect x="4" y="4" width="35" height="50" rx="7" fill="url(#mg-dolu)"/>
             <rect x="41.5" y="4" width="35" height="50" rx="7" fill="url(#mg-dolu)"/>
             <rect x="79" y="4" width="35" height="50" rx="7" fill="url(#mg-dolu)"/>
             <rect x="116.5" y="4" width="35" height="50" rx="7" fill="url(#mg-dolu)"/>
             <rect x="154" y="4" width="35" height="50" rx="7" fill="url(#mg-dolu)"/>
-            <rect x="191.5" y="4" width="35" height="50" rx="7" fill="url(#mg-ek)" stroke="#CC5600" stroke-width="1" stroke-dasharray="3 2"/>
+            <rect x="191.5" y="4" width="35" height="50" rx="7" fill="url(#mg-ek)"/>
             <text x="209" y="34" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="800">+1</text>
-            <rect x="229" y="4" width="35" height="50" rx="7" fill="url(#mg-bos)" stroke="#CBD9EE"/>
-            <rect x="266.5" y="4" width="33.5" height="50" rx="7" fill="url(#mg-bos)" stroke="#CBD9EE"/>
+            <rect x="229" y="4" width="35" height="50" rx="7" fill="#DCE8F8"/>
+            <rect x="266.5" y="4" width="33.5" height="50" rx="7" fill="#DCE8F8"/>
           </g>
           <text x="180" y="109" text-anchor="middle" fill="#23406E" font-size="11" font-weight="700">8 eş parçadan 5 maviye 1 turuncu parça eklendi</text>
         </svg>`,
@@ -68,15 +68,16 @@
         soru: 'Aynı sıvıyla dolu kapta K ve L noktalarındaki sıvı basınçları nasıl sıralanır?',
         svg: `<svg viewBox="0 0 360 128" role="img" aria-label="Sıvı dolu dereceli kapta K ve L noktalarının derinlikleri">
           <defs>
-            <linearGradient id="fg-sivi" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#60A5FA" stop-opacity="0.65"/><stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.88"/></linearGradient>
+            <linearGradient id="fg-sivi" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#60A5FA" stop-opacity="0.72"/><stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.92"/></linearGradient>
           </defs>
           <rect x="4" y="4" width="352" height="120" rx="16" fill="#EEF8F4"/>
-          <rect x="112" y="16" width="136" height="96" rx="10" fill="#FFFFFF" stroke="#64748B" stroke-width="1.8"/>
+          <rect x="112" y="20" width="136" height="94" rx="12" fill="#CBE4DC" fill-opacity="0.65"/>
+          <rect x="112" y="16" width="136" height="96" rx="12" fill="#FFFFFF"/>
           <path d="M114 34 H246 V103 Q246 110 239 110 H121 Q114 110 114 103 Z" fill="url(#fg-sivi)"/>
           <ellipse cx="180" cy="34" rx="66" ry="5" fill="#93C5FD"/>
-          <circle cx="156" cy="56" r="5" fill="#FF7A00" stroke="#FFFFFF" stroke-width="1.5"/>
+          <circle cx="156" cy="56" r="5" fill="#FF7A00"/>
           <text x="170" y="60" fill="#FFFFFF" font-size="13" font-weight="800">K (10 cm)</text>
-          <circle cx="156" cy="94" r="5" fill="#FACC15" stroke="#FFFFFF" stroke-width="1.5"/>
+          <circle cx="156" cy="94" r="5" fill="#FACC15"/>
           <text x="170" y="98" fill="#FFFFFF" font-size="13" font-weight="800">L (30 cm)</text>
         </svg>`,
         siklar: ['K > L', 'L > K', 'K = L'],
@@ -90,7 +91,8 @@
         soru: 'Yukarıdaki dizelerde altı çizili ifadeyle hangi söz sanatı yapılmıştır?',
         svg: `<svg viewBox="0 0 360 128" role="img" aria-label="Şiir dizesi kartı">
           <rect x="4" y="4" width="352" height="120" rx="16" fill="#FFF7ED"/>
-          <rect x="26" y="20" width="308" height="88" rx="12" fill="#FFFFFF" stroke="#FCD34D" stroke-width="1.4"/>
+          <rect x="26" y="24" width="308" height="88" rx="12" fill="#FDE68A" fill-opacity="0.45"/>
+          <rect x="26" y="20" width="308" height="88" rx="12" fill="#FFFFFF"/>
           <text x="180" y="54" text-anchor="middle" fill="#0D244F" font-size="14" font-weight="700">“Rüzgâr bu sabah pencereme</text>
           <text x="180" y="78" text-anchor="middle" fill="#D97706" font-size="14.5" font-weight="800" text-decoration="underline">eski bir masalı fısıldadı.”</text>
         </svg>`,

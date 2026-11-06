@@ -2459,7 +2459,7 @@ if (typeof document !== 'undefined') {
             <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));gap:10px;">
               <label style="display:flex;flex-direction:column;gap:4px;font-size:12.5px;font-weight:700;">
                 Sınıf:
-                <select id="t-ig-sinif" style="height:38px;border-radius:10px;padding:0 8px;background:#1e293b;color:#fff;border:1px solid #334155;">
+                <select id="t-ig-sinif" style="height:38px;border-radius:10px;padding:0 8px;background:#1e293b;color:#fff;border:0;">
                   <option value="8" selected>8. Sınıf (LGS)</option>
                   <option value="5">5. Sınıf</option>
                   <option value="6">6. Sınıf</option>
@@ -2472,17 +2472,17 @@ if (typeof document !== 'undefined') {
               </label>
               <label style="display:flex;flex-direction:column;gap:4px;font-size:12.5px;font-weight:700;">
                 Ders:
-                <select id="t-ig-ders" style="height:38px;border-radius:10px;padding:0 8px;background:#1e293b;color:#fff;border:1px solid #334155;">
+                <select id="t-ig-ders" style="height:38px;border-radius:10px;padding:0 8px;background:#1e293b;color:#fff;border:0;">
                 </select>
               </label>
               <label style="display:flex;flex-direction:column;gap:4px;font-size:12.5px;font-weight:700;">
                 Hafta:
-                <select id="t-ig-hafta" style="height:38px;border-radius:10px;padding:0 8px;background:#1e293b;color:#fff;border:1px solid #334155;">
+                <select id="t-ig-hafta" style="height:38px;border-radius:10px;padding:0 8px;background:#1e293b;color:#fff;border:0;">
                   ${Array.from({ length: 16 }, (_, i) => `<option value="${i + 1}" ${i === 3 ? 'selected' : ''}>${i + 1}. Hafta</option>`).join('')}
                 </select>
               </label>
             </div>
-            <div style="border-radius:12px;overflow:hidden;background:#000;border:1px solid #334155;display:flex;justify-content:center;align-items:center;min-height:190px;max-height:220px;">
+            <div style="border-radius:12px;overflow:hidden;background:#090d16;border:0;display:flex;justify-content:center;align-items:center;min-height:190px;max-height:220px;">
               <img id="t-ig-onizleme-img" src="/sosyal/bilgi-8-matematik-4.png" alt="Önizleme" style="max-height:210px;width:auto;object-fit:contain;display:block;">
             </div>
             <div style="display:flex;flex-wrap:wrap;gap:8px;">

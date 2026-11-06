@@ -357,79 +357,48 @@ ortakVeri.then(({ ayar }) => {
   });
 })();
 
-// Reklam izni (kullanıcı 29.09.2026, 17.10.2026; 21.10.2026 "uygun olanı ayarla" → KVKK gereği 19.10'daki doğrudan yükleme
-// kaldırıldı): Google AdSense betiği yalnız ziyaretçi "Kabul et" deyince yüklenir; ret de saklanır, yeniden sorulmaz;
-// seçim gizlilik.html'den değiştirilir. Reklamlar kişiselleştirilmemiş istenir (requestNonPersonalizedAds = 1).
-// Tahta ve kitap görüntüleyicide betik hiç yüklenmez (kalem/tahta alanına reklam konmaz); izin yokken reklam alanları gizlidir.
+// Google AdSense ve Google sertifikalı Gizlilik ve Mesajlaşma (CMP / TCF v2.2 — kullanıcı 06.11.2026 kararı):
+// AdSense betiği (adsbygoogle.js) sayfa <head> bölümünde standart olarak yüklenir; kişiselleştirilmemiş reklam (requestNonPersonalizedAds = 1)
+// varsayılan olarak aktiftir. Çerez ve gizlilik rızası Google AdSense "Gizlilik ve mesajlaşma" (Google Funding Choices CMP) üzerinden yönetilir.
+// Tahta, belge görüntüleyici ve kelime/Arapça uygulama tuval sayfalarında AdSense betiği yüklenmez.
 (() => {
-  const ANAHTAR = 'dk-reklam', MUSTERI = 'ca-pub-6660544937586858';
-  const aracSayfasi = /^\/(tahta|goruntule)\.html$/.test(location.pathname);
-  const secim = () => { try { return localStorage.getItem(ANAHTAR); } catch { return null; } };
-  const kaydet = (d) => { try { d ? localStorage.setItem(ANAHTAR, d) : localStorage.removeItem(ANAHTAR); } catch {} };
-  let yuklendi = false;
-  const birimler = () => {   // slot kimliği olmayan alanda <ins> yoktur: açılmaz; dolmayan reklam (data-ad-status=unfilled) stil.css'te gizlenir
+  const aracSayfasi = /^\/(tahta|goruntule|ders-dagitim-uygulama|kelime|arapca|404|okul-bildir)\.html$/.test(location.pathname);
+  if (!aracSayfasi) {
+    (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
+  }
+  const birimler = () => {   // slot kimliği tanımlı <ins class="adsbygoogle"> birimlerini etkinleştirir; dolmayan birim gizlenir
     $$('aside.reklam').forEach((alan) => {
       const birim = $('ins.adsbygoogle', alan);
       if (!birim || birim.dataset.istendi) return;
       birim.dataset.istendi = '1';
-      alan.hidden = false;   // genişliği 0 olan alana reklam istenmez: önce görünür olur, sonra istenir
-      alan.style.display = birim.style.display = '';   // izin sonradan verildiyse gizle()'nin bıraktığı display:none kalkar
+      alan.hidden = false;
+      alan.style.display = birim.style.display = '';
       try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch { alan.hidden = true; return; }
-      // Boş alan kalmasın: Google dolmayan birime data-ad-status="unfilled" yazar (stil.css gizler); istek hiç yapılmazsa
-      // (engelleyici, ağ, onaysız site) 12 sn sonra alan yeniden gizlenir
       setTimeout(() => { if (!birim.getAttribute('data-ad-status') && !birim.querySelector('iframe')) alan.hidden = true; }, 12000);
     });
   };
-  const gizle = () => {
-    $$('aside.reklam, .google-auto-placed, ins.adsbygoogle').forEach((alan) => { alan.hidden = true; alan.style.display = 'none'; });
-  };
-  const yukle = () => {
-    if (aracSayfasi) return;
-    (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
-    if (!yuklendi) {
-      yuklendi = true;
-      if (!$('script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]')) {
-        document.head.append(el('script', { async: true, src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${MUSTERI}`, crossorigin: 'anonymous', onerror: gizle }));
-      }
-    }
-    birimler();
-  };
-  const durum = $('#reklam-durum');
-  const durumYaz = () => {
-    if (!durum) return;
-    const s = secim();
-    durum.textContent = s === 'evet' ? 'Seçiminiz: reklamlara izin verdiniz.'
-      : s === 'hayir' ? 'Seçiminiz: reklamları reddettiniz; reklam kodu yüklenmiyor.'
-      : 'Henüz seçim yapmadınız; reklam kodu yüklenmiyor.';
-  };
-  let pencere = null;
-  const sor = () => {
-    if (pencere || aracSayfasi) return;
-    const karar = (d) => { pencere.remove(); pencere = null; kaydet(d); if (d === 'evet') yukle(); else gizle(); durumYaz(); };
-    pencere = el('aside', { sinif: 'izin reklam-izin', role: 'dialog', 'aria-labelledby': 'reklam-izin-baslik', 'aria-describedby': 'reklam-izin-metin' },
-      el('h2', { id: 'reklam-izin-baslik' }, 'Reklam izni'),
-      el('p', { id: 'reklam-izin-metin' }, 'Siteyi ücretsiz tutmak için Google reklamları gösterebiliriz. Reklamlar kişiselleştirilmez. İzin verirseniz Google reklam çerezi kullanabilir. ',
-        el('a', { href: '/gizlilik.html' }, 'Ayrıntılar')),
-      el('div', { sinif: 'dugmeler' },
-        el('button', { sinif: 'dugme ana', type: 'button', onclick: () => karar('evet') }, 'Kabul et'),
-        el('button', { sinif: 'dugme', type: 'button', onclick: () => karar('hayir') }, 'Reddet')));
-    const atla = $('a.atla');   // sekme sırasında erken: klavyeyle hemen ulaşılır, odak zorla alınmaz
-    if (atla) atla.after(pencere); else document.body.prepend(pencere);
-  };
-  const s = secim();
-  if (s === 'evet') yukle();
-  else { gizle(); if (s !== 'hayir') sor(); }
+  if (!aracSayfasi) birimler();
 
-  // gizlilik.html: seçimi göster ve değiştir; Instagram (ve eski Facebook) iznini sıfırla
-  durumYaz();
-  $('#reklam-degistir')?.addEventListener('click', () => { kaydet(null); durumYaz(); sor(); });
+  // gizlilik.html: Google sertifikalı CMP (googlefc) çerez tercih ekranını yeniden açma ve yerel tercih sıfırlama
+  const durum = $('#reklam-durum');
+  if (durum) {
+    durum.textContent = 'Reklamlar kişiselleştirilmemiş olarak sunulur; çerez ve rıza tercihleriniz Google Gizlilik ve Mesajlaşma (CMP) aracılığıyla yönetilir.';
+  }
+  $('#reklam-degistir')?.addEventListener('click', () => {
+    if (window.googlefc && typeof window.googlefc.showRevocationMessage === 'function') {
+      window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
+      window.googlefc.callbackQueue.push(() => window.googlefc.showRevocationMessage());
+    } else if (durum) {
+      durum.textContent = 'Bölgeniz için etkin bir reklam çerezi izni kaydı bulunmuyor; tarayıcı çerez ayarlarınızdan çerezleri dilediğiniz zaman silebilirsiniz.';
+    }
+  });
   $('#sifirla')?.addEventListener('click', () => {
     try {
-      ['harici-ig', 'harici-fb', 'dk-ig-uyelik-v1'].forEach((a) => localStorage.removeItem(a));
+      ['harici-ig', 'harici-fb', 'dk-ig-uyelik-v1', 'dk-reklam'].forEach((a) => localStorage.removeItem(a));
       document.cookie = 'dk_ig_uye=; path=/; max-age=0; SameSite=Lax';
     } catch {}
     const d = $('#durum');
-    if (d) d.textContent = 'Instagram izni ve üyelik kaydı sıfırlandı.';
+    if (d) d.textContent = 'Tarayıcıdaki yerel tercih kayıtları sıfırlandı.';
   });
 })();
 
@@ -1087,18 +1056,16 @@ window.dkTamamlanan = dkTamamlanan;
     PROFIL_URL: 'https://www.instagram.com/derskutusuinfo/',
     APP_IOS_URL: 'instagram://user?username=derskutusuinfo',
     APP_ANDROID_INTENT: 'intent://instagram.com/_u/derskutusuinfo/#Intent;package=com.instagram.android;scheme=https;end',
-    BEGENI_SARTI: false, // İleride gönderi beğenisi de zorunlu yapılmak istenirse true yapılır
+    ADSENSE_ONAY_MODU: true, // 06.11.2026: AdSense onayı alınana kadar zorunlu tam ekran kilit ve tıklama engeli kapalıdır
+    BEGENI_SARTI: false,
     BEGENI_URL: 'https://www.instagram.com/derskutusuinfo/',
     MIN_TAKIP_SURE_MS: 6500,
     YENILEME_GUN: 7,
     ANAHTAR: 'dk-ig-uyelik-v1',
   };
 
-  const botMu = () => {
-    const ua = navigator.userAgent || '';
-    if (navigator.webdriver) return true;
-    return /bot|crawl|spider|slurp|mediapartners|adsbot|google|bing|yandex|duckduck|baidu|facebookexternalhit|lighthouse|headless|chrome-lighthouse|pageburst|prerender/i.test(ua);
-  };
+  // Bot ile gerçek ziyaretçi arasında içerik/erişim farkı (cloaking) uygulanmaz; herkese aynı deneyim sunulur.
+  const botMu = () => false;
 
   const mobilCihazTuru = () => {
     const ua = navigator.userAgent || '';
@@ -1149,7 +1116,7 @@ window.dkTamamlanan = dkTamamlanan;
       return { gecerli: false, mesaj: '⚠️ Geçersiz karakter! Instagram kullanıcı adları boşluk veya Türkçe karakter içermez (yalnız harf, rakam, nokta ve alt çizgi).' };
     }
     if (SAHTE_ADLAR.has(k) || /^(.)\1{2,}$/.test(k) || /^\d+$/.test(k)) {
-      return { gecerli: false, mesaj: `⚠️ Lütfen gerçek Instagram kullanıcı adınızı yazın (@${DK_IG_AYAR.HESAP} takipçi listesinden doğrulanmaktadır).` };
+      return { gecerli: false, mesaj: '⚠️ Lütfen geçerli bir Instagram kullanıcı adı yazın.' };
     }
     return { gecerli: true, temiz: k };
   };
@@ -1648,9 +1615,9 @@ window.dkTamamlanan = dkTamamlanan;
   };
   sayfaIciIgBannerEkle();
 
-  // Sol altta yüzen hızlı Instagram takip rozeti (kapatılabilir, reklam/tahta araçlarıyla çakışmaz)
+  // Sol altta yüzen hızlı Instagram takip rozeti (AdSense onay modunda kapalı; reklam/CMP alanlarıyla çakışmaz)
   const yuzenIgHapEkle = () => {
-    if (botMu() || yasalSayfaMi || /^\/(tahta|goruntule)\.html$/.test(location.pathname)) return;
+    if (DK_IG_AYAR.ADSENSE_ONAY_MODU || botMu() || yasalSayfaMi || /^\/(tahta|goruntule)\.html$/.test(location.pathname)) return;
     try { if (sessionStorage.getItem('dk-ig-hap-kapali') === '1') return; } catch {}
     if ($('.dk-ig-yuzen-hap')) return;
 
@@ -1721,14 +1688,14 @@ window.dkTamamlanan = dkTamamlanan;
   };
 
   document.addEventListener('click', (e) => {
-    if (!uyeMi()) return;
+    if (!DK_IG_AYAR.ADSENSE_ONAY_MODU && !uyeMi()) return;
     const indirOge = e.target.closest('a[download], a[href*=".pdf"], a[href*=".docx"], a[href*=".xlsx"], a[href*=".zip"], #p-indir button');
     if (indirOge) {
       setTimeout(indirmeIgBildirimiGoster, 400);
     }
   });
 
-  if (uyeMi() || botMu()) return;
+  if (DK_IG_AYAR.ADSENSE_ONAY_MODU || uyeMi() || botMu()) return;
 
   let modalEl = null;
   let bekleyenHedef = null;
@@ -1994,8 +1961,8 @@ window.dkTamamlanan = dkTamamlanan;
       }
       const girilen = dogrulama.temiz;
       onayDugme.disabled = true;
-      onayDugme.textContent = `🔄 @${girilen} takip durumu kontrol ediliyor...`;
-      durumGuncelle(`🔄 @${girilen} hesabının @${DK_IG_AYAR.HESAP} takipçi kaydı doğrulanıyor...`, 'bekliyor');
+      onayDugme.textContent = '🔄 Tercihiniz kaydediliyor...';
+      durumGuncelle('🔄 Tercihiniz tarayıcınıza kaydediliyor...', 'bekliyor');
 
       setTimeout(() => {
         uyeKaydet(girilen);

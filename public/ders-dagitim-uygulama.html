@@ -64,8 +64,8 @@ p{margin:0}
 .tab:focus-visible,.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.cellbtn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 main{padding-block:18px 56px}
 .stack{display:grid;gap:14px}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);min-width:0}
-.card.flat{box-shadow:none}
+.card{background:var(--surface);border:0;border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);min-width:0}
+.card.flat{background:var(--surface-2);box-shadow:none}
 .card-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
 .card-head h3{flex:1;min-width:0}
 .lead{color:var(--muted);font-size:14px}
@@ -74,15 +74,15 @@ main{padding-block:18px 56px}
 .row>.w-sm{flex:0 1 120px} .row>.w-md{flex:1 1 220px} .row>.w-lg{flex:2 1 300px} .row>.w-auto{flex:0 0 auto}
 .field{display:grid;gap:5px;min-width:0}
 .field>label,.lbl{font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
-input,select,textarea{font:inherit;font-size:15px;padding:8px 10px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--fg);min-height:40px;width:100%;max-width:100%}
+input,select,textarea{font:inherit;font-size:15px;padding:8px 10px;border:0;border-radius:8px;background:var(--surface-2);color:var(--fg);min-height:40px;width:100%;max-width:100%}
 input[type=checkbox]{width:18px;height:18px;min-height:0;margin:0;accent-color:var(--accent)}
 textarea{min-height:80px;resize:vertical}
 .check{display:flex;align-items:center;gap:8px;font-size:14px;padding:6px 0;cursor:pointer}
-.btn{font:inherit;font-weight:600;font-size:14px;border:1px solid var(--border);background:var(--surface);color:var(--fg);padding:9px 14px;border-radius:8px;cursor:pointer;min-height:40px;display:inline-flex;align-items:center;gap:7px;justify-content:center;white-space:nowrap}
-.btn:hover{background:var(--surface-2)}
-.btn-primary{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)} .btn-primary:hover{filter:brightness(1.08);background:var(--accent)}
-.btn-danger{color:var(--danger);border-color:var(--danger-soft)} .btn-danger:hover{background:var(--danger-soft)}
-.btn-ghost{border-color:transparent;background:transparent} .btn-ghost:hover{background:var(--surface-2)}
+.btn{font:inherit;font-weight:600;font-size:14px;border:0;background:var(--surface-2);color:var(--fg);padding:9px 14px;border-radius:8px;cursor:pointer;min-height:40px;display:inline-flex;align-items:center;gap:7px;justify-content:center;white-space:nowrap}
+.btn:hover{background:var(--surface-3)}
+.btn-primary{background:var(--accent);color:var(--accent-fg)} .btn-primary:hover{filter:brightness(1.08);background:var(--accent)}
+.btn-danger{color:var(--danger);background:var(--danger-soft)} .btn-danger:hover{filter:brightness(.96)}
+.btn-ghost{background:transparent} .btn-ghost:hover{background:var(--surface-2)}
 .btn-sm{padding:5px 10px;min-height:32px;font-size:13px}
 .btn[disabled]{opacity:.5;cursor:not-allowed}
 .btn svg{width:16px;height:16px;flex:none}
@@ -90,11 +90,11 @@ textarea{min-height:80px;resize:vertical}
 .badge{display:inline-flex;align-items:center;gap:4px;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
 .b-ok{background:var(--ok-soft);color:var(--ok)} .b-warn{background:var(--warn-soft);color:var(--warn)} .b-danger{background:var(--danger-soft);color:var(--danger)} .b-muted{background:var(--surface-2);color:var(--muted)} .b-accent{background:var(--accent-soft);color:var(--accent)}
 .list{display:grid;gap:10px}
-.item{border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);overflow:hidden}
+.item{border:0;border-radius:var(--radius);background:var(--surface);box-shadow:var(--shadow);overflow:hidden}
 .item-head{display:flex;align-items:center;gap:10px;padding:10px 12px;cursor:pointer;flex-wrap:wrap}
 .item-head .title{font-weight:600;flex:1 1 140px;min-width:0}
 .item-head .meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
-.item-body{padding:12px;border-top:1px solid var(--border);background:var(--bg)}
+.item-body{padding:12px;border-top:0;background:var(--bg)}
 .chev{width:18px;height:18px;color:var(--muted);transition:transform .15s;flex:none}
 .open .chev{transform:rotate(90deg)}
 @media (prefers-reduced-motion:reduce){.chev{transition:none}}
@@ -112,13 +112,13 @@ table{border-collapse:collapse;font-size:13.5px}
 .tt td.lesson{background:hsl(var(--h) var(--cs) var(--cl));color:var(--fg)}
 .tt td.lunch{border-top:2px dashed var(--accent-line)}
 .tt td.empty{background:var(--surface-2);color:var(--muted);text-align:center;font-size:11px}
-.tt td.off{background:transparent;border:1px dashed var(--border)}
+.tt td.off{background:transparent;border:0}
 .tt td.closed{background:repeating-linear-gradient(45deg,var(--surface-2) 0 6px,var(--surface-3) 6px 12px);color:var(--muted);text-align:center;font-size:11px;vertical-align:middle}
 .tt td.selcell{outline:2px solid var(--accent);outline-offset:-2px}
 .tray{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.chip{font:inherit;font-size:12.5px;font-weight:600;border:1px solid var(--danger);background:var(--danger-soft);color:var(--danger);border-radius:999px;padding:4px 10px;cursor:pointer}
+.chip{font:inherit;font-size:12.5px;font-weight:600;border:0;background:var(--danger-soft);color:var(--danger);border-radius:999px;padding:4px 10px;cursor:pointer}
 .chip.sel{outline:2px solid var(--accent)}
-.panel{border:1px solid var(--accent-line);background:var(--accent-soft);border-radius:var(--radius);padding:10px 12px;display:grid;gap:8px}
+.panel{border:0;background:var(--accent-soft);border-radius:var(--radius);padding:10px 12px;display:grid;gap:8px}
 .panel .t{font-weight:600}
 .tt td .s{font-weight:600;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tt td .t{color:var(--muted);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:11.5px}
@@ -136,7 +136,7 @@ table{border-collapse:collapse;font-size:13.5px}
 .avail td.av1{background:var(--warn-soft);color:var(--warn);font-weight:600} .avail td.av2{background:var(--danger-soft);color:var(--danger);font-weight:600} .avail td.na{background:transparent;cursor:default}
 .legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);align-items:center}
 .legend i{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:5px;background:var(--surface-2)}
-.legend i.av1{background:var(--warn-soft);border:1px solid var(--warn)} .legend i.av2{background:var(--danger-soft);border:1px solid var(--danger)}
+.legend i.av1{background:var(--warn-soft)} .legend i.av2{background:var(--danger-soft)}
 .notice{border-radius:var(--radius);padding:12px 14px;font-size:14px;display:flex;gap:10px;align-items:flex-start}
 .notice svg{width:18px;height:18px;flex:none;margin-top:1px}
 .n-warn{background:var(--warn-soft);color:var(--warn)} .n-danger{background:var(--danger-soft);color:var(--danger)} .n-ok{background:var(--ok-soft);color:var(--ok)} .n-info{background:var(--accent-soft);color:var(--accent)}
@@ -152,9 +152,9 @@ table{border-collapse:collapse;font-size:13.5px}
 .sev3{background:var(--danger)} .sev2{background:var(--warn)} .sev1{background:var(--accent-line)}
 .toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .toolbar select{width:auto;min-width:140px}
-.seg{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;flex-wrap:wrap}
-.seg button{font:inherit;font-size:13.5px;font-weight:600;background:var(--surface);border:0;color:var(--muted);padding:8px 12px;cursor:pointer;min-height:38px}
-.seg button.active{background:var(--accent-soft);color:var(--accent)}
+.seg{display:inline-flex;border:0;background:var(--surface-2);padding:3px;gap:3px;border-radius:10px;overflow:hidden;flex-wrap:wrap}
+.seg button{font:inherit;font-size:13.5px;font-weight:600;background:transparent;border:0;border-radius:7px;color:var(--muted);padding:7px 12px;cursor:pointer;min-height:36px}
+.seg button.active{background:var(--surface);color:var(--accent);box-shadow:0 1px 4px rgba(0,0,0,.08)}
 .toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:10px 16px;border-radius:999px;font-size:14px;font-weight:600;z-index:50;max-width:calc(100% - 32px);text-align:center;box-shadow:0 6px 24px rgba(0,0,0,.25)}
 .modal-bg{position:fixed;inset:0;background:rgba(10,14,20,.55);z-index:40;display:flex;align-items:center;justify-content:center;padding:16px}
 .modal{background:var(--surface);color:var(--fg);border-radius:14px;padding:20px;max-width:420px;width:100%;display:grid;gap:14px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
@@ -162,7 +162,7 @@ table{border-collapse:collapse;font-size:13.5px}
 .hint{font-size:12.5px;color:var(--muted)}
 .mono{font-variant-numeric:tabular-nums}
 .pill-list{display:flex;flex-wrap:wrap;gap:6px}
-.kbd{font-size:12px;background:var(--surface-2);border:1px solid var(--border);border-radius:5px;padding:1px 6px}
+.kbd{font-size:12px;background:var(--surface-2);border:0;border-radius:5px;padding:2px 6px}
 .ro-banner{background:var(--warn-soft);color:var(--warn);font-size:13px;padding:6px 0;text-align:center}
 .sr{position:absolute;left:-9999px}
 details.adv summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--accent);padding:6px 0}
@@ -173,22 +173,23 @@ details.adv summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--ac
 .tn-ozet{width:100%;border-collapse:collapse;font-size:13px}
 .tn-ozet th,.tn-ozet td{border-bottom:1px solid var(--border);padding:7px 8px;text-align:left;vertical-align:top}
 .tn-ozet th{font-size:12px;color:var(--muted);font-weight:600;white-space:nowrap}
-.tn-kart{border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);min-width:0}
+.tn-kart{border:0;border-radius:var(--radius);background:var(--surface);box-shadow:var(--shadow);min-width:0}
 .tn-kart>summary{cursor:pointer;padding:10px 12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;list-style:none}
 .tn-kart>summary::-webkit-details-marker{display:none}
 .tn-kart>summary::before{content:'▸';color:var(--muted);font-size:12px}
 .tn-kart[open]>summary::before{content:'▾'}
-.tn-kart[open]>summary{border-bottom:1px solid var(--border)}
+.tn-kart[open]>summary{border-bottom:0;background:var(--surface-2)}
 .tn-govde{padding:12px;display:grid;gap:10px;min-width:0}
 .tn-govde h4{margin:4px 0 0;font-size:13.5px;font-family:var(--font-display)}
 .tn-govde ul{margin:0;padding-left:18px;display:grid;gap:3px;font-size:13.5px}
-.tn-oneri{display:flex;gap:12px;align-items:center;justify-content:space-between;border:1px solid var(--border);border-radius:8px;padding:10px 12px;background:var(--bg)}
-.tn-oneri.tn-ana{border-color:var(--ok);background:var(--ok-soft)}
+.tn-oneri{display:flex;gap:12px;align-items:center;justify-content:space-between;border:0;border-radius:8px;padding:10px 12px;background:var(--surface-2)}
+.tn-oneri.tn-ana{background:var(--ok-soft)}
 .tn-oneri .btn{flex:none}
 .tn-k2{color:var(--muted);font-size:12.5px;margin-top:3px}
-.tn-tablo{border-collapse:collapse;font-size:12px;width:100%;min-width:520px}
-.tn-tablo th,.tn-tablo td{border:1px solid var(--border);padding:4px 6px;text-align:center;vertical-align:top}
-.tn-tablo td.tn-bos{background:transparent;border-style:dashed}
+.tn-tablo{border-collapse:separate;border-spacing:3px;font-size:12px;width:100%;min-width:520px}
+.tn-tablo th,.tn-tablo td{border:0;border-radius:6px;padding:5px 6px;text-align:center;vertical-align:top;background:var(--surface-2)}
+.tn-tablo th{background:transparent;color:var(--muted)}
+.tn-tablo td.tn-bos{background:transparent}
 .tn-tablo td .tn-i{display:block;font-weight:700;font-size:11px}
 .tn-tablo td .tn-k{display:block;color:var(--muted);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:120px}
 .tn-tablo td.tn-uygun,.tn-tablo td.tn-kaydir{cursor:pointer;outline:2px solid currentColor;outline-offset:-2px}
@@ -3037,7 +3038,7 @@ function exportXlsx() {
 }
 function exportHtml() {
   var view = getView(), m = view.model;
-  var css = 'body{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#111;margin:16px}h1{font-size:18px;margin:0 0 4px}h2{font-size:15px;margin:0 0 8px}table{border-collapse:collapse;width:100%;margin-bottom:18px;page-break-inside:avoid}th,td{border:1px solid #777;padding:4px 5px;vertical-align:top}th{background:#eee}.page{page-break-after:always}.sm{color:#444;font-size:11px}@media print{.page{page-break-after:always}}';
+  var css = 'body{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#0f172a;margin:16px}h1{font-size:18px;margin:0 0 4px}h2{font-size:15px;margin:0 0 8px}table{border-collapse:separate;border-spacing:3px;width:100%;margin-bottom:18px;page-break-inside:avoid}th,td{border:0;border-radius:5px;padding:6px 7px;vertical-align:top}th{background:#e8f0fe;color:#0f244f}tbody tr:nth-child(odd) td{background:#f8fafc}tbody tr:nth-child(even) td{background:#f1f5f9}.page{page-break-after:always}.sm{color:#475569;font-size:11px}@media print{.page{page-break-after:always}}';
   var title = esc(state.settings.schoolName || 'Okul') + ' · ' + esc(state.settings.year || '') + ' Haftalık Ders Programı';
   var out = '<!doctype html><html lang="tr"><head><meta charset="utf-8"><title>' + title + '</title><style>' + css + '</style></head><body><h1>' + title + '</h1><p class="sm">Oluşturma: ' + new Date(state.timetable.generatedAt).toLocaleString('tr-TR') + '</p>';
   function tbl(rows) { return '<table>' + rows.map(function (r, i) { return '<tr>' + r.map(function (c) { return (i === 0 ? '<th>' : '<td>') + esc(c).replace(' — ', '<br><span class="sm">') + (i > 0 && String(c).indexOf(' — ') >= 0 ? '</span>' : '') + (i === 0 ? '</th>' : '</td>'); }).join('') + '</tr>'; }).join('') + '</table>'; }
@@ -3128,9 +3129,10 @@ function pdfTeacherPage(doc, view, idx, codes) {
   doc.text('Eğitici Kolu(Kulüp) : ' + (t.club || ''), 118, y + 5);
   doc.text('Nöbet Günü ve Yeri : ' + (t.duty || ''), 118, y + 10);
   var head = [['Ders\nGün'].concat(Array.apply(null, Array(m.P)).map(function (_, p) { return periodHeadLabel(p); }))];
-  doc.autoTable({ startY: y + 14, head: head, body: dayCellsForTeacher(view, idx, codes), theme: 'grid',
-    styles: { font: 'LS', fontSize: 7.5, cellPadding: 1.2, halign: 'center', valign: 'middle', lineColor: [90, 90, 90], lineWidth: 0.2, minCellHeight: 11 },
-    headStyles: { fillColor: [230, 230, 230], textColor: 20, fontStyle: 'bold', fontSize: 6.5 },
+  doc.autoTable({ startY: y + 14, head: head, body: dayCellsForTeacher(view, idx, codes), theme: 'plain',
+    styles: { font: 'LS', fontSize: 7.5, cellPadding: 1.5, halign: 'center', valign: 'middle', lineWidth: 0, fillColor: [255, 255, 255], minCellHeight: 11 },
+    alternateRowStyles: { fillColor: [245, 248, 254] },
+    headStyles: { fillColor: [232, 240, 254], textColor: [15, 36, 79], fontStyle: 'bold', fontSize: 6.5, lineWidth: 0 },
     columnStyles: { 0: { halign: 'left', fontStyle: 'bold', cellWidth: 22 } }, margin: { left: 12, right: 12 } });
   var y2 = doc.lastAutoTable.finalY + 6;
   doc.setFontSize(8.5);
@@ -3157,10 +3159,11 @@ function pdfTeacherPage(doc, view, idx, codes) {
     n++; rows.push([n, L.room, L.cls, L.code, L.name].concat(L.perDay.map(function (x) { return x || ''; })).concat([L.total]));
     L.perDay.forEach(function (x, i) { totals[i] += x; }); grand += L.total;
   });
-  rows.push([{ content: 'Toplamlar', colSpan: 5, styles: { halign: 'right', fontStyle: 'bold' } }].concat(totals.map(function (x) { return { content: x || '', styles: { fontStyle: 'bold' } }; })).concat([{ content: grand, styles: { fontStyle: 'bold' } }]));
-  doc.autoTable({ startY: y2 + 18, head: [['S.No', 'Yer Adı', 'Sınıf', 'Ders', 'Ders Adı'].concat(dayShort).concat(['HS'])], body: rows, theme: 'grid',
-    styles: { font: 'LS', fontSize: 7, cellPadding: 1, lineColor: [120, 120, 120], lineWidth: 0.15, valign: 'middle' },
-    headStyles: { fillColor: [230, 230, 230], textColor: 20, fontStyle: 'bold', halign: 'center' },
+  rows.push([{ content: 'Toplamlar', colSpan: 5, styles: { halign: 'right', fontStyle: 'bold', fillColor: [238, 244, 252] } }].concat(totals.map(function (x) { return { content: x || '', styles: { fontStyle: 'bold', fillColor: [238, 244, 252] } }; })).concat([{ content: grand, styles: { fontStyle: 'bold', fillColor: [238, 244, 252] } }]));
+  doc.autoTable({ startY: y2 + 18, head: [['S.No', 'Yer Adı', 'Sınıf', 'Ders', 'Ders Adı'].concat(dayShort).concat(['HS'])], body: rows, theme: 'plain',
+    styles: { font: 'LS', fontSize: 7, cellPadding: 1.3, lineWidth: 0, fillColor: [255, 255, 255], valign: 'middle' },
+    alternateRowStyles: { fillColor: [245, 248, 254] },
+    headStyles: { fillColor: [232, 240, 254], textColor: [15, 36, 79], fontStyle: 'bold', halign: 'center', lineWidth: 0 },
     columnStyles: { 0: { cellWidth: 9, halign: 'center' }, 1: { cellWidth: 18 }, 2: { cellWidth: 11, halign: 'center' }, 3: { cellWidth: 14 }, 4: { cellWidth: 'auto' } }, margin: { left: 12, right: 12 } });
   Object.keys(lessons).length && (function () { var cs = {}; for (var i = 0; i < m.D + 1; i++) cs[5 + i] = { halign: 'center', cellWidth: 10 }; })();
 }
@@ -3176,7 +3179,7 @@ function pdfClassPage(doc, view, idx, codes) {
   for (var d = 0; d < m.D; d++) {
     var r = [m.dayNames[d]];
     for (var p = 0; p < m.P; p++) {
-      if (p >= cl.pd[d]) { r.push({ content: '', styles: { fillColor: [235, 235, 235] } }); continue; }
+      if (p >= cl.pd[d]) { r.push({ content: '', styles: { fillColor: [238, 242, 247] } }); continue; }
       var u = eng.cg[(idx * m.D + d) * m.P + p];
       if (u < 0) { r.push(''); continue; }
       var act = m.activities[eng.uAct[u]];
@@ -3187,9 +3190,10 @@ function pdfClassPage(doc, view, idx, codes) {
     rows.push(r);
   }
   var head = [['Ders\nGün'].concat(Array.apply(null, Array(m.P)).map(function (_, p) { return periodHeadLabel(p); }))];
-  doc.autoTable({ startY: y + 9, head: head, body: rows, theme: 'grid',
-    styles: { font: 'LS', fontSize: 7.5, cellPadding: 1.2, halign: 'center', valign: 'middle', lineColor: [90, 90, 90], lineWidth: 0.2, minCellHeight: 11 },
-    headStyles: { fillColor: [230, 230, 230], textColor: 20, fontStyle: 'bold', fontSize: 6.5 },
+  doc.autoTable({ startY: y + 9, head: head, body: rows, theme: 'plain',
+    styles: { font: 'LS', fontSize: 7.5, cellPadding: 1.5, halign: 'center', valign: 'middle', lineWidth: 0, fillColor: [255, 255, 255], minCellHeight: 11 },
+    alternateRowStyles: { fillColor: [245, 248, 254] },
+    headStyles: { fillColor: [232, 240, 254], textColor: [15, 36, 79], fontStyle: 'bold', fontSize: 6.5, lineWidth: 0 },
     columnStyles: { 0: { halign: 'left', fontStyle: 'bold', cellWidth: 22 } }, margin: { left: 12, right: 12 } });
   var y2 = doc.lastAutoTable.finalY + 6;
   var list = {}, n = 0, total = 0;
@@ -3202,9 +3206,11 @@ function pdfClassPage(doc, view, idx, codes) {
     list[k2].hours += eng.uSize[u2];
   }
   var rows2 = Object.keys(list).map(function (k) { return list[k]; }).sort(function (a, b) { return b.hours - a.hours || a.subj.localeCompare(b.subj, 'tr'); }).map(function (L) { n++; total += L.hours; return [n, L.code, L.subj, L.tn, L.hours]; });
-  rows2.push([{ content: 'Toplam', colSpan: 4, styles: { halign: 'right', fontStyle: 'bold' } }, { content: total, styles: { fontStyle: 'bold' } }]);
-  doc.autoTable({ startY: y2, head: [['S.No', 'Kod', 'Ders Adı', 'Öğretmen', 'Saat']], body: rows2, theme: 'grid',
-    styles: { font: 'LS', fontSize: 7.5, cellPadding: 1, lineColor: [120, 120, 120], lineWidth: 0.15 }, headStyles: { fillColor: [230, 230, 230], textColor: 20, fontStyle: 'bold' },
+  rows2.push([{ content: 'Toplam', colSpan: 4, styles: { halign: 'right', fontStyle: 'bold', fillColor: [238, 244, 252] } }, { content: total, styles: { fontStyle: 'bold', fillColor: [238, 244, 252] } }]);
+  doc.autoTable({ startY: y2, head: [['S.No', 'Kod', 'Ders Adı', 'Öğretmen', 'Saat']], body: rows2, theme: 'plain',
+    styles: { font: 'LS', fontSize: 7.5, cellPadding: 1.3, lineWidth: 0, fillColor: [255, 255, 255] },
+    alternateRowStyles: { fillColor: [245, 248, 254] },
+    headStyles: { fillColor: [232, 240, 254], textColor: [15, 36, 79], fontStyle: 'bold', lineWidth: 0 },
     columnStyles: { 0: { cellWidth: 10, halign: 'center' }, 1: { cellWidth: 16 }, 4: { cellWidth: 12, halign: 'center' } }, margin: { left: 12, right: 12 } });
 }
 function pdfMaster(doc, view, kind, detailed, codes) {
@@ -3219,7 +3225,7 @@ function pdfMaster(doc, view, kind, detailed, codes) {
     var r = [kind === 'class' ? ent.name : (ent.name + (ent.branch ? '\n(' + ent.branch + ')' : ''))];
     for (var d2 = 0; d2 < m.D; d2++) for (var p2 = 0; p2 < m.periodsByDay[d2]; p2++) {
       var u = kind === 'class' ? eng.cg[(ent.idx * m.D + d2) * m.P + p2] : eng.tg[(ent.idx * m.D + d2) * m.P + p2];
-      if (u < 0) { r.push(kind === 'class' && p2 >= ent.pd[d2] ? { content: '', styles: { fillColor: [235, 235, 235] } } : ''); continue; }
+      if (u < 0) { r.push(kind === 'class' && p2 >= ent.pd[d2] ? { content: '', styles: { fillColor: [238, 242, 247] } } : ''); continue; }
       var act = m.activities[eng.uAct[u]];
       if (kind === 'class') {
         var mem = act.members.filter(function (x) { return x.classIdx === ent.idx; });
@@ -3235,9 +3241,10 @@ function pdfMaster(doc, view, kind, detailed, codes) {
   });
   var fs = detailed ? 5.2 : 5.8;
   var availH = doc.internal.pageSize.getHeight() - y - 14, rowH = Math.min(8, Math.max(detailed ? 5.2 : 3.8, availH / Math.max(1, rows.length)));
-  doc.autoTable({ startY: y, head: [head1, head2], body: rows, theme: 'grid',
-    styles: { font: 'LS', fontSize: fs, cellPadding: 0.5, halign: 'center', valign: 'middle', lineColor: [110, 110, 110], lineWidth: 0.12, overflow: 'visible', minCellHeight: rowH },
-    headStyles: { fillColor: [230, 230, 230], textColor: 20, fontStyle: 'bold', fontSize: 6, minCellHeight: 4 },
+  doc.autoTable({ startY: y, head: [head1, head2], body: rows, theme: 'plain',
+    styles: { font: 'LS', fontSize: fs, cellPadding: 0.7, halign: 'center', valign: 'middle', lineWidth: 0, fillColor: [255, 255, 255], overflow: 'visible', minCellHeight: rowH },
+    alternateRowStyles: { fillColor: [245, 248, 254] },
+    headStyles: { fillColor: [232, 240, 254], textColor: [15, 36, 79], fontStyle: 'bold', fontSize: 6, minCellHeight: 4, lineWidth: 0 },
     columnStyles: { 0: { halign: 'left', fontStyle: 'bold', cellWidth: kind === 'class' ? 12 : 30, fontSize: kind === 'class' ? 6 : 5.4, overflow: 'linebreak' } },
     margin: { left: 6, right: 6, top: 10, bottom: 8 }, showHead: 'everyPage',
     didDrawPage: function () { doc.setFontSize(6); doc.setFont('LS', 'normal'); doc.text((s.schoolName || '') + ' — ' + (kind === 'class' ? 'Sınıf' : 'Öğretmen') + ' çarşaf programı' + (detailed ? ' (detaylı)' : ''), 6, doc.internal.pageSize.getHeight() - 4); } });
@@ -3276,8 +3283,8 @@ function taniArayuz() {
     ogretmenSiniri: { sinif: 'tn-sinir',   renk: 'var(--warn)',   zemin: 'var(--surface-2)',   isaret: 'SN',  aciklama: 'Öğretmenin günlük / art arda ders sınırı aşılıyor.' },
     derslik:        { sinif: 'tn-derslik', renk: 'var(--warn)',   zemin: 'var(--surface-2)',   isaret: 'D',   aciklama: 'Derslik dolu.' }
   };
-  var CSS = '.tn-tablo{border-collapse:collapse;font-size:12px;width:100%}.tn-tablo th,.tn-tablo td{border:1px solid var(--border);padding:4px 6px;text-align:center;vertical-align:top}' +
-    '.tn-tablo td.tn-bos{background:transparent;border-style:dashed}.tn-tablo td .tn-i{display:block;font-weight:700;font-size:11px}.tn-tablo td .tn-k{display:block;color:var(--muted);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:120px}' +
+  var CSS = '.tn-tablo{border-collapse:separate;border-spacing:3px;font-size:12px;width:100%}.tn-tablo th,.tn-tablo td{border:0;border-radius:6px;padding:5px 6px;text-align:center;vertical-align:top;background:var(--surface-2)}.tn-tablo th{background:transparent;color:var(--muted)}' +
+    '.tn-tablo td.tn-bos{background:transparent}.tn-tablo td .tn-i{display:block;font-weight:700;font-size:11px}.tn-tablo td .tn-k{display:block;color:var(--muted);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:120px}' +
     '.tn-tablo td.tn-uygun,.tn-tablo td.tn-kaydir{cursor:pointer}.tn-lejant{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:12px;margin:8px 0}.tn-lejant i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-2px}';
 
   /* Hücre görünümü: renk birincil nedene göre; kısa yazı "kim" sorusunu cevaplar */
@@ -3312,7 +3319,7 @@ function taniArayuz() {
       html += '</tr>';
     }
     html += '</tbody></table>';
-    var lejant = ['uygun', 'kaydirilabilir', 'ogretmenYok', 'ogretmenDolu', 'sinifDolu', 'ayniGun', 'blokSigmaz'].map(function (k) { var g = GORUNUM[k]; return '<span><i style="background:' + g.zemin + ';border:1px solid ' + g.renk + '"></i>' + esc(g.isaret + ' = ' + g.aciklama) + '</span>'; }).join('');
+    var lejant = ['uygun', 'kaydirilabilir', 'ogretmenYok', 'ogretmenDolu', 'sinifDolu', 'ayniGun', 'blokSigmaz'].map(function (k) { var g = GORUNUM[k]; return '<span><i style="background:' + g.zemin + '"></i>' + esc(g.isaret + ' = ' + g.aciklama) + '</span>'; }).join('');
     return html + '<div class="tn-lejant">' + lejant + '</div>';
   }
 

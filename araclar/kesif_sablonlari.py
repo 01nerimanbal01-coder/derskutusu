@@ -1,9 +1,9 @@
 """Keşif sayfalarının ortak görünümü; içerik kaynaklarını değiştirmez."""
 import re
 
-CSS = '<link rel="stylesheet" href="/kesif.css?v=20261105-1">'
+CSS = '<link rel="stylesheet" href="/kesif.css?v=20261106-1">'
 JS = '<script src="/kesif.js?v=20261029-2"></script>'
-RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261104-7" media="screen">'
+RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261106-1" media="screen">'
 
 
 def renkli_sayfa(html, ad):
@@ -15,6 +15,10 @@ def renkli_sayfa(html, ad):
         'arapca.html': 'lacivert', 'kpss.html': 'sari',
         'tahta.html': 'yesil', 'goruntule.html': 'yesil',
         'ogrenci.html': 'mavi', 'ogretmen.html': 'yesil',
+        'sinif-5.html': 'mor', 'sinif-6.html': 'yesil',
+        'sinif-7.html': 'turuncu', 'sinif-8.html': 'mavi',
+        'sinif-9.html': 'pembe', 'sinif-10.html': 'sari',
+        'sinif-11.html': 'turkuaz', 'sinif-12.html': 'lacivert',
     }.get(ad, 'mor' if ad.startswith('ozet/') else 'yesil' if ad.startswith('calisma/') else 'mavi')
     html = re.sub(r'(<body\b[^>]*?)\sdata-site-renk="[^"]*"', r'\1', html, count=1)
     html = re.sub(r'<body\b', f'<body data-site-renk="{renk}"', html, count=1)
@@ -39,8 +43,15 @@ def kutuphane_govde(govde):
     govde = govde.replace('<p class="sonuc-bilgi">', '<div class="kesif-result-toolbar"><p class="sonuc-bilgi">')
     govde = govde.replace('Seçimleri temizle</button></p>', '''Seçimleri temizle</button></p>
       <div class="kesif-toolbar-sag"><div class="gorunum-secici" id="gorunum-secici" role="group" aria-label="Görünüm biçimi"><button type="button" class="gorunum-dugme" data-gorunum="kart" aria-pressed="true" title="Kart görünümü">⊞ Kart</button><button type="button" class="gorunum-dugme" data-gorunum="liste" aria-pressed="false" title="Kompakt liste görünümü">☰ Liste</button></div><label class="kesif-sort">Sıralama<select id="s-sirala"><option value="yeni">Son eklenen</option><option value="baslik">Başlık A–Z</option><option value="sinif">Sınıf sırası</option></select></label></div></div>''')
-    govde = govde.replace('<div class="kartlar" id="kartlar"></div>', '''<div class="kartlar" id="kartlar"></div>
+    if '<!-- KARTLAR_SONU -->' in govde:
+        govde = govde.replace('<!-- KARTLAR_SONU -->', '''
+      <div class="kesif-more" id="daha-alani" hidden><p id="gosterilen-sayi" role="status"></p><button class="dugme" type="button" id="daha-goster">Daha fazla kaynak göster ↓</button></div>''', 1)
+    else:
+        govde = govde.replace('<div class="kartlar" id="kartlar"></div>', '''<div class="kartlar" id="kartlar"></div>
       <div class="kesif-more" id="daha-alani" hidden><p id="gosterilen-sayi" role="status"></p><button class="dugme" type="button" id="daha-goster">Daha fazla kaynak göster ↓</button></div>''')
+    if '<!-- KUTUPHANE_BOLUM_SONU -->' in govde:
+        govde = govde.replace('<!-- KUTUPHANE_BOLUM_SONU -->', '      </div>\n      </div>', 1)
+        return govde
     left, sep, right = govde.rpartition('    </div>\n  </section>')
     if not sep:
         raise ValueError('Kütüphane kapanış yapısı değişmiş')
@@ -48,7 +59,9 @@ def kutuphane_govde(govde):
 
 
 def kesif_sayfa(html, ad):
-    if ad not in ('index.html', 'sinif.html', 'icerikler.html', 'ogrenci.html', 'ogretmen.html'):
+    kesif_set = {'index.html', 'sinif.html', 'icerikler.html', 'ogrenci.html', 'ogretmen.html',
+                 *(f'sinif-{s}.html' for s in range(5, 13))}
+    if ad not in kesif_set:
         return renkli_sayfa(html, ad)
     if 'kesif.css?' not in html:
         html = html.replace('</head>', CSS + '\n</head>')

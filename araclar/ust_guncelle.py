@@ -5,7 +5,7 @@ sayfanın kitlesini (body data-kitle) ve öğrenci dalı konum çubuğunu uygula
 sayfa_uret.py / ozet_uret.py'nin ürettiği sayfalara da zararsızdır (aynı sonucu verir)."""
 import re
 from pathlib import Path
-from sayfa_uret import kitle_bul, PUBLIC, BETIK_SURUMLERI, SURUM, AGAC_CSS
+from sayfa_uret import kitle_bul, PUBLIC, BETIK_SURUMLERI, SURUM, AGAC_CSS, ADSENSE_HARIC, ADSENSE_UST_KOD
 from kesif_sablonlari import CSS as KESIF_CSS, RENK_CSS
 
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
@@ -17,7 +17,9 @@ ALT_BILGI = re.sub(r'href="#', 'href="/#', re.sub(r'href="([a-z0-9-]+\.html)', r
 ALT_SOSYAL = re.search(r'<div class="alt-sosyal">.*?</div>', ana, re.S).group(0)
 SURUMLER = [('stil.css', SURUM), ('kpss.css', SURUM), ('arapca.css', SURUM), ('tahta.js', BETIK_SURUMLERI['tahta.js']), ('kutuphane.js', BETIK_SURUMLERI['kutuphane.js']), ('asds.js', BETIK_SURUMLERI['asds.js']),
             *((d, re.search(r'v=([\w-]+)', s).group(1)) for d, s in (('kesif.css', KESIF_CSS), ('renkler.css', RENK_CSS), ('agac.css', AGAC_CSS)))]
+NPA_ETIKETI = re.compile(r'<script>\(window\.adsbygoogle=window\.adsbygoogle\|\|\[\]\)\.requestNonPersonalizedAds=1;</script>\n?')
 REKLAM_ETIKETI = re.compile(r'<script async src="https://pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js\?client=[\w-]+" crossorigin="anonymous"></script>\n?')
+ADSENSE_META = '<meta name="google-adsense-account" content="ca-pub-6660544937586858">\n'
 YOL = re.compile(r'<a href="/sinif\.html\?no=(\d+)">(\d+)\. sınıf</a><span aria-hidden="true">/</span><a href="/icerikler\.html\?sinif=(\d+)&amp;ders=([a-z-]+)">')
 
 
@@ -33,8 +35,14 @@ def guncelle(yol):
     k = kitle_bul(ad)
     if k and 'data-kitle=' not in t:
         t = re.sub(r'<body\b', f'<body data-kitle="{k}"', t, count=1)
-    # 21.10.2026 (KVKK): AdSense betiği sayfaya gömülmez, yalnız izin verilince ortak.js yükler; 19.10'da eklenen etiket silinir
+    # 06.11.2026: Standart AdSense doğrulama ve Google sertifikalı TCF v2.2 CMP uyumu (araç/noindex sayfaları hariç)
+    t = NPA_ETIKETI.sub('', t)
     t = REKLAM_ETIKETI.sub('', t)
+    if ad not in ADSENSE_HARIC and 'content="noindex"' not in t:
+        if ADSENSE_META in t:
+            t = t.replace(ADSENSE_META, ADSENSE_META + ADSENSE_UST_KOD, 1)
+        elif '</head>' in t:
+            t = t.replace('</head>', ADSENSE_META + ADSENSE_UST_KOD + '</head>', 1)
     t = re.sub(r'(/?ortak\.js)\?v=[\w-]+', rf'\1?v={BETIK_SURUMLERI["ortak.js"]}', t)
     for dosya, surum in SURUMLER:   # ortak stil ve betik sürümleri tek yerden (sayfa_uret / kesif_sablonlari); önbellekteki eski kopya kalmaz
         t = re.sub(rf'(/?{re.escape(dosya)})\?v=[\w-]+', rf'\1?v={surum}', t)

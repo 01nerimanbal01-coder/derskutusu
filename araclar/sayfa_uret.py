@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261104-2', 'belgeler.js': '20261104-3', 'planlar.js': '20261105-1', 'agac.js': '20261104-3', 'yazili.js': '20261010-1', 'ortak.js': '20261104-7', 'tahta.js': '20261104-2', 'etkinlik.js': '20261017-9', 'arama.js': '20261104-2', 'kutuphane.js': '20261104-2', 'kelime.js': '20261104-2', 'arapca.js': '20261104-2', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261104-3', 'asds.js': '20261104-7'}
+BETIK_SURUMLERI = {'goruntule.js': '20261104-2', 'belgeler.js': '20261104-3', 'planlar.js': '20261105-1', 'agac.js': '20261104-3', 'yazili.js': '20261010-1', 'ortak.js': '20261106-1', 'tahta.js': '20261106-1', 'etkinlik.js': '20261017-9', 'arama.js': '20261104-2', 'kutuphane.js': '20261104-2', 'kelime.js': '20261104-2', 'arapca.js': '20261104-2', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261104-3', 'asds.js': '20261104-7'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -27,9 +27,10 @@ SAYAC = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://s
 
 
 # Site ağacı (kullanıcı 11.10.2026): her sayfa kendi dalının kitlesini taşır (üst menü vurgusu, kayan şerit süzgeci).
-KITLE_OGRENCI = ('ogrenci.html', 'kelime.html', 'arapca.html', 'sinav.html')
+SINIF_DIZIN_SAYFALARI = tuple(f'sinif-{s}.html' for s in range(5, 13))
+KITLE_OGRENCI = ('ogrenci.html', 'kelime.html', 'arapca.html', 'sinav.html', *SINIF_DIZIN_SAYFALARI)
 KITLE_OGRETMEN = ('ogretmen.html', 'planlar.html', 'yazili.html', 'belgeler.html', 'kpss.html', 'ders-dagitim.html')
-AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261106-1">'
+AGAC_CSS = '<link rel="stylesheet" href="/agac.css?v=20261106-2">'
 
 
 def kitle_bul(ad):
@@ -54,7 +55,18 @@ def kitle_ekle(html, ad):
 # alan boş ve gizli kalır. Kimlik gelince buraya yazılır, ozet_uret.py + ust_guncelle.py yeniden çalıştırılır.
 REKLAM_MUSTERI = 'ca-pub-6660544937586858'
 REKLAM_SLOTLAR = {'ana': '', 'ozet': ''}   # 'ana': "Ders Kutusu – sayfa altı" (index, öğrenci, öğretmen, içerikler); 'ozet': "Ders Kutusu – özet altı"
-REKLAM_SAYFALARI = {'index.html': 'ana', 'ogrenci.html': 'ana', 'ogretmen.html': 'ana', 'icerikler.html': 'ana'}
+REKLAM_SAYFALARI = {'index.html': 'ana', 'ogrenci.html': 'ana', 'ogretmen.html': 'ana', 'icerikler.html': 'ana',
+                    **{ad: 'ana' for ad in SINIF_DIZIN_SAYFALARI}}
+# Etkileşimli araç, indirme, arama ve hata sayfalarına AdSense betiği konmaz; yalnız editoryal içerik ve dizin sayfalarında yer alır.
+ADSENSE_HARIC = {
+    'tahta.html', 'goruntule.html', 'ders-dagitim.html', 'ders-dagitim-uygulama.html',
+    'planlar.html', 'yazili.html', 'kelime.html', 'arapca.html',
+    '404.html', 'okul-bildir.html', 'ara.html', 'sinif.html',
+}
+ADSENSE_UST_KOD = (
+    '<script>(window.adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=1;</script>\n'
+    f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={REKLAM_MUSTERI}" crossorigin="anonymous"></script>\n'
+)
 
 
 def reklam_yeri(ad):
@@ -121,7 +133,8 @@ def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True, sema_ek=None):
            f'<meta property="og:url" content="https://derskutusu.com/{ad}">\n') if kanonik else '<meta name="robots" content="noindex">\n'
     og_tip = 'article' if ad.startswith('ozet/') else 'website'
     sema = sema_olustur(ad, baslik, aciklama, sema_ek) if kanonik else ''
-    js =''.join(f'<script src="/{b}?v={BETIK_SURUMLERI.get(b, SURUM)}"></script>\n' for b in ('ortak.js', *betikler, 'arama.js', 'tahta.js'))
+    adsense_ust = ADSENSE_UST_KOD if (kanonik and ad not in ADSENSE_HARIC) else ''
+    js = ''.join(f'<script src="/{b}?v={BETIK_SURUMLERI.get(b, SURUM)}"></script>\n' for b in ('ortak.js', *betikler, 'arama.js', 'tahta.js'))
     if ad == 'icerikler.html':
         govde = kutuphane_govde(govde)
     html = f'''<!doctype html>
@@ -134,7 +147,7 @@ def sayfa(ad, baslik, aciklama, govde, betikler=(), kanonik=True, sema_ek=None):
 {kan}<meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#2451d6">
 <meta name="google-adsense-account" content="ca-pub-6660544937586858">
-<link rel="icon" href="/favicon.ico" sizes="any">
+{adsense_ust}<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -175,6 +188,239 @@ YAKINDA = '''      <div class="yakinda" id="icerik-yakinda" hidden>
         </div>
         <a class="dugme ana" data-sosyal="youtube" target="_blank" rel="noopener" hidden><svg><use href="#s-youtube"/></svg>Abone ol</a>
       </div>'''
+
+def _metin_bicimle(metin):
+    """JSON başlık/açıklamalarındaki {us:..}, {alt:..}, {ar:..}, {koyu:..} sembollerini güvenli HTML'e çevirir."""
+    import html as _h
+    s = _h.escape(str(metin or ''))
+    s = re.sub(r'\{us:([^{}|]*)\|([^{}]+)\}', lambda m: f'{m[1]}<sup>{m[2]}</sup>', s)
+    s = re.sub(r'\{alt:([^{}|]*)\|([^{}]+)\}', lambda m: f'{m[1]}<sub>{m[2]}</sub>' if m[2] else f'<sub>{m[1]}</sub>', s)
+    s = re.sub(r'\{ar:([^{}]+)\}', r'<bdi lang="ar" dir="rtl">\1</bdi>', s)
+    s = re.sub(r'\{koyu:([^{}]+)\}', r'<b>\1</b>', s)
+    s = re.sub(r'\{(?:vurgu|egik|i):([^{}]+)\}', r'<em>\1</em>', s)
+    return s
+
+
+def _sinif_dizin_seridi(aktif=None):
+    etiketler = {
+        5: '5. Sınıf Konu Dizini', 6: '6. Sınıf Konu Dizini',
+        7: '7. Sınıf Konu Dizini', 8: '8. Sınıf · LGS Konu Dizini',
+        9: '9. Sınıf Konu Dizini', 10: '10. Sınıf Konu Dizini',
+        11: '11. Sınıf Konu Dizini', 12: '12. Sınıf · YKS Konu Dizini',
+    }
+    baglar = ''.join(
+        f'<a href="/sinif-{s}.html"' + (' aria-current="page"' if s == aktif else '') + f'>{etiketler[s]}</a>'
+        for s in range(5, 13)
+    )
+    return f'<nav class="sinif-dizin-serit" aria-label="Sınıf ders ve konu dizinleri"><strong>Sınıf Konu ve Çalışma Kâğıdı Dizinleri:</strong>{baglar}</nav>'
+
+
+def _kutuphane_onizleme_kartlari():
+    import html as _h
+    import json as _j
+    ic = _j.loads((PUBLIC / 'veri' / 'icerikler.json').read_text(encoding='utf-8')).get('icerikler', [])
+    secilen = []
+    for s in range(5, 13):
+        ozetler = [x for x in ic if x.get('sinif') == s and x.get('tur') == 'Konu anlatımı' and x.get('goruntule')]
+        calismalar = [x for x in ic if x.get('sinif') == s and x.get('tur') == 'Çalışma kâğıdı' and x.get('goruntule')]
+        secilen.extend(ozetler[:2])
+        secilen.extend(calismalar[:1])
+    kartlar = []
+    for x in secilen:
+        adres = '/' + str(x['goruntule']).lstrip('/')
+        kartlar.append(
+            f'<article class="kart">'
+            f'<p class="ust-baslik">{_h.escape(str(x.get("tur", "")))} · {x.get("sinif")}. Sınıf</p>'
+            f'<h3><a href="{_h.escape(adres, quote=True)}">{_metin_bicimle(x.get("baslik", ""))}</a></h3>'
+            f'<p>{_metin_bicimle(x.get("aciklama", ""))}</p>'
+            f'</article>'
+        )
+    return '\n        '.join(kartlar)
+
+
+def _belgeler_govde():
+    import html as _h
+    import json as _j
+    veri = _j.loads((PUBLIC / 'veri' / 'belgeler.json').read_text(encoding='utf-8'))
+    gruplar = veri.get('gruplar', [])
+    gecis = ''.join(f'<a href="#{_h.escape(g["kimlik"], quote=True)}">{_h.escape(g["ad"])}</a>' for g in gruplar)
+    bolumler = []
+    for idx, g in enumerate(gruplar):
+        kartlar = []
+        for b in g.get('belgeler', []):
+            hedef = b.get('goruntule') or b.get('dosya') or b.get('baglanti') or ''
+            if hedef and not hedef.startswith(('http://', 'https://', '/')):
+                hedef = '/' + hedef
+            dis = hedef.startswith(('http://', 'https://'))
+            ek_attr = ' target="_blank" rel="noopener"' if dis else ''
+            kaynak = _h.escape(b.get('kaynak', 'MEB'))
+            kartlar.append(
+                f'<article class="kart">'
+                f'<p class="ust-baslik">{kaynak}</p>'
+                f'<h3><a href="{_h.escape(hedef, quote=True)}"{ek_attr}>{_metin_bicimle(b.get("baslik", ""))}</a></h3>'
+                f'<p>{_metin_bicimle(b.get("aciklama", ""))}</p>'
+                f'</article>'
+            )
+        zemin = ' koyu-zemin' if idx % 2 else ''
+        bolumler.append(
+            f'  <section class="bolum{zemin}" id="{_h.escape(g["kimlik"], quote=True)}">\n'
+            f'    <div class="kap">\n'
+            f'      <div class="bolum-bas"><div><h2>{_h.escape(g["ad"])}</h2><p>{_h.escape(g.get("aciklama", ""))}</p></div></div>\n'
+            f'      <div class="kartlar">{"".join(kartlar)}</div>\n'
+            f'    </div>\n'
+            f'  </section>'
+        )
+    rehber = (
+        '  <section class="bolum">\n'
+        '    <div class="kap">\n'
+        '      <div class="statik-rehber">\n'
+        '        <h2>Resmî Eğitim Belgeleri Nasıl Kullanılır?</h2>\n'
+        '        <p>Millî Eğitim Bakanlığı (MEB), Talim ve Terbiye Kurulu Başkanlığı, Ölçme, Değerlendirme ve Sınav Hizmetleri Genel Müdürlüğü (ÖDSGM), Din Öğretimi Genel Müdürlüğü (DÖGM) ve ÖSYM tarafından yayımlanan öğretim programları, çerçeve yıllık planlar, ders kitapları ve ortak yazılı konu-soru dağılım tabloları okul içi akademik planlamanın temel dayanağıdır. Ders Kutusu bu sayfada öğretmenlerin, zümre başkanlarının ve öğrencilerin ihtiyaç duyduğu güncel mevzuat ve program belgelerini tek bir düzenli dizinde bir araya getirir.</p>\n'
+        '        <p>Türkiye Yüzyılı Maarif Modeli kapsamında güncellenen ders öğretim programlarını incelerken öğrenme çıktıları, süreç bileşenleri, içerik çerçevesi ve ölçme-değerlendirme açıklamaları birlikte değerlendirilmelidir. Zümre toplantılarında ortak yazılı senaryosu seçerken ilgili dönemin ÖDSGM konu-soru dağılım tablosu esas alınır; günlük ve yıllık ders planları ise çerçeve planlardaki hafta dağılımıyla eşleştirilir. Doğrudan sınıf ve ders bazlı özgün konu anlatımlarımıza ulaşmak için aşağıdaki sınıf dizinlerini kullanabilirsiniz.</p>\n'
+        '      </div>\n'
+        f'      {_sinif_dizin_seridi()}\n'
+        '    </div>\n'
+        '  </section>'
+    )
+    return (
+        '  <section class="sayfa-bas">\n'
+        '    <div class="kap">\n'
+        '      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>Resmî belgeler</span></nav>\n'
+        '      <h1>Resmî belgeler ve öğretim programları</h1>\n'
+        '      <p>MEB, ÖDSGM, DÖGM ve ÖSYM’nin yayımladığı öğretim programları, kılavuzlar, ortak yazılı tabloları ve ders kitapları tek yerde. Bağlantılar resmî kaynaklarıyla birlikte güncel sürümüyle sunulur.</p>\n'
+        f'      <nav class="sinif-gecis" id="grup-gecis" aria-label="Belge grupları">{gecis}</nav>\n'
+        '    </div>\n'
+        '  </section>\n'
+        f'  <div id="belge-gruplari">\n{chr(10).join(bolumler)}\n  </div>\n'
+        f'{rehber}'
+    )
+
+
+SINIF_REHBER_METINLERI = {
+    5: (
+        '5. Sınıf Konu Anlatımları ve Çalışma Kâğıtları Dizini',
+        '5. sınıf Türkçe, Matematik, Fen Bilimleri, Sosyal Bilgiler, İngilizce, Din Kültürü ve seçmeli dersler için hafta hafta özgün konu anlatımları ve PDF çalışma kâğıtları.',
+        'Ortaokula geçişin ilk basamağı olan 5. sınıf, Türkiye Yüzyılı Maarif Modeli (TYMM) kapsamında öğrencilerin temel kavramları görsel modellerle, günlük yaşam bağlamlarıyla ve sorgulayıcı etkinliklerle öğrendiği kritik bir dönemdir. Türkçe dersinde dinleme ve okuma stratejileri ile bağlamdan söz varlığı geliştirme; Matematik dersinde temel geometrik çizimler, açılar, doğal sayılar ve kesir modelleri; Fen Bilimleri dersinde Güneş, Dünya ve Ay sistemi, kuvvetin ölçülmesi ve canlılar dünyası; Sosyal Bilgiler dersinde ise birlikte yaşama kültürü, hak-sorumluluk bilinci ve coğrafi farkındalık öne çıkar. Aşağıdaki dizinde 5. sınıfa ait tüm zorunlu ve seçmeli derslerin 37 haftalık konu anlatımlarını ve yazdırılabilir PDF çalışma kâğıtlarını hafta sırasıyla doğrudan açabilirsiniz.',
+    ),
+    6: (
+        '6. Sınıf Konu Anlatımları ve Çalışma Kâğıtları Dizini',
+        '6. sınıf tüm dersler için MEB yıllık plan sırasıyla hazırlanmış haftalık konu özetleri, çözümlü örnekler, etkileşimli etkinlikler ve PDF çalışma kâğıtları.',
+        '6. sınıf programı, ortaokulun temel akademik becerilerini soyut düşünme ve analitik problem çözme basamağına taşır. Matematikte çarpanlar-katlar, bölünebilme kuralları, kesirlerle işlemler, ondalık gösterim ve cebirsel ifadelerin temeli atılırken; Fen Bilimleri dersinde Güneş sistemi ve tutulmalar, insan vücudundaki sistemler, kuvvet-hareket ve madde-ısı konuları deneysel gözlemlerle işlenir. Türkçe dersinde metin türleri, anlam ilişkileri ve dil yapıları derinleşir; Sosyal Bilgiler ve İngilizce derslerinde ise tarihsel süreklilik ile günlük iletişim kalıpları pekiştirilir. Bu sayfada 6. sınıf derslerinin tamamı için hazırlanan özgün haftalık konu anlatımlarına ve cevaplı/cevapsız çalışma kâğıtlarına tek tıklamayla ulaşabilirsiniz.',
+    ),
+    7: (
+        '7. Sınıf Konu Anlatımları ve Çalışma Kâğıtları Dizini',
+        '7. sınıf Türkçe, Matematik, Fen Bilimleri, Sosyal Bilgiler, İngilizce ve Din Kültürü haftalık konu anlatımları, çözümlü sorular ve PDF çalışma kâğıtları.',
+        '7. sınıf, hem ortaokul müfredatının en yoğun kavramsal konularını barındıran hem de 8. sınıftaki LGS hazırlığının sağlam temelini oluşturan kilit bir öğretim yılıdır. Matematik dersinde tam sayılarla işlemler, rasyonel sayılar, doğrusal denklemler, oran-orantı, yüzdeler ve çember-daire konuları doğrudan üst kademe sayısal muhakemenin omurgasını kurar. Fen Bilimleri dersinde uzay araştırmaları, hücre ve bölünmeler, kuvvet-iş-enerji ilişkisi, saf maddeler ve ışık üniteleri; Türkçe dersinde fiiller, zarflar, paragraf yorumu ve anlatım bozuklukları; Sosyal Bilgiler dersinde ise iletişim, Osmanlı kültür mirası, nüfus ve ekonomi konuları ayrıntılı olarak ele alınır. Aşağıdaki ders listelerinden her haftanın ders özetini ve çalışma föyünü doğrudan inceleyebilirsiniz.',
+    ),
+    8: (
+        '8. Sınıf · LGS Konu Anlatımları ve Çalışma Kâğıtları Dizini',
+        '8. sınıf ve LGS hazırlık için Matematik, Türkçe, Fen Bilimleri, T.C. İnkılap Tarihi, İngilizce ve Din Kültürü haftalık konu anlatımları ile PDF çalışma kâğıtları.',
+        '8. sınıf, ortaokul öğreniminin tamamlandığı ve Liselere Geçiş Sistemi (LGS) merkezî sınavına hazırlığın sistemli biçimde yürütüldüğü dönüm noktasıdır. Sınavda ve okul yazılılarında başarı; ezberlenmiş formüller yerine kavramların neden-sonuç ilişkisiyle anlaşılmasına, grafik-tablo okuma becerisine ve bağlam temelli soruların doğru analiz edilmesine dayanır. Matematikte çarpanlar-katlar, üslü ve kareköklü ifadeler, veri analizi, olasılık, cebirsel ifadeler, doğrusal denklemler ve eşitsizlikler; Fen Bilimlerinde mevsimler-iklim, DNA ve genetik kod, basınç, madde ve endüstri ile basit makineler; Türkçede fiilimsiler, cümlenin ögeleri ve sözel mantık; T.C. İnkılap Tarihi, İngilizce ve Din Kültüründe ise ünite kazanımlarının tamamı aşağıdaki hafta hafta konu özetleri ve çalışma kâğıtlarıyla eksiksiz kapsanır.',
+    ),
+    9: (
+        '9. Sınıf Lise Konu Anlatımları ve Çalışma Kâğıtları Dizini',
+        '9. sınıf Türk Dili ve Edebiyatı, Matematik, Fizik, Kimya, Biyoloji, Tarih, Coğrafya, İngilizce ve Din Kültürü haftalık konu anlatımları dizini.',
+        'Liseye başlangıç yılı olan 9. sınıf, Türkiye Yüzyılı Maarif Modeli ortaöğretim programlarıyla disiplinler arası bilimsel düşünme, akademik okuryazarlık ve TYT temelinin kurulduğu evredir. Ortaokul fen bilimleri bu sınıfta Fizik, Kimya ve Biyoloji olarak üç bağımsız laboratuvar bilimine ayrılır; Sosyal Bilgiler birikimi ise Tarih ve Coğrafya derslerinde birincil kaynak analizi ve mekânsal sentez becerisine dönüşür. Türk Dili ve Edebiyatı dersinde edebî metin çözümlemesi ve yazma süreci; Matematik dersinde gerçek sayılar, nicelikler ve değişimler, algoritmik düşünme ve üçgen geometrisi öne çıkar. Aşağıdaki tam dizinden 9. sınıfın bütün ortak ve seçmeli ders özetlerine doğrudan erişebilirsiniz.',
+    ),
+    10: (
+        '10. Sınıf Lise Konu Anlatımları ve Çalışma Kâğıtları Dizini',
+        '10. sınıf tüm lise dersleri için MEB yıllık planına uyumlu haftalık konu anlatımları, çözümlü örnekler ve etkileşimli etkinlikler dizini.',
+        '10. sınıf, lise müfredatının derinleştiği ve Yükseköğretim Kurumları Sınavı (YKS) Temel Yeterlilik Testi (TYT) konularının büyük bölümünün tamamlandığı kritik bir yıldır. Bu sınıfta programa ilk kez katılan Felsefe dersi öğrencilere kavram analizi, argüman kurma ve eleştirel sorgulama perspektifi kazandırır. Matematikte sayma-olasılık, fonksiyonlar, polinomlar, ikinci dereceden denklemler ve dörtgenler-katı cisimler; Fizikte elektrik-manyetizma, basınç-kaldırma kuvveti, dalgalar ve optik; Kimyada kimyanın temel kanunları, mol kavramı, karışımlar ve asitler-bazlar; Biyolojide hücre bölünmeleri, kalıtım ve ekosistem ekolojisi; Edebiyat, Tarih ve Coğrafyada ise dönem ve mekân analizleri hafta hafta özgün anlatımlarla sunulur.',
+    ),
+    11: (
+        '11. Sınıf AYT ve Lise Konu Anlatımları Dizini',
+        '11. sınıf Matematik, Fizik, Kimya, Biyoloji, Türk Dili ve Edebiyatı, Tarih, Coğrafya, Felsefe ve seçmeli dersler haftalık konu anlatımları.',
+        '11. sınıf, öğrencilerin ilgi ve hedefledikleri yükseköğretim alanlarına göre akademik uzmanlaşmaya geçtiği ve YKS Alan Yeterlilik Testleri (AYT) konularının omurgasını oluşturan öğretim yılıdır. Matematikte trigonometri, analitik geometri, fonksiyonlarda uygulamalar, denklem sistemleri ve çember-daire; Fizikte vektörler, bağıl hareket, Newton’un hareket yasaları, iş-güç-enerji, itme-momentum ve elektrik-manyetizma; Kimyada modern atom teorisi, gazlar, sıvı çözeltiler, kimyasal tepkimelerde enerji-hız-denge; Biyolojide insan fizyolojisi ve komünite-popülasyon ekolojisi; Türk Dili ve Edebiyatı, Tarih, Coğrafya ve Felsefede ise analitik dönem incelemeleri aşağıdaki haftalık konu anlatımlarında adım adım çözümlü örneklerle işlenir.',
+    ),
+    12: (
+        '12. Sınıf · YKS (TYT · AYT) Konu Anlatımları Dizini',
+        '12. sınıf ve YKS hazırlık için Matematik, Fizik, Kimya, Biyoloji, Edebiyat, T.C. İnkılap Tarihi, Coğrafya, İngilizce ve Din Kültürü haftalık konu anlatımları.',
+        '12. sınıf, ortaöğretim sürecinin tamamlandığı ve üniversiteye geçiş sınavı YKS (TYT, AYT ve YDT) hazırlığının ileri düzey konularla bütünleştiği son kademedir. Matematikte üstel ve logaritmik fonksiyonlar, diziler, trigonometri dönüşümleri, limit-süreklilik, türev ve integral; Fizikte çembersel hareket, basit harmonik hareket, dalga mekaniği, atom fiziği ve modern fizik; Kimyada kimya ve elektrik, karbon kimyasına giriş ve organik bileşikler; Biyolojide genden proteine, canlılarda enerji dönüşümleri ve bitki biyolojisi; Türk Dili ve Edebiyatı, T.C. İnkılap Tarihi ve Atatürkçülük ile Coğrafya derslerinde ise cumhuriyet dönemi birikimi ve küresel ortam konuları aşağıdaki dizinde hafta sırasıyla yer alır.',
+    ),
+}
+
+
+def _sinif_dizin_govde(sinif_no):
+    import html as _h
+    import json as _j
+    ders_veri = _j.loads((PUBLIC / 'veri' / 'dersler.json').read_text(encoding='utf-8'))
+    ic_veri = _j.loads((PUBLIC / 'veri' / 'icerikler.json').read_text(encoding='utf-8')).get('icerikler', [])
+    ders_adlari = ders_veri.get('dersler', {})
+    ortak_kodlar = list(ders_veri.get('siniflar', {}).get(str(sinif_no), []))
+    secmeli_kodlar = list(ders_veri.get('secmeli', {}).get(str(sinif_no), []))
+    sirali_kodlar = []
+    for k in ortak_kodlar + secmeli_kodlar:
+        if k not in sirali_kodlar:
+            sirali_kodlar.append(k)
+    for x in ic_veri:
+        if x.get('sinif') == sinif_no and x.get('ders') and x['ders'] not in sirali_kodlar:
+            sirali_kodlar.append(x['ders'])
+
+    baslik, _, rehber_p = SINIF_REHBER_METINLERI[sinif_no]
+    ders_kartlari = []
+    gecis_baglari = []
+    toplam_ozet = 0
+    toplam_calisma = 0
+
+    for dk in sirali_kodlar:
+        ozetler = sorted(
+            [x for x in ic_veri if x.get('sinif') == sinif_no and x.get('ders') == dk and x.get('tur') == 'Konu anlatımı' and x.get('goruntule')],
+            key=lambda i: (int(i.get('hafta') or 999), str(i.get('baslik') or '')),
+        )
+        calismalar = sorted(
+            [x for x in ic_veri if x.get('sinif') == sinif_no and x.get('ders') == dk and x.get('tur') == 'Çalışma kâğıdı' and x.get('goruntule')],
+            key=lambda i: (int(i.get('hafta') or 999), str(i.get('baslik') or '')),
+        )
+        if not ozetler and not calismalar:
+            continue
+        toplam_ozet += len(ozetler)
+        toplam_calisma += len(calismalar)
+        ad = _h.escape(ders_adlari.get(dk, dk))
+        bolum_id = f'dizin-{dk}'
+        gecis_baglari.append(f'<a href="#{_h.escape(bolum_id, quote=True)}">{ad}</a>')
+
+        ozet_li = ''.join(
+            f'<li><a href="/{_h.escape(str(x["goruntule"]).lstrip("/"), quote=True)}">{_metin_bicimle(x.get("baslik", ""))}</a></li>'
+            for x in ozetler
+        )
+        calisma_blok = ''
+        if calismalar:
+            cal_li = ''.join(
+                f'<li><a href="/{_h.escape(str(x["goruntule"]).lstrip("/"), quote=True)}">{_metin_bicimle(x.get("baslik", ""))}</a></li>'
+                for x in calismalar
+            )
+            calisma_blok = f'<p class="sinif-dizin-altgrup">{ad} Çalışma Kâğıtları (PDF ve Çözümlü Föy)</p><ul class="sinif-dizin-liste">{cal_li}</ul>'
+
+        sayac_metin = f'{len(ozetler)} haftalık konu anlatımı' + (f' · {len(calismalar)} çalışma kâğıdı' if calismalar else '')
+        ders_kartlari.append(
+            f'        <article class="sinif-dizin-ders" id="{_h.escape(bolum_id, quote=True)}">\n'
+            f'          <h2>{sinif_no}. Sınıf {ad}</h2>\n'
+            f'          <p>{sayac_metin} · <a href="/ogrenci.html?sinif={sinif_no}&amp;ders={_h.escape(dk, quote=True)}">Ünite ağacında aç</a> · <a href="/planlar.html?sinif={sinif_no}">Günlük/yıllık plan</a></p>\n'
+            f'          <ul class="sinif-dizin-liste">{ozet_li}</ul>\n'
+            f'          {calisma_blok}\n'
+            f'        </article>'
+        )
+
+    return (
+        '  <section class="sayfa-bas">\n'
+        '    <div class="kap">\n'
+        f'      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><a href="/ogrenci.html">Öğrenci</a><span aria-hidden="true">/</span><span>{sinif_no}. Sınıf Konu Dizini</span></nav>\n'
+        f'      <h1>{_h.escape(baslik)}</h1>\n'
+        f'      <p>{_h.escape(rehber_p)}</p>\n'
+        f'      <p><strong>Toplam içerik:</strong> {toplam_ozet} özgün haftalık konu anlatımı ve etkileşimli etkinlik sayfası'
+        + (f', {toplam_calisma} yazdırılabilir çalışma kâğıdı.' if toplam_calisma else '.')
+        + f' Ayrıca <a href="/ogrenci.html?sinif={sinif_no}">{sinif_no}. sınıf etkileşimli ünite gezgini</a>, <a href="/yazili.html?sinif={sinif_no}">{sinif_no}. sınıf ortak yazılı senaryoları</a> ve <a href="/planlar.html?sinif={sinif_no}">{sinif_no}. sınıf günlük ders planları</a> sayfalarını kullanabilirsiniz.</p>\n'
+        f'      {_sinif_dizin_seridi(aktif=sinif_no)}\n'
+        f'      <nav class="sinif-gecis" aria-label="{sinif_no}. sınıf dersleri">{"".join(gecis_baglari)}</nav>\n'
+        '    </div>\n'
+        '  </section>\n'
+        '  <section class="bolum">\n'
+        '    <div class="kap">\n'
+        f'      <div class="sinif-dizin-grid">\n{chr(10).join(ders_kartlari)}\n      </div>\n'
+        '    </div>\n'
+        '  </section>\n' + SOSYAL_DAVET
+    )
+
 
 GOVDE = {
     'sinif.html': ('Sınıf', '5-12. sınıf dersleri için konu anlatımları, soru çözümleri ve öğretmen dosyaları.', '''  <section class="sayfa-bas">
@@ -222,11 +468,13 @@ GOVDE = {
       </form>
       <div class="secili-suzgecler" id="secili-suzgecler" role="group" aria-label="Seçili süzgeçler" hidden></div>
       <p class="sonuc-bilgi"><span id="sonuc-sayi" role="status" aria-live="polite" aria-atomic="true"></span><button type="button" id="temizle" hidden>Seçimleri temizle</button></p>
-      <div class="kartlar" id="kartlar"></div>
+      <div class="kartlar" id="kartlar">
+        {_kutuphane_onizleme_kartlari()}
+      </div><!-- KARTLAR_SONU -->
       <div class="yakinda" id="icerik-yakinda" hidden>
         <div class="yakinda-simge" aria-hidden="true"><svg><use href="#s-kitap"/></svg></div>
         <div>
-          <h3 id="sonucsuz-baslik">Bu seçimde henüz içerik yok</h3>
+          <h3 id="sonucsuz-baslik">Filtrelere uygun kaynak seçimi</h3>
           <p id="sonucsuz-aciklama">Başka bir sınıf, ders veya tür seçebilirsiniz.</p>
           <div class="sonucsuz-eylemler">
             <button class="dugme ana" type="button" id="aramayi-temizle" hidden>Yalnız aramayı temizle</button>
@@ -234,17 +482,20 @@ GOVDE = {
           </div>
         </div>
       </div>
-    </div>
-  </section>''', ('kutuphane.js',)),
-    'belgeler.html': ('Resmî belgeler', 'MEB, ÖDSGM, DÖGM ve ÖSYM resmî belgeleri: öğretim programları, kılavuzlar, ortak yazılı tabloları, LGS ve YKS.', '''  <section class="sayfa-bas">
-    <div class="kap">
-      <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>Resmî belgeler</span></nav>
-      <h1>Resmî belgeler</h1>
-      <p>MEB, ÖDSGM, DÖGM ve ÖSYM’nin yayımladığı belgeler tek yerde. Bağlantılar doğrudan resmî kaynaklara gider; dosyalar her zaman güncel sürümüyle açılır.</p>
-      <nav class="sinif-gecis" id="grup-gecis" aria-label="Belge grupları"></nav>
+      <!-- KUTUPHANE_BOLUM_SONU -->
     </div>
   </section>
-  <div id="belge-gruplari"></div>''', ('belgeler.js',)),
+  <section class="bolum koyu-zemin">
+    <div class="kap">
+      <div class="statik-rehber">
+        <h2>Ders Kutusu Kaynak Kütüphanesi Nasıl Düzenlenmiştir?</h2>
+        <p>Kaynak kütüphanemiz; 5, 6, 7 ve 8. sınıf ortaokul kademesi ile 9, 10, 11 ve 12. sınıf lise kademesindeki tüm zorunlu ve seçmeli dersleri tek bir arama çatısı altında toplar. Kütüphanede yer alan 2.800’ü aşkın eğitim materyali; Türkiye Yüzyılı Maarif Modeli (TYMM) öğretim programlarına ve Millî Eğitim Bakanlığı çerçeve yıllık planlarına göre hafta hafta sınıflandırılmıştır. Öğrenciler okulda işledikleri haftanın konu anlatımını sesli özet, görsel şema, çözümlü örnek ve anında dönüt veren etkileşimli etkinliklerle tekrar edebilir; ardından aynı konunun cevapsız ve cevaplı PDF çalışma kâğıdını indirerek yazılıya ve merkezî sınavlara hazırlanabilir.</p>
+        <p>Öğretmenler ise kütüphane süzgeçlerinden hedef kitleyi “Öğretmen” olarak seçerek okul ve yönetici adlarıyla kişiselleştirilebilen günlük ders planlarına, yıllık çerçeve planlara, ÖDSGM ortak yazılı konu-soru dağılım senaryolarına ve resmî öğretim programlarına doğrudan ulaşabilir. Aşağıdaki sınıf dizinlerinden dilediğiniz sınıfın tüm ders ve hafta bağlantılarını tek sayfada görüntüleyebilirsiniz.</p>
+      </div>
+      {_sinif_dizin_seridi()}
+    </div>
+  </section>''', ('kutuphane.js',)),
+    'belgeler.html': ('Resmî belgeler', 'MEB, ÖDSGM, DÖGM ve ÖSYM resmî belgeleri: öğretim programları, kılavuzlar, ortak yazılı tabloları, LGS ve YKS.', _belgeler_govde(), ('belgeler.js',)),
     'ara.html': ('Arama', 'Ders Kutusu içinde akıllı arama: sınıf, ders, plan, öğretim programı ve resmî belgeler.', '''  <section class="sayfa-bas">
     <div class="kap">
       <nav class="yol" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span>Arama</span></nav>
@@ -314,6 +565,21 @@ GOVDE = {
       </div>
       <div class="y-kaydir" id="y-tablo"></div>
     </div>
+  </section>
+  <section class="bolum koyu-zemin">
+    <div class="kap">
+      <div class="statik-rehber">
+        <h2>Ortak Yazılı Senaryoları ve Açık Uçlu Sınav Uygulama Rehberi</h2>
+        <p>Millî Eğitim Bakanlığı Ölçme, Değerlendirme ve Sınav Hizmetleri Genel Müdürlüğü (ÖDSGM) tarafından yayımlanan konu-soru dağılım tabloları, ortaokul ve lise derslerinde dönem içi ortak yazılı sınavların hangi öğrenme çıktılarından ve kaç açık uçlu sorudan oluşacağını belirler. Okul zümre öğretmenler kurulu dönem başında yayımlanan senaryolardan öğrenci profiline ve işlenen hafta takvimine uygun olan bir senaryoyu seçerek tutanak altına alır. Ders Kutusu’ndaki senaryo seçici, her senaryodaki öğrenme çıktılarını ve soru sayılarını doğrudan tablolaştırır; aynı senaryoya tam uyumlu hazır yazılı kâğıdını ve puanlama anahtarlı cevap kâğıdını PDF biçiminde sunar.</p>
+        <h3>Senaryo Yazılısı ile Öğrenme Çıktısı Yazılısı Arasındaki Fark Nedir?</h3>
+        <ul>
+          <li><strong>Senaryoya göre yazılı kâğıtları:</strong> ÖDSGM’nin yayımladığı 1. ve 2. yazılı senaryo tablolarındaki soru dağılımını birebir takip eden, doğrudan dönem ortak sınavında veya sınav provasında kullanılmaya hazır açık uçlu sınav kâğıtlarıdır.</li>
+          <li><strong>Öğrenme çıktısına göre yazılı kâğıtları:</strong> Türkiye Yüzyılı Maarif Modeli’ndeki her bir öğrenme çıktısını tek başına derinlemesine yoklayan, süreç odaklı izleme ve konu tarama yazılılarıdır.</li>
+          <li><strong>Puanlama ve cevap anahtarı güvenliği:</strong> Cevaplı öğretmen kâğıtları her sorunun adım adım çözüm basamaklarını ve tam puan/kısmi puan ölçütlerini içerir; öğrenci sayfalarında ise yalnızca cevapsız çalışma kâğıtları listelenir.</li>
+        </ul>
+      </div>
+      ''' + _sinif_dizin_seridi() + '''
+    </div>
   </section>\n''' + SOSYAL_DAVET, ('yazili.js', 'yazili-cikti.js', 'yazili-duzen.js')),
     'tahta.html': ('Akıllı tahta', 'Tarayıcıda çalışan akıllı tahta: hassas kalem, ekran ve ses kaydı, akıllı şekil tanıma, seç-taşı, soru görseli yapıştırma, süre ölçer, cevap perdesi, koordinat ekseni ve çoklu sayfa.', '''  <section class="tahta-sayfa">
     <div class="kap tahta-ustbar">
@@ -378,6 +644,15 @@ GOVDE = {
       </article>
     </div>
   </section>
+  <section class="bolum koyu-zemin">
+    <div class="kap">
+      <div class="statik-rehber">
+        <h2>İçerik İnceleme, Doğrulama ve Yayın Sürecimiz</h2>
+        <p>Ders Kutusu’na iletilen her hata bildirimi, içerik önerisi ve öğretmen materyali yayın ekibimiz tarafından dört aşamalı kalite kontrol sürecinden geçirilir. İlk aşamada içeriğin güncel Türkiye Yüzyılı Maarif Modeli (TYMM) öğretim programı ve ilgili sınıfın Millî Eğitim Bakanlığı ders kitabındaki kavram sınırlarıyla tam uyumu denetlenir; müfredat dışı terim veya kazanım üstü işlem basamakları ayıklanır. İkinci aşamada tüm metinler, matematiksel semboller, kesir ve karekök gösterimleri ile Türk Dil Kurumu yazım kuralları satır satır incelenir.</p>
+        <p>Üçüncü aşamada çoktan seçmeli ve açık uçlu sorular bağımsız çözüm kontrolünden geçirilir; soru kökünün netliği, görsel-metin tutarlılığı ve tek doğru cevabın tartışmasız biçimde sağlandığı doğrulanır. Son aşamada ise içerik masaüstü bilgisayarlarda, tabletlerde, telefonlarda ve sınıf içi etkileşimli akıllı tahtalarda erişilebilirlik testinden geçirilerek yayına alınır. Öğretmenlerimizin kendi sınıflarında uygulayıp verim aldığı özgün çalışma kâğıtları ve etkinlik önerileri, Türkiye’nin dört bir yanındaki öğrencilerin nitelikli eğitim kaynaklarına ücretsiz ulaşmasına doğrudan katkı sağlar.</p>
+      </div>
+    </div>
+  </section>
   <script>
     (function () {
       var d = document.getElementById('katki-paylas'), durum = document.getElementById('katki-durum');
@@ -429,12 +704,13 @@ def _sinav_govde():
             f'<li><a href="/goruntule.html?b={k}">{e(bl[k]["baslik"])}</a><span>{e(bl[k].get("kaynak", ""))}</span></li>'
             for k in x['belgeler'] if k in bl)
         if lgs:
-            hazirlik = ('<li><a href="/ogrenci.html?sinif=8">8. sınıfın bütün dersleri ve üniteleri</a></li>'
+            hazirlik = ('<li><a href="/sinif-8.html">8. sınıf LGS konu anlatımları ve çalışma kâğıtları tam dizini</a></li>'
+                        '<li><a href="/ogrenci.html?sinif=8">8. sınıfın bütün dersleri ve üniteleri</a></li>'
                         '<li><a href="/icerikler.html?sinif=8&amp;tur=Konu%20anlat%C4%B1m%C4%B1">8. sınıf konu özetleri ve etkinlikler</a></li>'
                         '<li><a href="/icerikler.html?sinif=8&amp;tur=%C3%87al%C4%B1%C5%9Fma%20k%C3%A2%C4%9F%C4%B1d%C4%B1">8. sınıf çalışma kâğıtları (PDF)</a></li>'
                         '<li><a href="/yazili.html?sinif=8">8. sınıf ortak yazılı senaryoları ve kâğıtları</a></li>')
         else:
-            hazirlik = ''.join(f'<li><a href="/ogrenci.html?sinif={k}">{k}. sınıfın bütün dersleri ve üniteleri</a></li>' for k in x['siniflar'])
+            hazirlik = ''.join(f'<li><a href="/sinif-{k}.html">{k}. sınıf konu anlatımları ve ders dizini</a></li>' for k in x['siniflar'])
             hazirlik += '<li><a href="/icerikler.html?tur=Ders%20kitab%C4%B1">Lise MEB ders kitapları</a></li>'
         bolumler += f'''  <section class="bolum{' koyu-zemin' if n % 2 else ''}" id="{x['kimlik']}">
     <div class="kap">
@@ -492,7 +768,34 @@ def _sinav_govde():
     </div>
   </section>
 '''
-    asds_bolumu = '''  <section class="bolum asds-ana-bolum" id="asds-bolum-kapsayici" aria-labelledby="asds-ana-baslik">
+    asds_veri = _j.loads((PUBLIC / 'veri' / 'asds.json').read_text(encoding='utf-8'))
+    asds_statik = []
+    for blok in asds_veri.get('siniflar', []):
+        sno = blok['sinif']
+        sinav_kartlari = []
+        for s in blok.get('sinavlar', []):
+            dos = s.get('dosyalar', {})
+            baglar = []
+            for anahtar, etiket in (('a_cevapsiz', 'A Kitapçığı (Cevapsız)'), ('b_cevapsiz', 'B Kitapçığı (Cevapsız)'),
+                                    ('a_cevapli', 'A Kitapçığı (Cevaplı)'), ('b_cevapli', 'B Kitapçığı (Cevaplı)'),
+                                    ('anahtar', 'Cevap Anahtarı')):
+                if dos.get(anahtar):
+                    baglar.append(f'<a href="{e(dos[anahtar])}">{etiket}</a>')
+            sinav_kartlari.append(
+                f'<article class="kart" id="{e(s["kimlik"])}">'
+                f'<h4>{sno}. Sınıf {e(s["ad"])}</h4>'
+                f'<p>{e(s.get("olculen_hafta", ""))} · {s.get("soru_sayisi", 0)} soru, {s.get("sure", 0)} dk</p>'
+                f'<p>{" · ".join(baglar)}</p>'
+                f'</article>'
+            )
+        asds_statik.append(
+            f'<div id="asds-sinif-{sno}">'
+            f'<h3>{e(blok["baslik"])}</h3>'
+            f'<p>{blok.get("soru_sayisi", 0)} soru · {blok.get("sure", 0)} dakika · {e(blok.get("puanlama", ""))}</p>'
+            f'<div class="kartlar">{"".join(sinav_kartlari)}</div>'
+            f'</div>'
+        )
+    asds_bolumu = f'''  <section class="bolum asds-ana-bolum" id="asds-bolum-kapsayici" aria-labelledby="asds-ana-baslik">
     <div class="kap">
       <div class="bolum-bas">
         <div>
@@ -502,7 +805,7 @@ def _sinav_govde():
         </div>
       </div>
       <div id="asds-bolum" class="asds-bolum-kutu">
-        <p role="status">Deneme sınavları ve kitapçıklar yükleniyor…</p>
+        {"".join(asds_statik)}
       </div>
     </div>
   </section>
@@ -581,6 +884,16 @@ GOVDE['planlar.html'] = ('Günlük planlar', '1-12. sınıf günlük ders planla
         </div>
       </div>
     </div>
+  </section>
+  <section class="bolum koyu-zemin">
+    <div class="kap">
+      <div class="statik-rehber">
+        <h2>Türkiye Yüzyılı Maarif Modeli Günlük ve Yıllık Ders Planı Rehberi</h2>
+        <p>İlkokul 1–4, ortaokul 5–8 ve lise 9–12. sınıf kademelerindeki tüm dersler için hazırlanan günlük ders planları; Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı öğretim programları ile 37 haftalık çerçeve yıllık plan takvimine tam uyumlu olarak düzenlenmiştir. Her haftanın günlük ders planı; ilgili öğrenme alanı ve temayı, süreç bileşenlerini, öğrenme-öğretme yaşantılarını, farklılaştırma (zenginleştirme ve destekleme) etkinliklerini, okul dışı öğrenme önerilerini ve süreç odaklı ölçme-değerlendirme araçlarını eksiksiz içerir.</p>
+        <p>Öğretmenlerimiz okul adını, kendi ad ve soyadını, müdür yardımcısı ve okul müdürü bilgilerini yalnızca bir kez girdiğinde sistem bu bilgileri tarayıcı belleğinde (sunucuya hiçbir kişisel veri göndermeden) tüm sayfalardaki imza bloklarına otomatik yerleştirir. Dilerseniz tüm eğitim öğretim yılını tek bir düzenlenebilir Word (.docx) ya da yazdırmaya hazır PDF dosyası olarak indirebilir, dilerseniz ay ay bölünmüş ZIP arşivini zümre klasörünüze kaydedebilirsiniz.</p>
+      </div>
+      ''' + _sinif_dizin_seridi() + '''
+    </div>
   </section>\n''' + SOSYAL_DAVET, ('planlar.js',))
 
 # Ders dağıtım programı (kullanıcı 22.10.2026): uygulama ders-dagitim-uygulama.html'de tek dosya, kendi stilleriyle;
@@ -590,7 +903,7 @@ GOVDE['ders-dagitim.html'] = ('Ders dağıtım programı', 'Okullar için ücret
 .ddp-kap { padding: 20px 0 8px; }
 .sayfa-bas .dd-sayac { font-size: 16px; margin-top: 8px; }
 .dd-sayac strong { color: var(--metin); font-variant-numeric: tabular-nums; }
-.ddp-cerceve { display: block; width: 100%; height: calc(100vh - 96px); min-height: 560px; border: 1px solid var(--cizgi); border-radius: var(--kose); background: var(--zemin-2); }
+.ddp-cerceve { display: block; width: 100%; height: calc(100vh - 96px); min-height: 560px; border: 0; border-radius: var(--kose); background: var(--zemin-2); box-shadow: var(--golge); }
 </style>
   <section class="sayfa-bas ddp-bas">
     <div class="kap">
@@ -630,6 +943,8 @@ GOVDE['ders-dagitim.html'] = ('Ders dağıtım programı', 'Okullar için ücret
       </ol>
       <h2>Verileriniz</h2>
       <p>Öğretmen, ders ve program bilgileri yalnız bu cihazdaki tarayıcıda saklanır, Ders Kutusu sunucusuna gönderilmez. Okul bilgilerindeki “kullanan okullar listesine eklensin” işareti açıksa programı ilk oluşturduğunuzda yalnız okul adı, ilçe ve öğretmen/sınıf sayısı bildirilir; sitede yalnız kullanan okul sayısı görünür, okul adı Ders Kutusu’nun herkese açık GitHub deposundaki listede görünebilir. İşareti kaldırırsanız hiçbir bilgi gönderilmez. Başka bir bilgisayarda devam etmek için “Yedek indir” ile aldığınız dosyayı orada “Yedek yükle” ile açabilirsiniz. Ayrıntı: <a href="/gizlilik.html">Gizlilik ve çerezler</a>.</p>
+      <h2>Okul Yönetimleri İçin Çizelge Planlama İpuçları</h2>
+      <p>Haftalık ders dağıtım çizelgesi hazırlanırken önce laboratuvar, bilişim teknolojileri sınıfı, müzik atölyesi ve spor salonu gibi ortak kullanılan özel dersliklerin saatleri ile iki öğretmenin birlikte girdiği uygulamalı dersler tanımlanmalıdır. Ardından nöbet günleri, zümre toplantı saatleri ve öğretmenlerin mazeretli olduğu zaman dilimleri girildiğinde yerleştirme motoru dar boğazları öncelik sırasıyla çözer. Herhangi bir sınıfın haftalık toplam ders saati ile atanmış branş derslerinin toplamı uyuşmadığında sistem uyarı vererek eksik veya fazla saati anında bildirir; böylece dönem başında el ile yapılan saat kaydırma hataları tamamen önlenir.</p>
     </div>
   </div>\n''' + SOSYAL_DAVET, ())
 
@@ -653,9 +968,18 @@ GOVDE['kelime.html'] = ('İngilizce kelime çalışması', '5 ve 6. sınıf İng
         </div>
       </div>
       <nav class="sekmeler kelime-kipler" id="k-kipler" aria-label="Çalışma biçimi"></nav>
-      <h2 class="kelime-baslik" id="k-tema-baslik"></h2>
-      <div id="k-alan" class="kelime-alan" aria-live="polite"></div>
+      <h2 class="kelime-baslik" id="k-tema-baslik">Temel İngilizce Kelime Kartları</h2>
+      <div id="k-alan" class="kelime-alan" aria-live="polite">
+        <p>5 ve 6. sınıf İngilizce ders kitaplarının ünite sözlüklerinden derlenen kelimeleri sesli telaffuz, anlam kartı, çoktan seçmeli test, yazma ve eşleştirme adımlarıyla çalışabilirsiniz.</p>
+      </div>
       <p class="kelime-not">İlerlemen yalnız bu tarayıcıda tutulur, hiçbir yere gönderilmez. Sesler tarayıcının kendi okuma özelliğiyle çıkar.</p>
+      <div class="statik-rehber">
+        <h2>İngilizce Kelime Öğrenme Yöntemi ve Ünite Temaları</h2>
+        <p>Yabancı dil öğreniminde kalıcı söz varlığı geliştirmek, kelimeleri tek başına ezberlemek yerine bağlam içinde görmek, doğru telaffuzu dinlemek ve aralıklı tekrar (spaced repetition) yöntemiyle aktif olarak geri çağırmakla mümkündür. Ders Kutusu İngilizce kelime çalışma aracı, Millî Eğitim Bakanlığı 5. ve 6. sınıf İngilizce ders kitaplarının sözlük bölümlerindeki 800’ü aşkın hedef kelimeyi ünite temalarına göre gruplandırır. Öğrenciler “Classroom Life”, “Family &amp; Friends”, “Daily Routines”, “Health”, “Festivals” ve “Nature” gibi her temada önce çift yönlü bilgi kartlarıyla kelimenin Türkçe karşılığını ve örnek kullanımını inceler; ardından dinleme ve klavyeyle yazma alıştırmalarıyla hem işitsel hem görsel hafızayı birlikte çalıştırır.</p>
+        <p>Kelime alıştırmalarını tamamladıktan sonra ilgili haftanın dil bilgisi yapılarını ve diyalog örneklerini pekiştirmek için <a href="/sinif-5.html">5. sınıf İngilizce konu anlatımları</a>, <a href="/sinif-6.html">6. sınıf İngilizce konu anlatımları</a>, <a href="/sinif-7.html">7. sınıf</a> ve <a href="/sinif-8.html">8. sınıf LGS İngilizce</a> dizinlerimizdeki haftalık ders özetlerine ve çalışma kâğıtlarına geçebilirsiniz.</p>
+        <h3>Dört Çalışma Kipini Verimli Kullanma Sırası</h3>
+        <p>Yeni bir temaya başlarken önce <strong>Kartlar</strong> kipinde kelimenin yazılışını ve anlamını inceleyip ses simgesiyle doğru okunuşu yüksek sesle tekrar edin. Ardından <strong>Eşleştir</strong> kipiyle hızlı görsel çağrışım kurun, <strong>Test</strong> kipiyle çeldiriciler arasından doğru anlamı seçme hızınızı ölçün ve son aşamada <strong>Yaz</strong> kipiyle sessiz harfleri veya çift ünsüzleri hatasız kodladığınızdan emin olun. Düzenli olarak günde on beş dakika yapılan bu dört adımlı tekrar, okul yazılılarında ve okuma parçalarında karşılaşılan kelimelerin kalıcı hafızaya yerleşmesini sağlar.</p>
+      </div>
     </div>
   </section>''', ('kelime.js',))
 
@@ -670,45 +994,73 @@ GOVDE['arapca.html'] = ('Arapça harf ve kelime çalışması', '28 harf ve 48 k
 <div class="kelime-ilerleme"><span>Öğrendiğin: <b id="a-ilerleme">0 / 0</b></span><span class="kelime-cubuk" aria-hidden="true"><i id="a-cubuk"></i></span><button type="button" class="cip-dugme" id="a-sifirla">Sıfırla</button></div></div>
 <nav class="sekmeler kelime-kipler" id="a-modlar" aria-label="Çalışma biçimi"></nav>
 <h2 id="a-baslik" class="kelime-baslik">Alfabe ve yazıya hazırlık</h2>
-<div id="a-alan" class="kelime-alan"><p>Harf ve kelimeler yükleniyor…</p></div>
+<div id="a-alan" class="kelime-alan"><p>28 Arapça harfin başta, ortada ve sonda yazılış biçimleri ile üstün, esre, ötre ve cezm harekelerini etkileşimli kartlarla inceleyebilirsiniz.</p></div>
 <p id="a-ses-durum" class="kelime-not" role="status"></p>
 <p class="kelime-not">İlerlemen yalnız bu tarayıcıda tutulur. Kelime ve ifade kapsamı MEB 5–6. sınıf Arapça kitapları ve yıllık planlarına göre hazırlanmıştır. Alfabe bölümü genel tekrar içindir.</p>
 <div class="k-dugmeler sol"><a class="dugme" href="/ozet/5-arapca-hafta-1.html">5. sınıf konu anlatımı</a><a class="dugme" href="/ozet/6-arapca-hafta-1.html">6. sınıf konu anlatımı</a><a class="dugme" href="/kelime.html">İngilizce kelime çalışması</a></div>
+<div class="statik-rehber">
+  <h2>Arapça Harf Biçimleri, Harekeler ve Kelime Çalışma Rehberi</h2>
+  <p>Arapça okuma ve yazma becerisinin temeli, sağdan sola yazım yönünü kavramak ve 28 harfin kelime başındaki, ortasındaki ve sonundaki bitişme biçimlerini ayırt edebilmektir. Kendinden sonraki harfle birleşmeyen <em>elif, dal, zel, ra, ze ve vav</em> harflerinin tanınması, öğrencilerin kelime köklerini ve eklerini okurken hata yapmasını önler. Bu sayfadaki çalışma modülü; harf tanıma aşamasından başlayarak fetha (üstün), kesra (esre), damme (ötre), sükûn (cezm) ve şedde işaretlerinin sese etkisini adım adım uygulamalı olarak gösterir.</p>
+  <p>Harf ve hareke tekrarının ardından selamlaşma, tanışma, aile bireyleri, okul eşyaları ve günlük ifadeler temalarındaki kelimeleri ekran içi Arapça klavyeyle yazarak, sesli dinleyerek ve anlam eşleştirmesi yaparak pekiştirebilirsiniz. Ortaokul ve imam hatip lisesi düzeyindeki tüm haftalık Arapça ders özetleri için <a href="/sinif-5.html">5. sınıf</a>, <a href="/sinif-6.html">6. sınıf</a>, <a href="/sinif-7.html">7. sınıf</a>, <a href="/sinif-8.html">8. sınıf</a>, <a href="/sinif-9.html">9. sınıf</a> ve <a href="/sinif-10.html">10. sınıf</a> konu dizinlerimizi inceleyebilirsiniz.</p>
+  <p>Çalışırken önce <strong>Harfler</strong> ve <strong>Harekeler</strong> sekmelerinde mahreç ve kısa-uzun ünlü farklarını kavrayıp ardından kelime kartlarına geçmeniz önerilir. Sağdan sola birleşen harflerin kuyruklarının satır çizgisine göre nasıl kısaldığını gözlemlemek ve ekran klavyesiyle kelimeyi harekeli biçimde yeniden yazmak, hem ders kitabındaki diyalog metinlerini akıcı okumayı hem de açık uçlu yazılı sınavlarda doğru yazım yapmayı doğrudan kolaylaştırır.</p>
+</div>
 <noscript>Alıştırmalar için JavaScript’i etkinleştirin. Konu anlatımlarını yukarıdaki bağlantılardan okuyabilirsiniz.</noscript>
 </div></section>''', ('arapca.js',))
 
-GOVDE['ogrenci.html'] = ('Öğrenci', 'Ders Kutusu öğrenci sayfası: sınıfını seç; ünite ünite konu anlatımları, etkinlikler, çalışma kâğıtları ve ders kitapları.', '''  <div id="agac" class="agac" aria-busy="true"><section class="agac-bas"><div class="kap">
-      <h1>Öğrenci</h1>
-      <p>Sınıfını seç; derslerin ünite ve konularına, haftalık konu özetlerine, çözümlü örneklere, etkileşimli etkinliklere ve çalışma kâğıtlarına ulaş. Konular MEB yıllık planındaki hafta sırasıyla eklenir.</p>
+GOVDE['ogrenci.html'] = ('Öğrenci', 'Ders Kutusu öğrenci sayfası: sınıfını seç; ünite ünite konu anlatımları, etkinlikler, çalışma kâğıtları ve ders kitapları.', f'''  <div id="agac" class="agac"><section class="agac-bas"><div class="kap">
+      <h1>Öğrenci Çalışma Merkezi (5–12. Sınıf)</h1>
+      <p>Sınıfını seç; Türkiye Yüzyılı Maarif Modeli (TYMM) ve güncel Millî Eğitim Bakanlığı yıllık plan sırasına göre hazırlanan haftalık konu özetlerine, görsel modellere, çözümlü örneklere, etkileşimli etkinliklere ve PDF çalışma kâğıtlarına hiçbir üyelik gerekmeden doğrudan ulaş.</p>
       <ul>
-        <li><a href="/ogrenci.html?sinif=5">5. sınıf dersleri</a></li>
-        <li><a href="/ogrenci.html?sinif=6">6. sınıf dersleri</a></li>
-        <li><a href="/ogrenci.html?sinif=7">7. sınıf dersleri</a></li>
-        <li><a href="/ogrenci.html?sinif=8">8. sınıf dersleri</a></li>
-        <li><a href="/ogrenci.html?sinif=9">9. sınıf dersleri</a></li>
-        <li><a href="/ogrenci.html?sinif=10">10. sınıf dersleri</a></li>
-        <li><a href="/ogrenci.html?sinif=11">11. sınıf dersleri</a></li>
-        <li><a href="/ogrenci.html?sinif=12">12. sınıf dersleri</a></li>
+        <li><a href="/sinif-5.html">5. sınıf konu anlatımları ve çalışma kâğıtları dizini</a> (<a href="/ogrenci.html?sinif=5">Ünite gezgini</a>)</li>
+        <li><a href="/sinif-6.html">6. sınıf konu anlatımları ve çalışma kâğıtları dizini</a> (<a href="/ogrenci.html?sinif=6">Ünite gezgini</a>)</li>
+        <li><a href="/sinif-7.html">7. sınıf konu anlatımları ve çalışma kâğıtları dizini</a> (<a href="/ogrenci.html?sinif=7">Ünite gezgini</a>)</li>
+        <li><a href="/sinif-8.html">8. sınıf · LGS konu anlatımları ve çalışma kâğıtları dizini</a> (<a href="/ogrenci.html?sinif=8">Ünite gezgini</a>)</li>
+        <li><a href="/sinif-9.html">9. sınıf lise konu anlatımları dizini</a> (<a href="/ogrenci.html?sinif=9">Ünite gezgini</a>)</li>
+        <li><a href="/sinif-10.html">10. sınıf lise konu anlatımları dizini</a> (<a href="/ogrenci.html?sinif=10">Ünite gezgini</a>)</li>
+        <li><a href="/sinif-11.html">11. sınıf AYT ve lise konu anlatımları dizini</a> (<a href="/ogrenci.html?sinif=11">Ünite gezgini</a>)</li>
+        <li><a href="/sinif-12.html">12. sınıf · YKS (TYT · AYT) konu anlatımları dizini</a> (<a href="/ogrenci.html?sinif=12">Ünite gezgini</a>)</li>
       </ul>
-      <p>Ayrıca: <a href="/kelime.html">İngilizce kelime çalışması</a> · <a href="/arapca.html">Arapça harf ve kelime çalışması</a> · <a href="/sinav.html">Sınavlar (LGS, YKS)</a></p>
-      <p role="status">Yükleniyor…</p>
-    </div></section></div>''', ('agac.js',))
-GOVDE['ogretmen.html'] = ('Öğretmen Köşesi', 'Öğretmen Köşesi: günlük ve yıllık planlar, ortak yazılı senaryoları ve kâğıtları, öğretim programları, çalışma kâğıtları ve resmî belgeler.', '''  <div id="agac" class="agac" aria-busy="true"><section class="agac-bas"><div class="kap">
-      <h1>Öğretmen Köşesi</h1>
-      <p>Derse hazırlık ve ölçme için ihtiyaç duyulan dosyalar kategorilere ayrılmıştır. Kategoriyi, ardından sınıfı seçin.</p>
+      <p>Etkileşimli çalışma araçları: <a href="/kelime.html">İngilizce kelime kartları</a> · <a href="/arapca.html">Arapça harf ve kelime çalışması</a> · <a href="/sinav.html">ASDS Deneme Sınavları, LGS ve YKS Rehberi</a> · <a href="/kpss.html">KPSS Genel Yetenek Modülleri</a> (<a href="/kpss/turkce-paragrafta-anlam.html">Paragrafta Anlam</a> · <a href="/kpss/matematik-temel-kavramlar.html">Temel Kavramlar</a>)</p>
+      <div id="yaziliya-hazirlik">
+        <h2>Yazılıya Hazırlık ve Öğrenci Çalışma Kâğıtları</h2>
+        <p>Ders seçtiğinizde ilgili dersin ünite ve hafta listesinin altında o dönemin ortak yazılı senaryolarına ve öğrenme çıktılarına uygun açık uçlu öğrenci çalışma kâğıtları doğrudan açılır.</p>
+      </div>
+    </div></section></div>
+  <section class="bolum koyu-zemin">
+    <div class="kap">
+      <div class="statik-rehber">
+        <h2>Ders Kutusu ile Haftalık Ders Tekrarı ve Sınava Hazırlık Nasıl Yapılır?</h2>
+        <p>Kalıcı akademik başarı, okulda işlenen konunun aynı hafta içinde sade bir özetle tekrar edilmesine ve farklı soru tipleriyle sınanmasına dayanır. Ders Kutusu’ndaki 1.600’ü aşkın haftalık konu anlatımı sayfası dört temel öğrenme adımını tek ekranda birleştirir: Önce renkli vektörel şemalar, bilgi ve dikkat kutularıyla konunun özü kavranır; ardından adım adım açılır çözümlü örneklerle işlem ve yorumlama stratejisi görülür; üçüncü adımda çoktan seçmeli, doğru-yanlış, eşleştirme ve boşluk doldurma sorularından oluşan etkileşimli etkinliklerle anında geri bildirim alınır; son adımda ise iki sayfalık PDF çalışma kâğıdı indirilerek kâğıt-kalem pratiği tamamlanır.</p>
+        <p>Ortaokul 5, 6, 7 ve 8. sınıf öğrencileri ayrıca her ay uygulanan A ve B kitapçıklı Akademik Süreç Değerlendirme Sınavları (ASDS) ile sarmal kazanım eksiklerini ölçebilir; lise 9, 10, 11 ve 12. sınıf öğrencileri ise hem okul yazılılarına hem de TYT ve AYT oturumlarına ünite sırasını bozmadan hazırlanabilir. Aşağıdaki sınıf bağlantılarından kendi sınıfınızın tüm ders ve hafta listesine tek tıkla geçebilirsiniz.</p>
+      </div>
+      {_sinif_dizin_seridi()}
+    </div>
+  </section>''', ('agac.js',))
+GOVDE['ogretmen.html'] = ('Öğretmen Köşesi', 'Öğretmen Köşesi: günlük ve yıllık planlar, ortak yazılı senaryoları ve kâğıtları, öğretim programları, çalışma kâğıtları ve resmî belgeler.', f'''  <div id="agac" class="agac"><section class="agac-bas"><div class="kap">
+      <h1>Öğretmen Köşesi · Plan, Ölçme ve Akıllı Tahta Merkezi</h1>
+      <p>1’den 12. sınıfa kadar derse hazırlık, sınıf içi sunum ve süreç odaklı ölçme-değerlendirme için hazırlanan tüm belgeler aşağıda kategorilere ayrılmıştır.</p>
       <ul>
-        <li><a href="/planlar.html">Günlük planlar</a>: Okul ve yönetici adları her sayfaya yazılır; tüm yıl ya da ay ay, Word veya PDF.</li>
-        <li><a href="/ders-dagitim.html">Ders dağıtım programı</a>: Öğretmen, sınıf ve derslerden haftalık ders programı; PDF ve Excel çıktı, veriler tarayıcıda.</li>
-        <li><a href="/ogretmen.html?kategori=yillik-plan">Yıllık planlar</a>: Güncel öğretim programına göre haftalık yıllık planlar.</li>
-        <li><a href="/yazili.html">Yazılı senaryoları ve kâğıtları</a>: Ortak yazılı konu-soru dağılımları ve cevaplı yazılı kâğıtları.</li>
-        <li><a href="/ogretmen.html?kategori=ogretim-programi">Öğretim programları</a>: Öğrenme çıktıları, süreç bileşenleri ve açıklamalar.</li>
-        <li><a href="/ogretmen.html?kategori=calisma-kagidi">Çalışma kâğıtları</a>: Derste kullanmak için cevaplı ve cevapsız PDF.</li>
-        <li><a href="/belgeler.html">Resmî belgeler</a>: MEB, ÖDSGM, DÖGM ve ÖSYM kılavuzları ve tabloları.</li>
-        <li><a href="/tahta.html">Akıllı tahta</a>: Kalem, renkler, kareli zemin; tarayıcıda çalışır.</li>
-        <li><a href="/kpss.html">KPSS hazırlık</a>: Öğretmen adayları için konu anlatımı ve testler.</li>
+        <li><a href="/planlar.html">Günlük ders planları (1–12. sınıf)</a>: Okul, öğretmen ve yönetici adları her sayfaya otomatik yerleşir; tüm yıl ya da ay ay Word (.docx) veya PDF olarak indirilir.</li>
+        <li><a href="/ders-dagitim.html">Okul haftalık ders dağıtım programı</a>: Öğretmen, sınıf, branş ve derslik kısıtlarından otomatik haftalık çizelge kurar; PDF ve Excel çıktısı verir.</li>
+        <li><a href="/ogretmen.html?kategori=yillik-plan">Çerçeve yıllık planlar</a>: Güncel Türkiye Yüzyılı Maarif Modeli ve MEB öğretim programlarına uyumlu 37 haftalık yıllık planlar.</li>
+        <li><a href="/yazili.html">Ortak yazılı senaryoları ve cevaplı yazılı kâğıtları</a>: ÖDSGM konu-soru dağılım tabloları, senaryoya göre ve öğrenme çıktısına göre açık uçlu sınav kâğıtları.</li>
+        <li><a href="/ogretmen.html?kategori=ogretim-programi">Ders öğretim programları</a>: Öğrenme çıktıları, süreç bileşenleri, içerik çerçevesi ve uygulama açıklamaları.</li>
+        <li><a href="/ogretmen.html?kategori=calisma-kagidi">Sınıf içi çalışma kâğıtları</a>: Derste veya ödevlendirmede kullanmak üzere cevapsız öğrenci ve cevaplı öğretmen PDF föyleri.</li>
+        <li><a href="/belgeler.html">Resmî mevzuat ve kılavuz belgeleri</a>: MEB, TTKB, ÖDSGM, DÖGM ve ÖSYM tarafından yayımlanan kılavuz ve tablolar.</li>
+        <li><a href="/tahta.html">Dijital akıllı tahta</a>: Kareli, çizgili, noktalı ve koordinat düzlemli zeminlerde kalem, şekil tanıma ve ders kaydı aracı.</li>
+        <li><a href="/kpss.html">KPSS Genel Yetenek çalışma merkezi</a>: Öğretmen adayları için özgün konu özetleri, çözümlü örnekler ve PDF testler.</li>
       </ul>
-      <p role="status">Yükleniyor…</p>
-    </div></section></div>''', ('agac.js',))
+    </div></section></div>
+  <section class="bolum koyu-zemin">
+    <div class="kap">
+      <div class="statik-rehber">
+        <h2>Sınıf İçi Ders İşlenişi ve Ölçme-Değerlendirme Araçlarımız</h2>
+        <p>Ders Kutusu Öğretmen Köşesi, öğretmenlerin evrak yükünü azaltmak ve sınıf içi öğretim süresini nitelikli içerikle zenginleştirmek amacıyla tasarlanmıştır. Sitedeki bütün haftalık konu özetleri akıllı tahta uyumlu tam ekran sunum kipine ve sayfa üzerine doğrudan kalemle yazma özelliğine sahiptir; böylece sınıfta ek bir yazılım kurmaya gerek kalmadan tarayıcı üzerinden konu anlatımı ve örnek soru çözümü yapılabilir. Günlük plan oluşturucu ve ders dağıtım programı gibi yönetim araçlarında girilen kurum ve öğretmen adları hiçbir sunucuya aktarılmaz; tüm belge üretimi doğrudan cihazınızın tarayıcısında gerçekleşir.</p>
+        <p>Zümre çalışmalarında dönem içi yazılı hazırlarken <a href="/yazili.html">Ortak Yazılılar</a> bölümünden ilgili sınıf ve dersin ÖDSGM senaryolarını karşılaştırabilir, öğrencilerinizin bireysel konu tekrarı için de aşağıdaki sınıf konu dizinlerini doğrudan paylaşabilirsiniz.</p>
+      </div>
+      {_sinif_dizin_seridi()}
+    </div>
+  </section>''', ('agac.js',))
 GOVDE['sinav.html'] = ('Sınavlar ve Deneme Sınavları (ASDS · LGS · YKS)', '5, 6, 7 ve 8. sınıf haftalık Akademik Süreç Değerlendirme Sınavları (ASDS — Cevapsız ve Cevaplı A & B kitapçıkları), LGS ve YKS hazırlık kaynakları.', _sinav_govde(), ('asds.js',))
 
 # Hakkımızda ve İletişim (14.10.2026, AdSense 'düşük değerli içerik' düzeltmesi)
@@ -750,30 +1102,43 @@ GOVDE['hakkimizda.html'] = ('Hakkımızda', 'Ders Kutusu nedir, kimler için haz
 
     <h2>Bize ulaşın</h2>
     <p>Soru, öneri ve hata bildirimleriniz için <a href="/iletisim.html">İletişim</a> sayfasını kullanabilir, <a href="/katki.html">Katkıda bulun</a> sayfasından da siteye destek olabilirsiniz.</p>
+
+    <h2>Kapsam ve yayın standartlarımız</h2>
+    <p>Ders Kutusu’nda yayımlanan 1.600’den fazla haftalık konu anlatımı, 720’yi aşkın çalışma kâğıdı, ortak yazılı senaryoları ve ASDS deneme kitapçıkları; eğitimde fırsat eşitliğini desteklemek amacıyla hiçbir abonelik duvarı olmadan açık erişimli sunulur. Matematiksel ifadelerde kesirler ve karekökler ders kitaplarındaki akademik dizgi kurallarına uygun biçimde gösterilir; fen, sosyal bilimler ve dil derslerindeki tüm şemalar ekran okuyucu uyumlu vektörel çizimlerle hazırlanır. Güncel müfredat değişiklikleri yayımlandıkça ilgili sınıf ve hafta içerikleri aynı eğitim dönemi içinde güncellenir.</p>
   </div>
 </div>''', ())
 GOVDE['iletisim.html'] = ('İletişim', 'Ders Kutusu ile iletişim: soru, öneri, hata bildirimi ve telif başvuruları için e-posta.', '''<div class="metin-sayfa">
   <div class="kap">
     <h1>İletişim</h1>
-    <p>Ders Kutusu ile ilgili soru, öneri ve bildirimlerinizi e-postayla iletebilirsiniz. Sitede iletişim formu yoktur; e-posta adresiniz yalnız size yanıt vermek için kullanılır.</p>
+    <p>Ders Kutusu yayın ekibiyle soru, içerik önerisi, akademik hata bildirimi, okul erişim desteği ve telif başvuruları için doğrudan e-posta üzerinden iletişime geçebilirsiniz. Ziyaretçi gizliliğini korumak amacıyla sitede kişisel veri toplayan bir üyelik ya da iletişim formu bulundurulmaz; gönderdiğiniz e-postalar yalnızca başvurunuzu yanıtlamak ve ilgili içeriği iyileştirmek için kullanılır.</p>
 
-    <h2>E-posta</h2>
+    <h2>Kurumsal E-posta Adresimiz</h2>
     <p><a href="mailto:info@derskutusu.com">info@derskutusu.com</a></p>
 
-    <h2>Ne için yazabilirsiniz?</h2>
+    <h2>Hangi Konularda Başvurabilirsiniz?</h2>
     <ul>
-      <li><strong>Hata bildirimi:</strong> konu özetinde, soruda, cevapta ya da plan dosyasında gördüğünüz yanlışı sayfanın adresiyle birlikte yazın. <a href="mailto:info@derskutusu.com?subject=Hata%20bildirimi">Hata bildir</a></li>
-      <li><strong>İçerik önerisi:</strong> eklenmesini istediğiniz ders, konu ya da öğretmen dosyasını yazın. <a href="mailto:info@derskutusu.com?subject=%C4%B0%C3%A7erik%20%C3%B6nerisi">Öneri gönder</a></li>
-      <li><strong>Telif:</strong> bir içeriğin size ait olduğunu düşünüyorsanız sayfa adresini ve gerekçenizi yazın; inceleyip gereğini yaparız. Ayrıntı: <a href="/telif.html">Telif hakları ve kullanım</a>.</li>
-      <li><strong>Okul ağında erişim:</strong> site okulunuzun ağında ya da akıllı tahtada açılmıyorsa okulunuzun adını ve ekranda görünen uyarıyı yazın.</li>
+      <li><strong>Akademik ve dizgisel hata bildirimi:</strong> Konu özetinde, çözümlü örnekte, etkileşimli etkinlikte, PDF çalışma kâğıdında ya da günlük plan dosyasında fark ettiğiniz yazım veya işlem hatasını ilgili sayfanın tam adresiyle birlikte iletebilirsiniz. Bildirilen maddi hatalar öncelikli olarak incelenir ve düzeltilmiş sürüm kısa sürede yayına alınır. <a href="mailto:info@derskutusu.com?subject=Hata%20bildirimi">Hata bildir</a></li>
+      <li><strong>Yeni ders ve materyal önerisi:</strong> Okulunuzda veya sınıfınızda ihtiyaç duyduğunuz ünite özetlerini, çalışma kâğıtlarını, yazılı senaryolarını ya da akıllı tahta araçlarını sınıf ve ders belirterek önerebilirsiniz. Üretim takvimimizi öğretmen ve öğrencilerden gelen taleplere göre şekillendiriyoruz. <a href="mailto:info@derskutusu.com?subject=%C4%B0%C3%A7erik%20%C3%B6nerisi">Öneri gönder</a></li>
+      <li><strong>Telif hakları ve kaynak bildirimleri:</strong> Sitedeki özgün içeriklerin kullanım izinleri veya telif bildirimleri için sayfa bağlantısı ve açıklamanızla birlikte başvurabilirsiniz. Başvurular en geç 72 saat içinde değerlendirilir. Ayrıntılı bilgi için <a href="/telif.html">Telif hakları ve kullanım koşulları</a> sayfasını inceleyebilirsiniz.</li>
+      <li><strong>Okul ağı ve akıllı tahta erişim desteği:</strong> Sitenin bir sayfası veya PDF belgesi okul ağınızda ya da sınıf içi etkileşimli tahtada açılmıyorsa tarayıcı bilgisini ve ekranda görünen uyarıyı yazmanız yeterlidir.</li>
     </ul>
 
-    <p>Siteye başka yollarla destek olmak için <a href="/katki.html">Katkıda bulun</a> sayfasına, sitenin amacı ve içeriklerin nasıl hazırlandığı için <a href="/hakkimizda.html">Hakkımızda</a> sayfasına bakabilirsiniz.</p>
+    <h2>Sosyal Medya ve Duyuru Kanallarımız</h2>
+    <p>Yeni eklenen haftalık ders özetlerini, yazılı hazırlık serilerini ve ASDS deneme duyurularını resmi sosyal medya hesaplarımızdan da takip edebilirsiniz: <a href="https://www.instagram.com/derskutusuinfo/" target="_blank" rel="noopener">Instagram (@derskutusuinfo)</a> · <a href="https://www.youtube.com/@derskutusuinfo" target="_blank" rel="noopener">YouTube (@derskutusuinfo)</a> · <a href="https://www.facebook.com/derskutusuinfo" target="_blank" rel="noopener">Facebook (@derskutusuinfo)</a>.</p>
+
+    <h2>Değerlendirme ve Yanıt Sürecimiz</h2>
+    <p>Öğretmen, öğrenci ve velilerden gelen her e-posta doğrudan içerik ve yazılım geliştirme ekibimiz tarafından okunur. Konu anlatımları, çalışma kâğıtları veya sınav anahtarlarıyla ilgili maddi hata bildirimleri en yüksek öncelikle ele alınarak kaynak ders kitabıyla karşılaştırılır ve doğrulanan düzeltmeler aynı gün içinde yayına yansıtılır. Kurumsal iş birliği, açık kaynak eğitim projeleri ve gizlilik politikamızla ilgili sorularınız da gizlilik ilkelerimiz çerçevesinde titizlikle yanıtlanır.</p>
+
+    <p>Siteye içerik veya paylaşım yoluyla destek olmak için <a href="/katki.html">Katkıda bulun</a> sayfasına, yayın ilkelerimiz için <a href="/hakkimizda.html">Hakkımızda</a> ve <a href="/gizlilik.html">Gizlilik ve çerezler</a> sayfalarına göz atabilirsiniz.</p>
   </div>
 </div>''', ())
 
+for _s in range(5, 13):
+    _b, _a, _ = SINIF_REHBER_METINLERI[_s]
+    GOVDE[f'sinif-{_s}.html'] = (_b, _a, _sinif_dizin_govde(_s), ())
+
 # Arama dizinine girmeyecek araç/yönlendirme sayfaları (içerik değil, araç)
-NOINDEX = {'sinif.html', 'ara.html', 'tahta.html', 'goruntule.html'}
+NOINDEX = {'sinif.html', 'ara.html', 'tahta.html', 'goruntule.html', 'okul-bildir.html', 'ders-dagitim-uygulama.html'}
 
 
 def main():
@@ -802,6 +1167,21 @@ def main():
     yeni = re.sub(r'<aside class="reklam"[^\n]*</aside>\n', '', eski).replace('<footer class="alt">', reklam_yeri('index.html') + '<footer class="alt">', 1)
     if yeni != eski:
         yol.write_text(yeni, encoding='utf-8')
+
+    # Sitemap senkronizasyonu: 8 sınıf dizini ve yazili.html dahil edilir, NOINDEX sayfaları dışarıda tutulur
+    harita_yol = PUBLIC / 'sitemap.xml'
+    if harita_yol.exists():
+        harita = harita_yol.read_text(encoding='utf-8')
+        eklenecek = [f'https://derskutusu.com/{ad}' for ad in (*SINIF_DIZIN_SAYFALARI, 'yazili.html')]
+        eksikler = [u for u in eklenecek if f'<loc>{u}</loc>' not in harita]
+        if eksikler:
+            blok = ''.join(f'  <url><loc>{u}</loc><lastmod>2026-11-06</lastmod></url>\n' for u in eksikler)
+            anker = '  <url><loc>https://derskutusu.com/ogretmen.html</loc></url>\n'
+            if anker in harita:
+                harita = harita.replace(anker, anker + blok, 1)
+            else:
+                harita = harita.replace('</urlset>', blok + '</urlset>')
+            harita_yol.write_text(harita, encoding='utf-8')
 
     print('üretildi:', ', '.join([*GOVDE, 'gizlilik.html', 'telif.html', '404.html', 'index.html (reklam alanı)']))
 
