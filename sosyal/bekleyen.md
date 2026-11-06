@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 583 gönderi (Instagram: 0 bekleyen — 1813/1813 yayında; Facebook: 583 bekleyen).
+Toplam 622 gönderi (Instagram: 39 bekleyen — 1813/1852 yayında; Facebook: 622 bekleyen).
 
 ## bilgi-10-ingilizce-5
 Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-ingilizce-5.png
@@ -5901,4 +5901,589 @@ Kâğıtlar ÖDSGM ortak yazılı senaryolarına göre hazırlandı; sorular öz
 Nasıl indirilir? Sayfada yazılıyı ve senaryonuzu seçin; “Sınav kâğıdı (PDF)” ya da “Cevap anahtarı (PDF)” düğmesine dokunun. Ücretsiz, üyelik yok.
 Kaydedin, sınav haftası lazım olacak. 📌
 #derskutusu #ortakyazılı #11sınıf #kimya #yazılısınavı
+```
+
+## seri-cikti-eng-6-1-r2
+Sıra: 2027-03-03 17:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-r2-1.png
+
+```
+School Life konusunda öğrencileriniz nerede? 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.1.R2: “Students can bring information about the current content on “school life with roles, and responsibilities at school; school routines; national days and celebrations” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-1-r2.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.1.R2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-1-r3
+Sıra: 2027-03-03 17:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-r3-1.png
+
+```
+School Life: tek öğrenme çıktısı, tek yazılı 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.1.R3: “Students can make meaning of / derive meaning from the current content about “school life with roles, and responsibilities at school; school routines; national days and celebrations” by reading it carefully.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-1-r3.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.1.R3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e8-1-r2
+Sıra: 2027-03-03 17:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-1-r2-1.png
+
+```
+Friendship: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf İngilizce öğrenme çıktısı E8.1.R2: “Students will be able to understand short and simple invitation letters, cards and e-mails.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-ingilizce-e8-1-r2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E8.1.R2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-1-v1
+Sıra: 2027-03-03 18:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-v1-1.png
+
+```
+6. sınıf İngilizce · ENG.6.1.V1 yazılısı hazır 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.1.V1: “Students can select and use the target vocabulary of the current content about “school life with roles, and responsibilities at school; school routines; national days and celebrations” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-1-v1.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.1.V1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-t-o-6-16
+Sıra: 2027-03-03 18:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-6-16-1.png
+
+```
+6. sınıf Türkçe · T.O.6.16 yazılısı hazır 📝
+6. sınıf Türkçe öğrenme çıktısı T.O.6.16: “Bilgilendirici metinde anahtar kelimeleri belirlemeye yönelik çözümleme yapabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-turkce-t-o-6-16.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.O.6.16 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-e7-2-r1
+Sıra: 2027-03-03 18:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-2-r1-1.png
+
+```
+Sports: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf İngilizce öğrenme çıktısı E7.2.R1: “Students will be able to understand short and simple texts on sports.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-ingilizce-e7-2-r1.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E7.2.R1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-1-g1
+Sıra: 2027-03-03 18:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-1-g1-1.png
+
+```
+School Life konusunda öğrencileriniz nerede? 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.1.G1: “Students can select and use the target grammatical elements of the current content about “school life with people, places and rules at school; school clubs; countries; national days and celebrations” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-1-g1.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.1.G1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-1-g1
+Sıra: 2027-03-03 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-g1-1.png
+
+```
+School Life konusunda öğrencileriniz nerede? 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.1.G1: “Students can select and use the target grammatical elements of the current content about “school life with roles, and responsibilities at school; school routines; national days and celebrations” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-1-g1.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.1.G1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-t-o-6-21
+Sıra: 2027-03-03 19:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-6-21-1.png
+
+```
+Okuma konusunda öğrencileriniz nerede? 📝
+6. sınıf Türkçe öğrenme çıktısı T.O.6.21: “Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-turkce-t-o-6-21.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.O.6.21 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-e7-2-w1
+Sıra: 2027-03-03 19:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-2-w1-1.png
+
+```
+Sports konusunda öğrencileriniz nerede? 📝
+7. sınıf İngilizce öğrenme çıktısı E7.2.W1: “Students will be able to write pieces about routines/daily activities by using frequency adverbs.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-ingilizce-e7-2-w1.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E7.2.W1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e8-2-r1
+Sıra: 2027-03-03 19:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-2-r1-1.png
+
+```
+Teen Life konusunda öğrencileriniz nerede? 📝
+8. sınıf İngilizce öğrenme çıktısı E8.2.R1: “Students will be able to understand short and simple texts about regular activities of teenagers.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-ingilizce-e8-2-r1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E8.2.R1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-1-w3
+Sıra: 2027-03-03 20:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-1-w3-1.png
+
+```
+5. sınıf İngilizce · ENG.5.1.W3 yazılısı hazır 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.1.W3: “Students can organise a content for the assigned writing task on the current content “school life with people, places and rules at school; school clubs; countries; national days and celebrations” based on the model/example provided.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-1-w3.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.1.W3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-1-w3
+Sıra: 2027-03-03 20:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-w3-1.png
+
+```
+School Life konusunda öğrencileriniz nerede? 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.1.W3: “Students can organise a content for the assigned writing task on the current content “school life with roles, and responsibilities at school; school routines; national days and celebrations” based on the model/example provided.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-1-w3.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.1.W3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-t-y-6-3
+Sıra: 2027-03-03 20:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-6-3-1.png
+
+```
+6. sınıf Türkçe · T.Y.6.3 yazılısı hazır 📝
+6. sınıf Türkçe öğrenme çıktısı T.Y.6.3: “Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-turkce-t-y-6-3.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.Y.6.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-o-7-14
+Sıra: 2027-03-03 20:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-7-14-1.png
+
+```
+Okuma konusunda öğrencileriniz nerede? 📝
+7. sınıf Türkçe öğrenme çıktısı T.O.7.14: “Bilgilendirici metinlerde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-turkce-t-o-7-14.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.O.7.14 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-e8-2-w1
+Sıra: 2027-03-03 21:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-2-w1-1.png
+
+```
+Teen Life konusunda öğrencileriniz nerede? 📝
+8. sınıf İngilizce öğrenme çıktısı E8.2.W1: “Students will be able to write a short and simple paragraph about regular activities of teenagers.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-ingilizce-e8-2-w1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E8.2.W1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-1-w4
+Sıra: 2027-03-03 21:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-1-w4-1.png
+
+```
+School Life konusunda öğrencileriniz nerede? 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.1.W4: “Students can individually construct/form content for the assigned writing task on the current content “school life with people, places and rules at school; school clubs; countries; national days and celebrations”.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-1-w4.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.1.W4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-t-y-5-3
+Sıra: 2027-03-03 21:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-5-3-1.png
+
+```
+5. sınıf Türkçe · T.Y.5.3 yazılısı hazır 📝
+5. sınıf Türkçe öğrenme çıktısı T.Y.5.3: “Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-turkce-t-y-5-3.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.Y.5.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #5sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-eng-6-1-w4
+Sıra: 2027-03-03 21:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-w4-1.png
+
+```
+School Life: tek öğrenme çıktısı, tek yazılı 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.1.W4: “Students can individually construct/form content for the assigned writing task on the current content “school life with roles, and responsibilities at school; school routines; national days and celebrations”.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-1-w4.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.1.W4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-t-y-6-18
+Sıra: 2027-03-03 22:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-6-18-1.png
+
+```
+Yazma konusunda öğrencileriniz nerede? 📝
+6. sınıf Türkçe öğrenme çıktısı T.Y.6.18: “Yazısını zenginleştirecek biçimde söz varlığını kullanabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-turkce-t-y-6-18.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.Y.6.18 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-o-7-15
+Sıra: 2027-03-03 22:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-7-15-1.png
+
+```
+Okuma konusunda öğrencileriniz nerede? 📝
+7. sınıf Türkçe öğrenme çıktısı T.O.7.15: “Bilgilendirici metinde anahtar kelimeleri belirlemeye yönelik çözümleme yapabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-turkce-t-o-7-15.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.O.7.15 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-y-5-13
+Sıra: 2027-03-03 22:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-5-13-1.png
+
+```
+Yazma konusunda öğrencileriniz nerede? 📝
+5. sınıf Türkçe öğrenme çıktısı T.Y.5.13: “Yazısını zenginleştirecek biçimde söz varlığını kullanabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-turkce-t-y-5-13.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.Y.5.13 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-y-6-21
+Sıra: 2027-03-03 22:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-6-21-1.png
+
+```
+6. sınıf Türkçe · T.Y.6.21 yazılısı hazır 📝
+6. sınıf Türkçe öğrenme çıktısı T.Y.6.21: “Yazım kuralları ve noktalama işaretlerini uygulayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-turkce-t-y-6-21.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.Y.6.21 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-o-7-21
+Sıra: 2027-03-03 23:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-7-21-1.png
+
+```
+Okuma: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf Türkçe öğrenme çıktısı T.O.7.21: “Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-turkce-t-o-7-21.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.O.7.21 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-16
+Sıra: 2027-03-03 23:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-16-1.png
+
+```
+Anlama: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.16: “Metnin konusunu belirler.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-16.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.16 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-y-5-16
+Sıra: 2027-03-03 23:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-5-16-1.png
+
+```
+Yazma konusunda öğrencileriniz nerede? 📝
+5. sınıf Türkçe öğrenme çıktısı T.Y.5.16: “Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-turkce-t-y-5-16.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.Y.5.16 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-y-7-3
+Sıra: 2027-03-03 23:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-7-3-1.png
+
+```
+Yazma konusunda öğrencileriniz nerede? 📝
+7. sınıf Türkçe öğrenme çıktısı T.Y.7.3: “Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-turkce-t-y-7-3.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.Y.7.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-17
+Sıra: 2027-03-04 00:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-17-1.png
+
+```
+8. sınıf Türkçe · T.8.3.17 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.17: “Metnin ana fikrini/ana duygusunu belirler.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-17.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.17 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-y-7-18
+Sıra: 2027-03-04 00:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-7-18-1.png
+
+```
+Yazma konusunda öğrencileriniz nerede? 📝
+7. sınıf Türkçe öğrenme çıktısı T.Y.7.18: “Yazısını zenginleştirecek biçimde söz varlığını kullanabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-turkce-t-y-7-18.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.Y.7.18 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-19
+Sıra: 2027-03-04 00:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-19-1.png
+
+```
+8. sınıf Türkçe · T.8.3.19 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.19: “Metnin içeriğine uygun başlık/başlıklar belirler.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-19.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.19 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-y-7-21
+Sıra: 2027-03-04 00:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-7-21-1.png
+
+```
+Yazma konusunda öğrencileriniz nerede? 📝
+7. sınıf Türkçe öğrenme çıktısı T.Y.7.21: “Yazım kuralları ve noktalama işaretlerini uygulayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-turkce-t-y-7-21.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.Y.7.21 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-25
+Sıra: 2027-03-04 01:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-25-1.png
+
+```
+8. sınıf Türkçe · T.8.3.25 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.25: “Okudukları ile ilgili çıkarımlarda bulunur.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-25.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.25 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-26
+Sıra: 2027-03-04 01:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-26-1.png
+
+```
+Anlama konusunda öğrencileriniz nerede? 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.26: “Metin türlerini ayırt eder.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-26.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.26 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-34
+Sıra: 2027-03-04 01:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-34-1.png
+
+```
+8. sınıf Türkçe · T.8.3.34 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.34: “Okuduklarında kullanılan düşünceyi geliştirme yollarını belirler.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-34.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.34 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-4-1
+Sıra: 2027-03-04 01:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-1-1.png
+
+```
+Yazma konusunda öğrencileriniz nerede? 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.4.1: “Şiir yazar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-4-4
+Sıra: 2027-03-04 02:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-4-1.png
+
+```
+Yazma: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.4.4: “Yazma stratejilerini uygular.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-4.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-4-9
+Sıra: 2027-03-04 02:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-9-1.png
+
+```
+8. sınıf Türkçe · T.8.4.9 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.4.9: “Yazılarında anlatım biçimlerini kullanır.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-9.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.9 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-4-15
+Sıra: 2027-03-04 02:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-15-1.png
+
+```
+Yazma konusunda öğrencileriniz nerede? 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.4.15: “Yazılarında uygun geçiş ve bağlantı ifadelerini kullanır.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-15.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.15 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-4-18
+Sıra: 2027-03-04 02:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-18-1.png
+
+```
+Yazma: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.4.18: “Cümlenin ögelerini ayırt eder.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-18.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.18 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
 ```
