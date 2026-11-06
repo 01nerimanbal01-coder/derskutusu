@@ -780,6 +780,8 @@ a.ozellik:hover { text-decoration: none; transform: translateY(-3px); box-shadow
 .ozet-gorsel:hover { box-shadow: 0 6px 20px rgb(15 23 42 / .06); transform: translateY(-1px); }
 .bolum-yan .ozet-gorsel { margin: 0; }
 .ozet-gorsel svg { width: 100%; max-width: 100%; height: auto; font-family: inherit; }
+.ozet-gorsel svg[aria-label$="kavram özeti şeması"] line.g-c,
+.ozet-gorsel svg[aria-label$="kavram özeti şeması"] rect:is(.g-ms,.g-ts,.g-ys,.g-os) { display: none; }
 .ozet-tablo { overflow-x: auto; margin: 16px 0; border: 0; border-radius: 16px; background: var(--zemin-2); box-shadow: none; }
 .ozet-tablo table { width: 100%; border-collapse: collapse; font-size: 15.5px; }
 .ozet-tablo th { background: var(--ders-acik); text-align: left; padding: 12px 15px; font-size: 13.5px; color: var(--ders-metin); font-weight: 800; }
@@ -1531,6 +1533,8 @@ body.sunum-iri .ozet-bolum h2 { font-size: 31px !important; }
 
 .belge-kart { border-radius: 18px; border: 0; background: var(--yuzey); box-shadow: var(--golge); }
 .belge-kart:hover { transform: translateY(-2px); box-shadow: var(--golge-buyuk); }
+button.ac, .belge-wp-btn, .belge-ig-btn { border: 0; border-radius: 999px; padding: 6px 13px; background: var(--zemin-2); color: var(--metin); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; transition: transform .14s, background .14s, color .14s; }
+button.ac:hover, .belge-wp-btn:hover, .belge-ig-btn:hover { background: var(--vurgu-acik); color: var(--vurgu); transform: translateY(-1px); }
 .belge-suzgec-bolum { padding-bottom: 8px; }
 .belge-suzgec-cubuk { display: flex; align-items: center; justify-content: space-between; gap: 10px 14px; flex-wrap: wrap;
   padding: 12px 14px; border-radius: 14px; background: var(--zemin-2); border: 0; margin-bottom: 10px; }
@@ -2069,7 +2073,8 @@ body.dk-ig-kilit-acik { overflow: hidden; }
   font-size: 11px; font-weight: 850; background: rgb(15 23 42 / .78); color: #fff; backdrop-filter: blur(4px); }
 
 /* Dalga 5: Öğrenci Konu Ağacı IG Özeti Düğmesi, ASDS WhatsApp/IG Paylaşım Şeridi */
-.agac-hizli-dugme.ig-kart { background: linear-gradient(135deg, rgb(240 148 51 / .12), rgb(225 48 108 / .12));
+.agac-hizli-dugme.ig-kart { display: inline-flex; align-items: center; gap: 5px; min-height: 32px; padding: 4px 11px; border-radius: 999px;
+  background: linear-gradient(135deg, rgb(240 148 51 / .12), rgb(225 48 108 / .12));
   color: #e1306c; border: 0; cursor: pointer; font: inherit; font-size: 12.5px; font-weight: 800; }
 .agac-hizli-dugme.ig-kart:hover { background: linear-gradient(135deg, #f09433, #dc2743, #bc1888); color: #fff; }
 .agac-hizli-dugme.ig-kart svg { width: 14px; height: 14px; fill: currentColor; }

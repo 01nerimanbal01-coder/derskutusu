@@ -74,11 +74,13 @@ body.kesif-page { --zemin:#ffffff; --zemin-2:#f0f7ff; --yuzey:#ffffff; --yuzey-2
 .kesif-page .suzgec-cubugu { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; padding:22px; border-radius:16px; background:var(--zemin-2); border:0; box-shadow:none; align-items:end; }
 .kesif-page .suzgec-cubugu label { min-width:0; font-size:12.5px; font-weight:700; }
 .kesif-page .suzgec-cubugu .arama { grid-column:auto; }
-.kesif-page .suzgec-cubugu :is(select,input) { width:100%; min-height:46px; background:var(--zemin); font-size:14.5px; border-radius:11px; }
+.kesif-page .suzgec-cubugu :is(select,input) { width:100%; min-height:46px; background:var(--zemin); font-size:14.5px; border-radius:11px; border:0; }
+.kesif-page .suzgec-cubugu input { padding:0 13px; }
+.kesif-page .suzgec-cubugu select { appearance:none; -webkit-appearance:none; padding:0 36px 0 13px; cursor:pointer; background:var(--zemin) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'><path d='M2.5 4.5L6 8L9.5 4.5' stroke='%2364748b' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat right 13px center; }
 .kesif-result-toolbar { display:flex; align-items:center; gap:15px; justify-content:space-between; margin:20px 0; flex-wrap:wrap; }
 .kesif-result-toolbar .sonuc-bilgi { margin:0; }
 .kesif-sort { display:flex; align-items:center; gap:8px; color:var(--soluk); font-size:12.5px; font-weight:650; }
-.kesif-sort select { border:0; border-radius:10px; padding:9px 11px; background:var(--zemin-2); color:var(--metin); min-height:42px; font:inherit; }
+.kesif-sort select { appearance:none; -webkit-appearance:none; border:0; border-radius:10px; padding:9px 34px 9px 12px; cursor:pointer; background:var(--zemin-2) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'><path d='M2.5 4.5L6 8L9.5 4.5' stroke='%2364748b' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat right 11px center; color:var(--metin); min-height:42px; font:inherit; }
 .kesif-page .kartlar { grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
 .kesif-page .kart { border:0; border-radius:20px; background:var(--yuzey); padding:22px; min-width:0; box-shadow:0 4px 16px rgb(13 36 79 / .05); transition:transform .16s cubic-bezier(.2,.8,.2,1),box-shadow .16s; }
 .kesif-page .kart h3 { font-size:18px; font-weight:750; line-height:1.38; margin-block:12px 10px; letter-spacing:-.02em; color:var(--metin); }

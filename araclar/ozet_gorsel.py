@@ -341,9 +341,7 @@ def _kavram_ozet_svg_uret(d):
     )
     for i, ((x, y), (a, s, f)) in enumerate(zip(konumlar, renkler)):
         ic += (
-            f'<line x1="230" y1="50" x2="{x + 100}" y2="{y}" class="g-c" stroke-width="1.8" stroke-linecap="round"/>'
             f'<rect x="{x}" y="{y}" width="200" height="54" rx="10" class="{a}"/>'
-            f'<rect x="{x}" y="{y}" width="200" height="54" rx="10" class="{s}" stroke-width="1.8"/>'
             f'<text x="{x + 100}" y="{y + 23}" text-anchor="middle" font-size="12" font-weight="800" class="{f}">{i + 1}. Bölüm</text>'
             f'<text x="{x + 100}" y="{y + 41}" text-anchor="middle" font-size="11" font-weight="600" class="g-y">{basliklar[i]}</text>'
         )
