@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 622 gönderi (Instagram: 39 bekleyen — 1813/1852 yayında; Facebook: 622 bekleyen).
+Toplam 618 gönderi (Instagram: 0 bekleyen — 1852/1852 yayında; Facebook: 618 bekleyen).
 
 ## bilgi-10-ingilizce-5
 Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-10-ingilizce-5.png
@@ -5904,7 +5904,7 @@ Kaydedin, sınav haftası lazım olacak. 📌
 ```
 
 ## seri-cikti-eng-6-1-r2
-Sıra: 2027-03-03 17:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-r2-1.png
+Sıra: 2027-03-03 17:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-r2-1.png
 
 ```
 School Life konusunda öğrencileriniz nerede? 📝
@@ -5919,7 +5919,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-eng-6-1-r3
-Sıra: 2027-03-03 17:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-r3-1.png
+Sıra: 2027-03-03 17:30 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-r3-1.png
 
 ```
 School Life: tek öğrenme çıktısı, tek yazılı 📝
@@ -5934,7 +5934,7 @@ Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.1.R3 kartı
 ```
 
 ## seri-cikti-e8-1-r2
-Sıra: 2027-03-03 17:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-1-r2-1.png
+Sıra: 2027-03-03 17:45 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-1-r2-1.png
 
 ```
 Friendship: tek öğrenme çıktısı, tek yazılı 📝
@@ -5949,7 +5949,7 @@ Sayfada “Öğrenme çıktısı yazılıları” bölümünde E8.1.R2 kartında
 ```
 
 ## seri-cikti-eng-6-1-v1
-Sıra: 2027-03-03 18:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-v1-1.png
+Sıra: 2027-03-03 18:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-v1-1.png
 
 ```
 6. sınıf İngilizce · ENG.6.1.V1 yazılısı hazır 📝
@@ -5964,7 +5964,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-t-o-6-16
-Sıra: 2027-03-03 18:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-6-16-1.png
+Sıra: 2027-03-03 18:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-6-16-1.png
 
 ```
 6. sınıf Türkçe · T.O.6.16 yazılısı hazır 📝
@@ -5979,7 +5979,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-e7-2-r1
-Sıra: 2027-03-03 18:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-2-r1-1.png
+Sıra: 2027-03-03 18:30 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-2-r1-1.png
 
 ```
 Sports: tek öğrenme çıktısı, tek yazılı 📝
@@ -5994,7 +5994,7 @@ Sayfada “Öğrenme çıktısı yazılıları” bölümünde E7.2.R1 kartında
 ```
 
 ## seri-cikti-eng-5-1-g1
-Sıra: 2027-03-03 18:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-1-g1-1.png
+Sıra: 2027-03-03 18:45 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-1-g1-1.png
 
 ```
 School Life konusunda öğrencileriniz nerede? 📝
@@ -6009,7 +6009,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-eng-6-1-g1
-Sıra: 2027-03-03 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-g1-1.png
+Sıra: 2027-03-03 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-g1-1.png
 
 ```
 School Life konusunda öğrencileriniz nerede? 📝
@@ -6024,7 +6024,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-t-o-6-21
-Sıra: 2027-03-03 19:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-6-21-1.png
+Sıra: 2027-03-03 19:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-6-21-1.png
 
 ```
 Okuma konusunda öğrencileriniz nerede? 📝
@@ -6039,7 +6039,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-e7-2-w1
-Sıra: 2027-03-03 19:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-2-w1-1.png
+Sıra: 2027-03-03 19:30 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-2-w1-1.png
 
 ```
 Sports konusunda öğrencileriniz nerede? 📝
@@ -6054,7 +6054,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-e8-2-r1
-Sıra: 2027-03-03 19:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-2-r1-1.png
+Sıra: 2027-03-03 19:45 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-2-r1-1.png
 
 ```
 Teen Life konusunda öğrencileriniz nerede? 📝
@@ -6069,7 +6069,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-eng-5-1-w3
-Sıra: 2027-03-03 20:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-1-w3-1.png
+Sıra: 2027-03-03 20:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-1-w3-1.png
 
 ```
 5. sınıf İngilizce · ENG.5.1.W3 yazılısı hazır 📝
@@ -6084,7 +6084,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-eng-6-1-w3
-Sıra: 2027-03-03 20:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-w3-1.png
+Sıra: 2027-03-03 20:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-w3-1.png
 
 ```
 School Life konusunda öğrencileriniz nerede? 📝
@@ -6099,7 +6099,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-t-y-6-3
-Sıra: 2027-03-03 20:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-6-3-1.png
+Sıra: 2027-03-03 20:30 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-6-3-1.png
 
 ```
 6. sınıf Türkçe · T.Y.6.3 yazılısı hazır 📝
@@ -6114,7 +6114,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-t-o-7-14
-Sıra: 2027-03-03 20:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-7-14-1.png
+Sıra: 2027-03-03 20:45 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-7-14-1.png
 
 ```
 Okuma konusunda öğrencileriniz nerede? 📝
@@ -6129,7 +6129,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-e8-2-w1
-Sıra: 2027-03-03 21:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-2-w1-1.png
+Sıra: 2027-03-03 21:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-2-w1-1.png
 
 ```
 Teen Life konusunda öğrencileriniz nerede? 📝
@@ -6144,7 +6144,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-eng-5-1-w4
-Sıra: 2027-03-03 21:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-1-w4-1.png
+Sıra: 2027-03-03 21:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-1-w4-1.png
 
 ```
 School Life konusunda öğrencileriniz nerede? 📝
@@ -6159,7 +6159,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-t-y-5-3
-Sıra: 2027-03-03 21:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-5-3-1.png
+Sıra: 2027-03-03 21:30 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-5-3-1.png
 
 ```
 5. sınıf Türkçe · T.Y.5.3 yazılısı hazır 📝
@@ -6174,7 +6174,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-eng-6-1-w4
-Sıra: 2027-03-03 21:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-w4-1.png
+Sıra: 2027-03-03 21:45 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-1-w4-1.png
 
 ```
 School Life: tek öğrenme çıktısı, tek yazılı 📝
@@ -6189,7 +6189,7 @@ Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.1.W4 kartı
 ```
 
 ## seri-cikti-t-y-6-18
-Sıra: 2027-03-03 22:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-6-18-1.png
+Sıra: 2027-03-03 22:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-6-18-1.png
 
 ```
 Yazma konusunda öğrencileriniz nerede? 📝
@@ -6204,7 +6204,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-t-o-7-15
-Sıra: 2027-03-03 22:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-7-15-1.png
+Sıra: 2027-03-03 22:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-7-15-1.png
 
 ```
 Okuma konusunda öğrencileriniz nerede? 📝
@@ -6219,7 +6219,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-t-y-5-13
-Sıra: 2027-03-03 22:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-5-13-1.png
+Sıra: 2027-03-03 22:30 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-5-13-1.png
 
 ```
 Yazma konusunda öğrencileriniz nerede? 📝
@@ -6234,7 +6234,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-t-y-6-21
-Sıra: 2027-03-03 22:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-6-21-1.png
+Sıra: 2027-03-03 22:45 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-6-21-1.png
 
 ```
 6. sınıf Türkçe · T.Y.6.21 yazılısı hazır 📝
@@ -6249,7 +6249,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-t-o-7-21
-Sıra: 2027-03-03 23:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-7-21-1.png
+Sıra: 2027-03-03 23:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-7-21-1.png
 
 ```
 Okuma: tek öğrenme çıktısı, tek yazılı 📝
@@ -6264,7 +6264,7 @@ Türkçe öğretmeni arkadaşlarınızı etiketleyin.
 ```
 
 ## seri-cikti-t-8-3-16
-Sıra: 2027-03-03 23:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-16-1.png
+Sıra: 2027-03-03 23:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-16-1.png
 
 ```
 Anlama: tek öğrenme çıktısı, tek yazılı 📝
@@ -6279,7 +6279,7 @@ Türkçe öğretmeni arkadaşlarınızı etiketleyin.
 ```
 
 ## seri-cikti-t-y-5-16
-Sıra: 2027-03-03 23:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-5-16-1.png
+Sıra: 2027-03-03 23:30 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-5-16-1.png
 
 ```
 Yazma konusunda öğrencileriniz nerede? 📝
@@ -6294,7 +6294,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-t-y-7-3
-Sıra: 2027-03-03 23:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-7-3-1.png
+Sıra: 2027-03-03 23:45 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-7-3-1.png
 
 ```
 Yazma konusunda öğrencileriniz nerede? 📝
@@ -6309,7 +6309,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-t-8-3-17
-Sıra: 2027-03-04 00:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-17-1.png
+Sıra: 2027-03-04 00:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-17-1.png
 
 ```
 8. sınıf Türkçe · T.8.3.17 yazılısı hazır 📝
@@ -6324,7 +6324,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-t-y-7-18
-Sıra: 2027-03-04 00:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-7-18-1.png
+Sıra: 2027-03-04 00:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-7-18-1.png
 
 ```
 Yazma konusunda öğrencileriniz nerede? 📝
@@ -6339,7 +6339,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-t-8-3-19
-Sıra: 2027-03-04 00:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-19-1.png
+Sıra: 2027-03-04 00:30 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-19-1.png
 
 ```
 8. sınıf Türkçe · T.8.3.19 yazılısı hazır 📝
@@ -6354,7 +6354,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-t-y-7-21
-Sıra: 2027-03-04 00:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-7-21-1.png
+Sıra: 2027-03-04 00:45 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-7-21-1.png
 
 ```
 Yazma konusunda öğrencileriniz nerede? 📝
@@ -6369,7 +6369,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-t-8-3-25
-Sıra: 2027-03-04 01:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-25-1.png
+Sıra: 2027-03-04 01:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-25-1.png
 
 ```
 8. sınıf Türkçe · T.8.3.25 yazılısı hazır 📝
@@ -6384,7 +6384,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-t-8-3-26
-Sıra: 2027-03-04 01:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-26-1.png
+Sıra: 2027-03-04 01:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-26-1.png
 
 ```
 Anlama konusunda öğrencileriniz nerede? 📝
@@ -6399,7 +6399,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-t-8-3-34
-Sıra: 2027-03-04 01:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-34-1.png
+Sıra: 2027-03-04 01:30 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-34-1.png
 
 ```
 8. sınıf Türkçe · T.8.3.34 yazılısı hazır 📝
@@ -6414,7 +6414,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-t-8-4-1
-Sıra: 2027-03-04 01:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-1-1.png
+Sıra: 2027-03-04 01:45 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-1-1.png
 
 ```
 Yazma konusunda öğrencileriniz nerede? 📝
@@ -6425,65 +6425,5 @@ Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap ana
 👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
 Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
 Zümrenizle paylaşın; kâğıtlar herkese açık.
-#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
-```
-
-## seri-cikti-t-8-4-4
-Sıra: 2027-03-04 02:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-4-1.png
-
-```
-Yazma: tek öğrenme çıktısı, tek yazılı 📝
-8. sınıf Türkçe öğrenme çıktısı T.8.4.4: “Yazma stratejilerini uygular.”
-Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
-Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
-👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-4.pdf
-👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
-Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
-Türkçe öğretmeni arkadaşlarınızı etiketleyin.
-#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
-```
-
-## seri-cikti-t-8-4-9
-Sıra: 2027-03-04 02:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-9-1.png
-
-```
-8. sınıf Türkçe · T.8.4.9 yazılısı hazır 📝
-8. sınıf Türkçe öğrenme çıktısı T.8.4.9: “Yazılarında anlatım biçimlerini kullanır.”
-Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
-Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
-👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-9.pdf
-👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
-Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.9 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
-Kaydedin, ünite sonunda lazım olacak. 📌
-#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
-```
-
-## seri-cikti-t-8-4-15
-Sıra: 2027-03-04 02:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-15-1.png
-
-```
-Yazma konusunda öğrencileriniz nerede? 📝
-8. sınıf Türkçe öğrenme çıktısı T.8.4.15: “Yazılarında uygun geçiş ve bağlantı ifadelerini kullanır.”
-Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
-Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
-👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-15.pdf
-👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
-Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.15 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
-Zümrenizle paylaşın; kâğıtlar herkese açık.
-#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
-```
-
-## seri-cikti-t-8-4-18
-Sıra: 2027-03-04 02:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-18-1.png
-
-```
-Yazma: tek öğrenme çıktısı, tek yazılı 📝
-8. sınıf Türkçe öğrenme çıktısı T.8.4.18: “Cümlenin ögelerini ayırt eder.”
-Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
-Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
-👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-18.pdf
-👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
-Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.18 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
-Türkçe öğretmeni arkadaşlarınızı etiketleyin.
 #derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
 ```
