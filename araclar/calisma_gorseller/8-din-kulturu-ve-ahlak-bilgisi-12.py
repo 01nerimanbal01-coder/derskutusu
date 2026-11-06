@@ -1,130 +1,117 @@
-"""8. sınıf Din Kültürü ve Ahlak Bilgisi 12. hafta (Maûn Suresi ve Anlamı, 2. Ünite Genel Değerlendirmesi) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178); Noto Sans 12px."""
+"""8-din-kulturu-ve-ahlak-bilgisi-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=21):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def maun_1_3_karti():
-    ic = kutu(6, 6, 348, 103, TUR_A, TUR)
-    ic += yazi(180, 24, 'Maûn Suresi 1–3. Ayetler Meali', TUR, kalin=True)
-    ic += yazi(180, 48, '«1. Gördün mü, o hesap ve ceza gününü (dini) yalanlayanı!', LAC, kalin=True)
-    ic += yazi(180, 72, '2. İşte o, yetimi itip kakan,', KIR, kalin=True)
-    ic += yazi(180, 95, '3. Yoksulu doyurmaya teşvik etmeyen kimsedir.»', KIR, kalin=True)
-    return svg(ic, 'Maûn suresi 1, 2 ve 3. ayetlerin meali kartı.')
-
-
-def maun_cozumleme_tablosu():
-    kartlar = [
-        (6, 6, 'Ayet 2: Yetimi İtip Kakar', 'Erdem: Yetimi Korumak', MAVI, MAVI_A),
-        (184, 6, 'Ayet 3: Yoksulu Gözetmez', 'Erdem: İnfaka Teşvik', YES, YES_A),
-        (6, 60, 'Ayet 6: Gösteriş Yaparlar', 'Erdem: İhlas (Samimiyet)', TUR, TUR_A),
-        (184, 60, 'Ayet 7: Yardımı Esirgerler', 'Erdem: Cömertlik / Maûn', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Maûn suresinde eleştirilen davranışlar ve istenen erdemler.')
-
-
-def maun_4_7_karti():
-    ic = kutu(6, 6, 348, 103, KIR_A, KIR)
-    ic += yazi(180, 24, 'Maûn Suresi 4–7. Ayetler Meali', KIR, kalin=True)
-    ic += yazi(180, 48, '«4–5. Yazıklar olsun o namaz kılanlara ki, onlar namazlarını ciddiye almazlar.', LAC)
-    ic += yazi(180, 72, '6. Onlar (namazlarıyla) gösteriş (riya) yaparlar.', KIR, kalin=True)
-    ic += yazi(180, 95, '7. Ufacık bir yardıma (zekâta / maûn’a) bile engel olurlar.»', LAC, kalin=True)
-    return svg(ic, 'Maûn suresi 4, 5, 6 ve 7. ayetlerin meali kartı.')
-
-
-def unite_degerlendirme_semasi():
-    kartlar = [
-        (6, 6, 'Altın ve Ticaret Malları', 'Zekât Oranı: 1/40 (%2,5)', YES, YES_A),
-        (184, 6, 'Toprak Ürünleri (Öşür)', 'Yağmurla: 1/10 · Masraflı: 1/20', MAVI, MAVI_A),
-        (6, 60, 'Fıtır Sadakası (Fitre) (?)', 'Kurban Bayramı’nda Zenginlere?', KIR, KIR_A),
-        (184, 60, 'Tevbe Suresi 60. Ayet', 'Zekât Verilecek 8 Sınıf', TUR, TUR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'İkinci ünite zekât ve sadaka oranları genel değerlendirme şeması.')
-
-
-def riya_ihlas_karsilastirma():
-    ic = kutu(6, 6, 172, 103, KIR_A, KIR)
-    ic += yazi(92, 26, 'RİYA (Gösterişçilik)', KIR, kalin=True)
-    ic += yazi(92, 54, '• İnsanlar görsün ve övsün diye', LAC)
-    ic += yazi(92, 76, '• İbadetin sevabını yok eder', LAC)
-    ic += yazi(92, 96, '• Maûn 6. ayette kınanır', KIR, kalin=True)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 26, 'İHLAS (Samimiyet)', YES, kalin=True)
-    ic += yazi(269, 54, '• Yalnız Allah (cc) rızası için', LAC)
-    ic += yazi(269, 76, '• İbadeti anlamlı ve makbul kılar', LAC)
-    ic += yazi(269, 96, '• Gizli ve incitmeden yardım', YES, kalin=True)
-    return svg(ic, 'Riya ve ihlas kavramlarının karşılaştırma kartı.')
-
-
-def maun_okunus_sirasi():
-    adimlar = [
-        (6, 'Ayet 1–2', 'Era’eytellezî...', MAVI, MAVI_A),
-        (94, 'Ayet 3', 'Ve lâ yehuddu...', YES, YES_A),
-        (182, 'Ayet 4–5', 'Feveylün li’l...', TUR, TUR_A),
-        (270, 'Ayet 6–7', 'Ellezîne hüm...', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, b1, b2, r, z in adimlar:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 36, b1, r, kalin=True)
-        ic += yazi(x + 42, 70, b2, LAC, kalin=True)
-    return svg(ic, 'Maûn suresinin Arapça okunuş bölümlerinin sıralanması.')
-
-
-def bakara_maun_ortak_mesaj():
-    ic = kutu(6, 6, 172, 103, MAVI_A, MAVI)
-    ic += yazi(92, 26, 'Bakara Suresi 264. Ayet', MAVI, kalin=True)
-    ic += yazi(92, 54, '«Sadakalarınızı başa kakmak', LAC)
-    ic += yazi(92, 76, 've gönül kırmak suretiyle', LAC)
-    ic += yazi(92, 96, 'boşa çıkarmayın...»', MAVI, kalin=True)
-    ic += kutu(184, 6, 170, 103, TUR_A, TUR)
-    ic += yazi(269, 26, 'Maûn Suresi 6. Ayet', TUR, kalin=True)
-    ic += yazi(269, 54, '«Onlar ibadetlerinde', LAC)
-    ic += yazi(269, 76, 'gösteriş (riya) yaparlar', LAC)
-    ic += yazi(269, 96, 've yardımı esirgerler.»', KIR, kalin=True)
-    return svg(ic, 'Bakara 264 ve Maûn 6. ayetlerin ortak ihlas mesajı.')
-
-
-def ibadet_ahlak_butunlugu():
-    ic = kutu(6, 6, 348, 103, CAM_A, CAM)
-    ic += yazi(180, 26, 'Maûn Suresinin Temel Mesajı: İbadet ve Ahlak Bütünlüğü', CAM, kalin=True)
-    ic += yazi(180, 56, 'Samimi İbadet (Namaz)  +  Sosyal Sorumluluk (Yetim/Yoksul/Maûn)', LAC, kalin=True)
-    ic += yazi(180, 86, 'İbadet, insanı merhametli ve yardımsever kıldığı ölçüde amacına ulaşır.', YES, kalin=True)
-    return svg(ic, 'Maûn suresinde ibadet ve sosyal yardımlaşma bütünlüğü panosu.')
+GORSELLER = {1: '<svg viewBox="0 0 350 124" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maûn suresi 1, 2 ve 3. '
+    'ayetlerin meali kartı."><rect x="4" y="3" width="342" height="119" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Maûn '
+    'Suresi 1–3. Ayetler Meali</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">«1. Gördün mü, o hesap ve ceza gününü</text><text x="11.0" y="56.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">(dini) yalanlayanı!</text><text x="11.0" '
+    'y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">2. İşte o, '
+    'yetimi itip kakan,</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">3. Yoksulu doyurmaya teşvik etmeyen</text><text x="11.0" y="113.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">kimsedir.»</text></svg>',
+ 2: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maûn suresinde '
+    'eleştirilen davranışlar ve istenen erdemler."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Ayet 2: Yetimi İtip</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Kakar</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Erdem: Yetimi</text><text x="87.5" y="77.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Korumak</text><rect '
+    'x="179" y="3" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="30.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Ayet 3: '
+    'Yoksulu</text><text x="262.5" y="49.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Gözetmez</text><text x="262.5" y="68.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Erdem: İnfaka Teşvik</text><rect x="4" y="91" width="167" height="84" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Ayet 6: Gösteriş</text><text x="87.5" y="128.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Yaparlar</text><text x="87.5" y="146.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Erdem: İhlas</text><text '
+    'x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">(Samimiyet)</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Ayet 7: Yardımı</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Esirgerler</text><text x="262.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Erdem: Cömertlik /</text><text x="262.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Maûn</text></svg>',
+ 5: '<svg viewBox="0 0 350 143" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maûn suresi 4, 5, 6 ve '
+    '7. ayetlerin meali kartı."><rect x="4" y="3" width="342" height="138" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Maûn Suresi 4–7. Ayetler Meali</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«4–5. Yazıklar olsun o namaz kılanlara ki,</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">onlar '
+    'namazlarını ciddiye almazlar.</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d63a3a">6. Onlar (namazlarıyla) gösteriş (riya)</text><text x="11.0" y="94.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">yaparlar.</text><text '
+    'x="11.0" y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">7. '
+    'Ufacık bir yardıma (zekâta / maûn’a) bile</text><text x="11.0" y="131.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">engel olurlar.»</text></svg>',
+ 6: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İkinci ünite zekât ve '
+    'sadaka oranları genel değerlendirme şeması."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Altın ve Ticaret</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Malları</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Zekât Oranı: 1/40</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">(%2,5)</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Toprak Ürünleri</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">(Öşür)</text><text x="262.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yağmurla: 1/10 ·</text><text x="262.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Masraflı: '
+    '1/20</text><rect x="4" y="91" width="167" height="84" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="87.5" '
+    'y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Fıtır Sadakası '
+    '(Fitre)</text><text x="87.5" y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d63a3a">(?)</text><text x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Kurban Bayramı’nda</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Zenginlere?</text><rect x="179" y="91" width="167" height="84" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Tevbe Suresi 60.</text><text x="262.5" y="128.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Ayet</text><text x="262.5" y="146.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Zekât Verilecek '
+    '8</text><text x="262.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sınıf</text></svg>',
+ 8: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maûn suresinin Arapça '
+    'okunuş bölümlerinin sıralanması."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Ayet 1–2 ·</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Era’eytellezî...</text><rect x="179" y="3" width="167" height="46" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Ayet 3 · Ve lâ</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">yehuddu...</text><rect x="4" y="53" '
+    'width="167" height="46" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Ayet 4–5 · Feveylün</text><text x="87.5" '
+    'y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">li’l...</text><rect x="179" y="53" width="167" height="46" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="71.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Ayet 6–7 · Ellezîne</text><text x="262.5" y="89.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">hüm...</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bakara 264 ve Maûn 6. '
+    'ayetlerin ortak ihlas mesajı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Bakara Suresi 264. Ayet</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«Sadakalarınızı başa kakmak ve gönül kırmak</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">suretiyle boşa '
+    'çıkarmayın...»</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Maûn '
+    'Suresi 6. Ayet</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">«Onlar ibadetlerinde gösteriş (riya) yaparlar</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ve yardımı esirgerler.»</text></svg>',
+ 11: '<svg viewBox="0 0 350 124" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maûn suresinde ibadet '
+     've sosyal yardımlaşma bütünlüğü panosu."><rect x="4" y="3" width="342" height="119" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+     'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0e8fa8">Maûn Suresinin Temel Mesajı: İbadet ve</text><text x="11.0" y="37.8" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Ahlak Bütünlüğü</text><text x="11.0" '
+     'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Samimi İbadet '
+     '(Namaz) + Sosyal</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0b2257">Sorumluluk (Yetim/Yoksul/Maûn)</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">İbadet, insanı merhametli ve yardımsever</text><text x="11.0" '
+     'y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">kıldığı ölçüde '
+     'amacına ulaşır.</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = maun_1_3_karti()
-    s[2]['gorsel'] = maun_cozumleme_tablosu()
-    s[5]['gorsel'] = maun_4_7_karti()
-    s[6]['gorsel'] = unite_degerlendirme_semasi()
-    s[7]['gorsel'] = riya_ihlas_karsilastirma()
-    s[8]['gorsel'] = maun_okunus_sirasi()
-    s[9]['gorsel'] = bakara_maun_ortak_mesaj()
-    s[11]['gorsel'] = ibadet_ahlak_butunlugu()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

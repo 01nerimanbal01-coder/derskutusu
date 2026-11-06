@@ -1,153 +1,108 @@
-"""8. sınıf Matematik 11. hafta (Veri Analizi: Çizgi, Sütun ve Daire Grafiği) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178); Noto Sans 12px."""
+"""8-matematik-11 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="12"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=21):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def sube_sutun_grafigi():
-    ic = kutu(6, 6, 185, 103, MAVI_A, MAVI)
-    ic += f'<line x1="28" y1="88" x2="174" y2="88" stroke="{LAC}" stroke-width="1.3"/>'
-    ic += f'<rect x="40" y="48" width="26" height="40" fill="{MAVI}"/>'
-    ic += f'<rect x="88" y="36" width="26" height="52" fill="{YES}"/>'
-    ic += f'<rect x="136" y="58" width="26" height="30" fill="{TUR}"/>'
-    ic += yazi(53, 42, '24', MAVI, kalin=True)
-    ic += yazi(101, 30, '30', YES, kalin=True)
-    ic += yazi(149, 52, '18', TUR, kalin=True)
-    ic += yazi(53, 103, '8-A', LAC)
-    ic += yazi(101, 103, '8-B', YES, kalin=True)
-    ic += yazi(149, 103, '8-C', LAC)
-    ic += kutu(199, 6, 155, 103, YES_A, YES)
-    ic += yazi(276, 30, 'Daireye Dönüşüm', YES, kalin=True)
-    ic += yazi(276, 56, 'Toplam = 24+30+18 = 72', LAC)
-    ic += yazi(276, 82, '72 kişi → 360° (×5°)', MAVI, kalin=True)
-    return svg(ic, '8-A (24), 8-B (30) ve 8-C (18) şubelerinin öğrenci sayısı sütun grafiği.')
-
-
-def kutuphane_dagilimi():
-    kartlar = [
-        (6, 6, '1. Roman: 60 adet', 'Toplam: 180 kitap', MAVI, MAVI_A),
-        (184, 6, '2. Hikâye: 45 adet', 'Merkez açı = ?', YES, YES_A),
-        (6, 60, '3. Şiir: 30 adet', 'Oran = ?', TUR, TUR_A),
-        (184, 60, '4. Bilim: 45 adet', 'Merkez açı = ?', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Kütüphanedeki 180 kitabın dört türe dağılım kartları.')
-
-
-def tahil_daire_grafigi():
-    ic = kutu(6, 6, 165, 103, TUR_A, TUR)
-    ic += f'<circle cx="88" cy="58" r="40" fill="#fde047" stroke="{TUR}" stroke-width="1.5"/>'
-    ic += f'<path d="M 88 58 L 88 18 A 40 40 0 0 1 128 58 Z" fill="#86efac" stroke="{YES}" stroke-width="1.3"/>'
-    ic += f'<path d="M 88 58 L 128 58 A 40 40 0 0 1 54 78 Z" fill="#93c5fd" stroke="{MAVI}" stroke-width="1.3"/>'
-    ic += yazi(106, 46, '90°', YES, kalin=True)
-    ic += yazi(96, 80, '120°', MAVI, kalin=True)
-    ic += yazi(64, 50, '150°', TUR, kalin=True)
-    ic += kutu(179, 6, 175, 103, YES_A, YES)
-    ic += yazi(266, 28, 'Tahıl Dağılımı (360°)', YES, kalin=True)
-    ic += yazi(266, 52, 'Buğday: 150° · Arpa: 120°', LAC)
-    ic += yazi(266, 74, 'Mısır: 90° = 54 ton', KIR, kalin=True)
-    ic += yazi(266, 96, 'Buğday (150°) = ? ton', MAVI, kalin=True)
-    return svg(ic, 'Buğday 150°, arpa 120° ve mısır 90° olan daire grafiği.')
-
-
-def tisort_cizgi_grafigi():
-    ic = kutu(6, 6, 348, 103, MAVI_A, MAVI)
-    ic += yazi(180, 22, 'Dört Günlük Tişört Satış Adedi (Çizgi Grafiği)', MAVI, kalin=True)
-    ic += f'<line x1="44" y1="86" x2="324" y2="86" stroke="{LAC}" stroke-width="1.3"/>'
-    ic += f'<polyline points="70,64 145,52 220,74 295,36" fill="none" stroke="{KIR}" stroke-width="2.2"/>'
-    for x, y, v, g in [(70, 64, '35', 'Pzt'), (145, 52, '42', 'Sal'), (220, 74, '28', 'Çar'), (295, 36, '55', 'Per')]:
-        ic += f'<circle cx="{x}" cy="{y}" r="3.5" fill="{KIR}"/>'
-        ic += yazi(x, y - 7, v, KIR, kalin=True)
-        ic += yazi(x, 102, g, LAC)
-    return svg(ic, 'Pazartesi 35, Salı 42, Çarşamba 28 ve Perşembe 55 tişört satışını gösteren çizgi grafiği.')
-
-
-def butce_yuzde_grafigi():
-    ogeler = [
-        (6, 'Kira', '%35', KIR, KIR_A),
-        (94, 'Mutfak', '%25', MAVI, MAVI_A),
-        (182, 'Eğitim', '%20', YES, YES_A),
-        (270, 'Diğer', '%20', TUR, TUR_A),
-    ]
-    ic = ''
-    for x, ad, yuzde, r, z in ogeler:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 36, ad, r, kalin=True)
-        ic += yazi(x + 42, 68, yuzde, LAC, kalin=True)
-        ic += yazi(x + 42, 94, '× 3,6°', r)
-    return svg(ic, 'Aile bütçesi yüzde dağılımı ve daire grafiği açı dönüşümü.')
-
-
-def soru_sayisi_kartlari():
-    gunler = [
-        (6, 'Pazartesi', '80 Soru', MAVI, MAVI_A),
-        (94, 'Salı', '100 Soru', YES, YES_A),
-        (182, 'Çarşamba', '60 Soru', TUR, TUR_A),
-        (270, 'Perşembe', '120 Soru', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, g, s, r, z in gunler:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 34, g, r, kalin=True)
-        ic += yazi(x + 42, 66, s, LAC, kalin=True)
-        ic += yazi(x + 42, 94, 'Toplam: 360', r)
-    return svg(ic, 'Dört günde çözülen toplam 360 sorunun günlere dağılımı.')
-
-
-def uretim_degisim_sema():
-    ic = kutu(6, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(91, 26, '1. Durum (Toplam 180)', MAVI, kalin=True)
-    ic += yazi(91, 52, 'K: 40 · L: 60 · M: 80', LAC)
-    ic += yazi(91, 78, 'M Açısı = (80/180)×360°', MAVI, kalin=True)
-    ic += yazi(91, 98, '= 160°', KIR, kalin=True)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 26, '2. Durum (K + 20 Adet)', YES, kalin=True)
-    ic += yazi(269, 52, 'K: 60 · L: 60 · M: 80', LAC)
-    ic += yazi(269, 78, 'Yeni Toplam = 200 ürün', YES, kalin=True)
-    ic += yazi(269, 98, 'M Yeni Açı = (80/200)×360°', KIR, kalin=True)
-    return svg(ic, 'K ürünü artışı sonrası M ürününün daire grafiği merkez açısı değişimi.')
-
-
-def grafik_secimi_karsilastirma():
-    ic = kutu(6, 6, 170, 103, CAM_A, CAM)
-    ic += yazi(91, 26, 'Araştırma 1: Meteoroloji', CAM, kalin=True)
-    ic += yazi(91, 54, 'Ankara’nın 5 günlük', LAC)
-    ic += yazi(91, 76, 'sıcaklık değişimi takibi', LAC)
-    ic += yazi(91, 98, '→ Zamana bağlı değişim', CAM, kalin=True)
-    ic += kutu(184, 6, 170, 103, MOR_A, MOR)
-    ic += yazi(269, 26, 'Araştırma 2: Ekonomi', MOR, kalin=True)
-    ic += yazi(269, 54, 'Aylık gelirin harcama', LAC)
-    ic += yazi(269, 76, 'kalemlerine oransal payı', LAC)
-    ic += yazi(269, 98, '→ Parça - Bütün oranı', MOR, kalin=True)
-    return svg(ic, 'Meteoroloji sıcaklık takibi ve ekonomi bütçe payı için uygun grafik seçimi.')
+GORSELLER = {1: '<svg viewBox="0 0 350 90" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="8-A (24), 8-B (30) ve 8-C '
+    '(18) şubelerinin öğrenci sayısı sütun grafiği."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">30 · 24 · 18</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">8-A</text><text x="87.5" y="58.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">8-B</text><text x="87.5" y="77.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">8-C</text><rect x="179" y="3" width="167" '
+    'height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Daireye Dönüşüm</text><text x="262.5" '
+    'y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Toplam = '
+    '24+30+18 =</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">72</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">72 kişi → 360° (×5°)</text></svg>',
+ 2: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kütüphanedeki 180 '
+    'kitabın dört türe dağılım kartları."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Roman: 60 adet</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Toplam: 180 kitap</text><rect x="179" y="3" width="167" height="46" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Hikâye: 45 adet</text><text x="262.5" y="39.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Merkez açı = '
+    '?</text><rect x="4" y="53" width="167" height="46" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" '
+    'y="71.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. Şiir: 30 '
+    'adet</text><text x="87.5" y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Oran = ?</text><rect x="179" y="53" width="167" height="46" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="71.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Bilim: 45 adet</text><text x="262.5" y="89.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Merkez açı = ?</text></svg>',
+ 5: '<svg viewBox="0 0 350 115" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Buğday 150°, arpa 120° '
+    've mısır 90° olan daire grafiği."><rect x="4" y="3" width="342" height="25" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">150° · 90° · 120°</text><rect x="4" y="31" width="342" height="82" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Tahıl Dağılımı (360°)</text><text x="11.0" y="65.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Buğday: 150° · Arpa: 120°</text><text '
+    'x="11.0" y="84.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Mısır: '
+    '90° = 54 ton</text><text x="11.0" y="103.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Buğday (150°) = ? ton</text></svg>',
+ 6: '<svg viewBox="0 0 350 68" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pazartesi 35, Salı 42, '
+    'Çarşamba 28 ve Perşembe 55 tişört satışını gösteren çizgi grafiği."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Dört Günlük Tişört Satış Adedi (Çizgi Grafiği)</text><text x="11.0" y="37.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">55 · 42 · 35 · '
+    '28</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Pzt · Sal · Çar · Per</text></svg>',
+ 7: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aile bütçesi yüzde '
+    'dağılımı ve daire grafiği açı dönüşümü."><rect x="4" y="3" width="167" height="46" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Kira · %35</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#d63a3a">× 3,6°</text><rect x="179" y="3" width="167" height="46" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Mutfak · %25</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">× 3,6°</text><rect x="4" y="53" width="167" '
+    'height="46" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Eğitim · %20</text><text x="87.5" y="89.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">× 3,6°</text><rect '
+    'x="179" y="53" width="167" height="46" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="71.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Diğer · %20</text><text '
+    'x="262.5" y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">× '
+    '3,6°</text></svg>',
+ 8: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört günde çözülen '
+    'toplam 360 sorunun günlere dağılımı."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Pazartesi · 80 Soru</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Toplam: 360</text><rect x="179" y="3" width="167" height="46" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Salı · 100 Soru</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Toplam: 360</text><rect x="4" y="53" '
+    'width="167" height="46" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Çarşamba · 60 Soru</text><text x="87.5" '
+    'y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Toplam: '
+    '360</text><rect x="179" y="53" width="167" height="46" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="71.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Perşembe · 120 '
+    'Soru</text><text x="262.5" y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#7c3aed">Toplam: 360</text></svg>',
+ 9: '<svg viewBox="0 0 350 153" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="K ürünü artışı sonrası M '
+    'ürününün daire grafiği merkez açısı değişimi."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Durum (Toplam 180)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">K: 40 · L: 60 · M: 80</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">M Açısı = (80/180)×360° = '
+    '160°</text><rect x="4" y="69" width="342" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Durum (K + 20 '
+    'Adet)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">K: 60 · L: 60 · M: 80</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Yeni Toplam = 200 ürün</text><text x="11.0" y="141.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">M Yeni Açı = (80/200)×360°</text></svg>',
+ 11: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Meteoroloji sıcaklık '
+     'takibi ve ekonomi bütçe payı için uygun grafik seçimi."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e0f4f8" '
+     'stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#0e8fa8">Araştırma 1: Meteoroloji</text><text x="11.0" y="37.8" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ankara’nın 5 günlük sıcaklık değişimi takibi '
+     '→</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">Zamana bağlı değişim</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+     'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#7c3aed">Araştırma 2: Ekonomi</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Aylık gelirin harcama kalemlerine oransal</text><text x="11.0" '
+     'y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">payı → Parça - '
+     'Bütün oranı</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = sube_sutun_grafigi()
-    s[2]['gorsel'] = kutuphane_dagilimi()
-    s[5]['gorsel'] = tahil_daire_grafigi()
-    s[6]['gorsel'] = tisort_cizgi_grafigi()
-    s[7]['gorsel'] = butce_yuzde_grafigi()
-    s[8]['gorsel'] = soru_sayisi_kartlari()
-    s[9]['gorsel'] = uretim_degisim_sema()
-    s[11]['gorsel'] = grafik_secimi_karsilastirma()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

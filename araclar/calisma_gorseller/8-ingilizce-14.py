@@ -1,117 +1,128 @@
-# -*- coding: utf-8 -*-
-"""8-ingilizce-14 çalışma kâğıdı görselleri.
-SVG viewBox="0 0 360 115"; insan figürü yok (K024); metin arkası beyaz bant yok (K178)."""
+"""8-ingilizce-14 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+GORSELLER = {0: '<svg viewBox="0 0 350 209" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="8-ingilizce-14 telefon '
+    'kalıpları kartları"><rect x="4" y="3" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">This is '
+    '... calling</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Kendini tanıtma · Speaking / Calling</text><rect x="4" y="50" width="342" height="63" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">KEY PHONE CONVERSATION PHRASES · Put</text><text x="11.0" y="84.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">me through</text><text '
+    'x="11.0" y="103.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Telefonu bağlama · May I speak to...?</text><rect x="4" y="116" width="342" height="44" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="132.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Hold on / Hang on</text><text x="11.0" y="150.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hatta bekletme · Don’t hang up</text><rect '
+    'x="4" y="163" width="342" height="44" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="179.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Line is '
+    'engaged</text><text x="11.0" y="197.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Hat meşgul (Busy) · Not available</text></svg>',
+ 1: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="8-ingilizce-14 müsaitlik '
+    'diyaloğu"><rect x="4" y="3" width="342" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">PHONE DIALOGUE: '
+    'AVAILABLE vs. NOT</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">AVAILABLE</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">When the Person Is In (+)</text><text x="11.0" y="75.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hold on a moment, I’ll get '
+    'him/her.</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">I’ll put you through to her office.</text><rect x="4" y="107" width="342" height="63" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="123.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">When the Person Is Out (-)</text><text x="11.0" y="141.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">I’m sorry, she isn’t available '
+    'now.</text><text x="11.0" y="160.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">She has gone out. Leave a message?</text></svg>',
+ 2: '<svg viewBox="0 0 350 181" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="8-ingilizce-14 resmi '
+    'samimi ve ani karar"><rect x="4" y="3" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Informal Inquiry</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Is Pam in / there? · Hang on a minute</text><rect x="4" y="50" width="342" '
+    'height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">INFORMAL, FORMAL &amp; SPONTANEOUS</text><text x="11.0" '
+    'y="84.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">DECISIONS</text><text x="11.0" y="103.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Formal Request</text><text x="11.0" y="122.4" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">May I speak to...? · Could you put me...</text><rect x="4" y="135" '
+    'width="342" height="44" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="151.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Time of Speaking</text><text x="11.0" '
+    'y="169.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">I’ll take the '
+    'phone · I’ll call back soon</text></svg>',
+ 5: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="8-ingilizce-14 will ile '
+    'ani kararlar"><rect x="4" y="3" width="342" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">DECISIONS TAKEN '
+    'AT THE TIME OF</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">SPEAKING (WILL)</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Situation 1: Ringing Phone</text><text x="11.0" y="75.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">A: The telephone is '
+    'ringing!</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">B: Don’t worry, I’ll (‘ll) answer it.</text><rect x="4" y="107" width="342" height="63" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="123.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Situation 2: Leaving a Note</text><text x="11.0" y="141.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">A: Bora isn’t at home right now.</text><text '
+    'x="11.0" y="160.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">B: OK, '
+    'I’ll text him about the match.</text></svg>',
+ 6: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="8-ingilizce-14 hat '
+    'sorunu ve tekrar isteme"><rect x="4" y="3" width="342" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">COMMUNICATION PROBLEMS ON THE</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">PHONE</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Problem: Bad Line / Low Voice</text><text x="11.0" y="75.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">It’s a bad line. I can’t '
+    'hear you well.</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#5b6479">The connection is very noisy.</text><rect x="4" y="107" width="342" height="63" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="123.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Polite Clarification Request</text><text x="11.0" y="141.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Could you speak louder, please?</text><text '
+    'x="11.0" y="160.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Could '
+    'you repeat that / spell your name?</text></svg>',
+ 7: '<svg viewBox="0 0 350 181" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="8-ingilizce-14 mesaj '
+    'notu kartı"><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Caller '
+    '(Arayan)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Mert called at 4 p.m.</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Selin was out</text><rect x="4" y="69" width="342" height="63" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">TELEPHONE MESSAGE MEMO (FOR SELİN)</text><text x="11.0" y="103.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Topic (Konu)</text><text '
+    'x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">About '
+    'the science project deadline</text><rect x="4" y="135" width="342" height="44" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="151.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Action (İstek)</text><text x="11.0" y="169.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Please call him back before 7:00 p.m.</text></svg>',
+ 8: '<svg viewBox="0 0 350 195" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="8-ingilizce-14 resmi '
+    'telefon akışı"><rect x="4" y="3" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">STEPS OF A '
+    'FORMAL PHONE CALL</text><rect x="4" y="31" width="342" height="44" rx="5" fill="#f8fafc" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Greeting</text><text x="11.0" y="65.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Star Company, · How can I help?</text><rect x="4" y="78" width="342" height="63" rx="5" fill="#f8fafc" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="94.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">2. Introducing</text><text x="11.0" y="112.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">This is David.</text><text x="11.0" y="131.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">May I speak '
+    'to...?</text><rect x="4" y="144" width="342" height="23" rx="5" fill="#f8fafc" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="160.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan '
+    'font-weight="700" fill="#d97706">3. Connecting:</tspan> Hold on, I’ll put you through</text><rect x="4" y="170" width="342" '
+    'height="23" rx="5" fill="#f8fafc" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="186.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#7c3aed">4. '
+    'Waiting:</tspan> Thank you, I’m on the line</text></svg>',
+ 11: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="8-ingilizce-14 mesaj '
+     'bırakma rehberi"><rect x="4" y="3" width="342" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+     'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+     'fill="#2451d6">WRITING GUIDE: CALLING &amp; LEAVING A</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">MESSAGE</text><text x="11.0" y="56.6" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Step 1: Asking for Ece</text><text x="11.0" '
+     'y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hello, this is '
+     '[Name] calling. Is Ece in?</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#5b6479">May I speak to Ece, please?</text><rect x="4" y="107" width="342" height="63" rx="5" fill="#fff1df" '
+     'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="123.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#d97706">Step 2: Leaving a Message (Will)</text><text x="11.0" y="141.8" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Could you tell her to '
+     'call me back?</text><text x="11.0" y="160.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#5b6479">I’ll call her again at 6 o’clock.</text></svg>'}
 
-
-def svg(ic, etiket):
-    return f'<svg viewBox="0 0 360 115" style="width:100%;max-height:24mm;display:block;margin:1mm auto;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=9.2, renk=LAC, hiza='middle', ince=False):
-    temiz = str(metin).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{temiz}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def kart4(baslik, kartlar, etiket, ana_renk=MAVI, arka_renk=GRI_A):
-    ic = kutu(4, 4, 352, 107, arka_renk, ana_renk, 6, 0.75)
-    ic += yazi(180, 19, baslik, 9.6, ana_renk)
-    renkler = [(MAVI, MAVI_A), (YES, YES_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, d1, d2) in enumerate(kartlar):
-        c, a = renkler[i % 4]
-        x = 10 + i * 86
-        ic += kutu(x, 27, 80, 77, a, c, 6, 0.75)
-        ic += yazi(x + 40, 44, b, 8.3, c)
-        ic += f'<line x1="{x + 6}" y1="52" x2="{x + 74}" y2="52" stroke="{c}" stroke-width="0.6"/>'
-        ic += yazi(x + 40, 69, d1, 7.6, LAC, ince=True)
-        ic += yazi(x + 40, 88, d2, 7.2, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def karsilastir2(baslik, sol_b, sol_d1, sol_d2, sag_b, sag_d1, sag_d2, etiket, r1=MAVI, a1=MAVI_A, r2=TUR, a2=TUR_A):
-    ic = kutu(4, 4, 352, 107, GRI_A, r1, 6, 0.75)
-    ic += yazi(180, 19, baslik, 9.6, r1)
-    ic += kutu(12, 27, 162, 77, a1, r1, 6, 0.75)
-    ic += yazi(93, 45, sol_b, 8.8, r1)
-    ic += yazi(93, 66, sol_d1, 7.8, LAC, ince=True)
-    ic += yazi(93, 86, sol_d2, 7.4, SOLUK, ince=True)
-    ic += kutu(186, 27, 162, 77, a2, r2, 6, 0.75)
-    ic += yazi(267, 45, sag_b, 8.8, r2)
-    ic += yazi(267, 66, sag_d1, 7.8, LAC, ince=True)
-    ic += yazi(267, 86, sag_d2, 7.4, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def uclu_sema(baslik, uclu, etiket, ana_renk=YES, arka_renk=YES_A):
-    ic = kutu(4, 4, 352, 107, arka_renk, ana_renk, 6, 0.75)
-    ic += yazi(180, 19, baslik, 9.6, ana_renk)
-    renkler = [(MAVI, MAVI_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, d1, d2) in enumerate(uclu):
-        c, a = renkler[i % 3]
-        x = 12 + i * 114
-        ic += kutu(x, 27, 108, 77, a, c, 6, 0.75)
-        ic += yazi(x + 54, 45, b, 8.6, c)
-        ic += yazi(x + 54, 66, d1, 7.6, LAC, ince=True)
-        ic += yazi(x + 54, 86, d2, 7.2, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def akis4(baslik, adimlar, etiket, ana_renk=CAM):
-    ic = kutu(4, 4, 352, 107, CAM_A, ana_renk, 6, 0.75)
-    ic += yazi(180, 19, baslik, 9.5, ana_renk)
-    renkler = [MAVI, YES, TUR, MOR]
-    for i, (b, d1, d2) in enumerate(adimlar):
-        c = renkler[i % 4]
-        x = 10 + i * 86
-        ic += kutu(x, 28, 78, 76, '#f8fafc', c, 6, 0.75)
-        ic += yazi(x + 39, 46, b, 8.2, c)
-        ic += yazi(x + 39, 67, d1, 7.4, LAC, ince=True)
-        ic += yazi(x + 39, 86, d2, 7.0, SOLUK, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+80},64 {x+85},60 {x+85},68" fill="{ana_renk}"/>'
-    return svg(ic, etiket)
-
-
-def g0():
-    return kart4('KEY PHONE CONVERSATION PHRASES', [('This is ... calling', 'Kendini tanıtma', 'Speaking / Calling'), ('Put me through', 'Telefonu bağlama', 'May I speak to...?'), ('Hold on / Hang on', 'Hatta bekletme', 'Don’t hang up'), ('Line is engaged', 'Hat meşgul (Busy)', 'Not available')], '8-ingilizce-14 telefon kalıpları kartları')
-
-def g1():
-    return karsilastir2('PHONE DIALOGUE: AVAILABLE vs. NOT AVAILABLE', 'When the Person Is In (+)', 'Hold on a moment, I’ll get him/her.', 'I’ll put you through to her office.', 'When the Person Is Out (-)', 'I’m sorry, she isn’t available now.', 'She has gone out. Leave a message?', '8-ingilizce-14 müsaitlik diyaloğu')
-
-def g2():
-    return uclu_sema('INFORMAL, FORMAL & SPONTANEOUS DECISIONS', [('Informal Inquiry', 'Is Pam in / there?', 'Hang on a minute'), ('Formal Request', 'May I speak to...?', 'Could you put me...'), ('Time of Speaking', 'I’ll take the phone', 'I’ll call back soon')], '8-ingilizce-14 resmi samimi ve ani karar')
-
-def g5():
-    return karsilastir2('DECISIONS TAKEN AT THE TIME OF SPEAKING (WILL)', 'Situation 1: Ringing Phone', 'A: The telephone is ringing!', 'B: Don’t worry, I’ll (‘ll) answer it.', 'Situation 2: Leaving a Note', 'A: Bora isn’t at home right now.', 'B: OK, I’ll text him about the match.', '8-ingilizce-14 will ile ani kararlar')
-
-def g6():
-    return karsilastir2('COMMUNICATION PROBLEMS ON THE PHONE', 'Problem: Bad Line / Low Voice', 'It’s a bad line. I can’t hear you well.', 'The connection is very noisy.', 'Polite Clarification Request', 'Could you speak louder, please?', 'Could you repeat that / spell your name?', '8-ingilizce-14 hat sorunu ve tekrar isteme')
-
-def g7():
-    return uclu_sema('TELEPHONE MESSAGE MEMO (FOR SELİN)', [('Caller (Arayan)', 'Mert called at 4 p.m.', 'Selin was out'), ('Topic (Konu)', 'About the science', 'project deadline'), ('Action (İstek)', 'Please call him back', 'before 7:00 p.m.')], '8-ingilizce-14 mesaj notu kartı')
-
-def g8():
-    return akis4('STEPS OF A FORMAL PHONE CALL', [('1. Greeting', 'Star Company,', 'How can I help?'), ('2. Introducing', 'This is David.', 'May I speak to...?'), ('3. Connecting', 'Hold on, I’ll put', 'you through'), ('4. Waiting', 'Thank you, I’m', 'on the line')], '8-ingilizce-14 resmi telefon akışı')
-
-def g11():
-    return karsilastir2('WRITING GUIDE: CALLING & LEAVING A MESSAGE', 'Step 1: Asking for Ece', 'Hello, this is [Name] calling. Is Ece in?', 'May I speak to Ece, please?', 'Step 2: Leaving a Message (Will)', 'Could you tell her to call me back?', 'I’ll call her again at 6 o’clock.', '8-ingilizce-14 mesaj bırakma rehberi')
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[7]['gorsel'] = g7()
-    s[8]['gorsel'] = g8()
-    s[11]['gorsel'] = g11()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

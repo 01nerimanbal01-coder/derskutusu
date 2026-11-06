@@ -1,137 +1,113 @@
-"""8. sınıf İngilizce 12. hafta (On the Phone: Formal/Informal Calls, Purposes, 'Will' & Call Center) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178); Noto Sans 12px."""
+"""8-ingilizce-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=21):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def office_call_card():
-    ic = kutu(6, 6, 172, 103, MAVI_A, MAVI)
-    ic += yazi(92, 26, 'Secretary (Reception)', MAVI, kalin=True)
-    ic += yazi(92, 54, '«I’m sorry, Mr. Parker is', LAC)
-    ic += yazi(92, 76, 'in a meeting right now.', LAC)
-    ic += yazi(92, 96, 'He is not available.»', KIR, kalin=True)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 26, 'Caller’s Decision (Will)', YES, kalin=True)
-    ic += yazi(269, 56, '«OK, no problem!', LAC)
-    ic += yazi(269, 82, '[ ? Spontaneous Decision ? ]»', YES, kalin=True)
-    return svg(ic, 'Sekreter ve arayan kişi arasındaki telefon görüşmesi kartı.')
-
-
-def phone_memo_note():
-    ic = kutu(6, 6, 348, 103, TUR_A, TUR)
-    ic += yazi(180, 22, 'PHONE MEMO — WHILE YOU WERE OUT', TUR, kalin=True)
-    ic += yazi(180, 44, 'To: Mrs. Clara Green   |   From: Dr. Emily Watson', LAC, kalin=True)
-    ic += yazi(180, 68, 'Message: Called to confirm Friday’s dentist appointment at 14:00.', LAC)
-    ic += yazi(180, 92, 'Action: Please call back · Tel: 0555 418 90 23', MAVI, kalin=True)
-    return svg(ic, 'Dr. Emily Watson tarafından bırakılan telefon notu (memo).')
-
-
-def formal_informal_cards():
-    ic = kutu(6, 6, 172, 103, MAVI_A, MAVI)
-    ic += yazi(92, 26, 'FORMAL CALL (Polite)', MAVI, kalin=True)
-    ic += yazi(92, 52, '• May I speak to ...?', LAC)
-    ic += yazi(92, 74, '• Could you put me through?', LAC)
-    ic += yazi(92, 95, '• Hold on a moment, please.', MAVI, kalin=True)
-    ic += kutu(184, 6, 170, 103, MOR_A, MOR)
-    ic += yazi(269, 26, 'INFORMAL CALL (Friendly)', MOR, kalin=True)
-    ic += yazi(269, 52, '• Hey buddy, what’s up?', LAC)
-    ic += yazi(269, 74, '• Hang on a sec!', LAC)
-    ic += yazi(269, 95, '• Is Kevin home?', MOR, kalin=True)
-    return svg(ic, 'Resmî ve samimi telefon konuşması kalıpları karşılaştırması.')
-
-
-def call_center_menu():
-    kartlar = [
-        (6, 6, 'Press 1 — Flights', 'Book or cancel a flight', MAVI, MAVI_A),
-        (184, 6, 'Press 2 — Returns', 'Return damaged product', KIR, KIR_A),
-        (6, 60, 'Press 3 — Store Info', 'Address & working hours', YES, YES_A),
-        (184, 60, 'Press 4 — Careers', 'Job applications', TUR, TUR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Çağrı merkezi sesli yanıt menüsü tuşları.')
-
-
-def smartphone_apps_card():
-    ic = kutu(6, 6, 172, 103, YES_A, YES)
-    ic += yazi(92, 26, 'Bora’s App 1: Dictionary', YES, kalin=True)
-    ic += yazi(92, 56, 'Purpose (to + V1):', LAC)
-    ic += yazi(92, 82, 'to practice English words', YES, kalin=True)
-    ic += kutu(184, 6, 170, 103, CAM_A, CAM)
-    ic += yazi(269, 26, 'Bora’s App 2: Maps & GPS', CAM, kalin=True)
-    ic += yazi(269, 56, 'Purpose (to + V1):', LAC)
-    ic += yazi(269, 82, 'to find his way in the city', CAM, kalin=True)
-    return svg(ic, 'Bora’nın akıllı telefon uygulama kullanım amaçları.')
-
-
-def hospital_call_steps():
-    adimlar = [
-        (6, '1. Greeting', 'Green Valley Hospital', MAVI, MAVI_A),
-        (94, '2. Request', 'Put me through...', YES, YES_A),
-        (182, '3. Line Busy', 'Leave a message?', TUR, TUR_A),
-        (270, '4. Message', 'Sinan called!', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, b1, b2, r, z in adimlar:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 36, b1, r, kalin=True)
-        ic += yazi(x + 42, 70, b2, LAC, kalin=True)
-    return svg(ic, 'Hastane sekreteriyle yapılan dört adımlı telefon diyaloğu.')
-
-
-def teen_survey_chart():
-    ic = kutu(6, 6, 348, 103, CAM_A, CAM)
-    ic += yazi(180, 22, 'Smartphone Usage Survey Among 100 Teens (%)', LAC, kalin=True)
-    barlar = [
-        (14, '40%', 'Homework', YES, YES_A),
-        (98, '30%', 'Chat/Friends', MAVI, MAVI_A),
-        (182, '20%', 'Mobile Games', TUR, TUR_A),
-        (266, '10%', 'Shopping', MOR, MOR_A),
-    ]
-    for x, yuzde, et, r, z in barlar:
-        ic += kutu(x, 34, 78, 66, z, r)
-        ic += yazi(x + 39, 58, yuzde, r, kalin=True)
-        ic += yazi(x + 39, 84, et, LAC, kalin=True)
-    return svg(ic, 'Gençlerin akıllı telefon kullanım amaçlarını gösteren anket grafiği.')
-
-
-def communication_choice_card():
-    ic = kutu(6, 6, 172, 103, YES_A, YES)
-    ic += yazi(92, 26, 'Face-to-Face Talk', YES, kalin=True)
-    ic += yazi(92, 54, '• Warm and sincere', LAC)
-    ic += yazi(92, 80, '• Clear body language', YES, kalin=True)
-    ic += kutu(184, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(269, 26, 'Texting (SMS / Chat)', MAVI, kalin=True)
-    ic += yazi(269, 54, '• Fast, cheap and easy', LAC)
-    ic += yazi(269, 80, '• Send photos & emojis', MAVI, kalin=True)
-    return svg(ic, 'Yüz yüze iletişim ve mesajlaşma tercih nedenleri kartı.')
+GORSELLER = {1: '<svg viewBox="0 0 350 153" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sekreter ve arayan kişi '
+    'arasındaki telefon görüşmesi kartı."><rect x="4" y="3" width="342" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Secretary (Reception)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«I’m sorry, Mr. Parker is in a meeting right</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">now.</text><text '
+    'x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">He is '
+    'not available.»</text><rect x="4" y="88" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Caller’s Decision (Will)</text><text x="11.0" y="122.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">«OK, no problem!</text><text x="11.0" y="141.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">[ ? Spontaneous Decision ? ]»</text></svg>',
+ 2: '<svg viewBox="0 0 350 124" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dr. Emily Watson '
+    'tarafından bırakılan telefon notu (memo)."><rect x="4" y="3" width="342" height="119" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">PHONE MEMO — WHILE YOU WERE OUT</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">To: Mrs. Clara Green | From: Dr. Emily</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Watson</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Message: Called to confirm Friday’s dentist</text><text x="11.0" y="94.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">appointment at 14:00.</text><text x="11.0" '
+    'y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Action: Please '
+    'call back · Tel: 0555 418 90 23</text></svg>',
+ 5: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Resmî ve samimi telefon '
+    'konuşması kalıpları karşılaştırması."><rect x="4" y="3" width="342" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">FORMAL CALL (Polite)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• May I speak to ...?</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Could you put me '
+    'through?</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">• Hold on a moment, please.</text><rect x="4" y="88" width="342" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">INFORMAL CALL (Friendly)</text><text x="11.0" y="122.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Hey buddy, what’s up?</text><text x="11.0" y="141.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Hang on a '
+    'sec!</text><text x="11.0" y="160.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">• Is Kevin home?</text></svg>',
+ 6: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Çağrı merkezi sesli '
+    'yanıt menüsü tuşları."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Press '
+    '1 — Flights</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Book or cancel a</text><text x="87.5" y="58.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">flight</text><rect x="179" y="3" width="167" height="65" rx="5" '
+    'fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Press 2 — Returns</text><text x="262.5" y="40.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Return damaged</text><text x="262.5" y="58.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">product</text><rect '
+    'x="4" y="72" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="90.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Press 3 — Store '
+    'Info</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Address &amp; working</text><text x="87.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">hours</text><rect x="179" y="72" width="167" height="65" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="99.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Press 4 — Careers</text><text x="262.5" y="118.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Job applications</text></svg>',
+ 7: '<svg viewBox="0 0 350 96" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bora’nın akıllı telefon '
+    'uygulama kullanım amaçları."><rect x="4" y="3" width="342" height="44" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Bora’s App 1: Dictionary</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Purpose (to + V1): to practice English words</text><rect x="4" y="50" '
+    'width="342" height="44" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Bora’s App 2: Maps &amp; GPS</text><text '
+    'x="11.0" y="84.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Purpose '
+    '(to + V1): to find his way in the city</text></svg>',
+ 8: '<svg viewBox="0 0 350 121" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hastane sekreteriyle '
+    'yapılan dört adımlı telefon diyaloğu."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Greeting</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Green Valley</text><text x="87.5" y="58.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Hospital</text><rect x="179" y="3" width="167" height="65" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Request</text><text x="262.5" y="49.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Put me through...</text><rect x="4" y="72" '
+    'width="167" height="46" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="90.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. Line Busy</text><text x="87.5" y="108.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Leave a '
+    'message?</text><rect x="179" y="72" width="167" height="46" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="90.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Message</text><text x="262.5" y="108.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Sinan called!</text></svg>',
+ 9: '<svg viewBox="0 0 350 161" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gençlerin akıllı telefon '
+    'kullanım amaçlarını gösteren anket grafiği."><rect x="4" y="3" width="342" height="44" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Smartphone Usage Survey Among 100</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Teens (%)</text><rect x="4" y="50" '
+    'width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">40% · Homework</text><rect x="4" y="78" '
+    'width="342" height="25" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="94.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">30% · Chat/Friends</text><rect x="4" y="106" '
+    'width="342" height="25" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="122.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">20% · Mobile Games</text><rect x="4" y="134" '
+    'width="342" height="25" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="150.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">10% · Shopping</text></svg>',
+ 11: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yüz yüze iletişim ve '
+     'mesajlaşma tercih nedenleri kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+     'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#12a150">Face-to-Face Talk</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Warm and sincere</text><text x="11.0" y="56.6" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">• Clear body language</text><rect x="4" '
+     'y="69" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="85.0" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Texting (SMS / '
+     'Chat)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">• Fast, cheap and easy</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#2451d6">• Send photos &amp; emojis</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = office_call_card()
-    s[2]['gorsel'] = phone_memo_note()
-    s[5]['gorsel'] = formal_informal_cards()
-    s[6]['gorsel'] = call_center_menu()
-    s[7]['gorsel'] = smartphone_apps_card()
-    s[8]['gorsel'] = hospital_call_steps()
-    s[9]['gorsel'] = teen_survey_chart()
-    s[11]['gorsel'] = communication_choice_card()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

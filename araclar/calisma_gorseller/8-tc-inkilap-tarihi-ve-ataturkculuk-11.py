@@ -1,134 +1,106 @@
-"""8. sınıf T.C. İnkılap Tarihi ve Atatürkçülük 11. hafta (Misakımillî, İstanbul’un İşgali ve BMM’nin Açılışı) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178); Noto Sans 12px."""
+"""8-tc-inkilap-tarihi-ve-ataturkculuk-11 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="12"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=21):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def misakimilli_kapsar_kartlari():
-    kartlar = [
-        (6, 6, '1. Sınırlar', 'Mondros öncesi bütünlük', MAVI, MAVI_A),
-        (184, 6, '2. Kapitülasyonlar', 'Siyasi/mali kısıtlama red', KIR, KIR_A),
-        (6, 60, '3. Azınlık Hakları', 'Komşu Müslüman hakları denk', YES, YES_A),
-        (184, 60, '4. Halk Oylaması', 'Kars, Ardahan, Batum oyu', TUR, TUR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Misakımillî kararlarının dört temel maddesini gösteren bilgi kartları.')
-
-
-def onerge_24_nisan():
-    ic = kutu(6, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(91, 26, '24 Nisan 1920 Önergesi', MAVI, kalin=True)
-    ic += yazi(91, 52, '• Hükûmet kurmak zorunlu', LAC)
-    ic += yazi(91, 74, '• Üstünde güç yoktur!', KIR, kalin=True)
-    ic += yazi(91, 96, '• Geçici başkan atanmaz', LAC)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 26, 'Meclis Yapısı ve İlke', YES, kalin=True)
-    ic += yazi(269, 52, '• Kurucu ve Millî Meclis', LAC)
-    ic += yazi(269, 74, '• Ulusal Egemenlik ilkesi', YES, kalin=True)
-    ic += yazi(269, 96, '• Güçler Birliği sistemi', MAVI, kalin=True)
-    return svg(ic, '24 Nisan 1920 önergesi kararları ve Birinci BMM nitelikleri şeması.')
-
-
-def isgal_tedbirleri_panosu():
-    ic = kutu(6, 6, 170, 103, KIR_A, KIR)
-    ic += yazi(91, 26, '16 Mart 1920 İşgali', KIR, kalin=True)
-    ic += yazi(91, 52, 'İstanbul resmen işgal edildi', LAC)
-    ic += yazi(91, 74, 'Mebusan Meclisi basıldı', LAC)
-    ic += yazi(91, 96, 'Manastırlı Hamdi bildirdi', KIR, kalin=True)
-    ic += kutu(184, 6, 170, 103, TUR_A, TUR)
-    ic += yazi(269, 26, 'Alınan Stratejik Tedbir', TUR, kalin=True)
-    ic += yazi(269, 52, 'Haberleşme kesildi;', LAC)
-    ic += yazi(269, 74, 'Geyve ve Ulukışla demir', TUR, kalin=True)
-    ic += yazi(269, 96, 'yolları tahrip edildi!', MAVI, kalin=True)
-    return svg(ic, '16 Mart 1920 İstanbul’un işgali ve Geyve-Ulukışla demir yolu tedbiri.')
-
-
-def mebuslardan_istekler():
-    ic = kutu(6, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(91, 26, 'Mustafa Kemal’in 3 İsteği', MAVI, kalin=True)
-    ic += yazi(91, 52, '1. Başkan seçilmek (✗)', LAC)
-    ic += yazi(91, 74, '2. Müdafaa-i Hukuk Grubu (✗)', LAC)
-    ic += yazi(91, 96, '3. Misakımillî onayı (✓)', YES, kalin=True)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 26, 'Meclisteki Sonuç', YES, kalin=True)
-    ic += yazi(269, 52, 'Felah-ı Vatan kuruldu;', LAC)
-    ic += yazi(269, 74, '28 Ocak 1920’de', LAC)
-    ic += yazi(269, 96, 'Misakımillî kabul edildi!', YES, kalin=True)
-    return svg(ic, 'Mustafa Kemal’in mebuslardan üç isteği ve gerçekleşme durumu.')
-
-
-def gucler_birligi_sema():
-    ic = kutu(6, 6, 348, 103, MOR_A, MOR)
-    ic += yazi(180, 26, 'Birinci BMM: Güçler Birliği İlkesi (23 Nisan 1920)', MOR, kalin=True)
-    ic += yazi(180, 54, 'Yasama (Kanun) + Yürütme (Hükûmet) + Yargı (İstiklal Mahkemeleri)', LAC, kalin=True)
-    ic += yazi(180, 82, 'Amaç: Olağanüstü savaş şartlarında hızlı karar alıp uygulamak!', KIR, kalin=True)
-    return svg(ic, 'Birinci BMM’de yasama, yürütme ve yargının tek elde toplanması şeması.')
-
-
-def kronoloji_1920_seridi():
-    adimlar = [
-        (6, '12 Ocak', 'Mebusan Açılışı', MAVI, MAVI_A),
-        (94, '28 Ocak', 'Misakımillî', YES, YES_A),
-        (182, '16 Mart', 'İstanbul İşgali', KIR, KIR_A),
-        (270, '23 Nisan', 'BMM Açılışı', TUR, TUR_A),
-    ]
-    ic = ''
-    for x, tarih, olay, r, z in adimlar:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 36, tarih, r, kalin=True)
-        ic += yazi(x + 42, 72, olay, LAC, kalin=True)
-    return svg(ic, '1920 yılı Ocak-Nisan arası dört temel gelişmenin kronolojik şeridi.')
-
-
-def misakimilli_bmm_karsilastirma():
-    ic = kutu(6, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(91, 26, 'Misakımillî (28 Ocak)', MAVI, kalin=True)
-    ic += yazi(91, 54, 'Millî sınırları çizdi;', LAC)
-    ic += yazi(91, 76, 'kapitülasyonları reddetti', LAC)
-    ic += yazi(91, 98, '→ Tam Bağımsızlık', MAVI, kalin=True)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 26, 'BMM Açılışı (23 Nisan)', YES, kalin=True)
-    ic += yazi(269, 54, 'Millet iradesini yönetime', LAC)
-    ic += yazi(269, 76, 'hâkim kıldı', LAC)
-    ic += yazi(269, 98, '→ Ulusal Egemenlik', YES, kalin=True)
-    return svg(ic, 'Misakımillî (Tam Bağımsızlık) ve BMM’nin açılışı (Ulusal Egemenlik) karşılaştırması.')
-
-
-def bmm_uyeleri_milli_irade():
-    ic = kutu(6, 6, 348, 103, CAM_A, CAM)
-    ic += yazi(180, 26, 'Birinci BMM’nin Oluşumu (23 Nisan 1920 - Ankara)', CAM, kalin=True)
-    ic += yazi(180, 54, '1) Anadolu’da yeniden seçilen milletvekilleri', LAC)
-    ic += yazi(180, 76, '2) İstanbul’dan kaçıp Ankara’ya gelen Mebusan Meclisi üyeleri', MAVI, kalin=True)
-    ic += yazi(180, 98, 'Temel Gerekçe: Halkın seçtiği vekillerin iradesine saygı!', YES, kalin=True)
-    return svg(ic, 'Birinci BMM üyelerinin iki kaynağı ve milli iradeye saygı ilkesi.')
+GORSELLER = {1: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Misakımillî kararlarının '
+    'dört temel maddesini gösteren bilgi kartları."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Sınırlar</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Mondros öncesi</text><text x="87.5" y="58.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bütünlük</text><rect x="179" y="3" '
+    'width="167" height="65" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">2. Kapitülasyonlar</text><text x="262.5" '
+    'y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Siyasi/mali '
+    'kısıtlama</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">red</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Azınlık Hakları</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Komşu Müslüman</text><text x="87.5" y="127.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">hakları denk</text><rect x="179" y="72" '
+    'width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="90.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">4. Halk Oylaması</text><text x="262.5" '
+    'y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kars, '
+    'Ardahan,</text><text x="262.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Batum oyu</text></svg>',
+ 2: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="24 Nisan 1920 önergesi '
+    'kararları ve Birinci BMM nitelikleri şeması."><rect x="4" y="3" width="342" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">24 Nisan 1920 Önergesi</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Hükûmet kurmak zorunlu</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">• Üstünde güç '
+    'yoktur!</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">• Geçici başkan atanmaz</text><rect x="4" y="88" width="342" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Meclis Yapısı ve İlke</text><text x="11.0" y="122.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Kurucu ve Millî Meclis</text><text x="11.0" y="141.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">• Ulusal Egemenlik '
+    'ilkesi</text><text x="11.0" y="160.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">• Güçler Birliği sistemi</text></svg>',
+ 5: '<svg viewBox="0 0 350 153" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="16 Mart 1920 İstanbul’un '
+    'işgali ve Geyve-Ulukışla demir yolu tedbiri."><rect x="4" y="3" width="342" height="82" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">16 Mart 1920 İşgali</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İstanbul resmen işgal edildi</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mebusan Meclisi '
+    'basıldı</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d63a3a">Manastırlı Hamdi bildirdi</text><rect x="4" y="88" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Alınan Stratejik Tedbir</text><text x="11.0" y="122.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Haberleşme kesildi;</text><text x="11.0" y="141.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Geyve ve Ulukışla demir '
+    'yolları tahrip edildi!</text></svg>',
+ 6: '<svg viewBox="0 0 350 153" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mustafa Kemal’in '
+    'mebuslardan üç isteği ve gerçekleşme durumu."><rect x="4" y="3" width="342" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Mustafa Kemal’in 3 İsteği</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">1. Başkan seçilmek (✗)</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">2. Müdafaa-i Hukuk Grubu '
+    '(✗)</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">3. Misakımillî onayı (✓)</text><rect x="4" y="88" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Meclisteki Sonuç</text><text x="11.0" y="122.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Felah-ı Vatan kuruldu; · 28 Ocak 1920’de</text><text x="11.0" '
+    'y="141.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Misakımillî '
+    'kabul edildi!</text></svg>',
+ 7: '<svg viewBox="0 0 350 124" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Birinci BMM’de yasama, '
+    'yürütme ve yargının tek elde toplanması şeması."><rect x="4" y="3" width="342" height="119" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Birinci BMM: Güçler Birliği İlkesi (23 Nisan</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">1920)</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Yasama (Kanun) + Yürütme '
+    '(Hükûmet) +</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Yargı (İstiklal Mahkemeleri)</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Amaç: Olağanüstü savaş şartlarında hızlı</text><text x="11.0" '
+    'y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">karar alıp '
+    'uygulamak!</text></svg>',
+ 8: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="1920 yılı Ocak-Nisan '
+    'arası dört temel gelişmenin kronolojik şeridi."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">12 Ocak · Mebusan</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Açılışı</text><rect x="179" y="3" width="167" height="46" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="30.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">28 Ocak · Misakımillî</text><rect x="4" y="53" width="167" '
+    'height="46" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">16 Mart · İstanbul</text><text x="87.5" '
+    'y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d63a3a">İşgali</text><rect x="179" y="53" width="167" height="46" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="71.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">23 Nisan · BMM</text><text x="262.5" y="89.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Açılışı</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Misakımillî (Tam '
+    'Bağımsızlık) ve BMM’nin açılışı (Ulusal Egemenlik) karşılaştırması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Misakımillî (28 Ocak)</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Millî sınırları çizdi; kapitülasyonları '
+    'reddetti →</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Tam Bağımsızlık</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">BMM Açılışı (23 Nisan)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Millet iradesini yönetime hâkim kıldı → Ulusal</text><text x="11.0" '
+    'y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Egemenlik</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = misakimilli_kapsar_kartlari()
-    s[2]['gorsel'] = onerge_24_nisan()
-    s[5]['gorsel'] = isgal_tedbirleri_panosu()
-    s[6]['gorsel'] = mebuslardan_istekler()
-    s[7]['gorsel'] = gucler_birligi_sema()
-    s[8]['gorsel'] = kronoloji_1920_seridi()
-    s[9]['gorsel'] = misakimilli_bmm_karsilastirma()
-    s[11]['gorsel'] = bmm_uyeleri_milli_irade()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

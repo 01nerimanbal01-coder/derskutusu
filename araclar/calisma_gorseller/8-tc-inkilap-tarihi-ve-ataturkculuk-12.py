@@ -1,128 +1,90 @@
-"""8. sınıf T.C. İnkılap Tarihi ve Atatürkçülük 12. hafta (BMM’ye Karşı Ayaklanmalar ve Sevr Antlaşması) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178); Noto Sans 12px."""
+"""8-tc-inkilap-tarihi-ve-ataturkculuk-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=21):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def bmm_yasama_yargi_semasi():
-    ic = kutu(6, 6, 172, 103, MAVI_A, MAVI)
-    ic += yazi(92, 26, 'Hıyanet-i Vataniye Kanunu', MAVI, kalin=True)
-    ic += yazi(92, 54, '29 Nisan 1920’de çıkarıldı', LAC)
-    ic += yazi(92, 82, 'Yetki: YASAMA (Kanun Yapma)', MAVI, kalin=True)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 26, 'İstiklal Mahkemeleri', YES, kalin=True)
-    ic += yazi(269, 54, 'Üyeleri milletvekillerinden seçildi', LAC)
-    ic += yazi(269, 82, 'Yetki: YARGI (Mahkeme)', YES, kalin=True)
-    return svg(ic, 'BMM’nin yasama ve yargı yetkilerini kullanması şeması.')
-
-
-def bmm_dort_tedbir_panosu():
-    kartlar = [
-        (6, 6, '1. Karşı Fetva (Rıfat Börekçi)', 'Dinî ve Toplumsal Tedbir', YES, YES_A),
-        (184, 6, '2. Anadolu Ajansı & Basın', 'İletişim ve Kamuoyu Tedbiri', MAVI, MAVI_A),
-        (6, 60, '3. Hıyanet-i Vataniye Kanunu', 'Hukuki (Yasama-Yargı) Tedbir', TUR, TUR_A),
-        (184, 60, '4. Düzenli Ordunun Kurulması', 'Askerî ve Savunma Tedbiri', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'BMM’nin ayaklanmalara karşı aldığı dört temel tedbir.')
-
-
-def sevr_maddeleri_karti():
-    kartlar = [
-        (6, 6, 'Boğazlar Komisyonu', 'Türk üye yok (Egemenlik)', MAVI, MAVI_A),
-        (184, 6, 'Kapitülasyonlar & Maliye', 'Bütçe İtilaf kontrolünde (Ekonomi)', KIR, KIR_A),
-        (6, 60, 'Ordu Sınırlandırması', 'Ağır silah yok (Savunma)', TUR, TUR_A),
-        (184, 60, 'Sınırlar ve Topraklar', 'Anadolu parçalanıyor (Siyasi)', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Sevr Antlaşması’nın siyasi, askerî ve ekonomik maddeleri.')
-
-
-def olu_dogmus_antlasma_karti():
-    ic = kutu(6, 6, 348, 103, KIR_A, KIR)
-    ic += yazi(180, 26, 'Hukuki Değerlendirme: Neden «Ölü Doğmuş Antlaşma»?', KIR, kalin=True)
-    ic += yazi(180, 54, 'Osmanlı Anayasası Kanun-ı Esasi’ye göre bir antlaşmanın geçerli olması', LAC)
-    ic += yazi(180, 76, 'için Mebusan Meclisi’nin onayı şarttı. Meclis kapalı olduğu için Sevr’i', LAC)
-    ic += yazi(180, 96, 'yalnızca Saltanat Şûrası imzalamış, antlaşma hukuken geçersiz kalmıştır!', MAVI, kalin=True)
-    return svg(ic, 'Sevr Antlaşması’nın hukuken geçersiz olma nedenini açıklayan kart.')
-
-
-def duzenli_orduya_gecis_karti():
-    ic = kutu(6, 6, 348, 103, TUR_A, TUR)
-    ic += yazi(180, 26, 'Eski Kuvâ-yı Milliyecilerin İsyanı (Çerkez Ethem & Demirci Mehmet Efe)', TUR, kalin=True)
-    ic += yazi(180, 54, 'Sebep: Bağımsız hareket etmeye alışmış birliklerin düzenli ordu emrine girmeyi reddetmesi', LAC)
-    ic += yazi(180, 82, 'Sonuç: BMM’nin kurduğu DÜZENLİ ORDU tarafından bastırıldı!', YES, kalin=True)
-    return svg(ic, 'Çerkez Ethem ve Demirci Mehmet Efe isyanlarının nedeni ve sonucu.')
-
-
-def kronoloji_1920_kartlari():
-    adimlar = [
-        (6, '16 Mart 1920', 'İstanbul’un İşgali', KIR, KIR_A),
-        (94, '23 Nisan 1920', 'BMM’nin Açılması', YES, YES_A),
-        (182, '29 Nisan 1920', 'Hıyanet-i Vataniye', MAVI, MAVI_A),
-        (270, '10 Ağustos 1920', 'Sevr’e Tepki', TUR, TUR_A),
-    ]
-    ic = ''
-    for x, tarih, olay, r, z in adimlar:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 36, tarih, r, kalin=True)
-        ic += yazi(x + 42, 70, olay, LAC, kalin=True)
-    return svg(ic, '1920 yılındaki dört önemli tarihsel gelişmenin kronolojik sırası.')
-
-
-def mustafa_kemal_sevr_tepki():
-    ic = kutu(6, 6, 348, 103, YES_A, YES)
-    ic += yazi(180, 26, 'Mustafa Kemal Paşa’nın Sevr Antlaşması’na Tepkisi', YES, kalin=True)
-    ic += yazi(180, 54, '«Siyasi, adli, ekonomik ve mali bağımsızlığımızı yok etmeye ve', LAC)
-    ic += yazi(180, 76, 'sonuç olarak yaşama hakkımızı inkâra ve ortadan kaldırmaya yönelik olan', LAC)
-    ic += yazi(180, 96, 'Sevr Antlaşması bizce mevcut değildir!» (Tam Bağımsızlık Kararlılığı)', KIR, kalin=True)
-    return svg(ic, 'Mustafa Kemal Paşa’nın Sevr Antlaşması’nı reddeden tarihsel sözü.')
-
-
-def sevr_ve_direnis_karti():
-    ic = kutu(6, 6, 172, 103, KIR_A, KIR)
-    ic += yazi(92, 26, 'İtilaf Devletlerinin Planı', KIR, kalin=True)
-    ic += yazi(92, 54, '• Yunan ordusunu ileri sürerek', LAC)
-    ic += yazi(92, 76, 'Anadolu işgallerini genişletmek', LAC)
-    ic += yazi(92, 96, '• Sevr’i zorla kabul ettirmek', KIR, kalin=True)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 26, 'Türk Milletinin Yanıtı', YES, kalin=True)
-    ic += yazi(269, 54, '• BMM etrafında kenetlenmek', LAC)
-    ic += yazi(269, 76, '• Düzenli orduyla direnmek', LAC)
-    ic += yazi(269, 96, '• Sevr’i tarihe gömmek!', YES, kalin=True)
-    return svg(ic, 'İtilaf Devletlerinin Sevr baskısı ve Türk milletinin direnişi.')
+GORSELLER = {1: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BMM’nin yasama ve yargı '
+    'yetkilerini kullanması şeması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Hıyanet-i Vataniye Kanunu</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">29 Nisan 1920’de çıkarıldı</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Yetki: YASAMA (Kanun '
+    'Yapma)</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">İstiklal '
+    'Mahkemeleri</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Üyeleri milletvekillerinden seçildi</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Yetki: YARGI (Mahkeme)</text></svg>',
+ 2: '<svg viewBox="0 0 350 190" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BMM’nin ayaklanmalara '
+    'karşı aldığı dört temel tedbir."><rect x="4" y="3" width="342" height="44" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">1. Karşı Fetva (Rıfat Börekçi)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dinî ve Toplumsal Tedbir</text><rect x="4" y="50" width="342" '
+    'height="44" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. Anadolu Ajansı &amp; Basın</text><text x="11.0" y="84.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İletişim ve Kamuoyu '
+    'Tedbiri</text><rect x="4" y="97" width="342" height="44" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. Hıyanet-i '
+    'Vataniye Kanunu</text><text x="11.0" y="131.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Hukuki (Yasama-Yargı) Tedbir</text><rect x="4" y="144" width="342" height="44" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="160.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">4. Düzenli Ordunun Kurulması</text><text x="11.0" y="178.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Askerî ve Savunma Tedbiri</text></svg>',
+ 5: '<svg viewBox="0 0 350 190" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sevr Antlaşması’nın '
+    'siyasi, askerî ve ekonomik maddeleri."><rect x="4" y="3" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Boğazlar Komisyonu</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Türk üye yok (Egemenlik)</text><rect x="4" y="50" width="342" '
+    'height="44" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Kapitülasyonlar &amp; Maliye</text><text x="11.0" y="84.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bütçe İtilaf kontrolünde '
+    '(Ekonomi)</text><rect x="4" y="97" width="342" height="44" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Ordu '
+    'Sınırlandırması</text><text x="11.0" y="131.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Ağır silah yok (Savunma)</text><rect x="4" y="144" width="342" height="44" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="160.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">Sınırlar ve Topraklar</text><text x="11.0" y="178.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Anadolu parçalanıyor (Siyasi)</text></svg>',
+ 6: '<svg viewBox="0 0 350 143" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sevr Antlaşması’nın '
+    'hukuken geçersiz olma nedenini açıklayan kart."><rect x="4" y="3" width="342" height="138" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Hukuki Değerlendirme: Neden «Ölü</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Doğmuş Antlaşma»?</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Osmanlı Anayasası Kanun-ı '
+    'Esasi’ye göre bir</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">antlaşmanın geçerli olması için Mebusan</text><text x="11.0" y="94.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Meclisi’nin onayı şarttı. Meclis kapalı '
+    'olduğu</text><text x="11.0" y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">için Sevr’i yalnızca Saltanat Şûrası imzalamış,</text><text x="11.0" y="131.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">antlaşma hukuken geçersiz kalmıştır!</text></svg>',
+ 8: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="1920 yılındaki dört '
+    'önemli tarihsel gelişmenin kronolojik sırası."><rect x="4" y="3" width="167" height="46" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">16 Mart 1920 ·</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">İstanbul’un İşgali</text><rect x="179" y="3" width="167" height="46" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">23 Nisan 1920 ·</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">BMM’nin Açılması</text><rect x="4" y="53" '
+    'width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">29 Nisan 1920 ·</text><text x="87.5" y="89.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Hıyanet-i '
+    'Vataniye</text><rect x="179" y="53" width="167" height="46" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="262.5" y="71.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">10 '
+    'Ağustos 1920 ·</text><text x="262.5" y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Sevr’e Tepki</text></svg>',
+ 9: '<svg viewBox="0 0 350 162" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mustafa Kemal Paşa’nın '
+    'Sevr Antlaşması’nı reddeden tarihsel sözü."><rect x="4" y="3" width="342" height="157" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Mustafa Kemal Paşa’nın Sevr Antlaşması’na</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Tepkisi</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«Siyasi, adli, ekonomik '
+    've mali</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">bağımsızlığımızı yok etmeye ve sonuç olarak</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yaşama hakkımızı inkâra ve ortadan</text><text x="11.0" y="113.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kaldırmaya yönelik '
+    'olan</text><text x="11.0" y="131.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d63a3a">Sevr Antlaşması bizce mevcut değildir!»</text><text x="11.0" y="150.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">(Tam Bağımsızlık Kararlılığı)</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = bmm_yasama_yargi_semasi()
-    s[2]['gorsel'] = bmm_dort_tedbir_panosu()
-    s[5]['gorsel'] = sevr_maddeleri_karti()
-    s[6]['gorsel'] = olu_dogmus_antlasma_karti()
-    s[7]['gorsel'] = duzenli_orduya_gecis_karti()
-    s[8]['gorsel'] = kronoloji_1920_kartlari()
-    s[9]['gorsel'] = mustafa_kemal_sevr_tepki()
-    s[11]['gorsel'] = sevr_ve_direnis_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

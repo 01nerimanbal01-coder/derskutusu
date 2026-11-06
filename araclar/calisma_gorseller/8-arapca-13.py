@@ -1,151 +1,90 @@
-"""8. sınıf Arapça 13. hafta görselleri (SVG; K024 insan figürsüz; K178 beyaz bantsız)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-STIL = 'width:100%;max-height:22mm;display:block;margin:1mm auto;'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""8-arapca-13 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-
-def svg(ic, etiket):
-    return f'<svg viewBox="0 0 360 115" style="{STIL}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, boy=9.0, renk=LAC, hiza='middle', ince=False):
-    t = str(metin).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{t}</text>'
-
-
-def cizgi(x1, y1, x2, y2, renk=GRI, kalin=0.65, kesik=''):
-    d = f' stroke-dasharray="{kesik}"' if kesik else ''
-    return f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{renk}" stroke-width="{kalin}"{d}/>'
-
-
-def kart4(baslik, kartlar, etiket, ana=MAVI, arka=GRI_A):
-    ic = kutu(4, 4, 352, 107, arka, ana) + yazi(180, 19, baslik, 9.4, ana)
-    palet = [(MAVI, MAVI_A), (YES, YES_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, s1, s2) in enumerate(kartlar):
-        c, a = palet[i % 4]
-        x = 9 + i * 86
-        ic += kutu(x, 26, 82, 80, a, c, 5)
-        ic += yazi(x + 41, 43, b, 8.2, c)
-        ic += cizgi(x + 7, 50, x + 75, 50, c, 0.55)
-        ic += yazi(x + 41, 69, s1, 7.6, LAC, ince=True)
-        ic += yazi(x + 41, 89, s2, 7.2, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def ikili_pano(baslik, b1, d1a, d1b, b2, d2a, d2b, etiket, c1=MAVI, a1=MAVI_A, c2=TUR, a2=TUR_A):
-    ic = kutu(4, 4, 352, 107, GRI_A, c1) + yazi(180, 19, baslik, 9.4, c1)
-    ic += kutu(10, 26, 165, 80, a1, c1, 5)
-    ic += yazi(92.5, 43, b1, 8.6, c1) + cizgi(20, 50, 165, 50, c1, 0.55)
-    ic += yazi(92.5, 69, d1a, 7.8, LAC, ince=True) + yazi(92.5, 89, d1b, 7.4, SOLUK, ince=True)
-    ic += kutu(185, 26, 165, 80, a2, c2, 5)
-    ic += yazi(267.5, 43, b2, 8.6, c2) + cizgi(195, 50, 340, 50, c2, 0.55)
-    ic += yazi(267.5, 69, d2a, 7.8, LAC, ince=True) + yazi(267.5, 89, d2b, 7.4, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def uclu_pano(baslik, uclu, etiket, ana=YES, arka=YES_A):
-    ic = kutu(4, 4, 352, 107, arka, ana) + yazi(180, 19, baslik, 9.4, ana)
-    palet = [(MAVI, MAVI_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, s1, s2) in enumerate(uclu):
-        c, a = palet[i % 3]
-        x = 10 + i * 114
-        ic += kutu(x, 26, 108, 80, a, c, 5)
-        ic += yazi(x + 54, 43, b, 8.4, c) + cizgi(x + 8, 50, x + 100, 50, c, 0.55)
-        ic += yazi(x + 54, 69, s1, 7.6, LAC, ince=True) + yazi(x + 54, 89, s2, 7.2, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def akis4(baslik, adimlar, etiket, ana=CAM):
-    ic = kutu(4, 4, 352, 107, CAM_A, ana) + yazi(180, 19, baslik, 9.4, ana)
-    palet = [(MAVI, MAVI_A), (YES, YES_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, s1, s2) in enumerate(adimlar):
-        c, a = palet[i % 4]
-        x = 8 + i * 87
-        ic += kutu(x, 26, 79, 80, a, c, 5)
-        ic += yazi(x + 39.5, 43, b, 8.0, c)
-        ic += yazi(x + 39.5, 68, s1, 7.4, LAC, ince=True)
-        ic += yazi(x + 39.5, 88, s2, 7.0, SOLUK, ince=True)
-        if i < 3:
-            ox = x + 80.5
-            ic += f'<polygon points="{ox:.1f},61 {ox+5:.1f},66 {ox:.1f},71" fill="{ana}"/>'
-    return svg(ic, etiket)
-
-
-def g1():
-    return uclu_pano('FİİL CÜMLESİ (الْجُمْلَةُ الْفِعْلِيَّةُ) ÖGE ÇÖZÜMLEMESİ', [
-        ('1. Fiil (الْفِعْلُ)', 'يُسَاعِدُ', 'Yardım ediyor'),
-        ('2. Fail (الْفَاعِلُ)', 'الْغَنِيُّ (Ötreli)', 'Zengin (Özne)'),
-        ('3. Mef’ûl (الْمَفْعُولُ بِهِ)', 'الْفَقِيرَ (Üstünlü)', 'Fakire (Nesne)')
-    ], 'Arapça fiil cümlesi ögeleri')
-
-
-def g2():
-    return uclu_pano('YARDIMLAŞMA VE CÖMERTLİK SÖZLÜK KARTLARI', [
-        ('Zıt Sıfatlar', 'كَرِيمٌ ↔ بَخِيلٌ', 'Eli açık ↔ Eli sıkı'),
-        ('Üstün Özveri', 'الْإِيثَارُ', 'Kardeşini kendine tercih'),
-        ('Bayram Tebriği', 'عِيدٌ مُبَارَكٌ', 'Bayram kutlama kalıbı')
-    ], 'Arapça değerler sözlük kartları', MAVI, MAVI_A)
-
-
-def g4():
-    return ikili_pano('YARDIM TEKLİFİ VE NEZAKET KALIPLARI',
-        'Yardım Teklif Sorusu', 'هَلْ تُرِيدُ مُسَاعَدَةً؟', 'Anlamı: Yardım ister misin?',
-        'Nezaketli Kabul ve Teşekkür', 'مِنْ فَضْلِكَ · بِكُلِّ سُرُورٍ · شُكْرًا', 'Lütfen · Memnuniyetle · Teşekkürler',
-        'Arapça yardım teklifi diyaloğu', CAM, CAM_A, YES, YES_A)
-
-
-def g5():
-    return akis4('DAYANIŞMA DİYALOĞU AKIŞ ADIMLARI', [
-        ('1. Selam ve Rica', 'أَرْجُو الْمُسَاعَدَةَ', 'Yardım isteği'),
-        ('2. Kabul ve Soru', 'بِكُلِّ سُرُورٍ!', 'Nasıl yardım edeyim?'),
-        ('3. Durumu Açıklama', 'الصُّنْدُوقُ ثَقِيلٌ', 'Kutu çok ağır'),
-        ('4. Birlikte Taşıma', 'التَّعَاوُنُ جَمِيلٌ', 'Yardımlaşmak güzeldir')
-    ], 'Yardımlaşma diyaloğu sıralama kartı')
-
-
-def g6():
-    return ikili_pano('SEBEP VE SONUÇ BAĞLAÇLARI KULLANIMI',
-        'Sebep Cümlesi (1. Yargı)', 'أُحِبُّ صَدِيقِي (Arkadaşımı seviyorum)', 'Sevgi burada temel nedendir',
-        'Sonuç Cümlesi (2. Yargı)', '___ أُسَاعِدُهُ دَائِمًا (Ona hep yardım ederim)', 'Sonuç bildiren «bu yüzden» bağlacı aranıyor',
-        'Sebep sonuç bağlacı tamamlama', MOR, MOR_A, TUR, TUR_A)
-
-
-def g8():
-    return ikili_pano('HİKMET VE SINIF DAYANIŞMASI LEVHASI',
-        'Arapça Fiil Cümlesi', 'يَتَعَاوَنُ الطُّلَّابُ فِي الصَّفِّ', 'Cümle başındaki tekil fiil: يَتَعَاوَنُ',
-        'Kelime İpuçları', 'الطُّلَّابُ = Öğrenciler (Çoğul fail)', 'فِي الصَّفِّ = Sınıfta (Yer tamlayıcısı)',
-        'Sınıfta yardımlaşma fiil cümlesi levhası', YES, YES_A, MAVI, MAVI_A)
-
-
-def g9():
-    return ikili_pano('FİİL CÜMLESİ İLE İSİM CÜMLESİ AYRIMI',
-        'Fiil Cümlesi (الْجُمْلَةُ الْفِعْلِيَّةُ)', 'Çekimli bir fiille (يُحِبُّ، يُسَاعِدُ، يُكْرِمُ) başlar', 'Örnek yapı: Fiil + Fail + Mef’ûlün bih',
-        'İsim Cümlesi (الْجُمْلَةُ الِاسْمِيَّةُ)', 'Belirli bir isimle (اَلـ... Mübteda) başlar', 'Örnek yapı: Mübteda + Haber',
-        'Fiil ve isim cümlesi yapı farkı', MAVI, MAVI_A, KIR, KIR_A)
-
-
-def g11():
-    return uclu_pano('KUR’AN İLKESİ: تَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى', [
-        ('İyilikte Kenetlenme', 'الْبِرِّ (Hayır ve iyilik)', 'Muhtaca el uzatma'),
-        ('Takva Bilinci', 'التَّقْوَى (Sorumluluk)', 'Kötülükte birleşmeme'),
-        ('Toplumsal Meyvesi', 'التَّضَامُنُ (Dayanışma)', 'Güven ve kardeşlik')
-    ], 'İyilik ve takva üzere yardımlaşma panosu', TUR, TUR_A)
+GORSELLER = {1: '<svg viewBox="0 0 350 201" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arapça fiil cümlesi '
+    'ögeleri"><rect x="4" y="3" width="342" height="29" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan '
+    'font-weight="700" fill="#2451d6">1. Fiil (الْفِعْلُ):</tspan> يُسَاعِدُ · Yardım ediyor</text><rect x="4" y="35" width="342" '
+    'height="105" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="51.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">FİİL CÜMLESİ (الْجُمْلَةُ الْفِعْلِيَّةُ) '
+    'ÖGE</text><text x="11.0" y="75.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">ÇÖZÜMLEMESİ</text><text x="11.0" y="100.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2. Fail (الْفَاعِلُ)</text><text x="11.0" y="124.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">الْغَنِيُّ (Ötreli) · Zengin (Özne)</text><rect x="4" y="143" '
+    'width="342" height="56" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="159.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">3. Mef’ûl (الْمَفْعُولُ بِهِ)</text><text '
+    'x="11.0" y="183.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">الْفَقِيرَ (Üstünlü) · Fakire (Nesne)</text></svg>',
+ 2: '<svg viewBox="0 0 350 249" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arapça değerler sözlük '
+    'kartları"><rect x="4" y="3" width="342" height="29" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan '
+    'font-weight="700" fill="#2451d6">Zıt Sıfatlar:</tspan> كَرِيمٌ ↔ بَخِيلٌ · Eli açık ↔ Eli sıkı</text><rect x="4" y="35" width="342" '
+    'height="129" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="51.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">YARDIMLAŞMA VE CÖMERTLİK SÖZLÜK</text><text '
+    'x="11.0" y="75.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">KARTLARI</text><text x="11.0" y="100.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Üstün Özveri</text><text x="11.0" y="124.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">الْإِيثَارُ</text><text x="11.0" y="149.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Kardeşini kendine tercih</text><rect x="4" y="167" width="342" '
+    'height="80" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="183.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Bayram Tebriği</text><text x="11.0" y="207.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">عِيدٌ '
+    'مُبَارَكٌ</text><text x="11.0" y="232.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">Bayram kutlama kalıbı</text></svg>',
+ 4: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arapça yardım teklifi '
+    'diyaloğu"><rect x="4" y="3" width="342" height="105" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">YARDIM TEKLİFİ '
+    'VE NEZAKET KALIPLARI</text><text x="11.0" y="43.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Yardım Teklif Sorusu</text><text x="11.0" y="68.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">هَلْ تُرِيدُ مُسَاعَدَةً؟</text><text x="11.0" y="92.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Anlamı: Yardım ister '
+    'misin?</text><rect x="4" y="111" width="342" height="80" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="127.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Nezaketli Kabul '
+    've Teşekkür</text><text x="11.0" y="151.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">مِنْ فَضْلِكَ · بِكُلِّ سُرُورٍ · شُكْرًا</text><text x="11.0" y="176.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Lütfen · Memnuniyetle · '
+    'Teşekkürler</text></svg>',
+ 6: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sebep sonuç bağlacı '
+    'tamamlama"><rect x="4" y="3" width="342" height="105" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">SEBEP VE SONUÇ '
+    'BAĞLAÇLARI KULLANIMI</text><text x="11.0" y="43.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Sebep Cümlesi (1. Yargı)</text><text x="11.0" y="68.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">أُحِبُّ صَدِيقِي (Arkadaşımı seviyorum)</text><text x="11.0" y="92.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Sevgi burada temel '
+    'nedendir</text><rect x="4" y="111" width="342" height="80" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="127.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Sonuç Cümlesi '
+    '(2. Yargı)</text><text x="11.0" y="151.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">___ أُسَاعِدُهُ دَائِمًا (Ona hep yardım ederim)</text><text x="11.0" y="176.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Sonuç bildiren «bu yüzden» bağlacı '
+    'aranıyor</text></svg>',
+ 8: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sınıfta yardımlaşma fiil '
+    'cümlesi levhası"><rect x="4" y="3" width="342" height="105" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">HİKMET '
+    'VE SINIF DAYANIŞMASI LEVHASI</text><text x="11.0" y="43.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Arapça Fiil Cümlesi</text><text x="11.0" y="68.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">يَتَعَاوَنُ الطُّلَّابُ فِي الصَّفِّ</text><text x="11.0" y="92.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Cümle başındaki tekil '
+    'fiil: يَتَعَاوَنُ</text><rect x="4" y="111" width="342" height="80" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="127.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Kelime '
+    'İpuçları</text><text x="11.0" y="151.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">الطُّلَّابُ = Öğrenciler (Çoğul fail)</text><text x="11.0" y="176.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">فِي الصَّفِّ = Sınıfta (Yer tamlayıcısı)</text></svg>',
+ 9: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fiil ve isim cümlesi '
+    'yapı farkı"><rect x="4" y="3" width="342" height="105" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">FİİL CÜMLESİ İLE '
+    'İSİM CÜMLESİ AYRIMI</text><text x="11.0" y="43.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Fiil Cümlesi (الْجُمْلَةُ الْفِعْلِيَّةُ)</text><text x="11.0" y="68.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çekimli bir fiille (يُحِبُّ، يُسَاعِدُ، '
+    'يُكْرِمُ) başlar</text><text x="11.0" y="92.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#5b6479">Örnek yapı: Fiil + Fail + Mef’ûlün bih</text><rect x="4" y="111" width="342" height="80" rx="5" '
+    'fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" y="127.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d63a3a">İsim Cümlesi (الْجُمْلَةُ الِاسْمِيَّةُ)</text><text x="11.0" y="151.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Belirli bir isimle '
+    '(اَلـ... Mübteda) başlar</text><text x="11.0" y="176.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#5b6479">Örnek yapı: Mübteda + Haber</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[4]['gorsel'] = g4()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[8]['gorsel'] = g8()
-    s[9]['gorsel'] = g9()
-    s[11]['gorsel'] = g11()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

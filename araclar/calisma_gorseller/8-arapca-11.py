@@ -1,139 +1,106 @@
-"""8. sınıf Arapça 11. hafta (2. Ünite: El Sanatları ve Ünite Değerlendirmesi) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); Noto Sans font-size=12 (K150 EK); eğik kesir ve beyaz bant yok (K155/K178)."""
+"""8-arapca-11 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#15803d', '#d63a3a', '#7c3aed', '#0e7490'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A, KUM = '#e8eefe', '#fef3c7', '#dcfce7', '#f3e8ff', '#fee2e2', '#e0f2fe', '#fffbeb'
-YAZI = 'font-family="Noto Sans, sans-serif" font-size="12" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-size="12" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=21):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def yazi_ar(x, y, metin, renk=LAC, hiza='middle', boy=18):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="{boy}" font-weight="700" fill="{renk}">{metin}</text>'
-
-
-def atolye_tabelalari():
-    ic = kutu(4, 4, 412, 28, MOR_A, MOR, 7)
-    ic += yazi(115, 22, 'Kültür Merkezi Atölye Tabelaları', MOR)
-    ic += yazi_ar(318, 23, 'الْفُنُونُ الْيَدَوِيَّةُ', LAC, boy=17)
-    ic += kutu(4, 38, 200, 64, TUR_A, TUR, 8)
-    ic += yazi(104, 57, '1. Atölye Tabelası', TUR)
-    ic += yazi_ar(104, 88, 'وَرْشَةُ النَّقْشِ عَلَى الْخَشَبِ', LAC)
-    ic += kutu(216, 38, 200, 64, CAM_A, CAM, 8)
-    ic += yazi(316, 57, '2. Atölye Tabelası', CAM)
-    ic += yazi_ar(316, 88, 'دَوْرَةُ فَنِّ الْخَزَفِ', LAC)
-    return svg(420, 106, ic, '1. ahşap oymacılığı atölyesi ve 2. çini sanatı kursu tabelaları.', 21)
-
-
-def malzeme_kartlari():
-    kartlar = [
-        (4, 4, '1. Malzeme Kartı', 'قَلَمُ الْقَصَبِ وَالْحِبْرُ', MAVI, MAVI_A),
-        (214, 4, '2. Malzeme Kartı', 'الْفُرْشَاةُ وَحَوْضُ الْمَاءِ', CAM, CAM_A),
-        (4, 58, '3. Malzeme Kartı', 'الزَّخْرَفَةُ بِاللَّوْنِ الذَّهَبِيِّ', TUR, TUR_A),
-        (214, 58, '4. Malzeme Kartı', 'تَلْوِينُ الْأَطْبَاقِ الطِّينِيَّةِ', YES, YES_A),
-    ]
-    ic = ''
-    for x, y, bas, ar, r, z in kartlar:
-        ic += kutu(x, y, 202, 48, z, r, 7)
-        ic += yazi(x + 101, y + 17, bas, r)
-        ic += yazi_ar(x + 101, y + 40, ar, LAC, boy=16)
-    return svg(420, 110, ic, 'Dört geleneksel sanat dalına ait Arapça malzeme kartları.', 22)
-
-
-def sergi_tercih_diyalogu():
-    ic = kutu(4, 4, 412, 46, MAVI_A, MAVI, 8)
-    ic += yazi(72, 22, 'Selim (Soru):', MAVI, 'start')
-    ic += yazi_ar(402, 40, 'أَيَّ فَنٍّ يَدَوِيٍّ تُفَضِّلُ يَا عُمَرُ؟', LAC, 'end', 17)
-    ic += kutu(4, 56, 412, 48, YES_A, YES, 8)
-    ic += yazi(72, 74, 'Ömer (Yanıt):', YES, 'start')
-    ic += yazi_ar(402, 94, 'أُفَضِّلُ فَنَّ الْأَبْرُو لِأَنَّ الرَّسْمَ عَلَى الْمَاءِ مُمْتِعٌ', LAC, 'end', 16)
-    return svg(420, 108, ic, 'Selim ve Ömer arasında geçen el sanatı tercihi diyaloğu.', 21)
-
-
-def dort_hat_levhasi():
-    kartlar = [
-        (4, 4, 'I. Levha', 'اَلْعَمَلُ خَيْرٌ مِنَ التَّسَوُّلِ', MOR, MOR_A),
-        (214, 4, 'II. Levha', 'مَا أَجْمَلَ هَذِهِ اللَّوْحَةَ الْفَنِّيَّةَ', MAVI, MAVI_A),
-        (4, 58, 'III. Levha', 'يُقَامُ الْمَعْرِضُ فِي الْمَرْكَزِ الثَّقَافِيِّ', TUR, TUR_A),
-        (214, 58, 'IV. Levha', 'تَسْقُطُ أَوْرَاقُ الْأَشْجَارِ فِي الْخَرِيفِ', YES, YES_A),
-    ]
-    ic = ''
-    for x, y, bas, ar, r, z in kartlar:
-        ic += kutu(x, y, 202, 48, z, r, 7)
-        ic += yazi(x + 101, y + 17, bas, r)
-        ic += yazi_ar(x + 101, y + 40, ar, LAC, boy=15)
-    return svg(420, 110, ic, 'Atölye duvarındaki dört Arapça hat levhası.', 22)
-
-
-def sergi_gezi_karti():
-    ic = kutu(4, 4, 412, 98, KUM, TUR, 8)
-    ic += yazi(210, 22, 'El Sanatları Sergisi Ziyaret Duyurusu', TUR)
-    ic += f'<line x1="20" y1="30" x2="400" y2="30" stroke="{TUR}" stroke-width="1.0"/>'
-    ic += yazi_ar(210, 58, 'نَزُورُ مَعْرِضَ الْفُنُونِ الْيَدَوِيَّةِ مَعَ مُعَلِّمِنَا يَوْمَ السَّبْتِ', LAC, boy=17)
-    ic += yazi(210, 88, 'Sorulan Unsurlar: إِلَى أَيْنَ؟ (Yer) · مَعَ مَنْ؟ (Kişi) · مَتَى؟ (Zaman)', MOR, ince=True)
-    return svg(420, 106, ic, 'Cumartesi günü öğretmenle el sanatları sergisi ziyaret kartı.', 21)
-
-
-def ebru_uygulama_seridi():
-    adimlar = [
-        (4, '1. أَوَّلًا', 'خُذِ الْفُرْشَاةَ', MAVI, MAVI_A),
-        (108, '2. ثُمَّ', 'اُرْسُمْ عَلَى الْمَاءِ', CAM, CAM_A),
-        (212, '3. بَعْدَ ذَلِكَ', 'ضَعِ الْوَرَقَةَ', TUR, TUR_A),
-        (316, '4. أَخِيرًا', 'اِرْفَعِ اللَّوْحَةَ', YES, YES_A),
-    ]
-    ic = ''
-    for x, bas, ar, r, z in adimlar:
-        ic += kutu(x, 6, 100, 92, z, r, 7)
-        ic += yazi(x + 50, 28, bas, r)
-        ic += f'<line x1="{x+10}" y1="38" x2="{x+90}" y2="38" stroke="{r}" stroke-width="0.9"/>'
-        ic += yazi_ar(x + 50, 72, ar, LAC, boy=15)
-    return svg(420, 104, ic, 'Ebru yapımında dört aşamalı Arapça emir yönergeleri.', 21)
-
-
-def sanat_merkezi_panosu():
-    ic = kutu(4, 4, 412, 100, MOR_A, MOR, 8)
-    ic += yazi(132, 23, 'Haftalık Sergi Panosu', MOR)
-    ic += yazi_ar(315, 24, 'الْمَرْكَزُ الثَّقَافِيُّ', LAC, boy=16)
-    ic += kutu(12, 34, 192, 62, KUM, TUR, 6)
-    ic += yazi(108, 52, 'يَوْمُ السَّبْتِ — ١٠:٠٠ صَبَاحًا', TUR)
-    ic += yazi_ar(108, 82, 'دَوْرَةُ الْخَطِّ الْعَرَبِيِّ', LAC, boy=16)
-    ic += kutu(216, 34, 192, 62, YES_A, YES, 6)
-    ic += yazi(312, 52, 'يَوْمُ الْأَحَدِ — صُنْعُ الْيَدِ', YES)
-    ic += yazi_ar(312, 82, 'وَرْشَةُ فَنِّ الْأَبْرُو', LAC, boy=16)
-    return svg(420, 108, ic, 'Kültür merkezi cumartesi hat kursu ve pazar el yapımı ebru atölyesi panosu.', 22)
-
-
-def sifat_uyumu_karti():
-    ic = kutu(4, 4, 200, 96, MAVI_A, MAVI, 8)
-    ic += yazi(104, 23, 'İncelenen İsim Cümlesi', MAVI)
-    ic += yazi_ar(104, 60, 'اَلْفُنُونُ الْيَدَوِيَّةُ جَمِيلَةٌ', LAC, boy=18)
-    ic += yazi(104, 88, 'المبتدأ + الصفة + الخبر', MAVI, ince=True)
-    ic += kutu(216, 4, 200, 96, YES_A, YES, 8)
-    ic += yazi(316, 23, 'Dil Bilgisi İpucu', YES)
-    ic += yazi(316, 54, 'اَلْفُنُونُ → Akılsız Çoğul', LAC)
-    ic += yazi(316, 82, 'Sıfat ve haber sonu: ـة', YES, ince=True)
-    return svg(420, 104, ic, 'Akılsız çoğul isim cümlesinde müennes sıfat ve haber uyumu kartı.', 21)
+GORSELLER = {1: '<svg viewBox="0 0 350 179" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="1. ahşap oymacılığı '
+    'atölyesi ve 2. çini sanatı kursu tabelaları."><rect x="4" y="3" width="342" height="56" rx="5" fill="#f3e8ff" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Kültür Merkezi Atölye Tabelaları</text><text x="11.0" y="43.5" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">الْفُنُونُ الْيَدَوِيَّةُ</text><rect x="4" y="62" width="342" '
+    'height="56" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="78.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">1. Atölye Tabelası</text><text x="11.0" y="102.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">وَرْشَةُ النَّقْشِ عَلَى '
+    'الْخَشَبِ</text><rect x="4" y="121" width="342" height="56" rx="5" fill="#e0f2fe" stroke="#0e7490" stroke-width="0.75"/><text '
+    'x="11.0" y="137.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e7490">2. '
+    'Atölye Tabelası</text><text x="11.0" y="161.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">دَوْرَةُ فَنِّ الْخَزَفِ</text></svg>',
+ 2: '<svg viewBox="0 0 350 150" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört geleneksel sanat '
+    'dalına ait Arapça malzeme kartları."><rect x="4" y="3" width="167" height="58" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="24.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Malzeme Kartı</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">قَلَمُ الْقَصَبِ وَالْحِبْرُ</text><rect x="179" y="3" width="167" '
+    'height="58" rx="5" fill="#e0f2fe" stroke="#0e7490" stroke-width="0.75"/><text x="262.5" y="24.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e7490">2. Malzeme Kartı</text><text x="262.5" '
+    'y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">الْفُرْشَاةُ '
+    'وَحَوْضُ الْمَاءِ</text><rect x="4" y="65" width="167" height="82" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="87.5" y="86.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. '
+    'Malzeme Kartı</text><text x="87.5" y="110.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">الزَّخْرَفَةُ بِاللَّوْنِ</text><text x="87.5" y="135.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">الذَّهَبِيِّ</text><rect x="179" y="65" width="167" height="82" '
+    'rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="0.75"/><text x="262.5" y="86.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#15803d">4. Malzeme Kartı</text><text x="262.5" y="110.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">تَلْوِينُ الْأَطْبَاقِ</text><text x="262.5" '
+    'y="135.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">الطِّينِيَّةِ</text></svg>',
+ 5: '<svg viewBox="0 0 350 113" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Selim ve Ömer arasında '
+    'geçen el sanatı tercihi diyaloğu."><rect x="4" y="3" width="167" height="107" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="36.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Selim (Soru):</text><text x="87.5" y="61.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">أَيَّ فَنٍّ يَدَوِيٍّ تُفَضِّلُ يَا</text><text x="87.5" y="85.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">عُمَرُ؟</text><rect '
+    'x="179" y="3" width="167" height="107" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="0.75"/><text x="262.5" y="24.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#15803d">Ömer '
+    '(Yanıt):</text><text x="262.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">أُفَضِّلُ فَنَّ الْأَبْرُو لِأَنَّ</text><text x="262.5" y="73.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">الرَّسْمَ عَلَى الْمَاءِ</text><text x="262.5" y="97.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">مُمْتِعٌ</text></svg>',
+ 6: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Atölye duvarındaki dört '
+    'Arapça hat levhası."><rect x="4" y="3" width="167" height="82" rx="5" fill="#f3e8ff" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="87.5" y="36.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">I. '
+    'Levha</text><text x="87.5" y="60.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">اَلْعَمَلُ خَيْرٌ مِنَ التَّسَوُّلِ</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="24.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">II. Levha</text><text x="262.5" y="48.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">مَا أَجْمَلَ هَذِهِ اللَّوْحَةَ</text><text x="262.5" y="73.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">الْفَنِّيَّةَ</text><rect x="4" y="89" width="167" height="82" rx="5" fill="#fef3c7" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="110.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">III. Levha</text><text x="87.5" y="134.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">يُقَامُ الْمَعْرِضُ فِي</text><text x="87.5" y="159.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">الْمَرْكَزِ الثَّقَافِيِّ</text><rect x="179" '
+    'y="89" width="167" height="82" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="0.75"/><text x="262.5" y="110.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#15803d">IV. Levha</text><text '
+    'x="262.5" y="134.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">تَسْقُطُ أَوْرَاقُ الْأَشْجَارِ</text><text x="262.5" y="159.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">فِي الْخَرِيفِ</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cumartesi günü '
+    'öğretmenle el sanatları sergisi ziyaret kartı."><rect x="4" y="3" width="342" height="129" rx="5" fill="#fffbeb" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">El Sanatları Sergisi Ziyaret Duyurusu</text><text x="11.0" y="43.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">نَزُورُ مَعْرِضَ الْفُنُونِ الْيَدَوِيَّةِ '
+    'مَعَ مُعَلِّمِنَا يَوْمَ</text><text x="11.0" y="68.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">السَّبْتِ</text><text x="11.0" y="92.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#7c3aed">Sorulan Unsurlar: إِلَى أَيْنَ؟ (Yer) · مَعَ مَنْ؟</text><text x="11.0" y="117.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">(Kişi) · مَتَى؟ '
+    '(Zaman)</text></svg>',
+ 8: '<svg viewBox="0 0 350 126" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ebru yapımında dört '
+    'aşamalı Arapça emir yönergeleri."><rect x="4" y="3" width="167" height="58" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="24.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. أَوَّلًا</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">خُذِ الْفُرْشَاةَ</text><rect x="179" y="3" width="167" height="58" rx="5" '
+    'fill="#e0f2fe" stroke="#0e7490" stroke-width="0.75"/><text x="262.5" y="24.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0e7490">2. ثُمَّ</text><text x="262.5" y="48.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">اُرْسُمْ عَلَى الْمَاءِ</text><rect x="4" '
+    'y="65" width="167" height="58" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="86.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. بَعْدَ '
+    'ذَلِكَ</text><text x="87.5" y="110.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">ضَعِ الْوَرَقَةَ</text><rect x="179" y="65" width="167" height="58" rx="5" fill="#dcfce7" stroke="#15803d" '
+    'stroke-width="0.75"/><text x="262.5" y="86.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#15803d">4. أَخِيرًا</text><text x="262.5" y="110.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">اِرْفَعِ اللَّوْحَةَ</text></svg>',
+ 9: '<svg viewBox="0 0 350 88" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kültür merkezi cumartesi '
+    'hat kursu ve pazar el yapımı ebru atölyesi panosu."><rect x="4" y="3" width="167" height="82" rx="5" fill="#fffbeb" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="24.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">يَوْمُ السَّبْتِ — ١٠:٠٠</text><text x="87.5" y="48.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">صَبَاحًا</text><text x="87.5" y="73.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">دَوْرَةُ الْخَطِّ الْعَرَبِيِّ</text><rect '
+    'x="179" y="3" width="167" height="82" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="0.75"/><text x="262.5" y="24.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#15803d">يَوْمُ الْأَحَدِ — '
+    'صُنْعُ</text><text x="262.5" y="48.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#15803d">الْيَدِ</text><text x="262.5" y="73.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">وَرْشَةُ فَنِّ الْأَبْرُو</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = atolye_tabelalari()
-    s[2]['gorsel'] = malzeme_kartlari()
-    s[5]['gorsel'] = sergi_tercih_diyalogu()
-    s[6]['gorsel'] = dort_hat_levhasi()
-    s[7]['gorsel'] = sergi_gezi_karti()
-    s[8]['gorsel'] = ebru_uygulama_seridi()
-    s[9]['gorsel'] = sanat_merkezi_panosu()
-    s[11]['gorsel'] = sifat_uyumu_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

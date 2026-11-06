@@ -1,146 +1,102 @@
-"""8. sınıf Fen Bilimleri 12. hafta (Periyodik Sistem: Tarihçe, Periyot-Grup ve Elementlerin Sınıflandırılması) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178); Noto Sans 12px."""
+"""8-fen-bilimleri-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=21):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def periyodik_kesit_modeli():
-    ic = kutu(6, 6, 348, 103, CAM_A, CAM)
-    ic += yazi(180, 22, 'Periyodik Tablo İlk 3 Periyot Kesiti', LAC, kalin=True)
-    ic += kutu(24, 30, 56, 24, YES_A, YES, 4)
-    ic += yazi(52, 46, 'X (1A)', YES, kalin=True)
-    ic += kutu(280, 30, 56, 24, MOR_A, MOR, 4)
-    ic += yazi(308, 46, 'Y (8A)', MOR, kalin=True)
-    ic += kutu(152, 58, 56, 24, TUR_A, TUR, 4)
-    ic += yazi(180, 74, 'Z (3A)', TUR, kalin=True)
-    ic += kutu(88, 84, 56, 22, MAVI_A, MAVI, 4)
-    ic += yazi(116, 99, 'T (2A)', MAVI, kalin=True)
-    return svg(ic, 'Periyodik tablonun ilk üç periyodunda X, Y, Z ve T elementlerinin konumu.')
-
-
-def dort_element_karti():
-    kartlar = [
-        (6, 6, '1. Hidrojen (₁H)', 'Katman: 1) · İstisna!', YES, YES_A),
-        (184, 6, '2. Helyum (₂He)', 'Katman: 2) · Tam Dolu!', MOR, MOR_A),
-        (6, 60, '3. Bor (₅B)', 'Katman: 2) 3) · Yarı İletken', TUR, TUR_A),
-        (184, 60, '4. Magnezyum (₁₂Mg)', 'Katman: 2) 8) 2) · İletken', MAVI, MAVI_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Hidrojen, Helyum, Bor ve Magnezyum katman dizilimi kartları.')
-
-
-def sinif_ozellik_kartlari():
-    kartlar = [
-        (6, 'K Sınıfı', 'Parlak · Tel/Levha', 'Isı/Elektrik İletir', MAVI, MAVI_A),
-        (124, 'L Sınıfı', 'Fiziksel: Metal', 'Kimyasal: Ametal', TUR, TUR_A),
-        (242, 'M Sınıfı', 'Mat · Kırılgan', 'Katı / Sıvı / Gaz', YES, YES_A),
-    ]
-    ic = ''
-    for x, ad, o1, o2, r, z in kartlar:
-        ic += kutu(x, 6, 112, 103, z, r)
-        ic += yazi(x + 56, 28, ad, r, kalin=True)
-        ic += yazi(x + 56, 58, o1, LAC, kalin=True)
-        ic += yazi(x + 56, 86, o2, LAC)
-    return svg(ic, 'Metal, yarı metal ve ametal sınıflarının özellik kartları.')
-
-
-def klor_katman_modeli():
-    ic = kutu(6, 6, 172, 103, YES_A, YES)
-    ic += yazi(92, 26, 'Klor Atomu (₁₇Cl)', YES, kalin=True)
-    ic += yazi(92, 56, 'Katman Dizilimi: 2 ) 8 ) 7', LAC, kalin=True)
-    ic += yazi(92, 86, '3 Katman · Son Katman: 7e⁻', MAVI, kalin=True)
-    ic += kutu(184, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(269, 26, 'Yer Bulma Kuralı', MAVI, kalin=True)
-    ic += yazi(269, 54, 'Katman Sayısı = Periyot No', LAC)
-    ic += yazi(269, 82, 'Son Katman e⁻ = A Grubu No', KIR, kalin=True)
-    return svg(ic, 'Atom numarası 17 olan Klor elementinin katman-elektron dizilimi.')
-
-
-def bir_a_grubu_istisnasi():
-    ic = kutu(6, 6, 130, 103, MAVI_A, MAVI)
-    ic += yazi(71, 24, '1A Grubu Sütunu', MAVI, kalin=True)
-    ic += kutu(31, 32, 80, 22, YES_A, YES, 4)
-    ic += yazi(71, 47, '₁H (Hidrojen)', YES, kalin=True)
-    ic += kutu(31, 58, 80, 22, MAVI_A, MAVI, 4)
-    ic += yazi(71, 73, '₃Li (Lityum)', MAVI, kalin=True)
-    ic += kutu(31, 84, 80, 22, MAVI_A, MAVI, 4)
-    ic += yazi(71, 99, '₁₁Na (Sodyum)', MAVI, kalin=True)
-    ic += kutu(144, 6, 210, 103, TUR_A, TUR)
-    ic += yazi(249, 30, 'Dikkat: 1A Grubu İstisnası!', KIR, kalin=True)
-    ic += yazi(249, 58, '₃Li ve ₁₁Na → Alkali Metal', LAC, kalin=True)
-    ic += yazi(249, 84, '₁H → 1A’da olmasına rağmen AMETAL!', YES, kalin=True)
-    return svg(ic, '1A grubunda Hidrojenin ametal, Lityum ve Sodyumun metal olması şeması.')
-
-
-def tarihce_kronoloji_kartlari():
-    adimlar = [
-        (6, '1829', 'Döbereiner (3’lü)', MAVI, MAVI_A),
-        (94, '1864', 'Newlands (8’li)', YES, YES_A),
-        (182, '1869', 'Mendeleyev (Kütle)', TUR, TUR_A),
-        (270, '1913', 'Moseley (Proton)', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, yil, bilim, r, z in adimlar:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 36, yil, r, kalin=True)
-        ic += yazi(x + 42, 70, bilim, LAC, kalin=True)
-    return svg(ic, 'Periyodik tablonun tarihsel gelişim basamakları.')
-
-
-def periyodik_degisim_oklari():
-    ic = kutu(6, 6, 172, 103, MAVI_A, MAVI)
-    ic += yazi(92, 26, '1 Yönü (Soldan Sağa →)', MAVI, kalin=True)
-    ic += yazi(92, 52, '• Atom numarası ARTAR', YES, kalin=True)
-    ic += yazi(92, 74, '• Grup numarası ARTAR', LAC)
-    ic += yazi(92, 95, '• Periyot sayısı DEĞİŞMEZ', LAC)
-    ic += kutu(184, 6, 170, 103, TUR_A, TUR)
-    ic += yazi(269, 26, '2 Yönü (Yukarıdan Aşağı ↓)', TUR, kalin=True)
-    ic += yazi(269, 52, '• Atom numarası ARTAR', YES, kalin=True)
-    ic += yazi(269, 74, '• Periyot sayısı ARTAR', LAC)
-    ic += yazi(269, 95, '• Grup numarası DEĞİŞMEZ', LAC)
-    return svg(ic, 'Periyodik tabloda soldan sağa ve yukarıdan aşağıya değişen özellikler.')
-
-
-def bor_silisyum_teknoloji():
-    ic = kutu(6, 6, 172, 103, TUR_A, TUR)
-    ic += yazi(92, 26, 'Bor (₅B — Yarı Metal)', TUR, kalin=True)
-    ic += yazi(92, 54, '• Isıya dayanıklı cam (Borcam)', LAC)
-    ic += yazi(92, 78, '• Roket yakıtı ve deterjan', LAC)
-    ic += yazi(92, 98, '• Türkiye dünya rezerv lideri!', YES, kalin=True)
-    ic += kutu(184, 6, 170, 103, CAM_A, CAM)
-    ic += yazi(269, 26, 'Silisyum (₁₄Si — Yarı Metal)', CAM, kalin=True)
-    ic += yazi(269, 54, '• Güneş panelleri (Fotovoltaik)', LAC)
-    ic += yazi(269, 78, '• Bilgisayar mikroçipleri', LAC)
-    ic += yazi(269, 98, '• Yarı iletken teknoloji!', MAVI, kalin=True)
-    return svg(ic, 'Bor ve Silisyum yarı metallerinin ileri teknolojide kullanım alanları.')
+GORSELLER = {1: '<svg viewBox="0 0 350 142" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Periyodik tablonun ilk '
+    'üç periyodunda X, Y, Z ve T elementlerinin konumu."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Periyodik Tablo İlk 3 Periyot Kesiti</text><rect x="4" y="31" width="342" height="25" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">X (1A)</text><rect x="4" y="59" width="342" height="25" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="75.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">Y (8A)</text><rect x="4" y="87" width="342" height="25" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="103.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Z (3A)</text><rect x="4" y="115" width="342" height="25" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="131.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">T (2A)</text></svg>',
+ 2: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hidrojen, Helyum, Bor ve '
+    'Magnezyum katman dizilimi kartları."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">1. Hidrojen (₁H)</text><text x="87.5" y="49.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Katman: 1) · İstisna!</text><rect x="179" y="3" width="167" '
+    'height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">2. Helyum (₂He)</text><text x="262.5" '
+    'y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Katman: 2) · '
+    'Tam</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Dolu!</text><rect x="4" y="72" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="99.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">3. Bor (₅B)</text><text x="87.5" y="118.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Katman: 2) 3) · Yarı</text><text x="87.5" y="137.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İletken</text><rect x="179" y="72" '
+    'width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="90.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">4. Magnezyum</text><text x="262.5" y="109.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">(₁₂Mg)</text><text '
+    'x="262.5" y="127.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Katman: 2) 8) 2) ·</text><text x="262.5" y="146.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">İletken</text></svg>',
+ 5: '<svg viewBox="0 0 350 80" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Metal, yarı metal ve '
+    'ametal sınıflarının özellik kartları."><rect x="4" y="3" width="342" height="23" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#2451d6">K Sınıfı · Parlak · Tel/Levha:</tspan> Isı/Elektrik '
+    'İletir</text><rect x="4" y="29" width="342" height="23" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="45.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan '
+    'font-weight="700" fill="#d97706">L Sınıfı · Fiziksel: Metal:</tspan> Kimyasal: Ametal</text><rect x="4" y="55" width="342" '
+    'height="23" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="71.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#12a150">M Sınıfı · Mat · '
+    'Kırılgan:</tspan> Katı / Sıvı / Gaz</text></svg>',
+ 6: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Atom numarası 17 olan '
+    'Klor elementinin katman-elektron dizilimi."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Klor Atomu (₁₇Cl)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Katman Dizilimi: 2 ) 8 ) 7</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">3 Katman · Son Katman: '
+    '7e⁻</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Yer Bulma '
+    'Kuralı</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Katman Sayısı = Periyot No</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d63a3a">Son Katman e⁻ = A Grubu No</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="1A grubunda Hidrojenin '
+    'ametal, Lityum ve Sodyumun metal olması şeması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1A Grubu Sütunu · ₁H (Hidrojen) · ₃Li</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">(Lityum)</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">₁₁Na (Sodyum)</text><rect '
+    'x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="85.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Dikkat: 1A Grubu '
+    'İstisnası!</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">₃Li ve ₁₁Na → Alkali Metal</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">₁H → 1A’da olmasına rağmen AMETAL!</text></svg>',
+ 8: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Periyodik tablonun '
+    'tarihsel gelişim basamakları."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1829 · Döbereiner</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">(3’lü)</text><rect x="179" y="3" width="167" height="46" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">1864 · Newlands</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">(8’li)</text><rect x="4" y="53" width="167" '
+    'height="46" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">1869 · Mendeleyev</text><text x="87.5" '
+    'y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">(Kütle)</text><rect x="179" y="53" width="167" height="46" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="71.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">1913 · Moseley</text><text x="262.5" y="89.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">(Proton)</text></svg>',
+ 9: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Periyodik tabloda soldan '
+    'sağa ve yukarıdan aşağıya değişen özellikler."><rect x="4" y="3" width="342" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1 Yönü (Soldan Sağa →)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">• Atom numarası ARTAR</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Grup numarası '
+    'ARTAR</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">• Periyot sayısı DEĞİŞMEZ</text><rect x="4" y="88" width="342" height="82" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2 Yönü (Yukarıdan Aşağı ↓)</text><text x="11.0" y="122.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">• Atom numarası ARTAR</text><text x="11.0" y="141.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Periyot sayısı '
+    'ARTAR</text><text x="11.0" y="160.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">• Grup numarası DEĞİŞMEZ</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = periyodik_kesit_modeli()
-    s[2]['gorsel'] = dort_element_karti()
-    s[5]['gorsel'] = sinif_ozellik_kartlari()
-    s[6]['gorsel'] = klor_katman_modeli()
-    s[7]['gorsel'] = bir_a_grubu_istisnasi()
-    s[8]['gorsel'] = tarihce_kronoloji_kartlari()
-    s[9]['gorsel'] = periyodik_degisim_oklari()
-    s[11]['gorsel'] = bor_silisyum_teknoloji()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

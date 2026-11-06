@@ -1,151 +1,104 @@
-"""8. sınıf T.C. İnkılap Tarihi 13. hafta görselleri (SVG; K024 insan figürsüz; K178 beyaz bantsız)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-STIL = 'width:100%;max-height:22mm;display:block;margin:1mm auto;'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""8-tc-inkilap-tarihi-ve-ataturkculuk-13 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-
-def svg(ic, etiket):
-    return f'<svg viewBox="0 0 360 115" style="{STIL}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, boy=9.0, renk=LAC, hiza='middle', ince=False):
-    t = str(metin).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{t}</text>'
-
-
-def cizgi(x1, y1, x2, y2, renk=GRI, kalin=0.65, kesik=''):
-    d = f' stroke-dasharray="{kesik}"' if kesik else ''
-    return f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{renk}" stroke-width="{kalin}"{d}/>'
-
-
-def kart4(baslik, kartlar, etiket, ana=MAVI, arka=GRI_A):
-    ic = kutu(4, 4, 352, 107, arka, ana) + yazi(180, 19, baslik, 9.4, ana)
-    palet = [(MAVI, MAVI_A), (YES, YES_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, s1, s2) in enumerate(kartlar):
-        c, a = palet[i % 4]
-        x = 9 + i * 86
-        ic += kutu(x, 26, 82, 80, a, c, 5)
-        ic += yazi(x + 41, 43, b, 8.2, c)
-        ic += cizgi(x + 7, 50, x + 75, 50, c, 0.55)
-        ic += yazi(x + 41, 69, s1, 7.6, LAC, ince=True)
-        ic += yazi(x + 41, 89, s2, 7.2, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def ikili_pano(baslik, b1, d1a, d1b, b2, d2a, d2b, etiket, c1=MAVI, a1=MAVI_A, c2=TUR, a2=TUR_A):
-    ic = kutu(4, 4, 352, 107, GRI_A, c1) + yazi(180, 19, baslik, 9.4, c1)
-    ic += kutu(10, 26, 165, 80, a1, c1, 5)
-    ic += yazi(92.5, 43, b1, 8.6, c1) + cizgi(20, 50, 165, 50, c1, 0.55)
-    ic += yazi(92.5, 69, d1a, 7.8, LAC, ince=True) + yazi(92.5, 89, d1b, 7.4, SOLUK, ince=True)
-    ic += kutu(185, 26, 165, 80, a2, c2, 5)
-    ic += yazi(267.5, 43, b2, 8.6, c2) + cizgi(195, 50, 340, 50, c2, 0.55)
-    ic += yazi(267.5, 69, d2a, 7.8, LAC, ince=True) + yazi(267.5, 89, d2b, 7.4, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def uclu_pano(baslik, uclu, etiket, ana=YES, arka=YES_A):
-    ic = kutu(4, 4, 352, 107, arka, ana) + yazi(180, 19, baslik, 9.4, ana)
-    palet = [(MAVI, MAVI_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, s1, s2) in enumerate(uclu):
-        c, a = palet[i % 3]
-        x = 10 + i * 114
-        ic += kutu(x, 26, 108, 80, a, c, 5)
-        ic += yazi(x + 54, 43, b, 8.4, c) + cizgi(x + 8, 50, x + 100, 50, c, 0.55)
-        ic += yazi(x + 54, 69, s1, 7.6, LAC, ince=True) + yazi(x + 54, 89, s2, 7.2, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def akis4(baslik, adimlar, etiket, ana=CAM):
-    ic = kutu(4, 4, 352, 107, CAM_A, ana) + yazi(180, 19, baslik, 9.4, ana)
-    palet = [(MAVI, MAVI_A), (YES, YES_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, s1, s2) in enumerate(adimlar):
-        c, a = palet[i % 4]
-        x = 8 + i * 87
-        ic += kutu(x, 26, 79, 80, a, c, 5)
-        ic += yazi(x + 39.5, 43, b, 8.0, c)
-        ic += yazi(x + 39.5, 68, s1, 7.4, LAC, ince=True)
-        ic += yazi(x + 39.5, 88, s2, 7.0, SOLUK, ince=True)
-        if i < 3:
-            ox = x + 80.5
-            ic += f'<polygon points="{ox:.1f},61 {ox+5:.1f},66 {ox:.1f},71" fill="{ana}"/>'
-    return svg(ic, etiket)
-
-
-def g1():
-    return uclu_pano('KURTULUŞ SAVAŞI’NDA ÜÇ CEPHE VE SAVAŞAN BİRLİKLER', [
-        ('Doğu Cephesi', 'Ermenilere karşı', '15. Kolordu (Düzenli)'),
-        ('Güney Cephesi', 'Fransız + Ermeni', 'Kuva-yı Milliye (Halk)'),
-        ('Batı Cephesi', 'Yunan ordusuna karşı', 'BMM Düzenli Ordusu')
-    ], 'Kurtuluş Savaşı üç cephe tablosu')
-
-
-def g2():
-    return uclu_pano('ANTLAŞMALAR VE HUKUKİ-SİYASİ SONUÇLARI', [
-        ('Sevr (10 Ağs. 1920)', 'Meclis onayı yok!', 'Ölü doğmuş antlaşma'),
-        ('Gümrü (3 Ara. 1920)', 'BMM — Ermenistan', 'Kars ve Iğdır kurtuldu'),
-        ('Ankara (20 Ekm. 1921)', 'TBMM — Fransa', 'Güney Cephesi kapandı')
-    ], 'Sevr Gümrü ve Ankara antlaşmaları karşılaştırması', MAVI, MAVI_A)
-
-
-def g4():
-    return ikili_pano('3 ARALIK 1920 GÜMRÜ ANTLAŞMASI MADDELERİ',
-        'Toprak ve Sınır Kazançları', 'Kars, Sarıkamış, Kağızman ve Iğdır alındı', 'Aras Nehri ve Çıldır Gölü sınır oldu',
-        'Uluslararası Diplomatik Önemi', 'Ermenistan Sevr’i geçersiz saydı', 'BMM’yi ve Misakımillî’yi tanıyan İLK devlet!',
-        'Gümrü Antlaşması maddeleri ve önemi', YES, YES_A, CAM, CAM_A)
-
-
-def g5():
-    return akis4('DOĞU VE GÜNEY CEPHELERİ ZAMAN ÇİZELGESİ', [
-        ('12 Şubat 1920', 'Maraş’ın', 'kurtuluşu'),
-        ('11 Nisan 1920', 'Urfa’nın', 'kurtuluşu'),
-        ('3 Aralık 1920', 'Gümrü Antlaşması', 'Doğu kapandı'),
-        ('20 Ekim 1921', 'Ankara Antlaşması', 'Güney kapandı')
-    ], 'Doğu ve Güney cepheleri kronolojisi')
-
-
-def g6():
-    return ikili_pano('ANTEP SAVUNMASI VE KİLİS YOLU DİRENİŞİ',
-        'Teğmen Şahin Bey’in Tarihi Sözü', '«Düşman arabaları cesedimi çiğnemeden', 'Antep’e asla giremez!»',
-        'Halkın 10 Aylık Destansı Mücadelesi', 'Şahin Bey, Karayılan ve Kılıç Ali Bey', '8 Şubat 1921: TBMM’den «GAZİ» unvanı',
-        'Şahin Bey ve Gaziantep savunması', KIR, KIR_A, TUR, TUR_A)
-
-
-def g8():
-    return ikili_pano('DOĞU CEPHESİ KOMUTANLIĞI: KÂZIM KARABEKİR PAŞA',
-        'Mondros Sonrası Kritik Karar', '15. Kolordu’yu dağıtmayıp korudu', 'Silahları İtilaf Devletlerine teslim etmedi',
-        '28 Eylül 1920 Doğu Harekatı', 'Sarıkamış ve Kars hızla geri alındı', 'Yetim çocukları koruyup okullar açtı',
-        'Kâzım Karabekir Paşa ve 15. Kolordu', MAVI, MAVI_A, YES, YES_A)
-
-
-def g9():
-    return uclu_pano('20 EKİM 1921 ANKARA ANTLAŞMASI (TBMM – FRANSA)', [
-        ('Siyasi Kazanım', 'İtilaf bloğu parçalandı', 'Fransa TBMM’yi tanıdı'),
-        ('Askerî Kazanım', 'Güneyde savaş bitti', 'Birlikler Batı’ya geçti'),
-        ('Hatay Maddesi', 'Özel idare kuruldu', 'Sınır dışında kaldı!')
-    ], '1921 Ankara Antlaşması kazanımları ve Hatay', MOR, MOR_A)
-
-
-def g11():
-    return ikili_pano('MARAŞ KALESİ BAYRAK OLAYI VE HUTBE',
-        'İşgalcilerin Bayrağı İndirmesi', 'Fransızlar Maraş Kalesi’nden Türk', 'bayrağını indirince halk toplandı',
-        'Ulu Cami İmamı Rıdvan Hoca’nın Sözü', '«Hürriyeti olmayan bir millet cuma namazı', 'kılamaz! Önce bayrağımızı dikelim!»',
-        'Maraş Kalesi bayrak olayı ve bağımsızlık', KIR, KIR_A, MAVI, MAVI_A)
+GORSELLER = {1: '<svg viewBox="0 0 350 219" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kurtuluş Savaşı üç cephe '
+    'tablosu"><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Doğu '
+    'Cephesi</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Ermenilere karşı</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">15. Kolordu (Düzenli)</text><rect x="4" y="69" width="342" height="101" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">KURTULUŞ SAVAŞI’NDA ÜÇ CEPHE VE</text><text x="11.0" y="103.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">SAVAŞAN '
+    'BİRLİKLER</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">Güney Cephesi</text><text x="11.0" y="141.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Fransız + Ermeni</text><text x="11.0" y="160.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Kuva-yı Milliye (Halk)</text><rect x="4" '
+    'y="173" width="342" height="44" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="189.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Batı Cephesi</text><text '
+    'x="11.0" y="207.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yunan '
+    'ordusuna karşı · BMM Düzenli Ordusu</text></svg>',
+ 2: '<svg viewBox="0 0 350 219" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sevr Gümrü ve Ankara '
+    'antlaşmaları karşılaştırması"><rect x="4" y="3" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Sevr (10 Ağs. 1920)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Meclis onayı yok! · Ölü doğmuş antlaşma</text><rect x="4" y="50" '
+    'width="342" height="101" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">ANTLAŞMALAR VE HUKUKİ-SİYASİ</text><text '
+    'x="11.0" y="84.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">SONUÇLARI</text><text x="11.0" y="103.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Gümrü (3 Ara. 1920)</text><text x="11.0" y="122.4" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">BMM — Ermenistan</text><text x="11.0" y="141.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Kars ve Iğdır kurtuldu</text><rect x="4" '
+    'y="154" width="342" height="63" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="170.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Ankara (20 Ekm. '
+    '1921)</text><text x="11.0" y="188.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">TBMM — Fransa</text><text x="11.0" y="207.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Güney Cephesi kapandı</text></svg>',
+ 4: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gümrü Antlaşması '
+    'maddeleri ve önemi"><rect x="4" y="3" width="342" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3 '
+    'ARALIK 1920 GÜMRÜ ANTLAŞMASI</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">MADDELERİ</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Toprak ve Sınır Kazançları</text><text x="11.0" y="75.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kars, Sarıkamış, Kağızman ve Iğdır '
+    'alındı</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">Aras Nehri ve Çıldır Gölü sınır oldu</text><rect x="4" y="107" width="342" height="63" rx="5" fill="#e0f4f8" '
+    'stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="123.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0e8fa8">Uluslararası Diplomatik Önemi</text><text x="11.0" y="141.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ermenistan Sevr’i geçersiz saydı</text><text '
+    'x="11.0" y="160.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">BMM’yi '
+    've Misakımillî’yi tanıyan İLK devlet!</text></svg>',
+ 5: '<svg viewBox="0 0 350 207" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Doğu ve Güney cepheleri '
+    'kronolojisi"><rect x="4" y="3" width="342" height="23" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan '
+    'font-weight="700" fill="#2451d6">12 Şubat 1920:</tspan> Maraş’ın kurtuluşu</text><rect x="4" y="29" width="342" height="82" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="45.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0e8fa8">DOĞU VE GÜNEY CEPHELERİ ZAMAN</text><text x="11.0" y="63.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">ÇİZELGESİ</text><text x="11.0" y="82.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">11 Nisan 1920</text><text '
+    'x="11.0" y="101.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Urfa’nın kurtuluşu</text><rect x="4" y="114" width="342" height="44" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="130.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">3 Aralık 1920</text><text x="11.0" y="148.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Gümrü Antlaşması · Doğu kapandı</text><rect x="4" y="161" width="342" height="44" '
+    'rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="177.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">20 Ekim 1921</text><text x="11.0" y="195.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ankara Antlaşması · Güney '
+    'kapandı</text></svg>',
+ 6: '<svg viewBox="0 0 350 153" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Şahin Bey ve Gaziantep '
+    'savunması"><rect x="4" y="3" width="342" height="82" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">ANTEP SAVUNMASI '
+    'VE KİLİS YOLU DİRENİŞİ</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Teğmen Şahin Bey’in Tarihi Sözü</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«Düşman arabaları cesedimi çiğnemeden</text><text x="11.0" '
+    'y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Antep’e asla '
+    'giremez!»</text><rect x="4" y="88" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Halkın 10 Aylık '
+    'Destansı Mücadelesi</text><text x="11.0" y="122.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Şahin Bey, Karayılan ve Kılıç Ali Bey</text><text x="11.0" y="141.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">8 Şubat 1921: TBMM’den «GAZİ» '
+    'unvanı</text></svg>',
+ 9: '<svg viewBox="0 0 350 219" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="1921 Ankara Antlaşması '
+    'kazanımları ve Hatay"><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Siyasi '
+    'Kazanım</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İtilaf bloğu parçalandı</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Fransa TBMM’yi tanıdı</text><rect x="4" y="69" width="342" height="101" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">20 EKİM 1921 ANKARA ANTLAŞMASI (TBMM</text><text x="11.0" y="103.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">– FRANSA)</text><text '
+    'x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Askerî '
+    'Kazanım</text><text x="11.0" y="141.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Güneyde savaş bitti</text><text x="11.0" y="160.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Birlikler Batı’ya geçti</text><rect x="4" y="173" width="342" height="44" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="189.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">Hatay Maddesi</text><text x="11.0" y="207.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Özel idare kuruldu · Sınır dışında '
+    'kaldı!</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[4]['gorsel'] = g4()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[8]['gorsel'] = g8()
-    s[9]['gorsel'] = g9()
-    s[11]['gorsel'] = g11()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -1,135 +1,110 @@
-"""8. sınıf Türkçe 11. hafta (Gardaşım Şiiri, Fiilde Çatı Uygulamaları ve Cümle Türleri) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178); Noto Sans 12px."""
+"""8-turkce-11 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="12"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=21):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def karma_cati_kartlari():
-    kartlar = [
-        (6, 6, '1. Kart: ...duygusunu anlattı.', 'Etken + Geçişli (?)', MAVI, MAVI_A),
-        (184, 6, '2. Kart: ...çeşme onarıldı.', 'Edilgen (-l eki)', TUR, TUR_A),
-        (6, 60, '3. Kart: ...sevinçle gülümsedi.', 'Geçişsiz (Onu ✗)', YES, YES_A),
-        (184, 60, '4. Kart: ...dürüstlüktür.', 'İsim cümlesi', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Özne ve nesne ilişkisine göre dört farklı cümle kartı.')
-
-
-def cati_analiz_sema():
-    ic = kutu(6, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(91, 26, 'Öznesine Göre', MAVI, kalin=True)
-    ic += yazi(91, 52, '• Etken: Gerçek/Gizli özne', LAC)
-    ic += yazi(91, 74, '• Edilgen: -l / -n eki var', KIR, kalin=True)
-    ic += yazi(91, 96, '  ve Sözde Özne bulunur', LAC)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 26, 'Nesnesine Göre', YES, kalin=True)
-    ic += yazi(269, 52, '• Geçişli: «Onu» alabilir', LAC)
-    ic += yazi(269, 74, '• Geçişsiz: «Onu» alamaz', LAC)
-    ic += yazi(269, 96, 'Edilgen = Daima Geçişsiz!', YES, kalin=True)
-    return svg(ic, 'Öznesine ve nesnesine göre fiilde çatı çözümleme anahtarı.')
-
-
-def cati_aranmayan_cumleler():
-    satirlar = [
-        (6, 6, 'I. Yaprakları savuruyor.', MAVI, MAVI_A),
-        (184, 6, 'II. Sofraya çorba kondu.', TUR, TUR_A),
-        (6, 60, 'III. ...yanında olmaktır.', KIR, KIR_A),
-        (184, 60, 'IV. ...özlemle anıyor.', YES, YES_A),
-    ]
-    ic = ''
-    for x, y, m, r, z in satirlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 30, m, LAC, kalin=True)
-    return svg(ic, 'Fiil ve fiilimsi yüklemli dört cümlenin karşılaştırılması.')
-
-
-def gecisli_nesnesiz_sema():
-    ic = kutu(6, 6, 348, 103, TUR_A, TUR)
-    ic += yazi(180, 26, 'Geçişli Fiilde Nesne Kullanımı Kontrolü', TUR, kalin=True)
-    ic += yazi(180, 52, '• «Fidanları sulardı» (Nesne yazılı ✓) · «Baklava ikram etti» (Nesne yazılı ✓)', LAC)
-    ic += yazi(180, 76, '• «Sanatçı salonda duygulu okudu» → «Onu okudu» (Geçişli ✓, Nesne yazılı değil!)', MAVI, kalin=True)
-    ic += yazi(180, 98, '• «İki saat uyudu» → «Onu uyudu ✗» (Geçişsiz fiil)', KIR, kalin=True)
-    return svg(ic, 'Geçişli olduğu hâlde cümlede nesne almamış fiil örneği şeması.')
-
-
-def etken_edilgen_donusum():
-    ic = kutu(6, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(91, 26, 'Etken ve Geçişli Cümle', MAVI, kalin=True)
-    ic += yazi(91, 52, '«Belediye ekipleri çocuk', LAC)
-    ic += yazi(91, 72, 'parkını boyadı.»', MAVI, kalin=True)
-    ic += yazi(91, 96, 'Nesne: çocuk parkını', LAC)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 26, 'Edilgen Dönüşüm (-n eki)', YES, kalin=True)
-    ic += yazi(269, 52, 'Eski nesne → Sözde Özne', LAC)
-    ic += yazi(269, 74, 'Yüklem: boya-n-dı', YES, kalin=True)
-    ic += yazi(269, 96, 'İşi yapan belli değil!', KIR, kalin=True)
-    return svg(ic, 'Etken cümlenin edilgen çatıya dönüştürülmesinde nesnenin sözde özne olması.')
-
-
-def cumle_turleri_seridi():
-    adimlar = [
-        (6, 'Kurallı Fiil', 'Yüklem sonda', MAVI, MAVI_A),
-        (94, 'Devrik Fiil', 'Yüklem başta', TUR, TUR_A),
-        (182, 'Kurallı İsim', 'Ek-fiilli ad', YES, YES_A),
-        (270, 'Eksiltili', 'Üç nokta (...)', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, ad, acik, r, z in adimlar:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 36, ad, r, kalin=True)
-        ic += yazi(x + 42, 72, acik, LAC)
-    return svg(ic, 'Yüklemin türüne ve yerine göre dört cümle türü şeridi.')
-
-
-def gardasim_dortluk_panosu():
-    ic = kutu(6, 6, 348, 103, YES_A, YES)
-    ic += yazi(180, 24, '«Gardaşım» Şiirinden Dörtlük', YES, kalin=True)
-    ic += yazi(180, 48, '«Ağlayanı güldürelim gardaşım / Dostluk ile birleşelim gardaşım', LAC)
-    ic += yazi(180, 70, 'Karanlığı aydınlığa çevirip / Sevgi dolu yaşayalım gardaşım»', LAC)
-    ic += yazi(180, 96, 'İpucu: «Ağlamak - gülmek» ve «karanlık - aydınlık» ilişkisine dikkat ediniz.', MAVI, kalin=True)
-    return svg(ic, 'Kardeşlik ana duygusu ve karşıtlık (tezat) sanatı içeren dörtlük panosu.')
-
-
-def fiilimsi_yuklem_karsilastirma():
-    ic = kutu(6, 6, 170, 103, KIR_A, KIR)
-    ic += yazi(91, 26, '1. Cümle (Fiilimsi Yüklem)', KIR, kalin=True)
-    ic += yazi(91, 52, '«En büyük erdem, düşenin', LAC)
-    ic += yazi(91, 72, 'elinden tutmaktır (-mak).»', KIR, kalin=True)
-    ic += yazi(91, 96, 'İsim cümlesi (Çatı aranmaz)', LAC)
-    ic += kutu(184, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(269, 26, '2. Cümle (Çekimli Fiil)', MAVI, kalin=True)
-    ic += yazi(269, 52, '«Komşumuz zor günümüzde', LAC)
-    ic += yazi(269, 72, 'elimizden tuttu (-tu).»', MAVI, kalin=True)
-    ic += yazi(269, 96, 'Fiil cümlesi (Çatı aranır)', YES, kalin=True)
-    return svg(ic, 'Fiilimsi yüklemli isim cümlesi ile çekimli fiil cümlesinin çatı karşılaştırması.')
+GORSELLER = {1: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Özne ve nesne ilişkisine '
+    'göre dört farklı cümle kartı."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Kart:</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">...duygusunu</text><text x="87.5" y="58.9" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">anlattı.</text><text x="87.5" y="77.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Etken + Geçişli (?)</text><rect x="179" y="3" '
+    'width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="30.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Kart: ...çeşme</text><text x="262.5" '
+    'y="49.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">onarıldı.</text><text x="262.5" y="68.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Edilgen (-l eki)</text><rect x="4" y="91" width="167" height="65" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="109.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">3. Kart: ...sevinçle</text><text x="87.5" y="128.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">gülümsedi.</text><text x="87.5" y="146.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Geçişsiz (Onu '
+    '✗)</text><rect x="179" y="91" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="109.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Kart:</text><text x="262.5" y="128.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">...dürüstlüktür.</text><text x="262.5" y="146.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">İsim cümlesi</text></svg>',
+ 2: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Öznesine ve nesnesine '
+    'göre fiilde çatı çözümleme anahtarı."><rect x="4" y="3" width="342" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Öznesine Göre</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">• Etken: Gerçek/Gizli özne</text><text x="11.0" y="56.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">• Edilgen: -l / -n eki var ve Sözde '
+    'Özne</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d63a3a">bulunur</text><rect x="4" y="88" width="342" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Nesnesine Göre</text><text x="11.0" y="122.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Geçişli: «Onu» alabilir</text><text x="11.0" y="141.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Geçişsiz: «Onu» '
+    'alamaz</text><text x="11.0" y="160.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Edilgen = Daima Geçişsiz!</text></svg>',
+ 5: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fiil ve fiilimsi '
+    'yüklemli dört cümlenin karşılaştırılması."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">I. Yaprakları</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">savuruyor.</text><rect x="179" y="3" width="167" height="46" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">II. Sofraya çorba</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">kondu.</text><rect x="4" y="53" width="167" '
+    'height="46" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">III. ...yanında</text><text x="87.5" y="89.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">olmaktır.</text><rect '
+    'x="179" y="53" width="167" height="46" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="80.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">IV. ...özlemle '
+    'anıyor.</text></svg>',
+ 6: '<svg viewBox="0 0 350 143" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Geçişli olduğu hâlde '
+    'cümlede nesne almamış fiil örneği şeması."><rect x="4" y="3" width="342" height="138" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Geçişli Fiilde Nesne Kullanımı Kontrolü</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• «Fidanları sulardı» (Nesne yazılı ✓) '
+    '·</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">«Baklava ikram etti» (Nesne yazılı ✓)</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">• «Sanatçı salonda duygulu okudu» → «Onu</text><text x="11.0" '
+    'y="94.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">okudu» (Geçişli '
+    '✓, Nesne yazılı değil!)</text><text x="11.0" y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">• «İki saat uyudu» → «Onu uyudu ✗»</text><text x="11.0" y="131.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">(Geçişsiz fiil)</text></svg>',
+ 7: '<svg viewBox="0 0 350 153" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Etken cümlenin edilgen '
+    'çatıya dönüştürülmesinde nesnenin sözde özne olması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Etken ve Geçişli Cümle</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«Belediye ekipleri çocuk parkını '
+    'boyadı.»</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Nesne: çocuk parkını</text><rect x="4" y="69" width="342" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Edilgen Dönüşüm (-n eki)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Eski nesne → Sözde Özne</text><text x="11.0" y="122.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Yüklem: '
+    'boya-n-dı</text><text x="11.0" y="141.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d63a3a">İşi yapan belli değil!</text></svg>',
+ 8: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yüklemin türüne ve '
+    'yerine göre dört cümle türü şeridi."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Kurallı Fiil</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Yüklem sonda</text><rect x="179" y="3" width="167" height="46" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Devrik Fiil</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yüklem başta</text><rect x="4" y="53" '
+    'width="167" height="46" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Kurallı İsim</text><text x="87.5" y="89.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ek-fiilli ad</text><rect '
+    'x="179" y="53" width="167" height="46" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="71.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Eksiltili</text><text '
+    'x="262.5" y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Üç '
+    'nokta (...)</text></svg>',
+ 9: '<svg viewBox="0 0 350 143" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kardeşlik ana duygusu ve '
+    'karşıtlık (tezat) sanatı içeren dörtlük panosu."><rect x="4" y="3" width="342" height="138" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">«Gardaşım» Şiirinden Dörtlük</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«Ağlayanı güldürelim gardaşım / Dostluk ile</text><text '
+    'x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">birleşelim gardaşım</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Karanlığı aydınlığa çevirip / Sevgi dolu</text><text x="11.0" y="94.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yaşayalım '
+    'gardaşım»</text><text x="11.0" y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">İpucu: «Ağlamak - gülmek» ve «karanlık -</text><text x="11.0" y="131.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">aydınlık» ilişkisine dikkat ediniz.</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = karma_cati_kartlari()
-    s[2]['gorsel'] = cati_analiz_sema()
-    s[5]['gorsel'] = cati_aranmayan_cumleler()
-    s[6]['gorsel'] = gecisli_nesnesiz_sema()
-    s[7]['gorsel'] = etken_edilgen_donusum()
-    s[8]['gorsel'] = cumle_turleri_seridi()
-    s[9]['gorsel'] = gardasim_dortluk_panosu()
-    s[11]['gorsel'] = fiilimsi_yuklem_karsilastirma()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg
