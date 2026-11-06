@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 651 gönderi (Instagram: 25 bekleyen — 1870/1895 yayında; Facebook: 651 bekleyen).
+Toplam 682 gönderi (Instagram: 56 bekleyen — 1870/1926 yayında; Facebook: 682 bekleyen).
 
 ## bilgi-11-cografya-5
 Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-cografya-5.png
@@ -6971,4 +6971,469 @@ Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap ana
 Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.7.3.6 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
 Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
 #derskutusu #öğrenmeçıktısı #7sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-6-1-2
+Sıra: 2027-03-04 13:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-6-1-2-1.png
+
+```
+6. sınıf Fen Bilimleri · FB.6.1.2 yazılısı hazır 📝
+6. sınıf Fen Bilimleri öğrenme çıktısı FB.6.1.2: “Güneş sistemi ile ilgili bilimsel model oluşturabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-fen-bilimleri-fb-6-1-2.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.6.1.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-1-2-2
+Sıra: 2027-03-04 14:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-1-2-2-1.png
+
+```
+8. sınıf Fen Bilimleri · F.8.1.2.2 yazılısı hazır 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.1.2.2: “İklim biliminin (klimatoloji) bir bilim dalı olduğunu ve bu alanda çalışan uzmanlara iklim bilimci (klimatolog) adı verildiğini söyler.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-1-2-2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.1.2.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-6-1-4
+Sıra: 2027-03-04 14:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-6-1-4-1.png
+
+```
+6. sınıf Fen Bilimleri · FB.6.1.4 yazılısı hazır 📝
+6. sınıf Fen Bilimleri öğrenme çıktısı FB.6.1.4: “Güneş ve Ay tutulması ile ilgili bilimsel model oluşturabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-fen-bilimleri-fb-6-1-4.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.6.1.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-2-2-3
+Sıra: 2027-03-04 14:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-2-2-3-1.png
+
+```
+Kalıtım: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.2.2.3: “Akraba evliliklerinin genetik sonuçlarını tartışır.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-2-2-3.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.2.2.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-6-3-2
+Sıra: 2027-03-04 14:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-6-3-2-1.png
+
+```
+6. sınıf Fen Bilimleri · FB.6.3.2 yazılısı hazır 📝
+6. sınıf Fen Bilimleri öğrenme çıktısı FB.6.3.2: “Bitkilerde üreme, büyüme ve gelişme hakkında bilimsel çıkarım yapabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-fen-bilimleri-fb-6-3-2.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.6.3.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-2-3-1
+Sıra: 2027-03-04 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-2-3-1-1.png
+
+```
+Mutasyon ve Modifikasyon konusunda öğrencileriniz nerede? 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.2.3.1: “Örneklerden yola çıkarak mutasyonu açıklar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-2-3-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.2.3.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-6-3-3
+Sıra: 2027-03-04 15:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-6-3-3-1.png
+
+```
+Bitki ve Hayvanlarda Üreme, Büyüme ve Gelişme konusunda öğrencileriniz nerede? 📝
+6. sınıf Fen Bilimleri öğrenme çıktısı FB.6.3.3: “Tohumun çimlenmesine etki eden faktörlere ilişkin hipotez oluşturabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-fen-bilimleri-fb-6-3-3.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.6.3.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-2-3-2
+Sıra: 2027-03-04 15:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-2-3-2-1.png
+
+```
+Mutasyon ve Modifikasyon konusunda öğrencileriniz nerede? 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.2.3.2: “Örneklerden yola çıkarak modifikasyonu açıklar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-2-3-2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.2.3.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-6-3-4
+Sıra: 2027-03-04 15:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-6-3-4-1.png
+
+```
+Bitki ve Hayvanlarda Üreme, Büyüme ve Gelişme: tek öğrenme çıktısı, tek yazılı 📝
+6. sınıf Fen Bilimleri öğrenme çıktısı FB.6.3.4: “Hayvanlarda üreme, büyüme ve gelişme hakkında bilimsel çıkarım yapabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-fen-bilimleri-fb-6-3-4.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.6.3.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #6sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-2-3-3
+Sıra: 2027-03-04 16:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-2-3-3-1.png
+
+```
+8. sınıf Fen Bilimleri · F.8.2.3.3 yazılısı hazır 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.2.3.3: “Mutasyonla modifikasyon arasındaki farklar ile ilgili çıkarımda bulunur.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-2-3-3.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.2.3.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-6-3-5
+Sıra: 2027-03-04 16:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-6-3-5-1.png
+
+```
+6. sınıf Fen Bilimleri · FB.6.3.5 yazılısı hazır 📝
+6. sınıf Fen Bilimleri öğrenme çıktısı FB.6.3.5: “İnsanda üremeyi sağlayan yapı ve organlar arasındaki ilişkileri çözümleyebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-fen-bilimleri-fb-6-3-5.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.6.3.5 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-2-4-1
+Sıra: 2027-03-04 16:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-2-4-1-1.png
+
+```
+Adaptasyon (Çevreye Uyum) konusunda öğrencileriniz nerede? 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.2.4.1: “Canlıların yaşadıkları çevreye uyumlarını gözlem yaparak açıklar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-2-4-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.2.4.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-6-3-6
+Sıra: 2027-03-04 16:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-6-3-6-1.png
+
+```
+6. sınıf Fen Bilimleri · FB.6.3.6 yazılısı hazır 📝
+6. sınıf Fen Bilimleri öğrenme çıktısı FB.6.3.6: “Sinir sisteminin görevlerini model üzerinde bilimsel olarak gözlemleyebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-fen-bilimleri-fb-6-3-6.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.6.3.6 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-2-5-1
+Sıra: 2027-03-04 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-2-5-1-1.png
+
+```
+Biyoteknoloji: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.2.5.1: “Genetik mühendisliğini ve biyoteknolojiyi ilişkilendirir.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-2-5-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.2.5.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-6-3-7
+Sıra: 2027-03-04 17:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-6-3-7-1.png
+
+```
+Denetleyici ve Düzenleyici Sistemler konusunda öğrencileriniz nerede? 📝
+6. sınıf Fen Bilimleri öğrenme çıktısı FB.6.3.7: “İç salgı bezlerinin vücut için önemini yapılandırabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-fen-bilimleri-fb-6-3-7.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.6.3.7 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-2-5-2
+Sıra: 2027-03-04 17:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-2-5-2-1.png
+
+```
+8. sınıf Fen Bilimleri · F.8.2.5.2 yazılısı hazır 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.2.5.2: “Biyoteknolojik uygulamalar kapsamında oluşturulan ikilemlerle bu uygulamaların insanlık için yararlı ve zararlı yönlerini tartışır.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-2-5-2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.2.5.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-6-3-8
+Sıra: 2027-03-04 17:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-6-3-8-1.png
+
+```
+Denetleyici ve Düzenleyici Sistemler: tek öğrenme çıktısı, tek yazılı 📝
+6. sınıf Fen Bilimleri öğrenme çıktısı FB.6.3.8: “Çocukluktan ergenliğe geçişte oluşan bedensel ve ruhsal değişimleri genelleyebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, analiz, uygulama ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-fen-bilimleri-fb-6-3-8.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.6.3.8 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #6sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-2-5-3
+Sıra: 2027-03-04 18:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-2-5-3-1.png
+
+```
+8. sınıf Fen Bilimleri · F.8.2.5.3 yazılısı hazır 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.2.5.3: “Gelecekteki genetik mühendisliği ve biyoteknoloji uygulamalarının neler olabileceği hakkında tahminde bulunur.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-2-5-3.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.2.5.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-6-3-9
+Sıra: 2027-03-04 18:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-6-3-9-1.png
+
+```
+Denetleyici ve Düzenleyici Sistemler: tek öğrenme çıktısı, tek yazılı 📝
+6. sınıf Fen Bilimleri öğrenme çıktısı FB.6.3.9: “Denetleyici ve düzenleyici sistemlerin sağlığı için yapılması gerekenlerle ilgili bilgi toplayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, uygulama, kavrama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-fen-bilimleri-fb-6-3-9.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.6.3.9 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #6sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-3-1-1
+Sıra: 2027-03-04 18:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-3-1-1-1.png
+
+```
+8. sınıf Fen Bilimleri · F.8.3.1.1 yazılısı hazır 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.3.1.1: “Katı basıncını etkileyen değişkenleri deneyerek keşfeder.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-3-1-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.3.1.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-6-4-1
+Sıra: 2027-03-04 18:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-6-4-1-1.png
+
+```
+Işığın Yansıması: tek öğrenme çıktısı, tek yazılı 📝
+6. sınıf Fen Bilimleri öğrenme çıktısı FB.6.4.1: “Işığın farklı yüzeylerdeki yansıma olaylarına ilişkin bilimsel çıkarım yapabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-fen-bilimleri-fb-6-4-1.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.6.4.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #6sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-3-1-2
+Sıra: 2027-03-04 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-3-1-2-1.png
+
+```
+8. sınıf Fen Bilimleri · F.8.3.1.2 yazılısı hazır 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.3.1.2: “Sıvı basıncını etkileyen değişkenleri tahmin eder ve tahminlerini test eder.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-3-1-2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.3.1.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-6-4-2
+Sıra: 2027-03-04 19:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-6-4-2-1.png
+
+```
+Işığın Yansıması: tek öğrenme çıktısı, tek yazılı 📝
+6. sınıf Fen Bilimleri öğrenme çıktısı FB.6.4.2: “Işığın yansımasında gelen ışın, yansıyan ışın ve yüzeyin normali arasındaki ilişki ile ilgili kanıt kullanabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, uygulama, kavrama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-fen-bilimleri-fb-6-4-2.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.6.4.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #6sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-3-1-3
+Sıra: 2027-03-04 19:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-3-1-3-1.png
+
+```
+8. sınıf Fen Bilimleri · F.8.3.1.3 yazılısı hazır 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.3.1.3: “Katı, sıvı ve gazların basınç özelliklerinin günlük yaşam ve teknolojideki uygulamalarına örnekler verir.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-3-1-3.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.3.1.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-6-4-3
+Sıra: 2027-03-04 19:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-6-4-3-1.png
+
+```
+Aynalar konusunda öğrencileriniz nerede? 📝
+6. sınıf Fen Bilimleri öğrenme çıktısı FB.6.4.3: “Günlük hayattaki ayna çeşitlerine ilişkin bilimsel çıkarım yapabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-fen-bilimleri-fb-6-4-3.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.6.4.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-4-1-1
+Sıra: 2027-03-04 20:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-4-1-1-1.png
+
+```
+Periyodik Sistem: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.4.1.1: “Periyodik sistemde, grup ve periyotların nasıl oluşturulduğunu açıklar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-4-1-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.4.1.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-4-1-2
+Sıra: 2027-03-04 20:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-4-1-2-1.png
+
+```
+8. sınıf Fen Bilimleri · F.8.4.1.2 yazılısı hazır 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.4.1.2: “Elementleri periyodik tablo üzerinde metal, yarımetal ve ametal olarak sınıflandırır.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-4-1-2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.4.1.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-4-2-1
+Sıra: 2027-03-04 20:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-4-2-1-1.png
+
+```
+Fiziksel ve Kimyasal Değişimler konusunda öğrencileriniz nerede? 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.4.2.1: “Fiziksel ve kimyasal değişim arasındaki farkları, çeşitli olayları gözlemleyerek açıklar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-4-2-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.4.2.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-4-3-1
+Sıra: 2027-03-04 20:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-4-3-1-1.png
+
+```
+Kimyasal Tepkimeler: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.4.3.1: “Bileşiklerin kimyasal tepkime sonucunda oluştuğunu bilir.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-4-3-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.4.3.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-4-4-1
+Sıra: 2027-03-04 21:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-4-4-1-1.png
+
+```
+8. sınıf Fen Bilimleri · F.8.4.4.1 yazılısı hazır 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.4.4.1: “Asit ve bazların genel özelliklerini ifade eder.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-4-4-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.4.4.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-f-8-4-4-2
+Sıra: 2027-03-04 21:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-f-8-4-4-2-1.png
+
+```
+Asitler ve Bazlar konusunda öğrencileriniz nerede? 📝
+8. sınıf Fen Bilimleri öğrenme çıktısı F.8.4.4.2: “Asit ve bazlara günlük yaşamdan örnekler verir.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-fen-bilimleri-f-8-4-4-2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.4.4.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
 ```
