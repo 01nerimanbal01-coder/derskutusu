@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261106-1', 'belgeler.js': '20261104-3', 'planlar.js': '20261105-1', 'agac.js': '20261104-3', 'yazili.js': '20261010-1', 'ortak.js': '20261106-2', 'tahta.js': '20261106-1', 'etkinlik.js': '20261017-9', 'arama.js': '20261104-2', 'kutuphane.js': '20261104-2', 'kelime.js': '20261104-2', 'arapca.js': '20261104-2', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261104-3', 'asds.js': '20261104-7'}
+BETIK_SURUMLERI = {'goruntule.js': '20261106-1', 'belgeler.js': '20261104-3', 'planlar.js': '20261105-1', 'agac.js': '20261104-3', 'yazili.js': '20261010-1', 'ortak.js': '20261106-3', 'tahta.js': '20261106-1', 'etkinlik.js': '20261017-9', 'arama.js': '20261104-2', 'kutuphane.js': '20261104-2', 'kelime.js': '20261104-2', 'arapca.js': '20261104-2', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261104-3', 'asds.js': '20261104-7'}
 
 simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
 ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
@@ -57,10 +57,12 @@ REKLAM_MUSTERI = 'ca-pub-6660544937586858'
 REKLAM_SLOTLAR = {'ana': '', 'ozet': ''}   # 'ana': "Ders Kutusu – sayfa altı" (index, öğrenci, öğretmen, içerikler); 'ozet': "Ders Kutusu – özet altı"
 REKLAM_SAYFALARI = {'index.html': 'ana', 'ogrenci.html': 'ana', 'ogretmen.html': 'ana', 'icerikler.html': 'ana',
                     **{ad: 'ana' for ad in SINIF_DIZIN_SAYFALARI}}
-# Etkileşimli araç, indirme, arama ve hata sayfalarına AdSense betiği konmaz; yalnız editoryal içerik ve dizin sayfalarında yer alır.
+# Etkileşimli araç, indirme, arama, yasal bildirim, iletişim ve dış resmî belge sayfalarına AdSense betiği konmaz;
+# yalnız özgün konu anlatımları, çalışma kâğıtları ve akademik dizin sayfalarında yer alır.
 ADSENSE_HARIC = {
     'tahta.html', 'goruntule.html', 'ders-dagitim.html', 'ders-dagitim-uygulama.html',
     'planlar.html', 'yazili.html', 'kelime.html', 'arapca.html',
+    'belgeler.html', 'gizlilik.html', 'telif.html', 'iletisim.html', 'katki.html',
     '404.html', 'okul-bildir.html', 'ara.html', 'sinif.html',
 }
 ADSENSE_UST_KOD = (
@@ -70,13 +72,15 @@ ADSENSE_UST_KOD = (
 
 
 def reklam_yeri(ad):
-    """Sayfanın reklam alanı (alt bilginin hemen üstü); reklam konmayan sayfada boş."""
+    """Sayfanın reklam alanı (alt bilginin hemen üstü); reklam konmayan sayfada ya da slot kimliği yokken boş."""
     yer = 'ozet' if ad.startswith('ozet/') else REKLAM_SAYFALARI.get(ad)
     if not yer:
         return ''
     slot = REKLAM_SLOTLAR.get(yer, '')
+    if not slot:
+        return ''
     birim = (f'<ins class="adsbygoogle" style="display:block" data-ad-client="{REKLAM_MUSTERI}" data-ad-slot="{slot}" data-ad-format="auto" '
-             'data-full-width-responsive="true" data-tag-for-age-treatment="1"></ins>') if slot else ''
+             'data-full-width-responsive="true" data-tag-for-age-treatment="1"></ins>')
     return f'<aside class="reklam" data-reklam="{yer}" aria-label="Reklam" hidden><div class="kap"><span class="reklam-etiket">Reklam</span>{birim}</div></aside>\n'
 
 
@@ -577,6 +581,9 @@ GOVDE = {
           <li><strong>Öğrenme çıktısına göre yazılı kâğıtları:</strong> Türkiye Yüzyılı Maarif Modeli’ndeki her bir öğrenme çıktısını tek başına derinlemesine yoklayan, süreç odaklı izleme ve konu tarama yazılılarıdır.</li>
           <li><strong>Puanlama ve cevap anahtarı güvenliği:</strong> Cevaplı öğretmen kâğıtları her sorunun adım adım çözüm basamaklarını ve tam puan/kısmi puan ölçütlerini içerir; öğrenci sayfalarında ise yalnızca cevapsız çalışma kâğıtları listelenir.</li>
         </ul>
+        <h3>Açık Uçlu Yazılı Sınavlarda Dereceli Puanlama ve Kısmi Puan İlkeleri</h3>
+        <p>Açık uçlu ve kısa cevaplı yazılı sınavlarda değerlendirme yalnızca sonuca göre değil, öğrencinin kurduğu çözüm stratejisine, kullandığı bilimsel veya matematiksel kavramlara ve ara işlem basamaklarına göre yapılır. Ders Kutusu cevap anahtarlarında her soru için tam puanın yanı sıra ara adımların puan karşılıkları da ayrıntılı olarak gösterilir; böylece aynı zümredeki öğretmenlerin farklı şubelerde ortak ve nesnel bir puanlama standardı yakalaması kolaylaşır. Öğrenciler ise sınav öncesinde cevapsız öğrenci kâğıtlarını süre tutarak çözebilir, eksik kaldıkları öğrenme çıktıları için aşağıdaki sınıf konu dizinlerinden ilgili haftanın konu özetine ve çalışma kâğıdına doğrudan dönebilir.</p>
+        <p>Birinci ve ikinci dönem ortak yazılı sınavları öncesinde yayınlanan bu çalışma kâğıtları, öğrencilerin çoktan seçmeli test alışkanlığından çıkarak düşüncelerini tam cümlelerle ifade etme, matematiksel ve bilimsel işlem basamaklarını düzenli yazma, tablo ve grafik verilerini yorumlayarak çıkarımda bulunma becerilerini geliştirir. Öğretmenlerimiz sınıf seviyesine göre farklı senaryoları indirip zümre sınav havuzu oluşturabilir ya da yazılı öncesi son ders saatinde akıllı tahtada örnek çözüm provası yapabilir.</p>
       </div>
       ''' + _sinif_dizin_seridi() + '''
     </div>
@@ -650,7 +657,11 @@ GOVDE = {
         <h2>İçerik İnceleme, Doğrulama ve Yayın Sürecimiz</h2>
         <p>Ders Kutusu’na iletilen her hata bildirimi, içerik önerisi ve öğretmen materyali yayın ekibimiz tarafından dört aşamalı kalite kontrol sürecinden geçirilir. İlk aşamada içeriğin güncel Türkiye Yüzyılı Maarif Modeli (TYMM) öğretim programı ve ilgili sınıfın Millî Eğitim Bakanlığı ders kitabındaki kavram sınırlarıyla tam uyumu denetlenir; müfredat dışı terim veya kazanım üstü işlem basamakları ayıklanır. İkinci aşamada tüm metinler, matematiksel semboller, kesir ve karekök gösterimleri ile Türk Dil Kurumu yazım kuralları satır satır incelenir.</p>
         <p>Üçüncü aşamada çoktan seçmeli ve açık uçlu sorular bağımsız çözüm kontrolünden geçirilir; soru kökünün netliği, görsel-metin tutarlılığı ve tek doğru cevabın tartışmasız biçimde sağlandığı doğrulanır. Son aşamada ise içerik masaüstü bilgisayarlarda, tabletlerde, telefonlarda ve sınıf içi etkileşimli akıllı tahtalarda erişilebilirlik testinden geçirilerek yayına alınır. Öğretmenlerimizin kendi sınıflarında uygulayıp verim aldığı özgün çalışma kâğıtları ve etkinlik önerileri, Türkiye’nin dört bir yanındaki öğrencilerin nitelikli eğitim kaynaklarına ücretsiz ulaşmasına doğrudan katkı sağlar.</p>
+        <h3>Hata Bildirimlerinde ve Önerilerde Hangi Bilgiler Yer Almalı?</h3>
+        <p>Bildiriminizin aynı gün içinde sonuçlandırılabilmesi için ilgili sayfanın tam bağlantısını (örneğin 8. sınıf Matematik 4. hafta konu özeti veya 6. sınıf Fen Bilimleri 1. dönem 1. yazılı senaryo kâğıdı), fark ettiğiniz durumu ve varsa önerdiğiniz düzeltmeyi kısaca yazmanız yeterlidir. Gönderilen her e-posta doğrudan ilgili branş editörümüz tarafından kaynak ders kitabıyla karşılaştırılır, doğrulanan güncellemeler hem web sayfasına hem de indirilebilir PDF ve Word belgelerine eş zamanlı olarak yansıtılır. Açık erişimli eğitim kütüphanemizi büyütmek için katkıda bulunan tüm öğretmen ve öğrencilerimize teşekkür ederiz.</p>
+        <p>Yeni içerik veya araç önerilerinizde okul türü (ortaokul, Anadolu lisesi, fen lisesi veya imam hatip lisesi), sınıf düzeyi ve ilgili ünite başlığını paylaşmanız üretim sıramızı planlamamıza doğrudan yardımcı olur. Öğretmenlerimizin zümre toplantılarında veya sınıf içi uygulamalarda ihtiyaç duyduğu yeni çizelge, çalışma yaprağı ve akıllı tahta özellikleri öncelikli olarak geliştirilerek tüm eğitim camiasının ücretsiz kullanımına sunulmaktadır.</p>
       </div>
+      ''' + _sinif_dizin_seridi() + '''
     </div>
   </section>
   <script>
@@ -891,6 +902,9 @@ GOVDE['planlar.html'] = ('Günlük planlar', '1-12. sınıf günlük ders planla
         <h2>Türkiye Yüzyılı Maarif Modeli Günlük ve Yıllık Ders Planı Rehberi</h2>
         <p>İlkokul 1–4, ortaokul 5–8 ve lise 9–12. sınıf kademelerindeki tüm dersler için hazırlanan günlük ders planları; Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı öğretim programları ile 37 haftalık çerçeve yıllık plan takvimine tam uyumlu olarak düzenlenmiştir. Her haftanın günlük ders planı; ilgili öğrenme alanı ve temayı, süreç bileşenlerini, öğrenme-öğretme yaşantılarını, farklılaştırma (zenginleştirme ve destekleme) etkinliklerini, okul dışı öğrenme önerilerini ve süreç odaklı ölçme-değerlendirme araçlarını eksiksiz içerir.</p>
         <p>Öğretmenlerimiz okul adını, kendi ad ve soyadını, müdür yardımcısı ve okul müdürü bilgilerini yalnızca bir kez girdiğinde sistem bu bilgileri tarayıcı belleğinde (sunucuya hiçbir kişisel veri göndermeden) tüm sayfalardaki imza bloklarına otomatik yerleştirir. Dilerseniz tüm eğitim öğretim yılını tek bir düzenlenebilir Word (.docx) ya da yazdırmaya hazır PDF dosyası olarak indirebilir, dilerseniz ay ay bölünmüş ZIP arşivini zümre klasörünüze kaydedebilirsiniz.</p>
+        <h3>Günlük Ders Planlarında Bulunan Bölümler ve Uygulama Esnekliği</h3>
+        <p>Hazırlanan her haftalık ders planı sayfasında dersin adı, sınıf düzeyi, ünite veya tema başlığı, önerilen ders saati, ilgili haftanın öğrenme çıktıları, derse giriş ve merak uyandırma soruları, adım adım konu işlenişi, kavram yanılgılarına karşı uyarılar ve ders sonu değerlendirme soruları standart bir tablo düzeninde yer alır. Word (.docx) biçiminde indirilen planlarda okulunuzun zümre kararlarına, bölgesel etkinlik takvimine veya sınıfınızın hazırbulunuşluk düzeyine göre dilediğiniz satırı düzenleyebilir; PDF biçimini ise doğrudan yazdırarak ders defteri ve zümre dosyası eki olarak kullanabilirsiniz.</p>
+        <p>Planlarda yer alan haftalık tarih aralıkları Millî Eğitim Bakanlığı iş günü takvimine göre birinci ve ikinci dönem ara tatilleri, yarıyıl tatili ve ortak sınav haftaları dikkate alınarak yapılandırılmıştır. İlgili haftanın günlük planını indirdikten sonra aynı haftanın etkileşimli konu özetini ve çalışma kâğıdını aşağıdaki sınıf dizinlerinden açarak ders hazırlığınızı birkaç dakika içinde tamamlayabilirsiniz.</p>
       </div>
       ''' + _sinif_dizin_seridi() + '''
     </div>
@@ -945,6 +959,9 @@ GOVDE['ders-dagitim.html'] = ('Ders dağıtım programı', 'Okullar için ücret
       <p>Öğretmen, ders ve program bilgileri yalnız bu cihazdaki tarayıcıda saklanır, Ders Kutusu sunucusuna gönderilmez. Okul bilgilerindeki “kullanan okullar listesine eklensin” işareti açıksa programı ilk oluşturduğunuzda yalnız okul adı, ilçe ve öğretmen/sınıf sayısı bildirilir; sitede yalnız kullanan okul sayısı görünür, okul adı Ders Kutusu’nun herkese açık GitHub deposundaki listede görünebilir. İşareti kaldırırsanız hiçbir bilgi gönderilmez. Başka bir bilgisayarda devam etmek için “Yedek indir” ile aldığınız dosyayı orada “Yedek yükle” ile açabilirsiniz. Ayrıntı: <a href="/gizlilik.html">Gizlilik ve çerezler</a>.</p>
       <h2>Okul Yönetimleri İçin Çizelge Planlama İpuçları</h2>
       <p>Haftalık ders dağıtım çizelgesi hazırlanırken önce laboratuvar, bilişim teknolojileri sınıfı, müzik atölyesi ve spor salonu gibi ortak kullanılan özel dersliklerin saatleri ile iki öğretmenin birlikte girdiği uygulamalı dersler tanımlanmalıdır. Ardından nöbet günleri, zümre toplantı saatleri ve öğretmenlerin mazeretli olduğu zaman dilimleri girildiğinde yerleştirme motoru dar boğazları öncelik sırasıyla çözer. Herhangi bir sınıfın haftalık toplam ders saati ile atanmış branş derslerinin toplamı uyuşmadığında sistem uyarı vererek eksik veya fazla saati anında bildirir; böylece dönem başında el ile yapılan saat kaydırma hataları tamamen önlenir.</p>
+      <h2>Blok Ders Dağılımı, Çakışma Çözümü ve Resmî Çıktı Biçimleri</h2>
+      <p>Dağıtım algoritması, dört veya beş saatlik ana branş derslerini (Matematik, Türkçe, Türk Dili ve Edebiyatı, Fen Bilimleri, Fizik, Kimya, Biyoloji ve Yabancı Dil) haftanın günlerine dengeli biçimde örneğin 2+2 veya 2+2+1 blok yapısıyla yerleştirir; aynı sınıfa aynı günde aşırı yüklenmeyi engeller. Yerleşmeyen bir ders saati kaldığında program yalnızca hata vermekle kalmaz, hangi öğretmenin hangi gündeki kapalı saati açılırsa veya hangi iki sınıfın dersi takas edilirse çizelgenin %100 tamamlanacağını adım adım listeler. Tamamlanan haftalık ders programını sınıf el programı, öğretmen el programı ve okul genel çarşaf çizelgesi olarak PDF veya Excel (.xlsx) biçiminde indirip okul panolarında ve öğretmenler kurulunda doğrudan paylaşabilirsiniz.</p>
+      <p>Dönem içinde öğretmen değişikliği, seçmeli ders güncellemesi veya derslik tadilatı gibi durumlarda mevcut çizelgenizi sıfırlamanıza gerek yoktur; yalnızca ilgili öğretmenin veya sınıfın kısıtlarını güncelleyip yeniden dağıtım çalıştırarak en az değişiklikle yeni haftalık programı oluşturabilirsiniz.</p>
     </div>
   </div>\n''' + SOSYAL_DAVET, ())
 
@@ -979,7 +996,11 @@ GOVDE['kelime.html'] = ('İngilizce kelime çalışması', '5 ve 6. sınıf İng
         <p>Kelime alıştırmalarını tamamladıktan sonra ilgili haftanın dil bilgisi yapılarını ve diyalog örneklerini pekiştirmek için <a href="/sinif-5.html">5. sınıf İngilizce konu anlatımları</a>, <a href="/sinif-6.html">6. sınıf İngilizce konu anlatımları</a>, <a href="/sinif-7.html">7. sınıf</a> ve <a href="/sinif-8.html">8. sınıf LGS İngilizce</a> dizinlerimizdeki haftalık ders özetlerine ve çalışma kâğıtlarına geçebilirsiniz.</p>
         <h3>Dört Çalışma Kipini Verimli Kullanma Sırası</h3>
         <p>Yeni bir temaya başlarken önce <strong>Kartlar</strong> kipinde kelimenin yazılışını ve anlamını inceleyip ses simgesiyle doğru okunuşu yüksek sesle tekrar edin. Ardından <strong>Eşleştir</strong> kipiyle hızlı görsel çağrışım kurun, <strong>Test</strong> kipiyle çeldiriciler arasından doğru anlamı seçme hızınızı ölçün ve son aşamada <strong>Yaz</strong> kipiyle sessiz harfleri veya çift ünsüzleri hatasız kodladığınızdan emin olun. Düzenli olarak günde on beş dakika yapılan bu dört adımlı tekrar, okul yazılılarında ve okuma parçalarında karşılaşılan kelimelerin kalıcı hafızaya yerleşmesini sağlar.</p>
+        <h3>Sınıf Düzeyine Göre Kapsanan Temalar ve Yazılıya Hazırlık</h3>
+        <p>5. sınıf İngilizce kelime listeleri okul ortamı, ders araç gereçleri, tanışma ve selamlaşma kalıpları, ülkeler ve uluslar, saatler, günlük alışkanlıklar, hastalıklar ve sağlık önerileri, film türleri, doğum günü partisi hazırlıkları, spor etkinlikleri ve hayvan barınağı temalarını eksiksiz içerir. 6. sınıf kelime grupları ise okul sonrası etkinlikler, kahvaltı ve beslenme alışkanlıkları, şehir ve kasaba yaşamı, hava durumu ve duygular, lunapark araçları, meslekler, tatil etkinlikleri, kitap kurdu okuma terimleri, çevre koruma ve demokratik seçim kavramlarını kapsar. Her temadaki kelimeleri öğrendikten sonra ilgili haftanın açık uçlu yazılı sorularını ve çalışma kâğıtlarını çözerek okuma-yazma bütünlüğünü sağlayabilirsiniz.</p>
+        <p>Öğretmenlerimiz sınıf içi akıllı tahtada temayı seçip tam ekran kart görünümüyle ders başında beş dakikalık kelime ısınma etkinliği yapabilir; öğrenciler ise yanlış yanıtladıkları kelimeleri tekrar listesinde toplayarak kendi bireysel sözlüklerini adım adım tamamlayabilir. Tüm kelime verileri ve seslendirmeler hiçbir üyelik gerektirmeden her cihazda doğrudan çalışır.</p>
       </div>
+      ''' + _sinif_dizin_seridi() + '''
     </div>
   </section>''', ('kelime.js',))
 
@@ -1003,7 +1024,11 @@ GOVDE['arapca.html'] = ('Arapça harf ve kelime çalışması', '28 harf ve 48 k
   <p>Arapça okuma ve yazma becerisinin temeli, sağdan sola yazım yönünü kavramak ve 28 harfin kelime başındaki, ortasındaki ve sonundaki bitişme biçimlerini ayırt edebilmektir. Kendinden sonraki harfle birleşmeyen <em>elif, dal, zel, ra, ze ve vav</em> harflerinin tanınması, öğrencilerin kelime köklerini ve eklerini okurken hata yapmasını önler. Bu sayfadaki çalışma modülü; harf tanıma aşamasından başlayarak fetha (üstün), kesra (esre), damme (ötre), sükûn (cezm) ve şedde işaretlerinin sese etkisini adım adım uygulamalı olarak gösterir.</p>
   <p>Harf ve hareke tekrarının ardından selamlaşma, tanışma, aile bireyleri, okul eşyaları ve günlük ifadeler temalarındaki kelimeleri ekran içi Arapça klavyeyle yazarak, sesli dinleyerek ve anlam eşleştirmesi yaparak pekiştirebilirsiniz. Ortaokul ve imam hatip lisesi düzeyindeki tüm haftalık Arapça ders özetleri için <a href="/sinif-5.html">5. sınıf</a>, <a href="/sinif-6.html">6. sınıf</a>, <a href="/sinif-7.html">7. sınıf</a>, <a href="/sinif-8.html">8. sınıf</a>, <a href="/sinif-9.html">9. sınıf</a> ve <a href="/sinif-10.html">10. sınıf</a> konu dizinlerimizi inceleyebilirsiniz.</p>
   <p>Çalışırken önce <strong>Harfler</strong> ve <strong>Harekeler</strong> sekmelerinde mahreç ve kısa-uzun ünlü farklarını kavrayıp ardından kelime kartlarına geçmeniz önerilir. Sağdan sola birleşen harflerin kuyruklarının satır çizgisine göre nasıl kısaldığını gözlemlemek ve ekran klavyesiyle kelimeyi harekeli biçimde yeniden yazmak, hem ders kitabındaki diyalog metinlerini akıcı okumayı hem de açık uçlu yazılı sınavlarda doğru yazım yapmayı doğrudan kolaylaştırır.</p>
+  <h3>Uzatma Harfleri (Med), Tenvin ve Günlük İletişim Kalıpları</h3>
+  <p>Arapçada kelimelerin doğru okunması ve anlamlandırılması için kısa ünlü görevindeki harekelerin yanı sıra <em>elif, vav ve ye</em> uzatma (med) harflerinin, kelime sonunda belirsizlik bildiren iki üstün, iki esre ve iki ötre (tenvin) işaretlerinin ve harfi iki kez okutan şeddenin işlevi iyi kavranmalıdır. Modüldeki kelime kartları yalnızca tekil sözcükleri değil; sabah ve akşam selamlaşmalarını, kendini ve ailesini tanıtma cümlelerini, sınıf içi yönergeleri, soru edatlarını ve temel nezaket ifadelerini de harekeli yazılışları ve Türkçe anlamlarıyla birlikte sunar. Böylece öğrenciler hem dinleme-konuşma etkinliklerine hem de dönem içi yazılı sınavlarına sağlam bir temelle hazırlanır.</p>
+  <p>Ayrıca müzekker (eril) ve müennes (dişil) kelimelerin sonundaki kapalı te (tâ-i merbûta) işareti, işaret zamirleri (hâzâ / hâzihî) ve iyelik ekleri (benim, senin, onun) ünite örnekleriyle birlikte gösterilir. Öğrenciler her kartta kelimenin Arapça yazılışını inceledikten sonra ekran klavyesinde harfleri tek tek seçerek birleşme kurallarını bizzat uygulayabilir ve kendi ilerleme yüzdelerini takip edebilir.</p>
 </div>
+''' + _sinif_dizin_seridi() + '''
 <noscript>Alıştırmalar için JavaScript’i etkinleştirin. Konu anlatımlarını yukarıdaki bağlantılardan okuyabilirsiniz.</noscript>
 </div></section>''', ('arapca.js',))
 
@@ -1021,10 +1046,6 @@ GOVDE['ogrenci.html'] = ('Öğrenci', 'Ders Kutusu öğrenci sayfası: sınıfı
         <li><a href="/sinif-12.html">12. sınıf · YKS (TYT · AYT) konu anlatımları dizini</a> (<a href="/ogrenci.html?sinif=12">Ünite gezgini</a>)</li>
       </ul>
       <p>Etkileşimli çalışma araçları: <a href="/kelime.html">İngilizce kelime kartları</a> · <a href="/arapca.html">Arapça harf ve kelime çalışması</a> · <a href="/sinav.html">ASDS Deneme Sınavları, LGS ve YKS Rehberi</a> · <a href="/kpss.html">KPSS Genel Yetenek Modülleri</a> (<a href="/kpss/turkce-paragrafta-anlam.html">Paragrafta Anlam</a> · <a href="/kpss/matematik-temel-kavramlar.html">Temel Kavramlar</a>)</p>
-      <div id="yaziliya-hazirlik">
-        <h2>Yazılıya Hazırlık ve Öğrenci Çalışma Kâğıtları</h2>
-        <p>Ders seçtiğinizde ilgili dersin ünite ve hafta listesinin altında o dönemin ortak yazılı senaryolarına ve öğrenme çıktılarına uygun açık uçlu öğrenci çalışma kâğıtları doğrudan açılır.</p>
-      </div>
     </div></section></div>
   <section class="bolum koyu-zemin">
     <div class="kap">
@@ -1032,6 +1053,14 @@ GOVDE['ogrenci.html'] = ('Öğrenci', 'Ders Kutusu öğrenci sayfası: sınıfı
         <h2>Ders Kutusu ile Haftalık Ders Tekrarı ve Sınava Hazırlık Nasıl Yapılır?</h2>
         <p>Kalıcı akademik başarı, okulda işlenen konunun aynı hafta içinde sade bir özetle tekrar edilmesine ve farklı soru tipleriyle sınanmasına dayanır. Ders Kutusu’ndaki 1.600’ü aşkın haftalık konu anlatımı sayfası dört temel öğrenme adımını tek ekranda birleştirir: Önce renkli vektörel şemalar, bilgi ve dikkat kutularıyla konunun özü kavranır; ardından adım adım açılır çözümlü örneklerle işlem ve yorumlama stratejisi görülür; üçüncü adımda çoktan seçmeli, doğru-yanlış, eşleştirme ve boşluk doldurma sorularından oluşan etkileşimli etkinliklerle anında geri bildirim alınır; son adımda ise iki sayfalık PDF çalışma kâğıdı indirilerek kâğıt-kalem pratiği tamamlanır.</p>
         <p>Ortaokul 5, 6, 7 ve 8. sınıf öğrencileri ayrıca her ay uygulanan A ve B kitapçıklı Akademik Süreç Değerlendirme Sınavları (ASDS) ile sarmal kazanım eksiklerini ölçebilir; lise 9, 10, 11 ve 12. sınıf öğrencileri ise hem okul yazılılarına hem de TYT ve AYT oturumlarına ünite sırasını bozmadan hazırlanabilir. Aşağıdaki sınıf bağlantılarından kendi sınıfınızın tüm ders ve hafta listesine tek tıkla geçebilirsiniz.</p>
+        <div id="yaziliya-hazirlik">
+          <h3>Yazılıya Hazırlık, Açık Uçlu Çalışma Kâğıtları ve Kişisel İlerleme Takibi</h3>
+          <p>Üstteki sınıf ve ders gezgininden dersinizi seçtiğinizde ilgili dersin ünite ve hafta ağacının altında o dönemin ortak yazılı senaryolarına ve öğrenme çıktılarına uygun açık uçlu öğrenci çalışma kâğıtları doğrudan listelenir. Öğrenci sayfalarında sınav heyecanını ve öz değerlendirmeyi desteklemek amacıyla yalnızca cevapsız çalışma kâğıtları yer alır; ayrıntılı puanlama anahtarları ise öğretmen bölümünde sunulur. Ayrıca okuduğunuz her konu özetini “Bu konuyu tamamladım” düğmesiyle işaretleyerek hangi ünitede yüzde kaç ilerlediğinizi kendi cihazınızda adım adım takip edebilirsiniz.</p>
+        </div>
+        <h3>Ortaokul ve Lise Kademelerinde Kapsanan Dersler</h3>
+        <p>Ortaokul kademesinde (5, 6, 7 ve 8. sınıflar) Türkçe, Matematik, Fen Bilimleri, Sosyal Bilgiler, T.C. İnkılap Tarihi ve Atatürkçülük, İngilizce, Din Kültürü ve Ahlak Bilgisi, Arapça, Kur’an-ı Kerim, Peygamberimizin Hayatı ve Temel Dini Bilgiler derslerinin tamamı hafta hafta yer alır. Lise kademesinde (9, 10, 11 ve 12. sınıflar) ise Türk Dili ve Edebiyatı, Matematik, Fizik, Kimya, Biyoloji, Tarih, Coğrafya, Felsefe, İngilizce, Din Kültürü ve Ahlak Bilgisi ile imam hatip meslek derslerinin tüm ünite özetleri, kavram haritaları ve çalışma yaprakları açık erişimli olarak sunulmaktadır.</p>
+        <h3>Adım Adım Bireysel Çalışma ve Tekrar Planı</h3>
+        <p>Haftalık çalışmanıza başlarken önce okulda o hafta işlenen ünite ve konuyu seçip özetin başındaki öğrenme çıktılarını okuyun. Konu anlatımı içindeki renkli şemaları, formül kutularını ve kavram karşılaştırma tablolarını inceledikten sonra çözümlü örneklerin cevabını açmadan önce kendi başınıza çözmeyi deneyin. Ardından sayfa sonundaki etkileşimli çoktan seçmeli, doğru-yanlış, eşleştirme ve boşluk doldurma sorularını tamamlayarak anında doğruluk kontrolü yapın. Hafta sonunda ise aynı konunun iki sayfalık PDF çalışma kâğıdını indirip çözerek öğrendiklerinizi kalıcı hafızaya taşıyın; sınav haftalarında ise ortak yazılı senaryo kâğıtları ve ASDS deneme sınavlarıyla genel tekrarınızı tamamlayın.</p>
       </div>
       {_sinif_dizin_seridi()}
     </div>
@@ -1057,6 +1086,13 @@ GOVDE['ogretmen.html'] = ('Öğretmen Köşesi', 'Öğretmen Köşesi: günlük 
         <h2>Sınıf İçi Ders İşlenişi ve Ölçme-Değerlendirme Araçlarımız</h2>
         <p>Ders Kutusu Öğretmen Köşesi, öğretmenlerin evrak yükünü azaltmak ve sınıf içi öğretim süresini nitelikli içerikle zenginleştirmek amacıyla tasarlanmıştır. Sitedeki bütün haftalık konu özetleri akıllı tahta uyumlu tam ekran sunum kipine ve sayfa üzerine doğrudan kalemle yazma özelliğine sahiptir; böylece sınıfta ek bir yazılım kurmaya gerek kalmadan tarayıcı üzerinden konu anlatımı ve örnek soru çözümü yapılabilir. Günlük plan oluşturucu ve ders dağıtım programı gibi yönetim araçlarında girilen kurum ve öğretmen adları hiçbir sunucuya aktarılmaz; tüm belge üretimi doğrudan cihazınızın tarayıcısında gerçekleşir.</p>
         <p>Zümre çalışmalarında dönem içi yazılı hazırlarken <a href="/yazili.html">Ortak Yazılılar</a> bölümünden ilgili sınıf ve dersin ÖDSGM senaryolarını karşılaştırabilir, öğrencilerinizin bireysel konu tekrarı için de aşağıdaki sınıf konu dizinlerini doğrudan paylaşabilirsiniz.</p>
+        <h3>Türkiye Yüzyılı Maarif Modeli Süreç Odaklı Ölçme ve Zümre Hazırlığı</h3>
+        <p>Güncel öğretim programlarında ölçme ve değerlendirme yalnızca dönem sonu notu vermeye değil, öğrencinin öğrenme çıktılarındaki gelişimini süreç boyunca izlemeye ve geri bildirimle desteklemeye odaklanır. Öğretmen Köşesi’nde yer alan haftalık çalışma kâğıtları; kavrama, uygulama, analiz ve bağlam temelli muhakeme basamaklarını dengeli biçimde tarayacak şekilde iki sayfalık kompakt föyler hâlinde hazırlanmıştır. Her çalışma kâğıdının hem sınıf içinde öğrencilere dağıtılabilecek cevapsız baskı sürümü hem de akıllı tahtada veya öğretmen kontrolünde kullanılabilecek tam çözümlü cevap anahtarı sürümü ayrı ayrı indirilebilir.</p>
+        <p>Dönem başı ve dönem sonu zümre toplantılarında ihtiyaç duyulan çerçeve yıllık planlara, ders öğretim programlarına, MEB çalışma takvimine ve ortak sınav uygulama kılavuzlarına üstteki kategori düğmelerinden veya <a href="/belgeler.html">Resmî Belgeler</a> arşivinden saniyeler içinde ulaşabilirsiniz.</p>
+        <h3>Akıllı Tahta Sunum Kipi, Kalem Aracı ve Sınıf İçi Etkileşim</h3>
+        <p>Sınıf içi etkileşimli tahtalarda herhangi bir konu özetini açtığınızda üst araç çubuğundaki “Sunum modu” düğmesiyle menüleri gizleyip metin ve şemaları tam ekran büyütebilir, “Kalemle yaz” düğmesiyle de doğrudan paragrafların, grafiklerin ve çözümlü örneklerin üzerine renkli kalem ve fosforlu vurgulayıcıyla not alabilirsiniz. Ders sonunda öğrencilerinize ödev veya tekrar bağlantısı göndermek istediğinizde sayfadaki paylaşım düğmesiyle ilgili haftanın konu özetini, çalışma kâğıdını veya yazılı senaryosunu tek tıkla sınıf gruplarında paylaşabilirsiniz. Bütün öğretmen araçlarımız reklamsız çalışma tuvallerine, hızlı yüklenen vektörel grafiklere ve sıfır üyelik ilkesine sahiptir.</p>
+        <h3>Kademe ve Branşlara Göre Hazır Zümre Kaynakları</h3>
+        <p>İlkokul, ortaokul ve lise öğretmenlerimiz için hazırlanan yıllık ve günlük plan arşivi; Türkçe, Matematik, Fen Bilimleri, Sosyal Bilgiler, T.C. İnkılap Tarihi ve Atatürkçülük, İngilizce, Din Kültürü ve Ahlak Bilgisi, Türk Dili ve Edebiyatı, Fizik, Kimya, Biyoloji, Tarih, Coğrafya, Felsefe, Arapça ve meslek derslerinin tamamını kapsar. Ayrıca dönem ortasında ve dönem sonunda yapılan ortak yazılı sınavlar için ÖDSGM senaryo tablolarına birebir uyumlu açık uçlu sorular, puanlama cetvelleri ve kazanım eşleştirme listeleri düzenli olarak güncellenir. Öğretmen adaylarımız da KPSS Genel Yetenek bölümündeki özgün konu anlatımları, çözümlü örnekler ve PDF deneme yapraklarıyla sınava ücretsiz hazırlanabilir.</p>
       </div>
       {_sinif_dizin_seridi()}
     </div>
@@ -1105,6 +1141,7 @@ GOVDE['hakkimizda.html'] = ('Hakkımızda', 'Ders Kutusu nedir, kimler için haz
 
     <h2>Kapsam ve yayın standartlarımız</h2>
     <p>Ders Kutusu’nda yayımlanan 1.600’den fazla haftalık konu anlatımı, 720’yi aşkın çalışma kâğıdı, ortak yazılı senaryoları ve ASDS deneme kitapçıkları; eğitimde fırsat eşitliğini desteklemek amacıyla hiçbir abonelik duvarı olmadan açık erişimli sunulur. Matematiksel ifadelerde kesirler ve karekökler ders kitaplarındaki akademik dizgi kurallarına uygun biçimde gösterilir; fen, sosyal bilimler ve dil derslerindeki tüm şemalar ekran okuyucu uyumlu vektörel çizimlerle hazırlanır. Güncel müfredat değişiklikleri yayımlandıkça ilgili sınıf ve hafta içerikleri aynı eğitim dönemi içinde güncellenir.</p>
+    <p>Yayın kurulumuz her eğitim öğretim yılı başında Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı tarafından yayımlanan çerçeve öğretim programlarını, ders kitaplarını ve Ölçme, Değerlendirme ve Sınav Hizmetleri Genel Müdürlüğü (ÖDSGM) konu-soru dağılım tablolarını ayrıntılı olarak inceler. Ortaokul 5–8. sınıf ve lise 9–12. sınıf kademelerindeki tüm derslerde öğrencilerin kavram yanılgısına düşebileceği noktalar “Dikkat” ve “İpucu” kutularıyla vurgulanır; öğretmenlerimizin sınıf içinde doğrudan akıllı tahtada kullanabileceği yüksek kontrastlı sunum görünümü ve yazdırılabilir PDF föyleri bir arada sunulur.</p>
   </div>
 </div>''', ())
 GOVDE['iletisim.html'] = ('İletişim', 'Ders Kutusu ile iletişim: soru, öneri, hata bildirimi ve telif başvuruları için e-posta.', '''<div class="metin-sayfa">
@@ -1128,6 +1165,9 @@ GOVDE['iletisim.html'] = ('İletişim', 'Ders Kutusu ile iletişim: soru, öneri
 
     <h2>Değerlendirme ve Yanıt Sürecimiz</h2>
     <p>Öğretmen, öğrenci ve velilerden gelen her e-posta doğrudan içerik ve yazılım geliştirme ekibimiz tarafından okunur. Konu anlatımları, çalışma kâğıtları veya sınav anahtarlarıyla ilgili maddi hata bildirimleri en yüksek öncelikle ele alınarak kaynak ders kitabıyla karşılaştırılır ve doğrulanan düzeltmeler aynı gün içinde yayına yansıtılır. Kurumsal iş birliği, açık kaynak eğitim projeleri ve gizlilik politikamızla ilgili sorularınız da gizlilik ilkelerimiz çerçevesinde titizlikle yanıtlanır.</p>
+    <p>E-posta gönderirken bildiriminizin daha hızlı incelenebilmesi için konu satırında sınıf düzeyini, ders adını ve hafta numarasını (örneğin “7. Sınıf Fen Bilimleri 5. Hafta Çalışma Kâğıdı Soru 4”) belirtmeniz süreci hızlandırır. Okul zümrelerinizde kullandığınız yıllık ve günlük planlarla veya haftalık ders dağıtım programıyla ilgili teknik destek taleplerinizde ise kullandığınız cihaz türünü (masaüstü bilgisayar, tablet veya etkileşimli tahta) eklemeniz çözüm üretmemizi kolaylaştıracaktır.</p>
+    <p>Yayın ekibimiz hafta içi ve hafta sonu gelen tüm akademik bildirimleri düzenli olarak tarar; özellikle yazılı sınav haftalarında ve deneme sınavı dönemlerinde öğretmen ve öğrencilerimizin acil belge veya cevap anahtarı sorularına öncelik verilir. Sitedeki bütün ders içeriklerine <a href="/icerikler.html">Kaynak Kütüphanesi</a> üzerinden veya sınıf dizinlerinden doğrudan ulaşabilirsiniz.</p>
+    <p>Okul yönetimleri, il ve ilçe zümre başkanlıkları veya eğitim fakültesi öğretim elemanları tarafından iletilen açık erişimli materyal paylaşımı, ortak çalışma yaprağı geliştirme ve müfredat uyumu görüşleri de doğrudan akademik koordinasyon ekibimizce değerlendirilir. Ders Kutusu, Türkiye’nin her bölgesindeki öğrenci ve öğretmenlerin reklama boğulmayan, hızlı, güvenilir ve ücretsiz eğitim kaynaklarına ulaşması için kesintisiz olarak geliştirilmektedir.</p>
 
     <p>Siteye içerik veya paylaşım yoluyla destek olmak için <a href="/katki.html">Katkıda bulun</a> sayfasına, yayın ilkelerimiz için <a href="/hakkimizda.html">Hakkımızda</a> ve <a href="/gizlilik.html">Gizlilik ve çerezler</a> sayfalarına göz atabilirsiniz.</p>
   </div>

@@ -38,6 +38,7 @@ def guncelle(yol):
     # 06.11.2026: Standart AdSense doğrulama ve Google sertifikalı TCF v2.2 CMP uyumu (araç/noindex sayfaları hariç)
     t = NPA_ETIKETI.sub('', t)
     t = REKLAM_ETIKETI.sub('', t)
+    t = re.sub(r'<aside class="reklam"[^\n]*><div class="kap"><span class="reklam-etiket">Reklam</span></div></aside>\n?', '', t)
     if ad not in ADSENSE_HARIC and 'content="noindex"' not in t:
         if ADSENSE_META in t:
             t = t.replace(ADSENSE_META, ADSENSE_META + ADSENSE_UST_KOD, 1)

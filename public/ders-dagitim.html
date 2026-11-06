@@ -22,7 +22,7 @@
 <meta property="og:image" content="https://derskutusu.com/paylasim.png">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "EducationalOrganization", "@id": "https://derskutusu.com/#kurum", "name": "Ders Kutusu", "url": "https://derskutusu.com/", "logo": "https://derskutusu.com/simge-512.png", "email": "info@derskutusu.com", "sameAs": ["https://www.instagram.com/derskutusuinfo/", "https://www.facebook.com/derskutusuinfo", "https://www.youtube.com/@derskutusuinfo"]}, {"@type": "WebPage", "@id": "https://derskutusu.com/ders-dagitim.html#sayfa", "url": "https://derskutusu.com/ders-dagitim.html", "name": "Ders dağıtım programı · Ders Kutusu", "description": "Okullar için ücretsiz ders dağıtım programı: öğretmen, sınıf ve ders bilgilerinden haftalık program üretir, yerleşmeyen dersin nedenini gösterir; PDF ve Excel çıktı verir. Veriler yalnız tarayıcınızda kalır.", "inLanguage": "tr-TR", "isPartOf": {"@type": "WebSite", "@id": "https://derskutusu.com/#site", "name": "Ders Kutusu", "url": "https://derskutusu.com/"}, "publisher": {"@id": "https://derskutusu.com/#kurum"}}]}</script>
-<link rel="stylesheet" href="/stil.css?v=2026110605">
+<link rel="stylesheet" href="/stil.css?v=2026110606">
 <link rel="stylesheet" href="/renkler.css?v=20261106-2" media="screen">
 </head>
 <body data-kitle="ogretmen" data-site-renk="turuncu">
@@ -117,6 +117,9 @@
       <p>Öğretmen, ders ve program bilgileri yalnız bu cihazdaki tarayıcıda saklanır, Ders Kutusu sunucusuna gönderilmez. Okul bilgilerindeki “kullanan okullar listesine eklensin” işareti açıksa programı ilk oluşturduğunuzda yalnız okul adı, ilçe ve öğretmen/sınıf sayısı bildirilir; sitede yalnız kullanan okul sayısı görünür, okul adı Ders Kutusu’nun herkese açık GitHub deposundaki listede görünebilir. İşareti kaldırırsanız hiçbir bilgi gönderilmez. Başka bir bilgisayarda devam etmek için “Yedek indir” ile aldığınız dosyayı orada “Yedek yükle” ile açabilirsiniz. Ayrıntı: <a href="/gizlilik.html">Gizlilik ve çerezler</a>.</p>
       <h2>Okul Yönetimleri İçin Çizelge Planlama İpuçları</h2>
       <p>Haftalık ders dağıtım çizelgesi hazırlanırken önce laboratuvar, bilişim teknolojileri sınıfı, müzik atölyesi ve spor salonu gibi ortak kullanılan özel dersliklerin saatleri ile iki öğretmenin birlikte girdiği uygulamalı dersler tanımlanmalıdır. Ardından nöbet günleri, zümre toplantı saatleri ve öğretmenlerin mazeretli olduğu zaman dilimleri girildiğinde yerleştirme motoru dar boğazları öncelik sırasıyla çözer. Herhangi bir sınıfın haftalık toplam ders saati ile atanmış branş derslerinin toplamı uyuşmadığında sistem uyarı vererek eksik veya fazla saati anında bildirir; böylece dönem başında el ile yapılan saat kaydırma hataları tamamen önlenir.</p>
+      <h2>Blok Ders Dağılımı, Çakışma Çözümü ve Resmî Çıktı Biçimleri</h2>
+      <p>Dağıtım algoritması, dört veya beş saatlik ana branş derslerini (Matematik, Türkçe, Türk Dili ve Edebiyatı, Fen Bilimleri, Fizik, Kimya, Biyoloji ve Yabancı Dil) haftanın günlerine dengeli biçimde örneğin 2+2 veya 2+2+1 blok yapısıyla yerleştirir; aynı sınıfa aynı günde aşırı yüklenmeyi engeller. Yerleşmeyen bir ders saati kaldığında program yalnızca hata vermekle kalmaz, hangi öğretmenin hangi gündeki kapalı saati açılırsa veya hangi iki sınıfın dersi takas edilirse çizelgenin %100 tamamlanacağını adım adım listeler. Tamamlanan haftalık ders programını sınıf el programı, öğretmen el programı ve okul genel çarşaf çizelgesi olarak PDF veya Excel (.xlsx) biçiminde indirip okul panolarında ve öğretmenler kurulunda doğrudan paylaşabilirsiniz.</p>
+      <p>Dönem içinde öğretmen değişikliği, seçmeli ders güncellemesi veya derslik tadilatı gibi durumlarda mevcut çizelgenizi sıfırlamanıza gerek yoktur; yalnızca ilgili öğretmenin veya sınıfın kısıtlarını güncelleyip yeniden dağıtım çalıştırarak en az değişiklikle yeni haftalık programı oluşturabilirsiniz.</p>
     </div>
   </div>
   <div class="kap"><aside class="sosyal-davet" aria-label="Sosyal medya takip çağrısı">
@@ -172,7 +175,7 @@
   </div>
 </footer>
 
-<script src="/ortak.js?v=20261106-2"></script>
+<script src="/ortak.js?v=20261106-3"></script>
 <script src="/arama.js?v=20261104-2"></script>
 <script src="/tahta.js?v=20261106-1"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fffb5e8a709947ee9ba14ea753d96275"}'></script><!-- End Cloudflare Web Analytics -->
