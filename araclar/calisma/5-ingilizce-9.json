@@ -12,8 +12,7 @@
   "hatirla": [
     "Saati sorarken «What time is it?» denir; tam saatlerde «o’clock» (08:00 → eight o’clock), buçuklarda «half past» (08:30 → half past eight), 15 geçede «quarter past», 15 kalada ise «quarter to» kullanılır.",
     "İlk 30 dakikada «dakika + past + saat» (09:20 → twenty past nine), 31-59. dakikalar arasında «kalan dakika + to + sonraki saat» (09:50 → ten to ten) söylenir.",
-    "Bir eylemin saatini sorarken «What time do/does...?» kalıbı kullanılır; saatlerden ve «noon» sözcüğünden önce «at», günlerden önce «on», günün bölümlerinden önce «in» edatı gelir.",
-    "Fiilden veya edattan sonra nesne zamirleri (me, you, him, her, it, us, them) gelir; «Give me a hand!» (Yardım et!), «Don’t skip the lesson!» (Dersi kaçırma!) ve «Make the grade!» (Başarılı ol!) önemli sosyal kalıplardır."
+    "Bir eylemin saatini sorarken «What time do/does...?» kalıbı kullanılır; saatlerden ve «noon» sözcüğünden önce «at», günlerden önce «on», günün bölümlerinden önce «in» edatı gelir."
   ],
   "sorular": [
     {
@@ -32,10 +31,6 @@
         [
           "Give me a hand, please!",
           "Lütfen bana yardım et / el at!"
-        ],
-        [
-          "Make the grade!",
-          "Başarılı ol / Sınıfı geç!"
         ]
       ]
     },
@@ -66,7 +61,9 @@
         [
           "1. Maths (08:30 · Monday)",
           "It is half past eight",
-          "at 08:30 / on Monday"
+          {
+            "b": "at 08:30 / on Monday"
+          }
         ],
         [
           "2. Science (09:15 · Tuesday)",
@@ -117,10 +114,6 @@
         {
           "metin": "In the sentence ‘Mrs. Demir teaches us English’, the word ‘us’ is the object pronoun for ‘we’.",
           "dogru": true
-        },
-        {
-          "metin": "‘Don’t skip the lesson!’ means ‘Do not listen to your teacher during the class!’.",
-          "dogru": false
         }
       ]
     },
@@ -141,10 +134,6 @@
         {
           "metin": "It is ___ to nine (08:45 — Saat dokuza çeyrek var).",
           "cevap": "quarter"
-        },
-        {
-          "metin": "We have got ___ pages in our English activity workbook (90 sayfa).",
-          "cevap": "ninety"
         }
       ],
       "fazla": [

@@ -12,8 +12,7 @@
   ],
   "hatirla": [
     "Hicri (kamerî) takvimin dokuzuncu ayı olan Ramazan, Bakara Suresi 185. ayette bildirildiği üzere hem Kur’an-ı Kerim’in indirilmeye başlandığı ay hem de oruç ibadetinin farz kılındığı aydır.",
-    "Oruç (savm); imsak vaktinden (tan yerinin ağarmasından) iftar vaktine (güneşin batmasına) kadar ibadet niyetiyle yeme, içme ve orucu bozan davranışlardan uzak durmaktır; sahur ise imsak öncesi bereket vaktidir.",
-    "Kur’an’ın indirilmeye başlandığı Kadir Gecesi bin aydan hayırlıdır; Cebrail (a.s.) ile Peygamberimizin karşılıklı Kur’an okuması mukabele geleneğini başlatmış, yatsıdan sonra kılınan 20 rekâtlık teravih namazı Ramazan gecelerini süslemiştir."
+    "Oruç (savm); imsak vaktinden (tan yerinin ağarmasından) iftar vaktine (güneşin batmasına) kadar ibadet niyetiyle yeme, içme ve orucu bozan davranışlardan uzak durmaktır; sahur ise imsak öncesi bereket vaktidir."
   ],
   "sorular": [
     {
@@ -32,10 +31,6 @@
         [
           "Teravih namazı",
           "Ramazan ayında yatsı namazından sonra kılınan sünnet namaz"
-        ],
-        [
-          "Fitre (Sadaka-i fıtır)",
-          "Bayram namazından önce ihtiyaç sahiplerine verilen vacip sadaka"
         ]
       ]
     },
@@ -56,7 +51,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki Bursa ili Ramazan imsakiyesi kartını inceleyerek tablodaki eksik vakit adı ve ibadet açıklaması hücrelerini tamamlayınız. İlk satır örnektir.",
+      "soru": "Görseldeki Bursa ili Ramazan imsakiyesi kartını inceleyerek tablodaki eksik vakit adı ve ibadet açıklaması hücrelerini tamamlayınız.",
       "basliklar": [
         "Saat Bilgisi",
         "İlgili Kavram",
@@ -66,7 +61,9 @@
         [
           "1. 05.10 (İmsak öncesi)",
           "Sahur vakti",
-          "Oruca hazırlık için sahur yemeği yenir"
+          {
+            "b": "Oruca hazırlık için sahur yemeği yenir"
+          }
         ],
         [
           "2. 05.42 (Sabah vakti)",
@@ -74,7 +71,7 @@
             "b": "İmsak vakti"
           },
           {
-            "b": "Yeme içme kesilir ve oruca niyet edilir"
+            "b": "Yeme içme kesilir ve oruca başlanır"
           }
         ],
         [
@@ -115,10 +112,6 @@
         {
           "metin": "Hz. Muhammed (s.a.v.) “Oruç bir kalkandır.” buyurarak oruçlu kimsenin kötü söz ve davranışlardan sakınmasını öğütlemiştir.",
           "dogru": true
-        },
-        {
-          "metin": "Oruç tutacak kişinin imsak vaktinden önce gece kalkıp yemek yemesi orucun geçerliliğini bozan bir davranıştır.",
-          "dogru": false
         }
       ]
     },
@@ -139,10 +132,6 @@
         {
           "metin": "Kamerî ayların başlangıcı ve Ramazan Bayramı’nın gelişi yeni ayın yani ___ görülmesiyle belirlenir.",
           "cevap": "hilalin"
-        },
-        {
-          "metin": "Camilerin minareleri arasına Ramazan’da asılan ışıklı güzel sözlere ___ denir.",
-          "cevap": "mahya"
         }
       ],
       "fazla": [
@@ -166,7 +155,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki şemada Cebrail (a.s.) ile Hz. Muhammed’in (s.a.v.) her Ramazan ayında gerçekleştirdiği “arza” uygulamasının günümüzdeki karşılığı olan gelenek hangisidir?",
+      "soru": "Görseldeki şemada Cebrail (a.s.) ile Hz. Muhammed’in (s.a.v.) her Ramazan ayında gerçekleştirdiği “arza” uygulamasının günümüzdeki karşılığı aşağıdakilerden hangisidir?",
       "secenekler": [
         "Camilerde ve evlerde mukabele okunması",
         "Minareler arasına ışıklı mahya asılması",
@@ -179,15 +168,15 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki Kadir Suresi bilgi kartından yararlanarak Kadir Gecesi’nin Müslümanlar için neden “bin aydan daha hayırlı” kabul edildiğini açıklayınız.",
-      "cevap": "Kur’an-ı Kerim bu gecede indirilmeye başlandığı ve esenlik getirdiği için bin aydan hayırlıdır.",
+      "soru": "Görseldeki Kadir Suresi bilgi kartından yararlanarak Kadir Gecesi’nin Müslümanlar için neden “bin aydan daha hayırlı” olduğunu kısaca açıklayınız.",
+      "cevap": "Kur’an-ı Kerim bu gecede indirilmeye başlandığı ve melekler esenlik indirdiği için hayırlıdır.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görselde bir Müslümanın Ramazan gününde yaşadığı ibadet aşamaları karışık verilmiştir. Gece vaktinden başlayarak kronolojik sırayla 1’den 4’e kadar numaralandırınız.",
+      "soru": "Görselde bir Müslümanın Ramazan gününde yaşadığı ibadet aşamaları karışık verilmiştir. Gece vaktinden başlayarak kronolojik sırayla 1’den 4’e numaralandırınız.",
       "ogeler": [
         "Gece imsak vaktinden önce uyanarak bereketli sahur yemeğini yemek ve oruca niyet etmek",
         "Tan yerinin ağarmasıyla (imsak vakti) birlikte yeme ve içmeyi bırakarak oruca başlamak",
@@ -211,7 +200,7 @@
     {
       "tur": "sifre",
       "duzey": "hatirla",
-      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle Bakara Suresi 183. ayette orucun hedefi olarak gösterilen “Allah’a karşı sorumluluk bilinci” kavramını bulunuz.",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle Bakara Suresi 183. ayette orucun hedefi olarak gösterilen “Allah’a karşı sorumluluk ve sakınma bilinci” kavramını bulunuz.",
       "satirlar": [
         {
           "ipucu": "Ramazan gecelerinde yatsıdan sonra kılınan sünnet namaz",
@@ -246,8 +235,8 @@
       "duzey": "ust",
       "gorsel_var": true,
       "soru": "Görseldeki “Ramazan ve Toplumsal Dayanışma” panosunu inceleyerek oruç tutmanın ve fitre vermenin toplumdaki kardeşlik bağlarını nasıl güçlendirdiğini açıklayınız.",
-      "cevap": "Oruç, yoksullarla empati kurdurur; iftar ve fitre yardımlarıyla toplumsal dayanışmayı güçlendirir.",
-      "satir": 2
+      "cevap": "Oruç yoksulların hâlini anlamayı sağlar; iftar ve fitre paylaşması kardeşlik bağlarını güçlendirir.",
+      "satir": 3
     }
   ]
 }

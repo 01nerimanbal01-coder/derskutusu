@@ -12,8 +12,7 @@
   ],
   "hatirla": [
     "Kesir, ondalık ve yüzdeyi bir arada içeren çok adımlı problemlerde tüm veriler ortak gösterime çevrilir; “bütünün kesri” ile “kalanın kesri” ifadeleri şerit diyagramla modellenir.",
-    "Kalan miktarın verildiği parçadan bütüne problemlerinde kalan miktar kalan parça sayısına bölünüp toplam parça sayısıyla çarpılır (ters işlem stratejisi).",
-    "Etiket fiyatına %30 indirim uygulandığında kısa yoldan 0,70 ile çarpılır; ardışık indirimlerde ikinci indirim birinci indirimli satış fiyatı üzerinden hesaplanır."
+    "Kalan miktarın verildiği parçadan bütüne problemlerinde kalan miktar kalan parça sayısına bölünüp toplam parça sayısıyla çarpılır (ters işlem stratejisi)."
   ],
   "sorular": [
     {
@@ -32,10 +31,6 @@
         [
           "Bir sayının {kesir:2|5}’i ile %30’unun toplamını hesaplamak",
           "Sayının %70’ini (0,7 katını) bulmak"
-        ],
-        [
-          "Beşte ikisi harcanınca geriye 90 TL kalan paranın tamamını bulmak",
-          "90 sayısını 3’e bölüp çıkan sonucu 5 ile çarpmak"
         ]
       ]
     },
@@ -56,7 +51,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki mağaza ardışık indirim panosunu inceleyerek tablodaki eksik 1. indirimli fiyat ve kasadaki son satış fiyatı hücrelerini tamamlayınız. İlk satır örnektir.",
+      "soru": "Görseldeki mağaza ardışık indirim panosunu inceleyerek tablodaki eksik 1. indirimli fiyat ve kasadaki son satış fiyatı hücrelerini tamamlayınız.",
       "basliklar": [
         "Ürün ve Etiket Fiyatı",
         "1. İndirim Sonrası Fiyat",
@@ -66,7 +61,9 @@
         [
           "1. Mont (1000 TL · %20 indirim)",
           "800 TL",
-          "720 TL"
+          {
+            "b": "720 TL"
+          }
         ],
         [
           "2. Bot (600 TL · %25 indirim)",
@@ -113,10 +110,6 @@
         {
           "metin": "Bir telin önce {kesir:1|3}’ü, sonra kalan telin yarısı kesilirse geriye başlangıçtaki telin {kesir:1|3}’ü kalır.",
           "dogru": true
-        },
-        {
-          "metin": "Problem kurarken gerçek yaşam mantığına bakılmaksızın otobüsteki yolcu sayısı ondalıklı çıkacak biçimde sayılar seçilebilir.",
-          "dogru": false
         }
       ]
     },
@@ -137,10 +130,6 @@
         {
           "metin": "Ondalık çarpma işlemlerinde virgül hatasını önlemek için sayılar yuvarlanarak ___ yapılır.",
           "cevap": "tahmin"
-        },
-        {
-          "metin": "Doğrulanan bir çözüm yolunu benzer yapıdaki yeni problemlere uyarlamaya ___ denir.",
-          "cevap": "genelleme"
         }
       ],
       "fazla": [
@@ -177,15 +166,15 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki manav kasasında kilogramı 22,5 TL’den alınan 80 kg armudun %10’u ezildiği için ayrılmış, kalan sağlam armutların kilogramı 30 TL’den satılmıştır. Manavın net kârını işlemle bulunuz.",
-      "cevap": "Maliyet: 1800 TL. Sağlam: 72 kg × 30 = 2160 TL. Net kâr: 2160 − 1800 = 360 TL.",
+      "soru": "Görseldeki manav kasasında kilogramı 22,5 TL’den alınan 80 kg armudun %10’u ezildiği için ayrılmış, kalan sağlam armutların kilogramı 30 TL’den satılmıştır. Net kâr kaç TL’dir?",
+      "cevap": "Alış: 80×22,5 = 1800 TL. Satış: 72×30 = 2160 TL. Net kâr: 2160−1800 = 360 TL.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görselde verilen çok adımlı problem çözme ve stratejiyi genelleme sürecini doğru uygulama sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Görselde verilen çok adımlı problem çözme ve stratejiyi genelleme sürecini doğru uygulama sırasına göre 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Problemdeki kesir, ondalık ve yüzde verilerini analiz ederek şerit diyagram veya tablo ile temsil etmek",
         "Tüm verileri en uygun ortak sayı diline çevirip kısa çözüm stratejisini uygulayarak sonucu bulmak",
@@ -209,7 +198,7 @@
     {
       "tur": "sifre",
       "duzey": "hatirla",
-      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “etiket fiyatından yapılan indirim sonucunda ödenen bedel” ile ilgili kavramı (İNDİRİM) bulunuz.",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “etiket fiyatından belli oranda yapılan fiyat düşüşü” şifresini bulunuz.",
       "satirlar": [
         {
           "ipucu": "Kesir problemlerini görselleştirmek için çizilen eş bölmeli model",
@@ -252,9 +241,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki “Kısa Yol ve Tahmin Kartı”nda yer alan «640 × 0,25 + 45 ÷ 0,5» işleminin kesir eşdeğerlikleri kullanılarak zihinden kısa yoldan nasıl çözüleceğini adım adım açıklayınız.",
-      "cevap": "0,25 = {kesir:1|4} için 640÷4=160; 0,5 = {kesir:1|2} için 45×2=90 bulunur: 160 + 90 = 250.",
+      "soru": "«640 × 0,25 + 45 ÷ 0,5» işleminin sonucunu ondalık gösterimlerin kesir eşdeğerliklerini kullanarak kısa yoldan bulunuz.",
+      "cevap": "0,25 = {kesir:1|4} ile 640 ÷ 4 = 160; 45 ÷ 0,5 = 90; toplam: 160 + 90 = 250.",
       "satir": 2
     }
   ]

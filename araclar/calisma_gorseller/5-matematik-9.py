@@ -1,142 +1,89 @@
-"""5. sınıf Matematik 9. hafta (Çok Basamaklı Doğal Sayıları Okuma ve Yazma - Milyonlar Bölüğü) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-11 pt Noto Sans (K150 EK); kesir yok (K155)."""
+"""5-matematik-9 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=16):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.4, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def gunes_dunya_mesafe_karti():
-    ic = kutu(6, 6, 348, 76, TUR_A, TUR)
-    ic += yazi(180, 23, 'Astronomi Veri Kartı · Dünya – Güneş Uzaklığı', 10.5, TUR)
-    ic += yazi(180, 46, 'Okunuşu: «Yüz kırk dokuz milyon altı yüz bin» km', 10.2, LAC)
-    ic += yazi(180, 67, 'Milyonlar: 149  |  Binler: 600  |  Birler: ?', 9.8, TUR, ince=True)
-    return svg(360, 88, ic, 'Dünya ile Güneş arasındaki uzaklığın okunuşu kartı.', 15)
-
-
-def dort_sayi_veri_kartlari():
-    kartlar = [
-        ('1. Kart', '15 907 000', MAVI, MAVI_A),
-        ('2. Kart', '85 000 412', YES, YES_A),
-        ('3. Kart', '308 040 006', TUR, TUR_A),
-        ('4. Kart', '7 001 050', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, sayi, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 10.3, r)
-        ic += f'<line x1="{x + 8}" y1="32" x2="{x + 74}" y2="32" stroke="{r}" stroke-width="0.9"/>'
-        ic += yazi(x + 41, 56, sayi, 9.5, LAC)
-    return svg(360, 84, ic, 'Çok basamaklı dört doğal sayı kartı.', 15)
-
-
-def boluk_yapbozu_sema():
-    bolukler = [
-        ('K · Milyonlar Bölüğü', '6 0 4', MAVI, MAVI_A),
-        ('L · Binler Bölüğü', '0 1 8', YES, YES_A),
-        ('M · Birler Bölüğü', '5 9 0', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, rak, r, z) in enumerate(bolukler):
-        x = 6 + i * 118
-        ic += kutu(x, 6, 112, 74, z, r)
-        ic += yazi(x + 56, 23, bas, 9.7, r)
-        ic += yazi(x + 56, 56, rak, 14.5, LAC)
-    return svg(360, 86, ic, '604 018 590 sayısının üç bölüğünü gösteren yapboz.', 15)
-
-
-def uc_boluk_kart_dizilimi():
-    kartlar = [
-        ('1. Kart', '920', '(3 basamak)', MAVI, MAVI_A),
-        ('2. Kart', '5', '(005 olur)', YES, YES_A),
-        ('3. Kart', '38', '(038 olur)', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, s1, s2, r, z) in enumerate(kartlar):
-        x = 6 + i * 118
-        ic += kutu(x, 6, 112, 74, z, r)
-        ic += yazi(x + 56, 22, bas, 10.2, r)
-        ic += yazi(x + 56, 46, s1, 13.0, LAC)
-        ic += yazi(x + 56, 66, s2, 9.4, LAC, ince=True)
-    return svg(360, 86, ic, 'Üç bölük kartı: 920, 5 ve 38.', 15)
-
-
-def basamak_tablosu_toplam():
-    bolukler = [
-        ('Milyonlar Bölüğü', '5 7 2', MAVI, MAVI_A),
-        ('Binler Bölüğü', '0 8 4', YES, YES_A),
-        ('Birler Bölüğü', '6 1 9', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, rak, r, z) in enumerate(bolukler):
-        x = 6 + i * 118
-        ic += kutu(x, 6, 112, 74, z, r)
-        ic += yazi(x + 56, 23, bas, 9.8, r)
-        ic += yazi(x + 56, 55, rak, 14.0, LAC)
-    return svg(360, 86, ic, '572 084 619 sayısının bölük tablosu.', 15)
-
-
-def basamak_sayisi_siralama_kartlari():
-    kartlar = [
-        ('Kart P', '73 006 090', '8 basamaklı', TUR, TUR_A),
-        ('Kart R', '985 420', '6 basamaklı', MAVI, MAVI_A),
-        ('Kart S', '210 500 040', '9 basamaklı', MOR, MOR_A),
-        ('Kart T', '8 340 010', '7 basamaklı', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, sayi, alt, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 74, z, r)
-        ic += yazi(x + 41, 22, bas, 10.2, r)
-        ic += yazi(x + 41, 45, sayi, 9.2, LAC)
-        ic += yazi(x + 41, 65, alt, 9.0, LAC, ince=True)
-    return svg(360, 86, ic, '6, 7, 8 ve 9 basamaklı dört doğal sayı kartı.', 15)
-
-
-def basamak_analiz_panosu():
-    ic = kutu(6, 6, 348, 76, MAVI_A, MAVI)
-    ic += yazi(180, 23, 'İncelenen Doğal Sayı: 830 416 295', 10.8, MAVI)
-    ic += yazi(180, 46, 'Milyonlar Bölüğü: 830  |  Binler Bölüğü: 416  |  Birler Bölüğü: 295', 9.7, LAC)
-    ic += yazi(180, 67, 'YüzB: 4 · OnB: 1 · Binler: 6   |   YüzM: 8 · OnM: 3 · Milyonlar: 0', 9.3, MAVI, ince=True)
-    return svg(360, 88, ic, '830 416 295 sayısının bölük ve basamak analizi.', 15)
-
-
-def kerem_hata_analizi_karti():
-    ic = kutu(6, 6, 170, 76, KIR_A, KIR)
-    ic += yazi(91, 22, 'Kerem’in Hatalı Yazımı', 10.2, KIR)
-    ic += yazi(91, 45, '«502 9 7» (5 basamak!)', 10.5, KIR)
-    ic += yazi(91, 65, 'Eksik basamaklar atlandı', 9.3, LAC, ince=True)
-
-    ic += kutu(184, 6, 170, 76, YES_A, YES)
-    ic += yazi(269, 22, 'Doğru Bölük Kuralı', 10.2, YESIL_K)
-    ic += yazi(269, 45, '[ 502 ] [ _ _ 9 ] [ _ _ 7 ]', 10.2, LAC)
-    ic += yazi(269, 65, 'Her bölük 3 hane olmalı!', 9.3, YESIL_K, ince=True)
-    return svg(360, 88, ic, 'Eksik basamaklara sıfır yazılmaması hatası ve doğru bölük şeması.', 15)
+GORSELLER = {1: '<svg viewBox="0 0 350 67" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dünya ile Güneş '
+    'arasındaki uzaklığın okunuşu kartı."><rect x="4" y="3" width="342" height="62" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Dünya – Güneş Uzaklığı Bilgi Kartı:</text><text x="11.0" y="38.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">• «Yüz kırk dokuz milyon altı yüz bin» '
+    'km</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#ee7d12">• Rakamla Yazılışı = ? km</text></svg>',
+ 2: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Çok basamaklı dört doğal '
+    'sayı kartı."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Kart</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">15\xa0907\xa0000</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2. Kart</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">85\xa0000\xa0412</text><rect x="4" y="52" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">3. Kart</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">308\xa0040\xa0006</text><rect x="179" y="52" width="167" '
+    'height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Kart</text><text x="262.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">7\xa0001\xa0'
+    '050</text></svg>',
+ 5: '<svg viewBox="0 0 350 86" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="604 018 590 sayısının üç '
+    'bölüğünü gösteren yapboz."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">K · Milyonlar Bölüğü · 6 0 4</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="48.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">L · Binler Bölüğü · 0 1 8</text><rect x="4" y="59" width="342" height="25" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="76.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">M · Birler Bölüğü · 5 9 0</text></svg>',
+ 6: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Üç bölük kartı: 920, 5 '
+    've 38."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Bölük '
+    'Kartı</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">920</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. '
+    'Bölük Kartı</text><text x="11.0" y="84.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">5</text><rect x="4" y="95" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="112.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">3. Bölük Kartı</text><text x="11.0" y="130.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">38</text></svg>',
+ 7: '<svg viewBox="0 0 350 86" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="572 084 619 sayısının '
+    'bölük tablosu."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Milyonlar Bölüğü '
+    '· 5 7 2</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="48.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Binler Bölüğü · '
+    '0 8 4</text><rect x="4" y="59" width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="76.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Birler Bölüğü · '
+    '6 1 9</text></svg>',
+ 8: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört doğal sayı sıralama '
+    'kartı."><rect x="4" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="21.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">P. Kartı</text><text '
+    'x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">73\xa0'
+    '006\xa0090</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">R. '
+    'Kartı</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">985\xa0420</text><rect x="4" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">S. Kartı</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">210\xa0500\xa0040</text><rect x="179" y="52" width="167" height="45" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">T. Kartı</text><text x="262.5" y="88.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">8\xa0340\xa0010</text></svg>',
+ 9: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="830 416 295 sayısının '
+    'basamak inceleme kartı."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Basamak '
+    'İnceleme Kartı: 830\xa0416\xa0295</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">• Yüz milyonlar:? · On milyonlar:? · Milyonlar:?</text><text x="11.0" y="57.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">• Yüz binler:? · On '
+    'binler:? · Binler:?</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">• Yüzler:? · Onlar:? · Birler:?</text></svg>',
+ 11: '<svg viewBox="0 0 350 94" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kerem’in doğal sayı '
+     'yazım hatası inceleme kartı."><rect x="4" y="3" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" '
+     'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#ee7d12">1. Okunuşu Verilen Doğal Sayı:</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">• «Beş yüz iki milyon dokuz bin yedi»</text><rect x="4" y="49" '
+     'width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. Kerem’in Defterine Yazdığı '
+     'İfade:</text><text x="11.0" y="84.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+     'fill="#0b2257">• «502 9 7» → Doğru Yazılışı: ?</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = gunes_dunya_mesafe_karti()
-    s[2]['gorsel'] = dort_sayi_veri_kartlari()
-    s[5]['gorsel'] = boluk_yapbozu_sema()
-    s[6]['gorsel'] = uc_boluk_kart_dizilimi()
-    s[7]['gorsel'] = basamak_tablosu_toplam()
-    s[8]['gorsel'] = basamak_sayisi_siralama_kartlari()
-    s[9]['gorsel'] = basamak_analiz_panosu()
-    s[11]['gorsel'] = kerem_hata_analizi_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

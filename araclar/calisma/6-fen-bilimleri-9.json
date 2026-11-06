@@ -12,8 +12,7 @@
   ],
   "hatirla": [
     "Tohumdaki embriyonun uygun şartlarda kabuğu çatlatıp gelişmeye başlamasına çimlenme denir; çimlenme için Su (nem), Oksijen (hava) ve Uygun Sıcaklık (SOS) zorunludur, ışık ve toprak gerekmez.",
-    "Kontrollü deneylerde araştırmacının bilerek değiştirdiği etken bağımsız değişken (neden), bundan etkilenen çimlenme durumu bağımlı değişken (sonuç), aynı bırakılan şartlar ise kontrol edilen değişkendir.",
-    "Balık, kurbağa, sürüngen ve kuşlar yumurta ile; memeliler doğurarak çoğalır. Kuş ve memelilerde yavru bakımı görülürken, kurbağa (iribaş) ve kelebek (tırtıl → pupa) başkalaşım geçirir."
+    "Kontrollü deneylerde araştırmacının bilerek değiştirdiği etken bağımsız değişken (neden), bundan etkilenen çimlenme durumu bağımlı değişken (sonuç), aynı bırakılan şartlar ise kontrol edilen değişkendir."
   ],
   "sorular": [
     {
@@ -32,10 +31,6 @@
         [
           "Başkalaşım (Metamorfoz)",
           "Yumurtadan çıkan yavrunun yapısal değişimler geçirerek ana canlıya benzemesi"
-        ],
-        [
-          "Kuluçka evresi",
-          "Kuşların embriyo gelişimi için yumurtaların üzerinde yatarak sıcak tutması"
         ]
       ]
     },
@@ -56,7 +51,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki dört omurgalı hayvan kartını inceleyerek tablodaki eksik çoğalma şekli ve yavru bakımı hücrelerini tamamlayınız. İlk satır örnektir.",
+      "soru": "Görseldeki dört omurgalı hayvan kartını inceleyerek tablodaki eksik çoğalma şekli ve yavru bakımı hücrelerini tamamlayınız.",
       "basliklar": [
         "Omurgalı Canlı",
         "Çoğalma Şekli",
@@ -66,7 +61,9 @@
         [
           "1. Alabalık (Balık)",
           "Yumurta ile çoğalır",
-          "Yavru bakımı görülmez"
+          {
+            "b": "Yavru bakımı görülmez"
+          }
         ],
         [
           "2. Kırlangıç (Kuş)",
@@ -115,10 +112,6 @@
         {
           "metin": "Kurbağa larvası olan iribaş suda yaşar, kuyrukludur ve balıklar gibi solungaç solunumu yapar.",
           "dogru": true
-        },
-        {
-          "metin": "Kelebeğin yaşam döngüsünde yumurtadan çıkan tırtıl doğrudan ergin kelebeğe dönüşür, koza (pupa) evresi geçirmez.",
-          "dogru": false
         }
       ]
     },
@@ -139,10 +132,6 @@
         {
           "metin": "Kelebek larvası olan tırtılın etrafına koza örerek geçirdiği durgun evreye ___ denir.",
           "cevap": "pupa"
-        },
-        {
-          "metin": "Kurbağanın yumurtadan ilk çıktığında suda yaşayan kuyruklu larva hâline ___ adı verilir.",
-          "cevap": "iribaş"
         }
       ],
       "fazla": [
@@ -166,7 +155,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki kelebek ve kurbağa başkalaşım şemasında X ve Y ile gösterilen gelişim evrelerine sırasıyla aşağıdakilerden hangisi gelmelidir?",
+      "soru": "Görseldeki kurbağa ve kelebek başkalaşım şemasında X ve Y ile gösterilen gelişim evrelerine sırasıyla hangileri yazılmalıdır?",
       "secenekler": [
         "X: Zigot — Y: Pupa (Koza)",
         "X: Pupa (Koza) — Y: İribaş (Larva)",
@@ -179,15 +168,15 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki “Oksijenin Çimlenmeye Etkisi” deneyinde A kabındaki tohumlar çimlenirken, su üstüne zeytinyağı dökülen B kabındaki tohumların neden çimlenemediğini açıklayınız.",
-      "cevap": "Zeytinyağı havadaki oksijenin geçişini kestiği için B kabındaki tohumlar çimlenememiştir.",
+      "soru": "Görseldeki “Oksijenin Çimlenmeye Etkisi” deneyinde A kabındaki tohumlar çimlenirken, su üstüne zeytinyağı dökülen B kabındaki tohumların çimlenmeme nedenini kısaca açıklayınız.",
+      "cevap": "Zeytinyağı havadaki oksijenin suya geçişini engellediği için B kabında çimlenme gerçekleşmez.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görselde verilen ipek böceği (kelebek) hayat döngüsü evrelerini yumurtadan başlayarak gerçekleşme sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Görselde verilen ipek böceği (kelebek) hayat döngüsü evrelerini yumurtadan başlayarak gerçekleşme sırasına göre 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Dişi kelebeğin dut yaprağı üzerine bıraktığı yumurtaların gelişmesi (Yumurta evresi)",
         "Yumurtadan çıkan tırtılın (larvanın) yapraklarla beslenerek hızla büyümesi (Larva evresi)",
@@ -211,7 +200,7 @@
     {
       "tur": "sifre",
       "duzey": "hatirla",
-      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “tohum içindeki embriyonun çimlenirken beslendiği besin dokusu” kavramını bulunuz.",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “tohum içindeki embriyonun çimlenirken beslendiği besin deposu” şifresini bulunuz.",
       "satirlar": [
         {
           "ipucu": "Tohumdaki embriyonun kabuğu çatlatarak dışarı çıkması olayı",
@@ -245,8 +234,8 @@
       "tur": "acik",
       "duzey": "ust",
       "gorsel_var": true,
-      "soru": "Görseldeki tasarım kartında öğrenci “Toprağın tohum çimlenmesine etkisi var mıdır?” sorusunu test etmek istemektedir. Kuracağı iki düzenekte neleri sabit tutup neyi değiştirmesi gerektiğini yazınız.",
-      "cevap": "Su, oksijen, sıcaklık ve tohumu sabit tutup bir kaba toprak, diğerine ıslak pamuk koymalıdır.",
+      "soru": "Görseldeki tasarım kartında öğrenci “Toprağın tohum çimlenmesine etkisi var mıdır?” sorusunu test etmek istemektedir. Kuracağı iki düzenekte neleri sabit tutup neyi farklı bırakmalıdır?",
+      "cevap": "Su, oksijen, sıcaklık ve tohum türünü sabit tutup kaplardan yalnız birine toprak koymalıdır.",
       "satir": 2
     }
   ]

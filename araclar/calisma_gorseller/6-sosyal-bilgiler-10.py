@@ -1,147 +1,136 @@
-"""6. sınıf Sosyal Bilgiler 10. hafta (Ülkemizin Doğal ve Beşerî Çevre Özellikleri Arasındaki İlişki ve 2. Öğrenme Alanı Değerlendirmesi) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-11 pt Noto Sans (K150 EK); kesir yok (K155)."""
+"""6-sosyal-bilgiler-10 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=16):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.1, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yerlesme_konut_kartlari():
-    kartlar = [
-        ('1. Kart · D. Karadeniz', 'Engebe, orman → Dağınık, ahşap', YES, YES_A),
-        ('2. Kart · İç Anadolu (!)', 'Orman, bol su → Dağınık, ahşap', KIR, KIR_A),
-        ('3. Kart · Akdeniz (!)', 'Bozkır → Dağınık, kerpiç ev', TUR, TUR_A),
-        ('4. Kart · G.Doğu (!)', 'Bol yağış → Dağınık, taş ev', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, r)
-        ic += yazi(x + 86, y + 15, bas, 9.8, r)
-        ic += yazi(x + 86, y + 31, alt, 8.9, LAC, ince=True)
-    return svg(360, 94, ic, 'Bölgelere göre yerleşme dokusu ve konut tipi kartları.', 16)
-
-
-def sanayi_hammadde_panosu():
-    kartlar = [
-        ('1. Konya', 'Buğday → Un sanayi', MAVI, MAVI_A),
-        ('2. Adana', 'Pamuk (?) → Dokuma (?)', YES, YES_A),
-        ('3. Zonguldak', 'Taş kömürü → ? sanayi', TUR, TUR_A),
-        ('4. B. Karadeniz', 'Orman (?) → Kâğıt/Kereste', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 9.7, r)
-        ic += f'<line x1="{x + 8}" y1="32" x2="{x + 74}" y2="32" stroke="{r}" stroke-width="0.9"/>'
-        ic += yazi(x + 41, 55, alt, 8.6, LAC, ince=True)
-    return svg(360, 84, ic, 'Şehirlerde ham maddeye bağlı gelişen sanayi kolları panosu.', 15)
-
-
-def cografi_konum_panosu():
-    ic = kutu(6, 6, 170, 76, MAVI_A, MAVI)
-    ic += yazi(91, 22, 'Mutlak (Matematik) Konum', 9.9, MAVI)
-    ic += yazi(91, 44, '• 36°–42° Kuzey paralelleri', 9.2, LAC, ince=True)
-    ic += yazi(91, 64, '• Orta kuşak → Dört mevsim', 9.2, MAVI)
-
-    ic += kutu(184, 6, 170, 76, TUR_A, TUR)
-    ic += yazi(269, 22, 'Göreceli (Özel) Konum', 9.9, TUR)
-    ic += yazi(269, 44, '• Üç kıta kavşağı ve boğazlar', 9.2, LAC, ince=True)
-    ic += yazi(269, 64, '• Batıdan doğuya artan yükselti', 9.2, TUR)
-    return svg(360, 88, ic, 'Mutlak ve göreceli konum sonuçları karşılaştırma panosu.', 15)
-
-
-def muhendislik_projeleri_kartlari():
-    kartlar = [
-        ('A · Boğaz Köprüleri', 'Kıtalar arası ulaşım', MAVI, MAVI_A),
-        ('B · Ovit ve Zigana', 'Dağları aşan kara yolu tüneli', TUR, TUR_A),
-        ('C · GAP ve Atatürk B.', 'Tarımsal sulama ve pamuk', YES, YES_A),
-        ('D · Ordu-Giresun H.', 'Deniz dolgulu havalimanı', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, r)
-        ic += yazi(x + 86, y + 15, bas, 9.8, r)
-        ic += yazi(x + 86, y + 31, alt, 9.1, LAC, ince=True)
-    return svg(360, 94, ic, 'Dört beşerî mühendislik projesinin amaç kartları.', 16)
-
-
-def nufus_dagilisi_karti():
-    ic = kutu(6, 6, 170, 76, YES_A, YES)
-    ic += yazi(91, 22, '1. Yoğun Nüfuslu Alanlar', 9.9, YESIL_K)
-    ic += yazi(91, 44, 'Çukurova ve Marmara Kıyıları:', 9.2, LAC)
-    ic += yazi(91, 64, 'Ilıman iklim, düz ova, sanayi', 9.1, YESIL_K, ince=True)
-
-    ic += kutu(184, 6, 170, 76, MOR_A, MOR)
-    ic += yazi(269, 22, '2. Seyrek Nüfuslu Alanlar', 9.9, MOR)
-    ic += yazi(269, 44, 'Hakkâri ve Tunceli Çevresi:', 9.2, LAC)
-    ic += yazi(269, 64, 'Yüksek engebeli yer şekli, soğuk', 9.1, MOR, ince=True)
-    return svg(360, 88, ic, 'Yoğun ve seyrek nüfuslu bölgelerin coğrafi nedenleri kartı.', 15)
-
-
-def pamuk_uretim_zinciri():
-    adimlar = [
-        ('1. Tarım', 'Çukurova’da hasat', YES, YES_A),
-        ('2. Ulaşım', 'Fabrikaya taşıma', MAVI, MAVI_A),
-        ('3. Sanayi', 'Dokuma ve giyim', TUR, TUR_A),
-        ('4. Ticaret', 'Pazar ve ihracat', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 10.0, r)
-        ic += yazi(x + 41, 54, alt, 8.9, LAC, ince=True)
-    return svg(360, 84, ic, 'Pamuğun tarladan fabrikaya ve pazara uzanan üretim zinciri.', 15)
-
-
-def surdurulebilir_cevre_panosu():
-    ic = kutu(6, 6, 170, 76, YES_A, YES)
-    ic += yazi(91, 22, 'Doğayla Uyumlu Planlama (✓)', 9.8, YESIL_K)
-    ic += yazi(91, 44, '• Ovaları tarıma ayırmak', 9.2, LAC, ince=True)
-    ic += yazi(91, 64, '• Güneş ve rüzgâr enerjisi', 9.2, YESIL_K)
-
-    ic += kutu(184, 6, 170, 76, KIR_A, KIR)
-    ic += yazi(269, 22, 'Doğal Dengeye Zarar (!)', 9.8, KIR)
-    ic += yazi(269, 44, '• Verimli tarım ovalarını', 9.2, LAC, ince=True)
-    ic += yazi(269, 64, 'betonlaştırıp imara açmak', 9.2, KIR)
-    return svg(360, 88, ic, 'Sürdürülebilir çevre ve yanlış arazi kullanımı karşılaştırması.', 15)
-
-
-def daglar_ulasim_semasi():
-    ic = kutu(6, 6, 348, 76, CAM_A, CAM)
-    ic += yazi(180, 22, 'TÜRKİYE’DE DAĞLARIN UZANIŞI VE ULAŞIM YÖNÜ', 10.1, CAM)
-    ic += yazi(180, 44, 'Kuzey Anadolu ve Toros Dağları: Doğu – Batı doğrultusunda uzanır.', 9.3, LAC)
-    ic += yazi(180, 64, 'Sonuç: Doğu-Batı ulaşımı kolay  |  Kuzey-Güney ulaşımı: Geçit ve Tünel', 9.2, CAM, ince=True)
-    return svg(360, 88, ic, 'Dağların doğu-batı uzanışının ulaşım hatlarına etkisi şeması.', 15)
+GORSELLER = {1: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bölgelere göre kırsal '
+    'yerleşme dokusu ve konut malzemesi kartları."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Kart · D.</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Karadeniz</text><text x="87.5" y="58.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Engebe ve orman →</text><text x="87.5" y="76.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dağınık, ahşap '
+    'ev</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" '
+    'y="30.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. Kart · İç '
+    'Anadolu</text><text x="262.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Orman ve bol su →</text><text x="262.5" y="67.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Dağınık, ahşap ev</text><rect x="4" y="89" width="167" height="82" rx="5" '
+    'fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="87.5" y="107.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">3. Kart · Antalya –</text><text x="87.5" y="125.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Mardin</text><text '
+    'x="87.5" y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Bozkır örtüsü →</text><text x="87.5" y="162.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Dağınık, kerpiç ev</text><rect x="179" y="89" width="167" height="82" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Kart · G.Doğu</text><text x="262.5" y="125.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Anadolu</text><text x="262.5" y="144.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bol yağış →</text><text '
+    'x="262.5" y="162.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Dağınık, ahşap ev</text></svg>',
+ 2: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Şehirlerde ham maddeye '
+    'bağlı sanayi kolları etkinlik panosu."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Konya ve Ankara</text><text x="87.5" y="49.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Buğday → Sanayi: ?</text><rect x="179" y="3" width="167" height="64" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Adana ve Denizli</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çukurova / '
+    'Ege</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Ovası</text><rect x="4" y="71" width="167" height="82" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="87.5" y="89.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">3. Zonguldak –</text><text x="87.5" y="107.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Karabük</text><text x="87.5" y="126.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Taş kömürü →</text><text x="87.5" y="144.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sanayi: ?</text><rect '
+    'x="179" y="71" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="98.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Batı '
+    'Karadeniz</text><text x="262.5" y="116.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Kaynak: ? →</text><text x="262.5" y="135.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kâğıt/Kereste</text></svg>',
+ 5: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkiye’nin coğrafi '
+    'konum özellikleri panosu."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Özellik 1</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Üç kıtanın birbirine</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yaklaştığı kavşak</text><rect x="179" y="3" '
+    'width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Özellik 2</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">36°–42° Kuzey '
+    'aralığı</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ve dört mevsim</text><rect x="4" y="71" width="167" height="82" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="87.5" y="98.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Özellik 3</text><text x="87.5" y="116.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Batıdan doğuya</text><text x="87.5" y="135.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">artan yükselti</text><rect x="179" y="71" '
+    'width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Özellik 4</text><text x="262.5" y="107.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İstanbul ve</text><text '
+    'x="262.5" y="126.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Çanakkale</text><text x="262.5" y="144.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">boğaz su yolları</text></svg>',
+ 6: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkiye’deki dört büyük '
+    'mühendislik projesi kartları."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">A Kartı · Boğaz</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Köprüleri</text><text x="87.5" y="67.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Marmara Bölgesi</text><rect x="179" y="3" '
+    'width="167" height="82" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">B Kartı · Ovit ve</text><text x="262.5" '
+    'y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#ee7d12">Zigana</text><text x="262.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Doğu Karadeniz</text><text x="262.5" y="76.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bölümü</text><rect x="4" y="89" width="167" height="82" rx="5" '
+    'fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="87.5" y="116.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">C Kartı · Atatürk</text><text x="87.5" y="134.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Barajı</text><text x="87.5" y="153.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Güneydoğu '
+    'Anadolu</text><rect x="179" y="89" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">D '
+    'Kartı · Rize-Artvin</text><text x="262.5" y="125.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">H.</text><text x="262.5" y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Doğu Karadeniz</text><text x="262.5" y="162.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kıyısı</text></svg>',
+ 8: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pamuklu dokuma üretim '
+    'sürecinin karışık aşama kartları."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Sanayi</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Dokuma ve giyim</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Ticaret</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Pazar ve ihracat</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Tarım</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çukurova’da '
+    'hasat</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Ulaşım</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Fabrikaya taşıma</text></svg>',
+ 9: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sürdürülebilir çevre '
+    'ilkeleri bilgi panosu."><rect x="4" y="3" width="342" height="135" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0e8fa8">SÜRDÜRÜLEBİLİR ÇEVRE İLKELERİ PANOSU</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Doğal kaynaklar gelecek kuşaklar</text><text x="11.0" y="56.9" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">gözetilerek '
+    'korunur.</text><text x="11.0" y="75.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">• Üretimde yenilenebilir enerji ve arıtma</text><text x="11.0" y="93.7" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">tercih edilir.</text><text x="11.0" y="112.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Her arazi doğal yapısına uygun '
+    'faaliyete</text><text x="11.0" y="130.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ayrılır.</text></svg>',
+ 11: '<svg viewBox="0 0 350 142" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkiye kuzey-güney '
+     'kesitinde sıra dağların uzanışı şeması."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+     'stroke-width="0.75"/><text x="175.0" y="20.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0e8fa8">Kuzey: Karadeniz Kıyı Şeridi (Batı ↔ Doğu)</text><rect x="4" y="31" width="342" height="25" rx="5" '
+     'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="175.0" y="48.3" text-anchor="middle" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">▲▲▲ Kuzey Anadolu Sıra Dağları ▲▲▲</text><rect x="4" y="59" '
+     'width="342" height="25" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="175.0" y="76.3" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">İç Kesimler (Batı ↔ Doğu '
+     'Koridoru)</text><rect x="4" y="87" width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+     'x="175.0" y="104.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">▲▲▲ '
+     'Toros Sıra Dağları ▲▲▲</text><rect x="4" y="115" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" '
+     'stroke-width="0.75"/><text x="175.0" y="132.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0f6b45">Güney: Akdeniz Kıyı Şeridi (Batı ↔ Doğu)</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = yerlesme_konut_kartlari()
-    s[2]['gorsel'] = sanayi_hammadde_panosu()
-    s[5]['gorsel'] = cografi_konum_panosu()
-    s[6]['gorsel'] = muhendislik_projeleri_kartlari()
-    s[7]['gorsel'] = nufus_dagilisi_karti()
-    s[8]['gorsel'] = pamuk_uretim_zinciri()
-    s[9]['gorsel'] = surdurulebilir_cevre_panosu()
-    s[11]['gorsel'] = daglar_ulasim_semasi()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

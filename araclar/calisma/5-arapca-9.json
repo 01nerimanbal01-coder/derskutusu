@@ -12,9 +12,7 @@
   ],
   "hatirla": [
     "Selamlaşmada «{ar:اَلسَّلَامُ عَلَيْكُمْ}» sözüne «{ar:وَعَلَيْكُمُ السَّلَامُ}», sabah «{ar:صَبَاحُ الْخَيْرِ}» sözüne «{ar:صَبَاحُ النُّورِ}», akşam «{ar:مَسَاءُ الْخَيْرِ}» sözüne «{ar:مَسَاءُ النُّورِ}» ile karşılık verilir.",
-    "Tanışma ve hâl hatır sormada erkek muhatap için «{ar:ـكَ}» ({ar:مَا اسْمُكَ؟ / كَيْفَ حَالُكَ؟}), kız muhatap için «{ar:ـكِ}» ({ar:مَا اسْمُكِ؟ / كَيْفَ حَالُكِ؟}) zamiri kullanılır.",
-    "Harfleri seslendiren üst çizgi fetha (üstün: e/a), alt çizgi kesra (esre: i/ı), üstteki vav benzeri işaret damme (ötre: ü/u) adını alır; {ar:ا، د، ذ، ر، ز، و} harfleri kendinden sonraki harfe bitişmez.",
-    "Doğrulama soruları «{ar:هَلْ}» edatıyla kurulur ({ar:نَعَمْ} evet / {ar:لَا} hayır); sınıf komutlarında kız öğrenciye hitap edilirken fiilin sonuna uzatma ye’si ({ar:ي}) eklenir."
+    "Tanışma ve hâl hatır sormada erkek muhatap için «{ar:ـكَ}» ({ar:مَا اسْمُكَ؟ / كَيْفَ حَالُكَ؟}), kız muhatap için «{ar:ـكِ}» ({ar:مَا اسْمُكِ؟ / كَيْفَ حَالُكِ؟}) zamiri kullanılır."
   ],
   "sorular": [
     {
@@ -33,10 +31,6 @@
         [
           "{ar:تَشَرَّفْتُ / فُرْصَةٌ سَعِيدَةٌ}",
           "Tanıştığımıza memnun oldum"
-        ],
-        [
-          "{ar:عَفْوًا}",
-          "Rica ederim / Bir şey değil"
         ]
       ]
     },
@@ -44,7 +38,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki sabah ve akşam karşılaşma kartlarında 1 ve 2 numaralı boşluklara gelmesi gereken doğru karşılıklar hangi seçenekte verilmiştir?",
+      "soru": "Görseldeki sabah ve akşam karşılaşma kartlarında 1 ve 2 numaralı boşluklara gelmesi gereken doğru karşılıklar hangisinde verilmiştir?",
       "secenekler": [
         "1: {ar:صَبَاحُ النُّورِ} — 2: {ar:مَسَاءُ النُّورِ}",
         "1: {ar:مَسَاءُ الْخَيْرِ} — 2: {ar:صَبَاحُ الْخَيْرِ}",
@@ -57,7 +51,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki harf birleştirme kartlarını inceleyerek oluşturulan birleşik kelimeyi ve Türkçe okunuşunu tabloya yazınız. İlk satır örnektir.",
+      "soru": "Görseldeki harf birleştirme kartlarını inceleyerek oluşturulan birleşik kelimeyi ve Türkçe okunuşunu tabloya yazınız.",
       "basliklar": [
         "Ayrık Harfler",
         "Birleşik Yazılışı",
@@ -67,7 +61,9 @@
         [
           "1. {ar:كَ + تَ + بَ}",
           "{ar:كَتَبَ}",
-          "Ketebe (Yazdı)"
+          {
+            "b": "Ketebe (Yazdı)"
+          }
         ],
         [
           "2. {ar:قَ + لَ + مٌ}",
@@ -118,10 +114,6 @@
         {
           "metin": "Bir kişiye ismiyle seslenirken ismin başına «{ar:يَا}» (Ey!) hitap edatı getirilir.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:هَلْ أَنْتَ طَالِبٌ؟}» sorusuna olumlu yanıt verirken cümleye «{ar:لَا}» (Hayır) kelimesiyle başlanır.",
-          "dogru": false
         }
       ]
     },
@@ -142,10 +134,6 @@
         {
           "metin": "Sınıf içinde kız öğrenciye ‘Tahtaya yaz!’ derken dişil emir kipi olan ___ kullanılır.",
           "cevap": "{ar:اُكْتُبِي}"
-        },
-        {
-          "metin": "Cümlenin başına gelerek ‘-mı / -mi?’ soru anlamı katan doğrulama edatı ___ kelimesidir.",
-          "cevap": "{ar:هَلْ}"
         }
       ],
       "fazla": [
@@ -156,7 +144,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki dört kelimeden hangisinde yer alan harflerin tamamı kendisinden sonra gelen harfle birleşmeyen ayrık harflerden oluşmaktadır?",
+      "soru": "Görseldeki dört kelimeden hangisinde yer alan harflerin tamamı kendisinden sonra gelen harfle birleşmeyen harflerden oluşur?",
       "secenekler": [
         "1. Karttaki {ar:كَتَبَ} kelimesi",
         "2. Karttaki {ar:دَرَسَ} kelimesi",
@@ -182,15 +170,15 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki üç hareke kartını inceleyerek Fetha (Üstün), Kesra (Esre) ve Damme (Ötre) işaretlerinin harfin neresine yazıldığını ve hangi sesleri verdiğini kısaca yazınız.",
-      "cevap": "Fetha üstte (e/a), kesra altta (i/ı), damme ise üstte vav şeklinde (ü/u) ses verir.",
+      "soru": "Görseldeki üç hareke kartını inceleyerek Fetha (Üstün), Kesra (Esre) ve Damme (Ötre) işaretlerinin harfin neresine yazıldığını ve hangi sesleri verdiğini yazınız.",
+      "cevap": "Fetha harfin üstüne (e-a), kesra altına (i-ı), damme ise üstüne (ü-u sesiyle) yazılır.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görselde yeni tanışan iki öğrencinin konuşma basamakları karışık verilmiştir. İletişim akışına göre cümleleri baştan sona 1’den 4’e kadar sıralayınız.",
+      "soru": "Görselde yeni tanışan iki öğrencinin konuşma basamakları karışık verilmiştir. İletişim akışına göre cümleleri baştan sona doğru sıralayınız.",
       "ogeler": [
         "{ar:اَلسَّلَامُ عَلَيْكُمْ — وَعَلَيْكُمُ السَّلَامُ} (Selamlaşma)",
         "{ar:مَا اسْمُكَ؟ — اِسْمِي كَرِيمٌ.} (İsim sorma ve kendini tanıtma)",
@@ -214,7 +202,7 @@
     {
       "tur": "sifre",
       "duzey": "hatirla",
-      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “Arapçada harfleri seslendirmeye yarayan üstün, esre ve ötre işaretlerinin ortak adı” kavramını bulunuz.",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “Arapçada harfleri seslendirmeye yarayan üstün, esre ve ötre işaretleri” şifresini bulunuz.",
       "satirlar": [
         {
           "ipucu": "Soru cümlesinin başına gelerek ‘-mı / -mi?’ anlamı katan edat ({ar:هَلْ})",
@@ -254,7 +242,7 @@
       "duzey": "ust",
       "gorsel_var": true,
       "soru": "Görseldeki nezaket kartlarında yer alan «{ar:مِنْ فَضْلِكَ} / {ar:مِنْ فَضْلِكِ}» ve «{ar:أَهْلًا بِكَ} / {ar:أَهْلًا بِكِ}» ifadelerinin sonundaki hareke değişiminin sebebini açıklayınız.",
-      "cevap": "Sondaki üstünlü ‘-ke’ erkek muhataba, esreli ‘-ki’ ise kız muhataba hitap edildiğini gösterir.",
+      "cevap": "Sondaki üstünlü ‘-ke’ zamiri erkek muhataba, esreli ‘-ki’ zamiri ise kız muhataba hitap eder.",
       "satir": 2
     }
   ]

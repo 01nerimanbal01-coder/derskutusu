@@ -12,8 +12,7 @@
   ],
   "hatirla": [
     "Ilıman iklimin görüldüğü kıyılar, verimli alüvyal ovalar (Çukurova, Gediz, Bafra) ve sanayi-ulaşım merkezleri (Çatalca-Kocaeli, İzmir, Ankara) yoğun nüfuslu; kurak Tuz Gölü çevresi, dağlık Hakkâri ve Menteşe ile karstik Teke-Taşeli platoları seyrek nüfusludur.",
-    "Arazi engebeli ve su kaynakları bol olan Karadeniz kırsalında dağınık yerleşme ve ahşap evler; düz ve suyun kısıtlı olduğu İç ve Güneydoğu Anadolu’da toplu yerleşme ve kerpiç evler; Akdeniz, Kapadokya ve Mardin’de taş evler yaygındır.",
-    "Akdeniz’de kış ılıklığı seracılık ve yaz turizmini, Erzurum-Kars’ta yaz yağışlarıyla yeşeren gür çayırlar büyükbaş hayvancılığı geliştirmiştir; insanlar tünel, viyadük ve barajlarla (GAP) doğayı şekillendirirken sürdürülebilirliği korumalıdır."
+    "Arazi engebeli ve su kaynakları bol olan Karadeniz kırsalında dağınık yerleşme ve ahşap evler; düz ve suyun kısıtlı olduğu İç ve Güneydoğu Anadolu’da toplu yerleşme ve kerpiç evler; Akdeniz, Kapadokya ve Mardin’de taş evler yaygındır."
   ],
   "sorular": [
     {
@@ -32,10 +31,6 @@
         [
           "Erzurum-Kars Platosu",
           "Yaz yağışlarıyla yeşeren çayırlarda büyükbaş hayvancılığın yapıldığı alan"
-        ],
-        [
-          "Teke ve Taşeli Platoları",
-          "Karstik ve engebeli arazi nedeniyle seyrek nüfuslu Akdeniz alanı"
         ]
       ]
     },
@@ -66,7 +61,9 @@
         [
           "1. Çukurova (Adana)",
           "Yoğun nüfuslu",
-          "Verimli delta ovası, tarım ve sanayi"
+          {
+            "b": "Verimli delta ovası, tarım ve sanayi"
+          }
         ],
         [
           "2. Hakkâri Yöresi",
@@ -113,10 +110,6 @@
         {
           "metin": "İç Anadolu bozkırlarında buğday, arpa gibi tahıl tarımı ile koyun-keçi (küçükbaş) hayvancılığı yaygın olarak yapılır.",
           "dogru": true
-        },
-        {
-          "metin": "Verimli alüvyal tarım ovalarının fabrika ve konut imarına açılması sürdürülebilir çevre ilkesine uygun bir uygulamadır.",
-          "dogru": false
         }
       ]
     },
@@ -137,10 +130,6 @@
         {
           "metin": "Kurak iklim bölgelerinde killi toprağın samanla karıştırılıp kurutulmasıyla ___ evler yapılır.",
           "cevap": "kerpiç"
-        },
-        {
-          "metin": "Doğal kaynakları gelecek kuşakların ihtiyacını tehlikeye atmadan koruyarak kullanmaya ___ denir.",
-          "cevap": "sürdürülebilirlik"
         }
       ],
       "fazla": [
@@ -187,10 +176,10 @@
       "gorsel_var": true,
       "soru": "Görselde verilen “Doğal Kaynakların Ekonomik Üretime Dönüşüm Süreci” adımlarını ham maddeden başlayarak 1’den 4’e kadar sıralayınız.",
       "ogeler": [
-        "İklim ve toprak şartlarının elverişli olduğu Çukurova’da çiftçilerin pamuk yetiştirmesi (Tarım)",
-        "Hasat edilen pamukların ulaşım araçlarıyla bölgedeki iplik ve dokuma fabrikalarına taşınması (Ulaşım)",
-        "Fabrikalarda işlenen pamuğun kumaş ve hazır giyim ürünlerine dönüştürülmesi (Sanayi)",
-        "Üretilen giyim ürünlerinin yurt içi mağazalarda ve dış ticarette tüketicilere sunulması (Ticaret)"
+        "İklim ve toprak şartlarının elverişli olduğu Çukurova’da çiftçilerin pamuk yetiştirmesi",
+        "Hasat edilen pamukların ulaşım araçlarıyla bölgedeki iplik ve dokuma fabrikalarına taşınması",
+        "Fabrikalarda işlenen pamuğun kumaş ve hazır giyim ürünlerine dönüştürülmesi",
+        "Üretilen giyim ürünlerinin yurt içi mağazalarda ve dış ticarette tüketicilere sunulması"
       ]
     },
     {
@@ -209,7 +198,7 @@
     {
       "tur": "sifre",
       "duzey": "hatirla",
-      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “akarsuların taşıdığı mineralli topraklarla oluşan verimli düzlük” kavramını (ALÜVYAL) bulunuz.",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “akarsuların taşıdığı mineralli topraklarla oluşan verimli düzlük” kavramını bulunuz.",
       "satirlar": [
         {
           "ipucu": "Karadeniz kırsalında orman bolluğu sayesinde yapılan ev malzemesi",
@@ -252,10 +241,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki “İzmir (Kıyı Ege)” ve “Tunceli (Doğu Anadolu)” karşılaştırma kartını inceleyerek iki şehrin nüfus yoğunluklarının farklı olmasını doğal ve beşerî nedenleriyle açıklayınız.",
-      "cevap": "İzmir ılıman iklim, liman ve sanayiyle yoğun; Tunceli ise engebeli arazi ve sert kışla seyrektir.",
-      "satir": 2
+      "soru": "İzmir (Kıyı Ege) ile Tunceli (Doğu Anadolu) illerinin nüfus yoğunluklarının farklı olmasını doğal ve beşerî nedenleriyle açıklayınız.",
+      "cevap": "İzmir ılıman iklim, ova, liman ve sanayiyle yoğun; Tunceli dağlık arazi, sert kış ve göçle seyrektir.",
+      "satir": 3
     }
   ]
 }

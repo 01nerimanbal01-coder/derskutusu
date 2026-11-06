@@ -12,9 +12,7 @@
   ],
   "hatirla": [
     "Öyküleyici metinler serim (giriş), düğüm (gelişme) ve çözüm (sonuç) bölümlerinden oluşur; olay örgüsü, kişiler, yer ve zaman metnin temel hikâye unsurlarıdır.",
-    "Kelimenin bütün ekleri çıkarıldıktan sonra kalan ve kelimenin bütünüyle anlam bağı taşıyan en küçük parçasına kök denir: «-mak/-mek» almayanlar isim kökü (yurt, göz), alabilenler fiil köküdür (yaz-, sev-).",
-    "Eklendiği sözcüğün anlamını değiştirerek yeni kelime türeten eklere yapım eki (-li, -siz, -ci, -lik, -gi); anlamı değiştirmeden cümle içi ilişki kuran eklere çekim eki (-ler, -de, -den, -im) denir.",
-    "«Ama, fakat, ancak, oysa, buna rağmen» düşüncenin yönünü değiştirir; «kısacası, özetle» yazıyı sonlandırır. Özel adlara gelen çekim ekleri kesme işaretiyle (’) ayrılırken yapım ekleri ayrılmaz (Ankaralılar, Türkçenin)."
+    "Kelimenin bütün ekleri çıkarıldıktan sonra kalan ve kelimenin bütünüyle anlam bağı taşıyan en küçük parçasına kök denir: «-mak/-mek» almayanlar isim kökü (yurt, göz), alabilenler fiil köküdür (yaz-, oku-)."
   ],
   "sorular": [
     {
@@ -33,10 +31,6 @@
         [
           "Yapım eki",
           "Kök veya gövdeye gelerek kelimenin anlamını değiştiren ve yeni sözcük türeten ek"
-        ],
-        [
-          "Çekim eki",
-          "Kelimenin anlamını değiştirmeden çoğul, iyelik veya bulunma görevi katan ek"
         ]
       ]
     },
@@ -44,9 +38,9 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki dört kelime kartında sözcüklerin kökleri parantez içinde gösterilmiştir. Hangi karttaki kelimenin kökü tür bakımından (isim kökü / fiil kökü) diğer üçünden farklıdır?",
+      "soru": "Görseldeki dört kelime kartında sözcükler ve alt satırda kökleri birlikte gösterilmiştir. Hangi karttaki kelimenin kökü tür bakımından diğerlerinden farklıdır?",
       "secenekler": [
-        "1. Kart: Sevgili (sev-)",
+        "1. Kart: Sevgili (sev)",
         "2. Kart: Bayraktar (bayrak)",
         "3. Kart: Köylüler (köy)",
         "4. Kart: Suluğun (su)"
@@ -57,7 +51,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki dört kelime inceleme kartında verilen sözcüklerin kökünü, kök türünü ve aldığı ekin çeşidini (Yapım eki / Çekim eki) tabloya yazınız. İlk satır örnektir.",
+      "soru": "Görseldeki dört kelime inceleme kartında verilen sözcüklerin kökünü, kök türünü ve aldığı ekin çeşidini (Yapım veya Çekim eki) tabloya yazınız.",
       "basliklar": [
         "İncelenen Kelime",
         "Kökü ve Türü",
@@ -67,7 +61,9 @@
         [
           "1. Gözlükçü",
           "göz (İsim kökü)",
-          "Yapım eki (-lük, -çü)"
+          {
+            "b": "Yapım eki (-lük, -çü)"
+          }
         ],
         [
           "2. Mektuplarım",
@@ -118,10 +114,6 @@
         {
           "metin": "«Kısacası, özetle, sonuç olarak» ifadeleri anlatılanları toparlayıp sonlandıran geçiş ifadeleridir.",
           "dogru": true
-        },
-        {
-          "metin": "«Askerlerimiz» kelimesinde yer alan «-ler» ve «-imiz» ekleri kelimenin anlamını değiştiren yapım ekleridir.",
-          "dogru": false
         }
       ]
     },
@@ -136,16 +128,12 @@
           "cevap": "kök"
         },
         {
-          "metin": "Yapım eki alarak yeni bir anlam kazanmış olan sözcüklere ___ kelime adı verilir.",
-          "cevap": "türemiş"
+          "metin": "Eklendiği sözcüğün anlamını değiştirmeyen çoğul ve hâl eklerine ___ eki adı verilir.",
+          "cevap": "çekim"
         },
         {
           "metin": "Öyküleyici bir metinde olayların merak uyandıracak biçimde geliştiği orta bölüme ___ denir.",
           "cevap": "düğüm"
-        },
-        {
-          "metin": "«Yolculuk çok yorucuydu ___ kimse şikâyet etmedi.» cümlesine düşüncenin yönünü değiştiren ___ bağlacı gelir.",
-          "cevap": "ancak"
         }
       ],
       "fazla": [
@@ -156,12 +144,12 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki cümle kartlarının hangisinde altı çizili sözcük hem yapım eki hem de çekim eki almıştır?",
+      "soru": "Görseldeki cümle kartlarının hangisinde koyu yazılan sözcük hem yapım eki hem de çekim eki almıştır?",
       "secenekler": [
-        "I. Kart: Köydeki evlerin bacasından duman tütüyordu.",
-        "II. Kart: Cephedeki gazeteciler zafer haberini hızla duyurdu.",
-        "III. Kart: Hüseyin annesine duygu dolu mektuplar yazdı.",
-        "IV. Kart: Komutanımız harita üzerinde yeni yolu gösterdi."
+        "I. Kart: Köydeki {koyu:evlerin} bacasından duman tütüyordu.",
+        "II. Kart: Cephedeki {koyu:gazeteciler} zafer haberini hızla duyurdu.",
+        "III. Kart: Hüseyin annesine duygu dolu {koyu:mektuplar} yazdı.",
+        "IV. Kart: Komutanımız harita üzerinde yeni {koyu:yolu} gösterdi."
       ],
       "dogru": 1
     },
@@ -169,7 +157,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki geçiş ve bağlantı ifadeleri panosunda K ve L boşluklarına anlam akışına göre sırasıyla aşağıdakilerden hangisi getirilmelidir?",
+      "soru": "Görseldeki geçiş ve bağlantı ifadeleri panosunda K ve L boşluklarına anlam akışına göre sırasıyla hangileri getirilmelidir?",
       "secenekler": [
         "K: çünkü — L: hatta",
         "K: özetle — L: ama",
@@ -182,27 +170,27 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki iki kelimenin («simitçi» ve «kelebek») kök çözümlemesini inceleyiniz. «Kelebek» kelimesinin kökünün neden «kel» olamayacağını dil bilgisi kuralıyla açıklayınız.",
-      "cevap": "Kök ile sözcük arasında anlam bağı olmalıdır; «kel» ile bağ olmadığından kök «kelebek»tir.",
+      "soru": "Görseldeki iki kelimenin («simitçi» ve «kelebek») kök çözümlemesini inceleyiniz. «Kelebek» kelimesinin kökünün neden «kel» olamayacağını kısaca açıklayınız.",
+      "cevap": "Kök ile sözcük arasında anlam bağı bulunmalıdır; «kel» ile «kelebek» arasında anlam bağı yoktur.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görselde «Oğlu Hüseyin’den Emine Ana’ya Mektuplar» metninin olay örgüsü ve mektup akışı karışık verilmiştir. Metnin serim, düğüm ve çözüm sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Görselde «Oğlu Hüseyin’den Emine Ana’ya Mektuplar» metninin olay örgüsü ve mektup akışı karışık verilmiştir. Metnin serim, düğüm ve çözüm sırasına göre 1’den 4’e sıralayınız.",
       "ogeler": [
-        "Hüseyin’in cepheden annesi Emine Ana’ya hasretle selam gönderip sağlığının iyi olduğunu bildirmesi (Serim)",
-        "Mustafa Kemal Paşa’nın cepheye gelerek askerlerle yakından ilgilenmesini ve ordudaki yüksek morali anlatması (Düğüm - 1)",
-        "Büyük taarruz hazırlıklarının tamamlanması ve Mehmetçiğin vatanı kurtarma kararlılığının vurgulanması (Düğüm - 2)",
-        "Zaferin kazanılmasıyla Hüseyin’in yakında köyüne döneceği müjdesini verip annesinin ellerinden öpmesi (Çözüm)"
+        "Hüseyin’in cepheden annesi Emine Ana’ya hasretle selam gönderip sağlığının iyi olduğunu bildirmesi",
+        "Mustafa Kemal Paşa’nın cepheye gelerek askerlerle yakından ilgilenmesini ve ordudaki yüksek morali anlatması",
+        "Büyük taarruz hazırlıklarının tamamlanması ve Mehmetçiğin vatanı kurtarma kararlılığının vurgulanması",
+        "Zaferin kazanılmasıyla Hüseyin’in yakında köyüne döneceği müjdesini verip annesinin ellerinden öpmesi"
       ]
     },
     {
       "tur": "coktan",
       "duzey": "ust",
       "gorsel_var": true,
-      "soru": "Görseldeki yazım ve noktalama denetim panosunda dört cümle verilmiştir. Numaralı cümlelerin hangisinde büyük harflerin veya kesme işaretinin kullanımıyla ilgili bir {koyu:yanlışlık} yapılmıştır?",
+      "soru": "Görseldeki yazım ve noktalama denetim panosunda dört cümle verilmiştir. Numaralı cümlelerin hangisinde yazım kurallarıyla ilgili bir {koyu:yanlışlık} yapılmıştır?",
       "secenekler": [
         "1. Cümle: Canım Annem, cepheden gönderdiğin yün çoraplar dün elime ulaştı.",
         "2. Cümle: Atatürk’ün önderliğinde 29 Ekim 1923’te Cumhuriyet ilan edildi.",
@@ -258,8 +246,8 @@
       "tur": "acik",
       "duzey": "ust",
       "gorsel_var": true,
-      "soru": "Görseldeki hikâye unsurları kartını inceleyerek «Oğlu Hüseyin’den Emine Ana’ya Mektuplar» metninin şahıs kadrosunu, zamanını ve okuyucuya kazandırdığı ana fikri kısaca yazınız.",
-      "cevap": "Kişiler Hüseyin, Emine Ana ve Mustafa Kemal; zaman Millî Mücadele; ana fikir vatan sevgisidir.",
+      "soru": "Görseldeki metin kesiti kartını inceleyerek «Oğlu Hüseyin’den Emine Ana’ya Mektuplar» metninin şahıs kadrosunu, zamanını ve okuyucuya verdiği ana fikri yazınız.",
+      "cevap": "Kişiler Hüseyin, Emine Ana ve Atatürk; zaman Millî Mücadele; ana fikir vatan sevgisidir.",
       "satir": 2
     }
   ]

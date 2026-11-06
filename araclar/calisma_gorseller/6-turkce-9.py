@@ -1,151 +1,122 @@
-"""6. sınıf Türkçe 9. hafta (Vatan Metni: Metin İçi ve Metinler Arası Karşılaştırma, Özetleme ve İsim Çekim Ekleri) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-11 pt Noto Sans (K150 EK); kesir yok (K155)."""
+"""6-turkce-9 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=16):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.3, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def iyelik_belirtme_kartlari():
-    kartlar = [
-        ('1. Kart: anı-y-ı', 'Neyi anlattı? → Belirtme', MAVI, MAVI_A),
-        ('2. Kart: şiir-i', 'Onun şiiri → İyelik (Aitlik)', YES, YES_A),
-        ('3. Kart: kürsü-y-ü', 'Neyi süsledi? → Belirtme', TUR, TUR_A),
-        ('4. Kart: roman-ı', 'Neyi bitirdim? → Belirtme', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, r)
-        ic += yazi(x + 86, y + 15, bas, 10.1, r)
-        ic += yazi(x + 86, y + 31, alt, 9.3, LAC, ince=True)
-    return svg(360, 94, ic, 'İyelik eki ile belirtme hâl ekini ayırt etme kartları.', 16)
-
-
-def cokluk_eki_anlam_panosu():
-    kartlar = [
-        ('1. Sinan-lar', 'Benzerlik anlamı', MAVI, MAVI_A),
-        ('2. Dayım-lar-a', 'Aile anlamı (?)', YES, YES_A),
-        ('3. Dünya-lar', 'Abartma anlamı (?)', TUR, TUR_A),
-        ('4. Bey-ler', 'Saygı anlamı (?)', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 10.0, r)
-        ic += f'<line x1="{x + 8}" y1="32" x2="{x + 74}" y2="32" stroke="{r}" stroke-width="0.9"/>'
-        ic += yazi(x + 41, 55, alt, 9.0, LAC, ince=True)
-    return svg(360, 84, ic, 'Çokluk ekinin cümleye kattığı farklı anlamlar panosu.', 15)
-
-
-def iki_metin_karsilastirma():
-    ic = kutu(6, 6, 170, 76, MAVI_A, MAVI)
-    ic += yazi(91, 21, 'I. Metin · Şiir (Dörtlük)', 10.1, MAVI)
-    ic += yazi(91, 42, '“Dalgalan göklerde al bayrağım,', 9.3, LAC, ince=True)
-    ic += yazi(91, 61, 'Sensin benim huzurlu ocağım.”', 9.3, LAC, ince=True)
-
-    ic += kutu(184, 6, 170, 76, YES_A, YES)
-    ic += yazi(269, 21, 'II. Metin · Anı (Düzyazı)', 10.1, YESIL_K)
-    ic += yazi(269, 42, '“Vatan toprağını korumak için', 9.3, LAC, ince=True)
-    ic += yazi(269, 61, 'bayrağımız altında kenetlendik.”', 9.3, LAC, ince=True)
-    return svg(360, 88, ic, 'Şiir ve düzyazı türündeki iki vatan metninin karşılaştırma kartı.', 15)
-
-
-def cekim_ekleri_cozumleme():
-    kartlar = [
-        ('A Kartı', 'Kahraman - lar - ımız', MAVI, MAVI_A),
-        ('B Kartı', 'Vatan - ımız - dan', TUR, TUR_A),
-        ('C Kartı', 'Toprak - lar - ımız - da', YES, YES_A),
-        ('D Kartı', 'Bayrağ - ın - a', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, ekler, r, z) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, r)
-        ic += yazi(x + 86, y + 15, bas, 10.1, r)
-        ic += yazi(x + 86, y + 31, ekler, 9.5, LAC)
-    return svg(360, 94, ic, 'İsim çekim eklerinin dizilişini gösteren dört kelime kartı.', 16)
-
-
-def ust_uste_iki_ek_karti():
-    ic = kutu(6, 6, 348, 76, CAM_A, CAM)
-    ic += yazi(180, 22, 'EK ÇÖZÜMLEME KARTI · “ESERİNİ YARIŞMAYA GÖNDERDİ”', 10.1, CAM)
-    ic += yazi(180, 45, 'Kök: eser   +   1. Ek: -i (Onun eseri = ?)   +   n   +   2. Ek: -i (Neyi? = ?)', 9.5, LAC)
-    ic += yazi(180, 66, 'İpucu: İsimde üst üste gelen iki “-i” ekinden ilki aitlik, ikincisi durum bildirir.', 9.1, LAC, ince=True)
-    return svg(360, 88, ic, 'Eserini kelimesindeki iyelik ve belirtme hâl eklerinin analizi.', 15)
-
-
-def ozetleme_adimlari_panosu():
-    adimlar = [
-        ('1. Okuma', 'Ana fikri belirle', MAVI, MAVI_A),
-        ('2. Seçme', 'Önemliyi ayıkla', YES, YES_A),
-        ('3. Sıralama', 'Akışa göre diz', TUR, TUR_A),
-        ('4. Yazma', 'Kendi cümlenle yaz', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 10.1, r)
-        ic += yazi(x + 41, 54, alt, 9.1, LAC, ince=True)
-    return svg(360, 84, ic, 'Metin özetleme sürecinin dört temel adımı.', 15)
-
-
-def soru_eki_yazim_kartlari():
-    kartlar = [
-        ('1. Kart (!)', 'Bahar geldimi açar (Yanlış)', KIR, KIR_A),
-        ('2. Kart', 'Geniş mi geniş (Pekiştirme)', MAVI, MAVI_A),
-        ('3. Kart', 'Araştırdın mı? (Soru)', MOR, MOR_A),
-        ('4. Kart', 'Güneş doğdu mu... (Zaman)', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, r)
-        ic += yazi(x + 86, y + 15, bas, 10.0, r)
-        ic += yazi(x + 86, y + 31, alt, 9.2, LAC, ince=True)
-    return svg(360, 94, ic, 'Soru ekinin yazımı ve cümleye kattığı anlamlar kartı.', 16)
-
-
-def vatan_metin_ici_sema():
-    ic = kutu(6, 6, 170, 76, YES_A, YES)
-    ic += yazi(91, 22, '1. Bölüm (İlk Dörtlükler)', 10.1, YESIL_K)
-    ic += yazi(91, 44, 'Yemyeşil ovalar, yüksek dağlar', 9.3, LAC, ince=True)
-    ic += yazi(91, 64, 've coşkun akan ırmaklar', 9.5, YESIL_K)
-
-    ic += kutu(184, 6, 170, 76, TUR_A, TUR)
-    ic += yazi(269, 22, '2. Bölüm (Son Dörtlükler)', 10.1, TUR)
-    ic += yazi(269, 44, 'Toprağı vatan yapan şehitler,', 9.3, LAC, ince=True)
-    ic += yazi(269, 64, 'kahramanlık ve bağımsızlık', 9.5, TUR)
-    return svg(360, 88, ic, 'Vatan şiirinin birinci ve ikinci bölümlerinin metin içi karşılaştırma şeması.', 15)
+GORSELLER = {1: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İyelik eki ile belirtme '
+    'hâl ekini ayırt etme cümle kartları."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Kart · anı-y-ı</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kurtuluş</text><text x="87.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Savaşı’ndaki</text><text x="87.5" y="76.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">anıyı '
+    'anlattı.</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="262.5" y="30.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. '
+    'Kart · şiir-i</text><text x="262.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Şairin son şiiri</text><text x="262.5" y="67.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">dinleyicileri etkiledi.</text><rect x="4" y="89" width="167" '
+    'height="64" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="87.5" y="107.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">3. Kart · kürsü-y-ü</text><text x="87.5" '
+    'y="125.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tören '
+    'alanında</text><text x="87.5" y="144.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">kürsüyü süsledi.</text><rect x="179" y="89" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="107.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Kart · roman-ı</text><text x="262.5" y="125.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Aldığım romanı</text><text x="262.5" y="144.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">iki günde bitirdim.</text></svg>',
+ 2: '<svg viewBox="0 0 350 82" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Çokluk eki almış dört '
+    'örnek kelime kartı."><rect x="4" y="3" width="167" height="36" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="25.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Sinan-lar</text><rect x="179" y="3" width="167" height="36" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="262.5" y="25.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. '
+    'Dayım-lar-a</text><rect x="4" y="43" width="167" height="36" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="87.5" y="65.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. '
+    'Dünya-lar</text><rect x="179" y="43" width="167" height="36" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="65.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Bey-ler</text></svg>',
+ 5: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Şiir ve düzyazı '
+    'türündeki iki vatan metninin karşılaştırma kartı."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">I. Metin · Şiir (Dörtlük)</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">“Dalgalan göklerde al bayrağım,</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sensin benim huzurlu '
+    'ocağım.”</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">II. Metin · Anı '
+    '(Düzyazı)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">“Vatan toprağını korumak için bayrağımız</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">altında kenetlendik.”</text></svg>',
+ 6: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İsim çekim eklerinin '
+    'dizilişini gösteren dört kelime kartı."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">A Kartı</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Kahraman - lar - ımız</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">B Kartı · Vatan - ımız</text><text x="262.5" y="39.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">- dan</text><rect x="4" '
+    'y="52" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">C Kartı</text><text '
+    'x="87.5" y="88.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Toprak '
+    '- lar - ımız -</text><text x="87.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">da</text><rect x="179" y="52" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="79.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">D Kartı · Bayrağ - ın -</text><text x="262.5" y="98.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">a</text></svg>',
+ 7: '<svg viewBox="0 0 350 67" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eserini kelimesinin kök '
+    've ek ayrımını gösteren kart."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">EK ÇÖZÜMLEME KARTI</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Cümle: “Eserini yarışmaya gönderdi.”</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Ek Ayrımı: eser - i (1. '
+    'ek) - n - i (2. ek)</text></svg>',
+ 8: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Metin özetleme sürecinin '
+    'karışık verilen dört aşaması."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Sıralama</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Akışa göre diz</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Yazma</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kendi cümlenle yaz</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Okuma</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ana fikri '
+    'belirle</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Seçme</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Önemliyi ayıkla</text></svg>',
+ 9: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Soru ekinin yazımı ve '
+    'anlam özelliklerini gösteren dört cümle kartı."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Kart</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Bahar geldimi ovalar</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">gelincikle donanır.</text><rect x="179" y="3" '
+    'width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. Kart</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Geniş mi geniş '
+    'bir</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">meydanda buluştuk.</text><rect x="4" y="71" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="87.5" y="98.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">3. Kart</text><text x="87.5" y="116.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Yazılış sürecini</text><text x="87.5" y="135.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">araştırdın mı?</text><rect x="179" y="71" '
+    'width="167" height="82" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="262.5" y="89.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">4. Kart</text><text x="262.5" y="107.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Güneş doğdu '
+    'mu</text><text x="262.5" y="126.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">nöbet değişimi</text><text x="262.5" y="144.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">başlar.</text></svg>',
+ 11: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vatan şiirinin birinci '
+     've ikinci bölümlerinin metin içi karşılaştırma şeması."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e3f6ea" '
+     'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#0f6b45">1. Bölüm (İlk Dörtlükler)</text><text x="11.0" y="38.8" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yemyeşil ovalar, yüksek dağlar ve '
+     'coşkun</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">akan ırmaklar</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#ee7d12" '
+     'stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#ee7d12">2. Bölüm (Son Dörtlükler)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Toprağı vatan yapan şehitler, kahramanlık ve</text><text '
+     'x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">bağımsızlık</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = iyelik_belirtme_kartlari()
-    s[2]['gorsel'] = cokluk_eki_anlam_panosu()
-    s[5]['gorsel'] = iki_metin_karsilastirma()
-    s[6]['gorsel'] = cekim_ekleri_cozumleme()
-    s[7]['gorsel'] = ust_uste_iki_ek_karti()
-    s[8]['gorsel'] = ozetleme_adimlari_panosu()
-    s[9]['gorsel'] = soru_eki_yazim_kartlari()
-    s[11]['gorsel'] = vatan_metin_ici_sema()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -33,10 +33,6 @@
         [
           "48 sayısının {kesir:3|4}’ü ile 0,25’inin farkı",
           "24"
-        ],
-        [
-          "18 litrelik zeytinyağının 0,75 litrelik şişelere tam dolumuyla oluşan şişe sayısı",
-          "24 şişe"
         ]
       ]
     },
@@ -45,7 +41,7 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Görseldeki şerit modeline göre bir okul kütüphanesindeki kitapların önce %20’si, daha sonra {koyu:kalan kitapların} {kesir:2|4}’ü raflara dizilmiştir. Geriye dizilmeyen 140 kitap",
+      "soru": "Görseldeki şerit modeline göre bir okul kütüphanesindeki kitapların önce %20’si, daha sonra {koyu:kalan kitapların} {kesir:2|4}’ü raflara dizilmiştir. Geriye dizilmeyen 140 kitap kaldığına göre toplam kitap sayısı kaçtır?",
       "secenekler": [
         "350 kitap",
         "400 kitap",
@@ -59,7 +55,7 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Görseldeki dört marketin bal kampanyası panosunu inceleyerek tablodaki eksik indirimli satış fiyatı ve 1 kg birim fiyatı hücrelerini",
+      "soru": "Görseldeki dört marketin bal kampanyası panosunu inceleyerek tablodaki eksik indirimli satış fiyatı ve 1 kg birim fiyatı hücrelerini tamamlayınız.",
       "basliklar": [
         "Market ve Miktar",
         "İndirimli Satış Tutarı",
@@ -74,7 +70,7 @@
           }
         ],
         [
-          "2. L Marketi (2 kg = 500 TL, %10 ind.)",
+          "2. L Marketi (2 kg = 500 TL, %10 indirim)",
           {
             "b": "450 TL"
           },
@@ -90,7 +86,7 @@
           }
         ],
         [
-          "4. N Marketi (4 kg = 1200 TL, %25 ind.)",
+          "4. N Marketi (4 kg = 1200 TL, %25 indirim)",
           {
             "b": "900 TL"
           },
@@ -119,10 +115,6 @@
         {
           "metin": "Yüzde otuz beşi (%35’i) harcanan bir paranın kalan kısmını tek adımda bulmak için para 0,35 ile çarpılır.",
           "dogru": false
-        },
-        {
-          "metin": "Ondalık gösterimlerle çarpma ve bölme işlemlerinde yuvarlama tahmini yapmak virgül hatalarını fark etmeyi sağlar.",
-          "dogru": true
         }
       ]
     },
@@ -144,10 +136,6 @@
         {
           "metin": "Yüzde kırkı (%40’ı) gidilen bir yolun kalan kısmını tek adımda bulmak için yol ___ ile çarpılır.",
           "cevap": "0,60"
-        },
-        {
-          "metin": "Bir problemde kullanılan başarılı çözüm modelini benzer durumlara uyarlamaya ___ denir.",
-          "cevap": "genelleme"
         }
       ],
       "fazla": [
@@ -159,7 +147,7 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Görseldeki sürdürülebilir su tasarrufu kartına göre bozuk bir musluk günde 13,5 litre su akıtmaktadır. Tamir edilen bu musluk sayesinde 20 günde kurtarılan suyun {kesir:2|3}’si ile bahçedeki sebzeler",
+      "soru": "Görseldeki sürdürülebilir su tasarrufu kartına göre bozuk bir musluk günde 13,5 litre su akıtmaktadır. Tamir edilen bu musluk sayesinde 20 günde kurtarılan suyun {kesir:2|3}’si ile bahçedeki sebzeler sulanmıştır. Sulanmada kaç litre su kullanılmıştır?",
       "secenekler": [
         "150 litre",
         "180 litre",
@@ -173,7 +161,7 @@
       "duzey": "uygula",
       "sutun": "sag",
       "gorsel_var": true,
-      "soru": "Görseldeki bisiklet parkuru panosuna göre 18 km’lik parkurun 1. etabında yolun {kesir:1|3}’ini geçen Mert, kalan yolu dakikada 0,4 km sabit hızla tamamlamıştır.",
+      "soru": "Görseldeki bisiklet parkuru panosuna göre 18 km’lik parkurun 1. etabında yolun {kesir:1|3}’ini geçen Mert, kalan yolu dakikada 0,4 km sabit hızla tamamlamıştır. Mert kalan yolu kaç dakikada geçmiştir?",
       "secenekler": [
         "20 dakikada",
         "25 dakikada",
@@ -188,8 +176,8 @@
       "sutun": "sag",
       "gorsel_var": true,
       "soru": "Görseldeki işlem kartında verilen «(45 − 7,5) ÷ 1,25» işlemine uygun gerçek yaşam bağlamlı bir problem kurunuz ve işlemin sonucunu yazınız.",
-      "cevap": "Problem: 45 m kumaşın 7,5 metresini ayıran bir terzi, kalan kumaşı 1,25 metrelik eş parçalara bölerse kaç.",
-      "satir": 2
+      "cevap": "45 metre kumaşın 7,5 metresini ayıran terzi kalanı 1,25 metrelik kaç parçaya böler? Sonuç: 30 parça.",
+      "satir": 4
     },
     {
       "tur": "siralama",
@@ -198,10 +186,10 @@
       "gorsel_var": true,
       "soru": "Görselde verilen dört matematiksel işlemin sonuçlarını en küçük sonuçtan en büyük sonuca doğru 1’den 4’e kadar sıralayınız.",
       "ogeler": [
-        "K İşlemi: 60 × 0,25 (60 sayısının çeyreği = 15)",
-        "L İşlemi: 60 × {kesir:2|5} (60 sayısının %40’ı = 24)",
-        "M İşlemi: 60 ÷ 1,5 (600 ÷ 15 = 40)",
-        "N İşlemi: 60 ÷ 0,5 (60 sayısının yarım içindeki adedi = 120)"
+        "K İşlemi: 60 × 0,25",
+        "L İşlemi: 60 × {kesir:2|5}",
+        "M İşlemi: 60 ÷ 1,5",
+        "N İşlemi: 60 ÷ 0,5"
       ]
     },
     {
@@ -209,7 +197,7 @@
       "duzey": "ust",
       "sutun": "sag",
       "gorsel_var": true,
-      "soru": "Görseldeki «Ekolojik Bahçe Ekim Planı»na göre 800 metrekarelik bahçenin {kesir:3|8}’ine domates, 0,25’ine biber, kalan kısmına ise çilek ekilmiştir. Bu bahçeyle ilgili",
+      "soru": "Görseldeki «Ekolojik Bahçe Ekim Planı»na göre 800 metrekarelik bahçenin {kesir:3|8}’ine domates, 0,25’ine biber, kalan kısmına ise çilek ekilmiştir. Bu bahçeyle ilgili aşağıdakilerden hangisi {koyu:yanlıştır?}",
       "secenekler": [
         "Domates ekilen alan bahçenin %37,5’ine karşılık gelir ve 300 metrekaredir.",
         "Biber ekilen alan bahçenin çeyreğine ({kesir:1|4}’üne) karşılık gelir ve 200 metrekaredir.",
@@ -222,10 +210,10 @@
       "tur": "sifre",
       "duzey": "hatirla",
       "sutun": "sag",
-      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “bir ürünün toplam tutarının miktarına bölünmesiyle bulunan 1 kg veya 1 L",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “bir ürünün toplam tutarının miktarına bölünmesiyle bulunan 1 kg veya 1 L karşılığı değer” şifresini bulunuz.",
       "satirlar": [
         {
-          "ipucu": "Kesir ve yüzde problemlerinde eş parçaların birleşerek oluşturduğu tamam",
+          "ipucu": "Kesir ve yüzde problemlerinde eş parçaların birleşerek oluşturduğu tam miktar",
           "cevap": "BÜTÜN",
           "anahtar": 0
         },
@@ -257,9 +245,9 @@
       "duzey": "ust",
       "sutun": "sag",
       "gorsel_var": true,
-      "soru": "Görseldeki «{kesir:1|3} + 0,25» işleminde neden ondalık gösterime dönüştürme stratejisinin tam sonuç vermediğini ve hangi stratejiyle çözülmesi",
-      "cevap": "{kesir:1|3} kesri devirli ondalık sayıya (0,333. ) dönüştüğü için.",
-      "satir": 2
+      "soru": "Görseldeki «{kesir:1|3} + 0,25» işleminde neden ondalık gösterime dönüştürme stratejisinin tam sonuç vermediğini ve hangi stratejiyle çözülmesi gerektiğini açıklayınız.",
+      "cevap": "{kesir:1|3} devirli olduğundan 0,25 = {kesir:1|4} yazılıp payda eşitlenerek {kesir:7|12} bulunur.",
+      "satir": 3
     }
   ]
 }

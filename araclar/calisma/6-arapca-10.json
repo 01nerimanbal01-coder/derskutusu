@@ -12,8 +12,7 @@
   ],
   "hatirla": [
     "Oda adları çoğunlukla {ar:غُرْفَةٌ} ile isim tamlaması şeklinde kurulur: {ar:غُرْفَةُ الْجُلُوسِ} (oturma odası), {ar:غُرْفَةُ النَّوْمِ} (yatak odası), {ar:غُرْفَةُ الْأَطْفَالِ} (çocuk odası); diğer bölümler {ar:اَلْمَطْبَخُ} (mutfak), {ar:اَلْحَمَّامُ} (banyo), {ar:اَلشُّرْفَةُ} (balkon) ve {ar:اَلْحَدِيقَةُ} (bahçe) kelimeleridir.",
-    "Odada ne bulunduğunu anlatırken müzekker (eril) eşyalarda «{ar:يُوجَدُ}» ({ar:يُوجَدُ سَرِيرٌ، فُرْنٌ، حَاسُوبٌ}), sonunda {ar:ة} bulunan müennes (dişil) eşyalarda «{ar:تُوجَدُ}» ({ar:تُوجَدُ أَرِيكَةٌ، طَاوِلَةٌ، ثَلَّاجَةٌ}) fiili seçilir.",
-    "Konum sormak için «{ar:أَيْنَ...؟}» (Nerede?) edatı kullanılır; cevaptaki {ar:فِي} (içinde), {ar:عَلَى / فَوْقَ} (üstünde), {ar:تَحْتَ} (altında), {ar:أَمَامَ} (önünde) ve {ar:خَلْفَ} (arkasında) kelimelerinden sonra gelen isim kesralı (esreli) okunur."
+    "Odada ne bulunduğunu anlatırken müzekker (eril) eşyalarda «{ar:يُوجَدُ}» ({ar:يُوجَدُ سَرِيرٌ، فُرْنٌ، حَاسُوبٌ}), sonunda {ar:ة} bulunan müennes (dişil) eşyalarda «{ar:تُوجَدُ}» ({ar:تُوجَدُ أَرِيكَةٌ، طَاوِلَةٌ، ثَلَّاجَةٌ}) fiili seçilir."
   ],
   "sorular": [
     {
@@ -33,10 +32,6 @@
         [
           "{ar:سَرِيرٌ وَخِزَانَةٌ}",
           "Yatak odasında yer alan yatak ve elbise dolabı"
-        ],
-        [
-          "{ar:اَلطَّابِقُ الثَّانِي}",
-          "Çok katlı konutlarda ikinci kat"
         ]
       ]
     },
@@ -59,7 +54,7 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Görseldeki oda ve eşya tanıtım kartlarını inceleyerek tablodaki eksik bulunma fiili ({ar:يُوجَدُ / تُوجَدُ}) ve Türkçe anlam hücrelerini",
+      "soru": "Görseldeki oda ve eşya tanıtım kartlarını inceleyerek tablodaki eksik bulunma fiili ({ar:يُوجَدُ} veya {ar:تُوجَدُ}) ve Türkçe anlam hücrelerini tamamlayınız.",
       "basliklar": [
         "Eşya ve Oda Kartı",
         "Uygun Bulunma Fiili",
@@ -123,10 +118,6 @@
         {
           "metin": "Harf-i cerlerden ({ar:فِي، عَلَى}) sonra gelen {ar:ال} takılı kelimenin son harfi esreli (kesralı) okunur.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:مَاذَا يُوجَدُ فِي الْمَطْبَخِ؟}» sorusu mutfağın hangi katta olduğunu öğrenmek için sorulur.",
-          "dogru": false
         }
       ]
     },
@@ -148,10 +139,6 @@
         {
           "metin": "Ağacın evin önünde olduğunu «{ar:اَلشَّجَرَةُ} ___ {ar:الْبَيْتِ}» cümlesi ifade eder.",
           "cevap": "{ar:أَمَامَ}"
-        },
-        {
-          "metin": "Benim evimin geniş olduğunu söylemek için «___ {ar:وَاسِعٌ}» yapısı kullanılır.",
-          "cevap": "{ar:بَيْتِي}"
         }
       ],
       "fazla": [
@@ -190,10 +177,9 @@
       "tur": "kisa",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki yer zarfı dönüşüm kartında verilen «{ar:اَلسَّيَّارَةُ أَمَامَ الْبَيْتِ}» (Araba evin önündedir) cümlesini, altı çizili zarfın zıt",
+      "soru": "Verilen «{ar:اَلسَّيَّارَةُ أَمَامَ الْبَيْتِ}» (Araba evin önündedir) cümlesini, «{ar:أَمَامَ}» zarfının zıt anlamlısıyla yeniden yazınız.",
       "cevap": "{ar:اَلسَّيَّارَةُ خَلْفَ الْبَيْتِ} (Araba evin arkasındadır).",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "siralama",
@@ -260,10 +246,10 @@
       "tur": "acik",
       "duzey": "ust",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki iki bulunma cümlesini inceleyerek birincisinde neden «{ar:يُوجَدُ}», ikincisinde ise neden «{ar:تُوجَدُ}» fiilinin tercih edildiğini",
-      "cevap": "Birinci cümlede {ar:كُرْسِيٌّ} (sandalye) müzekker.",
-      "satir": 2
+      "soru": "Görselde verilen iki Arapça cümlenin birincisinde neden «{ar:يُوجَدُ}», ikincisinde ise neden «{ar:تُوجَدُ}» fiilinin tercih edildiğini kısaca açıklayınız.",
+      "cevap": "Birincide {ar:كُرْسِيٌّ} müzekker olduğu için {ar:يُوجَدُ}, ikincide {ar:طَاوِلَةٌ} müennes olduğu için {ar:تُوجَدُ} gelir.",
+      "satir": 3,
+      "gorsel_var": true
     }
   ]
 }

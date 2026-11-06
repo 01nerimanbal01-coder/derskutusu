@@ -11,8 +11,7 @@
   ],
   "hatirla": [
     "İsim tamlamasında ({ar:الإضافة}) birinci kelime {ar:ال} ve tenvin almaz, ikinci kelime {ar:ال} alıp kesralı okunur: {ar:وَلَدُ الْعَمِّ} (amca oğlu), {ar:بِنْتُ الْخالَةِ} (teyze kızı), {ar:رَبَّةُ الْبَيْتِ} (ev hanımı).",
-    "Meslek sorarken eril için «{ar:ما مِهْنَتُهُ؟}», dişil için «{ar:ما مِهْنَتُها؟}»; çalışma yeri sorarken eril için «{ar:أَيْنَ يَعْمَلُ؟}», dişil için «{ar:أَيْنَ تَعْمَلُ؟}» kullanılır.",
-    "Başında {ar:ال} bulunan kelimelerde şemsi harfler ({ar:ت، د، ر، س، ش، ص، ض، ط، ل، ن} vb.) Lam okunmadan şeddelenir ({ar:اَلشُّرْطِيُّ، اَلضّابِطُ}); kameri harflerde ({ar:ب، ج، ح، خ، ع، ف، ق، ك، م، و، ي} vb.) Lam cezimli okunur ({ar:اَلْمُحامي، اَلْبَيْطَرِيُّ})."
+    "Meslek sorarken eril için «{ar:ما مِهْنَتُهُ؟}», dişil için «{ar:ما مِهْنَتُها؟}»; çalışma yeri sorarken eril için «{ar:أَيْنَ يَعْمَلُ؟}», dişil için «{ar:أَيْنَ تَعْمَلُ؟}» kullanılır."
   ],
   "sorular": [
     {
@@ -31,10 +30,6 @@
         [
           "{ar:بَيْطَرِيٌّ ماهِرٌ}",
           "Mesleğinde usta olan erkek veteriner"
-        ],
-        [
-          "{ar:ضابِطَةٌ نَشيطَةٌ}",
-          "Görevinde çalışkan olan kadın subay"
         ]
       ]
     },
@@ -55,7 +50,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki akraba ve meslek tanıtım kartlarını inceleyerek tablodaki eksik çalışma fiili ve Türkçe anlam hücrelerini tamamlayınız. İlk satır örnektir.",
+      "soru": "Görseldeki akraba ve meslek tanıtım kartlarını inceleyerek tablodaki eksik çalışma fiili ve Türkçe anlam hücrelerini tamamlayınız.",
       "basliklar": [
         "Akraba Kartı",
         "Uygun Muzâri Fiil",
@@ -65,7 +60,9 @@
         [
           "1. {ar:خالَتي مُمَرِّضَةٌ}",
           "{ar:تَعْمَلُ}",
-          "Teyzem hemşiredir, çalışıyor"
+          {
+            "b": "Teyzem hemşiredir, çalışıyor"
+          }
         ],
         [
           "2. {ar:جَدّي فَلّاحٌ}",
@@ -116,10 +113,6 @@
         {
           "metin": "İsim tamlamasında birinci kelime olan muzafın başına mutlaka {ar:ال} belirlilik takısı getirilir.",
           "dogru": false
-        },
-        {
-          "metin": "«{ar:عَمَّتي مُحامِيَةٌ ماهِرَةٌ}» cümlesinde özne, meslek ve sıfat dişil (müennes) uyum içindedir.",
-          "dogru": true
         }
       ]
     },
@@ -140,10 +133,6 @@
         {
           "metin": "Kadın hemşirenin hastanede çalıştığını «{ar:تَعْمَلُ في} ___» ifadesi bildirir.",
           "cevap": "{ar:الْمُسْتَشْفى}"
-        },
-        {
-          "metin": "Erkek torun kavramını ifade etmek için Arapçada «___» kelimesi seçilir.",
-          "cevap": "{ar:حَفيد}"
         }
       ],
       "fazla": [
@@ -180,7 +169,7 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki eril cümle kartında verilen «{ar:خالي طَبّاخٌ ماهِرٌ}» ifadesini, öznesi «{ar:عَمَّتي}» (halam) olacak şekilde dişil",
+      "soru": "Görseldeki eril cümle kartında verilen «{ar:خالي طَبّاخٌ ماهِرٌ}» ifadesini, öznesi «{ar:عَمَّتي}» (halam) olacak şekilde dişil (müennes) cümleye dönüştürerek yazınız.",
       "cevap": "{ar:عَمَّتي طَبّاخَةٌ ماهِرَةٌ} (Halam maharetli bir aşçıdır).",
       "satir": 2
     },
@@ -250,9 +239,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki «{ar:اَلطَّبّاخُ}» ve «{ar:اَلْمُعَلِّمُ}» kelimelerinin başında yer alan {ar:ال} takısının okunuş farkını şemsi ve kameri",
-      "cevap": "{ar:ط} şemsi harf olduğu için «{ar:اَلطَّبّاخُ}».",
+      "soru": "«{ar:اَلطَّبّاخُ}» ve «{ar:اَلْمُعَلِّمُ}» kelimelerinin başında yer alan {ar:ال} takısının okunuş farkını şemsi ve kameri harf kuralına göre açıklayınız.",
+      "cevap": "{ar:ط} şemsi harftir, Lam okunmaz (et-tabbâhu); {ar:م} kameri harftir, Lam okunur (el-muallimu).",
       "satir": 2
     }
   ],

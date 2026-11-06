@@ -13,7 +13,7 @@ GORSELLER = {
        '<text x="87.5" y="99.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">P(A) + P(A’) = 1 tam</text>'
        '<rect x="179" y="61" width="167" height="52" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/>'
        '<text x="262.5" y="79.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Olasılık Değeri</text>'
-       '<text x="262.5" y="99.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Pay: İstenilen · Payda: Tüm</text></svg>',
+       '<text x="262.5" y="99.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İstenilen ÷ Tüm durum</text></svg>',
     1: '<svg viewBox="0 0 350 86" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Torbadaki renkli toplar dağılımı">'
        '<rect x="4" y="3" width="342" height="80" rx="5" fill="#f8fafc" stroke="#2451d6" stroke-width="0.75"/>'
        '<text x="12.0" y="20.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Torbadaki Özdeş Toplar (Toplam = 12 Adet)</text>'

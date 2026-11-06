@@ -1,156 +1,127 @@
-"""6. sınıf Arapça 10. hafta (Evimin Bölümleri, Ev Eşyaları, Harf-i Cerler ve Bulunma Kalıpları) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); Türkçe yazı Noto Sans 10.5 pt, Arapça yazı Arial 18 pt (K150 EK); kesir yok (K155)."""
+"""6-arapca-10 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-TR_FONT = 'font-family="Noto Sans, sans-serif" font-size="10.2"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="17.5"'
-
-
-def svg(w, h, ic, etiket, en_fazla=16):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def tr_yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    agirlik = ' font-weight="700"' if kalin else ' font-weight="500"'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {TR_FONT}{agirlik} fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def esya_konum_kartlari():
-    kartlar = [
-        ('1. Kart', 'اَلْحَقِيبَةُ تَحْتَ الطَّاوِلَةِ', YES, YES_A),
-        ('2. Kart', 'اَلْحَاسُوبُ عَلَى الطَّاوِلَةِ', MAVI, MAVI_A),
-        ('3. Kart', 'اَلْكُرْسِيُّ أَمَامَ الطَّاوِلَةِ', TUR, TUR_A),
-        ('4. Kart', 'اَلْمَكْتَبَةُ خَلْفَ الطَّاوِلَةِ', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, ar_metin, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += f'<rect x="{x}" y="{y}" width="172" height="38" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += tr_yazi(x + 8, y + 23, bas, renk, 'start', kalin=True)
-        ic += ar_yazi(x + 114, y + 26, ar_metin, LAC)
-    return svg(360, 94, ic, 'Masa etrafındaki dört eşyanın konumunu gösteren Arapça kartlar.', 16)
-
-
-def oda_esya_bulunma_kartlari():
-    kartlar = [
-        ('1', 'تِلْفَازٌ فِي غُرْفَةِ الْجُلُوسِ', MAVI, MAVI_A),
-        ('2', 'غَسَّالَةٌ فِي الْحَمَّامِ', YES, YES_A),
-        ('3', 'سَرِيرٌ فِي غُرْفَةِ النَّوْمِ', TUR, TUR_A),
-        ('4', 'أَرِيكَةٌ فِي غُرْفَةِ الْجُلُوسِ', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, ar_metin, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += f'<rect x="{x}" y="{y}" width="172" height="38" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += tr_yazi(x + 10, y + 23, bas, renk, 'start', kalin=True)
-        ic += ar_yazi(x + 104, y + 26, ar_metin, LAC)
-    return svg(360, 94, ic, 'Odalarda bulunan eşyaları gösteren dört cümle kartı.', 16)
-
-
-def aile_oturma_diyalog_panosu():
-    ic = f'<rect x="6" y="6" width="348" height="38" rx="8" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.4"/>'
-    ic += tr_yazi(12, 29, 'Soru:', MAVI, 'start', kalin=True)
-    ic += ar_yazi(205, 31, 'أَيْنَ تَجْلِسُ الْأُسْرَةُ فِي الْمَسَاءِ؟', LAC)
-
-    ic += f'<rect x="6" y="50" width="348" height="38" rx="8" fill="{YES_A}" stroke="{YES}" stroke-width="1.4"/>'
-    ic += tr_yazi(12, 73, 'Cevap (Oturma odasında):', YESIL_K, 'start', kalin=True)
-    ic += ar_yazi(255, 75, '؟', YESIL_K)
-    return svg(360, 94, ic, 'Ailenin akşam nerede oturduğunu soran Arapça diyalog panosu.', 16)
-
-
-def harfi_cer_hareke_kartlari():
-    kartlar = [
-        ('A', 'اَلْكِتَابُ فِي الْحَقِيبَةِ', MAVI, MAVI_A),
-        ('B', 'اَلْمِرْآةُ فَوْقَ الْمِغْسَلَةِ', YES, YES_A),
-        ('C (!)', 'اَلْحَاسُوبُ عَلَى الطَّاوِلَةُ', KIR, KIR_A),
-        ('D', 'اَلْحَدِيقَةُ خَلْفَ الْمَنْزِلِ', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, ar_metin, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += f'<rect x="{x}" y="{y}" width="172" height="38" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += tr_yazi(x + 8, y + 23, bas, renk, 'start', kalin=True)
-        ic += ar_yazi(x + 108, y + 26, ar_metin, LAC)
-    return svg(360, 94, ic, 'Harf-i cer ve yer zarflarından sonraki son hareke kuralı kartları.', 16)
-
-
-def zit_zarf_donusum_karti():
-    ic = f'<rect x="6" y="6" width="170" height="76" rx="8" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.4"/>'
-    ic += tr_yazi(91, 22, '1. Konum (Önünde: أَمَامَ)', MAVI, kalin=True)
-    ic += ar_yazi(91, 50, 'اَلسَّيَّارَةُ أَمَامَ الْبَيْتِ', LAC)
-    ic += tr_yazi(91, 72, 'Araba evin önündedir', LAC)
-
-    ic += f'<rect x="184" y="6" width="170" height="76" rx="8" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.4"/>'
-    ic += tr_yazi(269, 22, '2. Zıt Konum (Arkasında)', TUR, kalin=True)
-    ic += ar_yazi(269, 50, 'اَلسَّيَّارَةُ ... الْبَيْتِ', TUR)
-    ic += tr_yazi(269, 72, 'Zıt zarfla tamamlayınız', LAC)
-    return svg(360, 88, ic, 'Önünde ve arkasında zıt anlamlı yer zarfları dönüşüm kartı.', 15)
-
-
-def ev_ziyareti_diyalog_kartlari():
-    kartlar = [
-        ('1. Adım', 'أَهْلًا وَسَهْلًا، تَفَضَّلِي', MAVI, MAVI_A),
-        ('2. Adım', 'شُكْرًا، بَيْتُكِ جَمِيلٌ', YES, YES_A),
-        ('3. Adım', 'مَاذَا يُوجَدُ فِي الْغُرْفَةِ؟', TUR, TUR_A),
-        ('4. Adım', 'يُوجَدُ حَاسُوبٌ وَتُوجَدُ مَكْتَبَةٌ', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, ar_metin, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += f'<rect x="{x}" y="{y}" width="172" height="38" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += tr_yazi(x + 8, y + 23, bas, renk, 'start', kalin=True)
-        ic += ar_yazi(x + 114, y + 26, ar_metin, LAC)
-    return svg(360, 94, ic, 'Ev ziyareti ve çalışma odası tanıtımı diyalog basamakları.', 16)
-
-
-def kat_plani_esya_tablosu():
-    satirlar = [
-        ('غُرْفَةُ الْجُلُوسِ (Oturma O.)', 'أَرِيكَةٌ وَسَجَّادَةٌ (Kanepe, Halı)', MAVI, MAVI_A),
-        ('اَلْمَطْبَخُ (Mutfak)', 'فُرْنٌ وَثَلَّاجَةٌ (Fırın, Buzdolabı)', YES, YES_A),
-        ('غُرْفَةُ النَّوْمِ (Yatak O.)', 'سَرِيرٌ وَخِزَانَةٌ (Yatak, Dolap)', TUR, TUR_A),
-        ('اَلْحَمَّامُ (Banyo)', 'غَسَّالَةٌ وَمِغْسَلَةٌ (Çamaşır Mak.)', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (oda, esya, renk, arka) in enumerate(satirlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += f'<rect x="{x}" y="{y}" width="172" height="38" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += tr_yazi(x + 86, y + 16, oda, renk, kalin=True)
-        ic += tr_yazi(x + 86, y + 32, esya, LAC)
-    return svg(360, 94, ic, 'Evdeki dört bölüm ve içindeki eşyaları gösteren kat planı.', 16)
-
-
-def yucedu_tucedu_karsilastirma():
-    ic = f'<rect x="6" y="6" width="170" height="76" rx="8" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.4"/>'
-    ic += tr_yazi(91, 22, '1. Müzekker Eşya (يُوجَدُ)', MAVI, kalin=True)
-    ic += ar_yazi(91, 50, 'يُوجَدُ كُرْسِيٌّ فِي الْغُرْفَةِ', LAC)
-    ic += tr_yazi(91, 72, 'Odada sandalye vardır', LAC)
-
-    ic += f'<rect x="184" y="6" width="170" height="76" rx="8" fill="{YES_A}" stroke="{YES}" stroke-width="1.4"/>'
-    ic += tr_yazi(269, 22, '2. Müennes Eşya (تُوجَدُ)', YESIL_K, kalin=True)
-    ic += ar_yazi(269, 50, 'تُوجَدُ طَاوِلَةٌ فِي الْغُرْفَةِ', LAC)
-    ic += tr_yazi(269, 72, 'Odada masa vardır (ـة)', LAC)
-    return svg(360, 88, ic, 'Müzekker ve müennes eşyalarda yûcedü ve tûcedü kullanım farkı.', 15)
+GORSELLER = {1: '<svg viewBox="0 0 350 110" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Masa etrafındaki dört '
+    'eşyanın konumunu gösteren Arapça kartlar."><rect x="4" y="3" width="167" height="50" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="22.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">1. Kart</text><text x="87.5" y="43.2" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">اَلْحَقِيبَةُ تَحْتَ الطَّاوِلَةِ</text><rect '
+    'x="179" y="3" width="167" height="50" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="22.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. Kart</text><text '
+    'x="262.5" y="43.2" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">اَلْحَاسُوبُ عَلَى الطَّاوِلَةِ</text><rect x="4" y="57" width="167" height="50" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">3. Kart</text><text x="87.5" y="97.2" text-anchor="middle" direction="rtl" '
+    'unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">اَلْكُرْسِيُّ أَمَامَ '
+    'الطَّاوِلَةِ</text><rect x="179" y="57" width="167" height="50" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Kart</text><text x="262.5" y="97.2" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">اَلْمَكْتَبَةُ خَلْفَ الطَّاوِلَةِ</text></svg>',
+ 2: '<svg viewBox="0 0 350 152" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Odalarda bulunan '
+    'eşyaları gösteren dört cümle kartı."><rect x="4" y="3" width="167" height="71" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="22.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1</text><text x="87.5" y="43.3" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">تِلْفَازٌ فِي غُرْفَةِ</text><text x="87.5" '
+    'y="64.1" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">الْجُلُوسِ</text><rect x="179" y="3" width="167" height="71" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="32.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2</text><text x="262.5" y="53.7" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">غَسَّالَةٌ فِي الْحَمَّامِ</text><rect x="4" '
+    'y="78" width="167" height="71" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="107.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3</text><text x="87.5" '
+    'y="128.7" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">سَرِيرٌ فِي غُرْفَةِ النَّوْمِ</text><rect x="179" y="78" width="167" height="71" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="97.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4</text><text x="262.5" y="118.3" text-anchor="middle" '
+    'direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">أَرِيكَةٌ فِي غُرْفَةِ</text><text x="262.5" y="139.1" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">الْجُلُوسِ</text></svg>',
+ 5: '<svg viewBox="0 0 350 77" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ailenin akşam nerede '
+    'oturduğunu soran Arapça diyalog panosu."><rect x="4" y="3" width="167" height="71" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="22.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Soru:</text><text x="87.5" y="43.3" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">أَيْنَ تَجْلِسُ الْأُسْرَةُ فِي</text><text '
+    'x="87.5" y="64.1" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">الْمَسَاءِ؟</text><rect x="179" y="3" width="167" height="71" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="22.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">Cevap (Oturma</text><text x="262.5" y="43.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">odasında):</text><text x="262.5" y="64.1" text-anchor="middle" '
+    'direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0f6b45">؟</text></svg>',
+ 6: '<svg viewBox="0 0 350 118" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Harf-i cer ve yer '
+    'zarflarından sonraki son hareke kuralı kartları."><rect x="4" y="3" width="167" height="54" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="23.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">A</text><text x="87.5" y="46.2" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">اَلْكِتَابُ فِي الْحَقِيبَةِ</text><rect '
+    'x="179" y="3" width="167" height="54" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="23.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">B</text><text x="262.5" '
+    'y="46.2" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">اَلْمِرْآةُ فَوْقَ الْمِغْسَلَةِ</text><rect x="4" y="61" width="167" height="54" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="81.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">C</text><text x="87.5" y="104.2" text-anchor="middle" direction="rtl" '
+    'unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">اَلْحَاسُوبُ عَلَى '
+    'الطَّاوِلَةُ</text><rect x="179" y="61" width="167" height="54" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="81.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">D</text><text x="262.5" y="104.2" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">اَلْحَدِيقَةُ خَلْفَ الْمَنْزِلِ</text></svg>',
+ 8: '<svg viewBox="0 0 350 164" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Karışık sırayla verilen '
+    'ev ziyareti ve çalışma odası tanıtımı diyalog kartları."><rect x="4" y="3" width="167" height="77" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="23.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Konuşma Kartı</text><text x="87.5" y="46.3" text-anchor="middle" direction="rtl" '
+    'unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">مَاذَا يُوجَدُ '
+    'فِي</text><text x="87.5" y="69.1" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">الْغُرْفَةِ؟</text><rect x="179" y="3" width="167" height="77" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="34.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Konuşma Kartı</text><text x="262.5" y="57.7" text-anchor="middle" '
+    'direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">أَهْلًا وَسَهْلًا، تَفَضَّلِي</text><rect x="4" y="84" width="167" height="77" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="104.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Konuşma Kartı</text><text x="87.5" y="127.3" text-anchor="middle" direction="rtl" '
+    'unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">يُوجَدُ حَاسُوبٌ '
+    'وَتُوجَدُ</text><text x="87.5" y="150.1" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">مَكْتَبَةٌ</text><rect x="179" y="84" width="167" height="77" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="115.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Konuşma Kartı</text><text x="262.5" y="138.7" text-anchor="middle" '
+    'direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">شُكْرًا، بَيْتُكِ جَمِيلٌ</text></svg>',
+ 9: '<svg viewBox="0 0 350 194" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Evdeki dört bölüm ve '
+    'içindeki eşyaları gösteren kat planı."><rect x="4" y="3" width="167" height="92" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="22.6" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">غُرْفَةُ الْجُلُوسِ</text><text x="87.5" y="43.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">(Oturma O.)</text><text '
+    'x="87.5" y="64.2" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">أَرِيكَةٌ وَسَجَّادَةٌ</text><text x="87.5" y="85.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Kanepe, Halı)</text><rect x="179" y="3" width="167" height="92" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="33.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">اَلْمَطْبَخُ (Mutfak)</text><text x="262.5" y="53.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">فُرْنٌ وَثَلَّاجَةٌ '
+    '(Fırın,</text><text x="262.5" y="74.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Buzdolabı)</text><rect x="4" y="99" width="167" height="92" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="87.5" y="118.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">غُرْفَةُ النَّوْمِ (Yatak</text><text x="87.5" y="139.4" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">O.)</text><text x="87.5" y="160.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">سَرِيرٌ وَخِزَانَةٌ (Yatak,</text><text '
+    'x="87.5" y="181.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Dolap)</text><rect x="179" y="99" width="167" height="92" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="129.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">اَلْحَمَّامُ (Banyo)</text><text x="262.5" y="149.8" text-anchor="middle" direction="rtl" '
+    'unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">غَسَّالَةٌ '
+    'وَمِغْسَلَةٌ</text><text x="262.5" y="170.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">(Çamaşır Mak.)</text></svg>',
+ 11: '<svg viewBox="0 0 350 83" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bulunma fiillerinin '
+     'karşılaştırıldığı iki Arapça cümle kartı."><rect x="4" y="3" width="167" height="77" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="87.5" y="34.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">1. Cümle</text><text x="87.5" y="57.7" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">يُوجَدُ كُرْسِيٌّ فِي '
+     'الْغُرْفَةِ</text><rect x="179" y="3" width="167" height="77" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+     'x="262.5" y="23.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">2. '
+     'Cümle</text><text x="262.5" y="46.3" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="500" fill="#0b2257">تُوجَدُ طَاوِلَةٌ فِي</text><text x="262.5" y="69.1" text-anchor="middle" '
+     'direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">الْغُرْفَةِ</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = esya_konum_kartlari()
-    s[2]['gorsel'] = oda_esya_bulunma_kartlari()
-    s[5]['gorsel'] = aile_oturma_diyalog_panosu()
-    s[6]['gorsel'] = harfi_cer_hareke_kartlari()
-    s[7]['gorsel'] = zit_zarf_donusum_karti()
-    s[8]['gorsel'] = ev_ziyareti_diyalog_kartlari()
-    s[9]['gorsel'] = kat_plani_esya_tablosu()
-    s[11]['gorsel'] = yucedu_tucedu_karsilastirma()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

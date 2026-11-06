@@ -12,8 +12,7 @@
   ],
   "hatirla": [
     "Aynı metnin farklı bölümlerini veya kahramanlarının değişen duygularını kıyaslamak metin içi karşılaştırma; iki ayrı metni tema, tür, ana fikir ve dil yönünden kıyaslamak metinler arası karşılaştırmadır.",
-    "İsim çekim ekleri kelimenin temel anlamını değiştirmez: Çokluk eki (-lar, -ler), hâl ekleri (belirtme -ı, yönelme -e, bulunma -de, ayrılma -den), iyelik (aitlik) ekleri ve ilgi (tamlayan -ın, -in) ekidir.",
-    "Başına “onun” getirilebilen -ı, -i eki 3. tekil kişi iyelik ekidir; fiile sorulan “Neyi, kimi?” sorusuna yanıt veren -ı, -i eki ise belirtme hâl ekidir. Soru eki (mı, mi, mu, mü) kelimeden daima ayrı yazılır."
+    "İsim çekim ekleri kelimenin temel anlamını değiştirmez: Çokluk eki (-lar, -ler), hâl ekleri (belirtme -ı, yönelme -e, bulunma -de, ayrılma -den), iyelik (aitlik) ekleri ve ilgi (tamlayan -ın, -in) ekidir."
   ],
   "sorular": [
     {
@@ -32,10 +31,6 @@
         [
           "Bağımsızlık {koyu:milletin} en kutsal emanetidir.",
           "Belirtili isim tamlamasında ilgi (tamlayan) eki (-in)"
-        ],
-        [
-          "Gençler {koyu:yurduna} her alanda hizmet etmelidir.",
-          "İsmin yönelme (yaklaşma) hâl eki (-e, -a)"
         ]
       ]
     },
@@ -66,7 +61,9 @@
         [
           "1. Bu topraklar nice Sinanlar yetiştirir.",
           "Benzerlik anlamı",
-          "Mimar Sinan gibi ustalar"
+          {
+            "b": "Mimar Sinan gibi ustalar"
+          }
         ],
         [
           "2. Bayramda dayımlara ziyarete gittik.",
@@ -113,10 +110,6 @@
         {
           "metin": "«Sıradan bir olay» ve «gözde bir sporcu» ifadelerindeki -dan ve -de ekleri ismin hâl eki değil, yapım ekidir.",
           "dogru": true
-        },
-        {
-          "metin": "Soru eki olan «mı, mi, mu, mü» pekiştirme anlamı kattığında kendinden önceki kelimeye bitişik yazılır.",
-          "dogru": false
         }
       ]
     },
@@ -137,10 +130,6 @@
         {
           "metin": "Belirtme, yönelme, bulunma ve ayrılma eklerinden hiçbirini almamış isimler ___ hâldedir.",
           "cevap": "yalın"
-        },
-        {
-          "metin": "Metindeki önemli bilgileri seçip olay veya düşünce sırasına göre kendi cümlelerimizle kısaltmaya ___ denir.",
-          "cevap": "özetleme"
         }
       ],
       "fazla": [
@@ -166,10 +155,10 @@
       "gorsel_var": true,
       "soru": "Görseldeki dört kelime kartından hangisinde hem çokluk eki, hem iyelik eki, hem de ismin bulunma hâl eki {koyu:bir arada} kullanılmıştır?",
       "secenekler": [
-        "A Kartı: Kahraman-lar-ımız (Çokluk + İyelik, Yalın hâl)",
-        "B Kartı: Vatan-ımız-dan (İyelik + Ayrılma hâl eki)",
-        "C Kartı: Toprak-lar-ımız-da (Çokluk + İyelik + Bulunma hâl eki)",
-        "D Kartı: Bayrağ-ın-a (İyelik + Yönelme hâl eki)"
+        "A Kartı: Kahraman - lar - ımız",
+        "B Kartı: Vatan - ımız - dan",
+        "C Kartı: Toprak - lar - ımız - da",
+        "D Kartı: Bayrağ - ın - a"
       ],
       "dogru": 2
     },
@@ -199,17 +188,17 @@
       "gorsel_var": true,
       "soru": "Görseldeki soru eki (mı, mi, mu, mü) kullanım kartlarından hangisinde hem {koyu:yazım kurallarına} uyulmuş hem de cümleye {koyu:zaman} anlamı katılmıştır?",
       "secenekler": [
-        "1. Kart: Bahar geldimi Anadolu’nun ovaları gelinciklerle donanır. (Bitişik yazılmış)",
-        "2. Kart: Geniş mi geniş bir meydanda bayram coşkusu yaşadık. (Pekiştirme anlamı)",
-        "3. Kart: İstiklâl Marşı’mızın yazılış sürecini araştırdın mı? (Soru anlamı)",
-        "4. Kart: Güneş doğdu mu cephedeki askerler nöbet değişimine başlar. (Zaman anlamı)"
+        "1. Kart: Bahar geldimi Anadolu’nun ovaları gelinciklerle donanır.",
+        "2. Kart: Geniş mi geniş bir meydanda bayram coşkusu yaşadık.",
+        "3. Kart: İstiklâl Marşı’mızın yazılış sürecini araştırdın mı?",
+        "4. Kart: Güneş doğdu mu cephedeki askerler nöbet değişimine başlar."
       ],
       "dogru": 3
     },
     {
       "tur": "sifre",
       "duzey": "hatirla",
-      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “kelimenin anlamını değiştirmeden cümledeki görevini belirleyen ek grubu” adını (ÇEKİM) bulunuz.",
+      "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı harflerle “kelimenin anlamını değiştirmeden cümledeki görevini belirleyen ek grubu” şifresini bulunuz.",
       "satirlar": [
         {
           "ipucu": "İsme ‘-lar, -ler’ eki getirilerek yapılan sayıca fazlalık kavramı",
@@ -245,7 +234,7 @@
       "gorsel_var": true,
       "soru": "Görseldeki “Vatan Şiiri Metin İçi Karşılaştırma” şemasını inceleyerek şairin 1. bölüm ile 2. bölümde vatanın hangi farklı yönlerini ön plana çıkardığını karşılaştırarak yazınız.",
       "cevap": "1. bölümde vatanın doğal güzellikleri, 2. bölümde şehitlerin kahramanlığı ve bağımsızlık işlenmiştir.",
-      "satir": 2
+      "satir": 3
     }
   ]
 }

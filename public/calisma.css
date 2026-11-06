@@ -44,7 +44,7 @@
 
 /* Başlık ve hatırlayalım */
 .ck-konu { display: flex; justify-content: space-between; gap: 12px; align-items: flex-end; margin: 7px 0 6px; }
-.ck-konu h1 { font-size: calc(15.5pt * var(--ck-olcek)); line-height: 1.15; color: var(--ck-lacivert); margin: 0; font-weight: 800; }
+.ck-konu h1 { font-size: calc(15.5pt * var(--ck-olcek)); line-height: 1.25; color: var(--ck-lacivert); margin: 0; font-weight: 800; }
 .ck-konu p { margin: 0; font-size: 7.6pt; color: var(--ck-soluk); max-width: 62%; text-align: right; }
 /* Etiket kutunun üst kenarına oturan yatay rozettir: kutu yalnız maddeler kadar yer tutar. */
 .ck-hatirla { position: relative; padding: 10px 11px 6px; border-radius: 9px; background: linear-gradient(90deg, var(--ck-mavi-acik), #f6f8ff); border: 0; margin: 13px 0 8px; }
@@ -89,14 +89,14 @@
 .ck-sec { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 10px; margin: 0; padding: 0; list-style: none; }
 .ck-sec.dortlu { grid-template-columns: repeat(4, 1fr); }
 .ck-sec li { display: flex; gap: 5px; align-items: baseline; }
-.ck-sec b { flex: none; display: inline-grid; place-items: center; width: 15px; height: 15px; border: 1.2px solid var(--ck-lacivert); border-radius: 50%; font: 700 7.2pt/1 Montserrat, sans-serif; }
-.ck.cevapli .ck-sec li.dogru b, body.cevapli .ck .ck-sec li.dogru b { background: var(--ck-cevap); border-color: var(--ck-cevap); color: #fff; }
+.ck-sec li > b { flex: none; display: inline-grid; place-items: center; width: 15px; height: 15px; border: 1.2px solid var(--ck-lacivert); border-radius: 50%; font: 700 7.2pt/1 Montserrat, sans-serif; }
+.ck.cevapli .ck-sec li.dogru > b, body.cevapli .ck .ck-sec li.dogru > b { background: var(--ck-cevap); border-color: var(--ck-cevap); color: #fff; }
 
 /* Doğru-yanlış */
 .ck-dy { width: 100%; border-collapse: collapse; }
 .ck-dy td { padding: 3px 4px; border-bottom: 1px dashed var(--ck-cizgi); vertical-align: middle; }
 .ck-dy td.k { width: 22px; text-align: center; }
-.ck-kutu { display: inline-grid; place-items: center; width: 17px; height: 17px; border: 1.2px solid var(--ck-soluk); border-radius: 4px; font: 800 8pt/1 Montserrat, sans-serif; color: var(--ck-soluk); position: relative; }
+.ck-kutu { flex: none; display: inline-grid; place-items: center; width: 17px; height: 17px; border: 1.2px solid var(--ck-soluk); border-radius: 4px; font: 800 8pt/1 Montserrat, sans-serif; color: var(--ck-soluk); position: relative; }
 .ck-kutu .cvp { position: absolute; inset: -3px 0 0; font-size: 12pt; font-style: normal; display: grid; place-items: center; }
 .ck-dy-bas td { font: 700 6.8pt/1 Montserrat, sans-serif; color: var(--ck-soluk); border: 0; padding-bottom: 1px; }
 
@@ -105,7 +105,7 @@
 .ck-bosluk-liste li { margin-bottom: 4px; }
 .ck-bos { display: inline-block; min-width: 26mm; border-bottom: 1.2px solid var(--ck-soluk); text-align: center; line-height: 1.1; padding: 0 3px; }
 .ck-kelimeler { display: flex; flex-wrap: wrap; gap: 4px; margin: 0 0 6px; }
-.ck-kelimeler span { padding: 2px 9px; border: 0; border-radius: 999px; font-size: 8.2pt; font-weight: 600; color: var(--ck-mavi); background: var(--ck-mavi-acik); }
+.ck-kelimeler > span { padding: 2px 9px; border: 0; border-radius: 999px; font-size: 8.2pt; font-weight: 600; color: var(--ck-mavi); background: var(--ck-mavi-acik); }
 
 /* Eşleştirme */
 .ck-esle { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 12px; }

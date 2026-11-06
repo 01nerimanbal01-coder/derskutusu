@@ -1,140 +1,107 @@
-"""5. sınıf Din Kültürü ve Ahlak Bilgisi 9. hafta (Namazın Kılınışı: Namazın Hazırlık Şartları ve Rükünleri) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-11 pt Noto Sans (K150 EK); kesir yok (K155)."""
+"""5-din-kulturu-ve-ahlak-bilgisi-9 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=16):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.4, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def sart_rukun_karisik_sema():
-    ic = kutu(6, 6, 170, 82, MAVI_A, MAVI)
-    ic += yazi(91, 21, 'Hazırlık Şartları (Dıştan)', 10.4, MAVI)
-    ic += yazi(91, 41, 'I. İstikbal-i kıble', 10.0, LAC, ince=True)
-    ic += yazi(91, 59, 'II. Kıraat (Kur’an okuma)', 10.0, KIR)
-    ic += yazi(91, 77, 'III. Vakit', 10.0, LAC, ince=True)
-
-    ic += kutu(184, 6, 170, 82, YES_A, YES)
-    ic += yazi(269, 21, 'Namazın Rükünleri (İçten)', 10.4, YESIL_K)
-    ic += yazi(269, 41, 'A. İftitah tekbiri', 10.0, LAC, ince=True)
-    ic += yazi(269, 59, 'B. Niyet (Namaza yönelme)', 10.0, KIR)
-    ic += yazi(269, 77, 'C. Secde', 10.0, LAC, ince=True)
-    return svg(360, 94, ic, 'Namazın hazırlık şartları ve rükünleri sınıflandırma tablosu.', 16)
-
-
-def rukun_uygulama_kartlari():
-    kartlar = [
-        ('1. Rükün', 'Başlama tekbiri', MAVI, MAVI_A),
-        ('2. Rükün', 'Dizleri tutup eğilme', YES, YES_A),
-        ('3. Rükün', 'Yere kapanma (2 kez)', TUR, TUR_A),
-        ('4. Rükün', 'Son oturuş', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 10.4, r)
-        ic += f'<line x1="{x + 8}" y1="32" x2="{x + 74}" y2="32" stroke="{r}" stroke-width="0.9"/>'
-        ic += yazi(x + 41, 56, alt, 9.6, LAC, ince=True)
-    return svg(360, 84, ic, 'Namazın dört rüknünü özetleyen uygulama kartları.', 15)
-
-
-def ahmet_hazirlik_listesi():
-    adimlar = [
-        ('1. Adım', 'Abdest aldı', MAVI, MAVI_A),
-        ('2. Adım', 'Temiz kıyafet giydi', YES, YES_A),
-        ('3. Adım', 'Ezanı dinledi', TUR, TUR_A),
-        ('4. Adım', 'Kâbe yönüne döndü', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 10.4, r)
-        ic += yazi(x + 41, 55, alt, 9.6, LAC, ince=True)
-    return svg(360, 84, ic, 'Namaza başlamadan önce yapılan dört hazırlık adımı.', 15)
-
-
-def ruku_secde_tesbih_karti():
-    ic = kutu(6, 6, 170, 78, YES_A, YES)
-    ic += yazi(91, 22, 'K Rüknü Tesbihi (3 Kere)', 10.3, YESIL_K)
-    ic += yazi(91, 46, '«Sübhâne rabbiye’l-azîm»', 10.1, LAC)
-    ic += yazi(91, 68, '(Büyük Rabbim noksandan uzaktır)', 9.2, LAC, ince=True)
-
-    ic += kutu(184, 6, 170, 78, TUR_A, TUR)
-    ic += yazi(269, 22, 'L Rüknü Tesbihi (3 Kere)', 10.3, TUR)
-    ic += yazi(269, 46, '«Sübhâne rabbiye’l-a’lâ»', 10.1, LAC)
-    ic += yazi(269, 68, '(Yüce Rabbim noksandan uzaktır)', 9.2, LAC, ince=True)
-    return svg(360, 90, ic, 'Rükû ve secdede okunan tesbihler ve anlamları.', 15)
-
-
-def iki_taharet_karsilastirma():
-    ic = kutu(6, 6, 170, 78, MAVI_A, MAVI)
-    ic += yazi(91, 22, 'Hadesten Taharet', 10.4, MAVI)
-    ic += yazi(91, 45, 'Hükmi / Manevi Temizlik', 9.9, LAC)
-    ic += yazi(91, 66, 'Abdest · Gusül · Teyemmüm', 9.5, MAVI, ince=True)
-
-    ic += kutu(184, 6, 170, 78, CAM_A, CAM)
-    ic += yazi(269, 22, 'Necasetten Taharet', 10.4, CAM)
-    ic += yazi(269, 45, 'Gözle Görülür Maddi Temizlik', 9.9, LAC)
-    ic += yazi(269, 66, 'Beden · Elbise · Namaz Yeri', 9.5, CAM, ince=True)
-    return svg(360, 90, ic, 'Hadesten taharet ve necasetten taharet karşılaştırması.', 15)
-
-
-def bir_rekat_akis_kartlari():
-    adimlar = [
-        ('I. Adım', 'Rükû (Eğilme)', TUR, TUR_A),
-        ('II. Adım', 'İftitah Tekbiri', MAVI, MAVI_A),
-        ('III. Adım', 'İki Kez Secde', MOR, MOR_A),
-        ('IV. Adım', 'Kıyam ve Kıraat', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 10.4, r)
-        ic += yazi(x + 41, 55, alt, 9.6, LAC, ince=True)
-    return svg(360, 84, ic, 'Bir rekâtın kılınışında yer alan dört temel rükün kartı.', 15)
-
-
-def iki_rekat_ozet_panosu():
-    ic = kutu(6, 6, 348, 80, MAVI_A, MAVI)
-    ic += yazi(180, 22, 'İki Rekâtlık Namazın Kılınış Özeti', 10.6, MAVI)
-    ic += yazi(180, 42, '• Vakit girince abdestli olarak kıbleye dönülüp niyet edilir.', 9.8, LAC, ince=True)
-    ic += yazi(180, 59, '• 1. Rekât: Tekbir → Sübhaneke, Fatiha, Sure → Rükû → 2 Secde.', 9.8, LAC, ince=True)
-    ic += yazi(180, 76, '• 2. Rekât Sonu: Tahiyyat, Salli-Barik, Rabbena → Sağa/Sola Selam.', 9.8, MAVI)
-    return svg(360, 92, ic, 'İki rekâtlık namazın kılınış aşamaları bilgi panosu.', 16)
-
-
-def secde_hadis_panosu():
-    ic = kutu(6, 6, 348, 76, TUR_A, ALTIN)
-    ic += yazi(180, 23, 'Hadis-i Şerif · Secde Bilinci', 10.5, TUR)
-    ic += yazi(180, 46, '«Kulun Rabbine en yakın olduğu an secde hâlidir;', 10.0, LAC)
-    ic += yazi(180, 65, 'öyleyse secdede çokça dua ediniz.» (Müslim, Salât, 215)', 9.7, LAC, ince=True)
-    return svg(360, 88, ic, 'Secde anının önemini bildiren hadis-i şerif kartı.', 15)
+GORSELLER = {1: '<svg viewBox="0 0 350 168" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Namazın hazırlık '
+    'şartları ve rükünleri sınıflandırma şeması."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Hazırlık Şartları (Dıştan):</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">I. İstikbal-i kıble</text><text x="11.0" y="57.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">II. Kıraat</text><text '
+    'x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">III. '
+    'Vakit</text><rect x="4" y="86" width="342" height="80" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Namazın '
+    'Rükünleri (İçten):</text><text x="11.0" y="121.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">A. İftitah tekbiri</text><text x="11.0" y="140.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">B. Niyet</text><text x="11.0" y="158.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">C. Secde</text></svg>',
+ 2: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Namazın dört rüknünü '
+    'özetleyen uygulama kartları."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Rükün</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Başlama tekbiri</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Rükün</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dizleri tutup eğilme</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. Rükün</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İki kez yere '
+    'kapanma</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Rükün</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Son oturuş</text></svg>',
+ 5: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Namaza başlamadan önce '
+    'yapılan dört hazırlık adımı."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Adım</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Abdest aldı</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Adım</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Temiz kıyafet giydi</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. Adım</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ezanı '
+    'dinledi</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Adım</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kâbe yönüne döndü</text></svg>',
+ 6: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rükû ve secdede okunan '
+    'tesbihler ve anlamları."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">K Rüknü '
+    'Tesbihi (3 Kere)</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">«Sübhâne rabbiye’l-azîm»</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Büyük Rabbim noksandan uzaktır)</text><rect x="4" y="68" width="342" '
+    'height="62" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">L Rüknü Tesbihi (3 Kere)</text><text x="11.0" y="103.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">«Sübhâne '
+    'rabbiye’l-a’lâ»</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">(Yüce Rabbim noksandan uzaktır)</text></svg>',
+ 7: '<svg viewBox="0 0 350 94" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hadesten taharet ve '
+    'necasetten taharet inceleme kartları."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Hadesten Taharet:</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Ne tür bir temizliktir, nasıl yapılır? → ?</text><rect x="4" y="49" '
+    'width="342" height="43" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">2. Necasetten Taharet:</text><text x="11.0" '
+    'y="84.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Nerelerin '
+    'hangi kirden arındırılmasıdır? → ?</text></svg>',
+ 8: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bir rekâtın kılınışında '
+    'yer alan dört temel rükün kartı."><rect x="4" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">K. Kartı</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Rükû (Eğilme)</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">L. Kartı</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İftitah Tekbiri</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">M. Kartı</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İki Kez '
+    'Secde</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">N. '
+    'Kartı</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kıyam ve Kıraat</text></svg>',
+ 9: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İki rekâtlık namazın '
+    'kılınış aşamaları bilgi panosu."><rect x="4" y="3" width="342" height="135" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">İki Rekâtlık Namazın Kılınış Özeti</text><text x="11.0" y="38.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Vakit girince abdestli olarak '
+    'kıbleye</text><text x="11.0" y="56.9" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">dönülüp niyet edilir.</text><text x="11.0" y="75.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">• 1. Rekât: Tekbir → Sübhaneke, Fatiha, Sure →</text><text x="11.0" y="93.7" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Rükû → 2 '
+    'Secde.</text><text x="11.0" y="112.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">• 2. Rekât Sonu: Tahiyyat, Salli-Barik,</text><text x="11.0" y="130.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Rabbena → Sağa/Sola Selam.</text></svg>',
+ 11: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Secde anının önemini '
+     'bildiren hadis-i şerif kartı."><rect x="4" y="3" width="342" height="80" rx="5" fill="#fff1df" stroke="#c9a227" '
+     'stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#ee7d12">Hadis-i Şerif · Secde Bilinci</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">«Kulun Rabbine en yakın olduğu an secde</text><text x="11.0" '
+     'y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">hâlidir; '
+     'öyleyse secdede çokça dua ediniz.»</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#0b2257">(Müslim, Salât, 215)</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = sart_rukun_karisik_sema()
-    s[2]['gorsel'] = rukun_uygulama_kartlari()
-    s[5]['gorsel'] = ahmet_hazirlik_listesi()
-    s[6]['gorsel'] = ruku_secde_tesbih_karti()
-    s[7]['gorsel'] = iki_taharet_karsilastirma()
-    s[8]['gorsel'] = bir_rekat_akis_kartlari()
-    s[9]['gorsel'] = iki_rekat_ozet_panosu()
-    s[11]['gorsel'] = secde_hadis_panosu()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg
