@@ -41,7 +41,7 @@ body > .alt { position:relative; background:#0B2149; color:#D7E3F5; border-top:0
 body > .alt::before { display:none; }
 body > .alt nav a { border-left:0; padding-left:0; color:#CBD9EE; transition:color .15s,transform .15s; }
 body > .alt nav a:hover { padding-left:0; color:#FFFFFF; transform:translateX(2px); text-decoration:none; }
-body .sayfa-bas:not(.ozet-bas), body .kp-hero, body .g-bas { background:radial-gradient(820px 300px at 88% 0%,color-mix(in srgb,var(--kart-zemin) 68%,transparent),transparent 72%),linear-gradient(180deg,#F2F7FF 0%,#FFFFFF 100%); border-bottom:0; }
+body .sayfa-bas:not(.ozet-bas), body .kp-hero, body .g-bas { background:radial-gradient(820px 300px at 88% 0%,color-mix(in srgb,var(--kart-zemin) 68%,transparent),transparent 72%),linear-gradient(180deg,var(--zemin-2) 0%,var(--zemin) 100%); border-bottom:0; }
 body .sayfa-bas:not(.ozet-bas) h1, body .kp-hero h1 { color:var(--metin); text-wrap:balance; }
 body .sayfa-bas:not(.ozet-bas) .dugme.ana, body .kp-actions .dugme.ana { background:#FF7A00; border:0; color:#FFFFFF; box-shadow:0 3px 0 #CC5E00; }
 body .sayfa-bas:not(.ozet-bas) .dugme.ana:hover, body .kp-actions .dugme.ana:hover { background:#F06D00; }

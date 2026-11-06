@@ -13,7 +13,7 @@ const PDF_CORS = /^https:\/\/cdn\.eba\.gov\.tr\/.+\.pdf(\?|$)/i;
 (() => {
   const l = document.createElement('link');
   l.rel = 'stylesheet';
-  l.href = '/goruntule.css?v=20261104-1';
+  l.href = '/goruntule.css?v=20261106-1';
   document.head.append(l);
 })();
 

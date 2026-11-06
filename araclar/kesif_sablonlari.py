@@ -3,7 +3,7 @@ import re
 
 CSS = '<link rel="stylesheet" href="/kesif.css?v=20261106-1">'
 JS = '<script src="/kesif.js?v=20261029-2"></script>'
-RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261106-1" media="screen">'
+RENK_CSS = '<link rel="stylesheet" href="/renkler.css?v=20261106-2" media="screen">'
 
 
 def renkli_sayfa(html, ad):
