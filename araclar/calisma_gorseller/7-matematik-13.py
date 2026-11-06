@@ -1,169 +1,109 @@
-"""7. sınıf Matematik 13. hafta görselleri (SVG; K024 insan figürsüz; K178 beyaz bantsız)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-STIL = 'width:100%;max-height:22mm;display:block;margin:1mm auto;'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""7-matematik-13 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-
-def svg(ic, etiket):
-    return f'<svg viewBox="0 0 360 115" style="{STIL}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, boy=9.0, renk=LAC, hiza='middle', ince=False):
-    t = str(metin).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{t}</text>'
-
-
-def cizgi(x1, y1, x2, y2, renk=GRI, kalin=0.65, kesik=''):
-    d = f' stroke-dasharray="{kesik}"' if kesik else ''
-    return f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{renk}" stroke-width="{kalin}"{d}/>'
-
-
-def kart4(baslik, kartlar, etiket, ana=MAVI, arka=GRI_A):
-    ic = kutu(4, 4, 352, 107, arka, ana) + yazi(180, 19, baslik, 9.4, ana)
-    palet = [(MAVI, MAVI_A), (YES, YES_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, s1, s2) in enumerate(kartlar):
-        c, a = palet[i % 4]
-        x = 9 + i * 86
-        ic += kutu(x, 26, 82, 80, a, c, 5)
-        ic += yazi(x + 41, 43, b, 8.2, c)
-        ic += cizgi(x + 7, 50, x + 75, 50, c, 0.55)
-        ic += yazi(x + 41, 69, s1, 7.6, LAC, ince=True)
-        ic += yazi(x + 41, 89, s2, 7.2, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def ikili_pano(baslik, b1, d1a, d1b, b2, d2a, d2b, etiket, c1=MAVI, a1=MAVI_A, c2=TUR, a2=TUR_A):
-    ic = kutu(4, 4, 352, 107, GRI_A, c1) + yazi(180, 19, baslik, 9.4, c1)
-    ic += kutu(10, 26, 165, 80, a1, c1, 5)
-    ic += yazi(92.5, 43, b1, 8.6, c1) + cizgi(20, 50, 165, 50, c1, 0.55)
-    ic += yazi(92.5, 69, d1a, 7.8, LAC, ince=True) + yazi(92.5, 89, d1b, 7.4, SOLUK, ince=True)
-    ic += kutu(185, 26, 165, 80, a2, c2, 5)
-    ic += yazi(267.5, 43, b2, 8.6, c2) + cizgi(195, 50, 340, 50, c2, 0.55)
-    ic += yazi(267.5, 69, d2a, 7.8, LAC, ince=True) + yazi(267.5, 89, d2b, 7.4, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def uclu_pano(baslik, uclu, etiket, ana=YES, arka=YES_A):
-    ic = kutu(4, 4, 352, 107, arka, ana) + yazi(180, 19, baslik, 9.4, ana)
-    palet = [(MAVI, MAVI_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, s1, s2) in enumerate(uclu):
-        c, a = palet[i % 3]
-        x = 10 + i * 114
-        ic += kutu(x, 26, 108, 80, a, c, 5)
-        ic += yazi(x + 54, 43, b, 8.4, c) + cizgi(x + 8, 50, x + 100, 50, c, 0.55)
-        ic += yazi(x + 54, 69, s1, 7.6, LAC, ince=True) + yazi(x + 54, 89, s2, 7.2, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def akis4(baslik, adimlar, etiket, ana=CAM):
-    ic = kutu(4, 4, 352, 107, CAM_A, ana) + yazi(180, 19, baslik, 9.4, ana)
-    palet = [(MAVI, MAVI_A), (YES, YES_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, s1, s2) in enumerate(adimlar):
-        c, a = palet[i % 4]
-        x = 8 + i * 87
-        ic += kutu(x, 26, 79, 80, a, c, 5)
-        ic += yazi(x + 39.5, 43, b, 8.0, c)
-        ic += yazi(x + 39.5, 68, s1, 7.4, LAC, ince=True)
-        ic += yazi(x + 39.5, 88, s2, 7.0, SOLUK, ince=True)
-        if i < 3:
-            ox = x + 80.5
-            ic += f'<polygon points="{ox:.1f},61 {ox+5:.1f},66 {ox:.1f},71" fill="{ana}"/>'
-    return svg(ic, etiket)
-
-
-def g1():
-    ic = kutu(4, 4, 352, 107, MAVI_A, MAVI)
-    ic += yazi(180, 20, 'GÜNLÜK OKUNAN SAYFA SAYISI NOKTA GRAFİĞİ (7 ÖĞRENCİ)', 9.2, MAVI)
-    ic += cizgi(28, 82, 332, 82, LAC, 0.75)
-    for xv, lbl in [(45, '20'), (85, '25'), (125, '30'), (205, '50'), (285, '75'), (320, '90')]:
-        ic += cizgi(xv, 79, xv, 85, LAC, 0.75) + yazi(xv, 97, lbl, 8.0, LAC)
-    noktalar = [(45, 70, MAVI), (45, 58, MAVI), (85, 70, YES), (85, 58, YES), (85, 46, YES), (125, 70, MAVI), (320, 70, KIR)]
-    for nx, ny, c in noktalar:
-        ic += f'<circle cx="{nx}" cy="{ny}" r="4.5" fill="{c}"/>'
-    ic += yazi(85, 34, 'Yığılma Bölgesi (20–30)', 7.8, YES)
-    ic += yazi(295, 52, 'Aykırı Nokta: 90!', 8.0, KIR)
-    return svg(ic, 'Günlük okunan sayfa sayısı nokta grafiği ve uç değer')
-
-
-def g2():
-    return uclu_pano('SPOR KULÜBÜ BRANŞ DAĞILIMI (TOPLAM 120 ÖĞRENCİ)', [
-        ('Yüzme: 30 Öğrenci', '120’de 30 (Çeyrek)', 'Merkez Açı: 90°'),
-        ('Basketbol: 60 Öğrenci', '120’de 60 (Yarım)', 'Merkez Açı: 180°'),
-        ('Okçuluk: 24 Öğrenci', '120’de 24 (Beşte bir)', 'Merkez Açı: 72°')
-    ], 'Spor kulübü branş sayıları ve merkez açıları')
-
-
-def g4():
-    ic = kutu(4, 4, 352, 107, CAM_A, CAM)
-    ic += yazi(180, 19, '5 GÜNLÜK ÖĞLE SICAKLIĞI ÇİZGİ GRAFİĞİ (°C)', 9.2, CAM)
-    ic += cizgi(40, 90, 330, 90, LAC, 0.7) + cizgi(40, 28, 40, 90, LAC, 0.7)
-    pts = [(65, 68, 'Pzt', '18°'), (125, 44, 'Sal', '24°'), (185, 76, 'Çar', '16°'), (245, 36, 'Per', '28°'), (305, 84, 'Cum', '14°')]
-    poly = ' '.join(f'{x},{y}' for x, y, _, _ in pts)
-    ic += f'<polyline points="{poly}" fill="none" stroke="{MAVI}" stroke-width="0.75"/>'
-    for x, y, g, v in pts:
-        ic += f'<circle cx="{x}" cy="{y}" r="3.6" fill="{KIR}"/>'
-        ic += yazi(x, y - 6, v, 7.8, LAC) + yazi(x, 103, g, 7.8, SOLUK, ince=True)
-    return svg(ic, 'Beş günlük öğle sıcaklığı çizgi grafiği')
-
-
-def g5():
-    return akis4('ORTALAMA MUTLAK SAPMA (OMS) HESAPLAMA ZİNCİRİ', [
-        ('1. Ortalama', 'Verileri topla', 'Veri sayısına böl'),
-        ('2. Uzaklıklar', '|Veri - Ortalama|', 'Pozitif farkları bul'),
-        ('3. Fark Toplamı', 'Tüm mutlak', 'uzaklıkları topla'),
-        ('4. OMS Değeri', 'Toplam uzaklığı', 'veri sayısına böl')
-    ], 'Ortalama mutlak sapma adımları')
-
-
-def g6():
-    return ikili_pano('OKÇULUK ATIŞ PUANLARI KARŞILAŞTIRMASI (5 ATIŞ)',
-        'Kaan’ın Puanları: 8, 9, 10, 11, 12', 'Aritmetik Ortalama = 10 puan', 'Uzaklıklar: 2, 1, 0, 1, 2 (Toplam = 6)',
-        'Mert’in Puanları: 5, 7, 10, 13, 15', 'Aritmetik Ortalama = 10 puan', 'Uzaklıklar: 5, 3, 0, 3, 5 (Toplam = 16)',
-        'Kaan ve Mert okçuluk puanları karşılaştırması', YES, YES_A, TUR, TUR_A)
-
-
-def g8():
-    return uclu_pano('7-A SINIFI BOY UZUNLUĞU GRUPLANDIRILMIŞ SIKLIK TABLOSU', [
-        ('140–149 cm Aralığı', 'Sıklık (Frekans): 7', '150 cm altı grup'),
-        ('150–159 cm Aralığı', 'Sıklık (Frekans): 11', 'Orta boy grubu'),
-        ('160–169 cm Aralığı', 'Sıklık (Frekans): 6', 'En uzun boy grubu')
-    ], 'Boy uzunluğu gruplandırılmış sıklık tablosu', MAVI, MAVI_A)
-
-
-def g9():
-    ic = kutu(4, 4, 352, 107, MOR_A, MOR)
-    ic += yazi(180, 19, 'SINIF KİTAPLIĞI DAİRE GRAFİĞİ (TOPLAM 180 KİTAP)', 9.2, MOR)
-    ic += f'<circle cx="72" cy="66" r="34" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="0.75"/>'
-    ic += f'<path d="M72,66 L72,32 A34,34 0 0,1 106,66 Z" fill="{YES_A}" stroke="{YES}" stroke-width="0.75"/>'
-    ic += cizgi(72, 66, 38, 66, MOR, 0.7) + yazi(85, 55, '90°', 7.8, YES) + yazi(58, 82, '150°', 7.8, MAVI)
-    ic += kutu(130, 30, 214, 72, GRI_A, MOR, 5)
-    ic += yazi(237, 48, 'Roman: 150°  ·  Şiir ve Öykü: 120°', 8.2, LAC)
-    ic += yazi(237, 68, 'Bilim Kitapları Merkez Açısı = 360° - 270° = 90°', 8.0, YES)
-    ic += yazi(237, 88, 'Toplam Kitap = 180 adet (360° tam daire)', 7.6, SOLUK, ince=True)
-    return svg(ic, '180 kitaplık daire grafiğinde bilim kitapları merkez açısı')
-
-
-def g11():
-    return ikili_pano('6 ÇALIŞANIN AYLIK MAAŞ DAĞILIMI (BİN TL)',
-        '5 Çalışanın Maaşları', '22 · 24 · 25 · 25 · 26 bin TL', 'Birbirine çok yakın dengeli veriler',
-        '6. Çalışan (Üst Yönetici)', '128 bin TL (Aşırı Uç Değer!)', 'Ortalamayı yukarı çeken aykırı veri',
-        'Maaş verisinde uç değer etkisi', MAVI, MAVI_A, KIR, KIR_A)
+GORSELLER = {
+    1: '<svg viewBox="0 0 350 86" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Günlük okunan sayfa sayısı nokta grafiği ve uç değer">'
+       '<rect x="4" y="3" width="342" height="80" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/>'
+       '<text x="12.0" y="20.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Günlük Okunan Sayfa Nokta Grafiği (7 Öğrenci)</text>'
+       '<text x="12.0" y="39.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">20 syf: ● ●  ·  25 syf: ● ● ●  ·  30 syf: ●</text>'
+       '<text x="12.0" y="58.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">90 syf: ● (Aykırı / Uç Değer!)</text>'
+       '<text x="12.0" y="77.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="600" fill="#12a150">Sıralı Veriler: 20, 20, 25, 25, 25, 30, 90</text></svg>',
+    2: '<svg viewBox="0 0 350 181" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Spor kulübü branş '
+       'sayıları ve merkez açıları"><rect x="4" y="3" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" '
+       'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+       'font-weight="700" fill="#2451d6">Yüzme: 30 Öğrenci</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+       'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">120’de 30 (Çeyrek) · Merkez Açı: 90°</text><rect x="4" y="50" '
+       'width="342" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" '
+       'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">SPOR KULÜBÜ BRANŞ DAĞILIMI '
+       '(TOPLAM</text><text x="11.0" y="84.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+       'fill="#12a150">120 ÖĞRENCİ)</text><text x="11.0" y="103.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+       'font-weight="700" fill="#d97706">Basketbol: 60 Öğrenci</text><text x="11.0" y="122.4" text-anchor="start" font-family="Noto Sans, '
+       'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">120’de 60 (Yarım) · Merkez Açı: 180°</text><rect x="4" y="135" '
+       'width="342" height="44" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="151.0" text-anchor="start" '
+       'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Okçuluk: 24 Öğrenci</text><text x="11.0" '
+       'y="169.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">120’de 24 '
+       '(Beşte bir) · Merkez Açı: 72°</text></svg>',
+    4: '<svg viewBox="0 0 350 66" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Beş günlük öğle sıcaklığı çizgi grafiği">'
+       '<rect x="4" y="3" width="342" height="60" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/>'
+       '<text x="12.0" y="20.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">5 Günlük Öğle Sıcaklığı Çizgi Grafiği (°C)</text>'
+       '<text x="12.0" y="39.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Pzt: 18 °C  ·  Sal: 22 °C  ·  Çar: 16 °C</text>'
+       '<text x="12.0" y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Per: 28 °C  ·  Cum: 16 °C</text></svg>',
+ 5: '<svg viewBox="0 0 350 207" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ortalama mutlak sapma '
+    'adımları"><rect x="4" y="3" width="342" height="23" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan '
+    'font-weight="700" fill="#2451d6">1. Ortalama:</tspan> Verileri topla · Veri sayısına böl</text><rect x="4" y="29" width="342" '
+    'height="82" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="45.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">ORTALAMA MUTLAK SAPMA (OMS)</text><text x="11.0" y="63.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">HESAPLAMA '
+    'ZİNCİRİ</text><text x="11.0" y="82.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">2. Uzaklıklar</text><text x="11.0" y="101.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">|Veri - Ortalama| · Pozitif farkları bul</text><rect x="4" y="114" width="342" '
+    'height="44" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="130.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. Fark Toplamı</text><text x="11.0" '
+    'y="148.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tüm mutlak '
+    'uzaklıkları topla</text><rect x="4" y="161" width="342" height="44" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="11.0" y="177.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. OMS '
+    'Değeri</text><text x="11.0" y="195.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Toplam uzaklığı veri sayısına böl</text></svg>',
+ 6: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kaan ve Mert okçuluk '
+    'puanları karşılaştırması"><rect x="4" y="3" width="342" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">OKÇULUK ATIŞ PUANLARI</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">KARŞILAŞTIRMASI (5 ATIŞ)</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Kaan’ın Puanları: 8, 9, '
+    '10, 11, 12</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Aritmetik Ortalama = 10 puan</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Uzaklıklar: 2, 1, 0, 1, 2 (Toplam = 6)</text><rect x="4" y="107" width="342" '
+    'height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="123.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Mert’in Puanları: 5, 7, 10, 13, '
+    '15</text><text x="11.0" y="141.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Aritmetik Ortalama = 10 puan</text><text x="11.0" y="160.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Uzaklıklar: 5, 3, 0, 3, 5 (Toplam = 16)</text></svg>',
+ 8: '<svg viewBox="0 0 350 181" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Boy uzunluğu '
+    'gruplandırılmış sıklık tablosu"><rect x="4" y="3" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">140–149 cm Aralığı</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sıklık (Frekans): 7 · 150 cm altı grup</text><rect x="4" y="50" '
+    'width="342" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">7-A SINIFI BOY UZUNLUĞU</text><text x="11.0" '
+    'y="84.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">GRUPLANDIRILMIŞ '
+    'SIKLIK TABLOSU</text><text x="11.0" y="103.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">150–159 cm Aralığı</text><text x="11.0" y="122.4" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sıklık (Frekans): 11 · Orta boy grubu</text><rect x="4" y="135" '
+    'width="342" height="44" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="151.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">160–169 cm Aralığı</text><text x="11.0" '
+    'y="169.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sıklık '
+    '(Frekans): 6 · En uzun boy grubu</text></svg>',
+ 9: '<svg viewBox="0 0 350 153" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="180 kitaplık daire '
+    'grafiğinde bilim kitapları merkez açısı"><rect x="4" y="3" width="342" height="82" rx="5" fill="#eef1f6" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Roman: 150° · Şiir ve Öykü: 120°</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Bilim Kitapları Merkez Açısı = 360° - 270° =</text><text '
+    'x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">90°</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#5b6479">Toplam Kitap = 180 adet (360° tam daire)</text><rect x="4" y="88" width="342" height="63" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">SINIF KİTAPLIĞI DAİRE GRAFİĞİ (TOPLAM</text><text x="11.0" y="122.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">180 KİTAP)</text><text '
+    'x="11.0" y="141.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">90° · '
+    '150°</text></svg>',
+ 11: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maaş verisinde uç değer '
+     'etkisi"><rect x="4" y="3" width="342" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+     'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">6 ÇALIŞANIN '
+     'AYLIK MAAŞ DAĞILIMI (BİN</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">TL)</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#2451d6">5 Çalışanın Maaşları</text><text x="11.0" y="75.4" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">22 · 24 · 25 · 25 · 26 bin TL</text><text '
+     'x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#5b6479">Birbirine çok yakın dengeli veriler</text><rect x="4" y="107" width="342" height="63" rx="5" fill="#fdeaea" '
+     'stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" y="123.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#d63a3a">6. Çalışan (Üst Yönetici)</text><text x="11.0" y="141.8" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">128 bin TL (Aşırı Uç Değer!)</text><text '
+     'x="11.0" y="160.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#5b6479">Ortalamayı yukarı çeken aykırı veri</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[4]['gorsel'] = g4()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[8]['gorsel'] = g8()
-    s[9]['gorsel'] = g9()
-    s[11]['gorsel'] = g11()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

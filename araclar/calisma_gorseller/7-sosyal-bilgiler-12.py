@@ -1,129 +1,93 @@
-"""7. sınıf Sosyal Bilgiler 12. hafta (Osmanlı Devleti’ni Cihan Devleti Yapan Politikalar ve Deniz Hâkimiyeti) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178); Noto Sans 12px."""
+"""7-sosyal-bilgiler-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=21):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def bosna_ahidnamesi_karti():
-    ic = kutu(6, 6, 348, 103, TUR_A, TUR)
-    ic += yazi(180, 26, 'Fatih Sultan Mehmed’in Bosna Ahidnamesi (1463)', TUR, kalin=True)
-    ic += yazi(180, 52, '«Bosna rahiplerine buyurdum ki; kimse onlara ve kiliselerine', LAC)
-    ic += yazi(180, 74, 'engel olmayıp incitmeye, canları ve malları güvencem altındadır.»', LAC, kalin=True)
-    ic += yazi(180, 96, 'Temel İlkeler: Gönül Kazanma (Hoşgörü) + İnanç Özgürlüğü', MAVI, kalin=True)
-    return svg(ic, 'Fatih Sultan Mehmed’in Bosna Ahidnamesi bilgi kartı.')
-
-
-def deniz_fetihleri_panosu():
-    kartlar = [
-        (6, 6, '1. Kırım’ın Fethi (1475)', 'Karadeniz · İpek Yolu', MAVI, MAVI_A),
-        (184, 6, '2. Preveze Zaferi (1538)', 'Barbaros · Akdeniz Üstünlüğü', CAM, CAM_A),
-        (6, 60, '3. Mısır Seferi (1517)', 'Baharat Yolu · Kızıldeniz', TUR, TUR_A),
-        (184, 60, '4. Kıbrıs’ın Fethi (1571)', 'Doğu Akdeniz Güvenliği', YES, YES_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Osmanlı deniz fetihleri ve ticaret yolları panosu.')
-
-
-def iskan_politikasi_semasi():
-    ic = kutu(6, 6, 172, 103, YES_A, YES)
-    ic += yazi(92, 26, 'İskânın İlkeleri', YES, kalin=True)
-    ic += yazi(92, 52, '• Konargöçer Türkmenler seçilir', LAC)
-    ic += yazi(92, 74, '• Göç edenlere tohum/vergi desteği', LAC)
-    ic += yazi(92, 95, '• 5 yıl geri dönmeme kuralı', YES, kalin=True)
-    ic += kutu(184, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(269, 26, 'İskânın Sonuçları', MAVI, kalin=True)
-    ic += yazi(269, 52, '• Balkanlar Türkleşti ve şenlendi', LAC)
-    ic += yazi(269, 74, '• Fetihler kalıcı hâle geldi', LAC)
-    ic += yazi(269, 95, '• Yerli halka baskı yapılmadı!', KIR, kalin=True)
-    return svg(ic, 'Osmanlı iskân politikasının ilkeleri ve sonuçları şeması.')
-
-
-def yavuz_seferleri_karti():
-    ic = kutu(6, 6, 172, 103, MOR_A, MOR)
-    ic += yazi(92, 26, 'Doğu ve Anadolu Siyaseti', MOR, kalin=True)
-    ic += yazi(92, 54, '• Çaldıran (1514): Doğu güvenliği', LAC)
-    ic += yazi(92, 82, '• Turnadağ (1515): Siyasi birlik', MOR, kalin=True)
-    ic += kutu(184, 6, 170, 103, TUR_A, TUR)
-    ic += yazi(269, 26, 'Mısır Seferi (1516-1517)', TUR, kalin=True)
-    ic += yazi(269, 52, '• Mercidabık ve Ridaniye', LAC)
-    ic += yazi(269, 74, '• Halifelik Osmanlıya geçti', LAC)
-    ic += yazi(269, 95, '• Baharat Yolu denetim altına alındı', YES, kalin=True)
-    return svg(ic, 'Yavuz Sultan Selim dönemi doğu ve Mısır seferleri kartı.')
-
-
-def anadolu_beylikleri_tablosu():
-    ic = kutu(6, 6, 348, 103, CAM_A, CAM)
-    ic += yazi(180, 24, 'Anadolu Türk Siyasi Birliğini Sağlama Yöntemleri', CAM, kalin=True)
-    ic += yazi(180, 50, '• Karesioğulları: İlk katılan denizci beylik (Orhan Bey)', LAC)
-    ic += yazi(180, 74, '• Germiyanoğulları: Çeyiz (Evlilik) yoluyla (Kütahya ve çevresi)', MAVI, kalin=True)
-    ic += yazi(180, 96, '• Hamitoğulları: Satın alma (Altın/Para) yoluyla (Isparta ve çevresi)', YES, kalin=True)
-    return svg(ic, 'Anadolu beyliklerinin Osmanlıya katılma yöntemleri kartı.')
-
-
-def denizcilik_kronoloji_kartlari():
-    adimlar = [
-        (6, '1345', 'Karesi Donanması', MAVI, MAVI_A),
-        (94, '1475', 'Kırım’ın Fethi', YES, YES_A),
-        (182, '1538', 'Preveze Zaferi', TUR, TUR_A),
-        (270, '1571', 'Kıbrıs’ın Fethi', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, yil, olay, r, z in adimlar:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 36, yil, r, kalin=True)
-        ic += yazi(x + 42, 70, olay, LAC, kalin=True)
-    return svg(ic, 'Osmanlı denizcilik tarihindeki dört önemli gelişmenin kronolojisi.')
-
-
-def istanbul_antlasmasi_karti():
-    ic = kutu(6, 6, 348, 103, MAVI_A, MAVI)
-    ic += yazi(180, 26, '1533 İstanbul (İbrahim Paşa) Antlaşması Maddesi', MAVI, kalin=True)
-    ic += yazi(180, 56, '«Avusturya Arşidükü (Kralı), protokol bakımından', LAC, kalin=True)
-    ic += yazi(180, 80, 'Osmanlı Sadrazamına (Veziriazamına) eşit sayılacaktır.»', KIR, kalin=True)
-    return svg(ic, '1533 İstanbul Antlaşması protokol maddesi bilgi kartı.')
-
-
-def cihan_devleti_sutunlari():
-    sutunlar = [
-        (6, 'Gaza & Cihat', 'Adalet İdeali', TUR, TUR_A),
-        (94, 'İstimalet', 'Hoşgörü & Güven', YES, YES_A),
-        (182, 'İskân & İmar', 'Kalıcı Yerleşim', MAVI, MAVI_A),
-        (270, 'Millet Sistemi', 'Din Özgürlüğü', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, b1, b2, r, z in sutunlar:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 36, b1, r, kalin=True)
-        ic += yazi(x + 42, 70, b2, LAC, kalin=True)
-    return svg(ic, 'Osmanlı Devleti’ni cihan devleti yapan dört temel sütun.')
+GORSELLER = {1: '<svg viewBox="0 0 350 162" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fatih Sultan Mehmed’in '
+    'Bosna Ahidnamesi bilgi kartı."><rect x="4" y="3" width="342" height="157" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Fatih Sultan Mehmed’in Bosna Ahidnamesi</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">(1463)</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«Bosna rahiplerine '
+    'buyurdum ki; kimse</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">onlara ve kiliselerine engel olmayıp</text><text x="11.0" y="94.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">incitmeye, canları ve malları '
+    'güvencem</text><text x="11.0" y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">altındadır.»</text><text x="11.0" y="131.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Temel İlkeler: Gönül Kazanma (Hoşgörü) +</text><text x="11.0" y="150.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">İnanç Özgürlüğü</text></svg>',
+ 2: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Osmanlı deniz fetihleri '
+    've ticaret yolları panosu."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Kırım’ın Fethi</text><text x="87.5" y="49.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">(1475)</text><text x="87.5" y="68.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Karadeniz · İpek Yolu</text><rect x="179" '
+    'y="3" width="167" height="84" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="262.5" y="21.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">2. Preveze '
+    'Zaferi</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0e8fa8">(1538)</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Barbaros · Akdeniz</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Üstünlüğü</text><rect x="4" y="91" width="167" height="84" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="118.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. Mısır Seferi (1517)</text><text x="87.5" y="137.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Baharat Yolu '
+    '·</text><text x="87.5" y="156.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kızıldeniz</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">4. Kıbrıs’ın Fethi</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">(1571)</text><text x="262.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Doğu Akdeniz</text><text x="262.5" y="165.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Güvenliği</text></svg>',
+ 5: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Osmanlı iskân '
+    'politikasının ilkeleri ve sonuçları şeması."><rect x="4" y="3" width="342" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">İskânın İlkeleri</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Konargöçer Türkmenler seçilir</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Göç edenlere '
+    'tohum/vergi desteği</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">• 5 yıl geri dönmeme kuralı</text><rect x="4" y="88" width="342" height="82" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">İskânın Sonuçları</text><text x="11.0" y="122.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Balkanlar Türkleşti ve şenlendi</text><text '
+    'x="11.0" y="141.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• '
+    'Fetihler kalıcı hâle geldi</text><text x="11.0" y="160.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">• Yerli halka baskı yapılmadı!</text></svg>',
+ 6: '<svg viewBox="0 0 350 153" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yavuz Sultan Selim '
+    'dönemi doğu ve Mısır seferleri kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Doğu ve Anadolu Siyaseti</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Çaldıran (1514): Doğu güvenliği</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">• Turnadağ (1515): Siyasi '
+    'birlik</text><rect x="4" y="69" width="342" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Mısır Seferi '
+    '(1516-1517)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">• Mercidabık ve Ridaniye</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Halifelik Osmanlıya geçti</text><text x="11.0" y="141.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">• Baharat Yolu denetim '
+    'altına alındı</text></svg>',
+ 8: '<svg viewBox="0 0 350 92" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Osmanlı denizcilik '
+    'tarihindeki dört önemli gelişmenin kronolojisi."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1345 · Karesi</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Donanması</text><rect x="179" y="3" width="167" height="46" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="30.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">1475 · Kırım’ın Fethi</text><rect x="4" y="53" width="167" height="36" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="75.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">1538 · Preveze Zaferi</text><rect x="179" y="53" width="167" height="36" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="75.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">1571 · Kıbrıs’ın Fethi</text></svg>',
+ 9: '<svg viewBox="0 0 350 124" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="1533 İstanbul Antlaşması '
+    'protokol maddesi bilgi kartı."><rect x="4" y="3" width="342" height="119" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1533 İstanbul (İbrahim Paşa) Antlaşması</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Maddesi</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">«Avusturya Arşidükü '
+    '(Kralı), protokol</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">bakımından</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d63a3a">Osmanlı Sadrazamına (Veziriazamına) eşit</text><text x="11.0" y="113.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d63a3a">sayılacaktır.»</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = bosna_ahidnamesi_karti()
-    s[2]['gorsel'] = deniz_fetihleri_panosu()
-    s[5]['gorsel'] = iskan_politikasi_semasi()
-    s[6]['gorsel'] = yavuz_seferleri_karti()
-    s[7]['gorsel'] = anadolu_beylikleri_tablosu()
-    s[8]['gorsel'] = denizcilik_kronoloji_kartlari()
-    s[9]['gorsel'] = istanbul_antlasmasi_karti()
-    s[11]['gorsel'] = cihan_devleti_sutunlari()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

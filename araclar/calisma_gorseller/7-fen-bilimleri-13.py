@@ -1,137 +1,109 @@
-"""7. sınıf Fen Bilimleri 13. hafta (Kanın Yapısı, Kan Grupları ve Dolaşım Sistemi Sağlığı) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178); Noto Sans 12px."""
+"""7-fen-bilimleri-13 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=21):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def santrifuj_tupu_modeli():
-    ic = kutu(6, 6, 172, 103, TUR_A, TUR)
-    ic += yazi(92, 24, '1. Üst Katman (%55)', TUR, kalin=True)
-    ic += yazi(92, 52, 'Açık Sarı Sıvı Kısım', LAC, kalin=True)
-    ic += yazi(92, 80, '%90 Su + %10 Besin, Hormon, Atık', LAC)
-    ic += kutu(184, 6, 170, 103, KIR_A, KIR)
-    ic += yazi(269, 24, '2. Alt Katman (%45)', KIR, kalin=True)
-    ic += yazi(269, 52, 'Çöken Hücresel Kısım', LAC, kalin=True)
-    ic += yazi(269, 80, 'Alyuvar + Akyuvar + Kan Pulcukları', KIR)
-    return svg(ic, 'Santrifüj tüpünde %55 plazma ve %45 kan hücreleri ayrımı.')
-
-
-def kan_grubu_kartlari():
-    kartlar = [
-        (6, 6, '1. A Rh(+) Grubu', 'Protein: A ve Rh(+)', KIR, KIR_A),
-        (184, 6, '2. B Rh(-) Grubu', 'Protein: Yalnız B (Rh Yok)', MAVI, MAVI_A),
-        (6, 60, '3. AB Rh(+) Grubu', 'Protein: A + B + Rh(+)', MOR, MOR_A),
-        (184, 60, '4. 0 Rh(-) Grubu', 'Protein: A, B ve Rh Yok', YES, YES_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Dört kan grubunun alyuvar zarı protein özellikleri.')
-
-
-def kan_hucreleri_mikroskop():
-    kartlar = [
-        (6, 'X Hücresi', 'Kırmızı · Disk Şekilli', 'O₂ ve CO₂ Taşır (En Çok)', KIR, KIR_A),
-        (124, 'Y Hücresi', 'Beyaz · Çekirdekli', 'Mikroplarla Savaşır', MAVI, MAVI_A),
-        (242, 'Z Parçacığı', 'Çok Küçük · Renksiz', 'Kanı Pıhtılaştırır', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, b1, b2, b3, r, z in kartlar:
-        ic += kutu(x, 6, 112, 103, z, r)
-        ic += yazi(x + 56, 26, b1, r, kalin=True)
-        ic += yazi(x + 56, 56, b2, LAC, kalin=True)
-        ic += yazi(x + 56, 84, b3, r)
-    return svg(ic, 'X, Y ve Z kan hücrelerinin yapı ve görev kartları.')
-
-
-def kan_bagisi_kriter_tablosu():
-    kartlar = [
-        (6, 6, '1. Efe (15 Yaş, 58 kg)', 'Yaş Sınırı: 18–65 Yaş!', KIR, KIR_A),
-        (184, 6, '2. Zeynep (29 Yaş, 62 kg)', 'Sağlıklı · Tüm Şartlara Uygun', YES, YES_A),
-        (6, 60, '3. Selin (24 Yaş, 44 kg)', 'Kilo Sınırı: En Az 50 kg!', TUR, TUR_A),
-        (184, 60, '4. Ahmet (72 Yaş, 70 kg)', 'Yaş > 65 ve Bulaşıcı Hastalık', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Kan bağışı yaş, kilo ve sağlık kriterleri karşılaştırma kartları.')
-
-
-def enfeksiyon_akyuvar_karti():
-    ic = kutu(6, 6, 172, 103, YES_A, YES)
-    ic += yazi(92, 26, 'Sağlıklı Birey Kan Sayımı', YES, kalin=True)
-    ic += yazi(92, 56, 'Akyuvar: 6.000 / mm³ (Normal)', LAC, kalin=True)
-    ic += yazi(92, 84, 'Vücutta aktif enfeksiyon yok', LAC)
-    ic += kutu(184, 6, 170, 103, KIR_A, KIR)
-    ic += yazi(269, 26, 'Boğaz Enfeksiyonlu Hasta', KIR, kalin=True)
-    ic += yazi(269, 56, 'Akyuvar: 15.500 / mm³ (Yüksek!)', KIR, kalin=True)
-    ic += yazi(269, 84, 'Savunma sistemi aktifleşti!', LAC, kalin=True)
-    return svg(ic, 'Sağlıklı birey ve enfeksiyonlu hastada akyuvar sayısı karşılaştırması.')
-
-
-def pihtilasma_adimlari():
-    adimlar = [
-        (6, '1. Kesik', 'Damar Yaralanır', KIR, KIR_A),
-        (94, '2. Göç', 'Pulcuklar Toplanır', TUR, TUR_A),
-        (182, '3. Ağ', 'Lifli Pıhtı Oluşur', MOR, MOR_A),
-        (270, '4. Onarım', 'Kanama Durur', YES, YES_A),
-    ]
-    ic = ''
-    for x, b1, b2, r, z in adimlar:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 36, b1, r, kalin=True)
-        ic += yazi(x + 42, 70, b2, LAC, kalin=True)
-    return svg(ic, 'Kan pulcuklarının pıhtılaşma oluşturma aşamaları.')
-
-
-def rakim_alyuvar_grafigi():
-    ic = kutu(6, 6, 348, 103, CAM_A, CAM)
-    ic += yazi(180, 22, 'Yüksek Rakıma Çıkıldığında X Hücresi Sayısı', LAC, kalin=True)
-    ic += f'<rect x="65" y="54" width="75" height="34" rx="4" fill="{MAVI}" />'
-    ic += yazi(102, 103, '0 m (Deniz Seviyesi)', MAVI, kalin=True)
-    ic += f'<rect x="215" y="30" width="75" height="58" rx="4" fill="{KIR}" />'
-    ic += yazi(252, 103, '3000 m (Dağ Zirvesi — O₂ Az)', KIR, kalin=True)
-    return svg(ic, 'Deniz seviyesinden 3000 metre yüksekliğe çıkıldığında alyuvar artışı.')
-
-
-def kizilay_afis_karti():
-    ic = kutu(6, 6, 172, 103, KIR_A, KIR)
-    ic += yazi(92, 26, 'TÜRK KIZILAYI', KIR, kalin=True)
-    ic += yazi(92, 56, '«1 Ünite Kan = 3 Can!»', LAC, kalin=True)
-    ic += yazi(92, 84, 'Alyuvar + Plazma + Trombosit', KIR)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 26, 'Kan Bağışının Etkisi', YES, kalin=True)
-    ic += yazi(269, 56, 'Hayat Kurtarır & Dayanışma Sağlar', LAC, kalin=True)
-    ic += yazi(269, 84, 'Kan Hücrelerini Yeniler', YES, kalin=True)
-    return svg(ic, 'Türk Kızılayı kan bağışı ve toplumsal dayanışma kartı.')
+GORSELLER = {1: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Santrifüj tüpünde %55 '
+    'plazma ve %45 kan hücreleri ayrımı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">1. Üst Katman (%55)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Açık Sarı Sıvı Kısım</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">%90 Su + %10 Besin, '
+    'Hormon, Atık</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">2. Alt '
+    'Katman (%45)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Çöken Hücresel Kısım</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#d63a3a">Alyuvar + Akyuvar + Kan Pulcukları</text></svg>',
+ 2: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört kan grubunun '
+    'alyuvar zarı protein özellikleri."><rect x="4" y="3" width="167" height="65" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">1. A Rh(+) Grubu</text><text x="87.5" y="49.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Protein: A ve Rh(+)</text><rect x="179" y="3" width="167" height="65" '
+    'rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. B Rh(-) Grubu</text><text x="262.5" y="40.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Protein: Yalnız B (Rh</text><text x="262.5" '
+    'y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Yok)</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="87.5" y="99.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">3. AB Rh(+) Grubu</text><text x="87.5" y="118.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Protein: A + B + Rh(+)</text><rect x="179" y="72" width="167" '
+    'height="65" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="90.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">4. 0 Rh(-) Grubu</text><text x="262.5" '
+    'y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Protein: A, B '
+    've Rh</text><text x="262.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Yok</text></svg>',
+ 5: '<svg viewBox="0 0 350 162" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="X, Y ve Z kan '
+    'hücrelerinin yapı ve görev kartları."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">X Hücresi</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Kırmızı · Disk Şekilli</text><text x="11.0" y="56.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d63a3a">O₂ ve CO₂ Taşır (En Çok)</text><rect x="4" '
+    'y="69" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="85.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Y Hücresi · Beyaz · '
+    'Çekirdekli</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#2451d6">Mikroplarla Savaşır</text><rect x="4" y="116" width="342" height="44" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="132.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">Z Parçacığı · Çok Küçük · Renksiz</text><text x="11.0" y="150.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">Kanı '
+    'Pıhtılaştırır</text></svg>',
+ 6: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kan bağışı yaş, kilo ve '
+    'sağlık kriterleri karşılaştırma kartları."><rect x="4" y="3" width="167" height="84" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">1. Efe (15 Yaş, 58 kg)</text><text x="87.5" y="58.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yaş Sınırı: 18–65 Yaş!</text><rect x="179" y="3" width="167" '
+    'height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Zeynep (29 Yaş,</text><text x="262.5" '
+    'y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">62 '
+    'kg)</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sağlıklı · Tüm</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Şartlara Uygun</text><rect x="4" y="91" width="167" height="84" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. Selin (24 Yaş, 44</text><text x="87.5" y="128.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">kg)</text><text x="87.5" '
+    'y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kilo Sınırı: '
+    'En Az 50</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">kg!</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Ahmet (72 Yaş, 70</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">kg)</text><text x="262.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yaş &gt; 65 ve Bulaşıcı</text><text x="262.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Hastalık</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sağlıklı birey ve '
+    'enfeksiyonlu hastada akyuvar sayısı karşılaştırması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Sağlıklı Birey Kan Sayımı</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Akyuvar: 6.000 / mm³ (Normal)</text><text '
+    'x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Vücutta '
+    'aktif enfeksiyon yok</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Boğaz Enfeksiyonlu Hasta</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Akyuvar: 15.500 / mm³ (Yüksek!)</text><text x="11.0" y="122.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Savunma sistemi '
+    'aktifleşti!</text></svg>',
+ 8: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kan pulcuklarının '
+    'pıhtılaşma oluşturma aşamaları."><rect x="4" y="3" width="167" height="46" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">1. Kesik</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Damar Yaralanır</text><rect x="179" y="3" width="167" height="46" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Göç</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Pulcuklar Toplanır</text><rect x="4" y="53" '
+    'width="167" height="46" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">3. Ağ</text><text x="87.5" y="89.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Lifli Pıhtı '
+    'Oluşur</text><rect x="179" y="53" width="167" height="46" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" '
+    'y="71.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">4. '
+    'Onarım</text><text x="262.5" y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Kanama Durur</text></svg>',
+ 9: '<svg viewBox="0 0 350 68" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deniz seviyesinden 3000 '
+    'metre yüksekliğe çıkıldığında alyuvar artışı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Yüksek Rakıma Çıkıldığında X Hücresi Sayısı</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">0 m (Deniz Seviyesi)</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">3000 m (Dağ '
+    'Zirvesi — O₂ Az)</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = santrifuj_tupu_modeli()
-    s[2]['gorsel'] = kan_grubu_kartlari()
-    s[5]['gorsel'] = kan_hucreleri_mikroskop()
-    s[6]['gorsel'] = kan_bagisi_kriter_tablosu()
-    s[7]['gorsel'] = enfeksiyon_akyuvar_karti()
-    s[8]['gorsel'] = pihtilasma_adimlari()
-    s[9]['gorsel'] = rakim_alyuvar_grafigi()
-    s[11]['gorsel'] = kizilay_afis_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

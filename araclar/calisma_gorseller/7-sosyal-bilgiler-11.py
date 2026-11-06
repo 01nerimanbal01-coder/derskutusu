@@ -1,134 +1,111 @@
-"""7. sınıf Sosyal Bilgiler 11. hafta (İstanbul’un Fethi ve Yükselme Dönemi) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178); Noto Sans 12px."""
+"""7-sosyal-bilgiler-11 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="12"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=21):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def bogazkesen_hazirlik():
-    ic = kutu(6, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(91, 26, 'Rumeli (Boğazkesen) Hisarı', MAVI, kalin=True)
-    ic += yazi(91, 52, 'Anadolu Hisarı karşısına', LAC)
-    ic += yazi(91, 76, 'Karadeniz yardımlarını', KIR, kalin=True)
-    ic += yazi(91, 96, 'kesmek için inşa edildi', LAC)
-    ic += kutu(184, 6, 170, 103, TUR_A, TUR)
-    ic += yazi(269, 26, 'Diğer Fetih Hazırlıkları', TUR, kalin=True)
-    ic += yazi(269, 52, '• Dev Şahi topları dökümü', LAC)
-    ic += yazi(269, 76, '• 400 parçalık donanma', LAC)
-    ic += yazi(269, 96, '• 72 gemi karadan Haliç’e', YES, kalin=True)
-    return svg(ic, 'İstanbul kuşatması öncesi Rumeli Hisarı ve askerî hazırlık şeması.')
-
-
-def fetih_sonuclari_panosu():
-    kartlar = [
-        (6, 6, '1. Toprak Bütünlüğü', 'Anadolu ve Rumeli birleşti', MAVI, MAVI_A),
-        (184, 6, '2. Şahi Topları Etkisi', 'Derebeylik şatoları yıkıldı', KIR, KIR_A),
-        (6, 60, '3. Bilginlerin Göçü', 'İtalya’da Rönesans doğdu', YES, YES_A),
-        (184, 60, '4. Yeni Başkent', 'Cihan devleti dönemi', TUR, TUR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'İstanbul’un Fethi’nin Türk ve dünya tarihi açısından dört temel sonucu.')
-
-
-def fatih_ahidnamesi():
-    ic = kutu(6, 6, 348, 103, YES_A, YES)
-    ic += yazi(180, 26, 'Fatih Sultan Mehmed’in Fermanı (Ahidname)', YES, kalin=True)
-    ic += yazi(180, 52, '«Kimsenin canına, malına ve kilisesine dokunulmayacak;', LAC)
-    ic += yazi(180, 74, 'herkes inancını ve ticaretini özgürce sürdürecektir.»', LAC)
-    ic += yazi(180, 98, 'Temel İlke: İstimalet (Hoşgörü) ve Millet Sistemi', MAVI, kalin=True)
-    return svg(ic, 'Fatih Sultan Mehmed’in din ve vicdan özgürlüğü tanıyan Ahidname fermanı.')
-
-
-def ticaret_yollari_haritasi():
-    ic = kutu(6, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(91, 26, 'İpek Yolu Denetimi', MAVI, kalin=True)
-    ic += yazi(91, 52, 'İstanbul (1453) ve', LAC)
-    ic += yazi(91, 74, 'Kırım’ın Fethi (1475)', MAVI, kalin=True)
-    ic += yazi(91, 96, 'Karadeniz = Türk Gölü', YES, kalin=True)
-    ic += kutu(184, 6, 170, 103, TUR_A, TUR)
-    ic += yazi(269, 26, 'Baharat Yolu Denetimi', TUR, kalin=True)
-    ic += yazi(269, 52, 'Mercidabık ve Ridaniye', LAC)
-    ic += yazi(269, 74, 'Mısır Seferi (1516-1517)', TUR, kalin=True)
-    ic += yazi(269, 96, 'Doğu Akdeniz - Kızıldeniz', KIR, kalin=True)
-    return svg(ic, 'İpek Yolu ve Baharat Yolu’nun Osmanlı denetimine geçişini gösteren pano.')
-
-
-def avrupa_etkisi_sema():
-    ic = kutu(6, 6, 170, 103, KIR_A, KIR)
-    ic += yazi(91, 26, 'Surların Topla Yıkılması', KIR, kalin=True)
-    ic += yazi(91, 56, 'Derebeylik şatoları yıkıldı', LAC)
-    ic += yazi(91, 84, '→ Feodalite Zayıfladı', KIR, kalin=True)
-    ic += kutu(184, 6, 170, 103, CAM_A, CAM)
-    ic += yazi(269, 26, 'Ticaret Yolu Kontrolü', CAM, kalin=True)
-    ic += yazi(269, 56, 'Avrupa yeni yol aradı', LAC)
-    ic += yazi(269, 84, '→ Coğrafi Keşifler', CAM, kalin=True)
-    return svg(ic, 'İstanbul’un Fethi’nin Avrupa’da feodalite ve Coğrafi Keşiflere etkisi.')
-
-
-def yukselme_kronoloji():
-    adimlar = [
-        (6, '1453', 'İstanbul Fethi', MAVI, MAVI_A),
-        (94, '1475', 'Kırım Fethi', CAM, CAM_A),
-        (182, '1517', 'Mısır Seferi', TUR, TUR_A),
-        (270, '1538', 'Preveze Zaferi', YES, YES_A),
-    ]
-    ic = ''
-    for x, yil, olay, r, z in adimlar:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 36, yil, r, kalin=True)
-        ic += yazi(x + 42, 72, olay, LAC, kalin=True)
-    return svg(ic, 'Yükselme Dönemi dört temel gelişmesinin kronolojik şeridi.')
-
-
-def misir_seferi_kazanim():
-    ic = kutu(6, 6, 170, 103, MOR_A, MOR)
-    ic += yazi(91, 26, 'Dinî Kazanım (1517)', MOR, kalin=True)
-    ic += yazi(91, 54, 'Memlûk Devleti yıkıldı', LAC)
-    ic += yazi(91, 82, 'Halifelik Osmanlı’ya geçti', MOR, kalin=True)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 26, 'Ekonomik Kazanım', YES, kalin=True)
-    ic += yazi(269, 54, 'Mısır ve Suriye alındı', LAC)
-    ic += yazi(269, 82, 'Baharat Yolu denetlendi', YES, kalin=True)
-    return svg(ic, 'Yavuz Sultan Selim’in Mısır Seferi’nin dinî ve ekonomik sonuçları.')
-
-
-def sahni_seman_bilim():
-    ic = kutu(6, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(91, 26, 'Sahn-ı Seman Medresesi', MAVI, kalin=True)
-    ic += yazi(91, 54, 'Dönemin yükseköğretim', LAC)
-    ic += yazi(91, 78, 've bilim merkezi kuruldu', MAVI, kalin=True)
-    ic += kutu(184, 6, 170, 103, TUR_A, TUR)
-    ic += yazi(269, 26, 'İmar ve Bilim İnsanı', TUR, kalin=True)
-    ic += yazi(269, 54, 'Ali Kuşçu davet edildi;', LAC)
-    ic += yazi(269, 78, 'Kapalıçarşı ve vakıflar', TUR, kalin=True)
-    return svg(ic, 'Fatih Sultan Mehmed’in Sahn-ı Seman Medreseleri ve bilim-kültür yatırımları.')
+GORSELLER = {1: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İstanbul kuşatması '
+    'öncesi Rumeli Hisarı ve askerî hazırlık şeması."><rect x="4" y="3" width="342" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Rumeli (Boğazkesen) Hisarı</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Anadolu Hisarı karşısına</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Karadeniz yardımlarını '
+    'kesmek için inşa</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">edildi</text><rect x="4" y="88" width="342" height="82" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Diğer Fetih Hazırlıkları</text><text x="11.0" y="122.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Dev Şahi topları dökümü</text><text x="11.0" y="141.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• 400 parçalık '
+    'donanma</text><text x="11.0" y="160.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">• 72 gemi karadan Haliç’e</text></svg>',
+ 2: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İstanbul’un Fethi’nin '
+    'Türk ve dünya tarihi açısından dört temel sonucu."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Toprak Bütünlüğü</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Anadolu ve Rumeli</text><text x="87.5" y="58.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">birleşti</text><rect x="179" y="3" '
+    'width="167" height="65" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">2. Şahi Topları Etkisi</text><text x="262.5" '
+    'y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Derebeylik '
+    'şatoları</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">yıkıldı</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Bilginlerin Göçü</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İtalya’da Rönesans</text><text x="87.5" y="127.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">doğdu</text><rect '
+    'x="179" y="72" width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="90.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">4. Yeni '
+    'Başkent</text><text x="262.5" y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Cihan devleti</text><text x="262.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">dönemi</text></svg>',
+ 5: '<svg viewBox="0 0 350 143" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fatih Sultan Mehmed’in '
+    'din ve vicdan özgürlüğü tanıyan Ahidname fermanı."><rect x="4" y="3" width="342" height="138" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Fatih Sultan Mehmed’in Fermanı</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">(Ahidname)</text><text x="11.0" y="56.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«Kimsenin canına, malına ve '
+    'kilisesine</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">dokunulmayacak; herkes inancını ve</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ticaretini özgürce sürdürecektir.»</text><text x="11.0" y="113.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Temel İlke: İstimalet '
+    '(Hoşgörü) ve Millet</text><text x="11.0" y="131.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Sistemi</text></svg>',
+ 6: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İpek Yolu ve Baharat '
+    'Yolu’nun Osmanlı denetimine geçişini gösteren pano."><rect x="4" y="3" width="342" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">İpek Yolu Denetimi</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İstanbul (1453) ve</text><text x="11.0" y="56.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Kırım’ın Fethi (1475)</text><text x="11.0" '
+    'y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Karadeniz = Türk '
+    'Gölü</text><rect x="4" y="88" width="342" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Baharat Yolu '
+    'Denetimi</text><text x="11.0" y="122.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Mercidabık ve Ridaniye</text><text x="11.0" y="141.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Mısır Seferi (1516-1517)</text><text x="11.0" y="160.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Doğu Akdeniz - Kızıldeniz</text></svg>',
+ 7: '<svg viewBox="0 0 350 115" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İstanbul’un Fethi’nin '
+    'Avrupa’da feodalite ve Coğrafi Keşiflere etkisi."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Surların Topla Yıkılması</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Derebeylik şatoları yıkıldı → Feodalite</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Zayıfladı</text><rect '
+    'x="4" y="69" width="342" height="44" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="85.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Ticaret Yolu '
+    'Kontrolü</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Avrupa yeni yol aradı → Coğrafi Keşifler</text></svg>',
+ 8: '<svg viewBox="0 0 350 82" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yükselme Dönemi dört '
+    'temel gelişmesinin kronolojik şeridi."><rect x="4" y="3" width="167" height="36" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="25.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1453 · İstanbul Fethi</text><rect x="179" y="3" width="167" height="36" rx="5" fill="#e0f4f8" '
+    'stroke="#0e8fa8" stroke-width="0.75"/><text x="262.5" y="25.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0e8fa8">1475 · Kırım Fethi</text><rect x="4" y="43" width="167" height="36" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="65.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">1517 · Mısır Seferi</text><rect x="179" y="43" width="167" height="36" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="65.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">1538 · Preveze Zaferi</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yavuz Sultan Selim’in '
+    'Mısır Seferi’nin dinî ve ekonomik sonuçları."><rect x="4" y="3" width="342" height="63" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Dinî Kazanım (1517)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Memlûk Devleti yıkıldı</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Halifelik Osmanlı’ya '
+    'geçti</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Ekonomik '
+    'Kazanım</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Mısır ve Suriye alındı</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Baharat Yolu denetlendi</text></svg>',
+ 11: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fatih Sultan Mehmed’in '
+     'Sahn-ı Seman Medreseleri ve bilim-kültür yatırımları."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" '
+     'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#2451d6">Sahn-ı Seman Medresesi</text><text x="11.0" y="37.8" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dönemin yükseköğretim ve bilim '
+     'merkezi</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">kuruldu</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+     'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#d97706">İmar ve Bilim İnsanı</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ali Kuşçu davet edildi;</text><text x="11.0" y="122.6" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Kapalıçarşı ve '
+     'vakıflar</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = bogazkesen_hazirlik()
-    s[2]['gorsel'] = fetih_sonuclari_panosu()
-    s[5]['gorsel'] = fatih_ahidnamesi()
-    s[6]['gorsel'] = ticaret_yollari_haritasi()
-    s[7]['gorsel'] = avrupa_etkisi_sema()
-    s[8]['gorsel'] = yukselme_kronoloji()
-    s[9]['gorsel'] = misir_seferi_kazanim()
-    s[11]['gorsel'] = sahni_seman_bilim()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

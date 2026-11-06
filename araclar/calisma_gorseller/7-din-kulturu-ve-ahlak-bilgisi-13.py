@@ -1,134 +1,114 @@
-"""7. sınıf Din Kültürü ve Ahlak Bilgisi 13. hafta (Kâfirûn Suresi ve 2. Ünite Değerlendirmesi) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178); Noto Sans 12px."""
+"""7-din-kulturu-ve-ahlak-bilgisi-13 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=21):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def kafirun_kimlik_karti():
-    ic = kutu(6, 6, 172, 103, MAVI_A, MAVI)
-    ic += yazi(92, 24, 'Kâfirûn Suresi Kimliği', MAVI, kalin=True)
-    ic += yazi(92, 52, 'Mushaf Sırası: 109. Sure', LAC, kalin=True)
-    ic += yazi(92, 78, 'Ayet Sayısı: 6 · Dönem: Mekke', MAVI)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 24, 'Diğer İsimleri ve Konusu', YES, kalin=True)
-    ic += yazi(269, 52, 'İhlas / Mukâşkışe (Şirkten Arındıran)', LAC)
-    ic += yazi(269, 78, 'Tevhit İnancı ve İnanç Özgürlüğü', YES, kalin=True)
-    return svg(ic, 'Kâfirûn suresinin mushaf sırası, ayet sayısı ve konusu.')
-
-
-def unite_ibadet_kartlari():
-    kartlar = [
-        (6, 6, '1. Hac İbadeti', 'Farz · Zilhicce Ayı', MAVI, MAVI_A),
-        (184, 6, '2. Umre İbadeti', 'Sünnet · Yıl Boyu Yapılır', YES, YES_A),
-        (6, 60, '3. Udhiyye Kurbanı', 'Vacip · Kurban Bayramı', TUR, TUR_A),
-        (184, 60, '4. Adak Kurbanı', 'Vacip · Sahibi Etinden Yiyemez', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Hac, umre, udhiyye ve adak kurbanı özet kartları.')
-
-
-def nuzul_sebebi_karti():
-    ic = kutu(6, 6, 172, 103, KIR_A, KIR)
-    ic += yazi(92, 24, 'Müşriklerin Uzlaşma Teklifi', KIR, kalin=True)
-    ic += yazi(92, 52, '«Bir yıl sen bizim putlarımıza tap,', LAC)
-    ic += yazi(92, 76, 'bir yıl biz senin İlahına tapalım!»', LAC)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 24, 'İlahi Cevap (Kâfirûn Suresi)', YES, kalin=True)
-    ic += yazi(269, 52, '«Lâ a’büdü mâ ta’büdûn!»', YES, kalin=True)
-    ic += yazi(269, 78, 'Tevhitte şirkle ortaklık olmaz!', LAC, kalin=True)
-    return svg(ic, 'Kâfirûn suresinin indiriliş sebebi ve tevhit vurgusu.')
-
-
-def hac_farzlari_semasi():
-    kartlar = [
-        (6, 6, '1. İhrama Girmek', 'Mikat Sınırı (Haccın Farzı)', MAVI, MAVI_A),
-        (184, 6, '2. Arafat Vakfesi', 'Arefe Günü (Haccın Farzı)', YES, YES_A),
-        (6, 60, '3. Ziyaret Tavafı', 'Kâbe Çevresi (Haccın Farzı)', TUR, TUR_A),
-        (184, 60, '4. Şeytan Taşlama & Sa’y', 'Mina ve Safa-Merve (Vacip)', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Haccın üç farzı ve vacip görevlerinin karşılaştırılması.')
-
-
-def son_ayet_ozgurluk_karti():
-    ic = kutu(6, 6, 348, 103, CAM_A, CAM)
-    ic += yazi(180, 26, 'Kâfirûn Suresi 6. Ayet-i Kerime', CAM, kalin=True)
-    ic += yazi(180, 56, '«Leküm dînüküm veliye dîn.»', LAC, kalin=True)
-    ic += yazi(180, 86, 'Anlamı: «Sizin dininiz size, benim dinim de banadır.»', YES, kalin=True)
-    return svg(ic, 'Kâfirûn suresi 6. ayet okunuşu ve Türkçe meali.')
-
-
-def sure_siralama_adimlari():
-    adimlar = [
-        (6, '1. Hitap', 'Kul yâ eyyühe’l…', MAVI, MAVI_A),
-        (94, '2. Ret', 'Lâ a’büdü mâ…', KIR, KIR_A),
-        (182, '3. Ayrım', 'Ve lâ entüm…', TUR, TUR_A),
-        (270, '4. Hüküm', 'Leküm dînüküm…', YES, YES_A),
-    ]
-    ic = ''
-    for x, b1, b2, r, z in adimlar:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 34, b1, r, kalin=True)
-        ic += yazi(x + 42, 70, b2, LAC, kalin=True)
-    return svg(ic, 'Kâfirûn suresi ayetlerinin başlangıçtan sona sıralaması.')
-
-
-def enam_kafirun_karsilastirma():
-    ic = kutu(6, 6, 172, 103, MAVI_A, MAVI)
-    ic += yazi(92, 24, 'En’âm Suresi, 162. Ayet', MAVI, kalin=True)
-    ic += yazi(92, 52, '«Namazım, ibadetlerim, hayatım', LAC)
-    ic += yazi(92, 78, 've ölümüm yalnız Allah içindir.»', MAVI, kalin=True)
-    ic += kutu(184, 6, 170, 103, TUR_A, TUR)
-    ic += yazi(269, 24, 'Kâfirûn Suresi, 2-6. Ayetler', TUR, kalin=True)
-    ic += yazi(269, 52, '«Ben sizin taptıklarınıza tapmam;', LAC)
-    ic += yazi(269, 78, 'benim dinim yalnız Allah’adır.»', TUR, kalin=True)
-    return svg(ic, 'En’âm 162. ayet ile Kâfirûn suresinin ortak tevhit mesajı.')
-
-
-def kurban_paylasim_karti():
-    adimlar = [
-        (6, '1/3 Pay', 'Ev Halkı ve Aile', MAVI, MAVI_A),
-        (124, '1/3 Pay', 'Misafir ve Komşular', TUR, TUR_A),
-        (242, '1/3 Pay', 'Yoksul ve Muhtaçlar', YES, YES_A),
-    ]
-    ic = ''
-    for x, b1, b2, r, z in adimlar:
-        ic += kutu(x, 6, 112, 103, z, r)
-        ic += yazi(x + 56, 36, b1, r, kalin=True)
-        ic += yazi(x + 56, 70, b2, LAC, kalin=True)
-    return svg(ic, 'Kurban etinin üçe bölünerek paylaşılması şeması.')
+GORSELLER = {1: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kâfirûn suresinin mushaf '
+    'sırası, ayet sayısı ve konusu."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Kâfirûn Suresi Kimliği</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Mushaf Sırası: 109. Sure</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Ayet Sayısı: 6 · Dönem: '
+    'Mekke</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Diğer İsimleri '
+    've Konusu</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İhlas / Mukâşkışe (Şirkten Arındıran)</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Tevhit İnancı ve İnanç Özgürlüğü</text></svg>',
+ 2: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hac, umre, udhiyye ve '
+    'adak kurbanı özet kartları."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Hac İbadeti</text><text x="87.5" y="49.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Farz · Zilhicce Ayı</text><rect x="179" y="3" width="167" height="65" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Umre İbadeti</text><text x="262.5" y="40.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sünnet · Yıl Boyu</text><text x="262.5" '
+    'y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Yapılır</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">3. Udhiyye Kurbanı</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Vacip · Kurban</text><text x="87.5" y="127.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bayramı</text><rect x="179" y="72" '
+    'width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="90.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Adak Kurbanı</text><text x="262.5" '
+    'y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Vacip · '
+    'Sahibi</text><text x="262.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Etinden Yiyemez</text></svg>',
+ 5: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kâfirûn suresinin '
+    'indiriliş sebebi ve tevhit vurgusu."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Müşriklerin Uzlaşma Teklifi</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«Bir yıl sen bizim putlarımıza tap, bir yıl biz</text><text '
+    'x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">senin '
+    'İlahına tapalım!»</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">İlahi '
+    'Cevap (Kâfirûn Suresi)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">«Lâ a’büdü mâ ta’büdûn!»</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Tevhitte şirkle ortaklık olmaz!</text></svg>',
+ 6: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Haccın üç farzı ve vacip '
+    'görevlerinin karşılaştırılması."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. İhrama Girmek</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mikat Sınırı (Haccın</text><text x="87.5" y="58.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Farzı)</text><rect '
+    'x="179" y="3" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Arafat '
+    'Vakfesi</text><text x="262.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Arefe Günü (Haccın</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Farzı)</text><rect x="4" y="72" width="167" height="84" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="99.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">3. Ziyaret Tavafı</text><text x="87.5" y="118.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kâbe Çevresi (Haccın</text><text x="87.5" '
+    'y="137.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Farzı)</text><rect x="179" y="72" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="90.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Şeytan Taşlama &amp;</text><text x="262.5" y="109.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Sa’y</text><text x="262.5" y="127.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mina ve Safa-Merve</text><text x="262.5" '
+    'y="146.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">(Vacip)</text></svg>',
+ 7: '<svg viewBox="0 0 350 87" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kâfirûn suresi 6. ayet '
+    'okunuşu ve Türkçe meali."><rect x="4" y="3" width="342" height="82" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Kâfirûn '
+    'Suresi 6. Ayet-i Kerime</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">«Leküm dînüküm veliye dîn.»</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Anlamı: «Sizin dininiz size, benim dinim de</text><text '
+    'x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">banadır.»</text></svg>',
+ 8: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kâfirûn suresi '
+    'ayetlerinin başlangıçtan sona sıralaması."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Hitap</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Kul yâ eyyühe’l…</text><rect x="179" y="3" width="167" height="46" rx="5" '
+    'fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">2. Ret</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Lâ a’büdü mâ…</text><rect x="4" y="53" '
+    'width="167" height="46" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. Ayrım</text><text x="87.5" y="89.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Ve lâ entüm…</text><rect '
+    'x="179" y="53" width="167" height="46" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="71.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">4. Hüküm</text><text '
+    'x="262.5" y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Leküm '
+    'dînüküm…</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="En’âm 162. ayet ile '
+    'Kâfirûn suresinin ortak tevhit mesajı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">En’âm Suresi, 162. Ayet</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«Namazım, ibadetlerim, hayatım ve ölümüm</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yalnız Allah '
+    'içindir.»</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Kâfirûn Suresi, '
+    '2-6. Ayetler</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">«Ben sizin taptıklarınıza tapmam; benim</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">dinim yalnız Allah’adır.»</text></svg>',
+ 11: '<svg viewBox="0 0 350 86" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kurban etinin üçe '
+     'bölünerek paylaşılması şeması."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">⅓ Pay · Ev Halkı ve Aile</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#fff1df" '
+     'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#d97706">⅓ Pay · Misafir ve Komşular</text><rect x="4" y="59" width="342" height="25" '
+     'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="75.0" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">⅓ Pay · Yoksul ve Muhtaçlar</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = kafirun_kimlik_karti()
-    s[2]['gorsel'] = unite_ibadet_kartlari()
-    s[5]['gorsel'] = nuzul_sebebi_karti()
-    s[6]['gorsel'] = hac_farzlari_semasi()
-    s[7]['gorsel'] = son_ayet_ozgurluk_karti()
-    s[8]['gorsel'] = sure_siralama_adimlari()
-    s[9]['gorsel'] = enam_kafirun_karsilastirma()
-    s[11]['gorsel'] = kurban_paylasim_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

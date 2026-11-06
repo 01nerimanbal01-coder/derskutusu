@@ -1,140 +1,100 @@
-"""7. sınıf Arapça 12. hafta (Kırtasiyede ve Giyim Mağazasında Alışveriş, Fiyat Sorma ve Renkler) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178); Noto Sans 12px."""
+"""7-arapca-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT_TR = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-FONT_AR = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="16"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=21):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT_TR} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def yazi_ar(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT_AR} fill="{renk}">{metin}</text>'
-
-
-def kirtasiye_fiyat_karti():
-    ic = kutu(6, 6, 172, 103, MAVI_A, MAVI)
-    ic += yazi(92, 24, 'Kırtasiye (الْمَكْتَبَةُ)', MAVI, kalin=True)
-    ic += yazi_ar(92, 54, 'أُرِيدُ دَفْتَرًا وَمِسْطَرَةً', LAC)
-    ic += yazi_ar(92, 82, 'بِكَمْ هٰذَا يَا بَائِعُ؟', MAVI)
-    ic += kutu(184, 6, 170, 103, YES_A, YES)
-    ic += yazi(269, 24, 'Satıcı Fişi (الْفَاتُورَةُ)', YES, kalin=True)
-    ic += yazi_ar(269, 56, 'بِخَمْسَ عَشْرَةَ لِيرَةً', LAC)
-    ic += yazi(269, 88, 'Toplam Tutar: 15 TL', YES, kalin=True)
-    return svg(ic, 'Kırtasiyede defter ve cetvel fiyat sorma diyaloğu.')
-
-
-def dort_urun_etiketi():
-    kartlar = [
-        (6, 6, '1. قَلَمٌ أَحْمَرُ', 'Kırtasiye Reyonu', KIR, KIR_A),
-        (184, 6, '2. فُسْتَانٌ أَخْضَرُ', 'Giyim Reyonu', YES, YES_A),
-        (6, 60, '3. حَقِيبَةٌ صَفْرَاءُ', 'Okul Çantası', TUR, TUR_A),
-        (184, 60, '4. حِذَاءٌ أَسْوَدُ', 'Ayakkabı Reyonu', MAVI, MAVI_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi_ar(x + 85, y + 22, b1, r)
-        ic += yazi(x + 85, y + 41, b2, LAC, kalin=True)
-    return svg(ic, 'Kırtasiye ve giyim mağazası ürün etiketleri.')
-
-
-def giyim_tercih_vitrini():
-    ic = kutu(6, 6, 172, 103, TUR_A, TUR)
-    ic += yazi(92, 24, 'Satıcının Sorusu', TUR, kalin=True)
-    ic += yazi_ar(92, 54, 'أَتُفَضِّلُ الْقَمِيصَ الْأَزْرَقَ', LAC)
-    ic += yazi_ar(92, 82, 'أَمِ الْقَمِيصَ الْأَبْيَضَ؟', TUR)
-    ic += kutu(184, 6, 170, 103, MAVI_A, MAVI)
-    ic += yazi(269, 24, 'Müşterinin Tercihi', MAVI, kalin=True)
-    ic += yazi_ar(269, 56, 'أُفَضِّلُ الْقَمِيصَ الْأَزْرَقَ', LAC)
-    ic += yazi(269, 86, 'Secim: قَمِيصٌ أَزْرَقُ', MAVI, kalin=True)
-    return svg(ic, 'Giyim mağazasında mavi ve beyaz gömlek tercih diyaloğu.')
-
-
-def renk_uyum_kartlari():
-    kartlar = [
-        (6, 6, '1. Kart (Eril?)', 'قَلَمٌ حَمْرَاءُ', KIR, KIR_A),
-        (184, 6, '2. Kart (Dişil)', 'حَقِيبَةٌ زَرْقَاءُ', MAVI, MAVI_A),
-        (6, 60, '3. Kart (Eril?)', 'فُسْتَانٌ بَيْضَاءُ', MOR, MOR_A),
-        (184, 60, '4. Kart (Dişil?)', 'مِمْحَاةٌ أَخْضَرُ', YES, YES_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += yazi_ar(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Renk sıfatlarında eril ve dişil uyum kartları.')
-
-
-def kirtasiye_fisi_cevirisi():
-    ic = kutu(6, 6, 348, 103, CAM_A, CAM)
-    ic += yazi(180, 26, 'Kırtasiye Sipariş Fişi (فِي الْمَكْتَبَةِ)', CAM, kalin=True)
-    ic += yazi_ar(180, 58, 'أُرِيدُ ثَلَاثَةَ دَفَاتِرَ وَقَلَمَيْنِ بِعَشْرِ لِيرَاتٍ', LAC)
-    ic += yazi(180, 92, 'ثَلَاثَةَ دَفَاتِرَ (3) + قَلَمَيْنِ (2) = ١٠ لِيرَاتٍ (10 TL)', MAVI, kalin=True)
-    return svg(ic, 'Üç defter ve iki kalem içeren kırtasiye sipariş fişi.')
-
-
-def magaza_diyalog_adimlari():
-    adimlar = [
-        (6, '1. Adım', 'هَلْ عِنْدَكَ قَمِيصٌ؟', MAVI, MAVI_A),
-        (94, '2. Adım', 'نَعَمْ، تَفَضَّلْ', YES, YES_A),
-        (182, '3. Adım', 'بِكَمْ هٰذَا؟', TUR, TUR_A),
-        (270, '4. Adım', 'بِـ ١٧ لِيرَةً', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, ad, ar, r, z in adimlar:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 32, ad, r, kalin=True)
-        ic += yazi_ar(x + 42, 70, ar, LAC)
-    return svg(ic, 'Giyim mağazasında dört adımlı alışveriş diyaloğu.')
-
-
-def unite_degerlendirme_panosu():
-    kartlar = [
-        (6, 6, '1. الْمَخْبَزُ', 'خُبْزٌ طَازَجٌ وَكَعْكٌ', TUR, TUR_A),
-        (184, 6, '2. الْمَكْتَبَةُ', 'دَفْتَرٌ وَمِسْطَرَةٌ', MAVI, MAVI_A),
-        (6, 60, '3. مَحَلُّ الْمَلَابِسِ', 'جَزَرٌ وَبَصَلٌ (؟)', KIR, KIR_A),
-        (184, 60, '4. الْبَقَّالُ', 'جُبْنٌ وَزَيْتُونٌ', YES, YES_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi_ar(x + 85, y + 20, b1, r)
-        ic += yazi_ar(x + 85, y + 41, b2, LAC)
-    return svg(ic, 'İkinci ünite alışveriş mekânları ve ürünler eşleştirme panosu.')
-
-
-def alisveris_listesi_karti():
-    ic = kutu(6, 6, 172, 103, MAVI_A, MAVI)
-    ic += yazi(92, 26, '1. Ürün: Mavi Çanta', MAVI, kalin=True)
-    ic += yazi_ar(92, 58, 'حَقِيبَةٌ زَرْقَاءُ', LAC)
-    ic += yazi(92, 88, '(Müennes / Dişil Renk)', MAVI)
-    ic += kutu(184, 6, 170, 103, KIR_A, KIR)
-    ic += yazi(269, 26, '2. Ürün: Kırmızı Kalem', KIR, kalin=True)
-    ic += yazi_ar(269, 58, 'قَلَمٌ أَحْمَرُ', LAC)
-    ic += yazi(269, 88, 'Kalıp: أُرِيدُ ... وَ ...', KIR, kalin=True)
-    return svg(ic, 'Mavi çanta ve kırmızı kalemden oluşan kırtasiye alışveriş listesi.')
+GORSELLER = {1: '<svg viewBox="0 0 350 88" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kırtasiyede defter ve '
+    'cetvel fiyat sorma diyaloğu."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="24.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Kırtasiye (الْمَكْتَبَةُ)</text><text x="87.5" y="48.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">أُرِيدُ دَفْتَرًا وَمِسْطَرَةً</text><text x="87.5" y="73.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">بِكَمْ هٰذَا يَا '
+    'بَائِعُ؟</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="262.5" y="24.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Satıcı Fişi (الْفَاتُورَةُ)</text><text x="262.5" y="48.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">بِخَمْسَ عَشْرَةَ لِيرَةً</text><text x="262.5" y="73.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Toplam Tutar: 15 TL</text></svg>',
+ 2: '<svg viewBox="0 0 350 126" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kırtasiye ve giyim '
+    'mağazası ürün etiketleri."><rect x="4" y="3" width="167" height="58" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="87.5" y="24.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#d63a3a">1. قَلَمٌ أَحْمَرُ</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Kırtasiye Reyonu</text><rect x="179" y="3" width="167" height="58" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="24.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">2. فُسْتَانٌ أَخْضَرُ</text><text x="262.5" y="48.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Giyim Reyonu</text><rect '
+    'x="4" y="65" width="167" height="58" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="86.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">3. حَقِيبَةٌ '
+    'صَفْرَاءُ</text><text x="87.5" y="110.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Okul Çantası</text><rect x="179" y="65" width="167" height="58" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="86.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#2451d6">4. حِذَاءٌ أَسْوَدُ</text><text x="262.5" y="110.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Ayakkabı Reyonu</text></svg>',
+ 5: '<svg viewBox="0 0 350 88" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Giyim mağazasında mavi ve '
+    'beyaz gömlek tercih diyaloğu."><rect x="4" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="24.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Satıcının Sorusu</text><text x="87.5" y="48.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">أَتُفَضِّلُ الْقَمِيصَ الْأَزْرَقَ</text><text x="87.5" y="73.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">أَمِ الْقَمِيصَ '
+    'الْأَبْيَضَ؟</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="262.5" y="24.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Müşterinin Tercihi</text><text x="262.5" y="48.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">أُفَضِّلُ الْقَمِيصَ الْأَزْرَقَ</text><text x="262.5" y="73.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Secim: قَمِيصٌ '
+    'أَزْرَقُ</text></svg>',
+ 6: '<svg viewBox="0 0 350 126" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Renk sıfatlarında eril '
+    've dişil uyum kartları."><rect x="4" y="3" width="167" height="58" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text '
+    'x="87.5" y="24.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">1. '
+    'Kart (Eril?)</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">قَلَمٌ حَمْرَاءُ</text><rect x="179" y="3" width="167" height="58" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="24.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">2. Kart (Dişil)</text><text x="262.5" y="48.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">حَقِيبَةٌ زَرْقَاءُ</text><rect x="4" y="65" '
+    'width="167" height="58" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="86.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">3. Kart (Eril?)</text><text x="87.5" '
+    'y="110.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">فُسْتَانٌ '
+    'بَيْضَاءُ</text><rect x="179" y="65" width="167" height="58" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="262.5" y="86.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">4. '
+    'Kart (Dişil?)</text><text x="262.5" y="110.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">مِمْحَاةٌ أَخْضَرُ</text></svg>',
+ 7: '<svg viewBox="0 0 350 110" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Üç defter ve iki kalem '
+    'içeren kırtasiye sipariş fişi."><rect x="4" y="3" width="342" height="105" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Kırtasiye Sipariş Fişi (فِي الْمَكْتَبَةِ)</text><text x="11.0" y="43.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">أُرِيدُ ثَلَاثَةَ دَفَاتِرَ وَقَلَمَيْنِ '
+    'بِعَشْرِ لِيرَاتٍ</text><text x="11.0" y="68.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">ثَلَاثَةَ دَفَاتِرَ (3) + قَلَمَيْنِ (2) = ١٠ لِيرَاتٍ (10</text><text x="11.0" y="92.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">TL)</text></svg>',
+ 8: '<svg viewBox="0 0 350 126" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Giyim mağazasında dört '
+    'adımlı alışveriş diyaloğu."><rect x="4" y="3" width="167" height="58" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="24.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Adım</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">هَلْ عِنْدَكَ قَمِيصٌ؟</text><rect x="179" y="3" width="167" height="58" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="24.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Adım</text><text x="262.5" y="48.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">نَعَمْ، تَفَضَّلْ</text><rect x="4" y="65" '
+    'width="167" height="58" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="86.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. Adım</text><text x="87.5" y="110.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">بِكَمْ '
+    'هٰذَا؟</text><rect x="179" y="65" width="167" height="58" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="86.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Adım</text><text x="262.5" y="110.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">بِـ ١٧ لِيرَةً</text></svg>',
+ 9: '<svg viewBox="0 0 350 126" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İkinci ünite alışveriş '
+    'mekânları ve ürünler eşleştirme panosu."><rect x="4" y="3" width="167" height="58" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="24.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#d97706">1. الْمَخْبَزُ</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">خُبْزٌ طَازَجٌ وَكَعْكٌ</text><rect x="179" y="3" width="167" '
+    'height="58" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="24.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">2. الْمَكْتَبَةُ</text><text x="262.5" '
+    'y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">دَفْتَرٌ '
+    'وَمِسْطَرَةٌ</text><rect x="4" y="65" width="167" height="58" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text '
+    'x="87.5" y="86.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d63a3a">3. '
+    'مَحَلُّ الْمَلَابِسِ</text><text x="87.5" y="110.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">جَزَرٌ وَبَصَلٌ (؟)</text><rect x="179" y="65" width="167" height="58" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="86.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#12a150">4. الْبَقَّالُ</text><text x="262.5" y="110.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">جُبْنٌ وَزَيْتُونٌ</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = kirtasiye_fiyat_karti()
-    s[2]['gorsel'] = dort_urun_etiketi()
-    s[5]['gorsel'] = giyim_tercih_vitrini()
-    s[6]['gorsel'] = renk_uyum_kartlari()
-    s[7]['gorsel'] = kirtasiye_fisi_cevirisi()
-    s[8]['gorsel'] = magaza_diyalog_adimlari()
-    s[9]['gorsel'] = unite_degerlendirme_panosu()
-    s[11]['gorsel'] = alisveris_listesi_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

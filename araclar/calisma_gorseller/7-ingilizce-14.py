@@ -1,117 +1,113 @@
-# -*- coding: utf-8 -*-
-"""7-ingilizce-14 çalışma kâğıdı görselleri.
-SVG viewBox="0 0 360 115"; insan figürü yok (K024); metin arkası beyaz bant yok (K178)."""
+"""7-ingilizce-14 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+GORSELLER = {0: '<svg viewBox="0 0 350 209" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="7-ingilizce-14 wildlife '
+    'kelime kartları"><rect x="4" y="3" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Endangered</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Nesli tehlikede · Giant panda, tiger</text><rect x="4" y="50" width="342" height="44" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">WILDLIFE VOCABULARY CARDS · Extinct</text><text x="11.0" y="84.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Soyu tükenmiş · Dodo, '
+    'mammoth</text><rect x="4" y="97" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">Habitat</text><text x="11.0" y="131.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Doğal yaşam alanı</text><text x="11.0" y="150.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Jungle, ocean, desert</text><rect x="4" y="163" width="342" '
+    'height="44" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="179.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Deforestation</text><text x="11.0" y="197.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ormansızlaşma · Cutting '
+    'down trees</text></svg>',
+ 1: '<svg viewBox="0 0 350 153" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="7-ingilizce-14 Giant '
+    'Panda bilgi kartı"><rect x="4" y="3" width="342" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">ANIMAL '
+    'FACT FILE: GIANT PANDA</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Class &amp; Habitat &amp; Diet</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Class: Mammal · Habitat: China</text><text x="11.0" y="75.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Diet: Herbivore (99% '
+    'Bamboo leaves)</text><rect x="4" y="88" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="11.0" y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Size, '
+    'Weight &amp; Lifespan</text><text x="11.0" y="122.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Weight: 100 – 150 kg · Height: 1.5 m</text><text x="11.0" y="141.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Lifespan: About 20 years in the '
+    'wild</text></svg>',
+ 2: '<svg viewBox="0 0 350 200" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="7-ingilizce-14 Wh- soru '
+    'kalıpları"><rect x="4" y="3" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Where &amp; '
+    'What?</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Where do they live? · What do they eat?</text><rect x="4" y="50" width="342" height="101" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">MAKING SIMPLE INQUIRIES (WH-</text><text x="11.0" y="84.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">QUESTIONS)</text><text x="11.0" y="103.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">How much / '
+    'tall?</text><text x="11.0" y="122.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">How much do they weigh?</text><text x="11.0" y="141.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Weight (kg) &amp; Height (m)</text><rect x="4" y="154" width="342" height="44" '
+    'rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="170.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">How long?</text><text x="11.0" y="188.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">How long do they live? · Lifespan '
+    '(years)</text></svg>',
+ 5: '<svg viewBox="0 0 350 209" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="7-ingilizce-14 sıklık '
+    'zarfları"><rect x="4" y="3" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Always '
+    '(100%)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Lions always eat meat · Carnivore habit</text><rect x="4" y="50" width="342" height="63" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">ADVERBS OF FREQUENCY IN WILDLIFE ·</text><text x="11.0" y="84.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Usually (80%)</text><text '
+    'x="11.0" y="103.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tigers '
+    'usually hunt alone at night</text><rect x="4" y="116" width="342" height="44" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="132.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Sometimes (40%)</text><text x="11.0" y="150.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bears sometimes eat fish and honey</text><rect x="4" y="163" '
+    'width="342" height="44" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="179.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Never (0%)</text><text x="11.0" y="197.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Snakes never have legs or '
+    'wings</text></svg>',
+ 6: '<svg viewBox="0 0 350 153" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="7-ingilizce-14 should '
+    'shouldn’t afişi"><rect x="4" y="3" width="342" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">PROTECT '
+    'WILDLIFE: SHOULD vs. SHOULDN’T</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">What We SHOULD Do (+)</text><text x="11.0" y="56.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">We should protect natural '
+    'habitats.</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">We should plant trees &amp; keep seas clean.</text><rect x="4" y="88" width="342" height="63" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="104.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">What We SHOULDN’T Do (-)</text><text x="11.0" y="122.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">We shouldn’t hunt animals for '
+    'fur/tusk.</text><text x="11.0" y="141.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">We shouldn’t cut down forests or pollute.</text></svg>',
+ 7: '<svg viewBox="0 0 350 162" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="7-ingilizce-14 Dodo kuşu '
+    'kartı"><rect x="4" y="3" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="19.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Habitat &amp; '
+    'Feature</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Mauritius Island · A flightless bird</text><rect x="4" y="50" width="342" height="63" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">EXTINCT ANIMAL PROFILE: THE DODO BIRD</text><text x="11.0" y="84.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">When Extinct?</text><text '
+    'x="11.0" y="103.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Died '
+    'out in 1681 · 17th century (Past)</text><rect x="4" y="116" width="342" height="44" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="132.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Why Extinct?</text><text x="11.0" y="150.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Overhunted by sailors · Habitat destruction</text></svg>',
+ 8: '<svg viewBox="0 0 350 176" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="7-ingilizce-14 koruma '
+    'adımları"><rect x="4" y="3" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">STEPS TO SAVE '
+    'ENDANGERED SPECIES</text><rect x="4" y="31" width="342" height="23" rx="5" fill="#f8fafc" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan '
+    'font-weight="700" fill="#2451d6">1. Identify:</tspan> Find endangered animal species</text><rect x="4" y="57" width="342" height="44" '
+    'rx="5" fill="#f8fafc" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="73.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Stop Hunting</text><text x="11.0" y="91.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ban illegal hunting and fur trade</text><rect '
+    'x="4" y="104" width="342" height="23" rx="5" fill="#f8fafc" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="120.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" '
+    'fill="#d97706">3. Save Habitat:</tspan> Protect forests and oceans</text><rect x="4" y="130" width="342" height="44" rx="5" '
+    'fill="#f8fafc" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="146.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">4. Recover</text><text x="11.0" y="164.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Increase number in wildlife parks</text></svg>'}
 
-
-def svg(ic, etiket):
-    return f'<svg viewBox="0 0 360 115" style="width:100%;max-height:24mm;display:block;margin:1mm auto;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=9.2, renk=LAC, hiza='middle', ince=False):
-    temiz = str(metin).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{temiz}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def kart4(baslik, kartlar, etiket, ana_renk=MAVI, arka_renk=GRI_A):
-    ic = kutu(4, 4, 352, 107, arka_renk, ana_renk, 6, 0.75)
-    ic += yazi(180, 19, baslik, 9.6, ana_renk)
-    renkler = [(MAVI, MAVI_A), (YES, YES_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, d1, d2) in enumerate(kartlar):
-        c, a = renkler[i % 4]
-        x = 10 + i * 86
-        ic += kutu(x, 27, 80, 77, a, c, 6, 0.75)
-        ic += yazi(x + 40, 44, b, 8.3, c)
-        ic += f'<line x1="{x + 6}" y1="52" x2="{x + 74}" y2="52" stroke="{c}" stroke-width="0.6"/>'
-        ic += yazi(x + 40, 69, d1, 7.6, LAC, ince=True)
-        ic += yazi(x + 40, 88, d2, 7.2, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def karsilastir2(baslik, sol_b, sol_d1, sol_d2, sag_b, sag_d1, sag_d2, etiket, r1=MAVI, a1=MAVI_A, r2=TUR, a2=TUR_A):
-    ic = kutu(4, 4, 352, 107, GRI_A, r1, 6, 0.75)
-    ic += yazi(180, 19, baslik, 9.6, r1)
-    ic += kutu(12, 27, 162, 77, a1, r1, 6, 0.75)
-    ic += yazi(93, 45, sol_b, 8.8, r1)
-    ic += yazi(93, 66, sol_d1, 7.8, LAC, ince=True)
-    ic += yazi(93, 86, sol_d2, 7.4, SOLUK, ince=True)
-    ic += kutu(186, 27, 162, 77, a2, r2, 6, 0.75)
-    ic += yazi(267, 45, sag_b, 8.8, r2)
-    ic += yazi(267, 66, sag_d1, 7.8, LAC, ince=True)
-    ic += yazi(267, 86, sag_d2, 7.4, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def uclu_sema(baslik, uclu, etiket, ana_renk=YES, arka_renk=YES_A):
-    ic = kutu(4, 4, 352, 107, arka_renk, ana_renk, 6, 0.75)
-    ic += yazi(180, 19, baslik, 9.6, ana_renk)
-    renkler = [(MAVI, MAVI_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, d1, d2) in enumerate(uclu):
-        c, a = renkler[i % 3]
-        x = 12 + i * 114
-        ic += kutu(x, 27, 108, 77, a, c, 6, 0.75)
-        ic += yazi(x + 54, 45, b, 8.6, c)
-        ic += yazi(x + 54, 66, d1, 7.6, LAC, ince=True)
-        ic += yazi(x + 54, 86, d2, 7.2, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def akis4(baslik, adimlar, etiket, ana_renk=CAM):
-    ic = kutu(4, 4, 352, 107, CAM_A, ana_renk, 6, 0.75)
-    ic += yazi(180, 19, baslik, 9.5, ana_renk)
-    renkler = [MAVI, YES, TUR, MOR]
-    for i, (b, d1, d2) in enumerate(adimlar):
-        c = renkler[i % 4]
-        x = 10 + i * 86
-        ic += kutu(x, 28, 78, 76, '#f8fafc', c, 6, 0.75)
-        ic += yazi(x + 39, 46, b, 8.2, c)
-        ic += yazi(x + 39, 67, d1, 7.4, LAC, ince=True)
-        ic += yazi(x + 39, 86, d2, 7.0, SOLUK, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+80},64 {x+85},60 {x+85},68" fill="{ana_renk}"/>'
-    return svg(ic, etiket)
-
-
-def g0():
-    return kart4('WILDLIFE VOCABULARY CARDS', [('Endangered', 'Nesli tehlikede', 'Giant panda, tiger'), ('Extinct', 'Soyu tükenmiş', 'Dodo, mammoth'), ('Habitat', 'Doğal yaşam alanı', 'Jungle, ocean, desert'), ('Deforestation', 'Ormansızlaşma', 'Cutting down trees')], '7-ingilizce-14 wildlife kelime kartları')
-
-def g1():
-    return karsilastir2('ANIMAL FACT FILE: GIANT PANDA', 'Class & Habitat & Diet', 'Class: Mammal · Habitat: China', 'Diet: Herbivore (99% Bamboo leaves)', 'Size, Weight & Lifespan', 'Weight: 100 – 150 kg · Height: 1.5 m', 'Lifespan: About 20 years in the wild', '7-ingilizce-14 Giant Panda bilgi kartı')
-
-def g2():
-    return uclu_sema('MAKING SIMPLE INQUIRIES (WH- QUESTIONS)', [('Where & What?', 'Where do they live?', 'What do they eat?'), ('How much / tall?', 'How much do they weigh?', 'Weight (kg) & Height (m)'), ('How long?', 'How long do they live?', 'Lifespan (years)')], '7-ingilizce-14 Wh- soru kalıpları')
-
-def g5():
-    return kart4('ADVERBS OF FREQUENCY IN WILDLIFE', [('Always (100%)', 'Lions always eat meat', 'Carnivore habit'), ('Usually (80%)', 'Tigers usually hunt', 'alone at night'), ('Sometimes (40%)', 'Bears sometimes eat', 'fish and honey'), ('Never (0%)', 'Snakes never have', 'legs or wings')], '7-ingilizce-14 sıklık zarfları')
-
-def g6():
-    return karsilastir2('PROTECT WILDLIFE: SHOULD vs. SHOULDN’T', 'What We SHOULD Do (+)', 'We should protect natural habitats.', 'We should plant trees & keep seas clean.', 'What We SHOULDN’T Do (-)', 'We shouldn’t hunt animals for fur/tusk.', 'We shouldn’t cut down forests or pollute.', '7-ingilizce-14 should shouldn’t afişi')
-
-def g7():
-    return uclu_sema('EXTINCT ANIMAL PROFILE: THE DODO BIRD', [('Habitat & Feature', 'Mauritius Island', 'A flightless bird'), ('When Extinct?', 'Died out in 1681', '17th century (Past)'), ('Why Extinct?', 'Overhunted by sailors', 'Habitat destruction')], '7-ingilizce-14 Dodo kuşu kartı')
-
-def g8():
-    return akis4('STEPS TO SAVE ENDANGERED SPECIES', [('1. Identify', 'Find endangered', 'animal species'), ('2. Stop Hunting', 'Ban illegal hunting', 'and fur trade'), ('3. Save Habitat', 'Protect forests', 'and oceans'), ('4. Recover', 'Increase number', 'in wildlife parks')], '7-ingilizce-14 koruma adımları')
-
-def g11():
-    return karsilastir2('WRITING GUIDE: WILDLIFE PROTECTION CAMPAIGN', 'Positive Suggestions (Should)', 'We should protect national parks.', 'We should charities like WWF.', 'Negative Warnings (Shouldn’t)', 'We shouldn’t destroy bamboo forests.', 'We shouldn’t buy fur coats or ivory.', '7-ingilizce-14 yazma rehberi')
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[7]['gorsel'] = g7()
-    s[8]['gorsel'] = g8()
-    s[11]['gorsel'] = g11()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

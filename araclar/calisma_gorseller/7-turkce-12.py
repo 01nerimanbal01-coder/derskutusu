@@ -1,132 +1,119 @@
-"""7. sınıf Türkçe 12. hafta (Mustafa Kemal’in Kağnısı, Şiirde Ahenk, Anlam Kayması ve Birleşik Çekimli Fiiller) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178); Noto Sans 12px."""
+"""7-turkce-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=21):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def kagni_siir_karti():
-    ic = kutu(6, 6, 348, 103, TUR_A, TUR)
-    ic += yazi(180, 24, 'Mustafa Kemal’in Kağnısı — Fazıl Hüsnü Dağlarca', TUR, kalin=True)
-    ic += yazi(180, 50, '«Yediyordu Elif kağnısını, kara geceden geceden...', LAC)
-    ic += yazi(180, 72, 'Kocabaş çok ihtiyardı, çok zayıftı, mahzundu bütün bütün,', LAC)
-    ic += yazi(180, 94, 'Elif’cik boyunduruğun ucuna girdi, cephane gecikmesin diye!»', KIR, kalin=True)
-    return svg(ic, 'Mustafa Kemal’in Kağnısı şiirinden dizeler ve tema kartı.')
-
-
-def fiil_cekim_yapi_kartlari():
-    kartlar = [
-        (6, 6, '1. taşıyordu', 'taşı - yor - du (2 kip)', MAVI, MAVI_A),
-        (184, 6, '2. koruyabiliriz', 'koru-y-abil-ir-iz (Yeterlilik)', YES, YES_A),
-        (6, 60, '3. izlemişti', 'iz - le - miş - ti (Yapım + 2 kip)', TUR, TUR_A),
-        (184, 60, '4. yardım ettiler', 'yardım + et-ti-ler (1 kip)', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Fiilde çekim türü ve sözcük yapısı inceleme kartları.')
-
-
-def siir_ahenk_dortlugu():
-    ic = kutu(6, 6, 200, 103, MAVI_A, MAVI)
-    ic += yazi(106, 24, 'Dörtlük İncelemesi', MAVI, kalin=True)
-    ic += yazi(106, 46, 'Geçit verir dumanlı dağ-lar,', LAC, kalin=True)
-    ic += yazi(106, 64, 'Yeşerir baharda bütün bağ-lar,', LAC, kalin=True)
-    ic += yazi(106, 82, 'Güneş doğar güzel yurd-uma,', LAC, kalin=True)
-    ic += yazi(106, 98, 'Selam olsun şanlı ord-uma.', LAC, kalin=True)
-    ic += kutu(212, 6, 142, 103, YES_A, YES)
-    ic += yazi(283, 28, 'Ahenk Unsurları', YES, kalin=True)
-    ic += yazi(283, 56, 'Ekler: -lar / -uma', LAC)
-    ic += yazi(283, 82, 'Sesler: -ağ / -rdu', KIR, kalin=True)
-    return svg(ic, 'Dörtlükte redif ve kafiye çözümlemesi kartı.')
-
-
-def anlam_kaymasi_kartlari():
-    kartlar = [
-        (6, 6, '1. Haftaya dönüyor.', 'Şimdiki → Gelecek', TUR, TUR_A),
-        (184, 6, '2. Bir gün balıkçı görür.', 'Geniş → Duyulan Geçmiş', MOR, MOR_A),
-        (6, 60, '3. Dün akşam ulaştı.', 'Geçmiş → Gerçek Geçmiş', YES, YES_A),
-        (184, 60, '4. Düzenli çalışacaksın!', 'Gelecek → Gereklilik/Emir', KIR, KIR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Fiilde anlam (zaman/kip) kayması örnek kartları.')
-
-
-def soz_sanati_dizeleri():
-    ic = kutu(6, 6, 348, 103, MOR_A, MOR)
-    ic += yazi(180, 26, 'Dize ve Dil Bilgisi Çözümlemesi', MOR, kalin=True)
-    ic += yazi(180, 54, '«İnlerdi kağnının tekerlekleri,', LAC, kalin=True)
-    ic += yazi(180, 76, 'Gecenin yıldızları Elif’e bakıp ağlardı.»', LAC, kalin=True)
-    ic += yazi(180, 98, 'Fiiller: inle-r-di · ağla-r-dı   |   Sanat: ?', MAVI, kalin=True)
-    return svg(ic, 'Kişileştirme sanatı ve birleşik çekimli fiil içeren dizeler.')
-
-
-def kagni_olay_sirasi():
-    adimlar = [
-        (6, '1. Yola Çıkış', 'Gece Cephane Yükü', MAVI, MAVI_A),
-        (94, '2. Engel', 'Kocabaş’ın Çökmesi', TUR, TUR_A),
-        (182, '3. Fedakârlık', 'Elif Boyundurukta', KIR, KIR_A),
-        (270, '4. Kararlılık', 'Cepheye İlerleyiş', YES, YES_A),
-    ]
-    ic = ''
-    for x, b1, b2, r, z in adimlar:
-        ic += kutu(x, 6, 84, 103, z, r)
-        ic += yazi(x + 42, 36, b1, r, kalin=True)
-        ic += yazi(x + 42, 70, b2, LAC, kalin=True)
-    return svg(ic, 'Mustafa Kemal’in Kağnısı şiirindeki olay örgüsü basamakları.')
-
-
-def birlesik_yapi_cekim_tablosu():
-    kartlar = [
-        (6, 6, 'geliyordu', 'Basit Yapı · Birleşik Çekim', MAVI, MAVI_A),
-        (184, 6, 'başarabilirsin', 'Birleşik Yapı · Basit Çekim', TUR, TUR_A),
-        (6, 60, 'fark etmiştik', 'Birleşik Yapı · Birleşik Çekim', YES, YES_A),
-        (184, 60, 'çalışmalıyız', 'Basit Yapı · Basit Çekim', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, b1, b2, r, z in kartlar:
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 20, b1, r, kalin=True)
-        ic += yazi(x + 85, y + 40, b2, LAC)
-    return svg(ic, 'Birleşik yapılı ve birleşik çekimli fiillerin karşılaştırılması.')
-
-
-def dusunceyi_gelistirme_karti():
-    ic = kutu(6, 6, 348, 103, CAM_A, CAM)
-    ic += yazi(180, 24, 'Millî Mücadele’de Cephe Gerisi (Bilgilendirici Metin)', CAM, kalin=True)
-    ic += yazi(180, 50, 'Atatürk, «Dünyada hiçbir milletin kadını, Anadolu kadınından daha fazla', LAC)
-    ic += yazi(180, 72, 'çalıştım diyemez.» demiştir. 1921-1922 yıllarında İnebolu’dan Ankara’ya', LAC)
-    ic += yazi(180, 94, 'kağnılarla tam 300.000 ton cephane taşınarak zafer kazanılmıştır.', MAVI, kalin=True)
-    return svg(ic, 'Tanık gösterme ve sayısal verilerden yararlanma içeren metin kartı.')
+GORSELLER = {1: '<svg viewBox="0 0 350 162" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mustafa Kemal’in Kağnısı '
+    'şiirinden dizeler ve tema kartı."><rect x="4" y="3" width="342" height="157" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Mustafa Kemal’in Kağnısı — Fazıl Hüsnü</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Dağlarca</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«Yediyordu Elif '
+    'kağnısını, kara geceden</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">geceden...</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kocabaş çok ihtiyardı, çok zayıftı, mahzundu</text><text x="11.0" y="113.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bütün bütün,</text><text '
+    'x="11.0" y="131.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d63a3a">Elif’cik boyunduruğun ucuna girdi, cephane</text><text x="11.0" y="150.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">gecikmesin diye!»</text></svg>',
+ 2: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fiilde çekim türü ve '
+    'sözcük yapısı inceleme kartları."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. taşıyordu taşı -</text><text x="87.5" y="49.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">yor - du (2 kip)</text><rect x="179" y="3" width="167" height="65" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. koruyabiliriz</text><text x="262.5" y="40.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">koru-y-abil-ir-iz</text><text x="262.5" '
+    'y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">(Yeterlilik)</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">3. izlemişti iz - le -</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">miş - ti (Yapım + 2</text><text x="87.5" y="127.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">kip)</text><rect x="179" '
+    'y="72" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="90.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. yardım '
+    'ettiler</text><text x="262.5" y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">yardım + et-ti-ler (1</text><text x="262.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">kip)</text></svg>',
+ 5: '<svg viewBox="0 0 350 172" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dörtlükte redif ve '
+    'kafiye çözümlemesi kartı."><rect x="4" y="3" width="342" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Dörtlük İncelemesi</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Geçit verir dumanlı dağ-lar,</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Yeşerir baharda bütün '
+    'bağ-lar,</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Güneş doğar güzel yurd-uma,</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Selam olsun şanlı ord-uma.</text><rect x="4" y="107" width="342" height="63" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="123.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Ahenk Unsurları</text><text x="11.0" y="141.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ekler: -lar / -uma</text><text x="11.0" '
+    'y="160.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Sesler: -ağ / '
+    '-rdu</text></svg>',
+ 6: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fiilde anlam (zaman/kip) '
+    'kayması örnek kartları."><rect x="4" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">1. '
+    'Haftaya dönüyor.</text><text x="87.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Şimdiki → Gelecek</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">2. Bir gün balıkçı</text><text x="262.5" y="40.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">görür.</text><text x="262.5" y="58.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Geniş → '
+    'Duyulan</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Geçmiş</text><rect x="4" y="91" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="118.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Dün akşam ulaştı.</text><text x="87.5" y="137.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Geçmiş → Gerçek</text><text x="87.5" y="156.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Geçmiş</text><rect x="179" y="91" width="167" '
+    'height="84" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">4. Düzenli</text><text x="262.5" y="128.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d63a3a">çalışacaksın!</text><text x="262.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Gelecek →</text><text x="262.5" y="165.7" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Gereklilik/Emir</text></svg>',
+ 7: '<svg viewBox="0 0 350 87" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kişileştirme sanatı ve '
+    'birleşik çekimli fiil içeren dizeler."><rect x="4" y="3" width="342" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Dize ve Dil Bilgisi Çözümlemesi</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">«İnlerdi kağnının tekerlekleri,</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Gecenin yıldızları Elif’e '
+    'bakıp ağlardı.»</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Fiiller: inle-r-di · ağla-r-dı | Sanat: ?</text></svg>',
+ 8: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mustafa Kemal’in Kağnısı '
+    'şiirindeki olay örgüsü basamakları."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Yola Çıkış</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Gece Cephane Yükü</text><rect x="179" y="3" width="167" height="46" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Engel</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Kocabaş’ın Çökmesi</text><rect x="4" y="53" '
+    'width="167" height="46" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">3. Fedakârlık</text><text x="87.5" y="89.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Elif '
+    'Boyundurukta</text><rect x="179" y="53" width="167" height="46" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="262.5" y="71.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">4. '
+    'Kararlılık</text><text x="262.5" y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Cepheye İlerleyiş</text></svg>',
+ 9: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Birleşik yapılı ve '
+    'birleşik çekimli fiillerin karşılaştırılması."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">geliyordu</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Basit Yapı · Birleşik</text><text x="87.5" y="58.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çekim</text><rect x="179" y="3" width="167" '
+    'height="65" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">başarabilirsin</text><text x="262.5" y="40.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Birleşik Yapı · '
+    'Basit</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Çekim</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">fark etmiştik</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Birleşik Yapı · Birleşik</text><text x="87.5" y="127.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çekim</text><rect '
+    'x="179" y="72" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="90.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">çalışmalıyız</text><text '
+    'x="262.5" y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Basit Yapı · Basit</text><text x="262.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Çekim</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = kagni_siir_karti()
-    s[2]['gorsel'] = fiil_cekim_yapi_kartlari()
-    s[5]['gorsel'] = siir_ahenk_dortlugu()
-    s[6]['gorsel'] = anlam_kaymasi_kartlari()
-    s[7]['gorsel'] = soz_sanati_dizeleri()
-    s[8]['gorsel'] = kagni_olay_sirasi()
-    s[9]['gorsel'] = birlesik_yapi_cekim_tablosu()
-    s[11]['gorsel'] = dusunceyi_gelistirme_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg
