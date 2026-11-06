@@ -1156,8 +1156,11 @@ def main():
         if 'class="metin-sayfa"' not in govde:
             govde = f'<div class="metin-sayfa">\n{govde}\n</div>'
         betik = ''
-        if '<script>' in eski:
-            betik = eski[eski.index('<script>'):eski.index('</script>') + len('</script>')]
+        alt_kisim = eski[eski.index('</main>'):]
+        if '<script>' in alt_kisim:
+            aday = alt_kisim[alt_kisim.index('<script>'):alt_kisim.index('</script>') + len('</script>')]
+            if 'requestNonPersonalizedAds' not in aday:
+                betik = aday
         html = sayfa(ad, baslik, aciklama, govde, kanonik=kanonik).replace('</body>', (betik + '\n' if betik else '') + '</body>')
         (PUBLIC / ad).write_text(html, encoding='utf-8')
 
