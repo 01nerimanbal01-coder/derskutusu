@@ -2,17 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 790 gönderi (Instagram: 0 bekleyen — 1813/1813 yayında; Facebook: 790 bekleyen).
-
-## bilgi-7-turkce-7
-Sıra: 2026-11-19 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-7-turkce-7.png
-
-```
-Bunu biliyor muydunuz? Görsel okuma yaparken görseldeki renk, sembol ve figürlerin doğrudan anlattığı açık bilginin yanı sıra verilmek istenen örtük mesaj da çözümlenir.
-Faydalı bulduysanız arkadaşınızı etiketleyin.
-📘 7. sınıf Türkçe 7. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/7-turkce-hafta-7
-#derskutusu #türkçe #7sınıf #bunubiliyormuydunuz #maarifmodeli
-```
+Toplam 789 gönderi (Instagram: 0 bekleyen — 1813/1813 yayında; Facebook: 789 bekleyen).
 
 ## bilgi-8-din-kulturu-7
 Sıra: 2026-11-20 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-8-din-kulturu-7.png
