@@ -192,10 +192,10 @@ def cevapli_kitapcik_uret(kaynak_pdf: Path, anahtar_pdf: Path, kitapcik: str, he
                     shape = page.new_shape()
                     shape.draw_rect(r, radius=0.22)
                     shape.finish(
-                        color=(0.06, 0.50, 0.23),
+                        color=None,
                         fill=(0.09, 0.68, 0.31),
                         fill_opacity=0.20,
-                        width=0.75,
+                        width=0,
                     )
                     shape.commit()
 
@@ -206,10 +206,10 @@ def cevapli_kitapcik_uret(kaynak_pdf: Path, anahtar_pdf: Path, kitapcik: str, he
     sh0 = p0.new_shape()
     sh0.draw_rect(r_etiket, radius=0.25)
     sh0.finish(
-        color=(0.05, 0.45, 0.21),
+        color=None,
         fill=(0.07, 0.55, 0.26),
         fill_opacity=0.96,
-        width=0.75,
+        width=0,
     )
     sh0.commit()
     if FONT_YOL.exists():
