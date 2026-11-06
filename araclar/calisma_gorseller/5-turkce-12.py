@@ -1,96 +1,132 @@
-"""5. sınıf Türkçe 12. hafta (Atatürk ve Çiftlik Dinleme Metni ve Tema Değerlendirmesi) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""5-turkce-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Atatürk Orman '
+    'Çiftliği’nin kuruluş süreci ve ana fikir şeması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">1925 Öncesi: Çorak ve Bataklık</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Uzmanlar: «Burada ot bile bitmez!»</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Susuz ve '
+    'verimsiz arazi</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Atatürk’ün Azmi ve Bilim</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Toprak ıslahı + Binlerce fidan</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Yeşil Atatürk Orman Çiftliği</text></svg>',
+ 2: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kök ve yapım eki almış '
+    'dört türemiş sözcük kartı."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Çift-lik</text><text x="87.5" y="49.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kök: çift (İsim) + -lik</text><rect x="179" y="3" width="167" height="65" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Bak-ım-lı</text><text x="262.5" y="40.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kök: bak- (Fiil) +</text><text x="262.5" '
+    'y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">-ım-lı</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">3. Orman-cı</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kök: orman (İsim) +</text><text x="87.5" y="127.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">-cı</text><rect x="179" y="72" width="167" '
+    'height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="99.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Bil-gi</text><text x="262.5" y="118.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kök: bil- (Fiil) + '
+    '-gi</text></svg>',
+ 5: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Büyük harfler ve kesme '
+    'işareti kullanım panosu."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">1. '
+    'Unvan Yazımı</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Gazi Mustafa Kemal</text><text x="87.5" y="58.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Paşa (Doğru)</text><rect x="179" y="3" width="167" height="65" rx="5" '
+    'fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. Bayram Adı</text><text x="262.5" y="40.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Cumhuriyet</text><text x="262.5" y="58.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bayramı’nda '
+    '(Doğru)</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="87.5" '
+    'y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">3. Kurum Adı '
+    'Eki (!)</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Türk Dil Kurumu’na</text><text x="87.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">(Kesme olmaz!)</text><rect x="179" y="72" width="167" height="65" rx="5" '
+    'fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="262.5" y="90.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">4. Şehir Özel Adı</text><text x="262.5" y="109.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ankara’dan '
+    '(Kesme</text><text x="262.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ile ayrılır)</text></svg>',
+ 6: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Geçiş ve bağlantı '
+    'ifadeleri tamamlama şeması."><rect x="4" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">1. Düşünce Yönü</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Değiştirme</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Arazi çoraktı; [1:</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">fakat] pes '
+    'edilmedi.</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. '
+    'Neden-Sonuç</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Bağlantısı</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Çok çalışıldı; [2: bu</text><text x="262.5" y="77.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yüzden] yeşerdi.</text><rect x="4" y="91" '
+    'width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Özetleme ve</text><text x="87.5" y="128.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Toparlama</text><text '
+    'x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">[3: '
+    'Kısacası] azim</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">engelleri aştı.</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="118.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">Geçiş İfadeleri fakat</text><text x="262.5" y="137.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">· bu yüzden ·</text><text x="262.5" y="156.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">kısacası</text></svg>',
+ 8: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Metnin serim, düğüm ve '
+    'çözüm bölümleri akışı."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Serim (Giriş)</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Örnek çiftlik için</text><text x="87.5" y="58.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">arazi arayışı</text><rect x="179" y="3" width="167" height="65" '
+    'rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">2. Düğüm (Engel)</text><text x="262.5" y="40.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Arazinin çorak ve</text><text x="262.5" '
+    'y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bataklık '
+    'olması</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" '
+    'y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. Düğüm '
+    '(Çaba)</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Bataklığın kurutulup</text><text x="87.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">ağaçlandırılması</text><rect x="179" y="72" width="167" height="65" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="90.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">4. Çözüm (Sonuç)</text><text x="262.5" y="109.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yemyeşil örnek</text><text x="262.5" '
+    'y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">çiftliğin '
+    'doğuşu</text></svg>',
+ 9: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yapım eki ve çekim eki '
+    'karşılaştırma kartları."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">1. '
+    'su-la-ma</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Yapım eki → Türemiş</text><text x="87.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">sözcük</text><rect x="179" y="3" width="167" height="65" rx="5" fill="#fdeaea" '
+    'stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d63a3a">2. ağaç-lar (!)</text><text x="262.5" y="40.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">-lar çoğul çekim</text><text x="262.5" '
+    'y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ekidir → '
+    'Basit!</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">3. '
+    'üre-tim</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Yapım eki → Türemiş</text><text x="87.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">sözcük</text><rect x="179" y="72" width="167" height="65" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">4. köy-lü</text><text x="262.5" y="109.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yapım eki → Türemiş</text><text x="262.5" y="127.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">sözcük</text></svg>',
+ 11: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bilgilendirici metin '
+     'yazma planı ve bağlantı ifadeleri kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+     'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#12a150">Yazma Planı: Giriş &amp; Gelişme</text><text x="11.0" y="37.8" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Konu: Atatürk’ün doğa sevgisi</text><text '
+     'x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Örnek: '
+     'Çorak toprağı yeşertmesi</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">Bağlantı ve Sonuç Bölümü</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Bağlaç: bu yüzden / çünkü / fakat</text><text x="11.0" y="122.6" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Toparlama: kısacası / '
+     'özetle</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = ikili_kart(
-        '1925 Öncesi: Çorak ve Bataklık', 'Uzmanlar: «Burada ot bile bitmez!»', 'Susuz ve verimsiz arazi', TUR, TUR_A,
-        'Atatürk’ün Azmi ve Bilim', 'Toprak ıslahı + Binlerce fidan', 'Yeşil Atatürk Orman Çiftliği', YES, YES_A,
-        'Atatürk Orman Çiftliği’nin kuruluş süreci ve ana fikir şeması.'
-    )
-    s[2]['gorsel'] = dortlu_kart([
-        ('1. Çift-lik', 'Kök: çift (İsim) + -lik', MAVI, MAVI_A),
-        ('2. Bak-ım-lı', 'Kök: bak- (Fiil) + -ım-lı', YES, YES_A),
-        ('3. Orman-cı', 'Kök: orman (İsim) + -cı', TUR, TUR_A),
-        ('4. Bil-gi', 'Kök: bil- (Fiil) + -gi', MOR, MOR_A),
-    ], 'Kök ve yapım eki almış dört türemiş sözcük kartı.')
-    s[5]['gorsel'] = dortlu_kart([
-        ('1. Unvan Yazımı', 'Gazi Mustafa Kemal Paşa (Doğru)', YES, YES_A),
-        ('2. Bayram Adı', 'Cumhuriyet Bayramı’nda (Doğru)', MAVI, MAVI_A),
-        ('3. Kurum Adı Eki (!)', 'Türk Dil Kurumu’na (Kesme olmaz!)', KIR, KIR_A),
-        ('4. Şehir Özel Adı', 'Ankara’dan (Kesme ile ayrılır)', CAM, CAM_A),
-    ], 'Büyük harfler ve kesme işareti kullanım panosu.')
-    s[6]['gorsel'] = dortlu_kart([
-        ('1. Düşünce Yönü Değiştirme', 'Arazi çoraktı; [1: fakat] pes edilmedi.', TUR, TUR_A),
-        ('2. Neden-Sonuç Bağlantısı', 'Çok çalışıldı; [2: bu yüzden] yeşerdi.', MAVI, MAVI_A),
-        ('3. Özetleme ve Toparlama', '[3: Kısacası] azim engelleri aştı.', YES, YES_A),
-        ('Geçiş İfadeleri', 'fakat · bu yüzden · kısacası', MOR, MOR_A),
-    ], 'Geçiş ve bağlantı ifadeleri tamamlama şeması.')
-    s[7]['gorsel'] = dortlu_kart([
-        ('Olay', 'Çorak arazinin çiftliğe dönüşümü', MAVI, MAVI_A),
-        ('Kişiler / Varlık Kadrosu', 'Atatürk, uzmanlar, çalışanlar', YES, YES_A),
-        ('Yer (Mekân)', 'Ankara (AOÇ arazisi)', TUR, TUR_A),
-        ('Zaman', '1925 yılı bahar ayları', MOR, MOR_A),
-    ], 'Atatürk ve Çiftlik metninin hikâye unsurları haritası.')
-    s[8]['gorsel'] = dortlu_kart([
-        ('1. Serim (Giriş)', 'Örnek çiftlik için arazi arayışı', MAVI, MAVI_A),
-        ('2. Düğüm (Engel)', 'Arazinin çorak ve bataklık olması', KIR, KIR_A),
-        ('3. Düğüm (Çaba)', 'Bataklığın kurutulup ağaçlandırılması', TUR, TUR_A),
-        ('4. Çözüm (Sonuç)', 'Yemyeşil örnek çiftliğin doğuşu', YES, YES_A),
-    ], 'Metnin serim, düğüm ve çözüm bölümleri akışı.')
-    s[9]['gorsel'] = dortlu_kart([
-        ('1. su-la-ma', 'Yapım eki → Türemiş sözcük', YES, YES_A),
-        ('2. ağaç-lar (!)', '-lar çoğul çekim ekidir → Basit!', KIR, KIR_A),
-        ('3. üre-tim', 'Yapım eki → Türemiş sözcük', MAVI, MAVI_A),
-        ('4. köy-lü', 'Yapım eki → Türemiş sözcük', MOR, MOR_A),
-    ], 'Yapım eki ve çekim eki karşılaştırma kartları.')
-    s[11]['gorsel'] = ikili_kart(
-        'Yazma Planı: Giriş & Gelişme', 'Konu: Atatürk’ün doğa sevgisi', 'Örnek: Çorak toprağı yeşertmesi', YES, YES_A,
-        'Bağlantı ve Sonuç Bölümü', 'Bağlaç: bu yüzden / çünkü / fakat', 'Toparlama: kısacası / özetle', MAVI, MAVI_A,
-        'Bilgilendirici metin yazma planı ve bağlantı ifadeleri kartı.'
-    )
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -1,155 +1,105 @@
-"""5. sınıf Arapça 11. hafta (Okulumda: Okulun Bölümleri, Harf-i Cerler ve Eyne Soru Kalıbı) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); Türkçe yazı Noto Sans 11 pt, Arapça yazı Arial 20 pt (K150 EK); kesir yok (K155)."""
+"""5-arapca-11 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-TR_FONT = 'font-family="Noto Sans, sans-serif" font-size="10.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="19.2" font-weight="700"'
-
-
-def svg(w, h, ic, etiket, en_fazla=16):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def tr_yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    agirlik = ' font-weight="700"' if kalin else ' font-weight="500"'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {TR_FONT}{agirlik} fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def okul_kapisi_tabelalari():
-    ic = kutu(6, 6, 170, 78, MOR_A, MOR)
-    ic += tr_yazi(91, 22, '1. Kapı · Kitap Rafları', MOR, kalin=True)
-    ic += ar_yazi(91, 48, 'مَكْتَبَةٌ (Dişil - ة)', LAC)
-    ic += tr_yazi(91, 70, 'Tanıtım: 1 → ?', MOR, kalin=True)
-
-    ic += kutu(184, 6, 170, 78, TUR_A, TUR)
-    ic += tr_yazi(269, 22, '2. Kapı · Okul Kantini', TUR, kalin=True)
-    ic += ar_yazi(269, 48, 'مَقْصَفٌ (Eril)', LAC)
-    ic += tr_yazi(269, 70, 'Tanıtım: 2 → ?', TUR, kalin=True)
-    return svg(360, 90, ic, 'Kütüphane ve kantin kapı tabelaları.', 15)
-
-
-def dort_mekan_fi_kartlari():
-    kartlar = [
-        ('1. Sınıf', 'اَلصَّفُّ', MAVI, MAVI_A),
-        ('2. Kütüphane', 'اَلْمَكْتَبَةُ', YES, YES_A),
-        ('3. Laboratuvar', 'اَلْمُخْتَبَرُ', TUR, TUR_A),
-        ('4. Bahçe', 'اَلْحَدِيقَةُ', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, kel, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 74, z, r)
-        ic += tr_yazi(x + 41, 22, bas, r, kalin=True)
-        ic += f'<line x1="{x + 8}" y1="29" x2="{x + 74}" y2="29" stroke="{r}" stroke-width="0.9"/>'
-        ic += ar_yazi(x + 41, 58, kel, LAC)
-    return svg(360, 86, ic, 'Dört okul mekânı kartı.', 15)
-
-
-def semsi_kameri_mekan_kartlari():
-    kartlar = [
-        ('1. Kart', 'اَلْمَدْرَسَةُ', MAVI, MAVI_A),
-        ('2. Kart', 'اَلطَّالِبُ', KIR, KIR_A),
-        ('3. Kart', 'اَلْمَكْتَبَةُ', YES, YES_A),
-        ('4. Kart', 'اَلْمُخْتَبَرُ', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, kel, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 74, z, r)
-        ic += tr_yazi(x + 41, 22, bas, r, kalin=True)
-        ic += f'<line x1="{x + 8}" y1="29" x2="{x + 74}" y2="29" stroke="{r}" stroke-width="0.9"/>'
-        ic += ar_yazi(x + 41, 58, kel, LAC)
-    return svg(360, 86, ic, 'Şemsî ve kamerî harfli dört kelime kartı.', 15)
-
-
-def nobetci_ogretmen_diyalog():
-    ic = kutu(6, 6, 348, 38, MAVI_A, MAVI)
-    ic += tr_yazi(16, 29, 'Öğretmenin Sorusu:', MAVI, 'start', kalin=True)
-    ic += tr_yazi(240, 29, '? (Kız öğrenciyi soruyor)', MAVI, kalin=True)
-
-    ic += kutu(6, 50, 348, 40, YES_A, YES)
-    ic += tr_yazi(16, 74, 'Zeynep’in Cevabı:', YESIL_K, 'start', kalin=True)
-    ic += ar_yazi(240, 75, 'هِيَ فِي الْمَكْتَبَةِ.', LAC)
-    return svg(360, 96, ic, 'Nöbetçi öğretmen ve Zeynep arasındaki yer sorma diyaloğu.', 16)
-
-
-def mekteb_mektebe_karsilastirma():
-    ic = kutu(6, 6, 170, 78, MAVI_A, MAVI)
-    ic += tr_yazi(91, 22, '1. Kavram · Eril (Müzekker)', MAVI, kalin=True)
-    ic += ar_yazi(91, 48, 'مَكْتَبٌ', LAC)
-    ic += tr_yazi(91, 71, 'Yuvarlak te (ة) yok', LAC)
-
-    ic += kutu(184, 6, 170, 78, MOR_A, MOR)
-    ic += tr_yazi(269, 22, '2. Kavram · Dişil (Müennes)', MOR, kalin=True)
-    ic += ar_yazi(269, 48, 'مَكْتَبَةٌ', LAC)
-    ic += tr_yazi(269, 71, 'Sonunda yuvarlak te (ة) var', LAC)
-    return svg(360, 90, ic, 'Mektebün ve mektebetün kelimelerinin karşılaştırma kartları.', 15)
-
-
-def koridor_diyalog_akisi():
-    adimlar = [
-        ('1. Selam', 'اَلسَّلَامُ عَلَيْكُمْ', MAVI, MAVI_A),
-        ('2. Soru', 'إِلَى أَيْنَ تَذْهَبُ؟', TUR, TUR_A),
-        ('3. Yönelme', 'إِلَى الْمَقْصَفِ', YES, YES_A),
-        ('4. Veda', 'إِلَى اللِّقَاءِ', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, ar_ifade, r, z) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 74, z, r)
-        ic += tr_yazi(x + 41, 22, bas, r, kalin=True)
-        ic += ar_yazi(x + 41, 56, ar_ifade, LAC)
-    return svg(360, 86, ic, 'Okul koridorunda karşılaşma ve yönelme diyalog akışı.', 15)
-
-
-def okul_rehberi_denetim_tablosu():
-    satirlar = [
-        ('I. Laboratuvar (Eril)', 'هٰذَا مُخْتَبَرٌ', MAVI, MAVI_A),
-        ('II. Bahçe (Dişil)', 'هٰذِهِ حَدِيقَةٌ', YES, YES_A),
-        ('III. Kantinde (Kesra)', 'فِي الْمَقْصَفِ', TUR, TUR_A),
-        ('IV. Okulda (Hatalı!)', 'فِي الْمَدْرَسَةُ', KIR, KIR_A),
-    ]
-    ic = ''
-    for i, (bas, ar_c, r, z) in enumerate(satirlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 46
-        ic += kutu(x, y, 172, 40, z, r)
-        ic += tr_yazi(x + 86, y + 14, bas, r, kalin=True)
-        ic += ar_yazi(x + 86, y + 35, ar_c, LAC)
-    return svg(360, 98, ic, 'Okul bölümleri ve harf-i cer kullanım denetim tablosu.', 16)
-
-
-def harfi_cer_hareke_donusumu():
-    ic = kutu(6, 6, 170, 78, YES_A, YES)
-    ic += tr_yazi(91, 22, 'Bulunma Edatı (فِي)', YESIL_K, kalin=True)
-    ic += ar_yazi(91, 48, 'اَلْمُخْتَبَرُ ← فِي الْمُخْتَبَرِ', LAC)
-    ic += tr_yazi(91, 71, 'Son hareke: -u → -i (Kesra)', LAC)
-
-    ic += kutu(184, 6, 170, 78, MAVI_A, MAVI)
-    ic += tr_yazi(269, 22, 'Yönelme Edatı (إِلَى)', MAVI, kalin=True)
-    ic += ar_yazi(269, 48, 'اَلْمَدْرَسَةُ ← إِلَى الْمَدْرَسَةِ', LAC)
-    ic += tr_yazi(269, 71, 'Son hareke: -u → -i (Kesra)', LAC)
-    return svg(360, 90, ic, 'Fî ve ilâ harf-i cerlerinin son harekeyi kesraya dönüştürmesi.', 15)
+GORSELLER = {1: '<svg viewBox="0 0 350 113" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kütüphane ve kantin kapı '
+    'tabelaları."><rect x="4" y="3" width="167" height="107" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" '
+    'y="36.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">1. Kapı · Kitap '
+    'Rafları</text><text x="87.5" y="61.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">مَكْتَبَةٌ (Dişil -</text><text x="87.5" y="85.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">ة) · Tanıtım: 1 → ?</text><rect x="179" y="3" width="167" height="107" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="24.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. Kapı · Okul</text><text x="262.5" y="48.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Kantini</text><text x="262.5" y="73.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">مَقْصَفٌ (Eril) '
+    '·</text><text x="262.5" y="97.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Tanıtım: 2 → ?</text></svg>',
+ 2: '<svg viewBox="0 0 350 126" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört okul mekânı '
+    'kartı."><rect x="4" y="3" width="167" height="58" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="24.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Sınıf</text><text '
+    'x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">اَلصَّفُّ</text><rect x="179" y="3" width="167" height="58" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="24.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2. Kütüphane</text><text x="262.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">اَلْمَكْتَبَةُ</text><rect x="4" y="65" width="167" height="58" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="86.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">3. Laboratuvar</text><text x="87.5" y="110.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">اَلْمُخْتَبَرُ</text><rect x="179" y="65" '
+    'width="167" height="58" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="86.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Bahçe</text><text x="262.5" y="110.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">اَلْحَدِيقَةُ</text></svg>',
+ 5: '<svg viewBox="0 0 350 126" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Şemsî ve kamerî harfli '
+    'dört kelime kartı."><rect x="4" y="3" width="167" height="58" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="24.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Kart</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">اَلْمَدْرَسَةُ</text><rect x="179" y="3" width="167" height="58" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="262.5" y="24.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">2. Kart</text><text x="262.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">اَلطَّالِبُ</text><rect x="4" y="65" width="167" height="58" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="86.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">3. Kart</text><text x="87.5" y="110.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">اَلْمَكْتَبَةُ</text><rect x="179" y="65" width="167" '
+    'height="58" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="86.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">4. Kart</text><text x="262.5" y="110.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">اَلْمُخْتَبَرُ</text></svg>',
+ 6: '<svg viewBox="0 0 350 88" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nöbetçi öğretmen ve '
+    'Zeynep arasındaki yer sorma diyaloğu."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="24.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Öğretmenin Sorusu:</text><text x="87.5" y="48.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">? (Kız öğrenciyi</text><text x="87.5" y="73.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">soruyor)</text><rect x="179" y="3" '
+    'width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="24.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Zeynep’in Cevabı:</text><text x="262.5" '
+    'y="48.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">هِيَ '
+    'فِي</text><text x="262.5" y="73.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">الْمَكْتَبَةِ.</text></svg>',
+ 7: '<svg viewBox="0 0 350 168" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mektebün ve mektebetün '
+    'kelimelerinin karşılaştırma kartları."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Kavram · Eril (Müzekker)</text><text x="11.0" y="43.5" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">مَكْتَبٌ</text><text x="11.0" y="68.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yuvarlak te (ة) yok</text><rect x="4" y="86" '
+    'width="342" height="80" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="102.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">2. Kavram · Dişil (Müennes)</text><text '
+    'x="11.0" y="126.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">مَكْتَبَةٌ</text><text x="11.0" y="151.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Sonunda yuvarlak te (ة) var</text></svg>',
+ 8: '<svg viewBox="0 0 350 150" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Okul koridorunda '
+    'karşılaşma ve yönelme diyalog akışı."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="24.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Selam</text><text x="87.5" y="48.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">اَلسَّلَامُ</text><text x="87.5" y="73.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">عَلَيْكُمْ</text><rect x="179" y="3" width="167" height="82" '
+    'rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="24.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. Soru</text><text x="262.5" y="48.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">إِلَى أَيْنَ</text><text x="262.5" y="73.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">تَذْهَبُ؟</text><rect '
+    'x="4" y="89" width="167" height="58" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="110.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Yönelme</text><text '
+    'x="87.5" y="134.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">إِلَى '
+    'الْمَقْصَفِ</text><rect x="179" y="89" width="167" height="58" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="110.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Veda</text><text x="262.5" y="134.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">إِلَى اللِّقَاءِ</text></svg>',
+ 9: '<svg viewBox="0 0 350 126" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Okul bölümleri ve harf-i '
+    'cer kullanım denetim tablosu."><rect x="4" y="3" width="167" height="58" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="24.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">I. Laboratuvar (Eril)</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">هٰذَا مُخْتَبَرٌ</text><rect x="179" y="3" width="167" height="58" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="24.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">II. Bahçe (Dişil)</text><text x="262.5" y="48.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">هٰذِهِ حَدِيقَةٌ</text><rect x="4" y="65" '
+    'width="167" height="58" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="86.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">III. Kantinde (Kesra)</text><text x="87.5" '
+    'y="110.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">فِي '
+    'الْمَقْصَفِ</text><rect x="179" y="65" width="167" height="58" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text '
+    'x="262.5" y="86.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">IV. '
+    'Okulda (Hatalı!)</text><text x="262.5" y="110.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">فِي الْمَدْرَسَةُ</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = okul_kapisi_tabelalari()
-    s[2]['gorsel'] = dort_mekan_fi_kartlari()
-    s[5]['gorsel'] = semsi_kameri_mekan_kartlari()
-    s[6]['gorsel'] = nobetci_ogretmen_diyalog()
-    s[7]['gorsel'] = mekteb_mektebe_karsilastirma()
-    s[8]['gorsel'] = koridor_diyalog_akisi()
-    s[9]['gorsel'] = okul_rehberi_denetim_tablosu()
-    s[11]['gorsel'] = harfi_cer_hareke_donusumu()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

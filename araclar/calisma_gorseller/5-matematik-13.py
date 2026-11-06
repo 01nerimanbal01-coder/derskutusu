@@ -1,93 +1,137 @@
-"""5. sınıf Matematik 13. hafta (Dört İşlem Problemleri ve Dikdörtgenin Çevre-Alan İlişkisi) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""5-matematik-13 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kat modeliyle kalem ve '
+    'silgi problemi çözüm şeması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Kat Modeli (Toplam = 120)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Silgi: [1 Kutu] · Kalem: [3 Kutu + 8]</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Toplam = 4 Kutu + 8 = '
+    '120</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Çözüm '
+    'Adımları</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">1) Fazlalığı çıkar: 120 − 8 = 112</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">2) 4’e böl: 112 ÷ 4 = ?</text></svg>',
+ 2: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Çevresi 20 cm olan dört '
+    'farklı dikdörtgenin kenar ve alanları."><rect x="4" y="3" width="167" height="84" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">1. Dikdörtgen (1 cm</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">× 9 cm)</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çevre = 20 cm · Alan</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">= 9 '
+    'br²</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" '
+    'y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Dikdörtgen '
+    '(2 cm</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">× 8 cm)</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Çevre = 20 cm · Alan</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">= ? br²</text><rect x="4" y="91" width="167" height="84" rx="5" '
+    'fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">3. Dikdörtgen (3 cm</text><text x="87.5" y="128.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">× 7 cm)</text><text '
+    'x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çevre '
+    '= 20 cm · Alan</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">= ? br²</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">4. Dikdörtgen (4 cm</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">× 6 cm)</text><text x="262.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çevre = 20 cm · Alan</text><text x="262.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">= 24 '
+    'br²</text></svg>',
+ 5: '<svg viewBox="0 0 350 90" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tersinden çalışma '
+    'stratejisiyle başlangıç sayısını bulma."><rect x="4" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">İleriye Doğru İşlem</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">[Sayı] → (× 4) → (− 18)</text><text x="87.5" y="58.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">= 82</text><text '
+    'x="87.5" y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">4 '
+    'katının 18 eksiği 82</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Tersinden Çalışma</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Çözümü</text><text x="262.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">1) 82 + 18 = 100</text><text x="262.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0e8fa8">2) 100 ÷ 4 = '
+    '?</text></svg>',
+ 6: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört dikdörtgenin yarı '
+    'çevre ve çevre uzunluğu kontrolü."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">K Dikdörtgeni (3 cm</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">ve 11 cm)</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yarı çevre: 3 + 11 =</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">14 '
+    'cm</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" '
+    'y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">L Dikdörtgeni '
+    '(5 cm</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">ve 9 cm)</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Yarı çevre: 5 + 9 = 14</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">cm</text><rect x="4" y="91" width="167" height="84" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">M Dikdörtgeni (6 cm</text><text x="87.5" y="128.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">ve 8 cm)</text><text '
+    'x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yarı '
+    'çevre: 6 + 8 = 14</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">cm</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">N Dikdörtgeni (4 cm</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">ve 12 cm)</text><text x="262.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yarı çevre: 4 + 12 =</text><text x="262.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">16 cm '
+    '(!)</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="24 m çevreli bahçede en '
+    'büyük alanı veren kenar seçimi."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Bahçe Teli Uzunluğu</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Çevre = 24 m → Yarı Çevre = 12 m</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Kısa + Uzun = 12 '
+    'm</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Olası Kenar '
+    'Çiftleri</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">(1,11) (2,10) (3,9) (4,8)</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#2451d6">En yakın: (5,7 → 35) ve (6,6 → 36)</text></svg>',
+ 8: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sabit 24 cm çevreli dört '
+    'dikdörtgenin alan karşılaştırması."><rect x="4" y="3" width="167" height="65" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">1 cm × 11 cm (Çevre</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">= 24 cm)</text><text x="87.5" y="58.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Alan = 1 × 11 = 11 br²</text><rect x="179" '
+    'y="3" width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2 cm × 10 cm '
+    '(Çevre</text><text x="262.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">= 24 cm)</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Alan = 2 × 10 = 20 br²</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">4 cm × 8 cm (Çevre =</text><text x="87.5" y="109.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">24 cm)</text><text x="87.5" y="127.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Alan = 4 × 8 = 32 '
+    'br²</text><rect x="179" y="72" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" '
+    'y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">5 cm × 7 cm '
+    '(Çevre =</text><text x="262.5" y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">24 cm)</text><text x="262.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Alan = 5 × 7 = 35 br²</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A ve B internet '
+    'paketlerinin 20 GB için maliyet karşılaştırması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">A Paketi (20 GB Kullanım)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Sabit: 350 TL + (20 × 20 TL)</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Toplam = 350 + 400 = 750 '
+    'TL</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">B Paketi (20 GB '
+    'Kullanım)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Sabit: 500 TL + (20 × 10 TL)</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#12a150">Toplam = 500 + 200 = 700 TL</text></svg>',
+ 11: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eşit çevreli (22 cm) P '
+     've R dikdörtgenlerinin alan karşılaştırması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+     'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#7c3aed">P Dikdörtgeni (Uzak Kenarlar)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Kısa: 2 cm · Uzun: 9 cm</text><text x="11.0" y="56.6" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">Çevre = 22 cm · Alan = '
+     '18 br²</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+     'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">R Dikdörtgeni '
+     '(Yakın Kenarlar)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0b2257">Kısa: 5 cm · Uzun: 6 cm</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Çevre = 22 cm · Alan = 30 br²</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = ikili_kart(
-        'Kat Modeli (Toplam = 120)', 'Silgi: [1 Kutu] · Kalem: [3 Kutu + 8]', 'Toplam = 4 Kutu + 8 = 120', MAVI, MAVI_A,
-        'Çözüm Adımları', '1) Fazlalığı çıkar: 120 − 8 = 112', '2) 4’e böl: 112 ÷ 4 = ?', YES, YES_A,
-        'Kat modeliyle kalem ve silgi problemi çözüm şeması.'
-    )
-    s[2]['gorsel'] = dortlu_kart([
-        ('1. Dikdörtgen (1 cm × 9 cm)', 'Çevre = 20 cm · Alan = 9 br²', KIR, KIR_A),
-        ('2. Dikdörtgen (2 cm × 8 cm)', 'Çevre = 20 cm · Alan = ? br²', TUR, TUR_A),
-        ('3. Dikdörtgen (3 cm × 7 cm)', 'Çevre = 20 cm · Alan = ? br²', MAVI, MAVI_A),
-        ('4. Dikdörtgen (4 cm × 6 cm)', 'Çevre = 20 cm · Alan = 24 br²', YES, YES_A),
-    ], 'Çevresi 20 cm olan dört farklı dikdörtgenin kenar ve alanları.')
-    s[5]['gorsel'] = ikili_kart(
-        'İleriye Doğru İşlem', '[Sayı] → (× 4) → (− 18) = 82', '4 katının 18 eksiği 82', TUR, TUR_A,
-        'Tersinden Çalışma Çözümü', '1) 82 + 18 = 100', '2) 100 ÷ 4 = ?', CAM, CAM_A,
-        'Tersinden çalışma stratejisiyle başlangıç sayısını bulma.'
-    )
-    s[6]['gorsel'] = dortlu_kart([
-        ('K Dikdörtgeni (3 cm ve 11 cm)', 'Yarı çevre: 3 + 11 = 14 cm', YES, YES_A),
-        ('L Dikdörtgeni (5 cm ve 9 cm)', 'Yarı çevre: 5 + 9 = 14 cm', MAVI, MAVI_A),
-        ('M Dikdörtgeni (6 cm ve 8 cm)', 'Yarı çevre: 6 + 8 = 14 cm', MOR, MOR_A),
-        ('N Dikdörtgeni (4 cm ve 12 cm)', 'Yarı çevre: 4 + 12 = 16 cm (!)', KIR, KIR_A),
-    ], 'Dört dikdörtgenin yarı çevre ve çevre uzunluğu kontrolü.')
-    s[7]['gorsel'] = ikili_kart(
-        'Bahçe Teli Uzunluğu', 'Çevre = 24 m → Yarı Çevre = 12 m', 'Kısa + Uzun = 12 m', YES, YES_A,
-        'Olası Kenar Çiftleri', '(1,11) (2,10) (3,9) (4,8)', 'En yakın: (5,7 → 35) ve (6,6 → 36)', MAVI, MAVI_A,
-        '24 m çevreli bahçede en büyük alanı veren kenar seçimi.'
-    )
-    s[8]['gorsel'] = dortlu_kart([
-        ('1 cm × 11 cm (Çevre = 24 cm)', 'Alan = 1 × 11 = 11 br²', KIR, KIR_A),
-        ('2 cm × 10 cm (Çevre = 24 cm)', 'Alan = 2 × 10 = 20 br²', TUR, TUR_A),
-        ('4 cm × 8 cm (Çevre = 24 cm)', 'Alan = 4 × 8 = 32 br²', MAVI, MAVI_A),
-        ('5 cm × 7 cm (Çevre = 24 cm)', 'Alan = 5 × 7 = 35 br²', YES, YES_A),
-    ], 'Sabit 24 cm çevreli dört dikdörtgenin alan karşılaştırması.')
-    s[9]['gorsel'] = ikili_kart(
-        'A Paketi (20 GB Kullanım)', 'Sabit: 350 TL + (20 × 20 TL)', 'Toplam = 350 + 400 = 750 TL', TUR, TUR_A,
-        'B Paketi (20 GB Kullanım)', 'Sabit: 500 TL + (20 × 10 TL)', 'Toplam = 500 + 200 = 700 TL', YES, YES_A,
-        'A ve B internet paketlerinin 20 GB için maliyet karşılaştırması.'
-    )
-    s[11]['gorsel'] = ikili_kart(
-        'P Dikdörtgeni (Uzak Kenarlar)', 'Kısa: 2 cm · Uzun: 9 cm', 'Çevre = 22 cm · Alan = 18 br²', MOR, MOR_A,
-        'R Dikdörtgeni (Yakın Kenarlar)', 'Kısa: 5 cm · Uzun: 6 cm', 'Çevre = 22 cm · Alan = 30 br²', YES, YES_A,
-        'Eşit çevreli (22 cm) P ve R dikdörtgenlerinin alan karşılaştırması.'
-    )
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

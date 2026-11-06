@@ -1,93 +1,132 @@
-"""5. sınıf Din Kültürü ve Ahlak Bilgisi 12. hafta (Namazın İnsana Kazandırdıkları ve Tahiyyat Duası) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""5-din-kulturu-ve-ahlak-bilgisi-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nehir benzetmesi ve beş '
+    'vakit namazın temizlik kazandırması şeması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Hadis-i Şerif Benzetmesi</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Günde 5 Kez Nehirde Yıkanmak</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0e8fa8">Maddi kirlerden '
+    'arınma</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Beş Vakit '
+    'Namaz</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Abdest + Manevi Huzur</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#12a150">Hata ve günahlardan arınma</text></svg>',
+ 2: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tahiyyat (Ettehiyyâtü) '
+    'duasının dört ana bölümü."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Bölüm: İbadetler</text><text x="87.5" y="49.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ettehiyyâtü lillâhi</text><text x="87.5" y="68.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">vessalevâtü...</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2. Bölüm:</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Peygamber’e Selam</text><text x="262.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Esselâmü aleyke</text><text x="262.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">eyyühen-nebiyyü...</text><rect x="4" y="91" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">3. Bölüm: Salih</text><text x="87.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Kullara Selam</text><text x="87.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Esselâmü aleynâ ve</text><text x="87.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">alâ '
+    'ibâdillâhis...</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Bölüm: Kelime-i</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Şehadet</text><text x="262.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Eşhedü en lâ ilâhe</text><text x="262.5" y="165.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">illallah...</text></svg>',
+ 5: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Namazın bireysel ve '
+    'toplumsal kazanımları karşılaştırma şeması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Bireysel Kazanımlar</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Manevi huzur ve iç güven</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Temizlik + Zaman '
+    'disiplini</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Toplumsal '
+    'Kazanımlar (?)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Cemaatle aynı safta eşitlik</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">? → Kardeşlik ve dayanışma</text></svg>',
+ 6: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tahiyyat duasındaki '
+    'selam cümlesi tamamlama kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Tahiyyat Duası 3. Cümle</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">« ... ve alâ ibâdillâhis-sâlihîn »</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">Boşluğa gelecek ifade '
+    'hangisidir?</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">Cümlenin Anlamı</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Selam bize ve Allah’ın salih (iyi) kullarına</text><text x="11.0" y="122.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">olsun.</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ankebût suresi 45. ayet '
+    've ahlaki olgunluk kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Ankebût Suresi, 45. Ayet</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">«Şüphesiz namaz, insanı hayâsızlıktan ve</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">kötülükten '
+    'alıkoyar.»</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Ahlaki '
+    'Yansıması</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Doğruluk, dürüstlük, tevazu</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#2451d6">Kötü söz ve hileden kaçınma</text></svg>',
+ 8: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tahiyyat duasının okunuş '
+    'sırası kartları."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Sözlü-Bedeni-Mali</text><text x="87.5" y="49.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">İbadet</text><text x="87.5" y="68.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Ettehiyyâtü lillâhi...</text><rect x="179" y="3" width="167" height="84" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Hz. Peygamber’e</text><text x="262.5" y="40.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Selam</text><text '
+    'x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Esselâmü aleyke</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">eyyühen-nebiyyü...</text><rect x="4" y="91" width="167" height="84" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. Bize ve Salihlere</text><text x="87.5" y="128.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Selam</text><text '
+    'x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Esselâmü aleynâ ve</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">alâ...</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="118.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">4. Tevhit ve Şehadet</text><text x="262.5" y="137.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Eşhedü en lâ ilâhe</text><text x="262.5" '
+    'y="156.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">illallah...</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört rekatlık namazda '
+    'Tahiyyat duasının okunduğu oturuşlar."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">2. Rekat Sonu (İlk Oturuş)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Ka’de-i Ûlâ</text><text x="11.0" y="56.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Tahiyyat duası okunur</text><rect x="4" '
+    'y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="85.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">4. Rekat Sonu (Son '
+    'Oturuş)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Ka’de-i Ahîre</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#12a150">Tahiyyat + Salli-Barik + Rabbena</text></svg>',
+ 11: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Beş vakit namaz '
+     'çizelgesinin zaman ve temizlik bilincine katkısı."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">Sabah · Öğle · İkindi</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Gündüzü planlama</text><text x="87.5" y="58.8" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">disiplini</text><rect x="179" y="3" '
+     'width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Akşam · Yatsı</text><text x="262.5" y="40.0" '
+     'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Akşamı ve</text><text '
+     'x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">dinlenmeyi planlama</text><rect x="4" y="72" width="167" height="84" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+     'stroke-width="0.75"/><text x="87.5" y="90.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0e8fa8">Günde 5 Vakit</text><text x="87.5" y="109.1" text-anchor="middle" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Abdest</text><text x="87.5" y="127.9" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">El, yüz, ayak ve</text><text x="87.5" '
+     'y="146.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">beden '
+     'temizliği</text><rect x="179" y="72" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+     'x="262.5" y="99.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+     'fill="#12a150">Elbise ve Secde Yeri</text><text x="262.5" y="118.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="500" fill="#0b2257">Çevre ve kıyafet</text><text x="262.5" y="137.3" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">temizliği bilinci</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = ikili_kart(
-        'Hadis-i Şerif Benzetmesi', 'Günde 5 Kez Nehirde Yıkanmak', 'Maddi kirlerden arınma', CAM, CAM_A,
-        'Beş Vakit Namaz', 'Abdest + Manevi Huzur', 'Hata ve günahlardan arınma', YES, YES_A,
-        'Nehir benzetmesi ve beş vakit namazın temizlik kazandırması şeması.'
-    )
-    s[2]['gorsel'] = dortlu_kart([
-        ('1. Bölüm: İbadetler', 'Ettehiyyâtü lillâhi vessalevâtü...', MAVI, MAVI_A),
-        ('2. Bölüm: Peygamber’e Selam', 'Esselâmü aleyke eyyühen-nebiyyü...', YES, YES_A),
-        ('3. Bölüm: Salih Kullara Selam', 'Esselâmü aleynâ ve alâ ibâdillâhis...', TUR, TUR_A),
-        ('4. Bölüm: Kelime-i Şehadet', 'Eşhedü en lâ ilâhe illallah...', MOR, MOR_A),
-    ], 'Tahiyyat (Ettehiyyâtü) duasının dört ana bölümü.')
-    s[5]['gorsel'] = ikili_kart(
-        'Bireysel Kazanımlar', 'Manevi huzur ve iç güven', 'Temizlik + Zaman disiplini', MAVI, MAVI_A,
-        'Toplumsal Kazanımlar (?)', 'Cemaatle aynı safta eşitlik', '? → Kardeşlik ve dayanışma', YES, YES_A,
-        'Namazın bireysel ve toplumsal kazanımları karşılaştırma şeması.'
-    )
-    s[6]['gorsel'] = ikili_kart(
-        'Tahiyyat Duası 3. Cümle', '« ... ve alâ ibâdillâhis-sâlihîn »', 'Boşluğa gelecek ifade hangisidir?', MOR, MOR_A,
-        'Cümlenin Anlamı', 'Selam bize ve Allah’ın', 'salih (iyi) kullarına olsun.', TUR, TUR_A,
-        'Tahiyyat duasındaki selam cümlesi tamamlama kartı.'
-    )
-    s[7]['gorsel'] = ikili_kart(
-        'Ankebût Suresi, 45. Ayet', '«Şüphesiz namaz, insanı', 'hayâsızlıktan ve kötülükten alıkoyar.»', YES, YES_A,
-        'Ahlaki Yansıması', 'Doğruluk, dürüstlük, tevazu', 'Kötü söz ve hileden kaçınma', MAVI, MAVI_A,
-        'Ankebût suresi 45. ayet ve ahlaki olgunluk kartı.'
-    )
-    s[8]['gorsel'] = dortlu_kart([
-        ('1. Sözlü-Bedeni-Mali İbadet', 'Ettehiyyâtü lillâhi...', MAVI, MAVI_A),
-        ('2. Hz. Peygamber’e Selam', 'Esselâmü aleyke eyyühen-nebiyyü...', YES, YES_A),
-        ('3. Bize ve Salihlere Selam', 'Esselâmü aleynâ ve alâ...', TUR, TUR_A),
-        ('4. Tevhit ve Şehadet', 'Eşhedü en lâ ilâhe illallah...', MOR, MOR_A),
-    ], 'Tahiyyat duasının okunuş sırası kartları.')
-    s[9]['gorsel'] = ikili_kart(
-        '2. Rekat Sonu (İlk Oturuş)', 'Ka’de-i Ûlâ', 'Tahiyyat duası okunur', MAVI, MAVI_A,
-        '4. Rekat Sonu (Son Oturuş)', 'Ka’de-i Ahîre', 'Tahiyyat + Salli-Barik + Rabbena', YES, YES_A,
-        'Dört rekatlık namazda Tahiyyat duasının okunduğu oturuşlar.'
-    )
-    s[11]['gorsel'] = dortlu_kart([
-        ('Sabah · Öğle · İkindi', 'Gündüzü planlama disiplini', MAVI, MAVI_A),
-        ('Akşam · Yatsı', 'Akşamı ve dinlenmeyi planlama', MOR, MOR_A),
-        ('Günde 5 Vakit Abdest', 'El, yüz, ayak ve beden temizliği', CAM, CAM_A),
-        ('Elbise ve Secde Yeri', 'Çevre ve kıyafet temizliği bilinci', YES, YES_A),
-    ], 'Beş vakit namaz çizelgesinin zaman ve temizlik bilincine katkısı.')
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

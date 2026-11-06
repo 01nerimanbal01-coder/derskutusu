@@ -1,95 +1,143 @@
-"""5. sınıf İngilizce 13. hafta (Clothes, Possessive Adjectives, Routines & Question Tags) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""5-ingilizce-13 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kış ve yaz mevsimine '
+    'uygun giysi ve aksesuar kartları."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Winter Weather (Snowy &amp; Cold)</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Thick coat · Warm scarf · Gloves</text><text '
+    'x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Kış '
+    'için kalın ve sıcak giysiler</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Summer Weather (Sunny &amp; Hot)</text><text x="11.0" y="103.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Thin T-shirt · Sunglasses · Hat</text><text '
+    'x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Yaz '
+    'için ince ve rahat giysiler</text></svg>',
+ 2: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İngilizce kişi zamirleri '
+    've iyelik sıfatları eşleşme tablosu."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">I → my / You → your</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">my raincoat · your</text><text x="87.5" y="58.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">jacket</text><rect x="179" y="3" width="167" '
+    'height="65" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">He → his (Erkek) his</text><text x="262.5" '
+    'y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">blue jumper · '
+    'his</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">watch</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="87.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">She → her (Kız) her</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">red handbag · her</text><text x="87.5" y="127.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">skirt</text><rect x="179" y="72" width="167" '
+    'height="65" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="90.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">We → our / They →</text><text x="262.5" '
+    'y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">their our '
+    'classroom</text><text x="262.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">· their uniforms</text></svg>',
+ 5: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sıklık zarfları '
+    '(Frequency Adverbs) ve yüzdelik oranları."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Always (100%)</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Her zaman (Every</text><text x="87.5" y="58.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">day)</text><rect x="179" y="3" width="167" '
+    'height="65" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Usually (80%)</text><text x="262.5" y="40.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Genellikle '
+    '(Most</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">days)</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Sometimes (50%)</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bazen (On some</text><text x="87.5" y="127.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">days)</text><rect x="179" y="72" width="167" '
+    'height="65" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="90.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Never (0% — Mert’s</text><text x="262.5" '
+    'y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d63a3a">Tie)</text><text x="262.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Asla / Hiçbir zaman</text></svg>',
+ 6: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zeynep’in sabah rutini '
+    've saat ifadeleri."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">07:15 '
+    '(Quarter past</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">seven)</text><text x="87.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Wake up and wash</text><text x="87.5" y="77.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">face</text><rect x="179" y="3" width="167" '
+    'height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">07:30 (Half past</text><text x="262.5" '
+    'y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">seven)</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Have breakfast with</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">family</text><rect x="4" y="91" width="167" height="84" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">07:45 (Quarter to</text><text x="87.5" y="128.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">eight)</text><text x="87.5" y="146.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Zeynep gets '
+    'dressed</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">for school</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="118.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">08:15 (Quarter past</text><text x="262.5" y="137.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">eight)</text><text x="262.5" y="156.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Arrive at school</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Geniş zamanda onay '
+    'soruları (Question Tags) kuralları."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">1. Positive → Negative Tag</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">You wear gloves, don’t you?</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">She wears a coat, doesn’t '
+    'she?</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">2. Negative → '
+    'Positive Tag</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">You don’t wear a tie, do you?</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d63a3a">She doesn’t like hats, does she?</text></svg>',
+ 8: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sıklık zarflarının '
+    '%100’den %0’a sıralama kartları."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">1. En Sık: Always</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">(100%)</text><text x="87.5" y="58.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">★★★★ (Her zaman)</text><rect x="179" y="3" '
+    'width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. Sık: Usually (80%)</text><text x="262.5" '
+    'y="49.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">★★★☆ '
+    '(Genellikle)</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="87.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. '
+    'Orta: Sometimes</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">(50%)</text><text x="87.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">★★☆☆ (Bazen)</text><rect x="179" y="72" width="167" height="65" rx="5" '
+    'fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="99.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">4. Hiç: Never (0%)</text><text x="262.5" y="118.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">☆☆☆☆ (Asla)</text></svg>',
+ 9: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İyelik sıfatı ve onay '
+    'sorusu doğruluk kontrol kartları."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">1. Card (Correct)</text><text x="87.5" y="49.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ali → his thick jumper</text><rect x="179" y="3" width="167" '
+    'height="65" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. Card (Correct)</text><text x="262.5" '
+    'y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ayşe → her '
+    'new</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">handbag</text><rect x="4" y="72" width="167" height="84" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="87.5" y="90.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">3. Card (Error: They</text><text x="87.5" y="109.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">→ their!)</text><text x="87.5" y="127.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Can and Efe → his</text><text x="87.5" '
+    'y="146.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">trainers '
+    '(✗)</text><rect x="179" y="72" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="99.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Card '
+    '(Correct)</text><text x="262.5" y="118.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Pelin wears...,</text><text x="262.5" y="137.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">doesn’t she?</text></svg>',
+ 11: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kış giyim alışkanlığı '
+     've okula gidiş saati yazma ipuçları."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">1. Winter Clothes Prompt</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">I usually wear my thick coat, scarf and</text><text x="11.0" '
+     'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">boots in '
+     'winter.</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+     'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Daily '
+     'Routine &amp; Time Prompt</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0b2257">I go to school at eight o’clock (08:00) every</text><text x="11.0" y="122.6" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">day.</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = ikili_kart(
-        'Winter Weather (Snowy & Cold)', 'Thick coat · Warm scarf · Gloves', 'Kış için kalın ve sıcak giysiler', MAVI, MAVI_A,
-        'Summer Weather (Sunny & Hot)', 'Thin T-shirt · Sunglasses · Hat', 'Yaz için ince ve rahat giysiler', TUR, TUR_A,
-        'Kış ve yaz mevsimine uygun giysi ve aksesuar kartları.'
-    )
-    s[2]['gorsel'] = dortlu_kart([
-        ('I → my / You → your', 'my raincoat · your jacket', MAVI, MAVI_A),
-        ('He → his (Erkek)', 'his blue jumper · his watch', YES, YES_A),
-        ('She → her (Kız)', 'her red handbag · her skirt', MOR, MOR_A),
-        ('We → our / They → their', 'our classroom · their uniforms', TUR, TUR_A),
-    ], 'İngilizce kişi zamirleri ve iyelik sıfatları eşleşme tablosu.')
-    s[5]['gorsel'] = dortlu_kart([
-        ('Always (100%)', 'Her zaman (Every day)', YES, YES_A),
-        ('Usually (80%)', 'Genellikle (Most days)', MAVI, MAVI_A),
-        ('Sometimes (50%)', 'Bazen (On some days)', TUR, TUR_A),
-        ('Never (0% — Mert’s Tie)', 'Asla / Hiçbir zaman', KIR, KIR_A),
-    ], 'Sıklık zarfları (Frequency Adverbs) ve yüzdelik oranları.')
-    s[6]['gorsel'] = dortlu_kart([
-        ('07:15 (Quarter past seven)', 'Wake up and wash face', MAVI, MAVI_A),
-        ('07:30 (Half past seven)', 'Have breakfast with family', YES, YES_A),
-        ('07:45 (Quarter to eight)', 'Zeynep gets dressed for school', TUR, TUR_A),
-        ('08:15 (Quarter past eight)', 'Arrive at school', MOR, MOR_A),
-    ], 'Zeynep’in sabah rutini ve saat ifadeleri.')
-    s[7]['gorsel'] = ikili_kart(
-        '1. Positive → Negative Tag', 'You wear gloves, don’t you?', 'She wears a coat, doesn’t she?', YES, YES_A,
-        '2. Negative → Positive Tag', 'You don’t wear a tie, do you?', 'She doesn’t like hats, does she?', KIR, KIR_A,
-        'Geniş zamanda onay soruları (Question Tags) kuralları.'
-    )
-    s[8]['gorsel'] = dortlu_kart([
-        ('1. En Sık: Always (100%)', '★★★★ (Her zaman)', YES, YES_A),
-        ('2. Sık: Usually (80%)', '★★★☆ (Genellikle)', MAVI, MAVI_A),
-        ('3. Orta: Sometimes (50%)', '★★☆☆ (Bazen)', TUR, TUR_A),
-        ('4. Hiç: Never (0%)', '☆☆☆☆ (Asla)', KIR, KIR_A),
-    ], 'Sıklık zarflarının %100’den %0’a sıralama kartları.')
-    s[9]['gorsel'] = dortlu_kart([
-        ('1. Card (Correct)', 'Ali → his thick jumper', YES, YES_A),
-        ('2. Card (Correct)', 'Ayşe → her new handbag', MAVI, MAVI_A),
-        ('3. Card (Error: They → their!)', 'Can and Efe → his trainers (✗)', KIR, KIR_A),
-        ('4. Card (Correct)', 'Pelin wears..., doesn’t she?', MOR, MOR_A),
-    ], 'İyelik sıfatı ve onay sorusu doğruluk kontrol kartları.')
-    s[11]['gorsel'] = ikili_kart(
-        '1. Winter Clothes Prompt', 'I usually wear my thick coat,', 'scarf and boots in winter.', MAVI, MAVI_A,
-        '2. Daily Routine & Time Prompt', 'I go to school at', 'eight o’clock (08:00) every day.', YES, YES_A,
-        'Kış giyim alışkanlığı ve okula gidiş saati yazma ipuçları.'
-    )
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

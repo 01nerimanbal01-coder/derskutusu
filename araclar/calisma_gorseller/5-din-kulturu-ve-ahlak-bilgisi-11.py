@@ -1,142 +1,121 @@
-"""5. sınıf Din Kültürü ve Ahlak Bilgisi 11. hafta (Namazı Bozan Durumlar, Sehiv Secdesi, Cemaatle Namaz ve Namazın Kazandırdıkları) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-11 pt Noto Sans (K150 EK); kesir yok (K155)."""
+"""5-din-kulturu-ve-ahlak-bilgisi-11 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=16):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.3, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def dort_namaz_durum_karti():
-    kartlar = [
-        ('1. Kart · Unutma', 'İlk oturuş (vacip) unutuldu', YES, YES_A),
-        ('2. Kart · Konuşma', 'Kapıdakine sesli yanıt verildi', KIR, KIR_A),
-        ('3. Kart · Farz Terki', 'Rükû ve secde yapılmadı', TUR, TUR_A),
-        ('4. Kart · Abdest', 'Namaz içinde abdest bozuldu', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, aciklama, r, z) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, r)
-        ic += yazi(x + 86, y + 15, bas, 10.2, r)
-        ic += yazi(x + 86, y + 31, aciklama, 9.5, LAC, ince=True)
-    return svg(360, 94, ic, 'Namazda karşılaşılan dört farklı durum kartı.', 15)
-
-
-def cemaat_namazlari_kartlari():
-    kartlar = [
-        ('1. Cuma', '10 Rekât · Hutbeli', YES, YES_A),
-        ('2. Bayram', '2 Rekât · Tekbirli', MAVI, MAVI_A),
-        ('3. Teravih', '20 Rekât · Ramazan', TUR, TUR_A),
-        ('4. Cenaze', 'Ayakta · 4 Tekbir', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 10.2, r)
-        ic += f'<line x1="{x + 8}" y1="32" x2="{x + 74}" y2="32" stroke="{r}" stroke-width="0.9"/>'
-        ic += yazi(x + 41, 56, alt, 9.2, LAC, ince=True)
-    return svg(360, 84, ic, 'Cuma, bayram, teravih ve cenaze namazı kartları.', 15)
-
-
-def cuma_bayram_karsilastirma_panosu():
-    satirlar = [
-        ('I. Rekât Sayısı', 'Cuma farzı: 2 · Bayram: 2', MAVI, MAVI_A),
-        ('II. Hutbe Zamanı', 'Cuma: Sonra · Bayram: Önce', KIR, KIR_A),
-        ('III. Kılınış Şekli', 'Her ikisi de cemaatle kılınır', YES, YES_A),
-        ('IV. İlave Tekbir', 'Bayramda her rekâtta 3 tekbir', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, bilgi, r, z) in enumerate(satirlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, r)
-        ic += yazi(x + 86, y + 15, bas, 10.1, r)
-        ic += yazi(x + 86, y + 31, bilgi, 9.3, LAC, ince=True)
-    return svg(360, 94, ic, 'Cuma ve bayram namazı özelliklerini karşılaştırma panosu.', 15)
-
-
-def ramazan_namazi_tanitim_karti():
-    ic = kutu(6, 6, 348, 76, TUR_A, TUR)
-    ic += yazi(180, 23, 'Ramazan Ayına Özgü Namaz Bilgi Kartı', 10.5, TUR)
-    ic += yazi(180, 45, 'Vakti: Yatsı namazının son sünnetinden sonra, vitirden önce', 9.7, LAC)
-    ic += yazi(180, 66, 'Hükmü: Sünnet  |  Rekât Sayısı: 20 Rekât (2 veya 4 rekâtta selamla)', 9.5, TUR, ince=True)
-    return svg(360, 88, ic, 'Ramazan ayında yatsıdan sonra kılınan 20 rekâtlık namaz kartı.', 15)
-
-
-def ankebut_ayet_panosu():
-    ic = kutu(6, 6, 348, 76, YES_A, YES)
-    ic += yazi(180, 23, 'Kur’an-ı Kerim Mesajı · Ankebût Suresi, 45. Ayet', 10.4, YESIL_K)
-    ic += yazi(180, 46, '«Şüphesiz namaz, insanı hayasızlıktan ve kötülükten alıkoyar.»', 10.0, LAC)
-    ic += yazi(180, 67, 'Günde 5 vakit İlahi huzura çıkma bilinci → Güzel ahlak ve dürüstlük', 9.4, YESIL_K, ince=True)
-    return svg(360, 88, ic, 'Ankebût suresi 45. ayet ve ahlaki etkisi kartı.', 15)
-
-
-def sehiv_secdesi_adimlari():
-    adimlar = [
-        ('A Adımı', 'Sağa selam ver', MAVI, MAVI_A),
-        ('B Adımı', 'Peş peşe 2 secde', TUR, TUR_A),
-        ('C Adımı', 'Duaları oku', YES, YES_A),
-        ('D Adımı', 'İki yana selam', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, met, r, z) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 10.2, r)
-        ic += yazi(x + 41, 55, met, 9.3, LAC, ince=True)
-    return svg(360, 84, ic, 'Sehiv secdesi uygulama basamakları.', 15)
-
-
-def namazin_kazandirdiklari_semasi():
-    ic = kutu(6, 6, 170, 76, MAVI_A, MAVI)
-    ic += yazi(91, 22, 'Bireysel Kazanımlar', 10.3, MAVI)
-    ic += yazi(91, 44, '• İç huzuru ve güzel ahlak', 9.6, LAC, ince=True)
-    ic += yazi(91, 64, '• Zaman ve temizlik disiplini', 9.6, LAC, ince=True)
-
-    ic += kutu(184, 6, 170, 76, YES_A, YES)
-    ic += yazi(269, 22, 'Toplumsal Kazanımlar', 10.3, YESIL_K)
-    ic += yazi(269, 44, '• Aynı safta eşitlik ve birlik', 9.6, LAC, ince=True)
-    ic += yazi(269, 64, '• Komşuluk ve yardımlaşma', 9.6, LAC, ince=True)
-    return svg(360, 88, ic, 'Namazın bireysel ve toplumsal kazanımları şeması.', 15)
-
-
-def farz_vacip_terki_karti():
-    ic = kutu(6, 6, 170, 76, KIR_A, KIR)
-    ic += yazi(91, 22, '1. Durum · Farzın Terki', 10.2, KIR)
-    ic += yazi(91, 44, 'Rükû veya secde hiç yapılmadı', 9.6, LAC, ince=True)
-    ic += yazi(91, 65, 'Sonuç: Namaz bozulur (İade)', 9.6, KIR)
-
-    ic += kutu(184, 6, 170, 76, YES_A, YES)
-    ic += yazi(269, 22, '2. Durum · Vacibin Unutulması', 10.2, YESIL_K)
-    ic += yazi(269, 44, 'Zamm-ı sure unutularak atlandı', 9.6, LAC, ince=True)
-    ic += yazi(269, 65, 'Sonuç: Sehiv secdesi yeterlidir', 9.6, YESIL_K)
-    return svg(360, 88, ic, 'Farzın terk edilmesi ile vacibin unutulması farkı kartı.', 15)
+GORSELLER = {1: '<svg viewBox="0 0 350 152" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Namazda karşılaşılan '
+    'dört farklı durum kartı."><rect x="4" y="4" width="167" height="69" rx="6" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="87.5" y="23.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">1. '
+    'Kart · Unutma</text><text x="87.5" y="43.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">İlk oturuş (vacip)</text><text x="87.5" y="62.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">unutuldu</text><rect x="179" y="4" width="167" height="69" rx="6" '
+    'fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="23.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">2. Kart · Konuşma</text><text x="262.5" y="43.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kapıdakine sesli</text><text x="262.5" '
+    'y="62.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yanıt '
+    'verildi</text><rect x="4" y="79" width="167" height="69" rx="6" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" '
+    'y="98.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. Kart · Farz '
+    'Terki</text><text x="87.5" y="118.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Rükû ve secde</text><text x="87.5" y="137.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">yapılmadı</text><rect x="179" y="79" width="167" height="69" rx="6" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="98.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Kart · Abdest</text><text x="262.5" y="118.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Namaz içinde</text><text x="262.5" y="137.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">abdest '
+    'bozuldu</text></svg>',
+ 2: '<svg viewBox="0 0 350 114" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cuma, bayram, teravih ve '
+    'cenaze namazı kartları."><rect x="4" y="4" width="167" height="50" rx="6" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="87.5" y="23.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">1. '
+    'Cuma</text><text x="87.5" y="43.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">10 Rekât · Hutbeli</text><rect x="179" y="4" width="167" height="50" rx="6" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="262.5" y="23.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">2. Bayram</text><text x="262.5" y="43.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">2 Rekât · Tekbirli</text><rect x="4" y="60" width="167" height="50" rx="6" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="79.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">3. Teravih</text><text x="87.5" y="99.1" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">20 Rekât · Ramazan</text><rect x="179" y="60" width="167" '
+    'height="50" rx="6" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="79.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Cenaze</text><text x="262.5" y="99.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ayakta · 4 '
+    'Tekbir</text></svg>',
+ 5: '<svg viewBox="0 0 350 152" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cuma ve bayram namazı '
+    'özelliklerini karşılaştırma panosu."><rect x="4" y="4" width="167" height="69" rx="6" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="23.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">I. Rekât Sayısı</text><text x="87.5" y="43.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Cuma farzı: 2 ·</text><text x="87.5" y="62.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bayram: 2</text><rect x="179" y="4" '
+    'width="167" height="69" rx="6" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="23.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">II. Hutbe Zamanı</text><text x="262.5" '
+    'y="43.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Cuma: Sonra '
+    '·</text><text x="262.5" y="62.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Bayram: Önce</text><rect x="4" y="79" width="167" height="69" rx="6" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="98.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">III. Kılınış Şekli</text><text x="87.5" y="118.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Her ikisi de</text><text x="87.5" y="137.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">cemaatle kılınır</text><rect x="179" y="79" '
+    'width="167" height="69" rx="6" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="98.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">IV. İlave Tekbir</text><text x="262.5" '
+    'y="118.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bayramda '
+    'her</text><text x="262.5" y="137.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">rekâtta 3 tekbir</text></svg>',
+ 6: '<svg viewBox="0 0 350 112" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ramazan ayında yatsıdan '
+    'sonra kılınan 20 rekâtlık namaz kartı."><rect x="4" y="4" width="342" height="105" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="12.0" y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Ramazan Ayına Özgü Namaz Bilgi Kartı</text><text x="12.0" y="39.7" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Vakti: Yatsı namazının son '
+    'sünnetinden</text><text x="12.0" y="58.9" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">sonra, vitirden önce</text><text x="12.0" y="78.1" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#ee7d12">Hükmü: Sünnet | Rekât Sayısı: 20 Rekât (2</text><text x="12.0" '
+    'y="97.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#ee7d12">veya 4 rekâtta '
+    'selamla)</text></svg>',
+ 7: '<svg viewBox="0 0 350 131" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ankebût suresi 45. ayet '
+    've ahlaki etkisi kartı."><rect x="4" y="4" width="342" height="124" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="12.0" y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0f6b45">Kur’an-ı Kerim Mesajı · Ankebût Suresi, 45.</text><text x="12.0" y="39.7" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Ayet</text><text x="12.0" y="58.9" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">«Şüphesiz namaz, insanı hayasızlıktan '
+    've</text><text x="12.0" y="78.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">kötülükten alıkoyar.»</text><text x="12.0" y="97.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0f6b45">Günde 5 vakit İlahi huzura çıkma bilinci →</text><text x="12.0" y="116.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0f6b45">Güzel ahlak ve '
+    'dürüstlük</text></svg>',
+ 8: '<svg viewBox="0 0 350 114" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sehiv secdesi uygulama '
+    'basamakları."><rect x="4" y="4" width="167" height="50" rx="6" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="23.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">A '
+    'Adımı</text><text x="87.5" y="43.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sağa selam ver</text><rect x="179" y="4" width="167" height="50" rx="6" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="23.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">B Adımı</text><text x="262.5" y="43.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Peş peşe 2 secde</text><rect x="4" y="60" width="167" height="50" rx="6" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="79.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">C Adımı</text><text x="87.5" y="99.1" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Duaları oku</text><rect x="179" y="60" width="167" height="50" '
+    'rx="6" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="79.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">D Adımı</text><text x="262.5" y="99.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İki yana selam</text></svg>',
+ 9: '<svg viewBox="0 0 350 143" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Namazın bireysel ve '
+    'toplumsal kazanımları şeması."><rect x="4" y="4" width="342" height="66" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="12.0" y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Bireysel Kazanımlar</text><text x="12.0" y="39.7" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• İç huzuru ve güzel ahlak</text><text x="12.0" y="58.9" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Zaman ve temizlik '
+    'disiplini</text><rect x="4" y="74" width="342" height="66" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="12.0" '
+    'y="90.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Toplumsal '
+    'Kazanımlar</text><text x="12.0" y="109.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">• Aynı safta eşitlik ve birlik</text><text x="12.0" y="128.9" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Komşuluk ve yardımlaşma</text></svg>',
+ 11: '<svg viewBox="0 0 350 143" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Farzın terk edilmesi '
+     'ile vacibin unutulması farkı kartı."><rect x="4" y="4" width="342" height="66" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+     'stroke-width="0.75"/><text x="12.0" y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#d63a3a">1. Durum · Farzın Terki</text><text x="12.0" y="39.7" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Rükû veya secde hiç yapılmadı</text><text x="12.0" y="58.9" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Sonuç: Namaz bozulur '
+     '(İade)</text><rect x="4" y="74" width="342" height="66" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="12.0" '
+     'y="90.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">2. Durum · '
+     'Vacibin Unutulması</text><text x="12.0" y="109.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#0b2257">Zamm-ı sure unutularak atlandı</text><text x="12.0" y="128.9" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Sonuç: Sehiv secdesi yeterlidir</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = dort_namaz_durum_karti()
-    s[2]['gorsel'] = cemaat_namazlari_kartlari()
-    s[5]['gorsel'] = cuma_bayram_karsilastirma_panosu()
-    s[6]['gorsel'] = ramazan_namazi_tanitim_karti()
-    s[7]['gorsel'] = ankebut_ayet_panosu()
-    s[8]['gorsel'] = sehiv_secdesi_adimlari()
-    s[9]['gorsel'] = namazin_kazandirdiklari_semasi()
-    s[11]['gorsel'] = farz_vacip_terki_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

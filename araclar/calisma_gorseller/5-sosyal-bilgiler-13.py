@@ -1,95 +1,159 @@
-"""5. sınıf Sosyal Bilgiler 13. hafta (Komşularımızla İlişkiler ve Ortak Miras Ögeleri) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""5-sosyal-bilgiler-13 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 169" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkiye’nin komşu '
+    'ülkeleri ve başlıca sınır kapıları."><rect x="4" y="3" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Batı: Bulgaristan &amp; Yunanistan</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kapıkule ve İpsala Sınır Kapıları</text><rect '
+    'x="4" y="50" width="342" height="44" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="66.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Kuzeydoğu: Gürcistan '
+    '&amp; Nahçıvan</text><text x="11.0" y="84.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Sarp ve Dilucu Sınır Kapıları</text><rect x="4" y="97" width="342" height="23" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#d97706">Doğu: İran:</tspan> Gürbulak Sınır '
+    'Kapısı</text><rect x="4" y="123" width="342" height="44" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" '
+    'y="139.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Güney: Irak '
+    '&amp; Suriye</text><text x="11.0" y="157.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Habur ve Cilvegözü Kapıları</text></svg>',
+ 2: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkiye’deki somut, '
+    'somut olmayan ve karma miras örnekleri."><rect x="4" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">1. Göbeklitepe</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">(Şanlıurfa)</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Taşınmaz Somut</text><text x="87.5" y="77.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kültürel '
+    'Miras</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="262.5" '
+    'y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">2. Pamukkale '
+    '-</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0e8fa8">Hierapolis</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Doğal + Kültürel →</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Karma Miras</text><rect x="4" y="91" width="167" height="84" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">3. Karagöz ve Ebru</text><text x="87.5" y="128.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Sanatı</text><text '
+    'x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Somut '
+    'Olmayan</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kültürel Miras</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">4. Divriği Ulu Camii</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">(Sivas)</text><text x="262.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Taşınmaz Somut</text><text x="262.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kültürel '
+    'Miras</text></svg>',
+ 5: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkiye’nin komşu '
+    'ülkelerle ihracat ve ithalat ürünleri."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Türkiye’nin İhracatı (Dış Satım)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Otomotiv · Makine · Beyaz Eşya</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Tekstil · Demir-Çelik · '
+    'Gıda</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Türkiye’nin '
+    'İthalatı (Dış Alım)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Ham Petrol · Doğal Gaz</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Enerji Hammaddeleri (İran, Irak, Az.)</text></svg>',
+ 6: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Somut ve somut olmayan '
+    'kültürel miras örneklerinin ayrımı."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Efes Antik Kenti</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">(İzmir)</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Somut Miras (Antik</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Mimari)</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2. Selimiye Camii</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">(Edirne)</text><text x="262.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Somut Miras (Mimar</text><text x="262.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sinan '
+    'Eseri)</text><rect x="4" y="91" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" '
+    'y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">3. Çini ve '
+    'Ebru</text><text x="87.5" y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Sanatı</text><text x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Somut Olmayan</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Miras (El Sanatı)</text><rect x="179" y="91" width="167" height="84" '
+    'rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">4. Nemrut Dağı</text><text x="262.5" y="128.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">(Adıyaman)</text><text x="262.5" y="146.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Somut Miras '
+    '(Anıt</text><text x="262.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Heykeller)</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Karma miras alanlarının '
+    'doğal ve kültürel bileşenleri."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Doğal Oluşum Boyutu</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Peri Bacaları (Kapadokya)</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0e8fa8">Beyaz Travertenler '
+    '(Pamukkale)</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">Kültürel / Tarihi Boyutu</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Kaya Kiliseleri ve Yeraltı Şehirleri</text><text x="11.0" y="122.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Hierapolis Antik '
+    'Kenti</text></svg>',
+ 8: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TANAP ve '
+    'Bakü-Tiflis-Kars koridorunun doğudan batıya güzergâhı."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">1. Azerbaycan (Doğu</text><text x="87.5" y="40.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Başlangıç)</text><text x="87.5" y="58.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bakü — Hazar '
+    'Enerji</text><text x="87.5" y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ve Demiryolu</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">2. Gürcistan</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">(Kafkasya Geçişi)</text><text x="262.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tiflis — Ara Bağlantı</text><text x="262.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Ülkesi</text><rect x="4" y="91" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">3. Türkiye (Anadolu</text><text x="87.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Köprüsü)</text><text x="87.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kars → Eskişehir →</text><text x="87.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Edirne '
+    'Hattı</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Yunanistan '
+    '/</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Bulgaristan</text><text x="262.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Avrupa’ya Açılan Batı</text><text x="262.5" y="165.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kapısı</text></svg>',
+ 9: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kültürel mirası koruma '
+    'bilinci doğru ve yanlış tutumlar."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Müzeleri Kurallı</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Gezmek (✓)</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mirasımızı tanıma ve</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">koruma</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Duvarlara İsim</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Kazımak (✗)</text><text x="262.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tarihi dokuya zarar</text><text x="262.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">verir '
+    '(Yanlış!)</text><rect x="4" y="91" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">El '
+    'Sanatlarını</text><text x="87.5" y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Yaşatmak (✓)</text><text x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kuşaktan kuşağa</text><text x="87.5" y="165.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">aktarım</text><rect x="179" y="91" '
+    'width="167" height="84" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Okul Projeleriyle</text><text x="262.5" '
+    'y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Tanıtmak '
+    '(✓)</text><text x="262.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Ortak bilinç</text><text x="262.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">oluşturma</text></svg>',
+ 11: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkiye’nin jeopolitik '
+     'konumu ile enerji ve ulaşım koridoru rolü."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">Kıtalararası Köprü Türkiye</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Asya · Avrupa · Orta Doğu Kesişimi</text><text x="11.0" '
+     'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">8 Kara Komşusu '
+     've Sınır Kapıları</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+     'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+     'fill="#12a150">Ticaret ve Enerji Koridoru</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#0b2257">TANAP · BTC · Demir İpek Yolu</text><text x="11.0" y="122.6" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Bölgesel Barış ve Ekonomik İş '
+     'Birliği</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = dortlu_kart([
-        ('Batı: Bulgaristan & Yunanistan', 'Kapıkule ve İpsala Sınır Kapıları', MAVI, MAVI_A),
-        ('Kuzeydoğu: Gürcistan & Nahçıvan', 'Sarp ve Dilucu Sınır Kapıları', YES, YES_A),
-        ('Doğu: İran', 'Gürbulak Sınır Kapısı', TUR, TUR_A),
-        ('Güney: Irak & Suriye', 'Habur ve Cilvegözü Kapıları', MOR, MOR_A),
-    ], 'Türkiye’nin komşu ülkeleri ve başlıca sınır kapıları.')
-    s[2]['gorsel'] = dortlu_kart([
-        ('1. Göbeklitepe (Şanlıurfa)', 'Taşınmaz Somut Kültürel Miras', TUR, TUR_A),
-        ('2. Pamukkale - Hierapolis', 'Doğal + Kültürel → Karma Miras', CAM, CAM_A),
-        ('3. Karagöz ve Ebru Sanatı', 'Somut Olmayan Kültürel Miras', MOR, MOR_A),
-        ('4. Divriği Ulu Camii (Sivas)', 'Taşınmaz Somut Kültürel Miras', YES, YES_A),
-    ], 'Türkiye’deki somut, somut olmayan ve karma miras örnekleri.')
-    s[5]['gorsel'] = ikili_kart(
-        'Türkiye’nin İhracatı (Dış Satım)', 'Otomotiv · Makine · Beyaz Eşya', 'Tekstil · Demir-Çelik · Gıda', YES, YES_A,
-        'Türkiye’nin İthalatı (Dış Alım)', 'Ham Petrol · Doğal Gaz', 'Enerji Hammaddeleri (İran, Irak, Az.)', TUR, TUR_A,
-        'Türkiye’nin komşu ülkelerle ihracat ve ithalat ürünleri.'
-    )
-    s[6]['gorsel'] = dortlu_kart([
-        ('1. Efes Antik Kenti (İzmir)', 'Somut Miras (Antik Mimari)', MAVI, MAVI_A),
-        ('2. Selimiye Camii (Edirne)', 'Somut Miras (Mimar Sinan Eseri)', YES, YES_A),
-        ('3. Çini ve Ebru Sanatı', 'Somut Olmayan Miras (El Sanatı)', MOR, MOR_A),
-        ('4. Nemrut Dağı (Adıyaman)', 'Somut Miras (Anıt Heykeller)', TUR, TUR_A),
-    ], 'Somut ve somut olmayan kültürel miras örneklerinin ayrımı.')
-    s[7]['gorsel'] = ikili_kart(
-        'Doğal Oluşum Boyutu', 'Peri Bacaları (Kapadokya)', 'Beyaz Travertenler (Pamukkale)', CAM, CAM_A,
-        'Kültürel / Tarihi Boyutu', 'Kaya Kiliseleri ve Yeraltı Şehirleri', 'Hierapolis Antik Kenti', TUR, TUR_A,
-        'Karma miras alanlarının doğal ve kültürel bileşenleri.'
-    )
-    s[8]['gorsel'] = dortlu_kart([
-        ('1. Azerbaycan (Doğu Başlangıç)', 'Bakü — Hazar Enerji ve Demiryolu', YES, YES_A),
-        ('2. Gürcistan (Kafkasya Geçişi)', 'Tiflis — Ara Bağlantı Ülkesi', MAVI, MAVI_A),
-        ('3. Türkiye (Anadolu Köprüsü)', 'Kars → Eskişehir → Edirne Hattı', TUR, TUR_A),
-        ('4. Yunanistan / Bulgaristan', 'Avrupa’ya Açılan Batı Kapısı', MOR, MOR_A),
-    ], 'TANAP ve Bakü-Tiflis-Kars koridorunun doğudan batıya güzergâhı.')
-    s[9]['gorsel'] = dortlu_kart([
-        ('Müzeleri Kurallı Gezmek (✓)', 'Mirasımızı tanıma ve koruma', YES, YES_A),
-        ('Duvarlara İsim Kazımak (✗)', 'Tarihi dokuya zarar verir (Yanlış!)', KIR, KIR_A),
-        ('El Sanatlarını Yaşatmak (✓)', 'Kuşaktan kuşağa aktarım', MAVI, MAVI_A),
-        ('Okul Projeleriyle Tanıtmak (✓)', 'Ortak bilinç oluşturma', CAM, CAM_A),
-    ], 'Kültürel mirası koruma bilinci doğru ve yanlış tutumlar.')
-    s[11]['gorsel'] = ikili_kart(
-        'Kıtalararası Köprü Türkiye', 'Asya · Avrupa · Orta Doğu Kesişimi', '8 Kara Komşusu ve Sınır Kapıları', MAVI, MAVI_A,
-        'Ticaret ve Enerji Koridoru', 'TANAP · BTC · Demir İpek Yolu', 'Bölgesel Barış ve Ekonomik İş Birliği', YES, YES_A,
-        'Türkiye’nin jeopolitik konumu ile enerji ve ulaşım koridoru rolü.'
-    )
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

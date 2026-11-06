@@ -1,93 +1,119 @@
-"""5. sınıf Sosyal Bilgiler 12. hafta (Ülkemize Kara Sınırı Olan Komşu Devletler ve Sınır Kapıları) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""5-sosyal-bilgiler-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 190" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkiye’nin yönlere göre '
+    'kara sınırı komşuları şeması."><rect x="4" y="3" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Batı (Avrupa) Sınırımız</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bulgaristan · Yunanistan</text><rect x="4" y="50" width="342" '
+    'height="44" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Kuzeydoğu ve Doğu Sınırımız</text><text x="11.0" y="84.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Gürcistan · Ermenistan · '
+    'Nahçıvan · İran</text><rect x="4" y="97" width="342" height="44" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="11.0" y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. '
+    'Güney Sınırımız</text><text x="11.0" y="131.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Irak · Suriye (En uzun sınır)</text><rect x="4" y="144" width="342" height="44" rx="5" '
+    'fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="160.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0e8fa8">4. Kuzey Kıyımız</text><text x="11.0" y="178.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Karadeniz (Kara sınırı değil)</text></svg>',
+ 2: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Komşu ülkeler, '
+    'başkentleri ve sınır kapıları bilgi kartları."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Bulgaristan</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sofya · Batı ·</text><text x="87.5" y="58.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kapıkule</text><rect x="179" y="3" '
+    'width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Gürcistan</text><text x="262.5" y="40.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tiflis · Kuzeydoğu '
+    '·</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sarp</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">3. Irak</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Bağdat · Güney ·</text><text x="87.5" y="127.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Habur</text><rect x="179" y="72" width="167" '
+    'height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="90.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Suriye</text><text x="262.5" y="109.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Şam · Güney '
+    '·</text><text x="262.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Cilvegözü</text></svg>',
+ 5: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Azerbaycan, Gürcistan ve '
+    'Türkiye arasındaki enerji ve demiryolu projeleri."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Enerji Hatları (BTC &amp; TANAP)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Hazar petrolü ve doğal gazı</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Bakü → Tiflis → '
+    'Türkiye</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Demir İpek Yolu '
+    '(BTK)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Bakü - Tiflis - Kars Hattı</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#12a150">Ortaklar: Azerbaycan &amp; Gürcistan</text></svg>',
+ 6: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Batı ve güney ihracat '
+    'rotalarındaki sınır kapıları."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Gümrük Tırı (Batı Rotası)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">İstanbul → Edirne → Bulgaristan</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">En işlek kapı: '
+    'Kapıkule</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Gümrük Tırı '
+    '(Güney Rotası)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Şırnak → Irak (Bağdat)</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Güney ticaret kapısı: Habur</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkiye’nin komşu '
+    'ülkelerle ihracat ve ithalat ürünleri tablosu."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">İhracat (Dış Satım Ürünlerimiz)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Otomotiv, beyaz eşya, makine</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Tekstil, hazır giyim, '
+    'gıda</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">İthalat (Dış '
+    'Alım Ürünlerimiz)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Doğal gaz, ham petrol</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Enerji ve sanayi ham maddesi</text></svg>',
+ 8: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Komşu devletler hakkında '
+    'dört adımlı bilimsel araştırma süreci."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Kaynak Belirleme</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Atlas, harita, resmî</text><text x="87.5" y="58.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">siteler</text><rect '
+    'x="179" y="3" width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Bilgiyi '
+    'Bulma</text><text x="262.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Başkent, sınır kapısı,</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">ticaret</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">3. Bilgiyi Doğrulama</text><text x="87.5" y="109.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Farklı kaynaklarla</text><text x="87.5" '
+    'y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">karşılaştırma</text><rect x="179" y="72" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Bilgileri Kaydetme</text><text x="262.5" y="109.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Harita ve tabloya</text><text x="262.5" y="127.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">işleme</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kara sınırlarımızın '
+    'fiziki ve coğrafi özellikleri kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Batı ve Güney Sınırlarımız</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Batı: Meriç Nehri doğal sınır</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0e8fa8">Güney: Suriye en uzun '
+    'sınır (911 km)</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Doğu '
+    'Sınırımız</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Dağlık ve yüksek arazi yapısı</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#12a150">Gürbulak ve Dilucu geçit kapıları</text></svg>',
+ 11: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Komşu devletlerle '
+     'barışçıl ilişkilerin ekonomik ve insani katkıları."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">Ekonomik ve Ticari Katkı</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Sınır ticareti, enerji ve ulaşım</text><text x="11.0" y="56.6" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Karşılıklı kalkınma ve '
+     'turizm</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+     'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">İnsani ve '
+     'Kültürel Katkı</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0b2257">Afetlerde yardımlaşma, barış</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Kültürel bağlar ve güvenlik</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = dortlu_kart([
-        ('1. Batı (Avrupa) Sınırımız', 'Bulgaristan · Yunanistan', MAVI, MAVI_A),
-        ('2. Kuzeydoğu ve Doğu Sınırımız', 'Gürcistan · Ermenistan · Nahçıvan · İran', YES, YES_A),
-        ('3. Güney Sınırımız', 'Irak · Suriye (En uzun sınır)', TUR, TUR_A),
-        ('4. Kuzey Kıyımız', 'Karadeniz (Kara sınırı değil)', CAM, CAM_A),
-    ], 'Türkiye’nin yönlere göre kara sınırı komşuları şeması.')
-    s[2]['gorsel'] = dortlu_kart([
-        ('1. Bulgaristan', 'Sofya · Batı · Kapıkule', MAVI, MAVI_A),
-        ('2. Gürcistan', 'Tiflis · Kuzeydoğu · Sarp', YES, YES_A),
-        ('3. Irak', 'Bağdat · Güney · Habur', TUR, TUR_A),
-        ('4. Suriye', 'Şam · Güney · Cilvegözü', MOR, MOR_A),
-    ], 'Komşu ülkeler, başkentleri ve sınır kapıları bilgi kartları.')
-    s[5]['gorsel'] = ikili_kart(
-        'Enerji Hatları (BTC & TANAP)', 'Hazar petrolü ve doğal gazı', 'Bakü → Tiflis → Türkiye', TUR, TUR_A,
-        'Demir İpek Yolu (BTK)', 'Bakü - Tiflis - Kars Hattı', 'Ortaklar: Azerbaycan & Gürcistan', YES, YES_A,
-        'Azerbaycan, Gürcistan ve Türkiye arasındaki enerji ve demiryolu projeleri.'
-    )
-    s[6]['gorsel'] = ikili_kart(
-        '1. Gümrük Tırı (Batı Rotası)', 'İstanbul → Edirne → Bulgaristan', 'En işlek kapı: Kapıkule', MAVI, MAVI_A,
-        '2. Gümrük Tırı (Güney Rotası)', 'Şırnak → Irak (Bağdat)', 'Güney ticaret kapısı: Habur', TUR, TUR_A,
-        'Batı ve güney ihracat rotalarındaki sınır kapıları.'
-    )
-    s[7]['gorsel'] = ikili_kart(
-        'İhracat (Dış Satım Ürünlerimiz)', 'Otomotiv, beyaz eşya, makine', 'Tekstil, hazır giyim, gıda', YES, YES_A,
-        'İthalat (Dış Alım Ürünlerimiz)', 'Doğal gaz, ham petrol', 'Enerji ve sanayi ham maddesi', MAVI, MAVI_A,
-        'Türkiye’nin komşu ülkelerle ihracat ve ithalat ürünleri tablosu.'
-    )
-    s[8]['gorsel'] = dortlu_kart([
-        ('1. Kaynak Belirleme', 'Atlas, harita, resmî siteler', MAVI, MAVI_A),
-        ('2. Bilgiyi Bulma', 'Başkent, sınır kapısı, ticaret', TUR, TUR_A),
-        ('3. Bilgiyi Doğrulama', 'Farklı kaynaklarla karşılaştırma', YES, YES_A),
-        ('4. Bilgileri Kaydetme', 'Harita ve tabloya işleme', MOR, MOR_A),
-    ], 'Komşu devletler hakkında dört adımlı bilimsel araştırma süreci.')
-    s[9]['gorsel'] = ikili_kart(
-        'Batı ve Güney Sınırlarımız', 'Batı: Meriç Nehri doğal sınır', 'Güney: Suriye en uzun sınır (911 km)', CAM, CAM_A,
-        'Doğu Sınırımız', 'Dağlık ve yüksek arazi yapısı', 'Gürbulak ve Dilucu geçit kapıları', YES, YES_A,
-        'Kara sınırlarımızın fiziki ve coğrafi özellikleri kartı.'
-    )
-    s[11]['gorsel'] = ikili_kart(
-        'Ekonomik ve Ticari Katkı', 'Sınır ticareti, enerji ve ulaşım', 'Karşılıklı kalkınma ve turizm', MAVI, MAVI_A,
-        'İnsani ve Kültürel Katkı', 'Afetlerde yardımlaşma, barış', 'Kültürel bağlar ve güvenlik', YES, YES_A,
-        'Komşu devletlerle barışçıl ilişkilerin ekonomik ve insani katkıları.'
-    )
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

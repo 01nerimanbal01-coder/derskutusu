@@ -1,102 +1,134 @@
-"""5. sınıf Fen Bilimleri 14. hafta çalışma kâğıdı görselleri."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#475569'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="16" font-weight="700"'
+"""5-fen-bilimleri-14 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(ic, etiket, w=360, h=115):
-    return f'<svg viewBox="0 0 {w} {h}" style="width:100%;max-height:24mm;display:block;margin:1mm auto;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 133" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hücre yapıları ve '
+    'organizasyon basamakları"><rect x="4" y="4" width="167" height="69" rx="6" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="87.5" y="23.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Hücre '
+    'Duvarı</text><text x="87.5" y="43.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Bitkide sert dış</text><text x="87.5" y="62.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">çeper</text><rect x="179" y="4" width="167" height="69" rx="6" fill="#e0f4f8" '
+    'stroke="#0e8fa8" stroke-width="0.75"/><text x="262.5" y="33.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0e8fa8">Kloroplast</text><text x="262.5" y="52.6" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Besin ve O2 üretimi</text><rect x="4" y="79" width="167" '
+    'height="50" rx="6" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="98.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Sentrozom</text><text x="87.5" y="118.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hayvanda '
+    'bölünme</text><rect x="179" y="79" width="167" height="50" rx="6" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="98.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Doku '
+    'Basamağı</text><text x="262.5" y="118.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Benzer hücre grubu</text></svg>',
+ 1: '<svg viewBox="0 0 350 143" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mikroskobik hücre '
+    'gözlemi"><rect x="4" y="4" width="342" height="66" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="12.0" '
+    'y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">K Hücresi · '
+    'Bitki (Elodea)</text><text x="12.0" y="39.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Köşeli Şekil + Yeşil Kloroplast</text><text x="12.0" y="58.9" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#475569">Hücre duvarı ve büyük koful var</text><rect x="4" y="74" '
+    'width="342" height="66" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="12.0" y="90.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">L Hücresi · Hayvan (Deri/Epitel)</text><text '
+    'x="12.0" y="109.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Oval '
+    'Şekil + Sentrozom</text><text x="12.0" y="128.9" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#475569">Hücre duvarı ve kloroplast yok</text></svg>',
+ 2: '<svg viewBox="0 0 350 152" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bitki ve hayvan hücresi '
+    'farkları"><rect x="4" y="4" width="167" height="69" rx="6" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="23.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">BİTKİ VE '
+    'HAYVAN</text><text x="87.5" y="43.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">HÜCRESİ</text><text x="87.5" y="62.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">KARŞILAŞTIRMASI</text><rect x="179" y="4" width="167" height="69" rx="6" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="23.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Şekil ve Çeper</text><text x="262.5" y="43.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bitki: Köşeli ·</text><text x="262.5" '
+    'y="62.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hayvan: '
+    'Oval</text><rect x="4" y="79" width="167" height="69" rx="6" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="98.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Özel '
+    'Organel</text><text x="87.5" y="118.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Bitki: Kloroplast ·</text><text x="87.5" y="137.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Hayvan: Sentrozom</text><rect x="179" y="79" width="167" height="69" rx="6" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="98.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Koful Yapısı</text><text x="262.5" y="118.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bitki: Büyük-Az ·</text><text x="262.5" '
+    'y="137.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hayvan: '
+    'Küçük-Çok</text></svg>',
+ 5: '<svg viewBox="0 0 350 171" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hücre Venn şeması '
+    'özeti"><rect x="4" y="4" width="167" height="69" rx="6" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="23.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">BİTKİ VE '
+    'HAYVAN</text><text x="87.5" y="43.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">HÜCRESİ VENN</text><text x="87.5" y="62.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">KÜMELERİ</text><rect x="179" y="4" width="167" height="69" rx="6" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="23.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Yalnız Bitkide</text><text x="262.5" y="43.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hücre duvarı,</text><text x="262.5" y="62.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kloroplast</text><rect x="4" y="79" '
+    'width="167" height="88" rx="6" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="98.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Ortak Yapılar</text><text x="87.5" y="117.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">(Kesişim)</text><text '
+    'x="87.5" y="137.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Zar, '
+    'Çekirdek,</text><text x="87.5" y="156.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Mitokondri</text><rect x="179" y="79" width="167" height="88" rx="6" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="117.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Yalnız Hayvanda</text><text x="262.5" y="137.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sentrozom, Lizozom</text></svg>',
+ 6: '<svg viewBox="0 0 350 114" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hücreden organizmaya '
+    'organizasyon şeması"><rect x="4" y="4" width="167" height="50" rx="6" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="23.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Hücre</text><text x="87.5" y="43.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Epitel / Kas hücresi</text><rect x="179" y="4" width="167" height="50" rx="6" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="262.5" y="23.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">2. Doku (X)</text><text x="262.5" y="43.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Mide dokusu</text><rect x="4" y="60" width="167" height="50" rx="6" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="79.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">3. Organ</text><text x="87.5" y="99.1" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mide organı</text><rect x="179" y="60" width="167" height="50" '
+    'rx="6" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="79.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Sistem</text><text x="262.5" y="99.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sindirim sistemi</text></svg>',
+ 7: '<svg viewBox="0 0 350 143" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Soğan zarı ve yeşil '
+    'yaprak hücresi karşılaştırması"><rect x="4" y="4" width="342" height="66" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="12.0" y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Soğan Zarı Hücresi (Toprak Altı)</text><text x="12.0" y="39.7" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Köşeli + Hücre Duvarı Var</text><text x="12.0" y="58.9" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#475569">Işık görmediği için '
+    'Kloroplast YOK</text><rect x="4" y="74" width="342" height="66" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="12.0" y="90.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Yeşil '
+    'Yaprak Hücresi (Işıklı)</text><text x="12.0" y="109.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Köşeli + Hücre Duvarı Var</text><text x="12.0" y="128.9" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#475569">Fotosentez yaptığı için Kloroplast VAR</text></svg>',
+ 8: '<svg viewBox="0 0 350 133" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Destek ve hareket '
+    'sistemi organizasyonu"><rect x="4" y="4" width="167" height="50" rx="6" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="23.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Hücre</text><text x="87.5" y="43.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kemik hücresi</text><rect x="179" y="4" width="167" height="50" rx="6" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="23.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2. Doku</text><text x="262.5" y="43.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kemik dokusu</text><rect x="4" y="60" width="167" height="69" rx="6" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">3. Organ</text><text x="87.5" y="108.6" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Uyluk kemiği</text><rect x="179" y="60" width="167" height="69" '
+    'rx="6" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="79.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Sistem</text><text x="262.5" y="99.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Destek-hareket</text><text x="262.5" '
+    'y="118.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">sistemi</text></svg>',
+ 9: '<svg viewBox="0 0 350 171" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Geçmişten günümüze hücre '
+    'araştırmaları"><rect x="4" y="4" width="167" height="69" rx="6" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="33.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1665 · '
+    'Hooke</text><text x="87.5" y="52.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İlk hücre gözlemi</text><rect x="179" y="4" width="167" height="69" rx="6" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="262.5" y="23.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">1674 ·</text><text x="262.5" y="43.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0e8fa8">Leeuwenhoek</text><text x="262.5" y="62.2" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Canlı tek hücreliler</text><rect x="4" y="79" width="167" '
+    'height="88" rx="6" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="98.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">1838-39 · Hücre</text><text x="87.5" '
+    'y="117.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Teorisi</text><text x="87.5" y="137.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Schleiden ve</text><text x="87.5" y="156.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Schwann</text><rect x="179" y="79" width="167" height="88" rx="6" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="117.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">1931 · Elektron Mik.</text><text x="262.5" y="137.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Organellerin keşfi</text></svg>'}
 
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def yazi(x, y, metin, boy=10.0, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-def kart4(etiket, veri, ar=False):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (b, alt, c, d) in enumerate(veri):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 91, d, c) + yazi(x + 40, 34, b, 9.2, c)
-        ic += f'<line x1="{x+8}" y1="46" x2="{x+72}" y2="46" stroke="{c}" stroke-width="0.8"/>'
-        ic += (ar_yazi(x + 40, 76, alt, LAC) if ar else yazi(x + 40, 72, alt, 8.2, LAC, ince=True))
-    return svg(ic, etiket)
-
-def ikili(etiket, b1, s1a, s1b, c1, d1, b2, s2a, s2b, c2, d2, ar=False):
-    ic = kutu(6, 6, 170, 103, d1, c1) + yazi(91, 26, b1, 9.8, c1)
-    ic += (ar_yazi(91, 58, s1a, LAC) if ar else yazi(91, 56, s1a, 9.5, LAC))
-    ic += yazi(91, 88, s1b, 8.5, SOLUK, ince=True)
-    ic += kutu(184, 6, 170, 103, d2, c2) + yazi(269, 26, b2, 9.8, c2)
-    ic += (ar_yazi(269, 58, s2a, LAC) if ar else yazi(269, 56, s2a, 9.5, LAC))
-    ic += yazi(269, 88, s2b, 8.5, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-def uclu(etiket, baslik, k1, k2, k3, c=MAVI, d=MAVI_A, ar=False):
-    ic = kutu(4, 4, 352, 107, d, c) + yazi(180, 22, baslik, 9.8, c)
-    for i, (b, alt, kc, kd) in enumerate([k1, k2, k3]):
-        x = 14 + i * 113
-        ic += kutu(x, 32, 106, 71, kd, kc) + yazi(x + 53, 52, b, 9.0, kc)
-        ic += (ar_yazi(x + 53, 84, alt, LAC) if ar else yazi(x + 53, 80, alt, 8.2, LAC, ince=True))
-    return svg(ic, etiket)
-
-def akis4(etiket, veri):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (bas, alt, c, d) in enumerate(veri):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 91, d, c) + yazi(x + 40, 36, bas, 9.0, c) + yazi(x + 40, 70, alt, 8.0, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+81},56 {x+85},51 {x+85},61" fill="{c}"/>'
-    return svg(ic, etiket)
-
-def pano(etiket, baslik, s1, s2, c=MAVI, d=MAVI_A, ic_d='#f4f8fe', ar=False):
-    ic = kutu(4, 4, 352, 107, d, c) + yazi(180, 23, baslik, 9.8, c)
-    ic += kutu(14, 34, 332, 67, ic_d, c)
-    ic += (ar_yazi(180, 62, s1, LAC) if ar else yazi(180, 58, s1, 9.5, LAC))
-    ic += yazi(180, 86, s2, 8.5, SOLUK, ince=True)
-    return svg(ic, etiket)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = kart4('Hücre yapıları ve organizasyon basamakları', [
-        ('Hücre Duvarı', 'Bitkide sert dış çeper', YES, YES_A),
-        ('Kloroplast', 'Besin ve O2 üretimi', CAM, CAM_A),
-        ('Sentrozom', 'Hayvanda bölünme', TUR, TUR_A),
-        ('Doku Basamağı', 'Benzer hücre grubu', MOR, MOR_A)
-    ])
-    s[1]['gorsel'] = ikili('Mikroskobik hücre gözlemi',
-        'K Hücresi · Bitki (Elodea)', 'Köşeli Şekil + Yeşil Kloroplast', 'Hücre duvarı ve büyük koful var', YES, YES_A,
-        'L Hücresi · Hayvan (Deri/Epitel)', 'Oval Şekil + Sentrozom', 'Hücre duvarı ve kloroplast yok', TUR, TUR_A)
-    s[2]['gorsel'] = uclu('Bitki ve hayvan hücresi farkları', 'BİTKİ VE HAYVAN HÜCRESİ KARŞILAŞTIRMASI',
-        ('Şekil ve Çeper', 'Bitki: Köşeli · Hayvan: Oval', YES, YES_A),
-        ('Özel Organel', 'Bitki: Kloroplast · Hayvan: Sentrozom', MAVI, MAVI_A),
-        ('Koful Yapısı', 'Bitki: Büyük-Az · Hayvan: Küçük-Çok', MOR, MOR_A))
-    s[5]['gorsel'] = uclu('Hücre Venn şeması özeti', 'BİTKİ VE HAYVAN HÜCRESİ VENN KÜMELERİ',
-        ('Yalnız Bitkide', 'Hücre duvarı, Kloroplast', YES, YES_A),
-        ('Ortak Yapılar (Kesişim)', 'Zar, Çekirdek, Mitokondri', MAVI, MAVI_A),
-        ('Yalnız Hayvanda', 'Sentrozom, Lizozom', TUR, TUR_A))
-    s[6]['gorsel'] = akis4('Hücreden organizmaya organizasyon şeması', [
-        ('1. Hücre', 'Epitel / Kas hücresi', MAVI, MAVI_A),
-        ('2. Doku (X)', 'Mide dokusu', CAM, CAM_A),
-        ('3. Organ', 'Mide organı', YES, YES_A),
-        ('4. Sistem', 'Sindirim sistemi', MOR, MOR_A)
-    ])
-    s[7]['gorsel'] = ikili('Soğan zarı ve yeşil yaprak hücresi karşılaştırması',
-        'Soğan Zarı Hücresi (Toprak Altı)', 'Köşeli + Hücre Duvarı Var', 'Işık görmediği için Kloroplast YOK', TUR, TUR_A,
-        'Yeşil Yaprak Hücresi (Işıklı)', 'Köşeli + Hücre Duvarı Var', 'Fotosentez yaptığı için Kloroplast VAR', YES, YES_A)
-    s[8]['gorsel'] = akis4('Destek ve hareket sistemi organizasyonu', [
-        ('1. Hücre', 'Kemik hücresi', MAVI, MAVI_A),
-        ('2. Doku', 'Kemik dokusu', YES, YES_A),
-        ('3. Organ', 'Uyluk kemiği', TUR, TUR_A),
-        ('4. Sistem', 'Destek-hareket sistemi', MOR, MOR_A)
-    ])
-    s[9]['gorsel'] = akis4('Geçmişten günümüze hücre araştırmaları', [
-        ('1665 · Hooke', 'İlk hücre gözlemi', MAVI, MAVI_A),
-        ('1674 · Leeuwenhoek', 'Canlı tek hücreliler', CAM, CAM_A),
-        ('1838-39 · Hücre Teorisi', 'Schleiden ve Schwann', YES, YES_A),
-        ('1931 · Elektron Mik.', 'Organellerin keşfi', MOR, MOR_A)
-    ])
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

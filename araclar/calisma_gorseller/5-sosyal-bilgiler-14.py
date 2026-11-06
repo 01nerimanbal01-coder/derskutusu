@@ -1,101 +1,126 @@
-"""5. sınıf Sosyal Bilgiler 14. hafta çalışma kâğıdı görselleri."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#475569'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="16" font-weight="700"'
+"""5-sosyal-bilgiler-14 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(ic, etiket, w=360, h=115):
-    return f'<svg viewBox="0 0 {w} {h}" style="width:100%;max-height:24mm;display:block;margin:1mm auto;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 133" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkiye UNESCO ortak '
+    'miras örnekleri"><rect x="4" y="4" width="167" height="50" rx="6" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="23.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Göbeklitepe</text><text x="87.5" y="43.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Şanlıurfa · Somut</text><rect x="179" y="4" width="167" height="50" rx="6" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="23.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Divriği Ulu Camii</text><text x="262.5" y="43.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sivas · İlk Miras</text><rect x="4" y="60" '
+    'width="167" height="69" rx="6" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Pamukkale</text><text x="87.5" y="108.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Denizli · '
+    'Karma</text><rect x="179" y="60" width="167" height="69" rx="6" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="79.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Ebru ve '
+    'Karagöz</text><text x="262.5" y="99.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Somut Olmayan</text><text x="262.5" y="118.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Miras</text></svg>',
+ 1: '<svg viewBox="0 0 350 143" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Somut ve somut olmayan '
+    'kültürel miras"><rect x="4" y="4" width="342" height="66" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="12.0" '
+    'y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Somut Kültürel '
+    'Miras</text><text x="12.0" y="39.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Efes, Selimiye, Hattuşa, Göbeklitepe</text><text x="12.0" y="58.9" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#475569">Elle tutulur tarihî yapı ve anıtlar</text><rect x="4" y="74" '
+    'width="342" height="66" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="12.0" y="90.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Somut Olmayan Kültürel Miras</text><text '
+    'x="12.0" y="109.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Türk '
+    'Kahvesi, Ebru, Çini, Meddahlık</text><text x="12.0" y="128.9" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#475569">Kuşaktan kuşağa aktarılan yaşayan kültür</text></svg>',
+ 2: '<svg viewBox="0 0 350 171" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ortak miras '
+    'sınıflandırması"><rect x="4" y="4" width="167" height="69" rx="6" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="23.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">ORTAK '
+    'MİRAS</text><text x="87.5" y="43.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">ÖGELERİNİN</text><text x="87.5" y="62.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">SINIFLANDIRILMASI</text><rect x="179" y="4" width="167" height="69" rx="6" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="23.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Somut Miras</text><text x="262.5" y="43.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tarihî yapılar ve</text><text x="262.5" y="62.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">antik '
+    'kentler</text><rect x="4" y="79" width="167" height="88" rx="6" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" '
+    'y="98.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Somut '
+    'Olmayan</text><text x="87.5" y="117.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Miras</text><text x="87.5" y="137.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Gelenek, sanat ve</text><text x="87.5" y="156.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kutlamalar</text><rect x="179" y="79" width="167" height="88" rx="6" '
+    'fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="262.5" y="98.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Karma Miras (2</text><text x="262.5" y="117.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Alan)</text><text x="262.5" y="137.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kapadokya ve</text><text '
+    'x="262.5" y="156.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Pamukkale</text></svg>',
+ 5: '<svg viewBox="0 0 350 114" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anadolu UNESCO miras '
+    'alanları ve illeri"><rect x="4" y="4" width="167" height="50" rx="6" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="87.5" y="23.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Nemrut '
+    'Dağı</text><text x="87.5" y="43.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Adıyaman · Doğru</text><rect x="179" y="4" width="167" height="50" rx="6" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="23.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Cumalıkızık</text><text x="262.5" y="43.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Bursa · Doğru</text><rect x="4" y="60" width="167" height="50" rx="6" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="79.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Safranbolu</text><text x="87.5" y="99.1" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Karabük · Doğru</text><rect x="179" y="60" width="167" '
+    'height="50" rx="6" fill="#fde8e7" stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="79.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Ani Harabeleri</text><text x="262.5" y="99.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kars (Antalya '
+    'değil!)</text></svg>',
+ 6: '<svg viewBox="0 0 350 162" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kapadokya ve Göreme '
+    'karma miras yapısı"><rect x="4" y="4" width="342" height="85" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text '
+    'x="12.0" y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Doğal '
+    'Miras Boyutu</text><text x="12.0" y="39.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Peri Bacaları ve Tüf Kayalar</text><text x="12.0" y="58.9" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#475569">Rüzgâr ve yağmur aşındırmasıyla</text><text x="12.0" y="78.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#475569">oluşmuştur</text><rect '
+    'x="4" y="93" width="342" height="66" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="12.0" y="109.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Kültürel Miras '
+    'Boyutu</text><text x="12.0" y="128.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Kaya Kiliseleri ve Yer Altı Şehirleri</text><text x="12.0" y="147.9" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#475569">İnsanlar tarafından oyularak inşa edilmiştir</text></svg>',
+ 7: '<svg viewBox="0 0 350 133" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Somut olmayan kültürel '
+    'miraslarımız"><rect x="4" y="4" width="167" height="69" rx="6" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="23.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Ebru '
+    'Sanatı</text><text x="87.5" y="43.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kitre su üstü</text><text x="87.5" y="62.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">bezeme</text><rect x="179" y="4" width="167" height="69" rx="6" fill="#e0f4f8" '
+    'stroke="#0e8fa8" stroke-width="0.75"/><text x="262.5" y="33.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0e8fa8">Çini Ustalığı</text><text x="262.5" y="52.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Geleneksel seramik</text><rect x="4" y="79" '
+    'width="167" height="50" rx="6" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="98.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Karagöz-Hacivat</text><text x="87.5" '
+    'y="118.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Gölge oyunu '
+    'sanatı</text><rect x="179" y="79" width="167" height="50" rx="6" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="98.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Dede '
+    'Korkut</text><text x="262.5" y="118.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sözlü destan mirası</text></svg>',
+ 8: '<svg viewBox="0 0 350 133" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yaşadığımız ildeki ortak '
+    'mirası tanıtma süreci"><rect x="4" y="4" width="167" height="69" rx="6" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="33.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Belirleme</text><text x="87.5" y="52.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İldeki mirası seç</text><rect x="179" y="4" width="167" height="69" rx="6" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="262.5" y="23.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">2. Araştırma</text><text x="262.5" y="43.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Resmî kaynakları</text><text x="262.5" y="62.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">incele</text><rect x="4" y="79" width="167" '
+    'height="50" rx="6" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="98.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Ürün Tasarımı</text><text x="87.5" '
+    'y="118.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Broşür / afiş '
+    'hazırla</text><rect x="179" y="79" width="167" height="50" rx="6" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="98.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Paylaşım</text><text x="262.5" y="118.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Sınıfta sun ve koru</text></svg>',
+ 9: '<svg viewBox="0 0 350 112" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ortak mirası koruma '
+    'vatandaşlık bilinci"><rect x="4" y="4" width="342" height="105" rx="5" fill="#f4f8fe" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="12.0" y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Tarihî '
+    'Eserlere Dokunma · Flaşsız İncele ·</text><text x="12.0" y="39.7" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Çevreyi Temiz Tut · Gelenekleri Yaşat</text><text x="12.0" y="58.9" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#475569">Kültürel miras '
+    'atalarımızdan kalan ve</text><text x="12.0" y="78.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#475569">gelecek nesillere aktaracağımız ortak</text><text x="12.0" y="97.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#475569">emanettir.</text></svg>'}
 
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def yazi(x, y, metin, boy=10.0, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-def kart4(etiket, veri, ar=False):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (b, alt, c, d) in enumerate(veri):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 91, d, c) + yazi(x + 40, 34, b, 9.2, c)
-        ic += f'<line x1="{x+8}" y1="46" x2="{x+72}" y2="46" stroke="{c}" stroke-width="0.8"/>'
-        ic += (ar_yazi(x + 40, 76, alt, LAC) if ar else yazi(x + 40, 72, alt, 8.2, LAC, ince=True))
-    return svg(ic, etiket)
-
-def ikili(etiket, b1, s1a, s1b, c1, d1, b2, s2a, s2b, c2, d2, ar=False):
-    ic = kutu(6, 6, 170, 103, d1, c1) + yazi(91, 26, b1, 9.8, c1)
-    ic += (ar_yazi(91, 58, s1a, LAC) if ar else yazi(91, 56, s1a, 9.5, LAC))
-    ic += yazi(91, 88, s1b, 8.5, SOLUK, ince=True)
-    ic += kutu(184, 6, 170, 103, d2, c2) + yazi(269, 26, b2, 9.8, c2)
-    ic += (ar_yazi(269, 58, s2a, LAC) if ar else yazi(269, 56, s2a, 9.5, LAC))
-    ic += yazi(269, 88, s2b, 8.5, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-def uclu(etiket, baslik, k1, k2, k3, c=MAVI, d=MAVI_A, ar=False):
-    ic = kutu(4, 4, 352, 107, d, c) + yazi(180, 22, baslik, 9.8, c)
-    for i, (b, alt, kc, kd) in enumerate([k1, k2, k3]):
-        x = 14 + i * 113
-        ic += kutu(x, 32, 106, 71, kd, kc) + yazi(x + 53, 52, b, 9.0, kc)
-        ic += (ar_yazi(x + 53, 84, alt, LAC) if ar else yazi(x + 53, 80, alt, 8.2, LAC, ince=True))
-    return svg(ic, etiket)
-
-def akis4(etiket, veri):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (bas, alt, c, d) in enumerate(veri):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 91, d, c) + yazi(x + 40, 36, bas, 9.0, c) + yazi(x + 40, 70, alt, 8.0, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+81},56 {x+85},51 {x+85},61" fill="{c}"/>'
-    return svg(ic, etiket)
-
-def pano(etiket, baslik, s1, s2, c=MAVI, d=MAVI_A, ic_d='#f4f8fe', ar=False):
-    ic = kutu(4, 4, 352, 107, d, c) + yazi(180, 23, baslik, 9.8, c)
-    ic += kutu(14, 34, 332, 67, ic_d, c)
-    ic += (ar_yazi(180, 62, s1, LAC) if ar else yazi(180, 58, s1, 9.5, LAC))
-    ic += yazi(180, 86, s2, 8.5, SOLUK, ince=True)
-    return svg(ic, etiket)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = kart4('Türkiye UNESCO ortak miras örnekleri', [
-        ('Göbeklitepe', 'Şanlıurfa · Somut', MAVI, MAVI_A),
-        ('Divriği Ulu Camii', 'Sivas · İlk Miras', TUR, TUR_A),
-        ('Pamukkale', 'Denizli · Karma', CAM, CAM_A),
-        ('Ebru ve Karagöz', 'Somut Olmayan Miras', MOR, MOR_A)
-    ])
-    s[1]['gorsel'] = ikili('Somut ve somut olmayan kültürel miras',
-        'Somut Kültürel Miras', 'Efes, Selimiye, Hattuşa, Göbeklitepe', 'Elle tutulur tarihî yapı ve anıtlar', MAVI, MAVI_A,
-        'Somut Olmayan Kültürel Miras', 'Türk Kahvesi, Ebru, Çini, Meddahlık', 'Kuşaktan kuşağa aktarılan yaşayan kültür', YES, YES_A)
-    s[2]['gorsel'] = uclu('Ortak miras sınıflandırması', 'ORTAK MİRAS ÖGELERİNİN SINIFLANDIRILMASI',
-        ('Somut Miras', 'Tarihî yapılar ve antik kentler', MAVI, MAVI_A),
-        ('Somut Olmayan Miras', 'Gelenek, sanat ve kutlamalar', MOR, MOR_A),
-        ('Karma Miras (2 Alan)', 'Kapadokya ve Pamukkale', CAM, CAM_A))
-    s[5]['gorsel'] = kart4('Anadolu UNESCO miras alanları ve illeri', [
-        ('Nemrut Dağı', 'Adıyaman · Doğru', YES, YES_A),
-        ('Cumalıkızık', 'Bursa · Doğru', YES, YES_A),
-        ('Safranbolu', 'Karabük · Doğru', YES, YES_A),
-        ('Ani Harabeleri', 'Kars (Antalya değil!)', KIR, KIR_A)
-    ])
-    s[6]['gorsel'] = ikili('Kapadokya ve Göreme karma miras yapısı',
-        'Doğal Miras Boyutu', 'Peri Bacaları ve Tüf Kayalar', 'Rüzgâr ve yağmur aşındırmasıyla oluşmuştur', CAM, CAM_A,
-        'Kültürel Miras Boyutu', 'Kaya Kiliseleri ve Yer Altı Şehirleri', 'İnsanlar tarafından oyularak inşa edilmiştir', TUR, TUR_A)
-    s[7]['gorsel'] = kart4('Somut olmayan kültürel miraslarımız', [
-        ('Ebru Sanatı', 'Kitre su üstü bezeme', MAVI, MAVI_A),
-        ('Çini Ustalığı', 'Geleneksel seramik', CAM, CAM_A),
-        ('Karagöz-Hacivat', 'Gölge oyunu sanatı', TUR, TUR_A),
-        ('Dede Korkut', 'Sözlü destan mirası', MOR, MOR_A)
-    ])
-    s[8]['gorsel'] = akis4('Yaşadığımız ildeki ortak mirası tanıtma süreci', [
-        ('1. Belirleme', 'İldeki mirası seç', MAVI, MAVI_A),
-        ('2. Araştırma', 'Resmî kaynakları incele', CAM, CAM_A),
-        ('3. Ürün Tasarımı', 'Broşür / afiş hazırla', YES, YES_A),
-        ('4. Paylaşım', 'Sınıfta sun ve koru', MOR, MOR_A)
-    ])
-    s[9]['gorsel'] = pano('Ortak mirası koruma vatandaşlık bilinci', 'ORTAK MİRASIMIZI KORUMA İLKELERİ',
-        'Tarihî Eserlere Dokunma · Flaşsız İncele · Çevreyi Temiz Tut · Gelenekleri Yaşat',
-        'Kültürel miras atalarımızdan kalan ve gelecek nesillere aktaracağımız ortak emanettir.', YES, YES_A)
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

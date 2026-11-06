@@ -1,94 +1,138 @@
-"""5. sınıf Din Kültürü ve Ahlak Bilgisi 13. hafta (Hz. İbrahim Kıssası ve 2. Ünite Değerlendirmesi) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""5-din-kulturu-ve-ahlak-bilgisi-13 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hz. İbrahim’in gök '
+    'cisimlerini gözlemleyerek tevhide ulaşması."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Gözlem: Yıldız</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Doğup batıyor → İlah</text><text x="87.5" y="58.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">olamaz</text><rect '
+    'x="179" y="3" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="21.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">2. Gözlem: '
+    'Ay</text><text x="262.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kaybolup gidiyor →</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">İlah olamaz</text><rect x="4" y="72" width="167" height="84" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="99.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">3. Gözlem: Güneş</text><text x="87.5" y="118.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Batıp sönüyor → İlah</text><text x="87.5" '
+    'y="137.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">olamaz</text><rect x="179" y="72" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="90.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">4. Sonuç: Tevhid</text><text x="262.5" y="109.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">İnancı</text><text x="262.5" y="127.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Evreni yaratan tek</text><text x="262.5" '
+    'y="146.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Allah’tır</text></svg>',
+ 2: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Namazın 6 hazırlık ve 6 '
+    'kılınış şartı özet kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Hazırlık Şartları (Dıştan 6)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Hadesten ve Necasetten Taharet</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Setr-i Avret · Kıble · '
+    'Vakit · Niyet</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Kılınış '
+    'Şartları (İçten 6)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">İftitah Tekbiri · Kıyam · Kıraat</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Rükû · Secde · Ka’de-i Ahîre</text></svg>',
+ 5: '<svg viewBox="0 0 350 168" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hz. İbrahim’in Kur’an’da '
+    'yer alan namaz ve bağışlanma duaları."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Rabbena لجعلنا (İbrahim 40)</text><text x="11.0" y="43.5" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Rabbic’alnî mukîmes-salâti...</text><text x="11.0" y="68.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0e8fa8">Beni ve soyumu namaz '
+    'kılan eyle</text><rect x="4" y="86" width="342" height="80" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="11.0" y="102.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Rabbenağfirlî (İbrahim 41)</text><text x="11.0" y="126.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Rabbenağfirlî ve li-vâlideyye...</text><text x="11.0" y="151.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">Beni, annemi-babamı ve '
+    'müminleri affet</text></svg>',
+ 6: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tahiyyat duasının üç '
+    'anlam bölümü ve okunduğu yer."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Bölüm: Övgü ve</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">İbadet</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Et-tahiyyâtü lillâhi</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ves-salevâtü...</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2. Bölüm:</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Selamlaşma</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Es-selâmü aleyke</text><text x="262.5" y="77.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">eyyühen-nebiyyü...</text><rect x="4" y="91" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">3. Bölüm: Kelime-i</text><text x="87.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Şehadet</text><text x="87.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Eşhedü en lâ ilâhe</text><text x="87.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">illallah...</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="118.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Okunduğu Yer</text><text x="262.5" y="137.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Namazların ilk ve</text><text x="262.5" y="156.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">son oturuşu</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Putperestliğin akıl ve '
+    'tevhid ilkesiyle sorgulanması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Sorgulama Yöntemi</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Putlar konuşamaz ve duyamaz</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d63a3a">Kendilerini dahi '
+    'koruyamazlar</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Verilen '
+    'Mesaj (Enbiyâ 66-67)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Fayda ve zarar vermeyene tapılmaz</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Akıl ile Tevhid gerçeği kavranır</text></svg>',
+ 8: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hz. İbrahim kıssasındaki '
+    'temel olayların kronolojik akışı."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Akıl Yürütme ve</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Tevhid</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Gök cisimlerinden</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tevhide '
+    'ulaşma</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" '
+    'y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Tebliğ '
+    'Mücadelesi</text><text x="262.5" y="49.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Babil halkını ve</text><text x="262.5" y="68.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Nemrut’u davet</text><rect x="4" y="91" width="167" height="84" '
+    'rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">3. Ateş Mucizesi</text><text x="87.5" y="128.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">(Enbiyâ 69)</text><text x="87.5" y="146.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ateşin serin '
+    've</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">güvenli olması</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">4. Kâbe’nin İnşası</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">(Mekke)</text><text x="262.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hz. İsmail ile</text><text x="262.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Beytullah '
+    'yapımı</text></svg>',
+ 9: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Namazın son oturuşunda '
+    '(ka’de-i ahîre) okunan dualar sırası."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Adım: Tahiyyat</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Duası</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Selam ve Kelime-i</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Şehadet</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">2. Adım: Salli ve</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Barik</text><text x="262.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Peygamberimize</text><text x="262.5" y="77.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">salavat '
+    'duaları</text><rect x="4" y="91" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Adım: '
+    'Rabbena</text><text x="87.5" y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Duaları</text><text x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Hz. İbrahim’in af ve</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">namaz duası</text><rect x="179" y="91" width="167" height="84" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">4. Adım: Selam</text><text x="262.5" y="128.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Verme</text><text x="262.5" y="146.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sağa ve sola '
+    'selam</text><text x="262.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ile bitiş</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = dortlu_kart([
-        ('1. Gözlem: Yıldız', 'Doğup batıyor → İlah olamaz', MAVI, MAVI_A),
-        ('2. Gözlem: Ay', 'Kaybolup gidiyor → İlah olamaz', MOR, MOR_A),
-        ('3. Gözlem: Güneş', 'Batıp sönüyor → İlah olamaz', TUR, TUR_A),
-        ('4. Sonuç: Tevhid İnancı', 'Evreni yaratan tek Allah’tır', YES, YES_A),
-    ], 'Hz. İbrahim’in gök cisimlerini gözlemleyerek tevhide ulaşması.')
-    s[2]['gorsel'] = ikili_kart(
-        'Hazırlık Şartları (Dıştan 6)', 'Hadesten ve Necasetten Taharet', 'Setr-i Avret · Kıble · Vakit · Niyet', MAVI, MAVI_A,
-        'Kılınış Şartları (İçten 6)', 'İftitah Tekbiri · Kıyam · Kıraat', 'Rükû · Secde · Ka’de-i Ahîre', YES, YES_A,
-        'Namazın 6 hazırlık ve 6 kılınış şartı özet kartı.'
-    )
-    s[5]['gorsel'] = ikili_kart(
-        'Rabbena لجعلنا (İbrahim 40)', 'Rabbic’alnî mukîmes-salâti...', 'Beni ve soyumu namaz kılan eyle', CAM, CAM_A,
-        'Rabbenağfirlî (İbrahim 41)', 'Rabbenağfirlî ve li-vâlideyye...', 'Beni, annemi-babamı ve müminleri affet', MOR, MOR_A,
-        'Hz. İbrahim’in Kur’an’da yer alan namaz ve bağışlanma duaları.'
-    )
-    s[6]['gorsel'] = dortlu_kart([
-        ('1. Bölüm: Övgü ve İbadet', 'Et-tahiyyâtü lillâhi ves-salevâtü...', MAVI, MAVI_A),
-        ('2. Bölüm: Selamlaşma', 'Es-selâmü aleyke eyyühen-nebiyyü...', YES, YES_A),
-        ('3. Bölüm: Kelime-i Şehadet', 'Eşhedü en lâ ilâhe illallah...', TUR, TUR_A),
-        ('Okunduğu Yer', 'Namazların ilk ve son oturuşu', MOR, MOR_A),
-    ], 'Tahiyyat duasının üç anlam bölümü ve okunduğu yer.')
-    s[7]['gorsel'] = ikili_kart(
-        'Sorgulama Yöntemi', 'Putlar konuşamaz ve duyamaz', 'Kendilerini dahi koruyamazlar', KIR, KIR_A,
-        'Verilen Mesaj (Enbiyâ 66-67)', 'Fayda ve zarar vermeyene tapılmaz', 'Akıl ile Tevhid gerçeği kavranır', YES, YES_A,
-        'Putperestliğin akıl ve tevhid ilkesiyle sorgulanması.'
-    )
-    s[8]['gorsel'] = dortlu_kart([
-        ('1. Akıl Yürütme ve Tevhid', 'Gök cisimlerinden Tevhide ulaşma', MAVI, MAVI_A),
-        ('2. Tebliğ Mücadelesi', 'Babil halkını ve Nemrut’u davet', TUR, TUR_A),
-        ('3. Ateş Mucizesi (Enbiyâ 69)', 'Ateşin serin ve güvenli olması', KIR, KIR_A),
-        ('4. Kâbe’nin İnşası (Mekke)', 'Hz. İsmail ile Beytullah yapımı', YES, YES_A),
-    ], 'Hz. İbrahim kıssasındaki temel olayların kronolojik akışı.')
-    s[9]['gorsel'] = dortlu_kart([
-        ('1. Adım: Tahiyyat Duası', 'Selam ve Kelime-i Şehadet', MAVI, MAVI_A),
-        ('2. Adım: Salli ve Barik', 'Peygamberimize salavat duaları', MOR, MOR_A),
-        ('3. Adım: Rabbena Duaları', 'Hz. İbrahim’in af ve namaz duası', YES, YES_A),
-        ('4. Adım: Selam Verme', 'Sağa ve sola selam ile bitiş', TUR, TUR_A),
-    ], 'Namazın son oturuşunda (ka’de-i ahîre) okunan dualar sırası.')
-    s[11]['gorsel'] = ikili_kart(
-        'Bireysel Kazanımlar', 'Beden-elbise temizliği · Zaman bilinci', 'Kötülüklerden uzaklaşma (Ankebût 45)', MAVI, MAVI_A,
-        'Toplumsal Kazanımlar', 'Cemaatle omuz omuza eşitlik', 'Sevgi, yardımlaşma ve kardeşlik', YES, YES_A,
-        'Namaz ibadetinin bireysel ve toplumsal faydaları.'
-    )
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg
