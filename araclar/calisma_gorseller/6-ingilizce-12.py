@@ -1,93 +1,125 @@
-"""6. sınıf İngilizce 12. hafta (Personality, Seasonal Clothes, Present Continuous vs Simple Present, Comparatives) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""6-ingilizce-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Simple Present ve '
+    'Present Continuous giyim karşılaştırma kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Routine / Habit (Simple Present)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Time: usually / every day</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Berk usually [ wears ] '
+    'trainers.</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Action Now '
+    '(Present Continuous)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Time: today / right now</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Today he [ is wearing ] boots.</text></svg>',
+ 2: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparative ve '
+    'Superlative sıfat dönüşümleri tablosu."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. tall (1 syllable)</text><text x="87.5" y="49.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">taller than · the</text><text x="87.5" y="68.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">tallest</text><rect x="179" y="3" width="167" '
+    'height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. slim (CVC</text><text x="262.5" y="40.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">doubling)</text><text '
+    'x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">... '
+    'than · the</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">slimmest</text><rect x="4" y="91" width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="109.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">3. patient (long adj.)</text><text x="87.5" y="128.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">more patient than ·</text><text x="87.5" y="146.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">...</text><rect x="179" '
+    'y="91" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="118.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. good '
+    '(irregular)</text><text x="262.5" y="137.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">... than · the ...</text></svg>',
+ 5: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kayıp eşya kutusu ve '
+    'Whose çoğul cevap kuralı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Lost &amp; Found Box: Item 1</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Object: Blue Sports Trainers (Plural)</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Owner Tag: '
+    'Burak</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Question &amp; '
+    'Answer Rule</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Whose trainers are these?</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Plural → They are Burak’s trainers.</text></svg>',
+ 6: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ege, Doruk ve Çınar boy '
+    've kişilik karşılaştırma tablosu."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Ege (152 cm)</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Organised: ★★☆ ·</text><text x="87.5" y="58.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Patient: ★★☆</text><rect x="179" y="3" '
+    'width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Doruk (158 cm)</text><text x="262.5" y="40.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Organised: ★★★ '
+    '·</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Patient: ★★☆</text><rect x="4" y="72" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="90.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Çınar (165 cm -</text><text x="87.5" y="109.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Tallest)</text><text x="87.5" y="127.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Organised: ★☆☆ ·</text><text x="87.5" '
+    'y="146.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Patient: '
+    '★★★</text><rect x="179" y="72" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="109.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Comparison '
+    'Key</text><text x="262.5" y="127.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">165 &gt; 158 &gt; 152 cm</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ceyda ve Mert karakter '
+    'ipucu kartları."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Clue Card: '
+    'Ceyda</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Plans homework · Keeps desk tidy</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#2451d6">Personality trait: o _ _ _ _ _ _ _ d</text><rect x="4" y="69" width="342" '
+    'height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Clue Card: Mert</text><text x="11.0" y="103.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Helps injured animals and '
+    'friends</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#12a150">Personality trait: c _ _ _ _ g / helpful</text></svg>',
+ 8: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Okul bahçesinde yeni '
+    'arkadaşı tanıma diyaloğu."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Question: Who?</text><text x="87.5" y="49.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Look at that boy!</text><text x="87.5" y="68.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Who is he?</text><rect x="179" y="3" '
+    'width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Question:</text><text x="262.5" y="40.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Wearing?</text><text '
+    'x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">What '
+    'is he wearing</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">right now?</text><rect x="4" y="91" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="109.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Description</text><text x="87.5" y="128.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">A green jacket and</text><text x="87.5" y="146.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">white '
+    'trainers.</text><rect x="179" y="91" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="109.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Character Info</text><text x="262.5" y="128.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">That’s Emir! He is</text><text x="262.5" y="146.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">clever and polite.</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yaz ve kış tatili bavul '
+    'hazırlama kartları."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Summer '
+    'Holiday: Antalya (34 °C)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Hot and sunny beach weather</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Pack: Swimsuit, sunglasses, T-shirt</text><rect x="4" y="69" '
+    'width="342" height="63" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Winter Holiday: Uludağ (-4 °C)</text><text '
+    'x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Cold '
+    'and snowy mountain weather</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0e8fa8">Pack: Thick coat, gloves, boots</text></svg>',
+ 11: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İki arkadaşı dış '
+     'görünüş ve kişilik yönünden karşılaştırma kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">Friend A: Ali (162 cm)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Slim · Short hair · Friendly</text><text x="11.0" y="56.6" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Comparison: taller / '
+     'slimmer than</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+     'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Friend '
+     'B: Burak (156 cm)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0b2257">Medium build · Patient &amp; Organised</text><text x="11.0" y="122.6" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Comparison: more patient than</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = ikili_kart(
-        'Routine / Habit (Simple Present)', 'Time: usually / every day', 'Berk usually [ wears ] trainers.', MAVI, MAVI_A,
-        'Action Now (Present Continuous)', 'Time: today / right now', 'Today he [ is wearing ] boots.', TUR, TUR_A,
-        'Simple Present ve Present Continuous giyim karşılaştırma kartı.'
-    )
-    s[2]['gorsel'] = dortlu_kart([
-        ('1. tall (1 syllable)', 'taller than · the tallest', MAVI, MAVI_A),
-        ('2. slim (CVC doubling)', '... than · the slimmest', YES, YES_A),
-        ('3. patient (long adj.)', 'more patient than · ...', TUR, TUR_A),
-        ('4. good (irregular)', '... than · the ...', MOR, MOR_A),
-    ], 'Comparative ve Superlative sıfat dönüşümleri tablosu.')
-    s[5]['gorsel'] = ikili_kart(
-        'Lost & Found Box: Item 1', 'Object: Blue Sports Trainers (Plural)', 'Owner Tag: Burak', MAVI, MAVI_A,
-        'Question & Answer Rule', 'Whose trainers are these?', 'Plural → They are Burak’s trainers.', YES, YES_A,
-        'Kayıp eşya kutusu ve Whose çoğul cevap kuralı.'
-    )
-    s[6]['gorsel'] = dortlu_kart([
-        ('Ege (152 cm)', 'Organised: ★★☆ · Patient: ★★☆', MAVI, MAVI_A),
-        ('Doruk (158 cm)', 'Organised: ★★★ · Patient: ★★☆', TUR, TUR_A),
-        ('Çınar (165 cm - Tallest)', 'Organised: ★☆☆ · Patient: ★★★', YES, YES_A),
-        ('Comparison Key', '165 > 158 > 152 cm', MOR, MOR_A),
-    ], 'Ege, Doruk ve Çınar boy ve kişilik karşılaştırma tablosu.')
-    s[7]['gorsel'] = ikili_kart(
-        '1. Clue Card: Ceyda', 'Plans homework · Keeps desk tidy', 'Personality trait: o _ _ _ _ _ _ _ d', MAVI, MAVI_A,
-        '2. Clue Card: Mert', 'Helps injured animals and friends', 'Personality trait: c _ _ _ _ g / helpful', YES, YES_A,
-        'Ceyda ve Mert karakter ipucu kartları.'
-    )
-    s[8]['gorsel'] = dortlu_kart([
-        ('1. Question: Who?', 'Look at that boy! Who is he?', MAVI, MAVI_A),
-        ('2. Question: Wearing?', 'What is he wearing right now?', TUR, TUR_A),
-        ('3. Description', 'A green jacket and white trainers.', YES, YES_A),
-        ('4. Character Info', 'That’s Emir! He is clever and polite.', MOR, MOR_A),
-    ], 'Okul bahçesinde yeni arkadaşı tanıma diyaloğu.')
-    s[9]['gorsel'] = ikili_kart(
-        'Summer Holiday: Antalya (34 °C)', 'Hot and sunny beach weather', 'Pack: Swimsuit, sunglasses, T-shirt', TUR, TUR_A,
-        'Winter Holiday: Uludağ (-4 °C)', 'Cold and snowy mountain weather', 'Pack: Thick coat, gloves, boots', CAM, CAM_A,
-        'Yaz ve kış tatili bavul hazırlama kartları.'
-    )
-    s[11]['gorsel'] = ikili_kart(
-        'Friend A: Ali (162 cm)', 'Slim · Short hair · Friendly', 'Comparison: taller / slimmer than', MAVI, MAVI_A,
-        'Friend B: Burak (156 cm)', 'Medium build · Patient & Organised', 'Comparison: more patient than', YES, YES_A,
-        'İki arkadaşı dış görünüş ve kişilik yönünden karşılaştırma kartı.'
-    )
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -1,147 +1,108 @@
-"""6. sınıf Türkçe 11. hafta (Rafadan Tayfa - İstiklâl Marşı ve Tema Değerlendirmesi: Sözcük Türleri, Tamlamalar ve Metin Türleri) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-11 pt Noto Sans (K150 EK); kesir yok (K155)."""
+"""6-turkce-11 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=16):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.3, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def sifat_zamir_ayrim_kartlari():
-    kartlar = [
-        ('1. Kart: Bazı şairler', 'İsmin önünde → Sıfat', MAVI, MAVI_A),
-        ('2. Kart: O yıllarda', 'İsmin önünde → Sıfat', TUR, TUR_A),
-        ('3. Kart: Hangi kıtayı', 'İsmin önünde → Sıfat', MOR, MOR_A),
-        ('4. Kart: Bunu buldum', 'İsmin yerine → Zamir', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, r)
-        ic += yazi(x + 86, y + 15, bas, 10.0, r)
-        ic += yazi(x + 86, y + 31, alt, 9.2, LAC, ince=True)
-    return svg(360, 94, ic, 'Sıfat ve zamir görevindeki sözcükleri ayırt etme kartları.', 16)
-
-
-def dort_tamlama_panosu():
-    kartlar = [
-        ('1. bayrağın gölgesi', 'Belirtili isim tam.', MAVI, MAVI_A),
-        ('2. İstiklâl Marşı', 'Ne marşı? = ?', YES, YES_A),
-        ('3. sönmez şafaklar', 'Nasıl şafaklar? = ?', TUR, TUR_A),
-        ('4. şairin vatan sevgisi', '3 isim = ?', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 9.2, r)
-        ic += f'<line x1="{x + 8}" y1="32" x2="{x + 74}" y2="32" stroke="{r}" stroke-width="0.9"/>'
-        ic += yazi(x + 41, 55, alt, 9.0, LAC, ince=True)
-    return svg(360, 84, ic, 'Belirtili, belirtisiz, zincirleme isim tamlaması ve sıfat tamlaması panosu.', 15)
-
-
-def oykuleyici_bilgilendirici_pano():
-    ic = kutu(6, 6, 170, 76, MAVI_A, MAVI)
-    ic += yazi(91, 21, 'I. Metin (Olay Anlatımı)', 10.0, MAVI)
-    ic += yazi(91, 42, '“O sabah Hayri ve arkadaşları', 9.2, LAC, ince=True)
-    ic += yazi(91, 61, 'sahne dekorunu heyecanla kurdu.”', 9.2, LAC, ince=True)
-
-    ic += kutu(184, 6, 170, 76, YES_A, YES)
-    ic += yazi(269, 21, 'II. Metin (Bilgi Aktarımı)', 10.0, YESIL_K)
-    ic += yazi(269, 42, '“İstiklâl Marşı, 12 Mart 1921’de', 9.2, LAC, ince=True)
-    ic += yazi(269, 61, '724 şiir arasından seçilmiştir.”', 9.2, LAC, ince=True)
-    return svg(360, 88, ic, 'Öyküleyici ve bilgilendirici iki metnin karşılaştırma panosu.', 15)
-
-
-def yazim_kurallari_kontrol_kartlari():
-    kartlar = [
-        ('A Kartı (✓)', 'Mehmet Âkif · İstiklâl Marşı’nı', MAVI, MAVI_A),
-        ('B Kartı (!)', 'Türk Milletine (Millet büyük?)', KIR, KIR_A),
-        ('C Kartı (✓)', 'TBMM’de · 12 Mart 1921', YES, YES_A),
-        ('D Kartı (✓)', 'Millî Mücadele · hâlâ', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, r)
-        ic += yazi(x + 86, y + 15, bas, 10.0, r)
-        ic += yazi(x + 86, y + 31, alt, 9.2, LAC, ince=True)
-    return svg(360, 94, ic, 'Büyük harfler, kesme işareti ve düzeltme işareti kontrol kartları.', 16)
-
-
-def o_zamiri_ayrim_karti():
-    ic = kutu(6, 6, 170, 76, CAM_A, CAM)
-    ic += yazi(91, 21, '1. Cümle · İnsan Yerine', 10.0, CAM)
-    ic += yazi(91, 43, '“O, İstiklâl Marşı’nı yazan', 9.4, LAC, ince=True)
-    ic += yazi(91, 63, 'vatan şairidir.” (O = ?)', 9.5, CAM)
-
-    ic += kutu(184, 6, 170, 76, TUR_A, TUR)
-    ic += yazi(269, 21, '2. Cümle · Nesne Yerine', 10.0, TUR)
-    ic += yazi(269, 43, '“O, dedemden kalan tarihi', 9.4, LAC, ince=True)
-    ic += yazi(269, 63, 'madalyadır.” (O = ?)', 9.5, TUR)
-    return svg(360, 88, ic, 'Kişi zamiri O ile işaret zamiri O ayrımını gösteren kart.', 15)
-
-
-def serim_dugum_cozum_akisi():
-    adimlar = [
-        ('1. Serim', 'Tiyatro kararı', MAVI, MAVI_A),
-        ('2. Düğüm', 'Merak ve araştırma', TUR, TUR_A),
-        ('3. Gelişme', 'Fedakârlığı öğrenme', MOR, MOR_A),
-        ('4. Çözüm', 'Sahnede coşkulu alkış', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 10.0, r)
-        ic += yazi(x + 41, 54, alt, 9.0, LAC, ince=True)
-    return svg(360, 84, ic, 'Öyküleyici metinde serim, düğüm ve çözüm bölümleri akışı.', 15)
-
-
-def sozcuk_turu_analiz_karti():
-    ic = kutu(6, 6, 348, 76, MOR_A, MOR)
-    ic += yazi(180, 22, 'CÜMLEDE SÖZCÜK TÜRLERİ ANALİZ KARTI', 10.2, MOR)
-    ic += yazi(180, 45, '“① Bu millet, ② sarsılmaz bir ③ cesaret ile ④ onu korumuştur.”', 9.6, LAC)
-    ic += yazi(180, 66, '① Bu (+millet)   |   ② sarsılmaz (+cesaret)   |   ③ cesaret   |   ④ onu (bayrağı)', 9.0, MOR, ince=True)
-    return svg(360, 88, ic, 'Cümle içindeki dört numaralı sözcüğün tür analizi kartı.', 15)
-
-
-def isim_sifat_tamlamasi_farki():
-    ic = kutu(6, 6, 170, 76, YES_A, YES)
-    ic += yazi(91, 21, '1. Öbek: “tören alanı”', 10.1, YESIL_K)
-    ic += yazi(91, 43, 'Soru: Ne alanı? → Tören alanı', 9.3, LAC, ince=True)
-    ic += yazi(91, 63, 'Tamlanan eki: alan-ı (İyelik)', 9.3, YESIL_K)
-
-    ic += kutu(184, 6, 170, 76, MAVI_A, MAVI)
-    ic += yazi(269, 21, '2. Öbek: “geniş alan”', 10.1, MAVI)
-    ic += yazi(269, 43, 'Soru: Nasıl alan? → Geniş alan', 9.3, LAC, ince=True)
-    ic += yazi(269, 63, 'Tamlanan eki: Yok (Yalın isim)', 9.3, MAVI)
-    return svg(360, 88, ic, 'Belirtisiz isim tamlaması ile sıfat tamlaması arasındaki fark kartı.', 15)
+GORSELLER = {1: '<svg viewBox="0 0 350 121" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sıfat ve zamir '
+    'görevindeki sözcükleri ayırt etme kartları."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Kart: Bazı şairler</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İsmin önünde → Sıfat</text><rect x="179" y="3" width="167" '
+    'height="46" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. Kart: O yıllarda</text><text x="262.5" '
+    'y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İsmin önünde → '
+    'Sıfat</text><rect x="4" y="53" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" '
+    'y="80.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">3. Kart: Hangi '
+    'kıtayı</text><text x="87.5" y="99.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İsmin önünde → Sıfat</text><rect x="179" y="53" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="71.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">4. Kart: Bunu</text><text x="262.5" y="90.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">buldum</text><text x="262.5" y="108.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İsmin yerine → Zamir</text></svg>',
+ 2: '<svg viewBox="0 0 350 121" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Belirtili, belirtisiz, '
+    'zincirleme isim tamlaması ve sıfat tamlaması panosu."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">1. bayrağın gölgesi</text><text x="87.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Belirtili isim tam.</text><rect x="179" y="3" '
+    'width="167" height="46" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. İstiklâl Marşı</text><text x="262.5" '
+    'y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ne marşı? = '
+    '?</text><rect x="4" y="53" width="167" height="65" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" '
+    'y="80.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. sönmez '
+    'şafaklar</text><text x="87.5" y="99.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Nasıl şafaklar? = ?</text><rect x="179" y="53" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="71.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. şairin vatan</text><text x="262.5" y="90.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">sevgisi</text><text x="262.5" y="108.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">3 isim = ?</text></svg>',
+ 5: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Öyküleyici ve '
+    'bilgilendirici iki metnin karşılaştırma panosu."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">I. Metin (Olay Anlatımı)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">“O sabah Hayri ve arkadaşları sahne</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">dekorunu heyecanla '
+    'kurdu.”</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">II. Metin (Bilgi '
+    'Aktarımı)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">“İstiklâl Marşı, 12 Mart 1921’de</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">724 şiir arasından seçilmiştir.”</text></svg>',
+ 6: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Büyük harfler, kesme '
+    'işareti ve düzeltme işareti kontrol kartları."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">A Kartı (✓)</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Mehmet Âkif · İstiklâl</text><text x="87.5" y="58.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Marşı’nı</text><rect x="179" y="3" '
+    'width="167" height="65" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">B Kartı (!)</text><text x="262.5" y="40.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Türk Milletine '
+    '(Millet</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">büyük?)</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">C Kartı (✓)</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">TBMM’de · 12 Mart</text><text x="87.5" y="127.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">1921</text><rect x="179" y="72" width="167" '
+    'height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="99.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">D Kartı (✓)</text><text x="262.5" y="118.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Millî Mücadele · '
+    'hâlâ</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kişi zamiri O ile işaret '
+    'zamiri O ayrımını gösteren kart."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">1. Cümle · İnsan Yerine</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">“O, İstiklâl Marşı’nı yazan vatan şairidir.” (O =</text><text '
+    'x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">?)</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. '
+    'Cümle · Nesne Yerine</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">“O, dedemden kalan tarihi madalyadır.” (O =</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">?)</text></svg>',
+ 8: '<svg viewBox="0 0 350 121" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Öyküleyici metinde '
+    'serim, düğüm ve çözüm bölümleri akışı."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Serim</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Tiyatro kararı</text><rect x="179" y="3" width="167" height="46" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. Düğüm</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Merak ve araştırma</text><rect x="4" y="53" '
+    'width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="80.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">3. Gelişme</text><text x="87.5" y="99.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Fedakârlığı '
+    'öğrenme</text><rect x="179" y="53" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="262.5" y="71.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">4. '
+    'Çözüm</text><text x="262.5" y="90.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sahnede coşkulu</text><text x="262.5" y="108.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">alkış</text></svg>',
+ 9: '<svg viewBox="0 0 350 106" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cümle içindeki dört '
+    'numaralı sözcüğün tür analizi kartı."><rect x="4" y="3" width="342" height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">CÜMLEDE SÖZCÜK TÜRLERİ ANALİZ KARTI</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">“① Bu millet, ② sarsılmaz bir ③ cesaret ile '
+    '④</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">onu korumuştur.”</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#7c3aed">① Bu (+millet) | ② sarsılmaz (+cesaret) | ③</text><text x="11.0" y="94.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">cesaret | ④ onu '
+    '(bayrağı)</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = sifat_zamir_ayrim_kartlari()
-    s[2]['gorsel'] = dort_tamlama_panosu()
-    s[5]['gorsel'] = oykuleyici_bilgilendirici_pano()
-    s[6]['gorsel'] = yazim_kurallari_kontrol_kartlari()
-    s[7]['gorsel'] = o_zamiri_ayrim_karti()
-    s[8]['gorsel'] = serim_dugum_cozum_akisi()
-    s[9]['gorsel'] = sozcuk_turu_analiz_karti()
-    s[11]['gorsel'] = isim_sifat_tamlamasi_farki()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

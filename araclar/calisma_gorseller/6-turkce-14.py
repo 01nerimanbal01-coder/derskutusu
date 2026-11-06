@@ -1,152 +1,107 @@
-"""6. sınıf Türkçe 14. hafta (3. Tema: Farklı Dünyalar, Zamirler ve Sözcükte Yapı) görselleri.
-SVG; insan figürü yok (K024); metin arkası beyaz bant yok (K178)."""
+"""6-turkce-14 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK, ACIK = '#9aa6bd', '#eef1f6', '#475569', '#f8fafc'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(ic, etiket, w=360, h=115):
-    return f'<svg viewBox="0 0 {w} {h}" style="width:100%;max-height:22mm;display:block;margin:1mm auto;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.0):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, boy=9.0, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
+GORSELLER = {0: '<svg viewBox="0 0 350 105" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mısır, İspanya ve Norveç '
+    'coğrafi kültür kartları"><rect x="4" y="3" width="342" height="25" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">MISIR · '
+    'Nil ve Piramitler</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#fde8e7" stroke="#d63a3a" stroke-width="0.75"/><text '
+    'x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">İSPANYA '
+    '· Akdeniz ve Endülüs</text><rect x="4" y="59" width="342" height="44" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="75.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">NORVEÇ</text><text x="11.0" y="93.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Fiyort ve Kuzey Işığı</text></svg>',
+ 1: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yolculuklar sözcüğünün '
+    'kök ve eklerine ayrılması"><rect x="4" y="3" width="342" height="25" rx="5" fill="#eef1f6" stroke="#9aa6bd" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Sözcükte Yapı Çözümlemesi: «yolculuklar»</text><rect x="4" y="31" width="342" height="25" rx="5" '
+    'fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">yol + İsim Kökü</text><rect x="4" y="59" width="342" height="44" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="75.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">-cu +</text><text x="11.0" y="93.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">1. Yapım Eki</text><rect x="4" y="106" width="342" height="44" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="122.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">-luk +</text><text x="11.0" y="140.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">2. Yapım Eki</text><rect x="4" y="153" width="342" height="23" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="169.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#7c3aed">-lar:</tspan> Çekim Eki</text></svg>',
+ 2: '<svg viewBox="0 0 350 105" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Üç farklı yapıda sözcük '
+    'grubu kartları"><rect x="4" y="3" width="342" height="25" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Grup '
+    'nehir-ler ülke-miz-de</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2. Grup gez-gin göz-lem-ci</text><rect x="4" y="59" width="342" height="44" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="75.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">3. Grup</text><text x="11.0" y="93.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Ak + deniz gök + yüzü</text></svg>',
+ 5: '<svg viewBox="0 0 350 143" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sıfat yapan ki, ilgi '
+    'zamiri ki ve bağlaç ki farkı"><rect x="4" y="3" width="342" height="44" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Sıfat Yapan -ki · Haritadaki ülke</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#475569">(Önündeki ismi niteler)</text><rect x="4" '
+    'y="50" width="342" height="44" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="66.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">İlgi Zamiri -ki seninki '
+    '(= valizin)</text><text x="11.0" y="84.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#475569">(Düşen ismin yerini tutar)</text><rect x="4" y="97" width="342" height="44" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Bağlaç Olan ki · Seyahat et ki...</text><text x="11.0" y="131.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#475569">(Ayrı yazılır, cümle '
+    'bağlar)</text></svg>',
+ 6: '<svg viewBox="0 0 350 191" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TDK özel ad ekleri ve '
+    'kalıplaşmış ki kuralları"><rect x="4" y="3" width="342" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">TDK · Özel Adlara Ekler</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#475569">Çekim eki ayrılır:</text><text x="11.0" y="56.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Norveç’te, Mısır’ın ✓</text><text x="11.0" '
+    'y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#475569">Yapım eki '
+    'ayrılmaz:</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Mısırlıların, İspanyolca ✓</text><rect x="4" y="107" width="342" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="123.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">TDK · Kalıplaşmış «ki»</text><text x="11.0" y="141.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Sanki · Oysaki · Mademki</text><text x="11.0" y="160.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Belki · Halbuki · '
+    'Çünkü</text><text x="11.0" y="179.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Meğerki · İllaki (Bitişik!)</text></svg>',
+ 7: '<svg viewBox="0 0 350 86" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yolculuğumuz sözcüğünde '
+    'iyelik zamiri çözümlemesi"><rect x="4" y="3" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Ek Hâlindeki Zamir Çözümlemesi</text><rect x="4" y="31" width="342" height="25" rx="5" '
+    'fill="#f8fafc" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Yolculuğ - umuz · (Kime ait? → Bizim)</text><rect x="4" y="59" width="342" '
+    'height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="75.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">«Yolculuğumuz çok verimli geçti.»</text></svg>',
+ 8: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gezi yazısı yazma ve TDK '
+    'denetim basamakları"><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Gözlem</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Açık fikirlilik</text><rect x="179" y="3" width="167" height="46" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2. Anlatım</text><text x="262.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Karşılaştırma</text><rect x="4" y="53" width="167" height="46" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">3. Söz Varlığı</text><text x="87.5" y="89.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kök ve ek seçimi</text><rect x="179" y="53" '
+    'width="167" height="46" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. TDK Denetimi</text><text x="262.5" '
+    'y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kesme ve -ki '
+    'eki</text></svg>',
+ 9: '<svg viewBox="0 0 350 181" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ova Çocuk ile '
+    'Mısır-İspanya-Norveç metinlerinin karşılaştırılması"><rect x="4" y="3" width="342" height="44" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">3. TEMA: FARKLI DÜNYALAR · METİNLER</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">ARASI BAKIŞ</text><rect x="4" y="50" '
+    'width="342" height="63" rx="5" fill="#f8fafc" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Ova Çocuk Metni</text><text x="11.0" y="84.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bozkır/ova → Dinginlik, '
+    'doğayla uyum ve</text><text x="11.0" y="103.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">konukseverlik</text><rect x="4" y="116" width="342" height="63" rx="5" fill="#f8fafc" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="132.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Mısır–İspanya–Norveç</text><text x="11.0" y="150.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çöl / Akdeniz / Fiyort → Farklı giyim, '
+    'mimari</text><text x="11.0" y="169.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ve kültür</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-
-    # s[0]: Mısır - İspanya - Norveç üçlü coğrafya sembollü gezi kartı
-    ic0 = kutu(4, 4, 352, 107, GRI_A, GRI)
-    ulkeler = [
-        ('MISIR', 'Nil ve Piramitler', TUR, TUR_A, 0),
-        ('İSPANYA', 'Akdeniz ve Endülüs', KIR, KIR_A, 1),
-        ('NORVEÇ', 'Fiyort ve Kuzey Işığı', CAM, CAM_A, 2),
-    ]
-    for i, (b, alt, c, d, tip) in enumerate(ulkeler):
-        x = 10 + i * 115
-        ic0 += kutu(x, 11, 110, 93, d, c)
-        ic0 += yazi(x + 55, 27, b, 9.2, c)
-        if tip == 0:
-            ic0 += f'<polygon points="{x+32},68 {x+52},40 {x+72},68" fill="{ACIK}" stroke="{c}" stroke-width="1.2"/>'
-        elif tip == 1:
-            ic0 += f'<circle cx="{x+55}" cy="54" r="13" fill="{ACIK}" stroke="{c}" stroke-width="1.3"/>'
-        else:
-            ic0 += f'<polyline points="{x+28},68 {x+44},42 {x+58},62 {x+74},38 {x+86},68" fill="none" stroke="{c}" stroke-width="1.5"/>'
-        ic0 += yazi(x + 55, 90, alt, 8.1, LAC)
-    s[0]['gorsel'] = svg(ic0, 'Mısır, İspanya ve Norveç coğrafi kültür kartları')
-
-    # s[1]: Kök + Yapım Eki + Yapım Eki + Çekim Eki vagon modeli (yol-cu-luk-lar)
-    ic1 = kutu(6, 6, 348, 103, GRI_A, GRI)
-    ic1 += yazi(180, 22, 'Sözcükte Yapı Çözümlemesi: «yolculuklar»', 9.0, MAVI)
-    parcalar = [
-        ('yol', 'İsim Kökü', MAVI, MAVI_A),
-        ('-cu', '1. Yapım Eki', YES, YES_A),
-        ('-luk', '2. Yapım Eki', TUR, TUR_A),
-        ('-lar', 'Çekim Eki', MOR, MOR_A),
-    ]
-    for i, (ek, tur, c, d) in enumerate(parcalar):
-        x = 12 + i * 85
-        ic1 += kutu(x, 32, 78, 56, d, c)
-        ic1 += yazi(x + 39, 54, ek, 11.0, c)
-        ic1 += yazi(x + 39, 76, tur, 7.8, LAC, ince=True)
-        if i < 3:
-            ic1 += yazi(x + 81.5, 62, '+', 10.0, SOLUK)
-    s[1]['gorsel'] = svg(ic1, 'Yolculuklar sözcüğünün kök ve eklerine ayrılması')
-
-    # s[2]: Basit - Türemiş - Birleşik sözcük kutuları
-    ic2 = kutu(4, 4, 352, 107, GRI_A, GRI)
-    yapilar = [
-        ('1. Grup', 'nehir-ler', 'ülke-miz-de', MAVI, MAVI_A),
-        ('2. Grup', 'gez-gin', 'göz-lem-ci', YES, YES_A),
-        ('3. Grup', 'Ak + deniz', 'gök + yüzü', MOR, MOR_A),
-    ]
-    for i, (b, s1, s2, c, d) in enumerate(yapilar):
-        x = 10 + i * 115
-        ic2 += kutu(x, 11, 110, 93, d, c)
-        ic2 += yazi(x + 55, 29, b, 8.8, c)
-        ic2 += f'<line x1="{x+10}" y1="38" x2="{x+100}" y2="38" stroke="{c}" stroke-width="0.7"/>'
-        ic2 += yazi(x + 55, 60, s1, 9.0, LAC)
-        ic2 += yazi(x + 55, 82, s2, 9.0, c)
-    s[2]['gorsel'] = svg(ic2, 'Üç farklı yapıda sözcük grubu kartları')
-
-    # s[5]: Üç farklı «ki» karşılaştırması (Sıfat -ki / İlgi zamiri -ki / Bağlaç ki)
-    ic5 = kutu(4, 4, 352, 107, GRI_A, GRI)
-    kiler = [
-        ('Sıfat Yapan -ki', 'Haritadaki ülke', '(Önündeki ismi niteler)', MAVI, MAVI_A),
-        ('İlgi Zamiri -ki', 'seninki (= valizin)', '(Düşen ismin yerini tutar)', YES, YES_A),
-        ('Bağlaç Olan ki', 'Seyahat et ki...', '(Ayrı yazılır, cümle bağlar)', TUR, TUR_A),
-    ]
-    for i, (b, orn, acik, c, d) in enumerate(kiler):
-        x = 10 + i * 115
-        ic5 += kutu(x, 11, 110, 93, d, c)
-        ic5 += yazi(x + 55, 29, b, 8.5, c)
-        ic5 += f'<line x1="{x+8}" y1="38" x2="{x+102}" y2="38" stroke="{c}" stroke-width="0.7"/>'
-        ic5 += yazi(x + 55, 61, orn, 8.4, LAC)
-        ic5 += yazi(x + 55, 83, acik, 7.3, SOLUK, ince=True)
-    s[5]['gorsel'] = svg(ic5, 'Sıfat yapan ki, ilgi zamiri ki ve bağlaç ki farkı')
-
-    # s[6]: TDK Özel Adlara Gelen Ekler ve Kalıplaşmış ki Panosu
-    ic6 = kutu(6, 6, 170, 103, YES_A, YES)
-    ic6 += yazi(91, 23, 'TDK · Özel Adlara Ekler', 8.8, YES)
-    ic6 += yazi(91, 46, 'Çekim eki ayrılır:', 8.0, SOLUK, ince=True)
-    ic6 += yazi(91, 61, 'Norveç’te, Mısır’ın ✓', 8.5, LAC)
-    ic6 += yazi(91, 79, 'Yapım eki ayrılmaz:', 8.0, SOLUK, ince=True)
-    ic6 += yazi(91, 94, 'Mısırlıların, İspanyolca ✓', 8.3, YES)
-
-    ic6 += kutu(184, 6, 170, 103, MOR_A, MOR)
-    ic6 += yazi(269, 23, 'TDK · Kalıplaşmış «ki»', 8.8, MOR)
-    ic6 += yazi(269, 48, 'Sanki · Oysaki · Mademki', 8.2, LAC)
-    ic6 += yazi(269, 68, 'Belki · Halbuki · Çünkü', 8.2, LAC)
-    ic6 += yazi(269, 88, 'Meğerki · İllaki (Bitişik!)', 8.2, MOR)
-    s[6]['gorsel'] = svg(ic6, 'TDK özel ad ekleri ve kalıplaşmış ki kuralları')
-
-    # s[7]: İyelik zamiri inceleme kartı («Yolculuğ-umuz»)
-    ic7 = kutu(6, 6, 348, 103, CAM_A, CAM)
-    ic7 += yazi(180, 24, 'Ek Hâlindeki Zamir Çözümlemesi', 9.2, CAM)
-    ic7 += kutu(24, 34, 150, 58, ACIK, CAM, r=5)
-    ic7 += yazi(99, 57, 'Yolculuğ - umuz', 10.2, LAC)
-    ic7 += yazi(99, 78, '(Kime ait? → Bizim)', 8.3, CAM)
-    ic7 += kutu(188, 34, 148, 58, YES_A, YES, r=5)
-    ic7 += yazi(262, 56, '«Yolculuğumuz çok', 8.6, LAC)
-    ic7 += yazi(262, 74, 'verimli geçti.»', 8.6, LAC)
-    s[7]['gorsel'] = svg(ic7, 'Yolculuğumuz sözcüğünde iyelik zamiri çözümlemesi')
-
-    # s[8]: Gezi yazısı 4 adımlı üretim akışı
-    ic8 = kutu(4, 4, 352, 107, GRI_A, GRI)
-    akis = [
-        ('1. Gözlem', 'Açık fikirlilik', MAVI, MAVI_A),
-        ('2. Anlatım', 'Karşılaştırma', YES, YES_A),
-        ('3. Söz Varlığı', 'Kök ve ek seçimi', TUR, TUR_A),
-        ('4. TDK Denetimi', 'Kesme ve -ki eki', MOR, MOR_A),
-    ]
-    for i, (b, alt, c, d) in enumerate(akis):
-        x = 10 + i * 86
-        ic8 += kutu(x, 14, 80, 87, d, c)
-        ic8 += yazi(x + 40, 38, b, 8.5, c)
-        ic8 += f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.7"/>'
-        ic8 += yazi(x + 40, 74, alt, 7.8, LAC, ince=True)
-        if i < 3:
-            ic8 += f'<polygon points="{x+81},57 {x+85},52 {x+85},62" fill="{c}"/>'
-    s[8]['gorsel'] = svg(ic8, 'Gezi yazısı yazma ve TDK denetim basamakları')
-
-    # s[9]: Ova Çocuk + Mısır-İspanya-Norveç ortak tema panosu
-    ic9 = kutu(6, 6, 348, 103, TUR_A, TUR)
-    ic9 += yazi(180, 22, '3. TEMA: FARKLI DÜNYALAR · METİNLER ARASI BAKIŞ', 8.8, TUR)
-    ic9 += kutu(16, 32, 156, 64, ACIK, YES, r=5)
-    ic9 += yazi(94, 52, 'Ova Çocuk Metni', 8.8, YES)
-    ic9 += yazi(94, 72, 'Bozkır/ova → Dinginlik,', 8.0, LAC, ince=True)
-    ic9 += yazi(94, 86, 'doğayla uyum ve konukseverlik', 7.8, SOLUK, ince=True)
-
-    ic9 += kutu(188, 32, 156, 64, ACIK, MAVI, r=5)
-    ic9 += yazi(266, 52, 'Mısır–İspanya–Norveç', 8.8, MAVI)
-    ic9 += yazi(266, 72, 'Çöl / Akdeniz / Fiyort →', 8.0, LAC, ince=True)
-    ic9 += yazi(266, 86, 'Farklı giyim, mimari ve kültür', 7.8, SOLUK, ince=True)
-    s[9]['gorsel'] = svg(ic9, 'Ova Çocuk ile Mısır-İspanya-Norveç metinlerinin karşılaştırılması')
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

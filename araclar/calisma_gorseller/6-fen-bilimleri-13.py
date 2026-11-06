@@ -1,93 +1,119 @@
-"""6. sınıf Fen Bilimleri 13. hafta (Denetleyici Sistem Sağlığı ve Işığın Yansıması) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""6-fen-bilimleri-13 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Denetleyici ve '
+    'düzenleyici sistem sağlığı doğru ve yanlış uygulamalar."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">1. Kask ve Emniyet</text><text x="87.5" y="40.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Kemeri (✓)</text><text x="87.5" y="58.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Beyin ve '
+    'omuriliği</text><text x="87.5" y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">darbeden korur</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">2. Düzenli Gece</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Uykusu (✓)</text><text x="262.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Büyüme hormonu</text><text x="262.5" y="77.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">salgısını '
+    'destekler</text><rect x="4" y="91" width="167" height="84" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="87.5" '
+    'y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">3. Bilinçsiz '
+    'İlaç</text><text x="87.5" y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d63a3a">Kullanımı (✗)</text><text x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Sistemlerin</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">dengesini bozar!</text><rect x="179" y="91" width="167" '
+    'height="84" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">4. B Vitamini ve</text><text x="262.5" '
+    'y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">İyotlu Tuz '
+    '(✓)</text><text x="262.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sinir ve tiroit</text><text x="262.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">sağlığını korur</text></svg>',
+ 2: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Düzgün yansıma ve '
+    'dağınık yansıma özelliklerinin karşılaştırması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Düzgün Yansıma (Ayna / Durgun Su)</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Pürüzsüz yüzey · Paralel yansıma</text><text '
+    'x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Net ve '
+    'parlak görüntü oluşur</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Dağınık Yansıma (Duvar / Kâğıt)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Pürüzlü yüzey · Dağınık yansıma</text><text x="11.0" y="122.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Net görüntü oluşmaz '
+    '(Etraf aydınlanır)</text></svg>',
+ 5: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Üç delikli karton '
+    'deneyinde ışığın doğrusal yayılması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">1. Durum: Delikler Aynı Hizada</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Mum → [Delik 1] → [Delik 2] → [Delik 3]</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Işık doğrusal '
+    'geçer ve görülür</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">2. '
+    'Durum: Ortadaki Karton Kaydırıldı</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Işık doğrusal yayıldığı için engellenir ve</text><text x="11.0" y="122.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">mum ışığı '
+    'görülmez</text></svg>',
+ 6: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="K (düzgün) ve L '
+    '(dağınık) yüzeylerinde ışık ışınlarının yansıması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">K Yüzeyi (Pürüzsüz ve Parlak)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Paralel Gelen ⇉ Paralel Yansıyan</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0e8fa8">Örnek: Düzlem ayna, düz '
+    'folyo</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">L Yüzeyi '
+    '(Pürüzlü ve Mat)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Paralel Gelen ⇉ Farklı Yönlere Saçılan</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">Örnek: Buruşuk folyo, halı, '
+    'duvar</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Durgun ve dalgalı su '
+    'yüzeyinde yansıma ve görüntü farkı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Durgun Göl Suyu (Taş Atmadan Önce)</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Pürüzsüz yüzey → Düzgün yansıma</text><text '
+    'x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#12a150">Ağaçların görüntüsü çok nettir</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Dalgalı Göl Suyu (Taş Atıldıktan Sonra)</text><text x="11.0" y="103.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Pürüzlü yüzey → Dağınık yansıma</text><text '
+    'x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#d97706">Görüntü bozulur ve bulanıklaşır</text></svg>',
+ 8: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Alüminyum folyo ile '
+    'düzgün ve dağınık yansıma deney basamakları."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Adım: Düz Folyo</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Gözlemi</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Paralel yansıma ve</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">net '
+    'görüntü</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" '
+    'y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Adım: '
+    'Folyoyu</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">Buruşturma</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Yüzeyi pürüzlü hâle</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">getirme</text><rect x="4" y="91" width="167" height="84" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">3. Adım: Buruşuk</text><text x="87.5" y="128.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Folyo Gözlemi</text><text x="87.5" y="146.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Farklı '
+    'yönlere</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">dağınık yansıma</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">4. Adım: Bilimsel</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Çıkarım</text><text x="262.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Pürüzlülük artarsa</text><text x="262.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">görüntü '
+    'bozulur</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dağınık yansımanın '
+    'aydınlanma ve görme üzerindeki olumlu etkileri."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Dağınık Yansımanın Günlük Önemi 1</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Gölgede kalan köşeleri aydınlatır</text><text '
+    'x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#12a150">Cisimleri her açıdan görmemizi sağlar</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Dağınık Yansımanın Günlük Önemi 2</text><text x="11.0" y="103.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Mat kitap sayfası gözü '
+    'kamaştırmaz</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#2451d6">Rahat okuma olanağı sunar</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = dortlu_kart([
-        ('1. Kask ve Emniyet Kemeri (✓)', 'Beyin ve omuriliği darbeden korur', YES, YES_A),
-        ('2. Düzenli Gece Uykusu (✓)', 'Büyüme hormonu salgısını destekler', MAVI, MAVI_A),
-        ('3. Bilinçsiz İlaç Kullanımı (✗)', 'Sistemlerin dengesini bozar!', KIR, KIR_A),
-        ('4. B Vitamini ve İyotlu Tuz (✓)', 'Sinir ve tiroit sağlığını korur', CAM, CAM_A),
-    ], 'Denetleyici ve düzenleyici sistem sağlığı doğru ve yanlış uygulamalar.')
-    s[2]['gorsel'] = ikili_kart(
-        'Düzgün Yansıma (Ayna / Durgun Su)', 'Pürüzsüz yüzey · Paralel yansıma', 'Net ve parlak görüntü oluşur', MAVI, MAVI_A,
-        'Dağınık Yansıma (Duvar / Kâğıt)', 'Pürüzlü yüzey · Dağınık yansıma', 'Net görüntü oluşmaz (Etraf aydınlanır)', TUR, TUR_A,
-        'Düzgün yansıma ve dağınık yansıma özelliklerinin karşılaştırması.'
-    )
-    s[5]['gorsel'] = ikili_kart(
-        '1. Durum: Delikler Aynı Hizada', 'Mum → [Delik 1] → [Delik 2] → [Delik 3]', 'Işık doğrusal geçer ve görülür', YES, YES_A,
-        '2. Durum: Ortadaki Karton Kaydırıldı', 'Işık doğrusal yayıldığı için', 'engellenir ve mum ışığı görülmez', KIR, KIR_A,
-        'Üç delikli karton deneyinde ışığın doğrusal yayılması.'
-    )
-    s[6]['gorsel'] = ikili_kart(
-        'K Yüzeyi (Pürüzsüz ve Parlak)', 'Paralel Gelen ⇉ Paralel Yansıyan', 'Örnek: Düzlem ayna, düz folyo', CAM, CAM_A,
-        'L Yüzeyi (Pürüzlü ve Mat)', 'Paralel Gelen ⇉ Farklı Yönlere Saçılan', 'Örnek: Buruşuk folyo, halı, duvar', MOR, MOR_A,
-        'K (düzgün) ve L (dağınık) yüzeylerinde ışık ışınlarının yansıması.'
-    )
-    s[7]['gorsel'] = ikili_kart(
-        'Durgun Göl Suyu (Taş Atmadan Önce)', 'Pürüzsüz yüzey → Düzgün yansıma', 'Ağaçların görüntüsü çok nettir', YES, YES_A,
-        'Dalgalı Göl Suyu (Taş Atıldıktan Sonra)', 'Pürüzlü yüzey → Dağınık yansıma', 'Görüntü bozulur ve bulanıklaşır', TUR, TUR_A,
-        'Durgun ve dalgalı su yüzeyinde yansıma ve görüntü farkı.'
-    )
-    s[8]['gorsel'] = dortlu_kart([
-        ('1. Adım: Düz Folyo Gözlemi', 'Paralel yansıma ve net görüntü', MAVI, MAVI_A),
-        ('2. Adım: Folyoyu Buruşturma', 'Yüzeyi pürüzlü hâle getirme', TUR, TUR_A),
-        ('3. Adım: Buruşuk Folyo Gözlemi', 'Farklı yönlere dağınık yansıma', MOR, MOR_A),
-        ('4. Adım: Bilimsel Çıkarım', 'Pürüzlülük artarsa görüntü bozulur', YES, YES_A),
-    ], 'Alüminyum folyo ile düzgün ve dağınık yansıma deney basamakları.')
-    s[9]['gorsel'] = ikili_kart(
-        'Dağınık Yansımanın Günlük Önemi 1', 'Gölgede kalan köşeleri aydınlatır', 'Cisimleri her açıdan görmemizi sağlar', YES, YES_A,
-        'Dağınık Yansımanın Günlük Önemi 2', 'Mat kitap sayfası gözü kamaştırmaz', 'Rahat okuma olanağı sunar', MAVI, MAVI_A,
-        'Dağınık yansımanın aydınlanma ve görme üzerindeki olumlu etkileri.'
-    )
-    s[11]['gorsel'] = dortlu_kart([
-        ('Fiziksel Koruma', 'Kask, dizlik ve emniyet kemeri', MAVI, MAVI_A),
-        ('Beslenme Düzeni', 'B vitamini, omega-3 ve iyotlu tuz', YES, YES_A),
-        ('Uyku ve Dinlenme', 'Düzenli gece uykusu ve spor', CAM, CAM_A),
-        ('Kaçınılacak Unsurlar', 'Sigara, alkol, stres, bilinçsiz ilaç', KIR, KIR_A),
-    ], 'Denetleyici ve düzenleyici sistemlerin sağlığını koruma rehberi.')
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

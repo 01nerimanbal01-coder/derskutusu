@@ -1,150 +1,95 @@
-"""6. sınıf İngilizce 14. hafta (Theme 3: Personal Life) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024); metin arkası beyaz bant yok (K178)."""
+"""6-ingilizce-14 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#475569'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(ic, etiket, w=360, h=115):
-    return f'<svg viewBox="0 0 {w} {h}" style="width:100%;max-height:22mm;display:block;margin:1mm auto;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.0):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, boy=9.0, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
+GORSELLER = {0: '<svg viewBox="0 0 350 86" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Appearance, personality '
+    'and belongings question cards"><rect x="4" y="3" width="342" height="25" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">APPEARANCE · What does he look like?</text><rect x="4" y="31" width="342" height="25" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">PERSONALITY · What is she like?</text><rect x="4" y="59" width="342" height="25" '
+    'rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="75.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">BELONGINGS · Whose trainers are these?</text></svg>',
+ 1: '<svg viewBox="0 0 350 124" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sports kit bag and '
+    'knee-ankle protection card"><rect x="4" y="3" width="342" height="44" rx="5" fill="#f8fafc" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Protective Pads · Safety Gear</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Protect: knees and ankles in football</text><rect x="4" y="50" '
+    'width="342" height="25" rx="5" fill="#f8fafc" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="66.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">SPORTS KIT</text><rect x="4" y="78" '
+    'width="342" height="44" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="94.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Healthy Exercise Benefits</text><text '
+    'x="11.0" y="112.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#475569">Strong '
+    'heart, stomach and back</text></svg>',
+ 2: '<svg viewBox="0 0 350 105" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparative adjectives '
+    'and noun agreement cards"><rect x="4" y="3" width="342" height="25" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">1-Syllable Adj. tall → taller slim → slimmer</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">2+ Syllables more generous more outgoing</text><rect x="4" y="59" width="342" '
+    'height="44" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="75.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Noun Agreement trainers → ARE jewellery →</text><text x="11.0" '
+    'y="93.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">IS</text></svg>',
+ 5: '<svg viewBox="0 0 350 90" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wardrobe comparison '
+    'between weekday routine and today"><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">USUALLY</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">(Weekdays)</text><text x="87.5" y="58.9" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">School Uniform</text><text x="87.5" y="77.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">(Present '
+    'Simple)</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" '
+    'y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">TODAY / '
+    'RIGHT</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">NOW · 10</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Sports Kit and</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Trainers (-ing)</text></svg>',
+ 6: '<svg viewBox="0 0 350 86" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Accessories showcase with '
+    'necklace, bracelet and wallet"><rect x="4" y="3" width="342" height="25" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">NECKLACE / CHAIN around the neck</text><rect x="4" y="31" width="342" height="25" rx="5" '
+    'fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0e8fa8">BRACELET on the wrist</text><rect x="4" y="59" width="342" height="25" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="75.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">WALLET / PURSE in the pocket / bag</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arda and Bora height and '
+    'personality data cards"><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">PROFILE '
+    'CARD · ARDA · Height: 162 cm</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#475569">Social trait: Quiet / Shy (+)</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Hair: Short straight</text><rect x="4" y="69" width="342" '
+    'height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">PROFILE CARD · BORA · Height: 154 cm</text><text x="11.0" '
+    'y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#475569">Social trait: '
+    'Outgoing (+++) · Hair: Curly</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#475569">brown</text></svg>',
+ 8: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four-step lost and found '
+    'bracelet dialogue flow"><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Find Item</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Silver bracelet!</text><rect x="179" y="3" width="167" height="46" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2. Ask Owner</text><text x="262.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Whose is it?</text><rect x="4" y="53" width="167" height="46" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">3. Identify</text><text x="87.5" y="89.9" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Defne’s jewellery</text><rect x="179" y="53" width="167" '
+    'height="46" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">4. Return It</text><text x="262.5" y="89.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Give it back '
+    'now</text></svg>',
+ 9: '<svg viewBox="0 0 350 124" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Generous and reliable '
+    'character traits checklist"><rect x="4" y="3" width="342" height="25" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">CHARACTER QUALITIES CHECKLIST</text><rect x="4" y="31" width="342" height="44" rx="5" fill="#f8fafc" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Trait 1: Shares items</text><text x="11.0" y="65.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Helps friends in need → GENEROUS</text><rect '
+    'x="4" y="78" width="342" height="44" rx="5" fill="#f8fafc" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="94.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Trait 2: Keeps '
+    'secrets</text><text x="11.0" y="112.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Never breaks promises → RELIABLE</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-
-    # s[0]: 3 Question Cards (Appearance / Personality / Belongings)
-    ic0 = kutu(4, 4, 352, 107, GRI_A, GRI)
-    q_cards = [
-        ('APPEARANCE', 'What does he', 'look like?', MAVI, MAVI_A),
-        ('PERSONALITY', 'What is she', 'like?', YES, YES_A),
-        ('BELONGINGS', 'Whose trainers', 'are these?', TUR, TUR_A),
-    ]
-    for i, (b, l1, l2, c, d) in enumerate(q_cards):
-        x = 10 + i * 115
-        ic0 += kutu(x, 11, 110, 93, d, c)
-        ic0 += yazi(x + 55, 29, b, 8.8, c)
-        ic0 += f'<line x1="{x+10}" y1="38" x2="{x+100}" y2="38" stroke="{c}" stroke-width="0.7"/>'
-        ic0 += yazi(x + 55, 62, l1, 8.8, LAC)
-        ic0 += yazi(x + 55, 80, l2, 8.8, LAC)
-    s[0]['gorsel'] = svg(ic0, 'Appearance, personality and belongings question cards')
-
-    # s[1]: Sports Bag, Trainers and Protective Knee/Ankle Pads (no human figures)
-    ic1 = kutu(6, 6, 348, 103, CAM_A, CAM)
-    # Spor çantası çizimi
-    ic1 += kutu(20, 38, 86, 52, '#f8fafc', CAM, r=8, kalin=1.3)
-    ic1 += f'<path d="M42,38 C42,20 84,20 84,38" fill="none" stroke="{CAM}" stroke-width="2"/>'
-    ic1 += yazi(63, 68, 'SPORTS KIT', 8.2, CAM)
-    ic1 += kutu(122, 16, 218, 38, '#f8fafc', MAVI, r=5)
-    ic1 += yazi(231, 33, 'Protective Pads · Safety Gear', 8.8, MAVI)
-    ic1 += yazi(231, 47, 'Protect: knees and ankles in football', 8.2, LAC, ince=True)
-    ic1 += kutu(122, 61, 218, 38, YES_A, YES, r=5)
-    ic1 += yazi(231, 78, 'Healthy Exercise Benefits', 8.6, YES)
-    ic1 += yazi(231, 92, 'Strong heart, stomach and back', 8.0, SOLUK, ince=True)
-    s[1]['gorsel'] = svg(ic1, 'Sports kit bag and knee-ankle protection card')
-
-    # s[2]: Grammar Reference Cards (-er / more / plural-uncountable)
-    ic2 = kutu(4, 4, 352, 107, GRI_A, GRI)
-    gram = [
-        ('1-Syllable Adj.', 'tall → taller', 'slim → slimmer', MAVI, MAVI_A),
-        ('2+ Syllables', 'more generous', 'more outgoing', MOR, MOR_A),
-        ('Noun Agreement', 'trainers → ARE', 'jewellery → IS', TUR, TUR_A),
-    ]
-    for i, (b, g1, g2, c, d) in enumerate(gram):
-        x = 10 + i * 115
-        ic2 += kutu(x, 11, 110, 93, d, c)
-        ic2 += yazi(x + 55, 29, b, 8.6, c)
-        ic2 += f'<line x1="{x+10}" y1="38" x2="{x+100}" y2="38" stroke="{c}" stroke-width="0.7"/>'
-        ic2 += yazi(x + 55, 62, g1, 8.4, LAC)
-        ic2 += yazi(x + 55, 82, g2, 8.4, c)
-    s[2]['gorsel'] = svg(ic2, 'Comparative adjectives and noun agreement cards')
-
-    # s[5]: Selin’s Wardrobe: Usually vs Today (hanger and jersey icons, no person)
-    ic5 = kutu(6, 6, 170, 103, MAVI_A, MAVI)
-    ic5 += yazi(91, 22, 'USUALLY (Weekdays)', 8.8, MAVI)
-    # Askıda okul forması (geometrik tişört/ceket)
-    ic5 += f'<polygon points="71,36 111,36 122,48 112,54 106,48 106,74 76,74 76,48 70,54 60,48" fill="#f8fafc" stroke="{MAVI}" stroke-width="1.2"/>'
-    ic5 += yazi(91, 93, 'School Uniform (Present Simple)', 7.8, LAC)
-
-    ic5 += kutu(184, 6, 170, 103, TUR_A, TUR)
-    ic5 += yazi(269, 22, 'TODAY / RIGHT NOW', 8.8, TUR)
-    ic5 += f'<polygon points="249,36 289,36 300,48 290,54 284,48 284,74 254,74 254,48 248,54 238,48" fill="#f8fafc" stroke="{TUR}" stroke-width="1.2"/>'
-    ic5 += yazi(269, 60, '10', 9.5, TUR)
-    ic5 += yazi(269, 93, 'Sports Kit and Trainers (-ing)', 7.8, LAC)
-    s[5]['gorsel'] = svg(ic5, 'Wardrobe comparison between weekday routine and today')
-
-    # s[6]: Accessories Showcase (Necklace, Bracelet, Wallet)
-    ic6 = kutu(4, 4, 352, 107, GRI_A, GRI)
-    acc = [
-        ('NECKLACE / CHAIN', 'around the neck', MOR, MOR_A, 'circle'),
-        ('BRACELET', 'on the wrist', CAM, CAM_A, 'oval'),
-        ('WALLET / PURSE', 'in the pocket / bag', YES, YES_A, 'rect'),
-    ]
-    for i, (b, alt, c, d, sekil) in enumerate(acc):
-        x = 10 + i * 115
-        ic6 += kutu(x, 11, 110, 93, d, c)
-        ic6 += yazi(x + 55, 27, b, 8.3, c)
-        if sekil == 'circle':
-            ic6 += f'<circle cx="{x+55}" cy="55" r="14" fill="none" stroke="{c}" stroke-width="1.6"/><circle cx="{x+55}" cy="71" r="3.5" fill="{c}"/>'
-        elif sekil == 'oval':
-            ic6 += f'<ellipse cx="{x+55}" cy="56" rx="18" ry="11" fill="none" stroke="{c}" stroke-width="1.8" stroke-dasharray="4,2"/>'
-        else:
-            ic6 += kutu(x + 35, 44, 40, 24, '#f8fafc', c, r=3, kalin=1.3) + kutu(x + 61, 52, 14, 8, d, c, r=2)
-        ic6 += yazi(x + 55, 91, alt, 8.0, LAC, ince=True)
-    s[6]['gorsel'] = svg(ic6, 'Accessories showcase with necklace, bracelet and wallet')
-
-    # s[7]: Two Data Cards (Arda vs Bora)
-    ic7 = kutu(6, 6, 170, 103, MAVI_A, MAVI)
-    ic7 += yazi(91, 24, 'PROFILE CARD · ARDA', 9.0, MAVI)
-    ic7 += yazi(91, 50, 'Height: 162 cm', 9.0, LAC)
-    ic7 += yazi(91, 70, 'Social trait: Quiet / Shy (+)', 8.2, SOLUK, ince=True)
-    ic7 += yazi(91, 90, 'Hair: Short straight', 8.0, MAVI, ince=True)
-
-    ic7 += kutu(184, 6, 170, 103, YES_A, YES)
-    ic7 += yazi(269, 24, 'PROFILE CARD · BORA', 9.0, YES)
-    ic7 += yazi(269, 50, 'Height: 154 cm', 9.0, LAC)
-    ic7 += yazi(269, 70, 'Social trait: Outgoing (+++)', 8.2, SOLUK, ince=True)
-    ic7 += yazi(269, 90, 'Hair: Curly brown', 8.0, YES, ince=True)
-    s[7]['gorsel'] = svg(ic7, 'Arda and Bora height and personality data cards')
-
-    # s[8]: Lost Bracelet Dialogue Flow (4 steps)
-    ic8 = kutu(4, 4, 352, 107, GRI_A, GRI)
-    flow = [
-        ('1. Find Item', 'Silver bracelet!', MAVI, MAVI_A),
-        ('2. Ask Owner', 'Whose is it?', TUR, TUR_A),
-        ('3. Identify', 'Defne’s jewellery', MOR, MOR_A),
-        ('4. Return It', 'Give it back now', YES, YES_A),
-    ]
-    for i, (b, alt, c, d) in enumerate(flow):
-        x = 10 + i * 86
-        ic8 += kutu(x, 14, 80, 87, d, c)
-        ic8 += yazi(x + 40, 38, b, 8.4, c)
-        ic8 += f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.7"/>'
-        ic8 += yazi(x + 40, 74, alt, 7.8, LAC, ince=True)
-        if i < 3:
-            ic8 += f'<polygon points="{x+81},57 {x+85},52 {x+85},62" fill="{c}"/>'
-    s[8]['gorsel'] = svg(ic8, 'Four-step lost and found bracelet dialogue flow')
-
-    # s[9]: Character Qualities Chart
-    ic9 = kutu(6, 6, 348, 103, MOR_A, MOR)
-    ic9 += yazi(180, 22, 'CHARACTER QUALITIES CHECKLIST', 9.2, MOR)
-    ic9 += kutu(18, 32, 154, 66, '#f8fafc', YES, r=5)
-    ic9 += yazi(95, 50, 'Trait 1: Shares items', 8.6, YES)
-    ic9 += yazi(95, 68, 'Helps friends in need', 8.0, LAC, ince=True)
-    ic9 += yazi(95, 86, '→ GENEROUS', 8.8, YES)
-
-    ic9 += kutu(188, 32, 154, 66, '#f8fafc', MAVI, r=5)
-    ic9 += yazi(265, 50, 'Trait 2: Keeps secrets', 8.6, MAVI)
-    ic9 += yazi(265, 68, 'Never breaks promises', 8.0, LAC, ince=True)
-    ic9 += yazi(265, 86, '→ RELIABLE', 8.8, MAVI)
-    s[9]['gorsel'] = svg(ic9, 'Generous and reliable character traits checklist')
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

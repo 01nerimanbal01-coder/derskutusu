@@ -1,93 +1,127 @@
-"""6. sınıf Din Kültürü ve Ahlak Bilgisi 12. hafta (Hz. Davud (as) ve Fil Suresi) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""6-din-kulturu-ve-ahlak-bilgisi-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="El emeği hadisi ve Hz. '
+    'Davud’un demircilik/zırh sanatı kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Hadis-i Şerif (Buhârî)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">«Hiç kimse kendi elinin emeğinden daha</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">hayırlı bir rızık '
+    'yememiştir.»</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Hz. '
+    'Davud’un (as) Mesleği</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Demiri yumuşatıp zırh yapma</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Alın teri ve helal kazanç</text></svg>',
+ 2: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fil suresinin beş '
+    'ayetinin okunuş ve anlam kartları."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Ayet: Ashâb-ı Fîl</text><text x="87.5" y="49.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Elem tera keyfe</text><text x="87.5" y="68.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">fe’ale rabbüke...</text><rect x="179" y="3" '
+    'width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Ayet: Tuzakların</text><text x="262.5" '
+    'y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">Bozulması</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Elem yec’al</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">keydehüm fî tadlîl</text><rect x="4" y="91" width="167" height="84" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Ayet: Ebâbîl</text><text x="87.5" y="128.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Kuşları</text><text x="87.5" y="146.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ve ersele '
+    'aleyhim</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">tayran ebâbîl</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4-5. Ayet: Siccîl ve</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Asfin Me’kûl</text><text x="262.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Termîhim... ke’asfin</text><text x="262.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">me’kûl</text></svg>',
+ 5: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hz. Davud’un (as) temel '
+    'özelliklerini özetleyen dörtlü şema."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">İlahi Kitabı: Zebur</text><text x="87.5" y="49.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dört büyük kitaptan</text><text x="87.5" y="68.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">biri</text><rect x="179" '
+    'y="3" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">İbadeti: '
+    'Davud</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Orucu</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Bir gün oruç, bir gün</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">iftar</text><rect x="4" y="91" width="167" height="84" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Yönetimi: Adalet ve</text><text x="87.5" y="128.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Hikmet</text><text '
+    'x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kudüs '
+    'merkezli adil</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">yönetim</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="118.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Mucize ve Sanatı: ?</text><text x="262.5" y="137.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Demiri ateşsiz işleyip</text><text x="262.5" y="156.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">zırh yapma</text></svg>',
+ 6: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fil suresi 3. ayet okuma '
+    've anlam tamamlama kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Fil Suresi 3. Ayet Tamamlama</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">«Ve ersele aleyhim ...»</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Boşluğa gelecek ifade '
+    'hangisidir?</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Ayetin '
+    'Türkçe Anlamı</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">«Üzerlerine sürü sürü (Ebâbîl) kuşlar</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">gönderdi.»</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="571 Fil Olayı’nın nedeni '
+    've sonucu bilgi kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Fil '
+    'Olayı (Milattan Sonra 571)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Yemen Valisi Ebrehe’nin ordusu</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d63a3a">Amaç: Kâbe’yi yıkmak</text><rect x="4" y="69" width="342" '
+    'height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">İlahi Yardım ve Sonuç</text><text x="11.0" y="103.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Ebâbîl kuşları ve siccîl '
+    'taşları</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#12a150">Kâbe korundu, ordu helak oldu</text></svg>',
+ 8: '<svg viewBox="0 0 350 121" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fil suresi ayetlerinin '
+    'sıralama kartları."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Ayet</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">... bi-ashâbil-fîl</text><rect x="179" y="3" width="167" height="46" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2. Ayet</text><text x="262.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">... keydehüm fî tadlîl</text><rect x="4" y="53" width="167" height="65" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="71.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">3-4. Ayetler</text><text x="87.5" y="90.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">... tayran ebâbîl /</text><text x="87.5" y="108.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">min siccîl</text><rect '
+    'x="179" y="53" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="80.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">5. Ayet</text><text '
+    'x="262.5" y="99.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">... '
+    'ke’asfin me’kûl</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hz. Davud kıssası ve Fil '
+    'suresinin ortak mesajı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Hz. '
+    'Davud (as) Kıssası</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Zalim Calut’a karşı iman ve cesaret</text><text x="11.0" y="56.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Adalet, ibadet ve tevekkül</text><rect x="4" '
+    'y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="85.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Fil Suresi '
+    'Mesajı</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Kibirli Ebrehe’ye karşı ilahi kudret</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Allah’ın (c.c.) gücü her şeyin üstündedir</text></svg>',
+ 11: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hz. Davud’un '
+     'hükümdarlığı ve kendi el emeğiyle geçinmesi şeması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" '
+     'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#2451d6">Hükümdarlık ve Kamu Emaneti</text><text x="11.0" y="37.8" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Devlet hazinesine dokunmama</text><text '
+     'x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Halk '
+     'arasında adaletle hükmetme</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+     'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#12a150">El Emeği ve Çalışma Ahlakı</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Zırh yapıp satarak geçinme</text><text x="11.0" y="122.6" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Üretkenlik ve helal '
+     'rızık bilinci</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = ikili_kart(
-        'Hadis-i Şerif (Buhârî)', '«Hiç kimse kendi elinin emeğinden', 'daha hayırlı bir rızık yememiştir.»', YES, YES_A,
-        'Hz. Davud’un (as) Mesleği', 'Demiri yumuşatıp zırh yapma', 'Alın teri ve helal kazanç', TUR, TUR_A,
-        'El emeği hadisi ve Hz. Davud’un demircilik/zırh sanatı kartı.'
-    )
-    s[2]['gorsel'] = dortlu_kart([
-        ('1. Ayet: Ashâb-ı Fîl', 'Elem tera keyfe fe’ale rabbüke...', MAVI, MAVI_A),
-        ('2. Ayet: Tuzakların Bozulması', 'Elem yec’al keydehüm fî tadlîl', TUR, TUR_A),
-        ('3. Ayet: Ebâbîl Kuşları', 'Ve ersele aleyhim tayran ebâbîl', YES, YES_A),
-        ('4-5. Ayet: Siccîl ve Asfin Me’kûl', 'Termîhim... ke’asfin me’kûl', MOR, MOR_A),
-    ], 'Fil suresinin beş ayetinin okunuş ve anlam kartları.')
-    s[5]['gorsel'] = dortlu_kart([
-        ('İlahi Kitabı: Zebur', 'Dört büyük kitaptan biri', MAVI, MAVI_A),
-        ('İbadeti: Davud Orucu', 'Bir gün oruç, bir gün iftar', YES, YES_A),
-        ('Yönetimi: Adalet ve Hikmet', 'Kudüs merkezli adil yönetim', MOR, MOR_A),
-        ('Mucize ve Sanatı: ?', 'Demiri ateşsiz işleyip zırh yapma', TUR, TUR_A),
-    ], 'Hz. Davud’un (as) temel özelliklerini özetleyen dörtlü şema.')
-    s[6]['gorsel'] = ikili_kart(
-        'Fil Suresi 3. Ayet Tamamlama', '«Ve ersele aleyhim ...»', 'Boşluğa gelecek ifade hangisidir?', MAVI, MAVI_A,
-        'Ayetin Türkçe Anlamı', '«Üzerlerine sürü sürü (Ebâbîl)', 'kuşlar gönderdi.»', YES, YES_A,
-        'Fil suresi 3. ayet okuma ve anlam tamamlama kartı.'
-    )
-    s[7]['gorsel'] = ikili_kart(
-        'Fil Olayı (Milattan Sonra 571)', 'Yemen Valisi Ebrehe’nin ordusu', 'Amaç: Kâbe’yi yıkmak', KIR, KIR_A,
-        'İlahi Yardım ve Sonuç', 'Ebâbîl kuşları ve siccîl taşları', 'Kâbe korundu, ordu helak oldu', YES, YES_A,
-        '571 Fil Olayı’nın nedeni ve sonucu bilgi kartı.'
-    )
-    s[8]['gorsel'] = dortlu_kart([
-        ('1. Ayet', '... bi-ashâbil-fîl', MAVI, MAVI_A),
-        ('2. Ayet', '... keydehüm fî tadlîl', TUR, TUR_A),
-        ('3-4. Ayetler', '... tayran ebâbîl / min siccîl', YES, YES_A),
-        ('5. Ayet', '... ke’asfin me’kûl', MOR, MOR_A),
-    ], 'Fil suresi ayetlerinin sıralama kartları.')
-    s[9]['gorsel'] = ikili_kart(
-        'Hz. Davud (as) Kıssası', 'Zalim Calut’a karşı iman ve cesaret', 'Adalet, ibadet ve tevekkül', MAVI, MAVI_A,
-        'Fil Suresi Mesajı', 'Kibirli Ebrehe’ye karşı ilahi kudret', 'Allah’ın (c.c.) gücü her şeyin üstündedir', YES, YES_A,
-        'Hz. Davud kıssası ve Fil suresinin ortak mesajı.'
-    )
-    s[11]['gorsel'] = ikili_kart(
-        'Hükümdarlık ve Kamu Emaneti', 'Devlet hazinesine dokunmama', 'Halk arasında adaletle hükmetme', MAVI, MAVI_A,
-        'El Emeği ve Çalışma Ahlakı', 'Zırh yapıp satarak geçinme', 'Üretkenlik ve helal rızık bilinci', YES, YES_A,
-        'Hz. Davud’un hükümdarlığı ve kendi el emeğiyle geçinmesi şeması.'
-    )
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

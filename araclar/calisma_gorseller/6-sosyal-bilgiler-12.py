@@ -1,93 +1,132 @@
-"""6. sınıf Sosyal Bilgiler 12. hafta (Türk Dünyasıyla İş Birlikleri ve İlk Türk Devletleri) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""6-sosyal-bilgiler-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkiye’nin Türk '
+    'dünyasıyla iş birliği yürüttüğü dört temel kurum."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">TDT (Türk Devletleri</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Teşkilatı)</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Siyasi, ekonomik ve</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">stratejik '
+    'çatı</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" '
+    'y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">TİKA</text><text x="262.5" y="49.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Kalkınma ve tarihî</text><text x="262.5" y="68.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">eser restorasyonu</text><rect x="4" y="91" width="167" height="84" '
+    'rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="118.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">TÜRKSOY</text><text x="87.5" y="137.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ortak kültür, sanat</text><text x="87.5" '
+    'y="156.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ve '
+    'festivaller</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Maarif Vakfı &amp;</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Yunus Emre Enst.</text><text x="262.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Okul, üniversite ve</text><text x="262.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Türkçe '
+    'eğitimi</text></svg>',
+ 2: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkistan’da kurulan ilk '
+    'Türk devletleri ve kültür mirası kartları."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Asya Hun Devleti</text><text x="87.5" y="49.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Teoman / Mete Han ·</text><text x="87.5" y="68.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Onlu Sistem</text><rect '
+    'x="179" y="3" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Kök Türk</text><text '
+    'x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Devletleri</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Bumin / Bilge Kağan</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">· Orhun Yazıtları</text><rect x="4" y="91" width="167" height="65" '
+    'rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="109.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. Uygur Devleti</text><text x="87.5" y="128.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yerleşik hayat ·</text><text x="87.5" '
+    'y="146.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Matbaa ve '
+    'kâğıt</text><rect x="179" y="91" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="109.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Kurgan '
+    'Mirası</text><text x="262.5" y="128.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Esik (Altın Elbiseli) ·</text><text x="262.5" y="146.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Pazırık Halısı</text></svg>',
+ 5: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Esik ve Pazırık '
+    'kurganlarından çıkan maden ve dokuma eserleri."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Esik Kurganı Buluntusu</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Altın Elbiseli Adam Zırhı</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Kanıt: İleri maden ve '
+    'altın işçiliği</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Pazırık '
+    'Kurganı Buluntusu</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Dünyanın en eski düğümlü halısı</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">Kanıt: İleri dokumacılık sanatı</text></svg>',
+ 6: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Orhun Yazıtları’ndaki '
+    'sosyal devlet anlayışı metin kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Orhun Yazıtları (Bilge Kağan)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">«Aç milleti doyurdum, çıplak milleti</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">giydirdim, az '
+    'milleti çoğalttım.»</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Yönetim İlkemiz</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Halkın refah ve mutluluğu</text><text x="11.0" y="122.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Anlayış: Sosyal Devlet '
+    'Anlayışı</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mete Han’ın Onlu askeri '
+    'sistemi ve günümüz ordularına etkisi."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Mete Han ve Onlu Sistem (MÖ 209)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Onbaşı → Yüzbaşı → Binbaşı → Tümen</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Disiplinli ve '
+    'hızlı hareket yeteneği</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Günümüze Mirası</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Türk Kara Kuvvetleri kuruluş yılı</text><text x="11.0" y="122.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Modern dünya ordularına '
+    'örnek model</text></svg>',
+ 8: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İlk Türk devletleri '
+    'kronolojik zaman şeridi."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">MÖ 220 '
+    '/ MÖ 209</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Asya Hun Devleti ve</text><text x="87.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Onlu Sistem</text><rect x="179" y="3" width="167" height="65" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">MS 552</text><text x="262.5" y="40.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">I. Kök Türk</text><text x="262.5" y="58.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Devleti’nin '
+    'kuruluşu</text><rect x="4" y="72" width="167" height="65" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" '
+    'y="90.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">MS '
+    '720–735</text><text x="87.5" y="109.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">II. Kök Türk ve</text><text x="87.5" y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Orhun Yazıtları</text><rect x="179" y="72" width="167" height="65" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="90.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">MS 744</text><text x="262.5" y="109.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Uygur Devleti ve</text><text x="262.5" '
+    'y="127.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yerleşik '
+    'yaşam</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Konargöçer bozkır yaşamı '
+    'ile Uygur yerleşik yaşamının karşılaştırması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Hun ve Kök Türk (Konargöçer)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Çadır (Yurt) ve taşınabilir sanat</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Hayvancılık, dokuma ve '
+    'maden</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Uygur Devleti '
+    '(Yerleşik Yaşam)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Ordu-Balık şehri, saray ve tapınak</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Tarım, duvar resmi (fresk) ve '
+    'matbaa</text></svg>',
+ 11: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türk Devletleri '
+     'Teşkilatı ortak kültür mirası ve güncel iş birlikleri."><rect x="4" y="3" width="342" height="63" rx="5" fill="#f0e9fe" '
+     'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#7c3aed">Ortak Tarih, Dil ve Kültür</text><text x="11.0" y="37.8" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Dede Korkut, Orhun, Nevruz</text><text '
+     'x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#7c3aed">Kardeşlik ve karşılıklı güven</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+     'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#12a150">Günümüz Ortak Projeleri (TDT)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Orta Koridor ulaşım ve enerji</text><text x="11.0" y="122.6" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Ortak alfabe, eğitim ve '
+     'ticaret</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = dortlu_kart([
-        ('TDT (Türk Devletleri Teşkilatı)', 'Siyasi, ekonomik ve stratejik çatı', MAVI, MAVI_A),
-        ('TİKA', 'Kalkınma ve tarihî eser restorasyonu', TUR, TUR_A),
-        ('TÜRKSOY', 'Ortak kültür, sanat ve festivaller', MOR, MOR_A),
-        ('Maarif Vakfı & Yunus Emre Enst.', 'Okul, üniversite ve Türkçe eğitimi', YES, YES_A),
-    ], 'Türkiye’nin Türk dünyasıyla iş birliği yürüttüğü dört temel kurum.')
-    s[2]['gorsel'] = dortlu_kart([
-        ('1. Asya Hun Devleti', 'Teoman / Mete Han · Onlu Sistem', MAVI, MAVI_A),
-        ('2. Kök Türk Devletleri', 'Bumin / Bilge Kağan · Orhun Yazıtları', YES, YES_A),
-        ('3. Uygur Devleti', 'Yerleşik hayat · Matbaa ve kâğıt', TUR, TUR_A),
-        ('4. Kurgan Mirası', 'Esik (Altın Elbiseli) · Pazırık Halısı', MOR, MOR_A),
-    ], 'Türkistan’da kurulan ilk Türk devletleri ve kültür mirası kartları.')
-    s[5]['gorsel'] = ikili_kart(
-        'Esik Kurganı Buluntusu', 'Altın Elbiseli Adam Zırhı', 'Kanıt: İleri maden ve altın işçiliği', TUR, TUR_A,
-        'Pazırık Kurganı Buluntusu', 'Dünyanın en eski düğümlü halısı', 'Kanıt: İleri dokumacılık sanatı', MOR, MOR_A,
-        'Esik ve Pazırık kurganlarından çıkan maden ve dokuma eserleri.'
-    )
-    s[6]['gorsel'] = ikili_kart(
-        'Orhun Yazıtları (Bilge Kağan)', '«Aç milleti doyurdum, çıplak milleti', 'giydirdim, az milleti çoğalttım.»', MAVI, MAVI_A,
-        'Yönetim İlkemiz', 'Halkın refah ve mutluluğu', 'Anlayış: Sosyal Devlet Anlayışı', YES, YES_A,
-        'Orhun Yazıtları’ndaki sosyal devlet anlayışı metin kartı.'
-    )
-    s[7]['gorsel'] = ikili_kart(
-        'Mete Han ve Onlu Sistem (MÖ 209)', 'Onbaşı → Yüzbaşı → Binbaşı → Tümen', 'Disiplinli ve hızlı hareket yeteneği', MAVI, MAVI_A,
-        'Günümüze Mirası', 'Türk Kara Kuvvetleri kuruluş yılı', 'Modern dünya ordularına örnek model', TUR, TUR_A,
-        'Mete Han’ın Onlu askeri sistemi ve günümüz ordularına etkisi.'
-    )
-    s[8]['gorsel'] = dortlu_kart([
-        ('MÖ 220 / MÖ 209', 'Asya Hun Devleti ve Onlu Sistem', MAVI, MAVI_A),
-        ('MS 552', 'I. Kök Türk Devleti’nin kuruluşu', YES, YES_A),
-        ('MS 720–735', 'II. Kök Türk ve Orhun Yazıtları', TUR, TUR_A),
-        ('MS 744', 'Uygur Devleti ve yerleşik yaşam', MOR, MOR_A),
-    ], 'İlk Türk devletleri kronolojik zaman şeridi.')
-    s[9]['gorsel'] = ikili_kart(
-        'Hun ve Kök Türk (Konargöçer)', 'Çadır (Yurt) ve taşınabilir sanat', 'Hayvancılık, dokuma ve maden', MAVI, MAVI_A,
-        'Uygur Devleti (Yerleşik Yaşam)', 'Ordu-Balık şehri, saray ve tapınak', 'Tarım, duvar resmi (fresk) ve matbaa', YES, YES_A,
-        'Konargöçer bozkır yaşamı ile Uygur yerleşik yaşamının karşılaştırması.'
-    )
-    s[11]['gorsel'] = ikili_kart(
-        'Ortak Tarih, Dil ve Kültür', 'Dede Korkut, Orhun, Nevruz', 'Kardeşlik ve karşılıklı güven', MOR, MOR_A,
-        'Günümüz Ortak Projeleri (TDT)', 'Orta Koridor ulaşım ve enerji', 'Ortak alfabe, eğitim ve ticaret', YES, YES_A,
-        'Türk Devletleri Teşkilatı ortak kültür mirası ve güncel iş birlikleri.'
-    )
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

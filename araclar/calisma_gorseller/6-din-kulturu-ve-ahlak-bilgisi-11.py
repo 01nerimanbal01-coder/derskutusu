@@ -1,142 +1,130 @@
-"""6. sınıf Din Kültürü ve Ahlak Bilgisi 11. hafta (Oruç İbadetinin Birey ve Toplum Hayatına Kazandırdıkları, İnfak ve Fitre) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-11 pt Noto Sans (K150 EK); kesir yok (K155)."""
+"""6-din-kulturu-ve-ahlak-bilgisi-11 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=16):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.3, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def oruc_kalkandir_hadis_karti():
-    ic = kutu(6, 6, 348, 76, MAVI_A, MAVI)
-    ic += yazi(180, 22, 'HADİS-İ ŞERİF KARTI · AHLAKİ KORUNMA (TAKVA)', 10.2, MAVI)
-    ic += yazi(180, 44, '“Oruç bir kalkandır. Oruçlu kimse kötü söz söylemesin ve kavga etmesin.”', 9.5, LAC)
-    ic += yazi(180, 66, 'Yalan, gıybet, iftira ve öfkeden uzak durma → İrade ve öz denetim', 9.3, MAVI, ince=True)
-    return svg(360, 88, ic, 'Oruç bir kalkandır hadisini açıklayan bilgi kartı.', 15)
-
-
-def yardim_turleri_panosu():
-    kartlar = [
-        ('1. Genel Sadaka', 'Sünnet · Sınır yok', MAVI, MAVI_A),
-        ('2. Fitre', 'Hükmü ve zamanı = ?', YES, YES_A),
-        ('3. Fidye', 'Oruç tutamayan bedeli', TUR, TUR_A),
-        ('4. Tebessüm', 'Manevi sadaka = ?', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 9.8, r)
-        ic += f'<line x1="{x + 8}" y1="32" x2="{x + 74}" y2="32" stroke="{r}" stroke-width="0.9"/>'
-        ic += yazi(x + 41, 55, alt, 9.0, LAC, ince=True)
-    return svg(360, 84, ic, 'Sadaka, fitre, fidye ve manevi sadaka karşılaştırma panosu.', 15)
-
-
-def fitre_verilebilecekler_semasi():
-    kutular = [
-        ('1. Kutu: Anne ve Baba', 'Bakmakla yükümlü (Usul)', KIR, KIR_A),
-        ('2. Kutu: Küçük Çocuklar', 'Bakmakla yükümlü (Füru)', KIR, KIR_A),
-        ('3. Kutu: Yoksul Komşu', 'İhtiyaç sahibi (Verilir)', YES, YES_A),
-        ('4. Kutu: Dede ve Nine', 'Bakmakla yükümlü (Usul)', KIR, KIR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kutular):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, r)
-        ic += yazi(x + 86, y + 15, bas, 10.0, r)
-        ic += yazi(x + 86, y + 31, alt, 9.2, LAC, ince=True)
-    return svg(360, 94, ic, 'Fitre verilebilen ve verilemeyen yakınları gösteren şema.', 16)
-
-
-def dort_kazanim_karti():
-    kartlar = [
-        ('1. Kart · Sağlık', 'Sindirim sistemi dinlenir', MAVI, MAVI_A),
-        ('2. Kart · Dayanışma', 'İftar, erzak kolisi ve fitre', YES, YES_A),
-        ('3. Kart · Öz Disiplin', 'Sahurla zaman yönetimi', TUR, TUR_A),
-        ('4. Kart · İbadet Süresi', 'İmsaktan iftara kadar', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, r)
-        ic += yazi(x + 86, y + 15, bas, 10.0, r)
-        ic += yazi(x + 86, y + 31, alt, 9.3, LAC, ince=True)
-    return svg(360, 94, ic, 'Orucun bireysel ve toplumsal yönlerini gösteren dört kart.', 16)
-
-
-def aile_fitre_hesap_karti():
-    ic = kutu(6, 6, 170, 76, CAM_A, CAM)
-    ic += yazi(91, 22, 'Aile Bireyleri Sayısı', 10.2, CAM)
-    ic += yazi(91, 44, 'Anne + Baba + 3 Çocuk', 9.7, LAC)
-    ic += yazi(91, 64, 'Toplam: 5 Kişilik Aile', 9.6, CAM)
-
-    ic += kutu(184, 6, 170, 76, YES_A, YES)
-    ic += yazi(269, 22, '1 Kişilik Fitre Bedeli', 10.2, YESIL_K)
-    ic += yazi(269, 44, 'Günlük Gıda Ölçüsü: 180 TL', 9.6, LAC)
-    ic += yazi(269, 64, 'Toplam Fitre Tutarı = ? TL', 9.6, YESIL_K)
-    return svg(360, 88, ic, 'Beş kişilik bir ailenin vereceği toplam fitre tutarı hesaplama kartı.', 15)
-
-
-def oruc_degerler_zinciri():
-    adimlar = [
-        ('1. Sabır', 'Niyet ve irade', MAVI, MAVI_A),
-        ('2. Empati', 'Şükür ve duyarlılık', YES, YES_A),
-        ('3. İnfak', 'Fitre ve sadaka', TUR, TUR_A),
-        ('4. Kardeşlik', 'Toplumsal barış', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 10.1, r)
-        ic += yazi(x + 41, 54, alt, 9.1, LAC, ince=True)
-    return svg(360, 84, ic, 'Sabırdan toplumsal kardeşliğe uzanan dört aşamalı değer zinciri.', 15)
-
-
-def fitre_fidye_karsilastirma():
-    ic = kutu(6, 6, 170, 76, YES_A, YES)
-    ic += yazi(91, 21, 'Fıtır Sadakası (Fitre)', 10.2, YESIL_K)
-    ic += yazi(91, 42, '• Zengin olan her Müslüman verir', 9.1, LAC, ince=True)
-    ic += yazi(91, 61, '• Bayram namazından önce (Vacip)', 9.1, YESIL_K)
-
-    ic += kutu(184, 6, 170, 76, TUR_A, TUR)
-    ic += yazi(269, 21, 'Oruç Fidyesi', 10.2, TUR)
-    ic += yazi(269, 42, '• Yaşlı/kalıcı hasta (tutamayan)', 9.1, LAC, ince=True)
-    ic += yazi(269, 61, '• Her gün için 1 fitre miktarı', 9.1, TUR)
-    return svg(360, 88, ic, 'Fitre ve fidye ibadetlerinin karşılaştırma panosu.', 15)
-
-
-def zimem_defteri_ahlak_karti():
-    ic = kutu(6, 6, 348, 76, MOR_A, MOR)
-    ic += yazi(180, 22, 'ZİMEM DEFTERİ GELENEĞİ · GİZLİ İNFAK AHLAKI', 10.2, MOR)
-    ic += yazi(180, 44, 'Hayırsever kişi mahalle bakkalındaki veresiye borçlarını gizlice sildirir.', 9.5, LAC)
-    ic += yazi(180, 66, 'İlke: “Sağ elin verdiğini sol el görmemelidir.” (Riyadan uzaklık ve onur)', 9.2, MOR, ince=True)
-    return svg(360, 88, ic, 'Zimem defteri geleneği ve gizli yardımlaşma ahlakı kartı.', 15)
+GORSELLER = {1: '<svg viewBox="0 0 350 124" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Oruç bir kalkandır '
+    'hadisini açıklayan bilgi kartı."><rect x="4" y="3" width="342" height="119" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">HADİS-İ ŞERİF KARTI · AHLAKİ KORUNMA</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">(TAKVA)</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">“Oruç bir kalkandır. '
+    'Oruçlu kimse kötü söz</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">söylemesin ve kavga etmesin.”</text><text x="11.0" y="94.2" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Yalan, gıybet, iftira ve öfkeden uzak durma →</text><text '
+    'x="11.0" y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">İrade '
+    've öz denetim</text></svg>',
+ 2: '<svg viewBox="0 0 350 121" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sadaka, fitre, fidye ve '
+    'manevi sadaka karşılaştırma panosu."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Genel Sadaka</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sünnet · Sınır yok</text><rect x="179" y="3" width="167" height="46" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Fitre</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hükmü ve zamanı = ?</text><rect x="4" y="53" '
+    'width="167" height="65" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="71.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. Fidye</text><text x="87.5" y="90.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Oruç '
+    'tutamayan</text><text x="87.5" y="108.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">bedeli</text><rect x="179" y="53" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="80.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Tebessüm</text><text x="262.5" y="99.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Manevi sadaka = ?</text></svg>',
+ 5: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fitre verilebilen ve '
+    'verilemeyen yakınları gösteren şema."><rect x="4" y="3" width="167" height="84" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">1. Kutu: Anne ve</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Baba</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bakmakla yükümlü</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">(Usul)</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">2. Kutu: Küçük</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Çocuklar</text><text x="262.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bakmakla yükümlü</text><text x="262.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">(Füru)</text><rect x="4" y="91" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Kutu: Yoksul</text><text x="87.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Komşu</text><text x="87.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İhtiyaç sahibi</text><text x="87.5" y="165.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Verilir)</text><rect '
+    'x="179" y="91" width="167" height="84" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="109.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">4. Kutu: Dede '
+    've</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d63a3a">Nine</text><text x="262.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Bakmakla yükümlü</text><text x="262.5" y="165.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Usul)</text></svg>',
+ 6: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Orucun bireysel ve '
+    'toplumsal yönlerini gösteren dört kart."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Kart · Sağlık</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sindirim sistemi</text><text x="87.5" y="58.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">dinlenir</text><rect x="179" y="3" '
+    'width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Kart · Dayanışma</text><text x="262.5" '
+    'y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İftar, erzak '
+    'kolisi ve</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">fitre</text><rect x="4" y="72" width="167" height="84" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="87.5" y="99.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">3. Kart · Öz Disiplin</text><text x="87.5" y="118.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sahurla zaman</text><text x="87.5" y="137.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yönetimi</text><rect x="179" y="72" '
+    'width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="90.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Kart · İbadet</text><text x="262.5" '
+    'y="109.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Süresi</text><text x="262.5" y="127.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">İmsaktan iftara</text><text x="262.5" y="146.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kadar</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Beş kişilik bir ailenin '
+    'vereceği toplam fitre tutarı hesaplama kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Aile Bireyleri Sayısı</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Anne + Baba + 3 Çocuk</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Toplam: 5 Kişilik '
+    'Aile</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">1 Kişilik Fitre '
+    'Bedeli</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Günlük Gıda Ölçüsü: 180 TL</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">Toplam Fitre Tutarı = ? TL</text></svg>',
+ 8: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sabırdan toplumsal '
+    'kardeşliğe uzanan dört aşamalı değer zinciri."><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Sabır</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Niyet ve irade</text><rect x="179" y="3" width="167" height="46" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Empati</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Şükür ve duyarlılık</text><rect x="4" y="53" '
+    'width="167" height="46" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="71.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. İnfak</text><text x="87.5" y="89.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Fitre ve '
+    'sadaka</text><rect x="179" y="53" width="167" height="46" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="71.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Kardeşlik</text><text x="262.5" y="89.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Toplumsal barış</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fitre ve fidye '
+    'ibadetlerinin karşılaştırma panosu."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">Fıtır Sadakası (Fitre)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Zengin olan her Müslüman verir</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">• Bayram namazından önce '
+    '(Vacip)</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Oruç '
+    'Fidyesi</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">• Yaşlı/kalıcı hasta (tutamayan)</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">• Her gün için 1 fitre miktarı</text></svg>',
+ 11: '<svg viewBox="0 0 350 124" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zimem defteri geleneği '
+     've gizli yardımlaşma ahlakı kartı."><rect x="4" y="3" width="342" height="119" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+     'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#7c3aed">ZİMEM DEFTERİ GELENEĞİ · GİZLİ İNFAK</text><text x="11.0" y="37.8" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">AHLAKI</text><text x="11.0" y="56.6" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Hayırsever kişi mahalle '
+     'bakkalındaki</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0b2257">veresiye borçlarını gizlice sildirir.</text><text x="11.0" y="94.2" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">İlke: “Sağ elin verdiğini sol el '
+     'görmemelidir.”</text><text x="11.0" y="113.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#7c3aed">(Riyadan uzaklık ve onur)</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = oruc_kalkandir_hadis_karti()
-    s[2]['gorsel'] = yardim_turleri_panosu()
-    s[5]['gorsel'] = fitre_verilebilecekler_semasi()
-    s[6]['gorsel'] = dort_kazanim_karti()
-    s[7]['gorsel'] = aile_fitre_hesap_karti()
-    s[8]['gorsel'] = oruc_degerler_zinciri()
-    s[9]['gorsel'] = fitre_fidye_karsilastirma()
-    s[11]['gorsel'] = zimem_defteri_ahlak_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -1,94 +1,127 @@
-"""6. sınıf Fen Bilimleri 12. hafta (İç Salgı Bezleri, Ergenlik Dönemi ve Sistemlerin Sağlığı) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""6-fen-bilimleri-12 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pankreas hormonlarının '
+    '(K: İnsülin, L: Glukagon) kan şekeri dengesi şeması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Yemek Sonrası Yüksek Şeker</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Pankreas → K Hormonu salgılar</text><text '
+    'x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Kan '
+    'şekerini normale düşürür</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Uzun Açlıkta Düşük Şeker</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Pankreas → L Hormonu salgılar</text><text x="11.0" y="122.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">Kan şekerini normale '
+    'yükseltir</text></svg>',
+ 2: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ergenlik dönemi bedensel '
+    've ruhsal değişim kartları."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Boy-Kilo Artışı ve</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Sivilce</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kız ve Erkeklerde</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ortak '
+    '(Bedensel)</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="262.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. '
+    'Ses Kalınlaşması</text><text x="262.5" y="49.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Yalnız Erkeklerde</text><text x="262.5" y="68.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Bedensel)</text><rect x="4" y="91" width="167" height="84" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">3. Yumurta</text><text x="87.5" y="128.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Oluşumu</text><text x="87.5" y="146.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yalnız '
+    'Kızlarda</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">(Bedensel)</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">4. Kimlik Arayışı ve</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Duygular</text><text x="262.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kız ve Erkeklerde</text><text x="262.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ortak '
+    '(Ruhsal)</text></svg>',
+ 5: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört temel iç salgı bezi '
+    've görevleri kartı."><rect x="4" y="3" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">1. '
+    'Hipofiz Bezi</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">(Beyin Tabanı)</text><text x="87.5" y="58.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Büyüme hormonu +</text><text x="87.5" y="77.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bezlerin yöneticisi</text><rect x="179" y="3" '
+    'width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="21.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. Tiroit Bezi (Soluk</text><text x="262.5" '
+    'y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Borusu '
+    'Önü)</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Tiroksin →</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Metabolizma hızı</text><rect x="4" y="91" width="167" height="65" rx="5" fill="#fdeaea" '
+    'stroke="#d63a3a" stroke-width="0.75"/><text x="87.5" y="109.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d63a3a">3. Böbrek Üstü Bezi</text><text x="87.5" y="128.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Adrenalin → Korku ve</text><text x="87.5" '
+    'y="146.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">heyecan</text><rect x="179" y="91" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="109.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">4. Pankreas</text><text x="262.5" y="128.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">İnsülin ve Glukagon</text><text x="262.5" y="146.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">→ Kan şekeri</text></svg>',
+ 6: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ergenlik dönemini '
+    'sağlıklı geçirme yolları kartı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Ergenlikte Ruhsal Değişimler</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Kimlik arayışı · Bağımsızlık isteği</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">Duygusal '
+    'dalgalanmalar (Normaldir)</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Sağlıklı Geçiş Rehberi</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Spor, sanat, müzik ve kitap okuma</text><text x="11.0" y="122.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Aile ve rehberlik '
+    'servisiyle iletişim</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sinir sistemi ve iç '
+    'salgı bezlerinin çalışma hızı ve etki süresi karşılaştırması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Sinir Sistemi Çalışma Özelliği</text><text x="11.0" y="37.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">İletim: Sinir hücreleriyle ÇOK '
+    'HIZLI</text><text x="11.0" y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#2451d6">Etki Süresi: KISA SÜRELİ (Anlık)</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">İç Salgı Bezleri Çalışma Özelliği</text><text x="11.0" y="103.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">İletim: Kan yoluyla '
+    'YAVAŞ</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#d97706">Etki Süresi: UZUN SÜRELİ</text></svg>',
+ 8: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Korku ve heyecan anında '
+    'adrenalin hormonunun etki basamakları."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Tehlikenin</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Algılanması</text><text x="87.5" y="58.9" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Duyu organları →</text><text x="87.5" y="77.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Beyne iletim</text><rect '
+    'x="179" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Hormon</text><text '
+    'x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">Salgılanması</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Böbrek üstü bezi →</text><text x="262.5" y="77.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Adrenalin</text><rect x="4" y="91" '
+    'width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">3. Kan Yoluyla</text><text x="87.5" y="128.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Taşınma</text><text '
+    'x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Adrenalin → Kalp ve</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">akciğere</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#fdeaea" '
+    'stroke="#d63a3a" stroke-width="0.75"/><text x="262.5" y="118.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d63a3a">4. Vücut Tepkisi</text><text x="262.5" y="137.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kalp ve solunum</text><text x="262.5" '
+    'y="156.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">hızlanır</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pankreasın karma bez (iç '
+    've dış salgı) yapısı şeması."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Dış Salgı Görevi (Enzim)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Sindirim öz suyunu kanalla ince bağırsağa</text><text x="11.0" '
+    'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">gönderir</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">İç Salgı Görevi (Hormon)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">İnsülin ve glukagon hormonlarını doğrudan</text><text x="11.0" '
+    'y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">kana verir → '
+    'KARMA BEZ</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = ikili_kart(
-        'Yemek Sonrası Yüksek Şeker', 'Pankreas → K Hormonu salgılar', 'Kan şekerini normale düşürür', MAVI, MAVI_A,
-        'Uzun Açlıkta Düşük Şeker', 'Pankreas → L Hormonu salgılar', 'Kan şekerini normale yükseltir', TUR, TUR_A,
-        'Pankreas hormonlarının (K: İnsülin, L: Glukagon) kan şekeri dengesi şeması.'
-    )
-    s[2]['gorsel'] = dortlu_kart([
-        ('1. Boy-Kilo Artışı ve Sivilce', 'Kız ve Erkeklerde Ortak (Bedensel)', MAVI, MAVI_A),
-        ('2. Ses Kalınlaşması', 'Yalnız Erkeklerde (Bedensel)', TUR, TUR_A),
-        ('3. Yumurta Oluşumu', 'Yalnız Kızlarda (Bedensel)', MOR, MOR_A),
-        ('4. Kimlik Arayışı ve Duygular', 'Kız ve Erkeklerde Ortak (Ruhsal)', YES, YES_A),
-    ], 'Ergenlik dönemi bedensel ve ruhsal değişim kartları.')
-    s[5]['gorsel'] = dortlu_kart([
-        ('1. Hipofiz Bezi (Beyin Tabanı)', 'Büyüme hormonu + Bezlerin yöneticisi', MOR, MOR_A),
-        ('2. Tiroit Bezi (Soluk Borusu Önü)', 'Tiroksin → Metabolizma hızı', MAVI, MAVI_A),
-        ('3. Böbrek Üstü Bezi', 'Adrenalin → Korku ve heyecan', KIR, KIR_A),
-        ('4. Pankreas', 'İnsülin ve Glukagon → Kan şekeri', YES, YES_A),
-    ], 'Dört temel iç salgı bezi ve görevleri kartı.')
-    s[6]['gorsel'] = ikili_kart(
-        'Ergenlikte Ruhsal Değişimler', 'Kimlik arayışı · Bağımsızlık isteği', 'Duygusal dalgalanmalar (Normaldir)', MOR, MOR_A,
-        'Sağlıklı Geçiş Rehberi', 'Spor, sanat, müzik ve kitap okuma', 'Aile ve rehberlik servisiyle iletişim', YES, YES_A,
-        'Ergenlik dönemini sağlıklı geçirme yolları kartı.'
-    )
-    s[7]['gorsel'] = ikili_kart(
-        'Sinir Sistemi Çalışma Özelliği', 'İletim: Sinir hücreleriyle ÇOK HIZLI', 'Etki Süresi: KISA SÜRELİ (Anlık)', MAVI, MAVI_A,
-        'İç Salgı Bezleri Çalışma Özelliği', 'İletim: Kan yoluyla YAVAŞ', 'Etki Süresi: UZUN SÜRELİ', TUR, TUR_A,
-        'Sinir sistemi ve iç salgı bezlerinin çalışma hızı ve etki süresi karşılaştırması.'
-    )
-    s[8]['gorsel'] = dortlu_kart([
-        ('1. Tehlikenin Algılanması', 'Duyu organları → Beyne iletim', MAVI, MAVI_A),
-        ('2. Hormon Salgılanması', 'Böbrek üstü bezi → Adrenalin', TUR, TUR_A),
-        ('3. Kan Yoluyla Taşınma', 'Adrenalin → Kalp ve akciğere', MOR, MOR_A),
-        ('4. Vücut Tepkisi', 'Kalp ve solunum hızlanır', KIR, KIR_A),
-    ], 'Korku ve heyecan anında adrenalin hormonunun etki basamakları.')
-    s[9]['gorsel'] = ikili_kart(
-        'Dış Salgı Görevi (Enzim)', 'Sindirim öz suyunu kanalla', 'ince bağırsağa gönderir', TUR, TUR_A,
-        'İç Salgı Görevi (Hormon)', 'İnsülin ve glukagon hormonlarını', 'doğrudan kana verir → KARMA BEZ', YES, YES_A,
-        'Pankreasın karma bez (iç ve dış salgı) yapısı şeması.'
-    )
-    s[11]['gorsel'] = dortlu_kart([
-        ('1. Dengeli Beslenme ve İyot', 'Tiroit (guatr) ve diyabetten korunma', YES, YES_A),
-        ('2. Düzenli ve Yeterli Uyku', 'Büyüme hormonunun düzenli salgısı', MAVI, MAVI_A),
-        ('3. Spor ve Stresten Uzak Durma', 'Sinir ve hormon dengesini koruma', CAM, CAM_A),
-        ('4. Zararlı Alışkanlıklardan Kaçınma', 'Beyin ve organ sağlığını koruma', KIR, KIR_A),
-    ], 'Denetleyici ve düzenleyici sistemlerin sağlığını koruma kuralları.')
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

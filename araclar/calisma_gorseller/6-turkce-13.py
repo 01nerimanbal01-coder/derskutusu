@@ -1,95 +1,143 @@
-"""6. sınıf Türkçe 13. hafta (Ova Çocuk Metni, Beden Dili ve Sözcük Hâlindeki Zamirler) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""6-turkce-13 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="«O» sözcüğünün kişi '
+    'zamiri, işaret zamiri ve işaret sıfatı ayrımı."><rect x="4" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">1. «O kitabı</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">okudum.»</text><text x="87.5" y="58.9" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İsimden önce →</text><text x="87.5" y="77.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İşaret '
+    'Sıfatı</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" '
+    'y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. «O, çalışkan '
+    'bir</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">öğrencidir.»</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">İnsan yerine → Kişi</text><text x="262.5" y="77.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Zamiri (✓)</text><rect x="4" y="91" '
+    'width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">3. «O, alt dolaba</text><text x="87.5" '
+    'y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">konuldu.»</text><text x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Cansız eşya yerine →</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İşaret Zamiri</text><rect x="179" y="91" width="167" height="84" '
+    'rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. «O sokakta</text><text x="262.5" y="128.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">konaklar var.»</text><text x="262.5" '
+    'y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İsimden önce '
+    '→</text><text x="262.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İşaret Sıfatı</text></svg>',
+ 2: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İşaret, belgisiz ve soru '
+    'sözcüklerinde sıfat ve zamir farkı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Sıfat (İsimden Önce Gelir)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Bu dergi · Şu elma · Bazı turistler</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">İsmi belirtir → Ön Ad '
+    '(Sıfat)</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Zamir (İsmin '
+    'Yerini Tutar)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Bunu · Şunu · Bazıları · Hangisi</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">İsim düşer, yerini tutar → Adıl '
+    '(Zamir)</text></svg>',
+ 5: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Soru zamiri ile soru '
+    'sıfatı, soru zarfı ve soru eki ayrımı."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. «...dün akşam mı</text><text x="87.5" y="49.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">izlediniz?» mı → Soru</text><text x="87.5" y="68.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Eki</text><rect x="179" '
+    'y="3" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. '
+    '«...eşyalardan</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">hangisini koydun?»</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">hangisini → Soru</text><text x="262.5" y="77.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Zamiri (✓)</text><rect x="4" y="91" '
+    'width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. «Kaç öğrenci</text><text x="87.5" '
+    'y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">katılacak?»</text><text x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Kaç + isim → Soru</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sıfatı</text><rect x="179" y="91" width="167" height="84" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="118.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. «...kütüphaneye</text><text x="262.5" y="137.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">nasıl gittiler?» '
+    'nasıl</text><text x="262.5" y="156.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">+ fiil → Soru Zarfı</text></svg>',
+ 6: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Metinde karşılaştırma '
+    'yolu ile çoklu ortam ve beden dili unsurları."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Karşılaştırma Cümlesi</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Göçebe çadırları ↔ Şehirdeki taş evler</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Benzerlik ve farklılık '
+    'yönünden kıyaslama</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Çoklu '
+    'Ortam ve Beden Dili</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Fotoğraf ve harita anlamı somutlaştırır</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0e8fa8">Jest ve mimik iletişimi '
+    'güçlendirir</text></svg>',
+ 8: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Öyküleyici metnin serim, '
+    'düğüm ve çözüm bölümleri akışı."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Bölüm: Serim</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">(Giriş)</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kişi (Tayan) ve yer</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(ova) '
+    'tanıtımı</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="262.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. '
+    'Bölüm: Düğüm</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">(Olay Başlangıcı)</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Gezgin fotoğrafçının</text><text x="262.5" y="77.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">obaya gelişi</text><rect '
+    'x="4" y="91" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="109.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">3. Bölüm: '
+    'Düğüm</text><text x="87.5" y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">(Merak Unsurları)</text><text x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Dünya albümünün</text><text x="87.5" y="165.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">merak uyandırması</text><rect x="179" y="91" '
+    'width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">4. Bölüm: Çözüm</text><text x="262.5" '
+    'y="128.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">(Sonuç ve '
+    'İleti)</text><text x="262.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Farklı kültürlerin</text><text x="262.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">ufku genişletmesi</text></svg>',
+ 9: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört cümle kartında '
+    'zamir varlığının incelenmesi."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">1. Kart: Siz, orada,</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">ben</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kişi ve işaret</text><text x="87.5" y="77.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">zamirleri '
+    'var</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" '
+    'y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. Kart: '
+    'hepsi,</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">hangisini</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Belgisiz ve soru</text><text x="262.5" y="77.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">zamirleri var</text><rect x="4" y="91" width="167" height="84" rx="5" '
+    'fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">3. Kart: Güzel</text><text x="87.5" y="128.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">havalarda... (✗)</text><text x="87.5" '
+    'y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sıfat ve isim '
+    'var,</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">zamir yok!</text><rect x="179" y="91" width="167" height="84" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">4. Kart: Kimse,</text><text x="262.5" y="128.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">bunu, bana</text><text x="262.5" y="146.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Belgisiz, işaret ve</text><text x="262.5" '
+    'y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kişi zamiri '
+    'var</text></svg>',
+ 11: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="«Şu» sözcüğünü sıfat ve '
+     'zamir olarak cümlede kullanma kuralı."><rect x="4" y="3" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" '
+     'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#d97706">1. Görev: «Şu» → İşaret Sıfatı</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Kural: «Şu + İsim» (Örn: Şu kitap)</text><text x="11.0" '
+     'y="56.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#d97706">İsmin önüne '
+     'gelerek işaret eder</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+     'stroke-width="0.75"/><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#12a150">2. Görev: «Şu» → İşaret Zamiri</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Kural: «Şu / Şunu» (İsim olmadan)</text><text x="11.0" '
+     'y="122.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">İsmin yerini '
+     'tek başına tutar</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = dortlu_kart([
-        ('1. «O kitabı okudum.»', 'İsimden önce → İşaret Sıfatı', TUR, TUR_A),
-        ('2. «O, çalışkan bir öğrencidir.»', 'İnsan yerine → Kişi Zamiri (✓)', YES, YES_A),
-        ('3. «O, alt dolaba konuldu.»', 'Cansız eşya yerine → İşaret Zamiri', MAVI, MAVI_A),
-        ('4. «O sokakta konaklar var.»', 'İsimden önce → İşaret Sıfatı', MOR, MOR_A),
-    ], '«O» sözcüğünün kişi zamiri, işaret zamiri ve işaret sıfatı ayrımı.')
-    s[2]['gorsel'] = ikili_kart(
-        'Sıfat (İsimden Önce Gelir)', 'Bu dergi · Şu elma · Bazı turistler', 'İsmi belirtir → Ön Ad (Sıfat)', TUR, TUR_A,
-        'Zamir (İsmin Yerini Tutar)', 'Bunu · Şunu · Bazıları · Hangisi', 'İsim düşer, yerini tutar → Adıl (Zamir)', YES, YES_A,
-        'İşaret, belgisiz ve soru sözcüklerinde sıfat ve zamir farkı.'
-    )
-    s[5]['gorsel'] = dortlu_kart([
-        ('1. «...dün akşam mı izlediniz?»', 'mı → Soru Eki', MAVI, MAVI_A),
-        ('2. «...eşyalardan hangisini koydun?»', 'hangisini → Soru Zamiri (✓)', YES, YES_A),
-        ('3. «Kaç öğrenci katılacak?»', 'Kaç + isim → Soru Sıfatı', TUR, TUR_A),
-        ('4. «...kütüphaneye nasıl gittiler?»', 'nasıl + fiil → Soru Zarfı', MOR, MOR_A),
-    ], 'Soru zamiri ile soru sıfatı, soru zarfı ve soru eki ayrımı.')
-    s[6]['gorsel'] = ikili_kart(
-        'Karşılaştırma Cümlesi', 'Göçebe çadırları ↔ Şehirdeki taş evler', 'Benzerlik ve farklılık yönünden kıyaslama', MAVI, MAVI_A,
-        'Çoklu Ortam ve Beden Dili', 'Fotoğraf ve harita anlamı somutlaştırır', 'Jest ve mimik iletişimi güçlendirir', CAM, CAM_A,
-        'Metinde karşılaştırma yolu ile çoklu ortam ve beden dili unsurları.'
-    )
-    s[7]['gorsel'] = dortlu_kart([
-        ('Cümle Analizi', '«Biz dün burasını temizledik,', MAVI, MAVI_A),
-        ('Devamı', 'herkes görevini özenle yaptı.»', CAM, CAM_A),
-        ('1. ve 2. Zamir', 'Biz (Kişi) · burasını (İşaret)', YES, YES_A),
-        ('3. Zamir', 'herkes (Belgisiz Zamir)', MOR, MOR_A),
-    ], 'Tek cümlede kişi, işaret ve belgisiz zamirlerin tespiti.')
-    s[8]['gorsel'] = dortlu_kart([
-        ('1. Bölüm: Serim (Giriş)', 'Kişi (Tayan) ve yer (ova) tanıtımı', MAVI, MAVI_A),
-        ('2. Bölüm: Düğüm (Olay Başlangıcı)', 'Gezgin fotoğrafçının obaya gelişi', TUR, TUR_A),
-        ('3. Bölüm: Düğüm (Merak Unsurları)', 'Dünya albümünün merak uyandırması', MOR, MOR_A),
-        ('4. Bölüm: Çözüm (Sonuç ve İleti)', 'Farklı kültürlerin ufku genişletmesi', YES, YES_A),
-    ], 'Öyküleyici metnin serim, düğüm ve çözüm bölümleri akışı.')
-    s[9]['gorsel'] = dortlu_kart([
-        ('1. Kart: Siz, orada, ben', 'Kişi ve işaret zamirleri var', YES, YES_A),
-        ('2. Kart: hepsi, hangisini', 'Belgisiz ve soru zamirleri var', MAVI, MAVI_A),
-        ('3. Kart: Güzel havalarda... (✗)', 'Sıfat ve isim var, zamir yok!', KIR, KIR_A),
-        ('4. Kart: Kimse, bunu, bana', 'Belgisiz, işaret ve kişi zamiri var', CAM, CAM_A),
-    ], 'Dört cümle kartında zamir varlığının incelenmesi.')
-    s[11]['gorsel'] = ikili_kart(
-        '1. Görev: «Şu» → İşaret Sıfatı', 'Kural: «Şu + İsim» (Örn: Şu kitap)', 'İsmin önüne gelerek işaret eder', TUR, TUR_A,
-        '2. Görev: «Şu» → İşaret Zamiri', 'Kural: «Şu / Şunu» (İsim olmadan)', 'İsmin yerini tek başına tutar', YES, YES_A,
-        '«Şu» sözcüğünü sıfat ve zamir olarak cümlede kullanma kuralı.'
-    )
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

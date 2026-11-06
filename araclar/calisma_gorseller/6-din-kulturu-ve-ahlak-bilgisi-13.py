@@ -1,93 +1,121 @@
-"""6. sınıf Din Kültürü ve Ahlak Bilgisi 13. hafta (Orucun Kazandırdıkları, Ramazan Kültürümüz ve Ünite Değerlendirmesi) görselleri.
-SVG; insan figürü yok (K024); beyaz bant yok (K178)."""
+"""6-din-kulturu-ve-ahlak-bilgisi-13 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#d97706', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-FONT = 'font-family="Noto Sans, sans-serif" font-size="11.5"'
-AR_FONT = 'direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="18.5" font-weight="700"'
-
-
-def svg(ic, etiket, w=360, h=115, mm=20):
-    return f'<svg viewBox="0 0 {w} {h}" style="max-height:{mm}mm" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    ag = '700' if kalin else '500'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {FONT} font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def ar_yazi(x, y, metin, renk=LAC, hiza='middle'):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {AR_FONT} fill="{renk}">{metin}</text>'
-
-
-def ikili_kart(b1, s1a, s1b, r1, z1, b2, s2a, s2b, r2, z2, etiket, ar1=False, ar2=False):
-    ic = kutu(6, 6, 170, 103, z1, r1)
-    ic += yazi(91, 28, b1, r1, kalin=True)
-    ic += (ar_yazi(91, 60, s1a, LAC) if ar1 else yazi(91, 58, s1a, LAC, kalin=True))
-    ic += yazi(91, 90, s1b, r1)
-    ic += kutu(184, 6, 170, 103, z2, r2)
-    ic += yazi(269, 28, b2, r2, kalin=True)
-    ic += (ar_yazi(269, 60, s2a, LAC) if ar2 else yazi(269, 58, s2a, LAC, kalin=True))
-    ic += yazi(269, 90, s2b, r2)
-    return svg(ic, etiket)
-
-
-def dortlu_kart(kartlar, etiket, ar=False):
-    konum = [(6, 6), (184, 6), (6, 60), (184, 60)]
-    ic = ''
-    for (x, y), (b1, b2, r, z) in zip(konum, kartlar):
-        ic += kutu(x, y, 170, 48, z, r)
-        ic += yazi(x + 85, y + 18, b1, r, kalin=True)
-        ic += (ar_yazi(x + 85, y + 41, b2, LAC) if ar else yazi(x + 85, y + 39, b2, LAC))
-    return svg(ic, etiket)
+GORSELLER = {1: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Orucun insanı '
+    'kötülüklerden koruyan kalkan oluşu."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Hadis-i Şerif (Buhârî, Savm 2)</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">«Oruç bir kalkandır...»</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Kötülüklerden koruyan '
+    'manevi zırh</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Oruçlu '
+    'Müminin Tutumu</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Kötü söz ve kavgadan uzak durur</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">«Ben oruçluyum» diyerek sabreder</text></svg>',
+ 2: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Oruç ibadetinin bireye '
+    've topluma kazandırdığı değerler."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Bireysel Kazanımlar</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">İrade eğitimi · Sabır · Öz denetim</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Nimetlere şükür ve empati '
+    'bilinci</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Toplumsal '
+    'Kazanımlar</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Fitre · Sadaka · İftar paylaşımı</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Yardımlaşma ve kardeşlik ruhu</text></svg>',
+ 5: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kültürümüzde yaşayan '
+    'dört köklü Ramazan geleneği."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Mahya Geleneği</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Minareler arası ışıklı</text><text x="87.5" y="58.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">güzel sözler</text><rect '
+    'x="179" y="3" width="167" height="65" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="21.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">2. Diş '
+    'Kirası</text><text x="262.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İftar misafirine</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">verilen hediye</text><rect x="4" y="72" width="167" height="84" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="90.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">3. Tekne Orucu</text><text x="87.5" y="109.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">(Çocuklar İçin)</text><text x="87.5" '
+    'y="127.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Öğleye kadar '
+    'tutup</text><text x="87.5" y="146.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">oruca alışma</text><rect x="179" y="72" width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="90.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">4. Mukabele</text><text x="262.5" y="109.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Geleneği</text><text x="262.5" y="127.9" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kur’an’ın karşılıklı</text><text x="262.5" y="146.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">okunması</text></svg>',
+ 6: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İslam’da farz, vacip ve '
+    'nafile/sünnet oruç çeşitleri."><rect x="4" y="3" width="167" height="65" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Farz Oruç</text><text x="87.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Ramazan ayı orucu</text><text x="87.5" y="58.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Bakara 183)</text><rect x="179" y="3" '
+    'width="167" height="65" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Vacip Oruç</text><text x="262.5" y="40.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Adak orucu '
+    '(Söz</text><text x="262.5" y="58.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">verilen oruç)</text><rect x="4" y="72" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="99.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Nafile / Sünnet Oruç</text><text x="87.5" y="118.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Aşure · Davud ·</text><text x="87.5" y="137.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Pazartesi-Perşembe</text><rect x="179" y="72" '
+    'width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="90.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Şevval Orucu (6</text><text x="262.5" '
+    'y="109.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Gün)</text><text x="262.5" y="127.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Ramazan’dan sonra</text><text x="262.5" y="146.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">tutulan sünnet</text></svg>',
+ 7: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zimem defteri '
+    'geleneğinde gizli yardımlaşma ve insan onuru."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Zimem Defteri Uygulaması</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Bakkalın veresiye defterindeki yoksul</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">borçlarının '
+    'silinmesi</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Ahlaki İncelik '
+    '(Gizlilik)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Veren el kimin borcunu ödediğini, alan el</text><text x="11.0" y="122.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">kimin ödediğini bilmez</text></svg>',
+ 8: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ramazan gününde sahurdan '
+    'teravihe ibadet sıralaması."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Sahur Vakti</text><text x="87.5" y="40.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">(Gece)</text><text x="87.5" y="58.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bereketli yemek ve</text><text x="87.5" '
+    'y="77.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">oruca '
+    'niyet</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="262.5" '
+    'y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">2. İmsak '
+    've</text><text x="262.5" y="40.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0e8fa8">Mukabele (Gündüz)</text><text x="262.5" y="58.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Oruca başlama ve</text><text x="262.5" y="77.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kur’an tilaveti</text><rect x="4" y="91" '
+    'width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="87.5" y="109.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. İftar Vakti</text><text x="87.5" y="128.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">(Akşam '
+    'Ezanı)</text><text x="87.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Dua ve şükürle</text><text x="87.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">orucu açma</text><rect x="179" y="91" width="167" height="84" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="109.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">4. Teravih Namazı</text><text x="262.5" y="128.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">(Yatsı)</text><text '
+    'x="262.5" y="146.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Camide cemaatle 20</text><text x="262.5" y="165.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">rekât sünnet</text></svg>',
+ 9: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Oruç ibadetinin şükür ve '
+    'israfı önleme bilincine etkisi."><rect x="4" y="3" width="342" height="63" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Nimetlerin Kıymetini Anlama</text><text x="11.0" y="37.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Bir yudum su ve bir lokma ekmeğin</text><text x="11.0" y="56.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">değerini fark ederek '
+    'şükretmek</text><rect x="4" y="69" width="342" height="63" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="85.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Davranışa '
+    'Yansıması</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Sofrada israftan kaçınmak ve nimetleri</text><text x="11.0" y="122.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">ihtiyaç sahipleriyle paylaşmak</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = ikili_kart(
-        'Hadis-i Şerif (Buhârî, Savm 2)', '«Oruç bir kalkandır...»', 'Kötülüklerden koruyan manevi zırh', YES, YES_A,
-        'Oruçlu Müminin Tutumu', 'Kötü söz ve kavgadan uzak durur', '«Ben oruçluyum» diyerek sabreder', MAVI, MAVI_A,
-        'Orucun insanı kötülüklerden koruyan kalkan oluşu.'
-    )
-    s[2]['gorsel'] = ikili_kart(
-        'Bireysel Kazanımlar', 'İrade eğitimi · Sabır · Öz denetim', 'Nimetlere şükür ve empati bilinci', MAVI, MAVI_A,
-        'Toplumsal Kazanımlar', 'Fitre · Sadaka · İftar paylaşımı', 'Yardımlaşma ve kardeşlik ruhu', YES, YES_A,
-        'Oruç ibadetinin bireye ve topluma kazandırdığı değerler.'
-    )
-    s[5]['gorsel'] = dortlu_kart([
-        ('1. Mahya Geleneği', 'Minareler arası ışıklı güzel sözler', MAVI, MAVI_A),
-        ('2. Diş Kirası', 'İftar misafirine verilen hediye', MOR, MOR_A),
-        ('3. Tekne Orucu (Çocuklar İçin)', 'Öğleye kadar tutup oruca alışma', TUR, TUR_A),
-        ('4. Mukabele Geleneği', 'Kur’an’ın karşılıklı okunması', YES, YES_A),
-    ], 'Kültürümüzde yaşayan dört köklü Ramazan geleneği.')
-    s[6]['gorsel'] = dortlu_kart([
-        ('Farz Oruç', 'Ramazan ayı orucu (Bakara 183)', YES, YES_A),
-        ('Vacip Oruç', 'Adak orucu (Söz verilen oruç)', MAVI, MAVI_A),
-        ('Nafile / Sünnet Oruç', 'Aşure · Davud · Pazartesi-Perşembe', TUR, TUR_A),
-        ('Şevval Orucu (6 Gün)', 'Ramazan’dan sonra tutulan sünnet', MOR, MOR_A),
-    ], 'İslam’da farz, vacip ve nafile/sünnet oruç çeşitleri.')
-    s[7]['gorsel'] = ikili_kart(
-        'Zimem Defteri Uygulaması', 'Bakkalın veresiye defterindeki', 'yoksul borçlarının silinmesi', CAM, CAM_A,
-        'Ahlaki İncelik (Gizlilik)', 'Veren el kimin borcunu ödediğini,', 'alan el kimin ödediğini bilmez', YES, YES_A,
-        'Zimem defteri geleneğinde gizli yardımlaşma ve insan onuru.'
-    )
-    s[8]['gorsel'] = dortlu_kart([
-        ('1. Sahur Vakti (Gece)', 'Bereketli yemek ve oruca niyet', MAVI, MAVI_A),
-        ('2. İmsak ve Mukabele (Gündüz)', 'Oruca başlama ve Kur’an tilaveti', CAM, CAM_A),
-        ('3. İftar Vakti (Akşam Ezanı)', 'Dua ve şükürle orucu açma', TUR, TUR_A),
-        ('4. Teravih Namazı (Yatsı)', 'Camide cemaatle 20 rekât sünnet', YES, YES_A),
-    ], 'Ramazan gününde sahurdan teravihe ibadet sıralaması.')
-    s[9]['gorsel'] = ikili_kart(
-        'Nimetlerin Kıymetini Anlama', 'Bir yudum su ve bir lokma ekmeğin', 'değerini fark ederek şükretmek', YES, YES_A,
-        'Davranışa Yansıması', 'Sofrada israftan kaçınmak ve', 'nimetleri ihtiyaç sahipleriyle paylaşmak', TUR, TUR_A,
-        'Oruç ibadetinin şükür ve israfı önleme bilincine etkisi.'
-    )
-    s[11]['gorsel'] = ikili_kart(
-        '1. Bireysel Öz Denetim', 'Nefsin isteklerine söz geçirme', 'Sabır ve güzel ahlak eğitimi', MAVI, MAVI_A,
-        '2. Toplumsal Dayanışma', 'Fitre, zekât ve iftar sofralarıyla', 'sevgi ve barış köprüsü kurma', YES, YES_A,
-        'Orucun öz denetim ve toplumsal dayanışma kazanımları.'
-    )
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg
