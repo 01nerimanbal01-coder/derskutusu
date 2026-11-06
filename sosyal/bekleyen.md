@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 608 gönderi (Instagram: 0 bekleyen — 1852/1852 yayında; Facebook: 608 bekleyen).
+Toplam 651 gönderi (Instagram: 43 bekleyen — 1852/1895 yayında; Facebook: 651 bekleyen).
 
 ## bilgi-11-cografya-5
 Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-cografya-5.png
@@ -6326,4 +6326,649 @@ Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap ana
 Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
 Zümrenizle paylaşın; kâğıtlar herkese açık.
 #derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-dkab-6-1-1
+Sıra: 2027-03-04 03:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-6-1-1-1.png
+
+```
+6. sınıf Din Kültürü ve Ahlak Bilgisi · DKAB.6.1.1 yazılısı hazır 📝
+6. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.6.1.1: “Peygamberlerin insanlara rehber olarak gönderilmesi hakkında bilgi toplayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-din-kulturu-ve-ahlak-bilgisi-dkab-6-1-1.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.6.1.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-fb-7-1-2
+Sıra: 2027-03-04 03:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-7-1-2-1.png
+
+```
+7. sınıf Fen Bilimleri · FB.7.1.2 yazılısı hazır 📝
+7. sınıf Fen Bilimleri öğrenme çıktısı FB.7.1.2: “Uzay gözlem araçları ile ilgili bilimsel model oluşturabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-fen-bilimleri-fb-7-1-2.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.7.1.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #7sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-sb-5-2-2
+Sıra: 2027-03-04 03:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-5-2-2-1.png
+
+```
+Yaşadığı İlde Doğal ve Beşerî Çevredeki Değişim: tek öğrenme çıktısı, tek yazılı 📝
+5. sınıf Sosyal Bilgiler öğrenme çıktısı SB.5.2.2: “Yaşadığı ilde doğal ve beşerî çevredeki değişimi neden ve sonuçlarıyla yorumlayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-sosyal-bilgiler-sb-5-2-2.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=sosyal-bilgiler#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde SB.5.2.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Sosyal Bilgiler öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #5sınıf #sosyalbilgiler #maarifmodeli
+```
+
+## seri-cikti-sb-6-2-2
+Sıra: 2027-03-04 03:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-6-2-2-1.png
+
+```
+Doğal ve Beşerî Çevre Özellikleri Arasındaki İlişki: tek öğrenme çıktısı, tek yazılı 📝
+6. sınıf Sosyal Bilgiler öğrenme çıktısı SB.6.2.2: “Ülkemizin doğal ve beşerî çevre özellikleri arasındaki ilişkiyi çözümleyebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, analiz, uygulama ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-sosyal-bilgiler-sb-6-2-2.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=sosyal-bilgiler#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde SB.6.2.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Sosyal Bilgiler öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #6sınıf #sosyalbilgiler #maarifmodeli
+```
+
+## seri-cikti-sb-7-2-2
+Sıra: 2027-03-04 04:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-7-2-2-1.png
+
+```
+Bölgesel ve Küresel Sorunların Çözümünde Ülkemizin Rolü konusunda öğrencileriniz nerede? 📝
+7. sınıf Sosyal Bilgiler öğrenme çıktısı SB.7.2.2: “Bölgesel ve küresel sorunların çözümünde ülkemizin rolünü özetleyebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-sosyal-bilgiler-sb-7-2-2.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=sosyal-bilgiler#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde SB.7.2.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #sosyalbilgiler #maarifmodeli
+```
+
+## seri-cikti-dkab-5-2-2
+Sıra: 2027-03-04 04:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-5-2-2-1.png
+
+```
+Namazın Kılınışı: tek öğrenme çıktısı, tek yazılı 📝
+5. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.5.2.2: “Namazın kılınışını gözlemleyebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-din-kulturu-ve-ahlak-bilgisi-dkab-5-2-2.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.5.2.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #5sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-fb-5-2-2
+Sıra: 2027-03-04 04:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-5-2-2-1.png
+
+```
+5. sınıf Fen Bilimleri · FB.5.2.2 yazılısı hazır 📝
+5. sınıf Fen Bilimleri öğrenme çıktısı FB.5.2.2: “Basit araç gereçle bilimsel bir dinamometre modeli oluşturabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-fen-bilimleri-fb-5-2-2.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.5.2.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #5sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-sb-5-2-3
+Sıra: 2027-03-04 04:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-5-2-3-1.png
+
+```
+5. sınıf Sosyal Bilgiler · SB.5.2.3 yazılısı hazır 📝
+5. sınıf Sosyal Bilgiler öğrenme çıktısı SB.5.2.3: “Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik farkındalık etkinliği fikrini eyleme dönüştürebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, analiz, uygulama ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-sosyal-bilgiler-sb-5-2-3.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=sosyal-bilgiler#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde SB.5.2.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #5sınıf #sosyalbilgiler #maarifmodeli
+```
+
+## seri-cikti-dkab-6-2-2
+Sıra: 2027-03-04 05:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-6-2-2-1.png
+
+```
+Oruç İbadeti: tek öğrenme çıktısı, tek yazılı 📝
+6. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.6.2.2: “Oruç ibadeti hakkında bilgi toplayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, analiz, değerlendirme, kavrama, uygulama ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-din-kulturu-ve-ahlak-bilgisi-dkab-6-2-2.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.6.2.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #6sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-sb-6-2-3
+Sıra: 2027-03-04 05:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-6-2-3-1.png
+
+```
+6. sınıf Sosyal Bilgiler · SB.6.2.3 yazılısı hazır 📝
+6. sınıf Sosyal Bilgiler öğrenme çıktısı SB.6.2.3: “Ülkemizin Türk dünyasıyla kültürel iş birliklerini yorumlayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, analiz, uygulama ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-sosyal-bilgiler-sb-6-2-3.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=sosyal-bilgiler#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde SB.6.2.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #sosyalbilgiler #maarifmodeli
+```
+
+## seri-cikti-dkab-7-2-2
+Sıra: 2027-03-04 05:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-7-2-2-1.png
+
+```
+Kurban İbadeti: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.7.2.2: “Kurban ibadetini yapılandırabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-din-kulturu-ve-ahlak-bilgisi-dkab-7-2-2.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.7.2.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-sb-7-3-1
+Sıra: 2027-03-04 05:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-7-3-1-1.png
+
+```
+Osmanlı Devleti’nin Cihan Devleti Hâline Gelmesini Sağlayan Politikalar: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf Sosyal Bilgiler öğrenme çıktısı SB.7.3.1: “Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikaları sorgulayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-sosyal-bilgiler-sb-7-3-1.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=sosyal-bilgiler#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde SB.7.3.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Sosyal Bilgiler öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #sosyalbilgiler #maarifmodeli
+```
+
+## seri-cikti-dkab-5-2-3
+Sıra: 2027-03-04 06:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-5-2-3-1.png
+
+```
+Namazın İnsana Kazandırdıkları: tek öğrenme çıktısı, tek yazılı 📝
+5. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.5.2.3: “Namazın insana kazandırdıkları konusunda analitik düşünebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-din-kulturu-ve-ahlak-bilgisi-dkab-5-2-3.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.5.2.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #5sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-fb-5-2-3
+Sıra: 2027-03-04 06:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-5-2-3-1.png
+
+```
+5. sınıf Fen Bilimleri · FB.5.2.3 yazılısı hazır 📝
+5. sınıf Fen Bilimleri öğrenme çıktısı FB.5.2.3: “Kütle ve ağırlık kavramlarını karşılaştırabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-fen-bilimleri-fb-5-2-3.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.5.2.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #5sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-sb-5-2-4
+Sıra: 2027-03-04 06:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-5-2-4-1.png
+
+```
+Ülkemize Komşu Devletler: tek öğrenme çıktısı, tek yazılı 📝
+5. sınıf Sosyal Bilgiler öğrenme çıktısı SB.5.2.4: “Ülkemize kara sınırı olan komşu devletler hakkında bilgi toplayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, değerlendirme, uygulama ve analiz düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-sosyal-bilgiler-sb-5-2-4.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=sosyal-bilgiler#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde SB.5.2.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Sosyal Bilgiler öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #5sınıf #sosyalbilgiler #maarifmodeli
+```
+
+## seri-cikti-dkab-6-2-3
+Sıra: 2027-03-04 06:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-6-2-3-1.png
+
+```
+Orucun İnsana Kazandırdıkları konusunda öğrencileriniz nerede? 📝
+6. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.6.2.3: “Orucun insana kazandırdıkları konusunda analitik düşünebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-din-kulturu-ve-ahlak-bilgisi-dkab-6-2-3.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.6.2.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-sb-6-3-1
+Sıra: 2027-03-04 07:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-6-3-1-1.png
+
+```
+6. sınıf Sosyal Bilgiler · SB.6.3.1 yazılısı hazır 📝
+6. sınıf Sosyal Bilgiler öğrenme çıktısı SB.6.3.1: “Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkılarını sorgulayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, analiz, uygulama, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-sosyal-bilgiler-sb-6-3-1.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=sosyal-bilgiler#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde SB.6.3.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #sosyalbilgiler #maarifmodeli
+```
+
+## seri-cikti-dkab-7-2-3
+Sıra: 2027-03-04 07:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-7-2-3-1.png
+
+```
+Hac ve Kurban İbadetinin Kültürümüze Yansımaları: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.7.2.3: “Hac ve kurban ibadetinin kültürümüze yansımalarını müşahede edebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-din-kulturu-ve-ahlak-bilgisi-dkab-7-2-3.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.7.2.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-sb-7-3-2
+Sıra: 2027-03-04 07:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-7-3-2-1.png
+
+```
+Osmanlı Devleti’nin Uygulamaya Koyduğu Yenilikler: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf Sosyal Bilgiler öğrenme çıktısı SB.7.3.2: “Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yenilikleri neden ve sonuçlarıyla yorumlayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-sosyal-bilgiler-sb-7-3-2.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=sosyal-bilgiler#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde SB.7.3.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Sosyal Bilgiler öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #sosyalbilgiler #maarifmodeli
+```
+
+## seri-cikti-dkab-5-2-4
+Sıra: 2027-03-04 07:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-5-2-4-1.png
+
+```
+Bir Dua Öğreniyorum: Tahiyyat Duası konusunda öğrencileriniz nerede? 📝
+5. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.5.2.4: “Tahiyyat duasını ve bu duanın anlamını okuyarak yorumlayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-din-kulturu-ve-ahlak-bilgisi-dkab-5-2-4.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.5.2.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-fb-5-2-4
+Sıra: 2027-03-04 08:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-5-2-4-1.png
+
+```
+Sürtünme Kuvveti: tek öğrenme çıktısı, tek yazılı 📝
+5. sınıf Fen Bilimleri öğrenme çıktısı FB.5.2.4: “Sürtünme kuvvetinin çeşitli ortamlardaki etkilerine yönelik tümevarımsal akıl yürütebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-fen-bilimleri-fb-5-2-4.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.5.2.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #5sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-sb-5-3-1
+Sıra: 2027-03-04 08:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-5-3-1-1.png
+
+```
+Ortak Miras Ögeleri konusunda öğrencileriniz nerede? 📝
+5. sınıf Sosyal Bilgiler öğrenme çıktısı SB.5.3.1: “Yaşadığı ildeki ortak miras ögelerine ilişkin oluşturduğu ürünü paylaşabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, analiz, uygulama ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-sosyal-bilgiler-sb-5-3-1.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=sosyal-bilgiler#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde SB.5.3.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #sosyalbilgiler #maarifmodeli
+```
+
+## seri-cikti-dkab-6-2-4
+Sıra: 2027-03-04 08:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-6-2-4-1.png
+
+```
+6. sınıf Din Kültürü ve Ahlak Bilgisi · DKAB.6.2.4 yazılısı hazır 📝
+6. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.6.2.4: “İftar duasını ve bu duanın anlamını okuyarak yorumlayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-din-kulturu-ve-ahlak-bilgisi-dkab-6-2-4.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.6.2.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-sb-6-3-2
+Sıra: 2027-03-04 08:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-6-3-2-1.png
+
+```
+VII-XIII. Yüzyıllar Arasında İslam Medeniyetinin İnsanlığın Ortak Mirasına Katkıları: tek öğrenme çıktısı, tek yazılı 📝
+6. sınıf Sosyal Bilgiler öğrenme çıktısı SB.6.3.2: “VII-XIII. yüzyıllar arasında İslam medeniyetinin eğitim, bilim, hukuk, kültür, sanat ve mimari alanlarında insanlığın ortak mirasına katkılarına dair akıl yürütebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, yaratma, uygulama, değerlendirme ve analiz düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-sosyal-bilgiler-sb-6-3-2.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=sosyal-bilgiler#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde SB.6.3.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Sosyal Bilgiler öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #6sınıf #sosyalbilgiler #maarifmodeli
+```
+
+## seri-cikti-dkab-7-2-4
+Sıra: 2027-03-04 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-7-2-4-1.png
+
+```
+7. sınıf Din Kültürü ve Ahlak Bilgisi · DKAB.7.2.4 yazılısı hazır 📝
+7. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.7.2.4: “Kâfirun suresini ve bu surenin anlamını okuyarak yorumlayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-din-kulturu-ve-ahlak-bilgisi-dkab-7-2-4.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.7.2.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #7sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-fb-7-2-3
+Sıra: 2027-03-04 09:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-7-2-3-1.png
+
+```
+Enerji Dönüşümleri konusunda öğrencileriniz nerede? 📝
+7. sınıf Fen Bilimleri öğrenme çıktısı FB.7.2.3: “Enerji dönüşümünden hareketle enerjinin korunduğuna tümevarımsal akıl yürütebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-fen-bilimleri-fb-7-2-3.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.7.2.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-dkab-8-2-2
+Sıra: 2027-03-04 09:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-8-2-2-1.png
+
+```
+Zekât ve Sadaka İbadeti konusunda öğrencileriniz nerede? 📝
+8. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.8.2.2: “Zekât ve sadaka ibadetini ayet ve hadislerle açıklar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-din-kulturu-ve-ahlak-bilgisi-dkab-8-2-2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.8.2.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-dkab-5-3-1
+Sıra: 2027-03-04 09:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-5-3-1-1.png
+
+```
+Kur’an-ı Kerim’in İç Düzeni konusunda öğrencileriniz nerede? 📝
+5. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.5.3.1: “Kur’an-ı Kerim’in iç düzenini çözümleyebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-din-kulturu-ve-ahlak-bilgisi-dkab-5-3-1.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.5.3.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-fb-5-3-1
+Sıra: 2027-03-04 10:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-5-3-1-1.png
+
+```
+Hücre ve Organelleri: tek öğrenme çıktısı, tek yazılı 📝
+5. sınıf Fen Bilimleri öğrenme çıktısı FB.5.3.1: “Bitki ve hayvan hücrelerini temel kısımları ve özellikleri açısından karşılaştırabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-fen-bilimleri-fb-5-3-1.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.5.3.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #5sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-dkab-6-3-1
+Sıra: 2027-03-04 10:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-6-3-1-1.png
+
+```
+Doğru Sözlü Olmak konusunda öğrencileriniz nerede? 📝
+6. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.6.3.1: “Doğru sözlü olmayı kendi hayatına yansıtabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-din-kulturu-ve-ahlak-bilgisi-dkab-6-3-1.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.6.3.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-dkab-7-3-1
+Sıra: 2027-03-04 10:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-7-3-1-1.png
+
+```
+7. sınıf Din Kültürü ve Ahlak Bilgisi · DKAB.7.3.1 yazılısı hazır 📝
+7. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.7.3.1: “Din anlayışındaki yorum farklılıklarının sebeplerini anlayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-din-kulturu-ve-ahlak-bilgisi-dkab-7-3-1.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.7.3.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #7sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-fb-7-3-1
+Sıra: 2027-03-04 10:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-7-3-1-1.png
+
+```
+Sindirim Sistemi konusunda öğrencileriniz nerede? 📝
+7. sınıf Fen Bilimleri öğrenme çıktısı FB.7.3.1: “Sindirim sistemini oluşturan yapı ve organların görevlerini model üzerinde gözlemleyebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, analiz, uygulama ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-fen-bilimleri-fb-7-3-1.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.7.3.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-dkab-8-2-3
+Sıra: 2027-03-04 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-8-2-3-1.png
+
+```
+Zekât ve Sadakanın Bireysel ve Toplumsal Faydaları konusunda öğrencileriniz nerede? 📝
+8. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.8.2.3: “Zekât, infak ve sadakanın bireysel ve toplumsal önemini fark eder.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-din-kulturu-ve-ahlak-bilgisi-dkab-8-2-3.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.8.2.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-fb-5-3-2
+Sıra: 2027-03-04 11:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-5-3-2-1.png
+
+```
+Hücre ve Organelleri konusunda öğrencileriniz nerede? 📝
+5. sınıf Fen Bilimleri öğrenme çıktısı FB.5.3.2: “Hücre-doku-organ-sistem-organizma kavramlarını yapılandırabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-fen-bilimleri-fb-5-3-2.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.5.3.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-dkab-6-3-2
+Sıra: 2027-03-04 11:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-6-3-2-1.png
+
+```
+6. sınıf Din Kültürü ve Ahlak Bilgisi · DKAB.6.3.2 yazılısı hazır 📝
+6. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.6.3.2: “Merhamet kavramını ayırt edebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, değerlendirme, analiz, uygulama ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-din-kulturu-ve-ahlak-bilgisi-dkab-6-3-2.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.6.3.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-fb-7-3-2
+Sıra: 2027-03-04 11:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-7-3-2-1.png
+
+```
+Sindirim Sistemi: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf Fen Bilimleri öğrenme çıktısı FB.7.3.2: “Sindirim sisteminin sağlığı için yapılması gerekenler konusunda bilgi toplayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, analiz, kavrama, uygulama ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-fen-bilimleri-fb-7-3-2.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.7.3.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-dkab-8-2-4
+Sıra: 2027-03-04 12:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-8-2-4-1.png
+
+```
+Bir Peygamber Tanıyorum: Hz. Şuayb (as): tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.8.2.4: “Hz. Şuayb’in (a.s.) hayatını ana hatlarıyla tanır.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-din-kulturu-ve-ahlak-bilgisi-dkab-8-2-4.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.8.2.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-fb-7-3-3
+Sıra: 2027-03-04 12:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-7-3-3-1.png
+
+```
+7. sınıf Fen Bilimleri · FB.7.3.3 yazılısı hazır 📝
+7. sınıf Fen Bilimleri öğrenme çıktısı FB.7.3.3: “Dolaşım sistemini oluşturan yapı ve organların görevlerini model üzerinde bilimsel olarak gözlemleyebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, analiz, kavrama, uygulama ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-fen-bilimleri-fb-7-3-3.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.7.3.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #7sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-dkab-8-2-5
+Sıra: 2027-03-04 12:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-8-2-5-1.png
+
+```
+Bir Sure Tanıyorum: Maun Suresi ve Anlamı: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.8.2.5: “Maûn suresini okur, anlamını söyler.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-din-kulturu-ve-ahlak-bilgisi-dkab-8-2-5.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.8.2.5 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-fb-7-3-4
+Sıra: 2027-03-04 12:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-7-3-4-1.png
+
+```
+Dolaşım Sistemi: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf Fen Bilimleri öğrenme çıktısı FB.7.3.4: “Kan bağışının toplumsal dayanışma açısından önemini tartışabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, uygulama, kavrama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-fen-bilimleri-fb-7-3-4.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.7.3.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-dkab-8-3-1
+Sıra: 2027-03-04 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-8-3-1-1.png
+
+```
+Din, Birey ve Toplum konusunda öğrencileriniz nerede? 📝
+8. sınıf Din Kültürü ve Ahlak Bilgisi öğrenme çıktısı DKAB.8.3.1: “Din, birey ve toplum arasındaki ilişkiyi yorumlar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-din-kulturu-ve-ahlak-bilgisi-dkab-8-3-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=din-kulturu-ve-ahlak-bilgisi#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.8.3.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-fb-7-3-5
+Sıra: 2027-03-04 13:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-7-3-5-1.png
+
+```
+7. sınıf Fen Bilimleri · FB.7.3.5 yazılısı hazır 📝
+7. sınıf Fen Bilimleri öğrenme çıktısı FB.7.3.5: “Dolaşım sisteminin sağlığı için yapılması gerekenler konusunda bilgi toplayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular uygulama, hatırlama, kavrama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-fen-bilimleri-fb-7-3-5.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.7.3.5 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #7sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-fb-7-3-6
+Sıra: 2027-03-04 13:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-7-3-6-1.png
+
+```
+Solunum Sistemi: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf Fen Bilimleri öğrenme çıktısı FB.7.3.6: “Solunum sistemini oluşturan yapı ve organların görevlerini model üzerinde bilimsel olarak gözlemleyebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, uygulama, kavrama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-fen-bilimleri-fb-7-3-6.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=fen-bilimleri#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde FB.7.3.6 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Fen Bilimleri öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #fenbilimleri #maarifmodeli
 ```
