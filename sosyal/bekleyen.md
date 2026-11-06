@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 651 gönderi (Instagram: 43 bekleyen — 1852/1895 yayında; Facebook: 651 bekleyen).
+Toplam 651 gönderi (Instagram: 25 bekleyen — 1870/1895 yayında; Facebook: 651 bekleyen).
 
 ## bilgi-11-cografya-5
 Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-cografya-5.png
@@ -6329,7 +6329,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-dkab-6-1-1
-Sıra: 2027-03-04 03:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-6-1-1-1.png
+Sıra: 2027-03-04 03:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-6-1-1-1.png
 
 ```
 6. sınıf Din Kültürü ve Ahlak Bilgisi · DKAB.6.1.1 yazılısı hazır 📝
@@ -6344,7 +6344,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-fb-7-1-2
-Sıra: 2027-03-04 03:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-7-1-2-1.png
+Sıra: 2027-03-04 03:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-7-1-2-1.png
 
 ```
 7. sınıf Fen Bilimleri · FB.7.1.2 yazılısı hazır 📝
@@ -6359,7 +6359,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-sb-5-2-2
-Sıra: 2027-03-04 03:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-5-2-2-1.png
+Sıra: 2027-03-04 03:30 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-5-2-2-1.png
 
 ```
 Yaşadığı İlde Doğal ve Beşerî Çevredeki Değişim: tek öğrenme çıktısı, tek yazılı 📝
@@ -6374,7 +6374,7 @@ Sosyal Bilgiler öğretmeni arkadaşlarınızı etiketleyin.
 ```
 
 ## seri-cikti-sb-6-2-2
-Sıra: 2027-03-04 03:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-6-2-2-1.png
+Sıra: 2027-03-04 03:45 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-6-2-2-1.png
 
 ```
 Doğal ve Beşerî Çevre Özellikleri Arasındaki İlişki: tek öğrenme çıktısı, tek yazılı 📝
@@ -6389,7 +6389,7 @@ Sosyal Bilgiler öğretmeni arkadaşlarınızı etiketleyin.
 ```
 
 ## seri-cikti-sb-7-2-2
-Sıra: 2027-03-04 04:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-7-2-2-1.png
+Sıra: 2027-03-04 04:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-7-2-2-1.png
 
 ```
 Bölgesel ve Küresel Sorunların Çözümünde Ülkemizin Rolü konusunda öğrencileriniz nerede? 📝
@@ -6404,7 +6404,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-dkab-5-2-2
-Sıra: 2027-03-04 04:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-5-2-2-1.png
+Sıra: 2027-03-04 04:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-5-2-2-1.png
 
 ```
 Namazın Kılınışı: tek öğrenme çıktısı, tek yazılı 📝
@@ -6419,7 +6419,7 @@ Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
 ```
 
 ## seri-cikti-fb-5-2-2
-Sıra: 2027-03-04 04:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-5-2-2-1.png
+Sıra: 2027-03-04 04:30 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-5-2-2-1.png
 
 ```
 5. sınıf Fen Bilimleri · FB.5.2.2 yazılısı hazır 📝
@@ -6434,7 +6434,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-sb-5-2-3
-Sıra: 2027-03-04 04:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-5-2-3-1.png
+Sıra: 2027-03-04 04:45 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-5-2-3-1.png
 
 ```
 5. sınıf Sosyal Bilgiler · SB.5.2.3 yazılısı hazır 📝
@@ -6449,7 +6449,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-dkab-6-2-2
-Sıra: 2027-03-04 05:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-6-2-2-1.png
+Sıra: 2027-03-04 05:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-6-2-2-1.png
 
 ```
 Oruç İbadeti: tek öğrenme çıktısı, tek yazılı 📝
@@ -6464,7 +6464,7 @@ Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
 ```
 
 ## seri-cikti-sb-6-2-3
-Sıra: 2027-03-04 05:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-6-2-3-1.png
+Sıra: 2027-03-04 05:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-6-2-3-1.png
 
 ```
 6. sınıf Sosyal Bilgiler · SB.6.2.3 yazılısı hazır 📝
@@ -6479,7 +6479,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-dkab-7-2-2
-Sıra: 2027-03-04 05:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-7-2-2-1.png
+Sıra: 2027-03-04 05:30 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-7-2-2-1.png
 
 ```
 Kurban İbadeti: tek öğrenme çıktısı, tek yazılı 📝
@@ -6494,7 +6494,7 @@ Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
 ```
 
 ## seri-cikti-sb-7-3-1
-Sıra: 2027-03-04 05:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-7-3-1-1.png
+Sıra: 2027-03-04 05:45 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-7-3-1-1.png
 
 ```
 Osmanlı Devleti’nin Cihan Devleti Hâline Gelmesini Sağlayan Politikalar: tek öğrenme çıktısı, tek yazılı 📝
@@ -6509,7 +6509,7 @@ Sosyal Bilgiler öğretmeni arkadaşlarınızı etiketleyin.
 ```
 
 ## seri-cikti-dkab-5-2-3
-Sıra: 2027-03-04 06:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-5-2-3-1.png
+Sıra: 2027-03-04 06:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-5-2-3-1.png
 
 ```
 Namazın İnsana Kazandırdıkları: tek öğrenme çıktısı, tek yazılı 📝
@@ -6524,7 +6524,7 @@ Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
 ```
 
 ## seri-cikti-fb-5-2-3
-Sıra: 2027-03-04 06:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-5-2-3-1.png
+Sıra: 2027-03-04 06:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-fb-5-2-3-1.png
 
 ```
 5. sınıf Fen Bilimleri · FB.5.2.3 yazılısı hazır 📝
@@ -6539,7 +6539,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-sb-5-2-4
-Sıra: 2027-03-04 06:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-5-2-4-1.png
+Sıra: 2027-03-04 06:30 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-5-2-4-1.png
 
 ```
 Ülkemize Komşu Devletler: tek öğrenme çıktısı, tek yazılı 📝
@@ -6554,7 +6554,7 @@ Sosyal Bilgiler öğretmeni arkadaşlarınızı etiketleyin.
 ```
 
 ## seri-cikti-dkab-6-2-3
-Sıra: 2027-03-04 06:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-6-2-3-1.png
+Sıra: 2027-03-04 06:45 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-6-2-3-1.png
 
 ```
 Orucun İnsana Kazandırdıkları konusunda öğrencileriniz nerede? 📝
@@ -6569,7 +6569,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-sb-6-3-1
-Sıra: 2027-03-04 07:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-6-3-1-1.png
+Sıra: 2027-03-04 07:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-sb-6-3-1-1.png
 
 ```
 6. sınıf Sosyal Bilgiler · SB.6.3.1 yazılısı hazır 📝
@@ -6584,7 +6584,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-dkab-7-2-3
-Sıra: 2027-03-04 07:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-7-2-3-1.png
+Sıra: 2027-03-04 07:15 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-dkab-7-2-3-1.png
 
 ```
 Hac ve Kurban İbadetinin Kültürümüze Yansımaları: tek öğrenme çıktısı, tek yazılı 📝
