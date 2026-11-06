@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 682 gönderi (Instagram: 56 bekleyen — 1870/1926 yayında; Facebook: 682 bekleyen).
+Toplam 689 gönderi (Instagram: 63 bekleyen — 1870/1933 yayında; Facebook: 689 bekleyen).
 
 ## bilgi-11-cografya-5
 Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-cografya-5.png
@@ -7436,4 +7436,109 @@ Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap ana
 Sayfada “Öğrenme çıktısı yazılıları” bölümünde F.8.4.4.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
 Zümrenizle paylaşın; kâğıtlar herkese açık.
 #derskutusu #öğrenmeçıktısı #8sınıf #fenbilimleri #maarifmodeli
+```
+
+## seri-cikti-t-o-7-1
+Sıra: 2027-03-04 21:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-7-1-1.png
+
+```
+Okuma konusunda öğrencileriniz nerede? 📝
+7. sınıf Türkçe öğrenme çıktısı T.O.7.1: “Okumada materyal seçimini yönetebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-turkce-t-o-7-1.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.O.7.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-o-7-2
+Sıra: 2027-03-04 21:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-7-2-1.png
+
+```
+Okuma: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf Türkçe öğrenme çıktısı T.O.7.2: “Okumada strateji ve yöntem seçimlerini yönetebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-turkce-t-o-7-2.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.O.7.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-o-7-3
+Sıra: 2027-03-04 22:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-7-3-1.png
+
+```
+Okuma: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf Türkçe öğrenme çıktısı T.O.7.3: “Okuyacağı metnin içeriğine yönelik tahminde bulunabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-turkce-t-o-7-3.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.O.7.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-o-7-28
+Sıra: 2027-03-04 22:15 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-o-7-28-1.png
+
+```
+Okuma: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf Türkçe öğrenme çıktısı T.O.7.28: “Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-turkce-t-o-7-28.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.O.7.28 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-y-7-1
+Sıra: 2027-03-04 22:30 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-7-1-1.png
+
+```
+Yazma konusunda öğrencileriniz nerede? 📝
+7. sınıf Türkçe öğrenme çıktısı T.Y.7.1: “Yazma sürecini yönetebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-turkce-t-y-7-1.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.Y.7.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-y-7-2
+Sıra: 2027-03-04 22:45 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-7-2-1.png
+
+```
+Yazma konusunda öğrencileriniz nerede? 📝
+7. sınıf Türkçe öğrenme çıktısı T.Y.7.2: “Yazma strateji, yöntem ve tekniklerine yönelik seçimlerini yönetebilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-turkce-t-y-7-2.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.Y.7.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-y-7-22
+Sıra: 2027-03-04 23:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-y-7-22-1.png
+
+```
+7. sınıf Türkçe · T.Y.7.22 yazılısı hazır 📝
+7. sınıf Türkçe öğrenme çıktısı T.Y.7.22: “Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-turkce-t-y-7-22.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.Y.7.22 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #7sınıf #türkçe #maarifmodeli
 ```
