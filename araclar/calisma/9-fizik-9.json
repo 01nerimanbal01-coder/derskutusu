@@ -1,0 +1,259 @@
+{
+ "sinif": 9,
+ "ders": "fizik",
+ "hafta": 9,
+ "tarih": "9-13 Kasım 2026",
+ "yayin_tarihi": "2026-11-07",
+ "konu": "Vektörlerin Dik Bileşenleri, Analitik Yöntemle Toplama, Dengeleyici Kuvvet ve Vektör Farkı",
+ "ciktilar": [
+  "Düzlemdeki bir vektörü yatay ve düşey dik bileşenlerine ayırır; bileşenlerden vektörün büyüklüğünü bulur.",
+  "Birden fazla vektörün bileşkesini bileşen tablosuyla hesaplar; dengeleyici kuvveti belirler.",
+  "Vektörün bir sayıyla çarpımını ve iki vektörün farkını bileşenler üzerinden yorumlar."
+ ],
+ "hatirla": [
+  "Yatayla θ açısı yapan A vektörünün bileşenleri A{alt:x} = A·cos θ, A{alt:y} = A·sin θ; büyüklük A = {kok:{us:A{alt:x}|2} + {us:A{alt:y}|2}}.",
+  "Sağa ve yukarı bakan bileşenler (+), sola ve aşağı bakanlar (−) yazılır; R{alt:x} ve R{alt:y} ayrı ayrı toplanır.",
+  "Dengeleyici kuvvet bileşkeyle eşit büyüklükte ve zıt yönlüdür; A − B = A + (−B) işlemiyle fark bulunur."
+ ],
+ "sorular": [
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki birim karelere bölünmüş düzlemde verilen A vektörünün dik bileşenleri ve büyüklüğü birim cinsinden aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "A{alt:x} = 3; A{alt:y} = 4; A = 5",
+    "A{alt:x} = 4; A{alt:y} = 3; A = 5",
+    "A{alt:x} = 4; A{alt:y} = 3; A = 7",
+    "A{alt:x} = −4; A{alt:y} = 3; A = 5"
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "Görselde başlangıç noktaları orijinde olan K, L ve M vektörleri verilmiştir. Bileşen tablosunu tamamlayarak bileşkenin bileşenlerini bulunuz.",
+   "basliklar": [
+    "Vektör",
+    "Yatay bileşen (x)",
+    "Düşey bileşen (y)"
+   ],
+   "satirlar": [
+    [
+     "K",
+     "+3",
+     {
+      "b": "+2"
+     }
+    ],
+    [
+     "L",
+     {
+      "b": "−1"
+     },
+     "+3"
+    ],
+    [
+     "M",
+     {
+      "b": "+2"
+     },
+     {
+      "b": "−4"
+     }
+    ],
+    [
+     "Bileşke R",
+     {
+      "b": "+4"
+     },
+     {
+      "b": "+1"
+     }
+    ]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görseldeki cisme F{alt:1} ve F{alt:2} kuvvetleri etki etmektedir. Cismi dengede tutmak için uygulanması gereken üçüncü kuvvetin bileşenleri (x, y) ve büyüklüğü hangisidir? (Bir birim kare kenarı 1 N'dir.)",
+   "secenekler": [
+    "(4, 3) N; 5 N",
+    "(−4, 3) N; 5 N",
+    "(8, 1) N; 9 N",
+    "(−4, −3) N; 5 N"
+   ],
+   "dogru": 3
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "soru": "Vektörlerle ilgili aşağıdaki ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+   "ifadeler": [
+    {
+     "metin": "Bir vektörün dik bileşenlerinin büyüklükleri toplamı her zaman vektörün büyüklüğüne eşittir.",
+     "dogru": false
+    },
+    {
+     "metin": "Bileşkesi sıfır olan kuvvetlerin etkisindeki cisim dengededir.",
+     "dogru": true
+    },
+    {
+     "metin": "Bir vektör −1 ile çarpıldığında büyüklüğü değişmez, yönü ters döner.",
+     "dogru": true
+    },
+    {
+     "metin": "Dengeleyici kuvvet bileşke kuvvetle aynı yönlüdür.",
+     "dogru": false
+    }
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görselde yatay eksenle 53° açı yapan 15 N büyüklüğündeki F kuvveti verilmiştir. Bu kuvvetin yatay ve düşey bileşenleri kaç N'dir?",
+   "secenekler": [
+    "F{alt:x} = 12 N, F{alt:y} = 9 N",
+    "F{alt:x} = 7,5 N, F{alt:y} = 7,5 N",
+    "F{alt:x} = 9 N, F{alt:y} = 12 N",
+    "F{alt:x} = 9 N, F{alt:y} = 15 N"
+   ],
+   "dogru": 2
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki birim karelere bölünmüş düzlemde verilen A ve B vektörleri için A − B vektörünün bileşenleri (x, y) hangisidir?",
+   "secenekler": [
+    "(2, −2)",
+    "(−2, 2)",
+    "(4, 4)",
+    "(2, 2)"
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "eslestir",
+   "duzey": "uygula",
+   "soru": "Görselde +x yönünde 2 birimlik A vektörü verilmiştir. Verilen vektörleri büyüklük ve yönleriyle eşleştiriniz.",
+   "ciftler": [
+    [
+     "2A",
+     "4 birim, +x yönünde"
+    ],
+    [
+     "−A",
+     "2 birim, −x yönünde"
+    ],
+    [
+     "−3A",
+     "6 birim, −x yönünde"
+    ]
+   ]
+  },
+  {
+   "tur": "bosluk",
+   "duzey": "hatirla",
+   "kelimeler": true,
+   "fazla": [
+    "paralelkenar"
+   ],
+   "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız. Kutudaki bir kavram kullanılmayacaktır.",
+   "cumleler": [
+    {
+     "metin": "Bir vektörün x ve y eksenleri üzerindeki izdüşümlerine vektörün dik ___ları denir.",
+     "cevap": "bileşen"
+    },
+    {
+     "metin": "Bileşkeyle aynı büyüklükte ve ona zıt yönlü olan kuvvete ___ kuvvet denir.",
+     "cevap": "dengeleyici"
+    },
+    {
+     "metin": "Yatay ve düşey bileşenlerinden yararlanarak bir vektörün büyüklüğünü bulmak için ___ bağıntısı kullanılır.",
+     "cevap": "Pisagor"
+    },
+    {
+     "metin": "Bileşenleri tabloya yazıp eksen eksen toplayarak bileşke bulmaya ___ yöntem denir.",
+     "cevap": "analitik"
+    }
+   ]
+  },
+  {
+   "tur": "kisa",
+   "duzey": "ust",
+   "soru": "Görselde aynı noktaya etki eden, büyüklükleri eşit ve aralarındaki açılar 120° olan üç kuvvet verilmiştir. Bu kuvvetlerin bileşkesi kaç N'dir? Nedenini yazınız.",
+   "cevap": "Sıfırdır; herhangi iki kuvvetin bileşkesi 10 N olup üçüncü kuvvete zıt yönlüdür.",
+   "satir": 2
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görseldeki K, L, M ve N vektörlerinden hangi ikisinin bileşkesinin düşey bileşeni sıfırdır?",
+   "secenekler": [
+    "K ve L",
+    "K ve M",
+    "L ve N",
+    "M ve N"
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "sifre",
+   "duzey": "hatirla",
+   "soru": "İpuçlarına uyan kavramları yazınız. Turuncu kutulardaki harfler, bileşenlerin üzerine izdüşürüldüğü doğruların adını verecektir.",
+   "satirlar": [
+    {
+     "ipucu": "Bileşkesi sıfır olan kuvvetlerin etkisindeki cismin durumu (5 harf)",
+     "cevap": "DENGE",
+     "anahtar": 1
+    },
+    {
+     "ipucu": "Yatayla θ açısı yapan vektörün yatay bileşenini veren oran (7 harf)",
+     "cevap": "KOSİNÜS",
+     "anahtar": 0
+    },
+    {
+     "ipucu": "Aynı vektörün düşey bileşenini veren oran (5 harf)",
+     "cevap": "SİNÜS",
+     "anahtar": 0
+    },
+    {
+     "ipucu": "Vektörlerin toplam etkisini tek başına gösteren vektör (7 harf)",
+     "cevap": "BİLEŞKE",
+     "anahtar": 3
+    },
+    {
+     "ipucu": "Sola ve aşağı bakan bileşenlerin tablodaki işareti (7 harf)",
+     "cevap": "NEGATİF",
+     "anahtar": 0
+    }
+   ],
+   "sonuc": "EKSEN"
+  },
+  {
+   "tur": "acik",
+   "duzey": "uygula",
+   "soru": "Bir cisme +x yönünde 5 N'lik F{alt:1} ve −y yönünde 12 N'lik F{alt:2} kuvveti etki ediyor. Bileşke kuvvetin büyüklüğünü işlemleriyle bulunuz.",
+   "cevap": "R = {kok:{us:5|2} + {us:12|2}} = {kok:169} = 13 N",
+   "satir": 3
+  },
+  {
+   "tur": "kisa",
+   "duzey": "ust",
+   "soru": "Yatay bileşeni sıfır, düşey bileşeni −6 birim olan bir vektörün doğrultusu, yönü ve büyüklüğü hakkında ne söylenebilir?",
+   "cevap": "Düşey (y ekseni) doğrultusundadır, −y yönündedir; büyüklüğü 6 birimdir.",
+   "satir": 2
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görselde düşey eksenle 37° açı yapan 50 N büyüklüğündeki T kuvveti verilmiştir. Bu kuvvetin yatay ve düşey bileşenleri kaç N'dir?",
+   "secenekler": [
+    "T{alt:x} = 40 N, T{alt:y} = 30 N",
+    "T{alt:x} = 30 N, T{alt:y} = 40 N",
+    "T{alt:x} = 25 N, T{alt:y} = 25 N",
+    "T{alt:x} = 50 N, T{alt:y} = 0"
+   ],
+   "dogru": 1
+  }
+ ]
+}

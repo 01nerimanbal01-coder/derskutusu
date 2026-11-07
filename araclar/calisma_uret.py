@@ -22,8 +22,10 @@ yalnız ölçüm yapılamazsa kullanılır. Sayfa doluluğu: 03-ARACLAR/_calisma
 import html
 import importlib.util
 import json
+import os
 import random
 import re
+import shutil
 import subprocess
 import sys
 import uuid
@@ -32,13 +34,34 @@ from pathlib import Path
 ARACLAR = Path(__file__).resolve().parent
 SITE = ARACLAR.parent
 PUBLIC = SITE / 'public'
-KOK = SITE.parent
-IS = KOK / '03-ARACLAR' / '_calisma'
-FONT_KAYNAK = KOK / '02-KAYNAKLAR' / 'FONT'
-CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+# Ana Mac'te SITE proje klasörünün içindedir (KOK/03-ARACLAR, KOK/02-KAYNAKLAR). Başka makinede (Linux, bulut,
+# GitHub yürütücüsü) KOK yoksa iş klasörü depo dışında tutulur: CALISMA_IS (yoksa ../_calisma-is); yazı tipleri
+# CALISMA_FONT klasöründen, yoksa iş klasörüne google/fonts deposundan (OFL) bir kez indirilir.
+KOK = Path(os.environ.get('CALISMA_KOK') or SITE.parent)
+if (KOK / '03-ARACLAR').is_dir():
+    IS = KOK / '03-ARACLAR' / '_calisma'
+    FONT_KAYNAK = KOK / '02-KAYNAKLAR' / 'FONT'
+else:
+    IS = Path(os.environ.get('CALISMA_IS') or SITE.parent / '_calisma-is')
+    FONT_KAYNAK = Path(os.environ.get('CALISMA_FONT') or IS / 'font-kaynak')
+FONT_ADRES = {'Montserrat-wght.ttf': 'https://raw.githubusercontent.com/google/fonts/main/ofl/montserrat/Montserrat%5Bwght%5D.ttf',
+              'NotoSans-wdth-wght.ttf': 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosans/NotoSans%5Bwdth,wght%5D.ttf'}
+
+
+def _chrome_yolu():
+    for aday in (os.environ.get('CHROME_PATH'), '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+                 '/usr/bin/google-chrome', shutil.which('google-chrome') or '', shutil.which('chromium') or ''):
+        if aday and Path(aday).exists():
+            return aday
+    sys.exit('Chrome bulunamadı: CHROME_PATH ortam değişkenini verin')
+
+
+CHROME = _chrome_yolu()
 CHROME_ARGS = [CHROME, '--headless=new', '--disable-gpu',
                f'--user-data-dir={IS / ".chrome-pdf-profil"}',
                '--no-first-run', '--no-default-browser-check', '--disable-background-networking']
+if sys.platform.startswith('linux') and os.geteuid() == 0:
+    CHROME_ARGS.append('--no-sandbox')  # kök kullanıcıyla (kapsayıcı) Chrome korumalı alan açamaz
 sys.path.insert(0, str(ARACLAR))
 sys.path.insert(0, str(KOK / '03-ARACLAR' / '_pylib'))
 
@@ -452,6 +475,11 @@ def yazi_tipleri():
     from fontTools.varLib.instancer import instantiateVariableFont
     hedef = IS / 'font'
     hedef.mkdir(parents=True, exist_ok=True)
+    for adi, adres in FONT_ADRES.items():  # Mac'te 02-KAYNAKLAR/FONT'ta hazır; yoksa bir kez indirilir
+        if not (FONT_KAYNAK / adi).exists():
+            import urllib.request
+            FONT_KAYNAK.mkdir(parents=True, exist_ok=True)
+            urllib.request.urlretrieve(adres, FONT_KAYNAK / adi)
     liste = [('Montserrat', FONT_KAYNAK / 'Montserrat-wght.ttf', w, {'wght': w}) for w in (600, 700, 800)]
     liste += [('Noto Sans', FONT_KAYNAK / 'NotoSans-wdth-wght.ttf', w, {'wght': w, 'wdth': 100}) for w in (400, 600, 700)]
     css = ''
