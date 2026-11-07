@@ -1,0 +1,272 @@
+{
+ "sinif": 9,
+ "ders": "matematik",
+ "hafta": 9,
+ "tarih": "9-13 Kasım 2026",
+ "yayin_tarihi": "2026-11-08",
+ "konu": "Doğrusal Fonksiyonlarda Grafik Dönüşümleri g(x) = a·f(x ± r) ± k, Nitel Özellikler ve Modelleme",
+ "ciktilar": [
+  "f(x) = x referans fonksiyonundan a, r ve k parametreleriyle türetilen doğrusal fonksiyonların grafik dönüşümlerini yorumlar.",
+  "Türetilen fonksiyonların eğim, sıfır, işaret, artanlık-azalanlık, bire birlik ve kapalı aralıktaki en büyük-en küçük değer özelliklerini cebirsel ve grafiksel olarak doğrular.",
+  "Sabit değişim oranlı gerçek yaşam durumlarını doğrusal fonksiyonla modeller; tablo, grafik ve cebirsel temsiller arasında geçiş yapar."
+ ],
+ "hatirla": [
+  "Parametreli biçimde k grafiği yukarı-aşağı, r sağa-sola kaydırır; a eğimi belirler, a < 0 ise grafik x eksenine göre yansır.",
+  "g(x) = ax + b için y eksenini kestiği nokta (0, b), sıfırı ax + b = 0 eşitliğinin çözümüdür; a > 0 ise fonksiyon artan, a < 0 ise azalandır.",
+  "Eğim a = {kesir:g(x₂) − g(x₁)|x₂ − x₁} her nokta çiftinde aynıdır; [m, n] aralığında en büyük ve en küçük değerler uç noktalarda bulunur."
+ ],
+ "sorular": [
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki kesikli doğru birim fonksiyon f(x) = x'i, kalın doğru ise f'ye dönüşümler uygulanarak elde edilen g fonksiyonunu göstermektedir. Buna göre g(x) aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "g(x) = 2·f(x + 1)",
+    "g(x) = f(x) + 2",
+    "g(x) = 2·f(x) + 1",
+    "g(x) = 2·f(x − 1)"
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "eslestir",
+   "duzey": "hatirla",
+   "soru": "f(x) = x fonksiyonuna uygulanan dönüşümleri grafikte oluşturdukları değişimle eşleştiriniz.",
+   "ciftler": [
+    [
+     "f(x) + 4",
+     "4 birim yukarı ötelenir."
+    ],
+    [
+     "f(x + 3)",
+     "3 birim sola ötelenir."
+    ],
+    [
+     "f(x − 5)",
+     "5 birim sağa ötelenir."
+    ],
+    [
+     "−f(x)",
+     "x eksenine göre yansır."
+    ],
+    [
+     "3·f(x)",
+     "Eğimi 3 olur, dikleşir."
+    ]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görselde orijinden geçen d₁, d₂ ve d₃ doğruları sırasıyla y = a₁x, y = a₂x ve y = a₃x fonksiyonlarının grafikleridir. Buna göre a₁, a₂ ve a₃ arasındaki sıralama hangisidir?",
+   "secenekler": [
+    "a₁ < a₂ < a₃",
+    "a₃ < a₁ < a₂",
+    "a₃ < a₂ < a₁",
+    "a₂ < a₃ < a₁"
+   ],
+   "dogru": 2
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "f(x) = x fonksiyonundan türetilen fonksiyonları ax + b biçiminde yazınız; sıfırlarını ve artan ya da azalan olduklarını tabloya işleyiniz.",
+   "basliklar": [
+    "g(x)",
+    "ax + b biçimi",
+    "Sıfırı",
+    "Artan / Azalan"
+   ],
+   "satirlar": [
+    [
+     "2·f(x − 1) + 4",
+     {
+      "b": "2x + 2"
+     },
+     {
+      "b": "x = −1"
+     },
+     {
+      "b": "Artan"
+     }
+    ],
+    [
+     "−f(x + 2) + 5",
+     {
+      "b": "−x + 3"
+     },
+     {
+      "b": "x = 3"
+     },
+     "Azalan"
+    ],
+    [
+     "3·f(x) − 6",
+     "3x − 6",
+     {
+      "b": "x = 2"
+     },
+     {
+      "b": "Artan"
+     }
+    ],
+    [
+     "{kesir:1|2}·f(x + 4)",
+     {
+      "b": "{kesir:1|2}x + 2"
+     },
+     {
+      "b": "x = −4"
+     },
+     {
+      "b": "Artan"
+     }
+    ]
+   ]
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "soru": "Grafik dönüşümleri ve doğrusal fonksiyonların nitel özellikleri hakkındaki ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+   "ifadeler": [
+    {
+     "metin": "f(x) + k dönüşümünde doğrunun eğimi değişmez; yeni doğru ilk doğruya paraleldir.",
+     "dogru": true
+    },
+    {
+     "metin": "f(x − 2) dönüşümünde grafik 2 birim sola kayar.",
+     "dogru": false
+    },
+    {
+     "metin": "0 < a < 1 olduğunda a·f(x) doğrusu x eksenine yaklaşarak yataylaşır.",
+     "dogru": true
+    },
+    {
+     "metin": "Tanım kümesi ℝ olan g(x) = 5x − 1 fonksiyonunun en küçük değeri −1'dir.",
+     "dogru": false
+    }
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki grafiğe göre g doğrusunun x ekseninin üstünde kaldığı, yani g(x) > 0 eşitsizliğini sağlayan x değerlerinin tamamı hangi aralıktadır?",
+   "secenekler": [
+    "(2, +∞)",
+    "(−∞, 2)",
+    "(−∞, 4)",
+    "(0, 2)"
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "Kapalı [−2, 3] aralığında tanımlı g(x) = −3x + 5 fonksiyonunun en büyük ve en küçük değerlerini bulunuz.",
+   "cevap": "Azalan olduğundan en büyük g(−2) = 11, en küçük g(3) = −4'tür.",
+   "satir": 2
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görselde bir taksinin aldığı yol ile taksimetrenin yazdığı ücret arasındaki ilişki tabloyla verilmiştir. Ücret yolla doğrusal değiştiğine göre 15 km'lik bir yolculuğun ücreti kaç TL'dir?",
+   "secenekler": [
+    "180",
+    "216",
+    "220",
+    "260"
+   ],
+   "dogru": 2
+  },
+  {
+   "tur": "bosluk",
+   "duzey": "hatirla",
+   "kelimeler": true,
+   "fazla": [
+    "dikleşir"
+   ],
+   "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız. Kutudaki bir kavram kullanılmayacaktır.",
+   "cumleler": [
+    {
+     "metin": "f(x) = x fonksiyonunun grafiği orijinden geçen birinci ___ doğrusudur.",
+     "cevap": "açıortay"
+    },
+    {
+     "metin": "Eğimleri eşit, y eksenini kestikleri noktalar farklı olan doğrular birbirine ___ olur.",
+     "cevap": "paralel"
+    },
+    {
+     "metin": "a·f(x) dönüşümünde 0 < |a| < 1 ise doğru x eksenine yaklaşarak ___.",
+     "cevap": "yataylaşır"
+    },
+    {
+     "metin": "Eğimi sıfırdan farklı her doğrusal fonksiyon ___ fonksiyondur.",
+     "cevap": "bire bir"
+    }
+   ]
+  },
+  {
+   "tur": "acik",
+   "duzey": "ust",
+   "soru": "Görselde bir telefonun şarj yüzdesinin zamana göre değişimi verilmiştir. Şarj sabit hızla azaldığına göre durumu g(t) = at + b ile modelleyiniz; şarjın kaçıncı saatte biteceğini ve modelin tanım kümesini yazınız.",
+   "cevap": "a = −10, b = 90 ⇒ g(t) = −10t + 90; g(t) = 0 ⇒ t = 9. saatte biter; tanım kümesi [0, 9].",
+   "satir": 3
+  },
+  {
+   "tur": "siralama",
+   "duzey": "ust",
+   "soru": "f(x) = x grafiğinden başlayarak g(x) = −2·f(x − 1) + 3 grafiğini elde etme adımlarını sıralayınız.",
+   "ogeler": [
+    "f(x) = x birinci açıortay doğrusu çizilir.",
+    "Grafik 1 birim sağa ötelenerek y = x − 1 elde edilir.",
+    "Eğim 2 katına çıkarılıp x eksenine göre yansıtılarak y = −2x + 2 elde edilir.",
+    "Grafik 3 birim yukarı ötelenerek g(x) = −2x + 5 elde edilir."
+   ]
+  },
+  {
+   "tur": "sifre",
+   "duzey": "hatirla",
+   "soru": "İpuçlarına uyan kavramları yazınız. Turuncu kutulardaki harfler, a > 0 olduğunda doğrusal fonksiyonun aldığı adı verecektir.",
+   "satirlar": [
+    {
+     "ipucu": "f(x) = x grafiği olan birinci … doğrusu (8 harf)",
+     "cevap": "AÇIORTAY",
+     "anahtar": 0
+    },
+    {
+     "ipucu": "Bütün doğrusal fonksiyonların türetildiği f(x) = x: … fonksiyon (8 harf)",
+     "cevap": "REFERANS",
+     "anahtar": 0
+    },
+    {
+     "ipucu": "Grafiğin yerini değiştirip eğimini koruyan dönüşüm (7 harf)",
+     "cevap": "ÖTELEME",
+     "anahtar": 1
+    },
+    {
+     "ipucu": "Doğrusal fonksiyonda değişim oranı her aralıkta … kalır (5 harf)",
+     "cevap": "SABİT",
+     "anahtar": 1
+    },
+    {
+     "ipucu": "Azalan doğrusal fonksiyonun eğiminin işareti (7 harf)",
+     "cevap": "NEGATİF",
+     "anahtar": 0
+    }
+   ],
+   "sonuc": "ARTAN"
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görselde aynı anda boşaltılmaya başlanan A ve B depolarındaki su miktarlarının zamana göre değişimi verilmiştir. Depolar sabit hızla boşaldığına göre iki depodaki su miktarı kaçıncı dakikada ve kaç litrede eşitlenir?",
+   "secenekler": [
+    "3. dakikada, 150 L",
+    "4. dakikada, 120 L",
+    "4. dakikada, 100 L",
+    "6. dakikada, 90 L"
+   ],
+   "dogru": 1
+  }
+ ]
+}

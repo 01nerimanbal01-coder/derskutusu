@@ -1,0 +1,234 @@
+{
+ "sinif": 10,
+ "ders": "matematik",
+ "hafta": 9,
+ "tarih": "9-13 Kasım 2026",
+ "yayin_tarihi": "2026-11-08",
+ "konu": "İki Kategorik Değişkenli Veriler: Koşullu Göreli Sıklıkla İlişki Kararı, Nedensellik ve Örneklem Yanlılığı",
+ "ciktilar": [
+  "İki yönlü tablolardan birleşik, marjinal ve koşullu göreli sıklıkları doğru paydayı seçerek hesaplar.",
+  "Koşullu göreli sıklıkları ve sütun grafiklerini karşılaştırarak iki değişkenin ilişkili ya da bağımsız olduğuna karar verir.",
+  "Araştırma sonuçlarını yorumlarken ilişkiyi nedensellikten ayırır, örneklemin yansız seçilip seçilmediğini sorgular."
+ ],
+ "hatirla": [
+  "Payda seçimi: birleşik oranda genel toplam, marjinal oranda kenar toplamının genel toplama oranı alınır; koşullu oranda hücre kendi satır ya da sütun toplamına bölünür.",
+  "Koşullu oranlar gruptan gruba belirgin biçimde değişiyorsa değişkenler ilişkili, aynı kalıyorsa bağımsızdır.",
+  "İlişki bulunması sebep-sonuç kanıtı değildir; ortak bir etken (karıştırıcı değişken) her ikisini de etkileyebilir."
+ ],
+ "sorular": [
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki tabloya göre aşağıdaki ifadelerden hangileri doğrudur? I. Tüm öğrencilerden hem kulüp üyesi hem düzenli okur olanların oranı 0,21'dir. II. Düzenli okuyanların marjinal göreli sıklığı 0,49'dur. III. Kulüp üyeliği ile kitap okuma bağımsız değişkenlerdir.",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "soru": "İki kategorik değişkenli verilerle ilgili aşağıdaki ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+   "ifadeler": [
+    {
+     "metin": "Koşullu oranlar gruptan gruba belirgin biçimde değişiyorsa değişkenler ilişkilidir.",
+     "dogru": true
+    },
+    {
+     "metin": "Grupların kişi sayıları farklıysa en adil karşılaştırma kişi sayılarıyla yapılır.",
+     "dogru": false
+    },
+    {
+     "metin": "İki değişken arasında ilişki bulunması birinin diğerine yol açtığını kanıtlar.",
+     "dogru": false
+    },
+    {
+     "metin": "%100 yığılmış sütun grafiğinde her sütunun boyu %100'ü gösterir.",
+     "dogru": true
+    }
+   ]
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "Bir okulda 200 öğrencinin yaz okuluna katılma durumu tabloda verilmiştir. Boş hücreleri doldurunuz. (Katılma oranı = katılan / satır toplamı)",
+   "basliklar": [
+    "Sınıf",
+    "Katılır",
+    "Katılmaz",
+    "Toplam",
+    "Katılma oranı"
+   ],
+   "satirlar": [
+    [
+     "9. sınıf",
+     "27",
+     {
+      "b": "63"
+     },
+     "90",
+     {
+      "b": "%30"
+     }
+    ],
+    [
+     "10. sınıf",
+     {
+      "b": "66"
+     },
+     "44",
+     "110",
+     {
+      "b": "%60"
+     }
+    ],
+    [
+     "Toplam",
+     {
+      "b": "93"
+     },
+     {
+      "b": "107"
+     },
+     "200",
+     {
+      "b": "%46,5"
+     }
+    ]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki %100 yığılmış sütun grafiği üç mahalledeki hanelerin geri dönüşüm yapma durumunu göstermektedir. Buna göre aşağıdakilerden hangisi söylenebilir?",
+   "secenekler": [
+    "Mahalle ile geri dönüşüm yapma durumu arasında ilişki yoktur.",
+    "Geri dönüşüm yapan hane sayısı en fazla C mahallesindedir.",
+    "Mahalleden mahalleye geri dönüşüm oranı artmaktadır.",
+    "Hane sayıları bilinmediği için oranlar karşılaştırılamaz."
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "bosluk",
+   "duzey": "hatirla",
+   "kelimeler": true,
+   "fazla": [
+    "ortalama"
+   ],
+   "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız. Kutudaki bir kavram kullanılmayacaktır.",
+   "cumleler": [
+    {
+     "metin": "Bir değişkenin kategorisi değiştikçe öteki değişkenin koşullu oranları da değişiyorsa iki değişken ___ değişkenlerdir.",
+     "cevap": "ilişkili"
+    },
+    {
+     "metin": "Bütün gruplarda koşullu oranlar eşitse değişkenler birbirinden ___ olur.",
+     "cevap": "bağımsız"
+    },
+    {
+     "metin": "İki değişkeni birlikte etkileyen, gözden kaçmış ortak etkene ___ değişken denir.",
+     "cevap": "karıştırıcı"
+    },
+    {
+     "metin": "Hedef kitleyi temsil etmeyen bir örneklem ___ bir örneklemdir.",
+     "cevap": "yanlı"
+    }
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Bir ilçede yapılan araştırmanın sonucu görselde verilmiştir. Buna göre aşağıdaki yorumlardan hangisi en uygundur?",
+   "secenekler": [
+    "Evine kütüphane kurulan her öğrencinin başarısı kesinlikle artar.",
+    "Evde kütüphane olması ile sınav başarısı arasında ilişki vardır; ancak ailenin eğitime verdiği önem gibi ortak bir etken her ikisini de etkileyebilir.",
+    "Oranlar farklı olduğu için iki değişken bağımsızdır.",
+    "Başarı oranları %50'nin üzerinde olmadığı için ilişki yorumu yapılamaz."
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "siralama",
+   "duzey": "hatirla",
+   "soru": "İki kategorik değişkenin incelendiği bir araştırmanın aşamalarını doğru sıraya koyunuz.",
+   "ogeler": [
+    "Araştırma sorusunu belirlemek",
+    "Yansız bir örneklemden veri toplamak",
+    "İki yönlü tablo kurup koşullu oranları hesaplamak",
+    "Bulguları araştırma sorusuna göre yorumlayıp raporlamak"
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görseldeki kümelenmiş sütun grafiğinde bir spor salonundaki üyelerin antrenman saati tercihleri kişi sayısı olarak verilmiştir. İki yaş grubunu adil biçimde karşılaştıran ifade hangisidir?",
+   "secenekler": [
+    "Sabahı seçen genç sayısı daha fazla olduğu için gençler sabahı daha çok tercih eder.",
+    "Yetişkinlerin %60'ı, gençlerin %30'u sabahı seçmiştir; yaş grubu ile saat tercihi ilişkilidir.",
+    "İki grupta da sabahı seçenlerin oranı eşittir.",
+    "Yetişkinlerin %30'u, gençlerin %60'ı sabahı seçmiştir."
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "eslestir",
+   "duzey": "hatirla",
+   "soru": "Soldaki göreli sıklık türlerini sağdaki hesaplama biçimleriyle eşleştiriniz.",
+   "ciftler": [
+    [
+     "Birleşik göreli sıklık",
+     "{kesir:hücre|genel toplam}"
+    ],
+    [
+     "Marjinal göreli sıklık",
+     "{kesir:satır ya da sütun toplamı|genel toplam}"
+    ],
+    [
+     "Satır koşullu göreli sıklık",
+     "{kesir:hücre|kendi satır toplamı}"
+    ],
+    [
+     "Sütun koşullu göreli sıklık",
+     "{kesir:hücre|kendi sütun toplamı}"
+    ]
+   ]
+  },
+  {
+   "tur": "kisa",
+   "duzey": "ust",
+   "soru": "Görselde özeti verilen araştırmanın raporundaki genelleme neden güvenilir değildir? Araştırma nasıl düzeltilebilir?",
+   "cevap": "Örneklem yanlı: yalnız kantini kullananlar soruldu. Bütün sınıflardan rastgele öğrenci seçilmeli.",
+   "satir": 3
+  },
+  {
+   "tur": "acik",
+   "duzey": "ust",
+   "soru": "Görseldeki tabloyu kullanarak konut türüne göre sebze yetiştirme oranlarını hesaplayınız. Konut türü ile sebze yetiştirme arasında ilişki olup olmadığını gerekçesiyle açıklayınız.",
+   "cevap": "Bahçeli ev: {kesir:54|120} = %45; apartman: {kesir:27|180} = %15; genel oran {kesir:81|300} = %27. Koşullu oranlar belirgin biçimde farklı → değişkenler ilişkilidir.",
+   "satir": 4
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görseldeki tabloda grup ile etkinliğe katılım değişkenlerinin bağımsız olması isteniyor. Buna göre x kaç olmalıdır?",
+   "secenekler": [
+    "18",
+    "24",
+    "28",
+    "32"
+   ],
+   "dogru": 2
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "40 kişilik bir sınıfta 25 kız ve 15 erkek öğrenci vardır. Kızların 15'i, erkeklerin 9'u okul korosuna gönüllü olmuştur. Kızlarda ve erkeklerde gönüllü olma oranlarını bulunuz. Cinsiyet ile gönüllü olma arasında ilişki var mıdır?",
+   "cevap": "Kızlar {kesir:15|25} = %60, erkekler {kesir:9|15} = %60; oranlar eşit → değişkenler bağımsızdır (ilişki yok).",
+   "satir": 3
+  }
+ ]
+}

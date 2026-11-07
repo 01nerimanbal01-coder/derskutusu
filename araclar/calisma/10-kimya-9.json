@@ -1,0 +1,151 @@
+{
+ "sinif": 10,
+ "ders": "kimya",
+ "hafta": 9,
+ "tarih": "9-13 Kasım 2026",
+ "yayin_tarihi": "2026-11-08",
+ "konu": "Kimyasal Hesaplamalar: Mol Köprüsü, Sınırlayıcı Bileşen ve Tepkime Verimi",
+ "ciktilar": [
+  "Denkleştirilmiş tepkimelerdeki katsayıları mol, tanecik, kütle ve normal koşullardaki gaz hacmiyle ilişkilendirir.",
+  "Mol köprüsünü kullanarak mol-kütle-hacim hesaplamaları yapar.",
+  "Tepkenlerin ilk miktarları bilinen tepkimelerde sınırlayıcı bileşeni, artan maddeyi ve yüzde verimi BDS tablosuyla bulur."
+ ],
+ "hatirla": [
+  "Denklemdeki katsayılar mol ve tanecik oranını, gazlar için aynı koşullarda hacim oranını verir; kütle oranını doğrudan vermez.",
+  "Mol köprüsü: verilen miktar → mol ({kesir:m|M}, {kesir:V|22,4}, {kesir:N|N{alt:A}}) → katsayı oranı → istenen birim.",
+  "Başlangıç molü / katsayı oranı en küçük olan tepken sınırlayıcı bileşendir; ürün miktarı ona göre hesaplanır."
+ ],
+ "sorular": [
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki denkleştirilmiş tepkimeyle ilgili aşağıdaki yorumlardan hangisi yanlıştır?",
+   "secenekler": [
+    "2 mol H{alt:2} ile 1 mol O{alt:2} tepkimeye girerek 2 mol H{alt:2}O oluşturur.",
+    "NŞA'da 44,8 L H{alt:2} gazı ile 22,4 L O{alt:2} gazı tepkimeye girer.",
+    "4 g H{alt:2} ile 32 g O{alt:2} tepkimeye girdiğinde 36 g H{alt:2}O oluşur.",
+    "Tepkimede toplam mol sayısı korunur."
+   ],
+   "dogru": 3
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "soru": "Kimyasal hesaplamalarla ilgili aşağıdaki ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+   "ifadeler": [
+    {"metin": "Kimyasal tepkimelerde atomların sayısı da toplam kütle de değişmez.", "dogru": true},
+    {"metin": "Katsayılar, tepkimeye giren maddelerin kütleleri arasındaki oranı doğrudan verir.", "dogru": false},
+    {"metin": "NŞA'da 1 mol H{alt:2}O sıvısının hacmi 22,4 L'dir.", "dogru": false},
+    {"metin": "Tam verimli tepkimede tepkenlerden en az biri tamamen tükenir.", "dogru": true}
+   ]
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "Görseldeki tepkimeye göre 0,5 mol CH{alt:4} gazı tamamen yakılıyor. Tablodaki boş hücreleri doldurunuz.",
+   "basliklar": ["Nicelik", "CH{alt:4}", "O{alt:2}", "CO{alt:2}", "H{alt:2}O"],
+   "satirlar": [
+    ["Mol sayısı", "0,5", {"b": "1"}, {"b": "0,5"}, {"b": "1"}],
+    ["Kütle (g)", "8", {"b": "32"}, {"b": "22"}, {"b": "18"}]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki tepkimede 7,2 g magnezyum yeterli miktarda asitle tamamen tepkimeye giriyor. Oluşan H{alt:2} gazının NŞA'daki hacmi kaç litredir?",
+   "secenekler": ["2,24", "4,48", "6,72", "13,44"],
+   "dogru": 2
+  },
+  {
+   "tur": "bosluk",
+   "duzey": "hatirla",
+   "kelimeler": true,
+   "fazla": ["katalizör"],
+   "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız. Kutudaki bir kavram kullanılmayacaktır.",
+   "cumleler": [
+    {"metin": "Tepkimedeki maddelerin miktarları arasındaki sayısal ilişkileri inceleyen hesaplamalara ___ denir.", "cevap": "stokiyometri"},
+    {"metin": "Tepkime sırasında tamamen tükenip tepkimeyi durduran tepkene ___ bileşen denir.", "cevap": "sınırlayıcı"},
+    {"metin": "Tepkime bittiğinde bir kısmı kullanılmadan kalan maddeye ___ madde denir.", "cevap": "artan"},
+    {"metin": "Gerçekte elde edilen ürünün kuramsal ürüne oranının yüzdesine tepkime ___ denir.", "cevap": "verimi"}
+   ]
+  },
+  {
+   "tur": "siralama",
+   "duzey": "hatirla",
+   "soru": "Bir maddenin verilen miktarından başka bir maddenin miktarını bulmak için izlenen adımları doğru sıraya koyunuz.",
+   "ogeler": [
+    "Tepkime denklemini yazıp denkleştirmek",
+    "Verilen miktarı mol sayısına çevirmek",
+    "Katsayı oranıyla istenen maddenin molünü bulmak",
+    "Bulunan molü istenen birime dönüştürmek"
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görselde başlangıç mol sayıları verilen tepkime tam verimle gerçekleşiyor. Tepkime sonunda kapta hangi maddeler kaçar mol bulunur?",
+   "secenekler": [
+    "1 mol N{alt:2} ve 4 mol NH{alt:3}",
+    "3 mol H{alt:2} ve 4 mol NH{alt:3}",
+    "3 mol H{alt:2} ve 2 mol NH{alt:3}",
+    "Yalnız 6 mol NH{alt:3}"
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "tablo",
+   "duzey": "ust",
+   "soru": "Bir kaba 6 mol CO ve 4 mol O{alt:2} gazı konularak 2CO(g) + O{alt:2}(g) → 2CO{alt:2}(g) tepkimesi tam verimle gerçekleştiriliyor. Başlangıç-Değişim-Sonuç tablosunu tamamlayınız.",
+   "basliklar": ["", "2CO(g)", "O{alt:2}(g)", "2CO{alt:2}(g)"],
+   "satirlar": [
+    ["Başlangıç", "6 mol", "4 mol", "0"],
+    ["Değişim", {"b": "−6 mol"}, {"b": "−3 mol"}, {"b": "+6 mol"}],
+    ["Sonuç", {"b": "0"}, {"b": "1 mol"}, {"b": "6 mol"}]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görseldeki kapta bulunan moleküller tam verimle tepkimeye giriyor. Tepkime sonunda kaç XY{alt:3} molekülü oluşur ve hangi molekülden kaç tane artar?",
+   "secenekler": [
+    "4 XY{alt:3} oluşur, 1 X{alt:2} artar.",
+    "6 XY{alt:3} oluşur, artan molekül olmaz.",
+    "4 XY{alt:3} oluşur, 2 Y{alt:2} artar.",
+    "3 XY{alt:3} oluşur, 1 X{alt:2} artar."
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görseldeki deney verilerine göre CaCO{alt:3} katısının ısıtılmasıyla gerçekleşen tepkimenin yüzde verimi kaçtır?",
+   "secenekler": ["%60", "%75", "%80", "%90"],
+   "dogru": 2
+  },
+  {
+   "tur": "eslestir",
+   "duzey": "hatirla",
+   "soru": "Soldaki bağıntıları sağdaki kullanım amaçlarıyla eşleştiriniz.",
+   "ciftler": [
+    ["n = {kesir:m|M}", "Kütlesi bilinen maddenin molünü bulmak"],
+    ["n = {kesir:V|22,4}", "NŞA'daki gaz hacminden mole geçmek"],
+    ["n = {kesir:N|N{alt:A}}", "Tanecik sayısından mole geçmek"],
+    ["V = n · 22,4", "Gazın molünden NŞA hacmine geçmek"]
+   ]
+  },
+  {
+   "tur": "kisa",
+   "duzey": "ust",
+   "soru": "Görseldeki iki madde tam verimle tepkimeye girerek FeS oluşturuyor. Hangi maddeden kaç gram artar? Oluşan FeS kaç gramdır?",
+   "cevap": "S artar: 0,05 mol = 1,6 g; FeS: 0,2 mol × 88 = 17,6 g",
+   "satir": 3
+  },
+  {
+   "tur": "acik",
+   "duzey": "ust",
+   "soru": "Görseldeki tepkimeye göre 6 g etan gazı tamamen yakılıyor. Harcanan O{alt:2} gazının NŞA'daki hacmini ve oluşan suyun kütlesini işlem basamaklarıyla hesaplayınız.",
+   "cevap": "n(C₂H₆) = {kesir:6|30} = 0,2 mol. Katsayı oranı 2 : 7 : 6 → O₂: 0,7 mol → 0,7 × 22,4 = 15,68 L; H₂O: 0,6 mol → 0,6 × 18 = 10,8 g.",
+   "satir": 4
+  }
+ ]
+}

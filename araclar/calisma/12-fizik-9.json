@@ -1,0 +1,262 @@
+{
+ "sinif": 12,
+ "ders": "fizik",
+ "hafta": 9,
+ "tarih": "9-13 Kasım 2026",
+ "yayin_tarihi": "2026-11-08",
+ "konu": "Kepler Kanunları Uygulamaları ve Basit Harmonik Harekete Giriş: Uzanım, Genlik, Periyot, Frekans ve Geri Çağırıcı Kuvvet (12.1.5 & 12.2.1)",
+ "ciktilar": [
+  "Kepler kanunlarını gezegenlerin hız ve periyot hesaplarında uygular.",
+  "Basit harmonik hareketi çembersel hareketin izdüşümüyle ilişkilendirerek uzanım, genlik, periyot ve frekansı açıklar.",
+  "Geri çağırıcı kuvvet, ivme ve hızın konuma göre değişimini yorumlar."
+ ],
+ "hatirla": [
+  "Alanlar Kanunu’na göre gezegen eşit sürelerde eşit alanlar tarar; Periyotlar Kanunu’na göre aynı yıldız çevresinde {kesir:{us:R|3}|{us:T|2}} oranı sabittir.",
+  "Çember üzerinde sabit süratle dönen cismin bir çap üzerindeki gölgesi basit harmonik hareket yapar; çemberin merkezi denge noktası, yarıçapı genliktir. f = {kesir:1|T}, ω = {kesir:2π|T}.",
+  "Geri çağırıcı kuvvet ve ivme her an denge noktasına yöneliktir: F = −m · {us:ω|2} · x. O noktasında hız en büyük, ivme sıfır; uç noktalarda hız sıfır, ivme en büyüktür."
+ ],
+ "sorular": [
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görselde yaya bağlı cisim, yatay ve sürtünmesiz bir yüzeyde K ile L noktaları arasında basit harmonik hareket yapmaktadır. Cisim L noktasındayken aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Hızının büyüklüğü en büyük değerindedir.",
+    "İvmesi sıfırdır.",
+    "Geri çağırıcı kuvvet en büyüktür ve O noktasına doğrudur.",
+    "Uzanımı sıfırdır."
+   ],
+   "dogru": 2
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "K ve L noktaları arasında basit harmonik hareket yapan cisim için tabloyu \"sıfır\" ya da \"en büyük\" sözcükleriyle tamamlayınız (O denge noktasıdır).",
+   "basliklar": [
+    "Konum",
+    "Uzanım",
+    "Hız",
+    "İvme"
+   ],
+   "satirlar": [
+    [
+     "O",
+     "sıfır",
+     {
+      "b": "en büyük"
+     },
+     {
+      "b": "sıfır"
+     }
+    ],
+    [
+     "L",
+     {
+      "b": "en büyük"
+     },
+     {
+      "b": "sıfır"
+     },
+     "en büyük"
+    ],
+    [
+     "K",
+     {
+      "b": "en büyük"
+     },
+     "sıfır",
+     {
+      "b": "en büyük"
+     }
+    ]
+   ]
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "soru": "Basit harmonik hareketle ilgili aşağıdaki ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+   "ifadeler": [
+    {
+     "metin": "Uzanım, yönü olan vektörel bir büyüklüktür.",
+     "dogru": true
+    },
+    {
+     "metin": "Geri çağırıcı kuvvet her an uzanım vektörüyle aynı yönlüdür.",
+     "dogru": false
+    },
+    {
+     "metin": "Periyodu 0,5 s olan bir salınımın frekansı 2 Hz’dir.",
+     "dogru": true
+    },
+    {
+     "metin": "Cisim denge noktasından geçerken ivmesinin büyüklüğü en büyük değerini alır.",
+     "dogru": false
+    }
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görselde düşey düzlemdeki çember üzerinde sabit süratle dönen cisme yukarıdan paralel ışık gönderilmektedir. Cisim bir turunu 4 s’de tamamladığına göre cismin yatay çap üzerindeki gölgesinin genliği ve frekansı nedir?",
+   "secenekler": [
+    "Genlik 20 cm, frekans 0,25 Hz",
+    "Genlik 40 cm, frekans 0,25 Hz",
+    "Genlik 20 cm, frekans 4 Hz",
+    "Genlik 40 cm, frekans 4 Hz"
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Bir yayın ucuna bağlı cisim 10 saniyede 25 tam salınım yapmaktadır. Buna göre bu hareketin periyodu kaç saniyedir?",
+   "secenekler": [
+    "2,5",
+    "4",
+    "0,25",
+    "0,4"
+   ],
+   "dogru": 3
+  },
+  {
+   "tur": "bosluk",
+   "duzey": "hatirla",
+   "kelimeler": true,
+   "fazla": [
+    "açısal hız"
+   ],
+   "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız. Kutudaki bir kavram kullanılmayacaktır.",
+   "cumleler": [
+    {
+     "metin": "Salınan cismin denge noktasından uzaklaşabileceği en büyük uzaklığa ___ denir.",
+     "cevap": "genlik"
+    },
+    {
+     "metin": "Cismin bir tam salınımı tamamlaması için geçen süreye ___ denir.",
+     "cevap": "periyot"
+    },
+    {
+     "metin": "Bir saniyede tamamlanan salınım sayısına ___ denir.",
+     "cevap": "frekans"
+    },
+    {
+     "metin": "Geri çağırıcı kuvvetin sıfır olduğu O noktasına ___ denir.",
+     "cevap": "denge noktası"
+    }
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görseldeki Y gezegeni Güneş’i 1 yılda, X gezegeni ise 27 yılda bir kez dolanmaktadır. Y’nin ortalama yörünge yarıçapı R olduğuna göre X’inki kaç R’dir?",
+   "secenekler": [
+    "3",
+    "9",
+    "27",
+    "81"
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "Görseldeki eliptik yörüngede dolanan gezegen A ve B noktalarından hangisinde daha hızlıdır? Alanlar Kanunu’nu kullanarak kısaca açıklayınız.",
+   "cevap": "A noktasında; eşit sürede eşit alan taranması için Güneş’e yakınken daha uzun yay alınmalıdır.",
+   "satir": 2
+  },
+  {
+   "tur": "eslestir",
+   "duzey": "hatirla",
+   "soru": "Basit harmonik harekette kullanılan büyüklükleri SI birimleriyle eşleştiriniz.",
+   "ciftler": [
+    [
+     "Periyot (T)",
+     "saniye (s)"
+    ],
+    [
+     "Frekans (f)",
+     "hertz (Hz)"
+    ],
+    [
+     "Genlik (r)",
+     "metre (m)"
+    ],
+    [
+     "Açısal hız (ω)",
+     "radyan/saniye (rad/s)"
+    ]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Genliği 0,1 m olan basit harmonik harekette açısal hız ω = 10 rad/s’dir. Buna göre cismin en büyük hızı ile en büyük ivmesinin büyüklükleri aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "1 m/s ve 10 m/{us:s|2}",
+    "10 m/s ve 1 m/{us:s|2}",
+    "1 m/s ve 100 m/{us:s|2}",
+    "0,1 m/s ve 10 m/{us:s|2}"
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "sifre",
+   "duzey": "hatirla",
+   "soru": "İpuçlarına uyan kavramları yazınız. Turuncu kutulardaki harfler, Kepler’e göre gezegen yörüngelerinin biçimini verecektir.",
+   "satirlar": [
+    {
+     "ipucu": "Geri çağırıcı kuvvetin sıfır olduğu yer: … noktası (5 harf)",
+     "cevap": "DENGE",
+     "anahtar": 1
+    },
+    {
+     "ipucu": "Cismin iki uç nokta arasında gidip gelmesi (7 harf)",
+     "cevap": "SALINIM",
+     "anahtar": 2
+    },
+    {
+     "ipucu": "Uç noktalarda büyüklüğü en fazla olan, hızın değişim hızı (4 harf)",
+     "cevap": "İVME",
+     "anahtar": 0
+    },
+    {
+     "ipucu": "Bir tam salınım için geçen süre (7 harf)",
+     "cevap": "PERİYOT",
+     "anahtar": 0
+    },
+    {
+     "ipucu": "Oyun parkında ileri geri hareket eden araç (8 harf)",
+     "cevap": "SALINCAK",
+     "anahtar": 0
+    }
+   ],
+   "sonuc": "ELİPS"
+  },
+  {
+   "tur": "acik",
+   "duzey": "ust",
+   "soru": "Görseldeki cisim K noktasından O noktasına giderken hızının ve ivmesinin büyüklüğü nasıl değişir? Geri çağırıcı kuvvetle ilişkilendirerek açıklayınız.",
+   "cevap": "Hız artar, O’da en büyük olur. Geri çağırıcı kuvvet uzanımla orantılı olduğundan uzanım azaldıkça ivme azalır, O’da sıfırdır.",
+   "satir": 3
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görselde bir gezegenin yörüngesinde taradığı iki alan verilmiştir. Gezegen S alanını 1 ayda taradığına göre 2S alanını kaç ayda tarar?",
+   "secenekler": [
+    "4",
+    "{kesir:1|2}",
+    "2",
+    "1"
+   ],
+   "dogru": 2
+  },
+  {
+   "tur": "kisa",
+   "duzey": "hatirla",
+   "soru": "Uluğ Bey’in Semerkant’ta kurduğu rasathanede yaptığı gözlemlerle hazırlanan yıldız kataloğunun adı nedir?",
+   "cevap": "Zîc-i Uluğ Bey",
+   "satir": 1
+  }
+ ]
+}

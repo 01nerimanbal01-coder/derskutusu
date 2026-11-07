@@ -1,0 +1,250 @@
+{
+ "sinif": 12,
+ "ders": "matematik",
+ "hafta": 9,
+ "tarih": "9-13 Kasım 2026",
+ "yayin_tarihi": "2026-11-08",
+ "konu": "Geometrik Dizi, İlk n Terim Toplamı, Aritmetik-Geometrik Dizi İlişkisi ve Fibonacci Dizisi (12.2.1.3 & 12.2.1.4)",
+ "ciktilar": [
+  "Geometrik dizinin ortak çarpanını, genel terimini ve ilk n terim toplamını bulur.",
+  "Geometrik ortalamayı ve indis özelliklerini kullanarak diziler arası ilişkileri yorumlar.",
+  "Aritmetik, geometrik ve Fibonacci dizileriyle gerçek hayat problemlerini modeller."
+ ],
+ "hatirla": [
+  "Geometrik dizide {alt:a|n+1} = {alt:a|n} · r ve {alt:a|n} = {alt:a|1} · {us:r|n−1} = {alt:a|p} · {us:r|n−p} olur; m + n = p + k ise {alt:a|m} · {alt:a|n} = {alt:a|p} · {alt:a|k}.",
+  "r ≠ 1 için ilk n terim toplamı {alt:S|n} = {alt:a|1} · {kesir:{us:r|n} − 1|r − 1} bağıntısıyla bulunur. Terimleri eşit ve sıfırdan farklı bir dizide d = 0 ve r = 1 olduğundan dizi iki türe de girer.",
+  "Fibonacci dizisinde {alt:F|n+2} = {alt:F|n+1} + {alt:F|n}; sabit miktarda değişim aritmetik, sabit oranda değişim geometrik diziyle modellenir."
+ ],
+ "sorular": [
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görselde pozitif terimli bir geometrik dizinin bazı terimleri verilmiştir. Buna göre bu dizinin 7. terimi kaçtır?",
+   "secenekler": [
+    "96",
+    "192",
+    "384",
+    "128"
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "Tabloda ilk terimi ve ortak çarpanı verilen geometrik dizilerin eksik bilgilerini tamamlayınız.",
+   "basliklar": [
+    "{alt:a|1}",
+    "Ortak çarpan (r)",
+    "{alt:a|4}",
+    "Genel terim ({alt:a|n})"
+   ],
+   "satirlar": [
+    [
+     "5",
+     "3",
+     {
+      "b": "135"
+     },
+     {
+      "b": "5 · {us:3|n−1}"
+     }
+    ],
+    [
+     "64",
+     "{kesir:1|2}",
+     {
+      "b": "8"
+     },
+     {
+      "b": "{us:2|7−n}"
+     }
+    ],
+    [
+     "−2",
+     {
+      "b": "−2"
+     },
+     "16",
+     {
+      "b": "{us:(−2)|n}"
+     }
+    ]
+   ]
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "soru": "Geometrik dizilerle ilgili aşağıdaki ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+   "ifadeler": [
+    {
+     "metin": "1, −3, 9, −27, … dizisinin ortak çarpanı −3’tür.",
+     "dogru": true
+    },
+    {
+     "metin": "Her geometrik dizide {alt:a|2} · {alt:a|9} = {alt:a|5} · {alt:a|7} eşitliği sağlanır.",
+     "dogru": false
+    },
+    {
+     "metin": "Sıfırdan farklı her sabit dizi hem aritmetik hem de geometrik dizidir.",
+     "dogru": true
+    },
+    {
+     "metin": "Ortak çarpanı 1 olan geometrik dizinin ilk n terim toplamı {alt:a|1} · {kesir:{us:r|n} − 1|r − 1} bağıntısıyla bulunur.",
+     "dogru": false
+    }
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görselde kenar uzunlukları 1, 1, 2, 3, 5 ve 8 birim olan karelerle bir dikdörtgen oluşturulmuştur. Bu dikdörtgene aynı kuralla iki kare daha eklenirse oluşan yeni dikdörtgenin çevresi kaç birim olur?",
+   "secenekler": [
+    "84",
+    "68",
+    "110",
+    "136"
+   ],
+   "dogru": 2
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Bir okul kulübünün etkinlik duyurusu 1. gün 3 kişiye gönderiliyor. Grafikte görüldüğü gibi her gün, bir önceki gün gönderilen kişi sayısının 2 katı kadar yeni kişiye gönderiliyor. Buna göre 6 günün sonunda duyuru toplam kaç kişiye ulaşmış olur?",
+   "secenekler": [
+    "192",
+    "93",
+    "381",
+    "189"
+   ],
+   "dogru": 3
+  },
+  {
+   "tur": "bosluk",
+   "duzey": "hatirla",
+   "kelimeler": true,
+   "fazla": [
+    "ortak fark"
+   ],
+   "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız. Kutudaki bir kavram kullanılmayacaktır.",
+   "cumleler": [
+    {
+     "metin": "Ardışık terimlerinin oranı sabit olan dizide bu sabit sayıya ___ denir.",
+     "cevap": "ortak çarpan"
+    },
+    {
+     "metin": "4 ve 25 sayılarının ___ 10’dur.",
+     "cevap": "geometrik ortalama"
+    },
+    {
+     "metin": "Hem aritmetik hem geometrik olan bir dizi, sıfırdan farklı bir ___ olmalıdır.",
+     "cevap": "sabit dizi"
+    },
+    {
+     "metin": "Fibonacci dizisinde ardışık iki terimin oranı, yaklaşık 1,618 olan ___ değerine yaklaşır.",
+     "cevap": "altın oran"
+    }
+   ]
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "a, a + 6 ve 4a sayıları bu sırayla pozitif terimli bir geometrik dizinin ardışık üç terimidir. Buna göre a kaçtır?",
+   "cevap": "{us:(a + 6)|2} = a · 4a ⇒ a + 6 = 2a ⇒ a = 6 (terimler 6, 12, 24)",
+   "satir": 2
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "81 cm yükseklikten bırakılan bir top, görseldeki gibi her zıplayışında bir önceki yüksekliğin {kesir:2|3}’ü kadar yükseliyor. Buna göre top 4. zıplayışında kaç cm yükseliyor?",
+   "secenekler": [
+    "24",
+    "16",
+    "36",
+    "54"
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "eslestir",
+   "duzey": "hatirla",
+   "soru": "Genel terimi ya da indirgeme bağıntısı verilen dizileri uygun açıklamalarla eşleştiriniz.",
+   "ciftler": [
+    [
+     "{alt:a|n} = 3 · {us:2|n}",
+     "Ortak çarpanı 2 olan geometrik dizi"
+    ],
+    [
+     "{alt:a|n} = 2n + 3",
+     "Ortak farkı 2 olan aritmetik dizi"
+    ],
+    [
+     "{alt:a|n} = 7",
+     "Hem aritmetik hem geometrik dizi"
+    ],
+    [
+     "{alt:a|n+2} = {alt:a|n+1} + {alt:a|n}",
+     "Fibonacci dizisinin indirgeme bağıntısı"
+    ]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Ortak çarpanı r olan bir geometrik dizinin ilk n terim toplamı {alt:S|n} ile gösteriliyor. {kesir:{alt:S|6}|{alt:S|3}} = 28 olduğuna göre r kaçtır?",
+   "secenekler": [
+    "2",
+    "3",
+    "4",
+    "9"
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "sifre",
+   "duzey": "hatirla",
+   "soru": "İpuçlarına uyan kavramları yazınız. Turuncu kutulardaki harfler, geometrik dizide ardışık terimler arasında sabit kalan ilişkinin adını verecektir.",
+   "satirlar": [
+    {
+     "ipucu": "Her terimi kendinden önceki iki terimin toplamı olan dizi (9 harf)",
+     "cevap": "FİBONACCİ",
+     "anahtar": 3
+    },
+    {
+     "ipucu": "Geometrik dizide r ile gösterilen sabit: ortak … (6 harf)",
+     "cevap": "ÇARPAN",
+     "anahtar": 2
+    },
+    {
+     "ipucu": "Ortak farkı 0, ortak çarpanı 1 olan dizi: … dizi (5 harf)",
+     "cevap": "SABİT",
+     "anahtar": 1
+    },
+    {
+     "ipucu": "{alt:a|n} = {alt:a|1} · {us:r|n−1} bağıntısı: … terim (5 harf)",
+     "cevap": "GENEL",
+     "anahtar": 2
+    }
+   ],
+   "sonuc": "ORAN"
+  },
+  {
+   "tur": "acik",
+   "duzey": "ust",
+   "soru": "Bir ilçenin nüfusu her yıl bir önceki yılın nüfusuna göre %10 artıyor. Bugün 200 000 olan nüfusun 2 yıl sonra kaç olacağını bulunuz. Bu durumun neden aritmetik değil geometrik diziyle modellendiğini açıklayınız.",
+   "cevap": "Her yıl nüfus 1,1 ile çarpılır: 200 000 · {us:1,1|2} = 242 000. Artış miktarı değil artış oranı sabit olduğundan geometrik dizidir.",
+   "satir": 3
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görselde 4 ile 324 sayıları arasına üç pozitif sayı yerleştirilerek 5 terimli bir geometrik dizi oluşturulmuştur. Buna göre ortadaki terim kaçtır?",
+   "secenekler": [
+    "108",
+    "12",
+    "36",
+    "164"
+   ],
+   "dogru": 2
+  }
+ ]
+}
