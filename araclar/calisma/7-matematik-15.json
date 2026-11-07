@@ -1,0 +1,240 @@
+{
+  "sinif": 7,
+  "ders": "matematik",
+  "hafta": 15,
+  "tarih": "28 Aralık 2026-1 Ocak 2027",
+  "yayin_tarihi": "2026-12-26",
+  "konu": "Başkalarının İstatistiksel Sonuç ve Yorumlarını Tartışma: Yanlılık, Yanıltıcı Grafik ve Ölçü Seçimi",
+  "ciktilar": [
+    "MAT.7.6.2. Başkaları tarafından oluşturulan kategorik veya nicel (sürekli) veriye dayalı istatistiksel sonuç veya yorumları tartışabilme"
+  ],
+  "hatirla": [
+    "Bir iddia; örneklem, grafik ve seçilen ölçü incelenerek sayısal gerekçeyle kabul edilir, çürütülür ya da “bu veriyle karar verilemez” denir.",
+    "Kolayda örneklem, gönüllü katılım, yönlendirici soru, küçük örneklem ve tutarsız ölçüm sonucu bozar. Sütun grafiğinde eksen 0’dan başlamalıdır.",
+    "Uç değer varsa ortancaya bakılır. Farklı büyüklükteki gruplar oranla karşılaştırılır. %50’yi aşmayan kategori “çoğunluk” sayılmaz."
+  ],
+  "sorular": [
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görseldeki grafiğe bakan Deniz, “B fırını, A’nın 3 katı poğaça sattı.” diyor. Bu yorumla ilgili hangisi doğrudur?",
+      "secenekler": [
+        "Doğrudur; B’nin sütunu A’nınkinin 3 katıdır.",
+        "Yanlıştır; gerçek fark 12 poğaçadır.",
+        "Yanlıştır; eksen 200’den başlıyor, gerçek fark 8 poğaçadır.",
+        "Doğrudur; sütun boyları her zaman değerle orantılıdır."
+      ],
+      "dogru": 2,
+      "gorsel_var": true
+    },
+    {
+      "tur": "dy",
+      "duzey": "hatirla",
+      "soru": "Doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "“Bence yanlış.” demek istatistiksel temellendirmedir.",
+          "dogru": false
+        },
+        {
+          "metin": "Yalnız gönüllülerin katıldığı anketin örneklemi yanlı olabilir.",
+          "dogru": true
+        },
+        {
+          "metin": "Kategorik verilerde tepe değer kullanılır.",
+          "dogru": true
+        },
+        {
+          "metin": "“Her” ile kurulan iddiayı çürütmek için verilerin yarısı gerekir.",
+          "dogru": false
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "duzey": "hatirla",
+      "soru": "Durumları hata türleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "Okulun spor tercihini yalnız voleybol takımına sormak",
+          "Yanlı örneklem"
+        ],
+        [
+          "Sıcaklığı bir gün sabah, bir gün akşam ölçmek",
+          "Tutarsız ölçüm"
+        ],
+        [
+          "600 kişilik okul için 4 kişiye sormak",
+          "Çok küçük örneklem"
+        ],
+        [
+          "“Gürültülü teneffüslerin kısaltılmasını desteklemez misiniz?”",
+          "Yönlendirici soru"
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Görseldeki verilere göre yöneticinin yorumuyla ilgili hangisi doğrudur?",
+      "secenekler": [
+        "Ortalama yanlıştır; doğrusu 10 tondur.",
+        "Ortalama doğru ama 43 ton uç değerdir; ortanca 9,5 ton olduğundan yorum yanıltıcıdır.",
+        "Yorum doğrudur; tepe değer 15 tondur.",
+        "Yorum doğrudur; açıklık 35 tondur."
+      ],
+      "dogru": 1,
+      "gorsel_var": true
+    },
+    {
+      "tur": "tablo",
+      "duzey": "uygula",
+      "genislik": "tam",
+      "soru": "Kitap kulübü üye oranlarını yüzde olarak boş hücrelere yazınız. C satırı örnektir.",
+      "basliklar": [
+        "Okul",
+        "Öğrenci Sayısı",
+        "Üye Sayısı",
+        "Üye Oranı"
+      ],
+      "satirlar": [
+        [
+          "A",
+          "80",
+          "36",
+          {
+            "b": "%45"
+          }
+        ],
+        [
+          "B",
+          "150",
+          "54",
+          {
+            "b": "%36"
+          }
+        ],
+        [
+          "C",
+          "200",
+          "60",
+          "%30"
+        ],
+        [
+          "Sonuç",
+          "Sayıca en çok: C",
+          "Oranca en yüksek:",
+          {
+            "b": "A okulu"
+          }
+        ]
+      ]
+    },
+    {
+      "tur": "coktan",
+      "duzey": "ust",
+      "soru": "Ece, görseldeki tek seçimli anket için “Öğrencilerin çoğu simit tercih ediyor.” diyor. Hangisi doğrudur?",
+      "secenekler": [
+        "Kabul edilir; simit en büyük dilimdir.",
+        "Kabul edilir; simit 76, tost 68 kişidir.",
+        "Çürütülür; yüzdelerin toplamı %100’ü aşar.",
+        "Çürütülür; %38 yarıdan azdır, “en çok tercih edilen” denmeli."
+      ],
+      "dogru": 3,
+      "gorsel_var": true
+    },
+    {
+      "tur": "bosluk",
+      "duzey": "hatirla",
+      "soru": "Boşlukları uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Hakkında sonuç çıkarılmak istenen grubun tamamına ___ denir.",
+          "cevap": "evren"
+        },
+        {
+          "metin": "Verinin gerçekten toplandığı alt gruba ___ denir.",
+          "cevap": "örneklem"
+        },
+        {
+          "metin": "Farklı büyüklükteki gruplar sayıyla değil ___ ile karşılaştırılır.",
+          "cevap": "oran"
+        }
+      ],
+      "fazla": [
+        "ortalama"
+      ]
+    },
+    {
+      "tur": "kisa",
+      "duzey": "uygula",
+      "soru": "Görseldeki grafiğe göre “Bu hafta sıcaklık sürekli arttı.” iddiasını değerlendiriniz.",
+      "cevap": "Çürütülür; salıdan çarşambaya (8→5) ve perşembeden cumaya (7→4) düşüş var.",
+      "satir": 2,
+      "gorsel_var": true
+    },
+    {
+      "tur": "coktan",
+      "duzey": "uygula",
+      "soru": "Kantin fiyatlarıyla ilgili hangisi tarafsız bir anket sorusudur?",
+      "secenekler": [
+        "Kantin fiyatlarını nasıl buluyorsunuz? (Uygun / Normal / Pahalı)",
+        "Fahiş fiyatlardan şikâyetçi değil misiniz?",
+        "Herkesin bildiği gibi kantin pahalı, değil mi?",
+        "Uygun fiyatlı kantinimizi önerir misiniz?"
+      ],
+      "dogru": 0
+    },
+    {
+      "tur": "sifre",
+      "duzey": "hatirla",
+      "soru": "Kavramları bulunuz; renkli kutulardaki harfleri yukarıdan aşağı okuyunuz.",
+      "satirlar": [
+        {
+          "ipucu": "Sıfırdan başlamayan eksen: ___ eksen",
+          "cevap": "KESİK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Uç değerden etkilenmeyen ölçü",
+          "cevap": "ORTANCA",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Ölçme ile elde edilen veri türü",
+          "cevap": "NİCEL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Açıklık ve OMS: ___ ölçüleri",
+          "cevap": "YAYILIM",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "En çok tekrar eden: ___ değer",
+          "cevap": "TEPE",
+          "anahtar": 0
+        }
+      ],
+      "sonuc": "KANIT"
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "genislik": "tam",
+      "soru": "Görseldeki açıklamada iki hata belirtiniz, kararınızı yazınız ve nasıl yeniden planlanacağını açıklayınız.",
+      "cevap": "Örneklem yanlı ve küçüktür (20 sürücü); soru yönlendiricidir. Bu veriyle karar verilemez. Farklı sokaklardan rastgele seçilen yeterli sayıda sakine tarafsız soru sorulmalıdır.",
+      "satir": 3,
+      "gorsel_var": true
+    },
+    {
+      "tur": "acik",
+      "duzey": "ust",
+      "genislik": "tam",
+      "soru": "A makinesi: 498, 500, 500, 502, 500 mL; B makinesi: 480, 490, 500, 510, 520 mL doldurmuştur. “Ortalamalar 500 mL, iki makine eşit düzenlidir.” iddiasını açıklık ve OMS ile değerlendiriniz.",
+      "cevap": "Açıklık A: 4, B: 40 mL. OMS A: 0,8, B: 12 mL. İddia çürütülür; A daha düzenlidir.",
+      "satir": 3
+    }
+  ],
+  "yazan": "Claude API · calisma_api_uret.py · claude-opus-5-5"
+}

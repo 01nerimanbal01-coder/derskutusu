@@ -1064,7 +1064,8 @@ class Durdu(Exception):
 #    sonuçları işlenmiş istekler "toplanan" olarak işaretlenir ve bir daha işlenmez.
 #  - Süren ve içeriği bilinen bir istekteki dersler yeniden gönderilmez; diğer dersler hemen gönderilebilir.
 #  - İçeriği bilinmeyen süren bir istek varsa (durum dosyası kaydedilemeden yarıda kalmış çalıştırma) iki kez
-#    ödememek için yeni istek gönderilmez.
+#    ödememek için yeni istek gönderilmez. Başka botların kendi durum dosyasında (araclar/veri/*_toplu_durum.json)
+#    kayıtlı istekleri bilinmeyen sayılmaz, hiç işlenmez.
 #  - İş akışı iki saatte bir --topla ile kendiliğinden çalışır: biten isteklerin sonuçlarını yazar, denetime
 #    takılan ilk tur sonuçları için düzeltme turunu gönderir.
 
@@ -1096,6 +1097,21 @@ def durum_kaydet():
             toplanan.append(k)
     d['toplanan'] = toplanan[-500:]
     DURUM.write_text(json.dumps(d, ensure_ascii=False, indent=1, sort_keys=True) + '\n', encoding='utf-8')
+
+
+def baska_botlarin_istekleri():
+    """Başka botların (araclar/veri/*_toplu_durum.json, ör. çalışma kâğıdı botu) kayıtlı toplu istekleri. Aynı API
+    hesabını paylaştıkları için listede görünürler; bu bot onları işlemez ve "içeriği bilinmeyen" de saymaz."""
+    kimlikler = set()
+    for p in DURUM.parent.glob('*_toplu_durum.json'):
+        if p == DURUM:
+            continue
+        try:
+            v = json.loads(p.read_text(encoding='utf-8'))
+        except (OSError, ValueError):
+            continue
+        kimlikler |= set(v.get('gonderilen') or {}) | set(v.get('toplanan') or [])
+    return kimlikler
 
 
 def _ozel_kimlik(hafta, kimlik, tur):
@@ -1185,10 +1201,11 @@ def topla(client, args, ctx, sayac, bitis, butce, bekle_bilinmeyen, duzelt=True)
     t = {'yazilan': [], 'hata': [], 'bekleyen': set(), 'bilinmeyen': False}
     duzeltilecek, d_denendi, ayar = {}, set(), {}
     toplular = []
+    baska = baska_botlarin_istekleri()
     for b in _api(lambda: client.messages.batches.list(limit=50)):      # en yeni önce
         if b.created_at < sinir:
             break
-        if b.id not in d['toplanan']:
+        if b.id not in d['toplanan'] and b.id not in baska:
             toplular.append(b)
     # önce bitmiş istekler: aynı derslerin süren kopyası aynı turda iptal edilebilsin
     toplular.sort(key=lambda b: b.processing_status != 'ended')

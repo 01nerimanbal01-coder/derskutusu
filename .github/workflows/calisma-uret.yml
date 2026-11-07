@@ -1,0 +1,275 @@
+name: Çalışma kâğıtlarını Claude API ile üret
+
+# Elle çalıştırılır: Actions → "Çalışma kâğıtlarını Claude API ile üret" → Run workflow (KURULUM.md → "Claude API ile çalışma kâğıdı").
+# Özeti olup kâğıdı olmayan birimler (<sınıf>-<ders>-<hafta>) plan tarihine göre sırayla üretilir; var olan kâğıt atlanır.
+# Her kâğıt: şema/tür denetimi → basım (iki PDF ikişer sayfa, KISA ve TAŞMA yok) → gözle denetim (sayfa PNG'leri Claude'a)
+# → gerekirse bir düzeltme turu. İki saatte bir (dakika 11; özet botu 41'de) kendiliğinden toplayıcı çalışır: biten toplu
+# isteklerin sonuçlarını ödemeden yazar, gözle denetim ve düzeltme turlarını gönderir, kâğıtları yayımlar.
+# Kayıtlar: araclar/veri/calisma_toplu_durum.json (gönderilen istekler), araclar/veri/calisma_taslak/ (gözle denetim bekleyen).
+on:
+  workflow_dispatch:
+    inputs:
+      haftalar:
+        description: 'Haftalar (ör. 9-16 ya da 9,11). Boşsa bütün haftalar'
+        required: false
+        default: ''
+      siniflar:
+        description: 'Sınıflar (ör. 5-8). Boşsa hepsi'
+        required: false
+        default: ''
+      dersler:
+        description: 'Dersler, virgülle: ders adı (matematik) ya da sınıf-ders (7-turkce). Boşsa hepsi'
+        required: false
+        default: ''
+      en_cok:
+        description: 'En çok kaç kâğıt (plan tarihine göre önce gelenler; 0 = sınırsız)'
+        required: true
+        default: '20'
+      yontem:
+        description: 'toplu = yarı fiyat, sonuç birkaç saat içinde (en geç 24 saat); anlik = hemen, iki kat fiyat'
+        type: choice
+        options:
+          - toplu
+          - anlik
+        default: toplu
+      model:
+        description: 'Model (Sonnet yaklaşık yarı fiyatına)'
+        type: choice
+        options:
+          - claude-opus-5-5
+          - claude-sonnet-5-5
+        default: claude-opus-5-5
+      caba:
+        description: 'Düşünme derinliği (medium daha ucuz)'
+        type: choice
+        options:
+          - medium
+          - high
+        default: medium
+      butce:
+        description: 'Bu çalıştırmada en çok harcanacak tutar (USD)'
+        required: true
+        default: '20'
+  schedule:
+    - cron: '11 */2 * * *'
+
+permissions:
+  contents: write
+  actions: write      # üretimden sonra yayın iş akışını başlatmak için
+
+# Elle başlatılan çalıştırma ile toplayıcı aynı anda çalışmaz: ikisi de aynı toplu isteklerin sonuçlarını işler.
+concurrency:
+  group: calisma-uret
+  cancel-in-progress: false
+
+env:
+  PYTHONWARNINGS: 'ignore::SyntaxWarning'
+
+jobs:
+  uret:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      # Olay anındaki eski commit değil, dalın en güncel hali: önceki çalıştırmanın kâğıtlarına ve kayıtlarına ikinci kez para ödenmez.
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Gerekli paketler
+        run: |
+          pip install --quiet 'anthropic>=2.3' pillow pypdf fonttools pymupdf
+          google-chrome --version
+          echo "CHROME_PATH=$(command -v google-chrome)" >> "$GITHUB_ENV"
+
+      - name: Kâğıtları üret
+        id: uret
+        timeout-minutes: 300
+        continue-on-error: true     # süre dolsa da sonraki adımlar ödenmiş çıktıyı yedekler ve yayımlar
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          HAFTALAR: ${{ inputs.haftalar }}
+          SINIFLAR: ${{ inputs.siniflar }}
+          DERSLER: ${{ inputs.dersler }}
+          EN_COK: ${{ inputs.en_cok }}
+          YONTEM: ${{ inputs.yontem }}
+          MODEL: ${{ inputs.model }}
+          CABA: ${{ inputs.caba }}
+          BUTCE: ${{ inputs.butce }}
+          ANA_DAL: ${{ github.event.repository.default_branch }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" != "schedule" ] && [ "$YONTEM" = "toplu" ] && [ "$GITHUB_REF_NAME" != "$ANA_DAL" ]; then
+            # toplu istek kayıtları dal başına tutulur, toplayıcı yalnız ana dalda çalışır: sonuçlar karışmasın
+            echo "::error::Toplu kip yalnız $ANA_DAL dalında çalıştırılabilir; deneme dalında anlik kipi kullanın."; exit 1
+          fi
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+              echo "ANTHROPIC_API_KEY yok; toplayıcı atlandı."; echo "kod=0" >> "$GITHUB_OUTPUT"; exit 0
+            fi
+            echo "::error::ANTHROPIC_API_KEY gizli anahtarı yok (KURULUM.md → Claude API kredisiyle özet üretme)"; exit 1
+          fi
+          git config user.name "calisma-botu"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          set +e
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+            # toplayıcı yalnız gözle denetim ve düzeltme turları için harcar; kayıtlar gönderilir gönderilmez dala yazılır
+            ARG=(--topla --butce 10 --model claude-opus-5-5 --caba medium --sure-dk 90 --durum-gonder)
+          else
+            # toplu kipte gönderip bir saat beklenir; bitmeyenleri toplayıcı yazar. Anlık kipte açık istekler ve düzeltmeler için pay
+            if [ "$YONTEM" = "toplu" ]; then ARG=(--toplu --sure-dk 60 --durum-gonder); else ARG=(--sure-dk 250 --paralel 3); fi
+            ARG+=(--model "$MODEL" --caba "$CABA" --butce "$BUTCE" --en-cok "${EN_COK:-0}")
+            if [ -n "$HAFTALAR" ]; then ARG+=(--haftalar "$HAFTALAR"); fi
+            if [ -n "$SINIFLAR" ]; then ARG+=(--siniflar "$SINIFLAR"); fi
+            if [ -n "$DERSLER" ]; then ARG+=(--dersler "$DERSLER"); fi
+          fi
+          python araclar/calisma_api_uret.py "${ARG[@]}" 2>&1 | tee "$RUNNER_TEMP/uretim.log"
+          echo "kod=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      # Kâğıt JSON'u, görsel modülü, gözle denetim bekleyen taslaklar ve toplu istek kaydı parası ödenmiş çıktıdır:
+      # derleme ya da gönderim başarısız olsa, çalıştırma iptal edilse bile kaybolmasın diye yedeklenir.
+      - name: Üretilen dosyaları yedekle
+        id: yedek
+        if: always()
+        run: |
+          {
+            if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then echo "### Toplu istek sonuçlarının toplanması"; else echo "### Çalışma kâğıdı üretimi"; fi
+            echo '```'
+            tail -n 60 "$RUNNER_TEMP/uretim.log" 2>/dev/null || echo "üretim günlüğü yok"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          Y="$RUNNER_TEMP/uretim"; mkdir -p "$Y"
+          git add -A araclar/calisma araclar/calisma_gorseller
+          git diff --cached --name-only --diff-filter=A > "$RUNNER_TEMP/yeni.txt"
+          git reset -q
+          echo "adet=$(grep -c '^araclar/calisma/.*\.json$' "$RUNNER_TEMP/yeni.txt" || true)" >> "$GITHUB_OUTPUT"
+          if [ -s "$RUNNER_TEMP/yeni.txt" ]; then
+            tar czf "$Y/kaynak.tgz" -T "$RUNNER_TEMP/yeni.txt"
+          fi
+          D=araclar/veri/calisma_toplu_durum.json
+          T=araclar/veri/calisma_taslak
+          if [ -n "$(git status --porcelain --untracked-files=all -- "$D" "$T")" ]; then
+            if [ -f "$D" ]; then cp "$D" "$Y/calisma_toplu_durum.json"; fi
+            mkdir -p "$T"
+            tar czf "$Y/taslak.tgz" -C araclar/veri calisma_taslak
+            echo "durum=1" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/upload-artifact@v6
+        if: always() && ((steps.yedek.outputs.adet != '' && steps.yedek.outputs.adet != '0') || steps.yedek.outputs.durum == '1')
+        with:
+          name: calisma-${{ github.event_name == 'schedule' && 'toplayici' || 'uretim' }}-${{ github.run_id }}
+          path: ${{ runner.temp }}/uretim/
+          retention-days: 30
+
+      # Üretim saatler sürebilir; bu sırada başka botlar dala yazmış olabilir. Her denemede en güncel dal alınır, yeni kâğıtlar
+      # üstüne konur, sayfaları ve PDF'leri calisma_uret.py ile basılır, commit edilir, pull --rebase --autostash ile gönderilir.
+      # Katalogda (icerikler.json, sitemap.xml) çakışma olursa rebase bırakılır ve katalog en güncel dal üzerinde yeniden üretilir.
+      - name: Bas, kaydet ve yayına gönder
+        if: ${{ !cancelled() && ((steps.yedek.outputs.adet != '' && steps.yedek.outputs.adet != '0') || steps.yedek.outputs.durum == '1') }}
+        env:
+          YENI: ${{ steps.yedek.outputs.adet }}
+          GH_TOKEN: ${{ github.token }}
+          ANA_DAL: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name "calisma-botu"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          Y="$RUNNER_TEMP/uretim"
+          D=araclar/veri/calisma_toplu_durum.json
+          T=araclar/veri/calisma_taslak
+          # bu iş akışının çalıştırmaları sıraya girer; kayıtları yalnız onlar yazar, son hali bu çalıştırmanınkidir
+          kayit_koy() {
+            if [ -f "$Y/calisma_toplu_durum.json" ]; then cp "$Y/calisma_toplu_durum.json" "$D"; fi
+            if [ -f "$Y/taslak.tgz" ]; then rm -rf "$T"; tar xzf "$Y/taslak.tgz" -C araclar/veri; fi
+          }
+          for deneme in 1 2 3 4; do
+            git fetch -q origin "$GITHUB_REF_NAME"
+            git reset -q --hard "origin/$GITHUB_REF_NAME"
+            kayit_koy
+            ADLAR=()
+            if [ "${YENI:-0}" != "0" ]; then
+              tar xzf "$Y/kaynak.tgz" --skip-old-files       # bu arada dala gelmiş kâğıdın üzerine yazılmaz
+              mapfile -t ADLAR < <(git status --porcelain --untracked-files=all -- araclar/calisma | sed -n 's|^?? araclar/calisma/\(.*\)\.json$|\1|p')
+            fi
+            if [ "${#ADLAR[@]}" -gt 0 ]; then
+              if ! python araclar/calisma_uret.py "${ADLAR[@]}" 2>&1 | tee "$RUNNER_TEMP/basim.log"; then
+                # basım başarısız: sayfalar yayımlanmaz ama parası ödenmiş kaynak dosyalar kaybolmasın
+                git reset -q --hard "origin/$GITHUB_REF_NAME"
+                tar xzf "$Y/kaynak.tgz" --skip-old-files
+                kayit_koy
+                git add -A araclar/calisma araclar/calisma_gorseller "$D" "$T"
+                git commit -q -m "Çalışma kâğıdı kaynakları (basım başarısız; sayfalar elle basılmalı)" || true
+                git push -q origin "HEAD:$GITHUB_REF_NAME" || true
+                echo "::error::calisma_uret.py başarısız; kaynak dosyalar kaydedildi, sayfalar yayımlanmadı."
+                exit 1
+              fi
+              git add -A araclar/calisma araclar/calisma_gorseller "$D" "$T" public
+              git commit -q -m "${#ADLAR[@]} çalışma kâğıdı Claude API ile üretildi: ${ADLAR[*]}"
+            else
+              git add -A "$D" "$T"
+              if git diff --cached --quiet; then echo "Kaydedilecek değişiklik yok."; exit 0; fi
+              git commit -q -m "Çalışma kâğıdı toplu istek kayıtları güncellendi"
+            fi
+            gonderildi=0
+            if git push -q origin "HEAD:$GITHUB_REF_NAME"; then
+              gonderildi=1
+            elif git pull -q --rebase --autostash origin "$GITHUB_REF_NAME"; then
+              git push -q origin "HEAD:$GITHUB_REF_NAME" && gonderildi=1
+            else
+              git rebase --abort 2>/dev/null || true
+              echo "Katalog ya da kayıt çakışması; $deneme. deneme: en güncel dal üzerinde yeniden basılıyor."
+            fi
+            if [ "$gonderildi" = "1" ]; then
+              if [ "${#ADLAR[@]}" -eq 0 ]; then echo "Toplu istek kayıtları kaydedildi." | tee -a "$GITHUB_STEP_SUMMARY"; exit 0; fi
+              if [ "$GITHUB_REF_NAME" = "$ANA_DAL" ]; then
+                echo "${#ADLAR[@]} çalışma kâğıdı kaydedildi ve yayına gönderildi." | tee -a "$GITHUB_STEP_SUMMARY"
+                # GITHUB_TOKEN ile yapılan push başka iş akışını tetiklemez; yayını elle başlat
+                gh workflow run guncelle.yml --ref "$GITHUB_REF_NAME"
+              else
+                echo "${#ADLAR[@]} çalışma kâğıdı $GITHUB_REF_NAME dalına kaydedildi; dal ana dala birleşince yayımlanır." | tee -a "$GITHUB_STEP_SUMMARY"
+              fi
+              exit 0
+            fi
+            sleep $((deneme * 15))
+          done
+          echo "::error::Gönderilemedi. Üretilen dosyalar ve kayıtlar bu çalıştırmanın Artifacts bölümünde duruyor."
+          exit 1
+
+      # İptal edilen ya da süresi dolan çalıştırma: kayıtlar ve ödenmiş kaynak dosyalar kaybolmasın (kayıt olmazsa süren istek
+      # "bilinmeyen" sayılır ve yeni gönderimi durdurur). Sayfalar basılmaz; sonraki çalıştırmada elle basılır.
+      - name: İptalde kayıtları ve kaynak dosyaları kaydet
+        if: ${{ cancelled() && ((steps.yedek.outputs.adet != '' && steps.yedek.outputs.adet != '0') || steps.yedek.outputs.durum == '1') }}
+        run: |
+          git config user.name "calisma-botu"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          Y="$RUNNER_TEMP/uretim"
+          for _ in 1 2 3; do
+            git fetch -q origin "$GITHUB_REF_NAME"
+            git reset -q --hard "origin/$GITHUB_REF_NAME"
+            if [ -s "$Y/kaynak.tgz" ]; then tar xzf "$Y/kaynak.tgz" --skip-old-files; fi
+            if [ -f "$Y/calisma_toplu_durum.json" ]; then cp "$Y/calisma_toplu_durum.json" araclar/veri/calisma_toplu_durum.json; fi
+            if [ -f "$Y/taslak.tgz" ]; then rm -rf araclar/veri/calisma_taslak; tar xzf "$Y/taslak.tgz" -C araclar/veri; fi
+            git add -A araclar/calisma araclar/calisma_gorseller araclar/veri/calisma_toplu_durum.json araclar/veri/calisma_taslak
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -q -m "İptal edilen çalışma kâğıdı çalıştırmasının kayıtları ve kaynak dosyaları"
+            if git push -q origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
+            sleep 10
+          done
+          echo "::error::Kayıtlar gönderilemedi; bu çalıştırmanın Artifacts bölümünde duruyor."
+          exit 1
+
+      - name: Hatalı ya da bekleyen kâğıt varsa bildir
+        if: ${{ !cancelled() }}
+        env:
+          KOD: ${{ steps.uret.outputs.kod }}
+        run: |
+          if [ "$KOD" != "0" ]; then
+            if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+              echo "::warning::Toplayıcı tamamlanamadı (ör. kredi bitti ya da anahtar geçersiz); ayrıntı özet sayfasında."
+            else
+              echo "::warning::Bazı kâğıtlar üretilemedi ya da bütçe/süre doldu; ayrıntı özet sayfasında. Aynı seçimle yeniden çalıştırın, kalanlar üretilir."
+            fi
+            exit 1
+          fi

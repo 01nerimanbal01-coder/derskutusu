@@ -68,6 +68,18 @@ Maliyet (bir özet ortalama 34 bin jeton girdi, 58 bin jeton çıktı; çıktın
 | Opus 5.5, medium, toplu (varsayılan) | tahminen 0,5-0,8 $ | tahminen 50-80 $ |
 | Sonnet 5.5, medium, toplu | tahminen 0,25-0,4 $ | tahminen 25-40 $ |
 
+## Claude API ile çalışma kâğıdı
+Aynı API kredisi ve aynı `ANTHROPIC_API_KEY` ile haftalık çalışma kâğıtları üretilir (`araclar/calisma_api_uret.py`). Bir birim = bir kâğıt (`<sınıf>-<ders>-<hafta>`); özeti yayımlanmış olup kâğıdı olmayan birimler plan tarihine göre sırayla üretilir, var olan kâğıt atlanır.
+
+Çalıştırma: GitHub → **Actions → Çalışma kâğıtlarını Claude API ile üret → Run workflow**.
+- `haftalar` (ör. `9-16`), `siniflar` (ör. `5-8`), `dersler` (ör. `matematik,7-turkce`) boş kalırsa hepsi; `en_cok` en çok kaç kâğıt (varsayılan 20).
+- `toplu` yarı fiyattır (yalnız `main`); `anlik` hemen yanıtlanır, deneme dalında da çalışır.
+- Her kâğıt: şema ve tür denetimi (12-14 soru, şıklar, şifre anahtarı, düzey), SVG geçerliliği, atıf ve yatay kesir yasağı, önceki haftalarla 5-gram örtüşme → `calisma_uret.py` ile basım (iki PDF de tam 2 sayfa, 2. sayfada KISA boşluk yok, TAŞMA 0) → basılan dört sayfanın PNG'si Claude'a gösterilir (gözle denetim). Takılan kâğıda bir düzeltme turu yapılır; yine takılırsa yayımlanmaz, sonraki çalıştırmada yeniden denenir.
+- İki saatte bir (dakika 11; özet botu 41'de) toplayıcı biten toplu isteklerin sonuçlarını ödemeden işler, gözle denetim ve düzeltme turlarını gönderir, kâğıtları basıp yayımlar.
+- Kayıtlar: `araclar/veri/calisma_toplu_durum.json` (gönderilen istekler; özet botununkinden ayrı, iki bot birbirinin isteğini "bilinmeyen" saymaz) ve `araclar/veri/calisma_taslak/` (gözle denetim bekleyen kâğıtlar). Elle değiştirilmez. Aynı kâğıt süren bir istekteyken ya da taslağı varken yeniden gönderilmez.
+- Maliyet (07.11.2026 ölçümü, 7-matematik-15, Opus 5.5 medium, anlık): ilk tur + düzeltme turu + gözle denetim = 3 istek, 1,04 $ (girdi 75 bin, çıktı 35 bin jeton). Toplu kipte bunun yarısı: kâğıt başına tahminen 0,3-0,5 $ (düzeltmesiz kâğıtta daha az).
+- Yerelde: `python3 araclar/calisma_api_uret.py --haftalar 9-16 --liste` (eksikler), `--kuru` (API'siz prova: önceki haftanın kâğıdını bu haftanınmış gibi denetler ve basar, geçici klasöre yazar), `--toplu`, `--topla`. Sınamalar: `python3 -m unittest araclar/test_calisma_api_uret.py`.
+
 ## Bilinmesi gerekenler
 - Depoda 60 gün hiç etkinlik olmazsa GitHub zamanlanmış çalışmayı durdurur ve e-postayla haber verir; Actions sekmesinden yeniden açılır.
 - Alan adlarının süresi 28.09.2027'de doluyor. Yenilemeden önce daha ucuz bir firmaya taşınması düşünülmeli.

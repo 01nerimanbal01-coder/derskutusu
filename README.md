@@ -26,6 +26,7 @@ Site GitHub Pages'te yayımlanır; `main` dalına gelen her değişiklik birkaç
 | Ders slaytı tarayıcı kontrolü | Sunum, etkinlik, kalem ve dar ekran davranışını Chromium ve WebKit'te sınar |
 | Kategori önizlemesi | Ders kapsamını ve kategori sayfalarını denetler |
 | Haftalık özetleri Claude API ile üret | Elle başlatılır; seçilen haftanın konu özetlerini, görsellerini ve sosyal medya kartlarını Max planının API kredisiyle üretir. İki saatte bir de kendiliğinden çalışıp biten toplu isteklerin sonuçlarını yazar ve yayımlar |
+| Çalışma kâğıtlarını Claude API ile üret | Elle başlatılır; özeti olup çalışma kâğıdı olmayan haftaları (hafta, sınıf, ders süzgeçli) API kredisiyle üretir, basar, sayfaları Claude'a gözle denetletir. İki saatte bir (dakika 11) kendiliğinden toplu isteklerin sonuçlarını toplar ve yayımlar |
 
 ## Yerelde önizleme
 
