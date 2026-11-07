@@ -1,0 +1,116 @@
+name: Sekiz Kapı denetimi
+
+# Site, sorular ve kitapçıklar sekiz kapıdan geçer (araclar/sekiz_kapi.py). Ana dala gelen her değişiklikte ve
+# her çekme isteğinde çalışır; pazar sabahı canlı siteyle birlikte tam denetim yapar ve kapalı kapı varsa
+# "sekiz-kapi" etiketli bir issue açar (depo sahibine e-posta gider), açılınca kapatır.
+# Rapor: çalıştırmanın Summary sayfası ve Artifacts → sekiz-kapi-sonuc (rapor.md, rapor.json, yerlesim.json, ekran görüntüleri).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'araclar/**'
+      - 'public/**'
+      - 'tests/**'
+      - 'sosyal/**'
+      - '.github/workflows/sekiz-kapi.yml'
+  pull_request:
+    paths:
+      - 'araclar/**'
+      - 'public/**'
+      - 'tests/**'
+      - 'sosyal/**'
+      - '.github/workflows/sekiz-kapi.yml'
+  schedule:
+    - cron: '23 3 * * 0'   # pazar 06.23 TSİ: tam denetim + canlı site
+  workflow_dispatch:
+    inputs:
+      canli:
+        description: 'Canlı siteyi de denetle (8. kapı)'
+        type: boolean
+        default: true
+      hizli:
+        description: 'Hızlı kip (PDF binme taraması yok, tarayıcıda az sayfa)'
+        type: boolean
+        default: false
+      kapi:
+        description: 'Yalnız bu kapılar, virgülle (ör. 2,3,5); boş = hepsi'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: sekiz-kapi-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  denetim:
+    # ubuntu-latest (26.04) Playwright 1.56.1 tarafından desteklenmiyor ("does not support chromium on ubuntu26.04");
+    # tarayıcı kurulabilen son sürüme sabitlendi.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Denetim araçlarını kur (poppler-utils, Playwright Chromium)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          npm install --prefix "$RUNNER_TEMP/sekiz-kapi" --no-save --package-lock=false --ignore-scripts --no-audit --no-fund @playwright/test@1.56.1
+          "$RUNNER_TEMP/sekiz-kapi/node_modules/.bin/playwright" install --with-deps chromium
+
+      - name: Sekiz kapıdan geçir
+        id: denetim
+        continue-on-error: true    # rapor ve issue adımları her durumda çalışsın; sonuç en sonda verilir
+        env:
+          NODE_PATH: ${{ runner.temp }}/sekiz-kapi/node_modules
+          CANLI: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.canli) }}
+          HIZLI: ${{ github.event_name == 'workflow_dispatch' && inputs.hizli }}
+          KAPI: ${{ inputs.kapi }}
+        run: |
+          ARG=(--rapor sekiz-kapi-sonuc --ayrinti 40)
+          if [ "$CANLI" = "true" ]; then ARG+=(--canli --derin); fi
+          if [ "$HIZLI" = "true" ]; then ARG+=(--hizli); fi
+          if [ -n "$KAPI" ]; then ARG+=(--kapi "$KAPI"); fi
+          python3 araclar/sekiz_kapi.py "${ARG[@]}"
+
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: sekiz-kapi-sonuc
+          path: sekiz-kapi-sonuc/
+          retention-days: 30
+
+      - name: Pazar denetiminde issue aç, güncelle ya da kapat
+        if: github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DURUM: ${{ steps.denetim.outputs.durum }}
+          KAPALI: ${{ steps.denetim.outputs.kapali }}
+        run: |
+          gh label create sekiz-kapi --color B60205 --description "Sekiz Kapı denetimi" --force >/dev/null
+          acik=$(gh issue list --label sekiz-kapi --state open --json number --jq '.[0].number')
+          if [ "$DURUM" = "kapali" ]; then
+            { echo "Kapalı kapılar: $KAPALI · çalıştırma: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"; echo; head -c 60000 sekiz-kapi-sonuc/rapor.md; } > govde.md
+            if [ -z "$acik" ]; then gh issue create --label sekiz-kapi --title "Sekiz Kapı: kapalı kapı var ($KAPALI)" --body-file govde.md
+            else gh issue edit "$acik" --title "Sekiz Kapı: kapalı kapı var ($KAPALI)" --body-file govde.md; fi
+          elif [ -n "$acik" ]; then
+            gh issue close "$acik" --comment "Giderildi; son denetimde bütün kapılar açık."
+          fi
+
+      - name: Sonuç
+        if: steps.denetim.outcome != 'success'
+        run: |
+          echo "::error::Sekiz Kapı denetiminde kapalı kapı var; ayrıntı yukarıdaki özet ve sekiz-kapi-sonuc artifact'ında."
+          exit 1

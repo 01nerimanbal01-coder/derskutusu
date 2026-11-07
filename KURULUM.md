@@ -68,6 +68,27 @@ Maliyet (bir özet ortalama 34 bin jeton girdi, 58 bin jeton çıktı; çıktın
 | Opus 5.5, medium, toplu (varsayılan) | tahminen 0,5-0,8 $ | tahminen 50-80 $ |
 | Sonnet 5.5, medium, toplu | tahminen 0,25-0,4 $ | tahminen 25-40 $ |
 
+## Sekiz Kapı denetimi
+`python3 araclar/sekiz_kapi.py` siteyi, soruları ve kitapçıkları sekiz kapıdan geçirir; bir kapıda hata varsa kapı "KAPALI" sayılır ve çıkış kodu 1 olur. Rapor `sekiz-kapi-sonuc/` klasörüne yazılır (`rapor.md`, `rapor.json`, tarayıcı ölçümleri `yerlesim.json` ve ekran görüntüleri).
+
+| Kapı | Ne denetler |
+|---|---|
+| 1. Yayın denetimi | Özet şeması, düz kök/çözülmemiş gösterim, kesir söz dizimi, HTML–katalog–sitemap senkronu (`yayin_denetle.py`) |
+| 2. Soru bütünlüğü | Özet etkinlikleri ve örnekleri, çalışma kâğıdı ve KPSS soruları: boş metin, aynı seçenek iki kez, doğru cevap aralık dışı, çeldirici = cevap, şifre/tablo tutarlılığı; ASDS cevap anahtarı uzunlukları |
+| 3. Tekrar ve çakışma | Aynı dosyada aynı soru; haftalar arası kopya (3+ ortak soru = hata); dosya adı ile içerik uyuşmazlığı; katalog, sitemap, sosyal kuyruk ve ASDS anahtar tekrarları |
+| 4. Bağlantı ve dosya | Bütün HTML sayfalarındaki iç bağlantı ve kaynaklar; icerikler/belgeler/yazılı/ASDS/KPSS/plan/kuyruk kayıtlarının işaret ettiği dosyalar; sitemap; `node --check` ile JS söz dizimi |
+| 5. PDF kitapçıklar | Her PDF açılıyor mu, sayfa sayısı (ASDS 24 / cevaplı 25), cevaplı sürüm var mı; site üretimi PDF'lerde (asds, yazili, calisma, kpss) üst üste binen kelimeler (`pdftotext -bbox`) |
+| 6. Yerleşim | Gerçek Chromium'da 1366/768/360 px: yatay taşma, üst üste binen metin, sayfa betiği hatası, yüklenemeyen kaynak (`tests/sekiz-kapi-yerlesim.cjs`) |
+| 7. Veri tutarlılığı | JSON geçerliliği; katalog alanları (sınıf, ders, tür, tarih); ASDS toplamları; yazılı tabloları; kelime listeleri; sosyal kuyruk ve kartlar |
+| 8. Canlı site | Yalnız `--canli`: derskutusu.com sayfaları, DNS, sertifika, alan adı, yayın güncelliği (`nobetci.py`); `--derin` ile site haritası ve dış bağlantılar |
+
+Seçenekler: `--hizli` (yayın denetimi hızlı, PDF binme taraması yok, tarayıcıda az sayfa), `--kapi 2,3,5` (yalnız seçilenler), `--canli`, `--tarayicisiz`, `--rapor KLASOR`, `--ayrinti N`.
+
+Gerekenler: Python 3 (standart kütüphane). İsteğe bağlı: `poppler-utils` (pdfinfo/pdftotext; yoksa 5. kapı yalnız yapısal denetim yapar), Node 22 + Playwright Chromium (yoksa 6. kapı atlanır: `npm install @playwright/test && npx playwright install chromium`, ardından `NODE_PATH=node_modules`).
+
+- **Claude Code bulut oturumu:** `.claude/hooks/session-start.sh` her oturum başında bu araçları kendiliğinden hazırlar (poppler-utils, pypdf, bulut imajındaki Playwright sürümüyle `@playwright/test`); elle kurulum ve ortam ayarlarında "Kurulum betiği" gerekmez.
+- **GitHub:** `.github/workflows/sekiz-kapi.yml` ana dala her gönderimde ve çekme isteklerinde çalışır (rapor Summary sayfasında ve `sekiz-kapi-sonuc` artifact'ında); pazar 06.23'te canlı siteyle tam denetim yapar, kapalı kapı varsa `sekiz-kapi` etiketli issue açar, düzelince kapatır. Actions → "Sekiz Kapı denetimi" → Run workflow ile elle de başlatılır.
+
 ## Bilinmesi gerekenler
 - Depoda 60 gün hiç etkinlik olmazsa GitHub zamanlanmış çalışmayı durdurur ve e-postayla haber verir; Actions sekmesinden yeniden açılır.
 - Alan adlarının süresi 28.09.2027'de doluyor. Yenilemeden önce daha ucuz bir firmaya taşınması düşünülmeli.

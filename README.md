@@ -9,9 +9,10 @@ Sitede haftalık konu özetleri, etkileşimli etkinlikler, akıllı tahta için 
 | Klasör | İçerik |
 |---|---|
 | `public/` | Yayımlanan site: sayfalar, konu özetleri (`ozet/`), yazılılar, planlar, betikler ve veri dosyaları (`veri/`) |
-| `araclar/` | Sayfaları, özetleri ve site haritasını üreten Python betikleri; site denetimleri |
+| `araclar/` | Sayfaları, özetleri ve site haritasını üreten Python betikleri; site denetimleri (`sekiz_kapi.py`) |
 | `sosyal/` | Sosyal medya paylaşım kuyruğu ve görselleri |
-| `tests/` | Tarayıcıda çalışan otomatik denetimler (ders slaytı) |
+| `tests/` | Tarayıcıda çalışan otomatik denetimler (ders slaytı, yerleşim) |
+| `.claude/` | Claude Code bulut oturumu başlangıç kancası (denetim araçlarını kendiliğinden kurar) |
 | `.github/workflows/` | GitHub Actions iş akışları |
 
 ## Yayın ve otomatik işler
@@ -25,7 +26,18 @@ Site GitHub Pages'te yayımlanır; `main` dalına gelen her değişiklik birkaç
 | Sosyal medya paylaşımı | Onaylı kuyruktaki gönderileri paylaşır |
 | Ders slaytı tarayıcı kontrolü | Sunum, etkinlik, kalem ve dar ekran davranışını Chromium ve WebKit'te sınar |
 | Kategori önizlemesi | Ders kapsamını ve kategori sayfalarını denetler |
+| Sekiz Kapı denetimi | Ana dala her gönderimde ve çekme isteklerinde siteyi, soruları ve kitapçıkları sekiz kapıdan geçirir; pazar sabahı canlı siteyle tam denetim yapar, kapalı kapı varsa issue açar |
 | Haftalık özetleri Claude API ile üret | Elle başlatılır; seçilen haftanın konu özetlerini, görsellerini ve sosyal medya kartlarını Max planının API kredisiyle üretir. İki saatte bir de kendiliğinden çalışıp biten toplu isteklerin sonuçlarını yazar ve yayımlar |
+
+## Denetim: Sekiz Kapı
+
+Yayından önce site, sorular ve kitapçıklar sekiz kapıdan geçer (yayın denetimi, soru bütünlüğü, tekrar ve çakışma, bağlantı ve dosya, PDF kitapçıklar, tarayıcıda yerleşim, veri tutarlılığı, canlı site):
+
+```bash
+python3 araclar/sekiz_kapi.py --hizli
+```
+
+Tam denetim için `--hizli` kaldırılır; rapor `sekiz-kapi-sonuc/rapor.md` dosyasına yazılır. Ayrıntı: [KURULUM.md](KURULUM.md#sekiz-kapı-denetimi).
 
 ## Yerelde önizleme
 
