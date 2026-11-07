@@ -1,0 +1,235 @@
+{
+ "sinif": 10,
+ "ders": "fizik",
+ "hafta": 9,
+ "tarih": "9-13 Kasım 2026",
+ "yayin_tarihi": "2026-11-08",
+ "konu": "Mekanik Enerji: Öteleme Kinetik Enerjisi, Yer Çekimi ve Esneklik Potansiyel Enerjisi, Enerjinin Korunumu",
+ "ciktilar": [
+  "Öteleme kinetik enerjisini kütle ve süratle; yer çekimi potansiyel enerjisini ağırlık ve yükseklikle ilişkilendirir.",
+  "Yayda depolanan esneklik potansiyel enerjisini kuvvet-uzama grafiğinden ve yay sabitinden hesaplar.",
+  "Sürtünmesiz ortamda mekanik enerjinin korunduğunu, sürtünmeli ortamda bir kısmının ısıya dönüştüğünü hesaplamalarla gösterir."
+ ],
+ "hatirla": [
+  "Kinetik enerji: E{alt:k} = {kesir:1|2} · m · {us:v|2}; sürat iki katına çıkarsa enerji dört katına çıkar.",
+  "Yer çekimi potansiyel enerjisi: E{alt:p} = m · g · h; yay enerjisi: E{alt:p} = {kesir:1|2} · k · {us:x|2} (F-x grafiğinin altındaki alan).",
+  "Mekanik enerji E{alt:k} + E{alt:p} toplamıdır; sürtünme varsa kaybolan mekanik enerji kadar ısı açığa çıkar."
+ ],
+ "sorular": [
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki K ve L araçlarının öteleme kinetik enerjileri E{alt:K} ve E{alt:L}'dir. Buna göre {kesir:E{alt:K}|E{alt:L}} oranı kaçtır?",
+   "secenekler": [
+    "{kesir:1|2}",
+    "1",
+    "2",
+    "4"
+   ],
+   "dogru": 2
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "soru": "Enerjiyle ilgili aşağıdaki ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+   "ifadeler": [
+    {
+     "metin": "Enerji yönü olmayan, skaler bir büyüklüktür.",
+     "dogru": true
+    },
+    {
+     "metin": "Bir yayın yay sabiti, yaya uygulanan kuvvet arttıkça büyür.",
+     "dogru": false
+    },
+    {
+     "metin": "Sabit süratle giden bir cisim üzerinde yapılan net iş sıfırdır.",
+     "dogru": true
+    },
+    {
+     "metin": "Elektrik faturalarındaki kilowatt-saat bir güç birimidir.",
+     "dogru": false
+    }
+   ]
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "Tablodaki cisimlerin eksik kütle, sürat ve kinetik enerji değerlerini hesaplayarak yazınız.",
+   "basliklar": [
+    "Cisim",
+    "Kütle (kg)",
+    "Sürat (m/s)",
+    "E{alt:k} (J)"
+   ],
+   "satirlar": [
+    [
+     "P",
+     "2",
+     "3",
+     {
+      "b": "9"
+     }
+    ],
+    [
+     "R",
+     "4",
+     {
+      "b": "5"
+     },
+     "50"
+    ],
+    [
+     "S",
+     {
+      "b": "1"
+     },
+     "4",
+     "8"
+    ],
+    [
+     "T",
+     "6",
+     "2",
+     {
+      "b": "12"
+     }
+    ]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki masada duran 2 kg kütleli türdeş kutu için yer seviyesi referans alınırsa kutunun yer çekimi potansiyel enerjisi kaç J olur? (g = 10 m/s²)",
+   "secenekler": [
+    "16",
+    "20",
+    "24",
+    "40"
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görselde bir yayın kuvvet-uzama grafiği verilmiştir. Yay 0,2 m uzatıldığında yayda depolanan enerji ve yayın yay sabiti hangisinde doğru verilmiştir?",
+   "secenekler": [
+    "4 J ve 200 N/m",
+    "8 J ve 200 N/m",
+    "4 J ve 8 N/m",
+    "8 J ve 400 N/m"
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "bosluk",
+   "duzey": "hatirla",
+   "kelimeler": true,
+   "fazla": [
+    "güç"
+   ],
+   "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız. Kutudaki bir kavram kullanılmayacaktır.",
+   "cumleler": [
+    {
+     "metin": "Hareket hâlindeki bir cismin sahip olduğu enerji ___ enerjidir.",
+     "cevap": "kinetik"
+    },
+    {
+     "metin": "Gerilen bir paket lastiğinde depolanan enerji esneklik ___ enerjisidir.",
+     "cevap": "potansiyel"
+    },
+    {
+     "metin": "Kinetik ve potansiyel enerjilerin toplamına ___ enerji denir.",
+     "cevap": "mekanik"
+    },
+    {
+     "metin": "Sürtünmeli yolda kayan cismin kaybettiği mekanik enerji ___ enerjisine dönüşür.",
+     "cevap": "ısı"
+    }
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görseldeki sürtünmesiz yolun K noktasından durgun hâlde bırakılan cisim L noktasından kaç m/s süratle geçer?",
+   "secenekler": [
+    "4",
+    "6",
+    "8",
+    "10"
+   ],
+   "dogru": 2
+  },
+  {
+   "tur": "siralama",
+   "duzey": "uygula",
+   "soru": "Görselde kütleleri ve süratleri verilen cisimleri kinetik enerjisi en büyük olandan en küçük olana doğru sıralayınız.",
+   "ogeler": [
+    "M",
+    "K",
+    "N",
+    "L"
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görseldeki cisim yatay yolda 10 m/s süratle geçtikten 25 m sonra duruyor. Cisme etki eden sürtünme kuvvetinin büyüklüğü ve açığa çıkan ısı enerjisi hangisidir?",
+   "secenekler": [
+    "4 N ve 100 J",
+    "8 N ve 100 J",
+    "4 N ve 50 J",
+    "2 N ve 200 J"
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görseldeki yay x kadar sıkıştırılıp serbest bırakıldığında m kütleli cisim yaydan E kinetik enerjisi ve v süratiyle ayrılıyor. Sürtünmeler önemsiz olduğuna göre yay 2x kadar sıkıştırılırsa cismin kinetik enerjisi ve sürati ne olur?",
+   "secenekler": [
+    "2E ve 2v",
+    "4E ve 2v",
+    "4E ve 4v",
+    "8E ve 2v"
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "eslestir",
+   "duzey": "hatirla",
+   "soru": "Soldaki birimleri sağdaki büyüklüklerle eşleştiriniz.",
+   "ciftler": [
+    [
+     "Joule (J)",
+     "Enerji ve iş"
+    ],
+    [
+     "Watt (W)",
+     "Güç"
+    ],
+    [
+     "Newton/metre (N/m)",
+     "Yay sabiti"
+    ],
+    [
+     "Kilowatt-saat (kWh)",
+     "Faturadaki elektrik enerjisi"
+    ]
+   ]
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "Görseldeki top hava direnci önemsenmeden serbest bırakılıyor. Topun yere çarpma sürati kaç m/s'dir? Top P noktasından geçerken kinetik enerjisini joule cinsinden bulunuz. (g = 10 m/s²)",
+   "cevap": "v = 20 m/s; P'de E{alt:k} = 0,5 · 10 · 5 = 25 J",
+   "satir": 3
+  },
+  {
+   "tur": "acik",
+   "duzey": "ust",
+   "soru": "Görseldeki sürtünmeli yolun K noktasından durgun hâlde bırakılan cisim yerdeki L noktasından 10 m/s süratle geçiyor. Yol boyunca ısıya dönüşen enerjiyi işlem basamaklarıyla hesaplayınız.",
+   "cevap": "İlk mekanik enerji: 4 · 10 · 6 = 240 J. L'deki kinetik enerji: {kesir:1|2} · 4 · {us:10|2} = 200 J. Isıya dönüşen enerji: 240 − 200 = 40 J.",
+   "satir": 4
+  }
+ ]
+}
