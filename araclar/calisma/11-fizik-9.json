@@ -1,0 +1,89 @@
+{
+ "sinif": 11, "ders": "fizik", "hafta": 9, "tarih": "9-13 Kasım 2026", "yayin_tarihi": "2026-11-08",
+ "konu": "Statik ve Kinetik Sürtünme Kuvvetlerinin Karşılaştırılması, Sürtünme Kuvveti–Uygulanan Kuvvet Grafiği ve Günlük Hayattaki Etkileri",
+ "ciktilar": [
+  "Statik ve kinetik sürtünme kuvvetlerinin oluşma koşullarını, bağıntılarını ve katsayıları arasındaki ilişkiyi belirler.",
+  "Sürtünme kuvveti–uygulanan kuvvet grafiğinin statik bölgesini, eşik değerini ve kinetik bölgesini yorumlar.",
+  "İki sürtünme türünün benzerlik ve farklarını, günlük hayattaki olumlu ve olumsuz etkilerini karşılaştırır."
+ ],
+ "hatirla": [
+  "Duran cisimde F ≤ {alt:f|s,max} oldukça {alt:f|s} = F'dir; eşik değeri {alt:f|s,max} = {alt:k|s} · N bağıntısıyla bulunur.",
+  "Kayan cisme hareket yönüne zıt, sabit büyüklükte {alt:f|k} = {alt:k|k} · N etki eder; aynı yüzey çiftinde {alt:k|s} > {alt:k|k} ve {alt:f|s,max} > {alt:f|k}'dir.",
+  "Sürtünme yüzeylerin cinsine ve dik tepki kuvvetine bağlıdır, temas alanına bağlı değildir; katsayılar birimsizdir."
+ ],
+ "sorular": [
+  {"tur": "coktan", "duzey": "uygula",
+   "soru": "Görselde yatay zeminde duran 6 kg kütleli sandığa 15 N büyüklüğünde yatay kuvvet uygulanmaktadır. Buna göre sandığa etki eden sürtünme kuvveti kaç N'dir?",
+   "secenekler": ["9", "15", "18", "24"], "dogru": 1},
+  {"tur": "dy", "duzey": "hatirla",
+   "soru": "Sürtünme kuvvetleriyle ilgili aşağıdaki ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+   "ifadeler": [
+    {"metin": "Statik sürtünme kuvvetinin büyüklüğü her durumda {alt:k|s} · N'ye eşittir.", "dogru": false},
+    {"metin": "Kayan bir cisme etki eden sürtünme kuvveti, uygulanan kuvvet artsa da değişmez.", "dogru": true},
+    {"metin": "Sürtünme katsayılarının birimi newtondur.", "dogru": false},
+    {"metin": "Aynı yüzeyde cismi harekete geçirmek, hareketini sürdürmekten daha büyük kuvvet ister.", "dogru": true}
+   ]},
+  {"tur": "coktan", "duzey": "ust",
+   "soru": "Durgun bir cisme sıfırdan başlayarak artırılan yatay F kuvveti uygulanıyor ve sürtünme kuvvetinin F'ye bağlı grafiği görseldeki gibi çiziliyor. Buna göre aşağıdakilerden hangisi yanlıştır?",
+   "secenekler": ["F = 10 N iken cisim durur ve sürtünme kuvveti 10 N'dir.", "Statik sürtünme kuvvetinin alabileceği en büyük değer 24 N'dir.", "F = 30 N iken cisme etki eden net kuvvet 6 N'dir.", "Cisim kayarken sürtünme kuvveti 18 N'de sabit kalır."], "dogru": 2},
+  {"tur": "tablo", "duzey": "hatirla",
+   "soru": "Statik ve kinetik sürtünme kuvvetlerini karşılaştıran tablodaki boşlukları doldurunuz.",
+   "basliklar": ["Özellik", "Statik sürtünme", "Kinetik sürtünme"],
+   "satirlar": [
+    ["Etki ettiği cisim", {"b": "Durgun cisim"}, {"b": "Kayan cisim"}],
+    ["Büyüklüğü", {"b": "0 ile {alt:f|s,max} arasında"}, "Sabit"],
+    ["Bağıntı", "{alt:f|s,max} = {alt:k|s} · N", {"b": "{alt:f|k} = {alt:k|k} · N"}],
+    ["Temas alanına bağlılık", {"b": "Bağlı değil"}, {"b": "Bağlı değil"}]
+   ]},
+  {"tur": "kisa", "duzey": "uygula",
+   "soru": "Görseldeki 5 kg kütleli cisme 35 N yatay kuvvet uygulanıyor. Cisim harekete geçer mi? Sürtünme kuvvetini ve cismin ivmesini bulunuz.",
+   "cevap": "N = 50 N, {alt:f|s,max} = 30 N < 35 N → hareket eder; {alt:f|k} = 0,4 · 50 = 20 N; a = {kesir:35 − 20|5} = 3 m/s{us:|2}.",
+   "satir": 3},
+  {"tur": "bosluk", "duzey": "hatirla", "kelimeler": true, "fazla": ["yüzey alanına"],
+   "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız. Kutudaki bir kavram kullanılmayacaktır.",
+   "cumleler": [
+    {"metin": "Yüzeyin cisme uyguladığı, yüzeye dik kuvvete ___ kuvveti denir.", "cevap": "dik tepki"},
+    {"metin": "Cismin harekete geçmek üzere olduğu andaki sürtünme değeri ___ statik sürtünme kuvvetidir.", "cevap": "maksimum"},
+    {"metin": "Grafiğin statik bölgesindeki doğru parçası yatay eksenle ___ açı yapar.", "cevap": "45°"},
+    {"metin": "Kayarak ilerleyen cismin hareketine karşı koyan kuvvet ___ sürtünme kuvvetidir.", "cevap": "kinetik"}
+   ]},
+  {"tur": "coktan", "duzey": "uygula",
+   "soru": "Görseldeki aynı tuğla, aynı zeminde I'de geniş, II'de dar yüzeyi üzerinde kaydırılmaktadır. Kinetik sürtünme kuvvetleri {alt:f|I} ve {alt:f|II} arasındaki ilişki nedir?",
+   "secenekler": ["{alt:f|I} > {alt:f|II}", "{alt:f|I} = {alt:f|II}", "{alt:f|I} < {alt:f|II}", "F'nin büyüklüğüne göre değişir."], "dogru": 1},
+  {"tur": "coktan", "duzey": "uygula",
+   "soru": "Görselde aynı zeminde I'de 3 kg'lık blok tek başına, II'de üzerine 3 kg'lık başka bir blok konmuş olarak kaymaktadır. II'deki alt bloğa etki eden kinetik sürtünme, I'dekinin kaç katıdır?",
+   "secenekler": ["{kesir:1|2}", "1", "2", "4"], "dogru": 2},
+  {"tur": "siralama", "duzey": "uygula",
+   "soru": "Durgun bir cisme sıfırdan başlayarak düzgün artırılan yatay kuvvet uygulandığında gerçekleşenleri oluş sırasına göre diziniz.",
+   "ogeler": ["Uygulanan kuvvet kadar statik sürtünme oluşur.", "Kuvvet arttıkça statik sürtünme de aynı miktarda artar.", "Sürtünme eşik değerine ulaşır, cisim harekete geçmek üzeredir.", "Cisim kaymaya başlar, sürtünme bir miktar azalır.", "Kuvvet artsa da sürtünme sabit kalır."]},
+  {"tur": "eslestir", "duzey": "uygula",
+   "soru": "Günlük hayattan durumları, sürtünmeyle ilgili açıklamalarıyla eşleştiriniz.",
+   "ciftler": [
+    ["ABS fren sistemi", "Tekerleğin kilitlenip kaymasını önleyerek daha büyük olan statik sürtünmeden yararlanır."],
+    ["Kışın lastiğe zincir takılması", "Yüzeyin pürüzlülüğünü artırarak tutunmayı artırır."],
+    ["Motor parçalarının yağlanması", "Sürtünmeyi azaltarak aşınmayı ve ısınmayı önler."],
+    ["Çivinin duvarda durması", "Duvar ile çivi arasındaki statik sürtünme sayesinde gerçekleşir."]
+   ]},
+  {"tur": "sifre", "duzey": "hatirla",
+   "soru": "İpuçlarına uyan kavramları yazınız. Turuncu kutulardaki harfler, kinetik sürtünme kuvvetinin hareket boyunca nasıl kaldığını gösterecektir.",
+   "satirlar": [
+    {"ipucu": "Hareketsiz bir cisimde ortaya çıkan sürtünmenin adı (6 harf)", "cevap": "STATİK", "anahtar": 0},
+    {"ipucu": "Sürtünme kuvvetinin dik tepki kuvvetine oranı (7 harf)", "cevap": "KATSAYI", "anahtar": 1},
+    {"ipucu": "Tekerleğin kilitlenmesini önleyen fren sistemi (3 harf)", "cevap": "ABS", "anahtar": 1},
+    {"ipucu": "Kayarak ilerleyen bir cismi yavaşlatan sürtünmenin adı (7 harf)", "cevap": "KİNETİK", "anahtar": 1},
+    {"ipucu": "Sürtünme için yüzeyler arasında gereken durum (5 harf)", "cevap": "TEMAS", "anahtar": 0}
+   ],
+   "sonuc": "SABİT"},
+  {"tur": "coktan", "duzey": "ust",
+   "soru": "Görseldeki 7 kg kütleli cisim 21 N yatay kuvvetle sabit hızla çekilmektedir. Buna göre cisim ile zemin arasındaki kinetik sürtünme katsayısı kaçtır?",
+   "secenekler": ["0,2", "0,3", "0,4", "0,7"], "dogru": 1},
+  {"tur": "acik", "duzey": "ust",
+   "soru": "Kaygan yolda frene sert basılıp tekerlekler kilitlendiğinde araç daha uzun yolda durur. ABS'li aracın neden daha kısa yolda durduğunu sürtünme türleriyle açıklayınız.",
+   "cevap": "Kilitlenen tekerlek kayar ve kinetik sürtünme etki eder. ABS tekerleği dönmeye devam ettirip statik sürtünmede tutar; {alt:f|s,max} > {alt:f|k} olduğundan durdurucu kuvvet büyür.",
+   "satir": 3},
+  {"tur": "kisa", "duzey": "uygula",
+   "soru": "Görseldeki grafiğin statik bölgesinde α açısı kaç derecedir? Bu açının yüzeyin sürtünme katsayısına bağlı olmamasının nedenini yazınız.",
+   "cevap": "α = 45°; cisim dururken {alt:f|s} = F olduğundan eğim her yüzeyde 1'dir.",
+   "satir": 2}
+ ]
+}
