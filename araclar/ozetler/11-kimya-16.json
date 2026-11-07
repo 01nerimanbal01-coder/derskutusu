@@ -1,0 +1,605 @@
+{
+  "ad": "11-kimya-16",
+  "sinif": 11,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "2. Tema: Çeşitlilik",
+  "konu": "Fiziksel ve Kimyasal Değişimlerde Denge: Denge Sabiti İfadesinin Genel Modeli ve Tepkime Oranı (Q) ile Denge Durumu Tahmini",
+  "ciktilar": [
+    "KİM.11.2.3. Denge sabiti ifadesinin oluşturulmasına ilişkin tümevarımsal akıl yürütebilme",
+    "KİM.11.2.3.b) Denge sabiti ifadesinin matematiksel modelini geneller.",
+    "KİM.11.2.4. Tersinir tepkimelerin dengeye ulaşıp ulaşmadığını bilimsel veriye dayalı tahmin edebilme",
+    "KİM.11.2.4.a-c) Tersinir tepkimelerin dengeye ulaşıp ulaşmadığına ilişkin önermeler oluşturur, veriye dayalı olan ve olmayan önermeleri karşılaştırır, tepkime oranını hesaplayarak denge durumuna ilişkin tahminde bulunur."
+  ],
+  "giris": "Geçen hafta deney verilerinden denge sabiti ifadesini tümevarımla keşfettik ve farklı değişim türleri için ifade yazmayı çalıştık. Bu hafta keşfettiğimiz örüntüyü {koyu:tek bir genel matematiksel modele} dönüştürecek ve bu modelin, tepkimenin hangi basamaklarla gerçekleştiğinden bağımsız olduğunu göreceğiz. Ardından aynı ifadeyi herhangi bir anda hesaplayarak elde edilen {koyu:tepkime oranını (Q)} tanıyacağız. Q ile K'yi karşılaştırarak bir sistemin dengede olup olmadığını ve dengeye hangi yönde ilerleyeceğini tahmin edeceğiz. Son olarak dengeye ilişkin önermeler kuracak, {koyu:veriye dayalı önermeleri} dayanaksız önermelerden ayırmayı öğreneceğiz.",
+  "ozet": [
+    "{koyu:Genel model:} Denkleştirilmiş her tepkime için K, ürün derişimlerinin katsayı üslü çarpımının giren derişimlerinin katsayı üslü çarpımına oranıdır. Saf katı ve sıvıların etkin derişimi 1 kabul edildiği için bu türler ifadede görünmez.",
+    "{koyu:Mekanizmadan bağımsızlık:} Basamaklı tepkimelerde basamakların denge sabitleri çarpıldığında ara ürünler sadeleşir. Toplam ifade, doğrudan toplam denklemden yazılan ifadenin aynısıdır ve K = K₁·K₂ olur.",
+    "{koyu:Tepkime oranı:} Q, denge ifadesiyle aynı biçimde yazılır ama herhangi bir andaki derişim veya kısmi basınçlarla hesaplanır. Q zamanla değişir; K ise sabit sıcaklıkta sabittir.",
+    "{koyu:Yön tahmini:} Q < K ise tepkime ileri, Q > K ise geri yönde ilerler; Q = K ise sistem dengededir. Karşılaştırma yalnız aynı sıcaklıktaki ve aynı türden (Qc-Kc veya Qp-Kp) değerler arasında yapılır.",
+    "{koyu:Heterojen sistemler:} Katı miktarı Q'yu değiştirmez. Ancak ileri veya geri yönün gerçekleşebilmesi için ifadede görünmeyen katı fazların da kapta bulunması gerekir.",
+    "{koyu:Önerme değerlendirme:} Veriye dayalı önerme ölçüm, tekrar ve hesaplamaya dayanır. Derişimlerin değişmemesi gerekli bir belirtidir ama tek başına yeterli değildir; kesin karar Q ile K karşılaştırılarak verilir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "1. Denge Sabiti İfadesinin Genel Matematiksel Modeli",
+      "metin": [
+        "Geçen hafta H₂-I₂-HI deneylerinden, fiziksel değişimlerden ve iyonlu tepkimelerden tek tek örnekler inceledik ve her birinde aynı örüntüyü gördük. Bu hafta yapacağımız iş bu örüntüyü {koyu:genellemektir}: Hangi tür tepkime olursa olsun tek bir matematiksel kural geçerli olmalıdır. Denkleştirilmiş genel bir tepkime aA + bB ⇌ cC + dD için derişimler türünden denge sabiti Kc = {kesir:[C]ᶜ·[D]ᵈ|[A]ᵃ·[B]ᵇ} şeklindedir. Sözle ifade edersek: {koyu:Pay, ürün derişimlerinin katsayı üslü çarpımıdır; payda, giren derişimlerinin katsayı üslü çarpımıdır.} Tepkimede üç, dört ya da daha fazla tür bulunması kuralı değiştirmez; yalnızca çarpımdaki terim sayısı artar.",
+        "Genellemenin en güçlü yanı, daha önce ayrı bir kural gibi öğrendiğimiz “saf katı ve sıvılar yazılmaz” bilgisini de içine almasıdır. Bir saf katının veya saf sıvının birim hacimdeki madde miktarı, miktarı ne olursa olsun sabit sıcaklıkta değişmez. Bu nedenle modelde bu türlerin {koyu:etkin derişimi 1} kabul edilir. Bir terimi 1 ile çarpmak ifadeyi değiştirmediği için bu türler ifadede görünmez. Böylece homojen, heterojen, iyonlu ve fiziksel dengeler ayrı kurallar değil, {koyu:aynı modelin özel durumları} hâline gelir. Örneğin 2Hg(s) + O₂(g) ⇌ 2HgO(k) dengesinde hem Hg(s) hem HgO(k) etkin derişimi 1 olan türlerdir; ifade Kc = {kesir:1|[O₂]} olarak kalır.",
+        "Model yalnızca derişimlerle sınırlı değildir. Gaz tepkimelerinde derişimlerin yerine kısmi basınçlar konulduğunda aynı yapı {koyu:Kp} ifadesini verir; bu kez yalnız gazlar ifadeye girer. Modelin bir sonucu da denklemin yazılışına duyarlı olmasıdır: Denklem 2 ile çarpılırsa her üs iki katına çıkar ve yeni değer {us:K|2} olur; denklem ters çevrilirse pay ile payda yer değiştirir ve değer {kesir:1|K} olur. Bu genel modeli bir de herhangi bir andaki derişimlere uyguladığımızda, bölüm 3'te göreceğimiz {koyu:tepkime oranı (Q)} ortaya çıkar. Yani K ve Q aynı matematiksel kalıbın iki farklı kullanımıdır: K yalnız denge anındaki değeri, Q ise her anın değerini gösterir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Tepkime",
+          "Fazlar",
+          "Kc İfadesi",
+          "Kp İfadesi"
+        ],
+        "satirlar": [
+          [
+            "4HCl(g) + O₂(g) ⇌ 2Cl₂(g) + 2H₂O(g)",
+            "Tümü gaz",
+            "{kesir:[Cl₂]²·[H₂O]²|[HCl]⁴·[O₂]}",
+            "{kesir:P(Cl₂)²·P(H₂O)²|P(HCl)⁴·P(O₂)}"
+          ],
+          [
+            "C(k) + H₂O(g) ⇌ CO(g) + H₂(g)",
+            "C katı, diğerleri gaz",
+            "{kesir:[CO]·[H₂]|[H₂O]}",
+            "{kesir:P(CO)·P(H₂)|P(H₂O)}"
+          ],
+          [
+            "NH₄Cl(k) ⇌ NH₃(g) + HCl(g)",
+            "Giren katı, ürünler gaz",
+            "[NH₃]·[HCl]",
+            "P(NH₃)·P(HCl)"
+          ],
+          [
+            "Fe³⁺(suda) + SCN⁻(suda) ⇌ FeSCN²⁺(suda)",
+            "Tümü sulu",
+            "{kesir:[FeSCN²⁺]|[Fe³⁺]·[SCN⁻]}",
+            "Yazılmaz (gaz yok)"
+          ],
+          [
+            "2Hg(s) + O₂(g) ⇌ 2HgO(k)",
+            "Sıvı, gaz ve katı",
+            "{kesir:1|[O₂]}",
+            "{kesir:1|P(O₂)}"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Genel Model",
+          "metin": "aA + bB ⇌ cC + dD için Kc = {kesir:[C]ᶜ·[D]ᵈ|[A]ᵃ·[B]ᵇ}. Kp için aynı yapıda yalnız gazların kısmi basınçları kullanılır. Etkin derişimi 1 olan saf katı ve sıvılar ifadede görünmez."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Üç Adımlı Kontrol",
+          "metin": "İfadeyi yazdıktan sonra şu üç soruyu sorun: Her türün fazına baktım mı? Her üs, denklemdeki katsayıyla aynı mı? Ürünler payda, girenler paydada mı? Üç cevap da evetse ifade genel modele uygundur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Denge Sabiti İfadesinin Genel Modeli: Dört Adım</text><rect x='20' y='48' width='165' height='92' rx='12' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/><text x='102' y='74' text-anchor='middle' font-size='14' font-weight='bold' fill='#1e3a8a'>1. Denkleştir</text><text x='102' y='98' text-anchor='middle' font-size='11.5' fill='#1e40af'>Atom ve yük</text><text x='102' y='116' text-anchor='middle' font-size='11.5' fill='#1e40af'>dengesini sağla</text><rect x='205' y='48' width='165' height='92' rx='12' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='287' y='74' text-anchor='middle' font-size='14' font-weight='bold' fill='#92400e'>2. Faz filtresi</text><text x='287' y='98' text-anchor='middle' font-size='11.5' fill='#78350f'>(k) ve (s): etkin</text><text x='287' y='116' text-anchor='middle' font-size='11.5' fill='#78350f'>derişim = 1, yazılmaz</text><rect x='390' y='48' width='165' height='92' rx='12' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='472' y='74' text-anchor='middle' font-size='14' font-weight='bold' fill='#14532d'>3. Yerleştir</text><text x='472' y='98' text-anchor='middle' font-size='11.5' fill='#166534'>Ürünler paya,</text><text x='472' y='116' text-anchor='middle' font-size='11.5' fill='#166534'>girenler paydaya</text><rect x='575' y='48' width='165' height='92' rx='12' fill='#ede9fe' stroke='#7c3aed' stroke-width='2'/><text x='657' y='74' text-anchor='middle' font-size='14' font-weight='bold' fill='#4c1d95'>4. Üs = katsayı</text><text x='657' y='98' text-anchor='middle' font-size='11.5' fill='#5b21b6'>Her derişime</text><text x='657' y='116' text-anchor='middle' font-size='11.5' fill='#5b21b6'>katsayısını üs yap</text><line x1='186' y1='94' x2='199' y2='94' stroke='#334155' stroke-width='2'/><polygon points='199,89 205,94 199,99' fill='#334155'/><line x1='371' y1='94' x2='384' y2='94' stroke='#334155' stroke-width='2'/><polygon points='384,89 390,94 384,99' fill='#334155'/><line x1='556' y1='94' x2='569' y2='94' stroke='#334155' stroke-width='2'/><polygon points='569,89 575,94 569,99' fill='#334155'/><rect x='80' y='158' width='600' height='58' rx='12' fill='#ffffff' stroke='#0f172a' stroke-width='2'/><text x='380' y='184' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>aA + bB ⇌ cC + dD</text><text x='380' y='206' text-anchor='middle' font-size='14' fill='#1e293b'>Kc = [C]ᶜ·[D]ᵈ / ([A]ᵃ·[B]ᵇ)</text><rect x='40' y='232' width='330' height='52' rx='10' fill='#e0f2fe' stroke='#0284c7'/><text x='205' y='254' text-anchor='middle' font-size='12' font-weight='bold' fill='#075985'>Kp: aynı yapı</text><text x='205' y='273' text-anchor='middle' font-size='11.5' fill='#0c4a6e'>yalnız gazların kısmi basınçları</text><rect x='390' y='232' width='330' height='52' rx='10' fill='#fee2e2' stroke='#dc2626'/><text x='555' y='254' text-anchor='middle' font-size='12' font-weight='bold' fill='#991b1b'>Qc / Qp: aynı ifade</text><text x='555' y='273' text-anchor='middle' font-size='11.5' fill='#7f1d1d'>herhangi bir andaki değerlerle hesaplanır</text></svg>"
+    },
+    {
+      "baslik": "2. Basamaklı Tepkimelerde Toplam Denge İfadesi: Mekanizmadan Bağımsızlık",
+      "metin": [
+        "Birinci temada pek çok tepkimenin tek adımda değil, birbirini izleyen {koyu:basamaklarla (mekanizma)} gerçekleştiğini öğrenmiştik. Örneğin 2NO(g) + O₂(g) ⇌ 2NO₂(g) tepkimesinin iki basamakta yürüdüğü kabul edilir. Birinci basamakta iki NO molekülü birleşerek ara ürün N₂O₂'yi oluşturur: 2NO(g) ⇌ N₂O₂(g). İkinci basamakta bu ara ürün O₂ ile tepkimeye girer: N₂O₂(g) + O₂(g) ⇌ 2NO₂(g). Sistem dengedeyken her basamak da kendi içinde dengededir. Bu nedenle her basamak için genel modeli ayrı ayrı uygulayabiliriz: K₁ = {kesir:[N₂O₂]|[NO]²} ve K₂ = {kesir:[NO₂]²|[N₂O₂]·[O₂]}.",
+        "İki basamak toplandığında N₂O₂ her iki tarafta da bulunduğu için sadeleşir ve toplam denklem elde edilir. Denge sabitleri ise toplanmaz, {koyu:çarpılır}: K₁·K₂ = {kesir:[N₂O₂]|[NO]²}·{kesir:[NO₂]²|[N₂O₂]·[O₂]} = {kesir:[NO₂]²|[NO]²·[O₂]}. Ara ürün derişimi biri payda, biri paydada olduğu için çarpımda kaybolur. Sonuç, doğrudan toplam denklemden yazacağımız ifadenin aynısıdır. Aynı sonuca kinetik yoldan da ulaşılır. Dengede her basamağın ileri ve geri hızı eşittir: k₁·[NO]² = k₋₁·[N₂O₂] eşitliğinden K₁ = {kesir:k₁|k₋₁} bulunur. Buna göre toplam denge sabiti K = {kesir:k₁·k₂|k₋₁·k₋₂} olur. Sayısal bir örnek verelim: Bir sıcaklıkta K₁ = 2 ve K₂ = 50 ise toplam tepkime için K = 2·50 = 100 bulunur (değerler hesap kolaylığı için seçilmiştir).",
+        "Bu sonuç genel modelin geçerliliği için çok önemli bir kanıttır. {koyu:Hız bağıntısındaki üsler} mekanizmaya bağlıdır ve deneyle belirlenir; toplam denklemdeki katsayılarla çoğu zaman aynı değildir. {koyu:Denge ifadesindeki üsler} ise tepkime kaç basamakta yürürse yürüsün her zaman toplam denklemin katsayılarıdır. Bunun nedeni, dengenin başlangıç ve son durum arasındaki ilişkiyi anlatan bir durum özelliği olmasıdır. Dağın tepesine hangi patikadan çıkarsanız çıkın yükseklik farkı değişmez; benzer şekilde hangi mekanizma izlenirse izlensin denge ifadesi değişmez. Bu nedenle bir denge sorusunda mekanizma verilmese bile ifadeyi yazabilir, mekanizma verilse bile ara ürünleri ifadeye koymayız."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Hız Bağıntısı",
+          "Denge Sabiti İfadesi"
+        ],
+        "satirlar": [
+          [
+            "Üsler neye göre belirlenir?",
+            "Deneysel olarak ve mekanizmaya göre",
+            "Toplam denkleştirilmiş denklemin katsayılarına göre"
+          ],
+          [
+            "Mekanizma değişirse",
+            "İfade değişebilir",
+            "İfade değişmez"
+          ],
+          [
+            "Ara ürünler",
+            "Yavaş basamağa göre ifadede görülebilir",
+            "Hiçbir zaman ifadede yer almaz"
+          ],
+          [
+            "Basamaklarla ilişki",
+            "En yavaş basamak hızı belirler",
+            "K = K₁·K₂·… (basamak sabitlerinin çarpımı)"
+          ],
+          [
+            "Sabitin bağlı olduğu nicelik",
+            "k: sıcaklık ve katalizör",
+            "K: yalnız sıcaklık"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Ara Ürün İfadede Kalmaz",
+          "metin": "Bir basamakta oluşup sonraki basamakta harcanan tür, basamak sabitleri çarpıldığında bir kez payda, bir kez paydada yer alır ve {koyu:sadeleşir}. Bu nedenle toplam denge ifadesinde yalnız başlangıç girenleri ve son ürünler bulunur."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Hız Üsleri ile Denge Üslerini Karıştırmayın",
+          "metin": "Denge ifadesinde üsler doğrudan katsayılardır. Hız bağıntısında ise üsler ancak tepkime tek basamaklıysa katsayılara eşittir; diğer durumlarda deneyle bulunur. Denge sorusunda hız bağıntısındaki üsleri kullanmak yaygın bir hatadır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Basamaklı Tepkime: Ara Ürün Sadeleşir, Genel İfade Değişmez</text><rect x='30' y='46' width='320' height='74' rx='12' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/><text x='190' y='72' text-anchor='middle' font-size='13' font-weight='bold' fill='#1e3a8a'>1. basamak: 2NO(g) ⇌ N₂O₂(g)</text><text x='190' y='100' text-anchor='middle' font-size='13' fill='#1e40af'>K₁ = [N₂O₂] / [NO]²</text><text x='380' y='92' text-anchor='middle' font-size='26' font-weight='bold' fill='#334155'>×</text><rect x='410' y='46' width='320' height='74' rx='12' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='570' y='72' text-anchor='middle' font-size='13' font-weight='bold' fill='#92400e'>2. basamak: N₂O₂(g) + O₂(g) ⇌ 2NO₂(g)</text><text x='570' y='100' text-anchor='middle' font-size='13' fill='#78350f'>K₂ = [NO₂]² / ([N₂O₂]·[O₂])</text><line x1='380' y1='122' x2='380' y2='140' stroke='#334155' stroke-width='2'/><polygon points='374,140 380,148 386,140' fill='#334155'/><rect x='110' y='150' width='540' height='60' rx='12' fill='#ffffff' stroke='#64748b' stroke-width='1.5'/><text x='380' y='175' text-anchor='middle' font-size='13' fill='#0f172a'>K₁·K₂ = [N₂O₂]/[NO]² × [NO₂]²/([N₂O₂]·[O₂])</text><text x='380' y='198' text-anchor='middle' font-size='12' font-weight='bold' fill='#dc2626'>Ara ürün N₂O₂ payda ve paydada: sadeleşir</text><line x1='380' y1='212' x2='380' y2='222' stroke='#334155' stroke-width='2'/><polygon points='374,222 380,230 386,222' fill='#334155'/><rect x='110' y='232' width='540' height='56' rx='12' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='380' y='255' text-anchor='middle' font-size='13' font-weight='bold' fill='#14532d'>Toplam: 2NO(g) + O₂(g) ⇌ 2NO₂(g)   K = [NO₂]² / ([NO]²·[O₂])</text><text x='380' y='277' text-anchor='middle' font-size='12' fill='#166534'>K = K₁·K₂ ; örnek: K₁ = 2, K₂ = 50 ise K = 100</text></svg>"
+    },
+    {
+      "baslik": "3. Tepkime Oranı (Q): Herhangi Bir Andaki Durumun Fotoğrafı",
+      "metin": [
+        "Genel modeli yalnız denge anındaki derişimlerle değil, {koyu:herhangi bir andaki} derişimlerle de hesaplayabiliriz. Bu şekilde elde edilen değere {koyu:tepkime oranı} denir ve Q ile gösterilir. aA + bB ⇌ cC + dD için Qc = {kesir:[C]ᶜ·[D]ᵈ|[A]ᵃ·[B]ᵇ} olur; buradaki derişimler o anda ölçülen değerlerdir. K, Q'nun yalnız denge anında aldığı özel değerdir. Örnek olarak H₂(g) + I₂(g) ⇌ 2HI(g) tepkimesini ele alalım. Bu tepkime için geçen hafta kullandığımız sıcaklıkta Kc = 64'tür. 1 litrelik kaba 1,0 mol H₂ ve 1,0 mol I₂ konulduğunda başlangıçta HI bulunmadığı için Qc = {kesir:0²|1,0·1,0} = 0 olur.",
+        "Tepkime ilerledikçe HI derişimi artar, H₂ ve I₂ derişimleri azalır; bu yüzden Q da büyür. Yarı yolda [H₂] = [I₂] = 0,5 M ve [HI] = 1,0 M iken Qc = {kesir:(1,0)²|0,5·0,5} = 4 olur. Biraz sonra [H₂] = [I₂] = 0,3 M ve [HI] = 1,4 M iken Qc = {kesir:1,96|0,09} ≈ 21,8 bulunur. Sonunda [H₂] = [I₂] = 0,2 M ve [HI] = 1,6 M olduğunda Qc = {kesir:2,56|0,04} = 64 = Kc olur ve bundan sonra Q değişmez. Aynı kaba bu kez yalnız 2,0 mol HI konulsaydı başlangıçta payda sıfır olacağından Q tanımsız, yani çok büyük olurdu. HI ayrıştıkça Q küçülür ve yine 64'e iner; üstelik denge karışımı da aynı çıkar ([H₂] = [I₂] = 0,2 M, [HI] = 1,6 M). {koyu:Q hangi taraftan başlarsa başlasın her zaman K'ye doğru hareket eder.}",
+        "Bu davranış, bir sistemin dengeye hangi yönde ilerleyeceğini tahmin etmemizi sağlar. Q < K ise oranın büyümesi gerekir. Bunun için payda yer alan ürünlerin artması, paydada yer alan girenlerin azalması gerekir; yani tepkime {koyu:ileri yönde} ilerler. Q > K ise oranın küçülmesi gerekir; ürünler azalır, girenler artar ve tepkime {koyu:geri yönde} ilerler. Q = K ise sistem zaten dengededir ve net bir değişim gözlenmez. Q'nun hesaplanması için dengeyi beklemeye gerek yoktur. Bu nedenle Q, “şu anki karışım dengede mi, değilse ne olacak?” sorusuna ölçümle cevap veren bir {koyu:tahmin aracıdır}."
+      ],
+      "tablo": {
+        "basliklar": [
+          "An",
+          "[H₂] (M)",
+          "[I₂] (M)",
+          "[HI] (M)",
+          "Qc = [HI]² / ([H₂]·[I₂])",
+          "Q ile K (Kc = 64)"
+        ],
+        "satirlar": [
+          [
+            "t₀ (başlangıç)",
+            "1,0",
+            "1,0",
+            "0",
+            "0",
+            "Q < K: ileri yönde ilerler"
+          ],
+          [
+            "t₁",
+            "0,5",
+            "0,5",
+            "1,0",
+            "1,0 ÷ 0,25 = 4",
+            "Q < K: ileri yönde ilerler"
+          ],
+          [
+            "t₂",
+            "0,3",
+            "0,3",
+            "1,4",
+            "1,96 ÷ 0,09 ≈ 21,8",
+            "Q < K: ileri yönde ilerler"
+          ],
+          [
+            "t₃",
+            "0,2",
+            "0,2",
+            "1,6",
+            "2,56 ÷ 0,04 = 64",
+            "Q = K: denge kuruldu"
+          ],
+          [
+            "t₄ (daha sonra)",
+            "0,2",
+            "0,2",
+            "1,6",
+            "64",
+            "Q = K: denge sürüyor"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Tepkime Oranı (Q)",
+          "metin": "Denge sabiti ifadesiyle aynı biçimde yazılan ancak {koyu:herhangi bir andaki} derişimler (Qc) veya kısmi basınçlar (Qp) ile hesaplanan orandır. Dengede Q = K olur."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Q Değişir, K Sabittir",
+          "metin": "Sabit sıcaklıkta K tek bir sayıdır. Q ise tepkime ilerledikçe değişir ve zamanla K'ye yaklaşır. Q < K ise ileri, Q > K ise geri yönde ilerleme beklenir; Q = K ise sistem dengededir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='26' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>Tepkime Oranının Zamanla Değişimi: H₂ + I₂ ⇌ 2HI (Kc = 64)</text><text x='76' y='50' font-size='11' fill='#334155'>Qc</text><line x1='70' y1='54' x2='70' y2='250' stroke='#334155' stroke-width='2'/><line x1='70' y1='250' x2='470' y2='250' stroke='#334155' stroke-width='2'/><text x='466' y='268' text-anchor='end' font-size='11' fill='#334155'>Zaman</text><text x='62' y='254' text-anchor='end' font-size='11' fill='#334155'>0</text><line x1='70' y1='130' x2='470' y2='130' stroke='#16a34a' stroke-width='1.5' stroke-dasharray='6,4'/><text x='62' y='134' text-anchor='end' font-size='11' font-weight='bold' fill='#15803d'>64</text><path d='M70,250 C140,190 200,140 270,130 L465,130' fill='none' stroke='#2563eb' stroke-width='3'/><path d='M74,56 C120,95 190,124 270,130 L465,130' fill='none' stroke='#ea580c' stroke-width='3'/><line x1='270' y1='54' x2='270' y2='250' stroke='#64748b' stroke-dasharray='4,4'/><text x='270' y='266' text-anchor='middle' font-size='11' font-weight='bold' fill='#475569'>denge anı</text><text x='360' y='122' text-anchor='middle' font-size='11.5' font-weight='bold' fill='#15803d'>Q = K = 64</text><text x='150' y='232' font-size='11' fill='#1d4ed8'>Yalnız H₂ + I₂ ile: Q = 0 → 64</text><text x='120' y='72' font-size='11' fill='#c2410c'>Yalnız HI ile: Q çok büyük → 64</text><rect x='495' y='50' width='245' height='230' rx='12' fill='#ffffff' stroke='#334155' stroke-width='1.5'/><text x='617' y='74' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>Yön Kuralı</text><rect x='510' y='88' width='215' height='50' rx='8' fill='#dbeafe' stroke='#2563eb'/><text x='617' y='110' text-anchor='middle' font-size='13' font-weight='bold' fill='#1e3a8a'>Q &lt; K → ileri yön</text><text x='617' y='128' text-anchor='middle' font-size='10.5' fill='#1e40af'>ürünler artar, girenler azalır</text><rect x='510' y='146' width='215' height='50' rx='8' fill='#dcfce7' stroke='#16a34a'/><text x='617' y='168' text-anchor='middle' font-size='13' font-weight='bold' fill='#14532d'>Q = K → dengede</text><text x='617' y='186' text-anchor='middle' font-size='10.5' fill='#166534'>net değişim gözlenmez</text><rect x='510' y='204' width='215' height='50' rx='8' fill='#ffedd5' stroke='#ea580c'/><text x='617' y='226' text-anchor='middle' font-size='13' font-weight='bold' fill='#9a3412'>Q &gt; K → geri yön</text><text x='617' y='244' text-anchor='middle' font-size='10.5' fill='#9a3412'>girenler artar, ürünler azalır</text></svg>"
+    },
+    {
+      "baslik": "4. Kısmi Basınçlarla Tepkime Oranı (Qp) ve Heterojen Sistemlerde Tahmin",
+      "metin": [
+        "Gaz karışımlarında ölçüm çoğu zaman manometreyle yapıldığından tepkime oranını {koyu:kısmi basınçlarla} hesaplamak daha pratiktir. Bu durumda Qp, Kp ifadesiyle aynı biçimde yazılır. PCl₅(g) ⇌ PCl₃(g) + Cl₂(g) tepkimesi için belirli bir sıcaklıkta Kp = 1,5 kabul edelim. Kaptaki bir karışımda P(PCl₅) = 0,8 atm, P(PCl₃) = 0,6 atm ve P(Cl₂) = 0,5 atm ölçülmüş olsun. Qp = {kesir:P(PCl₃)·P(Cl₂)|P(PCl₅)} = {kesir:0,6·0,5|0,8} = {kesir:0,30|0,8} = 0,375 bulunur. Qp < Kp olduğundan tepkime ileri yönde ilerler: PCl₅ basıncı azalır, PCl₃ ve Cl₂ basınçları artar. Burada önemli bir kural vardır: {koyu:Qp yalnız Kp ile, Qc yalnız Kc ile karşılaştırılır.} Gaz mol sayısı değişen tepkimelerde Kp ile Kc sayısal olarak farklıdır; bu nedenle karışık karşılaştırma yanlış sonuç verir.",
+        "Heterojen sistemlerde de aynı yaklaşım kullanılır, ancak bir incelik vardır. CaCO₃(k) ⇌ CaO(k) + CO₂(g) dengesinde katılar ifadeye girmediği için Qp = P(CO₂) olur. Belirli bir sıcaklıkta Kp = 0,25 atm kabul edelim. Kapta hem CaCO₃ hem CaO varken P(CO₂) = 0,10 atm ise Qp < Kp olur. Bu durumda CaCO₃ ayrışır ve CO₂ basıncı 0,25 atm'ye yükselir. P(CO₂) = 0,40 atm ise Qp > Kp olur; CO₂, CaO ile birleşerek CaCO₃ oluşturur ve basınç 0,25 atm'ye düşer. Kaba bir miktar daha CaCO₃ eklemek veya kaptan bir miktar CaO almak Qp değerini değiştirmez. Çünkü {koyu:katı miktarı Q ifadesinde yer almaz}; denge basıncını yalnız sıcaklık belirler.",
+        "Bu noktada tahminin geçerlilik sınırını fark etmek gerekir. Q < K karşılaştırması “ileri yön elverişlidir” der; fakat ileri yönün gerçekleşebilmesi için {koyu:ileri yöndeki girenlerin hepsinin} kapta bulunması gerekir, katılar da buna dahildir. Kapta yalnız CaO ve 0,10 atm CO₂ varsa Qp < Kp olduğu hâlde ayrışacak CaCO₃ bulunmadığından ileri tepkime gerçekleşmez. Geri tepkime ise basıncı daha da düşüreceği için bu yönde de net değişim olmaz; sistem dengeye ulaşamaz. Benzer şekilde Qp > Kp iken kaptaki CaO, basınç 0,25 atm'ye inmeden tükenirse tepkime durur ve yine denge kurulmaz. Buradan çıkan sonuç şudur: {koyu:Heterojen bir dengenin kurulabilmesi için ifadede görünmeyen katı fazların da sistemde bulunması gerekir.}"
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kaptaki Durum",
+          "Qp",
+          "Karşılaştırma (Kp = 0,25 atm)",
+          "Tahmin"
+        ],
+        "satirlar": [
+          [
+            "CaCO₃ + CaO, P(CO₂) = 0,10 atm",
+            "0,10",
+            "Qp < Kp",
+            "CaCO₃ ayrışır, P(CO₂) 0,25 atm'ye çıkar."
+          ],
+          [
+            "CaCO₃ + CaO, P(CO₂) = 0,25 atm",
+            "0,25",
+            "Qp = Kp",
+            "Sistem dengededir, net değişim yoktur."
+          ],
+          [
+            "CaCO₃ + CaO, P(CO₂) = 0,40 atm",
+            "0,40",
+            "Qp > Kp",
+            "CO₂ ile CaO birleşir, P(CO₂) 0,25 atm'ye düşer."
+          ],
+          [
+            "Boş kapta yalnız CaCO₃",
+            "0",
+            "Qp < Kp",
+            "CaCO₃ ayrışır, CaO oluşur ve denge kurulur."
+          ],
+          [
+            "Yalnız CaO, P(CO₂) = 0,10 atm",
+            "0,10",
+            "Qp < Kp",
+            "Ayrışacak CaCO₃ yoktur; tepkime ilerlemez, denge kurulmaz."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Qc ile Kp Karşılaştırılmaz",
+          "metin": "Derişimlerle hesaplanan Qc, yalnız Kc ile; kısmi basınçlarla hesaplanan Qp, yalnız Kp ile karşılaştırılır. Ayrıca kullanılan K değerinin, ölçümün yapıldığı {koyu:sıcaklığa} ait olması gerekir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Katı Yoksa Denge Kurulmaz",
+          "metin": "Katılar Q ifadesinde görünmez; ama tepkimeye girmek için kapta bulunmaları gerekir. Heterojen dengede Q'ya bakarak yön tahmin edildikten sonra, o yön için gereken katının kapta olup olmadığı mutlaka kontrol edilmelidir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>CaCO₃(k) ⇌ CaO(k) + CO₂(g):  Qp = P(CO₂), Kp = 0,25 atm</text><rect x='60' y='52' width='320' height='48' rx='8' fill='#dbeafe' stroke='#2563eb'/><text x='220' y='72' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>Qp &lt; Kp: ileri yön</text><text x='220' y='90' text-anchor='middle' font-size='11' fill='#1e40af'>CaCO₃ ayrışır, P(CO₂) artar</text><rect x='380' y='52' width='320' height='48' rx='8' fill='#ffedd5' stroke='#ea580c'/><text x='540' y='72' text-anchor='middle' font-size='12' font-weight='bold' fill='#9a3412'>Qp &gt; Kp: geri yön</text><text x='540' y='90' text-anchor='middle' font-size='11' fill='#9a3412'>CO₂ + CaO → CaCO₃, P(CO₂) azalır</text><line x1='60' y1='130' x2='700' y2='130' stroke='#334155' stroke-width='3'/><polygon points='700,124 712,130 700,136' fill='#334155'/><line x1='60' y1='122' x2='60' y2='138' stroke='#334155' stroke-width='2'/><text x='60' y='156' text-anchor='middle' font-size='11' fill='#334155'>0</text><line x1='188' y1='122' x2='188' y2='138' stroke='#334155' stroke-width='2'/><text x='188' y='156' text-anchor='middle' font-size='11' fill='#334155'>0,10</text><line x1='572' y1='122' x2='572' y2='138' stroke='#334155' stroke-width='2'/><text x='572' y='156' text-anchor='middle' font-size='11' fill='#334155'>0,40</text><text x='706' y='156' text-anchor='end' font-size='11' fill='#334155'>P(CO₂), atm</text><circle cx='380' cy='130' r='9' fill='#16a34a'/><text x='380' y='158' text-anchor='middle' font-size='12' font-weight='bold' fill='#15803d'>0,25 = DENGE</text><polygon points='188,112 228,112 228,106 240,114 228,122 228,116 188,116' fill='#2563eb'/><polygon points='572,112 532,112 532,106 520,114 532,122 532,116 572,116' fill='#ea580c'/><rect x='40' y='186' width='215' height='92' rx='10' fill='#ffffff' stroke='#2563eb' stroke-width='1.5'/><text x='147' y='210' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>İleri yön için şart</text><text x='147' y='232' text-anchor='middle' font-size='11' fill='#1e40af'>Kapta CaCO₃(k) bulunmalı;</text><text x='147' y='250' text-anchor='middle' font-size='11' fill='#1e40af'>yoksa Q &lt; K olsa da</text><text x='147' y='268' text-anchor='middle' font-size='11' fill='#1e40af'>ayrışma olmaz</text><rect x='272' y='186' width='216' height='92' rx='10' fill='#dcfce7' stroke='#16a34a' stroke-width='1.5'/><text x='380' y='210' text-anchor='middle' font-size='12' font-weight='bold' fill='#14532d'>Katı miktarı</text><text x='380' y='232' text-anchor='middle' font-size='11' fill='#166534'>Qp değerini değiştirmez;</text><text x='380' y='250' text-anchor='middle' font-size='11' fill='#166534'>denge basıncını yalnız</text><text x='380' y='268' text-anchor='middle' font-size='11' fill='#166534'>sıcaklık belirler</text><rect x='505' y='186' width='215' height='92' rx='10' fill='#ffffff' stroke='#ea580c' stroke-width='1.5'/><text x='612' y='210' text-anchor='middle' font-size='12' font-weight='bold' fill='#9a3412'>Geri yön için şart</text><text x='612' y='232' text-anchor='middle' font-size='11' fill='#9a3412'>Kapta CaO(k) bulunmalı;</text><text x='612' y='250' text-anchor='middle' font-size='11' fill='#9a3412'>tükenirse basınç 0,25'e</text><text x='612' y='268' text-anchor='middle' font-size='11' fill='#9a3412'>inmeden tepkime durur</text></svg>"
+    },
+    {
+      "baslik": "5. Ölçüm Verilerinden Denge Durumuna İlişkin Önermeler Oluşturma",
+      "metin": [
+        "Bilimde {koyu:önerme}, doğruluğu sınanabilen bir yargı cümlesidir. “Kap I'deki sistem dengededir” veya “Kap II'de tepkime ileri yönde ilerlemektedir” gibi cümleler, uygun ölçümlerle doğrulanabilir ya da çürütülebilir. Bir sistemin dengeye ulaşıp ulaşmadığına ilişkin önerme kurarken şu sıra izlenir: (1) Ölçümün yapıldığı sıcaklığı ve o sıcaklıktaki K değerini belirle. (2) Derişimleri veya kısmi basınçları ölç. (3) Q'yu hesapla. (4) Q'yu K ile karşılaştır. (5) Mümkünse ölçümü bir süre sonra tekrarlayıp Q'nun değişip değişmediğine bak. (6) Önermeyi, dayandığı veriyle birlikte yaz.",
+        "Bu yöntemi CO(g) + H₂O(g) ⇌ CO₂(g) + H₂(g) tepkimesine uygulayalım. Aynı sıcaklıktaki üç ayrı 1 litrelik kapta ölçüm yapılmış ve bu sıcaklıkta Kc = 4 kabul edilmiştir (değerler hesap kolaylığı için seçilmiştir). Her türün katsayısı 1 olduğundan Qc = {kesir:[CO₂]·[H₂]|[CO]·[H₂O]} olur. {koyu:Kap I'de} 10. ve 20. dakikalarda [CO] = [H₂O] = 0,50 M ve [CO₂] = [H₂] = 1,00 M ölçülmüştür; Qc = {kesir:1,00·1,00|0,50·0,50} = 4 bulunur. {koyu:Kap II} yalnız 1'er mol CO ve H₂O ile başlatılmıştır. 5. dakikada Qc = {kesir:0,40·0,40|0,60·0,60} ≈ 0,44, 10. dakikada Qc = 1, 20. dakikada Qc = {kesir:0,60·0,60|0,40·0,40} = 2,25 bulunmuştur. {koyu:Kap III'te} ise [CO] = [H₂O] = 0,20 M ve [CO₂] = [H₂] = 0,80 M ölçülmüştür; Qc = {kesir:0,64|0,04} = 16'dır.",
+        "Bu verilerden kurulabilecek önermeler şunlardır. {koyu:Kap I dengededir:} İki ayrı ölçümde Q değişmemiştir ve Q = K'dir. {koyu:Kap II henüz dengede değildir:} Q her ölçümde artmıştır ve 20. dakikada bile 2,25 < 4'tür; tepkime ileri yönde sürmektedir. Bu kap için sayısal bir tahmin de yapılabilir: Denge kurulduğunda x mol ürün oluşmuşsa {kesir:x²|(1 − x)²} = 4 eşitliğinden {kesir:x|1 − x} = 2 ve x = {kesir:2|3} bulunur. Buna göre [CO₂] = [H₂] ≈ 0,67 M, [CO] = [H₂O] ≈ 0,33 M olmalıdır. {koyu:Kap III'te tepkime geri yönde ilerler:} Q = 16 > 4 olduğundan CO ve H₂O artacak, CO₂ ve H₂ azalacaktır. Bu önermelerin her biri yeni bir ölçümle sınanabilir; iyi bir bilimsel önermenin en önemli özelliği de budur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kap ve Ölçüm Anı",
+          "[CO] = [H₂O] (M)",
+          "[CO₂] = [H₂] (M)",
+          "Qc",
+          "Q ile K (Kc = 4)",
+          "Önerme"
+        ],
+        "satirlar": [
+          [
+            "Kap I, 10. dk",
+            "0,50",
+            "1,00",
+            "4",
+            "Q = K",
+            "Sistem dengededir."
+          ],
+          [
+            "Kap I, 20. dk",
+            "0,50",
+            "1,00",
+            "4",
+            "Q = K",
+            "Denge sürüyor; ilk önerme doğrulandı."
+          ],
+          [
+            "Kap II, 5. dk",
+            "0,60",
+            "0,40",
+            "≈ 0,44",
+            "Q < K",
+            "İleri yönde ilerliyor."
+          ],
+          [
+            "Kap II, 10. dk",
+            "0,50",
+            "0,50",
+            "1",
+            "Q < K",
+            "İleri yönde ilerliyor."
+          ],
+          [
+            "Kap II, 20. dk",
+            "0,40",
+            "0,60",
+            "2,25",
+            "Q < K",
+            "Henüz dengede değil; dengede ürünler ≈ 0,67 M olacak."
+          ],
+          [
+            "Kap III, 10. dk",
+            "0,20",
+            "0,80",
+            "16",
+            "Q > K",
+            "Geri yönde ilerliyor; CO ve H₂O artacak."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İyi Bir Önermenin Ögeleri",
+          "metin": "Denge durumuna ilişkin bilimsel bir önerme; {koyu:sıcaklığı}, kullanılan {koyu:K değerini}, ölçülen {koyu:derişim veya basınçları}, hesaplanan {koyu:Q değerini} ve varılan yargıyı içerir. Ayrıca yeni ölçümlerle sınanabilir olmalıdır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "K Bilinmiyorsa Ne Yapılır?",
+          "metin": "K değeri bilinmiyorsa, aynı kapta belirli aralıklarla yapılan ölçümlerde Q'nun sabit kalıp kalmadığına bakılır. Ayrıca aynı sıcaklıkta farklı başlangıçlarla kurulan kaplarda Q'nun aynı değere ulaşıp ulaşmadığı karşılaştırılır. Q sabit ve kaplar arasında aynıysa denge önermesi güçlenir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='330' rx='14' fill='#f8fafc'/><text x='380' y='26' text-anchor='middle' font-size='15' font-weight='bold' fill='#0f172a'>Ölçüm Verisinden Önermeye: Q Hesapla, K ile Karşılaştır</text><text x='380' y='46' text-anchor='middle' font-size='11.5' fill='#475569'>CO(g) + H₂O(g) ⇌ CO₂(g) + H₂(g), Kc = 4 (bu sıcaklıkta kabul), 1 L kaplar</text><rect x='20' y='58' width='720' height='32' rx='6' fill='#dbeafe' stroke='#2563eb'/><text x='85' y='79' text-anchor='middle' font-size='11.5' font-weight='bold' fill='#1e3a8a'>Kap / an</text><text x='215' y='79' text-anchor='middle' font-size='11.5' font-weight='bold' fill='#1e3a8a'>[CO] = [H₂O]</text><text x='335' y='79' text-anchor='middle' font-size='11.5' font-weight='bold' fill='#1e3a8a'>[CO₂] = [H₂]</text><text x='435' y='79' text-anchor='middle' font-size='11.5' font-weight='bold' fill='#1e3a8a'>Qc</text><text x='530' y='79' text-anchor='middle' font-size='11.5' font-weight='bold' fill='#1e3a8a'>Q ile K</text><text x='655' y='79' text-anchor='middle' font-size='11.5' font-weight='bold' fill='#1e3a8a'>Önerme</text><rect x='20' y='94' width='720' height='34' rx='5' fill='#dcfce7' stroke='#86efac'/><text x='85' y='116' text-anchor='middle' font-size='12' fill='#0f172a'>I, 10. dk</text><text x='215' y='116' text-anchor='middle' font-size='12' fill='#0f172a'>0,50</text><text x='335' y='116' text-anchor='middle' font-size='12' fill='#0f172a'>1,00</text><text x='435' y='116' text-anchor='middle' font-size='12' font-weight='bold' fill='#0f172a'>4</text><text x='530' y='116' text-anchor='middle' font-size='12' fill='#15803d'>Q = K</text><text x='655' y='116' text-anchor='middle' font-size='12' font-weight='bold' fill='#15803d'>Dengede</text><rect x='20' y='132' width='720' height='34' rx='5' fill='#dcfce7' stroke='#86efac'/><text x='85' y='154' text-anchor='middle' font-size='12' fill='#0f172a'>I, 20. dk</text><text x='215' y='154' text-anchor='middle' font-size='12' fill='#0f172a'>0,50</text><text x='335' y='154' text-anchor='middle' font-size='12' fill='#0f172a'>1,00</text><text x='435' y='154' text-anchor='middle' font-size='12' font-weight='bold' fill='#0f172a'>4</text><text x='530' y='154' text-anchor='middle' font-size='12' fill='#15803d'>Q = K</text><text x='655' y='154' text-anchor='middle' font-size='12' font-weight='bold' fill='#15803d'>Denge doğrulandı</text><rect x='20' y='170' width='720' height='34' rx='5' fill='#eff6ff' stroke='#bfdbfe'/><text x='85' y='192' text-anchor='middle' font-size='12' fill='#0f172a'>II, 5. dk</text><text x='215' y='192' text-anchor='middle' font-size='12' fill='#0f172a'>0,60</text><text x='335' y='192' text-anchor='middle' font-size='12' fill='#0f172a'>0,40</text><text x='435' y='192' text-anchor='middle' font-size='12' font-weight='bold' fill='#0f172a'>0,44</text><text x='530' y='192' text-anchor='middle' font-size='12' fill='#1d4ed8'>Q &lt; K</text><text x='655' y='192' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>İleri yönde</text><rect x='20' y='208' width='720' height='34' rx='5' fill='#eff6ff' stroke='#bfdbfe'/><text x='85' y='230' text-anchor='middle' font-size='12' fill='#0f172a'>II, 10. dk</text><text x='215' y='230' text-anchor='middle' font-size='12' fill='#0f172a'>0,50</text><text x='335' y='230' text-anchor='middle' font-size='12' fill='#0f172a'>0,50</text><text x='435' y='230' text-anchor='middle' font-size='12' font-weight='bold' fill='#0f172a'>1</text><text x='530' y='230' text-anchor='middle' font-size='12' fill='#1d4ed8'>Q &lt; K</text><text x='655' y='230' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>İleri yönde</text><rect x='20' y='246' width='720' height='34' rx='5' fill='#eff6ff' stroke='#bfdbfe'/><text x='85' y='268' text-anchor='middle' font-size='12' fill='#0f172a'>II, 20. dk</text><text x='215' y='268' text-anchor='middle' font-size='12' fill='#0f172a'>0,40</text><text x='335' y='268' text-anchor='middle' font-size='12' fill='#0f172a'>0,60</text><text x='435' y='268' text-anchor='middle' font-size='12' font-weight='bold' fill='#0f172a'>2,25</text><text x='530' y='268' text-anchor='middle' font-size='12' fill='#1d4ed8'>Q &lt; K</text><text x='655' y='268' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>Henüz dengede değil</text><rect x='20' y='284' width='720' height='34' rx='5' fill='#ffedd5' stroke='#fdba74'/><text x='85' y='306' text-anchor='middle' font-size='12' fill='#0f172a'>III, 10. dk</text><text x='215' y='306' text-anchor='middle' font-size='12' fill='#0f172a'>0,20</text><text x='335' y='306' text-anchor='middle' font-size='12' fill='#0f172a'>0,80</text><text x='435' y='306' text-anchor='middle' font-size='12' font-weight='bold' fill='#0f172a'>16</text><text x='530' y='306' text-anchor='middle' font-size='12' fill='#c2410c'>Q &gt; K</text><text x='655' y='306' text-anchor='middle' font-size='12' font-weight='bold' fill='#c2410c'>Geri yönde</text></svg>"
+    },
+    {
+      "baslik": "6. Veriye Dayalı ve Dayalı Olmayan Önermelerin Karşılaştırılması",
+      "metin": [
+        "Bir tepkimenin dengede olup olmadığına ilişkin her önerme aynı güçte değildir. {koyu:Veriye dayalı önerme}, ölçüm, gözlem ve hesaplamaya dayanır; hangi veriden çıkarıldığı açıkça gösterilebilir ve yeni verilerle sınanabilir. {koyu:Veriye dayalı olmayan önerme} ise sezgiye, görünüşe, geçen süreye ya da kişisel kanaate dayanır. “Kap bütün gece beklediği için kesinlikle dengededir” cümlesi bu türdendir: Tepkimenin hızı bilinmeden geçen süre tek başına bir kanıt sayılmaz. “Ürünler daha kararlı olduğu için tepkime hep ileri gider” cümlesi de K veya Q verisine dayanmadığı için dayanaksızdır.",
+        "Veriye dayanan bir önerme bile verinin yanlış yorumlanması nedeniyle hatalı olabilir. Bunun en öğretici örneği hidrojen-oksijen karışımıdır. Kapalı bir kaptaki H₂ ve O₂ karışımı oda sıcaklığında çok uzun süre bekletilse de derişimler ölçülebilir biçimde değişmez. “Derişimler değişmiyor, demek ki sistem dengede” önermesi ilk bakışta veriye dayalı görünür. Oysa 2H₂(g) + O₂(g) ⇌ 2H₂O(g) tepkimesinin oda sıcaklığındaki K değeri son derece büyüktür; kapta neredeyse hiç su buharı olmadığı için Q ≈ 0'dır ve {koyu:Q, K'den çok küçüktür}. Yani ileri yön son derece elverişlidir ama aktifleşme enerjisi yüksek olduğu için tepkime çok yavaştır. Karışıma kıvılcım verildiğinde tepkimenin patlayarak gerçekleşmesi de bunu doğrular. Sonuç: {koyu:Derişimlerin sabit kalması dengenin gerekli bir belirtisidir ama yeterli bir kanıtı değildir.}",
+        "Bu nedenle önermeleri karşılaştırırken şu ölçütler kullanılır: Önerme ölçülmüş bir veriye dayanıyor mu? Ölçüm tekrarlanmış mı? Sıcaklık ve o sıcaklığa ait K değeri belirtilmiş mi? Q hesaplanıp K ile karşılaştırılmış mı? Derişimlerin eşitliği veya rengin koyuluğu gibi {koyu:denge ölçütü olmayan} özelliklere mi dayanıyor? En güçlü önerme, tekrarlanan ölçümlerde Q'nun sabit kaldığını ve o sıcaklıktaki K'ye eşit olduğunu gösteren önermedir. Bilim insanları bir önermeyi kabul etmeden önce, onu çürütebilecek veriyi de aramalıdır; tek uyumlu ölçüm yeterli değildir. Geçen hafta tümevarımda gördüğümüz “iki uyumlu veri kanıt değildir” ilkesi burada da geçerlidir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Önerme",
+          "Dayanağı",
+          "Değerlendirme"
+        ],
+        "satirlar": [
+          [
+            "İki ayrı ölçümde Qc = 4 bulundu ve bu sıcaklıkta Kc = 4; sistem dengededir.",
+            "Tekrarlanan ölçüm ve hesaplama",
+            "Veriye dayalı ve güçlü"
+          ],
+          [
+            "Kap bütün gece beklediği için kesinlikle dengededir.",
+            "Geçen süre (hız bilinmiyor)",
+            "Veriye dayalı değil"
+          ],
+          [
+            "Ürün ve giren derişimleri eşit olduğu için sistem dengededir.",
+            "Denge ölçütü olmayan bir özellik",
+            "Dayanaksız; dengede derişimler eşit değil, sabittir"
+          ],
+          [
+            "Kaptaki H₂-O₂ karışımında derişimler değişmiyor; sistem dengededir.",
+            "Ölçüm var ama yorum eksik",
+            "Hatalı; Q ≪ K, tepkime çok yavaş"
+          ],
+          [
+            "Qc = 16 > Kc = 4 olduğundan CO ve H₂O derişimleri artacaktır.",
+            "Hesaplama ve karşılaştırma",
+            "Veriye dayalı; yeni ölçümle sınanabilir"
+          ],
+          [
+            "Karışımın rengi bana yeterince koyu göründüğü için denge kurulmuştur.",
+            "Kişisel izlenim",
+            "Veriye dayalı değil"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Veriye Dayalı Önerme",
+          "metin": "Ölçüm, gözlem ve hesaplamayla desteklenen, hangi veriden çıkarıldığı gösterilebilen ve yeni verilerle {koyu:sınanabilen} yargıdır. Denge konusunda en güçlü dayanak, tekrarlanan ölçümlerden hesaplanan Q değerinin K ile karşılaştırılmasıdır."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Sabitlik Tek Başına Yetmez",
+          "metin": "Çok yavaş ilerleyen bir tepkimede derişimler uzun süre değişmeyebilir. Bu nedenle “değişim yok, öyleyse denge var” demeden önce Q'nun o sıcaklıktaki K'ye eşit olup olmadığı kontrol edilmelidir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Veriye Dayalı ve Dayalı Olmayan Önermeler</text><rect x='25' y='44' width='345' height='170' rx='12' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='197' y='68' text-anchor='middle' font-size='14' font-weight='bold' fill='#14532d'>Veriye Dayalı Önerme</text><text x='42' y='94' font-size='11.5' fill='#166534'>• Ölçülmüş derişim veya basınç kullanır</text><text x='42' y='116' font-size='11.5' fill='#166534'>• Sıcaklık ve o sıcaklığın K değeri bellidir</text><text x='42' y='138' font-size='11.5' fill='#166534'>• Q hesaplanır, K ile karşılaştırılır</text><text x='42' y='160' font-size='11.5' fill='#166534'>• Ölçüm tekrarlanır</text><text x='42' y='182' font-size='11.5' fill='#166534'>• Yeni veriyle sınanabilir</text><text x='42' y='204' font-size='11' font-style='italic' fill='#15803d'>Örnek: İki ölçümde Qc = Kc = 4, denge var</text><rect x='390' y='44' width='345' height='170' rx='12' fill='#fee2e2' stroke='#dc2626' stroke-width='2'/><text x='562' y='68' text-anchor='middle' font-size='14' font-weight='bold' fill='#991b1b'>Veriye Dayalı Olmayan Önerme</text><text x='407' y='94' font-size='11.5' fill='#7f1d1d'>• Geçen süreye dayanır (bütün gece bekledi)</text><text x='407' y='116' font-size='11.5' fill='#7f1d1d'>• Görünüşe dayanır (renk koyu görünüyor)</text><text x='407' y='138' font-size='11.5' fill='#7f1d1d'>• Yanlış ölçüt kullanır (derişimler eşit)</text><text x='407' y='160' font-size='11.5' fill='#7f1d1d'>• Kişisel kanaat bildirir</text><text x='407' y='182' font-size='11.5' fill='#7f1d1d'>• K ve Q verisi içermez</text><text x='407' y='204' font-size='11' font-style='italic' fill='#b91c1c'>Örnek: Ürünler kararlı, hep ileri gider</text><rect x='25' y='228' width='710' height='58' rx='12' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='380' y='251' text-anchor='middle' font-size='13' font-weight='bold' fill='#92400e'>H₂ + O₂ karışımı oda sıcaklığında değişmez ama dengede değildir: Q ≪ K</text><text x='380' y='273' text-anchor='middle' font-size='12' fill='#78350f'>Sabitlik gerekli ama yeterli değil; kesin karar için Q ile K karşılaştırılır</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Genel modeli kullanarak aşağıdaki tepkimelerin Kc ifadelerini yazınız; gaz içerenler için Kp ifadesini de belirtiniz.\na) 4HCl(g) + O₂(g) ⇌ 2Cl₂(g) + 2H₂O(g)\nb) C(k) + CO₂(g) ⇌ 2CO(g)\nc) NH₄HS(k) ⇌ NH₃(g) + H₂S(g)\nd) Fe³⁺(suda) + SCN⁻(suda) ⇌ FeSCN²⁺(suda)",
+      "cevap": "a) Tümü gaz olduğundan hepsi ifadeye girer; üsler katsayılardır: Kc = {kesir:[Cl₂]²·[H₂O]²|[HCl]⁴·[O₂]}, Kp = {kesir:P(Cl₂)²·P(H₂O)²|P(HCl)⁴·P(O₂)}.\nb) C(k) saf katıdır, etkin derişimi 1'dir ve yazılmaz: Kc = {kesir:[CO]²|[CO₂]}, Kp = {kesir:P(CO)²|P(CO₂)}.\nc) Giren katı olduğundan payda 1 kalır: Kc = [NH₃]·[H₂S], Kp = P(NH₃)·P(H₂S).\nd) Tüm türler sulu olduğundan hepsi yazılır: Kc = {kesir:[FeSCN²⁺]|[Fe³⁺]·[SCN⁻]}. Gaz bulunmadığı için Kp ifadesi yazılmaz.",
+      "ipucu": "Her türün fazını işaretleyin. (k) ve (s) türlerinin yerine 1 koyun, sonra katsayıları üs olarak ekleyin."
+    },
+    {
+      "soru": "H₂(g) + I₂(g) ⇌ 2HI(g) tepkimesinin belirli bir sıcaklıkta şu iki basamakla yürüdüğü kabul ediliyor:\n1. basamak: I₂(g) ⇌ 2I(g)   K₁ = 0,02\n2. basamak: H₂(g) + 2I(g) ⇌ 2HI(g)   K₂ = 3200\na) Basamakların denge ifadelerini yazınız ve çarpımlarından toplam ifadeyi elde ediniz.\nb) Toplam tepkimenin denge sabitini hesaplayınız.\nc) I atomu toplam ifadede neden yer almaz?",
+      "cevap": "a) K₁ = {kesir:[I]²|[I₂]}, K₂ = {kesir:[HI]²|[H₂]·[I]²}.\nK₁·K₂ = {kesir:[I]²|[I₂]}·{kesir:[HI]²|[H₂]·[I]²} = {kesir:[HI]²|[H₂]·[I₂]}. Bu ifade, toplam denklemden doğrudan yazılan ifadenin aynısıdır.\nb) K = K₁·K₂ = 0,02·3200 = 64.\nc) I atomu birinci basamakta oluşup ikinci basamakta harcanan bir ara üründür. [I]² terimi bir kez payda, bir kez paydada bulunduğu için sadeleşir. Denge ifadesi mekanizmaya değil, toplam denkleme bağlıdır.",
+      "ipucu": "Basamak denklemleri toplanırken denge sabitleri çarpılır; ara ürünlerin derişimlerinin sadeleştiğini kontrol edin."
+    },
+    {
+      "soru": "Belirli bir sıcaklıkta H₂(g) + I₂(g) ⇌ 2HI(g) tepkimesi için Kc = 64'tür. 1 litrelik bir kapta bir anda 0,5 mol H₂, 0,5 mol I₂ ve 3,0 mol HI bulunmaktadır.\na) Qc değerini hesaplayıp sistemin dengede olup olmadığını belirleyiniz.\nb) Tepkimenin ilerleme yönünü ve derişimlerin nasıl değişeceğini tahmin ediniz.\nc) Denge derişimlerini bularak tahmininizi doğrulayınız.",
+      "cevap": "a) Qc = {kesir:[HI]²|[H₂]·[I₂]} = {kesir:(3,0)²|0,5·0,5} = {kesir:9|0,25} = 36. Qc = 36 ≠ Kc = 64 olduğundan sistem dengede değildir.\nb) Qc < Kc olduğundan tepkime ileri yönde ilerler: HI derişimi artar, H₂ ve I₂ derişimleri azalır.\nc) x mol H₂ harcansın: [H₂] = [I₂] = 0,5 − x, [HI] = 3,0 + 2x.\n{kesir:(3,0 + 2x)²|(0,5 − x)²} = 64 → {kesir:3,0 + 2x|0,5 − x} = 8 → 3,0 + 2x = 4 − 8x → 10x = 1 → x = 0,1.\nDenge: [H₂] = [I₂] = 0,4 M, [HI] = 3,2 M. Kontrol: {kesir:(3,2)²|0,4·0,4} = {kesir:10,24|0,16} = 64 ✓. HI 3,0 M'den 3,2 M'ye çıkmıştır; tahmin doğrulanmıştır.",
+      "ipucu": "Önce Q'yu hesaplayıp yönü bulun; ardından değişimi o yöne göre x ile yazın. İki taraf da tam kare olduğunda karekök almak işlemi kısaltır."
+    },
+    {
+      "soru": "NH₄HS(k) ⇌ NH₃(g) + H₂S(g) tepkimesi için belirli bir sıcaklıkta Kp = 0,12'dir (basınçlar atm cinsinden).\na) İçinde katı NH₄HS bulunan bir kapta P(NH₃) = 0,2 atm ve P(H₂S) = 0,3 atm ölçülüyor. Qp'yi hesaplayıp tepkimenin yönünü belirleyiniz.\nb) Denge kurulduğunda kısmi basınçlar ne olur?\nc) Kapta hiç katı NH₄HS bulunmasaydı aynı basınçlarla ne olurdu?",
+      "cevap": "a) Katı ifadeye girmez: Qp = P(NH₃)·P(H₂S) = 0,2·0,3 = 0,06. Qp = 0,06 < Kp = 0,12 olduğundan tepkime ileri yönde ilerler; katı NH₄HS ayrışır ve iki gazın basıncı da artar.\nb) Her iki gazın basıncı y kadar artsın: (0,2 + y)·(0,3 + y) = 0,12 → {us:y|2} + 0,5y + 0,06 = 0,12 → {us:y|2} + 0,5y − 0,06 = 0.\n(y + 0,6)·(y − 0,1) = 0 → y = 0,1 (negatif kök anlamsızdır).\nDenge: P(NH₃) = 0,3 atm, P(H₂S) = 0,4 atm. Kontrol: 0,3·0,4 = 0,12 ✓.\nc) Qp yine 0,06 < 0,12 olurdu; ancak ayrışacak katı NH₄HS bulunmadığı için ileri tepkime gerçekleşemezdi. Geri tepkime basınçları daha da düşüreceği için o yönde de net değişim olmazdı. Basınçlar değişmez ve sistem dengeye ulaşamazdı.",
+      "ipucu": "Heterojen sistemlerde Q'yu yalnız gazlarla hesaplayın; ama yön tahmininden sonra o yön için gereken katının kapta olup olmadığına bakın."
+    },
+    {
+      "soru": "Belirli bir sıcaklıkta A(g) ⇌ 2B(g) tepkimesi için Kc = 2'dir. 1 litrelik kaba yalnız 1,0 mol A konuluyor ve farklı anlarda şu derişimler ölçülüyor:\n2. dk: [A] = 0,8 M, [B] = 0,4 M\n5. dk: [A] = 0,6 M, [B] = 0,8 M\n10. dk: [A] = 0,5 M, [B] = 1,0 M\n15. dk: [A] = 0,5 M, [B] = 1,0 M\na) Her an için Qc'yi hesaplayınız.\nb) Dengenin hangi zaman aralığında kurulduğuna ilişkin veriye dayalı bir önerme yazınız.\nc) Bir öğrencinin “5. dakikada B derişimi A derişiminden büyük olduğuna göre sistem o anda dengededir” önermesini değerlendiriniz.",
+      "cevap": "a) Qc = {kesir:[B]²|[A]}.\n2. dk: {kesir:(0,4)²|0,8} = {kesir:0,16|0,8} = 0,2.\n5. dk: {kesir:(0,8)²|0,6} = {kesir:0,64|0,6} ≈ 1,07.\n10. dk: {kesir:(1,0)²|0,5} = 2.\n15. dk: {kesir:(1,0)²|0,5} = 2.\nb) 5. dakikada Qc ≈ 1,07 < 2 olduğundan sistem henüz dengede değildir. 10. dakikada Qc = Kc = 2'dir ve 15. dakikadaki ölçümde de değer değişmemiştir. Buna göre denge 5. ile 10. dakikalar arasında kurulmuştur. Tam denge anı bu verilerle belirlenemez; bunun için daha sık ölçüm gerekir.\nc) Önerme geçersizdir. Derişimlerin birbirinden büyük ya da küçük olması bir denge ölçütü değildir. 5. dakikada Qc ≈ 1,07 ≠ 2 olduğu için sistem o anda dengede değildir ve ileri yönde ilerlemektedir.",
+      "ipucu": "Dengenin kanıtı Q'nun K'ye eşit olması ve sonraki ölçümlerde sabit kalmasıdır; derişimlerin büyüklük sırası bir ölçüt değildir."
+    },
+    {
+      "soru": "Aynı sıcaklıkta tutulan iki 1 litrelik kapta X(g) + Y(g) ⇌ 2Z(g) tepkimesi inceleniyor. Bu sıcaklıkta Kc = 64'tür. Her iki kapta da 30 dakika boyunca yapılan ölçümlerde derişimler değişmemiştir:\nKap 1: [X] = 0,5 M, [Y] = 0,5 M, [Z] = 4,0 M\nKap 2: [X] = 1,0 M, [Y] = 0,8 M, [Z] = 2,0 M\na) Her kap için Qc'yi hesaplayınız.\nb) “Derişimler iki kapta da değişmediğine göre iki sistem de dengededir” önermesini değerlendiriniz.\nc) Kap 2'ye katalizör eklendiğinde Z derişiminin artmaya başladığı gözleniyor. Bu gözlem neyi gösterir?",
+      "cevap": "a) Qc = {kesir:[Z]²|[X]·[Y]}.\nKap 1: {kesir:(4,0)²|0,5·0,5} = {kesir:16|0,25} = 64.\nKap 2: {kesir:(2,0)²|1,0·0,8} = {kesir:4|0,8} = 5.\nb) Önerme veriye dayanıyor gibi görünse de yanlış yorumlanmıştır. Aynı sıcaklıkta K tek bir değerdir. Kap 1'de Qc = Kc olduğundan sistem dengededir. Kap 2'de ise Qc = 5 < 64 olduğundan sistem dengede değildir; ileri tepkime elverişlidir ama çok yavaş ilerlemektedir. Derişimlerin değişmemesi dengenin gerekli belirtisidir, yeterli kanıtı değildir.\nc) Katalizör tepkimeyi hızlandırır ama K'yi değiştirmez. Z'nin artmaya başlaması, Kap 2'deki sabitliğin denge değil, tepkimenin aşırı yavaşlığı olduğunu doğrular. Sistem ileri yönde ilerleyerek Qc = 64 olana kadar değişecektir.",
+      "ipucu": "K değeri biliniyorsa sabit görünen her sistemde Q'yu hesaplayıp K ile karşılaştırın; çok yavaş tepkimeler dengede gibi görünebilir."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Belirli bir sıcaklıkta 2SO₂(g) + O₂(g) ⇌ 2SO₃(g) tepkimesi için Kc = 100'dür. 1 litrelik bir kapta bir anda 0,2 mol SO₂, 0,5 mol O₂ ve 1,0 mol SO₃ bulunmaktadır. Bu karışımla ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Qc = 50'dir; sistem dengede değildir ve SO₃ derişimi artar.",
+        "Qc = 50'dir; tepkime geri yönde ilerler.",
+        "Qc = 10'dur; sistem dengededir.",
+        "Qc = 100'dür; sistem dengededir."
+      ],
+      "dogru": 0,
+      "aciklama": "Qc = {kesir:[SO₃]²|[SO₂]²·[O₂]} = {kesir:(1,0)²|(0,2)²·0,5} = {kesir:1|0,02} = 50. Qc = 50 < Kc = 100 olduğundan tepkime ileri yönde ilerler; SO₃ derişimi artar, SO₂ ve O₂ derişimleri azalır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir tepkime aynı sıcaklıkta şu iki basamakla gerçekleşmektedir: A(g) ⇌ B(g) (K₁ = 4) ve B(g) ⇌ 2C(g) (K₂ = 0,5). Toplam tepkime A(g) ⇌ 2C(g) için denge sabiti kaçtır?",
+      "secenekler": [
+        "4,5",
+        "2",
+        "8",
+        "0,125"
+      ],
+      "dogru": 1,
+      "aciklama": "Basamak denklemleri toplandığında ara ürün B sadeleşir ve denge sabitleri çarpılır: K = K₁·K₂ = 4·0,5 = 2. İfade olarak K = {kesir:[B]|[A]}·{kesir:[C]²|[B]} = {kesir:[C]²|[A]} olur. Sabitler toplanmaz (4,5 yanlış) ve bölünmez (8 ve 0,125 yanlış)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "N₂(g) + 3H₂(g) ⇌ 2NH₃(g) tepkimesinin gerçekleştiği bir kapta, belirli bir anda Qc > Kc olduğu bulunuyor. Sıcaklık sabit tutulursa sistem dengeye ulaşırken aşağıdakilerden hangisi gözlenir?",
+      "secenekler": [
+        "NH₃ derişimi artar, N₂ ve H₂ derişimleri azalır.",
+        "NH₃ derişimi azalır, N₂ ve H₂ derişimleri artar.",
+        "Q > K sistemin dengede olduğunu gösterdiğinden derişimler değişmez.",
+        "Kc değeri büyüyerek Qc değerine eşitlenir."
+      ],
+      "dogru": 1,
+      "aciklama": "Q > K ise oranın küçülmesi gerekir; bu da paydaki ürünün azalması, paydadaki girenlerin artmasıyla olur. Tepkime geri yönde ilerler. Sabit sıcaklıkta K değişmez; değişen Q'dur ve Q, K'ye iner."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kapalı bir kapta gerçekleşen bir denge tepkimesine ilişkin aşağıdaki önermelerden hangisi veriye dayalıdır?",
+      "secenekler": [
+        "Kap bütün gece beklediği için içindeki tepkime kesinlikle dengeye ulaşmıştır.",
+        "Ürünler daha kararlı olduğundan tepkime her zaman ileri yönde ilerler.",
+        "Aynı sıcaklıkta 5 dakika arayla yapılan iki ölçümde Qc = 4,0 bulunmuştur ve bu değer o sıcaklıktaki Kc'ye eşittir; sistem dengededir.",
+        "Karışımın rengi bana yeterince koyu göründüğü için denge kurulmuştur."
+      ],
+      "dogru": 2,
+      "aciklama": "C seçeneği tekrarlanan ölçüme, hesaplanan Q değerine ve aynı sıcaklıktaki K ile karşılaştırmaya dayanır. A seçeneği yalnız geçen süreye, B seçeneği kanıtsız bir genellemeye, D seçeneği kişisel izlenime dayandığı için veriye dayalı değildir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Tepkime oranı Q, denge sabiti ifadesiyle aynı biçimde yazılır ancak herhangi bir andaki derişimlerle hesaplanır.",
+          "dogru": true,
+          "aciklama": "Doğrudur; K, Q'nun yalnız denge anında aldığı özel değerdir."
+        },
+        {
+          "metin": "Q < K ise tepkime geri yönde ilerleyerek dengeye ulaşır.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; Q < K ise oranın büyümesi gerekir. Ürünler artar, tepkime ileri yönde ilerler."
+        },
+        {
+          "metin": "Bir tepkime basamaklarla gerçekleşse de denge sabiti ifadesi toplam denklemin katsayılarına göre yazılır.",
+          "dogru": true,
+          "aciklama": "Doğrudur; basamak sabitleri çarpıldığında ara ürünler sadeleşir ve toplam denklemin ifadesi elde edilir."
+        },
+        {
+          "metin": "Kapalı bir kaptaki derişimlerin uzun süre değişmemesi, sistemin dengede olduğunu her zaman kesin olarak kanıtlar.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; çok yavaş tepkimelerde de derişimler değişmeyebilir. Oda sıcaklığındaki H₂-O₂ karışımında Q, K'den çok küçüktür ve sistem dengede değildir."
+        },
+        {
+          "metin": "CaCO₃(k) ⇌ CaO(k) + CO₂(g) sisteminde kaba bir miktar daha CaCO₃(k) eklemek Qp değerini değiştirmez.",
+          "dogru": true,
+          "aciklama": "Doğrudur; Qp = P(CO₂) olup katı miktarı ifadede yer almaz."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Tepkime oranı (Q)",
+          "Denge ifadesiyle aynı biçimde, herhangi bir andaki derişimlerle hesaplanan oran"
+        ],
+        [
+          "Q = K",
+          "Sistemin dengede olduğu, net değişimin gözlenmediği durum"
+        ],
+        [
+          "Q < K",
+          "Ürünlerin artacağı, tepkimenin ileri yönde ilerleyeceği durum"
+        ],
+        [
+          "Ara ürün",
+          "Bir basamakta oluşup sonrakinde harcanan, toplam denge ifadesinde sadeleşen tür"
+        ],
+        [
+          "Veriye dayalı önerme",
+          "Ölçüm ve hesaplamayla desteklenen, yeni verilerle sınanabilen yargı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Denge sabiti ifadesiyle aynı biçimde yazılıp herhangi bir andaki derişimlerle hesaplanan orana tepkime ___ denir.",
+          "cevap": "oranı"
+        },
+        {
+          "metin": "Q değeri K değerinden küçükse tepkime ___ yönde ilerler.",
+          "cevap": "ileri"
+        },
+        {
+          "metin": "Basamaklı tepkimelerde toplam denge sabiti, basamakların denge sabitlerinin ___ eşittir.",
+          "cevap": "çarpımına"
+        },
+        {
+          "metin": "Saf katı ve sıvıların etkin derişimi ___ kabul edildiği için bu türler denge ifadesinde görünmez.",
+          "cevap": "1"
+        },
+        {
+          "metin": "Ölçüm, gözlem ve hesaplamayla desteklenen önermelere veriye ___ önerme denir.",
+          "cevap": "dayalı"
+        }
+      ],
+      "kelimeler": [
+        "oranı",
+        "ileri",
+        "çarpımına",
+        "1",
+        "dayalı"
+      ],
+      "fazla": [
+        "geri",
+        "toplamına"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Belirli bir sıcaklıkta CO(g) + H₂O(g) ⇌ CO₂(g) + H₂(g) tepkimesi için Kc = 4'tür. 1 litrelik kapalı bir kaba 1,0'er mol CO, H₂O, CO₂ ve H₂ konuluyor.\na) Başlangıçtaki Qc değerini hesaplayıp tepkimenin yönünü belirleyiniz.\nb) Denge derişimlerini bulunuz.\nc) İki öğrencinin önermelerini değerlendiriniz:\nAyşe: “Başlangıçta tüm derişimler eşit olduğu için sistem zaten dengededir.”\nMert: “Qc = 1 < Kc = 4 olduğundan CO₂ ve H₂ artacak; dengede [CO₂]/[CO] oranı 2 olacaktır.”\nd) Bulduğunuz denge derişimleriyle Qc'yi yeniden hesaplayarak sonucu doğrulayınız.",
+      "ipuclari": [
+        "1. adım: Qc = [CO₂]·[H₂] / ([CO]·[H₂O]) ifadesine başlangıç derişimlerini (hepsi 1,0 M) yerleştirin ve Kc = 4 ile karşılaştırın.",
+        "2. adım: İleri yönde x mol tepkime olduğunu düşünün: girenler 1,0 − x, ürünler 1,0 + x olur. (1,0 + x)² / (1,0 − x)² = 4 eşitliğinde iki tarafın karekökünü alın.",
+        "3. adım: Önermeleri değerlendirirken derişimlerin eşitliğinin bir denge ölçütü olup olmadığını ve Mert'in sayısal tahminini bulduğunuz derişimlerle kontrol edin."
+      ],
+      "cevap": "a) Qc = {kesir:1,0·1,0|1,0·1,0} = 1. Qc = 1 < Kc = 4 olduğundan sistem dengede değildir; tepkime ileri yönde ilerler.\nb) [CO] = [H₂O] = 1,0 − x, [CO₂] = [H₂] = 1,0 + x.\n{kesir:(1,0 + x)²|(1,0 − x)²} = 4 → {kesir:1,0 + x|1,0 − x} = 2 → 1,0 + x = 2 − 2x → 3x = 1 → x = {kesir:1|3}.\nDenge derişimleri: [CO] = [H₂O] = {kesir:2|3} M ≈ 0,67 M; [CO₂] = [H₂] = {kesir:4|3} M ≈ 1,33 M.\nc) Ayşe'nin önermesi geçersizdir. Derişimlerin eşit olması bir denge ölçütü değildir; Qc = 1, Kc = 4'e eşit olmadığı için sistem başlangıçta dengede değildir. Mert'in önermesi veriye dayalıdır ve doğrudur. Q ile K'yi karşılaştırarak yönü doğru bulmuştur. Dengede [CO₂]/[CO] = {kesir:4/3|2/3} = 2 çıkar; bu, sayısal tahminini de doğrular.\nd) Qc = {kesir:(4/3)·(4/3)|(2/3)·(2/3)} = {kesir:16/9|4/9} = 4 = Kc. Denge derişimleri doğrudur ve sistem bu derişimlerde dengededir."
+    }
+  ]
+}

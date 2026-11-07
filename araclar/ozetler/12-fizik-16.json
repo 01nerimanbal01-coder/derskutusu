@@ -1,0 +1,558 @@
+{
+  "ad": "12-fizik-16",
+  "sinif": 12,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "12.3. DALGA MEKANİĞİ",
+  "konu": "12.3.1. Dalgalarda Kırınım, Girişim ve Doppler Olayı: Işığın Çift Yarıkta Girişimi",
+  "ciktilar": [
+    "12.3.1.3. Işığın çift yarıkta girişimine etki eden değişkenleri açıklar.",
+    "12.3.1.3.a) Girişim desenini deney yaparak veya simülasyonlar kullanarak çizer.",
+    "12.3.1.3.b) Çift yarıkta oluşan aydınlık ve karanlık saçakları matematiksel hesaplamalara girmeden nitel gözlem ve çizimlerle yorumlar."
+  ],
+  "giris": "Geçen hafta dalga leğeninde iki kaynağın oluşturduğu katar ve düğüm çizgilerini çizmiştik. Bu hafta aynı fikri {koyu:ışığa} taşıyoruz. Tek renkli ışık birbirine çok yakın iki ince yarıktan geçirildiğinde, perdede düzenli sıralanmış {koyu:aydınlık ve karanlık saçaklar} belirir. Bu görüntü, ışığın bir dalga gibi davrandığının en güçlü kanıtlarından biridir. Haftamızda hesap yapmadan, deney ve simülasyon gözlemleriyle bu deseni çizecek ve desenin hangi değişkenlerle nasıl değiştiğini yorumlayacağız.",
+  "ozet": [
+    "{koyu:Young deneyi:} Tek renkli ışık iki ince yarıktan geçirildiğinde perdede ardışık aydınlık ve karanlık saçaklar oluşur. Bu girişim deseni ışığın dalga modelini destekler.",
+    "{koyu:Uyumlu kaynak koşulu:} Kararlı bir desen için iki yarıktan çıkan ışığın frekansı aynı olmalı, ışık dalgaları da sürekli aynı düzende titreşmelidir. Bu nedenle iki ayrı lamba yerine tek bir kaynağın ışığı ikiye bölünür.",
+    "{koyu:Saçakların anlamı:} Aydınlık saçaklar yapıcı girişimin, karanlık saçaklar söndürücü girişimin olduğu yerlerdir. Perdenin tam ortasında, iki yarığa eşit uzaklıkta merkezi aydınlık saçak bulunur.",
+    "{koyu:Su dalgalarıyla benzerlik:} Katar çizgilerinin ışıktaki karşılığı aydınlık saçaklar, düğüm çizgilerinin karşılığı karanlık saçaklar, merkez doğrusunun karşılığı ise merkezi aydınlık saçaktır.",
+    "{koyu:Saçak genişliğini etkileyenler:} Dalga boyu ve yarık-perde uzaklığı artarsa saçaklar genişler. Yarıklar arası uzaklık artarsa ya da düzenek daha kırıcı bir ortama (örneğin suya) alınırsa saçaklar daralır.",
+    "{koyu:Etkilemeyenler ve kaymalar:} Işık şiddeti saçak genişliğini değiştirmez, yalnız parlaklığı değiştirir. Beyaz ışıkta merkezi saçak beyaz, yan saçaklar ise renkli görünür."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Işığın Doğası Tartışması ve Young Deneyinin Önemi",
+      "metin": [
+        "Işığın ne olduğu yüzyıllar boyunca tartışıldı. {koyu:Newton} ışığı kaynaktan fırlayan çok küçük parçacıkların akışı olarak düşünüyordu. {koyu:Huygens} ise ışığın, su yüzeyindeki dalgalar gibi yayılan bir dalga olduğunu savunuyordu. İki model de yansımayı ve kırılmayı belirli ölçüde açıklayabildiği için hangisinin doğru olduğuna uzun süre karar verilemedi. Tartışmayı çözmek için iki modelin birbirinden farklı sonuç öngördüğü bir deney gerekiyordu.",
+        "19. yüzyılın başında İngiliz bilim insanı {koyu:Thomas Young}, ışığı birbirine çok yakın iki dar yarıktan geçirdi. Parçacık modeli doğru olsaydı perdede yarıkların tam karşısında yalnız iki aydınlık çizgi görülmeliydi. Oysa Young perdede çok sayıda, eşit aralıklarla sıralanmış {koyu:aydınlık ve karanlık şeritler} gözledi. Bu şeritlere {koyu:saçak} denir. Bazı noktalarda ışığın ışıkla birleşip karanlık oluşturması, ancak dalgaların söndürücü girişimiyle açıklanabilir. Geçen hafta su dalgalarında gördüğümüz desenin bir benzeri ışıkta da ortaya çıkmıştı.",
+        "Bu sonuç, ışığın {koyu:dalga modelini} güçlü biçimde destekledi ve ışık dalgalarının dalga boyunun ne kadar küçük olduğunu ilk kez fark ettirdi. Görünür ışığın dalga boyu milimetrenin binde biri kadar bile değildir. Bu yüzden ışıkta girişimi görebilmek için yarıkların çok ince ve birbirine çok yakın olması gerekir. Günlük hayatta ışığın girişimini kolayca fark etmememizin nedeni de budur: Pencereden giren ışık ya da iki ayrı ampul böyle düzenli bir desen oluşturmaz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Model",
+          "Işığı Nasıl Açıklar?",
+          "Çift Yarıktan Beklenen Görüntü",
+          "Deneyle Uyumu"
+        ],
+        "satirlar": [
+          [
+            "Parçacık modeli (Newton)",
+            "Kaynaktan düz çizgiler boyunca fırlayan küçük parçacıklar",
+            "Yarıkların karşısında yalnız iki aydınlık çizgi",
+            "Gözlenen çok sayıda saçağı açıklayamaz"
+          ],
+          [
+            "Dalga modeli (Huygens, Young)",
+            "Ortamda yayılan, üst üste binebilen dalgalar",
+            "Ardışık aydınlık ve karanlık saçaklardan oluşan girişim deseni",
+            "Gözlemle uyumludur"
+          ],
+          [
+            "Young deneyinin sonucu",
+            "Işık girişim yapabilir",
+            "Merkezde aydınlık, iki yanda simetrik saçaklar",
+            "Işığın dalga özelliği gösterdiğinin kanıtı"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Saçak",
+          "metin": "Çift yarık deneyinde perdede oluşan aydınlık veya karanlık şeritlerin her birine saçak denir. Aydınlık saçaklar yapıcı girişimin, karanlık saçaklar söndürücü girişimin gerçekleştiği bölgelerdir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Işık + Işık = Karanlık?",
+          "metin": "Karanlık saçaklarda ışık yok olmaz. Bir yarıktan gelen dalganın tepesi, diğer yarıktan gelen dalganın çukuruyla karşılaşır ve etkiler birbirini dengeler. Enerji desenin aydınlık bölgelerinde toplanır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#2563eb' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#1e3a8a'>Işık Parçacık mı, Dalga mı? Çift Yarıktan Beklenen Görüntü</text><rect x='25' y='45' width='345' height='240' rx='12' fill='#ffffff' stroke='#64748b' stroke-width='2'/><text x='197' y='66' text-anchor='middle' font-size='13' font-weight='700' fill='#334155'>Parçacık modeli: yalnız iki aydınlık çizgi</text><rect x='146' y='80' width='8' height='55' fill='#334155'/><rect x='146' y='150' width='8' height='35' fill='#334155'/><rect x='146' y='200' width='8' height='55' fill='#334155'/><line x1='45' y1='142' x2='315' y2='142' stroke='#f59e0b' stroke-width='2.5' stroke-dasharray='3,6'/><line x1='45' y1='192' x2='315' y2='192' stroke='#f59e0b' stroke-width='2.5' stroke-dasharray='3,6'/><line x1='45' y1='110' x2='140' y2='110' stroke='#f59e0b' stroke-width='2.5' stroke-dasharray='3,6'/><line x1='45' y1='225' x2='140' y2='225' stroke='#f59e0b' stroke-width='2.5' stroke-dasharray='3,6'/><rect x='315' y='80' width='14' height='175' fill='#1e293b'/><rect x='315' y='134' width='14' height='16' fill='#fde047'/><rect x='315' y='184' width='14' height='16' fill='#fde047'/><text x='150' y='272' text-anchor='middle' font-size='11' fill='#475569'>Çift yarık</text><text x='322' y='272' text-anchor='middle' font-size='11' fill='#475569'>Perde</text><text x='80' y='272' text-anchor='middle' font-size='11' fill='#b45309'>Parçacıklar</text><rect x='390' y='45' width='345' height='240' rx='12' fill='#ffffff' stroke='#2563eb' stroke-width='2'/><text x='562' y='66' text-anchor='middle' font-size='13' font-weight='700' fill='#1d4ed8'>Dalga modeli ve deney: çok sayıda saçak</text><line x1='420' y1='90' x2='420' y2='245' stroke='#93c5fd' stroke-width='2'/><line x1='445' y1='90' x2='445' y2='245' stroke='#93c5fd' stroke-width='2'/><line x1='470' y1='90' x2='470' y2='245' stroke='#93c5fd' stroke-width='2'/><rect x='500' y='80' width='8' height='55' fill='#334155'/><rect x='500' y='150' width='8' height='35' fill='#334155'/><rect x='500' y='200' width='8' height='55' fill='#334155'/><g fill='none' stroke='#2563eb' stroke-width='2'><path d='M514 125 A20 20 0 0 1 514 159'/><path d='M524 107 A40 40 0 0 1 524 177'/><path d='M534 90 A60 60 0 0 1 534 194'/></g><g fill='none' stroke='#ea580c' stroke-width='2'><path d='M514 175 A20 20 0 0 1 514 209'/><path d='M524 157 A40 40 0 0 1 524 227'/><path d='M534 140 A60 60 0 0 1 534 244'/></g><rect x='690' y='80' width='14' height='175' fill='#1e293b'/><rect x='690' y='162' width='14' height='10' fill='#fde047'/><rect x='690' y='137' width='14' height='10' fill='#fde047'/><rect x='690' y='112' width='14' height='10' fill='#fde047'/><rect x='690' y='87' width='14' height='10' fill='#fde047' opacity='0.8'/><rect x='690' y='187' width='14' height='10' fill='#fde047'/><rect x='690' y='212' width='14' height='10' fill='#fde047'/><rect x='690' y='237' width='14' height='10' fill='#fde047' opacity='0.8'/><text x='504' y='272' text-anchor='middle' font-size='11' fill='#475569'>Çift yarık</text><text x='697' y='272' text-anchor='middle' font-size='11' fill='#475569'>Perde</text><text x='600' y='272' text-anchor='middle' font-size='11' fill='#1d4ed8'>Dalgalar girişim yapar</text></svg>"
+    },
+    {
+      "baslik": "Çift Yarık Düzeneği ve Uyumlu Işık Kaynakları",
+      "metin": [
+        "Young düzeneğinde ışık kaynağından çıkan ışık önce {koyu:tek bir dar yarıktan (S)} geçirilir. Bu yarıkta kırınıma uğrayan ışık, sanki yarığın bulunduğu yerde küçük bir kaynak varmış gibi yayılır. Bu dalgalar biraz ileride bulunan ve birbirine çok yakın iki ince yarığa ({alt:S|1} ve {alt:S|2}) ulaşır. İki yarıkta yeniden kırınıma uğrayan ışık iki yeni kaynak gibi davranır. Bu kaynaklardan çıkan dalgalar arkadaki perdeye doğru yayılırken üst üste biner ve perdede girişim deseni oluşturur. Su dalgalarındaki çift yarıklı engel düzeneğinin ışıktaki karşılığı tam olarak budur.",
+        "Kararlı bir girişim deseni için iki kaynaktan çıkan dalgaların {koyu:frekanslarının eşit} olması gerekir. Dalgalar arasındaki titreşim düzeni de zamanla değişmemelidir. Bu koşulu sağlayan kaynaklara {koyu:uyumlu (koherent) kaynaklar} denir. Sıradan iki ampul uyumlu değildir. Ampulün içindeki atomlar birbirinden bağımsız ve düzensiz ışık yayar, bu yüzden iki ampulün ışığının karşılaşma düzeni saniyenin çok küçük kesirlerinde sürekli değişir. Göz bu hızlı değişimi izleyemez ve yalnız düzgün bir aydınlanma görür. Young'ın tek yarık-çift yarık düzeni, tek bir dalga cephesini ikiye bölerek iki yarığa aynı anda, aynı düzende ulaşan ışık elde eder.",
+        "Günümüzde okul laboratuvarlarında bu deney çoğunlukla {koyu:lazer} ile yapılır. Lazer ışığı hem tek renklidir hem de kendiliğinden uyumludur; bu nedenle ilk yarığa gerek kalmadan doğrudan çift yarığa tutulabilir. Lazer kullanırken ışını kesinlikle göze doğrultmamak gerekir. Beyaz ışıkla çalışılacaksa kaynağın önüne bir {koyu:renk filtresi} konarak tek renkli ışık elde edilebilir. Düzenekte iki uzaklık önemlidir: iki yarığın merkezleri arasındaki uzaklık ({koyu:d}) ve yarıkların perdeye uzaklığı ({koyu:L}). Desenin nasıl değiştiğini incelerken bu iki büyüklüğü ve ışığın dalga boyunu takip edeceğiz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Düzenek Elemanı",
+          "Görevi",
+          "Su Dalgalarındaki Karşılığı"
+        ],
+        "satirlar": [
+          [
+            "Işık kaynağı ve renk filtresi",
+            "Tek renkli (tek dalga boylu) ışık sağlar",
+            "Belirli frekansta titreşen motor"
+          ],
+          [
+            "Tek yarık (S)",
+            "Işığı tek noktadan yayılan bir dalgaya dönüştürür",
+            "Doğrusal dalgayı süzen ilk engel"
+          ],
+          [
+            "Çift yarık (S₁ ve S₂)",
+            "Aynı dalgadan türeyen iki uyumlu kaynak oluşturur",
+            "Çift yarıklı engel veya tek çubuğa bağlı iki uç"
+          ],
+          [
+            "Perde",
+            "Girişim desenini aydınlık ve karanlık saçaklar olarak gösterir",
+            "Dalga leğeninin altındaki ekran"
+          ],
+          [
+            "Lazer",
+            "Tek renkli ve uyumlu ışığı doğrudan çift yarığa gönderir",
+            "Tek motorla eş zamanlı titreştirilen kaynaklar"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Uyumlu Kaynak Koşulu",
+          "metin": "Işıkta kararlı bir girişim deseni için iki yarıktan çıkan ışık aynı frekansta olmalıdır. Aralarındaki titreşim düzeni de zamanla değişmemelidir. Bu yüzden iki ayrı lamba yerine tek kaynağın ışığı ikiye bölünür ya da lazer kullanılır."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Lazer Güvenliği",
+          "metin": "Okul lazerleri düşük güçlü olsa da ışını doğrudan veya ayna gibi parlak yüzeylerden yansıtarak göze göndermeyin. Deseni yalnız perde üzerinde izleyin."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#0284c7' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0c4a6e'>Young Çift Yarık Düzeneği: Işık Kaynağından Perdeye</text><circle cx='60' cy='160' r='18' fill='#fde047' stroke='#ca8a04' stroke-width='2'/><text x='60' y='200' text-anchor='middle' font-size='11' fill='#0c4a6e'>Işık</text><text x='60' y='214' text-anchor='middle' font-size='11' fill='#0c4a6e'>kaynağı</text><rect x='100' y='120' width='12' height='80' rx='3' fill='#fca5a5' stroke='#dc2626'/><text x='106' y='225' text-anchor='middle' font-size='11' fill='#0c4a6e'>Filtre</text><line x1='80' y1='160' x2='195' y2='160' stroke='#ef4444' stroke-width='2'/><rect x='196' y='70' width='8' height='82' fill='#334155'/><rect x='196' y='168' width='8' height='82' fill='#334155'/><text x='200' y='266' text-anchor='middle' font-size='11' font-weight='700' fill='#0c4a6e'>Tek yarık (S)</text><g fill='none' stroke='#ef4444' stroke-width='2'><path d='M219 134 A30 30 0 0 1 219 186'/><path d='M234 108 A60 60 0 0 1 234 212'/><path d='M249 82 A90 90 0 0 1 249 238'/></g><rect x='326' y='70' width='8' height='58' fill='#334155'/><rect x='326' y='138' width='8' height='44' fill='#334155'/><rect x='326' y='192' width='8' height='58' fill='#334155'/><text x='348' y='130' font-size='12' font-weight='700' fill='#991b1b'>S₁</text><text x='348' y='202' font-size='12' font-weight='700' fill='#991b1b'>S₂</text><text x='330' y='266' text-anchor='middle' font-size='11' font-weight='700' fill='#0c4a6e'>Çift yarık</text><g fill='none' stroke='#f97316' stroke-width='1.8'><path d='M364 81 A60 60 0 0 1 364 185'/><path d='M379 55 A90 90 0 0 1 379 211'/><path d='M364 135 A60 60 0 0 1 364 239'/><path d='M379 109 A90 90 0 0 1 379 265'/></g><line x1='315' y1='133' x2='315' y2='187' stroke='#0f172a' stroke-width='1.5'/><text x='304' y='164' font-size='13' font-weight='700' fill='#0f172a'>d</text><line x1='334' y1='282' x2='520' y2='282' stroke='#0f172a' stroke-width='1.5'/><line x1='334' y1='276' x2='334' y2='288' stroke='#0f172a' stroke-width='1.5'/><line x1='520' y1='276' x2='520' y2='288' stroke='#0f172a' stroke-width='1.5'/><text x='427' y='277' text-anchor='middle' font-size='13' font-weight='700' fill='#0f172a'>L</text><rect x='512' y='60' width='16' height='200' fill='#1e293b'/><rect x='512' y='155' width='16' height='10' fill='#ef4444'/><rect x='512' y='133' width='16' height='10' fill='#ef4444'/><rect x='512' y='111' width='16' height='10' fill='#ef4444'/><rect x='512' y='89' width='16' height='10' fill='#ef4444'/><rect x='512' y='67' width='16' height='10' fill='#ef4444' opacity='0.7'/><rect x='512' y='177' width='16' height='10' fill='#ef4444'/><rect x='512' y='199' width='16' height='10' fill='#ef4444'/><rect x='512' y='221' width='16' height='10' fill='#ef4444'/><rect x='512' y='243' width='16' height='10' fill='#ef4444' opacity='0.7'/><rect x='555' y='50' width='185' height='225' rx='12' fill='#ffffff' stroke='#0284c7' stroke-width='2'/><text x='647' y='72' text-anchor='middle' font-size='13' font-weight='700' fill='#0369a1'>Görevler</text><text x='567' y='96' font-size='11' fill='#0c4a6e'>• Tek yarık: tek noktadan</text><text x='577' y='111' font-size='11' fill='#0c4a6e'>yayılan dalga</text><text x='567' y='134' font-size='11' fill='#0c4a6e'>• Çift yarık: iki uyumlu</text><text x='577' y='149' font-size='11' fill='#0c4a6e'>kaynak (S₁, S₂)</text><text x='567' y='172' font-size='11' fill='#0c4a6e'>• Perde: aydınlık ve</text><text x='577' y='187' font-size='11' fill='#0c4a6e'>karanlık saçaklar</text><text x='567' y='212' font-size='11' fill='#0c4a6e'>• d: yarıklar arası uzaklık</text><text x='567' y='234' font-size='11' fill='#0c4a6e'>• L: yarık-perde uzaklığı</text><text x='567' y='256' font-size='11' fill='#0c4a6e'>• Lazer: tek yarığa gerek yok</text></svg>"
+    },
+    {
+      "baslik": "Perdede Oluşan Desen: Aydınlık ve Karanlık Saçaklar",
+      "metin": [
+        "Çift yarıktan geçen tek renkli ışık perdede belirli bir düzene göre sıralanmış saçaklar oluşturur. Perdenin tam ortasında, iki yarığa eşit uzaklıkta bulunan noktada {koyu:merkezi aydınlık saçak} yer alır. Bu noktaya iki yarıktan gelen ışık eşit yol aldığı için dalgalar hep aynı durumda ulaşır: tepe ile tepe ya da çukur ile çukur. Böylece yapıcı girişim oluşur. Merkezi aydınlık saçağın iki yanında sırasıyla 1. karanlık, 1. aydınlık, 2. karanlık, 2. aydınlık saçaklar simetrik olarak dizilir. Desen merkeze göre bir ayna görüntüsü gibidir.",
+        "Bir saçağın aydınlık mı karanlık mı olacağını belirleyen şey, o noktaya iki yarıktan gelen ışığın aldığı yolların farkıdır. Buna {koyu:yol farkı} denir. Yol farkı sıfır ya da dalga boyunun tam katlarıysa dalgalar aynı durumda karşılaşır ve {koyu:aydınlık saçak} oluşur. Yol farkı yarım dalga boyu, bir buçuk dalga boyu gibi değerlerdeyse bir dalganın tepesi diğerinin çukuruna denk gelir ve {koyu:karanlık saçak} oluşur. Merkezden uzaklaştıkça yol farkı düzenli olarak büyür. Bu nedenle aydınlık ve karanlık saçaklar sırayla birbirini izler. Bu ilişkiyi yalnız nitel olarak kullanacağız, sayısal hesaplamaya girmeyeceğiz.",
+        "Ardışık iki aydınlık saçağın (ya da ardışık iki karanlık saçağın) merkezleri arasındaki uzaklığa {koyu:saçak genişliği} denir. Çift yarık deseninde merkezin yakınındaki saçaklar {koyu:eşit genişlikte ve eşit aralıklıdır}. Su dalgalarındaki hiperbole benzer çizgiler perdeyi düzenli aralıklarla keser ve ışıkta bu kesişimler saçak olarak görünür. Saçakların parlaklığı merkezden uzaklaştıkça yavaş yavaş azalabilir. Bu azalma, her yarığın kendi kırınım etkisiyle ilgilidir ve gelecek haftanın konusudur. Bu hafta yalnız saçakların yeri ve aralıkları üzerinde duruyoruz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Saçak",
+          "Yol Farkı (Nitel)",
+          "Girişim Türü",
+          "Perdede Görünüm"
+        ],
+        "satirlar": [
+          [
+            "Merkezi aydınlık",
+            "Sıfır (iki yarığa eşit uzaklık)",
+            "Yapıcı",
+            "En ortadaki parlak şerit"
+          ],
+          [
+            "1. karanlık",
+            "Yarım dalga boyu",
+            "Söndürücü",
+            "Merkezin iki yanındaki ilk karanlık şeritler"
+          ],
+          [
+            "1. aydınlık",
+            "Bir dalga boyu",
+            "Yapıcı",
+            "Merkezden sonraki ilk parlak şeritler"
+          ],
+          [
+            "2. karanlık",
+            "Bir buçuk dalga boyu",
+            "Söndürücü",
+            "İkinci karanlık şeritler"
+          ],
+          [
+            "2. aydınlık",
+            "İki dalga boyu",
+            "Yapıcı",
+            "İkinci parlak şeritler"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Saçak Genişliği",
+          "metin": "Ardışık iki aydınlık ya da ardışık iki karanlık saçağın merkezleri arasındaki uzaklıktır. Bir aydınlık saçak ile ona komşu karanlık saçak arasındaki uzaklık, saçak genişliğinin yarısıdır."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Merkez Her Zaman Aydınlıktır",
+          "metin": "Uyumlu ve aynı düzende titreşen iki yarıkta perdenin ortası iki yarığa eşit uzaklıktadır. Dalgalar bu noktaya hep aynı durumda ulaştığı için merkez aydınlık saçaktır. Bu, su dalgalarında merkez doğrusunun katar çizgisi olmasının karşılığıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#7c3aed' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#4c1d95'>Perdede Girişim Deseni: Aydınlık ve Karanlık Saçaklar</text><rect x='76' y='55' width='8' height='65' fill='#334155'/><rect x='76' y='130' width='8' height='40' fill='#334155'/><rect x='76' y='180' width='8' height='90' fill='#334155'/><text x='62' y='129' font-size='12' font-weight='700' fill='#991b1b'>S₁</text><text x='62' y='179' font-size='12' font-weight='700' fill='#991b1b'>S₂</text><line x1='84' y1='125' x2='370' y2='150' stroke='#16a34a' stroke-width='1.8'/><line x1='84' y1='175' x2='370' y2='150' stroke='#16a34a' stroke-width='1.8'/><line x1='84' y1='125' x2='370' y2='110' stroke='#ea580c' stroke-width='1.8' stroke-dasharray='6,4'/><line x1='84' y1='175' x2='370' y2='110' stroke='#ea580c' stroke-width='1.8' stroke-dasharray='6,4'/><text x='200' y='205' font-size='11' fill='#166534'>Yeşil yollar eşit: yol farkı sıfır</text><text x='200' y='222' font-size='11' fill='#9a3412'>Turuncu yollar farklı: yol farkı bir λ</text><rect x='370' y='55' width='20' height='215' fill='#0f172a'/><rect x='370' y='143' width='20' height='14' fill='#fde047'/><rect x='370' y='103' width='20' height='14' fill='#fde047'/><rect x='370' y='63' width='20' height='14' fill='#fde047' opacity='0.8'/><rect x='370' y='183' width='20' height='14' fill='#fde047'/><rect x='370' y='223' width='20' height='14' fill='#fde047' opacity='0.8'/><line x1='355' y1='110' x2='355' y2='150' stroke='#7c3aed' stroke-width='1.8'/><line x1='350' y1='110' x2='360' y2='110' stroke='#7c3aed' stroke-width='1.8'/><line x1='350' y1='150' x2='360' y2='150' stroke='#7c3aed' stroke-width='1.8'/><text x='335' y='96' text-anchor='middle' font-size='10' fill='#6d28d9'>saçak</text><text x='335' y='86' text-anchor='middle' font-size='10' fill='#6d28d9'>genişliği</text><text x='398' y='154' font-size='11' font-weight='700' fill='#a16207'>A₀ merkezi aydınlık</text><text x='398' y='134' font-size='11' fill='#334155'>K₁</text><text x='398' y='174' font-size='11' fill='#334155'>K₁</text><text x='398' y='114' font-size='11' fill='#a16207'>A₁</text><text x='398' y='194' font-size='11' fill='#a16207'>A₁</text><text x='398' y='94' font-size='11' fill='#334155'>K₂</text><text x='398' y='214' font-size='11' fill='#334155'>K₂</text><text x='398' y='74' font-size='11' fill='#a16207'>A₂</text><text x='398' y='234' font-size='11' fill='#a16207'>A₂</text><rect x='520' y='50' width='220' height='225' rx='12' fill='#ffffff' stroke='#7c3aed' stroke-width='2'/><text x='630' y='72' text-anchor='middle' font-size='13' font-weight='700' fill='#5b21b6'>Yol farkı ve saçak (nitel)</text><text x='532' y='98' font-size='11' fill='#1e293b'>Sıfır → merkezi aydınlık (A₀)</text><text x='532' y='122' font-size='11' fill='#1e293b'>Yarım λ → 1. karanlık (K₁)</text><text x='532' y='146' font-size='11' fill='#1e293b'>Bir λ → 1. aydınlık (A₁)</text><text x='532' y='170' font-size='11' fill='#1e293b'>Bir buçuk λ → 2. karanlık (K₂)</text><text x='532' y='194' font-size='11' fill='#1e293b'>İki λ → 2. aydınlık (A₂)</text><rect x='532' y='210' width='196' height='52' rx='10' fill='#7c3aed'/><text x='630' y='231' text-anchor='middle' font-size='11' font-weight='700' fill='#ffffff'>Saçaklar eşit aralıklı ve</text><text x='630' y='249' text-anchor='middle' font-size='11' font-weight='700' fill='#ffffff'>merkeze göre simetriktir</text></svg>"
+    },
+    {
+      "baslik": "Girişim Desenini Çizmek: Su Dalgalarıyla Karşılaştırma",
+      "metin": [
+        "Işığın çift yarıkta girişim desenini çizmek için geçen hafta su dalgalarında kullandığımız yöntem aynen uygulanır. Kâğıda bir engel ve üzerinde birbirine yakın iki yarık ({alt:S|1}, {alt:S|2}) çizilir. Her yarığın çevresine eşit aralıklı yarım çemberler çizilir. Düz yaylar dalga tepelerini, kesikli yaylar çukurları gösterir. Tepe-tepe ve çukur-çukur kesişimleri dolu noktayla, tepe-çukur kesişimleri boş noktayla işaretlenir. Dolu noktaları birleştiren eğriler yapıcı girişim, boş noktaları birleştiren eğriler söndürücü girişim çizgileridir. Bu çizgilerin bir perdeyi kestiği yerler perdede aydınlık ve karanlık saçaklar olarak belirir.",
+        "Böylece su dalgalarındaki desen ile ışıktaki desen arasında birebir bir eşleşme kurulur. {koyu:Katar çizgilerinin} perdeye ulaştığı yerlerde {koyu:aydınlık saçaklar}, {koyu:düğüm çizgilerinin} ulaştığı yerlerde {koyu:karanlık saçaklar} oluşur. {koyu:Merkez doğrusunun} perdeyi kestiği nokta {koyu:merkezi aydınlık saçaktır}. Su dalgalarında desen leğenin her yerinde görülür. Işıkta ise dalgaları doğrudan göremeyiz, yalnızca ışığın perdeye ulaştığı yerdeki etkiyi görürüz. Perde, havada görünmez biçimde uzanan girişim çizgilerinin bir kesitini bize gösterir.",
+        "Simülasyonla ya da lazerli deneyle elde edilen deseni deftere aktarırken perdeye önden bakılmış gibi çizmek pratik bir yoldur. Yatay bir şerit üzerinde ortaya geniş bir aydınlık bölge çizilir. İki yana doğru karanlık ve aydınlık bölgeler sırayla ve eşit aralıklarla işaretlenir. Saçaklar A₀, K₁, A₁, K₂ biçiminde adlandırılır. Ardından aynı desenin yandan görünüşü çizilir: yarıklardan perdeye uzanan yelpaze biçimli çizgiler ve her çizginin perdede karşılık geldiği saçak. İki çizim birlikte, girişimin uzaydaki yapısını ve perdedeki izini aynı anda anlamamızı sağlar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Su Dalgalarında (Dalga Leğeni)",
+          "Işıkta (Çift Yarık)",
+          "Ortak Fiziksel Anlam"
+        ],
+        "satirlar": [
+          [
+            "İki noktasal kaynak veya çift yarıklı engel",
+            "İki ince yarık (S₁, S₂)",
+            "Uyumlu iki dalga kaynağı"
+          ],
+          [
+            "Katar çizgisi",
+            "Aydınlık saçak",
+            "Yapıcı girişim, en büyük genlik"
+          ],
+          [
+            "Düğüm çizgisi",
+            "Karanlık saçak",
+            "Söndürücü girişim"
+          ],
+          [
+            "Merkez doğrusu",
+            "Merkezi aydınlık saçak",
+            "İki kaynağa eşit uzaklık, yol farkı sıfır"
+          ],
+          [
+            "Düğüm çizgisi sayısı",
+            "Perdedeki saçak sıklığı",
+            "Dalga boyu ve kaynak aralığına bağlı"
+          ],
+          [
+            "Ekrandaki parlak-karanlık halkalar",
+            "Perdedeki parlak-karanlık şeritler",
+            "Desenin gözlendiği yüzey"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "İki Görünüşü Birlikte Çizin",
+          "metin": "Önce yarıklardan perdeye uzanan çizgileri yandan çizin, sonra perdeyi önden görünüşüyle yanına ekleyin. Her aydınlık saçağı bir katar çizgisiyle, her karanlık saçağı bir düğüm çizgisiyle eşleştirin."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Yarıkların Karşısı Aydınlık Değildir",
+          "metin": "Parçacık düşüncesiyle yarıkların tam karşısının en parlak yer olacağı sanılır. Oysa en parlak saçak, iki yarığın ortasının karşısındaki merkezi aydınlıktır. Diğer saçakların yerini de yarıkların konumu değil, yol farkı belirler."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#0d9488' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#115e59'>Su Dalgasındaki Desen ile Işıktaki Desenin Eşleşmesi</text><rect x='20' y='45' width='280' height='240' rx='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='2'/><text x='160' y='66' text-anchor='middle' font-size='13' font-weight='700' fill='#0369a1'>Dalga leğeni (üstten)</text><line x1='150' y1='250' x2='150' y2='80' stroke='#1d4ed8' stroke-width='3'/><path d='M140 250 Q132 160 105 80' fill='none' stroke='#dc2626' stroke-width='2' stroke-dasharray='6,4'/><path d='M160 250 Q168 160 195 80' fill='none' stroke='#dc2626' stroke-width='2' stroke-dasharray='6,4'/><path d='M130 250 Q112 160 62 82' fill='none' stroke='#1d4ed8' stroke-width='2.5'/><path d='M170 250 Q188 160 238 82' fill='none' stroke='#1d4ed8' stroke-width='2.5'/><path d='M120 250 Q95 175 35 110' fill='none' stroke='#dc2626' stroke-width='2' stroke-dasharray='6,4'/><path d='M180 250 Q205 175 265 110' fill='none' stroke='#dc2626' stroke-width='2' stroke-dasharray='6,4'/><circle cx='110' cy='252' r='6' fill='#dc2626'/><circle cx='190' cy='252' r='6' fill='#dc2626'/><text x='110' y='276' text-anchor='middle' font-size='11' font-weight='700' fill='#991b1b'>K₁</text><text x='190' y='276' text-anchor='middle' font-size='11' font-weight='700' fill='#991b1b'>K₂</text><text x='150' y='276' text-anchor='middle' font-size='10' fill='#1d4ed8'>merkez</text><rect x='315' y='45' width='195' height='240' rx='12' fill='#ffffff' stroke='#0d9488' stroke-width='2'/><text x='412' y='66' text-anchor='middle' font-size='13' font-weight='700' fill='#0f766e'>Karşılıklar</text><text x='325' y='96' font-size='11' fill='#1d4ed8'>Katar çizgisi</text><text x='412' y='96' font-size='11' fill='#0f172a'>→ Aydınlık saçak</text><text x='325' y='132' font-size='11' fill='#dc2626'>Düğüm çizgisi</text><text x='412' y='132' font-size='11' fill='#0f172a'>→ Karanlık saçak</text><text x='325' y='168' font-size='11' fill='#1d4ed8'>Merkez doğrusu</text><text x='419' y='168' font-size='11' fill='#0f172a'>→ Merkezi</text><text x='432' y='182' font-size='11' fill='#0f172a'>aydınlık</text><text x='325' y='214' font-size='11' fill='#0369a1'>İki kaynak</text><text x='412' y='214' font-size='11' fill='#0f172a'>→ İki yarık</text><text x='325' y='250' font-size='11' fill='#0369a1'>Leğen ekranı</text><text x='412' y='250' font-size='11' fill='#0f172a'>→ Perde</text><rect x='525' y='45' width='215' height='240' rx='12' fill='#ffffff' stroke='#ca8a04' stroke-width='2'/><text x='632' y='66' text-anchor='middle' font-size='13' font-weight='700' fill='#a16207'>Perdeye önden bakış</text><text x='630' y='100' text-anchor='middle' font-size='11' fill='#a16207'>Merkezi aydınlık ↓</text><rect x='542' y='110' width='180' height='90' rx='4' fill='#1e293b'/><rect x='624' y='110' width='12' height='90' fill='#fde047'/><rect x='600' y='110' width='12' height='90' fill='#fde047'/><rect x='576' y='110' width='12' height='90' fill='#fde047'/><rect x='552' y='110' width='12' height='90' fill='#fde047' opacity='0.75'/><rect x='648' y='110' width='12' height='90' fill='#fde047'/><rect x='672' y='110' width='12' height='90' fill='#fde047'/><rect x='696' y='110' width='12' height='90' fill='#fde047' opacity='0.75'/><text x='632' y='224' text-anchor='middle' font-size='11' fill='#334155'>Sarı: aydınlık saçak</text><text x='632' y='242' text-anchor='middle' font-size='11' fill='#334155'>Koyu: karanlık saçak</text><text x='632' y='264' text-anchor='middle' font-size='11' font-weight='700' fill='#a16207'>Eşit aralıklı, simetrik</text></svg>"
+    },
+    {
+      "baslik": "Çift Yarıkta Girişime Etki Eden Değişkenler",
+      "metin": [
+        "Saçak genişliğini anlamanın kolay yolu şu soruyu sormaktır: Perdede bir saçaktan sonrakine geçmek için yol farkının bir dalga boyu kadar artması gerekir. Bu artış perdede ne kadar yol gidilince sağlanır? {koyu:Dalga boyu (λ) büyükse} yol farkının bir dalga boyu artması için perdede daha fazla ilerlemek gerekir, bu yüzden {koyu:saçaklar genişler}. Görünür ışıkta dalga boyu kırmızıdan mora doğru küçüldüğü için kırmızı ışıkla en geniş, mor ışıkla en dar saçaklar elde edilir. Kırmızı lazer yerine yeşil lazer kullanılırsa saçaklar daralır ve perdeye daha çok saçak sığar.",
+        "Yarıkların {koyu:birbirinden uzaklığı (d) artırılırsa} perdede küçük bir yer değiştirme bile yol farkını hızla büyütür. Saçaklar birbirine yaklaşır ve {koyu:daralır}; d azaltılırsa genişler. Bu durum, su dalgalarında kaynaklar uzaklaştırılınca düğüm çizgisi sayısının artmasının karşılığıdır. Perdenin yarıklara {koyu:uzaklığı (L) artırılırsa} yarıklardan yelpaze gibi açılan girişim çizgileri perdeye daha geniş aralıklarla ulaşır, bu yüzden {koyu:saçaklar genişler}. Perde yaklaştırılırsa saçaklar daralır. L değişince saçak sayısı açısından desen aynı kalır, yalnız büyür ya da küçülür.",
+        "Düzenek {koyu:sudan ya da daha kırıcı bir ortama} alınırsa ışığın frekansı değişmez ama hızı azalır. Dalga boyu küçüldüğü için {koyu:saçaklar daralır}. Işık kaynağının {koyu:şiddeti} artırılırsa saçaklar daha parlak görünür, ama genişlikleri ve yerleri değişmez. Yarık genişliği değiştirilirse de saçak genişliği değişmez; yalnız perdeye ulaşan ışık miktarı, yani parlaklık değişir. Bazı değişiklikler ise deseni daraltıp genişletmez, yalnız kaydırır. Tek yarık (S) yukarı kaydırılırsa merkezi aydınlık aşağı kayar. Yarıklardan birinin önüne ince saydam bir levha konursa desen o yarık tarafına kayar. Her iki durumda da saçak genişliği aynı kalır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yapılan Değişiklik",
+          "Saçak Genişliği",
+          "Desende Gözlenen"
+        ],
+        "satirlar": [
+          [
+            "Daha büyük dalga boylu ışık (ör. mavi yerine kırmızı)",
+            "Artar",
+            "Saçaklar açılır, perdeye daha az saçak sığar"
+          ],
+          [
+            "Yarıklar arası uzaklığı (d) artırmak",
+            "Azalır",
+            "Saçaklar sıklaşır"
+          ],
+          [
+            "Perdeyi uzaklaştırmak (L artar)",
+            "Artar",
+            "Desen büyür, saçaklar açılır"
+          ],
+          [
+            "Düzeneği suya batırmak",
+            "Azalır",
+            "Dalga boyu küçülür, saçaklar sıklaşır"
+          ],
+          [
+            "Işık şiddetini artırmak",
+            "Değişmez",
+            "Aydınlık saçaklar daha parlak görünür"
+          ],
+          [
+            "Tek yarığı (S) yukarı kaydırmak",
+            "Değişmez",
+            "Merkezi aydınlık aşağı kayar"
+          ],
+          [
+            "Bir yarığın önüne ince saydam levha koymak",
+            "Değişmez",
+            "Desen levha konan yarık tarafına kayar"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Saçak Genişliğinin Bağlı Olduğu Değişkenler",
+          "metin": "Saçak genişliği ışığın dalga boyu ve yarık-perde uzaklığı arttıkça artar. Yarıklar arası uzaklık ve ortamın kırıcılığı arttıkça azalır. Işık şiddeti ve yarık genişliği saçak genişliğini değiştirmez."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Su Dalgasından Işığa Köprü",
+          "metin": "Su dalgalarında düğüm çizgisi sayısını artıran her değişiklik, ışıkta saçakları daraltır. Kısa dalga boyu ve uzak kaynaklar daha sık çizgi demektir. Su dalgalarındaki derinlik etkisinin ışıktaki karşılığı ise ortamın kırıcılığıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#0d9488' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#115e59'>Saçak Genişliğini Değiştiren Değişkenler</text><rect x='25' y='45' width='345' height='115' rx='12' fill='#ffffff' stroke='#dc2626' stroke-width='2'/><text x='197' y='66' text-anchor='middle' font-size='13' font-weight='700' fill='#991b1b'>Dalga boyu: kırmızı → mavi</text><rect x='45' y='78' width='130' height='30' fill='#1e293b'/><rect x='107' y='78' width='6' height='30' fill='#ef4444'/><rect x='81' y='78' width='6' height='30' fill='#ef4444'/><rect x='55' y='78' width='6' height='30' fill='#ef4444'/><rect x='133' y='78' width='6' height='30' fill='#ef4444'/><rect x='159' y='78' width='6' height='30' fill='#ef4444'/><text x='187' y='98' text-anchor='middle' font-size='14' fill='#334155'>→</text><rect x='200' y='78' width='130' height='30' fill='#1e293b'/><rect x='262' y='78' width='6' height='30' fill='#3b82f6'/><rect x='248' y='78' width='6' height='30' fill='#3b82f6'/><rect x='234' y='78' width='6' height='30' fill='#3b82f6'/><rect x='220' y='78' width='6' height='30' fill='#3b82f6'/><rect x='206' y='78' width='6' height='30' fill='#3b82f6'/><rect x='276' y='78' width='6' height='30' fill='#3b82f6'/><rect x='290' y='78' width='6' height='30' fill='#3b82f6'/><rect x='304' y='78' width='6' height='30' fill='#3b82f6'/><rect x='318' y='78' width='6' height='30' fill='#3b82f6'/><text x='110' y='126' text-anchor='middle' font-size='11' fill='#334155'>Kırmızı: geniş</text><text x='265' y='126' text-anchor='middle' font-size='11' fill='#334155'>Mavi: dar</text><text x='197' y='148' text-anchor='middle' font-size='12' font-weight='700' fill='#991b1b'>λ küçülünce saçaklar daralır</text><rect x='390' y='45' width='345' height='115' rx='12' fill='#ffffff' stroke='#ca8a04' stroke-width='2'/><text x='562' y='66' text-anchor='middle' font-size='13' font-weight='700' fill='#a16207'>Yarıklar arası uzaklık (d) artarsa</text><rect x='410' y='78' width='130' height='30' fill='#1e293b'/><rect x='472' y='78' width='6' height='30' fill='#fde047'/><rect x='446' y='78' width='6' height='30' fill='#fde047'/><rect x='420' y='78' width='6' height='30' fill='#fde047'/><rect x='498' y='78' width='6' height='30' fill='#fde047'/><rect x='524' y='78' width='6' height='30' fill='#fde047'/><text x='552' y='98' text-anchor='middle' font-size='14' fill='#334155'>→</text><rect x='565' y='78' width='130' height='30' fill='#1e293b'/><rect x='627' y='78' width='6' height='30' fill='#fde047'/><rect x='613' y='78' width='6' height='30' fill='#fde047'/><rect x='599' y='78' width='6' height='30' fill='#fde047'/><rect x='585' y='78' width='6' height='30' fill='#fde047'/><rect x='571' y='78' width='6' height='30' fill='#fde047'/><rect x='641' y='78' width='6' height='30' fill='#fde047'/><rect x='655' y='78' width='6' height='30' fill='#fde047'/><rect x='669' y='78' width='6' height='30' fill='#fde047'/><rect x='683' y='78' width='6' height='30' fill='#fde047'/><text x='475' y='126' text-anchor='middle' font-size='11' fill='#334155'>d küçük</text><text x='630' y='126' text-anchor='middle' font-size='11' fill='#334155'>d büyük</text><text x='562' y='148' text-anchor='middle' font-size='12' font-weight='700' fill='#a16207'>d artınca saçaklar daralır</text><rect x='25' y='168' width='345' height='115' rx='12' fill='#ffffff' stroke='#16a34a' stroke-width='2'/><text x='197' y='189' text-anchor='middle' font-size='13' font-weight='700' fill='#166534'>Perde uzaklığı (L) artarsa</text><rect x='45' y='201' width='130' height='30' fill='#1e293b'/><rect x='107' y='201' width='6' height='30' fill='#fde047'/><rect x='93' y='201' width='6' height='30' fill='#fde047'/><rect x='79' y='201' width='6' height='30' fill='#fde047'/><rect x='65' y='201' width='6' height='30' fill='#fde047'/><rect x='51' y='201' width='6' height='30' fill='#fde047'/><rect x='121' y='201' width='6' height='30' fill='#fde047'/><rect x='135' y='201' width='6' height='30' fill='#fde047'/><rect x='149' y='201' width='6' height='30' fill='#fde047'/><rect x='163' y='201' width='6' height='30' fill='#fde047'/><text x='187' y='221' text-anchor='middle' font-size='14' fill='#334155'>→</text><rect x='200' y='201' width='130' height='30' fill='#1e293b'/><rect x='262' y='201' width='6' height='30' fill='#fde047'/><rect x='236' y='201' width='6' height='30' fill='#fde047'/><rect x='210' y='201' width='6' height='30' fill='#fde047'/><rect x='288' y='201' width='6' height='30' fill='#fde047'/><rect x='314' y='201' width='6' height='30' fill='#fde047'/><text x='110' y='249' text-anchor='middle' font-size='11' fill='#334155'>L küçük</text><text x='265' y='249' text-anchor='middle' font-size='11' fill='#334155'>L büyük</text><text x='197' y='271' text-anchor='middle' font-size='12' font-weight='700' fill='#166534'>L artınca saçaklar genişler</text><rect x='390' y='168' width='345' height='115' rx='12' fill='#ffffff' stroke='#0284c7' stroke-width='2'/><text x='562' y='189' text-anchor='middle' font-size='13' font-weight='700' fill='#0369a1'>Düzenek suya batırılırsa</text><rect x='410' y='201' width='130' height='30' fill='#1e293b'/><rect x='472' y='201' width='6' height='30' fill='#fde047'/><rect x='446' y='201' width='6' height='30' fill='#fde047'/><rect x='420' y='201' width='6' height='30' fill='#fde047'/><rect x='498' y='201' width='6' height='30' fill='#fde047'/><rect x='524' y='201' width='6' height='30' fill='#fde047'/><text x='552' y='221' text-anchor='middle' font-size='14' fill='#334155'>→</text><rect x='565' y='201' width='130' height='30' fill='#0c4a6e'/><rect x='627' y='201' width='6' height='30' fill='#fde047'/><rect x='609' y='201' width='6' height='30' fill='#fde047'/><rect x='591' y='201' width='6' height='30' fill='#fde047'/><rect x='573' y='201' width='6' height='30' fill='#fde047'/><rect x='645' y='201' width='6' height='30' fill='#fde047'/><rect x='663' y='201' width='6' height='30' fill='#fde047'/><rect x='681' y='201' width='6' height='30' fill='#fde047'/><text x='475' y='249' text-anchor='middle' font-size='11' fill='#334155'>Havada</text><text x='630' y='249' text-anchor='middle' font-size='11' fill='#334155'>Suda</text><text x='562' y='271' text-anchor='middle' font-size='12' font-weight='700' fill='#0369a1'>Suda λ küçülür, saçaklar daralır</text></svg>"
+    },
+    {
+      "baslik": "Deney ve Simülasyonla Gözlem, Beyaz Işıkta Girişim ve Yaygın Yanılgılar",
+      "metin": [
+        "Okulda çift yarık deneyi bir lazer kalem, üzerine iğne ucuyla çok yakın iki çizik açılmış isli bir cam ya da hazır bir çift yarık plakası ve birkaç metre uzaktaki beyaz bir duvarla yapılabilir. Oda karartılır, lazer yarıklara tutulur ve duvarda oluşan saçaklar gözlenir. Ardından deney açık erişimli dalga girişimi simülasyonlarıyla sürdürülebilir. Önce bir renk seçilip desen izlenir. Simülasyon duraklatılarak saçaklar deftere çizilir. Sonra {koyu:yalnız bir değişken} değiştirilir: renk, yarık aralığı ya da perde uzaklığı. Yeni desen önceki çizimin altına çizilerek saçak genişlikleri karşılaştırılır. Bu yöntem, her değişkenin etkisini ayrı ayrı görmemizi sağlar.",
+        "Deney {koyu:beyaz ışıkla} yapıldığında ilginç bir görüntü ortaya çıkar. Beyaz ışık, farklı dalga boylarındaki renklerin karışımıdır. Her renk kendi saçak genişliğiyle ayrı bir desen oluşturur. Perdenin tam ortasında yol farkı bütün renkler için sıfır olduğundan bütün renklerin aydınlık saçakları üst üste gelir ve {koyu:merkezi saçak beyaz} görünür. Merkezden uzaklaştıkça renkler ayrışır. Mor ışığın saçakları dar olduğu için her renkli saçağın {koyu:iç kenarı mor-mavi, dış kenarı kırmızı} görünür. Daha uzaklarda farklı renklerin saçakları birbirine karışır ve desen silikleşir. Sabun köpüğünde ve su üzerindeki ince yağ tabakasında görülen renkler de ışığın girişiminden kaynaklanır.",
+        "Konuyla ilgili yaygın yanılgılardan biri, ışık şiddeti artırılınca daha çok saçak oluşacağını sanmaktır. Oysa şiddet yalnız parlaklığı değiştirir. İkinci yanılgı, iki ayrı el fenerinin ışığıyla da girişim deseni görülebileceğini düşünmektir. Bu kaynaklar uyumlu olmadığı için kararlı desen oluşmaz. Üçüncü yanılgı, karanlık saçaklara hiç ışık gelmediğini sanmaktır. Aslında oraya iki yarıktan da ışık gelir, ama dalgalar birbirini söndürür. Nitekim yarıklardan biri kapatılırsa o bölgeler de aydınlanır. Yarıklardan biri kapatıldığında çift yarık girişim deseni kaybolur ve perdede tek yarığın oluşturduğu farklı bir görüntü kalır. Bu görüntüyü, yani tek yarıkta kırınımı ve onu etkileyen değişkenleri gelecek hafta inceleyeceğiz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yaygın Yanılgı",
+          "Doğrusu",
+          "Gerekçe"
+        ],
+        "satirlar": [
+          [
+            "Işık şiddeti artınca saçaklar daralır veya çoğalır.",
+            "Saçak genişliği değişmez, yalnız parlaklık artar.",
+            "Şiddet dalga boyunu, d'yi ve L'yi değiştirmez."
+          ],
+          [
+            "İki ayrı lambayla da girişim deseni görülür.",
+            "Kararlı desen için uyumlu kaynak gerekir.",
+            "Ayrı lambaların ışığı düzensiz ve birbirinden bağımsızdır."
+          ],
+          [
+            "Karanlık saçaklara ışık ulaşmaz.",
+            "Oraya iki yarıktan da ışık ulaşır.",
+            "Tepe ile çukur karşılaşır, etkiler birbirini dengeler."
+          ],
+          [
+            "En parlak yerler yarıkların tam karşısıdır.",
+            "En parlak saçak, perdenin ortasındaki merkezi aydınlıktır.",
+            "Merkezde yol farkı sıfırdır."
+          ],
+          [
+            "Beyaz ışıkta bütün saçaklar beyazdır.",
+            "Yalnız merkezi saçak beyazdır, diğerleri renklidir.",
+            "Her rengin saçak genişliği farklıdır."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Sabun Köpüğündeki Renkler",
+          "metin": "Işık ince bir sabun zarının ön ve arka yüzeyinden yansır. Bu iki yansıyan dalga üst üste binerek girişim yapar. Zarın kalınlığı yer yer değiştiği için farklı yerlerde farklı renkler güçlenir ve köpükte renkli halkalar görülür."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Tek Değişken Kuralı",
+          "metin": "Simülasyonda aynı anda yalnız bir ayarı değiştirin ve her yeni deseni bir öncekinin altına aynı ölçekle çizin. Böylece saçakların daraldığını ya da genişlediğini kolayca karşılaştırabilirsiniz."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#475569' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Simülasyon Adımları ve Beyaz Işıkta Girişim Deseni</text><rect x='25' y='48' width='340' height='46' rx='10' fill='#dbeafe' stroke='#2563eb' stroke-width='1.5'/><text x='40' y='76' font-size='12' fill='#1e3a8a'>1. Tek renk seç, perdedeki deseni gözle</text><rect x='25' y='104' width='340' height='46' rx='10' fill='#dcfce7' stroke='#16a34a' stroke-width='1.5'/><text x='40' y='132' font-size='12' fill='#14532d'>2. Deseni duraklat, saçakları defterine çiz</text><rect x='25' y='160' width='340' height='46' rx='10' fill='#fef3c7' stroke='#ca8a04' stroke-width='1.5'/><text x='40' y='188' font-size='12' fill='#713f12'>3. Yalnız bir değişkeni değiştir (λ, d veya L)</text><rect x='25' y='216' width='340' height='46' rx='10' fill='#fce7f3' stroke='#db2777' stroke-width='1.5'/><text x='40' y='244' font-size='12' fill='#831843'>4. Yeni deseni çiz, saçak genişliğini karşılaştır</text><rect x='390' y='48' width='345' height='230' rx='12' fill='#ffffff' stroke='#475569' stroke-width='2'/><text x='562' y='72' text-anchor='middle' font-size='13' font-weight='700' fill='#0f172a'>Beyaz ışıkla elde edilen desen</text><rect x='410' y='88' width='305' height='60' rx='4' fill='#1e293b'/><rect x='556' y='88' width='14' height='60' fill='#ffffff'/><rect x='582' y='88' width='5' height='60' fill='#7c3aed'/><rect x='587' y='88' width='5' height='60' fill='#2563eb'/><rect x='592' y='88' width='5' height='60' fill='#16a34a'/><rect x='597' y='88' width='5' height='60' fill='#eab308'/><rect x='602' y='88' width='5' height='60' fill='#dc2626'/><rect x='539' y='88' width='5' height='60' fill='#7c3aed'/><rect x='534' y='88' width='5' height='60' fill='#2563eb'/><rect x='529' y='88' width='5' height='60' fill='#16a34a'/><rect x='524' y='88' width='5' height='60' fill='#eab308'/><rect x='519' y='88' width='5' height='60' fill='#dc2626'/><rect x='612' y='88' width='6' height='60' fill='#7c3aed' opacity='0.7'/><rect x='620' y='88' width='6' height='60' fill='#2563eb' opacity='0.7'/><rect x='628' y='88' width='6' height='60' fill='#16a34a' opacity='0.7'/><rect x='636' y='88' width='6' height='60' fill='#eab308' opacity='0.7'/><rect x='644' y='88' width='6' height='60' fill='#dc2626' opacity='0.7'/><rect x='508' y='88' width='6' height='60' fill='#7c3aed' opacity='0.7'/><rect x='500' y='88' width='6' height='60' fill='#2563eb' opacity='0.7'/><rect x='492' y='88' width='6' height='60' fill='#16a34a' opacity='0.7'/><rect x='484' y='88' width='6' height='60' fill='#eab308' opacity='0.7'/><rect x='476' y='88' width='6' height='60' fill='#dc2626' opacity='0.7'/><text x='563' y='166' text-anchor='middle' font-size='12' font-weight='700' fill='#0f172a'>↑ Merkezi saçak beyaz</text><text x='562' y='192' text-anchor='middle' font-size='11' fill='#334155'>Saçakların iç kenarı mor, dış kenarı kırmızı</text><text x='562' y='214' text-anchor='middle' font-size='11' fill='#334155'>Uzaklaştıkça renkler karışır, desen silikleşir</text><rect x='410' y='228' width='305' height='38' rx='10' fill='#475569'/><text x='562' y='252' text-anchor='middle' font-size='11' font-weight='700' fill='#ffffff'>Neden? Kırmızının dalga boyu en büyük, morunki en küçük</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Kırmızı lazerle yapılan bir çift yarık deneyinde perdede belirgin saçaklar gözleniyor. Düzenekte başka hiçbir şey değiştirilmeden kırmızı lazer yerine mavi lazer kullanılıyor. Desende ne gibi bir değişiklik gözlenir? Nedenini açıklayınız.",
+      "cevap": "1. adım: Değişen tek büyüklük ışığın rengi, yani dalga boyudur. Mavi ışığın dalga boyu kırmızı ışığınkinden küçüktür.\n2. adım: Saçak genişliği dalga boyuyla birlikte artar ya da azalır. Dalga boyu küçülünce perdede yol farkının bir dalga boyu artması için daha az ilerlemek yeterli olur.\n3. adım: Bu nedenle {koyu:saçaklar daralır} ve birbirine yaklaşır. Perdenin aynı bölümüne daha çok saçak sığar.\nSonuç: Merkezi aydınlık saçak yine perdenin ortasında kalır. Desen yine simetriktir, yalnız saçaklar daha sık ve daha dar olur.",
+      "ipucu": "Önce iki rengin dalga boylarını karşılaştırınız, sonra saçak genişliğinin dalga boyuyla nasıl değiştiğini hatırlayınız."
+    },
+    {
+      "soru": "Bir çift yarık deneyinde yarıklar arasındaki uzaklık (d) azaltılıyor ve aynı anda perde yarıklardan uzaklaştırılıyor (L artırılıyor). Işığın rengi değişmediğine göre saçak genişliği nasıl değişir?",
+      "cevap": "1. adım: Değişkenleri tek tek ele alalım. Yarıklar arası uzaklık azalınca saçaklar {koyu:genişler}.\n2. adım: Perde uzaklaştırılınca yarıklardan açılan girişim çizgileri perdeye daha geniş aralıklarla ulaşır, saçaklar yine {koyu:genişler}.\n3. adım: İki değişiklik aynı yönde etki yaptığından birbirini desteklemektedir.\nSonuç: Saçak genişliği kesinlikle artar. Desen daha geniş ve daha seyrek saçaklardan oluşur.",
+      "ipucu": "İki değişkenin her birinin etkisini ayrı ayrı belirleyiniz. Etkiler aynı yöndeyse sonuç kesin olarak o yöndedir."
+    },
+    {
+      "soru": "Havada kurulu bir çift yarık düzeneği, ışık kaynağı ve perdeyle birlikte tamamen suyla dolu bir akvaryumun içine yerleştiriliyor. Işığın frekansı değişmediğine göre girişim deseni nasıl değişir?",
+      "cevap": "1. adım: Işık havadan suya geçtiğinde frekansı değişmez, ancak suyun kırıcılığı havadan büyük olduğu için ışığın hızı azalır.\n2. adım: Hız azalıp frekans sabit kalınca ışığın {koyu:dalga boyu küçülür}.\n3. adım: Dalga boyu küçülen ışık daha dar saçaklar oluşturur. Bu durum, kırmızı ışıktan maviye geçmeye benzer.\nSonuç: Suda {koyu:saçaklar daralır} ve sıklaşır. Merkezi aydınlık yine ortada kalır.",
+      "ipucu": "Ortam değişince ışığın hangi özelliğinin sabit kaldığını, hangisinin değiştiğini düşününüz."
+    },
+    {
+      "soru": "Kararlı bir girişim deseni gözlenen düzenekte önce ışık kaynağının şiddeti artırılıyor. Daha sonra şiddet eski haline getirilip yarıklardan biri kapatılıyor. Her iki durumda perdede neler gözlenir?",
+      "cevap": "1. durum (şiddet artırılıyor):\n- Işık şiddeti dalga boyunu, yarıklar arası uzaklığı ve perde uzaklığını değiştirmez.\n- Bu yüzden {koyu:saçak genişliği ve saçakların yeri aynı kalır}. Yalnız aydınlık saçaklar daha parlak görünür.\n2. durum (bir yarık kapatılıyor):\n- Girişim için iki uyumlu kaynak gerekir. Tek yarık kaldığında üst üste binecek ikinci bir dalga yoktur.\n- Çift yarığın eşit aralıklı aydınlık-karanlık deseni {koyu:kaybolur}. Önceden karanlık olan bölgelere de ışık ulaşır.\n- Perdede, tek yarıktan geçen ışığın oluşturduğu farklı bir görüntü kalır. Bu görüntü gelecek haftanın konusudur.\nSonuç: Şiddet yalnız parlaklığı değiştirir. Bir yarığın kapatılması ise girişimi tamamen ortadan kaldırır.",
+      "ipucu": "Girişimin oluşması için kaç kaynağa ihtiyaç olduğunu ve şiddetin hangi büyüklükleri etkilemediğini hatırlayınız."
+    },
+    {
+      "soru": "Bir öğrenci, karanlık bir odada iki ayrı el fenerini aynı duvar bölgesine tutuyor ama duvarda hiçbir aydınlık-karanlık saçak göremiyor. Bunun nedenini açıklayınız. Young deneyinde bu sorun nasıl çözülmüştür?",
+      "cevap": "1. adım: Kararlı bir girişim deseni için iki kaynağın {koyu:uyumlu} olması gerekir. Frekansları eşit olmalı ve aralarındaki titreşim düzeni zamanla değişmemelidir.\n2. adım: El fenerlerindeki ampuller beyaz ışık yayar. Ampullerin içindeki atomlar birbirinden bağımsız ve düzensiz ışık saçar. İki fenerin ışığının karşılaşma düzeni çok kısa sürelerde sürekli değişir.\n3. adım: Saçakların yerleri saniyenin çok küçük kesirlerinde kaydığı için göz yalnız ortalama, düzgün bir aydınlanma görür.\n4. adım: Young, ışığı önce tek bir dar yarıktan geçirip ardından iki yarığa göndermiştir. Böylece tek bir dalga cephesi ikiye bölünmüş ve {koyu:iki uyumlu kaynak} elde edilmiştir. Günümüzde aynı amaçla lazer de kullanılır.\nSonuç: Uyumlu kaynak olmadan ışıkta kararlı girişim deseni gözlenemez.",
+      "ipucu": "Su dalgalarında iki ayrı motorla çalışan kaynakların neden kararlı desen veremediğini hatırlayınız."
+    },
+    {
+      "soru": "Çift yarık deneyi tek renkli ışık yerine beyaz ışıkla yapılıyor. Perdenin ortasındaki saçağın rengi nedir? Yan saçaklar nasıl görünür? Açıklayınız.",
+      "cevap": "1. adım: Beyaz ışık, dalga boyları farklı renklerin karışımıdır. Her renk kendi saçak genişliğiyle ayrı bir girişim deseni oluşturur.\n2. adım: Perdenin ortasında iki yarığa olan yol farkı bütün renkler için sıfırdır. Bu yüzden bütün renklerin aydınlık saçakları burada üst üste gelir ve {koyu:merkezi saçak beyaz} görünür.\n3. adım: Merkezden uzaklaştıkça renklerin saçakları farklı yerlere düşer. Mor ışığın dalga boyu en küçük olduğundan saçağı merkeze en yakın yerde oluşur. Kırmızı ışığın dalga boyu en büyük olduğundan saçağı en uzakta oluşur.\n4. adım: Bu yüzden yan saçaklar renkli görünür. Her saçağın {koyu:iç kenarı mor-mavi, dış kenarı kırmızıdır}. Daha uzaklarda renkler birbirine karışır ve desen silikleşir.\nSonuç: Merkez beyaz, yan saçaklar ise gökkuşağı renklerinde, renkli şeritler biçimindedir.",
+      "ipucu": "Merkezde yol farkının hangi değeri aldığını ve farklı dalga boylarının saçak genişliklerini düşününüz."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Tek renkli ışıkla yapılan bir çift yarık deneyinde saçak genişliğini artırmak isteyen bir öğrenci aşağıdakilerden hangisini yapmalıdır?",
+      "secenekler": [
+        "Yarıklar arasındaki uzaklığı artırmak",
+        "Kırmızı ışık yerine mor ışık kullanmak",
+        "Perdeyi yarıklardan uzaklaştırmak",
+        "Düzeneği suyun içine yerleştirmek"
+      ],
+      "dogru": 2,
+      "aciklama": "Perde uzaklaştırılınca (L artınca) saçaklar genişler. Yarıklar arası uzaklığı artırmak, mor ışık kullanmak ve düzeneği suya batırmak saçakları daraltır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Çift yarık deneyinde perdenin ortasında oluşan merkezi aydınlık saçak için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Yarıklardan birinin tam karşısında oluşur.",
+        "İki yarığa eşit uzaklıktadır; buraya gelen ışık dalgaları arasında yol farkı yoktur.",
+        "Söndürücü girişimin olduğu yerdir.",
+        "Yalnız beyaz ışık kullanıldığında oluşur."
+      ],
+      "dogru": 1,
+      "aciklama": "Merkezi aydınlık saçak iki yarığa eşit uzaklıktadır. Dalgalar buraya aynı durumda ulaştığı için yapıcı girişim oluşur. Tek renkli ışıkta da beyaz ışıkta da oluşur. Su dalgalarındaki merkez doğrusunun karşılığıdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kararlı bir girişim deseni gözlenen çift yarık düzeneğinde aşağıdaki değişikliklerden hangisi saçak genişliğini değiştirmez?",
+      "secenekler": [
+        "Işığın rengini değiştirmek",
+        "Yarıklar arasındaki uzaklığı değiştirmek",
+        "Perde ile yarıklar arasındaki uzaklığı değiştirmek",
+        "Işık kaynağının şiddetini artırmak"
+      ],
+      "dogru": 3,
+      "aciklama": "Işık şiddeti dalga boyunu ve düzeneğin boyutlarını değiştirmez. Bu yüzden saçak genişliği aynı kalır, yalnız aydınlık saçaklar daha parlak görünür. Diğer üç değişiklik saçak genişliğini değiştirir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Young deneyinde ışığın önce tek bir dar yarıktan geçirilip sonra çift yarığa gönderilmesinin temel amacı nedir?",
+      "secenekler": [
+        "İki yarıktan aynı düzende titreşen, uyumlu iki ışık kaynağı elde etmek",
+        "Işığın şiddetini artırmak",
+        "Beyaz ışığı renklerine ayırmak",
+        "Işığın hızını azaltarak dalga boyunu küçültmek"
+      ],
+      "dogru": 0,
+      "aciklama": "Tek yarıktan kırınıma uğrayan ışık, iki yarığa aynı dalga cephesinden ulaşır. Böylece iki yarık uyumlu kaynak gibi davranır ve kararlı bir girişim deseni oluşur. Tek yarık ışığın şiddetini artırmaz, aksine azaltır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Young'ın çift yarık deneyi, ışığın dalga modelini destekleyen önemli bir kanıttır.",
+          "dogru": true,
+          "aciklama": "Perdede çok sayıda aydınlık ve karanlık saçağın oluşması ancak dalgaların girişimiyle açıklanabilir."
+        },
+        {
+          "metin": "Karanlık saçakların bulunduğu yerlere yarıklardan hiç ışık ulaşmaz.",
+          "dogru": false,
+          "aciklama": "Bu noktalara iki yarıktan da ışık ulaşır. Bir dalganın tepesi diğerinin çukuruyla karşılaşıp söndürücü girişim yaptığı için karanlık görünür."
+        },
+        {
+          "metin": "Çift yarık deneyinde kırmızı ışığın oluşturduğu saçaklar mor ışığınkilerden daha geniştir.",
+          "dogru": true,
+          "aciklama": "Kırmızı ışığın dalga boyu mor ışığınkinden büyüktür. Saçak genişliği de dalga boyuyla birlikte artar."
+        },
+        {
+          "metin": "Düzenek suya batırıldığında ışığın dalga boyu büyüdüğü için saçaklar genişler.",
+          "dogru": false,
+          "aciklama": "Suda ışığın frekansı değişmez, hızı azalır. Dalga boyu küçüldüğü için saçaklar daralır."
+        },
+        {
+          "metin": "Beyaz ışıkla yapılan çift yarık deneyinde merkezi saçak beyaz, yan saçaklar ise renkli görünür.",
+          "dogru": true,
+          "aciklama": "Merkezde bütün renkler için yol farkı sıfırdır ve renkler üst üste gelir. Uzaklaştıkça her rengin saçağı farklı yere düşer."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Uyumlu (koherent) kaynak",
+          "Frekansları eşit, titreşim düzenleri zamanla değişmeyen ışık kaynakları"
+        ],
+        [
+          "Aydınlık saçak",
+          "Perdede yapıcı girişimin olduğu, su dalgalarındaki katar çizgisine karşılık gelen şerit"
+        ],
+        [
+          "Karanlık saçak",
+          "Perdede söndürücü girişimin olduğu, düğüm çizgisine karşılık gelen şerit"
+        ],
+        [
+          "Saçak genişliği",
+          "Ardışık iki aydınlık ya da iki karanlık saçağın merkezleri arasındaki uzaklık"
+        ],
+        [
+          "Yol farkı",
+          "Perdedeki bir noktaya iki yarıktan gelen ışığın aldığı yolların farkı"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Young deneyinde ışığın girişim deseni oluşturması, ışığın ___ modelini destekler.",
+          "cevap": "dalga"
+        },
+        {
+          "metin": "Perdenin ortasında, iki yarığa eşit uzaklıkta merkezi ___ saçak oluşur.",
+          "cevap": "aydınlık"
+        },
+        {
+          "metin": "Su dalgalarındaki düğüm çizgilerinin ışıktaki karşılığı ___ saçaklardır.",
+          "cevap": "karanlık"
+        },
+        {
+          "metin": "Görünür ışık renkleri içinde en geniş saçakları ___ ışık oluşturur.",
+          "cevap": "kırmızı"
+        },
+        {
+          "metin": "Düzenek suya batırıldığında ışığın dalga boyu küçüldüğü için saçaklar ___.",
+          "cevap": "daralır"
+        }
+      ],
+      "kelimeler": [
+        "dalga",
+        "aydınlık",
+        "karanlık",
+        "kırmızı",
+        "daralır"
+      ],
+      "fazla": [
+        "parçacık",
+        "genişler"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir öğrenci kırmızı lazer ve çift yarık plakasıyla duvarda bir girişim deseni elde ediyor ve deseni defterine çiziyor. Ardından sırasıyla şu değişiklikleri yapıyor. Her değişiklikte, bir önceki duruma göre deseni yeniden çiziyor: I) Kırmızı lazer yerine yeşil lazer kullanıyor. II) Yeşil lazerle devam edip yarıkları birbirine daha yakın olan bir plakaya geçiyor. III) Lazerin şiddetini artırıyor. Her değişiklikten sonra saçak genişliğinin nasıl değiştiğini ve yeni çizimin bir öncekinden nasıl farklılaşacağını açıklayınız.",
+      "ipuclari": [
+        "1. adım: Her değişiklikte dalga boyu, yarıklar arası uzaklık ve perde uzaklığından hangisinin değiştiğini belirleyiniz.",
+        "2. adım: Değişen büyüklüğün saçak genişliğini artıran mı yoksa azaltan mı olduğunu hatırlayınız.",
+        "3. adım: Şiddet gibi bu üç büyüklüğü değiştirmeyen etkenlerin yalnız parlaklığı etkilediğini unutmayınız."
+      ],
+      "cevap": "I) Yeşil ışığın dalga boyu kırmızı ışığınkinden küçüktür. Yarıklar ve perde değişmediği için {koyu:saçaklar daralır}. Yeni çizimde saçaklar birbirine daha yakın çizilir ve aynı genişlikteki bölgeye daha çok saçak sığar. Merkezi aydınlık yine ortadadır, desen yine simetriktir.\nII) Yarıklar arası uzaklık azaltılmıştır. d azalınca saçaklar {koyu:genişler}. Bu nedenle yeni çizimde saçaklar bir önceki (yeşil ışıklı) çizime göre daha geniş aralıklarla çizilir. Bu değişiklik, I. adımdaki daralmaya ters yönde etki eder. Sonuçtaki desenin ilk kırmızı desenden geniş mi dar mı olacağı, hesaplamaya girilmeden kesin söylenemez. Ancak bir önceki duruma göre genişlediği kesindir.\nIII) Lazerin şiddeti dalga boyunu, d'yi ve L'yi değiştirmez. Bu yüzden {koyu:saçak genişliği ve saçakların yerleri değişmez}. Yeni çizim II. çizimle aynı aralıklarla yapılır, yalnız aydınlık saçakların daha parlak olduğu not edilir.\nGenel sonuç: Saçak genişliği dalga boyuna, yarıklar arası uzaklığa ve perde uzaklığına bağlıdır. Işık şiddeti yalnız desenin parlaklığını değiştirir."
+    }
+  ]
+}

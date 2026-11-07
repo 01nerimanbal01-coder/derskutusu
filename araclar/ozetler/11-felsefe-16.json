@@ -1,0 +1,572 @@
+{
+  "ad": "11-felsefe-16",
+  "sinif": 11,
+  "ders": "felsefe",
+  "ders_adi": "Felsefe",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "3. Ünite: Akıl ve İnanç",
+  "konu": "Akıl-İnanç İlişkisine Yönelik Felsefi Sorular ve Problemler / Akıl-İnanç İlişkisine Yönelik Felsefi Görüş ve Argümanlar",
+  "ciktilar": [
+    "FEL.11.3.2. Akıl-inanç ilişkisiyle ilgili felsefi düşünce ortaya koyabilme.",
+    "FEL.11.3.2.b) Akıl-inanç ilişkisiyle ilgili görüş ve argüman oluşturur.",
+    "Akıl-inanç ilişkisine dair bir tez belirler; Toulmin modelinin öğelerini (veri, gerekçe, destek, niteleyici, çürütme) kullanarak tezini gerekçelendirir.",
+    "Ahlak ve dinî deneyim argümanlarını kendi cümleleriyle kurar, en güçlü karşı argümanı adil biçimde ifade eder ve ona gerekçeli bir yanıt vererek kısa bir felsefi deneme planı hazırlar."
+  ],
+  "giris": "Geçen hafta filozofların kurduğu argümanları parçalarına ayırdık; öncülleri bulduk, geçerliliği ve sağlamlığı sınadık. Bu hafta rolleri değiştiriyoruz: Artık çözümleyen değil, {koyu:argüman kuran} biz olacağız. Bir kanaati felsefi bir görüşe dönüştürmek için Toulmin modelini öğrenecek, akıl ile inancın ilişkisine dair tez seçeneklerini Barbour'un dört modeliyle haritalayacak, kavramları netleştirip ispat yükünü belirlemeyi göreceğiz. Ardından daha önce ayrıntısıyla işlemediğimiz iki argümanı, {koyu:ahlak argümanını} ve {koyu:dinî deneyim argümanını} adım adım kuracağız. Son olarak karşı argümanı adil biçimde dile getirmeyi ve bütün bunları kısa bir felsefi deneme planında birleştirmeyi deneyeceğiz. Hedefimiz, haftanın sonunda akıl-inanç ilişkisine dair {koyu:kendi gerekçeli görüşümüzü} yazabilmek.",
+  "ozet": [
+    "{koyu:Kanaatten görüşe:} Felsefi görüş, bir tezin gerekçeleri, sınırları ve karşı argümanlara yanıtıyla birlikte ortaya konmuş hâlidir; 'bence' demek tek başına görüş değildir.",
+    "{koyu:Toulmin modeli:} Bir argüman iddia, veri, gerekçe, destek, niteleyici ve çürütme öğeleriyle kurulursa hem güçlü hem de dürüst bir biçim kazanır.",
+    "{koyu:Tez seçenekleri:} Barbour'a göre akıl (bilim) ile inanç arasındaki ilişki çatışma, bağımsızlık, diyalog ve bütünleşme modelleriyle düşünülebilir; her modelin güçlü ve zayıf yanı vardır.",
+    "{koyu:Kavram ve ispat yükü:} 'İnanç' ve 'akıl' kavramlarının hangi anlamda kullanıldığı baştan belirtilmeli; bir iddiada bulunan, o iddiayı gerekçelendirme yükünü de üstlenir.",
+    "{koyu:Ahlak ve dinî deneyim argümanları:} Kant Tanrı'yı pratik aklın bir koyutu olarak temellendirir; Euthyphron ikilemi ve hüsün-kubuh tartışması ahlakın kaynağını sorgular; Swinburne'ün inanırlık ilkesi dinî deneyimi bir gerekçe olarak savunur.",
+    "{koyu:Adil tartışma:} Hoşgörü ilkesi karşı görüşü en güçlü biçimiyle ele almayı gerektirir; saman adam safsatası ise karşı görüşü zayıflatarak çürütmektir ve felsefi değeri yoktur."
+  ],
+  "bolumler": [
+    {
+      "baslik": "1. Tezden Argümana: Toulmin Modeliyle Felsefi Görüş Kurmak",
+      "metin": [
+        "Geçen hafta hazır argümanları çözümledik; bu hafta yön değişiyor ve argümanı kendimiz kuruyoruz. Önce önemli bir ayrımı yapalım: 'Bence bilim ile din çatışır' cümlesi bir {koyu:kanaattir}. Bir kanaat ancak neden öyle düşündüğümüzü, hangi koşullarda geçerli saydığımızı ve hangi itirazlara rağmen savunduğumuzu gösterdiğimizde {koyu:felsefi bir görüşe} dönüşür. Görüş oluşturmanın ilk adımı iyi bir soru seçmektir. Akıl-inanç alanında verimli sorular şunlardır: 'İnanç akılla temellendirilmek zorunda mıdır?', 'Akıl, inancın içeriğini sınayabilir mi?', 'Akılla kanıtlanamayan bir şeye inanmak rasyonel olabilir mi?', 'Akıl ile vahiy çatıştığında hangisine öncelik verilmelidir?' İyi bir felsefi soru açıktır, cevabı tek bir gözlemle verilemez ve farklı gerekçelerle farklı cevaplar almaya elverişlidir.",
+        "İngiliz düşünür {koyu:Stephen Toulmin}, 1958'de yayımlanan 'Argümanların Kullanımları' adlı eserinde gündelik ve akademik tartışmalarda argümanların nasıl kurulduğunu gösteren bir model önerdi. Bu modele göre bir argümanın altı öğesi vardır. {koyu:İddia}, savunulan tezdir. {koyu:Veri}, iddiaya dayanak olan olgu ya da gözlemlerdir. {koyu:Gerekçe}, veriden iddiaya geçmemize izin veren genel ilkedir. {koyu:Destek}, gerekçenin neden kabul edilmesi gerektiğini gösteren ek bilgi ya da kuramdır. {koyu:Niteleyici}, iddianın ne kadar güçlü ileri sürüldüğünü belirten 'büyük olasılıkla', 'çoğu durumda', 'zorunlu olarak' gibi ifadelerdir. {koyu:Çürütme} ya da istisna ise iddianın hangi koşulda geçerli olmayacağını kabul eden kısımdır. Geçen hafta öğrendiğimiz öncül-sonuç yapısı bu modelin içinde yer alır; Toulmin modeli buna niteleyici ve çürütme öğelerini ekleyerek argümanı daha dürüst hâle getirir.",
+        "Modeli akıl-inanç tartışmasına uygulayalım. {koyu:Veri:} Evren, matematiksel yasalarla ifade edilebilecek bir düzen sergiler. {koyu:Gerekçe:} Akılla kavranabilen bir düzen, büyük olasılıkla akılla kavranabilen bir kaynağa işaret eder. {koyu:Destek:} Teleolojik argüman ve İbn Rüşd'ün 'hakikat hakikate zıt olmaz' ilkesi. {koyu:Niteleyici:} Makul ölçüde. {koyu:İddia:} Akıl ile inanç birbiriyle uyum içindedir. {koyu:Çürütme:} Ancak düzen, bilinçli bir kaynağa başvurmadan da yeterince açıklanabiliyorsa bu argüman zayıflar. Niteleyici öğesi özellikle önemlidir. 'Kesinlikle', 'her zaman', 'hiçbir zaman' gibi güçlü ifadeler ispat yükünü ağırlaştırır; tek bir karşı örnek bu tür iddiaları çürütmeye yeter. Gerekçelerin gücüyle orantılı bir niteleyici seçmek, felsefi alçakgönüllülüğün ve entelektüel dürüstlüğün göstergesidir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Öğe",
+          "İşlevi",
+          "Yönlendirici soru",
+          "Akıl-inanç örneği"
+        ],
+        "satirlar": [
+          [
+            "İddia",
+            "Savunulan tez",
+            "Neyi savunuyorum?",
+            "Akılla kanıtlanamayan bir inanç da rasyonel olabilir."
+          ],
+          [
+            "Veri",
+            "İddiaya dayanak olan olgu",
+            "Elimde ne var?",
+            "Başkalarının zihnine, geçmişin gerçekliğine de kesin kanıt olmadan inanırız."
+          ],
+          [
+            "Gerekçe",
+            "Veriden iddiaya geçişi sağlayan ilke",
+            "Bu veri neden iddiamı destekler?",
+            "Kesin kanıtı olmayan her inancı reddetmek, temel inançlarımızın çoğunu yok eder."
+          ],
+          [
+            "Destek",
+            "Gerekçeyi güçlendiren kuram veya otorite",
+            "Gerekçeme neden güvenilmeli?",
+            "Plantinga'nın temel inanç görüşü, James'in inanma istenci"
+          ],
+          [
+            "Niteleyici",
+            "İddianın gücünü belirleme",
+            "Ne kadar eminim?",
+            "Bazı durumlarda, belli koşullarla"
+          ],
+          [
+            "Çürütme",
+            "İddianın geçerli olmadığı durum",
+            "Hangi koşulda yanılırım?",
+            "İnancın açıkça karşı kanıtı varsa bu iddia geçerli olmaz."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Felsefi Görüş",
+          "metin": "Bir felsefi soruya verilen, {koyu:gerekçeleri açıkça gösterilmiş}, sınırları belirlenmiş ve karşı argümanlarla sınanmış cevaptır. Görüşün değeri, sonucunun kime hoş geldiğiyle değil, gerekçelerinin gücüyle ölçülür."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Niteleyici Seçmek",
+          "metin": "Gerekçen kesin bir tümdengelime dayanıyorsa 'zorunlu olarak', en iyi açıklamaya çıkarıma dayanıyorsa 'büyük olasılıkla', yalnızca tutarlılık gösteriyorsa 'mümkündür' de. Niteleyiciyi gerekçenin türü belirler, duygunun yoğunluğu değil."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Toulmin Modeli: Bir Görüşü Argümana Dönüştürmek</text><rect x='20' y='48' width='210' height='76' rx='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='2'/><text x='125' y='70' text-anchor='middle' font-size='13' font-weight='bold' fill='#075985'>VERİ</text><text x='125' y='92' text-anchor='middle' font-size='11' fill='#0c4a6e'>Evren matematiksel</text><text x='125' y='108' text-anchor='middle' font-size='11' fill='#0c4a6e'>yasalarla ifade edilebilir.</text><line x1='230' y1='86' x2='292' y2='86' stroke='#334155' stroke-width='3'/><polygon points='292,78 306,86 292,94' fill='#334155'/><rect x='308' y='58' width='150' height='56' rx='12' fill='#fef9c3' stroke='#ca8a04' stroke-width='2'/><text x='383' y='80' text-anchor='middle' font-size='12' font-weight='bold' fill='#854d0e'>NİTELEYİCİ</text><text x='383' y='100' text-anchor='middle' font-size='11' fill='#713f12'>makul ölçüde</text><line x1='458' y1='86' x2='496' y2='86' stroke='#334155' stroke-width='3'/><polygon points='496,78 510,86 496,94' fill='#334155'/><rect x='512' y='48' width='228' height='76' rx='12' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='626' y='70' text-anchor='middle' font-size='13' font-weight='bold' fill='#166534'>İDDİA</text><text x='626' y='92' text-anchor='middle' font-size='11' fill='#14532d'>Akıl ile inanç birbiriyle</text><text x='626' y='108' text-anchor='middle' font-size='11' fill='#14532d'>uyum içindedir.</text><line x1='268' y1='86' x2='268' y2='150' stroke='#7c3aed' stroke-width='2' stroke-dasharray='5 4'/><rect x='150' y='150' width='300' height='58' rx='12' fill='#ede9fe' stroke='#7c3aed' stroke-width='2'/><text x='300' y='170' text-anchor='middle' font-size='12' font-weight='bold' fill='#5b21b6'>GEREKÇE</text><text x='300' y='188' text-anchor='middle' font-size='11' fill='#4c1d95'>Akılla kavranabilen düzen, akılla</text><text x='300' y='202' text-anchor='middle' font-size='11' fill='#4c1d95'>kavranabilen bir kaynağa işaret eder.</text><line x1='300' y1='208' x2='300' y2='226' stroke='#7c3aed' stroke-width='2'/><rect x='150' y='226' width='300' height='58' rx='12' fill='#f3e8ff' stroke='#a855f7' stroke-width='2'/><text x='300' y='246' text-anchor='middle' font-size='12' font-weight='bold' fill='#6b21a8'>DESTEK</text><text x='300' y='264' text-anchor='middle' font-size='11' fill='#581c87'>Teleolojik argüman; İbn Rüşd:</text><text x='300' y='278' text-anchor='middle' font-size='11' fill='#581c87'>hakikat hakikate zıt olmaz.</text><line x1='626' y1='124' x2='626' y2='160' stroke='#dc2626' stroke-width='2' stroke-dasharray='5 4'/><rect x='490' y='160' width='250' height='90' rx='12' fill='#fee2e2' stroke='#dc2626' stroke-width='2'/><text x='615' y='182' text-anchor='middle' font-size='12' font-weight='bold' fill='#991b1b'>ÇÜRÜTME (İSTİSNA)</text><text x='615' y='202' text-anchor='middle' font-size='11' fill='#7f1d1d'>Ancak düzen, bilinçli bir</text><text x='615' y='218' text-anchor='middle' font-size='11' fill='#7f1d1d'>kaynak olmadan da yeterince</text><text x='615' y='234' text-anchor='middle' font-size='11' fill='#7f1d1d'>açıklanabiliyorsa argüman zayıflar.</text></svg>"
+    },
+    {
+      "baslik": "2. Akıl ile İnancın İlişkisine Dair Tez Seçenekleri: Barbour'un Dört Modeli",
+      "metin": [
+        "Kendi görüşümüzü kurmadan önce, hangi tez seçeneklerinin bulunduğunu bilmek gerekir. Fizikçi ve din felsefecisi {koyu:Ian Barbour}, bilim ile din arasındaki ilişkiye dair tutumları dört modelde toplamıştır. Bu sınıflandırma, akıl ile inanç arasındaki ilişkiyi düşünmek için de kullanışlı bir haritadır. {koyu:Çatışma modeline} göre iki alan aynı soruya rakip cevaplar verir; biri haklıysa öteki haksızdır. Bu model iki uçtan savunulabilir: Yalnızca deneysel bilimin bilgi verdiğini savunan katı bilimcilik inancı akıl dışı sayar; kutsal metni her konuda harfiyen ve bilimsel bir anlatım olarak okuyan katı lafızcılık ise bilimsel bulguları inancın düşmanı görür. Her iki uç da çatışmayı kaçınılmaz kabul etmesiyle birbirine benzer.",
+        "{koyu:Bağımsızlık modeline} göre akıl (özellikle bilim) ile inanç farklı sorulara cevap verdiği için çatışamaz. Bilim evrenin 'nasıl' işlediğini, inanç ise varlığın 'neden' ve 'ne için' olduğunu, hayatın anlamını ve değerleri sorar. Biyolog Stephen Jay Gould 1990'ların sonunda bu görüşü 'örtüşmeyen alanlar' adıyla savunmuştur. Bu modelin felsefi kökleri Kant'a kadar uzanır. Kant 'Saf Aklın Eleştirisi'nin ikinci baskısının önsözünde, inanca yer açmak için bilgiyi sınırlamak zorunda kaldığını söyler. Ona göre kuramsal akıl Tanrı'yı bilemez ama bu, inancı akıl dışı kılmaz; inancın yeri ahlaki ve pratik alandır. Kierkegaard'ın fideizmi de inancı akılla ölçülmeyecek bir sıçrayış olarak görür ve bu modele yakın durur. Bağımsızlık modelinin gücü gereksiz çatışmaları önlemesidir. Zayıflığı ise dinlerin evrenin yaratılışı gibi olgusal iddialar da içerdiğini gözden kaçırma tehlikesidir.",
+        "{koyu:Diyalog modeli} iki alanın birbirine dokunduğu sınır sorularına dikkat çeker: Evren neden akılla anlaşılabilir? Doğa yasaları neden vardır? Bilimsel yöntemin dayandığı düzen varsayımı nereden gelir? Bu sorular bilimin içinden doğar ama bilimle cevaplanamaz. {koyu:Bütünleşme modeli} ise bir adım daha ileri gider ve aklın, inancın bazı temel önermelerini temellendirebileceğini savunur. Doğal teoloji, Thomas Aquinas'ın beş yolu ve İbn Rüşd'ün 'Faslü'l-Makâl'de dile getirdiği uyum görüşü bu modelin örnekleridir. Kendi görüşünüzü oluştururken bu dört modelden hangisine yakın durduğunuzu bilmek size iki kazanç sağlar. Birincisi, tezinizi açık biçimde adlandırırsınız. İkincisi, seçtiğiniz modelin {koyu:bilinen zayıf yanını} önceden görür ve ona karşı savunmanızı hazırlarsınız."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Model",
+          "Temel tez",
+          "Örnek düşünür veya yaklaşım",
+          "Yöneltilebilecek itiraz"
+        ],
+        "satirlar": [
+          [
+            "Çatışma",
+            "Akıl ve inanç aynı soruya rakip cevaplar verir.",
+            "Katı bilimcilik; katı lafızcılık",
+            "Bilimin her soruyu cevaplayabildiği iddiası bilimsel olarak kanıtlanamaz; tarihte pek çok bilim insanı inançlıdır."
+          ],
+          [
+            "Bağımsızlık",
+            "İki alan farklı sorulara cevap verir; çatışamaz.",
+            "Kant, Kierkegaard, Gould",
+            "Dinler yalnızca değer değil, olgusal iddialar da içerir."
+          ],
+          [
+            "Diyalog",
+            "İki alan sınır sorularında birbiriyle konuşur.",
+            "Evrenin anlaşılabilirliği üzerine tartışmalar",
+            "Diyalog, hangi tarafın neyi kabul edeceğini belirsiz bırakabilir."
+          ],
+          [
+            "Bütünleşme",
+            "Akıl inancın bazı önermelerini temellendirebilir.",
+            "Thomas Aquinas, İbn Rüşd, doğal teoloji",
+            "Akla dayalı argümanlar tartışmalıdır; inanç bu argümanlara bağımlı hâle gelebilir."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Kant'ın Ünlü Cümlesi",
+          "metin": "Kant, 'Saf Aklın Eleştirisi'nin 1787 tarihli ikinci baskısının önsözünde {koyu:inanca yer açmak için bilgiyi sınırlamak} zorunda kaldığını yazar. Bu cümle, bağımsızlık modelinin felsefi temellerinden biri sayılır: Kuramsal aklın sınırını çizmek inancı ortadan kaldırmaz, ona başka bir alan açar."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Yanlış İkilem Tuzağı",
+          "metin": "'Ya akla ya inanca' biçiminde kurulan bir soru, aradaki diyalog ve bütünleşme seçeneklerini görmezden gelir. Yalnızca iki seçenek varmış gibi davranmak {koyu:yanlış ikilem} safsatasıdır. Tezinizi kurarken seçeneklerin gerçekten iki tane olup olmadığını sorgulayın."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Barbour'un Dört Modeli: Akıl ile İnanç Arasındaki Mesafe</text><line x1='40' y1='62' x2='710' y2='62' stroke='#475569' stroke-width='3'/><polygon points='710,54 726,62 710,70' fill='#475569'/><text x='40' y='52' font-size='11' fill='#475569'>Ayrılık</text><text x='726' y='52' text-anchor='end' font-size='11' fill='#475569'>Yakınlaşma</text><rect x='20' y='82' width='170' height='190' rx='12' fill='#fee2e2' stroke='#dc2626' stroke-width='2'/><text x='105' y='106' text-anchor='middle' font-size='14' font-weight='bold' fill='#991b1b'>ÇATIŞMA</text><text x='105' y='132' text-anchor='middle' font-size='11' fill='#7f1d1d'>Aynı soruya</text><text x='105' y='148' text-anchor='middle' font-size='11' fill='#7f1d1d'>rakip cevaplar</text><text x='105' y='180' text-anchor='middle' font-size='11' fill='#7f1d1d'>Katı bilimcilik</text><text x='105' y='196' text-anchor='middle' font-size='11' fill='#7f1d1d'>Katı lafızcılık</text><text x='105' y='240' text-anchor='middle' font-size='12' font-weight='bold' fill='#991b1b'>Biri haklıysa</text><text x='105' y='256' text-anchor='middle' font-size='12' font-weight='bold' fill='#991b1b'>öteki haksız</text><rect x='202' y='82' width='170' height='190' rx='12' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='287' y='106' text-anchor='middle' font-size='14' font-weight='bold' fill='#92400e'>BAĞIMSIZLIK</text><text x='287' y='132' text-anchor='middle' font-size='11' fill='#78350f'>Nasıl? / Neden?</text><text x='287' y='148' text-anchor='middle' font-size='11' fill='#78350f'>farklı sorular</text><text x='287' y='180' text-anchor='middle' font-size='11' fill='#78350f'>Kant, Kierkegaard</text><text x='287' y='196' text-anchor='middle' font-size='11' fill='#78350f'>Gould</text><text x='287' y='240' text-anchor='middle' font-size='12' font-weight='bold' fill='#92400e'>Çatışma</text><text x='287' y='256' text-anchor='middle' font-size='12' font-weight='bold' fill='#92400e'>mümkün değil</text><rect x='384' y='82' width='170' height='190' rx='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='2'/><text x='469' y='106' text-anchor='middle' font-size='14' font-weight='bold' fill='#075985'>DİYALOG</text><text x='469' y='132' text-anchor='middle' font-size='11' fill='#0c4a6e'>Sınır soruları:</text><text x='469' y='148' text-anchor='middle' font-size='11' fill='#0c4a6e'>Evren neden anlaşılır?</text><text x='469' y='180' text-anchor='middle' font-size='11' fill='#0c4a6e'>Doğa yasaları</text><text x='469' y='196' text-anchor='middle' font-size='11' fill='#0c4a6e'>neden var?</text><text x='469' y='240' text-anchor='middle' font-size='12' font-weight='bold' fill='#075985'>İki alan</text><text x='469' y='256' text-anchor='middle' font-size='12' font-weight='bold' fill='#075985'>konuşur</text><rect x='566' y='82' width='174' height='190' rx='12' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='653' y='106' text-anchor='middle' font-size='14' font-weight='bold' fill='#166534'>BÜTÜNLEŞME</text><text x='653' y='132' text-anchor='middle' font-size='11' fill='#14532d'>Akıl inancın bazı</text><text x='653' y='148' text-anchor='middle' font-size='11' fill='#14532d'>önermelerini temellendirir</text><text x='653' y='180' text-anchor='middle' font-size='11' fill='#14532d'>Thomas Aquinas</text><text x='653' y='196' text-anchor='middle' font-size='11' fill='#14532d'>İbn Rüşd</text><text x='653' y='240' text-anchor='middle' font-size='12' font-weight='bold' fill='#166534'>Doğal</text><text x='653' y='256' text-anchor='middle' font-size='12' font-weight='bold' fill='#166534'>teoloji</text></svg>"
+    },
+    {
+      "baslik": "3. Kavramları Netleştirmek ve İspat Yükünü Belirlemek",
+      "metin": [
+        "Akıl-inanç tartışmalarının önemli bir kısmı, taraflar aynı kelimeyi farklı anlamlarda kullandığı için çıkmaza girer. Bu yüzden argüman kurmanın ikinci adımı {koyu:kavramları netleştirmektir}. 'İnanç' kelimesi en az üç anlamda kullanılır. Birincisi {koyu:önerme inancıdır}: Bir yargının doğru olduğunu kabul etmek, örneğin 'yarın yağmur yağacağına inanıyorum'. İkincisi {koyu:güven inancıdır}: Bir kişiye ya da bir şeye güvenmek ve bağlanmak, örneğin 'arkadaşıma inanıyorum'. Üçüncüsü dinî anlamda {koyu:imandır}. İslam düşüncesinde iman genellikle kalp ile tasdik olarak tanımlanır; kelamcıların bir kısmı buna dil ile ikrarı da ekler. Dinî iman hem önerme inancını hem de güven ve bağlılığı içerir. 'İnanç akılla kanıtlanmalıdır' diyen biri yalnızca önerme inancını düşünüyor olabilir; güven boyutu ise kanıtla tam olarak karşılanamayan bir ilişki türüdür.",
+        "'Akıl' kavramı da tek anlamlı değildir. Dar anlamda akıl, yalnızca deneysel olarak doğrulanabilen ve mantıksal olarak kanıtlanabilen şeyleri kabul eden bir ölçüt gibi kullanılır. Geniş anlamda ise gerekçe gösterme, tutarlılık arama, kanıtları tartma ve en iyi açıklamayı seçme yetisidir. Akıl dar anlamda alınırsa ahlaki değerler, başka zihinlerin varlığı ve hatta bilimin dayandığı düzen varsayımı da 'akıl dışı' görünmeye başlar. Bir tartışmanın ortasında kelimenin anlamını fark ettirmeden değiştirmek {koyu:anlam kayması} (equivocation) safsatasıdır. Örneğin 'İnanç kanıtsız kabuldür; bilim insanları da hipotezlerine inanır; öyleyse bilim de inançtır' akıl yürütmesinde 'inanç' iki farklı anlamda kullanılmaktadır. Bu nedenle iyi bir felsefi metin, anahtar kavramları baştan tanımlar ve o tanıma sadık kalır.",
+        "Üçüncü adım {koyu:ispat yükünü} belirlemektir. Felsefede genel ilke, bir iddiada bulunan kişinin o iddiayı gerekçelendirme yükünü taşımasıdır. Bertrand Russell bunu bir benzetmeyle anlatır: Biri Dünya ile Mars arasında Güneş'in çevresinde dönen, teleskopla görülemeyecek kadar küçük bir porselen çaydanlık olduğunu söylese, bu iddiayı çürütemememiz ona inanmamızı gerektirmez. Russell bu benzetmeyi Tanrı inancının ispat yükünü inanana yüklemek için kullanır. Ancak karşı taraf da önemli bir noktaya işaret eder: 'Tanrı yoktur' demek de bir iddiadır ve gerekçe ister. Bu yüzden ispat yükü hem 'vardır' diyene hem de 'yoktur' diyene düşer; yalnızca hüküm vermekten kaçınan {koyu:agnostik} tutum bu yükü üstlenmez. Ayrıca çaydanlık ile Tanrı arasındaki benzetmenin yerinde olup olmadığı da tartışmalıdır. Çaydanlık evrenin içindeki sıradan bir nesnedir; Tanrı ise evrenin varlığını açıklamak üzere ileri sürülen bir varlıktır. Kendi argümanınızı kurarken hangi iddiayı üstlendiğinizi ve bu iddianın hangi ölçüde gerekçe gerektirdiğini açıkça belirtin."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kavram",
+          "Dar anlamı",
+          "Geniş anlamı",
+          "Argümana etkisi"
+        ],
+        "satirlar": [
+          [
+            "İnanç",
+            "Kanıtsız kabul",
+            "Bir yargıyı doğru sayma, güven ve bağlılık",
+            "Dar anlam seçilirse inanç baştan akıl dışı ilan edilmiş olur."
+          ],
+          [
+            "İman",
+            "Yalnızca bir önermeyi kabul etme",
+            "Kalp ile tasdik, güven ve bağlılık",
+            "Önerme boyutu akılla tartışılabilir; bağlılık boyutu kişisel bir ilişkidir."
+          ],
+          [
+            "Akıl",
+            "Deneysel doğrulama ve mantıksal ispat",
+            "Gerekçe gösterme, tutarlılık, en iyi açıklama",
+            "Dar ölçüt ahlakı ve başka zihinlerin varlığını da dışarıda bırakır."
+          ],
+          [
+            "Kanıt",
+            "Laboratuvarda tekrarlanabilen veri",
+            "Bir yargıyı destekleyen her türlü gerekçe",
+            "Tanıklık ve deneyimin kanıt sayılıp sayılmayacağı tartışmayı belirler."
+          ],
+          [
+            "Rasyonel",
+            "Kesin olarak kanıtlanmış",
+            "Gerekçelerle uyumlu ve savunulabilir",
+            "Bir inanç kanıtlanmadan da rasyonel olabilir mi sorusu buradan doğar."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Anlam Kayması Safsatası",
+          "metin": "Bir akıl yürütmede aynı kelime öncülde bir anlamda, sonuçta başka bir anlamda kullanılırsa argüman geçerli görünse bile çöker. 'İnanç', 'akıl', 'kanıt' gibi kelimeleri kullanırken hangi anlamı kastettiğinizi {koyu:bir kez tanımlayın ve değiştirmeyin}."
+        },
+        {
+          "tur": "kural",
+          "baslik": "İspat Yükü İlkesi",
+          "metin": "Bir şeyin var olduğunu ya da olmadığını ileri süren kişi, iddiasını gerekçelendirmek zorundadır. Karşı tarafın iddiayı çürütememesi iddiayı kanıtlamaz; bu {koyu:cehaletten çıkarım} safsatasıdır. Bu ilke inanan için de inanmayan için de geçerlidir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>İnanç Kavramının Katmanları ve İddiaların Gücü</text><rect x='20' y='48' width='230' height='110' rx='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='2'/><text x='135' y='72' text-anchor='middle' font-size='13' font-weight='bold' fill='#075985'>ÖNERME İNANCI</text><text x='135' y='96' text-anchor='middle' font-size='11' fill='#0c4a6e'>Bir yargının doğru</text><text x='135' y='112' text-anchor='middle' font-size='11' fill='#0c4a6e'>olduğunu kabul etmek</text><text x='135' y='140' text-anchor='middle' font-size='11' font-style='italic' fill='#0369a1'>Yarın yağmur yağacak.</text><rect x='265' y='48' width='230' height='110' rx='12' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='380' y='72' text-anchor='middle' font-size='13' font-weight='bold' fill='#92400e'>GÜVEN İNANCI</text><text x='380' y='96' text-anchor='middle' font-size='11' fill='#78350f'>Bir kişiye ya da şeye</text><text x='380' y='112' text-anchor='middle' font-size='11' fill='#78350f'>güvenmek, bağlanmak</text><text x='380' y='140' text-anchor='middle' font-size='11' font-style='italic' fill='#b45309'>Arkadaşıma inanıyorum.</text><rect x='510' y='48' width='230' height='110' rx='12' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='625' y='72' text-anchor='middle' font-size='13' font-weight='bold' fill='#166534'>DİNÎ İMAN</text><text x='625' y='96' text-anchor='middle' font-size='11' fill='#14532d'>Kalp ile tasdik:</text><text x='625' y='112' text-anchor='middle' font-size='11' fill='#14532d'>önerme + güven + bağlılık</text><text x='625' y='140' text-anchor='middle' font-size='11' font-style='italic' fill='#15803d'>İki boyutu birlikte içerir.</text><text x='380' y='190' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>İddianın gücü arttıkça ispat yükü de artar</text><line x1='60' y1='225' x2='700' y2='225' stroke='#475569' stroke-width='3'/><polygon points='700,217 716,225 700,233' fill='#475569'/><circle cx='90' cy='225' r='8' fill='#22c55e'/><circle cx='250' cy='225' r='8' fill='#84cc16'/><circle cx='410' cy='225' r='8' fill='#eab308'/><circle cx='570' cy='225' r='8' fill='#f97316'/><circle cx='690' cy='225' r='8' fill='#dc2626'/><text x='90' y='254' text-anchor='middle' font-size='11' fill='#334155'>Mümkündür</text><text x='250' y='254' text-anchor='middle' font-size='11' fill='#334155'>Makuldür</text><text x='410' y='254' text-anchor='middle' font-size='11' fill='#334155'>Büyük olasılıkla</text><text x='570' y='254' text-anchor='middle' font-size='11' fill='#334155'>Kesindir</text><text x='690' y='254' text-anchor='middle' font-size='11' fill='#334155'>Her zaman</text><text x='90' y='274' text-anchor='middle' font-size='10' fill='#64748b'>hafif yük</text><text x='690' y='274' text-anchor='middle' font-size='10' fill='#64748b'>ağır yük</text></svg>"
+    },
+    {
+      "baslik": "4. Ahlak Argümanını Kurmak: Kant, Euthyphron İkilemi ve Hüsün-Kubuh Tartışması",
+      "metin": [
+        "Ahlak argümanı, insanın ahlaki deneyiminden hareketle Tanrı'nın varlığına ya da inancın makullüğüne ulaşmaya çalışır. Çağdaş biçimlerinden biri şöyle kurulabilir: {koyu:Öncül 1:} Nesnel ahlaki değerler varsa, bunların kişilerin ve toplumların görüşlerinden bağımsız bir temeli olmalıdır. {koyu:Öncül 2:} Nesnel ahlaki değerler vardır; örneğin masum birine sırf eğlence için acı çektirmenin yanlışlığı kişiden kişiye değişen bir zevk meselesi değildir. {koyu:Öncül 3:} Bu bağımsız temelin en iyi açıklaması, iyiliğin kaynağı olan bir Tanrı'dır. {koyu:Sonuç:} Öyleyse büyük olasılıkla Tanrı vardır. Argümanın ilk iki öncülü tümdengelimli bir yapı kurar; üçüncü öncül ise en iyi açıklamaya çıkarıma dayanır. Bu yüzden sonuç 'büyük olasılıkla' niteleyicisiyle ifade edilmelidir. Eleştirmenler genellikle ikinci öncüle (ahlak gerçekten nesnel mi?) ya da üçüncü öncüle (nesnel değerlerin Tanrı'dan başka bir açıklaması olamaz mı?) itiraz eder.",
+        "Kant'ın ahlak argümanı farklı bir yol izler. Kant, Tanrı'nın varlığının kuramsal akılla kanıtlanamayacağını savunmuştu. Ancak 1788'de yayımlanan 'Pratik Aklın Eleştirisi'nde şunu ileri sürer: Ahlak yasası bize {koyu:en yüksek iyiyi}, yani erdem ile mutluluğun uyum içinde bulunduğu durumu hedeflememizi buyurur. Oysa bu dünyada erdemli olanın mutlu olacağının bir güvencesi yoktur. Ahlakın buyurduğu şeyin gerçekleşmesi mümkün olmalıdır; bu da ancak erdem ile mutluluğu uyumlu kılacak bilge ve güçlü bir varlık, yani Tanrı varsa mümkündür. Bu yüzden Kant, Tanrı'nın varlığını ve ruhun ölümsüzlüğünü pratik aklın {koyu:koyutları} (postulatları) olarak kabul eder. Bu bir kanıt değil, ahlaki yaşamın anlamlı olması için zorunlu bir kabuldür. Kant'ın yolu, akıl-inanç ilişkisinde bağımsızlık modeli ile bütünleşme modeli arasında özgün bir konum oluşturur.",
+        "Ahlak argümanına yöneltilen en eski sorulardan biri Platon'un 'Euthyphron' diyaloğundan gelir ve {koyu:Euthyphron ikilemi} olarak bilinir. Sokrates, dindar olanın tanrılar onu sevdiği için mi dindarca olduğunu, yoksa dindarca olduğu için mi tanrılar tarafından sevildiğini sorar. Tek Tanrılı bir çerçeveye uyarlandığında ikilem şudur: İyi olan, Tanrı emrettiği için mi iyidir, yoksa Tanrı iyi olduğu için mi onu emreder? Birinci seçenek ahlakı {koyu:keyfî} gösterir; ikinci seçenek ise iyiliği Tanrı'dan bağımsız bir ölçüye bağlar. Teist düşünürlerin yaygın yanıtı üçüncü bir yol önermektir: İyilik Tanrı'nın dışındaki bir ölçüt değil, O'nun {koyu:doğasının} ifadesidir; emirleri de bu doğadan çıkar ve keyfî değildir. İslam düşüncesinde benzer bir tartışma {koyu:hüsün-kubuh} (iyilik-kötülük) meselesi adıyla yapılmıştır. Mutezile'ye göre iyi ve kötü fiillerin kendisinde bulunur ve akılla bilinebilir. Eş'arîlere göre ise bir fiilin iyi ya da kötü olmasını Allah'ın emri ve yasağı belirler. Mâtürîdî çizgide akıl bazı iyi ve kötüleri vahiyden önce de kavrayabilir; vahiy bu bilgiyi tamamlar. Bu tartışma, akıl ile inancın ahlak alanındaki ilişkisinin tek bir biçimde düşünülmediğini gösterir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yaklaşım",
+          "İyiliğin kaynağı",
+          "Akıl-inanç ilişkisi açısından sonucu"
+        ],
+        "satirlar": [
+          [
+            "Kant (pratik akıl)",
+            "Aklın kendi koyduğu ahlak yasası",
+            "Tanrı kanıtlanmaz ama ahlaki yaşamın koyutu olarak kabul edilir."
+          ],
+          [
+            "İlahi emir kuramı",
+            "Tanrı'nın emri",
+            "Ahlak inanca dayanır; keyfîlik itirazıyla karşılaşır."
+          ],
+          [
+            "Üçüncü yol (ilahi doğa)",
+            "Tanrı'nın iyi doğası",
+            "Emirler keyfî değildir; iyilik akılla da kavranabilir."
+          ],
+          [
+            "Mutezile",
+            "Fiilin kendisindeki iyilik ya da kötülük",
+            "Akıl iyiyi ve kötüyü bilebilir; vahiy aklı doğrular."
+          ],
+          [
+            "Eş'arîler",
+            "Allah'ın emri ve yasağı",
+            "Ahlaki hükmün son belirleyicisi vahiydir."
+          ],
+          [
+            "Mâtürîdî çizgi",
+            "Fiillerde akılla kavranabilen iyilik ve kötülük",
+            "Akıl bazı iyi ve kötüleri kavrar; vahiy tamamlar."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Koyut (Postulat)",
+          "metin": "Kanıtlanmadığı hâlde, bir alanın tutarlı ve anlamlı olabilmesi için {koyu:zorunlu olarak kabul edilen} önermedir. Kant'a göre Tanrı'nın varlığı, ruhun ölümsüzlüğü ve özgürlük, pratik aklın üç koyutudur."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Argümanın Hangi Öncülüne İtiraz Ediliyor?",
+          "metin": "Ahlakın nesnel olmadığını söyleyen kişi {koyu:ikinci öncüle}, nesnel ahlakın Tanrı olmadan da açıklanabileceğini söyleyen kişi {koyu:üçüncü öncüle} itiraz eder. Euthyphron ikilemi ise üçüncü öncüldeki 'Tanrı iyiliğin kaynağıdır' kabulünü sorgular."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Euthyphron İkilemi ve Üçüncü Yol</text><rect x='190' y='44' width='380' height='54' rx='12' fill='#ede9fe' stroke='#7c3aed' stroke-width='2'/><text x='380' y='66' text-anchor='middle' font-size='12' font-weight='bold' fill='#5b21b6'>Soru (Platon, Euthyphron)</text><text x='380' y='86' text-anchor='middle' font-size='11' fill='#4c1d95'>İyi olan, Tanrı emrettiği için mi iyidir; iyi olduğu için mi emredilir?</text><line x1='280' y1='98' x2='140' y2='130' stroke='#475569' stroke-width='2'/><line x1='380' y1='98' x2='380' y2='130' stroke='#475569' stroke-width='2'/><line x1='480' y1='98' x2='620' y2='130' stroke='#475569' stroke-width='2'/><rect x='20' y='130' width='240' height='150' rx='12' fill='#fee2e2' stroke='#dc2626' stroke-width='2'/><text x='140' y='154' text-anchor='middle' font-size='12' font-weight='bold' fill='#991b1b'>1. Seçenek</text><text x='140' y='174' text-anchor='middle' font-size='11' fill='#7f1d1d'>Emredildiği için iyidir.</text><text x='140' y='204' text-anchor='middle' font-size='11' font-weight='bold' fill='#991b1b'>Sorun: Keyfîlik</text><text x='140' y='224' text-anchor='middle' font-size='11' fill='#7f1d1d'>Zulüm emredilseydi</text><text x='140' y='240' text-anchor='middle' font-size='11' fill='#7f1d1d'>iyi mi olurdu?</text><text x='140' y='266' text-anchor='middle' font-size='10' fill='#7f1d1d'>(Eş'arî tutuma yakın)</text><rect x='270' y='130' width='220' height='150' rx='12' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='380' y='154' text-anchor='middle' font-size='12' font-weight='bold' fill='#166534'>Üçüncü Yol</text><text x='380' y='174' text-anchor='middle' font-size='11' fill='#14532d'>İyilik Tanrı'nın</text><text x='380' y='190' text-anchor='middle' font-size='11' fill='#14532d'>doğasının ifadesidir.</text><text x='380' y='220' text-anchor='middle' font-size='11' fill='#14532d'>Emirler bu doğadan</text><text x='380' y='236' text-anchor='middle' font-size='11' fill='#14532d'>çıkar, keyfî değildir.</text><text x='380' y='266' text-anchor='middle' font-size='10' fill='#14532d'>(Teist düşünürlerin yanıtı)</text><rect x='500' y='130' width='240' height='150' rx='12' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='620' y='154' text-anchor='middle' font-size='12' font-weight='bold' fill='#92400e'>2. Seçenek</text><text x='620' y='174' text-anchor='middle' font-size='11' fill='#78350f'>İyi olduğu için emredilir.</text><text x='620' y='204' text-anchor='middle' font-size='11' font-weight='bold' fill='#92400e'>Sorun: Bağımsız ölçüt</text><text x='620' y='224' text-anchor='middle' font-size='11' fill='#78350f'>İyilik Tanrı'dan bağımsız</text><text x='620' y='240' text-anchor='middle' font-size='11' fill='#78350f'>bir ölçüye mi bağlı?</text><text x='620' y='266' text-anchor='middle' font-size='10' fill='#78350f'>(Mutezile tutumuna yakın)</text></svg>"
+    },
+    {
+      "baslik": "5. Dinî Deneyim Argümanını Kurmak ve Sınamak: James ve Swinburne",
+      "metin": [
+        "Pek çok insan Tanrı'ya inanmasının nedenini bir argümanla değil, kendi yaşadığı bir deneyimle açıklar: dua sırasında hissedilen bir huzur, doğa karşısında duyulan derin bir hayranlık ya da kutsal olanla karşılaşma duygusu. Felsefede bu tür deneyimlerin bir inanç için {koyu:gerekçe} olup olamayacağı sorusu dinî deneyim argümanı adıyla tartışılır. Amerikalı filozof ve psikolog {koyu:William James}, 1902'de yayımlanan 'Dinî Deneyimin Çeşitleri' adlı eserinde mistik deneyimin dört özelliğini sıralar. Bu deneyim sözle tam olarak anlatılamaz; deneyimi yaşayana bir şey bildiriyormuş gibi gelir, yani bilgi verici bir niteliği vardır; genellikle kısa sürer; kişi de onu kendisi üretmiş gibi değil, başına gelmiş gibi yaşar. James'e göre bu deneyimler onları yaşayan için otorite taşıyabilir. Ancak yaşamamış olanları kendiliğinden bağlamaz.",
+        "Çağdaş filozof {koyu:Richard Swinburne} argümanı genel bir bilgi ilkesine dayandırır. Bu ilkeye {koyu:inanırlık ilkesi} denir: Bir kişiye bir şey var gibi görünüyorsa, aksini düşündüren özel bir neden olmadıkça o şey büyük olasılıkla vardır. Gündelik algılarımıza da böyle güveniriz. Pencereden bir ağaç görüyorsam, yanıldığımı gösteren bir neden yoksa ağacın orada olduğuna inanmakta haklıyımdır. Swinburne buna {koyu:tanıklık ilkesini} de ekler: Aksi yönde bir neden yoksa, başkalarının deneyimlerini aktardıkları gibi kabul etmek makuldür. Argüman şöyle kurulur: {koyu:Öncül 1:} İnanırlık ilkesi geçerlidir. {koyu:Öncül 2:} Pek çok insana Tanrı'yı deneyimliyormuş gibi gelmektedir. {koyu:Öncül 3:} Bu deneyimleri şüpheli kılan özel bir neden yoktur. {koyu:Sonuç:} Öyleyse bu kişilerin Tanrı'ya inanması rasyoneldir ve Tanrı büyük olasılıkla vardır.",
+        "Argümanın kilit noktası üçüncü öncüldür ve itirazların çoğu buraya yönelir. Birinci itiraz {koyu:çelişen deneyimlerdir}: Farklı geleneklerdeki insanlar birbiriyle bağdaşmayan içerikte deneyimler aktarır. İkinci itiraz {koyu:denetlenemezliktir}: Bir ağacı başkaları da görüp doğrulayabilir; dinî deneyimi ise aynı biçimde ortak olarak denetlemek zordur. Üçüncü itiraz {koyu:doğal açıklamadır}: Bu deneyimler psikolojik ya da beyinle ilgili süreçlerle açıklanabilir. Savunucular şu yanıtları verir: Ayrıntılardaki farklılıklar, deneyimlerin ortak çekirdeğini geçersiz kılmaz; tanıklar bir olayı farklı anlatsa bile olayın gerçekleştiğine dair tanıklıkları değerini korur. Gündelik algılarımızın da beyinde gerçekleşen süreçleri vardır; bir deneyimin nasıl oluştuğunu açıklamak, onun neyi gösterdiğini çürütmez. İslam düşüncesinde de bu tartışmanın bir karşılığı bulunur. Tasavvuf geleneği {koyu:keşf} ve {koyu:zevk} gibi kavramlarla akıl yürütmenin ötesindeki doğrudan bilgiyi anlatır. Gazâlî ise 'el-Munkız mine'd-Dalâl' adlı eserinde, yaşadığı derin şüphe döneminden düzenli bir kanıtla değil, Allah'ın kalbine attığı bir nur sayesinde kurtulduğunu yazar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Argümanın parçası",
+          "İçeriği",
+          "İtiraz",
+          "Olası yanıt"
+        ],
+        "satirlar": [
+          [
+            "İnanırlık ilkesi",
+            "Görünen, aksi yönde neden yoksa büyük olasılıkla vardır.",
+            "İlke duyu algısı için geçerlidir, dinî deneyime genişletilemez.",
+            "Genişletmeyi reddetmek için ilkeli bir gerekçe gösterilmelidir."
+          ],
+          [
+            "Tanıklık ilkesi",
+            "Başkalarının deneyimini aktardıkları gibi kabul etmek makuldür.",
+            "Tanıklar yanılabilir ya da beklentilerinden etkilenebilir.",
+            "Bu, her tanıklık için geçerlidir; özel neden yoksa tanıklık değerini korur."
+          ],
+          [
+            "Çelişen deneyimler",
+            "Farklı gelenekler farklı içerikler aktarır.",
+            "Birbiriyle çelişen tanıklıklar birbirini zayıflatır.",
+            "Ortak çekirdek (aşkın bir gerçekliğe yönelim) yine de korunur."
+          ],
+          [
+            "Doğal açıklama",
+            "Deneyim beyin süreçleriyle ilişkilidir.",
+            "Deneyimin kaynağı yalnızca beyin olabilir.",
+            "Algının da beyin süreçleri vardır; köken, geçerliliği belirlemez."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Gazâlî'nin el-Munkız'daki Tanıklığı",
+          "metin": "Gazâlî, otobiyografik nitelikteki 'el-Munkız mine'd-Dalâl' (Dalaletten Kurtuluş) adlı eserinde duyulara ve akla güvenini sarsan bir şüphe dönemi geçirdiğini anlatır. Bu şüpheden {koyu:bir delil dizisiyle değil}, kalbine atılan bir nur ile kurtulduğunu söyler. Bu tanıklık, dinî deneyimin bilgi kaynağı sayılıp sayılamayacağı tartışmasında sık anılır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kökenden Geçerliliğe Geçiş",
+          "metin": "Bir inancın nasıl oluştuğunu açıklamak, o inancın {koyu:doğru ya da yanlış} olduğunu tek başına göstermez. 'Bu deneyim beyinde oluşuyor, öyleyse yanıltıcıdır' akıl yürütmesi, köken ile geçerliliği karıştırır. Bu tür bir itiraz kurarken, kökenin geçerliliği neden etkilediğini ayrıca gerekçelendirin."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Dinî Deneyim Argümanı: Swinburne'ün Kurgusu ve İtirazlar</text><rect x='20' y='48' width='170' height='96' rx='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='2'/><text x='105' y='70' text-anchor='middle' font-size='12' font-weight='bold' fill='#075985'>Öncül 1</text><text x='105' y='92' text-anchor='middle' font-size='11' fill='#0c4a6e'>İnanırlık ilkesi:</text><text x='105' y='108' text-anchor='middle' font-size='11' fill='#0c4a6e'>Görünen, büyük</text><text x='105' y='124' text-anchor='middle' font-size='11' fill='#0c4a6e'>olasılıkla vardır.</text><rect x='200' y='48' width='170' height='96' rx='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='2'/><text x='285' y='70' text-anchor='middle' font-size='12' font-weight='bold' fill='#075985'>Öncül 2</text><text x='285' y='92' text-anchor='middle' font-size='11' fill='#0c4a6e'>Pek çok insana</text><text x='285' y='108' text-anchor='middle' font-size='11' fill='#0c4a6e'>Tanrı'yı deneyimliyormuş</text><text x='285' y='124' text-anchor='middle' font-size='11' fill='#0c4a6e'>gibi gelir.</text><rect x='380' y='48' width='170' height='96' rx='12' fill='#fef9c3' stroke='#ca8a04' stroke-width='2' stroke-dasharray='6 4'/><text x='465' y='70' text-anchor='middle' font-size='12' font-weight='bold' fill='#854d0e'>Öncül 3 (kilit)</text><text x='465' y='92' text-anchor='middle' font-size='11' fill='#713f12'>Bu deneyimleri</text><text x='465' y='108' text-anchor='middle' font-size='11' fill='#713f12'>şüpheli kılan özel</text><text x='465' y='124' text-anchor='middle' font-size='11' fill='#713f12'>bir neden yoktur.</text><polygon points='556,88 572,96 556,104' fill='#334155'/><rect x='578' y='48' width='162' height='96' rx='12' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='659' y='70' text-anchor='middle' font-size='12' font-weight='bold' fill='#166534'>SONUÇ</text><text x='659' y='92' text-anchor='middle' font-size='11' fill='#14532d'>İnanmak rasyoneldir;</text><text x='659' y='108' text-anchor='middle' font-size='11' fill='#14532d'>Tanrı büyük</text><text x='659' y='124' text-anchor='middle' font-size='11' fill='#14532d'>olasılıkla vardır.</text><line x1='465' y1='144' x2='465' y2='166' stroke='#dc2626' stroke-width='2'/><line x1='130' y1='166' x2='630' y2='166' stroke='#dc2626' stroke-width='2'/><line x1='130' y1='166' x2='130' y2='182' stroke='#dc2626' stroke-width='2'/><line x1='380' y1='166' x2='380' y2='182' stroke='#dc2626' stroke-width='2'/><line x1='630' y1='166' x2='630' y2='182' stroke='#dc2626' stroke-width='2'/><rect x='20' y='182' width='220' height='100' rx='12' fill='#fee2e2' stroke='#dc2626' stroke-width='2'/><text x='130' y='204' text-anchor='middle' font-size='12' font-weight='bold' fill='#991b1b'>Çelişen deneyimler</text><text x='130' y='226' text-anchor='middle' font-size='11' fill='#7f1d1d'>Gelenekler farklı</text><text x='130' y='242' text-anchor='middle' font-size='11' fill='#7f1d1d'>içerikler aktarır.</text><text x='130' y='268' text-anchor='middle' font-size='10' fill='#166534'>Yanıt: Ortak çekirdek kalır.</text><rect x='270' y='182' width='220' height='100' rx='12' fill='#fee2e2' stroke='#dc2626' stroke-width='2'/><text x='380' y='204' text-anchor='middle' font-size='12' font-weight='bold' fill='#991b1b'>Denetlenemezlik</text><text x='380' y='226' text-anchor='middle' font-size='11' fill='#7f1d1d'>Ağaç gibi ortak</text><text x='380' y='242' text-anchor='middle' font-size='11' fill='#7f1d1d'>doğrulanamaz.</text><text x='380' y='268' text-anchor='middle' font-size='10' fill='#166534'>Yanıt: Her deneyim aynı türden değil.</text><rect x='520' y='182' width='220' height='100' rx='12' fill='#fee2e2' stroke='#dc2626' stroke-width='2'/><text x='630' y='204' text-anchor='middle' font-size='12' font-weight='bold' fill='#991b1b'>Doğal açıklama</text><text x='630' y='226' text-anchor='middle' font-size='11' fill='#7f1d1d'>Deneyim beyin</text><text x='630' y='242' text-anchor='middle' font-size='11' fill='#7f1d1d'>süreçleriyle oluşur.</text><text x='630' y='268' text-anchor='middle' font-size='10' fill='#166534'>Yanıt: Köken geçerliliği belirlemez.</text></svg>"
+    },
+    {
+      "baslik": "6. Karşı Argümanı Adil Kurmak ve Bir Felsefi Deneme Planı Hazırlamak",
+      "metin": [
+        "Kendi görüşünü kuran kişinin en önemli sınavı, karşı görüşü nasıl ele aldığıdır. Felsefede bu konuda yol gösteren ilkeye {koyu:hoşgörü ilkesi} (yorumlamada iyi niyet ilkesi) denir: Karşı görüşü, onu savunan en akıllı kişinin kabul edeceği en güçlü ve en tutarlı biçimde yorumlayın. Bu ilkenin tersi {koyu:saman adam} safsatasıdır. Bu safsatada karşı görüş zayıflatılmış ya da çarpıtılmış bir hâle sokulur, sonra da bu kolay hedef çürütülür. Örneğin 'İnanan insanlar aklı tamamen bir kenara atar; öyleyse inanç savunulamaz' demek, akıl-inanç uyumunu savunan Fârâbî, İbn Sînâ, İbn Rüşd ya da Thomas Aquinas gibi düşünürleri yok saymaktır. Benzer biçimde 'İnanmayanlar ahlakı reddeder' demek de inanmayan düşünürlerin ahlak kuramlarını görmezden gelir. Saman adamı yıkmak kolaydır ama bu, gerçek karşı görüş hakkında hiçbir şey söylemez.",
+        "Karşı görüşü güçlendirerek ele almaya kimi zaman {koyu:çelik adam} yöntemi denir. Bu yöntemin üç adımı vardır. Önce karşı görüşü, onu savunan birinin 'Evet, tam olarak bunu söylüyorum' diyeceği biçimde özetleyin. Sonra o görüşün en güçlü gerekçesini belirleyin ve ondan neyi doğru bulduğunuzu açıkça kabul edin. Ardından o gerekçenin hangi öncülüne neden katılmadığınızı gösterin. Bu yaklaşımın İslam felsefesinde de dikkate değer bir karşılığı vardır. İbn Rüşd 'Faslü'l-Makâl' adlı eserinde Kur'an'daki 'Ey basiret sahipleri, ibret alın!' (Haşr suresi, 2. ayet) buyruğunu varlıklar üzerinde akılla düşünmeye bir çağrı olarak yorumlar. Ona göre insanlar farklı yollarla ikna olur: Bazıları kesin kanıtla ({koyu:burhan}), bazıları tartışma yoluyla ({koyu:cedel}), bazıları da etkileyici söz ve örneklerle ({koyu:hitabet}). İyi bir argüman, kime hitap ettiğini bilen ve gerekçesinin türünü açıkça gösteren argümandır.",
+        "Bu haftanın bütün adımları kısa bir {koyu:felsefi deneme} planında birleştirilebilir. {koyu:Giriş:} Soruyu belirtin, temel kavramları tanımlayın ve tezinizi niteleyicisiyle birlikte tek cümlede yazın. {koyu:Gelişme:} En az iki gerekçe sunun; her gerekçeyi bir veri, bir ilke ve mümkünse bir düşünürün görüşüyle destekleyin. {koyu:Karşı argüman:} En güçlü itirazı hoşgörü ilkesine uygun biçimde ifade edin. {koyu:Yanıt:} İtirazın hangi öncülüne neden katılmadığınızı gösterin ya da itirazın haklı olduğu noktada tezinizi sınırlandırın. {koyu:Sonuç:} Tezinizi gerekçelerinizin gücüyle orantılı bir kesinlikle yeniden ifade edin ve açık kalan soruyu belirtin. Felsefi bir denemede savunulan tezin hangisi olduğundan çok, bu adımların ne kadar özenle atıldığı önemlidir. Kendisiyle aynı fikirde olmayan birinin de 'Bu görüşe katılmıyorum ama iyi savunulmuş' diyebileceği bir metin, iyi bir felsefi metindir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Deneme bölümü",
+          "Ne yapılır?",
+          "Örnek: 'Akılla kanıtlanamayan bir inanç rasyonel olabilir mi?'"
+        ],
+        "satirlar": [
+          [
+            "Giriş",
+            "Soru, kavram tanımları, niteleyicili tez",
+            "'Rasyonel' kavramı 'gerekçelerle uyumlu' olarak tanımlanır; tez: Bazı koşullarda olabilir."
+          ],
+          [
+            "Gerekçe 1",
+            "Veri + ilke + destek",
+            "Başka zihinlerin varlığı gibi kesin kanıtı olmayan inançlar da rasyoneldir (Plantinga)."
+          ],
+          [
+            "Gerekçe 2",
+            "İkinci bir bağımsız dayanak",
+            "Kanıtın karar veremediği önemli seçeneklerde karar vermek meşrudur (James)."
+          ],
+          [
+            "Karşı argüman",
+            "En güçlü itirazın adil ifadesi",
+            "Clifford: Yetersiz kanıtla inanmak her zaman yanlıştır."
+          ],
+          [
+            "Yanıt",
+            "İtirazın hangi öncülüne neden katılmadığını gösterme",
+            "Clifford'un ilkesi kendisi de yeterli kanıtla temellendirilemez; ayrıca temel inançlarımızın çoğunu yok eder."
+          ],
+          [
+            "Sonuç",
+            "Tezi orantılı kesinlikle yeniden ifade etme",
+            "Açık bir karşı kanıt yoksa, kanıtlanmamış bir inanç da makul olabilir."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Hoşgörü İlkesi",
+          "metin": "Bir görüşü eleştirmeden önce onu {koyu:en güçlü biçimiyle} ifade edin. Karşı görüşün savunucusu özetinizi okuduğunda 'Evet, tam olarak bunu söylüyorum' diyebilmelidir. Bu ölçütü karşılamayan bir eleştiri saman adam safsatası olma tehlikesi taşır."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Denemeni Teslim Etmeden Önce Sor",
+          "metin": "1) Tezim tek cümlede ve niteleyicisiyle yazılı mı? 2) Anahtar kavramları tanımladım mı? 3) En az iki bağımsız gerekçem var mı? 4) Karşı argümanı adil biçimde ifade ettim mi? 5) Yanıtım itirazın belirli bir öncülünü hedef alıyor mu? 6) Sonucum gerekçelerimden daha güçlü bir iddiada bulunuyor mu?"
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Felsefi Deneme Planı ve Adil Tartışma</text><rect x='20' y='48' width='132' height='86' rx='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='2'/><text x='86' y='72' text-anchor='middle' font-size='12' font-weight='bold' fill='#075985'>1. GİRİŞ</text><text x='86' y='94' text-anchor='middle' font-size='10' fill='#0c4a6e'>Soru, tanımlar,</text><text x='86' y='110' text-anchor='middle' font-size='10' fill='#0c4a6e'>niteleyicili tez</text><polygon points='154,84 166,91 154,98' fill='#475569'/><rect x='168' y='48' width='132' height='86' rx='12' fill='#ede9fe' stroke='#7c3aed' stroke-width='2'/><text x='234' y='72' text-anchor='middle' font-size='12' font-weight='bold' fill='#5b21b6'>2. GEREKÇELER</text><text x='234' y='94' text-anchor='middle' font-size='10' fill='#4c1d95'>En az iki bağımsız</text><text x='234' y='110' text-anchor='middle' font-size='10' fill='#4c1d95'>dayanak</text><polygon points='302,84 314,91 302,98' fill='#475569'/><rect x='316' y='48' width='132' height='86' rx='12' fill='#fee2e2' stroke='#dc2626' stroke-width='2'/><text x='382' y='72' text-anchor='middle' font-size='12' font-weight='bold' fill='#991b1b'>3. KARŞI GÖRÜŞ</text><text x='382' y='94' text-anchor='middle' font-size='10' fill='#7f1d1d'>En güçlü itiraz,</text><text x='382' y='110' text-anchor='middle' font-size='10' fill='#7f1d1d'>adil biçimde</text><polygon points='450,84 462,91 450,98' fill='#475569'/><rect x='464' y='48' width='132' height='86' rx='12' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='530' y='72' text-anchor='middle' font-size='12' font-weight='bold' fill='#92400e'>4. YANIT</text><text x='530' y='94' text-anchor='middle' font-size='10' fill='#78350f'>Hangi öncüle,</text><text x='530' y='110' text-anchor='middle' font-size='10' fill='#78350f'>neden itiraz?</text><polygon points='598,84 610,91 598,98' fill='#475569'/><rect x='612' y='48' width='128' height='86' rx='12' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='676' y='72' text-anchor='middle' font-size='12' font-weight='bold' fill='#166534'>5. SONUÇ</text><text x='676' y='94' text-anchor='middle' font-size='10' fill='#14532d'>Orantılı kesinlik,</text><text x='676' y='110' text-anchor='middle' font-size='10' fill='#14532d'>açık kalan soru</text><rect x='20' y='156' width='350' height='126' rx='12' fill='#fee2e2' stroke='#dc2626' stroke-width='2'/><text x='195' y='180' text-anchor='middle' font-size='13' font-weight='bold' fill='#991b1b'>SAMAN ADAM (safsata)</text><text x='195' y='204' text-anchor='middle' font-size='11' fill='#7f1d1d'>Karşı görüşü zayıflat, çarpıt,</text><text x='195' y='220' text-anchor='middle' font-size='11' fill='#7f1d1d'>sonra kolayca yık.</text><text x='195' y='250' text-anchor='middle' font-size='11' font-style='italic' fill='#7f1d1d'>İnananlar aklı tamamen reddeder,</text><text x='195' y='266' text-anchor='middle' font-size='11' font-style='italic' fill='#7f1d1d'>öyleyse inanç savunulamaz.</text><rect x='390' y='156' width='350' height='126' rx='12' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='565' y='180' text-anchor='middle' font-size='13' font-weight='bold' fill='#166534'>ÇELİK ADAM (hoşgörü ilkesi)</text><text x='565' y='204' text-anchor='middle' font-size='11' fill='#14532d'>Karşı görüşü en güçlü biçimiyle</text><text x='565' y='220' text-anchor='middle' font-size='11' fill='#14532d'>ifade et, sonra öncülünü sına.</text><text x='565' y='250' text-anchor='middle' font-size='11' font-style='italic' fill='#14532d'>İbn Rüşd'e göre akıl ve vahiy uyumludur;</text><text x='565' y='266' text-anchor='middle' font-size='11' font-style='italic' fill='#14532d'>bu uyumun hangi öncülü tartışmalı?</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Aşağıdaki paragraftaki Toulmin öğelerini (iddia, veri, gerekçe, niteleyici, çürütme) belirleyiniz: 'İnsanlar tarihin her döneminde ve her kültürde kutsal olana yönelmiştir. Bu kadar yaygın ve kalıcı bir eğilim, insanın doğasında köklü bir ihtiyaca işaret eder. Öyleyse inanç, büyük olasılıkla insanın akıl dışı bir sapması değil, varoluşunun doğal bir boyutudur. Elbette bu yaygınlığın tamamen kültürel aktarımla açıklanabildiği gösterilirse bu sonuç zayıflar.'",
+      "cevap": "1. adım (veri): 'İnsanlar tarihin her döneminde ve her kültürde kutsal olana yönelmiştir.' Bu, iddiaya dayanak olarak gösterilen olgudur. 2. adım (gerekçe): 'Bu kadar yaygın ve kalıcı bir eğilim, insanın doğasında köklü bir ihtiyaca işaret eder.' Veriden iddiaya geçişi sağlayan genel ilkedir. 3. adım (niteleyici): 'büyük olasılıkla' ifadesidir; iddianın kesin değil olası olarak ileri sürüldüğünü gösterir. 4. adım (iddia): 'İnanç, insanın akıl dışı bir sapması değil, varoluşunun doğal bir boyutudur.' 5. adım (çürütme): 'Yaygınlığın tamamen kültürel aktarımla açıklanabildiği gösterilirse bu sonuç zayıflar.' Argümanın sınırını dürüstçe kabul eden kısımdır. Paragrafta destek öğesi açıkça bulunmaz; argüman, örneğin insan doğasına dair felsefi ya da antropolojik bir görüşle desteklenerek güçlendirilebilir.",
+      "ipucu": "Önce 'öyleyse' kelimesinden sonra gelen iddiayı, sonra 'büyük olasılıkla' gibi gücü belirleyen ifadeyi ve 'elbette ... gösterilirse' biçimindeki istisnayı bulun."
+    },
+    {
+      "soru": "'Bilim ile din her zaman çatışır.' iddiasını Barbour'un modellerine göre sınıflandırınız. Bu iddianın ispat yükünü değerlendiriniz ve iddiayı savunulabilir bir teze dönüştürünüz.",
+      "cevap": "1. adım: İddia, akıl (bilim) ile inancın aynı sorulara rakip cevaplar verdiğini öne sürdüğü için çatışma modeline aittir. 2. adım: 'Her zaman' niteleyicisi iddiayı evrensel hâle getirir. Evrensel bir iddiayı çürütmek için tek bir karşı örnek yeterlidir. Bilim ile inancın birlikte var olduğu örnekler (inançlı bilim insanları, İbn Rüşd'ün uyum görüşü, bilimin cevaplayamadığı sınır soruları) bu iddiayı zor durumda bırakır. Dolayısıyla iddia çok ağır bir ispat yükü taşır. 3. adım: Savunulabilir bir tez için niteleyici yumuşatılmalı ve çatışmanın kapsamı sınırlandırılmalıdır: 'Bir dinî metnin evren hakkındaki ifadeleri bilimsel bir anlatım gibi harfiyen okunduğunda, bilimsel bulgularla bazı durumlarda gerilim doğabilir.' Bu tez belirli bir koşulu tanımlar, gücüne uygun bir niteleyici kullanır ve tartışmayı genellemeden öncüllere taşır.",
+      "ipucu": "'Her zaman' gibi evrensel niteleyicilerin tek bir karşı örnekle çürüyebileceğini unutmayın."
+    },
+    {
+      "soru": "Euthyphron ikilemini tek Tanrılı bir çerçevede iki seçenekli olarak yazınız. Her seçeneğin sorununu belirtiniz ve teist düşünürlerin önerdiği üçüncü yolu değerlendiriniz.",
+      "cevap": "1. adım (ikilem): İyi olan, Tanrı emrettiği için mi iyidir, yoksa Tanrı iyi olduğu için mi onu emreder? 2. adım (birinci seçenek): İyi yalnızca emredildiği için iyiyse ahlak keyfî görünür. Tanrı zulmü emretseydi zulüm iyi olurdu sonucu çıkar; ayrıca 'Tanrı iyidir' demek 'Tanrı kendi emrettiğini yapar' gibi boş bir cümleye dönüşür. 3. adım (ikinci seçenek): Tanrı bir şeyi iyi olduğu için emrediyorsa, iyilik Tanrı'dan bağımsız bir ölçüte bağlanır ve ahlakın temeli için Tanrı'ya gerek kalmıyormuş gibi görünür. 4. adım (üçüncü yol): İyilik ne Tanrı'nın keyfî iradesine ne de dışındaki bir ölçüte bağlıdır; Tanrı'nın kendi doğasının ifadesidir. Emirler bu iyi doğadan çıktığı için keyfî değildir. 5. adım (değerlendirme): Eleştirmenler, 'Tanrı'nın doğasının iyi olduğunu neye göre biliyoruz?' sorusunun ikilemi yeniden gündeme getirdiğini söyler. Savunucular ise iyiliğin nihai bir dayanağı olması gerektiğini ve bu dayanağın Tanrı'nın doğası olduğunu, bunun da başka bir ölçüte ihtiyaç duymadığını belirtir. İslam düşüncesindeki hüsün-kubuh tartışması bu ikilemin bir benzeridir.",
+      "ipucu": "Birinci seçeneği 'keyfîlik', ikinci seçeneği 'bağımsız ölçüt' sorunuyla eşleştirin."
+    },
+    {
+      "soru": "Swinburne'ün inanırlık ilkesine dayanarak dinî deneyim argümanını öncül-sonuç biçiminde kurunuz. Çelişen deneyimler itirazını ve buna verilebilecek bir yanıtı yazınız.",
+      "cevap": "1. adım: Öncül 1: Bir kişiye bir şey var gibi görünüyorsa, aksini düşündüren özel bir neden yoksa o şey büyük olasılıkla vardır (inanırlık ilkesi). Öncül 2: Pek çok insana Tanrı'yı deneyimliyormuş gibi gelmektedir. Öncül 3: Bu deneyimleri şüpheli kılan özel bir neden yoktur. Sonuç: Bu kişilerin Tanrı'ya inanması rasyoneldir ve Tanrı büyük olasılıkla vardır. 2. adım: Argüman kesin değil olası bir sonuç verdiği için niteleyici 'büyük olasılıkla' olmalıdır. 3. adım (itiraz): Farklı dinî geleneklerdeki insanlar birbiriyle bağdaşmayan içerikte deneyimler aktarır. Bu deneyimlerin hepsi doğru olamayacağına göre, dinî deneyim genel olarak güvenilmez bir kaynak gibi görünür; bu itiraz üçüncü öncülü hedef alır. 4. adım (yanıt): Tanıklar bir trafik kazasını farklı ayrıntılarla anlatsa da kazanın gerçekleştiğinde birleşirler. Benzer biçimde farklı dinî deneyimler, ayrıntılarda ayrışsa da aşkın bir gerçekliğe yönelme konusunda ortak bir çekirdek taşır. Ayrıntılardaki çelişki bu çekirdeği değil, ayrıntılar hakkındaki iddiaları zayıflatır.",
+      "ipucu": "İtirazın hangi öncülü hedef aldığını belirtin; yanıtınızda 'ayrıntı' ile 'ortak çekirdek' ayrımını kullanın."
+    },
+    {
+      "soru": "Aşağıdaki konuşmada ispat yükünü kim taşımaktadır? Hangi safsata yapılmaktadır? Ayşe: 'Evreni bilinçli bir varlık yaratmıştır.' Can: 'Bunu nasıl biliyorsun?' Ayşe: 'Sen yaratılmadığını kanıtlayabiliyor musun? Kanıtlayamıyorsan ben haklıyım.'",
+      "cevap": "1. adım: İddiayı ileri süren Ayşe'dir; bu yüzden ilk ispat yükü ona düşer. Can henüz bir iddiada bulunmamış, yalnızca gerekçe istemiştir. 2. adım: Ayşe ispat yükünü karşı tarafa aktarmakta ve 'Karşıtı kanıtlanamıyorsa iddiam doğrudur' biçiminde akıl yürütmektedir. Bu, cehaletten çıkarım safsatasıdır. Bir iddianın çürütülememesi onun doğru olduğunu göstermez. 3. adım: Russell'ın çaydanlık benzetmesi aynı noktayı vurgular: Görülemeyen bir çaydanlığın yokluğunu kanıtlayamamak, ona inanmayı gerektirmez. 4. adım: Ayşe'nin yapması gereken, iddiasını kozmolojik ya da teleolojik argüman gibi gerekçelerle desteklemektir. 5. adım: Can 'Evren yaratılmamıştır' derse, bu da bir iddia olur ve o da kendi ispat yükünü taşır. Adil bir tartışmada ispat yükü, iddiada bulunan herkese düşer.",
+      "ipucu": "Kimin bir iddiada bulunduğuna bakın; 'karşıtını kanıtla' talebinin ne tür bir safsata olduğunu düşünün."
+    },
+    {
+      "soru": "'İnanç sahipleri hiçbir şeyi sorgulamaz, her şeyi körü körüne kabul eder; o hâlde akıl ile inanç bağdaşmaz.' Bu eleştirideki hatayı adlandırınız ve aynı eleştiriyi hoşgörü ilkesine uygun hâle getiriniz.",
+      "cevap": "1. adım: Eleştiri, karşı görüşü en zayıf ve çarpıtılmış biçimiyle ele aldığı için saman adam safsatasıdır. Ayrıca 'hiçbir şeyi', 'her şeyi' ifadeleriyle aşırı genelleme yapar. 2. adım: İnancın akılla uyumunu savunanlar arasında Fârâbî, İbn Sînâ, İbn Rüşd ve Thomas Aquinas gibi aklı sistemli biçimde kullanan düşünürler vardır. Gazâlî gibi aklın sınırlarını vurgulayanlar bile bunu akıl yürüterek yapar. 3. adım: Hoşgörü ilkesine uygun biçim şöyle olabilir: 'İnancın akılla uyumunu savunan en güçlü görüşe göre akıl, Tanrı'nın varlığı gibi bazı temel önermeleri temellendirebilir; ancak inancın bazı içerikleri vahye dayanır ve akılla tam olarak kanıtlanamaz. Bu durumda tartışılması gereken soru şudur: Akılla kanıtlanamayan içeriklere inanmak hangi koşullarda rasyoneldir?' 4. adım: Bu biçim karşı görüşü savunucularının kabul edeceği biçimde özetler ve tartışmayı bir öncüle taşır. Böylece eleştiri gerçek bir felsefi soruya dönüşür.",
+      "ipucu": "Karşı görüşün savunucusu özetinizi okuduğunda 'Evet, tam olarak bunu söylüyorum' diyebilmeli."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "'Evrendeki düzen, büyük olasılıkla akıllı bir kaynağa işaret eder.' cümlesindeki 'büyük olasılıkla' ifadesi Toulmin modelinde hangi öğeye karşılık gelir?",
+      "secenekler": [
+        "Veri",
+        "Gerekçe",
+        "Niteleyici",
+        "Destek"
+      ],
+      "dogru": 2,
+      "aciklama": "Niteleyici, iddianın ne kadar güçlü ileri sürüldüğünü belirten ifadedir. 'Büyük olasılıkla' iddianın kesin değil olası olduğunu gösterir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "'Bilim evrenin nasıl işlediğini, inanç ise varlığın anlamını ve değerleri sorar; bu yüzden ikisi gerçek anlamda çatışamaz.' Bu görüş Barbour'un hangi modeline uygundur?",
+      "secenekler": [
+        "Çatışma",
+        "Bağımsızlık",
+        "Diyalog",
+        "Bütünleşme"
+      ],
+      "dogru": 1,
+      "aciklama": "İki alanın farklı sorulara cevap verdiği ve bu yüzden çatışamayacağı görüşü bağımsızlık modelidir. Gould'un örtüşmeyen alanlar önerisi bu modelin örneğidir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "'Bir davranış yalnızca Tanrı emrettiği için iyiyse, Tanrı zulmü emretseydi zulüm de iyi olurdu.' Bu itiraz, Euthyphron ikileminin birinci seçeneğine yöneltilen hangi sorunu dile getirir?",
+      "secenekler": [
+        "Kanıtın yetersizliği",
+        "Bileşim safsatası",
+        "İspat yükünün aktarılması",
+        "Ahlakın keyfî hâle gelmesi"
+      ],
+      "dogru": 3,
+      "aciklama": "Birinci seçenek, iyiliği yalnızca emre bağladığı için ahlakı keyfî gösterir. İkinci seçenekteki sorun ise iyiliğin Tanrı'dan bağımsız bir ölçüte bağlanmasıdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "'İnancı savunanlar aklı tamamen reddeder ve hiçbir şeyi sorgulamaz; öyleyse inanç akılla bağdaşmaz.' Bu akıl yürütmede yapılan temel hata aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Saman adam",
+        "Döngüsel akıl yürütme",
+        "Bileşim safsatası",
+        "Cehaletten çıkarım"
+      ],
+      "dogru": 0,
+      "aciklama": "Karşı görüş, savunucularının kabul etmeyeceği zayıf ve çarpıtılmış bir biçimde sunulmuş, sonra bu biçim çürütülmüştür. Bu, saman adam safsatasıdır."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Toulmin modelinde çürütme öğesi, iddianın geçerli olmayacağı koşulları kabul eden kısımdır.",
+          "dogru": true,
+          "aciklama": "Doğrudur. Çürütme (istisna), argümanın sınırlarını dürüstçe belirtir ve iddiayı daha savunulabilir kılar."
+        },
+        {
+          "metin": "Kant'a göre Tanrı'nın varlığı kuramsal akılla kesin olarak kanıtlanabilir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır. Kant kuramsal aklın Tanrı'yı kanıtlayamayacağını savunur; Tanrı'yı pratik aklın bir koyutu olarak kabul eder."
+        },
+        {
+          "metin": "Swinburne'ün inanırlık ilkesine göre, aksini düşündüren özel bir neden yoksa bize var gibi görünen şeyin büyük olasılıkla var olduğunu kabul etmek makuldür.",
+          "dogru": true,
+          "aciklama": "Doğrudur. Swinburne bu genel bilgi ilkesini dinî deneyime de uygular."
+        },
+        {
+          "metin": "Bir iddianın çürütülememesi, o iddianın doğru olduğunu kanıtlar.",
+          "dogru": false,
+          "aciklama": "Yanlıştır. Bu, cehaletten çıkarım safsatasıdır. Russell'ın çaydanlık benzetmesi bu hatayı gösterir."
+        },
+        {
+          "metin": "Eş'arîlere göre bir fiilin iyi ya da kötü olmasını belirleyen, fiilin kendisinde bulunan ve akılla bilinen niteliktir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır. Bu görüş Mutezile'ye aittir. Eş'arîlere göre iyiliği ve kötülüğü Allah'ın emri ve yasağı belirler."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki düşünürleri bu hafta incelenen görüş, model ya da argümanlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Stephen Toulmin",
+          "İddia, veri, gerekçe, destek, niteleyici ve çürütmeden oluşan argüman modeli"
+        ],
+        [
+          "Ian Barbour",
+          "Çatışma, bağımsızlık, diyalog ve bütünleşme modelleri"
+        ],
+        [
+          "Platon",
+          "İyi olan, emredildiği için mi iyidir sorusunu soran Euthyphron ikilemi"
+        ],
+        [
+          "Richard Swinburne",
+          "Dinî deneyimi savunmak için kullanılan inanırlık ilkesi"
+        ],
+        [
+          "İbn Rüşd",
+          "Burhan, cedel ve hitabet yöntemleri ile akıl-vahiy uyumu"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Toulmin modelinde 'büyük olasılıkla', 'çoğu durumda' gibi iddianın gücünü belirleyen ifadelere ___ denir.",
+          "cevap": "niteleyici"
+        },
+        {
+          "metin": "Akıl ile inancın farklı sorulara cevap verdiği için çatışamayacağını savunan model, Barbour'un ___ modelidir.",
+          "cevap": "bağımsızlık"
+        },
+        {
+          "metin": "Bir iddiada bulunan kişinin o iddiayı gerekçelendirmesi gerektiğini söyleyen ilkeye ___ yükü ilkesi denir.",
+          "cevap": "ispat"
+        },
+        {
+          "metin": "'İyi olan, Tanrı emrettiği için mi iyidir?' sorusu, Platon'un bir diyaloğundan adını alan ___ ikilemidir.",
+          "cevap": "Euthyphron"
+        },
+        {
+          "metin": "Karşı görüşü zayıflatıp çarpıtarak çürütmeye ___ adam safsatası denir.",
+          "cevap": "saman"
+        }
+      ],
+      "kelimeler": [
+        "niteleyici",
+        "bağımsızlık",
+        "ispat",
+        "Euthyphron",
+        "saman"
+      ],
+      "fazla": [
+        "teodise",
+        "bütünleşme"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "'Akılla kesin olarak kanıtlanamayan bir inanca sahip olmak rasyonel olabilir mi?' sorusuna Toulmin modelini kullanarak kendi görüşünüzü oluşturunuz. Tezinizi, gerekçelerinizi, en güçlü karşı argümanı ve ona yanıtınızı yazınız.",
+      "ipuclari": [
+        "1. adım: 'Rasyonel' kavramını tanımlayın (kesin kanıtlanmış mı, yoksa gerekçelerle uyumlu ve savunulabilir mi?) ve tezinizi uygun bir niteleyiciyle tek cümlede yazın.",
+        "2. adım: Tezinize en az iki bağımsız gerekçe bulun; her birini bir veri ve bir ilkeyle kurun, gerekirse Plantinga, James ya da Kant gibi bir düşünürü destek olarak kullanın.",
+        "3. adım: Clifford'un kanıtçılığını hoşgörü ilkesine uygun biçimde karşı argüman olarak yazın; bu argümanın hangi öncülüne neden katılmadığınızı gösterin ve sonucunuzu gerekçelerinizin gücüyle orantılı bir kesinlikle ifade edin."
+      ],
+      "cevap": "Kavram tanımı: Bu denemede 'rasyonel' kavramı 'kesin olarak kanıtlanmış' anlamında değil, 'eldeki gerekçelerle uyumlu, tutarlı ve savunulabilir' anlamında kullanılmıştır. Tez (niteleyiciyle): Açık bir karşı kanıt bulunmadığı sürece, akılla kesin olarak kanıtlanamayan bir inanç da bazı koşullarda rasyonel olabilir. Gerekçe 1: Veri: Başka insanların da bizim gibi bir zihne sahip olduğuna, geçmişin gerçekten yaşandığına ya da dış dünyanın bir rüya olmadığına kesin bir kanıt olmadan inanırız. İlke: Kesin kanıtı olmayan bütün inançları akıl dışı saymak, en temel ve vazgeçilmez inançlarımızı da akıl dışı saymak olur. Destek: Plantinga'nın temel inanç görüşü, bazı inançların başka inançlardan çıkarılmadan da yerinde olabileceğini savunur. Gerekçe 2: Veri: Bazı hayati seçimlerde kanıt kesin bir karar vermemize yetmez, ama karar vermemek de bir karar anlamına gelir. İlke: Canlı, kaçınılmaz ve önemli seçeneklerde, kanıtın sustuğu yerde karar vermek meşrudur. Destek: William James'in 'İnanma İstenci' görüşü; Kant'ın ahlaki yaşam için Tanrı'yı pratik aklın koyutu olarak kabul etmesi. Karşı argüman (hoşgörü ilkesiyle): Clifford'a göre inançlarımız yalnızca bizi değil, başkalarını da etkiler. Denetlemeden yolcularını taşıyan gemi sahibi gibi, yetersiz kanıtla inanan kişi sorumsuzca davranır; bu nedenle yetersiz kanıtla inanmak her zaman yanlıştır. Bu argümanın güçlü yanı, inancın ahlaki sorumluluk boyutunu öne çıkarmasıdır ve bu nokta kabul edilmelidir: Açık karşı kanıtlar varken inanmakta ısrar etmek gerçekten sorumsuzluktur. Yanıt: Clifford'un ilkesi ('yetersiz kanıtla inanmak her zaman yanlıştır') kendisi de yeterli kanıtla temellendirilmiş değildir; bu ilkeye uymak için ilkenin kendisini reddetmek gerekir. Ayrıca bu ilke, Gerekçe 1'de görüldüğü gibi, temel inançlarımızın çoğunu da ortadan kaldırır. Öyleyse itirazın 'her zaman' öncülü fazla güçlüdür; daha savunulabilir hâli 'Açık karşı kanıt varken inanmak yanlıştır' biçimindedir ve bu biçim tezimle çelişmez. Çürütme (istisna): İnancın açık bir karşı kanıtı varsa ya da inanç başkalarına zarar verecek eylemlere yol açıyorsa tez geçerli olmaz. Sonuç: Akılla kesin olarak kanıtlanamamak, bir inancı tek başına akıl dışı kılmaz. Ancak böyle bir inanç, karşı kanıtlara açık kalmalı ve sorumlulukla taşınmalıdır. Açık kalan soru şudur: Hangi tür gerekçelerin (deneyim, tanıklık, pratik zorunluluk) yeterli sayılacağını kim ve nasıl belirleyecek? (Öğrenci karşıt bir tezi de savunabilir; önemli olan kavramları tanımlamak, gerekçeleri açıkça göstermek, karşı argümanı adil biçimde ifade etmek ve ona belirli bir öncül üzerinden yanıt vermektir.)"
+    }
+  ]
+}

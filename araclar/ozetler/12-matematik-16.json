@@ -1,0 +1,586 @@
+{
+  "ad": "12-matematik-16",
+  "sinif": 12,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "GEOMETRİ",
+  "konu": "Dönüşümler: Öteleme, Simetri ve Dönme Altında Noktanın ve Doğrunun Görüntüsü",
+  "ciktilar": [
+    "12.4.1.1. Analitik düzlemde koordinatları verilen bir noktanın öteleme, dönme ve simetri dönüşümleri altındaki görüntüsünün koordinatlarını bulur.",
+    "12.4.1.1.a. Öteleme, simetri ve dönme kavramlarını hatırlar ve bu dönüşümleri analitik düzlemde koordinat kurallarıyla ifade eder.",
+    "12.4.1.1.b. Noktanın noktaya, eksenlere, y = x doğrusuna ve bir doğruya göre simetrisini; doğrunun bir noktaya göre simetrisini bulur.",
+    "12.4.1.1.c. Bilgi ve iletişim teknolojileri yardımıyla öteleme, simetri ve dönme dönüşümlerini inceler ve bulduğu sonuçları doğrular."
+  ],
+  "giris": "Trigonometriyi geride bırakıp geometrinin en görsel konularından birine, {koyu:dönüşümlere} geçiyoruz. Bu hafta analitik düzlemde bir noktayı {koyu:öteleyerek}, bir noktaya ya da doğruya göre {koyu:yansıtarak} ve bir merkez etrafında {koyu:döndürerek} görüntüsünün koordinatlarını bulacağız. Ayna, kaleydoskop, dönme dolap ve ekrandaki her animasyon bu üç hareketin birleşimidir; haftanın sonunda bir noktanın nereye gideceğini koordinat kurallarıyla saniyeler içinde hesaplayabilecek, bir doğrunun bir noktaya göre simetriğinin denklemini yazabileceksiniz.",
+  "ozet": [
+    "{koyu:Öteleme:} (a, b) vektörüyle öteleme A(x, y) noktasını A′(x + a, y + b) noktasına taşır; bir doğru ötelenirken denklemde x yerine x − a, y yerine y − b yazılır ve eğim değişmez.",
+    "{koyu:Noktaya göre simetri:} A(x, y) noktasının M(a, b) noktasına göre simetriği A′(2a − x, 2b − y) olur; M noktası [AA′] doğru parçasının orta noktasıdır, orijine göre simetri ise (−x, −y) verir.",
+    "{koyu:Eksenler ve açıortaylar:} x-eksenine göre (x, −y), y-eksenine göre (−x, y), y = x doğrusuna göre (y, x), y = −x doğrusuna göre (−y, −x) görüntüsü elde edilir.",
+    "{koyu:Bir doğruya göre simetri:} Nokta ile görüntüsünü birleştiren doğru simetri doğrusuna diktir ve orta nokta doğrunun üzerindedir; H dikme ayağı ise A′ = 2H − A yazılır.",
+    "{koyu:Doğrunun noktaya göre simetriği:} Denklemde x yerine 2p − x, y yerine 2q − y yazılır; görüntü doğru ilk doğruya paraleldir ve M noktası iki doğrudan eşit uzaklıktadır.",
+    "{koyu:Dönme:} Orijin etrafında pozitif yönde 90° dönme (x, y) → (−y, x), 180° dönme (−x, −y), 270° dönme (y, −x) verir; başka bir merkez için önce merkez orijine ötelenir, döndürülür ve geri ötelenir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Dönüşüm Kavramı, Öteleme ve Doğrunun Ötelenmesi",
+      "metin": [
+        "Düzlemdeki her noktayı yine düzlemdeki bir noktaya eşleyen kurala {koyu:dönüşüm} denir. Bir A noktasının dönüşüm sonucunda eşlendiği nokta A′ ile gösterilir ve A′ noktasına A'nın {koyu:görüntüsü} denir. Bu ünite kapsamında üç temel dönüşümü inceliyoruz: {koyu:öteleme} (kaydırma), {koyu:simetri} (yansıma) ve {koyu:dönme}. Bu üç dönüşümün ortak özelliği iki nokta arasındaki uzaklığı ve açıları korumasıdır; bu yüzden bunlara {koyu:izometri} (eş ölçülü dönüşüm) denir. Bir üçgen ötelendiğinde, yansıtıldığında ya da döndürüldüğünde kenar uzunlukları, açıları ve alanı değişmez; yalnızca konumu (ve yansımada yönelişi) değişir.",
+        "{koyu:Öteleme}, düzlemdeki bütün noktaları aynı yönde ve aynı miktarda kaydırır. Bu kaydırma bir {koyu:öteleme vektörü} (a, b) ile verilir: a yatay, b düşey kaymadır. Kural çok sadedir: {koyu:A(x, y) → A′(x + a, y + b)}. Örneğin A(2, −3) noktası (4, 1) vektörüyle ötelenirse A′(2 + 4, −3 + 1) = A′(6, −2) bulunur. a > 0 sağa, a < 0 sola; b > 0 yukarı, b < 0 aşağı kayma demektir. Bir nokta ile görüntüsü biliniyorsa vektör {koyu:A′ − A} farkıyla bulunur. Art arda yapılan iki öteleme tek bir ötelemeye eşittir: önce (a, b), sonra (c, d) ötelemesi, (a + c, b + d) ötelemesiyle aynı sonucu verir. (a, b) ötelemesini geri alan öteleme ise (−a, −b) ötelemesidir.",
+        "Bir {koyu:doğrunun ötelenmesi} de aynı fikre dayanır. Görüntü doğru üzerindeki her (x, y) noktası, ilk doğrudaki (x − a, y − b) noktasından gelmiştir; bu yüzden denklemde {koyu:x yerine x − a, y yerine y − b} yazılır. Örneğin y = 2x + 1 doğrusu (3, −2) vektörüyle ötelenirse y − (−2) = 2(x − 3) + 1, yani y + 2 = 2x − 5 ve {koyu:y = 2x − 7} elde edilir. Kontrol: (0, 1) noktası ilk doğrudadır; görüntüsü (3, −1) olup 2·3 − 7 = −1 sağlanır. Öteleme doğrunun eğimini değiştirmez; görüntü doğru ilk doğruya paraleldir ya da öteleme vektörü doğrultusundaysa doğru kendisine eşlenir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Hareket",
+          "Öteleme Vektörü",
+          "Noktanın Görüntüsü",
+          "Doğru Denkleminde Yapılan Değişiklik"
+        ],
+        "satirlar": [
+          [
+            "3 birim sağa",
+            "(3, 0)",
+            "(x + 3, y)",
+            "x yerine x − 3"
+          ],
+          [
+            "4 birim aşağı",
+            "(0, −4)",
+            "(x, y − 4)",
+            "y yerine y + 4"
+          ],
+          [
+            "2 birim sola, 5 birim yukarı",
+            "(−2, 5)",
+            "(x − 2, y + 5)",
+            "x yerine x + 2, y yerine y − 5"
+          ],
+          [
+            "Genel öteleme",
+            "(a, b)",
+            "(x + a, y + b)",
+            "x yerine x − a, y yerine y − b"
+          ],
+          [
+            "Ters öteleme",
+            "(−a, −b)",
+            "(x − a, y − b)",
+            "x yerine x + a, y yerine y + b"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Dönüşüm, Görüntü ve İzometri",
+          "metin": "Düzlemin her noktasını bir noktaya eşleyen kurala dönüşüm, A noktasının eşlendiği A′ noktasına görüntü denir. Uzaklıkları koruyan dönüşümlere {koyu:izometri} denir; öteleme, simetri ve dönme birer izometridir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Doğru Ötelenirken İşaret Tuzağı",
+          "metin": "Nokta ötelenirken koordinata a eklenir, doğru ötelenirken denklemdeki x yerine {koyu:x − a} yazılır. y = 2x + 1 doğrusunu 3 birim sağa kaydırmak y = 2(x − 3) + 1 verir; y = 2(x + 3) + 1 yazmak doğruyu sola kaydırır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#2563eb' stroke-width='2'/><text x='380' y='26' text-anchor='middle' font-size='16' font-weight='700' fill='#1e3a8a'>Öteleme: Noktanın ve Doğrunun Kaydırılması</text><path d='M40 50V290M80 50V290M120 50V290M160 50V290M240 50V290M280 50V290M320 50V290M360 50V290M40 50H360M40 90H360M40 130H360M40 210H360M40 250H360M40 290H360' stroke='#e2e8f0' stroke-width='1' fill='none'/><line x1='40' y1='170' x2='365' y2='170' stroke='#64748b' stroke-width='1.5'/><line x1='200' y1='45' x2='200' y2='292' stroke='#64748b' stroke-width='1.5'/><text x='368' y='174' font-size='12' fill='#334155'>x</text><text x='206' y='56' font-size='12' fill='#334155'>y</text><text x='204' y='184' font-size='10' fill='#334155'>O</text><text x='276' y='184' font-size='10' fill='#64748b'>4</text><text x='112' y='184' font-size='10' fill='#64748b'>−4</text><text x='188' y='94' font-size='10' fill='#64748b'>4</text><text x='182' y='254' font-size='10' fill='#64748b'>−4</text><line x1='140' y1='270' x2='240' y2='70' stroke='#7c3aed' stroke-width='2'/><line x1='220' y1='270' x2='320' y2='70' stroke='#7c3aed' stroke-width='2' stroke-dasharray='6 4'/><text x='60' y='284' font-size='11' fill='#6d28d9'>y = 2x + 1</text><text x='326' y='80' font-size='11' fill='#6d28d9'>y = 2x − 7</text><line x1='240' y1='70' x2='293' y2='105' stroke='#16a34a' stroke-width='2'/><polygon points='300,110 289.5,107.8 293.9,101.2' fill='#16a34a'/><text x='276' y='84' font-size='11' fill='#15803d'>(3, −2)</text><circle cx='240' cy='230' r='4' fill='#dc2626'/><circle cx='320' cy='210' r='4' fill='#dc2626'/><line x1='240' y1='230' x2='311' y2='212' stroke='#16a34a' stroke-width='2'/><polygon points='320,210 311.3,216.3 309.3,208.5' fill='#16a34a'/><text x='196' y='248' font-size='11' fill='#b91c1c'>A(2, −3)</text><text x='326' y='228' font-size='11' fill='#b91c1c'>A′(6, −2)</text><text x='268' y='242' font-size='11' fill='#15803d'>(4, 1)</text><rect x='400' y='50' width='340' height='235' rx='12' fill='#ffffff' stroke='#2563eb' stroke-width='2'/><text x='570' y='76' text-anchor='middle' font-size='14' font-weight='700' fill='#1e40af'>Öteleme Kuralı</text><text x='414' y='102' font-size='12' fill='#334155'>Vektör (a, b): A(x, y) → A′(x + a, y + b)</text><text x='414' y='126' font-size='12' fill='#334155'>Örnek: A(2, −3) ve (4, 1) → A′(6, −2)</text><text x='414' y='150' font-size='12' fill='#6d28d9'>Doğru: x yerine x − a, y yerine y − b</text><text x='414' y='174' font-size='12' fill='#334155'>y = 2x + 1 doğrusu, vektör (3, −2):</text><text x='414' y='198' font-size='12' fill='#334155'>y + 2 = 2(x − 3) + 1 → y = 2x − 7</text><text x='414' y='222' font-size='12' fill='#334155'>Eğim değişmez: görüntü doğru paraleldir.</text><text x='414' y='246' font-size='12' fill='#334155'>Ardışık ötelemeler: (a, b) + (c, d)</text><text x='414' y='270' font-size='12' fill='#15803d'>Uzunluk ve açı korunur (izometri).</text></svg>"
+    },
+    {
+      "baslik": "Noktanın Orijine ve Bir Noktaya Göre Simetrisi",
+      "metin": [
+        "Bir A noktasının M noktasına göre simetriği, M'den geçen doğru üzerinde, M'nin öbür tarafında ve M'ye A ile {koyu:aynı uzaklıkta} bulunan A′ noktasıdır. Başka bir deyişle {koyu:M noktası [AA′] doğru parçasının orta noktasıdır}; bu yüzden M'ye {koyu:simetri merkezi} denir. Orta nokta formülünden yola çıkalım: A(x, y), A′(x′, y′) ve M(a, b) için a = {kesir:x + x′|2} ve b = {kesir:y + y′|2} olmalıdır. Buradan x′ = 2a − x ve y′ = 2b − y elde edilir. Kural: {koyu:A(x, y) noktasının M(a, b) noktasına göre simetriği A′(2a − x, 2b − y) noktasıdır.} Örneğin A(3, 5) noktasının M(1, −2) noktasına göre simetriği A′(2·1 − 3, 2·(−2) − 5) = A′(−1, −9) olur.",
+        "Simetri merkezi {koyu:orijin} olduğunda a = b = 0 olur ve kural {koyu:A(x, y) → A′(−x, −y)} biçimine iner: iki koordinatın da işareti değişir. Örneğin B(−3, 2) noktasının orijine göre simetriği B′(3, −2), C(0, 4) noktasınınki C′(0, −4) olur. Orijine göre simetri, birinci bölgedeki bir noktayı üçüncü bölgeye, ikinci bölgedeki bir noktayı dördüncü bölgeye taşır. Altıncı bölümde göreceğimiz gibi bu dönüşüm, orijin etrafında 180° dönme ile aynı sonucu verir. Soru tersten de sorulabilir: A ve A′ verilip M istenirse M, AA′ doğru parçasının orta noktası olarak bulunur; A′ ve M verilip A istenirse yine aynı kural kullanılır, çünkü A da A′'nün M'ye göre simetriğidir.",
+        "Noktaya göre simetrinin birkaç önemli özelliği vardır. Birincisi, {koyu:{uzunluk:MA} = {uzunluk:MA′}} olup merkezden uzaklık korunur. İkincisi, dönüşüm iki kez art arda uygulanırsa nokta {koyu:kendisine geri döner}: A → A′ → A. Üçüncüsü, simetri merkezi olan M kendisinin görüntüsüdür; düzlemde yerinde kalan tek nokta M'dir. Dördüncüsü ve en ilginci, önce M'ye sonra N'ye göre simetri almak, {koyu:2·(N − M) vektörüyle bir öteleme} yapmaya eşittir. Örneğin A(1, 1) noktasının O(0, 0) noktasına göre simetriği (−1, −1), bunun N(2, 0) noktasına göre simetriği (5, 1) olur; gerçekten de 2·(N − O) = (4, 0) ve (1, 1) + (4, 0) = (5, 1) bulunur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Verilenler",
+          "İstenen",
+          "Kullanılan Kural",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "A(3, 5), M(1, −2)",
+            "A′",
+            "A′(2a − x, 2b − y)",
+            "A′(−1, −9)"
+          ],
+          [
+            "B(−3, 2), merkez orijin",
+            "B′",
+            "B′(−x, −y)",
+            "B′(3, −2)"
+          ],
+          [
+            "K(−2, 7), K′(4, 1)",
+            "Simetri merkezi N",
+            "N, [KK′] orta noktası",
+            "N(1, 4)"
+          ],
+          [
+            "A′(6, 0), M(2, 3)",
+            "A",
+            "A(2a − x′, 2b − y′)",
+            "A(−2, 6)"
+          ],
+          [
+            "A(1, 1), önce O sonra N(2, 0)",
+            "Son görüntü",
+            "2·(N − O) = (4, 0) ötelemesi",
+            "(5, 1)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Noktaya Göre Simetri Kuralı",
+          "metin": "A(x, y) noktasının M(a, b) noktasına göre simetriği A′(2a − x, 2b − y) noktasıdır. Orijine göre simetride A′(−x, −y) olur. Kontrol için A ile A′'nün orta noktasının M olduğunu doğrulayın."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Zihinden Hızlı Hesap",
+          "metin": "A'dan M'ye gitmek için yapılan kaymayı (M − A) bir kez daha uygulayın: A(3, 5)'ten M(1, −2)'ye gitmek için (−2, −7) kayılır; M'den bir kez daha (−2, −7) kayınca A′(−1, −9) bulunur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#dc2626' stroke-width='2'/><text x='380' y='26' text-anchor='middle' font-size='16' font-weight='700' fill='#991b1b'>Noktaya Göre Simetri: Simetri Merkezi Orta Noktadır</text><path d='M40 50V290M80 50V290M120 50V290M160 50V290M240 50V290M280 50V290M320 50V290M360 50V290M40 50H360M40 90H360M40 130H360M40 210H360M40 250H360M40 290H360' stroke='#e2e8f0' stroke-width='1' fill='none'/><line x1='40' y1='170' x2='365' y2='170' stroke='#64748b' stroke-width='1.5'/><line x1='200' y1='45' x2='200' y2='292' stroke='#64748b' stroke-width='1.5'/><text x='368' y='174' font-size='12' fill='#334155'>x</text><text x='206' y='56' font-size='12' fill='#334155'>y</text><text x='186' y='184' font-size='10' fill='#334155'>O</text><line x1='280' y1='110' x2='160' y2='190' stroke='#dc2626' stroke-width='2' stroke-dasharray='6 4'/><circle cx='280' cy='110' r='5' fill='#2563eb'/><circle cx='220' cy='150' r='5' fill='#dc2626'/><circle cx='160' cy='190' r='5' fill='#2563eb'/><text x='288' y='106' font-size='12' fill='#1e40af'>A(4, 3)</text><text x='230' y='162' font-size='12' font-weight='700' fill='#b91c1c'>M(1, 1)</text><text x='152' y='204' text-anchor='end' font-size='12' fill='#1e40af'>A′(−2, −1)</text><line x1='140' y1='130' x2='260' y2='210' stroke='#059669' stroke-width='2' stroke-dasharray='6 4'/><circle cx='140' cy='130' r='5' fill='#059669'/><circle cx='260' cy='210' r='5' fill='#059669'/><circle cx='200' cy='170' r='4' fill='#334155'/><text x='132' y='124' text-anchor='end' font-size='12' fill='#047857'>B(−3, 2)</text><text x='268' y='224' font-size='12' fill='#047857'>B′(3, −2)</text><rect x='395' y='50' width='345' height='235' rx='12' fill='#ffffff' stroke='#dc2626' stroke-width='2'/><text x='567' y='76' text-anchor='middle' font-size='14' font-weight='700' fill='#991b1b'>Kural</text><text x='409' y='100' font-size='12' fill='#334155'>M(a, b) merkezli simetri:</text><text x='409' y='122' font-size='13' font-weight='700' fill='#b91c1c'>A(x, y) → A′(2a − x, 2b − y)</text><text x='409' y='146' font-size='12' fill='#334155'>Orijine göre: A(x, y) → A′(−x, −y)</text><text x='409' y='170' font-size='12' fill='#1e40af'>A(4, 3), M(1, 1) → A′(−2, −1)</text><text x='409' y='192' font-size='12' fill='#334155'>Kontrol: ((4 − 2)/2, (3 − 1)/2) = (1, 1)</text><text x='409' y='216' font-size='12' fill='#047857'>B(−3, 2) → B′(3, −2) (merkez O)</text><text x='409' y='240' font-size='12' fill='#334155'>|MA| = |MA′|; iki kez uygulanınca A geri gelir.</text><text x='409' y='264' font-size='12' fill='#334155'>Önce M, sonra N simetrisi = 2·(N − M) öteleme</text></svg>"
+    },
+    {
+      "baslik": "Noktanın Eksenlere, y = x ve y = −x Doğrularına Göre Simetrisi",
+      "metin": [
+        "Bir noktanın bir doğruya göre simetriği bulunurken doğru bir {koyu:ayna} gibi düşünülür: Nokta ile görüntüsünü birleştiren doğru parçası aynaya {koyu:diktir} ve {koyu:orta noktası ayna doğrusunun üzerindedir}. En sade aynalar koordinat eksenleridir. {koyu:x-eksenine göre simetride} nokta dikey olarak yansır; apsis aynı kalır, ordinatın işareti değişir: {koyu:(x, y) → (x, −y)}. {koyu:y-eksenine göre simetride} ise nokta yatay olarak yansır: {koyu:(x, y) → (−x, y)}. Örneğin P(4, 2) noktasının x-eksenine göre simetriği (4, −2), y-eksenine göre simetriği (−4, 2) olur. Kontrol: P ile (4, −2) arasındaki doğru parçası x = 4 dik doğrusu üzerindedir ve orta noktası (4, 0) x-ekseninin üzerindedir.",
+        "Birinci ve üçüncü bölgenin açıortayı olan {koyu:y = x doğrusuna göre simetride koordinatlar yer değiştirir}: {koyu:(x, y) → (y, x)}. Bunun nedeni açıktır: (x, y) ile (y, x) noktalarının orta noktası ({kesir:x + y|2}, {kesir:x + y|2}) olup y = x doğrusu üzerindedir; iki noktayı birleştiren doğrunun eğimi {kesir:x − y|y − x} = −1'dir, yani eğimi 1 olan y = x doğrusuna diktir. İkinci ve dördüncü bölgenin açıortayı olan {koyu:y = −x doğrusuna göre simetride} koordinatlar hem yer değiştirir hem de işaret değiştirir: {koyu:(x, y) → (−y, −x)}. P(4, 2) için y = x simetriği (2, 4), y = −x simetriği (−2, −4) olur. Orijine göre simetriyi de eklersek P noktasının beş farklı görüntüsünü tek şekilde görebiliriz.",
+        "Simetri doğrusunun üzerindeki noktalar yerinden oynamaz; bunlara {koyu:sabit (değişmeyen) noktalar} denir. Örneğin (3, 3) noktası y = x doğrusuna göre simetride kendisine eşlenir; (5, 0) noktası x-eksenine göre simetride yerinde kalır. Dönüşümleri art arda uygulamak da kolaydır: önce x-eksenine sonra y-eksenine göre simetri (x, y) → (x, −y) → (−x, −y) verdiğinden {koyu:orijine göre simetriye} eşittir. Aynı şekilde önce y = x sonra y = −x doğrusuna göre simetri (x, y) → (y, x) → (−x, −y) yine orijine göre simetriyi verir. Simetri bir şeklin yönelişini tersine çevirir: Saat yönünde isimlendirilmiş bir ABC üçgeninin aynadaki görüntüsü A′B′C′ saat yönünün tersine sıralanır; bu durum simetriyi öteleme ve dönmeden ayırır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Simetri",
+          "Kural",
+          "P(4, 2) Görüntüsü",
+          "Q(−3, 5) Görüntüsü",
+          "Yerinde Kalan Noktalar"
+        ],
+        "satirlar": [
+          [
+            "x-eksenine göre",
+            "(x, y) → (x, −y)",
+            "(4, −2)",
+            "(−3, −5)",
+            "x-ekseni üzerindekiler (y = 0)"
+          ],
+          [
+            "y-eksenine göre",
+            "(x, y) → (−x, y)",
+            "(−4, 2)",
+            "(3, 5)",
+            "y-ekseni üzerindekiler (x = 0)"
+          ],
+          [
+            "Orijine göre",
+            "(x, y) → (−x, −y)",
+            "(−4, −2)",
+            "(3, −5)",
+            "Yalnız O(0, 0)"
+          ],
+          [
+            "y = x doğrusuna göre",
+            "(x, y) → (y, x)",
+            "(2, 4)",
+            "(5, −3)",
+            "y = x üzerindekiler"
+          ],
+          [
+            "y = −x doğrusuna göre",
+            "(x, y) → (−y, −x)",
+            "(−2, −4)",
+            "(−5, 3)",
+            "y = −x üzerindekiler"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "Ayna Doğrusunun İki Koşulu",
+          "metin": "Bir noktanın bir doğruya göre simetriği iki koşulu birlikte sağlar: (1) Nokta ile görüntüsünü birleştiren doğru, simetri doğrusuna diktir. (2) Bu doğru parçasının orta noktası simetri doğrusunun üzerindedir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "y = −x Simetrisinde İki Değişiklik",
+          "metin": "y = −x doğrusuna göre simetride yalnız yer değiştirmek yetmez, iki koordinatın işareti de değişir: (4, 2) → (−2, −4). Sadece yer değiştirip (2, 4) yazmak y = x simetrisidir; sadece işaret değiştirip (−4, −2) yazmak orijine göre simetridir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#0891b2' stroke-width='2'/><text x='380' y='24' text-anchor='middle' font-size='16' font-weight='700' fill='#155e75'>P(4, 2) Noktasının Eksenlere ve Açıortaylara Göre Simetrileri</text><path d='M50 35V285M100 35V285M150 35V285M250 35V285M300 35V285M350 35V285M50 60H350M50 110H350M50 210H350M50 260H350' stroke='#e2e8f0' stroke-width='1' fill='none'/><line x1='45' y1='160' x2='355' y2='160' stroke='#64748b' stroke-width='1.5'/><line x1='200' y1='32' x2='200' y2='290' stroke='#64748b' stroke-width='1.5'/><text x='358' y='164' font-size='12' fill='#334155'>x</text><text x='205' y='44' font-size='12' fill='#334155'>y</text><line x1='75' y1='285' x2='325' y2='35' stroke='#16a34a' stroke-width='2' stroke-dasharray='7 4'/><line x1='75' y1='35' x2='325' y2='285' stroke='#ea580c' stroke-width='2' stroke-dasharray='7 4'/><text x='328' y='44' font-size='12' font-weight='700' fill='#15803d'>y = x</text><text x='328' y='298' font-size='12' font-weight='700' fill='#c2410c'>y = −x</text><line x1='300' y1='110' x2='300' y2='210' stroke='#94a3b8' stroke-width='1' stroke-dasharray='3 3'/><line x1='300' y1='110' x2='100' y2='110' stroke='#94a3b8' stroke-width='1' stroke-dasharray='3 3'/><line x1='300' y1='110' x2='250' y2='60' stroke='#16a34a' stroke-width='1' stroke-dasharray='3 3'/><line x1='300' y1='110' x2='150' y2='260' stroke='#ea580c' stroke-width='1' stroke-dasharray='3 3'/><line x1='300' y1='110' x2='100' y2='210' stroke='#7c3aed' stroke-width='1' stroke-dasharray='3 3'/><circle cx='300' cy='110' r='5' fill='#2563eb'/><text x='308' y='106' font-size='12' font-weight='700' fill='#1e40af'>P(4, 2)</text><circle cx='300' cy='210' r='5' fill='#0891b2'/><text x='308' y='214' font-size='11' fill='#155e75'>(4, −2)</text><circle cx='100' cy='110' r='5' fill='#0891b2'/><text x='94' y='106' text-anchor='end' font-size='11' fill='#155e75'>(−4, 2)</text><circle cx='100' cy='210' r='5' fill='#7c3aed'/><text x='94' y='224' text-anchor='end' font-size='11' fill='#6d28d9'>(−4, −2)</text><circle cx='250' cy='60' r='5' fill='#16a34a'/><text x='258' y='58' font-size='11' fill='#15803d'>(2, 4)</text><circle cx='150' cy='260' r='5' fill='#ea580c'/><text x='144' y='274' text-anchor='end' font-size='11' fill='#c2410c'>(−2, −4)</text><rect x='380' y='42' width='360' height='262' rx='12' fill='#ffffff' stroke='#0891b2' stroke-width='2'/><text x='560' y='66' text-anchor='middle' font-size='14' font-weight='700' fill='#155e75'>Simetri Doğrusu → Görüntü</text><text x='394' y='94' font-size='12' fill='#155e75'>• x-ekseni: (x, y) → (x, −y)      P′(4, −2)</text><text x='394' y='120' font-size='12' fill='#155e75'>• y-ekseni: (x, y) → (−x, y)      P′(−4, 2)</text><text x='394' y='146' font-size='12' fill='#6d28d9'>• Orijin: (x, y) → (−x, −y)       P′(−4, −2)</text><text x='394' y='172' font-size='12' fill='#15803d'>• y = x: (x, y) → (y, x)            P′(2, 4)</text><text x='394' y='198' font-size='12' fill='#c2410c'>• y = −x: (x, y) → (−y, −x)       P′(−2, −4)</text><line x1='394' y1='214' x2='726' y2='214' stroke='#a5f3fc' stroke-width='1.5'/><text x='394' y='236' font-size='11' fill='#334155'>Simetri doğrusu üzerindeki noktalar yerinde kalır.</text><text x='394' y='258' font-size='11' fill='#334155'>x-ekseni ve sonra y-ekseni simetrisi = orijine göre simetri</text><text x='394' y='280' font-size='11' fill='#334155'>Simetri şeklin yönelişini (saat yönünü) tersine çevirir.</text></svg>"
+    },
+    {
+      "baslik": "Noktanın x = a, y = b ve Herhangi Bir Doğruya Göre Simetrisi",
+      "metin": [
+        "Eksenlere paralel doğrular, eksenlere göre simetrinin kaydırılmış hâlidir. {koyu:x = a dikey doğrusuna göre simetride} ordinat değişmez; apsis için a, x ile x′ değerlerinin ortalaması olmalıdır: a = {kesir:x + x′|2}, yani x′ = 2a − x. Kural: {koyu:(x, y) → (2a − x, y)}. Benzer biçimde {koyu:y = b yatay doğrusuna göre simetride (x, y) → (x, 2b − y)} olur. Örneğin A(1, 3) noktasının x = 4 doğrusuna göre simetriği (7, 3); y = −1 doğrusuna göre simetriği (1, −5) noktasıdır. Bu kuralların noktaya göre simetri kuralıyla benzerliği dikkat çekicidir: Noktaya göre simetride iki koordinat da 2a − x ve 2b − y kalıbına girer, bir eksene paralel doğruya göre simetride yalnız birisi.",
+        "Eğimi 1 veya −1 olan doğrular için de pratik kurallar vardır. {koyu:y = x + k doğrusuna göre simetride (x, y) → (y − k, x + k)}, {koyu:y = −x + k doğrusuna göre simetride (x, y) → (k − y, k − x)} olur. Bu kuralları ezberlemek yerine ötelemeyle türetmek daha güvenlidir: y = x + k doğrusunu ve noktayı (0, −k) vektörüyle aşağı kaydırırsak doğru y = x olur; nokta yansıtılır ve sonra (0, k) ile geri kaydırılır. A(4, 1) ve y = x + 3 için: (4, 1) → (4, −2) → (−2, 4) → {koyu:(−2, 7)}. Kontrol: Orta nokta (1, 4) olup 4 = 1 + 3 sağlanır; AA′ doğrusunun eğimi {kesir:7 − 1|−2 − 4} = −1 olup eğimi 1 olan doğruya diktir.",
+        "Herhangi bir {koyu:d: ax + by + c = 0} doğrusu için iki koşulu sistematik olarak kullanırız. {koyu:1. yol (dikme ayağı):} A noktasından d'ye dik doğru yazılır, d ile kesişim noktası H bulunur; H, [AA′] doğru parçasının orta noktası olduğundan {koyu:A′ = 2H − A} olur. Örneğin A(5, 0) ve d: y = 2x için A'dan geçen dik doğrunun eğimi −{kesir:1|2} olup y = −{kesir:1|2}(x − 5) olur; 2x = −{kesir:1|2}(x − 5) denkleminden x = 1, y = 2 yani H(1, 2) ve A′(2 − 5, 4 − 0) = A′(−3, 4) bulunur. {koyu:2. yol (formül):} D = a·x{alt:0} + b·y{alt:0} + c ve N = {us:a|2} + {us:b|2} olmak üzere x′ = x{alt:0} − {kesir:2a·D|N}, y′ = y{alt:0} − {kesir:2b·D|N} yazılır. A(4, 1) ve 2x + y − 4 = 0 için D = 8 + 1 − 4 = 5, N = 5 olduğundan x′ = 4 − 4 = 0, y′ = 1 − 2 = −1; görüntü {koyu:A′(0, −1)} olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Simetri Doğrusu",
+          "Kural",
+          "A(4, 1) Noktasının Görüntüsü",
+          "Kontrol (Orta Nokta)"
+        ],
+        "satirlar": [
+          [
+            "x = 2",
+            "(2a − x, y)",
+            "(0, 1)",
+            "(2, 1) doğru üzerinde"
+          ],
+          [
+            "y = 3",
+            "(x, 2b − y)",
+            "(4, 5)",
+            "(4, 3) doğru üzerinde"
+          ],
+          [
+            "y = x + 3",
+            "(y − k, x + k)",
+            "(−2, 7)",
+            "(1, 4): 4 = 1 + 3"
+          ],
+          [
+            "y = −x + 2",
+            "(k − y, k − x)",
+            "(1, −2)",
+            "({kesir:5|2}, −{kesir:1|2}): −{kesir:5|2} + 2 = −{kesir:1|2}"
+          ],
+          [
+            "2x + y − 4 = 0",
+            "Dikme ayağı veya formül",
+            "(0, −1)",
+            "(2, 0): 4 + 0 − 4 = 0"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Dikme Ayağı Yöntemi",
+          "metin": "A noktasından d doğrusuna inilen dikmenin ayağı H ise A′ = 2H − A, yani A′(2{alt:H|x} − x, 2{alt:H|y} − y) olur. Bu yöntem her doğru için çalışır ve formülü hatırlamayı gerektirmez."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Sonucu İki Koşulla Denetleyin",
+          "metin": "Bulduğunuz A′ için (1) [AA′] orta noktasını doğru denkleminde deneyin, (2) AA′ eğimi ile d'nin eğiminin çarpımının −1 olduğunu kontrol edin. İkisi de sağlanıyorsa cevap kesinlikle doğrudur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#7c3aed' stroke-width='2'/><text x='380' y='26' text-anchor='middle' font-size='16' font-weight='700' fill='#4c1d95'>Bir Doğruya Göre Simetri: Dikme Ayağı ve Orta Nokta</text><path d='M60 40V290M110 40V290M160 40V290M260 40V290M310 40V290M360 40V290M40 40H380M40 90H380M40 140H380M40 240H380M40 290H380' stroke='#e2e8f0' stroke-width='1' fill='none'/><line x1='40' y1='190' x2='382' y2='190' stroke='#64748b' stroke-width='1.5'/><line x1='210' y1='38' x2='210' y2='292' stroke='#64748b' stroke-width='1.5'/><text x='370' y='204' font-size='12' fill='#334155'>x</text><text x='196' y='48' font-size='12' fill='#334155'>y</text><line x1='165' y1='280' x2='280' y2='50' stroke='#7c3aed' stroke-width='2.5'/><text x='286' y='60' font-size='12' font-weight='700' fill='#6d28d9'>d: y = 2x</text><line x1='335' y1='190' x2='135' y2='90' stroke='#dc2626' stroke-width='2' stroke-dasharray='6 4'/><path d='M239.5 131.1L248.4 135.5L243.9 144.5' fill='none' stroke='#334155' stroke-width='1.5'/><circle cx='335' cy='190' r='5' fill='#2563eb'/><circle cx='135' cy='90' r='5' fill='#2563eb'/><circle cx='235' cy='140' r='5' fill='#dc2626'/><text x='340' y='208' font-size='12' font-weight='700' fill='#1e40af'>A(5, 0)</text><text x='128' y='84' text-anchor='end' font-size='12' font-weight='700' fill='#1e40af'>A′(−3, 4)</text><text x='228' y='116' text-anchor='end' font-size='11' fill='#b91c1c'>H(1, 2)</text><rect x='400' y='45' width='340' height='240' rx='12' fill='#ffffff' stroke='#7c3aed' stroke-width='2'/><text x='570' y='68' text-anchor='middle' font-size='14' font-weight='700' fill='#4c1d95'>Doğruya Göre Simetri: İki Koşul</text><text x='414' y='92' font-size='12' fill='#334155'>1) AA′ doğrusu d doğrusuna diktir.</text><text x='414' y='114' font-size='12' fill='#334155'>2) [AA′] orta noktası H, d üzerindedir.</text><text x='414' y='138' font-size='12' font-weight='700' fill='#b91c1c'>Yöntem: H dikme ayağı → A′ = 2H − A</text><text x='414' y='160' font-size='12' fill='#334155'>A(5, 0), d: y = 2x → H(1, 2)</text><text x='414' y='182' font-size='12' fill='#334155'>A′ = (2·1 − 5, 2·2 − 0) = (−3, 4)</text><line x1='414' y1='196' x2='726' y2='196' stroke='#ddd6fe' stroke-width='1.5'/><text x='414' y='216' font-size='12' font-weight='700' fill='#4c1d95'>Özel doğrular:</text><text x='414' y='236' font-size='12' fill='#334155'>x = a → (2a − x, y)     y = b → (x, 2b − y)</text><text x='414' y='256' font-size='12' fill='#334155'>y = x + k → (y − k, x + k)</text><text x='414' y='276' font-size='12' fill='#334155'>y = −x + k → (k − y, k − x)</text></svg>"
+    },
+    {
+      "baslik": "Doğrunun Bir Noktaya Göre Simetrisi",
+      "metin": [
+        "Şimdi tek bir noktayı değil, bir doğrunun bütün noktalarını aynı anda yansıtıyoruz. d: ax + by + c = 0 doğrusunun M(p, q) noktasına göre simetriği d′ olsun. d′ üzerindeki her (x, y) noktası, d üzerindeki (2p − x, 2q − y) noktasının görüntüsüdür; çünkü noktaya göre simetri iki kez uygulanınca nokta yerine döner. O hâlde (2p − x, 2q − y) noktası d denklemini sağlamalıdır. Kural: {koyu:d denkleminde x yerine 2p − x, y yerine 2q − y yazılırsa d′ denklemi elde edilir.} Örneğin d: 2x − y + 3 = 0 ve M(1, 2) için 2(2 − x) − (4 − y) + 3 = 0, yani 4 − 2x − 4 + y + 3 = 0 ve −2x + y + 3 = 0 bulunur; düzenlenirse {koyu:d′: 2x − y − 3 = 0} olur. Planımıza uygun olarak doğrunun bir doğruya göre simetrisi bu kapsamın dışındadır; yalnızca noktaya göre simetriyle çalışıyoruz.",
+        "Sonucu iki noktayla doğrulayalım. P(0, 3) noktası d üzerindedir (0 − 3 + 3 = 0); M(1, 2) noktasına göre simetriği P′(2, 1) olup 2·2 − 1 − 3 = 0 sağlanır. Q(−2, −1) noktası da d üzerindedir; görüntüsü Q′(4, 5) için 8 − 5 − 3 = 0 sağlanır. Bu da ikinci bir yöntem verir: {koyu:Doğru üzerinden iki nokta seçilir, bunların M'ye göre simetrikleri bulunur ve bu iki görüntüden geçen doğru yazılır.} Dikkat edilirse d ve d′ denklemlerinde x ve y'nin katsayıları aynıdır; yalnız sabit terim değişmiştir. Bu, noktaya göre simetrinin bir doğruyu {koyu:kendisine paralel} bir doğruya dönüştürdüğünü gösterir: eğim (burada 2) korunur.",
+        "Paralel iki doğru arasındaki uzaklık da anlamlı bir kontrol sağlar. M(1, 2) noktasının d'ye uzaklığı {kesir:{uzunluk:2 − 2 + 3}|{kok:5}} = {kesir:3|{kok:5}} birimdir; d ile d′ arasındaki uzaklık {kesir:{uzunluk:3 − (−3)}|{kok:5}} = {kesir:6|{kok:5}} birimdir, yani tam iki katı. Çünkü M iki doğrunun tam ortasındadır. Simetri merkezi {koyu:orijin} ise kural en sade hâlini alır: a(−x) + b(−y) + c = 0, yani {koyu:ax + by − c = 0}; yalnız sabit terimin işareti değişir. Örneğin y = 3x − 1 doğrusunun orijine göre simetriği −y = −3x − 1, yani y = 3x + 1 olur. Son olarak, {koyu:M noktası d üzerindeyse d doğrusu kendisine eşlenir}: x + y − 4 = 0 doğrusu M(2, 2) noktasına göre yansıtılınca (4 − x) + (4 − y) − 4 = 0, yani yine x + y − 4 = 0 bulunur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Doğru d",
+          "Simetri Merkezi",
+          "Yapılan Yerine Koyma",
+          "Görüntü Doğru d′"
+        ],
+        "satirlar": [
+          [
+            "2x − y + 3 = 0",
+            "M(1, 2)",
+            "x → 2 − x, y → 4 − y",
+            "2x − y − 3 = 0"
+          ],
+          [
+            "y = 3x − 1",
+            "O(0, 0)",
+            "x → −x, y → −y",
+            "y = 3x + 1"
+          ],
+          [
+            "x + y − 4 = 0",
+            "M(2, 2) (doğru üzerinde)",
+            "x → 4 − x, y → 4 − y",
+            "x + y − 4 = 0 (kendisi)"
+          ],
+          [
+            "y = 5",
+            "M(0, 1)",
+            "y → 2 − y",
+            "y = −3"
+          ],
+          [
+            "x = −2",
+            "M(1, 0)",
+            "x → 2 − x",
+            "x = 4"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Doğrunun Noktaya Göre Simetriği",
+          "metin": "d: ax + by + c = 0 doğrusunun M(p, q) noktasına göre simetriğini bulmak için denklemde x yerine 2p − x, y yerine 2q − y yazılır. Görüntü doğru d'ye paraleldir; M orijin ise ax + by − c = 0 olur."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Bilgi ve İletişim Teknolojileriyle Kontrol",
+          "metin": "Dinamik geometri yazılımlarında doğruyu ve M noktasını çizip 'noktaya göre yansıt' aracını kullandığınızda görüntü doğrunun denklemi ekrana gelir. M noktasını sürükledikçe d′ doğrusunun d'ye paralel kalarak kaydığını ve M d üzerine geldiğinde iki doğrunun çakıştığını gözlemleyebilirsiniz."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 310' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='310' rx='16' fill='#f8fafc' stroke='#059669' stroke-width='2'/><text x='380' y='24' text-anchor='middle' font-size='16' font-weight='700' fill='#065f46'>Doğrunun Bir Noktaya Göre Simetriği: Paralel Görüntü</text><path d='M50 35V280M100 35V280M150 35V280M250 35V280M300 35V280M350 35V280M45 70H360M45 120H360M45 220H360M45 270H360' stroke='#e2e8f0' stroke-width='1' fill='none'/><line x1='45' y1='170' x2='362' y2='170' stroke='#64748b' stroke-width='1.5'/><line x1='200' y1='32' x2='200' y2='282' stroke='#64748b' stroke-width='1.5'/><text x='350' y='184' font-size='12' fill='#334155'>x</text><text x='186' y='44' font-size='12' fill='#334155'>y</text><line x1='115' y1='265' x2='230' y2='35' stroke='#2563eb' stroke-width='2.5'/><line x1='190' y1='265' x2='305' y2='35' stroke='#059669' stroke-width='2.5' stroke-dasharray='8 4'/><line x1='200' y1='95' x2='250' y2='145' stroke='#94a3b8' stroke-width='1.5' stroke-dasharray='3 3'/><line x1='150' y1='195' x2='300' y2='45' stroke='#94a3b8' stroke-width='1.5' stroke-dasharray='3 3'/><circle cx='225' cy='120' r='5' fill='#dc2626'/><text x='231' y='116' font-size='12' font-weight='700' fill='#b91c1c'>M</text><circle cx='200' cy='95' r='4' fill='#2563eb'/><text x='178' y='98' font-size='12' fill='#1e40af'>P</text><circle cx='250' cy='145' r='4' fill='#059669'/><text x='256' y='158' font-size='12' fill='#047857'>P′</text><circle cx='150' cy='195' r='4' fill='#2563eb'/><text x='132' y='200' font-size='12' fill='#1e40af'>Q</text><circle cx='300' cy='45' r='4' fill='#059669'/><text x='308' y='50' font-size='12' fill='#047857'>Q′</text><text x='110' y='262' text-anchor='end' font-size='11' fill='#1e40af'>d: 2x − y + 3 = 0</text><text x='212' y='280' font-size='11' fill='#047857'>d′: 2x − y − 3 = 0</text><rect x='385' y='40' width='355' height='255' rx='12' fill='#ffffff' stroke='#059669' stroke-width='2'/><text x='562' y='64' text-anchor='middle' font-size='14' font-weight='700' fill='#065f46'>Kural ve Doğrulama</text><text x='399' y='88' font-size='12' fill='#334155'>x yerine 2p − x, y yerine 2q − y yazılır.</text><text x='399' y='110' font-size='12' fill='#334155'>d: 2x − y + 3 = 0 ve M(1, 2):</text><text x='399' y='132' font-size='12' fill='#334155'>2(2 − x) − (4 − y) + 3 = 0</text><text x='399' y='154' font-size='12' font-weight='700' fill='#047857'>→ d′: 2x − y − 3 = 0</text><text x='399' y='176' font-size='12' fill='#334155'>P(0, 3) → P′(2, 1);  Q(−2, −1) → Q′(4, 5)</text><text x='399' y='198' font-size='12' fill='#334155'>d ile d′ paraleldir (eğim 2 korunur).</text><text x='399' y='220' font-size='11' fill='#334155'>M'nin d'ye uzaklığı 3/karekök(5); d ile d′ arası 6/karekök(5)</text><text x='399' y='244' font-size='11' fill='#334155'>Orijine göre: ax + by + c = 0 → ax + by − c = 0</text><text x='399' y='268' font-size='11' fill='#b91c1c'>M doğru üzerindeyse doğru kendisine eşlenir.</text></svg>"
+    },
+    {
+      "baslik": "Orijin ve Bir Nokta Etrafında Dönme; Dinamik Geometri ile Keşif",
+      "metin": [
+        "{koyu:Dönme} dönüşümü üç bilgiyle tanımlanır: {koyu:dönme merkezi}, {koyu:dönme açısı} ve {koyu:yön}. Matematikte {koyu:saat yönünün tersi pozitif yön} kabul edilir. Bir A noktası O merkezi etrafında θ açısıyla döndürüldüğünde A′ noktası, O'ya A ile aynı uzaklıktadır ve AOA′ açısının ölçüsü θ'dır. Orijin etrafındaki özel açılar için kurallar şunlardır: {koyu:90°: (x, y) → (−y, x)}, {koyu:180°: (x, y) → (−x, −y)}, {koyu:270° (yani −90°): (x, y) → (y, −x)}. A(4, 2) noktası için sırasıyla (−2, 4), (−4, −2) ve (2, −4) bulunur. 90° kuralını ezberlemenin kolay yolu: koordinatlar yer değiştirir ve yeni apsisin işareti değişir. Kontrol: OA vektörü (4, 2) ile OA′ vektörü (−2, 4) için 4·(−2) + 2·4 = 0 olduğundan iki vektör diktir ve uzunlukları da {kok:20} ile eşittir.",
+        "Herhangi bir θ açısı için orijin etrafında dönme kuralı, trigonometrinin toplam formüllerinden gelir: {koyu:x′ = x·cos θ − y·sin θ} ve {koyu:y′ = x·sin θ + y·cos θ}. θ = 90° yazılırsa cos 90° = 0 ve sin 90° = 1 olduğundan (−y, x) kuralına; θ = 180° yazılırsa (−x, −y) kuralına ulaşılır. Örneğin A(2, 0) noktası 60° döndürülürse x′ = 2·{kesir:1|2} − 0 = 1, y′ = 2·{kesir:{kok:3}|2} + 0 = {kok:3} olup A′(1, {kok:3}) bulunur. A(2, 2) noktası 45° döndürülürse x′ = 2·{kesir:{kok:2}|2} − 2·{kesir:{kok:2}|2} = 0 ve y′ = {kok:2} + {kok:2} = 2{kok:2} olur; A′(0, 2{kok:2}) noktası y-ekseni üzerindedir ve orijine uzaklığı {kok:8} olarak korunmuştur. Orijin etrafında 180° dönmenin orijine göre simetriyle aynı olduğuna, 360° dönmenin ise her noktayı kendisine eşlediğine dikkat edin.",
+        "Dönme merkezi orijin değilse, örneğin M(a, b) ise, işlemi {koyu:üç adıma} ayırırız: (1) Her şeyi (−a, −b) ile öteleyip merkezi orijine taşırız, (2) orijin etrafında döndürürüz, (3) (a, b) ile geri öteleriz. A(5, 3) noktasını M(2, 1) etrafında 90° döndürelim: A − M = (3, 2); 90° dönme ile (−2, 3); geri öteleme ile {koyu:A′(0, 4)}. Kontrol: {uzunluk:MA} = {kok:9 + 4} = {kok:13} ve {uzunluk:MA′} = {kok:4 + 9} = {kok:13}. Planın önerdiği gibi bilgi ve iletişim teknolojileri bu adımları görmeyi kolaylaştırır: Dinamik geometri yazılımında noktayı, merkezi ve bir açı kaydırıcısı oluşturup 'nokta etrafında döndür' aracını uygulayın; kaydırıcıyı değiştirdikçe görüntünün merkez çevresinde bir çember çizdiğini, öteleme ve simetri araçlarıyla bulduğunuz koordinatların da elle hesapladıklarınızla aynı olduğunu göreceksiniz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Dönme Açısı (orijin etrafında)",
+          "Kural",
+          "A(4, 2) Görüntüsü",
+          "B(−1, 3) Görüntüsü"
+        ],
+        "satirlar": [
+          [
+            "90° (pozitif yön)",
+            "(x, y) → (−y, x)",
+            "(−2, 4)",
+            "(−3, −1)"
+          ],
+          [
+            "180°",
+            "(x, y) → (−x, −y)",
+            "(−4, −2)",
+            "(1, −3)"
+          ],
+          [
+            "270° veya −90°",
+            "(x, y) → (y, −x)",
+            "(2, −4)",
+            "(3, 1)"
+          ],
+          [
+            "360°",
+            "(x, y) → (x, y)",
+            "(4, 2)",
+            "(−1, 3)"
+          ],
+          [
+            "Genel θ",
+            "(x·cos θ − y·sin θ, x·sin θ + y·cos θ)",
+            "θ = 45° için ({kok:2}, 3{kok:2})",
+            "θ = 45° için (−2{kok:2}, {kok:2})"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Bir Nokta Etrafında Dönmenin Üç Adımı",
+          "metin": "M(a, b) etrafında dönme: (1) A − M farkını bulun, (2) bu farkı orijin etrafında döndürün, (3) sonuca M'yi ekleyin. 90° için A′ = (a − (y − b), b + (x − a)) olur."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Yön Belirtilmemişse",
+          "metin": "Soruda yalnız '90° döndürülüyor' deniyorsa pozitif yön, yani saat yönünün tersi kastedilir. 'Saat yönünde 90°' ifadesi −90° demektir ve (x, y) → (y, −x) kuralı kullanılır; iki kuralı karıştırmak en sık yapılan hatadır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#ea580c' stroke-width='2'/><text x='380' y='24' text-anchor='middle' font-size='16' font-weight='700' fill='#9a3412'>Orijin Etrafında Dönme: A(4, 2) Noktasının Görüntüleri</text><path d='M50 35V285M100 35V285M150 35V285M250 35V285M300 35V285M350 35V285M50 60H350M50 110H350M50 210H350M50 260H350' stroke='#e2e8f0' stroke-width='1' fill='none'/><line x1='45' y1='160' x2='355' y2='160' stroke='#64748b' stroke-width='1.5'/><line x1='200' y1='32' x2='200' y2='290' stroke='#64748b' stroke-width='1.5'/><text x='358' y='164' font-size='12' fill='#334155'>x</text><text x='205' y='44' font-size='12' fill='#334155'>y</text><circle cx='200' cy='160' r='111.8' fill='none' stroke='#fdba74' stroke-width='1.5' stroke-dasharray='5 4'/><line x1='200' y1='160' x2='300' y2='110' stroke='#2563eb' stroke-width='2'/><line x1='200' y1='160' x2='150' y2='60' stroke='#16a34a' stroke-width='2'/><line x1='200' y1='160' x2='100' y2='210' stroke='#7c3aed' stroke-width='2'/><line x1='200' y1='160' x2='250' y2='260' stroke='#dc2626' stroke-width='2'/><path d='M300 110 A111.8 111.8 0 0 0 150 60' fill='none' stroke='#16a34a' stroke-width='2.5'/><text x='262' y='58' font-size='12' font-weight='700' fill='#15803d'>+90°</text><path d='M218 151 A20 20 0 0 0 191 142' fill='none' stroke='#16a34a' stroke-width='1.5'/><circle cx='300' cy='110' r='5' fill='#2563eb'/><text x='308' y='106' font-size='12' font-weight='700' fill='#1e40af'>A(4, 2)</text><circle cx='150' cy='60' r='5' fill='#16a34a'/><text x='144' y='56' text-anchor='end' font-size='11' fill='#15803d'>A₁(−2, 4)</text><circle cx='100' cy='210' r='5' fill='#7c3aed'/><text x='94' y='226' text-anchor='end' font-size='11' fill='#6d28d9'>A₂(−4, −2)</text><circle cx='250' cy='260' r='5' fill='#dc2626'/><text x='258' y='276' font-size='11' fill='#b91c1c'>A₃(2, −4)</text><circle cx='200' cy='160' r='3' fill='#334155'/><rect x='380' y='42' width='360' height='262' rx='12' fill='#ffffff' stroke='#ea580c' stroke-width='2'/><text x='560' y='66' text-anchor='middle' font-size='14' font-weight='700' fill='#9a3412'>Dönme: Merkez, Açı ve Yön</text><text x='394' y='90' font-size='12' fill='#15803d'>90°: (x, y) → (−y, x)          A₁(−2, 4)</text><text x='394' y='112' font-size='12' fill='#6d28d9'>180°: (x, y) → (−x, −y)        A₂(−4, −2)</text><text x='394' y='134' font-size='12' fill='#b91c1c'>270° (−90°): (x, y) → (y, −x)   A₃(2, −4)</text><text x='394' y='158' font-size='12' fill='#334155'>Genel θ: x′ = x·cos θ − y·sin θ</text><text x='394' y='178' font-size='12' fill='#334155'>              y′ = x·sin θ + y·cos θ</text><line x1='394' y1='192' x2='726' y2='192' stroke='#fed7aa' stroke-width='1.5'/><text x='394' y='212' font-size='12' font-weight='700' fill='#9a3412'>M(a, b) etrafında: ötele → döndür → geri ötele</text><text x='394' y='234' font-size='11' fill='#334155'>A(5, 3), M(2, 1), 90°: (3, 2) → (−2, 3) → A′(0, 4)</text><text x='394' y='256' font-size='11' fill='#334155'>|OA| = |OA₁| = karekök(20): uzaklık korunur.</text><text x='394' y='278' font-size='11' fill='#334155'>Pozitif yön: saat yönünün tersi</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "A(−2, 5) noktası bir öteleme ile A′(3, 1) noktasına taşınıyor. a) Öteleme vektörünü bulunuz. b) Aynı öteleme altında B(1, −1) noktasının görüntüsünü bulunuz. c) y = −x + 4 doğrusunun bu öteleme altındaki görüntüsünün denklemini yazınız.",
+      "cevap": "1. Adım (vektör): A′ − A = (3 − (−2), 1 − 5) = (5, −4). Öteleme 5 birim sağa, 4 birim aşağıdır.\n2. Adım (B'nin görüntüsü): B′ = (1 + 5, −1 + (−4)) = (6, −5).\n3. Adım (doğrunun ötelenmesi): Denklemde x yerine x − 5, y yerine y − (−4) = y + 4 yazılır: y + 4 = −(x − 5) + 4.\n4. Adım (düzenleme): y + 4 = −x + 5 + 4 → y = −x + 5.\n5. Adım (kontrol): (0, 4) noktası ilk doğrudadır; görüntüsü (5, 0) olup −5 + 5 = 0 sağlanır.\nSonuç: Vektör (5, −4), B′(6, −5) ve görüntü doğru y = −x + 5'tir.",
+      "ipucu": "Vektör, görüntüden ilk noktanın çıkarılmasıyla bulunur; doğru ötelenirken ise ters işlem yapılır: x yerine x − a, y yerine y − b."
+    },
+    {
+      "soru": "a) A(3, 5) noktasının M(1, −2) noktasına göre simetriğini bulunuz. b) K(−2, 7) noktasının bir N noktasına göre simetriği K′(4, 1) ise N noktasının koordinatlarını bulunuz.",
+      "cevap": "1. Adım (kural): A(x, y) noktasının M(a, b) noktasına göre simetriği A′(2a − x, 2b − y) noktasıdır.\n2. Adım (a şıkkı): A′ = (2·1 − 3, 2·(−2) − 5) = (−1, −9).\n3. Adım (kontrol): A ile A′'nün orta noktası ({kesir:3 + (−1)|2}, {kesir:5 + (−9)|2}) = (1, −2) = M.\n4. Adım (b şıkkı): N, [KK′] doğru parçasının orta noktasıdır: N = ({kesir:−2 + 4|2}, {kesir:7 + 1|2}) = (1, 4).\n5. Adım (kontrol): K'nin N(1, 4) noktasına göre simetriği (2 − (−2), 8 − 7) = (4, 1) = K′.\nSonuç: A′(−1, −9) ve N(1, 4).",
+      "ipucu": "Simetri merkezi her zaman nokta ile görüntüsünün orta noktasıdır; merkez isteniyorsa doğrudan orta nokta formülü kullanılır."
+    },
+    {
+      "soru": "A(4, 1) noktasının y = x + 3 doğrusuna göre simetriğini bulunuz ve sonucu iki koşulla doğrulayınız.",
+      "cevap": "1. Adım (öteleme ile sadeleştirme): Doğruyu y = x hâline getirmek için her şeyi (0, −3) ile öteleyelim: A(4, 1) → (4, −2).\n2. Adım (y = x simetrisi): (4, −2) → (−2, 4); koordinatlar yer değiştirir.\n3. Adım (geri öteleme): (0, 3) ile ötelenir: (−2, 4) → (−2, 7). Bu, (x, y) → (y − k, x + k) kuralıyla da (1 − 3, 4 + 3) = (−2, 7) olarak bulunur.\n4. Adım (orta nokta koşulu): Orta nokta ({kesir:4 + (−2)|2}, {kesir:1 + 7|2}) = (1, 4); 4 = 1 + 3 olduğundan doğru üzerindedir.\n5. Adım (diklik koşulu): AA′ eğimi {kesir:7 − 1|−2 − 4} = −1; doğrunun eğimi 1; çarpım −1 olduğundan diktirler.\nSonuç: A′(−2, 7).",
+      "ipucu": "y = x + k doğrusunu y = x doğrusuna taşıyan ötelemeyi yapın, yansıtın ve geri öteleyin; kural ezberlemeye gerek kalmaz."
+    },
+    {
+      "soru": "A(5, 0) noktasının d: y = 2x doğrusuna göre simetriğini dikme ayağı yöntemiyle bulunuz; sonucu formülle doğrulayınız.",
+      "cevap": "1. Adım (dik doğru): d'nin eğimi 2 olduğundan A'dan geçen dik doğrunun eğimi −{kesir:1|2}'dir: y = −{kesir:1|2}(x − 5).\n2. Adım (dikme ayağı): 2x = −{kesir:1|2}(x − 5) → 4x = −x + 5 → x = 1; y = 2·1 = 2. H(1, 2).\n3. Adım (görüntü): H orta nokta olduğundan A′ = 2H − A = (2·1 − 5, 2·2 − 0) = (−3, 4).\n4. Adım (formül ile kontrol): d: 2x − y = 0 için a = 2, b = −1, c = 0; D = 2·5 − 0 = 10, N = 4 + 1 = 5. x′ = 5 − {kesir:2·2·10|5} = 5 − 8 = −3; y′ = 0 − {kesir:2·(−1)·10|5} = 0 + 4 = 4.\n5. Adım (uzaklık kontrolü): {uzunluk:OA} = 5 ve {uzunluk:OA′} = {kok:9 + 16} = 5; O doğru üzerinde olduğundan bu eşitlik beklenen sonuçtur.\nSonuç: A′(−3, 4).",
+      "ipucu": "Önce dik doğruyu yazıp d ile kesiştirin; bulduğunuz H noktası A ile A′'nün tam ortasıdır."
+    },
+    {
+      "soru": "d: 2x − y + 3 = 0 doğrusunun M(1, 2) noktasına göre simetriği olan d′ doğrusunun denklemini bulunuz ve d ile d′ arasındaki uzaklığı hesaplayınız.",
+      "cevap": "1. Adım (yerine koyma): x yerine 2·1 − x = 2 − x, y yerine 2·2 − y = 4 − y yazılır: 2(2 − x) − (4 − y) + 3 = 0.\n2. Adım (düzenleme): 4 − 2x − 4 + y + 3 = 0 → −2x + y + 3 = 0 → d′: 2x − y − 3 = 0.\n3. Adım (nokta ile kontrol): P(0, 3) ∈ d; görüntüsü P′(2, 1) ve 4 − 1 − 3 = 0 sağlanır.\n4. Adım (paralellik): İki denklemde x ve y katsayıları aynıdır (2 ve −1); doğrular paraleldir.\n5. Adım (uzaklık): Paralel doğrular arası uzaklık {kesir:{uzunluk:3 − (−3)}|{kok:{us:2|2} + {us:1|2}}} = {kesir:6|{kok:5}} = {kesir:6{kok:5}|5} birimdir. M'nin d'ye uzaklığı {kesir:3|{kok:5}} olup bunun yarısıdır.\nSonuç: d′: 2x − y − 3 = 0 ve aradaki uzaklık {kesir:6{kok:5}|5} birimdir.",
+      "ipucu": "Noktaya göre simetride doğru kendisine paralel bir doğruya gider; yalnız sabit terim değişir. Uzaklık sorusunda M'nin iki doğrunun tam ortasında olduğunu kullanın."
+    },
+    {
+      "soru": "A(5, 3) noktası M(2, 1) noktası etrafında a) pozitif yönde 90°, b) 180° döndürülüyor. Her iki durumda görüntünün koordinatlarını bulunuz.",
+      "cevap": "1. Adım (merkezi orijine taşıma): A − M = (5 − 2, 3 − 1) = (3, 2).\n2. Adım (a: 90° dönme): (x, y) → (−y, x) kuralıyla (3, 2) → (−2, 3).\n3. Adım (a: geri öteleme): (−2, 3) + (2, 1) = (0, 4). A′(0, 4).\n4. Adım (b: 180° dönme): (3, 2) → (−3, −2); geri öteleme: (−3 + 2, −2 + 1) = (−1, −1). A″(−1, −1).\n5. Adım (kontrol): {uzunluk:MA} = {kok:9 + 4} = {kok:13}, {uzunluk:MA′} = {kok:4 + 9} = {kok:13}, {uzunluk:MA″} = {kok:9 + 4} = {kok:13}. Ayrıca 180° dönmede M, [AA″] orta noktasıdır: ({kesir:5 − 1|2}, {kesir:3 − 1|2}) = (2, 1).\nSonuç: 90° dönme ile A′(0, 4), 180° dönme ile A″(−1, −1).",
+      "ipucu": "Merkez orijin değilse önce merkezi orijine öteleyin; 180° dönmenin M'ye göre noktasal simetriyle aynı olduğunu kontrol için kullanabilirsiniz."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "A(3, −4) noktasının y = x doğrusuna göre simetriği aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "(4, −3)",
+        "(−4, 3)",
+        "(−3, 4)",
+        "(3, 4)"
+      ],
+      "dogru": 1,
+      "aciklama": "y = x doğrusuna göre simetride koordinatlar yer değiştirir: (x, y) → (y, x). Buna göre (3, −4) → (−4, 3). (4, −3) y = −x simetrisi, (−3, 4) orijine göre simetri, (3, 4) x-eksenine göre simetridir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "A(2, 1) noktası orijin etrafında pozitif yönde 90° döndürülüyor, ardından elde edilen nokta (3, −1) vektörüyle öteleniyor. Son görüntü aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "(−4, 3)",
+        "(4, −1)",
+        "(2, 1)",
+        "(1, 2)"
+      ],
+      "dogru": 2,
+      "aciklama": "90° dönme: (x, y) → (−y, x) olduğundan (2, 1) → (−1, 2). Öteleme: (−1 + 3, 2 − 1) = (2, 1). Nokta bu iki dönüşümün sonunda kendisine eşlenmiştir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "d: x + 2y − 4 = 0 doğrusunun M(1, 1) noktasına göre simetriği olan doğrunun denklemi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "x + 2y + 4 = 0",
+        "x − 2y − 2 = 0",
+        "2x + y − 2 = 0",
+        "x + 2y − 2 = 0"
+      ],
+      "dogru": 3,
+      "aciklama": "x yerine 2 − x, y yerine 2 − y yazılır: (2 − x) + 2(2 − y) − 4 = 0 → −x − 2y + 2 = 0 → x + 2y − 2 = 0. Kontrol: (4, 0) ∈ d noktasının görüntüsü (−2, 2) olup −2 + 4 − 2 = 0 sağlanır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "A(1, 3) noktasının önce x = 4 doğrusuna, sonra elde edilen noktanın y = −1 doğrusuna göre simetriği alınıyor. Son görüntü aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "(1, −5)",
+        "(7, −5)",
+        "(7, 3)",
+        "(−7, −5)"
+      ],
+      "dogru": 1,
+      "aciklama": "x = 4 doğrusuna göre: (2·4 − 1, 3) = (7, 3). y = −1 doğrusuna göre: (7, 2·(−1) − 3) = (7, −5). (7, 3) yalnız ilk adımın sonucudur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Orijin etrafında 180° dönme, orijine göre simetri ile aynı sonucu verir.",
+          "dogru": true,
+          "aciklama": "180° dönmede cos 180° = −1 ve sin 180° = 0 olduğundan (x, y) → (−x, −y) olur; bu, orijine göre simetrinin kuralıdır."
+        },
+        {
+          "metin": "Öteleme dönüşümü iki nokta arasındaki uzaklığı değiştirir.",
+          "dogru": false,
+          "aciklama": "Öteleme bütün noktaları aynı vektörle kaydırdığından iki nokta arasındaki fark vektörü, dolayısıyla uzaklık değişmez; öteleme bir izometridir."
+        },
+        {
+          "metin": "Bir doğrunun bir noktaya göre simetriği, ilk doğruya paralel ya da onunla çakışık bir doğrudur.",
+          "dogru": true,
+          "aciklama": "x yerine 2p − x, y yerine 2q − y yazıldığında x ve y katsayıları aynı kalır, yalnız sabit terim değişir; nokta doğru üzerindeyse doğru kendisine eşlenir."
+        },
+        {
+          "metin": "Bir doğrunun üzerindeki bir noktanın o doğruya göre simetriği yine kendisidir.",
+          "dogru": true,
+          "aciklama": "Nokta ayna doğrusunun üzerindeyse ayna ile arasındaki uzaklık 0'dır; görüntüsü yerinde kalır. Bu noktalara sabit noktalar denir."
+        },
+        {
+          "metin": "(a, b) noktasının y = −x doğrusuna göre simetriği (b, a) noktasıdır.",
+          "dogru": false,
+          "aciklama": "y = −x doğrusuna göre simetride hem yer değişir hem işaret değişir: (a, b) → (−b, −a). (b, a) noktası y = x doğrusuna göre simetriktir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki dönüşümleri A(x, y) noktasına uygulandığında verdikleri görüntülerle eşleştiriniz.",
+      "ciftler": [
+        [
+          "x-eksenine göre simetri",
+          "(x, −y)"
+        ],
+        [
+          "y-eksenine göre simetri",
+          "(−x, y)"
+        ],
+        [
+          "y = x doğrusuna göre simetri",
+          "(y, x)"
+        ],
+        [
+          "Orijin etrafında pozitif yönde 90° dönme",
+          "(−y, x)"
+        ],
+        [
+          "M(a, b) noktasına göre simetri",
+          "(2a − x, 2b − y)"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Düzlemdeki bütün noktaları aynı yönde ve aynı miktarda kaydıran dönüşüme ___ denir.",
+          "cevap": "öteleme"
+        },
+        {
+          "metin": "Bir noktanın M noktasına göre simetriği alınırken M, nokta ile görüntüsünü birleştiren doğru parçasının ___ noktasıdır.",
+          "cevap": "orta"
+        },
+        {
+          "metin": "Bir noktanın bir doğruya göre simetriği bulunurken nokta ile görüntüsünü birleştiren doğru, simetri doğrusuna ___ olur.",
+          "cevap": "dik"
+        },
+        {
+          "metin": "Bir doğrunun bir noktaya göre simetriği, nokta doğru üzerinde değilse ilk doğruya ___ bir doğrudur.",
+          "cevap": "paralel"
+        },
+        {
+          "metin": "Orijin etrafında ___ derecelik dönme, orijine göre simetri ile aynı sonucu verir.",
+          "cevap": "180"
+        }
+      ],
+      "kelimeler": [
+        "öteleme",
+        "orta",
+        "dik",
+        "paralel",
+        "180"
+      ],
+      "fazla": [
+        "dönme",
+        "teğet"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Köşeleri A(1, 2), B(5, 2) ve C(1, 5) olan ABC üçgeni veriliyor. a) Üçgeni orijin etrafında pozitif yönde 90° döndürünüz ve A′B′C′ üçgeninin köşelerini bulunuz. b) A′B′C′ üçgeninin x-eksenine göre simetriği olan A″B″C″ üçgeninin köşelerini bulunuz. c) ABC üçgeninin y = −x doğrusuna göre simetriğini bulup b şıkkındaki sonuçla karşılaştırınız; üçgenin alanının değişip değişmediğini yorumlayınız.",
+      "ipuclari": [
+        "1. adım: 90° dönme kuralı (x, y) → (−y, x) her köşeye ayrı ayrı uygulanır.",
+        "2. adım: x-eksenine göre simetride (x, y) → (x, −y) kuralı A′, B′ ve C′ noktalarına uygulanır.",
+        "3. adım: y = −x simetrisi (x, y) → (−y, −x) kuralıyla doğrudan hesaplanır; iki dönüşümün art arda uygulanmasının genel kuralını (x, y) → (−y, x) → (−y, −x) zinciriyle yazın, alan için dik kenar uzunluklarını karşılaştırın."
+      ],
+      "cevap": "a) 90° dönme (x, y) → (−y, x): A(1, 2) → A′(−2, 1); B(5, 2) → B′(−2, 5); C(1, 5) → C′(−5, 1).\nb) x-eksenine göre simetri (x, y) → (x, −y): A′(−2, 1) → A″(−2, −1); B′(−2, 5) → B″(−2, −5); C′(−5, 1) → C″(−5, −1).\nc) y = −x doğrusuna göre simetri (x, y) → (−y, −x): A(1, 2) → (−2, −1); B(5, 2) → (−2, −5); C(1, 5) → (−5, −1). Sonuçlar b şıkkıyla aynıdır. Genel olarak (x, y) → (−y, x) → (−y, −x) olduğundan önce 90° dönme sonra x-eksenine göre simetri, y = −x doğrusuna göre simetriye eşittir.\nAlan: ABC'de [AB] yatay ve uzunluğu 5 − 1 = 4, [AC] dikey ve uzunluğu 5 − 2 = 3 olup A açısı diktir; alan {kesir:4·3|2} = 6 birimkaredir. A″B″C″ üçgeninde {uzunluk:A″B″} = {uzunluk:−1 − (−5)} = 4 ve {uzunluk:A″C″} = {uzunluk:−2 − (−5)} = 3 olup alan yine 6 birimkaredir. Dönme ve simetri izometri olduğundan kenar uzunlukları, açılar ve alan korunur; yalnız konum ve (simetri nedeniyle) köşelerin dolanım yönü değişir."
+    }
+  ]
+}

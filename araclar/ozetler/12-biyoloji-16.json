@@ -1,0 +1,596 @@
+{
+  "ad": "12-biyoloji-16",
+  "sinif": 12,
+  "ders": "biyoloji",
+  "ders_adi": "Biyoloji",
+  "hafta": 16,
+  "tarih": "4-8 Ocak 2027",
+  "yayin_tarihi": "2027-01-04",
+  "unite": "2. ÜNİTE: CANLILARDA ENERJİ DÖNÜŞÜMLERİ",
+  "konu": "Canlılık ve Enerji: Elektron Taşıyıcılar, Kemiozmotik ATP Sentezi, Fosforilasyon Çeşitlerinin Karşılaştırılması ve Kemosentez (12.2.1.1)",
+  "ciktilar": [
+    "12.2.1.1. Canlılığın devamı için enerjinin gerekliliğini açıklar.",
+    "12.2.1.1.b. Fosforilasyon çeşitlerini (substrat düzeyinde fosforilasyon, oksidatif fosforilasyon, fotofosforilasyon) kısaca belirtir.",
+    "12.2.1.1.b. Fosforilasyon çeşitlerini enerji kaynağı, elektron kaynağı, gerçekleştiği yer ve görüldüğü canlı grupları bakımından karşılaştırır."
+  ],
+  "giris": "Geçen hafta ATP'nin yapısını ve ATP'nin üç farklı yolla üretildiğini öğrendik. Bu hafta bir adım daha derine iniyoruz: Besinlerden koparılan elektronların {koyu:NAD⁺ ve FAD} gibi taşıyıcılarla nasıl aktarıldığını, {koyu:kemiozmoz} adı verilen mekanizmayla ATP sentaz enziminin bir türbin gibi nasıl çalıştığını, kemosentetik bakterilerin ışık olmadan nasıl ATP ürettiğini ve siyanür gibi zehirlerin fosforilasyonu nasıl durdurduğunu inceliyoruz. Böylece canlılığın sürmesi için enerjinin neden kesintisiz akması gerektiğini somut örneklerle görecek, gelecek hafta başlayacak fotosentez konusuna sağlam bir zemin hazırlayacağız.",
+  "ozet": [
+    "{koyu:Redoks Tepkimeleri:} Elektron kaybına yükseltgenme, elektron kazanımına indirgenme denir; hücrede besinler yükseltgenirken açığa çıkan elektronlar ve enerji kademeli olarak taşıyıcı moleküllere aktarılır.",
+    "{koyu:Elektron Taşıyıcılar:} NAD⁺ ve FAD (B vitaminlerinden türeyen koenzimler) besinlerden koparılan elektronları NADH ve {alt:FADH|2} hâlinde elektron taşıma sistemine taşır; NADP⁺ ise fotosentezde elektron taşır.",
+    "{koyu:Substrat Düzeyinde Fosforilasyon:} Fosfat aktarım potansiyeli ATP'den yüksek olan fosfoenolpirüvat, 1,3-bisfosfogliserat ve fosfokreatin gibi moleküller fosfatlarını enzimle doğrudan ADP'ye aktararak ATP oluşturur.",
+    "{koyu:Kemiozmoz:} Elektron taşıma sisteminin enerjisiyle zarın bir yüzünde H⁺ biriktirilir; H⁺ iyonları ATP sentaz enziminden geri akarken enzimi döndürür ve ATP sentezlenir.",
+    "{koyu:Karşılaştırma ve Kemosentez:} Oksidatif fosforilasyon ile fotofosforilasyon aynı çalışma ilkesini kullanır ancak enerji ve elektron kaynakları farklıdır; kemosentetik bakteriler inorganik maddeleri yükseltgeyerek ışıksız ortamda ATP üretir.",
+    "{koyu:Fosforilasyonun Engellenmesi:} Siyanür ve karbon monoksit elektron akışını, oligomisin ATP sentazı durdurur; ayırıcı maddeler ve termogenin ise H⁺ akışını ATP sentazdan saptırarak enerjiyi ısıya dönüştürür."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Yükseltgenme-İndirgenme Tepkimeleri ve Elektron Taşıyıcı Koenzimler",
+      "metin": [
+        "Hücrede enerji açığa çıkaran tepkimelerin büyük çoğunluğu elektron alışverişine dayanır. Bir molekülün elektron kaybetmesine {koyu:yükseltgenme (oksidasyon)}, elektron kazanmasına ise {koyu:indirgenme (redüksiyon)} denir. Biyolojik sistemlerde elektronlar çoğu zaman bir hidrojen iyonuyla (H⁺) birlikte, yani hidrojen atomu hâlinde taşınır; bu nedenle bir molekülden hidrojen koparılması da yükseltgenme olarak değerlendirilir. Bir molekül elektron vermeden diğeri elektron alamayacağı için yükseltgenme ve indirgenme her zaman birlikte gerçekleşir; bu tepkimelere kısaca {koyu:redoks tepkimeleri} denir. Glikozun solunumla yıkılmasında glikoz yükseltgenir, oksijen indirgenir ve elektronlar yüksek enerji düzeyinden düşük enerji düzeyine inerken enerji açığa çıkar.",
+        "Besinlerden koparılan elektronlar doğrudan oksijene verilmez; önce {koyu:koenzim} adı verilen taşıyıcı moleküllere aktarılır. Bu işi yapan enzimlere {koyu:dehidrogenaz} denir. En yaygın taşıyıcı, B3 vitamininden (niasin) türeyen {koyu:NAD⁺ (nikotinamit adenin dinükleotit)}dir: NAD⁺ + 2e⁻ + 2H⁺ → NADH + H⁺. İkinci önemli taşıyıcı, B2 vitamininden (riboflavin) türeyen {koyu:FAD (flavin adenin dinükleotit)}dir: FAD + 2e⁻ + 2H⁺ → {alt:FADH|2}. NADH ve {alt:FADH|2}, glikoliz ve Krebs döngüsünde toplanan elektronları mitokondrideki elektron taşıma sistemine taşıyarak oksidatif fosforilasyonun yakıtını oluşturur. Fotosentez yapan hücrelerde ise benzer yapıdaki {koyu:NADP⁺} ışığa bağımlı tepkimelerde elektron alarak NADPH'ye dönüşür ve bu elektronlar organik madde sentezinde kullanılır.",
+        "Elektronların tek seferde oksijene aktarılması, yanma tepkimesinde olduğu gibi büyük miktarda enerjinin bir anda ısı ve ışık olarak kaybedilmesine yol açardı. Hücre bunun yerine elektronları {koyu:elektron taşıma sistemi (ETS)} adı verilen bir dizi taşıyıcı üzerinden basamak basamak indirir; her basamakta küçük bir enerji paketi açığa çıkar ve bu enerji ATP sentezinde kullanılabilir. Oksijenli solunumda zincirin sonundaki {koyu:son elektron alıcısı oksijen}dir ve elektronları alan oksijen H⁺ ile birleşerek su oluşturur. Bazı bakteriler oksijen yerine nitrat ya da sülfat gibi inorganik molekülleri son elektron alıcısı olarak kullanır (oksijensiz solunum). Fermantasyonda ise ETS kullanılmaz; NADH elektronlarını pirüvata ya da onun bir türevine vererek yeniden NAD⁺'ya dönüşür, bu yüzden fermantasyonda ATP yalnızca substrat düzeyinde fosforilasyonla elde edilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Taşıyıcı (yükseltgenmiş / indirgenmiş)",
+          "Türediği Vitamin",
+          "Elektron Aldığı Başlıca Süreç",
+          "Elektronları Nereye Taşır?"
+        ],
+        "satirlar": [
+          [
+            "NAD⁺ / NADH",
+            "B3 (niasin)",
+            "Glikoliz, pirüvat oksidasyonu, Krebs döngüsü",
+            "Mitokondri iç zarındaki ETS'ye (fermantasyonda pirüvata veya türevine)"
+          ],
+          [
+            "FAD / FADH₂",
+            "B2 (riboflavin)",
+            "Krebs döngüsü (süksinatın fumarata dönüşümü)",
+            "ETS'ye, NADH'den daha alt bir basamaktan girer"
+          ],
+          [
+            "NADP⁺ / NADPH",
+            "B3 (niasin)",
+            "Fotosentezin ışığa bağımlı tepkimeleri",
+            "Kloroplast stromasındaki organik madde sentezine"
+          ],
+          [
+            "Sitokromlar",
+            "Vitamin kaynaklı değildir (demir içeren proteinler)",
+            "ETS içinde elektron aktarımı",
+            "Zincirdeki bir sonraki taşıyıcıya, en sonunda son elektron alıcısına"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Yükseltgenme ve İndirgenme",
+          "metin": "{koyu:Yükseltgenme:} Bir atom ya da molekülün elektron (veya hidrojen) kaybetmesidir. {koyu:İndirgenme:} Elektron (veya hidrojen) kazanmasıdır. İndirgenen molekülün enerji düzeyi yükselir; NADH bu yüzden NAD⁺'ya göre daha yüksek enerjili bir moleküldür."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kolay Hatırlama Yolu",
+          "metin": "{koyu:YEK – İEK:} Yükseltgenme Elektron Kaybı, İndirgenme Elektron Kazanımı. Bir soruda NAD⁺ → NADH görüyorsanız taşıyıcı indirgenmiş, elektron veren besin ise yükseltgenmiştir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#94a3b8' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Yükseltgenme-İndirgenme ve Elektronların Yolculuğu</text><rect x='30' y='70' width='160' height='76' rx='12' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='110' y='95' text-anchor='middle' font-size='14' font-weight='700' fill='#14532d'>Besin (glikoz)</text><text x='110' y='115' text-anchor='middle' font-size='11' fill='#14532d'>yükseltgenir</text><text x='110' y='133' text-anchor='middle' font-size='11' fill='#14532d'>e⁻ ve H⁺ verir</text><line x1='190' y1='108' x2='232' y2='108' stroke='#334155' stroke-width='3'/><polygon points='232,101 244,108 232,115' fill='#334155'/><rect x='246' y='70' width='160' height='76' rx='12' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/><text x='326' y='95' text-anchor='middle' font-size='13' font-weight='700' fill='#1e3a8a'>NAD⁺ → NADH</text><text x='326' y='114' text-anchor='middle' font-size='13' font-weight='700' fill='#1e3a8a'>FAD → FADH₂</text><text x='326' y='134' text-anchor='middle' font-size='11' fill='#1e3a8a'>taşıyıcılar indirgenir</text><line x1='406' y1='108' x2='436' y2='96' stroke='#334155' stroke-width='3'/><polygon points='432,89 446,92 437,103' fill='#334155'/><line x1='432' y1='70' x2='432' y2='280' stroke='#94a3b8' stroke-width='2'/><text x='440' y='64' font-size='10' fill='#475569'>yüksek enerji</text><text x='440' y='292' font-size='10' fill='#475569'>düşük enerji</text><rect x='450' y='86' width='70' height='22' rx='6' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><rect x='512' y='126' width='70' height='22' rx='6' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><rect x='574' y='166' width='70' height='22' rx='6' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><rect x='636' y='206' width='70' height='22' rx='6' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><line x1='500' y1='108' x2='530' y2='126' stroke='#dc2626' stroke-width='2'/><line x1='562' y1='148' x2='592' y2='166' stroke='#dc2626' stroke-width='2'/><line x1='624' y1='188' x2='654' y2='206' stroke='#dc2626' stroke-width='2'/><text x='575' y='80' font-size='11' font-weight='700' fill='#92400e'>ETS taşıyıcıları</text><text x='600' y='118' font-size='10' fill='#b91c1c'>her basamakta küçük</text><text x='600' y='131' font-size='10' fill='#b91c1c'>enerji paketi</text><rect x='560' y='240' width='185' height='46' rx='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='2'/><text x='652' y='259' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>Son alıcı: oksijen</text><text x='652' y='277' text-anchor='middle' font-size='11' fill='#0c4a6e'>½O₂ + 2e⁻ + 2H⁺ → H₂O</text><line x1='671' y1='228' x2='671' y2='240' stroke='#0284c7' stroke-width='2'/><rect x='30' y='180' width='380' height='100' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='2'/><text x='220' y='205' text-anchor='middle' font-size='12' font-weight='700' fill='#0f172a'>Yükseltgenme = elektron kaybı</text><text x='220' y='227' text-anchor='middle' font-size='12' font-weight='700' fill='#0f172a'>İndirgenme = elektron kazanımı</text><text x='220' y='250' text-anchor='middle' font-size='11' fill='#334155'>İkisi her zaman birlikte gerçekleşir.</text><text x='220' y='269' text-anchor='middle' font-size='11' fill='#334155'>Enerji tek seferde değil, kademeli açığa çıkar.</text></svg>"
+    },
+    {
+      "baslik": "Substrat Düzeyinde Fosforilasyonun Tepkime Örnekleri ve Fosfokreatin Sistemi",
+      "metin": [
+        "Substrat düzeyinde fosforilasyonun nerelerde gerçekleştiğini somut tepkimelerle görelim. Glikolizin başlangıcında glikoz, iki ATP harcanarak fosforlanır ve tepkimeye hazır hâle getirilir; bu bir {koyu:yatırım basamağıdır}, ATP üretimi değil ATP tüketimidir. Glikoz daha sonra üç karbonlu iki moleküle ayrılır ve her biri iki ayrı basamakta ATP üretir: {koyu:1,3-bisfosfogliserat} fosfatlarından birini ADP'ye vererek 3-fosfogliserata, {koyu:fosfoenolpirüvat} ise fosfatını ADP'ye vererek pirüvata dönüşür. Bu tepkimeleri kinaz enzimleri (fosfogliserat kinaz ve pirüvat kinaz) katalizler. Böylece bir glikozdan glikolizde {koyu:4 ATP} üretilir, 2 ATP harcandığı için net kazanç {koyu:2 ATP} olur. Krebs döngüsünde ise süksinil-KoA'nın süksinata dönüştüğü basamakta bir GTP (bazı hücrelerde doğrudan ATP) oluşur; GTP de fosfatını kolayca ADP'ye aktarır. Bir glikoz iki pirüvat verdiği için döngü iki kez döner ve buradan 2 ATP daha kazanılır.",
+        "Bir molekülün fosfatını ADP'ye aktarabilmesi için fosfat grubunun ATP'deki uç fosfattan daha kolay ayrılabilir olması, yani {koyu:fosfat aktarım potansiyelinin} daha yüksek olması gerekir. Bu potansiyel, molekülün standart koşullardaki hidroliz enerjisiyle karşılaştırılabilir: Fosfoenolpirüvatın hidroliziyle yaklaşık 14,8 kcal/mol, 1,3-bisfosfogliseratın hidroliziyle yaklaşık 11,8 kcal/mol, fosfokreatinin hidroliziyle yaklaşık 10,3 kcal/mol enerji açığa çıkar; bu değerler ATP'nin yaklaşık 7,3 kcal/mol'lük değerinden büyüktür. Bu nedenle bu moleküller ADP'yi fosforlayabilir. Glikoz-6-fosfat (yaklaşık 3,3 kcal/mol) gibi düşük potansiyelli moleküller ise ATP sentezleyemez; tersine ATP'den fosfat alarak oluşur. ATP'nin bu ara konumu, onu hem fosfat alabilen hem de verebilen ideal bir {koyu:fosfat taşıyıcısı} yapar.",
+        "Kas ve sinir hücreleri ani enerji gereksinimini karşılamak için {koyu:fosfokreatin (kreatin fosfat)} adı verilen yüksek enerjili bir molekül bulundurur. Dinlenme sırasında ATP fazlası, {koyu:kreatin kinaz} enzimiyle fosfatını kreatine aktarır ve fosfokreatin birikir. Kısa ve şiddetli bir efor başladığında tepkime ters yönde yürür: Fosfokreatin + ADP → Kreatin + ATP. Bu, substrat düzeyinde fosforilasyona benzeyen ve ETS ya da oksijen gerektirmeyen çok hızlı bir fosfat aktarımıdır. Fosfokreatin deposu yoğun bir eforun yalnızca ilk birkaç saniyesinden yaklaşık on saniyesine kadar yetecek ATP'yi sağlayabilir; 100 metre koşusu, halter kaldırma veya bir sıçrama gibi hareketlerde bu sistem öne çıkar. Depo tükendiğinde kas hücresi ATP'yi glikoliz ve oksijenli solunumla üretmeye yönelir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Fosfatlı Molekül",
+          "Standart Hidroliz Enerjisi (yaklaşık)",
+          "ADP'yi Fosforlayıp ATP Üretebilir mi?",
+          "Hücredeki Yeri"
+        ],
+        "satirlar": [
+          [
+            "Fosfoenolpirüvat",
+            "−14,8 kcal/mol",
+            "Evet",
+            "Glikolizin son basamağı (sitoplazma)"
+          ],
+          [
+            "1,3-bisfosfogliserat",
+            "−11,8 kcal/mol",
+            "Evet",
+            "Glikoliz (sitoplazma)"
+          ],
+          [
+            "Fosfokreatin",
+            "−10,3 kcal/mol",
+            "Evet",
+            "Kas ve sinir hücrelerinin sitoplazması"
+          ],
+          [
+            "ATP (ADP'ye hidrolizi)",
+            "−7,3 kcal/mol",
+            "Ara konumdadır; fosfat hem alır hem verir",
+            "Tüm hücreler"
+          ],
+          [
+            "Glikoz-6-fosfat",
+            "−3,3 kcal/mol",
+            "Hayır; ATP'den fosfat alarak oluşur",
+            "Glikolizin ilk basamağı"
+          ],
+          [
+            "Gliserol-3-fosfat",
+            "−2,2 kcal/mol",
+            "Hayır",
+            "Yağ metabolizması"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Fosfat Yüksek Potansiyelden Düşük Potansiyele Aktarılır",
+          "metin": "Substrat düzeyinde fosforilasyonda fosfat grubu, fosfat aktarım potansiyeli ATP'den yüksek olan molekülden ADP'ye geçer. Toplam enerji değişimi negatif olduğu için tepkime kendiliğinden yürür; örneğin fosfoenolpirüvatın fosfatını ADP'ye vermesinde toplam değişim yaklaşık (−14,8) + (+7,3) = −7,5 kcal/mol olur."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Kas Hücresinin Acil Enerji Deposu",
+          "metin": "Kas hücresindeki serbest ATP yoğun bir eforda yalnızca birkaç saniye yeter. Fosfokreatin, ATP'yi neredeyse anında yeniden oluşturarak bu boşluğu doldurur. Kreatin, karaciğer ve böbreklerde amino asitlerden sentezlenir ve kanla kaslara taşınır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#94a3b8' stroke-width='2'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Substrat Düzeyinde Fosfat Aktarımı Örnekleri</text><text x='30' y='60' font-size='11' font-weight='700' fill='#475569'>Glikoliz – fosfogliserat kinaz</text><rect x='30' y='66' width='190' height='42' rx='10' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='125' y='92' text-anchor='middle' font-size='12' font-weight='700' fill='#14532d'>1,3-bisfosfogliserat</text><text x='235' y='93' text-anchor='middle' font-size='16' fill='#334155'>+</text><rect x='250' y='66' width='70' height='42' rx='10' fill='#ede9fe' stroke='#7c3aed' stroke-width='2'/><text x='285' y='92' text-anchor='middle' font-size='13' font-weight='700' fill='#4c1d95'>ADP</text><line x1='330' y1='87' x2='392' y2='87' stroke='#334155' stroke-width='3'/><polygon points='392,80 404,87 392,94' fill='#334155'/><rect x='412' y='66' width='160' height='42' rx='10' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='492' y='92' text-anchor='middle' font-size='12' font-weight='700' fill='#14532d'>3-fosfogliserat</text><text x='586' y='93' text-anchor='middle' font-size='16' fill='#334155'>+</text><rect x='600' y='66' width='70' height='42' rx='10' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='635' y='92' text-anchor='middle' font-size='13' font-weight='700' fill='#92400e'>ATP</text><text x='30' y='136' font-size='11' font-weight='700' fill='#475569'>Glikoliz – pirüvat kinaz</text><rect x='30' y='142' width='190' height='42' rx='10' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/><text x='125' y='168' text-anchor='middle' font-size='12' font-weight='700' fill='#1e3a8a'>Fosfoenolpirüvat</text><text x='235' y='169' text-anchor='middle' font-size='16' fill='#334155'>+</text><rect x='250' y='142' width='70' height='42' rx='10' fill='#ede9fe' stroke='#7c3aed' stroke-width='2'/><text x='285' y='168' text-anchor='middle' font-size='13' font-weight='700' fill='#4c1d95'>ADP</text><line x1='330' y1='163' x2='392' y2='163' stroke='#334155' stroke-width='3'/><polygon points='392,156 404,163 392,170' fill='#334155'/><rect x='412' y='142' width='160' height='42' rx='10' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/><text x='492' y='168' text-anchor='middle' font-size='12' font-weight='700' fill='#1e3a8a'>Pirüvat</text><text x='586' y='169' text-anchor='middle' font-size='16' fill='#334155'>+</text><rect x='600' y='142' width='70' height='42' rx='10' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='635' y='168' text-anchor='middle' font-size='13' font-weight='700' fill='#92400e'>ATP</text><text x='30' y='212' font-size='11' font-weight='700' fill='#475569'>Kas hücresi – kreatin kinaz (iki yönlü)</text><rect x='30' y='218' width='190' height='42' rx='10' fill='#fce7f3' stroke='#db2777' stroke-width='2'/><text x='125' y='244' text-anchor='middle' font-size='12' font-weight='700' fill='#831843'>Fosfokreatin</text><text x='235' y='245' text-anchor='middle' font-size='16' fill='#334155'>+</text><rect x='250' y='218' width='70' height='42' rx='10' fill='#ede9fe' stroke='#7c3aed' stroke-width='2'/><text x='285' y='244' text-anchor='middle' font-size='13' font-weight='700' fill='#4c1d95'>ADP</text><line x1='330' y1='233' x2='392' y2='233' stroke='#334155' stroke-width='3'/><polygon points='392,226 404,233 392,240' fill='#334155'/><line x1='342' y1='247' x2='404' y2='247' stroke='#94a3b8' stroke-width='3'/><polygon points='342,240 330,247 342,254' fill='#94a3b8'/><rect x='412' y='218' width='160' height='42' rx='10' fill='#fce7f3' stroke='#db2777' stroke-width='2'/><text x='492' y='244' text-anchor='middle' font-size='12' font-weight='700' fill='#831843'>Kreatin</text><text x='586' y='245' text-anchor='middle' font-size='16' fill='#334155'>+</text><rect x='600' y='218' width='70' height='42' rx='10' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='635' y='244' text-anchor='middle' font-size='13' font-weight='700' fill='#92400e'>ATP</text><text x='690' y='170' font-size='10' fill='#475569'>ETS</text><text x='690' y='184' font-size='10' fill='#475569'>ve O₂</text><text x='690' y='198' font-size='10' fill='#475569'>gerekmez</text><text x='380' y='286' text-anchor='middle' font-size='11' fill='#334155'>Fosfat, aktarım potansiyeli ATP'den yüksek olan molekülden enzimle doğrudan ADP'ye geçer.</text></svg>"
+    },
+    {
+      "baslik": "Elektron Taşıma Sistemi ve Kemiozmotik ATP Sentezi",
+      "metin": [
+        "Mitokondri iç zarında yer alan elektron taşıma sistemi, büyük protein komplekslerinden (I, II, III ve IV numaralı kompleksler) ve bunlar arasında elektron taşıyan küçük moleküllerden ({koyu:ubikinon} ve {koyu:sitokrom c}) oluşur. NADH elektronlarını zincirin başındaki kompleks I'e, {alt:FADH|2} ise daha alt bir basamaktaki kompleks II'ye verir. Elektronlar her geçişte elektron çekme gücü daha yüksek olan bir taşıyıcıya aktarılır ve enerjileri giderek azalır. Zincirin sonunda {koyu:sitokrom oksidaz} (kompleks IV), elektronları oksijene verir: ½{alt:O|2} + 2e⁻ + 2H⁺ → {alt:H|2}O. Solunumda oluşan bu suya {koyu:metabolik su} da denir; çöl canlıları gibi bazı hayvanlar su gereksiniminin önemli bir kısmını bu yolla karşılar.",
+        "ETS'de açığa çıkan enerji doğrudan ATP'ye bağlanmaz. Kompleks I, III ve IV, elektron akışından aldıkları enerjiyle H⁺ iyonlarını {koyu:matriksten zarlar arası boşluğa} pompalar. İç zar H⁺ iyonlarını geçirmediği için zarlar arası boşlukta H⁺ birikir ve zarın iki yüzü arasında hem derişim hem de elektrik yükü farkı oluşur; bu enerji birikimine {koyu:proton itici kuvvet} denir. H⁺ iyonları matrikse geri dönebilmek için yalnızca {koyu:ATP sentaz} enziminin kanalını kullanabilir. Bu enzimin zar içindeki bölümü H⁺ akışıyla bir türbin gibi döner; matrikse bakan baş kısmı her dönüşte şekil değiştirerek ADP ile inorganik fosfatı birleştirir. H⁺ derişim farkı kullanılarak ATP sentezlenmesine {koyu:kemiozmoz} denir. Bu model 1961'de İngiliz biyokimyacı {koyu:Peter Mitchell} tarafından ileri sürülmüş ve Mitchell 1978'de Nobel Kimya Ödülü'nü almıştır.",
+        "Kemiozmoz modeli, NADH ve {alt:FADH|2}'nin farklı miktarda ATP vermesini de açıklar. NADH'nin elektronları üç pompalayıcı kompleksten de geçtiği için daha çok H⁺ pompalanır; {alt:FADH|2}'nin elektronları kompleks I'i atladığı için daha az H⁺ pompalanır. Pek çok kaynakta NADH başına {koyu:3 ATP}, {alt:FADH|2} başına {koyu:2 ATP} kuramsal değeri kullanılır; güncel ölçümler bu değerlerin yaklaşık 2,5 ve 1,5 olduğunu gösterir, çünkü H⁺ farkının bir kısmı başka taşıma işlerinde harcanır ve zar tam yalıtkan değildir. Aynı ilke prokaryotlarda da geçerlidir: Mitokondrisi olmayan aerobik bakterilerde ETS ve ATP sentaz {koyu:hücre zarında} bulunur, H⁺ hücre dışına pompalanır ve ATP sitoplazmada oluşur. Kloroplastta ise H⁺ tilakoit iç boşluğunda birikir ve ATP stromada sentezlenir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yapı",
+          "ETS ve ATP Sentazın Bulunduğu Zar",
+          "H⁺ İyonlarının Biriktiği Bölge",
+          "ATP'nin Oluştuğu Bölge"
+        ],
+        "satirlar": [
+          [
+            "Mitokondri (ökaryot)",
+            "İç zar (kristalar)",
+            "Zarlar arası boşluk",
+            "Matriks"
+          ],
+          [
+            "Kloroplast (ökaryot)",
+            "Tilakoit zarı",
+            "Tilakoit iç boşluğu (lümen)",
+            "Stroma"
+          ],
+          [
+            "Aerobik bakteri (prokaryot)",
+            "Hücre zarı",
+            "Hücre zarının dış yüzü (zar ile çeper arası)",
+            "Sitoplazma"
+          ],
+          [
+            "Siyanobakteri (prokaryot)",
+            "Hücre zarı ve fotosentetik zar katlanmaları",
+            "Zarın bir yüzü / zar katlanmalarının iç boşluğu",
+            "Sitoplazma"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "ATP Sentaz: Hücrenin Moleküler Türbini",
+          "metin": "ATP sentaz, bilinen en küçük döner makinelerden biridir. Zar içindeki halka bölümü H⁺ akışıyla döner, bu dönüş merkezi bir mili çevirir ve mil, katalitik baştaki üç bölgenin sırayla şekil değiştirmesine yol açar. Her tam dönüşte üç ATP sentezlenir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Neden FAD Kaynaklı Elektronlar Daha Az ATP Verir?",
+          "metin": "NADH elektronlarını zincirin en başına (kompleks I) verir ve üç pompadan geçirir. {alt:FADH|2} ise elektronlarını kompleks II üzerinden verir; kompleks II H⁺ pompalamadığı ve kompleks I atlandığı için daha az H⁺ birikir, dolayısıyla daha az ATP sentezlenir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#94a3b8' stroke-width='2'/><text x='380' y='26' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Mitokondri İç Zarında Elektron Taşıma ve Kemiozmoz</text><rect x='20' y='40' width='720' height='90' rx='12' fill='#fee2e2'/><text x='30' y='58' font-size='12' font-weight='700' fill='#991b1b'>Zarlar arası boşluk (H⁺ yoğun)</text><text x='110' y='92' font-size='13' font-weight='700' fill='#b91c1c'>H⁺</text><text x='160' y='110' font-size='13' font-weight='700' fill='#b91c1c'>H⁺</text><text x='290' y='92' font-size='13' font-weight='700' fill='#b91c1c'>H⁺</text><text x='340' y='112' font-size='13' font-weight='700' fill='#b91c1c'>H⁺</text><text x='450' y='92' font-size='13' font-weight='700' fill='#b91c1c'>H⁺</text><text x='520' y='110' font-size='13' font-weight='700' fill='#b91c1c'>H⁺</text><text x='640' y='70' font-size='13' font-weight='700' fill='#b91c1c'>H⁺</text><rect x='20' y='135' width='720' height='40' fill='#fde68a' stroke='#d97706' stroke-width='1'/><text x='725' y='160' text-anchor='end' font-size='10' fill='#92400e'>iç zar</text><rect x='70' y='122' width='70' height='66' rx='10' fill='#bfdbfe' stroke='#2563eb' stroke-width='2'/><text x='105' y='160' text-anchor='middle' font-size='13' font-weight='700' fill='#1e3a8a'>I</text><rect x='190' y='138' width='56' height='50' rx='10' fill='#ddd6fe' stroke='#7c3aed' stroke-width='2'/><text x='218' y='168' text-anchor='middle' font-size='13' font-weight='700' fill='#4c1d95'>II</text><rect x='290' y='122' width='70' height='66' rx='10' fill='#bfdbfe' stroke='#2563eb' stroke-width='2'/><text x='325' y='160' text-anchor='middle' font-size='13' font-weight='700' fill='#1e3a8a'>III</text><rect x='430' y='122' width='70' height='66' rx='10' fill='#bfdbfe' stroke='#2563eb' stroke-width='2'/><text x='465' y='160' text-anchor='middle' font-size='13' font-weight='700' fill='#1e3a8a'>IV</text><line x1='140' y1='170' x2='290' y2='170' stroke='#0f172a' stroke-width='2' stroke-dasharray='6,4'/><line x1='246' y1='170' x2='290' y2='170' stroke='#0f172a' stroke-width='2' stroke-dasharray='6,4'/><line x1='360' y1='170' x2='430' y2='170' stroke='#0f172a' stroke-width='2' stroke-dasharray='6,4'/><text x='395' y='164' text-anchor='middle' font-size='10' fill='#0f172a'>e⁻</text><text x='175' y='164' text-anchor='middle' font-size='10' fill='#0f172a'>e⁻</text><line x1='105' y1='122' x2='105' y2='100' stroke='#dc2626' stroke-width='3'/><polygon points='99,102 105,90 111,102' fill='#dc2626'/><line x1='325' y1='122' x2='325' y2='100' stroke='#dc2626' stroke-width='3'/><polygon points='319,102 325,90 331,102' fill='#dc2626'/><line x1='465' y1='122' x2='465' y2='100' stroke='#dc2626' stroke-width='3'/><polygon points='459,102 465,90 471,102' fill='#dc2626'/><rect x='590' y='110' width='50' height='80' rx='10' fill='#bbf7d0' stroke='#16a34a' stroke-width='2'/><circle cx='615' cy='226' r='30' fill='#bbf7d0' stroke='#16a34a' stroke-width='2'/><line x1='615' y1='190' x2='615' y2='196' stroke='#16a34a' stroke-width='4'/><text x='615' y='222' text-anchor='middle' font-size='10' font-weight='700' fill='#14532d'>ATP</text><text x='615' y='235' text-anchor='middle' font-size='10' font-weight='700' fill='#14532d'>sentaz</text><line x1='600' y1='80' x2='600' y2='132' stroke='#dc2626' stroke-width='3'/><polygon points='594,130 600,142 606,130' fill='#dc2626'/><text x='655' y='96' font-size='11' fill='#b91c1c'>H⁺ geri akar,</text><text x='655' y='110' font-size='11' fill='#b91c1c'>enzim döner</text><text x='30' y='206' font-size='12' font-weight='700' fill='#1e3a8a'>Matriks</text><text x='105' y='216' text-anchor='middle' font-size='11' fill='#0f172a'>NADH → NAD⁺</text><text x='218' y='216' text-anchor='middle' font-size='11' fill='#0f172a'>FADH₂ → FAD</text><text x='465' y='216' text-anchor='middle' font-size='11' fill='#0f172a'>½O₂ + 2H⁺ → H₂O</text><text x='690' y='230' text-anchor='middle' font-size='11' font-weight='700' fill='#92400e'>ADP + Pi</text><text x='690' y='246' text-anchor='middle' font-size='11' font-weight='700' fill='#92400e'>→ ATP</text><rect x='40' y='262' width='680' height='44' rx='10' fill='#ffffff' stroke='#cbd5e1' stroke-width='2'/><text x='380' y='280' text-anchor='middle' font-size='11' fill='#334155'>I, III ve IV elektron enerjisiyle H⁺ pompalar; II pompalamaz. Son elektron alıcısı oksijendir.</text><text x='380' y='297' text-anchor='middle' font-size='11' fill='#334155'>H⁺ derişim farkıyla ATP sentezi: kemiozmoz (Peter Mitchell, 1961)</text></svg>"
+    },
+    {
+      "baslik": "Oksidatif Fosforilasyon ile Fotofosforilasyonun Karşılaştırılması",
+      "metin": [
+        "Oksidatif fosforilasyon ile fotofosforilasyon ilk bakışta çok farklı süreçler gibi görünse de aynı çalışma ilkesine dayanır. Her ikisinde de bir {koyu:zar} üzerinde yerleşmiş elektron taşıma sistemi bulunur; elektronlar bu sistemde taşınırken açığa çıkan enerjiyle H⁺ iyonları zarın bir yüzüne pompalanır ve H⁺ iyonlarının {koyu:ATP sentaz} üzerinden geri akışıyla ATP sentezlenir. Yani ikisi de {koyu:kemiozmotik} süreçlerdir. Mitokondri ile kloroplastın benzer zar sistemlerine, kendi DNA'larına ve ribozomlarına sahip olması, bu iki organelin bakterilerden köken aldığını ileri süren endosimbiyoz kuramını da destekler. İki süreci birbirinden ayıran temel farklar; enerjinin kaynağı, elektronların nereden geldiği ve elektronların en sonunda hangi moleküle verildiğidir.",
+        "{koyu:Oksidatif fosforilasyonda} elektronların kaynağı besinlerdir: Glikoz, yağ asitleri ve amino asitlerin yıkımında toplanan elektronlar NADH ve {alt:FADH|2} ile ETS'ye taşınır ve oksijenli solunumda son elektron alıcısı oksijendir; ürün olarak su oluşur. Bu süreç ışıktan bağımsızdır, gece ve gündüz sürer ve oksijenli solunum yapan tüm canlılarda (bitkiler dâhil) görülür. {koyu:Fotofosforilasyonda} ise enerji kaynağı ışıktır. Klorofil molekülü ışığı soğurduğunda elektronları uyarılarak yüksek enerji düzeyine çıkar ve bu elektronlar tilakoit zarındaki ETS'ye aktarılır. Fotofosforilasyon yalnızca ışık varken ve fotosentetik pigment taşıyan zarlarda gerçekleşir.",
+        "Fotofosforilasyon kısaca iki biçimde görülür. {koyu:Döngüsel olmayan (devirsiz) fotofosforilasyonda} klorofilden ayrılan elektronlar geri dönmez; son elektron alıcısı NADP⁺ olur ve NADPH oluşur. Klorofilin kaybettiği elektronlar suyun ışık etkisiyle parçalanmasından (fotoliz) karşılanır ve bu sırada oksijen açığa çıkar. {koyu:Döngüsel (devirli) fotofosforilasyonda} ise elektronlar ETS'den geçtikten sonra yeniden klorofile döner; yalnızca ATP üretilir, NADPH ve oksijen oluşmaz. Bu iki yolun fotosentez içindeki ayrıntılı işleyişi gelecek haftalarda fotosentez konusunda ele alınacaktır. Şimdilik bilinmesi gereken, fotofosforilasyonla üretilen ATP'nin büyük ölçüde kloroplastın kendi içinde, organik madde sentezinde harcandığı; hücrenin diğer işlerinin ise ağırlıklı olarak solunumdan sağlanan ATP ile yürüdüğüdür."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Oksidatif Fosforilasyon",
+          "Fotofosforilasyon"
+        ],
+        "satirlar": [
+          [
+            "Enerji kaynağı",
+            "Besinlerin yükseltgenmesiyle elde edilen kimyasal enerji",
+            "Işık enerjisi"
+          ],
+          [
+            "Elektron kaynağı",
+            "NADH ve FADH₂ (besinlerden gelen elektronlar)",
+            "Işıkla uyarılan klorofil; devirsizde eksik elektron sudan karşılanır"
+          ],
+          [
+            "Son elektron alıcısı",
+            "Oksijen (oksijenli solunumda)",
+            "Devirsizde NADP⁺; devirlide klorofilin kendisi"
+          ],
+          [
+            "Ökaryotlarda yeri",
+            "Mitokondri iç zarı",
+            "Kloroplastın tilakoit zarı"
+          ],
+          [
+            "Prokaryotlarda yeri",
+            "Hücre zarı",
+            "Fotosentetik zar katlanmaları"
+          ],
+          [
+            "Oksijenle ilişkisi",
+            "Oksijen tüketilir ve su oluşur",
+            "Devirsizde oksijen açığa çıkar; devirlide oksijen oluşmaz"
+          ],
+          [
+            "Gerçekleşme zamanı",
+            "Gece ve gündüz sürekli",
+            "Yalnızca ışık varken"
+          ],
+          [
+            "Ortak noktalar",
+            "ETS, H⁺ derişim farkı, ATP sentaz ve kemiozmoz",
+            "ETS, H⁺ derişim farkı, ATP sentaz ve kemiozmoz"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Bitkiler Hem Fotosentez Hem Solunum Yapar",
+          "metin": "Bitkilerin yalnızca fotosentez yaptığı düşüncesi yanlıştır. Yeşil yaprak hücresinde gündüz fotofosforilasyon ile oksidatif fosforilasyon birlikte yürür; gece ise yalnızca solunum sürer. Bitkinin kök, tohum ve odun dokusu gibi kloroplastsız hücreleri ATP'yi her zaman solunum ve fermantasyonla üretir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Ortak İlke: Zar, ETS, H⁺ Farkı ve ATP Sentaz",
+          "metin": "Soru çözerken şunu hatırlayın: Bir süreçte ETS ve ATP sentaz varsa ATP kemiozmozla üretilir. Enerji ışıktan geliyorsa fotofosforilasyon, besinden ya da inorganik maddeden gelen elektronlarla çalışıyorsa oksidatif fosforilasyon (kemosentezde kemofosforilasyon) söz konusudur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#94a3b8' stroke-width='2'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Oksidatif Fosforilasyon ve Fotofosforilasyon</text><rect x='20' y='45' width='270' height='255' rx='14' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/><text x='155' y='70' text-anchor='middle' font-size='14' font-weight='700' fill='#1e3a8a'>Oksidatif Fosforilasyon</text><text x='35' y='100' font-size='11' font-weight='700' fill='#1e3a8a'>Enerji kaynağı:</text><text x='35' y='116' font-size='11' fill='#1e3a8a'>besinlerin yükseltgenmesi</text><text x='35' y='142' font-size='11' font-weight='700' fill='#1e3a8a'>Elektron kaynağı:</text><text x='35' y='158' font-size='11' fill='#1e3a8a'>NADH ve FADH₂</text><text x='35' y='184' font-size='11' font-weight='700' fill='#1e3a8a'>Son elektron alıcısı:</text><text x='35' y='200' font-size='11' fill='#1e3a8a'>oksijen → su oluşur</text><text x='35' y='226' font-size='11' font-weight='700' fill='#1e3a8a'>Yer:</text><text x='35' y='242' font-size='11' fill='#1e3a8a'>mitokondri iç zarı</text><text x='35' y='268' font-size='11' font-weight='700' fill='#1e3a8a'>Zaman:</text><text x='35' y='284' font-size='11' fill='#1e3a8a'>gece ve gündüz</text><rect x='300' y='110' width='160' height='130' rx='14' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='380' y='134' text-anchor='middle' font-size='13' font-weight='700' fill='#92400e'>Ortak İlke</text><text x='380' y='158' text-anchor='middle' font-size='11' fill='#92400e'>zar üzerinde ETS</text><text x='380' y='178' text-anchor='middle' font-size='11' fill='#92400e'>H⁺ derişim farkı</text><text x='380' y='198' text-anchor='middle' font-size='11' fill='#92400e'>ATP sentaz</text><text x='380' y='222' text-anchor='middle' font-size='12' font-weight='700' fill='#92400e'>kemiozmoz</text><line x1='290' y1='175' x2='300' y2='175' stroke='#d97706' stroke-width='3'/><line x1='460' y1='175' x2='470' y2='175' stroke='#d97706' stroke-width='3'/><rect x='470' y='45' width='270' height='255' rx='14' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='605' y='70' text-anchor='middle' font-size='14' font-weight='700' fill='#14532d'>Fotofosforilasyon</text><text x='485' y='100' font-size='11' font-weight='700' fill='#14532d'>Enerji kaynağı:</text><text x='485' y='116' font-size='11' fill='#14532d'>ışık</text><text x='485' y='142' font-size='11' font-weight='700' fill='#14532d'>Elektron kaynağı:</text><text x='485' y='158' font-size='11' fill='#14532d'>ışıkla uyarılan klorofil</text><text x='485' y='184' font-size='11' font-weight='700' fill='#14532d'>Son elektron alıcısı:</text><text x='485' y='200' font-size='11' fill='#14532d'>NADP⁺ (devirsiz) / klorofil (devirli)</text><text x='485' y='226' font-size='11' font-weight='700' fill='#14532d'>Yer:</text><text x='485' y='242' font-size='11' fill='#14532d'>kloroplastın tilakoit zarı</text><text x='485' y='268' font-size='11' font-weight='700' fill='#14532d'>Zaman:</text><text x='485' y='284' font-size='11' fill='#14532d'>yalnızca ışıkta</text></svg>"
+    },
+    {
+      "baslik": "Kemosentez ve Enerji Kaynağına Göre Canlılarda ATP Üretimi",
+      "metin": [
+        "Canlılar, ATP sentezi için kullandıkları enerjinin kaynağına göre iki büyük gruba ayrılabilir. Işık enerjisini kullananlara {koyu:fototrof}, kimyasal maddelerin yükseltgenmesinden enerji elde edenlere {koyu:kemotrof} denir. Kemotroflar da yükseltgedikleri maddeye göre ikiye ayrılır: Hayvanlar, mantarlar ve bakterilerin çoğu glikoz gibi organik besinleri yükseltger; bazı bakteri ve arkeler ise amonyak, nitrit, hidrojen sülfür, demir(II) iyonu ve hidrojen gazı gibi {koyu:inorganik maddeleri} yükseltger. İnorganik maddelerin yükseltgenmesinden kazanılan enerjiyle karbondioksitten organik madde üretilmesine {koyu:kemosentez}, bunu yapan canlılara da {koyu:kemosentetik ototroflar} denir.",
+        "Kemosentetik bakterilerde enerji dönüşümü iki aşamada düşünülebilir. Önce inorganik madde yükseltgenir ve koparılan elektronlar hücre zarındaki ETS'ye aktarılır; elektron akışıyla H⁺ iyonları zarın dışına pompalanır ve ATP sentaz yardımıyla ATP üretilir. Oksidatif fosforilasyona çok benzeyen bu yol bazı kaynaklarda {koyu:kemofosforilasyon} olarak adlandırılır. Ardından üretilen ATP ve indirgenmiş taşıyıcılar karbondioksitin organik maddeye dönüştürülmesinde kullanılır. Örneğin {koyu:Nitrosomonas} bakterileri amonyağı nitrite, {koyu:Nitrobacter} bakterileri nitriti nitrata yükseltger; kükürt bakterileri hidrojen sülfürü kükürde ya da sülfata, demir bakterileri ise demir(II) iyonunu demir(III) iyonuna yükseltger. Kemosentetik bakteriler ürettikleri organik maddeyi solunumda da kullanır; bu yüzden onlarda substrat düzeyinde fosforilasyon da görülür.",
+        "Kemosentez, ışığa bağlı olmayan bir organik madde üretim yolu olduğu için ekosistemler açısından büyük önem taşır. Işığın hiç ulaşmadığı okyanus tabanındaki {koyu:hidrotermal bacaların} çevresinde, hidrojen sülfür yükseltgeyen bakteriler besin zincirinin üreticisi konumundadır; dev tüp solucanları, midyeler ve yengeçler bu bakterilerin ürettiği organik maddeye dayanarak yaşar. Karada ise {koyu:nitrifikasyon bakterileri}, amonyağı bitkilerin kolayca kullanabildiği nitrata dönüştürerek azot döngüsünde ve toprak verimliliğinde kilit rol oynar. Bu örnekler canlılığın sürmesi için enerjinin farklı kaynaklardan sağlanabildiğini, ancak sonunda her durumda enerjinin {koyu:ATP} hâline getirilmesi gerektiğini gösterir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Canlı Grubu",
+          "Enerji Kaynağı",
+          "Karbon Kaynağı",
+          "Görülen Fosforilasyon Çeşitleri"
+        ],
+        "satirlar": [
+          [
+            "Bitkiler, algler, siyanobakteriler",
+            "Işık",
+            "CO₂",
+            "Fotofosforilasyon, oksidatif ve substrat düzeyinde"
+          ],
+          [
+            "Mor ve yeşil kükürt bakterileri",
+            "Işık (elektron kaynağı su yerine H₂S; oksijen açığa çıkmaz)",
+            "CO₂",
+            "Fotofosforilasyon ve substrat düzeyinde"
+          ],
+          [
+            "Kemosentetik bakteriler (Nitrosomonas, Nitrobacter, kükürt ve demir bakterileri)",
+            "İnorganik maddelerin yükseltgenmesi",
+            "CO₂",
+            "Kemofosforilasyon (ETS ile) ve substrat düzeyinde"
+          ],
+          [
+            "Hayvanlar, mantarlar, aerobik bakteriler",
+            "Organik besinlerin yükseltgenmesi",
+            "Organik madde",
+            "Oksidatif ve substrat düzeyinde"
+          ],
+          [
+            "Yalnız fermantasyon yapan bakteriler",
+            "Organik besinlerin kısmi yıkımı",
+            "Organik madde",
+            "Yalnızca substrat düzeyinde"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Kemosentez",
+          "metin": "Amonyak, nitrit, hidrojen sülfür veya demir(II) iyonu gibi inorganik maddelerin yükseltgenmesinden elde edilen kimyasal enerjiyle karbondioksitten organik madde sentezlenmesidir. Işık gerektirmez; yalnızca bazı bakteri ve arkelerde görülür."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Işığın Ulaşmadığı Ekosistemler",
+          "metin": "Okyanus tabanındaki hidrotermal bacalarda sıcaklık ve basınç çok yüksek, ışık ise hiç yoktur. Buradaki ekosistemlerin enerjisi Güneş'ten değil, yerkabuğundan çıkan hidrojen sülfür gibi maddelerin kemosentetik bakterilerce yükseltgenmesinden gelir. Bazı tüp solucanları bu bakterileri vücutlarında barındırarak ortak yaşam sürdürür."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#94a3b8' stroke-width='2'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Enerji Kaynağına Göre Canlılar ve ATP Üretim Yolları</text><rect x='300' y='44' width='160' height='40' rx='12' fill='#e2e8f0' stroke='#475569' stroke-width='2'/><text x='380' y='69' text-anchor='middle' font-size='13' font-weight='700' fill='#0f172a'>Enerji kaynağı</text><line x1='340' y1='84' x2='150' y2='112' stroke='#475569' stroke-width='2'/><line x1='420' y1='84' x2='520' y2='112' stroke='#475569' stroke-width='2'/><rect x='40' y='112' width='220' height='44' rx='12' fill='#fef9c3' stroke='#ca8a04' stroke-width='2'/><text x='150' y='131' text-anchor='middle' font-size='13' font-weight='700' fill='#713f12'>Işık: Fototroflar</text><text x='150' y='148' text-anchor='middle' font-size='10' fill='#713f12'>bitki, alg, siyanobakteri</text><rect x='410' y='112' width='220' height='44' rx='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='2'/><text x='520' y='131' text-anchor='middle' font-size='13' font-weight='700' fill='#0c4a6e'>Kimyasal: Kemotroflar</text><text x='520' y='148' text-anchor='middle' font-size='10' fill='#0c4a6e'>madde yükseltgenmesi</text><line x1='150' y1='156' x2='150' y2='186' stroke='#475569' stroke-width='2'/><line x1='480' y1='156' x2='390' y2='186' stroke='#475569' stroke-width='2'/><line x1='560' y1='156' x2='620' y2='186' stroke='#475569' stroke-width='2'/><rect x='40' y='186' width='220' height='70' rx='12' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='150' y='206' text-anchor='middle' font-size='12' font-weight='700' fill='#14532d'>Fotofosforilasyon</text><text x='150' y='224' text-anchor='middle' font-size='10' fill='#14532d'>+ oksidatif (solunum)</text><text x='150' y='241' text-anchor='middle' font-size='10' fill='#14532d'>+ substrat düzeyinde</text><rect x='285' y='186' width='210' height='70' rx='12' fill='#fce7f3' stroke='#db2777' stroke-width='2'/><text x='390' y='204' text-anchor='middle' font-size='12' font-weight='700' fill='#831843'>İnorganik madde</text><text x='390' y='221' text-anchor='middle' font-size='10' fill='#831843'>kemosentetik bakteriler</text><text x='390' y='237' text-anchor='middle' font-size='10' fill='#831843'>NH₃, NO₂⁻, H₂S, Fe²⁺</text><text x='390' y='251' text-anchor='middle' font-size='10' font-weight='700' fill='#831843'>kemofosforilasyon + substrat</text><rect x='515' y='186' width='215' height='70' rx='12' fill='#ede9fe' stroke='#7c3aed' stroke-width='2'/><text x='622' y='204' text-anchor='middle' font-size='12' font-weight='700' fill='#4c1d95'>Organik madde</text><text x='622' y='221' text-anchor='middle' font-size='10' fill='#4c1d95'>hayvan, mantar, çoğu bakteri</text><text x='622' y='237' text-anchor='middle' font-size='10' fill='#4c1d95'>solunum: oksidatif + substrat</text><text x='622' y='251' text-anchor='middle' font-size='10' fill='#4c1d95'>fermantasyon: yalnız substrat</text><rect x='120' y='270' width='520' height='36' rx='12' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='380' y='293' text-anchor='middle' font-size='12' font-weight='700' fill='#92400e'>Tüm hücreli canlılarda ortak yol: substrat düzeyinde fosforilasyon</text></svg>"
+    },
+    {
+      "baslik": "Fosforilasyonu Engelleyen Etkenler ve Enerji Metabolizmasının Bütünlüğü",
+      "metin": [
+        "Fosforilasyonun ne kadar yaşamsal olduğunu en açık biçimde, onu durduran maddelerin etkileri gösterir. {koyu:Siyanür} ve {koyu:karbon monoksit}, ETS'nin son elemanı olan sitokrom oksidaza bağlanarak elektronların oksijene aktarılmasını engeller. Elektron akışı durunca H⁺ pompalanamaz, H⁺ derişim farkı kaybolur ve ATP sentaz çalışamaz; hücre oksijen bulunsa bile onu kullanamaz. Karbon monoksit ayrıca hemoglobine oksijenden çok daha güçlü bağlanarak dokulara oksijen taşınmasını da azaltır. Bu durumda hücreler ATP'yi yalnızca glikoliz ve laktik asit fermantasyonuyla, yani substrat düzeyinde fosforilasyonla üretmeye çalışır; ancak bu miktar başta beyin ve kalp kası olmak üzere enerji ihtiyacı yüksek dokular için yetersizdir. Laboratuvar araştırmalarında kullanılan {koyu:oligomisin} adlı antibiyotik ise ATP sentazın H⁺ kanalını tıkar; H⁺ birikir, ETS yavaşlar ve ATP sentezi durur.",
+        "Bazı maddeler ise ETS'yi durdurmadan ATP sentezini ondan ayırır; bunlara {koyu:ayırıcılar} denir. Ayırıcılar iç zarı H⁺ iyonlarına geçirgen hâle getirir; H⁺ iyonları ATP sentazdan geçmeden matrikse döner. Bu durumda elektron taşınması ve oksijen tüketimi hızlanır, ancak ATP üretimi azalır ve H⁺ farkında depolanan enerji {koyu:ısı} olarak açığa çıkar. 2,4-dinitrofenol adlı madde 20. yüzyılın başlarında zayıflama ilacı olarak kullanılmış, fakat vücut ısısını tehlikeli düzeyde yükselttiği ve ölümlere yol açtığı için yasaklanmıştır. Aynı ilke vücutta doğal ve yararlı bir amaçla da kullanılır: Yeni doğan bebeklerin ve kış uykusuna yatan memelilerin {koyu:kahverengi yağ dokusundaki} mitokondrilerde bulunan {koyu:termogenin} adlı protein, H⁺ iyonlarının zardan geçmesine izin vererek titreme olmadan ısı üretir. Bitkilerde ise bazı herbisitler kloroplastlardaki elektron taşınmasını engelleyerek fotofosforilasyonu durdurur ve bitkinin ölümüne yol açar.",
+        "Fosforilasyon çeşitleri hücrede birbirinden bağımsız değil, birbirini tamamlayan bir bütün olarak çalışır. Bunu bir sporcunun kas hücresinde izleyebiliriz: Efora başlandığı ilk saniyelerde hücredeki hazır ATP ve {koyu:fosfokreatin} kullanılır; ardından birkaç dakikalık yoğun eforda glikoliz ve {koyu:laktik asit fermantasyonu} ile substrat düzeyinde ATP üretimi hızlanır; uzun süreli ve orta şiddetli eforda ise ATP'nin büyük kısmı mitokondrilerde {koyu:oksidatif fosforilasyonla} sağlanır. Bir bitki ise gündüz fotofosforilasyonla ışık enerjisini yakalar, bu enerjiyi organik maddeye dönüştürür ve gece-gündüz solunumla bu organik maddeden yeniden ATP üretir. Hangi yol olursa olsun, ATP üretimi durduğunda hücrenin düzeni bozulur; canlılığın devamı için enerjinin gerekliliği, bu kesintisiz fosforilasyon ağının bir sonucudur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Etken",
+          "Etki Noktası",
+          "Oksijen Tüketimi",
+          "ATP Üretimi",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "Siyanür",
+            "Sitokrom oksidaz (ETS'nin son basamağı)",
+            "Durur",
+            "Oksidatif fosforilasyon durur",
+            "Hücre ölümü, özellikle sinir ve kalp kası"
+          ],
+          [
+            "Karbon monoksit",
+            "Hemoglobin ve sitokrom oksidaz",
+            "Azalır",
+            "Azalır",
+            "Zehirlenme, baş ağrısı, bilinç kaybı"
+          ],
+          [
+            "Oligomisin (araştırmada)",
+            "ATP sentazın H⁺ kanalı",
+            "Yavaşlar (H⁺ birikir)",
+            "Durur",
+            "ETS ile ATP sentezi birlikte yavaşlar"
+          ],
+          [
+            "2,4-dinitrofenol",
+            "İç zarın H⁺ geçirgenliği",
+            "Artar",
+            "Azalır",
+            "Vücut ısısında tehlikeli yükselme"
+          ],
+          [
+            "Termogenin (doğal)",
+            "Kahverengi yağ dokusunda H⁺ kanalı",
+            "Artar",
+            "Azalır",
+            "Titremeden ısı üretimi"
+          ],
+          [
+            "Bazı herbisitler",
+            "Kloroplastta elektron taşınması",
+            "Etkilenmez (solunum sürer)",
+            "Fotofosforilasyon durur",
+            "Bitki organik madde üretemez"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Oksijen Tüketimi Her Zaman ATP Üretimi Demek Değildir",
+          "metin": "Ayırıcı maddeler veya termogenin bulunan mitokondrilerde oksijen tüketimi artar, fakat ATP üretimi azalır. Çünkü elektron taşınması sürerken H⁺ iyonları ATP sentazı atlar ve enerji ısıya dönüşür. Oksijen tüketimi ile ATP sentezi arasındaki bu bağlantıya eşleşme denir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Egzersizde Enerji Sistemleri",
+          "metin": "{koyu:İlk saniyeler:} hazır ATP ve fosfokreatin. {koyu:Kısa ve şiddetli efor:} glikoliz ve laktik asit fermantasyonu (substrat düzeyinde). {koyu:Uzun süreli efor:} oksijenli solunum (ağırlıklı olarak oksidatif fosforilasyon). Sistemler birbirinin yerine değil, üst üste binerek çalışır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 310' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='310' rx='16' fill='#f8fafc' stroke='#94a3b8' stroke-width='2'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Oksidatif Fosforilasyonu Durduran ve Ayıran Etkenler</text><rect x='30' y='60' width='110' height='46' rx='12' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/><text x='85' y='88' text-anchor='middle' font-size='13' font-weight='700' fill='#1e3a8a'>NADH</text><line x1='140' y1='83' x2='178' y2='83' stroke='#334155' stroke-width='3'/><polygon points='178,76 190,83 178,90' fill='#334155'/><rect x='192' y='60' width='160' height='46' rx='12' fill='#bfdbfe' stroke='#2563eb' stroke-width='2'/><text x='272' y='81' text-anchor='middle' font-size='12' font-weight='700' fill='#1e3a8a'>ETS</text><text x='272' y='97' text-anchor='middle' font-size='10' fill='#1e3a8a'>kompleks I ve III</text><line x1='352' y1='83' x2='390' y2='83' stroke='#334155' stroke-width='3'/><polygon points='390,76 402,83 390,90' fill='#334155'/><rect x='404' y='60' width='160' height='46' rx='12' fill='#bfdbfe' stroke='#2563eb' stroke-width='2'/><text x='484' y='81' text-anchor='middle' font-size='12' font-weight='700' fill='#1e3a8a'>Sitokrom oksidaz</text><text x='484' y='97' text-anchor='middle' font-size='10' fill='#1e3a8a'>kompleks IV</text><line x1='564' y1='83' x2='602' y2='83' stroke='#334155' stroke-width='3'/><polygon points='602,76 614,83 602,90' fill='#334155'/><rect x='616' y='60' width='120' height='46' rx='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='2'/><text x='676' y='88' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>O₂ → H₂O</text><line x1='460' y1='48' x2='508' y2='118' stroke='#dc2626' stroke-width='4'/><line x1='508' y1='48' x2='460' y2='118' stroke='#dc2626' stroke-width='4'/><text x='484' y='134' text-anchor='middle' font-size='11' font-weight='700' fill='#b91c1c'>Siyanür, CO</text><line x1='272' y1='106' x2='272' y2='170' stroke='#dc2626' stroke-width='3'/><polygon points='266,168 272,180 278,168' fill='#dc2626'/><text x='282' y='150' font-size='10' fill='#b91c1c'>H⁺ pompalanır</text><rect x='192' y='182' width='160' height='46' rx='12' fill='#fee2e2' stroke='#dc2626' stroke-width='2'/><text x='272' y='203' text-anchor='middle' font-size='12' font-weight='700' fill='#991b1b'>H⁺ derişim farkı</text><text x='272' y='219' text-anchor='middle' font-size='10' fill='#991b1b'>proton itici kuvvet</text><line x1='352' y1='205' x2='390' y2='205' stroke='#334155' stroke-width='3'/><polygon points='390,198 402,205 390,212' fill='#334155'/><rect x='404' y='182' width='160' height='46' rx='12' fill='#bbf7d0' stroke='#16a34a' stroke-width='2'/><text x='484' y='210' text-anchor='middle' font-size='12' font-weight='700' fill='#14532d'>ATP sentaz</text><line x1='564' y1='205' x2='602' y2='205' stroke='#334155' stroke-width='3'/><polygon points='602,198 614,205 602,212' fill='#334155'/><rect x='616' y='182' width='120' height='46' rx='12' fill='#fef3c7' stroke='#d97706' stroke-width='2'/><text x='676' y='210' text-anchor='middle' font-size='13' font-weight='700' fill='#92400e'>ATP</text><line x1='466' y1='174' x2='502' y2='236' stroke='#dc2626' stroke-width='4'/><line x1='502' y1='174' x2='466' y2='236' stroke='#dc2626' stroke-width='4'/><text x='484' y='170' text-anchor='middle' font-size='11' font-weight='700' fill='#b91c1c'>Oligomisin</text><path d='M 272 228 Q 272 270 330 270' fill='none' stroke='#ea580c' stroke-width='3' stroke-dasharray='7,4'/><polygon points='328,263 342,270 328,277' fill='#ea580c'/><rect x='344' y='250' width='150' height='40' rx='12' fill='#ffedd5' stroke='#ea580c' stroke-width='2'/><text x='419' y='275' text-anchor='middle' font-size='13' font-weight='700' fill='#9a3412'>Isı</text><text x='30' y='252' font-size='11' font-weight='700' fill='#9a3412'>Ayırıcılar:</text><text x='30' y='268' font-size='10' fill='#9a3412'>2,4-dinitrofenol,</text><text x='30' y='283' font-size='10' fill='#9a3412'>termogenin</text><text x='520' y='262' font-size='10' fill='#475569'>H⁺ ATP sentazı atlarsa</text><text x='520' y='277' font-size='10' fill='#475569'>O₂ tüketilir, ATP azalır</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir mitokondride belirli bir sürede 6 NADH ve 4 {alt:FADH|2} molekülü elektronlarını ETS'ye vermiştir. NADH başına 3 ATP, {alt:FADH|2} başına 2 ATP kabul edilirse oksidatif fosforilasyonla kaç ATP üretilir? Bu süreçte kaç molekül {alt:O|2} kullanılır ve kaç molekül su oluşur? Güncel değerlere (2,5 ve 1,5) göre ATP sayısı ne olur?",
+      "cevap": "1. adım: Kuramsal ATP: NADH'den 6 × 3 = 18 ATP, {alt:FADH|2}'den 4 × 2 = 8 ATP; toplam 18 + 8 = 26 ATP.\n2. adım: Her NADH ve her {alt:FADH|2} 2 elektron taşır. Toplam elektron çifti sayısı: 6 + 4 = 10 çift.\n3. adım: Her elektron çifti ½{alt:O|2} ile birleşerek 1 su oluşturur: ½{alt:O|2} + 2e⁻ + 2H⁺ → {alt:H|2}O. 10 çift için 10 × ½ = 5 {alt:O|2} kullanılır ve 10 molekül su oluşur.\n4. adım: Güncel değerlerle: 6 × 2,5 = 15 ATP ve 4 × 1,5 = 6 ATP; toplam 21 ATP.\nSonuç: Kuramsal olarak 26 ATP (güncel değerlerle yaklaşık 21 ATP) üretilir; 5 {alt:O|2} kullanılır ve 10 su oluşur.",
+      "ipucu": "Su ve oksijen hesabında taşıyıcının türü değil elektron çifti sayısı önemlidir; ATP hesabında ise taşıyıcının türü önemlidir."
+    },
+    {
+      "soru": "5 molekül glikoz bir hücrenin sitoplazmasında glikolizle pirüvata kadar yıkılmıştır. Glikolizde üretilen toplam (brüt) ATP'yi, harcanan ATP'yi ve net ATP kazancını bulunuz. 1,3-bisfosfogliserattan ve fosfoenolpirüvattan ADP'ye fosfat aktarılan tepkimeler kaçar kez gerçekleşmiştir?",
+      "cevap": "1. adım: Her glikoz glikolizin başında 2 ATP harcanarak fosforlanır: 5 × 2 = 10 ATP harcanır.\n2. adım: Her glikoz üç karbonlu 2 moleküle ayrılır; 5 glikozdan 10 adet üç karbonlu ara ürün oluşur.\n3. adım: Her üç karbonlu ara ürün önce 1,3-bisfosfogliserat basamağında 1 ATP, sonra fosfoenolpirüvat basamağında 1 ATP üretir. 1,3-bisfosfogliserat tepkimesi 10 kez, fosfoenolpirüvat tepkimesi 10 kez gerçekleşir.\n4. adım: Brüt ATP: 10 + 10 = 20 ATP. Net ATP: 20 − 10 = 10 ATP.\nSonuç: 20 ATP üretilir, 10 ATP harcanır, net kazanç 10 ATP'dir. Bu ATP'lerin tamamı substrat düzeyinde fosforilasyonla elde edilir.",
+      "ipucu": "Bir glikoz iki adet üç karbonlu molekül verir ve ATP üreten iki basamaktan her biri glikoz başına iki kez gerçekleşir."
+    },
+    {
+      "soru": "Bir sprinterin kas hücresinde kısa bir koşu sırasında 2000 fosfokreatin molekülü kullanılmıştır. (a) Kaç ATP oluşmuş ve kaç ADP harcanmıştır? (b) Koşudan sonra fosfokreatin deposunu eski düzeyine getirmek için kaç ATP gerekir? (c) Fosfokreatinin hidroliz enerjisi yaklaşık −10,3 kcal/mol, ATP sentezi için gereken enerji +7,3 kcal/mol ise fosfat aktarımının toplam enerji değişimini bulup tepkimenin kendiliğinden yürüyüp yürümeyeceğini yorumlayınız.",
+      "cevap": "1. adım: Tepkime: Fosfokreatin + ADP → Kreatin + ATP. Her fosfokreatin bir ADP'yi bir ATP'ye dönüştürür.\n2. adım: (a) 2000 fosfokreatin → 2000 ATP oluşur, 2000 ADP harcanır ve 2000 kreatin açığa çıkar.\n3. adım: (b) Dinlenmede tepkime ters yönde yürür: Kreatin + ATP → Fosfokreatin + ADP. 2000 fosfokreatin oluşturmak için 2000 ATP harcanır (bu ATP'ler çoğunlukla oksijenli solunumla üretilir).\n4. adım: (c) Toplam enerji değişimi: (−10,3) + (+7,3) = −3,0 kcal/mol. Değer negatif olduğu için efor sırasında fosfat aktarımı kendiliğinden yürür.\nSonuç: 2000 ATP oluşur, 2000 ADP harcanır; depo için 2000 ATP gerekir; tepkime yaklaşık −3,0 kcal/mol ile kendiliğinden gerçekleşir.",
+      "ipucu": "Fosfokreatin sistemi iki yönlüdür; eforda ATP üretir, dinlenmede ATP tüketerek yeniden dolar."
+    },
+    {
+      "soru": "Bir mitokondride ETS belirli bir sürede 1500 H⁺ iyonunu zarlar arası boşluğa pompalamıştır. ATP sentazdan geçen her 3 H⁺ iyonu için 1 ATP sentezlendiği kabul edilsin. (a) Bütün H⁺ iyonları ATP sentazdan dönerse kaç ATP oluşur? (b) Aynı mitokondri kahverengi yağ dokusuna ait olsaydı ve H⁺ iyonlarının %40'ı termogenin kanalından dönseydi kaç ATP oluşurdu ve kaç H⁺ iyonunun enerjisi ısıya dönüşürdü?",
+      "cevap": "1. adım: (a) Tüm H⁺ ATP sentazdan geçer: 1500 ÷ 3 = 500 ATP.\n2. adım: (b) Termogenin kanalından dönen H⁺: 1500 × 0,40 = 600 H⁺. Bu iyonların enerjisi ATP'ye dönüşmez, ısı olarak açığa çıkar.\n3. adım: ATP sentazdan geçen H⁺: 1500 − 600 = 900 H⁺.\n4. adım: Üretilen ATP: 900 ÷ 3 = 300 ATP.\nSonuç: (a) 500 ATP; (b) 300 ATP oluşur, 600 H⁺ iyonunun taşıdığı enerji ısıya dönüşür. Oksijen tüketimi aynı kalsa bile ATP üretimi %40 azalmıştır.",
+      "ipucu": "ATP sayısını yalnızca ATP sentazdan geçen H⁺ iyonları belirler; zarın başka bir yolundan dönen H⁺ iyonlarının enerjisi ısıya dönüşür."
+    },
+    {
+      "soru": "Eşit miktarda glikoz ve oksijen içeren üç kapta canlı mitokondri süspansiyonu bulunmaktadır. I. kaba siyanür, II. kaba oligomisin, III. kaba 2,4-dinitrofenol eklenmiştir. Her kapta oksijen tüketiminin, ATP üretiminin ve ısı üretiminin nasıl değişeceğini açıklayınız.",
+      "cevap": "1. adım: I. kap (siyanür): Sitokrom oksidaz engellenir, elektronlar oksijene aktarılamaz. Oksijen tüketimi durur, H⁺ pompalanamaz, ATP sentezi durur; ETS çalışmadığı için ısı üretimi de azalır.\n2. adım: II. kap (oligomisin): ATP sentazın H⁺ kanalı tıkanır. ATP sentezi durur; H⁺ zarlar arası boşlukta birikir, bu birikim ETS'nin pompalamasını zorlaştırır ve elektron akışı yavaşlar. Oksijen tüketimi belirgin biçimde azalır.\n3. adım: III. kap (2,4-dinitrofenol): İç zar H⁺ geçirgen olur. H⁺ farkı sürekli boşaldığı için ETS hızlanır ve oksijen tüketimi artar; ancak H⁺ ATP sentazdan geçmediği için ATP üretimi azalır ve enerji ısı olarak açığa çıkar.\nSonuç: I'de oksijen tüketimi ve ATP durur; II'de ATP durur, oksijen tüketimi azalır; III'te oksijen tüketimi ve ısı artar, ATP azalır.",
+      "ipucu": "Önce maddenin ETS'yi mi, ATP sentazı mı engellediğini yoksa H⁺ iyonlarına yeni bir yol mu açtığını belirleyiniz."
+    },
+    {
+      "soru": "Aşağıdaki canlılarda veya hücrelerde hangi fosforilasyon çeşitlerinin görülebileceğini belirleyiniz: (I) Nitriti nitrata yükseltgeyen Nitrobacter bakterisi, (II) Işıkta hidrojen sülfürü elektron kaynağı olarak kullanan mor kükürt bakterisi, (III) Gece vakti bir mısır bitkisinin yaprak mezofil hücresi, (IV) Yalnızca fermantasyon yapan zorunlu anaerob bir bakteri.",
+      "cevap": "1. adım: (I) Nitrobacter kemosentetiktir; nitritten koparılan elektronlar hücre zarındaki ETS'de taşınır ve ATP kemofosforilasyonla (oksidatif fosforilasyona benzer yolla) üretilir. Ürettiği organik maddeyi solunumda da kullandığı için substrat düzeyinde fosforilasyon da görülür. Işık kullanmadığı için fotofosforilasyon yoktur.\n2. adım: (II) Mor kükürt bakterisi ışık enerjisini kullanır; fotofosforilasyon yapar, ancak elektron kaynağı su olmadığı için oksijen açığa çıkarmaz. Sitoplazmada substrat düzeyinde fosforilasyon da görülür.\n3. adım: (III) Gece ışık olmadığından fotofosforilasyon gerçekleşmez. Hücre solunuma devam ettiği için substrat düzeyinde ve oksidatif fosforilasyon görülür.\n4. adım: (IV) ETS kullanılmadığı için yalnızca substrat düzeyinde fosforilasyon görülür.\nSonuç: I – kemofosforilasyon ve substrat düzeyinde; II – fotofosforilasyon ve substrat düzeyinde; III – oksidatif ve substrat düzeyinde; IV – yalnızca substrat düzeyinde.",
+      "ipucu": "Her canlı için şu sırayla düşünün: Enerji ışıktan mı, maddeden mi geliyor? ETS var mı? Işık o anda var mı?"
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdakilerden hangisi bir yükseltgenme olayıdır?",
+      "secenekler": [
+        "NAD⁺ molekülünün NADH'ye dönüşmesi",
+        "FAD molekülünün elektron alarak FADH₂'ye dönüşmesi",
+        "Glikozdan dehidrogenaz enzimiyle elektron ve hidrojen koparılması",
+        "Oksijenin elektron ve H⁺ alarak suya dönüşmesi"
+      ],
+      "dogru": 2,
+      "aciklama": "Yükseltgenme elektron (veya hidrojen) kaybıdır. Glikozdan elektron ve hidrojen koparılması glikozun yükseltgenmesidir. NAD⁺, FAD ve oksijen ise elektron kazandıkları için indirgenir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Oksidatif fosforilasyon sırasında ETS'nin pompaladığı H⁺ iyonları mitokondrinin hangi bölümünde birikir?",
+      "secenekler": [
+        "Matriks",
+        "Zarlar arası boşluk",
+        "Sitoplazma",
+        "Stroma"
+      ],
+      "dogru": 1,
+      "aciklama": "Kompleks I, III ve IV, H⁺ iyonlarını matriksten zarlar arası boşluğa pompalar. H⁺ iyonları ATP sentaz üzerinden matrikse geri dönerken ATP sentezlenir. Stroma kloroplasta ait bir bölümdür."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Siyanür zehirlenmesi yaşayan bir insanın hücrelerinde aşağıdakilerden hangisi gözlenir?",
+      "secenekler": [
+        "Oksijen tüketimi artar ve ATP üretimi hızlanır.",
+        "Oksidatif fosforilasyon durur, ancak glikolizde substrat düzeyinde fosforilasyon sürebilir.",
+        "Fotofosforilasyon hızlanarak ATP açığı kapatılır.",
+        "ATP sentaz enzimi H⁺ olmadan çalışmaya başlar."
+      ],
+      "dogru": 1,
+      "aciklama": "Siyanür sitokrom oksidazı engeller; elektronlar oksijene aktarılamaz, H⁺ pompalanamaz ve oksidatif fosforilasyon durur. Sitoplazmadaki glikoliz ETS'ye bağlı olmadığından substrat düzeyinde ATP üretimi bir süre devam edebilir, ancak bu miktar yetersizdir. İnsan hücrelerinde fotofosforilasyon yoktur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdakilerden hangisi yalnızca döngüsel olmayan (devirsiz) fotofosforilasyonda görülür?",
+      "secenekler": [
+        "ATP sentezlenmesi",
+        "Elektron taşıma sisteminin kullanılması",
+        "NADPH oluşması ve oksijen açığa çıkması",
+        "Klorofilin ışıkla uyarılması"
+      ],
+      "dogru": 2,
+      "aciklama": "Devirsiz fotofosforilasyonda elektronlar NADP⁺'ya aktarılarak NADPH oluşur ve eksik elektronlar suyun fotoliziyle karşılandığı için oksijen açığa çıkar. ATP sentezi, ETS kullanımı ve klorofilin uyarılması devirli fotofosforilasyonda da görülür."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "FADH₂'nin elektronları ETS'de NADH'nin elektronlarından daha fazla ATP sentezlenmesini sağlar.",
+          "dogru": false,
+          "aciklama": "FADH₂ elektronlarını kompleks II üzerinden verir ve kompleks I'i atlar; daha az H⁺ pompalandığı için NADH'ye göre daha az ATP sentezlenir."
+        },
+        {
+          "metin": "Fosfokreatin, fosfatını kreatin kinaz enzimiyle ADP'ye aktararak kas hücresinde hızlıca ATP oluşturur.",
+          "dogru": true,
+          "aciklama": "Fosfokreatinin fosfat aktarım potansiyeli ATP'den yüksektir; bu nedenle ETS ve oksijen gerekmeden ADP'yi fosforlayabilir."
+        },
+        {
+          "metin": "Kemosentetik bakteriler organik madde üretebilmek için ışık enerjisine ihtiyaç duyar.",
+          "dogru": false,
+          "aciklama": "Kemosentez ışık gerektirmez; enerji amonyak, nitrit, hidrojen sülfür gibi inorganik maddelerin yükseltgenmesinden sağlanır."
+        },
+        {
+          "metin": "Ayırıcı maddeler mitokondride oksijen tüketimini artırırken ATP üretimini azaltır.",
+          "dogru": true,
+          "aciklama": "Ayırıcılar H⁺ iyonlarının ATP sentazı atlayarak geri dönmesini sağlar; ETS hızlanır ve oksijen tüketimi artar, ancak enerji ATP yerine ısıya dönüşür."
+        },
+        {
+          "metin": "Aerobik bakterilerde elektron taşıma sistemi ve ATP sentaz enzimi hücre zarında bulunur.",
+          "dogru": true,
+          "aciklama": "Prokaryotlarda mitokondri bulunmadığından oksidatif fosforilasyon hücre zarında gerçekleşir; H⁺ zarın dışına pompalanır ve ATP sitoplazmada oluşur."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "NAD⁺",
+          "B3 vitamininden türeyen, besinlerden koparılan elektronları ETS'ye taşıyan koenzim"
+        ],
+        [
+          "ATP sentaz",
+          "H⁺ iyonlarının akışıyla dönerek ADP ve inorganik fosfattan ATP sentezleyen enzim"
+        ],
+        [
+          "Fosfokreatin",
+          "Kas hücrelerinde fosfatını ADP'ye hızlıca aktararak ATP yenileyen yüksek enerjili molekül"
+        ],
+        [
+          "Kemiozmoz",
+          "Zarın iki yüzü arasındaki H⁺ derişim farkı kullanılarak ATP sentezlenmesi"
+        ],
+        [
+          "Termogenin",
+          "Kahverengi yağ dokusunda H⁺ iyonlarına yol açarak ısı üreten doğal ayırıcı protein"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir atom ya da molekülün elektron kaybetmesine ___ denir.",
+          "cevap": "yükseltgenme"
+        },
+        {
+          "metin": "Oksijenli solunumda elektron taşıma sisteminin son elektron alıcısı ___ molekülüdür.",
+          "cevap": "oksijen"
+        },
+        {
+          "metin": "Kas hücrelerinde yoğun eforun ilk saniyelerinde ADP'ye fosfat aktararak ATP yenileyen molekül ___ molekülüdür.",
+          "cevap": "fosfokreatin"
+        },
+        {
+          "metin": "H⁺ derişim farkıyla ATP sentezlendiğini açıklayan kemiozmoz modeli, Peter ___ tarafından ileri sürülmüştür.",
+          "cevap": "Mitchell"
+        },
+        {
+          "metin": "İnorganik maddelerin yükseltgenmesinden elde edilen enerjiyle karbondioksitten organik madde üretilmesine ___ denir.",
+          "cevap": "kemosentez"
+        }
+      ],
+      "kelimeler": [
+        "yükseltgenme",
+        "oksijen",
+        "fosfokreatin",
+        "Mitchell",
+        "kemosentez"
+      ],
+      "fazla": [
+        "indirgenme",
+        "fotosentez"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Oksijenli solunum yapan prokaryot bir bakteri 2 molekül glikozu tamamen yıkmaktadır. Bir glikozun yıkımında 10 NADH ve 2 {alt:FADH|2} oluştuğu, substrat düzeyinde fosforilasyonla glikoz başına net 4 ATP kazanıldığı, NADH başına 3 ve {alt:FADH|2} başına 2 ATP üretildiği kabul edilsin. (a) Oluşan toplam NADH ve {alt:FADH|2} sayısını, (b) ETS'de kullanılan {alt:O|2} ve oluşan su sayısını, (c) oksidatif fosforilasyonla, substrat düzeyinde fosforilasyonla ve toplamda üretilen ATP sayısını bulunuz. (d) Bu bakteride oksidatif fosforilasyonun hücrenin hangi yapısında gerçekleştiğini ve H⁺ iyonlarının nereye pompalandığını açıklayınız.",
+      "ipuclari": [
+        "1. adım: Glikoz başına oluşan NADH ve FADH₂ sayılarını 2 ile çarparak (a) şıkkını bulun.",
+        "2. adım: Her taşıyıcının bir elektron çifti taşıdığını ve her elektron çiftinin ½O₂ ile 1 su oluşturduğunu kullanarak (b) şıkkını hesaplayın.",
+        "3. adım: NADH sayısını 3 ile, FADH₂ sayısını 2 ile çarpıp toplayarak oksidatif ATP'yi; glikoz sayısını 4 ile çarparak substrat düzeyindeki ATP'yi bulun ve ikisini toplayın.",
+        "4. adım: Prokaryotlarda mitokondri olmadığını hatırlayarak ETS'nin yerini ve H⁺ pompalanma yönünü belirleyin."
+      ],
+      "cevap": "(a) NADH: 2 × 10 = 20; {alt:FADH|2}: 2 × 2 = 4.\n(b) Toplam elektron çifti: 20 + 4 = 24. Kullanılan {alt:O|2}: 24 × ½ = 12 molekül; oluşan su: 24 molekül. (Bu değer glikoz başına 6 {alt:O|2} tüketildiğini gösterir ve genel solunum denklemiyle uyumludur.)\n(c) Oksidatif fosforilasyon: 20 × 3 = 60 ATP ve 4 × 2 = 8 ATP; toplam 68 ATP. Substrat düzeyinde fosforilasyon: 2 × 4 = 8 ATP. Toplam: 68 + 8 = 76 ATP (glikoz başına 38 ATP).\n(d) Prokaryotlarda mitokondri bulunmadığı için ETS ve ATP sentaz hücre zarında yer alır. ETS'nin enerjisiyle H⁺ iyonları sitoplazmadan hücre zarının dış yüzüne pompalanır; H⁺ iyonları ATP sentaz üzerinden sitoplazmaya geri dönerken ATP sitoplazmada sentezlenir.\nYorum: Üretilen ATP'nin yaklaşık %89'u (68/76) oksidatif fosforilasyondan gelir; bu durum elektron taşıyıcıların ve kemiozmozun enerji üretimindeki belirleyici rolünü gösterir."
+    }
+  ]
+}
