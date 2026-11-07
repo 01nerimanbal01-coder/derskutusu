@@ -1,0 +1,88 @@
+{
+ "sinif": 11, "ders": "cografya", "hafta": 9, "tarih": "9-13 Kasım 2026", "yayin_tarihi": "2026-11-08",
+ "konu": "Web Tabanlı Coğrafi Bilgi Sistemleri (Web-CBS) Uygulamaları, Katmanlı Harita Üretimi ve Mekânsal Veri Analizi",
+ "ciktilar": [
+  "Web-CBS platformlarının çalışma yapısını, vektör-raster veri modellerini ve katman mimarisini açıklar.",
+  "Tematik haritaları okur, katmanları çakıştırarak çözümler ve mekânsal dağılışlardan çıkarım yapar.",
+  "Altlık seçimi, katman ekleme, sembolleştirme ve sorgulama adımlarıyla tematik harita oluşturur."
+ ],
+ "hatirla": [
+  "CBS; donanım, yazılım, veri, insan ve yöntem bileşenleriyle mekânsal veriyi öznitelik verisiyle birlikte işler.",
+  "Vektör modelde unsurlar nokta, çizgi ve poligonla; raster modelde eşit boyutlu piksellerden oluşan ızgarayla gösterilir.",
+  "Web-CBS tarayıcı üzerinden katman yönetimi, ölçek değiştirme ve sorgulama sağlar; çakıştırma, tampon bölge, ağ ve görünürlük temel analizlerdir."
+ ],
+ "sorular": [
+  {"tur": "coktan", "duzey": "uygula",
+   "soru": "Görselde bir Web-CBS uygulamasındaki üç katman verilmiştir. I, II ve III numaralı katmanlarda kullanılan vektör geometri türleri sırasıyla hangisidir?",
+   "secenekler": ["Nokta – çizgi – poligon", "Çizgi – nokta – poligon", "Poligon – çizgi – nokta", "Nokta – poligon – çizgi"], "dogru": 0},
+  {"tur": "dy", "duzey": "hatirla",
+   "soru": "Web-CBS ile ilgili aşağıdaki ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+   "ifadeler": [
+    {"metin": "Web-CBS'de veriler bulut sunucularda tutulur ve tarayıcı üzerinden kullanılır.", "dogru": true},
+    {"metin": "Web-CBS haritalarında katmanlar sabittir, kullanıcı açıp kapatamaz.", "dogru": false},
+    {"metin": "Sayısal yükselti modeli raster veriye örnektir.", "dogru": true},
+    {"metin": "Vektör veri modelinde şekillerin öznitelik tablosu bulunmaz.", "dogru": false}
+   ]},
+  {"tur": "coktan", "duzey": "ust",
+   "soru": "Görselde bir arazinin raster yükselti katmanı verilmiştir. Bu katmanda 800 m ve üzerindeki hücreler sorgulandığında kaç hücre seçilir?",
+   "secenekler": ["6", "7", "8", "9"], "dogru": 2},
+  {"tur": "tablo", "duzey": "uygula",
+   "soru": "Tabloda verilen coğrafi verilerin CBS'de hangi veri modeli ve geometriyle gösterileceğini yazınız.",
+   "basliklar": ["Coğrafi veri", "Veri modeli", "Geometri / birim"],
+   "satirlar": [
+    ["Su kuyuları", {"b": "Vektör"}, {"b": "Nokta"}],
+    ["Fay hattı", "Vektör", {"b": "Çizgi"}],
+    ["Tarım parseli", {"b": "Vektör"}, {"b": "Poligon"}],
+    ["Hava fotoğrafı", {"b": "Raster"}, "Piksel"]
+   ]},
+  {"tur": "coktan", "duzey": "uygula",
+   "soru": "Görselde akarsu çevresinde 500 m genişliğinde tampon bölge oluşturulmuştur. Taşkın riski nedeniyle tampon bölge içinde kalan yapılar hangileridir?",
+   "secenekler": ["K ve M", "L ve N", "K, M ve P", "Yalnız L"], "dogru": 0},
+  {"tur": "eslestir", "duzey": "uygula",
+   "soru": "Mekânsal analiz türlerini örnek uygulamalarıyla eşleştiriniz.",
+   "ciftler": [
+    ["Çakıştırma", "Eğim, fay ve yerleşim katmanlarını üst üste koyarak güneş santrali yeri seçmek"],
+    ["Tampon bölge", "Göl kıyısında belirli genişlikte yapılaşma yasağı alanı belirlemek"],
+    ["Ağ analizi", "Ambulansın hastaneye en kısa yolunu bulmak"],
+    ["Görünürlük analizi", "Bir tepeden görülebilen alanları belirlemek"]
+   ]},
+  {"tur": "coktan", "duzey": "ust",
+   "soru": "Görselde bir tesis için üç koşulu gösteren katmanlar ve hücre adları verilmiştir. Katmanlar çakıştırıldığında üç koşulu birlikte sağlayan hücre hangisidir?",
+   "secenekler": ["A", "C", "E", "H"], "dogru": 2},
+  {"tur": "siralama", "duzey": "uygula",
+   "soru": "Web-CBS'de tematik harita oluşturma adımlarını doğru sıraya koyunuz.",
+   "ogeler": ["Haritanın amacı belirlenir ve altlık harita seçilir.", "Veri katmanları eklenir, öznitelik bilgileri girilir.", "Sembolleştirme ve filtreleme yapılır.", "Başlık, lejant, ölçek ve yön oku kontrol edilir.", "Harita bağlantı ya da görüntü olarak paylaşılır."]},
+  {"tur": "bosluk", "duzey": "hatirla", "kelimeler": true, "fazla": ["poligon"],
+   "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız. Kutudaki bir kavram kullanılmayacaktır.",
+   "cumleler": [
+    {"metin": "Tematik katmanların üzerine yerleştirildiği temel haritaya ___ harita denir.", "cevap": "altlık"},
+    {"metin": "Bir nesnenin nüfus, uzunluk ya da debi gibi tanımlayıcı bilgileri ___ verisidir.", "cevap": "öznitelik"},
+    {"metin": "Uydu görüntüleri ve radar verileri ___ veri modeliyle saklanır.", "cevap": "raster"},
+    {"metin": "Analiz kuralları, CBS bileşenlerinden ___ kapsamındadır.", "cevap": "yöntem"}
+   ]},
+  {"tur": "coktan", "duzey": "uygula",
+   "soru": "Görseldeki I ve II numaralı haritalarda farklı sembolleştirme yöntemleri kullanılmıştır. Bu yöntemlerle gösterilmeye en uygun veriler sırasıyla hangisidir?",
+   "secenekler": ["İllerin nüfus yoğunluğu – deprem büyüklükleri", "Deprem büyüklükleri – illerin nüfus yoğunluğu", "Akarsu ağı – il sınırları", "Uydu görüntüsü – kara yolları"], "dogru": 0},
+  {"tur": "kisa", "duzey": "hatirla",
+   "soru": "Web-CBS haritalarının basılı haritalara göre iki üstünlüğünü yazınız.",
+   "cevap": "Katmanlar açılıp kapatılabilir, ölçek anında değiştirilebilir; nesneler sorgulanır ve veriler gerçek zamanlı güncellenir.",
+   "satir": 2},
+  {"tur": "sifre", "duzey": "hatirla",
+   "soru": "İpuçlarına uyan kavramları yazınız. Turuncu kutulardaki harfler, haritadaki uzunlukların gerçekte kaç kat küçültüldüğünü gösteren oranı verecektir.",
+   "satirlar": [
+    {"ipucu": "Unsurları nokta, çizgi ve poligonla gösteren veri modeli (6 harf)", "cevap": "VEKTÖR", "anahtar": 4},
+    {"ipucu": "Harita üzerindeki sembollerin anlamını açıklayan bölüm (6 harf)", "cevap": "LEJANT", "anahtar": 0},
+    {"ipucu": "Katmanları üst üste getirerek uygun yer seçme analizi (10 harf)", "cevap": "ÇAKIŞTIRMA", "anahtar": 0},
+    {"ipucu": "Raster veriyi oluşturan en küçük kare hücre (6 harf)", "cevap": "PİKSEL", "anahtar": 4},
+    {"ipucu": "Alansal verilerin renk tonlarıyla gösterildiği harita (8 harf)", "cevap": "KOROPLET", "anahtar": 0}
+   ],
+   "sonuc": "ÖLÇEK"},
+  {"tur": "acik", "duzey": "ust",
+   "soru": "Bir belediye yeni bir katı atık depolama alanı için yer seçecektir. Web-CBS'de hangi katmanları ve analizleri kullanabileceğini açıklayınız.",
+   "cevap": "Yerleşim, akarsu, eğim ve yol katmanları çakıştırılır; yerleşim ve su kaynakları çevresine tampon bölge konur, ulaşım için ağ analizi yapılır.",
+   "satir": 3},
+  {"tur": "coktan", "duzey": "hatirla",
+   "soru": "Aşağıdakilerden hangisi Web-CBS uygulamalarına örnek değildir?",
+   "secenekler": ["TKGM Parsel Sorgulama", "AFAD Deprem Tehlike Haritası", "MGM radar ekranları", "Basılı fiziki Türkiye haritası"], "dogru": 3}
+ ]
+}
