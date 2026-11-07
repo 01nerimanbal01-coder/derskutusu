@@ -1,0 +1,617 @@
+{
+  "ad": "12-kimya-17",
+  "sinif": 12,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 17,
+  "tarih": "11-15 Ocak 2027",
+  "yayin_tarihi": "2027-01-11",
+  "unite": "2. ÜNİTE: KARBON KİMYASINA GİRİŞ",
+  "konu": "Hibritleşme-Molekül Geometrileri: Tekli, İkili ve Üçlü Bağların Atom ve Hibrit Orbitalleriyle Oluşumu",
+  "ciktilar": [
+    "12.2.5.1. Tek, çift ve üçlü bağların oluşumunu hibrit ve atom orbitalleri temelinde açıklar.",
+    "12.2.5.1. Bu hafta kapsamında: s ve p atom orbitallerinin örtüşmesiyle sigma (σ) ve pi (π) bağlarının oluşumu ile karbonun sp³, sp² ve sp hibritleşmeleri metan, etan, eten, etin ve benzeri moleküller üzerinden incelenir.",
+    "12.2.5.1. Bu hafta kapsamında: Tekli bağın 1 σ, ikili bağın 1 σ + 1 π, üçlü bağın 1 σ + 2 π bağından oluştuğu gösterilir. Bağ uzunluğu ve bağ enerjisi farkları orbital örtüşmesiyle ilişkilendirilir."
+  ],
+  "giris": "Geçen hafta Lewis formülleriyle atomların kaç bağ yaptığını, bu bağların tekli, ikili ya da üçlü olduğunu gösterdik. Bu hafta bir adım daha içeri giriyor ve şu soruyu soruyoruz: Bu bağlar elektronların bulunduğu {koyu:orbitaller} düzeyinde nasıl oluşur? {koyu:Atom orbitallerinin örtüşmesi}, {koyu:sigma (σ) ve pi (π) bağları} ve karbonun dört eşdeğer bağ yapabilmesini açıklayan {koyu:hibritleşme} kavramı haftamızın merkezinde yer alıyor. sp³, sp² ve sp hibrit orbitalleri yardımıyla metan, etan, eten ve etin moleküllerindeki tekli, ikili ve üçlü bağların oluşumunu adım adım inceleyeceğiz. Hibritleşmenin moleküllere kazandırdığı geometrileri ise gelecek hafta ayrıntılı olarak ele alacağız.",
+  "ozet": [
+    "{koyu:Orbital örtüşmesi:} Değerlik bağı kuramına göre kovalent bağ, iki atomun yarı dolu orbitallerinin örtüşmesiyle ve zıt spinli iki elektronun paylaşılmasıyla oluşur. Örtüşme ne kadar etkinse bağ o kadar güçlüdür.",
+    "{koyu:σ ve π bağları:} Orbitallerin çekirdekleri birleştiren eksen boyunca uç uca örtüşmesiyle σ bağı, paralel p orbitallerinin yan yana örtüşmesiyle π bağı oluşur. İki atom arasındaki ilk bağ daima σ bağıdır.",
+    "{koyu:Bağ türleri:} Tekli bağ 1 σ, ikili bağ 1 σ + 1 π, üçlü bağ 1 σ + 2 π bağından oluşur. π bağı σ bağından zayıftır ve tek başına bulunamaz.",
+    "{koyu:Hibritleşme:} Bir atomun enerjileri birbirine yakın değerlik orbitallerinin karışarak aynı sayıda eşdeğer yeni orbital oluşturmasıdır. Karbon 2s elektronlarından birini boş 2p orbitaline uyararak dört yarı dolu orbital kazanır ve bunları hibritleştirir.",
+    "{koyu:sp³, sp², sp:} Yalnız tekli bağ yapan karbon sp³ (metan, etan), bir ikili bağ yapan karbon sp² (eten), bir üçlü bağ ya da iki ikili bağ yapan karbon ise sp (etin, {alt:CO|2}) hibritleşmesi yapar. Hibrit orbitaller σ bağı kurar ya da ortaklanmamış çift taşır, hibritleşmeyen p orbitalleri π bağı oluşturur.",
+    "{koyu:s karakteri ve bağ özellikleri:} s karakteri sp³'te %25, sp²'de yaklaşık %33, sp'de %50'dir. s karakteri arttıkça bağ kısalır. Karbonlar arasındaki ortak çift sayısı arttıkça bağ hem kısalır hem güçlenir: C–C yaklaşık 154 pm, C=C 134 pm, C≡C 120 pm."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Atom Orbitalleri ve Orbital Örtüşmesiyle Kovalent Bağ Oluşumu",
+      "metin": [
+        "Lewis formülleri bağları noktalar ve çizgilerle gösterir. Ancak elektronların atom çevresinde nasıl bir bölgede bulunduğunu anlatmaz. Modern atom modelinde elektronların bulunma olasılığının yüksek olduğu bölgelere {koyu:orbital} denir. Bağ oluşumunda en dış katmandaki {koyu:değerlik orbitalleri} rol oynar. {koyu:s orbitali} küre biçimindedir ve çekirdeğin çevresinde her yönde eşit dağılım gösterir. {koyu:p orbitalleri} ise çekirdeğin iki yanında yer alan iki loptan oluşur. Her katmanda birbirine dik doğrultularda yönelmiş üç p orbitali bulunur ve bunlar {koyu:px, py ve pz} olarak adlandırılır. Aynı katmanda 2s orbitalinin enerjisi 2p orbitallerinden biraz düşüktür. Bir orbitalde en fazla iki elektron bulunabilir ve bu iki elektronun spinleri zıttır.",
+        "Kovalent bağın orbital düzeyindeki açıklaması {koyu:değerlik bağı kuramı} ile yapılır. Bu kurama göre iki atom birbirine yaklaştığında, her birinde birer elektron bulunan {koyu:yarı dolu orbitaller} örtüşür. Zıt spinli bu iki elektron, iki çekirdek arasında ortak bir bölgede bulunmaya başlar. Elektron yoğunluğunun çekirdekler arasında artması iki çekirdeği birbirine bağlar ve sistemin enerjisi düşer. En basit örnek {alt:H|2} molekülüdür. İki hidrojen atomunun 1s orbitalleri örtüşür ve enerji, çekirdekler arası uzaklık yaklaşık 74 pm olduğunda en düşük değere iner. Bu uzaklık H–H {koyu:bağ uzunluğudur}. Bağı koparmak için gereken enerji ise yaklaşık 436 kJ/mol'dür. Atomlar daha da yaklaşırsa çekirdekler birbirini iter ve enerji yeniden yükselir.",
+        "Örtüşme farklı orbital türleri arasında da gerçekleşebilir. Flor atomunun elektron dizilimi 1s² 2s² 2p⁵ biçimindedir ve bir tane yarı dolu 2p orbitali vardır. HF molekülünde hidrojenin 1s orbitali florun yarı dolu 2p orbitaliyle örtüşür (s–p örtüşmesi). {alt:F|2} molekülünde ise iki florun yarı dolu 2p orbitalleri uç uca örtüşür (p–p örtüşmesi). Dolu orbitaller (iki elektronlu) bağ yapmaz, ortaklanmamış elektron çifti olarak atomda kalır. Bu yüzden bir atomun yaptığı bağ sayısı çoğu zaman {koyu:yarı dolu orbital sayısına} eşittir. Ancak bu basit yaklaşım karbonun dört bağ yapmasını açıklayamaz. Karbonun temel hâlinde yalnız iki yarı dolu orbital vardır. Bu çelişkiyi çözmek için hibritleşme kavramına ihtiyaç duyacağız."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Molekül",
+          "Atomların Yarı Dolu Orbitalleri",
+          "Örtüşen Orbitaller",
+          "Oluşan Bağ"
+        ],
+        "satirlar": [
+          [
+            "{alt:H|2}",
+            "H: 1s¹, H: 1s¹",
+            "1s – 1s",
+            "1 σ (H–H)"
+          ],
+          [
+            "HF",
+            "H: 1s¹, F: 2p¹ (bir tane)",
+            "1s – 2p",
+            "1 σ (H–F)"
+          ],
+          [
+            "HCl",
+            "H: 1s¹, Cl: 3p¹ (bir tane)",
+            "1s – 3p",
+            "1 σ (H–Cl)"
+          ],
+          [
+            "{alt:F|2}",
+            "Her F: 2p¹ (bir tane)",
+            "2p – 2p (uç uca)",
+            "1 σ (F–F)"
+          ],
+          [
+            "{alt:Cl|2}",
+            "Her Cl: 3p¹ (bir tane)",
+            "3p – 3p (uç uca)",
+            "1 σ (Cl–Cl)"
+          ],
+          [
+            "{alt:N|2}",
+            "Her N: 2p³ (üç tane)",
+            "1 uç uca + 2 yan yana p – p",
+            "1 σ + 2 π (N≡N)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Değerlik Bağı Kuramı",
+          "metin": "Kovalent bağın, iki atomun yarı dolu değerlik orbitallerinin {koyu:örtüşmesi} ve zıt spinli iki elektronun bu örtüşme bölgesinde paylaşılmasıyla oluştuğunu açıklayan kuramdır. Örtüşme bölgesindeki elektron yoğunluğu arttıkça bağ güçlenir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Dolu Orbitaller Bağ Yapmaz",
+          "metin": "İki elektronu bulunan bir orbital, başka bir atomun yarı dolu orbitaliyle normal kovalent bağ oluşturamaz. Çünkü bir orbitale en fazla iki elektron sığar. Bu dolu orbitaller molekülde {koyu:ortaklanmamış elektron çifti} olarak kalır. {alt:F|2}'de her florda 3 çift bu şekilde bulunur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#334155' stroke-width='2'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Atom Orbitalleri ve Örtüşme ile Kovalent Bağ Oluşumu</text><rect x='20' y='42' width='230' height='116' rx='12' fill='#ffffff' stroke='#0284c7' stroke-width='2'/><text x='135' y='62' text-anchor='middle' font-size='13' font-weight='700' fill='#0c4a6e'>s orbitali (küresel)</text><circle cx='135' cy='108' r='32' fill='#bae6fd' stroke='#0284c7' stroke-width='1.5'/><circle cx='135' cy='108' r='3' fill='#0f172a'/><text x='135' y='152' text-anchor='middle' font-size='11' fill='#334155'>Her yönde eşit dağılım</text><rect x='265' y='42' width='230' height='116' rx='12' fill='#ffffff' stroke='#7c3aed' stroke-width='2'/><text x='380' y='62' text-anchor='middle' font-size='13' font-weight='700' fill='#5b21b6'>p orbitali (iki loplu)</text><ellipse cx='348' cy='106' rx='30' ry='15' fill='#ddd6fe' stroke='#7c3aed' stroke-width='1.5'/><ellipse cx='412' cy='106' rx='30' ry='15' fill='#ddd6fe' stroke='#7c3aed' stroke-width='1.5'/><circle cx='380' cy='106' r='3' fill='#0f172a'/><line x1='300' y1='106' x2='460' y2='106' stroke='#94a3b8' stroke-width='1' stroke-dasharray='4 3'/><text x='380' y='152' text-anchor='middle' font-size='11' fill='#334155'>Çekirdeğin iki yanında birer lop</text><rect x='510' y='42' width='230' height='116' rx='12' fill='#ffffff' stroke='#059669' stroke-width='2'/><text x='625' y='62' text-anchor='middle' font-size='13' font-weight='700' fill='#065f46'>Üç p orbitali birbirine dik</text><ellipse cx='600' cy='106' rx='22' ry='10' fill='#a7f3d0' stroke='#059669' stroke-width='1.2'/><ellipse cx='650' cy='106' rx='22' ry='10' fill='#a7f3d0' stroke='#059669' stroke-width='1.2'/><ellipse cx='625' cy='86' rx='9' ry='18' fill='#fde68a' stroke='#d97706' stroke-width='1.2'/><ellipse cx='625' cy='126' rx='9' ry='18' fill='#fde68a' stroke='#d97706' stroke-width='1.2'/><circle cx='625' cy='106' r='3' fill='#0f172a'/><text x='684' y='110' font-size='11' fill='#065f46'>px</text><text x='636' y='76' font-size='11' fill='#92400e'>py</text><text x='625' y='154' text-anchor='middle' font-size='11' fill='#334155'>pz sayfa düzlemine diktir</text><rect x='20' y='170' width='230' height='118' rx='12' fill='#ffffff' stroke='#0284c7' stroke-width='2'/><text x='135' y='190' text-anchor='middle' font-size='13' font-weight='700' fill='#0c4a6e'>H₂: 1s – 1s örtüşmesi</text><circle cx='115' cy='232' r='26' fill='#bae6fd' fill-opacity='0.8' stroke='#0284c7' stroke-width='1.5'/><circle cx='155' cy='232' r='26' fill='#bae6fd' fill-opacity='0.8' stroke='#0284c7' stroke-width='1.5'/><circle cx='115' cy='232' r='3' fill='#0f172a'/><circle cx='155' cy='232' r='3' fill='#0f172a'/><text x='135' y='280' text-anchor='middle' font-size='11' fill='#334155'>Bağ uzunluğu yaklaşık 74 pm</text><rect x='265' y='170' width='230' height='118' rx='12' fill='#ffffff' stroke='#7c3aed' stroke-width='2'/><text x='380' y='190' text-anchor='middle' font-size='13' font-weight='700' fill='#5b21b6'>HF: 1s – 2p örtüşmesi</text><circle cx='322' cy='232' r='22' fill='#bae6fd' fill-opacity='0.8' stroke='#0284c7' stroke-width='1.5'/><ellipse cx='364' cy='232' rx='26' ry='14' fill='#ddd6fe' fill-opacity='0.8' stroke='#7c3aed' stroke-width='1.5'/><ellipse cx='416' cy='232' rx='26' ry='14' fill='#ddd6fe' fill-opacity='0.8' stroke='#7c3aed' stroke-width='1.5'/><circle cx='322' cy='232' r='3' fill='#0f172a'/><circle cx='390' cy='232' r='3' fill='#0f172a'/><text x='322' y='266' text-anchor='middle' font-size='11' fill='#0c4a6e'>H</text><text x='390' y='266' text-anchor='middle' font-size='11' fill='#5b21b6'>F</text><text x='380' y='282' text-anchor='middle' font-size='11' fill='#334155'>s – p örtüşmesi</text><rect x='510' y='170' width='230' height='118' rx='12' fill='#ffffff' stroke='#059669' stroke-width='2'/><text x='625' y='190' text-anchor='middle' font-size='13' font-weight='700' fill='#065f46'>F₂: 2p – 2p (uç uca)</text><ellipse cx='560' cy='232' rx='22' ry='12' fill='#a7f3d0' fill-opacity='0.8' stroke='#059669' stroke-width='1.5'/><ellipse cx='604' cy='232' rx='22' ry='12' fill='#a7f3d0' fill-opacity='0.8' stroke='#059669' stroke-width='1.5'/><ellipse cx='646' cy='232' rx='22' ry='12' fill='#a7f3d0' fill-opacity='0.8' stroke='#059669' stroke-width='1.5'/><ellipse cx='690' cy='232' rx='22' ry='12' fill='#a7f3d0' fill-opacity='0.8' stroke='#059669' stroke-width='1.5'/><circle cx='582' cy='232' r='3' fill='#0f172a'/><circle cx='668' cy='232' r='3' fill='#0f172a'/><text x='625' y='266' text-anchor='middle' font-size='11' fill='#065f46'>Örtüşme bölgesi ortada</text><text x='625' y='282' text-anchor='middle' font-size='11' fill='#334155'>Her F'de 3 ortaklanmamış çift kalır</text></svg>"
+    },
+    {
+      "baslik": "Sigma (σ) ve Pi (π) Bağları: Uç Uca ve Yan Yana Örtüşme",
+      "metin": [
+        "Orbitallerin örtüşme biçimi, oluşan bağın türünü belirler. Orbitaller iki çekirdeği birleştiren hayalî doğru (bağ ekseni) boyunca {koyu:uç uca} örtüşürse {koyu:sigma (σ) bağı} oluşur. s–s, s–p ve uç uca p–p örtüşmeleri ile hibrit orbitallerin katıldığı örtüşmelerin hepsi σ bağı verir. σ bağında elektron yoğunluğu en çok bağ ekseni üzerinde toplanır ve eksenin çevresinde silindir gibi simetrik dağılır. Bu nedenle bir σ bağı, atomların bağ ekseni etrafında dönmesini engellemez. İki atom arasında oluşan {koyu:ilk bağ daima σ bağıdır}. Bu yüzden her tekli bağ bir σ bağıdır.",
+        "İki atom arasında σ bağı kurulduktan sonra, bağ eksenine dik ve birbirine paralel duran yarı dolu p orbitalleri {koyu:yan yana} örtüşebilir. Bu örtüşmeyle {koyu:pi (π) bağı} oluşur. π bağında elektron yoğunluğu bağ ekseninin üstünde ve altında iki bölgede toplanır. Eksenin kendisinde ise elektron yoğunluğu yoktur. Yan yana örtüşme, uç uca örtüşme kadar etkin olmadığı için {koyu:π bağı σ bağından zayıftır}. π bağı tek başına oluşamaz, ancak bir σ bağına eşlik edebilir. Ayrıca bağlı atomlardan biri döndürülürse p orbitallerinin paralelliği bozulur ve π bağı kopar. Bu nedenle π bağı içeren bağlar etrafında serbest dönme {koyu:engellenir}.",
+        "Bu bilgiler bağ türlerinin orbital yapısını ortaya koyar: {koyu:Tekli bağ 1 σ}, {koyu:ikili bağ 1 σ + 1 π}, {koyu:üçlü bağ 1 σ + 2 π} bağından oluşur. Üçlü bağdaki iki π bağı birbirine dik iki düzlemde yer alır. Azot molekülü bunun güzel bir örneğidir. Her azot atomunun (2s² 2p³) üç yarı dolu p orbitali vardır. Bağ ekseni üzerindeki px orbitalleri uç uca örtüşerek σ bağını, py ve pz orbitalleri ise yan yana örtüşerek iki π bağını oluşturur. N≡N bağı yaklaşık 945 kJ/mol enerjisiyle çok güçlü bir bağdır. Bu da azot gazının tepkimeye girme isteğinin düşük olmasını açıklar. Karbon-karbon bağları için ortalama bağ enerjileri C–C'de 348, C=C'de 614 kJ/mol'dür. Aradaki fark (yaklaşık 266 kJ/mol) bir π bağının katkısını gösterir ve tek bir σ bağının enerjisinden küçüktür."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Bağ Türü",
+          "σ Sayısı",
+          "π Sayısı",
+          "Ortak Elektron Çifti",
+          "Örnek"
+        ],
+        "satirlar": [
+          [
+            "Tekli bağ",
+            "1",
+            "0",
+            "1",
+            "C–C (etan), C–H, O–H"
+          ],
+          [
+            "İkili bağ",
+            "1",
+            "1",
+            "2",
+            "C=C (eten), C=O (formaldehit), O=O"
+          ],
+          [
+            "Üçlü bağ",
+            "1",
+            "2",
+            "3",
+            "C≡C (etin), C≡N (HCN), N≡N"
+          ],
+          [
+            "İki ikili bağ (aynı atomda)",
+            "2",
+            "2",
+            "4",
+            "O=C=O ({alt:CO|2}) karbonu"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "σ ve π Bağlarını Sayma",
+          "metin": "Bir moleküldeki {koyu:σ bağı sayısı}, molekülde birbirine bağlı atom çiftlerinin sayısına eşittir (her bağ çizgisi grubu için 1 σ). {koyu:π bağı sayısı} ise her ikili bağ için 1, her üçlü bağ için 2 alınarak bulunur. Örneğin etende 5 atom çifti bağlıdır (4 C–H ve 1 C–C), bu yüzden 5 σ ve 1 π vardır."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "π Bağı Neden Daha Kolay Kopar?",
+          "metin": "π bağının elektronları bağ ekseninden uzakta, molekülün dış kısımlarında bulunur. Bu elektronlar çekirdeklerce daha zayıf tutulur ve başka türlerin saldırısına açıktır. Alkenlerin katılma tepkimelerine yatkın olması bu özellikten kaynaklanır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#334155' stroke-width='2'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Sigma (σ) ve Pi (π) Bağlarının Oluşumu</text><rect x='20' y='42' width='350' height='138' rx='12' fill='#ffffff' stroke='#0284c7' stroke-width='2'/><text x='195' y='62' text-anchor='middle' font-size='13' font-weight='700' fill='#0c4a6e'>σ bağı: bağ ekseni üzerinde uç uca örtüşme</text><line x1='40' y1='115' x2='350' y2='115' stroke='#94a3b8' stroke-width='1' stroke-dasharray='5 4'/><ellipse cx='100' cy='115' rx='30' ry='15' fill='#bae6fd' fill-opacity='0.85' stroke='#0284c7' stroke-width='1.5'/><ellipse cx='160' cy='115' rx='30' ry='15' fill='#bae6fd' fill-opacity='0.85' stroke='#0284c7' stroke-width='1.5'/><ellipse cx='230' cy='115' rx='30' ry='15' fill='#bae6fd' fill-opacity='0.85' stroke='#0284c7' stroke-width='1.5'/><ellipse cx='290' cy='115' rx='30' ry='15' fill='#bae6fd' fill-opacity='0.85' stroke='#0284c7' stroke-width='1.5'/><circle cx='130' cy='115' r='3.5' fill='#0f172a'/><circle cx='260' cy='115' r='3.5' fill='#0f172a'/><text x='195' y='92' text-anchor='middle' font-size='11' fill='#b45309'>örtüşme bölgesi</text><text x='195' y='150' text-anchor='middle' font-size='11' fill='#334155'>Elektron yoğunluğu iki çekirdeğin arasında</text><text x='195' y='168' text-anchor='middle' font-size='11' fill='#334155'>Eksen etrafında dönme serbest</text><rect x='390' y='42' width='350' height='138' rx='12' fill='#ffffff' stroke='#7c3aed' stroke-width='2'/><text x='565' y='62' text-anchor='middle' font-size='13' font-weight='700' fill='#5b21b6'>π bağı: paralel p orbitallerinin yan yana örtüşmesi</text><line x1='420' y1='118' x2='710' y2='118' stroke='#94a3b8' stroke-width='1' stroke-dasharray='5 4'/><ellipse cx='545' cy='93' rx='22' ry='24' fill='#ddd6fe' fill-opacity='0.85' stroke='#7c3aed' stroke-width='1.5'/><ellipse cx='545' cy='143' rx='22' ry='24' fill='#ddd6fe' fill-opacity='0.85' stroke='#7c3aed' stroke-width='1.5'/><ellipse cx='585' cy='93' rx='22' ry='24' fill='#ddd6fe' fill-opacity='0.85' stroke='#7c3aed' stroke-width='1.5'/><ellipse cx='585' cy='143' rx='22' ry='24' fill='#ddd6fe' fill-opacity='0.85' stroke='#7c3aed' stroke-width='1.5'/><circle cx='545' cy='118' r='3.5' fill='#0f172a'/><circle cx='585' cy='118' r='3.5' fill='#0f172a'/><text x='615' y='88' font-size='11' fill='#5b21b6'>eksenin üstünde</text><text x='615' y='154' font-size='11' fill='#5b21b6'>eksenin altında</text><text x='430' y='100' font-size='11' fill='#334155'>eksende</text><text x='430' y='114' font-size='11' fill='#334155'>yoğunluk yok</text><text x='565' y='176' text-anchor='middle' font-size='11' fill='#334155'>σ'dan zayıf, dönmeyi engeller</text><rect x='20' y='192' width='230' height='96' rx='12' fill='#ecfeff' stroke='#0891b2' stroke-width='2'/><text x='135' y='226' text-anchor='middle' font-size='24' font-weight='700' fill='#155e75'>C–C</text><text x='135' y='252' text-anchor='middle' font-size='13' font-weight='700' fill='#155e75'>Tekli bağ: 1 σ</text><text x='135' y='274' text-anchor='middle' font-size='11' fill='#155e75'>yaklaşık 348 kJ/mol</text><rect x='265' y='192' width='230' height='96' rx='12' fill='#f5f3ff' stroke='#7c3aed' stroke-width='2'/><text x='380' y='226' text-anchor='middle' font-size='24' font-weight='700' fill='#5b21b6'>C=C</text><text x='380' y='252' text-anchor='middle' font-size='13' font-weight='700' fill='#5b21b6'>İkili bağ: 1 σ + 1 π</text><text x='380' y='274' text-anchor='middle' font-size='11' fill='#5b21b6'>yaklaşık 614 kJ/mol</text><rect x='510' y='192' width='230' height='96' rx='12' fill='#fff7ed' stroke='#ea580c' stroke-width='2'/><text x='625' y='226' text-anchor='middle' font-size='24' font-weight='700' fill='#9a3412'>C≡C</text><text x='625' y='252' text-anchor='middle' font-size='13' font-weight='700' fill='#9a3412'>Üçlü bağ: 1 σ + 2 π</text><text x='625' y='274' text-anchor='middle' font-size='11' fill='#9a3412'>yaklaşık 839 kJ/mol</text></svg>"
+    },
+    {
+      "baslik": "Karbonun Elektron Dizilimi, Elektron Uyarılması ve Hibritleşme Kavramı",
+      "metin": [
+        "Karbonun temel hâl elektron dizilimi 1s² 2s² 2p² biçimindedir. Değerlik katmanında 2s orbitali dolu, iki 2p orbitali yarı dolu, bir 2p orbitali ise boştur. Yalnız yarı dolu orbitallere bakarak karbonun {koyu:iki bağ} yapması beklenirdi. Oysa deneyler tam tersini gösterir: Metan ({alt:CH|4}) molekülünde karbon dört hidrojene bağlıdır ve dört C–H bağının uzunluğu (yaklaşık 109 pm) ve enerjisi tamamen aynıdır. Bağlar arasındaki açıların hepsi de eşittir. Basit orbital örtüşmesi modeli bu gözlemi açıklayamaz. Bir s ve üç p orbitaliyle bağ kurulsaydı, s orbitaliyle oluşan bağın diğer üçünden farklı olması gerekirdi.",
+        "Bu çelişki iki adımda çözülür. Birinci adım {koyu:elektron uyarılmasıdır}. 2s orbitalindeki elektronlardan biri boş 2p orbitaline geçer ve karbon 2s¹ 2p³ dizilimine ulaşır. Böylece dört yarı dolu orbital elde edilir. Bu geçiş biraz enerji gerektirir. Ancak karbon iki yerine dört bağ yaptığında açığa çıkan ek enerji bu harcamayı fazlasıyla karşılar. İkinci adım {koyu:hibritleşmedir}. Uyarılmış karbonun 2s ve 2p orbitalleri birbirine karışarak şekli, enerjisi ve s-p oranı bakımından eşdeğer yeni orbitaller oluşturur. Bu yeni orbitallere {koyu:hibrit orbitaller} denir. Hibrit orbitallerin bir lobu büyük, öbür lobu küçüktür. Büyük lop bağ yönüne uzandığı için hibrit orbitaller saf s ve p orbitallerinden daha etkin örtüşür ve daha güçlü bağlar kurar.",
+        "Hibritleşmenin bazı temel kuralları vardır. Birincisi, {koyu:hibritleşmeye giren orbital sayısı oluşan hibrit orbital sayısına eşittir}. Bir s ve üç p orbitali dört sp³, bir s ve iki p orbitali üç sp², bir s ve bir p orbitali iki sp hibrit orbitali verir. Hibrit orbitalin adı, karışan orbitallerin türü ve sayısıyla verilir. sp³ ifadesindeki üst simge üç p orbitalinin karıştığını gösterir. İkincisi, hibrit orbitaller yalnız {koyu:σ bağı} oluşturur ya da {koyu:ortaklanmamış elektron çifti} taşır. Hibritleşmeye katılmayan p orbitalleri ise π bağı kurar. Üçüncüsü, hibritleşme yalnız aynı atomdaki ve enerjileri birbirine yakın orbitaller arasında gerçekleşir. Hibrit orbitallerin enerjisi s ve p orbitallerinin enerjileri arasındadır. Hibritleşmenin gözlenebilir bir olay değil, deneysel sonuçları açıklamak için geliştirilmiş bir {koyu:model} olduğunu da unutmamak gerekir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Hibrit Türü",
+          "Karışan Orbitaller",
+          "Hibrit Orbital Sayısı",
+          "Hibritleşmeyen p Orbitali",
+          "s Karakteri",
+          "Hibritler Arası Açı"
+        ],
+        "satirlar": [
+          [
+            "sp³",
+            "1 s + 3 p",
+            "4",
+            "0",
+            "%25",
+            "109,5°"
+          ],
+          [
+            "sp²",
+            "1 s + 2 p",
+            "3",
+            "1",
+            "yaklaşık %33",
+            "120°"
+          ],
+          [
+            "sp",
+            "1 s + 1 p",
+            "2",
+            "2",
+            "%50",
+            "180°"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Hibritleşme",
+          "metin": "Bir atomun enerjileri birbirine yakın farklı türdeki değerlik orbitallerinin (s ve p gibi) karışarak {koyu:aynı sayıda}, birbirine eşdeğer yeni orbitaller oluşturmasıdır. Oluşan orbitallere {koyu:hibrit orbitaller} denir."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Orbital Sayısı Korunur",
+          "metin": "Hibritleşme orbital üretmez, var olanları yeniden düzenler. Karbonun değerlik katmanında her zaman 4 orbital (bir 2s ve üç 2p) bulunur. sp³'te 4 hibrit + 0 p, sp²'de 3 hibrit + 1 p, sp'de 2 hibrit + 2 p vardır. Toplam her durumda 4'tür."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#334155' stroke-width='2'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Karbonda Elektron Uyarılması ve sp³ Hibritleşmesi</text><line x1='45' y1='250' x2='45' y2='70' stroke='#334155' stroke-width='2'/><polygon points='45,60 39,74 51,74' fill='#334155'/><text x='36' y='160' font-size='12' fill='#334155' transform='rotate(-90 36 160)' text-anchor='middle'>Enerji</text><text x='150' y='58' text-anchor='middle' font-size='13' font-weight='700' fill='#0c4a6e'>Temel hâl</text><text x='150' y='74' text-anchor='middle' font-size='11' fill='#475569'>1s² 2s² 2p²</text><rect x='105' y='125' width='30' height='30' rx='4' fill='#ffffff' stroke='#0284c7' stroke-width='1.8'/><rect x='135' y='125' width='30' height='30' rx='4' fill='#ffffff' stroke='#0284c7' stroke-width='1.8'/><rect x='165' y='125' width='30' height='30' rx='4' fill='#ffffff' stroke='#0284c7' stroke-width='1.8'/><text x='120' y='147' text-anchor='middle' font-size='16' fill='#dc2626'>↑</text><text x='150' y='147' text-anchor='middle' font-size='16' fill='#dc2626'>↑</text><text x='205' y='145' font-size='12' fill='#0c4a6e'>2p</text><rect x='105' y='205' width='30' height='30' rx='4' fill='#ffffff' stroke='#0284c7' stroke-width='1.8'/><text x='120' y='227' text-anchor='middle' font-size='16' fill='#0f172a'>↑↓</text><text x='145' y='225' font-size='12' fill='#0c4a6e'>2s</text><text x='150' y='254' text-anchor='middle' font-size='11' fill='#475569'>2 yarı dolu orbital</text><line x1='232' y1='165' x2='282' y2='165' stroke='#d97706' stroke-width='2.5'/><polygon points='292,165 280,159 280,171' fill='#d97706'/><text x='262' y='155' text-anchor='middle' font-size='11' fill='#92400e'>uyarılma</text><text x='370' y='58' text-anchor='middle' font-size='13' font-weight='700' fill='#92400e'>Uyarılmış hâl</text><text x='370' y='74' text-anchor='middle' font-size='11' fill='#475569'>1s² 2s¹ 2p³</text><rect x='325' y='125' width='30' height='30' rx='4' fill='#ffffff' stroke='#d97706' stroke-width='1.8'/><rect x='355' y='125' width='30' height='30' rx='4' fill='#ffffff' stroke='#d97706' stroke-width='1.8'/><rect x='385' y='125' width='30' height='30' rx='4' fill='#ffffff' stroke='#d97706' stroke-width='1.8'/><text x='340' y='147' text-anchor='middle' font-size='16' fill='#dc2626'>↑</text><text x='370' y='147' text-anchor='middle' font-size='16' fill='#dc2626'>↑</text><text x='400' y='147' text-anchor='middle' font-size='16' fill='#dc2626'>↑</text><text x='422' y='145' font-size='12' fill='#92400e'>2p</text><rect x='325' y='205' width='30' height='30' rx='4' fill='#ffffff' stroke='#d97706' stroke-width='1.8'/><text x='340' y='227' text-anchor='middle' font-size='16' fill='#dc2626'>↑</text><text x='365' y='225' font-size='12' fill='#92400e'>2s</text><text x='370' y='254' text-anchor='middle' font-size='11' fill='#475569'>4 yarı dolu, eşdeğer değil</text><line x1='452' y1='165' x2='502' y2='165' stroke='#059669' stroke-width='2.5'/><polygon points='512,165 500,159 500,171' fill='#059669'/><text x='482' y='155' text-anchor='middle' font-size='11' fill='#065f46'>karışma</text><text x='610' y='58' text-anchor='middle' font-size='13' font-weight='700' fill='#065f46'>sp³ hibritleşmesi</text><text x='610' y='74' text-anchor='middle' font-size='11' fill='#475569'>4 eşdeğer hibrit orbital</text><rect x='535' y='165' width='30' height='30' rx='4' fill='#ecfdf5' stroke='#059669' stroke-width='1.8'/><rect x='565' y='165' width='30' height='30' rx='4' fill='#ecfdf5' stroke='#059669' stroke-width='1.8'/><rect x='595' y='165' width='30' height='30' rx='4' fill='#ecfdf5' stroke='#059669' stroke-width='1.8'/><rect x='625' y='165' width='30' height='30' rx='4' fill='#ecfdf5' stroke='#059669' stroke-width='1.8'/><text x='550' y='187' text-anchor='middle' font-size='16' fill='#dc2626'>↑</text><text x='580' y='187' text-anchor='middle' font-size='16' fill='#dc2626'>↑</text><text x='610' y='187' text-anchor='middle' font-size='16' fill='#dc2626'>↑</text><text x='640' y='187' text-anchor='middle' font-size='16' fill='#dc2626'>↑</text><text x='664' y='185' font-size='12' font-weight='700' fill='#065f46'>sp³</text><text x='610' y='222' text-anchor='middle' font-size='11' fill='#475569'>Enerjisi 2s ile 2p arasında</text><text x='610' y='238' text-anchor='middle' font-size='11' fill='#475569'>Her birinde 1 elektron</text><rect x='60' y='262' width='680' height='28' rx='10' fill='#ecfdf5' stroke='#059669' stroke-width='1.5'/><text x='400' y='281' text-anchor='middle' font-size='12' font-weight='700' fill='#065f46'>1 tane 2s + 3 tane 2p → 4 tane sp³ hibrit orbitali: karbon 4 eşdeğer σ bağı kurabilir</text></svg>"
+    },
+    {
+      "baslik": "sp³ Hibritleşmesi ve Tekli Bağların Oluşumu: Metan ve Etan",
+      "metin": [
+        "Uyarılmış karbonun bir 2s ve üç 2p orbitali karışırsa dört tane {koyu:sp³ hibrit orbitali} oluşur. Her sp³ orbitali %25 s ve %75 p karakteri taşır ve içinde bir elektron bulunur. Dört orbital birbirini en az itecek biçimde uzaya yayılır ve bir düzgün dörtyüzlünün köşelerine yönelir. Hibrit orbitaller arasındaki açı {koyu:109,5°} olur. Bu yönlenmenin molekül şekline etkisini gelecek hafta ayrıntılı inceleyeceğiz. Bu hafta bizim için önemli olan, bu dört orbitalin birbirine tamamen eşdeğer olmasıdır. Bu sayede karbon dört özdeş bağ kurabilir.",
+        "{koyu:Metanda} karbonun dört sp³ orbitalinin her biri, bir hidrojen atomunun 1s orbitaliyle uç uca örtüşür. Böylece dört tane {koyu:sp³–1s σ bağı} oluşur. Dört bağ aynı tür orbitallerden oluştuğu için uzunlukları ve enerjileri aynıdır ve deneysel gözlemle tam bir uyum sağlanır. {koyu:Etanda} ({alt:C|2}{alt:H|6}) her iki karbon da sp³ hibritleşmesi yapar. Karbonların birer sp³ orbitali birbiriyle uç uca örtüşerek {koyu:sp³–sp³ σ bağını}, yani C–C tekli bağını oluşturur. Her karbonun kalan üç sp³ orbitali üç hidrojenin 1s orbitalleriyle örtüşür. Sonuçta etanda 1 C–C ve 6 C–H olmak üzere {koyu:7 σ bağı} bulunur ve hiç π bağı yoktur. C–C bağı yalnız σ bağından oluştuğu için iki metil grubu bu bağ etrafında serbestçe dönebilir. Propan, bütan gibi bütün alkanlarda karbon atomlarının tamamı sp³ hibritleşmesi yapar.",
+        "sp³ hibritleşmesi yalnız karbona özgü değildir. Azot atomunun (2s² 2p³) değerlik orbitalleri de dört sp³ hibrit orbitali oluşturabilir. Bu durumda azotun beş değerlik elektronu dört orbitale dağılır: Bir orbitalde 2 elektron (ortaklanmamış çift), üç orbitalde birer elektron bulunur. {koyu:Amonyakta} yarı dolu üç sp³ orbitali üç hidrojenin 1s orbitalleriyle örtüşerek üç {koyu:sp³–1s σ bağı} oluşturur. Ortaklanmamış çift ise dördüncü sp³ orbitalinde kalır. {koyu:Suda} oksijenin (2s² 2p⁴) dört sp³ orbitalinden ikisi ortaklanmamış çift taşır, ikisi hidrojenle σ bağı kurar. Metanolde ({alt:CH|3}OH) hem karbon hem oksijen sp³ hibritleşmesi yapar ve C–O bağı sp³–sp³ örtüşmesiyle oluşur. Ortaklanmamış çiftlerin bağ açılarını nasıl değiştirdiği ise gelecek haftanın konusudur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Molekül",
+          "Hibritleşen Atom",
+          "σ Bağları ve Örtüşen Orbitaller",
+          "σ / π Sayısı",
+          "Ortaklanmamış Çift"
+        ],
+        "satirlar": [
+          [
+            "Metan, {alt:CH|4}",
+            "C: sp³",
+            "4 × C–H (sp³–1s)",
+            "4 σ / 0 π",
+            "Yok"
+          ],
+          [
+            "Etan, {alt:C|2}{alt:H|6}",
+            "Her C: sp³",
+            "1 × C–C (sp³–sp³), 6 × C–H (sp³–1s)",
+            "7 σ / 0 π",
+            "Yok"
+          ],
+          [
+            "Amonyak, {alt:NH|3}",
+            "N: sp³",
+            "3 × N–H (sp³–1s)",
+            "3 σ / 0 π",
+            "1 (N'nin sp³ orbitalinde)"
+          ],
+          [
+            "Su, {alt:H|2}O",
+            "O: sp³",
+            "2 × O–H (sp³–1s)",
+            "2 σ / 0 π",
+            "2 (O'nun sp³ orbitallerinde)"
+          ],
+          [
+            "Metanol, {alt:CH|3}OH",
+            "C: sp³, O: sp³",
+            "3 × C–H, 1 × C–O (sp³–sp³), 1 × O–H",
+            "5 σ / 0 π",
+            "2 (O'da)"
+          ],
+          [
+            "Klorometan, {alt:CH|3}Cl",
+            "C: sp³",
+            "3 × C–H (sp³–1s), 1 × C–Cl (sp³–3p)",
+            "4 σ / 0 π",
+            "3 (Cl'de)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "sp³ Karbonu Tanıma",
+          "metin": "Bir karbon atomu {koyu:dört ayrı atoma yalnız tekli bağlarla} bağlıysa sp³ hibritleşmesi yapmıştır. Alkanlardaki bütün karbonlar ile alkol, eter ve alkil halojenürlerdeki doymuş karbonlar bu gruptadır."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Tekli Bağ Etrafında Dönme",
+          "metin": "σ bağının elektron yoğunluğu bağ ekseni etrafında simetrik olduğundan, etanda bir metil grubu diğerine göre döndürüldüğünde örtüşme bozulmaz. Bu dönme oda sıcaklığında çok hızlı gerçekleşir. İkili bağda ise π bağı nedeniyle bu serbestlik ortadan kalkar."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#334155' stroke-width='2'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>sp³ Hibritleşmesi: Metan ve Etanda σ Bağları</text><rect x='20' y='42' width='320' height='246' rx='12' fill='#ffffff' stroke='#059669' stroke-width='2'/><text x='180' y='62' text-anchor='middle' font-size='13' font-weight='700' fill='#065f46'>Metan (CH₄): C sp³</text><line x1='180' y1='160' x2='180' y2='90' stroke='#059669' stroke-width='3'/><line x1='180' y1='160' x2='95' y2='205' stroke='#059669' stroke-width='3'/><line x1='180' y1='160' x2='265' y2='205' stroke='#059669' stroke-width='3'/><line x1='180' y1='160' x2='200' y2='245' stroke='#059669' stroke-width='3' stroke-dasharray='6 4'/><circle cx='180' cy='160' r='18' fill='#d1fae5' stroke='#059669' stroke-width='2'/><text x='180' y='166' text-anchor='middle' font-size='16' font-weight='700' fill='#065f46'>C</text><circle cx='180' cy='84' r='13' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='180' y='89' text-anchor='middle' font-size='13' font-weight='700' fill='#0c4a6e'>H</text><circle cx='89' cy='209' r='13' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='89' y='214' text-anchor='middle' font-size='13' font-weight='700' fill='#0c4a6e'>H</text><circle cx='271' cy='209' r='13' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='271' y='214' text-anchor='middle' font-size='13' font-weight='700' fill='#0c4a6e'>H</text><circle cx='202' cy='252' r='13' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='202' y='257' text-anchor='middle' font-size='13' font-weight='700' fill='#0c4a6e'>H</text><text x='190' y='120' font-size='11' fill='#065f46'>sp³–1s σ</text><text x='226' y='166' font-size='11' fill='#b45309'>109,5°</text><text x='40' y='240' font-size='11' fill='#334155'>4 eşdeğer</text><text x='40' y='254' font-size='11' fill='#334155'>C–H bağı</text><text x='265' y='254' font-size='11' fill='#334155'>4 σ, 0 π</text><rect x='355' y='42' width='385' height='246' rx='12' fill='#ffffff' stroke='#0284c7' stroke-width='2'/><text x='547' y='62' text-anchor='middle' font-size='13' font-weight='700' fill='#0c4a6e'>Etan (C₂H₆): her iki C sp³</text><line x1='480' y1='150' x2='615' y2='150' stroke='#dc2626' stroke-width='4'/><line x1='480' y1='150' x2='430' y2='95' stroke='#059669' stroke-width='2.5'/><line x1='480' y1='150' x2='420' y2='175' stroke='#059669' stroke-width='2.5'/><line x1='480' y1='150' x2='470' y2='212' stroke='#059669' stroke-width='2.5'/><line x1='615' y1='150' x2='665' y2='95' stroke='#059669' stroke-width='2.5'/><line x1='615' y1='150' x2='675' y2='175' stroke='#059669' stroke-width='2.5'/><line x1='615' y1='150' x2='625' y2='212' stroke='#059669' stroke-width='2.5'/><circle cx='480' cy='150' r='18' fill='#d1fae5' stroke='#059669' stroke-width='2'/><text x='480' y='156' text-anchor='middle' font-size='16' font-weight='700' fill='#065f46'>C</text><circle cx='615' cy='150' r='18' fill='#d1fae5' stroke='#059669' stroke-width='2'/><text x='615' y='156' text-anchor='middle' font-size='16' font-weight='700' fill='#065f46'>C</text><circle cx='426' cy='90' r='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='426' y='95' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>H</text><circle cx='414' cy='178' r='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='414' y='183' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>H</text><circle cx='469' cy='218' r='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='469' y='223' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>H</text><circle cx='669' cy='90' r='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='669' y='95' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>H</text><circle cx='681' cy='178' r='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='681' y='183' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>H</text><circle cx='626' cy='218' r='12' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='626' y='223' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>H</text><text x='547' y='138' text-anchor='middle' font-size='11' font-weight='700' fill='#dc2626'>sp³–sp³ σ</text><text x='547' y='175' text-anchor='middle' font-size='10' fill='#334155'>serbest dönme ↻</text><text x='547' y='252' text-anchor='middle' font-size='12' fill='#334155'>1 C–C (sp³–sp³) + 6 C–H (sp³–1s)</text><text x='547' y='274' text-anchor='middle' font-size='13' font-weight='700' fill='#0c4a6e'>Toplam: 7 σ, 0 π</text></svg>"
+    },
+    {
+      "baslik": "sp² Hibritleşmesi ve İkili Bağların Oluşumu: Eten ve Formaldehit",
+      "metin": [
+        "Karbonun 2s orbitali yalnız iki 2p orbitaliyle karışırsa üç tane {koyu:sp² hibrit orbitali} oluşur. Bu orbitallerin s karakteri yaklaşık %33'tür. Üç sp² orbitali aynı düzlemde yer alır ve aralarındaki açı {koyu:120°} olur. Hibritleşmeye katılmayan bir {koyu:2p orbitali} ise bu düzleme dik olarak kalır ve içinde bir elektron bulunur. Böylece sp² hibritleşmesi yapmış karbonun dört yarı dolu orbitali olur: Üç sp² orbitali σ bağları için, dik duran p orbitali de π bağı için kullanılır.",
+        "{koyu:Eten} ({alt:C|2}{alt:H|4}) molekülünde her iki karbon da sp² hibritleşmesi yapar. Karbonların birer sp² orbitali uç uca örtüşerek {koyu:sp²–sp² σ bağını} oluşturur. Her karbonun kalan iki sp² orbitali iki hidrojenin 1s orbitalleriyle örtüşür ve dört {koyu:sp²–1s σ bağı} meydana gelir. İki karbonun hibritleşmeye katılmayan p orbitalleri, σ bağı düzlemine dik ve birbirine paraleldir. Bu orbitaller yan yana örtüşerek {koyu:π bağını} kurar. Sonuçta C=C ikili bağı bir σ ve bir π bağından oluşur ve etende toplam {koyu:5 σ + 1 π} bağı bulunur. π bağının oluşabilmesi için iki p orbitalinin paralel kalması gerekir. Bu yüzden etendeki altı atomun hepsi aynı düzlemde bulunur ve C=C bağı etrafında dönme engellenir. 2-büten gibi alkenlerde cis ve trans izomerlerinin ayrı ayrı var olabilmesi de bu dönme engelinden kaynaklanır.",
+        "Karbon-oksijen ikili bağı da benzer şekilde oluşur. {koyu:Formaldehitte} (HCHO) karbon sp² hibritleşmesi yapar. Karbonun iki sp² orbitali hidrojenlerle, üçüncüsü oksijenle σ bağı kurar. Oksijen de sp² hibritleşmesi yapmış olarak düşünülür. Oksijenin bir sp² orbitali karbonla σ bağı oluşturur, diğer iki sp² orbitali ise birer ortaklanmamış çift taşır. Karbonun ve oksijenin hibritleşmeye katılmayan p orbitalleri yan yana örtüşerek C=O bağındaki π bağını oluşturur. Formaldehitte {koyu:3 σ + 1 π} bağı bulunur. Eksik oktetli B{alt:F|3}'teki bor da sp² hibritleşmesi yapar, ancak borun hibritleşmeye katılmayan p orbitali boştur ve π bağı oluşmaz. Benzen halkasındaki altı karbonun hepsi de sp² hibritleşmesi yapar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Molekül",
+          "Hibritleşme",
+          "σ Bağları (örtüşen orbitaller)",
+          "π Bağı (örtüşen orbitaller)",
+          "σ / π Sayısı"
+        ],
+        "satirlar": [
+          [
+            "Eten, {alt:C|2}{alt:H|4}",
+            "Her C: sp²",
+            "1 × C–C (sp²–sp²), 4 × C–H (sp²–1s)",
+            "C=C'de 2p–2p",
+            "5 σ / 1 π"
+          ],
+          [
+            "Formaldehit, HCHO",
+            "C: sp², O: sp²",
+            "2 × C–H (sp²–1s), 1 × C–O (sp²–sp²)",
+            "C=O'da 2p–2p",
+            "3 σ / 1 π"
+          ],
+          [
+            "Propen, {alt:CH|2}=CH–{alt:CH|3}",
+            "C1 ve C2: sp², C3: sp³",
+            "C1–C2 (sp²–sp²), C2–C3 (sp²–sp³), 6 × C–H",
+            "C1=C2'de 2p–2p",
+            "8 σ / 1 π"
+          ],
+          [
+            "Asetaldehit, {alt:CH|3}CHO",
+            "C1: sp³, C2: sp², O: sp²",
+            "C1–C2 (sp³–sp²), C2–O (sp²–sp²), 4 × C–H",
+            "C=O'da 2p–2p",
+            "6 σ / 1 π"
+          ],
+          [
+            "B{alt:F|3}",
+            "B: sp²",
+            "3 × B–F (sp²–2p)",
+            "Yok (B'nin p orbitali boş)",
+            "3 σ / 0 π"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İkili Bağ = σ + π",
+          "metin": "İkili bağdaki σ bağı iki sp² hibrit orbitalinin uç uca örtüşmesiyle, π bağı ise hibritleşmeye katılmayan iki 2p orbitalinin yan yana örtüşmesiyle oluşur. Bir ikili bağın iki ucundaki atomlar genellikle sp² hibritleşmesi yapar."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Benzende Halka Üstü π Bulutu",
+          "metin": "Benzenin ({alt:C|6}{alt:H|6}) altı karbonunun hepsi sp² hibritleşmesi yapar. Altı p orbitali halkanın üstünde ve altında kesintisiz bir π bulutu oluşturur. Bu yüzden benzendeki altı C–C bağı eşit uzunluktadır (yaklaşık 140 pm) ve değeri tekli ile ikili bağ arasında kalır. Bu durum geçen hafta öğrendiğimiz rezonansın orbital düzeyindeki karşılığıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#334155' stroke-width='2'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>sp² Hibritleşmesi: Etende C=C İkili Bağı (1 σ + 1 π)</text><rect x='20' y='42' width='520' height='246' rx='12' fill='#ffffff' stroke='#7c3aed' stroke-width='2'/><ellipse cx='310' cy='103' rx='105' ry='22' fill='#ede9fe' stroke='#7c3aed' stroke-width='1.5' stroke-dasharray='6 4'/><ellipse cx='310' cy='217' rx='105' ry='22' fill='#ede9fe' stroke='#7c3aed' stroke-width='1.5' stroke-dasharray='6 4'/><ellipse cx='240' cy='124' rx='14' ry='34' fill='#ddd6fe' fill-opacity='0.9' stroke='#7c3aed' stroke-width='1.5'/><ellipse cx='240' cy='196' rx='14' ry='34' fill='#ddd6fe' fill-opacity='0.9' stroke='#7c3aed' stroke-width='1.5'/><ellipse cx='380' cy='124' rx='14' ry='34' fill='#ddd6fe' fill-opacity='0.9' stroke='#7c3aed' stroke-width='1.5'/><ellipse cx='380' cy='196' rx='14' ry='34' fill='#ddd6fe' fill-opacity='0.9' stroke='#7c3aed' stroke-width='1.5'/><line x1='240' y1='160' x2='380' y2='160' stroke='#dc2626' stroke-width='4'/><line x1='240' y1='160' x2='155' y2='110' stroke='#059669' stroke-width='3'/><line x1='240' y1='160' x2='155' y2='210' stroke='#059669' stroke-width='3'/><line x1='380' y1='160' x2='465' y2='110' stroke='#059669' stroke-width='3'/><line x1='380' y1='160' x2='465' y2='210' stroke='#059669' stroke-width='3'/><circle cx='240' cy='160' r='17' fill='#d1fae5' stroke='#059669' stroke-width='2'/><text x='240' y='166' text-anchor='middle' font-size='15' font-weight='700' fill='#065f46'>C</text><circle cx='380' cy='160' r='17' fill='#d1fae5' stroke='#059669' stroke-width='2'/><text x='380' y='166' text-anchor='middle' font-size='15' font-weight='700' fill='#065f46'>C</text><circle cx='148' cy='106' r='13' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='148' y='111' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>H</text><circle cx='148' cy='214' r='13' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='148' y='219' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>H</text><circle cx='472' cy='106' r='13' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='472' y='111' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>H</text><circle cx='472' cy='214' r='13' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='472' y='219' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>H</text><text x='310' y='72' text-anchor='middle' font-size='12' font-weight='700' fill='#5b21b6'>π bağı: 2p–2p yan yana örtüşme</text><text x='310' y='152' text-anchor='middle' font-size='11' font-weight='700' fill='#dc2626'>σ: sp²–sp²</text><text x='166' y='148' font-size='11' fill='#065f46'>sp²–1s σ</text><text x='40' y='272' font-size='11' fill='#334155'>Mor loplar: hibritleşmeye katılmayan 2p orbitalleri (σ düzlemine dik)</text><text x='300' y='254' text-anchor='middle' font-size='11' fill='#b45309'>Hibrit orbitaller arası 120°</text><rect x='555' y='42' width='185' height='246' rx='12' fill='#f5f3ff' stroke='#7c3aed' stroke-width='2'/><text x='647' y='66' text-anchor='middle' font-size='13' font-weight='700' fill='#5b21b6'>Etenin bağ özeti</text><text x='570' y='94' font-size='11.5' fill='#3b0764'>Her C: 3 sp² + 1 p</text><text x='570' y='118' font-size='11.5' fill='#3b0764'>C–C σ: sp²–sp²</text><text x='570' y='142' font-size='11.5' fill='#3b0764'>4 × C–H σ: sp²–1s</text><text x='570' y='166' font-size='11.5' fill='#3b0764'>C=C π: 2p–2p</text><text x='570' y='190' font-size='11.5' fill='#3b0764'>Altı atom aynı düzlemde</text><text x='570' y='214' font-size='11.5' fill='#3b0764'>C=C etrafında dönme yok</text><rect x='570' y='232' width='155' height='40' rx='10' fill='#ffffff' stroke='#7c3aed' stroke-width='1.5'/><text x='647' y='258' text-anchor='middle' font-size='15' font-weight='700' fill='#5b21b6'>5 σ + 1 π</text></svg>"
+    },
+    {
+      "baslik": "sp Hibritleşmesi, Üçlü Bağlar ve Hibritleşme Türlerinin Karşılaştırılması",
+      "metin": [
+        "Karbonun 2s orbitali yalnız bir 2p orbitaliyle karışırsa iki tane {koyu:sp hibrit orbitali} oluşur. Bu orbitallerin s karakteri %50'dir ve birbirinin tam tersi yönünde, aralarında {koyu:180°} açı olacak biçimde yönelir. Hibritleşmeye katılmayan {koyu:iki p orbitali} hem bağ eksenine hem de birbirine diktir ve her birinde bir elektron bulunur. {koyu:Etin} (asetilen, {alt:C|2}{alt:H|2}) molekülünde iki karbonun birer sp orbitali uç uca örtüşerek {koyu:sp–sp σ bağını} kurar. Her karbonun diğer sp orbitali de hidrojenin 1s orbitaliyle örtüşerek {koyu:sp–1s σ bağı} oluşturur. Karbonların py orbitalleri yan yana örtüşerek birinci π bağını, pz orbitalleri de yan yana örtüşerek ikinci π bağını oluşturur. Böylece C≡C üçlü bağı {koyu:1 σ + 2 π} bağından meydana gelir ve etinde toplam {koyu:3 σ + 2 π} bağı bulunur. İki π bağı birleşerek C–C ekseninin çevresini silindir gibi saran bir elektron bulutu oluşturur.",
+        "Karbonun sp hibritleşmesi yaptığı ikinci durum, iki ayrı atoma {koyu:iki ikili bağ} yapmasıdır. {alt:CO|2} molekülünde karbonun iki sp orbitali iki oksijenle σ bağı kurar. Karbonun birbirine dik iki p orbitalinden biri bir oksijenle, diğeri öbür oksijenle π bağı oluşturur. Bu nedenle iki π bağı birbirine dik düzlemlerde bulunur. Oksijenler sp² hibritleşmesi yapmış olarak düşünülür ve her birinde iki ortaklanmamış çift vardır. {alt:CO|2}'de toplam 2 σ + 2 π bağı bulunur. {koyu:HCN} molekülünde ise karbon sp hibritleşmesi yapar ve H ile sp–1s σ bağı, N ile üçlü bağ kurar. Azot da sp hibritleşmesi yapar. Azotun bir sp orbitali karbonla σ bağı oluşturur, diğer sp orbitali ortaklanmamış çifti taşır. HCN'de 2 σ + 2 π bağı vardır.",
+        "Bir karbon atomunun hibritleşme türünü belirlemek için yaptığı bağlara bakmak yeterlidir. Dört tekli bağ yapan karbon {koyu:sp³}, bir ikili bağ yapan karbon {koyu:sp²}, bir üçlü bağ ya da iki ikili bağ yapan karbon {koyu:sp} hibritleşmesi yapar. Genel bir kural olarak, bir atomdaki {koyu:σ bağı sayısı + ortaklanmamış çift sayısı} kullanılan hibrit orbital sayısını verir: Bu toplam 4 ise sp³, 3 ise sp², 2 ise sp hibritleşmesi vardır. Hibritleşme türü bağ özelliklerini de etkiler. s orbitali çekirdeğe p orbitalinden daha yakın bulunur. Bu nedenle s karakteri arttıkça hibrit orbital çekirdeğe yaklaşır ve oluşturduğu bağ kısalır. C–H bağ uzunluğu etanda yaklaşık 109 pm, etende 108 pm, etinde 106 pm'dir. Karbonlar arasındaki bağda ise π bağı sayısı da arttığı için uzunluk 154 pm'den 120 pm'ye iner ve bağ enerjisi 348 kJ/mol'den 839 kJ/mol'e çıkar. sp karbonu elektronlarını daha sıkı tuttuğu için etindeki hidrojenler, etan ve eten hidrojenlerine göre çok güçlü bazlarla daha kolay koparılabilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "sp³ (etan)",
+          "sp² (eten)",
+          "sp (etin)"
+        ],
+        "satirlar": [
+          [
+            "Karışan orbitaller",
+            "1 s + 3 p",
+            "1 s + 2 p",
+            "1 s + 1 p"
+          ],
+          [
+            "Hibritleşmeyen p orbitali",
+            "0",
+            "1",
+            "2"
+          ],
+          [
+            "s karakteri",
+            "%25",
+            "yaklaşık %33",
+            "%50"
+          ],
+          [
+            "Karbonlar arası bağ",
+            "C–C: 1 σ",
+            "C=C: 1 σ + 1 π",
+            "C≡C: 1 σ + 2 π"
+          ],
+          [
+            "Moleküldeki σ / π",
+            "7 σ / 0 π",
+            "5 σ / 1 π",
+            "3 σ / 2 π"
+          ],
+          [
+            "C–C bağ uzunluğu",
+            "yaklaşık 154 pm",
+            "yaklaşık 134 pm",
+            "yaklaşık 120 pm"
+          ],
+          [
+            "C–C bağ enerjisi",
+            "yaklaşık 348 kJ/mol",
+            "yaklaşık 614 kJ/mol",
+            "yaklaşık 839 kJ/mol"
+          ],
+          [
+            "C–H bağ uzunluğu",
+            "yaklaşık 109 pm",
+            "yaklaşık 108 pm",
+            "yaklaşık 106 pm"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Hibritleşmeyi Hızlı Belirleme",
+          "metin": "Bir atomun {koyu:σ bağı sayısı + ortaklanmamış çift sayısı} = 4 ise sp³, 3 ise sp², 2 ise sp hibritleşmesi vardır. Örneğin HCN'deki azotta 1 σ bağı ve 1 ortaklanmamış çift bulunur. Toplam 2 olduğu için azot sp hibritleşmesi yapar. π bağları bu toplama katılmaz, çünkü hibritleşmeyen p orbitallerinde oluşur."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Bu Haftanın Sınırı",
+          "metin": "Bu hafta bağların hangi orbitallerin örtüşmesiyle oluştuğuna odaklanıyoruz. Hibrit orbitallerin yönelmesinden doğan {koyu:molekül geometrileri} (doğrusal, düzlem üçgen, düzgün dörtyüzlü, üçgen piramit, kırık doğru) ve ortaklanmamış çiftlerin bağ açılarına etkisi gelecek haftanın konusudur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='16' fill='#f8fafc' stroke='#334155' stroke-width='2'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>sp Hibritleşmesi ve Üç Hibrit Türünün Karşılaştırılması</text><rect x='20' y='42' width='720' height='118' rx='12' fill='#ffffff' stroke='#ea580c' stroke-width='2'/><text x='130' y='64' text-anchor='middle' font-size='13' font-weight='700' fill='#9a3412'>Etin (C₂H₂): her C sp</text><ellipse cx='330' cy='88' rx='85' ry='14' fill='#ffedd5' stroke='#ea580c' stroke-width='1.5' stroke-dasharray='6 4'/><ellipse cx='330' cy='136' rx='85' ry='14' fill='#ffedd5' stroke='#ea580c' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='120' y1='112' x2='540' y2='112' stroke='#059669' stroke-width='3'/><line x1='270' y1='112' x2='390' y2='112' stroke='#dc2626' stroke-width='4'/><circle cx='120' cy='112' r='13' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='120' y='117' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>H</text><circle cx='270' cy='112' r='16' fill='#d1fae5' stroke='#059669' stroke-width='2'/><text x='270' y='118' text-anchor='middle' font-size='14' font-weight='700' fill='#065f46'>C</text><circle cx='390' cy='112' r='16' fill='#d1fae5' stroke='#059669' stroke-width='2'/><text x='390' y='118' text-anchor='middle' font-size='14' font-weight='700' fill='#065f46'>C</text><circle cx='540' cy='112' r='13' fill='#e0f2fe' stroke='#0284c7' stroke-width='1.5'/><text x='540' y='117' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>H</text><text x='195' y='104' text-anchor='middle' font-size='10.5' fill='#065f46'>sp–1s σ</text><text x='465' y='104' text-anchor='middle' font-size='10.5' fill='#065f46'>sp–1s σ</text><text x='330' y='92' text-anchor='middle' font-size='10.5' fill='#9a3412'>π (py–py)</text><text x='330' y='140' text-anchor='middle' font-size='10.5' fill='#9a3412'>π (pz–pz)</text><text x='330' y='106' text-anchor='middle' font-size='10' font-weight='700' fill='#dc2626'>sp–sp σ</text><text x='330' y='155' text-anchor='middle' font-size='10.5' fill='#475569'>180°, doğrusal dizilim</text><rect x='580' y='70' width='145' height='76' rx='10' fill='#fff7ed' stroke='#ea580c' stroke-width='1.5'/><text x='652' y='96' text-anchor='middle' font-size='12' fill='#7c2d12'>Her C: 2 sp + 2 p</text><text x='652' y='130' text-anchor='middle' font-size='16' font-weight='700' fill='#9a3412'>3 σ + 2 π</text><rect x='20' y='170' width='330' height='118' rx='12' fill='#ffffff' stroke='#0284c7' stroke-width='2'/><text x='185' y='188' text-anchor='middle' font-size='12' font-weight='700' fill='#0c4a6e'>s karakteri (%)</text><line x1='50' y1='270' x2='330' y2='270' stroke='#334155' stroke-width='1.5'/><rect x='75' y='220' width='50' height='50' rx='4' fill='#6ee7b7' stroke='#059669'/><rect x='160' y='204' width='50' height='66' rx='4' fill='#c4b5fd' stroke='#7c3aed'/><rect x='245' y='196' width='50' height='74' rx='4' fill='#fdba74' stroke='#ea580c'/><text x='100' y='214' text-anchor='middle' font-size='11' font-weight='700' fill='#065f46'>%25</text><text x='185' y='198' text-anchor='middle' font-size='11' font-weight='700' fill='#5b21b6'>%33</text><text x='270' y='192' text-anchor='middle' font-size='11' font-weight='700' fill='#9a3412'>%50</text><text x='100' y='284' text-anchor='middle' font-size='11' fill='#334155'>sp³</text><text x='185' y='284' text-anchor='middle' font-size='11' fill='#334155'>sp²</text><text x='270' y='284' text-anchor='middle' font-size='11' fill='#334155'>sp</text><rect x='365' y='170' width='375' height='118' rx='12' fill='#ffffff' stroke='#334155' stroke-width='2'/><text x='552' y='188' text-anchor='middle' font-size='12' font-weight='700' fill='#0f172a'>Karbonlar arası bağ: uzunluk ve enerji</text><text x='380' y='212' font-size='11.5' fill='#065f46'>Etan  C–C  1 σ</text><text x='540' y='212' font-size='11.5' fill='#065f46'>154 pm · 348 kJ/mol</text><text x='380' y='236' font-size='11.5' fill='#5b21b6'>Eten  C=C  1 σ + 1 π</text><text x='540' y='236' font-size='11.5' fill='#5b21b6'>134 pm · 614 kJ/mol</text><text x='380' y='260' font-size='11.5' fill='#9a3412'>Etin  C≡C  1 σ + 2 π</text><text x='540' y='260' font-size='11.5' fill='#9a3412'>120 pm · 839 kJ/mol</text><text x='552' y='281' text-anchor='middle' font-size='10.5' fill='#475569'>π sayısı ve s karakteri arttıkça bağ kısalır ve güçlenir</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Azot molekülündeki ({alt:N|2}) üçlü bağın oluşumunu atom orbitalleri temelinde açıklayınız. Bağdaki σ ve π sayılarını belirtiniz. (N: 1s² 2s² 2p³)",
+      "cevap": "1. adım: Her azot atomunun değerlik katmanında 2s² 2p³ dizilimi vardır. 2s orbitali dolu olduğu için bağa katılmaz. Üç 2p orbitali (px, py, pz) ise birer elektronla yarı doludur.\n2. adım: Bağ ekseni x ekseni kabul edilirse iki atomun px orbitalleri eksen boyunca uç uca örtüşür. Böylece 1 σ bağı oluşur.\n3. adım: py orbitalleri eksene dik ve birbirine paraleldir. Bu orbitaller yan yana örtüşerek birinci π bağını oluşturur.\n4. adım: pz orbitalleri de yan yana örtüşerek ikinci π bağını oluşturur. Bu π bağı birincisine dik düzlemde yer alır.\n5. adım: Her azotun dolu 2s orbitali ortaklanmamış elektron çifti olarak kalır.\nSonuç: N≡N bağı 1 σ + 2 π bağından oluşur. Her N atomunda 1 ortaklanmamış çift bulunur. Bu yapı Lewis formülüyle uyumludur.",
+      "ipucu": "Önce yarı dolu orbitalleri sayın. Bağ eksenindeki p orbitali σ, eksene dik iki p orbitali π bağı yapar."
+    },
+    {
+      "soru": "Karbonun temel hâl elektron dizilimi 1s² 2s² 2p² olduğu hâlde metanda dört eşdeğer C–H bağı nasıl oluşur? Kullanılan orbitalleri ve örtüşme türlerini adım adım açıklayınız.",
+      "cevap": "1. adım: Temel hâlde karbonun yalnız iki yarı dolu 2p orbitali vardır. Bu hâliyle ancak iki bağ yapabilirdi.\n2. adım (uyarılma): 2s orbitalindeki bir elektron boş 2p orbitaline geçer. Dizilim 2s¹ 2p³ olur ve dört yarı dolu orbital elde edilir.\n3. adım: Bu dört orbital eşdeğer değildir (biri s, üçü p). Bu orbitallerle bağ kurulsaydı bağlardan biri diğerlerinden farklı olurdu.\n4. adım (hibritleşme): Bir 2s ve üç 2p orbitali karışarak dört eşdeğer sp³ hibrit orbitali oluşturur. Her birinde bir elektron vardır ve hepsinin s karakteri %25'tir.\n5. adım: Her sp³ orbitali bir hidrojenin 1s orbitaliyle uç uca örtüşür ve dört sp³–1s σ bağı oluşur.\nSonuç: Dört bağ aynı tür orbitallerle kurulduğu için uzunlukları ve enerjileri eşittir. Uyarılmaya harcanan enerji, iki ek bağın oluşumuyla açığa çıkan enerjiyle fazlasıyla karşılanır.",
+      "ipucu": "Uyarılma bağ sayısını, hibritleşme ise bağların eşdeğerliğini açıklar. Bu iki adımı ayrı ayrı düşünün."
+    },
+    {
+      "soru": "Propen ({alt:CH|2}=CH–{alt:CH|3}) molekülündeki her karbon atomunun hibritleşme türünü belirleyiniz. Molekülün σ ve π bağı sayılarını bulunuz. Karbonlar arası bağların hangi orbitallerin örtüşmesiyle oluştuğunu yazınız.",
+      "cevap": "1. adım (hibritleşme): C1 ({alt:CH|2}=) ikili bağ yaptığı için sp², C2 (=CH–) ikili bağ yaptığı için sp² hibritleşmesi yapar. C3 ({alt:CH|3}) yalnız tekli bağ yaptığı için sp³ hibritleşmesi yapar.\n2. adım (σ sayısı): Moleküldeki C–H bağları C1'de 2, C2'de 1, C3'te 3 olmak üzere 6 tanedir. C–C bağı yapan atom çifti sayısı 2'dir (C1–C2 ve C2–C3). Toplam σ = 6 + 2 = 8.\n3. adım (π sayısı): Molekülde yalnız bir ikili bağ vardır. Bu yüzden 1 π bağı bulunur.\n4. adım (örtüşmeler): C1–C2 σ bağı sp²–sp², C1=C2 π bağı 2p–2p (yan yana), C2–C3 σ bağı ise sp²–sp³ örtüşmesiyle oluşur. C–H bağları C1 ve C2'de sp²–1s, C3'te sp³–1s örtüşmesiyle oluşur.\nKontrol: D = 3 × 4 + 6 × 1 = 18 elektron, yani 9 çift. 8 σ + 1 π = 9 bağ çifti ✓.\nSonuç: Propende 8 σ ve 1 π bağı vardır. Hibritleşmeler sırasıyla sp², sp² ve sp³'tür.",
+      "ipucu": "Her karbonu ayrı ayrı inceleyin. Bağın iki ucundaki atomların hibritleşmesi, σ bağındaki örtüşen orbitallerin adını verir."
+    },
+    {
+      "soru": "Akrilonitril ({alt:CH|2}=CH–C≡N) plastik ve sentetik lif üretiminde kullanılan bir moleküldür. Karbon ve azot atomlarının hibritleşmelerini belirleyiniz. σ ve π bağı sayılarını hesaplayınız.",
+      "cevap": "1. adım: C1 ({alt:CH|2}=) ve C2 (=CH–) ikili bağ yaptığı için sp² hibritleşmesi yapar. C3 (–C≡) üçlü bağ yaptığı için sp hibritleşmesi yapar.\n2. adım: Azotta 1 σ bağı (C3 ile) ve 1 ortaklanmamış çift bulunur. Toplam 2 olduğu için azot da sp hibritleşmesi yapar.\n3. adım (σ sayısı): 3 C–H bağı ile C1–C2, C2–C3 ve C3–N atom çiftleri vardır. Toplam σ = 3 + 3 = 6.\n4. adım (π sayısı): C1=C2 ikili bağında 1, C3≡N üçlü bağında 2 π bağı vardır. Toplam π = 3.\n5. adım (örtüşmeler): C1–C2 σ bağı sp²–sp², C2–C3 σ bağı sp²–sp, C3–N σ bağı sp–sp örtüşmesiyle oluşur. π bağlarının hepsi 2p–2p yan yana örtüşmesiyle oluşur.\nKontrol: D = 3 × 4 + 3 × 1 + 5 = 20 elektron, yani 10 çift. 6 σ + 3 π = 9 bağ çifti ve azottaki 1 ortaklanmamış çift ile toplam 10 çift ✓.\nSonuç: Molekülde 6 σ ve 3 π bağı vardır. Hibritleşmeler C1: sp², C2: sp², C3: sp ve N: sp'dir.",
+      "ipucu": "Azotun hibritleşmesini bulurken ortaklanmamış çiftini de sayın. π bağları hibrit orbital sayısına katılmaz."
+    },
+    {
+      "soru": "{alt:CO|2} ve HCN moleküllerinde merkez karbon atomunun hibritleşmesini belirleyiniz. Her molekülde π bağlarının hangi orbitallerden oluştuğunu ve bu bağların birbirine göre konumunu karşılaştırınız.",
+      "cevap": "1. adım ({alt:CO|2}): Lewis formülü O=C=O biçimindedir. Karbonda 2 σ bağı bulunur ve ortaklanmamış çifti yoktur. Toplam 2 olduğu için karbon sp hibritleşmesi yapar.\n2. adım: Karbonun iki sp orbitali iki oksijenle σ bağı kurar. Karbonun birbirine dik iki p orbitalinden py birinci oksijenin p orbitaliyle, pz ikinci oksijenin p orbitaliyle yan yana örtüşür. İki π bağı farklı oksijenlerle ve birbirine dik düzlemlerde oluşur. Molekülde toplam 2 σ + 2 π vardır.\n3. adım (HCN): Lewis formülü H–C≡N biçimindedir. Karbonda 2 σ bağı bulunur (H ve N ile) ve ortaklanmamış çifti yoktur. Bu yüzden karbon sp hibritleşmesi yapar. C–H bağı sp–1s, C–N σ bağı sp–sp örtüşmesiyle oluşur.\n4. adım: Karbonun iki p orbitali azotun iki p orbitaliyle yan yana örtüşür. İki π bağı aynı atom çifti (C ve N) arasında ve birbirine dik düzlemlerde oluşur. Molekülde toplam 2 σ + 2 π vardır.\nSonuç: Her iki molekülde karbon sp hibritleşmesi yapar ve 2 π bağı içerir. Fark şudur: {alt:CO|2}'de π bağları iki farklı oksijene dağılmıştır (iki ikili bağ). HCN'de ise iki π bağı da C ile N arasındadır (bir üçlü bağ).",
+      "ipucu": "sp karbonunun hibritleşmeyen iki p orbitali her zaman birbirine diktir. Bu orbitallerin aynı atomla mı yoksa farklı atomlarla mı π bağı kurduğuna bakın."
+    },
+    {
+      "soru": "Ortalama bağ enerjileri C–C için 348, C=C için 614, C≡C için 839 kJ/mol'dür. Bu verilerden yararlanarak ikili ve üçlü bağdaki π bağlarının yaklaşık enerjisini bulunuz. Sonucu orbital örtüşmesiyle yorumlayınız.",
+      "cevap": "1. adım: Tekli bağ yalnız 1 σ bağından oluşur. Bu yüzden C–C σ bağının enerjisi yaklaşık 348 kJ/mol kabul edilir.\n2. adım: İkili bağ 1 σ + 1 π bağından oluşur. π bağının katkısı yaklaşık 614 − 348 = 266 kJ/mol'dür.\n3. adım: Üçlü bağ ikili bağa bir π bağı daha eklenmesiyle oluşur. İkinci π bağının katkısı yaklaşık 839 − 614 = 225 kJ/mol'dür.\n4. adım (karşılaştırma): 266 ve 225 kJ/mol değerleri 348 kJ/mol'den küçüktür. Yani her π bağı tek bir σ bağından zayıftır.\n5. adım (yorum): σ bağında orbitaller bağ ekseni boyunca uç uca, yani en etkin biçimde örtüşür. π bağında ise paralel p orbitalleri yan yana örtüşür. Bu örtüşme daha az etkindir ve elektron yoğunluğu çekirdekler arasındaki eksenin dışında kalır.\nSonuç: Çoklu bağlar tekli bağlardan güçlüdür, ama bağ enerjisi π sayısıyla doğru orantılı artmaz. Alkenlerin ve alkinlerin tepkimelerinde genellikle önce zayıf olan π bağı kırılır.",
+      "ipucu": "Tekli bağı saf σ bağı kabul edin. İkili bağdan tekli bağın enerjisini çıkardığınızda π bağının katkısı kalır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki moleküllerden hangisinde iki karbon atomu arasındaki σ bağı sp²–sp² örtüşmesiyle oluşur?",
+      "secenekler": [
+        "Etan, {alt:C|2}{alt:H|6}",
+        "Eten, {alt:C|2}{alt:H|4}",
+        "Etin, {alt:C|2}{alt:H|2}",
+        "Etanol, {alt:C|2}{alt:H|5}OH"
+      ],
+      "dogru": 1,
+      "aciklama": "Etende her iki karbon ikili bağ yaptığı için sp² hibritleşmesi yapar ve C–C σ bağı sp²–sp² örtüşmesiyle oluşur. Etan ve etanolde karbonlar sp³ olduğundan C–C bağı sp³–sp³, etinde ise sp–sp örtüşmesiyle oluşur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Propin ({alt:CH|3}–C≡CH) molekülünde toplam kaç σ ve kaç π bağı bulunur?",
+      "secenekler": [
+        "5 σ ve 3 π",
+        "7 σ ve 1 π",
+        "6 σ ve 2 π",
+        "8 σ ve 0 π"
+      ],
+      "dogru": 2,
+      "aciklama": "Molekülde 4 C–H bağı ve 2 C–C atom çifti vardır, bu yüzden 6 σ bağı bulunur. C≡C üçlü bağı 2 π bağı içerir. Kontrol: D = 3 × 4 + 4 = 16 elektron, yani 8 çift eder ve 6 + 2 = 8 ile uyumludur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki moleküllerin hangisinde karbon atomu sp hibritleşmesi yapar?",
+      "secenekler": [
+        "{alt:CH|3}OH",
+        "HCHO",
+        "{alt:C|2}{alt:H|4}",
+        "{alt:CO|2}"
+      ],
+      "dogru": 3,
+      "aciklama": "{alt:CO|2}'de karbon iki oksijenle iki ikili bağ yapar. Karbonda 2 σ bağı vardır ve ortaklanmamış çifti yoktur, bu yüzden sp hibritleşmesi yapar. Metanolde karbon sp³, formaldehit ve etende ise sp² hibritleşmesi yapar."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Asetaldehit ({alt:CH|3}–CHO) molekülündeki C–C bağı hangi orbitallerin örtüşmesiyle oluşur?",
+      "secenekler": [
+        "sp³–sp² σ bağı",
+        "sp³–sp³ σ bağı",
+        "sp²–sp² π bağı",
+        "2p–2p σ bağı"
+      ],
+      "dogru": 0,
+      "aciklama": "Metil karbonu yalnız tekli bağ yaptığı için sp³, karbonil karbonu ise oksijenle ikili bağ yaptığı için sp² hibritleşmesi yapar. Aralarındaki tekli bağ uç uca örtüşmeyle oluşan bir sp³–sp² σ bağıdır. Hibrit orbitaller π bağı yapmaz."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "π bağı, iki atom arasında σ bağı olmadan tek başına oluşabilir.",
+          "dogru": false,
+          "aciklama": "İki atom arasındaki ilk bağ daima σ bağıdır. π bağı ancak bir σ bağına eşlik ederek ikili ya da üçlü bağın parçası olur."
+        },
+        {
+          "metin": "Etendeki her karbon atomunda hibritleşmeye katılmayan bir 2p orbitali bulunur ve π bağı bu orbitallerin yan yana örtüşmesiyle oluşur.",
+          "dogru": true,
+          "aciklama": "sp² hibritleşmesinde bir 2s ve iki 2p karışır. Kalan bir 2p orbitali σ düzlemine dik durur ve π bağını oluşturur."
+        },
+        {
+          "metin": "sp hibrit orbitallerinin s karakteri, sp³ hibrit orbitallerinin s karakterinden fazladır.",
+          "dogru": true,
+          "aciklama": "sp orbitallerinde s karakteri %50, sp³ orbitallerinde %25'tir."
+        },
+        {
+          "metin": "Etin molekülündeki C≡C bağı üç tane σ bağından oluşur.",
+          "dogru": false,
+          "aciklama": "Üçlü bağ 1 σ + 2 π bağından oluşur. σ bağı sp–sp örtüşmesiyle, iki π bağı ise birbirine dik p orbitallerinin yan yana örtüşmesiyle oluşur."
+        },
+        {
+          "metin": "Metandaki dört C–H bağının uzunlukları ve enerjileri birbirine eşittir.",
+          "dogru": true,
+          "aciklama": "Dört bağ da karbonun eşdeğer sp³ orbitalleriyle hidrojenin 1s orbitallerinin örtüşmesiyle oluşur."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "sp³ hibrit orbitali",
+          "Bir s ve üç p orbitalinin karışmasıyla oluşan, s karakteri %25 olan orbital"
+        ],
+        [
+          "sp² hibrit orbitali",
+          "Bir s ve iki p orbitalinin karışmasıyla oluşan, etendeki karbonların kullandığı orbital"
+        ],
+        [
+          "sp hibrit orbitali",
+          "Bir s ve bir p orbitalinin karışmasıyla oluşan, etindeki karbonların kullandığı orbital"
+        ],
+        [
+          "σ bağı",
+          "Orbitallerin çekirdekleri birleştiren eksen boyunca uç uca örtüşmesiyle oluşan bağ"
+        ],
+        [
+          "π bağı",
+          "Paralel p orbitallerinin yan yana örtüşmesiyle bağ ekseninin üstünde ve altında oluşan bağ"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "İki atom arasında oluşan ilk bağ daima ___ bağıdır.",
+          "cevap": "sigma"
+        },
+        {
+          "metin": "Bağ eksenine dik ve birbirine paralel p orbitallerinin yan yana örtüşmesiyle ___ bağı oluşur.",
+          "cevap": "pi"
+        },
+        {
+          "metin": "Etin molekülünde karbon atomları ___ hibritleşmesi yapar.",
+          "cevap": "sp"
+        },
+        {
+          "metin": "Metandaki C–H bağları, karbonun sp³ hibrit orbitalleri ile hidrojenin ___ orbitalinin örtüşmesiyle oluşur.",
+          "cevap": "1s"
+        },
+        {
+          "metin": "Aynı atomdaki enerjileri birbirine yakın orbitallerin karışarak eşdeğer yeni orbitaller oluşturmasına ___ denir.",
+          "cevap": "hibritleşme"
+        }
+      ],
+      "kelimeler": [
+        "sigma",
+        "pi",
+        "sp",
+        "1s",
+        "hibritleşme"
+      ],
+      "fazla": [
+        "sp²",
+        "iyonlaşma"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Vinilasetilen (1-büten-3-in) molekülünün bağlanma düzeni {alt:CH|2}=CH–C≡CH biçimindedir. Karbonları soldan sağa C1, C2, C3 ve C4 olarak numaralandırınız. a) Her karbonun hibritleşme türünü belirleyiniz. b) Moleküldeki σ ve π bağı sayılarını bulunuz. c) Karbonlar arasındaki her bağın hangi orbitallerin örtüşmesiyle oluştuğunu yazınız. d) Sonucunuzu toplam değerlik elektronu sayısıyla kontrol ediniz.",
+      "ipuclari": [
+        "1. adım: Her karbonun yaptığı bağlara bakın. İkili bağ yapan karbon sp², üçlü bağ yapan karbon sp hibritleşmesi yapar.",
+        "2. adım: σ sayısı için bağlı atom çiftlerini (C–H ve C–C) sayın. π sayısı için her ikili bağa 1, her üçlü bağa 2 ekleyin.",
+        "3. adım: σ bağlarında iki ucun hibrit orbitallerini yazın, π bağlarının hepsinin 2p–2p olduğunu unutmayın. Son olarak D = 4 × 4 + 4 × 1 hesabıyla toplam elektron çifti sayısını karşılaştırın."
+      ],
+      "cevap": "a) C1 ({alt:CH|2}=) ve C2 (=CH–) ikili bağ yaptığı için sp² hibritleşmesi yapar. C3 (–C≡) ve C4 (≡CH) üçlü bağ yaptığı için sp hibritleşmesi yapar.\nb) C–H bağları C1'de 2, C2'de 1, C4'te 1 olmak üzere 4 tanedir. C–C atom çiftleri C1–C2, C2–C3 ve C3–C4 olmak üzere 3 tanedir. Toplam σ = 4 + 3 = 7. π bağları C1=C2'de 1, C3≡C4'te 2 olmak üzere toplam 3 tanedir.\nc) C1–C2 bağında σ bağı sp²–sp², π bağı 2p–2p örtüşmesiyle oluşur. C2–C3 tekli bağı sp²–sp σ bağıdır. C3≡C4 bağında σ bağı sp–sp, iki π bağı ise birbirine dik 2p–2p örtüşmeleriyle oluşur. C–H bağları C1 ve C2'de sp²–1s, C4'te sp–1s örtüşmesiyle oluşur.\nd) Kapalı formül {alt:C|4}{alt:H|4}'tür. D = 4 × 4 + 4 × 1 = 20 elektron, yani 10 çift eder. 7 σ + 3 π = 10 bağ çifti bulunur ve ortaklanmamış çift kalmaz ✓. Hibrit orbital kontrolü: sp² karbonları 3'er, sp karbonları 2'şer hibrit orbital kullanır. Toplam 3 + 3 + 2 + 2 = 10 hibrit orbital vardır. Bunların 4'ü C–H bağlarında, 6'sı da üç C–C σ bağında (her bağda 2 orbital) kullanılır ✓.\nSonuç: Vinilasetilende 7 σ ve 3 π bağı bulunur. Karbonların hibritleşmeleri sırasıyla sp², sp², sp ve sp'dir."
+    }
+  ]
+}

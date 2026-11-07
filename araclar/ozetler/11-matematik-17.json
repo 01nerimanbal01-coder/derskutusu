@@ -1,0 +1,586 @@
+{
+  "ad": "11-matematik-17",
+  "sinif": 11,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 17,
+  "tarih": "11-15 Ocak 2027",
+  "yayin_tarihi": "2027-01-11",
+  "unite": "Nicelikler ve Değişimler (1)",
+  "konu": "Trigonometrik Fonksiyonlar ve Nitel Özellikleri: Yatay Öteleme, Birleşik Dönüşümler, Türetilen Fonksiyonların Nitel Özellikleri ve Modelleme",
+  "ciktilar": [
+    "MAT.11.3.1.c) Trigonometrik referans fonksiyonların grafik ve cebirsel temsilleri üzerinde yatay öteleme ve birleşik dönüşümler uygular. Bu yolla g(x) = k · f(mx ± r) ± s biçimindeki fonksiyonları elde eder.",
+    "MAT.11.3.1.ç-d) Türetilen fonksiyonların grafik ve cebirsel temsilleri arasındaki ilişkiyi ifade eder. Tanım kümesi, görüntü kümesi, sıfırlar, maksimum-minimum noktaları, artanlık-azalanlık, teklik-çiftlik ve periyot hakkında varsayımlarda bulunur.",
+    "MAT.11.3.1.e-g) Farklı parametre değerleri için örüntüleri listeler ve faz kayması, sıfır sayısı ve monotonluk aralıklarına ilişkin genellemeler yapar. Genellemelerinin varsayımları karşılayıp karşılamadığını kontrol eder ve uygun sözel ya da cebirsel dille sunar.",
+    "MAT.11.3.1.ğ-ı) Gelgit, sıcaklık ve gün ışığı gibi periyodik olayları türetilmiş trigonometrik fonksiyonlarla modeller ve önermelerinin gerçek yaşamdaki kullanışlılığını değerlendirir. Önermelerini grafiksel olarak doğrular veya cebirsel olarak ispatlar."
+  ],
+  "giris": "Geçen hafta k, s ve m parametrelerinin grafiği nasıl uzatıp sıkıştırdığını ve periyodu nasıl belirlediğini ispatlamıştık. 17. haftada dönüşüm ailesinin son parçasını ekliyoruz: {koyu:yatay öteleme (faz kayması)}. Böylece {koyu:g(x) = k · f(mx − r) + s} biçimindeki her trigonometrik fonksiyonun grafiğini adım adım çizebileceğiz. Sıfırlarını, maksimum-minimum noktalarını, artan-azalan aralıklarını, asimptotlarını ve tekliğini-çiftliğini de cebirsel olarak bulacağız. Haftayı grafikten kural yazma ile gelgit, sıcaklık ve gün ışığı gibi gerçek yaşam modelleriyle tamamlıyoruz.",
+  "ozet": [
+    "{koyu:Faz kayması:} r > 0 için f(x − r) grafiği r birim sağa, f(x + r) grafiği r birim sola ötelenir. Görüntü kümesi ve periyot değişmez; sıfırlar, tepe noktaları ve asimptotlar kayar.",
+    "{koyu:Birleşik dönüşüm:} g(x) = k · f(mx − r) + s = k · f(m(x − {kesir:r|m})) + s yazılışı, yatay ötelemenin r değil {kesir:r|m} birim olduğunu gösterir.",
+    "{koyu:Anahtar noktalar:} 0 ≤ mx − r ≤ 2π eşitsizliği bir tam periyodu verir. Bu aralığı dört eşit parçaya bölmek, sinüs ve kosinüs türevlerinin beş anahtar noktasını belirler.",
+    "{koyu:Monotonluk ve sıfırlar:} u = mx − r dönüşümüyle referans fonksiyonun aralıkları x'e taşınır ve k · m < 0 ise artanlık-azalanlık yer değiştirir. k · sin(mx − r) + s fonksiyonunun sıfırı olması için {uzunluk:s} ≤ {uzunluk:k} gerekir.",
+    "{koyu:Tanjant-kotanjant türevleri:} Asimptotlar tanjantta mx − r = {kesir:π|2} + nπ, kotanjantta mx − r = nπ denkleminden bulunur. Görüntü kümesi her zaman ℝ'dir ve her periyotta tam bir sıfır vardır.",
+    "{koyu:Grafikten kural ve modelleme:} {uzunluk:k} = {kesir:M − N|2}, s = {kesir:M + N|2} ve {uzunluk:m} = {kesir:2π|T} bağıntılarıyla grafikten kural yazılır. Gelgit, sıcaklık ve gün ışığı gibi periyodik olaylar bu kurallarla modellenip yorumlanır."
+  ],
+  "bolumler": [
+    {
+      "baslik": "1. Yatay Öteleme: g(x) = f(x − r) ve Faz Kayması",
+      "metin": [
+        "Geçen hafta k, s ve m parametrelerini inceledik; geriye x'e eklenen ya da x'ten çıkarılan r sayısı kaldı. g(x) = sin(x − {kesir:π|3}) fonksiyonunu düşünelim. Bu fonksiyon, sinüsün x = 0'da aldığı değeri x = {kesir:π|3}'te alır. Sinüsün x = {kesir:π|2}'de ulaştığı tepe değerine ise x = {kesir:π|2} + {kesir:π|3} = {kesir:5π|6}'da ulaşır. Yani her şey {kesir:π|3} birim gecikmeli gerçekleşir ve grafik {koyu:{kesir:π|3} birim sağa ötelenir}. Genel olarak r > 0 için {koyu:g(x) = f(x − r)} grafiği, f'nin grafiğinin r birim sağa ötelenmesiyle elde edilir. {koyu:g(x) = f(x + r)} grafiği ise r birim sola ötelenmiş hâldir. Trigonometrik fonksiyonlarda bu ötelemeye {koyu:faz kayması} denir. İlk bakışta ters gibi görünen yönün sebebi şudur: f(x − r) ifadesinde içerinin eski değerine ulaşması için x'in r kadar büyük olması gerekir.",
+        "Yatay öteleme grafiği yalnız kaydırır, biçimini değiştirmez. Bu yüzden {koyu:görüntü kümesi, genlik, maksimum-minimum değerleri ve periyot aynı kalır}. Değişenler {koyu:sıfırların, maksimum-minimum noktalarının ve asimptotların apsisleridir}; hepsi r kadar kayar. Örneğin sin x'in sıfırları x = kπ olduğundan sin(x − {kesir:π|3}) fonksiyonunun sıfırları x = {kesir:π|3} + kπ olur. Tanjant ve kotanjantta asimptotlar da kayar. tan(x − {kesir:π|4}) için asimptotlar, x − {kesir:π|4} = {kesir:π|2} + kπ denkleminden x = {kesir:3π|4} + kπ bulunur. Bir uyarı: Yatay öteleme simetri merkezini ya da simetri eksenini de kaydırdığı için {koyu:tekliği ve çiftliği bozabilir}.",
+        "Faz kayması, referans fonksiyonlar arasındaki köprüleri de gösterir. Kosinüs grafiği, sinüs grafiğinin {kesir:π|2} birim sola ötelenmiş hâlidir: {koyu:sin(x + {kesir:π|2}) = cos x}. Tersinden düşünürsek {koyu:cos(x − {kesir:π|2}) = sin x} olur. Sinüsü π birim ötelemek, grafiği x eksenine göre yansıtmakla aynı sonucu verir: sin(x + π) = −sin x ve cos(x + π) = −cos x. Tanjant ve kotanjantın periyodu π olduğundan π birimlik öteleme bu grafikleri hiç değiştirmez. tan(x + {kesir:π|2}) = −cot x eşitliği ise tanjant ile kotanjant grafikleri arasındaki ilişkiyi kurar. Bu eşitlikleri, birim çemberde x ve x + {kesir:π|2} yaylarının bitim noktalarını karşılaştırarak kolayca doğrulayabilirsin."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Fonksiyon",
+          "Öteleme",
+          "Sıfırlar",
+          "Maksimum noktası / Asimptot",
+          "Değişmeyenler"
+        ],
+        "satirlar": [
+          [
+            "sin(x − {kesir:π|3})",
+            "{kesir:π|3} birim sağa",
+            "x = {kesir:π|3} + kπ",
+            "Maks.: x = {kesir:5π|6} + 2kπ",
+            "[−1, 1], T = 2π"
+          ],
+          [
+            "sin(x + {kesir:π|4})",
+            "{kesir:π|4} birim sola",
+            "x = −{kesir:π|4} + kπ",
+            "Maks.: x = {kesir:π|4} + 2kπ",
+            "[−1, 1], T = 2π"
+          ],
+          [
+            "cos(x − {kesir:π|6})",
+            "{kesir:π|6} birim sağa",
+            "x = {kesir:2π|3} + kπ",
+            "Maks.: x = {kesir:π|6} + 2kπ",
+            "[−1, 1], T = 2π"
+          ],
+          [
+            "cos(x + {kesir:π|2}) = −sin x",
+            "{kesir:π|2} birim sola",
+            "x = kπ",
+            "Maks.: x = {kesir:3π|2} + 2kπ",
+            "[−1, 1], T = 2π"
+          ],
+          [
+            "tan(x − {kesir:π|4})",
+            "{kesir:π|4} birim sağa",
+            "x = {kesir:π|4} + kπ",
+            "Asimptot: x = {kesir:3π|4} + kπ",
+            "ℝ, T = π"
+          ],
+          [
+            "cot(x + {kesir:π|3})",
+            "{kesir:π|3} birim sola",
+            "x = {kesir:π|6} + kπ",
+            "Asimptot: x = −{kesir:π|3} + kπ",
+            "ℝ, T = π"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Yatay Ötelemenin Yönü",
+          "metin": "r > 0 olmak üzere f(x − r) grafiği r birim sağa, f(x + r) grafiği r birim sola ötelenir. İçerideki işaretin tersine gidildiğini düşün: x − {kesir:π|3} sağa, x + {kesir:π|4} sola. Dikey ötelemede ise işaret yönü doğrudan söyler: f(x) + s grafiği, s > 0 iken yukarı kayar."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kritik Noktaları Kaydır",
+          "metin": "Ötelenmiş grafiği çizmek için referans grafiğin sıfırlarını, tepe ve çukurlarını ve varsa asimptotlarını r kadar kaydırman yeterlidir. sin(x − {kesir:π|3}) için (0, 0) → ({kesir:π|3}, 0), ({kesir:π|2}, 1) → ({kesir:5π|6}, 1) ve ({kesir:3π|2}, −1) → ({kesir:11π|6}, −1) olur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='24' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Yatay Öteleme: y = sin x ve y = sin(x − π/3)</text><rect x='15' y='36' width='520' height='254' rx='10' fill='#ffffff' stroke='#2563eb' stroke-width='2'/><line x1='30' y1='160' x2='528' y2='160' stroke='#334155' stroke-width='1.5'/><line x1='50' y1='46' x2='50' y2='245' stroke='#334155' stroke-width='1.5'/><line x1='46' y1='90' x2='54' y2='90' stroke='#334155'/><text x='42' y='94' text-anchor='end' font-size='11' fill='#0f172a'>1</text><line x1='46' y1='230' x2='54' y2='230' stroke='#334155'/><text x='42' y='234' text-anchor='end' font-size='11' fill='#0f172a'>−1</text><polyline points='50,160 83.3,125 116.7,99.4 150,90 183.3,99.4 216.7,125 250,160 283.3,195 316.7,220.6 350,230 383.3,220.6 416.7,195 450,160' fill='none' stroke='#2563eb' stroke-width='2.5'/><polyline points='50,220.6 83.3,195 116.7,160 150,125 183.3,99.4 216.7,90 250,99.4 283.3,125 316.7,160 350,195 383.3,220.6 416.7,230 450,220.6 483.3,195 516.7,160' fill='none' stroke='#ea580c' stroke-width='2.5'/><line x1='150' y1='72' x2='209' y2='72' stroke='#7c3aed' stroke-width='1.8'/><polygon points='216.7,72 208,67 208,77' fill='#7c3aed'/><text x='183' y='64' text-anchor='middle' font-size='11' font-weight='bold' fill='#5b21b6'>π/3 sağa</text><circle cx='150' cy='90' r='4' fill='#2563eb'/><circle cx='216.7' cy='90' r='4' fill='#ea580c'/><circle cx='50' cy='160' r='4' fill='#2563eb'/><circle cx='116.7' cy='160' r='4' fill='#ea580c'/><circle cx='316.7' cy='160' r='4' fill='#ea580c'/><line x1='116.7' y1='156' x2='116.7' y2='164' stroke='#334155'/><line x1='216.7' y1='156' x2='216.7' y2='164' stroke='#334155'/><line x1='250' y1='156' x2='250' y2='164' stroke='#334155'/><line x1='316.7' y1='156' x2='316.7' y2='164' stroke='#334155'/><line x1='450' y1='156' x2='450' y2='164' stroke='#334155'/><text x='50' y='258' text-anchor='middle' font-size='11' fill='#0f172a'>0</text><text x='116.7' y='258' text-anchor='middle' font-size='11' fill='#0f172a'>π/3</text><text x='216.7' y='258' text-anchor='middle' font-size='11' fill='#0f172a'>5π/6</text><text x='250' y='258' text-anchor='middle' font-size='11' fill='#0f172a'>π</text><text x='316.7' y='258' text-anchor='middle' font-size='11' fill='#0f172a'>4π/3</text><text x='450' y='258' text-anchor='middle' font-size='11' fill='#0f172a'>2π</text><line x1='60' y1='277' x2='90' y2='277' stroke='#2563eb' stroke-width='2.5'/><text x='96' y='281' font-size='11' fill='#1e3a8a'>y = sin x</text><line x1='210' y1='277' x2='240' y2='277' stroke='#ea580c' stroke-width='2.5'/><text x='246' y='281' font-size='11' fill='#9a3412'>y = sin(x − π/3)</text><rect x='545' y='36' width='200' height='254' rx='10' fill='#ffffff' stroke='#ea580c' stroke-width='2'/><text x='645' y='58' text-anchor='middle' font-size='13' font-weight='bold' fill='#9a3412'>Faz Kayması</text><text x='557' y='82' font-size='11' fill='#0f172a'>• f(x − r): r birim sağa</text><text x='557' y='100' font-size='11' fill='#0f172a'>• f(x + r): r birim sola</text><text x='557' y='118' font-size='11' fill='#64748b'>(r pozitif bir sayı)</text><text x='557' y='144' font-size='12' font-weight='bold' fill='#15803d'>Değişmeyenler</text><text x='557' y='162' font-size='11' fill='#0f172a'>görüntü kümesi, genlik,</text><text x='557' y='178' font-size='11' fill='#0f172a'>periyot</text><text x='557' y='204' font-size='12' font-weight='bold' fill='#b91c1c'>Değişenler</text><text x='557' y='222' font-size='11' fill='#0f172a'>sıfırlar, tepe ve çukur</text><text x='557' y='238' font-size='11' fill='#0f172a'>noktaları, simetri</text><rect x='555' y='248' width='180' height='34' rx='8' fill='#ffedd5'/><text x='645' y='262' text-anchor='middle' font-size='10' fill='#7c2d12'>sin(x − π/3) = 0 ⇔</text><text x='645' y='276' text-anchor='middle' font-size='10' fill='#7c2d12'>x = π/3 + kπ</text></svg>"
+    },
+    {
+      "baslik": "2. Birleşik Dönüşüm: g(x) = k · f(mx − r) + s ve Dönüşüm Sırası",
+      "metin": [
+        "Artık dört parametrenin hepsini bir arada kullanabiliriz. Birleşik dönüşümü doğru okumanın anahtarı, içerideki ifadeyi çarpanlarına ayırmaktır: {koyu:g(x) = k · f(mx − r) + s = k · f(m(x − {kesir:r|m})) + s}. Bu yazılış en sık yapılan hatayı önler. sin(2x − {kesir:π|2}) grafiği, sin 2x grafiğinin {kesir:π|2} değil {koyu:{kesir:π|4} birim} sağa ötelenmesiyle elde edilir; çünkü 2x − {kesir:π|2} = 2(x − {kesir:π|4})'tür. Genel olarak {koyu:faz kayması {kesir:r|m}} sayısıdır: Bu sayı pozitifse sağa, negatifse sola öteleme yapılır. Programdaki g(x) = k · f(mx ± r) ± s gösterimi de aynı şeyi anlatır; r'yi işaretli bir sayı olarak düşünmek iki durumu tek formülde toplar.",
+        "Dönüşümler iki gruptur. {koyu:İç dönüşümler} (m ve r) x değerlerine, {koyu:dış dönüşümler} (k ve s) y değerlerine etki eder. Güvenli bir sıra şöyledir: 1) f(x) → f(mx): Grafik yatayda sıkışır ya da genişler, periyot {kesir:2π|{uzunluk:m}} ya da {kesir:π|{uzunluk:m}} olur. 2) f(mx) → f(m(x − {kesir:r|m})): Grafik {kesir:r|m} birim yatayda ötelenir. 3) Çıktı k ile çarpılır: Genlik değişir, k negatifse grafik yansır. 4) s eklenir: Grafik dikey olarak ötelenir. Dış dönüşümlerde de sıra önemlidir. Önce k ile çarpıp sonra s eklemek k · f + s fonksiyonunu verir. Önce s ekleyip sonra k ile çarpmak ise k · (f + s) = k · f + ks fonksiyonunu verir ve bu farklı bir fonksiyondur. İç dönüşümleri ters sırada yapmak da mümkündür: Önce r birim ötele, sonra apsisleri m'ye böl. Bu yol da aynı grafiği verir, çünkü sonuçta içerideki ifade yine mx − r olur.",
+        "g(x) = 2 sin(2x − {kesir:π|2}) + 1 fonksiyonuyla zinciri uygulayalım. m = 2 olduğundan periyot π'dir. 2x − {kesir:π|2} = 2(x − {kesir:π|4}) olduğundan grafik {kesir:π|4} birim sağa ötelenir. k = 2 genliği 2 yapar. s = 1 denge doğrusunu y = 1'e taşır ve görüntü kümesi [−1, 3] olur. Grafiği çizmek için {koyu:beş anahtar nokta} yöntemini kullanırız. 0 ≤ 2x − {kesir:π|2} ≤ 2π eşitsizliğinden {kesir:π|4} ≤ x ≤ {kesir:5π|4} bulunur; bu bir tam periyottur. Aralığı dört eşit parçaya bölünce x = {kesir:π|4}, {kesir:π|2}, {kesir:3π|4}, π, {kesir:5π|4} noktaları elde edilir. Fonksiyon bu noktalarda sırasıyla 1, 3, 1, −1, 1 değerlerini alır. Sonucu cebirsel olarak da kontrol edebiliriz: sin(2x − {kesir:π|2}) = −cos 2x olduğundan g(x) = 1 − 2 cos 2x yazılır ve g({kesir:π|2}) = 1 − 2 cos π = 3 bulunur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Parametre",
+          "Etkisi",
+          "Değiştirdiği Özellikler",
+          "Değiştirmediği Özellikler"
+        ],
+        "satirlar": [
+          [
+            "k",
+            "Dikey uzama-kısalma; k < 0 ise x eksenine göre yansıma",
+            "Genlik {uzunluk:k}, görüntü kümesi (sin, cos), k < 0 ise monotonluk yönü",
+            "Periyot, asimptotlar, s = 0 iken sıfırlar"
+          ],
+          [
+            "m",
+            "Yatay sıkışma-genişleme; m < 0 ise y eksenine göre yansıma",
+            "Periyot, sıfırlar, ekstremum noktaları, asimptotlar",
+            "Görüntü kümesi, maksimum-minimum değerleri"
+          ],
+          [
+            "r",
+            "Yatay öteleme: faz kayması {kesir:r|m}",
+            "Sıfırlar, ekstremum noktaları, asimptotlar, teklik-çiftlik",
+            "Görüntü kümesi, genlik, periyot"
+          ],
+          [
+            "s",
+            "Dikey öteleme; denge doğrusu y = s",
+            "Görüntü kümesi, sıfırlar, teklik",
+            "Periyot, ekstremum noktalarının apsisleri, asimptotlar"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Faz Kayması r Değil r/m'dir",
+          "metin": "cos(3x + π) grafiği, cos 3x grafiğinin π değil {kesir:π|3} birim sola ötelenmesiyle elde edilir; çünkü 3x + π = 3(x + {kesir:π|3})'tür. Öteleme miktarını bulmak için içerideki ifadede x'in katsayısını parantez dışına al."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Beş Anahtar Nokta Yöntemi",
+          "metin": "Sinüs ve kosinüs türevlerinde önce 0 ≤ mx − r ≤ 2π eşitsizliğini çöz, sonra bulduğun aralığı dört eşit parçaya böl. Bu beş apsiste içerideki değer sırasıyla 0, {kesir:π|2}, π, {kesir:3π|2}, 2π olur. Referans değerleri (sinüs için 0, 1, 0, −1, 0) k ile çarpıp s ekleyerek ordinatları yaz."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='320' rx='14' fill='#f8fafc'/><text x='380' y='24' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Birleşik Dönüşüm Zinciri ve Beş Anahtar Nokta</text><rect x='15' y='40' width='130' height='100' rx='10' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/><text x='80' y='64' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>y = sin x</text><text x='80' y='86' text-anchor='middle' font-size='10' fill='#0f172a'>Referans fonksiyon</text><text x='80' y='104' text-anchor='middle' font-size='10' fill='#0f172a'>T = 2π</text><text x='80' y='122' text-anchor='middle' font-size='10' fill='#0f172a'>[−1, 1]</text><rect x='165' y='40' width='130' height='100' rx='10' fill='#ede9fe' stroke='#7c3aed' stroke-width='2'/><text x='230' y='64' text-anchor='middle' font-size='12' font-weight='bold' fill='#5b21b6'>y = sin 2x</text><text x='230' y='86' text-anchor='middle' font-size='10' fill='#0f172a'>m = 2: yatay sıkışma</text><text x='230' y='104' text-anchor='middle' font-size='10' fill='#0f172a'>T = 2π/2 = π</text><text x='230' y='122' text-anchor='middle' font-size='10' fill='#0f172a'>[−1, 1]</text><rect x='315' y='40' width='130' height='100' rx='10' fill='#ffedd5' stroke='#ea580c' stroke-width='2'/><text x='380' y='64' text-anchor='middle' font-size='11' font-weight='bold' fill='#9a3412'>y = sin(2x − π/2)</text><text x='380' y='86' text-anchor='middle' font-size='10' fill='#0f172a'>r/m = π/4 birim sağa</text><text x='380' y='104' text-anchor='middle' font-size='10' fill='#0f172a'>T = π</text><text x='380' y='122' text-anchor='middle' font-size='10' fill='#0f172a'>sıfırlar: π/4 + kπ/2</text><rect x='465' y='40' width='130' height='100' rx='10' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/><text x='530' y='64' text-anchor='middle' font-size='11' font-weight='bold' fill='#166534'>y = 2 sin(2x − π/2)</text><text x='530' y='86' text-anchor='middle' font-size='10' fill='#0f172a'>k = 2: genlik 2</text><text x='530' y='104' text-anchor='middle' font-size='10' fill='#0f172a'>T = π</text><text x='530' y='122' text-anchor='middle' font-size='10' fill='#0f172a'>[−2, 2]</text><rect x='615' y='40' width='130' height='100' rx='10' fill='#fee2e2' stroke='#dc2626' stroke-width='2'/><text x='680' y='64' text-anchor='middle' font-size='10' font-weight='bold' fill='#991b1b'>y = 2 sin(2x − π/2) + 1</text><text x='680' y='86' text-anchor='middle' font-size='10' fill='#0f172a'>s = 1: 1 birim yukarı</text><text x='680' y='104' text-anchor='middle' font-size='10' fill='#0f172a'>denge: y = 1</text><text x='680' y='122' text-anchor='middle' font-size='10' fill='#0f172a'>[−1, 3]</text><line x1='146' y1='90' x2='158' y2='90' stroke='#334155' stroke-width='2'/><polygon points='164,90 157,85 157,95' fill='#334155'/><line x1='296' y1='90' x2='308' y2='90' stroke='#334155' stroke-width='2'/><polygon points='314,90 307,85 307,95' fill='#334155'/><line x1='446' y1='90' x2='458' y2='90' stroke='#334155' stroke-width='2'/><polygon points='464,90 457,85 457,95' fill='#334155'/><line x1='596' y1='90' x2='608' y2='90' stroke='#334155' stroke-width='2'/><polygon points='614,90 607,85 607,95' fill='#334155'/><text x='380' y='166' text-anchor='middle' font-size='12' fill='#0f172a'>Bir periyot: 0 ≤ 2x − π/2 ≤ 2π ⇒ π/4 ≤ x ≤ 5π/4; aralık 4 eşit parçaya bölünür (adım π/4)</text><rect x='60' y='178' width='640' height='128' rx='8' fill='#ffffff' stroke='#94a3b8' stroke-width='1.5'/><rect x='60' y='178' width='640' height='32' rx='8' fill='#e0e7ff'/><line x1='60' y1='210' x2='700' y2='210' stroke='#94a3b8'/><line x1='60' y1='242' x2='700' y2='242' stroke='#94a3b8'/><line x1='60' y1='274' x2='700' y2='274' stroke='#94a3b8'/><line x1='180' y1='178' x2='180' y2='306' stroke='#94a3b8'/><text x='120' y='199' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>x</text><text x='232' y='199' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>π/4</text><text x='336' y='199' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>π/2</text><text x='440' y='199' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>3π/4</text><text x='544' y='199' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>π</text><text x='648' y='199' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>5π/4</text><text x='120' y='231' text-anchor='middle' font-size='12' fill='#0f172a'>2x − π/2</text><text x='232' y='231' text-anchor='middle' font-size='12' fill='#0f172a'>0</text><text x='336' y='231' text-anchor='middle' font-size='12' fill='#0f172a'>π/2</text><text x='440' y='231' text-anchor='middle' font-size='12' fill='#0f172a'>π</text><text x='544' y='231' text-anchor='middle' font-size='12' fill='#0f172a'>3π/2</text><text x='648' y='231' text-anchor='middle' font-size='12' fill='#0f172a'>2π</text><text x='120' y='263' text-anchor='middle' font-size='12' fill='#0f172a'>g(x)</text><text x='232' y='263' text-anchor='middle' font-size='12' fill='#0f172a'>1</text><text x='336' y='263' text-anchor='middle' font-size='12' font-weight='bold' fill='#b91c1c'>3</text><text x='440' y='263' text-anchor='middle' font-size='12' fill='#0f172a'>1</text><text x='544' y='263' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>−1</text><text x='648' y='263' text-anchor='middle' font-size='12' fill='#0f172a'>1</text><text x='120' y='295' text-anchor='middle' font-size='12' fill='#0f172a'>Nokta türü</text><text x='232' y='295' text-anchor='middle' font-size='11' fill='#15803d'>denge</text><text x='336' y='295' text-anchor='middle' font-size='11' fill='#b91c1c'>maksimum</text><text x='440' y='295' text-anchor='middle' font-size='11' fill='#15803d'>denge</text><text x='544' y='295' text-anchor='middle' font-size='11' fill='#1d4ed8'>minimum</text><text x='648' y='295' text-anchor='middle' font-size='11' fill='#15803d'>denge</text></svg>"
+    },
+    {
+      "baslik": "3. Türetilen Sinüs ve Kosinüs Fonksiyonlarında Sıfırlar, Ekstremumlar ve Monotonluk",
+      "metin": [
+        "g(x) = k · sin(mx − r) + s fonksiyonunun herhangi bir nitel özelliğini bulmak için içerideki ifadeyi tek bir değişken gibi düşünürüz: {koyu:u = mx − r}. Sinüsün ya da kosinüsün u'ya göre bilinen özelliğini yazar, ardından eşitliği veya eşitsizliği x için çözeriz. Bu bölümde k, m, r, s parametre olduğundan tam sayıları n ile gösteriyoruz (n ∈ ℤ). Örneğin g(x) = cos(2x − {kesir:π|3}) fonksiyonunun maksimum noktalarını bulmak için 2x − {kesir:π|3} = 2nπ yazarız ve x = {kesir:π|6} + nπ elde ederiz. Minimum için 2x − {kesir:π|3} = π + 2nπ denkleminden x = {kesir:2π|3} + nπ bulunur. Sıfırlar için 2x − {kesir:π|3} = {kesir:π|2} + nπ denkleminden x = {kesir:5π|12} + {kesir:nπ|2} bulunur. Ardışık iki sıfır arasındaki uzaklık yarım periyottur ({kesir:π|2}); maksimum ile sonraki minimum arası da yarım periyottur. Bu, sonuçları denetlemek için kullanabileceğimiz bir {koyu:kontrol örüntüsüdür}.",
+        "Monotonluk aralıkları da aynı yolla bulunur. cos u fonksiyonu [−π + 2nπ, 2nπ] aralıklarında artan, [2nπ, π + 2nπ] aralıklarında azalandır. m > 0 iken eşitsizliğin yönü korunur: −π + 2nπ ≤ 2x − {kesir:π|3} ≤ 2nπ → −{kesir:2π|3} + 2nπ ≤ 2x ≤ {kesir:π|3} + 2nπ → −{kesir:π|3} + nπ ≤ x ≤ {kesir:π|6} + nπ. Buna göre [0, π] aralığında fonksiyon [0, {kesir:π|6}] ve [{kesir:2π|3}, π] aralıklarında {koyu:artan}, [{kesir:π|6}, {kesir:2π|3}] aralığında {koyu:azalandır}. {koyu:k < 0 ya da m < 0} ise monotonluk yön değiştirir. Örneğin −2 sin(x − {kesir:π|6}) fonksiyonu, sin(x − {kesir:π|6}) azalırken artar. k ve m'nin ikisi de negatifse bu iki etki birbirini götürür; kısacası belirleyici olan {koyu:k · m çarpımının işaretidir}.",
+        "Sıfırların varlığı ve sayısı da genellenebilir. k · sin(mx − r) + s = 0 denklemi, sin(mx − r) = −{kesir:s|k} demektir. Sinüs [−1, 1] aralığının dışına çıkamaz. Bu yüzden {koyu:{uzunluk:s} > {uzunluk:k} ise fonksiyonun sıfırı yoktur}. {uzunluk:s} = {uzunluk:k} ise grafik x eksenine yalnız tepe ya da çukur noktalarında dokunur ve her periyotta bir sıfır vardır. {uzunluk:s} < {uzunluk:k} ise her periyotta iki sıfır vardır. Bu genellemeyi g(x) = 2 sin 3x − 1 ile sınayalım. {uzunluk:s} = 1 < 2 = {uzunluk:k} olduğundan her periyotta iki sıfır bekleriz. Periyot {kesir:2π|3} olduğundan [0, 2π) aralığında 3 tam periyot, dolayısıyla 6 sıfır olmalıdır. Doğrulama: sin 3x = {kesir:1|2} → 3x = {kesir:π|6} + 2nπ veya 3x = {kesir:5π|6} + 2nπ → x = {kesir:π|18} + {kesir:2nπ|3} veya x = {kesir:5π|18} + {kesir:2nπ|3}. n = 0, 1, 2 için {kesir:π|18}, {kesir:5π|18}, {kesir:13π|18}, {kesir:17π|18}, {kesir:25π|18}, {kesir:29π|18} bulunur ve tahmin doğrulanır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Fonksiyon",
+          "Sıfırlar (n ∈ ℤ)",
+          "Maksimum noktaları",
+          "Bir artanlık aralığı"
+        ],
+        "satirlar": [
+          [
+            "sin(x + {kesir:π|4})",
+            "x = −{kesir:π|4} + nπ",
+            "x = {kesir:π|4} + 2nπ, değer 1",
+            "[−{kesir:3π|4} + 2nπ, {kesir:π|4} + 2nπ]"
+          ],
+          [
+            "cos(2x − {kesir:π|3})",
+            "x = {kesir:5π|12} + {kesir:nπ|2}",
+            "x = {kesir:π|6} + nπ, değer 1",
+            "[−{kesir:π|3} + nπ, {kesir:π|6} + nπ]"
+          ],
+          [
+            "−2 sin(x − {kesir:π|6})",
+            "x = {kesir:π|6} + nπ",
+            "x = −{kesir:π|3} + 2nπ, değer 2",
+            "[{kesir:2π|3} + 2nπ, {kesir:5π|3} + 2nπ]"
+          ],
+          [
+            "cos({kesir:x|2})",
+            "x = π + 2nπ",
+            "x = 4nπ, değer 1",
+            "[−2π + 4nπ, 4nπ]"
+          ],
+          [
+            "2 sin 3x − 1",
+            "x = {kesir:π|18} + {kesir:2nπ|3} veya x = {kesir:5π|18} + {kesir:2nπ|3}",
+            "x = {kesir:π|6} + {kesir:2nπ|3}, değer 1",
+            "[−{kesir:π|6} + {kesir:2nπ|3}, {kesir:π|6} + {kesir:2nπ|3}]"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Sıfır Sayısı Ölçütü",
+          "metin": "g(x) = k · sin(mx − r) + s veya g(x) = k · cos(mx − r) + s fonksiyonunun bir periyottaki sıfır sayısı şöyledir: {uzunluk:s} < {uzunluk:k} ise 2 sıfır, {uzunluk:s} = {uzunluk:k} ise 1 sıfır (grafik eksene dokunur), {uzunluk:s} > {uzunluk:k} ise hiç sıfır yoktur. Bir aralıktaki sıfır sayısı, periyot sayısı ile bu sayının çarpımıdır; aralığın uç noktalarını ayrıca kontrol et."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Eşitsizlikte m'nin İşaretine Bak",
+          "metin": "sin(−2x + {kesir:π|3}) gibi m < 0 olan bir ifadede eşitsizliği −2'ye bölerken yön değişir. Pratik yol şudur: Önce sin(−2x + {kesir:π|3}) = −sin(2x − {kesir:π|3}) yazarak m'yi pozitif yap. Sonra öndeki eksi işaretini k'nin işareti olarak yorumla."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='24' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>g(x) = cos(2x − π/3): Artan ve Azalan Aralıklar (0 ≤ x ≤ π)</text><rect x='15' y='36' width='510' height='254' rx='10' fill='#ffffff' stroke='#7c3aed' stroke-width='2'/><rect x='60' y='46' width='66.7' height='226' fill='#dcfce7'/><rect x='126.7' y='46' width='200' height='226' fill='#ffedd5'/><rect x='326.7' y='46' width='133.3' height='226' fill='#dcfce7'/><line x1='40' y1='160' x2='505' y2='160' stroke='#334155' stroke-width='1.5'/><line x1='60' y1='46' x2='60' y2='272' stroke='#334155' stroke-width='1.5'/><line x1='56' y1='80' x2='64' y2='80' stroke='#334155'/><text x='52' y='84' text-anchor='end' font-size='11' fill='#0f172a'>1</text><line x1='56' y1='240' x2='64' y2='240' stroke='#334155'/><text x='52' y='244' text-anchor='end' font-size='11' fill='#0f172a'>−1</text><polyline points='60,120 93.3,90.7 126.7,80 160,90.7 193.3,120 226.7,160 260,200 293.3,229.3 326.7,240 360,229.3 393.3,200 426.7,160 460,120' fill='none' stroke='#7c3aed' stroke-width='2.5'/><circle cx='126.7' cy='80' r='5' fill='#dc2626'/><circle cx='326.7' cy='240' r='5' fill='#2563eb'/><circle cx='226.7' cy='160' r='4' fill='#16a34a'/><circle cx='426.7' cy='160' r='4' fill='#16a34a'/><text x='134' y='72' font-size='11' font-weight='bold' fill='#b91c1c'>(π/6, 1)</text><text x='336' y='258' font-size='11' font-weight='bold' fill='#1d4ed8'>(2π/3, −1)</text><text x='93' y='262' text-anchor='middle' font-size='12' font-weight='bold' fill='#15803d'>artan</text><text x='226' y='62' text-anchor='middle' font-size='12' font-weight='bold' fill='#c2410c'>azalan</text><text x='393' y='62' text-anchor='middle' font-size='12' font-weight='bold' fill='#15803d'>artan</text><line x1='126.7' y1='156' x2='126.7' y2='164' stroke='#334155'/><line x1='226.7' y1='156' x2='226.7' y2='164' stroke='#334155'/><line x1='326.7' y1='156' x2='326.7' y2='164' stroke='#334155'/><line x1='460' y1='156' x2='460' y2='164' stroke='#334155'/><text x='60' y='286' text-anchor='middle' font-size='11' fill='#0f172a'>0</text><text x='126.7' y='286' text-anchor='middle' font-size='11' fill='#0f172a'>π/6</text><text x='226.7' y='286' text-anchor='middle' font-size='11' fill='#0f172a'>5π/12</text><text x='326.7' y='286' text-anchor='middle' font-size='11' fill='#0f172a'>2π/3</text><text x='460' y='286' text-anchor='middle' font-size='11' fill='#0f172a'>π</text><rect x='535' y='36' width='210' height='254' rx='10' fill='#ffffff' stroke='#16a34a' stroke-width='2'/><text x='640' y='58' text-anchor='middle' font-size='13' font-weight='bold' fill='#5b21b6'>g(x) = cos(2x − π/3)</text><text x='547' y='82' font-size='11' fill='#0f172a'>Yöntem: u = 2x − π/3</text><text x='547' y='100' font-size='11' fill='#0f172a'>cos u artan: [−π + 2nπ, 2nπ]</text><text x='547' y='118' font-size='11' fill='#0f172a'>⇒ x ∈ [−π/3 + nπ, π/6 + nπ]</text><text x='547' y='144' font-size='11' fill='#15803d'>Artan: [0, π/6] ve [2π/3, π]</text><text x='547' y='162' font-size='11' fill='#c2410c'>Azalan: [π/6, 2π/3]</text><text x='547' y='186' font-size='11' fill='#b91c1c'>Maksimum: (π/6, 1)</text><text x='547' y='204' font-size='11' fill='#1d4ed8'>Minimum: (2π/3, −1)</text><text x='547' y='222' font-size='11' fill='#15803d'>Sıfırlar: 5π/12 ve 11π/12</text><rect x='545' y='236' width='190' height='44' rx='8' fill='#ede9fe'/><text x='640' y='254' text-anchor='middle' font-size='10' fill='#4c1d95'>Kontrol: tepe ile çukur arası</text><text x='640' y='270' text-anchor='middle' font-size='10' fill='#4c1d95'>2π/3 − π/6 = π/2 = yarım periyot</text></svg>"
+    },
+    {
+      "baslik": "4. Türetilen Tanjant ve Kotanjant Fonksiyonlarında Asimptotlar ve Monotonluk",
+      "metin": [
+        "g(x) = k · tan(mx − r) + s fonksiyonunda tanjantın içi {kesir:π|2} + nπ olamaz: {koyu:mx − r ≠ {kesir:π|2} + nπ}. Bu koşuldan x'i yalnız bırakınca hem tanım kümesini hem de düşey asimptotları buluruz. Örneğin g(x) = tan(2x − {kesir:π|3}) için 2x ≠ {kesir:5π|6} + nπ, yani x ≠ {kesir:5π|12} + {kesir:nπ|2} bulunur. Kotanjant türevlerinde koşul {koyu:mx − r ≠ nπ} biçimindedir. k ve s asimptotların yerini değiştirmez. Görüntü kümesi her durumda ℝ olarak kalır ve fonksiyonun maksimum ya da minimum değeri oluşmaz. Kısacası tanjant ve kotanjant ailesinde dikey dönüşümler yalnız dalların dikliğini, yönünü ve yüksekliğini etkiler.",
+        "Sıfırlar için k · tan(mx − r) + s = 0 yani tan(mx − r) = −{kesir:s|k} denklemi çözülür. Tanjantın görüntü kümesi ℝ olduğundan bu denklemin {koyu:her periyotta tam bir çözümü} vardır; sinüsteki {uzunluk:s} ≤ {uzunluk:k} koşuluna gerek kalmaz. Örnek olarak g(x) = 3 cot(x − {kesir:π|4}) + 3 fonksiyonunu ele alalım. cot(x − {kesir:π|4}) = −1 → x − {kesir:π|4} = {kesir:3π|4} + nπ → x = π + nπ, yani x = nπ bulunur. Bu fonksiyonun asimptotları x − {kesir:π|4} = nπ denkleminden x = {kesir:π|4} + nπ çıkar. Periyot {kesir:π|{uzunluk:m}} olduğundan ardışık iki asimptot arasındaki uzaklık da {kesir:π|{uzunluk:m}}'dir ve her dal bu uzunluktaki bir aralığa yerleşir. s = 0 iken her dalın sıfırı iki komşu asimptotun tam ortasındadır.",
+        "Monotonluk için k ile m'nin işaretlerine bakmak yeterlidir. Tanjant her dalında artandır. Bu nedenle {koyu:k · m > 0} ise k · tan(mx − r) + s her dalda artan, {koyu:k · m < 0} ise her dalda azalandır. Kotanjantta durum tersidir: k · m > 0 iken her dalda azalan, k · m < 0 iken her dalda artandır. Örneğin −2 tan({kesir:x|2}) için k · m = −2 · {kesir:1|2} = −1 < 0 olduğundan fonksiyon her dalda azalandır. −cot 2x için de k · m = −2 < 0 olduğundan fonksiyon her dalda artandır. Bu genellemeyi bir dal üzerinde iki değer seçerek {koyu:kontrol edebiliriz}. −2 tan({kesir:x|2}) fonksiyonunun x = 0'daki değeri 0, x = {kesir:π|2}'deki değeri −2 · tan({kesir:π|4}) = −2'dir; x artarken değer azalmıştır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Fonksiyon",
+          "Asimptotlar (n ∈ ℤ)",
+          "Sıfırlar",
+          "Periyot",
+          "Monotonluk"
+        ],
+        "satirlar": [
+          [
+            "tan(x − {kesir:π|4})",
+            "x = {kesir:3π|4} + nπ",
+            "x = {kesir:π|4} + nπ",
+            "π",
+            "Her dalda artan"
+          ],
+          [
+            "tan(2x − {kesir:π|3})",
+            "x = {kesir:5π|12} + {kesir:nπ|2}",
+            "x = {kesir:π|6} + {kesir:nπ|2}",
+            "{kesir:π|2}",
+            "Her dalda artan"
+          ],
+          [
+            "−2 tan({kesir:x|2})",
+            "x = π + 2nπ",
+            "x = 2nπ",
+            "2π",
+            "Her dalda azalan"
+          ],
+          [
+            "cot(x + {kesir:π|6})",
+            "x = −{kesir:π|6} + nπ",
+            "x = {kesir:π|3} + nπ",
+            "π",
+            "Her dalda azalan"
+          ],
+          [
+            "3 cot(x − {kesir:π|4}) + 3",
+            "x = {kesir:π|4} + nπ",
+            "x = nπ",
+            "π",
+            "Her dalda azalan"
+          ],
+          [
+            "−cot 2x",
+            "x = {kesir:nπ|2}",
+            "x = {kesir:π|4} + {kesir:nπ|2}",
+            "{kesir:π|2}",
+            "Her dalda artan"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Tanjant ve Kotanjantta Monotonluk",
+          "metin": "k · tan(mx − r) + s fonksiyonu k · m > 0 ise her dalda artan, k · m < 0 ise her dalda azalandır. k · cot(mx − r) + s fonksiyonu k · m > 0 ise her dalda azalan, k · m < 0 ise her dalda artandır. r ve s monotonluğu etkilemez."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Dalın Ortası Simetri Merkezidir",
+          "metin": "tan(mx − r) grafiğinde her dalın sıfırı iki komşu asimptotun tam ortasındadır ve dal bu noktaya göre simetriktir. s eklenirse simetri merkezi y = s doğrusuna taşınır. Örneğin tan(x − {kesir:π|4}) + 2 için simetri merkezleri ({kesir:π|4} + nπ, 2) noktalarıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='24' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>g(x) = tan(x − π/4): Sıfırlar ve Asimptotlar π/4 Birim Sağa Kayar</text><rect x='15' y='36' width='505' height='254' rx='10' fill='#ffffff' stroke='#2563eb' stroke-width='2'/><line x1='25' y1='160' x2='512' y2='160' stroke='#334155' stroke-width='1.5'/><line x1='100' y1='46' x2='100' y2='278' stroke='#334155' stroke-width='1.5'/><line x1='50' y1='46' x2='50' y2='278' stroke='#dc2626' stroke-width='1.5' stroke-dasharray='6,4'/><line x1='250' y1='46' x2='250' y2='278' stroke='#dc2626' stroke-width='1.5' stroke-dasharray='6,4'/><line x1='450' y1='46' x2='450' y2='278' stroke='#dc2626' stroke-width='1.5' stroke-dasharray='6,4'/><polyline points='22,271 25,256.6 50,200 75,176.6 100,160 125,143.4 150,120 175,63.4 178,49' fill='none' stroke='#94a3b8' stroke-width='1.8' stroke-dasharray='5,4'/><polyline points='72,271 75,256.6 100,200 125,176.6 150,160 175,143.4 200,120 225,63.4 228,49' fill='none' stroke='#2563eb' stroke-width='2.5'/><polyline points='272,271 275,256.6 300,200 325,176.6 350,160 375,143.4 400,120 425,63.4 428,49' fill='none' stroke='#2563eb' stroke-width='2.5'/><circle cx='150' cy='160' r='4' fill='#16a34a'/><circle cx='350' cy='160' r='4' fill='#16a34a'/><circle cx='200' cy='120' r='3.5' fill='#7c3aed'/><circle cx='300' cy='200' r='3.5' fill='#7c3aed'/><text x='206' y='116' font-size='10' fill='#5b21b6'>(π/2, 1)</text><text x='306' y='214' font-size='10' fill='#5b21b6'>(π, −1)</text><line x1='96' y1='120' x2='104' y2='120' stroke='#334155'/><line x1='96' y1='200' x2='104' y2='200' stroke='#334155'/><text x='94' y='117' text-anchor='end' font-size='10' fill='#0f172a'>1</text><text x='94' y='212' text-anchor='end' font-size='10' fill='#0f172a'>−1</text><text x='94' y='174' text-anchor='end' font-size='10' fill='#0f172a'>0</text><text x='50' y='290' text-anchor='middle' font-size='11' fill='#b91c1c'>−π/4</text><text x='150' y='290' text-anchor='middle' font-size='11' fill='#15803d'>π/4</text><text x='250' y='290' text-anchor='middle' font-size='11' fill='#b91c1c'>3π/4</text><text x='350' y='290' text-anchor='middle' font-size='11' fill='#15803d'>5π/4</text><text x='450' y='290' text-anchor='middle' font-size='11' fill='#b91c1c'>7π/4</text><line x1='262' y1='54' x2='290' y2='54' stroke='#2563eb' stroke-width='2.5'/><text x='296' y='58' font-size='11' fill='#1e3a8a'>y = tan(x − π/4)</text><line x1='262' y1='72' x2='290' y2='72' stroke='#94a3b8' stroke-width='1.8' stroke-dasharray='5,4'/><text x='296' y='76' font-size='11' fill='#475569'>y = tan x (bir dal)</text><rect x='530' y='36' width='215' height='254' rx='10' fill='#ffffff' stroke='#dc2626' stroke-width='2'/><text x='637' y='58' text-anchor='middle' font-size='13' font-weight='bold' fill='#1e3a8a'>g(x) = tan(x − π/4)</text><text x='542' y='82' font-size='11' fill='#0f172a'>Tanım: x ≠ 3π/4 + nπ</text><text x='542' y='102' font-size='11' fill='#b91c1c'>Asimptot: x = 3π/4 + nπ</text><text x='542' y='122' font-size='11' fill='#15803d'>Sıfırlar: x = π/4 + nπ</text><text x='542' y='142' font-size='11' fill='#0f172a'>Periyot: π</text><text x='542' y='162' font-size='11' fill='#0f172a'>Görüntü kümesi: ℝ</text><text x='542' y='182' font-size='11' fill='#0f172a'>k · m = 1 > 0: her dalda artan</text><text x='542' y='202' font-size='11' fill='#0f172a'>Maksimum, minimum yok</text><rect x='540' y='218' width='195' height='62' rx='8' fill='#fee2e2'/><text x='637' y='238' text-anchor='middle' font-size='10' fill='#7f1d1d'>Genel kural (tanjant):</text><text x='637' y='254' text-anchor='middle' font-size='10' fill='#7f1d1d'>mx − r ≠ π/2 + nπ</text><text x='637' y='270' text-anchor='middle' font-size='10' fill='#7f1d1d'>Kotanjant: mx − r ≠ nπ</text></svg>"
+    },
+    {
+      "baslik": "5. Grafikten Cebirsel Temsile ve Türetilen Fonksiyonlarda Teklik-Çiftlik",
+      "metin": [
+        "Bir sinüzoidal grafiğin kuralını yazmak, dönüşümleri tersinden okumak demektir. Önce grafiğin en büyük değeri M ve en küçük değeri N okunur. Buradan genlik {koyu:{uzunluk:k} = {kesir:M − N|2}} ve denge doğrusu {koyu:y = s = {kesir:M + N|2}} bulunur. Sonra ardışık iki tepe (ya da ardışık iki çukur) arasındaki uzaklıktan periyot T okunur ve {uzunluk:m} = {kesir:2π|T} hesaplanır; tepe ile sonraki çukur arası yarım periyottur. Son olarak r'yi bulmak için bir referans noktası seçilir. Kosinüs biçiminde (k > 0) içerinin 0 olduğu yer tepedir. Sinüs biçiminde ise içerinin 0 olduğu yer yükselen denge noktası, {kesir:π|2} olduğu yer tepedir. Tanjant ve kotanjant grafiklerinde ardışık iki asimptot arası periyodu verir; dalın ortasındaki noktanın apsisi r'yi, ordinatı s'yi bulmayı sağlar.",
+        "Tepe noktası ({kesir:π|6}, 4) ve sonraki çukur noktası ({kesir:2π|3}, −2) olan grafiği ele alalım. {uzunluk:k} = {kesir:4 − (−2)|2} = 3 ve s = {kesir:4 + (−2)|2} = 1 bulunur. Yarım periyot {kesir:2π|3} − {kesir:π|6} = {kesir:π|2} olduğundan T = π ve m = 2'dir. Kosinüs biçiminde tepe için 2 · {kesir:π|6} − r = 0 → r = {kesir:π|3} olur ve kural {koyu:g(x) = 3 cos(2x − {kesir:π|3}) + 1} çıkar. Sinüs biçiminde tepe için 2 · {kesir:π|6} − r = {kesir:π|2} → r = −{kesir:π|6} olur ve kural {koyu:g(x) = 3 sin(2x + {kesir:π|6}) + 1} çıkar. İki kural farklı görünür, ama sin(u + {kesir:π|2}) = cos u eşitliğinde u = 2x − {kesir:π|3} alınırsa sin(2x + {kesir:π|6}) = cos(2x − {kesir:π|3}) olduğu cebirsel olarak ispatlanır. Demek ki bir grafiğin {koyu:tek bir cebirsel temsili yoktur}. r'ye 2π'nin katlarını eklemek ya da k'nin işaretini değiştirip r'yi π kaydırmak da aynı grafiği verir. Kuralı yazdıktan sonra grafikte okunabilen başka bir noktayla kontrol yapılmalıdır; burada g(0) = 3 cos(−{kesir:π|3}) + 1 = 2,5 değeri kullanılabilir.",
+        "Türetilen fonksiyonların tekliği ve çiftliği r'ye bağlıdır. k · sin(mx − r) fonksiyonu r = nπ iken ±k · sin(mx) biçimine döner ve {koyu:tek kalır}. r = {kesir:π|2} + nπ iken ±k · cos(mx) biçimine döner ve {koyu:çift olur}. Diğer r değerlerinde fonksiyon ne tek ne çifttir. Örneğin g(x) = sin(x − {kesir:π|4}) için g(0) = −{kesir:{kok:2}|2} ≠ 0 olduğundan fonksiyon tek değildir. Ayrıca g({kesir:π|4}) = 0 iken g(−{kesir:π|4}) = sin(−{kesir:π|2}) = −1 olduğundan çift de değildir. s ≠ 0 eklenirse tek fonksiyon tekliğini kaybeder, çift fonksiyon ise çift kalır. Tanjantta tan(mx − r), r sayısı {kesir:π|2}'nin bir katı iken tektir; çünkü r = {kesir:π|2} için tan(mx − {kesir:π|2}) = −cot(mx) olur. Tanjant ve kotanjant ailesinden çift fonksiyon elde edilemez."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Grafikten Okunan",
+          "Bulunan Parametre",
+          "Bağıntı"
+        ],
+        "satirlar": [
+          [
+            "En büyük değer M ve en küçük değer N",
+            "Genlik ve denge doğrusu",
+            "{uzunluk:k} = {kesir:M − N|2}, s = {kesir:M + N|2}"
+          ],
+          [
+            "Ardışık iki tepe arasındaki uzaklık",
+            "Periyot T",
+            "{uzunluk:m} = {kesir:2π|T} (tan, cot için {uzunluk:m} = {kesir:π|T})"
+          ],
+          [
+            "Bir tepe noktasının apsisi {alt:x|0}",
+            "Kosinüs biçiminde r",
+            "m · {alt:x|0} − r = 0 → r = m · {alt:x|0}"
+          ],
+          [
+            "Bir tepe noktasının apsisi {alt:x|0}",
+            "Sinüs biçiminde r",
+            "m · {alt:x|0} − r = {kesir:π|2} → r = m · {alt:x|0} − {kesir:π|2}"
+          ],
+          [
+            "Grafiğin y eksenini kestiği nokta",
+            "Kontrol değeri",
+            "g(0) = k · f(−r) + s"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Bir Grafik, Birden Çok Kural",
+          "metin": "3 cos(2x − {kesir:π|3}) + 1, 3 sin(2x + {kesir:π|6}) + 1 ve −3 cos(2x + {kesir:2π|3}) + 1 aynı fonksiyondur. Soruda k > 0, m > 0 ve 0 ≤ r < 2π gibi koşullar verilmişse bunlar arasından tek bir kural seçilir."
+        },
+        {
+          "tur": "kural",
+          "baslik": "Türetilen Fonksiyonlarda Teklik-Çiftlik",
+          "metin": "k · sin(mx − r) fonksiyonu r = nπ ise tek, r = {kesir:π|2} + nπ ise çifttir. k · cos(mx − r) fonksiyonu r = nπ ise çift, r = {kesir:π|2} + nπ ise tektir. Diğer r değerlerinde fonksiyon ne tek ne çifttir. s ≠ 0 eklemek tekliği bozar, çiftliği korur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='24' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Grafikten Kurala: Tepe (π/6, 4), Çukur (2π/3, −2)</text><rect x='15' y='36' width='490' height='254' rx='10' fill='#ffffff' stroke='#0891b2' stroke-width='2'/><line x1='40' y1='185' x2='500' y2='185' stroke='#334155' stroke-width='1.5'/><line x1='60' y1='46' x2='60' y2='262' stroke='#334155' stroke-width='1.5'/><line x1='60' y1='65' x2='500' y2='65' stroke='#cbd5e1' stroke-width='1' stroke-dasharray='4,4'/><line x1='60' y1='245' x2='500' y2='245' stroke='#cbd5e1' stroke-width='1' stroke-dasharray='4,4'/><line x1='60' y1='155' x2='500' y2='155' stroke='#16a34a' stroke-width='1.5' stroke-dasharray='6,4'/><text x='54' y='69' text-anchor='end' font-size='11' fill='#0f172a'>4</text><text x='54' y='159' text-anchor='end' font-size='11' fill='#15803d'>1</text><text x='54' y='189' text-anchor='end' font-size='11' fill='#0f172a'>0</text><text x='54' y='249' text-anchor='end' font-size='11' fill='#0f172a'>−2</text><polyline points='60,110 90,77.1 120,65 150,77.1 180,110 210,155 240,200 270,232.9 300,245 330,232.9 360,200 390,155 420,110 450,77.1 480,65' fill='none' stroke='#0891b2' stroke-width='2.5'/><circle cx='120' cy='65' r='5' fill='#dc2626'/><circle cx='480' cy='65' r='5' fill='#dc2626'/><circle cx='300' cy='245' r='5' fill='#2563eb'/><text x='128' y='58' font-size='11' font-weight='bold' fill='#b91c1c'>(π/6, 4)</text><text x='490' y='58' text-anchor='end' font-size='11' font-weight='bold' fill='#b91c1c'>(7π/6, 4)</text><text x='308' y='240' font-size='11' font-weight='bold' fill='#1d4ed8'>(2π/3, −2)</text><text x='432' y='150' font-size='11' fill='#15803d'>denge: y = 1</text><line x1='120' y1='181' x2='120' y2='189' stroke='#334155'/><line x1='300' y1='181' x2='300' y2='189' stroke='#334155'/><line x1='420' y1='181' x2='420' y2='189' stroke='#334155'/><text x='120' y='201' text-anchor='middle' font-size='11' fill='#0f172a'>π/6</text><text x='300' y='201' text-anchor='middle' font-size='11' fill='#0f172a'>2π/3</text><text x='420' y='201' text-anchor='middle' font-size='11' fill='#0f172a'>π</text><line x1='120' y1='268' x2='480' y2='268' stroke='#7c3aed' stroke-width='1.5'/><line x1='120' y1='263' x2='120' y2='273' stroke='#7c3aed' stroke-width='1.5'/><line x1='480' y1='263' x2='480' y2='273' stroke='#7c3aed' stroke-width='1.5'/><text x='300' y='284' text-anchor='middle' font-size='11' font-weight='bold' fill='#5b21b6'>T = π (ardışık iki tepe arası)</text><rect x='515' y='36' width='230' height='254' rx='10' fill='#ffffff' stroke='#7c3aed' stroke-width='2'/><text x='630' y='58' text-anchor='middle' font-size='13' font-weight='bold' fill='#0e7490'>Parametreleri Okuma</text><text x='527' y='82' font-size='11' fill='#0f172a'>1) |k| = (4 − (−2)) / 2 = 3</text><text x='527' y='100' font-size='11' fill='#0f172a'>2) s = (4 + (−2)) / 2 = 1</text><text x='527' y='118' font-size='11' fill='#0f172a'>3) T/2 = 2π/3 − π/6 = π/2</text><text x='541' y='134' font-size='11' fill='#0f172a'>T = π ⇒ m = 2</text><text x='527' y='152' font-size='11' fill='#0f172a'>4) Tepe x = π/6: 2 · π/6 − r = 0</text><text x='541' y='168' font-size='11' fill='#0f172a'>r = π/3</text><rect x='525' y='182' width='210' height='68' rx='8' fill='#cffafe'/><text x='630' y='200' text-anchor='middle' font-size='11' font-weight='bold' fill='#155e75'>Sonuç</text><text x='630' y='218' text-anchor='middle' font-size='11' fill='#155e75'>g(x) = 3 cos(2x − π/3) + 1</text><text x='630' y='236' text-anchor='middle' font-size='11' fill='#155e75'>= 3 sin(2x + π/6) + 1</text><text x='630' y='272' text-anchor='middle' font-size='10' fill='#475569'>Kontrol: g(0) = 3 · (1/2) + 1 = 2,5</text></svg>"
+    },
+    {
+      "baslik": "6. Gerçek Yaşam Modelleri, Genellemelerin İspatı ve Doğrulanması",
+      "metin": [
+        "Türetilmiş trigonometrik fonksiyonların en güçlü yanı, düzenli tekrar eden olayları dört parametreyle anlatabilmeleridir. Bir limanda deniz suyunun yüksekliği h(t) = 2 + 1,5 · cos({kesir:π(t − 3)|6}) metre ile modellenmiş olsun; t, gece yarısından sonra geçen saattir. Parametreleri tek tek yorumlayalım. s = 2 m ortalama su düzeyidir. Genlik 1,5 m'dir ve kabarma ile çekilme düzeyleri arasındaki farkın yarısını gösterir. m = {kesir:π|6} olduğundan periyot 2π ÷ {kesir:π|6} = 12 saattir; yani günde iki kabarma ve iki çekilme olur. Faz kayması 3 saattir ve ilk kabarmanın saat 03.00'te olduğunu söyler. En yüksek düzey 3,5 m (t = 3 ve t = 15), en düşük düzey 0,5 m'dir (t = 9 ve t = 21). Model gerçek bir karar için de kullanılabilir. Bir teknenin limana girebilmesi için suyun en az 2,75 m olması gereksin. h(t) ≥ 2,75 ⇔ cos({kesir:π(t − 3)|6}) ≥ {kesir:1|2} ⇔ −{kesir:π|3} ≤ {kesir:π(t − 3)|6} ≤ {kesir:π|3} ⇔ 1 ≤ t ≤ 5 bulunur. Periyot nedeniyle 13 ≤ t ≤ 17 aralığı da uygundur.",
+        "Benzer biçimde bir şehirde gün ışığı süresi yaklaşık olarak G(t) = 12 + 3 · sin({kesir:2π(t − 80)|365}) saat ile modellenebilir; t, yılın kaçıncı günü olduğunu gösterir. t = 80 civarında (21 Mart dolayları) gece ile gündüz eşittir. En uzun gün t − 80 = {kesir:365|4} iken, yani t ≈ 171 (yaklaşık 21 Haziran) civarındadır ve gün ışığı yaklaşık 15 saat sürer. En kısa gün t ≈ 354 (yaklaşık 20 Aralık) civarındadır ve gün ışığı yaklaşık 9 saat sürer. Bu modellerin {koyu:kullanışlılığını değerlendirirken} sınırlarını da görmeliyiz. Gerçek gelgitler Ay ile Güneş'in birlikte etkisiyle tam simetrik değildir; sıcaklık bulutlu bir günde modelden sapar; gün ışığı süresinin genliği ise enleme göre değişir. Model, olayın ana örüntüsünü yakalayan sade bir temsildir. Tahmin için kullanılırken ölçülen verilerle karşılaştırılmalı, gerekirse parametreler yeniden belirlenmelidir.",
+        "Bu hafta kullandığımız genellemelerin üçünü cebirsel olarak ispatlayalım. {koyu:Periyot:} g(x) = k · sin(mx − r) + s ve m > 0 için g(x + {kesir:2π|m}) = k · sin(mx + 2π − r) + s = k · sin(mx − r) + s = g(x) olur. Sinüsün esas periyodu 2π olduğundan daha küçük pozitif bir sayı bu eşitliği sağlamaz. {koyu:Görüntü kümesi:} −1 ≤ sin(mx − r) ≤ 1 olduğundan k > 0 için s − k ≤ g(x) ≤ s + k olur. Sinüs bu uç değerleri gerçekten aldığından görüntü kümesi [s − {uzunluk:k}, s + {uzunluk:k}]'dir. {koyu:Faz kayması:} h(x) = k · sin(mx) + s denirse g(x) = h(x − {kesir:r|m}) olur, çünkü m(x − {kesir:r|m}) = mx − r'dir. {koyu:Grafiksel doğrulama} ise birkaç x değeri için değer tablosu hazırlayıp noktaları grafikle karşılaştırmaktır. Cebirsel ispat her durumu kapsar; grafiksel doğrulama hızlı bir kontrol ve hatayı görme aracıdır. İkisi birlikte kullanıldığında genelleme hem güvenilir hem anlaşılır olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Model",
+          "Genlik",
+          "Periyot",
+          "Faz Kayması",
+          "Denge Düzeyi"
+        ],
+        "satirlar": [
+          [
+            "Gelgit: h(t) = 2 + 1,5 · cos({kesir:π(t − 3)|6})",
+            "1,5 m",
+            "12 saat",
+            "3 saat sağa",
+            "2 m"
+          ],
+          [
+            "Sıcaklık: S(t) = 18 − 6 · cos({kesir:π(t − 4)|12})",
+            "6 °C",
+            "24 saat",
+            "4 saat sağa",
+            "18 °C"
+          ],
+          [
+            "Gün ışığı: G(t) = 12 + 3 · sin({kesir:2π(t − 80)|365})",
+            "3 saat",
+            "365 gün",
+            "80 gün sağa",
+            "12 saat"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Parametreleri Bağlamla Eşleştir",
+          "metin": "s ortalama düzeyi, {uzunluk:k} ortalama düzeyden en büyük sapmayı, T bir tam döngünün süresini gösterir. Faz kayması, olayın ilk tepe zamanını (kosinüs biçiminde) ya da ilk yükselen geçiş zamanını (sinüs biçiminde) verir. Sonuçları yazarken birimleri (m, °C, saat, gün) unutma."
+        },
+        {
+          "tur": "kural",
+          "baslik": "Üç Temel İspat",
+          "metin": "1) Periyot için g(x + T) = g(x) eşitliği gösterilir. 2) Görüntü kümesi için −1 ≤ sin u ≤ 1 eşitsizliğine dönüşümler adım adım uygulanır. 3) Faz kayması için mx − r = m(x − {kesir:r|m}) biçiminde çarpanlara ayırma yapılır. Her ispattan sonra bir sayısal değerle kontrol yapmak, genellemenin varsayımları karşıladığını gösterir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='24' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Gelgit Modeli: h(t) = 2 + 1,5 · cos(π(t − 3)/6)</text><rect x='15' y='36' width='505' height='254' rx='10' fill='#ffffff' stroke='#0891b2' stroke-width='2'/><line x1='60' y1='250' x2='508' y2='250' stroke='#334155' stroke-width='1.5'/><line x1='60' y1='46' x2='60' y2='250' stroke='#334155' stroke-width='1.5'/><line x1='60' y1='75' x2='500' y2='75' stroke='#cbd5e1' stroke-dasharray='4,4'/><line x1='60' y1='150' x2='500' y2='150' stroke='#16a34a' stroke-width='1.3' stroke-dasharray='6,4'/><line x1='60' y1='225' x2='500' y2='225' stroke='#cbd5e1' stroke-dasharray='4,4'/><text x='54' y='79' text-anchor='end' font-size='11' fill='#0f172a'>3,5</text><text x='54' y='154' text-anchor='end' font-size='11' fill='#15803d'>2</text><text x='54' y='229' text-anchor='end' font-size='11' fill='#0f172a'>0,5</text><text x='54' y='254' text-anchor='end' font-size='11' fill='#0f172a'>0</text><text x='66' y='52' font-size='11' fill='#0f172a'>h (m)</text><polyline points='60,150 87,97 114,75 141,97 168,150 195,203 222,225 249,203 276,150 303,97 330,75 357,97 384,150 411,203 438,225 465,203 492,150' fill='none' stroke='#0891b2' stroke-width='2.5'/><circle cx='114' cy='75' r='4.5' fill='#dc2626'/><circle cx='330' cy='75' r='4.5' fill='#dc2626'/><circle cx='222' cy='225' r='4.5' fill='#2563eb'/><circle cx='438' cy='225' r='4.5' fill='#2563eb'/><text x='122' y='90' font-size='10' fill='#b91c1c'>kabarma</text><text x='338' y='90' font-size='10' fill='#b91c1c'>kabarma</text><text x='222' y='242' text-anchor='middle' font-size='10' fill='#1d4ed8'>çekilme</text><text x='438' y='242' text-anchor='middle' font-size='10' fill='#1d4ed8'>çekilme</text><line x1='114' y1='58' x2='330' y2='58' stroke='#7c3aed' stroke-width='1.5'/><line x1='114' y1='53' x2='114' y2='63' stroke='#7c3aed' stroke-width='1.5'/><line x1='330' y1='53' x2='330' y2='63' stroke='#7c3aed' stroke-width='1.5'/><text x='222' y='53' text-anchor='middle' font-size='11' font-weight='bold' fill='#5b21b6'>T = 12 saat</text><text x='60' y='266' text-anchor='middle' font-size='10' fill='#0f172a'>0</text><text x='114' y='266' text-anchor='middle' font-size='10' fill='#0f172a'>3</text><text x='168' y='266' text-anchor='middle' font-size='10' fill='#0f172a'>6</text><text x='222' y='266' text-anchor='middle' font-size='10' fill='#0f172a'>9</text><text x='276' y='266' text-anchor='middle' font-size='10' fill='#0f172a'>12</text><text x='330' y='266' text-anchor='middle' font-size='10' fill='#0f172a'>15</text><text x='384' y='266' text-anchor='middle' font-size='10' fill='#0f172a'>18</text><text x='438' y='266' text-anchor='middle' font-size='10' fill='#0f172a'>21</text><text x='492' y='266' text-anchor='middle' font-size='10' fill='#0f172a'>24</text><text x='508' y='283' text-anchor='end' font-size='11' fill='#0f172a'>t (saat)</text><rect x='530' y='36' width='215' height='254' rx='10' fill='#ffffff' stroke='#16a34a' stroke-width='2'/><text x='637' y='58' text-anchor='middle' font-size='13' font-weight='bold' fill='#0e7490'>Parametrelerin Anlamı</text><text x='542' y='82' font-size='11' fill='#0f172a'>Ortalama düzey: s = 2 m</text><text x='542' y='102' font-size='11' fill='#0f172a'>Genlik: 1,5 m</text><text x='542' y='122' font-size='11' fill='#0f172a'>Periyot: 2π ÷ (π/6) = 12 saat</text><text x='542' y='142' font-size='11' fill='#0f172a'>Faz kayması: 3 saat sağa</text><text x='542' y='162' font-size='11' fill='#b91c1c'>Kabarma: 3,5 m (t = 3, 15)</text><text x='542' y='182' font-size='11' fill='#1d4ed8'>Çekilme: 0,5 m (t = 9, 21)</text><rect x='540' y='198' width='195' height='82' rx='8' fill='#dcfce7'/><text x='637' y='216' text-anchor='middle' font-size='10' fill='#14532d'>Tekne için h(t) ≥ 2,75 m:</text><text x='637' y='232' text-anchor='middle' font-size='10' fill='#14532d'>cos(π(t − 3)/6) ≥ 1/2</text><text x='637' y='248' text-anchor='middle' font-size='10' fill='#14532d'>1 ≤ t ≤ 5 veya 13 ≤ t ≤ 17</text><text x='637' y='268' text-anchor='middle' font-size='10' fill='#14532d'>Model bir yaklaşımdır.</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "g(x) = 2 cos(3x − {kesir:π|2}) − 1 fonksiyonunun periyodunu, faz kaymasını, görüntü kümesini, maksimum ve minimum noktalarını bulunuz.",
+      "cevap": "1. adım (periyot): m = 3 olduğundan T = {kesir:2π|3}.\n2. adım (faz kayması): 3x − {kesir:π|2} = 3(x − {kesir:π|6}) olduğundan grafik, 2 cos 3x − 1 grafiğinin {kesir:π|6} birim sağa ötelenmiş hâlidir. Faz kayması {kesir:r|m} = {kesir:π|6}.\n3. adım (görüntü kümesi): k = 2 ve s = −1 olduğundan görüntü kümesi [−1 − 2, −1 + 2] = [−3, 1].\n4. adım (maksimum): cos(3x − {kesir:π|2}) = 1 → 3x − {kesir:π|2} = 2nπ → x = {kesir:π|6} + {kesir:2nπ|3}. Bu noktalarda değer 1'dir.\n5. adım (minimum): 3x − {kesir:π|2} = π + 2nπ → x = {kesir:π|2} + {kesir:2nπ|3}. Bu noktalarda değer −3'tür.\nKontrol: cos(3x − {kesir:π|2}) = sin 3x olduğundan g(x) = 2 sin 3x − 1 yazılabilir. g({kesir:π|6}) = 2 · sin({kesir:π|2}) − 1 = 1 bulunur. Ayrıca maksimum ile minimum arası {kesir:π|2} − {kesir:π|6} = {kesir:π|3}, yani yarım periyottur.",
+      "ipucu": "İçerideki ifadede x'in katsayısını parantez dışına alırsan faz kayması doğrudan görünür. Ekstremum noktaları için kosinüsün 1 ve −1 olduğu yerleri yaz."
+    },
+    {
+      "soru": "g(x) = sin(2x + {kesir:π|3}) fonksiyonunun [0, π] aralığında artan ve azalan olduğu aralıkları, maksimum ve minimum noktalarını bulunuz.",
+      "cevap": "1. adım: u = 2x + {kesir:π|3} diyelim. sin u fonksiyonu −{kesir:π|2} + 2nπ ≤ u ≤ {kesir:π|2} + 2nπ aralıklarında artandır.\n2. adım: −{kesir:π|2} + 2nπ ≤ 2x + {kesir:π|3} ≤ {kesir:π|2} + 2nπ → −{kesir:5π|6} + 2nπ ≤ 2x ≤ {kesir:π|6} + 2nπ → −{kesir:5π|12} + nπ ≤ x ≤ {kesir:π|12} + nπ.\n3. adım: n = 0 için [0, {kesir:π|12}] parçası, n = 1 için [{kesir:7π|12}, π] parçası [0, π] içinde kalır. Fonksiyon bu aralıklarda artandır; aradaki [{kesir:π|12}, {kesir:7π|12}] aralığında ise azalandır.\n4. adım: Artandan azalana geçilen x = {kesir:π|12} maksimum noktasıdır: g({kesir:π|12}) = sin({kesir:π|2}) = 1. Azalandan artana geçilen x = {kesir:7π|12} minimum noktasıdır: g({kesir:7π|12}) = sin({kesir:3π|2}) = −1.\nKontrol: İki nokta arasındaki uzaklık {kesir:π|2}'dir; bu, T = π periyodunun yarısıdır.",
+      "ipucu": "Referans fonksiyonun artanlık aralığını u = 2x + {kesir:π|3} için yaz, sonra eşitsizliği x için çözüp verilen aralıkla kesiştir."
+    },
+    {
+      "soru": "g(x) = 2 cos 2x + 1 fonksiyonunun [0, 2π] aralığındaki sıfır sayısını önce bir genellemeyle tahmin ediniz, sonra denklemi çözerek doğrulayınız.",
+      "cevap": "1. adım (tahmin): {uzunluk:s} = 1 < 2 = {uzunluk:k} olduğundan her periyotta iki sıfır vardır. T = {kesir:2π|2} = π olduğundan [0, 2π] aralığında iki periyot, dolayısıyla 4 sıfır beklenir.\n2. adım (çözüm): 2 cos 2x + 1 = 0 → cos 2x = −{kesir:1|2}.\n3. adım: 2x = {kesir:2π|3} + 2nπ veya 2x = {kesir:4π|3} + 2nπ → x = {kesir:π|3} + nπ veya x = {kesir:2π|3} + nπ.\n4. adım: n = 0 ve n = 1 için [0, 2π] içinde {kesir:π|3}, {kesir:2π|3}, {kesir:4π|3}, {kesir:5π|3} bulunur. n = 2 için değerler 2π'yi aşar.\nSonuç: Fonksiyonun bu aralıkta 4 sıfırı vardır ve genelleme doğrulanmıştır. Uç noktalar sıfır değildir: g(0) = g(2π) = 3.",
+      "ipucu": "Önce {uzunluk:s} ile {uzunluk:k} sayılarını karşılaştırarak bir periyottaki sıfır sayısını, sonra aralıktaki periyot sayısını bul."
+    },
+    {
+      "soru": "g(x) = tan({kesir:x|2} − {kesir:π|6}) fonksiyonunun tanım kümesini, periyodunu, sıfırlarını ve monotonluğunu belirleyiniz; g(π) değerini hesaplayınız.",
+      "cevap": "1. adım (tanım kümesi): {kesir:x|2} − {kesir:π|6} ≠ {kesir:π|2} + nπ → {kesir:x|2} ≠ {kesir:2π|3} + nπ → x ≠ {kesir:4π|3} + 2nπ. Bu doğrular düşey asimptottur.\n2. adım (periyot): m = {kesir:1|2} olduğundan T = π ÷ {kesir:1|2} = 2π.\n3. adım (sıfırlar): {kesir:x|2} − {kesir:π|6} = nπ → x = {kesir:π|3} + 2nπ.\n4. adım (monotonluk): k = 1 ve m = {kesir:1|2} olduğundan k · m > 0'dır; fonksiyon her dalda artandır.\n5. adım (değer): g(π) = tan({kesir:π|2} − {kesir:π|6}) = tan({kesir:π|3}) = {kok:3}.\nKontrol: Asimptotlar x = −{kesir:2π|3} ve x = {kesir:4π|3}; bu iki doğrunun tam ortası x = {kesir:π|3}'tür. Tanjant dalında sıfırın iki asimptotun tam ortasında olması beklenir; sonuç bununla uyumludur.",
+      "ipucu": "Tanjantın içini bir blok gibi düşün: Blok {kesir:π|2} + nπ olamaz, blok nπ olduğunda fonksiyon sıfırdır."
+    },
+    {
+      "soru": "Bir sinüzoidal grafiğin en yüksek noktası ({kesir:π|3}, 5), bu noktadan sonraki ilk en alçak noktası ({kesir:4π|3}, −3)'tür. Grafiğin kuralını g(x) = k · cos(mx − r) + s (k > 0, m > 0) biçiminde yazınız ve aynı grafiği sinüs biçiminde de ifade ediniz.",
+      "cevap": "1. adım: {uzunluk:k} = {kesir:5 − (−3)|2} = 4 ve s = {kesir:5 + (−3)|2} = 1.\n2. adım: Tepe ile sonraki çukur arası yarım periyottur: {kesir:T|2} = {kesir:4π|3} − {kesir:π|3} = π → T = 2π → m = 1.\n3. adım: k > 0 iken kosinüs, içi 0 olduğunda tepe yapar: {kesir:π|3} − r = 0 → r = {kesir:π|3}. Kural: g(x) = 4 cos(x − {kesir:π|3}) + 1.\n4. adım (sinüs biçimi): Sinüs, içi {kesir:π|2} olduğunda tepe yapar: {kesir:π|3} − r = {kesir:π|2} → r = −{kesir:π|6}. Kural: g(x) = 4 sin(x + {kesir:π|6}) + 1.\nKontrol: İki kuralda da g(0) = 4 · {kesir:1|2} + 1 = 3 ve g({kesir:4π|3}) = 4 · (−1) + 1 = −3 çıkar. İki temsil aynı grafiği verir.",
+      "ipucu": "Önce M ve N değerlerinden genliği ve denge doğrusunu, sonra yarım periyottan m'yi bul. r'yi bulmak için tepe noktasını kullan."
+    },
+    {
+      "soru": "Bir günde t saat sonraki hava sıcaklığı S(t) = 18 − 6 · cos({kesir:π(t − 4)|12}) °C ile modelleniyor (0 ≤ t ≤ 24, t = 0 gece yarısı). Günün en düşük ve en yüksek sıcaklığını, bunların görüldüğü saatleri ve sıcaklığın 21 °C ya da daha yüksek olduğu zaman aralığını bulunuz.",
+      "cevap": "1. adım (periyot): m = {kesir:π|12} olduğundan T = 2π ÷ {kesir:π|12} = 24 saat. Model günlük döngüyü anlatır.\n2. adım (değerler): k = −6 ve s = 18 olduğundan görüntü kümesi [12, 24]'tür. En düşük sıcaklık 12 °C, en yüksek sıcaklık 24 °C'dir.\n3. adım (saatler): k < 0 olduğundan en düşük değer kosinüs 1 iken alınır: {kesir:π(t − 4)|12} = 0 → t = 4 (saat 04.00). En yüksek değer kosinüs −1 iken alınır: {kesir:π(t − 4)|12} = π → t = 16 (saat 16.00).\n4. adım (eşitsizlik): 18 − 6 · cos({kesir:π(t − 4)|12}) ≥ 21 → cos({kesir:π(t − 4)|12}) ≤ −{kesir:1|2}. u = {kesir:π(t − 4)|12} dersek u, [−{kesir:π|3}, {kesir:5π|3}] aralığında değişir. Bu aralıkta cos u ≤ −{kesir:1|2} koşulu yalnız {kesir:2π|3} ≤ u ≤ {kesir:4π|3} iken sağlanır.\n5. adım: {kesir:2π|3} ≤ {kesir:π(t − 4)|12} ≤ {kesir:4π|3} → 8 ≤ t − 4 ≤ 16 → 12 ≤ t ≤ 20.\nSonuç: Sıcaklık saat 12.00 ile 20.00 arasında 21 °C ve üzerindedir. Kontrol: S(12) = 18 − 6 · cos({kesir:2π|3}) = 18 + 3 = 21.",
+      "ipucu": "k negatif olduğu için en yüksek sıcaklık kosinüsün en küçük olduğu anda görülür. Eşitsizliği çözerken önce u = {kesir:π(t − 4)|12} değişkeninin hangi aralıkta değiştiğini bul."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "g(x) = sin(2x − {kesir:π|3}) fonksiyonunun grafiği, y = sin 2x fonksiyonunun grafiği nasıl ötelenerek elde edilir?",
+      "secenekler": [
+        "{kesir:π|3} birim sağa",
+        "{kesir:π|6} birim sağa",
+        "{kesir:π|6} birim sola",
+        "{kesir:π|3} birim sola"
+      ],
+      "dogru": 1,
+      "aciklama": "İçerideki ifadede 2'yi parantez dışına alırız: 2x − {kesir:π|3} = 2(x − {kesir:π|6}). Bu yüzden g(x), sin 2x grafiğinin {kesir:π|6} birim sağa ötelenmesiyle elde edilir. {kesir:π|3} birim seçeneği, faz kaymasının r değil {kesir:r|m} olduğunu gözden kaçırmaktan kaynaklanır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "g(x) = 3 cos(4x + π) − 2 fonksiyonunun görüntü kümesi ve esas periyodu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "[−5, 1] ve {kesir:π|2}",
+        "[−3, 3] ve {kesir:π|2}",
+        "[−5, 1] ve 2π",
+        "[−2, 4] ve {kesir:π|4}"
+      ],
+      "dogru": 0,
+      "aciklama": "k = 3 ve s = −2 olduğundan görüntü kümesi [−2 − 3, −2 + 3] = [−5, 1]'dir. m = 4 olduğundan T = {kesir:2π|4} = {kesir:π|2}'dir. İçerideki +π yalnız yatay öteleme yapar (cos(4x + π) = −cos 4x); görüntü kümesini ve periyodu değiştirmez."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki fonksiyonlardan hangisi çift fonksiyondur?",
+      "secenekler": [
+        "sin(x − {kesir:π|4})",
+        "cos(x − {kesir:π|2})",
+        "sin(x + {kesir:π|2})",
+        "tan(x + π)"
+      ],
+      "dogru": 2,
+      "aciklama": "sin(x + {kesir:π|2}) = cos x olduğundan bu fonksiyon çifttir. cos(x − {kesir:π|2}) = sin x ve tan(x + π) = tan x fonksiyonları tektir. sin(x − {kesir:π|4}) ise ne tek ne çifttir: g(0) = −{kesir:{kok:2}|2} ≠ 0'dır ve g({kesir:π|4}) = 0 iken g(−{kesir:π|4}) = −1'dir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "g(x) = tan(3x − {kesir:π|2}) fonksiyonunun grafiği için aşağıdaki doğrulardan hangisi bir düşey asimptottur?",
+      "secenekler": [
+        "x = {kesir:π|6}",
+        "x = {kesir:π|4}",
+        "x = {kesir:π|2}",
+        "x = {kesir:2π|3}"
+      ],
+      "dogru": 3,
+      "aciklama": "Asimptotlar 3x − {kesir:π|2} = {kesir:π|2} + nπ denkleminden x = {kesir:π|3} + {kesir:nπ|3} doğrularıdır; n = 1 için x = {kesir:2π|3} bulunur. x = {kesir:π|6} ve x = {kesir:π|2} için içerideki ifade 0 ve π olur, bu yüzden bu noktalar sıfırdır. x = {kesir:π|4} için değer tan({kesir:π|4}) = 1'dir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "sin(x + {kesir:π|2}) = cos x eşitliği her reel x için doğrudur.",
+          "dogru": true,
+          "aciklama": "Doğrudur; kosinüs grafiği, sinüs grafiğinin {kesir:π|2} birim sola ötelenmiş hâlidir."
+        },
+        {
+          "metin": "g(x) = cos(3x − π) grafiği, cos 3x grafiğinin π birim sağa ötelenmesiyle elde edilir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; 3x − π = 3(x − {kesir:π|3}) olduğundan öteleme {kesir:π|3} birim sağa doğrudur."
+        },
+        {
+          "metin": "g(x) = 2 sin(x − {kesir:π|5}) + 3 fonksiyonunun esas periyodu 2π, görüntü kümesi [1, 5]'tir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; m = 1 olduğundan T = 2π'dir. Görüntü kümesi [3 − 2, 3 + 2] = [1, 5]'tir ve faz kayması bunları değiştirmez."
+        },
+        {
+          "metin": "g(x) = sin x + 4 fonksiyonunun hiç sıfırı yoktur.",
+          "dogru": true,
+          "aciklama": "Doğrudur; {uzunluk:s} = 4 > 1 = {uzunluk:k} olduğundan sin x = −4 denkleminin çözümü yoktur. Fonksiyonun görüntü kümesi [3, 5]'tir."
+        },
+        {
+          "metin": "g(x) = −cot 2x fonksiyonu tanımlı olduğu her aralıkta azalandır.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; k · m = −1 · 2 = −2 < 0 olduğundan kotanjantın azalanlığı tersine döner. Fonksiyon her dalda artandır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Sol sütundaki ifadeleri g(x) = k · f(mx − r) + s fonksiyonu için sağ sütundaki uygun anlamlarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{uzunluk:k}",
+          "Sinüs ve kosinüs türevlerinde genlik; en büyük ve en küçük değer farkının yarısı"
+        ],
+        [
+          "{kesir:r|m}",
+          "Grafiğin yatay öteleme (faz kayması) miktarı"
+        ],
+        [
+          "{kesir:2π|{uzunluk:m}}",
+          "k · sin(mx − r) + s ve k · cos(mx − r) + s fonksiyonlarının esas periyodu"
+        ],
+        [
+          "{kesir:π|{uzunluk:m}}",
+          "k · tan(mx − r) + s ve k · cot(mx − r) + s fonksiyonlarının esas periyodu"
+        ],
+        [
+          "y = s",
+          "Sinüzoidal grafiğin etrafında salındığı denge doğrusu"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "g(x) = sin(x − {kesir:π|4}) grafiği, sin x grafiğinin {kesir:π|4} birim ___ ötelenmesiyle elde edilir.",
+          "cevap": "sağa"
+        },
+        {
+          "metin": "Yatay öteleme, fonksiyonun ___ kümesini ve periyodunu değiştirmez.",
+          "cevap": "görüntü"
+        },
+        {
+          "metin": "k · sin(mx − r) + s fonksiyonunda {uzunluk:s} > {uzunluk:k} ise fonksiyonun ___ yoktur.",
+          "cevap": "sıfırı"
+        },
+        {
+          "metin": "g(x) = −tan x fonksiyonu tanımlı olduğu her aralıkta ___ dır.",
+          "cevap": "azalan"
+        },
+        {
+          "metin": "sin(x + {kesir:π|2}) = cos x olduğundan sinüs grafiği {kesir:π|2} birim sola ötelenince ___ grafiği elde edilir.",
+          "cevap": "kosinüs"
+        }
+      ],
+      "kelimeler": [
+        "sağa",
+        "görüntü",
+        "sıfırı",
+        "azalan",
+        "kosinüs"
+      ],
+      "fazla": [
+        "sola",
+        "artan"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "a > 0, b > 0 ve 0 ≤ c < 2π olmak üzere f(x) = a · cos(bx − c) + d fonksiyonunun grafiğinde en yüksek nokta ({kesir:π|8}, 7), bu noktadan sonraki ilk en alçak nokta ({kesir:3π|8}, −1) olarak okunuyor. a, b, c ve d sayılarını bulunuz. Fonksiyonun [0, {kesir:π|2}] aralığında artan ve azalan olduğu aralıkları belirleyip sonucu değer hesaplayarak doğrulayınız.",
+      "ipuclari": [
+        "1. adım: En büyük değer d + a, en küçük değer d − a'dır. Bu iki denklemi taraf tarafa toplayıp çıkararak d'yi ve a'yı bulunuz.",
+        "2. adım: Tepe ile sonraki çukur arası yarım periyottur. Periyodu bulup {kesir:2π|b} = T denkleminden b'yi, tepe noktasında içerinin 0 olmasından c'yi bulunuz.",
+        "3. adım: cos u fonksiyonunun artan olduğu [−π + 2nπ, 2nπ] aralığını u = bx − c için yazıp x için çözünüz; sonucu [0, {kesir:π|2}] ile kesiştirip uç noktalarda değer hesaplayınız."
+      ],
+      "cevap": "1. adım: d + a = 7 ve d − a = −1. Taraf tarafa toplarsak 2d = 6 → d = 3; çıkarırsak 2a = 8 → a = 4.\n2. adım: {kesir:T|2} = {kesir:3π|8} − {kesir:π|8} = {kesir:π|4} → T = {kesir:π|2}. {kesir:2π|b} = {kesir:π|2} → b = 4.\n3. adım: a > 0 iken kosinüs, içi 0 olduğunda tepe yapar: 4 · {kesir:π|8} − c = 0 → c = {kesir:π|2}. Kural: f(x) = 4 cos(4x − {kesir:π|2}) + 3. Bu kural 4 sin 4x + 3 ile aynıdır.\n4. adım (monotonluk): cos u fonksiyonu −π + 2nπ ≤ u ≤ 2nπ aralıklarında artandır. −π + 2nπ ≤ 4x − {kesir:π|2} ≤ 2nπ → −{kesir:π|8} + {kesir:nπ|2} ≤ x ≤ {kesir:π|8} + {kesir:nπ|2}. [0, {kesir:π|2}] içinde artan aralıklar [0, {kesir:π|8}] ve [{kesir:3π|8}, {kesir:π|2}]'dir; azalan aralık [{kesir:π|8}, {kesir:3π|8}]'dir.\n5. adım (doğrulama): f(0) = 4 cos(−{kesir:π|2}) + 3 = 3, f({kesir:π|8}) = 4 · 1 + 3 = 7, f({kesir:3π|8}) = 4 cos π + 3 = −1, f({kesir:π|2}) = 4 cos({kesir:3π|2}) + 3 = 3. Değerler 3 → 7 → −1 → 3 biçiminde önce artar, sonra azalır, sonra yeniden artar; bu, bulunan aralıklarla uyumludur.\nSonuç: a = 4, b = 4, c = {kesir:π|2}, d = 3."
+    }
+  ]
+}
