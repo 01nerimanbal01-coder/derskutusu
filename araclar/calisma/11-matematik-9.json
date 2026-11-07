@@ -1,0 +1,87 @@
+{
+ "sinif": 11,
+ "ders": "matematik",
+ "hafta": 9,
+ "tarih": "9-13 Kasım 2026",
+ "yayin_tarihi": "2026-11-08",
+ "konu": "Yamuk (İkizkenar Yamuk, Dik Yamuk) ve Genel Dörtgenlerin Açı, Kenar, Orta Taban, Köşegen ve Alan Özellikleri",
+ "ciktilar": [
+  "Yamuğun açı, kenar, orta taban ve alan bağıntılarını dik üçgen ve benzerlik özellikleriyle ilişkilendirir.",
+  "İkizkenar yamukta ve dik yamukta yükseklik, köşegen ve alan özelliklerini kullanarak problem çözer.",
+  "Genel dörtgenlerde açı toplamı, dik kesişen köşegen bağıntısı ve kenar orta noktaları paralelkenarını uygular."
+ ],
+ "hatirla": [
+  "[AB] // [DC] olan yamukta aynı yan kenarın uçlarındaki açılar bütünlerdir; orta taban e = {kesir:a + c|2}, alan e · h'dir.",
+  "İkizkenar yamukta taban açıları ve köşegenler eşittir; köşegenler dik kesişirse h = e olur. Köşegenleri dik kesişen dik yamukta h{us:|2} = a · c'dir.",
+  "Dörtgenin iç açıları toplamı 360°'dir; köşegenleri dik kesişen dörtgende a{us:|2} + c{us:|2} = b{us:|2} + d{us:|2} olur; kenar orta noktaları bir paralelkenar oluşturur."
+ ],
+ "sorular": [
+  {"tur": "coktan", "duzey": "uygula",
+   "soru": "Görseldeki ABCD yamuğunda [AB] // [DC] olup m(A) = 3x + 10 ve m(D) = 2x + 20 derecedir. Buna göre m(D) kaç derecedir?",
+   "secenekler": ["60°", "70°", "80°", "100°"], "dogru": 2},
+  {"tur": "dy", "duzey": "hatirla",
+   "soru": "Yamuk ve dörtgenlerle ilgili aşağıdaki ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+   "ifadeler": [
+    {"metin": "Bir yamukta aynı yan kenarın uçlarındaki iki açının ölçüleri toplamı 180°'dir.", "dogru": true},
+    {"metin": "İkizkenar yamukta köşegenlerin uzunlukları birbirinden farklıdır.", "dogru": false},
+    {"metin": "Her dörtgende kenar orta noktaları sırayla birleştirilince bir paralelkenar elde edilir.", "dogru": true},
+    {"metin": "Dışbükey bir dörtgenin dış açılarının ölçüleri toplamı 180°'dir.", "dogru": false}
+   ]},
+  {"tur": "coktan", "duzey": "uygula",
+   "soru": "Görseldeki yamukta |AB| = 18 cm, |DC| = 10 cm; E ve F yan kenarların orta noktaları, K ve L köşegenlerin [EF] ile kesişim noktalarıdır. |EF| ve |KL| uzunlukları aşağıdakilerden hangisidir?",
+   "secenekler": ["|EF| = 14 cm, |KL| = 4 cm", "|EF| = 14 cm, |KL| = 8 cm", "|EF| = 28 cm, |KL| = 4 cm", "|EF| = 12 cm, |KL| = 4 cm"], "dogru": 0},
+  {"tur": "tablo", "duzey": "uygula",
+   "soru": "Yamuklara ait verilen ölçüleri kullanarak tablodaki boş hücreleri doldurunuz (uzunluklar cm, alanlar cm{us:|2}).",
+   "basliklar": ["Alt taban (a)", "Üst taban (c)", "Orta taban (e)", "Yükseklik (h)", "Alan"],
+   "satirlar": [
+    ["12", "8", {"b": "10"}, "6", {"b": "60"}],
+    ["22", {"b": "10"}, "16", "5", {"b": "80"}],
+    ["9", "5", {"b": "7"}, {"b": "4"}, "28"]
+   ]},
+  {"tur": "coktan", "duzey": "uygula",
+   "soru": "Görseldeki ABCD ikizkenar yamuğunda |AB| = 26 cm, |DC| = 8 cm ve |AD| = |BC| = 15 cm'dir. Buna göre Alan(ABCD) kaç cm{us:|2}dir?",
+   "secenekler": ["156", "204", "240", "312"], "dogru": 1},
+  {"tur": "bosluk", "duzey": "hatirla", "kelimeler": true, "fazla": ["ikizkenar yamuk"],
+   "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız. Kutudaki bir kavram kullanılmayacaktır.",
+   "cumleler": [
+    {"metin": "Yamukta paralel olmayan kenarların orta noktaları arasındaki doğru parçası ___ adını alır.", "cevap": "orta taban"},
+    {"metin": "Yan kenarlarından biri tabanlara dik olan yamuğa ___ denir.", "cevap": "dik yamuk"},
+    {"metin": "Köşegenleri birbirine dik olan dörtgende karşılıklı kenar uzunluklarının ___ toplamı eşittir.", "cevap": "kareleri"},
+    {"metin": "Dışbükey her dörtgende dört iç açının ölçüleri toplamı ___ eder.", "cevap": "360°"}
+   ]},
+  {"tur": "kisa", "duzey": "uygula",
+   "soru": "Görseldeki ABCD dik yamuğunda [AD] ⟂ [AB], |AB| = 20 cm, |DC| = 11 cm ve |BC| = 15 cm'dir. Yamuğun yüksekliğini ve alanını bulunuz.",
+   "cevap": "C'den dikme: taban farkı 9 cm, 9{us:|2} + h{us:|2} = 15{us:|2} → h = 12 cm; Alan = {kesir:20 + 11|2} · 12 = 186 cm{us:|2}.",
+   "satir": 3},
+  {"tur": "coktan", "duzey": "ust",
+   "soru": "Görseldeki ABCD ikizkenar yamuğunda köşegenler dik kesişmektedir. |AB| = 14 cm ve |DC| = 6 cm olduğuna göre ABCD yamuğunun alanı kaç cm{us:|2}dir?",
+   "secenekler": ["64", "84", "100", "140"], "dogru": 2},
+  {"tur": "kisa", "duzey": "ust",
+   "soru": "Görseldeki ABCD dik yamuğunda köşegenler dik kesişmektedir. |AB| = 18 cm ve |DC| = 2 cm olduğuna göre yüksekliği ve alanı bulunuz.",
+   "cevap": "h{us:|2} = a · c = 18 · 2 = 36 → h = 6 cm; Alan = {kesir:18 + 2|2} · 6 = 60 cm{us:|2}.",
+   "satir": 2},
+  {"tur": "sifre", "duzey": "hatirla",
+   "soru": "İpuçlarına uyan kavramları yazınız. Turuncu kutulardaki harfler, e · h çarpımıyla bulunan büyüklüğün adını verecektir.",
+   "satirlar": [
+    {"ipucu": "Tabanları paralel, yan kenarları paralel olmayan dörtgen (5 harf)", "cevap": "YAMUK", "anahtar": 1},
+    {"ipucu": "Yamuğun tabanlarının birbirine göre durumu (7 harf)", "cevap": "PARALEL", "anahtar": 4},
+    {"ipucu": "Yamuğun paralel kenarlarından her biri (5 harf)", "cevap": "TABAN", "anahtar": 1},
+    {"ipucu": "Dörtgende karşı köşeleri birleştiren doğru parçası (7 harf)", "cevap": "KÖŞEGEN", "anahtar": 6}
+   ],
+   "sonuc": "ALAN"},
+  {"tur": "coktan", "duzey": "ust",
+   "soru": "Görseldeki ABCD dörtgeninde m(C) = 120°, m(D) = 80° olup A ve B iç açılarının açıortayları E noktasında kesişmektedir. Buna göre m(AEB) kaç derecedir?",
+   "secenekler": ["80°", "90°", "100°", "110°"], "dogru": 2},
+  {"tur": "coktan", "duzey": "uygula",
+   "soru": "Görseldeki ABCD dörtgeninde köşegenler dik kesişmektedir. |AB| = 6 cm, |BC| = 9 cm, |CD| = 7 cm olduğuna göre x uzunluğu kaç santimetredir?",
+   "secenekler": ["2", "3", "4", "{kok:13}"], "dogru": 0},
+  {"tur": "kisa", "duzey": "uygula",
+   "soru": "Görselde K, L, M ve N, ABCD dörtgeninin kenar orta noktalarıdır. |AC| = 14 cm, |BD| = 10 cm ve Alan(ABCD) = 64 cm{us:|2} ise KLMN'nin çevresi ve alanı kaçtır?",
+   "cevap": "Çevre(KLMN) = |AC| + |BD| = 24 cm; Alan(KLMN) = {kesir:64|2} = 32 cm{us:|2}.",
+   "satir": 2},
+  {"tur": "acik", "duzey": "ust",
+   "soru": "Tabanları a ve c, yüksekliği h olan bir yamuğun alanının, orta taban uzunluğu ile yüksekliğin çarpımı kadar olduğunu, yamuğu bir köşegenle iki üçgene ayırarak gösteriniz.",
+   "cevap": "Köşegen, yükseklikleri h olan iki üçgen ayırır: {kesir:a · h|2} + {kesir:c · h|2} = {kesir:a + c|2} · h = e · h.",
+   "satir": 3}
+ ]
+}
