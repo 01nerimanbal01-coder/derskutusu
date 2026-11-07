@@ -1,0 +1,267 @@
+{
+ "sinif": 12,
+ "ders": "kimya",
+ "hafta": 9,
+ "tarih": "9-13 Kasım 2026",
+ "yayin_tarihi": "2026-11-08",
+ "konu": "Elektroliz: Elektrolitik Hücreler, Faraday Elektroliz Kanunları (Q = I·t) ve Elektroliz Hesaplamaları (12.1.5.1)",
+ "ciktilar": [
+  "Elektroliz olayını ve elektrolitik hücrenin yapısını açıklar.",
+  "Yük, akım şiddeti, süre ve Faraday sabiti arasındaki ilişkiyi kurar.",
+  "Faraday kanunlarıyla tek ve seri bağlı kaplarda toplanan madde miktarını hesaplar."
+ ],
+ "hatirla": [
+  "Elektrolizde istemsiz redoks tepkimesi dış üreteçle yürütülür. Anot üretecin (+) kutbuna, katot (−) kutbuna bağlıdır; anotta yükseltgenme, katotta indirgenme olur.",
+  "Q = I · t (C = A · s); 1 F = 1 mol {us:e|−} ≈ 96 500 C; {alt:n|e} = {kesir:I · t|96 500}. Toplanan madde kütlesi geçen yükle doğru orantılıdır.",
+  "Seri bağlı kaplardan aynı yük geçer: {alt:n|1} · {alt:z|1} = {alt:n|2} · {alt:z|2}. Kaplamada eşya katoda, kaplama metali anoda bağlanır."
+ ],
+ "sorular": [
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görselde erimiş NaCl’nin elektrolizi için kurulan düzenek verilmiştir. Buna göre aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "X elektrodu katottur.",
+    "{us:Na|+} iyonları Y elektroduna gider ve indirgenir.",
+    "Y elektrodunda {alt:Cl|2} gazı oluşur.",
+    "Gerçekleşen tepkime istemlidir."
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "tablo",
+   "duzey": "uygula",
+   "soru": "Bir elektroliz devresinden geçen akım şiddeti (I), süre (t), yük (Q) ve elektron mol sayısıyla ({alt:n|e}) ilgili tabloyu tamamlayınız. (1 F = 96 500 C)",
+   "basliklar": [
+    "I (A)",
+    "t (s)",
+    "Q (C)",
+    "{alt:n|e} (mol)"
+   ],
+   "satirlar": [
+    [
+     "2",
+     "4825",
+     {
+      "b": "9650"
+     },
+     {
+      "b": "0,1"
+     }
+    ],
+    [
+     {
+      "b": "5"
+     },
+     "1930",
+     "9650",
+     "0,1"
+    ],
+    [
+     "4",
+     "9650",
+     {
+      "b": "38 600"
+     },
+     {
+      "b": "0,4"
+     }
+    ]
+   ]
+  },
+  {
+   "tur": "dy",
+   "duzey": "hatirla",
+   "soru": "Elektrolizle ilgili aşağıdaki ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
+   "ifadeler": [
+    {
+     "metin": "Elektrolitik hücrede üretecin (+) kutbuna bağlanan elektrot anottur.",
+     "dogru": true
+    },
+    {
+     "metin": "Elektroliz sırasında katotta yükseltgenme gerçekleşir.",
+     "dogru": false
+    },
+    {
+     "metin": "1 mol elektronun taşıdığı yük yaklaşık 96 500 C’tur.",
+     "dogru": true
+    },
+    {
+     "metin": "Seri bağlı elektroliz kaplarının her birinden farklı miktarda yük geçer.",
+     "dogru": false
+    }
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki düzenekte demir bir çatal gümüşle kaplanacaktır. Buna göre aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Çatal anot olarak kullanılır.",
+    "Gümüş çubuk üretecin (−) kutbuna bağlanır.",
+    "Çatal üretecin (−) kutbuna bağlanır ve üzerinde {us:Ag|+} iyonları indirgenir.",
+    "Elektroliz ilerledikçe gümüş çubuğun kütlesi artar."
+   ],
+   "dogru": 2
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görselde verilen {alt:AgNO|3} çözeltisinin elektrolizinde devreden 9,65 A akım 1000 s boyunca geçirilmiştir. Buna göre katotta kaç gram gümüş toplanır? (Ag: 108 g/mol, 1 F = 96 500 C)",
+   "secenekler": [
+    "5,4",
+    "21,6",
+    "1,08",
+    "10,8"
+   ],
+   "dogru": 3
+  },
+  {
+   "tur": "bosluk",
+   "duzey": "hatirla",
+   "kelimeler": true,
+   "fazla": [
+    "tuz köprüsü"
+   ],
+   "soru": "Cümlelerdeki boşlukları kutudaki uygun kavramlarla tamamlayınız. Kutudaki bir kavram kullanılmayacaktır.",
+   "cumleler": [
+    {
+     "metin": "İstemsiz bir redoks tepkimesinin dışarıdan elektrik enerjisi verilerek gerçekleştirilmesine ___ denir.",
+     "cevap": "elektroliz"
+    },
+    {
+     "metin": "Elektrolizde anyonlar ___ elektroda giderek elektron verir.",
+     "cevap": "anot"
+    },
+    {
+     "metin": "Metal katyonları ___ elektrotta elektron alarak metale dönüşür.",
+     "cevap": "katot"
+    },
+    {
+     "metin": "Bir eşyanın elektrolizle başka bir metalle kaplanmasına ___ denir.",
+     "cevap": "galvanoplasti"
+    }
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Görselde seri bağlı iki elektroliz kabı verilmiştir. Bir süre sonra I. kabın katodunda 0,4 mol Ag toplandığına göre aynı sürede II. kabın katodunda kaç mol Cu toplanır?",
+   "secenekler": [
+    "0,1",
+    "0,2",
+    "0,4",
+    "0,8"
+   ],
+   "dogru": 1
+  },
+  {
+   "tur": "kisa",
+   "duzey": "uygula",
+   "soru": "Erimiş {alt:CaCl|2} elektrolizinde katotta gerçekleşen yarı tepkimeyi yazınız.",
+   "cevap": "{us:Ca|2+} + 2{us:e|−} → Ca(k)",
+   "satir": 1
+  },
+  {
+   "tur": "eslestir",
+   "duzey": "hatirla",
+   "soru": "Kavramları uygun açıklamalarla eşleştiriniz.",
+   "ciftler": [
+    [
+     "1 Faraday",
+     "1 mol elektronun yükü"
+    ],
+    [
+     "Coulomb (C)",
+     "Elektrik yükünün birimi"
+    ],
+    [
+     "Amper (A)",
+     "Akım şiddetinin birimi"
+    ],
+    [
+     "Elektrolitik hücre",
+     "İstemsiz redoks tepkimesinin yürütüldüğü düzenek"
+    ]
+   ]
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Erimiş {alt:Al|2}{alt:O|3} elektrolizinde katotta 2,7 g alüminyum toplanması için devreden 9,65 A akım kaç saniye geçirilmelidir? (Al: 27 g/mol, 1 F = 96 500 C)",
+   "secenekler": [
+    "3000",
+    "1000",
+    "9000",
+    "300"
+   ],
+   "dogru": 0
+  },
+  {
+   "tur": "sifre",
+   "duzey": "hatirla",
+   "soru": "İpuçlarına uyan kavramları yazınız. Turuncu kutulardaki harfler, elektroliz kabında elektrotlara doğru hareket eden yüklü taneciklerin adını verecektir.",
+   "satirlar": [
+    {
+     "ipucu": "Katotta gerçekleşen olay (10 harf)",
+     "cevap": "İNDİRGENME",
+     "anahtar": 0
+    },
+    {
+     "ipucu": "Coulomb birimiyle ölçülen büyüklük: elektrik … (3 harf)",
+     "cevap": "YÜK",
+     "anahtar": 0
+    },
+    {
+     "ipucu": "Elektrik yükünün birimi (7 harf)",
+     "cevap": "COULOMB",
+     "anahtar": 1
+    },
+    {
+     "ipucu": "Yükseltgenmenin gerçekleştiği elektrot (4 harf)",
+     "cevap": "ANOT",
+     "anahtar": 1
+    }
+   ],
+   "sonuc": "İYON"
+  },
+  {
+   "tur": "acik",
+   "duzey": "ust",
+   "soru": "Galvanik pilde ve elektrolitik hücrede anotta gerçekleşen olay aynıdır ama anodun işareti farklıdır. Bu durumu açıklayınız.",
+   "cevap": "İkisinde de anotta yükseltgenme olur. Pilde anot elektron kaynağı olduğundan (−), elektrolizde üretecin (+) kutbuna bağlandığından (+) işaretlidir.",
+   "satir": 3
+  },
+  {
+   "tur": "coktan",
+   "duzey": "uygula",
+   "soru": "Görseldeki erimiş NaCl elektrolizinde anotta 0,5 mol {alt:Cl|2} gazı toplandığına göre devreden geçen yük kaç faradaydır?",
+   "secenekler": [
+    "2",
+    "0,5",
+    "1",
+    "0,25"
+   ],
+   "dogru": 2
+  },
+  {
+   "tur": "coktan",
+   "duzey": "ust",
+   "soru": "Bir elektroliz kabından geçen akım şiddeti 2 katına çıkarılıp süre yarıya indirilirse katotta toplanan madde kütlesi nasıl değişir?",
+   "secenekler": [
+    "2 katına çıkar.",
+    "Yarıya iner.",
+    "Değişmez.",
+    "4 katına çıkar."
+   ],
+   "dogru": 2
+  },
+  {
+   "tur": "kisa",
+   "duzey": "ust",
+   "soru": "Seri bağlı iki kaptan birincisinin katodunda 0,3 mol Cu ({us:Cu|2+} iyonlarından) toplanırken ikinci kabın katodunda {us:X|3+} iyonlarından kaç mol X toplanır?",
+   "cevap": "0,3 · 2 = n · 3 ⇒ n = 0,2 mol",
+   "satir": 1
+  }
+ ]
+}
