@@ -109,7 +109,7 @@ KURALLAR
 6. Kâğıt iki A4 sayfayı dolduracak kadar içerik taşısın ama taşmasın: 12-14 soru, 5-8'i görselli (tablo, şifre ve kavram haritası da görsel sayılır).
 SİTE GÖSTERİMİ (metin alanlarında; SVG içinde kullanma): {koyu:metin}, {kesir:a|b}, {us:x|2} (x²), {alt:H|2} (H₂), {kok:x} (√x). Kimya formülü H{alt:2}O biçiminde. Başka süslü parantez kullanma.
 GÖRSEL (SVG) KURALLARI
-- Geçerli XML: <svg viewBox="0 0 G Y" role="img" aria-label="…"> ile başlar; genişlik G en çok 600, yükseklik Y en çok 260. width/height verme; isteğe bağlı style="max-height:40mm". & yerine &amp;; HTML varlığı (&nbsp;) yok.
+- Geçerli XML: <svg viewBox="0 0 G Y" role="img" aria-label="…"> ile başlar; genişlik G en çok 600, yükseklik Y en çok 260. width/height verme; baskıda yer sınırlı olduğu için style="max-height:24mm" ver (geniş şema en çok 34mm); görseller yatay ve alçak olsun (oran en az 2,5:1). & yerine &amp;; HTML varlığı (&nbsp;) yok.
 - Yazılar font-family="Noto Sans, sans-serif", font-size 12-14, Türkçe karakterli; her yazı viewBox içinde kalır, yazılar ve şekiller üst üste binmez.
 - Renkler: lacivert #0b2257, mavi #2451d6, turuncu #ee7d12, yeşil #12a150, kırmızı #d63a3a, mor #7c3aed; açık zeminler #e8eefe, #fff1df, #e3f6ea.
 - İnsan figürü, yüz, el çizme (K024/K048); dinî konularda canlı tasviri yok. <script>, <image>, <foreignObject>, dış bağlantı yok.
@@ -688,6 +688,19 @@ def tasma(ad):
             for x in json.loads(html.unescape(m.group(1)))]
 
 
+def _sigmiyor(o, olcum, m_):
+    """İki sayfaya sığmayan kâğıt için modele ölçülü geri bildirim."""
+    k = min(m_.OLCEKLER)
+    boy, g = olcum[k]['boy'], 7 * k
+    tam = [s.get('genislik') == 'tam' for s in o['sorular']]
+    gerek = sum((2 if t else 1) * (b + g) for b, t in zip(boy, tam))
+    kapasite = 2 * ((m_.SAYFA_BOY - m_.PAY - olcum[k]['ust']) + (m_.SAYFA_BOY - m_.PAY))
+    uzun = sorted(range(len(boy)), key=lambda i: -boy[i] * (2 if tam[i] else 1))[:4]
+    return (f'en küçük ölçekte ({k}) bile içerik iki sayfanın yaklaşık %{round(100 * gerek / kapasite)} kadarını tutuyor; en uzun sorular: '
+            + ', '.join(f'sorular[{i}] {boy[i] / m_.MM:.0f} mm{" (tam genişlik)" if tam[i] else ""}' for i in uzun)
+            + '. Görselleri alçaltın (style="max-height:24mm" ya da daha az), uzun soru köklerini ve şıkları kısaltın ya da bir soru çıkarın.')
+
+
 def bas(kagit, gorseller, ad, hedef):
     """Geçici klasöre basar. Döner (sorunlar, bilgi): bilgi = {'pdf': [cevapsız, cevaplı], 'sira': [basılı no → JSON sırası (1 tabanlı)],
     'sayfa': (s1, s2), 'olcek', 'bosluk'}."""
@@ -707,7 +720,7 @@ def bas(kagit, gorseller, ad, hedef):
             olcum = m_.olc(o, ad, m_._api_font)
             adaylar = m_.yerlesim(o, olcum) if olcum else []
             if not adaylar:
-                return [f'ölçümlü yerleşim yok ({"ölçüm alınamadı" if not olcum else "2 sayfaya sığmıyor"}); sorular kısaltılmalı'], None
+                return [f'ölçümlü yerleşim yok: ' + (_sigmiyor(o, olcum, m_) if olcum else 'ölçüm alınamadı')], None
             for olcek, plan, bosluk in adaylar:
                 o['sorular'] = list(asil)
                 plan = m_.sirala(o, plan)
@@ -729,7 +742,7 @@ def bas(kagit, gorseller, ad, hedef):
 
 
 def png_sayfalar(pdfler, dpi=110):
-    import fitz
+    import pymupdf as fitz
     cikti = []
     for p in pdfler:
         with fitz.open(p) as belge:
