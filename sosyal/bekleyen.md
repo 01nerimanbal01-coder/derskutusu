@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 723 gönderi.
+Toplam 725 gönderi.
 
 ## bilgi-11-cografya-5
 Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-cografya-5.png
@@ -7881,4 +7881,24 @@ Bunu biliyor muydunuz? Hukukun doğuşu: Artı ürün, mülkiyet ve kalabalık �
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 9. sınıf Tarih 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/9-tarih-hafta-16
 #derskutusu #tarih #9sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-peygamberimizin-hayati-16
+Sıra: 2027-03-10 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-peygamberimizin-hayati-16.png
+
+```
+Bunu biliyor muydunuz? Davetin ilk halkası: Hz. Ali, Peygamberimizin evinde yaklaşık on yaşında iman eden ilk çocuk olarak tebliğin başladığı ilk çevrede, Hz. Hatice ve Zeyd b. Hârise ile birlikte yer almıştır. Yakın akrabaya davet: 'En yakın akrabanı uyar' (Şuarâ, 214) ayetinden sonra Abdülmuttalib oğullarına yapılan davette, rivayete göre Peygamberimize destek vermek için ayağa kalkan tek kişi genç Ali olmuştur.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Peygamberimizin Hayatı 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-peygamberimizin-hayati-hafta-16
+#derskutusu #peygamberimizinhayatı #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-islam-kultur-ve-medeniyeti-16
+Sıra: 2027-03-10 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-16.png
+
+```
+Bunu biliyor muydunuz? İlk emir 'Oku': Alak Suresi 1-5. ayetlerle başlayan vahiy; okumayı, kalemi ve öğretmeyi Allah'ın insana lütfu olarak sunar ve İslam medeniyetinin ilim merkezli karakterini belirler. Bilenle bilmeyen bir değildir: Zümer Suresi 9, Mücâdele Suresi 11 ve Tâhâ Suresi 114. ayetler ilmi bir üstünlük ve derece sebebi sayar; mümine 'Rabbim, ilmimi artır' duasını öğretir.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf İslam Kültür ve Medeniyeti 16. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-islam-kultur-ve-medeniyeti-hafta-16
+#derskutusu #islamkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
