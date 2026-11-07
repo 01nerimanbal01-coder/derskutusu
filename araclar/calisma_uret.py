@@ -595,15 +595,17 @@ def main():
         kayitlar.append(web_sayfasi(o, ad, plan))
         print(f'{ad}: {len(o["sorular"])} soru, görselli {gorselli} (%{100 * gorselli // len(o["sorular"])}); PDF {s1} sayfa (ölçek {k1}), cevaplı {s2} sayfa (ölçek {k2})'
               + (f'; sütun altı boşluk (mm, yayılmadan önce) {bosluk}' + ('  ← KISA: soru eklenmeli' if max(bosluk[2:] or [0]) > 45 else '') if plan else ''))
-    # içerik listesi ve site haritası (bütün çalışma kâğıtları yeniden taranır)
+    # içerik listesi ve site haritası: var olan sıra korunur (07.11.2026). Basılan kâğıdın kaydı yerinde güncellenir,
+    # yeni kâğıt sona eklenir; site haritasına yalnız eksik adres eklenir. Eskiden bütün çalışma kâğıdı kayıtları listenin
+    # sonuna taşınıyor, sıra her basımda değişiyordu (ana Mac'te icerik_sira_koru.py düzeltiyordu; artık gerekmez).
     veri = json.loads((PUBLIC / 'veri' / 'icerikler.json').read_text(encoding='utf-8'))
-    hepsi = {k['goruntule']: k for k in veri['icerikler'] if k.get('tur') == 'Çalışma kâğıdı'}
-    hepsi.update({k['goruntule']: k for k in kayitlar})
-    veri['icerikler'] = [k for k in veri['icerikler'] if k.get('tur') != 'Çalışma kâğıdı'] + list(hepsi.values())
+    yeni = {k['goruntule']: k for k in kayitlar}
+    veri['icerikler'] = [yeni.pop(k['goruntule']) if k.get('tur') == 'Çalışma kâğıdı' and k.get('goruntule') in yeni else k
+                         for k in veri['icerikler']] + list(yeni.values())
     (PUBLIC / 'veri' / 'icerikler.json').write_text(json.dumps(veri, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     harita = (PUBLIC / 'sitemap.xml').read_text(encoding='utf-8')
-    harita = re.sub(r'\s*<url><loc>https://derskutusu\.com/calisma/[^<]+</loc></url>', '', harita)
-    ek = ''.join(f'\n  <url><loc>https://derskutusu.com/{k}</loc></url>' for k in hepsi)
+    ek = ''.join(f'\n  <url><loc>https://derskutusu.com/{k["goruntule"]}</loc></url>' for k in kayitlar
+                 if f'<loc>https://derskutusu.com/{k["goruntule"]}</loc>' not in harita)
     (PUBLIC / 'sitemap.xml').write_text(harita.replace('\n</urlset>', ek + '\n</urlset>'), encoding='utf-8')
     if tasanlar:
         sys.exit('2 sayfayı aşan çalışma kâğıdı: ' + ', '.join(tasanlar))
