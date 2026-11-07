@@ -1,0 +1,650 @@
+{
+  "ad": "8-matematik-17",
+  "sinif": 8,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 17,
+  "tarih": "11-15 Ocak 2027",
+  "yayin_tarihi": "2027-01-11",
+  "unite": "Cebir",
+  "konu": "Özdeşlikler ve Modellerle Açıklanması: İki Terim Toplamının Karesi, İki Terim Farkının Karesi ve İki Kare Farkı",
+  "ciktilar": [
+    "M.8.2.1.3. Özdeşlikleri modellerle açıklar.",
+    "M.8.2.1.3.a) {us:(a ± b)|2} = {us:a|2} ± 2ab + {us:b|2} ve {us:a|2} − {us:b|2} = (a − b)(a + b) özdeşlikleriyle sınırlı kalınır.",
+    "M.8.2.1.3.b) Özdeşliklerdeki katsayılar tam sayılardan seçilir."
+  ],
+  "giris": "Geçen hafta cebirsel ifadeleri çarpmayı, özellikle (2x + 3)(5x − 1) gibi iki terimlilerin çarpımını alan modeliyle öğrendik. Bu hafta bu çarpımların içinden çok sık karşılaşılan ve her zaman aynı kalıba uyan üç özel çarpımı inceleyeceğiz: {koyu:iki terim toplamının karesi}, {koyu:iki terim farkının karesi} ve {koyu:iki kare farkı}. Önce {koyu:özdeşlik} ile {koyu:denklem} arasındaki farkı göreceğiz. Ardından her özdeşliği kare ve dikdörtgen modelleriyle neden doğru olduğunu açıklayarak inşa edecek, katsayılı ifadelerde ve pratik sayısal hesaplarda kullanacağız.",
+  "ozet": [
+    "{koyu:Özdeşlik:} Değişkenlerin alabileceği her değer için doğru olan eşitliktir; denklem ise yalnız bazı değerler için doğrudur: 2(x + 3) = 2x + 6 bir özdeşlik, 2x + 1 = 7 bir denklemdir.",
+    "{koyu:İki terim toplamının karesi:} {us:(a + b)|2} = {us:a|2} + 2ab + {us:b|2}; kenarı a + b olan kare, bir {us:a|2} karesi, iki ab dikdörtgeni ve bir {us:b|2} karesine ayrılır.",
+    "{koyu:İki terim farkının karesi:} {us:(a − b)|2} = {us:a|2} − 2ab + {us:b|2}; kenarı a olan kareden iki ab şeridi çıkarılırken köşedeki {us:b|2} iki kez çıkarıldığı için bir kez geri eklenir.",
+    "{koyu:İki kare farkı:} (a − b)(a + b) = {us:a|2} − {us:b|2}; büyük kareden küçük kare kesilip kalan parçalar yeniden dizildiğinde kenarları a + b ve a − b olan dikdörtgen oluşur.",
+    "{koyu:Katsayılı terimler:} Terimlerin tamamı karesi alınan parçadır: {us:(2x − 3)|2} = 4{us:x|2} − 12x + 9; ortadaki terim, iki terimin çarpımının iki katıdır.",
+    "{koyu:Pratik hesap ve kontrol:} Özdeşlikler {us:101|2} = 10 201 ya da 52 · 48 = 2496 gibi hesapları kolaylaştırır; {us:(a + b)|2} hiçbir zaman {us:a|2} + {us:b|2} ile genel olarak eşit değildir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "1. Eşitlik, Denklem ve Özdeşlik: Her Değerde Doğru Olan Eşitlikler",
+      "metin": [
+        "Matematikte iki ifadenin arasına konan eşittir işareti her zaman aynı anlamı taşımaz. 2x + 1 = 7 eşitliğini düşünelim. x = 3 yazıldığında 2 · 3 + 1 = 7 olur ve eşitlik doğrudur; fakat x = 1 için 3 = 7 gibi yanlış bir sonuç çıkar. Yalnızca bazı değerler için doğru olan bu tür eşitliklere {koyu:denklem} denir ve denklemi doğru yapan değeri bulmaya denklem çözmek denir. Denklem çözmeyi ilerleyen haftalarda ayrıca ele alacağız; bu hafta odağımız başka türden bir eşitliktir.",
+        "2(x + 3) = 2x + 6 eşitliğine bakalım. x = 0 için iki taraf da 6, x = 1 için 8, x = −2 için 2 olur. Hangi sayıyı yazarsak yazalım iki taraf hep aynı değeri verir, çünkü sağ taraf sol tarafın dağılma özelliğiyle açılmış hâlidir. Değişkenlerin alabileceği {koyu:her değer için doğru olan} eşitliklere {koyu:özdeşlik} denir. Geçen hafta yaptığımız her doğru çarpım, aslında bir özdeşliktir: (x + 2)(x + 3) = {us:x|2} + 5x + 6 eşitliği de her x için doğrudur.",
+        "Bir eşitliğin özdeşlik olup olmadığını anlamanın iki yolu vardır. Birincisi {koyu:cebirsel yol}dur: bir taraf açılıp sadeleştirildiğinde diğer tarafla birebir aynı ifade elde edilirse eşitlik özdeşliktir. İkincisi {koyu:değer verme}dir: birkaç farklı değer denenir. Ancak dikkat: birkaç değerde doğru çıkması özdeşlik olduğunu kanıtlamaz, yalnızca güçlü bir ipucudur. Tek bir değerde bile yanlış çıkması ise eşitliğin özdeşlik olmadığını kesin olarak gösterir. Örneğin {us:(x + 1)|2} = {us:x|2} + 1 eşitliği x = 0 için doğrudur, ama x = 1 için 4 = 2 olduğundan özdeşlik değildir. Bu hafta tanıyacağımız üç özdeşlik ise hem cebirsel olarak hem de geometrik modellerle her zaman doğru olduklarını gösterebileceğimiz eşitliklerdir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Eşitlik",
+          "x = 0",
+          "x = 1",
+          "x = 2",
+          "Türü"
+        ],
+        "satirlar": [
+          [
+            "2x + 1 = 7",
+            "1 ve 7 (yanlış)",
+            "3 ve 7 (yanlış)",
+            "5 ve 7 (yanlış)",
+            "Denklem (yalnız x = 3 için doğru)"
+          ],
+          [
+            "2(x + 3) = 2x + 6",
+            "6 ve 6",
+            "8 ve 8",
+            "10 ve 10",
+            "Özdeşlik"
+          ],
+          [
+            "(x + 2)(x + 3) = {us:x|2} + 5x + 6",
+            "6 ve 6",
+            "12 ve 12",
+            "20 ve 20",
+            "Özdeşlik"
+          ],
+          [
+            "{us:(x + 1)|2} = {us:x|2} + 1",
+            "1 ve 1",
+            "4 ve 2 (yanlış)",
+            "9 ve 5 (yanlış)",
+            "Özdeşlik değil"
+          ],
+          [
+            "{us:(x + 1)|2} = {us:x|2} + 2x + 1",
+            "1 ve 1",
+            "4 ve 4",
+            "9 ve 9",
+            "Özdeşlik"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Özdeşlik",
+          "metin": "İçindeki değişkenlerin alabileceği {koyu:her değer için} doğru olan eşitliğe {koyu:özdeşlik} denir. Yalnızca bazı değerler için doğru olan eşitliğe ise {koyu:denklem} denir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Bir Değerde Tutması Yetmez",
+          "metin": "Bir eşitliği özdeşlik saymak için tek bir değerde doğru çıkması yeterli değildir. Ama tek bir değerde yanlış çıkması, özdeşlik olmadığını göstermeye yeter. Bu yüzden kontrol yaparken 0 ve 1 dışında 2, 3 gibi değerler de deneyiniz."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' fill='#f8fafc' rx='12'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>DENKLEM Mİ, ÖZDEŞLİK Mİ?</text><rect x='25' y='50' width='345' height='230' rx='10' fill='#fff7ed' stroke='#f97316' stroke-width='1.5'/><text x='197' y='78' text-anchor='middle' font-size='15' font-weight='bold' fill='#c2410c'>DENKLEM: 2x + 1 = 7</text><text x='197' y='100' text-anchor='middle' font-size='12' fill='#9a3412'>Yalnız bazı değerlerde doğru</text><rect x='50' y='115' width='295' height='30' rx='6' fill='#fee2e2' stroke='#dc2626'/><text x='197' y='135' text-anchor='middle' font-size='13' fill='#7f1d1d'>x = 1 : 3 ≠ 7 (yanlış)</text><rect x='50' y='152' width='295' height='30' rx='6' fill='#fee2e2' stroke='#dc2626'/><text x='197' y='172' text-anchor='middle' font-size='13' fill='#7f1d1d'>x = 2 : 5 ≠ 7 (yanlış)</text><rect x='50' y='189' width='295' height='30' rx='6' fill='#dcfce7' stroke='#16a34a'/><text x='197' y='209' text-anchor='middle' font-size='13' fill='#14532d'>x = 3 : 7 = 7 (doğru)</text><text x='197' y='250' text-anchor='middle' font-size='13' font-weight='bold' fill='#c2410c'>Tek değerde doğru: çözüm x = 3</text><rect x='390' y='50' width='345' height='230' rx='10' fill='#eff6ff' stroke='#3b82f6' stroke-width='1.5'/><text x='562' y='78' text-anchor='middle' font-size='15' font-weight='bold' fill='#1e3a8a'>ÖZDEŞLİK: 2(x + 3) = 2x + 6</text><text x='562' y='100' text-anchor='middle' font-size='12' fill='#1e40af'>Her değerde doğru</text><rect x='415' y='115' width='295' height='30' rx='6' fill='#dcfce7' stroke='#16a34a'/><text x='562' y='135' text-anchor='middle' font-size='13' fill='#14532d'>x = 0 : 6 = 6</text><rect x='415' y='152' width='295' height='30' rx='6' fill='#dcfce7' stroke='#16a34a'/><text x='562' y='172' text-anchor='middle' font-size='13' fill='#14532d'>x = 1 : 8 = 8</text><rect x='415' y='189' width='295' height='30' rx='6' fill='#dcfce7' stroke='#16a34a'/><text x='562' y='209' text-anchor='middle' font-size='13' fill='#14532d'>x = −2 : 2 = 2</text><text x='562' y='250' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>Sağ taraf, sol tarafın açılmış hâli</text></svg>"
+    },
+    {
+      "baslik": "2. İki Terim Toplamının Karesi: (a + b)² Özdeşliği ve Kare Modeli",
+      "metin": [
+        "Bir ifadenin karesi, o ifadenin kendisiyle çarpımıdır: {us:(a + b)|2} = (a + b)(a + b). Geçen haftaki dört kısmi çarpım yöntemini uygulayalım: a · a = {us:a|2}, a · b = ab, b · a = ab ve b · b = {us:b|2}. Ortadaki iki terim benzer terim olduğundan ab + ab = 2ab olur. Böylece {koyu:{us:(a + b)|2} = {us:a|2} + 2ab + {us:b|2}} özdeşliği elde edilir. Bu eşitliğe {koyu:iki terim toplamının karesi} denir ve şöyle okunur: birincinin karesi, artı birinci ile ikincinin çarpımının iki katı, artı ikincinin karesi.",
+        "Özdeşliği bir {koyu:kare modeliyle} açıklayalım. Kenar uzunluğu a + b olan bir kare çizelim; her kenarı a ve b uzunluğunda iki parçaya bölünsün. Bölme noktalarından çizilen doğrular kareyi dört parçaya ayırır: kenarları a ve a olan bir kare (alanı {us:a|2}), kenarları b ve b olan bir kare (alanı {us:b|2}) ve kenarları a ile b olan {koyu:iki eş dikdörtgen} (her birinin alanı ab). Büyük karenin alanı {us:(a + b)|2} olduğu gibi, dört parçanın alanları toplamı da {us:a|2} + ab + ab + {us:b|2}'dir. Aynı alanı iki farklı biçimde hesapladığımız için iki ifade her zaman eşittir; özdeşliğin her a ve b için doğru olmasının nedeni budur.",
+        "Cebir karolarıyla da aynı model kurulabilir. {us:(x + 3)|2} için kenarı x + 3 olan kareyi karolarla dolduralım: x ile x'in karşılaştığı yerde bir {us:x|2} karosu, x ile 1'lerin karşılaştığı yerlerde iki grup hâlinde 3 + 3 = 6 tane x karosu, 1'lerin karşılaştığı köşede 3 · 3 = 9 birim karo bulunur. Sonuç {koyu:{us:x|2} + 6x + 9} olur. Burada ortadaki 6x terimi 2 · x · 3 işleminden, son terim 9 ise {us:3|2} işleminden gelir. Model, ortadaki terimin neden {koyu:iki kat} olduğunu açıkça gösterir: kare modelde ab dikdörtgeni bir kez sağ üstte, bir kez sol altta yer alır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "İfade",
+          "Birincinin Karesi",
+          "Çarpımın İki Katı",
+          "İkincinin Karesi",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "{us:(a + b)|2}",
+            "{us:a|2}",
+            "2ab",
+            "{us:b|2}",
+            "{us:a|2} + 2ab + {us:b|2}"
+          ],
+          [
+            "{us:(x + 3)|2}",
+            "{us:x|2}",
+            "2 · x · 3 = 6x",
+            "9",
+            "{us:x|2} + 6x + 9"
+          ],
+          [
+            "{us:(x + 5)|2}",
+            "{us:x|2}",
+            "2 · x · 5 = 10x",
+            "25",
+            "{us:x|2} + 10x + 25"
+          ],
+          [
+            "{us:(y + 1)|2}",
+            "{us:y|2}",
+            "2 · y · 1 = 2y",
+            "1",
+            "{us:y|2} + 2y + 1"
+          ],
+          [
+            "{us:(m + 7)|2}",
+            "{us:m|2}",
+            "2 · m · 7 = 14m",
+            "49",
+            "{us:m|2} + 14m + 49"
+          ],
+          [
+            "{us:(a + 2b)|2}",
+            "{us:a|2}",
+            "2 · a · 2b = 4ab",
+            "4{us:b|2}",
+            "{us:a|2} + 4ab + 4{us:b|2}"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İki Terim Toplamının Karesi",
+          "metin": "{us:(a + b)|2} = {us:a|2} + 2ab + {us:b|2}. Açılımda her zaman üç terim vardır: birincinin karesi, iki terimin çarpımının iki katı ve ikincinin karesi."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Karo Sayısıyla Kontrol",
+          "metin": "{us:(x + 3)|2} modelinde 1 büyük kare, 6 uzun karo ve 9 birim karo vardır. Toplam 16 karo, kenardaki parça sayısının karesine (4 · 4 = 16) eşittir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' fill='#f8fafc' rx='12'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>İKİ TERİM TOPLAMININ KARESİ: KARE MODELİ</text><rect x='80' y='60' width='150' height='150' fill='#bfdbfe' stroke='#1d4ed8' stroke-width='1.5'/><text x='155' y='140' text-anchor='middle' font-size='18' font-weight='bold' fill='#1e3a8a'>a²</text><rect x='230' y='60' width='80' height='150' fill='#bbf7d0' stroke='#15803d' stroke-width='1.5'/><text x='270' y='140' text-anchor='middle' font-size='16' font-weight='bold' fill='#14532d'>ab</text><rect x='80' y='210' width='150' height='80' fill='#bbf7d0' stroke='#15803d' stroke-width='1.5'/><text x='155' y='255' text-anchor='middle' font-size='16' font-weight='bold' fill='#14532d'>ab</text><rect x='230' y='210' width='80' height='80' fill='#fed7aa' stroke='#c2410c' stroke-width='1.5'/><text x='270' y='255' text-anchor='middle' font-size='16' font-weight='bold' fill='#7c2d12'>b²</text><text x='155' y='52' text-anchor='middle' font-size='14' fill='#334155'>a</text><text x='270' y='52' text-anchor='middle' font-size='14' fill='#334155'>b</text><text x='66' y='140' text-anchor='middle' font-size='14' fill='#334155'>a</text><text x='66' y='255' text-anchor='middle' font-size='14' fill='#334155'>b</text><text x='195' y='310' text-anchor='middle' font-size='12' fill='#475569'>Kenar: a + b</text><rect x='350' y='60' width='385' height='75' rx='10' fill='#eff6ff' stroke='#3b82f6' stroke-width='1.5'/><text x='542' y='88' text-anchor='middle' font-size='13' fill='#1e3a8a'>Büyük karenin alanı = parçaların toplamı</text><text x='542' y='118' text-anchor='middle' font-size='16' font-weight='bold' fill='#1d4ed8'>(a + b)² = a² + ab + ab + b²</text><rect x='350' y='148' width='385' height='50' rx='10' fill='#dcfce7' stroke='#16a34a' stroke-width='1.5'/><text x='542' y='180' text-anchor='middle' font-size='16' font-weight='bold' fill='#15803d'>(a + b)² = a² + 2ab + b²</text><rect x='350' y='212' width='385' height='80' rx='10' fill='#fef9c3' stroke='#eab308' stroke-width='1.5'/><text x='542' y='238' text-anchor='middle' font-size='13' font-weight='bold' fill='#854d0e'>Örnek: a = x, b = 3</text><text x='542' y='262' text-anchor='middle' font-size='14' fill='#713f12'>(x + 3)² = x² + 2 · x · 3 + 3²</text><text x='542' y='283' text-anchor='middle' font-size='14' font-weight='bold' fill='#713f12'>= x² + 6x + 9</text></svg>"
+    },
+    {
+      "baslik": "3. İki Terim Farkının Karesi: (a − b)² Özdeşliği ve Kesip Çıkarma Modeli",
+      "metin": [
+        "{us:(a − b)|2} ifadesini de kendisiyle çarparak açalım: (a − b)(a − b). Kısmi çarpımlar a · a = {us:a|2}, a · (−b) = −ab, (−b) · a = −ab ve (−b) · (−b) = +{us:b|2}'dir. Ortadaki iki terim birleşince −2ab olur. Böylece {koyu:{us:(a − b)|2} = {us:a|2} − 2ab + {us:b|2}} özdeşliği elde edilir. Bu eşitliğe {koyu:iki terim farkının karesi} denir. Toplamın karesinden tek farkı ortadaki terimin işaretidir; son terim {us:b|2} ise yine {koyu:pozitiftir}, çünkü iki negatifin çarpımı pozitiftir.",
+        "Bu özdeşliği {koyu:kesip çıkarma} modeliyle açıklayalım. Kenarı a olan bir kare düşünelim (a, b'den büyük olsun). Bu karenin sağından genişliği b olan bir şerit, altından da yüksekliği b olan bir şerit kesip çıkardığımızda geriye kenarı a − b olan bir kare kalır. Her şeridin alanı a · b'dir; bu yüzden {us:a|2}'den ab'yi iki kez çıkarırız. Ancak iki şerit sağ alt köşede kenarı b olan küçük bir karede {koyu:üst üste biner}. Bu köşe hem birinci hem ikinci şeritte sayıldığı için iki kez çıkarılmış olur. Fazladan çıkarılan bu {us:b|2} alanını bir kez geri eklemek gerekir: {us:a|2} − ab − ab + {us:b|2} = {us:a|2} − 2ab + {us:b|2}.",
+        "Sayısal bir örnekle modeli doğrulayalım. a = 10, b = 3 olsun. Kalan karenin kenarı 7, alanı 49'dur. Özdeşlikle: 100 − 2 · 10 · 3 + 9 = 100 − 60 + 9 = 49. Değişkenli bir örnek: {us:(x − 4)|2} = {us:x|2} − 2 · x · 4 + {us:4|2} = {koyu:{us:x|2} − 8x + 16}. Sık yapılan hata son terimi −16 yazmaktır; oysa (−4) · (−4) = +16'dır. x = 6 için kontrol: {us:(6 − 4)|2} = 4 ve 36 − 48 + 16 = 4 bulunur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "İfade",
+          "Birincinin Karesi",
+          "Çarpımın İki Katı (−)",
+          "İkincinin Karesi (+)",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "{us:(a − b)|2}",
+            "{us:a|2}",
+            "−2ab",
+            "+{us:b|2}",
+            "{us:a|2} − 2ab + {us:b|2}"
+          ],
+          [
+            "{us:(x − 4)|2}",
+            "{us:x|2}",
+            "−8x",
+            "+16",
+            "{us:x|2} − 8x + 16"
+          ],
+          [
+            "{us:(y − 1)|2}",
+            "{us:y|2}",
+            "−2y",
+            "+1",
+            "{us:y|2} − 2y + 1"
+          ],
+          [
+            "{us:(m − 6)|2}",
+            "{us:m|2}",
+            "−12m",
+            "+36",
+            "{us:m|2} − 12m + 36"
+          ],
+          [
+            "{us:(x − 10)|2}",
+            "{us:x|2}",
+            "−20x",
+            "+100",
+            "{us:x|2} − 20x + 100"
+          ],
+          [
+            "{us:(a − 3b)|2}",
+            "{us:a|2}",
+            "−6ab",
+            "+9{us:b|2}",
+            "{us:a|2} − 6ab + 9{us:b|2}"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İki Terim Farkının Karesi",
+          "metin": "{us:(a − b)|2} = {us:a|2} − 2ab + {us:b|2}. Ortadaki terim eksi, ilk ve son terim artıdır. Karesi alınan bir ifade negatif olamayacağı için son terim daima pozitiftir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Köşeyi Geri Eklemeyi Unutma",
+          "metin": "Kesip çıkarma modelinde köşedeki küçük kare iki şeritte de bulunur ve iki kez çıkarılır. Bu nedenle sonuç {us:a|2} − 2ab değil, {us:a|2} − 2ab + {us:b|2}'dir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' fill='#f8fafc' rx='12'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>İKİ TERİM FARKININ KARESİ: KESİP ÇIKARMA MODELİ</text><rect x='70' y='55' width='240' height='240' fill='#ffffff' stroke='#334155' stroke-width='2'/><rect x='70' y='55' width='165' height='165' fill='#bbf7d0' stroke='#15803d' stroke-width='1.5'/><text x='152' y='138' text-anchor='middle' font-size='17' font-weight='bold' fill='#14532d'>(a − b)²</text><rect x='235' y='55' width='75' height='240' fill='#fecaca' fill-opacity='0.6' stroke='#dc2626' stroke-width='1.5' stroke-dasharray='5,3'/><text x='272' y='130' text-anchor='middle' font-size='13' font-weight='bold' fill='#7f1d1d'>ab</text><rect x='70' y='220' width='240' height='75' fill='#fecaca' fill-opacity='0.6' stroke='#dc2626' stroke-width='1.5' stroke-dasharray='5,3'/><text x='152' y='262' text-anchor='middle' font-size='13' font-weight='bold' fill='#7f1d1d'>ab</text><rect x='235' y='220' width='75' height='75' fill='#fca5a5' stroke='#991b1b' stroke-width='1.5'/><text x='272' y='262' text-anchor='middle' font-size='13' font-weight='bold' fill='#7f1d1d'>b²</text><text x='190' y='48' text-anchor='middle' font-size='13' fill='#334155'>Kenar: a</text><text x='272' y='48' text-anchor='middle' font-size='12' fill='#991b1b'>b</text><text x='56' y='262' text-anchor='middle' font-size='12' fill='#991b1b'>b</text><rect x='350' y='55' width='385' height='72' rx='10' fill='#fff7ed' stroke='#f97316' stroke-width='1.5'/><text x='542' y='82' text-anchor='middle' font-size='13' fill='#7c2d12'>Büyük kareden iki şerit çıkar</text><text x='542' y='110' text-anchor='middle' font-size='15' font-weight='bold' fill='#c2410c'>a² − ab − ab</text><rect x='350' y='137' width='385' height='72' rx='10' fill='#fee2e2' stroke='#dc2626' stroke-width='1.5'/><text x='542' y='164' text-anchor='middle' font-size='13' fill='#7f1d1d'>Köşe (b²) iki kez çıkarıldı, bir kez ekle</text><text x='542' y='192' text-anchor='middle' font-size='15' font-weight='bold' fill='#991b1b'>a² − ab − ab + b²</text><rect x='350' y='219' width='385' height='76' rx='10' fill='#dcfce7' stroke='#16a34a' stroke-width='1.5'/><text x='542' y='248' text-anchor='middle' font-size='16' font-weight='bold' fill='#15803d'>(a − b)² = a² − 2ab + b²</text><text x='542' y='276' text-anchor='middle' font-size='13' fill='#14532d'>a = 10, b = 3 : 49 = 100 − 60 + 9</text></svg>"
+    },
+    {
+      "baslik": "4. İki Kare Farkı: a² − b² = (a − b)(a + b) Özdeşliği ve Yeniden Dizme Modeli",
+      "metin": [
+        "Toplamı ile farkı aynı iki terimden oluşan iki terimliler çarpıldığında ilginç bir sonuç ortaya çıkar. (a − b)(a + b) çarpımında kısmi çarpımlar a · a = {us:a|2}, a · b = ab, (−b) · a = −ab ve (−b) · b = −{us:b|2}'dir. Ortadaki +ab ile −ab birbirini götürür ve geriye yalnız iki terim kalır: {koyu:(a − b)(a + b) = {us:a|2} − {us:b|2}}. Bu özdeşliğe {koyu:iki kare farkı} denir. Toplam ile farkın çarpımı, terimlerin kareleri farkına eşittir.",
+        "Özdeşliği {koyu:yeniden dizme modeliyle} açıklayalım. Kenarı a olan bir kareden, köşesindeki kenarı b olan küçük kareyi kesip atalım. Geriye kalan L biçimli parçanın alanı {us:a|2} − {us:b|2}'dir. Bu parçayı iki dikdörtgene bölelim: üstteki dikdörtgenin kenarları a ve a − b, alttaki dikdörtgenin kenarları a − b ve b'dir. Alttaki dikdörtgeni döndürüp üsttekinin yanına yerleştirdiğimizde ortak kenarı a − b olan tek bir dikdörtgen elde ederiz. Bu yeni dikdörtgenin uzun kenarı a + b, kısa kenarı a − b olur ve alanı (a + b)(a − b)'dir. Parçalar ne eklendi ne çıkarıldı; yalnızca yerleri değişti. Öyleyse alanlar eşittir: {us:a|2} − {us:b|2} = (a − b)(a + b).",
+        "Bu özdeşlikte terimlerin sırası ve çarpanların sırası sonucu değiştirmez: (a + b)(a − b) de {us:a|2} − {us:b|2}'dir. Önemli olan, iki parantezde {koyu:aynı iki terimin} bulunması ve birinde toplam, diğerinde fark olmasıdır. Örnekler: (x − 5)(x + 5) = {us:x|2} − 25, (y + 1)(y − 1) = {us:y|2} − 1, (2m − 3)(2m + 3) = 4{us:m|2} − 9. Model sayılarla da denenebilir: a = 9, b = 4 için 81 − 16 = 65 ve 5 · 13 = 65 bulunur. Dikkat: (x − 5)(x + 6) gibi terimleri farklı olan çarpımlar bu özdeşliğe uymaz; onlar geçen haftaki dört kısmi çarpım yöntemiyle yapılır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Çarpım",
+          "Birinci Terim",
+          "İkinci Terim",
+          "Ortadaki Terimler",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "(a − b)(a + b)",
+            "a",
+            "b",
+            "+ab − ab = 0",
+            "{us:a|2} − {us:b|2}"
+          ],
+          [
+            "(x − 5)(x + 5)",
+            "x",
+            "5",
+            "+5x − 5x = 0",
+            "{us:x|2} − 25"
+          ],
+          [
+            "(y + 1)(y − 1)",
+            "y",
+            "1",
+            "−y + y = 0",
+            "{us:y|2} − 1"
+          ],
+          [
+            "(2m − 3)(2m + 3)",
+            "2m",
+            "3",
+            "+6m − 6m = 0",
+            "4{us:m|2} − 9"
+          ],
+          [
+            "(x + 8)(x − 8)",
+            "x",
+            "8",
+            "−8x + 8x = 0",
+            "{us:x|2} − 64"
+          ],
+          [
+            "(3a − 2b)(3a + 2b)",
+            "3a",
+            "2b",
+            "+6ab − 6ab = 0",
+            "9{us:a|2} − 4{us:b|2}"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İki Kare Farkı",
+          "metin": "(a − b)(a + b) = {us:a|2} − {us:b|2}. İki parantezde aynı terimler bulunur, birinde toplam diğerinde fark vardır. Ortadaki terimler birbirini götürdüğü için sonuçta yalnız iki terim kalır."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Model Neden Çalışır?",
+          "metin": "Kesme ve yeniden dizme işlemleri alanı değiştirmez. L biçimli parça hangi düzende yerleştirilirse yerleştirilsin alanı {us:a|2} − {us:b|2} kalır; yeni dikdörtgende bu alan (a + b)(a − b) olarak okunur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='330' fill='#f8fafc' rx='12'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>İKİ KARE FARKI: KES VE YENİDEN DİZ</text><rect x='40' y='60' width='200' height='130' fill='#bfdbfe' stroke='#1d4ed8' stroke-width='1.5'/><text x='140' y='130' text-anchor='middle' font-size='14' font-weight='bold' fill='#1e3a8a'>a · (a − b)</text><rect x='40' y='190' width='130' height='70' fill='#bbf7d0' stroke='#15803d' stroke-width='1.5'/><text x='105' y='230' text-anchor='middle' font-size='13' font-weight='bold' fill='#14532d'>(a − b) · b</text><rect x='170' y='190' width='70' height='70' fill='#ffffff' stroke='#dc2626' stroke-width='1.5' stroke-dasharray='5,3'/><text x='205' y='230' text-anchor='middle' font-size='13' font-weight='bold' fill='#dc2626'>b²</text><text x='140' y='52' text-anchor='middle' font-size='13' fill='#334155'>a</text><text x='28' y='160' text-anchor='middle' font-size='13' fill='#334155'>a</text><text x='140' y='285' text-anchor='middle' font-size='13' fill='#334155'>Kalan alan: a² − b²</text><text x='140' y='305' text-anchor='middle' font-size='11' fill='#64748b'>(köşedeki b² kesilip atıldı)</text><line x1='265' y1='160' x2='395' y2='160' stroke='#64748b' stroke-width='2.5'/><polygon points='405,160 393,153 393,167' fill='#64748b'/><text x='330' y='148' text-anchor='middle' font-size='12' fill='#475569'>yeşil parçayı</text><text x='330' y='180' text-anchor='middle' font-size='12' fill='#475569'>döndür, yanına koy</text><rect x='420' y='95' width='200' height='130' fill='#bfdbfe' stroke='#1d4ed8' stroke-width='1.5'/><text x='520' y='165' text-anchor='middle' font-size='14' font-weight='bold' fill='#1e3a8a'>a · (a − b)</text><rect x='620' y='95' width='70' height='130' fill='#bbf7d0' stroke='#15803d' stroke-width='1.5'/><text x='655' y='158' text-anchor='middle' font-size='11' font-weight='bold' fill='#14532d'>b ·</text><text x='655' y='174' text-anchor='middle' font-size='11' font-weight='bold' fill='#14532d'>(a − b)</text><text x='520' y='87' text-anchor='middle' font-size='13' fill='#334155'>a</text><text x='655' y='87' text-anchor='middle' font-size='13' fill='#334155'>b</text><text x='555' y='245' text-anchor='middle' font-size='13' fill='#334155'>Uzun kenar: a + b</text><text x='712' y='165' text-anchor='middle' font-size='12' fill='#334155'>a − b</text><rect x='420' y='260' width='300' height='50' rx='10' fill='#dcfce7' stroke='#16a34a' stroke-width='1.5'/><text x='570' y='291' text-anchor='middle' font-size='16' font-weight='bold' fill='#15803d'>a² − b² = (a − b)(a + b)</text></svg>"
+    },
+    {
+      "baslik": "5. Katsayılı ve Negatif Terimli İfadelerde Özdeşlikleri Kullanma",
+      "metin": [
+        "Özdeşliklerdeki a ve b birer {koyu:terim}dir; yalnızca tek bir harf olmak zorunda değildir. a yerine 2x, b yerine 3 yazıldığında {us:(2x + 3)|2} = {us:(2x)|2} + 2 · 2x · 3 + {us:3|2} = {koyu:4{us:x|2} + 12x + 9} olur. Burada en çok yapılan hata {us:(2x)|2} yerine 2{us:x|2} yazmaktır. Karesi alınan, terimin {koyu:tamamıdır}: {us:(2x)|2} = 2x · 2x = 4{us:x|2}. Aynı şekilde {us:(3a)|2} = 9{us:a|2} ve {us:(5y)|2} = 25{us:y|2} olur.",
+        "Ortadaki terimi bulurken üç çarpan birlikte düşünülür: 2, birinci terim ve ikinci terim. {us:(3a − 2b)|2} ifadesinde birincinin karesi 9{us:a|2}, ortadaki terim −2 · 3a · 2b = −12ab, ikincinin karesi 4{us:b|2}'dir; sonuç {koyu:9{us:a|2} − 12ab + 4{us:b|2}} olur. İki farklı değişken bulunan {us:(x + 2y)|2} = {us:x|2} + 4xy + 4{us:y|2} gibi ifadelerde ortadaki terim iki harfi birlikte içerir. Alan modelinde bu, kenarlardan birinin x, diğerinin 2y olan parçalarının karşılaştığı iki dikdörtgene karşılık gelir.",
+        "Negatif terimle başlayan ifadelerde işaretler dikkatle izlenir. {us:(−x + 4)|2} = {us:(−x)|2} + 2 · (−x) · 4 + {us:4|2} = {us:x|2} − 8x + 16 olur; bu sonuç {us:(x − 4)|2} ile aynıdır, çünkü −x + 4 ile x − 4 birbirinin {koyu:ters işaretlisidir} ve ters işaretli sayıların kareleri eşittir. Aynı nedenle {us:(−a − b)|2} = {us:(a + b)|2} olur. İki kare farkında da katsayılar karesiyle çıkar: (5m − 1)(5m + 1) = 25{us:m|2} − 1 ve (4x + 3y)(4x − 3y) = 16{us:x|2} − 9{us:y|2}. Bu tür işlemleri yaparken önce a'nın ve b'nin ne olduğunu ayrı ayrı yazmak hatayı büyük ölçüde azaltır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "İfade",
+          "a",
+          "b",
+          "Uygulanan Özdeşlik",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "{us:(2x + 3)|2}",
+            "2x",
+            "3",
+            "Toplamın karesi",
+            "4{us:x|2} + 12x + 9"
+          ],
+          [
+            "{us:(2x − 3)|2}",
+            "2x",
+            "3",
+            "Farkın karesi",
+            "4{us:x|2} − 12x + 9"
+          ],
+          [
+            "{us:(3a − 2b)|2}",
+            "3a",
+            "2b",
+            "Farkın karesi",
+            "9{us:a|2} − 12ab + 4{us:b|2}"
+          ],
+          [
+            "{us:(x + 2y)|2}",
+            "x",
+            "2y",
+            "Toplamın karesi",
+            "{us:x|2} + 4xy + 4{us:y|2}"
+          ],
+          [
+            "{us:(−x + 4)|2}",
+            "−x",
+            "4",
+            "Toplamın karesi",
+            "{us:x|2} − 8x + 16"
+          ],
+          [
+            "(5m − 1)(5m + 1)",
+            "5m",
+            "1",
+            "İki kare farkı",
+            "25{us:m|2} − 1"
+          ],
+          [
+            "(4x + 3y)(4x − 3y)",
+            "4x",
+            "3y",
+            "İki kare farkı",
+            "16{us:x|2} − 9{us:y|2}"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Katsayının da Karesi Alınır",
+          "metin": "{us:(2x)|2} = 4{us:x|2}'dir, 2{us:x|2} değildir. {us:(2x − 3)|2} açılımında ilk terim 4{us:x|2}, ortadaki terim −12x, son terim +9'dur."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Önce a ve b'yi Yaz",
+          "metin": "Özdeşliği uygulamadan önce kenara 'a = 3a, b = 2b' gibi not alın. Sonra kalıba yerleştirin: {us:a|2} = 9{us:a|2}, 2ab = 12ab, {us:b|2} = 4{us:b|2}. Bu alışkanlık işaret ve katsayı hatalarını önler."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' fill='#f8fafc' rx='12'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>KATSAYILI İFADEDE TABLO MODELİ: (2x − 3)²</text><text x='190' y='62' text-anchor='middle' font-size='14' font-weight='bold' fill='#1e3a8a'>2x</text><text x='300' y='62' text-anchor='middle' font-size='14' font-weight='bold' fill='#c2410c'>−3</text><text x='105' y='120' text-anchor='middle' font-size='14' font-weight='bold' fill='#1e3a8a'>2x</text><text x='105' y='215' text-anchor='middle' font-size='14' font-weight='bold' fill='#c2410c'>−3</text><rect x='130' y='75' width='120' height='90' fill='#bfdbfe' stroke='#1d4ed8' stroke-width='1.5'/><text x='190' y='126' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e3a8a'>4x²</text><rect x='250' y='75' width='100' height='90' fill='#fecaca' stroke='#dc2626' stroke-width='1.5'/><text x='300' y='126' text-anchor='middle' font-size='16' font-weight='bold' fill='#7f1d1d'>−6x</text><rect x='130' y='165' width='120' height='90' fill='#fecaca' stroke='#dc2626' stroke-width='1.5'/><text x='190' y='216' text-anchor='middle' font-size='16' font-weight='bold' fill='#7f1d1d'>−6x</text><rect x='250' y='165' width='100' height='90' fill='#fed7aa' stroke='#c2410c' stroke-width='1.5'/><text x='300' y='216' text-anchor='middle' font-size='16' font-weight='bold' fill='#7c2d12'>+9</text><text x='240' y='285' text-anchor='middle' font-size='14' font-weight='bold' fill='#15803d'>= 4x² − 12x + 9</text><rect x='390' y='60' width='345' height='110' rx='10' fill='#eff6ff' stroke='#3b82f6' stroke-width='1.5'/><text x='562' y='86' text-anchor='middle' font-size='14' font-weight='bold' fill='#1e3a8a'>(3a − 2b)² : a = 3a, b = 2b</text><text x='562' y='112' text-anchor='middle' font-size='13' fill='#1e40af'>(3a)² = 9a²   2 · 3a · 2b = 12ab   (2b)² = 4b²</text><text x='562' y='146' text-anchor='middle' font-size='15' font-weight='bold' fill='#1d4ed8'>= 9a² − 12ab + 4b²</text><rect x='390' y='185' width='345' height='110' rx='10' fill='#fef9c3' stroke='#eab308' stroke-width='1.5'/><text x='562' y='211' text-anchor='middle' font-size='14' font-weight='bold' fill='#854d0e'>Ters işaretlilerin kareleri eşit</text><text x='562' y='239' text-anchor='middle' font-size='14' fill='#713f12'>(−x + 4)² = (x − 4)² = x² − 8x + 16</text><text x='562' y='268' text-anchor='middle' font-size='14' fill='#713f12'>(−a − b)² = (a + b)²</text></svg>"
+    },
+    {
+      "baslik": "6. Özdeşliklerle Pratik Hesap, Sadeleştirme ve Sık Yapılan Hatalar",
+      "metin": [
+        "Özdeşlikler yalnızca harfli ifadelerde değil, sayılarla yapılan hesaplarda da işimizi kolaylaştırır. Bir sayıyı 10, 50, 100 gibi {koyu:yuvarlak bir sayıya yakın} iki parçaya ayırdığımızda karesini zihinden bulabiliriz: {us:101|2} = {us:(100 + 1)|2} = 10 000 + 200 + 1 = {koyu:10 201}, {us:99|2} = {us:(100 − 1)|2} = 10 000 − 200 + 1 = {koyu:9801}, {us:35|2} = {us:(30 + 5)|2} = 900 + 300 + 25 = {koyu:1225}. Ortadaki 200 ve 300 terimleri, kare modeldeki iki dikdörtgenin toplam alanıdır.",
+        "İki kare farkı ise ortalaması yuvarlak olan iki sayının çarpımında kullanılır. 52 · 48 çarpımında iki sayı 50'nin 2 fazlası ve 2 eksiğidir: 52 · 48 = (50 + 2)(50 − 2) = 2500 − 4 = {koyu:2496}. Benzer şekilde 103 · 97 = (100 + 3)(100 − 3) = 10 000 − 9 = {koyu:9991} olur. Özdeşlikler birden fazla çarpım içeren ifadeleri sadeleştirmede de kullanılır: {us:(x + 3)|2} − {us:(x − 3)|2} = ({us:x|2} + 6x + 9) − ({us:x|2} − 6x + 9) = {koyu:12x}. İkinci açılımın önündeki eksi, parantez içindeki her terimin işaretini değiştirir; {us:x|2} ve 9 terimleri birbirini götürür.",
+        "Bu konuda en sık yapılan hata {us:(a + b)|2} ifadesini {us:a|2} + {us:b|2} olarak yazmaktır. a = 3, b = 4 için {us:(3 + 4)|2} = 49 iken {us:3|2} + {us:4|2} = 25'tir; aradaki 24, unutulan 2ab = 2 · 3 · 4 terimidir. Kare modelde bu hata, iki dikdörtgeni yok saymak demektir. Benzer biçimde {us:(a − b)|2} = {us:a|2} − {us:b|2} yazmak da yanlıştır: a = 5, b = 2 için 9 ile 21 eşit değildir. {us:a|2} − {us:b|2} ifadesine eşit olan çarpım (a − b)(a + b)'dir, {us:(a − b)|2} değil. Her şüphede değişkene bir sayı vererek iki tarafı karşılaştırmak, hatayı hemen ortaya çıkarır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Hesap",
+          "Ayırma",
+          "Özdeşlik",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "{us:101|2}",
+            "{us:(100 + 1)|2}",
+            "10 000 + 200 + 1",
+            "10 201"
+          ],
+          [
+            "{us:99|2}",
+            "{us:(100 − 1)|2}",
+            "10 000 − 200 + 1",
+            "9801"
+          ],
+          [
+            "{us:35|2}",
+            "{us:(30 + 5)|2}",
+            "900 + 300 + 25",
+            "1225"
+          ],
+          [
+            "{us:49|2}",
+            "{us:(50 − 1)|2}",
+            "2500 − 100 + 1",
+            "2401"
+          ],
+          [
+            "52 · 48",
+            "(50 + 2)(50 − 2)",
+            "2500 − 4",
+            "2496"
+          ],
+          [
+            "103 · 97",
+            "(100 + 3)(100 − 3)",
+            "10 000 − 9",
+            "9991"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Kare, Terimlere Dağılmaz",
+          "metin": "{us:(a + b)|2} ≠ {us:a|2} + {us:b|2} ve {us:(a − b)|2} ≠ {us:a|2} − {us:b|2}. Bir toplamın ya da farkın karesinde ortadaki 2ab terimi hiçbir zaman unutulmamalıdır."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Üç Özdeşlik Bir Arada",
+          "metin": "{us:(a + b)|2} = {us:a|2} + 2ab + {us:b|2} ; {us:(a − b)|2} = {us:a|2} − 2ab + {us:b|2} ; (a − b)(a + b) = {us:a|2} − {us:b|2}. İlk ikisinde üç terim, sonuncusunda iki terim vardır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' fill='#f8fafc' rx='12'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>ÖZDEŞLİKLERLE ZİHİNDEN HESAP</text><rect x='25' y='48' width='170' height='120' rx='10' fill='#eff6ff' stroke='#3b82f6' stroke-width='1.5'/><text x='110' y='74' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e3a8a'>101²</text><text x='110' y='100' text-anchor='middle' font-size='12' fill='#1e40af'>(100 + 1)²</text><text x='110' y='124' text-anchor='middle' font-size='12' fill='#1e40af'>10000 + 200 + 1</text><text x='110' y='152' text-anchor='middle' font-size='15' font-weight='bold' fill='#1d4ed8'>= 10201</text><rect x='210' y='48' width='170' height='120' rx='10' fill='#fff7ed' stroke='#f97316' stroke-width='1.5'/><text x='295' y='74' text-anchor='middle' font-size='16' font-weight='bold' fill='#c2410c'>99²</text><text x='295' y='100' text-anchor='middle' font-size='12' fill='#9a3412'>(100 − 1)²</text><text x='295' y='124' text-anchor='middle' font-size='12' fill='#9a3412'>10000 − 200 + 1</text><text x='295' y='152' text-anchor='middle' font-size='15' font-weight='bold' fill='#c2410c'>= 9801</text><rect x='395' y='48' width='170' height='120' rx='10' fill='#dcfce7' stroke='#16a34a' stroke-width='1.5'/><text x='480' y='74' text-anchor='middle' font-size='16' font-weight='bold' fill='#14532d'>52 · 48</text><text x='480' y='100' text-anchor='middle' font-size='12' fill='#166534'>(50 + 2)(50 − 2)</text><text x='480' y='124' text-anchor='middle' font-size='12' fill='#166534'>2500 − 4</text><text x='480' y='152' text-anchor='middle' font-size='15' font-weight='bold' fill='#15803d'>= 2496</text><rect x='580' y='48' width='155' height='120' rx='10' fill='#f3e8ff' stroke='#9333ea' stroke-width='1.5'/><text x='657' y='74' text-anchor='middle' font-size='16' font-weight='bold' fill='#6b21a8'>35²</text><text x='657' y='100' text-anchor='middle' font-size='12' fill='#7e22ce'>(30 + 5)²</text><text x='657' y='124' text-anchor='middle' font-size='12' fill='#7e22ce'>900 + 300 + 25</text><text x='657' y='152' text-anchor='middle' font-size='15' font-weight='bold' fill='#6b21a8'>= 1225</text><rect x='25' y='185' width='710' height='115' rx='10' fill='#fee2e2' stroke='#dc2626' stroke-width='1.5'/><text x='380' y='212' text-anchor='middle' font-size='15' font-weight='bold' fill='#991b1b'>SIK YAPILAN HATA: (a + b)² = a² + b² DEĞİLDİR</text><text x='200' y='245' text-anchor='middle' font-size='14' fill='#7f1d1d'>a = 3, b = 4 için (3 + 4)² = 49</text><text x='560' y='245' text-anchor='middle' font-size='14' fill='#7f1d1d'>3² + 4² = 9 + 16 = 25</text><text x='380' y='280' text-anchor='middle' font-size='14' font-weight='bold' fill='#991b1b'>Fark 49 − 25 = 24 = 2 · 3 · 4 : unutulan 2ab terimi</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Aşağıdaki ifadeleri özdeşlikleri kullanarak açınız: a) {us:(x + 6)|2} b) {us:(y − 7)|2} c) (m − 3)(m + 3)",
+      "cevap": "a) a = x, b = 6 olduğundan toplamın karesi kullanılır: {us:x|2} + 2 · x · 6 + {us:6|2} = {koyu:{us:x|2} + 12x + 36}.\nb) a = y, b = 7 olduğundan farkın karesi kullanılır: {us:y|2} − 2 · y · 7 + {us:7|2} = {koyu:{us:y|2} − 14y + 49}.\nc) Aynı iki terimin farkı ile toplamı çarpıldığı için iki kare farkı kullanılır: {us:m|2} − {us:3|2} = {koyu:{us:m|2} − 9}.\nKontrol (x = 1, y = 1, m = 1): a) 49 = 1 + 12 + 36 b) 36 = 1 − 14 + 49 c) −2 · 4 = −8 = 1 − 9.",
+      "ipucu": "Önce ifadenin hangi kalıba uyduğuna karar verin: toplamın karesi mi, farkın karesi mi, yoksa toplam ile farkın çarpımı mı?"
+    },
+    {
+      "soru": "{us:(3x − 2)|2} ifadesini özdeşlik kullanarak açınız ve sonucu x = 2 için kontrol ediniz.",
+      "cevap": "1. adım: a = 3x, b = 2 yazalım.\n2. adım: Birincinin karesi: {us:(3x)|2} = 9{us:x|2}.\n3. adım: Çarpımın iki katı: 2 · 3x · 2 = 12x; işaret eksi olduğundan −12x.\n4. adım: İkincinin karesi: {us:2|2} = 4.\nSonuç: {koyu:9{us:x|2} − 12x + 4}.\nKontrol (x = 2): {us:(6 − 2)|2} = {us:4|2} = 16 ve 9 · 4 − 24 + 4 = 36 − 24 + 4 = 16. Değerler eşittir.",
+      "ipucu": "Katsayının da karesi alınır: {us:(3x)|2} = 9{us:x|2}, 3{us:x|2} değildir."
+    },
+    {
+      "soru": "Kenar uzunluğu (x + 4) cm olan bir kare, kenarlarındaki x ve 4 bölme noktalarından çizilen doğrularla dört parçaya ayrılıyor. a) Parçaların alanlarını yazınız. b) Karenin alanını özdeşlik biçiminde gösteriniz. c) x = 3 için sonucu doğrulayınız.",
+      "cevap": "a) Kenarları x ve x olan kare: {us:x|2}; kenarları x ve 4 olan iki dikdörtgen: her biri 4x; kenarları 4 ve 4 olan kare: 16.\nb) Parçaların toplamı {us:x|2} + 4x + 4x + 16 = {us:x|2} + 8x + 16 olur. Öyleyse {koyu:{us:(x + 4)|2} = {us:x|2} + 8x + 16} cm kare.\nc) x = 3 için büyük karenin kenarı 7, alanı 49'dur. Parçalar: 9 + 12 + 12 + 16 = 49. Sonuç doğrudur.",
+      "ipucu": "Kare modelde iki eş dikdörtgen vardır; ortadaki 8x terimi bu iki dikdörtgenin toplam alanıdır."
+    },
+    {
+      "soru": "Özdeşliklerden yararlanarak aşağıdaki işlemleri yapınız: a) {us:98|2} b) 61 · 59 c) {us:205|2}",
+      "cevap": "a) 98 = 100 − 2 olduğundan farkın karesi kullanılır: {us:(100 − 2)|2} = 10 000 − 2 · 100 · 2 + 4 = 10 000 − 400 + 4 = {koyu:9604}.\nb) 61 ve 59, 60'ın 1 fazlası ve 1 eksiğidir: (60 + 1)(60 − 1) = 3600 − 1 = {koyu:3599}.\nc) 205 = 200 + 5 olduğundan toplamın karesi kullanılır: 40 000 + 2 · 200 · 5 + 25 = 40 000 + 2000 + 25 = {koyu:42 025}.",
+      "ipucu": "Sayıyı yuvarlak bir sayıya yakın iki parçaya ayırın; çarpımda iki sayının tam ortasındaki sayıyı bulun."
+    },
+    {
+      "soru": "{us:(x + 3)|2} − {us:(x − 3)|2} ifadesini en sade biçimde yazınız ve x = 2 için kontrol ediniz.",
+      "cevap": "1. adım: {us:(x + 3)|2} = {us:x|2} + 6x + 9.\n2. adım: {us:(x − 3)|2} = {us:x|2} − 6x + 9.\n3. adım: Çıkaralım; ikinci açılımın önündeki eksi tüm terimlere uygulanır: {us:x|2} + 6x + 9 − {us:x|2} + 6x − 9.\n4. adım: Benzer terimler: {us:x|2} − {us:x|2} = 0, 6x + 6x = 12x, 9 − 9 = 0. Sonuç {koyu:12x}.\nKontrol (x = 2): {us:5|2} − {us:(−1)|2} = 25 − 1 = 24 ve 12 · 2 = 24.",
+      "ipucu": "İkinci açılımı parantez içinde bırakın, sonra parantez önündeki eksiyi her terime dağıtın."
+    },
+    {
+      "soru": "Kenarı a m olan kare bir bahçenin bir kenarı 5 m uzatılıyor, diğer kenarı 5 m kısaltılıyor. a) Yeni dikdörtgenin alanını özdeşlikle yazınız. b) Alan nasıl değişir? c) a = 12 için sonucu doğrulayınız.",
+      "cevap": "a) Yeni kenarlar (a + 5) m ve (a − 5) m olur. Alan (a + 5)(a − 5) = {koyu:{us:a|2} − 25} metrekaredir (iki kare farkı).\nb) Kare bahçenin alanı {us:a|2} idi. Yeni alan bundan {koyu:25 metrekare azdır}; a kaç olursa olsun azalma hep 25 metrekaredir.\nc) a = 12 için kare 144, yeni dikdörtgen 17 · 7 = 119 metrekaredir. 144 − 119 = 25 olduğundan sonuç doğrudur.",
+      "ipucu": "Uzatılan ve kısaltılan miktar aynı olduğunda kenarlar (a + b) ve (a − b) biçimini alır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "{us:(x + 5)|2} ifadesinin açılımı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "{us:x|2} + 25",
+        "{us:x|2} + 10x + 25",
+        "{us:x|2} + 5x + 25",
+        "{us:x|2} + 10x + 10"
+      ],
+      "dogru": 1,
+      "aciklama": "Toplamın karesine göre {us:x|2} + 2 · x · 5 + {us:5|2} = {us:x|2} + 10x + 25 olur. {us:x|2} + 25 seçeneğinde 2ab terimi unutulmuş, {us:x|2} + 5x + 25 seçeneğinde ise iki kat alınmamıştır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "{us:(2a − 3)|2} ifadesinin açılımı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "4{us:a|2} − 9",
+        "4{us:a|2} − 6a + 9",
+        "4{us:a|2} − 12a + 9",
+        "4{us:a|2} + 12a + 9"
+      ],
+      "dogru": 2,
+      "aciklama": "a = 2a, b = 3 alınırsa {us:(2a)|2} − 2 · 2a · 3 + {us:3|2} = 4{us:a|2} − 12a + 9 bulunur. 4{us:a|2} − 9 iki kare farkıyla karıştırılmış, 4{us:a|2} + 12a + 9 ise toplamın karesidir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki çarpımlardan hangisinin sonucu 9{us:y|2} − 16'dır?",
+      "secenekler": [
+        "{us:(3y − 4)|2}",
+        "(9y − 4)(y + 4)",
+        "{us:(3y + 4)|2}",
+        "(3y − 4)(3y + 4)"
+      ],
+      "dogru": 3,
+      "aciklama": "İki kare farkına göre (3y − 4)(3y + 4) = {us:(3y)|2} − {us:4|2} = 9{us:y|2} − 16 olur. {us:(3y − 4)|2} = 9{us:y|2} − 24y + 16 ve {us:(3y + 4)|2} = 9{us:y|2} + 24y + 16'dır; (9y − 4)(y + 4) = 9{us:y|2} + 32y − 16 olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "102 · 98 çarpımının sonucu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "9996",
+        "10 004",
+        "9604",
+        "9999"
+      ],
+      "dogru": 0,
+      "aciklama": "102 · 98 = (100 + 2)(100 − 2) = 10 000 − 4 = 9996 olur. 9604 sonucu {us:98|2}'dir; 10 004 ise 4'ün çıkarılması yerine eklenmesiyle oluşan hatalı sonuçtur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "{us:(a + b)|2} = {us:a|2} + {us:b|2} eşitliği bir özdeşliktir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; ortadaki 2ab terimi eksiktir. a = 3, b = 4 için 49 ≠ 25 olduğundan bu eşitlik özdeşlik değildir."
+        },
+        {
+          "metin": "{us:(x − 3)|2} = {us:x|2} − 6x + 9 eşitliği her x için doğrudur.",
+          "dogru": true,
+          "aciklama": "Doğrudur; farkın karesine göre {us:x|2} − 2 · x · 3 + {us:3|2} = {us:x|2} − 6x + 9 olur."
+        },
+        {
+          "metin": "{us:(−a − b)|2} ifadesi {us:(a + b)|2} ifadesine eşittir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; −a − b ile a + b birbirinin ters işaretlisidir ve ters işaretli ifadelerin kareleri eşittir."
+        },
+        {
+          "metin": "3x + 5 = 11 eşitliği bir özdeşliktir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; bu eşitlik yalnız x = 2 için doğrudur, bu yüzden bir denklemdir."
+        },
+        {
+          "metin": "(m + 4)(m − 4) çarpımının sonucu {us:m|2} − 16'dır.",
+          "dogru": true,
+          "aciklama": "Doğrudur; iki kare farkına göre {us:m|2} − {us:4|2} = {us:m|2} − 16 olur, ortadaki +4m ve −4m birbirini götürür."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki ifadeleri açılımlarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "{us:(x + 1)|2}",
+          "{us:x|2} + 2x + 1"
+        ],
+        [
+          "{us:(x − 2)|2}",
+          "{us:x|2} − 4x + 4"
+        ],
+        [
+          "(x − 3)(x + 3)",
+          "{us:x|2} − 9"
+        ],
+        [
+          "{us:(2x + 1)|2}",
+          "4{us:x|2} + 4x + 1"
+        ],
+        [
+          "{us:(x + 4)|2}",
+          "{us:x|2} + 8x + 16"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Değişkenlerin alabileceği her değer için doğru olan eşitliğe ___ denir.",
+          "cevap": "özdeşlik"
+        },
+        {
+          "metin": "Değişkenin yalnızca bazı değerleri için doğru olan eşitliğe ___ denir.",
+          "cevap": "denklem"
+        },
+        {
+          "metin": "{us:(a + b)|2} açılımında ortadaki terim, iki terimin çarpımının ___ katıdır.",
+          "cevap": "iki"
+        },
+        {
+          "metin": "{us:a|2} − {us:b|2} = (a − b)(a + b) eşitliğine iki kare ___ özdeşliği denir.",
+          "cevap": "farkı"
+        },
+        {
+          "metin": "{us:(a + b)|2} özdeşliği, kenarı a + b olan bir ___ alanıyla modellenir.",
+          "cevap": "karenin"
+        }
+      ],
+      "kelimeler": [
+        "özdeşlik",
+        "denklem",
+        "iki",
+        "farkı",
+        "karenin"
+      ],
+      "fazla": [
+        "toplamı",
+        "üç"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Kenarı (x + 3) m olan kare bir bahçenin tam ortasına kenarı (x − 3) m olan kare bir havuz yapılıyor. Havuzun çevresinde kalan bölge yürüyüş yolu olacaktır. a) Bahçenin alanını özdeşlikle açınız. b) Havuzun alanını özdeşlikle açınız. c) Yürüyüş yolunun alanını en sade biçimde yazınız. d) x = 5 için yolun alanını hesaplayıp gerçek uzunluklarla kontrol ediniz.",
+      "ipuclari": [
+        "1. adım: Bahçe alanı için toplamın karesini, havuz alanı için farkın karesini kullanın; a = x, b = 3 alın.",
+        "2. adım: Yol alanı = bahçe alanı − havuz alanı. Havuz açılımını parantez içinde yazın ve önündeki eksiyi her terime uygulayın.",
+        "3. adım: x = 5 için kenarları 8 m ve 2 m olarak bulun, alanları ayrı ayrı hesaplayıp farkı bulduğunuz ifadenin değeriyle karşılaştırın."
+      ],
+      "cevap": "a) Bahçe: {us:(x + 3)|2} = {us:x|2} + 6x + 9 metrekare.\nb) Havuz: {us:(x − 3)|2} = {us:x|2} − 6x + 9 metrekare.\nc) Yol: ({us:x|2} + 6x + 9) − ({us:x|2} − 6x + 9) = {us:x|2} + 6x + 9 − {us:x|2} + 6x − 9 = 12x metrekare.\nd) x = 5 için yol alanı 12 · 5 = 60 metrekare olur.\nKontrol: Bahçenin kenarı 8 m, alanı 64 metrekaredir; havuzun kenarı 2 m, alanı 4 metrekaredir. 64 − 4 = 60 olduğundan sonuç doğrudur."
+    }
+  ]
+}

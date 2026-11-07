@@ -1,0 +1,657 @@
+{
+  "ad": "10-matematik-17",
+  "sinif": 10,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 17,
+  "tarih": "11-15 Ocak 2027",
+  "yayin_tarihi": "2027-01-11",
+  "unite": "Nicelikler ve Değişimler",
+  "konu": "Karesel Fonksiyondan Karekök Fonksiyonuna: Karekök Referans Fonksiyon ve g(x) = a · f(x − r) + k Biçimindeki Karekök Fonksiyonlarının Nitel Özellikleri",
+  "ciktilar": [
+    "MAT.10.4.2. Gerçek sayılarda f(x) = {us:x|2} şeklinde tanımlı karesel referans fonksiyonun nitel özellikleri ile bu fonksiyondan türetilen g(x) = a · f(x ± r) ± k (a, r, k ∈ ℝ, a ≠ 0) karesel fonksiyonların nitel özelliklerine ilişkin matematiksel muhakeme yapabilme",
+    "MAT.10.4.3. Gerçek sayılarda f(x) = {kok:x} (x ≥ 0) şeklinde tanımlı karekök referans fonksiyonun nitel özellikleri ile bu fonksiyondan türetilen g(x) = a · f(x ± r) ± k (a, r, k ∈ ℝ, a ≠ 0) karekök fonksiyonlarının nitel özelliklerine ilişkin matematiksel muhakeme yapabilme",
+    "Karekök referans fonksiyonun tanım kümesi, görüntü kümesi, işareti, artanlığı-azalanlığı, ekstremum noktaları, sıfırları, bire birliği, tekliği-çiftliği ve örtenliğini matematiksel temsilleri kullanarak belirler; grafik ve cebirsel temsil üzerinde yaptığı öteleme, uzama-daralma ve yansıma işlemleriyle diğer karekök fonksiyonlarına dönüştürür.",
+    "Karesel ve karekök referans fonksiyonlarının nitel özelliklerinden hareketle türetilmiş fonksiyonlar hakkında varsayımlarda bulunur; örüntüleri genelleyip grafiksel olarak doğrular ya da cebirsel olarak ispatlar ve önermelerinin gerçek yaşam bağlamlarındaki kullanışlılığını değerlendirir."
+  ],
+  "giris": "Son iki haftada parabolü her yöne kaydırdık, daralttık ve ters çevirdik. Bu hafta karesel fonksiyonla vedalaşırken ona {koyu:ters yönden} bakıyoruz: “Karesi 9 olan negatif olmayan sayı hangisidir?” sorusu bizi yeni bir referans fonksiyona, {koyu:karekök fonksiyonuna} götürüyor. Önce f(x) = {kok:x} fonksiyonunun grafiğini çizecek ve bütün nitel özelliklerini ispatlarıyla birlikte belirleyeceğiz. Ardından parabolde öğrendiğimiz dönüşümleri bu fonksiyona uygulayacak ve {koyu:g(x) = a · {kok:x − r} + k} biçimindeki fonksiyonların özelliklerini kuraldan okumayı öğreneceğiz. Haftanın sonunda iki fonksiyon ailesini karşılaştıracak, yanıltıcı önermeleri karşı örnekle çürütecek ve serbest düşme gibi gerçek yaşam modellerinde karekök fonksiyonunu kullanacağız.",
+  "ozet": [
+    "{koyu:Karekök referans fonksiyon:} f(x) = {kok:x} (x ≥ 0), karesi x olan negatif olmayan sayıyı verir; [0, ∞) aralığına kısıtlanmış {us:x|2} fonksiyonunun ters yönde okunmasıdır ve iki grafik y = x doğrusuna göre simetriktir.",
+    "{koyu:Referans fonksiyonun nitel özellikleri:} Tanım ve görüntü kümesi [0, ∞), x > 0 için pozitif, tanım kümesinde artan, minimum noktası (0, 0), tek sıfırı x = 0'dır; bire birdir, ne tek ne çifttir ve [0, ∞) değer kümesiyle örtendir.",
+    "{koyu:Genel biçim:} g(x) = a · {kok:x − r} + k fonksiyonunda referans grafiğin her (x, y) noktası (x + r, a · y + k) noktasına gider; grafik {koyu:başlangıç noktası (r, k)} olan bir yarım kol biçimindedir ve tanım kümesi [r, ∞) olur.",
+    "{koyu:Yön ve görüntü:} a > 0 ise fonksiyon artan, k minimum değer ve görüntü kümesi [k, ∞); a < 0 ise azalan, k maksimum değer ve görüntü kümesi (−∞, k] olur; diğer ekstremum hiçbir zaman yoktur.",
+    "{koyu:Sıfır:} a · k < 0 ise tek sıfır x = r + {kesir:{us:k|2}|{us:a|2}}, k = 0 ise tek sıfır x = r, a · k > 0 ise sıfır yoktur; karekök fonksiyonu bire bir olduğundan en fazla bir sıfırı vardır.",
+    "{koyu:Karşılaştırma ve modelleme:} Yatay öteleme parabolün tanım kümesini değiştirmez, karekök fonksiyonunun tanım kümesini ise [r, ∞) yapar; serbest düşmede düşme süresi t = {kok:{kesir:h|5}} gibi karekök modelleri, yükseklik 4 katına çıkınca sürenin yalnız 2 katına çıktığını gösterir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Karesel Fonksiyondan Karekök Fonksiyonuna: Ters Yönde Okuma",
+      "metin": [
+        "Önceki haftalarda tanım ve değer kümesini [0, ∞) olarak kısıtladığımızda f(x) = {us:x|2} fonksiyonunun {koyu:bire bir ve örten} olduğunu görmüştük. Bu, ters yönde sorulan bir sorunun her zaman tek cevabı olduğu anlamına gelir: “Görüntüsü 9 olan negatif olmayan sayı hangisidir?” sorusunun cevabı yalnız 3'tür; görüntüsü 2 olan negatif olmayan sayı da vardır ve tektir, yaklaşık 1,41'dir. Bir görüntüyü alıp ona karşılık gelen negatif olmayan girdiyi veren bu ters yönlü kurala {koyu:karekök fonksiyonu} diyoruz ve f(x) = {kok:x} biçiminde yazıyoruz. Böylece karesel fonksiyonun bir sorusu, yeni bir referans fonksiyonun tanımına dönüşür.",
+        "Tanım gereği {koyu:{kok:x}, karesi x olan negatif olmayan sayıdır}. Bu yüzden {kok:9} = 3, {kok:{kesir:1|4}} = {kesir:1|2}, {kok:0} = 0 olur. {us:x|2} = 9 denkleminin iki çözümü (3 ve −3) olmasına rağmen {kok:9} yalnız 3'tür; karekök işareti her zaman negatif olmayan çözümü seçer. Fonksiyonun neden yalnız x ≥ 0 için tanımlandığını da aynı tanım açıklar: Her gerçek sayının karesi sıfır ya da pozitiftir, dolayısıyla karesi −4 olan bir gerçek sayı yoktur. Bu nedenle {kok:−4} gerçek sayılarda tanımsızdır ve karekök referans fonksiyonunun tanım kümesi {koyu:[0, ∞)} aralığıdır.",
+        "İki fonksiyonun grafikleri arasındaki ilişki çok zariftir. a ≥ 0 olmak üzere (a, b) noktası y = {us:x|2} grafiğindeyse b = {us:a|2}, dolayısıyla a = {kok:b} olur; yani (b, a) noktası y = {kok:x} grafiğindedir. Örneğin (2, 4) parabolün, (4, 2) karekök grafiğinin noktasıdır. Koordinatların yer değiştirmesi, düzlemde {koyu:y = x doğrusuna göre yansıma} demektir. Bu nedenle y = {kok:x} grafiği, parabolün sağ kolunun y = x doğrusuna göre simetriğidir. Bu ilişkiden iki önemli eşitlik doğar: x ≥ 0 için {us:({kok:x})|2} = x olur; ancak her x gerçek sayısı için {kok:{us:x|2}} = {uzunluk:x} yazılmalıdır. Örneğin {kok:{us:(−3)|2}} = {kok:9} = 3 = {uzunluk:−3} olur, −3 olmaz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "x",
+          "{kok:x}",
+          "Kontrol: {us:({kok:x})|2}",
+          "Parabol üzerindeki karşılık"
+        ],
+        "satirlar": [
+          [
+            "0",
+            "0",
+            "0",
+            "(0, 0)"
+          ],
+          [
+            "{kesir:1|4}",
+            "{kesir:1|2}",
+            "{kesir:1|4}",
+            "({kesir:1|2}, {kesir:1|4})"
+          ],
+          [
+            "1",
+            "1",
+            "1",
+            "(1, 1)"
+          ],
+          [
+            "2",
+            "≈ 1,41",
+            "2",
+            "(1,41; 2)"
+          ],
+          [
+            "4",
+            "2",
+            "4",
+            "(2, 4)"
+          ],
+          [
+            "9",
+            "3",
+            "9",
+            "(3, 9)"
+          ],
+          [
+            "−4",
+            "Tanımsız",
+            "—",
+            "Karesi −4 olan gerçek sayı yoktur"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Karekök Referans Fonksiyon",
+          "metin": "x ≥ 0 olmak üzere {koyu:f(x) = {kok:x}} fonksiyonu, x sayısına karesi x olan {koyu:negatif olmayan} sayıyı karşılık getirir. Tanım kümesi [0, ∞) aralığıdır ve grafiği, y = {us:x|2} parabolünün sağ kolunun y = x doğrusuna göre simetriğidir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Kare Denklemi ile Karekök Aynı Şey Değildir",
+          "metin": "{us:x|2} = 25 denkleminin çözümleri x = 5 ve x = −5'tir; ama {kok:25} = 5'tir. Ayrıca {kok:{us:x|2}} = x eşitliği yalnız x ≥ 0 için doğrudur; genel doğru yazım {kok:{us:x|2}} = {uzunluk:x} biçimindedir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='330' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='16' y='12' width='728' height='36' rx='10' fill='#1e293b'/><text x='380' y='36' text-anchor='middle' font-size='16' font-weight='700' fill='#ffffff'>Kare Alma ve Karekök Alma: y = x Doğrusuna Göre Simetri</text><rect x='20' y='60' width='370' height='258' rx='12' fill='#ffffff' stroke='#cbd5e1'/><line x1='40' y1='290' x2='380' y2='290' stroke='#64748b' stroke-width='1.5'/><line x1='50' y1='70' x2='50' y2='300' stroke='#64748b' stroke-width='1.5'/><text x='370' y='306' font-size='12' fill='#64748b'>x</text><text x='56' y='80' font-size='12' fill='#64748b'>y</text><line x1='50' y1='290' x2='270' y2='70' stroke='#94a3b8' stroke-width='2' stroke-dasharray='6 5'/><text x='236' y='90' font-size='12' fill='#64748b'>y = x</text><polyline points='50,290 65,282.5 80,260 95,222.5 110,170 120,128 128,87' fill='none' stroke='#2563eb' stroke-width='3'/><polyline points='50,290 57.5,275 80,260 117.5,245 170,230 237.5,215 320,200 365,193' fill='none' stroke='#059669' stroke-width='3'/><line x1='110' y1='170' x2='170' y2='230' stroke='#dc2626' stroke-width='1.5' stroke-dasharray='4 4'/><circle cx='110' cy='170' r='5' fill='#2563eb'/><circle cx='170' cy='230' r='5' fill='#059669'/><circle cx='80' cy='260' r='5' fill='#7c3aed'/><text x='72' y='166' font-size='12' fill='#1d4ed8'>(2, 4)</text><text x='176' y='250' font-size='12' fill='#047857'>(4, 2)</text><text x='88' y='280' font-size='12' fill='#6d28d9'>(1, 1)</text><text x='134' y='104' font-size='12' font-weight='700' fill='#1d4ed8'>y = x² (x ≥ 0)</text><text x='250' y='200' font-size='12' font-weight='700' fill='#047857'>y = karekök(x)</text><rect x='408' y='60' width='332' height='258' rx='12' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><rect x='408' y='60' width='332' height='32' rx='10' fill='#2563eb'/><text x='574' y='81' text-anchor='middle' font-size='14' font-weight='700' fill='#ffffff'>Ters Yönde Okuma</text><text x='424' y='116' font-size='12' font-weight='700' fill='#1d4ed8'>y = x² üzerinde</text><text x='596' y='116' font-size='12' font-weight='700' fill='#047857'>y = karekök(x) üzerinde</text><text x='440' y='142' font-size='13' fill='#334155'>(1, 1)</text><text x='540' y='142' font-size='13' fill='#64748b'>→</text><text x='612' y='142' font-size='13' fill='#334155'>(1, 1)</text><text x='440' y='166' font-size='13' fill='#334155'>(2, 4)</text><text x='540' y='166' font-size='13' fill='#64748b'>→</text><text x='612' y='166' font-size='13' fill='#334155'>(4, 2)</text><text x='440' y='190' font-size='13' fill='#334155'>(3, 9)</text><text x='540' y='190' font-size='13' fill='#64748b'>→</text><text x='612' y='190' font-size='13' fill='#334155'>(9, 3)</text><text x='440' y='214' font-size='13' fill='#334155'>(5, 25)</text><text x='540' y='214' font-size='13' fill='#64748b'>→</text><text x='612' y='214' font-size='13' fill='#334155'>(25, 5)</text><rect x='422' y='228' width='304' height='78' rx='10' fill='#ffffff' stroke='#93c5fd'/><text x='574' y='250' text-anchor='middle' font-size='12' font-weight='700' fill='#1e293b'>Koşul: x ≥ 0</text><text x='574' y='270' text-anchor='middle' font-size='12' fill='#334155'>(a, b) ve (b, a): koordinatlar yer değiştirir</text><text x='574' y='290' text-anchor='middle' font-size='12' fill='#334155'>karekök(x²) = |x|, (karekök(x))² = x</text></svg>"
+    },
+    {
+      "baslik": "Karekök Referans Fonksiyonun Nitel Özellikleri ve İspatları",
+      "metin": [
+        "Grafiği çizmek için tam kare sayıları kullanmak işimizi kolaylaştırır: (0, 0), (1, 1), (4, 2), (9, 3), (16, 4) noktaları grafiktedir. Grafik orijinden başlar ve sağa doğru giderek yükselen, ama yükselişi giderek yavaşlayan {koyu:tek bir kol} biçimindedir. Önce {koyu:tanım ve görüntü kümesini} belirleyelim. Tanım kümesi [0, ∞)'dur. Karekök tanım gereği negatif olmadığından her görüntü 0 ya da pozitiftir. Tersine, y ≥ 0 olan her sayı için x = {us:y|2} seçersek {kok:x} = {kok:{us:y|2}} = y olur; yani her negatif olmayan sayı bir görüntüdür. Böylece görüntü kümesi de {koyu:[0, ∞)} olur. {koyu:İşaret:} x = 0 için f(x) = 0, x > 0 için f(x) > 0'dır; fonksiyon hiçbir yerde negatif değer almaz. Tek sıfırı {koyu:x = 0}'dır, çünkü {kok:x} = 0 eşitliğinin her iki yanının karesi alınırsa x = 0 bulunur.",
+        "{koyu:Artanlık:} 0 ≤ {alt:x|1} < {alt:x|2} olsun. İki kare farkı özdeşliğini ters yönde kullanırsak {alt:x|2} − {alt:x|1} = ({kok:{alt:x|2}} − {kok:{alt:x|1}}) · ({kok:{alt:x|2}} + {kok:{alt:x|1}}) olur. Sol taraf pozitiftir; sağdaki ikinci çarpan da pozitiftir (çünkü {kok:{alt:x|2}} > 0). O hâlde birinci çarpan da pozitif olmalıdır: {kok:{alt:x|2}} > {kok:{alt:x|1}}. Demek ki f, {koyu:[0, ∞) aralığının tamamında artandır}. Bu sonuçtan iki özellik daha çıkar: En küçük değer x = 0'da alınır, yani {koyu:minimum noktası (0, 0)} olur; fonksiyon sınırsız büyüdüğü için (örneğin f({us:10|6}) = 1000) {koyu:maksimum değeri yoktur}. Artışın hızı ise azalır: y değerinin 0'dan 1'e, 1'den 2'ye, 2'den 3'e çıkması için x sırasıyla 1, 3 ve 5 birim artmalıdır.",
+        "{koyu:Bire birlik:} {kok:m} = {kok:n} ise eşitliğin her iki yanının karesi alınarak m = n bulunur; dolayısıyla farklı iki elemanın görüntüsü hiçbir zaman aynı olamaz. Bu, artan olmanın da doğal bir sonucudur. {koyu:Teklik-çiftlik:} Bir fonksiyonun tek ya da çift olabilmesi için x tanım kümesindeyken −x'in de tanım kümesinde olması gerekir. 1 tanım kümesinde olduğu hâlde −1 değildir; bu yüzden f(−1) yazılamaz ve f {koyu:ne tek ne çift} fonksiyondur. Grafik ne y eksenine ne de orijine göre simetriktir. {koyu:Örtenlik:} f: [0, ∞) → ℝ olarak düşünülürse −2 gibi negatif sayılar hiçbir elemanın görüntüsü olmadığından fonksiyon örten değildir; değer kümesi [0, ∞) seçilirse görüntü kümesi değer kümesine eşit olur ve {koyu:f: [0, ∞) → [0, ∞) bire bir ve örtendir}. Son bir karşılaştırma: 0 < x < 1 için {kok:x} > x, x > 1 için {kok:x} < x'tir; örneğin {kok:{kesir:1|4}} = {kesir:1|2} > {kesir:1|4} iken {kok:9} = 3 < 9 olur. İki grafik yalnız (0, 0) ve (1, 1) noktalarında kesişir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Nitel Özellik",
+          "f(x) = {kok:x}",
+          "Gerekçe"
+        ],
+        "satirlar": [
+          [
+            "Tanım kümesi",
+            "[0, ∞)",
+            "Negatif sayıların gerçek sayılarda karekökü yoktur."
+          ],
+          [
+            "Görüntü kümesi",
+            "[0, ∞)",
+            "Her y ≥ 0 için x = {us:y|2} seçilirse f(x) = y olur."
+          ],
+          [
+            "İşaret",
+            "x > 0 için pozitif, x = 0 için sıfır",
+            "Karekök tanım gereği negatif olmayan sayıdır."
+          ],
+          [
+            "Sıfırlar",
+            "Yalnız x = 0",
+            "{kok:x} = 0 ise x = 0'dır."
+          ],
+          [
+            "Artanlık-azalanlık",
+            "[0, ∞) aralığında artan",
+            "{alt:x|2} − {alt:x|1} = ({kok:{alt:x|2}} − {kok:{alt:x|1}})({kok:{alt:x|2}} + {kok:{alt:x|1}})"
+          ],
+          [
+            "Ekstremum",
+            "Minimum noktası (0, 0); maksimum yok",
+            "Artan ve sınırsız büyüyen fonksiyon"
+          ],
+          [
+            "Bire birlik",
+            "Bire bir",
+            "{kok:m} = {kok:n} ise m = n"
+          ],
+          [
+            "Teklik-çiftlik",
+            "Ne tek ne çift",
+            "Tanım kümesi 0'a göre simetrik değildir."
+          ],
+          [
+            "Örtenlik",
+            "[0, ∞) → ℝ örten değil; [0, ∞) → [0, ∞) örten",
+            "Negatif sayılar görüntü değildir."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Tek-Çift İncelemesinden Önce Tanım Kümesine Bak",
+          "metin": "f(−x) ifadesinin anlamlı olması için tanım kümesinin {koyu:0'a göre simetrik} olması gerekir. [0, ∞) aralığı simetrik olmadığından karekök referans fonksiyonu ve ondan türetilen hiçbir karekök fonksiyonu tek ya da çift değildir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Grafiği Tam Karelerle Çiz",
+          "metin": "x yerine 0, 1, 4, 9, 16 gibi {koyu:tam kare} sayılar seçin; görüntüler 0, 1, 2, 3, 4 gibi tam sayı çıkar ve grafik hızla çizilir. Ara değerler için {kok:2} ≈ 1,41 ve {kok:3} ≈ 1,73 yaklaşık değerleri yeterlidir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='16' y='12' width='728' height='36' rx='10' fill='#1e293b'/><text x='380' y='36' text-anchor='middle' font-size='16' font-weight='700' fill='#ffffff'>Karekök Referans Fonksiyonun Grafiği ve Nitel Özellikleri</text><rect x='20' y='60' width='410' height='248' rx='12' fill='#ffffff' stroke='#cbd5e1'/><line x1='40' y1='280' x2='418' y2='280' stroke='#64748b' stroke-width='1.5'/><line x1='50' y1='70' x2='50' y2='296' stroke='#64748b' stroke-width='1.5'/><text x='408' y='272' font-size='12' fill='#64748b'>x</text><text x='56' y='80' font-size='12' fill='#64748b'>y</text><polyline points='50,280 55.5,258 72,236 99.5,214 138,192 187.5,170 248,148 319.5,126 402,104' fill='none' stroke='#059669' stroke-width='3'/><circle cx='50' cy='280' r='5' fill='#dc2626'/><circle cx='72' cy='236' r='4' fill='#059669'/><circle cx='138' cy='192' r='4' fill='#059669'/><circle cx='248' cy='148' r='4' fill='#059669'/><circle cx='402' cy='104' r='4' fill='#059669'/><text x='72' y='296' text-anchor='middle' font-size='12' fill='#334155'>1</text><text x='138' y='296' text-anchor='middle' font-size='12' fill='#334155'>4</text><text x='248' y='296' text-anchor='middle' font-size='12' fill='#334155'>9</text><text x='402' y='296' text-anchor='middle' font-size='12' fill='#334155'>16</text><text x='40' y='240' text-anchor='middle' font-size='12' fill='#334155'>1</text><text x='40' y='196' text-anchor='middle' font-size='12' fill='#334155'>2</text><text x='40' y='152' text-anchor='middle' font-size='12' fill='#334155'>3</text><text x='40' y='108' text-anchor='middle' font-size='12' fill='#334155'>4</text><text x='62' y='272' font-size='11' fill='#b91c1c'>minimum (0, 0)</text><text x='300' y='100' font-size='13' font-weight='700' fill='#047857'>y = karekök(x)</text><text x='220' y='226' font-size='12' fill='#334155'>Her adımda y yalnız 1 artar;</text><text x='220' y='244' font-size='12' fill='#334155'>x ise 1, 3, 5, 7 birim artar.</text><text x='220' y='262' font-size='12' fill='#334155'>Artış giderek yavaşlar.</text><rect x='448' y='60' width='292' height='248' rx='12' fill='#ecfdf5' stroke='#059669' stroke-width='2'/><rect x='448' y='60' width='292' height='32' rx='10' fill='#059669'/><text x='594' y='81' text-anchor='middle' font-size='14' font-weight='700' fill='#ffffff'>Nitel Özellikler</text><text x='462' y='114' font-size='12' font-weight='700' fill='#065f46'>Tanım kümesi:</text><text x='580' y='114' font-size='12' fill='#334155'>[0, ∞)</text><text x='462' y='136' font-size='12' font-weight='700' fill='#065f46'>Görüntü kümesi:</text><text x='580' y='136' font-size='12' fill='#334155'>[0, ∞)</text><text x='462' y='158' font-size='12' font-weight='700' fill='#065f46'>İşaret:</text><text x='580' y='158' font-size='12' fill='#334155'>x &gt; 0 için pozitif</text><text x='462' y='180' font-size='12' font-weight='700' fill='#065f46'>Monotonluk:</text><text x='580' y='180' font-size='12' fill='#334155'>[0, ∞) aralığında artan</text><text x='462' y='202' font-size='12' font-weight='700' fill='#065f46'>Ekstremum:</text><text x='580' y='202' font-size='12' fill='#334155'>min (0, 0), maks yok</text><text x='462' y='224' font-size='12' font-weight='700' fill='#065f46'>Sıfır:</text><text x='580' y='224' font-size='12' fill='#334155'>yalnız x = 0</text><text x='462' y='246' font-size='12' font-weight='700' fill='#065f46'>Bire bir:</text><text x='580' y='246' font-size='12' fill='#334155'>evet</text><text x='462' y='268' font-size='12' font-weight='700' fill='#065f46'>Tek-çift:</text><text x='580' y='268' font-size='12' fill='#334155'>ne tek ne çift</text><text x='462' y='290' font-size='12' font-weight='700' fill='#065f46'>Örten:</text><text x='580' y='290' font-size='12' fill='#334155'>[0, ∞) → [0, ∞)</text></svg>"
+    },
+    {
+      "baslik": "Dikey Öteleme, Uzama-Daralma ve Yansıma: a · f(x) + k Biçimi",
+      "metin": [
+        "Parabolde kullandığımız dönüşümler karekök fonksiyonunda da aynı mantıkla çalışır. Önce {koyu:dikey ötelemeyi} inceleyelim: g(x) = {kok:x} + k fonksiyonunda her görüntüye k eklenir, yani referans grafiğin her (x, y) noktası (x, y + k) noktasına gider. g(x) = {kok:x} − 3 için (0, 0) → (0, −3), (9, 3) → (9, 0) olur. Grafik 3 birim aşağı kayar; artık {koyu:başlangıç noktası (0, −3)}, görüntü kümesi [−3, ∞) olur. Bu fonksiyonun sıfırı {kok:x} = 3 denkleminden x = 9 bulunur. Buna karşılık g(x) = {kok:x} + 2 fonksiyonunda {kok:x} = −2 denkleminin çözümü yoktur; grafik x eksenine hiç ulaşmaz. Dikey ötelemede {koyu:tanım kümesi değişmez}, [0, ∞) olarak kalır; çünkü girdiye dokunulmamıştır.",
+        "Görüntüleri a ile çarptığımızda {koyu:dikey uzama-daralma} elde ederiz. g(x) = 3{kok:x} için (4, 2) → (4, 6) olur; a > 1 iken grafik dikey olarak uzar, yani daha dik yükselir. g(x) = {kesir:1|2}{kok:x} için (4, 2) → (4, 1) olur; 0 < a < 1 iken grafik basıklaşır. a < 0 ise ayrıca {koyu:x eksenine göre yansıma} vardır: g(x) = −{kok:x} grafiği referans grafiğin x eksenine göre simetriğidir; (9, 3) noktası (9, −3) olur. Yansımanın nitel özelliklere etkisi büyüktür: −{kok:x} fonksiyonu tanım kümesinde {koyu:azalandır}, görüntü kümesi (−∞, 0] olur ve (0, 0) artık bir {koyu:maksimum noktasıdır}. İspat kısadır: 0 ≤ {alt:x|1} < {alt:x|2} ise {kok:{alt:x|1}} < {kok:{alt:x|2}}; her iki yan −1 ile çarpılınca eşitsizlik yön değiştirir.",
+        "İki dönüşümü birleştirelim: g(x) = a{kok:x} + k. Önce çarpılır, sonra eklenir; referans grafiğin her (x, y) noktası {koyu:(x, a · y + k)} noktasına gider ve başlangıç noktası {koyu:(0, k)} olur. Örneğin g(x) = 2{kok:x} − 4 fonksiyonunda (1, 1) → (1, −2), (4, 2) → (4, 0), (9, 3) → (9, 2) olur. Fonksiyon artandır, minimum değeri −4, görüntü kümesi [−4, ∞), sıfırı x = 4'tür. h(x) = −{kok:x} + 3 fonksiyonunda ise (4, 2) → (4, 1), (9, 3) → (9, 0) olur; fonksiyon azalan, maksimum değeri 3, görüntü kümesi (−∞, 3] ve sıfırı x = 9'dur. h fonksiyonu [0, 9) aralığında pozitif, (9, ∞) aralığında negatiftir. Genelleme: {koyu:a > 0 ise artan ve görüntü [k, ∞); a < 0 ise azalan ve görüntü (−∞, k]}."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Fonksiyon",
+          "Dönüşüm",
+          "Başlangıç Noktası",
+          "Görüntü Kümesi",
+          "Monotonluk",
+          "Sıfır"
+        ],
+        "satirlar": [
+          [
+            "{kok:x} + 2",
+            "2 birim yukarı",
+            "(0, 2)",
+            "[2, ∞)",
+            "Artan",
+            "Yok"
+          ],
+          [
+            "{kok:x} − 3",
+            "3 birim aşağı",
+            "(0, −3)",
+            "[−3, ∞)",
+            "Artan",
+            "x = 9"
+          ],
+          [
+            "3{kok:x}",
+            "3 kat dikey uzama",
+            "(0, 0)",
+            "[0, ∞)",
+            "Artan",
+            "x = 0"
+          ],
+          [
+            "−{kok:x}",
+            "x eksenine göre yansıma",
+            "(0, 0)",
+            "(−∞, 0]",
+            "Azalan",
+            "x = 0"
+          ],
+          [
+            "2{kok:x} − 4",
+            "2 kat uzama, 4 birim aşağı",
+            "(0, −4)",
+            "[−4, ∞)",
+            "Artan",
+            "x = 4"
+          ],
+          [
+            "−{kok:x} + 3",
+            "Yansıma, 3 birim yukarı",
+            "(0, 3)",
+            "(−∞, 3]",
+            "Azalan",
+            "x = 9"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "a'nın İşareti Yönü Belirler",
+          "metin": "g(x) = a{kok:x} + k fonksiyonu a > 0 iken {koyu:artan} (başlangıç noktası minimum), a < 0 iken {koyu:azalan} (başlangıç noktası maksimum) olur. Diğer ekstremum yoktur; çünkü grafik bir yönde sınırsız ilerler."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Dikey Dönüşümler Tanım Kümesine Dokunmaz",
+          "metin": "Görüntüyü a ile çarpmak ya da görüntüye k eklemek yalnız ordinatları değiştirir. Bu yüzden a{kok:x} + k biçimindeki her fonksiyonun tanım kümesi referans fonksiyondaki gibi {koyu:[0, ∞)} olarak kalır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 310' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='310' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='16' y='12' width='728' height='36' rx='10' fill='#1e293b'/><text x='380' y='36' text-anchor='middle' font-size='16' font-weight='700' fill='#ffffff'>Dikey Öteleme, Uzama ve Yansıma</text><rect x='20' y='60' width='390' height='238' rx='12' fill='#ffffff' stroke='#cbd5e1'/><line x1='40' y1='180' x2='398' y2='180' stroke='#64748b' stroke-width='1.5'/><line x1='60' y1='70' x2='60' y2='290' stroke='#64748b' stroke-width='1.5'/><text x='388' y='174' font-size='12' fill='#64748b'>x</text><text x='66' y='80' font-size='12' fill='#64748b'>y</text><polyline points='60,180 65,170 80,160 105,150 140,140 185,130 240,120 305,110 380,100' fill='none' stroke='#059669' stroke-width='3'/><polyline points='60,260 65,240 80,220 105,200 140,180 185,160 240,140 305,120 380,100' fill='none' stroke='#dc2626' stroke-width='3'/><polyline points='60,120 65,130 80,140 105,150 140,160 185,170 240,180 305,190 380,200' fill='none' stroke='#2563eb' stroke-width='3'/><circle cx='60' cy='180' r='5' fill='#059669'/><circle cx='60' cy='260' r='5' fill='#dc2626'/><circle cx='60' cy='120' r='5' fill='#2563eb'/><circle cx='140' cy='180' r='5' fill='#ffffff' stroke='#dc2626' stroke-width='2'/><circle cx='240' cy='180' r='5' fill='#ffffff' stroke='#2563eb' stroke-width='2'/><text x='140' y='198' text-anchor='middle' font-size='12' fill='#b91c1c'>4</text><text x='240' y='198' text-anchor='middle' font-size='12' fill='#1d4ed8'>9</text><text x='380' y='198' text-anchor='middle' font-size='12' fill='#334155'>16</text><text x='48' y='124' text-anchor='middle' font-size='12' fill='#1d4ed8'>3</text><text x='46' y='264' text-anchor='middle' font-size='12' fill='#b91c1c'>−4</text><rect x='428' y='60' width='312' height='238' rx='12' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><rect x='428' y='60' width='312' height='32' rx='10' fill='#2563eb'/><text x='584' y='81' text-anchor='middle' font-size='14' font-weight='700' fill='#ffffff'>a · karekök(x) + k</text><line x1='442' y1='112' x2='470' y2='112' stroke='#059669' stroke-width='3'/><text x='478' y='116' font-size='12' fill='#334155'>karekök(x): başlangıç (0, 0)</text><line x1='442' y1='138' x2='470' y2='138' stroke='#dc2626' stroke-width='3'/><text x='478' y='142' font-size='12' fill='#334155'>2·karekök(x) − 4: (0, −4), sıfır 4</text><line x1='442' y1='164' x2='470' y2='164' stroke='#2563eb' stroke-width='3'/><text x='478' y='168' font-size='12' fill='#334155'>−karekök(x) + 3: (0, 3), sıfır 9</text><rect x='442' y='184' width='284' height='100' rx='10' fill='#ffffff' stroke='#93c5fd'/><text x='584' y='206' text-anchor='middle' font-size='12' font-weight='700' fill='#1e293b'>(x, y) → (x, a · y + k)</text><text x='584' y='228' text-anchor='middle' font-size='12' fill='#334155'>a &gt; 0: artan, görüntü [k, ∞)</text><text x='584' y='248' text-anchor='middle' font-size='12' fill='#334155'>a &lt; 0: azalan, görüntü (−∞, k]</text><text x='584' y='270' text-anchor='middle' font-size='12' font-weight='700' fill='#1d4ed8'>Tanım kümesi: her zaman [0, ∞)</text></svg>"
+    },
+    {
+      "baslik": "Karekök Fonksiyonlarında Yatay Öteleme ve Genel Biçim",
+      "metin": [
+        "Şimdi değişikliği girdiye yapalım: g(x) = f(x − 2) = {kok:x − 2}. Karekök içindeki ifade negatif olamayacağından x − 2 ≥ 0, yani {koyu:x ≥ 2} olmalıdır; tanım kümesi [2, ∞) olur. Değer tablosu g(2) = 0, g(3) = 1, g(6) = 2, g(11) = 3 biçimindedir. Referans fonksiyon 0, 1, 2, 3 değerlerini x = 0, 1, 4, 9'da alırken g bu değerleri 2 birim sonra, x = 2, 3, 6, 11'de alır; grafik {koyu:2 birim sağa} ötelenmiştir. Benzer biçimde h(x) = {kok:x + 3} için x + 3 ≥ 0 koşulundan tanım kümesi [−3, ∞) bulunur ve grafik {koyu:3 birim sola} kayar. Parabolde olduğu gibi kural yine geçerlidir: r > 0 iken f(x − r) sağa, f(x + r) sola ötelenir; {koyu:karekökün içini sıfır yapan x değeri, grafiğin başladığı noktanın apsisidir}.",
+        "Parabolden çok önemli bir farkı vardır: Parabolde yatay öteleme tanım kümesini değiştirmiyordu, çünkü {us:x|2} her gerçek sayıda tanımlıdır. Karekök fonksiyonunda ise yatay öteleme {koyu:tanım kümesini de taşır}: [0, ∞) aralığı [r, ∞) olur. Görüntü kümesi [0, ∞), artanlık ve bire birlik korunur; sıfır x = r'ye taşınır. Bütün dönüşümleri birleştirirsek {koyu:g(x) = a · {kok:x − r} + k} genel biçimine ulaşırız. Referans grafiğin her (x, y) noktası önce (x + r, y), sonra (x + r, a · y), en sonunda {koyu:(x + r, a · y + k)} noktasına gider. Özel olarak grafiğin başladığı (0, 0) noktası {koyu:(r, k) başlangıç noktasına} taşınır. Programdaki g(x) = a · f(x ± r) ± k gösterimini okurken {kok:x + 4} ifadesini {kok:x − (−4)} olarak düşünüp r = −4 alırız.",
+        "Bir örnekle izleyelim: g(x) = 2{kok:x − 1} − 6. {koyu:1. adım:} {kok:x} → {kok:x − 1}: 1 birim sağa, başlangıç (1, 0), tanım kümesi [1, ∞). {koyu:2. adım:} → 2{kok:x − 1}: görüntüler 2 katına çıkar. {koyu:3. adım:} → 2{kok:x − 1} − 6: 6 birim aşağı, başlangıç {koyu:(1, −6)}. Referans grafiğin (9, 3) noktası (9, 3) → (10, 3) → (10, 6) → {koyu:(10, 0)} yolunu izler; demek ki x = 10 sıfırdır. Kontrol: g(10) = 2 · 3 − 6 = 0. ✓ Sıra burada da önemlidir: Önce 6 çıkarıp sonra 2 ile çarparsak 2({kok:x − 1} − 6) = 2{kok:x − 1} − 12 elde ederiz ve başlangıç noktası (1, −12) olur. İkinci örnek h(x) = −{kok:x + 4} + 2 fonksiyonudur: Grafik 4 birim sola kayar, x eksenine göre yansır ve 2 birim yukarı çıkar. Tanım kümesi [−4, ∞), başlangıç noktası (−4, 2) bir maksimum noktasıdır; {kok:x + 4} = 2 denkleminden sıfır x = 0 bulunur, yani grafik orijinden geçer."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Adım",
+          "İşlem",
+          "Ortaya Çıkan Kural",
+          "(9, 3) Noktasının Konumu",
+          "Başlangıç Noktası",
+          "Tanım Kümesi"
+        ],
+        "satirlar": [
+          [
+            "0",
+            "Referans fonksiyon",
+            "{kok:x}",
+            "(9, 3)",
+            "(0, 0)",
+            "[0, ∞)"
+          ],
+          [
+            "1",
+            "1 birim sağa öteleme",
+            "{kok:x − 1}",
+            "(10, 3)",
+            "(1, 0)",
+            "[1, ∞)"
+          ],
+          [
+            "2",
+            "Görüntüleri 2 ile çarpma",
+            "2{kok:x − 1}",
+            "(10, 6)",
+            "(1, 0)",
+            "[1, ∞)"
+          ],
+          [
+            "3",
+            "6 birim aşağı öteleme",
+            "2{kok:x − 1} − 6",
+            "(10, 0) → sıfır",
+            "(1, −6)",
+            "[1, ∞)"
+          ],
+          [
+            "Karşı örnek",
+            "Önce −6 ekleyip sonra 2 ile çarpma",
+            "2{kok:x − 1} − 12",
+            "(10, −6)",
+            "(1, −12)",
+            "[1, ∞)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Başlangıç Noktası",
+          "metin": "a ≠ 0 olmak üzere {koyu:g(x) = a · {kok:x − r} + k} fonksiyonunun grafiği {koyu:(r, k)} noktasından başlayan tek bir koldur. Tanım kümesi x − r ≥ 0 koşulundan [r, ∞) bulunur; a > 0 ise kol yukarı, a < 0 ise aşağı doğru ilerler."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Yatay Öteleme Tanım Kümesini Taşır",
+          "metin": "{kok:x − 5} için tanım kümesi [5, ∞), {kok:x + 5} için [−5, ∞)'dur. Tanım kümesini bulmak için karekökün içini sıfırdan büyük ya da sıfıra eşit yapın; dışarıdaki a ve k sayıları tanım kümesini etkilemez."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 310' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='310' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='16' y='12' width='728' height='36' rx='10' fill='#1e293b'/><text x='380' y='36' text-anchor='middle' font-size='16' font-weight='700' fill='#ffffff'>Yatay Öteleme: Başlangıç Noktası ve Tanım Kümesi Kayar</text><rect x='20' y='60' width='400' height='238' rx='12' fill='#ffffff' stroke='#cbd5e1'/><line x1='30' y1='260' x2='410' y2='260' stroke='#64748b' stroke-width='1.5'/><line x1='120' y1='70' x2='120' y2='285' stroke='#64748b' stroke-width='1.5'/><text x='400' y='252' font-size='12' fill='#64748b'>x</text><text x='126' y='80' font-size='12' fill='#64748b'>y</text><polyline points='60,260 65,245 80,230 105,215 140,200 185,185 240,170 320,152 380,140' fill='none' stroke='#7c3aed' stroke-width='3'/><polyline points='120,260 125,245 140,230 165,215 200,200 245,185 300,170 400,148' fill='none' stroke='#059669' stroke-width='3'/><polyline points='160,260 165,245 180,230 205,215 240,200 285,185 340,170 400,156' fill='none' stroke='#dc2626' stroke-width='3'/><circle cx='60' cy='260' r='5' fill='#7c3aed'/><circle cx='120' cy='260' r='5' fill='#059669'/><circle cx='160' cy='260' r='5' fill='#dc2626'/><text x='60' y='278' text-anchor='middle' font-size='12' fill='#6d28d9'>−3</text><text x='114' y='278' text-anchor='middle' font-size='12' fill='#047857'>0</text><text x='162' y='278' text-anchor='middle' font-size='12' fill='#b91c1c'>2</text><text x='140' y='120' font-size='12' fill='#334155'>Aynı yükseklik (y = 2):</text><text x='140' y='138' font-size='12' fill='#334155'>x = 1, 4 ve 6 noktalarında</text><rect x='438' y='60' width='302' height='238' rx='12' fill='#fef2f2' stroke='#dc2626' stroke-width='2'/><rect x='438' y='60' width='302' height='32' rx='10' fill='#dc2626'/><text x='589' y='81' text-anchor='middle' font-size='14' font-weight='700' fill='#ffffff'>Başlangıç Noktası (r, k)</text><line x1='452' y1='112' x2='478' y2='112' stroke='#059669' stroke-width='3'/><text x='486' y='116' font-size='12' fill='#334155'>karekök(x): [0, ∞), referans</text><line x1='452' y1='138' x2='478' y2='138' stroke='#dc2626' stroke-width='3'/><text x='486' y='142' font-size='12' fill='#334155'>karekök(x − 2): [2, ∞), 2 sağa</text><line x1='452' y1='164' x2='478' y2='164' stroke='#7c3aed' stroke-width='3'/><text x='486' y='168' font-size='12' fill='#334155'>karekök(x + 3): [−3, ∞), 3 sola</text><rect x='452' y='184' width='274' height='100' rx='10' fill='#ffffff' stroke='#fca5a5'/><text x='589' y='206' text-anchor='middle' font-size='12' font-weight='700' fill='#1e293b'>g(x) = a · karekök(x − r) + k</text><text x='589' y='226' text-anchor='middle' font-size='12' fill='#334155'>(x, y) → (x + r, a · y + k)</text><text x='589' y='246' text-anchor='middle' font-size='12' fill='#334155'>Tanım: x − r ≥ 0 → [r, ∞)</text><text x='589' y='268' text-anchor='middle' font-size='12' font-weight='700' fill='#b91c1c'>Başlangıç noktası: (r, k)</text></svg>"
+    },
+    {
+      "baslik": "Karekök Fonksiyonlarının Nitel Özelliklerini Genelleme ve Kuralı Yazma",
+      "metin": [
+        "Referans fonksiyondan hareketle bir {koyu:varsayım} kuralım: Dönüşümler yalnız konumu, açıklığı ve yönü değiştirdiğine göre g(x) = a{kok:x − r} + k fonksiyonu tanım kümesinin tamamında ya hep artan ya hep azalan olmalı ve en uç değerini başlangıç noktasında almalıdır. İspatlayalım: r ≤ {alt:x|1} < {alt:x|2} ise referans fonksiyon artan olduğundan {kok:{alt:x|1} − r} < {kok:{alt:x|2} − r} olur. g({alt:x|2}) − g({alt:x|1}) = a · ({kok:{alt:x|2} − r} − {kok:{alt:x|1} − r}) farkında parantez pozitiftir; a > 0 ise fark pozitif, yani g {koyu:artandır}; a < 0 ise fark negatif, yani g {koyu:azalandır}. Her x ≥ r için {kok:x − r} ≥ 0 olduğundan a > 0 iken g(x) ≥ k, a < 0 iken g(x) ≤ k olur. Görüntü kümesi a > 0 iken {koyu:[k, ∞)}, a < 0 iken {koyu:(−∞, k]}'dir ve başlangıç noktası (r, k) sırasıyla minimum ya da maksimum noktasıdır.",
+        "{koyu:Sıfırlar} için g(x) = 0 denklemi {kok:x − r} = −{kesir:k|a} biçimine gelir. Sol taraf negatif olamayacağından çözüm ancak −{kesir:k|a} ≥ 0 iken vardır. {koyu:a ile k zıt işaretliyse} her iki yanın karesi alınarak tek sıfır x = r + {kesir:{us:k|2}|{us:a|2}} bulunur; k = 0 ise sıfır başlangıç apsisi x = r olur; a ile k aynı işaretliyse sıfır yoktur. Burada parabolden önemli bir fark vardır: Parabol x eksenini iki kez kesebilirken karekök fonksiyonu {koyu:bire bir} olduğu için en fazla bir sıfıra sahiptir. Bire birlik doğrudan da gösterilebilir: g(m) = g(n) ise a{kok:m − r} = a{kok:n − r}, a ≠ 0 olduğundan {kok:m − r} = {kok:n − r} ve kare alınarak m = n bulunur. Tanım kümesi [r, ∞) hiçbir zaman 0'a göre simetrik olmadığından g {koyu:ne tek ne çift} olur. y eksenini ancak 0 tanım kümesindeyse, yani r ≤ 0 iken (0, a{kok:−r} + k) noktasında keser.",
+        "Temsiller arasındaki ilişkiyi ters yönde kullanarak bir grafikten {koyu:kural yazabiliriz}. Başlangıç noktası r ve k'yı verir; a için bir nokta daha yeter. Grafiği (−2, 1) noktasından başlayan ve (7, 7) noktasından geçen fonksiyon için g(x) = a{kok:x + 2} + 1 yazılır; x = 7 için 7 = a · 3 + 1, yani {koyu:a = 2} bulunur: g(x) = 2{kok:x + 2} + 1. Kontrol: g(2) = 2 · 2 + 1 = 5 ve bu noktanın grafikte olduğu ölçümle doğrulanabilir. Başlangıcı (3, 4), sıfırı 7 olan fonksiyonda 0 = a · 2 + 4'ten a = −2 ve g(x) = −2{kok:x − 3} + 4 olur. Fonksiyon her aralıkta tek yönlü olduğundan {koyu:kapalı aralıktaki görüntü kümesi} doğrudan uç değerlerden bulunur; parabolde olduğu gibi aralığın içindeki bir tepe noktasını kontrol etmeye gerek yoktur. Örneğin g: [2, 17] → ℝ, g(x) = 2{kok:x − 1} − 6 için g(2) = −4 ve g(17) = 2 olduğundan görüntü kümesi [−4, 2] olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Nitel Özellik",
+          "a > 0",
+          "a < 0"
+        ],
+        "satirlar": [
+          [
+            "Tanım kümesi",
+            "[r, ∞)",
+            "[r, ∞)"
+          ],
+          [
+            "Görüntü kümesi",
+            "[k, ∞)",
+            "(−∞, k]"
+          ],
+          [
+            "Monotonluk",
+            "Tanım kümesinde artan",
+            "Tanım kümesinde azalan"
+          ],
+          [
+            "Ekstremum",
+            "Minimum noktası (r, k); maksimum yok",
+            "Maksimum noktası (r, k); minimum yok"
+          ],
+          [
+            "Sıfır",
+            "k < 0 ise tek sıfır, k = 0 ise x = r, k > 0 ise yok",
+            "k > 0 ise tek sıfır, k = 0 ise x = r, k < 0 ise yok"
+          ],
+          [
+            "Sıfırın yeri",
+            "x = r + {kesir:{us:k|2}|{us:a|2}}",
+            "x = r + {kesir:{us:k|2}|{us:a|2}}"
+          ],
+          [
+            "İşaret (sıfır x = s ise)",
+            "[r, s) negatif, (s, ∞) pozitif",
+            "[r, s) pozitif, (s, ∞) negatif"
+          ],
+          [
+            "Bire birlik",
+            "Bire bir",
+            "Bire bir"
+          ],
+          [
+            "Teklik-çiftlik",
+            "Ne tek ne çift",
+            "Ne tek ne çift"
+          ],
+          [
+            "Bire bir ve örten seçim",
+            "[r, ∞) → [k, ∞)",
+            "[r, ∞) → (−∞, k]"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Sıfır Sayısı İçin a ile k'nın İşaretleri",
+          "metin": "{koyu:a · k < 0} ise tek sıfır vardır ve x = r + {kesir:{us:k|2}|{us:a|2}} olur; {koyu:k = 0} ise sıfır başlangıç noktasının apsisi x = r'dir; {koyu:a · k > 0} ise sıfır yoktur. Karekök fonksiyonunun iki sıfırı olamaz."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kural Yazarken Eksik Bilgiyi Fark Et",
+          "metin": "Yalnız tanım kümesi [5, ∞) ve görüntü kümesi (−∞, −1] verilirse r = 5, k = −1 ve a < 0 olduğu anlaşılır; ama a'nın değeri belirlenemez. Kuralı tek türlü yazabilmek için grafikte {koyu:bir nokta daha} gerekir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='16' y='12' width='728' height='36' rx='10' fill='#1e293b'/><text x='380' y='36' text-anchor='middle' font-size='16' font-weight='700' fill='#ffffff'>Genel Karekök Fonksiyonu: Dönüşüm Zinciri ve Sıfır Sayısı</text><rect x='30' y='66' width='150' height='84' rx='12' fill='#ffffff' stroke='#059669' stroke-width='2'/><text x='105' y='92' text-anchor='middle' font-size='13' font-weight='700' fill='#1e293b'>karekök(x)</text><text x='105' y='114' text-anchor='middle' font-size='12' fill='#334155'>Referans</text><text x='105' y='134' text-anchor='middle' font-size='12' fill='#047857'>Başlangıç (0, 0)</text><rect x='215' y='66' width='150' height='84' rx='12' fill='#ffffff' stroke='#059669' stroke-width='2'/><text x='290' y='92' text-anchor='middle' font-size='13' font-weight='700' fill='#1e293b'>karekök(x − 1)</text><text x='290' y='114' text-anchor='middle' font-size='12' fill='#334155'>1 birim sağa</text><text x='290' y='134' text-anchor='middle' font-size='12' fill='#047857'>Başlangıç (1, 0)</text><rect x='400' y='66' width='150' height='84' rx='12' fill='#ffffff' stroke='#059669' stroke-width='2'/><text x='475' y='92' text-anchor='middle' font-size='13' font-weight='700' fill='#1e293b'>2·karekök(x − 1)</text><text x='475' y='114' text-anchor='middle' font-size='12' fill='#334155'>2 kat dikey uzama</text><text x='475' y='134' text-anchor='middle' font-size='12' fill='#047857'>Başlangıç (1, 0)</text><rect x='585' y='66' width='150' height='84' rx='12' fill='#d1fae5' stroke='#047857' stroke-width='2'/><text x='660' y='92' text-anchor='middle' font-size='12' font-weight='700' fill='#1e293b'>2·karekök(x − 1) − 6</text><text x='660' y='114' text-anchor='middle' font-size='12' fill='#334155'>6 birim aşağı</text><text x='660' y='134' text-anchor='middle' font-size='12' font-weight='700' fill='#047857'>Başlangıç (1, −6)</text><line x1='182' y1='108' x2='205' y2='108' stroke='#64748b' stroke-width='2'/><polygon points='213,108 203,103 203,113' fill='#64748b'/><line x1='367' y1='108' x2='390' y2='108' stroke='#64748b' stroke-width='2'/><polygon points='398,108 388,103 388,113' fill='#64748b'/><line x1='552' y1='108' x2='575' y2='108' stroke='#64748b' stroke-width='2'/><polygon points='583,108 573,103 573,113' fill='#64748b'/><text x='380' y='178' text-anchor='middle' font-size='12' fill='#334155'>Nokta takibi: (9, 3) → (10, 3) → (10, 6) → (10, 0), yani sıfır x = 10</text><rect x='30' y='194' width='228' height='96' rx='12' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><text x='144' y='216' text-anchor='middle' font-size='14' font-weight='700' fill='#1d4ed8'>a · k &lt; 0</text><text x='144' y='238' text-anchor='middle' font-size='12' fill='#334155'>Tek sıfır: x = r + k²/a²</text><text x='144' y='258' text-anchor='middle' font-size='12' fill='#334155'>Örnek: 2·karekök(x − 1) − 6</text><text x='144' y='278' text-anchor='middle' font-size='12' fill='#1d4ed8'>x = 1 + 36/4 = 10</text><rect x='266' y='194' width='228' height='96' rx='12' fill='#fefce8' stroke='#ca8a04' stroke-width='2'/><text x='380' y='216' text-anchor='middle' font-size='14' font-weight='700' fill='#a16207'>k = 0</text><text x='380' y='238' text-anchor='middle' font-size='12' fill='#334155'>Tek sıfır: x = r</text><text x='380' y='258' text-anchor='middle' font-size='12' fill='#334155'>Örnek: 3·karekök(x + 2)</text><text x='380' y='278' text-anchor='middle' font-size='12' fill='#a16207'>Grafik (−2, 0) noktasından başlar</text><rect x='502' y='194' width='228' height='96' rx='12' fill='#fef2f2' stroke='#dc2626' stroke-width='2'/><text x='616' y='216' text-anchor='middle' font-size='14' font-weight='700' fill='#b91c1c'>a · k &gt; 0</text><text x='616' y='238' text-anchor='middle' font-size='12' fill='#334155'>Sıfır yok</text><text x='616' y='258' text-anchor='middle' font-size='12' fill='#334155'>Örnek: karekök(x − 4) + 1</text><text x='616' y='278' text-anchor='middle' font-size='12' fill='#b91c1c'>Grafik x eksenine ulaşmaz</text><text x='380' y='308' text-anchor='middle' font-size='12' font-weight='700' fill='#1e293b'>Karekök fonksiyonu bire bir olduğu için en fazla bir sıfırı vardır.</text></svg>"
+    },
+    {
+      "baslik": "Karesel ve Karekök Fonksiyonlarını Karşılaştırma, Doğrulama ve Gerçek Yaşam Modelleri",
+      "metin": [
+        "İki referans fonksiyonu yan yana koyduğumuzda benzerlikler ve farklar netleşir. Her ikisinin de görüntü kümesi [0, ∞), minimum noktası (0, 0) ve tek sıfırı x = 0'dır. Ancak {us:x|2} her gerçek sayıda tanımlıyken {kok:x} yalnız [0, ∞) aralığında tanımlıdır. Parabol yön değiştirdiği için ℝ'de bire bir değildir ve çifttir; karekök fonksiyonu hiç yön değiştirmez, bire birdir ve ne tek ne çifttir. Dönüşümler de farklı izler bırakır: Parabolde yatay öteleme tanım kümesini değiştirmezken karekökte tanım kümesini [r, ∞) yapar; ötelenmiş bir parabolün en fazla {koyu:iki}, ötelenmiş bir karekök fonksiyonunun en fazla {koyu:bir} sıfırı vardır. Kapalı aralıkta görüntü kümesi bulunurken parabolde tepe noktasının aralıkta olup olmadığına bakmak gerekir; karekökte uç değerler yeterlidir.",
+        "Bu hafta ürettiğimiz önermeleri sınarken üç aracımız var: {koyu:grafiksel doğrulama}, {koyu:cebirsel ispat} ve {koyu:karşı örnek}. “Her x için {kok:{us:x|2}} = x” önermesi pozitif sayılarla denendiğinde doğru görünür; ama x = −3 için {kok:9} = 3 ≠ −3 olduğundan {koyu:yanlıştır}; doğrusu {kok:{us:x|2}} = {uzunluk:x} eşitliğidir. “{kok:a + b} = {kok:a} + {kok:b}” önermesi de çekicidir ama {kok:9 + 16} = 5 iken {kok:9} + {kok:16} = 7 olduğundan yanlıştır. “x ≥ 0 için {kok:x} ≤ x” önermesi x = {kesir:1|4} için {kesir:1|2} > {kesir:1|4} olduğundan çürür; cebirsel inceleme {kok:x} − x = {kok:x}(1 − {kok:x}) çarpımının (0, 1) aralığında pozitif, (1, ∞) aralığında negatif olduğunu gösterir. Grafik bize hızlı bir varsayım verir, ispat ise her durumda geçerliliği garanti eder.",
+        "Karekök fonksiyonu gerçek yaşamda, kare ile ilişkili bir büyüklükten geri dönmemiz gereken her durumda ortaya çıkar. Serbest düşmede (yer çekimi ivmesi yaklaşık 10 m/{us:s|2} alınırsa) t saniyede düşülen yükseklik h = 5{us:t|2} metredir. Ters yönde okursak düşme süresi {koyu:t(h) = {kok:{kesir:h|5}}} olur: 20 m'den düşen bir cisim 2 s'de, 45 m'den düşen 3 s'de, 80 m'den düşen 4 s'de yere ulaşır. Fonksiyon artan, ama artışı yavaşlayan bir fonksiyondur: Yükseklik 4 katına çıktığında süre yalnız 2 katına çıkar, çünkü t(4h) = {kok:{kesir:4h|5}} = 2{kok:{kesir:h|5}} olur. Benzer biçimde alanı A metrekare olan kare bir bahçenin kenarı s(A) = {kok:A} metredir; 64 m²'lik bahçenin kenarı 8 m'dir ve çevresine 4{kok:A} = 32 m çit gerekir. Bağlam tanım kümesini kısıtlar: 80 m yüksekliğindeki bir binadan yapılan düşme deneyinde tanım kümesi [0, 80], görüntü kümesi [0, 4] olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Önerme",
+          "Sınama Yolu",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "Her x için {kok:{us:x|2}} = x'tir.",
+            "Karşı örnek: x = −3 için {kok:9} = 3",
+            "Yanlış; doğrusu {kok:{us:x|2}} = {uzunluk:x}"
+          ],
+          [
+            "{kok:a + b} = {kok:a} + {kok:b}'dir.",
+            "Karşı örnek: {kok:25} = 5, {kok:9} + {kok:16} = 7",
+            "Yanlış"
+          ],
+          [
+            "x ≥ 0 için {kok:x} ≤ x'tir.",
+            "Karşı örnek: x = {kesir:1|4}",
+            "Yanlış; yalnız x = 0 veya x ≥ 1 için doğru"
+          ],
+          [
+            "a{kok:x − r} + k fonksiyonunun en fazla bir sıfırı vardır.",
+            "Cebirsel ispat: fonksiyon bire birdir",
+            "Doğru"
+          ],
+          [
+            "Yatay öteleme karekök fonksiyonunun tanım kümesini değiştirir.",
+            "{kok:x − r} için x − r ≥ 0 → [r, ∞)",
+            "Doğru"
+          ],
+          [
+            "Bazı karekök fonksiyonları çift olabilir.",
+            "Tanım kümesi [r, ∞) simetrik değildir",
+            "Yanlış"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "bilgi",
+          "baslik": "Karekök Modellerinin Ortak Özelliği",
+          "metin": "Karekök modellerinde girdi 4 katına çıkınca çıktı 2 katına, 9 katına çıkınca 3 katına çıkar. Düşme süresi, kare alanın kenarı ve sarkacın salınım süresi gibi büyüklükler bu yavaşlayan artışı gösterir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Hangi Yöntem Ne Zaman?",
+          "metin": "Bir genellemeden şüpheleniyorsanız önce {koyu:karşı örnek} arayın; özellikle negatif sayılar ve 0 ile 1 arasındaki sayılar iyi adaylardır. Önerme her denemede tutuyorsa {koyu:cebirsel ispat} yazın ve sonucu bir {koyu:grafikle} görselleştirin."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='330' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='16' y='12' width='728' height='36' rx='10' fill='#1e293b'/><text x='380' y='36' text-anchor='middle' font-size='16' font-weight='700' fill='#ffffff'>İki Referans Fonksiyon ve Bir Gerçek Yaşam Modeli</text><rect x='20' y='60' width='380' height='258' rx='12' fill='#ffffff' stroke='#cbd5e1'/><rect x='20' y='60' width='380' height='30' rx='10' fill='#334155'/><text x='32' y='80' font-size='12' font-weight='700' fill='#ffffff'>Özellik</text><text x='150' y='80' font-size='12' font-weight='700' fill='#bfdbfe'>x²</text><text x='275' y='80' font-size='12' font-weight='700' fill='#a7f3d0'>karekök(x)</text><text x='32' y='114' font-size='11' font-weight='700' fill='#1e293b'>Tanım kümesi</text><text x='150' y='114' font-size='11' fill='#1d4ed8'>ℝ</text><text x='275' y='114' font-size='11' fill='#047857'>[0, ∞)</text><text x='32' y='142' font-size='11' font-weight='700' fill='#1e293b'>Görüntü kümesi</text><text x='150' y='142' font-size='11' fill='#1d4ed8'>[0, ∞)</text><text x='275' y='142' font-size='11' fill='#047857'>[0, ∞)</text><text x='32' y='170' font-size='11' font-weight='700' fill='#1e293b'>Monotonluk</text><text x='150' y='170' font-size='11' fill='#1d4ed8'>önce azalan, sonra artan</text><text x='275' y='170' font-size='11' fill='#047857'>hep artan</text><text x='32' y='198' font-size='11' font-weight='700' fill='#1e293b'>Bire bir (ℝ'de)</text><text x='150' y='198' font-size='11' fill='#1d4ed8'>hayır</text><text x='275' y='198' font-size='11' fill='#047857'>evet</text><text x='32' y='226' font-size='11' font-weight='700' fill='#1e293b'>Tek-çift</text><text x='150' y='226' font-size='11' fill='#1d4ed8'>çift</text><text x='275' y='226' font-size='11' fill='#047857'>hiçbiri</text><text x='32' y='254' font-size='11' font-weight='700' fill='#1e293b'>En fazla sıfır</text><text x='150' y='254' font-size='11' fill='#1d4ed8'>2 (ötelenmişte)</text><text x='275' y='254' font-size='11' fill='#047857'>1</text><text x='32' y='282' font-size='11' font-weight='700' fill='#1e293b'>Yatay öteleme</text><text x='150' y='282' font-size='11' fill='#1d4ed8'>tanım değişmez</text><text x='275' y='282' font-size='11' fill='#047857'>tanım [r, ∞) olur</text><text x='32' y='306' font-size='11' font-weight='700' fill='#1e293b'>Kapalı aralık</text><text x='150' y='306' font-size='11' fill='#1d4ed8'>tepe kontrolü</text><text x='275' y='306' font-size='11' fill='#047857'>uç değerler yeter</text><rect x='418' y='60' width='322' height='258' rx='12' fill='#ffffff' stroke='#cbd5e1'/><text x='579' y='82' text-anchor='middle' font-size='13' font-weight='700' fill='#1e293b'>Düşme süresi: t = karekök(h ÷ 5)</text><line x1='440' y1='280' x2='732' y2='280' stroke='#64748b' stroke-width='1.5'/><line x1='450' y1='100' x2='450' y2='290' stroke='#64748b' stroke-width='1.5'/><polyline points='450,280 454.25,260 467,240 488.25,220 518,200 556.25,180 603,160 658.25,140 722,120' fill='none' stroke='#7c3aed' stroke-width='3'/><circle cx='518' cy='200' r='5' fill='#7c3aed'/><circle cx='603' cy='160' r='5' fill='#7c3aed'/><circle cx='722' cy='120' r='5' fill='#7c3aed'/><text x='524' y='194' font-size='12' fill='#6d28d9'>(20, 2)</text><text x='609' y='154' font-size='12' fill='#6d28d9'>(45, 3)</text><text x='676' y='112' font-size='12' fill='#6d28d9'>(80, 4)</text><text x='518' y='296' text-anchor='middle' font-size='11' fill='#334155'>20</text><text x='603' y='296' text-anchor='middle' font-size='11' fill='#334155'>45</text><text x='722' y='296' text-anchor='middle' font-size='11' fill='#334155'>80</text><text x='690' y='312' font-size='11' fill='#64748b'>h (m)</text><text x='456' y='110' font-size='11' fill='#64748b'>t (s)</text><text x='470' y='240' font-size='11' fill='#334155'>h 4 katına çıkınca</text><text x='470' y='256' font-size='11' fill='#334155'>t yalnız 2 katına çıkar</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "g(x) = {kok:x − 4} + 1 fonksiyonunun referans fonksiyondan nasıl elde edildiğini açıklayınız; tanım kümesini, görüntü kümesini, başlangıç noktasını, sıfırlarını, işaretini, monotonluğunu ve teklik-çiftlik durumunu belirleyiniz.",
+      "cevap": "{koyu:1. adım (dönüşüm):} a = 1, r = 4, k = 1. Referans grafik 4 birim sağa ve 1 birim yukarı ötelenmiştir.\n{koyu:2. adım (tanım kümesi):} x − 4 ≥ 0 → x ≥ 4; tanım kümesi [4, ∞).\n{koyu:3. adım (başlangıç ve görüntü):} Başlangıç noktası (4, 1). a > 0 olduğundan bu bir minimum noktasıdır; minimum değer 1, maksimum yoktur. Görüntü kümesi [1, ∞).\n{koyu:4. adım (sıfır ve işaret):} {kok:x − 4} = −1 denkleminin çözümü yoktur (a · k = 1 > 0). Her x ≥ 4 için g(x) ≥ 1 > 0; fonksiyon her yerde pozitiftir.\n{koyu:5. adım (monotonluk):} a > 0 olduğundan [4, ∞) aralığında artandır. Kontrol: g(8) = 2 + 1 = 3, g(13) = 3 + 1 = 4.\n{koyu:6. adım (diğer özellikler):} 0 tanım kümesinde olmadığından grafik y eksenini kesmez. Tanım kümesi 0'a göre simetrik olmadığından ne tek ne çifttir. Fonksiyon bire birdir; g: [4, ∞) → [1, ∞) seçilirse örten de olur.",
+      "ipucu": "Tanım kümesini bulmak için karekökün içini sıfırdan büyük veya sıfıra eşit yapın; başlangıç noktası (r, k)'dır."
+    },
+    {
+      "soru": "g(x) = −3{kok:x + 1} + 6 fonksiyonunun grafiğini referans grafikten elde etmek için gereken dönüşümleri sırasıyla yazınız. Grafiğin eksenleri kestiği noktaları, görüntü kümesini ve işaret aralıklarını bulunuz.",
+      "cevap": "{koyu:1. adım (dönüşümler):} {kok:x} → {kok:x + 1}: 1 birim sola. → 3{kok:x + 1}: 3 kat dikey uzama. → −3{kok:x + 1}: x eksenine göre yansıma. → −3{kok:x + 1} + 6: 6 birim yukarı.\n{koyu:2. adım (tanım ve başlangıç):} x + 1 ≥ 0 → tanım kümesi [−1, ∞). Başlangıç noktası (−1, 6); a < 0 olduğundan maksimum noktasıdır. Görüntü kümesi (−∞, 6]; fonksiyon azalandır.\n{koyu:3. adım (x eksenini kestiği nokta):} −3{kok:x + 1} + 6 = 0 → {kok:x + 1} = 2 → x + 1 = 4 → x = 3. Formülle kontrol: r + {kesir:{us:k|2}|{us:a|2}} = −1 + {kesir:36|9} = 3. ✓ Nokta (3, 0).\n{koyu:4. adım (y eksenini kestiği nokta):} 0 tanım kümesindedir: g(0) = −3 · 1 + 6 = 3. Nokta (0, 3).\n{koyu:5. adım (işaret):} Fonksiyon azalan ve sıfırı 3 olduğundan [−1, 3) aralığında pozitif, x = 3'te sıfır, (3, ∞) aralığında negatiftir. Kontrol: g(8) = −3 · 3 + 6 = −3 < 0.",
+      "ipucu": "Sıralama: önce yatay öteleme, sonra a ile çarpma (yansıma dahil), en son k ekleme."
+    },
+    {
+      "soru": "Bir karekök fonksiyonunun grafiği (2, −3) noktasından başlamakta ve (6, 1) noktasından geçmektedir. Fonksiyonun kuralını yazınız; sıfırını, görüntü kümesini ve g(11) değerini bulunuz.",
+      "cevap": "{koyu:1. adım:} Başlangıç noktası (r, k) = (2, −3) olduğundan g(x) = a{kok:x − 2} − 3.\n{koyu:2. adım:} (6, 1) grafikte olduğundan 1 = a · {kok:4} − 3 → 2a = 4 → {koyu:a = 2}. Kural: g(x) = 2{kok:x − 2} − 3.\n{koyu:3. adım (sıfır):} 2{kok:x − 2} = 3 → {kok:x − 2} = {kesir:3|2} → x − 2 = {kesir:9|4} → x = {kesir:17|4}. Kontrol: 2 · {kesir:3|2} − 3 = 0. ✓\n{koyu:4. adım (görüntü kümesi):} a > 0 olduğundan başlangıç noktası minimumdur; görüntü kümesi [−3, ∞), fonksiyon [2, ∞) aralığında artandır.\n{koyu:5. adım:} g(11) = 2 · {kok:9} − 3 = 6 − 3 = 3.",
+      "ipucu": "Başlangıç noktası r ve k'yı doğrudan verir; a'yı bulmak için diğer noktayı kurala yerleştirin."
+    },
+    {
+      "soru": "g: [−2, 7] → ℝ, g(x) = −{kok:x + 2} + 5 fonksiyonunun görüntü kümesini bulunuz. g(x) = 4 eşitliğini sağlayan x değerini hesaplayınız. Değer kümesi nasıl seçilirse fonksiyon bire bir ve örten olur?",
+      "cevap": "{koyu:1. adım (monotonluk):} a = −1 < 0 olduğundan fonksiyon tanım kümesinin tamamında azalandır; parabolden farklı olarak aralığın içinde bir tepe noktası aramaya gerek yoktur.\n{koyu:2. adım (uç değerler):} g(−2) = −0 + 5 = 5, g(7) = −{kok:9} + 5 = 2.\n{koyu:3. adım:} Azalan olduğu için en büyük değer 5, en küçük değer 2'dir; görüntü kümesi {koyu:[2, 5]}.\n{koyu:4. adım:} −{kok:x + 2} + 5 = 4 → {kok:x + 2} = 1 → x + 2 = 1 → x = −1. −1 ∈ [−2, 7] olduğundan çözüm geçerlidir.\n{koyu:5. adım (bire bir ve örten):} Azalan fonksiyon bire birdir. Değer kümesi görüntü kümesine eşit, yani g: [−2, 7] → [2, 5] seçilirse fonksiyon örten de olur.",
+      "ipucu": "Karekök fonksiyonu her aralıkta tek yönlüdür; kapalı aralıkta yalnız iki uç değere bakmak yeterlidir."
+    },
+    {
+      "soru": "a) g(x) = a{kok:x − r} + k (a > 0) fonksiyonunun [r, ∞) aralığında artan olduğunu ispatlayınız. b) Bu fonksiyon için g(m) = g(n) ise m = n olduğunu gösteriniz. c) x ≥ 0 için {kok:x} ile x sayılarını karşılaştırınız.",
+      "cevap": "{koyu:a)} r ≤ {alt:x|1} < {alt:x|2} olsun. u = {alt:x|1} − r ve v = {alt:x|2} − r dersek 0 ≤ u < v olur. v − u = ({kok:v} − {kok:u})({kok:v} + {kok:u}) eşitliğinde sol taraf ve {kok:v} + {kok:u} pozitif olduğundan {kok:v} > {kok:u}. a > 0 ile çarpıp k eklersek g({alt:x|2}) > g({alt:x|1}) bulunur; g artandır. ∎\n{koyu:b)} g(m) = g(n) → a{kok:m − r} + k = a{kok:n − r} + k → a{kok:m − r} = a{kok:n − r}. a ≠ 0 olduğundan {kok:m − r} = {kok:n − r}. Her iki yanın karesi alınırsa m − r = n − r, yani m = n. ∎ Fonksiyon bire birdir.\n{koyu:c)} {kok:x} − x = {kok:x}(1 − {kok:x}) yazalım. x = 0 veya x = 1 iken fark 0'dır: iki değer eşittir. 0 < x < 1 iken {kok:x} > 0 ve 1 − {kok:x} > 0, fark pozitiftir: {kok:x} > x. x > 1 iken 1 − {kok:x} < 0, fark negatiftir: {kok:x} < x. Örnek: {kok:{kesir:1|9}} = {kesir:1|3} > {kesir:1|9}; {kok:16} = 4 < 16.",
+      "ipucu": "Artanlık ispatında iki kare farkı özdeşliğini v − u = ({kok:v} − {kok:u})({kok:v} + {kok:u}) biçiminde kullanın."
+    },
+    {
+      "soru": "Yer çekimi ivmesi yaklaşık 10 m/{us:s|2} alındığında h metre yükseklikten serbest bırakılan bir cismin yere düşme süresi t(h) = {kok:{kesir:h|5}} saniyedir. a) 45 m yükseklikten bırakılan cisim kaç saniyede yere düşer? b) 2 saniyede yere düşen cisim kaç metreden bırakılmıştır? c) Yükseklik 4 katına çıkarılırsa düşme süresi nasıl değişir? d) 80 m yüksekliğindeki bir binada yapılan deneyler için fonksiyonun tanım ve görüntü kümesini yazıp nitel özelliklerini yorumlayınız.",
+      "cevap": "{koyu:a)} t(45) = {kok:{kesir:45|5}} = {kok:9} = {koyu:3 s}.\n{koyu:b)} {kok:{kesir:h|5}} = 2 → {kesir:h|5} = 4 → h = {koyu:20 m}.\n{koyu:c)} t(4h) = {kok:{kesir:4h|5}} = {kok:4} · {kok:{kesir:h|5}} = 2 · t(h). Süre yalnız {koyu:2 katına} çıkar. Örneğin 20 m → 2 s iken 80 m → 4 s.\n{koyu:d)} Yükseklik negatif olamaz ve bina 80 m'dir: tanım kümesi {koyu:[0, 80]}. t(0) = 0, t(80) = {kok:16} = 4 ve fonksiyon artan olduğundan görüntü kümesi {koyu:[0, 4]}. Artanlık, daha yüksekten bırakılan cismin daha geç düştüğünü; bire birlik, her düşme süresinin tek bir yüksekliğe karşılık geldiğini gösterir. Artışın yavaşlaması ise ilk metrelerde sürenin hızla, sonra daha yavaş arttığını anlatır.",
+      "ipucu": "Karekök içindeki kesri sadeleştirin; ters soruda her iki yanın karesini alın."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "g(x) = {kok:x + 3} − 2 fonksiyonunun tanım kümesi aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "[3, ∞)",
+        "[−3, ∞)",
+        "[−2, ∞)",
+        "[2, ∞)"
+      ],
+      "dogru": 1,
+      "aciklama": "Karekökün içi negatif olamaz: x + 3 ≥ 0 → x ≥ −3. Dışarıdaki −2 yalnız görüntüleri değiştirir, tanım kümesini etkilemez; tanım kümesi [−3, ∞) olur."
+    },
+    {
+      "tur": "coktan",
+      "soru": "f(x) = {kok:x} fonksiyonunun grafiği 2 birim sağa ve 5 birim yukarı ötelenirse elde edilen grafik hangi fonksiyona aittir?",
+      "secenekler": [
+        "g(x) = {kok:x + 2} + 5",
+        "g(x) = {kok:x − 5} + 2",
+        "g(x) = {kok:x − 2} + 5",
+        "g(x) = {kok:x − 2} − 5"
+      ],
+      "dogru": 2,
+      "aciklama": "Sağa öteleme f(x − 2), yukarı öteleme sonuca +5 eklemektir: g(x) = {kok:x − 2} + 5. Grafik (2, 5) noktasından başlar."
+    },
+    {
+      "tur": "coktan",
+      "soru": "g(x) = −2{kok:x − 1} + 4 fonksiyonu ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Sıfırı x = 5'tir.",
+        "Görüntü kümesi [4, ∞) aralığıdır.",
+        "Tanım kümesinde artandır.",
+        "Grafiği y eksenini (0, 4) noktasında keser."
+      ],
+      "dogru": 0,
+      "aciklama": "−2{kok:x − 1} + 4 = 0 → {kok:x − 1} = 2 → x = 5. a < 0 olduğundan görüntü kümesi (−∞, 4] ve fonksiyon azalandır; tanım kümesi [1, ∞) olduğundan 0 tanım kümesinde değildir ve grafik y eksenini kesmez."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Grafiği (−1, 2) noktasından başlayan ve (8, −4) noktasından geçen g(x) = a{kok:x − r} + k fonksiyonunda a kaçtır?",
+      "secenekler": [
+        "2",
+        "−3",
+        "−6",
+        "−2"
+      ],
+      "dogru": 3,
+      "aciklama": "Başlangıç noktası (r, k) = (−1, 2) olduğundan g(x) = a{kok:x + 1} + 2. x = 8 için −4 = a · {kok:9} + 2 → 3a = −6 → a = −2. Grafik aşağı doğru ilerlediğinden a'nın negatif olması da beklenen sonuçtur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "f(x) = {kok:x} fonksiyonu çift fonksiyondur.",
+          "dogru": false,
+          "aciklama": "Tanım kümesi [0, ∞) aralığı 0'a göre simetrik değildir; örneğin 1 tanım kümesinde iken −1 değildir. Fonksiyon ne tek ne çifttir."
+        },
+        {
+          "metin": "g(x) = {kok:x − 5} fonksiyonunun tanım kümesi [5, ∞) aralığıdır.",
+          "dogru": true,
+          "aciklama": "x − 5 ≥ 0 koşulundan x ≥ 5 bulunur; grafik (5, 0) noktasından başlar."
+        },
+        {
+          "metin": "g(x) = {kok:x} + 3 fonksiyonunun sıfırı x = 9'dur.",
+          "dogru": false,
+          "aciklama": "{kok:x} + 3 = 0 için {kok:x} = −3 olmalıdır; karekök negatif olamayacağından sıfır yoktur. g(9) = 6'dır."
+        },
+        {
+          "metin": "a ≠ 0 olmak üzere g(x) = a{kok:x − r} + k fonksiyonunun en fazla bir sıfırı vardır.",
+          "dogru": true,
+          "aciklama": "Fonksiyon tanım kümesinde hep artan ya da hep azalan, yani bire birdir; bu nedenle 0 değerini en fazla bir kez alabilir."
+        },
+        {
+          "metin": "Her x gerçek sayısı için {kok:{us:x|2}} = x eşitliği doğrudur.",
+          "dogru": false,
+          "aciklama": "x = −4 için {kok:16} = 4 ≠ −4. Doğru eşitlik {kok:{us:x|2}} = {uzunluk:x} biçimindedir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki karekök fonksiyonlarını nitel özellikleriyle eşleştiriniz.",
+      "ciftler": [
+        [
+          "g(x) = {kok:x − 4}",
+          "Tanım kümesi [4, ∞), başlangıç noktası (4, 0)"
+        ],
+        [
+          "g(x) = {kok:x} − 4",
+          "Tanım kümesi [0, ∞), sıfırı x = 16"
+        ],
+        [
+          "g(x) = −{kok:x}",
+          "Görüntü kümesi (−∞, 0], tanım kümesinde azalan"
+        ],
+        [
+          "g(x) = {kok:x + 4}",
+          "Referans grafiğin 4 birim sola ötelenmişi"
+        ],
+        [
+          "g(x) = 2{kok:x} + 4",
+          "Sıfırı yok, görüntü kümesi [4, ∞)"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "f(x) = {kok:x} fonksiyonunun tanım kümesi [0, ∞) aralığıdır, çünkü negatif sayıların gerçek sayılarda ___ yoktur.",
+          "cevap": "karekökü"
+        },
+        {
+          "metin": "g(x) = {kok:x + 2} fonksiyonunun grafiği, referans grafiğin 2 birim ___ ötelenmesiyle elde edilir.",
+          "cevap": "sola"
+        },
+        {
+          "metin": "a < 0 ise g(x) = a{kok:x − r} + k fonksiyonu tanım kümesinin tamamında ___.",
+          "cevap": "azalandır"
+        },
+        {
+          "metin": "a > 0 iken g(x) = a{kok:x − r} + k grafiğinin başladığı (r, k) noktası bir ___ noktasıdır.",
+          "cevap": "minimum"
+        },
+        {
+          "metin": "Karekök fonksiyonları tanım kümelerinde ___ olduğundan farklı iki elemanın görüntüleri hiçbir zaman eşit olmaz.",
+          "cevap": "bire bir"
+        }
+      ],
+      "kelimeler": [
+        "karekökü",
+        "sola",
+        "azalandır",
+        "minimum",
+        "bire bir"
+      ],
+      "fazla": [
+        "sağa",
+        "maksimum"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "g(x) = −2{kok:x + 4} + 6 fonksiyonunun referans fonksiyondan nasıl elde edildiğini açıklayınız; tanım kümesini, başlangıç noktasını, görüntü kümesini, eksenleri kestiği noktaları, işaretini, monotonluğunu ve teklik-çiftlik durumunu belirleyiniz. Ardından fonksiyonun [−3, 12] aralığındaki görüntü kümesini bulunuz ve g'yi bire bir ve örten olacak biçimde yazınız.",
+      "ipuclari": [
+        "1. adım: Fonksiyonu a · f(x − r) + k biçiminde düşünüp a, r ve k değerlerini belirleyin; dönüşümleri sırasıyla (yatay öteleme, çarpma ve yansıma, dikey öteleme) yazın.",
+        "2. adım: Karekökün içini sıfırdan büyük veya sıfıra eşit yaparak tanım kümesini bulun; başlangıç noktasını (r, k) olarak yazıp a'nın işaretinden ekstremumu ve görüntü kümesini belirleyin.",
+        "3. adım: g(x) = 0 denklemini çözerek sıfırı, 0 tanım kümesindeyse g(0) değerini hesaplayarak y eksenini kestiği noktayı bulun; monotonluğa göre işaret aralıklarını yazın.",
+        "4. adım: Kapalı aralıkta fonksiyon tek yönlü olduğu için yalnız uç değerleri hesaplayın; bire bir ve örtenlik için değer kümesini görüntü kümesine eşit seçin."
+      ],
+      "cevap": "{koyu:Dönüşüm:} a = −2, r = −4, k = 6. Referans grafik 4 birim sola ötelenir, görüntüler 2 ile çarpılıp x eksenine göre yansıtılır, ardından 6 birim yukarı ötelenir.\n{koyu:Tanım ve başlangıç:} x + 4 ≥ 0 → tanım kümesi [−4, ∞). Başlangıç noktası (−4, 6); a < 0 olduğundan maksimum noktasıdır. Maksimum değer 6, minimum yoktur; görüntü kümesi (−∞, 6].\n{koyu:Eksenleri kestiği noktalar:} −2{kok:x + 4} + 6 = 0 → {kok:x + 4} = 3 → x + 4 = 9 → x = 5; nokta (5, 0). Formülle kontrol: −4 + {kesir:36|4} = 5. ✓ 0 tanım kümesinde olduğundan g(0) = −2 · 2 + 6 = 2; y eksenini (0, 2) noktasında keser.\n{koyu:İşaret ve monotonluk:} Fonksiyon [−4, ∞) aralığında azalandır. Bu yüzden [−4, 5) aralığında pozitif, x = 5'te sıfır, (5, ∞) aralığında negatiftir. Kontrol: g(12) = −2 · 4 + 6 = −2 < 0.\n{koyu:Teklik-çiftlik:} Tanım kümesi [−4, ∞) 0'a göre simetrik değildir (örneğin 5 tanımlıyken −5 tanımsızdır); fonksiyon ne tek ne çifttir.\n{koyu:Kapalı aralık:} g(−3) = −2 · 1 + 6 = 4, g(12) = −2. Fonksiyon azalan olduğundan [−3, 12] aralığındaki görüntü kümesi [−2, 4] olur.\n{koyu:Bire bir ve örten:} g azalan olduğu için tanım kümesinde bire birdir. g: [−4, ∞) → (−∞, 6] biçiminde yazıldığında görüntü kümesi değer kümesine eşit olur ve fonksiyon hem bire bir hem örtendir."
+    }
+  ]
+}

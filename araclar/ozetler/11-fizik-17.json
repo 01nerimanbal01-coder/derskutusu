@@ -1,0 +1,561 @@
+{
+  "ad": "11-fizik-17",
+  "sinif": 11,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 17,
+  "tarih": "11-15 Ocak 2027",
+  "yayin_tarihi": "2027-01-11",
+  "unite": "Elektrik ve Manyetizma",
+  "konu": "Manyetik Alan ve Manyetik Kuvvet: Mıknatısların Etkileşimi, Bilimsel Gözlem ve Manyetik Alan Çizgileri",
+  "ciktilar": [
+    "FİZ.11.2.4. Mıknatısların birbiriyle etkileşimine yönelik bilimsel gözlem yapabilme.",
+    "FİZ.11.2.4.a. Mıknatısların birbiriyle etkileşimiyle ilgili nitelikleri tanımlar.",
+    "FİZ.11.2.4.b. Mıknatısların birbiriyle etkileşimiyle ilgili verileri toplayarak kaydeder.",
+    "FİZ.11.2.4.c. Mıknatısların birbiriyle etkileşimiyle ilgili verileri manyetik alan çizgileriyle açıklar."
+  ],
+  "giris": "Geçen hafta Faraday kafesinin elektrik alanları perdelediğini ama içindeki pusulanın yine kuzeyi gösterdiğini öğrenmiştik. Bu hafta tam da o pusulanın sırrına, yani {koyu:manyetizmaya} adım atıyoruz. Önce mıknatısların hangi {koyu:niteliklerle} tanımlandığını belirleyecek, sonra iki mıknatısın birbirini itmesini ve çekmesini bir bilim insanı gibi {koyu:gözlemleyip ölçecek}, verileri tablo ve grafiklere kaydedeceğiz. Son olarak topladığımız verileri {koyu:manyetik alan çizgileri} modeliyle açıklayacak, elektrik alan çizgileriyle kurduğumuz benzerliği ve aradaki önemli farkları göreceğiz.",
+  "ozet": [
+    "{koyu:Kutuplar:} Her mıknatısın kuzey (N) ve güney (S) olmak üzere iki kutbu vardır; kutuplar birbirinden ayrılamaz, mıknatıs kaç parçaya bölünürse bölünsün her parça yine iki kutuplu bir mıknatıs olur.",
+    "{koyu:Etkileşim kuralı:} Aynı adlı kutuplar birbirini iter, zıt adlı kutuplar birbirini çeker; etkileşim temas gerektirmez ve uzaklık arttıkça hızla zayıflar.",
+    "{koyu:Bilimsel gözlem:} Mıknatıs etkileşimi incelenirken bağımsız değişken (uzaklık, kutup yönelimi), bağımlı değişken (kuvvet) ve kontrol değişkenleri (aynı mıknatıslar, aynı ortam) önceden belirlenir; niteliksel gözlemler niceliksel ölçümlerle desteklenir.",
+    "{koyu:Veri kaydı:} Ölçümler birimleriyle birlikte tabloya yazılır, tekrarlanarak ortalaması alınır ve kuvvet–uzaklık grafiği çizilerek ilişki yorumlanır; dijital terazi yönteminde kuvvet F = Δm·g ile bulunur.",
+    "{koyu:Manyetik alan çizgileri:} Mıknatısın dışında N kutbundan çıkıp S kutbuna giren, içinde S'den N'ye devam eden kapalı eğrilerdir; birbirini kesmez, sık oldukları yerde alan güçlüdür ve pusulanın N ucu çizgiye teğet yönü gösterir.",
+    "{koyu:Çizgilerle açıklama:} Zıt kutuplar arasında çizgiler bir mıknatıstan ötekine geçerek birleşir ve çekme görülür; aynı kutuplar arasında çizgiler birbirinden uzaklaşır, arada alanın sıfır olduğu nötr nokta oluşur ve itme görülür."
+  ],
+  "bolumler": [
+    {
+      "baslik": "1. Mıknatıs ve Manyetik Kutuplar: Etkileşimin Temel Nitelikleri",
+      "metin": [
+        "Bilimsel gözlemin ilk adımı, gözlenecek olayın {koyu:niteliklerini} doğru tanımlamaktır. {koyu:Mıknatıs}, demir, nikel, kobalt ve bunların bazı alaşımlarını çeken ve çevresinde manyetik alan oluşturan cisimdir. Bu maddelere {koyu:ferromanyetik maddeler} denir. Bakır, alüminyum, cam, plastik ve tahta gibi maddeler ise sıradan bir mıknatısla gözle görülür biçimde çekilmez. Bir mıknatısın çekme etkisinin en güçlü olduğu uç bölgelerine {koyu:kutup} denir. Bir çubuk mıknatısı demir tozuna batırıp çıkardığımızda tozların uçlarda kümelendiğini, orta kısmın neredeyse boş kaldığını görürüz; bu basit gözlem kutup kavramının deneysel dayanağıdır.",
+        "Bir çubuk mıknatıs ortasından bir iple serbestçe dönebilecek biçimde asılırsa bir süre salındıktan sonra hep yaklaşık kuzey–güney doğrultusunda durur. Coğrafi kuzeyi gösteren ucuna {koyu:kuzey kutbu (N)}, coğrafi güneyi gösteren ucuna {koyu:güney kutbu (S)} denir. Pusula iğnesi de aslında bu şekilde serbestçe dönebilen küçük bir mıknatıstır. Mıknatısların en dikkat çekici niteliklerinden biri kutupların {koyu:ayrılamaz} olmasıdır. Bir çubuk mıknatısı ortadan kırarsak bir parçası yalnız N, diğeri yalnız S kutbu olmaz; her parça kendi N ve S kutbu olan yeni bir mıknatısa dönüşür. Bugüne kadar yapılan hiçbir deneyde tek başına bulunan bir manyetik kutup gözlenmemiştir. Elektrik yüklerinde ise durum farklıdır: Pozitif ve negatif yükler birbirinden ayrı bulunabilir.",
+        "Mıknatıslar kökenlerine ve kullanım biçimlerine göre de sınıflandırılır. Doğada bulunan manyetit taşı {koyu:doğal mıknatıstır}. Fabrikada üretilen çubuk, U (at nalı), halka ve disk biçimli mıknatıslar {koyu:yapay mıknatıslardır}. Mıknatıslık özelliğini uzun süre koruyanlara {koyu:kalıcı mıknatıs}, yalnız başka bir mıknatısın etkisi altındayken mıknatıslık gösterenlere {koyu:geçici mıknatıs} denir; bir mıknatısa yapışan toplu iğnenin başka bir toplu iğneyi tutabilmesi geçici mıknatıslanmaya örnektir. Günümüzde kullanılan neodimyum mıknatıslar küçük boyutlarına rağmen çok güçlüdür. Gözlem yapacağımız nitelikleri şöyle sıralayabiliriz: kutupların adı ve yeri, etkileşimin türü (itme ya da çekme), etkileşimin büyüklüğü ve bu büyüklüğün uzaklıkla değişimi."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Nitelik",
+          "Tanım",
+          "Gözlem Yolu"
+        ],
+        "satirlar": [
+          [
+            "Kutup",
+            "Mıknatısın etkisinin en güçlü olduğu uç bölge",
+            "Demir tozlarının uçlarda kümelenmesi"
+          ],
+          [
+            "Kutup adı (N / S)",
+            "Serbestçe asılan mıknatısın kuzeyi ve güneyi gösteren uçları",
+            "İple asma ya da pusulayla yaklaştırma"
+          ],
+          [
+            "Kutupların ayrılmazlığı",
+            "Her parçanın yine iki kutuplu olması",
+            "Kırılan mıknatıs parçalarını birbirine yaklaştırma"
+          ],
+          [
+            "Etkileşim türü",
+            "İtme ya da çekme",
+            "İki mıknatısı uç uca yaklaştırma"
+          ],
+          [
+            "Etkileşimin büyüklüğü",
+            "Mıknatısların birbirine uyguladığı kuvvet",
+            "Dinamometre ya da dijital terazi ile ölçme"
+          ],
+          [
+            "Etkilenen maddeler",
+            "Ferromanyetik maddeler (demir, nikel, kobalt)",
+            "Farklı maddeleri mıknatısa yaklaştırma"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Manyetik Kutup",
+          "metin": "Bir mıknatısın ferromanyetik maddeleri en güçlü çektiği, manyetik alan çizgilerinin en sık olduğu uç bölgelerine {koyu:manyetik kutup} denir. Her mıknatısta bir {koyu:kuzey (N)} ve bir {koyu:güney (S)} kutbu bulunur ve bu iki kutup birbirinden ayrılamaz."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Kutup Ortada da Olabilir mi?",
+          "metin": "Kutuplar her zaman cismin geometrik uçlarında olmak zorunda değildir. Disk biçimli mıknatıslarda kutuplar genellikle düz yüzlerdedir; halka mıknatıslarda iç ve dış yüzeyde ya da üst ve alt yüzde olabilir. Kutbun yeri her zaman gözlemle (demir tozu ya da pusula ile) belirlenmelidir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><defs><marker id='m1' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M0,0 L10,5 L0,10 z' fill='#475569'/></marker></defs><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Mıknatısın Temel Nitelikleri</text><rect x='20' y='45' width='400' height='240' rx='10' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><text x='220' y='68' text-anchor='middle' font-size='13' font-weight='bold' fill='#1e293b'>Kutuplar ayrılamaz</text><rect x='80' y='85' width='140' height='40' rx='4' fill='#ef4444'/><rect x='220' y='85' width='140' height='40' rx='4' fill='#3b82f6'/><text x='150' y='111' text-anchor='middle' font-size='16' font-weight='bold' fill='#ffffff'>N</text><text x='290' y='111' text-anchor='middle' font-size='16' font-weight='bold' fill='#ffffff'>S</text><line x1='220' y1='130' x2='220' y2='165' stroke='#475569' stroke-width='2' marker-end='url(#m1)'/><text x='232' y='152' font-size='11' fill='#475569'>ortadan kırılırsa</text><rect x='50' y='180' width='70' height='34' rx='4' fill='#ef4444'/><rect x='120' y='180' width='70' height='34' rx='4' fill='#3b82f6'/><text x='85' y='202' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>N</text><text x='155' y='202' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>S</text><rect x='250' y='180' width='70' height='34' rx='4' fill='#ef4444'/><rect x='320' y='180' width='70' height='34' rx='4' fill='#3b82f6'/><text x='285' y='202' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>N</text><text x='355' y='202' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>S</text><text x='220' y='240' text-anchor='middle' font-size='12' fill='#334155'>Her parça yine N ve S kutuplu bir mıknatıstır.</text><text x='220' y='262' text-anchor='middle' font-size='12' fill='#334155'>Tek başına N ya da S kutbu gözlenmemiştir.</text><rect x='435' y='45' width='305' height='240' rx='10' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><text x='587' y='68' text-anchor='middle' font-size='13' font-weight='bold' fill='#1e293b'>Mıknatısa yaklaştırılan maddeler</text><rect x='450' y='82' width='135' height='150' rx='8' fill='#dcfce7' stroke='#16a34a'/><text x='517' y='104' text-anchor='middle' font-size='12' font-weight='bold' fill='#166534'>Çekilir</text><text x='517' y='130' text-anchor='middle' font-size='12' fill='#14532d'>Demir</text><text x='517' y='152' text-anchor='middle' font-size='12' fill='#14532d'>Nikel</text><text x='517' y='174' text-anchor='middle' font-size='12' fill='#14532d'>Kobalt</text><text x='517' y='196' text-anchor='middle' font-size='12' fill='#14532d'>Çelik</text><text x='517' y='220' text-anchor='middle' font-size='10' fill='#166534'>(ferromanyetik)</text><rect x='592' y='82' width='135' height='150' rx='8' fill='#fee2e2' stroke='#dc2626'/><text x='659' y='104' text-anchor='middle' font-size='12' font-weight='bold' fill='#991b1b'>Belirgin çekilmez</text><text x='659' y='130' text-anchor='middle' font-size='12' fill='#7f1d1d'>Bakır</text><text x='659' y='152' text-anchor='middle' font-size='12' fill='#7f1d1d'>Alüminyum</text><text x='659' y='174' text-anchor='middle' font-size='12' fill='#7f1d1d'>Cam, plastik</text><text x='659' y='196' text-anchor='middle' font-size='12' fill='#7f1d1d'>Tahta</text><text x='587' y='258' text-anchor='middle' font-size='11' fill='#475569'>Pusula iğnesi küçük, serbest bir mıknatıstır.</text></svg>"
+    },
+    {
+      "baslik": "2. Mıknatısların Birbiriyle Etkileşimi: İtme, Çekme ve Uzaklığın Etkisi",
+      "metin": [
+        "İki çubuk mıknatısı masanın üzerinde uç uca yaklaştırdığımızda iki farklı davranış gözleriz. Bir mıknatısın N kutbunu diğerinin S kutbuna yaklaştırırsak mıknatıslar birbirine doğru hareket eder ve yapışır: {koyu:zıt adlı kutuplar birbirini çeker}. N kutbunu diğerinin N kutbuna ya da S kutbunu S kutbuna yaklaştırırsak mıknatıslar birbirinden kaçar; elimizle zorlasak bile bir direnç hissederiz: {koyu:aynı adlı kutuplar birbirini iter}. Bu kural elektrik yüklerindeki ‘aynı işaretliler iter, zıt işaretliler çeker’ kuralına benzer. Bu benzerlik, ilerleyen haftalarda elektrik ve manyetizmanın aslında tek bir olgunun iki yüzü olduğunu görmemize zemin hazırlayacaktır.",
+        "Mıknatıs etkileşiminin bir diğer niteliği, {koyu:temas gerektirmemesidir}. Mıknatıslar arasına ince bir kâğıt, cam ya da plastik levha koysak da etkileşim sürer; tıpkı elektriksel ve kütle çekim kuvvetlerinde olduğu gibi bu bir {koyu:alan kuvvetidir}. Ayrıca etkileşim {koyu:karşılıklıdır}: Newton'un etki–tepki ilkesine göre A mıknatısı B'ye ne kadar kuvvet uyguluyorsa B de A'ya aynı büyüklükte ve zıt yönde kuvvet uygular. Büyük bir mıknatısın küçük bir mıknatısı daha çok ittiğini sanmak yaygın bir yanılgıdır; küçük mıknatısın daha çok hareket etmesinin nedeni kütlesinin küçük olmasıdır, kuvvetin büyük olması değil.",
+        "Etkileşimin büyüklüğü mıknatıslar arasındaki {koyu:uzaklığa} güçlü biçimde bağlıdır. Mıknatıslar birbirine yaklaştıkça kuvvet hızla artar, uzaklaştıkça hızla azalır. Kuvvet ayrıca mıknatısların {koyu:kutup şiddetine} (mıknatısın gücüne), biçimine ve kutupların birbirine göre {koyu:yönelimine} bağlıdır. Bir mıknatısı diğerine uç uca değil de yan yana tuttuğumuzda iki mıknatısın dört kutbu birden etkileşime girer ve davranış değişebilir. Bu nedenle sağlıklı bir gözlem için mıknatısların hep aynı doğrultuda, uç uca ve eksenleri çakışacak biçimde tutulması gerekir. Kuvvetin uzaklıkla nasıl değiştiğini tahmin etmek yerine ölçerek bulmak, bu haftanın asıl görevidir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yaklaştırılan Kutuplar",
+          "Gözlenen Etkileşim",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "N – S",
+            "Mıknatıslar birbirine doğru hareket eder",
+            "Çekme"
+          ],
+          [
+            "S – N",
+            "Mıknatıslar birbirine doğru hareket eder",
+            "Çekme"
+          ],
+          [
+            "N – N",
+            "Mıknatıslar birbirinden uzaklaşır",
+            "İtme"
+          ],
+          [
+            "S – S",
+            "Mıknatıslar birbirinden uzaklaşır",
+            "İtme"
+          ],
+          [
+            "N ya da S – mıknatıslanmamış demir",
+            "Demir her iki kutba da çekilir",
+            "Çekme (geçici mıknatıslanma)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Etkileşim Kuralı",
+          "metin": "{koyu:Aynı adlı kutuplar birbirini iter, zıt adlı kutuplar birbirini çeker.} Kuvvetler karşılıklıdır: İki mıknatısın birbirine uyguladığı kuvvetler eşit büyüklükte ve zıt yönlüdür. Kuvvetin büyüklüğü uzaklık arttıkça hızla azalır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Bir Cismin Mıknatıs Olduğunu Kesin Anlamak",
+          "metin": "Bir cismin mıknatısa çekilmesi, o cismin mıknatıs olduğunu kanıtlamaz; mıknatıslanmamış bir demir parçası da her iki kutba çekilir. Kesin kanıt {koyu:itmedir}: Cismin bir ucu, bir mıknatısın kutuplarından birini itiyorsa o cisim mutlaka mıknatıstır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><defs><marker id='m2' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M0,0 L10,5 L0,10 z' fill='#16a34a'/></marker><marker id='m2b' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M0,0 L10,5 L0,10 z' fill='#dc2626'/></marker></defs><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Mıknatıs Kutuplarının Etkileşimi</text><rect x='20' y='45' width='720' height='75' rx='10' fill='#ffffff' stroke='#86efac' stroke-width='1.5'/><rect x='120' y='65' width='70' height='34' rx='4' fill='#3b82f6'/><rect x='190' y='65' width='70' height='34' rx='4' fill='#ef4444'/><text x='155' y='87' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>S</text><text x='225' y='87' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>N</text><rect x='360' y='65' width='70' height='34' rx='4' fill='#3b82f6'/><rect x='430' y='65' width='70' height='34' rx='4' fill='#ef4444'/><text x='395' y='87' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>S</text><text x='465' y='87' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>N</text><line x1='265' y1='82' x2='300' y2='82' stroke='#16a34a' stroke-width='3' marker-end='url(#m2)'/><line x1='355' y1='82' x2='320' y2='82' stroke='#16a34a' stroke-width='3' marker-end='url(#m2)'/><text x='620' y='80' text-anchor='middle' font-size='14' font-weight='bold' fill='#166534'>N – S: ÇEKME</text><text x='620' y='100' text-anchor='middle' font-size='11' fill='#166534'>zıt adlı kutuplar</text><rect x='20' y='130' width='720' height='75' rx='10' fill='#ffffff' stroke='#fca5a5' stroke-width='1.5'/><rect x='120' y='150' width='70' height='34' rx='4' fill='#3b82f6'/><rect x='190' y='150' width='70' height='34' rx='4' fill='#ef4444'/><text x='155' y='172' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>S</text><text x='225' y='172' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>N</text><rect x='360' y='150' width='70' height='34' rx='4' fill='#ef4444'/><rect x='430' y='150' width='70' height='34' rx='4' fill='#3b82f6'/><text x='395' y='172' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>N</text><text x='465' y='172' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>S</text><line x1='115' y1='167' x2='75' y2='167' stroke='#dc2626' stroke-width='3' marker-end='url(#m2b)'/><line x1='505' y1='167' x2='545' y2='167' stroke='#dc2626' stroke-width='3' marker-end='url(#m2b)'/><text x='640' y='165' text-anchor='middle' font-size='14' font-weight='bold' fill='#991b1b'>N – N: İTME</text><text x='640' y='185' text-anchor='middle' font-size='11' fill='#991b1b'>aynı adlı kutuplar</text><rect x='20' y='215' width='720' height='75' rx='10' fill='#ffffff' stroke='#fca5a5' stroke-width='1.5'/><rect x='120' y='235' width='70' height='34' rx='4' fill='#ef4444'/><rect x='190' y='235' width='70' height='34' rx='4' fill='#3b82f6'/><text x='155' y='257' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>N</text><text x='225' y='257' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>S</text><rect x='360' y='235' width='70' height='34' rx='4' fill='#3b82f6'/><rect x='430' y='235' width='70' height='34' rx='4' fill='#ef4444'/><text x='395' y='257' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>S</text><text x='465' y='257' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>N</text><line x1='115' y1='252' x2='75' y2='252' stroke='#dc2626' stroke-width='3' marker-end='url(#m2b)'/><line x1='505' y1='252' x2='545' y2='252' stroke='#dc2626' stroke-width='3' marker-end='url(#m2b)'/><text x='640' y='250' text-anchor='middle' font-size='14' font-weight='bold' fill='#991b1b'>S – S: İTME</text><text x='640' y='270' text-anchor='middle' font-size='11' fill='#991b1b'>kuvvetler eşit ve zıt yönlü</text></svg>"
+    },
+    {
+      "baslik": "3. Bilimsel Gözlemin Planlanması: Değişkenler ve Ölçme Araçları",
+      "metin": [
+        "Bilimsel gözlem, olaylara rastgele bakmak değil; neye, nasıl ve hangi araçla bakılacağının önceden planlandığı sistemli bir süreçtir. Gözlemler iki türlüdür. {koyu:Niteliksel gözlem} sayısal değer içermeyen gözlemdir: ‘N ve S kutupları birbirini çekti’, ‘demir tozları uçlarda kümelendi’ gibi. {koyu:Niceliksel gözlem} ise bir ölçme aracıyla elde edilen sayısal değerdir: ‘2,0 cm uzaklıkta itme kuvveti 0,52 N ölçüldü’ gibi. İyi bir bilimsel gözlemde niteliksel gözlemler soruyu doğurur, niceliksel gözlemler ise o soruya kesin ve karşılaştırılabilir yanıtlar verir. Gözlem yaparken yorum ile veri birbirine karıştırılmamalıdır: ‘Terazi 252 g gösterdi’ bir veridir, ‘mıknatıs güçlüdür’ ise bir yorumdur.",
+        "Ölçüme dayalı bir gözlemde önce {koyu:değişkenler} tanımlanır. Araştırmacının bilerek değiştirdiği büyüklüğe {koyu:bağımsız değişken} (örneğin mıknatıslar arasındaki uzaklık), bu değişime bağlı olarak ölçülen büyüklüğe {koyu:bağımlı değişken} (mıknatısların birbirine uyguladığı kuvvet) denir. Sonucu etkileyebilecek ama deney boyunca sabit tutulan büyüklükler ise {koyu:kontrol değişkenleridir}: kullanılan mıknatısların aynı olması, kutupların aynı yönelimde tutulması, mıknatısların eksenlerinin çakışması, ortamda başka mıknatıs ya da demir eşya bulunmaması ve sıcaklığın değişmemesi gibi. Kontrol değişkenleri sabit tutulmazsa kuvvetteki değişimin uzaklıktan mı yoksa başka bir etkenden mi kaynaklandığını bilemeyiz.",
+        "Okulda mıknatıs kuvvetini ölçmenin pratik bir yolu {koyu:dijital terazi yöntemidir}. Bir mıknatıs, aralarına yalıtkan bir ara parça (köpük ya da tahta blok) konarak terazinin üzerine yerleştirilir ve terazi sıfırlanır ya da ilk okuma kaydedilir. İkinci mıknatıs bir sehpaya tutturularak üstten, belirli uzaklıklarda tutulur. İtme durumunda alttaki mıknatıs aşağı doğru itildiği için terazinin okuması artar; çekme durumunda yukarı çekildiği için azalır. Okumadaki değişim Δm ise kuvvet {koyu:F = Δm·g} ile bulunur (Δm kilogram cinsinden, g ≈ 10 N/kg). Ara parçanın kullanılma nedeni, terazinin içindeki metal parçaların mıknatısla etkileşip ölçümü bozmasını önlemektir. Uzaklık cetvelle, mıknatısların birbirine bakan yüzleri arasından ölçülür. Dinamometre, pusula ve akıllı telefonlardaki manyetik alan algılayıcısı da kullanılabilecek diğer araçlardır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Değişken Türü",
+          "Mıknatıs Deneyindeki Karşılığı",
+          "Nasıl Ele Alınır?"
+        ],
+        "satirlar": [
+          [
+            "Bağımsız değişken",
+            "Mıknatıslar arasındaki uzaklık (d)",
+            "Cetvelle ayarlanır: 1, 2, 3, 4, 5 cm"
+          ],
+          [
+            "Bağımlı değişken",
+            "Mıknatısların birbirine uyguladığı kuvvet (F)",
+            "Terazi okumasından F = Δm·g ile bulunur"
+          ],
+          [
+            "Kontrol değişkeni",
+            "Aynı mıknatıs çifti",
+            "Deney boyunca mıknatıslar değiştirilmez"
+          ],
+          [
+            "Kontrol değişkeni",
+            "Kutup yönelimi (N–N itme)",
+            "Mıknatıslar hep aynı kutuplar karşılıklı olacak biçimde tutulur"
+          ],
+          [
+            "Kontrol değişkeni",
+            "Çevredeki demir eşya ve diğer mıknatıslar",
+            "Masa çevresinden uzaklaştırılır"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Bilimsel Gözlem",
+          "metin": "Bir olayın, önceden belirlenmiş bir amaca göre duyu organları ve ölçme araçları kullanılarak sistemli biçimde incelenmesi ve sonuçlarının kaydedilmesidir. Bilimsel gözlem tekrarlanabilir olmalıdır: Aynı koşullarda başka biri aynı düzeneği kurduğunda benzer sonuçlar elde etmelidir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Güvenlik ve Ölçüm Hataları",
+          "metin": "Güçlü neodimyum mıknatıslar aniden birbirine yapışarak parmak sıkıştırabilir ve kırılabilir; mıknatıslar kalp pili, banka kartı ve elektronik cihazlardan uzak tutulmalıdır. Ölçümde mıknatısın kayması, eksenlerin çakışmaması ve terazinin mıknatıstan etkilenmesi en sık görülen hata kaynaklarıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><defs><marker id='m3' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M0,0 L10,5 L0,10 z' fill='#475569'/></marker></defs><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Gözlemin Planı ve Dijital Terazi Düzeneği</text><rect x='20' y='45' width='330' height='240' rx='10' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><rect x='40' y='60' width='290' height='50' rx='8' fill='#dbeafe' stroke='#2563eb'/><text x='185' y='80' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e3a8a'>Bağımsız değişken</text><text x='185' y='98' text-anchor='middle' font-size='12' fill='#1e3a8a'>Uzaklık d (cm)</text><line x1='185' y1='112' x2='185' y2='132' stroke='#475569' stroke-width='2' marker-end='url(#m3)'/><rect x='40' y='135' width='290' height='50' rx='8' fill='#fee2e2' stroke='#dc2626'/><text x='185' y='155' text-anchor='middle' font-size='12' font-weight='bold' fill='#991b1b'>Bağımlı değişken</text><text x='185' y='173' text-anchor='middle' font-size='12' fill='#991b1b'>Kuvvet F = Δm·g (N)</text><rect x='40' y='200' width='290' height='75' rx='8' fill='#fef9c3' stroke='#ca8a04'/><text x='185' y='220' text-anchor='middle' font-size='12' font-weight='bold' fill='#854d0e'>Kontrol değişkenleri</text><text x='185' y='240' text-anchor='middle' font-size='11' fill='#713f12'>aynı mıknatıslar, aynı kutup yönelimi,</text><text x='185' y='258' text-anchor='middle' font-size='11' fill='#713f12'>çakışık eksen, çevrede demir yok</text><rect x='365' y='45' width='375' height='240' rx='10' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><rect x='390' y='60' width='12' height='170' fill='#94a3b8'/><rect x='402' y='75' width='120' height='10' fill='#94a3b8'/><rect x='500' y='85' width='60' height='22' rx='3' fill='#3b82f6'/><rect x='500' y='107' width='60' height='22' rx='3' fill='#ef4444'/><text x='530' y='101' text-anchor='middle' font-size='11' font-weight='bold' fill='#ffffff'>S</text><text x='530' y='123' text-anchor='middle' font-size='11' font-weight='bold' fill='#ffffff'>N</text><rect x='500' y='154' width='60' height='22' rx='3' fill='#ef4444'/><rect x='500' y='176' width='60' height='22' rx='3' fill='#3b82f6'/><text x='530' y='170' text-anchor='middle' font-size='11' font-weight='bold' fill='#ffffff'>N</text><text x='530' y='192' text-anchor='middle' font-size='11' font-weight='bold' fill='#ffffff'>S</text><line x1='580' y1='129' x2='580' y2='154' stroke='#0f172a' stroke-width='1.5'/><line x1='572' y1='129' x2='588' y2='129' stroke='#0f172a' stroke-width='1.5'/><line x1='572' y1='154' x2='588' y2='154' stroke='#0f172a' stroke-width='1.5'/><text x='594' y='146' font-size='12' font-weight='bold' fill='#0f172a'>d</text><rect x='495' y='198' width='70' height='22' rx='3' fill='#fde68a' stroke='#ca8a04'/><text x='530' y='213' text-anchor='middle' font-size='10' fill='#713f12'>ara parça</text><rect x='470' y='220' width='120' height='35' rx='6' fill='#e2e8f0' stroke='#475569'/><rect x='490' y='228' width='80' height='18' rx='3' fill='#0f172a'/><text x='530' y='241' text-anchor='middle' font-size='11' fill='#4ade80'>252 g</text><text x='660' y='120' text-anchor='middle' font-size='11' fill='#334155'>İtmede okuma artar,</text><text x='660' y='138' text-anchor='middle' font-size='11' fill='#334155'>çekmede azalır.</text><text x='660' y='170' text-anchor='middle' font-size='12' font-weight='bold' fill='#0f172a'>F = Δm·g</text><text x='530' y='275' text-anchor='middle' font-size='11' fill='#475569'>dijital terazi</text></svg>"
+    },
+    {
+      "baslik": "4. Verilerin Toplanması ve Kaydedilmesi: Tablo, Tekrar ve Grafik",
+      "metin": [
+        "Planlanan gözlem yapıldıktan sonra veriler {koyu:düzenli ve eksiksiz} kaydedilmelidir. Kayıt; deneyin tarihini, kullanılan mıknatısları, düzeneğin kısa tanımını, her ölçümün değerini ve {koyu:birimini} içermelidir. Birimsiz yazılmış bir ‘0,52’ değeri hiçbir şey anlatmaz. Örnek bir gözlemde terazinin ilk okuması 200 g olsun. Üstteki mıknatıs N kutbu aşağı bakacak, alttaki mıknatıs N kutbu yukarı bakacak biçimde (itme düzeni) yerleştirildiğinde 1,0 cm'de 360 g, 2,0 cm'de 252 g, 3,0 cm'de 222 g, 4,0 cm'de 211 g ve 5,0 cm'de 206 g okunmuş olsun. Okuma farkları sırasıyla 160, 52, 22, 11 ve 6 g'dır; kuvvetler F = Δm·g ile 1,60 N, 0,52 N, 0,22 N, 0,11 N ve 0,06 N bulunur.",
+        "Tek bir ölçüm şansa ya da küçük bir dikkatsizliğe bağlı olabilir. Bu yüzden her uzaklık için ölçüm {koyu:en az üç kez} tekrarlanır ve {koyu:aritmetik ortalama} alınır. Ölçümler arasındaki fark, ölçümün güvenilirliği hakkında bilgi verir: Değerler birbirine yakınsa ölçüm tutarlıdır; biri ötekilerden çok farklıysa o ölçümün neden farklı olduğu araştırılır (mıknatıs kaymış olabilir, uzaklık yanlış okunmuş olabilir). Farklı çıkan ölçüm keyfî olarak silinmez; nedeni not edilir ve gerekirse ölçüm yinelenir. Verinin dürüstçe kaydedilmesi, bilimsel gözlemin temel ahlaki ilkesidir.",
+        "Tabloya kaydedilen veriler bir {koyu:grafiğe} dönüştürüldüğünde ilişki kolayca görülür. Yatay eksene bağımsız değişken olan uzaklık, düşey eksene bağımlı değişken olan kuvvet yazılır. Bizim verilerimizin grafiği, uzaklık arttıkça kuvvetin hızla azaldığını ve azalmanın giderek yavaşladığını gösteren, eksenlere doğru yaklaşan bir eğridir. Grafikten şu genellemeleri çıkarabiliriz: (1) Kuvvet uzaklıkla ters yönde değişir. (2) Değişim doğrusal değildir; 1 cm'den 2 cm'ye çıkıldığında kuvvet yaklaşık üçte birine düşerken 4 cm'den 5 cm'ye geçişte değişim çok küçüktür. (3) Uzaklık çok büyüdüğünde kuvvet sıfıra yaklaşır. Bu genellemeler yalnız bu mıknatıs çifti için ölçülmüştür; farklı mıknatıslarla deney tekrarlanarak genel geçerliliği sınanmalıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Uzaklık d (cm)",
+          "Terazi Okuması (g)",
+          "Δm (g)",
+          "F = Δm·g (N)"
+        ],
+        "satirlar": [
+          [
+            "— (üst mıknatıs yok)",
+            "200",
+            "0",
+            "0"
+          ],
+          [
+            "1,0",
+            "360",
+            "160",
+            "1,60"
+          ],
+          [
+            "2,0",
+            "252",
+            "52",
+            "0,52"
+          ],
+          [
+            "3,0",
+            "222",
+            "22",
+            "0,22"
+          ],
+          [
+            "4,0",
+            "211",
+            "11",
+            "0,11"
+          ],
+          [
+            "5,0",
+            "206",
+            "6",
+            "0,06"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İyi Bir Veri Kaydının Özellikleri",
+          "metin": "Her değer {koyu:birimiyle} yazılır; tablo başlıklarında büyüklük ve birim belirtilir. Ölçümler tekrarlanır ve ortalaması alınır. Bağımsız değişken tablonun ilk sütununa ve grafiğin yatay eksenine, bağımlı değişken sonraki sütunlara ve düşey eksene yazılır. Beklenmedik ölçümler silinmez, nedeniyle not edilir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Gram Değerini Kuvvete Çevirme",
+          "metin": "Δm değerini önce kilograma çevirin: 52 g = 0,052 kg. Sonra g ≈ 10 N/kg ile çarpın: F = 0,052·10 = 0,52 N. Kısa yol: g ≈ 10 N/kg alındığında gram cinsinden okuma farkını 100'e bölmek kuvveti newton cinsinden verir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><defs><marker id='m4' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M0,0 L10,5 L0,10 z' fill='#334155'/></marker></defs><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>İtme Kuvveti – Uzaklık Grafiği (Ölçüm Verileri)</text><rect x='20' y='42' width='720' height='248' rx='10' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><line x1='100' y1='260' x2='100' y2='55' stroke='#334155' stroke-width='1.5' marker-end='url(#m4)'/><line x1='100' y1='260' x2='660' y2='260' stroke='#334155' stroke-width='1.5' marker-end='url(#m4)'/><text x='60' y='68' font-size='12' font-weight='bold' fill='#0f172a'>F (N)</text><text x='650' y='282' font-size='12' font-weight='bold' fill='#0f172a'>d (cm)</text><line x1='100' y1='205' x2='640' y2='205' stroke='#e2e8f0' stroke-width='1'/><line x1='100' y1='150' x2='640' y2='150' stroke='#e2e8f0' stroke-width='1'/><line x1='100' y1='95' x2='640' y2='95' stroke='#e2e8f0' stroke-width='1'/><text x='90' y='209' text-anchor='end' font-size='11' fill='#334155'>0,5</text><text x='90' y='154' text-anchor='end' font-size='11' fill='#334155'>1,0</text><text x='90' y='99' text-anchor='end' font-size='11' fill='#334155'>1,5</text><text x='90' y='264' text-anchor='end' font-size='11' fill='#334155'>0</text><text x='200' y='276' text-anchor='middle' font-size='11' fill='#334155'>1</text><text x='300' y='276' text-anchor='middle' font-size='11' fill='#334155'>2</text><text x='400' y='276' text-anchor='middle' font-size='11' fill='#334155'>3</text><text x='500' y='276' text-anchor='middle' font-size='11' fill='#334155'>4</text><text x='600' y='276' text-anchor='middle' font-size='11' fill='#334155'>5</text><path d='M200,84 C240,160 265,195 300,203 C340,222 370,233 400,236 C440,243 470,246 500,248 C540,251 570,252 600,253' fill='none' stroke='#dc2626' stroke-width='3'/><circle cx='200' cy='84' r='5' fill='#991b1b'/><circle cx='300' cy='203' r='5' fill='#991b1b'/><circle cx='400' cy='236' r='5' fill='#991b1b'/><circle cx='500' cy='248' r='5' fill='#991b1b'/><circle cx='600' cy='253' r='5' fill='#991b1b'/><text x='212' y='80' font-size='11' fill='#991b1b'>1,60 N</text><text x='310' y='196' font-size='11' fill='#991b1b'>0,52 N</text><text x='408' y='229' font-size='11' fill='#991b1b'>0,22 N</text><text x='505' y='241' font-size='11' fill='#991b1b'>0,11 N</text><text x='605' y='246' font-size='11' fill='#991b1b'>0,06 N</text><rect x='420' y='70' width='230' height='80' rx='8' fill='#f1f5f9' stroke='#94a3b8'/><text x='535' y='92' text-anchor='middle' font-size='12' font-weight='bold' fill='#0f172a'>Genelleme</text><text x='535' y='112' text-anchor='middle' font-size='11' fill='#334155'>Uzaklık artınca kuvvet hızla azalır;</text><text x='535' y='130' text-anchor='middle' font-size='11' fill='#334155'>azalma doğrusal değildir.</text></svg>"
+    },
+    {
+      "baslik": "5. Manyetik Alan ve Manyetik Alan Çizgileri",
+      "metin": [
+        "Mıknatıslar birbirine dokunmadan nasıl kuvvet uygulayabiliyor? Elektrik konusunda bu soruyu {koyu:elektrik alan} kavramıyla yanıtlamıştık. Manyetizmada da aynı düşünce yolunu izleriz: Her mıknatıs çevresinde bir {koyu:manyetik alan} oluşturur ve başka bir mıknatıs ya da ferromanyetik madde bu alanın içine girdiğinde kuvvet etkisi görür. Manyetik alan vektörel bir büyüklüktür; {koyu:B} ile gösterilir ve SI birimi {koyu:tesla (T)}'dır. Bir noktadaki manyetik alanın yönü, o noktaya konan serbest bir pusula iğnesinin {koyu:N ucunun gösterdiği yöndür}. Karşılaştırma için: Dünya'nın yüzeydeki manyetik alanı yaklaşık 25–65 mikrotesla arasındadır, bir buzdolabı mıknatısının yüzeyinde ise bunun yaklaşık yüz katı kadar bir alan bulunur.",
+        "Manyetik alanı görünür kılmanın klasik yolu {koyu:demir tozu deneyidir}. Bir çubuk mıknatısın üzerine ince bir karton konur, kartonun üzerine demir tozu serpilir ve kartona hafifçe vurulur. Her toz parçası küçük bir geçici mıknatısa dönüşür ve alanın doğrultusunda dizilir. Ortaya çıkan desen, kutuplardan çıkıp yay çizerek öteki kutba ulaşan eğrilerden oluşur. Kutupların yakınında tozlar sık, orta kısımda ve uzakta seyrektir. Kartonun üzerine küçük pusulalar dizilerek de aynı desen, bu kez {koyu:yönüyle birlikte} elde edilir. Bu desenleri temsil eden çizgilere {koyu:manyetik alan çizgileri} denir.",
+        "Manyetik alan çizgilerinin özellikleri elektrik alan çizgilerine benzer ama önemli bir farkla: Manyetik alan çizgileri {koyu:kapalı eğrilerdir}. Mıknatısın dışında N kutbundan çıkar, S kutbuna girer; mıknatısın içinde ise S'den N'ye doğru devam ederek döngüyü tamamlar. Elektrik alan çizgileri pozitif yükte başlayıp negatif yükte biterken manyetik alan çizgilerinin başlangıcı ve sonu yoktur; bu durum kutupların ayrılamamasının bir sonucudur. Ayrıca alan çizgileri {koyu:birbirini kesmez}, çünkü bir noktada alanın tek bir yönü vardır; çizgilerin bir noktadaki teğeti alanın yönünü, çizgilerin {koyu:sıklığı} ise alanın şiddetini gösterir. Düzgün manyetik alan, örneğin bir U mıknatısın kolları arasındaki bölge, eşit aralıklı paralel çizgilerle gösterilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Manyetik Alan Çizgileri",
+          "Elektrik Alan Çizgileri"
+        ],
+        "satirlar": [
+          [
+            "Başlangıç ve bitiş",
+            "Yoktur; kapalı eğrilerdir",
+            "Pozitif yükte başlar, negatif yükte biter"
+          ],
+          [
+            "Mıknatıs ya da yükün dışındaki yön",
+            "N kutbundan S kutbuna",
+            "Pozitif yükten negatif yüke"
+          ],
+          [
+            "Kesişme",
+            "Birbirini kesmez",
+            "Birbirini kesmez"
+          ],
+          [
+            "Alan şiddeti",
+            "Çizgilerin sık olduğu yerde büyük",
+            "Çizgilerin sık olduğu yerde büyük"
+          ],
+          [
+            "Yönü gösteren araç",
+            "Pusulanın N ucu",
+            "Pozitif deneme yüküne etki eden kuvvet"
+          ],
+          [
+            "Kaynakların ayrılabilirliği",
+            "Kutuplar ayrılamaz",
+            "Yükler ayrı ayrı bulunabilir"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Manyetik Alan",
+          "metin": "Bir mıknatısın ya da akım taşıyan bir iletkenin çevresinde, başka mıknatıslara ve ferromanyetik maddelere kuvvet uygulandığı bölgedir. {koyu:B} ile gösterilir, birimi {koyu:tesla (T)}'dır. Bir noktadaki yönü, oraya konan pusula iğnesinin N ucunun gösterdiği yöndür."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Pusula ile Alan Yönü",
+          "metin": "Pusula iğnesi bir mıknatıstır: N ucu dış alanın yönünü gösterir. Bir çubuk mıknatısın N kutbunun yanında iğnenin N ucu mıknatıstan uzağa, S kutbunun yanında mıknatısa doğru döner; mıknatısın ortasının hizasında ise mıknatısa paralel durur ve N'den S'ye doğru bakar."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><defs><marker id='m5' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M0,0 L10,5 L0,10 z' fill='#7c3aed'/></marker><marker id='m5w' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M0,0 L10,5 L0,10 z' fill='#ffffff'/></marker></defs><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='26' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Çubuk Mıknatısın Manyetik Alan Çizgileri</text><path d='M300,140 C250,85 510,85 460,140' fill='none' stroke='#7c3aed' stroke-width='2' marker-end='url(#m5)'/><path d='M300,134 C220,30 540,30 460,134' fill='none' stroke='#7c3aed' stroke-width='2' marker-end='url(#m5)'/><path d='M300,160 C250,215 510,215 460,160' fill='none' stroke='#7c3aed' stroke-width='2' marker-end='url(#m5)'/><path d='M300,166 C220,270 540,270 460,166' fill='none' stroke='#7c3aed' stroke-width='2' marker-end='url(#m5)'/><line x1='298' y1='150' x2='170' y2='150' stroke='#7c3aed' stroke-width='2' marker-end='url(#m5)'/><line x1='600' y1='150' x2='464' y2='150' stroke='#7c3aed' stroke-width='2' marker-end='url(#m5)'/><rect x='300' y='130' width='80' height='40' rx='3' fill='#ef4444'/><rect x='380' y='130' width='80' height='40' rx='3' fill='#3b82f6'/><text x='322' y='155' text-anchor='middle' font-size='15' font-weight='bold' fill='#ffffff'>N</text><text x='440' y='155' text-anchor='middle' font-size='15' font-weight='bold' fill='#ffffff'>S</text><line x1='425' y1='150' x2='340' y2='150' stroke='#ffffff' stroke-width='2' stroke-dasharray='5 3' marker-end='url(#m5w)'/><circle cx='380' cy='42' r='13' fill='#ffffff' stroke='#334155'/><polygon points='380,38 394,42 380,46' fill='#dc2626'/><polygon points='380,38 366,42 380,46' fill='#64748b'/><circle cx='140' cy='150' r='13' fill='#ffffff' stroke='#334155'/><polygon points='140,146 126,150 140,154' fill='#dc2626'/><polygon points='140,146 154,150 140,154' fill='#64748b'/><circle cx='630' cy='150' r='13' fill='#ffffff' stroke='#334155'/><polygon points='630,146 616,150 630,154' fill='#dc2626'/><polygon points='630,146 644,150 630,154' fill='#64748b'/><rect x='560' y='215' width='185' height='75' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='572' y='235' font-size='11' fill='#334155'>Dışarıda: N'den S'ye</text><text x='572' y='253' font-size='11' fill='#334155'>İçeride: S'den N'ye</text><text x='572' y='271' font-size='11' fill='#334155'>Kırmızı uç: pusulanın N ucu</text><rect x='15' y='215' width='200' height='75' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='27' y='235' font-size='11' fill='#334155'>Çizgiler kapalı eğridir.</text><text x='27' y='253' font-size='11' fill='#334155'>Birbirini kesmez.</text><text x='27' y='271' font-size='11' fill='#334155'>Kutuplarda sık: alan güçlü.</text></svg>"
+    },
+    {
+      "baslik": "6. Mıknatıs Etkileşimlerini Manyetik Alan Çizgileriyle Açıklama",
+      "metin": [
+        "Topladığımız verileri artık alan modeliyle açıklayabiliriz. Bir mıknatısın N kutbunu diğerinin S kutbuna yaklaştırdığımızda, demir tozu deseninde çizgilerin birinci mıknatısın N kutbundan çıkıp doğrudan ikinci mıknatısın S kutbuna girdiğini görürüz. Aradaki bölgede çizgiler {koyu:sık ve neredeyse paraleldir}; iki mıknatısın alanları burada {koyu:aynı yönlüdür} ve toplanarak güçlenir. Alan çizgilerini gerilmiş lastik bantlar gibi düşünmek faydalı bir modeldir: Çizgiler boyları boyunca kısalmaya çalışır ve iki mıknatısı birbirine doğru çeker. Mıknatıslar birbirine yaklaştıkça aradaki çizgiler daha da sıklaşır; bu da yakın mesafede ölçtüğümüz büyük kuvvetlerle uyumludur.",
+        "Aynı adlı kutuplar karşı karşıya geldiğinde, örneğin N–N düzeninde, desen bambaşkadır. Çizgiler iki mıknatıs arasında birbirine geçmez; her mıknatısın çizgileri karşıdakinin çizgilerinden {koyu:kaçarak yana doğru bükülür}. Aradaki bölgede iki alan {koyu:zıt yönlüdür} ve birbirini zayıflatır. Simetri ekseni üzerinde, eşit mıknatıslar için tam ortada, iki alanın birbirini tamamen götürdüğü bir {koyu:nötr nokta} oluşur; bu noktada demir tozları rastgele dağılır ve pusula belirli bir yön göstermez (Dünya'nın alanı ihmal edilirse). Bu durum, geçen hafta incelediğimiz aynı işaretli iki yükün bileşke elektrik alanının sıfır olduğu noktaya çok benzer. Alan çizgileri yanlamasına birbirini iter gibi davrandığından mıknatıslar da birbirini iter.",
+        "Alan modeli uzaklık verilerimizi de açıklar. Bir mıknatısın alan çizgileri kutuptan uzaklaştıkça açılarak seyrekleşir, yani alan uzaklıkla hızla zayıflar. Ayrıca her mıknatısın iki kutbu vardır: Uzaklık mıknatıs boyuna göre büyüdükçe karşıdaki mıknatısın uzak kutbunun zıt etkisi de önem kazanır ve kuvvet, tek bir kutbun etkisinden beklenenden daha hızlı azalır. Model büyük ölçekte de işe yarar: {koyu:Dünya} dev bir mıknatıs gibi davranır. Pusulanın N ucu coğrafi kuzeyi gösterdiğine göre, zıt kutuplar çekiştiği için Dünya'nın coğrafi kuzey kutbu yakınında bir {koyu:manyetik güney kutbu} bulunmalıdır. Dünya'nın alan çizgileri güney yarım küreden çıkıp kuzey yarım küreye girer. Böylece basit bir pusula gözlemi, alan çizgileri modeliyle gezegen ölçeğinde bir sonuca dönüşür."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Gözlem (Veri)",
+          "Alan Çizgileriyle Açıklama"
+        ],
+        "satirlar": [
+          [
+            "N–S kutupları birbirini çeker",
+            "Çizgiler bir mıknatıstan ötekine geçer; aradaki alanlar aynı yönlü ve toplanır"
+          ],
+          [
+            "N–N ya da S–S kutupları birbirini iter",
+            "Çizgiler birbirine geçmez, yana bükülür; aradaki alanlar zıt yönlüdür"
+          ],
+          [
+            "Aynı kutuplar arasında pusulanın belirli yön göstermediği bir nokta var",
+            "Nötr nokta: İki alan eşit büyüklükte ve zıt yönlü, bileşke alan sıfır"
+          ],
+          [
+            "Kuvvet yakında büyük, uzakta küçük",
+            "Çizgiler kutup yakınında sık, uzaklaştıkça seyrek"
+          ],
+          [
+            "Pusulanın N ucu coğrafi kuzeyi gösterir",
+            "Coğrafi kuzey yakınında Dünya'nın manyetik güney kutbu vardır"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Bileşke Manyetik Alan",
+          "metin": "Birden fazla mıknatısın bir noktadaki manyetik alanı, her birinin o noktadaki alanının {koyu:vektörel toplamıdır}. Aynı yönlü alanlar toplanır ve çizgiler sıklaşır; zıt yönlü alanlar birbirini zayıflatır ve eşit oldukları yerde nötr nokta oluşur."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Coğrafi Kuzey ile Manyetik Kutup Karıştırılmamalı",
+          "metin": "Pusulanın N ucunu çeken kutup bir S kutbudur. Bu nedenle coğrafi kuzey kutbu yakınındaki kutup, fiziksel olarak Dünya mıknatısının {koyu:güney (S)} kutbudur. Ayrıca manyetik kutuplar coğrafi kutuplarla tam çakışmaz ve zamanla yer değiştirir; pusulanın gösterdiği yön ile gerçek kuzey arasındaki açıya sapma açısı denir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><defs><marker id='m6' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M0,0 L10,5 L0,10 z' fill='#7c3aed'/></marker></defs><rect x='0' y='0' width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#0f172a'>Etkileşimin Alan Çizgileriyle Açıklanması</text><rect x='15' y='45' width='360' height='245' rx='10' fill='#ffffff' stroke='#86efac' stroke-width='1.5'/><text x='195' y='68' text-anchor='middle' font-size='13' font-weight='bold' fill='#166534'>Zıt kutuplar (N – S): çekme</text><line x1='150' y1='140' x2='218' y2='140' stroke='#7c3aed' stroke-width='2' marker-end='url(#m6)'/><line x1='150' y1='150' x2='218' y2='150' stroke='#7c3aed' stroke-width='2' marker-end='url(#m6)'/><line x1='150' y1='160' x2='218' y2='160' stroke='#7c3aed' stroke-width='2' marker-end='url(#m6)'/><path d='M150,132 C175,112 195,112 218,132' fill='none' stroke='#7c3aed' stroke-width='2' marker-end='url(#m6)'/><path d='M150,168 C175,188 195,188 218,168' fill='none' stroke='#7c3aed' stroke-width='2' marker-end='url(#m6)'/><rect x='30' y='130' width='60' height='40' rx='3' fill='#3b82f6'/><rect x='90' y='130' width='60' height='40' rx='3' fill='#ef4444'/><text x='60' y='155' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>S</text><text x='120' y='155' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>N</text><rect x='220' y='130' width='60' height='40' rx='3' fill='#3b82f6'/><rect x='280' y='130' width='60' height='40' rx='3' fill='#ef4444'/><text x='250' y='155' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>S</text><text x='310' y='155' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>N</text><text x='195' y='225' text-anchor='middle' font-size='12' fill='#334155'>Çizgiler bir mıknatıstan ötekine geçer,</text><text x='195' y='243' text-anchor='middle' font-size='12' fill='#334155'>arada sık ve aynı yönlüdür.</text><text x='195' y='265' text-anchor='middle' font-size='12' font-weight='bold' fill='#166534'>Alanlar toplanır.</text><rect x='385' y='45' width='360' height='245' rx='10' fill='#ffffff' stroke='#fca5a5' stroke-width='1.5'/><text x='565' y='68' text-anchor='middle' font-size='13' font-weight='bold' fill='#991b1b'>Aynı kutuplar (N – N): itme</text><path d='M520,140 C548,136 556,112 552,84' fill='none' stroke='#7c3aed' stroke-width='2' marker-end='url(#m6)'/><path d='M520,160 C548,164 556,188 552,216' fill='none' stroke='#7c3aed' stroke-width='2' marker-end='url(#m6)'/><path d='M610,140 C582,136 574,112 578,84' fill='none' stroke='#7c3aed' stroke-width='2' marker-end='url(#m6)'/><path d='M610,160 C582,164 574,188 578,216' fill='none' stroke='#7c3aed' stroke-width='2' marker-end='url(#m6)'/><line x1='520' y1='150' x2='550' y2='150' stroke='#7c3aed' stroke-width='2' marker-end='url(#m6)'/><line x1='610' y1='150' x2='580' y2='150' stroke='#7c3aed' stroke-width='2' marker-end='url(#m6)'/><rect x='400' y='130' width='60' height='40' rx='3' fill='#3b82f6'/><rect x='460' y='130' width='60' height='40' rx='3' fill='#ef4444'/><text x='430' y='155' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>S</text><text x='490' y='155' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>N</text><rect x='610' y='130' width='60' height='40' rx='3' fill='#ef4444'/><rect x='670' y='130' width='60' height='40' rx='3' fill='#3b82f6'/><text x='640' y='155' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>N</text><text x='700' y='155' text-anchor='middle' font-size='14' font-weight='bold' fill='#ffffff'>S</text><circle cx='565' cy='150' r='5' fill='#16a34a'/><text x='565' y='240' text-anchor='middle' font-size='12' fill='#334155'>Çizgiler birbirine geçmez, yana bükülür.</text><text x='565' y='258' text-anchor='middle' font-size='12' font-weight='bold' fill='#15803d'>Yeşil nokta: nötr nokta (B = 0)</text><text x='565' y='276' text-anchor='middle' font-size='12' fill='#991b1b'>Arada alanlar zıt yönlüdür.</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Dijital terazinin üzerine yalıtkan bir ara parçayla bir mıknatıs konmuş ve terazi 120 g göstermiştir. İkinci bir mıknatıs, aynı adlı kutbu alttaki mıknatısın üst kutbuna bakacak biçimde belirli bir uzaklıkta üstten sabit tutulduğunda terazi 165 g göstermiştir. a) Etkileşimin türü nedir? b) Mıknatısların birbirine uyguladığı kuvvetin büyüklüğü kaç N'dur? c) Üstteki mıknatısa etki eden manyetik kuvvetin yönü nedir? (g = 10 N/kg)",
+      "cevap": "1. adım: Aynı adlı kutuplar karşılıklı olduğundan etkileşim itmedir. Bu, okumanın artmasıyla da uyumludur: Üstteki mıknatıs alttakini aşağı iterek teraziye ek bir kuvvet uygular.\n2. adım: Okumadaki değişim Δm = 165 − 120 = 45 g = 0,045 kg'dır.\n3. adım: F = Δm·g = 0,045·10 = 0,45 N bulunur.\n4. adım: Etki–tepki ilkesine göre alttaki mıknatıs da üstteki mıknatısı aynı büyüklükte, yani 0,45 N ile yukarı doğru iter.",
+      "ipucu": "Terazi okumasındaki artış itmeyi, azalış çekmeyi gösterir; kuvveti bulmak için yalnız farkı kullanın."
+    },
+    {
+      "soru": "Bir öğrenci 2,0 cm uzaklıktaki iki mıknatısın itme kuvvetini beş kez ölçmüş ve 0,50 N, 0,54 N, 0,52 N, 0,51 N, 0,53 N değerlerini kaydetmiştir. a) Ortalama kuvveti bulunuz. b) Ölçümler ortalamadan en fazla ne kadar sapmaktadır? c) Altıncı ölçüm 0,71 N çıkarsa öğrenci ne yapmalıdır?",
+      "cevap": "1. adım: Değerlerin toplamı 0,50 + 0,54 + 0,52 + 0,51 + 0,53 = 2,60 N'dur.\n2. adım: Ortalama = {kesir:2,60|5} = 0,52 N bulunur.\n3. adım: En küçük değer 0,50 N, en büyük değer 0,54 N'dur; ikisi de ortalamadan 0,02 N uzaktadır. Sonuç 0,52 ± 0,02 N biçiminde kaydedilebilir. Sapmalar küçük olduğundan ölçümler tutarlıdır.\n4. adım: 0,71 N ötekilerden belirgin biçimde farklıdır. Öğrenci bu değeri silmemeli; nedenini araştırmalı (uzaklık 2,0 cm'den az ayarlanmış ya da mıknatıs kaymış olabilir), durumu not etmeli ve ölçümü aynı koşullarda tekrarlamalıdır.",
+      "ipucu": "Ortalama, tek tek ölçümlerdeki rastgele hataların etkisini azaltır; aykırı bir değer görüldüğünde önce koşulları kontrol edin."
+    },
+    {
+      "soru": "K, L ve M çubuk mıknatıslarının uçları sırasıyla 1–2, 3–4 ve 5–6 ile numaralandırılmıştır. 1 numaralı ucun N kutbu olduğu bilinmektedir. 1 numaralı uç 3 numaralı ucu çekmekte, 4 numaralı uç 5 numaralı ucu itmektedir. a) Bütün uçların kutuplarını belirleyiniz. b) 2 ve 6 numaralı uçlar birbirine yaklaştırılırsa ne gözlenir?",
+      "cevap": "1. adım: 1 numaralı uç N kutbudur; aynı mıknatısın öbür ucu olan 2 numaralı uç S kutbudur.\n2. adım: 1 (N) ucu 3 numaralı ucu çektiğine ve L bir mıknatıs olduğuna göre 3 numaralı uç S kutbudur; dolayısıyla 4 numaralı uç N kutbudur.\n3. adım: 4 (N) ucu 5 numaralı ucu ittiğine göre 5 numaralı uç da N kutbudur; 6 numaralı uç S kutbudur.\n4. adım: 2 numaralı uç S, 6 numaralı uç S kutbudur. Aynı adlı kutuplar olduğundan birbirini iterler.",
+      "ipucu": "Her mıknatısın iki ucu mutlaka zıt kutuptur; bir ucu bulduğunuzda öbür ucu da bulmuş olursunuz."
+    },
+    {
+      "soru": "Yatay bir masa üzerinde N kutbu solda, S kutbu sağda olacak biçimde bir çubuk mıknatıs bulunmaktadır. Pusulalar şu noktalara konuyor: A noktası N kutbunun hemen solunda, B noktası S kutbunun hemen sağında, C noktası mıknatısın orta noktasının tam üstünde (masa düzleminde, mıknatısa dik doğrultuda biraz uzakta). Her pusulanın N ucunun hangi yönü göstereceğini alan çizgileriyle açıklayınız.",
+      "cevap": "1. adım: Mıknatısın dışında alan çizgileri N kutbundan çıkar, S kutbuna girer; pusulanın N ucu çizgiye teğet olan alan yönünü gösterir.\n2. adım: A noktasında çizgiler N kutbundan dışarı, yani sola doğru çıkar. Pusulanın N ucu sola, mıknatıstan uzağa bakar.\n3. adım: B noktasında çizgiler S kutbuna girmek için sağdan sola doğru ilerler. Pusulanın N ucu sola, yani mıknatısa doğru bakar.\n4. adım: C noktasında çizgiler N'den S'ye giden yayın tepesindedir ve mıknatısa paraleldir. Pusulanın N ucu sağa, yani S kutbu tarafına bakar.\n5. adım (kontrol): A'daki pusulanın N ucu, mıknatısın N kutbu tarafından itildiği; B'dekinin N ucu da S kutbu tarafından çekildiği için bu yönler etkileşim kuralıyla da uyumludur.",
+      "ipucu": "Pusulanın N ucunu küçük bir N kutbu gibi düşünün: Mıknatısın N kutbundan kaçar, S kutbuna yönelir."
+    },
+    {
+      "soru": "Bir itme deneyinde ölçülen kuvvetler 1,0 cm'de 1,60 N, 2,0 cm'de 0,52 N ve 4,0 cm'de 0,11 N'dur. a) Uzaklık 1,0 cm'den 2,0 cm'ye ve 2,0 cm'den 4,0 cm'ye iki katına çıktığında kuvvet yaklaşık kaçta birine düşmektedir? b) Kuvvet uzaklığın karesiyle ters orantılı olsaydı her iki durumda kaçta birine düşmesi beklenirdi? c) Verilerden hangi sonuç çıkarılmalıdır?",
+      "cevap": "1. adım: {kesir:1,60|0,52} ≈ 3,1; kuvvet 1 cm'den 2 cm'ye geçişte yaklaşık üçte birine düşer.\n2. adım: {kesir:0,52|0,11} ≈ 4,7; kuvvet 2 cm'den 4 cm'ye geçişte yaklaşık beşte birine düşer.\n3. adım: Ters kare ilişkisinde uzaklık iki katına çıktığında kuvvet {kesir:1|{us:2|2}} = {kesir:1|4} katına, yani her iki durumda dörtte birine düşerdi.\n4. adım: Ölçülen oranlar (3,1 ve 4,7) birbirinden ve 4'ten farklıdır. Sonuç: Bu mıknatıs çifti için kuvvet tek bir basit ters kare kuralına uymaz; uzaklık büyüdükçe kuvvet daha hızlı azalır. Bunun nedeni, her mıknatısın iki kutbunun bulunması ve uzaklık arttıkça uzak kutupların zıt etkisinin de önem kazanmasıdır. Genelleme için başka mıknatıslarla ve daha fazla uzaklık değeriyle ölçüm yapılmalıdır.",
+      "ipucu": "Bir ilişkiyi sınamak için ölçülen oranları modelin öngördüğü oranlarla karşılaştırın; uyuşmazlık da değerli bir bulgudur."
+    },
+    {
+      "soru": "Bir çubuk mıknatıs, uçları N ve S olacak biçimde iki yerinden kırılarak üç eşit parçaya ayrılmıştır. Parçalar soldan sağa I, II ve III olarak adlandırılıyor; orijinal mıknatısta N kutbu soldadır. a) Her parçanın kutuplarını belirleyiniz. b) II numaralı parçanın sol ucu, I numaralı parçanın sağ ucuna yaklaştırılırsa ne gözlenir? c) III numaralı parça ters çevrilip sol ucu II'nin sağ ucuna yaklaştırılırsa ne gözlenir?",
+      "cevap": "1. adım: Kutuplar ayrılamaz; her parça, orijinal mıknatısla aynı yönde dizilmiş yeni bir mıknatıstır. Her parçanın sol ucu N, sağ ucu S olur.\n2. adım: I'in sağ ucu S, II'nin sol ucu N'dir. Zıt kutuplar olduğundan birbirini çekerler; parçalar eski düzeninde yeniden birleşmek ister.\n3. adım: III ters çevrildiğinde sol ucu artık S kutbu olur. II'nin sağ ucu da S kutbudur.\n4. adım: S ile S aynı adlı kutuplar olduğundan birbirini iterler.",
+      "ipucu": "Kırılan her parçayı orijinal mıknatısın küçük bir kopyası gibi düşünün: Kutupların sırası değişmez, yalnız her parçanın kendi N ve S kutbu oluşur."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "N kutbu solda, S kutbu sağda olan bir çubuk mıknatıs tam ortasından ikiye kırılıyor. Kırılan yüzeyler, parçalar eski konumlarında kalacak biçimde birbirine yeniden yaklaştırılırsa ne gözlenir?",
+      "secenekler": [
+        "Kırılan yüzeylerden biri N, diğeri S kutbu olduğu için parçalar birbirini çeker",
+        "Kırılan yüzeylerin ikisi de N kutbu olduğu için parçalar birbirini iter",
+        "Kırılan yüzeylerde kutup bulunmadığı için hiçbir etkileşim olmaz",
+        "Sol parça yalnız N, sağ parça yalnız S kutbu taşıdığı için parçalar birbirini iter"
+      ],
+      "dogru": 0,
+      "aciklama": "Her parça iki kutuplu bir mıknatıs olur: Sol parçanın kırılan ucu S, sağ parçanın kırılan ucu N kutbudur. Zıt adlı kutuplar karşı karşıya geldiği için parçalar birbirini çeker."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Serbestçe dönebilen bir pusula iğnesinin N ucu coğrafi kuzeyi göstermektedir. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
+      "secenekler": [
+        "Dünya'nın coğrafi kuzey kutbu yakınında manyetik kuzey (N) kutbu vardır.",
+        "Dünya'nın coğrafi kuzey kutbu yakınında manyetik güney (S) kutbu vardır.",
+        "Pusula iğnesi mıknatıs olmadığı için yalnız yer çekimiyle yönlenir.",
+        "Dünya'nın manyetik alan çizgileri kuzey yarım küreden çıkıp güney yarım küreye girer."
+      ],
+      "dogru": 1,
+      "aciklama": "Zıt kutuplar birbirini çektiğinden pusulanın N ucunu kuzeye çeken kutup bir S kutbudur. Bu yüzden Dünya'nın coğrafi kuzeyi yakınında manyetik güney kutbu bulunur ve alan çizgileri güney yarım küreden çıkıp kuzey yarım küreye girer."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir öğrenci iki mıknatıs arasındaki uzaklığı 1 cm, 2 cm ve 3 cm yaparak her uzaklıkta itme kuvvetini dijital teraziyle ölçmüştür. Bu deneyde aşağıdakilerden hangisi kontrol değişkenidir?",
+      "secenekler": [
+        "Mıknatıslar arasındaki uzaklık",
+        "Terazi okumasındaki değişim",
+        "Mıknatısların birbirine uyguladığı kuvvet",
+        "Kullanılan mıknatıs çifti ve kutupların karşılıklı yönelimi"
+      ],
+      "dogru": 3,
+      "aciklama": "Uzaklık öğrencinin bilerek değiştirdiği bağımsız değişkendir; terazi okumasındaki değişim ve ondan hesaplanan kuvvet bağımlı değişkendir. Deney boyunca sabit tutulan mıknatıs çifti ve kutup yönelimi ise kontrol değişkenidir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Manyetik alan çizgileriyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "secenekler": [
+        "Mıknatısın içinde de dışında da N kutbundan S kutbuna doğrudur.",
+        "Bir noktada iki alan çizgisi kesişebilir.",
+        "Çizgilerin sık olduğu bölgede manyetik alan daha güçlüdür.",
+        "Elektrik alan çizgileri gibi bir noktada başlayıp başka bir noktada biter."
+      ],
+      "dogru": 2,
+      "aciklama": "Alan çizgilerinin sıklığı alan şiddetini gösterir. Çizgiler mıknatısın dışında N'den S'ye, içinde S'den N'ye ilerleyen kapalı eğrilerdir; bir noktada alanın tek yönü olduğu için kesişmezler."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir cismin bir mıknatısa çekilmesi, o cismin kesinlikle bir mıknatıs olduğunu gösterir.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; mıknatıslanmamış demir de mıknatısın her iki kutbuna çekilir. Bir cismin mıknatıs olduğunun kesin kanıtı, bir mıknatısın kutuplarından birini itmesidir."
+        },
+        {
+          "metin": "Dijital terazi yönteminde çekme kuvveti ölçülürken terazinin okuması azalır.",
+          "dogru": true,
+          "aciklama": "Doğrudur; üstteki mıknatıs alttakini yukarı çektiği için alttaki mıknatısın teraziye uyguladığı kuvvet azalır."
+        },
+        {
+          "metin": "Büyük bir mıknatıs küçük bir mıknatısı iterken küçük mıknatıs büyük olana daha küçük bir kuvvet uygular.",
+          "dogru": false,
+          "aciklama": "Yanlıştır; etki–tepki ilkesine göre iki mıknatısın birbirine uyguladığı kuvvetler eşit büyüklükte ve zıt yönlüdür. Küçük mıknatısın daha çok hareket etmesi kütlesinin küçük olmasından kaynaklanır."
+        },
+        {
+          "metin": "İki eşit çubuk mıknatısın N kutupları karşılıklı tutulduğunda, aralarındaki bölgede bileşke manyetik alanın sıfır olduğu bir nötr nokta oluşur.",
+          "dogru": true,
+          "aciklama": "Doğrudur; aradaki bölgede iki alan zıt yönlüdür ve eşit mıknatıslar için orta noktada birbirini götürür."
+        },
+        {
+          "metin": "‘2,0 cm uzaklıkta terazi 252 g gösterdi.’ cümlesi niceliksel bir gözlemdir.",
+          "dogru": true,
+          "aciklama": "Doğrudur; bir ölçme aracıyla elde edilmiş, birimi olan sayısal bir değer içerdiği için niceliksel gözlemdir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Soldaki kavramları sağdaki uygun açıklamalarla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Manyetik kutup",
+          "Mıknatısın etkisinin en güçlü olduğu, ayrı olarak elde edilemeyen uç bölge"
+        ],
+        [
+          "Nötr nokta",
+          "Mıknatısların alanlarının birbirini götürdüğü, bileşke alanın sıfır olduğu yer"
+        ],
+        [
+          "Bağımlı değişken",
+          "Uzaklık değiştirildiğinde ölçülen manyetik kuvvet"
+        ],
+        [
+          "Manyetik alan çizgisi",
+          "Dışarıda N'den S'ye, içeride S'den N'ye ilerleyen kapalı eğri"
+        ],
+        [
+          "Ferromanyetik madde",
+          "Mıknatısa güçlü biçimde çekilen demir, nikel ve kobalt gibi maddeler"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Mıknatısların aynı adlı kutupları birbirini ___, zıt adlı kutupları birbirini çeker.",
+          "cevap": "iter"
+        },
+        {
+          "metin": "Bir noktadaki manyetik alanın yönü, oraya konan pusula iğnesinin ___ ucunun gösterdiği yöndür.",
+          "cevap": "N"
+        },
+        {
+          "metin": "Manyetik alanın SI birimi ___'dır.",
+          "cevap": "tesla"
+        },
+        {
+          "metin": "Deney boyunca sonucu etkilememesi için sabit tutulan büyüklüklere ___ değişkeni denir.",
+          "cevap": "kontrol"
+        },
+        {
+          "metin": "Manyetik alan çizgileri, başlangıcı ve sonu olmayan ___ eğrilerdir.",
+          "cevap": "kapalı"
+        }
+      ],
+      "kelimeler": [
+        "iter",
+        "N",
+        "tesla",
+        "kontrol",
+        "kapalı"
+      ],
+      "fazla": [
+        "açık",
+        "bağımsız"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir öğrenci, mıknatıs etkileşimini dijital terazi yöntemiyle gözlemlemektedir. Üst mıknatıs yokken terazi 200 g göstermektedir. İtme düzeninde (N kutupları karşılıklı) uzaklık 1,0 cm iken 360 g, 2,0 cm iken 252 g, 3,0 cm iken 222 g okunmuştur. Ardından üstteki mıknatıs ters çevrilerek çekme düzeni kurulmuş ve 2,0 cm uzaklıkta terazi 148 g göstermiştir. a) Her ölçüm için kuvveti hesaplayıp bir tabloya kaydediniz. b) İtme kuvvetinin uzaklıkla değişimi hakkında bir genelleme yapınız. c) 2,0 cm'deki itme ve çekme kuvvetlerini karşılaştırınız. d) İtme ve çekme düzenlerindeki sonuçları manyetik alan çizgileriyle açıklayınız. (g = 10 N/kg)",
+      "ipuclari": [
+        "1. adım: Her okumadan ilk okuma olan 200 g'ı çıkararak Δm değerini bulun; artış itmeyi, azalış çekmeyi gösterir.",
+        "2. adım: Δm değerini kilograma çevirip F = Δm·g ile kuvveti hesaplayın ve uzaklık, okuma, Δm, F sütunlarından oluşan bir tablo kurun.",
+        "3. adım: İtme kuvvetlerini uzaklık sırasıyla karşılaştırarak artış mı azalış mı olduğunu ve değişimin düzenli olup olmadığını inceleyin.",
+        "4. adım: N–N ve N–S düzenlerinde iki mıknatıs arasındaki alan çizgilerinin nasıl dizildiğini düşünerek itme ve çekmeyi açıklayın."
+      ],
+      "cevap": "1. adım (kayıt): İtme, 1,0 cm: Δm = 360 − 200 = 160 g = 0,160 kg → F = 0,160·10 = 1,60 N. İtme, 2,0 cm: Δm = 52 g → F = 0,52 N. İtme, 3,0 cm: Δm = 22 g → F = 0,22 N. Çekme, 2,0 cm: Δm = 148 − 200 = −52 g; okuma azaldığı için kuvvet çekmedir ve büyüklüğü F = 0,052·10 = 0,52 N'dur.\n2. adım (genelleme): Uzaklık 1,0 cm'den 3,0 cm'ye çıkarken itme kuvveti 1,60 N'dan 0,22 N'a düşmüştür. Kuvvet uzaklık arttıkça azalır; azalma doğrusal değildir: İlk 1 cm'lik artışta kuvvet 1,08 N, ikinci 1 cm'lik artışta yalnız 0,30 N azalmıştır.\n3. adım (karşılaştırma): Aynı mıknatıslarla ve aynı uzaklıkta itme ve çekme kuvvetlerinin büyüklüğü eşittir (0,52 N); yalnız yönleri farklıdır. Kutup yönelimi kuvvetin yönünü belirlemiş, uzaklık ise büyüklüğünü belirlemiştir.\n4. adım (alan çizgileriyle açıklama): Çekme düzeninde (N–S) alan çizgileri üstteki mıknatıstan alttakine geçer, arada sık ve aynı yönlüdür; kısalmaya çalışan çizgiler mıknatısları birbirine çeker. İtme düzeninde (N–N) çizgiler birbirine geçmez, yana bükülür ve arada alanlar zıt yönlüdür; yanlamasına birbirini iten çizgiler mıknatısları birbirinden uzaklaştırır. Uzaklık arttıkça her iki düzende de çizgiler seyrekleşir; bu, ölçülen kuvvetin azalmasıyla uyumludur."
+    }
+  ]
+}

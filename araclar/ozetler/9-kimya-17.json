@@ -1,0 +1,666 @@
+{
+  "ad": "9-kimya-17",
+  "sinif": 9,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 17,
+  "tarih": "11-15 Ocak 2027",
+  "yayin_tarihi": "2027-01-11",
+  "unite": "2. TEMA: ÇEŞİTLİLİK",
+  "konu": "Lewis Nokta Yapısı: Moleküllerin Lewis Yapılarının Oluşturulması, Yapısal Örüntüler, Karşılaştırmalar ve Oktet Kuralının Sınırları",
+  "ciktilar": [
+    "KİM.9.2.4. Moleküllerin Lewis nokta yapısına ilişkin çıkarımda bulunabilme.",
+    "KİM.9.2.4.a. Moleküllerin Lewis nokta yapısına ilişkin varsayımda bulunur.",
+    "KİM.9.2.4.b-c. Lewis nokta yapısını kullanarak moleküllerin yapısına ilişkin örüntüler oluşturur ve bu örüntüleri kullanarak farklı moleküllerin yapılarını karşılaştırır.",
+    "KİM.9.2.4.ç-d. Lewis nokta yapısının oluşturulmasına ilişkin önermeler sunar ve önermelerini farklı moleküllerin Lewis nokta yapılarını kullanarak değerlendirir."
+  ],
+  "giris": "Son iki haftada kovalent bağın nasıl oluştuğunu, ne kadar sağlam olduğunu ve elektronegatiflik farkıyla nasıl polarlaştığını inceledik. Bu hafta, bağları tek tek ele almak yerine {koyu:molekülün bütününe} bakıyoruz. Bir kâğıt, bir kalem ve birkaç nokta ile bir molekülde hangi atomun hangisine bağlandığını, kaç elektron çiftinin ortaklaşa kullanıldığını ve kaç çiftin bağa hiç katılmadığını gösteren {koyu:Lewis nokta yapılarını} adım adım oluşturacağız. Ardından bu yapılardaki {koyu:örüntüleri} keşfedecek, kendi {koyu:önermelerimizi} yazacak ve bu önermeleri BF₃, PCl₅ gibi kurallara meydan okuyan moleküllerle sınayacağız.",
+  "ozet": [
+    "{koyu:Lewis simgesi:} Element sembolünün çevresine yalnızca değerlik elektronlarının nokta olarak yazılmasıdır; atomdaki eşleşmemiş (tek) elektron sayısı, atomun yapabileceği kovalent bağ sayısı için güçlü bir varsayım sunar (C: 4, N: 3, O: 2, F: 1, H: 1).",
+    "{koyu:Lewis yapısı oluşturma:} Toplam değerlik elektronu sayılır, merkez atom seçilir, atomlar tekli bağlarla bağlanır, kalan elektronlar ortaklanmamış çiftler olarak yerleştirilir ve oktet eksikse ikili ya da üçlü bağ kurulur.",
+    "{koyu:Örüntü:} Oktet kuralına uyan bir atomda bağ çifti sayısı ile ortaklanmamış çift sayısının toplamı 4'tür; bu yüzden CH₄, NH₃, H₂O ve HF'de merkez atomun bağ sayısı azaldıkça ortaklanmamış çift sayısı artar.",
+    "{koyu:Karşılaştırma:} Aynı gruptaki atomlar benzer Lewis yapıları oluşturur (H₂O ve H₂S, NH₃ ve PH₃); karbon atomu C₂H₆, C₂H₄ ve C₂H₂'de her zaman dört bağ yapar ama karbonlar arasındaki bağ tekliden üçlüye değişir.",
+    "{koyu:Önerme:} Gereken elektron sayısı (G) ile toplam değerlik elektronu (D) kullanılarak bağ çifti sayısı (G − D) ÷ 2 bağıntısıyla tahmin edilebilir; bağ çifti sayısı atom sayısının bir eksiğinden büyükse molekülde çoklu bağ vardır.",
+    "{koyu:Değerlendirme:} BeCl₂ ve BF₃ (eksik oktet), PCl₅ ve SF₆ (genişlemiş oktet) ve NO (tek sayıda elektron) gibi moleküller, oktet önermesinin 2. periyottaki C, N, O, F için güçlü, diğer durumlarda ise sınırlı olduğunu gösterir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Lewis Simgeleri ve Değerlik Elektronlarından Bağ Sayısı Varsayımı",
+      "metin": [
+        "Amerikalı kimyager {koyu:Gilbert N. Lewis}, 1916 yılında yayımladığı bir çalışmada atomların kimyasal davranışında asıl rolü {koyu:değerlik elektronlarının} oynadığını ve kovalent bağın iki atom arasında ortaklaşa kullanılan bir elektron çiftinden oluştuğunu öne sürdü. Bu düşünceyi göstermek için çok sade bir yöntem geliştirdi: Element sembolünü yaz, çevresine yalnızca değerlik elektronlarını nokta olarak yerleştir. Buna {koyu:Lewis simgesi} ya da Lewis nokta gösterimi denir. Ana grup elementlerinde değerlik elektronu sayısı grup numarasından kolayca bulunur: 1. ve 2. gruptaki atomlarda sırasıyla 1 ve 2, 13-18. gruplardaki atomlarda ise grup numarasının 10 eksiği kadar değerlik elektronu vardır. Noktalar sembolün dört yanına yazılır; önce her yana birer nokta konur, beşinci elektrondan itibaren noktalar çiftlenir.",
+        "Lewis simgelerine bakınca dikkat çekici bir düzen görürüz. Karbonun dört noktasının dördü de tektir; azotun beş noktasından üçü tek, ikisi bir çift oluşturur; oksijende iki tek elektron ve iki çift, florda ise bir tek elektron ve üç çift vardır. Buradan sınanabilir bir {koyu:varsayım} kurabiliriz: Bir atomdaki {koyu:eşleşmemiş (tek) elektron sayısı}, o atomun oktete ulaşmak için yapacağı {koyu:kovalent bağ sayısına} eşittir. Her tek elektron, başka bir atomun tek elektronuyla eşleşerek bir bağ çifti oluşturur. Bu varsayıma göre karbon 4, azot 3, oksijen 2, flor 1 bağ yapmalıdır. Hidrojen tek elektronuyla 1 bağ yapar ve iki elektrona (helyum düzenine, yani {koyu:dublete}) ulaşır. Neonun ise tek elektronu yoktur; varsayımımız neonun bağ yapmaması gerektiğini söyler ve gerçekten de neon tek atomlu bir gaz olarak bulunur.",
+        "Varsayımımızı hidrojenli bileşiklerle sınayalım. Azotun üç tek elektronu üç hidrojenle eşleşirse N{alt:H|3}, oksijenin iki tek elektronu iki hidrojenle eşleşirse {alt:H|2}O, karbonun dört tek elektronu dört hidrojenle eşleşirse C{alt:H|4} oluşmalıdır. Amonyak, su ve metan gerçekten bu formüllere sahiptir; varsayım güçlü biçimde desteklenir. Aynı yaklaşım azot ile klor için N{alt:Cl|3}, karbon ile klor için C{alt:Cl|4} formüllerini öngörür ve bu bileşikler de bilinmektedir. Üstelik aynı gruptaki atomların değerlik elektronu sayısı aynı olduğundan, karbonla aynı grupta bulunan silisyumun da dört bağ yaparak Si{alt:H|4} (silan) oluşturacağını tahmin edebiliriz; bu madde de vardır. Yine de unutmayalım: Bu bir {koyu:varsayımdır} ve bölümün sonunda göreceğimiz gibi bazı atomlar için sınırları vardır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Atom",
+          "Grup",
+          "Değerlik e⁻",
+          "Tek (eşleşmemiş) e⁻",
+          "Ortaklanmamış Çift",
+          "Beklenen Bağ Sayısı",
+          "Hidrojenli Bileşik"
+        ],
+        "satirlar": [
+          [
+            "H",
+            "1",
+            "1",
+            "1",
+            "0",
+            "1",
+            "{alt:H|2}"
+          ],
+          [
+            "C",
+            "14",
+            "4",
+            "4",
+            "0",
+            "4",
+            "C{alt:H|4}"
+          ],
+          [
+            "N",
+            "15",
+            "5",
+            "3",
+            "1",
+            "3",
+            "N{alt:H|3}"
+          ],
+          [
+            "O",
+            "16",
+            "6",
+            "2",
+            "2",
+            "2",
+            "{alt:H|2}O"
+          ],
+          [
+            "F",
+            "17",
+            "7",
+            "1",
+            "3",
+            "1",
+            "HF"
+          ],
+          [
+            "Ne",
+            "18",
+            "8",
+            "0",
+            "4",
+            "0",
+            "Bileşik oluşturmaz"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Lewis Simgesi",
+          "metin": "Bir elementin sembolü ile değerlik elektronlarının sembol çevresine nokta olarak yazılmasıyla elde edilen gösterimdir. İç katman elektronları gösterilmez; çünkü kimyasal bağa katılan elektronlar değerlik elektronlarıdır. Örneğin oksijenin 8 elektronu vardır, ama Lewis simgesinde yalnızca 6 değerlik elektronu yer alır."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Değerlik Elektronunu Gruptan Bul",
+          "metin": "1. grup → 1, 2. grup → 2, 13. grup → 3, 14. grup → 4, 15. grup → 5, 16. grup → 6, 17. grup → 7, 18. grup → 8 (helyum 2). Beklenen bağ sayısı için 8'den değerlik elektronu sayısını çıkar: Azot için 8 − 5 = 3, oksijen için 8 − 6 = 2."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='330' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#4338ca'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='15' font-weight='bold'>LEWIS SİMGELERİ VE BEKLENEN BAĞ SAYISI</text><rect x='28' y='62' width='104' height='200' rx='10' fill='#eef2ff' stroke='#6366f1' stroke-width='1.5'/><rect x='148' y='62' width='104' height='200' rx='10' fill='#eef2ff' stroke='#6366f1' stroke-width='1.5'/><rect x='268' y='62' width='104' height='200' rx='10' fill='#eef2ff' stroke='#6366f1' stroke-width='1.5'/><rect x='388' y='62' width='104' height='200' rx='10' fill='#eef2ff' stroke='#6366f1' stroke-width='1.5'/><rect x='508' y='62' width='104' height='200' rx='10' fill='#eef2ff' stroke='#6366f1' stroke-width='1.5'/><rect x='628' y='62' width='104' height='200' rx='10' fill='#f1f5f9' stroke='#94a3b8' stroke-width='1.5'/><text x='80' y='80' text-anchor='middle' font-size='11' fill='#475569'>Grup 1</text><text x='200' y='80' text-anchor='middle' font-size='11' fill='#475569'>Grup 14</text><text x='320' y='80' text-anchor='middle' font-size='11' fill='#475569'>Grup 15</text><text x='440' y='80' text-anchor='middle' font-size='11' fill='#475569'>Grup 16</text><text x='560' y='80' text-anchor='middle' font-size='11' fill='#475569'>Grup 17</text><text x='680' y='80' text-anchor='middle' font-size='11' fill='#475569'>Grup 18</text><text x='80' y='130' text-anchor='middle' font-size='26' font-weight='bold' fill='#1e1b4b'>H</text><text x='200' y='130' text-anchor='middle' font-size='26' font-weight='bold' fill='#1e1b4b'>C</text><text x='320' y='130' text-anchor='middle' font-size='26' font-weight='bold' fill='#1e1b4b'>N</text><text x='440' y='130' text-anchor='middle' font-size='26' font-weight='bold' fill='#1e1b4b'>O</text><text x='560' y='130' text-anchor='middle' font-size='26' font-weight='bold' fill='#1e1b4b'>F</text><text x='680' y='130' text-anchor='middle' font-size='26' font-weight='bold' fill='#1e1b4b'>Ne</text><circle cx='80' cy='97' r='3.5' fill='#dc2626'/><circle cx='200' cy='97' r='3.5' fill='#dc2626'/><circle cx='226' cy='121' r='3.5' fill='#dc2626'/><circle cx='200' cy='145' r='3.5' fill='#dc2626'/><circle cx='174' cy='121' r='3.5' fill='#dc2626'/><circle cx='315' cy='97' r='3.5' fill='#1d4ed8'/><circle cx='325' cy='97' r='3.5' fill='#1d4ed8'/><circle cx='346' cy='121' r='3.5' fill='#dc2626'/><circle cx='320' cy='145' r='3.5' fill='#dc2626'/><circle cx='294' cy='121' r='3.5' fill='#dc2626'/><circle cx='435' cy='97' r='3.5' fill='#1d4ed8'/><circle cx='445' cy='97' r='3.5' fill='#1d4ed8'/><circle cx='466' cy='116' r='3.5' fill='#1d4ed8'/><circle cx='466' cy='126' r='3.5' fill='#1d4ed8'/><circle cx='440' cy='145' r='3.5' fill='#dc2626'/><circle cx='414' cy='121' r='3.5' fill='#dc2626'/><circle cx='555' cy='97' r='3.5' fill='#1d4ed8'/><circle cx='565' cy='97' r='3.5' fill='#1d4ed8'/><circle cx='586' cy='116' r='3.5' fill='#1d4ed8'/><circle cx='586' cy='126' r='3.5' fill='#1d4ed8'/><circle cx='555' cy='145' r='3.5' fill='#1d4ed8'/><circle cx='565' cy='145' r='3.5' fill='#1d4ed8'/><circle cx='534' cy='121' r='3.5' fill='#dc2626'/><circle cx='675' cy='97' r='3.5' fill='#1d4ed8'/><circle cx='685' cy='97' r='3.5' fill='#1d4ed8'/><circle cx='708' cy='116' r='3.5' fill='#1d4ed8'/><circle cx='708' cy='126' r='3.5' fill='#1d4ed8'/><circle cx='675' cy='145' r='3.5' fill='#1d4ed8'/><circle cx='685' cy='145' r='3.5' fill='#1d4ed8'/><circle cx='652' cy='116' r='3.5' fill='#1d4ed8'/><circle cx='652' cy='126' r='3.5' fill='#1d4ed8'/><text x='80' y='180' text-anchor='middle' font-size='12' fill='#1e293b'>Değerlik e⁻: 1</text><text x='80' y='200' text-anchor='middle' font-size='12' fill='#1e293b'>Tek e⁻: 1</text><text x='80' y='220' text-anchor='middle' font-size='12' fill='#1e293b'>Çift: 0</text><text x='80' y='246' text-anchor='middle' font-size='13' font-weight='bold' fill='#4338ca'>Bağ: 1</text><text x='200' y='180' text-anchor='middle' font-size='12' fill='#1e293b'>Değerlik e⁻: 4</text><text x='200' y='200' text-anchor='middle' font-size='12' fill='#1e293b'>Tek e⁻: 4</text><text x='200' y='220' text-anchor='middle' font-size='12' fill='#1e293b'>Çift: 0</text><text x='200' y='246' text-anchor='middle' font-size='13' font-weight='bold' fill='#4338ca'>Bağ: 4</text><text x='320' y='180' text-anchor='middle' font-size='12' fill='#1e293b'>Değerlik e⁻: 5</text><text x='320' y='200' text-anchor='middle' font-size='12' fill='#1e293b'>Tek e⁻: 3</text><text x='320' y='220' text-anchor='middle' font-size='12' fill='#1e293b'>Çift: 1</text><text x='320' y='246' text-anchor='middle' font-size='13' font-weight='bold' fill='#4338ca'>Bağ: 3</text><text x='440' y='180' text-anchor='middle' font-size='12' fill='#1e293b'>Değerlik e⁻: 6</text><text x='440' y='200' text-anchor='middle' font-size='12' fill='#1e293b'>Tek e⁻: 2</text><text x='440' y='220' text-anchor='middle' font-size='12' fill='#1e293b'>Çift: 2</text><text x='440' y='246' text-anchor='middle' font-size='13' font-weight='bold' fill='#4338ca'>Bağ: 2</text><text x='560' y='180' text-anchor='middle' font-size='12' fill='#1e293b'>Değerlik e⁻: 7</text><text x='560' y='200' text-anchor='middle' font-size='12' fill='#1e293b'>Tek e⁻: 1</text><text x='560' y='220' text-anchor='middle' font-size='12' fill='#1e293b'>Çift: 3</text><text x='560' y='246' text-anchor='middle' font-size='13' font-weight='bold' fill='#4338ca'>Bağ: 1</text><text x='680' y='180' text-anchor='middle' font-size='12' fill='#1e293b'>Değerlik e⁻: 8</text><text x='680' y='200' text-anchor='middle' font-size='12' fill='#1e293b'>Tek e⁻: 0</text><text x='680' y='220' text-anchor='middle' font-size='12' fill='#1e293b'>Çift: 4</text><text x='680' y='246' text-anchor='middle' font-size='13' font-weight='bold' fill='#64748b'>Bağ: 0</text><circle cx='60' cy='296' r='5' fill='#dc2626'/><text x='72' y='300' font-size='12' fill='#1e293b'>Tek (eşleşmemiş) elektron: bağ oluşturmaya adaydır</text><circle cx='420' cy='296' r='5' fill='#1d4ed8'/><text x='432' y='300' font-size='12' fill='#1e293b'>Çiftlenmiş elektron: ortaklanmamış çift olur</text></svg>"
+    },
+    {
+      "baslik": "Bir Molekülün Lewis Yapısını Adım Adım Oluşturma",
+      "metin": [
+        "Bir molekülün {koyu:Lewis yapısı}, moleküldeki atomların hangi sırayla birbirine bağlandığını, atomlar arasında ortaklaşa kullanılan {koyu:bağlayıcı elektron çiftlerini} ve yalnızca bir atoma ait kalan {koyu:ortaklanmamış elektron çiftlerini} gösteren iki boyutlu bir modeldir. Bağlayıcı çiftler iki nokta ya da daha sık olarak bir çizgi (–) ile gösterilir; ortaklanmamış çiftler ise atomun çevresinde iki nokta olarak bırakılır. 15. haftada {alt:H|2}, {alt:O|2} ve {alt:N|2} gibi iki atomlu moleküllerde tekli, ikili ve üçlü bağları gördük. Üç ve daha fazla atom içeren moleküllerde ise rastgele nokta koymak yerine her seferinde aynı sonuca götüren {koyu:sistemli bir yol} izlemek gerekir.",
+        "Lewis yapısı oluştururken şu adımlar uygulanır: {koyu:1)} Moleküldeki tüm atomların değerlik elektronları toplanır; bu sayı yapıda kullanılacak elektronların tamamıdır. {koyu:2)} Molekülün iskeleti kurulur: Diğer atomların bağlanacağı {koyu:merkez atom} genellikle sayıca az olan ve elektronegatifliği daha küçük olan atomdur; hidrojen ve flor her zaman uçta bulunur. {koyu:3)} Merkez atom, çevredeki her atoma birer tekli bağla bağlanır; her bağ toplamdan 2 elektron düşürür. {koyu:4)} Kalan elektronlar önce uçtaki atomlara (hidrojen hariç) oktetlerini tamamlayacak şekilde çiftler hâlinde, elektron artarsa merkez atoma yerleştirilir. {koyu:5)} Merkez atomun okteti eksik kalmışsa uçtaki bir atomun ortaklanmamış çifti bağ çiftine dönüştürülerek ikili veya üçlü bağ kurulur. {koyu:6)} Son kontrol yapılır: Kullanılan elektron sayısı toplamla aynı mı, her atom oktete (hidrojen dublete) ulaştı mı?",
+        "Bu adımları oksijen diflorür (O{alt:F|2}) üzerinde uygulayalım. Toplam değerlik elektronu 6 + 2 × 7 = 20'dir. Flor hiçbir zaman merkez olamayacağı için merkez atom oksijendir; bu seçim oksijenin flordan daha az elektronegatif olmasıyla da uyumludur. İki O–F tekli bağı 4 elektron kullanır, geriye 16 elektron kalır. Her flora üçer ortaklanmamış çift (toplam 12 elektron) verilir, kalan 4 elektron oksijene iki ortaklanmamış çift olarak yerleştirilir. Kontrol: Oksijenin çevresinde 2 bağ çifti ve 2 ortaklanmamış çift, yani 8 elektron; her florun çevresinde 1 bağ çifti ve 3 ortaklanmamış çift, yani 8 elektron vardır. Toplam 20 elektronun hepsi kullanılmıştır. Aşağıdaki tabloda aynı yöntem su ve fosfor triklorür için adım adım gösterilmiştir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Adım",
+          "{alt:H|2}O",
+          "P{alt:Cl|3}"
+        ],
+        "satirlar": [
+          [
+            "1. Toplam değerlik e⁻",
+            "2 × 1 + 6 = 8",
+            "5 + 3 × 7 = 26"
+          ],
+          [
+            "2. Merkez atom",
+            "O (H uçta olmak zorunda)",
+            "P (sayıca az, EN daha küçük)"
+          ],
+          [
+            "3. Tekli bağlar",
+            "2 bağ → 4 e⁻, kalan 4",
+            "3 bağ → 6 e⁻, kalan 20"
+          ],
+          [
+            "4. Uç atomlara çift",
+            "H dublette, çift almaz",
+            "Her Cl'ye 3 çift → 18 e⁻, kalan 2"
+          ],
+          [
+            "5. Kalan e⁻ merkeze",
+            "O'ya 2 ortaklanmamış çift",
+            "P'ye 1 ortaklanmamış çift"
+          ],
+          [
+            "6. Kontrol",
+            "O: 8 e⁻, H: 2 e⁻, toplam 8",
+            "P: 8 e⁻, her Cl: 8 e⁻, toplam 26"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Merkez Atom Nasıl Seçilir?",
+          "metin": "Hidrojen ve flor yalnızca bir bağ yapabildiği için {koyu:asla merkez atom olmaz}. Merkez atom çoğunlukla moleküldeki sayıca en az atom ve elektronegatifliği daha küçük olan atomdur: C{alt:O|2}'de C, N{alt:H|3}'te N, HCN'de C merkezdedir. Formül çoğu zaman ipucu verir; P{alt:Cl|3} ve S{alt:F|6} gibi formüllerde merkez atom genellikle ilk yazılan atomdur."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Elektron Sayısı Korunmalıdır",
+          "metin": "Lewis yapısında elektron eklenip çıkarılamaz. En sık yapılan hata, oktet tamamlamak için fazladan nokta koymaktır. Bitirdiğin yapıda bağ çiftlerini ve ortaklanmamış çiftleri sayıp 2 ile çarp; sonuç toplam değerlik elektronu sayısına eşit değilse yapı hatalıdır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 324' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='324' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#0e7490'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='15' font-weight='bold'>LEWIS YAPISI OLUŞTURMA ADIMLARI (ÖRNEK: H₂O)</text><rect x='18' y='64' width='128' height='120' rx='10' fill='#ecfeff' stroke='#0891b2' stroke-width='1.5'/><rect x='168' y='64' width='128' height='120' rx='10' fill='#ecfeff' stroke='#0891b2' stroke-width='1.5'/><rect x='318' y='64' width='128' height='120' rx='10' fill='#ecfeff' stroke='#0891b2' stroke-width='1.5'/><rect x='468' y='64' width='128' height='120' rx='10' fill='#ecfeff' stroke='#0891b2' stroke-width='1.5'/><rect x='618' y='64' width='128' height='120' rx='10' fill='#f0fdf4' stroke='#16a34a' stroke-width='1.5'/><line x1='146' y1='124' x2='162' y2='124' stroke='#0e7490' stroke-width='2'/><polygon points='160,119 168,124 160,129' fill='#0e7490'/><line x1='296' y1='124' x2='312' y2='124' stroke='#0e7490' stroke-width='2'/><polygon points='310,119 318,124 310,129' fill='#0e7490'/><line x1='446' y1='124' x2='462' y2='124' stroke='#0e7490' stroke-width='2'/><polygon points='460,119 468,124 460,129' fill='#0e7490'/><line x1='596' y1='124' x2='612' y2='124' stroke='#0e7490' stroke-width='2'/><polygon points='610,119 618,124 610,129' fill='#0e7490'/><text x='82' y='90' text-anchor='middle' font-size='13' font-weight='bold' fill='#164e63'>1. Elektron say</text><text x='82' y='116' text-anchor='middle' font-size='12' fill='#1e293b'>H: 1 + 1 = 2</text><text x='82' y='138' text-anchor='middle' font-size='12' fill='#1e293b'>O: 6</text><text x='82' y='162' text-anchor='middle' font-size='12' font-weight='bold' fill='#0e7490'>Toplam: 8 e⁻</text><text x='232' y='90' text-anchor='middle' font-size='13' font-weight='bold' fill='#164e63'>2. İskelet kur</text><text x='232' y='116' text-anchor='middle' font-size='12' fill='#1e293b'>Merkez atom: O</text><text x='232' y='138' text-anchor='middle' font-size='12' fill='#1e293b'>H her zaman uçta</text><text x='232' y='162' text-anchor='middle' font-size='12' font-weight='bold' fill='#0e7490'>H   O   H</text><text x='382' y='90' text-anchor='middle' font-size='13' font-weight='bold' fill='#164e63'>3. Tekli bağla</text><text x='382' y='116' text-anchor='middle' font-size='12' fill='#1e293b'>H–O–H</text><text x='382' y='138' text-anchor='middle' font-size='12' fill='#1e293b'>2 bağ = 4 e⁻</text><text x='382' y='162' text-anchor='middle' font-size='12' font-weight='bold' fill='#0e7490'>Kalan: 4 e⁻</text><text x='532' y='90' text-anchor='middle' font-size='13' font-weight='bold' fill='#164e63'>4. Kalanı yerleştir</text><text x='532' y='116' text-anchor='middle' font-size='12' fill='#1e293b'>H dublette (2 e⁻)</text><text x='532' y='138' text-anchor='middle' font-size='12' fill='#1e293b'>4 e⁻ oksijene</text><text x='532' y='162' text-anchor='middle' font-size='12' font-weight='bold' fill='#0e7490'>2 ortaklanmamış çift</text><text x='682' y='90' text-anchor='middle' font-size='13' font-weight='bold' fill='#14532d'>5. Kontrol et</text><text x='682' y='116' text-anchor='middle' font-size='12' fill='#1e293b'>O: 4 + 4 = 8 e⁻ ✓</text><text x='682' y='138' text-anchor='middle' font-size='12' fill='#1e293b'>Her H: 2 e⁻ ✓</text><text x='682' y='162' text-anchor='middle' font-size='12' font-weight='bold' fill='#15803d'>Kullanılan: 8 e⁻ ✓</text><rect x='200' y='196' width='360' height='112' rx='12' fill='#ffffff' stroke='#0891b2' stroke-width='1.5'/><text x='216' y='218' font-size='12' font-weight='bold' fill='#164e63'>Sonuç:</text><text x='300' y='262' text-anchor='middle' font-size='24' font-weight='bold' fill='#0f172a'>H</text><text x='380' y='262' text-anchor='middle' font-size='24' font-weight='bold' fill='#0f172a'>O</text><text x='460' y='262' text-anchor='middle' font-size='24' font-weight='bold' fill='#0f172a'>H</text><line x1='314' y1='254' x2='364' y2='254' stroke='#0f172a' stroke-width='2.5'/><line x1='396' y1='254' x2='446' y2='254' stroke='#0f172a' stroke-width='2.5'/><circle cx='375' cy='229' r='3.5' fill='#1d4ed8'/><circle cx='385' cy='229' r='3.5' fill='#1d4ed8'/><circle cx='375' cy='277' r='3.5' fill='#1d4ed8'/><circle cx='385' cy='277' r='3.5' fill='#1d4ed8'/><text x='380' y='300' text-anchor='middle' font-size='12' fill='#1e293b'>2 bağ çifti + 2 ortaklanmamış çift</text></svg>"
+    },
+    {
+      "baslik": "Bağlayıcı ve Ortaklanmamış Elektron Çiftlerinde Örüntüler",
+      "metin": [
+        "Bir Lewis yapısındaki elektron çiftleri iki türlüdür. İki atom arasında bulunan ve her iki atom tarafından da kullanılan çiftlere {koyu:bağlayıcı (ortaklanmış) elektron çifti}; yalnızca bir atomun çevresinde bulunan ve bağa katılmayan çiftlere {koyu:ortaklanmamış elektron çifti} denir. Şimdi metan (C{alt:H|4}), amonyak (N{alt:H|3}), su ({alt:H|2}O) ve hidrojen florür (HF) moleküllerini yan yana koyalım. Dördünde de toplam değerlik elektronu sayısı 8'dir ve dördünde de hidrojen dışındaki atom 2. periyottandır. Karbondan flora doğru gidildikçe bu atomun bağ çifti sayısı 4, 3, 2, 1 şeklinde azalırken ortaklanmamış çift sayısı 0, 1, 2, 3 şeklinde artar. Ancak {koyu:toplam çift sayısı her zaman 4'tür}. İşte ilk örüntümüz: Oktet kuralına uyan bir atomda bağ çifti sayısı ile ortaklanmamış çift sayısının toplamı 4'tür.",
+        "Bu örüntüden ikinci ve çok kullanışlı bir örüntü çıkar: Yüksüz moleküllerde her atomun alışılmış bir {koyu:bağ ve çift düzeni} vardır. Karbon 4 bağ ve 0 ortaklanmamış çift; azot 3 bağ ve 1 çift; oksijen 2 bağ ve 2 çift; flor, klor, brom gibi halojenler 1 bağ ve 3 çift; hidrojen ise 1 bağ ve 0 çift ile bulunur. Burada {koyu:bağ sayısı}, atomun katıldığı bağ çiftlerinin sayısıdır; bu yüzden ikili bağ iki, üçlü bağ üç sayılır. Örneğin C{alt:O|2}'de oksijen yalnızca bir karbona bağlıdır ama ikili bağ yaptığı için 2 bağ çifti ve 2 ortaklanmamış çift taşır; HCN'de azot üçlü bağla 3 bağ çifti ve 1 ortaklanmamış çift taşır. Yani örüntü, bağlar ister tekli ister çoklu olsun geçerlidir. Bir Lewis yapısını bitirdiğinde her atomun bu düzene uyup uymadığına bakmak, hataları yakalamanın en hızlı yoludur.",
+        "Üçüncü örüntü periyodik sistemden gelir: {koyu:Aynı gruptaki atomlar aynı sayıda değerlik elektronu taşıdığı için benzer Lewis yapıları oluşturur.} Oksijenle aynı grupta bulunan kükürt {alt:H|2}S'de, tıpkı sudaki oksijen gibi 2 bağ ve 2 ortaklanmamış çift taşır. Azotla aynı gruptaki fosfor P{alt:H|3}'te 3 bağ ve 1 çift, flor ile aynı gruptaki klor HCl'de 1 bağ ve 3 çift taşır. Bu örüntü, hiç görmediğimiz bir molekülün Lewis yapısını tahmin etmemizi sağlar. Fakat burada dikkatli olmalıyız: Lewis yapılarının benzer olması, maddelerin tüm özelliklerinin aynı olduğu anlamına gelmez. Su oda koşullarında sıvıyken hidrojen sülfür gazdır. Lewis yapısı moleküldeki bağlanmayı anlatır; erime-kaynama noktası gibi özellikler ise başka etkenlere de bağlıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Molekül",
+          "Toplam Değerlik e⁻",
+          "Hidrojen Dışındaki Atom",
+          "Bu Atomun Bağ Çifti",
+          "Bu Atomdaki Ortaklanmamış Çift",
+          "Toplam Çift"
+        ],
+        "satirlar": [
+          [
+            "C{alt:H|4}",
+            "8",
+            "C",
+            "4",
+            "0",
+            "4"
+          ],
+          [
+            "N{alt:H|3}",
+            "8",
+            "N",
+            "3",
+            "1",
+            "4"
+          ],
+          [
+            "{alt:H|2}O",
+            "8",
+            "O",
+            "2",
+            "2",
+            "4"
+          ],
+          [
+            "HF",
+            "8",
+            "F",
+            "1",
+            "3",
+            "4"
+          ],
+          [
+            "{alt:H|2}S",
+            "8",
+            "S",
+            "2",
+            "2",
+            "4"
+          ],
+          [
+            "P{alt:H|3}",
+            "8",
+            "P",
+            "3",
+            "1",
+            "4"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Bağlayıcı ve Ortaklanmamış Elektron Çifti",
+          "metin": "{koyu:Bağlayıcı elektron çifti}, iki atom arasında ortaklaşa kullanılan ve kovalent bağı oluşturan elektron çiftidir. {koyu:Ortaklanmamış elektron çifti} ise bir atomun değerlik katmanında bulunan ama bağ oluşumuna katılmayan elektron çiftidir. Oktet hesabında bir atom, kendi ortaklanmamış çiftleriyle birlikte bağ çiftlerinin tamamını da kendi elektronu gibi sayar."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Dört Çift Örüntüsü",
+          "metin": "Oktete ulaşan bir atomun çevresinde 8 elektron, yani {koyu:4 çift} bulunur: C 4 + 0, N 3 + 1, O 2 + 2, F 1 + 3. Bu dağılım bozulmuşsa ya Lewis yapısında hata vardır ya da molekül, altıncı bölümde inceleyeceğimiz özel durumlardan biridir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#be185d'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='15' font-weight='bold'>ÖRÜNTÜ: BAĞ ÇİFTİ + ORTAKLANMAMIŞ ÇİFT = 4</text><rect x='20' y='62' width='165' height='200' rx='12' fill='#fdf2f8' stroke='#db2777' stroke-width='1.5'/><rect x='205' y='62' width='165' height='200' rx='12' fill='#fdf2f8' stroke='#db2777' stroke-width='1.5'/><rect x='390' y='62' width='165' height='200' rx='12' fill='#fdf2f8' stroke='#db2777' stroke-width='1.5'/><rect x='575' y='62' width='165' height='200' rx='12' fill='#fdf2f8' stroke='#db2777' stroke-width='1.5'/><text x='102' y='84' text-anchor='middle' font-size='15' font-weight='bold' fill='#831843'>CH₄</text><text x='287' y='84' text-anchor='middle' font-size='15' font-weight='bold' fill='#831843'>NH₃</text><text x='472' y='84' text-anchor='middle' font-size='15' font-weight='bold' fill='#831843'>H₂O</text><text x='657' y='84' text-anchor='middle' font-size='15' font-weight='bold' fill='#831843'>HF</text><text x='102' y='158' text-anchor='middle' font-size='22' font-weight='bold' fill='#0f172a'>C</text><text x='44' y='158' text-anchor='middle' font-size='20' fill='#0f172a'>H</text><text x='160' y='158' text-anchor='middle' font-size='20' fill='#0f172a'>H</text><text x='102' y='106' text-anchor='middle' font-size='20' fill='#0f172a'>H</text><text x='102' y='210' text-anchor='middle' font-size='20' fill='#0f172a'>H</text><line x1='54' y1='150' x2='88' y2='150' stroke='#0f172a' stroke-width='2.5'/><line x1='116' y1='150' x2='150' y2='150' stroke='#0f172a' stroke-width='2.5'/><line x1='102' y1='110' x2='102' y2='134' stroke='#0f172a' stroke-width='2.5'/><line x1='102' y1='164' x2='102' y2='190' stroke='#0f172a' stroke-width='2.5'/><text x='287' y='158' text-anchor='middle' font-size='22' font-weight='bold' fill='#0f172a'>N</text><text x='229' y='158' text-anchor='middle' font-size='20' fill='#0f172a'>H</text><text x='345' y='158' text-anchor='middle' font-size='20' fill='#0f172a'>H</text><text x='287' y='210' text-anchor='middle' font-size='20' fill='#0f172a'>H</text><line x1='239' y1='150' x2='273' y2='150' stroke='#0f172a' stroke-width='2.5'/><line x1='301' y1='150' x2='335' y2='150' stroke='#0f172a' stroke-width='2.5'/><line x1='287' y1='164' x2='287' y2='190' stroke='#0f172a' stroke-width='2.5'/><circle cx='282' cy='128' r='3.5' fill='#1d4ed8'/><circle cx='292' cy='128' r='3.5' fill='#1d4ed8'/><text x='472' y='158' text-anchor='middle' font-size='22' font-weight='bold' fill='#0f172a'>O</text><text x='414' y='158' text-anchor='middle' font-size='20' fill='#0f172a'>H</text><text x='530' y='158' text-anchor='middle' font-size='20' fill='#0f172a'>H</text><line x1='424' y1='150' x2='458' y2='150' stroke='#0f172a' stroke-width='2.5'/><line x1='486' y1='150' x2='520' y2='150' stroke='#0f172a' stroke-width='2.5'/><circle cx='467' cy='128' r='3.5' fill='#1d4ed8'/><circle cx='477' cy='128' r='3.5' fill='#1d4ed8'/><circle cx='467' cy='172' r='3.5' fill='#1d4ed8'/><circle cx='477' cy='172' r='3.5' fill='#1d4ed8'/><text x='657' y='158' text-anchor='middle' font-size='22' font-weight='bold' fill='#0f172a'>F</text><text x='599' y='158' text-anchor='middle' font-size='20' fill='#0f172a'>H</text><line x1='609' y1='150' x2='643' y2='150' stroke='#0f172a' stroke-width='2.5'/><circle cx='652' cy='128' r='3.5' fill='#1d4ed8'/><circle cx='662' cy='128' r='3.5' fill='#1d4ed8'/><circle cx='652' cy='172' r='3.5' fill='#1d4ed8'/><circle cx='662' cy='172' r='3.5' fill='#1d4ed8'/><circle cx='679' cy='145' r='3.5' fill='#1d4ed8'/><circle cx='679' cy='155' r='3.5' fill='#1d4ed8'/><text x='102' y='234' text-anchor='middle' font-size='12' fill='#1e293b'>4 bağ çifti, 0 çift</text><text x='287' y='234' text-anchor='middle' font-size='12' fill='#1e293b'>3 bağ çifti, 1 çift</text><text x='472' y='234' text-anchor='middle' font-size='12' fill='#1e293b'>2 bağ çifti, 2 çift</text><text x='657' y='234' text-anchor='middle' font-size='12' fill='#1e293b'>1 bağ çifti, 3 çift</text><text x='102' y='252' text-anchor='middle' font-size='12' font-weight='bold' fill='#be185d'>Toplam 4 çift</text><text x='287' y='252' text-anchor='middle' font-size='12' font-weight='bold' fill='#be185d'>Toplam 4 çift</text><text x='472' y='252' text-anchor='middle' font-size='12' font-weight='bold' fill='#be185d'>Toplam 4 çift</text><text x='657' y='252' text-anchor='middle' font-size='12' font-weight='bold' fill='#be185d'>Toplam 4 çift</text><line x1='40' y1='280' x2='712' y2='280' stroke='#be185d' stroke-width='2'/><polygon points='712,275 722,280 712,285' fill='#be185d'/><text x='380' y='302' text-anchor='middle' font-size='12' fill='#1e293b'>C → N → O → F: bağ çifti azalır, ortaklanmamış çift artar; merkez atomun çevresinde her zaman 8 e⁻</text></svg>"
+    },
+    {
+      "baslik": "Çoklu Bağ İçeren Moleküllerin Lewis Yapılarını Karşılaştırma",
+      "metin": [
+        "Bazı moleküllerde yalnızca tekli bağlar kullanıldığında elektronlar bütün atomların oktetini tamamlamaya yetmez. Bu durumda uçtaki bir atomun ortaklanmamış çifti, merkez atomla ortaklaşa kullanılmaya başlar ve {koyu:ikili} ya da {koyu:üçlü bağ} oluşur. Karbon dioksiti (C{alt:O|2}) adım adım inceleyelim. Toplam değerlik elektronu 4 + 2 × 6 = 16'dır. Merkez atom karbondur. İki tekli bağ (O–C–O) 4 elektron kullanır, kalan 12 elektron her oksijene üçer çift olarak verilir. Şimdi oksijenlerin okteti tamdır ama karbonun çevresinde yalnızca 4 elektron vardır. Her oksijenden birer ortaklanmamış çift bağ çiftine dönüştürülür ve {koyu:O=C=O} yapısı elde edilir. Son durumda karbon 4 bağ çifti, her oksijen 2 bağ çifti ve 2 ortaklanmamış çift taşır; molekülde toplam 4 ortaklanmamış çift vardır.",
+        "Hidrojen siyanürde (HCN) toplam değerlik elektronu 1 + 4 + 5 = 10'dur. Merkez atom karbondur. H–C–N iskeletindeki iki tekli bağ 4 elektron kullanır, kalan 6 elektron azota üç çift olarak verilir. Karbonun çevresinde yalnızca 4 elektron bulunduğu için azotun iki çifti bağa çevrilir ve {koyu:H–C≡N} yapısı oluşur; azotta 1 ortaklanmamış çift kalır. Formaldehitte ({alt:H|2}CO) ise 2 + 4 + 6 = 12 elektron vardır. Karbon merkezde, iki hidrojen ve bir oksijen ona bağlıdır. Üç tekli bağ 6 elektron kullanır; kalan 6 elektron oksijene üç çift olarak verilir. Karbonun çevresinde 6 elektron olduğundan oksijenin bir çifti bağa dönüşür ve C=O ikili bağı oluşur; oksijende 2 ortaklanmamış çift kalır. Üç örnekte de önceki bölümdeki düzen korunur: Karbon 4 bağ, azot 3 bağ ve 1 çift, oksijen 2 bağ ve 2 çift taşır.",
+        "Şimdi bu örüntüleri farklı moleküllerin yapılarını {koyu:karşılaştırmak} için kullanalım. Kükürt oksijenle aynı grupta olduğundan karbon disülfürün (C{alt:S|2}) Lewis yapısı C{alt:O|2}'ye benzer: S=C=S. İki karbonlu hidrokarbonlara bakalım: Etanda ({alt:C|2}{alt:H|6}) karbonlar arasında tekli, etende ({alt:C|2}{alt:H|4}) ikili, etinde ({alt:C|2}{alt:H|2}) üçlü bağ bulunur. Hidrojen sayısı azaldıkça her karbonun 4 bağ yapma eğilimi, karbonlar arasındaki bağ çifti sayısını artırarak karşılanır. 15. haftada öğrendiğimiz gibi bağ katlılığı arttıkça bağ kısalır ve sağlamlaşır: C–C bağı yaklaşık 154 pm, C=C bağı yaklaşık 134 pm, C≡C bağı yaklaşık 120 pm'dir. Böylece Lewis yapısı, ölçmeden önce bağ uzunlukları hakkında da gerekçeli bir {koyu:karşılaştırma} yapmamızı sağlar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Molekül",
+          "Toplam Değerlik e⁻",
+          "Lewis Yapısı (çizgi gösterimi)",
+          "Bağ Türleri",
+          "Toplam Ortaklanmamış Çift"
+        ],
+        "satirlar": [
+          [
+            "C{alt:O|2}",
+            "16",
+            "O=C=O",
+            "2 ikili",
+            "4 (her O'da 2)"
+          ],
+          [
+            "C{alt:S|2}",
+            "16",
+            "S=C=S",
+            "2 ikili",
+            "4 (her S'de 2)"
+          ],
+          [
+            "HCN",
+            "10",
+            "H–C≡N",
+            "1 tekli, 1 üçlü",
+            "1 (N'de)"
+          ],
+          [
+            "{alt:H|2}CO",
+            "12",
+            "{alt:H|2}C=O",
+            "2 tekli, 1 ikili",
+            "2 (O'da)"
+          ],
+          [
+            "{alt:C|2}{alt:H|4}",
+            "12",
+            "{alt:H|2}C=C{alt:H|2}",
+            "4 tekli, 1 ikili",
+            "0"
+          ],
+          [
+            "{alt:C|2}{alt:H|2}",
+            "10",
+            "H–C≡C–H",
+            "2 tekli, 1 üçlü",
+            "0"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Oktet Eksikse Çifti Bağa Çevir",
+          "metin": "Tekli bağları kurup kalan elektronları yerleştirdikten sonra merkez atomun çevresinde 8'den az elektron varsa, elektron {koyu:eklemeye çalışma}. Uçtaki atomun bir ortaklanmamış çiftini merkez atomla arasına taşı. Merkezde 6 elektron varsa bir ikili bağ, 4 elektron varsa iki ikili bağ ya da bir üçlü bağ gerekir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Hangi Atom Çoklu Bağ Yapar?",
+          "metin": "İkili ve üçlü bağlar en çok C, N, O ve S atomlarında görülür; çünkü bu atomlar birden fazla bağ yapabilir. Hidrojen ve halojenler yalnızca bir bağ yapabildikleri için yüksüz moleküllerde çoklu bağa katılmazlar. HCN'deki üçlü bağın karbon ile azot arasında olması bu yüzdendir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 290' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='290' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#b45309'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='15' font-weight='bold'>ÇOKLU BAĞ İÇEREN MOLEKÜLLERİN LEWIS YAPILARI</text><rect x='20' y='62' width='230' height='214' rx='12' fill='#fffbeb' stroke='#d97706' stroke-width='1.5'/><rect x='265' y='62' width='230' height='214' rx='12' fill='#fffbeb' stroke='#d97706' stroke-width='1.5'/><rect x='510' y='62' width='230' height='214' rx='12' fill='#fffbeb' stroke='#d97706' stroke-width='1.5'/><text x='135' y='88' text-anchor='middle' font-size='15' font-weight='bold' fill='#78350f'>CO₂ (16 e⁻)</text><text x='380' y='88' text-anchor='middle' font-size='15' font-weight='bold' fill='#78350f'>HCN (10 e⁻)</text><text x='625' y='88' text-anchor='middle' font-size='15' font-weight='bold' fill='#78350f'>H₂CO (12 e⁻)</text><text x='70' y='158' text-anchor='middle' font-size='22' font-weight='bold' fill='#0f172a'>O</text><text x='135' y='158' text-anchor='middle' font-size='22' font-weight='bold' fill='#0f172a'>C</text><text x='200' y='158' text-anchor='middle' font-size='22' font-weight='bold' fill='#0f172a'>O</text><line x1='84' y1='146' x2='121' y2='146' stroke='#0f172a' stroke-width='2.5'/><line x1='84' y1='154' x2='121' y2='154' stroke='#0f172a' stroke-width='2.5'/><line x1='149' y1='146' x2='186' y2='146' stroke='#0f172a' stroke-width='2.5'/><line x1='149' y1='154' x2='186' y2='154' stroke='#0f172a' stroke-width='2.5'/><circle cx='65' cy='128' r='3.5' fill='#1d4ed8'/><circle cx='75' cy='128' r='3.5' fill='#1d4ed8'/><circle cx='65' cy='172' r='3.5' fill='#1d4ed8'/><circle cx='75' cy='172' r='3.5' fill='#1d4ed8'/><circle cx='195' cy='128' r='3.5' fill='#1d4ed8'/><circle cx='205' cy='128' r='3.5' fill='#1d4ed8'/><circle cx='195' cy='172' r='3.5' fill='#1d4ed8'/><circle cx='205' cy='172' r='3.5' fill='#1d4ed8'/><text x='310' y='158' text-anchor='middle' font-size='22' font-weight='bold' fill='#0f172a'>H</text><text x='380' y='158' text-anchor='middle' font-size='22' font-weight='bold' fill='#0f172a'>C</text><text x='450' y='158' text-anchor='middle' font-size='22' font-weight='bold' fill='#0f172a'>N</text><line x1='322' y1='150' x2='366' y2='150' stroke='#0f172a' stroke-width='2.5'/><line x1='394' y1='143' x2='436' y2='143' stroke='#0f172a' stroke-width='2.5'/><line x1='394' y1='150' x2='436' y2='150' stroke='#0f172a' stroke-width='2.5'/><line x1='394' y1='157' x2='436' y2='157' stroke='#0f172a' stroke-width='2.5'/><circle cx='472' cy='145' r='3.5' fill='#1d4ed8'/><circle cx='472' cy='155' r='3.5' fill='#1d4ed8'/><text x='548' y='116' text-anchor='middle' font-size='20' fill='#0f172a'>H</text><text x='548' y='200' text-anchor='middle' font-size='20' fill='#0f172a'>H</text><text x='600' y='158' text-anchor='middle' font-size='22' font-weight='bold' fill='#0f172a'>C</text><text x='670' y='158' text-anchor='middle' font-size='22' font-weight='bold' fill='#0f172a'>O</text><line x1='558' y1='116' x2='588' y2='138' stroke='#0f172a' stroke-width='2.5'/><line x1='558' y1='184' x2='588' y2='162' stroke='#0f172a' stroke-width='2.5'/><line x1='614' y1='146' x2='656' y2='146' stroke='#0f172a' stroke-width='2.5'/><line x1='614' y1='154' x2='656' y2='154' stroke='#0f172a' stroke-width='2.5'/><circle cx='665' cy='128' r='3.5' fill='#1d4ed8'/><circle cx='675' cy='128' r='3.5' fill='#1d4ed8'/><circle cx='665' cy='172' r='3.5' fill='#1d4ed8'/><circle cx='675' cy='172' r='3.5' fill='#1d4ed8'/><text x='135' y='226' text-anchor='middle' font-size='12' fill='#1e293b'>2 ikili bağ</text><text x='135' y='244' text-anchor='middle' font-size='12' fill='#1e293b'>4 ortaklanmamış çift (O'larda)</text><text x='135' y='262' text-anchor='middle' font-size='12' font-weight='bold' fill='#b45309'>C: 4 bağ, 0 çift ✓</text><text x='380' y='226' text-anchor='middle' font-size='12' fill='#1e293b'>1 tekli + 1 üçlü bağ</text><text x='380' y='244' text-anchor='middle' font-size='12' fill='#1e293b'>1 ortaklanmamış çift (N'de)</text><text x='380' y='262' text-anchor='middle' font-size='12' font-weight='bold' fill='#b45309'>C: 4 bağ, N: 3 bağ ✓</text><text x='625' y='226' text-anchor='middle' font-size='12' fill='#1e293b'>2 tekli + 1 ikili bağ</text><text x='625' y='244' text-anchor='middle' font-size='12' fill='#1e293b'>2 ortaklanmamış çift (O'da)</text><text x='625' y='262' text-anchor='middle' font-size='12' font-weight='bold' fill='#b45309'>C: 4 bağ, O: 2 bağ ✓</text></svg>"
+    },
+    {
+      "baslik": "Lewis Yapısı Oluşturmaya İlişkin Önermeler Sunma",
+      "metin": [
+        "Önceki bölümlerde onlarca Lewis yapısı oluşturduk ve bu yapılarda tekrar eden düzenler gördük. Bilimsel düşünmenin bir sonraki adımı, bu düzenleri {koyu:genel önermelere} dönüştürmektir. Gözlemlerimizden şu önermeleri sunabiliriz: {koyu:Ö1:} Hidrojen dışındaki atomlar molekülde 8 elektronla (oktet), hidrojen 2 elektronla (dublet) çevrilir. {koyu:Ö2:} Hidrojen ve flor her zaman uçtadır ve yalnızca bir bağ yapar. {koyu:Ö3:} Merkez atom genellikle sayıca az olan ve elektronegatifliği daha küçük olan atomdur. {koyu:Ö4:} Toplam değerlik elektronu sayısı, bağ çifti ile ortaklanmamış çift sayılarının toplamının iki katına eşittir. Bu önermelerin her biri sınanabilir; yani bir molekülün Lewis yapısına bakarak doğru olup olmadıklarını kontrol edebiliriz.",
+        "Ö1 ve Ö4'ü birleştirerek daha güçlü bir önerme türetebiliriz. Her atom kendi elektronlarıyla oktete ulaşmaya çalışsaydı, moleküldeki atomların toplam {koyu:gereken elektron sayısı (G)} hesaplanabilirdi: Her hidrojen için 2, diğer her atom için 8. Oysa elimizde yalnızca {koyu:toplam değerlik elektronu (D)} kadar elektron vardır. Aradaki fark nasıl kapanır? Bir bağ çifti iki atom tarafından birlikte sayıldığı için her bağ çifti 2 elektronluk açığı kapatır. O hâlde {koyu:Ö5:} Bağ çifti sayısı = (G − D) ÷ 2 olmalıdır. Bunu C{alt:O|2} ile deneyelim: G = 3 × 8 = 24, D = 16; bağ çifti sayısı (24 − 16) ÷ 2 = 4 bulunur. Gerçekten de O=C=O yapısında 4 bağ çifti vardır. Ortaklanmamış çift sayısı ise (D − 2 × bağ çifti) ÷ 2 = (16 − 8) ÷ 2 = 4'tür; bu da yapıyla uyumludur.",
+        "Ö5'ten bir adım daha ileri gidebiliriz. Halka içermeyen bir molekülde n tane atomu birbirine bağlamak için en az n − 1 tekli bağ gerekir. {koyu:Ö6:} Bağ çifti sayısı n − 1'den büyükse, molekülde çoklu bağ vardır; fazlalık, çoklu bağlarda yer alan ek çift sayısını gösterir. C{alt:O|2}'de 3 atom için en az 2 bağ gerekir ama 4 bağ çifti bulunmuştur; 2 ek çift, yani iki ikili bağ ya da bir üçlü bağ olmalıdır. Hangisinin doğru olduğuna oktet ve atomların bağ düzeni karar verir: Oksijen 2 bağ yaptığından iki ikili bağ seçilir. N{alt:H|3}'te ise G = 8 + 3 × 2 = 14, D = 8, bağ çifti sayısı 3'tür; 4 atom için en az 3 bağ gerektiğinden molekülde yalnızca tekli bağlar vardır. Unutmayalım ki bu önermeler, şimdiye kadar incelediğimiz moleküllerden üretildi. Bir önermenin değeri, {koyu:yeni moleküllerle sınandığında} ortaya çıkar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Önerme",
+          "Destekleyen Örnek",
+          "Sınama Sorusu"
+        ],
+        "satirlar": [
+          [
+            "Ö1: H dışındaki atomlar oktete, H dublete ulaşır.",
+            "C{alt:H|4}, N{alt:H|3}, {alt:H|2}O, C{alt:O|2}",
+            "Merkezinde B, Be, P veya S bulunan moleküllerde de geçerli mi?"
+          ],
+          [
+            "Ö2: H ve F her zaman uçtadır.",
+            "HCN, O{alt:F|2}, HF",
+            "Merkezinde H veya F bulunan yüksüz bir molekül var mı?"
+          ],
+          [
+            "Ö3: Merkez atom sayıca az ve EN'si küçük atomdur.",
+            "C{alt:O|2}'de C, P{alt:Cl|3}'te P",
+            "O{alt:F|2}'de merkez atom O mudur?"
+          ],
+          [
+            "Ö4: D = 2 × (bağ çifti + ortaklanmamış çift).",
+            "O{alt:F|2}: 2 × (2 + 8) = 20",
+            "Toplam değerlik e⁻ sayısı tek olursa ne olur?"
+          ],
+          [
+            "Ö5: Bağ çifti = (G − D) ÷ 2.",
+            "C{alt:O|2}: 4, HCN: 4, N{alt:H|3}: 3",
+            "B{alt:F|3} ve P{alt:Cl|5} için doğru sonuç verir mi?"
+          ],
+          [
+            "Ö6: Bağ çifti n − 1'den büyükse çoklu bağ vardır.",
+            "HCN: 3 atom, 4 bağ çifti → üçlü bağ",
+            "{alt:C|2}{alt:H|4}'te kaç ek çift bulunur?"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Bağ Çifti ve Ortaklanmamış Çift Hesabı",
+          "metin": "G = (hidrojen sayısı × 2) + (diğer atom sayısı × 8); D = toplam değerlik elektronu.\nBağ çifti sayısı = {kesir:G − D|2}\nOrtaklanmamış çift sayısı = {kesir:D − 2 × bağ çifti|2}\nÖrnek {alt:H|2}O: G = 12, D = 8 → bağ çifti 2, ortaklanmamış çift 2."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Çoklu Bağ Var mı?",
+          "metin": "Hesapladığın bağ çifti sayısını atom sayısının bir eksiğiyle karşılaştır. Fazlalık 0 ise yalnızca tekli bağ, 1 ise bir ikili bağ, 2 ise iki ikili bağ ya da bir üçlü bağ vardır. Örneğin {alt:C|2}{alt:H|4}: G = 24, D = 12, bağ çifti 6; 6 atom için en az 5 bağ gerekir, fazlalık 1 → bir ikili bağ (C=C)."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='330' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#15803d'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='15' font-weight='bold'>LEWIS YAPISI ÖNERMELERİ VE BAĞ ÇİFTİ HESABI</text><rect x='20' y='62' width='370' height='252' rx='12' fill='#f0fdf4' stroke='#16a34a' stroke-width='1.5'/><text x='205' y='86' text-anchor='middle' font-size='14' font-weight='bold' fill='#14532d'>Önermeler</text><text x='34' y='110' font-size='12' font-weight='bold' fill='#14532d'>Ö1.</text><text x='62' y='110' font-size='12' fill='#1e293b'>H dışındaki atomlar 8 e⁻ (oktet),</text><text x='62' y='126' font-size='12' fill='#1e293b'>H ise 2 e⁻ (dublet) ile çevrilir.</text><text x='34' y='146' font-size='12' font-weight='bold' fill='#14532d'>Ö2.</text><text x='62' y='146' font-size='12' fill='#1e293b'>H ve F her zaman uçtadır,</text><text x='62' y='162' font-size='12' fill='#1e293b'>yalnızca bir bağ yapar.</text><text x='34' y='182' font-size='12' font-weight='bold' fill='#14532d'>Ö3.</text><text x='62' y='182' font-size='12' fill='#1e293b'>Merkez atom genellikle sayıca az ve</text><text x='62' y='198' font-size='12' fill='#1e293b'>elektronegatifliği küçük olan atomdur.</text><text x='34' y='218' font-size='12' font-weight='bold' fill='#14532d'>Ö4.</text><text x='62' y='218' font-size='12' fill='#1e293b'>Toplam değerlik e⁻ korunur:</text><text x='62' y='234' font-size='12' fill='#1e293b'>D = 2 × (bağ çifti + ortaklanmamış çift)</text><text x='34' y='254' font-size='12' font-weight='bold' fill='#14532d'>Ö5.</text><text x='62' y='254' font-size='12' fill='#1e293b'>Bağ çifti sayısı = (G − D) ÷ 2</text><text x='34' y='274' font-size='12' font-weight='bold' fill='#14532d'>Ö6.</text><text x='62' y='274' font-size='12' fill='#1e293b'>Bağ çifti sayısı, atom sayısı − 1'den</text><text x='62' y='290' font-size='12' fill='#1e293b'>büyükse molekülde çoklu bağ vardır.</text><rect x='405' y='62' width='335' height='60' rx='12' fill='#15803d'/><text x='572' y='88' text-anchor='middle' font-size='15' font-weight='bold' fill='#ffffff'>Bağ çifti = (G − D) ÷ 2</text><text x='572' y='110' text-anchor='middle' font-size='11' fill='#dcfce7'>G: gereken e⁻ (H için 2, diğerleri 8)   D: değerlik e⁻</text><rect x='405' y='134' width='335' height='84' rx='12' fill='#ffffff' stroke='#16a34a' stroke-width='1.5'/><text x='419' y='154' font-size='12' font-weight='bold' fill='#14532d'>CO₂: G = 3 × 8 = 24; D = 4 + 2 × 6 = 16</text><text x='419' y='172' font-size='12' fill='#1e293b'>Bağ çifti = (24 − 16) ÷ 2 = 4</text><text x='419' y='190' font-size='12' fill='#1e293b'>Ortaklanmamış çift = (16 − 8) ÷ 2 = 4</text><text x='419' y='208' font-size='12' fill='#b45309'>3 atom, 4 bağ çifti → çoklu bağ var (O=C=O)</text><rect x='405' y='228' width='335' height='86' rx='12' fill='#ffffff' stroke='#16a34a' stroke-width='1.5'/><text x='419' y='248' font-size='12' font-weight='bold' fill='#14532d'>NH₃: G = 8 + 3 × 2 = 14; D = 5 + 3 = 8</text><text x='419' y='266' font-size='12' fill='#1e293b'>Bağ çifti = (14 − 8) ÷ 2 = 3</text><text x='419' y='284' font-size='12' fill='#1e293b'>Ortaklanmamış çift = (8 − 6) ÷ 2 = 1</text><text x='419' y='302' font-size='12' fill='#b45309'>4 atom, 3 bağ çifti → yalnızca tekli bağ</text></svg>"
+    },
+    {
+      "baslik": "Önermeleri Farklı Moleküllerle Değerlendirme: Oktet Kuralının Sınırları",
+      "metin": [
+        "Şimdi önermelerimizi, oluşturulurken kullanmadığımız moleküllerle sınayalım. Bor triflorürde (B{alt:F|3}) D = 3 + 3 × 7 = 24, G = 4 × 8 = 32'dir; Ö5'e göre (32 − 24) ÷ 2 = 4 bağ çifti, yani bir B=F ikili bağı bulunmalıdır. Oysa deneysel gözlemler üç B–F bağının da birbirine özdeş olduğunu ve tekli bağ gibi davrandığını gösterir. Daha önemlisi B{alt:F|3}, amonyakla kolayca birleşir: Amonyaktaki azotun ortaklanmamış çifti borun boş kalan yerine yerleşir ve {alt:F|3}B–N{alt:H|3} oluşur. Bu davranış, B{alt:F|3}'teki borun çevresinde yalnızca {koyu:6 elektron} bulunduğunu, yani elektron eksikliği olduğunu destekler. Gaz hâlindeki berilyum klorürde (BeC{alt:l|2} değil, Be{alt:Cl|2}) berilyumun çevresinde ise yalnızca 4 elektron vardır. Az sayıda değerlik elektronu olan Be ve B atomları için Ö1 ve Ö5 tutmaz; bu durum {koyu:eksik oktet} olarak adlandırılır.",
+        "Ters yönde sapan moleküller de vardır. Fosfor pentaklorürde (P{alt:Cl|5}) fosfor beş klor atomuna bağlıdır; merkez atomun çevresinde 5 bağ çifti, yani {koyu:10 elektron} bulunur. Kükürt heksaflorürde (S{alt:F|6}) kükürt altı flora bağlanır ve çevresinde {koyu:12 elektron} vardır. Ö5 bu iki molekülde de 4 bağ çifti öngörür ve açıkça yanlışlanır. 3. periyot ve sonrasındaki atomlarda merkez atomun 8'den fazla elektronla çevrilebildiği bu duruma {koyu:genişlemiş oktet} denir. İlginç olan şudur: Aynı fosfor atomu P{alt:Cl|3}'te oktet kuralına uyar, P{alt:Cl|5}'te uymaz. Ayrıca azot monoksitte (NO) toplam değerlik elektronu 5 + 6 = 11'dir. Tek sayıdaki elektronların tamamı çiftlenemez; bir elektron eşleşmemiş kalır ve Ö5 bile (16 − 11) ÷ 2 = 2,5 gibi anlamsız bir sonuç verir. Eşleşmemiş elektron taşıyan bu tür moleküller genellikle tepkimeye çok yatkındır.",
+        "Bu aykırı veriler önermelerimizi çöpe atmamızı değil, {koyu:sınırlandırmamızı} gerektirir. Düzeltilmiş önerme şöyle yazılabilir: “Merkez atomu 2. periyottaki C, N, O veya F olan ve toplam değerlik elektronu çift sayı olan moleküllerde atomlar oktete ulaşır ve bağ çifti sayısı (G − D) ÷ 2 ile bulunur. Be ve B eksik oktet, 3. periyot ve sonrasındaki merkez atomlar genişlemiş oktet oluşturabilir.” Lewis yapısının kendisinin de bir {koyu:model} olduğunu unutmayalım. Su molekülünü H–O–H şeklinde düz bir çizgi üzerinde çizeriz; oysa gerçek su molekülü açısaldır. Lewis yapısı, atomların bağlanma sırasını ve elektron çiftlerini çok iyi gösterir ama molekülün üç boyutlu şeklini doğrudan göstermez. İyi bir öğrenci, modeli kullanırken onun nerede işe yarayıp nerede yetersiz kaldığını da bilir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Molekül",
+          "Merkez Atomun Çevresindeki e⁻",
+          "Ö1 (Oktet)",
+          "Ö5 Tahmini (bağ çifti)",
+          "Gözlenen Bağ Çifti",
+          "Karar"
+        ],
+        "satirlar": [
+          [
+            "Be{alt:Cl|2}",
+            "4",
+            "Uymaz",
+            "4",
+            "2",
+            "Eksik oktet; önerme sınırlandırılır"
+          ],
+          [
+            "B{alt:F|3}",
+            "6",
+            "Uymaz",
+            "4",
+            "3",
+            "Eksik oktet; N{alt:H|3} ile birleşme bunu destekler"
+          ],
+          [
+            "C{alt:Cl|4}",
+            "8",
+            "Uyar",
+            "4",
+            "4",
+            "Önerme desteklenir"
+          ],
+          [
+            "N{alt:H|3}",
+            "8",
+            "Uyar",
+            "3",
+            "3",
+            "Önerme desteklenir"
+          ],
+          [
+            "P{alt:Cl|5}",
+            "10",
+            "Uymaz",
+            "4",
+            "5",
+            "Genişlemiş oktet; 3. periyot"
+          ],
+          [
+            "S{alt:F|6}",
+            "12",
+            "Uymaz",
+            "4",
+            "6",
+            "Genişlemiş oktet; 3. periyot"
+          ],
+          [
+            "NO",
+            "Tek sayıda (toplam 11)",
+            "Uymaz",
+            "2,5 (anlamsız)",
+            "Eşleşmemiş e⁻ var",
+            "Tek elektronlu molekül"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "Toplam Elektron Sayısı Tek İse",
+          "metin": "NO ve N{alt:O|2} gibi moleküllerde toplam değerlik elektronu tek sayıdır (11 ve 17). Bu moleküllerde en az bir atom oktete ulaşamaz, bir elektron eşleşmemiş kalır. Bir Lewis yapısına başlamadan önce toplamın tek mi çift mi olduğuna bakmak, bu özel durumu hemen fark etmeni sağlar."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Model ve Gerçeklik",
+          "metin": "Oktet kuralı bir doğa yasası değil, pek çok molekülü başarıyla açıklayan bir {koyu:genellemedir}. C, N, O ve F için neredeyse her zaman geçerlidir; Be, B ve 3. periyot sonrası atomlarda sınırları vardır. Lewis yapısı da molekülün şeklini değil, bağlanma düzenini ve elektron çiftlerini gösteren iki boyutlu bir modeldir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 330' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='330' rx='16' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><rect x='20' y='14' width='720' height='36' rx='8' fill='#6d28d9'/><text x='380' y='38' text-anchor='middle' fill='#ffffff' font-size='15' font-weight='bold'>MERKEZ ATOM ÇEVRESİNDEKİ ELEKTRON SAYISI: OKTETİN SINIRLARI</text><line x1='36' y1='70' x2='36' y2='280' stroke='#475569' stroke-width='2'/><line x1='36' y1='280' x2='574' y2='280' stroke='#475569' stroke-width='2'/><line x1='36' y1='168' x2='574' y2='168' stroke='#16a34a' stroke-width='2' stroke-dasharray='6 4'/><text x='42' y='162' font-size='11' font-weight='bold' fill='#15803d'>Oktet sınırı: 8 e⁻</text><rect x='50' y='224' width='54' height='56' rx='4' fill='#f97316'/><rect x='140' y='196' width='54' height='84' rx='4' fill='#f97316'/><rect x='230' y='168' width='54' height='112' rx='4' fill='#22c55e'/><rect x='320' y='168' width='54' height='112' rx='4' fill='#22c55e'/><rect x='410' y='140' width='54' height='140' rx='4' fill='#8b5cf6'/><rect x='500' y='112' width='54' height='168' rx='4' fill='#8b5cf6'/><text x='77' y='218' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>4</text><text x='167' y='190' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>6</text><text x='257' y='162' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>8</text><text x='347' y='162' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>8</text><text x='437' y='134' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>10</text><text x='527' y='106' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>12</text><text x='77' y='298' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>BeCl₂</text><text x='167' y='298' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>BF₃</text><text x='257' y='298' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>CH₄</text><text x='347' y='298' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>NH₃</text><text x='437' y='298' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>PCl₅</text><text x='527' y='298' text-anchor='middle' font-size='13' font-weight='bold' fill='#0f172a'>SF₆</text><text x='77' y='316' text-anchor='middle' font-size='11' fill='#475569'>2 bağ</text><text x='167' y='316' text-anchor='middle' font-size='11' fill='#475569'>3 bağ</text><text x='257' y='316' text-anchor='middle' font-size='11' fill='#475569'>4 bağ</text><text x='347' y='316' text-anchor='middle' font-size='11' fill='#475569'>3 bağ + 1 çift</text><text x='437' y='316' text-anchor='middle' font-size='11' fill='#475569'>5 bağ</text><text x='527' y='316' text-anchor='middle' font-size='11' fill='#475569'>6 bağ</text><rect x='590' y='64' width='152' height='252' rx='12' fill='#f5f3ff' stroke='#7c3aed' stroke-width='1.5'/><rect x='602' y='80' width='16' height='14' rx='3' fill='#f97316'/><text x='624' y='92' font-size='12' fill='#1e293b'>Eksik oktet</text><rect x='602' y='104' width='16' height='14' rx='3' fill='#22c55e'/><text x='624' y='116' font-size='12' fill='#1e293b'>Oktete uyar</text><rect x='602' y='128' width='16' height='14' rx='3' fill='#8b5cf6'/><text x='624' y='140' font-size='12' fill='#1e293b'>Genişlemiş oktet</text><text x='602' y='172' font-size='11' font-weight='bold' fill='#9a3412'>Be, B (2. periyot):</text><text x='602' y='188' font-size='11' fill='#1e293b'>değerlik e⁻ sayısı az,</text><text x='602' y='204' font-size='11' fill='#1e293b'>8'e ulaşamaz.</text><text x='602' y='232' font-size='11' font-weight='bold' fill='#5b21b6'>P, S (3. periyot):</text><text x='602' y='248' font-size='11' fill='#1e293b'>merkezde 8'den</text><text x='602' y='264' font-size='11' fill='#1e293b'>fazla e⁻ olabilir.</text><text x='602' y='292' font-size='11' font-weight='bold' fill='#15803d'>C, N, O, F: oktet</text><text x='602' y='308' font-size='11' fill='#15803d'>neredeyse her zaman</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Amonyak (N{alt:H|3}) molekülünün Lewis yapısını adım adım oluşturunuz. Azot atomunun bağ çifti ve ortaklanmamış çift sayılarını belirleyip oktet kuralını kontrol ediniz.",
+      "cevap": "1. adım: Toplam değerlik elektronu: N = 5, H = 3 × 1 = 3 → D = 8.\n2. adım: Merkez atom azottur; hidrojenler uçta olmak zorundadır.\n3. adım: Azot üç hidrojene tekli bağla bağlanır: 3 bağ × 2 = 6 elektron kullanılır, 2 elektron kalır.\n4. adım: Hidrojenler 2 elektronla dublete ulaşmıştır; kalan 2 elektron azota 1 ortaklanmamış çift olarak yerleştirilir.\n5. adım: Kontrol: Azotun çevresinde 3 bağ çifti (6 e⁻) + 1 ortaklanmamış çift (2 e⁻) = 8 e⁻ → oktet tamam. Her hidrojen 2 e⁻ ile dublette. Kullanılan elektron: 2 × (3 + 1) = 8 = D.\nSonuç: Lewis yapısında azot merkezde, üç N–H tekli bağı ve azot üzerinde bir ortaklanmamış çift vardır. Bu düzen “azot: 3 bağ + 1 çift” örüntüsüyle uyumludur.",
+      "ipucu": "Kalan elektronları yerleştirirken hidrojene asla ek elektron verme; hidrojen bir bağla dublete ulaşır."
+    },
+    {
+      "soru": "Hidrojen siyanürün (HCN) bağ çifti sayısını (G − D) ÷ 2 bağıntısıyla hesaplayınız. Molekülde çoklu bağ olup olmadığına karar verip Lewis yapısını oluşturunuz.",
+      "cevap": "1. adım: D = 1 (H) + 4 (C) + 5 (N) = 10.\n2. adım: G = 1 × 2 (H) + 2 × 8 (C ve N) = 18.\n3. adım: Bağ çifti sayısı = {kesir:18 − 10|2} = 4.\n4. adım: Ortaklanmamış çift sayısı = {kesir:10 − 2 × 4|2} = 1.\n5. adım: Çoklu bağ kontrolü: 3 atomu bağlamak için en az 2 bağ gerekir; 4 − 2 = 2 ek çift vardır → ya iki ikili bağ ya da bir üçlü bağ.\n6. adım: Hidrojen yalnızca bir bağ yapabildiğinden H–C tekli olmalıdır; 2 ek çiftin ikisi de C ile N arasına gider → C≡N üçlü bağ.\n7. adım: Tek ortaklanmamış çift azota yerleşir. Kontrol: C: 1 + 3 = 4 bağ çifti (8 e⁻); N: 3 bağ çifti + 1 çift (8 e⁻); H: 2 e⁻.\nSonuç: H–C≡N yapısı, azot üzerinde bir ortaklanmamış çift ile.",
+      "ipucu": "Ek çiftlerin nereye gideceğine karar verirken hidrojenin ve halojenlerin yalnızca tek bağ yapabildiğini hatırla."
+    },
+    {
+      "soru": "Hiç incelemediğiniz silisyum tetraklorür (Si{alt:Cl|4}), fosfin (P{alt:H|3}) ve hidrojen sülfür ({alt:H|2}S) moleküllerinin Lewis yapılarını periyodik sistemdeki grup örüntüsünü kullanarak tahmin ediniz. Her molekülde merkez atomun ortaklanmamış çift sayısını belirtiniz. (Si: 14. grup, P: 15. grup, S: 16. grup, Cl: 17. grup)",
+      "cevap": "1. adım (Örüntü): Aynı gruptaki atomlar aynı sayıda değerlik elektronu taşır ve benzer Lewis yapıları oluşturur. Si karbon gibi, P azot gibi, S oksijen gibi davranmalıdır.\n2. adım (Si{alt:Cl|4}): Si, C{alt:Cl|4}'teki karbon gibi 4 tekli bağ yapar; ortaklanmamış çifti yoktur. Her Cl'de 3 çift vardır. Kontrol: D = 4 + 4 × 7 = 32; 2 × (4 bağ + 12 çift) = 32 ✓.\n3. adım (P{alt:H|3}): P, N{alt:H|3}'teki azot gibi 3 bağ ve 1 ortaklanmamış çift taşır. Kontrol: D = 5 + 3 = 8; 2 × (3 + 1) = 8 ✓.\n4. adım ({alt:H|2}S): S, sudaki oksijen gibi 2 bağ ve 2 ortaklanmamış çift taşır. Kontrol: D = 2 + 6 = 8; 2 × (2 + 2) = 8 ✓.\nSonuç: Merkez atomdaki ortaklanmamış çift sayıları: Si{alt:Cl|4}'te 0, P{alt:H|3}'te 1, {alt:H|2}S'de 2. Lewis yapıları benzer olsa da maddelerin fiziksel özelliklerinin aynı olacağı sonucu çıkarılamaz (örneğin su sıvı, {alt:H|2}S gazdır).",
+      "ipucu": "Önce aynı gruptaki 2. periyot elementinin bildiğin molekülünü düşün, sonra atomu yer değiştir ve elektron sayısını kontrol et."
+    },
+    {
+      "soru": "Karbon dioksit (C{alt:O|2}) ve su ({alt:H|2}O) moleküllerini Lewis yapıları üzerinden karşılaştırınız: toplam değerlik elektronu, bağ türleri, toplam ortaklanmamış çift sayısı ve merkez atomdaki ortaklanmamış çift sayısı bakımından farklarını belirtiniz.",
+      "cevap": "1. adım (C{alt:O|2}): D = 4 + 2 × 6 = 16; G = 24; bağ çifti = (24 − 16) ÷ 2 = 4; ortaklanmamış çift = (16 − 8) ÷ 2 = 4. Yapı: O=C=O (iki ikili bağ). Merkez atom C'de ortaklanmamış çift yok; her O'da 2 çift.\n2. adım ({alt:H|2}O): D = 8; G = 12; bağ çifti = (12 − 8) ÷ 2 = 2; ortaklanmamış çift = (8 − 4) ÷ 2 = 2. Yapı: H–O–H (iki tekli bağ). Merkez atom O'da 2 ortaklanmamış çift var.\n3. adım (Karşılaştırma): Her ikisi de üç atomlu ve merkez atomlu moleküldür. C{alt:O|2}'de 16, suda 8 değerlik elektronu vardır. C{alt:O|2}'de bağlar ikili, suda tekli; C{alt:O|2}'de toplam 4, suda 2 ortaklanmamış çift bulunur.\n4. adım (Önemli fark): Merkez atomdaki ortaklanmamış çift sayısı C{alt:O|2}'de 0, suda 2'dir.\nSonuç: Formülleri benzer görünen (A{alt:B|2}) iki molekülün Lewis yapıları çok farklı olabilir. Merkez atomdaki ortaklanmamış çiftlerin bu farkı, ileride molekül şekillerini incelerken önem kazanacaktır.",
+      "ipucu": "Önce iki molekül için ayrı ayrı D, G, bağ çifti ve ortaklanmamış çift sayısını bul; sonra bir tabloda yan yana yaz."
+    },
+    {
+      "soru": "Eten ({alt:C|2}{alt:H|4}) ve etin ({alt:C|2}{alt:H|2}) moleküllerinin Lewis yapılarını oluşturunuz. Karbon–karbon bağlarını karşılaştırarak hangi molekülde C–C arasındaki bağın daha kısa olmasını beklediğinizi gerekçesiyle yazınız.",
+      "cevap": "1. adım ({alt:C|2}{alt:H|4}): D = 2 × 4 + 4 × 1 = 12; G = 2 × 8 + 4 × 2 = 24; bağ çifti = (24 − 12) ÷ 2 = 6; ortaklanmamış çift = (12 − 12) ÷ 2 = 0.\n2. adım: 6 atom için en az 5 bağ gerekir; 6 − 5 = 1 ek çift → bir ikili bağ. H yalnızca tek bağ yaptığından ikili bağ iki karbon arasındadır: {alt:H|2}C=C{alt:H|2}.\n3. adım ({alt:C|2}{alt:H|2}): D = 2 × 4 + 2 = 10; G = 16 + 4 = 20; bağ çifti = (20 − 10) ÷ 2 = 5; ortaklanmamış çift = 0.\n4. adım: 4 atom için en az 3 bağ; 5 − 3 = 2 ek çift → karbonlar arasında üçlü bağ: H–C≡C–H.\n5. adım (Kontrol): Her iki molekülde de her karbon 4 bağ çifti taşır ve oktettedir.\n6. adım (Karşılaştırma): Bağ katlılığı arttıkça bağ kısalır ve sağlamlaşır. Etende C=C (yaklaşık 134 pm), etinde C≡C (yaklaşık 120 pm) vardır.\nSonuç: C–C bağının etinde daha kısa olması beklenir; çünkü iki karbon arasında üç bağ çifti ortaklaşa kullanılır.",
+      "ipucu": "Hidrojen sayısı azaldıkça karbonlar dört bağ yapma eğilimini birbirleriyle daha çok bağ kurarak karşılar."
+    },
+    {
+      "soru": "Bir öğrenci şu önermeyi sunmuştur: “Bir moleküldeki tüm atomlar (H hariç) oktete ulaşır ve bağ çifti sayısı her zaman (G − D) ÷ 2 ile bulunur.” Bu önermeyi B{alt:F|3} ve P{alt:Cl|5} molekülleriyle değerlendiriniz ve gerekiyorsa düzeltiniz. (B: 13. grup, P: 15. grup, F ve Cl: 17. grup)",
+      "cevap": "1. adım (B{alt:F|3} tahmini): D = 3 + 3 × 7 = 24; G = 4 × 8 = 32; bağ çifti = (32 − 24) ÷ 2 = 4 → bir B=F ikili bağı beklenir.\n2. adım (B{alt:F|3} gözlem): Üç B–F bağı özdeştir ve tekli bağ gibi davranır; bor çevresinde 3 bağ çifti, yani 6 elektron vardır. B{alt:F|3}'ün amonyağın ortaklanmamış çiftini kolayca alması bu elektron eksikliğini destekler → önerme bu molekülde tutmaz (eksik oktet).\n3. adım (P{alt:Cl|5} tahmini): D = 5 + 5 × 7 = 40; G = 6 × 8 = 48; bağ çifti = (48 − 40) ÷ 2 = 4.\n4. adım (P{alt:Cl|5} gözlem): Fosfor beş klora bağlıdır; 5 bağ çifti, çevresinde 10 elektron vardır → önerme yine tutmaz (genişlemiş oktet).\n5. adım (Düzeltme): “Merkez atomu C, N, O veya F olan ve toplam değerlik elektronu çift olan moleküllerde atomlar oktete ulaşır ve bağ çifti sayısı (G − D) ÷ 2 ile bulunur. Be ve B eksik oktet, 3. periyot ve sonrasındaki merkez atomlar genişlemiş oktet oluşturabilir.”\nSonuç: Önerme yanlış değil, eksiktir; kapsamı sınırlandırılarak geçerli hâle getirilir.",
+      "ipucu": "Önermenin tahmini ile gözlenen bağ sayısını ayrı ayrı yaz; uyuşmazlığın hangi atom türlerinde ortaya çıktığına bak."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki moleküllerin hangisinde merkez atom üzerinde iki ortaklanmamış elektron çifti bulunur?",
+      "secenekler": [
+        "C{alt:H|4}",
+        "N{alt:H|3}",
+        "{alt:H|2}O",
+        "C{alt:O|2}"
+      ],
+      "dogru": 2,
+      "aciklama": "Sudaki oksijen 2 bağ çifti ve 2 ortaklanmamış çift taşır (2 + 2 = 4). C{alt:H|4}'te karbonda 0, N{alt:H|3}'te azotta 1 ortaklanmamış çift vardır. C{alt:O|2}'de merkez atom karbonda ortaklanmamış çift yoktur; çiftler oksijenlerdedir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Karbon dioksit (C{alt:O|2}) molekülünün Lewis yapısında kullanılan toplam değerlik elektronu sayısı kaçtır? (C: 14. grup, O: 16. grup)",
+      "secenekler": [
+        "12",
+        "16",
+        "22",
+        "24"
+      ],
+      "dogru": 1,
+      "aciklama": "D = 4 + 2 × 6 = 16'dır. 22, atomların toplam elektron sayısıdır (6 + 2 × 8); Lewis yapısında yalnızca değerlik elektronları kullanılır. 24 ise gereken elektron sayısıdır (G)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "HCN molekülünde karbon ile azot atomları arasında hangi tür bağ bulunur?",
+      "secenekler": [
+        "Tekli kovalent bağ",
+        "İkili kovalent bağ",
+        "Üçlü kovalent bağ",
+        "İyonik bağ"
+      ],
+      "dogru": 2,
+      "aciklama": "Bağ çifti sayısı (18 − 10) ÷ 2 = 4'tür. H–C bağı tekli olduğundan kalan 3 bağ çifti karbon ile azot arasındadır: H–C≡N. İki ametal arasında elektron ortaklaşması olduğu için bağ iyonik değildir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki moleküllerin hangisinde merkez atom oktet kuralına uymaz?",
+      "secenekler": [
+        "C{alt:Cl|4}",
+        "B{alt:F|3}",
+        "N{alt:H|3}",
+        "O{alt:F|2}"
+      ],
+      "dogru": 1,
+      "aciklama": "B{alt:F|3}'te bor üç tekli bağ yapar ve çevresinde yalnızca 6 elektron bulunur (eksik oktet). C{alt:Cl|4}'te karbon, N{alt:H|3}'te azot ve O{alt:F|2}'de oksijen 8 elektronla çevrilidir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Lewis simgesinde bir atomun yalnızca değerlik elektronları gösterilir.",
+          "dogru": true,
+          "aciklama": "İç katman elektronları bağa katılmadığı için gösterilmez; örneğin oksijenin Lewis simgesinde 6 nokta bulunur."
+        },
+        {
+          "metin": "Su molekülünde oksijen atomu üzerinde bir ortaklanmamış elektron çifti bulunur.",
+          "dogru": false,
+          "aciklama": "Oksijen suda 2 bağ çifti ve 2 ortaklanmamış çift taşır; bir ortaklanmamış çift taşıyan atom amonyaktaki azottur."
+        },
+        {
+          "metin": "HCN molekülünde karbon ile azot arasında üçlü bağ vardır.",
+          "dogru": true,
+          "aciklama": "Yapı H–C≡N şeklindedir; azotta bir ortaklanmamış çift kalır."
+        },
+        {
+          "metin": "Hidrojen atomu, bir molekülde merkez atom olarak iki bağ yapabilir.",
+          "dogru": false,
+          "aciklama": "Hidrojenin tek değerlik elektronu vardır; yalnızca bir bağ yapıp dublete ulaşır ve her zaman uçtadır."
+        },
+        {
+          "metin": "P{alt:Cl|5} molekülünde fosfor atomunun çevresinde 10 elektron bulunduğu için bu molekül oktet kuralına uymaz.",
+          "dogru": true,
+          "aciklama": "Fosfor beş bağ çifti taşır; 3. periyot atomlarında görülen genişlemiş oktete bir örnektir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Değerlik elektronu",
+          "Atomun en dış katmanındaki, bağ oluşumuna katılan elektronlar"
+        ],
+        [
+          "Bağlayıcı elektron çifti",
+          "İki atom arasında ortaklaşa kullanılan elektron çifti"
+        ],
+        [
+          "Ortaklanmamış elektron çifti",
+          "Yalnızca bir atoma ait olup bağa katılmayan elektron çifti"
+        ],
+        [
+          "Oktet kuralı",
+          "Atomların değerlik katmanındaki elektron sayısını sekize tamamlama eğilimi"
+        ],
+        [
+          "Eksik oktet",
+          "Be ve B gibi merkez atomların sekizden az elektronla molekül oluşturması"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Lewis nokta yapısında bir atomun ___ elektronları sembolün çevresine nokta olarak yazılır.",
+          "cevap": "değerlik"
+        },
+        {
+          "metin": "Su molekülünde oksijen atomu üzerinde iki ___ elektron çifti bulunur.",
+          "cevap": "ortaklanmamış"
+        },
+        {
+          "metin": "Hidrojen atomu bir bağ yaptığında iki elektronla ___ düzenine ulaşır.",
+          "cevap": "dublet"
+        },
+        {
+          "metin": "Bir molekülde diğer atomların bağlandığı atoma ___ atom denir.",
+          "cevap": "merkez"
+        },
+        {
+          "metin": "Karbon dioksit molekülünde karbon ile her oksijen atomu arasında ___ bağ bulunur.",
+          "cevap": "ikili"
+        }
+      ],
+      "kelimeler": [
+        "değerlik",
+        "ortaklanmamış",
+        "dublet",
+        "merkez",
+        "ikili"
+      ],
+      "fazla": [
+        "üçlü",
+        "iyonik"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Hidrazin ({alt:N|2}{alt:H|4}) roket yakıtı olarak kullanılan, iki azot atomunun birbirine bağlı olduğu ve her azota iki hidrojenin bağlandığı bir moleküldür. (a) Toplam değerlik elektronunu, bağ çifti ve ortaklanmamış çift sayılarını hesaplayınız. (b) Lewis yapısını oluşturup her atomun oktet veya dublet durumunu kontrol ediniz. (c) Hidrazindeki azot atomlarını N{alt:H|3}'teki azot ve {alt:N|2} molekülündeki azotlarla örüntü ve bağ türü bakımından karşılaştırınız.",
+      "ipuclari": [
+        "1. adım: D = 2 × 5 + 4 × 1, G = 2 × 8 + 4 × 2 hesapla; bağ çifti = (G − D) ÷ 2 ve ortaklanmamış çift = (D − 2 × bağ çifti) ÷ 2 bağıntılarını kullan.",
+        "2. adım: 6 atom için gereken en az bağ sayısını (n − 1) bulup çoklu bağ olup olmadığına karar ver; sonra N–N bağını ve dört N–H bağını çiz, kalan çiftleri yerleştir.",
+        "3. adım: Her azotun bağ çifti ve ortaklanmamış çift sayısını “azot: 3 bağ + 1 çift” örüntüsüyle karşılaştır; azotlar arasındaki bağı {alt:N|2}'deki bağla kıyasla."
+      ],
+      "cevap": "(a) D = 2 × 5 + 4 × 1 = 14; G = 2 × 8 + 4 × 2 = 24. Bağ çifti = {kesir:24 − 14|2} = 5. Ortaklanmamış çift = {kesir:14 − 2 × 5|2} = 2.\n(b) 6 atom için en az 5 bağ gerekir; 5 − 5 = 0 ek çift → molekülde yalnızca tekli bağlar vardır. Yapı: Azotlar birbirine N–N tekli bağıyla, her azot iki hidrojene N–H tekli bağlarıyla bağlıdır ({alt:H|2}N–N{alt:H|2}). 2 ortaklanmamış çift, her azota bir tane olacak şekilde yerleşir. Kontrol: Her azot 3 bağ çifti (6 e⁻) + 1 ortaklanmamış çift (2 e⁻) = 8 e⁻ → oktet. Her hidrojen 2 e⁻ → dublet. Kullanılan elektron 2 × (5 + 2) = 14 = D ✓.\n(c) Hidrazindeki her azot, N{alt:H|3}'teki azot gibi 3 bağ ve 1 ortaklanmamış çift taşır; fark, bağlardan birinin hidrojen yerine diğer azota yapılmasıdır. Bu, “azot: 3 bağ + 1 çift” örüntüsünün hem N{alt:H|3}'te hem {alt:N|2}{alt:H|4}'te geçerli olduğunu gösterir. {alt:N|2} molekülünde ise (D = 10, G = 16, bağ çifti 3) iki azot arasında üçlü bağ ve her azotta 1 ortaklanmamış çift vardır. Yani üç molekülde de azot 3 bağ çifti + 1 ortaklanmamış çift düzenini korur; ancak azotlar arası bağ hidrazinde tekli, {alt:N|2}'de üçlüdür. Bağ katlılığı arttıkça bağ kısalıp sağlamlaştığından {alt:N|2}'deki N≡N bağının hidrazindeki N–N bağından daha kısa ve çok daha sağlam olması beklenir."
+    }
+  ]
+}

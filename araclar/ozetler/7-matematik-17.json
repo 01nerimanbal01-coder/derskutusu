@@ -1,0 +1,587 @@
+{
+  "ad": "7-matematik-17",
+  "sinif": 7,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 17,
+  "tarih": "11-15 Ocak 2027",
+  "yayin_tarihi": "2027-01-11",
+  "unite": "İstatistiksel Araştırma Süreci; Dönüşüm",
+  "konu": "Kategorik ve Nicel (Sürekli) Veri Dağılımları: İddiaları Bütüncül Değerlendirme ile Kapanış; Yansıma Dönüşümü: Varsayım, Görüntü Oluşturma, Doğrulama, Şekil-Görüntü İlişkileri ve Simetri Doğrusu",
+  "ciktilar": [
+    "Başkaları tarafından oluşturulan kategorik veya nicel (sürekli) veriye dayalı istatistiksel sonuç ve yorumlara yönelik istatistiksel temellendirme yapar, hataları ya da yanlılıkları tespit eder ve bu sonuçları gerekçeleriyle kabul eder ya da çürütür. Bunun için bir haberdeki iddiaları hesap, örneklem, zaman ve neden-sonuç açısından denetler (MAT.7.6.2.a, b, c).",
+    "Şekillerin yansıma dönüşümü altındaki görüntülerini oluşturmaya dair varsayımlarda bulunur. Kareli zeminde dikey, yatay ve eğik yansıma doğrularına göre şekillerin görüntülerini oluşturur (MAT.7.3.1.a, b).",
+    "Varsayımlarını doğrulamak için şekil ile görüntüsünün kenar uzunluklarını, açılarını, alanlarını, doğruya uzaklıklarını ve köşe sırasının dönüş yönünü karşılaştırır. Bir şekil ile görüntüsü arasındaki ilişkilere dair önermeler sunar (MAT.7.3.1.c, ç).",
+    "Bir nokta ile görüntüsünü birleştiren doğru parçasının yansıma doğrusuna dik olduğunu ve bu doğru tarafından ortalandığını söyleyen önermeyi kullanır. Bu önermenin, verilen iki eş şeklin bir doğruya göre simetrik olup olmadığını belirlemeye ve simetrik bir şeklin simetri doğrusunu bulmaya katkısını değerlendirir (MAT.7.3.1.d)."
+  ],
+  "giris": "Bu hafta iki durağımız var. İlk durakta üç haftadır geliştirdiğimiz {koyu:veri dedektifliği} becerilerini bir okul gazetesi haberinde birlikte kullanarak istatistik konusunu kapatıyoruz. İkinci durakta yeni bir ünite başlıyor: {koyu:Dönüşüm}. Aynadaki görüntümüzden göl yüzeyindeki ağaçlara kadar her yerde karşımıza çıkan {koyu:yansıma dönüşümünü} keşfedeceğiz. Önce tahminlerde bulunacak, sonra kareli zeminde görüntüler çizip bu tahminleri ölçerek sınayacağız. En sonunda iki şeklin birbirinin ayna görüntüsü olup olmadığını anlamamızı sağlayan {koyu:önermelere} ulaşacağız.",
+  "ozet": [
+    "{koyu:İddia Denetimi:} Bir haberdeki istatistiksel iddialar hesap, örneklem, zaman ve neden-sonuç açısından ayrı ayrı denetlenir. Doğru bir hesap, yanlı bir örneklemi ya da abartılı bir sonucu geçerli kılmaz.",
+    "{koyu:Yansıma Dönüşümü:} Bir şeklin bir doğruya göre ayna görüntüsünün oluşturulmasıdır. A noktasının görüntüsü A′ ile gösterilir; A ile A′ yansıma doğrusuna eşit uzaklıkta ve doğrunun karşı taraflarındadır.",
+    "{koyu:Görüntü Oluşturma:} Her köşenin doğruya uzaklığı, doğruya dik yönde kare sayılarak bulunur. Doğrunun öbür tarafında aynı sayıda kare sayılıp görüntü köşeleri işaretlenir ve köşeler aynı sırayla birleştirilir.",
+    "{koyu:Korunan ve Değişen:} Yansımada kenar uzunlukları, açı ölçüleri, alan ve doğruya uzaklıklar korunur; görüntü şekle eştir. Köşelerin dolaşılma yönü (saat yönü ya da tersi) ise ters döner.",
+    "{koyu:Temel Önerme:} Bir nokta ile görüntüsünü birleştiren doğru parçası yansıma doğrusuna diktir ve doğru bu parçayı tam ortadan böler. Doğrunun üzerindeki noktalar yer değiştirmez.",
+    "{koyu:Simetri Testi:} İki eş şekilde karşılık gelen nokta çiftlerinin orta noktaları aynı doğru üzerindeyse ve bu doğru birleştiren parçalara dikse şekiller o doğruya göre simetriktir. Eş olmak tek başına yetmez."
+  ],
+  "bolumler": [
+    {
+      "baslik": "İstatistik Konusunu Kapatırken: Bir Haberdeki Kategorik ve Sürekli Veri İddialarını Değerlendirme",
+      "metin": [
+        "Üç haftadır başkalarının istatistiksel sonuçlarını tartışıyoruz. Kapanışta öğrendiğimiz her şeyi tek ve gerçekçi bir metin üzerinde birlikte kullanacağız. Okul gazetesinde şu haber yayımlanmış olsun: 'Öğrencilerimizin %60'ı kahvaltı yapmadan okula geliyor! Kahvaltı yapmayanların yolculuk süresi daha uzun; demek ki uzun yolculuk kahvaltıyı engelliyor. Okulumuzda kahvaltı alışkanlığı yok denecek kadar az.' Haberin altındaki notta verilerin bir sabah saat 07.40'ta servis kapısında toplandığı yazıyor. Servisle gelen 50 öğrenciye 'Bu sabah kahvaltı yaptın mı?' ve 'Yolculuğun kaç dakika sürdü?' soruları sorulmuş. Birinci soru {koyu:kategorik} (evet/hayır), ikinci soru {koyu:nicel (sürekli)} veri üretir. 30 öğrenci 'hayır', 20 öğrenci 'evet' demiştir. Kahvaltı yapmayanların yolculuk sürelerinin ortancası 35 dakika, yapanlarınki 25 dakika bulunmuştur.",
+        "Önce {koyu:temellendirme} yapalım. Hesap doğrudur: {kesir:30|50} = 0,60, yani %60 eder. Kategorik veri için yüzde, sürekli veri için ortanca kullanılmış olması da uygundur. Sorun, verinin {koyu:kimden} toplandığındadır. Servisle gelen öğrenciler genellikle daha erken kalkar. Yürüyerek ya da aileleriyle gelen öğrencilere hiç sorulmamıştır. Bu yüzden örneklem okulun tamamını temsil etmez ve %60 değeri bütün okula genellenemez. Ayrıca veriler yalnız {koyu:bir sabah} toplanmıştır. 'Alışkanlık' gibi süreklilik bildiren bir kelime için farklı günlerde tekrarlanan ölçümler gerekir. Kabul edilebilecek ifade şudur: 'O sabah servisle gelen 50 öğrencinin %60'ı kahvaltı yapmamıştır.'",
+        "İkinci iddia bir {koyu:neden-sonuç} iddiasıdır. Verilerde kahvaltı yapmayanların yolculuğunun daha uzun sürdüğü görülüyor. Bu durum iki değişken arasında bir {koyu:ilişki} olabileceğini düşündürür, ama birinin diğerine neden olduğunu kanıtlamaz. Uzun yolculuk yapan öğrenciler daha erken kalkıyor, bu yüzden iştahsız olabilir ya da evde kahvaltı hazır olmayabilir. Başka etkenleri ayırt etmeden 'engelliyor' demek için bu veriyle {koyu:karar verilemez}. Üçüncü iddia ise doğrudan {koyu:çürütülür}. Örneklemdeki öğrencilerin %40'ı kahvaltı yapmıştır ve bu oran 'yok denecek kadar az' sayılamaz. Haberin temkinli hâli şöyle yazılabilir: 'Servisle gelen 50 öğrencinin %60'ı o sabah kahvaltı yapmamıştır. Bu öğrencilerin yolculuk süreleri daha uzundur, ancak nedenini anlamak için yeni veri gerekir.'"
+      ],
+      "tablo": {
+        "basliklar": [
+          "Kontrol Adımı",
+          "Haberde Gördüğümüz",
+          "Değerlendirme"
+        ],
+        "satirlar": [
+          [
+            "Veri türü ve ölçü",
+            "Kahvaltı (kategorik) için yüzde, yolculuk süresi (sürekli) için ortanca",
+            "Uygun"
+          ],
+          [
+            "Hesap",
+            "30 ÷ 50 = 0,60",
+            "Doğru"
+          ],
+          [
+            "Örneklem",
+            "Yalnız servisle gelen 50 öğrenci",
+            "Yanlı; sonuç okulun tamamına genellenemez"
+          ],
+          [
+            "Zaman",
+            "Tek bir sabah",
+            "'Alışkanlık' iddiası için birden çok gün gerekir"
+          ],
+          [
+            "Neden-sonuç",
+            "Kahvaltı yapmayanların yolculuk süresi daha uzun",
+            "İlişki olabilir; neden kanıtı yok, karar verilemez"
+          ],
+          [
+            "Sonucun dili",
+            "'Yok denecek kadar az'",
+            "%40 kahvaltı yapmış; abartı, çürütülür"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "İlişki ile Neden-Sonuç",
+          "metin": "İki değişkenin birlikte artması ya da biri artarken diğerinin azalması bir {koyu:ilişki} gösterir. Birinin diğerine yol açtığını söylemek ise {koyu:neden-sonuç} iddiasıdır ve başka olası etkenleri dışarıda bırakan ayrı bir araştırma gerektirir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Kapanış Kontrol Listesi",
+          "metin": "Bir istatistiksel haberi okurken beş soru sor: Ne ölçülmüş? Kimden toplanmış? Ne zaman, kaç kez toplanmış? Hesap doğru mu? Sonuç cümlesi verinin söylediğinden fazlasını mı söylüyor?"
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' fill='#f8fafc' rx='12'/><text x='380' y='28' text-anchor='middle' font-size='15' font-weight='bold' fill='#1e293b'>OKUL GAZETESİ HABERİ: ÜÇ İDDİA, ÜÇ KARAR</text><rect x='20' y='45' width='230' height='255' rx='10' fill='#eff6ff' stroke='#3b82f6'/><text x='135' y='68' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>VERİ NASIL TOPLANDI?</text><text x='32' y='94' font-size='11' fill='#334155'>Yer: servis kapısı, 07.40</text><text x='32' y='114' font-size='11' fill='#334155'>Kişi: servisle gelen 50 öğrenci</text><text x='32' y='134' font-size='11' fill='#334155'>Zaman: yalnız bir sabah</text><text x='32' y='164' font-size='11' font-weight='bold' fill='#1e3a8a'>Kategorik veri</text><text x='32' y='182' font-size='11' fill='#334155'>Kahvaltı yaptı: 20 kişi</text><text x='32' y='200' font-size='11' fill='#334155'>Kahvaltı yapmadı: 30 kişi</text><text x='32' y='230' font-size='11' font-weight='bold' fill='#1e3a8a'>Nicel (sürekli) veri</text><text x='32' y='248' font-size='11' fill='#334155'>Yolculuk süresi ortancası:</text><text x='32' y='266' font-size='11' fill='#334155'>yapmayan 35 dk, yapan 25 dk</text><rect x='270' y='50' width='240' height='70' rx='10' fill='#ffffff' stroke='#94a3b8'/><text x='390' y='78' text-anchor='middle' font-size='11' fill='#334155'>'Öğrencilerimizin %60'ı</text><text x='390' y='96' text-anchor='middle' font-size='11' fill='#334155'>kahvaltı yapmıyor.'</text><polygon points='515,78 530,85 515,92' fill='#64748b'/><rect x='535' y='50' width='205' height='70' rx='10' fill='#fef3c7' stroke='#d97706'/><text x='637' y='72' text-anchor='middle' font-size='11' font-weight='bold' fill='#92400e'>KAPSAM DARALTILMALI</text><text x='637' y='90' text-anchor='middle' font-size='10' fill='#334155'>Hesap doğru: 30 ÷ 50 = %60</text><text x='637' y='106' text-anchor='middle' font-size='10' fill='#334155'>Örneklem yanlı: yalnız servis</text><rect x='270' y='135' width='240' height='70' rx='10' fill='#ffffff' stroke='#94a3b8'/><text x='390' y='163' text-anchor='middle' font-size='11' fill='#334155'>'Uzun yolculuk kahvaltıyı</text><text x='390' y='181' text-anchor='middle' font-size='11' fill='#334155'>engelliyor.'</text><polygon points='515,163 530,170 515,177' fill='#64748b'/><rect x='535' y='135' width='205' height='70' rx='10' fill='#e0e7ff' stroke='#6366f1'/><text x='637' y='157' text-anchor='middle' font-size='11' font-weight='bold' fill='#3730a3'>KARAR VERİLEMEZ</text><text x='637' y='175' text-anchor='middle' font-size='10' fill='#334155'>İlişki olabilir ama</text><text x='637' y='191' text-anchor='middle' font-size='10' fill='#334155'>neden-sonuç kanıtı yok</text><rect x='270' y='220' width='240' height='70' rx='10' fill='#ffffff' stroke='#94a3b8'/><text x='390' y='248' text-anchor='middle' font-size='11' fill='#334155'>'Kahvaltı alışkanlığı yok</text><text x='390' y='266' text-anchor='middle' font-size='11' fill='#334155'>denecek kadar az.'</text><polygon points='515,248 530,255 515,262' fill='#64748b'/><rect x='535' y='220' width='205' height='70' rx='10' fill='#fee2e2' stroke='#dc2626'/><text x='637' y='242' text-anchor='middle' font-size='11' font-weight='bold' fill='#b91c1c'>ÇÜRÜTÜLÜR</text><text x='637' y='260' text-anchor='middle' font-size='10' fill='#334155'>%40 kahvaltı yapmış;</text><text x='637' y='276' text-anchor='middle' font-size='10' fill='#334155'>tek sabah alışkanlık göstermez</text></svg>"
+    },
+    {
+      "baslik": "Yansıma Dönüşümüne Giriş: Ayna, Yansıma Doğrusu ve İlk Varsayımlar",
+      "metin": [
+        "Yeni ünitemizin adı {koyu:Dönüşüm}. Matematikte dönüşüm, bir şeklin her noktasını belli bir kurala göre yeni bir konuma taşımaktır. Kurala göre taşınan şekle {koyu:görüntü} denir. İlk inceleyeceğimiz dönüşüm, düz bir aynanın yaptığı işi yapan {koyu:yansıma dönüşümüdür}. Durgun bir gölün yüzeyinde kıyıdaki ağaçların ters görüntüsü oluşur. Aynanın karşısında sağ elini kaldırdığında görüntün sol elini kaldırıyormuş gibi görünür. Ambulansların ön yüzündeki yazı da ters yazılır. Öndeki sürücü dikiz aynasından baktığında bu yazıyı düzgün okur. Bütün bu durumlarda bir şekil ile görüntüsü, ortadaki bir çizginin iki yanında birbirinin ayna görüntüsü olarak durur.",
+        "Geometride aynanın yerini bir doğru alır. Bu doğruya {koyu:yansıma doğrusu} (ya da simetri doğrusu) denir. Bir şeklin A, B, C köşelerinin görüntülerini A′, B′, C′ (A üssü, B üssü, C üssü) diye gösteririz. Basit bir deneyle başlayalım: Bir kâğıdı ortadan katla, aç ve katlama çizgisinin bir yanına sulu boya damlat. Kâğıdı yeniden katlayıp bastırdığında boya öbür yarıya geçer. Kâğıdı açınca iki lekenin katlama çizgisine göre birbirinin tam ayna görüntüsü olduğunu görürsün. Katlama çizgisi yansıma doğrusu, ikinci leke de birinci lekenin görüntüsüdür.",
+        "Matematikçiler yeni bir dönüşümü incelerken önce {koyu:varsayımda} bulunur. Varsayım, deneyimlerimize dayanan ama henüz sınanmamış bir tahmindir. Aynadan bildiklerimizle şu varsayımları kurabiliriz: Görüntü, şekille aynı boyda ve aynı biçimdedir. Aynaya 1 metre uzakta durursan görüntün aynanın 1 metre gerisinde görünür; yani her nokta ile görüntüsü doğruya {koyu:eşit uzaklıktadır}. Şeklin sağ yanı görüntüde sol yana geçer. Bazı öğrenciler de 'Görüntü, şeklin biraz sağa kaydırılmış hâlidir' diye düşünebilir. Bu varsayımların hangilerinin doğru olduğunu tahminle değil, kareli zeminde görüntü çizip ölçerek karar vereceğiz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Varsayım",
+          "Hangi Deneyimden Geliyor?",
+          "Nasıl Sınarız?"
+        ],
+        "satirlar": [
+          [
+            "Görüntü şekille aynı boyda ve biçimdedir.",
+            "Aynada boyumuz değişmez.",
+            "Kenar uzunluklarını, açıları ve alanı karşılaştırarak"
+          ],
+          [
+            "Nokta ile görüntüsü doğruya eşit uzaklıktadır.",
+            "Aynadan uzaklaştıkça görüntü de uzaklaşır.",
+            "Doğruya dik yönde kare sayarak"
+          ],
+          [
+            "Şeklin sağ yanı görüntüde sol yan olur.",
+            "Sağ el, aynada sol el gibi görünür.",
+            "Köşelerin dolaşılma yönünü karşılaştırarak"
+          ],
+          [
+            "Doğrunun üzerindeki nokta yer değiştirmez.",
+            "Aynaya dokunan parmak görüntüsüne değer.",
+            "Doğru üzerindeki bir noktanın görüntüsünü bularak"
+          ],
+          [
+            "Görüntü, şeklin sağa kaydırılmış hâlidir.",
+            "Görüntü 'yanda' duruyor gibi görünür.",
+            "Farklı köşelerin ne kadar yer değiştirdiğini sayarak"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Yansıma Dönüşümü",
+          "metin": "Bir şeklin her noktasını, verilen bir doğruya göre karşı tarafta ve doğruya {koyu:eşit uzaklıkta} bulunan noktaya taşıyan dönüşümdür. Bu doğruya {koyu:yansıma doğrusu}, oluşan yeni şekle {koyu:görüntü} denir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Ambulansın Ters Yazısı",
+          "metin": "Ambulansın ön yüzündeki yazı yansımış hâlde yazılır. Öndeki aracın sürücüsü bu yazıyı dikiz aynasında gördüğünde ayna yazıyı bir kez daha yansıtır ve yazı düzgün okunur. Yani {koyu:iki kez yansıma} yazıyı ilk hâline döndürür."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' fill='#f8fafc' rx='12'/><text x='380' y='26' text-anchor='middle' font-size='15' font-weight='bold' fill='#1e293b'>AYNADAN GEOMETRİYE: YANSIMA DOĞRUSU VE VARSAYIMLAR</text><line x1='260' y1='45' x2='260' y2='275' stroke='#dc2626' stroke-width='2.5' stroke-dasharray='8,5'/><text x='260' y='290' text-anchor='middle' font-size='11' font-weight='bold' fill='#b91c1c'>yansıma doğrusu (ayna)</text><polygon points='200,70 130,230 225,200' fill='#bfdbfe' stroke='#1d4ed8' stroke-width='2'/><polygon points='320,70 390,230 295,200' fill='#fbcfe8' stroke='#be185d' stroke-width='2'/><line x1='200' y1='70' x2='320' y2='70' stroke='#64748b' stroke-dasharray='4,3'/><line x1='225' y1='200' x2='295' y2='200' stroke='#64748b' stroke-dasharray='4,3'/><polyline points='260,82 272,82 272,70' fill='none' stroke='#334155'/><text x='192' y='64' font-size='13' font-weight='bold' fill='#1d4ed8'>A</text><text x='116' y='244' font-size='13' font-weight='bold' fill='#1d4ed8'>B</text><text x='222' y='218' font-size='13' font-weight='bold' fill='#1d4ed8'>C</text><text x='318' y='64' font-size='13' font-weight='bold' fill='#be185d'>A′</text><text x='392' y='244' font-size='13' font-weight='bold' fill='#be185d'>B′</text><text x='282' y='218' font-size='13' font-weight='bold' fill='#be185d'>C′</text><text x='230' y='100' text-anchor='middle' font-size='10' fill='#334155'>2 birim</text><text x='290' y='100' text-anchor='middle' font-size='10' fill='#334155'>2 birim</text><text x='160' y='160' text-anchor='middle' font-size='11' fill='#1e3a8a'>Şekil</text><text x='360' y='160' text-anchor='middle' font-size='11' fill='#9d174d'>Görüntü</text><rect x='430' y='45' width='310' height='235' rx='10' fill='#ffffff' stroke='#94a3b8'/><text x='585' y='68' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>VARSAYIMLAR VE SINAMA SONUCU</text><text x='442' y='96' font-size='10.5' fill='#334155'>1) Görüntü aynı boy ve biçimdedir.</text><text x='728' y='96' text-anchor='end' font-size='10.5' font-weight='bold' fill='#15803d'>Doğru</text><text x='442' y='126' font-size='10.5' fill='#334155'>2) Nokta ve görüntüsü doğruya eşit uzak.</text><text x='728' y='126' text-anchor='end' font-size='10.5' font-weight='bold' fill='#15803d'>Doğru</text><text x='442' y='156' font-size='10.5' fill='#334155'>3) Sağ yan görüntüde sol yan olur.</text><text x='728' y='156' text-anchor='end' font-size='10.5' font-weight='bold' fill='#15803d'>Doğru</text><text x='442' y='186' font-size='10.5' fill='#334155'>4) Doğru üzerindeki nokta yerinde kalır.</text><text x='728' y='186' text-anchor='end' font-size='10.5' font-weight='bold' fill='#15803d'>Doğru</text><text x='442' y='216' font-size='10.5' fill='#334155'>5) Görüntü, şeklin sağa kaymış hâlidir.</text><text x='728' y='216' text-anchor='end' font-size='10.5' font-weight='bold' fill='#b91c1c'>Yanlış</text><text x='585' y='252' text-anchor='middle' font-size='10' fill='#475569'>Sonuçlar ölçme ve sayma ile bulunur;</text><text x='585' y='268' text-anchor='middle' font-size='10' fill='#475569'>tahmin tek başına yeterli değildir.</text></svg>"
+    },
+    {
+      "baslik": "Kareli Zeminde Yansıma Görüntüsü Oluşturma: Dikey, Yatay ve Eğik Doğrular",
+      "metin": [
+        "Kareli zeminde bir noktanın yerini {koyu:(sağa sayım, yukarı sayım)} biçiminde yazacağız. Örneğin (1, 3), zeminin sol alt köşesinden 1 kare sağa ve 3 kare yukarı gidilerek ulaşılan noktadır. ABCD dörtgeninin köşeleri A(1, 1), B(3, 1), C(4, 4) ve D(1, 3) olsun. Yansıma doğrusu d, sağa sayımı 5 olan noktalardan geçen {koyu:dikey} bir doğrudur. Görüntüyü oluşturmak için önce her köşenin doğruya uzaklığını {koyu:doğruya dik yönde}, yani yatay olarak sayarız: A ve D 4 kare, B 2 kare, C 1 kare uzaktadır. Sonra doğrunun öbür tarafında aynı sayıda kare sayıp görüntüleri işaretleriz: A′(9, 1), B′(7, 1), C′(6, 4) ve D′(9, 3). Son olarak köşeleri {koyu:aynı sırayla} birleştiririz: A′ ile B′, B′ ile C′, C′ ile D′, D′ ile A′.",
+        "Bu örnekte bir düzen göze çarpar: Dikey doğruya göre yansımada noktalar yalnız yatay yönde hareket eder; bu yüzden {koyu:yukarı sayım değişmez}. {koyu:Yatay} bir yansıma doğrusunda ise tersi olur. Doğru, yukarı sayımı 3 olan noktalardan geçiyorsa (2, 5) noktası doğrunun 2 kare yukarısındadır. Görüntüsü doğrunun 2 kare aşağısında, yani (2, 1) noktasında oluşur ve {koyu:sağa sayım değişmez}. Bu aşamada sık yapılan iki hata vardır. Birincisi, uzaklığı yansıma doğrusundan değil zeminin kenarından saymaktır. İkincisi, görüntüyü doğrunun karşı tarafına değil aynı tarafına koymaktır. Her köşe için 'Doğruya kaç kare uzak? Karşıda da o kadar uzak mı?' sorusunu sormak bu hataları önler.",
+        "Yansıma doğrusu kareleri köşeden köşeye kesen {koyu:eğik} bir doğru da olabilir. Doğru (0, 0), (1, 1), (2, 2) noktalarından geçsin. Bu durumda doğruya dik yön kare köşegenleri doğrultusundadır. (5, 1) noktasından başlayıp her adımda 1 kare sola ve 1 kare yukarı gidelim: (4, 2) ve ardından (3, 3) noktasına varırız. (3, 3) doğrunun üzerindedir; demek ki nokta doğruya 2 köşegen adım uzaktır. Aynı yönde 2 adım daha atınca (2, 4) ve (1, 5) noktalarına ulaşırız. (5, 1) noktasının görüntüsü (1, 5) noktasıdır. Bu doğruya göre yansımada iki sayımın {koyu:yer değiştirdiği} görülür. Şeklin bir parçası doğrunun bir yanında, bir parçası öbür yanında da olabilir. Bu durumda yine her köşe ayrı ayrı yansıtılır; doğrunun üzerine düşen noktalar ise olduğu yerde kalır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yansıma Doğrusu",
+          "Uzaklık Nasıl Sayılır?",
+          "Değişmeyen Bilgi",
+          "Örnek"
+        ],
+        "satirlar": [
+          [
+            "Dikey (sağa sayımı 5)",
+            "Yatay olarak, sağa ya da sola",
+            "Yukarı sayım",
+            "A(1, 1) → A′(9, 1)"
+          ],
+          [
+            "Yatay (yukarı sayımı 3)",
+            "Dikey olarak, yukarı ya da aşağı",
+            "Sağa sayım",
+            "(2, 5) → (2, 1)"
+          ],
+          [
+            "Eğik ((0, 0) ve (1, 1)'den geçen)",
+            "Kare köşegenleri boyunca",
+            "Sayılar yer değiştirir",
+            "(5, 1) → (1, 5)"
+          ],
+          [
+            "Herhangi bir doğru",
+            "Nokta doğrunun üzerindeyse uzaklık 0",
+            "Noktanın kendisi",
+            "Dikey d için (5, 3) → (5, 3)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Görüntü Oluşturmanın Dört Adımı",
+          "metin": "1) Her köşenin yansıma doğrusuna uzaklığını {koyu:doğruya dik yönde} say. 2) Doğrunun karşı tarafında aynı sayıda kare say ve noktayı işaretle. 3) Görüntü köşelerini A′, B′, C′ diye adlandır. 4) Köşeleri şekildeki {koyu:aynı sırayla} birleştir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Yalnız Köşeleri Taşı",
+          "metin": "Çokgenlerde bütün noktaları tek tek yansıtmana gerek yoktur. Köşelerin görüntülerini bulup aynı sırayla birleştirmek yeter. Ama birleştirme sırasını karıştırırsan, örneğin A′ ile C′'yi birleştirirsen, ortaya şeklin görüntüsü değil bambaşka bir şekil çıkar."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' fill='#f8fafc' rx='12'/><text x='380' y='26' text-anchor='middle' font-size='15' font-weight='bold' fill='#1e293b'>DİKEY d DOĞRUSUNA GÖRE YANSIMA: ABCD VE A′B′C′D′</text><g stroke='#e2e8f0'><line x1='40' y1='50' x2='40' y2='260'/><line x1='70' y1='50' x2='70' y2='260'/><line x1='100' y1='50' x2='100' y2='260'/><line x1='130' y1='50' x2='130' y2='260'/><line x1='160' y1='50' x2='160' y2='260'/><line x1='190' y1='50' x2='190' y2='260'/><line x1='220' y1='50' x2='220' y2='260'/><line x1='250' y1='50' x2='250' y2='260'/><line x1='280' y1='50' x2='280' y2='260'/><line x1='310' y1='50' x2='310' y2='260'/><line x1='340' y1='50' x2='340' y2='260'/><line x1='40' y1='50' x2='340' y2='50'/><line x1='40' y1='80' x2='340' y2='80'/><line x1='40' y1='110' x2='340' y2='110'/><line x1='40' y1='140' x2='340' y2='140'/><line x1='40' y1='170' x2='340' y2='170'/><line x1='40' y1='200' x2='340' y2='200'/><line x1='40' y1='230' x2='340' y2='230'/><line x1='40' y1='260' x2='340' y2='260'/></g><line x1='190' y1='44' x2='190' y2='266' stroke='#dc2626' stroke-width='2.5'/><text x='198' y='60' font-size='13' font-weight='bold' fill='#b91c1c'>d</text><polygon points='70,230 130,230 160,140 70,170' fill='#bfdbfe' fill-opacity='0.8' stroke='#1d4ed8' stroke-width='2'/><polygon points='310,230 250,230 220,140 310,170' fill='#fbcfe8' fill-opacity='0.8' stroke='#be185d' stroke-width='2'/><line x1='160' y1='140' x2='220' y2='140' stroke='#475569' stroke-dasharray='4,3'/><text x='175' y='134' text-anchor='middle' font-size='10' fill='#334155'>1</text><text x='205' y='134' text-anchor='middle' font-size='10' fill='#334155'>1</text><text x='58' y='246' font-size='12' font-weight='bold' fill='#1d4ed8'>A</text><text x='132' y='248' font-size='12' font-weight='bold' fill='#1d4ed8'>B</text><text x='150' y='132' font-size='12' font-weight='bold' fill='#1d4ed8'>C</text><text x='54' y='168' font-size='12' font-weight='bold' fill='#1d4ed8'>D</text><text x='314' y='246' font-size='12' font-weight='bold' fill='#be185d'>A′</text><text x='236' y='248' font-size='12' font-weight='bold' fill='#be185d'>B′</text><text x='222' y='132' font-size='12' font-weight='bold' fill='#be185d'>C′</text><text x='314' y='166' font-size='12' font-weight='bold' fill='#be185d'>D′</text><text x='40' y='276' text-anchor='middle' font-size='10' fill='#334155'>0</text><text x='100' y='276' text-anchor='middle' font-size='10' fill='#334155'>2</text><text x='160' y='276' text-anchor='middle' font-size='10' fill='#334155'>4</text><text x='190' y='276' text-anchor='middle' font-size='10' font-weight='bold' fill='#b91c1c'>5</text><text x='220' y='276' text-anchor='middle' font-size='10' fill='#334155'>6</text><text x='280' y='276' text-anchor='middle' font-size='10' fill='#334155'>8</text><text x='340' y='276' text-anchor='middle' font-size='10' fill='#334155'>10</text><text x='190' y='292' text-anchor='middle' font-size='10' fill='#475569'>sağa sayım</text><rect x='365' y='45' width='380' height='240' rx='10' fill='#ffffff' stroke='#94a3b8'/><text x='555' y='68' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>ADIM ADIM GÖRÜNTÜ OLUŞTURMA</text><text x='378' y='94' font-size='11' fill='#334155'>1) Doğruya uzaklığı yatay say:</text><text x='392' y='112' font-size='11' fill='#1d4ed8'>A: 4 kare, B: 2 kare, C: 1 kare, D: 4 kare</text><text x='378' y='136' font-size='11' fill='#334155'>2) Karşı tarafta aynı sayıda kare say:</text><text x='392' y='154' font-size='11' fill='#be185d'>A′(9, 1), B′(7, 1), C′(6, 4), D′(9, 3)</text><text x='378' y='178' font-size='11' fill='#334155'>3) Köşeleri aynı sırayla birleştir:</text><text x='392' y='196' font-size='11' fill='#334155'>A′B′, B′C′, C′D′, D′A′</text><text x='378' y='224' font-size='11' font-weight='bold' fill='#15803d'>Kontrol: Yukarı sayımlar hiç değişmedi.</text><text x='378' y='244' font-size='11' fill='#334155'>Dikey doğruda noktalar yalnız yatay</text><text x='378' y='262' font-size='11' fill='#334155'>yönde, doğrunun karşısına geçer.</text></svg>"
+    },
+    {
+      "baslik": "Varsayımları Doğrulama: Şekil ile Görüntüsünü Ölçerek Karşılaştırma",
+      "metin": [
+        "Bir önceki bölümde çizdiğimiz ABCD dörtgeni ile görüntüsü A′B′C′D′'yi karşılaştırarak varsayımlarımızı sınayalım. Önce {koyu:kenar uzunluklarına} bakalım. AB kenarı 2 birim, görüntüsü A′B′ de 2 birimdir. AD kenarı 2 birim, A′D′ de 2 birimdir. BC kenarı eğiktir: B'den C'ye 1 kare sağa ve 3 kare yukarı gidilir. B′C′ kenarında ise 1 kare sola ve 3 kare yukarı gidilir. Her iki kenar da 1 × 3'lük bir dikdörtgenin köşegenidir; bu yüzden uzunlukları eşittir. {koyu:Açılarda} da durum aynıdır: A köşesindeki açı dik açıdır (90°), A′ köşesindeki açı da 90°'dir. Bir açıölçerle diğer köşeleri ölçtüğümüzde karşılık gelen açıların eşit olduğunu görürüz.",
+        "{koyu:Alanı} bulmak için şekli bir dikdörtgenin içine alalım. ABCD, sağa sayım 1 ile 4, yukarı sayım 1 ile 4 arasındaki 3 × 3 = 9 birim karelik karenin içindedir. Şeklin dışında kalan iki dik üçgen vardır. Birincisi B, (4, 1) ve C köşelerinin oluşturduğu, dik kenarları 1 ve 3 birim olan üçgendir; alanı {kesir:1 × 3|2} = 1,5 birim karedir. İkincisi C, (1, 4) ve D köşelerinin oluşturduğu üçgendir; dik kenarları 3 ve 1 birim olduğundan alanı yine 1,5 birim karedir. ABCD'nin alanı 9 − 1,5 − 1,5 = {koyu:6 birim kare} bulunur. Aynı hesap görüntü için de 6 birim kare verir. Böylece 'Görüntü aynı boyda ve biçimdedir' varsayımı bu örnekte doğrulanır: Şekil ile görüntüsü {koyu:eştir}. Görüntüyü aydınger kâğıdına çizip kesersek kâğıdı ters yüz ederek ABCD'nin üzerine tam olarak oturtabiliriz.",
+        "Şimdi {koyu:yönü} inceleyelim. ABCD'de A'dan B'ye, oradan C'ye ve D'ye giderken saat yönünün tersine döneriz. Görüntüde A′'dan B′'ye, C′'ye ve D′'ye giderken ise saat yönünde döneriz. Kesilmiş görüntüyü kâğıt üzerinde kaydırarak ya da döndürerek ABCD'ye çakıştıramayız; mutlaka ters çevirmemiz gerekir. Bu sonuç 'sağ yan sol yan olur' varsayımını destekler. 'Görüntü, şeklin sağa kaydırılmış hâlidir' varsayımı ise {koyu:çürütülür}. A noktası (1, 1)'den (9, 1)'e giderek 8 kare, C noktası (4, 4)'ten (6, 4)'e giderek yalnız 2 kare yer değiştirmiştir. Kaydırmada bütün noktalar aynı miktarda hareket ederdi. Son olarak doğruya uzaklıklar korunmuştur: A da A′ de doğruya 4 kare, C de C′ de 1 kare uzaktadır. Unutmayalım: Tek bir şekilde doğrulanan varsayımı farklı şekillerle de denemeliyiz. Tek bir karşı örnek ise bir varsayımı çürütmeye yeter."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Şekil ABCD",
+          "Görüntü A′B′C′D′",
+          "Varsayım Kararı"
+        ],
+        "satirlar": [
+          [
+            "AB ve A′B′ kenarı",
+            "2 birim",
+            "2 birim",
+            "Uzunluk korunur"
+          ],
+          [
+            "BC ve B′C′ kenarı",
+            "1 sağ, 3 yukarı",
+            "1 sol, 3 yukarı",
+            "Eşit uzunlukta (aynı dikdörtgenin köşegeni)"
+          ],
+          [
+            "A ve A′ açısı",
+            "90°",
+            "90°",
+            "Açı korunur"
+          ],
+          [
+            "Alan",
+            "9 − 1,5 − 1,5 = 6 birim kare",
+            "6 birim kare",
+            "Alan korunur; şekiller eştir"
+          ],
+          [
+            "Doğruya uzaklık (A ve C)",
+            "4 kare ve 1 kare",
+            "4 kare ve 1 kare",
+            "Uzaklık korunur"
+          ],
+          [
+            "Köşelerin dolaşılma yönü",
+            "Saat yönünün tersi",
+            "Saat yönü",
+            "Yön ters döner"
+          ],
+          [
+            "Yer değiştirme miktarı",
+            "A: 8 kare, C: 2 kare",
+            "Noktadan noktaya farklı",
+            "'Sağa kaydırma' varsayımı çürütülür"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Aydınger Kâğıdı ve Katlama ile Kontrol",
+          "metin": "Çizdiğin görüntüyü kontrol etmenin pratik bir yolu vardır. Kâğıdı yansıma doğrusu boyunca katla ve ışığa tut. Şekil ile görüntüsü tam üst üste geliyorsa çizimin doğrudur. Bir köşe kayıyorsa o köşenin uzaklığını yeniden say."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Doğrulama ile Çürütme Farklıdır",
+          "metin": "Bir varsayımın tek bir örnekte doğru çıkması onu kanıtlamaz; farklı şekiller ve farklı doğrularla denemeyi sürdürürüz. Tek bir karşı örnek ise varsayımı {koyu:çürütmeye} yeter. İstatistikte 'her' içeren iddiaları da aynı yolla çürütmüştük."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 310' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='310' fill='#f8fafc' rx='12'/><text x='380' y='28' text-anchor='middle' font-size='15' font-weight='bold' fill='#1e293b'>ŞEKİL İLE GÖRÜNTÜSÜNÜ KARŞILAŞTIRMA TABLOSU</text><rect x='20' y='44' width='720' height='34' rx='8' fill='#1e293b'/><text x='130' y='66' text-anchor='middle' font-size='12' font-weight='bold' fill='#ffffff'>Özellik</text><text x='340' y='66' text-anchor='middle' font-size='12' font-weight='bold' fill='#bfdbfe'>Şekil ABCD</text><text x='520' y='66' text-anchor='middle' font-size='12' font-weight='bold' fill='#fbcfe8'>Görüntü A′B′C′D′</text><text x='670' y='66' text-anchor='middle' font-size='12' font-weight='bold' fill='#ffffff'>Sonuç</text><rect x='20' y='82' width='720' height='32' rx='6' fill='#ffffff' stroke='#e2e8f0'/><text x='130' y='103' text-anchor='middle' font-size='11' fill='#334155'>AB kenarı</text><text x='340' y='103' text-anchor='middle' font-size='11' fill='#1d4ed8'>2 birim</text><text x='520' y='103' text-anchor='middle' font-size='11' fill='#be185d'>2 birim</text><text x='670' y='103' text-anchor='middle' font-size='11' font-weight='bold' fill='#15803d'>Korunur</text><rect x='20' y='118' width='720' height='32' rx='6' fill='#ffffff' stroke='#e2e8f0'/><text x='130' y='139' text-anchor='middle' font-size='11' fill='#334155'>AD kenarı</text><text x='340' y='139' text-anchor='middle' font-size='11' fill='#1d4ed8'>2 birim</text><text x='520' y='139' text-anchor='middle' font-size='11' fill='#be185d'>2 birim</text><text x='670' y='139' text-anchor='middle' font-size='11' font-weight='bold' fill='#15803d'>Korunur</text><rect x='20' y='154' width='720' height='32' rx='6' fill='#ffffff' stroke='#e2e8f0'/><text x='130' y='175' text-anchor='middle' font-size='11' fill='#334155'>A açısı</text><text x='340' y='175' text-anchor='middle' font-size='11' fill='#1d4ed8'>90°</text><text x='520' y='175' text-anchor='middle' font-size='11' fill='#be185d'>90°</text><text x='670' y='175' text-anchor='middle' font-size='11' font-weight='bold' fill='#15803d'>Korunur</text><rect x='20' y='190' width='720' height='32' rx='6' fill='#ffffff' stroke='#e2e8f0'/><text x='130' y='211' text-anchor='middle' font-size='11' fill='#334155'>Alan</text><text x='340' y='211' text-anchor='middle' font-size='11' fill='#1d4ed8'>6 birim kare</text><text x='520' y='211' text-anchor='middle' font-size='11' fill='#be185d'>6 birim kare</text><text x='670' y='211' text-anchor='middle' font-size='11' font-weight='bold' fill='#15803d'>Korunur</text><rect x='20' y='226' width='720' height='32' rx='6' fill='#ffffff' stroke='#e2e8f0'/><text x='130' y='247' text-anchor='middle' font-size='11' fill='#334155'>Doğruya uzaklık (A / C)</text><text x='340' y='247' text-anchor='middle' font-size='11' fill='#1d4ed8'>4 kare / 1 kare</text><text x='520' y='247' text-anchor='middle' font-size='11' fill='#be185d'>4 kare / 1 kare</text><text x='670' y='247' text-anchor='middle' font-size='11' font-weight='bold' fill='#15803d'>Korunur</text><rect x='20' y='262' width='720' height='32' rx='6' fill='#fee2e2' stroke='#fca5a5'/><text x='130' y='283' text-anchor='middle' font-size='11' fill='#334155'>Köşelerin dolaşılma yönü</text><text x='340' y='283' text-anchor='middle' font-size='11' fill='#1d4ed8'>Saat yönünün tersi</text><text x='520' y='283' text-anchor='middle' font-size='11' fill='#be185d'>Saat yönü</text><text x='670' y='283' text-anchor='middle' font-size='11' font-weight='bold' fill='#b91c1c'>Ters döner</text></svg>"
+    },
+    {
+      "baslik": "Şekil ile Görüntüsü Arasındaki İlişkiler: Önermeler Kurma",
+      "metin": [
+        "Çizim ve ölçümlerden elde ettiğimiz sonuçları artık {koyu:önerme} olarak yazabiliriz. Önerme, doğru ya da yanlış olduğu kesin olarak söylenebilen bir yargıdır. Varsayım bir tahminken önerme, deneyerek ve gerekçelendirerek savunduğumuz açık bir ifadedir. Yansıma için ilk önermemiz şudur: {koyu:Bir şeklin yansıma dönüşümü altındaki görüntüsü şekle eştir.} Kenar uzunlukları, açı ölçüleri, çevre ve alan değişmez. Değişen yalnız şeklin konumu ve köşelerinin dolaşılma yönüdür. Bu yüzden yansımaya bazen 'şekli ters yüz eden hareket' de denir.",
+        "En güçlü önermemiz bir nokta ile görüntüsü arasındaki ilişkiyi anlatır. Doğrunun solundaki bir P noktası ile sağındaki görüntüsü P′'yü birleştirelim. Bu doğru parçası yansıma doğrusunu M noktasında keser. Ölçtüğümüzde iki şey görürüz. Birincisi, PP′ doğru parçası yansıma doğrusuna {koyu:diktir}. İkincisi, M noktası PP′'nin {koyu:tam ortasıdır}; yani PM = MP′'dür. Bu önermeden başka sonuçlar da çıkar. Doğrunun üzerindeki bir K noktasının doğruya uzaklığı 0 olduğundan görüntüsü kendisidir: K = K′. Bir nokta, yansımada doğruya olan uzaklığının {koyu:iki katı} kadar yer değiştirir. Doğruya 3 kare uzaktaki nokta 6 kare, 1 kare uzaktaki nokta 2 kare yer değiştirir. Doğruya paralel bir kenar görüntüde de doğruya paralel kalır ve doğruya aynı uzaklıkta durur.",
+        "Bir de {koyu:art arda yansıma} önermesi vardır. Bir şekli bir doğruya göre yansıtıp oluşan görüntüyü aynı doğruya göre yeniden yansıtırsak ilk şekle geri döneriz. Ambulans yazısının dikiz aynasında düzgün okunması bunun günlük hayattaki örneğidir. Önerme kurarken yanlış genellemelerden de kaçınmalıyız. 'Görüntü her zaman şeklin sağında oluşur' önermesi yanlıştır; şekil doğrunun sağındaysa görüntü solda, doğru yataysa görüntü yukarıda ya da aşağıda oluşur. 'Yansımada şeklin uzunlukları değişebilir' önermesi de yanlıştır. Her önermeyi bir çizimle sınamak ve gerekçesini sayılarla yazmak iyi bir alışkanlıktır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Önerme",
+          "Örnekle Kontrol",
+          "Doğru mu?"
+        ],
+        "satirlar": [
+          [
+            "Görüntü şekle eştir.",
+            "ABCD ve A′B′C′D′'nin kenarları, açıları ve alanı (6 birim kare) eşit",
+            "Doğru"
+          ],
+          [
+            "PP′ doğru parçası yansıma doğrusuna diktir.",
+            "Dikey d doğrusunda AA′ yataydır; yatay ile dikey arasında 90° vardır",
+            "Doğru"
+          ],
+          [
+            "Yansıma doğrusu PP′'yi ortalar.",
+            "A(1, 1) ile A′(9, 1) parçasının orta noktası (5, 1); d üzerinde",
+            "Doğru"
+          ],
+          [
+            "Doğru üzerindeki nokta yerinde kalır.",
+            "(5, 3) noktasının d'ye göre görüntüsü (5, 3)",
+            "Doğru"
+          ],
+          [
+            "Nokta, doğruya uzaklığının iki katı kadar yer değiştirir.",
+            "C 1 kare uzak, 2 kare yer değiştirdi; A 4 kare uzak, 8 kare",
+            "Doğru"
+          ],
+          [
+            "Görüntü her zaman şeklin sağında oluşur.",
+            "Yatay doğruda görüntü aşağıda ya da yukarıda oluşur",
+            "Yanlış (karşı örnek var)"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Yansımanın Temel Önermesi",
+          "metin": "Bir P noktası ile yansıma görüntüsü P′'yü birleştiren doğru parçası yansıma doğrusuna {koyu:diktir} ve yansıma doğrusu bu parçayı {koyu:tam ortadan} böler. Nokta doğrunun üzerindeyse P ile P′ aynı noktadır."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Bu Önerme İleride de İşimize Yarayacak",
+          "metin": "'Dik ve ortalayan doğru' fikri, sonraki derslerde cetvel ve pergelle yapacağımız çizimlerin de temelidir. Bu yüzden önermeyi ezberlemek yerine bir kareli zeminde kendin çizerek doğrula."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' fill='#f8fafc' rx='12'/><text x='380' y='28' text-anchor='middle' font-size='15' font-weight='bold' fill='#1e293b'>NOKTA, GÖRÜNTÜSÜ VE YANSIMA DOĞRUSU ARASINDAKİ İLİŞKİLER</text><line x1='200' y1='48' x2='200' y2='296' stroke='#dc2626' stroke-width='2.5'/><text x='208' y='62' font-size='13' font-weight='bold' fill='#b91c1c'>d</text><line x1='110' y1='100' x2='290' y2='100' stroke='#475569' stroke-width='2' stroke-dasharray='6,4'/><circle cx='110' cy='100' r='6' fill='#1d4ed8'/><circle cx='290' cy='100' r='6' fill='#be185d'/><circle cx='200' cy='100' r='4' fill='#0f172a'/><polyline points='200,88 212,88 212,100' fill='none' stroke='#0f172a' stroke-width='1.5'/><line x1='155' y1='94' x2='155' y2='106' stroke='#0f172a' stroke-width='2'/><line x1='245' y1='94' x2='245' y2='106' stroke='#0f172a' stroke-width='2'/><text x='96' y='92' font-size='13' font-weight='bold' fill='#1d4ed8'>P</text><text x='292' y='92' font-size='13' font-weight='bold' fill='#be185d'>P′</text><text x='186' y='122' font-size='12' font-weight='bold' fill='#0f172a'>M</text><text x='155' y='86' text-anchor='middle' font-size='10' fill='#334155'>3 kare</text><text x='245' y='86' text-anchor='middle' font-size='10' fill='#334155'>3 kare</text><text x='200' y='145' text-anchor='middle' font-size='11' font-weight='bold' fill='#0f172a'>PM = MP′ ve PP′, d'ye dik</text><circle cx='200' cy='190' r='6' fill='#16a34a'/><text x='212' y='194' font-size='11' font-weight='bold' fill='#15803d'>K = K′ (doğru üzerinde)</text><line x1='140' y1='250' x2='260' y2='250' stroke='#475569' stroke-dasharray='6,4'/><circle cx='140' cy='250' r='5' fill='#1d4ed8'/><circle cx='260' cy='250' r='5' fill='#be185d'/><text x='126' y='242' font-size='12' font-weight='bold' fill='#1d4ed8'>Q</text><text x='262' y='242' font-size='12' font-weight='bold' fill='#be185d'>Q′</text><text x='200' y='276' text-anchor='middle' font-size='10' fill='#334155'>2 kare uzak, 4 kare yer değiştirdi</text><rect x='340' y='48' width='405' height='252' rx='10' fill='#ffffff' stroke='#94a3b8'/><text x='542' y='72' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>YANSIMA ÖNERMELERİ</text><rect x='354' y='84' width='377' height='34' rx='8' fill='#eff6ff'/><text x='366' y='106' font-size='11' fill='#1e3a8a'>1) Görüntü şekle eştir: uzunluk, açı, alan korunur.</text><rect x='354' y='124' width='377' height='34' rx='8' fill='#f0fdf4'/><text x='366' y='146' font-size='11' fill='#14532d'>2) PP′ doğru parçası yansıma doğrusuna diktir.</text><rect x='354' y='164' width='377' height='34' rx='8' fill='#fefce8'/><text x='366' y='186' font-size='11' fill='#713f12'>3) Yansıma doğrusu PP′'yi tam ortadan böler.</text><rect x='354' y='204' width='377' height='34' rx='8' fill='#faf5ff'/><text x='366' y='226' font-size='11' fill='#581c87'>4) Doğru üzerindeki nokta yer değiştirmez.</text><rect x='354' y='244' width='377' height='44' rx='8' fill='#fff1f2'/><text x='366' y='262' font-size='11' fill='#881337'>5) Aynı doğruya göre iki kez yansıma</text><text x='380' y='278' font-size='11' fill='#881337'>ilk şekli verir: P → P′ → P</text></svg>"
+    },
+    {
+      "baslik": "İki Eş Şeklin Simetrik Olup Olmadığını Belirleme ve Simetri Doğrusunu Bulma",
+      "metin": [
+        "Önümüzde birbirine eş iki şekil olsun. Bu iki şekil bir doğruya göre {koyu:simetrik} midir? Yani biri, diğerinin bir doğruya göre yansıması mıdır? Bu soruyu yanıtlamak için önceki bölümdeki önermeleri bir {koyu:test} olarak kullanırız. Önce yönü kontrol ederiz: Karşılık gelen köşeleri aynı sırayla dolaştığımızda biri saat yönünde, diğeri saat yönünün tersindeyse iki şekil yansıma ile elde edilmiş olabilir. İkisi de aynı yönde dönüyorsa yansıma söz konusu değildir. Sonra karşılık gelen köşe çiftlerini birleştiririz. Bu doğru parçaları birbirine paralel olmalıdır. Parçaların orta noktaları {koyu:aynı doğru üzerinde} bulunmalı ve bu doğru parçalara {koyu:dik} olmalıdır. Bütün koşullar sağlanırsa şekiller simetriktir ve orta noktalardan geçen doğru simetri doğrusudur.",
+        "Bu testin neden işe yaradığını görelim. Kareli zeminde K(2, 1), L(4, 1), M(2, 4) üçgeni ile K′(8, 1), L′(6, 1), M′(8, 4) üçgeni verilsin. KK′, LL′ ve MM′ parçalarının hepsi yataydır. Orta noktaları (5, 1), (5, 1) ve (5, 4) noktalarıdır; hepsinin sağa sayımı 5'tir, yani hepsi aynı dikey doğru üzerindedir. Bu dikey doğru yatay parçalara diktir. Öyleyse iki üçgen bu doğruya göre simetriktir. Şimdi P(1, 5), R(4, 5), S(2, 7) üçgeni ile bu üçgenin 5 kare sağa kaydırılmış hâli olan P″(6, 5), R″(9, 5), S″(7, 7) üçgenini düşünelim. İki üçgen eştir, ama köşeler aynı yönde dolaşılır. Ayrıca orta noktalar (3,5; 5), (6,5; 5) ve (4,5; 7) aynı dikey doğru üzerinde değildir. Bu iki üçgen {koyu:simetrik değildir}. Görüldüğü gibi {koyu:eş olmak simetrik olmak için yetmez}.",
+        "Önerme, tek bir şeklin kendi {koyu:simetri doğrusunu} bulmamıza da yardım eder. Bir şekil bir doğru boyunca katlandığında iki yarısı tam çakışıyorsa o doğru şeklin simetri doğrusudur. Bu durumda şeklin bir yarısı diğer yarısının yansımasıdır. Simetri doğrusunu bulmak için birbirine karşılık gelen iki noktayı seçeriz. Bu noktaları birleştiren parçanın orta noktasından geçen ve parçaya dik olan doğru, aranan doğrudur. Diğer nokta çiftleriyle de kontrol ederiz. Bu yöntem sık yapılan bir yanılgıyı da düzeltir: Paralelkenarın köşegeni şekli iki eş üçgene ayırır, ama simetri doğrusu değildir. Paralelkenarı köşegen boyunca katladığımızda iki parça çakışmaz. Çünkü bir köşenin görüntüsü, köşegene dik doğrultuda karşıdaki köşeye denk gelmez. Önermenin katkısı tam da budur: 'Eş iki parçaya bölüyor' gözlemi yerine 'karşılık gelen noktaları dik ve eşit uzaklıkta mı?' sorusunu sordurur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Şekil",
+          "Simetri Doğrusu Sayısı",
+          "Simetri Doğruları Nereden Geçer?"
+        ],
+        "satirlar": [
+          [
+            "Kare",
+            "4",
+            "İki köşegen ve karşılıklı kenarların orta noktalarını birleştiren iki doğru"
+          ],
+          [
+            "Dikdörtgen (kare olmayan)",
+            "2",
+            "Karşılıklı kenarların orta noktalarından; köşegenler simetri doğrusu değildir"
+          ],
+          [
+            "Eşkenar dörtgen (kare olmayan)",
+            "2",
+            "İki köşegen"
+          ],
+          [
+            "Eşkenar üçgen",
+            "3",
+            "Her köşeden karşı kenarın orta noktasına"
+          ],
+          [
+            "İkizkenar üçgen (eşkenar olmayan)",
+            "1",
+            "Eşit kenarların birleştiği köşeden karşı kenarın orta noktasına"
+          ],
+          [
+            "Paralelkenar (dikdörtgen ve eşkenar dörtgen olmayan)",
+            "0",
+            "Simetri doğrusu yoktur; köşegenler de değildir"
+          ],
+          [
+            "Düzgün altıgen",
+            "6",
+            "Karşılıklı köşelerden 3, karşılıklı kenar ortalarından 3 doğru"
+          ],
+          [
+            "Çember",
+            "Sonsuz",
+            "Merkezden geçen her doğru"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İki Şeklin Simetrik Olma Testi",
+          "metin": "1) Şekiller eş mi? 2) Köşe dolaşma yönleri ters mi? 3) Karşılık gelen nokta çiftlerini birleştiren parçalar paralel mi? 4) Bu parçaların orta noktaları {koyu:tek bir doğru} üzerinde mi ve bu doğru parçalara {koyu:dik} mi? Hepsi evetse şekiller simetriktir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Eş Olmak Simetrik Olmak Demek Değildir",
+          "metin": "Kaydırılmış (ötelenmiş) iki eş şekil birbirinin ayna görüntüsü değildir. Bir şekli eş iki parçaya bölen her çizgi de simetri doğrusu değildir. Paralelkenarın köşegeni buna en bilinen örnektir. Karar vermek için katla ya da karşılık gelen noktaları dik ve eşit uzaklık açısından kontrol et."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 800 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='800' height='320' fill='#f8fafc' rx='12'/><text x='400' y='26' text-anchor='middle' font-size='15' font-weight='bold' fill='#1e293b'>SİMETRİK Mİ? SİMETRİ DOĞRUSU NEREDE?</text><rect x='15' y='40' width='310' height='265' rx='10' fill='#ffffff' stroke='#94a3b8'/><line x1='170' y1='50' x2='170' y2='265' stroke='#dc2626' stroke-width='2.5' stroke-dasharray='8,5'/><polygon points='80,90 140,120 100,230' fill='#bfdbfe' stroke='#1d4ed8' stroke-width='2'/><polygon points='260,90 200,120 240,230' fill='#fbcfe8' stroke='#be185d' stroke-width='2'/><line x1='80' y1='90' x2='260' y2='90' stroke='#94a3b8' stroke-dasharray='4,3'/><line x1='140' y1='120' x2='200' y2='120' stroke='#94a3b8' stroke-dasharray='4,3'/><line x1='100' y1='230' x2='240' y2='230' stroke='#94a3b8' stroke-dasharray='4,3'/><circle cx='170' cy='90' r='4' fill='#0f172a'/><circle cx='170' cy='120' r='4' fill='#0f172a'/><circle cx='170' cy='230' r='4' fill='#0f172a'/><text x='170' y='282' text-anchor='middle' font-size='11' font-weight='bold' fill='#15803d'>Orta noktalar aynı doğru üzerinde</text><text x='170' y='298' text-anchor='middle' font-size='11' fill='#15803d'>ve doğru parçalara dik: SİMETRİK</text><rect x='340' y='40' width='445' height='265' rx='10' fill='#ffffff' stroke='#94a3b8'/><rect x='370' y='60' width='80' height='80' fill='#dcfce7' stroke='#15803d' stroke-width='2'/><line x1='410' y1='54' x2='410' y2='146' stroke='#dc2626' stroke-dasharray='5,3'/><line x1='364' y1='100' x2='456' y2='100' stroke='#dc2626' stroke-dasharray='5,3'/><line x1='366' y1='56' x2='454' y2='144' stroke='#dc2626' stroke-dasharray='5,3'/><line x1='454' y1='56' x2='366' y2='144' stroke='#dc2626' stroke-dasharray='5,3'/><text x='410' y='162' text-anchor='middle' font-size='11' font-weight='bold' fill='#334155'>Kare: 4</text><rect x='510' y='75' width='130' height='55' fill='#fef9c3' stroke='#a16207' stroke-width='2'/><line x1='575' y1='68' x2='575' y2='137' stroke='#dc2626' stroke-dasharray='5,3'/><line x1='503' y1='102' x2='647' y2='102' stroke='#dc2626' stroke-dasharray='5,3'/><text x='575' y='162' text-anchor='middle' font-size='11' font-weight='bold' fill='#334155'>Dikdörtgen: 2</text><text x='715' y='95' text-anchor='middle' font-size='10' fill='#475569'>Düzgün altıgen: 6</text><text x='715' y='112' text-anchor='middle' font-size='10' fill='#475569'>Çember: sonsuz</text><polygon points='360,280 460,280 410,193' fill='#e0e7ff' stroke='#4338ca' stroke-width='2'/><line x1='410' y1='193' x2='410' y2='280' stroke='#dc2626' stroke-dasharray='5,3'/><line x1='360' y1='280' x2='435' y2='237' stroke='#dc2626' stroke-dasharray='5,3'/><line x1='460' y1='280' x2='385' y2='237' stroke='#dc2626' stroke-dasharray='5,3'/><text x='410' y='298' text-anchor='middle' font-size='11' font-weight='bold' fill='#334155'>Eşkenar üçgen: 3</text><polygon points='520,270 620,270 660,200 560,200' fill='#ffe4e6' stroke='#be123c' stroke-width='2'/><line x1='520' y1='270' x2='660' y2='200' stroke='#64748b' stroke-dasharray='5,3'/><text x='590' y='290' text-anchor='middle' font-size='11' font-weight='bold' fill='#334155'>Paralelkenar: 0</text><text x='720' y='225' text-anchor='middle' font-size='10' fill='#b91c1c'>Köşegen simetri</text><text x='720' y='241' text-anchor='middle' font-size='10' fill='#b91c1c'>doğrusu değildir</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir basketbol turnuvasının final maçında tribündeki 120 öğrenciye 'Haftada kaç saat spor yaparsınız?' diye sorulmuştur. Cevaplar gruplandırılmıştır: 0-2 saat 12, 2-4 saat 24, 4-6 saat 48, 6-8 saat 36 öğrenci (aralıklar alt sınırı içerir, üst sınırı içermez). Okulun spor kulübü sitesinde şöyle yazmaktadır: 'Okulumuz öğrencilerinin %70'i haftada en az 4 saat spor yapıyor. Spor yapan öğrenciler daha mutlu olduğundan okulumuz çok mutlu bir okul.' Bu yorumu değerlendiriniz.",
+      "cevap": "1) Toplam kontrolü: 12 + 24 + 48 + 36 = 120. Tablo tutarlıdır.\n2) Hesap: En az 4 saat spor yapanlar 48 + 36 = 84 kişidir. {kesir:84|120} = 0,70 yani %70 eder. Hesap doğrudur.\n3) Örneklem: Veriler basketbol finalini izlemeye gelen öğrencilerden toplanmıştır. Bu öğrencilerin spora ilgisi büyük olasılıkla ortalamadan fazladır. Örneklem yanlıdır; %70 değeri okulun tamamına genellenemez.\n4) Mutluluk iddiası: Mutluluk hiç ölçülmemiştir. Sonuç, sorunun ve verinin kapsamını aşmaktadır. Ayrıca 'spor mutlu eder' bir neden-sonuç iddiasıdır ve bu veriyle karar verilemez.\n5) Ek kontrol: En kalabalık aralık olan 4-6 saat {kesir:48|120} = %40'tır; tek başına çoğunluk değildir.\n6) Karar ve temkinli ifade: 'Final maçını izleyen 120 öğrencinin %70'i haftada en az 4 saat spor yapmaktadır.' Okul geneli ve mutluluk hakkındaki sonuçlar kabul edilemez.",
+      "ipucu": "Önce hesabı, sonra verinin kimden toplandığını, en son da sonuç cümlesindeki her kelimenin veride karşılığı olup olmadığını kontrol ediniz."
+    },
+    {
+      "soru": "Kareli zeminde A(1, 1), B(4, 1) ve C(1, 4) üçgeni veriliyor. Yansıma doğrusu d, sağa sayımı 5 olan noktalardan geçen dikey bir doğrudur. ABC üçgeninin d'ye göre görüntüsünü oluşturunuz. Ardından iki üçgenin alanlarını ve köşe dolaşma yönlerini karşılaştırınız.",
+      "cevap": "1) Uzaklıklar (yatay sayılır): A doğruya 5 − 1 = 4 kare, B 5 − 4 = 1 kare, C 5 − 1 = 4 kare uzaktadır.\n2) Görüntüler: Doğrunun sağına aynı sayıda kare sayılır. A′: 5 + 4 = 9 olduğundan A′(9, 1). B′: 5 + 1 = 6 olduğundan B′(6, 1). C′: 5 + 4 = 9 olduğundan C′(9, 4). Yukarı sayımlar değişmemiştir.\n3) Köşeler aynı sırayla birleştirilir: A′B′, B′C′, C′A′.\n4) Alan: ABC dik üçgendir; dik kenarları AB = 3 ve AC = 3 birimdir. Alanı {kesir:3 × 3|2} = 4,5 birim karedir. A′B′C′'de A′B′ = 9 − 6 = 3 ve A′C′ = 4 − 1 = 3 birimdir; alanı yine 4,5 birim karedir.\n5) Yön: A → B → C sırası saat yönünün tersindedir; A′ → B′ → C′ sırası ise saat yönündedir.\n6) Sonuç: Görüntü şekle eştir, yalnız yönü ters dönmüştür.",
+      "ipucu": "Dikey bir doğruda uzaklık yatay olarak sayılır ve görüntülerde yukarı sayım aynı kalır."
+    },
+    {
+      "soru": "T(1, 4), U(4, 6) ve V(5, 4) üçgeninin, yukarı sayımı 3 olan noktalardan geçen yatay doğruya göre görüntüsünü bulunuz. Her köşenin kaç kare yer değiştirdiğini hesaplayarak bir önermeyi doğrulayınız.",
+      "cevap": "1) Uzaklıklar (dikey sayılır): T doğrunun 4 − 3 = 1 kare yukarısında, U 6 − 3 = 3 kare yukarısında, V 4 − 3 = 1 kare yukarısındadır.\n2) Görüntüler doğrunun aşağısında, aynı uzaklıkta oluşur: T′ için 3 − 1 = 2 olduğundan T′(1, 2). U′ için 3 − 3 = 0 olduğundan U′(4, 0). V′ için 3 − 1 = 2 olduğundan V′(5, 2). Sağa sayımlar değişmemiştir.\n3) Yer değiştirme: T, 4'ten 2'ye inerek 2 kare; U, 6'dan 0'a inerek 6 kare; V, 4'ten 2'ye inerek 2 kare yer değiştirmiştir.\n4) Önerme kontrolü: T ve V doğruya 1 kare uzaktır ve 2 kare yer değiştirmiştir. U 3 kare uzaktır ve 6 kare yer değiştirmiştir. Her nokta doğruya uzaklığının iki katı kadar yer değiştirmiştir; önerme bu örnekte doğrulanır.\n5) Alan kontrolü: TV tabanı 5 − 1 = 4 birim, U'nun bu tabana uzaklığı 6 − 4 = 2 birimdir; alan {kesir:4 × 2|2} = 4 birim karedir. Görüntüde T′V′ = 4 birim, U′'nun uzaklığı 2 − 0 = 2 birimdir; alan yine 4 birim karedir.",
+      "ipucu": "Yatay doğruda uzaklığı yukarı-aşağı yönde sayınız; görüntüde sağa sayım aynı kalır."
+    },
+    {
+      "soru": "Can şu varsayımı öne sürüyor: 'Dikey bir doğruya göre yansımada şeklin bütün noktaları aynı miktarda sağa kayar.' A(1, 1), B(3, 1), C(4, 4), D(1, 3) dörtgeni ve sağa sayımı 5 olan dikey d doğrusu üzerinde Can'ın varsayımını sınayınız. Doğru bir önerme öneriniz.",
+      "cevap": "1) Görüntüler: A′(9, 1), B′(7, 1), C′(6, 4), D′(9, 3).\n2) Yer değiştirme miktarları: A için 9 − 1 = 8 kare, B için 7 − 3 = 4 kare, C için 6 − 4 = 2 kare, D için 9 − 1 = 8 kare.\n3) Karşılaştırma: Noktalar farklı miktarlarda yer değiştirmiştir (8, 4, 2, 8). Can'ın varsayımı doğru olsaydı hepsi eşit olurdu. Bu tek örnek bile varsayımı çürütmeye yeter.\n4) Ek gözlem: Kaydırmada köşelerin dolaşılma yönü değişmezdi. Burada ABCD saat yönünün tersinde, A′B′C′D′ saat yönünde dolaşılır.\n5) Doğru önerme: Uzaklıklar A için 4, B için 2, C için 1, D için 4 karedir. Yer değiştirmeler bu sayıların iki katıdır. Öyleyse 'Yansımada her nokta, yansıma doğrusuna uzaklığının iki katı kadar ve doğruya dik yönde yer değiştirir' önermesi kurulabilir.",
+      "ipucu": "Her köşe için 'görüntünün sağa sayımı − noktanın sağa sayımı' farkını hesaplayıp karşılaştırınız."
+    },
+    {
+      "soru": "Kareli zeminde iki üçgen çifti verilmiştir. 1. çift: K(2, 1), L(4, 1), M(2, 4) ve K′(8, 1), L′(6, 1), M′(8, 4). 2. çift: P(1, 5), R(4, 5), S(2, 7) ve P″(6, 5), R″(9, 5), S″(7, 7). Her çiftin bir doğruya göre simetrik olup olmadığını belirleyiniz; simetrikse simetri doğrusunu bulunuz.",
+      "cevap": "1. çift:\n1) Eşlik: KL = 2, K′L′ = 2; KM = 3, K′M′ = 3. İki dik üçgen eştir.\n2) Orta noktalar: KK′ için {kesir:2 + 8|2} = 5 olduğundan (5, 1); LL′ için {kesir:4 + 6|2} = 5 olduğundan (5, 1); MM′ için (5, 4).\n3) Üç orta noktanın da sağa sayımı 5'tir; hepsi aynı dikey doğru üzerindedir. KK′, LL′, MM′ yatay olduğundan bu doğruya diktir.\n4) Sonuç: Birinci çift simetriktir. Simetri doğrusu, sağa sayımı 5 olan dikey doğrudur.\n2. çift:\n1) Eşlik: Her köşe 5 kare sağa kaydırılmıştır; üçgenler eştir.\n2) Yön: P → R → S ile P″ → R″ → S″ aynı yönde dolaşılır. Yansımada yön ters dönerdi.\n3) Orta noktalar: PP″ için (3,5; 5), RR″ için (6,5; 5), SS″ için (4,5; 7). Sağa sayımları farklıdır, aynı dikey doğru üzerinde değildir.\n4) Sonuç: İkinci çift eştir ama simetrik değildir; biri diğerinin kaydırılmış hâlidir.",
+      "ipucu": "Karşılık gelen köşelerin orta noktalarını bulmak için iki sağa sayımın ve iki yukarı sayımın ortalamasını alınız."
+    },
+    {
+      "soru": "Düz, blok büyük harflerle yazılan A, E, H, N, S ve T harflerinin her birinin kaç simetri doğrusu olduğunu belirleyiniz. Ardından ATA ve ODA kelimelerinden hangisinin, kelimenin ortasından geçen dikey bir doğruya göre yansıtıldığında aynı göründüğünü gerekçesiyle açıklayınız.",
+      "cevap": "1) A: Tepeden geçen dikey doğru boyunca katlanınca iki yarı çakışır; 1 simetri doğrusu vardır (dikey).\n2) E: Ortadan geçen yatay doğru boyunca çakışır; 1 simetri doğrusu vardır (yatay).\n3) H: Hem dikey hem yatay doğru boyunca çakışır; 2 simetri doğrusu vardır.\n4) N ve S: Hiçbir doğru boyunca katlandığında iki yarısı çakışmaz; simetri doğruları yoktur. (Bu harfler ters çevrildiğinde aynı görünür, ama bu yansıma değil döndürmedir.)\n5) T: Ortadan geçen dikey doğru boyunca çakışır; 1 simetri doğrusu vardır.\n6) ATA: Dikey yansımada harflerin sırası tersine döner ve her harf kendi ayna görüntüsüne dönüşür. ATA tersten de ATA okunur. A ve T harflerinin dikey simetri doğrusu olduğundan ayna görüntüleri kendileriyle aynıdır. Kelime aynı görünür.\n7) ODA: Sıra tersine dönünce ADO olur. D harfinin dikey simetri doğrusu olmadığından ters görünür. Kelime aynı görünmez.\n8) Sonuç: Yalnız ATA dikey yansımada aynı görünür.",
+      "ipucu": "Her harfi hayalinde dikey ve yatay olarak katlayınız. Kelimelerde hem harflerin sırasının ters döndüğünü hem de her harfin kendi yansımasına dönüştüğünü unutmayınız."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Okul kütüphanesinin önünde yapılan bir ankette 80 öğrenciden 60'ı 'Ayda en az iki kitap okurum' demiştir. Anketi yapan öğrenci 'Okulumuz öğrencilerinin %75'i ayda en az iki kitap okuyor' sonucunu yazmıştır. Bu sonuç için en uygun değerlendirme hangisidir?",
+      "secenekler": [
+        "Hesap yanlıştır; doğru oran %60 olmalıdır.",
+        "Hesap doğrudur, ama örneklem kütüphaneye gelen öğrencilerden seçildiği için yanlıdır. Sonuç yalnız bu 80 öğrenci için söylenebilir.",
+        "Sonuç kabul edilir; 80 öğrenci her durumda yeterli bir örneklemdir.",
+        "Sonuç çürütülür; çünkü öğrencilerin %75'inin kitap okuması mümkün değildir."
+      ],
+      "dogru": 1,
+      "aciklama": "{kesir:60|80} = 0,75, yani %75 eder; hesap doğrudur. Ancak kütüphaneye gelen öğrencilerin okumaya ilgisi daha fazla olabilir. Bu nedenle örneklem okulu temsil etmez. Örneklemin büyüklüğü yanlılığı gidermez. D ise veriye dayanmayan bir yargıdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kareli zeminde (sağa sayım, yukarı sayım) olarak verilen P(2, 5) noktasının, sağa sayımı 5 olan noktalardan geçen dikey d doğrusuna göre görüntüsü hangisidir?",
+      "secenekler": [
+        "(7, 5)",
+        "(8, 5)",
+        "(5, 2)",
+        "(2, 1)"
+      ],
+      "dogru": 1,
+      "aciklama": "P noktası d doğrusunun 5 − 2 = 3 kare solundadır. Görüntüsü doğrunun 3 kare sağında, 5 + 3 = 8 sağa sayımında oluşur. Dikey doğruda yukarı sayım değişmediği için görüntü (8, 5) noktasıdır. (7, 5) noktası uzaklığı 2 kare sayma hatasından çıkar."
+    },
+    {
+      "tur": "coktan",
+      "soru": "ABCD dörtgeninin bir doğruya göre yansıması A′B′C′D′ dörtgenidir. Aşağıdakilerden hangisi şekil ile görüntüsünde kesinlikle farklıdır?",
+      "secenekler": [
+        "Kenar uzunlukları",
+        "Açı ölçüleri",
+        "Köşelerin aynı sırayla dolaşılma yönü (saat yönü ya da tersi)",
+        "Alan"
+      ],
+      "dogru": 2,
+      "aciklama": "Yansımada görüntü şekle eştir; kenar uzunlukları, açı ölçüleri ve alan korunur. ABCD saat yönünün tersine dolaşılıyorsa A′B′C′D′ saat yönünde dolaşılır. Yani yön ters döner."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki şekillerden hangisinin simetri doğrusu yoktur?",
+      "secenekler": [
+        "Eşkenar olmayan ikizkenar üçgen",
+        "Kare olmayan dikdörtgen",
+        "Dikdörtgen ve eşkenar dörtgen olmayan paralelkenar",
+        "Düzgün beşgen"
+      ],
+      "dogru": 2,
+      "aciklama": "İkizkenar üçgenin 1, dikdörtgenin 2, düzgün beşgenin 5 simetri doğrusu vardır. Böyle bir paralelkenarın köşegeni şekli iki eş üçgene ayırır, ama katlandığında parçalar çakışmaz. Bu paralelkenarın hiç simetri doğrusu yoktur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Yansıma dönüşümünde şeklin alanı değişmez.",
+          "dogru": true,
+          "aciklama": "Görüntü şekle eştir; kenar uzunlukları ve açılar korunduğu için alan da korunur."
+        },
+        {
+          "metin": "Bir nokta ile görüntüsünü birleştiren doğru parçası yansıma doğrusuna paraleldir.",
+          "dogru": false,
+          "aciklama": "Bu doğru parçası yansıma doğrusuna diktir ve yansıma doğrusu onu tam ortadan böler."
+        },
+        {
+          "metin": "Yansıma doğrusunun üzerindeki bir noktanın görüntüsü kendisidir.",
+          "dogru": true,
+          "aciklama": "Noktanın doğruya uzaklığı 0 olduğundan görüntüsü de doğru üzerinde, aynı noktada oluşur."
+        },
+        {
+          "metin": "Paralelkenarın köşegenleri her zaman simetri doğrusudur.",
+          "dogru": false,
+          "aciklama": "Köşegen paralelkenarı iki eş üçgene ayırır, ama katlandığında parçalar çakışmaz. Köşegenler yalnız eşkenar dörtgende ve karede simetri doğrusudur."
+        },
+        {
+          "metin": "İki değişken arasında bir ilişki görülmesi, birinin diğerine neden olduğunu kesin olarak gösterir.",
+          "dogru": false,
+          "aciklama": "İlişki neden-sonuç anlamına gelmez. Başka etkenler de rol oynayabilir; neden-sonuç için ayrı bir araştırma gerekir."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Yansıma doğrusu",
+          "Her noktayı görüntüsüne bağlayan doğru parçasını dik kesip tam ortadan bölen doğru"
+        ],
+        [
+          "Görüntü",
+          "Bir şekle dönüşüm uygulandıktan sonra oluşan yeni şekil"
+        ],
+        [
+          "Eş şekiller",
+          "Biçimleri ve boyutları aynı olan, üst üste tam çakıştırılabilen şekiller"
+        ],
+        [
+          "Simetrik şekil",
+          "Bir doğru boyunca katlandığında iki yarısı tam çakışan şekil"
+        ],
+        [
+          "Yanlı örneklem",
+          "Ana kütleyi temsil etmeyen, belli bir gruba ağırlık veren örneklem"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Yansıma dönüşümünde bir nokta ile görüntüsü, yansıma doğrusuna eşit ___ bulunur.",
+          "cevap": "uzaklıkta"
+        },
+        {
+          "metin": "Bir nokta ile görüntüsünü birleştiren doğru parçası yansıma doğrusuna ___.",
+          "cevap": "diktir"
+        },
+        {
+          "metin": "Yansımada şeklin köşelerinin dolaşılma ___ tersine döner.",
+          "cevap": "yönü"
+        },
+        {
+          "metin": "Dikdörtgen ve eşkenar dörtgen olmayan bir paralelkenarın simetri doğrusu ___.",
+          "cevap": "yoktur"
+        },
+        {
+          "metin": "İki değişkenin birlikte değişmesi bir ilişki gösterir, ama ___-sonuç kanıtı değildir.",
+          "cevap": "neden"
+        }
+      ],
+      "kelimeler": [
+        "uzaklıkta",
+        "diktir",
+        "yönü",
+        "yoktur",
+        "neden"
+      ],
+      "fazla": [
+        "paraleldir",
+        "büyüklüğü"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Kareli zeminde K(2, 2), L(5, 2), M(5, 4), N(3, 5) dörtgeni veriliyor. Yansıma doğrusu, yukarı sayımı 6 olan noktalardan geçen yatay bir doğrudur. a) Dörtgenin görüntüsünün köşelerini bulunuz. b) Şekil ile görüntüsünün KL ve LM kenarlarını ve alanlarını karşılaştırarak 'görüntü şekle eştir' varsayımını sınayınız. c) Mert 'N ile N′ arasındaki uzaklık 6 karedir' diyor. Bu iddiayı değerlendiriniz ve karşılık gelen köşelerin orta noktalarını kullanarak temel önermeyi doğrulayınız.",
+      "ipuclari": [
+        "1. adım: Her köşenin yatay doğrunun kaç kare aşağısında olduğunu bulunuz ve doğrunun yukarısında aynı sayıda kare sayınız. Sağa sayımlar değişmez.",
+        "2. adım: Kenar uzunluklarını kare sayarak bulunuz. Alanı, şekli 3 × 3'lük bir karenin içine alıp dışta kalan dik üçgenlerin alanlarını çıkararak hesaplayınız.",
+        "3. adım: N ile N′ arasındaki uzaklığı, N'nin doğruya uzaklığının iki katı olarak düşününüz. Ardından KK′, LL′, MM′ ve NN′ parçalarının orta noktalarının yukarı sayımlarını hesaplayınız."
+      ],
+      "cevap": "a) Uzaklıklar: K ve L doğrunun 6 − 2 = 4 kare, M 6 − 4 = 2 kare, N 6 − 5 = 1 kare aşağısındadır. Görüntüler doğrunun yukarısında aynı uzaklıkta oluşur: K′(2, 10), L′(5, 10), M′(5, 8), N′(3, 7).\nb) Kenarlar: KL = 5 − 2 = 3 birim, K′L′ = 5 − 2 = 3 birim. LM = 4 − 2 = 2 birim, L′M′ = 10 − 8 = 2 birim. Alan: KLMN, sağa sayım 2-5 ve yukarı sayım 2-5 arasındaki 3 × 3 = 9 birim karelik karenin içindedir. Dışarıda iki dik üçgen kalır. M(5, 4), (5, 5), N(3, 5) üçgeninin dik kenarları 1 ve 2 birimdir; alanı {kesir:1 × 2|2} = 1 birim karedir. N(3, 5), (2, 5), K(2, 2) üçgeninin dik kenarları 1 ve 3 birimdir; alanı {kesir:1 × 3|2} = 1,5 birim karedir. KLMN'nin alanı 9 − 1 − 1,5 = 6,5 birim karedir. Görüntü için aynı hesap (sağa sayım 2-5, yukarı sayım 7-10 karesi) yine 6,5 birim kare verir. Uzunluklar ve alan korunmuştur; varsayım bu örnekte doğrulanır. Köşe dolaşma yönü ise KLMN'de saat yönünün tersi, K′L′M′N′'de saat yönüdür.\nc) N doğrunun 1 kare aşağısında, N′ 1 kare yukarısındadır. Aralarındaki uzaklık 1 + 1 = 2 karedir (7 − 5 = 2). Mert'in iddiası çürütülür; 6 kare, doğrunun yukarı sayımıyla uzaklığın karıştırılmasından kaynaklanan bir hatadır. Orta noktalar: KK′ için {kesir:2 + 10|2} = 6, LL′ için {kesir:2 + 10|2} = 6, MM′ için {kesir:4 + 8|2} = 6, NN′ için {kesir:5 + 7|2} = 6. Bütün orta noktaların yukarı sayımı 6'dır; yani hepsi yansıma doğrusu üzerindedir. Birleştiren parçalar dikey olduğundan yatay doğruya diktir. Böylece 'Yansıma doğrusu, nokta ile görüntüsünü birleştiren parçayı dik keser ve ortalar' önermesi doğrulanır."
+    }
+  ]
+}

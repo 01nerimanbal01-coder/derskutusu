@@ -1,0 +1,573 @@
+{
+  "ad": "10-fizik-17",
+  "sinif": 10,
+  "ders": "fizik",
+  "ders_adi": "Fizik",
+  "hafta": 17,
+  "tarih": "11-15 Ocak 2027",
+  "yayin_tarihi": "2027-01-11",
+  "unite": "3. Tema: Elektrik",
+  "konu": "Elektrik Akımı: Yük Hareketi, Akımı Belirleyen Değişkenler ve Akım-Yük-Zaman İlişkisi",
+  "ciktilar": [
+    "FİZ.10.3.2. Elektrik yükünün hareketi üzerinden elektrik akımı kavramını çözümleyebilme",
+    "a) Bir iletkende elektrik akımı oluşması ile ilgili değişkenleri belirler.",
+    "b) Elektrik akımını oluşturan değişkenler arasındaki ilişkiyi belirler."
+  ],
+  "giris": "Geçen hafta su tesisatı benzetmesiyle elektrik akımını, borudaki su akışının elektrikteki karşılığı olarak tanımlamıştık. Bu hafta benzetmeyi bir kenara bırakıp {koyu:telin içine} bakıyoruz: Akan şey tam olarak nedir, neden ve nasıl hareket eder, akımın büyüklüğünü hangi değişkenler belirler? {koyu:Elektrik yükü}, {koyu:serbest elektronlar} ve {koyu:iyonlar} üzerinden akımın oluşumunu çözümleyecek, akım, yük ve zaman arasındaki {koyu:I = q ÷ t} ilişkisine ulaşacak, akımın yönünün neden elektronların hareketine ters seçildiğini öğrenecek ve bu bilgileri grafiklerle, günlük yaşamdan örneklerle pekiştireceğiz.",
+  "ozet": [
+    "{koyu:Elektrik yükü:} Maddenin temel bir özelliğidir; birimi coulomb (C) olup her yük, temel yük e = 1,6 × {us:10|−19} C değerinin tam katıdır (q = n · e).",
+    "{koyu:Akımın oluşma koşulları:} Bir iletkende akım için hareket edebilen yük taşıyıcıları (serbest elektronlar ya da iyonlar), bu taşıyıcıları iten bir potansiyel fark ve kesintisiz bir kapalı yol gerekir.",
+    "{koyu:Akımın tanımı:} Elektrik akımı, iletkenin bir kesitinden birim zamanda geçen yük miktarıdır: I = {kesir:q|t}; birimi amperdir ve 1 A = 1 C/s'dir.",
+    "{koyu:Değişkenler arası ilişki:} Sabit sürede geçen yük arttıkça akım doğru orantılı artar; aynı yük daha uzun sürede geçerse akım ters orantılı azalır; geçen yük de q = I · t ile bulunur.",
+    "{koyu:Akımın yönü:} Geleneksel (teknik) akım yönü, pozitif yüklerin hareket yönüdür; metallerde akımı taşıyan elektronlar bu yönün tersine, dış devrede − kutuptan + kutba doğru hareket eder.",
+    "{koyu:Farklı ortamlar ve grafikler:} Metallerde elektronlar, çözeltilerde iki yönde hareket eden iyonlar akımı taşır; q-t grafiğinin eğimi akımı, I-t grafiğinin altındaki alan geçen yükü verir."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Elektrik Yükü ve Yük Taşıyıcıları",
+      "metin": [
+        "Akımı 'yük akışı' diye tanımladığımıza göre önce akan şeyi tanımamız gerekir. Bütün maddeler atomlardan, atomlar da çekirdekteki {koyu:protonlar} ve {koyu:nötronlar} ile çekirdeğin çevresindeki {koyu:elektronlardan} oluşur. Proton ve elektronun {koyu:elektrik yükü} denen bir özelliği vardır: Proton pozitif (+), elektron negatif (−) yüklüdür; nötron ise yüksüzdür. Bir protonun yükü ile bir elektronun yükü büyüklükçe eşit, işaretçe zıttır. Bu en küçük yük miktarına {koyu:temel yük} denir ve {koyu:e} ile gösterilir: e = 1,6 × {us:10|−19} C. Normal bir atomda proton ve elektron sayısı eşit olduğu için atom {koyu:nötrdür}; toplam yükü sıfırdır.",
+        "Elektrik yükünün SI birimi, Fransız fizikçi Charles-Augustin de Coulomb'un onuruna {koyu:coulomb (C)} olarak adlandırılmıştır ve {koyu:q} harfiyle gösterilir. Temel yük çok küçük bir değer olduğu için 1 C, aslında çok büyük bir yük miktarıdır: 1 C'luk yük için yaklaşık 6,25 × {us:10|18} elektron gerekir. Yükün önemli bir özelliği {koyu:kesikli (kuantumlu)} olmasıdır: Bir cismin yükü her zaman temel yükün tam katıdır. n tane elektron fazlası olan bir cismin yükü q = −n · e, n tane elektron eksiği olan cismin yükü ise q = +n · e olur. Yarım elektron ya da 2,7 elektron gibi bir yük taşıyıcı yoktur; bu nedenle bir yük değerinin temel yüke bölümü her zaman bir tam sayı çıkar.",
+        "Bir ortamda yer değiştirerek yük taşıyabilen parçacıklara {koyu:yük taşıyıcıları} denir. Metallerde atomların en dıştaki elektronları çekirdeğe zayıf bağlıdır; bu elektronlar atomdan kopar ve metalin içinde serbestçe dolaşır. Bunlara {koyu:serbest elektronlar} denir ve metallerdeki akımı bunlar taşır; pozitif yüklü atom kalıntıları ise yerlerinde titreşir, yer değiştirmez. Elektron kaybetmiş ya da kazanmış atom veya atom gruplarına {koyu:iyon} denir: Elektron kaybeden atom {koyu:pozitif iyon}, elektron kazanan atom {koyu:negatif iyon} olur. Tuzlu su gibi çözeltilerde ve yıldırım, neon lamba gibi iyonlaşmış gazlarda akımı iyonlar taşır. Kısacası bir maddenin elektriği iletip iletmemesi, içinde {koyu:hareket edebilen yük taşıyıcısı} bulunup bulunmamasına bağlıdır: Plastik, cam, kuru tahta gibi yalıtkanlarda serbest yük taşıyıcısı yok denecek kadar azdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Parçacık / taşıyıcı",
+          "Yükü",
+          "Bulunduğu yer",
+          "Akım taşıyıcısı olduğu ortam"
+        ],
+        "satirlar": [
+          [
+            "Elektron",
+            "−e = −1,6 × {us:10|−19} C",
+            "Atomun çekirdeği çevresi",
+            "Metaller (serbest elektron), iyonlaşmış gazlar"
+          ],
+          [
+            "Proton",
+            "+e = +1,6 × {us:10|−19} C",
+            "Atom çekirdeği",
+            "Sıradan devrelerde yer değiştirmez"
+          ],
+          [
+            "Nötron",
+            "0 (yüksüz)",
+            "Atom çekirdeği",
+            "Yük taşımaz"
+          ],
+          [
+            "Pozitif iyon",
+            "+e, +2e, +3e ...",
+            "Elektron kaybetmiş atom",
+            "Çözeltiler, iyonlaşmış gazlar"
+          ],
+          [
+            "Negatif iyon",
+            "−e, −2e, −3e ...",
+            "Elektron kazanmış atom",
+            "Çözeltiler, iyonlaşmış gazlar"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Temel yük ve yükün kesikliliği",
+          "metin": "Doğada serbest hâlde bulunan en küçük yük miktarına {koyu:temel yük} denir: e = 1,6 × {us:10|−19} C. Her yük bu değerin tam katıdır: {koyu:q = n · e} (n tam sayı). 1 C yaklaşık 6,25 × {us:10|18} temel yüke karşılık gelir."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Yük taşıyıcısı yoksa akım da yok",
+          "metin": "Bir maddeye ne kadar büyük potansiyel fark uygulanırsa uygulansın, içinde {koyu:hareket edebilen} yük yoksa sürekli bir akım oluşmaz. Saf su ve kuru hava bu nedenle iyi yalıtkandır; içlerine iyon karıştığında (tuz çözündüğünde, hava iyonlaştığında) iletken hâle gelirler."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Elektrik Yükü ve Yük Taşıyıcıları</text><rect x='20' y='48' width='230' height='190' rx='12' fill='#ffffff' stroke='#93c5fd' stroke-width='2'/><circle cx='135' cy='95' r='24' fill='#3b82f6' stroke='#1e3a8a' stroke-width='2'/><text x='135' y='103' text-anchor='middle' font-size='24' font-weight='700' fill='#ffffff'>−</text><text x='135' y='142' text-anchor='middle' font-size='14' font-weight='700' fill='#1e3a8a'>Serbest elektron</text><text x='135' y='164' text-anchor='middle' font-size='12' fill='#334155'>Yükü: −e</text><text x='135' y='184' text-anchor='middle' font-size='12' fill='#334155'>e = 1,6 × 10⁻¹⁹ C</text><text x='135' y='206' text-anchor='middle' font-size='12' fill='#334155'>Metallerde akımı taşır</text><rect x='265' y='48' width='230' height='190' rx='12' fill='#ffffff' stroke='#fca5a5' stroke-width='2'/><circle cx='380' cy='95' r='24' fill='#ef4444' stroke='#7f1d1d' stroke-width='2'/><text x='380' y='103' text-anchor='middle' font-size='24' font-weight='700' fill='#ffffff'>+</text><text x='380' y='142' text-anchor='middle' font-size='14' font-weight='700' fill='#7f1d1d'>Pozitif iyon</text><text x='380' y='164' text-anchor='middle' font-size='12' fill='#334155'>Elektron kaybetmiş atom</text><text x='380' y='184' text-anchor='middle' font-size='12' fill='#334155'>Yükü: +e, +2e, +3e ...</text><text x='380' y='206' text-anchor='middle' font-size='12' fill='#334155'>Çözelti ve gazlarda taşır</text><rect x='510' y='48' width='230' height='190' rx='12' fill='#ffffff' stroke='#a5b4fc' stroke-width='2'/><circle cx='625' cy='95' r='24' fill='#6366f1' stroke='#312e81' stroke-width='2'/><text x='625' y='103' text-anchor='middle' font-size='24' font-weight='700' fill='#ffffff'>−</text><text x='625' y='142' text-anchor='middle' font-size='14' font-weight='700' fill='#312e81'>Negatif iyon</text><text x='625' y='164' text-anchor='middle' font-size='12' fill='#334155'>Elektron kazanmış atom</text><text x='625' y='184' text-anchor='middle' font-size='12' fill='#334155'>Yükü: −e, −2e, −3e ...</text><text x='625' y='206' text-anchor='middle' font-size='12' fill='#334155'>Çözelti ve gazlarda taşır</text><rect x='20' y='250' width='720' height='38' rx='10' fill='#e2e8f0'/><text x='380' y='274' text-anchor='middle' font-size='14' font-weight='600' fill='#0f172a'>Yük kesiklidir: q = n · e     |     1 C ≈ 6,25 × 10¹⁸ elektronun yükü</text></svg>"
+    },
+    {
+      "baslik": "Bir İletkende Akım Nasıl Oluşur? Serbest Elektronlar ve Potansiyel Fark",
+      "metin": [
+        "Masanın üzerinde duran, hiçbir yere bağlı olmayan bir bakır tel düşünelim. Telin içindeki serbest elektronlar boş durmaz; oda sıcaklığında bile çok hızlı ve {koyu:rastgele} hareket eder, atom kalıntılarına çarpıp sürekli yön değiştirirler. Ancak bu hareket her yöne eşit olasılıkla olduğu için telin herhangi bir kesitinden sağa geçen elektron sayısı ortalamada sola geçen elektron sayısına eşittir. Kesitten geçen {koyu:net yük sıfırdır}; bu nedenle elektronlar hareket ettiği hâlde {koyu:elektrik akımı yoktur}. Bu, kalabalık bir meydanda her yöne yürüyen insanlara benzer: Herkes hareket ediyordur ama kalabalık bir bütün olarak hiçbir yere gitmez.",
+        "Telin uçları bir pilin kutuplarına bağlandığında durum değişir. Pilin oluşturduğu {koyu:potansiyel fark}, telin içinde serbest elektronları bir yöne doğru iten bir etki oluşturur. Negatif yüklü elektronlar pilin {koyu:+ kutbunun} bağlı olduğu uca doğru çekilir. Rastgele hareket sürer ama artık üzerine bu yöne doğru yavaş bir {koyu:sürüklenme} eklenir; böylece kesitten bir yöne geçen elektron sayısı diğer yöne geçenden fazla olur ve {koyu:net bir yük akışı}, yani elektrik akımı oluşur. Bu sürüklenme şaşırtıcı biçimde yavaştır: Sıradan bir bakır telde elektronların ortalama ilerleme hızı genellikle saniyede bir milimetrenin bile altındadır. Yine de anahtar kapandığı anda ampul hemen yanar; çünkü geçen hafta gördüğümüz gibi tel baştan uca serbest elektronla doludur ve itme etkisi bütün tele neredeyse anında yayılır, tüm elektronlar aynı anda sürüklenmeye başlar.",
+        "Bu gözlemler, bir iletkende akım oluşması için gereken {koyu:değişkenleri} belirlememizi sağlar. Birincisi, ortamda {koyu:hareket edebilen yük taşıyıcıları} bulunmalıdır; yalıtkanlarda akım oluşmamasının nedeni budur. İkincisi, taşıyıcıları bir yöne iten bir {koyu:potansiyel fark} olmalıdır; pil çıkarılırsa sürüklenme biter, yalnızca rastgele hareket kalır. Üçüncüsü, taşıyıcıların dolaşabileceği {koyu:kesintisiz bir kapalı yol} gerekir; yol açıksa elektronlar telin bir ucunda kısa sürede birikir, oluşan yük birikimi yeni gelenleri durdurur ve akım kesilir. Bu koşullar sağlandığında akımın ne kadar büyük olacağını ise kesitten geçen {koyu:yük miktarı} ve bunun için geçen {koyu:süre} belirler; bu ilişkiyi bir sonraki bölümde nicel olarak kuracağız."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Durum",
+          "Serbest elektronların hareketi",
+          "Kesitten geçen net yük",
+          "Akım"
+        ],
+        "satirlar": [
+          [
+            "Tel hiçbir yere bağlı değil",
+            "Hızlı ve rastgele, her yöne",
+            "Sıfır",
+            "Yok"
+          ],
+          [
+            "Tel pile bağlı, devre kapalı",
+            "Rastgele harekete ek olarak + uca doğru sürüklenme",
+            "Sıfırdan farklı, sürekli",
+            "Var"
+          ],
+          [
+            "Tel pile bağlı, devre açık",
+            "Çok kısa süre sürüklenir, sonra uçta yük birikir",
+            "Sürekli akış yok",
+            "Yok (kalıcı akım oluşmaz)"
+          ],
+          [
+            "Yalıtkan çubuk pile bağlı",
+            "Hareket edebilen taşıyıcı yok denecek kadar az",
+            "Yaklaşık sıfır",
+            "Yok denecek kadar küçük"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Akımın oluşma koşulları",
+          "metin": "Bir iletkende sürekli elektrik akımı için üç koşul birlikte sağlanmalıdır: {koyu:1)} hareket edebilen yük taşıyıcıları, {koyu:2)} bu taşıyıcıları bir yöne iten potansiyel fark, {koyu:3)} kesintisiz kapalı bir yol. Biri eksik olursa akım oluşmaz."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Yavaş elektron, hızlı sinyal",
+          "metin": "Elektronlar telde çok yavaş ilerler ama ampul anında yanar. Bunu, uçtan uca suyla dolu bir hortuma benzetebilirsin: Musluğu açınca hortumun öbür ucundan hemen su çıkar; çıkan su musluktan yeni giren su değil, hortumda {koyu:zaten bulunan} sudur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Potansiyel Fark Yokken ve Varken Serbest Elektronlar</text><rect x='20' y='48' width='350' height='200' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><text x='195' y='72' text-anchor='middle' font-size='14' font-weight='700' fill='#0f172a'>Potansiyel fark yok</text><rect x='45' y='100' width='300' height='80' rx='10' fill='#fde68a' stroke='#b45309' stroke-width='2'/><circle cx='85' cy='125' r='7' fill='#3b82f6'/><line x1='85' y1='125' x2='105' y2='112' stroke='#1e3a8a' stroke-width='2'/><circle cx='140' cy='155' r='7' fill='#3b82f6'/><line x1='140' y1='155' x2='120' y2='165' stroke='#1e3a8a' stroke-width='2'/><circle cx='190' cy='120' r='7' fill='#3b82f6'/><line x1='190' y1='120' x2='212' y2='128' stroke='#1e3a8a' stroke-width='2'/><circle cx='240' cy='158' r='7' fill='#3b82f6'/><line x1='240' y1='158' x2='250' y2='138' stroke='#1e3a8a' stroke-width='2'/><circle cx='290' cy='125' r='7' fill='#3b82f6'/><line x1='290' y1='125' x2='270' y2='115' stroke='#1e3a8a' stroke-width='2'/><circle cx='315' cy='160' r='7' fill='#3b82f6'/><line x1='315' y1='160' x2='330' y2='150' stroke='#1e3a8a' stroke-width='2'/><text x='195' y='208' text-anchor='middle' font-size='12' fill='#334155'>Rastgele hareket, her yöne eşit olasılık</text><text x='195' y='230' text-anchor='middle' font-size='13' font-weight='700' fill='#b91c1c'>Net yük akışı = 0, akım yok</text><rect x='390' y='48' width='350' height='200' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><text x='565' y='72' text-anchor='middle' font-size='14' font-weight='700' fill='#0f172a'>Potansiyel fark var</text><rect x='435' y='100' width='260' height='80' rx='10' fill='#fde68a' stroke='#b45309' stroke-width='2'/><rect x='405' y='118' width='26' height='44' rx='5' fill='#fee2e2' stroke='#b91c1c' stroke-width='2'/><text x='418' y='146' text-anchor='middle' font-size='18' font-weight='700' fill='#b91c1c'>+</text><rect x='699' y='118' width='26' height='44' rx='5' fill='#dbeafe' stroke='#1d4ed8' stroke-width='2'/><text x='712' y='146' text-anchor='middle' font-size='20' font-weight='700' fill='#1d4ed8'>−</text><circle cx='480' cy='125' r='7' fill='#3b82f6'/><circle cx='540' cy='155' r='7' fill='#3b82f6'/><circle cx='600' cy='122' r='7' fill='#3b82f6'/><circle cx='655' cy='156' r='7' fill='#3b82f6'/><line x1='500' y1='125' x2='470' y2='125' stroke='#1e3a8a' stroke-width='2'/><line x1='560' y1='155' x2='530' y2='155' stroke='#1e3a8a' stroke-width='2'/><line x1='620' y1='122' x2='590' y2='122' stroke='#1e3a8a' stroke-width='2'/><line x1='675' y1='156' x2='645' y2='156' stroke='#1e3a8a' stroke-width='2'/><polygon points='462,125 472,119 472,131' fill='#1e3a8a'/><polygon points='522,155 532,149 532,161' fill='#1e3a8a'/><polygon points='582,122 592,116 592,128' fill='#1e3a8a'/><polygon points='637,156 647,150 647,162' fill='#1e3a8a'/><text x='565' y='208' text-anchor='middle' font-size='12' fill='#334155'>Elektronlar + uca doğru yavaşça sürüklenir</text><text x='565' y='230' text-anchor='middle' font-size='13' font-weight='700' fill='#047857'>Net yük akışı var, akım oluşur</text><rect x='20' y='258' width='720' height='32' rx='10' fill='#e2e8f0'/><text x='380' y='279' text-anchor='middle' font-size='13' font-weight='600' fill='#0f172a'>Koşullar: yük taşıyıcısı + potansiyel fark + kapalı yol = elektrik akımı</text></svg>"
+    },
+    {
+      "baslik": "Elektrik Akımının Tanımı: Akım, Yük ve Zaman",
+      "metin": [
+        "Bir iletkende akımın ne kadar güçlü olduğunu anlamak için telin içine hayalî bir {koyu:kesit} yerleştirelim; bu, teli dik olarak kesen ince bir dilim gibidir. Belli bir {koyu:t} süresince bu kesitten geçen toplam yük miktarını {koyu:q} ile gösterirsek, birim zamanda geçen yük miktarı q'nun t'ye bölümü olur. İşte bu oran {koyu:elektrik akımını (akım şiddetini)} verir: I = {kesir:q|t}. Akım değişiyorsa aynı tanım küçük bir zaman aralığında geçen yük için yazılır: I = {kesir:Δq|Δt}. Bu tanım, geçen haftaki 'birim zamanda geçen su miktarı' fikrinin, akan şeyin su değil elektrik yükü olduğu hâlidir.",
+        "Formüldeki birimler SI'da şöyledir: yük {koyu:coulomb (C)}, zaman {koyu:saniye (s)}, akım {koyu:amper (A)}. Buradan {koyu:1 A = 1 C/s} sonucu çıkar: Bir iletkenin kesitinden her saniye 1 C yük geçiyorsa iletkenden 1 amperlik akım geçiyordur. Bu da her saniye yaklaşık 6,25 × {us:10|18} elektronun kesitten geçmesi demektir. Amper, SI'nın yedi temel biriminden biridir; 2019'dan beri temel yükün değeri sabitlenerek tanımlanır. Küçük akımlar için {koyu:miliamper (1 mA = {us:10|−3} A)} ve {koyu:mikroamper (1 μA = {us:10|−6} A)} kullanılır. Hesaplarda süre dakika ya da saat olarak verilmişse önce saniyeye çevrilmelidir: 1 dk = 60 s, 1 h = 3600 s.",
+        "Akımı yük taşıyıcılarının sayısıyla da yazabiliriz. t sürede kesitten n tane elektron geçiyorsa geçen yük q = n · e olur; o hâlde I = {kesir:n · e|t} yazılır. Bu ifade, akımı oluşturan {koyu:değişkenleri} açıkça gösterir: kesitten geçen {koyu:taşıyıcı sayısı (n)}, her taşıyıcının {koyu:yükü (e)} ve geçen {koyu:süre (t)}. Aynı ilişki ters yönde de kullanılır: Akım ve süre biliniyorsa geçen yük q = I · t, akım ve yük biliniyorsa gereken süre t = {kesir:q|I} ile bulunur. Önemli bir nokta da şudur: Seri (tek yollu) bir devrede her kesitten aynı sürede aynı miktarda yük geçer; bu yüzden geçen hafta gördüğümüz gibi akım her noktada aynıdır. Telin kalın ya da ince olması bu sonucu değiştirmez; ince bölümde taşıyıcılar biraz daha hızlı sürüklenir, ama kesitten saniyede geçen yük aynı kalır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Nicelik",
+          "Sembol",
+          "SI birimi",
+          "Bağıntı"
+        ],
+        "satirlar": [
+          [
+            "Elektrik akımı",
+            "I",
+            "Amper (A)",
+            "I = {kesir:q|t}"
+          ],
+          [
+            "Elektrik yükü",
+            "q",
+            "Coulomb (C)",
+            "q = I · t = n · e"
+          ],
+          [
+            "Zaman",
+            "t",
+            "Saniye (s)",
+            "t = {kesir:q|I}"
+          ],
+          [
+            "Taşıyıcı sayısı",
+            "n",
+            "Birimsiz (adet)",
+            "n = {kesir:q|e}"
+          ],
+          [
+            "Temel yük",
+            "e",
+            "Coulomb (C)",
+            "e = 1,6 × {us:10|−19} C"
+          ],
+          [
+            "Birim çevirme",
+            "mA, μA",
+            "1 mA = {us:10|−3} A, 1 μA = {us:10|−6} A",
+            "1 A = 1 C/s"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Elektrik akımı",
+          "metin": "Bir iletkenin kesitinden {koyu:birim zamanda geçen elektrik yükü miktarına} elektrik akımı (akım şiddeti) denir: I = {kesir:q|t}. Birimi amperdir; {koyu:1 A}, kesitten 1 saniyede 1 coulomb yük geçmesidir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Önce birimleri düzelt",
+          "metin": "Soru 'mA' ve 'dakika' içeriyorsa formüle koymadan önce çevir: 250 mA = 0,25 A, 2 dk = 120 s. Böylece q = I · t = 0,25 × 120 = {koyu:30 C} gibi sonuç doğrudan coulomb olarak çıkar."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Kesitten Birim Zamanda Geçen Yük: Elektrik Akımı</text><rect x='30' y='105' width='470' height='70' rx='12' fill='#fde68a' stroke='#b45309' stroke-width='2'/><ellipse cx='265' cy='140' rx='14' ry='42' fill='#fef3c7' fill-opacity='0.6' stroke='#b91c1c' stroke-width='2.5' stroke-dasharray='6,4'/><text x='265' y='92' text-anchor='middle' font-size='12' font-weight='700' fill='#b91c1c'>Kesit</text><circle cx='70' cy='125' r='7' fill='#3b82f6'/><circle cx='110' cy='155' r='7' fill='#3b82f6'/><circle cx='160' cy='128' r='7' fill='#3b82f6'/><circle cx='205' cy='154' r='7' fill='#3b82f6'/><circle cx='320' cy='126' r='7' fill='#3b82f6'/><circle cx='365' cy='155' r='7' fill='#3b82f6'/><circle cx='415' cy='128' r='7' fill='#3b82f6'/><circle cx='460' cy='154' r='7' fill='#3b82f6'/><line x1='120' y1='205' x2='410' y2='205' stroke='#334155' stroke-width='2'/><polygon points='420,205 408,199 408,211' fill='#334155'/><text x='265' y='225' text-anchor='middle' font-size='12' fill='#334155'>t sürede kesitten geçen toplam yük: q</text><text x='265' y='250' text-anchor='middle' font-size='12' fill='#475569'>Her elektronun yükü e; n elektron geçerse q = n · e</text><rect x='525' y='55' width='210' height='190' rx='12' fill='#ffffff' stroke='#6366f1' stroke-width='2'/><text x='630' y='88' text-anchor='middle' font-size='22' font-weight='700' fill='#312e81'>I = q / t</text><text x='545' y='120' font-size='13' fill='#1e293b'>I : akım (amper, A)</text><text x='545' y='145' font-size='13' fill='#1e293b'>q : yük (coulomb, C)</text><text x='545' y='170' font-size='13' fill='#1e293b'>t : zaman (saniye, s)</text><line x1='545' y1='184' x2='715' y2='184' stroke='#cbd5e1' stroke-width='1.5'/><text x='630' y='206' text-anchor='middle' font-size='14' font-weight='700' fill='#047857'>1 A = 1 C / 1 s</text><text x='630' y='230' text-anchor='middle' font-size='12' fill='#334155'>I = n · e / t</text><rect x='30' y='262' width='705' height='28' rx='8' fill='#e2e8f0'/><text x='382' y='281' text-anchor='middle' font-size='13' font-weight='600' fill='#0f172a'>Örnek: 3 saniyede kesitten 6 C yük geçerse I = 6 ÷ 3 = 2 A</text></svg>"
+    },
+    {
+      "baslik": "Akımın Yönü: Elektron Hareketi ve Geleneksel Akım Yönü",
+      "metin": [
+        "Geçen hafta devre şemalarında akımın dış devrede pilin {koyu:+} kutbundan {koyu:−} kutbuna doğru gösterildiğini söylemiş, bu seçimin nedenini bu haftaya bırakmıştık. Şimdi telin içine baktığımızda bir tuhaflık fark ediyoruz: Metallerde hareket eden taşıyıcılar {koyu:negatif yüklü elektronlardır} ve elektronlar pilin + kutbu tarafından çekilip − kutbundan itildiği için dış devrede {koyu:− kutuptan + kutba} doğru hareket eder. Yani şemalarda gösterilen akım yönü ile elektronların gerçek hareket yönü {koyu:birbirine terstir}. Bu bir hata değil, tarihsel bir {koyu:uzlaşmadır}.",
+        "18. yüzyılda elektrik üzerine çalışan bilim insanları, yüklere pozitif ve negatif adlarını verirken akımı bir 'akışkanın' pozitiften negatife doğru hareketi olarak düşündüler; bu adlandırmada Benjamin Franklin'in çalışmaları etkili oldu. Akım yönü bu düşünceye göre {koyu:pozitif yüklerin hareket yönü} olarak benimsendi. Elektron ise ancak 1897'de J. J. Thomson'ın deneyleriyle keşfedildi ve metallerdeki akımı aslında negatif yüklerin taşıdığı anlaşıldı. O zamana kadar bütün kurallar, şemalar ve hesaplar eski yöne göre kurulmuştu. Üstelik fiziksel sonuç açısından iki görüş eşdeğerdir: Pozitif yükün bir yöne hareketi ile aynı miktarda negatif yükün ters yöne hareketi, kesitten aynı net yük aktarımını yapar. Bu yüzden eski yön korunmuş ve {koyu:geleneksel (teknik) akım yönü} adını almıştır.",
+        "Günümüzde akım yönü denildiğinde her zaman geleneksel yön kastedilir: {koyu:pozitif yüklerin hareket yönü}, yani dış devrede + kutuptan − kutba doğru. Pilin içinde ise akım − kutuptan + kutba doğru devam eder ve böylece kapalı bir döngü tamamlanır. Bir soruda elektronların hareket yönü verilmişse akımın yönünü bulmak için bu yönü {koyu:tersine çevirmek} yeterlidir. Çözeltilerdeki pozitif iyonlar ise akım yönünde, negatif iyonlar akıma ters yönde hareket eder; ama ikisinin katkısı da aynı yöndeki akımı oluşturur. Akımın büyüklüğünü hesaplarken yükün işaretine değil {koyu:büyüklüğüne} bakılır; işaret yalnızca yön belirlemede kullanılır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Özellik",
+          "Elektron akışı",
+          "Geleneksel (teknik) akım"
+        ],
+        "satirlar": [
+          [
+            "Hareket eden yük",
+            "Negatif yüklü elektronlar (gerçek taşıyıcı)",
+            "Pozitif yük hareketi gibi düşünülür"
+          ],
+          [
+            "Dış devrede yön",
+            "− kutuptan + kutba",
+            "+ kutuptan − kutba"
+          ],
+          [
+            "Pilin içinde yön",
+            "+ kutuptan − kutba",
+            "− kutuptan + kutba"
+          ],
+          [
+            "Kullanım alanı",
+            "Metallerde iletimin mikroskobik açıklaması",
+            "Devre şemaları, hesaplar, ölçü aletleri"
+          ],
+          [
+            "Akımın büyüklüğü",
+            "I = {kesir:n · e|t}",
+            "Aynı değer; yalnızca yön gösterimi farklı"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Akım yönü kuralı",
+          "metin": "Akımın yönü, {koyu:pozitif yüklerin hareket yönü} olarak kabul edilir. Metallerde elektronlar akım yönünün {koyu:tersine} hareket eder. Elektronlar soldan sağa gidiyorsa akım sağdan soladır."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "İki görüş, aynı net etki",
+          "metin": "Bir kesitten sağa doğru +2 C geçmesi ile sola doğru −2 C geçmesi aynı sonucu doğurur: Kesidin sağ tarafının yükü {koyu:2 C artar}, sol tarafının yükü 2 C azalır. Bu yüzden akım yönü seçimi hesapları değiştirmez."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 310' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='310' rx='14' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Geleneksel Akım Yönü ve Elektronların Hareket Yönü</text><rect x='20' y='48' width='470' height='245' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><polyline points='90,150 90,90 420,90 420,150' fill='none' stroke='#1e293b' stroke-width='3'/><polyline points='420,200 420,255 90,255 90,180' fill='none' stroke='#1e293b' stroke-width='3'/><line x1='66' y1='150' x2='114' y2='150' stroke='#1e293b' stroke-width='3'/><line x1='77' y1='170' x2='103' y2='170' stroke='#1e293b' stroke-width='6'/><line x1='90' y1='170' x2='90' y2='180' stroke='#1e293b' stroke-width='3'/><text x='122' y='155' font-size='15' font-weight='700' fill='#b91c1c'>+</text><text x='122' y='178' font-size='15' font-weight='700' fill='#1d4ed8'>−</text><circle cx='420' cy='175' r='22' fill='#fef9c3' stroke='#1e293b' stroke-width='3'/><line x1='405' y1='160' x2='435' y2='190' stroke='#1e293b' stroke-width='2'/><line x1='435' y1='160' x2='405' y2='190' stroke='#1e293b' stroke-width='2'/><text x='392' y='180' text-anchor='end' font-size='12' fill='#334155'>Ampul</text><line x1='190' y1='74' x2='300' y2='74' stroke='#dc2626' stroke-width='3'/><polygon points='312,74 300,67 300,81' fill='#dc2626'/><text x='250' y='64' text-anchor='middle' font-size='12' font-weight='700' fill='#dc2626'>Akım (I)</text><line x1='300' y1='108' x2='190' y2='108' stroke='#2563eb' stroke-width='3' stroke-dasharray='6,4'/><polygon points='178,108 190,101 190,115' fill='#2563eb'/><text x='250' y='128' text-anchor='middle' font-size='12' font-weight='700' fill='#2563eb'>Elektronlar</text><line x1='300' y1='240' x2='190' y2='240' stroke='#dc2626' stroke-width='3'/><polygon points='178,240 190,233 190,247' fill='#dc2626'/><line x1='190' y1='272' x2='300' y2='272' stroke='#2563eb' stroke-width='3' stroke-dasharray='6,4'/><polygon points='312,272 300,265 300,279' fill='#2563eb'/><rect x='505' y='48' width='235' height='245' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><text x='622' y='74' text-anchor='middle' font-size='14' font-weight='700' fill='#0f172a'>Gösterim</text><line x1='520' y1='100' x2='560' y2='100' stroke='#dc2626' stroke-width='3'/><polygon points='570,100 560,94 560,106' fill='#dc2626'/><text x='580' y='96' font-size='12' fill='#1e293b'>Geleneksel akım</text><text x='580' y='112' font-size='11' fill='#475569'>dış devrede + → −</text><line x1='520' y1='145' x2='560' y2='145' stroke='#2563eb' stroke-width='3' stroke-dasharray='6,4'/><polygon points='570,145 560,139 560,151' fill='#2563eb'/><text x='580' y='141' font-size='12' fill='#1e293b'>Elektron hareketi</text><text x='580' y='157' font-size='11' fill='#475569'>dış devrede − → +</text><text x='520' y='190' font-size='12' fill='#1e293b'>Akım yönü: pozitif</text><text x='520' y='206' font-size='12' fill='#1e293b'>yüklerin hareket yönü</text><text x='520' y='236' font-size='12' fill='#1e293b'>Elektron yönünü</text><text x='520' y='252' font-size='12' fill='#1e293b'>ters çevir → akım yönü</text><text x='520' y='280' font-size='11' fill='#475569'>Elektron: 1897, J. J. Thomson</text></svg>"
+    },
+    {
+      "baslik": "Değişkenler Arasındaki İlişki: Orantılar ve Grafikler",
+      "metin": [
+        "I = {kesir:q|t} bağıntısı üç değişkeni birbirine bağlar ve biri sabit tutulduğunda diğer ikisi arasında basit orantılar ortaya çıkar. {koyu:Süre sabitken} kesitten geçen yük iki katına çıkarsa akım da iki katına çıkar; akım ile yük {koyu:doğru orantılıdır}. {koyu:Yük sabitken} aynı yükün geçmesi için gereken süre iki katına çıkarsa akım yarıya iner; akım ile süre {koyu:ters orantılıdır}. {koyu:Akım sabitken} geçen yük süreyle doğru orantılı artar: 2 A'lik akımda 1 saniyede 2 C, 10 saniyede 20 C yük geçer. Bu orantılar, formülü ezberlemeden 'bir şey değişirse ne olur?' sorularını hızla yanıtlamamızı sağlar. Örneğin akım 3 katına çıkarılıp süre 3'te 1'e indirilirse q = I · t çarpımı değişmez; geçen yük aynı kalır.",
+        "İlişkiyi grafiklerle de okuyabiliriz. Sabit akımlı bir devrede kesitten geçen toplam yükün zamana göre grafiği ({koyu:q-t grafiği}) orijinden geçen bir {koyu:doğrudur}. Bu doğrunun {koyu:eğimi}, yani yükteki değişimin zamandaki değişime oranı {kesir:Δq|Δt}, doğrudan {koyu:akımı} verir. Eğim ne kadar dikse akım o kadar büyüktür; iki farklı telin q-t doğruları karşılaştırılarak hangisinden daha büyük akım geçtiği bir bakışta görülebilir. Doğru yataylaşırsa (eğim sıfır) yük artmıyor, yani akım yok demektir. Geçen haftalarda konum-zaman grafiğinin eğiminden hız bulduğumuzu hatırlarsan aynı düşünce yolunu burada da kullandığımızı fark edersin.",
+        "Akımın zamana göre grafiği ({koyu:I-t grafiği}) ise sabit akımda yatay bir doğrudur. Bu grafikte doğrunun altında kalan dikdörtgenin {koyu:alanı} akım ile sürenin çarpımına, yani I · t = q değerine eşittir: {koyu:I-t grafiğinin altındaki alan, kesitten geçen yükü verir}. Akım farklı zaman aralıklarında farklı değerler alıyorsa her aralığın alanı ayrı ayrı bulunup toplanır. Toplam yük toplam süreye bölünürse o zaman aralığındaki {koyu:ortalama akım} bulunur. Bu yöntem, örneğin bir telefonun şarj olurken önce yüksek, sonra düşük akım çektiği durumlarda bataryaya ne kadar yük aktarıldığını hesaplamak için kullanılır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Sabit tutulan",
+          "Değişen",
+          "İlişki",
+          "Örnek"
+        ],
+        "satirlar": [
+          [
+            "Süre (t)",
+            "Yük (q) ve akım (I)",
+            "Doğru orantı",
+            "10 s'de 5 C yerine 10 C geçerse akım 0,5 A'den 1 A'e çıkar"
+          ],
+          [
+            "Yük (q)",
+            "Süre (t) ve akım (I)",
+            "Ters orantı",
+            "12 C, 4 s yerine 8 s'de geçerse akım 3 A'den 1,5 A'e iner"
+          ],
+          [
+            "Akım (I)",
+            "Yük (q) ve süre (t)",
+            "Doğru orantı",
+            "2 A'de 5 s'de 10 C, 15 s'de 30 C geçer"
+          ],
+          [
+            "q-t grafiği",
+            "Eğim",
+            "Eğim = akım",
+            "Dik doğru büyük akım demektir"
+          ],
+          [
+            "I-t grafiği",
+            "Alan",
+            "Alan = yük",
+            "3 A × 4 s = 12 C"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Grafik okuma kuralı",
+          "metin": "{koyu:q-t grafiğinde eğim = akım} (I = {kesir:Δq|Δt}). {koyu:I-t grafiğinde alan = yük} (q = I · t). Ortalama akım = toplam yük ÷ toplam süre."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Ortalama akım, akımların ortalaması değildir",
+          "metin": "Bir telden 2 s boyunca 4 A, sonra 8 s boyunca 1 A geçerse ortalama akım (4 + 1) ÷ 2 = 2,5 A değildir. Toplam yük 8 + 8 = 16 C, toplam süre 10 s olduğundan {koyu:ortalama akım 1,6 A} olur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='14' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Sabit Akım (I = 2 A) İçin q-t ve I-t Grafikleri</text><rect x='20' y='45' width='350' height='265' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><line x1='60' y1='250' x2='345' y2='250' stroke='#1e293b' stroke-width='2'/><line x1='60' y1='250' x2='60' y2='65' stroke='#1e293b' stroke-width='2'/><text x='340' y='270' font-size='12' fill='#1e293b'>t (s)</text><text x='66' y='70' font-size='12' fill='#1e293b'>q (C)</text><line x1='60' y1='250' x2='300' y2='90' stroke='#2563eb' stroke-width='3'/><line x1='300' y1='90' x2='300' y2='250' stroke='#94a3b8' stroke-width='1' stroke-dasharray='4,3'/><line x1='60' y1='90' x2='300' y2='90' stroke='#94a3b8' stroke-width='1' stroke-dasharray='4,3'/><text x='140' y='266' text-anchor='middle' font-size='11' fill='#334155'>2</text><text x='220' y='266' text-anchor='middle' font-size='11' fill='#334155'>4</text><text x='300' y='266' text-anchor='middle' font-size='11' fill='#334155'>6</text><text x='52' y='201' text-anchor='end' font-size='11' fill='#334155'>4</text><text x='52' y='147' text-anchor='end' font-size='11' fill='#334155'>8</text><text x='52' y='94' text-anchor='end' font-size='11' fill='#334155'>12</text><text x='200' y='290' text-anchor='middle' font-size='13' font-weight='700' fill='#1e3a8a'>Eğim = 12 C ÷ 6 s = 2 A</text><rect x='390' y='45' width='350' height='265' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><rect x='440' y='130' width='240' height='120' fill='#bbf7d0' stroke='none'/><line x1='440' y1='250' x2='720' y2='250' stroke='#1e293b' stroke-width='2'/><line x1='440' y1='250' x2='440' y2='65' stroke='#1e293b' stroke-width='2'/><text x='712' y='270' font-size='12' fill='#1e293b'>t (s)</text><text x='446' y='70' font-size='12' fill='#1e293b'>I (A)</text><line x1='440' y1='130' x2='680' y2='130' stroke='#047857' stroke-width='3'/><line x1='680' y1='130' x2='680' y2='250' stroke='#94a3b8' stroke-width='1' stroke-dasharray='4,3'/><text x='432' y='134' text-anchor='end' font-size='11' fill='#334155'>2</text><text x='520' y='266' text-anchor='middle' font-size='11' fill='#334155'>2</text><text x='600' y='266' text-anchor='middle' font-size='11' fill='#334155'>4</text><text x='680' y='266' text-anchor='middle' font-size='11' fill='#334155'>6</text><text x='560' y='195' text-anchor='middle' font-size='13' font-weight='700' fill='#065f46'>Alan = q</text><text x='560' y='215' text-anchor='middle' font-size='12' fill='#065f46'>2 A × 6 s = 12 C</text><text x='580' y='290' text-anchor='middle' font-size='13' font-weight='700' fill='#065f46'>Alan = geçen yük</text></svg>"
+    },
+    {
+      "baslik": "Farklı Ortamlarda Akım ve Günlük Yaşamda Akım Değerleri",
+      "metin": [
+        "Elektrik akımı yalnızca metal tellerde oluşmaz; yük taşıyıcısı ve potansiyel fark bulunan her ortamda akım olabilir. {koyu:Metallerde} taşıyıcılar yalnızca serbest elektronlardır ve tek yönde (akıma ters) sürüklenirler. {koyu:Çözeltilerde} (elektrolitlerde) ise durum farklıdır: Örneğin tuz suda çözündüğünde pozitif sodyum iyonları ve negatif klor iyonları oluşur. Çözeltiye iki elektrot daldırılıp bir pile bağlanırsa pozitif iyonlar − kutba bağlı elektroda, negatif iyonlar + kutba bağlı elektroda doğru hareket eder. İki tür iyon {koyu:zıt yönlerde} hareket etse de ikisinin katkısı {koyu:aynı yöndeki} akımı oluşturur; çünkü pozitif yükün sağa gitmesi ile negatif yükün sola gitmesi aynı net yük aktarımıdır.",
+        "Bu yüzden çözeltide akım hesaplanırken bir kesitten geçen pozitif ve negatif yüklerin {koyu:büyüklükleri toplanır}: I = {kesir:{uzunluk:q₊} + {uzunluk:q₋}|t}. Yalnızca bir tür iyonu hesaba katmak sık yapılan bir hatadır. Bir iyonun yükü, kaybettiği ya da kazandığı elektron sayısına bağlıdır: +2 yüklü bir iyon 2e, −1 yüklü bir iyon e kadar yük taşır. {koyu:Gazlar} normalde yalıtkandır; ancak yüksek potansiyel fark, ısı ya da ışınım etkisiyle iyonlaşan gazlarda hem pozitif iyonlar hem de serbest kalan elektronlar akımı taşır. Yıldırım, floresan ve neon lambalar ile kaynak arkı bu tür iletime örnektir. Yarı iletkenlerde (silisyum gibi) ise elektronların yanı sıra 'boşluk' denen pozitif taşıyıcılar da görev yapar; bu konuyu ileriki sınıflarda göreceksin.",
+        "Günlük yaşamdaki akım değerleri çok geniş bir aralığa yayılır: Bir LED lambadan yaklaşık 20 mA, bir telefon şarj kablosundan 1-3 A, bir su ısıtıcısından 8-9 A civarında akım geçerken bir yıldırımda akım on binlerce ampere ulaşabilir. Pillerin ve bataryaların üzerinde yazan {koyu:mAh (miliamper-saat)} değeri aslında bir {koyu:yük} birimidir: Akım ile sürenin çarpımı yük verdiği için 1 Ah = 1 A × 3600 s = 3600 C'dur. İnsan vücudu da tuzlu sıvılar içerdiği için iletkendir; vücuttan geçen birkaç on miliamperlik akım bile kasları kilitleyebilir ve kalp ritmini bozarak hayati tehlike oluşturabilir. Bu nedenle prizlere iletken cisim sokulmamalı, ıslak elle elektrikli cihazlara dokunulmamalı ve hasarlı kablolar kullanılmamalıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Ortam",
+          "Yük taşıyıcıları",
+          "Taşıyıcıların hareketi",
+          "Örnek"
+        ],
+        "satirlar": [
+          [
+            "Metaller",
+            "Serbest elektronlar",
+            "Akıma ters yönde, tek tür",
+            "Bakır kablo, ampul filamanı"
+          ],
+          [
+            "Çözeltiler (elektrolitler)",
+            "Pozitif ve negatif iyonlar",
+            "Zıt yönlerde; ikisi de akıma katkı yapar",
+            "Tuzlu su, akü asidi"
+          ],
+          [
+            "İyonlaşmış gazlar",
+            "Pozitif iyonlar ve elektronlar",
+            "Zıt yönlerde",
+            "Yıldırım, neon lamba, kaynak arkı"
+          ],
+          [
+            "Yarı iletkenler",
+            "Elektronlar ve boşluklar",
+            "Zıt yönlerde",
+            "Güneş paneli, bilgisayar yongası"
+          ],
+          [
+            "Yalıtkanlar",
+            "Yok denecek kadar az",
+            "Net akış ihmal edilebilir",
+            "Plastik, cam, kuru tahta"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "İki tür taşıyıcı varsa yükler toplanır",
+          "metin": "Bir kesitten t sürede bir yöne {uzunluk:q₊} pozitif yük, ters yöne {uzunluk:q₋} negatif yük geçiyorsa toplam akım I = {kesir:{uzunluk:q₊} + {uzunluk:q₋}|t} olur ve akım {koyu:pozitif yüklerin hareket yönündedir}."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Elektrik güvenliği",
+          "metin": "Vücuttan geçen {koyu:birkaç on miliamper} akım bile tehlikelidir. Islak zemin ve ıslak el vücudun direncini düşürür, geçen akımı artırır. Prize metal cisim sokma, hasarlı kablo kullanma ve sigortayı devre dışı bırakma."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 310' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='310' rx='14' fill='#f8fafc' stroke='#cbd5e1' stroke-width='2'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='700' fill='#0f172a'>Farklı Ortamlarda Yük Taşıyıcıları</text><rect x='20' y='45' width='230' height='210' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><text x='135' y='68' text-anchor='middle' font-size='14' font-weight='700' fill='#0f172a'>Metal tel</text><rect x='40' y='105' width='190' height='54' rx='8' fill='#fde68a' stroke='#b45309' stroke-width='2'/><circle cx='75' cy='122' r='7' fill='#3b82f6'/><circle cx='125' cy='143' r='7' fill='#3b82f6'/><circle cx='180' cy='122' r='7' fill='#3b82f6'/><line x1='160' y1='182' x2='100' y2='182' stroke='#2563eb' stroke-width='3' stroke-dasharray='6,4'/><polygon points='90,182 102,176 102,188' fill='#2563eb'/><line x1='100' y1='92' x2='160' y2='92' stroke='#dc2626' stroke-width='3'/><polygon points='170,92 158,86 158,98' fill='#dc2626'/><text x='135' y='205' text-anchor='middle' font-size='12' fill='#334155'>Taşıyıcı: serbest elektron</text><text x='135' y='225' text-anchor='middle' font-size='12' fill='#334155'>Tek tür, akıma ters</text><rect x='265' y='45' width='230' height='210' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><text x='380' y='68' text-anchor='middle' font-size='14' font-weight='700' fill='#0f172a'>Çözelti</text><rect x='290' y='85' width='180' height='100' rx='8' fill='#dbeafe' stroke='#1d4ed8' stroke-width='2'/><rect x='298' y='80' width='10' height='95' fill='#475569'/><rect x='452' y='80' width='10' height='95' fill='#475569'/><text x='303' y='76' text-anchor='middle' font-size='13' font-weight='700' fill='#b91c1c'>+</text><text x='457' y='76' text-anchor='middle' font-size='14' font-weight='700' fill='#1d4ed8'>−</text><circle cx='345' cy='115' r='9' fill='#ef4444'/><text x='345' y='120' text-anchor='middle' font-size='12' font-weight='700' fill='#ffffff'>+</text><line x1='358' y1='115' x2='395' y2='115' stroke='#b91c1c' stroke-width='2'/><polygon points='403,115 393,110 393,120' fill='#b91c1c'/><circle cx='415' cy='160' r='9' fill='#6366f1'/><text x='415' y='165' text-anchor='middle' font-size='13' font-weight='700' fill='#ffffff'>−</text><line x1='402' y1='160' x2='365' y2='160' stroke='#312e81' stroke-width='2'/><polygon points='357,160 367,155 367,165' fill='#312e81'/><text x='380' y='205' text-anchor='middle' font-size='12' fill='#334155'>Taşıyıcı: + ve − iyonlar</text><text x='380' y='225' text-anchor='middle' font-size='12' fill='#334155'>Zıt yönlü, akım tek yönlü</text><rect x='510' y='45' width='230' height='210' rx='12' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><text x='625' y='68' text-anchor='middle' font-size='14' font-weight='700' fill='#0f172a'>İyonlaşmış gaz</text><rect x='530' y='95' width='190' height='70' rx='34' fill='#f3e8ff' stroke='#7e22ce' stroke-width='2'/><circle cx='580' cy='118' r='9' fill='#ef4444'/><text x='580' y='123' text-anchor='middle' font-size='12' font-weight='700' fill='#ffffff'>+</text><circle cx='630' cy='145' r='6' fill='#3b82f6'/><circle cx='670' cy='118' r='9' fill='#ef4444'/><text x='670' y='123' text-anchor='middle' font-size='12' font-weight='700' fill='#ffffff'>+</text><circle cx='600' cy='145' r='6' fill='#3b82f6'/><text x='625' y='205' text-anchor='middle' font-size='12' fill='#334155'>Taşıyıcı: iyonlar ve elektronlar</text><text x='625' y='225' text-anchor='middle' font-size='12' fill='#334155'>Yıldırım, neon lamba</text><rect x='20' y='265' width='720' height='34' rx='10' fill='#e2e8f0'/><text x='380' y='287' text-anchor='middle' font-size='13' font-weight='600' fill='#0f172a'>İki tür taşıyıcıda: I = (pozitif yük büyüklüğü + negatif yük büyüklüğü) ÷ t</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Bir elektrikli süpürgenin kablosundan 5 dakika boyunca 4 A'lik sabit akım geçmektedir. Bu sürede kablonun bir kesitinden kaç coulomb yük geçer? Bu yük kaç elektronun yüküne eşittir? (e = 1,6 × {us:10|−19} C)",
+      "cevap": "{koyu:1. adım (birimi çevir):} t = 5 dk = 5 × 60 = 300 s.\n{koyu:2. adım (yükü bul):} q = I · t = 4 A × 300 s = {koyu:1200 C}.\n{koyu:3. adım (elektron sayısını bul):} n = {kesir:q|e} = {kesir:1200|1,6 × {us:10|−19}} = 750 × {us:10|19} = {koyu:7,5 × {us:10|21} elektron}.\n{koyu:Yorum:} Sıradan bir ev aletinde bile birkaç dakikada akıl almaz sayıda elektron kesitten geçer; temel yükün ne kadar küçük olduğu buradan da anlaşılır.",
+      "ipucu": "Önce dakikayı saniyeye çevir, sonra q = I · t ve n = q ÷ e bağıntılarını sırayla kullan."
+    },
+    {
+      "soru": "Bir LED lambadan 20 mA akım geçmektedir. a) LED'in bir kesitinden 1 saniyede kaç elektron geçer? b) Kesitten 3 C yük geçmesi kaç saniye sürer?",
+      "cevap": "{koyu:1. adım (birimi çevir):} I = 20 mA = 20 × {us:10|−3} A = 0,02 A.\n{koyu:2. adım (a şıkkı):} 1 s'de geçen yük q = I · t = 0,02 × 1 = 0,02 C. Elektron sayısı n = {kesir:0,02|1,6 × {us:10|−19}} = 0,0125 × {us:10|19} = {koyu:1,25 × {us:10|17} elektron}.\n{koyu:3. adım (b şıkkı):} t = {kesir:q|I} = {kesir:3|0,02} = {koyu:150 s} (2,5 dakika).\n{koyu:Kontrol:} 0,02 A × 150 s = 3 C; sonuç tutarlıdır.",
+      "ipucu": "Miliamperi ampere çevirmeyi unutma: 1 mA = 0,001 A."
+    },
+    {
+      "soru": "Bir metal telin A ucundan B ucuna doğru 4 saniyede 5 × {us:10|19} tane serbest elektron geçmektedir. Teldeki akımın büyüklüğünü ve yönünü bulunuz. (e = 1,6 × {us:10|−19} C)",
+      "cevap": "{koyu:1. adım (geçen yük):} q = n · e = 5 × {us:10|19} × 1,6 × {us:10|−19} = {koyu:8 C}.\n{koyu:2. adım (akım):} I = {kesir:q|t} = {kesir:8|4} = {koyu:2 A}.\n{koyu:3. adım (yön):} Akım yönü pozitif yüklerin hareket yönüdür; elektronlar negatif yüklü olduğu için akım, elektronların hareketine terstir. Elektronlar A'dan B'ye gittiğine göre akımın yönü {koyu:B'den A'ya} doğrudur.\n{koyu:Ek bilgi:} B ucu pilin − kutbuna, A ucu + kutbuna bağlıdır; elektronlar − kutup tarafından itilip + kutba çekilir.",
+      "ipucu": "Büyüklüğü I = n · e ÷ t ile bul; yön için elektron yönünü tersine çevir."
+    },
+    {
+      "soru": "Bir tuz çözeltisine daldırılmış iki elektrot bir pile bağlanmıştır. Çözeltinin ortasındaki bir kesitten 4 saniyede sağa doğru 1,2 C pozitif yük, sola doğru 0,8 C negatif yük geçmektedir. Çözeltideki akımın büyüklüğünü ve yönünü bulunuz. Bir öğrenci akımı (1,2 − 0,8) ÷ 4 = 0,1 A bulmuştur; hatası nedir?",
+      "cevap": "{koyu:1. adım (taşıyıcıları belirle):} Çözeltide akımı hem pozitif hem negatif iyonlar taşır. Pozitif yükün sağa gitmesi ile negatif yükün sola gitmesi aynı net etkiyi yapar; ikisi de sağa doğru akıma katkıdır.\n{koyu:2. adım (toplam yük):} q = 1,2 + 0,8 = {koyu:2 C}.\n{koyu:3. adım (akım):} I = {kesir:2|4} = {koyu:0,5 A}; yönü pozitif yüklerin hareket yönü olan {koyu:sağa doğrudur}.\n{koyu:4. adım (hatayı değerlendir):} Öğrenci zıt yönde hareket eden zıt işaretli yükleri birbirinden çıkarmıştır. Oysa sola giden negatif yük, sağa giden pozitif yük gibi etki eder; büyüklükler {koyu:toplanmalıdır}.",
+      "ipucu": "Zıt işaretli yükler zıt yönlerde hareket ediyorsa katkıları aynı yöndedir."
+    },
+    {
+      "soru": "Bir iletkenden geçen akım 0-4 s arasında 3 A, 4-10 s arasında 1 A değerinde sabit kalmaktadır. a) 0-10 s arasında kesitten geçen toplam yükü bulunuz. b) Bu aralıktaki ortalama akımı hesaplayınız. c) Kesitten geçen elektron sayısı kaçtır? (e = 1,6 × {us:10|−19} C)",
+      "cevap": "{koyu:1. adım (I-t grafiğini düşün):} Grafik iki yatay basamaktan oluşur; her basamağın altındaki dikdörtgenin alanı o aralıkta geçen yüktür.\n{koyu:2. adım (a şıkkı):} {alt:q|1} = 3 A × 4 s = 12 C; {alt:q|2} = 1 A × 6 s = 6 C. Toplam q = 12 + 6 = {koyu:18 C}.\n{koyu:3. adım (b şıkkı):} Ortalama akım = toplam yük ÷ toplam süre = {kesir:18|10} = {koyu:1,8 A}. (Akımların aritmetik ortalaması olan 2 A yanlıştır; çünkü süreler eşit değildir.)\n{koyu:4. adım (c şıkkı):} n = {kesir:18|1,6 × {us:10|−19}} = 11,25 × {us:10|19} = {koyu:1,125 × {us:10|20} elektron}.",
+      "ipucu": "Her zaman aralığının alanını ayrı bul, sonra topla; ortalama için toplam süreye böl."
+    },
+    {
+      "soru": "Bir telefonun bataryası üzerinde 3000 mAh yazmaktadır. a) Bu değer hangi fiziksel niceliği gösterir? Coulomb cinsinden kaçtır? b) Batarya tamamen boşken 1,5 A'lik sabit akımla şarj edilirse (kayıpları ihmal ederek) dolması kaç saat sürer?",
+      "cevap": "{koyu:1. adım (niceliği belirle):} mAh, miliamper ile saatin çarpımıdır. Akım × süre = yük olduğundan bu değer bataryanın depolayabileceği {koyu:yük miktarını} gösterir.\n{koyu:2. adım (a şıkkı):} 3000 mAh = 3 Ah = 3 A × 3600 s = {koyu:10 800 C}.\n{koyu:3. adım (b şıkkı):} t = {kesir:q|I} = {kesir:10 800|1,5} = 7200 s = {koyu:2 saat}. Kısa yol: {kesir:3 Ah|1,5 A} = 2 h.\n{koyu:Yorum:} Gerçekte şarj cihazları batarya dolmaya yaklaştıkça akımı düşürdüğü ve bir miktar enerji ısıya dönüştüğü için süre biraz daha uzun olur.",
+      "ipucu": "A × h çarpımını A × s'ye çevirerek coulomb bul: 1 h = 3600 s."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir iletkenin kesitinden 10 saniyede 25 C yük geçmektedir. İletkenden geçen akım kaç amperdir?",
+      "secenekler": [
+        "0,4 A",
+        "2,5 A",
+        "15 A",
+        "250 A"
+      ],
+      "dogru": 1,
+      "aciklama": "I = q ÷ t = 25 ÷ 10 = 2,5 A. 0,4 A süreyi yüke bölmekle, 250 A yük ile süreyi çarpmakla bulunan hatalı sonuçlardır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bakır bir telde elektrik akımını oluşturan yük taşıyıcıları aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Pozitif iyonlar",
+        "Protonlar",
+        "Serbest elektronlar",
+        "Nötronlar"
+      ],
+      "dogru": 2,
+      "aciklama": "Metallerde dış katman elektronları atomlara zayıf bağlıdır ve metal içinde serbestçe dolaşır; akımı bu serbest elektronlar taşır. Protonlar çekirdekte, pozitif atom kalıntıları ise yerinde kalır; nötronlar yüksüzdür."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir metal telde serbest elektronlar K ucundan L ucuna doğru hareket etmektedir. Teldeki akımın yönü için ne söylenebilir?",
+      "secenekler": [
+        "K'den L'ye doğrudur.",
+        "L'den K'ye doğrudur.",
+        "Her iki yönde de vardır.",
+        "Elektronlar hareket ettiği için yön tanımlanamaz."
+      ],
+      "dogru": 1,
+      "aciklama": "Geleneksel akım yönü pozitif yüklerin hareket yönüdür. Elektronlar negatif yüklü olduğundan akım, elektronların hareketine terstir: L'den K'ye."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Bir iletkenden geçen akım 2 katına çıkarılıp akımın geçtiği süre yarıya indirilirse kesitten geçen toplam yük nasıl değişir?",
+      "secenekler": [
+        "Yarıya iner.",
+        "Değişmez.",
+        "2 katına çıkar.",
+        "4 katına çıkar."
+      ],
+      "dogru": 1,
+      "aciklama": "q = I · t bağıntısında akım 2 katına, süre yarıya inince çarpım (2I) · (t ÷ 2) = I · t olur; geçen yük değişmez."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Hiçbir yere bağlı olmayan bir telde serbest elektronların rastgele hareketi elektrik akımı oluşturur.",
+          "dogru": false,
+          "aciklama": "Rastgele harekette kesitten her iki yöne geçen elektron sayısı ortalamada eşittir; net yük akışı sıfır olduğu için akım yoktur. Akım için potansiyel fark gerekir."
+        },
+        {
+          "metin": "1 amper, bir iletkenin kesitinden 1 saniyede 1 coulomb yük geçmesidir.",
+          "dogru": true,
+          "aciklama": "I = q ÷ t tanımından 1 A = 1 C/s sonucu çıkar."
+        },
+        {
+          "metin": "Geleneksel akım yönü, metallerde elektronların hareket yönüyle aynıdır.",
+          "dogru": false,
+          "aciklama": "Geleneksel akım yönü pozitif yüklerin hareket yönüdür; metallerde elektronlar bu yönün tersine hareket eder."
+        },
+        {
+          "metin": "Tuzlu suda elektrik akımı hem pozitif hem negatif iyonların hareketiyle oluşur.",
+          "dogru": true,
+          "aciklama": "Çözeltide pozitif iyonlar bir yöne, negatif iyonlar ters yöne hareket eder ve ikisi de aynı yöndeki akıma katkı yapar."
+        },
+        {
+          "metin": "Bir cismin elektrik yükü her zaman temel yükün tam katıdır.",
+          "dogru": true,
+          "aciklama": "Yük kesiklidir: q = n · e ve n bir tam sayıdır. Kesirli sayıda elektron fazlası ya da eksiği olamaz."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Elektrik akımı",
+          "Bir iletkenin kesitinden birim zamanda geçen yük miktarı"
+        ],
+        [
+          "Coulomb",
+          "Elektrik yükünün SI birimi"
+        ],
+        [
+          "Temel yük",
+          "Bir elektronun ya da protonun yükünün büyüklüğü, 1,6 × 10⁻¹⁹ C"
+        ],
+        [
+          "Serbest elektron",
+          "Metal içinde atoma bağlı kalmadan dolaşabilen, metallerde akımı taşıyan parçacık"
+        ],
+        [
+          "Geleneksel akım yönü",
+          "Pozitif yüklerin hareket yönü; dış devrede + kutuptan − kutba"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Elektrik yükünün SI birimi ___ olup C ile gösterilir.",
+          "cevap": "coulomb"
+        },
+        {
+          "metin": "Metallerde elektrik akımını ___ elektronlar taşır.",
+          "cevap": "serbest"
+        },
+        {
+          "metin": "Bir iletkenin kesitinden saniyede 1 C yük geçiyorsa akım 1 ___ olur.",
+          "cevap": "amper"
+        },
+        {
+          "metin": "Geleneksel akım yönü, metallerdeki elektronların hareket yönüne ___ alınır.",
+          "cevap": "ters"
+        },
+        {
+          "metin": "Akım, iletkenin bir ___ alanından birim zamanda geçen yük miktarıdır.",
+          "cevap": "kesit"
+        }
+      ],
+      "kelimeler": [
+        "coulomb",
+        "serbest",
+        "amper",
+        "ters",
+        "kesit"
+      ],
+      "fazla": [
+        "volt",
+        "proton"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir çözeltiye daldırılmış iki elektrot bir pile bağlanmıştır. Çözeltinin ortasındaki bir kesitten 10 saniyede sağa doğru +1 yüklü 2 × {us:10|19} tane pozitif iyon, sola doğru −2 yüklü 1 × {us:10|19} tane negatif iyon geçmektedir. (e = 1,6 × {us:10|−19} C) a) Kesitten geçen pozitif ve negatif yüklerin büyüklüklerini bulunuz. b) Çözeltideki akımın büyüklüğünü ve yönünü bulunuz. c) Yalnızca pozitif iyonları hesaba katan bir öğrenci hangi sonucu bulur ve hatası nedir? d) Pile bağlı metal tellerin bir kesitinden her saniye kaç elektron geçer?",
+      "ipuclari": [
+        "1. adım: Her iyonun yükünü temel yük cinsinden yaz (+1 yüklü iyon e, −2 yüklü iyon 2e taşır) ve q = n · (iyon yükü) ile yükleri bul.",
+        "2. adım: Zıt yönlerde hareket eden zıt işaretli yüklerin katkıları aynı yöndedir; büyüklükleri topla ve süreye böl. Yön için pozitif iyonların hareketine bak.",
+        "3. adım: Seri bir devrede her kesitten aynı akım geçer; teldeki akımı kullanarak n = (I · t) ÷ e ile 1 saniyedeki elektron sayısını bul."
+      ],
+      "cevap": "a) Pozitif yük: {uzunluk:q₊} = 2 × {us:10|19} × 1 × 1,6 × {us:10|−19} = {koyu:3,2 C}. Negatif yük: her iyon 2e taşır, {uzunluk:q₋} = 1 × {us:10|19} × 2 × 1,6 × {us:10|−19} = {koyu:3,2 C}.\nb) Sağa giden pozitif yük ile sola giden negatif yük aynı yöndeki akıma katkı yapar: q = 3,2 + 3,2 = 6,4 C. I = {kesir:6,4|10} = {koyu:0,64 A}. Akımın yönü pozitif iyonların hareket yönü olan {koyu:sağa doğrudur}.\nc) Yalnızca pozitif iyonları sayan öğrenci I = {kesir:3,2|10} = 0,32 A bulur; bu sonuç gerçek akımın yarısıdır. Hatası, sola giden negatif iyonların da akım taşıdığını, sola giden negatif yükün sağa giden pozitif yük gibi etki ettiğini gözden kaçırmasıdır.\nd) Devre seri olduğu için metal tellerden de 0,64 A geçer; tellerde akımı serbest elektronlar taşır. 1 saniyede geçen yük 0,64 C'dur: n = {kesir:0,64|1,6 × {us:10|−19}} = {koyu:4 × {us:10|18} elektron}. Bu elektronlar tellerde akım yönünün tersine, pilin − kutbundan çıkıp + kutbuna doğru hareket eder."
+    }
+  ]
+}

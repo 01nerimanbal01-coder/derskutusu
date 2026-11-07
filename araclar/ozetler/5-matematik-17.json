@@ -1,0 +1,572 @@
+{
+  "ad": "5-matematik-17",
+  "sinif": 5,
+  "ders": "matematik",
+  "ders_adi": "Matematik",
+  "hafta": 17,
+  "tarih": "11-15 Ocak 2027",
+  "yayin_tarihi": "2027-01-11",
+  "unite": "Geometrik Nicelikler",
+  "konu": "Dikdörtgenin Çevre Uzunluğu ve Alanı",
+  "ciktilar": [
+    "MAT.5.4.4. Dikdörtgenin çevre uzunluğu ve alanı ile ilgili problemleri çözebilme: Problemlerde şekil, uzunluk ve alan ölçüleri gibi matematiksel bileşenleri ve bu bileşenler arasındaki ilişkileri belirler.",
+    "MAT.5.4.4. Problem bağlamındaki temsilleri şekil, şerit modeli ve tablo gibi farklı temsillere dönüştürür; problemi kendi ifadeleriyle açıklar, sonuca ilişkin tahminde bulunur ve çözüm için stratejiler geliştirip uygular.",
+    "MAT.5.4.4. Çözüm yollarını kontrol eder, çözüme ulaştırmayan stratejiyi değiştirir; alternatif çözüm yollarını değerlendirir, stratejilerini farklı problemlere geneller ve genellemelerin geçerliliğini matematiksel örneklerle sınar."
+  ],
+  "giris": "Son üç haftada dikdörtgenin çevresini ve alanını bulmayı, aynı çevreli ya da aynı alanlı dikdörtgenleri karşılaştırmayı öğrendik. Bu hafta öğrendiklerimizi {koyu:gerçek yaşam problemlerinde} kullanacağız. Önce bir problemde neyin verildiğini ve neyin istendiğini ayırt edecek, problemi {koyu:şekle, şerit modeline ve tabloya} dönüştüreceğiz. Ardından tahmin yapıp strateji seçecek, dikdörtgenlerden oluşan şekillerle uğraşacak, çözümlerimizi {koyu:kontrol edip} gerektiğinde strateji değiştirecek ve bulduğumuz kuralları yeni örneklerle sınayacağız.",
+  "ozet": [
+    "{koyu:Bileşenleri belirleme:} Bir problemde önce şekil, verilen uzunluklar, istenen nicelik (çevre mi, alan mı), birim ve ek koşullar (fiyat, kapı boşluğu gibi) belirlenir; çit ve çerçeve çevreyi, halı ve boya alanı gerektirir.",
+    "{koyu:Temsil dönüştürme:} Uzun kenarı kısa kenarının 3 katı olan ve çevresi 48 cm olan dikdörtgen şerit modeliyle 4 parçalık yarı çevreye dönüştürülür; 1 parça 6 cm, kenarlar 6 cm ve 18 cm, alan 108 {us:cm|2} bulunur.",
+    "{koyu:Tahmin ve strateji:} 300 cm × 240 cm duvara kenarı 20 cm olan kare fayans döşemek için sıraları sayarak (15 × 12) ya da alanları bölerek (72 000 ÷ 400) aynı sonuca, 180 fayansa ulaşılır.",
+    "{koyu:Bileşik şekiller:} Dikdörtgenlerden oluşan şeklin alanı parçalama ya da tamamlama stratejisiyle bulunur; köşesinden dikdörtgen kesilen şeklin alanı azalır ama çevresi büyük dikdörtgenin çevresiyle aynı kalır.",
+    "{koyu:Kontrol ve strateji değiştirme:} Bulunan kenarlar problemin bütün koşullarında sınanır; rastgele deneme sonuç vermezse sistemli listelemeye geçilir: çevresi 26 cm, alanı 40 {us:cm|2} olan dikdörtgen 5 cm × 8 cm'dir.",
+    "{koyu:Genelleme:} Bir kenar 1 birim artarsa çevre her zaman 2 birim artar; ancak bir genellemenin geçerli olması için her örnekte tutması gerekir, tek bir karşı örnek onu geçersiz kılar."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Problemdeki Matematiksel Bileşenleri Belirleme: Çevre mi Alan mı?",
+      "metin": [
+        "Bir problemi çözmeye başlamadan önce onu dikkatle okuyup {koyu:matematiksel bileşenlerini} ayırırız. Dikdörtgenle ilgili bir problemde bu bileşenler genellikle şunlardır: {koyu:şekil} (dikdörtgen mi, kare mi, birden fazla dikdörtgenden oluşan bir şekil mi), {koyu:verilen uzunluklar}, {koyu:istenen nicelik} (çevre, alan ya da bir kenar), {koyu:birimler} (cm, m, {us:cm|2}, {us:m|2}) ve {koyu:ek koşullar} (birim fiyat, kapı boşluğu, kaç kat boya yapılacağı gibi). Örneğin «Kenarları 12 m ve 8 m olan dikdörtgen biçimli bir bahçenin etrafına metresi 25 TL olan çit çekilecektir. Çit için kaç TL ödenir?» probleminde şekil dikdörtgen, kenarlar 12 m ve 8 m, istenen ise çitin fiyatıdır; ek koşul olarak 1 metre çitin fiyatı verilmiştir.",
+        "Bileşenleri belirledikten sonra aralarındaki {koyu:ilişkileri} kurarız. Çit bahçenin sınırı boyunca çekildiği için çitin uzunluğu bahçenin {koyu:çevre uzunluğuna} eşittir: 2 × (12 + 8) = 2 × 20 = 40 m. Toplam fiyat da uzunluk ile birim fiyatın çarpımıdır: 40 × 25 = 1000 TL. Aynı bahçenin tamamına 1 {us:m|2}'si 15 TL'ye çim ekilecek olsaydı bu kez yüzeyi, yani {koyu:alanı} hesaplamamız gerekirdi: 12 × 8 = 96 {us:m|2} ve 96 × 15 = 1440 TL. Görüldüğü gibi aynı bahçe, aynı sayılar; ama sorulan şeye göre işlem tamamen değişir.",
+        "Problemin dilindeki bazı ifadeler hangi niceliğin istendiğini anlamamıza yardım eder. {koyu:Etrafını çevirmek, kenarına şerit dikmek, çerçeve yapmak, süpürgelik döşemek, etrafında yürümek} gibi ifadeler sınırın uzunluğunu, yani çevreyi; {koyu:kaplamak, boyamak, halı sermek, fayans döşemek, çim ya da tohum ekmek} gibi ifadeler yüzeyin büyüklüğünü, yani alanı gerektirir. Yine de kelimelere körü körüne güvenmek yerine «Bu iş sınır boyunca mı yapılıyor, yüzeyin tamamına mı?» diye kendimize sorarız. Ek koşulları da gözden kaçırmamalıyız: Çitte 2 metrelik bir kapı boşluğu bırakılacaksa çit uzunluğu çevreden 2 m eksik olur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Problemdeki Durum",
+          "İstenen Nicelik",
+          "Kullanılan İşlem",
+          "Sonucun Birimi"
+        ],
+        "satirlar": [
+          [
+            "Bahçenin etrafına çit çekmek",
+            "Çevre uzunluğu",
+            "2 × (a + b)",
+            "m"
+          ],
+          [
+            "Odanın tabanına halı sermek",
+            "Alan",
+            "a × b",
+            "{us:m|2}"
+          ],
+          [
+            "Resme tahta çerçeve yapmak",
+            "Çevre uzunluğu",
+            "2 × (a + b)",
+            "cm"
+          ],
+          [
+            "Duvarı boyamak",
+            "Alan",
+            "a × b",
+            "{us:m|2}"
+          ],
+          [
+            "Masa örtüsünün kenarına dantel dikmek",
+            "Çevre uzunluğu",
+            "2 × (a + b)",
+            "cm"
+          ],
+          [
+            "Tarlanın tamamına tohum ekmek",
+            "Alan",
+            "a × b",
+            "{us:m|2}"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Sınır mı Yüzey mi?",
+          "metin": "İş, şeklin sınırı boyunca yapılıyorsa çevre uzunluğunu, şeklin içini kaplıyorsa alanı hesapla. Çevrenin birimi uzunluk birimi (cm, m), alanın birimi kare birimdir ({us:cm|2}, {us:m|2})."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Ek Koşulları Atlama",
+          "metin": "Kapı boşluğu, çift sıra çit ya da iki kat boya gibi bilgiler sonucu değiştirir. Çevresi 40 m olan bahçeye 2 m kapı bırakılarak çit çekilirse 38 m çit gerekir; iki sıra çit çekilirse 80 m gerekir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>PROBLEMDE NE İSTENİYOR: ÇEVRE Mİ, ALAN MI?</text><rect x='20' y='44' width='355' height='176' rx='12' fill='#fef2f2' stroke='#dc2626' stroke-width='1.5'/><text x='197' y='66' text-anchor='middle' font-size='14' font-weight='bold' fill='#b91c1c'>ÇEVRE: Sınırın uzunluğu</text><rect x='56' y='92' width='120' height='80' fill='#ffffff' stroke='#dc2626' stroke-width='5'/><text x='116' y='86' text-anchor='middle' font-size='12' fill='#1e293b'>12 m</text><text x='48' y='136' text-anchor='end' font-size='12' fill='#1e293b'>8 m</text><text x='200' y='100' font-size='12' fill='#7f1d1d'>• çit çekmek</text><text x='200' y='120' font-size='12' fill='#7f1d1d'>• çerçeve yapmak</text><text x='200' y='140' font-size='12' fill='#7f1d1d'>• süpürgelik döşemek</text><text x='200' y='160' font-size='12' fill='#7f1d1d'>• dantel, kurdele</text><text x='197' y='204' text-anchor='middle' font-size='13' font-weight='bold' fill='#b91c1c'>2 × (12 + 8) = 40 m</text><rect x='385' y='44' width='355' height='176' rx='12' fill='#f0fdf4' stroke='#16a34a' stroke-width='1.5'/><text x='562' y='66' text-anchor='middle' font-size='14' font-weight='bold' fill='#15803d'>ALAN: Kaplanan yüzey</text><rect x='421' y='92' width='120' height='80' fill='#bbf7d0' stroke='#15803d' stroke-width='2'/><text x='481' y='86' text-anchor='middle' font-size='12' fill='#1e293b'>12 m</text><text x='413' y='136' text-anchor='end' font-size='12' fill='#1e293b'>8 m</text><text x='565' y='100' font-size='12' fill='#14532d'>• halı sermek</text><text x='565' y='120' font-size='12' fill='#14532d'>• duvarı boyamak</text><text x='565' y='140' font-size='12' fill='#14532d'>• fayans döşemek</text><text x='565' y='160' font-size='12' fill='#14532d'>• çim ekmek</text><text x='562' y='204' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>12 × 8 = 96 m²</text><rect x='20' y='232' width='720' height='56' rx='10' fill='#fff7ed' stroke='#ea580c' stroke-width='1.5'/><text x='380' y='254' text-anchor='middle' font-size='13' font-weight='bold' fill='#c2410c'>Bileşenler: şekil • verilen kenarlar • istenen nicelik • birim • ek koşul</text><text x='380' y='276' text-anchor='middle' font-size='12' fill='#7c2d12'>Ek koşul örnekleri: 1 metre çitin fiyatı, kapı boşluğu, iki kat boya</text></svg>"
+    },
+    {
+      "baslik": "Problemi Şekle, Şerit Modeline ve Tabloya Dönüştürme",
+      "metin": [
+        "Sözel olarak verilen bir problem, {koyu:farklı bir temsile} dönüştürüldüğünde çok daha kolay anlaşılır. En sık kullandığımız temsil {koyu:şekil çizmektir}: Bir dikdörtgen çizer, bilinen kenarlarına uzunlukları, bilinmeyenlere soru işareti yazarız. Böylece problemde nelerin verildiğini ve neyin eksik olduğunu bir bakışta görürüz. Birden çok dikdörtgenin karşılaştırıldığı problemlerde ise {koyu:tablo} daha kullanışlıdır: Kenarları, çevreleri ve alanları sütunlara yazınca hangi dikdörtgenin istenen koşulu sağladığı hemen ortaya çıkar. Şekil, tablo ve işlem aynı problemin farklı görünümleridir; biri yetmediğinde diğerine geçebiliriz.",
+        "Kenarlar arasında {koyu:kat ilişkisi} olan problemlerde {koyu:şerit modeli} çok işe yarar. «Uzun kenarı kısa kenarının 3 katı olan bir dikdörtgenin çevresi 48 cm'dir. Bu dikdörtgenin alanı kaç {us:cm|2}'dir?» problemini ele alalım. Kısa kenarı 1 eş parça, uzun kenarı 3 eş parça olarak çizeriz. Yarı çevre, bir kısa ve bir uzun kenarın toplamı olduğundan 1 + 3 = 4 parçadır. Yarı çevre 48 ÷ 2 = 24 cm olduğuna göre 1 parça 24 ÷ 4 = 6 cm'dir. Kısa kenar 6 cm, uzun kenar 3 × 6 = 18 cm, alan ise 6 × 18 = 108 {us:cm|2} olur. Kontrol: 2 × (6 + 18) = 48 cm.",
+        "Kenarlar arasında {koyu:fark ilişkisi} varsa yine şerit modeliyle düşünebiliriz. «Uzun kenarı kısa kenarından 4 cm fazla olan dikdörtgenin çevresi 28 cm'dir.» Yarı çevre 14 cm'dir ve iki şeritten oluşur: Biri kısa kenar, diğeri kısa kenar ile 4 cm'lik bir parçanın toplamı. 14 − 4 = 10 cm'yi iki eşit kısa kenara paylaştırırız: 10 ÷ 2 = 5 cm. Kenarlar 5 cm ve 9 cm, alan 45 {us:cm|2}'dir. Çözümü {koyu:kendi ifadelerimizle} şöyle açıklayabiliriz: «Yarı çevreden fazlalığı çıkarınca geriye iki eşit kısa kenar kaldı; birini bulmak için ikiye böldüm.» Bir çözümü kendi cümlelerimizle anlatabiliyorsak onu gerçekten anlamışız demektir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Sözel İfade",
+          "Şerit Modeli",
+          "Yarı Çevre",
+          "Kenarlar ve Alan"
+        ],
+        "satirlar": [
+          [
+            "Uzun kenar kısa kenarın 3 katı, çevre 48 cm",
+            "Kısa: 1 parça, uzun: 3 parça",
+            "24 cm = 4 parça",
+            "6 cm ve 18 cm; 108 {us:cm|2}"
+          ],
+          [
+            "Uzun kenar kısa kenarın 2 katı, çevre 36 cm",
+            "Kısa: 1 parça, uzun: 2 parça",
+            "18 cm = 3 parça",
+            "6 cm ve 12 cm; 72 {us:cm|2}"
+          ],
+          [
+            "Uzun kenar kısa kenardan 4 cm fazla, çevre 28 cm",
+            "İki eş şerit + 4 cm",
+            "14 cm",
+            "5 cm ve 9 cm; 45 {us:cm|2}"
+          ],
+          [
+            "Kenarlar eşit (kare), çevre 32 cm",
+            "4 eş parça",
+            "16 cm = 2 parça",
+            "8 cm ve 8 cm; 64 {us:cm|2}"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Kat İlişkisinde Parça Say",
+          "metin": "Uzun kenar kısa kenarın kaç katıysa yarı çevre (kat sayısı + 1) parçadır. Yarı çevreyi parça sayısına böl, 1 parçayı bul; sonra kenarları ve alanı hesapla."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Yarı Çevre Bir Kısa ve Bir Uzun Kenardır",
+          "metin": "Dikdörtgenin çevresi 2 × (a + b) olduğundan çevrenin yarısı a + b'dir. Bu nedenle kenarlarla ilgili bütün ilişkileri yarı çevre üzerinde kurmak işi kolaylaştırır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>KAT İLİŞKİSİNİ ŞERİT MODELİYLE GÖSTERME</text><rect x='20' y='42' width='720' height='38' rx='10' fill='#eff6ff' stroke='#2563eb' stroke-width='1.5'/><text x='380' y='66' text-anchor='middle' font-size='13' fill='#1e3a8a'>Uzun kenarı kısa kenarının 3 katı olan dikdörtgenin çevresi 48 cm. Alanı kaç cm²?</text><text x='30' y='124' font-size='13' font-weight='bold' fill='#1e293b'>Kısa kenar</text><rect x='130' y='104' width='60' height='30' rx='4' fill='#bfdbfe' stroke='#1d4ed8' stroke-width='1.5'/><text x='160' y='124' text-anchor='middle' font-size='11' fill='#1e3a8a'>1 parça</text><text x='30' y='169' font-size='13' font-weight='bold' fill='#1e293b'>Uzun kenar</text><rect x='130' y='149' width='60' height='30' rx='4' fill='#fed7aa' stroke='#c2410c' stroke-width='1.5'/><rect x='190' y='149' width='60' height='30' rx='4' fill='#fed7aa' stroke='#c2410c' stroke-width='1.5'/><rect x='250' y='149' width='60' height='30' rx='4' fill='#fed7aa' stroke='#c2410c' stroke-width='1.5'/><text x='160' y='169' text-anchor='middle' font-size='11' fill='#7c2d12'>1 parça</text><text x='220' y='169' text-anchor='middle' font-size='11' fill='#7c2d12'>1 parça</text><text x='280' y='169' text-anchor='middle' font-size='11' fill='#7c2d12'>1 parça</text><line x1='130' y1='194' x2='310' y2='194' stroke='#64748b' stroke-width='2'/><line x1='130' y1='188' x2='130' y2='200' stroke='#64748b' stroke-width='2'/><line x1='310' y1='188' x2='310' y2='200' stroke='#64748b' stroke-width='2'/><text x='220' y='216' text-anchor='middle' font-size='13' font-weight='bold' fill='#1e293b'>Yarı çevre: 48 ÷ 2 = 24 cm = 4 parça</text><text x='220' y='240' text-anchor='middle' font-size='13' fill='#334155'>1 parça = 24 ÷ 4 = 6 cm</text><text x='220' y='264' text-anchor='middle' font-size='13' fill='#334155'>Kısa kenar 6 cm, uzun kenar 3 × 6 = 18 cm</text><line x1='350' y1='150' x2='392' y2='150' stroke='#64748b' stroke-width='2'/><polygon points='390,144 402,150 390,156' fill='#64748b'/><rect x='430' y='112' width='270' height='90' fill='#dcfce7' stroke='#15803d' stroke-width='2'/><text x='565' y='104' text-anchor='middle' font-size='12' fill='#1e293b'>18 cm</text><text x='422' y='161' text-anchor='end' font-size='12' fill='#1e293b'>6 cm</text><text x='565' y='162' text-anchor='middle' font-size='14' font-weight='bold' fill='#15803d'>Alan = 6 × 18 = 108 cm²</text><rect x='430' y='222' width='270' height='50' rx='10' fill='#fff7ed' stroke='#ea580c' stroke-width='1.5'/><text x='565' y='243' text-anchor='middle' font-size='12' font-weight='bold' fill='#c2410c'>Kontrol</text><text x='565' y='262' text-anchor='middle' font-size='12' fill='#7c2d12'>2 × (6 + 18) = 2 × 24 = 48 cm</text></svg>"
+    },
+    {
+      "baslik": "Tahminde Bulunma ve Çözüm Stratejisi Geliştirme",
+      "metin": [
+        "Hesaplamaya geçmeden önce sonucu {koyu:tahmin etmek}, işlemlerin sonunda bulduğumuz sayının akla yatkın olup olmadığını anlamamızı sağlar. Kenarları 19 m ve 11 m olan bir bahçenin alanını tahmin etmek için sayıları kolay sayılara yuvarlarız: 20 × 10 = 200 {us:m|2}. Gerçek sonuç 19 × 11 = 209 {us:m|2}'dir ve tahminimize oldukça yakındır. Hesaplama sonunda 2090 ya da 30 gibi bir sayı bulsaydık tahminimizle karşılaştırarak hemen hata yaptığımızı fark ederdik. Tahmin, aynı zamanda hangi işlemlerin yapılacağına dair bir plan kurmamıza da yardımcı olur.",
+        "Bir problemi çözmenin çoğu zaman birden fazla {koyu:stratejisi} vardır. «Kenarları 300 cm ve 240 cm olan bir duvar, kenarı 20 cm olan kare fayanslarla boşluksuz kaplanacaktır. Kaç fayans gerekir?» problemini düşünelim. {koyu:Birinci strateji, sıraları saymaktır:} Bir sıraya 300 ÷ 20 = 15 fayans sığar, duvarın yüksekliği boyunca 240 ÷ 20 = 12 sıra oluşur; toplam 15 × 12 = 180 fayans gerekir. {koyu:İkinci strateji, alanları bölmektir:} Duvarın alanı 300 × 240 = 72 000 {us:cm|2}, bir fayansın alanı 20 × 20 = 400 {us:cm|2}'dir; 72 000 ÷ 400 = 180 fayans. İki farklı yolun aynı sonucu vermesi çözümümüze güvenimizi artırır.",
+        "Stratejiyi problemin yapısına göre seçeriz. Kenarlar fayansın kenarına kalansız bölünüyorsa iki strateji de çalışır. Kenarlardan biri tam bölünmüyorsa son sıradaki fayansların kesilmesi gerekir; bu durumda sıraları saymak, kaç tam ve kaç kesik fayans kullanılacağını görmek için daha uygundur. Kenarlar arasında kat ya da fark ilişkisi varsa {koyu:şerit modeli}, olası kenarların arandığı problemlerde {koyu:sistemli listeleme}, şekil birden çok dikdörtgenden oluşuyorsa {koyu:parçalama} işimizi kolaylaştırır. İyi bir problem çözücü tek bir yönteme takılıp kalmaz; elindeki stratejileri tanır ve probleme en uygun olanı seçer."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Strateji",
+          "Ne Zaman Kullanılır?",
+          "Kısa Örnek"
+        ],
+        "satirlar": [
+          [
+            "Şekil çizme",
+            "Hemen her problemde, ilk adım olarak",
+            "Bahçeyi çizip kenarlara 12 m ve 8 m yazmak"
+          ],
+          [
+            "Şerit modeli",
+            "Kenarlar arasında kat veya fark ilişkisi varsa",
+            "Uzun kenar 3 katı: yarı çevre 4 parça"
+          ],
+          [
+            "Sistemli listeleme / tablo",
+            "Olası kenar çiftleri aranıyorsa",
+            "Çevre 26, alan 40: çiftleri sırayla dene"
+          ],
+          [
+            "Sıra sayma",
+            "Kare fayans veya karo döşenecekse",
+            "15 fayans × 12 sıra = 180 fayans"
+          ],
+          [
+            "Alanları bölme",
+            "Kenarlar fayansa kalansız bölünüyorsa",
+            "72 000 ÷ 400 = 180 fayans"
+          ],
+          [
+            "Parçalama / tamamlama",
+            "Şekil birden çok dikdörtgenden oluşuyorsa",
+            "L biçimli odayı iki dikdörtgene ayırmak"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "ipucu",
+          "baslik": "Yuvarlayarak Tahmin Et",
+          "metin": "Kenarları onluğa ya da yüzlüğe yuvarlayarak hızlı bir tahmin yap. 19 m × 11 m için 20 × 10 = 200 {us:m|2} tahmini, gerçek sonuç olan 209 {us:m|2}'nin akla yatkın olduğunu gösterir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "İki Yol, Bir Sonuç",
+          "metin": "Aynı problemi iki farklı stratejiyle çözüp aynı sonuca ulaşmak, çözümün doğruluğunu kontrol etmenin en güvenilir yollarından biridir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><defs><pattern id='t17c' width='16' height='16' patternUnits='userSpaceOnUse'><rect width='16' height='16' fill='#fef3c7'/><path d='M 16 0 L 0 0 0 16' fill='none' stroke='#d97706' stroke-width='1'/></pattern></defs><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='26' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>DUVARA KAÇ FAYANS GEREKİR? İKİ STRATEJİ</text><text x='170' y='54' text-anchor='middle' font-size='12' fill='#1e293b'>300 cm (bir sırada 15 fayans)</text><rect x='50' y='62' width='240' height='192' fill='url(#t17c)' stroke='#b45309' stroke-width='2'/><text x='36' y='158' text-anchor='middle' font-size='12' fill='#1e293b' transform='rotate(-90 36 158)'>240 cm (12 sıra)</text><text x='170' y='276' text-anchor='middle' font-size='12' fill='#334155'>Her kare fayans: 20 cm × 20 cm</text><rect x='320' y='50' width='420' height='100' rx='12' fill='#eff6ff' stroke='#2563eb' stroke-width='1.5'/><text x='530' y='74' text-anchor='middle' font-size='14' font-weight='bold' fill='#1d4ed8'>STRATEJİ A: Sıraları say</text><text x='530' y='96' text-anchor='middle' font-size='12' fill='#1e3a8a'>Bir sıradaki fayans: 300 ÷ 20 = 15</text><text x='530' y='116' text-anchor='middle' font-size='12' fill='#1e3a8a'>Sıra sayısı: 240 ÷ 20 = 12</text><text x='530' y='138' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>15 × 12 = 180 fayans</text><rect x='320' y='160' width='420' height='100' rx='12' fill='#f0fdf4' stroke='#16a34a' stroke-width='1.5'/><text x='530' y='184' text-anchor='middle' font-size='14' font-weight='bold' fill='#15803d'>STRATEJİ B: Alanları böl</text><text x='530' y='206' text-anchor='middle' font-size='12' fill='#14532d'>Duvar: 300 × 240 = 72 000 cm²</text><text x='530' y='226' text-anchor='middle' font-size='12' fill='#14532d'>Bir fayans: 20 × 20 = 400 cm²</text><text x='530' y='248' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>72 000 ÷ 400 = 180 fayans</text><text x='530' y='284' text-anchor='middle' font-size='13' font-weight='bold' fill='#c2410c'>İki yol aynı sonucu verdi: çözüm doğrulandı.</text></svg>"
+    },
+    {
+      "baslik": "Dikdörtgenlerden Oluşan Şekillerde Çevre ve Alan",
+      "metin": [
+        "Gerçek yaşamda odalar, bahçeler ya da arsalar her zaman tek bir dikdörtgen biçiminde olmaz; çoğu zaman {koyu:L biçiminde} ya da birkaç dikdörtgenin birleşmesinden oluşan şekillerle karşılaşırız. Böyle bir şeklin alanını bulmanın ilk yolu {koyu:parçalama stratejisidir}: Şekli kesikli bir çizgiyle dikdörtgenlere ayırır, her birinin alanını bulup toplarız. Alt kenarı 10 m, sol kenarı 8 m, üst kenarı 6 m ve sağ kenarı 5 m olan L biçimli bir bahçeyi düşünelim. Önce eksik kenarları buluruz: Girintinin yatay kenarı 10 − 6 = 4 m, dikey kenarı 8 − 5 = 3 m'dir. Şekli yatay bir çizgiyle ayırırsak altta 10 × 5 = 50 {us:m|2}, üstte 6 × 3 = 18 {us:m|2} alan elde ederiz; toplam alan 50 + 18 = 68 {us:m|2}'dir.",
+        "İkinci yol {koyu:tamamlama stratejisidir}: Şekli, eksik köşeyi ekleyerek büyük bir dikdörtgene tamamlar, büyük dikdörtgenin alanından eklediğimiz parçanın alanını çıkarırız. L biçimli bahçeyi 10 m × 8 m'lik bir dikdörtgene tamamlarsak alan 80 {us:m|2} olur; eklediğimiz köşe parçası 4 m × 3 m = 12 {us:m|2}'dir. Bahçenin alanı 80 − 12 = 68 {us:m|2} çıkar. İki stratejinin aynı sonucu vermesi çözümü doğrular. Parçalama, şekil az sayıda büyük parçaya ayrılabiliyorsa; tamamlama ise şeklin küçük bir eksik köşesi varsa daha pratiktir.",
+        "Bileşik şekillerde {koyu:çevre} için bütün dış kenarları tek tek toplarız: 10 + 5 + 4 + 3 + 6 + 8 = 36 m. İlginç olan, bu sonucun 10 m × 8 m'lik büyük dikdörtgenin çevresiyle aynı olmasıdır: 2 × (10 + 8) = 36 m. Nedeni şudur: Köşeden kesilen parçanın içe giren 4 m'lik ve 3 m'lik kenarları, kaybolan 4 m'lik üst parçanın ve 3 m'lik yan parçanın yerini tutar. Yani {koyu:köşeden dikdörtgen kesmek alanı azaltır ama çevreyi değiştirmez.} Ancak parça bir kenarın ortasından kesilirse durum değişir: 10 m × 6 m'lik bir dikdörtgenin üst kenarının ortasından 2 m genişliğinde ve 3 m derinliğinde bir parça çıkarılırsa alan 60 − 6 = 54 {us:m|2} olur, çevre ise iki yeni 3 m'lik kenar eklendiği için 32 + 6 = 38 m'ye çıkar."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Yöntem",
+          "Yapılan İş",
+          "İşlem",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "Parçalama (yatay)",
+            "Alt ve üst dikdörtgene ayırma",
+            "10 × 5 + 6 × 3 = 50 + 18",
+            "68 {us:m|2}"
+          ],
+          [
+            "Parçalama (dikey)",
+            "Sol ve sağ dikdörtgene ayırma",
+            "6 × 8 + 4 × 5 = 48 + 20",
+            "68 {us:m|2}"
+          ],
+          [
+            "Tamamlama",
+            "Büyük dikdörtgenden köşeyi çıkarma",
+            "10 × 8 − 4 × 3 = 80 − 12",
+            "68 {us:m|2}"
+          ],
+          [
+            "Çevre (kenar toplama)",
+            "Bütün dış kenarları toplama",
+            "10 + 5 + 4 + 3 + 6 + 8",
+            "36 m"
+          ],
+          [
+            "Çevre (büyük dikdörtgen)",
+            "Köşe kesilince çevre değişmez",
+            "2 × (10 + 8)",
+            "36 m"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Parçalama ve Tamamlama",
+          "metin": "Parçalama: Şekli küçük dikdörtgenlere ayırıp alanlarını toplamak. Tamamlama: Şekli büyük bir dikdörtgene tamamlayıp eklenen parçanın alanını büyük dikdörtgenin alanından çıkarmak."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Köşeden Kesmek ile Ortadan Kesmek Farklıdır",
+          "metin": "Köşesinden dikdörtgen kesilen şeklin çevresi değişmez. Bir kenarın ortasından girinti açılırsa girintinin iki derinlik kenarı eklendiği için çevre artar. Çevreyi her zaman dış kenarları sayarak kontrol et."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>L BİÇİMLİ BAHÇE: PARÇALAMA VE TAMAMLAMA</text><polygon points='40,80 136,80 136,128 200,128 200,208 40,208' fill='#dbeafe' stroke='#1d4ed8' stroke-width='2'/><line x1='40' y1='128' x2='136' y2='128' stroke='#b91c1c' stroke-width='2' stroke-dasharray='6 4'/><text x='88' y='72' text-anchor='middle' font-size='12' fill='#1e293b'>6 m</text><text x='32' y='148' text-anchor='end' font-size='12' fill='#1e293b'>8 m</text><text x='120' y='224' text-anchor='middle' font-size='12' fill='#1e293b'>10 m</text><text x='206' y='172' font-size='12' fill='#1e293b'>5 m</text><text x='168' y='122' text-anchor='middle' font-size='11' fill='#475569'>4 m</text><text x='142' y='108' font-size='11' fill='#475569'>3 m</text><text x='88' y='109' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>6 × 3 = 18</text><text x='120' y='172' text-anchor='middle' font-size='12' font-weight='bold' fill='#1d4ed8'>10 × 5 = 50</text><text x='120' y='250' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>PARÇALAMA: 18 + 50 = 68 m²</text><polygon points='300,80 396,80 396,128 460,128 460,208 300,208' fill='#dcfce7' stroke='#15803d' stroke-width='2'/><rect x='396' y='80' width='64' height='48' fill='#fee2e2' stroke='#dc2626' stroke-width='1.5' stroke-dasharray='5 4'/><text x='428' y='108' text-anchor='middle' font-size='11' font-weight='bold' fill='#b91c1c'>4 × 3 = 12</text><text x='380' y='72' text-anchor='middle' font-size='12' fill='#1e293b'>10 m</text><text x='292' y='148' text-anchor='end' font-size='12' fill='#1e293b'>8 m</text><text x='370' y='172' text-anchor='middle' font-size='12' font-weight='bold' fill='#15803d'>10 × 8 = 80</text><text x='380' y='250' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>TAMAMLAMA: 80 − 12 = 68 m²</text><text x='250' y='280' text-anchor='middle' font-size='12' fill='#334155'>Eksik kenarlar: 10 − 6 = 4 m ve 8 − 5 = 3 m</text><rect x='510' y='60' width='230' height='200' rx='12' fill='#fff7ed' stroke='#ea580c' stroke-width='1.5'/><text x='625' y='86' text-anchor='middle' font-size='14' font-weight='bold' fill='#c2410c'>ÇEVRE</text><text x='625' y='112' text-anchor='middle' font-size='12' fill='#7c2d12'>10 + 5 + 4 + 3 + 6 + 8</text><text x='625' y='132' text-anchor='middle' font-size='13' font-weight='bold' fill='#7c2d12'>= 36 m</text><text x='625' y='162' text-anchor='middle' font-size='12' fill='#7c2d12'>Büyük dikdörtgen:</text><text x='625' y='182' text-anchor='middle' font-size='12' fill='#7c2d12'>2 × (10 + 8) = 36 m</text><text x='625' y='214' text-anchor='middle' font-size='11' fill='#9a3412'>Köşeden kesmek alanı azaltır,</text><text x='625' y='232' text-anchor='middle' font-size='11' fill='#9a3412'>çevreyi değiştirmez.</text></svg>"
+    },
+    {
+      "baslik": "Çözümü Kontrol Etme ve İşe Yaramayan Stratejiyi Değiştirme",
+      "metin": [
+        "Bir problemin cevabını bulmak, işin yarısıdır; diğer yarısı bu cevabın {koyu:doğru olduğundan emin olmaktır}. «Çevresi 26 cm, alanı 40 {us:cm|2} olan ve kenarları santimetre cinsinden doğal sayı olan dikdörtgenin kenarlarını bulunuz.» problemini çözen Esra önce rastgele denemeler yapar: 4 × 9 dikdörtgeninin çevresi 26 cm'dir ama alanı 36 {us:cm|2}'dir; 6 × 7'nin çevresi 26 cm, alanı 42 {us:cm|2}; 3 × 10'un çevresi 26 cm, alanı 30 {us:cm|2}. Her denemede bir koşul sağlanıyor ama diğeri sağlanmıyor. Esra bu noktada rastgele denemenin onu sonuca götürmediğini fark eder ve {koyu:stratejisini değiştirir}.",
+        "Yeni strateji {koyu:sistemli listelemedir}. Yarı çevre 26 ÷ 2 = 13 cm olduğundan toplamı 13 olan çiftler sırayla yazılır ve alanlarına bakılır: (1, 12) → 12, (2, 11) → 22, (3, 10) → 30, (4, 9) → 36, (5, 8) → 40. Aranan dikdörtgen 5 cm × 8 cm'dir. Aynı sonuca alanı 40 olan çiftlerden de ulaşılabilir: (1, 40), (2, 20), (4, 10), (5, 8) çiftlerinin toplamları 41, 22, 14 ve 13'tür; yalnız (5, 8) çiftinin toplamı yarı çevreye eşittir. Son olarak {koyu:bütün koşullar sınanır}: 2 × (5 + 8) = 26 cm ve 5 × 8 = 40 {us:cm|2}. İki koşul da sağlandığına göre çözüm doğrudur.",
+        "Kontrol ederken şu sorulara cevap ararız: Bulduğum sayılar problemdeki {koyu:bütün koşulları} sağlıyor mu? Sonuç {koyu:tahminime} yakın mı? {koyu:Birim} doğru mu (çevre için cm, alan için {us:cm|2})? Ters işlemle sınadım mı? Sık yapılan hatalar da kontrolle yakalanır: 7 cm × 4 cm dikdörtgenin çevresini 7 + 4 = 11 cm bulmak yarı çevreyi çevre sanmaktır; doğrusu 22 cm'dir. Kenarları 2 m ve 50 cm olan bir masa örtüsünün alanını 2 × 50 = 100 diye hesaplamak birimleri karıştırmaktır; önce 2 m = 200 cm yazılır, alan 200 × 50 = 10 000 {us:cm|2}, çevre 2 × (200 + 50) = 500 cm bulunur."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Sık Yapılan Hata",
+          "Örnek",
+          "Doğrusu"
+        ],
+        "satirlar": [
+          [
+            "Yarı çevreyi çevre sanmak",
+            "7 × 4 için çevre = 7 + 4 = 11 cm",
+            "2 × (7 + 4) = 22 cm"
+          ],
+          [
+            "Çevre yerine alan hesaplamak",
+            "Çit için 12 × 8 = 96 m",
+            "Çit uzunluğu 2 × (12 + 8) = 40 m"
+          ],
+          [
+            "Birimleri karıştırmak",
+            "2 m ve 50 cm için 2 × 50 = 100",
+            "200 × 50 = 10 000 {us:cm|2}"
+          ],
+          [
+            "Tek koşulu sınamak",
+            "4 × 9: çevre 26 tuttu, alan bakılmadı",
+            "Alan 36 olduğundan uygun değil"
+          ],
+          [
+            "Ek koşulu unutmak",
+            "Kapı boşluğu çıkarılmadan 40 m çit",
+            "40 − 2 = 38 m çit"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Bütün Koşulları Sına",
+          "metin": "Problemde iki koşul varsa (örneğin çevre 26 cm ve alan 40 {us:cm|2}) bulduğun kenarlar ikisini birden sağlamalıdır. Bir koşulun tutması çözümün doğru olduğunu göstermez."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Rastgele Değil, Sırayla Dene",
+          "metin": "Denemelerin seni sonuca götürmüyorsa stratejiyi değiştir: Kısa kenara 1'den başlayarak sırayla değer ver ve sonuçları tabloya yaz. Böylece hiçbir olasılığı atlamazsın."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>ÇÖZ, KONTROL ET, GEREKİRSE STRATEJİYİ DEĞİŞTİR</text><rect x='20' y='44' width='165' height='60' rx='10' fill='#eff6ff' stroke='#2563eb' stroke-width='1.5'/><text x='102' y='68' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>1. ANLA</text><text x='102' y='90' text-anchor='middle' font-size='11' fill='#1e3a8a'>Bileşenleri belirle</text><rect x='205' y='44' width='165' height='60' rx='10' fill='#f5f3ff' stroke='#7c3aed' stroke-width='1.5'/><text x='287' y='68' text-anchor='middle' font-size='13' font-weight='bold' fill='#6d28d9'>2. PLANLA</text><text x='287' y='90' text-anchor='middle' font-size='11' fill='#4c1d95'>Tahmin et, strateji seç</text><rect x='390' y='44' width='165' height='60' rx='10' fill='#f0fdf4' stroke='#16a34a' stroke-width='1.5'/><text x='472' y='68' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>3. UYGULA</text><text x='472' y='90' text-anchor='middle' font-size='11' fill='#14532d'>İşlemleri yap</text><rect x='575' y='44' width='165' height='60' rx='10' fill='#fff7ed' stroke='#ea580c' stroke-width='1.5'/><text x='657' y='68' text-anchor='middle' font-size='13' font-weight='bold' fill='#c2410c'>4. KONTROL ET</text><text x='657' y='90' text-anchor='middle' font-size='11' fill='#7c2d12'>Bütün koşulları sına</text><polygon points='187,68 199,74 187,80' fill='#64748b'/><polygon points='372,68 384,74 372,80' fill='#64748b'/><polygon points='557,68 569,74 557,80' fill='#64748b'/><path d='M 657 104 L 657 128 L 287 128 L 287 114' fill='none' stroke='#dc2626' stroke-width='2'/><polygon points='281,116 293,116 287,106' fill='#dc2626'/><text x='472' y='144' text-anchor='middle' font-size='12' font-weight='bold' fill='#b91c1c'>Sonuca ulaştırmadıysa stratejiyi değiştir</text><rect x='20' y='156' width='355' height='130' rx='12' fill='#fef2f2' stroke='#dc2626' stroke-width='1.5'/><text x='197' y='178' text-anchor='middle' font-size='13' font-weight='bold' fill='#b91c1c'>1. DENEME: RASTGELE</text><text x='197' y='200' text-anchor='middle' font-size='12' fill='#7f1d1d'>Koşul: çevre 26 cm, alan 40 cm²</text><text x='197' y='220' text-anchor='middle' font-size='12' fill='#7f1d1d'>4 × 9: alan 36, olmadı</text><text x='197' y='240' text-anchor='middle' font-size='12' fill='#7f1d1d'>6 × 7: alan 42, olmadı</text><text x='197' y='260' text-anchor='middle' font-size='12' fill='#7f1d1d'>3 × 10: alan 30, olmadı</text><text x='197' y='278' text-anchor='middle' font-size='11' font-weight='bold' fill='#b91c1c'>Denemeler dağınık: strateji değişmeli</text><rect x='385' y='156' width='355' height='130' rx='12' fill='#f0fdf4' stroke='#16a34a' stroke-width='1.5'/><text x='562' y='178' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>2. DENEME: SİSTEMLİ LİSTE</text><text x='562' y='200' text-anchor='middle' font-size='12' fill='#14532d'>Yarı çevre: 26 ÷ 2 = 13 cm</text><text x='562' y='220' text-anchor='middle' font-size='12' fill='#14532d'>(1, 12): 12 • (2, 11): 22 • (3, 10): 30</text><text x='562' y='240' text-anchor='middle' font-size='12' fill='#14532d'>(4, 9): 36 • (5, 8): 40 bulundu</text><text x='562' y='260' text-anchor='middle' font-size='12' fill='#14532d'>2 × (5 + 8) = 26 ve 5 × 8 = 40</text><text x='562' y='278' text-anchor='middle' font-size='11' font-weight='bold' fill='#15803d'>İki koşul da sağlandı</text></svg>"
+    },
+    {
+      "baslik": "Alternatif Çözüm Yollarını Değerlendirme ve Stratejileri Genelleme",
+      "metin": [
+        "Bir problemi çözdükten sonra «Başka nasıl çözebilirdim?» diye sormak, matematiksel düşünmemizi güçlendirir. Dikdörtgenin çevresini {koyu:a + b + a + b}, {koyu:2 × a + 2 × b} ya da {koyu:2 × (a + b)} biçiminde hesaplayabiliriz; üçü de aynı sonucu verir. 15 m × 9 m bahçe için 15 + 9 + 15 + 9 = 48, 30 + 18 = 48 ve 2 × 24 = 48 m bulunur. En kısa yol genellikle 2 × (a + b)'dir, çünkü önce yarı çevre bulunur ve yarı çevre birçok problemde zaten işimize yarar. L biçimli bahçenin alanını yatay ayırarak (50 + 18), dikey ayırarak (48 + 20) ya da tamamlayarak (80 − 12) bulmak da {koyu:alternatif çözüm yollarına} güzel bir örnektir. Hangisinin daha az işlem gerektirdiğini karşılaştırmak, bir sonraki problemde doğru seçimi yapmamızı sağlar.",
+        "Bir problemde kullandığımız stratejiyi {koyu:farklı problemlere genelleyebiliriz}. Şerit modeliyle «uzun kenar 3 katı, çevre 48» problemini çözdük; aynı düşünce «uzun kenar 2 katı, çevre 36» problemine de uygulanır: Yarı çevre 18 cm, 3 parçadır; 1 parça 6 cm, kenarlar 6 cm ve 12 cm, alan 72 {us:cm|2}. Hesaplamalarımızdan genel kurallar da çıkarabiliriz. 3 × 5 dikdörtgeninin çevresi 16'dır; kısa kenar 1 artınca 4 × 5 dikdörtgeninin çevresi 18 olur. 7 × 2'den 8 × 2'ye geçince çevre 18'den 20'ye çıkar. Buradan şu {koyu:genellemeye} ulaşırız: «Bir kenar 1 birim artarsa çevre 2 birim artar», çünkü o kenar dikdörtgende iki kez bulunur. Alan ise bu durumda diğer kenar kadar artar: 3 × 5 = 15'ten 4 × 5 = 20'ye.",
+        "Bir genellemeye güvenmeden önce onun {koyu:geçerliliğini} farklı örneklerle sınarız. «İki kenar birlikte 2 katına çıkarsa çevre de 2 katına çıkar» genellemesini deneyelim: 3 × 5'in çevresi 16, 6 × 10'un çevresi 32; 4 × 1'in çevresi 10, 8 × 2'nin çevresi 20. Her örnekte tuttuğu gibi bir gerekçesi de vardır: Yarı çevre 2 katına çıkınca çevre de 2 katına çıkar. Peki «Bir kenara 3 ekleyip diğerinden 3 çıkarırsak alan değişmez» genellemesi doğru mu? 4 × 10 = 40 iken 7 × 7 = 49, 2 × 8 = 16 iken 5 × 5 = 25 olur; bu genelleme {koyu:geçersizdir}. Unutmayalım: Bir genellemeyi doğrulamak için örnekler yanında bir gerekçe gerekir, ama onu çürütmek için {koyu:tek bir karşı örnek} yeter."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Genelleme",
+          "Örnek 1",
+          "Örnek 2",
+          "Karar"
+        ],
+        "satirlar": [
+          [
+            "Bir kenar 1 birim artarsa çevre 2 birim artar.",
+            "3 × 5: 16 → 4 × 5: 18",
+            "7 × 2: 18 → 8 × 2: 20",
+            "Geçerli"
+          ],
+          [
+            "Bir kenar 1 birim artarsa alan diğer kenar kadar artar.",
+            "3 × 5: 15 → 4 × 5: 20 (+5)",
+            "6 × 4: 24 → 7 × 4: 28 (+4)",
+            "Geçerli"
+          ],
+          [
+            "İki kenar 2 katına çıkarsa çevre 2 katına çıkar.",
+            "3 × 5: 16 → 6 × 10: 32",
+            "4 × 1: 10 → 8 × 2: 20",
+            "Geçerli"
+          ],
+          [
+            "Bir kenar 1 birim artarsa alan 1 birimkare artar.",
+            "3 × 5: 15 → 4 × 5: 20 (+5)",
+            "6 × 4: 24 → 7 × 4: 28 (+4)",
+            "Geçersiz"
+          ],
+          [
+            "Bir kenara 3 ekleyip diğerinden 3 çıkarınca alan değişmez.",
+            "4 × 10: 40 → 7 × 7: 49",
+            "2 × 8: 16 → 5 × 5: 25",
+            "Geçersiz"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Genellemeyi Sınama Kuralı",
+          "metin": "Bir genellemeyi farklı sayılarla dene ve neden doğru olduğunu açıklamaya çalış. Örneklerin hepsinde tutuyor ve bir gerekçesi varsa güvenebilirsin; tek bir örnekte bile tutmuyorsa genelleme geçersizdir."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Stratejiler Taşınabilir",
+          "metin": "Şerit modeli, sistemli listeleme ve parçalama yalnız bir probleme ait değildir. Bir problemde işe yarayan stratejiyi, benzer yapıdaki yeni problemlere uyarlayarak kullanabilirsin."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc'/><text x='380' y='28' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>GENELLEMEYİ ÖRNEKLERLE SINAMA</text><rect x='20' y='44' width='240' height='32' rx='8' fill='#1e293b'/><text x='140' y='65' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>Genelleme</text><rect x='270' y='44' width='150' height='32' rx='8' fill='#1e293b'/><text x='345' y='65' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>Örnek 1</text><rect x='430' y='44' width='150' height='32' rx='8' fill='#1e293b'/><text x='505' y='65' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>Örnek 2</text><rect x='590' y='44' width='150' height='32' rx='8' fill='#1e293b'/><text x='665' y='65' text-anchor='middle' font-size='13' font-weight='bold' fill='#ffffff'>Karar</text><rect x='20' y='84' width='240' height='52' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='140' y='106' text-anchor='middle' font-size='12' fill='#1e293b'>Bir kenar 1 artarsa</text><text x='140' y='124' text-anchor='middle' font-size='12' fill='#1e293b'>çevre 2 artar</text><rect x='270' y='84' width='150' height='52' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='345' y='115' text-anchor='middle' font-size='12' fill='#334155'>3 × 5: 16 → 4 × 5: 18</text><rect x='430' y='84' width='150' height='52' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='505' y='115' text-anchor='middle' font-size='12' fill='#334155'>7 × 2: 18 → 8 × 2: 20</text><rect x='590' y='84' width='150' height='52' rx='8' fill='#dcfce7' stroke='#16a34a'/><text x='665' y='115' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>GEÇERLİ</text><rect x='20' y='144' width='240' height='52' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='140' y='166' text-anchor='middle' font-size='12' fill='#1e293b'>İki kenar 2 katına çıkarsa</text><text x='140' y='184' text-anchor='middle' font-size='12' fill='#1e293b'>çevre 2 katına çıkar</text><rect x='270' y='144' width='150' height='52' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='345' y='175' text-anchor='middle' font-size='12' fill='#334155'>3 × 5: 16 → 6 × 10: 32</text><rect x='430' y='144' width='150' height='52' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='505' y='175' text-anchor='middle' font-size='12' fill='#334155'>4 × 1: 10 → 8 × 2: 20</text><rect x='590' y='144' width='150' height='52' rx='8' fill='#dcfce7' stroke='#16a34a'/><text x='665' y='175' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>GEÇERLİ</text><rect x='20' y='204' width='240' height='52' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='140' y='226' text-anchor='middle' font-size='12' fill='#1e293b'>Bir kenara 3 ekle, diğerinden</text><text x='140' y='244' text-anchor='middle' font-size='12' fill='#1e293b'>3 çıkar: alan değişmez</text><rect x='270' y='204' width='150' height='52' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='345' y='235' text-anchor='middle' font-size='12' fill='#334155'>4 × 10: 40 → 7 × 7: 49</text><rect x='430' y='204' width='150' height='52' rx='8' fill='#ffffff' stroke='#cbd5e1'/><text x='505' y='235' text-anchor='middle' font-size='12' fill='#334155'>2 × 8: 16 → 5 × 5: 25</text><rect x='590' y='204' width='150' height='52' rx='8' fill='#fee2e2' stroke='#dc2626'/><text x='665' y='235' text-anchor='middle' font-size='13' font-weight='bold' fill='#b91c1c'>GEÇERSİZ</text><text x='380' y='284' text-anchor='middle' font-size='13' font-weight='bold' fill='#c2410c'>Tek bir karşı örnek, bir genellemeyi geçersiz kılmaya yeter.</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "Kenarları 15 m ve 9 m olan dikdörtgen biçimli bir bahçenin etrafına metresi 30 TL olan çit çekilecek, bahçenin tamamına da 1 {us:m|2}'si 20 TL'ye çim ekilecektir. Çit ve çim için toplam kaç TL ödenir?",
+      "cevap": "1. Adım (Bileşenler): Şekil dikdörtgen; kenarlar 15 m ve 9 m. Çit sınır boyunca çekildiği için çevre, çim yüzeye ekildiği için alan gereklidir.\n2. Adım (Tahmin): Alan yaklaşık 15 × 10 = 150 {us:m|2}; çim için yaklaşık 3000 TL beklenir.\n3. Adım (Çit): Çevre = 2 × (15 + 9) = 2 × 24 = 48 m. Çit fiyatı = 48 × 30 = 1440 TL.\n4. Adım (Çim): Alan = 15 × 9 = 135 {us:m|2}. Çim fiyatı = 135 × 20 = 2700 TL. Tahminimize yakındır.\n5. Adım (Toplam): 1440 + 2700 = 4140 TL.\nSonuç: Toplam 4140 TL ödenir.",
+      "ipucu": "Çit için çevreyi, çim için alanı hesapla; her birini kendi birim fiyatıyla çarp."
+    },
+    {
+      "soru": "Uzun kenarı kısa kenarının 4 katı olan bir dikdörtgenin çevre uzunluğu 50 cm'dir. Bu dikdörtgenin alanı kaç {us:cm|2}'dir?",
+      "cevap": "1. Adım (Şerit modeli): Kısa kenar 1 parça, uzun kenar 4 parça olarak çizilir.\n2. Adım (Yarı çevre): 50 ÷ 2 = 25 cm. Yarı çevre 1 + 4 = 5 parçadır.\n3. Adım (1 parça): 25 ÷ 5 = 5 cm.\n4. Adım (Kenarlar): Kısa kenar 5 cm, uzun kenar 4 × 5 = 20 cm.\n5. Adım (Alan): 5 × 20 = 100 {us:cm|2}.\n6. Adım (Kontrol): 2 × (5 + 20) = 50 cm ve 20 = 4 × 5; iki koşul da sağlanıyor.\nSonuç: Dikdörtgenin alanı 100 {us:cm|2}'dir.",
+      "ipucu": "Uzun kenar 4 katı ise yarı çevre 5 eş parçadır."
+    },
+    {
+      "soru": "Kenarları 240 cm ve 180 cm olan bir banyo duvarı, kenarı 30 cm olan kare fayanslarla boşluksuz kaplanacaktır. Bir fayans 45 TL ise fayanslar için kaç TL ödenir?",
+      "cevap": "1. Adım (Sıra sayma): Bir sıradaki fayans sayısı 240 ÷ 30 = 8, sıra sayısı 180 ÷ 30 = 6. Fayans sayısı = 8 × 6 = 48.\n2. Adım (Alternatif yol ile kontrol): Duvarın alanı 240 × 180 = 43 200 {us:cm|2}; bir fayansın alanı 30 × 30 = 900 {us:cm|2}; 43 200 ÷ 900 = 48 fayans. İki yol aynı sonucu verdi.\n3. Adım (Fiyat): 48 × 45 = 2160 TL.\nSonuç: 48 fayans gerekir ve fayanslar için 2160 TL ödenir.",
+      "ipucu": "Her kenar boyunca kaç fayans sığdığını bul ve bu iki sayıyı çarp."
+    },
+    {
+      "soru": "L biçimli bir odanın planı, kenarları 12 m ve 9 m olan bir dikdörtgenin bir köşesinden 5 m × 4 m'lik bir dikdörtgen çıkarılarak elde edilmiştir. Odanın taban alanını bulunuz. Odanın duvar dibine, 1 m'lik kapı boşluğu dışında süpürgelik döşenecektir. Kaç metre süpürgelik gerekir?",
+      "cevap": "1. Adım (Tamamlama ile alan): Büyük dikdörtgen 12 × 9 = 108 {us:m|2}; çıkarılan parça 5 × 4 = 20 {us:m|2}. Alan = 108 − 20 = 88 {us:m|2}.\n2. Adım (Parçalama ile kontrol): Alt parça 12 × (9 − 4) = 12 × 5 = 60 {us:m|2}; üst parça (12 − 5) × 4 = 7 × 4 = 28 {us:m|2}. 60 + 28 = 88 {us:m|2}.\n3. Adım (Çevre): Parça köşeden kesildiği için çevre büyük dikdörtgenin çevresine eşittir: 2 × (12 + 9) = 42 m. Kenarları toplayarak kontrol: 12 + 5 + 5 + 4 + 7 + 9 = 42 m.\n4. Adım (Kapı boşluğu): 42 − 1 = 41 m.\nSonuç: Taban alanı 88 {us:m|2}'dir; 41 m süpürgelik gerekir.",
+      "ipucu": "Alanı tamamlama ile bul, parçalama ile kontrol et; süpürgelik çevre boyunca döşenir."
+    },
+    {
+      "soru": "Çevre uzunluğu 34 cm, alanı 60 {us:cm|2} olan ve kenarları santimetre cinsinden doğal sayı olan dikdörtgenin kenar uzunluklarını bulunuz.",
+      "cevap": "1. Adım (Yarı çevre): 34 ÷ 2 = 17 cm. Kenarların toplamı 17 olmalı.\n2. Adım (Alanı 60 olan çiftler): (1, 60), (2, 30), (3, 20), (4, 15), (5, 12), (6, 10). 7 × 7 = 49, 8 × 8 = 64 olduğundan 8'de durulur; 7 de 60'ı kalansız bölmez.\n3. Adım (Toplamları sına): 61, 32, 23, 19, 17, 16. Toplamı 17 olan tek çift (5, 12)'dir.\n4. Adım (Kontrol): 2 × (5 + 12) = 34 cm ve 5 × 12 = 60 {us:cm|2}.\nSonuç: Dikdörtgenin kenarları 5 cm ve 12 cm'dir.",
+      "ipucu": "Alanı veren çiftleri sistemli listele, toplamı yarı çevreye eşit olanı seç."
+    },
+    {
+      "soru": "Uzun kenarı 9 cm olan bir dikdörtgenin kısa kenarı 3 cm uzatılıyor. Kısa kenarın uzunluğu bilinmeden alanın ve çevrenin ne kadar artacağı söylenebilir mi? İki örnekle sınayınız.",
+      "cevap": "1. Adım (Akıl yürütme): Kısa kenara 3 cm eklemek, dikdörtgene 3 cm × 9 cm'lik bir şerit eklemek demektir; alan 3 × 9 = 27 {us:cm|2} artar. Kısa kenar dikdörtgende iki kez bulunduğundan çevre 2 × 3 = 6 cm artar.\n2. Adım (Örnek 1, kısa kenar 4 cm): Alan 4 × 9 = 36'dan 7 × 9 = 63'e çıkar (27 artış). Çevre 2 × 13 = 26'dan 2 × 16 = 32'ye çıkar (6 artış).\n3. Adım (Örnek 2, kısa kenar 6 cm): Alan 6 × 9 = 54'ten 9 × 9 = 81'e çıkar (27 artış). Çevre 2 × 15 = 30'dan 2 × 18 = 36'ya çıkar (6 artış).\nSonuç: Evet; kısa kenar ne olursa olsun alan 27 {us:cm|2}, çevre 6 cm artar. Genelleme örneklerle de doğrulanmıştır.",
+      "ipucu": "Eklenen parçayı ayrı bir dikdörtgen olarak düşün; çevrede uzatılan kenarın iki kez sayıldığını unutma."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Bir odanın tabanına halı döşenecektir. Gereken halının büyüklüğünü bulmak için odanın hangi ölçüsü hesaplanmalıdır?",
+      "secenekler": [
+        "Çevre uzunluğu",
+        "Alanı",
+        "Yalnız kısa kenarı",
+        "Yarı çevresi"
+      ],
+      "dogru": 1,
+      "aciklama": "Halı tabanın tüm yüzeyini kaplar; bu yüzden yüzeyin büyüklüğü, yani alan (kısa kenar × uzun kenar) hesaplanır. Çevre ise süpürgelik gibi sınır boyunca yapılan işler için gerekir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Uzun kenarı kısa kenarının 2 katı olan bir dikdörtgenin çevre uzunluğu 42 cm'dir. Bu dikdörtgenin alanı kaç {us:cm|2}'dir?",
+      "secenekler": [
+        "98",
+        "147",
+        "84",
+        "63"
+      ],
+      "dogru": 0,
+      "aciklama": "Yarı çevre 42 ÷ 2 = 21 cm ve 1 + 2 = 3 parçadır. 1 parça 21 ÷ 3 = 7 cm; kenarlar 7 cm ve 14 cm'dir. Alan = 7 × 14 = 98 {us:cm|2}. Kontrol: 2 × (7 + 14) = 42 cm."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kenarları 8 cm ve 6 cm olan bir dikdörtgen kartonun bir köşesinden 3 cm × 2 cm'lik bir dikdörtgen kesiliyor. Kalan kartonun alanı ve çevre uzunluğu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        "Alan 48 {us:cm|2}, çevre 28 cm",
+        "Alan 42 {us:cm|2}, çevre 22 cm",
+        "Alan 42 {us:cm|2}, çevre 28 cm",
+        "Alan 36 {us:cm|2}, çevre 34 cm"
+      ],
+      "dogru": 2,
+      "aciklama": "Alan: 8 × 6 − 3 × 2 = 48 − 6 = 42 {us:cm|2}. Parça köşeden kesildiği için çevre değişmez: 2 × (8 + 6) = 28 cm."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Kenarları 200 cm ve 160 cm olan bir duvar, kenarı 20 cm olan kare fayanslarla boşluksuz kaplanacaktır. Kaç fayans gerekir?",
+      "secenekler": [
+        "36",
+        "72",
+        "40",
+        "80"
+      ],
+      "dogru": 3,
+      "aciklama": "Bir sıraya 200 ÷ 20 = 10 fayans sığar ve 160 ÷ 20 = 8 sıra oluşur; 10 × 8 = 80 fayans gerekir. Kontrol: 200 × 160 = 32 000 {us:cm|2}, 32 000 ÷ 400 = 80. 36 sayısı ise (10 + 8) × 2 işleminin hatalı sonucudur."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Bir bahçenin etrafına çekilecek çitin uzunluğunu bulmak için bahçenin alanı hesaplanır.",
+          "dogru": false,
+          "aciklama": "Çit bahçenin sınırı boyunca çekilir; bu yüzden çevre uzunluğu hesaplanır."
+        },
+        {
+          "metin": "Bir dikdörtgenin köşesinden küçük bir dikdörtgen kesilirse kalan şeklin alanı azalır, çevresi değişmez.",
+          "dogru": true,
+          "aciklama": "İçe giren iki kenar, kaybolan kenar parçalarının yerini tutar. Örneğin 10 m × 8 m'den 4 m × 3 m kesilince alan 80'den 68'e iner, çevre 36 m kalır."
+        },
+        {
+          "metin": "Uzun kenarı kısa kenarının 3 katı olan bir dikdörtgenin çevresi, 8 tane kısa kenar uzunluğuna eşittir.",
+          "dogru": true,
+          "aciklama": "Yarı çevre 1 + 3 = 4 kısa kenar uzunluğudur; çevre bunun 2 katı, yani 8 kısa kenar uzunluğudur."
+        },
+        {
+          "metin": "Bir dikdörtgenin kısa kenarı 1 cm artırılırsa alanı her zaman 1 {us:cm|2} artar.",
+          "dogru": false,
+          "aciklama": "Alan, uzun kenar kadar artar. 3 × 5 = 15'ten 4 × 5 = 20'ye geçince alan 5 {us:cm|2} artar."
+        },
+        {
+          "metin": "Kenarları 300 cm ve 240 cm olan bir duvarı kenarı 20 cm olan kare fayanslarla kaplamak için 180 fayans gerekir.",
+          "dogru": true,
+          "aciklama": "300 ÷ 20 = 15 ve 240 ÷ 20 = 12; 15 × 12 = 180 fayans."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki durum ve stratejileri doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Çit, çerçeve, süpürgelik",
+          "Çevre uzunluğu hesaplanır"
+        ],
+        [
+          "Halı, boya, fayans, çim",
+          "Alan hesaplanır"
+        ],
+        [
+          "Parçalama stratejisi",
+          "Şekli küçük dikdörtgenlere ayırıp alanlarını toplamak"
+        ],
+        [
+          "Tamamlama stratejisi",
+          "Büyük dikdörtgenin alanından eksik parçanın alanını çıkarmak"
+        ],
+        [
+          "Şerit modeli",
+          "Kat ilişkisi olan kenarları eş parçalarla göstermek"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Bir bahçenin etrafına çekilecek çitin uzunluğu bahçenin ___ uzunluğuna eşittir.",
+          "cevap": "çevre"
+        },
+        {
+          "metin": "Bir odanın tabanına serilecek halının büyüklüğü odanın ___ hesaplanarak bulunur.",
+          "cevap": "alanı"
+        },
+        {
+          "metin": "Bileşik bir şekli küçük dikdörtgenlere ayırıp alanlarını toplamaya ___ stratejisi denir.",
+          "cevap": "parçalama"
+        },
+        {
+          "metin": "Bir şekli büyük bir dikdörtgene tamamlayıp eklenen parçanın alanını çıkarmaya ___ stratejisi denir.",
+          "cevap": "tamamlama"
+        },
+        {
+          "metin": "Bulunan kenarlarla problemin bütün koşullarını yeniden sınamaya çözümü ___ etmek denir.",
+          "cevap": "kontrol"
+        }
+      ],
+      "kelimeler": [
+        "çevre",
+        "alanı",
+        "parçalama",
+        "tamamlama",
+        "kontrol"
+      ],
+      "fazla": [
+        "tahmin",
+        "yarı çevre"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir okul, kenarları 18 m ve 12 m olan dikdörtgen biçimli bahçesinin etrafını, 2 m'lik giriş boşluğu bırakarak metresi 40 TL olan çitle çevirecektir. Bahçenin 6 m × 4 m'lik bir bölümüne 1 {us:m|2}'si 150 TL olan kauçuk zemin, geri kalan bölümüne 1 {us:m|2}'si 25 TL olan çim döşenecektir. Okulun toplam harcamasını bulunuz ve çözümünüzü kontrol ediniz.",
+      "ipuclari": [
+        "1. adım: Bileşenleri belirle. Çit için çevre, kauçuk zemin ve çim için alan gerektiğini fark et; giriş boşluğunu unutma.",
+        "2. adım: Çevreyi 2 × (18 + 12) ile bul, 2 m'yi çıkar ve 40 TL ile çarp. Bahçenin alanını bul; oyun alanının alanını çıkararak çim alanını hesapla.",
+        "3. adım: Kauçuk ve çim fiyatlarını hesapla, üç tutarı topla. Çim alanı ile kauçuk alanının toplamının bahçenin alanına eşit olduğunu kontrol et."
+      ],
+      "cevap": "1. Adım (Çit): Çevre = 2 × (18 + 12) = 2 × 30 = 60 m. Giriş boşluğu çıkarılınca 60 − 2 = 58 m çit gerekir. Çit tutarı = 58 × 40 = 2320 TL.\n2. Adım (Alanlar): Bahçenin alanı = 18 × 12 = 216 {us:m|2}. Oyun alanı = 6 × 4 = 24 {us:m|2}. Çim alanı = 216 − 24 = 192 {us:m|2}.\n3. Adım (Zemin tutarları): Kauçuk = 24 × 150 = 3600 TL. Çim = 192 × 25 = 4800 TL.\n4. Adım (Toplam): 2320 + 3600 + 4800 = 10 720 TL.\n5. Adım (Kontrol): 24 + 192 = 216 {us:m|2}, bahçenin alanına eşit. Tahmin: çim yaklaşık 200 × 25 = 5000 TL, kauçuk yaklaşık 25 × 150 = 3750 TL, çit yaklaşık 60 × 40 = 2400 TL; toplam yaklaşık 11 000 TL, bulduğumuz sonuca yakındır.\nSonuç: Okulun toplam harcaması 10 720 TL'dir."
+    }
+  ]
+}

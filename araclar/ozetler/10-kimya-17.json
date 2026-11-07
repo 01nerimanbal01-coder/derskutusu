@@ -1,0 +1,566 @@
+{
+  "ad": "10-kimya-17",
+  "sinif": 10,
+  "ders": "kimya",
+  "ders_adi": "Kimya",
+  "hafta": 17,
+  "tarih": "11-15 Ocak 2027",
+  "yayin_tarihi": "2027-01-11",
+  "unite": "2. Tema: Çeşitlilik",
+  "konu": "Çözeltiler: Çözünme Süreci ve Çözünmenin Tanecik Modelleriyle Açıklanması",
+  "ciktilar": [
+    "KİM.10.2.1. Çözünme sürecine ilişkin bilimsel model oluşturabilme",
+    "a) Çözünme sürecini temsil etmek için basit tanecik modelleri geliştirir.",
+    "b) Çözünme sürecine ilişkin modelleri bilimsel modellerle karşılaştırır."
+  ],
+  "giris": "Gazlar konusunu geride bıraktık ve yeni temamız {koyu:Çeşitlilik} ile maddelerin karışarak oluşturduğu sayısız sistemle tanışıyoruz. Bu hafta çay bardağındaki şekerin nereye gittiğini, tuzlu suyun içinde tuzun hangi hâlde bulunduğunu ve yağın neden suda çözünmediğini {koyu:tanecik modelleri} çizerek açıklayacağız. Önce kendi basit modellerimizi geliştirecek, ardından bunları {koyu:çözünmenin bilimsel modeliyle} karşılaştırıp hangi noktalarda eksik ya da hatalı olduklarını tartışacağız.",
+  "ozet": [
+    "{koyu:Çözelti:} Bir maddenin başka bir madde içinde tanecikleri düzeyinde dağılmasıyla oluşan homojen karışımdır; genellikle miktarı fazla olan bileşen {koyu:çözücü}, az olan {koyu:çözünen} olarak adlandırılır.",
+    "{koyu:Tanecik modeli:} Çözünme modellenirken çözünen tanecikleri kaybolmaz, küçülmez ya da başka maddeye dönüşmez; çözücü tanecikleri arasına her yerde aynı oranda dağılmış olarak çizilir.",
+    "{koyu:Bilimsel model:} Çözünme; çözünen-çözünen ve çözücü-çözücü etkileşimlerinin zayıflayıp kopması ile yeni {koyu:çözücü-çözünen etkileşimlerinin} oluşmasıdır; bu sırada enerji alınır ya da verilir.",
+    "{koyu:İyonik çözünme:} NaCl gibi iyonik katılar suda iyonlarına ayrışır; her iyonun çevresini su molekülleri sarar ({koyu:hidratasyon}) ve çözelti elektrik akımını iletir.",
+    "{koyu:Moleküler çözünme:} Şeker ve etanol gibi maddeler suda molekülleri hâlinde dağılır; bu tür çözünmede baskın etkileşim çoğunlukla hidrojen bağıdır ve çözelti elektriği iletmez.",
+    "{koyu:Benzer benzeri çözer:} Polar ve iyonik maddeler polar çözücülerde, apolar maddeler apolar çözücülerde iyi çözünür; çözünmede toplam kütle korunur ama hacimler her zaman toplanmaz."
+  ],
+  "bolumler": [
+    {
+      "baslik": "Çözeltiler: Çözücü, Çözünen ve Homojen Karışım",
+      "metin": [
+        "Günlük hayatta karşılaştığımız maddelerin çok azı saf maddedir; çoğu iki ya da daha fazla maddenin karışımıdır. Karışımlar, bileşenlerin dağılma biçimine göre ikiye ayrılır: Bileşenleri gözle ya da mikroskopla ayırt edilebilen, her yerinde özellikleri aynı olmayan karışımlar {koyu:heterojen}; her noktasında aynı bileşime ve özelliğe sahip karışımlar {koyu:homojen} karışımlardır. Homojen karışımlara {koyu:çözelti} denir. Şekerli su, tuzlu su, kolonya, gazoz, hava ve pirinç (bakır-çinko alaşımı) birer çözeltidir. Zeytinyağı-su ya da kum-su karışımları ise heterojendir; bu karışımlarda bileşenler bir süre sonra katmanlar hâlinde ayrılır.",
+        "Bir çözeltide genellikle miktarı fazla olan ve diğer maddeyi içinde dağıtan bileşene {koyu:çözücü}, çözücü içinde dağılan bileşene {koyu:çözünen} denir. Şekerli suda su çözücü, şeker çözünendir. Çözücü ve çözünen katı, sıvı ya da gaz olabilir: Gazozda gaz (CO₂) sıvı içinde, havada gazlar (O₂, Ar) başka bir gaz (N₂) içinde, pirinçte ise bir katı (çinko) başka bir katı (bakır) içinde çözünmüştür. Doğada ve laboratuvarda en sık kullanılan çözücü {koyu:su} olduğundan, su ile hazırlanan çözeltilere özel olarak {koyu:sulu çözelti} denir ve bu çözeltilerdeki türlerin yanına (suda) ifadesi yazılır.",
+        "Bir maddenin başka bir madde içinde {koyu:tanecikleri (atom, molekül ya da iyon) düzeyinde} dağılarak homojen karışım oluşturmasına {koyu:çözünme} denir. Çözünmeyi bir katının küçük parçalara bölünmesi gibi düşünmek yanıltıcıdır; çünkü çözeltide çözünen maddenin gözle görülebilen parçacıkları kalmaz, tanecikler tek tek çözücü tanecikleri arasına dağılır. Bu yüzden çözeltiler ışığı saçmaz, süzgeç kâğıdından geçer ve bekletildiğinde çökme olmaz. Bu hafta tam olarak bu dağılmanın tanecikler düzeyinde nasıl gerçekleştiğini modelleyeceğiz."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Çözelti",
+          "Çözücü",
+          "Çözünen",
+          "Çözeltinin Fiziksel Hâli"
+        ],
+        "satirlar": [
+          [
+            "Şekerli su",
+            "Su",
+            "Şeker (C₁₂H₂₂O₁₁)",
+            "Sıvı"
+          ],
+          [
+            "Tuzlu su",
+            "Su",
+            "Sofra tuzu (NaCl)",
+            "Sıvı"
+          ],
+          [
+            "Gazoz",
+            "Su",
+            "Karbon dioksit (CO₂), şeker",
+            "Sıvı"
+          ],
+          [
+            "Kolonya",
+            "Etanol",
+            "Su, esans",
+            "Sıvı"
+          ],
+          [
+            "Hava",
+            "Azot (N₂)",
+            "Oksijen, argon, karbon dioksit",
+            "Gaz"
+          ],
+          [
+            "Pirinç alaşımı",
+            "Bakır (Cu)",
+            "Çinko (Zn)",
+            "Katı"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Çözelti, Çözücü ve Çözünen",
+          "metin": "{koyu:Çözelti:} İki ya da daha fazla maddenin tanecikleri düzeyinde karışmasıyla oluşan homojen karışım. {koyu:Çözücü:} Diğer maddeyi içinde dağıtan, genellikle miktarı fazla olan bileşen. {koyu:Çözünen:} Çözücü içinde tanecikleri hâlinde dağılan bileşen."
+        },
+        {
+          "tur": "dikkat",
+          "baslik": "Çözünme ve Erime Aynı Şey Değildir",
+          "metin": "Şekerin çayda “eridiği” söylenir; ancak bilimsel olarak bu olay {koyu:çözünmedir}. Erime, tek bir maddenin ısı alarak katı hâlden sıvı hâle geçmesidir ve başka bir madde gerektirmez. Çözünmede ise en az iki madde vardır ve çözünen tanecikleri çözücü tanecikleri arasına dağılır."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc' stroke='#cbd5e1'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Çözünme: Çözücü + Çözünen → Çözelti</text><rect x='30' y='52' width='200' height='160' rx='12' fill='#eff6ff' stroke='#1d4ed8'/><circle cx='60' cy='80' r='8' fill='#3b82f6'/><circle cx='100' cy='90' r='8' fill='#3b82f6'/><circle cx='145' cy='78' r='8' fill='#3b82f6'/><circle cx='190' cy='92' r='8' fill='#3b82f6'/><circle cx='70' cy='125' r='8' fill='#3b82f6'/><circle cx='120' cy='130' r='8' fill='#3b82f6'/><circle cx='165' cy='122' r='8' fill='#3b82f6'/><circle cx='205' cy='140' r='8' fill='#3b82f6'/><circle cx='55' cy='170' r='8' fill='#3b82f6'/><circle cx='100' cy='180' r='8' fill='#3b82f6'/><circle cx='150' cy='172' r='8' fill='#3b82f6'/><circle cx='195' cy='190' r='8' fill='#3b82f6'/><text x='130' y='236' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>Çözücü (su)</text><text x='130' y='254' text-anchor='middle' font-size='11' fill='#1e293b'>Miktarı genellikle fazla olan</text><text x='255' y='142' text-anchor='middle' font-size='30' font-weight='bold' fill='#475569'>+</text><rect x='280' y='52' width='200' height='160' rx='12' fill='#fff7ed' stroke='#c2410c'/><circle cx='350' cy='110' r='9' fill='#f97316'/><circle cx='370' cy='110' r='9' fill='#f97316'/><circle cx='390' cy='110' r='9' fill='#f97316'/><circle cx='410' cy='110' r='9' fill='#f97316'/><circle cx='350' cy='130' r='9' fill='#f97316'/><circle cx='370' cy='130' r='9' fill='#f97316'/><circle cx='390' cy='130' r='9' fill='#f97316'/><circle cx='410' cy='130' r='9' fill='#f97316'/><circle cx='350' cy='150' r='9' fill='#f97316'/><circle cx='370' cy='150' r='9' fill='#f97316'/><circle cx='390' cy='150' r='9' fill='#f97316'/><circle cx='410' cy='150' r='9' fill='#f97316'/><text x='380' y='236' text-anchor='middle' font-size='13' font-weight='bold' fill='#c2410c'>Çözünen (şeker)</text><text x='380' y='254' text-anchor='middle' font-size='11' fill='#1e293b'>Tanecikler bir arada (kristal)</text><line x1='492' y1='135' x2='516' y2='135' stroke='#475569' stroke-width='3'/><polygon points='516,128 526,135 516,142' fill='#475569'/><rect x='530' y='52' width='200' height='160' rx='12' fill='#f0fdf4' stroke='#15803d'/><circle cx='560' cy='80' r='8' fill='#3b82f6'/><circle cx='598' cy='88' r='9' fill='#f97316'/><circle cx='640' cy='78' r='8' fill='#3b82f6'/><circle cx='690' cy='90' r='8' fill='#3b82f6'/><circle cx='570' cy='125' r='8' fill='#3b82f6'/><circle cx='615' cy='130' r='8' fill='#3b82f6'/><circle cx='660' cy='120' r='9' fill='#f97316'/><circle cx='705' cy='140' r='8' fill='#3b82f6'/><circle cx='558' cy='172' r='9' fill='#f97316'/><circle cx='600' cy='182' r='8' fill='#3b82f6'/><circle cx='648' cy='172' r='8' fill='#3b82f6'/><circle cx='695' cy='190' r='9' fill='#f97316'/><text x='630' y='236' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>Çözelti (şekerli su)</text><text x='630' y='254' text-anchor='middle' font-size='11' fill='#1e293b'>Homojen: her yerde aynı oran</text><text x='380' y='284' text-anchor='middle' font-size='12' fill='#334155'>Çözünen tanecikleri kaybolmaz; çözücü tanecikleri arasına tek tek dağılır.</text></svg>"
+    },
+    {
+      "baslik": "Basit Tanecik Modelleri: Çözünmeyi Çizerek Temsil Etmek",
+      "metin": [
+        "Bir bardak suya bir çay kaşığı şeker atıp karıştırdığımızda şeker kristalleri bir süre sonra görünmez olur. Gözle yaptığımız bu gözlem bize ‘şeker kayboldu’ izlenimi verebilir; oysa suyun her yudumu tatlıdır ve bardak tartılırsa kütlenin şekerin kütlesi kadar arttığı görülür. Gözle göremediğimiz bu süreci anlamak için kimyacılar {koyu:model} kullanır. Model, doğrudan gözlenemeyen bir olayı açıklamak ve tahminde bulunmak için oluşturulan {koyu:basitleştirilmiş temsildir}. Çözünmeyi modellerken en kullanışlı araç {koyu:tanecik modelidir}: Her daire bir tanecik (molekül ya da iyon), her renk bir madde türü olarak gösterilir.",
+        "Basit bir tanecik modeli geliştirmek birkaç adımda yapılır. Önce {koyu:gözlemler} listelenir: Şeker görünmez olur, tat her yerde aynıdır, kütle korunur, süzüldüğünde şeker süzgeçte kalmaz. Ardından {koyu:temsil kararları} verilir: Su ve şeker tanecikleri farklı renk ve boyutta çizilir; katı şekerde tanecikler düzenli ve birbirine bitişik, sıvı suda ise birbirine yakın ama düzensiz gösterilir. Sonra çözünmeden önceki, çözünme sırasındaki ve çözünmeden sonraki durumlar üç ayrı çerçevede çizilir. Son olarak model gözlemlerle {koyu:sınanır}: Modeldeki her şeker taneciği hâlâ var mı? Tanecikler bardağın her yerine eşit dağılmış mı? Bu sorulara verilen cevap ‘evet’ ise model gözlemlerle uyumludur.",
+        "Öğrencilerin geliştirdiği ilk modellerde bazı tipik hatalar görülür. Kimi model şeker taneciklerini tamamen siler (kütle korunumuna aykırı), kimi şekeri dipte biriken küçük kristal parçaları olarak çizer (homojenliğe aykırı), kimi de şeker taneciklerinin ‘eriyip sıvı hâle geçtiğini’ gösterir (çözünmeyi erimeyle karıştırma). Ayrıca tuz için çizilen modellerde çoğu zaman NaCl birimleri sudaki molekül gibi bütün hâlde gösterilir. Bu hatalar, modelin kötü olduğunu değil {koyu:geliştirilmesi gerektiğini} gösterir. Bilim insanlarının modelleri de yeni kanıtlarla sürekli düzeltilmiştir; haftanın ilerleyen bölümlerinde basit modellerimizi bilimsel modelle bu şekilde karşılaştıracağız."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Gözlem",
+          "Modelde Nasıl Temsil Edilmeli?"
+        ],
+        "satirlar": [
+          [
+            "Şeker görünmez olur.",
+            "Şeker tanecikleri tek tek ayrılır; görülebilir kristal kalmaz."
+          ],
+          [
+            "Suyun her yeri aynı tatlılıktadır.",
+            "Şeker tanecikleri bardağın her bölgesine eşit sayıda dağıtılır."
+          ],
+          [
+            "Toplam kütle değişmez.",
+            "Çözünmeden önceki ve sonraki çizimde şeker tanecik sayısı aynıdır."
+          ],
+          [
+            "Su buharlaştırılınca şeker geri elde edilir.",
+            "Şeker tanecikleri başka maddeye dönüşmez; aynı renk ve biçimde kalır."
+          ],
+          [
+            "Sıcak suda daha hızlı çözünür.",
+            "Sıcak suda su tanecikleri daha uzun hareket okları ile gösterilir."
+          ],
+          [
+            "Çözelti süzgeç kâğıdından geçer.",
+            "Çözünen tanecikleri süzgeç gözeneklerinden çok küçük çizilir."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "tanim",
+          "baslik": "Bilimsel Model",
+          "metin": "Doğrudan gözlenemeyen olay ya da yapıları açıklamak, tahmin yapmak ve iletişim kurmak için kullanılan çizim, şema, maket veya matematiksel ifade. Bir model ne kadar çok gözlemi açıklayabiliyor ve doğru tahmin yapabiliyorsa {koyu:o kadar güçlüdür}."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "Model Çizerken Kontrol Listesi",
+          "metin": "1) Her madde için ayrı renk ve bir açıklama (lejant) kullanın. 2) Önce ve sonra çizimlerinde çözünen tanecik sayısını eşit tutun. 3) Tanecikleri kabın her yerine dağıtın. 4) Sıvıda tanecikleri birbirine yakın, gazda uzak çizin. 5) İyonik maddelerde iyonların yüklerini yazmayı unutmayın."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc' stroke='#cbd5e1'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Şekerli Su İçin Üç Öğrenci Modeli</text><rect x='20' y='46' width='230' height='240' rx='12' fill='#fef2f2' stroke='#dc2626'/><text x='135' y='68' text-anchor='middle' font-size='13' font-weight='bold' fill='#dc2626'>Model A ✗</text><rect x='60' y='80' width='150' height='120' rx='6' fill='#ffffff' stroke='#64748b'/><circle cx='80' cy='100' r='7' fill='#3b82f6'/><circle cx='115' cy='110' r='7' fill='#3b82f6'/><circle cx='150' cy='98' r='7' fill='#3b82f6'/><circle cx='190' cy='112' r='7' fill='#3b82f6'/><circle cx='90' cy='145' r='7' fill='#3b82f6'/><circle cx='135' cy='150' r='7' fill='#3b82f6'/><circle cx='180' cy='145' r='7' fill='#3b82f6'/><circle cx='80' cy='183' r='7' fill='#3b82f6'/><circle cx='125' cy='185' r='7' fill='#3b82f6'/><circle cx='170' cy='183' r='7' fill='#3b82f6'/><text x='135' y='224' text-anchor='middle' font-size='12' fill='#1e293b'>Şeker tamamen yok oldu.</text><text x='135' y='244' text-anchor='middle' font-size='11' fill='#991b1b'>Hata: kütle korunmuyor,</text><text x='135' y='260' text-anchor='middle' font-size='11' fill='#991b1b'>tatlı tat açıklanamıyor.</text><rect x='265' y='46' width='230' height='240' rx='12' fill='#fffbeb' stroke='#d97706'/><text x='380' y='68' text-anchor='middle' font-size='13' font-weight='bold' fill='#d97706'>Model B ✗</text><rect x='305' y='80' width='150' height='120' rx='6' fill='#ffffff' stroke='#64748b'/><circle cx='325' cy='100' r='7' fill='#3b82f6'/><circle cx='360' cy='110' r='7' fill='#3b82f6'/><circle cx='395' cy='98' r='7' fill='#3b82f6'/><circle cx='435' cy='112' r='7' fill='#3b82f6'/><circle cx='335' cy='145' r='7' fill='#3b82f6'/><circle cx='380' cy='145' r='7' fill='#3b82f6'/><circle cx='425' cy='145' r='7' fill='#3b82f6'/><circle cx='330' cy='188' r='6' fill='#f97316'/><circle cx='342' cy='188' r='6' fill='#f97316'/><circle cx='336' cy='178' r='6' fill='#f97316'/><circle cx='405' cy='188' r='6' fill='#f97316'/><circle cx='417' cy='188' r='6' fill='#f97316'/><circle cx='411' cy='178' r='6' fill='#f97316'/><text x='380' y='224' text-anchor='middle' font-size='12' fill='#1e293b'>Şeker küçük parçalara bölündü.</text><text x='380' y='244' text-anchor='middle' font-size='11' fill='#92400e'>Hata: karışım homojen değil,</text><text x='380' y='260' text-anchor='middle' font-size='11' fill='#92400e'>tanecikler ayrılmamış.</text><rect x='510' y='46' width='230' height='240' rx='12' fill='#f0fdf4' stroke='#16a34a'/><text x='625' y='68' text-anchor='middle' font-size='13' font-weight='bold' fill='#16a34a'>Model C ✓</text><rect x='550' y='80' width='150' height='120' rx='6' fill='#ffffff' stroke='#64748b'/><circle cx='570' cy='100' r='7' fill='#3b82f6'/><circle cx='605' cy='105' r='8' fill='#f97316'/><circle cx='640' cy='98' r='7' fill='#3b82f6'/><circle cx='680' cy='110' r='7' fill='#3b82f6'/><circle cx='575' cy='145' r='7' fill='#3b82f6'/><circle cx='620' cy='148' r='7' fill='#3b82f6'/><circle cx='665' cy='142' r='8' fill='#f97316'/><circle cx='572' cy='185' r='8' fill='#f97316'/><circle cx='615' cy='185' r='7' fill='#3b82f6'/><circle cx='660' cy='185' r='7' fill='#3b82f6'/><text x='625' y='224' text-anchor='middle' font-size='12' fill='#1e293b'>Şeker molekülleri su</text><text x='625' y='242' text-anchor='middle' font-size='12' fill='#1e293b'>molekülleri arasına dağıldı.</text><text x='625' y='262' text-anchor='middle' font-size='11' font-weight='bold' fill='#166534'>Bilimsel modele uygun</text></svg>"
+    },
+    {
+      "baslik": "Bilimsel Model: Çözünme Bir Etkileşim Değişimidir",
+      "metin": [
+        "Bilimsel modele göre çözünmeyi anlamanın anahtarı {koyu:tanecikler arası etkileşimlerdir}. Katı bir şekerde şeker molekülleri birbirini hidrojen bağlarıyla tutar; sıvı suda da su molekülleri birbirine hidrojen bağlarıyla bağlıdır. Şeker suya atıldığında yüzeydeki şeker molekülleri ile su molekülleri arasında da çekim kuvvetleri oluşur. Çözünme, bu üç tür etkileşimin yarışıdır: {koyu:çözünen-çözünen}, {koyu:çözücü-çözücü} ve {koyu:çözücü-çözünen} etkileşimleri. Çözücü-çözünen etkileşimleri yeterince güçlüyse su molekülleri şeker moleküllerini kristalden koparıp aralarına alır.",
+        "Bilimsel model çözünmeyi düşünsel olarak üç adımda inceler. {koyu:1. adım:} Çözünen tanecikleri arasındaki etkileşimler zayıflar ve kopar; tanecikler birbirinden ayrılır. Bu adım için {koyu:enerji gerekir}. {koyu:2. adım:} Çözücü tanecikleri arasındaki etkileşimlerin bir kısmı kopar ve çözünen taneciklerinin yerleşeceği boşluklar açılır. Bu adım için de {koyu:enerji gerekir}. {koyu:3. adım:} Çözücü tanecikleri çözünen taneciklerinin çevresini sarar ve yeni çözücü-çözünen etkileşimleri oluşur. Bu adımda {koyu:enerji açığa çıkar}. Çözücü taneciklerinin çözünen taneciklerini sarmasına {koyu:çözünme (solvatasyon)}, çözücü su ise {koyu:hidratasyon} denir. Gerçekte bu adımlar ayrı ayrı değil, eş zamanlı ve kristalin yüzeyinden içe doğru ilerler.",
+        "Bu üç adımdaki enerji değişimlerinin toplamı çözünmenin {koyu:ısı alan (endotermik)} ya da {koyu:ısı veren (ekzotermik)} olduğunu belirler. Koparılan etkileşimler için harcanan enerji, oluşan etkileşimlerle açığa çıkan enerjiden büyükse çözelti soğur; amonyum nitratın (NH₄NO₃) suda çözünmesi böyledir ve anlık soğuk kompreslerde kullanılır. Açığa çıkan enerji daha büyükse çözelti ısınır; katı sodyum hidroksitin (NaOH) suda çözünmesi buna örnektir. Bu model, basit çizimlerimizde göremediğimiz bir şeyi de açıklar: Çözünme sırasında hissedilen sıcaklık değişimi, tanecikler arasındaki {koyu:etkileşimlerin kopup yeniden oluşmasının} bir kanıtıdır."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Adım",
+          "Tanecikler Düzeyinde Ne Olur?",
+          "Enerji Değişimi"
+        ],
+        "satirlar": [
+          [
+            "1. Çözünen taneciklerinin ayrılması",
+            "Kristaldeki molekül ya da iyonlar arasındaki çekim zayıflar ve kopar.",
+            "Enerji alınır."
+          ],
+          [
+            "2. Çözücü taneciklerinin ayrılması",
+            "Çözücü molekülleri arasındaki etkileşimlerin bir kısmı kopar, boşluk açılır.",
+            "Enerji alınır."
+          ],
+          [
+            "3. Çözücü-çözünen etkileşimlerinin oluşması",
+            "Çözücü molekülleri çözünen taneciklerini sarar (solvatasyon/hidratasyon).",
+            "Enerji verilir."
+          ],
+          [
+            "Sonuç: Endotermik çözünme",
+            "Alınan enerji verilenden büyük; çözelti soğur (NH₄NO₃).",
+            "Toplamda enerji alınır."
+          ],
+          [
+            "Sonuç: Ekzotermik çözünme",
+            "Verilen enerji alınandan büyük; çözelti ısınır (NaOH).",
+            "Toplamda enerji verilir."
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Çözünmenin Temel Koşulu",
+          "metin": "Bir madde başka bir madde içinde, oluşan {koyu:çözücü-çözünen etkileşimleri} koparılan çözünen-çözünen ve çözücü-çözücü etkileşimleriyle {koyu:yarışabilecek kadar güçlüyse} iyi çözünür. Yeni etkileşimler çok zayıf kalırsa madde çözünmez ya da çok az çözünür."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Soğuk ve Sıcak Kompresler",
+          "metin": "Spor yaralanmalarında kullanılan bazı soğuk kompres torbalarında su ve amonyum nitrat ayrı bölmelerde durur. Torba sıkılınca bölmeler arasındaki zar yırtılır, tuz suda çözünür ve endotermik çözünme nedeniyle torba birkaç dakikada belirgin şekilde soğur."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='14' fill='#f8fafc' stroke='#cbd5e1'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Çözünmenin Bilimsel Modeli: Üç Adım</text><rect x='20' y='50' width='220' height='120' rx='12' fill='#fff7ed' stroke='#c2410c'/><text x='130' y='74' text-anchor='middle' font-size='13' font-weight='bold' fill='#c2410c'>1. Çözünen–çözünen</text><text x='130' y='96' text-anchor='middle' font-size='12' fill='#1e293b'>Kristaldeki tanecikler</text><text x='130' y='114' text-anchor='middle' font-size='12' fill='#1e293b'>birbirinden ayrılır.</text><text x='130' y='150' text-anchor='middle' font-size='13' font-weight='bold' fill='#b91c1c'>Enerji alınır (+)</text><line x1='244' y1='110' x2='264' y2='110' stroke='#475569' stroke-width='3'/><polygon points='264,103 274,110 264,117' fill='#475569'/><rect x='278' y='50' width='220' height='120' rx='12' fill='#eff6ff' stroke='#1d4ed8'/><text x='388' y='74' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>2. Çözücü–çözücü</text><text x='388' y='96' text-anchor='middle' font-size='12' fill='#1e293b'>Çözücü molekülleri aralanır,</text><text x='388' y='114' text-anchor='middle' font-size='12' fill='#1e293b'>boşluklar açılır.</text><text x='388' y='150' text-anchor='middle' font-size='13' font-weight='bold' fill='#b91c1c'>Enerji alınır (+)</text><line x1='502' y1='110' x2='522' y2='110' stroke='#475569' stroke-width='3'/><polygon points='522,103 532,110 522,117' fill='#475569'/><rect x='536' y='50' width='204' height='120' rx='12' fill='#f0fdf4' stroke='#15803d'/><text x='638' y='74' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>3. Çözücü–çözünen</text><text x='638' y='96' text-anchor='middle' font-size='12' fill='#1e293b'>Çözücü, çözüneni sarar</text><text x='638' y='114' text-anchor='middle' font-size='12' fill='#1e293b'>(solvatasyon).</text><text x='638' y='150' text-anchor='middle' font-size='13' font-weight='bold' fill='#15803d'>Enerji verilir (−)</text><rect x='20' y='192' width='350' height='110' rx='12' fill='#e0f2fe' stroke='#0369a1'/><text x='195' y='218' text-anchor='middle' font-size='14' font-weight='bold' fill='#0369a1'>Endotermik çözünme</text><text x='195' y='242' text-anchor='middle' font-size='12' fill='#1e293b'>Alınan enerji &gt; verilen enerji</text><text x='195' y='262' text-anchor='middle' font-size='12' fill='#1e293b'>Çözelti soğur.</text><text x='195' y='284' text-anchor='middle' font-size='12' font-weight='bold' fill='#0369a1'>Örnek: NH₄NO₃ (soğuk kompres)</text><rect x='390' y='192' width='350' height='110' rx='12' fill='#fee2e2' stroke='#b91c1c'/><text x='565' y='218' text-anchor='middle' font-size='14' font-weight='bold' fill='#b91c1c'>Ekzotermik çözünme</text><text x='565' y='242' text-anchor='middle' font-size='12' fill='#1e293b'>Verilen enerji &gt; alınan enerji</text><text x='565' y='262' text-anchor='middle' font-size='12' fill='#1e293b'>Çözelti ısınır.</text><text x='565' y='284' text-anchor='middle' font-size='12' font-weight='bold' fill='#b91c1c'>Örnek: katı NaOH</text></svg>"
+    },
+    {
+      "baslik": "İyonik Katıların Çözünmesi: NaCl ve Hidratasyon",
+      "metin": [
+        "Sofra tuzu (NaCl) kristalinde molekül yoktur; kristal, düzenli biçimde dizilmiş {koyu:sodyum (Na⁺) ve klorür (Cl⁻) iyonlarından} oluşur ve bu iyonlar güçlü elektrostatik çekimle birbirine bağlıdır. Su ise {koyu:polar} bir moleküldür: Oksijen atomu kısmi negatif (δ⁻), hidrojen atomları kısmi pozitif (δ⁺) yük taşır. Tuz suya konduğunda kristalin yüzeyindeki Na⁺ iyonlarına su moleküllerinin {koyu:oksijen uçları}, Cl⁻ iyonlarına ise {koyu:hidrojen uçları} yönelir. Bu yönelimle oluşan çekime {koyu:iyon-dipol etkileşimi} denir.",
+        "Çok sayıda su molekülünün aynı anda çekmesiyle yüzeydeki iyonlar kristalden koparılır ve su moleküllerinden oluşan bir kılıfla sarılmış olarak çözeltinin içine dağılır. İyonların su molekülleriyle sarılmasına {koyu:hidratasyon} denir. Bu süreç bir denklemle şöyle gösterilir: NaCl(k) → {us:Na|+}(suda) + {us:Cl|−}(suda). Denklemdeki (suda) ifadesi, iyonun hidratlanmış hâlde bulunduğunu anlatır. Kristal tamamen çözünene kadar su molekülleri bir sonraki iyon katmanına ulaşır ve süreç yüzeyden içe doğru devam eder. Bir iyonik maddenin çözünürken iyonlarına ayrışmasına {koyu:iyonik çözünme} ya da {koyu:ayrışarak çözünme} denir.",
+        "İyonik çözünmenin en önemli kanıtı {koyu:elektrik iletkenliğidir}. Saf su elektrik akımını çok zayıf iletir, katı tuz ise hiç iletmez; çünkü katıda iyonlar yerinden ayrılamaz. Tuz suda çözündüğünde serbestçe hareket edebilen iyonlar oluştuğu için çözelti elektriği iletir. Suda çözündüğünde iyon oluşturup elektriği ileten maddelere {koyu:elektrolit} denir. Çözeltideki iyon sayısı, maddenin formülünden bulunur: 1 mol CaCl₂ çözündüğünde 1 mol {us:Ca|2+} ve 2 mol {us:Cl|−}, yani toplam {koyu:3 mol iyon} oluşur. Bu hesap, ilerleyen haftalarda çözeltilerin derişim ve koligatif özelliklerini incelerken de işimize yarayacak."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Madde",
+          "Suda Çözünme Denklemi",
+          "1 Mol Başına İyon (mol)"
+        ],
+        "satirlar": [
+          [
+            "NaCl",
+            "NaCl(k) → Na⁺(suda) + Cl⁻(suda)",
+            "2"
+          ],
+          [
+            "KNO₃",
+            "KNO₃(k) → K⁺(suda) + NO₃⁻(suda)",
+            "2"
+          ],
+          [
+            "CaCl₂",
+            "CaCl₂(k) → Ca²⁺(suda) + 2Cl⁻(suda)",
+            "3"
+          ],
+          [
+            "Na₂SO₄",
+            "Na₂SO₄(k) → 2Na⁺(suda) + SO₄²⁻(suda)",
+            "3"
+          ],
+          [
+            "Al₂(SO₄)₃",
+            "Al₂(SO₄)₃(k) → 2Al³⁺(suda) + 3SO₄²⁻(suda)",
+            "5"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "dikkat",
+          "baslik": "İyonlar Çözünmeden Önce de Vardır",
+          "metin": "Tuz suda çözünürken Na ve Cl atomları iyonlara dönüşmez; iyonlar {koyu:kristalde zaten vardır}. Çözünmede yalnızca iyonlar birbirinden ayrılır ve su molekülleriyle sarılır. Bu yüzden modelde çözeltideki türler Na⁺ ve Cl⁻ olarak, yükleriyle birlikte çizilmelidir; nötr Na veya Cl atomu çizmek hatadır."
+        },
+        {
+          "tur": "hatirla",
+          "baslik": "Suyun Polar Yapısı",
+          "metin": "Su molekülü kırık doğru (açısal) biçimlidir. Oksijen hidrojenden daha elektronegatif olduğu için bağ elektronlarını kendine çeker; oksijen δ⁻, hidrojenler δ⁺ yüklenir. Bu yük ayrımı suyu iyonik ve polar maddeler için güçlü bir çözücü yapar."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='14' fill='#f8fafc' stroke='#cbd5e1'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Hidratasyon: İyonların Su Molekülleriyle Sarılması</text><rect x='30' y='48' width='280' height='230' rx='12' fill='#f5f3ff' stroke='#7c3aed'/><circle cx='170' cy='160' r='24' fill='#a78bfa'/><text x='170' y='166' text-anchor='middle' font-size='15' font-weight='bold' fill='#1e1b4b'>Na⁺</text><circle cx='170' cy='108' r='12' fill='#ef4444'/><circle cx='160' cy='92' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='180' cy='92' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='170' cy='212' r='12' fill='#ef4444'/><circle cx='160' cy='228' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='180' cy='228' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='118' cy='160' r='12' fill='#ef4444'/><circle cx='102' cy='150' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='102' cy='170' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='222' cy='160' r='12' fill='#ef4444'/><circle cx='238' cy='150' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='238' cy='170' r='6' fill='#ffffff' stroke='#64748b'/><text x='170' y='262' text-anchor='middle' font-size='12' fill='#4c1d95'>O (δ⁻) uçları katyona dönük</text><rect x='325' y='110' width='110' height='100' rx='10' fill='#ffffff' stroke='#cbd5e1'/><text x='380' y='138' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>İyon–dipol</text><text x='380' y='156' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>etkileşimi</text><text x='380' y='180' text-anchor='middle' font-size='11' fill='#475569'>Zıt yükler</text><text x='380' y='196' text-anchor='middle' font-size='11' fill='#475569'>birbirini çeker</text><rect x='450' y='48' width='280' height='230' rx='12' fill='#f0fdf4' stroke='#16a34a'/><circle cx='590' cy='160' r='28' fill='#4ade80'/><text x='590' y='166' text-anchor='middle' font-size='15' font-weight='bold' fill='#14532d'>Cl⁻</text><circle cx='590' cy='100' r='12' fill='#ef4444'/><circle cx='590' cy='120' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='575' cy='90' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='590' cy='220' r='12' fill='#ef4444'/><circle cx='590' cy='200' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='605' cy='230' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='530' cy='160' r='12' fill='#ef4444'/><circle cx='550' cy='160' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='520' cy='146' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='650' cy='160' r='12' fill='#ef4444'/><circle cx='630' cy='160' r='6' fill='#ffffff' stroke='#64748b'/><circle cx='660' cy='174' r='6' fill='#ffffff' stroke='#64748b'/><text x='590' y='262' text-anchor='middle' font-size='12' fill='#14532d'>H (δ⁺) uçları anyona dönük</text><text x='380' y='298' text-anchor='middle' font-size='13' font-weight='bold' fill='#1e293b'>NaCl(k) → Na⁺(suda) + Cl⁻(suda)     Kırmızı: O     Beyaz: H</text></svg>"
+    },
+    {
+      "baslik": "Moleküler Çözünme ve Benzer Benzeri Çözer İlkesi",
+      "metin": [
+        "Şeker (sakaroz), etanol ve üre gibi maddeler suda çözünürken iyonlarına ayrışmaz; molekülleri bütün olarak su molekülleri arasına dağılır. Buna {koyu:moleküler çözünme} denir. Şeker molekülünde çok sayıda –OH grubu bulunur; bu gruplar su molekülleriyle {koyu:hidrojen bağı} kurar. Su-şeker hidrojen bağları, şeker molekülleri arasındaki ve su molekülleri arasındaki hidrojen bağlarıyla yarışabilecek güçte olduğu için şeker suda çok iyi çözünür. Çözeltide serbest iyon bulunmadığından şekerli su elektriği iletmez; şeker bu nedenle {koyu:elektrolit olmayan} bir maddedir. Denklemle C₁₂H₂₂O₁₁(k) → C₁₂H₂₂O₁₁(suda) şeklinde gösterilir.",
+        "Çözünürlüğü tahmin etmek için kullanılan pratik kural {koyu:benzer benzeri çözer} ilkesidir: Polar ve iyonik maddeler polar çözücülerde (su, etanol), apolar maddeler apolar çözücülerde (karbon tetraklorür CCl₄, hekzan, benzin) iyi çözünür. Örneğin apolar iyot (I₂) suda çok az çözünürken CCl₄ içinde kolayca çözünerek mor renkli bir çözelti oluşturur. Bu çözeltide baskın etkileşim zayıf {koyu:London kuvvetleridir}; ancak I₂-I₂ ve CCl₄-CCl₄ etkileşimleri de London türünde olduğu için koparılan ve oluşan etkileşimler birbirine benzer, karışma kolaylaşır. Zeytinyağı ise suda çözünmez: Su molekülleri birbirine hidrojen bağlarıyla sıkıca tutunur ve apolar yağ molekülleriyle kurabilecekleri zayıf etkileşimler bu bağları koparmaya yetmez.",
+        "Bazı moleküler maddeler suda çözünürken su molekülleriyle tepkimeye girerek iyon oluşturur. Hidrojen klorür (HCl) gazı moleküler bir maddedir; ancak suda çözündüğünde HCl(g) + H₂O(s) → {us:H₃O|+}(suda) + {us:Cl|−}(suda) şeklinde {koyu:iyonlaşarak çözünür} ve oluşan hidroklorik asit çözeltisi elektriği iletir. Bu örnek, bir maddenin moleküler olmasının çözeltisinin mutlaka iletken olmayacağı anlamına gelmediğini gösterir. Sonuç olarak çözünmeyi modellemek için yalnızca ‘tanecikler dağılır’ demek yetmez; {koyu:taneciğin türü} (iyon mu, molekül mü) ve {koyu:etkileşimin türü} (iyon-dipol, hidrojen bağı, dipol-dipol, London) birlikte düşünülmelidir."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Çözünen",
+          "Çözücü",
+          "Baskın Çözücü-Çözünen Etkileşimi",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "NaCl (iyonik)",
+            "Su (polar)",
+            "İyon-dipol",
+            "İyi çözünür, iletken çözelti"
+          ],
+          [
+            "Şeker (polar)",
+            "Su (polar)",
+            "Hidrojen bağı",
+            "İyi çözünür, iletken olmayan çözelti"
+          ],
+          [
+            "Etanol (polar)",
+            "Su (polar)",
+            "Hidrojen bağı",
+            "Her oranda karışır"
+          ],
+          [
+            "I₂ (apolar)",
+            "CCl₄ (apolar)",
+            "London kuvvetleri",
+            "İyi çözünür, mor çözelti"
+          ],
+          [
+            "I₂ (apolar)",
+            "Su (polar)",
+            "Dipol-indüklenmiş dipol (zayıf)",
+            "Çok az çözünür"
+          ],
+          [
+            "Zeytinyağı (apolar)",
+            "Su (polar)",
+            "Zayıf etkileşim",
+            "Çözünmez, iki faz oluşur"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "kural",
+          "baslik": "Benzer Benzeri Çözer",
+          "metin": "{koyu:Polar/iyonik çözünen + polar çözücü:} genellikle çözünür. {koyu:Apolar çözünen + apolar çözücü:} genellikle çözünür. {koyu:Polar çözünen + apolar çözücü} ya da {koyu:apolar çözünen + polar çözücü:} genellikle çözünmez veya çok az çözünür. Bu bir eğilimdir; istisnaları da vardır."
+        },
+        {
+          "tur": "bilgi",
+          "baslik": "Sabun ve Deterjan Nasıl Çalışır?",
+          "metin": "Sabun molekülünün bir ucu iyonik ve suyu seven (polar), diğer ucu uzun ve yağı seven (apolar) bir zincirdir. Apolar uçlar yağ lekesine, polar uçlar suya yönelir; böylece yağ küçük damlacıklar hâlinde suyun içinde tutulup yıkanarak uzaklaştırılır. Benzer benzeri çözer ilkesinin günlük hayattaki en yaygın uygulamalarından biridir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 320' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='320' rx='14' fill='#f8fafc' stroke='#cbd5e1'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Benzer Benzeri Çözer: Çözünürlük Tablosu</text><rect x='200' y='48' width='260' height='44' rx='10' fill='#dbeafe' stroke='#1d4ed8'/><text x='330' y='75' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>Polar çözücü (su, etanol)</text><rect x='475' y='48' width='265' height='44' rx='10' fill='#fef3c7' stroke='#b45309'/><text x='607' y='75' text-anchor='middle' font-size='13' font-weight='bold' fill='#b45309'>Apolar çözücü (CCl₄, hekzan)</text><rect x='20' y='104' width='165' height='90' rx='10' fill='#dbeafe' stroke='#1d4ed8'/><text x='102' y='142' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>Polar / iyonik</text><text x='102' y='162' text-anchor='middle' font-size='13' font-weight='bold' fill='#1d4ed8'>çözünen</text><rect x='20' y='206' width='165' height='90' rx='10' fill='#fef3c7' stroke='#b45309'/><text x='102' y='245' text-anchor='middle' font-size='13' font-weight='bold' fill='#b45309'>Apolar</text><text x='102' y='265' text-anchor='middle' font-size='13' font-weight='bold' fill='#b45309'>çözünen</text><rect x='200' y='104' width='260' height='90' rx='10' fill='#dcfce7' stroke='#16a34a'/><text x='330' y='134' text-anchor='middle' font-size='14' font-weight='bold' fill='#15803d'>✓ Çözünür</text><text x='330' y='156' text-anchor='middle' font-size='12' fill='#1e293b'>NaCl, şeker, etanol suda</text><text x='330' y='176' text-anchor='middle' font-size='11' fill='#475569'>iyon-dipol, hidrojen bağı</text><rect x='475' y='104' width='265' height='90' rx='10' fill='#fee2e2' stroke='#dc2626'/><text x='607' y='134' text-anchor='middle' font-size='14' font-weight='bold' fill='#b91c1c'>✗ Çözünmez / çok az</text><text x='607' y='156' text-anchor='middle' font-size='12' fill='#1e293b'>NaCl, şeker CCl₄ içinde</text><text x='607' y='176' text-anchor='middle' font-size='11' fill='#475569'>Yeni etkileşim çok zayıf</text><rect x='200' y='206' width='260' height='90' rx='10' fill='#fee2e2' stroke='#dc2626'/><text x='330' y='236' text-anchor='middle' font-size='14' font-weight='bold' fill='#b91c1c'>✗ Çözünmez / çok az</text><text x='330' y='258' text-anchor='middle' font-size='12' fill='#1e293b'>Zeytinyağı, I₂ suda</text><text x='330' y='278' text-anchor='middle' font-size='11' fill='#475569'>Suyun hidrojen bağları kopmaz</text><rect x='475' y='206' width='265' height='90' rx='10' fill='#dcfce7' stroke='#16a34a'/><text x='607' y='236' text-anchor='middle' font-size='14' font-weight='bold' fill='#15803d'>✓ Çözünür</text><text x='607' y='258' text-anchor='middle' font-size='12' fill='#1e293b'>I₂, yağ, naftalin CCl₄ içinde</text><text x='607' y='278' text-anchor='middle' font-size='11' fill='#475569'>London kuvvetleri</text></svg>"
+    },
+    {
+      "baslik": "Öğrenci Modellerini Bilimsel Modelle Karşılaştırma ve Modelin Sınırları",
+      "metin": [
+        "Bir modeli bilimsel modelle karşılaştırırken üç soru sorulur: {koyu:Model hangi gözlemleri açıklıyor? Hangi gözlemleri açıklayamıyor? Hangi yanlış tahminlere yol açıyor?} Örneğin ‘şeker küçük parçalara bölünür’ modeli şekerin görünmez olmasını kısmen açıklar; ama çözeltinin homojen olmasını, süzgeçten geçmesini ve çözünmede ısınma ya da soğuma görülmesini açıklayamaz. Bilimsel model ise çözünmeyi {koyu:etkileşimlerin kopup yeniden oluşması} olarak ele aldığı için hem homojenliği hem enerji değişimini hem de iyonik çözeltilerin iletkenliğini açıklar. Bu karşılaştırma, kendi modelimizi geliştirmenin en etkili yoludur.",
+        "Bilimsel modelin desteklediği iki önemli sonuç vardır. Birincisi {koyu:kütlenin korunumudur}: 100 g suda 10 g tuz çözülürse 110 g çözelti oluşur; çünkü hiçbir tanecik yok olmaz. Su buharlaştırıldığında tuzun aynen geri elde edilmesi de çözünmenin genellikle bir {koyu:fiziksel değişim} olduğunu gösterir. İkincisi {koyu:hacmin her zaman toplanmamasıdır}: 50 mL su ile 50 mL etanol karıştırıldığında 100 mL değil, yaklaşık 96-97 mL çözelti elde edilir. Bunun nedeni, su ve etanol molekülleri arasında güçlü hidrojen bağları oluşması ve farklı büyüklükteki moleküllerin birbirinin arasına daha sıkı yerleşmesidir. Basit modellerde tanecikler genellikle eşit boyutlu ve aralarında sabit boşluklarla çizildiği için bu sonuç öngörülemez.",
+        "Hiçbir model gerçeğin kendisi değildir; bilimsel model de bir {koyu:basitleştirmedir}. Kâğıt üzerindeki çizimlerde tanecikler durgun görünür; gerçekte ise sürekli hareket eder ve çözünme, hareketli tanecikler arasında sürekli kopan ve oluşan etkileşimlerle gerçekleşir. Çizimlerde birkaç su molekülü kullanılır; gerçekte bir çay kaşığı şeker için trilyonlarca kat daha fazla su molekülü vardır. Model bu sınırlarına rağmen güçlü tahminler yapmamızı sağlar: Toz şekerin kesme şekerden daha hızlı çözüneceğini (yüzey alanı büyük olduğu için su molekülleri daha çok tanecikle aynı anda etkileşir), karıştırmanın ve ısıtmanın çözünmeyi hızlandıracağını (tanecikler daha hızlı karşılaşır) önceden söyleyebiliriz. Gözlemlerle uyumlu doğru tahminler yapabilmek, bir modelin bilimsel değerinin ölçüsüdür."
+      ],
+      "tablo": {
+        "basliklar": [
+          "Öğrenci Modelindeki İfade",
+          "Bilimsel Model",
+          "Kanıt"
+        ],
+        "satirlar": [
+          [
+            "Şeker suda yok olur.",
+            "Şeker molekülleri su molekülleri arasına dağılır.",
+            "Tat her yerde vardır, kütle korunur, buharlaşınca şeker geri kalır."
+          ],
+          [
+            "Şeker suda erir.",
+            "Şeker çözünür; erime tek maddenin hâl değişimidir.",
+            "Şekerin erime sıcaklığı 100 °C'nin çok üzerindedir; oda sıcaklığındaki suda erime olmaz."
+          ],
+          [
+            "Tuz suda NaCl molekülleri hâlinde bulunur.",
+            "Tuz Na⁺ ve Cl⁻ iyonlarına ayrışır ve hidratlanır.",
+            "Tuzlu su elektriği iletir, şekerli su iletmez."
+          ],
+          [
+            "Çözünme sırasında enerji değişmez.",
+            "Etkileşimler kopar ve oluşur; enerji alınır ya da verilir.",
+            "NH₄NO₃ çözünürken su soğur, NaOH çözünürken ısınır."
+          ],
+          [
+            "Karışan sıvıların hacimleri daima toplanır.",
+            "Moleküller arası etkileşim ve boyut farkı hacmi değiştirebilir.",
+            "50 mL su + 50 mL etanol ≈ 96-97 mL çözelti"
+          ]
+        ]
+      },
+      "kutular": [
+        {
+          "tur": "hatirla",
+          "baslik": "Model Gerçeğin Kendisi Değildir",
+          "metin": "Modeller, gözlenemeyeni anlamamızı sağlayan araçlardır ve her modelin {koyu:sınırları} vardır. Yeni bir gözlem modelle açıklanamıyorsa model terk edilmez; {koyu:geliştirilir}. Atom modellerinin Dalton'dan bugüne değişmesi, aynı sürecin çözünme modelleri için de geçerli olduğunu gösterir."
+        },
+        {
+          "tur": "ipucu",
+          "baslik": "İyi Bir Çözünme Modelinin Ölçütleri",
+          "metin": "İyi bir model: 1) Çözünen tanecik sayısını korur. 2) Homojen dağılımı gösterir. 3) İyonik maddeyi yüklü iyonlar, moleküler maddeyi bütün moleküller olarak çizer. 4) Çözücü taneciklerinin çözüneni sardığını gösterir. 5) Enerji değişimini ve iletkenliği açıklayabilir."
+        }
+      ],
+      "gorsel": "<svg viewBox='0 0 760 300' xmlns='http://www.w3.org/2000/svg' font-family='Arial, sans-serif'><rect width='760' height='300' rx='14' fill='#f8fafc' stroke='#cbd5e1'/><text x='380' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#1e293b'>Modeli Sınayan İki Ölçüm: Kütle ve Hacim</text><rect x='20' y='46' width='350' height='240' rx='12' fill='#f0fdf4' stroke='#15803d'/><text x='195' y='70' text-anchor='middle' font-size='14' font-weight='bold' fill='#15803d'>Kütle korunur</text><line x1='45' y1='230' x2='345' y2='230' stroke='#475569'/><rect x='60' y='130' width='60' height='100' rx='4' fill='#3b82f6'/><rect x='165' y='220' width='60' height='10' rx='3' fill='#f97316'/><rect x='270' y='120' width='60' height='110' rx='4' fill='#22c55e'/><text x='90' y='122' text-anchor='middle' font-size='12' fill='#1e293b'>100 g</text><text x='195' y='212' text-anchor='middle' font-size='12' fill='#1e293b'>10 g</text><text x='300' y='112' text-anchor='middle' font-size='12' fill='#1e293b'>110 g</text><text x='142' y='185' text-anchor='middle' font-size='20' font-weight='bold' fill='#475569'>+</text><text x='248' y='185' text-anchor='middle' font-size='20' font-weight='bold' fill='#475569'>=</text><text x='90' y='250' text-anchor='middle' font-size='12' fill='#1e293b'>Su</text><text x='195' y='250' text-anchor='middle' font-size='12' fill='#1e293b'>Tuz</text><text x='300' y='250' text-anchor='middle' font-size='12' fill='#1e293b'>Çözelti</text><text x='195' y='274' text-anchor='middle' font-size='11' fill='#166534'>Hiçbir tanecik yok olmaz.</text><rect x='390' y='46' width='350' height='240' rx='12' fill='#eff6ff' stroke='#1d4ed8'/><text x='565' y='70' text-anchor='middle' font-size='14' font-weight='bold' fill='#1d4ed8'>Hacim her zaman toplanmaz</text><line x1='415' y1='230' x2='715' y2='230' stroke='#475569'/><rect x='430' y='180' width='60' height='50' rx='4' fill='#3b82f6'/><rect x='535' y='180' width='60' height='50' rx='4' fill='#a855f7'/><rect x='640' y='133' width='60' height='97' rx='4' fill='#0ea5e9'/><line x1='636' y1='130' x2='704' y2='130' stroke='#dc2626' stroke-dasharray='4,3'/><text x='670' y='124' text-anchor='middle' font-size='10' fill='#dc2626'>100 mL beklenen</text><text x='460' y='172' text-anchor='middle' font-size='12' fill='#1e293b'>50 mL</text><text x='565' y='172' text-anchor='middle' font-size='12' fill='#1e293b'>50 mL</text><text x='512' y='210' text-anchor='middle' font-size='20' font-weight='bold' fill='#475569'>+</text><text x='617' y='210' text-anchor='middle' font-size='20' font-weight='bold' fill='#475569'>=</text><text x='670' y='160' text-anchor='middle' font-size='12' font-weight='bold' fill='#ffffff'>≈ 97 mL</text><text x='460' y='250' text-anchor='middle' font-size='12' fill='#1e293b'>Su</text><text x='565' y='250' text-anchor='middle' font-size='12' fill='#1e293b'>Etanol</text><text x='670' y='250' text-anchor='middle' font-size='12' fill='#1e293b'>Çözelti</text><text x='565' y='274' text-anchor='middle' font-size='11' fill='#1e3a8a'>Hidrojen bağları ve sıkı yerleşme hacmi azaltır.</text></svg>"
+    }
+  ],
+  "ornekler": [
+    {
+      "soru": "200 g suya 20 g şeker eklenip tamamen çözünüyor. a) Oluşan çözeltinin kütlesi kaç gramdır? b) Şekerin suda çözünmesini tanecik modeliyle açıklayınız.",
+      "cevap": "{koyu:a) 1. adım:} Çözünmede tanecikler yok olmaz, yalnızca dağılır; bu yüzden kütle korunur. {koyu:2. adım:} m(çözelti) = m(su) + m(şeker) = 200 + 20 = {koyu:220 g}. {koyu:b)} Şeker kristalindeki moleküller birbirine hidrojen bağlarıyla tutunur. Su molekülleri, yüzeydeki şeker molekülleriyle hidrojen bağı kurar ve onları kristalden koparıp aralarına alır. Kopan şeker molekülleri su molekülleriyle sarılmış hâlde çözeltinin her yerine eşit dağılır: C₁₂H₂₂O₁₁(k) → C₁₂H₂₂O₁₁(suda). Model çizilirken şeker molekülleri bütün hâlde, kaybolmadan ve homojen dağılmış olarak gösterilmelidir.",
+      "ipucu": "Önce kütle korunumunu kullanınız; modelde çözünen tanecik sayısının değişmemesine dikkat ediniz."
+    },
+    {
+      "soru": "Katı sodyum klorürün suda çözünmesini denklemle gösteriniz. Na⁺ ve Cl⁻ iyonlarının çevresinde su moleküllerinin nasıl yöneleceğini açıklayınız.",
+      "cevap": "{koyu:1. adım (denklem):} NaCl(k) → {us:Na|+}(suda) + {us:Cl|−}(suda). {koyu:2. adım (suyun yapısı):} Su polar bir moleküldür; oksijen δ⁻, hidrojenler δ⁺ yüklüdür. {koyu:3. adım (yönelim):} Pozitif yüklü Na⁺ iyonuna su moleküllerinin {koyu:oksijen uçları}, negatif yüklü Cl⁻ iyonuna ise {koyu:hidrojen uçları} yönelir. {koyu:4. adım (sonuç):} Bu iyon-dipol etkileşimleriyle iyonlar kristalden koparılır ve su molekülleriyle sarılır; bu olaya hidratasyon denir. Çözeltide serbest iyonlar bulunduğu için tuzlu su elektriği iletir.",
+      "ipucu": "Zıt yükler birbirini çeker: katyona suyun negatif ucu, anyona pozitif ucu döner."
+    },
+    {
+      "soru": "0,4 mol Al₂(SO₄)₃ suda tamamen çözünüyor. Çözeltide kaç mol Al³⁺, kaç mol SO₄²⁻ ve toplam kaç mol iyon bulunur?",
+      "cevap": "{koyu:1. adım:} Çözünme denklemi yazılır: Al₂(SO₄)₃(k) → 2{us:Al|3+}(suda) + 3{us:SO₄|2−}(suda). {koyu:2. adım:} 1 mol Al₂(SO₄)₃'ten 2 mol Al³⁺ oluştuğundan 0,4 · 2 = {koyu:0,8 mol Al³⁺}. {koyu:3. adım:} 1 mol Al₂(SO₄)₃'ten 3 mol SO₄²⁻ oluştuğundan 0,4 · 3 = {koyu:1,2 mol SO₄²⁻}. {koyu:4. adım:} Toplam iyon: 0,8 + 1,2 = {koyu:2,0 mol}. {koyu:Kontrol:} Yük denkliği: 0,8 · (+3) + 1,2 · (−2) = 2,4 − 2,4 = 0; çözelti elektrikçe nötrdür.",
+      "ipucu": "Formüldeki alt indisler, bir mol bileşikten kaç mol iyon çıkacağını gösterir; çok atomlu iyonlar (SO₄²⁻) bölünmez."
+    },
+    {
+      "soru": "Aşağıdaki karışımlardan hangilerinde çözelti oluşması beklenir? Benzer benzeri çözer ilkesiyle açıklayınız. I) I₂ – CCl₄ II) Zeytinyağı – su III) Etanol – su IV) NaCl – hekzan",
+      "cevap": "{koyu:I) Çözelti oluşur:} I₂ ve CCl₄ apolardır; aralarında London kuvvetleri oluşur ve koparılan etkileşimlerle benzer güçtedir. {koyu:II) Çözelti oluşmaz:} Zeytinyağı apolar, su polardır; suyun güçlü hidrojen bağları yağ ile kurulabilecek zayıf etkileşimler uğruna kopmaz, iki faz oluşur. {koyu:III) Çözelti oluşur:} Etanol ve su polardır, aralarında hidrojen bağı kurulur; her oranda karışırlar. {koyu:IV) Çözelti oluşmaz:} NaCl iyonik, hekzan apolardır; hekzan iyonlarla iyon-dipol etkileşimi kuramaz ve kristaldeki güçlü iyonik çekimi yenemez. {koyu:Sonuç:} I ve III.",
+      "ipucu": "Önce her maddenin polar/apolar/iyonik olduğunu belirleyiniz, sonra eşleştiriniz."
+    },
+    {
+      "soru": "Bir öğrenci bir behere oda sıcaklığında su koyup içine amonyum nitrat (NH₄NO₃) katısı ekliyor ve karıştırıyor. Beherin dışına dokunduğunda soğuduğunu fark ediyor. Bu gözlemi çözünmenin bilimsel modeliyle açıklayınız.",
+      "cevap": "{koyu:1. adım:} Çözünme sırasında NH₄⁺ ve NO₃⁻ iyonları arasındaki çekim kopar ve su molekülleri arasındaki hidrojen bağlarının bir kısmı kopar; bu iki adım için {koyu:enerji alınır}. {koyu:2. adım:} İyonlar su molekülleriyle sarılır (hidratasyon); bu adımda {koyu:enerji verilir}. {koyu:3. adım:} Amonyum nitrat için koparılan etkileşimlere harcanan enerji, hidratasyonla açığa çıkan enerjiden büyüktür. {koyu:4. adım:} Eksik kalan enerji çözeltinin kendisinden ve çevresinden alındığı için sıcaklık düşer; çözünme {koyu:endotermiktir}. Bu gözlem, basit ‘tanecikler dağılır’ modelinin açıklayamadığı, bilimsel modelin ise açıkladığı bir kanıttır.",
+      "ipucu": "Enerji alan ve enerji veren adımları ayırıp hangisinin büyük olduğuna karar veriniz."
+    },
+    {
+      "soru": "Bir öğrenci tuzlu su için çizdiği modelde su molekülleri arasına bütün hâlde NaCl birimleri yerleştiriyor ve ‘tuz molekülleri suya dağıldı’ diye açıklıyor. Bu modeli bilimsel modelle karşılaştırarak hatalarını belirleyiniz ve modeli nasıl düzeltmesi gerektiğini yazınız.",
+      "cevap": "{koyu:1. adım (doğru yön):} Model, tuz taneciklerinin kaybolmadığını ve çözeltiye dağıldığını gösterdiği için kütle korunumu ve homojenlikle uyumludur. {koyu:2. adım (hata 1):} NaCl iyonik bir bileşiktir, molekül değildir; kristalde Na⁺ ve Cl⁻ iyonları bulunur. {koyu:3. adım (hata 2):} Çözünmede iyonlar birbirinden ayrılır; çözeltide NaCl birimi değil, ayrı Na⁺ ve Cl⁻ iyonları vardır. Bunun kanıtı tuzlu suyun elektriği iletmesidir. {koyu:4. adım (hata 3):} Su moleküllerinin iyonlar çevresindeki yönelimi gösterilmemiştir. {koyu:Düzeltme:} Her Na⁺ iyonu oksijen uçları kendine dönük su molekülleriyle, her Cl⁻ iyonu hidrojen uçları kendine dönük su molekülleriyle sarılmış ve yükleri yazılmış olarak çizilmelidir; Na⁺ ve Cl⁻ sayıları eşit tutulmalıdır.",
+      "ipucu": "Modelin hem açıkladığı hem açıklayamadığı gözlemleri listeleyin; iletkenlik gözlemi kilit kanıttır."
+    }
+  ],
+  "etkinlikler": [
+    {
+      "tur": "coktan",
+      "soru": "Aşağıdaki karışımlardan hangisi bir çözelti değildir?",
+      "secenekler": [
+        "Tuzlu su",
+        "Hava",
+        "Şekerli su",
+        "Zeytinyağı-su karışımı"
+      ],
+      "dogru": 3,
+      "aciklama": "Çözeltiler homojen karışımlardır. Tuzlu su, şekerli su ve hava homojendir. Zeytinyağı apolar olduğu için polar suda çözünmez; karışım iki faz oluşturur ve heterojendir."
+    },
+    {
+      "tur": "coktan",
+      "soru": "NaCl suda çözünürken Na⁺ iyonlarının çevresini saran su moleküllerinin yönelimi için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        "Hidrojen uçları Na⁺ iyonuna yönelir.",
+        "Oksijen uçları Na⁺ iyonuna yönelir.",
+        "Su molekülleri rastgele yönelir, belirli bir düzen yoktur.",
+        "Su molekülleri Na⁺ iyonuyla etkileşmez, yalnızca Cl⁻ iyonunu sarar."
+      ],
+      "dogru": 1,
+      "aciklama": "Suyun oksijen ucu kısmi negatif (δ⁻) yüklüdür ve pozitif yüklü Na⁺ iyonunu çeker. Bu iyon-dipol etkileşimiyle Na⁺ iyonu oksijen uçları kendine dönük su molekülleriyle sarılır (hidratasyon)."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Benzer benzeri çözer ilkesine göre aşağıdaki çiftlerden hangisinde çözelti oluşması beklenir?",
+      "secenekler": [
+        "NaCl – CCl₄",
+        "Zeytinyağı – su",
+        "I₂ – CCl₄",
+        "Şeker – benzin"
+      ],
+      "dogru": 2,
+      "aciklama": "I₂ ve CCl₄ apolar maddelerdir; aralarındaki London kuvvetleri sayesinde iyot CCl₄ içinde iyi çözünür. Diğer çiftlerde biri polar/iyonik, diğeri apolar olduğu için çözünme gerçekleşmez ya da çok azdır."
+    },
+    {
+      "tur": "coktan",
+      "soru": "Şekerli suyun elektrik akımını iletmemesi, tuzlu suyun ise iletmesi en iyi hangi açıklamayla modellenir?",
+      "secenekler": [
+        "Şeker suda moleküler çözünür, tuz ise iyonlarına ayrışarak çözünür.",
+        "Şeker suda hiç çözünmez, dibe çöker.",
+        "Tuz suda çözünürken yeni bir bileşiğe dönüşür.",
+        "Şekerli suda su molekülleri polarlığını kaybeder."
+      ],
+      "dogru": 0,
+      "aciklama": "Elektrik iletimi için serbestçe hareket edebilen yüklü tanecikler gerekir. Şeker suda molekülleri hâlinde dağılır ve iyon oluşturmaz; NaCl ise Na⁺ ve Cl⁻ iyonlarına ayrışır. Bu nedenle tuzlu su iletken, şekerli su iletken değildir."
+    },
+    {
+      "tur": "dy",
+      "soru": "Aşağıdaki ifadelerin doğru mu yanlış mı olduğunu belirleyiniz.",
+      "ifadeler": [
+        {
+          "metin": "Şekerin çayda görünmez olması, şeker taneciklerinin yok olduğunu gösterir.",
+          "dogru": false,
+          "aciklama": "Şeker tanecikleri yok olmaz; su molekülleri arasına dağılır. Çayın tatlı olması ve kütlenin korunması bunun kanıtıdır."
+        },
+        {
+          "metin": "Çözünme sırasında çözücü-çözünen etkileşimleri oluşurken enerji açığa çıkar.",
+          "dogru": true,
+          "aciklama": "Yeni etkileşimlerin oluşması enerji veren bir adımdır; çözünenin ve çözücünün taneciklerinin ayrılması ise enerji gerektirir."
+        },
+        {
+          "metin": "İyonların su molekülleriyle sarılmasına hidratasyon denir.",
+          "dogru": true,
+          "aciklama": "Çözücü su olduğunda çözünen taneciklerinin çözücü molekülleriyle sarılmasına hidratasyon denir."
+        },
+        {
+          "metin": "50 mL su ile 50 mL etanol karıştırıldığında her zaman tam 100 mL çözelti oluşur.",
+          "dogru": false,
+          "aciklama": "Su ve etanol molekülleri arasında hidrojen bağları oluşur ve moleküller daha sıkı yerleşir; çözelti hacmi 100 mL'den biraz azdır (yaklaşık 96-97 mL)."
+        },
+        {
+          "metin": "Apolar maddeler genellikle apolar çözücülerde iyi çözünür.",
+          "dogru": true,
+          "aciklama": "Benzer benzeri çözer ilkesine göre apolar çözünen ile apolar çözücü arasında koparılan ve oluşan etkileşimler benzer türdedir; çözünme kolaylaşır."
+        }
+      ]
+    },
+    {
+      "tur": "eslestir",
+      "soru": "Aşağıdaki kavramları doğru açıklamalarıyla eşleştiriniz.",
+      "ciftler": [
+        [
+          "Çözücü",
+          "Çözeltide diğer maddeyi içinde dağıtan, genellikle miktarı fazla olan bileşen"
+        ],
+        [
+          "Hidratasyon",
+          "Çözünen taneciklerinin su molekülleriyle sarılması"
+        ],
+        [
+          "İyonik çözünme",
+          "NaCl'nin suda Na⁺ ve Cl⁻ iyonlarına ayrışarak çözünmesi"
+        ],
+        [
+          "Moleküler çözünme",
+          "Şekerin suda molekülleri bütün kalarak dağılması"
+        ],
+        [
+          "İyon-dipol etkileşimi",
+          "Bir iyon ile polar su molekülünün zıt yüklü ucu arasındaki çekim"
+        ]
+      ]
+    },
+    {
+      "tur": "bosluk",
+      "soru": "Aşağıdaki cümlelerde boş bırakılan yerleri uygun kavramlarla tamamlayınız.",
+      "cumleler": [
+        {
+          "metin": "Her noktasında aynı bileşime ve özelliğe sahip karışımlara ___ karışım ya da çözelti denir.",
+          "cevap": "homojen"
+        },
+        {
+          "metin": "Şekerli suda miktarı fazla olan ve şekeri içinde dağıtan su, ___ olarak adlandırılır.",
+          "cevap": "çözücü"
+        },
+        {
+          "metin": "Çözünen iyonların su molekülleriyle sarılmasına ___ denir.",
+          "cevap": "hidratasyon"
+        },
+        {
+          "metin": "Tuzlu suyun elektriği iletmesi, çözeltide serbest hareket eden ___ bulunduğunu gösterir.",
+          "cevap": "iyonlar"
+        },
+        {
+          "metin": "Oksijeni kısmi negatif, hidrojenleri kısmi pozitif yüklü olan su ___ bir çözücüdür.",
+          "cevap": "polar"
+        }
+      ],
+      "kelimeler": [
+        "homojen",
+        "çözücü",
+        "hidratasyon",
+        "iyonlar",
+        "polar"
+      ],
+      "fazla": [
+        "heterojen",
+        "apolar"
+      ]
+    },
+    {
+      "tur": "ogretici",
+      "soru": "Bir öğrenci 14,2 g Na₂SO₄ katısını 185,8 g suda tamamen çözüyor. a) Oluşan çözeltinin kütlesini bulunuz. b) Na₂SO₄'ün suda çözünme denklemini yazınız. c) Çözeltideki toplam iyon sayısını mol ve tanecik sayısı olarak hesaplayınız. d) Bu çözelti için bir tanecik modelinin nasıl çizilmesi gerektiğini açıklayınız ve aynı mol sayısında şeker içeren bir çözeltiyle elektrik iletkenliği bakımından karşılaştırınız. (Na₂SO₄: 142 g/mol; Avogadro sayısı: 6,02 · {us:10|23})",
+      "ipuclari": [
+        "1. adım: Kütle korunumunu kullanarak çözelti kütlesini bulunuz.",
+        "2. adım: Na₂SO₄'ün mol sayısını n = m ÷ M ile hesaplayınız ve çözünme denklemini yazınız.",
+        "3. adım: Denklemdeki katsayılarla oluşan iyonların mol sayısını bulunuz, Avogadro sayısıyla çarparak tanecik sayısına geçiniz.",
+        "4. adım: Modelde iyonların türünü, sayı oranını ve su moleküllerinin yönelimini düşününüz; şekerin moleküler çözündüğünü hatırlayınız."
+      ],
+      "cevap": "a) m(çözelti) = 14,2 + 185,8 = {koyu:200 g}; çözünmede tanecikler yok olmadığı için kütle korunur. b) Na₂SO₄(k) → 2{us:Na|+}(suda) + {us:SO₄|2−}(suda). c) n(Na₂SO₄) = {kesir:14,2|142} = 0,1 mol. Oluşan iyonlar: 2 · 0,1 = 0,2 mol Na⁺ ve 0,1 mol SO₄²⁻; toplam {koyu:0,3 mol iyon}. Tanecik sayısı: 0,3 · 6,02 · {us:10|23} = {koyu:1,806 · {us:10|23}} iyon. d) Modelde her SO₄²⁻ iyonuna karşılık iki Na⁺ iyonu çizilmeli (2 : 1 oranı), iyonlar yükleriyle gösterilmeli ve çözeltinin her yerine dağıtılmalıdır. Na⁺ iyonlarının çevresine oksijen uçları dönük, SO₄²⁻ iyonlarının çevresine hidrojen uçları dönük su molekülleri yerleştirilmelidir; SO₄²⁻ tek bir çok atomlu iyon olarak bütün çizilmelidir. Aynı mol sayısında (0,1 mol) şeker suda moleküler çözünür ve iyon oluşturmaz; bu yüzden şekerli su elektriği iletmez, Na₂SO₄ çözeltisi ise serbest iyonları sayesinde {koyu:elektriği iletir}."
+    }
+  ]
+}
