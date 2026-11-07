@@ -77,6 +77,7 @@ Aynı API kredisi ve aynı `ANTHROPIC_API_KEY` ile haftalık çalışma kâğıt
 - Her kâğıt: şema ve tür denetimi (12-14 soru, şıklar, şifre anahtarı, düzey), SVG geçerliliği, atıf ve yatay kesir yasağı, önceki haftalarla 5-gram örtüşme → `calisma_uret.py` ile basım (iki PDF de tam 2 sayfa, 2. sayfada KISA boşluk yok, TAŞMA 0) → basılan dört sayfanın PNG'si Claude'a gösterilir (gözle denetim). Takılan kâğıda bir düzeltme turu yapılır; yine takılırsa yayımlanmaz, sonraki çalıştırmada yeniden denenir.
 - İki saatte bir (dakika 11; özet botu 41'de) toplayıcı biten toplu isteklerin sonuçlarını ödemeden işler, gözle denetim ve düzeltme turlarını gönderir, kâğıtları basıp yayımlar.
 - Kayıtlar: `araclar/veri/calisma_toplu_durum.json` (gönderilen istekler; özet botununkinden ayrı, iki bot birbirinin isteğini "bilinmeyen" saymaz) ve `araclar/veri/calisma_taslak/` (gözle denetim bekleyen kâğıtlar). Elle değiştirilmez. Aynı kâğıt süren bir istekteyken ya da taslağı varken yeniden gönderilmez.
+- Maliyet (07.11.2026 ölçümü, 7-matematik-15, Opus 5.5 medium, anlık): ilk tur + düzeltme turu + gözle denetim = 3 istek, 1,04 $ (girdi 75 bin, çıktı 35 bin jeton). Toplu kipte bunun yarısı: kâğıt başına tahminen 0,3-0,5 $ (düzeltmesiz kâğıtta daha az).
 - Yerelde: `python3 araclar/calisma_api_uret.py --haftalar 9-16 --liste` (eksikler), `--kuru` (API'siz prova: önceki haftanın kâğıdını bu haftanınmış gibi denetler ve basar, geçici klasöre yazar), `--toplu`, `--topla`. Sınamalar: `python3 -m unittest araclar/test_calisma_api_uret.py`.
 
 ## Bilinmesi gerekenler
