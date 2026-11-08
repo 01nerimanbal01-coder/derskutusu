@@ -14,9 +14,7 @@
   ],
   "hatirla": [
     "Bir yerin Ekvator’a (0°) ve Başlangıç Meridyeni’ne (0°) göre konumuna mutlak konum; kıtalara, denizlere, boğazlara ve yükseltiye göre durumuna göreceli konum denir.",
-    "Türkiye 36°–42° Kuzey paralelleri ile 26°–45° Doğu meridyenleri arasında, Kuzey ve Doğu Yarım Küre’de, Orta Kuşak’ta yer alır.",
-    "Mutlak konum gereği kuzey-güney arası 6 × 111 = 666 km, doğu-batı arası 19 × 4 = 76 dakikadır; dört mevsim belirgin yaşanır ve kuzeye doğru sıcaklık azalır.",
-    "Üç kıtanın kavşağında olması, boğazlara sahip olması, batıdan doğuya yükseltinin artması ve aynı anda dört mevsim yaşanması göreceli konum sonucudur."
+    "Türkiye 36°–42° Kuzey paralelleri ile 26°–45° Doğu meridyenleri arasında, Kuzey ve Doğu Yarım Küre’de, Orta Kuşak’ta yer alır."
   ],
   "sorular": [
     {
@@ -35,14 +33,6 @@
         [
           "Sinop İnceburun (42° Kuzey)",
           "Türkiye’nin Ekvator’a en uzak olan en kuzey uç noktası"
-        ],
-        [
-          "Iğdır Dilucu (45° Doğu)",
-          "Güneş’in ülkemizde en erken doğduğu en doğu uç noktamız"
-        ],
-        [
-          "İstanbul ve Çanakkale Boğazları",
-          "Karadeniz’i Akdeniz’e ve Asya’yı Avrupa’ya bağlayan su yollarımız"
         ]
       ]
     },
@@ -56,7 +46,8 @@
         "Doğu uç noktası ile batı uç noktası arasındaki zaman farkı yalnız 15 dakikadır.",
         "Başlangıç Meridyeni ile Ekvator çizgisi ülkemizin tam ortasından kesişerek geçer."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -78,10 +69,6 @@
         {
           "metin": "Yüz ölçümü bakımından en büyük okyanus Atlas Okyanusu, en küçük kıta ise Afrika’dır.",
           "dogru": false
-        },
-        {
-          "metin": "Türkiye; Asya, Avrupa ve Afrika kıtalarının birbirine en çok yaklaştığı kavşak noktasındadır.",
-          "dogru": true
         }
       ]
     },
@@ -102,10 +89,6 @@
         {
           "metin": "Ülkemizin Avrupa kıtasında yer alan topraklarına ___ denir.",
           "cevap": "Trakya"
-        },
-        {
-          "metin": "Boğazlara ve zengin madenlere sahip olmamız ___ konumdur.",
-          "cevap": "göreceli"
         }
       ],
       "fazla": [
@@ -122,7 +105,8 @@
         "3. Özellik: Batıdan doğuya doğru gidildikçe yükseltinin artması ve sıcaklığın düşmesi",
         "4. Özellik: En doğusu ile en batısı arasında 76 dakikalık yerel saat farkı olması"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
@@ -137,7 +121,9 @@
         [
           "1. Yıl içinde dört mevsim",
           "Mutlak konum",
-          "Orta kuşakta (36°–42°K) yer alması"
+          {
+            "b": "Orta kuşakta (36°–42°K) yer alması"
+          }
         ],
         [
           "2. Aynı günde kayak ve deniz",
@@ -166,12 +152,13 @@
             "b": "Asya ile Avrupa arasında köprü olması"
           }
         ]
-      ]
+      ],
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki meridyen çizelgesinde 29° Doğu meridyenindeki Bursa ile 41° Doğu meridyenindeki Diyarbakır verilmiştir. İki şehir arasındaki yerel saat farkı kaç dakikadır ve Güneş hangisinde daha erken doğar?",
+      "soru": "29° Doğu meridyenindeki Bursa ile 41° Doğu meridyenindeki Diyarbakır arasındaki yerel saat farkı kaç dakikadır ve Güneş hangi şehirde daha erken doğar?",
       "cevap": "12 × 4 = 48 dakika yerel saat farkı vardır; doğudaki Diyarbakır’da Güneş daha erken doğar.",
       "satir": 2
     },
@@ -180,11 +167,12 @@
       "duzey": "uygula",
       "soru": "Görselde kartları verilen dört kıtayı yüz ölçümü büyüklüğüne göre en büyükten en küçüğe doğru 1’den 4’e kadar sıralayınız.",
       "ogeler": [
-        "Asya Kıtası (44 milyon km² ile dünyanın en büyük kıtası)",
-        "Afrika Kıtası (Ekvator’un ortasından geçtiği ikinci büyük kıta)",
-        "Kuzey Amerika Kıtası (Batı Yarım Küre’de yer alan üçüncü büyük kıta)",
+        "Asya Kıtası (Yaklaşık 44,5 milyon km{us:|2} yüz ölçümüne sahip kıta)",
+        "Afrika Kıtası (Ekvator çizgisinin ortasından geçtiği kıta)",
+        "Kuzey Amerika Kıtası (Tamamı Kuzey ve Batı Yarım Küre’de yer alan kıta)",
         "Avrupa Kıtası (Asya’nın batısında Türkiye’nin de toprağı bulunan kıta)"
-      ]
+      ],
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -196,7 +184,8 @@
         "Güneyden kuzeye doğru gidildikçe güneş ışınlarının geliş açısı daralır ve gölge boyu uzar.",
         "Kuzeyden esen Karayel ve Poyraz rüzgârları Ekvator yönünden geldiği için sıcaklığı yükseltir."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -208,12 +197,13 @@
         "3. Bölge (Güney ve Batı Yarım Küre)",
         "4. Bölge (Güney ve Doğu Yarım Küre)"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki iki karşılaştırma kartında “Hatay’ın Sinop’tan sıcak olması” ile “İzmir’in Van’dan sıcak olması” verilmiştir. Hangi durum mutlak konumla, hangisi göreceli konumla açıklanır?",
+      "soru": "“Hatay’ın Sinop’tan sıcak olması” ile “İzmir’in Van’dan sıcak olması” durumlarından hangisi mutlak konumla, hangisi göreceli konumla açıklanır? Yazınız.",
       "cevap": "Hatay-Sinop farkı mutlak konumla (enlem); İzmir-Van farkı göreceli konumla açıklanır.",
       "satir": 2
     },
@@ -258,7 +248,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki jeopolitik konum kartında İstanbul ve Çanakkale Boğazları ile enerji boru hatları (TANAP, TürkAkım) verilmiştir. Bu unsurların Türkiye’ye sağladığı stratejik ve ekonomik kazanımları açıklayınız.",
+      "soru": "İstanbul ve Çanakkale Boğazları ile TANAP ve TürkAkım enerji boru hatlarının Türkiye’ye sağladığı stratejik ve ekonomik kazanımları açıklayınız.",
       "cevap": "Boğazlar deniz ulaşımını sağlar; boru hatları ise Türkiye’yi stratejik enerji köprüsü yapar.",
       "satir": 2
     },

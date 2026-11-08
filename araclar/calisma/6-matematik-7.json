@@ -14,9 +14,7 @@
   ],
   "hatirla": [
     "Her {kesir:a|b} kesri payın paydaya bölünmesini (a ÷ b) anlatır; burada pay bölünen, payda bölen, kesir değeri ise bölümdür.",
-    "Bölme işleminde kalan 0 oluyorsa sonlu ondalık gösterim, kalan sıfır olmayıp rakamlar tekrar ediyorsa devirli ondalık gösterim elde edilir.",
-    "Devirli ondalık gösterimlerde devir çizgisi yalnız tekrar eden rakam grubunun üstüne çizilir; sıralamada devreden basamaklar açılarak karşılaştırılır.",
-    "Ondalık gösterimler yuvarlanırken hedef basamağın hemen sağındaki ilk rakama bakılır; rakam 0–4 ise basamak değişmez, 5–9 ise 1 artırılır."
+    "Bölme işleminde kalan 0 oluyorsa sonlu ondalık gösterim, kalan sıfır olmayıp rakamlar tekrar ediyorsa devirli ondalık gösterim elde edilir."
   ],
   "sorular": [
     {
@@ -35,14 +33,6 @@
         [
           "Devirli ondalık gösterim",
           "Virgülden sonraki rakamların belirli kurala göre sonsuza dek tekrar etmesi"
-        ],
-        [
-          "Devir çizgisi",
-          "Yalnızca tekrar eden rakam veya rakam grubunun üzerine konulan yatay çizgi"
-        ],
-        [
-          "Birler basamağına yuvarlama",
-          "Ondalık gösterimi onda birler rakamına bakarak en yakın doğal sayıya yaklaştırma"
         ]
       ]
     },
@@ -56,7 +46,8 @@
         "3. Kart: {kesir:8|9}",
         "4. Kart: {kesir:13|25}"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -78,10 +69,6 @@
         {
           "metin": "Paydası 3 veya 9 olan en sade kesirlerin ondalık açılımı sonlu ondalık gösterimdir.",
           "dogru": false
-        },
-        {
-          "metin": "Bir ondalık gösterimi birler basamağına yuvarlarken onda birler basamağındaki rakama bakılır.",
-          "dogru": true
         }
       ]
     },
@@ -102,10 +89,6 @@
         {
           "metin": "En yakın doğal sayıya yuvarlamada ___ basamağı seçilir.",
           "cevap": "birler"
-        },
-        {
-          "metin": "Sağdaki ilk rakam 5 veya büyükse basamak bir ___.",
-          "cevap": "artırılır"
         }
       ],
       "fazla": [
@@ -122,7 +105,8 @@
         "2,45",
         "2,75"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
@@ -139,7 +123,9 @@
           "14,638",
           "15",
           "14,6",
-          "14,64"
+          {
+            "b": "14,64"
+          }
         ],
         [
           "27,384",
@@ -177,13 +163,14 @@
             "b": "35,49"
           }
         ]
-      ]
+      ],
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki dijital tartıda 6,4a8 kg gelen kavunun kütlesi onda birler basamağına yuvarlandığında 6,5 kg olmaktadır. Buna göre a yerine yazılabilecek rakamları ve toplamını bulunuz.",
-      "cevap": "Onda birlerdeki 4 rakamının 5’e çıkması için a yerine 5, 6, 7, 8 veya 9 gelebilir; toplamları 35 olur.",
+      "soru": "Dijital tartıda 6,4a8 kg gelen kavunun kütlesi onda birler basamağına yuvarlandığında 6,5 kg olmaktadır. Buna göre a yerine yazılabilecek rakamları ve toplamını bulunuz.",
+      "cevap": "4 rakamının 5’e yuvarlanması için a yerine 5, 6, 7, 8 veya 9 gelir; toplamları 35’tir.",
       "satir": 2
     },
     {
@@ -195,38 +182,42 @@
         "Bölümün sağına virgül, kalan 1’in yanına sıfır koyup 10’u 6’ya bölerek onda birler basamağını 1 bulmak",
         "Yeni kalan 4’ün yanına sıfır ekleyip 40’ı 6’ya bölerek 6 rakamının sürekli tekrar ettiğini görmek",
         "Bölümü 2,1666... biçiminde yazıp yalnızca tekrar eden 6 rakamının üstüne devir çizgisi koymak"
-      ]
+      ],
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
       "duzey": "ust",
-      "soru": "Görseldeki karşılaştırma kartlarında K = 3,4555... (yalnız 5 devirli), L = 3,4545... (45 devirli) ve M = 3,45 (sonlu) ondalık gösterimleri verilmiştir. Buna göre aşağıdaki ifadelerden hangisi {koyu:yanlıştır?}",
+      "soru": "Verilen kesir sıralama kartında K, L ve M noktalarının hangi tam sayılar arasında olduğu ve ondalık açılımları gösterilmiştir. Buna göre aşağıdaki ifadelerden hangisi {koyu:yanlıştır?}",
       "secenekler": [
         "K sayısının binde birler basamağındaki rakam 5’tir.",
         "L sayısının binde birler basamağındaki rakam 4’tür.",
         "M sayısının binde birler basamağındaki değeri 0’dır.",
         "Üç sayının büyükten küçüğe doğru sıralanışı M > L > K biçimindedir."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
       "duzey": "uygula",
-      "soru": "Görseldeki sayı doğrusunda yüzde birler basamağına yuvarlandığında 4,76 olan üç basamaklı ondalık gösterimlerin aralığı belirtilmiştir. Bu koşulu sağlayan en küçük ve en büyük üç basamaklı ondalık gösterimler sırasıyla hangileridir?",
+      "soru": "Verilen kesir sıralama kartında yüzde birler basamağına yuvarlandığında 4,76 olan üç basamaklı ondalık gösterimlerin aralığı belirtilmiştir. Bu koşulu sağlayan en küçük ve en büyük üç basamaklı ondalık gösterimler sırasıyla hangileridir?",
       "secenekler": [
         "4,755 ve 4,764",
         "4,751 ve 4,769",
         "4,754 ve 4,765",
         "4,750 ve 4,760"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
       "soru": "Görseldeki bilgi kartında yalnızca 8 rakamı devreden 5,3888... devirli ondalık gösterimi verilmiştir. Bu sayının onda birler ve yüzde birler basamağına yuvarlanmış hâllerini yazınız.",
-      "cevap": "Sayı 5,3888... olarak açıldığında onda birlere yuvarlanışı 5,4; yüzde birlere yuvarlanışı ise 5,39 olur.",
-      "satir": 2
+      "cevap": "5,3888... sayısının onda birlere yuvarlanışı 5,4; yüzde birlere yuvarlanışı ise 5,39 olur.",
+      "satir": 2,
+      "gorsel_var": true
     },
     {
       "tur": "sifre",
@@ -264,7 +255,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki alışveriş fişinde üç ürünün fiyatları (18,75 TL, 32,40 TL ve 24,85 TL) verilmiştir. Fiyatları birler basamağına yuvarlayarak bulunan tahmini toplamı gerçek toplamla karşılaştırınız.",
+      "soru": "Alışveriş fişinde üç ürünün fiyatları (18,75 TL, 32,40 TL ve 24,85 TL) verilmiştir. Fiyatları birler basamağına yuvarlayarak bulunan tahmini toplamı gerçek toplamla karşılaştırınız.",
       "cevap": "Yuvarlanan fiyatlar 19 + 32 + 25 = 76 TL’dir; gerçek toplam 76,00 TL ile birebir aynıdır.",
       "satir": 2
     },

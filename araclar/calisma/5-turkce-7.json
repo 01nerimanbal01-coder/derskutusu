@@ -11,9 +11,7 @@
   ],
   "hatirla": [
     "Öyküleyici metinlerde olay örgüsü, şahıs ve varlık kadrosu, mekân (yer) ve zaman olmak üzere dört temel hikâye unsuru bulunur.",
-    "Yaşanması mümkün veya yaşanmış durumlara gerçek unsur; yazarın hayal gücüyle kurguladığı olağanüstü öğelere kurgusal unsur denir.",
-    "Cümleler arasında düşüncenin yönünü değiştiren (ama, fakat, ancak), destekleyen (özellikle, örneğin) ve özetleyen (kısacası, özetle) ifadeler kullanılır.",
-    "Özel adlara gelen çekim ekleri kesme işaretiyle (’) ayrılır, yapım ekleri ayrılmaz; ulusal ve resmî bayram adları büyük harfle başlar."
+    "Yaşanması mümkün veya yaşanmış durumlara gerçek unsur; yazarın hayal gücüyle kurguladığı olağanüstü öğelere kurgusal unsur denir."
   ],
   "sorular": [
     {
@@ -32,14 +30,6 @@
         [
           "ana fikir",
           "Dinlenen veya okunan metnin okuyucuya verdiği temel mesaj"
-        ],
-        [
-          "konuşma çizgisi",
-          "Satır başına alınan diyalog cümlelerinin başına konan işaret"
-        ],
-        [
-          "kesme işareti",
-          "Özel adlara getirilen çekim eklerini ayırmak için konan işaret"
         ]
       ]
     },
@@ -75,10 +65,6 @@
         {
           "metin": "Ulusal ve resmî bayram adlarında yalnızca ilk kelimenin baş harfi büyük harfle yazılır.",
           "dogru": false
-        },
-        {
-          "metin": "'Özellikle, örneğin, hatta, üstelik' sözcükleri düşünceyi destekleyen ve açıklayan ifadelerdir.",
-          "dogru": true
         }
       ]
     },
@@ -99,14 +85,6 @@
         {
           "metin": "Anlatılanları toparlarken ___ gibi özetleme ifadeleri seçilir.",
           "cevap": "kısacası"
-        },
-        {
-          "metin": "Satır başındaki diyalogların önüne ___ çizgisi konur.",
-          "cevap": "konuşma"
-        },
-        {
-          "metin": "Olayı yaşayan başkahramana metnin ___ karakteri denir.",
-          "cevap": "ana"
         }
       ],
       "fazla": [
@@ -116,12 +94,12 @@
     {
       "tur": "coktan",
       "duzey": "uygula",
-      "soru": "Görseldeki dört kartta koyu yazılan geçiş ve bağlantı ifadelerinin cümleye kattığı işlevler altlarında belirtilmiştir. Hangi kartta geçiş ifadesinin görevi {koyu:yanlış} yazılmıştır?",
+      "soru": "Aşağıdaki cümlelerin hangisinde koyu yazılan geçiş ve bağlantı ifadesinin yay ayraç içinde verilen işlevi {koyu:yanlış} belirtilmiştir?",
       "secenekler": [
-        "1. Kart",
-        "2. Kart",
-        "3. Kart",
-        "4. Kart"
+        "Hava çok soğuktu {koyu:ama} yürüyüşe çıktık. (Düşüncenin yönünü değiştirme)",
+        "Düzenli kitap okumalısın, {koyu:başka bir deyişle} okumayı alışkanlık edinmelisin. (Açıklama yapma)",
+        "Sınavlara planlı çalıştı; {koyu:oysaki} tüm soruları doğru yanıtladı. (Özetleme ve sonuç bildirme)",
+        "Önce malzemeleri hazırladık, {koyu:sonra} deneye başladık. (Sıralama bildirme)"
       ],
       "dogru": 2
     },
@@ -138,7 +116,9 @@
         [
           "1. Şemsi Efendi Mektebi",
           "Gerçek unsur",
-          "Tarihte yaşanmış gerçek eğitim olayıdır."
+          {
+            "b": "Tarihte yaşanmış gerçek eğitim olayıdır."
+          }
         ],
         [
           "2. Konuşan korkuluk",
@@ -172,8 +152,8 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki diyalog kartında numaralanmış yay ayraçların (1, 2 ve 3) içine sırasıyla hangi noktalama işaretleri getirilmelidir? Nedenleriyle kısaca yazınız.",
-      "cevap": "1: İki nokta (:) konuşma öncesi; 2: Konuşma çizgisi (—) diyalog başı; 3: Nokta (.) bitmiş cümle sonu.",
+      "soru": "“Öğretmeni Küçük Mustafa’ya sevgiyle seslendi (1) (2) Senin adın bundan sonra Mustafa Kemal olsun (3)” metninde numaralanmış yay ayraçlara sırasıyla hangi noktalama işaretleri gelmelidir? Nedenini yazınız.",
+      "cevap": "1: İki nokta (:) açıklama; 2: Konuşma çizgisi (—) söz başı; 3: Nokta (.) bitmiş cümle.",
       "satir": 2
     },
     {
@@ -214,8 +194,8 @@
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki cümlelerde [ I ] ve [ II ] numaralı boşluklara düşüncenin akışına göre hangi tür geçiş ifadeleri getirilmelidir? Her boşluk için uygun birer örnek sözcük yazınız.",
-      "cevap": "[ I ] yön değiştiren ifade (ancak / fakat); [ II ] destekleyici ifade (özellikle / hatta).",
+      "soru": "“1) Çok yorulmuştu [ I ] çalışmaktan vazgeçmedi. 2) Tüm derslerini [ II ] matematik dersini çok seviyordu.” cümlelerinde [ I ] ve [ II ] numaralı yerlere hangi tür geçiş ifadeleri gelmelidir? Örnek yazınız.",
+      "cevap": "[ I ] yön değiştiren ifade (ancak/fakat); [ II ] destekleyici ifade (özellikle/hatta).",
       "satir": 2
     },
     {
@@ -254,7 +234,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki karşılaştırma kartında 'Mustafa' gibi tarihî bir kişiliği anlatan eserlerde gerçek olayların yanında kurgusal (hayalî) unsurlara da yer verilmesinin amacı ne olabilir? Düşüncenizi yazınız.",
+      "soru": "'Mustafa' gibi tarihî bir kişiliği anlatan eserlerde gerçek olayların yanında kurgusal (hayalî) unsurlara da yer verilmesinin amacı ne olabilir? Düşüncenizi yazınız.",
       "cevap": "Kurgusal unsurlar anlatımı ilgi çekici kılar ve kahramanın duygularını daha iyi yansıtır.",
       "satir": 2
     },

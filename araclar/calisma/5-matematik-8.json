@@ -11,8 +11,7 @@
   "hatirla": [
     "Uzunluğu belirlenmiş bir {parca:AB} doğru parçasının uç noktalarından, pergel açıklığı {uzunluk:AB} kadar ayarlanıp bozulmadan çizilen iki çember yayının kesişimiyle eşkenar üçgen inşa edilir.",
     "Pergel açıklığı {parca:AB} taban uzunluğunun yarısından ({kesir:1|2}’sinden) büyük ve tabandan farklı seçilerek eş yarıçaplı iki yay kesiştirildiğinde ikizkenar üçgen elde edilir.",
-    "Yarıçapları toplamı merkezler arası uzaklığa eşit olan iki çember dıştan teğettir (tek noktada değer); yarıçaplar toplamı merkezler arası uzaklıktan küçükse çemberler ayrıktır.",
-    "İki noktada kesişen eş çemberlerin üst (C) ve alt (D) kesişim noktalarını birleştiren doğru parçası, merkezleri birleştiren tabanı tam ortadan dik olarak ikiye böler."
+    "Yarıçapları toplamı merkezler arası uzaklığa eşit olan iki çember dıştan teğettir (tek noktada değer); yarıçaplar toplamı merkezler arası uzaklıktan küçükse çemberler ayrıktır."
   ],
   "sorular": [
     {
@@ -31,10 +30,6 @@
         [
           "ayrık çemberler",
           "Merkezler arası uzaklığın yarıçaplar toplamından büyük olduğu, kesişmeyen konum"
-        ],
-        [
-          "orta dikme doğrusu",
-          "Eş iki çemberin üst ve alt kesişim noktalarını birleştirip tabanı iki eş parçaya bölen doğru"
         ]
       ]
     },
@@ -70,10 +65,6 @@
         {
           "metin": "İkizkenar üçgen inşasında pergel açıklığı taban uzunluğunun {kesir:1|2}’sinden (yarısından) büyük seçilmelidir.",
           "dogru": true
-        },
-        {
-          "metin": "Merkezleri arasındaki uzaklık 14 cm olan 4 cm ve 6 cm yarıçaplı iki çemberin iki ortak kesişim noktası vardır.",
-          "dogru": false
         }
       ]
     },
@@ -94,10 +85,6 @@
         {
           "metin": "Merkezler arası uzaklık yarıçaplar toplamından büyük olduğunda çemberler ___ kalır.",
           "cevap": "ayrık"
-        },
-        {
-          "metin": "Eş iki çemberin üst ve alt kesişim noktalarını birleştiren doğru tabanı ___ eşit parçaya böler.",
-          "cevap": "iki"
         }
       ],
       "fazla": [
@@ -127,12 +114,14 @@
       ],
       "satirlar": [
         [
-          "1. Kart (r₁=7, r₂=7, d=7 cm)",
+          "1. Kart (r{alt:1}=7, r{alt:2}=7, d=7 cm)",
           "İki noktada kesişir",
-          "Eşkenar üçgen (21 cm)"
+          {
+            "b": "Eşkenar üçgen (21 cm)"
+          }
         ],
         [
-          "2. Kart (r₁=8, r₂=8, d=6 cm)",
+          "2. Kart (r{alt:1}=8, r{alt:2}=8, d=6 cm)",
           {
             "b": "İki noktada kesişir"
           },
@@ -141,7 +130,7 @@
           }
         ],
         [
-          "3. Kart (r₁=5, r₂=6, d=11 cm)",
+          "3. Kart (r{alt:1}=5, r{alt:2}=6, d=11 cm)",
           {
             "b": "Dıştan teğettir"
           },
@@ -150,7 +139,7 @@
           }
         ],
         [
-          "4. Kart (r₁=4, r₂=5, d=12 cm)",
+          "4. Kart (r{alt:1}=4, r{alt:2}=5, d=12 cm)",
           {
             "b": "Ayrık çemberlerdir"
           },
@@ -193,7 +182,7 @@
     {
       "tur": "coktan",
       "duzey": "uygula",
-      "soru": "Görselde merkezleri arasındaki uzaklık {uzunluk:AB} = 9 cm olan A merkezli (r₁ = 7 cm) ve B merkezli (r₂ = 7 cm) iki çember C noktasında kesişmektedir. Oluşan ABC üçgeninin çeşidi ve çevresi hangisidir?",
+      "soru": "Görselde merkezleri arasındaki uzaklık {uzunluk:AB} = 9 cm olan A merkezli (r{alt:1} = 7 cm) ve B merkezli (r{alt:2} = 7 cm) iki çember C noktasında kesişmektedir. Oluşan ABC üçgeninin çeşidi ve çevresi hangisidir?",
       "secenekler": [
         "İkizkenar üçgen — 23 cm",
         "Eşkenar üçgen — 21 cm",
@@ -250,7 +239,7 @@
     {
       "tur": "coktan",
       "duzey": "ust",
-      "soru": "Görselde O₁ ve O₂ merkezli iki çember dıştan T noktasında birbirine teğettir. Birinci çemberin yarıçapı 6 cm ve merkezler arası {uzunluk:O₁O₂} uzaklığı 15 cm olduğuna göre ikinci çemberin çapı kaç santimetredir?",
+      "soru": "Görselde O{alt:1} ve O{alt:2} merkezli iki çember dıştan T noktasında birbirine teğettir. Birinci çemberin yarıçapı 6 cm ve merkezler arası {uzunluk:O{alt:1}O{alt:2}} uzaklığı 15 cm olduğuna göre ikinci çemberin çapı kaç santimetredir?",
       "secenekler": [
         "9 cm",
         "18 cm",

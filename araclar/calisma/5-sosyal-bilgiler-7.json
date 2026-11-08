@@ -10,9 +10,7 @@
   ],
   "hatirla": [
     "Bir ilin denizlere, komşu illere, yer şekillerine, yükseltiye ve ulaşım ağlarına göre özel durumuna göreceli konum denir.",
-    "Siyasi harita il sınırlarını ve komşuları; fiziki harita yer şekillerini ve yükselti basamaklarını (yeşil: 0–500 m, sarı-turuncu: 500–1500 m, kahverengi: 1500 m+) gösterir.",
-    "Kıyılarda ılıman iklim, verimli ovalarda tarım, ulaşım kavşakları ve limanlarda sanayi-ticaret, yüksek yerlerde hayvancılık ve kış turizmi gelişir.",
-    "İklimi elverişli, yer şekilleri sade, su kaynakları bol ve iş olanakları fazla olan illerde nüfus yoğundur."
+    "Siyasi harita il sınırlarını ve komşuları; fiziki harita yer şekillerini ve yükselti basamaklarını (yeşil: 0–500 m, sarı-turuncu: 500–1500 m, kahverengi: 1500 m+) gösterir."
   ],
   "sorular": [
     {
@@ -31,14 +29,6 @@
         [
           "fiziki harita",
           "Dağ, ova ve platoları yükselti basamaklarıyla gösteren harita"
-        ],
-        [
-          "yeşil renk",
-          "Fiziki haritada 0–500 m arasındaki alçak alanları gösteren ton"
-        ],
-        [
-          "kahverengi renk",
-          "Fiziki haritada 1500 m üzerindeki yüksek dağları gösteren ton"
         ]
       ]
     },
@@ -74,10 +64,6 @@
         {
           "metin": "Yüksek, sarp ve engebeli dağların geniş yer tuttuğu illerimizde kara ve demir yolu ulaşımı çok kolaydır.",
           "dogru": false
-        },
-        {
-          "metin": "Asya ile Avrupa’yı bağlayan boğazlara ve işlek limanlara sahip olan İstanbul’da ticaret ve sanayi gelişmiştir.",
-          "dogru": true
         }
       ]
     },
@@ -98,14 +84,6 @@
         {
           "metin": "Kuzey ile Doğu ana yönleri arasındaki ara yöne ___ denir.",
           "cevap": "kuzeydoğu"
-        },
-        {
-          "metin": "Verimli Çukurova deltasına sahip Adana’da ___ gelişmiştir.",
-          "cevap": "tarım"
-        },
-        {
-          "metin": "Uludağ ve Palandöken gibi yüksek dağlarda ___ turizmi yapılır.",
-          "cevap": "kış"
         }
       ],
       "fazla": [
@@ -137,7 +115,9 @@
         [
           "1. Adana (Çukurova)",
           "Tarım",
-          "Verimli ova ve ılıman iklim"
+          {
+            "b": "Verimli ova ve ılıman iklim"
+          }
         ],
         [
           "2. Kocaeli (Liman-kavşak)",
@@ -171,7 +151,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görselde aynı nisan gününde Muğla ve Hakkâri illerimizde ölçülen hava sıcaklıkları ve günlük yaşam durumu gösterilmiştir. Aynı gün içinde iki ilimizde bu kadar farklı hava koşullarının yaşanmasını göreceli konumla açıklayınız.",
+      "soru": "Aynı nisan gününde deniz kıyısındaki Muğla’da hava sıcaklığı 22 °C iken, yüksek ve dağlık Hakkâri’de sıcaklığın 2 °C ve kar yağışlı olması illerimizin hangi konum özelliğiyle açıklanır? Nedenini yazınız.",
       "cevap": "Muğla kıyıda ve alçak olduğundan ılıman; Hakkâri denizden uzak ve yüksek olduğundan soğuktur.",
       "satir": 2
     },
@@ -213,7 +193,7 @@
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görselde ülkemizin batısındaki İzmir’den doğusundaki Erzurum’a doğru uzanan yükselti kesiti verilmiştir. Batıdan doğuya doğru gidildikçe yükseltide, fiziki harita renginde ve ortalama sıcaklıkta nasıl bir değişim görülür?",
+      "soru": "Ülkemizin batısında deniz kıyısında yer alan İzmir’den doğudaki yüksek Erzurum platosuna doğru gidildikçe yeryüzü yükseltisinde, fiziki harita renginde ve ortalama sıcaklıkta nasıl bir değişim görülür?",
       "cevap": "Batıdan doğuya yükselti artar, harita rengi yeşilden kahverengiye döner ve sıcaklık düşer.",
       "satir": 2
     },
@@ -258,8 +238,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görselde verilen iki harita türünden hangisi yaşadığımız ilin dağlarını, ovalarını ve yükseltisini, hangisi ise komşu illerini incelemek için kullanılmalıdır? Açıklayınız.",
-      "cevap": "Komşu iller için A (Siyasi Harita); dağ, ova ve yükselti için B (Fiziki Harita) kullanılır.",
+      "soru": "Siyasi (idari) harita ve fiziki harita türlerinden hangisi yaşadığımız ilin dağlarını, ovalarını ve yükseltisini; hangisi ise il sınırlarını ve komşu illerini incelemek için kullanılmalıdır? Açıklayınız.",
+      "cevap": "Komşu iller için siyasi harita; dağ, ova ve yükselti için fiziki harita kullanılır.",
       "satir": 2
     },
     {

@@ -10,9 +10,7 @@
   ],
   "hatirla": [
     "Bir çemberin merkezinden yay üzerindeki bütün noktalara çizilen yarıçap doğru parçalarının uzunlukları eşittir (r).",
-    "Pergel ve cetvelle üçgen inşa edilirken önce taban çizilir, ardından uç noktalardan pergel ile yaylar çizilip kesişim birleştirilir.",
-    "Hangi çeşitte olursa olsun bütün üçgenlerin üç iç açısının ölçüleri toplamı daima 180 derecedir.",
-    "Eşkenar üçgenin her iç açısı 60° olduğundan yalnızca dar açılıdır; ikizkenar ve çeşitkenar üçgenler dar, dik veya geniş açılı olabilir."
+    "Pergel ve cetvelle üçgen inşa edilirken önce taban çizilir, ardından uç noktalardan pergel ile yaylar çizilip kesişim birleştirilir."
   ],
   "sorular": [
     {
@@ -31,14 +29,6 @@
         [
           "yarıçap",
           "Çember merkezinden yay üzerindeki noktalara çizilen eş uzunluk"
-        ],
-        [
-          "pergel",
-          "Üçgen inşasında çember yayları çizerek eşit uzunluk taşıyan araç"
-        ],
-        [
-          "çeşitkenar üçgen",
-          "Üç kenar uzunluğu ve üç iç açısının ölçüsü farklı olan üçgen"
         ]
       ]
     },
@@ -74,10 +64,6 @@
         {
           "metin": "Bir ikizkenar üçgenin birbirine eşit olan iki taban açısı da 90° veya 90°’den büyük olabilir.",
           "dogru": false
-        },
-        {
-          "metin": "İki kenar uzunluğu aynı olan üçgenlerde, bu eş kenarlara bakan taban açıları da eşittir.",
-          "dogru": true
         }
       ]
     },
@@ -98,14 +84,6 @@
         {
           "metin": "Bir üçgenin üç iç açısının ölçüleri toplamı ___ derecedir.",
           "cevap": "180"
-        },
-        {
-          "metin": "İkizkenar dik üçgenin eş dar açılarından her biri ___ derecedir.",
-          "cevap": "45"
-        },
-        {
-          "metin": "Eşkenar üçgenin açıları 60° olduğundan yalnızca ___ açılıdır.",
-          "cevap": "dar"
         }
       ],
       "fazla": [
@@ -137,7 +115,9 @@
         [
           "1. Üçgen (60° ve 60°)",
           "60°",
-          "Dar açılı eşkenar üçgen"
+          {
+            "b": "Dar açılı eşkenar üçgen"
+          }
         ],
         [
           "2. Üçgen (90° ve 45°)",
@@ -171,7 +151,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki PRS ikizkenar üçgeninde PR ile PS kenarları birbirine eşittir ve P tepe açısının ölçüsü 40° olarak verilmiştir. Taban açıları olan {aci:R} ve {aci:S} açılarının ölçülerini bulunuz.",
+      "soru": "PRS ikizkenar üçgeninde PR ile PS kenarları birbirine eşittir ve P tepe açısının ölçüsü 40° olarak verilmiştir. Taban açıları olan {aci:R} ve {aci:S} açılarının ölçülerini bulunuz.",
       "cevap": "180° − 40° = 140° ve 140° ÷ 2 = 70° olduğundan taban açılarının her biri 70° bulunur.",
       "satir": 2
     },
@@ -213,7 +193,7 @@
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görselde B, C ve D noktaları aynı doğru üzerindedir. ABC eşkenar üçgen, CDE ise C köşesi dik (90°) olan ikizkenar dik üçgen olduğuna göre aradaki {olcu:ACE} açısı kaç derecedir?",
+      "soru": "B, C ve D noktaları aynı doğru üzerindedir. ABC eşkenar üçgen, CDE ise C köşesi dik (90°) olan ikizkenar dik üçgen olduğuna göre aradaki {olcu:ACE} açısı kaç derecedir?",
       "cevap": "180° − (60° + 90°) = 30° işleminden aradaki ACE açısının ölçüsü 30° bulunur.",
       "satir": 2
     },
@@ -258,7 +238,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki bilgi kartında Bora’nın ikizkenar üçgenin taban açılarıyla ilgili iddiası yer almaktadır. Bora’nın iddiası üçgenin iç açıları toplamı kuralına göre doğru mudur? Açıklayınız.",
+      "soru": "Bora, “Bir ikizkenar üçgenin eş olan taban açılarından her birinin ölçüsü 95° olabilir.” iddiasında bulunmaktadır. Bora’nın bu iddiası üçgenin iç açıları toplamı kuralına göre doğru mudur? Nedenini açıklayınız.",
       "cevap": "95° + 95° = 190° > 180° olacağından iddia yanlıştır; taban açıları dar açı olmalıdır.",
       "satir": 2
     },

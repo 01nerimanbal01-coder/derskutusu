@@ -15,9 +15,7 @@
   ],
   "hatirla": [
     "Kesir, ondalık ve yüzde gösterimlerini bir arada içeren problemlerde veriler ortak gösterime çevrilir: {kesir:1|2} = 0,5 = %50; {kesir:1|4} = 0,25 = %25; {kesir:3|4} = 0,75 = %75; {kesir:1|5} = 0,2 = %20; {kesir:3|8} = 0,375 = %37,5.",
-    "Bir bütünün kesir veya yüzde kadarı bulunurken çarpma yapılır; kesir veya yüzdesi verilen çokluğun tamamı (bütünü) bulunurken bölme (birim kesir stratejisi) uygulanır.",
-    "“Kalanın kesri” ifadelerinde ikinci oran tüm bütüne değil, ilk harcamadan sonra geriye kalan miktara uygulanır; şerit diyagram çizmek hatayı önler.",
-    "Bir sayıyı 0,5 ile çarpmak yarısını almak, 0,25 ile çarpmak 4’e bölmek, 0,5’e bölmek ise 2 katını almaktır; çözüm sonunda tahminle kontrol yapılır."
+    "Bir bütünün kesir veya yüzde kadarı bulunurken çarpma yapılır; kesir veya yüzdesi verilen çokluğun tamamı (bütünü) bulunurken bölme (birim kesir stratejisi) uygulanır."
   ],
   "sorular": [
     {
@@ -36,10 +34,6 @@
         [
           "24 sayısının 0,5’e bölümü",
           "48"
-        ],
-        [
-          "200 TL’nin %15 indirimli satış fiyatı",
-          "170"
         ]
       ]
     },
@@ -76,10 +70,6 @@
         {
           "metin": "Etiket fiyatı üzerinden %20 indirim yapılan bir ürün, etiket fiyatının %80’ine (0,8 katına) satılır.",
           "dogru": true
-        },
-        {
-          "metin": "300 TL’lik bir ürüne %10 zam yapıldığında ürünün yeni satış fiyatı 310 TL olur.",
-          "dogru": false
         }
       ]
     },
@@ -100,10 +90,6 @@
         {
           "metin": "Problemdeki {kesir:3|4} kesri ondalık olarak 0,75 ve yüzde olarak %___ demektir.",
           "cevap": "yetmiş beş"
-        },
-        {
-          "metin": "Bir sayıyı 0,5’e bölmek, o sayının ___ katını almakla eşdeğerdir.",
-          "cevap": "iki"
         }
       ],
       "fazla": [
@@ -139,7 +125,9 @@
           "1. Ceket (600 TL)",
           "%25 ({kesir:1|4})",
           "150 TL",
-          "450 TL"
+          {
+            "b": "450 TL"
+          }
         ],
         [
           "2. Çanta (400 TL)",
@@ -251,9 +239,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki zihinden işlem kartlarında verilen “32 × 0,25” ve “15 ÷ 0,5” işlemlerinin kesir eşdeğerlikleri kullanılarak kısa yoldan nasıl hesaplanacağını sonuçlarıyla açıklayınız.",
-      "cevap": "0,25 = {kesir:1|4} olduğundan 32 ÷ 4 = 8 bulunur; 0,5 = {kesir:1|2} olduğundan 15 × 2 = 30 bulunur.",
+      "soru": "“32 × 0,25” ve “15 ÷ 0,5” işlemlerinin kesir eşdeğerlikleri kullanılarak zihinden kısa yoldan nasıl hesaplanacağını sonuçlarıyla açıklayınız.",
+      "cevap": "0,25 = {kesir:1|4} olduğundan 32 ÷ 4 = 8; 0,5 = {kesir:1|2} olduğundan 15 × 2 = 30 bulunur.",
       "satir": 2
     },
     {

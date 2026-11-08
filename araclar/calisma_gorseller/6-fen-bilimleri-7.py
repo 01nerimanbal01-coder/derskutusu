@@ -1,191 +1,128 @@
-"""6. sınıf Fen Bilimleri 7. hafta (Sabit Süratli ve Sabit Hızlı Hareket Grafikleri & Canlılarda Üremeye Giriş) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-12.5 pt (K150 EK); eğik kesir yok (K155)."""
+"""6-fen-bilimleri-7 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-GRI, GRI_A, SOLUK, ALTIN, KUM = '#9aa6bd', '#eef1f6', '#5b6479', '#c9a227', '#fffdf5'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-YAZI_I = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=None):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.8, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {YAZI_I if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.5, ek=''):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"{ek}/>'
-
-
-def ray_ve_cember_pisti():
-    ic = kutu(8, 8, 284, 88, MAVI_A, MAVI, 9, 1.5)
-    ic += yazi(150, 26, 'K Treni (Doğrusal Ray — Yön Sabit)', 10.6, MAVI)
-    ic += f'<line x1="28" y1="56" x2="272" y2="56" stroke="{LAC}" stroke-width="2.4"/>'
-    ic += kutu(76, 42, 64, 18, MAVI, LAC, 4, 1.2)
-    ic += yazi(108, 55, 'K Treni', 10.2, '#fff')
-    ic += f'<line x1="146" y1="51" x2="196" y2="51" stroke="{TUR}" stroke-width="2.2"/><polygon points="196,46 206,51 196,56" fill="{TUR}"/>'
-    ic += yazi(150, 82, 'Her 1 s’de 20 m (Doğu yönü)', 10.2, LAC, ince=True)
-
-    ic += kutu(308, 8, 284, 88, TUR_A, TUR, 9, 1.5)
-    ic += yazi(450, 26, 'L Aracı (Çembersel Pist — Yön Değişken)', 10.6, TUR)
-    ic += f'<circle cx="376" cy="58" r="24" fill="none" stroke="{TUR}" stroke-width="2.2" stroke-dasharray="5 3"/>'
-    ic += f'<circle cx="376" cy="34" r="6" fill="{KIR}"/>'
-    ic += yazi(492, 54, 'Her 1 s’de 20 m yol alır;', 10.2, LAC, ince=True)
-    ic += yazi(492, 74, 'yönü sürekli döner.', 10.2, KIR)
-    return svg(600, 104, ic, 'Doğrusal rayda K treni ve çembersel pistte dönen L aracı karşılaştırması.', 22)
-
-
-def yol_zaman_grafigi():
-    ic = kutu(8, 6, 584, 98, KUM, GRI, 9, 1.5)
-    ic += yazi(170, 24, 'Yol (m) – Zaman (s) Grafiği', 10.8, MAVI)
-    # Eksenler
-    ic += f'<line x1="56" y1="86" x2="290" y2="86" stroke="{LAC}" stroke-width="1.8"/>'
-    ic += f'<line x1="56" y1="86" x2="56" y2="30" stroke="{LAC}" stroke-width="1.8"/>'
-    # Doğrusal artan çizgi
-    ic += f'<line x1="56" y1="86" x2="248" y2="36" stroke="{YES}" stroke-width="2.5"/>'
-    for i, (t, x_m) in enumerate([(1, 12), (2, 24), (3, 36)]):
-        px = 56 + (i + 1) * 64
-        py = 86 - (i + 1) * 16.5
-        ic += f'<circle cx="{px}" cy="{py:.1f}" r="3.5" fill="{YES}"/>'
-        ic += yazi(px, 98, f'{t} s', 10.0, LAC, ince=True)
-        ic += yazi(36, py + 4, f'{x_m}', 10.0, LAC, ince=True)
-    ic += kutu(326, 20, 248, 68, YES_A, YES, 8, 1.4)
-    ic += yazi(450, 42, 'Grafik Verileri:', 10.8, YES)
-    ic += yazi(450, 62, '1 s → 12 m · 2 s → 24 m · 3 s → 36 m', 10.4, LAC, ince=True)
-    ic += yazi(450, 80, 't = 10 s sonunda alınan yol = ?', 10.4, LAC)
-    return svg(600, 110, ic, '1 saniyede 12 metre, 2 saniyede 24 metre, 3 saniyede 36 metre gösteren doğrusal yol-zaman grafiği.', 22)
-
-
-def hareket_veri_kartlari():
-    kartlar = [
-        ('1. K Aracı', 'Yol: 60 m · Zaman: 4 s', MAVI, MAVI_A),
-        ('2. L Aracı', 'Yol: 180 km · Zaman: 2 h', TUR, TUR_A),
-        ('3. M Aracı', 'Zaman: 5 s · Sürat: 20 m/s', YES, YES_A),
-        ('4. N Aracı', 'Yol: 240 km · Sürat: 80 km/h', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, veri, renk, arka) in enumerate(kartlar):
-        x = 8 + i * 148
-        s1, s2 = [p.strip().replace('/', '÷') for p in veri.split('·')]
-        ic += kutu(x, 8, 138, 76, arka, renk, 8, 1.5)
-        ic += kutu(x, 8, 138, 24, renk, renk, 8, 1)
-        ic += yazi(x + 69, 24, bas, 10.6, '#fff')
-        ic += yazi(x + 69, 49, s1, 10.3, LAC, ince=True)
-        ic += yazi(x + 69, 69, s2, 10.3, LAC, ince=True)
-    return svg(600, 92, ic, 'K, L, M ve N araçlarının yol, zaman ve sürat verilerini içeren dört kart.', 22)
-
-
-def iki_yatay_grafik():
-    ic = kutu(8, 8, 284, 86, KIR_A, KIR, 9, 1.5)
-    ic += yazi(150, 24, 'I. Grafik: Yol (m) – Zaman (s)', 10.6, KIR)
-    ic += f'<line x1="48" y1="78" x2="256" y2="78" stroke="{LAC}" stroke-width="1.6"/>'
-    ic += f'<line x1="48" y1="78" x2="48" y2="34" stroke="{LAC}" stroke-width="1.6"/>'
-    ic += f'<line x1="48" y1="52" x2="246" y2="52" stroke="{KIR}" stroke-width="2.6"/>'
-    ic += yazi(32, 56, '15 m', 10.0, KIR)
-
-    ic += kutu(308, 8, 284, 86, YES_A, YES, 9, 1.5)
-    ic += yazi(450, 24, 'II. Grafik: Sürat – Zaman (s)', 10.6, YES)
-    ic += f'<line x1="348" y1="78" x2="556" y2="78" stroke="{LAC}" stroke-width="1.6"/>'
-    ic += f'<line x1="348" y1="78" x2="348" y2="34" stroke="{LAC}" stroke-width="1.6"/>'
-    ic += f'<line x1="348" y1="52" x2="546" y2="52" stroke="{YES}" stroke-width="2.6"/>'
-    ic += yazi(330, 56, '15', 10.0, YES)
-    return svg(600, 102, ic, 'Sol tarafta yatay çizgili yol-zaman grafiği, sağ tarafta yatay çizgili sürat-zaman grafiği.', 22)
-
-
-def ureme_posterleri():
-    posterler = [
-        ('1. Poster: Amip', '1 hücre → 2 yeni amip', MAVI, MAVI_A),
-        ('2. Poster: Hidra', 'Tomurcuk → yeni hidra', YES, YES_A),
-        ('3. Poster: Kertenkele (!)', 'Kopan kuyruğun onarımı', KIR, KIR_A),
-        ('4. Poster: Denizyıldızı', 'Kopan koldan yeni birey', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(posterler):
-        x = 8 + (i % 2) * 296
-        y = 6 + (i // 2) * 48
-        ic += kutu(x, y, 288, 42, arka, renk, 8, 1.5)
-        ic += yazi(x + 144, y + 18, bas, 10.6, renk)
-        ic += yazi(x + 144, y + 35, alt, 10.2, LAC, ince=True)
-    return svg(600, 104, ic, 'Dört poster: amip bölünmesi, hidra tomurcuklanması, kertenkele kuyruk onarımı ve denizyıldızı rejenerasyonu.', 22)
-
-
-def cilek_vejetatif_karti():
-    ic = kutu(8, 8, 584, 84, YES_A, YES, 9, 1.6)
-    ic += kutu(8, 8, 584, 24, YES, YES, 9, 1)
-    ic += yazi(300, 24, 'BAHÇE GÖZLEM KARTI · VERİMLİ ÇİLEK BİTKİSİ', 10.8, '#fff')
-    ic += kutu(24, 40, 250, 42, '#fff', YES, 7, 1.4)
-    ic += yazi(149, 58, 'Ata Bitki: İri ve Tatlı Çilek', 10.5, YES)
-    ic += yazi(149, 74, 'Hedef: Birebir aynı kalıtsal yapı', 10.1, LAC, ince=True)
-    ic += f'<line x1="282" y1="61" x2="326" y2="61" stroke="{TUR}" stroke-width="2.2"/><polygon points="326,56 336,61 326,66" fill="{TUR}"/>'
-    ic += kutu(344, 40, 232, 42, TUR_A, TUR, 7, 1.4)
-    ic += yazi(460, 58, 'Seçilecek Üreme Yöntemi = ?', 10.5, TUR)
-    ic += yazi(460, 74, '(Sürünücü gövde mi, tohum mu?)', 10.1, LAC, ince=True)
-    return svg(600, 100, ic, 'Ata çilek bitkisinden birebir aynı kalıtsal yapıda yeni fideler elde etme şeması.', 22)
-
-
-def eseysiz_eseyli_sema():
-    ic = kutu(8, 8, 284, 82, MAVI_A, MAVI, 9, 1.5)
-    ic += yazi(150, 26, 'K Olayı (Eşeysiz Üreme)', 10.8, MAVI)
-    ic += yazi(150, 48, 'Tek ata canlı · Döllenme yok', 10.3, LAC, ince=True)
-    ic += yazi(150, 68, 'Kalıtsal yapı: Atayla birebir aynı', 10.3, MAVI)
-
-    ic += kutu(308, 8, 284, 82, MOR_A, MOR, 9, 1.5)
-    ic += yazi(450, 26, 'L Olayı (Eşeyli Üreme)', 10.8, MOR)
-    ic += yazi(450, 48, 'Yumurta + Sperm → Döllenme → Zigot', 10.3, LAC, ince=True)
-    ic += yazi(450, 68, 'Kalıtsal yapı: Kalıtsal çeşitlilik var', 10.3, MOR)
-    return svg(600, 98, ic, 'Eşeysiz üreme (K olayı) ve eşeyli üreme (L olayı) karşılaştırma kartları.', 22)
-
-
-def ikili_surat_zaman_grafigi():
-    ic = kutu(8, 6, 584, 96, KUM, GRI, 9, 1.5)
-    ic += yazi(176, 22, 'Sürat – Zaman (s) Grafiği (6 Saniye)', 10.8, LAC)
-    ic += f'<line x1="56" y1="86" x2="296" y2="86" stroke="{LAC}" stroke-width="1.8"/>'
-    ic += f'<line x1="56" y1="86" x2="56" y2="28" stroke="{LAC}" stroke-width="1.8"/>'
-    # K aracı (20) ve L aracı (12)
-    ic += f'<line x1="56" y1="42" x2="266" y2="42" stroke="{MAVI}" stroke-width="2.6"/>'
-    ic += yazi(38, 46, '20', 10.2, MAVI)
-    ic += yazi(280, 46, 'K', 10.5, MAVI)
-    ic += f'<line x1="56" y1="62" x2="266" y2="62" stroke="{TUR}" stroke-width="2.6"/>'
-    ic += yazi(38, 66, '12', 10.2, TUR)
-    ic += yazi(280, 66, 'L', 10.5, TUR)
-    ic += yazi(266, 98, '6 s', 10.0, LAC)
-
-    ic += kutu(326, 20, 248, 66, MAVI_A, MAVI, 8, 1.4)
-    ic += yazi(450, 40, 'Alınan Yol = Sürat × Zaman', 10.6, MAVI)
-    ic += yazi(450, 60, 'K sürati = 20 · L sürati = 12', 10.3, LAC, ince=True)
-    ic += yazi(450, 78, 't = 6 s sonunda yol farkı = ?', 10.3, LAC)
-    return svg(600, 108, ic, 'K (20) ve L (12) araçlarının 6 saniyelik sabit sürat-zaman grafiği.', 22)
-
-
-def eseysiz_siniflama_tablosu():
-    sutunlar = [
-        ('1. Bölünerek', 'Bakteri', MAVI, MAVI_A),
-        ('2. Tomurcuklanarak', 'Bira mayası', YES, YES_A),
-        ('3. Rejenerasyon (!)', 'Menekşe yaprağı', KIR, KIR_A),
-        ('4. Vejetatif', 'Patates yumrusu', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, ornek, renk, arka) in enumerate(sutunlar):
-        x = 8 + i * 148
-        ic += kutu(x, 8, 138, 76, arka, renk, 8, 1.5)
-        ic += kutu(x, 8, 138, 24, renk, renk, 8, 1)
-        ic += yazi(x + 69, 24, bas, 10.4, '#fff')
-        ic += yazi(x + 69, 58, ornek, 10.5, LAC)
-    return svg(600, 92, ic, 'Dört eşeysiz üreme sütunu: 3. sütunda rejenerasyon altına yanlışlıkla menekşe yaprağı yazılmış.', 22)
+GORSELLER = {1: '<svg viewBox="0 0 350 94" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Doğrusal raydaki K treni '
+    've çembersel pistteki L aracı."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">K Treni (Doğrusal Ray)</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Her 1 sn’de 20 m yol alır; yönü sabittir.</text><rect x="4" y="49" '
+    'width="342" height="43" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">L Aracı (Çembersel Pist)</text><text x="11.0" '
+    'y="84.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Her 1 sn’de 20 m '
+    'yol alır; yönü sürekli değişir.</text></svg>',
+ 4: '<svg viewBox="0 0 350 150" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bisikletlinin her '
+    'saniyedeki yol ve zaman ölçüm kartları."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Bisikletlinin Yol – Zaman Ölçümleri</text><text x="11.0" y="38.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">1. saniye: 12 m · 2. saniye: 24 m · 3. '
+    'saniye: 36</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">m</text><rect x="4" y="68" width="342" height="80" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="85.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Hesaplanacak Değerler</text><text x="111.4" y="112.8" text-anchor="end" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Sabit sürat = ?</text><text x="125.6" y="102.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">m</text><line x1="114.9" y1="106.8" '
+    'x2="136.2" y2="106.8" stroke="#0b2257" stroke-width="0.75"/><text x="125.6" y="122.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">sn</text><text x="139.7" y="112.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">· 10. saniye sonunda</text><text x="11.0" '
+    'y="140.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">toplam yol = ? '
+    'm</text></svg>',
+ 5: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="K, L, M ve N araçlarının '
+    'hareket ölçüm kartları."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. K '
+    'Aracı</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Yol: 60 m · Zaman: 4</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">sn</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">2. L Aracı</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yol: 180 km · Zaman:</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">2 sa</text><rect x="4" '
+    'y="71" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. M Aracı</text><text '
+    'x="87.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Zaman: 5 sn · Sürat:</text><text x="83.6" y="135.2" text-anchor="end" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">20</text><text x="97.7" y="124.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">m</text><line x1="87.1" y1="129.2" x2="108.4" y2="129.2" '
+    'stroke="#0b2257" stroke-width="0.75"/><text x="97.7" y="144.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">sn</text><rect x="179" y="71" width="167" height="82" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">4. N Aracı</text><text x="262.5" y="107.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yol: 240 km · Sürat:</text><text x="255.0" y="135.2" '
+    'text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">80</text><text x="272.7" '
+    'y="124.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">km</text><line '
+    'x1="258.5" y1="129.2" x2="287.0" y2="129.2" stroke="#0b2257" stroke-width="0.75"/><text x="272.7" y="144.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">sa</text></svg>',
+ 8: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört canlıda gözlenen '
+    'olay posterleri."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Poster · Amip</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">1 hücre → 2 yeni</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">amip</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Poster · Hidra</text><text x="262.5" y="39.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tomurcuk → yeni</text><text x="262.5" '
+    'y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">hidra</text><rect x="4" y="71" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="89.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Poster ·</text><text x="87.5" y="107.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Kertenkele</text><text x="87.5" y="126.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kopan kuyruğun</text><text x="87.5" y="144.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">onarımı</text><rect '
+    'x="179" y="71" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Poster ·</text><text '
+    'x="262.5" y="107.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Denizyıldızı</text><text x="262.5" y="126.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kopan koldan yeni</text><text x="262.5" y="144.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">birey</text></svg>',
+ 9: '<svg viewBox="0 0 350 113" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bahçe gözlem ve çilek '
+    'çoğaltma kartı."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Ata Bitki · '
+    'Verimli Çilek</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Özelliği: İri ve tatlı meyve veren çilek bitkisi</text><rect x="4" y="49" width="342" height="62" '
+    'rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="66.4" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Bahçıvanın Üretim Hedefi</text><text x="11.0" y="84.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kalıtsal yapısı ata '
+    'bitkiyle birebir aynı fideler</text><text x="11.0" y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">üretmek</text></svg>',
+ 12: '<svg viewBox="0 0 350 107" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="K ve L araçlarının 6 '
+     'saniyelik sürat ve zaman ölçüm kartları."><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">K Aracı Hareket</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Ölçüm Kartı</text><text x="125.4" y="67.5" text-anchor="end" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sabit sürati: 20</text><text x="139.6" '
+     'y="56.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">m</text><line '
+     'x1="128.9" y1="61.5" x2="150.2" y2="61.5" stroke="#0b2257" stroke-width="0.75"/><text x="139.6" y="76.7" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">sn</text><text x="153.7" y="67.5" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">·</text><text x="87.5" '
+     'y="95.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hareket '
+     'süresi: 6 sn</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+     'x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">L '
+     'Aracı Hareket</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#d97706">Ölçüm Kartı</text><text x="300.4" y="67.5" text-anchor="end" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="500" fill="#0b2257">Sabit sürati: 12</text><text x="314.6" y="56.7" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">m</text><line x1="303.9" y1="61.5" '
+     'x2="325.2" y2="61.5" stroke="#0b2257" stroke-width="0.75"/><text x="314.6" y="76.7" text-anchor="middle" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">sn</text><text x="328.7" y="67.5" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">·</text><text x="262.5" y="95.2" '
+     'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hareket süresi: 6 '
+     'sn</text></svg>',
+ 13: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört eşeysiz üreme '
+     'sınıflandırma sütunu."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+     'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+     'Bölünerek</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#0b2257">Bakteri</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#d97706" '
+     'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#d97706">2. Tomurcuklanarak</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bira mayası</text><rect x="4" y="52" width="167" height="45" rx="5" '
+     'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Rejenerasyon</text><text x="87.5" y="88.5" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Menekşe yaprağı</text><rect x="179" y="52" '
+     'width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Vejetatif</text><text x="262.5" y="88.5" '
+     'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Patates '
+     'yumrusu</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = ray_ve_cember_pisti()
-    s[4]['gorsel'] = yol_zaman_grafigi()
-    s[5]['gorsel'] = hareket_veri_kartlari()
-    s[6]['gorsel'] = iki_yatay_grafik()
-    s[8]['gorsel'] = ureme_posterleri()
-    s[9]['gorsel'] = cilek_vejetatif_karti()
-    s[10]['gorsel'] = eseysiz_eseyli_sema()
-    s[12]['gorsel'] = ikili_surat_zaman_grafigi()
-    s[13]['gorsel'] = eseysiz_siniflama_tablosu()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

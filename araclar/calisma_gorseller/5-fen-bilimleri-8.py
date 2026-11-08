@@ -1,158 +1,142 @@
-"""5. sınıf Fen Bilimleri 8. hafta (Kuvvetin Nitelikleri, Dinamometre ile Ölçüm ve Bilim Tarihinde Yer Çekimi) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 12 pt Noto Sans (K150 EK); kesir yok (K155)."""
+"""5-fen-bilimleri-8 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, GRI, GRI_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#9aa6bd', '#eef1f6'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-TR_FONT = 'font-family="Noto Sans, sans-serif" font-size="12"'
-
-
-def svg(w, h, ic, etiket, en_fazla=18):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    agirlik = ' font-weight="700"' if kalin else ' font-weight="500"'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {TR_FONT}{agirlik} fill="{renk}">{metin}</text>'
-
-
-def sekiz_bolmeli_dinamometre_sema():
-    ic = f'<rect x="6" y="6" width="170" height="88" rx="9" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.4"/>'
-    ic += yazi(91, 25, 'R Cismi (8 Bölmeli)', MAVI, kalin=True)
-    ic += yazi(91, 52, '3 bölme = 18 N', LAC, kalin=True)
-    ic += yazi(91, 76, '1 bölme = 6 N', LAC)
-
-    ic += f'<rect x="184" y="6" width="170" height="88" rx="9" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.4"/>'
-    ic += yazi(269, 25, 'S Cismi (Aynı Araç)', TUR, kalin=True)
-    ic += yazi(269, 52, '6 bölme = ? N', LAC, kalin=True)
-    ic += yazi(269, 76, '8 Bölme Kapasite = ? N', LAC)
-    return svg(360, 100, ic, '8 eşit bölmeli dinamometrede R cismi 3 bölme 18 N ve S cismi 6 bölme şeması.', 21)
-
-
-def bilim_tarihi_panosu():
-    kartlar = [
-        ('1. El-Hâzinî', 'Yer merkezine çekim', YES, YES_A),
-        ('2. Bîrûnî', 'Savrulmayı önleyen çekim', MAVI, MAVI_A),
-        ('3. Hikmet Terazisi', 'Yalnız sıcaklık ölçer', KIR, '#fdeaea'),
-        ('4. Isaac Newton', 'Kuvvet birimi Newton (N)', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, acik, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 50
-        ic += f'<rect x="{x}" y="{y}" width="172" height="44" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 86, y + 19, bas, renk, kalin=True)
-        ic += yazi(x + 86, y + 37, acik, LAC)
-    return svg(360, 106, ic, 'Bilim tarihinde yer çekimi ve kuvvet panosu: El-Hâzinî, Bîrûnî, Hikmet Terazisi, Newton.', 21)
-
-
-def dort_dinamometre_hesap_karti():
-    kartlar = [
-        ('1. K Aracı', '40 N · 8 bölme', MAVI, MAVI_A),
-        ('2. L Aracı', '60 N · 5 bölme', YES, YES_A),
-        ('3. M Aracı', '90 N · 10 bölme', TUR, TUR_A),
-        ('4. N Aracı', '120 N · 6 bölme', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, veri, renk, arka) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += f'<rect x="{x}" y="6" width="82" height="84" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 41, 28, bas, renk, kalin=True)
-        ic += f'<line x1="{x + 8}" y1="36" x2="{x + 74}" y2="36" stroke="{renk}" stroke-width="1"/>'
-        ic += yazi(x + 41, 66, veri, LAC)
-    return svg(360, 96, ic, 'K, L, M ve N dinamometrelerinin kapasite ve bölme sayısı kartları.', 21)
-
-
-def hazini_biruni_karti():
-    ic = f'<rect x="6" y="6" width="170" height="88" rx="9" fill="{YES_A}" stroke="{YES}" stroke-width="1.4"/>'
-    ic += yazi(91, 25, 'El-Hâzinî (12. Yüzyıl)', YESIL_K, kalin=True)
-    ic += yazi(91, 52, 'Mîzânü’l-Hikme eseri ve', LAC)
-    ic += yazi(91, 74, 'yer merkezine çekim', LAC)
-
-    ic += f'<rect x="184" y="6" width="170" height="88" rx="9" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.4"/>'
-    ic += yazi(269, 25, 'Bîrûnî (11. Yüzyıl)', MAVI, kalin=True)
-    ic += yazi(269, 52, 'Dönen Dünya’da cisimleri', LAC)
-    ic += yazi(269, 74, 'tutan çekim gücü', LAC)
-    return svg(360, 100, ic, 'El-Hâzinî ve Bîrûnî’nin yer çekimi çalışmaları bilgi kartı.', 21)
-
-
-def dort_yuk_siralama_karti():
-    kartlar = [
-        ('I. Yük', '20 N · 3 bölme', YES, YES_A),
-        ('II. Yük', '40 N · 3 bölme', MAVI, MAVI_A),
-        ('III. Yük', '50 N · 4 bölme', TUR, TUR_A),
-        ('IV. Yük', '80 N · 4 bölme', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += f'<rect x="{x}" y="6" width="82" height="84" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 41, 28, bas, renk, kalin=True)
-        ic += yazi(x + 41, 64, alt, LAC)
-    return svg(360, 96, ic, '10’ar bölmeli dört dinamometrede I, II, III ve IV. yüklerin uzama bölmeleri.', 21)
-
-
-def ozdes_yay_uzama_tablosu():
-    kutular = [
-        ('K Aracı', '10 N yük', '2 cm uzama', YES, YES_A),
-        ('L Aracı', '25 N yük', '5 cm uzama', MAVI, MAVI_A),
-        ('M Aracı', '? N yük', '7 cm uzama', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, s1, s2, renk, arka) in enumerate(kutular):
-        x = 6 + i * 118
-        ic += f'<rect x="{x}" y="6" width="112" height="88" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 56, 25, bas, renk, kalin=True)
-        ic += yazi(x + 56, 52, s1, LAC, kalin=True)
-        ic += yazi(x + 56, 76, s2, LAC)
-    return svg(360, 100, ic, 'Özdeş yaylı K, L ve M dinamometrelerinde yük ve uzama miktarları.', 21)
-
-
-def araba_kuvvet_yonu_sema():
-    ic = f'<rect x="6" y="6" width="348" height="88" rx="10" fill="#fbfcff" stroke="{GRI}" stroke-width="1.4"/>'
-    ic += yazi(180, 24, 'Hareket Yönü: Doğu (Sağa Doğru)', LAC, kalin=True)
-    ic += f'<rect x="120" y="38" width="120" height="32" rx="7" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.5"/>'
-    ic += yazi(180, 59, 'Oyuncak Araba', MAVI, kalin=True)
-    ic += yazi(62, 58, '← II. Kuvvet', KIR, kalin=True)
-    ic += yazi(298, 58, 'I. Kuvvet →', YESIL_K, kalin=True)
-    ic += yazi(180, 86, 'I: Hareketle aynı yön · II: Harekete zıt yön', LAC)
-    return svg(360, 100, ic, 'Doğu yönünde giden oyuncak arabaya uygulanan I (aynı yön) ve II (zıt yön) kuvvetleri.', 21)
-
-
-def top_etki_adimlari_karti():
-    ic = f'<rect x="6" y="6" width="170" height="88" rx="9" fill="{YES_A}" stroke="{YES}" stroke-width="1.4"/>'
-    ic += yazi(91, 25, '1. Adım · Vuruş', YESIL_K, kalin=True)
-    ic += yazi(91, 52, 'Duran topa kuvvet', LAC)
-    ic += yazi(91, 74, 'uygulayıp hızlandırma', LAC)
-
-    ic += f'<rect x="184" y="6" width="170" height="88" rx="9" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.4"/>'
-    ic += yazi(269, 25, '2. Adım · Kontrol', TUR, kalin=True)
-    ic += yazi(269, 52, 'Gelen topa zıt kuvvet', LAC)
-    ic += yazi(269, 74, 'uygulayıp durdurma', LAC)
-    return svg(360, 100, ic, 'Topa vurarak hızlandırma ve topu tutarak durdurma adımları.', 21)
-
-
-def iki_yay_hassasiyet_karti():
-    ic = f'<rect x="6" y="6" width="170" height="88" rx="9" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.4"/>'
-    ic += yazi(91, 25, 'K Sarmal Yayı', MAVI, kalin=True)
-    ic += yazi(91, 52, '20 N yük → 6 cm uzar', LAC, kalin=True)
-    ic += yazi(91, 76, 'İnce ve duyarlı yay', LAC)
-
-    ic += f'<rect x="184" y="6" width="170" height="88" rx="9" fill="{MOR_A}" stroke="{MOR}" stroke-width="1.4"/>'
-    ic += yazi(269, 25, 'L Sarmal Yayı', MOR, kalin=True)
-    ic += yazi(269, 52, '20 N yük → 2 cm uzar', LAC, kalin=True)
-    ic += yazi(269, 76, 'Kalın ve sert yay', LAC)
-    return svg(360, 100, ic, '20 N kuvvetle 6 cm uzayan K yayı ve 2 cm uzayan L yayı karşılaştırması.', 21)
+GORSELLER = {1: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="8 eşit bölmeli '
+    'dinamometrede R ve S cismi ölçümleri."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Durum · R Cismi</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">8 eşit bölmeli dinamometre</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">3 bölme uzama = 18 '
+    'N</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Durum · S '
+    'Cismi</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Aynı 8 bölmeli dinamometre · 6 bölme uzama</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">= ? N</text></svg>',
+ 4: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bilim tarihinde yer '
+    'çekimi ve kuvvet panosu: El-Hâzinî, Bîrûnî, Hikmet Terazisi, Newton."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">1. El-Hâzinî</text><text x="87.5" y="49.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yer merkezine çekim</text><rect x="179" y="3" width="167" '
+    'height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Bîrûnî</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Savrulmayı '
+    'önleyen</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">çekim</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="98.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Hikmet Terazisi</text><text x="87.5" y="117.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yalnız sıcaklık ölçer</text><rect x="179" y="71" width="167" '
+    'height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Isaac Newton</text><text x="262.5" '
+    'y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kuvvet birimi '
+    '·</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Newton (N)</text></svg>',
+ 5: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="K, L, M ve N '
+    'dinamometrelerinin kapasite ve bölme sayısı kartları."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">1. K Aracı</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">40 N · 8 bölme</text><rect x="179" y="3" width="167" '
+    'height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. L Aracı</text><text x="262.5" y="39.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">60 N · 5 '
+    'bölme</text><rect x="4" y="52" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. M '
+    'Aracı</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">90 N · 10 bölme</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. N Aracı</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">120 N · 6 bölme</text></svg>',
+ 6: '<svg viewBox="0 0 350 88" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="El-Hâzinî ve Bîrûnî’nin '
+    'yer çekimi çalışmaları bilgi kartı."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">El-Hâzinî (12. Yüzyıl)</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mîzânü’l-Hikme eseri</text><text x="87.5" y="58.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ve yer '
+    'merkezine</text><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">çekim</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Bîrûnî (11. Yüzyıl)</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dönen Dünya’da</text><text x="262.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">cisimleri tutan çekim</text><text x="262.5" '
+    'y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">gücü</text></svg>',
+ 7: '<svg viewBox="0 0 350 212" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="10’ar bölmeli dört '
+    'dinamometrede K, L, M ve N yüklerinin uzama bölmeleri."><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">K Yükü</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dinamometre</text><text x="87.5" y="58.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kapasitesi: 50 N</text><text x="87.5" '
+    'y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çıkan bölme: '
+    '4</text><text x="87.5" y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">bölme (10 bölmeli)</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">L Yükü</text><text x="262.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Dinamometre</text><text x="262.5" y="58.3" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kapasitesi: 20 N</text><text x="262.5" y="76.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çıkan bölme: '
+    '3</text><text x="262.5" y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">bölme (10 bölmeli)</text><rect x="4" y="108" width="167" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="126.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">M Yükü</text><text x="87.5" y="144.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Dinamometre</text><text x="87.5" y="163.3" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kapasitesi: 80 N</text><text x="87.5" y="181.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çıkan bölme: '
+    '4</text><text x="87.5" y="200.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">bölme (10 bölmeli)</text><rect x="179" y="108" width="167" height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="126.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">N Yükü</text><text x="262.5" y="144.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Dinamometre</text><text x="262.5" y="163.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kapasitesi: 40 N</text><text x="262.5" '
+    'y="181.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çıkan bölme: '
+    '3</text><text x="262.5" y="200.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">bölme (10 bölmeli)</text></svg>',
+ 8: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Özdeş yaylı K, L ve M '
+    'dinamometrelerinde yük ve uzama miktarları."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">K Dinamometresi</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Asılan yük: 10 N ·</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Uzama miktarı: 2 cm</text><rect x="179" y="3" '
+    'width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">L Dinamometresi</text><text x="262.5" '
+    'y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Asılan yük: 25 '
+    'N ·</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Uzama miktarı: 5 cm</text><rect x="4" y="71" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="98.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">M Dinamometresi</text><text x="87.5" y="116.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Asılan yük: ? N ·</text><text x="87.5" y="135.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Uzama miktarı: 7 cm</text><rect x="179" '
+    'y="71" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Deney Koşulu</text><text '
+    'x="262.5" y="107.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">K, L '
+    've M</text><text x="262.5" y="126.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">araçlarındaki sarmal</text><text x="262.5" y="144.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">yaylar özdeştir.</text></svg>',
+ 9: '<svg viewBox="0 0 350 88" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Oyuncak arabaya uygulanan '
+    'I ve II kuvvetlerinin yönleri."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">I. Kuvvetin Yönü</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Doğu yönünde giden</text><text x="87.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">arabaya hareket</text><text x="87.5" y="76.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yönüyle aynı '
+    'yönde</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" '
+    'y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">II. Kuvvetin '
+    'Yönü</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Doğu yönünde giden</text><text x="262.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">arabaya hareket</text><text x="262.5" y="76.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yönüne zıt yönde</text></svg>',
+ 11: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Futbol topuna 1 ve 2. '
+     'adımda uygulanan kuvvetler."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">1. Adım · İlk Vuruş</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sahada hareket hâlindeki topa gidiş yönüyle</text><text x="11.0" '
+     'y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">aynı yönde '
+     'vuruş</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+     'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Adım · '
+     'Kaleci Müdahalesi</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#0b2257">Kaleye doğru gelen topun eldivenle tutulup</text><text x="11.0" y="122.2" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">sabitlenmesi</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = sekiz_bolmeli_dinamometre_sema()
-    s[4]['gorsel'] = bilim_tarihi_panosu()
-    s[5]['gorsel'] = dort_dinamometre_hesap_karti()
-    s[6]['gorsel'] = hazini_biruni_karti()
-    s[7]['gorsel'] = dort_yuk_siralama_karti()
-    s[8]['gorsel'] = ozdes_yay_uzama_tablosu()
-    s[9]['gorsel'] = araba_kuvvet_yonu_sema()
-    s[11]['gorsel'] = top_etki_adimlari_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

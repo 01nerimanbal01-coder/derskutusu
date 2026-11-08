@@ -10,9 +10,7 @@
   ],
   "hatirla": [
     "Cismi hareket ettiren, durduran, yönünü veya şeklini değiştiren etkiye kuvvet (F) denir; birimi Newton (N) olarak gösterilir.",
-    "Kuvvet kalktığında eski hâline dönen maddeler esnek (yay, lastik, sünger); dönemeyenler esnek olmayan (hamur, cam) maddelerdir.",
-    "Kuvvetin büyüklüğü sarmal yaylı dinamometre ile ölçülür; yayın uzama miktarı uygulanan kuvvetle doğru orantılıdır.",
-    "İnce yaylı dinamometreler küçük kuvvetleri hassas (duyarlı) ölçerken, kalın yaylılar daha büyük kuvvetleri ölçer."
+    "Kuvvet kalktığında eski hâline dönen maddeler esnek (yay, lastik, sünger); dönemeyenler esnek olmayan (hamur, cam) maddelerdir."
   ],
   "sorular": [
     {
@@ -31,14 +29,6 @@
         [
           "esnek madde",
           "Kuvvet uygulandığında şekli değişip kuvvet kalkınca eski hâline dönen madde"
-        ],
-        [
-          "esneklik sınırı",
-          "Aşırı kuvvet uygulandığında yayın bozulup esnekliğini kaybetmesi eşiği"
-        ],
-        [
-          "ince yay",
-          "Küçük kuvvetlerde kolayca uzayarak daha hassas ölçüm sağlayan yay"
         ]
       ]
     },
@@ -74,10 +64,6 @@
         {
           "metin": "Kalın çelik telden yapılan sarmal yaylar, ince bakır tellere kıyasla ufak yüklerde daha çok uzar.",
           "dogru": false
-        },
-        {
-          "metin": "Frene basılan bisikletin yavaşlaması, zıt yönlü kuvvetin yavaşlatma etkisine örnektir.",
-          "dogru": true
         }
       ]
     },
@@ -98,14 +84,6 @@
         {
           "metin": "Dinamometredeki yayın uzaması kuvvetle ___ orantılıdır.",
           "cevap": "doğru"
-        },
-        {
-          "metin": "Küçük kuvvetleri ___ yaylı dinamometre daha duyarlı ölçer.",
-          "cevap": "ince"
-        },
-        {
-          "metin": "Kapı kolunu ve musluğu çevirmek kuvvetin ___ etkisidir.",
-          "cevap": "döndürme"
         }
       ],
       "fazla": [
@@ -137,7 +115,9 @@
         [
           "1. Kart (Raketle topa vurma)",
           "Yön değiştirme",
-          "Hareketli topun yönü değişir"
+          {
+            "b": "Hareketli topun yönü değişir"
+          }
         ],
         [
           "2. Kart (El arabasını itme)",
@@ -171,7 +151,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki 10’ar bölmeli K ve L dinamometrelerine özdeş P cisimleri asıldığında K’de 2 bölme, L’de 5 bölme uzamıştır. Hangisinin yayının daha ince olduğunu ve hangisinin daha büyük kuvvetleri ölçebileceğini yazınız.",
+      "soru": "10’ar bölmeli K ve L dinamometrelerine özdeş P cisimleri asıldığında K’de 2 bölme, L’de 5 bölme uzamıştır. Hangisinin yayının daha ince olduğunu ve hangisinin daha büyük kuvvetleri ölçebileceğini yazınız.",
       "cevap": "Daha çok uzayan L’nin yayı daha incedir; kalın yaylı K ise daha büyük kuvvetleri ölçer.",
       "satir": 2
     },
@@ -180,16 +160,16 @@
       "duzey": "uygula",
       "soru": "Görselde kapasiteleri verilen 10’ar eşit bölmeli dört dinamometreyi, 8 N’luk cismi en hassas ölçenden en az hassas ölçene doğru 1’den 4’e kadar sıralayınız.",
       "ogeler": [
-        "I. Dinamometre (Kapasite: 10 N — 1 bölme = 1 N)",
-        "II. Dinamometre (Kapasite: 20 N — 1 bölme = 2 N)",
-        "III. Dinamometre (Kapasite: 50 N — 1 bölme = 5 N)",
-        "IV. Dinamometre (Kapasite: 100 N — 1 bölme = 10 N)"
+        "L Dinamometresi (Kapasite: 10 N — 10 eşit bölmeli)",
+        "N Dinamometresi (Kapasite: 20 N — 10 eşit bölmeli)",
+        "K Dinamometresi (Kapasite: 50 N — 10 eşit bölmeli)",
+        "M Dinamometresi (Kapasite: 100 N — 10 eşit bölmeli)"
       ]
     },
     {
       "tur": "coktan",
       "duzey": "ust",
-      "soru": "Görseldeki sütun grafiğinde esnek bir yaya uygulanan 15 N, X ve Y kuvvetlerinin uzama miktarları verilmiştir. Esneklik sınırı aşılmadığına göre hangisine {koyu:ulaşılamaz?}",
+      "soru": "Görseldeki deney kartlarında esnek bir yaya uygulanan kuvvetler ve yayda ölçülen uzama miktarları verilmiştir. Esneklik sınırı aşılmadığına göre hangisine {koyu:ulaşılamaz?}",
       "secenekler": [
         "Her 5 N kuvvet yayın 1 cm uzamasını sağlamıştır.",
         "Yayı 6 cm uzatan X kuvvetinin büyüklüğü 30 N’dur.",
@@ -213,7 +193,7 @@
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki deneyde kapasitesi 30 N olan dinamometreye 55 N’luk demir blok asılmış, blok çıkarılınca yayın eski hâline dönmediği görülmüştür. Nedenini yazınız.",
+      "soru": "Bir deneyde kapasitesi 30 N olan dinamometreye 55 N’luk demir blok asılmış, blok çıkarılınca yayın eski hâline dönmediği görülmüştür. Nedenini yazınız.",
       "cevap": "30 N kapasitenin üzerinde yük (55 N) asıldığı için esneklik sınırı aşılmıştır.",
       "satir": 2
     },
@@ -258,7 +238,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görselde kapasiteleri X = 20 N, Y = 50 N ve Z = 100 N olan üç dinamometre verilmiştir. 15 N’luk cismi en hassas ölçmek için ve 70 N’luk cismi ölçmek için hangilerinin seçileceğini açıklayınız.",
+      "soru": "Kapasiteleri X = 20 N, Y = 50 N ve Z = 100 N olan üç dinamometre verilmiştir. 15 N’luk cismi en hassas ölçmek için ve 70 N’luk cismi ölçmek için hangilerinin seçileceğini açıklayınız.",
       "cevap": "15 N için en hassas ölçen X (20 N), 70 N için ise kapasitesi yeten Z (100 N) seçilir.",
       "satir": 2
     },

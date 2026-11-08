@@ -12,8 +12,7 @@
   "hatirla": [
     "Mektup, birbirinden uzakta bulunan kişilerin duygu, düşünce ve haberlerini ilettiği samimi bir yazı türüdür; cephe mektupları aynı zamanda birinci elden tarihî belgedir.",
     "Kurallı bir mektupta sağ üst köşede tarih ve yer, sol üst satırda büyük harfle başlayan ve virgülle biten hitap ifadesi, sağ alt köşede ise ad, soyad ve imza yer alır.",
-    "Deyimler kalıplaşmış ve çoğunlukla mecaz anlam taşıyan söz öbekleridir; kelimeleri değiştirilemez ve yerlerine eş anlamlıları yazılamaz.",
-    "'Gözü yollarda kalmak' özlemle ve sabırsızlıkla beklemeyi, 'gözünü kırpmamak' tehlike karşısında tereddüt etmemeyi, 'yüreği ağzına gelmek' ise ani korku ve heyecanı anlatır."
+    "Deyimler kalıplaşmış ve çoğunlukla mecaz anlam taşıyan söz öbekleridir; kelimeleri değiştirilemez ve yerlerine eş anlamlıları yazılamaz."
   ],
   "sorular": [
     {
@@ -32,10 +31,6 @@
         [
           "gözünü kırpmamak",
           "Vatan savunması veya tehlike karşısında hiç duraksamadan cesaretle atılmak"
-        ],
-        [
-          "yüreği ağzına gelmek",
-          "Beklenmedik bir durum karşısında çok büyük korku veya heyecan yaşamak"
         ]
       ],
       "sutun": "sol"
@@ -73,10 +68,6 @@
         {
           "metin": "Çanakkale ve Millî Mücadele yıllarında cepheden yazılan asker mektupları vatan sevgisini yansıtan tarihî belgelerdir.",
           "dogru": true
-        },
-        {
-          "metin": "Bir mektubun yazıldığı tarih ve şehir bilgisi yalnızca zarfın arka yüzüne yazılır, mektup kâğıdında yer almaz.",
-          "dogru": false
         }
       ],
       "sutun": "sol"
@@ -98,10 +89,6 @@
         {
           "metin": "Deyimlerdeki sözcükler çoğunlukla gerçek anlamından uzaklaşarak ___ anlam kazanır.",
           "cevap": "mecaz"
-        },
-        {
-          "metin": "Cephedeki Mehmetçik, Atatürk’ün önderliğinde ___ sevgisiyle tek yürek olmuştur.",
-          "cevap": "vatan"
         }
       ],
       "fazla": [
@@ -125,7 +112,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki dört cümle kartında altı çizili deyimleri bularak deyimin adını ve cümleye kattığı anlamı tabloya yazınız. İlk satır örnektir.",
+      "soru": "Görseldeki dört cümle kartında geçen deyimleri bularak deyimin mastar hâlindeki adını ve cümleye kattığı anlamı tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Kart No",
         "Kullanılan Deyim",
@@ -135,7 +122,9 @@
         [
           "1. Kart",
           "Gözü yollarda kalmak",
-          "Özlem ve sabırsızlıkla beklemek"
+          {
+            "b": "Özlem ve sabırsızlıkla beklemek"
+          }
         ],
         [
           "2. Kart",
@@ -256,7 +245,7 @@
       "tur": "acik",
       "duzey": "ust",
       "soru": "Görseldeki 'Cepheden Mektuplar' bilgi kartını inceleyiniz. Asker mektuplarının hem edebî hem de tarihî açıdan taşıdığı önemi kısaca açıklayınız.",
-      "cevap": "Samimi duyguları yansıttığı için edebî, dönemin olaylarına ilk elden tanıklık ettiği için tarihî belgedir.",
+      "cevap": "İçten duyguları yansıttığı için edebî, döneme ilk elden tanıklık ettiği için tarihî belgedir.",
       "satir": 2,
       "sutun": "sag"
     }

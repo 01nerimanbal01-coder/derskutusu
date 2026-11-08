@@ -11,8 +11,7 @@
   "hatirla": [
     "Doğada insan etkisi olmadan kendiliğinden oluşan dağlar, vadiler, ovalar, göller, akarsular ve doğal ormanlar doğal çevre unsurlarıdır.",
     "İnsanların barınma, ulaşım, enerji ve üretim ihtiyaçlarını karşılamak için inşa ettiği konutlar, köprüler, tüneller, barajlar ve fabrikalar beşerî çevre unsurlarıdır.",
-    "Hızlı nüfus artışı, göçler, sanayileşme ve gelişen ulaşım projeleri şehirlerdeki beşerî çevrenin hızla değişmesine ve büyümesine yol açar.",
-    "Doğal kaynakları tahrip etmeden gelecek kuşakların da ihtiyaçlarını gözeterek kalkınmaya sürdürülebilir kalkınma denir; ağaçlandırma ve geri dönüşüm bu bilinci destekler."
+    "Hızlı nüfus artışı, göçler, sanayileşme ve gelişen ulaşım projeleri şehirlerdeki beşerî çevrenin hızla değişmesine ve büyümesine yol açar."
   ],
   "sorular": [
     {
@@ -31,10 +30,6 @@
         [
           "sürdürülebilir kalkınma",
           "Doğal kaynakları gelecek nesillerin hakkını koruyarak planlı ve dengeli kullanma"
-        ],
-        [
-          "geri dönüşüm",
-          "Kâğıt, cam, plastik ve metal atıkların ayrıştırılarak yeniden üretime kazandırılması"
         ]
       ],
       "sutun": "sol"
@@ -72,10 +67,6 @@
         {
           "metin": "Sanayi tesislerinin bacalarına filtre takılması ve arıtma tesisi kurulması doğayı koruyan önlemlerdir.",
           "dogru": true
-        },
-        {
-          "metin": "Dağları delerek yapılan kara yolu tünelleri doğada kendiliğinden oluşan doğal unsurlardır.",
-          "dogru": false
         }
       ],
       "sutun": "sol"
@@ -97,10 +88,6 @@
         {
           "metin": "Enerji üretmek ve tarım alanlarını sulamak için akarsular üzerine ___ inşa edilir.",
           "cevap": "baraj"
-        },
-        {
-          "metin": "Atık kâğıtların ___ kutularına atılması binlerce ağacın kesilmesini önler.",
-          "cevap": "geri dönüşüm"
         }
       ],
       "fazla": [
@@ -134,7 +121,9 @@
         [
           "1. Dağa tünel açılması",
           "Ulaşım",
-          "Seyahat süresi kısalır ve güvenli olur"
+          {
+            "b": "Seyahat süresi kısalır ve güvenli olur"
+          }
         ],
         [
           "2. Nehre baraj yapılması",
@@ -171,7 +160,7 @@
       "duzey": "uygula",
       "soru": "Görselde Yeşilova ilçesinin 1980 yılındaki ve 2026 yılındaki arazi kullanım durumu karşılaştırılmıştır. Bu değişimin temel nedenini ve doğal çevre üzerindeki bir olumsuz sonucunu yazınız.",
       "cevap": "Temel nedeni nüfus artışı ve sanayileşmedir; olumsuz sonucu ise orman ve tarım alanlarının azalmasıdır.",
-      "satir": 2,
+      "satir": 3,
       "sutun": "sag"
     },
     {

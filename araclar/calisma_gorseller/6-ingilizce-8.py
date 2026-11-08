@@ -1,144 +1,115 @@
-"""6. sınıf İngilizce 8. hafta (Theme 2: Classroom Life — Study Routines, Present Progressive vs. Simple Present & Numbers) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 12 pt (K150 EK); eğik kesir yok (K155)."""
+"""6-ingilizce-8 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-GRI, GRI_A, SOLUK, ALTIN, KUM = '#9aa6bd', '#eef1f6', '#5b6479', '#c9a227', '#fffdf5'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-YAZI_I = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=22):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=12, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {YAZI_I if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.5, ek=''):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"{ek}/>'
-
-
-def defne_calisma_karti():
-    ic = kutu(8, 6, 584, 92, MOR_A, MOR, 9, 1.6)
-    ic += kutu(8, 6, 584, 26, MOR, MOR, 9, 1)
-    ic += yazi(300, 24, 'STUDENT ACTIVITY BOARD · DEFNE’S SCHEDULE', 12, '#fff')
-    ic += kutu(20, 40, 270, 50, '#fff', MAVI, 7, 1.4)
-    ic += yazi(155, 58, 'Every Afternoon (Routine):', 12, MAVI)
-    ic += yazi(155, 78, 'Reviews notes & keeps a diary', 12, LAC, ince=True)
-    ic += kutu(310, 40, 270, 50, YES_A, YES, 7, 1.4)
-    ic += yazi(445, 58, 'Right Now (At the Moment):', 12, YES)
-    ic += yazi(445, 78, 'Searching for science project in library', 12, LAC)
-    return svg(600, 104, ic, 'Defne’nin günlük rutini ve şu an kütüphanede fen projesi araştırması yaptığını gösteren kart.', 22)
-
-
-def iki_zaman_karti():
-    ic = kutu(8, 8, 284, 84, TUR_A, TUR, 9, 1.5)
-    ic += kutu(8, 8, 284, 26, TUR, TUR, 9, 1)
-    ic += yazi(150, 25, '1. General Routine (Normally)', 12, '#fff')
-    ic += yazi(150, 52, '“Kaan normally ___ (1) ___ alone', 12, LAC)
-    ic += yazi(150, 74, 'in his room after dinner.”', 12, TUR, ince=True)
-
-    ic += kutu(308, 8, 284, 84, MAVI_A, MAVI, 9, 1.5)
-    ic += kutu(308, 8, 284, 26, MAVI, MAVI, 9, 1)
-    ic += yazi(450, 25, '2. Action in Progress (Today · Now)', 12, '#fff')
-    ic += yazi(450, 52, '“...but today he ___ (2) ___', 12, LAC)
-    ic += yazi(450, 74, 'in pairs with his peer right now.”', 12, MAVI, ince=True)
-    return svg(600, 100, ic, 'Simple Present (normally) ve Present Progressive (today / right now) boşluk doldurma kartları.', 22)
-
-
-def sayi_panosu():
-    kartlar = [
-        ('1. 268', 'two hundred and sixty-eight', MAVI, MAVI_A),
-        ('2. 380', 'three hundred and ? ', YES, YES_A),
-        ('3. 12th', '? (Ordinal form of 12)', TUR, TUR_A),
-        ('4. 23rd', '? (Ordinal form of 23)', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(kartlar):
-        x = 8 + (i % 2) * 296
-        y = 6 + (i // 2) * 48
-        ic += kutu(x, y, 288, 42, arka, renk, 8, 1.5)
-        ic += kutu(x + 6, y + 6, 78, 30, renk, renk, 6, 1)
-        ic += yazi(x + 45, y + 25, bas, 12, '#fff')
-        ic += yazi(x + 188, y + 25, alt, 12, LAC, ince=True)
-    return svg(600, 104, ic, 'Cardinal (245, 380) ve Ordinal (12th, 23rd) sayı panosu.', 22)
-
-
-def question_tag_kartlari():
-    ic = kutu(8, 8, 284, 82, CAM_A, CAM, 9, 1.5)
-    ic += yazi(150, 26, 'Sentence 1 (Present Progressive)', 12, CAM)
-    ic += yazi(150, 50, '“Emre is reading a poem aloud,', 12, LAC, ince=True)
-    ic += yazi(150, 72, '__________ ?” (he + is → ?)', 12, LAC)
-
-    ic += kutu(308, 8, 284, 82, MOR_A, MOR, 9, 1.5)
-    ic += yazi(450, 26, 'Sentence 2 (Simple Present)', 12, MOR)
-    ic += yazi(450, 50, '“They review their notes every evening,', 12, LAC, ince=True)
-    ic += yazi(450, 72, '__________ ?” (they + V1 → ?)', 12, LAC)
-    return svg(600, 98, ic, 'Question Tag tamamlanacak iki cümle kartı.', 22)
-
-
-def uc_ogrenci_aliskanlik():
-    kartlar = [
-        ('Arda', 'Reviews notes twice a week', '& keeps a study diary', MAVI, MAVI_A),
-        ('Selin', 'Works in groups · Shares', 'creative ideas with peers', YES, YES_A),
-        ('Bora', 'Does research in library', '& practises vocabulary daily', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (ad, s1, s2, renk, arka) in enumerate(kartlar):
-        x = 8 + i * 198
-        ic += kutu(x, 8, 188, 82, arka, renk, 9, 1.5)
-        ic += kutu(x, 8, 188, 25, renk, renk, 9, 1)
-        ic += yazi(x + 94, 25, ad, 12, '#fff')
-        ic += yazi(x + 94, 52, s1, 12, LAC, ince=True)
-        ic += yazi(x + 94, 72, s2, 12, renk)
-    return svg(600, 98, ic, 'Arda, Selin ve Bora’nın çalışma alışkanlıklarını gösteren üç bilgi kartı.', 22)
-
-
-def dort_sayi_karti():
-    kartlar = [
-        ('1. Card: 415', 'four hundred and fifteen', YES, YES_A),
-        ('2. Card: 20th', 'twentieth', MAVI, MAVI_A),
-        ('3. Card: 50th', 'fiftieth', MOR, MOR_A),
-        ('4. Card: 32nd (!)', 'thirty-two (?)', KIR, KIR_A),
-    ]
-    ic = ''
-    for i, (bas, okunus, renk, arka) in enumerate(kartlar):
-        x = 8 + (i % 2) * 296
-        y = 6 + (i // 2) * 48
-        ic += kutu(x, y, 288, 42, arka, renk, 8, 1.5)
-        ic += yazi(x + 144, y + 18, bas, 12, renk)
-        ic += yazi(x + 144, y + 35, okunus, 12, LAC, ince=True)
-    return svg(600, 104, ic, 'Dört sayı kartı; 4. kartta 32nd sıra sayısı yanlışlıkla thirty-two yazılmış.', 22)
-
-
-def rutin_ve_bugun_karti():
-    ic = kutu(8, 8, 584, 84, MOR_A, MOR, 9, 1.6)
-    ic += kutu(8, 8, 584, 26, MOR, MOR, 9, 1)
-    ic += yazi(300, 25, 'MY STUDY ROUTINE (EVERY DAY) vs. RIGHT NOW (TODAY)', 12, '#fff')
-    ic += yazi(300, 52, 'Routine prompts: review notes · keep a diary · read silently (every evening · usually)', 12, LAC, ince=True)
-    ic += yazi(300, 74, 'Now prompts: practise vocabulary · work in pairs · do research (right now · at the moment)', 12, MOR)
-    return svg(600, 100, ic, 'Genel çalışma rutini ve şu an yapılan sınıf etkinliği yazma ipucu kartı.', 22)
-
-
-def sinif_diyalog_balonu():
-    ic = kutu(8, 8, 584, 84, YES_A, YES, 9, 1.6)
-    ic += kutu(8, 8, 584, 26, YES, YES, 9, 1)
-    ic += yazi(300, 25, 'CLASSROOM DIALOGUE · EXAM RESULTS (SCORE: 100)', 12, '#fff')
-    ic += yazi(300, 52, 'Ege: “Look at my exam paper! I answered all the questions correctly.', 12, LAC, ince=True)
-    ic += yazi(300, 74, '______________________________ !”   |   Peer: “Congratulations, Ege!”', 12, YES)
-    return svg(600, 100, ic, 'Sınavdan 100 tam puan alan Ege’nin sınıf arkadaşıyla konuşma kartı.', 22)
+GORSELLER = {1: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Defne’nin günlük rutini '
+    've şu an kütüphanede fen projesi araştırması yaptığını gösteren kart."><rect x="4" y="3" width="342" height="43" rx="5" '
+    'fill="#7c3aed" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">STUDENT ACTIVITY BOARD · DEFNE’S</text><text x="11.0" y="38.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">SCHEDULE</text><rect '
+    'x="4" y="49" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="66.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Every Afternoon '
+    '(Routine):</text><text x="11.0" y="84.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Reviews notes &amp; keeps a diary</text><rect x="4" y="95" width="342" height="43" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="112.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Right Now (At the Moment):</text><text x="11.0" y="130.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Searching for science project in '
+    'library</text></svg>',
+ 4: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Simple Present '
+    '(normally) ve Present Progressive (today / right now) boşluk doldurma kartları."><rect x="4" y="3" width="342" height="62" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">1. General Routine (Normally)</text><text x="11.0" y="38.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">“Kaan normally ___ (1) ___ alone in his '
+    'room</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">after dinner.”</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">2. Action in Progress (Today · Now)</text><text x="11.0" y="103.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">“...but today he ___ (2) ___ in pairs with '
+    'his</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">peer right now.”</text></svg>',
+ 5: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cardinal (245, 380) ve '
+    'Ordinal (12th, 23rd) sayı panosu."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">1. 268 two hundred</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">and sixty-eight</text><rect x="179" y="3" width="167" height="45" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">2. 380 three hundred</text><text x="262.5" y="39.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">and ?</text><rect x="4" '
+    'y="52" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">3. 12th ? '
+    '(Ordinal</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">form of 12)</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">4. 23rd ? (Ordinal</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">form of 23)</text></svg>',
+ 6: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Question Tag '
+    'tamamlanacak iki cümle kartı."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Sentence 1 (Present Progressive)</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">“Emre is reading a poem aloud,</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">__________ ?” (he + is → '
+    '?)</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" '
+    'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Sentence 2 '
+    '(Simple Present)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">“They review their notes every evening,</text><text x="11.0" y="122.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">__________ ?” (they + V1 → ?)</text></svg>',
+ 8: '<svg viewBox="0 0 350 197" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arda, Selin ve Bora’nın '
+    'çalışma alışkanlıklarını gösteren üç bilgi kartı."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Arda</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Reviews notes twice a week</text><text x="11.0" y="57.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">&amp; keeps a study diary</text><rect x="4" '
+    'y="68" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="85.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Selin</text><text '
+    'x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Works '
+    'in groups · Shares creative ideas with</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">peers</text><rect x="4" y="133" width="342" height="62" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="150.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Bora</text><text x="11.0" y="168.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Does research in library</text><text x="11.0" y="187.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">&amp; practises '
+    'vocabulary daily</text></svg>',
+ 9: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört sayı kartı; 4. '
+    'kartta 32nd sıra sayısı yanlışlıkla thirty-two yazılmış."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">1. Card: 415 four</text><text x="87.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">hundred and fifteen</text><rect x="179" y="3" '
+    'width="167" height="45" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Card: 20th</text><text x="262.5" y="39.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">twentieth</text><rect '
+    'x="4" y="52" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="79.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Card: 50th '
+    'fiftieth</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Card: 32nd</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">thirty-two</text></svg>',
+ 11: '<svg viewBox="0 0 350 150" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Genel çalışma rutini ve '
+     'şu an yapılan sınıf etkinliği yazma ipucu kartı."><rect x="4" y="3" width="342" height="43" rx="5" fill="#7c3aed" stroke="#7c3aed" '
+     'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0b2257">MY STUDY ROUTINE (EVERY DAY) vs. RIGHT</text><text x="11.0" y="38.5" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">NOW (TODAY)</text><rect x="4" y="49" '
+     'width="342" height="99" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="66.5" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Routine prompts: review notes · keep a '
+     'diary</text><text x="11.0" y="84.9" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">· read silently (every evening · usually)</text><text x="11.0" y="103.3" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Now prompts: practise vocabulary · work in</text><text x="11.0" '
+     'y="121.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">pairs · do '
+     'research (right now · at the</text><text x="11.0" y="140.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#7c3aed">moment)</text></svg>',
+ 12: '<svg viewBox="0 0 350 131" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sınavdan 100 tam puan '
+     'alan Ege’nin sınıf arkadaşıyla konuşma kartı."><rect x="4" y="3" width="342" height="43" rx="5" fill="#12a150" stroke="#12a150" '
+     'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0b2257">CLASSROOM DIALOGUE · EXAM RESULTS</text><text x="11.0" y="38.5" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">(SCORE: 100)</text><rect x="4" y="49" '
+     'width="342" height="80" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="66.2" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ege: “Look at my exam paper! I answered '
+     'all</text><text x="11.0" y="84.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">the questions correctly.</text><text x="11.0" y="103.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#12a150">______________________________ !” | Peer:</text><text x="11.0" y="121.4" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">“Congratulations, '
+     'Ege!”</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = defne_calisma_karti()
-    s[4]['gorsel'] = iki_zaman_karti()
-    s[5]['gorsel'] = sayi_panosu()
-    s[6]['gorsel'] = question_tag_kartlari()
-    s[8]['gorsel'] = uc_ogrenci_aliskanlik()
-    s[9]['gorsel'] = dort_sayi_karti()
-    s[11]['gorsel'] = rutin_ve_bugun_karti()
-    s[12]['gorsel'] = sinif_diyalog_balonu()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

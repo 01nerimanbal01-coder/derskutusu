@@ -15,9 +15,7 @@
   ],
   "hatirla": [
     "Çiçekli bitkilerin üreme organı çiçektir; çanak yaprak tomurcuğu korur ve fotosentez yapar, renkli ve kokulu taç yaprak ise böcekleri çekerek tozlaşmaya yardımcı olur.",
-    "Erkek organ polen üreten başçık ve sapçıktan; dişi organ ise polenin tutunduğu dişicik tepesi, dişicik borusu ve tohum taslağının bulunduğu yumurtalıktan oluşur.",
-    "Polenlerin dişicik tepesine taşınmasına tozlaşma, yumurtalıkta sperm ile yumurtanın birleşmesine döllenme denir; zigot embriyoya, tohum taslağı tohuma, yumurtalık meyveye dönüşür.",
-    "Tohumun çimlenmesi için Su (nem), Oksijen (hava) ve Uygun Sıcaklık (SOS) şarttır; çimlenmede ışık ve toprak gerekmez, embriyo ilk yapraklar çıkana dek çenekten beslenir."
+    "Erkek organ polen üreten başçık ve sapçıktan; dişi organ ise polenin tutunduğu dişicik tepesi, dişicik borusu ve tohum taslağının bulunduğu yumurtalıktan oluşur."
   ],
   "sorular": [
     {
@@ -36,10 +34,6 @@
         [
           "Başçık",
           "Erkek organda polenlerin (çiçek tozlarının) üretildiği kesecik"
-        ],
-        [
-          "Dişicik tepesi",
-          "Taşınan polenlerin tutunduğu nemli ve yapışkan dişi organ ucu"
         ]
       ]
     },
@@ -76,10 +70,6 @@
         {
           "metin": "Uyku hâlindeki bir tohumun çimlenebilmesi için güneş ışığına ve verimli toprağa doğrudan ihtiyacı vardır.",
           "dogru": false
-        },
-        {
-          "metin": "Çimlenen tohumun ilk yeşil yaprakları çıktığında bitki fotosentez yaparak kendi besinini üretmeye başlar.",
-          "dogru": true
         }
       ]
     },
@@ -100,10 +90,6 @@
         {
           "metin": "Döllenmeden sonra dişi organın yumurtalık kısmı gelişerek ___ oluşturur.",
           "cevap": "meyve"
-        },
-        {
-          "metin": "Tohum çimlenirken embriyo gerekli besini ___ adı verilen kısımdan sağlar.",
-          "cevap": "çenek"
         }
       ],
       "fazla": [
@@ -137,7 +123,9 @@
         [
           "1. Kap",
           "Nemli pamuk · 25 °C · Hava var · Karanlık",
-          "Çimlenir (Su, oksijen ve uygun sıcaklık tamdır)"
+          {
+            "b": "Çimlenir (Su, oksijen ve uygun sıcaklık tamdır)"
+          }
         ],
         [
           "2. Kap",
@@ -165,8 +153,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki grafikte çimlenmeye başlayan bir tohumda ilk yeşil yapraklar çıkana kadar çenek kütlesinin azaldığı görülmektedir. Çenek kütlesinin azalma nedenini kısaca açıklayınız.",
+      "soru": "Çimlenmeye başlayan bir tohumda ilk yeşil yapraklar çıkana kadar çenek kütlesinin azaldığı görülür. Çenek kütlesinin azalma nedenini kısaca açıklayınız.",
       "cevap": "Henüz yaprak olmadığı için fotosentez yapılmaz; embriyo çenekteki hazır besini tüketir.",
       "satir": 2
     },
@@ -244,9 +231,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki “I. Evre (Çimlenme)” ve “II. Evre (Yeşil Yapraklı Genç Bitki)” şemasını inceleyerek II. evrede bitkinin neden güneş ışığına ve karbondioksite ihtiyaç duyduğunu açıklayınız.",
-      "cevap": "II. evrede yeşil yapraklar çıktığı için bitki fotosentezle besin üretmek üzere ışık ve karbondioksit kullanır.",
+      "soru": "Tohumun çimlenme evresi (I. evre) ile yeşil yapraklı genç bitki evresi (II. evre) karşılaştırıldığında, II. evrede bitkinin neden güneş ışığına ve karbondioksite ihtiyaç duyduğunu açıklayınız.",
+      "cevap": "Yeşil yapraklar çıktığı için bitki fotosentezle besin üretmek üzere ışık ve CO{alt:2} kullanır.",
       "satir": 2
     },
     {

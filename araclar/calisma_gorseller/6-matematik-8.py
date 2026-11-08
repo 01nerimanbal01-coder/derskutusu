@@ -1,180 +1,133 @@
-"""6. sınıf Matematik 8. hafta (Kesir, Ondalık ve Yüzde Gösterimleriyle Dört İşlem Problemleri) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 12 pt (K150 EK); kesirler yalnız dikey (K155)."""
+"""6-matematik-8 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-GRI, GRI_A, SOLUK, ALTIN, KAHVE, KUM = '#9aa6bd', '#eef1f6', '#5b6479', '#c9a227', '#8a5a2b', '#fffdf5'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-YAZI_I = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=22):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=12, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {YAZI_I if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.5, ek=''):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"{ek}/>'
-
-
-def kesir(x, y, pay, payda, boy=12, renk=LAC):
-    """Dikey kesir: pay üstte, yatay çizgi, payda altta (K155)."""
-    w = max(len(pay), len(payda)) * boy * 0.65 + 6
-    return (yazi(x, y - 4, pay, boy, renk)
-            + f'<line x1="{x - w / 2:.1f}" y1="{y:.1f}" x2="{x + w / 2:.1f}" y2="{y:.1f}" stroke="{renk}" stroke-width="1.5"/>'
-            + yazi(x, y + boy + 2, payda, boy, renk))
-
-
-def serit_yol_diyagrami():
-    ic = kutu(8, 6, 584, 96, KUM, GRI, 9, 1.5)
-    ic += yazi(300, 23, '320 km Yolun Şerit Diyagram Modeli (8 Eş Parça)', 12, LAC)
-    for i in range(8):
-        x = 24 + i * 69
-        if i < 2:
-            renk, arka, et = MAVI, MAVI_A, '%25'
-        elif i < 5:
-            renk, arka, et = TUR, TUR_A, 'Gidilen'
-        else:
-            renk, arka, et = YES, YES_A, 'Kalan ?'
-        ic += kutu(x, 34, 65, 36, arka, renk, 5, 1.4)
-        ic += yazi(x + 32.5, 56, et, 12, renk)
-    ic += yazi(300, 90, '1. Etap: %25 (2 parça)  ·  2. Etap: 8’de 3 (3 parça)  ·  Kalan: 3 parça = ? km', 12, LAC, ince=True)
-    return svg(600, 108, ic, '320 km yolun 8 eş parçalı şerit diyagramı: 2 parça yüzde 25, 3 parça 8’de 3 ve kalan 3 parça.', 22)
-
-
-def zeytinyagi_siseleme_karti():
-    ic = kutu(8, 8, 284, 86, YES_A, YES, 9, 1.6)
-    ic += kutu(8, 8, 284, 26, YES, YES, 9, 1)
-    ic += yazi(150, 25, '1. Adım: Satılan ve Kalan Yağ', 12, '#fff')
-    ic += yazi(115, 56, 'Toplam 36 L · Satılan:', 12, LAC, ince=True)
-    ic += kesir(208, 52, '1', '4', 12, YES)
-    ic += yazi(150, 82, 'Kalan yağ miktarı = ? L', 12, YES)
-
-    ic += kutu(308, 8, 284, 86, TUR_A, TUR, 9, 1.6)
-    ic += kutu(308, 8, 284, 26, TUR, TUR, 9, 1)
-    ic += yazi(450, 25, '2. Adım: 0,75 L Şişelere Dolum', 12, '#fff')
-    ic += yazi(450, 54, 'Her şişe: 0,75 L (yani %75 L)', 12, LAC, ince=True)
-    ic += yazi(450, 78, 'Gereken şişe = Kalan ÷ 0,75 = ?', 12, TUR)
-    return svg(600, 102, ic, '36 litre zeytinyağının dörtte biri satıldıktan sonra kalanının 0,75 litrelik şişelere doldurulması.', 22)
-
-
-def magaza_indirim_panosu():
-    kartlar = [
-        ('1. Ceket: 600 TL', 'İndirim: %25 → 450 TL', MAVI, MAVI_A),
-        ('2. Çanta: 400 TL', 'İndirim: %15 (0,15) → ? TL', YES, YES_A),
-        ('3. Ayakkabı: 500 TL', 'İndirim: %20 → ? TL', TUR, TUR_A),
-        ('4. Saat: 800 TL', 'İndirim: 0,3 (%30) → 560 TL', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(kartlar):
-        x = 8 + (i % 2) * 296
-        y = 6 + (i // 2) * 48
-        ic += kutu(x, y, 288, 42, arka, renk, 8, 1.5)
-        ic += yazi(x + 144, y + 18, bas, 12, renk)
-        ic += yazi(x + 144, y + 35, alt, 12, LAC, ince=True)
-    return svg(600, 104, ic, 'Dört ürünün etiket fiyatı ve indirim oranlarını gösteren mağaza panosu.', 22)
-
-
-def su_deposu_karti():
-    ic = kutu(8, 8, 584, 86, CAM_A, CAM, 9, 1.6)
-    ic += kutu(8, 8, 584, 26, CAM, CAM, 9, 1)
-    ic += yazi(300, 25, 'SU DEPOSU DOLULUK ORANI MODELİ', 12, '#fff')
-    ic += yazi(118, 60, 'Başlangıç doluluk:', 12, LAC)
-    ic += kesir(196, 56, '2', '5', 12, CAM)
-    ic += yazi(250, 60, '(= %40)', 12, CAM)
-    ic += yazi(438, 54, 'Eklenen: 90 L su → Yeni doluluk: %85', 12, LAC, ince=True)
-    ic += yazi(438, 78, 'Fark: %85 − %40 = %45 → Tamamı = ? L', 12, LAC)
-    return svg(600, 102, ic, 'Beşte ikisi dolu su deposuna 90 litre su eklenince yüzde 85 doluluk oranına ulaşması.', 22)
-
-
-def polya_adimlari_sema():
-    adimlar = [
-        ('1. Problemi Anla', 'Verilen ve isteneni yaz', MAVI, MAVI_A),
-        ('2. Strateji Seç', 'Ortak gösterim ve diyagram', YES, YES_A),
-        ('3. Planı Uygula', 'Dört işlemleri gerçekleştir', TUR, TUR_A),
-        ('4. Kontrol Et', 'Tahminle kıyasla ve genelle', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(adimlar):
-        x = 8 + i * 148
-        ic += kutu(x, 8, 138, 80, arka, renk, 8, 1.5)
-        ic += kutu(x, 8, 138, 26, renk, renk, 8, 1)
-        ic += yazi(x + 69, 25, bas, 12, '#fff')
-        ic += yazi(x + 69, 60, alt, 12, LAC, ince=True)
-    return svg(600, 96, ic, 'Polya’nın dört problem çözme adımını gösteren şema.', 22)
-
-
-def manav_fisi_karti():
-    ic = kutu(8, 6, 584, 92, KUM, KAHVE, 9, 1.6)
-    ic += kutu(8, 6, 584, 26, KAHVE, KAHVE, 9, 1)
-    ic += yazi(300, 24, 'MANAV ALIŞVERİŞ FİŞİ · Kasaya Verilen: 200 TL', 12, '#fff')
-    ic += kutu(20, 38, 270, 52, YES_A, YES, 7, 1.4)
-    ic += yazi(155, 56, 'Elma: 2,5 kg × 36,4 TL', 12, YES)
-    ic += yazi(155, 78, 'Tutar = 91 TL', 12, LAC)
-    ic += kutu(310, 38, 270, 52, TUR_A, TUR, 7, 1.4)
-    ic += yazi(412, 56, 'Mandalina:', 12, TUR)
-    ic += kesir(462, 52, '3', '2', 12, TUR)
-    ic += yazi(522, 56, 'kg × 28 TL', 12, TUR)
-    ic += yazi(445, 80, '(1,5 kg × 28 TL = 42 TL)', 12, LAC, ince=True)
-    return svg(600, 104, ic, '2,5 kg elma ve 3 bölü 2 kg mandalina içeren manav alışveriş fişi.', 22)
-
-
-def kalanin_kesri_karti():
-    ic = kutu(8, 8, 584, 86, MOR_A, MOR, 9, 1.6)
-    ic += kutu(8, 8, 584, 26, MOR, MOR, 9, 1)
-    ic += yazi(300, 25, 'ZEYNEP’İN HARÇLIK PLANI · Başlangıç: 480 TL', 12, '#fff')
-    ic += yazi(135, 58, '1. Harcama: Tüm paranın', 12, LAC, ince=True)
-    ic += kesir(228, 54, '1', '3', 12, MOR)
-    ic += yazi(255, 58, '’ü', 12, LAC)
-    ic += yazi(440, 54, '2. Harcama: Kalan paranın %25’i', 12, MOR)
-    ic += yazi(440, 78, 'Son durumda geriye kalan = ? TL', 12, LAC)
-    return svg(600, 102, ic, '480 TL harçlığın önce üçte birinin, sonra kalanın yüzde 25’inin harcanması şeması.', 22)
-
-
-def zihinden_islem_karti():
-    ic = kutu(8, 8, 284, 84, MAVI_A, MAVI, 9, 1.6)
-    ic += kutu(8, 8, 284, 26, MAVI, MAVI, 9, 1)
-    ic += yazi(150, 25, '1. Zihinden Strateji: 32 × 0,25', 12, '#fff')
-    ic += yazi(125, 58, 'İpucu: 0,25 =', 12, LAC, ince=True)
-    ic += kesir(184, 54, '1', '4', 12, MAVI)
-    ic += yazi(222, 58, '(Çeyrek)', 12, MAVI)
-    ic += yazi(150, 82, '32 ÷ 4 = ?', 12, LAC)
-
-    ic += kutu(308, 8, 284, 84, YES_A, YES, 9, 1.6)
-    ic += kutu(308, 8, 284, 26, YES, YES, 9, 1)
-    ic += yazi(450, 25, '2. Zihinden Strateji: 15 ÷ 0,5', 12, '#fff')
-    ic += yazi(425, 58, 'İpucu: 0,5 =', 12, LAC, ince=True)
-    ic += kesir(480, 54, '1', '2', 12, YES)
-    ic += yazi(518, 58, '(Yarım)', 12, YES)
-    ic += yazi(450, 82, '15 × 2 = ?', 12, LAC)
-    return svg(600, 100, ic, '0,25 ile çarpma ve 0,5’e bölme zihinden işlem strateji kartları.', 22)
-
-
-def yuruyus_parkuru_panosu():
-    ic = kutu(8, 8, 584, 86, TUR_A, TUR, 9, 1.6)
-    ic += kutu(8, 8, 584, 26, TUR, TUR, 9, 1)
-    ic += yazi(300, 25, 'YÜRÜYÜŞ PARKURU ETAP TABLOSU', 12, '#fff')
-    ic += yazi(115, 58, 'Sabah: 0,35 (%35)', 12, LAC)
-    ic += yazi(260, 58, '· Öğleden sonra:', 12, LAC, ince=True)
-    ic += kesir(332, 54, '2', '5', 12, TUR)
-    ic += yazi(378, 58, '(= %40)', 12, TUR)
-    ic += yazi(495, 58, '· Kalan: 600 m', 12, YES)
-    ic += yazi(300, 82, 'Toplam yürünen: %35 ve %40 → Kalan %25 = 600 m ise tamamı = ? m', 12, LAC, ince=True)
-    return svg(600, 102, ic, 'Sabah 0,35’i, öğleden sonra 5’te 2’si yürünen ve 600 metresi kalan yürüyüş parkuru.', 22)
+GORSELLER = {1: '<svg viewBox="0 0 350 113" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="320 km yolun 8 eş '
+    'parçalı şerit diyagram bilgi kartları."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Toplam Şerit Modeli</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Toplam yol: 320 km · Şerit: 8 eş parça</text><rect x="4" y="49" '
+    'width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="66.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Boyalı (Gidilen) ve Kalan Kısım</text><text '
+    'x="161.9" y="94.0" text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">1. Etap: '
+    '%25 · 2. Etap:</text><text x="173.9" y="83.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">3</text><line x1="165.4" y1="88.0" x2="182.4" y2="88.0" stroke="#0b2257" stroke-width="0.75"/><text '
+    'x="173.9" y="103.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">8</text><text x="185.9" y="94.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">· Kalan yol = ? km</text></svg>',
+ 4: '<svg viewBox="0 0 350 113" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zeytinyağı tankı ve '
+    'şişeleme problemi kartları."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Adım · Satılan ve Kalan Yağ</text><text x="207.2" y="48.0" text-anchor="end" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Toplam: 36 L · Satılan kısım:</text><text x="219.2" y="37.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">1</text><line x1="210.7" '
+    'y1="42.0" x2="227.7" y2="42.0" stroke="#0b2257" stroke-width="0.75"/><text x="219.2" y="57.2" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">4</text><text x="231.2" y="48.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">· Kalan = ? L</text><rect x="4" y="68" '
+    'width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="85.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Adım · 0,75 L Şişelere Dolum</text><text '
+    'x="11.0" y="103.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Her '
+    'şişe hacmi: 0,75 L · Gereken şişe sayısı = ?</text></svg>',
+ 5: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mağaza indirim panosu '
+    'dört ürün kartı."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Ceket (600 TL)</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">İndirim: %25 (150 TL)</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">· Satış: ?</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Çanta (400 TL)</text><text x="262.5" y="39.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İndirim: %15 (?) ·</text><text x="262.5" '
+    'y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Satış: '
+    '?</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Ayakkabı '
+    '(500 TL)</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İndirim: %20 (100 TL)</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">· Satış: ?</text><rect x="179" y="71" width="167" height="64" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Saat (800 TL)</text><text x="262.5" y="107.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İndirim: %30 (?) ·</text><text x="262.5" '
+    'y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Satış: 560 '
+    'TL</text></svg>',
+ 6: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Su deposu doluluk oranı '
+    'modeli."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Başlangıç '
+    'Doluluk Durumu</text><text x="199.0" y="48.0" text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Su deposunun başlangıçta</text><text x="211.0" y="37.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">2</text><line x1="202.5" y1="42.0" x2="219.5" y2="42.0" '
+    'stroke="#0b2257" stroke-width="0.75"/><text x="211.0" y="57.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">5</text><text x="221.0" y="48.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">’i doludur.</text><rect x="4" y="68" width="342" height="62" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Su Eklendikten Sonraki Durum</text><text x="11.0" y="103.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Eklenen: 90 L su · Yeni doluluk: %85 → '
+    'Tamamı</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">= ? L</text></svg>',
+ 7: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Polya problem çözme '
+    'adımları kartları."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Adım K '
+    '· Planı</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Uygula</text><text x="87.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Dört işlemleri adım</text><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">adım gerçekleştir</text><rect x="179" y="3" width="167" height="82" '
+    'rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Adım L · Problemi</text><text x="262.5" y="39.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Anla</text><text x="262.5" y="58.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Verilenleri '
+    've</text><text x="262.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">isteneni belirle</text><rect x="4" y="89" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="107.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Adım M · Kontrol Et</text><text x="87.5" y="125.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sonucu tahminle</text><text x="87.5" y="144.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kıyasla ve genelle</text><rect x="179" y="89" '
+    'width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="107.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Adım N · Strateji Seç</text><text x="262.5" '
+    'y="125.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ortak '
+    'gösterime</text><text x="262.5" y="144.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">çevir ve diyagram çiz</text></svg>',
+ 8: '<svg viewBox="0 0 350 150" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Manav alışveriş fişi ve '
+    'ödeme kartı."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Manav Alışveriş '
+    'Fişi · Ürünler</text><text x="295.8" y="47.8" text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Elma: 2,5 kg × 36,4 TL = ? TL · Mandalina:</text><text x="307.8" y="37.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">3</text><line x1="299.3" y1="41.8" x2="316.3" '
+    'y2="41.8" stroke="#0b2257" stroke-width="0.75"/><text x="307.8" y="57.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">2</text><text x="11.0" y="75.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kg × 28 TL = ? TL</text><rect x="4" y="86" width="342" height="62" '
+    'rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="103.4" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Kasa Ödeme Bilgisi</text><text x="11.0" y="121.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kasaya verilen: 200 TL · Toplam tutar = ? TL '
+    '·</text><text x="11.0" y="140.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Para üstü = ? TL</text></svg>',
+ 9: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zeynep&#x27;in harçlık '
+    'planı kartları."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Zeynep’in '
+    'Başlangıç Harçlığı: 480 TL</text><text x="188.7" y="48.0" text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">1. Harcama: Tüm paranın</text><text x="200.7" y="37.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">1</text><line x1="192.2" y1="42.0" x2="209.2" y2="42.0" '
+    'stroke="#0b2257" stroke-width="0.75"/><text x="200.7" y="57.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">3</text><text x="210.7" y="48.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">’ü</text><rect x="4" y="68" width="342" height="62" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">İkinci Harcama ve Kalan</text><text x="11.0" y="103.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">2. Harcama: Kalan paranın %25’i → '
+    'Geriye</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">kalan = ? TL</text></svg>',
+ 12: '<svg viewBox="0 0 350 150" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yürüyüş parkuru etap '
+     'kartları."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+     'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Yürünen Parkur '
+     'Etapları</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">Sabah yürünen: 0,35 · Öğleden sonra</text><text x="75.4" y="66.2" text-anchor="end" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yürünen:</text><text x="87.4" y="55.4" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">2</text><line x1="78.9" y1="60.2" x2="95.9" '
+     'y2="60.2" stroke="#0b2257" stroke-width="0.75"/><text x="87.4" y="75.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#0b2257">5</text><rect x="4" y="86" width="342" height="62" rx="5" fill="#fff1df" '
+     'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="103.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#d97706">Kalan Mesafe ve Hedef</text><text x="11.0" y="121.8" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Geriye kalan mesafe: 600 m → '
+     'Parkurun</text><text x="11.0" y="140.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">tamamı = ? m</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = serit_yol_diyagrami()
-    s[4]['gorsel'] = zeytinyagi_siseleme_karti()
-    s[5]['gorsel'] = magaza_indirim_panosu()
-    s[6]['gorsel'] = su_deposu_karti()
-    s[7]['gorsel'] = polya_adimlari_sema()
-    s[8]['gorsel'] = manav_fisi_karti()
-    s[9]['gorsel'] = kalanin_kesri_karti()
-    s[11]['gorsel'] = zihinden_islem_karti()
-    s[12]['gorsel'] = yuruyus_parkuru_panosu()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

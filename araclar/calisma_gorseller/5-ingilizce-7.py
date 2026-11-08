@@ -1,187 +1,163 @@
-"""5. sınıf İngilizce 7. hafta (National and Religious Days, Celebrations & Theme 1 Revision) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-12.5 pt (K150 EK); kesir yok (K155)."""
+"""5-ingilizce-7 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-GRI, GRI_A, KAHVE, ALTIN, KUM = '#9aa6bd', '#eef1f6', '#8a5a2b', '#c9a227', '#fffdf5'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=22):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.8, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.5):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def bayram_takvimi_svg():
-    ic = kutu(6, 6, 588, 96, '#fbfcff', GRI, 10, 1.4)
-    ic += yazi(300, 22, 'SCHOOL CELEBRATION CALENDAR · Prepositions & National Days', 11.0, LAC)
-    kartlar = [
-        ('1. Republic Day', 'We celebrate it', 'K = ?  29 October.', KIR, KIR_A),
-        ('2. Youth & Sports Day', 'We celebrate it', 'L = ?  May.', MAVI, MAVI_A),
-        ('3. 23 April Celebration', '23 April is', 'M = ?', YES, YES_A),
-    ]
-    for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
-        x = 16 + i * 192
-        ic += kutu(x, 32, 180, 60, arka, renk, 8, 1.5)
-        ic += yazi(x + 90, 48, bas, 10.6, renk)
-        ic += yazi(x + 90, 65, s1, 10.1, LAC, 'middle', True)
-        ic += yazi(x + 90, 81, s2, 10.5, LAC)
-    return svg(600, 108, ic, 'Okul kutlama takvimi: K (29 October öncesi edat), L (May öncesi edat) ve M (23 April bayram adı).', 22)
-
-
-def kutlama_afisi_svg():
-    ic = kutu(6, 6, 588, 98, KIR_A, KIR, 10, 1.5)
-    ic += f'<rect x="6" y="6" width="588" height="24" rx="10" fill="{KIR}"/><rect x="6" y="18" width="588" height="12" fill="{KIR}"/>'
-    ic += yazi(300, 22, '29 OCTOBER REPUBLIC DAY CEREMONY · SCHOOL GARDEN', 10.8, '#fff')
-    etk = [
-        ('09:30 · Preparation', 'Hang Turkish flags &', 'red-and-white balloons', MAVI, '#fff'),
-        ('10:00 · Morning Program', 'Sing the National Anthem', '& read enthusiastic poems', YES, '#fff'),
-        ('11:00 · Main Show', 'Folk dance club performs', 'in the school garden!', TUR, '#fff'),
-    ]
-    for i, (bas, s1, s2, renk, arka) in enumerate(etk):
-        x = 16 + i * 192
-        ic += kutu(x, 36, 180, 60, arka, renk, 8, 1.4)
-        ic += yazi(x + 90, 52, bas, 10.5, renk)
-        ic += yazi(x + 90, 69, s1, 10.0, LAC, 'middle', True)
-        ic += yazi(x + 90, 84, s2, 10.0, LAC, 'middle', True)
-    return svg(600, 110, ic, '29 Ekim Cumhuriyet Bayramı okul bahçesi kutlama afişi ve saatli etkinlik programı.', 22)
-
-
-def kulup_gorev_kartlari_svg():
-    kartlar = [
-        ('1. Mert', 'loves doing', 'experiments', MAVI, MAVI_A),
-        ('2. Ece', 'enjoys playing', 'basketball', TUR, TUR_A),
-        ('3. Kaan', 'likes reading', 'storybooks', YES, YES_A),
-        ('4. Aslı', 'loves acting', 'in school plays', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
-        x = 8 + i * 148
-        ic += kutu(x, 6, 136, 86, arka, renk, 9, 1.5)
-        ic += yazi(x + 68, 23, bas, 10.8, renk)
-        ic += f'<line x1="{x + 12}" y1="31" x2="{x + 124}" y2="31" stroke="{renk}" stroke-width="1"/>'
-        ic += yazi(x + 68, 52, s1, 10.1, LAC, 'middle', True)
-        ic += yazi(x + 68, 70, s2, 10.4, LAC)
-    return svg(600, 98, ic, 'Dört öğrencinin sevdiği etkinlik kartları: Mert, Ece, Kaan ve Aslı.', 22)
-
-
-def on_in_kural_karti_svg():
-    ic = kutu(8, 6, 280, 86, MAVI_A, MAVI, 10, 1.5)
-    ic += yazi(148, 24, 'PREPOSITION: ON + Day / Full Date', 10.6, MAVI)
-    ic += yazi(148, 46, 'on 29 October / on 23 April', 10.2, LAC)
-    ic += yazi(148, 64, 'on 30 August / on Monday', 10.1, LAC, 'middle', True)
-    ic += yazi(148, 80, 'Question 1: Victory Day (30 August)', 10.1, MAVI)
-
-    ic += kutu(312, 6, 280, 86, TUR_A, TUR, 10, 1.5)
-    ic += yazi(452, 24, 'PREPOSITION: IN + Month Only', 10.6, TUR)
-    ic += yazi(452, 46, 'in October / in April', 10.2, LAC)
-    ic += yazi(452, 64, 'in May / in August', 10.1, LAC, 'middle', True)
-    ic += yazi(452, 80, 'Question 2: Youth & Sports Day (May)', 10.1, TUR)
-    return svg(600, 98, ic, 'Tarihlerde on ve in edatlarının kullanım kuralı kartı.', 22)
-
-
-def milli_bayram_kronoloji_svg():
-    kartlar = [
-        ('23 April', 'Children’s Day', YES, YES_A),
-        ('19 May', 'Youth & Sports Day', MAVI, MAVI_A),
-        ('30 August', 'Victory Day', TUR, TUR_A),
-        ('29 October', 'Republic Day', KIR, KIR_A),
-    ]
-    ic = ''
-    for i, (tar, ad, renk, arka) in enumerate(kartlar):
-        x = 8 + i * 148
-        ic += kutu(x, 8, 136, 78, arka, renk, 9, 1.5)
-        ic += yazi(x + 68, 32, tar, 11.0, renk)
-        ic += yazi(x + 68, 58, ad, 10.1, LAC, 'middle', True)
-        if i < 3:
-            ic += f'<line x1="{x + 138}" y1="47" x2="{x + 146}" y2="47" stroke="{LAC}" stroke-width="1.8"/>'
-    return svg(600, 94, ic, 'Yıl içindeki dört millî bayramın kronolojik tarih kartları.', 22)
-
-
-def dort_ogrenci_tablo_svg():
-    ic = kutu(6, 6, 588, 98, '#fff', GRI, 9, 1.4)
-    ic += f'<rect x="6" y="6" width="588" height="22" rx="9" fill="{LAC}"/><rect x="6" y="18" width="588" height="10" fill="{LAC}"/>'
-    bas = [('Student', 65), ('Country', 185), ('Favourite Club & Activity', 355), ('School Rule', 515)]
-    for b, x in bas:
-        ic += yazi(x, 21, b, 10.4, '#fff')
-    sat = [
-        ('Emre', 'Türkiye', 'Chess club (strategy games)', 'Arrive on time'),
-        ('Emily', 'the UK', 'Art club (painting pictures)', 'Keep class clean'),
-        ('Kenji', 'Japan', 'Science club (experiments)', 'Wear a lab coat'),
-        ('Leyla', 'Azerbaijan', 'Folk dance club (dancing)', 'Don’t run inside'),
-    ]
-    for i, (ad, ulk, klp, krl) in enumerate(sat):
-        y = 30 + i * 17
-        ic += f'<rect x="10" y="{y}" width="580" height="15" rx="3" fill="{GRI_A if i % 2 == 0 else "#fff"}"/>'
-        ic += yazi(65, y + 11.5, ad, 10.2, MAVI)
-        ic += yazi(185, y + 11.5, ulk, 10.1, LAC, 'middle', True)
-        ic += yazi(355, y + 11.5, klp, 10.1, LAC, 'middle', True)
-        ic += yazi(515, y + 11.5, krl, 10.1, LAC, 'middle', True)
-    return svg(600, 110, ic, 'Emre, Emily, Kenji ve Leyla’nın ülke, kulüp ve okul kuralı tablosu.', 23)
-
-
-def okul_kurallari_tabela_svg():
-    kurallar = [
-        ('Rule 1 · Punctuality', 'You must arrive at school on time.', YES, YES_A),
-        ('Rule 2 · Classroom', 'Keep your classroom clean and tidy!', MAVI, MAVI_A),
-        ('Rule 3 · Library', 'You mustn’t shout in the library.', TUR, TUR_A),
-        ('Rule 4 · Corridors', 'Don’t run fast in the corridors!', KIR, KIR_A),
-    ]
-    ic = ''
-    for i, (bas, m, renk, arka) in enumerate(kurallar):
-        x = 6 + (i % 2) * 298
-        y = 6 + (i // 2) * 52
-        ic += kutu(x, y, 286, 44, arka, renk, 8, 1.5)
-        ic += yazi(x + 14, y + 17, bas, 10.5, renk, 'start')
-        ic += yazi(x + 14, y + 34, m, 10.1, LAC, 'start', True)
-    return svg(600, 112, ic, 'Dört temel okul kuralı panosu: zamanında gelme, sınıfı temiz tutma, kütüphanede sessizlik ve koridorda koşmama.', 22)
-
-
-def diyalog_tamamlama_svg():
-    ic = kutu(8, 6, 280, 86, MAVI_A, MAVI, 10, 1.5)
-    ic += yazi(148, 23, 'Dialogue 1 · Asking Country', 10.6, MAVI)
-    ic += yazi(20, 46, 'Arda: (1) ______________________?', 10.2, LAC, 'start')
-    ic += yazi(20, 68, 'Baku Student: I am from Azerbaijan.', 10.2, MAVI, 'start', True)
-
-    ic += kutu(312, 6, 280, 86, MOR_A, MOR, 10, 1.5)
-    ic += yazi(452, 23, 'Dialogue 2 · Asking School Club', 10.6, MOR)
-    ic += yazi(324, 46, 'Sude: (2) ______________________?', 10.2, LAC, 'start')
-    ic += yazi(324, 68, 'Pelin: I am in the drama club.', 10.2, MOR, 'start', True)
-    return svg(600, 98, ic, 'Ülke ve okul kulübü sorma diyalog kartları.', 22)
-
-
-def cumhuriyet_bayrami_kart_svg():
-    ic = kutu(8, 6, 584, 88, KIR_A, KIR, 10, 1.5)
-    ic += yazi(300, 24, 'REPUBLIC DAY FACT CARD · 29 OCTOBER', 11.0, KIR)
-    kutular = [
-        ('Date', 'on 29 October', 20, KIR),
-        ('Decoration', 'decorate with flags', 210, MAVI),
-        ('Activities', 'sing Anthem & read poems', 400, YES),
-    ]
-    for bas, deg, x, r in kutular:
-        ic += kutu(x, 34, 178, 48, '#fff', r, 8, 1.3)
-        ic += yazi(x + 89, 52, bas, 10.5, r)
-        ic += yazi(x + 89, 71, deg, 10.2, LAC, 'middle', True)
-    return svg(600, 100, ic, '29 Ekim Cumhuriyet Bayramı tarih, süsleme ve kutlama etkinlikleri bilgi kartı.', 22)
+GORSELLER = {1: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Okul kutlama takvimi '
+    'kartları."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="30.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Republic '
+    'Day</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">We celebrate it · K =</text><text x="87.5" y="67.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">? 29 October.</text><rect x="179" y="3" width="167" height="82" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Youth &amp; Sports</text><text x="262.5" y="39.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Day</text><text '
+    'x="262.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">We '
+    'celebrate it · L = ?</text><text x="262.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">May.</text><rect x="4" y="89" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. 23 April</text><text x="87.5" y="125.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Celebration</text><text x="87.5" y="144.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">23 April is National ·</text><text x="87.5" y="162.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sovereignty &amp; M = '
+    '?</text><rect x="179" y="89" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="116.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Victory '
+    'Day</text><text x="262.5" y="134.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">We celebrate Victory</text><text x="262.5" y="153.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Day on 30 August.</text></svg>',
+ 4: '<svg viewBox="0 0 350 212" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="29 Ekim Cumhuriyet '
+    'Bayramı kutlama programı afişi."><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Place · School</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Garden</text><text x="87.5" y="58.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">All students gather</text><text x="87.5" '
+    'y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">in the school '
+    'garden</text><text x="87.5" y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">for the ceremony.</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">09:30 · Preparation</text><text x="262.5" y="49.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hang Turkish flags</text><text x="262.5" y="67.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">and '
+    'red-and-white</text><text x="262.5" y="85.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">balloons.</text><rect x="4" y="108" width="167" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="126.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">10:00 · Morning</text><text x="87.5" y="144.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Program</text><text x="87.5" y="163.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sing the National</text><text x="87.5" '
+    'y="181.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Anthem and '
+    'read</text><text x="87.5" y="200.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">enthusiastic poems.</text><rect x="179" y="108" width="167" height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="135.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">11:00 · Main Show</text><text x="262.5" y="154.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Folk dance club</text><text x="262.5" y="172.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">performs in the</text><text x="262.5" '
+    'y="190.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">school '
+    'garden.</text></svg>',
+ 5: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört öğrencinin sevdiği '
+    'etkinlik kartları."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Mert</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Loves doing</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">experiments</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2. Ece</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Enjoys playing</text><text x="262.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">basketball</text><rect x="4" y="71" '
+    'width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Kaan</text><text x="87.5" y="107.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Likes '
+    'reading</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">storybooks</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Aslı</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Loves acting in</text><text x="262.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">school plays</text></svg>',
+ 6: '<svg viewBox="0 0 350 88" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zaman edatları on ve in '
+    'kullanım kartı."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Preposition · '
+    'ON</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Used before full</text><text x="87.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">dates: on 23 April,</text><text x="87.5" y="76.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">on 29 October</text><rect x="179" y="3" '
+    'width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="30.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Preposition · IN</text><text x="262.5" '
+    'y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Used before '
+    'months:</text><text x="262.5" y="67.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">in April, in October</text></svg>',
+ 7: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört millî bayramın '
+    'tarih kartları."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Card K · 30 '
+    'August</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Victory Day</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Card L · 23 April</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Children’s Day</text><rect x="4" y="52" width="167" height="45" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Card M · 29 October</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Republic Day</text><rect '
+    'x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Card N · 19 '
+    'May</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Youth &amp; Sports Day</text></svg>',
+ 8: '<svg viewBox="0 0 350 212" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Emre, Emily, Kenji ve '
+    'Leyla’nın ülke, kulüp ve okul kuralı kartları."><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Emre · Türkiye</text><text x="87.5" y="49.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Club: Chess club</text><text x="87.5" y="67.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(games) · Rule:</text><text x="87.5" y="85.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Arrive on '
+    'time</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" '
+    'y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Emily · the '
+    'UK</text><text x="262.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Club: Art club</text><text x="262.5" y="58.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">(painting)</text><text x="262.5" y="76.7" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Rule: Keep class</text><text x="262.5" y="95.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">clean</text><rect x="4" '
+    'y="108" width="167" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="135.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Kenji · '
+    'Japan</text><text x="87.5" y="154.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Club: Science club</text><text x="87.5" y="172.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">(lab)</text><text x="87.5" y="190.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Rule: Wear a lab coat</text><rect x="179" y="108" width="167" '
+    'height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="126.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Leyla · the USA</text><text x="262.5" '
+    'y="144.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Club: Folk '
+    'dance</text><text x="262.5" y="163.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">club</text><text x="262.5" y="181.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Rule: Don’t run</text><text x="262.5" y="200.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">inside</text></svg>',
+ 9: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört temel okul kuralı '
+    'panosu."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Rule 1 · '
+    'Punctuality</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">You must arrive at</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">school on time.</text><rect x="179" y="3" width="167" height="64" '
+    'rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Rule 2 · Classroom</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Keep your '
+    'classroom</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">clean and tidy!</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Rule 3 · Library</text><text x="87.5" y="107.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">You mustn’t shout in</text><text x="87.5" '
+    'y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">the school '
+    'library.</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Rule '
+    '4 · Corridors</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Don’t run fast in the</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">corridors!</text></svg>',
+ 10: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ülke ve okul kulübü '
+     'sorulan iki konuşma balonu kartı."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">Dialogue 1 · Country</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">A: (1) _________________ ?</text><text x="11.0" y="57.2" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">B: I am from '
+     'Türkiye.</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+     'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Dialogue 2 · '
+     'School Club</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#0b2257">A: (2) _________________ ?</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">B: I am in the science club.</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = bayram_takvimi_svg()
-    s[4]['gorsel'] = kutlama_afisi_svg()
-    s[5]['gorsel'] = kulup_gorev_kartlari_svg()
-    s[6]['gorsel'] = on_in_kural_karti_svg()
-    s[7]['gorsel'] = milli_bayram_kronoloji_svg()
-    s[8]['gorsel'] = dort_ogrenci_tablo_svg()
-    s[9]['gorsel'] = okul_kurallari_tabela_svg()
-    s[10]['gorsel'] = diyalog_tamamlama_svg()
-    s[12]['gorsel'] = cumhuriyet_bayrami_kart_svg()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

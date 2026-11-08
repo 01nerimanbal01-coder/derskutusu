@@ -14,9 +14,7 @@
   ],
   "hatirla": [
     "Birim zamanda alınan yola sürat ({kesir:Alınan Yol|Geçen Zaman}), yönlü yer değiştirmeye hız denir; çembersel pistte eşit sürede eşit yol alan aracın sürati sabitken yönü değiştiği için hızı değişkendir.",
-    "Sabit süratli harekette yol–zaman grafiği sıfırdan düzgün artan doğru, sürat–zaman grafiği yatay düz çizgidir; yol–zaman grafiğindeki yatay çizgi cismin durduğunu gösterir.",
-    "Tek atadan döllenmesiz ve atayla birebir aynı kalıtsal yapıda bireyler oluşmasına eşeysiz üreme denir: bölünerek (bakteri, amip), tomurcuklanarak (hidra, bira mayası), rejenerasyonla (denizyıldızı) ve vejetatif (çilek, patates).",
-    "Yumurta ile spermin döllenmesiyle zigot, embriyo ve yeni birey oluşmasına eşeyli üreme denir; eşeyli üreme tür içi kalıtsal çeşitlilik sağlar."
+    "Sabit süratli harekette yol–zaman grafiği sıfırdan düzgün artan doğru, sürat–zaman grafiği yatay düz çizgidir; yol–zaman grafiğindeki yatay çizgi cismin durduğunu gösterir."
   ],
   "sorular": [
     {
@@ -35,14 +33,6 @@
         [
           "Denizyıldızı ve planarya",
           "Kopan vücut parçasından rejenerasyonla yeni birey oluşturan hayvanlar"
-        ],
-        [
-          "Çilek gövdesi ve patates yumrusu",
-          "Dal, yaprak veya yumru ile vejetatif çoğalan bitkiler"
-        ],
-        [
-          "Yol–zaman grafiğinde yatay çizgi",
-          "Konumu değişmeyen, sürati sıfır olan durgun cisim"
         ]
       ]
     },
@@ -79,10 +69,6 @@
         {
           "metin": "Eşeysiz üreme sonucunda meydana gelen yavru bireyler ata canlıdan farklı kalıtsal özellikler taşır.",
           "dogru": false
-        },
-        {
-          "metin": "Yumurta ve sperm çekirdeklerinin birleşmesine döllenme, oluşan ilk hücreye ise zigot adı verilir.",
-          "dogru": true
         }
       ]
     },
@@ -103,10 +89,6 @@
         {
           "metin": "Söğüt dalının suda köklendirilip dikilmesi ___ üremeye örnektir.",
           "cevap": "vejetatif"
-        },
-        {
-          "metin": "Zigotun gelişmesiyle oluşan yapıya ___ adı verilir.",
-          "cevap": "embriyo"
         }
       ],
       "fazla": [
@@ -117,12 +99,12 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki yol–zaman grafiğine göre doğrusal bir yolda ilerleyen bisikletlinin sabit sürati kaç {kesir:m|s}’dir ve 10 saniye sonunda alacağı toplam yol kaç metredir?",
+      "soru": "Görseldeki hareket ölçüm kartlarındaki verilere göre doğrusal bir yolda ilerleyen bisikletlinin sabit sürati kaç {kesir:m|sn}’dir ve 10 saniye sonunda alacağı toplam yol kaç metredir?",
       "secenekler": [
-        "Sürati 8 {kesir:m|s} — Toplam yol 80 m",
-        "Sürati 12 {kesir:m|s} — Toplam yol 120 m",
-        "Sürati 24 {kesir:m|s} — Toplam yol 240 m",
-        "Sürati 36 {kesir:m|s} — Toplam yol 360 m"
+        "Sürati 8 {kesir:m|sn} — Toplam yol 80 m",
+        "Sürati 12 {kesir:m|sn} — Toplam yol 120 m",
+        "Sürati 24 {kesir:m|sn} — Toplam yol 240 m",
+        "Sürati 36 {kesir:m|sn} — Toplam yol 360 m"
       ],
       "dogru": 1
     },
@@ -130,7 +112,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki sabit süratli K, L ve M araçlarının hareket verilerini kullanarak tablodaki boş bırakılan hücreleri tamamlayınız. İlk satır örnektir.",
+      "soru": "Görseldeki sabit süratli K, L, M ve N araçlarının hareket verilerini kullanarak tablodaki boş bırakılan hücreleri tamamlayınız. İlk satır örnektir.",
       "basliklar": [
         "Araç",
         "Alınan Yol",
@@ -141,15 +123,17 @@
         [
           "1. K Aracı",
           "60 m",
-          "4 s",
-          "15 {kesir:m|s}"
+          "4 sn",
+          {
+            "b": "15 {kesir:m|sn}"
+          }
         ],
         [
           "2. L Aracı",
           "180 km",
-          "2 h",
+          "2 sa",
           {
-            "b": "90 {kesir:km|h}"
+            "b": "90 {kesir:km|sa}"
           }
         ],
         [
@@ -157,25 +141,24 @@
           {
             "b": "100 m"
           },
-          "5 s",
-          "20 {kesir:m|s}"
+          "5 sn",
+          "20 {kesir:m|sn}"
         ],
         [
           "4. N Aracı",
           "240 km",
           {
-            "b": "3 h"
+            "b": "3 sa"
           },
-          "80 {kesir:km|h}"
+          "80 {kesir:km|sa}"
         ]
       ]
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görselde verilen I. grafik (Yol–Zaman) ve II. grafik (Sürat–Zaman) yatay düz çizgi şeklindedir. Bu iki grafiğin temsil ettiği hareket durumlarını karşılaştırarak açıklayınız.",
-      "cevap": "I. grafikte konum değişmediğinden araç durmaktadır; II. grafikte araç sabit süratle ilerler.",
+      "soru": "Doğrusal bir yoldaki I. aracın konumu 0–3 saniye boyunca hep 15. metrede kalırken, II. araç her saniyede 10 metre yol almaktadır. I. araç ile II. aracın hareket durumlarını karşılaştırarak açıklayınız.",
+      "cevap": "I. araçta konum hep 15 m kaldığından araç durmaktadır; II. araç ise sabit süratle ilerler.",
       "satir": 2
     },
     {
@@ -218,8 +201,7 @@
     {
       "tur": "kisa",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki karşılaştırma şemasında K olayı tek atadan döllenmesiz çoğalmayı, L olayı ise sperm ve yumurtanın birleşmesiyle çoğalmayı göstermektedir. K ve L olaylarını kalıtsal çeşitlilik açısından karşılaştırınız.",
+      "soru": "K olayı tek atadan döllenmesiz çoğalmayı, L olayı ise sperm ve yumurtanın birleşmesiyle çoğalmayı göstermektedir. K ve L olaylarını kalıtsal çeşitlilik açısından karşılaştırınız.",
       "cevap": "K olayı (eşeysiz) atayla aynı yavrular oluşturur; L olayı (eşeyli) kalıtsal çeşitlilik sağlar.",
       "satir": 2
     },
@@ -260,7 +242,7 @@
       "tur": "acik",
       "duzey": "ust",
       "gorsel_var": true,
-      "soru": "Görseldeki sürat–zaman grafiğinde K ve L araçlarının 6 saniye boyunca sabit süratleri verilmiştir. 6 saniye sonunda hangi aracın kaç metre daha fazla yol aldığını hesaplayarak açıklayınız.",
+      "soru": "Görseldeki hareket ölçüm kartlarındaki verilere göre sabit süratle ilerleyen K ve L araçlarından hangisinin 6 saniye sonunda kaç metre daha fazla yol aldığını hesaplayarak açıklayınız.",
       "cevap": "K aracı 20×6=120 m, L aracı 12×6=72 m alır; K aracı 120−72=48 m fazla yol almıştır.",
       "satir": 2
     },

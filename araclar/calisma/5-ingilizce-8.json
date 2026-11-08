@@ -11,8 +11,7 @@
   "hatirla": [
     "Sınıf kuralları olumlu emir cümleleriyle (Raise your hand, Listen carefully, Keep quiet) veya olumsuz yasaklamalarla (Don’t run in the corridors, Don’t eat in class) ifade edilir.",
     "Öğretmenden nazikçe izin isterken 'May I come in?', 'Can I open the window?', 'May I clean the board?' kalıpları kullanılır; olumlu yanıtta 'Yes, you may / Sure / Of course' denir.",
-    "Okul dersleri Maths, Science, Social Studies, English, Turkish, Art, Music, P.E. (Physical Education) ve I.T. (Information Technology) olarak adlandırılır.",
-    "Haftanın günlerinden (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) önce daima 'on' edatı kullanılır (We have Science on Tuesday)."
+    "Okul dersleri Maths, Science, Social Studies, English, Turkish, Art, Music, P.E. (Physical Education) ve I.T. (Information Technology) olarak adlandırılır."
   ],
   "sorular": [
     {
@@ -31,10 +30,6 @@
         [
           "Physical Education (P.E.)",
           "Spor ve hareket yapılan Beden Eğitimi dersi"
-        ],
-        [
-          "Information Technology (I.T.)",
-          "Bilgisayar ve kodlama öğrenilen Bilişim dersi"
         ]
       ]
     },
@@ -70,10 +65,6 @@
         {
           "metin": "'Don’t run in the corridors!' is a classroom and school rule for students’ safety.",
           "dogru": true
-        },
-        {
-          "metin": "Wednesday comes right after Friday in the days of the week.",
-          "dogru": false
         }
       ]
     },
@@ -94,10 +85,6 @@
         {
           "metin": "My ___ school subject is Science because I love experiments.",
           "cevap": "favourite"
-        },
-        {
-          "metin": "___ I open the window, teacher? The classroom is very hot.",
-          "cevap": "May"
         }
       ],
       "fazla": [
@@ -129,7 +116,9 @@
         [
           "1. Arda (solving problems)",
           "Maths",
-          "on Monday"
+          {
+            "b": "on Monday"
+          }
         ],
         [
           "2. Selin (doing experiments)",
@@ -170,12 +159,12 @@
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görselde karışık verilen dört okul gününü Pazartesi gününden Cuma gününe doğru (hafta içi sırasıyla) 1’den 4’e kadar numaralandırınız.",
+      "soru": "Görselde ders etkinlikleriyle karışık olarak verilen dört hafta içi okul gününü, haftanın başından sonuna doğru kronolojik sırayla 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
-        "Monday — We have Turkish and Maths on the first day of the week.",
-        "Tuesday — We have Science in the laboratory on the second day.",
-        "Thursday — We have Social Studies and Art before Friday.",
-        "Friday — We have P.E. and Music on the last weekday."
+        "Monday — We solve geometry problems in Maths.",
+        "Tuesday — We do fun experiments in the Science lab.",
+        "Thursday — We draw and paint pictures in Art class.",
+        "Friday — We play basketball in P.E. and sing in Music."
       ]
     },
     {

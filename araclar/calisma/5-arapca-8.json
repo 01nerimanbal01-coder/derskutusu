@@ -31,10 +31,6 @@
         [
           "{ar:فِي أَمَانِ اللهِ}",
           "Allah’a emanet"
-        ],
-        [
-          "{ar:مِنْ فَضْلِكَ}",
-          "Lütfen"
         ]
       ]
     },
@@ -70,10 +66,6 @@
         {
           "metin": "«{ar:اَلسَّلَامُ قَبْلَ الْكَلَامِ}» hadis-i şerifi konuşmaya başlamadan önce selam verilmesini öğütler.",
           "dogru": true
-        },
-        {
-          "metin": "{ar:ع} (Ayn) ve {ar:غ} (Gayn) harflerinin her ikisi de üzerinde birer nokta taşır.",
-          "dogru": false
         }
       ]
     },
@@ -94,10 +86,6 @@
         {
           "metin": "Ayrılırken ‘Görüşmek üzere’ anlamında ___ ifadesi söylenir.",
           "cevap": "{ar:إِلَى اللِّقَاءِ}"
-        },
-        {
-          "metin": "Peltek ve kalın okunan noktalı harf ___ harfidir.",
-          "cevap": "{ar:ظ}"
         }
       ],
       "fazla": [
@@ -129,7 +117,9 @@
         [
           "1. {ar:سَمَك}",
           "{ar:س} (Sin)",
-          "Balık"
+          {
+            "b": "Balık"
+          }
         ],
         [
           "2. {ar:طَالِب}",

@@ -1,151 +1,117 @@
-"""5. sınıf İngilizce 8. hafta (Classroom Rules, School Subjects, Days of the Week and Timetables) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 12 pt Noto Sans (K150 EK); kesir yok (K155)."""
+"""5-ingilizce-8 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, GRI, GRI_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#9aa6bd', '#eef1f6'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-TR_FONT = 'font-family="Noto Sans, sans-serif" font-size="12"'
-
-
-def svg(w, h, ic, etiket, en_fazla=21):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    agirlik = ' font-weight="700"' if kalin else ' font-weight="500"'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {TR_FONT}{agirlik} fill="{renk}">{metin}</text>'
-
-
-def ders_programi_karti():
-    kutular = [
-        ('1. Preposition', 'We have P.E.', 'K = ?  Monday.', MAVI, MAVI_A),
-        ('2. Numbers', 'I like solving', 'problems in L = ?', TUR, TUR_A),
-        ('3. Drawing', 'She loves painting', 'pictures in M = ?', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, s1, s2, renk, arka) in enumerate(kutular):
-        x = 6 + i * 118
-        ic += f'<rect x="{x}" y="6" width="112" height="88" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 56, 25, bas, renk, kalin=True)
-        ic += yazi(x + 56, 52, s1, LAC)
-        ic += yazi(x + 56, 76, s2, LAC, kalin=True)
-    return svg(360, 100, ic, 'Ders programı tamamlama kartları: K edatı, L sayı dersi ve M resim dersi.', 21)
-
-
-def sinif_kurallari_panosu():
-    kurallar = [
-        ('1. Raise your hand', 'before speaking!', MAVI, MAVI_A),
-        ('2. Keep classroom', 'clean and tidy!', YES, YES_A),
-        ('3. Don’t eat food', 'or shout in class!', KIR, '#fdeaea'),
-        ('4. Don’t run fast', 'in the corridors!', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (s1, s2, renk, arka) in enumerate(kurallar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 50
-        ic += f'<rect x="{x}" y="{y}" width="172" height="44" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 86, y + 19, s1, renk, kalin=True)
-        ic += yazi(x + 86, y + 37, s2, LAC)
-    return svg(360, 106, ic, 'Sınıf kuralları panosu: parmak kaldırma, temiz tutma, sınıfta yememe ve koridorda koşmama.', 21)
-
-
-def dort_ogrenci_ders_karti():
-    kartlar = [
-        ('1. Arda', 'Numbers', 'Monday', MAVI, MAVI_A),
-        ('2. Selin', 'Experiments', 'Tuesday', YES, YES_A),
-        ('3. Bora', 'Guitar', 'Wednesday', TUR, TUR_A),
-        ('4. Elif', 'Basketball', 'Friday', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (ad, etk, gun, renk, arka) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += f'<rect x="{x}" y="6" width="82" height="86" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 41, 24, ad, renk, kalin=True)
-        ic += yazi(x + 41, 50, etk, LAC)
-        ic += yazi(x + 41, 74, gun, LAC, kalin=True)
-    return svg(360, 98, ic, 'Arda, Selin, Bora ve Elif’in sevdiği etkinlikler ve ders günleri.', 21)
-
-
-def izin_isteme_karti():
-    ic = f'<rect x="6" y="6" width="170" height="88" rx="9" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.4"/>'
-    ic += yazi(91, 25, '1. Asking Permission', MAVI, kalin=True)
-    ic += yazi(91, 52, 'knocking on the door:', LAC)
-    ic += yazi(91, 76, '“May I ... , teacher?”', LAC, kalin=True)
-
-    ic += f'<rect x="184" y="6" width="170" height="88" rx="9" fill="{YES_A}" stroke="{YES}" stroke-width="1.4"/>'
-    ic += yazi(269, 25, '2. Teacher’s Answer', YESIL_K, kalin=True)
-    ic += yazi(269, 52, 'Giving permission:', LAC)
-    ic += yazi(269, 76, '“Yes, you ... / Sure.”', LAC, kalin=True)
-    return svg(360, 100, ic, 'Öğrencinin içeri girme izni istemesi ve öğretmenin olumlu yanıtı kartı.', 21)
-
-
-def hafta_ici_gunler_zinciri():
-    gunler = [
-        ('Monday', '1st Day', MAVI, MAVI_A),
-        ('Tuesday', '2nd Day', YES, YES_A),
-        ('Thursday', '4th Day', TUR, TUR_A),
-        ('Friday', '5th Day', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (gun, sira, renk, arka) in enumerate(gunler):
-        x = 6 + i * 88
-        ic += f'<rect x="{x}" y="6" width="82" height="84" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 41, 30, gun, renk, kalin=True)
-        ic += yazi(x + 41, 64, sira, LAC)
-    return svg(360, 96, ic, 'Hafta içi günler sıralama kartları: Monday, Tuesday, Thursday, Friday.', 21)
-
-
-def begeni_tablosu_svg():
-    satirlar = [
-        ('Tuna', 'Likes: Maths', 'Dislikes: Art', MAVI, MAVI_A),
-        ('Merve', 'Likes: English', 'Dislikes: P.E.', YES, YES_A),
-        ('Can', 'Likes: Science', 'Dislikes: Music', TUR, TUR_A),
-        ('Duru', 'Likes: Music', 'Dislikes: Maths', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (ad, sev, sevmez, renk, arka) in enumerate(satirlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 50
-        ic += f'<rect x="{x}" y="{y}" width="172" height="44" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 10, y + 19, f'{ad} · {sev}', renk, 'start', kalin=True)
-        ic += yazi(x + 10, y + 37, sevmez, LAC, 'start')
-    return svg(360, 106, ic, 'Tuna, Merve, Can ve Duru’nun sevdiği ve sevmediği dersler tablosu.', 21)
-
-
-def ders_gunu_diyalog_karti():
-    ic = f'<rect x="6" y="6" width="348" height="42" rx="8" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.4"/>'
-    ic += yazi(16, 31, 'Student A:  _________________________ ?', MAVI, 'start', kalin=True)
-
-    ic += f'<rect x="6" y="54" width="348" height="42" rx="8" fill="{YES_A}" stroke="{YES}" stroke-width="1.4"/>'
-    ic += yazi(16, 79, 'Student B:  We have Science on Tuesday and Thursday.', LAC, 'start', kalin=True)
-    return svg(360, 102, ic, 'Fen bilimleri dersinin hangi günler olduğunu soran diyalog kartı.', 21)
-
-
-def zeynep_favori_ders_karti():
-    ic = f'<rect x="6" y="6" width="348" height="88" rx="10" fill="{MOR_A}" stroke="{MOR}" stroke-width="1.5"/>'
-    ic += yazi(180, 26, 'STUDENT TIMETABLE CARD · ZEYNEP', MOR, kalin=True)
-    ic += yazi(180, 52, 'Favourite Subject: English', LAC, kalin=True)
-    ic += yazi(180, 76, 'Days: Wednesday and Friday', LAC)
-    return svg(360, 100, ic, 'Zeynep’in en sevdiği ders (English) ve günleri (Wednesday, Friday) kartı.', 21)
-
-
-def odunc_isteme_karti():
-    ic = f'<rect x="6" y="6" width="348" height="88" rx="10" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.5"/>'
-    ic += yazi(180, 26, 'IN THE MATHS LESSON · POLITE REQUEST', TUR, kalin=True)
-    ic += yazi(180, 52, 'Emre: “I need to draw a straight line.', LAC)
-    ic += yazi(180, 76, 'Can I borrow your ruler, please?”', LAC, kalin=True)
-    return svg(360, 100, ic, 'Emre’nin matematik dersinde düz çizgi çizmek için cetvel isteme kartı.', 21)
+GORSELLER = {1: '<svg viewBox="0 0 350 139" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ders programı tamamlama '
+    'kartları: K edatı, L sayı dersi ve M resim dersi."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Preposition</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">We have P.E.</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">K = ? Monday.</text><rect x="4" y="68" width="342" height="23" '
+    'rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="84.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#ee7d12">2. Numbers:</tspan> I like '
+    'solving problems in L = ?</text><rect x="4" y="94" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="111.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Drawing</text><text x="11.0" y="129.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">She loves painting pictures in M = ?</text></svg>',
+ 4: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sınıf kuralları panosu: '
+    'parmak kaldırma, temiz tutma, sınıfta yememe ve koridorda koşmama."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">1. Raise your hand</text><text x="87.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">before speaking!</text><rect x="179" y="3" '
+    'width="167" height="45" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Keep classroom</text><text x="262.5" '
+    'y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">clean and '
+    'tidy!</text><rect x="4" y="52" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Don’t eat '
+    'food or</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">shout in class!</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Don’t run fast in</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">the corridors!</text></svg>',
+ 5: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arda, Selin, Bora ve '
+    'Elif’in sevdiği etkinlikler ve ders günleri."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Arda</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Numbers</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Monday</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Selin</text><text x="262.5" y="39.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Experiments</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Tuesday</text><rect '
+    'x="4" y="71" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="89.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. Bora</text><text '
+    'x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Guitar</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Wednesday</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Elif</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Basketball</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Friday</text></svg>',
+ 6: '<svg viewBox="0 0 350 113" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Öğrencinin içeri girme '
+    'izni istemesi ve öğretmenin olumlu yanıtı kartı."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Asking Permission knocking on the door:</text><text x="11.0" y="38.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">“May I ... , teacher?”</text><rect x="4" '
+    'y="49" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="66.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">2. Teacher’s '
+    'Answer</text><text x="11.0" y="84.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Giving permission:</text><text x="11.0" y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">“Yes, you ... / Sure.”</text></svg>',
+ 7: '<svg viewBox="0 0 350 115" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hafta içi günler ve ders '
+    'etkinlikleri sıralama kartları."><rect x="4" y="3" width="167" height="52" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="23.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Card K · Thursday</text><text x="87.5" y="41.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Lesson: Art (Painting)</text><rect x="179" y="3" width="167" '
+    'height="52" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="23.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Card L · Monday</text><text x="262.5" '
+    'y="41.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Lesson: Maths '
+    '(Problems)</text><rect x="4" y="60" width="167" height="52" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="87.5" y="80.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Card M '
+    '· Friday</text><text x="87.5" y="98.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Lesson: P.E. &amp; Music</text><rect x="179" y="60" width="167" height="52" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="80.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Card N · Tuesday</text><text x="262.5" y="98.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Lesson: Science (Lab)</text></svg>',
+ 8: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tuna, Merve, Can ve '
+    'Duru’nun sevdiği ve sevmediği dersler tablosu."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Tuna · Likes: Maths</text><text x="87.5" y="49.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dislikes: Art</text><rect x="179" y="3" width="167" height="64" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Merve · Likes:</text><text x="262.5" y="39.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">English</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dislikes: '
+    'P.E.</text><rect x="4" y="71" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" '
+    'y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Can · Likes: '
+    'Science</text><text x="87.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Dislikes: Music</text><rect x="179" y="71" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Duru · Likes: Music</text><text x="262.5" y="107.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dislikes: Maths</text></svg>',
+ 9: '<svg viewBox="0 0 350 76" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fen bilimleri dersinin '
+    'hangi günler olduğunu soran diyalog kartı."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Student A: _________________________ ?</text><rect x="4" y="31" width="342" height="43" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="48.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Student B: We have Science on Tuesday and</text><text x="11.0" y="66.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Thursday.</text></svg>',
+ 11: '<svg viewBox="0 0 350 67" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zeynep’in en sevdiği '
+     'ders (English) ve günleri (Wednesday, Friday) kartı."><rect x="4" y="3" width="342" height="62" rx="5" fill="#f0e9fe" '
+     'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#7c3aed">STUDENT TIMETABLE CARD · ZEYNEP</text><text x="11.0" y="38.8" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Favourite Subject: '
+     'English</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">Days: Wednesday and Friday</text></svg>',
+ 12: '<svg viewBox="0 0 350 67" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Emre’nin matematik '
+     'dersinde düz çizgi çizmek için cetvel isteme kartı."><rect x="4" y="3" width="342" height="62" rx="5" fill="#fff1df" '
+     'stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#ee7d12">IN THE MATHS LESSON · POLITE REQUEST</text><text x="11.0" y="38.8" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Emre: “I need to draw a '
+     'straight line.</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0b2257">Can I borrow your ruler, please?”</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = ders_programi_karti()
-    s[4]['gorsel'] = sinif_kurallari_panosu()
-    s[5]['gorsel'] = dort_ogrenci_ders_karti()
-    s[6]['gorsel'] = izin_isteme_karti()
-    s[7]['gorsel'] = hafta_ici_gunler_zinciri()
-    s[8]['gorsel'] = begeni_tablosu_svg()
-    s[9]['gorsel'] = ders_gunu_diyalog_karti()
-    s[11]['gorsel'] = zeynep_favori_ders_karti()
-    s[12]['gorsel'] = odunc_isteme_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

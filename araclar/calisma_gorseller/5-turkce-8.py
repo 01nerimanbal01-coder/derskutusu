@@ -1,154 +1,134 @@
-"""5. sınıf Türkçe 8. hafta (Oğlu Hüseyin'den Emine Ana'ya Mektuplar: Metin İncelemesi, Mektup Türü ve Deyimler) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 12 pt Noto Sans (K150 EK); kesir yok (K155)."""
+"""5-turkce-8 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, GRI, GRI_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#9aa6bd', '#eef1f6'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-TR_FONT = 'font-family="Noto Sans, sans-serif" font-size="12"'
-
-
-def svg(w, h, ic, etiket, en_fazla=18):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    agirlik = ' font-weight="700"' if kalin else ' font-weight="500"'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {TR_FONT}{agirlik} fill="{renk}">{metin}</text>'
-
-
-def mektup_bolum_semasi():
-    ic = f'<rect x="6" y="6" width="348" height="92" rx="10" fill="#fbfcff" stroke="{GRI}" stroke-width="1.4"/>'
-    ic += f'<rect x="218" y="12" width="124" height="22" rx="5" fill="{MAVI_A}" stroke="{MAVI}"/>'
-    ic += yazi(280, 27, 'K (Sağ Üst Köşe)', MAVI, kalin=True)
-    ic += f'<rect x="18" y="36" width="134" height="22" rx="5" fill="{TUR_A}" stroke="{TUR}"/>'
-    ic += yazi(85, 51, 'L (Sol Üst Satır)', TUR, kalin=True)
-    ic += f'<rect x="18" y="64" width="184" height="24" rx="5" fill="{YES_A}" stroke="{YES}"/>'
-    ic += yazi(110, 80, 'M (Orta Paragraflar)', YESIL_K, kalin=True)
-    ic += f'<rect x="218" y="64" width="124" height="24" rx="5" fill="{MOR_A}" stroke="{MOR}"/>'
-    ic += yazi(280, 80, 'N (Sağ Alt Köşe)', MOR, kalin=True)
-    return svg(360, 104, ic, 'Mektup sayfa düzeninde K, L, M ve N bölümleri şeması.', 21)
-
-
-def hitap_yazim_kartlari():
-    kartlar = [
-        ('1. Kart', 'sevgili anneciğim.', KIR, '#fdeaea'),
-        ('2. Kart', 'Kıymetli öğretmenim;', TUR, TUR_A),
-        ('3. Kart', 'Canım Anneciğim,', YES, YES_A),
-        ('4. Kart', 'aziz Dostum!', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, met, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 50
-        ic += f'<rect x="{x}" y="{y}" width="172" height="44" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 86, y + 19, bas, renk, kalin=True)
-        ic += yazi(x + 86, y + 37, met, LAC)
-    return svg(360, 106, ic, 'Dört mektup hitap ifadesi yazım kartı.', 21)
-
-
-def dort_deyim_cumle_karti():
-    kartlar = [
-        ('1. Kart', 'Gözü yollarda', 'kalmak', MAVI, MAVI_A),
-        ('2. Kart', 'Gözünü', 'kırpmamak', YES, YES_A),
-        ('3. Kart', 'Tek yürek', 'olmak', TUR, TUR_A),
-        ('4. Kart', 'Kulak', 'kabartmak', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += f'<rect x="{x}" y="6" width="82" height="86" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 41, 24, bas, renk, kalin=True)
-        ic += yazi(x + 41, 50, s1, LAC)
-        ic += yazi(x + 41, 74, s2, LAC, kalin=True)
-    return svg(360, 98, ic, 'Dört deyim kartı: gözü yollarda kalmak, gözünü kırpmamak, tek yürek olmak, kulak kabartmak.', 21)
-
-
-def huseyin_mektup_karti():
-    ic = f'<rect x="6" y="6" width="348" height="88" rx="10" fill="{TUR_A}" stroke="{ALTIN}" stroke-width="1.5"/>'
-    ic += yazi(180, 25, 'Er Hüseyin’den Emine Ana’ya Mektup', TUR, kalin=True)
-    ic += yazi(180, 52, '“Canım Anacığım, ellerinden hasretle öperim.', LAC)
-    ic += yazi(180, 76, 'Vatan toprağını canımız pahasına koruyoruz.”', LAC, kalin=True)
-    return svg(360, 100, ic, 'Er Hüseyin’in annesi Emine Ana’ya yazdığı mektup parçası.', 21)
-
-
-def mektup_sira_adimlari():
-    adimlar = [
-        ('Sağ Üst', 'Tarih ve Yer', MAVI, MAVI_A),
-        ('Sol Üst', 'Hitap Sözü', TUR, TUR_A),
-        ('Orta Bölüm', 'Gövde Metni', YES, YES_A),
-        ('Sağ Alt', 'Ad ve İmza', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (ust, alt, renk, arka) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += f'<rect x="{x}" y="6" width="82" height="84" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 41, 30, ust, renk, kalin=True)
-        ic += yazi(x + 41, 64, alt, LAC)
-    return svg(360, 96, ic, 'Mektup bölümlerinin yukarıdan aşağıya doğru sıralama kartları.', 21)
-
-
-def deyim_ozellik_panosu():
-    kutular = [
-        ('Kalıplaşmış Söz', 'Kelimeleri asla', 'değiştirilemez', MAVI, MAVI_A),
-        ('Mecaz Anlam', 'Gerçek anlamdan', 'farklı kullanılır', TUR, TUR_A),
-        ('Etkili Anlatım', 'Duyguyu kısa ve', 'güçlü anlatır', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, s1, s2, renk, arka) in enumerate(kutular):
-        x = 6 + i * 118
-        ic += f'<rect x="{x}" y="6" width="112" height="88" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 56, 25, bas, renk, kalin=True)
-        ic += yazi(x + 56, 52, s1, LAC)
-        ic += yazi(x + 56, 76, s2, LAC)
-    return svg(360, 100, ic, 'Deyimlerin kalıplaşmış olma, mecaz anlam ve etkili anlatım özellikleri.', 21)
-
-
-def deyim_yanlis_kullanim_karti():
-    kartlar = [
-        ('I. Kart', 'Kulağı yollarda kaldı', KIR, '#fdeaea'),
-        ('II. Kart', 'Gözünü kırpmadan', YES, YES_A),
-        ('III. Kart', 'İçi rahatladı', MAVI, MAVI_A),
-        ('IV. Kart', 'Tek yürek oldu', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, met, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 50
-        ic += f'<rect x="{x}" y="{y}" width="172" height="44" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 86, y + 19, bas, renk, kalin=True)
-        ic += yazi(x + 86, y + 37, met, LAC)
-    return svg(360, 106, ic, 'Deyimlerin doğru ve yanlış kullanımlarını gösteren dört kart.', 21)
-
-
-def cephe_mektup_onem_karti():
-    ic = f'<rect x="6" y="6" width="170" height="88" rx="9" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.4"/>'
-    ic += yazi(91, 25, 'Edebî Değeri', MAVI, kalin=True)
-    ic += yazi(91, 52, 'İçten duygular, hasret', LAC)
-    ic += yazi(91, 74, 've duru Türkçe anlatımı', LAC)
-
-    ic += f'<rect x="184" y="6" width="170" height="88" rx="9" fill="{YES_A}" stroke="{YES}" stroke-width="1.4"/>'
-    ic += yazi(269, 25, 'Tarihî Belge Değeri', YESIL_K, kalin=True)
-    ic += yazi(269, 52, 'Cephedeki mücadeleye', LAC)
-    ic += yazi(269, 74, 'ilk elden tanıklık etmesi', LAC)
-    return svg(360, 100, ic, 'Cephe mektuplarının edebî ve tarihî belge değerini gösteren kartlar.', 21)
-
-
-def ataturk_milli_birlik_karti():
-    ic = f'<rect x="6" y="6" width="348" height="88" rx="10" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.5"/>'
-    ic += yazi(180, 25, 'Millî Mücadele ve Tek Yürek Millet', MAVI, kalin=True)
-    ic += yazi(180, 52, 'Atatürk’ün liderliğinde cephedeki Mehmetçik', LAC)
-    ic += yazi(180, 76, 've fedakâr analar vatan sevgisiyle zafere ulaştı.', LAC, kalin=True)
-    return svg(360, 100, ic, 'Atatürk’ün liderliğinde millî birlik ve vatan sevgisi metin kartı.', 21)
+GORSELLER = {1: '<svg viewBox="0 0 350 82" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mektup sayfa düzeninde K, '
+    'L, M ve N bölümleri şeması."><rect x="4" y="3" width="167" height="36" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="25.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">K (Sağ Üst Köşe)</text><rect x="179" y="3" width="167" height="36" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="25.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">L (Sol Üst Satır)</text><rect x="4" y="43" width="167" height="36" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="65.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">M (Orta Paragraflar)</text><rect x="179" y="43" width="167" height="36" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="65.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">N (Sağ Alt Köşe)</text></svg>',
+ 4: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört mektup hitap '
+    'ifadesi yazım kartı."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Kart sevgili</text><text x="87.5" y="49.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">anneciğim.</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2. Kart</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kıymetli</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">öğretmenim;</text><rect x="4" y="71" width="167" height="45" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Kart</text><text x="87.5" y="107.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Canım Anneciğim,</text><rect x="179" y="71" '
+    'width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="98.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Kart aziz Dostum!</text></svg>',
+ 5: '<svg viewBox="0 0 350 212" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İçinde deyim geçen dört '
+    'örnek cümle kartı."><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Cümle Kartı</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Postacıyı bekleyen</text><text x="87.5" y="58.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Emine Ana’nın</text><text x="87.5" y="76.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">günlerdir gözü</text><text x="87.5" y="95.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yollarda '
+    'kaldı.</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" '
+    'y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Cümle '
+    'Kartı</text><text x="262.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Mehmetçik cephede</text><text x="262.5" y="58.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">vatan için bütün</text><text x="262.5" y="76.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">gece gözünü</text><text x="262.5" y="95.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kırpmadı.</text><rect '
+    'x="4" y="108" width="167" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="126.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Cümle '
+    'Kartı</text><text x="87.5" y="144.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Milletimiz zor</text><text x="87.5" y="163.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">günlerde cephedeki</text><text x="87.5" y="181.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ordumuzla tek yürek</text><text x="87.5" '
+    'y="200.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">oldu.</text><rect x="179" y="108" width="167" height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="135.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Cümle Kartı</text><text x="262.5" y="154.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çocuklar dedelerinin</text><text x="262.5" y="172.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">anlattığı '
+    'hatıralara</text><text x="262.5" y="190.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">kulak kabarttı.</text></svg>',
+ 6: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Er Hüseyin’in annesi '
+    'Emine Ana’ya yazdığı mektup parçası."><rect x="4" y="3" width="342" height="80" rx="5" fill="#fff1df" stroke="#c9a227" '
+    'stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Er Hüseyin’den Emine Ana’ya Mektup</text><text x="11.0" y="38.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">“Canım Anacığım, ellerinden hasretle '
+    'öperim.</text><text x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Vatan toprağını canımız pahasına</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">koruyoruz.”</text></svg>',
+ 7: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mektup bölümlerinin '
+    'yukarıdan aşağıya doğru sıralama kartları."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Orta Bölüm</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Gövde Metni</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Sağ Üst</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tarih ve Yer</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Sağ Alt</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ad ve İmza</text><rect '
+    'x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Sol Üst</text><text '
+    'x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hitap '
+    'Sözü</text></svg>',
+ 8: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deyimlerin kalıplaşmış '
+    'olma, mecaz anlam ve etkili anlatım özellikleri."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Kalıplaşmış Söz</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kelimeleri asla değiştirilemez</text><rect x="4" y="49" width="342" '
+    'height="43" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Mecaz Anlam</text><text x="11.0" y="84.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Gerçek anlamdan farklı kullanılır</text><rect '
+    'x="4" y="95" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="112.3" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Etkili Anlatım: Duyguyu '
+    'kısa ve güçlü anlatır</text></svg>',
+ 9: '<svg viewBox="0 0 350 212" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deyim kullanımı dört '
+    'cümle kartı."><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">I. '
+    'Kart</text><text x="87.5" y="49.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Postacıyı beklerken</text><text x="87.5" y="67.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">hepimizin kulağı</text><text x="87.5" y="85.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yollarda kaldı.</text><rect x="179" y="3" '
+    'width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">II. Kart</text><text x="262.5" y="39.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mehmetçik '
+    'vatan</text><text x="262.5" y="58.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">savunmasında</text><text x="262.5" y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">gözünü kırpmadan</text><text x="262.5" y="95.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">nöbet tuttu.</text><rect x="4" y="108" '
+    'width="167" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="126.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">III. Kart</text><text x="87.5" y="144.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Cepheden '
+    'güzel</text><text x="87.5" y="163.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">haber gelince</text><text x="87.5" y="181.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Emine Ana’nın içi</text><text x="87.5" y="200.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">rahatladı.</text><rect x="179" y="108" '
+    'width="167" height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="135.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">IV. Kart</text><text x="262.5" y="154.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Milletimiz '
+    'Millî</text><text x="262.5" y="172.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Mücadele yıllarında</text><text x="262.5" y="190.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">tek yürek oldu.</text></svg>',
+ 11: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cepheden Mektuplar '
+     'bilgi kartı."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+     'y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Özellik · '
+     'Anlatım Dili</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#0b2257">Askerlerin ailelerine yazdığı satırlarda</text><text x="11.0" y="57.2" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">memleket özlemi yer alır.</text><rect x="4" '
+     'y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="85.4" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Özellik · Yazıldığı '
+     'Dönem</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">Mektuplar savaş yıllarında bizzat yaşanan</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">günlerin tarihini taşır.</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = mektup_bolum_semasi()
-    s[4]['gorsel'] = hitap_yazim_kartlari()
-    s[5]['gorsel'] = dort_deyim_cumle_karti()
-    s[6]['gorsel'] = huseyin_mektup_karti()
-    s[7]['gorsel'] = mektup_sira_adimlari()
-    s[8]['gorsel'] = deyim_ozellik_panosu()
-    s[9]['gorsel'] = deyim_yanlis_kullanim_karti()
-    s[11]['gorsel'] = cephe_mektup_onem_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

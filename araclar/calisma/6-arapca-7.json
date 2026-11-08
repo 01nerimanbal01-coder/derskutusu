@@ -30,10 +30,6 @@
         [
           "{ar:اَلْمُهَنْدِسُ}",
           "Mühendis"
-        ],
-        [
-          "{ar:اَلْأُمُّ}",
-          "Anne"
         ]
       ]
     },
@@ -47,7 +43,8 @@
         "3. karttaki {ar:الْفَلَّاحُ} (Çiftçi) kelimesinde",
         "4. karttaki {ar:النَّجَّارُ} (Marangoz) kelimesinde"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -69,10 +66,6 @@
         {
           "metin": "«{ar:مَا مِهْنَةُ أَبِيكَ؟}» sorusu ‘Senin babanın mesleği nedir?’ anlamına gelir.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:هٰذِهِ عَمَّتِي، هُوَ مُعَلِّمٌ}» cümlesinde zamir ve meslek uyumu kurallara uygundur.",
-          "dogru": false
         }
       ]
     },
@@ -93,10 +86,6 @@
         {
           "metin": "«{ar:خَالِي طَبِيبٌ فِي} ___» cümlesinde boşluğa ‘hastane’ kelimesi gelir.",
           "cevap": "{ar:الْمُسْتَشْفَى}"
-        },
-        {
-          "metin": "Ahşap eşyalar yapan meslek sahibi ___ (marangoz) kelimesiyle anlatılır.",
-          "cevap": "{ar:النَّجَّارُ}"
         }
       ],
       "fazla": [
@@ -113,7 +102,8 @@
         "3. kartta {ar:هٰذِهِ عَمَّتِي، هِيَ مُعَلِّمَةٌ} (Bu halamdır, o öğretmendir)",
         "4. kartta {ar:هٰذِهِ جَدَّتِي، هُوَ نَجَّارٌ} (Bu ninemdir, o marangozdur)"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
@@ -128,7 +118,9 @@
         [
           "1. Amcam",
           "{ar:عَمِّي}",
-          "Baba tarafı"
+          {
+            "b": "Baba tarafı"
+          }
         ],
         [
           "2. Halam",
@@ -157,14 +149,16 @@
             "b": "Anne tarafı"
           }
         ]
-      ]
+      ],
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
       "soru": "Görseldeki «{ar:هٰذَا خَالِي، هُوَ طَبِيبٌ}» (Bu dayımdır, o bir doktordur) cümlesini «{ar:خَالَتِي}» (teyzem) için dişil (müennes) biçime dönüştürerek yazınız.",
       "cevap": "{ar:هٰذِهِ خَالَتِي، هِيَ طَبِيبَةٌ}.",
-      "satir": 2
+      "satir": 2,
+      "gorsel_var": true
     },
     {
       "tur": "siralama",
@@ -175,7 +169,8 @@
         "{ar:هٰذَا خَالِي} (Bu benim dayımdır)",
         "{ar:مَا مِهْنَةُ خَالِكَ؟} (Dayının mesleği nedir?)",
         "{ar:خَالِي طَبِيبٌ فِي الْمُسْتَشْفَى} (Dayım hastanede doktordur)"
-      ]
+      ],
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -187,7 +182,8 @@
         "{ar:اَلْفَلَّاحُ} (Çiftçi) — {ar:اَلْمُعَلِّمُ} (Öğretmen)",
         "{ar:اَلشُّرْطِيُّ} (Polis) — {ar:اَلْمُهَنْدِسُ} (Mühendis)"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -199,7 +195,8 @@
         "Dedem bir tüccardır; o, çarşıda çalışıyor",
         "Babam bir öğretmendir; o, okulda çalışıyor"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "sifre",
@@ -244,7 +241,8 @@
       "duzey": "ust",
       "soru": "Görseldeki {ar:مُعَلِّمٌ → اَلْمُعَلِّمُ} ve {ar:طَبِيبٌ → اَلطَّبِيبُ} dönüşümlerinde hem kelimenin sonunda hem de {ar:الـ} takısının okunuşunda meydana gelen değişiklikleri açıklayınız.",
       "cevap": "Sondaki tenvin düşer; ilk kelimede lâm cezimli okunur, ikincide şeddeli okunur.",
-      "satir": 2
+      "satir": 2,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -256,7 +254,8 @@
         "1. boşluğa {ar:مَنْ} — 2. boşluğa {ar:أَيْنَ}",
         "1. boşluğa {ar:هَلْ} — 2. boşluğa {ar:مَا}"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     }
   ],
   "yayin_tarihi": "2026-10-31"

@@ -11,8 +11,7 @@
   ],
   "hatirla": [
     "Tabak gövdeli üç kardeşten {ar:ب} (Be) altta 1 nokta, {ar:ت} (Te) üstte 2 nokta, {ar:ث} (peltek Se) üstte 3 nokta taşır; {ar:ج - ح - خ} grubunda ise {ar:ج} karnında 1 noktalı, {ar:ح} noktasız, {ar:خ} üstte 1 noktalıdır.",
-    "İlk 11 harf içindeki {ar:أ، د، ذ، ر، ز} harfleri kendinden sonra gelen harfle birleşmez ({ar:أَسَدٌ، دَفْتَرٌ، ذَهَبٌ، زَهْرَةٌ}).",
-    "Yakındaki eril kişi ve varlıkları tanıtırken {ar:هٰذَا} (Bu) ve {ar:هُوَ} (O), dişil kişi ve sonunda yuvarlak te ({ar:ة}) bulunan varlıkları tanıtırken {ar:هٰذِهِ} (Bu) ve {ar:هِيَ} (O) kullanılır."
+    "İlk 11 harf içindeki {ar:أ، د، ذ، ر، ز} harfleri kendinden sonra gelen harfle birleşmez ({ar:أَسَدٌ، دَفْتَرٌ، ذَهَبٌ، زَهْرَةٌ})."
   ],
   "sorular": [
     {
@@ -31,10 +30,6 @@
         [
           "{ar:حَقِيبَةٌ}",
           "Çanta"
-        ],
-        [
-          "{ar:خُبْزٌ}",
-          "Ekmek"
         ]
       ]
     },
@@ -70,10 +65,6 @@
         {
           "metin": "İlk 11 harf arasında yer alan {ar:أ، د، ذ، ر، ز} harfleri kelime içinde kendinden sonraki harfe bitişmez.",
           "dogru": true
-        },
-        {
-          "metin": "{ar:خُبْزٌ} (hubzün) kelimesi Türkçede ‘horoz’ anlamına gelir.",
-          "dogru": false
         }
       ]
     },
@@ -94,10 +85,6 @@
         {
           "metin": "{ar:د} (Dal) harfiyle başlayan ve öğrencilerin yazı yazmak için kullandığı ‘defter’ kelimesinin Arapçası ___ kelimesidir.",
           "cevap": "{ar:دَفْتَرٌ}"
-        },
-        {
-          "metin": "{ar:أ} (Elif) harfiyle başlayan ve aile bireylerinden ‘baba’ anlamına gelen kelime ___ kelimesidir.",
-          "cevap": "{ar:أَبٌ}"
         }
       ],
       "fazla": [
@@ -129,7 +116,9 @@
         [
           "1. {ar:تُفَّاحٌ}",
           "{ar:ت} (Te)",
-          "Elma"
+          {
+            "b": "Elma"
+          }
         ],
         [
           "2. {ar:ثَوْبٌ}",
@@ -163,7 +152,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki iki nesne kartını inceleyerek {ar:دَفْتَرٌ} kelimesinde {ar:هٰذَا}, {ar:حَقِيبَةٌ} kelimesinde ise {ar:هٰذِهِ} işaret isminin seçilme nedenini açıklayınız.",
+      "soru": "{ar:دَفْتَرٌ} kelimesinde {ar:هٰذَا}, {ar:حَقِيبَةٌ} kelimesinde ise {ar:هٰذِهِ} işaret isminin seçilme nedenini açıklayınız.",
       "cevap": "{ar:دَفْتَرٌ} eril ({ar:هٰذَا}), {ar:حَقِيبَةٌ} dişildir ({ar:هٰذِهِ}).",
       "satir": 2
     },

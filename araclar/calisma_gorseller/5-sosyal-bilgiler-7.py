@@ -1,180 +1,129 @@
-"""5. sınıf Sosyal Bilgiler 7. hafta (Yaşadığımız İlin Göreceli Konumu: Yeryüzü Şekilleri, İklim, Ulaşım ve Nüfus Özellikleri) çalışma kâğıdı görselleri (SVG; insan figürü yok K024/K048; görsel içi yazı 10-12.5 pt K150 EK)."""
+"""5-sosyal-bilgiler-7 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, GRI, GRI_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#9aa6bd', '#eef1f6'
-ALTIN, KAHVE, YESIL_K = '#c9a227', '#8a5a2b', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-YAZI_I = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=None):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=11.5, renk=LAC, hiza='middle', ek='', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {YAZI_I if ince else YAZI} fill="{renk}"{ek}>{metin}</text>'
-
-
-def ankara_pusula_komsular_svg():
-    ic = f'<rect x="6" y="6" width="588" height="114" rx="10" fill="#fbfcff" stroke="{GRI}" stroke-width="1.5"/>'
-    cx, cy = 300, 63
-    ic += f'<line x1="168" y1="{cy}" x2="432" y2="{cy}" stroke="{MAVI}" stroke-width="2"/>'
-    ic += f'<line x1="{cx}" y1="26" x2="{cx}" y2="100" stroke="{MAVI}" stroke-width="2"/>'
-    ic += f'<rect x="242" y="47" width="116" height="32" rx="8" fill="{MAVI}" stroke="{LAC}" stroke-width="1.5"/>'
-    ic += yazi(cx, 67, 'ANKARA', 11.5, '#fff')
-    # Kuzey, Güney, Batı, Doğu kutuları
-    yonler = [
-        (230, 10, 140, 24, 'Kuzey: Çankırı', YES, YES_A),
-        (230, 92, 140, 24, 'Güney: Konya', TUR, TUR_A),
-        (24, 51, 152, 24, 'Batı: Eskişehir', MOR, MOR_A),
-        (424, 51, 152, 24, 'Doğu: Kırıkkale', KIR, '#fdeaea'),
-    ]
-    for x, y, w, h, met, renk, arka in yonler:
-        ic += f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="6" fill="{arka}" stroke="{renk}" stroke-width="1.5"/>'
-        ic += yazi(x + w / 2, y + 16, met, 10.6, LAC)
-    return svg(600, 126, ic, 'Ankara ilinin dört ana yöndeki komşuları: Kuzeyde Çankırı, Güneyde Konya, Batıda Eskişehir, Doğuda Kırıkkale.', 19)
-
-
-def fiziki_harita_basamak_kartlari_svg():
-    kartlar = [
-        ('1. İl: Bursa', 'Renk: Yeşil Tonu', 'Yükselti: 0 – 500 m', YES, YES_A),
-        ('2. İl: Konya', 'Renk: Sarı - Turuncu', 'Yükselti: 500 – 1500 m', TUR, TUR_A),
-        ('3. İl: Erzurum', 'Renk: Kahverengi', 'Yükselti: 1500 m üzeri', KAHVE, '#f5ebe1'),
-        ('4. İl: Adana', 'Renk: Yeşil Tonu', 'Yükselti: 0 – 500 m', YESIL_K, YES_A),
-    ]
-    ic = ''
-    for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
-        x = 8 + i * 148
-        ic += f'<rect x="{x}" y="8" width="136" height="88" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 68, 26, bas, 11.2, renk)
-        ic += f'<line x1="{x + 14}" y1="34" x2="{x + 122}" y2="34" stroke="{renk}" stroke-width="1"/>'
-        ic += yazi(x + 68, 54, s1, 10.6, LAC)
-        ic += yazi(x + 68, 74, s2, 10.4, LAC, ince=True)
-    return svg(600, 104, ic, 'Dört ilin fiziki harita renkleri ve yükselti basamakları: Bursa ve Adana yeşil, Konya sarı-turuncu, Erzurum kahverengi.', 18)
-
-
-def il_ekonomi_kartlari_svg():
-    kartlar = [
-        ('1. Kart: Adana', 'Çukurova deltası ve', 'Seyhan-Ceyhan nehirleri', YES, YES_A),
-        ('2. Kart: Kocaeli', 'Otoyol, demir yolu ve', 'işlek liman kavşağı', MAVI, MAVI_A),
-        ('3. Kart: Antalya', 'Uzun Akdeniz kıyısı', 've bol güneşli günler', TUR, TUR_A),
-        ('4. Kart: Kars', 'Yüksek platolar ve', 'gür yaz çayırları', KAHVE, '#f5ebe1'),
-    ]
-    ic = ''
-    for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
-        x = 8 + i * 148
-        ic += f'<rect x="{x}" y="8" width="136" height="88" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 68, 26, bas, 11.2, renk)
-        ic += f'<line x1="{x + 14}" y1="34" x2="{x + 122}" y2="34" stroke="{renk}" stroke-width="1"/>'
-        ic += yazi(x + 68, 54, s1, 10.4, LAC, ince=True)
-        ic += yazi(x + 68, 72, s2, 10.4, LAC, ince=True)
-    return svg(600, 104, ic, 'Adana, Kocaeli, Antalya ve Kars illerinin göreceli konum özelliklerini gösteren dört kart.', 18)
-
-
-def mugla_hakkari_nisan_karti_svg():
-    ic = f'<rect x="8" y="8" width="282" height="92" rx="10" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.6"/>'
-    ic += yazi(149, 26, 'Muğla (Aynı Nisan Günü — 26 °C)', 11.2, TUR)
-    ic += yazi(24, 50, 'Konum: Ege ve Akdeniz kıyısı (0–200 m)', 10.5, LAC, 'start', ince=True)
-    ic += yazi(24, 70, 'Hava: Güneşli ve ılık bahar havası', 10.5, LAC, 'start', ince=True)
-    ic += yazi(24, 88, 'Yaşam: Kısa kollu giysi ve deniz etkinliği', 10.5, TUR, 'start')
-
-    ic += f'<rect x="310" y="8" width="282" height="92" rx="10" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.6"/>'
-    ic += yazi(451, 26, 'Hakkâri (Aynı Nisan Günü — 2 °C)', 11.2, MAVI)
-    ic += yazi(326, 50, 'Konum: Denizden uzak, yüksek dağlık (1700 m+)', 10.5, LAC, 'start', ince=True)
-    ic += yazi(326, 70, 'Hava: Soğuk ve kar yağışlı', 10.5, LAC, 'start', ince=True)
-    ic += yazi(326, 88, 'Yaşam: Kalın kışlık giysi ve kar temizliği', 10.5, MAVI, 'start')
-    return svg(600, 108, ic, 'Aynı nisan gününde Muğla (26 derece, kıyı) ve Hakkâri (2 derece, yüksek dağlık) hava ve yaşam karşılaştırması.', 18)
-
-
-def nufus_etki_zinciri_svg():
-    adimlar = [
-        ('Elverişli Konum', 'Düz ova ve kıyı kavşağı', YES, YES_A),
-        ('Ulaşım ve Liman', 'Fabrika ve ticaret artışı', MAVI, MAVI_A),
-        ('İş Olanakları', 'Yeni istihdam alanları', TUR, TUR_A),
-        ('Yoğun Nüfus', 'Göç alma ve nüfus artışı', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (ust, alt, renk, arka) in enumerate(adimlar):
-        x = 8 + i * 148
-        ic += f'<rect x="{x}" y="8" width="136" height="80" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 68, 36, ust, 11, renk)
-        ic += yazi(x + 68, 62, alt, 10.4, LAC, ince=True)
-    return svg(600, 96, ic, 'Göreceli konumun sanayi, iş imkânları ve nüfus yoğunluğunu artırma zinciri.', 18)
-
-
-def k_ve_l_illeri_karsilastirma_svg():
-    ic = f'<rect x="8" y="8" width="282" height="92" rx="10" fill="{YES_A}" stroke="{YES}" stroke-width="1.6"/>'
-    ic += yazi(149, 26, 'K İli Göreceli Konum Özeti', 11.2, YESIL_K)
-    ic += yazi(24, 50, 'Yükselti: 120 m (Düz ve verimli kıyı ovası)', 10.5, LAC, 'start', ince=True)
-    ic += yazi(24, 70, 'İklim: Kışları ılık, yağışlı denizel iklim', 10.5, LAC, 'start', ince=True)
-    ic += yazi(24, 88, 'Ulaşım: İşlek liman, otoyol ve demir yolu', 10.5, YESIL_K, 'start')
-
-    ic += f'<rect x="310" y="8" width="282" height="92" rx="10" fill="#f5ebe1" stroke="{KAHVE}" stroke-width="1.6"/>'
-    ic += yazi(451, 26, 'L İli Göreceli Konum Özeti', 11.2, KAHVE)
-    ic += yazi(326, 50, 'Yükselti: 1950 m (Sarp ve engebeli dağlar)', 10.5, LAC, 'start', ince=True)
-    ic += yazi(326, 70, 'İklim: Uzun, çok soğuk ve karlı kış mevsimi', 10.5, LAC, 'start', ince=True)
-    ic += yazi(326, 88, 'Ulaşım: Dar dağ geçitleri, deniz bağlantısı yok', 10.5, KAHVE, 'start')
-    return svg(600, 108, ic, 'K ili (120 m kıyı ovası, limanlı) ile L ili (1950 m sarp dağlık, karasal) göreceli konum karşılaştırma kartları.', 18)
-
-
-def turizm_kartlari_svg():
-    kartlar = [
-        ('1. Kart: Bursa', 'Uludağ kayak pistleri', 've kar kalınlığı', MAVI, MAVI_A),
-        ('2. Kart: Nevşehir', 'Kapadokya peri bacaları', 've tarihî yer altı şehirleri', MOR, MOR_A),
-        ('3. Kart: Muğla', 'Güneşli koylar, sıcak', 'deniz ve kumsallar', TUR, TUR_A),
-        ('4. Kart: Çanakkale', 'Gelibolu Yarımadası', 'tarihî şehitlik ve anıtlar', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
-        x = 8 + i * 148
-        ic += f'<rect x="{x}" y="8" width="136" height="88" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 68, 26, bas, 11.2, renk)
-        ic += f'<line x1="{x + 14}" y1="34" x2="{x + 122}" y2="34" stroke="{renk}" stroke-width="1"/>'
-        ic += yazi(x + 68, 54, s1, 10.4, LAC, ince=True)
-        ic += yazi(x + 68, 72, s2, 10.4, LAC, ince=True)
-    return svg(600, 104, ic, 'Dört turizm tanıtım kartı: 1. Bursa Uludağ, 2. Nevşehir Kapadokya, 3. Muğla koylar, 4. Çanakkale şehitlik ve anıtlar.', 18)
-
-
-def bati_dogu_yukselis_kesiti_svg():
-    ic = f'<rect x="6" y="6" width="588" height="104" rx="10" fill="#fbfcff" stroke="{GRI}" stroke-width="1.5"/>'
-    ic += yazi(300, 24, 'Türkiye Batı — Doğu Yükselti ve Harita Rengi Kesiti', 11.2, LAC)
-    # Üç basamak: Batı (İzmir), İç (Ankara), Doğu (Erzurum)
-    ic += f'<rect x="28" y="68" width="166" height="30" rx="5" fill="{YES_A}" stroke="{YES}" stroke-width="1.6"/>'
-    ic += yazi(111, 82, 'Batı: İzmir (0–500 m)', 10.6, YESIL_K)
-    ic += yazi(111, 94, 'Fiziki Renk: Yeşil', 10, LAC, ince=True)
-
-    ic += f'<rect x="216" y="52" width="166" height="46" rx="5" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.6"/>'
-    ic += yazi(299, 70, 'İç: Ankara (500–1500 m)', 10.6, TUR)
-    ic += yazi(299, 88, 'Fiziki Renk: Sarı-Turuncu', 10, LAC, ince=True)
-
-    ic += f'<rect x="404" y="34" width="168" height="64" rx="5" fill="#f5ebe1" stroke="{KAHVE}" stroke-width="1.6"/>'
-    ic += yazi(488, 58, 'Doğu: Erzurum (1500 m+)', 10.6, KAHVE)
-    ic += yazi(488, 80, 'Fiziki Renk: Kahverengi', 10, LAC, ince=True)
-    return svg(600, 116, ic, 'Batıdan (İzmir, yeşil) doğuya (Erzurum, kahverengi) doğru yükseltinin artışını gösteren kesit şeması.', 18)
-
-
-def iki_harita_turu_karti_svg():
-    ic = f'<rect x="8" y="8" width="282" height="86" rx="10" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.6"/>'
-    ic += yazi(149, 26, 'Harita A: Türkiye Siyasi (İdari) Haritası', 11, MAVI)
-    ic += yazi(149, 50, '81 ilimizin idari sınırları, bölgeleri,', 10.6, LAC, ince=True)
-    ic += yazi(149, 70, 'komşu iller ve sınır kapıları gösterilir.', 10.6, LAC, ince=True)
-
-    ic += f'<rect x="310" y="8" width="282" height="86" rx="10" fill="{YES_A}" stroke="{YES}" stroke-width="1.6"/>'
-    ic += yazi(451, 26, 'Harita B: Türkiye Fiziki Haritası', 11, YESIL_K)
-    ic += yazi(451, 50, 'Dağlar, ovalar, platolar, akarsular ve', 10.6, LAC, ince=True)
-    ic += yazi(451, 70, 'renklerle yükselti basamakları gösterilir.', 10.6, LAC, ince=True)
-    return svg(600, 102, ic, 'Harita A (Türkiye Siyasi Haritası) ve Harita B (Türkiye Fiziki Haritası) karşılaştırma kartları.', 18)
+GORSELLER = {1: '<svg viewBox="0 0 350 115" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ankara ilimizin dört ana '
+    'yöndeki komşu illeri."><rect x="4" y="3" width="167" height="52" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="23.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Ankara’nın Kuzeyi (↑)</text><text x="87.5" y="41.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Komşu İl: Çankırı</text><rect x="179" y="3" width="167" height="52" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="23.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Ankara’nın Güneyi (↓)</text><text x="262.5" y="41.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Komşu İl: '
+    'Konya</text><rect x="4" y="60" width="167" height="52" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="80.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Ankara’nın '
+    'Batısı (←)</text><text x="87.5" y="98.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Komşu İl: Eskişehir</text><rect x="179" y="60" width="167" height="52" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="80.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">Ankara’nın Doğusu (→)</text><text x="262.5" y="98.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Komşu İl: Kırıkkale</text></svg>',
+ 4: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört ilin fiziki harita '
+    'renkleri ve yükselti basamakları: Bursa ve Adana yeşil, Konya sarı-turuncu, Erzurum kahverengi."><rect x="4" y="3" width="167" '
+    'height="82" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="30.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">1. İl: Bursa</text><text x="87.5" y="48.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Renk: Yeşil '
+    'Tonu</text><text x="87.5" y="67.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Yükselti: 0 – 500 m</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">2. İl: Konya</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Renk: Sarı - Turuncu</text><text x="262.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yükselti: 500 – 1500</text><text x="262.5" '
+    'y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">m</text><rect '
+    'x="4" y="89" width="167" height="82" rx="5" fill="#f5ebe1" stroke="#8a5a2b" stroke-width="0.75"/><text x="87.5" y="107.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#8a5a2b">3. İl: '
+    'Erzurum</text><text x="87.5" y="125.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Renk: Kahverengi</text><text x="87.5" y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Yükselti: 1500 m</text><text x="87.5" y="162.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">üzeri</text><rect x="179" y="89" width="167" '
+    'height="82" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="262.5" y="116.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">4. İl: Adana</text><text x="262.5" y="134.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Renk: Yeşil '
+    'Tonu</text><text x="262.5" y="153.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Yükselti: 0 – 500 m</text></svg>',
+ 5: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Adana, Kocaeli, Antalya '
+    've Kars illerinin göreceli konum özelliklerini gösteren dört kart."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">1. Kart: Adana</text><text x="87.5" y="39.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çukurova deltası ve</text><text x="87.5" '
+    'y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Seyhan-Ceyhan</text><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">nehirleri</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">2. Kart: Kocaeli</text><text x="262.5" y="39.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Otoyol, demir yolu</text><text x="262.5" '
+    'y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ve işlek '
+    'liman</text><text x="262.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">kavşağı</text><rect x="4" y="89" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="87.5" y="107.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">3. Kart: Antalya</text><text x="87.5" y="125.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Uzun Akdeniz kıyısı</text><text x="87.5" y="144.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ve bol güneşli '
+    'günler</text><rect x="179" y="89" width="167" height="64" rx="5" fill="#f5ebe1" stroke="#8a5a2b" stroke-width="0.75"/><text x="262.5" '
+    'y="107.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#8a5a2b">4. Kart: '
+    'Kars</text><text x="262.5" y="125.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Yüksek platolar ve</text><text x="262.5" y="144.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">gür yaz çayırları</text></svg>',
+ 7: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Göreceli konumun sanayi, '
+    'iş imkânları ve nüfus yoğunluğunu artırma zinciri."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">İş Olanakları</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Yeni istihdam</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">alanları</text><rect x="179" y="3" '
+    'width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Elverişli Konum</text><text x="262.5" '
+    'y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Düz ova ve '
+    'kıyı</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">kavşağı</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Yoğun Nüfus</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Göç alma ve</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kalabalıklaşma</text><rect x="179" y="71" width="167" '
+    'height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Ulaşım ve Liman</text><text x="262.5" '
+    'y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Fabrika ve '
+    'ticaret</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">artışı</text></svg>',
+ 8: '<svg viewBox="0 0 350 187" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="K ili (120 m kıyı ovası, '
+    'limanlı) ile L ili (1950 m sarp dağlık, karasal) göreceli konum karşılaştırma kartları."><rect x="4" y="3" width="342" height="80" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">K İli Göreceli Konum Özeti</text><text x="11.0" y="38.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yükselti: 120 m (Düz ve '
+    'verimli kıyı ovası)</text><text x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">İklim: Kışları ılık, yağışlı denizel iklim</text><text x="11.0" y="75.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Ulaşım: İşlek liman, otoyol ve demir '
+    'yolu</text><rect x="4" y="86" width="342" height="99" rx="5" fill="#f5ebe1" stroke="#8a5a2b" stroke-width="0.75"/><text x="11.0" '
+    'y="103.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#8a5a2b">L İli Göreceli '
+    'Konum Özeti</text><text x="11.0" y="121.9" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Yükselti: 1950 m (Sarp ve engebeli dağlar)</text><text x="11.0" y="140.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İklim: Uzun, çok soğuk ve karlı kış '
+    'mevsimi</text><text x="11.0" y="158.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#8a5a2b">Ulaşım: Dar dağ geçitleri, deniz bağlantısı</text><text x="11.0" y="177.1" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#8a5a2b">yok</text></svg>',
+ 9: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört turizm tanıtım '
+    'kartı: 1. Bursa Uludağ, 2. Nevşehir Kapadokya, 3. Muğla koylar, 4. Çanakkale şehitlik ve anıtlar."><rect x="4" y="3" width="167" '
+    'height="82" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="30.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Kart: Bursa</text><text x="87.5" y="48.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Uludağ kayak '
+    'pistleri</text><text x="87.5" y="67.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ve kar kalınlığı</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">2. Kart: Nevşehir</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kapadokya peri</text><text x="262.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bacaları ve tarihî yer</text><text x="262.5" '
+    'y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">altı '
+    'şehirleri</text><rect x="4" y="89" width="167" height="82" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" '
+    'y="116.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. Kart: '
+    'Muğla</text><text x="87.5" y="134.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Güneşli koylar, sıcak</text><text x="87.5" y="153.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">deniz ve kumsallar</text><rect x="179" y="89" width="167" height="82" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">4. Kart: Çanakkale</text><text x="262.5" y="125.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Gelibolu '
+    'Yarımadası</text><text x="262.5" y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">tarihî şehitlik ve</text><text x="262.5" y="162.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">anıtlar</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = ankara_pusula_komsular_svg()
-    s[4]['gorsel'] = fiziki_harita_basamak_kartlari_svg()
-    s[5]['gorsel'] = il_ekonomi_kartlari_svg()
-    s[6]['gorsel'] = mugla_hakkari_nisan_karti_svg()
-    s[7]['gorsel'] = nufus_etki_zinciri_svg()
-    s[8]['gorsel'] = k_ve_l_illeri_karsilastirma_svg()
-    s[9]['gorsel'] = turizm_kartlari_svg()
-    s[10]['gorsel'] = bati_dogu_yukselis_kesiti_svg()
-    s[12]['gorsel'] = iki_harita_turu_karti_svg()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

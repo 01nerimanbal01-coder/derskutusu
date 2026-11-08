@@ -15,9 +15,7 @@
   ],
   "hatirla": [
     "Olayları yaşayan kişi “ben/biz” diliyle anlatıyorsa kahraman (1. kişili); dışarıdan biri “o/onlar” diliyle anlatıyorsa gözlemci veya iç dünyayı da bilen hâkim (3. kişili) bakış açısı vardır.",
-    "Deyimler bir durumu etkileyici biçimde anlatan, çoğunlukla mecaz anlamlı kalıplaşmış söz öbekleridir (canını dişine takmak, kulak kabartmak).",
-    "İsim tamlamalarında iki isim de ek alırsa belirtili (atın yelesi), yalnız ikinci isim ek alırsa belirtisiz (cephe yolu), en az üç isim bağlanırsa zincirleme isim tamlaması (cephe yolunun tozu) oluşur.",
-    "Sıfatın ismin önüne gelerek onu nitelemesi veya belirtmesiyle sıfat tamlaması (cesur asker, bu vatan) kurulur; iki isim arasına sıfat girmesi tamlamayı zincirleme yapmaz."
+    "Deyimler bir durumu etkileyici biçimde anlatan, çoğunlukla mecaz anlamlı kalıplaşmış söz öbekleridir (canını dişine takmak, kulak kabartmak)."
   ],
   "sorular": [
     {
@@ -36,14 +34,6 @@
         [
           "Zincirleme isim tamlaması",
           "En az üç ismin eklerle iç içe bağlandığı söz öbeği"
-        ],
-        [
-          "Sıfat tamlaması",
-          "Sıfatın ismin önüne gelerek kurduğu söz öbeği"
-        ],
-        [
-          "Hâkim (ilahi) bakış açısı",
-          "Kahramanların iç dünyasını ve düşüncelerini bilen anlatım"
         ]
       ]
     },
@@ -57,7 +47,8 @@
         "3. kartta kulak kabartmak deyiminin yüksek sesle bağırmak anlamına geldiği bilgisi hatalıdır.",
         "4. kartta yüreği ağzına gelmek deyiminin çok korkmak ve heyecanlanmak anlamı doğrudur."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -79,10 +70,6 @@
         {
           "metin": "Gözlemci bakış açısında anlatıcı, kahramanların kimseye söylemediği gizli düşüncelerini ve geçmişini bilir.",
           "dogru": false
-        },
-        {
-          "metin": "Sıfat tamlamalarında tamlanan olan ismin iyelik eki alma zorunluluğu bulunmaz.",
-          "dogru": true
         }
       ]
     },
@@ -103,10 +90,6 @@
         {
           "metin": "İsmin önüne gelip onu niteleyen sözcük ___ tamlaması kurar.",
           "cevap": "sıfat"
-        },
-        {
-          "metin": "Olayı yaşayan kişinin ben diliyle anlatımı ___ açısıdır.",
-          "cevap": "kahraman"
         }
       ],
       "fazla": [
@@ -123,7 +106,8 @@
         "Sıfat tamlaması — Belirtisiz isim — Belirtili isim — Zincirleme isim",
         "Belirtisiz isim — Sıfat tamlaması — Belirtili isim — Zincirleme isim"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
@@ -136,7 +120,9 @@
       "satirlar": [
         [
           "Zaman",
-          "Kış sabahı şafak sökmeden önce"
+          {
+            "b": "Kış sabahı şafak sökmeden önce"
+          }
         ],
         [
           "Yer (Mekân)",
@@ -155,19 +141,14 @@
           {
             "b": "Cephane arabasının tepeye ulaştırılması"
           }
-        ],
-        [
-          "Bakış Açısı",
-          {
-            "b": "1. kişili (kahraman) bakış açısı"
-          }
         ]
-      ]
+      ],
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki karşılaştırma kartında “atın beyaz yelesi” ile “atın yelesinin rengi” ifadeleri verilmiştir. İkisi de üç sözcükten oluştuğu hâlde hangisi zincirleme isim tamlamasıdır? Nedenini yazınız.",
+      "soru": "“Atın beyaz yelesi” ile “atın yelesinin rengi” ifadelerinin ikisi de üç sözcükten oluştuğu hâlde hangisi zincirleme isim tamlamasıdır? Nedenini yazınız.",
       "cevap": "“Atın yelesinin rengi” üç isimden oluştuğu için zincirlemedir; diğerinde “beyaz” sıfattır.",
       "satir": 2
     },
@@ -180,7 +161,8 @@
         "Sarp yokuşta başlayan şiddetli tipi yüzünden kafiledeki cephane arabasının çamura saplanması",
         "Doru atın bütün gücüyle ileri atılarak cephane arabasını bataklıktan düzlüğe çıkarması",
         "Sandıkların cephedeki birliğe zamanında teslim edilmesi ve komutanın atı sevgiyle okşaması"
-      ]
+      ],
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -192,7 +174,8 @@
         "2. metinde anlatıcı yalnızca dışarıdan bir kamera gibi gördüklerini aktarmıştır.",
         "2. metinde olayları bizzat yaşayan kahraman kendi başından geçenleri ben diliyle anlatmıştır."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -204,13 +187,14 @@
         "Anlatımı güçlendirmek amacıyla konuşma ve yazılarda sıkça kullanılması",
         "Genellikle gerçek anlamından sıyrılarak mecaz bir anlam kazanmış olması"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki cümle kartında “Cesur süvari, cephe yolunun tozunu yutarak karargâha ulaştı.” cümlesi verilmiştir. Bu cümlede geçen sıfat tamlamasını ve zincirleme isim tamlamasını bularak yazınız.",
-      "cevap": "Sıfat tamlaması “cesur süvari”, zincirleme isim tamlaması ise “cephe yolunun tozu” söz öbeğidir.",
+      "soru": "“Cesur süvari, cephe yolunun tozunu yutarak karargâha ulaştı.” cümlesinde geçen sıfat tamlamasını ve zincirleme isim tamlamasını bularak yazınız.",
+      "cevap": "Sıfat tamlaması “cesur süvari”, zincirleme isim tamlaması ise “cephe yolunun tozu”dur.",
       "satir": 2
     },
     {
@@ -249,7 +233,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki “Cepheye Koşan At” tema kartında Millî Mücadele yıllarında cepheye koşan atların ve Anadolu insanının fedakârlığı özetlenmiştir. Bu metnin yazılma amacını ve okuyucuya kazandırdığı değerleri açıklayınız.",
+      "soru": "Millî Mücadele yıllarında cepheye mühimmat taşıyan atların ve Anadolu insanının fedakârlığını konu alan “Cepheye Koşan At” metninin yazılış amacını ve okuyucuya kazandırdığı değerleri açıklayınız.",
       "cevap": "Millî Mücadele ruhunu anlatarak okuyucuda vatanseverlik, azim ve vefa bilinci uyandırır.",
       "satir": 2
     },

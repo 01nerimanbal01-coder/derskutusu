@@ -1,181 +1,137 @@
-"""6. sınıf Matematik 7. hafta (Kesir - Bölme İlişkisi, Sonlu ve Devirli Ondalık Gösterimler ile Yuvarlama) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-12.5 pt (K150 EK); kesirler yalnız dikey (K155)."""
+"""6-matematik-7 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, GRI, GRI_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#9aa6bd', '#eef1f6'
-ALTIN, KAHVE, YESIL_K, KUM = '#c9a227', '#8a5a2b', '#0f6b45', '#fffdf5'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-YAZI_I = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=None):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=11.5, renk=LAC, hiza='middle', ek='', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {YAZI_I if ince else YAZI} fill="{renk}"{ek}>{metin}</text>'
-
-
-def kesir(x, y, pay, payda, boy=11.2, renk=LAC):
-    """Dikey kesir: pay üstte, çizgi, payda altta (K155)."""
-    w = max(len(pay), len(payda)) * boy * 0.65 + 6
-    return (yazi(x, y - 3, pay, boy, renk)
-            + f'<line x1="{x - w / 2:.1f}" y1="{y + 1:.1f}" x2="{x + w / 2:.1f}" y2="{y + 1:.1f}" stroke="{renk}" stroke-width="1.4"/>'
-            + yazi(x, y + boy + 2, payda, boy, renk))
-
-
-def kesir_kartlari():
-    kartlar = [
-        ('1. Kart', '7', '20', MAVI, MAVI_A),
-        ('2. Kart', '11', '8', YES, YES_A),
-        ('3. Kart', '8', '9', TUR, TUR_A),
-        ('4. Kart', '13', '25', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, pay, payda, renk, arka) in enumerate(kartlar):
-        x = 8 + i * 148
-        ic += f'<rect x="{x}" y="8" width="136" height="84" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 68, 25, bas, 11.2, renk)
-        ic += f'<line x1="{x + 16}" y1="32" x2="{x + 120}" y2="32" stroke="{renk}" stroke-width="1"/>'
-        ic += kesir(x + 68, 56, pay, payda, 11.8, LAC)
-    return svg(600, 100, ic, 'Dört kesir kartı: 1. Kart 7 bölü 20, 2. Kart 11 bölü 8, 3. Kart 8 bölü 9, 4. Kart 13 bölü 25.', 22)
-
-
-def zeytinyagi_paylasim():
-    ic = f'<rect x="8" y="8" width="268" height="86" rx="10" fill="{YES_A}" stroke="{YES}" stroke-width="1.6"/>'
-    ic += yazi(142, 26, 'Zeytinyağı Dolum Tankı', 11.4, YESIL_K)
-    ic += yazi(142, 48, 'Toplam miktar: 18 litre', 11.0, LAC)
-    ic += yazi(142, 68, 'Özdeş şişe sayısı: 8 adet', 10.6, LAC, ince=True)
-    ic += yazi(142, 84, '(Her şişeye eşit miktarda yağ doluyor)', 10.1, YESIL_K, ince=True)
-
-    ic += f'<line x1="282" y1="51" x2="306" y2="51" stroke="{LAC}" stroke-width="2"/>'
-
-    ic += f'<rect x="312" y="8" width="280" height="86" rx="10" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.6"/>'
-    ic += yazi(452, 26, 'Kesir ve Bölme İlişkisi', 11.4, TUR)
-    ic += yazi(378, 58, '1 Şişe =', 11.2, LAC)
-    ic += kesir(430, 54, '18', '8', 11.5, TUR)
-    ic += yazi(505, 58, '= 18 ÷ 8 = ? L', 11.2, LAC)
-    return svg(600, 102, ic, '18 litre zeytinyağının 8 özdeş şişeye eşit paylaştırılması ve 18 bölü 8 bölme işlemi.', 22)
-
-
-def olcum_panosu():
-    veriler = [
-        ('1. Ölçüm', '14,638 g', MAVI, MAVI_A),
-        ('2. Ölçüm', '27,384 g', YES, YES_A),
-        ('3. Ölçüm', '9,847 g', TUR, TUR_A),
-        ('4. Ölçüm', '35,492 g', MOR, MOR_A),
-    ]
-    ic = f'<rect x="6" y="6" width="588" height="92" rx="10" fill="#fbfcff" stroke="{GRI}" stroke-width="1.5"/>'
-    ic += yazi(300, 24, 'Hassas Terazi Ölçüm Kayıt Panosu', 11.4, LAC)
-    for i, (bas, deger, renk, arka) in enumerate(veriler):
-        x = 16 + i * 144
-        ic += f'<rect x="{x}" y="34" width="132" height="54" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.5"/>'
-        ic += yazi(x + 66, 52, bas, 10.6, renk)
-        ic += yazi(x + 66, 74, deger, 11.6, LAC)
-    return svg(600, 104, ic, 'Dört hassas terazi ölçüm kaydı: 14,638 g, 27,384 g, 9,847 g ve 35,492 g.', 22)
-
-
-def dijital_tarti_karti():
-    ic = f'<rect x="8" y="8" width="284" height="86" rx="10" fill="{KUM}" stroke="{ALTIN}" stroke-width="1.6"/>'
-    ic += yazi(150, 26, 'Dijital Tartı Ekranı (Gerçek Kütle)', 11.2, KAHVE)
-    ic += f'<rect x="50" y="36" width="200" height="44" rx="6" fill="#1e293b" stroke="{LAC}" stroke-width="1.4"/>'
-    ic += yazi(150, 64, '6,4a8 kg', 12.4, '#fde047')
-
-    ic += f'<rect x="308" y="8" width="284" height="86" rx="10" fill="{YES_A}" stroke="{YES}" stroke-width="1.6"/>'
-    ic += yazi(450, 26, 'Etiket Bilgisi (Yuvarlanmış)', 11.2, YESIL_K)
-    ic += yazi(450, 50, 'Onda birler basamağına', 10.5, LAC, ince=True)
-    ic += yazi(450, 68, 'yuvarlanmış kütle: 6,5 kg', 11.4, YESIL_K)
-    ic += yazi(450, 84, '(4 rakamı 1 artarak 5 olmuştur)', 10.1, LAC, ince=True)
-    return svg(600, 102, ic, 'Dijital tartıda 6,4a8 kg kavun ve onda birler basamağına yuvarlanmış 6,5 kg etiket bilgisi.', 22)
-
-
-def bolme_adimlari_sema():
-    adimlar = [
-        ('13 ÷ 6 İşlemi', '13 = 2 × 6 + 1', '(Tam kısım 2, kalan 1)', MAVI, MAVI_A),
-        ('Onda Birler', '10 ÷ 6 = 1 (kalan 4)', '(Virgül konur: 2,1...)', TUR, TUR_A),
-        ('Yüzde Birler', '40 ÷ 6 = 6 (kalan 4)', '(6 sürekli tekrar eder)', MOR, MOR_A),
-        ('Devir Gösterimi', '2,1666...', '(Yalnız 6 devreder)', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, s1, s2, renk, arka) in enumerate(adimlar):
-        x = 8 + i * 148
-        ic += f'<rect x="{x}" y="8" width="136" height="84" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 68, 26, bas, 10.9, renk)
-        ic += yazi(x + 68, 50, s1, 10.5, LAC)
-        ic += yazi(x + 68, 72, s2, 10.0, LAC, ince=True)
-        if i < 3:
-            ic += f'<line x1="{x + 137}" y1="50" x2="{x + 147}" y2="50" stroke="{LAC}" stroke-width="1.8"/>'
-    return svg(600, 100, ic, '13 bölü 6 kesrinin bölme yoluyla devirli ondalık gösterime dönüştürülme aşamaları.', 22)
-
-
-def devirli_karsilastirma_kartlari():
-    kartlar = [
-        ('K Sayısı (Yalnız 5 Devirli)', 'Açık yazılışı: 3,4555...', 'Binde birler basamağı: 5', MAVI, MAVI_A),
-        ('L Sayısı (45 Birlikte Devirli)', 'Açık yazılışı: 3,4545...', 'Binde birler basamağı: 4', TUR, TUR_A),
-        ('M Sayısı (Sonlu Ondalık)', 'Açık yazılışı: 3,4500...', 'Binde birler basamağı: 0', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
-        x = 8 + i * 196
-        ic += f'<rect x="{x}" y="8" width="188" height="84" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 94, 26, bas, 10.6, renk)
-        ic += f'<line x1="{x + 12}" y1="34" x2="{x + 176}" y2="34" stroke="{renk}" stroke-width="1"/>'
-        ic += yazi(x + 94, 54, s1, 10.6, LAC)
-        ic += yazi(x + 94, 74, s2, 10.2, LAC, ince=True)
-    return svg(600, 100, ic, 'K = 3,4555..., L = 3,4545... ve M = 3,4500... sayılarının basamak açılımları.', 22)
-
-
-def yuvarlama_sayi_dogrusu():
-    ic = f'<rect x="6" y="6" width="588" height="90" rx="10" fill="#fbfcff" stroke="{GRI}" stroke-width="1.5"/>'
-    ic += yazi(300, 24, 'Yüzde Birler Basamağına Yuvarlandığında 4,76 Olan Sayı Aralığı', 11.2, LAC)
-    ic += f'<line x1="50" y1="60" x2="550" y2="60" stroke="{LAC}" stroke-width="2.2"/>'
-    ic += f'<rect x="140" y="52" width="320" height="16" rx="4" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.5"/>'
-    noktalar = [
-        (60, '4,750', GRI),
-        (140, 'En küçük = ?', TUR),
-        (300, '4,76 (Hedef)', MAVI),
-        (460, 'En büyük = ?', TUR),
-        (540, '4,770', GRI),
-    ]
-    for x, et, renk in noktalar:
-        ic += f'<circle cx="{x}" cy="60" r="4.5" fill="{renk}"/>'
-        ic += yazi(x, 82 if x in (140, 460) else 44, et, 10.4, renk)
-    return svg(600, 102, ic, 'Sayı doğrusunda yüzde birlere yuvarlandığında 4,76 olan en küçük ve en büyük üç basamaklı ondalık gösterimler.', 22)
-
-
-def devirli_yuvarlama_karti():
-    ic = f'<rect x="8" y="8" width="584" height="84" rx="10" fill="{MOR_A}" stroke="{MOR}" stroke-width="1.6"/>'
-    ic += yazi(300, 27, 'Devirli Ondalık Gösterimi Yuvarlama Kartı', 11.4, MOR)
-    ic += yazi(300, 50, 'Verilen sayı: 5,3888... (Virgülden sonra 3 tekrar etmez, yalnız 8 devreder)', 10.6, LAC)
-    ic += yazi(300, 72, 'İpucu: Önce devreden 8 rakamını birkaç kez yan yana aç, sonra sağdaki ilk rakama bak!', 10.2, MOR, ince=True)
-    return svg(600, 100, ic, 'Yalnızca 8 rakamı devreden 5,3888... sayısının basamaklarını açarak yuvarlama bilgi kartı.', 22)
-
-
-def alisveris_fisi_karti():
-    ic = f'<rect x="8" y="6" width="584" height="92" rx="10" fill="{KUM}" stroke="{KAHVE}" stroke-width="1.6"/>'
-    ic += yazi(300, 24, 'KIRTASİYE ALIŞVERİŞ FİŞİ · Yuvarlama ile Tahmin', 11.3, KAHVE)
-    urunler = [
-        ('1. Defter', '18,75 TL', MAVI, MAVI_A),
-        ('2. Boya Seti', '32,40 TL', TUR, TUR_A),
-        ('3. Kalem Kutusu', '24,85 TL', YES, YES_A),
-    ]
-    for i, (ad, fiyat, renk, arka) in enumerate(urunler):
-        x = 18 + i * 190
-        ic += f'<rect x="{x}" y="34" width="180" height="54" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.5"/>'
-        ic += yazi(x + 90, 52, ad, 10.8, renk)
-        ic += yazi(x + 90, 74, f'Fiyat: {fiyat}', 11.0, LAC)
-    return svg(600, 104, ic, 'Alışveriş fişi: Defter 18,75 TL, Boya seti 32,40 TL, Kalem kutusu 24,85 TL.', 22)
+GORSELLER = {1: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört kesir kartı."><rect '
+    'x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Kart</text><text '
+    'x="87.5" y="38.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">7</text><line x1="76.8" y1="43.0" x2="98.2" y2="43.0" stroke="#0b2257" stroke-width="0.75"/><text x="87.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">20</text><rect x="179" '
+    'y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Kart</text><text '
+    'x="262.5" y="38.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">11</text><line x1="251.8" y1="43.0" x2="273.2" y2="43.0" stroke="#0b2257" stroke-width="0.75"/><text x="262.5" '
+    'y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">8</text><rect '
+    'x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Kart</text><text '
+    'x="87.5" y="106.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">8</text><line x1="79.0" y1="111.0" x2="96.0" y2="111.0" stroke="#0b2257" stroke-width="0.75"/><text x="87.5" y="126.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">9</text><rect x="179" '
+    'y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Kart</text><text '
+    'x="262.5" y="106.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">13</text><line x1="251.8" y1="111.0" x2="273.2" y2="111.0" stroke="#0b2257" stroke-width="0.75"/><text x="262.5" '
+    'y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">25</text></svg>',
+ 4: '<svg viewBox="0 0 350 107" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zeytinyağı dolum tesisi '
+    'kesir-bölme kartı."><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Zeytinyağı Dolum</text><text x="87.5" y="49.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Tankı</text><text x="87.5" y="67.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Toplam yağ: 18 litre ·</text><text x="87.5" y="85.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Özdeş şişe: 8 '
+    'adet</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" '
+    'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Kesir ve '
+    'Bölme</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">İlişkisi</text><text x="265.1" y="67.5" text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">1 şişe =</text><text x="279.3" y="56.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">18</text><line x1="268.6" y1="61.5" x2="289.9" y2="61.5" stroke="#0b2257" '
+    'stroke-width="0.75"/><text x="279.3" y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">8</text><text x="293.4" y="67.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">L =</text><text x="262.5" y="95.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">18\xa0÷\xa08 = ? L</text></svg>',
+ 5: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Laboratuvar hassas '
+    'terazi ölçüm kayıt panosu."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Ölçüm: 14,638 g</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Birler: 15 · Onda:</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">14,6 · Yüzde: ?</text><rect x="179" y="3" '
+    'width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Ölçüm: 27,384 g</text><text x="262.5" '
+    'y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Birler: ? · '
+    'Onda: ? ·</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Yüzde: ?</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Ölçüm: 9,847 g</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Birler: ? · Onda: ? ·</text><text x="87.5" y="126.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yüzde: ?</text><rect '
+    'x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Ölçüm: 35,492 '
+    'g</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Birler: ? · Onda: ? ·</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Yüzde: ?</text></svg>',
+ 7: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="13/6 kesrini devirli '
+    'ondalık gösterime dönüştürme adımları."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Adım K</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">40\xa0÷\xa06\xa0=\xa06 (kalan 4, 6</text><text x="87.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">tekrar eder)</text><rect '
+    'x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Adım L</text><text '
+    'x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">13\xa0'
+    '÷\xa06\xa0=\xa02 (tam kısım</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">2, kalan 1)</text><rect x="4" y="71" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Adım M</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">2,1666... (yalnız 6</text><text x="87.5" y="126.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">üstüne '
+    'çizgi)</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Adım '
+    'N</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">10\xa0÷\xa06\xa0=\xa01 (virgül</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">konur: 2,1...)</text></svg>',
+ 8: '<svg viewBox="0 0 350 169" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kesir ve devirli ondalık '
+    'sıralama kartları."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">K ve L '
+    'Noktaları (3 ile 4 Tam Sayıları Arası)</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">K = 3,4555... (yalnız 5 devirli) · L = 3,4545... (45</text><text x="11.0" '
+    'y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">devirli)</text><rect x="4" y="68" width="342" height="99" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">M Noktası (3 ile 4 Arası, 100 Eş Parçada 45.</text><text x="11.0" y="103.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Nokta)</text><text x="62.0" y="131.5" '
+    'text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">M = 3 +</text><text '
+    'x="80.2" y="120.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">45</text><line x1="65.5" y1="125.5" x2="94.9" y2="125.5" stroke="#0b2257" stroke-width="0.75"/><text x="80.2" '
+    'y="140.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">100</text><text x="98.4" y="131.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">= 3,45 (sonlu ondalık) · Sıralama:</text><text x="11.0" y="159.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">?</text></svg>',
+ 9: '<svg viewBox="0 0 350 150" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yüzde birler basamağına '
+    'yuvarlandığında 4,76 olan sayı aralığı kartı."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Kesir ve Ondalık Sıralama Kartı (4 ile 5 Arası)</text><text x="11.0" y="47.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">4,750 (4 +</text><text x="102.4" y="36.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">750</text><line '
+    'x1="82.8" y1="41.8" x2="122.1" y2="41.8" stroke="#0b2257" stroke-width="0.75"/><text x="102.4" y="57.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">1000</text><text x="124.1" y="47.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">) ile 4,770 (4 '
+    '+</text><text x="245.1" y="36.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">770</text><line x1="225.5" y1="41.8" x2="264.7" y2="41.8" stroke="#0b2257" stroke-width="0.75"/><text x="245.1" '
+    'y="57.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">1000</text><text x="268.7" y="47.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">) arası</text><text x="11.0" y="75.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">20 eş parça</text><rect x="4" y="86" width="342" height="62" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="103.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Yüzde Birler Basamağına Yuvarlama Hedefi:</text><text x="11.0" y="121.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">4,76</text><text x="11.0" '
+    'y="140.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">K (En küçük '
+    'sayı) = ? · M (En büyük sayı) = ?</text></svg>',
+ 10: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Devirli ondalık '
+     'gösterimi yuvarlama kartı."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">Devirli Ondalık Gösterim Kartı</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Verilen sayı: 5,3888... (yalnız 8 rakamı</text><text x="11.0" '
+     'y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">devreder)</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" '
+     'stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#12a150">İstenen Yuvarlamalar</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Onda birler basamağına: ? · Yüzde birler</text><text x="11.0" '
+     'y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">basamağına: '
+     '?</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = kesir_kartlari()
-    s[4]['gorsel'] = zeytinyagi_paylasim()
-    s[5]['gorsel'] = olcum_panosu()
-    s[6]['gorsel'] = dijital_tarti_karti()
-    s[7]['gorsel'] = bolme_adimlari_sema()
-    s[8]['gorsel'] = devirli_karsilastirma_kartlari()
-    s[9]['gorsel'] = yuvarlama_sayi_dogrusu()
-    s[10]['gorsel'] = devirli_yuvarlama_karti()
-    s[12]['gorsel'] = alisveris_fisi_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

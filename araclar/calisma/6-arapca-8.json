@@ -31,10 +31,6 @@
         [
           "{ar:رَبَّةُ الْبَيْت}",
           "Ev hanımı"
-        ],
-        [
-          "{ar:فَلّاحٌ نَشيطٌ}",
-          "Çalışkan çiftçi"
         ]
       ]
     },
@@ -70,10 +66,6 @@
         {
           "metin": "{ar:حَفيد} kelimesi erkek torun, {ar:حَفيدَة} kelimesi ise kız torun anlamında kullanılır.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:كَمْ عَمًّا لَكَ؟}» sorusu muhatabın amcasının nerede çalıştığını öğrenmek için sorulur.",
-          "dogru": false
         }
       ]
     },
@@ -94,10 +86,6 @@
         {
           "metin": "Kaç amcası olduğunu sormak için «___ {ar:عَمًّا لَكَ؟}» edatı kullanılır.",
           "cevap": "{ar:كَمْ}"
-        },
-        {
-          "metin": "Muzâri fiili olumsuz yapmak için başına «___» edatı getirilir.",
-          "cevap": "{ar:لا}"
         }
       ],
       "fazla": [
@@ -129,7 +117,9 @@
         [
           "1. {ar:وَلَدُ الْخالَةِ}",
           "{ar:الْخالَةِ}",
-          "Teyzenin oğlu"
+          {
+            "b": "Teyzenin oğlu"
+          }
         ],
         [
           "2. {ar:بِنْتُ الْعَمَّةِ}",
