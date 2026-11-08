@@ -15,8 +15,7 @@
   ],
   "hatirla": [
     "Bakkalda ({ar:فِي الْبَقَّالَةِ}) ürün isterken «{ar:أُرِيدُ} ...» (... istiyorum) veya «{ar:أَنَا بِحَاجَةٍ إِلَى} ...» (... ihtiyacım var) kalıbı kullanılır; «{ar:إِلَى}» harf-i cerinden sonra gelen isim esreli okunur.",
-    "Ürünün varlığı «{ar:هَلْ عِنْدَكَ} / {ar:هَلْ يُوجَدُ} ...{ar:؟}», tek ürün fiyatı «{ar:بِكَمْ هٰذَا / هٰذِهِ؟}», toplam tutar ise «{ar:بِكَمِ الْمَجْمُوعُ؟}» sorusuyla öğrenilir.",
-    "Cümleleri bağlarken «{ar:وَ}» (ve), «{ar:أَوْ}» (veya), «{ar:أَمْ}» (yoksa) ve «{ar:ثُمَّ}» (sonra) bağlaçları; miktar belirtirken «{ar:كِيلُو}», «{ar:نِصْفُ كِيلُو}», «{ar:عُلْبَة}», «{ar:زُجَاجَة}», «{ar:كِيس}», «{ar:طَبَق}» birimleri kullanılır."
+    "Ürünün varlığı «{ar:هَلْ عِنْدَكَ} / {ar:هَلْ يُوجَدُ} ...{ar:؟}», tek ürün fiyatı «{ar:بِكَمْ هٰذَا / هٰذِهِ؟}», toplam tutar ise «{ar:بِكَمِ الْمَجْمُوعُ؟}» sorusuyla öğrenilir."
   ],
   "sorular": [
     {
@@ -35,10 +34,6 @@
         [
           "{ar:كِيسُ سُكَّرٍ}",
           "Bir paket şeker"
-        ],
-        [
-          "{ar:طَبَقُ بَيْضٍ}",
-          "Yumurta kolisi"
         ]
       ]
     },
@@ -58,8 +53,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki cümle kartlarının türünü (Düz cümle / Soru cümlesi) ve iletişimdeki Türkçe anlamını yazarak tabloyu tamamlayınız.",
+      "soru": "Cümle kartlarının türünü (Düz cümle / Soru cümlesi) ve iletişimdeki Türkçe anlamını yazarak tabloyu tamamlayınız.",
       "basliklar": [
         "Cümle Kartı",
         "Cümle Türü",
@@ -69,7 +63,9 @@
         [
           "1. Kart ({ar:عِنْدِي عَسَلٌ طَازَجٌ})",
           "Düz cümle",
-          "Taze balım var."
+          {
+            "b": "Taze balım var."
+          }
         ],
         [
           "2. Kart ({ar:هَلْ عِنْدَكَ جُبْنٌ أَبْيَضُ؟})",
@@ -124,10 +120,6 @@
         {
           "metin": "Başında «{ar:أَ}» soru edatı bulunan seçim cümlelerinde «{ar:أَمْ}» (yoksa) bağlacı kullanılır.",
           "dogru": true
-        },
-        {
-          "metin": "Bakkal müşteriye «{ar:شُكْرًا}» dediğinde müşteri «{ar:بِكَمْ هٰذَا؟}» diyerek karşılık verir.",
-          "dogru": false
         }
       ]
     },
@@ -161,10 +153,6 @@
         {
           "metin": "Müşteri parayı satıcıya «___ {ar:النُّقُودَ}» (Buyur parayı) diye uzatır.",
           "cevap": "{ar:تَفَضَّلِ}"
-        },
-        {
-          "metin": "Yarım kilo peynir isterken «___ {ar:كِيلُو مِنَ الْجُبْنِ}» kalıbı seçilir.",
-          "cevap": "{ar:نِصْفُ}"
         }
       ],
       "fazla": [
@@ -174,15 +162,13 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "İki kartta da ekmek ({ar:خُبْز}) istendiği hâlde kelimenin son harekesinin farklı olma sebebini kısaca yazınız.",
+      "soru": "«{ar:أُرِيدُ خُبْزًا}» ve «{ar:أَحْتَاجُ إِلَى خُبْزٍ}» cümlelerinin her ikisinde de ekmek ({ar:خُبْز}) istendiği hâlde kelimenin son harekesinin farklı olma sebebini kısaca yazınız.",
       "cevap": "1’de nesne ({ar:خُبْزًا}) üstün, 2’de {ar:إِلَى} sonrası ({ar:خُبْزٍ}) esre alır.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Bakkal ile müşteri arasında geçen aşağıdaki diyalog cümlelerini konuşmanın doğal akışına göre 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "{ar:السَّلَامُ عَلَيْكُمْ، أُرِيدُ عُلْبَةَ حَلِيبٍ وَكِيسَ سُكَّرٍ لَوْ سَمَحْتَ.}",
@@ -258,7 +244,6 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
       "soru": "Alışveriş listesindeki sırayı izleyerek bakkaldan önce süt, sonra peynir isteyen ve toplam fiyatı soran Arapça ifadeyi yazınız.",
       "cevap": "{ar:أُرِيدُ حَلِيبًا ثُمَّ جُبْنًا، بِكَمِ الْمَجْمُوعُ؟}",
       "satir": 2

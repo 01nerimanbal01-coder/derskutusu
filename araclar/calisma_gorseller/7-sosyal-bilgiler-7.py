@@ -1,180 +1,92 @@
-"""7. sınıf Sosyal Bilgiler 7. hafta (Küreselleşmenin İnsan ve Toplum Hayatına Etkisi: kültür, ekonomi, küresel sorunlar ve çözüm önerileri) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10.5-13 punto (K150 EK); kesir yok (K155)."""
+"""7-sosyal-bilgiler-7 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-GRI, GRI_A, SOLUK, KAHVE, ALTIN, KUM = '#9aa6bd', '#eef1f6', '#5b6479', '#8a5a2b', '#f2c14e', '#fffdf5'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-DUZ = 'font-family="Noto Sans, sans-serif" font-weight="400"'
-
-
-def svg(w, h, ic, etiket, en_fazla=14):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=11.5, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {DUZ if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def duz(x, y, satirlar, boy=10.5, renk=LAC, hiza='start', ara=13):
-    return ''.join(f'<text x="{x:.1f}" y="{y + k * ara:.1f}" text-anchor="{hiza}" font-size="{boy}" {DUZ} fill="{renk}">{m}</text>'
-                   for k, m in enumerate(satirlar))
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4, ek=''):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"{ek}/>'
-
-
-def rozet(x, y, no, renk=LAC):
-    return f'<circle cx="{x}" cy="{y}" r="8.5" fill="{renk}"/>' + yazi(x, y + 4, str(no), 10.5, '#fff')
-
-
-def kuresellesme_boyutlari_svg():
-    """Soru 1: Küreselleşmenin dört temel boyutu (3. kart Ekonomi ve E-Ticaret soru işaretli)."""
-    ic = kutu(66, 4, 228, 22, LAC, LAC, 11, 1) + yazi(180, 19, 'Küreselleşmenin Dört Temel Boyutu', 11.5, '#fff')
-    kartlar = [
-        (1, 'Bilim ve İletişim', 'Buluş ve haberlere anında erişim', MAVI, MAVI_A),
-        (2, 'İnsani Dayanışma', 'Afetlerde sınır ötesi ortak yardım', YES, YES_A),
-        (3, 'Ekonomi ve E-Ticaret', '? (Örnek uygulama nedir?)', TUR, TUR_A),
-        (4, 'Kültürler Arası Tanışma', 'Sanat ve turizmle önyargıları aşma', MOR, MOR_A),
-    ]
-    for i, (no, bas, alt, c, z) in enumerate(kartlar):
-        x, y = 4 + (i % 2) * 180, 32 + (i // 2) * 42
-        ic += kutu(x, y, 172, 36, z, c, 7, 1.3) + rozet(x + 14, y + 14, no, c)
-        ic += yazi(x + 28, y + 17, bas, 10.5, c, 'start')
-        ic += yazi(x + 10, y + 31, alt, 10.5, LAC, 'start', True)
-    return svg(360, 114, ic, 'Küreselleşmenin dört boyutu: 1 Bilim ve İletişim, 2 İnsani Dayanışma, 3 Ekonomi ve E-Ticaret soru işaretli, 4 Kültürler Arası Tanışma.', 14)
-
-
-def etki_kartlari_svg():
-    """Soru 2: Tablo sorusu için dört günlük yaşam durumu kartı."""
-    kartlar = [
-        ('1. Durum', 'Tıbbi buluş paylaşımı', MAVI, MAVI_A),
-        ('2. Durum', 'Hazır gıda yayılması', KIR, KIR_A),
-        ('3. Durum', 'Afette uluslararası yardım', YES, YES_A),
-        ('4. Durum', 'İhtiyaç dışı alışveriş', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (no, m, c, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 64, z, c, 8, 1.4)
-        ic += yazi(x + 41, 22, no, 10.5, c)
-        parcalar = m.split(' ', 1)
-        ic += yazi(x + 41, 41, parcalar[0], 10.5, LAC)
-        ic += yazi(x + 41, 56, parcalar[1], 10.5, LAC, 'middle', True)
-    return svg(360, 76, ic, 'Dört günlük yaşam durumu kartı: 1 tıbbi buluş paylaşımı, 2 hazır gıda yayılması, 3 afette uluslararası yardım, 4 ihtiyaç dışı alışveriş.', 14)
-
-
-def populer_kultur_panosu_svg():
-    """Soru 4: Popüler kültürün toplum hayatındaki üç yansıması panosu."""
-    sutunlar = [
-        ('1. Dil ve İletişim', ['Yabancı kelimelerin', 'günlük konuşmaya', 'kontrolsüz girmesi'], MAVI, MAVI_A),
-        ('2. Beslenme ve Giyim', ['Her ülkede aynı hazır', 'yemek ve tek tip', 'markaların yayılması'], TUR, TUR_A),
-        ('3. Tüketim Alışkanlığı', ['Reklamlarla sürekli', 'yeni eşya alma ve', 'geçici moda akımları'], MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, sat, c, z) in enumerate(sutunlar):
-        x = 4 + i * 119
-        ic += kutu(x, 6, 114, 86, z, c, 8, 1.4)
-        ic += f'<rect x="{x}" y="6" width="114" height="22" rx="8" fill="{c}"/><rect x="{x}" y="18" width="114" height="10" fill="{c}"/>'
-        ic += yazi(x + 57, 21, bas, 10.5, '#fff')
-        ic += duz(x + 57, 44, sat, 10.5, LAC, 'middle', 14)
-    return svg(360, 98, ic, 'Popüler kültür panosu: 1 Dil ve iletişimde yabancı kelimeler, 2 Beslenme ve giyimde tek tip markalar, 3 Tüketim alışkanlığında geçici moda akımları.', 14)
-
-
-def cinar_agaci_ilkesi_svg():
-    """Soru 5: Kökleri millî değerlerde, dalları evrensel bilimde çınar ağacı şeması."""
-    ic = kutu(4, 4, 352, 86, KUM, GRI, 8, 1.3)
-    ic += kutu(12, 12, 152, 70, YES_A, YES, 8, 1.4)
-    ic += yazi(88, 28, 'Dallar: Evrensel Gelişim', 11, YES)
-    ic += duz(88, 46, ['Bilim ve teknoloji takibi', 'Uluslararası iş birliği'], 10.5, LAC, 'middle', 14)
-    ic += yazi(180, 50, '↔', 13, LAC)
-    ic += kutu(196, 12, 152, 70, TUR_A, TUR, 8, 1.4)
-    ic += yazi(272, 28, 'Kökler: Millî Kimlik', 11, TUR)
-    ic += duz(272, 46, ['Türkçenin doğru kullanımı', 'Gelenek ve yerli üretim'], 10.5, LAC, 'middle', 14)
-    return svg(360, 94, ic, 'Denge şeması: solda dallar evrensel gelişim bilim ve teknoloji takibi, sağda kökler millî kimlik Türkçenin doğru kullanımı ve yerli üretim.', 14)
-
-
-def dort_sorun_karti_svg():
-    """Soru 7: Dört sorun kartı (3 küresel sorun, 4. kart yerel mahalle parkı sorunu)."""
-    kartlar = [
-        ('1. Kart · İklim', 'Sera gazı ve küresel ısınma', KIR, KIR_A),
-        ('2. Kart · Sağlık', 'Sınır aşan salgın hastalıklar', MOR, MOR_A),
-        ('3. Kart · Kaynak', 'Kuraklık ve temiz su kıtlığı', TUR, TUR_A),
-        ('4. Kart · Yerel', 'Mahalle parkı taş onarımı', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, alt, c, z) in enumerate(kartlar):
-        x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 44
-        ic += kutu(x, y, 172, 38, z, c, 7, 1.3)
-        ic += yazi(x + 86, y + 16, bas, 10.5, c)
-        ic += yazi(x + 86, y + 31, alt, 10.5, LAC, 'middle', True)
-    return svg(360, 92, ic, 'Dört sorun kartı: 1 sera gazı ve küresel ısınma, 2 sınır aşan salgın hastalıklar, 3 kuraklık ve su kıtlığı, 4 mahalle parkı taş onarımı.', 14)
-
-
-def bilincli_tuketici_listesi_svg():
-    """Soru 9: Bilinçli tüketici kontrol listesi."""
-    ic = kutu(4, 4, 352, 86, YES_A, YES, 8, 1.4)
-    ic += f'<rect x="4" y="4" width="352" height="22" rx="8" fill="{YES}"/><rect x="4" y="16" width="352" height="10" fill="{YES}"/>'
-    ic += yazi(180, 19, 'BİLİNÇLİ TÜKETİCİ KONTROL LİSTESİ', 11, '#fff')
-    maddeler = [
-        '✓ Alışverişten önce ihtiyaç listesi hazırlamak ve israftan kaçınmak',
-        '✓ Yerli ve millî üretim damgalı ürünleri öncelikle tercih etmek',
-        '✓ Cam, kâğıt ve metal atıkları geri dönüşüm kutularına ayırmak',
-    ]
-    for i, m in enumerate(maddeler):
-        y = 32 + i * 18
-        ic += kutu(12, y, 336, 15, '#fff', YES, 4, 1)
-        ic += yazi(20, y + 11.5, m, 10.5, LAC, 'start', True)
-    return svg(360, 94, ic, 'Bilinçli tüketici kontrol listesi: ihtiyaç listesi hazırlamak, yerli ve millî ürünleri tercih etmek, atıkları geri dönüşüme ayırmak.', 14)
-
-
-def dijital_iletisim_kartlari_svg():
-    """Soru 10: Dijital araçların ölçülü kullanımı ile dijital bağımlılık karşılaştırması."""
-    ic = kutu(6, 6, 170, 74, KIR_A, KIR, 8, 1.4)
-    ic += yazi(91, 22, '1. Durum: Dijital Bağımlılık', 11, KIR)
-    ic += duz(91, 40, ['Saatlerce kesintisiz ekran,', 'aile içi sohbetin azalması'], 10.5, LAC, 'middle', 14)
-
-    ic += kutu(184, 6, 170, 74, YES_A, YES, 8, 1.4)
-    ic += yazi(269, 22, '2. Durum: Bilinçli Kullanım', 11, YES)
-    ic += duz(269, 40, ['Bilgi ve araştırma için ekran,', 'ortak aile saatinde sohbet'], 10.5, LAC, 'middle', 14)
-    return svg(360, 86, ic, 'Dijital iletişim karşılaştırma kartları: 1 dijital bağımlılık, 2 bilinçli kullanım ve ortak aile sohbeti.', 14)
-
-
-def bakir_atolyesi_vaka_svg():
-    """Soru 11: Geleneksel bakır işlemeciliği atölyesinin e-ticaretle dünyaya açılması şeması."""
-    ic = kutu(4, 4, 352, 78, KUM, GRI, 8, 1.3)
-    ic += kutu(12, 14, 148, 58, TUR_A, TUR, 7, 1.3)
-    ic += yazi(86, 32, 'Geleneksel El Sanatı', 11, TUR)
-    ic += yazi(86, 50, 'Anadolu bakır işlemeciliği', 10.5, LAC, 'middle', True)
-    ic += yazi(180, 46, '→', 13, MAVI)
-    ic += kutu(200, 14, 148, 58, MAVI_A, MAVI, 7, 1.3)
-    ic += yazi(274, 32, 'Küresel E-Ticaret Ağı', 11, MAVI)
-    ic += yazi(274, 50, 'Dünya ülkelerine ihracat', 10.5, LAC, 'middle', True)
-    return svg(360, 86, ic, 'Vaka şeması: geleneksel Anadolu bakır işlemeciliği ok küresel e-ticaret ağı ile dünya ülkelerine ihracat.', 14)
-
-
-def surdurulebilir_afis_svg():
-    """Soru 14: Sürdürülebilir yaşam ve sıfır atık afiş taslağı."""
-    ic = kutu(4, 4, 352, 76, CAM_A, CAM, 8, 1.4)
-    ic += yazi(180, 22, 'EVİMİZ DÜNYA · SÜRDÜRÜLEBİLİR YAŞAM ADIMLARI', 11, CAM)
-    adimlar = [('Su Tasarrufu', MAVI, MAVI_A), ('Enerji Verimliliği', TUR, TUR_A), ('Sıfır Atık ve Dönüşüm', YES, YES_A)]
-    for i, (ad, c, z) in enumerate(adimlar):
-        x = 12 + i * 114
-        ic += kutu(x, 30, 108, 40, z, c, 6, 1.3)
-        ic += yazi(x + 54, 54, ad, 10.5, c)
-    return svg(360, 84, ic, 'Sürdürülebilir yaşam afişi: Su tasarrufu, Enerji verimliliği, Sıfır atık ve dönüşüm.', 14)
+GORSELLER = {0: '<svg viewBox="0 0 350 214" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Küreselleşmenin dört '
+    'boyutu: 1 Bilim ve İletişim, 2 İnsani Dayanışma, 3 Ekonomi ve E-Ticaret soru işaretli, 4 Kültürler Arası Tanışma."><rect x="4" y="3" '
+    'width="342" height="25" rx="5" fill="#e8eefe" stroke="#0b2257" stroke-width="0.75"/><text x="11.0" y="20.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Küreselleşmenin Dört Temel Boyutu</text><rect '
+    'x="4" y="31" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="48.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Bilim ve '
+    'İletişim</text><text x="11.0" y="66.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Buluş ve haberlere anında erişim</text><rect x="4" y="77" width="342" height="43" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="94.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">İnsani Dayanışma</text><text x="11.0" y="112.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Afetlerde sınır ötesi ortak '
+    'yardım</text><rect x="4" y="123" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="140.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Ekonomi ve '
+    'E-Ticaret</text><text x="11.0" y="158.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">? (Örnek uygulama nedir?)</text><rect x="4" y="169" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="186.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Kültürler Arası Tanışma</text><text x="11.0" y="204.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sanat ve turizmle önyargıları aşma</text></svg>',
+ 3: '<svg viewBox="0 0 350 197" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Popüler kültür panosu: 1 '
+    'Dil ve iletişimde yabancı kelimeler, 2 Beslenme ve giyimde tek tip markalar, 3 Tüketim alışkanlığında geçici moda akımları."><rect '
+    'x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">1. Dil ve '
+    'İletişim</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Yabancı kelimelerin günlük konuşmaya</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kontrolsüz girmesi</text><rect x="4" y="68" width="342" height="62" '
+    'rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">2. Beslenme ve Giyim</text><text x="11.0" y="103.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Her ülkede aynı hazır '
+    'yemek ve tek tip</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">markaların yayılması</text><rect x="4" y="133" width="342" height="62" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="150.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">3. Tüketim Alışkanlığı</text><text x="11.0" y="168.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Reklamlarla sürekli yeni eşya alma ve '
+    'geçici</text><text x="11.0" y="187.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">moda akımları</text></svg>',
+ 6: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört sorun kartı: 1 sera '
+    'gazı ve küresel ısınma, 2 sınır aşan salgın hastalıklar, 3 kuraklık ve su kıtlığı, 4 mahalle parkı taş onarımı."><rect x="4" y="3" '
+    'width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Kart · İklim</text><text x="87.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sera gazı ve '
+    'küresel</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ısınma</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2. Kart · Sağlık</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sınır aşan salgın</text><text x="262.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">hastalıklar</text><rect x="4" y="71" '
+    'width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Kart · Kaynak</text><text x="87.5" '
+    'y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kuraklık ve '
+    'temiz su</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">kıtlığı</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Kart · Yerel</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mahalle parkı taş</text><text x="262.5" y="126.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">onarımı</text></svg>',
+ 8: '<svg viewBox="0 0 350 150" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bilinçli tüketici '
+    'kontrol listesi: ihtiyaç listesi hazırlamak, yerli ve millî ürünleri tercih etmek, atıkları geri dönüşüme ayırmak."><rect x="4" y="3" '
+    'width="342" height="25" rx="5" fill="#e8eefe" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="20.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">BİLİNÇLİ TÜKETİCİ KONTROL LİSTESİ</text><rect '
+    'x="4" y="31" width="342" height="117" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="48.3" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">✓ Alışverişten önce '
+    'ihtiyaç listesi hazırlamak</text><text x="11.0" y="66.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">ve israftan kaçınmak</text><text x="11.0" y="85.1" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">✓ Yerli ve millî üretim damgalı ürünleri</text><text x="11.0" '
+    'y="103.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">öncelikle '
+    'tercih etmek</text><text x="11.0" y="121.9" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">✓ Cam, kâğıt ve metal atıkları geri dönüşüm</text><text x="11.0" y="140.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kutularına ayırmak</text></svg>',
+ 10: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vaka şeması: geleneksel '
+     'Anadolu bakır işlemeciliği, küresel e-ticaret ağı ile dünya ülkelerine ihracat."><rect x="4" y="3" width="342" height="43" rx="5" '
+     'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#ee7d12">1. Yerel Üretim (Millî Kültür)</text><text x="11.0" y="38.5" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Geleneksel Anadolu bakır işlemeciliği '
+     'atölyesi</text><rect x="4" y="49" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+     'y="66.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. Küresel '
+     'E-Ticaret Ağı</text><text x="11.0" y="84.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#0b2257">Ürünlerin genel ağ üzerinden dünyaya</text><text x="11.0" y="103.2" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">tanıtılması</text><rect x="4" y="114" '
+     'width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="131.4" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Kazanım (Sonuç)</text><text x="11.0" '
+     'y="149.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yerel mirası '
+     'koruyarak dünya ülkelerine</text><text x="11.0" y="168.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#0b2257">ihracat</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = kuresellesme_boyutlari_svg()
-    s[1]['gorsel'] = etki_kartlari_svg()
-    s[3]['gorsel'] = populer_kultur_panosu_svg()
-    s[4]['gorsel'] = cinar_agaci_ilkesi_svg()
-    s[6]['gorsel'] = dort_sorun_karti_svg()
-    s[8]['gorsel'] = bilincli_tuketici_listesi_svg()
-    s[9]['gorsel'] = dijital_iletisim_kartlari_svg()
-    s[10]['gorsel'] = bakir_atolyesi_vaka_svg()
-    s[13]['gorsel'] = surdurulebilir_afis_svg()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

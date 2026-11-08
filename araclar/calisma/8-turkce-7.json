@@ -14,16 +14,13 @@
   ],
   "hatirla": [
     "Ögeler bulunurken YÖN kuralı izlenir: 1) Yüklem, 2) Özne, 3) Nesne ve 4) Tamlayıcılar sırasıyla belirlenir.",
-    "Belirtme eki (-ı, -i, -u, -ü) alıp “Neyi, kimi?” sorusuna yanıt veren belirtili nesne; ek almayıp “Ne?” sorusuna yanıt veren belirtisiz nesnedir.",
-    "“-e, -de, -den” ekiyle yer bildiren öge yer tamlayıcısı; zaman, durum, miktar, sebep ve eksiz yön bildiren öge zarf tamlayıcısıdır.",
-    "Fiil cümlesinde vurgu yüklemden önceki ögede, isim cümlesinde yüklemdedir; iki virgül arasındaki açıklama ara söz, hitap ve bağlaçlar cümle dışı unsurdur."
+    "Belirtme eki (-ı, -i, -u, -ü) alıp “Neyi, kimi?” sorusuna yanıt veren belirtili nesne; ek almayıp “Ne?” sorusuna yanıt veren belirtisiz nesnedir."
   ],
   "sorular": [
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki yardımcı ögeler şemasından yararlanarak tablodaki cümlelerde koyu yazılan söz öbeklerinin yükleme sorulan sorusunu ve hangi öge olduğunu yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki cümlelerde koyu yazılan söz öbeklerinin yükleme sorulan sorusunu ve hangi öge olduğunu yazınız. İlk satır örnektir.",
       "basliklar": [
         "Cümle ve koyu söz öbeği",
         "Yükleme sorulan soru",
@@ -33,7 +30,9 @@
         [
           "Türk milleti {koyu:bağımsızlığını} kararlılıkla korudu.",
           "Neyi korudu?",
-          "Belirtili nesne"
+          {
+            "b": "Belirtili nesne"
+          }
         ],
         [
           "Komutan cephedeki birliklere {koyu:yeni bir emir} gönderdi.",
@@ -71,10 +70,6 @@
         [
           "Yer tamlayıcısı",
           "“-e, -de, -den” eki alarak yüklemi yer yönünden tamamlayan öge"
-        ],
-        [
-          "Ara söz",
-          "İki virgül veya kısa çizgi arasında bir ögeyi açıklayan söz"
         ]
       ]
     },
@@ -130,8 +125,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki metin kartında yer alan “Memleketin Hayatı Söz Konusu” başlıklı parçada Mustafa Kemal Paşa’nın vatan savunmasındaki tutumu anlatılmaktadır. Bu parçanın konusunu ve ana fikrini kısaca yazınız.",
+      "soru": "“Söz konusu vatansa gerisi teferruattır; bağımsızlık uğrunda her türlü güçlüğe göğüs gerilir.” cümlesinin konusunu ve ana fikrini kısaca yazınız.",
       "cevap": "Konu: Vatan savunması kararlılığı. Ana fikir: Bağımsızlık için her türlü fedakârlık göze alınır.",
       "satir": 2
     },
@@ -175,10 +169,9 @@
     {
       "tur": "kisa",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki karşılaştırma kartında “Nöbetçiler bütün gece ayakta bekledi.” ve “Nöbetçiler kulübede bekledi.” cümleleri verilmiştir. Her iki sözcük de “-da, -ta” eki aldığı hâlde “ayakta” ve “kulübede” sözcüklerinin neden farklı ögeler olduğunu açıklayınız.",
+      "soru": "“Nöbetçiler bütün gece ayakta bekledi.” ve “Nöbetçiler kulübede bekledi.” cümlelerinde her iki sözcük de “-da, -ta” eki aldığı hâlde “ayakta” ve “kulübede” sözcüklerinin neden farklı ögeler olduğunu açıklayınız.",
       "cevap": "‘Kulübede’ yer bildirdiği için yer tamlayıcısı, ‘ayakta’ durum bildirdiği için zarf tamlayıcısıdır.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "sifre",
@@ -230,10 +223,6 @@
         {
           "metin": "Yüklemi zaman ve durum bakımından tamamlayan ___ tamlayıcısıdır.",
           "cevap": "zarf"
-        },
-        {
-          "metin": "Cümlede hiçbir ögeye girmeyen hitaplara cümle ___ unsur denir.",
-          "cevap": "dışı"
         }
       ],
       "fazla": [
@@ -256,10 +245,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki vurgu karşılaştırma kartında “En büyük güç milletin iradesidir.” ve “Milletimiz cephede kahramanca savaştı.” cümleleri verilmiştir. Her iki cümlede vurgulanan ögeyi bularak nedenini kısaca açıklayınız.",
+      "soru": "“En büyük güç milletin iradesidir.” ve “Milletimiz cephede kahramanca savaştı.” cümlelerinde vurgulanan ögeyi bularak nedenini kısaca açıklayınız.",
       "cevap": "1. cümle isim cümlesi olduğundan vurgu yüklemde, 2. cümlede ise ‘kahramanca’ zarf tamlayıcısındadır.",
-      "satir": 2
+      "satir": 3
     }
   ]
 }

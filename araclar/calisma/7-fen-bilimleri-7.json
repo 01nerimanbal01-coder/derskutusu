@@ -13,9 +13,7 @@
   ],
   "hatirla": [
     "Bir cismin iş yapabilme yeteneğine enerji denir; Uluslararası Birim Sistemi’nde iş ve enerjinin birimi Joule (J) olarak ifade edilir.",
-    "Hareket hâlindeki cisimlerin sahip olduğu kinetik (hareket) enerjisi, cismin kütlesi (m) ve sürati (v) ile doğru orantılıdır.",
-    "Yüksekteki cisimlerin çekim potansiyel enerjisi ağırlık (G) ve yükseklikle (h); esnek cisimlerin esneklik potansiyel enerjisi sıkışma miktarıyla doğru orantılıdır.",
-    "Gökyüzünde uçan kuş veya uçak hem yerden yüksekte olduğu için çekim potansiyel enerjisine hem de hareket ettiği için kinetik enerjiye aynı anda sahiptir."
+    "Hareket hâlindeki cisimlerin sahip olduğu kinetik (hareket) enerjisi, cismin kütlesi (m) ve sürati (v) ile doğru orantılıdır."
   ],
   "sorular": [
     {
@@ -34,14 +32,6 @@
         [
           "kinetik enerji",
           "Hareket hâlindeki varlıkların kütle ve süratine bağlı enerjisi"
-        ],
-        [
-          "çekim potansiyel enerjisi",
-          "Yerden belirli bir yükseklikteki cisimlerin konum enerjisi"
-        ],
-        [
-          "esneklik potansiyel enerjisi",
-          "Sıkıştırılan veya gerilen esnek cisimlerde depolanan enerji"
         ]
       ]
     },
@@ -77,10 +67,6 @@
         {
           "metin": "Oyun hamuru ve cam, kuvvet uygulandığında esneklik potansiyel enerjisi depolayan maddelerdir.",
           "dogru": false
-        },
-        {
-          "metin": "Gökyüzünde uçmakta olan bir yolcu uçağı hem kinetik hem de çekim potansiyel enerjisine sahiptir.",
-          "dogru": true
         }
       ]
     },
@@ -101,10 +87,6 @@
         {
           "metin": "Yüksekteki cisimler ___ potansiyel enerjisine sahiptir.",
           "cevap": "çekim"
-        },
-        {
-          "metin": "Sıkıştırılan yayda ___ potansiyel enerjisi depolanır.",
-          "cevap": "esneklik"
         }
       ],
       "fazla": [
@@ -126,7 +108,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki dört durum kartında verilen varlıkların sahip olduğu enerji türünü ve temel dayanağını yazarak tabloyu tamamlayınız.",
+      "soru": "Varlıkların sahip olduğu enerji türünü ve temel dayanağını yazarak tabloyu tamamlayınız.",
       "basliklar": [
         "Durum Kartı",
         "Sahip Olduğu Enerji Türü",
@@ -136,7 +118,9 @@
         [
           "1. Kart (Rayda giden tren)",
           "Kinetik enerji",
-          "Belirli bir süratle hareket etmesi"
+          {
+            "b": "Belirli bir süratle hareket etmesi"
+          }
         ],
         [
           "2. Kart (Dalda duran elma)",
@@ -166,14 +150,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki eğik düzlem düzeneğinde aynı h yüksekliğinden bırakılan m ve 2m kütleli bilyelerin yatay zemindeki takozu sürükleme mesafeleri ölçülüyor. Bu deneyin bağımsız ve bağımlı değişkenini yazınız.",
+      "soru": "Eğik düzlem düzeneğinde aynı h yüksekliğinden bırakılan m ve 2m kütleli bilyelerin yatay zemindeki takozu sürükleme mesafeleri ölçülüyor. Bu deneyin bağımsız ve bağımlı değişkenini yazınız.",
       "cevap": "Bağımsız değişken bilyenin kütlesi, bağımlı değişken ise takozun sürüklenme mesafesidir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki raflarda bulunan K, L, M ve N kutularını yere göre çekim potansiyel enerjisi en küçük olandan en büyük olana doğru 1’den 4’e kadar numaralandırınız.",
+      "soru": "Raflarda bulunan K, L, M ve N kutularını yere göre çekim potansiyel enerjisi en küçük olandan en büyük olana doğru 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "K kutusu (1. rafta, 10 N ağırlığında)",
         "L kutusu (2. rafta, 10 N ağırlığında)",
@@ -208,7 +192,7 @@
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki şemada 15 m yükseklikte uçan K kuşu ile aynı yükseklikteki dalda hareketsiz duran L kuşu gösterilmiştir. Kütlesi eşit olan bu iki kuşun çekim potansiyel ve kinetik enerjilerini karşılaştırınız.",
+      "soru": "Yerden 15 m yükseklikte uçan K kuşu ile aynı yükseklikteki ağaç dalında hareketsiz duran L kuşunun kütleleri birbirine eşittir. Bu iki kuşun çekim potansiyel ve kinetik enerjilerini karşılaştırınız.",
       "cevap": "Çekim potansiyel enerjileri eşittir; uçan K kuşunun kinetik enerjisi vardır, L’nin sıfırdır.",
       "satir": 2
     },
@@ -248,7 +232,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki baraj şemasını inceleyiniz. Yüksekte biriktirilen suyun kapaklar açıldığında hızla akarak türbini döndürmesi sürecindeki enerji değişimini yazınız.",
+      "soru": "Bir hidroelektrik barajında yüksekte biriktirilen suyun kapaklar açıldığında hızla akarak türbini döndürmesi sürecindeki enerji değişimini yazınız.",
       "cevap": "Yüksekteki suyun çekim potansiyel enerjisi, kapaklar açılınca akan suda kinetik enerjiye dönüşür.",
       "satir": 2
     },

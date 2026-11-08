@@ -15,8 +15,7 @@
   ],
   "hatirla": [
     "«{ar:الأَدَبُ}» edebiyat, «{ar:الأَدِيبُ}» edebiyatçı demektir; türler «{ar:الشِّعْرُ}» (şiir), «{ar:الْقِصَّةُ}» (hikâye), «{ar:الرِّوَايَةُ}» (roman) ve «{ar:الْمَقَالَةُ}» (makale) sözcükleridir.",
-    "Şiir yazana «{ar:الشَّاعِرُ / الشَّاعِرَةُ}» (çoğulu «{ar:شُعَرَاءُ}»), kitap yazarına «{ar:الْكَاتِبُ / الْمُؤَلِّفُ}» (çoğulu «{ar:الْكُتَّابُ}») denir.",
-    "Yazarı sormak için «{ar:مَنْ كَاتِبُ هٰذَا الْكِتَابِ؟}», konusunu anlatmak için «{ar:تَتَحَدَّثُ عَنْ ...}» (...hakkında bahsediyor) kalıbı kullanılır."
+    "Şiir yazana «{ar:الشَّاعِرُ / الشَّاعِرَةُ}» (çoğulu «{ar:شُعَرَاءُ}»), kitap yazarına «{ar:الْكَاتِبُ / الْمُؤَلِّفُ}» (çoğulu «{ar:الْكُتَّابُ}») denir."
   ],
   "sorular": [
     {
@@ -35,10 +34,6 @@
         [
           "{ar:مَجَلَّةُ الْمَدْرَسَةِ}",
           "Okul dergisi"
-        ],
-        [
-          "{ar:الْكَاتِبُ / الْمُؤَلِّفُ}",
-          "Yazar / Müellif"
         ]
       ]
     },
@@ -58,8 +53,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Kelime kartlarındaki tekil ({ar:الْمُفْرَدُ}) edebî kavramların Arapça çoğulunu ({ar:الْجَمْعُ}) ve Türkçe anlamını yazarak tabloyu tamamlayınız.",
+      "soru": "Tabloda verilen tekil ({ar:الْمُفْرَدُ}) edebî kavramların Arapça çoğulunu ({ar:الْجَمْعُ}) ve Türkçe anlamını yazarak tabloyu tamamlayınız.",
       "basliklar": [
         "Tekil Kavram ({ar:الْمُفْرَدُ})",
         "Çoğul Biçimi ({ar:الْجَمْعُ})",
@@ -67,12 +61,14 @@
       ],
       "satirlar": [
         [
-          "1. Kart ({ar:قِصَّةٌ})",
+          "1. {ar:قِصَّةٌ}",
           "{ar:قِصَصٌ}",
-          "Hikâye — Hikâyeler"
+          {
+            "b": "Hikâye — Hikâyeler"
+          }
         ],
         [
-          "2. Kart ({ar:رِوَايَةٌ})",
+          "2. {ar:رِوَايَةٌ}",
           {
             "b": "{ar:رِوَايَاتٌ}"
           },
@@ -81,7 +77,7 @@
           }
         ],
         [
-          "3. Kart ({ar:شَاعِرٌ})",
+          "3. {ar:شَاعِرٌ}",
           {
             "b": "{ar:شُعَرَاءُ}"
           },
@@ -124,10 +120,6 @@
         {
           "metin": "Bir eserin ne hakkında olduğunu anlatırken «{ar:تَتَحَدَّثُ عَنْ...}» (...hakkında bahsediyor) kalıbı kullanılır.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:كَاتِبٌ}» (yazar) kelimesinin kurallı çoğulu «{ar:قَصَائِدُ}» (kasideler) sözcüğüdür.",
-          "dogru": false
         }
       ]
     },
@@ -161,10 +153,6 @@
         {
           "metin": "Mehmet Akif Ersoy’un büyük bir şair olduğunu belirtmek için «{ar:مُحَمَّد عَاكِف أَرْصُوي} ___ {ar:كَبِيرٌ}» cümlesi kurulur.",
           "cevap": "{ar:شَاعِرٌ}"
-        },
-        {
-          "metin": "Tarihî romanları polisiye romanlara tercih eden kişi cümlesine «___ {ar:الرِّوَايَاتِ التَّارِيخِيَّةَ}» diye başlar.",
-          "cevap": "{ar:أُفَضِّلُ}"
         }
       ],
       "fazla": [
@@ -174,15 +162,13 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Diyalog kartındaki «{ar:مَاذَا تَقْرَأُ يَا كَرِيمُ؟ — أَقْرَأُ رِوَايَةً تَارِيخِيَّةً مُمْتِعَةً}» konuşmasında fiilin neden «{ar:أَقْرَأُ}» olarak değiştiğini ve diyaloğun anlamını yazınız.",
+      "soru": "Aşağıdaki «{ar:مَاذَا تَقْرَأُ يَا كَرِيمُ؟ — أَقْرَأُ رِوَايَةً تَارِيخِيَّةً مُمْتِعَةً}» konuşmasında fiilin neden «{ar:أَقْرَأُ}» olarak değiştiğini ve diyaloğun anlamını yazınız.",
       "cevap": "Sorudaki ‘sen okuyorsun’ fiiline 1. tekil şahısla ‘tarihî roman okuyorum’ diye cevap verilmiştir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Edebiyat kulübü üyesi bir öğrencinin çalışmalarını anlatan aşağıdaki Arapça cümleleri mantıksal akış sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:أَنَا عُضْوٌ فِي نَادِي الأَدَبِ فِي الْمَدْرَسَةِ.}",
@@ -253,10 +239,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Edebiyat kulübü kimlik kartındaki ipuçlarından yararlanarak hangi kulübe üye olduğunuzu, hangi edebî türü tercih ettiğinizi ve okul dergisinde ne yazdığınızı anlatan Arapça bir cümle yazınız.",
+      "soru": "Hangi okul kulübüne («{ar:نَادِي الأَدَبِ}») üye olduğunuzu, hangi edebî türü okumayı tercih ettiğinizi ve okul dergisinde («{ar:مَجَلَّةِ الْمَدْرَسَةِ}») ne yazdığınızı anlatan kurallı bir Arapça cümle yazınız.",
       "cevap": "{ar:أَنَا عُضْوٌ فِي نَادِي الأَدَبِ وَأُفَضِّلُ قِرَاءَةَ الْقِصَصِ الْقَصِيرَةِ.}",
-      "satir": 3
+      "satir": 2
     }
   ]
 }

@@ -1,159 +1,86 @@
-"""7. sınıf Sosyal Bilgiler 8. hafta (Bölgesel ve Küresel Sorunların Çözümünde Türkiye'nin Rolü ve Uluslararası Kuruluşlar) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 12 pt Noto Sans (K150 EK)."""
+"""7-sosyal-bilgiler-8 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea'
-CAM, CAM_A = '#0e8fa8', '#e0f4f8'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-YAZI_I = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=21):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=12, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {YAZI_I if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def bm_uzmanlik_panosu():
-    kartlar = [
-        ('1 · UNICEF', 'Çocuk hakları ve eğitimi', MAVI, MAVI_A),
-        ('2 · FAO', 'Gıda, tarım ve açlıkla mücadele', YES, YES_A),
-        ('3 · UNESCO', 'Bilim, kültür ve dünya mirası', MOR, MOR_A),
-        ('4 · WHO (DSÖ)', 'Salgınlar ve küresel sağlık', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, acik, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 296
-        y = 4 + (i // 2) * 50
-        ic += f'<rect x="{x}" y="{y}" width="286" height="44" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.5"/>'
-        ic += yazi(x + 56, y + 27, bas, 12, renk)
-        ic += f'<line x1="{x + 110}" y1="{y + 6}" x2="{x + 110}" y2="{y + 38}" stroke="{renk}" stroke-width="1.2"/>'
-        ic += yazi(x + 198, y + 27, acik, 12, LAC, ince=True)
-    return svg(600, 106, ic, 'Birleşmiş Milletler dört uzmanlık kuruluşu panosu.', 20)
-
-
-def turkiye_girisim_kartlari():
-    kartlar = [
-        ('Sıfır Atık', '30 Mart BM Günü', YES, YES_A),
-        ('Tahıl Koridoru', 'Gıda Güvenliği', TUR, TUR_A),
-        ('AFAD - Kızılay - TİKA', 'İnsani Yardım', KIR, KIR_A),
-        ('Paris Anlaşması', '2053 Net Sıfır', MAVI, MAVI_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(kartlar):
-        x = 6 + i * 148
-        ic += f'<rect x="{x}" y="6" width="140" height="72" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.5"/>'
-        ic += yazi(x + 70, 30, bas, 12, renk)
-        ic += yazi(x + 70, 56, alt, 12, LAC, ince=True)
-    return svg(600, 84, ic, 'Türkiye’nin dört küresel girişim kartı.', 19)
-
-
-def iklim_zinciri_svg():
-    adimlar = [
-        ('1. Neden', 'Fosil Yakıtlar', TUR, TUR_A),
-        ('2. Süreç', 'Sera Gazı Artışı', MOR, MOR_A),
-        ('3. Etki', 'Küresel Isınma', KIR, KIR_A),
-        ('4. Sonuç', '? (İklim Krizi)', MAVI, MAVI_A),
-    ]
-    ic = ''
-    for i, (ust, alt, renk, arka) in enumerate(adimlar):
-        x = 8 + i * 148
-        ic += f'<rect x="{x}" y="8" width="136" height="68" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 68, 32, ust, 12, renk)
-        ic += yazi(x + 68, 56, alt, 12, LAC, ince=True)
-        if i < 3:
-            ic += f'<line x1="{x + 136}" y1="42" x2="{x + 148}" y2="42" stroke="{LAC}" stroke-width="1.8"/>'
-    return svg(600, 84, ic, 'Küresel iklim değişikliği neden-sonuç zinciri.', 19)
-
-
-def sifir_atik_rozet_svg():
-    ic = f'<rect x="8" y="6" width="584" height="86" rx="10" fill="{YES_A}" stroke="{YES}" stroke-width="1.6"/>'
-    ic += yazi(300, 26, 'BM GENEL KURULU KARARI : 30 MART ULUSLARARASI SIFIR ATIK GÜNÜ', 12, YES)
-    ic += yazi(160, 54, 'Öncü Ülke : Türkiye', 12, LAC)
-    ic += f'<line x1="290" y1="36" x2="290" y2="80" stroke="{YES}" stroke-width="1.4"/>'
-    ic += yazi(440, 50, 'Hedef : İsrafı önlemek, atığı azaltmak', 12, LAC, ince=True)
-    ic += yazi(440, 72, 've geri dönüşümü yaygınlaştırmak', 12, LAC, ince=True)
-    return svg(600, 98, ic, '30 Mart Uluslararası Sıfır Atık Günü bilgi kartı.', 20)
-
-
-def insani_diplomasi_pano():
-    ic = f'<rect x="8" y="6" width="584" height="90" rx="10" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.6"/>'
-    ic += yazi(300, 26, 'TÜRKİYE’NİN İNSANİ DİPLOMASİ VE BARIŞ PANOSU', 12, TUR)
-    ic += yazi(155, 52, 'İlke : «Yurtta barış, dünyada barış»', 12, LAC)
-    ic += yazi(450, 52, 'Kurumlar : AFAD · Türk Kızılay · TİKA', 12, KIR)
-    ic += yazi(155, 76, 'Arabuluculuk : Barış ve Tahıl Koridoru', 12, LAC, ince=True)
-    ic += yazi(450, 76, 'Kapsam : Tüm mazlum coğrafyalara destek', 12, YES)
-    return svg(600, 102, ic, 'Türkiye’nin insani diplomasi ve barış panosu.', 20)
-
-
-def kriz_cozum_akisi_svg():
-    adimlar = [
-        ('1. Aşama', 'Kuraklık - Çatışma', KIR, KIR_A),
-        ('2. Aşama', 'Zorunlu Göç Dalgası', TUR, TUR_A),
-        ('3. Aşama', 'Küresel Boyut', MOR, MOR_A),
-        ('4. Aşama', 'Uluslararası Çözüm', YES, YES_A),
-    ]
-    ic = ''
-    for i, (ust, alt, renk, arka) in enumerate(adimlar):
-        x = 8 + i * 148
-        ic += f'<rect x="{x}" y="8" width="136" height="68" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 68, 32, ust, 12, renk)
-        ic += yazi(x + 68, 56, alt, 12, LAC, ince=True)
-        if i < 3:
-            ic += f'<line x1="{x + 136}" y1="42" x2="{x + 148}" y2="42" stroke="{LAC}" stroke-width="1.8"/>'
-    return svg(600, 84, ic, 'Bölgesel krizden küresel çözüme dört aşamalı akış şeması.', 19)
-
-
-def iklim_cozum_panosu():
-    ic = f'<rect x="8" y="6" width="584" height="86" rx="10" fill="{CAM_A}" stroke="{CAM}" stroke-width="1.6"/>'
-    ic += yazi(300, 26, 'İKLİM DOSTU VE SÜRDÜRÜLEBİLİR ÇÖZÜMLER PANOSU', 12, CAM)
-    ic += yazi(155, 52, '1 · Güneş ve rüzgâr enerjisine geçiş', 12, YES)
-    ic += yazi(450, 52, '2 · Ormanların korunması ve ağaçlandırma', 12, YES)
-    ic += yazi(155, 74, '3 · Sanayi baca filtreleri ve Sıfır Atık', 12, YES)
-    ic += yazi(450, 74, '4 · Karbon ayak izinin azaltılması', 12, MAVI)
-    return svg(600, 98, ic, 'İklim dostu çözümler panosu.', 20)
-
-
-def kuresel_vatandas_karti():
-    ic = f'<rect x="8" y="6" width="282" height="84" rx="9" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.6"/>'
-    ic += yazi(149, 28, '1. Sorumluluk · Su ve Enerji', 12, MAVI)
-    ic += yazi(149, 52, 'Muslukları ve lambaları', 12, LAC, ince=True)
-    ic += yazi(149, 72, 'tasarruflu kullanmak', 12, LAC, ince=True)
-
-    ic += f'<rect x="310" y="6" width="282" height="84" rx="9" fill="{YES_A}" stroke="{YES}" stroke-width="1.6"/>'
-    ic += yazi(451, 28, '2. Sorumluluk · Doğa ve Atık', 12, YES)
-    ic += yazi(451, 52, 'Geri dönüşüm kutularını kullanmak', 12, LAC, ince=True)
-    ic += yazi(451, 72, 've fidan dikimine katılmak', 12, LAC, ince=True)
-    return svg(600, 96, ic, 'Küresel vatandaşlık bireysel sorumluluk kartları.', 20)
-
-
-def dort_kurulus_sema():
-    kartlar = [
-        ('NATO', 'Ortak savunma ve güvenlik', MAVI, MAVI_A),
-        ('UNICEF', 'Dünya çocuklarına yardım', MOR, MOR_A),
-        ('KEİ', 'Karadeniz ekonomik iş birliği', TUR, TUR_A),
-        ('WHO', 'Küresel sağlık çalışmaları', YES, YES_A),
-    ]
-    ic = ''
-    for i, (ad, acik, renk, arka) in enumerate(kartlar):
-        x = 6 + i * 148
-        ic += f'<rect x="{x}" y="6" width="140" height="72" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.5"/>'
-        ic += yazi(x + 70, 30, ad, 12, renk)
-        ic += yazi(x + 70, 56, acik, 12, LAC, ince=True)
-    return svg(600, 84, ic, 'Türkiye’nin üyesi olduğu dört uluslararası kuruluş kartı.', 19)
+GORSELLER = {0: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Birleşmiş Milletler dört '
+    'uzmanlık kuruluşu panosu."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1 · UNICEF</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Çocuk hakları ve</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">eğitimi</text><rect x="179" y="3" width="167" '
+    'height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2 · FAO</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Gıda, tarım ve '
+    'açlıkla</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">mücadele</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">3 · UNESCO</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Bilim, kültür ve</text><text x="87.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">dünya mirası</text><rect x="179" y="71" '
+    'width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">4 · WHO (DSÖ)</text><text x="262.5" y="107.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Salgınlar ve '
+    'küresel</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">sağlık</text></svg>',
+ 3: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Küresel iklim '
+    'değişikliği neden-sonuç zinciri."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Neden</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Fosil Yakıtlar</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Süreç</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sera Gazı Artışı</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Etki</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Küresel '
+    'Isınma</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Sonuç</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">? (İklim Krizi)</text></svg>',
+ 6: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkiye’nin insani '
+    'diplomasi ve barış panosu."><rect x="4" y="3" width="342" height="117" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">TÜRKİYE’NİN İNSANİ DİPLOMASİ VE BARIŞ</text><text x="11.0" y="38.7" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">PANOSU</text><text x="11.0" y="57.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">İlke : «Yurtta barış, '
+    'dünyada barış»</text><text x="11.0" y="75.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Kurumlar : AFAD · Türk Kızılay · TİKA</text><text x="11.0" y="93.9" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Arabuluculuk : Barış ve Tahıl '
+    'Koridoru</text><text x="11.0" y="112.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Kapsam : Tüm mazlum coğrafyalara destek</text></svg>',
+ 8: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İklim dostu çözümler '
+    'panosu."><rect x="4" y="3" width="342" height="117" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" '
+    'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">İKLİM DOSTU VE '
+    'SÜRDÜRÜLEBİLİR</text><text x="11.0" y="38.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">ÇÖZÜMLER PANOSU</text><text x="11.0" y="57.1" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">1 · Güneş ve rüzgâr enerjisine geçiş</text><text x="11.0" y="75.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2 · Ormanların korunması '
+    've ağaçlandırma</text><text x="11.0" y="93.9" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3 · Sanayi baca filtreleri ve Sıfır Atık</text><text x="11.0" y="112.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">4 · Karbon ayak izinin '
+    'azaltılması</text></svg>',
+ 12: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türkiye’nin üyesi '
+     'olduğu dört uluslararası kuruluş kartı."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">NATO</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="500" fill="#0b2257">Ortak savunma ve</text><text x="87.5" y="58.2" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">güvenlik</text><rect x="179" y="3" '
+     'width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">UNICEF</text><text x="262.5" y="39.8" '
+     'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dünya '
+     'çocuklarına</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#0b2257">yardım</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" '
+     'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#ee7d12">KEİ</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="500" fill="#0b2257">Karadeniz ekonomik</text><text x="87.5" y="126.2" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">iş birliği</text><rect x="179" y="71" '
+     'width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">WHO</text><text x="262.5" y="107.8" '
+     'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Küresel '
+     'sağlık</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">çalışmaları</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = bm_uzmanlik_panosu()
-    s[1]['gorsel'] = turkiye_girisim_kartlari()
-    s[3]['gorsel'] = iklim_zinciri_svg()
-    s[4]['gorsel'] = sifir_atik_rozet_svg()
-    s[6]['gorsel'] = insani_diplomasi_pano()
-    s[7]['gorsel'] = kriz_cozum_akisi_svg()
-    s[8]['gorsel'] = iklim_cozum_panosu()
-    s[11]['gorsel'] = kuresel_vatandas_karti()
-    s[12]['gorsel'] = dort_kurulus_sema()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -15,8 +15,7 @@
   ],
   "hatirla": [
     "Alışveriş mekânı «{ar:الْبَقَّالَةُ}», satıcı «{ar:الْبَقَّالُ}», alıcı «{ar:الْمُشْتَرِي}» kelimesidir; «{ar:زَيْتُونٌ}» zeytin, «{ar:زَيْتٌ}» sıvı yağ, «{ar:زُبْدَةٌ}» tereyağıdır.",
-    "Satıcı müşteriyi «{ar:أَهْلًا وَسَهْلًا! أَيُّ خِدْمَةٍ؟ / مَاذَا تُرِيدُ؟}» (Hoş geldiniz! Nasıl yardımcı olabilirim?) diyerek karşılar.",
-    "Ürünün varlığı «{ar:هَلْ يُوجَدُ ...؟}» (Var mı?), fiyatı ise «{ar:بِكَمْ هٰذَا؟ / بِكَمِ الْمَجْمُوعُ؟}» (Bu kaç lira? / Toplam ne kadar?) ile sorulur."
+    "Satıcı müşteriyi «{ar:أَهْلًا وَسَهْلًا! أَيُّ خِدْمَةٍ؟ / مَاذَا تُرِيدُ؟}» (Hoş geldiniz! Nasıl yardımcı olabilirim?) diyerek karşılar."
   ],
   "sorular": [
     {
@@ -35,10 +34,6 @@
         [
           "{ar:شَايٌ وَسُكَّرٌ}",
           "Çay ve şeker"
-        ],
-        [
-          "{ar:أُرْزٌ وَدَقِيقٌ}",
-          "Pirinç ve un"
         ]
       ]
     },
@@ -58,8 +53,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki bakkal konuşma kartlarının kim tarafından söylendiğini (Bakkal / Müşteri) ve Türkçe anlamını tabloya yazınız.",
+      "soru": "Bakkal konuşma kartlarının kim tarafından söylendiğini (Bakkal / Müşteri) ve Türkçe anlamını tabloya yazınız.",
       "basliklar": [
         "Konuşma Kartı",
         "Konuşan Kişi",
@@ -69,7 +63,9 @@
         [
           "1. Kart ({ar:أَهْلًا وَسَهْلًا! أَيُّ خِدْمَةٍ؟})",
           "Bakkal ({ar:الْبَقَّالُ})",
-          "Hoş geldiniz! Nasıl yardımcı olabilirim?"
+          {
+            "b": "Hoş geldiniz! Nasıl yardımcı olabilirim?"
+          }
         ],
         [
           "2. Kart ({ar:هَلْ يُوجَدُ عَسَلٌ طَبِيعِيٌّ؟})",
@@ -124,10 +120,6 @@
         {
           "metin": "«{ar:مِنْ فَضْلِكَ}» ifadesi alışveriş sırasında nezaket bildiren «lütfen» sözüdür.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:مِلْحٌ}» sözcüğü kahvaltıda yenen tatlı reçel anlamına gelir.",
-          "dogru": false
         }
       ]
     },
@@ -161,10 +153,6 @@
         {
           "metin": "Satıcı ürünleri müşteriye uzatırken «Buyur!» anlamında «___!» der.",
           "cevap": "{ar:تَفَضَّلْ}"
-        },
-        {
-          "metin": "Alışveriş sonunda tüm ürünlerin toplam tutarını sormak için «{ar:بِكَمِ} ___» sorusu yöneltilir.",
-          "cevap": "{ar:الْمَجْمُوعُ؟}"
         }
       ],
       "fazla": [
@@ -174,15 +162,13 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki iki soru kartında yer alan «{ar:هَلْ يُوجَدُ ...؟}» ile «{ar:بِكَمْ ...؟}» kalıplarının alışverişte hangi amaçlarla kullanıldığını kısaca yazınız.",
+      "soru": "«{ar:هَلْ يُوجَدُ ...؟}» ile «{ar:بِكَمْ ...؟}» kalıplarının alışverişte hangi amaçlarla kullanıldığını kısaca yazınız.",
       "cevap": "İlk kalıp ürünün bulunup bulunmadığını (var mı?), ikinci kalıp ise ürünün fiyatını (kaç lira?) sorar.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Bakkal dükkânına giren müşteri ile satıcı arasındaki konuşmayı alışverişin doğal sırasına göre 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "{ar:أَهْلًا وَسَهْلًا! أَيُّ خِدْمَةٍ يَا أَخِي؟}",
@@ -258,8 +244,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki sipariş fişinde yer alan bilgilere göre bakkaldan lütfen bir kilo peynir ve bir kutu süt isteyen, ardından toplam fiyatı soran Arapça ifadeyi yazınız.",
+      "soru": "Bakkaldan lütfen bir kilo peynir ve bir kutu süt isteyen, ardından toplam fiyatı soran Arapça ifadeyi yazınız.",
       "cevap": "{ar:أُرِيدُ كِيلُو جُبْنٍ وَعُلْبَةَ حَلِيبٍ، بِكَمِ الْمَجْمُوعُ؟}",
       "satir": 2
     }

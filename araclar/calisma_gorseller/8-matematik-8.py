@@ -1,223 +1,122 @@
-"""8. sınıf Matematik 8. hafta (Kareköklü İfadelerde Çarpma, Bölme, Paydayı Rasyonel Yapma ve Toplama-Çıkarma) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); Noto Sans font-size=12 (K150 EK); kesirler dikey (K155); tek parça vektörel kök sembolü."""
+"""8-matematik-8 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea'
-ALTIN, KAHVE, YESIL_K, GRI, KUM = '#c9a227', '#8a5a2b', '#0f6b45', '#9aa6bd', '#fffdf5'
-YAZI = 'font-family="Noto Sans, sans-serif" font-size="12" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-size="12" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=22):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def kok_ciz(cx, y, katsayi, ic_metin, renk=LAC):
-    """cx merkezli, y taban çizgili, üst çizgisi bitişik vektörel karekök ifadesi çizer."""
-    boy = 12
-    ic_str = str(ic_metin)
-    kat_str = str(katsayi) if katsayi else ''
-    w_ic = max(13, len(ic_str) * 7.5 + 4)
-    w_kat = len(kat_str) * 7.5 + (2 if kat_str else 0)
-    toplam_w = w_kat + 10 + w_ic
-    sol = cx - toplam_w / 2
-    out = ''
-    if kat_str:
-        out += yazi(sol + w_kat - 1, y, kat_str, renk, 'end')
-    rx = sol + w_kat
-    ust_y = y - boy * 0.95
-    orta_y = y - boy * 0.38
-    alt_y = y + 1.5
-    out += (f'<path d="M{rx:.1f} {orta_y:.1f} L{rx + 2.5:.1f} {orta_y - 1.5:.1f} '
-            f'L{rx + 5.5:.1f} {alt_y:.1f} L{rx + 9.5:.1f} {ust_y:.1f} '
-            f'H{rx + 10 + w_ic:.1f}" fill="none" stroke="{renk}" stroke-width="1.4" '
-            f'stroke-linecap="round" stroke-linejoin="round"/>')
-    out += yazi(rx + 10 + w_ic / 2, y, ic_str, renk, 'middle')
-    return out
-
-
-def dogal_sayi_carpan_sema():
-    """Soru 1: Karekök 24 = 2 kök 6 ifadesini doğal sayı yapan çarpan modeli."""
-    ic = kutu(4, 4, 352, 88, KUM, ALTIN, 8, 1.4)
-    ic += yazi(180, 21, 'Doğal Sayı Yapan Çarpan Bulma Modeli', KAHVE)
-    ic += kutu(12, 28, 102, 56, MAVI_A, MAVI, 7, 1.3)
-    ic += yazi(63, 46, '1. a kök b Yaz', MAVI)
-    ic += kok_ciz(42, 72, '', '24', LAC)
-    ic += yazi(66, 72, '=', MAVI)
-    ic += kok_ciz(88, 72, '2', '6', MAVI)
-
-    ic += kutu(125, 28, 102, 56, TUR_A, TUR, 7, 1.3)
-    ic += yazi(176, 46, '2. Çarpan Seç', TUR)
-    ic += kok_ciz(176, 72, '', '6', TUR)
-
-    ic += kutu(238, 28, 108, 56, YES_A, YES, 7, 1.3)
-    ic += yazi(292, 46, '3. Doğal Sayı', YESIL_K)
-    ic += yazi(292, 72, '2 · 6 = 12', YESIL_K)
-    return svg(360, 96, ic, 'Karekök 24 eşittir 2 kök 6 ifadesinin kök 6 ile çarpılarak 12 doğal sayısına dönüşme modeli.')
-
-
-def dikdortgen_pano_alan():
-    """Soru 3: Kısa kenarı 2 kök 3 dm ve uzun kenarı 5 kök 6 dm olan dikdörtgen pano."""
-    ic = kutu(4, 4, 352, 92, MAVI_A, MAVI, 8, 1.4)
-    ic += yazi(180, 20, 'Dikdörtgen Afiş Panosu · Alan Hesabı', MAVI)
-    ic += kutu(66, 28, 196, 52, '#fff', MAVI, 6, 1.5)
-    ic += yazi(164, 58, 'Alan = ? dm²', MAVI)
-    ic += kok_ciz(152, 92, '5', '6', LAC)
-    ic += yazi(186, 92, 'dm', LAC, 'start', True)
-    ic += kok_ciz(294, 58, '2', '3', TUR)
-    ic += yazi(326, 58, 'dm', TUR, 'start', True)
-    return svg(360, 100, ic, 'Kısa kenarı 2 kök 3 dm, uzun kenarı 5 kök 6 dm olan dikdörtgen pano.')
-
-
-def dort_islem_kartlari():
-    """Soru 5: Dört işlem kartı (III. kart hatalı: kök 27 + kök 12 = kök 39)."""
-    kartlar = [
-        ('I. Kart · Çarpma', '30', MAVI, MAVI_A),
-        ('II. Kart · Bölme', '12', YES, YES_A),
-        ('III. Kart · Toplama', 'Hatalı Toplam', KIR, KIR_A),
-        ('IV. Kart · Rasyonel', 'Payda = 5', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, sonuc, r, z) in enumerate(kartlar):
-        x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 48
-        ic += kutu(x, y, 172, 44, z, r, 7, 1.3)
-        ic += yazi(x + 86, y + 18, bas, r)
-        if i == 0:
-            ic += kok_ciz(x + 42, y + 37, '2', '5', LAC)
-            ic += yazi(x + 68, y + 37, '·', LAC)
-            ic += kok_ciz(x + 94, y + 37, '3', '5', LAC)
-            ic += yazi(x + 134, y + 37, '= 30', r)
-        elif i == 1:
-            ic += kok_ciz(x + 42, y + 37, '20', '18', LAC)
-            ic += yazi(x + 74, y + 37, ':', LAC)
-            ic += kok_ciz(x + 98, y + 37, '5', '2', LAC)
-            ic += yazi(x + 136, y + 37, '= 12', r)
-        elif i == 2:
-            ic += kok_ciz(x + 38, y + 37, '', '27', LAC)
-            ic += yazi(x + 64, y + 37, 've', LAC, 'middle', True)
-            ic += kok_ciz(x + 92, y + 37, '', '12', LAC)
-            ic += yazi(x + 114, y + 37, '->', r)
-            ic += kok_ciz(x + 140, y + 37, '', '39', r)
-        else:
-            ic += yazi(x + 42, y + 37, '15 :', LAC)
-            ic += kok_ciz(x + 74, y + 37, '', '5', LAC)
-            ic += yazi(x + 98, y + 37, '=', r)
-            ic += kok_ciz(x + 126, y + 37, '3', '5', r)
-    return svg(360, 100, ic, 'Dört kareköklü işlem kartı: I çarpma, II bölme, III hatalı toplama, IV paydayı rasyonel yapma.')
-
-
-def alani_verilen_karton():
-    """Soru 6: Alanı 36 cm² ve uzun kenarı 3 kök 2 cm olan dikdörtgen karton."""
-    ic = kutu(4, 4, 352, 88, YES_A, YES, 8, 1.4)
-    ic += yazi(180, 20, 'Alanı Verilen Dikdörtgenin Kenarını Bulma', YESIL_K)
-    ic += kutu(56, 28, 190, 46, '#fff', YES, 6, 1.4)
-    ic += yazi(151, 56, 'Alan = 36 cm²', YESIL_K)
-    ic += kok_ciz(140, 88, '3', '2', LAC)
-    ic += yazi(170, 88, 'cm', LAC, 'start', True)
-    ic += yazi(296, 56, 'x = ? cm', TUR)
-    return svg(360, 96, ic, 'Alanı 36 santimetrekare ve uzun kenarı 3 kök 2 santimetre olan dikdörtgen karton.')
-
-
-def ucgen_parkur_cevre():
-    """Soru 7: Kenarları kök 75 m, kök 48 m ve kök 27 m olan üçgen yürüyüş parkuru."""
-    ic = kutu(4, 4, 352, 92, KUM, ALTIN, 8, 1.4)
-    ic += yazi(180, 20, 'Üçgen Yürüyüş Parkuru · Çevre Hesabı', KAHVE)
-    ic += f'<polygon points="180,28 100,78 260,78" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.6"/>'
-    ic += kok_ciz(110, 52, '', '75', MAVI)
-    ic += kok_ciz(250, 52, '', '48', YESIL_K)
-    ic += kok_ciz(180, 90, '', '27', MOR)
-    return svg(360, 98, ic, 'Kenar uzunlukları karekök 75, karekök 48 ve karekök 27 metre olan üçgen parkur.')
-
-
-def rasyonel_toplama_akis():
-    """Soru 8: Paydayı rasyonel yapma ve toplama 4 adımlı akış şeması."""
-    adlar = [
-        ('1. Adım', 'Rasyonel yap', MAVI, MAVI_A),
-        ('2. Adım', 'a kök b yaz', TUR, TUR_A),
-        ('3. Adım', 'Kökleri eşitle', YES, YES_A),
-        ('4. Adım', 'Katsayı işlemi', MOR, MOR_A),
-    ]
-    ic = kutu(4, 4, 352, 86, '#fff', GRI, 8, 1.3)
-    ic += yazi(180, 20, 'Kareköklü İfadelerde Çok Adımlı İşlem Sırası', LAC)
-    for i, (ust, alt, r, z) in enumerate(adlar):
-        x = 12 + i * 86
-        ic += kutu(x, 28, 78, 52, z, r, 7, 1.3)
-        ic += yazi(x + 39, 48, ust, r)
-        ic += yazi(x + 39, 68, alt, LAC, 'middle', True)
-    return svg(360, 94, ic, 'Paydayı rasyonel yapma ve kareköklü toplama 4 adımlı çözüm şeması.')
-
-
-def hedef_tahtasi_carpan():
-    """Soru 9: Merkezde kök 54 = 3 kök 6 ve çevresinde 4 çarpan bölgesi."""
-    ic = kutu(4, 4, 352, 94, MOR_A, MOR, 8, 1.4)
-    ic += yazi(180, 20, 'Doğal Sayı Çarpanı Hedef Panosu', MOR)
-    ic += kutu(126, 30, 108, 56, '#fff', MOR, 8, 1.6)
-    ic += yazi(180, 48, 'Merkez Sayı', MOR)
-    ic += kok_ciz(180, 72, '', '54', LAC)
-
-    ic += kutu(12, 28, 104, 28, MAVI_A, MAVI, 6, 1.2)
-    ic += yazi(38, 46, '1)', MAVI)
-    ic += kok_ciz(74, 46, '', '6', LAC)
-
-    ic += kutu(12, 60, 104, 28, YES_A, YES, 6, 1.2)
-    ic += yazi(38, 78, '2)', YESIL_K)
-    ic += kok_ciz(74, 78, '', '24', LAC)
-
-    ic += kutu(244, 28, 104, 28, TUR_A, TUR, 6, 1.2)
-    ic += yazi(270, 46, '3)', TUR)
-    ic += kok_ciz(306, 46, '3', '6', LAC)
-
-    ic += kutu(244, 60, 104, 28, KIR_A, KIR, 6, 1.2)
-    ic += yazi(270, 78, '4)', KIR)
-    ic += kok_ciz(306, 78, '2', '3', LAC)
-    return svg(360, 102, ic, 'Merkezde karekök 54 ve çevresinde 4 çarpan bölgesi panosu.')
-
-
-def tahta_cita_kesim():
-    """Soru 12: Toplam boyu kök 128 cm olan çıtadan 3 adet kök 8 cm parça kesilmesi."""
-    ic = kutu(4, 4, 352, 88, KUM, ALTIN, 8, 1.4)
-    ic += yazi(180, 20, 'Tahta Çıta Kesim Modeli · Toplam Boy: 8 kök 2 cm', KAHVE)
-    for i in range(3):
-        x = 16 + i * 74
-        ic += kutu(x, 30, 70, 34, TUR_A, TUR, 5, 1.3)
-        ic += kok_ciz(x + 35, 52, '', '8', TUR)
-    ic += kutu(242, 30, 102, 34, YES_A, YES, 5, 1.4)
-    ic += yazi(293, 52, 'Kalan = ?', YESIL_K)
-    ic += yazi(180, 82, 'Toplam Uzunluk: karekök 128 cm', LAC, 'middle', True)
-    return svg(360, 96, ic, 'Toplam boyu karekök 128 cm olan çıtadan 3 adet karekök 8 cm parça kesilmesi.')
-
-
-def iki_kare_fayans_ab():
-    """Soru 13: Alanları 50 cm² ve 18 cm² olan yan yana iki karesel fayans."""
-    ic = kutu(4, 4, 352, 92, MAVI_A, MAVI, 8, 1.4)
-    ic += yazi(180, 20, 'Yan Yana İki Karesel Fayans · |AB| Uzunluğu', MAVI)
-    ic += kutu(76, 26, 112, 50, '#fff', MAVI, 5, 1.4)
-    ic += yazi(132, 55, 'Alan = 50 cm²', MAVI)
-    ic += kutu(188, 38, 84, 38, '#fff', TUR, 5, 1.4)
-    ic += yazi(230, 61, '18 cm²', TUR)
-    ic += yazi(66, 78, 'A', KIR)
-    ic += yazi(282, 78, 'B', KIR)
-    ic += yazi(180, 90, '|AB| Toplam Kenar Uzunluğu = ? cm', LAC)
-    return svg(360, 98, ic, 'Alanları 50 ve 18 santimetrekare olan iki karesel fayansın yan yana görünümü.')
+GORSELLER = {2: '<svg viewBox="0 0 350 75" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dikdörtgen afiş panosu '
+    'kenar uzunlukları"><rect x="4" y="3" width="342" height="70" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Dikdörtgen Afiş Panosu</text><text x="11.0" y="40.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Kısa Kenar: 2</text><path d="M103.5 35.5 L105.7 34.1 L108.5 41.8 L112.1 26.2 '
+    'H126.3" fill="none" stroke="#0b2257" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><text x="119.8" y="40.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">3</text><text x="132.5" '
+    'y="40.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">dm</text><text '
+    'x="11.0" y="63.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Uzun '
+    'Kenar:</text><path d="M102.4 58.0 L104.6 56.6 L107.4 64.2 L111.0 48.7 H132.8" fill="none" stroke="#0b2257" stroke-width="1.25" '
+    'stroke-linecap="round" stroke-linejoin="round"/><text x="122.5" y="63.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">27</text><text x="139.0" y="63.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">dm</text></svg>',
+ 4: '<svg viewBox="0 0 350 108" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört kareköklü işlem '
+    'kartı"><rect x="4" y="3" width="167" height="49" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">I. Kart · '
+    'Çarpma</text><text x="30.1" y="41.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">2</text><path d="M39.4 36.2 L41.6 34.8 L44.4 42.5 L48.0 26.9 H62.2" fill="none" stroke="#0b2257" stroke-width="1.25" '
+    'stroke-linecap="round" stroke-linejoin="round"/><text x="55.8" y="41.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">5</text><text x="64.9" y="41.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257"> · 3</text><path d="M86.7 36.2 L88.9 34.8 L91.7 42.5 L95.3 26.9 '
+    'H109.5" fill="none" stroke="#0b2257" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><text x="103.0" y="41.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">5</text><text x="115.7" '
+    'y="41.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">= 30</text><rect '
+    'x="179" y="3" width="167" height="49" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">II. Kart · '
+    'Bölme</text><text x="197.2" y="41.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">20</text><path d="M214.8 36.2 L217.0 34.8 L219.8 42.5 L223.4 26.9 H245.2" fill="none" stroke="#0b2257" '
+    'stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><text x="234.9" y="41.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">18</text><text x="247.9" y="41.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257"> : 5</text><path d="M269.7 36.2 L271.9 34.8 '
+    'L274.7 42.5 L278.3 26.9 H292.5" fill="none" stroke="#0b2257" stroke-width="1.25" stroke-linecap="round" '
+    'stroke-linejoin="round"/><text x="286.0" y="41.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">2</text><text x="298.7" y="41.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">= 12</text><rect x="4" y="56" width="167" height="49" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="74.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">III. Kart · Toplama</text><path d="M21.6 89.2 L23.8 87.8 L26.6 95.5 L30.2 79.9 '
+    'H52.0" fill="none" stroke="#0b2257" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><text x="41.7" y="94.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">27</text><text x="54.7" '
+    'y="94.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257"> +</text><path '
+    'd="M71.2 89.2 L73.4 87.8 L76.2 95.5 L79.8 79.9 H101.6" fill="none" stroke="#0b2257" stroke-width="1.25" stroke-linecap="round" '
+    'stroke-linejoin="round"/><text x="91.3" y="94.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">12</text><text x="104.3" y="94.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257"> =</text><path d="M120.8 89.2 L123.0 87.8 L125.8 95.5 L129.4 79.9 H151.2" '
+    'fill="none" stroke="#0b2257" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><text x="140.9" y="94.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">39</text><rect x="179" '
+    'y="56" width="167" height="49" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="74.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">IV. Kart · '
+    'Bölme</text><text x="209.5" y="94.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">15 :</text><path d="M238.5 89.2 L240.7 87.8 L243.5 95.5 L247.1 79.9 H261.3" fill="none" stroke="#0b2257" '
+    'stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><text x="254.8" y="94.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">5</text><text x="264.0" y="94.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257"> = 3</text><path d="M290.0 89.2 L292.2 87.8 '
+    'L295.0 95.5 L298.6 79.9 H312.8" fill="none" stroke="#0b2257" stroke-width="1.25" stroke-linecap="round" '
+    'stroke-linejoin="round"/><text x="306.3" y="94.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">5</text></svg>',
+ 6: '<svg viewBox="0 0 350 75" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Üçgen yürüyüş parkuru '
+    'kenar uzunlukları"><rect x="4" y="3" width="342" height="70" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Üçgen '
+    'Yürüyüş Parkuru Kenarları</text><text x="11.0" y="40.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">1. Kenar:</text><path d="M77.4 35.5 L79.6 34.1 L82.4 41.8 L86.0 26.2 H107.8" fill="none" '
+    'stroke="#0b2257" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><text x="97.5" y="40.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">75</text><text x="110.5" y="40.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257"> m · 2. '
+    'Kenar:</text><path d="M208.1 35.5 L210.3 34.1 L213.1 41.8 L216.7 26.2 H238.6" fill="none" stroke="#0b2257" stroke-width="1.25" '
+    'stroke-linecap="round" stroke-linejoin="round"/><text x="228.3" y="40.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">48</text><text x="244.8" y="40.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">m · 3.</text><text x="11.0" y="63.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Kenar:</text><path d="M60.8 58.0 L63.0 56.6 '
+    'L65.8 64.2 L69.4 48.7 H91.2" fill="none" stroke="#0b2257" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><text '
+    'x="80.9" y="63.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">27</text><text x="97.4" y="63.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">m</text></svg>',
+ 8: '<svg viewBox="0 0 350 113" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Merkezde karekök 54 ve '
+    'çevresinde 4 çarpan bölgesi"><rect x="4" y="3" width="167" height="49" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="21.6" y="32.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Merkez Sayı ·</text><path d="M120.2 27.0 L122.5 25.6 L125.2 33.3 L128.8 17.7 H150.7" fill="none" '
+    'stroke="#7c3aed" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><text x="140.4" y="32.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">54</text><rect x="179" y="3" width="167" '
+    'height="49" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Bölge</text><path d="M250.0 36.2 L252.2 '
+    '34.8 L255.0 42.5 L258.6 26.9 H272.8" fill="none" stroke="#0b2257" stroke-width="1.25" stroke-linecap="round" '
+    'stroke-linejoin="round"/><text x="266.3" y="41.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">6</text><rect x="4" y="56" width="167" height="54" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="76.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2. Bölge</text><path d="M71.2 91.7 L73.4 90.3 L76.2 98.0 L79.8 82.4 H101.6" fill="none" '
+    'stroke="#0b2257" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><text x="91.3" y="97.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">24</text><rect x="179" y="56" width="167" '
+    'height="54" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="200.2" y="76.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3. Bölge: 3</text><path d="M275.0 71.2 L277.2 '
+    '69.8 L280.0 77.5 L283.6 62.0 H297.8" fill="none" stroke="#d97706" stroke-width="1.25" stroke-linecap="round" '
+    'stroke-linejoin="round"/><text x="291.3" y="76.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">6</text><text x="304.0" y="76.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">· 4.</text><text x="220.7" y="99.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Bölge: 2</text><path d="M278.9 93.8 L281.1 92.3 L283.9 100.0 L287.5 '
+    '84.5 H301.7" fill="none" stroke="#d97706" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><text x="295.2" '
+    'y="99.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">3</text></svg>',
+ 11: '<svg viewBox="0 0 350 74" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tahta çıta kesim '
+     'modeli"><rect x="4" y="3" width="167" height="68" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+     'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Tahta Çıta '
+     'Toplam</text><text x="25.8" y="41.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+     'fill="#2451d6">Uzunluğu ·</text><path d="M107.8 36.5 L110.0 35.1 L112.8 42.8 L116.4 27.2 H146.5" fill="none" stroke="#2451d6" '
+     'stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><text x="132.0" y="41.8" text-anchor="middle" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">128</text><text x="87.5" y="62.2" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">cm</text><rect x="179" y="3" width="167" '
+     'height="68" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Kesilen 3 Eş Parça</text><text x="199.2" '
+     'y="41.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Her '
+     'biri</text><path d="M257.3 36.5 L259.5 35.1 L262.3 42.8 L265.9 27.2 H280.1" fill="none" stroke="#0b2257" stroke-width="1.25" '
+     'stroke-linecap="round" stroke-linejoin="round"/><text x="273.6" y="41.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#0b2257">8</text><text x="286.3" y="41.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">cm (3</text><text x="262.5" y="62.2" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">adet) → Kalan: ? cm</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = dogal_sayi_carpan_sema()
-    s[2]['gorsel'] = dikdortgen_pano_alan()
-    s[4]['gorsel'] = dort_islem_kartlari()
-    s[5]['gorsel'] = alani_verilen_karton()
-    s[6]['gorsel'] = ucgen_parkur_cevre()
-    s[7]['gorsel'] = rasyonel_toplama_akis()
-    s[8]['gorsel'] = hedef_tahtasi_carpan()
-    s[11]['gorsel'] = tahta_cita_kesim()
-    s[12]['gorsel'] = iki_kare_fayans_ab()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -15,8 +15,7 @@
   "hatirla": [
     "Geçmişteki durum ve doğum bilgileri anlatılırken I/He/She/It özneleriyle was (wasn’t), We/You/They özneleriyle were (weren’t) kullanılır.",
     "Eylem cümlelerinde olumlu yapıda fiilin 2. hâli (V2: moved, graduated / grew, won, went), olumsuzda didn’t + V1, soruda Did + Subject + V1 kullanılır.",
-    "Yıllar okunurken 2000 öncesi ikişerli ayrılır (1946 -> nineteen forty-six, 1905 -> nineteen oh five, 1700 -> seventeen hundred).",
-    "Yıl ve aylardan önce in (in 1969, in May), gün içeren tam tarihlerden önce ise sıra sayısı ve on edatı (on September 8, 1946) kullanılır."
+    "Yıllar okunurken 2000 öncesi ikişerli ayrılır (1946 -> nineteen forty-six, 1905 -> nineteen oh five, 1700 -> seventeen hundred)."
   ],
   "sorular": [
     {
@@ -35,8 +34,7 @@
     {
       "tur": "tablo",
       "duzey": "hatirla",
-      "gorsel_var": true,
-      "soru": "Görseldeki tarih ve yıl kartlarının İngilizce okunuşlarını ve cümle içinde birlikte kullanıldıkları zaman edatını (in / on) tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen tarih ve yılların İngilizce okunuşlarını ve cümle içinde birlikte kullanıldıkları zaman edatını (in / on) yazınız. İlk satır örnektir.",
       "basliklar": [
         "Yıl / Tarih Kartı",
         "İngilizce Okunuşu (Yazılışı)",
@@ -46,7 +44,9 @@
         [
           "1905",
           "nineteen oh five",
-          "in"
+          {
+            "b": "in"
+          }
         ],
         [
           "1700",
@@ -87,10 +87,6 @@
         [
           "win a prestigious award",
           "Saygın bir ödül kazanmak"
-        ],
-        [
-          "get married and raise kids",
-          "Evlenmek ve çocuk büyütmek"
         ]
       ]
     },
@@ -110,8 +106,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki bilgi kartına göre «Why did Marie Curie move to Paris in 1891?» sorusunu amaç bildiren «to» yapısını kullanarak tam bir İngilizce cümleyle cevaplayınız.",
+      "soru": "Marie Curie, üniversitede fizik ve matematik eğitimi almak (study physics and mathematics at the university) amacıyla 1891 yılında Paris’e taşınmıştır. Buna göre «Why did Marie Curie move to Paris in 1891?» sorusunu amaç bildiren «to» yapısını kullanarak tam bir İngilizce cümleyle cevaplayınız.",
       "cevap": "She moved to Paris in 1891 to study physics and mathematics at the university.",
       "satir": 2
     },
@@ -135,10 +130,6 @@
         {
           "metin": "Gün ve ay içeren tam tarihlerden önce (örneğin «on November 10, 1938») «on» edatı kullanılır.",
           "dogru": true
-        },
-        {
-          "metin": "«Graduate» fiili bir kurumdan mezun olmak anlamında «graduate to» edatıyla kullanılır.",
-          "dogru": false
         }
       ]
     },
@@ -158,8 +149,7 @@
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki yaşam evreleri şeridini takip ederek bir bilim insanının biyografisine ait cümleleri kronolojik sıraya göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Bir bilim insanının biyografisine ait aşağıdaki cümleleri kronolojik sıraya göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "She was born in a small town in 1954 and grew up there with her family.",
         "She graduated from the faculty of medicine in 1978 with high honours.",
@@ -230,10 +220,6 @@
         {
           "metin": "Barış Manço was born ___ January 2, 1943.",
           "cevap": "on"
-        },
-        {
-          "metin": "Nikola Tesla ___ get married; he lived alone in New York.",
-          "cevap": "didn’t"
         }
       ],
       "fazla": [
@@ -243,8 +229,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki millî güreşçimiz Yaşar Doğu’ya ait biyografi kartını inceleyerek onun hayatı hakkında iki adet Simple Past Tense cümlesi yazınız.",
+      "soru": "Millî güreşçimiz Yaşar Doğu (Born: 1913, Samsun — Medal: 1948 London Olympics Gold Medal) hakkında verilen bilgileri kullanarak iki adet Simple Past Tense cümlesi yazınız.",
       "cevap": "Yaşar Doğu was born in Samsun in 1913. He won a gold medal in the London Olympics in 1948.",
       "satir": 2
     },

@@ -14,9 +14,7 @@
   "hatirla": [
     "Sporcu röportajlarında “Do you often go on a diet?” ve “How often do you train?” soruları Simple Present Tense ve sıklık zarflarıyla cevaplanır.",
     "Never ve hardly ever cümleye olumsuz anlam kattığı için olumlu fiille kullanılır (He never eats junk food; 3. tekil şahısta fiil -s alır).",
-    "Spor ekipmanları: archery → bow and arrow; swimming → goggles and swimsuit; tennis → racket and net; cycling → helmet and knee pads; climbing → rope.",
-    "Top ve takım sporlarıyla play (play basketball), -ing ile bitenlerle go (go swimming), bireysel ve dövüş sporlarıyla do (do archery, do karate) kullanılır.",
-    "Win bir maçı, kupayı veya madalyayı kazanmaktır (win a gold medal); beat ise rakibi yenmektir (beat the opponent); eşit skorda draw (beraberlik) olur."
+    "Spor ekipmanları: archery → bow and arrow; swimming → goggles and swimsuit; tennis → racket and net; cycling → helmet and knee pads; climbing → rope."
   ],
   "sorular": [
     {
@@ -34,7 +32,7 @@
     {
       "tur": "tablo",
       "duzey": "hatirla",
-      "soru": "Görseldeki ekipman kartlarının hangi spora ait olduğunu ve bu sporla kullanılan fiili (play, go, do) tabloya yazınız.",
+      "soru": "Tabloda verilen ekipmanların hangi spora ait olduğunu ve bu sporla kullanılan fiili (play, go, do) yazınız.",
       "basliklar": [
         "Ekipman Kartı",
         "Spor Adı",
@@ -44,7 +42,9 @@
         [
           "1. Kart (bow, arrows, target)",
           "archery",
-          "do"
+          {
+            "b": "do"
+          }
         ],
         [
           "2. Kart (goggles, swimsuit, pool)",
@@ -69,7 +69,7 @@
     {
       "tur": "eslestir",
       "duzey": "hatirla",
-      "soru": "Görseldeki spor rozetlerinde yer alan İngilizce ifadeleri Türkçe karşılıklarıyla eşleştiriniz. Harfleri kutulara yazınız.",
+      "soru": "Aşağıdaki İngilizce spor ifadelerini Türkçe karşılıklarıyla eşleştiriniz. Harfleri kutulara yazınız.",
       "ciftler": [
         [
           "bow and arrow",
@@ -82,14 +82,6 @@
         [
           "opponent",
           "Karşılaşılan rakip oyuncu veya karşı takım"
-        ],
-        [
-          "draw",
-          "Maçın eşit skorla, berabere sonuçlanması"
-        ],
-        [
-          "go on a diet",
-          "Formda kalmak için özel beslenme düzeni uygulamak"
         ]
       ]
     },
@@ -98,10 +90,10 @@
       "duzey": "uygula",
       "soru": "Görseldeki haftalık antrenman çizelgesine göre milli sporcu Sinan hakkında aşağıdakilerden hangisi {koyu:söylenemez?}",
       "secenekler": [
-        "He does archery five times a week.",
-        "He goes jogging three times a week.",
-        "He eats junk food every Saturday and Sunday.",
-        "He never eats junk food during the week."
+        "He does archery twice a week on Mondays and Wednesdays.",
+        "He goes swimming on Tuesdays and Thursdays.",
+        "He never goes jogging at the weekend.",
+        "He goes cycling once a week on Fridays."
       ],
       "dogru": 2
     },
@@ -122,14 +114,6 @@
         {
           "metin": "Our school basketball team ___ the opponent 72-65.",
           "cevap": "beat"
-        },
-        {
-          "metin": "Selin always wears her ___ before swimming in the pool.",
-          "cevap": "goggles"
-        },
-        {
-          "metin": "How ___ do you go jogging in the park on weekdays?",
-          "cevap": "often"
         }
       ],
       "fazla": [
@@ -151,7 +135,7 @@
     {
       "tur": "dy",
       "duzey": "uygula",
-      "soru": "Görseldeki sporcu röportaj panosuna göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
+      "soru": "Doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
       "ifadeler": [
         {
           "metin": "Cansu is a national swimmer and she trains six days a week.",
@@ -168,17 +152,13 @@
         {
           "metin": "She needs a bow and arrows to do her favourite sport.",
           "dogru": false
-        },
-        {
-          "metin": "Her biggest goal is to win an Olympic gold medal for Türkiye.",
-          "dogru": true
         }
       ]
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görselde A ve B satırlarında karışık verilen kelime kartlarını kurallı birer İngilizce cümle olacak biçimde sıralayarak yazınız.",
+      "soru": "A («junk food / never / Mete / eats») ve B («work out? / do you / How often») gruplarında karışık verilen kelimeleri kurallı birer İngilizce cümle olacak biçimde sıralayarak yazınız.",
       "cevap": "A: Mete never eats junk food. B: How often do you work out?",
       "satir": 2
     },
@@ -209,7 +189,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki sporcu profil kartına göre “What equipment does Ece need?” ve “How often does she train?” sorularını tam cümlelerle cevaplayınız.",
+      "soru": "Tenis sporcusu Ece antrenmanlarında raket ve top kullanmakta, haftada dört kez antrenman yapmaktadır. Buna göre “What equipment does Ece need?” ve “How often does she train?” sorularını tam cümlelerle cevaplayınız.",
       "cevap": "1) She needs a racket and a ball. 2) She trains four times a week.",
       "satir": 2
     },
@@ -254,9 +234,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki spor kartlarından birini seçerek o sporda gereken ekipmanı ve kendi antrenman rutininizi anlatan üç İngilizce cümle yazınız.",
+      "soru": "Okçuluk (archery), yüzme (swimming) veya bisiklet (cycling) sporlarından birini seçerek o sporda gereken ekipmanı ve kendi antrenman rutininizi anlatan üç İngilizce cümle yazınız.",
       "cevap": "I do archery twice a week. You need a bow and arrows for this sport. I always eat healthy food before training.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "coktan",

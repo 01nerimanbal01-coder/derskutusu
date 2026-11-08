@@ -14,9 +14,7 @@
   ],
   "hatirla": [
     "Hac; sağlık, özgürlük, yol güvenliği ve maddi güce sahip akıllı ve ergen Müslümanların Zilhicce ayında yaptıkları hem beden hem mal ile yerine getirilen farz ibadettir.",
-    "Haccın geçerlilik şartı olan üç farzı (rüknü); mîkat sınırında ihrama girmek, Arefe günü Arafat’ta vakfe yapmak ve Kâbe’de ziyaret tavafı yapmaktır.",
-    "Müzdelife vakfesi, Safa ile Merve tepeleri arasında yedi kez sa’y yapmak, Mina’da şeytan taşlamak, tıraş olmak ve veda tavafı haccın vacipleridir.",
-    "Umre; hac günleri dışında yılın her zamanı ihram, tavaf ve sa’y ile yapılan sünnet bir ibadettir; umrede vakfe, şeytan taşlama ve kurban kesme yoktur."
+    "Haccın geçerlilik şartı olan üç farzı (rüknü); mîkat sınırında ihrama girmek, Arefe günü Arafat’ta vakfe yapmak ve Kâbe’de ziyaret tavafı yapmaktır."
   ],
   "sorular": [
     {
@@ -35,8 +33,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki kutsal mekân kartlarından yararlanarak tablodaki boş bırakılan bölümleri uygun ifadelerle tamamlayınız. İlk satır örnektir.",
+      "soru": "Tablodaki boş bırakılan bölümleri uygun ifadelerle tamamlayınız. İlk satır örnektir.",
       "basliklar": [
         "Kutsal Mekân",
         "Gerçekleştirilen İbadet / Görev",
@@ -46,7 +43,9 @@
         [
           "Mîkat Sınırı",
           "Niyet ve telbiye ile ihrama girilmesi",
-          "Haccın farzı (başlangıç şartı)"
+          {
+            "b": "Haccın farzı (başlangıç şartı)"
+          }
         ],
         [
           "Arafat Tepesi",
@@ -87,10 +86,6 @@
         [
           "Tavaf",
           "Kâbe’nin etrafında yedi şavttan oluşan tam dönüş ibadeti"
-        ],
-        [
-          "Telbiye",
-          "İhramlı iken okunan «Lebbeyk Allâhümme lebbeyk...» duası"
         ]
       ]
     },
@@ -110,10 +105,9 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki bilgi levhasında modellenen sa’y ibadeti, tarihte hangi peygamberin eşinin su arayışını sembolize eder ve bu olayda hangi kutsal su çıkmıştır?",
+      "soru": "Safa ile Merve tepeleri arasında yapılan sa’y ibadeti, tarihte hangi peygamberin eşinin su arayışını sembolize eder ve bu olayda hangi kutsal su çıkmıştır?",
       "cevap": "Hz. İbrahim’in (as) eşi Hz. Hâcer’in oğlu Hz. İsmail (as) için su arayışını simgeler; zemzem suyu çıkmıştır.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "dy",
@@ -135,10 +129,6 @@
         {
           "metin": "Arafat ile Mina arasında yer alan Müzdelife’de vakfe yapmak ve taş toplamak vaciptir.",
           "dogru": true
-        },
-        {
-          "metin": "Kâbe’nin etrafında yapılan bir tavaf toplam beş şavttan meydana gelir.",
-          "dogru": false
         }
       ]
     },
@@ -158,8 +148,7 @@
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki kutsal yolculuk şeridini inceleyerek hac ibadetinin yapılış aşamalarını kronolojik sıraya göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Hac ibadetinin yapılış aşamalarını kronolojik sıraya göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "Mîkat sınırında niyet edip telbiye getirerek ihrama girmek",
         "Arefe günü öğle vaktinden itibaren Arafat’ta vakfe yapmak",
@@ -230,10 +219,6 @@
         {
           "metin": "Hac günleri dışında yılın her zamanı yapılabilen sünnet ziyarete ___ denir.",
           "cevap": "umre"
-        },
-        {
-          "metin": "Sa’y esnasında erkeklerin iki yeşil direk arasında hızlı yürümesine ___ denir.",
-          "cevap": "hervele"
         }
       ],
       "fazla": [
@@ -243,10 +228,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki kartları inceleyiniz. Farklı ülke, dil ve kültürlerden gelen Müslümanların aynı sade ihram örtüsü içinde buluşması toplumsal açıdan hangi değerleri güçlendirir?",
+      "soru": "Farklı ülke, dil ve kültürlerden gelen Müslümanların hac ve umrede aynı sade ihram örtüsü içinde buluşması toplumsal açıdan hangi değerleri güçlendirir?",
       "cevap": "Makam ve ırk ayrımını kaldırarak eşitlik, evrensel kardeşlik, tevazu ve yardımlaşma bilincini güçlendirir.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "coktan",

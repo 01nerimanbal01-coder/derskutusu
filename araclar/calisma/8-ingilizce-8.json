@@ -16,28 +16,28 @@
   "hatirla": [
     "Altı temel pişirme yöntemi (cooking methods): bake (fırında hamur işi pişirmek), roast (fırında et veya tavuk kızartmak), grill (ızgarada pişirmek), boil (suda haşlamak), steam (buharda pişirmek) ve fry (kızgın yağda kızartmak).",
     "Hazırlık fiilleri ve mutfak araçları: peel -> peeler, chop-slice-dice -> knife and cutting board, grate -> grater, mash -> masher, whisk -> whisk, drain-strain -> strainer, roll -> rolling pin.",
-    "Tarif aşamalarını sırayla anlatırken First (İlk olarak) -> Second (İkinci olarak) -> Next, Then, After that (Sonra, Ardından) -> Finally (Son olarak) sıralama bağlaçları kullanılır.",
-    "Tat sıfatları: sweet (tatlı), sour (ekşi), spicy (baharatlı ve acı), salty (tuzlu), bitter (kahve ve bitter çikolata acısı), greasy (yağlı); malzemeler ise ‘What are the ingredients?’ sorusuyla sorulur."
+    "Tarif aşamalarını sırayla anlatırken First (İlk olarak) -> Second (İkinci olarak) -> Next, Then, After that (Sonra, Ardından) -> Finally (Son olarak) sıralama bağlaçları kullanılır."
   ],
   "sorular": [
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki pişirme yöntemi kartlarını inceleyerek tablodaki yemeklerin hangi pişirme fiiliyle (cooking method) ve hangi mutfak aracı veya ortamında pişirildiğini yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki yemeklerin hangi pişirme fiiliyle (cooking method) ve hangi mutfak aracı veya ortamında pişirildiğini yazınız. İlk satır örnektir.",
       "basliklar": [
-        "Yemek ve Kart",
+        "Yemek (Dish)",
         "Pişirme Fiili (Verb)",
         "Kullanılan Araç veya Ortam"
       ],
       "satirlar": [
         [
-          "1. Kart (Homemade apple cake)",
+          "1. Homemade apple cake",
           "bake",
-          "in the preheated oven (baking tray)"
+          {
+            "b": "in the preheated oven (baking tray)"
+          }
         ],
         [
-          "2. Kart (Spaghetti pasta)",
+          "2. Spaghetti pasta",
           {
             "b": "boil"
           },
@@ -46,7 +46,7 @@
           }
         ],
         [
-          "3. Kart (Fresh salmon fish)",
+          "3. Fresh salmon fish",
           {
             "b": "grill"
           },
@@ -73,10 +73,6 @@
         [
           "knead and roll the dough",
           "Hamuru yoğurup merdaneyle (rolling pin) açmak"
-        ],
-        [
-          "mash the boiled potatoes",
-          "Haşlanmış patatesleri eziciyle (masher) püre yapmak"
         ]
       ],
       "sutun": "sol"
@@ -115,10 +111,6 @@
         {
           "metin": "‘What are the ingredients of this dish?’ sorusu yemeğin kaç dakikada piştiğini öğrenmek için sorulur.",
           "dogru": false
-        },
-        {
-          "metin": "‘Squeeze half a lemon into the salad’ cümlesi salataya yarım limon sıkılmasını ifade eder.",
-          "dogru": true
         }
       ],
       "sutun": "sol"
@@ -140,8 +132,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki “Homemade Berry Muffins” malzeme ve pişirme kartını inceleyerek aşağıdaki iki soruyu İngilizce yanıtlayınız.\nA) What are the main ingredients?   B) How long do we bake the muffins in the oven?",
+      "soru": "Yaban mersinli kek (blueberry muffin: flour, eggs, milk, sugar, blueberries — bake for 25 minutes at 180 °C) tarifiyle ilgili aşağıdaki iki soruyu İngilizce yanıtlayınız.\nA) What are the main ingredients?   B) How long do we bake the muffins in the oven?",
       "cevap": "A) Flour, eggs, milk, sugar and blueberries. B) We bake them for twenty-five minutes at 180 °C.",
       "satir": 2,
       "sutun": "sol"
@@ -163,8 +154,7 @@
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki makarna hazırlama akış şemasından yararlanarak aşağıdaki İngilizce tarif cümlelerini 1’den 4’e kadar doğru sırayla numaralandırınız.",
+      "soru": "Aşağıdaki İngilizce tarif cümlelerini 1’den 4’e kadar doğru sırayla numaralandırınız.",
       "ogeler": [
         "First, boil some water in a large pot and add a pinch of salt.",
         "Second, put a packet of pasta into the boiling water and cook it for ten minutes.",
@@ -243,10 +233,6 @@
         {
           "metin": "My sister likes ___ honey and butter on her toast at breakfast.",
           "cevap": "spreading"
-        },
-        {
-          "metin": "Dark coffee without sugar has a strong ___ taste.",
-          "cevap": "bitter"
         }
       ],
       "fazla": [
@@ -257,8 +243,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki “Healthy Omelette Cue Card” ipuçlarını ve sıralama bağlaçlarını (First, Second, Then, Finally) kullanarak dört cümlelik bir omlet tarifi yazınız.",
+      "soru": "Verilen hazırlık adımlarını (heat olive oil / whisk eggs / add cheese / cook in the pan) ve sıralama bağlaçlarını (First, Second, Then, Finally) kullanarak dört cümlelik bir omlet tarifi yazınız.",
       "cevap": "First heat oil, then whisk eggs, add cheese, and finally cook.",
       "satir": 2,
       "sutun": "sag"

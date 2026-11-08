@@ -14,16 +14,13 @@
   ],
   "hatirla": [
     "Atatürk Temmuz 1921’de cephede savaş sürerken Ankara’da Maarif Kongresi’ni toplamış ve bağımsızlığın kalıcı olması için cehaletle savaşın düşmanla savaştan az önemli olmadığını vurgulamıştır.",
-    "Gerçekleşmiş gerekçe bildiren cümleler neden-sonuç (-dığı için), ulaşılmak istenen hedef bildirenler amaç-sonuç (-mak amacıyla), şarta bağlı olanlar ise koşul-sonuç (-sa, -dıkça) cümlesidir.",
-    "Cümlenin ögeleri YÖN kuralıyla (1. Yüklem, 2. Özne, 3. Nesne ve Tamlayıcılar) bulunur; tamlamalar, deyimler ve birleşik fiiller bölünmez, gizli özne öge sayısına katılmaz.",
-    "Fiil cümlesinde vurgu yüklemden hemen önceki ögede, isim cümlesinde yüklemdedir; iki virgül veya iki kısa çizgi arasındaki açıklayıcı ifade ara söz, hitap ve bağlaçlar ise Cümle Dışı Unsurdur (CDU)."
+    "Gerçekleşmiş gerekçe bildiren cümleler neden-sonuç (-dığı için), ulaşılmak istenen hedef bildirenler amaç-sonuç (-mak amacıyla), şarta bağlı olanlar ise koşul-sonuç (-sa, -dıkça) cümlesidir."
   ],
   "sorular": [
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki ara söz ve cümle dışı unsur şemasından yararlanarak tablodaki cümlelerde yer alan ara söz veya hitabın görevini yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki cümlelerde yer alan ara söz veya hitabın görevini yazınız. İlk satır örnektir.",
       "basliklar": [
         "Örnek Cümle",
         "Ara Söz veya Hitap",
@@ -33,7 +30,9 @@
         [
           "Atatürk, ülkemizin kurucusu, eğitime öncelik verdi.",
           "ülkemizin kurucusu",
-          "Öznenin açıklayıcısı olan ara söz"
+          {
+            "b": "Öznenin açıklayıcısı olan ara söz"
+          }
         ],
         [
           "Başkentimizi, Ankara’yı, kongre merkezi seçtik.",
@@ -71,10 +70,6 @@
         [
           "Zarf tamlayıcısı",
           "Yüklemi zaman, durum, miktar ve sebep yönünden tamamlayan öge"
-        ],
-        [
-          "Cümle dışı unsur",
-          "Öge değerine sahip olmayan bağlaç, ünlem ve hitap sözleri"
         ]
       ]
     },
@@ -111,10 +106,6 @@
         {
           "metin": "‘Akşama bütün ödevlerimi bitireceğim.’ cümlesinde ‘Akşama’ sözcüğü yer tamlayıcısıdır.",
           "dogru": false
-        },
-        {
-          "metin": "Atatürk Temmuz 1921’de savaş devam ederken Ankara’da Maarif Kongresi’ni toplamıştır.",
-          "dogru": true
         }
       ]
     },
@@ -134,8 +125,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki dinleme metni kartında Atatürk’ün “Cehaletle savaş, düşmanla savaştan daha az önemli değildir.” sözü ve Maarif Kongresi bilgisi verilmiştir. Atatürk’ün savaş ortasında eğitim kongresi toplamasının nedenini açıklayınız.",
+      "soru": "Atatürk’ün “Cehaletle savaş, düşmanla savaştan daha az önemli değildir.” sözü ve Maarif Kongresi bilgisi verilmiştir. Atatürk’ün savaş ortasında eğitim kongresi toplamasının nedenini açıklayınız.",
       "cevap": "Askerî zaferlerin ancak çağdaş ve millî bir eğitimle kalıcı bağımsızlığa dönüşeceğine inanmasıdır.",
       "satir": 2
     },
@@ -143,7 +133,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görselde eğitim konulu dört cümle ve anlam ilişkisi etiketleri verilmiştir. Numaralanmış cümlelerden hangisi “amaç-sonuç” ilişkisi bildirmektedir?",
+      "soru": "Görselde eğitim konulu dört cümle verilmiştir. Numaralanmış cümlelerden hangisi “amaç-sonuç” ilişkisi bildirmektedir?",
       "secenekler": [
         "I. cümle: Okuma yazma oranını artırmak üzere ülke genelinde Millet Mektepleri açıldı.",
         "II. cümle: Yoğun kar yağışı başladığı için köy okullarındaki derslere iki gün ara verildi.",
@@ -155,8 +145,7 @@
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki YÖN kuralı şemasını dikkate alarak bir cümleyi ögelerine ayırırken izlenen adımları baştan sona doğru 1’den 4’e kadar numaralandırınız.",
+      "soru": "Bir cümleyi ögelerine ayırırken izlenen adımları baştan sona doğru 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "Tamlamalar ve deyimler bölünmeden cümlenin yargı bildiren temel ögesi olan yüklem bulunur.",
         "Yükleme ‘Kim?’ veya ‘Ne?’ sorusu sorularak işi yapan gerçek veya gizli özne tespit edilir.",
@@ -232,10 +221,6 @@
         {
           "metin": "Önemli tarih ve kavramları yazarak dinleme yöntemine ___ alarak dinleme denir.",
           "cevap": "not"
-        },
-        {
-          "metin": "Fiil cümlelerinde vurgu yüklemden hemen ___ öge üzerindedir.",
-          "cevap": "önceki"
         }
       ],
       "fazla": [
@@ -245,8 +230,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki cümle kartında “Eğitimdir ki bir milleti özgür, bağımsız ve yüksek bir toplum hâlinde yaşatır.” sözü verilmiştir. Bu cümledeki “ki” bağlacının öge değerini ve Atatürk’ün eğitime yüklediği temel görevi yazınız.",
+      "soru": "Atatürk’ün “Eğitimdir ki bir milleti özgür, bağımsız ve yüksek bir toplum hâlinde yaşatır.” cümlesindeki “ki” bağlacının öge değerini ve eğitime yüklenen temel görevi yazınız.",
       "cevap": "‘Ki’ bağlacı cümle dışı unsurdur (CDU); eğitim ise milleti özgür ve bağımsız yaşatan temel güçtür.",
       "satir": 2
     }

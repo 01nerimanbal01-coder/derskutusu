@@ -15,8 +15,7 @@
   ],
   "hatirla": [
     "Edebiyat metnini ve kitap fuarı ({ar:مَعْرِضُ الْكِتَابِ}) diyaloğunu çözümlerken kişiyi «{ar:مَنْ}» (kim?), konuyu «{ar:مَاذَا}» (ne?), zamanı «{ar:مَتَى}» (ne zaman?), sebebi ise «{ar:لِمَاذَا}» (niçin?) soru edatı belirler.",
-    "Doğu edebiyatının dünya klasiği «{ar:أَلْفُ لَيْلَةٍ وَلَيْلَةٍ}» (Binbir Gece Masalları), halk edebiyatının nükteli kahramanı «{ar:جُحَا}» (Cuha) olarak tanınır; tercihler «{ar:أُحِبُّ الرِّوَايَاتِ التَّارِيخِيَّةَ}» kalıbıyla anlatılır.",
-    "İletişimde «{ar:هَيَّا بِنَا}» (Haydi gidelim), «{ar:كُلُّ شَيْءٍ عَلَى مَا يُرَامُ}» (Her şey yolunda) ve «{ar:سَلَامَتُكَ}» (Geçmiş olsun) kalıpları; sıralamada «{ar:قَبْلَ}» (önce), «{ar:ثُمَّ}» ve «{ar:بَعْدَ}» (sonra) kullanılır."
+    "Doğu edebiyatının dünya klasiği «{ar:أَلْفُ لَيْلَةٍ وَلَيْلَةٍ}» (Binbir Gece Masalları), halk edebiyatının nükteli kahramanı «{ar:جُحَا}» (Cuha) olarak tanınır; tercihler «{ar:أُحِبُّ الرِّوَايَاتِ التَّارِيخِيَّةَ}» kalıbıyla anlatılır."
   ],
   "sorular": [
     {
@@ -35,10 +34,6 @@
         [
           "{ar:سَلَامَتُكَ}",
           "Geçmiş olsun"
-        ],
-        [
-          "{ar:كُلُّ عَامٍ وَأَنْتُمْ بِخَيْرٍ}",
-          "İyi bayramlar"
         ]
       ]
     },
@@ -58,21 +53,22 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Kartlardaki Arapça cümlelerin kuruluşuna göre türünü (İsim cümlesi / Fiil cümlesi) ve Türkçe anlamını yazarak tabloyu tamamlayınız.",
+      "soru": "Türünü (İsim cümlesi / Fiil cümlesi) ve Türkçe anlamını yazarak tabloyu tamamlayınız.",
       "basliklar": [
-        "Cümle Kartı",
+        "Arapça Cümle",
         "Cümle Türü",
         "Türkçe Anlamı"
       ],
       "satirlar": [
         [
-          "1. Kart ({ar:الصُّنْدُوقُ فِي زَاوِيَةِ الْغُرْفَةِ})",
+          "1. {ar:الصُّنْدُوقُ فِي زَاوِيَةِ الْغُرْفَةِ}",
           "İsim cümlesi",
-          "Sandık odanın köşesindedir."
+          {
+            "b": "Sandık odanın köşesindedir."
+          }
         ],
         [
-          "2. Kart ({ar:قَرَأَ التِّلْمِيذُ قِصَّةَ جُحَا})",
+          "2. {ar:قَرَأَ التِّلْمِيذُ قِصَّةَ جُحَا}",
           {
             "b": "Fiil cümlesi"
           },
@@ -81,7 +77,7 @@
           }
         ],
         [
-          "3. Kart ({ar:الرِّوَايَةُ التَّارِيخِيَّةُ مُمْتِعَةٌ})",
+          "3. {ar:الرِّوَايَةُ التَّارِيخِيَّةُ مُمْتِعَةٌ}",
           {
             "b": "İsim cümlesi"
           },
@@ -124,10 +120,6 @@
         {
           "metin": "Akılsız çoğul isimlerin ({ar:الرِّوَايَاتُ، الْكُتُبُ}) sıfatları tekil dişil ({ar:التَّارِيخِيَّةُ}) olarak gelir.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:ذَهَبَ الطَّالِبُ إِلَى مَعْرِضِ الْكِتَابِ}» cümlesi özel isimle başladığı için isim cümlesidir.",
-          "dogru": false
         }
       ]
     },
@@ -161,10 +153,6 @@
         {
           "metin": "Uykudan önce kitap okuduğunu belirten kişi «___ {ar:النَّوْمِ}» der.",
           "cevap": "{ar:قَبْلَ}"
-        },
-        {
-          "metin": "Arkadaşlarını fuara davet eden öğrenci «___ {ar:نَذْهَبْ}» diye başlar.",
-          "cevap": "{ar:هَيَّا بِنَا}"
         }
       ],
       "fazla": [
@@ -174,15 +162,13 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Zaman çizelgesindeki «{ar:قَبْلَ الظُّهْرِ}» ve «{ar:بَعْدَ الدَّرْسِ}» ifadelerinde ikinci kelimelerin neden esreli okunduğunu ve anlamlarını yazınız.",
-      "cevap": "{ar:قَبْلَ} ve {ar:بَعْدَ} sonrası tamlanan olduğundan esrelidir.",
-      "satir": 2
+      "soru": "Aşağıda verilen «{ar:قَبْلَ الظُّهْرِ}» ve «{ar:بَعْدَ الدَّرْسِ}» zaman zarfı tamlamalarında ikinci kelimelerin neden esreli (mecrur) okunduğunu ve bu ifadelerin Türkçe anlamlarını yazınız.",
+      "cevap": "Zarflardan sonra gelen isimler tamlanan olduğundan esreli okunur; «{ar:قَبْلَ الظُّهْرِ}» öğleden önce, «{ar:بَعْدَ الدَّرْسِ}» dersten sonra demektir.",
+      "satir": 3
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Kitap fuarı gezisini anlatan aşağıdaki Arapça cümleleri olayların oluş sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:قَالَ أَحْمَدُ لِصَدِيقِهِ: هَيَّا بِنَا نَذْهَبْ إِلَى مَعْرِضِ الْكِتَابِ.}",
@@ -258,8 +244,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Okuma günlüğü kartındaki ifadelerden yararlanarak sevdiğiniz kitap türünü ve fuarda sırasıyla ne yaptığınızı anlatan Arapça bir cümle yazınız.",
+      "soru": "Sevdiğiniz edebî kitap türünü («{ar:أُحِبُّ...}») ve kitap fuarında («{ar:مَعْرِضُ الْكِتَابِ}») sırasıyla ne yaptığınızı anlatan kurallı bir Arapça cümle yazınız.",
       "cevap": "{ar:أُحِبُّ الرِّوَايَاتِ؛ ذَهَبْتُ لِلْمَعْرِضِ ثُمَّ اشْتَرَيْتُ كِتَابًا.}",
       "satir": 2
     }

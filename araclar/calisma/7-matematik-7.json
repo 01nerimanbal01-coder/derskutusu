@@ -14,9 +14,7 @@
   ],
   "hatirla": [
     "Sıfırdan farklı her rasyonel sayının parantez karesi pozitif, küpü ise tabandaki sayının kendi işaretiyle aynıdır.",
-    "Tam sayılı bir kesrin karesi veya küpü hesaplanırken önce tam sayılı kesir bileşik kesre dönüştürülür, sonra pay ve paydanın kuvveti alınır.",
-    "Çok adımlı işlemlerde önce üslü ifadeler ve parantez içleri hesaplanır; merdivenli kesirlerde eşittir hizasındaki ana kesir çizgisi bölünen ile böleni ayırır.",
-    "Bütünün kesir kadarı bulunurken çarpma, kesir kadarı verilen bütün bulunurken bölme yapılır; kalanın kesri sorularında her adımda geriye kalan miktar kullanılır."
+    "Tam sayılı bir kesrin karesi veya küpü hesaplanırken önce tam sayılı kesir bileşik kesre dönüştürülür, sonra pay ve paydanın kuvveti alınır."
   ],
   "sorular": [
     {
@@ -25,17 +23,17 @@
       "gorsel_var": true,
       "soru": "Görseldeki işlem kartlarında dört üslü rasyonel sayı ifadesinin değerleri hesaplanmıştır. Numaralanmış kartların hangisinde yapılan işlem {koyu:yanlıştır?}",
       "secenekler": [
-        "1. karttaki (−{kesir:3|4})² = +{kesir:9|16} işlemi",
-        "2. karttaki (−1 {kesir:1|2})² = +{kesir:5|4} işlemi",
-        "3. karttaki (−{kesir:2|3})³ = −{kesir:8|27} işlemi",
-        "4. karttaki (−1 {kesir:1|3})³ = −{kesir:64|27} işlemi"
+        "1. karttaki (−{kesir:3|4}){us:|2} = +{kesir:9|16} işlemi",
+        "2. karttaki (−1 {kesir:1|2}){us:|2} = +{kesir:5|4} işlemi",
+        "3. karttaki (−{kesir:2|3}){us:|3} = −{kesir:8|27} işlemi",
+        "4. karttaki (−1 {kesir:1|3}){us:|3} = −{kesir:64|27} işlemi"
       ],
       "dogru": 1
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki şemada verilen rasyonel sayıların karesini ve küpünü işaret kurallarına dikkat ederek tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen rasyonel sayıların karesini ve küpünü işaret kurallarına dikkat ederek yazınız. İlk satır örnektir.",
       "basliklar": [
         "Rasyonel Sayı",
         "Bileşik Kesir Hâli",
@@ -47,7 +45,9 @@
           "(−{kesir:2|5})",
           "−{kesir:2|5}",
           "+{kesir:4|25}",
-          "−{kesir:8|125}"
+          {
+            "b": "−{kesir:8|125}"
+          }
         ],
         [
           "(+{kesir:3|4})",
@@ -89,24 +89,16 @@
       "soru": "Sol sütundaki rasyonel sayı işlemlerini sağ sütundaki doğru sonuçlarıyla eşleştiriniz.",
       "ciftler": [
         [
-          "(−{kesir:3|5})²",
+          "(−{kesir:3|5}){us:|2}",
           "+{kesir:9|25}"
         ],
         [
-          "(−{kesir:1|4})³",
+          "(−{kesir:1|4}){us:|3}",
           "−{kesir:1|64}"
         ],
         [
           "1 + {kesir:2|3}",
           "{kesir:5|3}"
-        ],
-        [
-          "1 ÷ (1 − {kesir:1|3})",
-          "{kesir:3|2}"
-        ],
-        [
-          "80 sayısının {kesir:3|4}’ünün {kesir:1|2}’si",
-          "30"
         ]
       ]
     },
@@ -126,7 +118,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki işlem ağacında verilen (−{kesir:1|2})² ve (−{kesir:1|2})³ değerlerini bularak A ÷ B bölümünün sonucunu adım adım hesaplayınız.",
+      "soru": "A = (−{kesir:1|2}){us:|2} ve B = (−{kesir:1|2}){us:|3} olarak veriliyor. A ve B değerlerini bularak A ÷ B bölümünün sonucunu adım adım hesaplayınız.",
       "cevap": "A = +{kesir:1|4} ve B = −{kesir:1|8} olur; A ÷ B = (+{kesir:1|4}) ÷ (−{kesir:1|8}) = −2 bulunur.",
       "satir": 2
     },
@@ -150,10 +142,6 @@
         {
           "metin": "Bir çokluğun kesir kadarı verilirse tamamını bulmak için verilen sayı kesre bölünür.",
           "dogru": true
-        },
-        {
-          "metin": "(−{kesir:2|3})³ ifadesinin değeri (−{kesir:2|3})² ifadesinin değerinden daha büyüktür.",
-          "dogru": false
         }
       ]
     },
@@ -197,7 +185,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki şemada 135 cm yükseklikten serbest bırakılan esnek bir topun yere her çarptığında düştüğü yüksekliğin {kesir:2|3}’ü kadar yükseldiği modellenmiştir. Top yere 2. çarpmasından sonra kaç cm yükselir?",
+      "soru": "Yerden 135 cm yükseklikten serbest bırakılan esnek bir top, yere her çarptığında düştüğü yüksekliğin {kesir:2|3}’ü kadar yükselmektedir. Top yere 2. çarpmasından sonra kaç cm yükselir?",
       "cevap": "1. çarpma: 135 · {kesir:2|3} = 90 cm; 2. çarpma: 90 · {kesir:2|3} = 60 cm yükselir.",
       "satir": 2
     },
@@ -205,7 +193,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görselde Tuna’nın [ 1 − (−{kesir:1|2})² ] ÷ {kesir:3|8} çok adımlı işlemini çözerken yazdığı üç adım verilmiştir. Tuna bu işlemin sonucunda hangi sayıya ulaşır?",
+      "soru": "Görselde Tuna’nın [ 1 − (−{kesir:1|2}){us:|2} ] ÷ {kesir:3|8} çok adımlı işlemini çözerken yazdığı üç adım verilmiştir. Tuna bu işlemin sonucunda hangi sayıya ulaşır?",
       "secenekler": [
         "1",
         "2",
@@ -259,10 +247,6 @@
         {
           "metin": "Bir bütünün kesir kadarını bulmak için ___ işlemi yapılır.",
           "cevap": "çarpma"
-        },
-        {
-          "metin": "Eşittir hizasındaki en uzun çizgiye ___ kesir çizgisi denir.",
-          "cevap": "ana"
         }
       ],
       "fazla": [
@@ -272,7 +256,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki karşılaştırma kartlarında (−{kesir:3|5})² ile −({kesir:3|5})² ifadeleri verilmiştir. Parantezin yeri nedeniyle bu iki ifadenin sonuçlarının neden farklı çıktığını açıklayınız.",
+      "soru": "(−{kesir:3|5}){us:|2} ile −({kesir:3|5}){us:|2} ifadelerinde parantezin yeri nedeniyle sonuçların neden birbirinden farklı çıktığını açıklayınız.",
       "cevap": "İlk ifadede eksi parantez içinde olduğundan +{kesir:9|25}, ikincide dışarıda olduğundan −{kesir:9|25} çıkar.",
       "satir": 2
     }

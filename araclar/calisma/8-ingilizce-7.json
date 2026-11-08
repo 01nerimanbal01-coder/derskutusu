@@ -15,28 +15,28 @@
   ],
   "hatirla": [
     "Temel pişirme yöntemleri (cooking methods): boil (suda haşlamak), fry (kızgın yağda kızartmak), bake (fırında hamur işi/sebze pişirmek), roast (fırında et/tavuk kızartmak), grill (ızgarada pişirmek) ve steam (buharda pişirmek).",
-    "Hazırlık fiilleri ve mutfak araçları: peel → peeler/knife, chop/slice/dice → chopping board & knife, grate → grater, mash → fork/masher, whisk/stir → mixing bowl, knead & roll → rolling pin, drain → strainer.",
-    "Bir yemek tarifinin (recipe) aşamalarını sırayla anlatırken First (İlk olarak) → Second (İkinci olarak) → Next / Then / After that (Sonra / Daha sonra) → Finally (Son olarak) sıralama bağlaçları kullanılır.",
-    "Yiyeceklerin tatlarını anlatırken sweet (tatlı), sour (ekşi), spicy/chili (acı/baharatlı), salty (tuzlu), greasy (yağlı); tercih belirtirken ise “I prefer steamed vegetables to fried food.” kalıbı kullanılır."
+    "Hazırlık fiilleri ve mutfak araçları: peel → peeler/knife, chop/slice/dice → chopping board & knife, grate → grater, mash → fork/masher, whisk/stir → mixing bowl, knead & roll → rolling pin, drain → strainer."
   ],
   "sorular": [
     {
       "tur": "tablo",
       "duzey": "hatirla",
-      "soru": "Görseldeki mutfak aracı kartlarında verilen araçların hangi hazırlık veya pişirme fiiliyle eşleştiğini ve örnek kullanımını tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen mutfak araçlarının hangi hazırlık veya pişirme fiiliyle eşleştiğini ve örnek kullanımını tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
-        "Mutfak aracı kartı",
+        "Mutfak aracı (Tool)",
         "İlgili fiil (Verb)",
         "Örnek kullanım ifadesi"
       ],
       "satirlar": [
         [
-          "1. kart (grater)",
+          "1. grater",
           "grate",
-          "grate the cheddar cheese"
+          {
+            "b": "grate the cheddar cheese"
+          }
         ],
         [
-          "2. kart (strainer)",
+          "2. strainer",
           {
             "b": "drain"
           },
@@ -45,7 +45,7 @@
           }
         ],
         [
-          "3. kart (rolling pin)",
+          "3. rolling pin",
           {
             "b": "roll / knead"
           },
@@ -84,17 +84,13 @@
         [
           "knead the dough",
           "Ekmek veya börek yapmak için hamuru elle yoğurmak"
-        ],
-        [
-          "sprinkle",
-          "Yemeğin üzerine tuz, karabiber veya baharat serpmek"
         ]
       ]
     },
     {
       "tur": "dy",
       "duzey": "hatirla",
-      "soru": "Görseldeki tat ve tercih kartlarına göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
+      "soru": "Doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
       "ifadeler": [
         {
           "metin": "Kerem, içinde çok fazla kırmızı acı biber bulunan “spicy” yemekleri sevmemektedir.",
@@ -131,14 +127,6 @@
         {
           "metin": "Use a ___ to remove the skin of the potatoes.",
           "cevap": "peeler"
-        },
-        {
-          "metin": "Lemons and green plums have a ___ taste.",
-          "cevap": "sour"
-        },
-        {
-          "metin": "Put the eggs into a pot of water and ___ them.",
-          "cevap": "boil"
         }
       ],
       "fazla": [
@@ -161,7 +149,7 @@
     {
       "tur": "siralama",
       "duzey": "hatirla",
-      "soru": "Görseldeki tarif basamaklarından yararlanarak aşağıdaki omlet tarifini ilk adımdan (1) son adıma (5) doğru numaralandırınız.",
+      "soru": "Aşağıdaki omlet tarifini ilk adımdan (1) son adıma (5) doğru numaralandırınız.",
       "ogeler": [
         "First, crack two eggs into a mixing bowl.",
         "Second, add a pinch of salt and whisk the eggs well.",
@@ -173,8 +161,8 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki “Lentil Soup Recipe” kartına göre çorba için hangi sebzelerin kabuğu soyulup doğranır ve pişirme işleminde hangi mutfak aracı kullanılır?",
-      "cevap": "An onion, a potato and a carrot are chopped; a large saucepan is used to cook the soup.",
+      "soru": "“In Chef’s soup recipe: First, peel and chop the carrots and potatoes, then boil them in a large pot.” tarifine göre çorba için hangi sebzelerin kabuğu soyulup doğranır ve pişirme işleminde hangi mutfak aracı kullanılır?",
+      "cevap": "Carrots and potatoes are peeled and chopped; a large pot (saucepan) is used to boil the soup.",
       "satir": 2
     },
     {
@@ -263,7 +251,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki ipucu kartında verilen malzemeleri ve fiilleri kullanarak taze bir salata tarifini sıralama bağlaçlarıyla (First, Second, Then, Finally) anlatan dört kısa İngilizce cümle yazınız.",
+      "soru": "Taze bir salata tarifini sıralama bağlaçlarıyla (First, Second, Then, Finally) anlatan dört kısa İngilizce cümle yazınız.",
       "cevap": "First, wash and peel the cucumbers. Next, dice them in a bowl. Finally, add olive oil and serve.",
       "satir": 2
     }

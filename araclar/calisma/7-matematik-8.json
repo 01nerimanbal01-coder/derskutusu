@@ -14,9 +14,7 @@
   ],
   "hatirla": [
     "Çok adımlı rasyonel sayı işlemlerinde sırasıyla üslü ifadeler, parantez içi, çarpma veya bölme ve en son toplama veya çıkarma yapılır.",
-    "Bütünün kesir kadarı bulunurken çarpma, kesir kadarı verilen bütün bulunurken bölme yapılır; kalanın kesri sorularında kalan miktar üzerinden gidilir.",
-    "Birim küp yapılarına dik bakıldığında önden ile arkadan görünüm ve sağdan ile soldan görünüm birbirinin ayna simetriğidir.",
-    "Üstten görünüm karelerine sütunlardaki küp sayılarının yazıldığı şemaya kat planı denir; her hizadaki en büyük sayı o yönden görünen yüksekliği verir."
+    "Bütünün kesir kadarı bulunurken çarpma, kesir kadarı verilen bütün bulunurken bölme yapılır; kalanın kesri sorularında kalan miktar üzerinden gidilir."
   ],
   "sorular": [
     {
@@ -46,7 +44,9 @@
         [
           "Yapıdaki toplam birim küp sayısı",
           "3 + 2 + 1 + 4",
-          "10 birim küp"
+          {
+            "b": "10 birim küp"
+          }
         ],
         [
           "Önden görünümdeki kare sayısı",
@@ -87,10 +87,6 @@
         [
           "Arkadan görünüm",
           "Önden görünümün dikey eksene göre simetriği olan çizim"
-        ],
-        [
-          "Kat planı",
-          "Üst görünüm karelerine sütunlardaki küp adedinin yazılması"
         ]
       ]
     },
@@ -110,8 +106,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görselde bir birim küp yapısının önden görünümündeki sütun yükseklikleri soldan sağa 3, 1 ve 2 kare olarak verilmiştir. Bu yapının arkadan görünümünde soldan sağa kaçar kare görülür? Nedenini yazınız.",
+      "soru": "Bir birim küp yapısının önden görünümündeki sütun yükseklikleri soldan sağa 3, 1 ve 2 kare olarak verilmiştir. Bu yapının arkadan görünümünde soldan sağa kaçar kare görülür? Nedenini yazınız.",
       "cevap": "Soldan sağa 2, 1, 3 kare; önden görünümün simetriğidir.",
       "satir": 2
     },
@@ -135,10 +130,6 @@
         {
           "metin": "Üstten kat planındaki karelerin içine yazılan sayıların toplamı yapıyı oluşturan toplam birim küp sayısını verir.",
           "dogru": true
-        },
-        {
-          "metin": "İki boyutlu dik görünümler çizilirken arkada kalan küpler öndeki küplerden daha küçük karelerle çizilir.",
-          "dogru": false
         }
       ]
     },
@@ -158,8 +149,7 @@
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki 2 − [ 3 ÷ (1 + {kesir:1|2}) ] merdivenli kesir işlemini doğru çözmek için izlenecek işlem adımlarını 1’den 4’e kadar numaralandırınız.",
+      "soru": "2 − [ 3 ÷ (1 + {kesir:1|2}) ] merdivenli kesir işlemini doğru çözmek için izlenecek işlem adımlarını 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "En alttaki paydada bulunan 1 + {kesir:1|2} toplama işlemini yaparak {kesir:3|2} sonucunu bulmak",
         "Ana kesir çizgisinin üstündeki 3 sayısını {kesir:3|2} kesrine bölerek 3 · {kesir:2|3} = 2 değerine ulaşmak",
@@ -230,10 +220,6 @@
         {
           "metin": "Bir yapının sağdan görünümü ile ___ görünümü birbirinin simetriğidir.",
           "cevap": "soldan"
-        },
-        {
-          "metin": "Önden görünümde her dikey sütundaki en ___ sayı kadar kare çizilir.",
-          "cevap": "büyük"
         }
       ],
       "fazla": [
@@ -243,8 +229,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki kat planında ön sol köşede yer alan 1 birim küplük K sütunu yapıdan tamamen çıkarılıyor. Bu işlem sonucunda yapının önden görünümünün değişmeyip üstten görünümünün değişmesinin nedenini açıklayınız.",
+      "soru": "2×2 tabanlı bir birim küp yapısının arka sırasındaki sütunlarda 2’şer küp, ön sırasındaki sol sütunda (K) 1 küp ve sağ sütunda 3 küp bulunmaktadır. Ön sol köşedeki 1 birim küplük K sütunu yapıdan tamamen çıkarıldığında yapının önden görünümünün değişmeyip üstten görünümünün değişmesinin nedenini açıklayınız.",
       "cevap": "Önden görünüm değişmez (arkasında küp var); üstten görünüm değişir.",
       "satir": 2
     },

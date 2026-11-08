@@ -14,9 +14,7 @@
   ],
   "hatirla": [
     "Tanınmış kişilerin hayatının kronolojik sırayla, belgelere dayalı ve 3. kişi ağzıyla anlatılmasına biyografi; kişinin kendi hayatını yazmasına otobiyografi denir.",
-    "Cümlede doğrudan söylenmeyen ancak «da/de, bile, yine, artık, ilk kez, en» gibi ifadelerden çıkarılan gizli yargıya örtülü anlam denir.",
-    "«Ama, fakat, lakin, ne var ki, buna rağmen» düşüncenin yönünü değiştirirken; «özellikle, hatta, kısacası, özetle» anlatımı destekler ve özetler.",
-    "Fiilin aldığı kip eki ile cümlede kastedilen zamanın farklı olmasına fiilde anlam (kip/zaman) kayması denir; anlatıma canlılık katar, bozukluk sayılmaz."
+    "Cümlede doğrudan söylenmeyen ancak «da/de, bile, yine, artık, ilk kez, en» gibi ifadelerden çıkarılan gizli yargıya örtülü anlam denir."
   ],
   "sorular": [
     {
@@ -35,8 +33,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki cümle fişlerinde yer alan fiillerin biçimce hangi kipte çekimlendiğini ve anlam kaymasıyla hangi kipi kastettiğini tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen cümle fişlerindeki fiillerin biçimce hangi kipte çekimlendiğini ve anlam kaymasıyla hangi kipi kastettiğini yazınız. İlk satır örnektir.",
       "basliklar": [
         "Cümle Fişi",
         "Biçimce Aldığı Kip",
@@ -46,7 +43,9 @@
         [
           "1. Fiş («...1919’da Samsun’a çıkar.»)",
           "Geniş zaman (-r)",
-          "Bilinen geçmiş zaman (çıktı)"
+          {
+            "b": "Bilinen geçmiş zaman (çıktı)"
+          }
         ],
         [
           "2. Fiş («Önümüzdeki hafta Ankara’ya gidiyorum.»)",
@@ -87,10 +86,6 @@
         [
           "Örtülü anlam",
           "Cümlede açıkça söylenmeyen ancak yardımcı sözcüklerden çıkarılan gizli yargı"
-        ],
-        [
-          "Anlam kayması",
-          "Fiilin aldığı kip eki ile cümlede kastedilen zamanın birbirinden farklı olması"
         ]
       ]
     },
@@ -110,8 +105,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki cümle levhasında yer alan «Genç Mustafa, Manastır Askerî İdadisinde tarih ve hitabet alanlarıyla da yakından ilgilenmiştir.» cümlesinden hangi örtülü anlam çıkarılır?",
+      "soru": "«Genç Mustafa, Manastır Askerî İdadisinde tarih ve hitabet alanlarıyla da yakından ilgilenmiştir.» cümlesinden hangi örtülü anlam çıkarılır?",
       "cevap": "Genç Mustafa’nın başka alanlara da ilgi duyduğu anlaşılır.",
       "satir": 2
     },
@@ -135,10 +129,6 @@
         {
           "metin": "«Tarihe imza atmak» deyimi, unutulmayacak çok büyük ve kalıcı bir başarı gerçekleştirmek demektir.",
           "dogru": true
-        },
-        {
-          "metin": "Yaşanmış olayların günü gününe tarih atılarak birinci kişi ağzıyla yazılmasına biyografi denir.",
-          "dogru": false
         }
       ]
     },
@@ -158,8 +148,7 @@
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki «1881-1920 Tarihe Atılan İmza» zaman şeridini takip ederek biyografi cümlelerini kronolojik sıraya göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Mustafa Kemal’in yaşamına ait aşağıdaki biyografi cümlelerini kronolojik sıraya göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "Mustafa, 1881 yılında Selanik’te doğmuş ve öğrenim hayatına bu şehirde başlamıştır.",
         "Askerî Rüştiye ve Manastır Askerî İdadisini başarıyla tamamlayarak Harp Akademisinden kurmay yüzbaşı olarak mezun olmuştur.",
@@ -230,10 +219,6 @@
         {
           "metin": "«Yarın yola çıkıyoruz.» cümlesinde şimdiki zaman kipi ___ zaman anlamındadır.",
           "cevap": "gelecek"
-        },
-        {
-          "metin": "Kalıcı bir başarı kazanmak anlamında «tarihe ___ atmak» deyimi kullanılır.",
-          "cevap": "imza"
         }
       ],
       "fazla": [
@@ -243,8 +228,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki bilgi kartını inceleyiniz. Tarihsel ve biyografik metinlerde geçmişte yaşanmış olaylar anlatılırken neden sıkça geniş zaman (-r) veya şimdiki zaman (-yor) kipi tercih edilir?",
+      "soru": "Tarihsel ve biyografik metinlerde geçmişte yaşanmış olaylar anlatılırken neden sıkça geniş zaman (-r) veya şimdiki zaman (-yor) kipi tercih edilir? Açıklayınız.",
       "cevap": "Olayları o an yaşanıyormuş gibi canlandırıp anlatımı akıcı kılmaktır.",
       "satir": 2
     },

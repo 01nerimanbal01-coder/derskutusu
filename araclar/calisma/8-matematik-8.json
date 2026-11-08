@@ -15,15 +15,13 @@
   "hatirla": [
     "Kareköklü ifadelerde çarpma yapılırken katsayılar kendi arasında çarpılıp katsayıya, kök içleri kendi arasında çarpılıp ortak kök içine yazılır: a{kok:x} · b{kok:y} = (a · b){kok:x · y}.",
     "Bir kareköklü ifadeyi doğal sayı yapan çarpanı bulmak için ifade a{kok:b} biçiminde yazılır; kök içinde kalan ifadeyle ({kok:b} veya k{kok:b}) çarpıldığında sonuç doğal sayı olur ({kok:b} · {kok:b} = b).",
-    "Bölme işleminde katsayılar ve kök içleri ayrı ayrı bölünür: {kesir:a{kok:x}|b{kok:y}} = {kesir:a|b}{kok:{kesir:x|y}}. Paydasında {kok:b} bulunan {kesir:a|{kok:b}} kesri {kok:b} ile genişletilerek {kesir:a{kok:b}|b} biçiminde rasyonel yapılır.",
-    "Toplama ve çıkarma yapılabilmesi için kök içlerinin eşit olması şarttır; kök içleri farklıysa ifadeler önce a{kok:b} biçimine getirilir, ardından katsayılar toplanır veya çıkarılır: a{kok:x} + b{kok:x} - c{kok:x} = (a + b - c){kok:x}."
+    "Bölme işleminde katsayılar ve kök içleri ayrı ayrı bölünür: {kesir:a{kok:x}|b{kok:y}} = {kesir:a|b}{kok:{kesir:x|y}}. Paydasında {kok:b} bulunan {kesir:a|{kok:b}} kesri {kok:b} ile genişletilerek {kesir:a{kok:b}|b} biçiminde rasyonel yapılır."
   ],
   "sorular": [
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki doğal sayı yapan çarpan modelini inceleyerek tablodaki kareköklü ifadelerin a{kok:b} biçimini ve ifadeyi doğal sayı yapan en küçük pozitif çarpanı yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki kareköklü ifadelerin a{kok:b} biçimini ve ifadeyi doğal sayı yapan en küçük pozitif çarpanı yazınız. İlk satır örnektir.",
       "basliklar": [
         "Kareköklü İfade",
         "a{kok:b} Biçiminde Yazılışı",
@@ -33,7 +31,9 @@
         [
           "{kok:24}",
           "2{kok:6}",
-          "{kok:6} (2{kok:6} · {kok:6} = 12)"
+          {
+            "b": "{kok:6} (2{kok:6} · {kok:6} = 12)"
+          }
         ],
         [
           "{kok:45}",
@@ -69,12 +69,8 @@
           "6{kok:3}"
         ],
         [
-          "{kok:48} + {kok:12}",
-          "6{kok:3}"
-        ],
-        [
-          "{kok:50} - {kok:8}",
-          "3{kok:2}"
+          "{kok:75} + {kok:12}",
+          "7{kok:3}"
         ]
       ]
     },
@@ -111,10 +107,6 @@
         {
           "metin": "Kök içleri eşitlenemeyen 4{kok:3} + 2{kok:5} işleminde katsayılar toplanıp sonuç 6{kok:8} yazılır.",
           "dogru": false
-        },
-        {
-          "metin": "{kok:98} = 7{kok:2} ifadesi 2{kok:2} ile çarpıldığında sonuç 28 doğal sayısına eşit olur.",
-          "dogru": true
         }
       ]
     },
@@ -134,8 +126,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görselde alanı 36 cm² ve uzun kenarı 3{kok:2} cm olan dikdörtgen biçimindeki bir karton verilmiştir. Kartonun kısa kenar uzunluğunu paydayı rasyonel yaparak kaç santimetre olduğunu bulunuz.",
+      "soru": "Alanı 36 cm{us:|2} ve uzun kenarı 3{kok:2} cm olan dikdörtgen biçimindeki bir karton verilmiştir. Kartonun kısa kenar uzunluğunu paydayı rasyonel yaparak kaç santimetre olduğunu bulunuz.",
       "cevap": "{kesir:36|3{kok:2}} = {kesir:12|{kok:2}} = 6{kok:2} cm bulunur.",
       "satir": 2
     },
@@ -155,8 +146,7 @@
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki çözüm şemasında “{kesir:12|{kok:3}} + {kok:75} - {kok:12}” işleminin çözüm basamakları gösterilmiştir. Bu adımları baştan sona doğru 1’den 4’e kadar numaralandırınız.",
+      "soru": "“{kesir:12|{kok:3}} + {kok:75} - {kok:12}” işleminin çözüm basamakları gösterilmiştir. Bu adımları baştan sona doğru 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "İlk terim olan {kesir:12|{kok:3}} kesrinin hem payı hem paydası {kok:3} ile genişletilerek 4{kok:3} elde edilir.",
         "Diğer terimler tam kare çarpanları kök dışına çıkarılarak {kok:75} = 5{kok:3} ve {kok:12} = 2{kok:3} biçiminde yazılır.",
@@ -232,10 +222,6 @@
         {
           "metin": "{kesir:10|{kok:2}} kesrinin paydası rasyonel yapıldığında sonuç ___ olur.",
           "cevap": "5{kok:2}"
-        },
-        {
-          "metin": "8{kok:5} - {kok:5} çıkarma işleminin sonucu ___ ifadesine eşittir.",
-          "cevap": "7{kok:5}"
         }
       ],
       "fazla": [
@@ -258,8 +244,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki iki karesel fayansın alanları sırasıyla 50 cm² ve 18 cm² olarak verilmiştir. Bu iki fayans kenarları çakışacak biçimde yan yana konulduğunda oluşan A ile B noktaları arasındaki toplam uzunluğu işlem adımlarıyla bulunuz.",
+      "soru": "İki karesel fayansın alanları sırasıyla 50 cm{us:|2} ve 18 cm{us:|2} olarak verilmiştir. Bu iki fayans kenarları çakışacak biçimde yan yana konulduğunda oluşan A ile B noktaları arasındaki toplam uzunluğu işlem adımlarıyla bulunuz.",
       "cevap": "1. kenar {kok:50} = 5{kok:2} cm, 2. kenar {kok:18} = 3{kok:2} cm olur; toplam |AB| = 5{kok:2} + 3{kok:2} = 8{kok:2} cm bulunur.",
       "satir": 2
     }

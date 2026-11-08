@@ -15,15 +15,13 @@
   "hatirla": [
     "Tam kare olmayan {kok:x} sayısının hangi iki ardışık doğal sayı arasında olduğunu bulmak için x’ten küçük en büyük tam kare ile x’ten büyük en küçük tam kare belirlenir.",
     "Kök içindeki sayı, alt ve üst tam kare komşularından hangisine sayıca daha yakınsa kareköklü ifadenin değeri de o doğal sayıya daha yakındır.",
-    "Kök içindeki sayı çarpanlarından biri tam kare olacak biçimde yazıldığında tam kare çarpan kök dışına katsayı olarak çıkar: {kok:{us:a|2} · b} = a{kok:b}.",
-    "Pozitif katsayı karesi alınarak kök içine girer (a{kok:b} = {kok:{us:a|2} · b}); sıralamada katsayılar kök içine alınır, negatif ifadelerde eksi işareti kök dışında kalır."
+    "Kök içindeki sayı çarpanlarından biri tam kare olacak biçimde yazıldığında tam kare çarpan kök dışına katsayı olarak çıkar: {kok:{us:a|2} · b} = a{kok:b}."
   ],
   "sorular": [
     {
       "tur": "tablo",
       "duzey": "hatirla",
-      "gorsel_var": true,
-      "soru": "Görseldeki komşu tam kareler modelini inceleyerek tabloda verilen kareköklü ölçümlerin sayı doğrusundaki tam sayı sınırlarını ve yakın olduğu ucu tabloya işleyiniz. İlk satır örnektir.",
+      "soru": "Tablodaki kareköklü sayıların hangi iki ardışık doğal sayı arasında bulunduğunu ve hangi doğal sayıya daha yakın olduğunu yazınız. İlk satır örnektir.",
       "basliklar": [
         "Kareköklü sayı",
         "Bulunduğu doğal sayı aralığı",
@@ -33,7 +31,9 @@
         [
           "{kok:40}",
           "6 ile 7 arasında",
-          "6’ya daha yakın"
+          {
+            "b": "6’ya daha yakın"
+          }
         ],
         [
           "{kok:58}",
@@ -71,10 +71,6 @@
         [
           "{kok:108}",
           "6{kok:3}"
-        ],
-        [
-          "4{kok:5}",
-          "{kok:80}"
         ]
       ]
     },
@@ -130,8 +126,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki karesel bölgelerden 1. bahçenin alanı 60 m², 2. bahçenin alanı 92 m²dir. Her iki bahçenin birer kenar uzunluğunun hangi iki ardışık doğal sayı arasında olduğunu ve hangisine daha yakın olduğunu yazınız.",
+      "soru": "Karesel bölgelerden 1. bahçenin alanı 60 m{us:|2}, 2. bahçenin alanı 92 m{us:|2}dir. Her iki bahçenin birer kenar uzunluğunun hangi iki ardışık doğal sayı arasında olduğunu ve hangisine daha yakın olduğunu yazınız.",
       "cevap": "1. bahçe ({kok:60} m): 7-8 arası, 8’e yakın. 2. bahçe ({kok:92} m): 9-10 arası, 10’a yakın.",
       "satir": 2
     },
@@ -176,10 +171,10 @@
     {
       "tur": "kisa",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki sayı doğrusunda 9 noktasının üzerinde duran bir oyuncak araç, sağa doğru 2{kok:7} birim ilerleyerek L noktasına ulaşıyor. L noktasının hangi iki ardışık doğal sayı arasında olduğunu işlem adımlarıyla bulunuz.",
+      "soru": "Sayı doğrusunda 9 noktasının üzerinde duran bir oyuncak araç, sağa doğru 2{kok:7} birim ilerleyerek L noktasına ulaşıyor. L noktasının hangi iki ardışık doğal sayı arasında olduğunu işlem adımlarıyla bulunuz.",
       "cevap": "{kok:28} sayısı 5 ile 6 arasındadır; L = 9 + {kok:28} olduğundan 14 ile 15 arasındadır.",
-      "satir": 2
+      "satir": 2,
+      "gorsel_var": true
     },
     {
       "tur": "sifre",
@@ -236,10 +231,6 @@
         {
           "metin": "a{kok:b} ifadesinde kök dışındaki a çarpanına ___ denir.",
           "cevap": "katsayı"
-        },
-        {
-          "metin": "Katsayı kök içine alınırken sayının ___ alınarak çarpılır.",
-          "cevap": "karesi"
         }
       ],
       "fazla": [
@@ -262,8 +253,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki karşılaştırma kartında verilen X = −3{kok:5} ve Y = −2{kok:11} sayılarından hangisinin daha büyük olduğunu katsayıları kök içine alarak gerekçesiyle açıklayınız.",
+      "soru": "X = −3{kok:5} ve Y = −2{kok:11} sayılarından hangisinin daha büyük olduğunu katsayıları kök içine alarak gerekçesiyle açıklayınız.",
       "cevap": "X = −{kok:45} ve Y = −{kok:44} olur; sıfıra yakın olan Y > X bulunur.",
       "satir": 2
     }
