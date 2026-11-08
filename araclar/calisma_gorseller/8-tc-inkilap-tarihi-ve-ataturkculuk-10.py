@@ -1,157 +1,109 @@
-"""8. sınıf T.C. İnkılap Tarihi ve Atatürkçülük 10. hafta (Sivas Kongresi, Amasya Görüşmeleri ve Ankara) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); Noto Sans 10.5-11.5 pt (K150 EK); eğik kesir yok (K155)."""
+"""8-tc-inkilap-tarihi-ve-ataturkculuk-10 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, KUM = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#fffdf5'
-ALTIN, KAHVE, YESIL_K = '#c9a227', '#8a5a2b', '#0f6b45'
-
-
-def svg(w, h, ic, etiket, en_fazla=15):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', ince=False, boy=10.5):
-    ag = '500' if ince else '700'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-family="Noto Sans, sans-serif" font-size="{boy}" font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def erzurum_sivas_karsilastirma():
-    """Soru 2 (s[1]): Erzurum Kongresi ve Sivas Kongresi karşılaştırma panosu."""
-    ic = kutu(4, 4, 172, 86, MAVI_A, MAVI, 8)
-    ic += yazi(90, 21, 'Erzurum Kongresi (Temmuz 1919)', MAVI, boy=10.1)
-    ic += yazi(90, 42, '• Toplanış Biçimi: BÖLGESEL', LAC, ince=True, boy=9.6)
-    ic += yazi(90, 60, '• Aldığı Kararlar: ULUSAL', LAC, ince=True, boy=9.6)
-    ic += yazi(90, 78, '• Temsil Heyeti: 9 üye (Doğu)', MAVI, boy=9.6)
-
-    ic += kutu(184, 4, 172, 86, KIR_A, KIR, 8)
-    ic += yazi(270, 21, 'Sivas Kongresi (Eylül 1919)', KIR, boy=10.1)
-    ic += yazi(270, 42, '• Toplanış Biçimi: ULUSAL (Millî)', LAC, ince=True, boy=9.6)
-    ic += yazi(270, 60, '• Aldığı Kararlar: ULUSAL (Millî)', LAC, ince=True, boy=9.6)
-    ic += yazi(270, 78, '• Temsil Heyeti: 16 üye (Tüm vatan)', KIR, boy=9.6)
-    return svg(360, 94, ic, 'Erzurum ve Sivas kongrelerinin toplanış ve karar niteliği karşılaştırması.', 15)
-
-
-def sivas_karar_kartlari():
-    """Soru 3 (s[2]): Sivas Kongresi 4 temel karar ve uygulama kartı."""
-    kartlar = [
-        (4, 4, '1. Manda ve Himaye Reddi', '«Ya istiklal ya ölüm!» -> Tam Bağımsızlık', KIR, KIR_A),
-        (184, 4, '2. ARMHC Kurulması', 'Cemiyetler birleşti -> İlke: ?', MAVI, MAVI_A),
-        (4, 52, '3. Ali Fuat Paşa Ataması', 'Batı Cephesi komutanı -> Yetki: ?', TUR, TUR_A),
-        (184, 52, '4. İrade-i Milliye Gazetesi', 'Halkı doğru bilgilendirme -> Alan: ?', YES, YES_A),
-    ]
-    ic = ''
-    for x, y, bas, alt, r, z in kartlar:
-        ic += kutu(x, y, 172, 44, z, r, 7)
-        ic += yazi(x + 86, y + 18, bas, r, boy=10.2)
-        ic += yazi(x + 86, y + 36, alt, LAC, ince=True, boy=9.3)
-    return svg(360, 100, ic, 'Sivas Kongresi kararlarını ve uygulamalarını içeren dört bilgi kartı.', 15)
-
-
-def amasya_gorusmeleri_protokolu():
-    """Soru 6 (s[5]): Amasya Görüşmeleri (20-22 Ekim 1919) protokol panosu."""
-    ic = kutu(4, 4, 352, 86, KUM, ALTIN, 8)
-    ic += yazi(180, 19, 'Amasya Görüşmeleri Protokolü (Mustafa Kemal Paşa ve Salih Paşa)', KAHVE, boy=10.1)
-    ic += kutu(12, 26, 162, 58, MAVI_A, MAVI, 6)
-    ic += yazi(93, 43, 'Bağımsızlık Maddeleri:', MAVI, boy=9.9)
-    ic += yazi(93, 60, '• Vatanın bütünlüğü korunacak', LAC, ince=True, boy=9.3)
-    ic += yazi(93, 76, '• Azınlıklara ayrıcalık yok', LAC, ince=True, boy=9.3)
-
-    ic += kutu(186, 26, 162, 58, YES_A, YES, 6)
-    ic += yazi(267, 43, 'Millî İrade Maddesi:', YESIL_K, boy=9.9)
-    ic += yazi(267, 60, '• Seçimler hızla yapılacak ve', LAC, ince=True, boy=9.3)
-    ic += yazi(267, 76, 'Mebusan Meclisi açılacak!', YESIL_K, boy=9.4)
-    return svg(360, 94, ic, 'Amasya Görüşmeleri protokol maddelerini özetleyen pano.', 15)
-
-
-def ankara_merkez_kartlari():
-    """Soru 7 (s[6]): Ankara'nın merkez seçilme nedenlerini gösteren 4 kart."""
-    kartlar = [
-        (4, 4, 'I. Kart · Ulaşım & İletişim', 'Demir yolu ve telgraf ağı', MAVI, MAVI_A),
-        (184, 4, 'II. Kart · Askerî Güç', '20. Kolordu’nun varlığı', TUR, TUR_A),
-        (4, 52, 'III. Kart · Halk Desteği', 'Seymenlerin tam bağlılığı', YES, YES_A),
-        (184, 52, 'IV. Kart · Cepheye Konum', 'Batı Cephesi’ne yakınlık', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, bas, alt, r, z in kartlar:
-        ic += kutu(x, y, 172, 44, z, r, 7)
-        ic += yazi(x + 86, y + 18, bas, r, boy=10.2)
-        ic += yazi(x + 86, y + 36, alt, LAC, ince=True, boy=9.5)
-    return svg(360, 100, ic, 'Temsil Heyetinin Ankarayı merkez seçme nedenlerini gösteren dört kart.', 15)
-
-
-def milli_basin_panosu():
-    """Soru 8 (s[7]): İrade-i Milliye ve Hâkimiyet-i Milliye gazeteleri panosu."""
-    ic = kutu(4, 4, 172, 82, KIR_A, KIR, 8)
-    ic += yazi(90, 22, 'İrade-i Milliye Gazetesi', KIR, boy=10.2)
-    ic += yazi(90, 44, 'Çıkarıldığı Yer: Sivas (1919)', LAC, ince=True, boy=9.6)
-    ic += yazi(90, 66, 'Anlamı: «Millî İrade»', KIR, boy=9.8)
-
-    ic += kutu(184, 4, 172, 82, MAVI_A, MAVI, 8)
-    ic += yazi(270, 22, 'Hâkimiyet-i Milliye Gazetesi', MAVI, boy=10.2)
-    ic += yazi(270, 44, 'Çıkarıldığı Yer: Ankara (1920)', LAC, ince=True, boy=9.6)
-    ic += yazi(270, 66, 'Anlamı: «Millî Egemenlik»', MAVI, boy=9.8)
-    return svg(360, 90, ic, 'İrade-i Milliye ve Hâkimiyet-i Milliye gazetelerinin isim anlamları panosu.', 14)
-
-
-def kronoloji_sivas_ankara():
-    """Soru 9 (s[8]): Eylül - Aralık 1919 kronoloji şeridi."""
-    adimlar = [
-        (4, '1. Eylül 1919', 'Sivas Kongresi', 'toplandı', KIR, KIR_A),
-        (93, '2. 30 Eylül', 'Damat Ferit', 'istifa etti', TUR, TUR_A),
-        (182, '3. Ekim 1919', 'Amasya Görüşmesi', 'yapıldı', MOR, MOR_A),
-        (271, '4. 27 Aralık', 'Temsil Heyeti', 'Ankara’ya geldi', YES, YES_A),
-    ]
-    ic = ''
-    for x, bas, s1, s2, r, z in adimlar:
-        ic += kutu(x, 4, 85, 80, z, r, 7)
-        ic += yazi(x + 42, 22, bas, r, boy=10.0)
-        ic += yazi(x + 42, 44, s1, LAC, ince=True, boy=9.3)
-        ic += yazi(x + 42, 64, s2, LAC, boy=9.3)
-    return svg(360, 88, ic, 'Sivas Kongresinden Ankaraya gelişe dört aşamalı kronoloji şeridi.', 14)
-
-
-def sivas_engelleme_ve_sonuc():
-    """Soru 10 (s[9]): Sivas Kongresi engelleme girişimleri ve sonucu."""
-    ic = kutu(4, 4, 172, 86, KIR_A, KIR, 8)
-    ic += yazi(90, 21, 'Engelleme Girişimleri', KIR, boy=10.2)
-    ic += yazi(90, 42, '• Elazığ Valisi Ali Galip olayı', LAC, ince=True, boy=9.5)
-    ic += yazi(90, 60, '• Fransız Binbaşı Bruno’nun', LAC, ince=True, boy=9.5)
-    ic += yazi(90, 78, 'Sivas’ı işgal tehdidi', KIR, boy=9.5)
-
-    ic += kutu(184, 4, 172, 86, YES_A, YES, 8)
-    ic += yazi(270, 21, 'Kongrenin Sonucu', YESIL_K, boy=10.2)
-    ic += yazi(270, 42, '• Tehditler boşa çıkarıldı', LAC, ince=True, boy=9.5)
-    ic += yazi(270, 60, '• Sivas’ta başarıyla toplandı', LAC, ince=True, boy=9.5)
-    ic += yazi(270, 78, '• Manda kesin reddedildi!', YESIL_K, boy=9.5)
-    return svg(360, 94, ic, 'Sivas Kongresine yönelik engellemeler ve kongrenin başarıyla toplanması panosu.', 15)
-
-
-def meclis_yeri_tartismasi_karti():
-    """Soru 12 (s[11]): Mebusan Meclisi'nin toplanma yeri tartışması."""
-    ic = kutu(4, 4, 352, 82, MAVI_A, MAVI, 8)
-    ic += yazi(180, 20, 'Mebusan Meclisi’nin Toplanma Yeri Tartışması (Ekim 1919)', MAVI)
-    ic += kutu(12, 28, 162, 48, '#fff', YES, 6)
-    ic += yazi(93, 46, 'Mustafa Kemal Paşa’nın Görüşü:', YESIL_K, boy=9.8)
-    ic += yazi(93, 66, '«Meclis Anadolu’da toplanmalı»', LAC, ince=True, boy=9.4)
-
-    ic += kutu(186, 28, 162, 48, '#fff', KIR, 6)
-    ic += yazi(267, 46, 'İstanbul Hükûmeti’nin Kararı:', KIR, boy=9.8)
-    ic += yazi(267, 66, '«Başkent İstanbul’da toplanacak»', LAC, ince=True, boy=9.4)
-    return svg(360, 90, ic, 'Mebusan Meclisinin Anadoluda mı yoksa İstanbulda mı toplanacağı tartışması kartı.', 14)
+GORSELLER = {1: '<svg viewBox="0 0 350 168" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Erzurum ve Sivas '
+    'kongrelerinin toplanış ve karar niteliği karşılaştırması."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Erzurum Kongresi (Temmuz 1919)</text><text x="11.0" y="38.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Toplanış Biçimi: BÖLGESEL</text><text '
+    'x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• '
+    'Aldığı Kararlar: ULUSAL</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">• Temsil Heyeti: 9 üye (Doğu)</text><rect x="4" y="86" width="342" height="80" rx="5" fill="#fdeaea" '
+    'stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d63a3a">Sivas Kongresi (Eylül 1919)</text><text x="11.0" y="121.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Toplanış Biçimi: ULUSAL (Millî)</text><text '
+    'x="11.0" y="140.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• '
+    'Aldığı Kararlar: ULUSAL (Millî)</text><text x="11.0" y="158.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d63a3a">• Temsil Heyeti: 16 üye (Tüm vatan)</text></svg>',
+ 2: '<svg viewBox="0 0 350 186" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sivas Kongresi '
+    'kararlarını ve uygulamalarını içeren dört bilgi kartı."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">1. Manda ve Himaye Reddi</text><text x="11.0" y="38.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«Ya istiklal ya ölüm!» → Tam '
+    'Bağımsızlık</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="11.0" y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. '
+    'ARMHC Kurulması</text><text x="11.0" y="84.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Cemiyetler birleşti → İlke: ?</text><rect x="4" y="95" width="342" height="43" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="112.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">3. Ali Fuat Paşa Ataması</text><text x="11.0" y="130.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Batı Cephesi komutanı → Yetki: ?</text><rect '
+    'x="4" y="141" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="158.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. İrade-i Milliye '
+    'Gazetesi</text><text x="11.0" y="176.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Halkı doğru bilgilendirme → Alan: ?</text></svg>',
+ 5: '<svg viewBox="0 0 350 169" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Amasya Görüşmeleri '
+    'protokol maddelerini özetleyen pano."><rect x="4" y="3" width="342" height="99" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#8a5a2b">Amasya Görüşmeleri Protokolü (Mustafa</text><text x="11.0" y="38.9" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#8a5a2b">Kemal Paşa ve Salih Paşa)</text><text '
+    'x="11.0" y="57.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Bağımsızlık Maddeleri:</text><text x="11.0" y="75.7" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">• Vatanın bütünlüğü korunacak</text><text x="11.0" y="94.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Azınlıklara ayrıcalık yok</text><rect x="4" '
+    'y="105" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="122.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Millî İrade '
+    'Maddesi:</text><text x="11.0" y="140.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">• Seçimler hızla yapılacak ve</text><text x="11.0" y="159.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">Mebusan Meclisi açılacak!</text></svg>',
+ 6: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Temsil Heyetinin '
+    'Ankarayı merkez seçme nedenlerini gösteren dört kart."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">I. Kart</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Demir yolu ve telgraf</text><text x="87.5" y="58.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ağı üzerinde</text><text '
+    'x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">bulunması</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="30.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">II. Kart</text><text x="262.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">20. Kolordu’nun</text><text x="262.5" y="67.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ankara’da yer alması</text><rect x="4" y="89" '
+    'width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="116.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">III. Kart</text><text x="87.5" y="134.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Seymenlerin '
+    've</text><text x="87.5" y="153.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">halkın tam bağlılığı</text><rect x="179" y="89" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">IV. Kart</text><text x="262.5" y="125.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Batı Cephesi’ne</text><text x="262.5" y="144.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yakın konumda</text><text x="262.5" y="162.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">olması</text></svg>',
+ 8: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sivas Kongresinden '
+    'Ankaraya gelişe dört aşamalı kronoloji şeridi."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Ekim 1919</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Amasya Görüşmesi</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yapıldı</text><rect x="179" y="3" width="167" '
+    'height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Eylül 1919</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sivas '
+    'Kongresi</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">toplandı</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">27 Aralık</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Temsil Heyeti</text><text x="87.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Ankara’ya geldi</text><rect x="179" y="71" '
+    'width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">30 Eylül</text><text x="262.5" y="107.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Damat Ferit '
+    'istifa</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">etti</text></svg>',
+ 9: '<svg viewBox="0 0 350 168" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sivas Kongresine yönelik '
+    'engellemeler ve kongrenin başarıyla toplanması panosu."><rect x="4" y="3" width="342" height="80" rx="5" fill="#fdeaea" '
+    'stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d63a3a">Engelleme Girişimleri</text><text x="11.0" y="38.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Elazığ Valisi Ali Galip olayı</text><text '
+    'x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• '
+    'Fransız Binbaşı Bruno’nun</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Sivas’ı işgal tehdidi</text><rect x="4" y="86" width="342" height="80" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">Kongrenin Sonucu</text><text x="11.0" y="121.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Tehditler boşa çıkarıldı</text><text '
+    'x="11.0" y="140.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• '
+    'Sivas’ta başarıyla toplandı</text><text x="11.0" y="158.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">• Manda kesin reddedildi!</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = erzurum_sivas_karsilastirma()
-    s[2]['gorsel'] = sivas_karar_kartlari()
-    s[5]['gorsel'] = amasya_gorusmeleri_protokolu()
-    s[6]['gorsel'] = ankara_merkez_kartlari()
-    s[7]['gorsel'] = milli_basin_panosu()
-    s[8]['gorsel'] = kronoloji_sivas_ankara()
-    s[9]['gorsel'] = sivas_engelleme_ve_sonuc()
-    s[11]['gorsel'] = meclis_yeri_tartismasi_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

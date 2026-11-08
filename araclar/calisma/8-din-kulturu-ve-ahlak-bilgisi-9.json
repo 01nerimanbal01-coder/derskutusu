@@ -14,8 +14,7 @@
   ],
   "hatirla": [
     "Sözlükte «temizlenme, arınma, bereket ve çoğalma» anlamına gelen zekât; hicretin 2. yılında Medine’de farz kılınmış malî bir ibadettir. Akıllı, ergen ve Müslüman bir kimseye zekâtın farz olması için borçları ve asli ihtiyaçları (oturulan ev, binek araç, giysi, gıda, meslek aletleri) dışında nisap miktarı mala sahip olması gerekir.",
-    "Altın (85 g), gümüş (595 g), nakit para ve ticaret mallarında üzerinden 1 kamerî yıl geçtiğinde {kesir:1|40} (%2,5) oranında zekât verilir.",
-    "Küçükbaş hayvanlarda 40–120 koyun veya keçi için 1 koyun/keçi (121–200 arası 2 koyun); büyükbaşta 30–39 sığır veya manda için 2 yaşında 1 buzağı (40–59 arası 3 yaşında 1 dana); develerde ise 5–24 arası her 5 deve için 1 koyun/keçi zekât verilir."
+    "Altın (85 g), gümüş (595 g), nakit para ve ticaret mallarında üzerinden 1 kamerî yıl geçtiğinde {kesir:1|40} (%2,5) oranında zekât verilir."
   ],
   "sorular": [
     {
@@ -25,19 +24,15 @@
       "ciftler": [
         [
           "85 gram altın, nakit birikim ve ticaret malları",
-          "Kırkta bir ({kesir:1|40} yani %2,5) oranında"
+          "Kırkta bir ({kesir:1|40} yani %2,5)"
         ],
         [
           "Yağmur suyuyla masrafsız yetişen toprak ürünleri",
-          "Onda bir ({kesir:1|10} yani %10) oranında"
+          "Onda bir ({kesir:1|10} yani %10)"
         ],
         [
           "Sulama masrafı ve emekle yetişen toprak ürünleri",
-          "Yirmide bir ({kesir:1|20} yani %5) oranında"
-        ],
-        [
-          "Toprak altından çıkarılan madenler",
-          "Beşte bir ({kesir:1|5} yani %20) oranında"
+          "Yirmide bir ({kesir:1|20} yani %5)"
         ]
       ]
     },
@@ -45,7 +40,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Selim Bey’in mal varlığı dökümünü gösteren bilgi kartı incelendiğinde, hangi varlıkları «asli ihtiyaç» kapsamında yer aldığı için",
+      "soru": "Selim Bey’in mal varlığı kartları incelendiğinde, hangi varlıkları «asli ihtiyaç» sayıldığı için zekâta tabi değildir?",
       "secenekler": [
         "1. ve 3. sıradaki ikamet ettiği konut ile binek otomobili",
         "2. ve 4. sıradaki yatırım altını ile mağaza ticari ürünleri",
@@ -58,7 +53,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Hayvancılıkla uğraşan çiftçilerin sahip oldukları hayvan sayılarını gösteren kartlara göre nisap alt sınırını ve verilecek zekât miktarını",
+      "soru": "Verilen zekât ölçüleri şemasına göre tablodaki hayvanların nisap alt sınırını ve verilecek zekât miktarını yazınız.",
       "basliklar": [
         "Hayvan Türü ve Sayısı",
         "Nisap Alt Sınırı",
@@ -67,13 +62,15 @@
       "satirlar": [
         [
           "1. Küçükbaş (75 adet koyun)",
-          "40 adet koyun/keçi",
-          "1 adet koyun veya keçi"
+          "40 adet koyun veya keçi",
+          {
+            "b": "1 adet koyun veya keçi"
+          }
         ],
         [
           "2. Küçükbaş (150 adet keçi)",
           {
-            "b": "40 adet koyun/keçi"
+            "b": "40 adet koyun veya keçi"
           },
           {
             "b": "2 adet koyun veya keçi"
@@ -82,7 +79,7 @@
         [
           "3. Büyükbaş (34 adet sığır)",
           {
-            "b": "30 adet sığır/manda"
+            "b": "30 adet sığır veya manda"
           },
           {
             "b": "2 yaşında 1 adet buzağı"
@@ -119,10 +116,6 @@
         {
           "metin": "On beş devesi bulunan bir yetiştirici, develerinin zekâtı olarak kendi cinsinden bir adet yavru deve verir.",
           "dogru": false
-        },
-        {
-          "metin": "Altın, gümüş, nakit para ve ticaret mallarının zekât verilebilmesi için nisap miktarına ulaşıp üzerinden bir yıl geçmesi gerekir.",
-          "dogru": true
         }
       ]
     },
@@ -143,10 +136,6 @@
         {
           "metin": "Altın ve ticaret mallarında zenginlik alt sınırı ___ gram altın veya bunun parasal değeridir.",
           "cevap": "85"
-        },
-        {
-          "metin": "Kırk ile elli dokuz arasında sığırı bulunan bir kimse zekât olarak üç yaşında bir ___ verir.",
-          "cevap": "dana"
         }
       ],
       "fazla": [
@@ -157,7 +146,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Tarım ürünleri hasat panosundaki iki farklı buğday tarlasının sulama yöntemi ve ürün miktarı incelendiğinde, çiftçilerin",
+      "soru": "Hasat panosundaki K ve L buğday tarlalarının sulama yöntemi ve ürün miktarına göre verilecek öşür miktarları hangisidir?",
       "secenekler": [
         "K Tarlası: 250 kg — L Tarlası: 500 kg",
         "K Tarlası: 125 kg — L Tarlası: 250 kg",
@@ -170,7 +159,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Dört komşunun borçları ve asli ihtiyaçları çıktıktan sonra ellerinde bulunan mal varlıkları kartlarda gösterilmiştir. Kartlardaki bilgilere göre",
+      "soru": "Dört komşunun asli ihtiyaçları dışındaki mal varlıkları kartlarda verilmiştir. Buna göre hangisi zekât vermekle yükümlü {koyu:değildir?}",
       "secenekler": [
         "Ahmet Bey: Bir yıldır sakladığı 110 gram altın birikimi",
         "Zeynep Hanım: Meralarda otlayan 25 adet koyun sürüsü",
@@ -183,8 +172,8 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Birikim tablosunda verilen ve üzerinden bir kamerî yıl geçen 160.000 TL nakit parası ile 40.000 TL değerindeki ticaret malının toplam zekât",
-      "cevap": "Toplam mal = 160.000 + 40.000 = 200.000 TL. Zekât oranı.",
+      "soru": "Hesaplama kartında verilen bir yıllık 160.000 TL nakit birikim ile 40.000 TL ticaret malının toplam zekât tutarını işlemle bulunuz.",
+      "cevap": "Toplam mal 160.000 + 40.000 = 200.000 TL olup {kesir:1|40} zekâtı 5.000 TL’dir.",
       "satir": 2
     },
     {
@@ -258,9 +247,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Karşılaştırma kartında verilen toprak ürünlerinin zekât (öşür) oranının yağmurla sulanan arazide {kesir:1|10} (%10), taşıma su",
-      "cevap": "İslam dini çiftçinin harcadığı emeği ve sulama masrafını gözetmiş; masraflı.",
+      "soru": "Toprak ürünlerinde öşür oranının yağmurla sulanan arazide {kesir:1|10} (%10), masraflı sulanan arazide {kesir:1|20} (%5) olmasının nedenini açıklayınız.",
+      "cevap": "İslam dini çiftçinin harcadığı emeği ve sulama masrafını gözeterek zekât yükünü azaltmıştır.",
       "satir": 2
     }
   ],

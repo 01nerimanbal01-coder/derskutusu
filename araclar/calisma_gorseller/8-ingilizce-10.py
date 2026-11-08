@@ -1,156 +1,139 @@
-"""8. sınıf İngilizce 10. hafta (Unit 3: In the Kitchen — Food Preferences &amp; Cooking Methods) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); Noto Sans 10.5-11.5 pt (K150 EK); eğik kesir yok (K155)."""
+"""8-ingilizce-10 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, KUM = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#fffdf5'
-ALTIN, KAHVE, YESIL_K = '#c9a227', '#8a5a2b', '#0f6b45'
-
-
-def svg(w, h, ic, etiket, en_fazla=15):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', ince=False, boy=10.5):
-    ag = '500' if ince else '700'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-family="Noto Sans, sans-serif" font-size="{boy}" font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def dort_arkadas_tat_kartlari():
-    """Soru 2 (s[1]): Leo, Maya, Sam ve Nina yemek tercihi kartları."""
-    kartlar = [
-        (4, 4, '1. Leo’s Preference', 'Salty crackers · Sour pickles', MAVI, MAVI_A),
-        (184, 4, '2. Maya’s Preference', 'Cake · Baklava · Pudding', MOR, MOR_A),
-        (4, 52, '3. Sam’s Preference', 'Spicy chili soup · Steak', KIR, KIR_A),
-        (184, 52, '4. Nina’s Preference', 'Steamed broccoli · Carrots', YES, YES_A),
-    ]
-    ic = ''
-    for x, y, bas, alt, r, z in kartlar:
-        ic += kutu(x, y, 172, 44, z, r, 7)
-        ic += yazi(x + 86, y + 18, bas, r, boy=10.3)
-        ic += yazi(x + 86, y + 36, alt, LAC, ince=True, boy=9.6)
-    return svg(360, 100, ic, 'Leo, Maya, Sam ve Nina adlı dört arkadaşın yiyecek tercih kartları.', 15)
-
-
-def pisirme_yontemleri_panosu():
-    """Soru 3 (s[2]): Boil, Bake, Steam, Grill 4 yöntem kartı."""
-    kartlar = [
-        (4, 4, '1. In Hot Water (Pot)', 'Pasta &amp; Eggs -> BOIL', MAVI, MAVI_A),
-        (184, 4, '2. In a Hot Oven', 'Bread &amp; Cake -> ?', TUR, TUR_A),
-        (4, 52, '3. Over Hot Vapour', 'Broccoli &amp; Fish -> ?', YES, YES_A),
-        (184, 52, '4. Over Barbecue Fire', 'Meatballs &amp; Steak -> ?', KIR, KIR_A),
-    ]
-    ic = ''
-    for x, y, bas, alt, r, z in kartlar:
-        ic += kutu(x, y, 172, 44, z, r, 7)
-        ic += yazi(x + 86, y + 18, bas, r, boy=10.3)
-        ic += yazi(x + 86, y + 36, alt, LAC, ince=True, boy=9.6)
-    return svg(360, 100, ic, 'Dört temel pişirme yöntemini gösteren mutfak bilgi kartları.', 15)
-
-
-def mercimek_corbasi_adimlari():
-    """Soru 6 (s[5]): Lentil soup 4 sıralı adım kartı."""
-    ic = kutu(4, 4, 352, 86, KUM, ALTIN, 8)
-    ic += yazi(180, 19, 'Chef’s Lentil Soup Recipe Steps (Mercimek Çorbası)', KAHVE, boy=10.2)
-    adimlar = [
-        (10, 26, 'First:', 'Chop onion &amp; carrot', MAVI, MAVI_A),
-        (96, 26, 'Second:', 'Fry them in a pot', TUR, TUR_A),
-        (182, 26, 'Next:', 'Rinse &amp; add lentils', YES, YES_A),
-        (268, 26, 'Finally:', 'Blend &amp; serve hot', MOR, MOR_A),
-    ]
-    for x, y, bas, alt, r, z in adimlar:
-        ic += kutu(x, y, 82, 58, z, r, 6)
-        ic += yazi(x + 41, y + 20, bas, r, boy=10.0)
-        ic += yazi(x + 41, y + 42, alt, LAC, ince=True, boy=8.9)
-    return svg(360, 94, ic, 'Mercimek çorbası tarifinin First, Second, Next ve Finally adımları.', 15)
-
-
-def pizza_hazirlik_kartlari():
-    """Soru 7 (s[6]): Pizza yapımının 4 aşaması ve kullanılan araçlar."""
-    kartlar = [
-        (4, 4, 'Step I · Kneading Dough', 'Flour + water in a bowl', MAVI, MAVI_A),
-        (184, 4, 'Step II · Rolling Dough', 'Flat circle with a rolling pin', TUR, TUR_A),
-        (4, 52, 'Step III · Slicing Toppings', 'Knife &amp; cutting board', YES, YES_A),
-        (184, 52, 'Step IV · Baking Pizza', 'Baking tray in hot oven', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, bas, alt, r, z in kartlar:
-        ic += kutu(x, y, 172, 44, z, r, 7)
-        ic += yazi(x + 86, y + 18, bas, r, boy=10.2)
-        ic += yazi(x + 86, y + 36, alt, LAC, ince=True, boy=9.5)
-    return svg(360, 100, ic, 'Pizza hazırlığının dört adımı ve kullanılan mutfak araçları.', 15)
-
-
-def restoran_siparis_diyalogu():
-    """Soru 8 (s[7]): Garson ve müşteri balık pişirme tercihi diyaloğu."""
-    ic = kutu(4, 4, 352, 40, MAVI_A, MAVI, 8)
-    ic += yazi(180, 19, 'Waiter: «How would you like your salmon fish, madam?»', MAVI, boy=10.2)
-    ic += yazi(180, 35, '(Fried in oil, grilled or baked in the oven?)', LAC, ince=True, boy=9.4)
-
-    ic += kutu(4, 48, 352, 42, YES_A, YES, 8)
-    ic += yazi(180, 64, 'Customer: «I never eat greasy food. Please grill or bake it.»', YESIL_K, boy=10.0)
-    ic += yazi(180, 81, '(Reason: Grilling and baking are healthier than frying.)', LAC, ince=True, boy=9.4)
-    return svg(360, 94, ic, 'Restoranda garson ile müşteri arasındaki sağlıklı balık pişirme diyaloğu.', 15)
-
-
-def elmali_kek_akis_semasi():
-    """Soru 9 (s[8]): Apple Cake 4 aşamalı akış şeması."""
-    adimlar = [
-        (4, '1. First', 'Whisk eggs', 'and sugar', MAVI, MAVI_A),
-        (93, '2. Second', 'Add milk, oil', 'and flour', TUR, TUR_A),
-        (182, '3. Then', 'Pour into tray', '&amp; add apples', MOR, MOR_A),
-        (271, '4. Finally', 'Bake at 180 °C', 'for 35 min', YES, YES_A),
-    ]
-    ic = ''
-    for x, bas, s1, s2, r, z in adimlar:
-        ic += kutu(x, 4, 85, 80, z, r, 7)
-        ic += yazi(x + 42, 22, bas, r, boy=10.2)
-        ic += yazi(x + 42, 44, s1, LAC, ince=True, boy=9.4)
-        ic += yazi(x + 42, 64, s2, LAC, boy=9.4)
-    return svg(360, 88, ic, 'Elmalı kek tarifinin First, Second, Then ve Finally basamakları.', 14)
-
-
-def aile_tercih_tablosu():
-    """Soru 10 (s[9]): Father, Mother, Daughter, Son yemek tercih tablosu."""
-    kartlar = [
-        (4, 4, 'Father (Baba)', 'Likes: Grilled meat · Dislikes: Sweets', MAVI, MAVI_A),
-        (184, 4, 'Mother (Anne)', 'Likes: Steamed vegetables (Healthy)', YES, YES_A),
-        (4, 52, 'Daughter (Kız Çocuk)', 'Likes: Milky desserts · Dislikes: Sour', MOR, MOR_A),
-        (184, 52, 'Son (Erkek Çocuk)', 'Likes: Spicy &amp; fried food · Dislikes: Boiled', KIR, KIR_A),
-    ]
-    ic = ''
-    for x, y, bas, alt, r, z in kartlar:
-        ic += kutu(x, y, 172, 44, z, r, 7)
-        ic += yazi(x + 86, y + 18, bas, r, boy=10.2)
-        ic += yazi(x + 86, y + 36, alt, LAC, ince=True, boy=9.3)
-    return svg(360, 100, ic, 'Dört aile üyesinin sevdiği ve sevmediği yemek türleri panosu.', 15)
-
-
-def saglikli_sagliksiz_mutfak_karti():
-    """Soru 12 (s[11]): Healthy Kitchen vs Unhealthy Kitchen karşılaştırma kartı."""
-    ic = kutu(4, 4, 172, 82, YES_A, YES, 8)
-    ic += yazi(90, 22, 'Healthy Kitchen Habits', YESIL_K, boy=10.3)
-    ic += yazi(90, 44, '• Steaming · Boiling · Grilling', LAC, ince=True, boy=9.6)
-    ic += yazi(90, 64, '• Fresh, nutritious &amp; light', YESIL_K, boy=9.6)
-
-    ic += kutu(184, 4, 172, 82, KIR_A, KIR, 8)
-    ic += yazi(270, 22, 'Unhealthy Kitchen Habits', KIR, boy=10.3)
-    ic += yazi(270, 44, '• Deep frying in hot oil', LAC, ince=True, boy=9.6)
-    ic += yazi(270, 64, '• Too greasy, fatty &amp; heavy', KIR, boy=9.6)
-    return svg(360, 90, ic, 'Sağlıklı ve sağlıksız pişirme alışkanlıklarını karşılaştıran kart.', 14)
+GORSELLER = {1: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Leo, Maya, Sam ve Nina '
+    'adlı dört arkadaşın yiyecek tercih kartları."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Leo’s Preference</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Salty crackers · Sour</text><text x="87.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">pickles</text><rect '
+    'x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Maya’s '
+    'Preference</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Cake · Baklava ·</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Pudding</text><rect x="4" y="71" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">3. Sam’s Preference</text><text x="87.5" y="107.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Spicy chili soup ·</text><text x="87.5" '
+    'y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Steak</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Nina’s Preference</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Steamed broccoli ·</text><text x="262.5" y="126.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Carrots</text></svg>',
+ 2: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört temel pişirme '
+    'yöntemini gösteren mutfak bilgi kartları."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. In Hot Water</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">(Pot)</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Pasta &amp; Eggs → BOIL</text><rect x="179" '
+    'y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="30.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. In a Hot '
+    'Oven</text><text x="262.5" y="49.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Bread &amp; Cake → ?</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="98.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Over Hot Vapour</text><text x="87.5" y="117.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Broccoli &amp; Fish → ?</text><rect x="179" y="71" width="167" '
+    'height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Over Barbecue</text><text x="262.5" '
+    'y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Fire</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Meatballs &amp; Steak → ?</text></svg>',
+ 5: '<svg viewBox="0 0 350 104" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mercimek çorbası '
+    'tarifinin First, Second, Next ve Finally adımları."><rect x="4" y="3" width="342" height="99" rx="5" fill="#fffdf5" stroke="#c9a227" '
+    'stroke-width="0.75"/><text x="11.0" y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#8a5a2b">Chef’s Lentil Soup Recipe Steps</text><text x="11.0" y="38.9" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">• First: Chop the onion and carrot.</text><text x="11.0" '
+    'y="57.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#ee7d12">• Second: Fry '
+    'them in a pot with butter.</text><text x="11.0" y="75.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0f6b45">• Next: Rinse and add a cup of red lentils.</text><text x="11.0" y="94.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">• Finally: Blend the mixture and serve '
+    'hot.</text></svg>',
+ 6: '<svg viewBox="0 0 350 186" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pizza hazırlığının dört '
+    'adımı ve kullanılan mutfak araçları."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Step I · Kneading Dough</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mix flour, warm water &amp; yeast in a bowl</text><rect x="4" y="49" '
+    'width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Step II · Rolling Dough</text><text x="11.0" '
+    'y="84.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Flatten into a '
+    'circle with a ___</text><rect x="4" y="95" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="112.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Step '
+    'III · Slicing Toppings</text><text x="11.0" y="130.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Cut tomatoes &amp; mushrooms on a board</text><rect x="4" y="141" width="342" height="43" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="158.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">Step IV · Baking Pizza</text><text x="11.0" y="176.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Cook on a baking tray in a hot '
+    'oven</text></svg>',
+ 7: '<svg viewBox="0 0 350 150" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Restoranda garson ile '
+    'müşteri arasındaki sağlıklı balık pişirme diyaloğu."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Waiter: «How would you like your salmon</text><text x="11.0" y="38.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">fish, madam?»</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Fried in oil, grilled or '
+    'baked in the oven?)</text><rect x="4" y="68" width="342" height="80" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="85.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">Customer: «I never eat greasy food. Please</text><text x="11.0" y="103.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">grill or bake it.»</text><text x="11.0" '
+    'y="122.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Reason: '
+    'Grilling and baking are healthier</text><text x="11.0" y="140.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">than frying.)</text></svg>',
+ 8: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Elmalı kek tarifinin '
+    'First, Second, Then ve Finally basamakları."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Then</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Pour into tray</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">&amp; add apples</text><rect x="179" y="3" '
+    'width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">First</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Whisk eggs '
+    'and</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">sugar</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Finally</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Bake at 180 °C for 35</text><text x="87.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">min</text><rect x="179" y="71" width="167" '
+    'height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Second</text><text x="262.5" y="107.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Add milk, oil '
+    'and</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">flour</text></svg>',
+ 9: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört aile üyesinin '
+    'sevdiği ve sevmediği yemek türleri panosu."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Father (Baba)</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Likes: Grilled meat ·</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dislikes: Sweets</text><rect x="179" y="3" '
+    'width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Mother (Anne)</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Likes: '
+    'Steamed</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">vegetables (Healthy)</text><rect x="4" y="71" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="89.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Daughter (Kız</text><text x="87.5" y="107.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Çocuk)</text><text x="87.5" y="126.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Likes: Milky desserts</text><text x="87.5" '
+    'y="144.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">· Dislikes: '
+    'Sour</text><rect x="179" y="71" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="89.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Son (Erkek '
+    'Çocuk)</text><text x="262.5" y="107.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Likes: Spicy &amp; fried</text><text x="262.5" y="126.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">food · Dislikes:</text><text x="262.5" y="144.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Boiled</text></svg>',
+ 11: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sağlıklı ve sağlıksız '
+     'pişirme alışkanlıklarını karşılaştıran kart."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" '
+     'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#0f6b45">Healthy Kitchen Habits</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Steaming · Boiling · Grilling</text><text x="11.0" y="57.2" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">• Fresh, nutritious '
+     '&amp; light</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text '
+     'x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+     'fill="#d63a3a">Unhealthy Kitchen Habits</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="500" fill="#0b2257">• Deep frying in hot oil</text><text x="11.0" y="122.2" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">• Too greasy, fatty &amp; heavy</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = dort_arkadas_tat_kartlari()
-    s[2]['gorsel'] = pisirme_yontemleri_panosu()
-    s[5]['gorsel'] = mercimek_corbasi_adimlari()
-    s[6]['gorsel'] = pizza_hazirlik_kartlari()
-    s[7]['gorsel'] = restoran_siparis_diyalogu()
-    s[8]['gorsel'] = elmali_kek_akis_semasi()
-    s[9]['gorsel'] = aile_tercih_tablosu()
-    s[11]['gorsel'] = saglikli_sagliksiz_mutfak_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

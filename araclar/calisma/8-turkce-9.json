@@ -15,9 +15,7 @@
   ],
   "hatirla": [
     "Cümlenin ögeleri bulunurken daima Y – Ö – N (Yüklem → Özne → Nesne → Tümleçler) sırası izlenir; isim ve sıfat tamlamaları, deyimler, ikilemeler, birleşik fiiller ve fiilimsi grupları kesinlikle bölünmez.",
-    "Fiil cümlelerinde vurgu, yüklemden hemen önceki öge üzerindedir (yüklem baştaysa yüklemdedir); isim cümlelerinde ise vurgu daima yüklemin kendisindedir. «mı/mi» soru eki ve «de/da» bağlacı vurguyu kendinden önceki ögeye çeker.",
-    "İki virgül ( , ... , ) veya iki kısa çizgi ( - ... - ) arasında yazılarak kendinden önceki ögeyi açıklayan söz grubuna «ara söz» denir ve açıkladığı ögenin içinde yer alır.",
-    "Cümlede hiçbir ögenin sorusuna cevap vermeyen hitaplar («Öğretmenler!», «Gençler!»), ünlemler, bağlaçlar («fakat, çünkü») ve hiçbir ögeyi açıklamayan ara cümleler «cümle dışı unsur (CDU)» kabul edilir."
+    "Fiil cümlelerinde vurgu, yüklemden hemen önceki öge üzerindedir (yüklem baştaysa yüklemdedir); isim cümlelerinde ise vurgu daima yüklemin kendisindedir. «mı/mi» soru eki ve «de/da» bağlacı vurguyu kendinden önceki ögeye çeker."
   ],
   "sorular": [
     {
@@ -36,10 +34,6 @@
         [
           "Bir ögeyi açıklayan ara söz",
           "İki virgül veya iki kısa çizgi arasında gösterilir"
-        ],
-        [
-          "Cümle dışı unsur (CDU)",
-          "Hitap, ünlem, bağlaç ve öge açıklamayan ara cümledir"
         ]
       ]
     },
@@ -70,7 +64,9 @@
         [
           "1. Atatürk, Başöğretmenimiz, yeni okullar açtı.",
           "Kim açtı?",
-          "Öznenin açıklayıcısı"
+          {
+            "b": "Öznenin açıklayıcısı"
+          }
         ],
         [
           "2. Samsun’a, Karadeniz’in incisine, vapurla ulaştık.",
@@ -121,10 +117,6 @@
         {
           "metin": "Belirli gün ve hafta adları olan «24 Kasım öğretmenler günü» ifadesinde «öğretmenler günü» küçük harflerle yazılır.",
           "dogru": false
-        },
-        {
-          "metin": "İçinde «mı / mi» soru eki bulunan cümlelerde soru, bu ekten hemen önceki ögeyi buldurmaya yöneliktir.",
-          "dogru": true
         }
       ]
     },
@@ -145,10 +137,6 @@
         {
           "metin": "Atatürk, Kurtuluş Savaşı sürerken Temmuz 1921’de Ankara’da ___ Kongresi’ni toplamıştır.",
           "cevap": "Maarif"
-        },
-        {
-          "metin": "Cümlede hiçbir ögeye dahil edilmeyen bağlaç, ünlem ve hitaplara ___ unsur adı verilir.",
-          "cevap": "cümle dışı"
         }
       ],
       "fazla": [
@@ -184,15 +172,13 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Vurgu taşıma kartında verilen «Cumhuriyet öğretmenleri / genç nesilleri / bilimin ışığıyla / yetiştiriyor.» cümlesinde vurguyu «Cumhuriyet öğretmenleri» öznesinin üzerine taşımak için cümleyi yeniden dizerek yazınız.",
+      "soru": "«Cumhuriyet öğretmenleri / genç nesilleri / bilimin ışığıyla / yetiştiriyor.» cümlesinde vurguyu «Cumhuriyet öğretmenleri» öznesinin üzerine taşımak için cümleyi yeniden dizerek yazınız.",
       "cevap": "Özneyi yüklemin önüne getirerek: «Genç nesilleri bilimin ışığıyla Cumhuriyet öğretmenleri yetiştiriyor.»",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Okulda «10 Kasım Atatürk’ü Anma Haftası» kapsamında bir kitap sergisi hazırlama sürecini işlem basamaklarına ve sıralama ifadelerine göre 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "İlk olarak öğretmenlerimizle birlikte sergide yer alacak Millî Mücadele ve Atatürk konulu kitapların listesini belirledik.",
@@ -250,9 +236,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Öge çözümleme kartında verilen «Gazi Mustafa Kemal, Cumhuriyetimizin kurucusu, 1928 yılında bütün millete yeni Türk harflerini öğretti.» cümlesini ögelerine ayırarak ara sözün hangi ögeyi açıkladığını yazınız.",
-      "cevap": "Özne: Gazi Mustafa Kemal / ZT: 1928’de / YT: millete / B.li Nesne: yeni harfleri / Yüklem: tanıttı.",
+      "soru": "«Gazi Mustafa Kemal, Cumhuriyetimizin kurucusu, 1928 yılında bütün millete yeni Türk harflerini öğretti.» cümlesini ögelerine ayırarak ara sözün hangi ögeyi açıkladığını yazınız.",
+      "cevap": "Özne: Gazi Mustafa Kemal (ara söz özneyi açıklar) / ZT / YT / B.li Nesne / Yüklem: öğretti.",
       "satir": 2
     }
   ]

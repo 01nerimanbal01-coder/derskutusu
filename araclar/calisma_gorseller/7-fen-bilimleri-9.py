@@ -1,149 +1,106 @@
-"""7. sınıf Fen Bilimleri 9. hafta (Enerji Dönüşümleri, Enerjinin Korunumu, Hava ve Su Direnci) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-10.5 pt Noto Sans (K150 EK)."""
+"""7-fen-bilimleri-9 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=15):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.2, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def u_kaykay_pisti_svg():
-    ic = kutu(6, 6, 210, 78, MAVI_A, MAVI)
-    ic += f'<path d="M 24 22 Q 110 82 196 22" fill="none" stroke="{MAVI}" stroke-width="2.2"/>'
-    ic += f'<circle cx="28" cy="24" r="7" fill="{TUR}"/><circle cx="110" cy="52" r="7" fill="{YES}"/><circle cx="192" cy="24" r="7" fill="{KIR}"/>'
-    ic += yazi(28, 16, 'P (6 m)', 9.5, TUR)
-    ic += yazi(110, 74, 'R (0 m)', 9.5, YES)
-    ic += yazi(192, 16, 'S (6 m)', 9.5, KIR)
-
-    ic += kutu(222, 6, 132, 78, YES_A, YES)
-    ic += yazi(288, 24, 'Sürtünmesiz Pist', 10.0, YES)
-    ic += yazi(288, 45, 'P’de Ep = 180 J', 9.6, LAC, ince=True)
-    ic += yazi(288, 66, '3 m’de Ep=?, Ek=?', 9.6, KIR)
-    return svg(360, 90, ic, 'Sürtünmesiz U kaykay pistinde P, R ve S noktaları.', 15)
-
-
-def direnc_tasarim_tablo_kartlari():
-    kartlar = [
-        ('1. Kuş Sürüsü', 'V dizilimi uçuş', MAVI, MAVI_A),
-        ('2. Fren Paraşütü', 'Geniş kubbe açma', TUR, TUR_A),
-        ('3. Gemi Pruvası', 'Sivri V burun', CAM, CAM_A),
-        ('4. Yüzücü Bonesi', 'Kaygan yüzey', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 70, z, r)
-        ic += yazi(x + 41, 24, bas, 9.8, r)
-        ic += f'<line x1="{x + 8}" y1="32" x2="{x + 74}" y2="32" stroke="{r}" stroke-width="0.9"/>'
-        ic += yazi(x + 41, 54, alt, 9.3, LAC, ince=True)
-    return svg(360, 82, ic, 'Hava ve su direnciyle ilgili dört uygulama kartı.', 14)
-
-
-def egik_duzlem_yay_duzenegi():
-    adimlar = [
-        ('1. H Yüksekliği', 'Duran Küre (Ep)', MAVI, MAVI_A),
-        ('2. Yatay Yol', 'Hızlı Küre (Ek)', YES, YES_A),
-        ('3. Sarmal Yay', 'Maksimum Sıkışma', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(adimlar):
-        x = 6 + i * 118
-        ic += kutu(x, 6, 112, 72, z, r)
-        ic += yazi(x + 56, 24, bas, 10.2, r)
-        ic += yazi(x + 56, 52, alt, 9.6, LAC, ince=True)
-    return svg(360, 84, ic, 'Eğik düzlemden inip sarmal yayı sıkıştıran küre düzeneği.', 14)
-
-
-def iki_parasut_deneyi():
-    ic = kutu(6, 6, 170, 76, MAVI_A, MAVI)
-    ic += yazi(91, 22, 'X Paraşütü (Dar Kubbe)', 10.2, MAVI)
-    ic += yazi(91, 44, 'Yüzey Alanı = 100 cm²', 9.6, LAC, ince=True)
-    ic += yazi(91, 65, 'İniş Süresi: 4 saniye', 9.6, MAVI)
-
-    ic += kutu(184, 6, 170, 76, TUR_A, TUR)
-    ic += yazi(269, 22, 'Y Paraşütü (Geniş Kubbe)', 10.2, TUR)
-    ic += yazi(269, 44, 'Yüzey Alanı = 400 cm²', 9.6, LAC, ince=True)
-    ic += yazi(269, 65, 'İniş Süresi: 11 saniye', 9.6, KIR)
-    return svg(360, 88, ic, 'Farklı kubbe alanına sahip X ve Y paraşütlerinin iniş karşılaştırması.', 15)
-
-
-def surtunmeli_sarkac_svg():
-    ic = kutu(6, 6, 172, 74, YES_A, YES)
-    ic += yazi(92, 22, 'Başlangıç (K Noktası)', 10.2, YES)
-    ic += yazi(92, 44, 'İlk Yükseklik: h = 30 cm', 9.6, LAC, ince=True)
-    ic += yazi(92, 64, 'Serbest bırakıldı', 9.5, YES)
-
-    ic += kutu(184, 6, 170, 74, KIR_A, KIR)
-    ic += yazi(269, 22, 'Karşı Uç (N Noktası)', 10.2, KIR)
-    ic += yazi(269, 44, 'Son Yükseklik: h = 22 cm', 9.6, LAC, ince=True)
-    ic += yazi(269, 64, '8 cm kayıp neden oluştu?', 9.5, KIR)
-    return svg(360, 86, ic, 'Sürtünmeli ortamda 30 cm’den bırakılıp 22 cm’ye çıkabilen sarkaç.', 14)
-
-
-def baraj_vagon_akis_seridi():
-    adimlar = [
-        ('1. Baraj Gölü', 'Yüksekte Su (Ep)', MAVI, MAVI_A),
-        ('2. Akan Su', 'Hızlı Akış (Ek)', CAM, CAM_A),
-        ('3. Çark-Vagon', 'Yatay Hareket (Ek)', YES, YES_A),
-        ('4. Eğik Rampa', 'Yükselen Vagon (Ep)', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 70, z, r)
-        ic += yazi(x + 41, 24, bas, 9.8, r)
-        ic += yazi(x + 41, 52, alt, 9.2, LAC, ince=True)
-    return svg(360, 82, ic, 'Baraj suyundan eğik rampadaki vagona enerji dönüşüm şeridi.', 14)
-
-
-def surtunmeli_enerji_sutun_grafik():
-    ic = kutu(6, 6, 170, 78, MAVI_A, MAVI)
-    ic += yazi(91, 22, 'T1 Anı (Başlangıç)', 10.2, MAVI)
-    ic += yazi(91, 42, 'Ek = 60 J  ·  Ep = 40 J', 9.5, LAC, ince=True)
-    ic += yazi(91, 60, 'Isı Enerjisi (Eısı) = 0 J', 9.5, LAC, ince=True)
-    ic += yazi(91, 76, 'Mekanik = 100 J · Toplam = 100 J', 9.3, MAVI)
-
-    ic += kutu(184, 6, 170, 78, TUR_A, TUR)
-    ic += yazi(269, 22, 'T2 Anı (Sürtünmeli Yol)', 10.2, TUR)
-    ic += yazi(269, 42, 'Ek = 30 J  ·  Ep = 40 J', 9.5, LAC, ince=True)
-    ic += yazi(269, 60, 'Isı Enerjisi (Eısı) = 30 J', 9.5, KIR)
-    ic += yazi(269, 76, 'Mekanik = 70 J · Toplam = 100 J', 9.3, YES)
-    return svg(360, 90, ic, 'Sürtünmeli yolda T1 ve T2 anlarındaki enerji değerleri kartı.', 15)
-
-
-def hava_sivi_silindir_deneyi():
-    ic = kutu(6, 6, 170, 74, MAVI_A, MAVI)
-    ic += yazi(91, 22, 'K Silindiri · Hava Dolu', 10.2, MAVI)
-    ic += yazi(91, 43, 'Tanecik yoğunluğu: Az', 9.5, LAC, ince=True)
-    ic += yazi(91, 64, 'Tabana varış süresi: ?', 9.6, MAVI)
-
-    ic += kutu(184, 6, 170, 74, CAM_A, CAM)
-    ic += yazi(269, 22, 'L Silindiri · Sıvı Dolu', 10.2, CAM)
-    ic += yazi(269, 43, 'Tanecik yoğunluğu: Çok fazla', 9.5, LAC, ince=True)
-    ic += yazi(269, 64, 'Tabana varış süresi: ?', 9.6, KIR)
-    return svg(360, 86, ic, 'Hava ve yoğun sıvı dolu K ve L silindirlerinde küre düşüşü.', 14)
+GORSELLER = {1: '<svg viewBox="0 0 350 70" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sürtünmesiz U kaykay '
+    'pistinde P, R ve S noktaları."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">P (6 m) S (6 m) · R (0</text><text x="87.5" y="49.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">m)</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Sürtünmesiz Pist</text><text x="262.5" y="39.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">P’de Ep = 180 J</text><text x="262.5" '
+    'y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">3 m’de Ep=?, '
+    'Ek=?</text></svg>',
+ 2: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hava ve su direnciyle '
+    'ilgili dört uygulama kartı."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Kuş Sürüsü</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">V dizilimi uçuş</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. Fren Paraşütü</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Geniş kubbe açma</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">3. Gemi Pruvası</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sivri V '
+    'burun</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">4. Yüzücü '
+    'Bonesi</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kaygan yüzey</text></svg>',
+ 5: '<svg viewBox="0 0 350 80" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eğik düzlemden inip '
+    'sarmal yayı sıkıştıran küre düzeneği."><rect x="4" y="3" width="342" height="23" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="19.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#2451d6">1. H Yüksekliği:</tspan> Duran Küre (Ep)</text><rect x="4" '
+    'y="29" width="342" height="23" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="45.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" '
+    'fill="#12a150">2. Yatay Yol:</tspan> Hızlı Küre (Ek)</text><rect x="4" y="55" width="342" height="23" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="71.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#7c3aed">3. Sarmal Yay:</tspan> Maksimum '
+    'Sıkışma</text></svg>',
+ 6: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Farklı kubbe alanına '
+    'sahip X ve Y paraşütlerinin iniş karşılaştırması."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">X Paraşütü (Dar Kubbe)</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yüzey Alanı = 100 cm²</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">İniş Süresi: 4 '
+    'saniye</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Y Paraşütü '
+    '(Geniş Kubbe)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Yüzey Alanı = 400 cm²</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">İniş Süresi: 11 saniye</text></svg>',
+ 7: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sürtünmeli ortamda 30 '
+    'cm’den bırakılıp 22 cm’ye çıkabilen sarkaç."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Başlangıç (K Noktası)</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İlk Yükseklik: h = 30 cm</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Serbest '
+    'bırakıldı</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" '
+    'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Karşı Uç (N '
+    'Noktası)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Son Yükseklik: h = 22 cm</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d63a3a">8 cm kayıp neden oluştu?</text></svg>',
+ 8: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Baraj suyundan eğik '
+    'rampadaki vagona enerji dönüşüm şeridi."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Çark-Vagon</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Yatay Hareket (Ek)</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Baraj Gölü</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yüksekte Su (Ep)</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Eğik Rampa</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yükselen Vagon '
+    '(Ep)</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Akan '
+    'Su</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Hızlı Akış (Ek)</text></svg>',
+ 9: '<svg viewBox="0 0 350 118" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sürtünmeli yolda T1 ve '
+    'T2 anlarındaki enerji sütun grafiği."><rect x="4" y="3" width="342" height="112" rx="5" fill="#f8fafc" stroke="#94a3b8" '
+    'stroke-width="0.75"/><line x1="34" y1="16" x2="34" y2="95" stroke="#334155" stroke-width="0.75"/><line x1="34" y1="95" x2="336" '
+    'y2="95" stroke="#334155" stroke-width="0.75"/><text x="101" y="16" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#1e40af">T1 Anı (J)</text><rect x="48" y="41" width="24" height="54" rx="2" fill="#93c5fd" '
+    'stroke="#1d4ed8" stroke-width="0.75"/><text x="60" y="34" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#1d4ed8">60</text><text x="60" y="110" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Ek</text><rect x="89" y="59" width="24" height="36" rx="2" fill="#86efac" '
+    'stroke="#15803d" stroke-width="0.75"/><text x="101" y="52" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#15803d">40</text><text x="101" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ep</text><rect x="130" y="93" width="24" height="2" rx="1" '
+    'fill="#fde047" stroke="#b45309" stroke-width="0.75"/><text x="142" y="86" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#b45309">0</text><text x="142" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Eısı</text><line x1="182" y1="16" x2="182" y2="95" stroke="#cbd5e1" '
+    'stroke-width="0.75" stroke-dasharray="3,2"/><text x="255" y="16" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#c2410c">T2 Anı (J)</text><rect x="202" y="68" width="24" height="27" rx="2" '
+    'fill="#93c5fd" stroke="#1d4ed8" stroke-width="0.75"/><text x="214" y="61" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#1d4ed8">30</text><text x="214" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ek</text><rect x="243" y="59" width="24" height="36" rx="2" '
+    'fill="#86efac" stroke="#15803d" stroke-width="0.75"/><text x="255" y="52" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#15803d">40</text><text x="255" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ep</text><rect x="284" y="68" width="24" height="27" rx="2" '
+    'fill="#fca5a5" stroke="#dc2626" stroke-width="0.75"/><text x="296" y="61" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#dc2626">30</text><text x="296" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Eısı</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = u_kaykay_pisti_svg()
-    s[2]['gorsel'] = direnc_tasarim_tablo_kartlari()
-    s[5]['gorsel'] = egik_duzlem_yay_duzenegi()
-    s[6]['gorsel'] = iki_parasut_deneyi()
-    s[7]['gorsel'] = surtunmeli_sarkac_svg()
-    s[8]['gorsel'] = baraj_vagon_akis_seridi()
-    s[9]['gorsel'] = surtunmeli_enerji_sutun_grafik()
-    s[11]['gorsel'] = hava_sivi_silindir_deneyi()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

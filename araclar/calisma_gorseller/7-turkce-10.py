@@ -1,140 +1,124 @@
-"""7. sınıf Türkçe 10. hafta (Millî Mücadele Sergisi / Kahraman Çocuklar, Fiillerde Anlam Kayması, Yazım Kuralları ve Söz Sanatları) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-10.5 pt Noto Sans (K150 EK)."""
+"""7-turkce-10 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=15):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.0, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def sergi_kahraman_cocuklar_karti():
-    ic = kutu(6, 6, 348, 78, KIR_A, KIR)
-    ic += yazi(180, 22, 'MİLLÎ MÜCADELE SERGİSİ · KAHRAMAN ÇOCUKLAR', 10.0, KIR)
-    ic += yazi(180, 42, '• Cephe gerisinde kağnılarla cephane ve erzak ulaştırdılar.', 9.3, LAC, ince=True)
-    ic += yazi(180, 58, '• Kâzım Karabekir Paşa’nın kurduğu Gürbüzler Ordusu’nda', 9.3, LAC, ince=True)
-    ic += yazi(180, 74, '  okuma yazma, sanat ve meslek öğrenerek vatanı yücelttiler.', 9.3, MAVI)
-    return svg(360, 90, ic, 'Millî Mücadele Sergisi ve Kahraman Çocuklar tanıtım kartı.', 15)
-
-
-def anlam_kaymasi_tablo_kartlari():
-    kartlar = [
-        ('1. Fiş (-yor)', '1919’da çıkıyor', MAVI, MAVI_A),
-        ('2. Fiş (-ur)', 'Haftaya buluşuruz', YES, YES_A),
-        ('3. Fiş (-yor)', 'Her sabah yapıyor', TUR, TUR_A),
-        ('4. Fiş (-a)', 'Yolunuz açık ola!', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 70, z, r)
-        ic += yazi(x + 41, 24, bas, 9.6, r)
-        ic += f'<line x1="{x + 8}" y1="32" x2="{x + 74}" y2="32" stroke="{r}" stroke-width="0.8"/>'
-        ic += yazi(x + 41, 54, alt, 9.0, LAC, ince=True)
-    return svg(360, 82, ic, 'Fiillerde anlam kayması içeren dört cümle fişi.', 14)
-
-
-def yazim_kurallari_levhalari():
-    levhalar = [
-        (4, 4, '1. Levha (Bayram Adı)', '29 Ekim Cumhuriyet Bayramı', MAVI, MAVI_A),
-        (184, 4, '2. Levha (Tarihî Olay)', 'kurtuluş savaşı’nda cephe', KIR, KIR_A),
-        (4, 50, '3. Levha (Dönem Adı)', 'Millî Mücadele’nin çocukları', YES, YES_A),
-        (184, 50, '4. Levha (Belirli Tarih)', '24 Kasım 2026 Salı günü', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, bas, alt, r, z in levhalar:
-        ic += kutu(x, y, 172, 42, z, r, 7)
-        ic += yazi(x + 86, y + 16, bas, 9.6, r)
-        ic += yazi(x + 86, y + 34, alt, 9.1, LAC, ince=True)
-    return svg(360, 96, ic, 'Büyük harflerin ve kesme işaretinin yazımıyla ilgili dört levha.', 15)
-
-
-def soz_sanatlari_kartlari():
-    kartlar = [
-        (4, 4, '1. Kart · Benzetme', 'Aslan gibi kükreyen Mehmetçik', MAVI, MAVI_A),
-        (184, 4, '2. Kart · Kişileştirme', 'Hüzünle ağlayan kağnı tekeri', YES, YES_A),
-        (4, 50, '3. Kart · (?)', 'Al bayrak: «Beni zirveye taşı!»', KIR, KIR_A),
-        (184, 50, '4. Kart · Abartma', 'Gökyüzüne ulaşan zafer sevinci', TUR, TUR_A),
-    ]
-    ic = ''
-    for x, y, bas, alt, r, z in kartlar:
-        ic += kutu(x, y, 172, 42, z, r, 7)
-        ic += yazi(x + 86, y + 16, bas, 9.6, r)
-        ic += yazi(x + 86, y + 34, alt, 9.0, LAC, ince=True)
-    return svg(360, 96, ic, 'Benzetme, kişileştirme, konuşturma ve abartma söz sanatı kartları.', 15)
-
-
-def kip_kaymasi_analiz_karti():
-    ic = kutu(6, 6, 348, 74, MAVI_A, MAVI)
-    ic += yazi(180, 22, 'Tarihî Anlatımda Kip (Anlam) Kayması Analizi', 10.0, MAVI)
-    ic += yazi(180, 44, '«Kâzım Karabekir Paşa, Doğu Cephesi’nde kimsesiz kalan', 9.4, LAC, ince=True)
-    ic += yazi(180, 64, 'binlerce çocuğu koruma altına alır.» (Biçim: -ır / Anlam: ?)', 9.4, KIR)
-    return svg(360, 86, ic, 'Tarihî cümlede geniş zaman kipinin geçmiş zaman yerine kullanımı.', 14)
-
-
-def dinleme_surec_semasi():
-    adimlar = [
-        ('1. Öncesi', 'Başlık / Tahmin', MAVI, MAVI_A),
-        ('2. Sırası', 'Not Alma', YES, YES_A),
-        ('3. Tasnif', 'Sınıflandırma', TUR, TUR_A),
-        ('4. Sonrası', 'Derin Çıkarım', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 70, z, r)
-        ic += yazi(x + 41, 24, bas, 9.6, r)
-        ic += yazi(x + 41, 52, alt, 9.1, LAC, ince=True)
-    return svg(360, 82, ic, 'Dinleme ve izleme metnini çözümlemenin dört aşaması.', 14)
-
-
-def dusunceyi_gelistirme_panosu():
-    kartlar = [
-        (4, 4, '1. Tanımlama', '«... nedir?» sorusuna yanıt verir', MAVI, MAVI_A),
-        (184, 4, '2. Sayısal Veriler', 'İstatistik ve oranlarla kanıtlar', YES, YES_A),
-        (4, 50, '3. Tanık Gösterme', 'Uzman sözünü tırnak içinde aktarır', TUR, TUR_A),
-        (184, 50, '4. Karşılaştırma', 'İki unsuru benzer/farklı kıyaslar', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, bas, alt, r, z in kartlar:
-        ic += kutu(x, y, 172, 42, z, r, 7)
-        ic += yazi(x + 86, y + 16, bas, 9.6, r)
-        ic += yazi(x + 86, y + 34, alt, 8.9, LAC, ince=True)
-    return svg(360, 96, ic, 'Düşünceyi geliştirme yolları bilgi panosu.', 15)
-
-
-def medya_degerlendirme_karti():
-    ic = kutu(6, 6, 170, 74, CAM_A, CAM)
-    ic += yazi(91, 22, '1. Ölçüt · İçerik Doğruluğu', 9.8, CAM)
-    ic += yazi(91, 43, '• Tarihî belgelere dayanma', 9.2, LAC, ince=True)
-    ic += yazi(91, 63, '• Tarafsız ve güvenilir kaynak', 9.2, CAM)
-
-    ic += kutu(184, 6, 170, 74, YES_A, YES)
-    ic += yazi(269, 22, '2. Ölçüt · Hedef Kitle Uyumu', 9.8, YES)
-    ic += yazi(269, 43, '• Yaş düzeyine uygun anlatım', 9.2, LAC, ince=True)
-    ic += yazi(269, 63, '• Millî ve manevi değerlere saygı', 9.2, YES)
-    return svg(360, 86, ic, 'Medya içeriklerini değerlendirme ölçütleri kartı.', 14)
+GORSELLER = {1: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Millî Mücadele Sergisi '
+    've Kahraman Çocuklar tanıtım kartı."><rect x="4" y="3" width="342" height="135" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">MİLLÎ MÜCADELE SERGİSİ · KAHRAMAN</text><text x="11.0" y="38.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">ÇOCUKLAR</text><text x="11.0" y="56.9" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Cephe gerisinde '
+    'kağnılarla cephane ve</text><text x="11.0" y="75.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">erzak ulaştırdılar.</text><text x="11.0" y="93.7" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Kâzım Karabekir Paşa’nın kurduğu</text><text x="11.0" y="112.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Gürbüzler Ordusu’nda '
+    'okuma yazma, sanat</text><text x="11.0" y="130.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">ve meslek öğrenerek vatanı yücelttiler.</text></svg>',
+ 2: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fiillerde anlam kayması '
+    'içeren dört cümle fişi."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Fiş '
+    '(-yor)</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">1919’da çıkıyor</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2. Fiş (-ur)</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Haftaya buluşuruz</text><rect x="4" y="52" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">3. Fiş (-yor)</text><text x="87.5" y="88.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Her sabah yapıyor</text><rect x="179" y="52" '
+    'width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Fiş (-a)</text><text x="262.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yolunuz açık '
+    'ola!</text></svg>',
+ 5: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Büyük harflerin ve kesme '
+    'işaretinin yazımıyla ilgili dört levha."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Levha (Bayram</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Adı)</text><text x="87.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">29 Ekim Cumhuriyet</text><text x="87.5" '
+    'y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Bayramı</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="30.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2. Levha (Tarihî</text><text x="262.5" y="48.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Olay) kurtuluş</text><text x="262.5" y="67.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">savaşı’nda cephe</text><rect x="4" y="89" '
+    'width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="107.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Levha (Dönem</text><text x="87.5" '
+    'y="125.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Adı)</text><text x="87.5" y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Millî Mücadele’nin</text><text x="87.5" y="162.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">çocukları</text><rect x="179" y="89" width="167" height="82" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Levha (Belirli</text><text x="262.5" y="125.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Tarih)</text><text '
+    'x="262.5" y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">24 '
+    'Kasım 2026 Salı</text><text x="262.5" y="162.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">günü</text></svg>',
+ 6: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Söz sanatı örnek '
+    'kartları."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Kart</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Aslan gibi kükreyen</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Mehmetçik</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">2. Kart</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hüzünle ağlayan</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kağnı tekeri</text><rect '
+    'x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Kart</text><text '
+    'x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Al '
+    'bayrak: «Beni</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">zirveye taşı!»</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">4. Kart</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Gökyüzüne ulaşan</text><text x="262.5" y="126.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">zafer '
+    'sevinci</text></svg>',
+ 7: '<svg viewBox="0 0 350 104" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tarihî cümlede geniş '
+    'zaman kipinin geçmiş zaman yerine kullanımı."><rect x="4" y="3" width="342" height="99" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Tarihî Anlatımda Kip (Anlam) Kayması</text><text x="11.0" y="38.9" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Analizi</text><text x="11.0" y="57.3" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«Kâzım Karabekir Paşa, '
+    'Doğu Cephesi’nde</text><text x="11.0" y="75.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">kimsesiz kalan binlerce çocuğu koruma altına</text><text x="11.0" y="94.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">alır.» (Biçim: -ır / Anlam: ?)</text></svg>',
+ 8: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dinleme ve izleme '
+    'metnini çözümlemenin dört aşaması."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Tasnif</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Sınıflandırma</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Öncesi</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Başlık / Tahmin</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Sonrası</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Derin '
+    'Çıkarım</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Sırası</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Not Alma</text></svg>',
+ 9: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Düşünceyi geliştirme '
+    'yolları bilgi panosu."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Tanımlama</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">«... nedir?» sorusuna</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">yanıt verir</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Sayısal Veriler</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İstatistik '
+    've</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">oranlarla kanıtlar</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">3. Tanık Gösterme</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Uzman sözünü</text><text x="87.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">tırnak içinde aktarır</text><rect x="179" '
+    'y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Karşılaştırma</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">İki unsuru</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">benzer/farklı kıyaslar</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = sergi_kahraman_cocuklar_karti()
-    s[2]['gorsel'] = anlam_kaymasi_tablo_kartlari()
-    s[5]['gorsel'] = yazim_kurallari_levhalari()
-    s[6]['gorsel'] = soz_sanatlari_kartlari()
-    s[7]['gorsel'] = kip_kaymasi_analiz_karti()
-    s[8]['gorsel'] = dinleme_surec_semasi()
-    s[9]['gorsel'] = dusunceyi_gelistirme_panosu()
-    s[11]['gorsel'] = medya_degerlendirme_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

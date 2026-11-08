@@ -16,8 +16,7 @@
   "hatirla": [
     "Yemek tariflerinde hazırlık adımları özne kullanılmadan doğrudan fiilin yalın haliyle (Imperatives: Put, Mix, Add, Pour, Boil, Drain, Serve) başlar; olumsuz uyarılarda cümlenin başına «Don’t» getirilir (Don’t burn the butter!).",
     "Süreç sıralamasında birinci adımda daima «First», ikinci adımda «Second», ara basamaklarda «Next / Then / After that» ve en son adımda «Finally» sıralama bağlacı (Sequence Linkers) kullanılır.",
-    "Tariflerde miktar belirtirken «a tablespoon of» (1 yemek kaşığı), «a teaspoon of» (1 çay kaşığı), «a clove of garlic» (1 diş sarımsak), «a pinch of salt» (1 tutam tuz), «a handful of parsley» (1 avuç maydanoz) ve «a packet of pasta» (1 paket makarna) kalıpları kullanılır.",
-    "Malzemeleri sormak için «What are the ingredients of ...?», pişirme süresini sormak için «How long does it take to ...?», bir sonraki aşamayı sormak için «What is the next step after ...?» soru kalıpları tercih edilir."
+    "Tariflerde miktar belirtirken «a tablespoon of» (1 yemek kaşığı), «a teaspoon of» (1 çay kaşığı), «a clove of garlic» (1 diş sarımsak), «a pinch of salt» (1 tutam tuz), «a handful of parsley» (1 avuç maydanoz) ve «a packet of pasta» (1 paket makarna) kalıpları kullanılır."
   ],
   "sorular": [
     {
@@ -36,10 +35,6 @@
         [
           "a pinch of black pepper",
           "Bir tutam toz karabiber"
-        ],
-        [
-          "a tablespoon of olive oil",
-          "Bir yemek kaşığı zeytinyağı"
         ]
       ]
     },
@@ -70,7 +65,9 @@
         [
           "1. Drain the boiled pasta",
           "a strainer (colander)",
-          "Haşlanmış makarnayı süz"
+          {
+            "b": "Haşlanmış makarnayı süz"
+          }
         ],
         [
           "2. Grate the cheddar cheese",
@@ -121,10 +118,6 @@
         {
           "metin": "Makarna tarifinde «boil the water» ifadesi makarnayı fırın tepsisine yaymak anlamına gelmektedir.",
           "dogru": false
-        },
-        {
-          "metin": "Tarif yönergelerinde «Melt the butter, add the flour and stir well» gibi öznesiz emir cümleleri (Imperatives) kullanılır.",
-          "dogru": true
         }
       ]
     },
@@ -145,10 +138,6 @@
         {
           "metin": "Haşlanmış patatesleri çatalla ezerek püre haline getirmek anlamına gelen fiil ___ kelimesidir.",
           "cevap": "mash"
-        },
-        {
-          "metin": "Tarifin birinci adımında «First» dedikten sonra ikinci adımına geçerken ___ bağlacı kullanılır.",
-          "cevap": "Second"
         }
       ],
       "fazla": [

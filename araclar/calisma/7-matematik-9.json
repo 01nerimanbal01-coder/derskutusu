@@ -11,9 +11,8 @@
   ],
   "hatirla": [
     "Dikdörtgenler prizmasının 6 yüzü, 12 ayrıtı ve 8 köşesi vardır; yüzey açınımında karşılıklı yüzler ikişer ikişer birbirine eş dikdörtgenlerden oluşur.",
-    "Farklı ayrıtları a, b ve c olan dikdörtgenler prizmasının yüzey alanı: Alan = 2 · (a·b + a·c + b·c); bir ayrıtı a olan küpün yüzey alanı ise 6 · a² bağıntısıyla bulunur.",
-    "Ayrıtları 1 birim olan küpe birim küp (1 br³) denir; bir prizmanın içini boşluk kalmadan dolduran toplam birim küp sayısı prizmanın birimküp cinsinden hacmini verir.",
-    "Prizmanın ilk katmanındaki birim küp sayısı taban alanını (a · b), katman sayısı yüksekliği (c) verir: Hacim (V) = Taban Alanı × Yükseklik = a · b · c (küpte V = a³)."
+    "Farklı ayrıtları a, b ve c olan dikdörtgenler prizmasının yüzey alanı: Alan = 2 · (a·b + a·c + b·c); bir ayrıtı a olan küpün yüzey alanı ise 6 · a{us:|2} bağıntısıyla bulunur.",
+    "Ayrıtları 1 birim olan küpe birim küp (1 br{us:|3}) denir; bir prizmanın içini boşluk kalmadan dolduran toplam birim küp sayısı prizmanın birimküp cinsinden hacmini verir."
   ],
   "sorular": [
     {
@@ -31,11 +30,7 @@
         ],
         [
           "Bir ayrıtı a olan küpün yüzey alanı ve hacmi",
-          "Yüzey alanı = 6 · a²  ve  Hacmi = a · a · a = a³"
-        ],
-        [
-          "Üstü açık dikdörtgenler prizması kutunun alanı",
-          "Tek taban ile dört yan yüzün toplamı: (a·b) + 2 · (a·c + b·c)"
+          "Yüzey alanı = 6 · a{us:|2}  ve  Hacmi = a · a · a = a{us:|3}"
         ]
       ]
     },
@@ -45,10 +40,10 @@
       "gorsel_var": true,
       "soru": "Görseldeki hediye kutusu dikdörtgenler prizması biçiminde olup ayrıt uzunlukları 5 cm, 4 cm ve 3 cm’dir. Bu kutunun tüm dış yüzey alanı kaç santimetrekaredir ve hacmi kaç santimetreküptür?",
       "secenekler": [
-        "Yüzey alanı: 94 cm² — Hacmi: 60 cm³",
-        "Yüzey alanı: 47 cm² — Hacmi: 60 cm³",
-        "Yüzey alanı: 94 cm² — Hacmi: 48 cm³",
-        "Yüzey alanı: 120 cm² — Hacmi: 94 cm³"
+        "Yüzey alanı: 94 cm{us:|2} — Hacmi: 60 cm{us:|3}",
+        "Yüzey alanı: 47 cm{us:|2} — Hacmi: 60 cm{us:|3}",
+        "Yüzey alanı: 94 cm{us:|2} — Hacmi: 48 cm{us:|3}",
+        "Yüzey alanı: 120 cm{us:|2} — Hacmi: 94 cm{us:|3}"
       ],
       "dogru": 0
     },
@@ -65,30 +60,32 @@
       "satirlar": [
         [
           "1. K Prizması (4 br × 3 br × 2 br)",
-          "12 br²",
-          "24 br³"
+          "12 br{us:|2}",
+          {
+            "b": "24 br{us:|3}"
+          }
         ],
         [
           "2. L Prizması (5 br × 4 br × 3 br)",
           {
-            "b": "20 br²"
+            "b": "20 br{us:|2}"
           },
           {
-            "b": "60 br³"
+            "b": "60 br{us:|3}"
           }
         ],
         [
           "3. M Kare Prizması (6 cm × 6 cm × 5 cm)",
           {
-            "b": "36 cm²"
+            "b": "36 cm{us:|2}"
           },
-          "180 cm³"
+          "180 cm{us:|3}"
         ],
         [
           "4. N Küpü (4 cm × 4 cm × 4 cm)",
-          "16 cm²",
+          "16 cm{us:|2}",
           {
-            "b": "64 cm³"
+            "b": "64 cm{us:|3}"
           }
         ]
       ]
@@ -103,7 +100,7 @@
           "dogru": true
         },
         {
-          "metin": "Ayrıt uzunlukları 3 cm, 4 cm ve 6 cm olan bir prizmanın hacmi 3 + 4 + 6 = 13 cm³ olarak hesaplanır.",
+          "metin": "Ayrıt uzunlukları 3 cm, 4 cm ve 6 cm olan bir prizmanın hacmi 3 + 4 + 6 = 13 cm{us:|3} olarak hesaplanır.",
           "dogru": false
         },
         {
@@ -111,12 +108,8 @@
           "dogru": true
         },
         {
-          "metin": "Tüm yüzey alanı 150 cm² olan bir küpün bir yüzünün alanı 25 cm² ve bir ayrıtının uzunluğu 5 cm’dir.",
+          "metin": "Tüm yüzey alanı 150 cm{us:|2} olan bir küpün bir yüzünün alanı 25 cm{us:|2} ve bir ayrıtının uzunluğu 5 cm’dir.",
           "dogru": true
-        },
-        {
-          "metin": "Bir ayrıtının uzunluğu 2 katına çıkarılan bir küpün hacmi de 2 katına çıkar.",
-          "dogru": false
         }
       ]
     },
@@ -137,10 +130,6 @@
         {
           "metin": "Birim küplerle oluşturulan prizmanın birinci katmanındaki küp sayısı ___ alanına eşittir.",
           "cevap": "taban"
-        },
-        {
-          "metin": "Altı yüzünün tamamı birbirine eş karesel bölgelerden oluşan özel prizmaya ___ denir.",
-          "cevap": "küp"
         }
       ],
       "fazla": [
@@ -177,20 +166,20 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki üstü açık cam akvaryumun taban ayrıtları 8 dm ve 5 dm, yüksekliği 4 dm’dir. Bu akvaryumu üretmek için toplam kaç desimetrekare (dm²) cam kullanılmıştır?",
-      "cevap": "1 taban ve 4 yan yüz: (8·5) + 2·(8·4 + 5·4) = 40 + 104 = 144 dm² cam kullanılmıştır.",
+      "soru": "Görseldeki üstü açık cam akvaryumun taban ayrıtları 8 dm ve 5 dm, yüksekliği 4 dm’dir. Bu akvaryumu üretmek için toplam kaç desimetrekare (dm{us:|2}) cam kullanılmıştır?",
+      "cevap": "1 taban ve 4 yan yüz: (8·5) + 2·(8·4 + 5·4) = 40 + 104 = 144 dm{us:|2} cam kullanılmıştır.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki problem kartında «Tüm yüzey alanı 216 cm² olan bir küpün hacmini bulma» adımları karışık verilmiştir. Çözüm sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Görseldeki problem kartında «Tüm yüzey alanı 216 cm{us:|2} olan bir küpün hacmini bulma» adımları karışık verilmiştir. Çözüm sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
-        "Küpün 6 eş karesel yüzü olduğu için 216 cm² toplam yüzey alanını 6’ya bölerek bir yüzün alanını 36 cm² bulmak",
-        "Alanı 36 cm² olan karesel yüzün bir ayrıt uzunluğunu a = 6 cm olarak belirlemek",
-        "Küpün hacim bağıntısı olan V = a · a · a (a³) formülünde a yerine 6 cm yazmak",
-        "6 · 6 · 6 çarpma işlemini gerçekleştirerek küpün hacmini 216 cm³ olarak hesaplamak"
+        "Küpün 6 eş karesel yüzü olduğu için 216 cm{us:|2} toplam yüzey alanını 6’ya bölerek bir yüzün alanını 36 cm{us:|2} bulmak",
+        "Alanı 36 cm{us:|2} olan karesel yüzün bir ayrıt uzunluğunu a = 6 cm olarak belirlemek",
+        "Küpün hacim bağıntısı olan V = a · a · a (a{us:|3}) formülünde a yerine 6 cm yazmak",
+        "6 · 6 · 6 çarpma işlemini gerçekleştirerek küpün hacmini 216 cm{us:|3} olarak hesaplamak"
       ]
     },
     {
@@ -244,8 +233,8 @@
       "duzey": "ust",
       "gorsel_var": true,
       "soru": "Görseldeki A (6×4×2 br) ve B (4×4×3 br) dikdörtgenler prizmalarının hacimlerini ve yüzey alanlarını karşılaştırarak «Hacimleri eşit olan iki prizmanın yüzey alanları da kesinlikle eşittir.» iddiasını değerlendiriniz.",
-      "cevap": "İkisinin hacmi 48 br³’tür; fakat A’nın alanı 88 br², B’nin alanı 80 br² olduğundan yanlıştır.",
-      "satir": 2
+      "cevap": "İkisinin hacmi 48 br{us:|3}’tür; fakat A’nın alanı 88 br{us:|2}, B’nin alanı 80 br{us:|2} olduğundan yanlıştır.",
+      "satir": 3
     }
   ]
 }

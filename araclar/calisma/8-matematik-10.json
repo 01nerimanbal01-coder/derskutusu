@@ -34,10 +34,6 @@
         [
           "1,777... (7 devrediyor) sayısının karekökü",
           "Dört bölü üç ({kesir:4|3} — Rasyonel sayı)"
-        ],
-        [
-          "{kok:0,9} ifadesinin sayı kümesi niteliği",
-          "Paydası tam kare olmayan irrasyonel sayı ({kesir:3|{kok:10}})"
         ]
       ]
     },
@@ -45,7 +41,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Alanları 3,61 {us:m|2} ve 1,96 {us:m|2} olan karesel iki bahçe birbirine bitişik olarak yerleştirilmiştir. Bu iki karenin birer",
+      "soru": "Alanları 3,61 {us:m|2} ve 1,96 {us:m|2} olan bitişik iki karesel bahçenin birer kenar uzunlukları toplamı (|AB|) kaç metredir?",
       "secenekler": [
         "3,1",
         "3,3",
@@ -58,11 +54,11 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Sayı kartlarında verilen ifadelerin rasyonel kesir yazılışını, kök dışına çıkmış değerini ve ait olduğu kümeyi (Rasyonel - Q veya İrrasyonel - I)",
+      "soru": "Sayı kartlarındaki ifadelerin kesir karşılığını, kök değerini ve ait olduğu sayı kümesini (Q veya I) tabloya yazınız.",
       "basliklar": [
         "Verilen İfade",
-        "Kesir / Kök Değeri",
-        "Sayı Kümesi (Q / I)"
+        "Kesir ve Kök Değeri",
+        "Sayı Kümesi (Q - I)"
       ],
       "satirlar": [
         [
@@ -121,10 +117,6 @@
         {
           "metin": "Karekök içindeki negatif sayı olan {kok:-36} ifadesi -6 tam sayısına eşit olup gerçek sayılar kümesinin elemanıdır.",
           "dogru": false
-        },
-        {
-          "metin": "İki irrasyonel sayının çarpımı bir rasyonel sayı olabilir; örneğin {kok:12} ile {kok:3} çarpıldığında sonuç 6 olur.",
-          "dogru": true
         }
       ]
     },
@@ -145,10 +137,6 @@
         {
           "metin": "Bir çemberin çevresinin çapına oranı olan π sayısı ve {kok:7} ifadesi ___ sayılar kümesinde yer alır.",
           "cevap": "irrasyonel"
-        },
-        {
-          "metin": "Sayı doğrusu üzerindeki bütün noktalar eksiksiz olarak ___ sayılar kümesiyle eşleşir.",
-          "cevap": "gerçek"
         }
       ],
       "fazla": [
@@ -185,8 +173,8 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Basamak kartında a ve b sıfırdan farklı birer rakam olmak üzere üç basamaklı 1ab sayısı için {kok:1,ab} ifadesinin bir rasyonel sayı olduğu",
-      "cevap": "1ab tam kare olmalı ve rakamları sıfırdan farklı olmalıdır: 1,21 (kökü 1,1).",
+      "soru": "Kartta a ve b sıfırdan farklı rakamlar olmak üzere {kok:1,ab} ifadesi rasyonel sayı ise 1,ab ondalık sayısının alabileceği değerleri yazınız.",
+      "cevap": "1ab tam kare olacağından 1,21; 1,44; 1,69 ve 1,96 olmak üzere 4 farklı değer alır.",
       "satir": 2
     },
     {
@@ -205,7 +193,7 @@
       "tur": "coktan",
       "duzey": "ust",
       "gorsel_var": true,
-      "soru": "Gerçek sayılar kümesi (R) ve alt kümelerini (N, Z, Q, I) gösteren Venn şemasına göre aşağıdaki ifadelerden hangisi {koyu:yanlıştır?}",
+      "soru": "Gerçek sayılar kümesi (R) ve alt kümelerini (N, Z, Q, I) gösteren küme panosuna göre aşağıdaki ifadelerden hangisi {koyu:yanlıştır?}",
       "secenekler": [
         "-{kok:81} ifadesinin değeri -9 olduğu için Tam Sayılar (Z) ve Rasyonel Sayılar (Q) bölgesine yazılır.",
         "{kok:0,25} ifadesinin değeri 0,5 olduğu için Z kümesinin dışındaki Rasyonel Sayılar (Q) bölgesine yazılır.",
@@ -256,8 +244,8 @@
       "tur": "acik",
       "duzey": "ust",
       "gorsel_var": true,
-      "soru": "Karşılaştırma kartında verilen K = {kok:0,16} ve L = {kok:1,6} ifadelerinden hangisinin rasyonel, hangisinin irrasyonel olduğunu kesre",
-      "cevap": "K = {kok:{kesir:16|100}} = {kesir:4|10} = 0,4 olup pay.",
+      "soru": "Karşılaştırma kartındaki K = {kok:0,16} ve L = {kok:1,6} ifadelerinden hangisinin rasyonel, hangisinin irrasyonel olduğunu kesre çevirerek açıklayınız.",
+      "cevap": "K = {kesir:4|10} rasyonel; L = {kesir:4|{kok:10}} ise kök 10 tam çıkmadığından irrasyoneldir.",
       "satir": 2
     }
   ],

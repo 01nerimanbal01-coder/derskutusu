@@ -14,9 +14,7 @@
   ],
   "hatirla": [
     "Fiilde çatı özelliği YALNIZ yüklemi çekimli fiil olan cümlelerde aranır; yüklemi isim veya isim soylu olan cümlelerde («Kanaatkârlık büyük bir hazinedir.») çatı özelliği ARANMAZ!",
-    "Öznesine göre fiiller: İşi yapan gerçek/gizli özne belliyse ve fiil «-l, -n» çatı eki almamışsa «ETKEN»; fiil «-l, -n» eki almış, işi yapan belli değilse («başkası tarafından» anlamı varsa) ve işten etkilenen nesne «sözde özne» olmuşsa «EDİLGEN» çatılıdır.",
-    "Tamamlayıcı bilgi: Özne «-l, -n» ekli işi kendi üzerinde yapıyorsa «dönüşlü» (sevindi, süslendi); iş «-ş» ekiyle birden fazla özne tarafından birlikte/karşılıklı yapılıyorsa «işteş» (uçuştu, selamlaştı) çatılıdır.",
-    "Nesnesine göre fiiller: Başına «Onu» zamiri gelebilen ve «Neyi, Kimi, Ne?» sorularına yanıt veren fiiller (cümlede nesne yazılmasa bile) «GEÇİŞLİ»; başına «Onu» gelemeyenler ise «GEÇİŞSİZ»dir. Edilgen fiillerin tamamı geçişsizdir."
+    "Öznesine göre fiiller: İşi yapan gerçek/gizli özne belliyse ve fiil «-l, -n» çatı eki almamışsa «ETKEN»; fiil «-l, -n» eki almış, işi yapan belli değilse («başkası tarafından» anlamı varsa) ve işten etkilenen nesne «sözde özne» olmuşsa «EDİLGEN» çatılıdır."
   ],
   "sorular": [
     {
@@ -35,10 +33,6 @@
         [
           "Geçişli çatılı fiil",
           "Başına «Onu» zamiri getirildiğinde anlamlı olan, nesne alabilen fiil"
-        ],
-        [
-          "Öyküleyici anlatım biçimi",
-          "Kişi, yer ve zaman unsurları etrafında gelişen olayı hareket hâlinde anlatma"
         ]
       ]
     },
@@ -122,10 +116,6 @@
         {
           "metin": "«Yazar son eserinde çok başarılıydı.» cümlesinin yüklemi etken ve geçişsiz çatılı bir fiildir.",
           "dogru": false
-        },
-        {
-          "metin": "Bir metinde elindekiyle yetinmeyi ve açgözlü olmamayı öğütleyen erdeme «kanaatkârlık» adı verilir.",
-          "dogru": true
         }
       ]
     },
@@ -146,10 +136,6 @@
         {
           "metin": "Varlıkları ve mekânları sıfatlardan yararlanarak okuyucunun zihninde resim çizer gibi canlandırmaya ___ anlatım denir.",
           "cevap": "betimleyici"
-        },
-        {
-          "metin": "Kendi çıkarını düşünmeden başkalarının iyiliği için fedakârlık yapma erdemine ___ (özgecilik) denir.",
-          "cevap": "diğerkâmlık"
         }
       ],
       "fazla": [
@@ -185,15 +171,13 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Dönüşüm kartında yer alan «Gönüllü gençler sahildeki çöpleri topladı.» (Etken - Geçişli) cümlesini «edilgen çatılı» cümleye dönüştürerek yeniden yazınız ve yeni cümlenin özne türünü belirtiniz.",
-      "cevap": "Edilgen cümle: «Sahildeki çöpler (gönüllü gençler tarafından) toplandı.",
+      "soru": "«Gönüllü gençler sahildeki çöpleri topladı.» (Etken - Geçişli) cümlesini «edilgen çatılı» cümleye dönüştürerek yeniden yazınız ve yeni cümlenin özne türünü belirtiniz.",
+      "cevap": "«Sahildeki çöpler toplandı.» Yeni cümlede «sahildeki çöpler» sözde öznedir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Bir cümlenin çatı özelliğini hatasız belirlemek için izlenen dil bilgisi çözümleme adımlarını baştan sona 1’den 4’e doğru sıralayınız.",
       "ogeler": [
         "Cümlenin yüklemini bularak yüklemin çekimli bir fiil mi yoksa isim soylu bir sözcük mü olduğunu kontrol etmek",
@@ -253,7 +237,7 @@
       "duzey": "ust",
       "gorsel_var": true,
       "soru": "İnceleme kartında verilen 1) «Bahçıvan kurumuş yaprakları topladı.» ve 2) «Kurumuş yapraklar toplandı.» cümlelerini hem öznesine hem de nesnesine göre çatı bakımından karşılaştırınız.",
-      "cevap": "1. cümlede işi yapan (bahçıvan) bellidir ve «(Onu) topladı» anlamlıdır. bu yüzden Etken ve Geçişlidir. 2.",
+      "cevap": "1. cümle gerçek özneli olup Etken-Geçişli; 2. cümle sözde özneli olup Edilgen-Geçişsizdir.",
       "satir": 2
     }
   ],

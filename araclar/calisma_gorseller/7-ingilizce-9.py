@@ -1,137 +1,115 @@
-"""7. sınıf İngilizce 9. hafta (Unit 3: Biographies — Simple Past Negative/Interrogative, Irregular Verbs & Famous Figures) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-10.5 pt Noto Sans (K150 EK)."""
+"""7-ingilizce-9 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=15):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.2, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def roportaj_soru_karti():
-    ic = kutu(6, 6, 348, 38, MOR_A, MOR)
-    ic += yazi(180, 22, 'Journalist: "(1) ___ Aziz Sancar (2) ___ from university?"', 10.0, MOR)
-    ic += yazi(180, 38, '(Wh- question + Simple Past base verb)', 9.2, LAC, ince=True)
-
-    ic += kutu(6, 48, 348, 36, YES_A, YES)
-    ic += yazi(180, 66, 'Historian: "He graduated from Istanbul University in 1969."', 10.0, YES)
-    return svg(360, 90, ic, 'Gazeteci ve tarihçi arasında mezuniyet yılı diyaloğu.', 15)
-
-
-def duzensiz_fiil_tablo_kartlari():
-    kartlar = [
-        ('1. win', 'V2: won', MAVI, MAVI_A),
-        ('2. write', 'V2: ? (yazdı)', TUR, TUR_A),
-        ('3. become', '(-): ? (olmadı)', YES, YES_A),
-        ('4. spend', 'V2: ? / (-): ?', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 70, z, r)
-        ic += yazi(x + 41, 24, bas, 10.2, r)
-        ic += f'<line x1="{x + 8}" y1="32" x2="{x + 74}" y2="32" stroke="{r}" stroke-width="0.9"/>'
-        ic += yazi(x + 41, 54, alt, 9.3, LAC, ince=True)
-    return svg(360, 82, ic, 'win, write, become ve spend düzensiz fiillerinin çekim kartları.', 14)
-
-
-def idil_biret_biyografi_karti():
-    ic = kutu(6, 6, 348, 76, CAM_A, CAM)
-    ic += yazi(180, 22, 'İDİL BİRET — Famous Turkish Pianist', 10.4, CAM)
-    ic += yazi(180, 42, '• Born in Ankara in 1941; began playing the piano at age 3.', 9.6, LAC, ince=True)
-    ic += yazi(180, 60, '• Went to Paris at age 7 to study at the Paris Conservatory.', 9.6, LAC, ince=True)
-    ic += yazi(180, 76, '• Graduated with high honours and won many music awards.', 9.6, MAVI)
-    return svg(360, 88, ic, 'Ünlü piyanist İdil Biret’in yaşam dönüm noktaları kartı.', 15)
-
-
-def dort_dilbilgisi_karti():
-    kutular = [
-        ('1. Kart (+)', 'grew up in Savur', YES, YES_A),
-        ('2. Kart (?)', 'Did Marconi invent...?', MAVI, MAVI_A),
-        ('3. Kart (-)', 'didn’t discovered (!)', KIR, KIR_A),
-        ('4. Kart (+)', 'wrote famous novels', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, icerik, r, z) in enumerate(kutular):
-        x = 6 + (i % 2) * 176
-        y = 6 + (i // 2) * 42
-        ic += kutu(x, y, 172, 36, z, r)
-        ic += yazi(x + 86, y + 14, bas, 10.0, r)
-        ic += yazi(x + 86, y + 29, icerik, 9.5, LAC, ince=True)
-    return svg(360, 90, ic, 'Simple Past Tense olumlu, olumsuz ve soru çekim kartları.', 15)
-
-
-def fleming_donusturme_karti():
-    ic = kutu(6, 6, 348, 74, TUR_A, TUR)
-    ic += yazi(180, 22, '(+) Alexander Fleming discovered penicillin in 1928.', 10.1, TUR)
-    ic += yazi(180, 46, '(-) Negative Form : Subject + didn’t + V1 ...', 9.6, LAC, ince=True)
-    ic += yazi(180, 66, '(?) Question Form : Did + Subject + V1 ...?', 9.6, MAVI)
-    return svg(360, 86, ic, 'Olumlu geçmiş zaman cümlesini olumsuz ve soruya dönüştürme kartı.', 14)
-
-
-def ataturk_kronoloji_seridi():
-    adimlar = [
-        ('1. First', '1881 · Born in Salonika', MAVI, MAVI_A),
-        ('2. Then', '1905 · Military Academy', YES, YES_A),
-        ('3. After that', '1920 · Opened Assembly', TUR, TUR_A),
-        ('4. Finally', '1923 · Founded Republic', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 70, z, r)
-        ic += yazi(x + 41, 24, bas, 10.0, r)
-        ic += yazi(x + 41, 52, alt, 8.9, LAC, ince=True)
-    return svg(360, 82, ic, 'Atatürk’ün biyografisinde kronolojik sıralama bağlaçları şeridi.', 14)
-
-
-def tesla_edison_karsilastirma():
-    ic = kutu(6, 6, 170, 78, MAVI_A, MAVI)
-    ic += yazi(91, 22, 'NIKOLA TESLA', 10.3, MAVI)
-    ic += yazi(91, 42, 'Born: 1856, Smiljan → 1884 USA', 9.3, LAC, ince=True)
-    ic += yazi(91, 60, 'Work: Alternating current (AC)', 9.3, LAC, ince=True)
-    ic += yazi(91, 76, 'Family: Didn’t get married (alone)', 9.3, KIR)
-
-    ic += kutu(184, 6, 170, 78, YES_A, YES)
-    ic += yazi(269, 22, 'THOMAS EDISON', 10.3, YES)
-    ic += yazi(269, 42, 'Born: 1847, Ohio (USA)', 9.3, LAC, ince=True)
-    ic += yazi(269, 60, 'Work: Invented electric lightbulb', 9.3, LAC, ince=True)
-    ic += yazi(269, 76, 'Family: Got married & had kids', 9.3, YES)
-    return svg(360, 90, ic, 'Nikola Tesla ve Thomas Edison biyografi karşılaştırma kartı.', 15)
-
-
-def marie_curie_ipucu_karti():
-    ic = kutu(6, 6, 170, 74, KIR_A, KIR)
-    ic += yazi(91, 22, '1. Negative Sentence (-)', 10.1, KIR)
-    ic += yazi(91, 43, 'not stay in Warsaw → move to Paris', 9.3, LAC, ince=True)
-    ic += yazi(91, 64, '(Use: didn’t stay / moved)', 9.4, KIR)
-
-    ic += kutu(184, 6, 170, 74, MOR_A, MOR)
-    ic += yazi(269, 22, '2. Affirmative Sentence (+)', 10.1, MOR)
-    ic += yazi(269, 43, 'discover radium / win two Prizes', 9.3, LAC, ince=True)
-    ic += yazi(269, 64, '(Use: discovered / won)', 9.4, MOR)
-    return svg(360, 86, ic, 'Marie Curie hakkında olumsuz ve olumlu cümle kurma ipucu kartı.', 14)
+GORSELLER = {1: '<svg viewBox="0 0 350 113" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gazeteci ve tarihçi '
+    'arasında mezuniyet yılı diyaloğu."><rect x="4" y="3" width="342" height="62" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Journalist: &quot;(1) ___ Aziz Sancar (2) ___ from</text><text x="11.0" y="38.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">university?&quot;</text><text x="11.0" '
+    'y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Wh- question + '
+    'Simple Past base verb)</text><rect x="4" y="68" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="85.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Historian: &quot;He graduated from Istanbul</text><text x="11.0" y="103.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">University in 1969.&quot;</text></svg>',
+ 2: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="win, write, become ve '
+    'spend düzensiz fiillerinin çekim kartları."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. win</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">V2: won</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">2. write</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">V2: ? (yazdı)</text><rect x="4" y="52" width="167" height="45" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. become</text><text x="87.5" y="88.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(-): ? (olmadı)</text><rect x="179" y="52" '
+    'width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. spend</text><text x="262.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">V2: ? / (-): '
+    '?</text></svg>',
+ 5: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ünlü piyanist İdil '
+    'Biret’in yaşam dönüm noktaları kartı."><rect x="4" y="3" width="342" height="135" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">İDİL BİRET — Famous Turkish Pianist</text><text x="11.0" y="38.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Born in Ankara in 1941; began playing '
+    'the</text><text x="11.0" y="56.9" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">piano at age 3.</text><text x="11.0" y="75.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">• Went to Paris at age 7 to study at the Paris</text><text x="11.0" y="93.7" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Conservatory.</text><text '
+    'x="11.0" y="112.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">• '
+    'Graduated with high honours and won</text><text x="11.0" y="130.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">many music awards.</text></svg>',
+ 6: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Simple Past Tense '
+    'olumlu, olumsuz ve soru çekim kartları."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Kart (+) grew up</text><text x="87.5" y="49.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">in Savur</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Kart</text><text x="262.5" y="39.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Did Marconi</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">invent...?</text><rect '
+    'x="4" y="71" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Kart (-) '
+    'didn’t</text><text x="87.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">discovered</text><rect x="179" y="71" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Kart (+) wrote</text><text x="262.5" y="107.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">famous novels</text></svg>',
+ 7: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Olumlu geçmiş zaman '
+    'cümlesini olumsuz ve soruya dönüştürme kartı."><rect x="4" y="3" width="342" height="80" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">(+) Alexander Fleming discovered penicillin</text><text x="11.0" y="38.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">in 1928.</text><text x="11.0" y="57.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(-) Negative Form : '
+    'Subject + didn’t + V1 ...</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Question Form : Did + Subject + V1 ...?</text></svg>',
+ 8: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Atatürk’ün '
+    'biyografisinde kronolojik sıralama bağlaçları şeridi."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">After that</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">1920 · Opened</text><text x="87.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Assembly</text><rect '
+    'x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">First</text><text '
+    'x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">1881 '
+    '· Born in</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Salonika</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Finally</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">1923 · Founded</text><text x="87.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Republic</text><rect x="179" y="71" '
+    'width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Then</text><text x="262.5" y="107.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">1905 · '
+    'Military</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Academy</text></svg>',
+ 9: '<svg viewBox="0 0 350 168" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nikola Tesla ve Thomas '
+    'Edison biyografi karşılaştırma kartı."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">NIKOLA TESLA</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Born: 1856, Smiljan → 1884 USA</text><text x="11.0" y="57.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Work: Alternating current (AC)</text><text '
+    'x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Family: '
+    'Didn’t get married (alone)</text><rect x="4" y="86" width="342" height="80" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">THOMAS EDISON</text><text x="11.0" y="121.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Born: 1847, Ohio (USA)</text><text x="11.0" y="140.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Work: Invented electric lightbulb</text><text '
+    'x="11.0" y="158.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Family: Got married &amp; had kids</text></svg>',
+ 11: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marie Curie hakkında '
+     'olumsuz ve olumlu cümle kurma ipucu kartı."><rect x="4" y="3" width="342" height="62" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+     'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#d63a3a">1. Negative Sentence (-) not stay in Warsaw</text><text x="11.0" y="38.8" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">→ move to Paris</text><text x="11.0" '
+     'y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">(Use: didn’t '
+     'stay / moved)</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+     'x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">2. '
+     'Affirmative Sentence (+) discover radium</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#7c3aed">/ win two Prizes</text><text x="11.0" y="122.2" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">(Use: discovered / won)</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = roportaj_soru_karti()
-    s[2]['gorsel'] = duzensiz_fiil_tablo_kartlari()
-    s[5]['gorsel'] = idil_biret_biyografi_karti()
-    s[6]['gorsel'] = dort_dilbilgisi_karti()
-    s[7]['gorsel'] = fleming_donusturme_karti()
-    s[8]['gorsel'] = ataturk_kronoloji_seridi()
-    s[9]['gorsel'] = tesla_edison_karsilastirma()
-    s[11]['gorsel'] = marie_curie_ipucu_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -35,10 +35,6 @@
         [
           "{ar:الْكُتُبُ الْعِلْمِيَّةُ}",
           "Bilimsel araştırma kitapları"
-        ],
-        [
-          "{ar:الْمَجَلَّاتُ الثَّقَافِيَّةُ}",
-          "Kültür ve sanat dergileri"
         ]
       ]
     },
@@ -69,7 +65,9 @@
         [
           "1. {ar:كِتَابٌ ...} (Eril tekil)",
           "{ar:مُفِيدٌ}",
-          "Faydalı bir kitap"
+          {
+            "b": "Faydalı bir kitap"
+          }
         ],
         [
           "2. {ar:قِصَّةٌ ...} (Dişil tekil)",
@@ -120,10 +118,6 @@
         {
           "metin": "Konum bildiren «{ar:أَمَامَ الْجَنَاحِ}» tamlaması Türkçede ‘standın arkasında’ anlamına gelmektedir.",
           "dogru": false
-        },
-        {
-          "metin": "«{ar:الْقِرَاءَةُ غِذَاءُ الرُّوحِ}» özdeyişi kitap okumanın insan ruhunu ve zihnini beslediğini vurgular.",
-          "dogru": true
         }
       ]
     },
@@ -144,10 +138,6 @@
         {
           "metin": "Fuarda aradığı eserin rafın üstünde olduğunu belirten görevli «{ar:الْكِتَابُ عَلَى} ___» ifadesini kullanır.",
           "cevap": "{ar:الرَّفِّ}"
-        },
-        {
-          "metin": "Üretmenin çalışmaya bağlı olduğunu anlatan vecizede «{ar:مَنْ لَا يَعْمَلْ لَا} ___» denmektedir.",
-          "cevap": "{ar:يُنْتِجْ}"
         }
       ],
       "fazla": [
@@ -173,10 +163,10 @@
       "gorsel_var": true,
       "soru": "Dört öğrencinin fuardan aldıkları kitapları tanıttıkları kartlardan hangisinde mevsuf-sıfat (isim-sıfat) uyumu kuralına {koyu:uyulmamıştır?}",
       "secenekler": [
-        "1. Kart: {ar:قِصَّةٌ جَمِيلَةٌ} (Güzel bir hikâye)",
+        "1. Kart: {ar:قِصَّةٌ جَمِيلَةٌ} (Güzel hikâye)",
         "2. Kart: {ar:كُتُبٌ مُفِيدٌ} (Faydalı kitaplar)",
-        "3. Kart: {ar:رِوَايَةٌ تَارِيخِيَّةٌ} (Tarihî bir roman)",
-        "4. Kart: {ar:كَاتِبٌ مَشْهُورٌ} (Ünlü bir yazar)"
+        "3. Kart: {ar:رِوَايَةٌ تَارِيخِيَّةٌ} (Tarihî roman)",
+        "4. Kart: {ar:كَاتِبٌ مَشْهُورٌ} (Ünlü yazar)"
       ],
       "dogru": 1
     },
@@ -251,7 +241,7 @@
       "duzey": "ust",
       "gorsel_var": true,
       "soru": "Fuar ziyaretçi kartındaki anahtar ifadeleri kullanarak kiminle fuara gittiğinizi ve hangi kitap türünü satın aldığınızı anlatan kurallı bir Arapça cümle yazınız.",
-      "cevap": "{ar:ذَهَبْتُ إِلَى مَعْرِضِ الْكِتَابِ وَاشْتَرَيْتُ رِوَايَةً جَدِيدَةً.}",
+      "cevap": "{ar:ذَهَبْتُ إِلَى الْمَعْرِضِ مَعَ صَدِيقِي وَاشْتَرَيْتُ رِوَايَةً تَارِيخِيَّةً.}",
       "satir": 2
     }
   ]

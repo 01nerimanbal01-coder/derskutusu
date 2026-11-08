@@ -1,140 +1,109 @@
-"""7. sınıf Din Kültürü ve Ahlak Bilgisi 10. hafta (Kurban İbadeti, Hz. İbrahim ve Hz. İsmail, Kurbanlık Şartları ve Adak/Akika Kurbanları) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-10.5 pt Noto Sans (K150 EK)."""
+"""7-din-kulturu-ve-ahlak-bilgisi-10 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=15):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.0, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yukumluluk_sartlari_panosu():
-    kartlar = [
-        (4, 4, '1. Şart · Ehliyet', 'Akıllı ve ergen olmak', MAVI, MAVI_A),
-        (184, 4, '2. Şart · Zenginlik', '80,18 g altın (Nisap)', YES, YES_A),
-        (4, 50, '3. Şart · Yolculuk (?)', 'Seferi (yolcu) olmak', KIR, KIR_A),
-        (184, 50, '4. Şart · İhtiyaç Dışı', 'Borçtan arta kalan mal', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, bas, alt, r, z in kartlar:
-        ic += kutu(x, y, 172, 42, z, r, 7)
-        ic += yazi(x + 86, y + 16, bas, 10.0, r)
-        ic += yazi(x + 86, y + 34, alt, 9.5, LAC, ince=True)
-    return svg(360, 96, ic, 'Kurban ibadetiyle yükümlü olma şartları panosu.', 15)
-
-
-def kurbanlik_hayvan_kartlari():
-    kartlar = [
-        ('1. Küçükbaş', 'Koyun ve Keçi', '1 Yaş · 1 Kişi', MAVI, MAVI_A),
-        ('2. Büyükbaş', 'Sığır ve Manda', '? Yaş · ? Kişi', YES, YES_A),
-        ('3. Büyükbaş', 'Deve', '? Yaş · 1-7 Kişi', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, tur, sart, r, z) in enumerate(kartlar):
-        x = 6 + i * 118
-        ic += kutu(x, 6, 112, 74, z, r)
-        ic += yazi(x + 56, 22, bas, 10.0, r)
-        ic += yazi(x + 56, 44, tur, 9.8, LAC)
-        ic += yazi(x + 56, 65, sart, 9.4, r, ince=True)
-    return svg(360, 86, ic, 'Kurbanlık hayvan türlerinin yaş ve hisse şartları.', 14)
-
-
-def kurban_eti_paylasim_semasi():
-    paylar = [
-        (6, '1. Pay (1/3)', 'Kurban kesenin ailesi', MAVI, MAVI_A),
-        (124, '2. Pay (1/3)', 'Komşu, akraba ve dostlar', YES, YES_A),
-        (242, '3. Pay (1/3)', '? (Üçüncü grup)', KIR, KIR_A),
-    ]
-    ic = ''
-    for x, bas, alt, r, z in paylar:
-        ic += kutu(x, 6, 112, 72, z, r)
-        ic += yazi(x + 56, 26, bas, 10.2, r)
-        ic += yazi(x + 56, 54, alt, 9.4, LAC, ince=True)
-    return svg(360, 84, ic, 'Kurban etinin üç eşit parçaya bölünmesi şeması.', 14)
-
-
-def adak_akika_vaka_karti():
-    ic = kutu(6, 6, 170, 76, TUR_A, TUR)
-    ic += yazi(91, 22, 'Selim Bey’in Kurbanı', 10.0, TUR)
-    ic += yazi(91, 43, '«Hastam iyileşirse keseceğim»', 9.3, LAC, ince=True)
-    ic += yazi(91, 64, 'Şart gerçekleşti (Vacip)', 9.5, KIR)
-
-    ic += kutu(184, 6, 170, 76, YES_A, YES)
-    ic += yazi(269, 22, 'Merve Hanım’ın Kurbanı', 10.0, YES)
-    ic += yazi(269, 43, '«Yeni doğan bebeğimize şükür»', 9.3, LAC, ince=True)
-    ic += yazi(269, 64, 'Çocuk nimeti için (Sünnet)', 9.5, YES)
-    return svg(360, 88, ic, 'Adak ve akika kurbanı vaka karşılaştırma kartları.', 15)
-
-
-def saffat_ayet_levhasi():
-    ic = kutu(6, 6, 348, 76, MAVI_A, MAVI)
-    ic += yazi(180, 24, 'Hz. İbrahim ve Hz. İsmail Kıssası (Sâffât Suresi, 102)', 10.2, MAVI)
-    ic += yazi(180, 48, '«Babacığım! Sana emrolunan şeyi yap; inşallah beni', 9.6, LAC, ince=True)
-    ic += yazi(180, 66, 'sabredenlerden bulacaksın.» (Sadakat ve Teslimiyet)', 9.6, YES)
-    return svg(360, 88, ic, 'Sâffât suresi 102. ayet teslimiyet ve sabır levhası.', 14)
-
-
-def kurban_uygulama_seridi():
-    adimlar = [
-        ('1. Seçim', 'Sağlıklı Hayvan', MAVI, MAVI_A),
-        ('2. Vakit', 'Bayram Namazı', YES, YES_A),
-        ('3. Kesim', 'Kıble ve Tekbir', TUR, TUR_A),
-        ('4. Paylaşım', 'Üçe Bölüşüm', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 70, z, r)
-        ic += yazi(x + 41, 24, bas, 9.8, r)
-        ic += yazi(x + 41, 52, alt, 9.2, LAC, ince=True)
-    return svg(360, 82, ic, 'Kurban ibadetinin dört aşamalı uygulama şeridi.', 14)
-
-
-def kurbanlik_secim_rehberi():
-    ic = kutu(6, 6, 170, 76, YES_A, YES)
-    ic += yazi(91, 22, 'Kurban Olabilenler (Geçerli)', 10.0, YES)
-    ic += yazi(91, 44, '• Sağlıklı, besili, azaları tam', 9.4, LAC, ince=True)
-    ic += yazi(91, 64, '• Koyun/Keçi ≥1 yaş · Sığır ≥2 yaş', 9.3, YES)
-
-    ic += kutu(184, 6, 170, 76, KIR_A, KIR)
-    ic += yazi(269, 22, 'Kurban Olamayanlar (Geçersiz)', 10.0, KIR)
-    ic += yazi(269, 44, '• Kör, topal, aşırı zayıf/hasta', 9.4, LAC, ince=True)
-    ic += yazi(269, 64, '• Yaşını doldurmamış keçi/sığır', 9.3, KIR)
-    return svg(360, 88, ic, 'Kurbanlık hayvanlarda aranan sağlık ve yaş şartları rehberi.', 15)
-
-
-def toplumsal_dayanisma_karti():
-    ic = kutu(6, 6, 170, 74, MAVI_A, MAVI)
-    ic += yazi(91, 22, 'Bireysel Kazançlar', 10.2, MAVI)
-    ic += yazi(91, 44, '• Allah’a yakınlaşma ve takva', 9.4, LAC, ince=True)
-    ic += yazi(91, 64, '• Fedakârlık ve cömertlik', 9.4, MAVI)
-
-    ic += kutu(184, 6, 170, 74, CAM_A, CAM)
-    ic += yazi(269, 22, 'Toplumsal Kazançlar', 10.2, CAM)
-    ic += yazi(269, 44, '• Sosyal yardımlaşma ve paylaşma', 9.4, LAC, ince=True)
-    ic += yazi(269, 64, '• Kardeşlik ve sevgi bağları', 9.4, YES)
-    return svg(360, 86, ic, 'Kurban ibadetinin bireysel ve toplumsal faydaları kartı.', 14)
+GORSELLER = {1: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kurban ibadetiyle '
+    'yükümlü olma şartları panosu."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Şart · Ehliyet</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Akıllı ve ergen olmak</text><rect x="179" y="3" width="167" '
+    'height="45" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Şart · Zenginlik</text><text x="262.5" '
+    'y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">80,18 g altın '
+    '(Nisap)</text><rect x="4" y="52" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="79.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Şart · '
+    'Yolculuk</text><text x="87.5" y="98.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Seferi (yolcu) olmak</text><rect x="179" y="52" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="70.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Şart · İhtiyaç Dışı</text><text x="262.5" y="88.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Borçtan arta kalan</text><text x="262.5" y="107.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">mal</text></svg>',
+ 2: '<svg viewBox="0 0 350 197" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kurbanlık hayvan '
+    'türlerinin yaş ve hisse şartları."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Küçükbaş</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Koyun ve Keçi</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">1 Yaş · 1 Kişi</text><rect x="4" y="68" width="342" height="62" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Büyükbaş</text><text x="11.0" y="103.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Sığır ve Manda</text><text x="11.0" y="122.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">? Yaş · ? '
+    'Kişi</text><rect x="4" y="133" width="342" height="62" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="150.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. '
+    'Büyükbaş</text><text x="11.0" y="168.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Deve</text><text x="11.0" y="187.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#ee7d12">? Yaş · 1-7 Kişi</text></svg>',
+ 5: '<svg viewBox="0 0 350 197" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kurban etinin üç eşit '
+    'parçaya bölünmesi şeması."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="64.0" y="29.6" text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Pay (</text><text x="76.0" y="18.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">1</text><line x1="67.5" y1="23.6" x2="84.5" y2="23.6" stroke="#2451d6" '
+    'stroke-width="0.85"/><text x="76.0" y="38.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">3</text><text x="88.0" y="29.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">)</text><text x="11.0" y="57.3" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kurban kesenin ailesi</text><rect x="4" y="68" width="342" '
+    'height="62" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="64.0" y="94.6" text-anchor="end" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Pay (</text><text x="76.0" y="83.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">1</text><line x1="67.5" y1="88.6" x2="84.5" '
+    'y2="88.6" stroke="#12a150" stroke-width="0.85"/><text x="76.0" y="103.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">3</text><text x="88.0" y="94.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">)</text><text x="11.0" y="122.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Komşu, akraba ve dostlar</text><rect x="4" '
+    'y="133" width="342" height="62" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="64.0" y="159.6" '
+    'text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">3. Pay (</text><text '
+    'x="76.0" y="148.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d63a3a">1</text><line x1="67.5" y1="153.6" x2="84.5" y2="153.6" stroke="#d63a3a" stroke-width="0.85"/><text x="76.0" y="168.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">3</text><text x="88.0" '
+    'y="159.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">)</text><text '
+    'x="11.0" y="187.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">? '
+    '(Üçüncü grup)</text></svg>',
+ 6: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Adak ve akika kurbanı '
+    'vaka karşılaştırma kartları."><rect x="4" y="3" width="342" height="62" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Selim Bey’in Kurbanı</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">«Hastam iyileşirse keseceğim»</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Şart gerçekleşti '
+    '(Vacip)</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Merve Hanım’ın '
+    'Kurbanı</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">«Yeni doğan bebeğimize şükür»</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Çocuk nimeti için (Sünnet)</text></svg>',
+ 7: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sâffât suresi 102. ayet '
+    'levhası."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Hz. İbrahim ve '
+    'Hz. İsmail Kıssası (Sâffât</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Suresi, 102)</text><text x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">«Babacığım! Sana emrolunan şeyi yap;</text><text x="11.0" y="75.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">inşallah beni '
+    'sabredenlerden bulacaksın.»</text></svg>',
+ 8: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kurban ibadetinin dört '
+    'aşamalı uygulama şeridi."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Kesim</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Kıble ve Tekbir</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Seçim</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sağlıklı Hayvan</text><rect x="4" y="52" width="167" height="45" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Paylaşım</text><text x="87.5" y="88.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Üçe Bölüşüm</text><rect x="179" y="52" '
+    'width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Vakit</text><text x="262.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bayram '
+    'Namazı</text></svg>',
+ 9: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kurbanlık hayvanlarda '
+    'aranan sağlık ve yaş şartları rehberi."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Kurban Olabilenler (Geçerli)</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Sağlıklı, besili, azaları tam</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">• Koyun/Keçi ≥1 yaş · '
+    'Sığır ≥2 yaş</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text '
+    'x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Kurban '
+    'Olamayanlar (Geçersiz)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">• Kör, topal, aşırı zayıf/hasta</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">• Yaşını doldurmamış keçi/sığır</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = yukumluluk_sartlari_panosu()
-    s[2]['gorsel'] = kurbanlik_hayvan_kartlari()
-    s[5]['gorsel'] = kurban_eti_paylasim_semasi()
-    s[6]['gorsel'] = adak_akika_vaka_karti()
-    s[7]['gorsel'] = saffat_ayet_levhasi()
-    s[8]['gorsel'] = kurban_uygulama_seridi()
-    s[9]['gorsel'] = kurbanlik_secim_rehberi()
-    s[11]['gorsel'] = toplumsal_dayanisma_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

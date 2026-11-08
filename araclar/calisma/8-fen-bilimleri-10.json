@@ -15,8 +15,7 @@
   ],
   "hatirla": [
     "Birim yüzeye dik olarak etki eden kuvvete «basınç (P)» denir ve birimi «Pascal (Pa)»dır. Katı basıncı cismin ağırlığı (dik kuvvet) ile DOĞRU orantılı, yere temas eden yüzey alanı ile TERS orantılıdır (P = {kesir:G|S}).",
-    "Kar ayakkabısı, iş makinesi paleti, çok tekerlekli tır ve ördek/deve ayağı yüzey alanını büyütüp katı basıncını AZALTIR; bilenmiş bıçak ağzı, sivri çivi/raptiye ucu, krampon dişleri ve kış lastik zinciri ise yüzeyi küçültüp basıncı ARTIRIR.",
-    "Sıvı basıncı, noktanın açık yüzeye olan dik uzaklığı (derinlik, h) ve sıvının yoğunluğu (d) ile DOĞRU orantılıdır; kabın şekline, genişliğine veya kaptaki toplam sıvı hacmine bağlı değildir."
+    "Kar ayakkabısı, iş makinesi paleti, çok tekerlekli tır ve ördek ve deve ayağı yüzey alanını büyütüp katı basıncını AZALTIR; bilenmiş bıçak ağzı, sivri çivi ve raptiye ucu, krampon dişleri ve kış lastik zinciri ise yüzeyi küçültüp basıncı ARTIRIR."
   ],
   "sorular": [
     {
@@ -36,10 +35,6 @@
         [
           "Baraj duvarlarının tabana inildikçe daha kalın inşa edilmesi",
           "Derinlik arttıkça büyüyen sıvı basıncına dayanıklılık sağlama"
-        ],
-        [
-          "Hidrolik fren ve sanayi liftlerinde ağır araçların durdurulup kaldırılması",
-          "Kapalı kaptaki sıvının basıncı her yöne eşit iletmesi (Pascal)"
         ]
       ]
     },
@@ -48,7 +43,7 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Özdeş küplerle oluşturulan K, L ve M düzeneklerinin kum zeminde bıraktıkları iz derinlikleri karşılaştırılacaktır. Bir araştırmacı",
+      "soru": "Özdeş küplerle kurulan K, L ve M düzeneklerinden hangileri katı basıncının temas yüzey alanına bağlılığını test etmek için seçilmelidir?",
       "secenekler": [
         "K ve L düzenekleri (Yüzey alanları eşit, ağırlıkları farklı)",
         "L ve M düzenekleri (Ağırlıkları eşit, temas yüzey alanları farklı)",
@@ -62,7 +57,7 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Basınç deney kartlarında verilen işlemler sonucunda zemine veya kap tabanına etki eden basıncın nasıl değiştiğini (Artar,",
+      "soru": "Deney kartlarındaki işlemler sonucunda zemine veya kap tabanına etki eden basıncın değişimini ve bilimsel nedenini tabloya yazınız.",
       "basliklar": [
         "Uygulanan Deneysel İşlem",
         "Basınç Değişimi",
@@ -126,10 +121,6 @@
         {
           "metin": "Taban alanları S ve 3S olan iki kaba eşit yüksekliğe kadar saf su konulursa geniş kaptaki sıvı basıncı 3 kat büyük olur.",
           "dogru": false
-        },
-        {
-          "metin": "İtfaiye merdivenleri, damperli kamyonlar ve berber koltukları Pascal Prensibi’nden yararlanılarak tasarlanmıştır.",
-          "dogru": true
         }
       ]
     },
@@ -151,10 +142,6 @@
         {
           "metin": "Su dolu bir pet şişenin yan yüzeyinde açılan üç delikten en alttakinden suyun en uzağa fışkırması ___ etkisiyle açıklanır.",
           "cevap": "derinlik"
-        },
-        {
-          "metin": "Eşit yükseklikte su ve tuzlu su bulunan iki özdeş kaptan tuzlu suyun tabana daha fazla basınç yapması ___ farkındandır.",
-          "cevap": "yoğunluk"
         }
       ],
       "fazla": [
@@ -166,7 +153,7 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Yan yüzeyinde X, Y ve Z muslukları bulunan su dolu deponun muslukları aynı anda açıldığında suların yatayda ulaştığı mesafeler",
+      "soru": "Su dolu depodaki X, Y ve Z muslukları aynı anda açıldığında fışkıran suların yatayda ulaştığı mesafeler arasındaki ilişki nasıldır?",
       "secenekler": [
         "x{alt:X} > x{alt:Y} > x{alt:Z}",
         "x{alt:X} = x{alt:Y} = x{alt:Z}",
@@ -179,31 +166,30 @@
       "tur": "coktan",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Şekilleri ve kesit alanları birbirinden farklı olan I, II ve III numaralı kaplarda belirtilen yükseklik ve yoğunluklarda sıvılar",
+      "soru": "Taban alanları ve su derinlikleri verilen I, II ve III. kapların tabanlarındaki K, L ve M noktalarının sıvı basınçları nasıl sıralanır?",
       "secenekler": [
         "P{alt:K} = P{alt:L} > P{alt:M}",
         "P{alt:L} > P{alt:K} > P{alt:M}",
         "P{alt:M} > P{alt:K} = P{alt:L}",
         "P{alt:K} > P{alt:L} = P{alt:M}"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Raptiye modelinde parmakla geniş baş kısmına (S{alt:1}) F kuvveti uygulandığında sivri uç kısmının (S{alt:2}) mantar panoya kolayca",
-      "cevap": "Katılar kuvveti aynen ilettiği için kuvvetler eşittir (F{alt:1}.",
-      "satir": 2
+      "soru": "Bir raptiyenin geniş baş kısmına (S{alt:1}) F kuvveti uygulandığında sivri uçta (S{alt:2}) iletilen kuvvet ve basıncı karşılaştırınız.",
+      "cevap": "Katı kuvveti aynen iletir (F{alt:2}=F{alt:1}); yüzey küçüldüğünden P{alt:2}>P{alt:1} olur.",
+      "satir": 3
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
       "sutun": "sag",
       "gorsel_var": true,
-      "soru": "Otomobillerdeki hidrolik fren sisteminin çalışma sürecini gösteren şemadaki olayları pedala basılmasından tekerleğin durmasına",
+      "soru": "Hidrolik fren sisteminin çalışma şemasındaki olayları pedala basılmasından aracın durmasına kadar 1’den 4’e doğru sıralayınız.",
       "ogeler": [
         "Sürücünün fren pedalına ayağıyla dik bir kuvvet uygulayarak ana silindirdeki pistonu itmesi",
         "Pistonun itilmesiyle kapalı fren boruları içindeki hidrolik sıvıda yüksek bir basınç oluşması",
@@ -216,7 +202,7 @@
       "duzey": "ust",
       "sutun": "sag",
       "gorsel_var": true,
-      "soru": "Yarısına kadar su dolu olan kesik koni biçimindeki kapalı kap, dar tabanı (S) üzerinden geniş tabanı (3S) üzerine ters çevrilerek",
+      "soru": "Yarısına kadar su dolu kapalı kap, dar tabanı (S) üzerinden geniş tabanı (3S) üzerine ters çevrilirse P{alt:katı} ve P{alt:sıvı} nasıl değişir?",
       "secenekler": [
         "P{alt:katı} artar — P{alt:sıvı} artar",
         "P{alt:katı} değişmez — P{alt:sıvı} azalır",
@@ -247,14 +233,14 @@
           "anahtar": 0
         },
         {
+          "ipucu": "Sıvı ve gazlar gibi akma özelliği gösteren maddelerin genel adı",
+          "cevap": "AKIŞKAN",
+          "anahtar": 2
+        },
+        {
           "ipucu": "Sıvı basıncını etkileyen, birim hacimdeki madde miktarını gösteren özellik (öz kütle)",
           "cevap": "YOĞUNLUK",
           "anahtar": 4
-        },
-        {
-          "ipucu": "İş makinelerinde yüzey alanını büyüterek toprağa batmayı önleyen geniş düzenek",
-          "cevap": "PALET",
-          "anahtar": 0
         },
         {
           "ipucu": "Temas yüzey alanını küçülterek yüksek basınçla tahtaya saplanan sivri metal araç",
@@ -262,16 +248,15 @@
           "anahtar": 0
         }
       ],
-      "sonuc": "BASNPÇ"
+      "sonuc": "BASINÇ"
     },
     {
       "tur": "acik",
       "duzey": "ust",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Su cenderesi düzeneğinde küçük kesitli pistona (S{alt:1}) küçük bir F kuvveti uygulanarak geniş kesitli pistondaki (S{alt:2}) ağır otomobilin",
-      "cevap": "Su cenderesi Pascal Prensibi ile çalışır: Küçük.",
-      "satir": 2
+      "soru": "Bir su cenderesinde küçük kesitli pistona küçük kuvvet uygulanarak geniş pistondaki ağır otomobilin nasıl kaldırılabildiğini açıklayınız.",
+      "cevap": "Pascal Prensibi’yle sıvı basıncı aynen iletilir; geniş yüzeyde daha büyük kuvvet oluşur.",
+      "satir": 3
     }
   ]
 }

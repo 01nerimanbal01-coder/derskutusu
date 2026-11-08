@@ -1,166 +1,107 @@
-"""8. sınıf Fen Bilimleri 10. hafta (3. Ünite: Basınç — Katı ve Sıvı Basıncı) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); Noto Sans 10.5-11.5 pt (K150 EK); eğik kesir yok (K155)."""
+"""8-fen-bilimleri-10 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, KUM = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#fffdf5'
-ALTIN, KAHVE, YESIL_K = '#c9a227', '#8a5a2b', '#0f6b45'
-
-
-def svg(w, h, ic, etiket, en_fazla=15):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', ince=False, boy=10.5):
-    ag = '500' if ince else '700'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-family="Noto Sans, sans-serif" font-size="{boy}" font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def klm_ozdes_kupler():
-    """Soru 2 (s[1]): K (1 küp, S), L (2 küp dikey, S), M (2 küp yatay, 2S) düzenekleri."""
-    ic = kutu(4, 4, 352, 86, KUM, ALTIN, 8)
-    ic += yazi(180, 19, 'Özdeş Küplerle Kurulan K, L ve M Katı Basıncı Düzenekleri', KAHVE, boy=10.2)
-    # Zemin çizgisi
-    ic += f'<line x1="16" y1="68" x2="344" y2="68" stroke="{LAC}" stroke-width="1.8"/>'
-    # K düzeneği: 1 küp
-    ic += kutu(44, 46, 26, 22, MAVI_A, MAVI, 3)
-    ic += yazi(57, 61, 'G', MAVI, boy=9.8)
-    ic += yazi(57, 82, 'K (Ağırlık: G · Yüzey: S)', LAC, boy=9.2)
-    # L düzeneği: 2 küp üst üste
-    ic += kutu(162, 24, 26, 22, TUR_A, TUR, 3)
-    ic += kutu(162, 46, 26, 22, TUR_A, TUR, 3)
-    ic += yazi(175, 39, 'G', TUR, boy=9.5)
-    ic += yazi(175, 61, 'G', TUR, boy=9.5)
-    ic += yazi(175, 82, 'L (2G · Yüzey: S)', TUR, boy=9.2)
-    # M düzeneği: 2 küp yan yana
-    ic += kutu(264, 46, 26, 22, YES_A, YES, 3)
-    ic += kutu(290, 46, 26, 22, YES_A, YES, 3)
-    ic += yazi(277, 61, 'G', YESIL_K, boy=9.5)
-    ic += yazi(303, 61, 'G', YESIL_K, boy=9.5)
-    ic += yazi(290, 82, 'M (2G · Yüzey: 2S)', YESIL_K, boy=9.2)
-    return svg(360, 94, ic, 'K (G, S), L (2G, S) ve M (2G, 2S) özdeş küp düzenekleri.', 15)
-
-
-def dort_basinc_deney_karti():
-    """Soru 3 (s[2]): 4 deneysel işlem kartı."""
-    kartlar = [
-        (4, 4, '1. Tuğlayı Dik Konuma Getirme', 'Yüzey: 2S -> S (Ağırlık sabit)', MAVI, MAVI_A),
-        (184, 4, '2. Silindiri Dikey İkiye Kesme', 'Ağırlık: 2G -> G · Yüzey: 2S -> S', YES, YES_A),
-        (4, 52, '3. Kaba Aynı Cins Su Ekleme', 'Derinlik: h -> 2h (Yoğunluk sabit)', TUR, TUR_A),
-        (184, 52, '4. Su Yerine Zeytinyağı Koyma', 'Derinlik: h sabit · Yoğunluk küçülür', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, bas, alt, r, z in kartlar:
-        ic += kutu(x, y, 172, 44, z, r, 7)
-        ic += yazi(x + 86, y + 18, bas, r, boy=10.0)
-        ic += yazi(x + 86, y + 36, alt, LAC, ince=True, boy=9.3)
-    return svg(360, 100, ic, 'Katı ve sıvı basıncında dört farklı deneysel işlem kartı.', 15)
-
-
-def su_deposu_xyz_musluklari():
-    """Soru 6 (s[5]): X (h), Y (2h), Z (3h) musluklarından fışkıran su."""
-    ic = kutu(4, 4, 352, 86, MAVI_A, MAVI, 8)
-    ic += yazi(180, 20, 'Su Dolu Depoda X, Y ve Z Musluklarının Derinlikleri', MAVI)
-    ic += kutu(24, 26, 92, 58, '#bae6fd', MAVI, 4)
-    ic += yazi(70, 58, 'Su (d)', MAVI)
-    # X, Y, Z noktaları
-    ic += f'<circle cx="116" cy="38" r="3.2" fill="{KIR}"/>'
-    ic += yazi(222, 42, 'X Musluğu (Derinlik: h) -> Mesafe: x_X', LAC, ince=True, boy=9.6)
-    ic += f'<circle cx="116" cy="56" r="3.2" fill="{TUR}"/>'
-    ic += yazi(222, 60, 'Y Musluğu (Derinlik: 2h) -> Mesafe: x_Y', LAC, ince=True, boy=9.6)
-    ic += f'<circle cx="116" cy="74" r="3.2" fill="{YESIL_K}"/>'
-    ic += yazi(222, 78, 'Z Musluğu (Derinlik: 3h) -> Mesafe: x_Z', YESIL_K, boy=9.6)
-    return svg(360, 94, ic, 'Yan yüzeyinde h, 2h ve 3h derinlikte X, Y, Z muslukları bulunan su deposu.', 15)
-
-
-def uc_kap_klm_sivi_basinci():
-    """Soru 7 (s[6]): I (2h, d, S -> K), II (2h, d, 3S -> L), III (h, d, 2S -> M)."""
-    kartlar = [
-        (6, 'I. Kap (K Noktası)', 'Derinlik: 2h · Su (d)', 'Taban alanı: S', MAVI, MAVI_A),
-        (124, 'II. Kap (L Noktası)', 'Derinlik: 2h · Su (d)', 'Taban alanı: 3S (Geniş)', YES, YES_A),
-        (242, 'III. Kap (M Noktası)', 'Derinlik: h · Su (d)', 'Taban alanı: 2S', TUR, TUR_A),
-    ]
-    ic = ''
-    for x, bas, s1, s2, r, z in kartlar:
-        ic += kutu(x, 4, 112, 84, z, r, 8)
-        ic += yazi(x + 56, 22, bas, r, boy=10.0)
-        ic += yazi(x + 56, 46, s1, LAC, boy=9.5)
-        ic += yazi(x + 56, 68, s2, LAC, ince=True, boy=9.3)
-    return svg(360, 92, ic, 'Farklı taban alanlarına ve derinliklere sahip K, L, M kapları.', 15)
-
-
-def raptiye_kuvvet_basinc_modeli():
-    """Soru 8 (s[7]): Raptiyenin geniş başı (S1, F1, P1) ve sivri ucu (S2, F2, P2)."""
-    ic = kutu(4, 4, 172, 82, MAVI_A, MAVI, 8)
-    ic += yazi(90, 22, 'Geniş Baş Kısmı (S₁ Büyük)', MAVI, boy=10.2)
-    ic += yazi(90, 44, 'Uygulanan Kuvvet: F₁ = F', LAC, ince=True, boy=9.6)
-    ic += yazi(90, 66, 'Oluşan Basınç: P₁', MAVI, boy=9.8)
-
-    ic += kutu(184, 4, 172, 82, KIR_A, KIR, 8)
-    ic += yazi(270, 22, 'Sivri Uç Kısmı (S₂ Küçük)', KIR, boy=10.2)
-    ic += yazi(270, 44, 'İletilen Kuvvet: F₂ = ?', LAC, ince=True, boy=9.6)
-    ic += yazi(270, 66, 'Oluşan Basınç: P₂ = ?', KIR, boy=9.8)
-    return svg(360, 90, ic, 'Raptiyenin geniş baş kısmı ve sivri uç kısmında kuvvet ve basınç iletimi.', 14)
-
-
-def hidrolik_fren_akis():
-    """Soru 9 (s[8]): Hidrolik fren sistemi 4 aşamalı çalışma şeması."""
-    adimlar = [
-        (4, '1. Pedal', 'Fren pedalına', 'kuvvet uygulanır', MAVI, MAVI_A),
-        (93, '2. Sıvı Basıncı', 'Ana silindirde', 'basınç oluşur', TUR, TUR_A),
-        (182, '3. İletim', 'Sıvı basıncı her', 'yöne eşit iletir', MOR, MOR_A),
-        (271, '4. Durma', 'Balatalar diski', 'sıkıştırıp durdurur', YES, YES_A),
-    ]
-    ic = ''
-    for x, bas, s1, s2, r, z in adimlar:
-        ic += kutu(x, 4, 85, 80, z, r, 7)
-        ic += yazi(x + 42, 22, bas, r, boy=10.0)
-        ic += yazi(x + 42, 44, s1, LAC, ince=True, boy=9.3)
-        ic += yazi(x + 42, 64, s2, LAC, boy=9.3)
-    return svg(360, 88, ic, 'Hidrolik fren sisteminin Pascal Prensibi ile çalışma aşamaları.', 14)
-
-
-def kesik_koni_ters_cevirme():
-    """Soru 10 (s[9]): Kesik koni kabın dar taban (S) üzerinden geniş taban (3S) üzerine çevrilmesi."""
-    ic = kutu(4, 4, 172, 86, TUR_A, TUR, 8)
-    ic += yazi(90, 21, '1. Durum (Dar Taban Yerde)', TUR, boy=10.1)
-    ic += yazi(90, 43, 'Temas Yüzeyi: S (Dar)', LAC, ince=True, boy=9.6)
-    ic += yazi(90, 61, 'Su Yüksekliği: h₁ (Yüksek)', LAC, ince=True, boy=9.6)
-    ic += yazi(90, 79, 'Toplam Ağırlık: G', TUR, boy=9.6)
-
-    ic += kutu(184, 4, 172, 86, YES_A, YES, 8)
-    ic += yazi(270, 21, '2. Durum (Geniş Taban Yerde)', YESIL_K, boy=10.1)
-    ic += yazi(270, 43, 'Temas Yüzeyi: 3S (Genişledi)', LAC, ince=True, boy=9.6)
-    ic += yazi(270, 61, 'Su Yüksekliği: h₂ &lt; h₁ (Azaldı)', LAC, ince=True, boy=9.6)
-    ic += yazi(270, 79, 'Toplam Ağırlık: G (Sabit)', YESIL_K, boy=9.6)
-    return svg(360, 94, ic, 'Yarısına kadar su dolu kesik koni kabın geniş tabanı üzerine ters çevrilmesi.', 15)
-
-
-def su_cenderesi_karti():
-    """Soru 12 (s[11]): Su cenderesi küçük piston (S1, F) ve büyük piston (S2, G)."""
-    ic = kutu(4, 4, 352, 82, MAVI_A, MAVI, 8)
-    ic += yazi(180, 20, 'Su Cenderesi (Hidrolik Kaldıraç) · Pascal Prensibi Düzeneği', MAVI)
-    ic += kutu(14, 28, 154, 48, '#fff', TUR, 6)
-    ic += yazi(91, 46, '1. Kol (Dar Piston: S₁)', TUR, boy=9.9)
-    ic += yazi(91, 66, 'Küçük F kuvveti uygulanır', LAC, ince=True, boy=9.4)
-
-    ic += kutu(192, 28, 154, 48, '#fff', YES, 6)
-    ic += yazi(269, 46, '2. Kol (Geniş Piston: S₂ > S₁)', YESIL_K, boy=9.9)
-    ic += yazi(269, 66, 'Ağır otomobil (G) kaldırılır', LAC, ince=True, boy=9.4)
-    return svg(360, 90, ic, 'Su cenderesinde küçük pistonla uygulanan basıncın geniş pistona iletilmesi.', 14)
+GORSELLER = {1: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="K (G, S), L (2G, S) ve M '
+    '(2G, 2S) özdeş küp düzenekleri."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">K Düzeneği (1 Özdeş Küp)</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Toplam Ağırlık: G · Temas Yüzey Alanı: S</text><rect x="4" y="49" '
+    'width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">L Düzeneği (Üst Üste 2 Özdeş Küp)</text><text '
+    'x="11.0" y="84.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Toplam '
+    'Ağırlık: 2G · Temas Yüzey Alanı: S</text><rect x="4" y="95" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="112.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">M Düzeneği (Yan Yana 2 Özdeş Küp)</text><text x="11.0" y="130.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Toplam Ağırlık: 2G · Temas Yüzey Alanı: '
+    '2S</text></svg>',
+ 2: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Katı ve sıvı basıncında '
+    'dört farklı deneysel işlem kartı."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Tuğlayı Dik</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Konuma Getirme</text><text x="87.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yüzey: 2S → S (Ağırlık</text><text x="87.5" '
+    'y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">sabit)</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2. Silindiri Dikey</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">İkiye Kesme</text><text x="262.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ağırlık: 2G → G ·</text><text x="262.5" '
+    'y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yüzey: 2S → '
+    'S</text><rect x="4" y="89" width="167" height="82" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" '
+    'y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. Kaba Aynı '
+    'Cins Su</text><text x="87.5" y="125.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#ee7d12">Ekleme</text><text x="87.5" y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Derinlik: h → 2h</text><text x="87.5" y="162.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Yoğunluk sabit)</text><rect x="179" y="89" width="167" height="82" '
+    'rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Su Yerine</text><text x="262.5" y="125.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Zeytinyağı Koyma</text><text x="262.5" '
+    'y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Derinlik: h '
+    'sabit ·</text><text x="262.5" y="162.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Yoğunluk küçülür</text></svg>',
+ 5: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yan yüzeyinde h, 2h ve '
+    '3h derinlikte X, Y, Z muslukları bulunan su deposu."><rect x="4" y="3" width="342" height="154" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Su Dolu Depoda X, Y ve Z Muslukları (Sıvı:</text><text x="11.0" y="38.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Su, Yoğunluk: '
+    'd)</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">• X Musluğu: Sıvı yüzeyine derinliği h (Üst</text><text x="11.0" y="75.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">musluk)</text><text x="11.0" y="94.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Y Musluğu: Sıvı yüzeyine derinliği 2h '
+    '(Orta</text><text x="11.0" y="112.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">musluk)</text><text x="11.0" y="130.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">• Z Musluğu: Sıvı yüzeyine derinliği 3h (En</text><text x="11.0" y="149.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">alt musluk)</text></svg>',
+ 6: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="I, II ve III. su '
+    'kaplarının derinlik ve taban alanı verileri"><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">I. Kap (Tabanda K Noktası · Sıvı: Su)</text><text x="11.0" y="38.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sıvı Derinliği: 2h · Taban Alanı: '
+    'S</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">II. Kap (Tabanda '
+    'L Noktası · Sıvı: Su)</text><text x="11.0" y="84.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Sıvı Derinliği: 2h · Taban Alanı: 2S</text><rect x="4" y="95" width="342" height="43" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="112.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">III. Kap (Tabanda M Noktası · Sıvı: Su)</text><text x="11.0" y="130.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sıvı Derinliği: h · Taban '
+    'Alanı: S</text></svg>',
+ 8: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hidrolik fren sisteminin '
+    'Pascal Prensibi ile çalışma aşamaları."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">İletim</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Sıvı basıncı her yöne</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">eşit iletir</text><rect x="179" y="3" '
+    'width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Pedal</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Fren pedalına '
+    'kuvvet</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">uygulanır</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Durma</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Balatalar diski</text><text x="87.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">sıkıştırıp durdurur</text><rect x="179" '
+    'y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Sıvı Basıncı</text><text '
+    'x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ana '
+    'silindirde basınç</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">oluşur</text></svg>',
+ 9: '<svg viewBox="0 0 350 168" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yarısına kadar su dolu '
+    'kesik koni kabın geniş tabanı üzerine ters çevrilmesi."><rect x="4" y="3" width="342" height="80" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">1. Durum (Dar Taban Yerde)</text><text x="11.0" y="38.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Temas Yüzeyi: S (Dar)</text><text x="11.0" '
+    'y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Su Yüksekliği: '
+    'h₁ (Yüksek)</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Toplam Ağırlık: G</text><rect x="4" y="86" width="342" height="80" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">2. Durum (Geniş Taban Yerde)</text><text x="11.0" y="121.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Temas Yüzeyi: 3S (Genişledi)</text><text '
+    'x="11.0" y="140.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Su '
+    'Yüksekliği: h₂ &lt; h₁ (Azaldı)</text><text x="11.0" y="158.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">Toplam Ağırlık: G (Sabit)</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = klm_ozdes_kupler()
-    s[2]['gorsel'] = dort_basinc_deney_karti()
-    s[5]['gorsel'] = su_deposu_xyz_musluklari()
-    s[6]['gorsel'] = uc_kap_klm_sivi_basinci()
-    s[7]['gorsel'] = raptiye_kuvvet_basinc_modeli()
-    s[8]['gorsel'] = hidrolik_fren_akis()
-    s[9]['gorsel'] = kesik_koni_ters_cevirme()
-    s[11]['gorsel'] = su_cenderesi_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

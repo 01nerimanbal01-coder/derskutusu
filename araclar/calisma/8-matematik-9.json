@@ -15,8 +15,7 @@
   "hatirla": [
     "Kareköklü ifadelerde toplama ve çıkarma yapılabilmesi için terimlerin karekök içindeki sayılarının birebir eşit olması şarttır; ortak kök hiç değiştirilmeden yazılır, yalnız katsayılar toplanır veya çıkarılır: a{kok:x} + b{kok:x} - c{kok:x} = (a + b - c){kok:x}.",
     "Kök içleri farklı olan ifadeler doğrudan toplanamaz ({kok:a} + {kok:b} ≠ {kok:a + b}); önce her terim tam kare çarpanları kök dışına çıkarılarak a{kok:b} biçimine getirilir. Kök içleri eşitlenemiyorsa işlem olduğu gibi bırakılır.",
-    "Alanı A olan karesel bölgenin bir kenar uzunluğu {kok:A}, çevre uzunluğu ise 4{kok:A}’dır; dikdörtgenin çevresi kısa ve uzun kenarların toplamının 2 katıdır.",
-    "En sade hali a{kok:b} olan kareköklü bir ifadeyi doğal sayı yapan en küçük pozitif çarpan {kok:b} sayısıdır; ayrıca {kok:b}’nin tüm pozitif tam sayı katları (2{kok:b}, 3{kok:b}, 4{kok:b}, ... yani k{kok:b}) bu ifadeyi doğal sayı yapar."
+    "Alanı A olan karesel bölgenin bir kenar uzunluğu {kok:A}, çevre uzunluğu ise 4{kok:A}’dır; dikdörtgenin çevresi kısa ve uzun kenarların toplamının 2 katıdır."
   ],
   "sorular": [
     {
@@ -35,10 +34,6 @@
         [
           "{kok:63} sayısını doğal sayı yapan çarpan",
           "Kök yedi ({kok:7}) veya katları"
-        ],
-        [
-          "{kok:96} sayısını doğal sayı yapan çarpan",
-          "Kök altı ({kok:6}) veya katları"
         ]
       ]
     },
@@ -69,7 +64,9 @@
         [
           "1. {kok:50}",
           "5{kok:2}",
-          "{kok:2} ve 2{kok:2} ({kok:8})"
+          {
+            "b": "{kok:2} ve 2{kok:2} ({kok:8})"
+          }
         ],
         [
           "2. {kok:75}",
@@ -120,10 +117,6 @@
         {
           "metin": "Yedi kök iki (7{kok:2}) ifadesinden kök iki ({kok:2}) çıkarıldığında kökler sadeleşir ve sonuç 7 doğal sayısı olur.",
           "dogru": false
-        },
-        {
-          "metin": "Alanı 80 cm² olan karesel bir bölgenin bir kenar uzunluğu 4{kok:5} cm, çevre uzunluğu ise 16{kok:5} cm’dir.",
-          "dogru": true
         }
       ]
     },
@@ -144,10 +137,6 @@
         {
           "metin": "Karekök içindeki {kok:48} ifadesi {kok:3} ile çarpıldığında sonuç ___ doğal sayısına eşit olur.",
           "cevap": "12"
-        },
-        {
-          "metin": "Aynı kök sembolü içinde verilen {kok:36 + 64} işleminin sonucu ___ doğal sayısıdır.",
-          "cevap": "10"
         }
       ],
       "fazla": [
@@ -184,7 +173,7 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Kenarları çakışık olarak yan yana dizilen üç karesel kartonun alanları sırasıyla 45 cm², 20 cm² ve 5 cm² olarak verilmiştir. Tabandaki K ile L noktaları arasındaki toplam uzunluğu işlem yaparak bulunuz.",
+      "soru": "Kenarları çakışık olarak yan yana dizilen üç karesel kartonun alanları sırasıyla 45 cm{us:|2}, 20 cm{us:|2} ve 5 cm{us:|2} olarak verilmiştir. Tabandaki K ile L noktaları arasındaki toplam uzunluğu işlem yaparak bulunuz.",
       "cevap": "Kenarlar 3{kok:5}, 2{kok:5} ve {kok:5} cm’dir; |KL| = 3{kok:5} + 2{kok:5} + {kok:5} = 6{kok:5} cm olur.",
       "satir": 2
     },

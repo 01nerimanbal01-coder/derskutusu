@@ -1,153 +1,118 @@
-"""8. sınıf Din Kültürü ve Ahlak Bilgisi 9. hafta (Zekât İbadeti, Nisap ve Zekât Oranları) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); Noto Sans 10.5-11.5 pt (K150 EK); eğik kesir çizgisi yok (K155)."""
+"""8-din-kulturu-ve-ahlak-bilgisi-9 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#d97706', '#15803d', '#dc2626', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, KUM = '#e8eefe', '#fef3c7', '#dcfce7', '#f3e8ff', '#fee2e2', '#fffdf5'
-ALTIN, KAHVE, YESIL_K = '#c9a227', '#8a5a2b', '#0f6b45'
-
-
-def svg(w, h, ic, etiket, en_fazla=16):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', ince=False, boy=10.8):
-    ag = '500' if ince else '700'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-family="Noto Sans, sans-serif" font-size="{boy}" font-weight="{ag}" fill="{renk}">{metin}</text>'
-
-
-def selim_bey_varlik_karti():
-    """Soru 2 (s[1]): Selim Bey'in mal varlığı dökümü (Asli ihtiyaç vs Nisaba tabi)."""
-    kartlar = [
-        (4, 4, '1. İkamet Konutu', 'Ailesiyle oturduğu ev', MAVI, MAVI_A),
-        (184, 4, '2. Yatırım Altını', '120 gram altın (1 yıllık)', TUR, TUR_A),
-        (4, 52, '3. Binek Otomobil', 'İşe gittiği özel araç', YES, YES_A),
-        (184, 52, '4. Ticari Ürünler', 'Mağaza satış malları', MOR, MOR_A),
-    ]
-    ic = ''
-    for x, y, bas, alt, r, z in kartlar:
-        ic += kutu(x, y, 172, 44, z, r, 7)
-        ic += yazi(x + 86, y + 18, bas, r, boy=10.6)
-        ic += yazi(x + 86, y + 36, alt, LAC, ince=True, boy=10.2)
-    return svg(360, 100, ic, 'Selim Bey mal varlığı kartları: konut, altın, otomobil ve ticari ürünler.', 15)
-
-
-def hayvan_zekat_kartlari():
-    """Soru 3 (s[2]): Hayvan türleri ve nisap-zekât oran kartları."""
-    kartlar = [
-        (4, 'Küçükbaş', '40–120: 1 koyun', '121–200: 2 koyun', MAVI, MAVI_A),
-        (124, 'Büyükbaş', '30–39: 1 buzağı', '(2 yaşında)', YES, YES_A),
-        (244, 'Deve', 'Her 5 deve için', '1 koyun veya keçi', TUR, TUR_A),
-    ]
-    ic = ''
-    for x, bas, s1, s2, r, z in kartlar:
-        ic += kutu(x, 4, 112, 82, z, r, 8)
-        ic += yazi(x + 56, 22, bas, r, boy=10.8)
-        ic += yazi(x + 56, 46, s1, LAC, boy=10.0)
-        ic += yazi(x + 56, 68, s2, LAC, ince=True, boy=9.8)
-    return svg(360, 90, ic, 'Küçükbaş, büyükbaş ve develerde zekât ölçüleri şeması.', 15)
-
-
-def toprak_urunleri_osur_panosu():
-    """Soru 6 (s[5]): K ve L buğday tarlalarında sulama türü ve ürün miktarı."""
-    ic = kutu(4, 4, 172, 86, YES_A, YES, 8)
-    ic += yazi(90, 22, 'K Tarlası · 5.000 kg Buğday', YESIL_K)
-    ic += yazi(90, 44, 'Yağmur Suyu (Masrafsız)', LAC, ince=True)
-    ic += yazi(90, 64, 'Öşür Oranı: Onda bir (%10)', YESIL_K)
-    ic += yazi(90, 82, 'Zekât Miktarı = ? kg', LAC)
-
-    ic += kutu(184, 4, 172, 86, TUR_A, TUR, 8)
-    ic += yazi(270, 22, 'L Tarlası · 5.000 kg Buğday', TUR)
-    ic += yazi(270, 44, 'Motorlu Sulama (Masraflı)', LAC, ince=True)
-    ic += yazi(270, 64, 'Öşür Oranı: Yirmide bir (%5)', TUR)
-    ic += yazi(270, 82, 'Zekât Miktarı = ? kg', LAC)
-    return svg(360, 94, ic, 'K ve L buğday tarlalarında sulama yöntemine göre öşür hesabı.', 15)
-
-
-def dort_komsu_nisap_karti():
-    """Soru 7 (s[6]): 4 komşunun birikimleri ve nisap karşılaştırması."""
-    kartlar = [
-        (4, 4, 'Ahmet Bey', '110 g altın (Nisap: 85 g)', YES, YES_A),
-        (184, 4, 'Zeynep Hanım', '25 koyun (Nisap: 40 koyun)', KIR, KIR_A),
-        (4, 52, 'Murat Bey', '96 g altın değerinde mal', MAVI, MAVI_A),
-        (184, 52, 'Elif Hanım', '32 sığır (Nisap: 30 sığır)', TUR, TUR_A),
-    ]
-    ic = ''
-    for x, y, bas, alt, r, z in kartlar:
-        ic += kutu(x, y, 172, 44, z, r, 7)
-        ic += yazi(x + 86, y + 18, bas, r, boy=10.6)
-        ic += yazi(x + 86, y + 36, alt, LAC, ince=True, boy=9.8)
-    return svg(360, 100, ic, 'Dört komşunun mal varlığı ve nisap sınırları kartı.', 15)
-
-
-def nakit_ticaret_hesap_karti():
-    """Soru 8 (s[7]): 160.000 TL nakit + 40.000 TL ticaret malı zekât hesabı."""
-    ic = kutu(4, 4, 352, 84, KUM, ALTIN, 8)
-    ic += yazi(180, 21, 'Yıllık Zekât Hesaplama Kartı · Oran: Kırkta Bir (%2,5)', KAHVE)
-    ic += kutu(12, 28, 162, 52, MAVI_A, MAVI, 6)
-    ic += yazi(93, 46, 'Nakit Birikim (1 Yıllık)', MAVI)
-    ic += yazi(93, 68, '160.000 TL', LAC)
-
-    ic += kutu(186, 28, 162, 52, YES_A, YES, 6)
-    ic += yazi(267, 46, 'Ticaret Malı (1 Yıllık)', YESIL_K)
-    ic += yazi(267, 68, '40.000 TL', LAC)
-    return svg(360, 92, ic, '160.000 TL nakit ve 40.000 TL ticaret malı zekât hesaplama kartı.', 15)
-
-
-def zekat_surec_akis_sema():
-    """Soru 9 (s[8]): 4 adımlı zekât yükümlülüğü ve ödeme akışı."""
-    adimlar = [
-        (4, '1. Adım', 'Borç ve asli', 'ihtiyacı düş', MAVI, MAVI_A),
-        (93, '2. Adım', '85 g altın', 'nisabını ölç', TUR, TUR_A),
-        (182, '3. Adım', '1 kamerî yıl', 'şartını ara', MOR, MOR_A),
-        (271, '4. Adım', '%2,5 payı', 'fakire ver', YES, YES_A),
-    ]
-    ic = ''
-    for x, bas, s1, s2, r, z in adimlar:
-        ic += kutu(x, 4, 85, 80, z, r, 7)
-        ic += yazi(x + 42, 22, bas, r, boy=10.4)
-        ic += yazi(x + 42, 44, s1, LAC, ince=True, boy=9.8)
-        ic += yazi(x + 42, 64, s2, LAC, boy=9.8)
-    return svg(360, 88, ic, 'Zekât hesaplama ve ödeme sürecinin dört aşamalı şeması.', 14)
-
-
-def ayet_karsilastirma_panosu():
-    """Soru 10 (s[9]): Tevbe 103 ve En'âm 141 ayet mealleri panosu."""
-    ic = kutu(4, 4, 352, 42, MAVI_A, MAVI, 7)
-    ic += yazi(180, 20, 'Tevbe Suresi, 103. Ayet:', MAVI, boy=10.4)
-    ic += yazi(180, 37, '«Onların mallarından, kendilerini temizleyip arındıracağın bir sadaka (zekât) al...»', LAC, ince=True, boy=9.4)
-
-    ic += kutu(4, 50, 352, 42, YES_A, YES, 7)
-    ic += yazi(180, 66, 'En’âm Suresi, 141. Ayet:', YESIL_K, boy=10.4)
-    ic += yazi(180, 83, '«...Ürün verdiğinde ürününden yiyin, hasat günü de hakkını (öşürünü) verin...»', LAC, ince=True, boy=9.4)
-    return svg(360, 96, ic, 'Tevbe 103 ve Enam 141 ayet mealleri panosu.', 15)
-
-
-def sulama_hikmet_karti():
-    """Soru 12 (s[11]): Yağmur suyu (%10) vs Masraflı sulama (%5) karşılaştırma kartı."""
-    ic = kutu(4, 4, 172, 82, YES_A, YES, 8)
-    ic += yazi(90, 22, 'Doğal Sulama (Yağmur)', YESIL_K)
-    ic += yazi(90, 45, 'Sulama gideri ve emek az', LAC, ince=True, boy=10.0)
-    ic += yazi(90, 68, 'Oran: Onda bir (%10)', YESIL_K)
-
-    ic += kutu(184, 4, 172, 82, MOR_A, MOR, 8)
-    ic += yazi(270, 22, 'Masraflı Sulama (Motor)', MOR)
-    ic += yazi(270, 45, 'Elektrik, yakıt ve emek var', LAC, ince=True, boy=10.0)
-    ic += yazi(270, 68, 'Oran: Yirmide bir (%5)', MOR)
-    return svg(360, 90, ic, 'Doğal sulama ve masraflı sulamada öşür oranlarının karşılaştırılması.', 15)
+GORSELLER = {1: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Selim Bey mal varlığı '
+    'kartları: konut, altın, otomobil ve ticari ürünler."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. İkamet Konutu</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ailesiyle oturduğu</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ev</text><rect x="179" y="3" width="167" '
+    'height="64" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Yatırım Altını</text><text x="262.5" '
+    'y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">120 gram altın '
+    '(1</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">yıllık)</text><rect x="4" y="71" width="167" height="45" rx="5" fill="#dcfce7" stroke="#15803d" '
+    'stroke-width="0.75"/><text x="87.5" y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#15803d">3. Binek Otomobil</text><text x="87.5" y="107.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İşe gittiği özel araç</text><rect x="179" y="71" width="167" '
+    'height="45" rx="5" fill="#f3e8ff" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Ticari Ürünler</text><text x="262.5" '
+    'y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mağaza satış '
+    'malları</text></svg>',
+ 2: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Küçükbaş, büyükbaş ve '
+    'develerde zekât ölçüleri şeması."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Küçükbaş · 40–120: 1 koyun</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">121–200: 2 koyun</text><rect x="4" y="49" width="342" height="23" '
+    'rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="0.75"/><text x="11.0" y="65.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#15803d">Büyükbaş · 30–39: 1 '
+    'buzağı:</tspan> (2 yaşında)</text><rect x="4" y="75" width="342" height="23" rx="5" fill="#fef3c7" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="91.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#d97706">Deve · Her 5 deve için:</tspan> 1 koyun veya '
+    'keçi</text></svg>',
+ 5: '<svg viewBox="0 0 350 168" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="K ve L buğday '
+    'tarlalarında sulama yöntemine göre öşür hesabı."><rect x="4" y="3" width="342" height="80" rx="5" fill="#dcfce7" stroke="#15803d" '
+    'stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">K Tarlası · 5.000 kg Buğday</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yağmur Suyu (Masrafsız)</text><text x="11.0" y="57.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Öşür Oranı: Onda bir '
+    '(%10)</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Zekât Miktarı = ? kg</text><rect x="4" y="86" width="342" height="80" rx="5" fill="#fef3c7" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">L Tarlası · 5.000 kg Buğday</text><text x="11.0" y="121.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Motorlu Sulama (Masraflı)</text><text x="11.0" y="140.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Öşür Oranı: Yirmide bir '
+    '(%5)</text><text x="11.0" y="158.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Zekât Miktarı = ? kg</text></svg>',
+ 6: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört komşunun mal '
+    'varlığı ve nisap sınırları kartı."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Ahmet Bey</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">110 g altın (Nisap: 85</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">g)</text><rect x="179" y="3" width="167" '
+    'height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Zeynep Hanım</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">25 koyun (Nisap: '
+    '40</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">koyun)</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Murat Bey</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">96 g altın değerinde</text><text x="87.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">mal</text><rect x="179" y="71" width="167" '
+    'height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Elif Hanım</text><text x="262.5" y="107.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">32 sığır (Nisap: '
+    '30</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">sığır)</text></svg>',
+ 7: '<svg viewBox="0 0 350 95" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="160.000 TL nakit ve '
+    '40.000 TL ticaret malı zekât hesaplama kartı."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#8a5a2b">Yıllık Zekât Hesaplama Kartı · Oran: Kırkta</text><text x="11.0" y="38.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#8a5a2b">Bir (%2,5)</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Nakit Birikim (1 Yıllık) '
+    '· 160.000 TL</text><rect x="4" y="68" width="342" height="25" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="0.75"/><text '
+    'x="11.0" y="85.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Ticaret '
+    'Malı (1 Yıllık) · 40.000 TL</text></svg>',
+ 8: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zekât hesaplama ve ödeme '
+    'sürecinin dört aşamalı şeması."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">1 kamerî yıl şartını</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ara</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Borç ve asli ihtiyacı</text><text x="262.5" y="39.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">düş</text><rect x="4" '
+    'y="52" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="79.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">%2,5 payı fakire '
+    'ver</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">85 g altın '
+    'nisabını</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ölç</text></svg>',
+ 9: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tevbe 103 ve Enam 141 '
+    'ayet mealleri panosu."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Tevbe '
+    'Suresi, 103. Ayet:</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">«Onların mallarından, kendilerini temizleyip</text><text x="11.0" y="57.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">arındıracağın bir sadaka (zekât) '
+    'al...»</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="0.75"/><text x="11.0" '
+    'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">En’âm Suresi, '
+    '141. Ayet:</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">«...Ürün verdiğinde ürününden yiyin, hasat</text><text x="11.0" y="122.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">günü de hakkını (öşürünü) '
+    'verin...»</text></svg>',
+ 11: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Doğal sulama ve '
+     'masraflı sulamada öşür oranlarının karşılaştırılması."><rect x="4" y="3" width="342" height="62" rx="5" fill="#dcfce7" '
+     'stroke="#15803d" stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#0f6b45">Doğal Sulama (Yağmur)</text><text x="11.0" y="38.8" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sulama gideri ve emek az</text><text '
+     'x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Oran: '
+     'Onda bir (%10)</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#f3e8ff" stroke="#7c3aed" stroke-width="0.75"/><text '
+     'x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+     'fill="#7c3aed">Masraflı Sulama (Motor)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="500" fill="#0b2257">Elektrik, yakıt ve emek var</text><text x="11.0" y="122.2" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Oran: Yirmide bir (%5)</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = selim_bey_varlik_karti()
-    s[2]['gorsel'] = hayvan_zekat_kartlari()
-    s[5]['gorsel'] = toprak_urunleri_osur_panosu()
-    s[6]['gorsel'] = dort_komsu_nisap_karti()
-    s[7]['gorsel'] = nakit_ticaret_hesap_karti()
-    s[8]['gorsel'] = zekat_surec_akis_sema()
-    s[9]['gorsel'] = ayet_karsilastirma_panosu()
-    s[11]['gorsel'] = sulama_hikmet_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

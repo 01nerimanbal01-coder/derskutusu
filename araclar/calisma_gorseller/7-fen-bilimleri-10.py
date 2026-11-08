@@ -1,148 +1,150 @@
-"""7. sınıf Fen Bilimleri 10. hafta (Sindirim Sistemi: Fiziksel ve Kimyasal Sindirim, Sindirim Kanalı ve Yardımcı Organlar) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10-10.5 pt Noto Sans (K150 EK)."""
+"""7-fen-bilimleri-10 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=15):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.0, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def fiziksel_kimyasal_pano():
-    ic = kutu(6, 6, 170, 76, MAVI_A, MAVI)
-    ic += yazi(91, 22, 'Fiziksel (Mekanik) Sindirim', 10.0, MAVI)
-    ic += yazi(91, 44, '• Enzim KULLANILMAZ', 9.5, LAC, ince=True)
-    ic += yazi(91, 64, '• Diş, mide kası, safra sıvısı', 9.4, MAVI)
-
-    ic += kutu(184, 6, 170, 76, YES_A, YES)
-    ic += yazi(269, 22, 'Kimyasal Sindirim', 10.0, YES)
-    ic += yazi(269, 44, '• Su ve ENZİM kullanılır', 9.5, LAC, ince=True)
-    ic += yazi(269, 64, '• Ağız, mide ve ince bağırsak', 9.4, YES)
-    return svg(360, 88, ic, 'Fiziksel ve kimyasal sindirim karşılaştırma panosu.', 15)
-
-
-def besin_sindirim_kartlari():
-    kartlar = [
-        ('1. Karbonhidrat', 'Ağız -> İnce B.', MAVI, MAVI_A),
-        ('2. Protein', '? -> İnce B.', KIR, KIR_A),
-        ('3. Yağlar', '? -> ?', TUR, TUR_A),
-        ('4. Su / Vitamin', 'Sindirilmez', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 70, z, r)
-        ic += yazi(x + 41, 24, bas, 9.5, r)
-        ic += f'<line x1="{x + 8}" y1="32" x2="{x + 74}" y2="32" stroke="{r}" stroke-width="0.8"/>'
-        ic += yazi(x + 41, 54, alt, 9.2, LAC, ince=True)
-    return svg(360, 82, ic, 'Dört besin grubunun kimyasal sindirim kartları.', 14)
-
-
-def sindirim_kanali_klmn():
-    organlar = [
-        ('K · Yemek B.', 'İletim (Sindirim yok)', MAVI, MAVI_A),
-        ('L · Mide', 'Protein başlar', TUR, TUR_A),
-        ('M · İnce B.', 'Sindirim biter + Villus', YES, YES_A),
-        ('N · Kalın B.', 'Su/Mineral emilimi', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(organlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 72, z, r)
-        ic += yazi(x + 41, 24, bas, 9.6, r)
-        ic += yazi(x + 41, 52, alt, 9.0, LAC, ince=True)
-    return svg(360, 84, ic, 'Sindirim kanalında K, L, M ve N organlarının görevleri.', 14)
-
-
-def yardimci_organlar_xy():
-    ic = kutu(6, 6, 170, 76, TUR_A, TUR)
-    ic += yazi(91, 22, 'Karaciğer → X Salgısı', 10.0, TUR)
-    ic += yazi(91, 44, 'Enzim içermez, yağları', 9.4, LAC, ince=True)
-    ic += yazi(91, 64, 'damlacıklara ayırır (Fiziksel)', 9.3, TUR)
-
-    ic += kutu(184, 6, 170, 76, MOR_A, MOR)
-    ic += yazi(269, 22, 'Pankreas → Y Salgısı', 10.0, MOR)
-    ic += yazi(269, 44, 'Enzim içerir; karbonhidrat,', 9.4, LAC, ince=True)
-    ic += yazi(269, 64, 'protein ve yağı kimyasal sindirir', 9.3, MOR)
-    return svg(360, 88, ic, 'Karaciğerin X (safra) ve pankreasın Y (pankreas öz suyu) salgıları.', 15)
-
-
-def zeytinyagi_tup_deneyi():
-    ic = kutu(6, 6, 170, 74, MAVI_A, MAVI)
-    ic += yazi(91, 22, '1. Deney Tüpü', 10.0, MAVI)
-    ic += yazi(91, 43, '10 mL Zeytinyağı', 9.4, LAC, ince=True)
-    ic += yazi(91, 63, '+ Yalnız Pankreas Öz Suyu', 9.3, MAVI)
-
-    ic += kutu(184, 6, 170, 74, YES_A, YES)
-    ic += yazi(269, 22, '2. Deney Tüpü', 10.0, YES)
-    ic += yazi(269, 43, '10 mL Zeytinyağı + Safra', 9.4, LAC, ince=True)
-    ic += yazi(269, 63, '+ Pankreas Öz Suyu', 9.3, YES)
-    return svg(360, 86, ic, 'Zeytinyağı üzerine safra ve pankreas öz suyu etki deneyi.', 14)
-
-
-def sindirim_yolculuk_seridi():
-    adimlar = [
-        ('1. Ağız-Yutak', 'Çiğneme + Tükürük', MAVI, MAVI_A),
-        ('2. Yemek Borusu', 'Kaslarla İletim', CAM, CAM_A),
-        ('3. Mide', 'Mide Öz Suyu', TUR, TUR_A),
-        ('4. Bağırsaklar', 'Emilim ve Atım', YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(adimlar):
-        x = 6 + i * 88
-        ic += kutu(x, 6, 82, 70, z, r)
-        ic += yazi(x + 41, 24, bas, 9.5, r)
-        ic += yazi(x + 41, 52, alt, 9.1, LAC, ince=True)
-    return svg(360, 82, ic, 'Sindirim kanalında besinlerin izlediği dört aşamalı yol.', 14)
-
-
-def besin_degisim_grafik():
-    kartlar = [
-        (6, 'X Besini', 'Ağızda azalmaya başlar', 'İnce bağırsakta biter', MAVI, MAVI_A),
-        (124, 'Y Besini', 'Midede azalmaya başlar', 'İnce bağırsakta biter', KIR, KIR_A),
-        (242, 'Z Besini', 'İnce bağırsakta başlar', 'İnce bağırsakta biter', TUR, TUR_A),
-    ]
-    ic = ''
-    for x, bas, s1, s2, r, z in kartlar:
-        ic += kutu(x, 6, 112, 76, z, r)
-        ic += yazi(x + 56, 22, bas, 10.0, r)
-        ic += yazi(x + 56, 44, s1, 9.1, LAC, ince=True)
-        ic += yazi(x + 56, 64, s2, 9.1, r)
-    return svg(360, 88, ic, 'X, Y ve Z besinlerinin kimyasal sindirim başlangıç ve bitiş kartları.', 15)
-
-
-def ince_kalin_emilim_karti():
-    ic = kutu(6, 6, 170, 74, YES_A, YES)
-    ic += yazi(91, 22, 'İnce Bağırsakta Emilim', 10.0, YES)
-    ic += yazi(91, 43, '• Villus (tümür) çıkıntıları VAR', 9.3, LAC, ince=True)
-    ic += yazi(91, 63, '• Sindirilmiş besinler kana geçer', 9.2, YES)
-
-    ic += kutu(184, 6, 170, 74, MOR_A, MOR)
-    ic += yazi(269, 22, 'Kalın Bağırsakta Emilim', 10.0, MOR)
-    ic += yazi(269, 43, '• Villus çıkıntıları YOK (Sindirim yok)', 9.3, LAC, ince=True)
-    ic += yazi(269, 63, '• Kalan su, vitamin ve mineral emilir', 9.2, MOR)
-    return svg(360, 86, ic, 'İnce bağırsak ve kalın bağırsakta gerçekleşen emilim karşılaştırması.', 14)
+GORSELLER = {1: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fiziksel ve kimyasal '
+    'sindirim karşılaştırma panosu."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Fiziksel (Mekanik) Sindirim</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Enzim KULLANILMAZ</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">• Diş, mide kası, safra '
+    'sıvısı</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Kimyasal '
+    'Sindirim</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">• Su ve ENZİM kullanılır</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">• Ağız, mide ve ince bağırsak</text></svg>',
+ 2: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört besin grubunun '
+    'kimyasal sindirim kartları."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Karbonhidrat</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ağız → İnce B.</text><rect x="179" y="3" width="167" height="45" '
+    'rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Protein</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">? → İnce B.</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Yağlar</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">? → ?</text><rect '
+    'x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Su / '
+    'Vitamin</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sindirilmez</text></svg>',
+ 5: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sindirim kanalında K, L, '
+    'M ve N organları."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">K · '
+    'Yemek Borusu</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Yutak ile mide</text><text x="87.5" y="58.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">arasındaki kaslı</text><text x="87.5" y="76.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kanal</text><rect x="179" y="3" width="167" '
+    'height="82" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">L · Mide</text><text x="262.5" y="39.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Karın '
+    'boşluğunun</text><text x="262.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">sol üst kısmındaki</text><text x="262.5" y="76.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kese</text><rect x="4" y="89" width="167" height="82" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="107.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">M · İnce Bağırsak</text><text x="87.5" y="125.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mide ile kalın</text><text x="87.5" y="144.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bağırsak '
+    'arasındaki</text><text x="87.5" y="162.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">uzun kanal</text><rect x="179" y="89" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">N · Kalın Bağırsak</text><text x="262.5" y="125.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sindirim kanalının</text><text x="262.5" y="144.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">anüse açılan '
+    'son</text><text x="262.5" y="162.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">bölümü</text></svg>',
+ 6: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Karaciğerin X (safra) ve '
+    'pankreasın Y (pankreas öz suyu) salgıları."><rect x="4" y="3" width="342" height="62" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Karaciğer → X Salgısı</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Enzim içermez, yağları damlacıklara ayırır</text><text x="11.0" '
+    'y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">(Fiziksel)</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Pankreas → Y Salgısı</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Enzim içerir; karbonhidrat, protein ve yağı</text><text x="11.0" '
+    'y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kimyasal '
+    'sindirir</text></svg>',
+ 7: '<svg viewBox="0 0 350 88" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zeytinyağı üzerine safra '
+    've pankreas öz suyu etki deneyi."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Deney Tüpü</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">10 mL Zeytinyağı +</text><text x="87.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yalnız Pankreas Öz</text><text x="87.5" '
+    'y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Suyu</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2. Deney Tüpü</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">10 mL Zeytinyağı +</text><text x="262.5" y="58.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Safra + Pankreas '
+    'Öz</text><text x="262.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Suyu</text></svg>',
+ 8: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sindirim kanalında '
+    'besinlerin izlediği dört aşamalı yol."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Mide</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Mide Öz Suyu</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Ağız-Yutak</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çiğneme + Tükürük</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Bağırsaklar</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Emilim ve '
+    'Atım</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Yemek '
+    'Borusu</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kaslarla İletim</text></svg>',
+ 9: '<svg viewBox="0 0 350 124" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="X, Y ve Z besinlerinin '
+    'ağız, mide ve ince bağırsaktaki miktar değişimi sütun grafiği."><rect x="4" y="3" width="342" height="118" rx="5" fill="#f8fafc" '
+    'stroke="#94a3b8" stroke-width="0.75"/><line x1="24" y1="18" x2="24" y2="95" stroke="#334155" stroke-width="0.75"/><line x1="24" '
+    'y1="95" x2="340" y2="95" stroke="#334155" stroke-width="0.75"/><text x="72" y="16" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#1d4ed8">X Besini</text><rect x="34" y="53" width="20" height="42" rx="2" '
+    'fill="#93c5fd" stroke="#1d4ed8" stroke-width="0.75"/><text x="44" y="46" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#1d4ed8">35</text><text x="44" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">A</text><rect x="62" y="53" width="20" height="42" rx="2" '
+    'fill="#93c5fd" stroke="#1d4ed8" stroke-width="0.75"/><text x="72" y="46" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#1d4ed8">35</text><text x="72" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">M</text><rect x="90" y="83" width="20" height="12" rx="2" '
+    'fill="#93c5fd" stroke="#1d4ed8" stroke-width="0.75"/><text x="100" y="76" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#1d4ed8">10</text><text x="100" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İ</text><line x1="124" y1="18" x2="124" y2="95" stroke="#cbd5e1" '
+    'stroke-width="0.75" stroke-dasharray="3,2"/><text x="178" y="16" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#dc2626">Y Besini</text><rect x="140" y="41" width="20" height="54" rx="2" fill="#fca5a5" '
+    'stroke="#dc2626" stroke-width="0.75"/><text x="150" y="36" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#dc2626">50</text><text x="150" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">A</text><rect x="168" y="59" width="20" height="36" rx="2" '
+    'fill="#fca5a5" stroke="#dc2626" stroke-width="0.75"/><text x="178" y="52" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#dc2626">30</text><text x="178" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">M</text><rect x="196" y="83" width="20" height="12" rx="2" '
+    'fill="#fca5a5" stroke="#dc2626" stroke-width="0.75"/><text x="206" y="76" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#dc2626">10</text><text x="206" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İ</text><line x1="230" y1="18" x2="230" y2="95" stroke="#cbd5e1" '
+    'stroke-width="0.75" stroke-dasharray="3,2"/><text x="284" y="16" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Z Besini</text><rect x="246" y="41" width="20" height="54" rx="2" fill="#fde047" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="256" y="36" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">50</text><text x="256" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">A</text><rect x="274" y="41" width="20" height="54" rx="2" '
+    'fill="#fde047" stroke="#d97706" stroke-width="0.75"/><text x="284" y="36" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">50</text><text x="284" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">M</text><rect x="302" y="83" width="20" height="12" rx="2" '
+    'fill="#fde047" stroke="#d97706" stroke-width="0.75"/><text x="312" y="76" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">10</text><text x="312" y="110" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İ</text></svg>',
+ 11: '<svg viewBox="0 0 350 150" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İnce bağırsak ve kalın '
+     'bağırsak yapısal karşılaştırması."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e3f6ea" stroke="#12a150" '
+     'stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#12a150">İnce Bağırsak Yapısı</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Sindirim kanalının en uzun bölümüdür</text><text x="11.0" y="57.0" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• İç yüzeyinde villus '
+     '(tümür) çıkıntıları</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#0b2257">bulunur</text><rect x="4" y="86" width="342" height="62" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+     'stroke-width="0.75"/><text x="11.0" y="103.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#7c3aed">Kalın Bağırsak Yapısı</text><text x="11.0" y="121.8" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• İnce bağırsaktan sonra gelen son bölümdür</text><text x="11.0" '
+     'y="140.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• İç yüzeyinde '
+     'villus çıkıntıları bulunmaz</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = fiziksel_kimyasal_pano()
-    s[2]['gorsel'] = besin_sindirim_kartlari()
-    s[5]['gorsel'] = sindirim_kanali_klmn()
-    s[6]['gorsel'] = yardimci_organlar_xy()
-    s[7]['gorsel'] = zeytinyagi_tup_deneyi()
-    s[8]['gorsel'] = sindirim_yolculuk_seridi()
-    s[9]['gorsel'] = besin_degisim_grafik()
-    s[11]['gorsel'] = ince_kalin_emilim_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg
