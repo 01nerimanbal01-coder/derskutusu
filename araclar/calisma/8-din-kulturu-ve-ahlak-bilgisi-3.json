@@ -15,8 +15,7 @@
   "hatirla": [
     "İnsanın ilmi ve iradesi sınırlıdır; Allah’ın ilmi ve iradesi ise sonsuzdur, görünen âlemi ve görünmeyen âlemi (gayb) kuşatır.",
     "Cüzi irade insana verilen sınırlı tercih alanıdır; külli irade ise Allah’ın her şeyi kapsayan sınırsız dilemesidir.",
-    "İnsan akıl ve iradesiyle yolu seçer, Allah da seçilen davranışı yaratır; Allah’ın önceden bilmesi insanın tercihini zorlamaz.",
-    "Sorumluluk, yapılan ve yapılması gerekirken terk edilen işlerin hesabını vermektir; irade dışı durumlardan ise insan sorumlu tutulmaz."
+    "İnsan akıl ve iradesiyle yolu seçer, Allah da seçilen davranışı yaratır; Allah’ın önceden bilmesi insanın tercihini zorlamaz."
   ],
   "sorular": [
     {
@@ -35,14 +34,6 @@
         [
           "külli irade",
           "Evrendeki her durumu kuşatan Allah’ın sınırsız dilemesi"
-        ],
-        [
-          "sorumluluk",
-          "Kişinin kendi tercih ve davranışlarının sonuçlarını üstlenmesi"
-        ],
-        [
-          "hesap verme",
-          "Yapılan ve terk edilen işlerden dolayı sorgulanma"
         ]
       ]
     },
@@ -56,7 +47,8 @@
         "K: Sonsuzdur — L: Zamanla artar",
         "K: Sınırsızdır — L: Gözlemle sınırlı"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -78,10 +70,6 @@
         {
           "metin": "Kişi yaptığı işler kadar yapması gerekirken terk ettiği görevlerden de sorumludur.",
           "dogru": true
-        },
-        {
-          "metin": "İnsanın nerede dünyaya geleceği kendi cüzi iradesiyle yaptığı seçimlerdendir.",
-          "dogru": false
         }
       ]
     },
@@ -102,14 +90,6 @@
         {
           "metin": "Bakara suresi 286. ayete göre sorumluluğun sınırını kişinin ___ belirler.",
           "cevap": "gücü"
-        },
-        {
-          "metin": "Başarısızlığı kadere yüklemek sorumluluktan kaçmak için ___ olur.",
-          "cevap": "bahane"
-        },
-        {
-          "metin": "İnsanın iradesiyle yaptığı seçim onu mükâfata ya da ___ götürebilir.",
-          "cevap": "cezaya"
         }
       ],
       "fazla": [
@@ -126,25 +106,26 @@
         "2 hesap verme alanına girer.",
         "4 iradeyle üstlenilen görevdir."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki ayet kartlarının vurguladığı ilkeyi ve sorumluluğu yazarak tabloyu tamamlayınız.",
+      "soru": "Tablodaki ayet meallerinin vurguladığı temel ilkeyi ve insana hatırlattığı sorumluluğu yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Ayet Kartı",
+        "Ayet Meali",
         "Temel İlke",
         "Hatırlattığı Sorumluluk"
       ],
       "satirlar": [
         [
-          "1. Kart (İnsan 3)",
+          "İnsan 3: “… artık o isterse şükreden olur, isterse nankör.”",
           "Tercih özgürlüğü",
           "Gösterilen yoldan şükredici olanı seçmek"
         ],
         [
-          "2. Kart (Fussilet 46)",
+          "Fussilet 46: “Kim yararlı iş yaparsa kendi iyiliği için; kötülük işlerse kendi aleyhinedir.”",
           {
             "b": "Davranış-sonuç"
           },
@@ -153,7 +134,7 @@
           }
         ],
         [
-          "3. Kart (Bakara 286)",
+          "Bakara 286: “Allah hiçbir kimseyi, gücünün yetmediği bir şeyle yükümlü kılmaz…”",
           {
             "b": "Güçle sınırlılık"
           },
@@ -162,7 +143,7 @@
           }
         ],
         [
-          "4. Kart (İsra 15)",
+          "İsra 15: “… Hiç kimse başkasının günah yükünü üstüne almaz.”",
           {
             "b": "Bireysel sorumluluk"
           },
@@ -175,14 +156,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki şemaya göre “Allah ne seçeceğimi önceden bildiğine göre seçimim özgür değildir.” diyen birinin hatasını açıklayınız.",
+      "soru": "“Allah benim ne seçeceğimi sonsuz ilmiyle önceden bildiğine göre seçimim özgür değildir.” diyen bir kişinin yaptığı düşünce hatasını ilim ve cüzi irade kavramlarıyla açıklayınız.",
       "cevap": "Bilmek zorlamak değildir; Allah’ın önceden bilmesi insanın özgür seçimini etkilemez.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki akış şemasında özetlenen süreci mantıksal sırasına göre 1’den 5’e kadar numaralandırınız.",
+      "soru": "İnsanın iradeli seçim yapma ve sorumluluk üstlenme sürecine ait aşağıdaki aşamaları mantıksal sırasına göre 1’den 5’e kadar numaralandırınız.",
       "ogeler": [
         "Allah’ın insana akıl ve irade yeteneği vermesi",
         "Vahiy ve peygamberlerle doğru ile yanlış yolun gösterilmesi",
@@ -201,7 +182,8 @@
         "Arda, Mert ve Zeynep",
         "Mert, Zeynep ve Elif"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -213,12 +195,13 @@
         "Sorumluluk yalnız kişinin kendi elleriyle yaptığı yanlış davranışları kapsar.",
         "İnsan yaptığı işler kadar yapması gerekirken ihmal ettiği görevlerden de sorumludur."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görselde Beled suresi 10. ayet ve İnsan suresi 3. ayet birlikte şemalaştırılmıştır. Ayetlerde geçen “iki yolu göstermek” ve “o isterse” ifadeleri insanın kader karşısındaki konumunu nasıl açıklar?",
+      "soru": "Beled suresi 10. ayette “Ve ona iki yolu göstermedik mi?” ve İnsan suresi 3. ayette “Şüphesiz biz ona yolu gösterdik; artık o isterse şükreden olur, isterse nankör.” buyrulmaktadır. Ayetlerdeki “iki yolu göstermek” ve “o isterse” ifadeleri insanın kader karşısındaki konumunu nasıl açıklar?",
       "cevap": "Allah doğru ve yanlış yolu göstermiştir; seçimi insan kendi iradesiyle yapar.",
       "satir": 2
     },
@@ -263,7 +246,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki şemada sorumluluğun iki temel şartı ve sınırı gösterilmiştir. İnsanın ilmi ve iradesi sınırlı olduğu hâlde neden davranışlarından sorumlu tutulduğunu şemadaki kavramlarla açıklayınız.",
+      "soru": "İslam’da sorumluluğun iki temel şartı akıl ve cüzi iradedir; sorumluluğun sınırı ise kişinin gücü ve tercih alanıdır (Bakara suresi 286. ayet). Buna göre insanın ilmi ve iradesi sınırlı olduğu hâlde neden davranışlarından sorumlu tutulduğunu açıklayınız.",
       "cevap": "İnsana akıl ve cüzi irade verilmiştir; kişi gücü yettiği seçimlerinden sorumludur.",
       "satir": 2
     },

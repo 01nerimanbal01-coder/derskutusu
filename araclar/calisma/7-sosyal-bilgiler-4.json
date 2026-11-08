@@ -10,8 +10,7 @@
   "hatirla": [
     "Aile ve Sosyal Hizmetler Bakanlığı; Umut Evleri, gündüz bakım, Geçici ve Misafir Bakım ile özel bakım merkezleriyle yaşam kalitesini yükseltir.",
     "Kastamonu atlı terapi projesi, Fethiye engelsiz plajı, MEB “Eğitimde Engel Yok” çalışmaları ve Karabük evde bakım hizmeti fırsat eşitliği sağlar.",
-    "Sevgi (olduğu gibi kabul), şefkat (ihtiyaç anında destek) ve merhamet (zorluğu anlayıp duyarlı olma) toplumsal dayanışmayı güçlendirir.",
-    "Beyin eseri tekniğiyle eğitim, sağlık, ulaşım, istihdam ve sosyal yaşam alanlarında üretilen özgün fikirler proje taslağına dönüştürülür."
+    "Sevgi (olduğu gibi kabul), şefkat (ihtiyaç anında destek) ve merhamet (zorluğu anlayıp duyarlı olma) toplumsal dayanışmayı güçlendirir."
   ],
   "sorular": [
     {
@@ -24,12 +23,13 @@
         "Halk plajlarını tekerlekli sandalyeye uygun hâle getirerek denize erişimi kolaylaştırır.",
         "Okullarda hazırlanan sosyal sorumluluk projelerini puanlama anahtarıyla değerlendirir."
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "hatirla",
-      "soru": "Kartlardaki erişilebilirlik düzenlemelerinin hangi gereksinime yönelik olduğunu ve sağladığı kolaylığı tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki erişilebilirlik düzenlemelerinin hangi gereksinime yönelik olduğunu ve sağladığı kolaylığı tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Düzenleme",
         "Yönelik olduğu alan",
@@ -71,14 +71,15 @@
         "Fethiye’deki düzenlemeler bireylerin denizden yararlanmasını ve ailelerin vakit kazanmasını sağlar.",
         "Her üç çalışma da özel gereksinimli bireylerin yaşam kalitesini yükseltmeyi amaçlar."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Diyagramda Kastamonu’da yürütülen “Sen de Gel” atlı terapi projesinin iki yönlü etkisi gösterilmiştir. Uzman eğitmenler gözetimindeki bu terapinin çocukların fiziksel gelişimine sağladığı üç katkıyı yazınız.",
-      "cevap": "Atlı terapiye katılan çocuklarda kas gelişimi ilerler, denge sorunları azalır ve yürüme becerilerinde belirgin iyileşme görülür.",
-      "satir": 3
+      "soru": "Kastamonu’da özel gereksinimli çocuklar için uzman eğitmenler gözetiminde yürütülen “Sen de Gel” atlı terapi projesinin çocukların fiziksel gelişimine sağladığı üç katkıyı yazınız.",
+      "cevap": "Çocuklarda kas gelişimi ilerler, denge sorunları azalır ve yürüme becerileri belirgin gelişir.",
+      "satir": 2
     },
     {
       "tur": "dy",
@@ -100,10 +101,6 @@
         {
           "metin": "Beyin eseri tekniğinde seçilen özgün fikirler, projeye dönüştürülmek üzere ürün dosyasında saklanır.",
           "dogru": true
-        },
-        {
-          "metin": "Proje çalışmasında grubun koordinasyonunu okul müdürü doğrudan kendisi yürütür.",
-          "dogru": false
         }
       ]
     },
@@ -117,7 +114,8 @@
         "İstihdam",
         "Sosyal yaşama katılım"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "siralama",
@@ -133,7 +131,7 @@
     {
       "tur": "tablo",
       "duzey": "hatirla",
-      "soru": "Şemadaki değerlerin özel gereksinimli bireylere yaklaşımda taşıdığı anlamı tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen değerlerin özel gereksinimli bireylere yaklaşımda taşıdığı anlamı yazınız. İlk satır örnektir.",
       "basliklar": [
         "Değer",
         "Yaklaşımdaki anlamı"
@@ -167,21 +165,22 @@
         "Uygulama bölümündeki sonuç ve değerlendirme başlığında",
         "Projenin kimliği bölümündeki yeri, tarihi ve süresi başlığında"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
       "soru": "Millî Eğitim Bakanlığı Özel Eğitim ve Rehberlik Hizmetleri Genel Müdürlüğünün yürüttüğü “Eğitimde Engel Yok” çalışmalarıyla özel gereksinimli bireylere hangi kazanımların sağlanması amaçlanır?",
-      "cevap": "Sosyal gelişimlerinin desteklenmesi, topluma uyumlarının artması, üst öğrenime ve mesleklere hazırlanarak üretken bireyler olmaları amaçlanır.",
-      "satir": 3
+      "cevap": "Sosyal gelişim ve topluma uyumlarının artması, üst öğrenime ve mesleklere hazırlanmaları.",
+      "satir": 2
     },
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Kartlarda özetlenen “Evde ve Hastanede Eğitim” ile “Evde Bakım Hizmeti” uygulamalarının ortak yönünü ve birbirini nasıl tamamladığını fırsat eşitliği açısından değerlendiriniz.",
-      "cevap": "İkisi de evden çıkamayan bireylere hizmet götürür; biri eğitimi sürdürürken diğeri temiz ve güvenli yaşam ortamı sağlar.",
-      "satir": 3
+      "soru": "Okula gidemeyen öğrenciler için sunulan “Evde ve Hastanede Eğitim” ile temel yaşam ve temizlik desteği sağlayan “Evde Bakım Hizmeti” uygulamalarının ortak yönünü ve birbirini nasıl tamamladığını yazınız.",
+      "cevap": "İkisi de evden çıkamayana hizmet götürür; biri eğitimi, diğeri güvenli bakım ortamını sağlar.",
+      "satir": 2
     },
     {
       "tur": "eslestir",
@@ -199,14 +198,6 @@
         [
           "Bütüncül dereceli puanlama anahtarı",
           "Hazırlanan proje taslağının değerlendirilmesinde kullanılan ölçek"
-        ],
-        [
-          "Kısa mola merkezi",
-          "Fethiye’de ailelerin günlük işlerine vakit ayırmasını sağlayan merkez"
-        ],
-        [
-          "Proje yürütücüsü",
-          "Proje grubundaki üyeler arasında koordinasyonu sağlayan öğrenci"
         ]
       ]
     },
@@ -265,10 +256,6 @@
         {
           "metin": "Projenin uygulanması için okul idaresi veya ___ yöneticilerle görüşülür.",
           "cevap": "yerel"
-        },
-        {
-          "metin": "Sevgi, şefkat ve merhamet toplumda dayanışmayı ve ___ artırır.",
-          "cevap": "yardımlaşmayı"
         }
       ],
       "fazla": [

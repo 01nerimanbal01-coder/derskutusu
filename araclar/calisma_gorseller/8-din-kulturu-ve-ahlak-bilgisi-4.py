@@ -1,211 +1,82 @@
-"""8. sınıf DKAB 4. hafta (Kaderle İlgili Kavramlar: ömür, ecel, rızık, tevekkül, başarı, sağlık ve hastalık, veba olayı) çalışma kâğıdı görselleri (SVG; insan figürü yok K024/K048; görsel içi yazı 10-12.5 pt K150 EK)."""
+"""8-din-kulturu-ve-ahlak-bilgisi-4 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, GRI, GRI_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#9aa6bd', '#eef1f6'
-ALTIN, KAHVE, YESIL_K = '#c9a227', '#8a5a2b', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-YAZI_I = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=None):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=12, renk=LAC, hiza='middle', ek='', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {YAZI_I if ince else YAZI} fill="{renk}"{ek}>{metin}</text>'
-
-
-def rozet(x, y, metin, renk, r=11, boy=11.5):
-    return f'<circle cx="{x}" cy="{y}" r="{r}" fill="#fff" stroke="{renk}" stroke-width="2"/>' + yazi(x, y + boy * 0.36, metin, boy, renk)
-
-
-def kum_saati_sema():
-    ic = f'<rect x="6" y="6" width="356" height="128" rx="10" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.6"/>'
-    # Kum saati çizimi
-    ic += f'<rect x="26" y="18" width="68" height="8" rx="3" fill="{KAHVE}"/>'
-    ic += f'<rect x="26" y="114" width="68" height="8" rx="3" fill="{KAHVE}"/>'
-    ic += f'<path d="M32 26 L88 26 C88 54 63 66 61 70 C63 74 88 86 88 114 L32 114 C32 86 57 74 59 70 C57 66 32 54 32 26 Z" fill="#fff" stroke="{MAVI}" stroke-width="1.8"/>'
-    ic += f'<path d="M40 42 L80 42 C76 54 64 62 60 66 C56 62 44 54 40 42 Z" fill="{ALTIN}"/>'
-    ic += f'<path d="M36 112 L84 112 C80 98 70 88 60 82 C50 88 40 98 36 112 Z" fill="{ALTIN}"/>'
-    ic += f'<circle cx="60" cy="75" r="2.8" fill="{TUR}"/>'
-    # K ve L kutuları
-    ic += f'<rect x="108" y="18" width="242" height="48" rx="8" fill="#fff" stroke="{MAVI}" stroke-width="1.4"/>'
-    ic += rozet(126, 42, 'K', MAVI, 10, 11.5)
-    ic += yazi(144, 36, 'Kumların tamamı:', 11.5, MAVI, 'start')
-    ic += yazi(144, 54, 'Doğumdan ölüme yaşanan süre', 11, LAC, 'start', ince=True)
-    ic += f'<rect x="108" y="74" width="242" height="48" rx="8" fill="#fff" stroke="{TUR}" stroke-width="1.4"/>'
-    ic += rozet(126, 98, 'L', TUR, 10, 11.5)
-    ic += yazi(144, 92, 'Son kum tanesinin düştüğü an:', 11.5, TUR, 'start')
-    ic += yazi(144, 110, 'Yaşam süresinin bittiği an', 11, LAC, 'start', ince=True)
-    # Sağ kart: Ankebut 57
-    ic += f'<rect x="372" y="6" width="222" height="128" rx="10" fill="#fffbe6" stroke="{ALTIN}" stroke-width="1.6"/>'
-    ic += yazi(483, 28, 'Ankebut suresi 57. ayet', 12, KAHVE)
-    ic += yazi(483, 54, '“Her canlı ölümü tadacak', 11.5, LAC, ince=True)
-    ic += yazi(483, 74, 've sonunda dönüp', 11.5, LAC, ince=True)
-    ic += yazi(483, 94, 'huzurumuza geleceksiniz.”', 11.5, LAC, ince=True)
-    ic += yazi(483, 118, '(Tohum, ağaç, balina, yıldızlar)', 10.5, KAHVE, ince=True)
-    return svg(600, 140, ic, 'Kum saati benzetmesi: K kumların tamamı (doğumdan ölüme yaşanan süre), L son kum tanesinin düştüğü an (yaşam süresinin bittiği an) ve Ankebut suresi 57. ayet.', 16)
-
-
-def rizik_panosu():
-    ic = f'<rect x="6" y="6" width="286" height="122" rx="10" fill="{YES_A}" stroke="{YES}" stroke-width="1.6"/>'
-    ic += yazi(149, 25, 'Doğada Rızık İçin Çaba', 12, YESIL_K)
-    ic += yazi(20, 48, '- Kuşların uzak ülkelere göç etmesi', 11, LAC, 'start', ince=True)
-    ic += yazi(20, 68, '- Balinaların okyanusları aşması', 11, LAC, 'start', ince=True)
-    ic += yazi(20, 88, '- Arıların uzaktaki çiçekleri bulması', 11, LAC, 'start', ince=True)
-    ic += yazi(149, 114, 'Kaynak: Er-Rezzak olan Allah', 11, YESIL_K)
-
-    ic += f'<rect x="308" y="6" width="286" height="122" rx="10" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.6"/>'
-    ic += yazi(451, 25, 'İslam’da Kazanç İlkeleri', 12, TUR)
-    ic += f'<rect x="320" y="36" width="262" height="38" rx="6" fill="#fff" stroke="{YES}" stroke-width="1.3"/>'
-    ic += yazi(330, 52, 'Helal Yol:', 11, YESIL_K, 'start')
-    ic += yazi(392, 52, 'Alın teri ve emekle kazanmak', 11, LAC, 'start', ince=True)
-    ic += yazi(330, 68, '(Necm 39: İnsan çabasının sonucunu alır)', 10.5, YESIL_K, 'start', ince=True)
-    ic += f'<rect x="320" y="80" width="262" height="38" rx="6" fill="#fff" stroke="{KIR}" stroke-width="1.3"/>'
-    ic += yazi(330, 96, 'Uygun Olmayan:', 11, KIR, 'start')
-    ic += yazi(424, 96, 'Hırsızlık, şans oyunları,', 11, LAC, 'start', ince=True)
-    ic += yazi(330, 112, 'haksız kazanç, tembellik ve dilenmek', 10.5, KIR, 'start', ince=True)
-    return svg(600, 134, ic, 'Rızık panosu: solda doğada rızık için çaba örnekleri, sağda İslam’da helal kazanç ve uygun olmayan yollar.', 16)
-
-
-def ayet_hadis_kartlari():
-    kartlar = [
-        ('1. Kart · Necm 39–40', '“İnsan ancak çabasının sonucunu elde eder.', 'Çabasının karşılığı mutlaka görülecektir.”', MAVI, MAVI_A),
-        ('2. Kart · Nisa 71', '“Ey iman edenler! Tedbirinizi alın...”', '(Önce önlem, sonra Allah’a güven)', MOR, MOR_A),
-        ('3. Kart · Bakara 168', '“Yeryüzünde bulunan maddelerin helâl', 've temiz olanlarından yiyin...”', YES, YES_A),
-        ('4. Kart · Hadis (Ebu Davud)', '“Tedavi olunuz; çünkü Allah yarattığı', 'her hastalığın şifasını da yaratmıştır.”', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 298
-        y = 4 + (i // 2) * 66
-        ic += f'<rect x="{x}" y="{y}" width="286" height="58" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += f'<rect x="{x}" y="{y}" width="8" height="58" rx="4" fill="{renk}"/>'
-        ic += yazi(x + 18, y + 18, bas, 11.5, renk, 'start')
-        ic += yazi(x + 18, y + 36, s1, 11, LAC, 'start', ince=True)
-        ic += yazi(x + 18, y + 51, s2, 11, LAC, 'start', ince=True)
-    return svg(600, 136, ic, 'Dört ayet ve hadis kartı: 1. Necm 39-40, 2. Nisa 71, 3. Bakara 168, 4. Ebu Davud Tıb 1 hadisi.', 16)
-
-
-def hicret_tevekkul_sema():
-    ic = f'<rect x="8" y="8" width="272" height="104" rx="10" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.8"/>'
-    ic += rozet(28, 28, '1', MAVI, 11, 11.5)
-    ic += yazi(152, 29, '1. Aşama: Tedbir ve Görev', 12, MAVI)
-    ic += yazi(144, 56, 'Hicret yolculuğunda güvenlik için', 11.5, LAC, ince=True)
-    ic += yazi(144, 74, 'Mekke’nin güneyindeki', 11.5, LAC, ince=True)
-    ic += yazi(144, 92, 'Sevr Mağarası’na gidilmesi', 11.5, MAVI)
-
-    ic += f'<line x1="286" y1="60" x2="314" y2="60" stroke="{LAC}" stroke-width="2.2"/><path d="M309 55 l6 5 l-6 5" fill="none" stroke="{LAC}" stroke-width="2"/>'
-
-    ic += f'<rect x="320" y="8" width="272" height="104" rx="10" fill="{YES_A}" stroke="{YES}" stroke-width="1.8"/>'
-    ic += rozet(340, 28, '2', YES, 11, 11.5)
-    ic += yazi(464, 29, '2. Aşama: Tevbe suresi 40. ayet', 12, YESIL_K)
-    ic += yazi(456, 56, 'Endişelenen Hz. Ebu Bekir’e:', 11.5, LAC, ince=True)
-    ic += yazi(456, 74, '“Tasalanma! Allah bizimle', 11.5, YESIL_K)
-    ic += yazi(456, 92, 'beraberdir.” buyrulması', 11.5, YESIL_K)
-    return svg(600, 120, ic, 'Hicret yolculuğunda tevekkülün iki aşaması: 1. Sevr Mağarası tedbiri, 2. Tevbe suresi 40. ayetteki Allah’a güven.', 16)
-
-
-def veba_olayi_zinciri():
-    adlar = [
-        ('1. Adım', 'Serğ Köyü Haberi', MAVI, MAVI_A),
-        ('2. Adım', 'İstişare ve Karar', MOR, MOR_A),
-        ('3. Adım', 'Kaderden Kadere', TUR, TUR_A),
-        ('4. Adım', 'İki Yamaç Örneği', ALTIN, '#fffbe6'),
-        ('5. Adım', 'Hadis ve Dönüş', YES, YES_A),
-    ]
-    ic = ''
-    for i, (ust, alt, renk, arka) in enumerate(adlar):
-        x = 6 + i * 119
-        ic += f'<rect x="{x}" y="12" width="102" height="72" rx="12" fill="{arka}" stroke="{renk}" stroke-width="1.8"/>'
-        ic += yazi(x + 51, 38, ust, 11.5, renk)
-        ic += yazi(x + 51, 62, alt, 11, LAC)
-        if i < 4:
-            ic += f'<line x1="{x + 104}" y1="48" x2="{x + 117}" y2="48" stroke="{LAC}" stroke-width="2"/>'
-            ic += f'<path d="M{x + 113} 43 l5 5 l-5 5" fill="none" stroke="{LAC}" stroke-width="1.8"/>'
-    return svg(600, 96, ic, 'Veba olayının 5 halkalı akış şeması: Serğ Köyü haberi, istişare, kaderden kadere sözü, iki yamaç örneği, hadis ve Medine’ye dönüş.', 16)
-
-
-def basari_tutum_kartlari():
-    kartlar = [
-        ('Kaan', 'Düzenli antrenman yapıp yarışmayı kazandım; bu başarı Allah’ın lütfudur.', YES, YES_A),
-        ('Mert', 'Sınava hiç çalışmadım; düşük not almam tamamen kötü talihim yüzündendir.', KIR, '#fdeaea'),
-        ('Selin', 'İlk denememde hata yaptım ama vazgeçmedim; planlı çalışarak hedefime ulaştım.', MAVI, MAVI_A),
-        ('Duru', 'Yarışmada rakibimin hakkını çiğneyerek birinci oldum; gerçek başarı budur.', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (isim, metin, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 298
-        y = 6 + (i // 2) * 62
-        ic += f'<rect x="{x}" y="{y}" width="286" height="54" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 14, y + 20, isim + ':', 11.5, renk, 'start')
-        ic += yazi(x + 14, y + 36, metin[:46], 10.8, LAC, 'start', ince=True)
-        ic += yazi(x + 14, y + 49, metin[46:], 10.8, LAC, 'start', ince=True)
-    return svg(600, 130, ic, 'Dört öğrencinin (Kaan, Mert, Selin, Duru) başarı ve kader konusundaki tutum kartları.', 16)
-
-
-def bes_nimet_sema():
-    veriler = [
-        ('İhtiyarlık gelmeden', 'Gençlik', MAVI, MAVI_A),
-        ('Hastalık gelmeden', 'Sağlık', YES, YES_A),
-        ('Fakirlik gelmeden', '1 : ?', TUR, TUR_A),
-        ('İşler sıkışmadan', '2 : ?', MOR, MOR_A),
-        ('Ecel gelmeden', '3 : ?', ALTIN, '#fffbe6'),
-    ]
-    ic = yazi(300, 18, 'Hadis-i Şerif: “Beş şey gelmeden önce beş şeyin kıymetini biliniz.”', 11.5, KAHVE)
-    for i, (ust, alt, renk, arka) in enumerate(veriler):
-        x = 6 + i * 118
-        ic += f'<rect x="{x}" y="28" width="110" height="78" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 55, 48, ust, 10.2, LAC, ince=True)
-        ic += f'<line x1="{x + 14}" y1="58" x2="{x + 96}" y2="58" stroke="{renk}" stroke-width="1.2" stroke-dasharray="3 2"/>'
-        ic += yazi(x + 55, 84, alt, 11.5, renk)
-    return svg(600, 114, ic, 'Beş şeyin kıymetini bilme hadisi şeması: Gençlik, Sağlık ve 1, 2, 3 numaralı boşluklar.', 16)
-
-
-def iki_yamac_sema():
-    ic = f'<rect x="6" y="6" width="588" height="108" rx="10" fill="#fbf7ee" stroke="{ALTIN}" stroke-width="1.6"/>'
-    ic += yazi(300, 24, 'Hz. Ömer’in Vadi Benzetmesi: “Bir Kaderden Başka Bir Kadere”', 12, KAHVE)
-    # Sol: Verimli Yamaç
-    ic += f'<rect x="20" y="34" width="256" height="68" rx="8" fill="{YES_A}" stroke="{YES}" stroke-width="1.5"/>'
-    ic += f'<path d="M32 92 Q75 56 120 92 Z" fill="{YES}" opacity="0.35"/>'
-    ic += yazi(148, 54, '1. Seçenek: Verimli Yamaç', 11.5, YESIL_K)
-    ic += yazi(148, 72, 'Otu ve suyu bol alan', 11, LAC, ince=True)
-    ic += yazi(148, 90, '→ Allah’ın kaderi içindedir', 11, YESIL_K)
-    # Sağ: Kıraç Yamaç
-    ic += f'<rect x="324" y="34" width="256" height="68" rx="8" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.5"/>'
-    ic += f'<path d="M336 92 Q379 56 424 92 Z" fill="{KAHVE}" opacity="0.3"/>'
-    ic += yazi(452, 54, '2. Seçenek: Kıraç Yamaç', 11.5, TUR)
-    ic += yazi(452, 72, 'Kurak ve verimsiz alan', 11, LAC, ince=True)
-    ic += yazi(452, 90, '→ Allah’ın kaderi içindedir', 11, TUR)
-    return svg(600, 120, ic, 'Hz. Ömer’in verimli yamaç ve kıraç yamaç benzetmesi: her iki seçim de Allah’ın kaderi içindedir.', 16)
-
-
-def saglik_kalkan_kart():
-    ic = f'<rect x="6" y="6" width="286" height="106" rx="10" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.6"/>'
-    ic += yazi(149, 25, 'Hastalanmadan Önce Önlem', 12, MAVI)
-    ic += yazi(22, 47, '- Helal ve temiz gıdalarla beslenmek (Bakara 168)', 10.8, LAC, 'start', ince=True)
-    ic += yazi(22, 65, '- Elbiseyi ve çevreyi temiz tutmak (Müddessir 4–5)', 10.8, LAC, 'start', ince=True)
-    ic += yazi(22, 83, '- Uyku düzeni, dinlenme ve harekete özen göstermek', 10.8, LAC, 'start', ince=True)
-    ic += yazi(149, 102, 'Beden ve ruh sağlığını koruma görevi', 10.8, MAVI)
-
-    ic += f'<rect x="308" y="6" width="286" height="106" rx="10" fill="{YES_A}" stroke="{YES}" stroke-width="1.6"/>'
-    ic += yazi(451, 25, 'Hastalanınca Yapılacaklar', 12, YESIL_K)
-    ic += yazi(324, 47, '- Doktora başvurup tedavi olmak', 10.8, LAC, 'start', ince=True)
-    ic += yazi(324, 65, '- İlaçları ve iyileşme yollarını takip etmek', 10.8, LAC, 'start', ince=True)
-    ic += yazi(324, 83, '- Şifayı Allah’tan isteyip dua etmek', 10.8, LAC, 'start', ince=True)
-    ic += yazi(451, 102, 'Hadis: “Her hastalığın şifası yaratılmıştır.”', 10.8, YESIL_K)
-    return svg(600, 118, ic, 'Sağlığı koruma önlemleri ve hastalanınca yapılacak görevler kartı.', 16)
+GORSELLER = {1: '<svg viewBox="0 0 350 197" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kum saati benzetmesiyle '
+    'K ve L kavramları ve Ankebut suresi 57. ayet şeması."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">K Kavramı (Kumların Tamamı)</text><text x="11.0" y="38.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Canlının doğumundan ölümüne kadar '
+    'geçen</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">yaşam süresi</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">L Kavramı (Son Kum Tanesinin Düştüğü An)</text><text x="11.0" y="103.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Verilen yaşam süresinin sona erdiği, '
+    'dünya</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">hayatının bittiği an</text><rect x="4" y="133" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="150.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Ankebut Suresi 57. Ayet</text><text x="11.0" y="168.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">“Her canlı ölümü tadacak ve sonunda dönüp</text><text x="11.0" '
+    'y="187.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">huzurumuza '
+    'geleceksiniz.”</text></svg>',
+ 4: '<svg viewBox="0 0 350 224" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rızık panosu: solda '
+    'doğada rızık için çaba örnekleri, sağda İslam’da helal kazanç ve uygun olmayan yollar."><rect x="4" y="3" width="342" height="99" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="20.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Doğada Rızık İçin Çaba</text><text x="11.0" y="38.9" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">- Kuşların uzak ülkelere '
+    'göç etmesi</text><text x="11.0" y="57.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">- Balinaların okyanusları aşması</text><text x="11.0" y="75.7" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">- Arıların uzaktaki çiçekleri bulması</text><text x="11.0" y="94.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Kaynak: Er-Rezzak olan '
+    'Allah</text><rect x="4" y="105" width="342" height="117" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="122.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">İslam’da Kazanç '
+    'İlkeleri</text><text x="11.0" y="140.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0f6b45">Helal Yol: Alın teri ve emekle kazanmak</text><text x="11.0" y="159.1" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0f6b45">(Necm 39: İnsan çabasının sonucunu alır)</text><text x="11.0" '
+    'y="177.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Uygun '
+    'Olmayan:</text><text x="11.0" y="195.9" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Hırsızlık, şans oyunları, haksız kazanç,</text><text x="11.0" y="214.3" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">tembellik ve dilenmek</text></svg>',
+ 8: '<svg viewBox="0 0 350 280" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört öğrencinin çalışma '
+    've başarı konusundaki tutumları."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Kaan</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">“Düzenli antrenman yapıp yarışmayı</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kazandım; bu başarı '
+    'Allah’ın lütfudur.”</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Mert</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">“Sınava hiç çalışmadım; düşük not almam</text><text x="11.0" y="122.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">tamamen kötü talihim '
+    'yüzündendir.”</text><rect x="4" y="133" width="342" height="80" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="150.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">Selin</text><text x="11.0" y="168.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">“İlk denememde hata yaptım ama</text><text x="11.0" y="187.0" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">vazgeçmedim; planlı çalışarak hedefime</text><text x="11.0" '
+    'y="205.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ulaştım.”</text><rect x="4" y="216" width="342" height="62" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="233.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Duru</text><text x="11.0" y="251.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">“Yarışmada rakibimin hakkını çiğneyerek</text><text x="11.0" y="270.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">birinci oldum; gerçek '
+    'başarı budur.”</text></svg>',
+ 9: '<svg viewBox="0 0 350 168" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Beş şey gelmeden önce '
+    'beş şeyin kıymetini bilmeyi öğütleyen hadis şeması."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Hadis-i Şerif: “Beş şey gelmeden önce beş</text><text x="11.0" y="38.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">şeyin kıymetini biliniz.”</text><text '
+    'x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İhtiyarlık gelmeden önce → Gençlik | Hastalık</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">gelmeden önce → Sağlık</text><rect x="4" y="86" width="342" '
+    'height="80" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="103.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Tamamlanacak Boşluklar</text><text x="11.0" '
+    'y="121.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Fakirlik '
+    'gelmeden önce → [ 1 : ? ] | İşler</text><text x="11.0" y="140.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">sıkışmadan önce → [ 2 : ? ] | Ecel gelmeden</text><text x="11.0" y="158.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">önce → [ 3 : ? '
+    ']</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = kum_saati_sema()
-    s[4]['gorsel'] = rizik_panosu()
-    s[5]['gorsel'] = ayet_hadis_kartlari()
-    s[6]['gorsel'] = hicret_tevekkul_sema()
-    s[7]['gorsel'] = veba_olayi_zinciri()
-    s[8]['gorsel'] = basari_tutum_kartlari()
-    s[9]['gorsel'] = bes_nimet_sema()
-    s[10]['gorsel'] = iki_yamac_sema()
-    s[12]['gorsel'] = saglik_kalkan_kart()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

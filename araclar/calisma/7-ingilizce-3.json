@@ -11,8 +11,7 @@
   "hatirla": [
     "Okuma metinlerinde bilgi metinle uyuşuyorsa T (True), çelişiyorsa F (False), metinde hiç geçmiyorsa NI (No Information) seçilir; bilgi olmaması ifadenin yanlış olduğu anlamına gelmez.",
     "Kişilik özellikleri davranışlardan anlaşılır: düzenli çalışan hardworking, eşyaları sık düşüren clumsy, çok konuşan talkative, çekingen olan shy, okumayı çok seven a real bookworm olarak nitelendirilir.",
-    "Sayısal verilerle yaş karşılaştırılırken older ve younger, kütle karşılaştırılırken heavier kullanılır; miktar ve özellik karşılaştırmalarında fazlalık için more, azlık için less getirilir.",
-    "Neden–sonuç cümlelerinde because bağlacından sonra neden, so bağlacından sonra sonuç gelir; dış görünüş tek cümlede birleştirilirken boy ve yapı sıfatlarına saç ve göz ayrıntıları with ile eklenir."
+    "Sayısal verilerle yaş karşılaştırılırken older ve younger, kütle karşılaştırılırken heavier kullanılır; miktar ve özellik karşılaştırmalarında fazlalık için more, azlık için less getirilir."
   ],
   "sorular": [
     {
@@ -31,14 +30,6 @@
         [
           "get on well with",
           "Başkalarıyla iyi anlaşmak, uyumlu geçinmek"
-        ],
-        [
-          "skin and bones",
-          "Çok zayıf görünmek anlamında kullanılan deyim"
-        ],
-        [
-          "be good at",
-          "Bir derste, sporda veya etkinlikte başarılı olmak"
         ]
       ]
     },
@@ -52,12 +43,13 @@
         "I: NI — II: F — III: T",
         "I: T — II: NI — III: F"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
       "duzey": "uygula",
-      "soru": "Görseldeki yaş ve kütle çizelgesine göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
+      "soru": "Bora (15 years old, 62 kg), Sude (13 years old, 49 kg) ve Kaan’ın (11 years old, 54 kg) yaş ve kütle bilgilerine göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
       "ifadeler": [
         {
           "metin": "Bora is older than Sude and Kaan.",
@@ -74,10 +66,6 @@
         {
           "metin": "Sude is younger than Bora and lighter than him.",
           "dogru": true
-        },
-        {
-          "metin": "Kaan is older than Bora because he weighs 54 kg.",
-          "dogru": false
         }
       ]
     },
@@ -98,10 +86,6 @@
         {
           "metin": "My sister is tall and slim ___ long wavy brown hair.",
           "cevap": "with"
-        },
-        {
-          "metin": "Efe has 15 TL and Can has 40 TL, so Efe has ___ money.",
-          "cevap": "less"
         }
       ],
       "fazla": [
@@ -118,39 +102,40 @@
         "Sinan is punctual because he arrives at school on time every morning.",
         "Sinan arrives at school on time, because he is never punctual."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "hatirla",
-      "soru": "Görseldeki davranış kartlarında tanıtılan kişilere uygun İngilizce kişilik sözcüklerini tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tabloda davranışları anlatılan kişilere uygun İngilizce kişilik sözcüklerini (hardworking, talkative, bookworm, shy) tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
-        "Davranış Kartı",
+        "Öğrenci",
         "Gözlenen Davranış",
         "Uygun Sözcük"
       ],
       "satirlar": [
         [
-          "1. Kart (Emre)",
+          "1. Emre",
           "Derslerine her akşam düzenli çalışır, ödevlerini aksatmaz.",
           "hardworking"
         ],
         [
-          "2. Kart (Melis)",
+          "2. Melis",
           "Arkadaşlarıyla sürekli konuşur, uzun sohbetleri sever.",
           {
             "b": "talkative"
           }
         ],
         [
-          "3. Kart (Ozan)",
+          "3. Ozan",
           "Boş zamanlarının tamamını kütüphanede kitap okuyarak geçirir.",
           {
             "b": "bookworm"
           }
         ],
         [
-          "4. Kart (Duru)",
+          "4. Duru",
           "Kalabalık önünde konuşmaktan çekinir, evde müzik dinlemeyi seçer.",
           {
             "b": "shy"
@@ -161,7 +146,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki bilgi kartında Zeynep’in yaşı ve kütlesi verilmiştir. “1) She is 14.” ve “2) She is 46 kg.” cevaplarını almak için sorulması gereken iki İngilizce soruyu yazınız.",
+      "soru": "Zeynep’in yaşı ve kütlesi hakkında “1) She is 14.” ve “2) She is 46 kg.” cevaplarını almak için sorulması gereken iki İngilizce soruyu yazınız.",
       "cevap": "1) How old is Zeynep? 2) How much does Zeynep weigh?",
       "satir": 2
     },
@@ -186,7 +171,8 @@
         "Nil is younger than Ece, and she has less friends than Mert.",
         "Yaman is heavier than Mert because he is twelve years old."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -198,12 +184,13 @@
         "III. fiş (honest)",
         "IV. fiş (punctual)"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki kartta verilen “Leo is tall and slim.” ve “He has short straight brown hair and hazel eyes.” cümlelerini “with” kullanarak tek bir İngilizce cümlede birleştiriniz.",
+      "soru": "“Leo is tall and slim.” ve “He has short straight brown hair and hazel eyes.” cümlelerini “with” kullanarak tek bir İngilizce cümlede birleştiriniz.",
       "cevap": "Leo is tall and slim with short straight brown hair and hazel eyes.",
       "satir": 2
     },
@@ -238,14 +225,14 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki Aylin ve Damla kartlarını inceleyiniz. İki öğrenciyi yaş (older veya younger), kütle (heavier) ve kişilik neden–sonuç (because veya so) bakımından karşılaştıran cümleler yazınız.",
+      "soru": "Aylin (13 years old, 50 kg, 12 friends - outgoing) ile Damla’yı (12 years old, 44 kg, 3 friends - shy) yaş (older/younger), kütle (heavier) ve kişilik neden–sonuç (because/so) bakımından karşılaştıran İngilizce cümleler yazınız.",
       "cevap": "Aylin is older and heavier than Damla. She is outgoing because she has 12 friends.",
       "satir": 2
     },
     {
       "tur": "coktan",
       "duzey": "uygula",
-      "soru": "“Cem gets on well with his classmates and helps everyone, ___ all the students in the class are fond of him.” cümlesinde boş bırakılan yere neden–sonuç akışına göre aşağıdakilerden hangisi getirilmelidir?",
+      "soru": "“Cem gets on well with his classmates and helps everyone, ___ all the students in the class are fond of him.” cümlesinde boş bırakılan yere neden–sonuç ilişkisine göre aşağıdakilerden hangisi getirilmelidir?",
       "secenekler": [
         "because",
         "so",

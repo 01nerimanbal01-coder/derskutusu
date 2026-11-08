@@ -35,10 +35,6 @@
         [
           "{ar:الطَّالِبُ عَازِمٌ عَلَى النَّجَاحِ}",
           "Öğrenci başarmaya kararlıdır."
-        ],
-        [
-          "{ar:الْمُسْلِمُ يَتَوَكَّلُ عَلَى اللّٰهِ}",
-          "Müslüman Allah’a tevekkül eder."
         ]
       ]
     },
@@ -58,21 +54,20 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki cümle kartlarının yapısını (Düz Cümle / Soru Cümlesi) ve Türkçe anlamını yazarak tabloyu tamamlayınız.",
+      "soru": "Tablodaki Arapça cümlelerin yapısını (Düz cümle / Soru cümlesi) ve Türkçe anlamını yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Arapça Cümle Kartı",
+        "Arapça Cümle",
         "Cümle Yapısı",
         "Türkçe Anlamı"
       ],
       "satirlar": [
         [
-          "1. Kart ({ar:أَنْتَ تُحِبُّ مِهْنَةَ التَّدْرِيسِ})",
+          "1. Cümle ({ar:أَنْتَ تُحِبُّ مِهْنَةَ التَّدْرِيسِ})",
           "Düz cümle",
           "Sen öğretmenlik mesleğini seviyorsun."
         ],
         [
-          "2. Kart ({ar:هَلْ تُحِبُّ مِهْنَةَ التَّدْرِيسِ؟})",
+          "2. Cümle ({ar:هَلْ تُحِبُّ مِهْنَةَ التَّدْرِيسِ؟})",
           {
             "b": "Soru cümlesi"
           },
@@ -81,7 +76,7 @@
           }
         ],
         [
-          "3. Kart ({ar:مَاذَا سَتُصْبِحُ فِي الْمُسْتَقْبَلِ؟})",
+          "3. Cümle ({ar:مَاذَا سَتُصْبِحُ فِي الْمُسْتَقْبَلِ؟})",
           {
             "b": "Soru cümlesi"
           },
@@ -124,10 +119,6 @@
         {
           "metin": "«{ar:هٰذِهِ أُخْتِي، هِيَ مُدَرِّسَةٌ}» cümlesinde işaret zamiri, kişi zamiri ve meslek adı dişil uyumludur.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:أَمْ}» bağlacı yalnızca olumlu düz cümlelerde iki nesneyi birleştirmek için kullanılır.",
-          "dogru": false
         }
       ]
     },
@@ -161,10 +152,6 @@
         {
           "metin": "Bir kız öğrenciye gelecekte ne olacağını sorarken «{ar:مَاذَا} ___ {ar:فِي الْمُسْتَقْبَلِ يَا مَرْيَمُ؟}» denir.",
           "cevap": "{ar:سَتُصْبِحِينَ}"
-        },
-        {
-          "metin": "Bir kişinin nerede çalıştığını öğrenmek için «___ {ar:يَعْمَلُ وَالِدُكَ؟}» soru edatı kullanılır.",
-          "cevap": "{ar:أَيْنَ}"
         }
       ],
       "fazla": [
@@ -174,16 +161,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki iki tanıtım kartında birinci cümlede «{ar:هٰذَا ... هُوَ}», ikinci cümlede ise «{ar:هٰذِهِ ... هِيَ}» kullanılmasının sebebini kısaca yazınız.",
-      "cevap": "1. karttaki baba eril olduğu için eril, 2. karttaki anne dişil olduğu için dişil zamir seçilmiştir.",
+      "soru": "Birinci cümlede «{ar:هٰذَا أَبِي، هُوَ شُرْطِيٌّ}» («{ar:هٰذَا ... هُوَ}»), ikinci cümlede ise «{ar:هٰذِهِ أُمِّي، هِيَ مُمَرِّضَةٌ}» («{ar:هٰذِهِ ... هِيَ}») kullanılmasının sebebini kısaca yazınız.",
+      "cevap": "1. cümledeki baba ({ar:أَبِي}) eril, 2. cümledeki anne ({ar:أُمِّي}) dişil olduğu içindir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Ahmet’in kendisini, ailesini ve gelecek hedefini tanıttığı vlog konuşmasını mantıksal akışına göre 1’den 4’e kadar sıralayınız.",
+      "soru": "Ahmet’in kendisini, ailesini ve gelecek hedefini tanıttığı vlog konuşmasını anlam sırasına göre 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "{ar:مَرْحَبًا، اِسْمِي أَحْمَدُ وَأَنَا طَالِبٌ فِي الصَّفِّ السَّابِعِ.}",
         "{ar:أَبِي شُرْطِيٌّ وَأُمِّي مُمَرِّضَةٌ فِي الْمُسْتَشْفَى.}",
@@ -253,8 +238,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki ipucu kartlarını kullanarak ağabeyinizin mühendis olduğunu ve kendinizin gelecekte doktor veya eczacı olacağınızı anlatan Arapça cümleyi yazınız.",
+      "soru": "«{ar:أَخِي مُهَنْدِسٌ}», «{ar:سَأَكُونُ}» ve «{ar:طَبِيبًا أَوْ صَيْدَلِيًّا}» ifadelerini kullanarak ağabeyinizin mühendis olduğunu ve kendinizin gelecekte doktor veya eczacı olacağınızı anlatan Arapça cümleyi yazınız.",
       "cevap": "{ar:أَخِي مُهَنْدِسٌ، وَأَنَا سَأَكُونُ طَبِيبًا أَوْ صَيْدَلِيًّا.}",
       "satir": 2
     }

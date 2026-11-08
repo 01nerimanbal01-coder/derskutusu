@@ -34,10 +34,6 @@
         [
           "{ar:اِعْبُرِ الطَّرِيقَ}",
           "Yoldan karşıya geç"
-        ],
-        [
-          "{ar:وَسَطُ الأَنَاضُولِ}",
-          "İç Anadolu Bölgesi"
         ]
       ]
     },
@@ -57,21 +53,20 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Saat kartlarındaki Arapça zaman ifadelerinin dijital saat karşılığını ve Türkçe okunuşunu yazarak tabloyu tamamlayınız.",
+      "soru": "Tablodaki Arapça zaman ifadelerinin dijital saat karşılığını ve Türkçe okunuşunu yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Saat Kartı",
+        "Arapça Saat İfadesi",
         "Dijital Saat",
         "Türkçe Anlamı"
       ],
       "satirlar": [
         [
-          "1. Kart ({ar:السَّاعَةُ الرَّابِعَةُ وَالنِّصْفُ})",
+          "1. İfade ({ar:السَّاعَةُ الرَّابِعَةُ وَالنِّصْفُ})",
           "04.30",
           "Saat dört buçuk"
         ],
         [
-          "2. Kart ({ar:السَّاعَةُ السَّادِسَةُ وَالرُّبْعُ})",
+          "2. İfade ({ar:السَّاعَةُ السَّادِسَةُ وَالرُّبْعُ})",
           {
             "b": "06.15"
           },
@@ -80,7 +75,7 @@
           }
         ],
         [
-          "3. Kart ({ar:السَّاعَةُ السَّادِسَةُ إِلَّا رُبْعًا})",
+          "3. İfade ({ar:السَّاعَةُ السَّادِسَةُ إِلَّا رُبْعًا})",
           {
             "b": "05.45"
           },
@@ -123,10 +118,6 @@
         {
           "metin": "«{ar:إِسْطَنْبُولُ مَدِينَةٌ جَمِيلَةٌ وَتَارِيخِيَّةٌ}» cümlesinde «{ar:مَدِينَةٌ}» dişil olduğu için sıfatlar da dişil gelmiştir.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:لِأَنَّ}» bağlacından sonra sonuç cümlesi, «{ar:لِذٰلِكَ}» bağlacından sonra ise sebep cümlesi gelir.",
-          "dogru": false
         }
       ]
     },
@@ -160,10 +151,6 @@
         {
           "metin": "Tiyatro oyununun hangi saatte başlayacağını sormak için «___ {ar:تَبْدَأُ الْمَسْرَحِيَّةُ؟}» sorusu yöneltilir.",
           "cevap": "{ar:مَتَى}"
-        },
-        {
-          "metin": "«{ar:الْمَسْرَحُ بَعِيدٌ} ___ {ar:الْمَسْرَحِيَّةَ جَمِيلَةٌ}» (Tiyatro uzaktır fakat oyun güzeldir) cümlesinde karşıtlık bağlacı yer alır.",
-          "cevap": "{ar:لٰكِنَّ}"
         }
       ],
       "fazla": [
@@ -173,15 +160,13 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Şehir tanıtım kartındaki «{ar:تَقَعُ مَدِينَةُ أَنْقَرَةَ فِي مِنْطَقَةِ وَسَطِ الأَنَاضُولِ}» cümlesinde geçen «{ar:تَقَعُ}» fiilinin işlevini ve cümlenin Türkçe anlamını yazınız.",
-      "cevap": "Fiil bir şehrin coğrafi konumunu bildirir; cümle ‘Ankara İç Anadolu Bölgesi’nde yer alır.’ demektir.",
+      "soru": "«{ar:تَقَعُ مَدِينَةُ أَنْقَرَةَ فِي مِنْطَقَةِ وَسَطِ الأَنَاضُولِ}» cümlesinde geçen «{ar:تَقَعُ}» fiilinin işlevini ve cümlenin Türkçe anlamını yazınız.",
+      "cevap": "Şehrin coğrafi konumunu bildirir; ‘Ankara İç Anadolu Bölgesi’nde yer alır.’ demektir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Tiyatro salonuna ulaşım ve oyunu izleme sürecini anlatan aşağıdaki Arapça cümleleri oluş sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:سَأَلَ أَحْمَدُ: كَيْفَ أَذْهَبُ إِلَى صَالَةِ الْمَسْرَحِ؟}",
@@ -252,10 +237,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Etkinlik planı kartındaki ipuçlarından yararlanarak tiyatroyu neden sevdiğinizi ve oyunun saat kaçta başlayacağını anlatan Arapça bir cümle yazınız.",
-      "cevap": "{ar:أُحِبُّ الْمَسْرَحَ لِأَنَّهُ مُمْتِعٌ، وَتَبْدَأُ الْمَسْرَحِيَّةُ فِي الرَّابِعَةِ وَالنِّصْفِ.}",
-      "satir": 3
+      "soru": "«{ar:أُحِبُّ الْمَسْرَحَ}», «{ar:لِأَنَّهُ مُمْتِعٌ}» ve «{ar:تَبْدَأُ الْمَسْرَحِيَّةُ فِي الرَّابِعَةِ وَالنِّصْفِ}» ifadelerinden yararlanarak tiyatroyu neden sevdiğinizi ve oyunun saat kaçta başlayacağını anlatan Arapça bir cümle yazınız.",
+      "cevap": "{ar:أُحِبُّ الْمَسْرَحَ لِأَنَّهُ مُمْتِعٌ، وَتَبْدَأُ فِي الرَّابِعَةِ وَالنِّصْفِ.}",
+      "satir": 2
     }
   ]
 }

@@ -10,8 +10,7 @@
   "hatirla": [
     "Güneş küçük boy bir yıldızdır (Güneş < Sirius < Pollux < Arcturus < Aldebaran < Rigel); yıldız kayması gök taşlarının atmosferde yanmasıdır.",
     "En sıcak yıldızlar mavi-beyaz, orta sıcaklıktakiler sarı-turuncu (Güneş), soğuk yıldızlar ise kırmızı görünür.",
-    "Işık yılı, ışığın boşlukta 1 yılda aldığı yoldur (9,46 trilyon km); en yakın yıldız Proxima Centauri 4,24 ışık yılı uzaktadır.",
-    "Büyükayı ile Kutup Yıldızı (kuzey) bulunur; Güneş sistemi Samanyolu’nun Avcı kolundadır ve en yakın galaksi Andromeda’dır."
+    "Işık yılı, ışığın boşlukta 1 yılda aldığı yoldur (9,46 trilyon km); en yakın yıldız Proxima Centauri 4,24 ışık yılı uzaktadır."
   ],
   "sorular": [
     {
@@ -30,14 +29,6 @@
         [
           "Polaris",
           "Büyükayı yardımıyla bulunan ve kuzey yönünü gösteren Kutup Yıldızı"
-        ],
-        [
-          "gök ada",
-          "Yıldız, gezegen ve bulutsuları bir arada barındıran galaksi sistemi"
-        ],
-        [
-          "Edwin Hubble",
-          "Samanyolu dışında başka galaksilerin varlığını keşfeden bilim insanı"
         ]
       ]
     },
@@ -51,7 +42,8 @@
         "R: Pollux — T: Sirius",
         "R: Arcturus — T: Güneş"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -73,14 +65,6 @@
         {
           "metin": "Büyükayı takımyıldızından yararlanılarak bulunan Kutup Yıldızı daima güney yönünü gösterir.",
           "dogru": false
-        },
-        {
-          "metin": "Güneş sistemi, Samanyolu galaksisinin sarmal kollarından biri olan Avcı (Orion) kolundadır.",
-          "dogru": true
-        },
-        {
-          "metin": "Andromeda galaksisinin çapı, Samanyolu galaksisinin çapının yaklaşık yarısı kadardır.",
-          "dogru": false
         }
       ]
     },
@@ -101,14 +85,6 @@
         {
           "metin": "Büyükayı’nın uç yıldızları arasındaki uzaklığın ___ katı ilerisinde Kutup Yıldızı bulunur.",
           "cevap": "beş"
-        },
-        {
-          "metin": "Samanyolu galaksisi ile komşusu Andromeda ___ yapıdadır.",
-          "cevap": "sarmal"
-        },
-        {
-          "metin": "Işık boşlukta saatte yaklaşık 1,08 ___ kilometre yol alır.",
-          "cevap": "milyar"
         }
       ],
       "fazla": [
@@ -125,25 +101,26 @@
         "Yıldızların yüzey sıcaklıkları büyükten küçüğe X > Y > Z şeklinde sıralanır.",
         "Z kartındaki yıldız, yeni doğmuş çok sıcak ve genç bir yıldızı gösterir."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki dört bilgi kartında verilen gök bilimi örneklerinin hangi kavrama ait olduğunu ve temel özelliğini yazarak tabloyu tamamlayınız.",
+      "soru": "Tabloda verilen gök bilimi örneklerinin hangi kavrama ait olduğunu ve temel özelliğini yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Bilgi Kartı",
+        "Gök Bilimi Örneği",
         "Gök Bilimi Kavramı",
         "Temel Özelliği"
       ],
       "satirlar": [
         [
-          "1. Kart (Aldebaran, Rigel)",
+          "1. Örnek (Aldebaran, Rigel)",
           "Yıldız",
           "Güneş’ten büyük ısı ve ışık kaynaklarıdır."
         ],
         [
-          "2. Kart (Avcı, Başak)",
+          "2. Örnek (Avcı, Başak)",
           {
             "b": "Takımyıldız"
           },
@@ -152,7 +129,7 @@
           }
         ],
         [
-          "3. Kart (Samanyolu)",
+          "3. Örnek (Samanyolu)",
           {
             "b": "Galaksi (Gök ada)"
           },
@@ -161,7 +138,7 @@
           }
         ],
         [
-          "4. Kart (Tarantula)",
+          "4. Örnek (Tarantula)",
           {
             "b": "Bulutsu"
           },
@@ -174,14 +151,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki gökyüzü haritasında Büyükayı’nın uçtaki iki yıldızı arasındaki uzaklığın 5 katı ilerisinde gösterilen K yıldızının adını ve gece gözleminde hangi yönü bulmaya yaradığını yazınız.",
+      "soru": "Gökyüzü gözleminde Büyükayı takımyıldızının uçtaki iki yıldızı arasındaki uzaklığın 5 katı ilerisinde bulunan parlak K yıldızının adını ve hangi yönü bulmaya yaradığını yazınız.",
       "cevap": "K yıldızı Kutup Yıldızı’dır (Polaris); kuzey yönünü bulmaya yarar.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki basamaklara yerleştirilecek aşağıdaki beş yıldızı, büyüklüklerine göre en küçükten en büyüğe doğru 1’den 5’e kadar numaralandırınız.",
+      "soru": "Aşağıdaki beş yıldızı, büyüklüklerine göre en küçükten en büyüğe doğru 1’den 5’e kadar numaralandırınız.",
       "ogeler": [
         "Güneş (Dünya’nın içinde bulunduğu sistemin sarı-turuncu yıldızı)",
         "Pollux (Sirius’tan büyük, Arcturus’tan küçük olan yıldız)",
@@ -200,7 +177,8 @@
         "En yakın yıldız Dünya atmosferinin hemen dış katmanında yer alır.",
         "Işıklı iz, uzaydan Dünya atmosferine giren cisimlerin sürtünmeyle yanmasıdır."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -212,12 +190,13 @@
         "Samanyolu galaksisinin çapı, Andromeda galaksisinin çapından iki kat büyüktür.",
         "Andromeda, Samanyolu’nun Avcı kolu içinde yer alan küçük bir bulutsudur."
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki uzaklık ölçeğine göre ışık yılı kavramının neyi ifade ettiğini açıklayınız. Proxima Centauri’nin Dünya’ya yaklaşık kaç trilyon kilometre uzaklıkta olduğunu yazınız.",
+      "soru": "Güneş’e en yakın yıldız olan Proxima Centauri Dünya’dan 4,24 ışık yılı (1 ışık yılı ≈ 9,46 trilyon km) uzaklıktadır. Buna göre “ışık yılı” kavramının neyi ifade ettiğini ve Proxima Centauri’nin Dünya’ya yaklaşık kaç trilyon kilometre uzaklıkta olduğunu yazınız.",
       "cevap": "Işığın boşlukta 1 yılda aldığı uzaklıktır; Proxima Centauri yaklaşık 40 trilyon km uzaktadır.",
       "satir": 2
     },
@@ -257,9 +236,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki iki kartı inceleyerek takımyıldız ile yıldız kümesi arasındaki temel farkı açıklayınız. Takımyıldızlara insan, hayvan ya da nesne adları verilmesinin amacını yazınız.",
-      "cevap": "Takımyıldız yakın görünen yıldızların şeklidir; yıldız kümesi kütle çekimiyle bağlıdır. Adlandırma gökyüzü gözlemini kolaylaştırır.",
-      "satir": 3
+      "soru": "Takımyıldız ile yıldız kümesi arasındaki temel farkı açıklayınız. Takımyıldızlara insan, hayvan ya da nesne adları verilmesinin amacını yazınız.",
+      "cevap": "Takımyıldız yakın görünen yıldız şeklidir, küme çekimle bağlıdır; adlar gözlemi kolaylaştırır.",
+      "satir": 2
     },
     {
       "tur": "coktan",

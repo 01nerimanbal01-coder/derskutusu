@@ -15,27 +15,26 @@
   "hatirla": [
     "Arkadaşlık metninde her sıfat bir davranış kanıtına dayanır: yardıma koşan supportive, neşelendiren kind, doğruyu söyleyen honest, sır saklayan trustworthy olur; hiç tartışmayanlar get on well kalıbıyla anlatılır.",
     "Kısa konuşmalarda teklifi yapan davet edendir (“X invites Y”); etkinlik, kabul/ret cevabı, gerekçe ve saat birlikte kontrol edilir.",
-    "Önerilerde What about / How about kalıplarından sonra fiil -ing alır (“What about eating?”); Let’s ve Shall we kalıplarından sonra fiil yalın gelir (“Shall we play tennis?”).",
-    "Davet e-postası selamlama, etkinlik-gün-saat ve davet sorusundan oluşur; “No, thanks. I’m full.” yalnız yiyecek ikramını reddeder. Katılamama mesajında özür (“I’m sorry,”), tarihle uyumlu ret ve gerekçe (“because …”) yer alır."
+    "Önerilerde What about / How about kalıplarından sonra fiil -ing alır (“What about eating?”); Let’s ve Shall we kalıplarından sonra fiil yalın gelir (“Shall we play tennis?”)."
   ],
   "sorular": [
     {
       "tur": "tablo",
       "duzey": "hatirla",
-      "soru": "Görseldeki davranış kartlarında verilen kanıtların hangi arkadaşlık özelliğini veya kalıbını gösterdiğini ve cümle içinde nasıl kullanıldığını tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki arkadaşlık davranışlarının hangi kişisel özelliği veya kalıbı gösterdiğini ve örnek cümle içinde nasıl kullanıldığını tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
-        "Davranış Kartı (Kanıt)",
+        "Davranış Kanıtı",
         "Özellik / Kalıp",
         "Örnek Cümle"
       ],
       "satirlar": [
         [
-          "1. kart (tells me the truth)",
+          "1) tells me the truth",
           "honest",
           "Lily is an honest friend."
         ],
         [
-          "2. kart (keeps my secrets)",
+          "2) keeps my secrets",
           {
             "b": "trustworthy"
           },
@@ -44,7 +43,7 @@
           }
         ],
         [
-          "3. kart (cheers me up when I feel sad)",
+          "3) cheers me up when I feel sad",
           {
             "b": "kind"
           },
@@ -53,7 +52,7 @@
           }
         ],
         [
-          "4. kart (we never argue)",
+          "4) we never argue",
           {
             "b": "get on well"
           },
@@ -73,7 +72,8 @@
         "Jenny accepts Angel’s fruit juice offer and stays at the café.",
         "John refuses Thomas’s concert invitation because he is busy at seven."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "eslestir",
@@ -91,21 +91,13 @@
         [
           "go for a walk",
           "Açık havada yürüyüşe çıkmak"
-        ],
-        [
-          "laid-back",
-          "Kaygısız, telaşsız ve rahat tavırlı"
-        ],
-        [
-          "Cool.",
-          "Planı onaylayan “güzel, olur” tepkisi"
         ]
       ]
     },
     {
       "tur": "dy",
       "duzey": "hatirla",
-      "soru": "Görseldeki davet e-postasına ve ünite kurallarına göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
+      "soru": "Betty’nin Megan’a gönderdiği «Dear Megan, Sarah and I are organizing a birthday party for Linda on Saturday. It starts at 6 p.m. at Sarah’s house. Would you like to join us? Love, Betty» davet mesajına ve ünite kurallarına göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
       "ifadeler": [
         {
           "metin": "“Dear Megan,” ifadesi mesajın kime yazıldığını gösteren selamlama bölümüdür.",
@@ -122,10 +114,6 @@
         {
           "metin": "“Would you like to join us?” cümlesi e-postadaki davet sorusudur.",
           "dogru": true
-        },
-        {
-          "metin": "“Are you busy tomorrow?” sorusu doğrudan ret bildiren bir cümledir.",
-          "dogru": false
         }
       ]
     },
@@ -146,14 +134,6 @@
         {
           "metin": "David invites Bob for dinner, and Bob replies: “Yes, ___ not?”",
           "cevap": "why"
-        },
-        {
-          "metin": "I can’t join the picnic ___ I must help my father.",
-          "cevap": "because"
-        },
-        {
-          "metin": "A: ___ is organizing the party? B: Betty and Sarah.",
-          "cevap": "Who"
         }
       ],
       "fazla": [
@@ -170,12 +150,13 @@
         "3. fiş (Let’s having a rest at home!)",
         "4. fiş (Shall we play tennis in the park?)"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Karışık verilen telefon konuşması cümlelerini anlamlı bir diyalog oluşturacak biçimde 1’den 5’e kadar numaralandırınız.",
+      "soru": "Karışık verilen telefon konuşması cümlelerini anlamlı bir konuşma bütünlüğü oluşturacak biçimde 1’den 5’e kadar numaralandırınız.",
       "ogeler": [
         "Hi Tim! Are you busy tomorrow afternoon?",
         "No, I’m not busy at all. Why are you asking?",
@@ -187,8 +168,8 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görselde Debbie’nin Sally’ye gönderdiği kısa e-posta yer almaktadır. E-postadaki “it” sözcüğü neyin yerini tutar; davet eden ve davet edilen kimdir?",
-      "cevap": "“it” sözcüğü “a new sci-fi film” ifadesinin yerini tutar; davet eden Debbie, davet edilen Sally’dir.",
+      "soru": "Debbie’nin yazdığı «Hi Sally, There is a new sci-fi film at the Star Cinema this Sunday. How about watching it together at four o’clock? Best wishes, Debbie» mesajındaki “it” sözcüğü neyin yerini tutar; davet eden ve davet edilen kimdir?",
+      "cevap": "“it” sözcüğü “a new sci-fi film” ifadesinin yerini tutar; davet eden Debbie, edilen Sally’dir.",
       "satir": 2
     },
     {
@@ -201,7 +182,8 @@
         "Ece: “I’m sorry, I can’t come on 30th May because I visit my grandparents.”",
         "Kaan: “Sure, I’d love to join on 21st May because I am very busy.”"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -213,12 +195,13 @@
         "3. konuşma (How about going for a walk? → Cool. See you at five.)",
         "4. konuşma (Shall we ride our bikes? → No, thanks. I’m full.)"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki okuma kartında Carol’ın arkadaşı Lily’yi anlattığı metin verilmiştir. “My School Subjects” ve “Carol’s Best Friend” başlıklarından hangisi uygundur ve Lily’nin “supportive” olduğunu hangi cümle kanıtlar?",
+      "soru": "Carol’ın arkadaşı Lily’yi anlattığı «Lily is my closest friend at school. She backs me up when I need help and listens to my problems. She always tells me the truth and keeps my secrets.» metni için “My School Subjects” ve “Carol’s Best Friend” başlıklarından hangisi uygundur ve Lily’nin “supportive” olduğunu hangi cümle kanıtlar?",
       "cevap": "Uygun başlık “Carol’s Best Friend”dir; kanıt cümlesi “She backs me up when I need help”tir.",
       "satir": 2
     },
@@ -263,14 +246,14 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki konser davet kartındaki gün ve saat bilgisini kullanarak özür, katılamama ifadesi ve gerekçe içeren İngilizce cevabınızı yazınız.",
-      "cevap": "I’m sorry, I can’t come to the concert on 14th June at 8 p.m. because I must study for my science exam.",
+      "soru": "Pazar günü (14th June) saat 20.00’de (at 8 p.m.) yapılacak konser davetini (Concert Invitation) bir mazeret bildirerek reddettiğinizi anlatan; özür, katılamama ifadesi ve gerekçe içeren İngilizce bir cümle yazınız.",
+      "cevap": "I’m sorry, I can’t come to the concert on 14th June at 8 p.m. because I have a science exam.",
       "satir": 2
     },
     {
       "tur": "coktan",
       "duzey": "ust",
-      "soru": "Tahtadaki dört cümle şunlardır: (I) “Are you busy this evening?” (II) “Why don’t we cook dinner?” (III) “I’m afraid, I can’t because I must help my mum.” (IV) “Yeah, why not?” Bu cümlelerin iletişim işlevleri hangisinde doğru eşleştirilmiştir?",
+      "soru": "Bir konuşmada geçen dört cümle şunlardır: (I) “Are you busy this evening?” (II) “Why don’t we cook dinner?” (III) “I’m afraid, I can’t because I must help my mum.” (IV) “Yeah, why not?” Bu cümlelerin iletişim işlevleri hangisinde doğru eşleştirilmiştir?",
       "secenekler": [
         "I: Teklif — II: Kabul — III: Gerekçeli ret — IV: Uygunluk sorma",
         "I: Uygunluk sorma — II: Teklif — III: Gerekçeli ret — IV: Kabul",

@@ -10,9 +10,8 @@
   ],
   "hatirla": [
     "Klimatoloji iklim tiplerini uzun yılların verileriyle araştırır (uzmanı klimatolog); günlük hava olaylarını ise meteoroloji inceler.",
-    "Atmosferdeki CH₄, CO₂, O₃ ve H₂O gazları yeryüzünden yansıyan ısının bir bölümünü tutar; bu gazların fazlalaşması Dünya’yı fazladan ısıtır.",
-    "DNA, kalıtsal bilgileri taşıyan çift zincirli sarmal moleküldür; gelişmiş hücrelerde çekirdekte, ilkel hücrelerde sitoplazmada bulunur.",
-    "Kalıtım yapıları büyükten küçüğe Kromozom > DNA > Gen > Nükleotid (fosfat + deoksiriboz şekeri + organik baz) biçiminde sıralanır."
+    "Atmosferdeki CH{alt:4}, CO{alt:2}, O{alt:3} ve H{alt:2}O gazları yeryüzünden yansıyan ısının bir bölümünü tutar; bu gazların fazlalaşması Dünya’yı fazladan ısıtır.",
+    "DNA, kalıtsal bilgileri taşıyan çift zincirli sarmal moleküldür; gelişmiş hücrelerde çekirdekte, ilkel hücrelerde sitoplazmada bulunur."
   ],
   "sorular": [
     {
@@ -31,14 +30,6 @@
         [
           "kromozom",
           "Kromatin ağının kısalıp kalınlaşmasıyla oluşan yapı"
-        ],
-        [
-          "gen",
-          "DNA üzerinde belirli bir özellikten sorumlu görev birimi"
-        ],
-        [
-          "nükleotid",
-          "Fosfat, şeker ve organik bazdan oluşan yapı birimi"
         ]
       ]
     },
@@ -52,7 +43,8 @@
         "Yeryüzüne ulaşan Güneş ışınlarının tamamı atmosfer dışına geri yansır.",
         "Su buharı ve karbon dioksit gazları ısının tutulmasında hiçbir rol oynamaz."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -64,7 +56,7 @@
           "dogru": true
         },
         {
-          "metin": "Metan (CH₄), karbon dioksit (CO₂), ozon (O₃) ve su (H₂O) başlıca sera gazlarıdır.",
+          "metin": "Metan (CH{alt:4}), karbon dioksit (CO{alt:2}), ozon (O{alt:3}) ve su (H{alt:2}O) başlıca sera gazlarıdır.",
           "dogru": true
         },
         {
@@ -74,10 +66,6 @@
         {
           "metin": "Kromozom sayısı fazla olan canlıların gelişmişlik düzeyi de her zaman daha fazladır.",
           "dogru": false
-        },
-        {
-          "metin": "DNA’daki nükleotid sayısı ve diziliş sırası canlılar arasındaki çeşitliliği sağlar.",
-          "dogru": true
         }
       ]
     },
@@ -98,14 +86,6 @@
         {
           "metin": "Bir nükleotidin yapısında fosfat grubu ve organik bazın yanı sıra beş karbonlu ___ şekeri yer alır.",
           "cevap": "deoksiriboz"
-        },
-        {
-          "metin": "Kromozom sayısı 46 olan insan ile yine 46 kromozom taşıyan ___ farklı türde canlılardır.",
-          "cevap": "moli balığı"
-        },
-        {
-          "metin": "DNA molekülü, karşılıklı iki nükleotid dizisinden oluşan ___ bir merdivene benzetilir.",
-          "cevap": "sarmal"
         }
       ],
       "fazla": [
@@ -122,14 +102,15 @@
         "Kromozom sayısı fazla olan canlı, az olana göre daha gelişmiş bir yapıya sahiptir.",
         "Canlıların vücut büyüklüğü ile kromozom sayısı arasında doğrudan bir orantı yoktur."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görselde bir nükleotidin kısımları (1, 2, 3) ve dört farklı nükleotid kartı verilmiştir. Kartlardaki bilgilere göre tabloyu tamamlayınız.",
+      "soru": "Bir nükleotidin yapısında sırasıyla yer alan (1) fosfat, (2) beş karbonlu şeker ve (3) azotlu organik baz (A, T, G, C) kısımları ile G bazlı nükleotid için tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Bölüm ve Kart",
+        "Nükleotid Bölümü",
         "Yapının Adı",
         "Temel Özelliği ve Görevi"
       ],
@@ -158,7 +139,7 @@
           }
         ],
         [
-          "G bazlı kart",
+          "G organik bazlı birim",
           {
             "b": "Guanin nükleotidi"
           },
@@ -171,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki çalışma kartlarında iki araştırmacının incelediği konular verilmiştir. K ve L araştırmacılarının unvanlarını ve çalıştıkları bilim dallarını yazınız.",
+      "soru": "K araştırmacısı bir bölgenin 35 yıllık sıcaklık ve yağış kayıtlarını inceleyerek iklim tipini belirlemekte, L araştırmacısı ise yarın beklenen sağanak yağışın günlük yaşama etkilerini araştırmaktadır. Buna göre K ve L araştırmacılarının uzmanlık unvanlarını ve çalıştıkları bilim dallarını yazınız.",
       "cevap": "K araştırmacısı klimatologdur (klimatoloji); L araştırmacısı meteorologdur (meteoroloji).",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görselde iç içe geçmiş kutularla gösterilen kalıtım yapılarını ve hücre bölümlerini en küçük yapı biriminden en kapsayıcı yapıya (1’den 5’e) doğru numaralandırınız.",
+      "soru": "Aşağıda açıklamaları verilen kalıtım yapılarını ve hücre bölümlerini en küçük yapı biriminden en kapsayıcı yapıya (1’den 5’e) doğru numaralandırınız.",
       "ogeler": [
         "Şeker, fosfat ve organik bazdan oluşan DNA yapı birimi (nükleotid)",
         "Belirli bir kalıtsal özellikten sorumlu nükleotid dizisi (gen)",
@@ -197,7 +178,8 @@
         "Yeryüzü özelliği iklim üzerinde etkili değildir.",
         "K’de sera gazı az olduğundan ısınma daha çoktur."
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -209,13 +191,14 @@
         "Gelişmiş hücrede DNA sitoplazmaya dağılmıştır.",
         "DNA gelişmişte çekirdekte, ilkelde sitoplazmadadır."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görselde iki farklı canlıya ait DNA parçalarının nükleotid dizilimleri verilmiştir. Her iki canlıda da aynı dört çeşit organik baz (A, T, G, C) bulunmasına rağmen kalıtsal özelliklerin farklı olmasının nedenini açıklayınız.",
-      "cevap": "DNA üzerindeki nükleotidlerin sayıları ve diziliş sıraları farklı olduğu için kalıtsal çeşitlilik oluşur.",
+      "soru": "Farklı türdeki iki canlının DNA moleküllerinde aynı dört çeşit organik baz (Adenin, Timin, Guanin, Sitozin) bulunmasına rağmen bu canlıların kalıtsal özelliklerinin birbirinden farklı olmasının nedenini açıklayınız.",
+      "cevap": "DNA üzerindeki nükleotidlerin sayısı ve diziliş sırası farklı olduğundan çeşitlilik oluşur.",
       "satir": 2
     },
     {
@@ -234,12 +217,12 @@
           "anahtar": 5
         },
         {
-          "ipucu": "O₃ formülüyle gösterilen sera gazı",
+          "ipucu": "O{alt:3} formülüyle gösterilen sera gazı",
           "cevap": "OZON",
           "anahtar": 0
         },
         {
-          "ipucu": "CH₄ formülüyle gösterilen sera gazı",
+          "ipucu": "CH{alt:4} formülüyle gösterilen sera gazı",
           "cevap": "METAN",
           "anahtar": 0
         },
@@ -269,9 +252,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki panoda küresel ısınma ve iklim değişikliği arasındaki ilişki gösterilmiştir. Bir öğrenci “Bir kentte bu hafta yağışın geçen haftaya göre artması iklim değişikliğidir.” diyor. Bu öğrencinin hatasını düzeltiniz ve iklim değişikliğini önlemek için ne yapılması gerektiğini yazınız.",
-      "cevap": "Haftalık yağış farkı hava olayıdır; iklim değişikliği uzun yıllar içindeki değişimdir. Önlemek için sera gazı salımı azaltılmalıdır.",
-      "satir": 3
+      "soru": "Bir öğrenci “Bir kentte bu hafta yağışın geçen haftaya göre artması küresel iklim değişikliğidir.” demiştir. Bu öğrencinin kavram hatasını düzeltiniz ve küresel iklim değişikliğini önlemek için ne yapılması gerektiğini yazınız.",
+      "cevap": "Haftalık yağış hava olayıdır; iklim değişikliği uzun yıllar sürer, sera gazı azaltılmalıdır.",
+      "satir": 2
     },
     {
       "tur": "coktan",

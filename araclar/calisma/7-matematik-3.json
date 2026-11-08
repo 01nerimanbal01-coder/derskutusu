@@ -11,8 +11,7 @@
   "hatirla": [
     "Bir rasyonel sayının ondalık gösterimi payın paydaya bölünmesiyle bulunur; bölmede kalan 0 oluyorsa gösterim sonlu, kalan hiç 0 olmayıp rakamlar tekrar ediyorsa devirlidir.",
     "Devirli ondalık gösterimlerde sonsuza kadar tekrar eden rakam grubuna devreden kısım denir ve yalnızca tekrar eden rakamların üzerine devir çizgisi çekilir.",
-    "Bir rasyonel sayı en sade hâline getirildiğinde paydasının asal çarpanları yalnız 2 veya 5 ise ondalık gösterimi sonlu, 2 ve 5 dışında bir asal çarpan içeriyorsa devirlidir.",
-    "Sonlu ondalık gösterimler paydası 10, 100, 1000 olacak biçimde kesre çevrilip sadeleştirilir; kesir ve ondalık gösterim sayı doğrusunda aynı noktaya karşılık gelir."
+    "Bir rasyonel sayı en sade hâline getirildiğinde paydasının asal çarpanları yalnız 2 veya 5 ise ondalık gösterimi sonlu, 2 ve 5 dışında bir asal çarpan içeriyorsa devirlidir."
   ],
   "sorular": [
     {
@@ -31,14 +30,6 @@
         [
           "−0,15",
           "En sade kesir karşılığı −{kesir:3|20} olan negatif rasyonel sayı"
-        ],
-        [
-          "devir işareti",
-          "Ondalık kısımda tekrar eden rakamların üzerine çekilen çizgi"
-        ],
-        [
-          "sonlu ondalık gösterim",
-          "En sade hâlde paydasında yalnız 2 ve 5 asal çarpanı bulunan gösterim"
         ]
       ]
     },
@@ -52,31 +43,28 @@
         "0,41̅6̅",
         "0,416"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
       "duzey": "uygula",
-      "soru": "Görseldeki dört rasyonel sayı kartına göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
+      "soru": "Verilen {kesir:21|15}, −{kesir:9|20}, {kesir:7|18} ve 2 {kesir:3|4} rasyonel sayılarına göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
       "ifadeler": [
         {
-          "metin": "1. karttaki {kesir:21|15} sayısı 3 ile sadeleşince {kesir:7|5} olduğu için ondalık gösterimi 1,4’tür ve sonludur.",
+          "metin": "{kesir:21|15} sayısı 3 ile sadeleşince {kesir:7|5} olduğu için ondalık gösterimi 1,4’tür ve sonludur.",
           "dogru": true
         },
         {
-          "metin": "2. karttaki −{kesir:9|20} sayısının payı ve paydası 5 ile genişletilirse −0,45 ondalık gösterimi bulunur.",
+          "metin": "−{kesir:9|20} sayısının payı ve paydası 5 ile genişletilirse −0,45 ondalık gösterimi bulunur.",
           "dogru": true
         },
         {
-          "metin": "3. karttaki {kesir:7|18} sayısının paydasında 2 çarpanı bulunduğu için ondalık gösterimi sonludur.",
+          "metin": "{kesir:7|18} sayısının paydasında 2 çarpanı bulunduğu için ondalık gösterimi sonludur.",
           "dogru": false
         },
         {
-          "metin": "4. karttaki 2 {kesir:3|4} tam sayılı kesrinin ondalık gösterimi 2,75’tir.",
-          "dogru": true
-        },
-        {
-          "metin": "3. karttaki {kesir:7|18} sayısının ondalık gösterimi 0,38̅ biçimindedir ve 3 rakamı devretmeyen kısımdadır.",
+          "metin": "2 {kesir:3|4} tam sayılı kesrinin ondalık gösterimi 2,75’tir.",
           "dogru": true
         }
       ]
@@ -98,10 +86,6 @@
         {
           "metin": "Paydanın asal çarpanlarına bakılmadan önce kesir mutlaka ___.",
           "cevap": "sadeleştirilir"
-        },
-        {
-          "metin": "Kesir ve ondalık gösterim sayı doğrusunda aynı ___ belirtir.",
-          "cevap": "noktayı"
         }
       ],
       "fazla": [
@@ -118,12 +102,13 @@
         "III. kart ({kesir:11|24})",
         "IV. kart ({kesir:14|35})"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki kartlarda verilen rasyonel sayıların paydalarını 10’un kuvvetine genişleterek tablodaki boşlukları tamamlayınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen rasyonel sayıların paydalarını 10’un kuvvetine genişleterek boşlukları tamamlayınız. İlk satır örnektir.",
       "basliklar": [
         "Rasyonel Sayı",
         "Genişletme Çarpanı",
@@ -178,7 +163,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki derinlik ölçerde −1,36 m ve mutfak terazisinde 2,4 kg değerleri okunmaktadır. Bu iki sonlu ondalık gösterimi payı ve paydası tam sayı olan en sade kesir biçiminde yazınız.",
+      "soru": "Bir ölçümde su altı derinliği −1,36 m ve un paketinin kütlesi 2,4 kg olarak kaydedilmiştir. Bu iki sonlu ondalık gösterimi payı ve paydası tam sayı olan en sade kesir biçiminde yazınız.",
       "cevap": "1) −1,36 = −{kesir:136|100} = −{kesir:34|25} m   2) 2,4 = {kesir:24|10} = {kesir:12|5} kg",
       "satir": 2
     },
@@ -203,7 +188,8 @@
         "3. karttaki 3 {kesir:1|5} = 3,2 eşitliği",
         "4. karttaki {kesir:2|9} = 0,29 eşitliği"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -215,12 +201,13 @@
         "M noktası",
         "N noktası"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki kartta verilen {kesir:k|18} rasyonel sayısında k, 1’den 9’a kadar olan bir basamaklı doğal sayılardan biridir. Bu sayının sonlu ondalık gösterim vermesi için k kaç olmalıdır? Açıklayınız.",
+      "soru": "{kesir:k|18} rasyonel sayısında k, 1’den 9’a kadar olan bir basamaklı doğal sayılardan biridir. Bu sayının sonlu ondalık gösterim vermesi için k kaç olmalıdır? Açıklayınız.",
       "cevap": "Paydadaki 9 çarpanının sadeleşip yalnız 2 kalması için k sayısı 9 olmalıdır (0,5).",
       "satir": 2
     },
@@ -260,7 +247,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki A kartında {kesir:36|15}, B kartında ise {kesir:37|15} rasyonel sayısı yazmaktadır. Paydaları aynı olduğu hâlde neden A kartındaki sayının sonlu, B kartındaki sayının devirli ondalık gösterim verdiğini açıklayınız.",
+      "soru": "A = {kesir:36|15} ve B = {kesir:37|15} rasyonel sayılarının paydaları aynı olduğu hâlde neden A sayısının sonlu, B sayısının ise devirli ondalık gösterim verdiğini açıklayınız.",
       "cevap": "A’da 3 sadeleşip paydada 5 kalır (sonlu); B’de 3 sadeleşmediği için devirli olur.",
       "satir": 2
     },

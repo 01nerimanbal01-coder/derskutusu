@@ -15,8 +15,7 @@
   "hatirla": [
     "Atmosfer Dünya’yı saran gaz tabakasıdır; hava olayları belirli bir yerde kısa sürede değişen sıcaklık, nem, basınç, yağış ve rüzgâr olaylarıdır.",
     "Yağmur, dolu ve kar yeryüzüne inen yağışlardır; çiy ve kırağı soğuk yüzeylerde birikir, sis ise yere yakın havada asılı kalır.",
-    "Isınan yerde yükselici havayla alçak basınç ve yağış görülür; soğuyan yerde alçalıcı havayla yüksek basınç oluşur, rüzgâr YB’den AB’ye eser.",
-    "İklim, geniş bir bölgede en az 35–40 yıllık hava olayları ortalamasıdır; değişkenliği azdır ve sıcak, soğuk, kurak, yağışlı diye anlatılır."
+    "Isınan yerde yükselici havayla alçak basınç ve yağış görülür; soğuyan yerde alçalıcı havayla yüksek basınç oluşur, rüzgâr YB’den AB’ye eser."
   ],
   "sorular": [
     {
@@ -35,14 +34,6 @@
         [
           "çiy",
           "Soğumuş bitki ve yüzeylerde su buharının yoğuşmasıyla biriken damlacıklar"
-        ],
-        [
-          "kırağı",
-          "Sıfır derecenin altında su buharının doğrudan buza dönüşerek birikmesi"
-        ],
-        [
-          "iklim",
-          "En az 35–40 yıllık gözlem kayıtlarıyla belirlenen bölgesel özellik"
         ]
       ]
     },
@@ -56,7 +47,8 @@
         "L’de yükselen hava yağış oluşturur.",
         "Rüzgârlar K’den L’ye doğru yatay eser."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -78,10 +70,6 @@
         {
           "metin": "Fırtına, kasırga, hortum ve tayfun şiddetleri farklı olan rüzgâr çeşitleridir.",
           "dogru": true
-        },
-        {
-          "metin": "Bir bölgenin iklimini belirlemek için bir haftalık uydu verisi yeterlidir.",
-          "dogru": false
         }
       ]
     },
@@ -102,14 +90,6 @@
         {
           "metin": "Yere yakın tabakada asılı kalarak görüşü kısaltan olaya ___ denir.",
           "cevap": "sis"
-        },
-        {
-          "metin": "Günlük gezi ve seyahat planı yapılırken hava ___ dikkate alınır.",
-          "cevap": "tahmini"
-        },
-        {
-          "metin": "Uzun yıllar az yağış alan bölgelerin iklimi ___ olarak nitelenir.",
-          "cevap": "kurak"
         }
       ],
       "fazla": [
@@ -126,12 +106,13 @@
         "Sis yüksek bulutlarda donarak hızla düşer.",
         "Dolu ve kar katı, yağmur sıvı hâlde iner."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki karşılaştırma kartlarına göre “Hava Olayları” ve “İklim” sütunlarını tamamlayınız.",
+      "soru": "Tablodaki ölçütlere göre “Hava Olayları” ve “İklim” sütunlarını uygun özelliklerle tamamlayınız. İlk satır örnektir.",
       "basliklar": [
         "Ölçüt",
         "Hava Olayları",
@@ -175,14 +156,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görselde komşu P ve R kentlerinin sıcaklık ve yoğunluk bilgileri verilmiştir. Rüzgârın yönünü ve yağış olasılığı yüksek kenti yazınız.",
+      "soru": "Komşu iki kentten P kentinde hava sıcaklığı 14 °C olup alçalıcı hava hareketi, R kentinde ise hava sıcaklığı 29 °C olup yükselici hava hareketi gözlemlenmektedir. Buna göre rüzgârın esme yönünü ve yağış olasılığı yüksek olan kenti yazınız.",
       "cevap": "Rüzgâr P’den R’ye eser; sıcak havanın yükseldiği R’de yağış olasılığı yüksektir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki şemada özetlenen alçak basınç ve yağmur oluşum sürecini 1’den 5’e kadar numaralandırınız.",
+      "soru": "Bir bölgede alçak basınç alanı ve yağmur oluşumu sürecine ait aşağıdaki aşamaları gerçekleşme sırasına göre 1’den 5’e kadar numaralandırınız.",
       "ogeler": [
         "Yeryüzündeki havanın ısınarak taneciklerin hızlanması",
         "Isınan havanın yükselmesiyle yüzeyde basıncın düşmesi",
@@ -201,7 +182,8 @@
         "Hava olayı: II ve IV — İklim: I ve III",
         "Hava olayı: III ve IV — İklim: I ve II"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -213,12 +195,13 @@
         "Günlük hava gözlemlerinde kullanılan sözcüklerin uzun yıllar aynı kaldığını",
         "Hava olaylarında değişkenliğin fazla, iklimde ise değişkenliğin az olduğunu"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki bilgi kartlarında katı hâlde yeryüzüne inen “dolu” ve “kar” yağışları karşılaştırılmıştır. Bu iki yağış türünün oluşum biçimi ve tanecik yapısı arasındaki farkı açıklayınız.",
+      "soru": "Atmosferden katı hâlde yeryüzüne inen “dolu” ve “kar” yağışlarının oluşum biçimi ve tanecik yapısı arasındaki farkı açıklayınız.",
       "cevap": "Dolu aniden donan buz küreleridir; kar ise su buharından oluşan buz kristalleridir.",
       "satir": 2
     },
@@ -273,7 +256,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki planlama kartında hafta sonu arazi çalışmasına çıkacak bir ekibin iki farklı veri kaynağı gösterilmiştir. Ekibin cumartesi sabahı için hangi kaynağı seçmesi gerektiğini nedenleriyle yazınız.",
+      "soru": "Hafta sonu arazi çalışmasına çıkacak bir araştırma ekibinin elinde (1) saatlik meteorolojik verileri içeren “Hava Tahmini Raporu” ve (2) son 40 yılın ortalamasını gösteren “Bölgesel İklim Özeti” bulunmaktadır. Ekibin cumartesi sabahı planı için hangi kaynağı seçmesi gerektiğini nedeniyle yazınız.",
       "cevap": "Hava tahmini raporunu seçmelidir; günlük planlar kısa süreli tahminlerle yapılır.",
       "satir": 2
     },

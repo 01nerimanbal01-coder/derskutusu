@@ -11,8 +11,7 @@
   "hatirla": [
     "Devirli ondalık gösterim kesre çevrilirken pay, bütün rakamların oluşturduğu sayıdan devretmeyen rakamların (tam kısım dâhil) oluşturduğu sayı çıkarılarak bulunur.",
     "Paydaya virgülden sonraki devreden rakam sayısı kadar 9, devretmeyen ondalık rakam sayısı kadar 0 yazılır; negatif sayılarda eksi işareti kesrin önünde kalır.",
-    "Her devirli ondalık gösterim bir rasyonel sayıdır; 0,999… gösterimi 1 tam sayısına eşittir.",
-    "Sayı doğrusunda sağdaki rasyonel sayı soldakinden büyüktür; negatif sayılarda sıfırdan uzaklaştıkça (mutlak değer büyüdükçe) sayının değeri küçülür."
+    "Her devirli ondalık gösterim bir rasyonel sayıdır; 0,999… gösterimi 1 tam sayısına eşittir."
   ],
   "sorular": [
     {
@@ -25,12 +24,13 @@
         "3. adımda paydaya 90 yerine 99 yazmıştır.",
         "4. adımda pay ile paydayı yer değiştirmiştir."
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Kartlarda verilen devirli ondalık gösterimleri kesre çevirerek tablodaki boşlukları doldurunuz. İlk satır örnektir.",
+      "soru": "Tabloda verilen devirli ondalık gösterimleri kesre çevirerek boşlukları doldurunuz. İlk satır örnektir.",
       "basliklar": [
         "Devirli gösterim",
         "Pay işlemi",
@@ -98,14 +98,6 @@
         [
           "0,6̅3̅",
           "{kesir:7|11}"
-        ],
-        [
-          "2,9̅",
-          "3"
-        ],
-        [
-          "−0,4̅",
-          "−{kesir:4|9}"
         ]
       ]
     },
@@ -119,14 +111,15 @@
         "M < L < K",
         "K < M < L"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Şemada 0,9; 0,99 ve 0,999 sayılarının 1 tam sayısına uzaklıkları gösterilmiştir. a) 0,999 sayısının 1’e uzaklığı kaçtır? b) Aynı kurala göre 2,9̅ sayısı hangi tam sayıya eşittir? Kesre çevirerek gösteriniz.",
-      "cevap": "a) 1 − 0,999 = 0,001’dir. b) Pay 29 − 2 = 27 ve payda 9 olduğundan 2,9̅ = {kesir:27|9} = 3 tam sayısına eşittir.",
-      "satir": 3
+      "soru": "0,9 sayısının 1 tam sayısına uzaklığı 0,1 ve 0,99 sayısının 1’e uzaklığı 0,01’dir (0,9̅ = 1). a) 0,999 sayısının 1’e uzaklığı kaçtır? b) Aynı kurala göre 2,9̅ sayısı hangi tam sayıya eşittir? Kesre çevirerek gösteriniz.",
+      "cevap": "a) 1 − 0,999 = 0,001’dir. b) 2,9̅ = {kesir:29 − 2|9} = {kesir:27|9} = 3 tam sayısına eşittir.",
+      "satir": 2
     },
     {
       "tur": "dy",
@@ -148,10 +141,6 @@
         {
           "metin": "İki negatif rasyonel sayıdan sıfıra daha yakın olanı daha küçüktür.",
           "dogru": false
-        },
-        {
-          "metin": "0,999… devirli ondalık gösterimi 1 tam sayısına eşittir.",
-          "dogru": true
         }
       ]
     },
@@ -165,12 +154,13 @@
         "I ve III",
         "I, II ve III"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Dört dağ gözlem istasyonunda aynı gece ölçülen hava sıcaklıkları göstergede verilmiştir. Tablodaki karşılaştırma sorularını cevaplayınız.",
+      "soru": "Dört dağ gözlem istasyonunda aynı gece ölçülen hava sıcaklıkları Kuzey: −18 °C, Yamaç: −5 °C, Zirve: −24 °C ve Vadi: +4 °C’dir. Buna göre tablodaki karşılaştırma sorularını cevaplayınız. İlk satır örnektir.",
       "basliklar": [
         "Karşılaştırma sorusu",
         "Cevap"
@@ -221,21 +211,22 @@
         "Beta aracının konumu −5 m ile −4 m arasındadır.",
         "Konum değeri en küçük olan araç Beta’dır."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
       "soru": "Sayı doğrusundaki konumlarını düşünerek {kesir:5|3}, −{kesir:9|4}, −{kesir:2|3} ve {kesir:1|4} sayılarını küçükten büyüğe sembolle sıralayınız.",
-      "cevap": "Sayı doğrusunda soldan sağa doğru sıralama −{kesir:9|4} < −{kesir:2|3} < {kesir:1|4} < {kesir:5|3} biçimindedir.",
-      "satir": 3
+      "cevap": "Soldan sağa doğru sıralama: −{kesir:9|4} < −{kesir:2|3} < {kesir:1|4} < {kesir:5|3}",
+      "satir": 2
     },
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Bilgi kartlarında −14 ve −6 sayılarının mutlak değerleri ile sayı doğrusundaki yerleri verilmiştir. |−14| > |−6| olduğu hâlde neden −14 < −6 olduğunu açıklayınız.",
-      "cevap": "Mutlak değer sıfıra uzaklığı gösterir (−14’ün uzaklığı 14, −6’nınki 6 birimdir). Negatiflerde sıfırdan uzaklaştıkça değer küçüldüğü için −14 < −6 olur.",
-      "satir": 3
+      "soru": "|−14| = 14 ve |−6| = 6 olduğundan |−14| > |−6| eşitsizliği sağlanır. Buna rağmen sayı doğrusunda neden −14 < −6 olduğunu açıklayınız.",
+      "cevap": "Mutlak değer sıfıra uzaklıktır; negatif sayılarda sıfırdan uzaklaştıkça sayı değeri küçülür.",
+      "satir": 2
     },
     {
       "tur": "sifre",
@@ -287,10 +278,6 @@
         {
           "metin": "Pay hesaplanırken tam kısım ___ rakamlara dâhil edilir.",
           "cevap": "devretmeyen"
-        },
-        {
-          "metin": "Sayı doğrusunda sıfıra olan uzaklığa o sayının ___ değeri denir.",
-          "cevap": "mutlak"
         }
       ],
       "fazla": [

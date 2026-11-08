@@ -10,9 +10,7 @@
   ],
   "hatirla": [
     "Ömür, canlının doğduğu andan öldüğü ana kadar yaşadığı süredir; ecel ise bu sürenin bittiği andır ve her canlının ömrü sonludur.",
-    "Rızık, Allah’ın (Er-Rezzak) yarattığı maddi ve manevi nimetlerdir; insan rızkını helal yoldan ve emek vererek kazanmalıdır.",
-    "Tevekkül, gerekli önlemleri aldıktan sonra Allah’a güvenmektir; başarı ise düzenli ve planlı çalışmayla elde edilir.",
-    "Sağlığı korumak ve hastalanınca tedavi olmak insanın sorumluluğudur; Hz. Ömer’in veba salgını kararı kader ile iradeli seçimi gösterir."
+    "Rızık, Allah’ın (Er-Rezzak) yarattığı maddi ve manevi nimetlerdir; insan rızkını helal yoldan ve emek vererek kazanmalıdır."
   ],
   "sorular": [
     {
@@ -31,14 +29,6 @@
         [
           "Er-Rezzak",
           "Bütün varlıklara maddi ve manevi rızkı bolca veren Allah’ın ismi"
-        ],
-        [
-          "tevekkül",
-          "Üzerine düşen görevi yapıp önlem aldıktan sonra Allah’a güvenmek"
-        ],
-        [
-          "sağlık",
-          "Beden, ruh ve toplumsal ilişkiler yönünden tam iyilik durumu"
         ]
       ]
     },
@@ -52,7 +42,8 @@
         "K: Rızık — L: Tevekkül — İnsanın yalnız maddi nimetlerle yaşayabileceği",
         "K: Ömür — L: Başarı — İnsanın kendi ölüm vaktini belirleyebileceği"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -74,10 +65,6 @@
         {
           "metin": "Hz. Muhammed (sav), sahabeye önce devesini bağlayıp sonra tevekkül etmesini öğütlemiştir.",
           "dogru": true
-        },
-        {
-          "metin": "Hastalanan bir kimsenin tedaviyi reddetmesi doğru tevekkül anlayışının gereğidir.",
-          "dogru": false
         }
       ]
     },
@@ -98,14 +85,6 @@
         {
           "metin": "İnşirah suresi 5. ayette “Demek ki ___ beraber bir kolaylık vardır.” buyrularak müminlere ümit verilir.",
           "cevap": "zorlukla"
-        },
-        {
-          "metin": "Bedeni ya da zihni rahatsız eden ve sağlığın bozulmasıyla ortaya çıkan duruma halk arasında ___ de denir.",
-          "cevap": "dert"
-        },
-        {
-          "metin": "Hz. Ömer, Şam çevresinde ___ salgını çıktığını öğrenince istişare ederek orduyu Medine’ye geri çevirmiştir.",
-          "cevap": "veba"
         }
       ],
       "fazla": [
@@ -122,25 +101,26 @@
         "İslam’a göre emek vermeden ve başkasının sırtından geçinmek uygun bir yoldur.",
         "Alın teriyle ve helal yoldan kazanç sağlamak dinimizce övülen bir davranıştır."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki ayet ve hadis kartlarının kaderle ilgili hangi kavramla doğrudan ilişkili olduğunu ve insana yüklediği sorumluluğu yazarak tabloyu tamamlayınız.",
+      "soru": "Tablodaki ayet ve hadis meallerinin kaderle ilgili hangi kavramla doğrudan ilişkili olduğunu ve insana yüklediği sorumluluğu yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Ayet ve Hadis Kartı",
+        "Ayet ve Hadis Meali",
         "İlgili Kavram",
         "İnsana Yüklediği Sorumluluk"
       ],
       "satirlar": [
         [
-          "1. Kart (Necm 39–40)",
+          "Necm 39–40: “İnsan ancak çabasının sonucunu elde eder.”",
           "Rızık ve Başarı",
           "Rızka ve başarıya ulaşmak için emek vermek"
         ],
         [
-          "2. Kart (Nisa 71)",
+          "Nisa 71: “Ey iman edenler! Tedbirinizi alın...”",
           {
             "b": "Tevekkül"
           },
@@ -149,7 +129,7 @@
           }
         ],
         [
-          "3. Kart (Bakara 168)",
+          "Bakara 168: “Yeryüzündeki maddelerin helal ve temiz olanlarından yiyin...”",
           {
             "b": "Sağlık ve Rızık"
           },
@@ -158,7 +138,7 @@
           }
         ],
         [
-          "4. Kart (Ebu Davud, Tıb, 1)",
+          "Hadis: “Tedavi olunuz; Allah her hastalığın şifasını da yaratmıştır.”",
           {
             "b": "Sağlık ve Hastalık"
           },
@@ -171,14 +151,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görselde Hz. Muhammed’in (sav) hicret yolculuğunda izlediği tutum iki aşamalı olarak şemalaştırılmıştır. Bu olayda alınan güvenlik önlemi nedir ve Tevbe suresi 40. ayetteki söz tevekkülün hangi aşamasını gösterir?",
-      "cevap": "Sevr Mağarası’na gidilmesi güvenlik önlemidir; ayetteki söz tedbirden sonra Allah’a güvenmeyi gösterir.",
+      "soru": "Hz. Muhammed (sav) hicret yolculuğunda güvenlik için önce Mekke’nin güneyindeki Sevr Mağarası’na gitmiş, ardından endişelenen Hz. Ebu Bekir’e “Tasalanma! Allah bizimle beraberdir.” (Tevbe, 40) buyurmuştur. Bu olayda alınan güvenlik önlemi nedir ve ayetteki söz tevekkülün hangi aşamasını gösterir?",
+      "cevap": "Sevr Mağarası güvenlik önlemidir; ayetteki söz tedbirden sonra Allah’a güvenmeyi gösterir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki akış şemasında Hz. Ömer’in Şam yolculuğunda yaşanan veba olayı özetlenmiştir. Bu olaydaki gelişmeleri gerçekleşme sırasına göre 1’den 5’e kadar numaralandırınız.",
+      "soru": "Hz. Ömer’in Şam yolculuğu sırasında yaşanan veba salgını olayındaki aşağıdaki gelişmeleri gerçekleşme sırasına göre 1’den 5’e kadar numaralandırınız.",
       "ogeler": [
         "Hz. Ömer’in Serğ Köyü’nde Şam çevresinde veba salgını çıktığını öğrenmesi",
         "Sahabelerle istişare edilerek insanların tehlikeye atılmaması kararının alınması",
@@ -197,7 +177,8 @@
         "Kaan, Mert ve Selin",
         "Mert, Selin ve Duru"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -209,13 +190,14 @@
         "1: Sağlık — 2: Gençlik — 3: Rızık",
         "1: Zenginlik — 2: Boş vakit — 3: Hayat"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görselde Hz. Ömer’in Ebu Ubeyde’ye anlattığı “verimli yamaç ve kıraç yamaç” benzetmesi gösterilmiştir. Develeri hangi yamaçta otlatırsa otlatsın Allah’ın kaderi içinde hareket edilmesi, insanın iradesi ve sorumluluğu açısından neyi ifade eder?",
-      "cevap": "İnsan iradesiyle yararlı olanı seçmekle sorumludur; yaptığı bu doğru seçim de Allah’ın kaderi içindedir.",
+      "soru": "Hz. Ömer, Ebu Ubeyde’ye bir vadinin otu ve suyu bol verimli yamacı ile kurak kıraç yamacını örnek vermiş; develeri hangi yamaçta otlatırsa otlatsın Allah’ın kaderi içinde hareket etmiş olacağını belirtmiştir. Bu örnek insanın iradesi ve sorumluluğu açısından neyi ifade eder?",
+      "cevap": "İnsan iradesiyle faydalı olanı seçmekle sorumludur; bu seçim de Allah’ın kaderi içindedir.",
       "satir": 2
     },
     {
@@ -269,9 +251,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki şemada sağlığı koruma önlemleri ve hastalık anındaki görevler birlikte verilmiştir. Bütün önlemleri aldığı hâlde hastalanan bir kişinin “Tedaviye gerek yok, kaderimde ne varsa o olur.” demesi neden yanlıştır? Açıklayınız.",
-      "cevap": "Sağlık Allah’ın emanetidir; Hz. Peygamber her hastalığın şifasının yaratıldığını bildirerek tedavi olmayı öğütlemiştir.",
-      "satir": 3
+      "soru": "Sağlığını korumak için temiz beslenme ve dinlenme gibi önlemleri aldığı hâlde hastalanan bir kişinin “Tedaviye gerek yok, kaderimde ne varsa o olur.” diyerek doktora gitmemesi İslam’ın sağlık ve tevekkül anlayışına göre neden yanlıştır? Hz. Peygamber’in öğüdüyle açıklayınız.",
+      "cevap": "Sağlık Allah’ın emanetidir; Hz. Peygamber her hastalığın şifası olduğunu bildirmiştir.",
+      "satir": 2
     },
     {
       "tur": "coktan",

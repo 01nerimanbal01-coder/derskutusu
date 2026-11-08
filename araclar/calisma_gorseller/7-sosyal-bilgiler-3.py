@@ -1,192 +1,75 @@
-"""7. sınıf Sosyal Bilgiler 3. hafta (Özel Gereksinimli Bireyler İçin Fırsat Eşitliği: temel haklar, Anayasa m. 10, erişilebilirlik, başarı öyküleri) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 10.5-13 punto (K150 EK); kesir yok (K155)."""
+"""7-sosyal-bilgiler-3 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-GRI, GRI_A, SOLUK, KAHVE, ALTIN, KUM = '#9aa6bd', '#eef1f6', '#5b6479', '#8a5a2b', '#f2c14e', '#fffdf5'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-DUZ = 'font-family="Noto Sans, sans-serif" font-weight="400"'
-
-
-def svg(w, h, ic, etiket, en_fazla=24):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ek='', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {DUZ if ince else YAZI} fill="{renk}"{ek}>{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4, ek=''):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"{ek}/>'
-
-
-def kapsam_semasi_svg():
-    """Özel gereksinimli birey kapsamı şeması (K kutusu soru işaretli)."""
-    ic = kutu(76, 4, 208, 22, LAC, LAC, 11, 1)
-    ic += yazi(180, 19, 'Özel Gereksinimli Birey Kapsamı', 11, '#fff')
-    gruplar = [
-        ('Görme ve işitme yetersizliği', MAVI, MAVI_A),
-        ('Bedensel yetersizlik', MAVI, MAVI_A),
-        ('Dil ve konuşma bozukluğu', TUR, TUR_A),
-        ('Dikkat eksikliği ve hiperaktivite', TUR, TUR_A),
-        ('Öğrenme güçlüğü', YES, YES_A),
-        ('K: ?', MOR, MOR_A),
-    ]
-    for i, (ad, r, z) in enumerate(gruplar):
-        x, y = 4 + (i % 2) * 180, 32 + (i // 2) * 23
-        ic += kutu(x, y, 172, 19, z, r, 6, 1.3)
-        ic += yazi(x + 86, y + 13.5, ad, 10.0, r if 'K:' in ad else LAC)
-    return svg(360, 104, ic, 'Özel gereksinimli birey kapsamı şeması: görme ve işitme yetersizliği, bedensel yetersizlik, dil ve konuşma bozukluğu, dikkat eksikliği ve hiperaktivite, öğrenme güçlüğü ve K soru işareti.', 18)
-
-
-def anayasa_ve_haklar_svg():
-    """Anayasa Madde 10 ve yasal güvence bilgi panosu."""
-    ic = kutu(4, 4, 172, 82, MAVI_A, MAVI, 8, 1.4)
-    ic += f'<rect x="4" y="4" width="172" height="20" rx="8" fill="{MAVI}"/><rect x="4" y="16" width="172" height="8" fill="{MAVI}"/>'
-    ic += yazi(90, 18, 'Anayasa · Madde 10', 11, '#fff')
-    ic += yazi(90, 40, 'Dil, ırk, cinsiyet ve inanç', 10.5, LAC, ince=True)
-    ic += yazi(90, 56, 'ayrımı gözetilmeksizin herkes', 10.5, LAC, ince=True)
-    ic += yazi(90, 72, 'kanun önünde eşittir.', 10.5, MAVI)
-
-    ic += kutu(184, 4, 172, 82, YES_A, YES, 8, 1.4)
-    ic += f'<rect x="184" y="4" width="172" height="20" rx="8" fill="{YES}"/><rect x="184" y="16" width="172" height="8" fill="{YES}"/>'
-    ic += yazi(270, 18, '4 Alanda Yasal Güvence', 11, '#fff')
-    ic += yazi(196, 39, 'Eğitim (Kaynaştırma ve BEP)', 10.2, LAC, 'start', ince=True)
-    ic += yazi(196, 55, 'Kamu binaları ve ulaşım', 10.5, LAC, 'start', ince=True)
-    ic += yazi(196, 71, 'Sağlık ve sosyal yaşam', 10.5, LAC, 'start', ince=True)
-    return svg(360, 90, ic, 'Anayasa Madde 10 kanun önünde eşitlik ve 4 alanda yasal güvence panosu.', 18)
-
-
-def etki_tablosu_svg():
-    """Fırsat eşitliğinin birey ve toplum kazanımları tablosu (III ve B yer değiştirmeli)."""
-    ic = kutu(4, 4, 172, 92, MAVI_A, MAVI, 8, 1.4)
-    ic += f'<rect x="4" y="4" width="172" height="20" rx="8" fill="{MAVI}"/><rect x="4" y="16" width="172" height="8" fill="{MAVI}"/>'
-    ic += yazi(90, 18, 'Birey İçin Kazanımlar', 11, '#fff')
-    sol = [
-        'I. Yeteneklerini geliştirir.',
-        'II. Öz güveni yükselir.',
-        'III. Toplumsal barış hâkim olur.',
-    ]
-    for i, m in enumerate(sol):
-        ic += yazi(12, 40 + i * 19, m, 10.2, KIR if i == 2 else LAC, 'start', ince=True)
-
-    ic += kutu(184, 4, 172, 92, TUR_A, TUR, 8, 1.4)
-    ic += f'<rect x="184" y="4" width="172" height="20" rx="8" fill="{TUR}"/><rect x="184" y="16" width="172" height="8" fill="{TUR}"/>'
-    ic += yazi(270, 18, 'Toplum İçin Kazanımlar', 11, '#fff')
-    sag = [
-        'A. Adalet ortamı güçlenir.',
-        'B. Kendini değerli hisseder.',
-        'C. Etkin katılımla huzur artar.',
-    ]
-    for i, m in enumerate(sag):
-        ic += yazi(192, 40 + i * 19, m, 10.2, KIR if i == 1 else LAC, 'start', ince=True)
-    return svg(360, 100, ic, 'Fırsat eşitliği kazanım tablosu: Birey sütununda I Yeteneklerini geliştirir, II Öz güveni yükselir, III Toplumsal barış hâkim olur; Toplum sütununda A Adalet ortamı güçlenir, B Kendini değerli hisseder, C Etkin katılımla huzur artar.', 19)
-
-
-def dort_alan_kartlari_svg():
-    """Dört yasal güvence uygulama kartı."""
-    kartlar = [
-        ('1. Kart', 'Bireyselleştirilmiş eğitim (BEP)', MAVI, MAVI_A),
-        ('2. Kart', 'Bina girişinde rampa ve asansör', TUR, TUR_A),
-        ('3. Kart', 'Hastanede kolay muayene erişimi', YES, YES_A),
-        ('4. Kart', 'Sanat ve spor destek hizmetleri', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 42
-        ic += kutu(x, y, 172, 36, z, r, 7, 1.3)
-        ic += yazi(x + 10, y + 14, bas, 10.5, r, 'start')
-        ic += yazi(x + 10, y + 28, alt, 10, LAC, 'start', ince=True)
-    return svg(360, 88, ic, 'Dört uygulama kartı: 1. Kart Bireyselleştirilmiş eğitim, 2. Kart Bina girişinde rampa ve asansör, 3. Kart Hastanede kolay muayene erişimi, 4. Kart Sanat ve spor destek hizmetleri.', 18)
-
-
-def basari_oykuleri_svg():
-    """Batuhan Eruçar, Sare Aydın ve Yusuf Akgün başarı öyküsü kartları."""
-    kartlar = [
-        ('Batuhan Eruçar', ['Yüzmede 120’yi aşkın', 'madalya, kulüp kurdu'], MAVI, MAVI_A),
-        ('Sare Aydın', ['Tıp fakültesi birincisi', 've psikiyatri uzmanı'], TUR, TUR_A),
-        ('Yusuf Akgün', ['Ağzıyla resim sanatı', 've çoklu spor ödülü'], YES, YES_A),
-    ]
-    ic = ''
-    for i, (ad, sat, r, z) in enumerate(kartlar):
-        x = 4 + i * 119
-        ic += kutu(x, 6, 114, 78, z, r, 8, 1.4)
-        ic += f'<rect x="{x}" y="6" width="114" height="20" rx="8" fill="{r}"/><rect x="{x}" y="18" width="114" height="8" fill="{r}"/>'
-        ic += yazi(x + 57, 20, ad, 10.2, '#fff')
-        ic += yazi(x + 57, 44, sat[0], 9.4, LAC, ince=True)
-        ic += yazi(x + 57, 62, sat[1], 9.4, LAC, ince=True)
-    return svg(360, 90, ic, 'Üç başarı öyküsü kartı: Batuhan Eruçar yüzme madalyaları, Sare Aydın tıp fakültesi birinciliği, Yusuf Akgün ağzıyla resim ve sergiler.', 18)
-
-
-def okul_duzenleme_panosu_svg():
-    """Dört durum panosu (4. durum fırsat eşitliğine aykırı)."""
-    durumlar = [
-        ('1. Durum', 'Kaldırıma takip şeridi döşenmesi', MAVI, MAVI_A),
-        ('2. Durum', 'Üstün yetenekli öğrenciye atölye', YES, YES_A),
-        ('3. Durum', 'Laboratuvara kız-erkek eşit erişim', TUR, TUR_A),
-        ('4. Durum', 'Öğrencinin geziye alınmaması', KIR, KIR_A),
-    ]
-    ic = ''
-    for i, (bas, m, r, z) in enumerate(durumlar):
-        x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 42
-        ic += kutu(x, y, 172, 36, z, r, 7, 1.3)
-        ic += yazi(x + 10, y + 14, bas, 10.5, r, 'start')
-        ic += yazi(x + 10, y + 28, m, 9.6, LAC, 'start', ince=True)
-    return svg(360, 88, ic, 'Dört durum panosu: 1. durum takip şeridi, 2. durum destek atölyesi, 3. durum eşit laboratuvar erişimi, 4. durum öğrencinin geziye alınmaması.', 18)
-
-
-def uc_portre_eslestirme_svg():
-    """I, II ve III numaralı başarı rozetleri."""
-    rozetler = [
-        ('I. Rozet', ['Anzak Koyu Yüzme', 'Yarışı Birincisi'], MAVI, MAVI_A),
-        ('II. Rozet', ['Tıp Fakültesi Birincisi', 'Psikiyatri Uzmanı'], TUR, TUR_A),
-        ('III. Rozet', ['Ağzıyla Resim Sanatı', 've Çoklu Spor Ödülü'], YES, YES_A),
-    ]
-    ic = ''
-    for i, (bas, sat, r, z) in enumerate(rozetler):
-        x = 4 + i * 119
-        ic += kutu(x, 6, 114, 74, z, r, 8, 1.4)
-        ic += yazi(x + 57, 23, bas, 10.6, r)
-        ic += yazi(x + 57, 44, sat[0], 9.5, LAC, ince=True)
-        ic += yazi(x + 57, 60, sat[1], 9.5, LAC, ince=True)
-    return svg(360, 86, ic, 'Üç başarı rozeti: I Anzak Koyu Yüzme Yarışı Birincisi, II Tıp Fakültesi Birincisi Psikiyatri Uzmanı, III Ağzıyla Resim Sanatı ve Çoklu Spor Ödülü.', 18)
-
-
-def park_yeri_levhasi_svg():
-    """Engelli araç park yeri ve kaldırım rampası uyarı kartı."""
-    ic = kutu(4, 4, 352, 76, CAM_A, CAM, 8, 1.4)
-    ic += kutu(14, 12, 92, 60, '#fff', MAVI, 7, 1.5)
-    ic += yazi(60, 34, '[ P ]', 13, MAVI)
-    ic += yazi(60, 56, 'Özel Park Yeri', 10.5, LAC)
-    ic += kutu(116, 12, 228, 60, '#fff', CAM, 7, 1.2)
-    ic += yazi(230, 30, 'Erişilebilirlik Alanı Uyarısı', 11, CAM)
-    ic += yazi(126, 48, 'Park yeri ve rampa önü boş tutulmalıdır.', 10.5, LAC, 'start', ince=True)
-    ic += yazi(126, 63, 'Eşit koşullarda ulaşım temel haktır.', 10.5, LAC, 'start', ince=True)
-    return svg(360, 84, ic, 'Engelli araç park yeri levhası ve erişilebilirlik alanı uyarı kartı.', 18)
-
-
-def okul_bahcesi_kroki_svg():
-    """Okul bahçesi ve kütüphane girişi erişilebilirlik krokisi."""
-    ic = kutu(4, 4, 352, 82, KUM, GRI, 8, 1.3)
-    ic += yazi(180, 19, 'OKUL ERİŞİLEBİLİRLİK KROKİSİ (Eksik Alanlar)', 11, LAC)
-    ic += kutu(12, 28, 162, 50, KIR_A, KIR, 6, 1.3)
-    ic += yazi(93, 45, '1. Kütüphane Girişi', 10.5, KIR)
-    ic += yazi(93, 63, 'Yalnız 5 basamak merdiven var', 10, LAC, ince=True)
-    ic += kutu(186, 28, 162, 50, TUR_A, TUR, 6, 1.3)
-    ic += yazi(267, 45, '2. Bahçe Yürüyüş Yolu', 10.5, TUR)
-    ic += yazi(267, 63, 'Düz beton (takip şeridi yok)', 10, LAC, ince=True)
-    return svg(360, 90, ic, 'Okul erişilebilirlik krokisi: 1 Kütüphane girişinde yalnız 5 basamak merdiven var, 2 Bahçe yürüyüş yolunda takip şeridi yok.', 18)
+GORSELLER = {1: '<svg viewBox="0 0 350 198" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Özel gereksinimli birey '
+    'kapsamı şeması: görme ve işitme yetersizliği, bedensel yetersizlik, dil ve konuşma bozukluğu, dikkat eksikliği ve hiperaktivite, '
+    'öğrenme güçlüğü ve K soru işareti."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e8eefe" stroke="#0b2257" '
+    'stroke-width="0.75"/><text x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Özel Gereksinimli Birey Kapsamı</text><rect x="4" y="31" width="342" height="25" rx="5" '
+    'fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="48.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Görme ve işitme yetersizliği</text><rect x="4" y="59" width="342" height="25" '
+    'rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="76.3" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Bedensel yetersizlik</text><rect x="4" y="87" width="342" height="25" '
+    'rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="104.3" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Dil ve konuşma bozukluğu</text><rect x="4" y="115" width="342" '
+    'height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="132.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Dikkat eksikliği ve hiperaktivite</text><rect '
+    'x="4" y="143" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="160.3" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Öğrenme '
+    'güçlüğü</text><rect x="4" y="171" width="342" height="25" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" '
+    'y="188.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">K: '
+    '?</text></svg>',
+ 4: '<svg viewBox="0 0 350 168" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fırsat eşitliği kazanım '
+    'tablosu: Birey sütununda I Yeteneklerini geliştirir, II Öz güveni yükselir, III Toplumsal barış hâkim olur; Toplum sütununda A Adalet '
+    'ortamı güçlenir, B Kendini değerli hisseder, C Etkin katılımla huzur artar."><rect x="4" y="3" width="342" height="80" rx="5" '
+    'fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Birey İçin Kazanımlar</text><text x="11.0" y="38.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">I. Yeteneklerini geliştirir.</text><text '
+    'x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">II. Öz '
+    'güveni yükselir.</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">III. Toplumsal barış hâkim olur.</text><rect x="4" y="86" width="342" height="80" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Toplum İçin Kazanımlar</text><text x="11.0" y="121.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">A. Adalet ortamı güçlenir.</text><text '
+    'x="11.0" y="140.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">B. '
+    'Kendini değerli hisseder.</text><text x="11.0" y="158.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">C. Etkin katılımla huzur artar.</text></svg>',
+ 8: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört durum panosu: 1. '
+    'durum takip şeridi, 2. durum destek atölyesi, 3. durum eşit laboratuvar erişimi, 4. durum öğrencinin geziye alınmaması."><rect x="4" '
+    'y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Durum</text><text '
+    'x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kaldırıma takip</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">şeridi döşenmesi</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Durum</text><text x="262.5" y="39.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Üstün yetenekli</text><text x="262.5" '
+    'y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">öğrenciye '
+    'atölye</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. '
+    'Durum</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Laboratuvara</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">kız-erkek eşit erişim</text><rect x="179" y="71" width="167" height="64" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Durum</text><text x="262.5" y="107.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Öğrencinin geziye</text><text x="262.5" '
+    'y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">alınmaması</text></svg>',
+ 9: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Üç başarı rozeti: I '
+    'Anzak Koyu Yüzme Yarışı Birincisi, II Tıp Fakültesi Birincisi Psikiyatri Uzmanı, III Ağzıyla Resim Sanatı ve Çoklu Spor Ödülü."><rect '
+    'x="4" y="3" width="342" height="25" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.3" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">I. Rozet: Anzak Koyu '
+    'Yüzme · Yarışı Birincisi</text><rect x="4" y="31" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="48.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">II. Rozet</text><text x="11.0" y="66.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Tıp Fakültesi Birincisi · Psikiyatri Uzmanı</text><rect x="4" y="77" width="342" '
+    'height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="94.1" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">III. Rozet</text><text x="11.0" y="112.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ağzıyla Resim Sanatı ve Çoklu Spor '
+    'Ödülü</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = kapsam_semasi_svg()
-    s[2]['gorsel'] = anayasa_ve_haklar_svg()
-    s[4]['gorsel'] = etki_tablosu_svg()
-    s[5]['gorsel'] = dort_alan_kartlari_svg()
-    s[6]['gorsel'] = basari_oykuleri_svg()
-    s[8]['gorsel'] = okul_duzenleme_panosu_svg()
-    s[9]['gorsel'] = uc_portre_eslestirme_svg()
-    s[10]['gorsel'] = park_yeri_levhasi_svg()
-    s[12]['gorsel'] = okul_bahcesi_kroki_svg()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

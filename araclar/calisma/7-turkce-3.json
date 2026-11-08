@@ -15,8 +15,7 @@
   "hatirla": [
     "Şevket Rado “Gençliğin Kıymeti”nde gençliği çiçekli ilkbahara, olgunluğu meyve zamanına, zamanı nehre, yetişkinleri bahçıvana benzetir.",
     "Bilinmeyen sözcükler bağlam ipuçlarıyla tahmin edilip TDK Güncel Türkçe Sözlük’ten doğrulanır; okuma sonunda öz değerlendirme yapılır.",
-    "Tanık gösterme uzman sözü aktarır, benzetme ortak yön kurar, örneklendirme somutlaştırır, karşılaştırma benzerlik ve farkları belirtir.",
-    "İkilemeler ayrı yazılır ve araya işaret konmaz; üç nokta eksik cevaplarda ve okura bırakılan sonlarda kullanılır (! ve ? sonrası iki nokta)."
+    "Tanık gösterme uzman sözü aktarır, benzetme ortak yön kurar, örneklendirme somutlaştırır, karşılaştırma benzerlik ve farkları belirtir."
   ],
   "sorular": [
     {
@@ -35,14 +34,6 @@
         [
           "yüzey anlam",
           "Okunan veya izlenen içerikte doğrudan verilen açık bilgiler"
-        ],
-        [
-          "bahçıvan",
-          "Yazıda gençlerin yetişmesine destek olan yetişkinleri simgeleyen kişi"
-        ],
-        [
-          "öz değerlendirme",
-          "Okuma sürecini Evet, Kısmen ve Hayır ölçütleriyle yoklayan form"
         ]
       ]
     },
@@ -56,12 +47,13 @@
         "Gençlikte kaybedilen zaman ileri yaşta kolayca geri getirilebilir.",
         "Başarılı olmak hiçbir çaba gerektirmeden kendiliğinden gerçekleşir."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
       "duzey": "hatirla",
-      "soru": "Görseldeki kural panosuna göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
+      "soru": "İkilemelerin yazımı ve üç noktanın (…) kullanım kurallarına göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
       "ifadeler": [
         {
           "metin": "“Doğru dürüst”, “ufak tefek” ve “enine boyuna” ikilemeleri ayrı yazılır.",
@@ -78,10 +70,6 @@
         {
           "metin": "Ünlem veya soru işaretinden sonra pekiştirme için iki nokta konması yeterlidir.",
           "dogru": true
-        },
-        {
-          "metin": "“Gündengüne” ve “çolukçocuk” sözcükleri kalıplaştığı için bitişik yazılır.",
-          "dogru": false
         }
       ]
     },
@@ -102,10 +90,6 @@
         {
           "metin": "İzlenen içerikte doğrudan verilen bilgilere ___ anlam denir.",
           "cevap": "yüzey"
-        },
-        {
-          "metin": "Ünlem veya soru işaretinin yanına üç değil ___ nokta konur.",
-          "cevap": "iki"
         }
       ],
       "fazla": [
@@ -122,35 +106,36 @@
         "III. kart (Heraklit’in sözü)",
         "IV. kart (Örneklendirme yolu)"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki kartlarda verilen cümlelerde noktalama işaretinin hangi görevle kullanıldığını tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen cümlelerdeki noktalama işaretlerinin (… ve !..) hangi görevle kullanıldığını yazınız. İlk satır örnektir.",
       "basliklar": [
-        "Cümle Kartı",
+        "Örnek Cümle",
         "Noktalama İşaretinin Görevi"
       ],
       "satirlar": [
         [
-          "1. Kart (— Kitabı bitirdin mi? — Şey…)",
+          "1. Cümle (— Kitabı bitirdin mi? — Şey…)",
           "Konuşmada eksik bırakılan cevabı gösterme"
         ],
         [
-          "2. Kart (Ah… Gençliğin kıymetini bilmeli!)",
+          "2. Cümle (Ah… Gençliğin kıymetini bilmeli!)",
           {
             "b": "Ünlem ve seslenmelerde anlatımı pekiştirme"
           }
         ],
         [
-          "3. Kart (Sis dağıldı ve yemyeşil bir vadi…)",
+          "3. Cümle (Sis dağıldı ve yemyeşil bir vadi…)",
           {
             "b": "Devamını okurun hayal gücüne bırakma"
           }
         ],
         [
-          "4. Kart (Dikkat et!.. Vaktini boşa harcama.)",
+          "4. Cümle (Dikkat et!.. Vaktini boşa harcama.)",
           {
             "b": "Ünlemden sonra iki nokta ile anlamı pekiştirme"
           }
@@ -160,7 +145,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki bağlam kartında geçen “ihtimam” sözcüğünün anlamını ipuçlarından tahmin ediniz ve nasıl doğrulayacağınızı yazınız.",
+      "soru": "“Bahçıvan fidanı her gün suladı, dalları kırılmasın diye destek çubuğu bağladı; bu ihtimam sayesinde fidan büyüdü.” cümlesinde geçen “ihtimam” sözcüğünün anlamını bağlamdan tahmin ediniz ve nasıl doğrulayacağınızı yazınız.",
       "cevap": "İhtimam “özen, titizlik” demektir; anlamı TDK Güncel Türkçe Sözlük’ten doğrulanır.",
       "satir": 2
     },
@@ -185,7 +170,8 @@
         "III. fiş: Mahalleli omuz omuza verip çalıştı.",
         "IV. fiş: Kitap sayısı günden-güne artıyor."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -197,12 +183,13 @@
         "Yalnız 1. madde",
         "1, 2, 3 ve 4. maddeler"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görselde bir kısa filmin ardışık üç karesi ve anlatıcının sözü verilmiştir. İçeriğin yüzey anlamını (açık mesajını) yazınız.",
+      "soru": "“Gençlik yıllarında zamanı planlı kullanıp düzenli çalışarak ekilen emek, gelecekte büyük başarılara ve yeni buluşlara dönüşür.” cümlesinin yüzey anlamını (açık mesajını) yazınız.",
       "cevap": "Gençlikte zamanı planlı kullanıp çalışanlar ileride emeklerinin karşılığını alır.",
       "satir": 2
     },
@@ -242,7 +229,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki çiçekli ve meyveli şeftali ağacı kartlarını inceleyiniz. Yazarın olgun yaştaki güzelliği neye bağladığını açıklayınız.",
+      "soru": "“Gençliğin Kıymeti” metninde yazar, ilkbaharda çiçek açıp özenle bakılan şeftali ağacının olgunluk mevsiminde meyve vermesi benzetmesiyle olgun yaştaki güzelliği ve verimi neye bağlamaktadır? Açıklayınız.",
       "cevap": "Meyveli ağaç da güzeldir; olgun yaştaki verim gençlikte yapılan hazırlığın eseridir.",
       "satir": 2
     },

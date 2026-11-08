@@ -12,14 +12,13 @@
   "hatirla": [
     "Ondalık gösterimdeki her rakamı bulunduğu basamağın değeriyle çarpıp bu çarpımların toplamı olarak yazmaya çözümleme denir.",
     "Birler basamağının değeri {us:10|0} = 1’dir. Virgülün solunda onlar {us:10|1}, yüzler {us:10|2}; sağında onda birler {us:10|−1}, yüzde birler {us:10|−2}, binde birler {us:10|−3} ile gösterilir.",
-    "Değeri 0 olan basamağın terimi çözümlemede yazılmayabilir; çözümlenmiş biçimden sayıya dönerken eksik olan her üs için o basamağa 0 yazılır.",
-    "Bir sayıyı 10’un pozitif kuvvetiyle çarpınca virgül üs kadar sağa, negatif kuvvetiyle çarpınca sola kayar. a · {us:10|n} yazılışında üs 1 azalırsa katsayıdaki virgül 1 basamak sağa, üs 1 artarsa 1 basamak sola kayar."
+    "Değeri 0 olan basamağın terimi çözümlemede yazılmayabilir; çözümlenmiş biçimden sayıya dönerken eksik olan her üs için o basamağa 0 yazılır."
   ],
   "sorular": [
     {
       "tur": "tablo",
       "duzey": "hatirla",
-      "soru": "Görseldeki basamak değeri şemasından yararlanarak tablodaki ondalık gösterimlerin 10’un tam sayı kuvvetleriyle çözümlenmiş biçimlerini yazınız. İlk satır örnektir.",
+      "soru": "Basamak değerlerinden yararlanarak tablodaki ondalık gösterimlerin 10’un tam sayı kuvvetleriyle çözümlenmiş biçimlerini yazınız. İlk satır örnektir.",
       "basliklar": [
         "Ondalık gösterim",
         "10’un tam sayı kuvvetleriyle çözümleme"
@@ -65,14 +64,6 @@
         [
           "8 · {us:10|2} + 4 · {us:10|1} + 9 · {us:10|−3}",
           "840,009"
-        ],
-        [
-          "8 · {us:10|0} + 4 · {us:10|−2} + 9 · {us:10|−3}",
-          "8,049"
-        ],
-        [
-          "8 · {us:10|1} + 4 · {us:10|−1} + 9 · {us:10|−3}",
-          "80,409"
         ]
       ]
     },
@@ -86,7 +77,8 @@
         "III. kart (15,72)",
         "IV. kart (600,08)"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -108,10 +100,6 @@
         {
           "metin": "Bir sayıyı {us:10|−3} ile çarpmak, virgülü 3 basamak sola kaydırmaktır.",
           "dogru": true
-        },
-        {
-          "metin": "a · {us:10|n} yazılışında katsayı 10 kat büyütülürse eşitliğin korunması için üs 1 artırılır.",
-          "dogru": false
         }
       ]
     },
@@ -132,14 +120,6 @@
         {
           "metin": "Bir sayıyı 10’un pozitif kuvvetiyle çarpınca virgül ___ kayar.",
           "cevap": "sağa"
-        },
-        {
-          "metin": "Bir sayıyı 10’un negatif kuvvetiyle çarpınca virgül ___ kayar.",
-          "cevap": "sola"
-        },
-        {
-          "metin": "Eşitlikte katsayıdaki virgül sağa kaydırılırsa 10’un üssü ___.",
-          "cevap": "azalır"
         }
       ],
       "fazla": [
@@ -149,7 +129,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki tartım etiketlerinde K, L ve M paketlerinin kütleleri gram cinsinden çözümlenmiş olarak verilmiştir. Her paketin kütlesini ondalık gösterimle yazınız.",
+      "soru": "Üç paketin gram cinsinden çözümlenmiş kütleleri K = 4 · {us:10|1} + 7 · {us:10|−1} + 5 · {us:10|−2}, L = 4 · {us:10|1} + 8 · {us:10|0} + 2 · {us:10|−3} ve M = 4 · {us:10|1} + 7 · {us:10|0} + 9 · {us:10|−2} olarak verilmiştir. Her paketin kütlesini ondalık gösterimle yazınız.",
       "cevap": "K paketi: 40,75 g; L paketi: 48,002 g; M paketi: 47,09 g.",
       "satir": 2
     },
@@ -163,12 +143,13 @@
         "K = 18,5 ve L = 54",
         "K = 0,185 ve L = 54"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki dönüşüm zincirini inceleyerek tablodaki sayıların verilen 10’un kuvvetlerine göre a katsayısını ve yazılışını tamamlayınız. İlk satır örnektir.",
+      "soru": "Tablodaki sayıların verilen 10’un kuvvetlerine göre a katsayısını ve a · {us:10|n} yazılışını tamamlayınız. İlk satır örnektir.",
       "basliklar": [
         "Verilen sayı",
         "İstenen kuvvet",
@@ -206,7 +187,7 @@
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki beş ölçüm kartında yazan ifadeleri değerlerine göre en küçükten (1) en büyüğe (5) doğru sıralayınız.",
+      "soru": "Aşağıda verilen beş ifadeyi değerlerine göre en küçükten (1) en büyüğe (5) doğru sıralayınız.",
       "ogeler": [
         "420 · {us:10|−3}",
         "420 · {us:10|−2}",
@@ -225,12 +206,13 @@
         "x = 3 ve y = 84",
         "x = 4 ve y = 8,4"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki eşitlik kartında 608,409 sayısının çözümlenmiş biçimi verilmiştir. Buna göre a, b, c, d tam sayılarını ve a + b + c + d toplamını bulunuz.",
+      "soru": "608,409 = 6 · {us:10|a} + 8 · {us:10|b} + 4 · {us:10|c} + 9 · {us:10|d} çözümleme eşitliğine göre a, b, c, d tam sayılarını ve a + b + c + d toplamını bulunuz.",
       "cevap": "Üsler a = 2, b = 0, c = −1 ve d = −3 olduğundan bu dört üssün toplamı −2 bulunur.",
       "satir": 2
     },
@@ -282,9 +264,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki kartta 75,083 sayısının çözümlenmiş biçimi verilmiş, iki rakamın yerine ▲ ve ■ sembolleri konmuştur. Çözümlemede neden {us:10|−1} teriminin yer almadığını açıklayınız ve ▲ + ■ toplamını bulunuz.",
-      "cevap": "Onda birler basamağındaki rakam 0 olduğu için bu basamak çözümlemede yer almaz; ▲ rakamı 7 ve ■ rakamı 8 olduğundan toplamları 15 bulunur.",
-      "satir": 3
+      "soru": "75,083 = ▲ · {us:10|1} + 5 · {us:10|0} + ■ · {us:10|−2} + 3 · {us:10|−3} çözümlemesinde neden {us:10|−1} teriminin yer almadığını açıklayınız ve ▲ + ■ toplamını bulunuz.",
+      "cevap": "Onda birler basamağı 0 olduğundan çözümlemede yer almaz; ▲ = 7 ve ■ = 8 olup toplamları 15’tir.",
+      "satir": 2
     }
   ]
 }

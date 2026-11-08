@@ -12,14 +12,13 @@
   "hatirla": [
     "Gezici kütüphane, yerleşik kütüphaneden yararlanamayan okurlara taşıtlarla kitap götürerek fırsat eşitliğini destekler; ücretsiz internet ve bilgisayar eğitimiyle dijital uçurumun kapanmasına katkı sağlar.",
     "Araçlarda iki binden fazla güncel kitap ve personel bulunur; ödünç verme, internet, film gösterimi ve süreli yayınlar hizmet iken bilgisayar, yazıcı, LCD TV ve projeksiyon donanımdır.",
-    "Dünyada gemi (İsveç), tren (Fransa), posta (Sovyetler), deniz-kara (Norveç); ülkemizde ise 1960’larda Ürgüp’te Mustafa Güzelgöz’ün merkeple başlattığı hizmet 1963’ten sonra motorlu taşıtlarla sürdürülmüştür.",
-    "Benzetme (teşbih) zayıf olanı güçlü olana benzetir; fiilimsiler kip ve kişi eki almadan isim-fiil (işin adı), sıfat-fiil (ismi niteleme) ve zarf-fiil (eylemi niteleme) görevinde kullanılır."
+    "Dünyada gemi (İsveç), tren (Fransa), posta (Sovyetler), deniz-kara (Norveç); ülkemizde ise 1960’larda Ürgüp’te Mustafa Güzelgöz’ün merkeple başlattığı hizmet 1963’ten sonra motorlu taşıtlarla sürdürülmüştür."
   ],
   "sorular": [
     {
       "tur": "tablo",
       "duzey": "hatirla",
-      "soru": "Görseldeki gezici kütüphane şemasından yararlanarak unsurların “Hizmet” mi “Donanım” mı olduğunu ve okura yararını yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki gezici kütüphane unsurlarının “Hizmet” mi yoksa “Donanım” mı olduğunu ve okura sağladığı yararı yazınız. İlk satır örnektir.",
       "basliklar": [
         "Gezici kütüphane unsuru",
         "Grubu",
@@ -70,7 +69,8 @@
         "III. kart: Kitap sayfaları, okuru yeni kıtalara uçuran birer kanat gibidir.",
         "IV. kart: Kütüphaneci, bilgi bahçesini özenle sulayan bir bahçıvan gibidir."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "eslestir",
@@ -88,14 +88,6 @@
         [
           "Yerleşik",
           "Gezici olmayan, belirli bir mekânda sabit bulunan"
-        ],
-        [
-          "Dijital uçurum",
-          "Toplumların bilgiye erişim ve teknoloji kullanımındaki farkı"
-        ],
-        [
-          "Süreli yayın",
-          "Belirli aralıklarla basılan gazete, dergi gibi eserler"
         ]
       ]
     },
@@ -119,10 +111,6 @@
         {
           "metin": "“Gezici kütüphaneye uğradı.” cümlesindeki “uğradı” sözcüğü kip eki aldığı için zarf-fiildir.",
           "dogru": false
-        },
-        {
-          "metin": "Bilgilendirici metinlerde kanıtlar ve örnekler ağırlıklı olarak gelişme bölümünde yer alır.",
-          "dogru": true
         }
       ]
     },
@@ -143,14 +131,6 @@
         {
           "metin": "İsveç’te gezici kütüphane hizmeti ___ ile verildi.",
           "cevap": "gemi"
-        },
-        {
-          "metin": "Cümlede işin adını bildiren fiilimsiye ___ denir.",
-          "cevap": "isim-fiil"
-        },
-        {
-          "metin": "Bilgilendirici metinde ___ anlatım biçimi kullanılır.",
-          "cevap": "açıklayıcı"
         }
       ],
       "fazla": [
@@ -167,12 +147,13 @@
         "Türkiye’de 1963 yılından sonra motorlu taşıtlar da hizmete girmiştir.",
         "Tüm ülkelerde gezici kütüphane hizmeti aynı yıl yalnız trenle başlamıştır."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki yazma rehberinden yararlanarak bilgilendirici metin yazma basamaklarını baştan sona 1’den 5’e kadar sıralayınız.",
+      "soru": "Bilgilendirici bir metin yazma sürecine ait aşağıdaki basamakları baştan sona 1’den 5’e kadar sıralayınız.",
       "ogeler": [
         "Yazılacak metnin konusunu ve okura iletilecek ana fikrini belirlemek",
         "Giriş bölümünde konuyu kısaca tanıtarak okurun ilgisini çekmek",
@@ -184,7 +165,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki fiilimsi şemasını inceleyerek cümlelerde koyu yazılan sözcüklerin görevini ve fiilimsi türünü yazınız.",
+      "soru": "Tablodaki cümlelerde koyu yazılan sözcüklerin cümledeki görevini ve fiilimsi türünü (isim-fiil, sıfat-fiil, zarf-fiil) yazınız. İlk satır örnektir.",
       "basliklar": [
         "Cümle",
         "Cümledeki görevi",
@@ -228,7 +209,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki şemada “Bilgi, karanlık yolu aydınlatan bir meşale gibidir; çünkü doğru yönü buldurur.” cümlesi verilmiştir. Benzeyen, kendisine benzetilen ve benzetme yönünü yazınız.",
+      "soru": "“Bilgi, karanlık yolu aydınlatan bir meşale gibidir; çünkü doğru yönü buldurur.” cümlesindeki benzeyen, kendisine benzetilen ve benzetme yönü unsurlarını yazınız.",
       "cevap": "Benzeyen: Bilgi; benzetilen: meşale; benzetme yönü: doğru yönü buldurup aydınlatması.",
       "satir": 2
     },
@@ -242,13 +223,14 @@
         "3. fiş: Rehberle “gezilen” bölümlerde nadir eserler vardı.",
         "4. fiş: Sınıfça ilçemizdeki yeni kütüphaneyi dün “gezdik”."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki kartta metinle ilgili A ve B soruları verilmiştir. Hangi sorunun yanıtı doğrudan metinden bulunur, hangisi için çıkarım yapmak gerekir?",
-      "cevap": "A sorusunun yanıtı doğrudan metindedir; B sorusu ise metin dışı öneri istediği için çıkarım gerektirir.",
+      "soru": "Gezici kütüphaneleri tanıtan bir metin hakkında A: “Gezici kütüphanede kaç kitap ve hangi cihazlar bulunur?” ve B: “Gelecekte bu araçlara hangi yeni hizmetler eklenebilir?” soruları sorulmuştur. Hangi sorunun yanıtı doğrudan metinden bulunur, hangisi için çıkarım yapmak gerekir?",
+      "cevap": "A sorusunun yanıtı doğrudan metindedir; B sorusu metin dışı öneri istediğinden çıkarım gerekir.",
       "satir": 2
     },
     {
@@ -304,8 +286,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki karşılaştırma kartına göre 1960’lı yıllardaki çalışma ile günümüz gezici kütüphane otobüslerinin ortak amacını ve temel farkını yazınız.",
-      "cevap": "Ortak amaç uzak okura kitap ulaştırıp fırsat eşitliği sağlamaktır; temel fark taşıt ve teknoloji olanaklarıdır.",
+      "soru": "1960’lı yıllarda Ürgüp’te Mustafa Güzelgöz’ün yük hayvanlarıyla 35 köye kitap ulaştırması ile günümüzde içinde bilgisayar, internet ve 2000’den fazla kitap bulunan gezici kütüphane otobüslerinin ortak amacını ve temel farkını yazınız.",
+      "cevap": "Ortak amaç uzak okura kitap ulaştırıp fırsat eşitliği sağlamaktır; farkı taşıt ve teknolojidir.",
       "satir": 2
     }
   ]

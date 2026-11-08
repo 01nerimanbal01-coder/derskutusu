@@ -15,14 +15,13 @@
   "hatirla": [
     "Mükerrem Kâmil Su’nun “Atatürk Bizimle” metni dinlenmeden önce Atatürk kitapları hakkındaki araştırma paylaşılır; dinlerken dikkat dağıtan hareketlerden kaçınılıp bilinmeyen sözcükler kısaca not alınır.",
     "Dinleme sonrasında not alınan sözcüklerin anlamı TDK Güncel Türkçe Sözlük gibi bir kaynaktan bulunarak iki sütunlu tabloya yazılır ve seçilen iki sözcük sözlükteki anlamına uygun cümlelerde kullanılır.",
-    "Özet; metnin ana çizgisini ve olay sırasını koruyarak, gereksiz ayrıntıları azaltıp kendi cümlelerimizle kurulur. Başlık önerisi metnin konusunu veya ana düşüncesini yansıtır; görüş bildirirken düşünce ile gerekçesi birlikte söylenir.",
-    "Aynı fiil kökünden cümledeki göreve göre isim-fiil (işin adı), sıfat-fiil (ismi niteleme) veya zarf-fiil (zaman, durum/nasıl) kurulur. İki cümle birleştirilirken çekimli fiil sonda kalır; aradaki zaman, nasıl, amaç veya niteleme ilişkisine uygun fiilimsi seçilir."
+    "Özet; metnin ana çizgisini ve olay sırasını koruyarak, gereksiz ayrıntıları azaltıp kendi cümlelerimizle kurulur. Başlık önerisi metnin konusunu veya ana düşüncesini yansıtır; görüş bildirirken düşünce ile gerekçesi birlikte söylenir."
   ],
   "sorular": [
     {
       "tur": "siralama",
       "duzey": "hatirla",
-      "soru": "Görseldeki süreç şemasından yararlanarak “Atatürk Bizimle” dinleme çalışmasının basamaklarını baştan sona doğru 1’den 5’e kadar sıralayınız.",
+      "soru": "“Atatürk Bizimle” dinleme çalışmasının aşağıdaki uygulama basamaklarını dinleme öncesinden dinleme sonrasına doğru 1’den 5’e kadar sıralayınız.",
       "ogeler": [
         "Dinlemeden önce Atatürk kitapları araştırmasını paylaşmak",
         "Dikkat dağıtıcı hareket etmeden dinleyip sözcük not almak",
@@ -41,12 +40,13 @@
         "Sözcükleri dinleme sırasında metni durdurarak aramıştır.",
         "Tabloya sözcüklerin yalnızca eş sesli anlamlarını yazmıştır."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki kök-görev şemasını inceleyerek “oku-” fiil kökünden cümledeki boşluğun görevine uygun fiilimsiyi kurunuz ve türünü tabloya yazınız. İlk satır örnektir.",
+      "soru": "“oku-” fiil kökünden, tablodaki cümlelerde boş bırakılan yerin görevine uygun fiilimsiyi türetiniz ve fiilimsinin türünü tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Cümle ve boşluğun görevi",
         "Kurulan fiilimsi",
@@ -103,14 +103,6 @@
         [
           "Gerekçeli görüş",
           "Düşünceyi nedeni ile birlikte açıklama"
-        ],
-        [
-          "Çekimli fiil",
-          "Kip ve kişi eki alarak yüklem olan sözcük"
-        ],
-        [
-          "Başlık önerisi",
-          "Metnin konusunu veya ana düşüncesini yansıtan ad"
         ]
       ]
     },
@@ -134,10 +126,6 @@
         {
           "metin": "İki cümleyi fiilimsiyle tek cümle yaparken iki cümlenin de yüklemi çekimli fiil olarak korunur.",
           "dogru": false
-        },
-        {
-          "metin": "“Araştırma yapmak için kütüphaneye uğradı.” cümlesinde “yapmak” isim-fiili amaç ilişkisi kurmuştur.",
-          "dogru": true
         }
       ]
     },
@@ -158,14 +146,6 @@
         {
           "metin": "Bir ismi niteleyen fiilimsi türüne ___ denir.",
           "cevap": "sıfat-fiil"
-        },
-        {
-          "metin": "Eylemin nasıl veya ne zaman yapıldığını bildiren fiilimsiye ___ denir.",
-          "cevap": "zarf-fiil"
-        },
-        {
-          "metin": "Görüş bildirirken düşüncemizi ___ ile birlikte söylemeliyiz.",
-          "cevap": "gerekçesi"
         }
       ],
       "fazla": [
@@ -182,12 +162,13 @@
         "III. kart: Nil, notlarından yararlanıp kendi cümlelerini kurmuştur.",
         "IV. kart: Mert, gereksiz ayrıntıları özetten çıkarmıştır."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki cümle birleştirme şemasından yararlanarak tablodaki ikişer cümleyi parantez içindeki ilişkiye uygun fiilimsiyle tek cümle hâline getiriniz. İlk satır örnektir.",
+      "soru": "Tablodaki ikişer cümleyi parantez içinde belirtilen anlam ilişkisine uygun bir fiilimsi kullanarak tek cümle hâline getiriniz ve fiilimsi türünü yazınız. İlk satır örnektir.",
       "basliklar": [
         "Ayrı cümleler ve istenen ilişki",
         "Fiilimsiyle birleştirilmiş tek cümle",
@@ -231,7 +212,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki panoda “Bir yazar olsaydınız ne tür kitaplar yazmak isterdiniz?” sorusuna Duru ve Emre’nin verdiği yanıtlar yer almaktadır. Hangi öğrencinin yanıtı “görüş bildirme” kuralına tam uygundur? Nedenini açıklayınız.",
+      "soru": "“Bir yazar olsaydınız ne tür kitaplar yazmak isterdiniz?” sorusuna Duru “Bir yazar olsaydım çocuk romanları yazmak isterdim.”, Emre ise “Tarihî öyküler yazmak isterdim; çünkü geçmişteki kahramanları tanıtmak çok değerlidir.” yanıtını vermiştir. Hangi öğrencinin yanıtı gerekçeli görüş bildirme kuralına tam uygundur? Nedenini açıklayınız.",
       "cevap": "Emre’nin yanıtı uygundur; çünkü görüşünü nedeni (“çünkü…”) ile birlikte açıklamıştır.",
       "satir": 2
     },
@@ -245,12 +226,13 @@
         "3. fiş: Defterine yeni öğrendiği iki sözcüğü “yazdı”.",
         "4. fiş: Anı türünde kitap “yazmak” hazırlık gerektirir."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki dinleme metni kartında Cumhuriyet’in ilk yıllarında köy okullarına kitap ulaştıran bir öğretmenin çabası anlatılmaktadır. Bu metin için biri konuyu, diğeri ana düşünceyi yansıtan iki farklı başlık önerisi yazınız.",
+      "soru": "Cumhuriyet’in ilk yıllarında ahşap sandıklarla köy okullarına kitap taşıyıp çocuklara okuma sevgisi kazandıran bir öğretmenin çabasını anlatan dinleme metni için biri konuyu, diğeri ana düşünceyi yansıtan iki farklı başlık önerisi yazınız.",
       "cevap": "Konu başlığı: “Köy Okullarına Kitaplar”. Ana düşünce başlığı: “Okuma Sevgisini Büyüten Emek”.",
       "satir": 2
     },
@@ -297,9 +279,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki kartta verilen “araştır-” fiil kökünü; birinci cümlede isim-fiil, ikinci cümlede sıfat-fiil, üçüncü cümlede zarf-fiil olacak biçimde okuma kültürü temalı üç ayrı cümlede kullanınız.",
-      "cevap": "1) Yeni konuları araştırmak çok yararlıdır. 2) Araştıran öğrenciler kaynaklara ulaştı. 3) Kaynakları araştırarak özetini yazdı.",
-      "satir": 3
+      "soru": "“araştır-” fiil kökünü; birinci cümlede isim-fiil, ikinci cümlede sıfat-fiil, üçüncü cümlede zarf-fiil olacak biçimde okuma kültürü temalı üç ayrı cümlede kullanınız.",
+      "cevap": "1) Konuları araştırmak yararlıdır. 2) Araştıran okur başardı. 3) Kitapları araştırarak yazdı.",
+      "satir": 2
     }
   ]
 }

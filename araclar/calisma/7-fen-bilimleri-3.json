@@ -11,8 +11,7 @@
   "hatirla": [
     "Yıldızlar hidrojen gazı ve tozdan oluşan bulutsularda (nebula) doğar; kütle çekimiyle çöken bulut önce donuk kırmızı ön yıldızı, çekirdek tepkimeleri başlayınca da yıldızı oluşturur.",
     "Atbaşı ve Orion bulutsuları Avcı Takımyıldızı’ndadır (Orion çıplak gözle görülür); Tarantula Bulutsusu güney yarım küreden görülür ve en büyük kütleli, en sıcak yıldızları barındırır.",
-    "Kütle arttıkça yıldızın ömrü kısalır: 8 Güneş kütlesinden küçük yıldızlar kırmızı dev → gezegenimsi bulutsu → beyaz cüce (demir-karbon yığını) yolunu izler.",
-    "8 Güneş kütlesinden büyük yıldızlar kırmızı süperdev → süpernova → nötron yıldızı veya kara delik yolunu izler; yaş tahmini parlaklık-sıcaklık grafiği, dönme hızı ve parlaklık değişimiyle yapılır."
+    "Kütle arttıkça yıldızın ömrü kısalır: 8 Güneş kütlesinden küçük yıldızlar kırmızı dev → gezegenimsi bulutsu → beyaz cüce (demir-karbon yığını) yolunu izler."
   ],
   "sorular": [
     {
@@ -31,14 +30,6 @@
         [
           "süpernova",
           "Büyük kütleli yıldızların kırmızı süperdev evresinden sonraki şiddetli patlaması"
-        ],
-        [
-          "nötron yıldızı",
-          "Süpernova patlamasının ardından kara delik dışındaki diğer olası kalıntı"
-        ],
-        [
-          "Orion",
-          "Avcı Takımyıldızı’nda yer alan ve çıplak gözle seçilebilen parlak bulutsu"
         ]
       ]
     },
@@ -52,7 +43,8 @@
         "K: Nötron yıldızı — L: Kırmızı dev — M: Ön yıldız",
         "K: Beyaz cüce — L: Süpernova patlaması — M: Kırmızı dev"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -74,10 +66,6 @@
         {
           "metin": "Parlaklık ve sıcaklık grafiğinin alt bölgesinde yer alan yıldızlar genç yıldızlardır.",
           "dogru": false
-        },
-        {
-          "metin": "Beyaz cüce, demir ve karbondan oluşan yoğun bir madde yığınıdır.",
-          "dogru": true
         }
       ]
     },
@@ -98,14 +86,6 @@
         {
           "metin": "Başlangıç kütlesi yaklaşık ___ Güneş kütlesini aşanlar büyük kütlelidir.",
           "cevap": "sekiz"
-        },
-        {
-          "metin": "Yıldızlardaki iç ___ zamanla parlaklık değişimine yol açar.",
-          "cevap": "titreşimler"
-        },
-        {
-          "metin": "Küçük kütleli yıldızlar yaşamlarının ilerleyen evresinde ___ deve dönüşür.",
-          "cevap": "kırmızı"
         }
       ],
       "fazla": [
@@ -122,25 +102,26 @@
         "3. kartta Tarantula’nın yalnız soğuk yıldız içerdiği hatalıdır.",
         "4. kartta üçünün de yıldız doğum bölgesi olduğu doğrudur."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki kartlarda başlangıç kütleleri verilen dört yıldızın kütle grubunu ve yaşamının son basamağında geriye bırakacağı yapıyı yazarak tabloyu tamamlayınız. İlk satır örnektir.",
+      "soru": "Tabloda başlangıç kütleleri verilen dört yıldızın kütle grubunu (8 Güneş kütlesi sınırına göre) ve yaşamının son basamağında geriye bırakacağı yapıyı yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Yıldız Kartı",
+        "Yıldız ve Başlangıç Kütlesi",
         "Kütle Grubu",
         "Son Basamakta Kalan Yapı"
       ],
       "satirlar": [
         [
-          "1. Kart (Güneş)",
+          "Güneş (1 Güneş kütlesi)",
           "Küçük kütleli yıldız",
           "Beyaz cüce"
         ],
         [
-          "2. Kart (R Yıldızı)",
+          "R Yıldızı (4 Güneş kütlesi)",
           {
             "b": "Küçük kütleli yıldız"
           },
@@ -149,7 +130,7 @@
           }
         ],
         [
-          "3. Kart (S Yıldızı)",
+          "S Yıldızı (15 Güneş kütlesi)",
           {
             "b": "Büyük kütleli yıldız"
           },
@@ -158,7 +139,7 @@
           }
         ],
         [
-          "4. Kart (T Yıldızı)",
+          "T Yıldızı (25 Güneş kütlesi)",
           {
             "b": "Büyük kütleli yıldız"
           },
@@ -171,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki şemada ön yıldız ile yıldız aşamaları karşılaştırılmıştır. Ön yıldızın tam bir yıldıza dönüşmesini sağlayan temel olayı ve görünüm değişimini kısaca yazınız.",
+      "soru": "Bulutsuda sıkışarak oluşan donuk kırmızı görünümdeki ön yıldızın tam bir yıldıza dönüşmesini sağlayan temel olayı ve görünüm değişimini kısaca yazınız.",
       "cevap": "Donuk kırmızı ön yıldızda çekirdek tepkimeleri başlayınca parlak yıldız oluşur.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görselde halkaları verilen Güneş benzeri (küçük kütleli) bir yıldızın bulutsudan son kalıntısına kadar geçirdiği evreleri baştan sona doğru 1’den 5’e kadar sıralayınız.",
+      "soru": "Güneş benzeri (küçük kütleli) bir yıldızın bulutsudan son kalıntısına kadar geçirdiği evreleri baştan sona doğru 1’den 5’e kadar sıralayınız.",
       "ogeler": [
         "Bulutsudaki gaz ve toz bulutunun kütle çekimiyle çöküp ısınması",
         "Ön yıldızın merkezinde çekirdek tepkimelerinin başlamasıyla yıldızın doğması",
@@ -197,7 +178,8 @@
         "Y ve Z yıldızları yaşamlarını süpernova patlamasıyla tamamlar.",
         "Z’nin kütlesi X’ten büyük olduğu için Z yıldızı X’ten daha uzun yaşar."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -209,12 +191,13 @@
         "Grafiğin üst bölgesindeki yıldızlar ekseni etrafında en yavaş dönenlerdir.",
         "Dönme hızı ve grafikteki konum yıldızın yaşı hakkında bilgi vermez."
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki grafikte bir yıldızın parlaklığının zamanla düzenli olarak arttığı ve azaldığı görülmektedir. Bu değişimin nedenini ve gök bilimcilerin bu grafikten neleri tahmin ettiğini yazınız.",
+      "soru": "Bir yıldızın parlaklığının zamanla düzenli olarak artıp azalmasının nedenini ve gök bilimcilerin bu parlaklık değişiminden yıldız hakkında neleri tahmin ettiğini yazınız.",
       "cevap": "Nedeni iç titreşimlerdir; bu değişimden yıldızın iç yapısı ve yaşı tahmin edilir.",
       "satir": 2
     },
@@ -259,7 +242,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki iki gözlem notunu inceleyiniz. Küçük kütleli yıldızın geçtiği “gezegenimsi bulutsu” ile yıldızların doğduğu “bulutsu (nebula)” kavramlarının görev farkını açıklayınız.",
+      "soru": "Küçük kütleli yıldızın geçtiği “gezegenimsi bulutsu” ile yıldızların doğduğu “bulutsu (nebula)” kavramlarının görev farkını açıklayınız.",
       "cevap": "Bulutsu yıldızların doğum yeridir; gezegenimsi bulutsu kırmızı dev sonrası evredir.",
       "satir": 2
     },

@@ -11,8 +11,7 @@
   "hatirla": [
     "Dünya hayatı insanın davranışlarının sınandığı sınırlı bir süredir (Mülk suresi 2. ayet); ölümle birlikte hiç bitmeyecek olan ahiret hayatı başlar.",
     "Ahiret sözlükte “son, sonra olan ve son gün” demektir; ahirete inanmak imanın şartlarındandır ve ahiret bilgisine yalnız ayet ve hadislerle ulaşılır.",
-    "Doğumdan ölüme kadar geçen yaşam süresine ömür, bu sürenin bittiği belirlenmiş vakte ecel, dünya ile ahiret arasındaki kabir hayatına berzah denir.",
-    "Dünyanın ömrü dolduğunda Allah’ın emriyle İsrafil sûra üfler ve kıyamet kopar; kıyametin vaktini yalnız Allah bilir (Lokman suresi 34. ayet)."
+    "Doğumdan ölüme kadar geçen yaşam süresine ömür, bu sürenin bittiği belirlenmiş vakte ecel, dünya ile ahiret arasındaki kabir hayatına berzah denir."
   ],
   "sorular": [
     {
@@ -31,14 +30,6 @@
         [
           "ecel",
           "İnsanın dünyadaki yaşam süresinin sona erdiği önceden belirlenmiş vakit"
-        ],
-        [
-          "son gün",
-          "Ahiret kelimesinin sözlükte “son ve sonra olan” dışındaki diğer anlamı"
-        ],
-        [
-          "ömür",
-          "Dünyaya geliş anıyla vefat vakti arasındaki toplam yaşama zamanı"
         ]
       ]
     },
@@ -52,7 +43,8 @@
         "K: Ecel — L: Mahşer — M: Mizan",
         "K: Kıyamet — L: Baas — M: Ömür"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -74,10 +66,6 @@
         {
           "metin": "Lokman suresi 34. ayette kıyamet saati hakkındaki bilginin yalnız Allah katında olduğu bildirilir.",
           "dogru": true
-        },
-        {
-          "metin": "Kıyamet, her insanın kendi yaşam süresi dolduğunda bireysel olarak gerçekleşen kabir geçişidir.",
-          "dogru": false
         }
       ]
     },
@@ -98,14 +86,6 @@
         {
           "metin": "Hz. ___’den itibaren bütün peygamberler ahireti haber vermiştir.",
           "cevap": "Âdem"
-        },
-        {
-          "metin": "İnfitar suresinde kıyamet koparken ___ taşacağı bildirilmektedir.",
-          "cevap": "denizlerin"
-        },
-        {
-          "metin": "İnananlar kıyametin vaktini değil, ebedî hayata ___ olmayı önemser.",
-          "cevap": "hazırlıklı"
         }
       ],
       "fazla": [
@@ -122,25 +102,26 @@
         "3. satırda kıyametin vaktini insanların önceden hesaplayabileceği bilgisi hatalıdır.",
         "4. satırda ölümden sonra berzahın, kıyametten sonra ebedî hayatın başladığı doğrudur."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki dört ayet ve hadis kartında vurgulanan temel kavramı ve verdiği mesajı yazarak tabloyu tamamlayınız. İlk satır örnektir.",
+      "soru": "Tablodaki ayet ve hadislerde vurgulanan temel kavramı ve verilen mesajı yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Kaynak Kartı",
+        "Ayet veya Hadis",
         "İlgili Kavram",
         "Verdiği Temel Mesaj"
       ],
       "satirlar": [
         [
-          "1. Kart (Mülk suresi 2. ayet)",
+          "Mülk 2 (“Hanginizin daha iyi iş yapacağını sınamak için…”)",
           "Dünya hayatının amacı",
           "İnsanın iyi davranışlarla sınanması"
         ],
         [
-          "2. Kart (Al-i İmran suresi 185. ayet)",
+          "Al-i İmran 185 (“Her canlı ölümü tadar…”)",
           {
             "b": "Ölüm"
           },
@@ -149,7 +130,7 @@
           }
         ],
         [
-          "3. Kart (Buhari, Çizgilerin hadisi)",
+          "Hadis (“İnsan hayal kurarken ecel çizgisi önüne çıkar.”)",
           {
             "b": "Ecel ve arzular"
           },
@@ -158,7 +139,7 @@
           }
         ],
         [
-          "4. Kart (Lokman suresi 34. ayet)",
+          "Lokman 34 (“Kıyamet vaktinin bilgisi yalnız Allah katındadır.”)",
           {
             "b": "Kıyamet vakti"
           },
@@ -171,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki sınıflandırma şemasında ahiretle ilgili dokuz kavram iki gruba ayrılmıştır. K grubundaki kavramların neden “ahiret aşamaları” kutusuna alınmadığını açıklayınız.",
+      "soru": "Ahiret inancıyla ilgili kavramlar incelenirken “ömür” ve “ecel” kavramları; “berzah, kıyamet, baas, mahşer, mizan, cennet ve cehennem” kavramlarından ayrı bir grupta toplanmıştır. “Ömür” ve “ecel” kavramlarının neden “ahiret aşamaları” grubuna alınmadığını açıklayınız.",
       "cevap": "Ömür ve ecel dünya yaşam süresiyle ilgilidir; ahiret aşamaları ise ölümle başlar.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görselde durakları verilen Kur’an-ı Kerim’deki ahiret yolculuğu aşamalarını ilk basamaktan son durağa doğru 1’den 5’e kadar sıralayınız.",
+      "soru": "Kur’an-ı Kerim’de bildirilen ahiret yolculuğu aşamalarını ilk basamaktan son durağa doğru 1’den 5’e kadar sıralayınız.",
       "ogeler": [
         "Ecelin gelmesiyle dünya hayatının bitmesi ve berzah (kabir) hayatının başlaması",
         "Dünyanın süresi dolduğunda İsrafil’in sûra üflemesiyle kıyametin kopması",
@@ -197,7 +178,8 @@
         "İnsan sadece dünyadaki hayallerine dalmayıp ahiret hayatına da hazırlanmalıdır.",
         "İnsan dünyadaki bütün isteklerini bitirmeden ecel vakti hiçbir zaman gelmez."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -209,12 +191,13 @@
         "Kıyamet koptuktan sonra insanların dünyadaki sorumlulukları tamamen unutulacaktır.",
         "Doğa olayları herhangi bir ilahi emir olmadan kendi kendine gerçekleşip duracaktır."
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki bilgi kartına göre ahiret hayatı hakkında neden yalnız Kur’an ayetleri ve Hz. Peygamber’in hadisleri kaynak alınır? Kısaca yazınız.",
+      "soru": "Ahiret hayatı hakkında doğru bilgi edinmek için neden yalnız Kur’an-ı Kerim ayetleri ve Hz. Peygamber’in hadisleri kaynak alınır? Kısaca yazınız.",
       "cevap": "Ahiret duyularla algılanamaz; kesin bilgiye yalnız ayet ve hadislerle ulaşılır.",
       "satir": 2
     },
@@ -259,8 +242,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki iki görüş kartını inceleyiniz. Ahiret inancına sahip bir insanın dünya hayatını “amaçsız bir süreç” olarak görmemesinin nedenini ve bu inancın davranışlara etkisini açıklayınız.",
-      "cevap": "2. görüş doğrudur; dünya bir imtihan yeridir ve bu bilinç insanı sorumlu kılar.",
+      "soru": "Ahiret inancına sahip bir insanın dünya hayatını “amaçsız bir süreç” olarak görmemesinin nedenini ve bu inancın davranışlara etkisini açıklayınız.",
+      "cevap": "Dünya hayatı kimin daha iyi davranacağının denendiği bir imtihan yeridir ve sorumluluk verir.",
       "satir": 2
     },
     {

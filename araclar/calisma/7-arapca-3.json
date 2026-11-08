@@ -35,10 +35,6 @@
         [
           "{ar:مُدَرِّسَةُ الرِّيَاضَةِ}",
           "{ar:فِي صَالَةِ الرِّيَاضَةِ} (Spor salonunda)"
-        ],
-        [
-          "{ar:الْمُدِيرُ}",
-          "{ar:فِي غُرْفَةِ الْمُدِيرِ} (Müdür odasında)"
         ]
       ]
     },
@@ -58,8 +54,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki «{ar:أَسَاتِذَتُنَا}» (Hocalarımız) okuma kartlarına göre öğretmenin sıfatını ve dersin özelliğini Türkçe olarak tabloya yazınız.",
+      "soru": "Tablodaki «{ar:أَسَاتِذَتُنَا}» (Hocalarımız) ifadelerine göre öğretmenin sıfatını ve dersin özelliğini Türkçe olarak tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Öğrenci ve Branş",
         "Öğretmenin Sıfatı",
@@ -124,10 +119,6 @@
         {
           "metin": "«{ar:الطَّالِبُ يَحْتَرِمُ الْمُدَرِّسَ}» cümlesi öğrencinin öğretmene saygı duyduğunu anlatır.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:مَادَّةٌ}» kelimesi okul müdürü anlamına gelir.",
-          "dogru": false
         }
       ]
     },
@@ -161,10 +152,6 @@
         {
           "metin": "Türkçe öğretmeni sayesinde dil bilgisi kurallarını yani «___ {ar:اللُّغَةِ التُّرْكِيَّةِ}» konusunu öğreniriz.",
           "cevap": "{ar:قَوَاعِدَ}"
-        },
-        {
-          "metin": "Müzik öğretmeni «{ar:مُدَرِّسَةُ} ___» olarak adlandırılır.",
-          "cevap": "{ar:الْمُوسِيقَى}"
         }
       ],
       "fazla": [
@@ -174,15 +161,13 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki iki ders kartında yazılışı birbirine benzeyen «{ar:الرِّيَاضَةُ}» ve «{ar:الرِّيَاضِيَّاتُ}» kelimelerinin anlam farkını kısaca yazınız.",
-      "cevap": "{ar:الرِّيَاضَةُ} spor/beden eğitimi dersini, {ar:الرِّيَاضِيَّاتُ} ise matematik dersini ifade eder.",
+      "soru": "Yazılışı birbirine benzeyen «{ar:مَادَّةُ الرِّيَاضَةِ}» ve «{ar:مَادَّةُ الرِّيَاضِيَّاتِ}» ders adlarının anlam farkını kısaca yazınız.",
+      "cevap": "{ar:الرِّيَاضَةُ} beden eğitimi dersini, {ar:الرِّيَاضِيَّاتُ} ise matematik dersini anlatır.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Koridorda karşılaşan iki öğrencinin işledikleri ders ve öğretmenleri hakkındaki konuşmasını 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "{ar:مَرْحَبًا يَا مُرَادُ، أَيَّ مَادَّةٍ تَدْرُسُونَ الآنَ؟}",
@@ -253,8 +238,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki ipucu kartlarını birleştirerek fen bilimleri öğretmenini sevdiğinizi ve onun sayesinde bilimsel deneyler yapmayı öğrendiğinizi anlatan Arapça cümleyi yazınız.",
+      "soru": "«{ar:أُحِبُّ مُدَرِّسَ الْعُلُومِ}», «{ar:بِفَضْلِهِ أَقُومُ}» ve «{ar:تَجَارِبَ عِلْمِيَّةٍ}» ifadelerinden yararlanarak fen bilimleri öğretmenini sevdiğinizi ve onun sayesinde bilimsel deneyler yaptığınızı anlatan Arapça cümleyi yazınız.",
       "cevap": "{ar:أُحِبُّ مُدَرِّسَ الْعُلُومِ، بِفَضْلِهِ أَقُومُ بِتَجَارِبَ عِلْمِيَّةٍ.}",
       "satir": 2
     }
