@@ -15,8 +15,7 @@
   "hatirla": [
     "Bir deneyde tekrar sayısı arttıkça göreli sıklıktaki dalgalanma azalır ve göreli sıklık belirli bir değerin çevresinde toplanır; en çok tekrarlı veri olasılık tahmini için en güvenilir dayanaktır.",
     "Belirlenen olasılık değeriyle gelecekteki tekrarlar için kesin sayı değil “yaklaşık” sıklık tahmini yapılır; çok sayıda atışta bir çıktının göreli sıklığı aşırı yüksekse deney aracının hileli olduğu düşünülür.",
-    "Ondalık gösterimde virgülün sağındaki basamaklar sırasıyla onda birler ({kesir:1|10} = 0,1), yüzde birler ({kesir:1|100} = 0,01) ve binde birler ({kesir:1|1000} = 0,001) basamaklarıdır.",
-    "Rakamın basamak değeri, rakam ile bulunduğu basamak değerinin çarpımıdır; sayı basamak değerlerinin toplamı olarak çözümlenir: 14,308 = 10 + 4 + {kesir:3|10} + {kesir:8|1000}."
+    "Ondalık gösterimde virgülün sağındaki basamaklar sırasıyla onda birler ({kesir:1|10} = 0,1), yüzde birler ({kesir:1|100} = 0,01) ve binde birler ({kesir:1|1000} = 0,001) basamaklarıdır."
   ],
   "sorular": [
     {
@@ -36,10 +35,6 @@
         [
           "0,468",
           "{kesir:4|10} + {kesir:6|100} + {kesir:8|1000}"
-        ],
-        [
-          "4,608",
-          "4 + {kesir:6|10} + {kesir:8|1000}"
         ]
       ]
     },
@@ -78,10 +73,6 @@
         {
           "metin": "0,609 ondalık gösteriminde onda birler ile binde birler arasındaki sıfır silinirse sayının değeri değişmez.",
           "dogru": false
-        },
-        {
-          "metin": "1 kilogramın {kesir:1|1000}’i 1 gram olduğundan, market terazisindeki 2,345 kg ifadesi 2 kg 345 gram anlamına gelir.",
-          "dogru": true
         }
       ]
     },
@@ -103,10 +94,6 @@
         {
           "metin": "Bir ondalık gösterimi basamak değerlerinin toplamı biçiminde yazma işlemine ___ adı verilir.",
           "cevap": "çözümleme"
-        },
-        {
-          "metin": "Bir liranın {kesir:1|100}’ü bir ___ olduğundan 18,45 TL ifadesi 18 lira 45 kuruşu gösterir.",
-          "cevap": "kuruş"
         }
       ],
       "fazla": [
@@ -131,8 +118,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "sutun": "sol",
-      "gorsel_var": true,
-      "soru": "Görseldeki dört sayı kartında yer alan {koyu:8 rakamının} bulunduğu basamağın adını ve kesirli basamak değerini tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki ondalık sayılarda {koyu:8 rakamının} bulunduğu basamağın adını ve kesirli basamak değerini yazınız. İlk satır örnektir.",
       "basliklar": [
         "Karttaki Sayı",
         "8 Rakamının Basamağı",
@@ -142,7 +128,9 @@
         [
           "1. Kart: 8,42",
           "Birler basamağı",
-          "8"
+          {
+            "b": "8"
+          }
         ],
         [
           "2. Kart: 1,85",
@@ -173,8 +161,7 @@
       "tur": "kisa",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki kapalı torbada mavi ve kırmızı olmak üzere toplam 40 bilye vardır. Geri konularak yapılan 200 çekilişte 70 kez kırmızı bilye geldiğine göre kırmızı gelme göreli sıklığını ve torbadaki yaklaşık kırmızı bilye sayısını bulunuz.",
+      "soru": "Kapalı torbada mavi ve kırmızı olmak üzere toplam 40 bilye vardır. Geri konularak yapılan 200 çekilişte 70 kez kırmızı bilye geldiğine göre kırmızı gelme göreli sıklığını ve torbadaki yaklaşık kırmızı bilye sayısını bulunuz.",
       "cevap": "Göreli sıklık %35’tir; torbadaki 40 bilyenin 14 tanesi kırmızıdır.",
       "satir": 2
     },
@@ -182,13 +169,12 @@
       "tur": "siralama",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki dört kartta verilen ondalık sayıların içindeki {koyu:5 rakamının basamak değerini} küçükten büyüğe doğru (1’den 4’e kadar) sıralayınız.",
+      "soru": "Aşağıdaki ondalık sayıların içindeki {koyu:5 rakamının basamak değerini} küçükten büyüğe doğru (1’den 4’e kadar) sıralayınız.",
       "ogeler": [
-        "K Kartı: 9,125 sayısındaki 5 rakamının basamak değeri ({kesir:5|1000} = 0,005)",
-        "L Kartı: 4,052 sayısındaki 5 rakamının basamak değeri ({kesir:5|100} = 0,05)",
-        "M Kartı: 0,581 sayısındaki 5 rakamının basamak değeri ({kesir:5|10} = 0,5)",
-        "N Kartı: 5,314 sayısındaki 5 rakamının basamak değeri (5 × 1 = 5)"
+        "K Kartı: 9,125 sayısındaki 5 rakamının basamak değeri",
+        "L Kartı: 4,052 sayısındaki 5 rakamının basamak değeri",
+        "M Kartı: 0,581 sayısındaki 5 rakamının basamak değeri",
+        "N Kartı: 5,314 sayısındaki 5 rakamının basamak değeri"
       ]
     },
     {
@@ -253,8 +239,7 @@
       "tur": "acik",
       "duzey": "ust",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki karşılaştırma kartında Mert, “0,705 sayısındaki sıfırın basamak değeri 0 olduğu için sıfırı silip 0,75 yazabiliriz, değer değişmez.” demiştir. Mert’in hatasını 5 rakamının basamak değeri üzerinden açıklayınız.",
+      "soru": "Mert, “0,705 sayısındaki sıfırın basamak değeri 0 olduğu için sıfırı silip 0,75 yazabiliriz, değer değişmez.” demiştir. Mert’in hatasını 5 rakamının basamak değeri üzerinden açıklayınız.",
       "cevap": "0 silinirse 5 rakamı yüzde birler basamağına kayar ve değeri 10 kat artar.",
       "satir": 2
     },

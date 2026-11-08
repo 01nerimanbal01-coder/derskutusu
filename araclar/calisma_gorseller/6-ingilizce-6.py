@@ -1,161 +1,101 @@
-"""6. sınıf İngilizce 6. hafta (School Life: School Routines, Simple Present, Adverbs of Frequency, Object Pronouns & Articles) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 12 pt (K150 EK); kesir yok (K155)."""
+"""6-ingilizce-6 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-GRI, GRI_A, SOLUK, ALTIN, KAHVE, KUM = '#9aa6bd', '#eef1f6', '#5b6479', '#c9a227', '#8a5a2b', '#fffdf5'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-YAZI_I = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=22):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=12, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {YAZI_I if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.5, ek=''):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"{ek}/>'
-
-
-def elif_rutin_karti():
-    ic = kutu(8, 8, 584, 84, MOR_A, MOR, 9, 1.6)
-    ic += kutu(8, 8, 584, 26, MOR, MOR, 9, 1)
-    ic += yazi(300, 25, 'ELİF’S SCHOOL ROUTINE · WORD ORDER RULE', 12, '#fff')
-    ic += yazi(300, 52, 'Rule 1: Subject - Adverb - Verb (-s) → Elif / always / arrive / on time', 12, LAC)
-    ic += yazi(300, 76, 'Rule 2: Subject - am, is, are - Adverb → She / be / never / late for assembly', 12, MOR, ince=True)
-    return svg(600, 100, ic, 'Elif okul rutini ve sıklık zarfları dizilim kuralı kartı.', 22)
-
-
-def nesne_zamiri_karti():
-    ic = kutu(8, 8, 584, 86, MAVI_A, MAVI, 9, 1.6)
-    ic += kutu(8, 8, 584, 26, MAVI, MAVI, 9, 1)
-    ic += yazi(300, 25, 'OBJECT PRONOUNS IN SCHOOL LIFE', 12, '#fff')
-    ic += yazi(300, 52, '“Our English teacher gives ___ (1: we) a new project,', 12, LAC)
-    ic += yazi(300, 76, 'and we show ___ (2: it) to ___ (3: she) in the classroom.”', 12, MAVI, ince=True)
-    return svg(600, 102, ic, 'We, it ve she zamirlerinin nesne zamiri karşılıklarını soran cümle kartı.', 22)
-
-
-def articles_imperatives_panosu():
-    kartlar = [
-        ('1. ___ science exam', 'Consonant sound (Tekil)', MAVI, MAVI_A),
-        ('2. ___ art room', 'Vowel sound (Ünlü ses)', YES, YES_A),
-        ('3. ___ school garden', 'Specific place (Belirli)', TUR, TUR_A),
-        ('4. ___ litter the corridor!', 'Negative instruction', KIR, KIR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(kartlar):
-        x = 8 + (i % 2) * 296
-        y = 6 + (i // 2) * 48
-        ic += kutu(x, y, 288, 42, arka, renk, 8, 1.5)
-        ic += yazi(x + 144, y + 18, bas, 12, renk)
-        ic += yazi(x + 144, y + 35, alt, 12, LAC, ince=True)
-    return svg(600, 104, ic, 'Articles (a, an, the) ve olumsuz emir cümlesi örnek kartları.', 22)
-
-
-def fatih_sali_rutini():
-    ic = kutu(8, 8, 284, 84, YES_A, YES, 9, 1.6)
-    ic += kutu(8, 8, 284, 26, YES, YES, 9, 1)
-    ic += yazi(150, 25, '1. Affirmative (+) · Tuesday', 12, '#fff')
-    ic += yazi(150, 52, 'Fatih ___ (help) the librarian', 12, LAC)
-    ic += yazi(150, 74, 'in the school library.', 12, YES, ince=True)
-
-    ic += kutu(308, 8, 284, 84, KIR_A, KIR, 9, 1.6)
-    ic += kutu(308, 8, 284, 26, KIR, KIR, 9, 1)
-    ic += yazi(450, 25, '2. Negative (-) · Tuesday', 12, '#fff')
-    ic += yazi(450, 52, 'He ___ (not - join) the chess', 12, LAC)
-    ic += yazi(450, 74, 'club after school.', 12, KIR, ince=True)
-    return svg(600, 100, ic, 'Fatih Salı günü olumlu ve olumsuz geniş zaman cümle kartları.', 22)
-
-
-def gunluk_akis_zinciri():
-    adimlar = [
-        ('1. Morning (08.30)', 'Arrive · Line up', MAVI, MAVI_A),
-        ('2. Lesson (09.00)', 'Greet · Listen', YES, YES_A),
-        ('3. Noon (12.30)', 'Lunch in canteen', TUR, TUR_A),
-        ('4. Afternoon (15.30)', 'Attend clubs', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(adimlar):
-        x = 8 + i * 148
-        ic += kutu(x, 8, 138, 80, arka, renk, 8, 1.5)
-        ic += kutu(x, 8, 138, 26, renk, renk, 8, 1)
-        ic += yazi(x + 69, 25, bas, 12, '#fff')
-        ic += yazi(x + 69, 60, alt, 12, LAC)
-    return svg(600, 96, ic, 'Sabah törenden öğleden sonra kulüp saatine okul rutini akış şeması.', 22)
-
-
-def okul_kurallari_panosu():
-    satirlar = [
-        ('Rule A', 'Keep your classroom desk clean and tidy.', YES, YES_A),
-        ('Rule B', 'Return the borrowed books to the library on time.', MAVI, MAVI_A),
-        ('Rule C (!)', 'Don’t run in the corridors and don’t make noise.', KIR, KIR_A),
-        ('Rule D', 'Follow instructions and raise your hand to speak.', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (no, metin, renk, arka) in enumerate(satirlar):
-        y = 6 + i * 26
-        ic += kutu(8, y, 584, 22, arka, renk, 6, 1.3)
-        ic += kutu(8, y, 86, 22, renk, renk, 6, 1)
-        ic += yazi(51, y + 15, no, 12, '#fff')
-        ic += yazi(102, y + 15, metin, 12, LAC, 'start', ince=(i != 2))
-    return svg(600, 112, ic, 'Dört sınıf yönergesi; Rule C olumsuz emir cümlesi.', 22)
-
-
-def articles_hata_kartlari():
-    satirlar = [
-        ('1. Card', 'An art teacher works in an art room on the second floor.', YES, YES_A),
-        ('2. Card', 'We wear a school uniform and carry a student ID card.', MAVI, MAVI_A),
-        ('3. Card', 'The headmaster’s office is next to the school library.', CAM, CAM_A),
-        ('4. Card (!)', 'Kyle plays a guitar in an music club on the Fridays.', KIR, KIR_A),
-    ]
-    ic = ''
-    for i, (no, metin, renk, arka) in enumerate(satirlar):
-        y = 6 + i * 26
-        ic += kutu(8, y, 584, 22, arka, renk, 6, 1.3)
-        ic += kutu(8, y, 86, 22, renk, renk, 6, 1)
-        ic += yazi(51, y + 15, no, 12, '#fff')
-        ic += yazi(102, y + 15, metin, 12, LAC, 'start', ince=(i != 3))
-    return svg(600, 112, ic, 'a, an, the kullanımıyla ilgili dört kart; 4. kart hatalı.', 22)
-
-
-def kutuphane_soru_karti():
-    ic = kutu(8, 8, 584, 84, CAM_A, CAM, 9, 1.6)
-    ic += kutu(8, 8, 584, 26, CAM, CAM, 9, 1)
-    ic += yazi(300, 25, 'SPEAKING & WRITING CARD · SCHOOL LIBRARY', 12, '#fff')
-    ic += yazi(300, 52, 'Question: “How often do you use the school library and who helps you there?”', 12, LAC)
-    ic += yazi(300, 76, 'Clues: usually - twice a week · the librarian helps me - us find books', 12, CAM, ince=True)
-    return svg(600, 100, ic, 'Okul kütüphanesi kullanım sıklığı ve nesne zamiri soru kartı.', 22)
-
-
-def uclu_rutin_tablosu():
-    kartlar = [
-        ('Kyle (Music Club)', 'Usually plays the guitar on Fridays', MAVI, MAVI_A),
-        ('Elif (Punctual)', 'Always on time · Never late for assembly', YES, YES_A),
-        ('Fatih (Class President)', 'Helps the librarian on Tuesdays · Supports us', TUR, TUR_A),
-        ('Common Rule', 'All three follow rules and respect teachers', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(kartlar):
-        x = 8 + (i % 2) * 296
-        y = 6 + (i // 2) * 48
-        ic += kutu(x, y, 288, 42, arka, renk, 8, 1.5)
-        ic += yazi(x + 144, y + 18, bas, 12, renk)
-        ic += yazi(x + 144, y + 35, alt, 12, LAC, ince=True)
-    return svg(600, 104, ic, 'Kyle, Elif ve Fatih okul rutinleri karşılaştırma panosu.', 22)
+GORSELLER = {1: '<svg viewBox="0 0 350 131" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Elif okul rutini ve '
+    'sıklık zarfları dizilim kuralı kartı."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">ELİF’S SCHOOL ROUTINE · WORD ORDER</text><text x="11.0" y="38.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">RULE</text><rect x="4" y="49" width="342" '
+    'height="80" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="66.2" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Rule 1: Subject - Adverb - Verb (-s) → Elif /</text><text '
+    'x="11.0" y="84.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">always '
+    '/ arrive / on time</text><text x="11.0" y="103.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#7c3aed">Rule 2: Subject - am, is, are - Adverb → She /</text><text x="11.0" y="121.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">be / never / late for assembly</text></svg>',
+ 4: '<svg viewBox="0 0 350 95" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="We, it ve she '
+    'zamirlerinin nesne zamiri karşılıklarını soran cümle kartı."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">OBJECT PRONOUNS IN SCHOOL LIFE</text><rect x="4" y="31" width="342" height="62" '
+    'rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="48.4" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">“Our English teacher gives ___ (1: we) a new</text><text x="11.0" '
+    'y="66.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">project, and we '
+    'show ___ (2: it) to ___ (3: she)</text><text x="11.0" y="85.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">in the classroom.”</text></svg>',
+ 8: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört sınıf yönergesi; '
+    'Rule C olumsuz emir cümlesi."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Rule A</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Keep your classroom</text><text x="87.5" y="67.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">desk clean and tidy.</text><rect x="179" '
+    'y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Rule B</text><text '
+    'x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Return the</text><text x="262.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">borrowed books to</text><text x="262.5" y="76.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">the library on time.</text><rect x="4" y="89" width="167" height="82" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="116.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Rule C · Don’t run in</text><text x="87.5" y="134.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">the corridors '
+    'and</text><text x="87.5" y="153.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">don’t make noise.</text><rect x="179" y="89" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Rule D</text><text x="262.5" y="125.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Follow instructions</text><text x="262.5" y="144.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">and raise your hand</text><text x="262.5" '
+    'y="162.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">to '
+    'speak.</text></svg>',
+ 9: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="a, an, the kullanımıyla '
+    'ilgili dört kart; 4. kart hatalı."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">1. Card</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">An art teacher works</text><text x="87.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">in an art room on</text><text x="87.5" '
+    'y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">the second '
+    'floor.</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" '
+    'y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">2. '
+    'Card</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">We wear a school</text><text x="262.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">uniform and carry a</text><text x="262.5" y="76.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">student ID card.</text><rect x="4" y="89" '
+    'width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="107.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">3. Card</text><text x="87.5" y="125.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">The '
+    'headmaster’s</text><text x="87.5" y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">office is next to the</text><text x="87.5" y="162.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">school library.</text><rect x="179" y="89" width="167" height="82" '
+    'rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">4. Card</text><text x="262.5" y="125.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Kyle plays a guitar</text><text x="262.5" '
+    'y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">in an music '
+    'club on</text><text x="262.5" y="162.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">the Fridays.</text></svg>',
+ 12: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kyle, Elif ve Fatih '
+     'okul rutinleri karşılaştırma panosu."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="87.5" y="30.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">Kyle (Music Club)</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Usually plays the</text><text x="87.5" y="67.2" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">guitar on Fridays</text><rect x="179" y="3" '
+     'width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Elif (Punctual)</text><text x="262.5" '
+     'y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Always on time '
+     '·</text><text x="262.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">Never late for</text><text x="262.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="500" fill="#0b2257">assembly</text><rect x="4" y="89" width="167" height="101" rx="5" fill="#fff1df" '
+     'stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#ee7d12">Fatih (Class ·</text><text x="87.5" y="125.9" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">President)</text><text x="87.5" y="144.3" '
+     'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Helps the '
+     'librarian</text><text x="87.5" y="162.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#0b2257">on Tuesdays ·</text><text x="87.5" y="181.1" text-anchor="middle" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Supports us</text><rect x="179" y="89" width="167" height="101" '
+     'rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="125.9" text-anchor="middle" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Common Rule</text><text x="262.5" y="144.3" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">All three follow rules</text><text x="262.5" '
+     'y="162.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">and respect '
+     'teachers</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = elif_rutin_karti()
-    s[4]['gorsel'] = nesne_zamiri_karti()
-    s[5]['gorsel'] = articles_imperatives_panosu()
-    s[6]['gorsel'] = fatih_sali_rutini()
-    s[7]['gorsel'] = gunluk_akis_zinciri()
-    s[8]['gorsel'] = okul_kurallari_panosu()
-    s[9]['gorsel'] = articles_hata_kartlari()
-    s[11]['gorsel'] = kutuphane_soru_karti()
-    s[12]['gorsel'] = uclu_rutin_tablosu()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -31,10 +31,6 @@
         [
           "{ar:مَسَاءُ الْخَيْرِ}",
           "{ar:مَسَاءُ النُّورِ}"
-        ],
-        [
-          "{ar:هَلْ أَنْتَ طَالِبٌ؟}",
-          "{ar:نَعَمْ، أَنَا طَالِبٌ}"
         ]
       ]
     },
@@ -70,10 +66,6 @@
         {
           "metin": "Öğretmen erkek öğrencisi Kerem’e ‘Ayağa kalk ve oku!’ derken {ar:قُمْ وَاقْرَأْ!} yönergesini kullanır.",
           "dogru": true
-        },
-        {
-          "metin": "{ar:هَلْ أَنْتِ مُعَلِّمَةٌ؟} sorusuna ‘Hayır, ben kız öğrenciyim’ demek isteyen bir kız öğrenci {ar:لَا، أَنَا طَالِبٌ} der.",
-          "dogru": false
         }
       ]
     },
@@ -94,10 +86,6 @@
         {
           "metin": "Erkek öğretmen anlamına gelen {ar:مُعَلِّمٌ} kelimesinin dişil (kadın öğretmen) biçimi ___ kelimesidir.",
           "cevap": "{ar:مُعَلِّمَةٌ}"
-        },
-        {
-          "metin": "Kız öğrenci Meryem’e ‘Otur ve yaz!’ yönergesi verilirken {ar:اِجْلِسِي} ___ {ar:!} ifadesi kullanılır.",
-          "cevap": "{ar:وَاكْتُبِي}"
         }
       ],
       "fazla": [
@@ -119,7 +107,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki ifadeleri inceleyerek her ifadenin iletişimdeki işlevini (Selamlaşma, Tanışma Memnuniyeti veya Vedalaşma) ve Türkçe anlamını tabloya yazınız. İlk satır örnektir.",
+      "soru": "Her ifadenin iletişimdeki işlevini (Selamlaşma, Tanışma Memnuniyeti veya Vedalaşma) ve Türkçe anlamını tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Arapça İfade",
         "İletişimdeki İşlevi",
@@ -129,7 +117,9 @@
         [
           "1. {ar:صَبَاحُ الْخَيْرِ}",
           "Sabah Selamlaşması",
-          "Günaydın / Hayırlı sabahlar"
+          {
+            "b": "Günaydın / Hayırlı sabahlar"
+          }
         ],
         [
           "2. {ar:تَشَرَّفْتُ}",
@@ -163,14 +153,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki seslenme kuralı panosunu inceleyerek {ar:حَسَنٌ} ve {ar:عَلِيٌّ} isimlerinin başına {ar:يَا} edatı geldiğinde son harekelerinde nasıl bir değişim olduğunu yazınız.",
+      "soru": "{ar:حَسَنٌ} ve {ar:عَلِيٌّ} isimlerinin başına {ar:يَا} edatı geldiğinde son harekelerinde nasıl bir değişim olduğunu yazınız.",
       "cevap": "Başına {ar:يَا} gelince sondaki tenvin düşer.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki Ömer ve Hasan diyaloğunda yer alan cümleleri konuşmanın akış sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:اَلسَّلَامُ عَلَيْكُمْ، صَبَاحُ الْخَيْرِ!} (Selamün aleyküm, günaydın!)",
         "{ar:أَنَا عُمَرُ، مَا اسْمُكَ؟} (Ben Ömer, senin adın ne?)",
@@ -248,7 +238,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki {ar:مَا اسْمُكَ؟} ve {ar:مَا اسْمُكِ؟} sorularında konuşan kişi aynı olduğu hâlde sondaki zamirin neden değiştiğini açıklayınız.",
+      "soru": "{ar:مَا اسْمُكَ؟} ve {ar:مَا اسْمُكِ؟} sorularında konuşan kişi aynı olduğu hâlde sondaki zamirin neden değiştiğini açıklayınız.",
       "cevap": "Zamir muhataba göredir: erkekte {ar:ـكَ}, kızda {ar:ـكِ}.",
       "satir": 2
     },

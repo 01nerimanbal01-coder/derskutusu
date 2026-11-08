@@ -30,10 +30,6 @@
         [
           "{ar:اَلْفُرْنُ}",
           "Fırın"
-        ],
-        [
-          "{ar:اَلصَّيْدَلِيَّةُ}",
-          "Eczane"
         ]
       ]
     },
@@ -69,10 +65,6 @@
         {
           "metin": "Akrabaları ziyaret etmeye, hâl ve hatırlarını sormaya ve akrabalık bağlarını gözetmeye ‘Sıla-i Rahim’ denir.",
           "dogru": true
-        },
-        {
-          "metin": "Kadın bir akrabanın nerede çalıştığını sormak için «{ar:أَيْنَ يَعْمَلُ؟}» soru kalıbı kullanılır.",
-          "dogru": false
         }
       ]
     },
@@ -93,10 +85,6 @@
         {
           "metin": "Ofisteki memuru «{ar:يَعْمَلُ} ___ {ar:فِي الْمَكْتَبِ}» cümlesi ifade eder.",
           "cevap": "{ar:الْمُوَظَّفُ}"
-        },
-        {
-          "metin": "«{ar:أَنَا} ___ {ar:أُسْرَتِي وَأَقْرِبَائِي}» cümlesi ‘Ailemi ve akrabalarımı seviyorum’ demektir.",
-          "cevap": "{ar:أُحِبُّ}"
         }
       ],
       "fazla": [
@@ -118,7 +106,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki iş yeri kartlarını inceleyerek o mekânda çalışan meslek sahibinin Arapçasını ve iş yerinin Türkçe anlamını tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen iş yerlerinde çalışan meslek sahibinin Arapçasını ve mekânın Türkçe anlamını yazınız. İlk satır örnektir.",
       "basliklar": [
         "İş Yeri Kartı",
         "Çalışan Meslek (Arapça)",
@@ -128,7 +116,9 @@
         [
           "1. {ar:فِي الْمُسْتَشْفَى}",
           "{ar:طَبِيبٌ / مُمَرِّضَةٌ}",
-          "Hastanede"
+          {
+            "b": "Hastanede"
+          }
         ],
         [
           "2. {ar:فِي الْمَصْنَعِ}",
@@ -162,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki {ar:فِي الْمَزْرَعَةِ} ve {ar:فِي الشَّرِكَةِ} ifadelerinin okunuşlarında {ar:اَلْ} takısının nasıl seslendirildiğini karşılaştırarak yazınız.",
+      "soru": "{ar:فِي الْمَزْرَعَةِ} ve {ar:فِي الشَّرِكَةِ} ifadelerinin okunuşlarında {ar:اَلْ} takısının nasıl seslendirildiğini karşılaştırarak yazınız.",
       "cevap": "1. ifadede (kamerî) lâm cezimli okunur; 2. ifadede (şemsî) lâm okunmaz, şeddelenir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki bir akrabayı dört aşamalı bütüncül paragrafla tanıtma adımlarını (Kim? → Meslek ve nitelik → Çalışma yeri → Sevgi ifadesi) 1’den 4’e kadar numaralandırınız.",
+      "soru": "Bir akrabayı dört aşamalı bütüncül paragrafla tanıtma adımlarını (Kim? → Meslek ve nitelik → Çalışma yeri → Sevgi ifadesi) 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:هٰذَا خَالِي} (Bu benim dayımdır)",
         "{ar:هُوَ مُهَنْدِسٌ نَشِيطٌ} (O çalışkan bir mühendistir)",
@@ -232,7 +222,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki iki tanıtım cümlesini inceleyerek teyzenin kim olduğunu, mesleğini, niteliğini ve nerede çalıştığını Türkçe olarak yazınız.",
+      "soru": "«{ar:هٰذِهِ خَالَتِي، هِيَ طَبِيبَةٌ مَاهِرَةٌ وَتَعْمَلُ فِي الْمُسْتَشْفَى.}» cümlesine göre teyzenin kim olduğunu, mesleğini, niteliğini ve nerede çalıştığını Türkçe olarak yazınız.",
       "cevap": "Bu benim teyzemdir; o yetenekli bir doktordur ve hastanede çalışıyor.",
       "satir": 2
     },

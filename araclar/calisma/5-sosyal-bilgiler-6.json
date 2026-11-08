@@ -15,8 +15,7 @@
   "hatirla": [
     "İnsanların ihtiyaç sahiplerine destek olmasına yardımlaşma, sevinçte ve zorlukta kenetlenerek ortak hareket etmesine dayanışma denir; imece, sadaka taşı, zimem defteri, Kızılay ve AFAD toplumsal birliği güçlendirir.",
     "Harita üzerinde konum belirlerken 4 ana yön (Kuzey, Güney, Doğu, Batı) ve 4 ara yön (Kuzeydoğu, Kuzeybatı, Güneydoğu, Güneybatı) kullanılır; yön oku daima Kuzey’i gösterir.",
-    "Bir yerin denizlere, komşu illere ve ülkelere, yer şekillerine, yükseltiye, su kaynaklarına ve ulaşım yollarına göre sahip olduğu kendine özgü özelliklere göreceli (özel) konum denir.",
-    "Fiziki haritalarda renkler yükselti basamaklarını gösterir: yeşil (0-500 m alçak ovalar), sarı-turuncu (500-1500 m platolar) ve kahverengi (1500 m üzeri yüksek dağlar)."
+    "Bir yerin denizlere, komşu illere ve ülkelere, yer şekillerine, yükseltiye, su kaynaklarına ve ulaşım yollarına göre sahip olduğu kendine özgü özelliklere göreceli (özel) konum denir."
   ],
   "sorular": [
     {
@@ -35,10 +34,6 @@
         [
           "Göreceli (özel) konum",
           "Bir ilin denizlere, komşulara, yer şekillerine ve ulaşıma göre durumu"
-        ],
-        [
-          "Fiziki harita",
-          "Dağ, ova ve platoları yükselti basamaklarına göre renklerle gösteren harita"
         ]
       ]
     },
@@ -75,10 +70,6 @@
         {
           "metin": "Ara yönler isimlendirilirken daima önce Doğu veya Batı kelimesi söylenir (Doğukuzey gibi).",
           "dogru": false
-        },
-        {
-          "metin": "Bir ilin denize kıyısının olması ve önemli ulaşım kavşağında bulunması o ilin göreceli konumunun sonucudur.",
-          "dogru": true
         }
       ]
     },
@@ -99,10 +90,6 @@
         {
           "metin": "Ülkemiz yönetim birimi olarak siyasi haritada sınırları gösterilen toplam ___ ilden oluşur.",
           "cevap": "81"
-        },
-        {
-          "metin": "Fiziki haritalarda yüksekliği 1500 metreden fazla olan yüksek dağlık alanlar ___ tonlarıyla gösterilir.",
-          "cevap": "kahverengi"
         }
       ],
       "fazla": [
@@ -125,8 +112,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki dört il kartını inceleyerek her ilin öne çıkan göreceli konum özelliğini ve gelişen ekonomik faaliyeti tabloya yazınız. İlk satır örnektir.",
+      "soru": "Her ilin öne çıkan göreceli konum özelliğini ve gelişen ekonomik faaliyeti tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "İl Adı",
         "Göreceli Konum Özelliği",
@@ -136,7 +122,9 @@
         [
           "1. Antalya",
           "Akdeniz kıyısı ve güneşli iklim",
-          "Yaz turizmi ve seracılık"
+          {
+            "b": "Yaz turizmi ve seracılık"
+          }
         ],
         [
           "2. Adana",
@@ -164,16 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki fiziki harita renk anahtarında Çukurova’nın yeşil, Konya Ovası’nın sarı, Ağrı Dağı’nın ise kahverengi ile gösterilmesinin temel nedenini kısaca açıklayınız.",
+      "soru": "Fiziki harita renk anahtarında Çukurova’nın yeşil, Konya Ovası’nın sarı, Ağrı Dağı’nın ise kahverengi ile gösterilmesinin temel nedenini kısaca açıklayınız.",
       "cevap": "Renkler bitki örtüsünü değil yükseltiyi gösterir; yeşil alçak yerleri belirtir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görselde verilen dört yerleşim alanını, fiziki haritadaki {koyu:deniz seviyesinden yükseltisi en az olandan en fazla olana} doğru (kıyıdan yüksek dağlara) 1’den 4’e kadar sıralayınız.",
+      "soru": "Aşağıdaki dört yerleşim alanını, deniz seviyesinden yükseltisi en az olandan en fazla olana doğru (kıyıdan yüksek dağlara) 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "İzmir Kıyı Ovası — Deniz seviyesinde (0 - 200 m, fiziki haritada koyu yeşil)",
         "Bursa İnegöl Ovası — Alçak-orta yükselti basamağında (~300 - 500 m, açık yeşil)",
@@ -235,9 +221,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki Bursa il kimlik kartını inceleyiniz. Bursa’nın göreceli konumunun şehirdeki ekonomik faaliyetleri ve ulaşımı nasıl çeşitlendirdiğini iki örnekle açıklayınız.",
-      "cevap": "Verimli ovaları, ulaşım kolaylığı ve gelişmiş ticareti sebebiyle nüfus yoğundur.",
+      "soru": "Bursa’nın göreceli konumunun şehirdeki ekonomik faaliyetleri ve ulaşımı nasıl çeşitlendirdiğini iki örnekle açıklayınız.",
+      "cevap": "Verimli ovalarında tarım, Uludağ’da kış turizmi, gelişmiş yollarıyla sanayi ve ticaret yapılır.",
       "satir": 2
     },
     {

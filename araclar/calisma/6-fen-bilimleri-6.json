@@ -15,8 +15,7 @@
   "hatirla": [
     "Hareket eden cismin izlediği yolun toplam uzunluğuna alınan yol (m, km, cm), hareket boyunca geçen zamana geçen süre (s, min, h) denir.",
     "Birim zamanda alınan yola sürat denir: Sürat = {kesir:Alınan yol|Geçen süre}. Buradan Alınan yol = Sürat × Geçen süre ve Geçen süre = {kesir:Alınan yol|Sürat} bulunur; birimleri {kesir:m|s} ve {kesir:km|h}’tir.",
-    "Eşit zaman aralıklarında eşit yollar alan cisim sabit süratli hareket yapar; yol-zaman grafiği başlangıç noktasından çıkan dümdüz bir doğrudur ve çizgisi daha dik olanın sürati daha büyüktür.",
-    "Çabukluğu yönüyle birlikte anlatan büyüklüğe hız denir; sürat yönsüz (5 {kesir:m|s}), hız ise yönlüdür (doğuya 5 {kesir:m|s})."
+    "Eşit zaman aralıklarında eşit yollar alan cisim sabit süratli hareket yapar; yol-zaman grafiği başlangıç noktasından çıkan dümdüz bir doğrudur ve çizgisi daha dik olanın sürati daha büyüktür."
   ],
   "sorular": [
     {
@@ -35,10 +34,6 @@
         [
           "Hız",
           "Cismin çabukluğunu hareket yönüyle birlikte belirten büyüklük"
-        ],
-        [
-          "Sabit süratli hareket",
-          "Eşit zaman aralıklarında eşit uzunlukta yolların alındığı hareket"
         ]
       ]
     },
@@ -75,10 +70,6 @@
         {
           "metin": "Yol-zaman grafiğinde çizgisi zaman eksenine paralel ve yatay olan bir cisim sabit süratle hızlanmaktadır.",
           "dogru": false
-        },
-        {
-          "metin": "“Otobüs kuzeye doğru 60 {kesir:km|h} ile gidiyor.” ifadesinde yön belirtildiği için hızdan söz edilmiştir.",
-          "dogru": true
         }
       ]
     },
@@ -99,10 +90,6 @@
         {
           "metin": "Aynı yol-zaman grafiğinde doğrusu daha ___ olan hareketlinin sürati diğerinden daha büyüktür.",
           "cevap": "dik"
-        },
-        {
-          "metin": "Sürat ile hız aynı birimlerle ölçülür ancak hızın süratten farkı bir ___ olmasıdır.",
-          "cevap": "yönünün"
         }
       ],
       "fazla": [
@@ -125,8 +112,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki dört hareketlinin yol, süre ve sürat kartlarını inceleyerek tablodaki boş bırakılan hücreleri uygun sayı ve birimlerle tamamlayınız. İlk satır örnektir.",
+      "soru": "Dört hareketlinin yol, süre ve sürat kartlarını inceleyerek tablodaki boş bırakılan hücreleri uygun sayı ve birimlerle tamamlayınız. İlk satır örnektir.",
       "basliklar": [
         "Hareketli",
         "Alınan Yol",
@@ -138,7 +124,9 @@
           "1. Bisikletli",
           "240 m",
           "30 s",
-          "8 {kesir:m|s}"
+          {
+            "b": "8 {kesir:m|s}"
+          }
         ],
         [
           "2. Şehirler Arası Otobüs",
@@ -169,21 +157,19 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki yol-zaman grafiğinde K ve L araçlarının 5 saniyelik hareket doğruları verilmiştir. K ve L araçlarının süratlerini hesaplayarak hangi aracın doğrusunun neden daha dik olduğunu yazınız.",
+      "soru": "Sabit süratle hareket eden araçlardan K aracı 5 saniyede 100 m, L aracı ise 5 saniyede 60 m yol almıştır. K ve L araçlarının süratlerini hesaplayarak yol-zaman grafiğinde hangi aracın doğrusunun neden daha dik olduğunu yazınız.",
       "cevap": "K’nin sürati 100÷5=20 {kesir:m|s}, L’nin sürati 60÷5=12 {kesir:m|s}’dir; K aynı sürede daha çok yol aldığı için çizgisi daha diktir.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görselde verilen aynı birimdeki dört hareketlinin süratlerini {koyu:büyükten küçüğe} doğru 1’den 4’e kadar numaralandırınız.",
+      "soru": "Aynı birimdeki dört hareketlinin süratlerini {koyu:büyükten küçüğe} doğru 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
-        "30 saniyede 300 metre yol alan yarış bisikletlisi (10 {kesir:m|s})",
-        "25 saniyede 150 metre koşan atlet Can (6 {kesir:m|s})",
-        "40 saniyede 160 metre ilerleyen patenci (4 {kesir:m|s})",
-        "60 saniyede 90 metre yürüyen öğrenci (1,5 {kesir:m|s})"
+        "30 saniyede 300 metre yol alan yarış bisikletlisi",
+        "25 saniyede 150 metre koşan atlet Can",
+        "40 saniyede 160 metre ilerleyen patenci",
+        "60 saniyede 90 metre yürüyen öğrenci"
       ]
     },
     {
@@ -248,9 +234,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki yürüyüş verilerine göre Ayşe 600 metrelik okul yolunu 10 dakikada (600 s), Ali ise aynı yolu 8 dakikada (480 s) yürümüştür. İkisinin süratlerini bularak “Ayşe daha uzun süre yürüdüğü için daha süratlidir.” diyen bir öğrencinin yanılgısını açıklayınız.",
-      "cevap": "Ayşe 1 m/s, Ali 1,25 m/s sürate sahiptir; yolu daha kısa sürede bitiren Ali daha süratlidir.",
+      "soru": "Ayşe 600 metrelik okul yolunu 10 dakikada (600 s), Ali ise aynı yolu 8 dakikada (480 s) yürümüştür. İkisinin süratlerini bularak “Ayşe daha uzun süre yürüdüğü için daha süratlidir.” diyen bir öğrencinin yanılgısını açıklayınız.",
+      "cevap": "Ayşe 1 {kesir:m|s}, Ali 1,25 {kesir:m|s} sürate sahiptir; yolu daha kısa sürede bitiren Ali daha süratlidir.",
       "satir": 2
     },
     {

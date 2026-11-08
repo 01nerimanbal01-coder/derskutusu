@@ -15,8 +15,7 @@
   "hatirla": [
     "Metni okumadan önce başlık ve görsellerden tahmin yürütülür; oyunu öğrenip oynamak için adım adım okuma, belirli bir bilgiyi bulmak için göz gezdirip tarama, başkasına tanıtmak için not alma yöntemi seçilir.",
     "Bir işin nasıl yapılacağını sırayla anlatan metinlere yönerge denir; metinde cümle olarak doğrudan bulunan bilgiler yüzey anlamdır, görsellerde ise doğrudan görülen açık mesaj ile ipuçlarından çıkarılan örtük mesaj yer alır.",
-    "Oyun söz varlığında kazanmak-kaybetmek zıt, yarış-müsabaka eş anlamlıdır; sicim ince ipi, halat ve urgan kalın ipi anlatır; ‘ipin ucunu kaçırmak, ipleri eline almak, ipe un sermek’ kalıplaşmış deyimlerdir.",
-    "Karşılaştırma yazılarında benzerlik için ‘ikisi de, tıpkı … gibi’, farklılık için ‘oysa, buna karşılık’ kullanılır; yönerge adımlarında sıra sayısından sonra nokta (1., 2.) konur, m, cm ve kg kısaltmaları noktasız yazılır."
+    "Oyun söz varlığında kazanmak-kaybetmek zıt, yarış-müsabaka eş anlamlıdır; sicim ince ipi, halat ve urgan kalın ipi anlatır; ‘ipin ucunu kaçırmak, ipleri eline almak, ipe un sermek’ kalıplaşmış deyimlerdir."
   ],
   "sorular": [
     {
@@ -36,10 +35,6 @@
         [
           "ipe un sermek",
           "Üzerine düşen bir işi yapmamak için geçersiz bahaneler uydurmak"
-        ],
-        [
-          "oyuna gelmek",
-          "Karşı tarafın kurduğu düzene aldanmak, kandırılmak"
         ]
       ]
     },
@@ -78,10 +73,6 @@
         {
           "metin": "Uzunluk ve ağırlık ölçü birimi kısaltmaları olan m, cm ve kg sonuna nokta konulmadan yazılır.",
           "dogru": true
-        },
-        {
-          "metin": "Yönerge metninde ‘önce, sonra, en sonunda’ diye sıralanan adımların yeri değiştirilirse oyun kuralları bozulmaz.",
-          "dogru": false
         }
       ]
     },
@@ -103,10 +94,6 @@
         {
           "metin": "En az iki kelimenin gerçek anlamından uzaklaşarak kalıplaşmasıyla oluşan söz öbeğine ___ adı verilir.",
           "cevap": "deyim"
-        },
-        {
-          "metin": "Halat çekme gibi güç gerektiren takım oyunlarında kopmaması için kalın ip türü olan halat ya da ___ kullanılır.",
-          "cevap": "urgan"
         }
       ],
       "fazla": [
@@ -131,8 +118,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "sutun": "sol",
-      "gorsel_var": true,
-      "soru": "Görseldeki oyun çizimi inceleme kartlarında yer alan unsurların ilettiği anlamı ve mesaj türünü (Açık Mesaj / Örtük Mesaj) tabloya yazınız.",
+      "soru": "Oyun çizimi inceleme kartlarında yer alan unsurların ilettiği anlamı ve mesaj türünü (Açık Mesaj / Örtük Mesaj) tabloya yazınız.",
       "basliklar": [
         "Görseldeki Unsur",
         "İlettiği Anlam",
@@ -142,7 +128,9 @@
         [
           "1. Ortadaki çizgi ve halat tutan iki takım",
           "Oynanan oyun halat çekmedir",
-          "Açık Mesaj"
+          {
+            "b": "Açık Mesaj"
+          }
         ],
         [
           "2. Oyuncuların neşeyle gülen yüz ifadeleri",
@@ -171,8 +159,7 @@
       "tur": "kisa",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki yönerge metnine yöneltilen A ve B sorularından hangisinin ‘yüzey anlam’ sorusu, hangisinin ‘yorum’ sorusu olduğunu nedeni ile birlikte kısaca yazınız.",
+      "soru": "“Mendil Kapmaca: Oyuncular iki eşit gruba ayrılır ve karşılıklı dizilir. Ortada duran hakem mendili tutar.” yönerge metnine şu iki soru yöneltilmiştir: A) Mendili ortada kim tutar? B) Hakemin tam ortada durması oyunun adil oynanmasını nasıl etkiler? Buna göre A ve B sorularından hangisinin ‘yüzey anlam’, hangisinin ‘yorum’ sorusu olduğunu nedeni ile birlikte kısaca yazınız.",
       "cevap": "A doğrudan metinde yazdığı için yüzey, B akıl yürütme istediği için derindir.",
       "satir": 2
     },
@@ -180,8 +167,7 @@
       "tur": "siralama",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görselde verilen ‘bir oyunu sınıfta hazırlıksız konuşmayla anlatma’ zihinsel plan adımlarını baştan sona 1’den 4’e kadar sıralayınız.",
+      "soru": "“Bir oyunu sınıfta hazırlıksız konuşmayla anlatma” zihinsel plan adımlarını baştan sona 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Giriş: Dinleyicilere tanıtılacak oyunun adını net biçimde söylemek",
         "Hazırlık: Oyunun kaç kişiyle, nerede ve hangi malzemeyle oynandığını belirtmek",
@@ -251,8 +237,7 @@
       "tur": "acik",
       "duzey": "ust",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki konuşma rehberi kartını inceleyiniz. Bir oyunun kurallarını arkadaşlarınıza anlatırken ses tonunuzu, konuşma hızınızı ve beden dilinizi nasıl kullanmanız gerektiğini açıklayınız.",
+      "soru": "Bir oyunun kurallarını arkadaşlarınıza anlatırken ses tonunuzu, konuşma hızınızı ve beden dilinizi nasıl kullanmanız gerektiğini açıklayınız.",
       "cevap": "Yavaş konuşmalı, önemli kuralı vurgulamalı ve hareketlerle desteklemelidir.",
       "satir": 2
     },

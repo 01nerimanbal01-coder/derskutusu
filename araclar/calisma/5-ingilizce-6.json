@@ -14,9 +14,7 @@
   ],
   "hatirla": [
     "Okul kulüplerinden ünlü sesle başlayanların önünde “an” (an art club, an environment club), ünsüz sesle başlayanların önünde “a” (a science club, a chess club, a folk dance club) kullanılır.",
-    "Sevilen etkinlikler sorulurken “Do you like + V-ing?” kalıbı kullanılır; like, love, enjoy ve hate fiillerinden sonra gelen eylem fiili “-ing” takısı alır (solving problems, doing experiments).",
-    "Tek kelimelik ülke adlarından (Türkiye, Azerbaijan, Japan, France) önce “the” gelmez; birleşik ülke adlarından (the UK, the USA, the Turkish Republic of Northern Cyprus) önce “the” kullanılır.",
-    "Yasaklar “mustn’t / can’t + V1” (You mustn’t run in the corridors), yönergeler ise “Listen! / Line up, nice and straight! / Don’t fight!” (Imperatives) ile ifade edilir."
+    "Sevilen etkinlikler sorulurken “Do you like + V-ing?” kalıbı kullanılır; like, love, enjoy ve hate fiillerinden sonra gelen eylem fiili “-ing” takısı alır (solving problems, doing experiments)."
   ],
   "sorular": [
     {
@@ -35,10 +33,6 @@
         [
           "Line up quietly in the school yard!",
           "Okul bahçesinde sessizce sıraya girin!"
-        ],
-        [
-          "You mustn’t make a noise!",
-          "Kütüphanede veya derste gürültü yapmamalısın!"
         ]
       ]
     },
@@ -75,10 +69,6 @@
         {
           "metin": "“19 May Commemoration of Atatürk, Youth and Sports Day” 19 Mayıs Atatürk’ü Anma, Gençlik ve Spor Bayramı’dır.",
           "dogru": true
-        },
-        {
-          "metin": "“Does Kerem like reading?” sorusuna olumlu kısa cevap verirken “Yes, he do.” denir.",
-          "dogru": false
         }
       ]
     },
@@ -99,10 +89,6 @@
         {
           "metin": "My penfriend Aylin is from Azerbaijan and her cousin lives in ___ UK.",
           "cevap": "the"
-        },
-        {
-          "metin": "Follow the school rules and play ___ in the garden!",
-          "cevap": "safe"
         }
       ],
       "fazla": [
@@ -125,8 +111,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki dört öğrencinin ilgi alanı kartlarını inceleyerek katıldıkları kulübü (School Club) ve sevdikleri etkinliği (-ing) tabloya yazınız. İlk satır örnektir.",
+      "soru": "Katıldıkları kulübü (School Club) ve sevdikleri etkinliği (-ing) tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Student",
         "School Club",
@@ -136,7 +121,9 @@
         [
           "1. Mert",
           "a maths club",
-          "solving problems"
+          {
+            "b": "solving problems"
+          }
         ],
         [
           "2. Zeynep",
@@ -164,16 +151,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki diyalog kartında parantez içindeki sözcükleri “Do / Does” ve “-ing” kurallarına uygun biçimde tamamlayarak 1 ve 2 numaralı boşlukların cevaplarını yazınız.",
+      "soru": "Aşağıdaki cümlelerde parantez içindeki sözcükleri geniş zaman (Do / Does / -s) ve “-ing” kurallarına uygun biçimde tamamlayarak 1 ve 2 numaralı boşlukların cevaplarını yazınız: 1) “___ you like ___ chess?” (do / play) 2) “She ___ ___ puzzles.” (love / solve)",
       "cevap": "1. boşluk: Do / playing (Do you like playing chess?) — 2. boşluk: loves / solving (She loves solving puzzles).",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görselde verilen millî bayramlarımızı yıl içindeki kutlama tarihlerine göre ilkbahardan sonbahara doğru (Nisan → Ekim) 1’den 4’e kadar sıralayınız.",
+      "soru": "Millî bayramlarımızı yıl içindeki kutlama tarihlerine göre ilkbahardan sonbahara doğru (Nisan → Ekim) 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "23 April National Sovereignty and Children’s Day (Spring - April)",
         "19 May Commemoration of Atatürk, Youth and Sports Day (Spring - May)",
@@ -230,8 +215,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki kütüphane ve koridor posterini inceleyiniz. Posterdeki uyarılara göre öğrencilerin uyması gereken iki kuralı “mustn’t” ve “Don’t” kullanarak İngilizce yazınız.",
+      "soru": "Okul koridoru ve kütüphane kurallarına göre öğrencilerin uyması gereken aşağıdaki iki kuralı parantez içindeki ipuçlarını (“mustn’t” ve “Don’t”) kullanarak İngilizce cümle olarak yazınız: 1) (run in the corridors / mustn’t) 2) (make a noise in the school library / Don’t)",
       "cevap": "1) You mustn’t run in the corridors. 2) Don’t make a noise in the school library.",
       "satir": 2
     },

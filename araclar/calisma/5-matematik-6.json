@@ -14,9 +14,7 @@
   ],
   "hatirla": [
     "Her çokgende kenar sayısı, köşe sayısı ve iç açı sayısı birbirine eşittir; üçgenin köşegeni yoktur (0), dörtgenin 2, beşgenin 5, altıgenin 9 köşegeni vardır.",
-    "Üçgenin iç açıları toplamı 180°’dir; açılarına göre dar açılı, dik açılı ve geniş açılı; kenarlarına göre eşkenar (açıları 60°), ikizkenar ve çeşitkenar üçgen olarak sınıflandırılır.",
-    "Kare ve dikdörtgenin tüm iç açıları 90°’dir; paralelkenar ve eşkenar dörtgende karşılıklı kenarlar paralel ve karşılıklı iç açıların ölçüleri birbirine eşittir.",
-    "Düzgün çokgenlerde kenar boyları ve açı dereceleri kendi içinde özdeştir; eşkenar üçgen (60°), kare (90°), düzgün beşgen (108°) ve bal peteğindeki düzgün altıgen (120°) başlıca örneklerdir."
+    "Üçgenin iç açıları toplamı 180°’dir; açılarına göre dar açılı, dik açılı ve geniş açılı; kenarlarına göre eşkenar (açıları 60°), ikizkenar ve çeşitkenar üçgen olarak sınıflandırılır."
   ],
   "sorular": [
     {
@@ -35,10 +33,6 @@
         [
           "Paralelkenar",
           "Karşılıklı kenarları paralel ve karşılıklı açıları eşit özel dörtgen"
-        ],
-        [
-          "Yamuk",
-          "En az bir çift karşılıklı kenarı birbirine paralel olan dörtgen"
         ]
       ]
     },
@@ -75,10 +69,6 @@
         {
           "metin": "Üçgenin tüm köşeleri birbirine komşu olduğu için üçgenin hiç köşegeni yoktur.",
           "dogru": true
-        },
-        {
-          "metin": "Eşkenar dörtgenin dört kenarı eşit olduğu için bütün iç açıları her zaman 90° olmak zorundadır.",
-          "dogru": false
         }
       ]
     },
@@ -99,10 +89,6 @@
         {
           "metin": "Bütün kenarları eş uzunlukta ve bütün köşelerindeki açıları eş derecede olan şekillere ___ çokgen denir.",
           "cevap": "düzgün"
-        },
-        {
-          "metin": "Dört kenarlı düzgün çokgenin özel adı ___ olarak bilinir.",
-          "cevap": "kare"
         }
       ],
       "fazla": [
@@ -125,8 +111,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki dört çokgen kartını inceleyerek her çokgenin kenar sayısını, iç açı sayısını ve yalnız bir köşesinden çizilebilen köşegen sayısını (n − 3) tabloya yazınız.",
+      "soru": "Her çokgenin kenar sayısını, iç açı sayısını ve yalnız bir köşesinden çizilebilen köşegen sayısını (n − 3) tabloya yazınız.",
       "basliklar": [
         "Çokgen Adı",
         "Kenar Sayısı",
@@ -138,7 +123,9 @@
           "1. Üçgen",
           "3",
           "3",
-          "0"
+          {
+            "b": "0"
+          }
         ],
         [
           "2. Dörtgen",
@@ -175,16 +162,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki dikdörtgen ahşap çerçevenin sağa sola esneyip paralelkenara dönüşmemesi için A ile C köşeleri arasına çakılan çapraz çıta hangi çokgen elemanıdır ve çerçeveyi hangi sağlam çokgenlere ayırır?",
+      "soru": "Kare ile eşkenar dörtgenin kenar uzunlukları bakımından ortak özelliğini ve eşkenar dörtgenin neden her zaman düzgün çokgen sayılmadığını kısaca yazınız.",
       "cevap": "İkisinin de 4 kenarı eşittir; eşkenar dörtgenin açıları dik olmak zorunda değildir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görselde verilen dört çokgeni, içlerinde çizilebilen {koyu:toplam köşegen sayısı} en az olandan en çok olana doğru (0 → 2 → 5 → 9) 1’den 4’e kadar sıralayınız.",
+      "soru": "Dört çokgeni, içlerinde çizilebilen {koyu:toplam köşegen sayısı} en az olandan en çok olana doğru (0 → 2 → 5 → 9) 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Üçgen — Komşu olmayan köşesi bulunmadığı için toplam 0 köşegeni vardır.",
         "Dörtgen — Karşılıklı köşelerini birleştiren toplam 2 köşegeni vardır.",
@@ -246,8 +231,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki karşılaştırma kartında yer alan kare ile eşkenar dörtgenin bir ortak özelliğini ve eşkenar dörtgenin neden düzgün çokgen sayılmadığını kısaca açıklayınız.",
+      "soru": "Dikdörtgen biçimindeki ahşap bir çerçevenin sağa sola esneyip paralelkenara dönüşmemesi için karşılıklı iki köşesi (A ile C) arasına çakılan çapraz çıta hangi çokgen elemanıdır ve çerçeveyi hangi sağlam çokgenlere ayırır? Açıklayınız.",
       "cevap": "Çapraz çıta köşegendir; çerçeveyi iki dik üçgene ayırarak yapıyı sağlamlaştırır.",
       "satir": 2
     },

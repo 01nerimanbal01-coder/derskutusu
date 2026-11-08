@@ -1,141 +1,85 @@
-"""5. sınıf Türkçe 6. hafta (Bir Güzel Hediye & Mustafa: Yüzey Anlam, Anahtar Kelimeler, Söz Sanatları ve Bağlantı İfadeleri) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 12 pt Noto Sans (K150 EK); eğik kesir yok (K155)."""
+"""5-turkce-6 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-GRI, GRI_A, YESIL_K, KUM = '#9aa6bd', '#eef1f6', '#0f6b45', '#fffdf5'
-TR_FONT = 'font-family="Noto Sans, sans-serif" font-size="12"'
-
-
-def svg(w, h, ic, etiket, en_fazla=21):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    agirlik = ' font-weight="700"' if kalin else ' font-weight="500"'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {TR_FONT}{agirlik} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def ruzgar_soz_sanati_karti():
-    ic = kutu(6, 6, 588, 86, MAVI_A, MAVI, 9, 1.5)
-    ic += kutu(6, 6, 588, 26, MAVI, MAVI, 9, 1)
-    ic += yazi(300, 24, 'SÖZ SANATI İNCELEME KARTI · MUSTAFA METNİ', '#fff', kalin=True)
-    ic += yazi(300, 52, '“Selanik’in serin rüzgârı küçük Mustafa’ya vatan sevgisini fısıldıyordu.”', LAC, kalin=True)
-    ic += yazi(300, 75, 'İpucu: Cansız varlık olan rüzgâra insana özgü “fısıldama” özelliği verilmiştir.', MAVI)
-    return svg(600, 98, ic, 'Rüzgârın fısıldaması örneğiyle kişileştirme söz sanatı kartı.', 21)
-
-
-def baglanti_ifadeleri_kartlari():
-    satirlar = [
-        ('1. Kart', 'Mustafa tarih ve edebiyat kitaplarını okumayı çok seviyordu.', MAVI, MAVI_A),
-        ('2. Kart (!)', 'Dışarıda şiddetli yağmur yağıyordu fakat çocuklar evde oyun kurdu.', KIR, KIR_A),
-        ('3. Kart', 'Selanik’teki pembe boyalı evin geniş ve aydınlık bir bahçesi vardı.', YES, YES_A),
-        ('4. Kart', 'Okulumuzda 29 Ekim Cumhuriyet Bayramı törenle kutlandı.', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (no, metin, renk, arka) in enumerate(satirlar):
-        y = 6 + i * 26
-        ic += kutu(6, y, 588, 22, arka, renk, 6, 1.3)
-        ic += kutu(6, y, 86, 22, renk, renk, 6, 1)
-        ic += yazi(49, y + 15, no, '#fff', kalin=True)
-        ic += yazi(102, y + 15, metin, LAC, 'start', kalin=(i == 1))
-    return svg(600, 112, ic, 'Bağlantı ifadesi içeren ve içermeyen dört cümle kartı.', 21)
-
-
-def soz_sanati_tablo_kartlari():
-    kartlar = [
-        ('1. Kart', 'Pamuk gibi bembeyaz bulutlar', MAVI, MAVI_A),
-        ('2. Kart', 'Gülümseyen yaşlı çınar ağacı', YES, YES_A),
-        ('3. Kart', 'Çelik kadar sağlam bir irade', TUR, TUR_A),
-        ('4. Kart', 'Çocukları özlemle bekleyen kutu', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 296
-        y = 6 + (i // 2) * 48
-        ic += kutu(x, y, 288, 42, arka, renk, 8, 1.4)
-        ic += yazi(x + 144, y + 18, bas, renk, kalin=True)
-        ic += yazi(x + 144, y + 35, alt, LAC)
-    return svg(600, 104, ic, 'Benzetme ve kişileştirme içeren dört söz sanatı kartı.', 21)
-
-
-def bir_guzel_hediye_karti():
-    ic = kutu(6, 6, 588, 86, TUR_A, TUR, 9, 1.5)
-    ic += kutu(6, 6, 588, 26, TUR, TUR, 9, 1)
-    ic += yazi(300, 24, 'METİN ÖZETİ · BİR GÜZEL HEDİYE', '#fff', kalin=True)
-    ic += yazi(300, 50, 'Ahmet el emeğiyle yaptığı ahşap oyuncağı en yakın arkadaşıyla paylaşır.', LAC, kalin=True)
-    ic += yazi(300, 74, 'Bu güzel hediye iki arkadaş arasındaki dostluk bağını ve mutluluğu büyütür.', LAC)
-    return svg(600, 98, ic, 'Bir Güzel Hediye metninin anahtar kavramlarını içeren özet kartı.', 21)
-
-
-def oykuleyici_metin_asamalari():
-    kartlar = [
-        ('1. Tahmin', 'Başlık ve görsel inceleme', MAVI, MAVI_A),
-        ('2. Serim', 'Kişi, yer, zaman girişi', YES, YES_A),
-        ('3. Düğüm', 'Olay ve merakın artışı', TUR, TUR_A),
-        ('4. Çözüm', 'Sonuç ve ana fikir', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(kartlar):
-        x = 6 + i * 148
-        ic += kutu(x, 6, 140, 80, arka, renk, 8, 1.4)
-        ic += kutu(x, 6, 140, 26, renk, renk, 8, 1)
-        ic += yazi(x + 70, 24, bas, '#fff', kalin=True)
-        ic += yazi(x + 70, 60, alt, LAC, kalin=True)
-    return svg(600, 92, ic, 'Okuma öncesi tahmin, serim, düğüm ve çözüm aşamaları kartları.', 21)
-
-
-def yazim_denetimi_panosu():
-    satirlar = [
-        ('I. Cümle', 'Mustafa Kemal 1881 yılında Selanik’te dünyaya geldi.', YES, YES_A),
-        ('II. Cümle', 'Babası Ali Rıza Efendi, annesi ise Zübeyde Hanım’dır.', MAVI, MAVI_A),
-        ('III. Cümle (!)', 'Okulumuzda 29 ekim Cumhuriyet bayramı coşkuyla kutlandı.', KIR, KIR_A),
-        ('IV. Cümle', 'Küçük Mustafa eğitimine Şemsi Efendi Okulunda devam etti.', CAM, CAM_A),
-    ]
-    ic = ''
-    for i, (no, metin, renk, arka) in enumerate(satirlar):
-        y = 6 + i * 26
-        ic += kutu(6, y, 588, 22, arka, renk, 6, 1.3)
-        ic += kutu(6, y, 92, 22, renk, renk, 6, 1)
-        ic += yazi(52, y + 15, no, '#fff', kalin=True)
-        ic += yazi(108, y + 15, metin, LAC, 'start', kalin=(i == 2))
-    return svg(600, 112, ic, 'Büyük harf ve kesme işareti kurallarını içeren dört cümle panosu.', 21)
-
-
-def konusma_becerisi_karti():
-    ic = kutu(6, 6, 286, 86, YES_A, YES, 9, 1.4)
-    ic += yazi(149, 25, '1. Beden Dili Kuralları', YESIL_K, kalin=True)
-    ic += yazi(149, 50, '• Dinleyicilerle göz teması kurmak', LAC, kalin=True)
-    ic += yazi(149, 74, '• Doğal jest ve mimik kullanmak', LAC)
-
-    ic += kutu(308, 6, 286, 86, MOR_A, MOR, 9, 1.4)
-    ic += yazi(451, 25, '2. Bağlantı ve Geçiş İfadeleri', MOR, kalin=True)
-    ic += yazi(451, 50, '• Açıklama: çünkü, özellikle', LAC, kalin=True)
-    ic += yazi(451, 74, '• Özetleme: kısacası, sonuç olarak', LAC)
-    return svg(600, 98, ic, 'Hazırlıksız konuşmada beden dili ve bağlantı ifadeleri kartı.', 21)
-
-
-def mustafa_yuzey_anlam_karti():
-    ic = kutu(6, 6, 588, 88, CAM_A, CAM, 9, 1.5)
-    ic += kutu(6, 6, 588, 26, CAM, CAM, 9, 1)
-    ic += yazi(300, 24, 'DİNLEME METNİ BİLGİ KARTI · MUSTAFA', '#fff', kalin=True)
-    ic += yazi(300, 50, '• Yer: Selanik · Aile: Zübeyde Hanım ve Ali Rıza Efendi eğitime büyük önem verir.', LAC, kalin=True)
-    ic += yazi(300, 74, '• Özellik: Küçük Mustafa tarih, edebiyat ve vatan sevgisi konulu kitapları çok sever.', LAC)
-    return svg(600, 100, ic, 'Mustafa metninde doğrudan verilen yüzey anlam bilgilerini içeren kart.', 21)
+GORSELLER = {1: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mustafa metninden alınan '
+    'cümle inceleme kartı."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">SÖZ '
+    'SANATI İNCELEME KARTI · MUSTAFA</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">METNİ</text><text x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">• “Selanik’in serin rüzgârı küçük Mustafa’ya</text><text x="11.0" '
+    'y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">vatan sevgisini '
+    'fısıldıyordu.”</text></svg>',
+ 4: '<svg viewBox="0 0 350 212" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bağlantı ifadesi içeren '
+    've içermeyen dört cümle kartı."><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">1. Kart</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Mustafa tarih ve</text><text x="87.5" y="58.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">edebiyat kitaplarını</text><text x="87.5" '
+    'y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">okumayı '
+    'çok</text><text x="87.5" y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">seviyordu.</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">2. Kart</text><text x="262.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Dışarıda şiddetli</text><text x="262.5" y="58.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">yağmur yağıyordu</text><text x="262.5" '
+    'y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">fakat çocuklar '
+    'evde</text><text x="262.5" y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">oyun kurdu.</text><rect x="4" y="108" width="167" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="126.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">3. Kart</text><text x="87.5" y="144.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Selanik’teki pembe</text><text x="87.5" y="163.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">boyalı evin geniş ve</text><text x="87.5" '
+    'y="181.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">aydınlık bir '
+    'bahçesi</text><text x="87.5" y="200.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">vardı.</text><rect x="179" y="108" width="167" height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="126.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">4. Kart</text><text x="262.5" y="144.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Okulumuzda 29 Ekim</text><text x="262.5" y="163.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">· Cumhuriyet</text><text x="262.5" y="181.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bayramı '
+    'törenle</text><text x="262.5" y="200.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">kutlandı.</text></svg>',
+ 8: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Büyük harf ve kesme '
+    'işareti kurallarını içeren dört cümle panosu."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">I. Cümle</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Mustafa Kemal 1881</text><text x="87.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yılında Selanik’te</text><text x="87.5" '
+    'y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">dünyaya '
+    'geldi.</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" '
+    'y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">II. '
+    'Cümle</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Babası Ali Rıza ·</text><text x="262.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Efendi, annesi ise</text><text x="262.5" y="76.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Zübeyde Hanım’dır.</text><rect x="4" y="89" '
+    'width="167" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="107.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">III. Cümle</text><text x="87.5" y="125.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Okulumuzda '
+    '29</text><text x="87.5" y="144.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">ekim Cumhuriyet</text><text x="87.5" y="162.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">bayramı coşkuyla</text><text x="87.5" y="181.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">kutlandı.</text><rect x="179" y="89" '
+    'width="167" height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="107.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">IV. Cümle</text><text x="262.5" y="125.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Küçük '
+    'Mustafa</text><text x="262.5" y="144.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">eğitimine Şemsi ·</text><text x="262.5" y="162.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Efendi Okulunda</text><text x="262.5" y="181.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">devam etti.</text></svg>',
+ 11: '<svg viewBox="0 0 350 113" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mustafa metninde '
+     'doğrudan verilen yüzey anlam bilgilerini içeren kart."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e8eefe" '
+     'stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#0b2257">DİNLEME METNİ BİLGİ KARTI · MUSTAFA</text><rect x="4" y="31" width="342" '
+     'height="80" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="48.2" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">• Yer: Selanik · Aile: Zübeyde Hanım ve '
+     'Ali</text><text x="11.0" y="66.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+     'fill="#0b2257">Rıza Efendi eğitime büyük önem verir.</text><text x="11.0" y="85.0" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Özellik: Küçük Mustafa tarih, edebiyat ve</text><text x="11.0" '
+     'y="103.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">vatan sevgisi '
+     'konulu kitapları çok sever.</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = ruzgar_soz_sanati_karti()
-    s[4]['gorsel'] = baglanti_ifadeleri_kartlari()
-    s[5]['gorsel'] = soz_sanati_tablo_kartlari()
-    s[6]['gorsel'] = bir_guzel_hediye_karti()
-    s[7]['gorsel'] = oykuleyici_metin_asamalari()
-    s[8]['gorsel'] = yazim_denetimi_panosu()
-    s[10]['gorsel'] = konusma_becerisi_karti()
-    s[11]['gorsel'] = mustafa_yuzey_anlam_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -15,8 +15,7 @@
   "hatirla": [
     "Müzakere, farklı görüşteki kişilerin konuşarak ve birbirini dinleyerek ortak bir sonuca (uzlaşmaya) varmaya çalışmasıdır; öneriler iddia, gerekçe ve kanıt sırasıyla savunulur.",
     "Toplumsal sorun çözme süreci 5 adımdır: 1) Fark et ve tanımla, 2) Nedenleri karşılaştır, 3) Çözüm geliştir, 4) Geri bildirimle düzenle, 5) Gerekçe ve kanıtla savun.",
-    "Yeryüzünün yaklaşık dörtte üçü sularla kaplıdır; dünyada 7 kıta (Asya, Afrika, Kuzey Amerika, Güney Amerika, Antarktika, Avrupa, Avustralya) ve 3 büyük okyanus (Büyük, Atlas, Hint) vardır.",
-    "Türkiye, Asya ile Avrupa kıtalarının birleştiği yerde bulunur; Asya’daki topraklarına Anadolu (yarımada), Avrupa’daki topraklarına Trakya denir ve ikisini İstanbul Boğazı, Marmara Denizi ile Çanakkale Boğazı ayırır."
+    "Yeryüzünün yaklaşık dörtte üçü sularla kaplıdır; dünyada 7 kıta (Asya, Afrika, Kuzey Amerika, Güney Amerika, Antarktika, Avrupa, Avustralya) ve 3 büyük okyanus (Büyük, Atlas, Hint) vardır."
   ],
   "sorular": [
     {
@@ -35,10 +34,6 @@
         [
           "Boğaz (İstanbul ve Çanakkale)",
           "İki denizi birbirine bağlayan ve iki kıtayı ayıran doğal dar su geçidi"
-        ],
-        [
-          "Okyanus (Büyük, Atlas, Hint)",
-          "Kıtaları birbirinden ayıran çok geniş ve derin su kütleleri"
         ]
       ]
     },
@@ -75,10 +70,6 @@
         {
           "metin": "Türkiye’nin bütün toprakları yalnızca Avrupa kıtasında yer almaktadır.",
           "dogru": false
-        },
-        {
-          "metin": "Her tarafı sularla çevrili kara parçalarına ada (Gökçeada, Kıbrıs), denizin karaya sokulduğu girintiye körfez denir.",
-          "dogru": true
         }
       ]
     },
@@ -99,10 +90,6 @@
         {
           "metin": "Bir çözüm önerisini savunurken ileri sürdüğümüz düşünceyi destekleyen gözlem ve sayılara ___ denir.",
           "cevap": "kanıt"
-        },
-        {
-          "metin": "Anadolu Yarımadası’nın kuzeyinde ___, batısında Ege Denizi, güneyinde ise Akdeniz yer alır.",
-          "cevap": "Karadeniz"
         }
       ],
       "fazla": [
@@ -125,8 +112,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki harita terimleri panosunu inceleyerek verilen örneklerin hangi coğrafi terime (Yarımada, Ada, Boğaz, Okyanus) karşılık geldiğini tabloya yazınız.",
+      "soru": "Verilen örneklerin hangi coğrafi terime (Yarımada, Ada, Boğaz, Okyanus) karşılık geldiğini tabloya yazınız.",
       "basliklar": [
         "Coğrafi Örnek",
         "Tanım Özelliği",
@@ -136,7 +122,9 @@
         [
           "1. Anadolu",
           "Üç tarafı denizlerle çevrili kara",
-          "Yarımada"
+          {
+            "b": "Yarımada"
+          }
         ],
         [
           "2. Gökçeada ve Kıbrıs",
@@ -164,16 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki sınıf müzakeresinde A Grubu “Kantinde plastik şişe satışı hemen yasaklansın”, B Grubu ise “Her kata su sebili konulsun” önerisini sunmuştur. İki grubun önerilerini birleştiren ortak uzlaşma cümlesini yazınız.",
+      "soru": "Sınıf müzakeresinde A Grubu “Kantinde plastik şişe satışı hemen yasaklansın”, B Grubu ise “Her kata su sebili konulsun” önerisini sunmuştur. İki grubun önerilerini birleştiren ortak uzlaşma cümlesini yazınız.",
       "cevap": "Katlara su sebili konulup matara önerilmeli; böylece pet şişe kullanımı azaltılabilir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görselde karışık verilen toplumsal sorun çözme ve müzakere sürecinin adımlarını baştan sona 1’den 4’e kadar sıralayınız.",
+      "soru": "Karışık verilen toplumsal sorun çözme ve müzakere sürecinin adımlarını baştan sona 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Toplumsal sorunu gözlem yaparak fark etmek ve doğru bir sorun cümlesiyle tanımlamak",
         "Sorunun nedenlerini farklı bakış açılarıyla inceleyip benzerlik ve farklılıkları karşılaştırmak",
@@ -240,8 +226,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki “Okul Bahçesine Ağaç Dikilmeli” öneri kartında yalnızca iddia yer almaktadır. Bu iddiayı ikna edici hâle getirmek için bir gerekçe ve bir gözlem kanıtı ekleyerek kısaca yazınız.",
+      "soru": "Bir öğrenci okul meclisinde “Okul bahçesine çardak ve gölgelik yapılmalıdır.” demiştir ancak konuşmasında yalnızca iddia yer almaktadır. Bu iddiayı ikna edici hâle getirmek için bir gerekçe ve bir gözlem kanıtı ekleyerek kısaca yazınız.",
       "cevap": "Gerekçe: Bahçede gölge alan olmaması. Çözüm: Çardak ve gölgelik yapılması için dilekçe verilmesi.",
       "satir": 2
     },

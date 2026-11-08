@@ -14,9 +14,7 @@
   ],
   "hatirla": [
     "Düzlemde en az üç doğrunun, son doğru ilk doğruyu kesecek biçimde ardışık kesişmesiyle oluşan kapalı şekle çokgen denir; iki doğru tek noktada kesiştiği için kapalı bölge oluşturamaz.",
-    "Ardışık kesişen doğruların kesişim noktaları çokgenin köşelerini, komşu köşeler arasındaki doğru parçaları kenarlarını, köşede birleşen iki kenar arasındaki açıklık ise açılarını oluşturur.",
-    "Sınırı eğri çizgi olan şekiller (çember, daire, yarım daire) ve uçları birleşmemiş açık kırık çizgiler çokgen değildir.",
-    "Bir çokgende kenar sayısı, köşe sayısı, iç açı sayısı ve çokgeni oluşturan ardışık doğru sayısı birbirine eşittir; çokgenler kenar sayısına göre üçgen, dörtgen, beşgen, altıgen diye adlandırılır."
+    "Ardışık kesişen doğruların kesişim noktaları çokgenin köşelerini, komşu köşeler arasındaki doğru parçaları kenarlarını, köşede birleşen iki kenar arasındaki açıklık ise açılarını oluşturur."
   ],
   "sorular": [
     {
@@ -36,10 +34,6 @@
         [
           "Çokgenin kenarı",
           "Komşu iki köşe noktası arasında kalan sınırlı doğru parçası"
-        ],
-        [
-          "Çokgenin açısı",
-          "Bir köşede birleşen iki komşu kenar arasında kalan ve iç bölgeye bakan açıklık"
         ]
       ]
     },
@@ -78,10 +72,6 @@
         {
           "metin": "Köşeleri sırasıyla K, L, M, N olan bir dörtgen adlandırılırken komşu olmayan köşeler atlanarak KMNL diye yazılır.",
           "dogru": false
-        },
-        {
-          "metin": "Kenar uzunlukları birbirinden farklı olan beş kenarlı kapalı şekil de beşgen olarak adlandırılır.",
-          "dogru": true
         }
       ]
     },
@@ -103,10 +93,6 @@
         {
           "metin": "Sekiz doğrunun ardışık kesişmesiyle oluşan ve trafikteki ‘DUR’ levhasına benzeyen çokgene ___ denir.",
           "cevap": "sekizgen"
-        },
-        {
-          "metin": "Bir çokgenin adını belirlemek için kenarlarını saymak yerine ___ noktalarını saymak da yeterlidir.",
-          "cevap": "köşe"
         }
       ],
       "fazla": [
@@ -131,8 +117,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "sutun": "sol",
-      "gorsel_var": true,
-      "soru": "Görseldeki dört çokgen kartını inceleyerek her çokgeni oluşturan ardışık doğru sayısını ve köşe-açı sayılarını tabloya yazınız.",
+      "soru": "Her çokgeni oluşturan ardışık doğru sayısını ve köşe-açı sayılarını tabloya yazınız.",
       "basliklar": [
         "Çokgen Modeli",
         "Ardışık Doğru Sayısı",
@@ -142,7 +127,9 @@
         [
           "1. ABC Üçgeni",
           "3 doğru",
-          "3 köşe, 3 açı"
+          {
+            "b": "3 köşe, 3 açı"
+          }
         ],
         [
           "2. KLMN Dörtgeni",
@@ -173,8 +160,7 @@
       "tur": "kisa",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki O noktasından geçen d1, d2 ve d3 doğrularını çizen Kerem, üç doğru çizdiği için bir üçgen oluştuğunu söylüyor. Kerem’in neden yanıldığını ve çizimi nasıl düzeltmesi gerektiğini kısaca yazınız.",
+      "soru": "O noktasından geçen d1, d2 ve d3 doğrularını çizen Kerem, üç doğru çizdiği için bir üçgen oluştuğunu söylüyor. Kerem’in neden yanıldığını ve çizimi nasıl düzeltmesi gerektiğini kısaca yazınız.",
       "cevap": "Üç doğru tek noktada kesiştiği için kapalı bölge ve köşe oluşmamıştır.",
       "satir": 2
     },
@@ -182,8 +168,7 @@
       "tur": "siralama",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görselde verilen günlük yaşam nesnelerindeki çokgen modellerini, {koyu:köşe ve kenar sayısı en az olandan en çok olana} doğru 1’den 4’e kadar sıralayınız.",
+      "soru": "Günlük yaşam nesnelerindeki çokgen modellerini, {koyu:köşe ve kenar sayısı en az olandan en çok olana} doğru 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Yol Ver Trafik Levhası — 3 doğrunun ardışık kesişmesiyle oluşan üçgen (3 kenar)",
         "Defter Sayfası — 4 doğrunun ardışık kesişmesiyle oluşan dörtgen (4 kenar)",
@@ -248,8 +233,7 @@
       "tur": "acik",
       "duzey": "ust",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki çizimde d1 ile d3 doğruları paralel, d2 ile d4 doğruları birbirine paraleldir. Düzlemde paralel doğrular bulunmasına rağmen d1, d2, d3, d4 sırasıyla nasıl kapalı bir dörtgen oluştuğunu açıklayınız.",
+      "soru": "Aynı düzlemde verilen d1, d2, d3 ve d4 doğrularından d1 ile d3 birbirine paralel (d1 // d3), d2 ile d4 ise birbirine paraleldir (d2 // d4) ve komşu doğrular ikişer ikişer kesişmektedir. Düzlemde paralel doğru çiftleri bulunmasına rağmen d1, d2, d3, d4 sırasıyla nasıl kapalı bir dörtgen oluştuğunu açıklayınız.",
       "cevap": "Ardışık doğru çiftleri kesiştiği için kapalı zincir tamamlanır ve dörtgen oluşur.",
       "satir": 2
     },

@@ -15,8 +15,7 @@
   "hatirla": [
     "Proje planı; yapılacak çalışmanın amacını, hedef kitlesini, süresini, kaynaklarını, görev dağılımını ve başarı ölçütünü önceden belirleyen yol haritasıdır.",
     "Grup çalışmalarında işin tek kişiye yüklenmemesi için görev paylaşımı (yönetici, ihtiyaç saptama, kaynak belirleyici, kampanya sorumlusu, faaliyet yürütücü) yapılır ve kararlar müzakere edilerek alınır.",
-    "Sivil toplum kuruluşları (Türk Kızılay, Yeşilay, LÖSEV, TEMA Vakfı, AHBAP) gönüllülerin karşılıksız emeği ve bağışlarla topluma hizmet eder; AFAD ise devlete bağlı bir kamu kurumudur.",
-    "Anadolu’daki imece, komşuluk ve Ahilik gelenekleri karşılıklı güveni ve dayanışmayı yaşatır; proje sonunda kontrol listesi ve gözlem formuyla değerlendirme yapılır."
+    "Sivil toplum kuruluşları (Türk Kızılay, Yeşilay, LÖSEV, TEMA Vakfı, AHBAP) gönüllülerin karşılıksız emeği ve bağışlarla topluma hizmet eder; AFAD ise devlete bağlı bir kamu kurumudur."
   ],
   "sorular": [
     {
@@ -36,10 +35,6 @@
         [
           "Gönüllü",
           "Maddi bir karşılık beklemeden kendi isteğiyle toplum yararına çalışan kişi"
-        ],
-        [
-          "Sivil toplum kuruluşu",
-          "İnsanların topluma hizmet etmek amacıyla gönüllü olarak kurduğu dernek veya vakıf"
         ]
       ]
     },
@@ -78,10 +73,6 @@
         {
           "metin": "Gönüllülük çalışmalarına yalnızca yetişkinler katılabilir; ortaokul öğrencileri gönüllü olamaz.",
           "dogru": false
-        },
-        {
-          "metin": "İmece, komşuluk ve Ahilik gibi gelenekler insanların birbirine güvenmesini sağlayarak toplumsal birliği güçlendirir.",
-          "dogru": true
         }
       ]
     },
@@ -103,10 +94,6 @@
         {
           "metin": "Grup toplantısında önerilen fikirlerin yararlarını ve zorluklarını konuşarak ortak karara varmaya ___ adı verilir.",
           "cevap": "müzakere"
-        },
-        {
-          "metin": "Yardım kolileri hedef okula ulaştıktan sonra amacın gerçekleşip gerçekleşmediğini inceleme adımına ___ denir.",
-          "cevap": "değerlendirme"
         }
       ],
       "fazla": [
@@ -131,8 +118,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "sutun": "sol",
-      "gorsel_var": true,
-      "soru": "Görseldeki dört sivil toplum kuruluşu kartını inceleyerek her kuruluşun başlıca çalışma alanını ve toplumsal katkısını tabloya yazınız.",
+      "soru": "Her kuruluşun başlıca çalışma alanını ve toplumsal katkısını tabloya yazınız.",
       "basliklar": [
         "Sivil Toplum Kuruluşu",
         "Başlıca Çalışma Alanı",
@@ -142,7 +128,9 @@
         [
           "1. Türk Kızılay",
           "Afet yardımı ve kan bağışı",
-          "Barınma, gıda ve kan desteği"
+          {
+            "b": "Barınma, gıda ve kan desteği"
+          }
         ],
         [
           "2. Yeşilay",
@@ -171,8 +159,7 @@
       "tur": "kisa",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki eksik duyuru afişini inceleyen öğrenciler kampanyaya nasıl katılacaklarını anlayamamıştır. Kampanya sorumlusunun bu afişe hangi bilgileri eklemesi gerektiğini kısaca yazınız.",
+      "soru": "Okul panosuna asılan ‘Kardeş Okula Yardım Kampanyası Başladı!’ başlıklı duyuru afişinde yalnızca kampanya sloganı yer aldığı için öğrenciler kampanyaya nasıl katılacaklarını anlayamamıştır. Kampanya sorumlusunun bu afişe hangi bilgileri eklemesi gerektiğini kısaca yazınız.",
       "cevap": "Projenin amacı, toplanacak ürünler, teslim yeri ve son tarih eklenmelidir.",
       "satir": 2
     },
@@ -180,8 +167,7 @@
       "tur": "siralama",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görselde karışık verilen sosyal yardımlaşma projesi adımlarını, başlangıçtan bitişe doğru 1’den 4’e kadar sıralayınız.",
+      "soru": "Karışık verilen sosyal yardımlaşma projesi adımlarını, başlangıçtan bitişe doğru 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Planlama: Projenin amacını, hedef kitlesini, süresini ve başarı ölçütünü belirlemek",
         "Görev ve Kaynak: Üyeler arasında görev paylaşımı yapmak ve gerekli kaynakları listelemek",
@@ -251,8 +237,7 @@
       "tur": "acik",
       "duzey": "ust",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki A ve B proje gruplarının son adımlarını karşılaştırınız. Yardım kolileri gönderildikten sonra B grubunun yaptığı ‘değerlendirme’ çalışmasının neden gerekli olduğunu açıklayınız.",
+      "soru": "Yardım kolileri kardeş okula gönderildikten sonra A proje grubu çalışmayı hemen sonlandırırken, B proje grubu süreç sonunda ‘proje değerlendirme toplantısı’ yapmıştır. A ve B proje gruplarının son adımlarını karşılaştırarak B grubunun yaptığı ‘değerlendirme’ çalışmasının neden gerekli olduğunu açıklayınız.",
       "cevap": "Hedefe ulaşılıp ulaşılmadığı görülür, eksikler belirlenip sonraki projeler geliştirilir.",
       "satir": 2
     },

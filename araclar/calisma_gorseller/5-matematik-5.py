@@ -1,171 +1,86 @@
-"""5. sınıf Matematik 5. hafta (Çokgenler ve Çember: Ardışık Kesişen Doğrulardan Çokgenlere) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 12 pt Noto Sans (K150 EK); eğik kesir yok (K155)."""
+"""5-matematik-5 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-GRI, GRI_A, YESIL_K, KUM = '#9aa6bd', '#eef1f6', '#0f6b45', '#fffdf5'
-TR_FONT = 'font-family="Noto Sans, sans-serif" font-size="12"'
-
-
-def svg(w, h, ic, etiket, en_fazla=20):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', kalin=False):
-    agirlik = ' font-weight="700"' if kalin else ' font-weight="500"'
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {TR_FONT}{agirlik} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def dogru_kesisim_kartlari():
-    kartlar = [
-        ('1. Kart · Ardışık 3 Doğru', 'd1-d2-d3 kapalı üçgen kurar', YES, YES_A),
-        ('2. Kart · Yalnız 2 Doğru', 'Tek kesişim, açık bölge', MAVI, MAVI_A),
-        ('3. Kart · İkisi Paralel', 'd1 // d3, zincir kapanmaz', TUR, TUR_A),
-        ('4. Kart · Ortak Noktalı', '3 doğru tek noktadan geçer', KIR, KIR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 296
-        y = 6 + (i // 2) * 48
-        ic += kutu(x, y, 288, 42, arka, renk, 8, 1.4)
-        ic += yazi(x + 144, y + 18, bas, renk, kalin=True)
-        ic += yazi(x + 144, y + 35, alt, LAC)
-    return svg(600, 104, ic, 'Ardışık kesişen ve kesişmeyen doğru takımlarını gösteren dört kart.', 20)
-
-
-def cokgen_secim_sekilleri():
-    kartlar = [
-        ('1. Şekil: Üçgen Levha', '3 doğru parçası · Kapalı', MAVI, MAVI_A),
-        ('2. Şekil: Yarım Daire (!)', 'Bir sınırı eğri çizgi', KIR, KIR_A),
-        ('3. Şekil: Dörtgen Çerçeve', '4 doğru parçası · Kapalı', YES, YES_A),
-        ('4. Şekil: Altıgen Petek', '6 doğru parçası · Kapalı', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 296
-        y = 6 + (i // 2) * 48
-        ic += kutu(x, y, 288, 42, arka, renk, 8, 1.4)
-        ic += yazi(x + 144, y + 18, bas, renk, kalin=True)
-        ic += yazi(x + 144, y + 35, alt, LAC)
-    return svg(600, 104, ic, 'Üçgen, yarım daire, dörtgen ve altıgen şekil kartları.', 20)
-
-
-def cokgen_dogru_sayisi_kartlari():
-    kartlar = [
-        ('1. ABC Üçgeni', '3 doğru · 3 köşe · 3 açı', MAVI, MAVI_A),
-        ('2. KLMN Dörtgeni', '4 doğru · 4 köşe · 4 açı', YES, YES_A),
-        ('3. PRSTU Beşgeni', '5 doğru · 5 köşe · 5 açı', TUR, TUR_A),
-        ('4. DEFGHİ Altıgeni', '6 doğru · 6 köşe · 6 açı', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(kartlar):
-        x = 6 + i * 148
-        ic += kutu(x, 6, 140, 80, arka, renk, 8, 1.4)
-        ic += kutu(x, 6, 140, 26, renk, renk, 8, 1)
-        ic += yazi(x + 70, 24, bas, '#fff', kalin=True)
-        ic += yazi(x + 70, 60, alt, LAC, kalin=True)
-    return svg(600, 92, ic, 'Üçgen, dörtgen, beşgen ve altıgenin doğru, köşe ve açı sayısı kartları.', 20)
-
-
-def noktadas_uc_dogru_sema():
-    ic = kutu(6, 6, 588, 88, KUM, GRI, 9, 1.4)
-    ic += f'<line x1="40" y1="50" x2="220" y2="50" stroke="{MAVI}" stroke-width="2"/>'
-    ic += f'<line x1="60" y1="18" x2="200" y2="82" stroke="{TUR}" stroke-width="2"/>'
-    ic += f'<line x1="60" y1="82" x2="200" y2="18" stroke="{MOR}" stroke-width="2"/>'
-    ic += f'<circle cx="130" cy="50" r="5" fill="{KIR}"/>'
-    ic += yazi(130, 32, 'O (Tek Kesişim)', KIR, kalin=True)
-    ic += yazi(232, 54, 'd1', MAVI, kalin=True)
-    ic += yazi(212, 86, 'd2', TUR, kalin=True)
-    ic += yazi(212, 22, 'd3', MOR, kalin=True)
-
-    ic += kutu(265, 16, 315, 68, KIR_A, KIR, 8, 1.4)
-    ic += yazi(422, 36, 'Kerem’in Çizimi: Aynı Noktadan Geçen 3 Doğru', KIR, kalin=True)
-    ic += yazi(422, 56, '• d1, d2 ve d3 yalnız O noktasında kesişiyor.', LAC)
-    ic += yazi(422, 75, '• Üçgen için 3 ayrı kesişim noktası (köşe) gerekir.', LAC, kalin=True)
-    return svg(600, 100, ic, 'Aynı O noktasından geçen üç doğrunun kapalı bölge oluşturmadığını gösteren şema.', 20)
-
-
-def gunluk_cokgen_nesneleri():
-    kartlar = [
-        ('Yol Ver Levhası', 'Üçgen · 3 kenar', MAVI, MAVI_A),
-        ('Defter Sayfası', 'Dörtgen · 4 kenar', YES, YES_A),
-        ('Topun Siyah Dilimi', 'Beşgen · 5 kenar', TUR, TUR_A),
-        ('Dur Levhası', 'Sekizgen · 8 kenar', KIR, KIR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(kartlar):
-        x = 6 + i * 148
-        ic += kutu(x, 6, 140, 80, arka, renk, 8, 1.4)
-        ic += kutu(x, 6, 140, 26, renk, renk, 8, 1)
-        ic += yazi(x + 70, 24, bas, '#fff', kalin=True)
-        ic += yazi(x + 70, 60, alt, LAC, kalin=True)
-    return svg(600, 92, ic, 'Yol ver levhası, defter sayfası, futbol topu dilimi ve dur levhası çokgen modelleri.', 20)
-
-
-def prstu_besgeni_sema():
-    ic = kutu(6, 6, 588, 90, KUM, GRI, 9, 1.4)
-    ic += f'<polygon points="135,16 205,42 180,82 90,82 65,42" fill="{TUR_A}" stroke="{TUR}" stroke-width="2.2"/>'
-    ic += yazi(135, 13, 'P', TUR, kalin=True)
-    ic += yazi(220, 44, 'R', LAC, kalin=True)
-    ic += yazi(196, 88, 'S', LAC, kalin=True)
-    ic += yazi(74, 88, 'T', LAC, kalin=True)
-    ic += yazi(50, 44, 'U', LAC, kalin=True)
-
-    ic += kutu(260, 16, 320, 70, TUR_A, TUR, 8, 1.4)
-    ic += yazi(420, 35, 'PRSTU Beşgeni Elemanları', TUR, kalin=True)
-    ic += yazi(420, 56, 'Köşeler: P, R, S, T, U (Ardışık sırada)', LAC, kalin=True)
-    ic += yazi(420, 76, 'Kenarlar: [PR], [RS], [ST], [TU], [UP]', LAC)
-    return svg(600, 102, ic, 'Köşeleri P, R, S, T, U olan beşgenin kenar ve açı şeması.', 20)
-
-
-def paralel_ciftli_dortgen_karti():
-    ic = kutu(6, 6, 588, 88, KUM, GRI, 9, 1.4)
-    ic += f'<polygon points="75,24 215,24 190,78 50,78" fill="{YES_A}" stroke="{YES}" stroke-width="2.2"/>'
-    ic += yazi(62, 20, 'K', YESIL_K, kalin=True)
-    ic += yazi(228, 20, 'L', YESIL_K, kalin=True)
-    ic += yazi(204, 84, 'M', YESIL_K, kalin=True)
-    ic += yazi(36, 84, 'N', YESIL_K, kalin=True)
-    ic += yazi(145, 19, 'd1', MAVI, kalin=True)
-    ic += yazi(130, 88, 'd3', MAVI, kalin=True)
-    ic += yazi(216, 55, 'd2', TUR, kalin=True)
-    ic += yazi(50, 55, 'd4', TUR, kalin=True)
-
-    ic += kutu(260, 16, 320, 68, YES_A, YES, 8, 1.4)
-    ic += yazi(420, 35, 'Karşılıklı Paralel Doğrulardan Dörtgen', YESIL_K, kalin=True)
-    ic += yazi(420, 56, '• d1 // d3 ve d2 // d4 (Karşılıklı çiftler paralel)', LAC)
-    ic += yazi(420, 75, '• Ardışık d1-d2, d2-d3, d3-d4, d4-d1 kesişir', LAC, kalin=True)
-    return svg(600, 100, ic, 'Karşılıklı paralel d1-d3 ve d2-d4 doğrularının ardışık kesişerek oluşturduğu KLMN dörtgeni.', 20)
-
-
-def cokgen_kurallari_panosu():
-    kartlar = [
-        ('Sayı Eşitliği Kuralı', 'Kenar = Köşe = Açı = Doğru sayısı', MAVI, MAVI_A),
-        ('Adlandırma Kuralı', 'Kenar sayısına göre (-gen ekiyle)', YES, YES_A),
-        ('Biçim Bağımsızlığı', 'Farklı kenar boyları adı değiştirmez', TUR, TUR_A),
-        ('Kapanma Şartı', 'Son doğru ilk doğruyu kesmelidir', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 296
-        y = 6 + (i // 2) * 48
-        ic += kutu(x, y, 288, 42, arka, renk, 8, 1.4)
-        ic += yazi(x + 144, y + 18, bas, renk, kalin=True)
-        ic += yazi(x + 144, y + 35, alt, LAC)
-    return svg(600, 104, ic, 'Çokgenlerin temel kurallarını özetleyen dörtlü bilgi panosu.', 20)
+GORSELLER = {1: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ardışık kesişen ve '
+    'kesişmeyen doğru takımlarını gösteren dört kart."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Kart · d1, d2 ve d3</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• İkişer ikişer A, B ve</text><text x="87.5" y="58.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">C '
+    'noktalarında</text><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">kesişir</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="30.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2. Kart · d1 ve d2</text><text x="262.5" y="48.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Yalnız iki doğru tek</text><text x="262.5" y="67.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">K noktasında '
+    'kesişir</text><rect x="4" y="89" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="107.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Kart · d1, '
+    'd2 ve d3</text><text x="87.5" y="125.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">• d1 // d3 paraleldir,</text><text x="87.5" y="144.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">d2 ikisini keser</text><rect x="179" y="89" width="167" height="64" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="107.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Kart · d1, d2 ve d3</text><text x="262.5" y="125.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Üç doğru da '
+    'aynı</text><text x="262.5" y="144.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">O noktasından geçer</text></svg>',
+ 4: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Üçgen levha, iletki '
+    'modeli, dörtgen çerçeve ve altıgen petek şekil kartları."><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">1. Şekil · Üçgen</text><text x="87.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Levha</text><text x="87.5" y="58.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Köşeleri: A, B, '
+    'C</text><text x="87.5" y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">• [AB], [BC], [CA]</text><text x="87.5" y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">kenarlı</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">2. Şekil · İletki</text><text x="262.5" y="39.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Modeli</text><text x="262.5" y="58.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Tabanı: [KL] '
+    'çapı</text><text x="262.5" y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">• Üstü: K-L çember</text><text x="262.5" y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">yayı</text><rect x="4" y="108" width="167" height="82" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="135.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">3. Şekil · Çerçeve</text><text x="87.5" y="153.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Köşeleri: P, R, S, T</text><text x="87.5" '
+    'y="172.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• [PR], [RS], '
+    '[ST], [TP]</text><rect x="179" y="108" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Şekil · Bal Peteği</text><text x="262.5" y="144.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">• Köşeleri: D, E, F, G,</text><text x="262.5" y="163.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">H, İ</text><text x="262.5" y="181.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• 6 düz kenar parçası</text></svg>',
+ 8: '<svg viewBox="0 0 350 95" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Köşeleri P, R, S, T, U '
+    'olan beşgenin kenar ve açı şeması."><rect x="4" y="3" width="342" height="62" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">PRSTU Beşgeni Elemanları</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Köşeler: P, R, S, T, U (Ardışık sırada)</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kenarlar: [PR], [RS], '
+    '[ST], [TU], [UP]</text><rect x="4" y="68" width="342" height="25" rx="5" fill="#fffdf5" stroke="#9aa6bd" stroke-width="0.75"/><text '
+    'x="11.0" y="85.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">P · U R '
+    '· T S</text></svg>',
+ 11: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Çokgenlerin temel '
+     'kurallarını özetleyen dörtlü bilgi panosu."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">Sayı Eşitliği Kuralı</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kenar = Köşe = Açı = ·</text><text x="87.5" y="58.2" '
+     'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Doğru '
+     'sayısı</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" '
+     'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Adlandırma '
+     'Kuralı</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">Kenar sayısına göre ·</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="500" fill="#0b2257">(-gen ekiyle)</text><rect x="4" y="71" width="167" height="64" rx="5" '
+     'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Biçim Bağımsızlığı</text><text x="87.5" y="107.8" '
+     'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Farklı kenar '
+     'boyları</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">adı değiştirmez</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+     'stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#7c3aed">Kapanma Şartı</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Son doğru ilk</text><text x="262.5" y="126.2" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">doğruyu kesmelidir</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = dogru_kesisim_kartlari()
-    s[4]['gorsel'] = cokgen_secim_sekilleri()
-    s[5]['gorsel'] = cokgen_dogru_sayisi_kartlari()
-    s[6]['gorsel'] = noktadas_uc_dogru_sema()
-    s[7]['gorsel'] = gunluk_cokgen_nesneleri()
-    s[8]['gorsel'] = prstu_besgeni_sema()
-    s[10]['gorsel'] = paralel_ciftli_dortgen_karti()
-    s[11]['gorsel'] = cokgen_kurallari_panosu()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

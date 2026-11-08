@@ -15,8 +15,7 @@
   "hatirla": [
     "Okuma veya dinleme öncesinde başlık ve görsellerden tahmin yürütülür; metinde açıkça verilen bilgilere yüzey anlam, konuyu en iyi yansıtan ipucu sözcüklere anahtar kelimeler denir.",
     "Öyküleyici metinler kişi, yer ve zamanın tanıtıldığı serim (giriş), olayın gelişip merakın arttığı düğüm (gelişme) ve olayın sonuca bağlandığı çözüm (sonuç) bölümlerinden oluşur.",
-    "Zayıf olan varlığın güçlü olana “gibi, kadar, sanki” ile benzetilmesine benzetme (teşbih); insan dışındaki varlıklara insana özgü nitelikler verilmesine kişileştirme (teşhis) denir.",
-    "“ama, fakat, ancak, oysa, çünkü, özellikle, kısacası” bağlantı ifadeleridir; kişi, şehir ve bayram adları büyük harfle başlar, kurum adlarına gelen ekler kesme işaretiyle ayrılmaz."
+    "Zayıf olan varlığın güçlü olana “gibi, kadar, sanki” ile benzetilmesine benzetme (teşbih); insan dışındaki varlıklara insana özgü nitelikler verilmesine kişileştirme (teşhis) denir."
   ],
   "sorular": [
     {
@@ -35,10 +34,6 @@
         [
           "Kişileştirme (teşhis)",
           "İnsan dışındaki varlıklara insana ait duygu, düşünce ve davranış verme"
-        ],
-        [
-          "Düğüm (gelişme) bölümü",
-          "Öyküleyici metinde olayların geliştiği ve merakın en çok arttığı bölüm"
         ]
       ]
     },
@@ -75,10 +70,6 @@
         {
           "metin": "Şemsi Efendi Okuluna ve Türkiye Büyük Millet Meclisine örneklerinde olduğu gibi kurum adlarına eklenen takılar kesme işaretiyle bölünmez.",
           "dogru": true
-        },
-        {
-          "metin": "Öyküleyici bir metinde olayların sonuca bağlandığı ve ana fikrin verildiği son bölüme serim bölümü denir.",
-          "dogru": false
         }
       ]
     },
@@ -99,10 +90,6 @@
         {
           "metin": "Hazırlıksız konuşma yaparken dinleyicilerle göz teması kurmalı, ___ ve mimiklerimizi doğal kullanmalıyız.",
           "cevap": "jest"
-        },
-        {
-          "metin": "Rakamla günü ve yılı belirtilen tarih ifadelerinde (19 Mayıs 1919 Pazartesi) ay ve gün kelimelerinin ilk harfi ___ yazılır.",
-          "cevap": "büyük"
         }
       ],
       "fazla": [
@@ -125,8 +112,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki dört cümle kartını inceleyerek her cümlede kullanılan söz sanatını (Benzetme / Kişileştirme) ve dayanağını tabloya yazınız. İlk satır örnektir.",
+      "soru": "Her cümlede kullanılan söz sanatını (Benzetme / Kişileştirme) ve dayanağını tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Cümle Kartı",
         "Söz Sanatı",
@@ -136,7 +122,9 @@
         [
           "1. Pamuk gibi beyaz bulutlar",
           "Benzetme",
-          "Bulutların pamuğa benzetilmesi"
+          {
+            "b": "Bulutların pamuğa benzetilmesi"
+          }
         ],
         [
           "2. Gülümseyen yaşlı çınar ağacı",
@@ -164,16 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki “Bir Güzel Hediye” metin kartını okuyunuz. Bu metnin konusunu en iyi yansıtan dört anahtar kelimeyi yazınız.",
+      "soru": "“Bir Güzel Hediye: Elif, en sevdiği ahşap oyuncak trenini özenle paketleyip arkadaşı Mert’e hediye etti. Oyuncaklarını sevinçle paylaşan iki arkadaşın dostluk bağı ve mutluluğu daha da güçlendi.” metnini okuyunuz. Bu metnin konusunu en iyi yansıtan dört anahtar kelimeyi yazınız.",
       "cevap": "Anahtar kelimeler: Hediye (armağan), oyuncak, paylaşmak, dostluk (mutluluk).",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görselde karışık verilen öyküleyici metin ve okuma süreci adımlarını (Okuma Öncesi Tahmin → Serim → Düğüm → Çözüm) baştan sona 1’den 4’e kadar sıralayınız.",
+      "soru": "Karışık verilen öyküleyici metin ve okuma süreci adımlarını (Okuma Öncesi Tahmin → Serim → Düğüm → Çözüm) baştan sona 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Okuma Öncesi: Başlık ve görselleri inceleyerek metnin ne anlatacağı hakkında tahminde bulunmak",
         "Serim (Giriş): Hikâyedeki kahramanları, olayın geçtiği yeri ve zamanı tanımak",
@@ -240,8 +226,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki konuşma becerisi kartını inceleyiniz. Sınıfta hazırlıksız bir konuşma yaparken beden dilini ve bağlantı ifadelerini nasıl kullanmamız gerektiğini kısaca yazınız.",
+      "soru": "Sınıfta hazırlıksız bir konuşma yaparken beden dilini ve bağlantı ifadelerini nasıl kullanmamız gerektiğini kısaca yazınız.",
       "cevap": "Göz teması kurmalı, doğal jest-mimik kullanmalı ve ses tonunu içeriğe göre ayarlamalıdır.",
       "satir": 2
     },

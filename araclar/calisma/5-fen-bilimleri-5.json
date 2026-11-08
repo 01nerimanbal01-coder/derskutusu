@@ -15,8 +15,7 @@
   "hatirla": [
     "Ay kendi ışığını üretmez; Güneş’ten aldığı ışığı yansıtan yüzünün Dünya etrafındaki dolanma hareketi sırasında farklı açılardan görülmesine Ay’ın evreleri denir.",
     "Dört ana evre sırasıyla yeni ay, ilk dördün, dolunay ve son dördündür; birbirini izleyen iki ana evre arasında yaklaşık 1 hafta (7 gün) süre vardır.",
-    "Ana evreler arasındaki geçişlerde aydınlık kısmı yarım daireden küçük olan hilal ve yarım daireden büyük olan şişkin ay ara evreleri gözlemlenir.",
-    "Ay’ın Dünya etrafındaki bir tam dolanması ~27,3 gün sürerken, Dünya da Güneş etrafında ilerlediği için aynı evreye tekrar ulaşması ~29,5 gün sürer."
+    "Ana evreler arasındaki geçişlerde aydınlık kısmı yarım daireden küçük olan hilal ve yarım daireden büyük olan şişkin ay ara evreleri gözlemlenir."
   ],
   "sorular": [
     {
@@ -36,10 +35,6 @@
         [
           "Dolunay",
           "Dünya’nın Güneş ile Ay arasında olduğu ve Ay’ın tam daire şeklinde parlak göründüğü evre"
-        ],
-        [
-          "Son dördün",
-          "Dolunaydan ~7 gün sonra Ay’ın sol yarısının aydınlık (ters D gibi) göründüğü evre"
         ]
       ]
     },
@@ -78,10 +73,6 @@
         {
           "metin": "Türkiye’den bakıldığında Ay’ın sağ tarafı aydınlıksa Ay büyümekte, yani yeni aydan dolunaya doğru ilerlemektedir.",
           "dogru": true
-        },
-        {
-          "metin": "Gözlem kanıtları kurulan bir evre modeliyle çelişiyorsa bilimsel yönteme göre model düzeltilerek yenilenir.",
-          "dogru": true
         }
       ]
     },
@@ -103,10 +94,6 @@
         {
           "metin": "Yeni ay ile ilk dördün veya son dördün ile yeni ay arasında görülen ince kavisli ara evre ___ evresidir.",
           "cevap": "hilal"
-        },
-        {
-          "metin": "Ay’ın Dünya’ya en yakın konumdayken biraz daha büyük ve parlak görünen tam daire evresine Süper ___ denir.",
-          "cevap": "dolunay"
         }
       ],
       "fazla": [
@@ -131,8 +118,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "sutun": "sol",
-      "gorsel_var": true,
-      "soru": "Görseldeki dört evre kartını inceleyerek her evrenin grubunu (Ana Evre / Ara Evre) ve Türkiye’den görünüm özelliğini tabloya yazınız.",
+      "soru": "Her evrenin grubunu (Ana Evre / Ara Evre) ve Türkiye’den görünüm özelliğini tabloya yazınız.",
       "basliklar": [
         "Ay Evresi",
         "Evre Grubu",
@@ -142,7 +128,9 @@
         [
           "1. İlk hilal",
           "Ara Evre",
-          "Sağ tarafı ince kavisli aydınlık"
+          {
+            "b": "Sağ tarafı ince kavisli aydınlık"
+          }
         ],
         [
           "2. İlk dördün",
@@ -177,17 +165,15 @@
       "tur": "kisa",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki A ve B açıklama kartlarını inceleyiniz. Hangi kartın Ay’ın evrelerinin oluşumunu doğru açıkladığını ve diğer kartın hangi gök olayıyla karıştırıldığını kısaca yazınız.",
-      "cevap": "B kartı doğrudur; Dünya’nın gölgesi evreleri değil tutulmayı açıklar.",
+      "soru": "A açıklamasında ‘Ay’ın evreleri, Ay’ın üzerine Dünya’nın gölgesinin düşmesiyle oluşur.’, B açıklamasında ise ‘Ay’ın Dünya etrafında dolanmasıyla Güneş’ten ışık alan kısmının Dünya’dan farklı görünmesiyle oluşur.’ denmektedir. Hangi açıklamanın doğru olduğunu ve diğerinin hangi gök olayıyla karıştırıldığını yazınız.",
+      "cevap": "B açıklaması doğrudur; Dünya’nın gölgesi evreleri değil Ay tutulmasını açıklar.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görselde karışık verilen Ay evrelerini, {koyu:yeni ay} evresinden hemen sonra başlayıp aydınlık kısmın giderek büyüdüğü sıraya göre 1’den 4’e kadar sıralayınız.",
+      "soru": "Karışık verilen Ay evrelerini, {koyu:yeni ay} evresinden hemen sonra başlayıp aydınlık kısmın giderek büyüdüğü sıraya göre 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "İlk hilal — Sağ kenarı ince kavisli aydınlık ara evre",
         "İlk dördün — Sağ yarısı aydınlık yarım daire ana evre",
@@ -257,8 +243,7 @@
       "tur": "acik",
       "duzey": "ust",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki süre karşılaştırma şemasını inceleyiniz. Ay’ın Dünya etrafındaki bir tam turu ~27,3 gün sürdüğü hâlde, evre döngüsünün tamamlanmasının neden ~29,5 gün sürdüğünü açıklayınız.",
+      "soru": "Ay’ın Dünya etrafındaki bir tam dolanımı yaklaşık 27,3 gün sürerken, Dünya da bu sırada Güneş etrafındaki yörüngesinde aynı yönde ilerlemeye devam eder. Buna göre Ay’ın aynı ana evreye yeniden ulaşmasının (evre döngüsünün) neden yaklaşık 29,5 gün sürdüğünü açıklayınız.",
       "cevap": "Dünya da ilerlediği için Ay’ın aynı hizaya gelmesi 2 gün daha sürer.",
       "satir": 2
     },

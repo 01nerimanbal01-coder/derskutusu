@@ -30,10 +30,6 @@
         [
           "{ar:أَخُو الْوَالِدَةِ}",
           "Dayı ({ar:اَلْخَالُ})"
-        ],
-        [
-          "{ar:بِنْتُ الْوَلَدِ}",
-          "Kız torun ({ar:اَلْحَفِيدَةُ})"
         ]
       ]
     },
@@ -69,10 +65,6 @@
         {
           "metin": "{ar:اَلْجَدَّةُ} ve {ar:اَلْمُحَامِي} kelimeleri Kamerî harfle başladığı için {ar:ل} harfi cezimli okunur.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:هُوَ يُحِبُّ الْحَيَوَانَاتِ}» cümlesinde özne kadın olduğu için fiil {ar:يَـ} harfiyle başlamıştır.",
-          "dogru": false
         }
       ]
     },
@@ -93,10 +85,6 @@
         {
           "metin": "Veteriner dayının hayvanları sevdiğini «{ar:هُوَ} ___ {ar:الْحَيَوَانَاتِ}» anlatır.",
           "cevap": "{ar:يُحِبُّ}"
-        },
-        {
-          "metin": "Dedenin emekli olduğunu «{ar:جَدِّي لَا يَعْمَلُ، هُوَ} ___» cümlesi bildirir.",
-          "cevap": "{ar:مُتَقَاعِدٌ}"
         }
       ],
       "fazla": [
@@ -118,7 +106,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki soru ve anahtar kelime kartlarını inceleyerek kurulacak tam Arapça cevabı ve Türkçe anlamını tabloya yazınız. İlk satır örnektir.",
+      "soru": "Parantez içindeki ipuçlarından yararlanarak sorulara verilecek tam Arapça cevabı ve Türkçe anlamını tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Soru ve İpucu",
         "Arapça Tam Cevap",
@@ -126,12 +114,14 @@
       ],
       "satirlar": [
         [
-          "1. {ar:مَا مِهْنَتُهُ؟}",
+          "1. {ar:مَا مِهْنَتُهُ؟} (Çiftçi)",
           "{ar:هُوَ فَلَّاحٌ نَشِيطٌ}",
-          "O, çalışkan bir çiftçidir"
+          {
+            "b": "O, çalışkan bir çiftçidir"
+          }
         ],
         [
-          "2. {ar:مَا مِهْنَتُهَا؟}",
+          "2. {ar:مَا مِهْنَتُهَا؟} (Hemşire)",
           {
             "b": "{ar:هِيَ مُمَرِّضَةٌ}"
           },
@@ -140,7 +130,7 @@
           }
         ],
         [
-          "3. {ar:أَيْنَ تَعْمَلُ؟}",
+          "3. {ar:أَيْنَ تَعْمَلُ؟} (Hastanede)",
           {
             "b": "{ar:هِيَ تَعْمَلُ فِي الْمُسْتَشْفَى}"
           },
@@ -149,7 +139,7 @@
           }
         ],
         [
-          "4. {ar:أَيْنَ الْوَالِدُ؟}",
+          "4. {ar:أَيْنَ الْوَالِدُ؟} (İşte)",
           {
             "b": "{ar:هُوَ فِي الْعَمَلِ}"
           },
@@ -162,19 +152,19 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki «{ar:خَالِي مُمَرِّضٌ نَشِيطٌ، هُوَ يَعْمَلُ فِي الْمُسْتَشْفَى}» cümlesini «{ar:خَالَتِي}» (Teyzem) öznesine göre dişil biçime dönüştürerek yazınız.",
+      "soru": "«{ar:خَالِي مُمَرِّضٌ نَشِيطٌ، هُوَ يَعْمَلُ فِي الْمُسْتَشْفَى.}» eril cümlesini tüm ögeleriyle dişil (müennes) biçime dönüştürerek yazınız.",
       "cevap": "{ar:خَالَتِي مُمَرِّضَةٌ نَشِيطَةٌ، هِيَ تَعْمَلُ فِي الْمُسْتَشْفَى}.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki akraba sayısı ifadelerini sayıca en az olandan en çok olana (1’den 4’e) doğru sıralayınız.",
+      "soru": "Akraba sayısı ifadelerini sayıca en az olandan en çok olana (1’den 4’e) doğru sıralayınız.",
       "ogeler": [
-        "{ar:لِي عَمٌّ وَاحِدٌ} (Benim bir amcam var — 1)",
-        "{ar:لِي عَمَّانِ} (Benim iki amcam var — 2)",
-        "{ar:لِي ثَلَاثُ خَالَاتٍ} (Benim üç teyzem var — 3)",
-        "{ar:لِلْجَدِّ أَرْبَعَةُ أَحْفَادٍ} (Dedenin dört torunu var — 4)"
+        "{ar:لِي عَمٌّ وَاحِدٌ} (Benim bir amcam var)",
+        "{ar:لِي عَمَّانِ} (Benim iki amcam var)",
+        "{ar:لِي ثَلَاثُ خَالَاتٍ} (Benim üç teyzem var)",
+        "{ar:لِلْجَدِّ أَرْبَعَةُ أَحْفَادٍ} (Dedenin dört torunu var)"
       ]
     },
     {
@@ -232,7 +222,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki iki cümleyi inceleyerek {ar:يَعْمَلُ / يُحِبُّ} ile {ar:تَعْمَلُ / تُحِبُّ} muzâri fiillerinin başındaki harf değişiminin sebebini açıklayınız.",
+      "soru": "{ar:يَعْمَلُ / يُحِبُّ} ile {ar:تَعْمَلُ / تُحِبُّ} muzâri fiillerinin başındaki harf değişiminin sebebini açıklayınız.",
       "cevap": "Özne eril (erkek) ise muzâri fiil ‘ye’ ile, dişil (kadın) ise ‘te’ harfiyle başlar.",
       "satir": 2
     },

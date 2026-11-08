@@ -11,8 +11,7 @@
   "hatirla": [
     "Güneş, Dünya ve Ay küresel şekildedir; hacimsel büyüklük sıralaması büyükten küçüğe doğru Güneş > Dünya > Ay şeklindedir.",
     "Güneş’in çapı Dünya’nın çapının yaklaşık 109 katı, Dünya’nın çapı ise Ay’ın çapının yaklaşık 4 katıdır (Dünya’nın içine ~64 Ay sığar).",
-    "Güneş, Dünya ve Ay’ın kendi eksenleri etrafındaki dönme ve birbirleri etrafındaki dolanma hareketlerinin tamamı batıdan doğuya (saat yönünün tersine) gerçekleşir.",
-    "Uydumuzun kendi ekseninde tam turu ile gezegenimiz çevresindeki periyodu (yaklaşık 27,3 gün) eş zamanlı olduğu için Dünya’ya bakan cephesi asla değişmez."
+    "Güneş, Dünya ve Ay’ın kendi eksenleri etrafındaki dönme ve birbirleri etrafındaki dolanma hareketlerinin tamamı batıdan doğuya (saat yönünün tersine) gerçekleşir."
   ],
   "sorular": [
     {
@@ -31,10 +30,6 @@
         [
           "24 saat (1 gün)",
           "Dünya’nın kendi ekseni etrafında bir tam tur dönerek gece-gündüzü oluşturma süresi"
-        ],
-        [
-          "365 gün 6 saat",
-          "Dünya’nın (Ay ile birlikte) Güneş etrafındaki bir tam dolanma süresi (1 yıl)"
         ]
       ]
     },
@@ -70,10 +65,6 @@
         {
           "metin": "Dünya’nın çapı Ay’ın çapının yaklaşık 4 katı, Güneş’in çapı ise Dünya’nın çapının yaklaşık 109 katıdır.",
           "dogru": true
-        },
-        {
-          "metin": "Güneş, Dünya’nın etrafındaki elips yörüngede dolanma hareketini 365 gün 6 saatte tamamlar.",
-          "dogru": false
         }
       ]
     },
@@ -94,10 +85,6 @@
         {
           "metin": "Ay, Dünya etrafındaki bir tam dolanma hareketini yaklaşık ___ günde tamamlar.",
           "cevap": "27,3"
-        },
-        {
-          "metin": "Doğrudan gözlemlenmesi zor olan uzay sistemlerini kurallarına uygun maket veya şemayla göstermeye ___ denir.",
-          "cevap": "model"
         }
       ],
       "fazla": [
@@ -119,7 +106,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki dört hareket kartını inceleyerek her hareketin türünü (Dönme / Dolanma) ve tamamlanma süresini yazarak tabloyu tamamlayınız.",
+      "soru": "Her hareketin türünü (Dönme / Dolanma) ve tamamlanma süresini yazarak tabloyu tamamlayınız.",
       "basliklar": [
         "Gök Cismi ve Hareketi",
         "Hareket Türü",
@@ -129,7 +116,9 @@
         [
           "1. Güneş’in kendi ekseni etrafındaki hareketi",
           "Dönme",
-          "Yaklaşık 25 gün"
+          {
+            "b": "Yaklaşık 25 gün"
+          }
         ],
         [
           "2. Dünya’nın kendi ekseni etrafındaki hareketi",
@@ -163,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki bilgi kartında Ay’ın iki temel hareketinin süreleri verilmiştir. Dünya’dan bakıldığında Ay’ın neden hep aynı yüzünün görüldüğünü bu sürelerle ilişkilendirerek kısaca yazınız.",
+      "soru": "Ay’ın kendi ekseni etrafında dönme süresi ile Dünya etrafında dolanma süresi birbirine eşittir (~27,3 gün). Dünya’dan bakıldığında Ay’ın hep aynı yüzünün görülmesinin temel nedenini kısaca yazınız.",
       "cevap": "Kendi ekseninde dönme ve Dünya çevresinde dolanma süreleri eş zamanlıdır (27,3 gün).",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görselde verilen dört astronomik hareketi, bir tam turunun tamamlanma süresi en kısa olandan en uzun olana doğru 1’den 4’e kadar sıralayınız.",
+      "soru": "Aşağıdaki dört gök cismi hareketini, bir tam turunun tamamlanma süresi en kısa olandan en uzun olana doğru 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "Dünya’nın kendi ekseni etrafında 1 tam tur dönmesi (24 saat)",
         "Güneş’in kendi ekseni etrafında 1 tam tur dönmesi (~25 gün)",
@@ -248,9 +237,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki tel maşalı model düzeneğinde uzun kol (1. şerit) ve kısa kol (2. şerit) hangi gök cisimlerini birbirine bağlamalıdır? Kısaca açıklayınız.",
-      "cevap": "Uzun 1. şerit Güneş ile Dünya’yı, kısa 2. şerit ise Dünya ile Ay’ı birbirine bağlamalıdır.",
-      "satir": 2
+      "soru": "Güneş, Dünya ve Ay modeli kurulurken Güneş-Dünya arasına uzun kol, Dünya-Ay arasına ise kısa kol yerleştirilmektedir. Bunun bilimsel nedenini açıklayınız.",
+      "cevap": "Gerçekte Güneş-Dünya uzaklığı, Dünya-Ay uzaklığından çok daha fazla olduğu için uzun kol Güneş-Dünya arasına konur.",
+      "satir": 3
     },
     {
       "tur": "coktan",

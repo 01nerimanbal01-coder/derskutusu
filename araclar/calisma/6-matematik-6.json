@@ -15,8 +15,7 @@
   "hatirla": [
     "Çözümlenmiş toplamdan ondalık gösterime geçerken her terim basamağına yerleştirilir ve boş kalan basamağa 0 yazılır: 5 + {kesir:6|10} + {kesir:9|1000} = 5,609.",
     "Bir ondalık gösterim farklı biçimlerde yazılabilir: 0,75 = {kesir:7|10} + {kesir:5|100} = {kesir:75|100} = {kesir:750|1000}; ondalık kısmın sonuna sıfır eklemek sayının değerini değiştirmez (0,4 = 0,40 = 0,400).",
-    "Para ve ölçü birimlerinde {kesir:1|100} lira = 1 kuruş, {kesir:1|100} m = 1 cm, {kesir:1|1000} kg = 1 g ve {kesir:1|1000} L = 1 mL olarak yorumlanır.",
-    "İki doğal sayının bölümü bir kesirdir (a ÷ b = {kesir:a|b}, b ≠ 0); paydası 2, 4, 5, 8, 20, 25, 50 olan kesirler genişletilerek paydası 10, 100 veya 1000 yapılır ve ondalık gösterime çevrilir."
+    "Para ve ölçü birimlerinde {kesir:1|100} lira = 1 kuruş, {kesir:1|100} m = 1 cm, {kesir:1|1000} kg = 1 g ve {kesir:1|1000} L = 1 mL olarak yorumlanır."
   ],
   "sorular": [
     {
@@ -35,10 +34,6 @@
         [
           "3 ÷ 4 ({kesir:3|4} = {kesir:75|100})",
           "0,75"
-        ],
-        [
-          "5 ÷ 8 ({kesir:5|8} = {kesir:625|1000})",
-          "0,625"
         ]
       ]
     },
@@ -75,10 +70,6 @@
         {
           "metin": "9 ÷ 100 işleminin sonucunda virgülün sağında iki basamak bulunacağından sonuç 0,09 olur.",
           "dogru": true
-        },
-        {
-          "metin": "{kesir:11|3} kesrinin paydası bir doğal sayıyla genişletilerek 10, 100 veya 1000 yapılabilir.",
-          "dogru": false
         }
       ]
     },
@@ -99,10 +90,6 @@
         {
           "metin": "Paydası 25 olan bir kesri ondalık gösterime çevirmek için kesri ___ ile genişletip paydayı 100 yaparız.",
           "cevap": "dört"
-        },
-        {
-          "metin": "Bir market etiketindeki 0,650 kilogramlık peynir paketi toplam 650 ___ kütleye sahiptir.",
-          "cevap": "gram"
         }
       ],
       "fazla": [
@@ -125,8 +112,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki paylaşım kartlarını inceleyerek bölme işlemini, paydası 100 veya 1000 olan genişletilmiş kesri ve ondalık gösterimi tabloya yazınız. İlk satır örnektir.",
+      "soru": "Bölme işlemini, paydası 100 veya 1000 olan genişletilmiş kesri ve ondalık gösterimi tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Paylaşım Durumu",
         "Bölme ve Kesir",
@@ -138,7 +124,9 @@
           "1. 1 elma, 4 kişi",
           "1 ÷ 4 = {kesir:1|4}",
           "{kesir:25|100}",
-          "0,25"
+          {
+            "b": "0,25"
+          }
         ],
         [
           "2. 9 L su, 20 şişe",
@@ -171,21 +159,19 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki market etiketinde bir zeytinyağı şişesi için “Hacim: 0,850 L — Fiyat: 145,60 TL” yazmaktadır. Hacmi mililitre, fiyatı lira ve kuruş cinsinden basamak değerleriyle kısaca açıklayınız.",
+      "soru": "Market etiketinde bir zeytinyağı şişesi için “Hacim: 0,850 L — Fiyat: 145,60 TL” yazmaktadır. Hacmi mililitre, fiyatı lira ve kuruş cinsinden basamak değerleriyle kısaca açıklayınız.",
       "cevap": "0,850 L = {kesir:850|1000} L olduğundan 850 mililitredir; 145,60 TL = 145 + {kesir:60|100} TL olduğundan 145 lira 60 kuruştur.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görselde verilen dört sayıyı, hepsini virgülden sonra üç basamaklı ondalık gösterime tamamlayarak {koyu:küçükten büyüğe} doğru 1’den 4’e kadar sıralayınız.",
+      "soru": "Dört sayıyı, hepsini virgülden sonra üç basamaklı ondalık gösterime tamamlayarak {koyu:küçükten büyüğe} doğru 1’den 4’e kadar sıralayınız.",
       "ogeler": [
-        "62 ÷ 1000 işleminin sonucu (0,062)",
-        "{kesir:1|4} kesrinin ondalık gösterimi (0,250)",
-        "{kesir:3|5} kesrinin ondalık gösterimi (0,600)",
-        "0,62 ondalık gösterimi (0,620)"
+        "62 ÷ 1000 işleminin sonucu",
+        "{kesir:1|4} kesrinin ondalık gösterimi",
+        "{kesir:3|5} kesrinin ondalık gösterimi",
+        "0,62 ondalık gösterimi"
       ]
     },
     {
@@ -247,9 +233,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki öğrenci çözüm kartında Kaan, “54 ÷ 1000 = 0,54” yazmıştır. Kaan’ın yaptığı basamak hatasını açıklayarak doğru ondalık gösterimi yazınız.",
-      "cevap": "Payda 1000 olduğu için virgülden sonra 3 basamak bulunmalıdır; doğru gösterim 0,045’tir.",
+      "soru": "Kaan, “54 ÷ 1000 = 0,54” yazmıştır. Kaan’ın yaptığı basamak hatasını açıklayarak doğru ondalık gösterimi yazınız.",
+      "cevap": "Payda 1000 olduğu için virgülden sonra 3 basamak bulunmalıdır; doğru gösterim 0,054’tür.",
       "satir": 2
     },
     {

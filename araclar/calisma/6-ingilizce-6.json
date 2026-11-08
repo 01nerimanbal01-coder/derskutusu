@@ -15,8 +15,7 @@
   "hatirla": [
     "Okul rutinlerinde Simple Present Tense kullanılır: “I, You, We, They” ile fiil yalın (V1), “He, She, It” ile fiil “-s, -es, -ies” alır (arrive → arrives, study → studies, watch → watches, have → has); olumsuzda “don’t, doesn’t + V1” gelir.",
     "Sıklık zarfları (always, usually, often, sometimes, never) asıl fiilden önce, “am, is, are” fiilinden sonra gelir: “Elif always wears her uniform.” · “She is never late for assembly.”",
-    "Fiil veya edattan sonra Object Pronouns gelir: I → me, you → you, he → him, she → her, it → it, we → us, they → them (“Mr Demir teaches maths; we listen to him carefully”).",
-    "Sessiz sesle başlayan tekil isimlerden önce “a” (a classroom), sesli sesle başlayanlardan önce “an” (an art room, an exam), belirli isimlerden önce “the” kullanılır; sınıf yönergelerinde “Keep... / Don’t...” (Imperatives) kullanılır."
+    "Fiil veya edattan sonra Object Pronouns gelir: I → me, you → you, he → him, she → her, it → it, we → us, they → them (“Mr Demir teaches maths; we listen to him carefully”)."
   ],
   "sorular": [
     {
@@ -35,10 +34,6 @@
         [
           "How often do you...?",
           "Sıklık sorusu (always, usually, often, sometimes, never)"
-        ],
-        [
-          "Don’t + Verb 1 (Negative Imperative)",
-          "Olumsuz okul yönergesi (Don’t litter the school yard)"
         ]
       ]
     },
@@ -75,10 +70,6 @@
         {
           "metin": "Olumsuz geniş zaman cümlelerinde “doesn’t” kullanıldığında asıl fiilin sonuna tekrar “-s” takısı eklenir.",
           "dogru": false
-        },
-        {
-          "metin": "Ünlü sesle başlayan sayılabilen tekil isimlerden önce “an” (an art room, an exam) tanımlığı kullanılır.",
-          "dogru": true
         }
       ]
     },
@@ -99,10 +90,6 @@
         {
           "metin": "Fatih joins ___ art club on Thursdays in the art room.",
           "cevap": "an"
-        },
-        {
-          "metin": "___ forget your student ID card at home on Monday mornings.",
-          "cevap": "Don’t"
         }
       ],
       "fazla": [
@@ -125,8 +112,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki “Articles (a, an, the) & Imperatives” panosunu inceleyerek tablodaki boş bırakılan hücreleri uygun yapılarla tamamlayınız. İlk satır örnektir.",
+      "soru": "Tablodaki cümleleri ve ipuçlarını inceleyerek boş bırakılan hücreleri uygun yapılarla (a, an, the, Don’t) tamamlayınız. İlk satır örnektir.",
       "basliklar": [
         "School Context Sentence",
         "Grammatical Clue",
@@ -136,7 +122,9 @@
         [
           "1. We have ___ science exam today.",
           "Tekil, sessiz sesle başlar",
-          "a"
+          {
+            "b": "a"
+          }
         ],
         [
           "2. Ms Kaya works in ___ art room.",
@@ -164,16 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki Fatih’in Salı günü okul rutini kartında parantez içinde verilen fiilleri Simple Present Tense kurallarına uygun olarak (olumlu ve olumsuz) yazınız.",
+      "soru": "“Fatih (1) ___ (help) the librarian on Tuesdays, but he (2) ___ (not / join) the chess club.” cümlesindeki boşluklara parantez içinde verilen fiilleri Simple Present Tense kurallarına uygun olarak yazınız.",
       "cevap": "1. boşluk: helps (Fatih helps the librarian) — 2. boşluk: doesn’t join (he doesn’t join the chess club).",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görselde verilen öğrencilerin sabah okula varıştan öğleden sonraki kulüp etkinliğine kadar olan günlük okul rutinlerini 1’den 4’e kadar sıralayınız.",
+      "soru": "Öğrencilerin sabah okula varıştan öğleden sonraki kulüp etkinliğine kadar olan günlük okul rutinlerini 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "First, students arrive at school on time and line up quietly for morning assembly.",
         "Second, they enter the classroom, greet their teacher and listen to the lessons carefully.",
@@ -243,8 +229,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki soru kartında yer alan “How often do you use the school library and who helps you there?” sorusunu bir sıklık zarfı (usually, often) ve bir nesne zamiri (me, us) kullanarak iki kısa İngilizce cümleyle cevaplayınız.",
+      "soru": "“How often do you use the school library and who helps you there?” sorusunu bir sıklık zarfı (usually, often) ve bir nesne zamiri (me, us) kullanarak iki kısa İngilizce cümleyle cevaplayınız.",
       "cevap": "I usually use the school library twice a week. The librarian always helps me find science books.",
       "satir": 2
     },

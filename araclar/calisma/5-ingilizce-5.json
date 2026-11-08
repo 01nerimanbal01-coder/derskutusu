@@ -14,9 +14,7 @@
   ],
   "hatirla": [
     "Okuldaki başlıca görevliler: the headmaster / headmistress (okul müdürü), an assistant to the headmaster (müdür yardımcısı), a secretary (sekreter), a coach (antrenör), a cook (aşçı) ve a nurse (hemşire).",
-    "Okuldaki bölümlerin içinde bulunurken “in” (in the canteen, in the lab, in the library, in the conference hall), belirli bir noktada bulunurken “at” (at the gate, at school) edatı kullanılır.",
-    "Tekil isimlerin ilk sesine göre ünsüz sesten önce “a” (a coach, a uniform), ünlü sesten önce “an” (an assistant, an English teacher); bilinen ve okulda tek olan varlıklar için “the” kullanılır.",
-    "“To be” fiili özneye göre çekimlenir (I am, he/she/it is, we/you/they are); kişileri sormak için “Who”, nesneleri ve yerleri sormak için “What” kullanılır ve olumlu cümlelerin sonunda ses tonu alçalır (↘)."
+    "Okuldaki bölümlerin içinde bulunurken “in” (in the canteen, in the lab, in the library, in the conference hall), belirli bir noktada bulunurken “at” (at the gate, at school) edatı kullanılır."
   ],
   "sorular": [
     {
@@ -36,10 +34,6 @@
         [
           "a notice board",
           "Okul kurallarının, etkinliklerin ve kulüp haberlerinin asıldığı duyuru panosu"
-        ],
-        [
-          "a conference hall",
-          "Okul törenlerinin, tiyatro oyunlarının ve toplantıların yapıldığı konferans salonu"
         ]
       ]
     },
@@ -78,10 +72,6 @@
         {
           "metin": "Kişi adlarının ve soyadlarının tam önünde daima “the” tanımlığı kullanılır (the Mr. Kaya gibi).",
           "dogru": false
-        },
-        {
-          "metin": "İngilizcede olumlu düz cümleler okunurken cümlenin sonunda ses tonu alçalır (falling intonation ↘).",
-          "dogru": true
         }
       ]
     },
@@ -103,10 +93,6 @@
         {
           "metin": "___ is in the sports field every afternoon? — Our coach, Mr. Kaya, is.",
           "cevap": "Who"
-        },
-        {
-          "metin": "Our headmistress welcomes the students ___ the school gate every morning.",
-          "cevap": "at"
         }
       ],
       "fazla": [
@@ -131,8 +117,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "sutun": "sol",
-      "gorsel_var": true,
-      "soru": "Görseldeki dört okul personeli kartını inceleyerek her kişinin görevini (Role) ve okulda çalıştığı yeri (Workplace) tabloya yazınız. İlk satır örnektir.",
+      "soru": "Her kişinin görevini (Role) ve okulda çalıştığı yeri (Workplace) tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "School Staff",
         "Role / Job",
@@ -142,7 +127,9 @@
         [
           "1. Mr. Demir",
           "the headmaster",
-          "in the administration department"
+          {
+            "b": "in the administration department"
+          }
         ],
         [
           "2. Mrs. Kaya",
@@ -171,8 +158,7 @@
       "tur": "kisa",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki soru-cevap kartında (1) ve (2) numaralı boşluklara “Who” veya “What” soru sözcüklerinden hangilerinin gelmesi gerektiğini nedeni ile birlikte kısaca yazınız.",
+      "soru": "Aşağıdaki diyaloglarda (1) ve (2) numaralı boşluklara “Who” veya “What” soru sözcüklerinden hangilerinin gelmesi gerektiğini nedeni ile birlikte kısaca yazınız: 1) “(1) ___ is Mr. Demir? — He is the headmaster.” 2) “(2) ___ is this? — It is a dictionary.”",
       "cevap": "1. boşluğa ‘Who’ (kişi), 2. boşluğa ‘What’ (nesne) gelmelidir.",
       "satir": 2
     },
@@ -180,8 +166,7 @@
       "tur": "siralama",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görselde karışık verilen tanışma diyaloğu cümlelerini anlamlı bir konuşma akışı oluşturacak biçimde 1’den 4’e kadar sıralayınız.",
+      "soru": "Karışık verilen tanışma diyaloğu cümlelerini anlamlı bir konuşma akışı oluşturacak biçimde 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Hello! Welcome to our school. I am Deniz and I am in class 5-A.",
         "Nice to meet you, Deniz! I am Mert. I am a new student here.",
@@ -241,10 +226,9 @@
       "tur": "acik",
       "duzey": "ust",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki zamir dönüştürme kartında yer alan 1 ve 2 numaralı cümleleri, altı çizili öznelerin yerine uygun kişi zamirlerini (He / She / It / We / They) kullanarak yeniden yazınız.",
+      "soru": "Aşağıdaki 1 ve 2 numaralı cümleleri, koyu yazılan öznelerin yerine uygun kişi zamirlerini (He / She / It / We / They) kullanarak yeniden yazınız: 1) {koyu:Mrs. Yıldız} works in the administration department. 2) {koyu:The classrooms} are upstairs next to the corridor.",
       "cevap": "1. Cümle: She works in the administration department. — 2. Cümle: They are upstairs next to the corridor.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "coktan",

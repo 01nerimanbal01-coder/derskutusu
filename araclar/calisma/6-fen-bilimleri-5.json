@@ -14,8 +14,7 @@
   "hatirla": [
     "Bir cisme aynı doğrultuda etki eden kuvvetlerin yerine geçen tek kuvvete bileşke (net) kuvvet (R) denir; aynı yönlü kuvvetler toplanır, zıt yönlü kuvvetlerin farkı alınır.",
     "Bileşke kuvvet 0 N ise kuvvetler dengelenmiştir: duran cisim durmaya devam eder, hareket hâlindeki cisim ise aynı yönde ve aynı çabuklukla hareketini sürdürür.",
-    "Bileşke kuvvet 0 N’dan farklıysa kuvvetler dengelenmemiştir: duran cisim bileşke kuvvet yönünde harekete geçer; hareketli cisim hızlanır, yavaşlar veya yön değiştirir.",
-    "Deney düzeneğinde kuvvetler dinamometre ile ölçülür; kuvvetler arasındaki fark (bileşke kuvvet) bağımsız değişken, cismin hareket durumu ise bağımlı değişkendir."
+    "Bileşke kuvvet 0 N’dan farklıysa kuvvetler dengelenmemiştir: duran cisim bileşke kuvvet yönünde harekete geçer; hareketli cisim hızlanır, yavaşlar veya yön değiştirir."
   ],
   "sorular": [
     {
@@ -35,10 +34,6 @@
         [
           "Kırmızı ışığa yaklaşırken frene basan sürücü",
           "Bileşke kuvvet 0 N’dan farklı (Dengelenmemiş) · Araç yavaşlar"
-        ],
-        [
-          "Dalından koparak yere doğru düşen ceviz",
-          "Bileşke kuvvet 0 N’dan farklı (Dengelenmemiş) · Cisim hızlanır"
         ]
       ]
     },
@@ -77,10 +72,6 @@
         {
           "metin": "Dengelenmemiş kuvvetlerin etkisindeki bir arabaya uygulanan bileşke kuvvet büyüdükçe araba daha çabuk hızlanır.",
           "dogru": true
-        },
-        {
-          "metin": "Kalecinin eldivenine çarparak sahanın ortasına dönen futbol topu dengelenmemiş kuvvet etkisindedir.",
-          "dogru": true
         }
       ]
     },
@@ -102,10 +93,6 @@
         {
           "metin": "Kuvvet deneyinde araştırmacının kendi isteğiyle değiştirdiği kuvvet farkına ___ değişken denir.",
           "cevap": "bağımsız"
-        },
-        {
-          "metin": "Oyuncak arabanın iki ucuna bağlanan iplerdeki çekme kuvvetini ölçmek için ___ kullanılır.",
-          "cevap": "dinamometre"
         }
       ],
       "fazla": [
@@ -130,8 +117,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "sutun": "sol",
-      "gorsel_var": true,
-      "soru": "Görseldeki oyuncak araba deneyinde dört denemenin dinamometre ölçümleri verilmiştir. Bileşke kuvveti ve kuvvetlerin durumunu (Dengelenmiş / Dengelenmemiş) tabloya yazınız. İlk satır örnektir.",
+      "soru": "Oyuncak araba deneyinde dört denemenin dinamometre ölçümleri verilmiştir. Bileşke kuvveti ve kuvvetlerin durumunu (Dengelenmiş / Dengelenmemiş) tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Deneme ve Kuvvetler",
         "Bileşke Kuvvet (R)",
@@ -141,7 +127,9 @@
         [
           "1. Batıya 4 N — Doğuya 4 N",
           "0 N",
-          "Dengelenmiş"
+          {
+            "b": "Dengelenmiş"
+          }
         ],
         [
           "2. Batıya 3 N — Doğuya 8 N",
@@ -172,8 +160,7 @@
       "tur": "kisa",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki deney düzeneğinde L kutusuna doğuya 14 N ve 6 N, batıya ise 11 N kuvvet uygulanmaktadır. L kutusunun harekete geçmemesi (dengelenmesi) için hangi yönde kaç N ek kuvvet uygulanmalıdır?",
+      "soru": "Deney düzeneğinde L kutusuna doğuya 14 N ve 6 N, batıya ise 11 N kuvvet uygulanmaktadır. L kutusunun harekete geçmemesi (dengelenmesi) için hangi yönde kaç N ek kuvvet uygulanmalıdır?",
       "cevap": "Bileşke doğuya 9 N’dır; dengelemek için batı yönünde 9 N uygulanmalıdır.",
       "satir": 2
     },
@@ -181,13 +168,12 @@
       "tur": "siralama",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki dört farklı deney arabasını, üzerlerine etki eden {koyu:bileşke kuvvetin büyüklüğüne} göre küçükten büyüğe (1’den 4’e kadar) sıralayınız.",
+      "soru": "Dört farklı deney arabasını, üzerlerine etki eden {koyu:bileşke kuvvetin büyüklüğüne} göre küçükten büyüğe (1’den 4’e kadar) sıralayınız.",
       "ogeler": [
-        "P Arabası: Batıya 6 N ve doğuya 6 N kuvvet etkisinde (R = 0 N)",
-        "R Arabası: Batıya 5 N ve doğuya 8 N kuvvet etkisinde (R = 3 N)",
-        "S Arabası: Doğuya 4 N ve doğuya 3 N kuvvet etkisinde (R = 7 N)",
-        "T Arabası: Batıya 15 N ve doğuya 3 N kuvvet etkisinde (R = 12 N)"
+        "P Arabası: Batıya 6 N ve doğuya 6 N kuvvet etkisinde",
+        "R Arabası: Batıya 5 N ve doğuya 8 N kuvvet etkisinde",
+        "S Arabası: Doğuya 4 N ve doğuya 3 N kuvvet etkisinde",
+        "T Arabası: Batıya 15 N ve doğuya 3 N kuvvet etkisinde"
       ]
     },
     {
@@ -252,8 +238,7 @@
       "tur": "acik",
       "duzey": "ust",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki deney kaydında 1. denemede zıt yönlü 2 N ve 2 N, 2. denemede ise zıt yönlü 8 N ve 8 N uygulanmıştır. Kuvvetler 4 katına çıktığı hâlde arabanın iki denemede de hareket etmemesinin nedenini açıklayınız.",
+      "soru": "Deney kaydında 1. denemede zıt yönlü 2 N ve 2 N, 2. denemede ise zıt yönlü 8 N ve 8 N uygulanmıştır. Kuvvetler 4 katına çıktığı hâlde arabanın iki denemede de hareket etmemesinin nedenini açıklayınız.",
       "cevap": "Her iki denemede de zıt kuvvetler eşit olduğundan bileşke 0 N’dır.",
       "satir": 2
     },
