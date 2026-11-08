@@ -14,8 +14,7 @@
   "hatirla": [
     "Konu, metnin üzerinde durduğu şeydir; ana duygu ise metnin bütününe yayılan ve okurda uyanan temel duygudur.",
     "Kişileştirmede insan dışındaki varlıklara insana özgü nitelik ya da davranış verilir; benzetmede iki şey ortak bir özellik yönünden yan yana getirilir.",
-    "Akrostişte her dize konu sözcüğünün sıradaki harfiyle başlar ve konuyla ilgili olur.",
-    "Yüklem, cümlede yargı bildiren ögedir. Çekimli fiil ya da ad soylu bir sözcük öbeği olabilir; fiilimsiler yüklem olmaz."
+    "Akrostişte her dize konu sözcüğünün sıradaki harfiyle başlar ve konuyla ilgili olur."
   ],
   "sorular": [
     {
@@ -34,23 +33,15 @@
         [
           "ziyade",
           "çok, fazla"
-        ],
-        [
-          "gazi",
-          "savaştan sağ dönen kişi"
-        ],
-        [
-          "yakut",
-          "koyu kırmızı, değerli bir taş"
         ]
       ]
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki sözlük kartında “hasım” sözcüğünün iki anlamı verilmiştir. (1) “Genç güreşçi, minderde hasmını iki dakikada tuşla yendi.” (2) “Kale burcundaki nöbetçiler, hasmın yaklaştığını borazanla duyurdu.” Bu cümlelerde sözcük hangi anlamda kullanılmıştır? Her cümle için anlamın numarasını ve ipucunu yazınız.",
-      "cevap": "1. cümle: 2. anlam; “minder, tuş” yarışmayı gösterir. 2. cümle: 1. anlam; “kale, nöbetçi, borazan” savaşı gösterir.",
-      "satir": 3
+      "soru": "Sözlükte “hasım” sözcüğünün iki anlamı “1. Düşman. 2. Oyunda, davada ya da yarışta karşı taraf.” olarak verilmiştir. (1) “Genç güreşçi, minderde hasmını iki dakikada tuşla yendi.” (2) “Kale burcundaki nöbetçiler, hasmın yaklaştığını borazanla duyurdu.” cümlelerinde sözcük hangi anlamda kullanılmıştır? Her cümle için anlamın numarasını ve ipucunu yazınız.",
+      "cevap": "1. cümle: 2. anlam (minder, tuş → yarışma). 2. cümle: 1. anlam (kale, nöbetçi → savaş).",
+      "satir": 2
     },
     {
       "tur": "dy",
@@ -72,14 +63,6 @@
         {
           "metin": "“Bu Vatan Kimin?” şiirinde vatanın taşlarının yakuta benzetilmesi bir kişileştirme örneğidir.",
           "dogru": false
-        },
-        {
-          "metin": "Akrostişte dizenin doğru harfle başlaması yeterlidir; konuyla ilgisi aranmaz.",
-          "dogru": false
-        },
-        {
-          "metin": "Üç noktayla biten bir dizeyi sesli okurken kısa bir duraklama yapmak anlamı duyurur.",
-          "dogru": true
         }
       ]
     },
@@ -93,7 +76,8 @@
         "Konu: hayranlık ve vatan sevgisi — Ana duygu: cepheye cephane taşıyan anaların fedakârlığı",
         "Konu: kağnı tekerleğinin karlı yolda çıkardığı ses — Ana duygu: merak ve heyecan"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
@@ -108,7 +92,9 @@
         [
           "Yorgun dağlar, şehit oğullarına ağıt yaktı.",
           "Kişileştirme",
-          "Dağlara ağıt yakma davranışı verilmiş."
+          {
+            "b": "Dağlara ağıt yakma davranışı verilmiş."
+          }
         ],
         [
           "Bayrağımız rüzgârda alev gibi kızıl dalgalanıyordu.",
@@ -136,15 +122,6 @@
           {
             "b": "Gözler, parlaklık yönünden yıldıza benzetilmiş."
           }
-        ],
-        [
-          "Yaşlı çınar, köyün çocuklarına eski günleri anlattı.",
-          {
-            "b": "Kişileştirme"
-          },
-          {
-            "b": "Çınara anlatma davranışı verilmiş."
-          }
         ]
       ]
     },
@@ -158,7 +135,8 @@
         "Benzeyen: ışıklar — Kendisine benzetilen: inci — Ortak özellik: parlaklık",
         "Benzeyen: ışıklar — Kendisine benzetilen: gece — Ortak özellik: incilik"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "bosluk",
@@ -177,14 +155,6 @@
         {
           "metin": "İki şeyi ortak bir özellik yönünden yan yana getiren söz sanatı ___ adını alır.",
           "cevap": "benzetme"
-        },
-        {
-          "metin": "Dizelerinin baş harfleri alt alta okununca bir sözcük çıkan şiire ___ denir.",
-          "cevap": "akrostiş"
-        },
-        {
-          "metin": "Cümlede iş, oluş ya da durum bildirerek yargıyı taşıyan öge ___ olarak adlandırılır.",
-          "cevap": "yüklem"
         }
       ],
       "fazla": [
@@ -194,9 +164,9 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Bir öğrenci “ZAFER” sözcüğüyle, konusu Kurtuluş Savaşı zaferi olan görseldeki akrostişi yazmıştır. Akrostişteki hatalı dizeleri bulunuz. Her birinin hangi ölçüte uymadığını yazınız.",
-      "cevap": "3. dize konudan kopuktur: harfe uyar ama savaşla ilgisi yoktur. 5. dize R harfiyle başlamalıydı; konuya uygun olsa da harf ölçütüne uymaz.",
-      "satir": 3
+      "soru": "Bir öğrenci “ZAFER” sözcüğüyle, konusu Kurtuluş Savaşı zaferi olan şu akrostişi yazmıştır: “(1) Zor günlerde tek yürek oldu bu millet, / (2) Al bayrak yeniden dalgalandı tepelerde, / (3) Futbol maçında gol atan takım sevindi, / (4) Emek veren her kahramana minnettarız, / (5) Yurdun dört yanında çaldı zafer davulları.” Akrostişteki hatalı dizeleri bulunuz ve her birinin hangi ölçüte uymadığını yazınız.",
+      "cevap": "3. dize savaş konusuna uymaz (konudan kopuk). 5. dize R yerine Y ile başlamıştır (harfe uymaz).",
+      "satir": 2
     },
     {
       "tur": "coktan",
@@ -208,7 +178,8 @@
         "8 dize — R",
         "9 dize — U"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
@@ -223,7 +194,9 @@
         [
           "Askerler sabaha kadar uyumadı.",
           "uyumadı",
-          "fiil"
+          {
+            "b": "fiil"
+          }
         ],
         [
           "Bu toprakların her karışı kutsaldır.",
@@ -264,21 +237,22 @@
         "III yüklemdir, çünkü ilerleme işinin nasıl yapıldığını bildirir.",
         "II ve III zarf-fiildir; bu yüzden cümlenin yargısını onlar bildirir."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Ece, görseldeki not kartında cümlenin yüklemini işaretlemiştir. Ece'nin yaptığı hatayı açıklayınız ve cümlenin yüklemini yazınız.",
-      "cevap": "“Anlattıkları” kip ve kişi eki almamış bir fiilimsidir; cümlede özne görevindedir. Yargıyı “canlı bir tarih dersiydi” öbeği bildirir; yüklem odur.",
-      "satir": 3
+      "soru": "Ece, “Gazilerin anlattıkları bizim için canlı bir tarih dersiydi.” cümlesinde “anlattıkları” sözcüğünü yüklem olarak işaretlemiştir. Ece’nin yaptığı hatayı açıklayınız ve cümlenin yüklemini yazınız.",
+      "cevap": "“Anlattıkları” fiilimsidir ve öznedir; cümlenin yüklemi “canlı bir tarih dersiydi” öbeğidir.",
+      "satir": 2
     },
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki cümlede iki söz sanatı birlikte kullanılmıştır. Bu söz sanatlarını adlandırınız ve her birinin cümledeki dayanağını yazınız.",
-      "cevap": "Benzetme: nehir, kıvrımlı ve parlak oluşu yönünden gümüş bir kurdeleye benzetilmiştir. Kişileştirme: nehre insana özgü “selam vermek” davranışı verilmiştir.",
-      "satir": 3
+      "soru": "“Nehir, gümüş bir kurdele gibi kıvrılarak şehitlere selam verdi.” cümlesinde iki söz sanatı birlikte kullanılmıştır. Bu söz sanatlarını adlandırınız ve her birinin cümledeki dayanağını yazınız.",
+      "cevap": "Benzetme: nehir gümüş kurdeleye benzetilmiş. Kişileştirme: nehre selam verme özelliği verilmiş.",
+      "satir": 2
     },
     {
       "tur": "siralama",

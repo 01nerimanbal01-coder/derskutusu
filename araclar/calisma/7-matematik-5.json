@@ -14,8 +14,7 @@
   "hatirla": [
     "Yatay sayı doğrusunda soldan sağa doğru gidildikçe rasyonel sayıların değeri daima büyür; her negatif rasyonel sayı 0’dan, 0 da her pozitif rasyonel sayıdan küçüktür.",
     "Pozitif rasyonel sayılarda paydalar eşitse payı büyük olan, paylar eşitse paydası küçük olan sayı daha büyüktür.",
-    "Negatif rasyonel sayılar sıralanırken önce pozitifmiş gibi sıralama yapılır, ardından eşitsizlik sembollerinin yönü ters çevrilir (0’a yakın olan negatif sayı daha büyüktür).",
-    "Herhangi iki farklı rasyonel sayı arasında sonsuz sayıda rasyonel sayı bulunur; bu özelliğe rasyonel sayıların yoğunluk özelliği denir."
+    "Negatif rasyonel sayılar sıralanırken önce pozitifmiş gibi sıralama yapılır, ardından eşitsizlik sembollerinin yönü ters çevrilir (0’a yakın olan negatif sayı daha büyüktür)."
   ],
   "sorular": [
     {
@@ -37,7 +36,7 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Görseldeki sıralama stratejileri kartlarını inceleyerek verilen rasyonel sayı çiftlerinin arasına «<», «>» veya «=» sembollerinden uygun olanı ve kullanılan yöntemi tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen rasyonel sayı çiftlerinin arasına «<», «>» veya «=» sembollerinden uygun olanı ve kullanılan karşılaştırma kuralını boşluklara yazınız. İlk satır örnektir.",
       "basliklar": [
         "Rasyonel Sayı Çifti",
         "Karşılaştırma Sonucu",
@@ -89,10 +88,6 @@
         [
           "Pay eşitleme yöntemi",
           "Paydaları birbirine eşitlenmeye uygun olmayan kesirlerde payların ortak katta buluşması"
-        ],
-        [
-          "Bütüne yakınlık stratejisi",
-          "{kesir:13|14} gibi payı paydasına çok yakın olan basit kesirlerin 1 tama yakın olması"
         ]
       ]
     },
@@ -115,7 +110,7 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Görseldeki eşitsizlik şeridinde −{kesir:2|3} < {kesir:m|15} < −{kesir:1|5} bağıntısı verilmiştir. Paydaları 15’te eşitleyerek m harfinin alabileceği tam sayı değerlerini bulunuz.",
+      "soru": "−{kesir:2|3} < {kesir:m|15} < −{kesir:1|5} sıralamasında paydaları 15’te eşitleyerek m harfinin alabileceği tam sayı değerlerini bulunuz.",
       "cevap": "Paydalar 15 yapılınca −{kesir:10|15} < {kesir:m|15} < −{kesir:3|15} olur; m yerine −9..−4 arası 6 tam sayı gelir.",
       "satir": 2
     },
@@ -140,10 +135,6 @@
         {
           "metin": "0,{devir:4} devirli ondalık gösterimi (0,444...), 0,4 sonlu ondalık gösteriminden (0,400...) büyüktür.",
           "dogru": true
-        },
-        {
-          "metin": "−3{kesir:1|4} tam sayılı kesri sayı doğrusunda −3 ile −4 tam sayıları arasında bulunur.",
-          "dogru": true
         }
       ]
     },
@@ -166,7 +157,7 @@
       "duzey": "uygula",
       "sutun": "sag",
       "gorsel_var": true,
-      "soru": "Görseldeki negatif rasyonel sayıları (−{kesir:3|5}, −{kesir:7|10}, −{kesir:1|2}) küçükten büyüğe doğru sıralamak isteyen bir öğrencinin izlemesi gereken işlem adımlarını 1’den 4’e kadar sıralayınız.",
+      "soru": "−{kesir:3|5}, −{kesir:7|10} ve −{kesir:1|2} negatif rasyonel sayılarını küçükten büyüğe doğru sıralamak isteyen bir öğrencinin izlemesi gereken işlem adımlarını 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Negatif işaretleri geçici olarak görmezden gelerek sayıları +{kesir:3|5}, +{kesir:7|10} ve +{kesir:1|2} biçiminde pozitif düşünmek",
         "Paydaları 10’da eşitleyerek kesirleri {kesir:6|10}, {kesir:7|10} ve {kesir:5|10} biçiminde genişletmek",
@@ -230,10 +221,6 @@
         {
           "metin": "{kesir:1|12}, {kesir:6|11} ve {kesir:19|20} kesirlerinden {kesir:6|11} kesri ___ ({kesir:1|2}) değerine en yakındır.",
           "cevap": "yarıma"
-        },
-        {
-          "metin": "İki kesrin arasındaki rasyonel sayıları görmek için pay ve paydalar aynı sayıyla ___.",
-          "cevap": "genişletilir"
         }
       ],
       "fazla": [
@@ -245,7 +232,7 @@
       "duzey": "ust",
       "sutun": "sag",
       "gorsel_var": true,
-      "soru": "Görseldeki {kesir:1|8}, {kesir:5|9} ve {kesir:11|12} kesirlerini payda eşitleme işlemi yapmadan «sıfıra, yarıma ve bütüne yakınlık» stratejisini kullanarak küçükten büyüğe doğru sıralayınız ve gerekçesini açıklayınız.",
+      "soru": "{kesir:1|8}, {kesir:5|9} ve {kesir:11|12} rasyonel sayılarını payda eşitleme işlemi yapmadan «sıfıra, yarıma ve bütüne yakınlık» stratejisini kullanarak küçükten büyüğe doğru sıralayınız ve gerekçesini açıklayınız.",
       "cevap": "{kesir:1|8} sıfıra, {kesir:5|9} yarıma, {kesir:11|12} bire yakındır; bu nedenle {kesir:1|8} < {kesir:5|9} < {kesir:11|12} dizilir.",
       "satir": 2
     }

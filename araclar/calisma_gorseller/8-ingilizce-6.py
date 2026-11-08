@@ -1,154 +1,87 @@
-"""8. sınıf İngilizce 6. hafta (Unit 2: Teen Life — Likes, Dislikes, Preferences & Opinions) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 12 pt Noto Sans (K150 EK)."""
+"""8-ingilizce-6 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea'
-ALTIN, KAHVE, YESIL_K, GRI, KUM = '#c9a227', '#8a5a2b', '#0f6b45', '#9aa6bd', '#fffdf5'
-YAZI = 'font-family="Noto Sans, sans-serif" font-size="12" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-size="12" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=20):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def muzik_tercih_kartlari():
-    """Soru 1: Dört gencin müzik görüşleri kartı."""
-    kartlar = [
-        ('Leo · Rock & Opera', 'Rock: Terrific (+) · Opera: Unbearable (−)', MAVI, MAVI_A),
-        ('Maya · Heavy Metal', 'Heavy metal: Too loud and boring (−)', KIR, KIR_A),
-        ('Bora · Rap Music', 'Rap: Energetic and impressive (+)', YES, YES_A),
-        ('Ada · Folk Music', 'Folk: Harmonic and traditional (+)', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 46
-        ic += kutu(x, y, 172, 42, z, r, 7, 1.3)
-        ic += yazi(x + 86, y + 17, bas, r)
-        ic += yazi(x + 86, y + 35, alt, LAC, 'middle', True)
-    return svg(360, 98, ic, 'Dört gencin müzik türleri hakkındaki görüş kartları.', 15)
-
-
-def sifat_ve_kalip_panosu():
-    """Soru 2: Olumlu ve olumsuz sıfatlar panosu."""
-    ic = kutu(4, 4, 172, 86, YES_A, YES, 8, 1.4)
-    ic += yazi(90, 22, 'Positive (+) Expressions', YESIL_K)
-    ic += yazi(90, 44, 'terrific · impressive · trendy', LAC, 'middle', True)
-    ic += yazi(90, 64, 'fond of · keen on · crazy about', LAC, 'middle', True)
-    ic += yazi(90, 81, '(Sevilen ve beğenilenler)', YESIL_K)
-
-    ic += kutu(184, 4, 172, 86, KIR_A, KIR, 8, 1.4)
-    ic += yazi(270, 22, 'Negative (−) Expressions', KIR)
-    ic += yazi(270, 44, 'unbearable · ridiculous · boring', LAC, 'middle', True)
-    ic += yazi(270, 64, 'can’t stand · hate · dislike', LAC, 'middle', True)
-    ic += yazi(270, 81, '(Katlanılamayanlar)', KIR)
-    return svg(360, 94, ic, 'Teen Life ünitesi olumlu ve olumsuz sıfatlar panosu.', 15)
-
-
-def selin_hafta_sonu_tercihi():
-    """Soru 4: Selin'in kamp (+) ve alışveriş (-) tercih kartı."""
-    ic = kutu(4, 4, 352, 88, KUM, ALTIN, 8, 1.4)
-    ic += yazi(180, 20, 'Selin’s Weekend Preference Card (prefer ... to ...)', KAHVE)
-    ic += kutu(12, 28, 162, 54, YES_A, YES, 6, 1.3)
-    ic += yazi(93, 46, '(+) Likes / Prefers', YESIL_K)
-    ic += yazi(93, 68, 'Camping · Pitching a tent', LAC, 'middle', True)
-    ic += kutu(186, 28, 162, 54, KIR_A, KIR, 6, 1.3)
-    ic += yazi(267, 46, '(−) Dislikes / Hates', KIR)
-    ic += yazi(267, 68, 'Shopping at crowded malls', LAC, 'middle', True)
-    return svg(360, 96, ic, 'Selin’in hafta sonu kamp ve alışveriş tercih kartı.', 15)
-
-
-def arda_kitap_tercihi():
-    """Soru 5: Arda'nın kitap kulübü tercih kartı."""
-    ic = kutu(4, 4, 352, 84, MAVI_A, MAVI, 8, 1.4)
-    ic += yazi(180, 21, 'Book Club Member Card · Arda', MAVI)
-    ic += kutu(14, 28, 158, 48, '#fff', YES, 6, 1.2)
-    ic += yazi(93, 46, 'Detective Books (+)', YESIL_K)
-    ic += yazi(93, 66, 'Exciting and impressive', LAC, 'middle', True)
-    ic += kutu(188, 28, 158, 48, '#fff', KIR, 6, 1.2)
-    ic += yazi(267, 46, 'Gothic Books (−)', KIR)
-    ic += yazi(267, 66, 'Dark and boring', LAC, 'middle', True)
-    return svg(360, 92, ic, 'Arda’nın polisiye ve gotik kitap tercih kartı.', 15)
-
-
-def kamp_malzemeleri_karti():
-    """Soru 7: Kamp malzemeleri ve kullanım amaçları kartları."""
-    esya = [
-        ('1. Tent & Bag', 'For sleeping safely', MAVI, MAVI_A, 6),
-        ('2. Torch', 'To see in the dark', TUR, TUR_A, 94),
-        ('3. Compass', 'To find the direction', YES, YES_A, 182),
-        ('4. Matches', 'To make a campfire', MOR, MOR_A, 270),
-    ]
-    ic = ''
-    for bas, alt, r, z, x in esya:
-        ic += kutu(x, 6, 84, 74, z, r, 7, 1.4)
-        ic += yazi(x + 42, 30, bas, r)
-        ic += yazi(x + 42, 58, alt, LAC, 'middle', True)
-    return svg(360, 86, ic, 'Dört kamp malzemesi ve kullanım amacı kartları.', 18)
-
-
-def muzik_diyalog_akisi():
-    """Soru 8: Tina ve Kerem müzik diyaloğu akış şeması."""
-    adimlar = [
-        ('1. Soru', 'What kind of music?', MAVI, MAVI_A, 6),
-        ('2. Kerem', 'Keen on jazz (+)', YES, YES_A, 94),
-        ('3. Tina', 'Prefers pop (+)', TUR, TUR_A, 182),
-        ('4. Uzlaşma', 'Music festival!', MOR, MOR_A, 270),
-    ]
-    ic = ''
-    for bas, alt, r, z, x in adimlar:
-        ic += kutu(x, 6, 84, 74, z, r, 7, 1.4)
-        ic += yazi(x + 42, 30, bas, r)
-        ic += yazi(x + 42, 58, alt, LAC, 'middle', True)
-    return svg(360, 86, ic, 'İki arkadaşın müzik tercihleri konuşma akışı.', 18)
-
-
-def mina_siklik_grafigi():
-    """Soru 9: Mina'nın akşam etkinlikleri sıklık yüzdeleri panosu."""
-    ic = kutu(4, 4, 352, 90, '#f8fafc', GRI, 8, 1.3)
-    ic += yazi(180, 20, 'Mina’s Evening Activities & Frequency Rates', LAC)
-    barlar = [
-        ('Doing homework', '100% (Always)', YES, YES_A, 10),
-        ('Reading sci-fi', '80% (Usually)', MAVI, MAVI_A, 98),
-        ('Chatting online', '40% (Sometimes)', TUR, TUR_A, 186),
-        ('Playing games', '0% (Never)', KIR, KIR_A, 274),
-    ]
-    for bas, oran, r, z, x in barlar:
-        ic += kutu(x, 28, 78, 56, z, r, 6, 1.3)
-        ic += yazi(x + 39, 48, bas, r)
-        ic += yazi(x + 39, 70, oran, LAC, 'middle', True)
-    return svg(360, 98, ic, 'Mina’nın akşam etkinlikleri sıklık oranları tablosu.', 15)
-
-
-def teen_opinion_cue_card():
-    """Soru 12: Teen Life Opinion ipucu kartı."""
-    ic = kutu(4, 4, 352, 84, MOR_A, MOR, 8, 1.4)
-    ic += yazi(180, 20, 'Teen Life Opinion Cue Card (Music Preferences)', MOR)
-    ic += kutu(14, 28, 158, 48, '#fff', YES, 6, 1.2)
-    ic += yazi(93, 46, 'Favorite Music (+)', YESIL_K)
-    ic += yazi(93, 66, 'fond of · terrific / energetic', LAC, 'middle', True)
-    ic += kutu(188, 28, 158, 48, '#fff', KIR, 6, 1.2)
-    ic += yazi(267, 46, 'Disliked Music (−)', KIR)
-    ic += yazi(267, 66, 'can’t stand · unbearable', LAC, 'middle', True)
-    return svg(360, 92, ic, 'Sevilen ve katlanılamayan müzik türleri yazma ipucu kartı.', 15)
+GORSELLER = {0: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört gencin müzik '
+    'türleri hakkındaki görüş kartları."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Leo · Rock &amp; Opera</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Rock: Terrific | · ·</text><text x="87.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Opera: '
+    'Unbearable</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Maya '
+    '· Heavy Metal</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Heavy metal: Too</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">loud and boring</text><rect x="4" y="71" width="167" height="64" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Bora · Rap Music</text><text x="87.5" y="107.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Rap: Energetic and</text><text x="87.5" '
+    'y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">impressive</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Ada · Folk Music</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Folk: Harmonic and</text><text x="262.5" y="126.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">traditional</text></svg>',
+ 3: '<svg viewBox="0 0 350 113" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Selin’in hafta sonu '
+    'etkinlik tercihleri kartı."><rect x="4" y="3" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Selin’s Weekend Preference Card</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(+) Likes: Camping in the forest · Pitching a</text><text '
+    'x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">tent</text><rect x="4" y="68" width="342" height="43" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="85.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Disliked Activity</text><text x="11.0" y="103.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(−) Dislikes: Shopping at crowded malls</text></svg>',
+ 6: '<svg viewBox="0 0 350 212" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Doğa yürüyüşü ve kampa '
+    'gidecek dört arkadaşın kamp malzemeleri listesi."><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Tent &amp; Sleeping</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Bag</text><text x="87.5" y="58.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Equipment for</text><text x="87.5" y="76.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">shelter and '
+    'sleeping</text><text x="87.5" y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">at night</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2. Torch &amp; Compass</text><text x="262.5" y="49.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Equipment for light</text><text x="262.5" y="67.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">and navigation '
+    'in</text><text x="262.5" y="85.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">nature</text><rect x="4" y="108" width="167" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="126.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Pocketknife &amp;</text><text x="87.5" y="144.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Rope</text><text x="87.5" y="163.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Equipment for</text><text x="87.5" y="181.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">cutting and '
+    'tying</text><text x="87.5" y="200.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">camp tools</text><rect x="179" y="108" width="167" height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="126.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Matches &amp; Frying</text><text x="262.5" y="144.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Pan</text><text x="262.5" y="163.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Equipment for</text><text x="262.5" y="181.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">campfire and</text><text '
+    'x="262.5" y="200.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">cooking meals</text></svg>',
+ 8: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mina’nın akşamları '
+    'yaptığı etkinliklerin sıklık oranları grafiği."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Doing school</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">homework</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sıklık Oranı: %100</text><rect x="179" y="3" width="167" '
+    'height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Reading sci-fi books</text><text x="262.5" '
+    'y="49.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sıklık Oranı: '
+    '%80</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Chatting '
+    'with</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">friends online</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Sıklık Oranı: %40</text><rect x="179" y="71" width="167" height="64" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Playing violent</text><text x="262.5" y="107.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">computer games</text><text x="262.5" '
+    'y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sıklık Oranı: '
+    '%0</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = muzik_tercih_kartlari()
-    s[1]['gorsel'] = sifat_ve_kalip_panosu()
-    s[3]['gorsel'] = selin_hafta_sonu_tercihi()
-    s[4]['gorsel'] = arda_kitap_tercihi()
-    s[6]['gorsel'] = kamp_malzemeleri_karti()
-    s[7]['gorsel'] = muzik_diyalog_akisi()
-    s[8]['gorsel'] = mina_siklik_grafigi()
-    s[11]['gorsel'] = teen_opinion_cue_card()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

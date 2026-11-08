@@ -15,8 +15,7 @@
   "hatirla": [
     "İki eylem arasında tercih belirtirken «prefer + V-ing + to + V-ing» («I prefer reading a book to watching TV») kalıbında «than» yerine daima «to» kullanılır.",
     "«Would rather + V1 (yalın fiil) + than + V1» («I would rather go camping than stay at a hotel») yapısında fiiller ek almaz ve karşılaştırma «than» ile yapılır.",
-    "Olumlu görüş sıfatları: terrific / awesome / impressive / trendy / energetic / harmonic. Olumsuz görüş sıfatları: unbearable / ridiculous / boring / loud / snob.",
-    "Doğa kampı (camping) temel kelimeleri: pitch (set up) a tent (çadır kurmak), make a campfire (kamp ateşi yakmak), sleeping bag (uyku tulumu), torch (el feneri), compass (pusula), rope (ip)."
+    "Olumlu görüş sıfatları: terrific / awesome / impressive / trendy / energetic / harmonic. Olumsuz görüş sıfatları: unbearable / ridiculous / boring / loud / snob."
   ],
   "sorular": [
     {
@@ -37,8 +36,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "sutun": "sol",
-      "gorsel_var": true,
-      "soru": "Görseldeki kamp çantası (backpack) malzemelerini inceleyerek her ekipmanın İngilizce adını ve kamptaki kullanım amacını tablodaki boşluklara yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki kamp çantası (backpack) malzemelerini inceleyerek her ekipmanın kamptaki kullanım amacını ve ilgili İngilizce kamp eylemini boşluklara yazınız. İlk satır örnektir.",
       "basliklar": [
         "Kamp Malzemesi (Equipment)",
         "Kamptaki Görevi (Purpose)",
@@ -48,7 +46,9 @@
         [
           "Tent (Çadır)",
           "Geceyi dış etkenlerden korunarak geçirmek",
-          "Pitch / set up a tent (Çadır kurmak)"
+          {
+            "b": "Pitch / set up a tent (Çadır kurmak)"
+          }
         ],
         [
           "Sleeping bag (Uyku tulumu)",
@@ -90,10 +90,6 @@
         [
           "Snob",
           "A person who thinks he or she is better than everyone else and looks down on others"
-        ],
-        [
-          "Trendy / Fashionable",
-          "Following the latest style and popular among teenagers right now"
         ]
       ]
     },
@@ -115,8 +111,7 @@
       "tur": "kisa",
       "duzey": "uygula",
       "sutun": "sol",
-      "gorsel_var": true,
-      "soru": "Görseldeki dil bilgisi dönüşüm kartında «I prefer pitching a tent by the lake to staying at a five-star hotel.» cümlesi verilmiştir. Bu cümleyi anlamını koruyarak {koyu:«would rather ... than ...»} kalıbıyla yeniden yazınız.",
+      "soru": "«I prefer pitching a tent by the lake to staying at a five-star hotel.» cümlesini anlamını koruyarak {koyu:«would rather ... than ...»} kalıbıyla yeniden yazınız.",
       "cevap": "«I would rather pitch a tent by the lake than stay at a five-star hotel.»",
       "satir": 2
     },
@@ -141,10 +136,6 @@
         {
           "metin": "«In my opinion», «To me» ve «I think» ifadeleri cümlenin başında kişisel görüş belirtmek için kullanılır.",
           "dogru": true
-        },
-        {
-          "metin": "«I can’t stand listening to opera.» diyen bir genç, opera dinlemeye bayıldığını ifade etmektedir.",
-          "dogru": false
         }
       ]
     },
@@ -166,8 +157,7 @@
       "tur": "siralama",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki «Doğa Kampı Günlüğü (Camping Routine)» akışına göre izci grubunun kamp alanına varıştan gece uykusuna kadar yaptığı eylemleri 1’den 4’e kadar kronolojik olarak sıralayınız.",
+      "soru": "Bir izci grubunun doğa kampı alanına varıştan gece uykusuna kadar yaptığı aşağıdaki eylemleri 1’den 4’e kadar kronolojik olarak sıralayınız.",
       "ogeler": [
         "Arrive at the campsite in the forest and find a flat, safe place to pitch the tents",
         "Go trekking on the mountain trail using a compass and collect dry wood for the evening",
@@ -236,10 +226,6 @@
         {
           "metin": "In my ___, biographical books are really impressive and realistic.",
           "cevap": "opinion"
-        },
-        {
-          "metin": "Don’t forget to take your ___ and map so we don’t get lost in the forest.",
-          "cevap": "compass"
         }
       ],
       "fazla": [
@@ -250,9 +236,8 @@
       "tur": "acik",
       "duzey": "ust",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki tercih ve görüş kartında müzik, spor ve kamp etkinlikleri verilmiştir. Kendi hafta sonu tercihlerinizi {koyu:«I prefer ... to ...»}, {koyu:«I would rather ... than ...»} ve bir görüş sıfatı ({koyu:terrific / unbearable vb.}) kullanarak iki İngilizce cümleyle yazınız.",
-      "cevap": "I prefer camping in nature to hanging out at malls. Also, I would rather listen to rock than pop.",
+      "soru": "Müzik, spor ve kamp etkinlikleriyle ilgili kendi hafta sonu tercihlerinizi {koyu:«I prefer ... to ...»}, {koyu:«I would rather ... than ...»} ve bir görüş sıfatı ({koyu:terrific / unbearable vb.}) kullanarak iki İngilizce cümleyle yazınız.",
+      "cevap": "I prefer camping in nature to going to malls. I would rather listen to terrific rock than pop.",
       "satir": 2
     }
   ]

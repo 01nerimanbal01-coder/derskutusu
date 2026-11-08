@@ -35,10 +35,6 @@
         [
           "{ar:الْمَتْحَفُ}",
           "Müze"
-        ],
-        [
-          "{ar:الْبُحَيْرَةُ}",
-          "Göl"
         ]
       ]
     },
@@ -58,21 +54,22 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Kartlardaki Arapça gezi cümlelerinin zamanını (Geçmiş zaman / Gelecek zaman) ve Türkçe anlamını yazarak tabloyu tamamlayınız.",
+      "soru": "Tablodaki Arapça gezi cümlelerinin zamanını (Geçmiş zaman / Gelecek zaman) ve Türkçe anlamını yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Gezi Cümlesi Kartı",
+        "Gezi Cümlesi",
         "Fiil Zamanı",
         "Türkçe Anlamı"
       ],
       "satirlar": [
         [
-          "1. Kart ({ar:ذَهَبْنَا إِلَى الْمَتْحَفِ بِالْحَافِلَةِ})",
+          "1. Cümle ({ar:ذَهَبْنَا إِلَى الْمَتْحَفِ بِالْحَافِلَةِ})",
           "Geçmiş zaman (Mâzî)",
-          "Otobüsle müzeye gittik."
+          {
+            "b": "Otobüsle müzeye gittik."
+          }
         ],
         [
-          "2. Kart ({ar:سَنُنَظِّمُ رِحْلَةً عِلْمِيَّةً غَدًا})",
+          "2. Cümle ({ar:سَنُنَظِّمُ رِحْلَةً عِلْمِيَّةً غَدًا})",
           {
             "b": "Gelecek zaman"
           },
@@ -81,7 +78,7 @@
           }
         ],
         [
-          "3. Kart ({ar:اِلْتَقَطْنَا صُوَرًا جَمِيلَةً فِي الْغَابَةِ})",
+          "3. Cümle ({ar:اِلْتَقَطْنَا صُوَرًا جَمِيلَةً فِي الْغَابَةِ})",
           {
             "b": "Geçmiş zaman (Mâzî)"
           },
@@ -124,10 +121,6 @@
         {
           "metin": "Doğa gezilerinde «{ar:النَّظَافَةُ مِنَ الإِيمَانِ}» hadisi gereğince piknik alanları temiz bırakılır.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:سَنَزُورُ الْمَتَاحِفَ}» cümlesindeki «{ar:سَـ}» eki eylemin geçmişte tamamlandığını gösterir.",
-          "dogru": false
         }
       ]
     },
@@ -161,10 +154,6 @@
         {
           "metin": "Arkadaşımıza geziye kiminle katıldığını sormak için «___ {ar:ذَهَبْتَ؟}» (Kiminle gittin?) kalıbını kullanırız.",
           "cevap": "{ar:مَعَ مَنْ}"
-        },
-        {
-          "metin": "Gezi sonunda «{ar:كَانَتِ الرِّحْلَةُ} ___ {ar:وَمُفِيدَةً!}» diyerek gezinin çok keyifli ve faydalı geçtiğini belirtiriz.",
-          "cevap": "{ar:مُمْتِعَةً}"
         }
       ],
       "fazla": [
@@ -174,15 +163,13 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Tefekkür ve çevre kartındaki «{ar:سُبْحَانَ اللَّهِ مَا أَجْمَلَ الطَّبِيعَةَ!}» ve «{ar:نُحَافِظُ عَلَى الْبِيئَةِ}» ifadelerinin Türkçe anlamlarını yazınız.",
+      "soru": "Doğa gezisinde kullanılan «{ar:سُبْحَانَ اللَّهِ مَا أَجْمَلَ الطَّبِيعَةَ!}» ve «{ar:نُحَافِظُ عَلَى الْبِيئَةِ}» ifadelerinin Türkçe anlamlarını yazınız.",
       "cevap": "1. İfade: ‘Sübhânallâh, doğa ne kadar güzel!’ (tefekkür); 2. İfade: ‘Çevreyi koruruz.’",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Sınıfça yapılan bir doğa ve müze gezisini anlatan aşağıdaki Arapça cümleleri oluş sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:رَكِبْنَا الْحَافِلَةَ صَبَاحًا مَعَ مُعَلِّمِنَا وَأَصْدِقَائِنَا.}",
@@ -253,8 +240,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Gezi özeti kartındaki ifadelerden yararlanarak sınıfça nereye gittiğinizi, ne gördüğünüzü ve gezinin nasıl geçtiğini anlatan Arapça bir cümle yazınız.",
+      "soru": "«{ar:ذَهَبْنَا إِلَى الْمَتْحَفِ}», «{ar:بِالْحَافِلَةِ}» ve «{ar:شَاهَدْنَا الآثَارَ التَّارِيخِيَّةَ}» ifadelerinden yararlanarak sınıfça nereye gittiğinizi ve ne gördüğünüzü anlatan Arapça bir cümle yazınız.",
       "cevap": "{ar:ذَهَبْنَا إِلَى الْمَتْحَفِ بِالْحَافِلَةِ وَشَاهَدْنَا الآثَارَ التَّارِيخِيَّةَ.}",
       "satir": 2
     }

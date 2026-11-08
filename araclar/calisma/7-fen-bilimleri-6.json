@@ -15,8 +15,7 @@
   "hatirla": [
     "Fiziksel anlamda yapılan iş (W = F · x), uygulanan kuvvet ve kuvvet doğrultusunda alınan yolla doğru orantılıdır; ikisi de iki katına çıkarsa iş dört katına çıkar.",
     "Deneyde bilerek değiştirilen etkene bağımsız değişken, buna bağlı olarak değişen sonuca bağımlı değişken, sabit tutulan etkene kontrol değişkeni denir.",
-    "Enerji, iş yapabilme yeteneğidir ve birimi iş gibi Joule (J)’dür; bir cisme yapılan iş kadar o cisme enerji aktarılır.",
-    "Hareket eden cisimler kinetik enerjiye, yüksekte bulunan veya sıkıştırılmış/gerilmiş esnek cisimler ise potansiyel enerjiye sahiptir."
+    "Enerji, iş yapabilme yeteneğidir ve birimi iş gibi Joule (J)’dür; bir cisme yapılan iş kadar o cisme enerji aktarılır."
   ],
   "sorular": [
     {
@@ -36,7 +35,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki günlük yaşam olaylarını inceleyerek iş yapan cismi, enerji kazanan cismi ve aktarılan enerji türünü tablodaki boşluklara yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen günlük yaşam olaylarını inceleyerek iş yapan cismi, enerji kazanan cismi ve aktarılan enerji türünü boşluklara yazınız. İlk satır örnektir.",
       "basliklar": [
         "Gerçekleşen Olay",
         "İş Yapan (Enerji Harcayan)",
@@ -46,7 +45,9 @@
         [
           "Futbolcunun duran topa vurması",
           "Futbolcunun ayağı",
-          "Top (Kinetik enerji)"
+          {
+            "b": "Top (Kinetik enerji)"
+          }
         ],
         [
           "Vincin yükü yukarı kaldırması",
@@ -87,10 +88,6 @@
         [
           "Kinetik enerji",
           "Akan su ve yuvarlanan top gibi cisimlerin hareketinden kaynaklanan enerji"
-        ],
-        [
-          "Potansiyel enerji",
-          "Yüksekteki vazo ve gerilmiş yay gibi cisimlerde depolanan enerji"
         ]
       ]
     },
@@ -111,9 +108,9 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki vinç, ağırlığı 400 Newton olan sandığı yerden 5 metre yüksekliğe sabit süratle çıkarıyor. Vincin yaptığı iş kaç Joule’dür ve sandık kaç Joule enerji kazanmıştır?",
-      "cevap": "İş = 400 N · 5 m = 2000 J. Yapılan iş kadar enerji aktarıldığı için kinetik enerji 2000 J artar.",
-      "satir": 2
+      "soru": "Bir vinç, ağırlığı 400 Newton olan sandığı düşey yukarı yönde yerden 5 metre yüksekliğe sabit süratle çıkarıyor. Vincin yaptığı fiziksel iş kaç Joule’dür ve sandık kaç Joule enerji kazanmıştır?",
+      "cevap": "İş = 400 N · 5 m = 2000 J. Yapılan iş kadar enerji aktarıldığı için sandık 2000 J potansiyel enerji kazanır.",
+      "satir": 3
     },
     {
       "tur": "dy",
@@ -135,10 +132,6 @@
         {
           "metin": "Ağır bir çantayı yerden kaldırmadan elinde sabit tutan öğrenci çantaya sürekli enerji aktarır.",
           "dogru": false
-        },
-        {
-          "metin": "Yüksekteki baraj gölünde biriken su ve sıkıştırılmış yay potansiyel enerjiye örnek gösterilir.",
-          "dogru": true
         }
       ]
     },
@@ -159,7 +152,7 @@
       "tur": "siralama",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki «Yapılan iş, alınan yolla doğru orantılıdır.» hipotezini sınamak isteyen bir öğrencinin izlemesi gereken deney adımlarını 1’den 4’e kadar sıralayınız.",
+      "soru": "«Yapılan fiziksel iş, alınan yolla doğru orantılıdır.» hipotezini sınamak isteyen bir öğrencinin izlemesi gereken deney adımlarını 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Özdeş kutuyu dinamometreye bağlayarak her denemede uygulanacak kuvveti 10 Newton değerinde sabit tutmak",
         "Kutuyu yatay zeminde sırasıyla 1 metre, 2 metre ve 3 metre çekerek alınan yolları metreyle ölçmek",
@@ -230,10 +223,6 @@
         {
           "metin": "Hareket hâlindeki cisimlerin hareketlerinden dolayı sahip olduğu enerjiye ___ enerji denir.",
           "cevap": "kinetik"
-        },
-        {
-          "metin": "Alınan yol sabitken uygulanan kuvvet üç katına çıkarılırsa yapılan iş ___ katına çıkar.",
-          "cevap": "üç"
         }
       ],
       "fazla": [
@@ -244,9 +233,9 @@
       "tur": "acik",
       "duzey": "ust",
       "gorsel_var": true,
-      "soru": "Görseldeki iki durumdan 1. durumda koli sabit tutulurken, 2. durumda koli üst rafa kaldırılıyor. Hangi durumda enerji harcandığı hâlde koli üzerinde fiziksel anlamda iş yapılmaz? Nedenini açıklayınız.",
+      "soru": "Bir depo çalışanı 1. durumda elindeki koliyi yer değiştirmeden havada sabit tutmakta, 2. durumda ise koliyi yukarı doğru kaldırarak üst rafa yerleştirmektedir. Hangi durumda enerji harcandığı hâlde koli üzerinde fiziksel anlamda iş yapılmaz? Nedenini açıklayınız.",
       "cevap": "1. durumda yol alınmadığı için iş yapılmaz; 2. durumda kuvvet yönünde yol alındığı için iş yapılır.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "coktan",

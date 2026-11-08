@@ -15,8 +15,7 @@
   "hatirla": [
     "Etkin dinleme; dinleme öncesi tahmin, dinleme sırasında anahtar kelime not alma ve sonrasında özetleme aşamalarından oluşur.",
     "Mülakat (görüşme), uzman konukla yapılan soru-cevapların yorumsuz aktarılmasıdır; röportaj ise yazarın gözlem ve izlenimlerini de içerir.",
-    "«Da/de, bile, yine, artık, sadece, ilk kez» gibi ifadelerden çıkarılan yan yargıya örtülü anlam denir.",
-    "Hedef bildiren cümleler amaç-sonuç, gerçekleşmiş gerekçe bildirenler sebep-sonuç, şarta bağlı olanlar koşul-sonuç cümlesidir."
+    "«Da/de, bile, yine, artık, sadece, ilk kez» gibi ifadelerden çıkarılan yan yargıya örtülü anlam denir."
   ],
   "sorular": [
     {
@@ -38,7 +37,7 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Görseldeki cümle kartlarını inceleyerek her cümlenin anlam ilişkisini (Amaç-Sonuç / Sebep-Sonuç / Koşul-Sonuç) ve cümledeki ipucu ifadeyi tablodaki boşluklara yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen cümleleri inceleyerek her cümlenin anlam ilişkisini (Amaç-Sonuç / Sebep-Sonuç / Koşul-Sonuç) ve cümledeki ipucu ifadeyi boşluklara yazınız. İlk satır örnektir.",
       "basliklar": [
         "Cümle Kartı",
         "Anlam İlişkisi Türü",
@@ -48,7 +47,9 @@
         [
           "1. Kart («Finale yükselmek için antrenman yapıyor.»)",
           "Amaç-sonuç cümlesi",
-          "için (amacıyla)"
+          {
+            "b": "için (amacıyla)"
+          }
         ],
         [
           "2. Kart («Nefesini kontrol ettiği için hedefi vurdu.»)",
@@ -92,10 +93,6 @@
         [
           "Göğsünü kabartmak",
           "Kazanılan üstün bir başarıyla çevresindekileri ve milletini gururlandırmak"
-        ],
-        [
-          "Terim anlamlı sözcük",
-          "Spor, bilim veya sanat dalına özgü kavramları karşılayan kelime (kondisyon, set, rekor)"
         ]
       ]
     },
@@ -118,7 +115,7 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Görseldeki mülakat hazırlık kartında bir öğrencinin milli okçuya sormak için yazdığı iki soru verilmiştir. Hangi soru nitelikli bir mülakat için daha uygundur? «Açık uçlu / kapalı uçlu soru» kavramlarıyla açıklayınız.",
+      "soru": "Bir öğrenci, milli okçuyla yapacağı mülakat için şu iki soruyu hazırlamıştır: 1. Soru: «Okçuluk sporunu seviyor musunuz?» — 2. Soru: «Atış anında hedefe nasıl odaklanıyorsunuz?» Bu sorulardan hangisi nitelikli bir mülakat için daha uygundur? «Açık uçlu / kapalı uçlu soru» kavramlarıyla açıklayınız.",
       "cevap": "1. soru kapalıdır; 2. soru ise deneyimleri anlatmaya imkân veren açık uçlu sorudur.",
       "satir": 2
     },
@@ -143,10 +140,6 @@
         {
           "metin": "«Taşı delen suyun gücü değil, damlaların sürekliliğidir.» özdeyişi başarıda istikrar ve sabrın önemini vurgular.",
           "dogru": true
-        },
-        {
-          "metin": "Cümledeki «için» edatının yerine «amacıyla» getirilebiliyorsa o cümle kesinlikle koşul-sonuç cümlesidir.",
-          "dogru": false
         }
       ]
     },
@@ -169,7 +162,7 @@
       "duzey": "uygula",
       "sutun": "sag",
       "gorsel_var": true,
-      "soru": "Görseldeki «Mülakat (Görüşme) Süreci Kılavuzu»na göre okul dergisi için başarılı bir bilim insanı veya sporcuyla mülakat yapacak öğrencinin izlemesi gereken adımları 1’den 4’e kadar sıralayınız.",
+      "soru": "Okul dergisi için başarılı bir bilim insanı veya sporcuyla mülakat (görüşme) yapacak bir öğrencinin izlemesi gereken hazırlık ve uygulama adımlarını 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Görüşülecek konuğun uzmanlık alanını, öz geçmişini ve başarılarını önceden araştırarak açık uçlu sorular hazırlamak",
         "Konuktan randevu alarak görüşme günü zamanında hazır bulunmak ve konuğa nezaketle kendini tanıtmak",
@@ -238,10 +231,6 @@
         {
           "metin": "«Sadece, bile, da/de, artık, yine» gibi sözcükler cümleye doğrudan söylenmeyen ___ anlam katar.",
           "cevap": "örtülü"
-        },
-        {
-          "metin": "Sporda ve ders çalışırken telefon, gürültü gibi dikkat dağıtıcıları kapatmak ___ becerisini güçlendirir.",
-          "cevap": "odaklanma"
         }
       ],
       "fazla": [
@@ -253,7 +242,7 @@
       "duzey": "ust",
       "sutun": "sag",
       "gorsel_var": true,
-      "soru": "Görseldeki hedef basamakları kartında «Başarılı olmak istiyorum.» dileği ile «Her gün 40 dakika düzenli kitap okuyup test çözeceğim.» hedefi karşılaştırılmıştır. Hedefe odaklanmada somut ve planlı olmanın önemini iki cümleyle açıklayınız.",
+      "soru": "«Başarılı olmak istiyorum.» şeklindeki belirsiz bir dilek ile «Her gün 40 dakika düzenli kitap okuyup test çözeceğim.» şeklindeki somut hedef karşılaştırıldığında, hedefe odaklanmada somut ve planlı olmanın önemini iki cümleyle açıklayınız.",
       "cevap": "Belirsiz dilekler ertelenir; somut ve ölçülebilir hedefler ise planlı çalışmayı sağlar.",
       "satir": 2
     }

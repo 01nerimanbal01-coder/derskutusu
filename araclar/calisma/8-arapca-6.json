@@ -35,10 +35,6 @@
         [
           "{ar:رِحْلَةٌ سِيَاحِيَّةٌ}",
           "Turistik gezi"
-        ],
-        [
-          "{ar:الْمَسْجِدُ التَّارِيخِيُّ}",
-          "Tarihî cami"
         ]
       ]
     },
@@ -58,10 +54,9 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Gezi planı kartlarındaki Arapça cümlelerde geçen sıralama bağlacını ve cümlenin Türkçe anlamını yazarak tabloyu tamamlayınız.",
+      "soru": "Tablodaki Arapça gezi cümlelerinde geçen sıralama bağlacını ve cümlenin Türkçe anlamını yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Gezi Aşaması Kartı",
+        "Gezi Aşaması",
         "Sıralama Bağlacı",
         "Türkçe Anlamı"
       ],
@@ -69,7 +64,9 @@
         [
           "1. Aşama ({ar:أَوَّلًا زُرْنَا مَسْجِدَ آيَا صُوفْيَا})",
           "{ar:أَوَّلًا} (İlk olarak)",
-          "İlk olarak Ayasofya Camii’ni ziyaret ettik."
+          {
+            "b": "İlk olarak Ayasofya Camii’ni ziyaret ettik."
+          }
         ],
         [
           "2. Aşama ({ar:ثُمَّ ذَهَبْنَا إِلَى قَصْرِ طُوبْ قَابِي})",
@@ -124,10 +121,6 @@
         {
           "metin": "«{ar:مَعَ}» (ma’a) zarfı 'ile birlikte / beraber' anlamına gelir ({ar:مَعَ أُسْرَتِي} = ailemle birlikte).",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:يَرْكَبُ الطَّائِرَةَ}» ifadesi 'Uçaktan iniyor', «{ar:يَنْزِلُ مِنَ الطَّائِرَةِ}» ise 'Uçağa biniyor' demektir.",
-          "dogru": false
         }
       ]
     },
@@ -161,10 +154,6 @@
         {
           "metin": "Turistik geziyi sevmesinin sebebini açıklayan öğrenci «{ar:أُحِبُّ الرِّحْلَةَ السِّيَاحِيَّةَ} ___ {ar:أُحِبُّ التَّارِيخَ}» der.",
           "cevap": "{ar:لِأَنَّنِي}"
-        },
-        {
-          "metin": "Sıralı gezi anlatımında «{ar:ثُمَّ}» bağlacından sonra «bundan sonra» anlamında «___» ifadesi getirilir.",
-          "cevap": "{ar:بَعْدَ ذٰلِكَ}"
         }
       ],
       "fazla": [
@@ -174,15 +163,13 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Bilet gişesi diyaloğundaki «{ar:كَمْ سِعْرُ التَّذْكِرَةِ؟}» ve «{ar:فِي أَمَانِ اللَّهِ}» ifadelerinin Türkçe anlamlarını yazınız.",
+      "soru": "Yolculuk öncesinde bilet gişesinde geçen «{ar:كَمْ سِعْرُ التَّذْكِرَةِ؟}» ve «{ar:فِي أَمَانِ اللَّهِ}» ifadelerinin Türkçe anlamlarını yazınız.",
       "cevap": "1. İfade: ‘Biletin fiyatı ne kadar?’; 2. İfade: ‘Allah’a emanet ol / Yolun açık olsun.’",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Yolculuk hazırlığından gezi dönüşüne kadar yapılan eylemleri oluş sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:أَوَّلًا حَضَّرْتُ حَقِيبَةَ السَّفَرِ وَاشْتَرَيْتُ التَّذْكِرَةَ.}",
@@ -258,8 +245,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Gezi programı kartındaki ipuçlarından yararlanarak «{ar:أَوَّلًا}», «{ar:ثُمَّ}» ve «{ar:وَأَخِيرًا}» bağlaçlarıyla gezi sıranızı anlatan Arapça bir cümle yazınız.",
+      "soru": "«{ar:زُرْنَا الْمَتْحَفَ}», «{ar:اِلْتَقَطْنَا الصُّوَرَ}» ve «{ar:رَجَعْنَا}» ifadelerini «{ar:أَوَّلًا}», «{ar:ثُمَّ}» ve «{ar:وَأَخِيرًا}» sıralama bağlaçlarıyla birleştirerek gezi sıranızı anlatan Arapça bir cümle yazınız.",
       "cevap": "{ar:أَوَّلًا زُرْنَا الْمُتْحَفَ، ثُمَّ الْتَقَطْنَا الصُّوَرَ، وَأَخِيرًا رَجَعْنَا.}",
       "satir": 2
     }

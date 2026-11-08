@@ -35,10 +35,6 @@
         [
           "{ar:مُحَامِيَةٌ}",
           "Kadın avukat"
-        ],
-        [
-          "{ar:عَالِمٌ}",
-          "Bilim insanı"
         ]
       ]
     },
@@ -59,7 +55,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki cümle kartlarında yer alan kişilerin meslek hayalini ve bu mesleği seçme gerekçesini Türkçe olarak tabloya yazınız.",
+      "soru": "Tabloda verilen kişilerin meslek hayalini ve bu mesleği seçme gerekçesini Türkçe olarak boşluklara yazınız. İlk satır örnektir.",
       "basliklar": [
         "Öğrenci Kartı",
         "Hayal Ettiği Meslek",
@@ -69,7 +65,9 @@
         [
           "1. Ben ({ar:طَيَّارًا / الطَّيَرَانَ})",
           "Pilot",
-          "Gökyüzünde uçmayı seviyorum."
+          {
+            "b": "Gökyüzünde uçmayı seviyorum."
+          }
         ],
         [
           "2. Selim ({ar:رَائِدَ فَضَاءٍ / الْفَضَاءَ})",
@@ -124,10 +122,6 @@
         {
           "metin": "«{ar:مَنْ جَدَّ وَجَدَ}» atasözü ciddiyetle çalışanın aradığını bulacağını ifade eder.",
           "dogru": true
-        },
-        {
-          "metin": "Üçüncü tekil erkek için «çünkü o» derken «{ar:لِأَنَّهَا}» ifadesi kullanılır.",
-          "dogru": false
         }
       ]
     },
@@ -161,10 +155,6 @@
         {
           "metin": "Vatanıma hizmet etmek için derken «___ {ar:أَخْدِمَ وَطَنِي}» amaç bağlacı kullanılır.",
           "cevap": "{ar:لِكَيْ}"
-        },
-        {
-          "metin": "Bilgisayar yazılımları geliştiren programcı mesleği Arapçada «___» kelimesiyle karşılanır.",
-          "cevap": "{ar:مُبَرْمِجٌ}"
         }
       ],
       "fazla": [
@@ -175,7 +165,7 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki iki bağlaç kartında yer alan «{ar:لِأَنَّنِي}» ve «{ar:لِكَيْ}» yapılarının cümleye kattığı anlamları kısaca yazınız.",
+      "soru": "«{ar:لِأَنَّنِي أُحِبُّ الطَّيَرَانَ}» ve «{ar:لِكَيْ أُعَالِجَ الْمَرْضَى}» cümlelerinde geçen «{ar:لِأَنَّنِي}» ile «{ar:لِكَيْ}» bağlaçlarının cümleye kattığı anlamları kısaca yazınız.",
       "cevap": "İlk ifade «çünkü ben...» anlamında sebep, ikinci ifade ise «...-mek için» anlamında amaç bildirir.",
       "satir": 2
     },
@@ -254,7 +244,7 @@
       "tur": "acik",
       "duzey": "ust",
       "gorsel_var": true,
-      "soru": "Görseldeki yapı taşlarını birleştirerek gelecekteki hayalinizin mazlumları savunmak için avukat olmak olduğunu anlatan Arapça cümleyi yazınız.",
+      "soru": "«{ar:حُلْمِي أَنْ أَكُونَ}», «{ar:مُحَامِيًا}» ve «{ar:لِكَيْ أُدَافِعَ عَنِ الْمَظْلُومِينَ}» ifadelerini birleştirerek gelecekteki hayalinizin mazlumları savunmak için avukat olmak olduğunu anlatan Arapça cümleyi yazınız.",
       "cevap": "{ar:حُلْمِي أَنْ أَكُونَ مُحَامِيًا لِكَيْ أُدَافِعَ عَنِ الْمَظْلُومِينَ.}",
       "satir": 2
     }

@@ -35,10 +35,6 @@
         [
           "{ar:الطَّبَّاخُ}",
           "{ar:فِي الْمَطْعَمِ} (Lokantada)"
-        ],
-        [
-          "{ar:الطَّيَّارُ}",
-          "{ar:فِي الْمَطَارِ} (Havaalanında)"
         ]
       ]
     },
@@ -59,7 +55,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki görev kartlarında yer alan cümlelerin hangi mesleğe ait olduğunu ve Türkçe anlamını yazarak tabloyu tamamlayınız.",
+      "soru": "Tabloda verilen Arapça ifadelerin hangi mesleğe ait olduğunu ve Türkçe anlamını yazarak boşlukları tamamlayınız. İlk satır örnektir.",
       "basliklar": [
         "Arapça Görev Kartı",
         "Meslek Adı",
@@ -69,7 +65,9 @@
         [
           "1. Kart ({ar:يُدَرِّسُ الطُّلَّابَ})",
           "Öğretmen ({ar:الْمُعَلِّمُ})",
-          "Öğrencilere ders anlatır."
+          {
+            "b": "Öğrencilere ders anlatır."
+          }
         ],
         [
           "2. Kart ({ar:يُعَالِجُ الْمَرْضَى})",
@@ -124,10 +122,6 @@
         {
           "metin": "«{ar:سَأَعْمَلُ فِي الْمُسْتَشْفَى}» cümlesi «Hastanede çalışacağım.» anlamında gelecek zaman bildirir.",
           "dogru": true
-        },
-        {
-          "metin": "Eril olan «{ar:صَيْدَلِيٌّ}» (eczacı) kelimesinin dişil biçimi «{ar:طَبَّاخَةٌ}» şeklindedir.",
-          "dogru": false
         }
       ]
     },
@@ -161,10 +155,6 @@
         {
           "metin": "«{ar:أُمِّي طَبِيبَةٌ، هِيَ} ___ {ar:فِي الْمُسْتَشْفَى}» cümlesinde boşluğa dişil «çalışıyor» fiili gelir.",
           "cevap": "{ar:تَعْمَلُ}"
-        },
-        {
-          "metin": "Yangını söndüren itfaiyeci için «___ {ar:يُطْفِئُ الْحَرِيقَ}» cümlesi kurulur.",
-          "cevap": "{ar:الْإِطْفَائِيُّ}"
         }
       ],
       "fazla": [
@@ -175,9 +165,9 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki iki meslek kartında yer alan «{ar:طَبِيبٌ - طَبِيبَةٌ}» ve «{ar:مُعَلِّمٌ - مُعَلِّمَةٌ}» kelimelerinin eril-dişil dönüşüm kuralını kısaca yazınız.",
+      "soru": "«{ar:طَبِيبٌ - طَبِيبَةٌ}» (erkek doktor - kadın doktor) ve «{ar:مُعَلِّمٌ - مُعَلِّمَةٌ}» (erkek öğretmen - kadın öğretmen) kelimelerindeki eril-dişil dönüşüm kuralını kısaca yazınız.",
       "cevap": "Eril (müzekker) meslek isminin sonuna yuvarlak te (tâ-i merbûta) eklendiğinde dişil biçimi elde edilir.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "siralama",
@@ -254,7 +244,7 @@
       "tur": "acik",
       "duzey": "ust",
       "gorsel_var": true,
-      "soru": "Görseldeki bilgi kartlarını kullanarak babanızın fabrikada çalışan bir mühendis olduğunu ve kendinizin gelecekte pilot olacağınızı anlatan Arapça cümleyi yazınız.",
+      "soru": "«{ar:أَبِي} / {ar:مُهَنْدِسٌ} / {ar:فِي الْمَصْنَعِ}» ve «{ar:أَنَا} / {ar:سَأَكُونُ طَيَّارًا}» ifadelerini kullanarak babanızın fabrikada çalışan bir mühendis olduğunu ve kendinizin gelecekte pilot olacağınızı anlatan Arapça cümleyi yazınız.",
       "cevap": "{ar:أَبِي مُهَنْدِسٌ فِي الْمَصْنَعِ، وَأَنَا سَأَكُونُ طَيَّارًا.}",
       "satir": 2
     }

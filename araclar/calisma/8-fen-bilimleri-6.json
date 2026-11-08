@@ -16,15 +16,13 @@
   "hatirla": [
     "Kalıtsal özelliklerin nesilden nesile aktarımını inceleyen bilim dalına kalıtım (genetik) denir; kurucusu çalışmaları için bezelye bitkisini seçen Gregor Mendel’dir.",
     "Bir karakteri kontrol eden ve biri anneden diğeri babadan gelen gen çiftine alel denir; aleller aynı ise saf (homozigot: AA, aa), farklı ise melez (heterozigot: Aa) döldür.",
-    "İki melez dölün (Aa × Aa) çaprazlanmasında genotip oranı %25 AA, %50 Aa, %25 aa olurken; fenotip oranı {kesir:3|4} (%75) baskın ve {kesir:1|4} (%25) çekinik olur.",
-    "İnsanda doğacak her bebeğin kız (XX) veya erkek (XY) olma olasılığı birbirinden bağımsız olarak {kesir:1|2} (%50) düzeyindedir ve cinsiyeti babadan gelen eşey kromozomu belirler."
+    "İki melez dölün (Aa × Aa) çaprazlanmasında genotip oranı %25 AA, %50 Aa, %25 aa olurken; fenotip oranı {kesir:3|4} (%75) baskın ve {kesir:1|4} (%25) çekinik olur."
   ],
   "sorular": [
     {
       "tur": "tablo",
       "duzey": "hatirla",
-      "gorsel_var": true,
-      "soru": "Görseldeki bezelye çiçek rengi (Mor: M, Beyaz: m) çaprazlama kartlarından yararlanarak oluşan döllerin genotip ve fenotip oranlarını tabloya yazınız. İlk satır örnektir.",
+      "soru": "Bezelyelerde çiçek rengi (Mor: M, Beyaz: m) çaprazlamaları sonucunda oluşan döllerin genotip ve fenotip oranlarını tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Çaprazlanan Ata Bireyler",
         "Oluşan Genotip Oranları",
@@ -34,7 +32,9 @@
         [
           "MM × mm",
           "%100 Mm (Melez döl)",
-          "%100 Mor çiçekli"
+          {
+            "b": "%100 Mor çiçekli"
+          }
         ],
         [
           "Mm × Mm",
@@ -94,18 +94,13 @@
         [
           "Genotip",
           "Canlının kromozomlarında taşıdığı genlerin tamamı, genetik yapısı"
-        ],
-        [
-          "Fenotip",
-          "Genetik yapı ve çevrenin etkisiyle ortaya çıkan dış görünüş özelliği"
         ]
       ]
     },
     {
       "tur": "dy",
       "duzey": "hatirla",
-      "gorsel_var": true,
-      "soru": "Görseldeki kalıtım bilgi panosuna göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
+      "soru": "Kalıtım ve çaprazlama kurallarıyla ilgili doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
       "ifadeler": [
         {
           "metin": "Etkisini dış görünüşte her durumda gösterebilen alel genlere baskın (dominant) gen denir ve büyük harfle gösterilir.",
@@ -122,10 +117,6 @@
         {
           "metin": "İki melez bireyin (Aa × Aa) çaprazlanmasından 3 çeşit genotip ve 2 çeşit fenotip oluşabilir.",
           "dogru": true
-        },
-        {
-          "metin": "Akraba evliliği bireylerin DNA dizilimini bozarak yoktan yeni bir mutasyon ve hastalık geni üretir.",
-          "dogru": false
         }
       ]
     },
@@ -146,10 +137,6 @@
         {
           "metin": "Kendisi sağlıklı göründüğü hâlde yapısında çekinik hastalık genini bulunduran (Aa) bireylere ___ denir.",
           "cevap": "taşıyıcı"
-        },
-        {
-          "metin": "Kan bağı olan kişiler arasında yapılan ___ evliliği, çekinik hastalık genlerinin bir araya gelme riskini artırır.",
-          "cevap": "akraba"
         }
       ],
       "fazla": [
@@ -173,8 +160,7 @@
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki Punnett karesi kılavuzundan yararlanarak iki melez bezelyenin (Mm × Mm) çaprazlanma ve yorumlanma adımlarını 1’den 4’e kadar sıralayınız.",
+      "soru": "İki melez bezelyenin (Mm × Mm) çaprazlanma ve yorumlanma adımlarını 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Ata bezelyelerin genotiplerinin (Mm ve Mm) belirlenip üreme hücrelerine gidebilecek M ve m alellerinin ayrılması",
         "Birinci bezelyenin her bir alelinin ikinci bezelyenin alelleriyle Punnett karesinde eşleştirilmesi",
@@ -185,8 +171,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki bahçede bulunan uzun boylu (baskın) bir bezelyenin saf döl (UU) mü yoksa melez döl (Uu) mü olduğunu kesin olarak anlamak için hangi bezelyeyle çaprazlanması gerektiğini ve sonuçların nasıl yorumlanacağını yazınız.",
+      "soru": "Bir bahçede bulunan uzun boylu (baskın) bir bezelyenin saf döl (UU) mü yoksa melez döl (Uu) mü olduğunu kesin olarak anlamak için hangi bezelyeyle (kısa boy: u çekinik) çaprazlanması gerektiğini ve sonuçların nasıl yorumlanacağını yazınız.",
       "cevap": "Kısa boylu (uu) ile çaprazlanır; kısa boylu döl oluşursa melez (Uu), oluşmazsa saf döldür (UU).",
       "satir": 2
     },
@@ -269,9 +254,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki aile kartında arka arkaya üç erkek çocuğu dünyaya gelen bir ailenin dördüncü çocuklarının kız olma olasılığı sorulmaktadır. Bu olasılığı kesirle yazarak önceki doğumların yeni olasılığı neden değiştirmediğini açıklayınız.",
-      "cevap": "Kısa boylu (uu) ile çaprazlanır; kısa boylu döl oluşursa melez (Uu), oluşmazsa saf baskındır (UU).",
+      "soru": "Arka arkaya üç erkek çocuğu dünyaya gelen bir ailenin dördüncü çocuklarının kız (XX) olma olasılığı kaçtır? Bu olasılığı kesirle yazarak önceki doğumların yeni olasılığı neden değiştirmediğini açıklayınız.",
+      "cevap": "Olasılık her doğumda {kesir:1|2}’dir; çünkü her doğum önceki doğumlardan bağımsız bir olaydır.",
       "satir": 2
     }
   ]

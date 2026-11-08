@@ -1,148 +1,76 @@
-"""7. sınıf Türkçe 5. hafta (Sen Sor O Yanıtlasın — Sporda ve Yaşamda Hedefe Odaklan, Mülakat ve Anlam İlişkileri) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 12 pt Noto Sans (K150 EK)."""
+"""7-turkce-5 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea'
-ALTIN, KAHVE, YESIL_K, GRI, KUM = '#c9a227', '#8a5a2b', '#0f6b45', '#9aa6bd', '#fffdf5'
-YAZI = 'font-family="Noto Sans, sans-serif" font-size="12" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-size="12" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=12):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def mulakat_roportaj_karsilastirma():
-    """Soru 1: Mülakat ve röportaj tür karşılaştırma kartları."""
-    ic = kutu(4, 4, 172, 88, MAVI_A, MAVI, 8, 1.4)
-    ic += yazi(90, 22, 'Mülakat (Görüşme)', MAVI)
-    ic += yazi(90, 44, '• Uzman konukla soru-cevap', LAC, 'middle', True)
-    ic += yazi(90, 63, '• Yorum katmadan aktarım', LAC, 'middle', True)
-    ic += yazi(90, 81, '• Nesnel ve doğrudan bilgi', MAVI)
-
-    ic += kutu(184, 4, 172, 88, TUR_A, TUR, 8, 1.4)
-    ic += yazi(270, 22, 'Röportaj', TUR)
-    ic += yazi(270, 44, '• Soru-cevap + Araştırma', LAC, 'middle', True)
-    ic += yazi(270, 63, '• Yazarın gözlem ve izlenimi', LAC, 'middle', True)
-    ic += yazi(270, 81, '• Mekân betimlemesi ve fotoğraf', TUR)
-    return svg(360, 96, ic, 'Mülakat ile röportaj türlerinin özelliklerini karşılaştıran kartlar.', 12)
-
-
-def anlam_iliskileri_kartlari():
-    """Soru 2: Amaç-sonuç, sebep-sonuç ve koşul-sonuç kartları."""
-    kartlar = [
-        ('1. Kart · Hedef', '«...finale yükselmek için...»', MAVI, MAVI_A),
-        ('2. Kart · Gerekçe', '«...doğru yaptığı için vurdu.»', YES, YES_A),
-        ('3. Kart · Şart', '«...uzaklaştırırsan odaklanırsın.»', TUR, TUR_A),
-        ('4. Kart · Hedef', '«...artırmak üzere görüştü.»', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 46
-        ic += kutu(x, y, 172, 42, z, r, 7, 1.3)
-        ic += yazi(x + 86, y + 17, bas, r)
-        ic += yazi(x + 86, y + 35, alt, LAC, 'middle', True)
-    return svg(360, 98, ic, 'Amaç, sebep ve koşul ilişkisi içeren dört cümle kartı.', 12)
-
-
-def ortulu_anlam_haber_panosu():
-    """Soru 4: Örtülü anlam içeren ve içermeyen 4 spor haberi."""
-    ic = kutu(4, 4, 352, 88, KUM, ALTIN, 8, 1.4)
-    ic += yazi(180, 20, 'Spor Bülteni · Örtülü Anlam İnceleme Panosu', KAHVE)
-    haberler = [
-        ('1. Haber', '«...bu sezon DA kupayı kaldırdı.»', MAVI, MAVI_A, 10, 28),
-        ('2. Haber', '«...ARTIK odaklanma egzersizi yapıyor.»', TUR, TUR_A, 184, 28),
-        ('3. Haber', '«...çizelgeyi sabahleyin panoya astı.»', YES, YES_A, 10, 58),
-        ('4. Haber', '«...YALNIZCA Kaan tam puan aldı.»', MOR, MOR_A, 184, 58),
-    ]
-    for bas, alt, r, z, x, y in haberler:
-        ic += kutu(x, y, 166, 26, z, r, 6, 1.2)
-        ic += yazi(x + 83, y + 17, f'{bas}: {alt}', LAC, 'middle', True)
-    return svg(360, 96, ic, 'Dört spor haberinde örtülü anlam ipuçlarını gösteren pano.', 12)
-
-
-def acik_ve_kapali_uclu_soru_karti():
-    """Soru 5: Kapalı uçlu ve açık uçlu mülakat sorusu karşılaştırması."""
-    ic = kutu(4, 4, 352, 86, MAVI_A, MAVI, 8, 1.4)
-    ic += yazi(180, 20, 'Mülakat Sorusu Hazırlık Kartı · Konuk: Milli Okçu', MAVI)
-    ic += kutu(12, 28, 162, 52, KIR_A, KIR, 6, 1.2)
-    ic += yazi(93, 46, '1. Soru (Kapalı Uçlu)', KIR)
-    ic += yazi(93, 66, '«Okçuluk sporunu seviyor musunuz?»', LAC, 'middle', True)
-    ic += kutu(186, 28, 162, 52, YES_A, YES, 6, 1.2)
-    ic += yazi(267, 46, '2. Soru (Açık Uçlu)', YESIL_K)
-    ic += yazi(267, 66, '«Atış anında nasıl odaklanıyorsunuz?»', LAC, 'middle', True)
-    return svg(360, 94, ic, 'Kapalı uçlu ve açık uçlu mülakat sorularının karşılaştırması.', 12)
-
-
-def soylesi_ana_dusunce_karti():
-    """Soru 7: Sen Sor O Yanıtlasın söyleşi parçası."""
-    ic = kutu(4, 4, 352, 88, KIR_A, KIR, 8, 1.4)
-    ic += yazi(180, 20, '«Sen Sor O Yanıtlasın» · Milli Sporcunun Yanıtı', KIR)
-    ic += kutu(14, 28, 332, 54, '#fff', KIR, 6, 1.2)
-    ic += yazi(180, 47, '«Yetenek tek başına yetmez; gerçek başarı net bir hedefe', LAC, 'middle', True)
-    ic += yazi(180, 67, 'kilitlenmek, disiplinle çalışmak ve pes etmemekle gelir.»', KIR)
-    return svg(360, 96, ic, 'Milli sporcunun başarıda odaklanma ve disiplin vurgusu yaptığı söyleşi kartı.', 12)
-
-
-def mulakat_sureci_adimlari():
-    """Soru 8: 4 aşamalı mülakat uygulama kılavuzu."""
-    adimlar = [
-        ('1. Hazırlık', 'Araştır & soru yaz', MAVI, MAVI_A, 6),
-        ('2. Randevu', 'Zamanında buluş', TUR, TUR_A, 94),
-        ('3. Görüşme', 'Dinle & kaydet', MOR, MOR_A, 182),
-        ('4. Yayım', 'Yorumsuz aktar', YES, YES_A, 270),
-    ]
-    ic = ''
-    for bas, alt, r, z, x in adimlar:
-        ic += kutu(x, 6, 84, 74, z, r, 7, 1.4)
-        ic += yazi(x + 42, 30, bas, r)
-        ic += yazi(x + 42, 58, alt, LAC, 'middle', True)
-    return svg(360, 86, ic, 'Mülakat öncesinden yayımına kadar dört aşamalı süreç şeması.', 12)
-
-
-def soz_varligi_anlam_kartlari():
-    """Soru 9: Deyim, gerçek ve terim anlam kartları."""
-    ic = kutu(4, 4, 352, 88, YES_A, YES, 8, 1.4)
-    ic += yazi(180, 20, 'Metindeki Söz Varlığı · Deyim, Gerçek ve Terim Anlam', YESIL_K)
-    satirlar = [
-        ('1. Cümle: «Madalya için aylarca ter döktü.» (Deyim / Mecaz)', MAVI, 28),
-        ('2. Cümle: «Yayını gerip 70 metredeki hedef tahtasına baktı.» (Gerçek)', TUR, 56),
-    ]
-    for metin, r, y in satirlar:
-        ic += kutu(14, y, 332, 24, '#fff', r, 5, 1.2)
-        ic += yazi(180, y + 16, metin, LAC, 'middle', True)
-    return svg(360, 96, ic, 'Ter dökmek deyimi ile hedef tahtası kullanımını gösteren cümle kartı.', 12)
-
-
-def somut_hedef_karsilastirma():
-    """Soru 12: Belirsiz dilek ile somut ve ölçülebilir hedef karşılaştırması."""
-    ic = kutu(4, 4, 352, 86, MOR_A, MOR, 8, 1.4)
-    ic += yazi(180, 20, 'Hedefe Odaklanmada Somut Planlama İlkeleri', MOR)
-    ic += kutu(12, 28, 162, 52, '#fff', KIR, 6, 1.2)
-    ic += yazi(93, 46, 'Belirsiz Dilek (✗)', KIR)
-    ic += yazi(93, 66, '«Başarılı olmak istiyorum.»', LAC, 'middle', True)
-    ic += kutu(186, 28, 162, 52, '#fff', YES, 6, 1.2)
-    ic += yazi(267, 46, 'Somut ve Ölçülebilir Hedef (✓)', YESIL_K)
-    ic += yazi(267, 66, '«Her gün 40 dk düzenli çalışma»', LAC, 'middle', True)
-    return svg(360, 94, ic, 'Belirsiz dilek ile somut ve ölçülebilir hedef arasındaki fark kartı.', 12)
+GORSELLER = {0: '<svg viewBox="0 0 350 168" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mülakat ile röportaj '
+    'türlerinin özelliklerini karşılaştıran kartlar."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Mülakat (Görüşme)</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Uzman konukla soru-cevap</text><text x="11.0" y="57.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Yorum katmadan '
+    'aktarım</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">• Nesnel ve doğrudan bilgi</text><rect x="4" y="86" width="342" height="80" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Röportaj</text><text x="11.0" y="121.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">• Soru-cevap + Araştırma</text><text x="11.0" y="140.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Yazarın gözlem ve izlenimi</text><text '
+    'x="11.0" y="158.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">• '
+    'Mekân betimlemesi ve fotoğraf</text></svg>',
+ 3: '<svg viewBox="0 0 350 212" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört spor haberinde '
+    'örtülü anlam inceleme panosu."><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Haber</text><text x="87.5" y="49.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">«Okul yüzme</text><text x="87.5" y="67.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">takımımız bu sezon</text><text x="87.5" y="85.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">da kupayı '
+    'kaldırdı.»</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="262.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. '
+    'Haber</text><text x="262.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">«Genç atlet artık</text><text x="262.5" y="58.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">yarışmalardan önce</text><text x="262.5" y="76.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">odaklanma egzersizi</text><text x="262.5" '
+    'y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">yapıyor.»</text><rect x="4" y="108" width="167" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="126.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Haber</text><text x="87.5" y="144.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">«Antrenörümüz</text><text x="87.5" y="163.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">haftalık çizelgeyi</text><text x="87.5" '
+    'y="181.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">sabahleyin '
+    'panoya</text><text x="87.5" y="200.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">astı.»</text><rect x="179" y="108" width="167" height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="126.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Haber</text><text x="262.5" y="144.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">«Seçmelerde</text><text x="262.5" y="163.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yalnızca Kaan bütün</text><text x="262.5" '
+    'y="181.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">engelleri '
+    'hatasız</text><text x="262.5" y="200.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">geçti.»</text></svg>',
+ 6: '<svg viewBox="0 0 350 104" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Milli sporcunun başarıda '
+    'odaklanma ve disiplin vurgusu yaptığı söyleşi kartı."><rect x="4" y="3" width="342" height="99" rx="5" fill="#fdeaea" '
+    'stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d63a3a">«Sen Sor O Yanıtlasın» · Milli Sporcunun</text><text x="11.0" y="38.9" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Yanıtı</text><text '
+    'x="11.0" y="57.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">«Yetenek tek başına yetmez; gerçek başarı</text><text x="11.0" y="75.7" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">net bir hedefe kilitlenmek, disiplinle çalışmak</text><text x="11.0" '
+    'y="94.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ve pes etmemekle '
+    'gelir.»</text></svg>',
+ 8: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hedef, ter, kondisyon ve '
+    'set sözcüklerinin kullanıldığı cümleler."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Cümle: «Milli sporcu altın madalya</text><text x="11.0" y="38.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">kazanmak için aylarca ter döktü.»</text><rect '
+    'x="4" y="49" width="342" height="62" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="66.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. Cümle: «Genç okçu '
+    'yayını gerip 70</text><text x="11.0" y="84.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">metredeki okçuluk hedefine dikkatle</text><text x="11.0" y="103.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">baktı.»</text><rect x="4" y="114" width="342" '
+    'height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="131.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Cümle: «Takımımız yüksek '
+    'kondisyonu</text><text x="11.0" y="149.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">sayesinde maçın son setini kazandı.»</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = mulakat_roportaj_karsilastirma()
-    s[1]['gorsel'] = anlam_iliskileri_kartlari()
-    s[3]['gorsel'] = ortulu_anlam_haber_panosu()
-    s[4]['gorsel'] = acik_ve_kapali_uclu_soru_karti()
-    s[6]['gorsel'] = soylesi_ana_dusunce_karti()
-    s[7]['gorsel'] = mulakat_sureci_adimlari()
-    s[8]['gorsel'] = soz_varligi_anlam_kartlari()
-    s[11]['gorsel'] = somut_hedef_karsilastirma()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

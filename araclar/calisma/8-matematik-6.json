@@ -15,15 +15,13 @@
   "hatirla": [
     "Pozitif bir tam sayının kendisiyle çarpımına tam kare sayı denir (1, 4, 9, 16, 25, …); asal çarpanlarının üsleri çift olan sayılar tam karedir.",
     "Karekök almak, sayıyı karesi olarak veren pozitif tam sayıyı bulmaktır: {kok:64} = {kok:{us:8|2}} = 8. Önce kök içi işlem yapılır, sonra karekök alınır.",
-    "Negatif sayıların karekökü tam sayı değildir. Karesel bölgenin bir kenarı alanın kareköküne, çevresi ise bir kenarın 4 katına eşittir.",
-    "Tam kare olmayan doğal sayının karekökü, onu sınırlayan ardışık iki tam karenin karekökleri arasındadır; hangi tam kareye yakınsa o doğal sayıya yakındır."
+    "Negatif sayıların karekökü tam sayı değildir. Karesel bölgenin bir kenarı alanın kareköküne, çevresi ise bir kenarın 4 katına eşittir."
   ],
   "sorular": [
     {
       "tur": "tablo",
       "duzey": "hatirla",
-      "gorsel_var": true,
-      "soru": "Görseldeki kare modellerinden yararlanarak tablodaki karesel bölgelerin kenar ve çevre uzunluğunu yazınız. İlk satır örnektir.",
+      "soru": "Alanları verilen tablodaki karesel bölgelerin kenar ve çevre uzunluğunu yazınız. İlk satır örnektir.",
       "basliklar": [
         "Karesel Bölgenin Alanı",
         "Kenar Uzunluğu",
@@ -31,12 +29,12 @@
       ],
       "satirlar": [
         [
-          "64 cm²",
+          "64 cm{us:|2}",
           "{kok:64} = 8 cm",
           "4 · 8 = 32 cm"
         ],
         [
-          "121 cm²",
+          "121 cm{us:|2}",
           {
             "b": "{kok:121} = 11 cm"
           },
@@ -45,7 +43,7 @@
           }
         ],
         [
-          "196 cm²",
+          "196 cm{us:|2}",
           {
             "b": "{kok:196} = 14 cm"
           },
@@ -54,7 +52,7 @@
           }
         ],
         [
-          "289 cm²",
+          "289 cm{us:|2}",
           {
             "b": "{kok:289} = 17 cm"
           },
@@ -93,22 +91,13 @@
         [
           "{kok:75}",
           "8 ile 9 arasında"
-        ],
-        [
-          "{kok:114}",
-          "10 ile 11 arasında"
-        ],
-        [
-          "{kok:180}",
-          "13 ile 14 arasında"
         ]
       ]
     },
     {
       "tur": "dy",
       "duzey": "hatirla",
-      "gorsel_var": true,
-      "soru": "Görseldeki bilgi kartlarına göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
+      "soru": "Tam kare sayılar ve kareköklü ifadelerle ilgili doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
       "ifadeler": [
         {
           "metin": "Karesi 196 olan iki tam sayı vardır (14 ve −14); ancak {kok:196} ifadesinin değeri 14’tür.",
@@ -125,10 +114,6 @@
         {
           "metin": "Hiçbir tam sayının karesi negatif olamayacağından −81’in karekökü tam sayı değildir.",
           "dogru": true
-        },
-        {
-          "metin": "{kok:52} sayısı 49 tam karesine 64’ten daha yakın olduğu için 8’e daha yakındır.",
-          "dogru": false
         }
       ]
     },
@@ -149,14 +134,6 @@
         {
           "metin": "Asal çarpanlarının tüm üsleri ___ olan sayılar tam karedir.",
           "cevap": "çift"
-        },
-        {
-          "metin": "Alanı verilen karenin çevresi, bir kenar uzunluğunun ___ katıdır.",
-          "cevap": "dört"
-        },
-        {
-          "metin": "Tam kare olmayan kökler ardışık iki ___ sayı arasındadır.",
-          "cevap": "doğal"
         }
       ],
       "fazla": [
@@ -191,16 +168,15 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki sayı doğrusunda verilen {kok:70} ve {kok:77} sayılarından hangisi 8’e, hangisi 9’a daha yakındır? Açıklayınız.",
-      "cevap": "70 − 64 = 6 olduğundan {kok:70} sayısı 8’e; 81 − 77 = 4 olduğundan {kok:77} sayısı 9’a yakındır.",
-      "satir": 2
+      "soru": "Sayı doğrusunda 8 ({kok:64}) ile 9 ({kok:81}) arasında yer alan {kok:70} ve {kok:77} sayılarından hangisi 8’e, hangisi 9’a daha yakındır? Açıklayınız.",
+      "cevap": "70 − 64 = 6 olduğundan {kok:70} sayısı 8’e; 81 − 77 = 4 olduğundan {kok:77} ise 9’a yakındır.",
+      "satir": 3
     },
     {
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görselde yan yana dizilmiş K (81 cm²), L (144 cm²) ve M (225 cm²) karelerinin alt kenarını oluşturan |AB| uzunluğu kaç cm’dir?",
+      "soru": "Görselde yan yana dizilmiş K (81 cm{us:|2}), L (144 cm{us:|2}) ve M (225 cm{us:|2}) karelerinin alt kenarını oluşturan |AB| uzunluğu kaç cm’dir?",
       "secenekler": [
         "32",
         "36",
@@ -225,10 +201,9 @@
     {
       "tur": "kisa",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki karesel kartonun alanı doğal sayıdır ve bir kenarı 8 cm ile 9 cm arasındadır. Alanı en az ve en çok kaç cm² olabilir?",
-      "cevap": "64 < Alan < 81 olduğundan kartonun alanı en az 65 cm², en çok 80 cm² olabilir.",
-      "satir": 2
+      "soru": "Alanı santimetrekare cinsinden doğal sayı olan karesel bir bölgenin bir kenar uzunluğu 8 cm ile 9 cm arasındadır. Buna göre bu bölgenin alanı en az ve en çok kaç cm{us:|2} olabilir?",
+      "cevap": "64 < Alan < 81 olduğundan kartonun alanı en az 65 cm{us:|2}, en çok 80 cm{us:|2} olabilir.",
+      "satir": 3
     },
     {
       "tur": "sifre",
@@ -278,10 +253,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki kartta verilen 540 sayısının neden tam kare olmadığını ve tam kare olması için en az kaçla çarpılacağını yazınız.",
+      "soru": "Asal çarpanlarının çarpımı 540 = {us:2|2} · {us:3|3} · {us:5|1} olan 540 sayısının neden tam kare olmadığını ve tam kare olması için en az kaçla çarpılacağını yazınız.",
       "cevap": "3 ve 5’in üsleri tek olduğundan tam kare değildir; en az 3 · 5 = 15 ile çarpılmalıdır.",
-      "satir": 2
+      "satir": 3
     }
   ]
 }

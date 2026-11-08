@@ -10,8 +10,7 @@
   "hatirla": [
     "Bilimsel gösterim a · {us:10|n} biçimindedir; burada 1 ≤ |a| < 10 ve n bir tam sayıdır.",
     "Büyük sayılarda virgül sola kaydırılır; kaydırılan basamak sayısı 10'un pozitif üssü olur.",
-    "0 ile 1 arasındaki sayılarda virgül sağa kaydırılır; kaydırılan basamak sayısı 10'un negatif üssü olur.",
-    "Karşılaştırmada önce 10'un üslerine, üsler eşitse katsayılara bakılır. Katsayı 10 kat küçültülürse üs 1 artırılır."
+    "0 ile 1 arasındaki sayılarda virgül sağa kaydırılır; kaydırılan basamak sayısı 10'un negatif üssü olur."
   ],
   "sorular": [
     {
@@ -30,22 +29,14 @@
         [
           "92 000 000 000",
           "9,2 · {us:10|10}"
-        ],
-        [
-          "0,07",
-          "7 · {us:10|−2}"
-        ],
-        [
-          "30 500",
-          "3,05 · {us:10|4}"
         ]
       ]
     },
     {
       "tur": "kisa",
       "duzey": "hatirla",
-      "soru": "Görseldeki bilgi kartlarında üç büyüklük verilmiştir. Her birini birimiyle birlikte bilimsel gösterimle yazınız.",
-      "cevap": "Işık: 3 · {us:10|5} km; yaprak: 1 · {us:10|−4} m; yüzölçümü: 7,836 · {us:10|5} km².",
+      "soru": "Işığın 1 saniyede aldığı yol yaklaşık 300 000 km, bir kâğıt yaprağının kalınlığı yaklaşık 0,0001 m ve Türkiye’nin yüzölçümü yaklaşık 783 600 km{us:|2}’dir. Bu üç büyüklüğü birimiyle birlikte bilimsel gösterimle yazınız.",
+      "cevap": "Işık: 3 · {us:10|5} km; yaprak: 1 · {us:10|−4} m; yüzölçümü: 7,836 · {us:10|5} km{us:|2}.",
       "satir": 3
     },
     {
@@ -68,10 +59,6 @@
         {
           "metin": "Katsayıdaki virgül bir basamak sağa kaydırılırsa eşitliğin bozulmaması için 10'un üssü 1 artırılır.",
           "dogru": false
-        },
-        {
-          "metin": "{us:10|0} = 1 olduğundan 7 sayısı 7 · {us:10|0} biçiminde yazılabilir.",
-          "dogru": true
         }
       ]
     },
@@ -88,7 +75,9 @@
         [
           "5 800 000",
           "6 basamak sola",
-          "5,8 · {us:10|6}"
+          {
+            "b": "5,8 · {us:10|6}"
+          }
         ],
         [
           "0,000 034",
@@ -136,14 +125,6 @@
         {
           "metin": "0 ile 1 arasındaki sayılar bilimsel gösterimle yazılırken 10'un üssü ___ olur.",
           "cevap": "negatif"
-        },
-        {
-          "metin": "Bilimsel gösterimle yazılmış iki pozitif sayıdan 10'un üssü büyük olan sayı daha ___.",
-          "cevap": "büyüktür"
-        },
-        {
-          "metin": "Katsayı 10 kat büyütülürse eşitliğin bozulmaması için 10'un üssü 1 ___.",
-          "cevap": "azaltılır"
         }
       ],
       "fazla": [
@@ -160,13 +141,14 @@
         "36 · {us:10|12}",
         "3,6 · {us:10|13}"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Deniz, defterine dört sayıyı bilimsel gösterimle görseldeki gibi yazmıştır. Deniz hangi satırlarda hata yapmıştır? Hatalı satırların doğrusunu yazınız.",
-      "cevap": "2. ve 3. satırlar hatalıdır. Doğrusu: 0,000 46 = 4,6 · {us:10|−4} ve 81 300 000 = 8,13 · {us:10|7}.",
+      "soru": "Deniz, defterine dört eşitliği şu şekilde yazmıştır: (1) 270 000 = 2,7 · {us:10|5}, (2) 0,000 46 = 4,6 · {us:10|−5}, (3) 81 300 000 = 81,3 · {us:10|6}, (4) 0,009 = 9 · {us:10|−3}. Deniz hangi satırlarda hata yapmıştır? Hatalı satırların doğrusunu yazınız.",
+      "cevap": "2 ve 3 hatalıdır. Doğrusu: 0,000 46 = 4,6 · {us:10|−4} ve 81 300 000 = 8,13 · {us:10|7}.",
       "satir": 3
     },
     {
@@ -182,7 +164,9 @@
         [
           "0,36 · {us:10|8}",
           "1 azalır",
-          "3,6 · {us:10|7}"
+          {
+            "b": "3,6 · {us:10|7}"
+          }
         ],
         [
           "2700 · {us:10|−9}",
@@ -223,7 +207,8 @@
         "C deposunda",
         "D deposunda"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "siralama",
@@ -240,9 +225,9 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Bir saç telinin kalınlığı büyüteçle görseldeki gibi ölçülmüştür. 1 mm = {us:10|−3} m olduğuna göre saç telinin kalınlığını metre cinsinden bilimsel gösterimle yazınız.",
+      "soru": "Bir saç telinin kalınlığı hassas ölçüm aracıyla 0,08 mm olarak ölçülmüştür. 1 mm = {us:10|−3} m olduğuna göre saç telinin kalınlığını metre cinsinden bilimsel gösterimle yazınız.",
       "cevap": "0,08 mm = 0,000 08 m. Virgül 5 basamak sağa kayar: kalınlık 8 · {us:10|−5} m'dir.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "coktan",
@@ -254,20 +239,21 @@
         "1 · {us:10|6}",
         "1 · {us:10|7}"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki her kasanın şifresi, kasanın üzerinde bilimsel gösterimle yazılmış doğal sayının basamak sayısıdır. Kasaların şifrelerini bulunuz. Basamak sayısını 10'un üssünden nasıl bulduğunuzu açıklayınız.",
+      "soru": "Üç kasanın üzerinde sırasıyla 5,03 · {us:10|6}, 1,2 · {us:10|11} ve 9 · {us:10|8} doğal sayıları yazılıdır. Her kasanın şifresi, üzerindeki doğal sayının basamak sayısı olduğuna göre kasaların şifrelerini bulunuz ve basamak sayısını 10’un üssünden nasıl bulduğunuzu açıklayınız.",
       "cevap": "a · {us:10|n} (1 ≤ a < 10) biçimindeki doğal sayı n + 1 basamaklıdır. Şifreler: 7, 12 ve 9.",
       "satir": 3
     },
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki kartlarda üç sayı soldan sağa küçükten büyüğe doğru sıralanmıştır. Ortadaki sayının bir rakamı silinmiştir (■). ■ yerine gelebilecek rakamları bulunuz.",
-      "cevap": "0,000 038 = 3,8 · {us:10|−5}. Üsler eşit olduğundan katsayılar karşılaştırılır: 3,4 < 3,■ < 3,8. ■ yerine 5, 6 ya da 7 gelebilir.",
+      "soru": "Küçükten büyüğe doğru sıralanan 3,4 · {us:10|−5} < 3,■ · {us:10|−5} < 0,000 038 eşitsizliğinde ortadaki sayının bir rakamı silinmiştir (■). Buna göre ■ yerine gelebilecek rakamları bulunuz.",
+      "cevap": "0,000 038 = 3,8 · {us:10|−5} olduğundan 3,4 < 3,■ < 3,8 olur; ■ yerine 5, 6 veya 7 gelir.",
       "satir": 3
     }
   ],

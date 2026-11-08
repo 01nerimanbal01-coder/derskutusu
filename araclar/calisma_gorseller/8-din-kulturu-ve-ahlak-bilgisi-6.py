@@ -1,152 +1,63 @@
-"""8. sınıf Din Kültürü ve Ahlak Bilgisi 6. hafta (Bir Peygamber Tanıyorum: Hz. Musa (a.s.)) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı font-size="12" Noto Sans; eğik kesir yok (K155)."""
+"""8-din-kulturu-ve-ahlak-bilgisi-6 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-GRI, GRI_A, KUM = '#9aa6bd', '#eef1f6', '#fffdf5'
-YAZI = 'font-family="Noto Sans, sans-serif" font-size="12" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-size="12" font-weight="400"'
-
-
-def svg(w, h, ic, etiket, en_fazla=22):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def mekan_olay_semasi():
-    kartlar = [
-        ('Nil ve Saray', 'Sandıkla Nil’e', 'Hz. Asiye himayesi', MAVI, MAVI_A, 6),
-        ('Medyen Kuyusu', 'İki kıza yardım', 'Hz. Şuayb ile bağ', YES, YES_A, 152),
-        ('Tûr Dağı', 'Tuvâ Vadisi vahyi', 'Hz. Harun desteği', TUR, TUR_A, 298),
-        ('Kızıldeniz', 'Asâ ile 12 yol', 'Tevekkül zaferi', MOR, MOR_A, 444),
-    ]
-    ic = ''
-    for bas, s1, s2, r, z, x in kartlar:
-        cx = x + 70
-        ic += kutu(x, 6, 140, 86, z, r, 8, 1.3)
-        ic += yazi(cx, 26, bas, r)
-        ic += f'<line x1="{x + 12}" y1="34" x2="{x + 128}" y2="34" stroke="{r}" stroke-width="1"/>'
-        ic += yazi(cx, 56, s1, LAC, 'middle', True)
-        ic += yazi(cx, 76, s2, LAC, 'middle', True)
-    return svg(590, 98, ic, 'Hz. Musa hayatındaki dört temel mekân ve olay şeması.', 22)
-
-
-def kader_saray_sureci():
-    ic = kutu(6, 6, 282, 86, KIR_A, KIR, 8, 1.3)
-    ic += yazi(147, 26, 'Firavun’un Aldığı Tedbir', KIR)
-    ic += yazi(147, 50, 'Saltanatını koruma hırsıyla', LAC, 'middle', True)
-    ic += yazi(147, 72, 'doğan erkek bebekleri öldürttü.', LAC, 'middle', True)
-
-    ic += kutu(302, 6, 282, 86, YES_A, YES, 8, 1.3)
-    ic += yazi(443, 26, 'Yüce Allah’ın Takdiri (Kader)', YES)
-    ic += yazi(443, 50, 'Hz. Musa’yı bizzat Firavun’un', LAC, 'middle', True)
-    ic += yazi(443, 72, 'sarayında öz annesiyle büyüttü.', LAC, 'middle', True)
-    return svg(590, 98, ic, 'Firavun tuzağına karşı Yüce Allah takdirinin gerçekleşmesi şeması.', 22)
-
-
-def kissa_bilgi_panosu():
-    ic = kutu(6, 6, 282, 92, MAVI_A, MAVI, 8, 1.3)
-    ic += yazi(147, 26, 'Unvan ve Özellikleri', MAVI)
-    ic += yazi(147, 48, 'Ulu’l-Azm · Kelîmullah unvanı', LAC, 'middle', True)
-    ic += yazi(147, 68, 'Öz annesinin sütünü emmesi', LAC, 'middle', True)
-    ic += yazi(147, 88, 'Hata sonrası samimi tövbe', MAVI)
-
-    ic += kutu(302, 6, 282, 92, TUR_A, TUR, 8, 1.3)
-    ic += yazi(443, 26, 'Mucize ve İmtihanlar', TUR)
-    ic += yazi(443, 48, 'Asâ · Yed-i beyzâ mucizeleri', LAC, 'middle', True)
-    ic += yazi(443, 68, 'Sihirbazların secdeye varması', LAC, 'middle', True)
-    ic += yazi(443, 88, 'Sâmirî’nin altın buzağı imtihanı', TUR)
-    return svg(590, 104, ic, 'Hz. Musa kıssası unvanlar, mucizeler ve imtihanlar panosu.', 22)
-
-
-def taha_dua_karti():
-    ic = kutu(6, 6, 578, 92, MOR_A, MOR, 8, 1.4)
-    ic += yazi(295, 26, 'Hz. Musa’nın (a.s.) Tebliğ Öncesi Duası (Tâhâ, 25–30)', MOR)
-    ic += yazi(295, 50, '“Rabbim! Göğsüme genişlik ver, işimi bana kolaylaştır,', LAC, 'middle', True)
-    ic += yazi(295, 70, 'dilimdeki düğümü çöz ki sözümü iyi anlasınlar;', LAC, 'middle', True)
-    ic += yazi(295, 88, 'ailemden kardeşim Harun’u da bana yardımcı (vezir) yap.”', MOR)
-    return svg(590, 104, ic, 'Tâhâ Suresi 25-30. ayetlerdeki Hz. Musa duası kartı.', 22)
-
-
-def zaman_seridi_musa():
-    adimlar = [
-        ('1. Evre', 'Nil Nehri', 've Saray', MAVI, MAVI_A, 6),
-        ('2. Evre', 'Medyen’e', 'Yolculuk', YES, YES_A, 152),
-        ('3. Evre', 'Tûr Dağı', 'İlk Vahiy', TUR, TUR_A, 298),
-        ('4. Evre', 'Kızıldeniz', 've Tevrat', MOR, MOR_A, 444),
-    ]
-    ic = ''
-    for bas, s1, s2, r, z, x in adimlar:
-        cx = x + 70
-        ic += kutu(x, 6, 140, 78, z, r, 8, 1.3)
-        ic += yazi(cx, 25, bas, r)
-        ic += yazi(cx, 48, s1, LAC, 'middle', True)
-        ic += yazi(cx, 68, s2, LAC, 'middle', True)
-    return svg(590, 90, ic, 'Hz. Musa hayatının dört kronolojik evresi şeması.', 21)
-
-
-def sihir_mucize_karti():
-    ic = kutu(6, 6, 282, 86, GRI_A, GRI, 8, 1.3)
-    ic += yazi(147, 26, 'Sihirbazların Gösterisi (Sihir)', LAC)
-    ic += yazi(147, 50, 'Göz yanıltmaya dayalı geçici hile', LAC, 'middle', True)
-    ic += yazi(147, 72, 'İpler ve sopalar yılan gibi göründü', LAC, 'middle', True)
-
-    ic += kutu(302, 6, 282, 86, CAM_A, CAM, 8, 1.3)
-    ic += yazi(443, 26, 'Hz. Musa’nın Asâsı (Mucize)', CAM)
-    ic += yazi(443, 50, 'Yüce Allah’ın kudretiyle hakikat', LAC, 'middle', True)
-    ic += yazi(443, 72, 'Hileleri yutunca secdeye kapandılar', CAM)
-    return svg(590, 98, ic, 'Sihir ile ilahi mucize arasındaki farkı gösteren karşılaştırma kartı.', 22)
-
-
-def kizildeniz_tevekkul_panosu():
-    ic = kutu(6, 6, 578, 88, YES_A, YES, 8, 1.4)
-    ic += yazi(295, 26, 'Kızıldeniz Kıyısında Sarsılmaz Tevekkül (Şuarâ, 61–62)', YES)
-    ic += yazi(295, 50, 'İsrailoğulları: “İşte yakalandık!” · Hz. Musa (a.s.):', LAC, 'middle', True)
-    ic += yazi(295, 72, '“Asla! Şüphesiz Rabbim benimledir; bana mutlaka bir kurtuluş yolu gösterecektir!”', YES)
-    return svg(590, 100, ic, 'Kızıldeniz kıyısında Hz. Musa tevekkül sözü panosu.', 22)
-
-
-def dort_bilgi_fisi():
-    fisler = [
-        ('1. Fiş · Tebliğ Dili', 'Tâhâ 44: Yumuşak söz emri', MAVI, MAVI_A),
-        ('2. Fiş · Yardımseverlik', 'Medyen kuyusunda yardım', YES, YES_A),
-        ('3. Fiş · İlahi Kitap', 'Tûr Dağı’nda Tevrat ve On Emir', MOR, MOR_A),
-        ('4. Fiş · Son Nefes', 'Boğulurken imanı kabul edildi', KIR, KIR_A),
-    ]
-    ic = ''
-    for i, (bas, acik, r, z) in enumerate(fisler):
-        x, y = 6 + (i % 2) * 294, 6 + (i // 2) * 48
-        ic += kutu(x, y, 288, 42, z, r, 7, 1.3)
-        ic += yazi(x + 144, y + 17, bas, r)
-        ic += yazi(x + 144, y + 34, acik, LAC, 'middle', True)
-    return svg(590, 102, ic, 'Dört bilgi fişi: 4. fişteki son nefes imanı bilgisi hatalıdır.', 22)
-
-
-def kasas_dua_karti():
-    ic = kutu(6, 6, 578, 86, TUR_A, TUR, 8, 1.4)
-    ic += yazi(295, 26, 'Medyen’de Yardımseverlik ve Kulluk Duası (Kasas, 24)', TUR)
-    ic += yazi(295, 50, 'Hz. Musa (a.s.), kuyuda hayvanlarını sulayamayan iki genç kıza karşılıksız yardım etti;', LAC, 'middle', True)
-    ic += yazi(295, 72, 'ardından gölgeye çekilip: “Rabbim! Bana indireceğin her hayra muhtacım.” diye dua etti.', TUR)
-    return svg(590, 98, ic, 'Kasas Suresi 24. ayet yardımseverlik ve tevazu duası kartı.', 22)
+GORSELLER = {1: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Firavun tuzağına karşı '
+    'Yüce Allah takdirinin gerçekleşmesi şeması."><rect x="4" y="3" width="342" height="62" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Firavun’un Aldığı Tedbir</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Saltanatını koruma hırsıyla doğan erkek</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bebekleri '
+    'öldürttü.</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Yüce Allah’ın '
+    'Takdiri (Kader)</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Hz. Musa’yı bizzat Firavun’un sarayında öz</text><text x="11.0" y="122.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">annesiyle büyüttü.</text></svg>',
+ 5: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tâhâ Suresi 25-30. '
+    'ayetlerdeki Hz. Musa duası kartı."><rect x="4" y="3" width="342" height="117" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Hz. Musa’nın (a.s.) Tebliğ Öncesi Duası</text><text x="11.0" y="38.7" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">(Tâhâ, 25–30)</text><text x="11.0" y="57.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">“Rabbim! Göğsüme genişlik '
+    'ver, işimi bana</text><text x="11.0" y="75.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">kolaylaştır, dilimdeki düğümü çöz ki sözümü</text><text x="11.0" y="93.9" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">iyi anlasınlar; ailemden kardeşim Harun’u '
+    'da</text><text x="11.0" y="112.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">bana yardımcı (vezir) yap.”</text></svg>',
+ 8: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Şuarâ suresi 61-62. '
+    'ayetlerde Kızıldeniz kıyısında yaşanan diyalog panosu."><rect x="4" y="3" width="342" height="117" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Kızıldeniz Kıyısında Yaşanan Diyalog (Şuarâ,</text><text x="11.0" y="38.7" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">61–62)</text><text '
+    'x="11.0" y="57.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İsrailoğulları: «İşte yakalandık!»</text><text x="11.0" y="75.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hz. Musa (a.s.): «Asla! Şüphesiz Rabbim</text><text x="11.0" y="93.9" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">benimledir; bana mutlaka '
+    'bir kurtuluş yolu</text><text x="11.0" y="112.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">gösterecektir!»</text></svg>',
+ 9: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört bilgi fişi: 4. '
+    'fişteki son nefes imanı bilgisi hatalıdır."><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Fiş · Tebliğ Dili</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tâhâ 44: Yumuşak</text><text x="87.5" y="67.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">söz emri</text><rect x="179" y="3" '
+    'width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Fiş ·</text><text x="262.5" y="39.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">Yardımseverlik</text><text x="262.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Medyen kuyusunda</text><text x="262.5" y="76.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yardım</text><rect x="4" y="89" width="167" '
+    'height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="107.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Fiş · İlahi Kitap</text><text x="87.5" '
+    'y="125.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tûr Dağı’nda '
+    'Tevrat</text><text x="87.5" y="144.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ve On Emir</text><rect x="179" y="89" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="107.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Fiş · Son Nefes</text><text x="262.5" y="125.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Boğulurken imanı</text><text x="262.5" y="144.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kabul edildi</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = mekan_olay_semasi()
-    s[1]['gorsel'] = kader_saray_sureci()
-    s[3]['gorsel'] = kissa_bilgi_panosu()
-    s[5]['gorsel'] = taha_dua_karti()
-    s[6]['gorsel'] = zaman_seridi_musa()
-    s[7]['gorsel'] = sihir_mucize_karti()
-    s[8]['gorsel'] = kizildeniz_tevekkul_panosu()
-    s[9]['gorsel'] = dort_bilgi_fisi()
-    if len(s) > 11:
-        s[11]['gorsel'] = kasas_dua_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

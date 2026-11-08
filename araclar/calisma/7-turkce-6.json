@@ -15,8 +15,7 @@
   "hatirla": [
     "Merak ve öğrenme isteğiyle harekete geçmeye içsel motivasyon, işleri önem sırasına koyarak ertelemeden planlamaya ise zaman yönetimi denir.",
     "Aynı metindeki kişilerin veya önceki-sonraki durumların kıyaslanmasına metin içi karşılaştırma; iki ayrı metnin tema, konu, tür ve üslupça kıyaslanmasına metinler arası karşılaştırma denir.",
-    "Öyküleyici metinler olay örgüsü, şahıs kadrosu, yer ve zaman unsurlarıyla çözümlenir; tema soyut ve genel duygu iken konu onun sınırlandırılmış somut hâlidir.",
-    "Özet çıkarılırken gereksiz ayrıntılar ve diyaloglar elenir, kronolojik sıra korunur, metin kendi cümlelerimizle ve kişisel yorum katılmadan kısaltılır."
+    "Öyküleyici metinler olay örgüsü, şahıs kadrosu, yer ve zaman unsurlarıyla çözümlenir; tema soyut ve genel duygu iken konu onun sınırlandırılmış somut hâlidir."
   ],
   "sorular": [
     {
@@ -36,7 +35,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki cümle fişlerini inceleyerek her cümlede öne çıkan kavramı veya fiilin anlam özelliğini (İş-Kılış / Durum / Oluş) tablodaki boşluklara yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen cümleleri inceleyerek her cümlede öne çıkan kavramı veya çekimli fiilin anlam özelliğini (İş-Kılış / Durum / Oluş) boşluklara yazınız. İlk satır örnektir.",
       "basliklar": [
         "Cümle Fişi",
         "Öne Çıkan Kavram / Unsur",
@@ -46,7 +45,9 @@
         [
           "1. Fiş («Ödevlerini önem sırasına göre planladı.»)",
           "Zaman yönetimi",
-          "İş (kılış) fiili (onu planladı)"
+          {
+            "b": "İş (kılış) fiili (onu planladı)"
+          }
         ],
         [
           "2. Fiş («Ödül beklemeden merakla gökyüzünü inceledi.»)",
@@ -87,10 +88,6 @@
         [
           "Özetleme",
           "Metnin ana olaylarını koruyup ayrıntıları çıkararak kendi cümlelerimizle kısaltma"
-        ],
-        [
-          "İlahi (hâkim) bakış açısı",
-          "Anlatıcının kahramanların zihninden ve kalbinden geçen düşünceleri dahi bilmesi"
         ]
       ]
     },
@@ -111,7 +108,7 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki metin parçasında geçen «Genç mühendis, ilk kanat tasarımında başarısız olmasına rağmen pes etmedi; önceki hatalarından ders çıkararak eskisinden daha sağlam bir planör üretti.» cümlesinde hangi karşılaştırma türü vardır ve hangi sözcükle sağlanmıştır?",
+      "soru": "«Genç mühendis, ilk kanat tasarımında başarısız olmasına rağmen pes etmedi; önceki hatalarından ders çıkararak eskisinden daha sağlam bir planör üretti.» cümlesinde hangi karşılaştırma türü (metin içi / metinler arası) vardır ve karşılaştırma hangi sözcükle sağlanmıştır?",
       "cevap": "Önceki ve sonraki durum kıyaslandığı için karşılaştırmadan yararlanılmıştır.",
       "satir": 2
     },
@@ -135,10 +132,6 @@
         {
           "metin": "«Göre, ise, oysa, halbuki, daha, en» sözcükleri cümlede karşılaştırma anlamı kurmaya yardımcı olur.",
           "dogru": true
-        },
-        {
-          "metin": "«Özetlemek, araştırmak, okumak» fiilleri nesne alamadıkları için durum fiili grubunda yer alır.",
-          "dogru": false
         }
       ]
     },
@@ -159,7 +152,7 @@
       "tur": "siralama",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki metin çözümleme ve özetleme kılavuzunu takip ederek uzun bir metni özetleme adımlarını 1’den 4’e kadar doğru sırayla numaralandırınız.",
+      "soru": "Okunan uzun bir metni kurallarına uygun biçimde özetleme adımlarını 1’den 4’e kadar doğru sırayla numaralandırınız.",
       "ogeler": [
         "Metni dikkatlice okuyarak konusunu, ana düşüncesini ve her bölümün en önemli olayını belirlemek",
         "Metnin anlam bütünlüğünü bozmayan gereksiz ayrıntıları, uzun betimlemeleri ve örnekleri ayıklamak",
@@ -225,10 +218,6 @@
         {
           "metin": "Özet yazılırken metne kişisel ___ ve eleştiri kesinlikle katılmaz.",
           "cevap": "yorum"
-        },
-        {
-          "metin": "Önüne «onu» sözcüğü getirilemeyen ve zamanla kendiliğinden gerçekleşen fiillere ___ fiili denir.",
-          "cevap": "oluş"
         }
       ],
       "fazla": [
@@ -239,7 +228,7 @@
       "tur": "acik",
       "duzey": "ust",
       "gorsel_var": true,
-      "soru": "Görseldeki çalışma planı kartında haftalık hedeflerini ertelemeden tamamlayan Elif’in yöntemi verilmiştir. Etkili zaman yönetiminin bir öğrencinin başarısına ve motivasyonuna katkısını iki cümleyle açıklayınız.",
+      "soru": "Önemli işlerini öncelik sırasına koyan ve haftalık hedeflerini ertelemeden zamanında tamamlayan Elif’in bu tutumundan hareketle, etkili zaman yönetiminin bir öğrencinin başarısına ve motivasyonuna katkısını iki cümleyle açıklayınız.",
       "cevap": "Önceliklerin belirlenmesi işlerin birikmesini önleyerek düzenli zaman yönetimi sağlar.",
       "satir": 2
     }

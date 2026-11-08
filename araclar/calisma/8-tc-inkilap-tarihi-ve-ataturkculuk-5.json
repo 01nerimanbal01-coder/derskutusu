@@ -15,8 +15,7 @@
   "hatirla": [
     "Savaşın genel sebepleri: Sanayi İnkılabı’nın doğurduğu ham madde/pazar rekabeti (sömürgecilik), Fransız İhtilali’nin yaydığı milliyetçilik akımı ve silahlanma yarışıdır.",
     "Özel sebepler: Almanya-Fransa arasındaki kömür zengini Alsas-Loren sorunu, Rusya’nın Panslavizm ve sıcak denizlere inme politikası; kıvılcım ise Saraybosna Suikastı’dır (1914).",
-    "İttifak Bloku (Almanya, Avusturya-Macaristan, Osmanlı, Bulgaristan) ile İtilaf Bloku (İngiltere, Fransa, Rusya, sonradan taraf değiştiren İtalya ve ABD) savaşmıştır.",
-    "Osmanlı cepheleri (K harfi kuralı): Taarruz (Kafkas, Kanal), Savunma (Çanakkale, Irak/Kut’ül Amâre, Hicaz-Yemen, Suriye-Filistin) ve Müttefiklere Yardım («YA» eki: Galiçya, Makedonya, Romanya)."
+    "İttifak Bloku (Almanya, Avusturya-Macaristan, Osmanlı, Bulgaristan) ile İtilaf Bloku (İngiltere, Fransa, Rusya, sonradan taraf değiştiren İtalya ve ABD) savaşmıştır."
   ],
   "sorular": [
     {
@@ -35,8 +34,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki Osmanlı cepheleri panosunu inceleyerek her cephenin niteliğini (Taarruz / Savunma / Yardım) ve öne çıkan tarihsel özelliğini tablodaki boşluklara yazınız. İlk satır örnektir.",
+      "soru": "Birinci Dünya Savaşı’nda Osmanlı Devleti’nin mücadele ettiği cephelerin niteliğini (Taarruz / Savunma / Yardım) ve öne çıkan tarihsel özelliğini tablodaki boşluklara yazınız. İlk satır örnektir.",
       "basliklar": [
         "Cephe Adı",
         "Cephenin Niteliği (Grubu)",
@@ -46,7 +44,9 @@
         [
           "Kafkas Cephesi",
           "Taarruz cephesi",
-          "Sarıkamış Harekâtı; Muş ve Bitlis’in kurtarılması"
+          {
+            "b": "Sarıkamış Harekâtı; Muş ve Bitlis’in kurtarılması"
+          }
         ],
         [
           "Çanakkale Cephesi",
@@ -87,10 +87,6 @@
         [
           "Fahreddin Paşa",
           "Hicaz-Yemen Cephesi’nde Medine’yi kahramanca savunan «Çöl Kaplanı»"
-        ],
-        [
-          "Brest-Litovsk",
-          "Savaştan çekilen Rusya’nın Kars, Ardahan ve Batum’u geri verdiği antlaşma"
         ]
       ]
     },
@@ -110,8 +106,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki Çanakkale Zaferi sonuç kartında bu cephenin Türkiye ve dünya tarihi açısından etkileri özetlenmiştir. Çanakkale Zaferi’nin {koyu:Çarlık Rusya} ve {koyu:Birinci Dünya Savaşı’nın süresi} üzerindeki etkisini yazınız.",
+      "soru": "1915 Çanakkale Deniz ve Kara Zaferleri hem Türkiye hem de dünya tarihi açısından önemli sonuçlar doğurmuştur. Çanakkale Zaferi’nin {koyu:Çarlık Rusya} ve {koyu:Birinci Dünya Savaşı’nın süresi} üzerindeki etkisini yazınız.",
       "cevap": "Rusya’ya yardım gitmeyince savaştan çekilmiş, dünya savaşının süresi en az iki yıl uzamıştır.",
       "satir": 2
     },
@@ -135,10 +130,6 @@
         {
           "metin": "Mustafa Kemal; Birinci Dünya Savaşı’nda sırasıyla Çanakkale, Kafkas ve Suriye-Filistin cephelerinde görev yapmıştır.",
           "dogru": true
-        },
-        {
-          "metin": "Çanakkale Zaferi sonrasında Bulgaristan, İtilaf Devletleri yanında savaşa girerek Osmanlı-Almanya kara bağlantısını kesmiştir.",
-          "dogru": false
         }
       ]
     },
@@ -158,8 +149,7 @@
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki «Osmanlı Devleti’nin Savaşa Giriş Süreci» şemasına göre 1914 yılında yaşanan gelişmeleri 1’den 4’e kadar kronolojik olarak sıralayınız.",
+      "soru": "Osmanlı Devleti’nin Birinci Dünya Savaşı’na giriş sürecinde 1914 yılında yaşanan aşağıdaki gelişmeleri 1’den 4’e kadar kronolojik olarak sıralayınız.",
       "ogeler": [
         "Avusturya veliahdının öldürülmesiyle dünya savaşının başlaması",
         "Osmanlı Devleti’nin tarafsızlığını ilan edip seferberlik başlatması",
@@ -230,10 +220,6 @@
         {
           "metin": "Fransız İhtilali’nin yaydığı ___ akımı, Osmanlı ve Avusturya-Macaristan gibi çok uluslu devletleri sarsmıştır.",
           "cevap": "milliyetçilik"
-        },
-        {
-          "metin": "Mustafa Kemal, Muş ve Bitlis’i Rus işgalinden kurtardığı ___ Cephesi’nde generalliğe yükselmiştir.",
-          "cevap": "Kafkas"
         }
       ],
       "fazla": [
@@ -243,9 +229,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki Hicaz-Yemen ve Kanal cepheleri kartında, bazı Arap kabilelerinin İngilizlerin bağımsızlık vaatleriyle Osmanlı ordusuna karşı ayaklandığı belirtilmiştir. Bu durum hangi fikir akımının geçerliliğini yitirdiğini kanıtlar? Açıklayınız.",
-      "cevap": "Arapların İngilizlerle iş birliği yapması İslamcılık (Ümmetçilik) akımının etkisini kaybettiğini gösterir.",
+      "soru": "Birinci Dünya Savaşı’nda Hicaz-Yemen ve Kanal cephelerinde bazı Arap kabileleri, İngilizlerin bağımsızlık vaatleriyle Osmanlı ordusuna karşı ayaklanmıştır. Bu durum hangi fikir akımının geçerliliğini yitirdiğini kanıtlar? Açıklayınız.",
+      "cevap": "Arapların İngilizlerle anlaşması İslamcılık (Ümmetçilik) fikrinin zayıfladığını gösterir.",
       "satir": 2
     }
   ]

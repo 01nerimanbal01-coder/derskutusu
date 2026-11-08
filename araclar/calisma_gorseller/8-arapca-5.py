@@ -1,168 +1,74 @@
-"""8. sınıf Arapça 5. hafta (1. Ünite: Etkinlikler — 3. Ders: Gezi, Geçmiş-Şimdiki Zaman Kalıpları ve Tefekkür) çalışma kâğıdı görselleri (SVG; insan figürü yok K024/K048; Türkçe Noto Sans 12 pt, Arapça Arial 22 pt RTL)."""
+"""8-arapca-5 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#d97706', '#15803d', '#dc2626', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, SARI_A = '#e8eefe', '#fef3c7', '#dcfce7', '#f3e8ff', '#fee2e2', '#fefce8'
-
-
-def svg(w, h, ic, etiket, en_fazla=15):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def yazi_tr(x, y, metin, renk=LAC, hiza='middle', kalin=True):
-    ag = '700' if kalin else '500'
-    dar = ' textLength="156" lengthAdjust="spacingAndGlyphs"' if (hiza == 'middle' and x in (86, 90, 266, 270) and len(metin) > 22) else ''
-    return f'<text x="{x}" y="{y}" text-anchor="{hiza}" font-family="Noto Sans, sans-serif" font-size="12" font-weight="{ag}" fill="{renk}"{dar}>{metin}</text>'
-
-
-def yazi_ar(x, y, metin, renk=LAC, hiza='middle'):
-    blen = sum(1 for c in metin if not (0x064B <= ord(c) <= 0x065F or ord(c) == 0x0670))
-    dar = ''
-    if x in (86, 90, 266, 270) and blen > 14:
-        dar = ' textLength="154" lengthAdjust="spacingAndGlyphs"'
-    elif x >= 210 and blen > 25:
-        dar = ' textLength="220" lengthAdjust="spacingAndGlyphs"'
-    elif x == 180 and blen > 32:
-        dar = ' textLength="330" lengthAdjust="spacingAndGlyphs"'
-    return f'<text x="{x}" y="{y}" text-anchor="{hiza}" direction="rtl" unicode-bidi="isolate" lang="ar" font-family="Arial, sans-serif" font-size="22" fill="{renk}"{dar}>{metin}</text>'
-
-
-def gezi_turleri_afisi():
-    ic = kutu(4, 4, 352, 32, MOR_A, MOR, 7)
-    ic += yazi_tr(95, 24, 'Hafta Sonu Etkinlik Panosu', MOR)
-    ic += yazi_ar(265, 28, 'الرِّحْلَةُ وَالنُّزْهَةُ', LAC)
-
-    ic += kutu(4, 42, 172, 64, MAVI_A, MAVI, 8)
-    ic += yazi_tr(90, 60, '1. Etkinlik (الْمَتْحَفُ)', MAVI)
-    ic += yazi_ar(90, 94, 'رِحْلَةٌ مَدْرَسِيَّةٌ', LAC)
-
-    ic += kutu(184, 42, 172, 64, YES_A, YES, 8)
-    ic += yazi_tr(270, 60, '2. Etkinlik (الْغَابَةُ)', YES)
-    ic += yazi_ar(270, 94, 'نُزْهَةٌ فِي الطَّبِيعَةِ', LAC)
-    return svg(360, 110, ic, 'Gezi afişi: 1. Okul gezisi (Müze), 2. Doğa gezintisi/piknik (Orman).', 15)
-
-
-def mazi_muzari_gezi_kartlari():
-    ic = kutu(4, 4, 352, 32, MAVI_A, MAVI, 7)
-    ic += yazi_tr(14, 24, '1. Kart', MAVI, 'start')
-    ic += yazi_ar(224, 27, 'ذَهَبْنَا إِلَى الْمَتْحَفِ بِالْحَافِلَةِ', LAC)
-
-    ic += kutu(4, 40, 352, 32, TUR_A, TUR, 7)
-    ic += yazi_tr(14, 60, '2. Kart', TUR, 'start')
-    ic += yazi_ar(224, 63, 'سَنُنَظِّمُ رِحْلَةً عِلْمِيَّةً غَدًا', LAC)
-
-    ic += kutu(4, 76, 352, 32, YES_A, YES, 7)
-    ic += yazi_tr(14, 96, '3. Kart', YES, 'start')
-    ic += yazi_ar(224, 99, 'اِلْتَقَطْنَا صُوَرًا جَمِيلَةً فِي الْغَابَةِ', LAC)
-    return svg(360, 112, ic, 'Geçmiş ve gelecek zamanlı üç gezi cümlesi kartı.', 15)
-
-
-def gezi_gunlugu_karti():
-    ic = kutu(4, 4, 172, 48, MAVI_A, MAVI, 8)
-    ic += yazi_tr(90, 20, '1. Ulaşım (صَبَاحًا)', MAVI)
-    ic += yazi_ar(90, 44, 'رَكِبْنَا الْحَافِلَةَ', LAC)
-
-    ic += kutu(184, 4, 172, 48, MOR_A, MOR, 8)
-    ic += yazi_tr(270, 20, '2. Ziyaret (الْمَتْحَفُ)', MOR)
-    ic += yazi_ar(270, 44, 'شَاهَدْنَا الآثَارَ الْقَدِيمَةَ', LAC)
-
-    ic += kutu(4, 58, 172, 48, YES_A, YES, 8)
-    ic += yazi_tr(90, 74, '3. İzlenim', YES)
-    ic += yazi_ar(90, 98, 'كَانَتِ الرِّحْلَةُ مُمْتِعَةً', LAC)
-
-    ic += kutu(184, 58, 172, 48, TUR_A, TUR, 8)
-    ic += yazi_tr(270, 74, '4. Dönüş (مَسَاءً)', TUR)
-    ic += yazi_ar(270, 98, 'رَجَعْنَا إِلَى الْبَيْتِ', LAC)
-    return svg(360, 110, ic, 'Dört bölümlü okul gezisi günlüğü kartı.', 15)
-
-
-def ulasim_soru_diyalogu():
-    ic = kutu(4, 4, 352, 48, TUR_A, TUR, 8)
-    ic += yazi_tr(14, 24, 'Soru', TUR, 'start')
-    ic += yazi_ar(224, 36, '___ ذَهَبْتُمْ إِلَى الْمَتْحَفِ؟', LAC)
-
-    ic += kutu(4, 58, 352, 48, YES_A, YES, 8)
-    ic += yazi_tr(14, 78, 'Cevap (بِـ)', YES, 'start')
-    ic += yazi_ar(224, 90, 'ذَهَبْنَا إِلَى الْمَتْحَفِ بِالْحَافِلَةِ', LAC)
-    return svg(360, 110, ic, 'Müzeye nasıl gittiniz sorusu ve otobüsle gittik cevabı.', 15)
-
-
-def tefekkur_cevre_karti():
-    ic = kutu(4, 6, 172, 94, MAVI_A, MAVI, 8)
-    ic += yazi_tr(90, 24, '1. Doğada Tefekkür', MAVI)
-    ic += yazi_ar(90, 56, 'سُبْحَانَ اللَّهِ', LAC)
-    ic += yazi_ar(90, 86, 'مَا أَجْمَلَ الطَّبِيعَةَ!', LAC)
-
-    ic += kutu(184, 6, 172, 94, YES_A, YES, 8)
-    ic += yazi_tr(270, 24, '2. Çevre Temizliği', YES)
-    ic += yazi_ar(270, 56, 'نُحَافِظُ عَلَى الْبِيئَةِ', LAC)
-    ic += yazi_ar(270, 86, 'النَّظَافَةُ مِنَ الإِيمَانِ', LAC)
-    return svg(360, 106, ic, 'Doğayı tefekkür etme ve çevreyi koruma kartı.', 15)
-
-
-def gezi_akis_semasi():
-    adimlar = [
-        (4, '1. Hareket', 'رَكِبْنَا الْحَافِلَةَ', MAVI, MAVI_A),
-        (93, '2. Müze', 'شَاهَدْنَا الْمَتْحَفَ', MOR, MOR_A),
-        (182, '3. Orman', 'اِلْتَقَطْنَا صُوَرًا', YES, YES_A),
-        (271, '4. Dönüş', 'رَجَعْنَا مَسَاءً', TUR, TUR_A),
-    ]
-    ic = ''
-    for idx, (_, bas, ar, renk, arka) in enumerate(adimlar):
-        gx, gy = 4 + (idx % 2) * 180, 4 + (idx // 2) * 52
-        ic += kutu(gx, gy, 172, 48, arka, renk, 8)
-        ic += yazi_tr(gx + 86, gy + 18, bas, renk)
-        ic += yazi_ar(gx + 86, gy + 41, ar, LAC)
-    return svg(360, 112, ic, 'Okul gezisinin dört aşamalı sıralama şeması.', 15)
-
-
-def mazi_gelecek_karsilastirma():
-    ic = kutu(4, 4, 352, 48, MAVI_A, MAVI, 8)
-    ic += yazi_tr(14, 24, '1. Cümle (ـْنَا)', MAVI, 'start')
-    ic += yazi_ar(228, 36, 'تَجَوَّلْنَا فِي الْمَدِينَةِ التَّارِيخِيَّةِ', LAC)
-
-    ic += kutu(4, 58, 352, 48, TUR_A, TUR, 8)
-    ic += yazi_tr(14, 78, '2. Cümle (سَنَـ)', TUR, 'start')
-    ic += yazi_ar(228, 90, 'سَنَذْهَبُ إِلَى إِسْطَنْبُولَ بِالْقِطَارِ', LAC)
-    return svg(360, 110, ic, 'Geçmiş zaman (-nâ) ve gelecek zaman (sene-) karşılaştırma kartı.', 15)
-
-
-def gezi_izlenim_diyalogu():
-    ic = kutu(4, 4, 352, 48, YES_A, YES, 8)
-    ic += yazi_tr(14, 24, '1. Soru', YES, 'start')
-    ic += yazi_ar(224, 36, 'كَيْفَ كَانَتِ الرِّحْلَةُ يَا عُمَرُ؟', LAC)
-
-    ic += kutu(4, 58, 352, 48, SARI_A, TUR, 8)
-    ic += yazi_tr(14, 78, '2. Ömer', TUR, 'start')
-    ic += yazi_ar(224, 90, '؟', KIR)
-    return svg(360, 110, ic, 'Gezi nasıldı sorusu ve Ömer’in izlenim cevabı kartı.', 15)
-
-
-def gezi_ozeti_ipuclari():
-    ic = kutu(4, 6, 172, 94, MOR_A, MOR, 8)
-    ic += yazi_tr(90, 24, 'Ziyaret ve Ulaşım', MOR)
-    ic += yazi_ar(90, 56, 'ذَهَبْنَا إِلَى الْمَتْحَفِ', LAC)
-    ic += yazi_ar(90, 86, 'بِالْحَافِلَةِ', LAC)
-
-    ic += kutu(184, 6, 172, 94, MAVI_A, MAVI, 8)
-    ic += yazi_tr(270, 24, 'Görülenler ve İzlenim', MAVI)
-    ic += yazi_ar(270, 56, 'شَاهَدْنَا الآثَارَ', LAC)
-    ic += yazi_ar(270, 86, 'كَانَتْ مُمْتِعَةً وَمُفِيدَةً', LAC)
-    return svg(360, 106, ic, 'Müze gezisi ulaşım, görülen eserler ve izlenim kartı.', 15)
+GORSELLER = {1: '<svg viewBox="0 0 350 182" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gezi afişi: 1. Okul '
+    'gezisi (Müze), 2. Doğa gezintisi/piknik (Orman)."><rect x="4" y="3" width="342" height="57" rx="5" fill="#f3e8ff" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="23.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Hafta Sonu Etkinlik Panosu</text><text x="175.0" y="48.8" text-anchor="middle" direction="rtl" '
+    'unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">الرِّحْلَةُ '
+    'وَالنُّزْهَةُ</text><rect x="4" y="63" width="342" height="57" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="83.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Etkinlik (الْمَتْحَفُ)</text><text x="175.0" y="108.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">رِحْلَةٌ مَدْرَسِيَّةٌ</text><rect x="4" y="123" width="342" '
+    'height="57" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="0.75"/><text x="11.0" y="143.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#15803d">2. Etkinlik (الْغَابَةُ)</text><text '
+    'x="175.0" y="168.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">نُزْهَةٌ فِي الطَّبِيعَةِ</text></svg>',
+ 3: '<svg viewBox="0 0 350 153" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört bölümlü okul gezisi '
+    'günlüğü kartı."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="37.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Ulaşım '
+    '(صَبَاحًا)</text><text x="87.5" y="62.3" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">رَكِبْنَا الْحَافِلَةَ</text><rect x="179" y="3" width="167" '
+    'height="84" rx="5" fill="#f3e8ff" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="24.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">2. Ziyaret (الْمَتْحَفُ)</text><text '
+    'x="262.5" y="49.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">شَاهَدْنَا الآثَارَ · · · · ·</text><text x="262.5" y="74.8" text-anchor="middle" direction="rtl" '
+    'unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">· · '
+    'الْقَدِيمَةَ</text><rect x="4" y="91" width="167" height="59" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="0.75"/><text '
+    'x="87.5" y="112.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#15803d">3. '
+    'İzlenim</text><text x="87.5" y="137.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">كَانَتِ الرِّحْلَةُ مُمْتِعَةً</text><rect x="179" y="91" width="167" '
+    'height="59" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="112.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">4. Dönüş (مَسَاءً)</text><text x="262.5" '
+    'y="137.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">رَجَعْنَا إِلَى الْبَيْتِ</text></svg>',
+ 5: '<svg viewBox="0 0 350 90" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Müzeye nasıl gittiniz '
+    'sorusu ve otobüsle gittik cevabı."><rect x="4" y="3" width="167" height="84" rx="5" fill="#fef3c7" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="87.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Soru</text><text x="87.5" y="49.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">___ ذَهَبْتُمْ إِلَى · · · · · ·</text><text '
+    'x="87.5" y="74.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">· الْمَتْحَفِ؟</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#dcfce7" '
+    'stroke="#15803d" stroke-width="0.75"/><text x="262.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#15803d">Cevap (بِـ)</text><text x="262.5" y="49.8" text-anchor="middle" direction="rtl" '
+    'unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ذَهَبْنَا إِلَى '
+    'الْمَتْحَفِ · · ·</text><text x="262.5" y="74.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">بِالْحَافِلَةِ</text></svg>',
+ 9: '<svg viewBox="0 0 350 90" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İki Arapça gezi cümlesi '
+    'karşılaştırma kartı."><rect x="4" y="3" width="167" height="84" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Cümle</text><text x="87.5" y="49.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">تَجَوَّلْنَا فِي الْمَدِينَةِ ·</text><text x="87.5" y="74.8" '
+    'text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">التَّارِيخِيَّةِ</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2. Cümle</text><text x="262.5" y="49.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">سَنَذْهَبُ إِلَى إِسْطَنْبُولَ ·</text><text '
+    'x="262.5" y="74.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">· بِالْقِطَارِ</text></svg>',
+ 11: '<svg viewBox="0 0 350 90" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gezi nasıldı sorusu ve '
+     'Ömer’in izlenim cevabı kartı."><rect x="4" y="3" width="167" height="84" rx="5" fill="#dcfce7" stroke="#15803d" '
+     'stroke-width="0.75"/><text x="87.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#15803d">1. Soru</text><text x="87.5" y="49.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">كَيْفَ كَانَتِ الرِّحْلَةُ يَا ·</text><text '
+     'x="87.5" y="74.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="500" fill="#0b2257">· · · · عُمَرُ؟</text><rect x="179" y="3" width="167" height="84" rx="5" fill="#fefce8" '
+     'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="37.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#d97706">2. Ömer</text><text x="262.5" y="62.3" text-anchor="middle" direction="rtl" '
+     'unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#dc2626">؟</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = gezi_turleri_afisi()
-    s[2]['gorsel'] = mazi_muzari_gezi_kartlari()
-    s[3]['gorsel'] = gezi_gunlugu_karti()
-    s[5]['gorsel'] = ulasim_soru_diyalogu()
-    s[7]['gorsel'] = tefekkur_cevre_karti()
-    s[8]['gorsel'] = gezi_akis_semasi()
-    s[9]['gorsel'] = mazi_gelecek_karsilastirma()
-    s[11]['gorsel'] = gezi_izlenim_diyalogu()
-    s[12]['gorsel'] = gezi_ozeti_ipuclari()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

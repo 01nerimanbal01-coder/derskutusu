@@ -1,153 +1,66 @@
-"""7. sınıf Sosyal Bilgiler 6. hafta (Millî Meseleler ve Küreselleşme) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024/K048); görsel içi yazı 12 pt Noto Sans (K150 EK)."""
+"""7-sosyal-bilgiler-6 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea'
-ALTIN, KAHVE, YESIL_K, GRI, KUM = '#c9a227', '#8a5a2b', '#0f6b45', '#9aa6bd', '#fffdf5'
-YAZI = 'font-family="Noto Sans, sans-serif" font-size="12" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-size="12" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=20):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def milli_dayanisma_panosu():
-    """Soru 1: Tarihten günümüze 3 millî dayanışma örneği panosu."""
-    kartlar = [
-        ('1921 · Millî Mücadele', 'Tekalif-i Milliye', 'Ordu-millet kenetlenmesi', KIR, KIR_A, 6),
-        ('1974 · Kıbrıs Sonrası', 'ASELSAN ve Vakıflar', 'Halk bağışıyla savunma', MAVI, MAVI_A, 124),
-        ('Günümüz · Afetler', 'Deprem Seferberliği', 'AFAD ve Kızılay birliği', YES, YES_A, 242),
-    ]
-    ic = ''
-    for bas, s1, s2, r, z, x in kartlar:
-        ic += kutu(x, 4, 112, 86, z, r, 8, 1.4)
-        ic += yazi(x + 56, 23, bas, r)
-        ic += yazi(x + 56, 48, s1, LAC)
-        ic += yazi(x + 56, 70, s2, LAC, 'middle', True)
-    return svg(360, 94, ic, 'Tarihten günümüze Türk toplumunun üç millî dayanışma örneği.', 14)
-
-
-def kuresellesme_boyutlari_sema():
-    """Soru 2: Küreselleşmenin bilim, ekonomi ve kültür boyutları şeması."""
-    ic = kutu(4, 4, 352, 88, KUM, ALTIN, 8, 1.4)
-    ic += yazi(180, 20, 'Küreselleşmenin İnsan ve Toplum Hayatındaki Boyutları', KAHVE)
-    kartlar = [
-        ('Bilim & Sağlık', 'Hızlı bilgi paylaşımı', YES, YES_A, 10),
-        ('Ekonomi & Ticaret', 'Uluslararası e-ticaret', MAVI, MAVI_A, 126),
-        ('Kültür & Dil', 'Etkileşim / Yozlaşma riski', TUR, TUR_A, 242),
-    ]
-    for bas, alt, r, z, x in kartlar:
-        ic += kutu(x, 28, 108, 54, z, r, 7, 1.3)
-        ic += yazi(x + 54, 47, bas, r)
-        ic += yazi(x + 54, 68, alt, LAC, 'middle', True)
-    return svg(360, 96, ic, 'Küreselleşmenin bilim, ekonomi ve kültür boyutları şeması.', 14)
-
-
-def milli_populer_kultur_karti():
-    """Soru 4: Millî kültür ve popüler kültür karşılaştırma kartları."""
-    ic = kutu(4, 4, 172, 90, YES_A, YES, 8, 1.4)
-    ic += yazi(90, 22, 'Millî Kültür', YESIL_K)
-    ic += yazi(90, 44, 'Tarihsel süreçte oluşur', LAC, 'middle', True)
-    ic += yazi(90, 63, 'Dil, gelenek, el sanatları', LAC, 'middle', True)
-    ic += yazi(90, 81, 'Kalıcıdır · Kimliği korur', YESIL_K)
-
-    ic += kutu(184, 4, 172, 90, TUR_A, TUR, 8, 1.4)
-    ic += yazi(270, 22, 'Popüler Kültür', TUR)
-    ic += yazi(270, 44, 'Kitle iletişimle yayılır', LAC, 'middle', True)
-    ic += yazi(270, 63, 'Fast-food, moda, akımlar', LAC, 'middle', True)
-    ic += yazi(270, 81, 'Geçicidir · Tüketime dayalı', TUR)
-    return svg(360, 98, ic, 'Millî kültür ve popüler kültür özellikleri karşılaştırması.', 14)
-
-
-def kibris_aselsan_karti():
-    """Soru 5: 1974 Kıbrıs Barış Harekâtı ve savunma sanayii dayanışması."""
-    ic = kutu(4, 4, 352, 88, MAVI_A, MAVI, 8, 1.4)
-    ic += yazi(180, 21, '1974 Kıbrıs Barış Harekâtı ve Savunma Sanayii Hamlesi', MAVI)
-    ic += kutu(12, 28, 160, 54, KIR_A, KIR, 6, 1.2)
-    ic += yazi(92, 46, 'Karşılaşılan Sorun:', KIR)
-    ic += yazi(92, 68, 'Silah ve telsiz ambargosu', LAC, 'middle', True)
-    ic += kutu(188, 28, 160, 54, YES_A, YES, 6, 1.2)
-    ic += yazi(268, 46, 'Milletin Çözümü:', YESIL_K)
-    ic += yazi(268, 68, 'Bağışlarla ASELSAN kuruluşu', LAC, 'middle', True)
-    return svg(360, 96, ic, '1974 ambargosuna karşı halk bağışlarıyla ASELSAN kuruluşu kartı.', 14)
-
-
-def cinar_agaci_metaforu():
-    """Soru 7: Kökleri yerde (millî kültür), dalları gökte (evrensel bilim) çınar modeli."""
-    ic = kutu(4, 4, 352, 90, '#f8fafc', GRI, 8, 1.3)
-    ic += yazi(180, 20, '«Kökleri Yerde, Dalları Gökte Çınar» Modeli', LAC)
-    ic += kutu(12, 28, 162, 56, TUR_A, TUR, 7, 1.3)
-    ic += yazi(93, 47, 'Güçlü Kökler (Öz Kimlik)', TUR)
-    ic += yazi(93, 69, 'Türkçe · Tarih · Millî Değerler', LAC, 'middle', True)
-    ic += kutu(186, 28, 162, 56, MAVI_A, MAVI, 7, 1.3)
-    ic += yazi(267, 47, 'Göğe Uzanan Dallar (Evrensel)', MAVI)
-    ic += yazi(267, 69, 'Bilim · Teknoloji · Üretim', LAC, 'middle', True)
-    return svg(360, 98, ic, 'Kökleri millî kültürde, dalları evrensel bilimde çınar modeli.', 14)
-
-
-def kuresel_koy_akis_sema():
-    """Soru 8: Dünyanın küresel köye dönüşüm süreci 4 adımlı şeması."""
-    adimlar = [
-        ('1. Teknoloji', 'Ulaşım ve genel ağ', MAVI, MAVI_A, 6),
-        ('2. Hızlanma', 'Mesafelerin kısalması', MOR, MOR_A, 94),
-        ('3. Etkileşim', 'Ticaret ve bilgi akışı', TUR, TUR_A, 182),
-        ('4. Sonuç', '«Küresel Köy» Dünya', YES, YES_A, 270),
-    ]
-    ic = ''
-    for bas, alt, r, z, x in adimlar:
-        ic += kutu(x, 6, 84, 74, z, r, 7, 1.4)
-        ic += yazi(x + 42, 30, bas, r)
-        ic += yazi(x + 42, 58, alt, LAC, 'middle', True)
-    return svg(360, 86, ic, 'Dünyanın küresel köye dönüşüm aşamaları şeması.', 18)
-
-
-def dort_etki_ornek_karti():
-    """Soru 9: Küreselleşmenin 4 farklı etkisi kartı."""
-    kartlar = [
-        ('1. Kart · Zanaat', 'El sanatlarının azalması', KIR, KIR_A),
-        ('2. Kart · Bilim', 'Deprem uyarı sistemi paylaşımı', YES, YES_A),
-        ('3. Kart · Beslenme', 'Tek tip fast-food yayılımı', TUR, TUR_A),
-        ('4. Kart · Çevre', 'Aşırı tüketim ve e-atık', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, alt, r, z) in enumerate(kartlar):
-        x, y = 4 + (i % 2) * 180, 4 + (i // 2) * 46
-        ic += kutu(x, y, 172, 42, z, r, 7, 1.3)
-        ic += yazi(x + 86, y + 17, bas, r)
-        ic += yazi(x + 86, y + 35, alt, LAC, 'middle', True)
-    return svg(360, 98, ic, 'Küreselleşmenin olumlu ve olumsuz dört örnek kartı.', 14)
-
-
-def tabela_dil_karsilastirma():
-    """Soru 12: Yabancı tabela ve Türkçe tabela karşılaştırma kartı."""
-    ic = kutu(4, 4, 352, 86, KUM, ALTIN, 8, 1.4)
-    ic += yazi(180, 20, 'Çarşı ve Sokak Tabelalarında Dil Bilinci', KAHVE)
-    ic += kutu(14, 28, 158, 52, KIR_A, KIR, 6, 1.2)
-    ic += yazi(93, 46, '1. Tabela (Yabancı Özenti)', KIR)
-    ic += yazi(93, 66, '«Star Coffee & Food Center»', LAC, 'middle', True)
-    ic += kutu(188, 28, 158, 52, YES_A, YES, 6, 1.2)
-    ic += yazi(267, 46, '2. Tabela (Öz Türkçe)', YESIL_K)
-    ic += yazi(267, 66, '«Çınar Kıraathanesi ve Aşevi»', LAC, 'middle', True)
-    return svg(360, 94, ic, 'Yabancı tabela ile Türkçe tabelanın kültürel karşılaştırması.', 14)
+GORSELLER = {0: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tarihten günümüze Türk '
+    'toplumunun üç millî dayanışma örneği."><rect x="4" y="3" width="342" height="43" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">1921 · Millî Mücadele · Tekalif-i Milliye</text><text x="11.0" y="38.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ordu-millet kenetlenmesi</text><rect x="4" '
+    'y="49" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="66.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1974 · Kıbrıs Sonrası · '
+    'ASELSAN ve Vakıflar</text><text x="11.0" y="84.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Halk bağışıyla savunma</text><rect x="4" y="95" width="342" height="43" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="112.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Günümüz · Afetler · Deprem Seferberliği</text><text x="11.0" y="130.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">AFAD ve Kızılay '
+    'birliği</text></svg>',
+ 3: '<svg viewBox="0 0 350 168" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Millî kültür ve popüler '
+    'kültür özellikleri karşılaştırması."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">Millî Kültür</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Tarihsel süreçte oluşur</text><text x="11.0" y="57.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dil, gelenek, el sanatları</text><text '
+    'x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0f6b45">Kalıcıdır · Kimliği korur</text><rect x="4" y="86" width="342" height="80" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Popüler Kültür</text><text x="11.0" y="121.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kitle iletişimle yayılır</text><text x="11.0" y="140.0" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Fast-food, moda, '
+    'akımlar</text><text x="11.0" y="158.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#ee7d12">Geçicidir · Tüketime dayalı</text></svg>',
+ 6: '<svg viewBox="0 0 350 113" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kökleri millî kültürde, '
+    'dalları evrensel bilimde çınar modeli."><rect x="4" y="3" width="342" height="62" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">«Kökleri Yerde, Dalları Gökte Çınar» Modeli</text><text x="11.0" y="38.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Güçlü Kökler (Öz Kimlik)</text><text x="11.0" '
+    'y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Türkçe · Tarih · '
+    'Millî Değerler</text><rect x="4" y="68" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="85.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Göğe '
+    'Uzanan Dallar (Evrensel)</text><text x="11.0" y="103.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Bilim · Teknoloji · Üretim</text></svg>',
+ 8: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Küreselleşmenin olumlu '
+    've olumsuz dört örnek kartı."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Kart · Zanaat</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">El sanatlarının</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">azalması</text><rect x="179" y="3" '
+    'width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Kart · Bilim</text><text x="262.5" '
+    'y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Deprem '
+    'uyarı</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">sistemi paylaşımı</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Kart · Beslenme</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tek tip fast-food</text><text x="87.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yayılımı</text><rect x="179" y="71" '
+    'width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Kart · Çevre</text><text x="262.5" '
+    'y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Aşırı tüketim '
+    've</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">e-atık</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = milli_dayanisma_panosu()
-    s[1]['gorsel'] = kuresellesme_boyutlari_sema()
-    s[3]['gorsel'] = milli_populer_kultur_karti()
-    s[4]['gorsel'] = kibris_aselsan_karti()
-    s[6]['gorsel'] = cinar_agaci_metaforu()
-    s[7]['gorsel'] = kuresel_koy_akis_sema()
-    s[8]['gorsel'] = dort_etki_ornek_karti()
-    s[11]['gorsel'] = tabela_dil_karsilastirma()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -15,8 +15,7 @@
   "hatirla": [
     "Kalıtsal yapıların karmaşıktan basite (büyükten küçüğe) sıralaması «KeDiGeNi» şifresiyle Kromozom > DNA > Gen > Nükleotid biçimindedir.",
     "Bir nükleotid; fosfat (P), deoksiriboz şekeri (D) ve organik bazdan (A, T, G, C) oluşur; karşılıklı zincirlerde daima A ile T (ikili bağ), G ile C (üçlü bağ) eşleşir.",
-    "DNA eşlenirken tek zincirdeki eksiklik veya yanlış eşleşmeler onarılabilirken, karşılıklı iki zincirin aynı hizasındaki nükleotid eksikliği onarılamaz.",
-    "Her durumda etkisini dış görünüşte (fenotipte) gösteren gene baskın gen (A), yalnızca saf (homozigot) durumda etkisini gösteren gene çekinik gen (a) denir."
+    "DNA eşlenirken tek zincirdeki eksiklik veya yanlış eşleşmeler onarılabilirken, karşılıklı iki zincirin aynı hizasındaki nükleotid eksikliği onarılamaz."
   ],
   "sorular": [
     {
@@ -37,8 +36,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "sutun": "sol",
-      "gorsel_var": true,
-      "soru": "Görseldeki bezelye karakter tablosunu inceleyerek verilen bireylerin genotipini (harf gösterimini) ve fenotipini (dış görünüşünü) tablodaki boşluklara yazınız. (Mor çiçek: M, Beyaz çiçek: m; Sarı tohum: S, Yeşil tohum: s)",
+      "soru": "Bezelyelerde verilen bireylerin genotipini (harf gösterimini) ve fenotipini (dış görünüşünü) tablodaki boşluklara yazınız. İlk satır örnektir. (Mor çiçek: M, Beyaz çiçek: m; Sarı tohum: S, Yeşil tohum: s)",
       "basliklar": [
         "Bezelyenin Döl Özelliği",
         "Genotipi (Gen Yapısı)",
@@ -48,7 +46,9 @@
         [
           "Saf (homozigot) döl baskın çiçek rengi",
           "MM",
-          "Mor çiçekli bezelye"
+          {
+            "b": "Mor çiçekli bezelye"
+          }
         ],
         [
           "Melez (heterozigot) döl çiçek rengi",
@@ -92,10 +92,6 @@
         [
           "Homozigot (saf) döl",
           "Bir karakteri kontrol eden anne ve babadan gelen alel genlerin aynı olması (AA, aa)"
-        ],
-        [
-          "Heterozigot (melez) döl",
-          "Bir karakter için biri baskın diğeri çekinik iki farklı alel genin bulunması (Aa)"
         ]
       ]
     },
@@ -117,8 +113,7 @@
       "tur": "kisa",
       "duzey": "uygula",
       "sutun": "sol",
-      "gorsel_var": true,
-      "soru": "Görseldeki malzeme kutusunda 180 fosfat, 150 deoksiriboz şekeri, 40 Adenin, 30 Timin, 50 Guanin ve 60 Sitozin molekülü bulunmaktadır. Bu malzemelerle en fazla kaç nükleotidlik hatasız bir DNA modeli yapılabilir? Nedenini açıklayınız.",
+      "soru": "Bir tasarım kutusunda 180 fosfat, 150 deoksiriboz şekeri, 40 Adenin, 30 Timin, 50 Guanin ve 60 Sitozin molekülü bulunmaktadır. Bu malzemelerle en fazla kaç nükleotidlik hatasız bir DNA zincir çifti oluşturulabilir? Nedenini açıklayınız.",
       "cevap": "Baz sayısı 160 olsa da şeker sayısı 150 ile sınırlı olduğu için en fazla 150 nükleotid yapılır.",
       "satir": 2
     },
@@ -143,10 +138,6 @@
         {
           "metin": "Çekinik bir özelliğin fenotipte (dış görünüşte) ortaya çıkması için bireyin melez döl olması yeterlidir.",
           "dogru": false
-        },
-        {
-          "metin": "Nükleotidler yapılarında bulunan fosfat veya şekere göre değil, taşıdıkları organik baza göre adlandırılır.",
-          "dogru": true
         }
       ]
     },
@@ -168,8 +159,7 @@
       "tur": "siralama",
       "duzey": "uygula",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki «DNA’nın Kendini Eşlemesi (Replikasyon)» kılavuzuna göre hücre bölünmesi öncesinde gerçekleşen olayları oluş sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Hücre bölünmesi öncesinde DNA’nın kendini eşlemesi (replikasyon) sırasında gerçekleşen aşağıdaki olayları oluş sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "Karşılıklı iki zincir arasındaki zayıf hidrojen bağlarının enzimler yardımıyla koparak fermuar gibi açılması",
         "Sitoplazmada serbest hâlde bulunan nükleotidlerin çekirdek zarından geçerek çekirdek içine girmesi",
@@ -238,10 +228,6 @@
         {
           "metin": "Etkisini dış görünüşte her zaman gösteren ___ genler büyük harfle (A, U, M) gösterilir.",
           "cevap": "baskın"
-        },
-        {
-          "metin": "Canlıların kromozom sayısı ile gelişmişlik düzeyi arasında doğrudan bir ilişki ___.",
-          "cevap": "yoktur"
         }
       ],
       "fazla": [
@@ -252,8 +238,7 @@
       "tur": "acik",
       "duzey": "ust",
       "sutun": "sag",
-      "gorsel_var": true,
-      "soru": "Görseldeki tablo kartında insan (46 kromozom), moli balığı (46 kromozom) ve eğrelti otunun (500 kromozom) kromozom sayıları verilmiştir. Bu tabloya dayanarak kromozom sayısı ile canlıların gelişmişliği ve tür benzerliği hakkında hangi iki bilimsel çıkarım yapılır?",
+      "soru": "Sağlıklı vücut hücrelerinde insanın 46, moli balığının 46 ve eğrelti otunun 500 kromozomu bulunmaktadır. Bu verilere dayanarak kromozom sayısı ile canlıların gelişmişliği ve tür benzerliği hakkında hangi iki bilimsel çıkarım yapılır?",
       "cevap": "Kromozom sayısı gelişmişliği göstermez; farklı türlerin sayıları eşit olabilir (insan-moli 46).",
       "satir": 2
     }

@@ -15,15 +15,13 @@
   "hatirla": [
     "18 Mart Deniz Savaşı’nda Rumeli Mecidiye Tabyası’nda Topçu Neferi Seyit, vinci kırık topa 215 okkalık mermiyi üç kez sürerek OCEAN zırhlısını yaralamıştır.",
     "5N1K soruları (Kim, Ne, Nerede, Ne zaman, Nasıl, Niçin) metindeki açık bilgileri yoklar; soru sözcüğü ile cevabın bilgi türü uyumlu olmalıdır.",
-    "Metinde yazarın açıklamaları dik, olay anlatımı eğik yazıyla dizilmiştir; yazılı metin ile film olay, kahraman, mekân ve zaman ölçütleriyle karşılaştırılır.",
-    "Özne, yüklemdeki işi yapan veya yargının ait olduğu ögedir; önce yüklem, sonra özne bulunur. Özne söz öbeği olabilir ve her zaman başta yer almaz."
+    "Metinde yazarın açıklamaları dik, olay anlatımı eğik yazıyla dizilmiştir; yazılı metin ile film olay, kahraman, mekân ve zaman ölçütleriyle karşılaştırılır."
   ],
   "sorular": [
     {
       "tur": "tablo",
       "duzey": "hatirla",
-      "gorsel_var": true,
-      "soru": "Görseldeki 5N1K şemasından yararlanarak metne göre sorulan 5N1K sorularının yokladığı bilgiyi ve cevabını tabloya yazınız. İlk satır örnektir.",
+      "soru": "“215 Okkalık Mermi Nasıl Kaldırıldı?” metnine göre sorulan 5N1K sorularının yokladığı bilgiyi ve cevabını tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "5N1K Sorusu",
         "Yokladığı Bilgi Türü",
@@ -33,7 +31,9 @@
         [
           "Kim?",
           "Olayı gerçekleştiren kişi",
-          "Topçu Neferi Seyit"
+          {
+            "b": "Topçu Neferi Seyit"
+          }
         ],
         [
           "Nerede?",
@@ -93,22 +93,13 @@
         [
           "Yüzbaşı Hilmi Bey",
           "Olayı izleyip telefonla üst komutanlığa bildiren subay"
-        ],
-        [
-          "Cevat Paşa",
-          "Tabyaya gelerek Seyit’e onbaşılık rütbesi veren komutan"
-        ],
-        [
-          "OCEAN (Oşin)",
-          "Üçüncü merminin isabetiyle yara alan İngiliz zırhlısı"
         ]
       ]
     },
     {
       "tur": "dy",
       "duzey": "hatirla",
-      "gorsel_var": true,
-      "soru": "Görseldeki medya ve dil bilgisi kartlarına göre doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
+      "soru": "Çoklu ortam ögeleri ve cümlenin ögeleriyle ilgili doğru ifadelerin D, yanlış ifadelerin Y kutusunu işaretleyiniz.",
       "ifadeler": [
         {
           "metin": "Metnin sonundaki “kısaltılmıştır” notu, eserin bir bölümünün alındığını gösterir.",
@@ -125,10 +116,6 @@
         {
           "metin": "Çekimli fiilin bulunmadığı isim cümlelerinde de yargının ait olduğu özne vardır.",
           "dogru": true
-        },
-        {
-          "metin": "Seyit Onbaşı, komutanın isteğiyle mermiyi ikinci kez kolayca kaldırmıştır.",
-          "dogru": false
         }
       ]
     },
@@ -149,14 +136,6 @@
         {
           "metin": "Bir medya sunumunu incelerken hazırlanış ___ ve kaynağı sorgulanır.",
           "cevap": "amacı"
-        },
-        {
-          "metin": "Metnin içeriğini kısa ve açık biçimde yansıtan ifadeye ___ denir.",
-          "cevap": "başlık"
-        },
-        {
-          "metin": "Cevat Paşa, başarısından dolayı Seyit’e ___ rütbesini vermiştir.",
-          "cevap": "onbaşılık"
         }
       ],
       "fazla": [
@@ -191,8 +170,7 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki karşılaştırma kartına göre yazılı metin ile animasyon film arasında hangi ölçütler aynı, hangileri farklıdır?",
+      "soru": "“215 Okkalık Mermi Nasıl Kaldırıldı?” yazılı metni ile aynı olayı konu alan animasyon filmi; “olay, kahramanlar, mekânın ve zamanın sunuluş biçimi” ölçütleri açısından karşılaştırıldığında hangileri aynı, hangileri farklıdır? Yazınız.",
       "cevap": "Olay ve kahramanlar aynıdır; mekân ve zamanın sunuluş biçimi ise farklıdır.",
       "satir": 2
     },
@@ -225,8 +203,7 @@
     {
       "tur": "kisa",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki cümle çözümleme kartında yer alan iki cümlenin öznelerini bulunuz ve 1. öznenin neden bölünemediğini yazınız.",
+      "soru": "(1) “Boğaz’ı savunan kahraman topçular mevzileri onardı.” ve (2) “Bu tabya, Çanakkale savunmasının kilit noktasıdır.” cümlelerinin öznelerini bulunuz ve 1. öznenin neden bölünemediğini yazınız.",
       "cevap": "1. özne: “Boğaz’ı savunan kahraman topçular” (söz öbeğidir, bölünemez). 2. özne: “Bu tabya”.",
       "satir": 2
     },
@@ -278,9 +255,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki karta göre birincisi söz öbeği özneli fiil cümlesi, ikincisi isim cümlesi olan iki cümle kurup öznelerini yazınız.",
-      "cevap": "1) Çanakkale belgeseli yayımlandı (Özne: Çanakkale belgeseli). 2) Seyit kahramandır (Özne: Seyit).",
+      "soru": "Birincisi söz öbeği özneli fiil cümlesi, ikincisi isim cümlesi olan iki cümle kurup öznelerini yazınız.",
+      "cevap": "1) Çanakkale belgeseli yayımlandı (Özne: Çanakkale belgeseli). 2) Seyit cesurdur (Özne: Seyit).",
       "satir": 2
     }
   ]

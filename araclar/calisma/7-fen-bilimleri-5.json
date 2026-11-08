@@ -14,8 +14,7 @@
   "hatirla": [
     "Fen bilimlerinde fiziksel anlamda iş yapılabilmesi için cisme kuvvet uygulanması ve cismin uygulanan kuvvetle aynı doğrultuda yer değiştirmesi şarttır.",
     "Kuvvet uygulandığı hâlde cisim hareket etmiyorsa veya kuvvetin doğrultusu ile hareket doğrultusu birbirine dikse fiziksel anlamda iş yapılmaz (W = 0).",
-    "Yapılan iş (W), uygulanan kuvvet (F) ile kuvvet doğrultusunda alınan yolun (x) çarpımına eşittir: W = F · x.",
-    "Uluslararası birim sisteminde kuvvet birimi Newton (N), yol birimi metre (m) alındığında işin birimi Joule (J) olur (1 J = 1 N · 1 m)."
+    "Yapılan iş (W), uygulanan kuvvet (F) ile kuvvet doğrultusunda alınan yolun (x) çarpımına eşittir: W = F · x."
   ],
   "sorular": [
     {
@@ -37,7 +36,7 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Görseldeki ölçüm kartlarında verilen kuvvet ve yol değerlerini kullanarak yapılan fiziksel işi (Joule cinsinden) tablodaki boşluklara yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen kuvvet (F) ve alınan yol (x) değerlerini kullanarak yapılan fiziksel işi (W = F · x bağıntısıyla Joule cinsinden) boşluklara yazınız. İlk satır örnektir.",
       "basliklar": [
         "Deney / Olay",
         "Uygulanan Kuvvet ve Alınan Yol",
@@ -47,7 +46,9 @@
         [
           "1. Koli itme",
           "F = 25 N (yatay) · x = 4 m (yatay)",
-          "25 · 4 = 100 Joule"
+          {
+            "b": "25 · 4 = 100 Joule"
+          }
         ],
         [
           "2. Kova çekme",
@@ -89,10 +90,6 @@
         [
           "Newton (N)",
           "Fiziksel anlamda iş hesabında kullanılan kuvvetin uluslararası birimi"
-        ],
-        [
-          "Metre (m)",
-          "İş bağıntısında yer değiştirme miktarının çevrilmesi gereken temel uzunluk birimi"
         ]
       ]
     },
@@ -101,12 +98,12 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Görseldeki yatay yolda X, Y ve Z oyuncak vagonlarına uygulanan kuvvetler ve vagonların kuvvet doğrultusunda aldığı yollar verilmiştir. Vagonlar üzerinde yapılan işlerin (W_X, W_Y, W_Z) büyüklük sıralaması aşağıdakilerden hangisidir?",
+      "soru": "Görseldeki yatay yolda X, Y ve Z oyuncak vagonlarına uygulanan kuvvetler ve vagonların kuvvet doğrultusunda aldığı yollar verilmiştir. Vagonlar üzerinde yapılan işlerin (W{alt:X}, W{alt:Y}, W{alt:Z}) büyüklük sıralaması aşağıdakilerden hangisidir?",
       "secenekler": [
-        "W_X > W_Y > W_Z biçiminde sıralanır",
-        "W_Z > W_X > W_Y biçiminde sıralanır",
-        "W_Y > W_Z > W_X biçiminde sıralanır",
-        "W_Z > W_Y > W_X biçiminde sıralanır"
+        "W{alt:X} > W{alt:Y} > W{alt:Z} biçiminde sıralanır",
+        "W{alt:Z} > W{alt:X} > W{alt:Y} biçiminde sıralanır",
+        "W{alt:Y} > W{alt:Z} > W{alt:X} biçiminde sıralanır",
+        "W{alt:Z} > W{alt:Y} > W{alt:X} biçiminde sıralanır"
       ],
       "dogru": 1
     },
@@ -115,9 +112,9 @@
       "duzey": "uygula",
       "sutun": "sol",
       "gorsel_var": true,
-      "soru": "Görseldeki depoda bir görevli, ağırlığı 30 N olan paketi yerden 120 cm yüksekliğindeki rafa sabit süratle kaldırıyor. Görevlinin paket üzerinde yaptığı fiziksel iş kaç Joule’dür? Birim dönüşümünü göstererek hesaplayınız.",
+      "soru": "Bir depo görevlisi, ağırlığı 30 N olan paketi düşey yukarı yönde kuvvet uygulayarak yerden 120 cm yüksekliğindeki rafa sabit süratle kaldırıyor. Görevlinin paket üzerinde yaptığı fiziksel iş kaç Joule’dür? (100 cm = 1 m alarak birim dönüşümünü gösteriniz.)",
       "cevap": "Önce santimetre metreye çevrilir: 120 cm = {kesir:120|100} m = 1,2 m. Yapılan iş W = F · x = 30 N · 1,2 m = 36 Joule bulunur.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "dy",
@@ -134,16 +131,12 @@
           "dogru": false
         },
         {
-          "metin": "Aغaç dalından koparak yere düşen kozalak üzerinde yer çekimi kuvveti fiziksel anlamda iş yapar.",
+          "metin": "Ağaç dalından koparak yere düşen kozalak üzerinde yer çekimi kuvveti fiziksel anlamda iş yapar.",
           "dogru": true
         },
         {
           "metin": "Uygulanan kuvvet yarıya indirilip alınan yol sabit tutulursa yapılan fiziksel iş iki katına çıkar.",
           "dogru": false
-        },
-        {
-          "metin": "Yatay düzlemde elindeki tepsiyi sallamadan sabit yükseklikte taşıyan garson tepsi üzerinde iş yapmaz.",
-          "dogru": true
         }
       ]
     },
@@ -166,7 +159,7 @@
       "duzey": "uygula",
       "sutun": "sag",
       "gorsel_var": true,
-      "soru": "Görseldeki laboratuvar düzeneğinde bir tahta bloğa yapılan fiziksel işi ölçüp hesaplamak isteyen öğrencinin izlemesi gereken işlem basamaklarını 1’den 4’e kadar sıralayınız.",
+      "soru": "Laboratuvarda yatay düzlemdeki bir tahta bloğa yapılan fiziksel işi ölçüp hesaplamak isteyen öğrencinin izlemesi gereken işlem basamaklarını 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Tahta bloğa dinamometreyi takarak bloğu yatay masa üzerinde sabit süratle çekmek",
         "Çekme işlemi sırasında dinamometrenin gösterdiği kuvvet değerini Newton (N) cinsinden kaydetmek",
@@ -179,7 +172,7 @@
       "duzey": "uygula",
       "sutun": "sag",
       "gorsel_var": true,
-      "soru": "Görseldeki sütun grafiğinde K ve L cisimlerine yapılan fiziksel işler (J) ile bu cisimlerin kuvvet doğrultusunda aldığı yollar (m) verilmiştir. Grafiğe göre K cismine uygulanan kuvvetin (F_K), L cismine uygulanan kuvvete (F_L) oranı ({kesir:F_K|F_L}) kaçtır?",
+      "soru": "Görseldeki bilgi kartlarında K ve L cisimlerine yapılan fiziksel işler (J) ile bu cisimlerin kuvvet doğrultusunda aldığı yollar (m) verilmiştir. Grafiğe göre K cismine uygulanan kuvvetin (F{alt:K}), L cismine uygulanan kuvvete (F{alt:L}) oranı ({kesir:F{alt:K}|F{alt:L}}) kaçtır?",
       "secenekler": [
         "{kesir:1|2} oranındadır",
         "{kesir:3|2} oranındadır",
@@ -230,10 +223,6 @@
         {
           "metin": "Buz üstünde fırlatıldıktan sonra kendi başına kayan taşa elimiz artık kuvvet uygulamadığı için iş ___.",
           "cevap": "yapılmaz"
-        },
-        {
-          "metin": "15 Newton kuvvetle 4 metre çekilen bir kızağa toplam ___ Joule fiziksel iş yapılmış olur.",
-          "cevap": "altmış"
         }
       ],
       "fazla": [
@@ -245,7 +234,7 @@
       "duzey": "ust",
       "sutun": "sag",
       "gorsel_var": true,
-      "soru": "Görseldeki alışveriş sepetini elinde taşıyarak düz koridorda yürüyen Selin, «Sepete yukarı yönde 25 N kuvvet uygulayarak 10 metre yürüdüm, sepete 250 J iş yaptım.» diyor. Selin’in açıklamasındaki bilimsel hatayı doğrultu kavramıyla düzeltiniz.",
+      "soru": "Alışveriş sepetini elinde taşıyarak yatay ve düz bir koridorda yürüyen Selin, «Sepete düşey yukarı yönde 25 N kuvvet uygulayarak yatayda 10 metre yürüdüm, sepete 250 J iş yaptım.» diyor. Selin’in açıklamasındaki bilimsel hatayı kuvvet ve hareket doğrultusu kavramlarıyla düzeltiniz.",
       "cevap": "Kuvvet ile hareket doğrultusu birbirine dik olduğu için fiziksel anlamda iş yapılmamıştır (0 J).",
       "satir": 2
     }

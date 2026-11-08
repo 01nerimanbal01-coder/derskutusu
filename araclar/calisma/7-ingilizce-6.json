@@ -15,8 +15,7 @@
   "hatirla": [
     "Blog ve günlük yazıları «I» öznesiyle kurulur; bilgiler tabloya aktarılıp sorularda «he/she» öznesine dönüştürüldüğünde fiil geniş zamanda «-s / -es» takısı alır.",
     "Sıklık zarfları (always, usually, often, sometimes, never) asıl fiilin önüne gelirken; sıklık ifadeleri (once a week, twice a week, every day) cümlenin sonunda yer alır.",
-    "How often sıklığı (three times a week), When günü veya zaman dilimini (on Mondays, after school), What time ise tam saati (at half past six) sorar.",
-    "İki rutini karşılaştırırken benzerlik için «both» (çoğul özne, fiil -s almaz), fark için «but», sıklık üstünlüğü için «more / less often than» kullanılır."
+    "How often sıklığı (three times a week), When günü veya zaman dilimini (on Mondays, after school), What time ise tam saati (at half past six) sorar."
   ],
   "sorular": [
     {
@@ -36,7 +35,7 @@
       "tur": "tablo",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki genç yüzücü Lara’nın rutin notlarını inceleyerek tablodaki «How often?» (Ne sıklıkla?) ve «When / What time?» sütunlarını tamamlayınız. İlk satır örnektir.",
+      "soru": "Genç yüzücü Lara’nın haftalık rutin notları şöyledir: «Wake up: every day at 06:45 | Swimming: Mon, Wed, Fri | Table tennis: Tuesdays and Thursdays (twice a week) | Junk food: 0% (never) in the evenings.» Bu bilgilere göre tablodaki boşlukları tamamlayınız. İlk satır örnektir.",
       "basliklar": [
         "Activity (Etkinlik)",
         "How often? (Ne sıklıkla?)",
@@ -46,7 +45,9 @@
         [
           "get up early",
           "every day",
-          "at quarter to seven (06:45)"
+          {
+            "b": "at quarter to seven (06:45)"
+          }
         ],
         [
           "go swimming",
@@ -87,10 +88,6 @@
         [
           "When do they have a volleyball match?",
           "At the weekend."
-        ],
-        [
-          "Does Zeynep eat healthy food every day?",
-          "Yes, she does."
         ]
       ]
     },
@@ -111,7 +108,7 @@
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki spor podcast’i ses kaydı notunda tenisçi Mert antrenman sıklığını konuşma sırasında düzeltmektedir. Buna göre «How often does Mert train?» sorusunu tam bir İngilizce cümleyle cevaplayınız.",
+      "soru": "Bir spor söyleşisinde sunucunun «How often do you train at the tennis court, Mert?» sorusuna tenisçi Mert, «I train twice — oh no, four times a week now.» diyerek antrenman sıklığını düzeltmiştir. Buna göre «How often does Mert train?» sorusunu tam bir İngilizce cümleyle cevaplayınız.",
       "cevap": "He trains four times a week.",
       "satir": 2
     },
@@ -135,10 +132,6 @@
         {
           "metin": "Dinleme metinlerinde konuşmacı «on Tuesday — sorry, on Thursday» derse ilk söylediği gün doğru kabul edilir.",
           "dogru": false
-        },
-        {
-          "metin": "Günlük yazılarında olayları sıraya koymak için «First, Then, After that, Finally» ifadeleri cümle başında kullanılır.",
-          "dogru": true
         }
       ]
     },
@@ -159,7 +152,7 @@
       "tur": "siralama",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki zaman akışı şemasını ve sıralama sözcüklerini (First, Then, After that, Finally) takip ederek bir sporcunun günlük yazısını 1’den 4’e kadar sıralayınız.",
+      "soru": "Sıralama sözcüklerini (First, Then, After that, Finally) ve saat akışını takip ederek bir sporcunun günlük yazısını 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "First, I always get up at seven o’clock and have a healthy breakfast with eggs and milk.",
         "Then, I go to school by bike and attend my lessons until half past three.",
@@ -230,10 +223,6 @@
         {
           "metin": "Ceren trains more ___ than Tuna because she has a tournament.",
           "cevap": "often"
-        },
-        {
-          "metin": "We have basketball training ___ Mondays, Wednesdays and Fridays.",
-          "cevap": "on"
         }
       ],
       "fazla": [
@@ -244,9 +233,9 @@
       "tur": "acik",
       "duzey": "ust",
       "gorsel_var": true,
-      "soru": "Görseldeki karşılaştırma kartında voleybolcu Nehir ile basketbolcu Doruk’un antrenman bilgileri verilmiştir. «Both» ve «but» kullanarak bu iki sporcuyu karşılaştıran iki İngilizce cümle yazınız.",
-      "cevap": "He trains four times a week.",
-      "satir": 2
+      "soru": "Voleybolcu Nehir haftada üç kez antrenman yapmakta ve asla abur cubur yememektedir (Nehir: trains 3 times a week / never eats junk food). Basketbolcu Doruk ise her gün antrenman yapmakta ve asla abur cubur yememektedir (Doruk: trains every day / never eats junk food). «Both» ve «but» kullanarak bu iki sporcuyu karşılaştıran iki İngilizce cümle yazınız.",
+      "cevap": "Both Nehir and Doruk never eat junk food. Nehir trains three times a week, but Doruk trains every day.",
+      "satir": 3
     }
   ]
 }
