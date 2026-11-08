@@ -230,8 +230,8 @@ def sema_ve_gorsel_onar():
 
 
 def derleme_calistir():
-    """Görselleri, özet HTML sayfalarını ve konu ağaçlarını yeniden üretir."""
-    for betik in ("ozet_gorsel.py", "ozet_uret.py", "agac_uret.py"):
+    """Görselleri, özet HTML sayfalarını, konu ağaçlarını ve statik sınıf dizinlerini yeniden üretir."""
+    for betik in ("ozet_gorsel.py", "ozet_uret.py", "agac_uret.py", "sayfa_uret.py"):
         r = subprocess.run([sys.executable, str(ARACLAR / betik)], cwd=str(ARACLAR), capture_output=True, text=True)
         if r.returncode != 0:
             raise RuntimeError(f"{betik} başarısız oldu:\n{r.stderr or r.stdout}")

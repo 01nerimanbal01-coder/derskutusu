@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 821 gönderi.
+Toplam 825 gönderi.
 
 ## bilgi-11-cografya-5
 Sıra: 2026-10-17 11:05 · Bekleyen: facebook · Görsel: public/sosyal/bilgi-11-cografya-5.png
@@ -8861,4 +8861,44 @@ Bunu biliyor muydunuz? Hüküm ve dayanak: Cuma namazı; Kur'an (Cum'a, 9), sün
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 12. sınıf Temel Dinî Bilgiler 17. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-temel-dini-bilgiler-hafta-17
 #derskutusu #temeldinibilgiler #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-11-temel-dini-bilgiler-17
+Sıra: 2027-03-27 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-11-temel-dini-bilgiler-17.png
+
+```
+Bunu biliyor muydunuz? Hukuk, toplumsal düzeni sağlayan kurallar bütünü ve haklar ilmidir; şeriat ilahi hükümlerin tamamını, fıkıh ise bu hükümleri delillerinden anlama bilimini ifade eder. İslam hukukunun konusu mükellef insanın iradi fiilleridir; bunlar ibâdât, münâkehât, muâmelât ve ukûbât olarak sınıflandırılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 11. sınıf Temel Dinî Bilgiler 17. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/11-temel-dini-bilgiler-hafta-17
+#derskutusu #temeldinibilgiler #11sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-din-kulturu-17
+Sıra: 2027-03-27 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-din-kulturu-17.png
+
+```
+Bunu biliyor muydunuz? Tasavvufi düşüncenin özü güzel ahlaktır; sufiler tasavvufu 'ilahi ahlakla ahlaklanmak ve Hz. Peygamber'in sünnetini içselleştirmek' olarak tanımlamışlardır. Tezkiye-i nefs, insanın kibir, haset, riya, cimrilik ve öfke gibi kötü huylardan (ahlak-ı zemîme) arınarak tevazu, ihlas, cömertlik ve sabır gibi erdemlerle (ahlak-ı hamîde) donanmasıdır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Din Kültürü ve Ahlak Bilgisi 17. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-din-kulturu-ve-ahlak-bilgisi-hafta-17
+#derskutusu #dinkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-islam-kultur-ve-medeniyeti-17
+Sıra: 2027-03-27 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-islam-kultur-ve-medeniyeti-17.png
+
+```
+Bunu biliyor muydunuz? Vahyin iki koldan korunması: Kur'an-ı Kerim, Hz. Peygamber döneminde hem hafızların ezberiyle (hıfz) hem de vahiy kâtiplerinin yazımıyla (kitâbet) eş zamanlı olarak güvence altına alınmıştır. Hz. Ebû Bekir döneminde cem: Yemâme Savaşı'nda pek çok kurrâ sahabînin şehit düşmesi üzerine Zeyd b. Sâbit başkanlığındaki heyet, iki şahit ilkesiyle Kur'an sayfalarını 'el-Mushaf' adıyla tek ciltte toplamıştır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf İslam Kültür ve Medeniyeti 17. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-islam-kultur-ve-medeniyeti-hafta-17
+#derskutusu #islamkültürü #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## bilgi-12-kuran-i-kerim-17
+Sıra: 2027-03-27 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/bilgi-12-kuran-i-kerim-17.png
+
+```
+Bunu biliyor muydunuz? Sayfaların kapsamı ve mesajı: İsra Suresinin 4-6. sayfaları (23-52. ayetler); yalnız Allah'a kulluğu, anne babaya öf bile dememeyi, infakta dengeyi, yetim malını korumayı, ahde vefayı ve kibirlenmemeyi öğütler. Med uygulamaları: Kelime içinde med harfinden sonra hemze geldiğinde (ulâike) ve (es-semâi) örneklerinde medd-i muttasıl; ayrı kelimelerde geldiğinde (kadâ rabbüke ellâ) örneğinde medd-i munfasıl yapılır.
+Faydalı bulduysanız arkadaşınızı etiketleyin.
+📘 12. sınıf Kur’an-ı Kerim 17. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kuran-i-kerim-hafta-17
+#derskutusu #kuranıkerim #12sınıf #bunubiliyormuydunuz #maarifmodeli
 ```
