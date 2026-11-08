@@ -30,10 +30,6 @@
         [
           "{ar:اَلْغَسَّالَةُ}",
           "Çamaşır makinesi"
-        ],
-        [
-          "{ar:اَلشَّاحِنَةُ}",
-          "Kamyon"
         ]
       ]
     },
@@ -47,12 +43,13 @@
         "Ninesi Fatma öğretmen — amcası Muhammed çiftçi — halası Şeyma aşçı",
         "Teyzesi Zehra hemşire — dayısı Mahmut avukat — ninesi Fatma veteriner"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
       "duzey": "hatirla",
-      "soru": "Okuma diyaloğu, çalışma yerleri ve {ar:ال} takısı kurallarıyla ilgili ifadelerden doğru olanların D, yanlış olanların Y kutusunu işaretleyiniz.",
+      "soru": "Okuma metni, çalışma yerleri ve {ar:ال} takısı kurallarıyla ilgili ifadelerden doğru olanların D, yanlış olanların Y kutusunu işaretleyiniz.",
       "ifadeler": [
         {
           "metin": "{ar:قَمِيصٌ} kelimesinin başına {ar:ال} takısı eklendiğinde sondaki tenvin düşer ve {ar:اَلْقَمِيصُ} olur.",
@@ -69,10 +66,6 @@
         {
           "metin": "«{ar:كَمْ حَفِيدًا لِجَدَّتِكِ؟}» sorusuna okuma metninde {ar:أَرْبَعَةٌ} (dört) cevabı verilmiştir.",
           "dogru": true
-        },
-        {
-          "metin": "{ar:اَلْعُصْفُورُ} ve {ar:اَلْجَرَسُ} kelimeleri şemsi harfle başladığı için lam harfi okunmaz.",
-          "dogru": false
         }
       ]
     },
@@ -93,10 +86,6 @@
         {
           "metin": "Polisin görev yerinde çalıştığını «{ar:يَعْمَلُ فِي} ___» belirtir.",
           "cevap": "{ar:الْعَمَلِ}"
-        },
-        {
-          "metin": "Teyzenin mesleğini sormak için «{ar:مَا} ___ {ar:الْخَالَةِ؟}» denir.",
-          "cevap": "{ar:مِهْنَةُ}"
         }
       ],
       "fazla": [
@@ -113,25 +102,26 @@
         "3. kartta {ar:قَمِيصٌ} kelimesinin tenvini korunarak {ar:اَلْقَمِيصٌ} şeklinde yazılması",
         "4. kartta {ar:صَفٌّ} kelimesinin {ar:اَلصَّفُّ} şeklinde yazılması"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki Büşra’nın akrabalarına ait bilgi kartlarını inceleyerek kişinin adını ve Türkçe meslek/durum bilgisini tabloya yazınız. İlk satır örnektir.",
+      "soru": "Büşra’nın akrabalarına ait tablodaki Arapça ifadeleri inceleyerek kişinin adını ve Türkçe meslek/durum bilgisini tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
-        "Akraba Kartı",
+        "Akraba İfadesi",
         "Kişinin Adı",
         "Mesleği / Durumu"
       ],
       "satirlar": [
         [
-          "1. {ar:خَالِي مَحْمُودٌ}",
+          "1. {ar:خَالِي مَحْمُودٌ مُعَلِّمٌ مَاهِرٌ}",
           "Mahmut",
           "Yetenekli öğretmen"
         ],
         [
-          "2. {ar:خَالَتِي زَهْرَةُ}",
+          "2. {ar:خَالَتِي زَهْرَةُ بَيْطَرِيَّةٌ نَشِيطَةٌ}",
           {
             "b": "Zehra"
           },
@@ -140,7 +130,7 @@
           }
         ],
         [
-          "3. {ar:عَمَّتِي شَيْمَاءُ}",
+          "3. {ar:عَمَّتِي شَيْمَاءُ مُمَرِّضَةٌ}",
           {
             "b": "Şeyma"
           },
@@ -149,7 +139,7 @@
           }
         ],
         [
-          "4. {ar:جَدَّتِي فَاطِمَةُ}",
+          "4. {ar:جَدَّتِي فَاطِمَةُ مُتَقَاعِدَةٌ}",
           {
             "b": "Fatma"
           },
@@ -162,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki olumlu ve olumsuz çalışma yeri cümlelerini inceleyerek Türkçe anlamlarını sırasıyla yazınız.",
+      "soru": "1) «{ar:اَلْمُعَلِّمَةُ تَعْمَلُ فِي الْمَدْرَسَةِ}» ve 2) «{ar:اَلطَّبَّاخَةُ لَا تَعْمَلُ فِي غُرْفَةِ الْجُلُوسِ}» cümlelerini inceleyerek Türkçe anlamlarını sırasıyla yazınız.",
       "cevap": "1 ({ar:تَعْمَلُ}): Öğretmen okulda çalışır. 2 ({ar:لَا}): Aşçı odada çalışmaz.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki soru-cevap diyaloğu adımlarını okuma metnindeki akışa göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Akrabaları tanıtan okuma metnindeki soru-cevap cümlelerini metindeki sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:أَيْنَ يَعْمَلُ الْخَالُ؟ → يَعْمَلُ فِي الْمَدْرَسَةِ}",
         "{ar:مَا مِهْنَةُ الْخَالَةِ؟ → هِيَ بَيْطَرِيَّةٌ}",
@@ -187,7 +177,8 @@
         "{ar:اَلْمُعَلِّمَةُ لَا تَعْمَلُ فِي الْمَدْرَسَةِ}",
         "{ar:اَلسَّائِقُ يَعْمَلُ فِي الْعَمَلِ}"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -199,7 +190,8 @@
         "{ar:مَا مِهْنَةُ الْعَمَّةِ؟}",
         "{ar:هَلِ الْعَمُّ مُحَامٍ؟}"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "sifre",
@@ -232,7 +224,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki «{ar:اَلْأَقْرَبُونَ أَوْلَى بِالْمَعْرُوفِ}» veciz sözünün Türkçe anlamını ve aile hayatımız için verdiği mesajı kısaca yazınız.",
+      "soru": "«{ar:اَلْأَقْرَبُونَ أَوْلَى بِالْمَعْرُوفِ}» veciz sözünün Türkçe anlamını ve aile hayatımız için verdiği mesajı kısaca yazınız.",
       "cevap": "{ar:اَلْأَقْرَبُونَ}: İyiliğe en yakın akrabamızdan başlamalıyız.",
       "satir": 2
     },
@@ -246,7 +238,8 @@
         "1. gruba {ar:اَلسَّمَّاعَةُ} — 2. gruba {ar:اَلْخَاتَمُ}",
         "1. gruba {ar:اَلْفُلْفُلُ} — 2. gruba {ar:اَلضَّوْءُ}"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     }
   ],
   "yayin_tarihi": "2026-10-31"

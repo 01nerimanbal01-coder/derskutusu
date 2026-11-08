@@ -11,8 +11,7 @@
   "hatirla": [
     "Tam iki farklı çarpanı (1 ve kendisi) olan doğal sayılara asal sayı denir; 1 asal değildir, 2 en küçük ve çift olan tek asal sayıdır.",
     "Yüzlük tabloda Eratosten kalburu uygulanırken 2, 3, 5 ve 7’nin katları çizilir; 1 dışında kalan 25 sayı asaldır.",
-    "Bir doğal sayının asal çarpanları çarpan ağacı veya asal çarpan algoritmasıyla bulunur; sayı asal çarpanlarının çarpımı biçiminde yazılır.",
-    "İki sayının kat listelerinde ortak olanlar ortak kat, bölenlerinde ortak olanlar ortak bölendir; ortak bölenleri yalnız 1 olan iki sayı aralarında asaldır."
+    "Bir doğal sayının asal çarpanları çarpan ağacı veya asal çarpan algoritmasıyla bulunur; sayı asal çarpanlarının çarpımı biçiminde yazılır."
   ],
   "sorular": [
     {
@@ -31,14 +30,6 @@
         [
           "asal çarpan",
           "Bir doğal sayının kalansız bölenleri arasındaki asal sayı"
-        ],
-        [
-          "ortak kat",
-          "İki doğal sayının kat listelerinde birlikte yer alan sayılar"
-        ],
-        [
-          "aralarında asal",
-          "Ortak bölenleri yalnız 1 olan iki doğal sayı ilişkisi"
         ]
       ]
     },
@@ -52,7 +43,8 @@
         "K = 90, L = 30, M = 7",
         "K = 120, L = 45, M = 2"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -74,10 +66,6 @@
         {
           "metin": "İki doğal sayının ortak katları sınırsız devam ettiği için ortak katların en büyüğü bulunamaz.",
           "dogru": true
-        },
-        {
-          "metin": "İki doğal sayının aralarında asal olması için iki sayının da asal sayı olması gerekir.",
-          "dogru": false
         }
       ]
     },
@@ -98,14 +86,6 @@
         {
           "metin": "İki sayıyı da kalansız bölen sayılara bu sayıların ortak ___ denir.",
           "cevap": "böleni"
-        },
-        {
-          "metin": "Ortak bölenleri yalnız 1 olan 8 ile 15 sayıları ___ asaldır.",
-          "cevap": "aralarında"
-        },
-        {
-          "metin": "Algoritmada bölme işlemi bölüm ___ olana kadar sürdürülür.",
-          "cevap": "bir"
         }
       ],
       "fazla": [
@@ -122,25 +102,26 @@
         "3. kart — 15 birimkareyle 3 × 5 dikdörtgeni de oluşturulabildiği için 15 asal değildir.",
         "4. kart — 13 birimkarenin çarpanları 1 ve 13 olduğundan tek dikdörtgen oluşur."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki kartlarda verilen sayı çiftlerinin tüm ortak bölenlerini ve aralarında asal olma durumunu yazarak tabloyu tamamlayınız.",
+      "soru": "Tabloda verilen sayı çiftlerinin tüm ortak bölenlerini ve aralarında asal olma durumunu yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Sayı Çifti Kartı",
+        "Sayı Çifti",
         "Ortak Bölenleri",
         "Aralarında Asal Olma Durumu"
       ],
       "satirlar": [
         [
-          "1. Kart (12 ve 18)",
+          "1. (12 ve 18)",
           "1, 2, 3 ve 6",
           "Aralarında asal değildir"
         ],
         [
-          "2. Kart (8 ve 25)",
+          "2. (8 ve 25)",
           {
             "b": "Yalnız 1"
           },
@@ -149,7 +130,7 @@
           }
         ],
         [
-          "3. Kart (16 ve 24)",
+          "3. (16 ve 24)",
           {
             "b": "1, 2, 4 ve 8"
           },
@@ -158,7 +139,7 @@
           }
         ],
         [
-          "4. Kart (9 ve 14)",
+          "4. (9 ve 14)",
           {
             "b": "Yalnız 1"
           },
@@ -171,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki sayı doğrusunda 0’dan başlayarak üçer ve beşer birimlik sıçramalar yapılmıştır. İki sıçramanın 30’a kadar aynı anda indiği sayıları ve bu sayıların neyi ifade ettiğini yazınız.",
+      "soru": "Bir sayı doğrusunda 0 noktasından başlayarak 30’a kadar üçer (3, 6, 9, …) ve beşer (5, 10, 15, …) birimlik sıçramalar yapılmıştır. İki sıçramanın 30’a kadar aynı anda indiği sayıları ve bu sayıların neyi ifade ettiğini yazınız.",
       "cevap": "15 ve 30 noktalarında buluşurlar; bu sayılar 3 ile 5’in ilk iki ortak katıdır.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görselde özetlenen Eratosten kalburuyla yüzlük tablodaki asal sayıları bulma adımlarını uygulanış sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Eratosten kalburu yöntemiyle yüzlük tablodaki asal sayıları bulma adımlarını uygulanış sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "En küçük asal sayı olan 2’yi işaretleyip 2’nin diğer katlarını çizmek",
         "Sıradaki asal sayı olan 3’ü işaretleyip 3’ün kalan katlarını çizmek",
@@ -196,7 +177,8 @@
         "Karşılıklı geldikleri mesafeler 6 ile 8’in ortak katlarından oluşur.",
         "Yolun 36. ve 60. metrelerinde de direk ile bank karşılıklı durur."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -208,12 +190,13 @@
         "2, 4, 6, 9, 12 veya 18 litre",
         "6, 12, 24, 36 veya 72 litre"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görselde Kerem’in 72 sayısı için yaptığı çarpan ağacı çalışması neden hatalıdır? Doğru çarpım yazılışını ve asal çarpanlarını belirtiniz.",
+      "soru": "Kerem, 72 sayısını çarpan ağacında «72 = 2 × 36» ve «36 = 4 × 9» biçiminde ayırıp işlemi bırakmış ve «72’nin asal çarpanları 2, 4 ve 9’dur.» demiştir. Kerem’in çalışması neden hatalıdır? Doğru çarpım yazılışını ve asal çarpanlarını belirtiniz.",
       "cevap": "Uçtaki 4 ve 9 asal değildir; doğrusu 72 = 2 × 2 × 2 × 3 × 3 ve asal çarpanları 2 ile 3’tür.",
       "satir": 2
     },
@@ -258,9 +241,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki iki dolap kilidinde 30 ve 45 numaraları kayıtlıdır. İki kilidi de açabilen ortak asal şifre kodlarını çarpım adımlarını göstererek bulunuz.",
+      "soru": "İki farklı dolap kilidinde 30 ve 45 numaraları kayıtlıdır. İki kilidi de açabilen ortak asal çarpan şifre kodlarını, sayıların asal çarpan çarpım adımlarını göstererek bulunuz.",
       "cevap": "30 = 2 × 3 × 5 ve 45 = 3 × 3 × 5 olur. İki kilitte de ortak bulunan asal şifre kodları 3 ve 5’tir.",
-      "satir": 3
+      "satir": 2
     },
     {
       "tur": "coktan",

@@ -11,8 +11,7 @@
   "hatirla": [
     "Açının büyüklüğünü herkesin aynı sayıyla ifade edebilmesi için standart açı ölçme birimi olan derece (1°) kullanılır; tam açı 360 eş parçaya bölündüğünde her parça 1°’dir.",
     "Bir ışının tam tur dönmesiyle tam açı (360°), yarım tur dönmesiyle doğru açı (180°) oluşur; dik açı 90°, dar açı 90°’den küçük, geniş açı 90° ile 180° arasındadır.",
-    "Açıölçerle ölçüm yaparken açının köşesi merkeze, bir kolu 0° çizgisine yerleştirilir; diğer kolun gösterdiği sayı {olcu:ABC} biçiminde yazılır.",
-    "Açının kolları uzatılsa bile ölçüsü değişmez; ölçüleri birbirine eşit olan açılara eş açılar denir ({olcu:A} = {olcu:B})."
+    "Açıölçerle ölçüm yaparken açının köşesi merkeze, bir kolu 0° çizgisine yerleştirilir; diğer kolun gösterdiği sayı {olcu:ABC} biçiminde yazılır."
   ],
   "sorular": [
     {
@@ -31,14 +30,6 @@
         [
           "doğru açı",
           "Tam açının yarısı olan ve zıt yönlü kolları bulunan 180°’lik açı"
-        ],
-        [
-          "geniş açı",
-          "Ölçüsü 90°’den büyük ve 180°’den küçük olan açı"
-        ],
-        [
-          "eş açılar",
-          "Kol boyları veya yönleri farklı olsa da ölçüleri aynı olan açılar"
         ]
       ]
     },
@@ -52,7 +43,8 @@
         "Geniş açı — {olcu:KLM} = 115°",
         "Doğru açı — {olcu:MKL} = 180°"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -74,10 +66,6 @@
         {
           "metin": "Açıölçerin üzerindeki bölmeler standart derece birimine göre eşit aralıklarla işaretlenmiştir.",
           "dogru": true
-        },
-        {
-          "metin": "Tam açı daire biçimli açıölçerle, doğru açı ise yarım daire biçimli açıölçerle modellenebilir.",
-          "dogru": true
         }
       ]
     },
@@ -98,14 +86,6 @@
         {
           "metin": "Açının ölçüsü kolların boyuna değil, ışının ___ miktarına bağlıdır.",
           "cevap": "dönme"
-        },
-        {
-          "metin": "Bilgisayar ekranında açı ölçmek için dinamik matematik ___ kullanılır.",
-          "cevap": "yazılımı"
-        },
-        {
-          "metin": "Açıyı çizmeden önce türünü ___ etmek olası çizim hatasını önler.",
-          "cevap": "tahmin"
         }
       ],
       "fazla": [
@@ -122,12 +102,13 @@
         "1 ve 3. karttaki açıların kol uzunlukları farklı olduğu için bu iki açı eş değildir.",
         "4. karttaki {aci:D} dik açıdır ve ölçüsü 1. karttaki açıdan 25° daha büyüktür."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görselde ışınların dönme miktarlarıyla oluşturulan dört açı modeli verilmiştir. Her modelin açı türünü ve derece cinsinden ölçüsünü yazarak tabloyu tamamlayınız.",
+      "soru": "Tablodaki dönme modellerinin açı türünü ve derece cinsinden ölçüsünü yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
         "Dönme Modeli",
         "Açı Türü",
@@ -135,12 +116,12 @@
       ],
       "satirlar": [
         [
-          "1. Model (Çeyrek tur dönüş)",
+          "1. Çeyrek tur dönüş",
           "Dik açı",
           "90°"
         ],
         [
-          "2. Model (Yarım tur dönüş)",
+          "2. Yarım tur dönüş",
           {
             "b": "Doğru açı"
           },
@@ -149,7 +130,7 @@
           }
         ],
         [
-          "3. Model (Tam tur dönüş)",
+          "3. Tam tur dönüş",
           {
             "b": "Tam açı"
           },
@@ -158,7 +139,7 @@
           }
         ],
         [
-          "4. Model (Çeyrek turdan az dönüş)",
+          "4. Çeyrek turdan az (55°) dönüş",
           {
             "b": "Dar açı"
           },
@@ -171,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görselde Tuna’nın {aci:DEF} açısını ölçmek için açıölçeri yerleştirdiği konum gösterilmiştir. Tuna’nın yaptığı yerleşim neden hatalıdır ve doğru ölçüyü okumak için ne yapmalıdır?",
+      "soru": "Tuna, {aci:DEF} açısını ölçerken E köşesini açıölçerin merkezine yerleştirmiş ancak {isin:EF} kolunu 25° çizgisi, {isin:ED} kolunu 95° çizgisi üzerine getirerek açıyı doğrudan 95° olarak okumuştur. Tuna’nın yaptığı yerleşim neden hatalıdır ve doğru ölçüyü okumak için ne yapmalıdır?",
       "cevap": "Kollardan hiçbiri 0° çizgisinde değildir; {isin:EF} kolunu 0° çizgisine getirmelidir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görselde ölçüsü 75° olan bir açıyı açıölçer yardımıyla çizme aşamaları verilmiştir. Bu çizim adımlarını uygulanış sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Açıölçer yardımıyla ölçüsü 75° olan {aci:KLM} açısını çizmek için verilen adımları uygulanış sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "Cetvelle bir ışın çizip başlangıç noktasını köşe olarak işaretlemek",
         "Köşeyi açıölçerin merkezine, ışını 0° çizgisi üzerine yerleştirmek",
@@ -196,7 +177,8 @@
         "Standart olmayan birimlerle aynı açıklık farklı sayılarla ifade edilir.",
         "Mert ve Zeynep kendi dilimleriyle açıklığı aynı sayıyla ifade eder."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -208,12 +190,13 @@
         "Dik açı (L) < Doğru açı (M) < Geniş açı (K) < Tam açı (N)",
         "Dar açı (L) < Geniş açı (K) < Tam açı (M) < Doğru açı (N)"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görselde 1. adımda kolları 5 cm olan 50°’lik {aci:ABC} açısı çizilmiş, 2. adımda ise bu açının kolları cetvelle 10 cm’ye uzatılmıştır. 2. adımda açının ölçüsü ve türü değişir mi? Nedenini yazınız.",
+      "soru": "1. adımda kolları 5 cm olan 50°’lik {aci:ABC} açısı çizilmiş, 2. adımda ise bu açının kolları cetvelle 10 cm’ye uzatılmıştır. 2. adımda açının ölçüsü ve türü değişir mi? Nedenini yazınız.",
       "cevap": "Değişmez; açı yine 50° ve dar açıdır. Çünkü ölçü kolların dönme miktarına bağlıdır.",
       "satir": 2
     },
@@ -258,9 +241,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görselde Arda ölçüsü 140° olan bir açı çizmek istemiş ancak açıölçerde yanlış yeri işaretleyerek 40°’lik bir açı çizmiştir. Çizime başlamadan önce açının türünü tahmin etmek Arda’ya nasıl yardımcı olurdu?",
+      "soru": "Arda ölçüsü 140° olan bir açı çizmek istemiş ancak açıölçerde yanlış diziyi işaretleyerek 40°’lik bir açı çizmiştir. Çizime başlamadan önce açının türünü tahmin etmek Arda’ya nasıl yardımcı olurdu?",
       "cevap": "140°’nin geniş açı olacağını tahmin etseydi, çizdiği dar açıyı hemen fark edip ölçümü düzeltirdi.",
-      "satir": 3
+      "satir": 2
     },
     {
       "tur": "coktan",

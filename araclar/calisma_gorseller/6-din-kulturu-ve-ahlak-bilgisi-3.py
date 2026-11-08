@@ -1,178 +1,95 @@
-"""6. sınıf DKAB 3. hafta (Peygamberlerin İlettiği Mesaj: Vahiy — Vahyin Gönderiliş Amacı) çalışma kâğıdı görselleri (SVG; insan figürü yok K024/K048; ayet levhası yok K055; görsel içi yazı 10-12.5 pt K150 EK)."""
+"""6-din-kulturu-ve-ahlak-bilgisi-3 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed'
-MAVI_A, TUR_A, YES_A, MOR_A, GRI, GRI_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#9aa6bd', '#eef1f6'
-ALTIN, KAHVE, YESIL_K = '#c9a227', '#8a5a2b', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-YAZI_I = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=None):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=11.5, renk=LAC, hiza='middle', ek='', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {YAZI_I if ince else YAZI} fill="{renk}"{ek}>{metin}</text>'
-
-
-def akil_vahiy_karsilastirma():
-    ic = f'<rect x="8" y="8" width="280" height="96" rx="10" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.6"/>'
-    ic += yazi(148, 26, 'İnsana Verilen Akıl', 11.4, MAVI)
-    ic += yazi(22, 48, 'İyi ile kötüyü, doğru ile yanlışı ayırt eder.', 10.5, LAC, 'start', ince=True)
-    ic += yazi(22, 68, 'Ancak K alanındaki büyük sorularda', 10.5, LAC, 'start', ince=True)
-    ic += yazi(32, 86, 'cevaplar kişiden kişiye değişebilir: K = ?', 10.6, MAVI, 'start')
-
-    ic += f'<rect x="308" y="8" width="284" height="96" rx="10" fill="{TUR_A}" stroke="{TUR}" stroke-width="1.6"/>'
-    ic += yazi(450, 26, 'Allah’ın Gönderdiği Vahiy', 11.4, TUR)
-    ic += yazi(322, 48, 'K alanındaki sorularda doğru bilgiyi verir.', 10.5, LAC, 'start', ince=True)
-    ic += yazi(322, 68, 'İnsanın yaratılış ve dünya-ahiret', 10.5, LAC, 'start', ince=True)
-    ic += yazi(332, 86, 'hedefini açıklar: L = ?', 10.6, TUR, 'start')
-    return svg(600, 112, ic, 'Akıl ve vahiy karşılaştırma şeması: K cevabı kişiden kişiye değişen büyük sorular, L vahyin kazandırdığı kavrayış.', 22)
-
-
-def mesaj_alanlari_panosu():
-    kartlar = [
-        ('1. Kart: İnanç Alanı', 'Yaratıcının varlığı, birliği ve', 'temel iman esasları', MAVI, MAVI_A),
-        ('2. Kart: İbadet Alanı', 'Namaz, oruç, hac, kurban ve', 'zekât gibi kulluk görevleri', YES, YES_A),
-        ('3. Kart: Ahlak Alanı', 'Eski devletlerin coğrafi', 'sınır ve ölçek haritaları', KIR, '#fdeaea'),
-        ('4. Kart: Toplumsal Konular', 'İnsanlar arası adalet, haklar', 've karşılıklı yardımlaşma', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (bas, s1, s2, renk, arka) in enumerate(kartlar):
-        x = 6 + (i % 2) * 298
-        y = 6 + (i // 2) * 58
-        ic += f'<rect x="{x}" y="{y}" width="286" height="50" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += f'<rect x="{x}" y="{y}" width="8" height="50" rx="4" fill="{renk}"/>'
-        ic += yazi(x + 18, y + 19, bas, 11, renk, 'start')
-        ic += yazi(x + 18, y + 38, f'{s1} {s2}', 10.3, LAC, 'start', ince=True)
-    return svg(600, 124, ic, 'Kur’an mesaj alanları panosu: 1. İnanç, 2. İbadet, 3. Ahlak (hatalı açıklama), 4. Toplumsal konular.', 23)
-
-
-def peygamber_ozellik_kartlari():
-    kartlar = [
-        ('1. Kart', 'Hz. İbrahim', 'Öne çıkan yönü : ?', MAVI, MAVI_A),
-        ('2. Kart', 'Hz. Eyyüb ve Hz. Yakub', 'Öne çıkan yönü : ?', YES, YES_A),
-        ('3. Kart', 'Hz. Yusuf', 'Öne çıkan yönü : ?', TUR, TUR_A),
-        ('4. Kart', 'Hz. Musa', 'Öne çıkan yönü : ?', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (bas, ad, alt, renk, arka) in enumerate(kartlar):
-        x = 8 + i * 148
-        ic += f'<rect x="{x}" y="8" width="136" height="86" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 68, 26, bas, 11.2, renk)
-        ic += f'<line x1="{x + 14}" y1="34" x2="{x + 122}" y2="34" stroke="{renk}" stroke-width="1"/>'
-        ic += yazi(x + 68, 54, ad, 10.6, LAC)
-        ic += yazi(x + 68, 76, alt, 10.3, renk, ince=True)
-    return svg(600, 102, ic, 'Dört peygamber kartı: 1. Hz. İbrahim, 2. Hz. Eyyüb ve Hz. Yakub, 3. Hz. Yusuf, 4. Hz. Musa.', 22)
-
-
-def insan_peygamber_katkisi_sema():
-    ic = f'<rect x="6" y="6" width="588" height="98" rx="10" fill="#fbfcff" stroke="{GRI}" stroke-width="1.5"/>'
-    ic += yazi(300, 24, 'Peygamberlerin İnsanlar Arasından Seçilmesinin Katkıları', 11.4, LAC)
-    kutular = [
-        ('1. Toplumu Tanıma', 'Yaşadığı halkın dilini ve', 'koşullarını yakından bilme', MAVI, MAVI_A),
-        ('2. Sağlıklı İletişim', 'Mesajı anlaşılır biçimde', 've eksiksiz ulaştırma', TUR, TUR_A),
-        ('3. Uygulamalı Örneklik', 'Namaz, oruç, hac, zekât ve', 'kurbanı bizzat gösterme', YES, YES_A),
-    ]
-    for i, (bas, s1, s2, renk, arka) in enumerate(kutular):
-        x = 16 + i * 192
-        ic += f'<rect x="{x}" y="34" width="180" height="60" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.5"/>'
-        ic += yazi(x + 90, 50, bas, 10.8, renk)
-        ic += yazi(x + 90, 67, s1, 10.1, LAC, ince=True)
-        ic += yazi(x + 90, 82, s2, 10.1, LAC, ince=True)
-    return svg(600, 110, ic, 'Peygamberlerin insanlar arasından seçilmesinin üç katkısı: toplumu tanıma, sağlıklı iletişim ve ibadetleri uygulayarak gösterme.', 22)
-
-
-def vahiy_ulasma_yolu_sema():
-    adimlar = [
-        ('İlahi Mesaj', 'Allah vahiy gönderir', MAVI, MAVI_A),
-        ('Tebliğ ve Örneklik', 'Peygamberler iletir', TUR, TUR_A),
-        ('Doğru Yola Yöneliş', 'İnsanlar rehber edinir', MOR, MOR_A),
-        ('Temel Amaç', 'Dünya-ahiret mutluluğu', YES, YES_A),
-    ]
-    ic = ''
-    for i, (ust, alt, renk, arka) in enumerate(adimlar):
-        x = 8 + i * 148
-        ic += f'<rect x="{x}" y="8" width="136" height="80" rx="9" fill="{arka}" stroke="{renk}" stroke-width="1.6"/>'
-        ic += yazi(x + 68, 36, ust, 11.2, renk)
-        ic += yazi(x + 68, 62, alt, 10.4, LAC, ince=True)
-        if i < 3:
-            ic += f'<line x1="{x + 137}" y1="48" x2="{x + 147}" y2="48" stroke="{LAC}" stroke-width="1.8"/>'
-    return svg(600, 96, ic, 'Vahyin ulaşma zinciri: İlahi mesaj, peygamberlerin iletmesi, doğru yola yöneliş ve dünya-ahiret mutluluğu.', 22)
-
-
-def kissa_amac_karti():
-    ic = f'<rect x="8" y="6" width="584" height="96" rx="10" fill="{MOR_A}" stroke="{MOR}" stroke-width="1.6"/>'
-    ic += yazi(300, 25, 'Kavram Bilgi Kartı: Kur’an-ı Kerim’de Kıssalar', 11.5, MOR)
-    maddeler = [
-        ('Konusu', 'Geçmiş peygamberler', 've milletler', MAVI),
-        ('Anlatılış Nedeni', 'İnsanlara ibret ve', 'ders vermek', TUR),
-        ('İçerik Katkısı', 'İnanç ve ahlak mesajlarını', 'somutlaştırmak', YES),
-    ]
-    for i, (bas, s1, s2, renk) in enumerate(maddeler):
-        x = 18 + i * 190
-        ic += f'<rect x="{x}" y="34" width="180" height="58" rx="7" fill="#fff" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 90, 50, bas, 10.8, renk)
-        ic += yazi(x + 90, 67, s1, 10.1, LAC, ince=True)
-        ic += yazi(x + 90, 82, s2, 10.1, LAC, ince=True)
-    return svg(600, 108, ic, 'Kıssa bilgi kartı: konusu geçmiş peygamber ve milletler, anlatılış nedeni ibret ve ders vermek, katkısı mesajları somutlaştırmak.', 22)
-
-
-def hadis_kuran_niteleme_panosu():
-    ic = f'<rect x="8" y="6" width="584" height="96" rx="10" fill="#fffbe6" stroke="{ALTIN}" stroke-width="1.6"/>'
-    ic += yazi(300, 25, 'Hadis-i Şerifte Kur’an-ı Kerim İçin Yapılan Nitelemeler (Tirmizi)', 11.2, KAHVE)
-    kutular = [
-        ('1. Niteleme', '“Allah’ın sağlam ipidir.”', MAVI, MAVI_A),
-        ('2. Niteleme', '“Hikmet dolu sözleridir.”', TUR, TUR_A),
-        ('3. Niteleme', '“O, dosdoğru yoldur.”', YES, YES_A),
-    ]
-    for i, (bas, soz, renk, arka) in enumerate(kutular):
-        x = 20 + i * 190
-        ic += f'<rect x="{x}" y="36" width="180" height="54" rx="8" fill="{arka}" stroke="{renk}" stroke-width="1.5"/>'
-        ic += yazi(x + 90, 54, bas, 10.8, renk)
-        ic += yazi(x + 90, 75, soz, 10.6, LAC)
-    return svg(600, 108, ic, 'Hadiste Kur’an-ı Kerim için yapılan üç niteleme: Allah’ın sağlam ipi, hikmet dolu sözler ve dosdoğru yol.', 22)
-
-
-def bakara_21_analiz_karti():
-    ic = f'<rect x="8" y="6" width="584" height="96" rx="10" fill="{MAVI_A}" stroke="{MAVI}" stroke-width="1.6"/>'
-    ic += yazi(300, 25, 'Bakara Suresi 21. Ayet Kavram Çözümleme Tablosu', 11.3, MAVI)
-    sutunlar = [
-        ('Hitap Bölümü', '“Ey insanlar!”', '(Bütün insanlığa çağrı)', MAVI),
-        ('Hatırlatma Bölümü', '“Sizi ve öncekileri yaratan…”', '(Yaratıcının tanıtılması)', TUR),
-        ('Görev ve Hedef', '“…rabbinize kulluk edin…”', '(Sorumluluk ve takvâ)', YES),
-    ]
-    for i, (bas, s1, s2, renk) in enumerate(sutunlar):
-        x = 18 + i * 190
-        ic += f'<rect x="{x}" y="34" width="180" height="58" rx="7" fill="#fff" stroke="{renk}" stroke-width="1.4"/>'
-        ic += yazi(x + 90, 50, bas, 10.6, renk)
-        ic += yazi(x + 90, 67, s1, 10.3, LAC)
-        ic += yazi(x + 90, 83, s2, 10, LAC, ince=True)
-    return svg(600, 108, ic, 'Bakara suresi 21. ayet çözümleme tablosu: hitap bölümü, yaratılış hatırlatması ve kulluk görevi.', 22)
-
-
-def iki_ogrenci_tartisma_karti():
-    ic = f'<rect x="8" y="8" width="282" height="88" rx="10" fill="#fdeaea" stroke="{KIR}" stroke-width="1.6"/>'
-    ic += yazi(149, 26, '1. Görüş Kartı', 11.2, KIR)
-    ic += yazi(149, 50, '“Vahiy yalnızca namaz ve oruç gibi', 10.6, LAC, ince=True)
-    ic += yazi(149, 70, 'ibadet kurallarını bildiren metindir.”', 10.6, LAC, ince=True)
-
-    ic += f'<rect x="310" y="8" width="282" height="88" rx="10" fill="{YES_A}" stroke="{YES}" stroke-width="1.6"/>'
-    ic += yazi(451, 26, '2. Görüş Kartı', 11.2, YESIL_K)
-    ic += yazi(451, 50, '“Vahiy; Allah’ı tanıtır, inanç, ibadet,', 10.6, LAC, ince=True)
-    ic += yazi(451, 70, 'ahlak ve toplumda rehberlik eder.”', 10.6, LAC, ince=True)
-    return svg(600, 104, ic, 'Vahyin kapsamı hakkında iki görüş kartı: 1. görüş ibadetle sınırlar, 2. görüş inanç, ibadet, ahlak ve toplumu kapsar.', 22)
+GORSELLER = {1: '<svg viewBox="0 0 350 168" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Akıl ve vahiy '
+    'karşılaştırma şeması: K cevabı kişiden kişiye değişen büyük sorular, L vahyin kazandırdığı kavrayış."><rect x="4" y="3" width="342" '
+    'height="80" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.2" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">İnsana Verilen Akıl</text><text x="11.0" y="38.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İyi ile kötüyü, doğru ile '
+    'yanlışı ayırt eder.</text><text x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Ancak K alanındaki büyük sorularda cevaplar</text><text x="11.0" y="75.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kişiden kişiye değişebilir: K = ?</text><rect '
+    'x="4" y="86" width="342" height="80" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="103.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Allah’ın Gönderdiği '
+    'Vahiy</text><text x="11.0" y="121.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">K alanındaki sorularda doğru bilgiyi verir.</text><text x="11.0" y="140.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İnsanın yaratılış ve dünya-ahiret hedefini</text><text x="11.0" '
+    'y="158.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">açıklar: L = '
+    '?</text></svg>',
+ 4: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kur’an mesaj alanları '
+    'panosu: 1. İnanç, 2. İbadet, 3. Ahlak (hatalı açıklama), 4. Toplumsal konular."><rect x="4" y="3" width="167" height="82" rx="5" '
+    'fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">1. Kart: İnanç Alanı</text><text x="87.5" y="39.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yaratıcının varlığı,</text><text x="87.5" '
+    'y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">birliği ve '
+    'temel iman</text><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">esasları</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2. Kart: İbadet Alanı</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Namaz, oruç, hac,</text><text x="262.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kurban ve zekât gibi</text><text x="262.5" '
+    'y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kulluk '
+    'görevleri</text><rect x="4" y="89" width="167" height="101" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="87.5" y="116.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. '
+    'Kart: Ahlak Alanı</text><text x="87.5" y="135.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Eski devletlerin</text><text x="87.5" y="153.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">coğrafi sınır ve ölçek</text><text x="87.5" y="171.9" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">haritaları</text><rect '
+    'x="179" y="89" width="167" height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="107.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Kart: '
+    'Toplumsal</text><text x="262.5" y="125.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Konular</text><text x="262.5" y="144.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">İnsanlar arası adalet,</text><text x="262.5" y="162.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">haklar ve karşılıklı</text><text x="262.5" '
+    'y="181.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">yardımlaşma</text></svg>',
+ 8: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kıssa bilgi kartı: '
+    'konusu geçmiş peygamber ve milletler, anlatılış nedeni ibret ve ders vermek, katkısı mesajları somutlaştırmak."><rect x="4" y="3" '
+    'width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="30.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Kavram Bilgi Kartı:</text><text x="87.5" '
+    'y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Kur’an-ı '
+    'Kerim’de ·</text><text x="87.5" y="67.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Kıssalar</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Konusu</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Geçmiş</text><text x="262.5" y="58.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">peygamberler ve</text><text x="262.5" y="76.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">milletler</text><rect '
+    'x="4" y="89" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="116.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Anlatılış '
+    'Nedeni</text><text x="87.5" y="134.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İnsanlara ibret ve</text><text x="87.5" y="153.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">ders vermek</text><rect x="179" y="89" width="167" height="82" rx="5" '
+    'fill="#f0e9fe" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">İçerik Katkısı</text><text x="262.5" y="125.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İnanç ve ahlak</text><text x="262.5" '
+    'y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">mesajlarını</text><text x="262.5" y="162.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">somutlaştırmak</text></svg>',
+ 9: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hadiste Kur’an-ı Kerim '
+    'için yapılan üç niteleme: Allah’ın sağlam ipi, hikmet dolu sözler ve dosdoğru yol."><rect x="4" y="3" width="167" height="82" rx="5" '
+    'fill="#fffbe6" stroke="#c9a227" stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#8a5a2b">Hadis-i Şerifte ·</text><text x="87.5" y="39.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#8a5a2b">Kur’an-ı Kerim İçin</text><text x="87.5" '
+    'y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#8a5a2b">Yapılan '
+    'Nitelemeler</text><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#8a5a2b">· (Tirmizi)</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="262.5" y="30.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Niteleme</text><text x="262.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">“Allah’ın sağlam</text><text x="262.5" y="67.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">ipidir.”</text><rect x="4" y="89" width="167" '
+    'height="64" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="107.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. Niteleme</text><text x="87.5" y="125.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">“Hikmet dolu</text><text '
+    'x="87.5" y="144.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">sözleridir.”</text><rect x="179" y="89" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="107.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Niteleme</text><text x="262.5" y="125.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">“O, dosdoğru</text><text x="262.5" y="144.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">yoldur.”</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[1]['gorsel'] = akil_vahiy_karsilastirma()
-    s[4]['gorsel'] = mesaj_alanlari_panosu()
-    s[5]['gorsel'] = peygamber_ozellik_kartlari()
-    s[6]['gorsel'] = insan_peygamber_katkisi_sema()
-    s[7]['gorsel'] = vahiy_ulasma_yolu_sema()
-    s[8]['gorsel'] = kissa_amac_karti()
-    s[9]['gorsel'] = hadis_kuran_niteleme_panosu()
-    s[10]['gorsel'] = bakara_21_analiz_karti()
-    s[12]['gorsel'] = iki_ogrenci_tartisma_karti()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -32,10 +32,6 @@
         [
           "{ar:عَلِمَ}",
           "Bildi"
-        ],
-        [
-          "{ar:وَجَدَ}",
-          "Buldu"
         ]
       ]
     },
@@ -49,7 +45,8 @@
         "3. karttaki {ar:ف - ق} ikilisi",
         "4. karttaki {ar:ل - م} ikilisi"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -71,10 +68,6 @@
         {
           "metin": "{ar:هَلْ أَنْتَ عَلِيٌّ؟} sorusuna olumlu cevap verirken ‘sen’ zamiri ‘ben’ ({ar:أَنَا}) zamirine dönüşür.",
           "dogru": true
-        },
-        {
-          "metin": "Kız öğrenciye bir şey ikram ederken veya söz verirken cezimli {ar:تَفَضَّلْ} ifadesi kullanılır.",
-          "dogru": false
         }
       ]
     },
@@ -95,10 +88,6 @@
         {
           "metin": "Öğretmen erkek öğrenciden tahtadaki cümleyi okumasını isterken ___ emir fiilini söyler.",
           "cevap": "{ar:اِقْرَأْ}"
-        },
-        {
-          "metin": "Bir arkadaşımıza ikramda bulunurken erkek muhatap için ‘Buyur!’ anlamında ___ ifadesi kullanılır.",
-          "cevap": "{ar:تَفَضَّلْ}"
         }
       ],
       "fazla": [
@@ -115,12 +104,13 @@
         "{ar:مَا اسْمُكَ يَا عَلِيُّ؟} (Adın ne ey Ali?)",
         "{ar:صَبَاحُ النُّورِ} (Hayırlı sabahlar)"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki ayrı harfleri inceleyerek kelimenin birleşik yazılışını ve Türkçe anlamını tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki ayrı harfleri inceleyerek kelimenin birleşik yazılışını ve Türkçe anlamını tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Ayrı Harfler",
         "Birleşik Yazılışı",
@@ -164,14 +154,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki iki kartta yer alan {ar:ق} (Kâf) ve {ar:ك} (Kef) harflerinin nokta ve ses kalınlığı farkını kısaca yazınız.",
+      "soru": "{ar:ق} (Kâf — örnek: {ar:قَلَمٌ}) ve {ar:ك} (Kef — örnek: {ar:كَتَبَ}) harflerinin nokta sayısı ve ses kalınlığı farkını kısaca yazınız.",
       "cevap": "{ar:ق} iki noktalı ve kalın, {ar:ك} ise noktasız ve incedir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki harf çiftlerini Arap alfabesindeki doğru geliş sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Verilen harf çiftlerini Arap alfabesindeki doğru geliş sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:ط} (Tâ) ve {ar:ظ} (Zâ) harf çifti",
         "{ar:ع} (Ayn) ve {ar:غ} (Gayn) harf çifti",
@@ -189,7 +179,8 @@
         "3. kartta kız öğrenci Ayşe’ye {ar:اُكْتُبْ مِنْ فَضْلِكَ} denmesi",
         "4. kartta erkek öğrenci Hasan’a {ar:اِجْلِسْ مِنْ فَضْلِكَ} denmesi"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -201,7 +192,8 @@
         "{ar:دَرَسَ} (Çalıştı)",
         "{ar:عَلِمَ} (Bildi)"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "sifre",
@@ -234,7 +226,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki iki kelimede {ar:فَتَحَ} kelimesinin üç harfi de bitişirken {ar:وَجَدَ} kelimesinde ilk harfin ayrı kalmasının sebebini açıklayınız.",
+      "soru": "{ar:فَتَحَ} (fe-te-ha: açtı) kelimesinin üç harfi de birbiriyle bitişirken {ar:وَجَدَ} (ve-ce-de: buldu) kelimesinde ilk harfin ayrı kalmasının sebebini açıklayınız.",
       "cevap": "{ar:ف، ت، ح} sonrasına bitişir; {ar:و} harfi sonrasına birleşmez.",
       "satir": 2
     },
@@ -248,7 +240,8 @@
         "3. kutudaki {ar:م} (Mîm) harfi",
         "4. kutudaki {ar:هـ} (Hâ) harfi"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     }
   ],
   "yayin_tarihi": "2026-10-31"

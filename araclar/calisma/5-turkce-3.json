@@ -11,8 +11,7 @@
   "hatirla": [
     "Tahmin stratejisi önce öğretmenden izlenir, sonra grupla iki kez ve en sonda bireysel uygulanır; duraklarda tahmin ve gerekçe birlikte yazılır.",
     "Sözlük ve çalışma kâğıdı gibi okuma araçları amaca göre seçilir, okuma sırasında gerekirse değiştirilir ve sonunda değerlendirilir.",
-    "Metinde doğrudan cümle olarak yazan yargılar açık bilgidir; ipuçlarını ön bilgilerle birleştirip çıkarım yapmak yorumdur.",
-    "Nokta; cümle sonunda, kısaltmada, sıra sayısında ve tarihte kullanılır. Cümle sonundaki ok yukarıysa ses yükseltilir, aşağıysa alçaltılır."
+    "Metinde doğrudan cümle olarak yazan yargılar açık bilgidir; ipuçlarını ön bilgilerle birleştirip çıkarım yapmak yorumdur."
   ],
   "sorular": [
     {
@@ -31,14 +30,6 @@
         [
           "açık bilgi",
           "Yoruma gerek kalmadan metinde doğrudan cümle olarak yer alan yargı"
-        ],
-        [
-          "sözlük",
-          "Okuma sırasında bilinmeyen sözcükleri kontrol etmek için seçilen araç"
-        ],
-        [
-          "diyafram",
-          "Göğüs ile karın boşluğunu ayıran ve nefesi destekleyen kas"
         ]
       ]
     },
@@ -52,7 +43,8 @@
         "K durağında müdahale yorumlanır, L adımında sözlükten kelimeler seçilir.",
         "K durağında grup tahminleri silinir, L adımında okuma araçları değiştirilir."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -74,10 +66,6 @@
         {
           "metin": "Metindeki ipuçlarını kendi bilgilerimizle birleştirerek ulaştığımız sonuçlara açık bilgi denir.",
           "dogru": false
-        },
-        {
-          "metin": "Diyafram nefesinde karın bölgesindeki elin göğüsteki elden daha fazla hareket etmesi beklenir.",
-          "dogru": true
         }
       ]
     },
@@ -98,14 +86,6 @@
         {
           "metin": "Bir kelimenin anlamca tam karşıtı olan sözcüğe ___ anlamlı denir.",
           "cevap": "zıt"
-        },
-        {
-          "metin": "Yeni ve özgün bir oyun fikri ortaya koymak ___ kavramını gösterir.",
-          "cevap": "üretkenlik"
-        },
-        {
-          "metin": "Yazılışları aynı, anlamları farklı sözcüklere ___ sesli denir.",
-          "cevap": "eş"
         }
       ],
       "fazla": [
@@ -122,25 +102,26 @@
         "3. kart — Cümle sonuna değil, cadde kısaltmasının sonuna konmuştur.",
         "4. kart — Dakika kelimesinin kısaltmasının sonuna getirilmiştir."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki sahne kartlarının Topsuz Basketbol Oyunu’nda gerçekte yaşanan mı yoksa hayal ürünü mü olduğunu ve dayanağını yazarak tabloyu tamamlayınız.",
+      "soru": "Topsuz Basketbol Oyunu metnindeki sahnelerin gerçekte yaşanan mı yoksa hayal ürünü mü olduğunu ve dayanağını yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Sahne Kartı",
+        "Metindeki Sahne",
         "Gerçek / Hayal",
         "Metindeki Dayanağı"
       ],
       "satirlar": [
         [
-          "1. Kart (Siren sesi)",
+          "1. Moni’nin ağzıyla siren sesi çıkarması",
           "Gerçekte yaşanan",
           "Moni sesi kendi ağzıyla çıkarır."
         ],
         [
-          "2. Kart (Satürn hastanesi)",
+          "2. Mete’nin Satürn’deki hastanede iyileşmesi",
           {
             "b": "Hayal ürünü"
           },
@@ -149,7 +130,7 @@
           }
         ],
         [
-          "3. Kart (Sahada koşma)",
+          "3. Çocukların saha içinde koşuşturması",
           {
             "b": "Gerçekte yaşanan"
           },
@@ -158,7 +139,7 @@
           }
         ],
         [
-          "4. Kart (Sedye ve sargı)",
+          "4. Çantadan sedye ve sargı çıkarılması",
           {
             "b": "Hayal ürünü"
           },
@@ -171,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki iki okuma notundan hangisi metindeki açık bilgiyi, hangisi okuyucu yorumunu yansıtmaktadır? Nedenini kısaca yazınız.",
+      "soru": "Topsuz Basketbol Oyunu ile ilgili alınan iki okuma notundan «Not 1: İnci, yerde kıvranan Mete’yi görünce sağlık görevlilerini yardıma çağırdı.» ile «Not 2: Mete gezegenlere ilgi duyduğu için tedavi yeri olarak Satürn’ü seçmiş olabilir.» cümlelerinden hangisi metindeki açık bilgiyi, hangisi okuyucu yorumunu yansıtmaktadır? Nedenini kısaca yazınız.",
       "cevap": "Not 1 metinde doğrudan yazdığı için açık bilgidir; Not 2 çıkarım yaptığı için yorumdur.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki okuma yardımcı araçlarını seçip kullanma basamaklarını 1’den 4’e doğru sıralayınız.",
+      "soru": "Okuma yardımcı araçlarını seçip kullanma basamaklarını 1’den 4’e doğru sıralayınız.",
       "ogeler": [
         "Okumaya başlamadan önce amacı ve metindeki ihtiyaçları belirlemek",
         "Amaca uygun olarak sözlük veya çalışma kâğıdı gibi araçları seçmek",
@@ -196,7 +177,8 @@
         "3. cümlede aşağı bakan oka uygun biçimde sesin alçaltılması",
         "4. cümlede aşağı bakan ok bulunduğu hâlde sesin yükseltilmesi"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -208,12 +190,13 @@
         "“Kaz” sözcüğü her iki cümlede de aynı varlığın adını karşılamaktadır.",
         "“Üzülmek” ile “sevinmek” birbiriyle yakın anlamlı olarak eşleştirilmiştir."
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki nefes egzersizi ölçüm kartına göre Kerem ve Aslı’dan hangisi diyafram nefesini doğru uygulamaktadır? Gerekçesiyle yazınız.",
+      "soru": "Mum üfleme nefes egzersizinde Kerem’in göğsündeki el çok, karnındaki el az hareket etmiş; Aslı’nın ise göğsündeki el az, karnındaki el çok hareket etmiştir. Buna göre Kerem ve Aslı’dan hangisi diyafram nefesini doğru uygulamaktadır? Gerekçesiyle yazınız.",
       "cevap": "Aslı doğru uygulamaktadır; diyafram nefesinde karındaki el daha çok hareket etmelidir.",
       "satir": 2
     },
@@ -258,7 +241,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki A ve B davranış kartlarının hangi tutum veya kavramları yansıttığını davranışlarla ilişkilendirerek yazınız.",
+      "soru": "Oyun sırasında «A durumu: Toplar patlayınca maçı bırakmayıp oyunun sürmesi için çözüm aramak» ve «B durumu: Yerde kıvranan arkadaşının yanına koşup incinen bileğini sarmak» davranışlarının hangi tutum veya değerleri yansıttığını davranışlarla ilişkilendirerek yazınız.",
       "cevap": "A kartı pes etmemeyi anlattığı için kararlılığı, B kartı destek olmayı anlattığı için yardımseverliği gösterir.",
       "satir": 3
     },

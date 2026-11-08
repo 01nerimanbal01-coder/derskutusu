@@ -30,10 +30,6 @@
         [
           "{ar:فِي الْمَخْفَرِ}",
           "Karakolda"
-        ],
-        [
-          "{ar:اَلْمَعْرُوفُ}",
-          "İyilik ve güzel davranış"
         ]
       ]
     },
@@ -47,7 +43,8 @@
         "Başlarındaki {ar:اَلْ} takısında {ar:ل} harfinin okunmayıp ilk harflerinin şeddeli okunması",
         "Hepsinin son harfinde iki ötre (tenvin) işaretinin korunması"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -69,10 +66,6 @@
         {
           "metin": "«{ar:لا يَعْمَلُ والِدي في الْمَطْعَمِ}» cümlesi ‘Babam lokantada çalışmıyor’ anlamına gelir.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:عَمَّتي مُمَرِّضَةٌ نَشيطٌ}» cümlesinde meslek ile sıfat arasında tam bir dişil uyumu vardır.",
-          "dogru": false
         }
       ]
     },
@@ -93,10 +86,6 @@
         {
           "metin": "«{ar:لا تَعْمَلُ والِدَتي في} ___» cümlesi ‘Annem karakolda çalışmıyor’ demektir.",
           "cevap": "{ar:الْمَخْفَرِ}"
-        },
-        {
-          "metin": "Vecizedeki «{ar:اَلْأَقْرَبُونَ} ___ {ar:بِالْمَعْرُوفِ}» sözünde ‘daha layık’ demektir.",
-          "cevap": "{ar:أَوْلَى}"
         }
       ],
       "fazla": [
@@ -113,12 +102,13 @@
         "3. kartta {ar:عَمَّتي طَبّاخَةٌ ماهِرَةٌ} (Halam becerikli bir aşçıdır) denilmesi",
         "4. kartta {ar:خالَتي مُحامِيَةٌ ماهِرٌ} (Teyzem becerikli bir avukattır) denilmesi"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki belirsiz (nekra) kelimelerin başına {ar:اَلْ} getirerek belirli (marife) yazılışını ve ilk harfin türünü (Şemsî / Kamerî) tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki belirsiz (nekra) kelimelerin başına {ar:اَلْ} getirerek belirli (marife) yazılışını ve ilk harfin türünü (Şemsî / Kamerî) tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Belirsiz İsim",
         "Belirli ({ar:اَلْ}) Yazılışı",
@@ -162,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki «{ar:عَمّي فَلّاحٌ نَشيطٌ}» (Amcam çalışkan bir çiftçidir) cümlesini «{ar:عَمَّتي}» (Halam) öznesine göre dişil (müennes) olarak yeniden yazınız.",
+      "soru": "«{ar:عَمّي فَلّاحٌ نَشيطٌ}» (Amcam çalışkan bir çiftçidir) cümlesini «{ar:عَمَّتي}» (Halam) öznesine göre dişil (müennes) olarak yeniden yazınız.",
       "cevap": "{ar:عَمَّتي فَلّاحَةٌ نَشيطَةٌ} (Halam çalışkan bir çiftçidir).",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki «Ailem ve Akrabalarım» tanıtım paragrafının cümlelerini metindeki anlam akışına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "«Ailem ve Akrabalarım» tanıtım paragrafının cümlelerini anlam bütünlüğüne göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:هٰذِهِ عائِلَتي. والِدي مُعَلِّمٌ نَشيطٌ في الْمَدْرَسَةِ}",
         "{ar:وَوالِدَتي مُمَرِّضَةٌ ماهِرَةٌ في الْمُسْتَشْفى}",
@@ -187,7 +177,8 @@
         "Akraba adlarının tamamı Şemsî, meslek adlarının tamamı ise Kamerî harfle başlamaktadır",
         "{ar:اَل} takısından sonraki harfin harekesi ötre ise Şemsî, esre ise Kamerî harftir"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -199,7 +190,8 @@
         "Amcam okulda çalışmıyor, o karakolda polis olarak çalışıyor",
         "Dedem hastanede çalışmıyor, o evde dinleniyor"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "sifre",
@@ -237,7 +229,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki {ar:اَلطَّبّاخُ} ve {ar:اَلطَّبّاخٌ} yazımlarından hangisinin doğru olduğunu Harf-i Tarif ({ar:اَلْ}) ve tenvin kuralına göre açıklayınız.",
+      "soru": "«{ar:اَلطَّبّاخُ}» (tek ötreli) ve «{ar:اَلطَّبّاخٌ}» (iki ötreli / tenvinli) yazımlarından hangisinin doğru olduğunu Harf-i Tarif ({ar:اَلْ}) ve tenvin kuralına göre açıklayınız.",
       "cevap": "{ar:اَلطَّبّاخُ} doğrudur; {ar:اَلْ} alan kelimede tenvin olmaz.",
       "satir": 2
     },
@@ -251,7 +243,8 @@
         "Babam çiftlikte — Annem lokantada",
         "Babam evde — Annem iş yerinde"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     }
   ],
   "yayin_tarihi": "2026-10-31"

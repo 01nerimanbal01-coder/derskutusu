@@ -11,8 +11,7 @@
   "hatirla": [
     "Güneş hakkında bilgiye ulaşırken dört adım izlenir: 1. Araç belirle, 2. Bilgiyi bul, 3. Bilgiyi doğrula, 4. Kaydet ve düzelt.",
     "Güneş Günlüğü üç A4 kâğıdının katlanıp kurdeleyle bağlanmasıyla hazırlanır; önce bilinenler, sonra öğrenilenler yazılır ve konu boyunca güncellenir.",
-    "Güneş’e kamera, mercek, dürbün ve teleskopla doğrudan bakılmaz; özel filtre kullanılır veya görüntü beyaz ekrana yansıtılır.",
-    "Güneş yüzeyindeki koyu bölgelerin (Güneş lekelerinin) birlikte aynı yöne kayması Güneş’in döndüğünü gösterir; Güneş çok uzakta olduğu için küçük görünür."
+    "Güneş’e kamera, mercek, dürbün ve teleskopla doğrudan bakılmaz; özel filtre kullanılır veya görüntü beyaz ekrana yansıtılır."
   ],
   "sorular": [
     {
@@ -31,14 +30,6 @@
         [
           "Güneş Günlüğü",
           "Konu boyunca not, çizim ve kupürlerle sürdürülen kayıt kitapçığı"
-        ],
-        [
-          "özel filtre",
-          "Teleskopla Güneş gözlemi yaparken gözleri koruyan aparat"
-        ],
-        [
-          "Galileo Galilei",
-          "Lekelerin kaymasını izleyerek Güneş’in döndüğünü fark eden bilim insanı"
         ]
       ]
     },
@@ -52,7 +43,8 @@
         "K: Kaydet ve düzelt — L: Bilgiyi bul",
         "K: Tahminde bulun — L: Kaynağı değiştir"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -74,10 +66,6 @@
         {
           "metin": "Bir bilginin sınıfta pek çok kişi tarafından tekrarlanması o bilginin doğrulandığını gösterir.",
           "dogru": false
-        },
-        {
-          "metin": "Görünen boyut etkinliğinde topların aynı doğrultuda dizilmesi karşılaştırma yapmayı sağlar.",
-          "dogru": true
         }
       ]
     },
@@ -98,14 +86,6 @@
         {
           "metin": "Gök bilimciler bazen Güneş görüntüsünü beyaz bir ___ üzerine yansıtır.",
           "cevap": "ekran"
-        },
-        {
-          "metin": "Güneş gerçekte çok büyük olduğu hâlde Dünya’dan çok ___ bulunur.",
-          "cevap": "uzakta"
-        },
-        {
-          "metin": "Toplanan bilgiler öğretmene veya ___ kaynaklara danışılarak doğrulanır.",
-          "cevap": "bilimsel"
         }
       ],
       "fazla": [
@@ -122,25 +102,26 @@
         "3. Kart: Güneş ışığını büyüteç veya filtresiz dürbünle doğrudan göze odaklamak",
         "4. Kart: Gözlem zamanını Güneş’in batmasına yakın saatlere denk getirmek"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki araştırma kartlarının bilgiye ulaşmanın hangi adımına ait olduğunu ve bu adımın amacını yazarak tabloyu tamamlayınız.",
+      "soru": "Tablodaki araştırma uygulamalarının bilgiye ulaşmanın hangi adımına ait olduğunu ve bu adımın amacını yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Araştırma Kartı",
+        "Araştırma Uygulaması",
         "Bilgiye Ulaşma Adımı",
         "Bu Adımın Amacı"
       ],
       "satirlar": [
         [
-          "1. Kart (Kaynak seçimi)",
+          "1. Kütüphane ve dijital kaynak seçimi",
           "Araç belirleme",
           "Bilgiyi hangi kaynaklardan alacağını seçmek"
         ],
         [
-          "2. Kart (İlgili bölümü ayıklama)",
+          "2. İlgili bölümü ayıklama",
           {
             "b": "Bilgiyi bulma"
           },
@@ -149,7 +130,7 @@
           }
         ],
         [
-          "3. Kart (Bilimsel kaynakla sınama)",
+          "3. Bilimsel kaynakla sınama",
           {
             "b": "Bilgiyi doğrulama"
           },
@@ -158,7 +139,7 @@
           }
         ],
         [
-          "4. Kart (Günlüğe yazıp düzeltme)",
+          "4. Günlüğe yazıp düzeltme",
           {
             "b": "Kaydetme ve düzeltme"
           },
@@ -171,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görselde farklı günlerde yapılan üç gözlemde Güneş yüzeyindeki X, Y ve Z koyu bölgelerinin konumları verilmiştir. Bölgelerin birbirine göre duruşunu koruyarak birlikte yer değiştirmesi neyi kanıtlar?",
+      "soru": "Bir öğrenci güvenli filtreli teleskopla yaptığı üç gözlemde Güneş üzerindeki X, Y ve Z leke bölgelerinin 1. gözlemde sol kenara yakın, 3 gün sonra ortaya yakın, 6 gün sonra ise sağ kenara yakın olduğunu kaydetmiştir. Bölgelerin birbirine göre duruşunu koruyarak birlikte yer değiştirmesi neyi kanıtlar?",
       "cevap": "Güneş’in kendi ekseni etrafında döndüğünü ve kayma yönüyle dönme yönünü kanıtlar.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki Güneş Günlüğü’nün katlanıp bağlanmasından bilgilerin düzeltilmesine kadar yapılan işlemleri sırasıyla numaralandırınız.",
+      "soru": "Güneş Günlüğü’nün katlanıp bağlanmasından bilgilerin doğrulanıp düzeltilmesine kadar yapılan işlemleri sırasıyla numaralandırınız.",
       "ogeler": [
         "Üç A4 kâğıdını ikiye katlayıp iç içe geçirmek ve kurdeleyle bağlamak",
         "İlk sayfaya tarihi yazıp Güneş hakkındaki ön bilgileri not etmek",
@@ -196,7 +177,8 @@
         "Cisimlerin algılanan büyüklüğü, gözlemciye olan uzaklıklarına bağlı olarak değişir.",
         "Güneş’in küçük görünmesinin nedeni gerçek çapının Dünya’dan küçük olmasıdır."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -208,12 +190,13 @@
         "Yalnızca Ay’ın kraterlerini fotoğraflamak için Dünya yörüngesine yerleştirilmiştir.",
         "Bilim insanlarının Güneş gözlemlerinde filtre kullanma ihtiyacını ortadan kaldırmıştır."
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görselde 1. durumda tek bir günün Güneş çizimi, 2. durumda ise belirli aralıklarla yapılmış üç çizim yer almaktadır. Galileo Galilei’nin Güneş’in döndüğünü kanıtlaması için neden 2. durumdaki gibi çalışması gerekmiştir?",
+      "soru": "1. durumda yalnızca tek bir günün Güneş lekesi çizimi yapılmış, 2. durumda ise belirli gün aralıklarıyla arka arkaya üç çizim yapılmıştır. Galileo Galilei’nin Güneş’in döndüğünü kanıtlaması için neden 2. durumdaki gibi çalışması gerekmiştir?",
       "cevap": "Tek gözlem yalnız lekelerin yerini gösterir; dönüşü anlamak için farklı günler karşılaştırılır.",
       "satir": 2
     },
@@ -258,9 +241,9 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görselde Kerem’in çalışmaya başlarken Güneş Günlüğü’ne yazdığı ilk not verilmiştir. Kerem bilimsel kaynaklarla doğrulama yaptıktan sonra bu nottaki hangi iki hatayı nasıl düzeltmelidir?",
+      "soru": "Kerem, doğrulama öncesindeki ilk günlük notuna «1. Güneş gökyüzünde hareketsiz durur. 2. Yüzeydeki koyu renkli bölgeler Güneş’in katmanlarıdır.» yazmıştır. Kerem bilimsel kaynaklarla doğrulama yaptıktan sonra bu nottaki iki hatayı nasıl düzeltmelidir?",
       "cevap": "1. Güneş hareketsiz değildir, ekseninde döner. 2. Koyu bölgeler katman değil, Güneş lekesidir.",
-      "satir": 3
+      "satir": 2
     },
     {
       "tur": "coktan",

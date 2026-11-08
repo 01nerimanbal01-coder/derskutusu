@@ -10,8 +10,7 @@
   "hatirla": [
     "İki doğru kesişen (bir ortak nokta), paralel (ortak nokta yok) ya da çakışık (bütün noktalar ortak) olabilir. Paralel doğrular arasında açı oluşmaz.",
     "Kesişen iki doğru dört açı oluşturur: ikisi dar, ikisi geniş ya da dördü de dik. Dördü dik olan doğrular dik doğrulardır: {dogru:AB} ⊥ {dogru:CD}.",
-    "Ters açılar eş ölçülüdür. Kesişen iki doğrunun oluşturduğu komşu açıların ölçüleri toplamı 180°’dir.",
-    "Ölçüleri toplamı 90° olan açılar tümler, 180° olan açılar bütünlerdir. Kesen, iki paralel doğruyu keserse sekiz açı oluşur."
+    "Ters açılar eş ölçülüdür. Kesişen iki doğrunun oluşturduğu komşu açıların ölçüleri toplamı 180°’dir."
   ],
   "sorular": [
     {
@@ -30,14 +29,6 @@
         [
           "çakışık doğrular",
           "Üst üste çizilmiş gibi görünen, bütün noktaları ortak doğrular"
-        ],
-        [
-          "komşu açılar",
-          "Köşesi ve bir kolu ortak, öbür kolları ortak kolun iki yanında kalan açılar"
-        ],
-        [
-          "kesen",
-          "İki doğrunun her birini ayrı birer noktada kesen doğru"
         ]
       ]
     },
@@ -51,7 +42,8 @@
         "2 ve 3",
         "1, 2 ve 3"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -73,14 +65,6 @@
         {
           "metin": "{dogru:AB} ⊥ {dogru:CD} gösterimi, iki doğrunun paralel olduğunu belirtir.",
           "dogru": false
-        },
-        {
-          "metin": "Ölçüsü 35° olan bir açının tümleri 55°’dir.",
-          "dogru": true
-        },
-        {
-          "metin": "İki açının bütünler sayılması için komşu olmaları gerekir.",
-          "dogru": false
         }
       ]
     },
@@ -94,12 +78,13 @@
         "Fırın: 65°, Eczane: 115°",
         "Fırın: 25°, Eczane: 115°"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görselde {dogru:RT} ve {dogru:SU} doğruları O noktasında kesişmektedir. Açı çiftlerinin ters mi komşu mu olduğunu ve ölçüleri arasındaki ilişkiyi yazınız.",
+      "soru": "Düzlemde {dogru:RT} ve {dogru:SU} doğruları O noktasında kesişerek sırasıyla {aci:ROS}, {aci:SOT}, {aci:TOU} ve {aci:UOR} açılarını oluşturmaktadır. Açı çiftlerinin ters mi komşu mu olduğunu ve ölçüleri arasındaki ilişkiyi tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Açı çifti",
         "Ters / komşu",
@@ -143,22 +128,22 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki her çizimde üç doğru aynı noktada kesişmektedir. Her çizimde oluşan altı açının kaçının dar, kaçının dik, kaçının geniş olduğunu yazınız.",
+      "soru": "Üç doğrunun aynı noktada kesiştiği üç farklı durumda oluşan altı açının kaçının dar, kaçının dik, kaçının geniş olduğunu tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
-        "Çizim",
+        "Kesişim Durumu",
         "Dar açı",
         "Dik açı",
         "Geniş açı"
       ],
       "satirlar": [
         [
-          "1. çizim",
+          "1. durum (0°, 25° ve 55° eğimli üç doğru)",
           "4",
           "0",
           "2"
         ],
         [
-          "2. çizim",
+          "2. durum (0°, 40° ve 90° eğimli üç doğru)",
           {
             "b": "4"
           },
@@ -170,7 +155,7 @@
           }
         ],
         [
-          "3. çizim",
+          "3. durum (0°, 60° ve 120° eğimli üç doğru)",
           {
             "b": "6"
           },
@@ -193,21 +178,22 @@
         "9 açı oluşur; 3’ü dik açıdır.",
         "6 açı oluşur; 2’si dik açıdır."
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görselde {dogru:d₁} // {dogru:d₂} doğrularını k doğrusu kesmektedir. Açılardan biri 58° olarak verilmiştir. 1, 2 ve 3 numaralı açıların ölçülerini yazınız.",
+      "soru": "Paralel {dogru:d{alt:1}} ve {dogru:d{alt:2}} doğrularını kesen k doğrusunun üst kesişiminde sağ üstteki dar açı 58°, sol üstteki komşu bütünler geniş açı 1 numaralı açıdır. Alt kesişimde ise aynı yöne bakan sağ üstteki dar açı 2 numaralı, sağ alttaki geniş açı 3 numaralı açıdır. Buna göre 1, 2 ve 3 numaralı açıların ölçülerini yazınız.",
       "cevap": "1: 122° (58° ile komşu). 2: 58°, 3: 122° (öbür kesişimdeki eş açılar).",
       "satir": 2
     },
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Ece, kesişen iki doğrunun oluşturduğu dört açıyı açıölçerle ölçüp sonuçları görseldeki karta yazmıştır. Ölçümlerden biri hatalıdır. Hatalı ölçümü bulunuz; nasıl anladığınızı açıklayıp doğru ölçüyü yazınız.",
+      "soru": "Ece, kesişen iki doğrunun sırasıyla oluşturduğu dört açıyı açıölçerle ölçüp sonuçları «1. açı: 48°, 2. açı: 132°, 3. açı: 48°, 4. açı: 122°» olarak not etmiştir. Ölçümlerden biri hatalıdır. Hatalı ölçümü bulunuz; nasıl anladığınızı açıklayıp doğru ölçüyü yazınız.",
       "cevap": "4. açının ölçümü hatalıdır. 4. açı, 2. açının ters açısıdır; 132° olmalıdır. Ayrıca 3. ve 4. açılar komşudur; toplamları 48° + 132° = 180° etmelidir.",
-      "satir": 3
+      "satir": 4
     },
     {
       "tur": "coktan",
@@ -219,14 +205,15 @@
         "Fark, açı küçüldükçe büyür.",
         "Fark, açıdan bağımsız olarak 90°’dir."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki makasın sapları ve ağızları, perçin noktasında kesişen iki doğru gibi düşünülebilir. Sapların arasındaki açı 40° ise ağızların arasındaki açı kaç derecedir? Kullandığınız açı ilişkisini yazınız.",
+      "soru": "Bir makasın sapları ve ağızları, perçin noktasında kesişen iki doğru gibi düşünülebilir. Sapların arasındaki açı 40° ise ağızların arasındaki açı kaç derecedir? Kullandığınız açı ilişkisini yazınız.",
       "cevap": "40°’dir. Sapların arasındaki açı ile ağızların arasındaki açı ters açılardır; ters açılar eş ölçülüdür.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "coktan",
@@ -238,7 +225,8 @@
         "Üst kesişimdeki dar açı, alt kesişimdeki geniş açıyla eş ölçülüdür.",
         "Parçalar üst üste konunca açıların ölçüleri yarı yarıya küçülür."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "siralama",

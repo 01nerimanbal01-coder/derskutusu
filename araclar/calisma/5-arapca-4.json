@@ -32,10 +32,6 @@
         [
           "{ar:يَا أُسْتَاذِي}",
           "Ey öğretmenim"
-        ],
-        [
-          "{ar:يَا صَدِيقِي}",
-          "Ey arkadaşım"
         ]
       ]
     },
@@ -49,7 +45,8 @@
         "3. karttaki {ar:قُمْ} ve {ar:اِقْرَأْ} yönergeleri",
         "4. karttaki {ar:اِجْلِسْ} ve {ar:اُكْتُبْ} yönergeleri"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -71,10 +68,6 @@
         {
           "metin": "«{ar:اَلسَّلَامُ قَبْلَ الْكَلَامِ}» hadis-i şerifinde geçen {ar:قَبْلَ} kelimesi ‘önce’ anlamına gelir.",
           "dogru": true
-        },
-        {
-          "metin": "{ar:فِي أَمَانِ اللَّهِ} ifadesi yeni tanıştığımız bir kişinin adını öğrenmek için sorulan bir sorudur.",
-          "dogru": false
         }
       ]
     },
@@ -95,10 +88,6 @@
         {
           "metin": "{ar:هَلْ أَنْتَ تِلْمِيذٌ؟} sorusuna olumlu cevap veren erkek öğrenci ‘Evet, ben öğrenciyim’ anlamında ___ {ar:، أَنَا تِلْمِيذٌ} der.",
           "cevap": "{ar:نَعَمْ}"
-        },
-        {
-          "metin": "Kız arkadaşımızdan kibarca bir şey rica ederken ‘Lütfen’ anlamında ___ kalıbını kullanırız.",
-          "cevap": "{ar:مِنْ فَضْلِكِ}"
         }
       ],
       "fazla": [
@@ -115,12 +104,13 @@
         "3. kutudaki {ar:بُ} harfi Fetha (Üstün) almıştır ve ‘ba’ diye okunur",
         "3. kutudaki {ar:بُ} harfi Damme (Ötre) almıştır ve ‘bü’ diye okunur"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki hadis-i şerif kelimelerini inceleyerek her kelimenin okunuşunu ve Türkçe anlamını tabloya yazınız. İlk satır örnektir.",
+      "soru": "«{ar:اَلسَّلَامُ قَبْلَ الْكَلَامِ}» hadis-i şerifindeki kelimeleri inceleyerek her kelimenin okunuşunu ve Türkçe anlamını tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Hadisteki Kelime",
         "Okunuşu",
@@ -155,14 +145,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki iki konuşma balonunda yer alan {ar:أَنْتَ} ve {ar:أَنْتِ} zamirlerinin kime hitap ettiğini ve kendilerinden sonra gelen ‘Lütfen’ kalıbını nasıl değiştirdiğini yazınız.",
+      "soru": "«{ar:أَنْتَ · مِنْ فَضْلِكَ}» (Ente · Min fadlike) ve «{ar:أَنْتِ · مِنْ فَضْلِكِ}» (Enti · Min fadliki) ifadelerinde yer alan {ar:أَنْتَ} ve {ar:أَنْتِ} zamirlerinin kime hitap ettiğini ve ‘Lütfen’ kalıbının sonunu nasıl değiştirdiğini yazınız.",
       "cevap": "{ar:أَنْتَ} erkek ({ar:ـكَ}), {ar:أَنْتِ} ise kız ({ar:ـكِ}) muhatap içindir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki harf ve hareke yazım adımlarını doğru uygulama sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Arapça harf ve hareke yazım adımlarını doğru uygulama sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "Kalemi satırın sağ tarafına koyarak yazıma sağdan sola başlama",
         "Harfin ana gövdesini satır çizgisine göre yukarıdan aşağıya çizme",
@@ -180,7 +170,8 @@
         "{ar:مَرْحَبًا بِكَ يَا أَحْمَدُ} (Sana merhaba ey Ahmet)",
         "{ar:صَبَاحُ الْخَيْرِ} (Hayırlı sabahlar)"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -192,7 +183,8 @@
         "{ar:ع، غ، ن} harf grubu",
         "{ar:ب، د، ط} harf grubu"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "sifre",
@@ -235,7 +227,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki tanışma diyaloğunda Ali’nin konuşmaya doğrudan ‘Adın ne?’ diye başlamayıp önce {ar:اَلسَّلَامُ عَلَيْكُمْ} demesinin iletişim adabındaki gerekçesini yazınız.",
+      "soru": "Bir tanışma konuşmasında Ali’nin muhatabına doğrudan «{ar:مَا اسْمُكِ؟}» (Adın ne?) diye başlamayıp önce «{ar:اَلسَّلَامُ عَلَيْكُمْ}» demesinin iletişim adabındaki gerekçesini yazınız.",
       "cevap": "«Selam kelamdan öncedir» hadisi gereği söze selamla başlanır.",
       "satir": 2
     },
@@ -249,7 +241,8 @@
         "{ar:قُومِي - اِقْرَئِي}",
         "{ar:اِجْلِسِي - اُكْتُبِي}"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     }
   ],
   "yayin_tarihi": "2026-10-31"

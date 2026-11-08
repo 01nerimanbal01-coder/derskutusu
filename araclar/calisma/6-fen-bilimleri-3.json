@@ -11,8 +11,7 @@
   "hatirla": [
     "Tutulma bilgileri güvenilir kaynaklardan toplanır; ülkemizdeki ve dünyadaki en son ile en yakın tarihler kaydedilir.",
     "Güneş tutulmasında el feneri, küçük top (Ay) ve büyük top (Dünya); Ay tutulmasında el feneri, büyük top ve küçük top aynı hizaya dizilir.",
-    "Ortadaki malzeme gölgeyi oluşturan cisimdir; iki tutulma arasında Güneş yerinde kalır, Ay ile Dünya yer değiştirir.",
-    "Model kontrolünde ortadaki malzemeye, hizaya ve Dünya topunun Ay’dan büyük olmasına bakılır. Takıyyüddin, Zerkâle ve Dilhan Eryurt astronomiye katkı sağlamıştır."
+    "Ortadaki malzeme gölgeyi oluşturan cisimdir; iki tutulma arasında Güneş yerinde kalır, Ay ile Dünya yer değiştirir."
   ],
   "sorular": [
     {
@@ -31,14 +30,6 @@
         [
           "Dilhan Eryurt",
           "Güneş’in geçmişini inceleyerek Apollo Başarı Ödülü alan astronom"
-        ],
-        [
-          "kayıt diyagramı",
-          "Önceden bilinenler, malzemeler, sıra ve öğrenilenler şeması"
-        ],
-        [
-          "rol metni",
-          "Canlandırma öncesi gök cisminin konumlarını anlatan hazırlık yazısı"
         ]
       ]
     },
@@ -52,7 +43,8 @@
         "K’den L’ye geçilirken el feneri ile büyük topun yeri değiştirilmiştir.",
         "Her iki düzenekte de uzaklık ve büyüklük gerçek değerlerle aynıdır."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -74,10 +66,6 @@
         {
           "metin": "Endülüs’te yaşayan Zerkâle, bazı gezegenlerin yörüngelerinin eliptik olduğu fikrini sunmuştur.",
           "dogru": true
-        },
-        {
-          "metin": "Maskeli rol canlandırmasında Güneş’i temsil eden öğrenci iki tutulma arasında hizanın sonuna geçer.",
-          "dogru": false
         }
       ]
     },
@@ -98,14 +86,6 @@
         {
           "metin": "İstanbul Gözlemevini kurarak astronomiye katkı yapan bilgin ___’dir.",
           "cevap": "Takıyyüddin"
-        },
-        {
-          "metin": "Dilhan Eryurt başarılı çalışmalarıyla ___ Başarı Ödülü almıştır.",
-          "cevap": "Apollo"
-        },
-        {
-          "metin": "Üç malzeme aynı ___ dizilmezse beklenen gölge top üzerine düşmez.",
-          "cevap": "hizaya"
         }
       ],
       "fazla": [
@@ -122,14 +102,15 @@
         "3. grup — Dünya topu Ay’dan küçük seçildiği hâlde doğru sayılmıştır.",
         "4. grup — Güneş tutulmasında küçük top yerine büyük top ortaya konmuştur."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki kayıt diyagramını Ay tutulması model çalışmasına uygun olarak doldurmak için tabloyu tamamlayınız.",
+      "soru": "Ay tutulması deney düzeneği çalışmasına ait kayıt tablosunu uygun bilgilerle tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Diyagram Bölümü",
+        "Çalışma Bölümü",
         "Ay Tutulması Karşılığı",
         "Bölümün Rolü"
       ],
@@ -171,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki rol metni kartlarına göre K ve L maskeleri hangi gök cisimlerini temsil etmektedir? İki tutulma arasında nasıl hareket ederler?",
+      "soru": "Tutulma canlandırmasında Güneş her iki tutulmada da ilk sırada sabit dururken; K gök cismi Güneş tutulmasında ortada, Ay tutulmasında sonda; L gök cismi ise Güneş tutulmasında sonda, Ay tutulmasında ortada durmaktadır. K ve L hangi gök cisimlerini temsil eder ve iki tutulma arasında nasıl yer değiştirir?",
       "cevap": "K maskesi Ay’ı, L maskesi Dünya’yı temsil eder; Güneş sabit kalır, K ve L yer değiştirir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki tutulma araştırması ve rapor sunumu basamaklarını oluş sırasıyla numaralandırınız.",
+      "soru": "Güneş ve Ay tutulmalarını araştırma ve rapor sunumu basamaklarını uygulanış sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "Dijital, yazılı ve görsel kaynaklar ile gözlemlerden bilgi toplamak",
         "Merak edilen soruları paylaşıp bilgileri arkadaşlarla değerlendirmek",
@@ -196,7 +177,8 @@
         "Dilhan Eryurt, Güneş’in evrimi üzerine çalışmalarla tanınmıştır.",
         "Her üç bilgin de aynı yüzyılda ortak tutulma deneyleri yürütmüştür."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -208,12 +190,13 @@
         "Ülkemizdeki ve dünyadaki tutulmalar aynı gün olduğundan tek tarih yazmak",
         "Yalnız geçmiş tutulmaları yazıp gelecek tutulma sütunlarını boş bırakmak"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki düzenekte öğrencinin yaptığı yorum bilimsel modelleme açısından doğru mudur? Modelden hangi bilginin çıkarılabileceğini yazınız.",
+      "soru": "El feneri, 30 cm uzaktaki büyük top ve 10 cm uzaktaki küçük topla kurulan tutulma düzeneği için bir öğrenci «Düzenekteki uzaklıklar ve küre boyutları uzaydaki gerçek ölçülerle birebir aynıdır.» demiştir. Bu yorum bilimsel açıdan doğru mudur? Bu düzenekten hangi bilginin çıkarılabileceğini yazınız.",
       "cevap": "Yanlıştır; model büyüklük ve uzaklığı birebir göstermez, yalnız cisimlerin sırasını gösterir.",
       "satir": 2
     },
@@ -258,19 +241,19 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görselde Güneş tutulması için kurulan modelde yapılan iki hatayı belirleyiniz ve modelin doğru çalışması için nasıl düzeltileceğini yazınız.",
+      "soru": "Güneş tutulmasını göstermek isteyen bir öğrenci; el fenerinin ardından ortaya hizadan kaymış küçük Dünya topunu, en sona ise büyük Ay topunu yerleştirmiştir. Bu düzenekte yapılan iki hatayı belirleyiniz ve düzeneğin doğru çalışması için nasıl düzeltileceğini yazınız.",
       "cevap": "1. Malzemeler aynı hizaya getirilmelidir. 2. Ortaya Ay için küçük top, sona Dünya için büyük top konmalıdır.",
       "satir": 3
     },
     {
       "tur": "coktan",
       "duzey": "ust",
-      "soru": "Bir öğrenci “Güneş tutulması modelinde gölgenin oluşması için ortada küçük topun bulunması yeterlidir; topların aynı doğrultuda olup olmaması sonucu değiştirmez.” diyor. Bu düşünceyi test etmek için yapılacak en uygun deney aşağıdakilerden hangisidir?",
+      "soru": "Bir öğrenci “Güneş tutulması deney düzeneğinde gölgenin oluşması için ortada küçük topun bulunması yeterlidir; topların aynı doğrultuda olup olmaması sonucu değiştirmez.” diyor. Bu düşünceyi test etmek için yapılacak en uygun deney aşağıdakilerden hangisidir?",
       "secenekler": [
         "El fenerini kapatıp sınıf ışıklarını açarak topları yeniden gözlemlemek",
         "Büyük top ile küçük topu yaklaştırıp feneri arkalarına koymak",
         "Küçük topu ortada bırakıp hizadan kaydırarak gölge oluşumuna bakmak",
-        "Modeldeki topların yerine aynı boyda iki kare karton kutu koymak"
+        "Düzenekteki topların yerine aynı boyda iki kare karton kutu koymak"
       ],
       "dogru": 2
     }
