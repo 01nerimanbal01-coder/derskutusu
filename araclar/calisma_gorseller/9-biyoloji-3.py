@@ -1,86 +1,103 @@
-"""9. sınıf Biyoloji 3. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-biyoloji-3 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bilimsel bilgi türleri '
+    'kartları"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Hipotez</text><text x="87.5" y="49.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Sınanabilir önerme</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Teori</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Geniş kapsamlı</text><text x="262.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">neden</text><rect x="4" y="71" width="167" '
+    'height="64" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="98.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Kanun</text><text x="87.5" y="117.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Nasıl işlediği '
+    'ilkesi</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Gözlem</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Duyu/araçla veri</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">tespiti</text></svg>',
+ 1: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bilimin dinamik doğası '
+    'şeması"><rect x="4" y="3" width="342" height="80" rx="5" fill="#f4f8fe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Yeni Kanıtlar ve '
+    'Gözlemler Mevcut Bilgiyi</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Geliştirir</text><text x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Bilimsel teoriler mutlak dogmalar değil,</text><text x="11.0" y="75.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">sürekli sınanan '
+    'açıklamalardır.</text></svg>',
+ 2: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Teori ve kanun farkı '
+    'panosu"><rect x="4" y="3" width="342" height="117" rx="5" fill="#eef1f6" stroke="#9aa6bd" stroke-width="0.75"/><text x="11.0" '
+    'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">TEORİ VE KANUN '
+    'İLİŞKİSİ · FARKLI BİLGİ ·</text><text x="11.0" y="38.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">TÜRLERİ</text><text x="11.0" y="57.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Teori &quot;Neden?&quot;, Kanun &quot;Nasıl?&quot; sorusuna</text><text x="11.0" '
+    'y="75.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">yanıt '
+    'verir.</text><text x="11.0" y="93.9" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">Teoriler kanıtlandıkça asla kanuna</text><text x="11.0" y="112.3" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">dönüşmez, her ikisi de ayrı türdür.</text></svg>',
+ 3: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bilimin temel '
+    'nitelikleri panosu"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Kanıt '
+    'Odaklı</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Gözlem ve deney</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Sorgulayıcı</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kuşkucu yaklaşım</text><rect x="4" y="52" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="79.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Yaratıcılık</text><text x="87.5" y="98.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hayal gücü ve akıl</text><rect x="179" y="52" width="167" '
+    'height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Evrensel Etik</text><text x="262.5" y="88.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dürüstlük ve</text><text '
+    'x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">tarafsızlık</text></svg>',
+ 5: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bilimsel yöntem '
+    'basamakları akış şeması"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Deney</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Kontrollü sınama</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Hipotez</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sınanabilir önerme</text><rect x="4" y="52" width="167" '
+    'height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Veri</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ölçüm ve '
+    'kayıt</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Problem</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Merak ve gözlem</text></svg>',
+ 6: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kontrollü deney '
+    'değişkenleri panosu"><rect x="4" y="3" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0e8fa8">KONTROLLÜ DENEY DÜZENEĞİ · ENZİM HIZI</text><rect x="4" y="31" width="342" height="43" rx="5" fill="#eaf7fa" '
+    'stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="48.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0e8fa8">Bağımsız Değişken:</text><text x="11.0" y="66.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Sıcaklık Değerleri</text><rect x="4" y="77" '
+    'width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="94.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Bağımlı Değişken:</text><text x="11.0" '
+    'y="112.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Tepkime '
+    'Hızı</text></svg>',
+ 8: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deney değişken türleri '
+    'kartı"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Bağımsız</text><text '
+    'x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Müdahale edilen</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">etken</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">Bağımlı Ölçülen</text><text x="262.5" y="49.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">netice</text><rect x="4" y="71" width="167" '
+    'height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="98.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Sabit</text><text x="87.5" y="117.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Değişmeyen '
+    'koşullar</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Deney '
+    'Grubu</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Uygulama yapılan</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">örnek</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def g0():
-    ic = kutu(4, 4, 352, 92, GRI_A, GRI)
-    turler = [('Hipotez', 'Sınanabilir önerme', MAVI, MAVI_A), ('Teori', 'Geniş kapsamlı neden', YES, YES_A), ('Kanun', 'Nasıl işlediği ilkesi', TUR, TUR_A), ('Gözlem', 'Duyu/araçla veri tespiti', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(turler):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 80, d, c) + yazi(x + 40, 30, b, 11, c) + f'<line x1="{x+8}" y1="40" x2="{x+72}" y2="40" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, alt, 8.5, LAC, ince=True)
-    return svg(360, 100, ic, 'Bilimsel bilgi türleri kartları', 34)
-
-def g1():
-    ic = kutu(4, 4, 352, 92, MAVI_A, MAVI) + yazi(180, 22, 'BİLİMSEL BİLGİNİN DEĞİŞEBİLİR VE DİNAMİK YAPISI', 11, MAVI)
-    ic += kutu(20, 32, 320, 54, '#f4f8fe', MAVI) + yazi(180, 50, 'Yeni Kanıtlar ve Gözlemler Mevcut Bilgiyi Geliştirir', 11.5, LAC) + yazi(180, 70, 'Bilimsel teoriler mutlak dogmalar değil, sürekli sınanan açıklamalardır.', 9.5, SOLUK, ince=True)
-    return svg(360, 100, ic, 'Bilimin dinamik doğası şeması', 34)
-
-def g2():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI) + kutu(10, 10, 340, 74, YES_A, YES, 8)
-    ic += yazi(180, 28, 'TEORİ VE KANUN İLİŞKİSİ · FARKLI BİLGİ TÜRLERİ', 11, YES)
-    ic += yazi(180, 48, 'Teori "Neden?", Kanun "Nasıl?" sorusuna yanıt verir.', 11.5, LAC)
-    ic += yazi(180, 68, 'Teoriler kanıtlandıkça asla kanuna dönüşmez, her ikisi de ayrı türdür.', 9.5, SOLUK, ince=True)
-    return svg(360, 96, ic, 'Teori ve kanun farkı panosu', 34)
-
-def g3():
-    ic = kutu(4, 4, 352, 90, GRI_A, GRI)
-    ilkeler = [('Kanıt Odaklı', 'Gözlem ve deney', MAVI, MAVI_A), ('Sorgulayıcı', 'Kuşkucu yaklaşım', TUR, TUR_A), ('Yaratıcılık', 'Hayal gücü ve akıl', YES, YES_A), ('Evrensel Etik', 'Dürüstlük ve tarafsızlık', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(ilkeler):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 78, d, c) + yazi(x + 40, 30, b, 10, c) + f'<line x1="{x+8}" y1="42" x2="{x+72}" y2="42" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, alt, 8.5, LAC, ince=True)
-    return svg(360, 98, ic, 'Bilimin temel nitelikleri panosu', 34)
-
-def g5():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI)
-    adimlari = [('1. Problem', 'Merak ve gözlem', YES, YES_A), ('2. Veri', 'Ölçüm ve kayıt', MAVI, MAVI_A), ('3. Hipotez', 'Sınanabilir önerme', TUR, TUR_A), ('4. Deney', 'Kontrollü sınama', MOR, MOR_A)]
-    for i, (bas, alt, c, d) in enumerate(adimlari):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 76, d, c) + yazi(x + 40, 30, bas, 10.5, c) + yazi(x + 40, 55, alt, 9, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},48 {x+85},44 {x+85},52" fill="{GRI}"/>'
-    return svg(360, 96, ic, 'Bilimsel yöntem basamakları akış şeması', 34)
-
-def g6():
-    ic = kutu(4, 4, 352, 88, CAM_A, CAM) + yazi(180, 24, 'KONTROLLÜ DENEY DÜZENEĞİ · ENZİM HIZI', 11, CAM)
-    ic += kutu(20, 36, 150, 44, '#eaf7fa', CAM) + yazi(95, 52, 'Bağımsız Değişken:', 9.5, CAM) + yazi(95, 70, 'Sıcaklık Değerleri', 11, LAC)
-    ic += kutu(190, 36, 150, 44, TUR_A, TUR) + yazi(265, 52, 'Bağımlı Değişken:', 9.5, TUR) + yazi(265, 70, 'Tepkime Hızı', 11, TUR)
-    return svg(360, 96, ic, 'Kontrollü deney değişkenleri panosu', 34)
-
-def g8():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI)
-    degiskenler = [('Bağımsız', 'Müdahale edilen etken', MAVI, MAVI_A), ('Bağımlı', 'Ölçülen netice', TUR, TUR_A), ('Sabit', 'Değişmeyen koşullar', YES, YES_A), ('Deney Grubu', 'Uygulama yapılan örnek', MOR, MOR_A)]
-    for i, (b, tr, c, d) in enumerate(degiskenler):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 76, d, c) + yazi(x + 40, 32, b, 10, c) + f'<line x1="{x+8}" y1="42" x2="{x+72}" y2="42" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, tr, 8.5, LAC, ince=True)
-    return svg(360, 96, ic, 'Deney değişken türleri kartı', 34)
-
-def g10():
-    ic = kutu(4, 4, 352, 88, YES_A, YES) + yazi(180, 22, 'ANAHTAR KAVRAM: T - E - O - R - İ', 11.5, YES)
-    harfler = [('1', 'T'), ('2', 'E'), ('3', 'O'), ('4', 'R'), ('5', 'İ')]
-    for i, (no, h) in enumerate(harfler):
-        x = 45 + i * 55
-        ic += kutu(x, 32, 45, 48, '#eaf8f0', YES) + yazi(x + 22.5, 46, no, 9.5, SOLUK, ince=True) + yazi(x + 22.5, 68, h, 16, LAC)
-    return svg(360, 96, ic, 'Teori şifresi harf kutuları', 34)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[8]['gorsel'] = g8()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

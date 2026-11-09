@@ -1,91 +1,97 @@
-"""9. sınıf Matematik 3. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-matematik-3 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gerçek sayı aralık '
+    'gösterimleri kartı"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">[a, b] '
+    'Kapalı</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Uç noktalar dahil</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">(a, b) Açık</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Uç noktalar hariç</text><rect x="4" y="52" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">[a, b) Yarı Açık</text><text x="87.5" y="88.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sol dahil, sağ hariç</text><rect x="179" '
+    'y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">(a, b] Yarı '
+    'Açık</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sol hariç, sağ dahil</text></svg>',
+ 1: '<svg viewBox="0 0 350 67" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aralık kesişim kümesi '
+    'sayı doğrusu şeması"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">SAYI '
+    'DOĞRUSUNDA ARALIK KESİŞİMİ</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Verilen Aralıklar: A = [-3, 4) ve B = [1, 7]</text><text x="11.0" y="57.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">A ∩ B kümesi ortak elemanlardan '
+    'oluşur.</text></svg>',
+ 2: '<svg viewBox="0 0 350 67" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eşitsizlik ve yarı açık '
+    'aralık kartı"><rect x="4" y="3" width="342" height="62" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">EŞİTSİZLİĞİN '
+    'ARALIK DÖNÜŞÜMÜ</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Verilen Eşitsizlik: -2 &lt; x ≤ 5</text><text x="11.0" y="57.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Kesin eşitsizlik (&lt;) açık, ≤ kapalı uç '
+    'alır.</text></svg>',
+ 3: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Üslü sayılar ve aralık '
+    'işlem kuralları"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Çarpma Kuralı '
+    'aᵐ ·</text><text x="87.5" y="49.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">aⁿ = aᵐ⁺ⁿ</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="295.2" y="30.6" text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Bölme Kuralı ·</text><text x="309.8" y="19.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">aᵐ</text><line x1="298.7" y1="24.6" x2="321.0" y2="24.6" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="309.8" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">aⁿ</text><text x="324.5" y="30.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">=</text><text x="262.5" y="58.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">aᵐ⁻ⁿ</text><rect x="4" y="71" width="167" '
+    'height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Üssün Üssü · (aᵐ)ⁿ =</text><text x="87.5" '
+    'y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">aᵐ·ⁿ</text><rect x="179" y="71" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Kesişim Kümesi</text><text x="262.5" y="107.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">A ∩ B ortak bölge</text></svg>',
+ 5: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eşitsizlik çözüm kümesi '
+    'adımları akış şeması"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Dahillik</text><text x="87.5" y="49.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Açık / dolu nokta</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Çözüm</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bilinmeyeni yalnız</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bırak</text><rect x="4" '
+    'y="71" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Aralık</text><text '
+    'x="87.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Ayraçla göster</text><rect x="179" y="71" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Uç Nokta</text><text x="262.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Sınırları belirle</text></svg>',
+ 6: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Üslü sayı işlem adımları '
+    'panosu"><rect x="4" y="3" width="342" height="80" rx="5" fill="#eaf7fa" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="20.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">ÜSLÜ İFADELERDE İŞLEM '
+    'ADIMLARI</text><text x="110.2" y="47.8" text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Verilen İşlem:</text><text x="135.6" y="37.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">2⁵\xa0·\xa02³</text><line x1="113.7" y1="41.8" x2="157.5" y2="41.8" '
+    'stroke="#0b2257" stroke-width="0.75"/><text x="135.6" y="57.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">2⁴</text><text x="11.0" y="75.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Paydaki üsler toplanır, paydadaki üs çıkarılır.</text></svg>',
+ 8: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Üslü sayı değerleri '
+    'eşleştirme kartı"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Taban '
+    '2 · 2⁶ üslü</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">ifadesi</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Taban 3 · 3⁴ üslü</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">ifadesi</text><rect x="4" y="52" width="167" height="45" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Taban 5 · 5³ üslü</text><text x="87.5" y="88.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">ifadesi</text><rect x="179" y="52" '
+    'width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Taban 10 · 10³ üslü</text><text x="262.5" '
+    'y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">ifadesi</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def g0():
-    ic = kutu(4, 4, 352, 92, GRI_A, GRI)
-    araliklar = [('[2, 5]', '2 ve 5 dahil', MAVI, MAVI_A), ('(2, 5)', '2 ve 5 hariç', YES, YES_A), ('[2, 5)', '2 dahil, 5 hariç', TUR, TUR_A), ('(2, 5]', '2 hariç, 5 dahil', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(araliklar):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 80, d, c) + yazi(x + 40, 30, b, 12, c) + f'<line x1="{x+8}" y1="40" x2="{x+72}" y2="40" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, alt, 9, LAC, ince=True)
-    return svg(360, 100, ic, 'Gerçek sayı aralık gösterimleri kartı', 34)
-
-def g1():
-    ic = kutu(4, 4, 352, 92, MAVI_A, MAVI) + yazi(180, 20, 'SAYI DOĞRUSUNDA ARALIK KESİŞİMİ: A ∩ B', 10.5, MAVI)
-    ic += f'<line x1="30" y1="42" x2="330" y2="42" stroke="{GRI}" stroke-width="1.2"/>'
-    ic += f'<line x1="75" y1="42" x2="210" y2="42" stroke="{TUR}" stroke-width="3"/>'
-    ic += yazi(142, 35, 'A = [-3, 4)', 9.5, TUR)
-    ic += f'<line x1="30" y1="65" x2="330" y2="65" stroke="{GRI}" stroke-width="1.2"/>'
-    ic += f'<line x1="150" y1="65" x2="300" y2="65" stroke="{YES}" stroke-width="3"/>'
-    ic += yazi(225, 58, 'B = [1, 7]', 9.5, YES)
-    ic += yazi(180, 84, 'Kesişim Kümesi: A ∩ B = [1, 4)', 11, LAC)
-    return svg(360, 100, ic, 'Aralık kesişim kümesi sayı doğrusu şeması', 34)
-
-def g2():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI) + kutu(10, 10, 340, 74, TUR_A, TUR, 8)
-    ic += yazi(180, 28, 'EŞİTSİZLİĞİN ARALIK DÖNÜŞÜMÜ', 11, TUR)
-    ic += yazi(180, 50, '-2 &lt; x ≤ 5   ⟹   x ∈ (-2, 5]', 14, LAC)
-    ic += yazi(180, 70, '-2 küçük (açık parantez), 5 küçük eşit (köşeli parantez) alır.', 9.5, SOLUK, ince=True)
-    return svg(360, 96, ic, 'Eşitsizlik ve yarı açık aralık kartı', 34)
-
-def g3():
-    ic = kutu(4, 4, 352, 90, GRI_A, GRI)
-    kurallar = [('Taban Aynı', 'a^m · a^n = a^(m+n)', MAVI, MAVI_A), ('Bölme', 'a^m / a^n = a^(m-n)', TUR, TUR_A), ('Üssün Üssü', '(a^m)^n = a^(m·n)', YES, YES_A), ('Kesişim', 'A ∩ B ortak eleman', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(kurallar):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 78, d, c) + yazi(x + 40, 30, b, 10, c) + f'<line x1="{x+8}" y1="42" x2="{x+72}" y2="42" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, alt, 8.5, LAC, ince=True)
-    return svg(360, 98, ic, 'Üslü sayılar ve aralık işlem kuralları', 34)
-
-def g5():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI)
-    adimlari = [('1. Çözüm', 'Bilinmeyeni yalnız bırak', YES, YES_A), ('2. Uç Nokta', 'Sınırları belirle', MAVI, MAVI_A), ('3. Dahillik', 'Açık / dolu nokta', TUR, TUR_A), ('4. Aralık', 'Ayraçla göster', MOR, MOR_A)]
-    for i, (bas, alt, c, d) in enumerate(adimlari):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 76, d, c) + yazi(x + 40, 30, bas, 10, c) + yazi(x + 40, 55, alt, 8.5, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},48 {x+85},44 {x+85},52" fill="{GRI}"/>'
-    return svg(360, 96, ic, 'Eşitsizlik çözüm kümesi adımları akış şeması', 34)
-
-def g6():
-    ic = kutu(4, 4, 352, 88, CAM_A, CAM) + yazi(180, 22, 'ÜSLÜ İŞLEM SADELEŞTİRME', 11, CAM)
-    ic += kutu(20, 32, 320, 48, '#eaf7fa', CAM) + yazi(180, 50, '(2⁵ · 2³) / 2⁴  =  2⁸ / 2⁴  =  2⁴  =  16', 13, LAC) + yazi(180, 70, 'Çarpmada üsler toplanır, bölmede pay üssünden payda üssü çıkarılır.', 9, SOLUK, ince=True)
-    return svg(360, 96, ic, 'Üslü sayı işlem adımları panosu', 34)
-
-def g8():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI)
-    usler = [('2⁶', '= 64', MAVI, MAVI_A), ('3⁴', '= 81', TUR, TUR_A), ('5³', '= 125', YES, YES_A), ('10³', '= 1000', MOR, MOR_A)]
-    for i, (b, tr, c, d) in enumerate(usler):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 76, d, c) + yazi(x + 40, 32, b, 12, c) + f'<line x1="{x+8}" y1="42" x2="{x+72}" y2="42" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, tr, 11, LAC, ince=True)
-    return svg(360, 96, ic, 'Üslü sayı değerleri eşleştirme kartı', 34)
-
-def g10():
-    ic = kutu(4, 4, 352, 88, YES_A, YES) + yazi(180, 22, 'ANAHTAR KAVRAM: A - R - A - L - I - K', 11.5, YES)
-    harfler = [('1', 'A'), ('2', 'R'), ('3', 'A'), ('4', 'L'), ('5', 'I'), ('6', 'K')]
-    for i, (no, h) in enumerate(harfler):
-        x = 35 + i * 50
-        ic += kutu(x, 32, 42, 48, '#eaf8f0', YES) + yazi(x + 21, 46, no, 9, SOLUK, ince=True) + yazi(x + 21, 68, h, 15, LAC)
-    return svg(360, 96, ic, 'Aralık şifresi harf kutuları', 34)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[8]['gorsel'] = g8()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

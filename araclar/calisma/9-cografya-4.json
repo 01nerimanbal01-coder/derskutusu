@@ -33,10 +33,6 @@
         [
           "Düzlem Projeksiyon",
           "Kutuplar ve dar alanların haritaları"
-        ],
-        [
-          "Kesikli Projeksiyon",
-          "Okyanusları bölerek kıta alanlarını koruma"
         ]
       ]
     },
@@ -77,7 +73,7 @@
           "dogru": false
         },
         {
-          "metin": "1 / 20.000 ölçekli harita, 1 / 500.000 ölçeğe göre daha büyük ölçeklidir.",
+          "metin": "{kesir:1|20.000} ölçekli harita, {kesir:1|500.000} ölçeğe göre daha büyük ölçeklidir.",
           "dogru": true
         },
         {
@@ -98,10 +94,8 @@
       "satirlar": [
         [
           "Ölçek Paydası",
-          "Küçüktür (ör. 1 / 25.000)",
-          {
-            "b": "Büyüktür (ör. 1 / 1.000.000)"
-          }
+          "Küçüktür (ör. {kesir:1|25.000})",
+          "Büyüktür (ör. {kesir:1|1.000.000})"
         ],
         [
           "Gösterilen Alan",
@@ -148,7 +142,7 @@
       "tur": "coktan",
       "duzey": "kavrama",
       "gorsel_var": true,
-      "soru": "Görseldeki 1 / 2.000.000 ölçekli dünya atlas haritasının özelliği aşağıdakilerden hangisidir?",
+      "soru": "Görseldeki {kesir:1|2.000.000} ölçekli dünya atlas haritasının özelliği aşağıdakilerden hangisidir?",
       "secenekler": [
         "Gösterilen coğrafi alanın çok dar olması",
         "Ayrıntıyı gösterme gücünün oldukça az olması",
@@ -182,10 +176,6 @@
         [
           "Yön Oku",
           "Coğrafi kuzey doğrultusunu gösterme"
-        ],
-        [
-          "Koordinat",
-          "Enlem ve boylamla mutlak konumu belirleme"
         ]
       ]
     },
@@ -215,7 +205,6 @@
     {
       "tur": "sifre",
       "duzey": "hatirla",
-      "gorsel_var": true,
       "soru": "İpuçlarına karşılık gelen harita terimini bulunuz.",
       "ipucu": "Haritadaki simge, işaret ve renklerin anlamını açıklayan anahtar cetveli (6 Harf).",
       "harfler": [

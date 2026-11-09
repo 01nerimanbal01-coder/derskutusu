@@ -32,10 +32,6 @@
         [
           "[2, 5)",
           "2 dahil, 5 hariç yarı açık aralık"
-        ],
-        [
-          "(2, 5]",
-          "2 hariç, 5 dahil yarı açık aralık"
         ]
       ]
     },
@@ -100,9 +96,7 @@
           "[a, b]",
           "a ve b",
           "Her iki uç nokta dahil",
-          {
-            "b": "Kapalı aralık"
-          }
+          "Kapalı aralık"
         ],
         [
           "(a, b)",
@@ -152,7 +146,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki cebirsel kartta verilen {us:2|5} · {us:2|3} / {us:2|4} işleminin sonucu aşağıdakilerden hangisidir?",
+      "soru": "Görseldeki cebirsel kartta verilen {kesir:{us:2|5} · {us:2|3}|{us:2|4}} işleminin sonucu aşağıdakilerden hangisidir?",
       "secenekler": [
         "16",
         "8",
@@ -160,7 +154,7 @@
         "64"
       ],
       "dogru": 0,
-      "cozum": "Pay: 2^(5+3) = 2^8. Payda: 2^4. Sonuç: 2^(8-4) = 2^4 = 16."
+      "cozum": "Pay: {us:2|5+3} = {us:2|8}. Payda: {us:2|4}. Sonuç: {kesir:{us:2|8}|{us:2|4}} = {us:2|8-4} = {us:2|4} = 16 bulunur."
     },
     {
       "tur": "kisa",
@@ -186,10 +180,6 @@
         [
           "{us:5|3}",
           "125"
-        ],
-        [
-          "{us:10|3}",
-          "1000"
         ]
       ]
     },
@@ -219,7 +209,6 @@
     {
       "tur": "sifre",
       "duzey": "hatirla",
-      "gorsel_var": true,
       "soru": "İpuçlarına karşılık gelen matematik kavramını bulunuz.",
       "ipucu": "Sayı doğrusunda iki nokta arasındaki tüm gerçek sayıların oluşturduğu alt küme (6 Harf).",
       "harfler": [
@@ -262,7 +251,7 @@
       "tur": "acik",
       "duzey": "ust",
       "soru": "Açık aralık ile kapalı aralık arasındaki temel farkı uç noktalar açısından belirtiniz.",
-      "cevap": "Kapalı aralıkta uç noktalar kümeye dahildir, açık.",
+      "cevap": "Kapalı aralıkta uç noktalar kümeye dahildir, açık aralıkta ise uç noktalar kümeye dahil olmaz.",
       "satir": 2
     }
   ]

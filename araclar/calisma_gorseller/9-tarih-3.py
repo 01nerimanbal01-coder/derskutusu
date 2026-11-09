@@ -1,86 +1,100 @@
-"""9. sınıf Tarih 3. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-tarih-3 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tarihsel kavramlar ve '
+    'kaynaklar kartı"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Olay</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Malazgirt Zaferi ·</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(1071)</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Olgu</text><text x="262.5" y="49.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Türkleşme süreci</text><rect x="4" y="71" '
+    'width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="89.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">1. Kaynak</text><text x="87.5" y="107.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Orhun '
+    'Kitabeleri</text><rect x="179" y="71" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">2. '
+    'Kaynak</text><text x="262.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Araştırma kitabı</text></svg>',
+ 1: '<svg viewBox="0 0 350 104" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tarihî olay ve olgu '
+    'karşılaştırma şeması"><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">TARİHÎ '
+    'OLAY VE TARİHÎ OLGU</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">KARŞILAŞTIRMASI</text><rect x="4" y="49" width="342" height="25" rx="5" fill="#f4f8fe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="66.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Tarihî Olay: Kısa süreli · Somut ve tekil</text><rect x="4" y="77" width="342" '
+    'height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="94.3" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tarihî Olgu: Uzun süreli · Süreç ve genel</text></svg>',
+ 2: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tarih metodolojisi deney '
+    'ilkesi"><rect x="4" y="3" width="342" height="117" rx="5" fill="#eef1f6" stroke="#9aa6bd" stroke-width="0.75"/><text x="11.0" '
+    'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">TARİH BİLİMİNDE '
+    'DENEY VE TEKRAR</text><text x="11.0" y="38.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">İMKÂNSIZLIĞI</text><text x="11.0" y="57.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">Geçmişte yaşanan olaylar biriciktir ve aynen</text><text x="11.0" y="75.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">tekrarlanamaz.</text><text x="11.0" y="93.9" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Tarihçi laboratuvar deneyi yerine dönemin</text><text x="11.0" y="112.3" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">belgelerine '
+    'başvurur.</text></svg>',
+ 3: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tarihsel bilginin doğası '
+    'ilkeleri"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Belgeye '
+    'Dayalı</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kanıtsız tarih olmaz</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Yer &amp; Zaman</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Somut bağlam</text><rect x="4" y="52" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="79.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Objektiflik</text><text x="87.5" y="98.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tarafsız inceleme</text><rect x="179" y="52" width="167" '
+    'height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Değişebilirlik</text><text x="262.5" y="88.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yeni '
+    'bulgularla</text><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">revizyon</text></svg>',
+ 5: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bilimsel tarih '
+    'araştırması basamakları akışı"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Terkip</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Sentez ve yazım</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Tenkit</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Eleştiri (iç-dış)</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Tasnif</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sınıflandırma</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Tarama</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kaynak arama</text></svg>',
+ 6: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tarihçinin araştırma '
+    'ahlakı panosu"><rect x="4" y="3" width="342" height="80" rx="5" fill="#eaf7fa" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" '
+    'y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Önyargısız Bakış '
+    '· Çapraz Kaynak Kontrolü ·</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Tarihsel Empati</text><text x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Olayları bugünün değerleriyle değil, dönemin</text><text x="11.0" '
+    'y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">koşullarıyla '
+    'anlama esastır.</text></svg>',
+ 8: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tarihsel kaynak türleri '
+    'kartı"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Yazılı</text><text '
+    'x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ferman '
+    've kitabe</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#ee7d12">Sözlü</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Destan ve efsane</text><rect x="4" y="52" width="167" height="64" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Arkeolojik</text><text x="87.5" y="88.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çanak ve silah</text><text x="87.5" y="107.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kalıntısı</text><rect '
+    'x="179" y="52" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="79.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Görsel</text><text '
+    'x="262.5" y="98.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Minyatür ve harita</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def g0():
-    ic = kutu(4, 4, 352, 92, GRI_A, GRI)
-    kavramlar = [('Olay', 'Malazgirt Zaferi (1071)', MAVI, MAVI_A), ('Olgu', 'Türkleşme süreci', YES, YES_A), ('1. Kaynak', 'Orhun Kitabeleri', TUR, TUR_A), ('2. Kaynak', 'Araştırma kitabı', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(kavramlar):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 80, d, c) + yazi(x + 40, 30, b, 10.5, c) + f'<line x1="{x+8}" y1="40" x2="{x+72}" y2="40" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, alt, 8.5, LAC, ince=True)
-    return svg(360, 100, ic, 'Tarihsel kavramlar ve kaynaklar kartı', 34)
-
-def g1():
-    ic = kutu(4, 4, 352, 92, MAVI_A, MAVI) + yazi(180, 22, 'TARİHÎ OLAY VE TARİHÎ OLGU KARŞILAŞTIRMASI', 11, MAVI)
-    ic += kutu(20, 32, 150, 56, '#f4f8fe', MAVI) + yazi(95, 48, 'Tarihî Olay', 10.5, LAC) + yazi(95, 68, 'Kısa süreli · Somut ve tekil', 9, SOLUK, ince=True)
-    ic += kutu(190, 32, 150, 56, YES_A, YES) + yazi(265, 48, 'Tarihî Olgu', 10.5, YES) + yazi(265, 68, 'Uzun süreli · Süreç ve genel', 9, LAC, ince=True)
-    return svg(360, 100, ic, 'Tarihî olay ve olgu karşılaştırma şeması', 34)
-
-def g2():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI) + kutu(10, 10, 340, 74, TUR_A, TUR, 8)
-    ic += yazi(180, 28, 'TARİH BİLİMİNDE DENEY VE TEKRAR İMKÂNSIZLIĞI', 11, TUR)
-    ic += yazi(180, 48, 'Geçmişte yaşanan olaylar biriciktir ve aynen tekrarlanamaz.', 10.5, LAC)
-    ic += yazi(180, 68, 'Tarihçi laboratuvar deneyi yerine dönemin belgelerine başvurur.', 9.5, SOLUK, ince=True)
-    return svg(360, 96, ic, 'Tarih metodolojisi deney ilkesi', 34)
-
-def g3():
-    ic = kutu(4, 4, 352, 90, GRI_A, GRI)
-    ilkeler = [('Belgeye Dayalı', 'Kanıtsız tarih olmaz', MAVI, MAVI_A), ('Yer &amp; Zaman', 'Somut bağlam', TUR, TUR_A), ('Objektiflik', 'Tarafsız inceleme', YES, YES_A), ('Değişebilirlik', 'Yeni bulgularla revizyon', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(ilkeler):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 78, d, c) + yazi(x + 40, 30, b, 9.5, c) + f'<line x1="{x+8}" y1="42" x2="{x+72}" y2="42" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, alt, 8.5, LAC, ince=True)
-    return svg(360, 98, ic, 'Tarihsel bilginin doğası ilkeleri', 34)
-
-def g5():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI)
-    adimlari = [('1. Tarama', 'Kaynak arama', YES, YES_A), ('2. Tasnif', 'Sınıflandırma', MAVI, MAVI_A), ('3. Tenkit', 'Eleştiri (iç-dış)', TUR, TUR_A), ('4. Terkip', 'Sentez ve yazım', MOR, MOR_A)]
-    for i, (bas, alt, c, d) in enumerate(adimlari):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 76, d, c) + yazi(x + 40, 30, bas, 10, c) + yazi(x + 40, 55, alt, 8.5, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},48 {x+85},44 {x+85},52" fill="{GRI}"/>'
-    return svg(360, 96, ic, 'Bilimsel tarih araştırması basamakları akışı', 34)
-
-def g6():
-    ic = kutu(4, 4, 352, 88, CAM_A, CAM) + yazi(180, 24, 'TARİHÇİDE BULUNMASI GEREKEN TEMEL İLKELER', 11, CAM)
-    ic += kutu(20, 36, 320, 44, '#eaf7fa', CAM) + yazi(180, 52, 'Önyargısız Bakış · Çapraz Kaynak Kontrolü · Tarihsel Empati', 10.5, LAC) + yazi(180, 70, 'Olayları bugünün değerleriyle değil, dönemin koşullarıyla anlama esastır.', 9, SOLUK, ince=True)
-    return svg(360, 96, ic, 'Tarihçinin araştırma ahlakı panosu', 34)
-
-def g8():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI)
-    kaynak = [('Yazılı', 'Ferman ve kitabe', MAVI, MAVI_A), ('Sözlü', 'Destan ve efsane', TUR, TUR_A), ('Arkeolojik', 'Çanak ve silah kalıntısı', YES, YES_A), ('Görsel', 'Minyatür ve harita', MOR, MOR_A)]
-    for i, (b, tr, c, d) in enumerate(kaynak):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 76, d, c) + yazi(x + 40, 32, b, 10, c) + f'<line x1="{x+8}" y1="42" x2="{x+72}" y2="42" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, tr, 8.5, LAC, ince=True)
-    return svg(360, 96, ic, 'Tarihsel kaynak türleri kartı', 34)
-
-def g10():
-    ic = kutu(4, 4, 352, 88, YES_A, YES) + yazi(180, 22, 'ANAHTAR KAVRAM: B - E - L - G - E', 11.5, YES)
-    harfler = [('1', 'B'), ('2', 'E'), ('3', 'L'), ('4', 'G'), ('5', 'E')]
-    for i, (no, h) in enumerate(harfler):
-        x = 45 + i * 55
-        ic += kutu(x, 32, 45, 48, '#eaf8f0', YES) + yazi(x + 22.5, 46, no, 9.5, SOLUK, ince=True) + yazi(x + 22.5, 68, h, 16, LAC)
-    return svg(360, 96, ic, 'Belge şifresi harf kutuları', 34)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[8]['gorsel'] = g8()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -1,85 +1,96 @@
-"""9. sınıf Kimya 4. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-kimya-4 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Atom modelleri ve '
+    'kuantum kavramları kartı"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Bohr</text><text x="87.5" y="49.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Dairesel yörünge</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Modern Teori</text><text x="262.5" y="39.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Elektron bulutu</text><text x="262.5" '
+    'y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">orbital</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Temel Hâl</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">En düşük enerji</text><text x="87.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">seviyesi</text><rect x="179" y="71" '
+    'width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="98.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Uyarılmış Hâl</text><text x="262.5" y="117.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Üst katmana '
+    'sıçrama</text></svg>',
+ 1: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Modern atom teorisi '
+    'elektron bulutu şeması"><rect x="4" y="3" width="342" height="80" rx="5" fill="#f4f8fe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">Elektronun Konumu ve Hızı Aynı Anda Kesin</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Olarak Bilinemez</text><text x="11.0" y="57.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Heisenberg Belirsizlik İlkesi gereği '
+    'elektron</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">bulutu olasılığı esastır.</text></svg>',
+ 2: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sodyum atomu kütle '
+    'numarası kartı"><rect x="4" y="3" width="342" height="80" rx="5" fill="#eef1f6" stroke="#9aa6bd" stroke-width="0.75"/><text x="11.0" '
+    'y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">SODYUM (Na) '
+    'ATOMU TANECİK HESABI</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Proton: 11 + Nötron: 12 ⟹ Kütle No (A) = 23</text><text x="11.0" y="57.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Atom kütlesi çekirdekteki proton '
+    've</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">nötronların toplamıdır.</text></svg>',
+ 3: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Atomik hesaplamalar '
+    'bağıntı panosu"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Kütle No (A) p '
+    '+ n</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">toplamı</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">İyon Yükü p − e</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">farkı</text><rect x="4" y="52" width="167" height="45" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Temel Hâl</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kararlı ve düşük E</text><rect x="179" y="52" width="167" '
+    'height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Uyarılmış Hâl</text><text x="262.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kararsız foton '
+    'yayar</text></svg>',
+ 5: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Elektron uyarılması ve '
+    'emisyon akışı"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Absorpsiyon</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Üst katmana geç</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Temel Hâl</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kararlı elektron</text><rect x="4" y="52" width="167" '
+    'height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Emisyon</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Işıma yaparak '
+    'dön</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Enerji</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Isı / elektrik al</text></svg>',
+ 6: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Klor iyon yükü hesaplama '
+    'panosu"><rect x="4" y="3" width="342" height="80" rx="5" fill="#eaf7fa" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="20.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Proton: 17 · Elektron: 18 '
+    '⟹ İyon Yükü: -1</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">(Anyon)</text><text x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Elektron alan nötr atomlar negatif elektrikle</text><text x="11.0" y="75.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">yüklenerek anyon '
+    'olur.</text></svg>',
+ 8: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kimyasal tanecik '
+    'tanımları kartı"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Atom No '
+    '(Z)</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Çekirdekteki proton</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Kütle No (A)</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Proton + nötron</text><rect x="4" y="52" width="167" height="45" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Katyon</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Elektron vermiş (+)</text><rect x="179" y="52" width="167" '
+    'height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Anyon</text><text x="262.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Elektron almış '
+    '(-)</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def g0():
-    ic = kutu(4, 4, 352, 92, GRI_A, GRI)
-    modeller = [('Bohr', 'Dairesel yörünge', MAVI, MAVI_A), ('Modern Teori', 'Elektron bulutu orbital', YES, YES_A), ('Temel Hâl', 'En düşük enerji seviyesi', TUR, TUR_A), ('Uyarılmış Hâl', 'Üst katmana sıçrama', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(modeller):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 80, d, c) + yazi(x + 40, 30, b, 10, c) + f'<line x1="{x+8}" y1="40" x2="{x+72}" y2="40" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, alt, 8.5, LAC, ince=True)
-    return svg(360, 100, ic, 'Atom modelleri ve kuantum kavramları kartı', 34)
-
-def g1():
-    ic = kutu(4, 4, 352, 92, MAVI_A, MAVI) + yazi(180, 22, 'MODERN ATOM TEORİSİ · ORBİTAL KAVRAMI', 11, MAVI)
-    ic += kutu(20, 32, 320, 54, '#f4f8fe', MAVI) + yazi(180, 48, 'Elektronun Konumu ve Hızı Aynı Anda Kesin Olarak Bilinemez', 11, LAC) + yazi(180, 70, 'Heisenberg Belirsizlik İlkesi gereği elektron bulutu olasılığı esastır.', 9, SOLUK, ince=True)
-    return svg(360, 100, ic, 'Modern atom teorisi elektron bulutu şeması', 34)
-
-def g2():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI) + kutu(10, 10, 340, 74, TUR_A, TUR, 8)
-    ic += yazi(180, 28, 'SODYUM (Na) ATOMU TANECİK HESABI', 11, TUR)
-    ic += yazi(180, 50, 'Proton: 11  +  Nötron: 12   ⟹   Kütle No (A) = 23', 13, LAC)
-    ic += yazi(180, 70, 'Atom kütlesi çekirdekteki proton ve nötronların toplamıdır.', 9.5, SOLUK, ince=True)
-    return svg(360, 96, ic, 'Sodyum atomu kütle numarası kartı', 34)
-
-def g3():
-    ic = kutu(4, 4, 352, 90, GRI_A, GRI)
-    bagintilar = [('Kütle No (A)', 'p + n toplamı', MAVI, MAVI_A), ('İyon Yükü', 'p − e farkı', TUR, TUR_A), ('Temel Hâl', 'Kararlı ve düşük E', YES, YES_A), ('Uyarılmış Hâl', 'Kararsız foton yayar', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(bagintilar):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 78, d, c) + yazi(x + 40, 30, b, 10, c) + f'<line x1="{x+8}" y1="42" x2="{x+72}" y2="42" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, alt, 8.5, LAC, ince=True)
-    return svg(360, 98, ic, 'Atomik hesaplamalar bağıntı panosu', 34)
-
-def g5():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI)
-    adimlari = [('1. Temel Hâl', 'Kararlı elektron', YES, YES_A), ('2. Enerji', 'Isı / elektrik al', MAVI, MAVI_A), ('3. Absorpsiyon', 'Üst katmana geç', TUR, TUR_A), ('4. Emisyon', 'Işıma yaparak dön', MOR, MOR_A)]
-    for i, (bas, alt, c, d) in enumerate(adimlari):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 76, d, c) + yazi(x + 40, 30, bas, 10, c) + yazi(x + 40, 55, alt, 8.5, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},48 {x+85},44 {x+85},52" fill="{GRI}"/>'
-    return svg(360, 96, ic, 'Elektron uyarılması ve emisyon akışı', 34)
-
-def g6():
-    ic = kutu(4, 4, 352, 88, CAM_A, CAM) + yazi(180, 24, 'KLOR (Cl) İYONU ELEKTRİKSEL YÜKÜ', 11, CAM)
-    ic += kutu(20, 36, 320, 44, '#eaf7fa', CAM) + yazi(180, 52, 'Proton: 17  ·  Elektron: 18   ⟹   İyon Yükü: -1 (Anyon)', 12, LAC) + yazi(180, 70, 'Elektron alan nötr atomlar negatif elektrikle yüklenerek anyon olur.', 9, SOLUK, ince=True)
-    return svg(360, 96, ic, 'Klor iyon yükü hesaplama panosu', 34)
-
-def g8():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI)
-    kavramlar = [('Atom No (Z)', 'Çekirdekteki proton', MAVI, MAVI_A), ('Kütle No (A)', 'Proton + nötron', TUR, TUR_A), ('Katyon', 'Elektron vermiş (+)', YES, YES_A), ('Anyon', 'Elektron almış (-)', MOR, MOR_A)]
-    for i, (b, tr, c, d) in enumerate(kavramlar):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 76, d, c) + yazi(x + 40, 32, b, 10, c) + f'<line x1="{x+8}" y1="42" x2="{x+72}" y2="42" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, tr, 8.5, LAC, ince=True)
-    return svg(360, 96, ic, 'Kimyasal tanecik tanımları kartı', 34)
-
-def g10():
-    ic = kutu(4, 4, 352, 88, YES_A, YES) + yazi(180, 22, 'ANAHTAR KAVRAM: O - R - B - İ - T - A - L', 11.5, YES)
-    harfler = [('1', 'O'), ('2', 'R'), ('3', 'B'), ('4', 'İ'), ('5', 'T'), ('6', 'A'), ('7', 'L')]
-    for i, (no, h) in enumerate(harfler):
-        x = 20 + i * 46
-        ic += kutu(x, 32, 40, 48, '#eaf8f0', YES) + yazi(x + 20, 46, no, 9, SOLUK, ince=True) + yazi(x + 20, 68, h, 15, LAC)
-    return svg(360, 96, ic, 'Orbital şifresi harf kutuları', 34)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[8]['gorsel'] = g8()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg
