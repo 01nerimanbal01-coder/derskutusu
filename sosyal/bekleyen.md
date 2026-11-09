@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 629 gönderi (Instagram: 83 bekleyen — 2030/2113 yayında; Facebook: 629 bekleyen).
+Toplam 669 gönderi (Instagram: 123 bekleyen — 2030/2153 yayında; Facebook: 669 bekleyen).
 
 ## bilgi-10-peygamberimizin-hayati-6
 Sıra: 2026-11-30 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-10-peygamberimizin-hayati-6.png
@@ -6626,4 +6626,604 @@ Bunu biliyor muydunuz? Sayfaların kapsamı ve mesajı: İsra Suresinin 4-6. say
 Faydalı bulduysanız arkadaşınızı etiketleyin.
 📘 12. sınıf Kur’an-ı Kerim 17. hafta konu özeti, çözümlü örnekler ve etkinlikler ücretsiz burada 👉 derskutusu.com/ozet/12-kuran-i-kerim-hafta-17
 #derskutusu #kuranıkerim #12sınıf #bunubiliyormuydunuz #maarifmodeli
+```
+
+## seri-cikti-e7-3-r1
+Sıra: 2027-03-27 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-3-r1-1.png
+
+```
+Biographies: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf İngilizce öğrenme çıktısı E7.3.R1: “Students will be able to spot specific information about names and dates in past events in written texts.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-ingilizce-e7-3-r1.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E7.3.R1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e8-3-r1
+Sıra: 2027-03-27 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-3-r1-1.png
+
+```
+In The Kitchen: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf İngilizce öğrenme çıktısı E8.3.R1: “Students will be able to understand the overall meaning of short texts about a process.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-ingilizce-e8-3-r1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E8.3.R1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e7-3-w1
+Sıra: 2027-03-28 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-3-w1-1.png
+
+```
+Biographies konusunda öğrencileriniz nerede? 📝
+7. sınıf İngilizce öğrenme çıktısı E7.3.W1: “Students will be able to write a short and simple report about past events.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, uygulama, kavrama, analiz ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-ingilizce-e7-3-w1.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E7.3.W1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e8-3-r2
+Sıra: 2027-03-28 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-3-r2-1.png
+
+```
+In The Kitchen konusunda öğrencileriniz nerede? 📝
+8. sınıf İngilizce öğrenme çıktısı E8.3.R2: “Students will be able to guess the meaning of unknown words from the text.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-ingilizce-e8-3-r2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E8.3.R2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e7-4-r1
+Sıra: 2027-03-28 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-4-r1-1.png
+
+```
+7. sınıf İngilizce · E7.4.R1 yazılısı hazır 📝
+7. sınıf İngilizce öğrenme çıktısı E7.4.R1: “Students will be able to understand past and present events in simple texts including explanations and reasons.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-ingilizce-e7-4-r1.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E7.4.R1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #7sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e8-3-w1
+Sıra: 2027-03-28 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-3-w1-1.png
+
+```
+8. sınıf İngilizce · E8.3.W1 yazılısı hazır 📝
+8. sınıf İngilizce öğrenme çıktısı E8.3.W1: “Students will be able to write a series of simple phrases and sentences by using linkers to describe a process.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-ingilizce-e8-3-w1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E8.3.W1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e7-4-r2
+Sıra: 2027-03-28 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-4-r2-1.png
+
+```
+Wild Animals: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf İngilizce öğrenme çıktısı E7.4.R2: “Students will be able to spot the names of wild animals in simple texts.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-ingilizce-e7-4-r2.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E7.4.R2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e8-4-r1
+Sıra: 2027-03-28 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-4-r1-1.png
+
+```
+On The Phone: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf İngilizce öğrenme çıktısı E8.4.R1: “Students will be able to understand short and simple texts with related vocabulary.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-ingilizce-e8-4-r1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E8.4.R1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-2-r2
+Sıra: 2027-03-29 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-2-r2-1.png
+
+```
+Classroom Life konusunda öğrencileriniz nerede? 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.2.R2: “Students can bring information about the current content on “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-2-r2.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.2.R2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-2-r2
+Sıra: 2027-03-29 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-2-r2-1.png
+
+```
+Classroom Life konusunda öğrencileriniz nerede? 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.2.R2: “Students can bring information about the current content on “classroom life with daily and study routines; learning activities in the classroom; cardinal numbers 100-500; ordinal numbers 1-50” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-2-r2.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.2.R2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e7-4-w1
+Sıra: 2027-03-29 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-4-w1-1.png
+
+```
+Wild Animals konusunda öğrencileriniz nerede? 📝
+7. sınıf İngilizce öğrenme çıktısı E7.4.W1: “Students will be able to write pieces describing wildlife.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-ingilizce-e7-4-w1.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E7.4.W1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #7sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e8-4-w1
+Sıra: 2027-03-29 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-4-w1-1.png
+
+```
+On The Phone konusunda öğrencileriniz nerede? 📝
+8. sınıf İngilizce öğrenme çıktısı E8.4.W1: “Students will be able to write short and simple conversations.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-ingilizce-e8-4-w1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E8.4.W1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-2-r3
+Sıra: 2027-03-29 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-2-r3-1.png
+
+```
+5. sınıf İngilizce · ENG.5.2.R3 yazılısı hazır 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.2.R3: “Students can make meaning of / derive meaning from the current content about “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” by reading it carefully.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-2-r3.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.2.R3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-2-r3
+Sıra: 2027-03-29 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-2-r3-1.png
+
+```
+6. sınıf İngilizce · ENG.6.2.R3 yazılısı hazır 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.2.R3: “Students can make meaning of / derive meaning from the current content about “classroom life with daily and study routines; learning activities in the classroom; cardinal numbers 100- 500; ordinal numbers 1-50” by reading it carefully.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-2-r3.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.2.R3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e7-5-r1
+Sıra: 2027-03-30 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-5-r1-1.png
+
+```
+7. sınıf İngilizce · E7.5.R1 yazılısı hazır 📝
+7. sınıf İngilizce öğrenme çıktısı E7.5.R1: “Students will be able to understand simple texts about daily routines and preferences.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-ingilizce-e7-5-r1.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E7.5.R1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #7sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e8-5-r1
+Sıra: 2027-03-30 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-5-r1-1.png
+
+```
+The Internet: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf İngilizce öğrenme çıktısı E8.5.R1: “Students will be able to identify main ideas in short and simple texts about internet habits.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-ingilizce-e8-5-r1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E8.5.R1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-2-v1
+Sıra: 2027-03-30 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-2-v1-1.png
+
+```
+Classroom Life konusunda öğrencileriniz nerede? 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.2.V1: “Students can select and use the target vocabulary of the current content about “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-2-v1.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.2.V1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-2-v1
+Sıra: 2027-03-30 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-2-v1-1.png
+
+```
+6. sınıf İngilizce · ENG.6.2.V1 yazılısı hazır 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.2.V1: “Students can select and use the target vocabulary of the current content about “classroom life with daily and study routines; learning activities in the classroom; cardinal numbers 100- 500; ordinal numbers 1-50” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-2-v1.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.2.V1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e7-5-r2
+Sıra: 2027-03-30 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-5-r2-1.png
+
+```
+Television: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf İngilizce öğrenme çıktısı E7.5.R2: “Students will be able to understand simple texts about past events.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-ingilizce-e7-5-r2.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E7.5.R2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e8-5-r2
+Sıra: 2027-03-30 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-5-r2-1.png
+
+```
+The Internet konusunda öğrencileriniz nerede? 📝
+8. sınıf İngilizce öğrenme çıktısı E8.5.R2: “Students will be able to find specific information about the Internet in various texts.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-ingilizce-e8-5-r2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E8.5.R2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-2-g1
+Sıra: 2027-03-31 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-2-g1-1.png
+
+```
+Classroom Life: tek öğrenme çıktısı, tek yazılı 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.2.G1: “Students can select and use the target grammatical elements of the current content about “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-2-g1.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.2.G1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-2-g1
+Sıra: 2027-03-31 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-2-g1-1.png
+
+```
+Classroom Life konusunda öğrencileriniz nerede? 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.2.G1: “Students can select and use the target grammatical elements of the current content about “classroom life with daily and study routines; learning activities in the classroom; cardinal numbers 100-500; ordinal numbers 1-50” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-2-g1.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.2.G1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e7-5-w1
+Sıra: 2027-03-31 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e7-5-w1-1.png
+
+```
+Television: tek öğrenme çıktısı, tek yazılı 📝
+7. sınıf İngilizce öğrenme çıktısı E7.5.W1: “Students will be able to write pieces about daily routines and preferences.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/7-ingilizce-e7-5-w1.pdf
+👉 Bütün 7. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=7&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E7.5.W1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #7sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-e8-5-w1
+Sıra: 2027-03-31 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-e8-5-w1-1.png
+
+```
+The Internet konusunda öğrencileriniz nerede? 📝
+8. sınıf İngilizce öğrenme çıktısı E8.5.W1: “Students will be able to write a basic paragraph to describe their internet habits.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-ingilizce-e8-5-w1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde E8.5.W1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-2-w3
+Sıra: 2027-03-31 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-2-w3-1.png
+
+```
+Classroom Life konusunda öğrencileriniz nerede? 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.2.W3: “Students can organise a content for the assigned writing task on the current content “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” based on the model/example provided.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-2-w3.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.2.W3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-2-w3
+Sıra: 2027-03-31 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-2-w3-1.png
+
+```
+Classroom Life: tek öğrenme çıktısı, tek yazılı 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.2.W3: “Students can organise a content for the assigned writing task on the current content “classroom life with daily and study routines; learning activities in the classroom; cardinal numbers 100-500; ordinal numbers 1-50” based on the model/example provided.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-2-w3.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.2.W3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-2-w4
+Sıra: 2027-04-01 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-2-w4-1.png
+
+```
+Classroom Life: tek öğrenme çıktısı, tek yazılı 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.2.W4: “Students can individually construct/form content for the assigned writing task on the current content “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time”.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-2-w4.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.2.W4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-2-w4
+Sıra: 2027-04-01 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-2-w4-1.png
+
+```
+Classroom Life: tek öğrenme çıktısı, tek yazılı 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.2.W4: “Students can individually construct/form content for the assigned writing task on the current content “classroom life with daily and study routines; learning activities in the classroom; cardinal numbers 100-500; ordinal numbers 1-50”.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-2-w4.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.2.W4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-3-r2
+Sıra: 2027-04-01 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-3-r2-1.png
+
+```
+Personal Life konusunda öğrencileriniz nerede? 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.3.R2: “Students can bring information about the current content on “personal life with basic body parts and physical features; clothes; daily routines and activities” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-3-r2.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.3.R2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-3-r2
+Sıra: 2027-04-01 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-3-r2-1.png
+
+```
+Personal Life konusunda öğrencileriniz nerede? 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.3.R2: “Students can bring information about the current content on “personal life with body parts, physical appearance and clothes; personality and character” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-3-r2.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.3.R2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-3-r3
+Sıra: 2027-04-01 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-3-r3-1.png
+
+```
+Personal Life konusunda öğrencileriniz nerede? 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.3.R3: “Students can make meaning of / derive meaning from the current content about “personal life with basic body parts and physical features; clothes; daily routines and activities” by reading it carefully.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-3-r3.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.3.R3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-3-r3
+Sıra: 2027-04-01 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-3-r3-1.png
+
+```
+Personal Life konusunda öğrencileriniz nerede? 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.3.R3: “Students can make meaning of / derive meaning from the current content about “personal life with body parts, physical appearance and clothes; personality and character” by reading it carefully.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-3-r3.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.3.R3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-3-v1
+Sıra: 2027-04-02 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-3-v1-1.png
+
+```
+Personal Life konusunda öğrencileriniz nerede? 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.3.V1: “Students can select and use the target vocabulary of the current content about “personal life with basic body parts and physical features; clothes; daily routines and activities” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-3-v1.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.3.V1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-3-v1
+Sıra: 2027-04-02 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-3-v1-1.png
+
+```
+Personal Life konusunda öğrencileriniz nerede? 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.3.V1: “Students can select and use the target vocabulary of the current content about “personal life with body parts, physical appearance and clothes; personality and character” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-3-v1.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.3.V1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-3-g1
+Sıra: 2027-04-02 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-3-g1-1.png
+
+```
+5. sınıf İngilizce · ENG.5.3.G1 yazılısı hazır 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.3.G1: “Students can select and use the target grammatical elements of the current content about “personal life with basic body parts and physical features; clothes; daily routines and activities” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-3-g1.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.3.G1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-3-g1
+Sıra: 2027-04-02 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-3-g1-1.png
+
+```
+6. sınıf İngilizce · ENG.6.3.G1 yazılısı hazır 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.3.G1: “Students can select and use the target grammatical elements of the current content about “personal life with body parts, physical appearance and clothes; personality and character” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-3-g1.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.3.G1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-3-w3
+Sıra: 2027-04-02 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-3-w3-1.png
+
+```
+Personal Life: tek öğrenme çıktısı, tek yazılı 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.3.W3: “Students can organise a content for the assigned writing task on the current content “personal life with basic body parts and physical features; clothes; daily routines and activities” based on the model/example provided.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-3-w3.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.3.W3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-3-w3
+Sıra: 2027-04-02 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-3-w3-1.png
+
+```
+Personal Life: tek öğrenme çıktısı, tek yazılı 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.3.W3: “Students can organise a content for the assigned writing task on the current content “personal life with body parts, physical appearance and clothes; personality and character” based on the model/example provided.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-3-w3.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.3.W3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+İngilizce öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-5-3-w4
+Sıra: 2027-04-03 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-5-3-w4-1.png
+
+```
+Personal Life konusunda öğrencileriniz nerede? 📝
+5. sınıf İngilizce öğrenme çıktısı ENG.5.3.W4: “Students can individually construct/form content for the assigned writing task on the current content “personal life with basic body parts and physical features; clothes; daily routines and activities”.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/5-ingilizce-eng-5-3-w4.pdf
+👉 Bütün 5. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=5&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.5.3.W4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #5sınıf #ingilizce #maarifmodeli
+```
+
+## seri-cikti-eng-6-3-w4
+Sıra: 2027-04-03 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-eng-6-3-w4-1.png
+
+```
+Personal Life konusunda öğrencileriniz nerede? 📝
+6. sınıf İngilizce öğrenme çıktısı ENG.6.3.W4: “Students can individually construct/form content for the assigned writing task on the current content “personal life with body parts, physical appearance and clothes; personality and character” .”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/6-ingilizce-eng-6-3-w4.pdf
+👉 Bütün 6. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=6&ders=ingilizce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde ENG.6.3.W4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #6sınıf #ingilizce #maarifmodeli
 ```
