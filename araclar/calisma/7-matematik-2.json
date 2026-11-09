@@ -15,8 +15,7 @@
   "hatirla": [
     "Rasyonel gösterimde üstteki pay sıfır değerini alabilir ({kesir:0|7} = 0); fakat alttaki payda hiçbir durumda sıfır olamaz ({kesir:7|0} tanımsız kalır).",
     "Tam sayıların tamamı paydaya 1 yazılarak kesir biçimine ({kesir:−6|1}) çevrilebilir; sadeleştirme veya genişletmeyle elde edilen eşdeğer kesirler aynı büyüklüğü anlatır.",
-    "Negatif rasyonel sayıda eksi işareti kesrin önünde, payında veya paydasında bulunabilir: −{kesir:3|5} = {kesir:−3|5} = {kesir:3|−5}.",
-    "Sayı doğrusunda payda birim aralığın kaç eş parçaya bölündüğünü, pay ise kaç parça ilerleneceğini gösterir; bir sayının sıfıra uzaklığı mutlak değeridir."
+    "Negatif rasyonel sayıda eksi işareti kesrin önünde, payında veya paydasında bulunabilir: −{kesir:3|5} = {kesir:−3|5} = {kesir:3|−5}."
   ],
   "sorular": [
     {
@@ -29,12 +28,13 @@
         "III. kart ({kesir:8|0})",
         "IV. kart ({kesir:4|−7})"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki sayı kümeleri şemasından yararlanarak verilen gösterimlerin en sade değerini ve yer aldığı tüm sayı kümelerini (Doğal Sayı, Tam Sayı, Rasyonel Sayı) tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki rasyonel sayı gösterimlerinin en sade değerini ve yer aldığı tüm sayı kümelerini (Doğal Sayı, Tam Sayı, Rasyonel Sayı) tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Gösterim",
         "En sade değeri",
@@ -91,14 +91,6 @@
         [
           "{kesir:−28|7}",
           "−4"
-        ],
-        [
-          "{kesir:0|−12}",
-          "0"
-        ],
-        [
-          "{kesir:18|12}",
-          "{kesir:3|2}"
         ]
       ]
     },
@@ -112,13 +104,14 @@
         "K = −{kesir:7|4}, L = −{kesir:3|4}, M = {kesir:6|4}",
         "K = −{kesir:6|4}, L = −{kesir:2|4}, M = {kesir:3|4}"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki eşitlik kartında eksi işaretinin üç farklı konumu ve bir denk kesir verilmiştir. Bu üç gösterimin neden birbirine eşit olduğunu açıklayınız ve {kesir:k|24} ifadesindeki k tam sayısını bulunuz.",
-      "cevap": "Eksi işareti kesrin önünde, payda veya paydada yazılabilir. 24 = 8 · 3 olduğundan k = −15 bulunur.",
+      "soru": "Verilen −{kesir:5|8} = {kesir:−5|8} = {kesir:5|−8} = {kesir:k|24} eşitliğinde eksi işaretinin üç farklı gösteriminin neden birbirine eşit olduğunu açıklayınız ve k tam sayısını bulunuz.",
+      "cevap": "Eksi işareti kesrin önünde, payda veya paydada yazılabilir; 24 = 8·3 olduğundan k = −15 olur.",
       "satir": 2
     },
     {
@@ -141,10 +134,6 @@
         {
           "metin": "Mutlak değerleri birbirine eşit olan iki rasyonel sayı her zaman birbirine eşittir.",
           "dogru": false
-        },
-        {
-          "metin": "Sayı doğrusunda birim aralık eş parçalara bölünmezse işaretlenen nokta kesri doğru göstermez.",
-          "dogru": true
         }
       ]
     },
@@ -158,7 +147,8 @@
         "A noktası −3 ile −2 tam sayıları arasında, B noktası 2 ile 3 tam sayıları arasındadır.",
         "Mutlak değerleri eşit olduğu için A ve B noktaları sayı doğrusunda aynı sayıyı gösterir."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "siralama",
@@ -181,13 +171,14 @@
         "★ = 3 ve ▲ = 9",
         "★ = 6 ve ▲ = 12"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görselde {kesir:2|3} rasyonel sayısını 0 ile 1 arasında göstermek için çizilen I. ve II. sayı doğruları verilmiştir. Hangi sayı doğrusundaki gösterimin doğru olduğunu nedeni ile birlikte yazınız.",
-      "cevap": "II. gösterim doğrudur; çünkü 0 ile 1 arası 3 eş parçaya bölünmüştür (I. çizimde bölmeler eş değildir).",
+      "soru": "{kesir:2|3} rasyonel sayısını 0 ile 1 arasında göstermek için yapılan I. çizimde aralıklar eşit olmayan 3 parçaya, II. çizimde ise 3 eş parçaya bölünerek 2. çizgi işaretlenmiştir. Hangi gösterimin doğru olduğunu nedeniyle yazınız.",
+      "cevap": "II. gösterim doğrudur; çünkü 0 ile 1 arası 3 eş parçaya bölünmüştür.",
       "satir": 2
     },
     {
@@ -240,10 +231,6 @@
         {
           "metin": "Bir rasyonel sayının sıfıra olan uzaklığına ___ değeri denir.",
           "cevap": "mutlak"
-        },
-        {
-          "metin": "Pay ve paydanın 1 dışında ortak böleni yoksa kesir ___ biçimdedir.",
-          "cevap": "sade"
         }
       ],
       "fazla": [
@@ -260,14 +247,15 @@
         "M sensörü (−{kesir:9|4} m)",
         "N sensörü (−{kesir:12|4} m)"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki iki işlem kartında {kesir:0|−8} ve {kesir:−8|0} ifadeleri karşılaştırılmıştır. Bu iki ifadenin sonuçlarının neden birbirinden farklı olduğunu çarpma işlemiyle ilişkilendirerek açıklayınız.",
-      "cevap": "0 · (−8) = 0 olduğundan ilk ifade 0’dır; 0 ile hiçbir sayının çarpımı −8 vermediğinden ikinci ifade tanımsızdır.",
-      "satir": 2
+      "soru": "{kesir:0|−8} ve {kesir:−8|0} ifadelerinin sonuçlarının neden birbirinden farklı olduğunu çarpma işlemiyle ilişkilendirerek açıklayınız.",
+      "cevap": "0·(−8)=0 olduğundan ilk ifade 0’dır; 0 ile hiçbir sayının çarpımı −8 vermediğinden ikincisi tanımsızdır.",
+      "satir": 3
     }
   ]
 }

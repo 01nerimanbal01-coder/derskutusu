@@ -15,8 +15,7 @@
   "hatirla": [
     "Gelecekte TÜBİTAK proje takımı öğrencisi, üniversite öğrencisi, millî sporcu, müzisyen, STK üyesi veya aile büyüğü gibi yeni roller üstlenebiliriz.",
     "Büyüklerimizle yapılan söyleşiler; kişinin zamanla yer aldığı grubun, rolünün, haklarının ve sorumluluklarının birlikte değiştiğini gösterir.",
-    "Ailede rollerin doğru paylaşılması, her bireyin kendi rolünün gereğini yapması, sevgi ve şefkat gösterilmesi aile içi huzuru ve mutluluğu güçlendirir.",
-    "Rollerin zaman içindeki değişimi açıklamalı tarih şeridiyle gösterilir; değerlendirme raporunda bu değişimin doğal bir süreç olduğu vurgulanır."
+    "Ailede rollerin doğru paylaşılması, her bireyin kendi rolünün gereğini yapması, sevgi ve şefkat gösterilmesi aile içi huzuru ve mutluluğu güçlendirir."
   ],
   "sorular": [
     {
@@ -35,14 +34,6 @@
         [
           "Yapışkan not kâğıtları",
           "Panodaki diğer grup tablolarında eksik görülen noktalara geri bildirim verme"
-        ],
-        [
-          "Açıklamalı tarih şeridi",
-          "Rollerimizin zaman içindeki değişimini hak ve sorumluluklarıyla birlikte gösterme"
-        ],
-        [
-          "Değerlendirme raporu",
-          "Grup ve rollerdeki değişimin doğal bir süreç olduğunu konu sonunda ifade etme"
         ]
       ]
     },
@@ -56,7 +47,8 @@
         "Doğa koruma gönüllüsü olmak isteyen Arda — Kart 4 (Müzik grubunda müzisyen)",
         "İleride akademik eğitimini sürdürmek isteyen Selin — Kart 2 (Üniversite öğrencisi)"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -78,10 +70,6 @@
         {
           "metin": "“Gelecekte dâhil olacağım gruplar ve rollerim” etkinliği harita okuma becerisini geliştirmek için yapılır.",
           "dogru": false
-        },
-        {
-          "metin": "Sınıf panosundaki tablolar incelenirken hak ve sorumluluklardaki benzerlik ve farklılıklara bakılır.",
-          "dogru": true
         }
       ]
     },
@@ -102,10 +90,6 @@
         {
           "metin": "Ailede ___ ve şefkat yaşatıldığında sorunlar kolayca çözülür.",
           "cevap": "sevgi"
-        },
-        {
-          "metin": "Zamanla grup ve rollerin değişmesi ___ bir süreçtir.",
-          "cevap": "doğal"
         }
       ],
       "fazla": [
@@ -122,12 +106,13 @@
         "Köy okulundaki eğitim alma hakkı, yalnız aile büyüğü olduğunda ortaya çıkan bir haktır.",
         "Torunlarına rehberlik etme sorumluluğu, ilkokul öğrencisiyken üstlendiği temel görevdir."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki söyleşi notlarından yararlanarak Kerem’in dedesinin geçmişteki ve günümüzdeki grup, rol, hak ve sorumluluk tablosunu tamamlayınız. İlk satır örnektir.",
+      "soru": "Kerem’in dedesiyle yaptığı söyleşide dedesi; çocukluğunda okulda öğrenci olduğunu, gençliğinde fabrikada işçi olarak çalıştığını, günümüzde ise ailede dede ve çevre derneğinde gönüllü üye olduğunu anlatmıştır. Buna göre geçmişteki ve günümüzdeki grup, rol, hak ve sorumluluk tablosunu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
         "Dönem",
         "Yer Aldığı Grup ve Rolü",
@@ -171,14 +156,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki gazete haberinde Prof. Dr. Nevzat Tarhan aile bireylerini neden tiyatro sanatçılarına benzetmiştir ve aile birliğini koruyan iki temel etken nedir?",
+      "soru": "Bir gazete haberinde Prof. Dr. Nevzat Tarhan, ailede anne, baba ve çocukların ayrı rolleri olduğunu ve herkesin rolünün gereğini yaptığını belirterek aile bireylerini tiyatro sanatçılarına benzetmiş; sevgi ve şefkatin sorunları çözdüğünü vurgulamıştır. Buna göre aile bireyleri neden tiyatro sanatçılarına benzetilmiştir ve aile birliğini koruyan iki temel etken nedir?",
       "cevap": "Tiyatro oyuncuları gibi ailede herkes rolünü yapar; rol paylaşımı, sevgi ve şefkat birliği korur.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görselde verilen “Gelecekte Dâhil Olacağım Gruplar ve Rollerim” etkinliğinin uygulama basamaklarını 1’den 4’e kadar sıraya koyunuz.",
+      "soru": "«Gelecekte Dâhil Olacağım Gruplar ve Rollerim» etkinliğinin uygulama basamaklarını 1’den 4’e kadar sıraya koyunuz.",
       "ogeler": [
         "Gelecekte yapılacak mesleği, dâhil olunacak grupları ve bu gruplardaki rolleri hayal edip söylemek",
         "Hayal edilen gruplar için grup, rol, hak ve sorumluluk sütunlarından oluşan bireysel tabloyu doldurmak",
@@ -196,7 +181,8 @@
         "Roller değiştikçe hak ve sorumluluklarda oluşan benzerlik ve farklılıkları karşılaştırmak",
         "Diğer grupların hazırladığı karton tabloları panodan kaldırıp yalnız kendi tablomuzu bırakmak"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -208,12 +194,13 @@
         "Gelecek döneme ait tahmin kutusunu şeritten tamamen çıkarmasını",
         "Okul ve meslek gruplarını çıkarıp yalnız oyun grubunu bırakmasını"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki rol geçiş şemasında okul basketbol takımındaki bir öğrencinin gelecekte millî sporcu veya antrenör olabileceği gösterilmiştir. Bu geçiş bugünkü becerilerle nasıl ilişkilidir?",
+      "soru": "Bugün okul basketbol takımında düzenli antrenman yapan bir öğrencinin gelecekte gençlik spor kulübünde yer alıp millî sporcu veya antrenör olabilmesi, bugünkü becerileriyle nasıl ilişkilidir?",
       "cevap": "Okul takımında kazanılan disiplin ve spor becerisi, gelecekteki millî sporcu rolünün temelidir.",
       "satir": 2
     },
@@ -253,7 +240,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki değerlendirme raporu kartını tamamlayacak olsaydınız grup ve rollerimizin zamanla değişmesi hakkında hangi genel çıkarımı yazardınız?",
+      "soru": "«Dâhil olduğumuz grupların ve rollerimizin zaman içindeki değişimi» konulu değerlendirme raporunu tamamlayacak olsaydınız grup ve rollerimizin zamanla değişmesi hakkında hangi genel çıkarımı yazardınız?",
       "cevap": "Büyüdükçe yer aldığımız gruplar, rollerimiz ve hak-sorumluluklarımız doğal bir süreçle değişir.",
       "satir": 2
     },

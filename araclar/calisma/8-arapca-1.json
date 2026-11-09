@@ -35,10 +35,6 @@
         [
           "{ar:نَادِي الْمَسْرَحِيَّةِ}",
           "Tiyatro kulübü"
-        ],
-        [
-          "{ar:نَادِي النَّظَافَةِ}",
-          "Temizlik kulübü"
         ]
       ]
     },
@@ -58,21 +54,20 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Kulüp görev kartlarındaki Arapça cümlelere göre öğrencinin üstlendiği sorumluluğu ve ilgili olduğu kulübü yazarak tabloyu tamamlayınız.",
+      "soru": "Tablodaki Arapça görev cümlelerine göre öğrencinin üstlendiği sorumluluğu ve ilgili olduğu kulübü yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Görev Kartı",
+        "Arapça Görev Cümlesi",
         "Üstlenilen Sorumluluk",
         "İlgili Kulüp"
       ],
       "satirlar": [
         [
-          "1. Kart ({ar:أَنَا مَسْؤُولٌ عَنْ تَرْتِيبِ الْكُتُبِ})",
+          "1. Cümle ({ar:أَنَا مَسْؤُولٌ عَنْ تَرْتِيبِ الْكُتُبِ})",
           "Kitapları düzenlemek",
           "Kütüphane kulübü ({ar:نَادِي الْمَكْتَبَةِ})"
         ],
         [
-          "2. Kart ({ar:أَنَا مَسْؤُولَةٌ عَنْ نَظَافَةِ الصَّفِّ})",
+          "2. Cümle ({ar:أَنَا مَسْؤُولَةٌ عَنْ نَظَافَةِ الصَّفِّ})",
           {
             "b": "Sınıf temizliğini korumak"
           },
@@ -81,7 +76,7 @@
           }
         ],
         [
-          "3. Kart ({ar:أَنَا مَسْؤُولٌ عَنِ الأَدَوَاتِ الرِّيَاضِيَّةِ})",
+          "3. Cümle ({ar:أَنَا مَسْؤُولٌ عَنِ الأَدَوَاتِ الرِّيَاضِيَّةِ})",
           {
             "b": "Spor araçlarını hazırlamak"
           },
@@ -107,7 +102,7 @@
     {
       "tur": "dy",
       "duzey": "hatirla",
-      "soru": "Kulüp diyalogları, bağlaçlar ve saat ifadeleriyle ilgili yargıların başına doğruysa D, yanlışsa Y yazınız.",
+      "soru": "Öğrenci kulüpleri, bağlaçlar ve saat ifadeleriyle ilgili yargıların başına doğruysa D, yanlışsa Y yazınız.",
       "ifadeler": [
         {
           "metin": "«{ar:أُحِبُّ}» fiili 'severim', «{ar:أَخْتَارُ}» fiili 'seçerim', «{ar:أُفَضِّلُ}» fiili ise 'tercih ederim' anlamına gelir.",
@@ -124,10 +119,6 @@
         {
           "metin": "Bir diyalogda «{ar:لِمَاذَا}» ile sorulan soruya kişi adı veya saat bilgisi verilerek cevap verilir.",
           "dogru": false
-        },
-        {
-          "metin": "«{ar:السَّاعَةُ الْوَاحِدَةُ وَالنِّصْفُ}» ifadesindeki «{ar:النِّصْفُ}» sözcüğü yarım/buçuk saat anlamı taşır.",
-          "dogru": true
         }
       ]
     },
@@ -161,10 +152,6 @@
         {
           "metin": "Olayları ve kulüp görevlerini oluş sırasına göre anlatırken «sonra» anlamında «___» bağlacı kullanılır.",
           "cevap": "{ar:ثُمَّ}"
-        },
-        {
-          "metin": "Resim yapmayı sevmesine rağmen teknoloji kulübünü tercih eden öğrenci iki cümleyi «___» (fakat) ile birleştirir.",
-          "cevap": "{ar:لٰكِنْ}"
         }
       ],
       "fazla": [
@@ -174,16 +161,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Sebep-sonuç şemasındaki «{ar:أُحِبُّ الْقِرَاءَةَ لِذٰلِكَ أَخْتَارُ نَادِيَ الْمَكْتَبَةِ}» cümlesinde neden ve sonuç bölümlerini ayırarak cümlenin Türkçe anlamını yazınız.",
+      "soru": "«{ar:أُحِبُّ الْقِرَاءَةَ لِذٰلِكَ أَخْتَارُ نَادِيَ الْمَكْتَبَةِ}» cümlesinde neden ve sonuç bölümlerini ayırarak cümlenin Türkçe anlamını yazınız.",
       "cevap": "Neden: Okumayı severim; Sonuç: Bu nedenle kütüphane kulübünü seçerim.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Kulüp seçimi ve görev paylaşımını anlatan aşağıdaki Arapça cümleleri olayların akış sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Kulüp seçimi ve görev paylaşımını anlatan aşağıdaki Arapça cümleleri oluş sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:أَنَا أُحِبُّ قِرَاءَةَ الْكُتُبِ كَثِيرًا.}",
         "{ar:لِذٰلِكَ أَخْتَارُ نَادِيَ الْمَكْتَبَةِ فِي الْمَدْرَسَةِ.}",
@@ -253,9 +238,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Kulüp tanıtım kartındaki ipuçlarından yararlanarak hangi kulübü neden seçtiğinizi ve kulüpteki sorumluluğunuzu anlatan Arapça bir cümle yazınız.",
-      "cevap": "{ar:أَخْتَارُ نَادِيَ الْمَكْتَبَةِ لِأَنِّي أُحِبُّ الْقِرَاءَةَ.}",
+      "soru": "«{ar:نَادِي الْمَكْتَبَةِ}», «{ar:لِأَنِّي أُحِبُّ الْقِرَاءَةَ}» ve «{ar:أُرَتِّبُ الْكُتُبَ}» ifadelerinden yararlanarak hangi kulübü neden seçtiğinizi ve kulüpteki görevinizi anlatan Arapça bir cümle yazınız.",
+      "cevap": "{ar:أَخْتَارُ نَادِيَ الْمَكْتَبَةِ لِأَنِّي أُحِبُّ الْقِرَاءَةَ وَأُرَتِّبُ الْكُتُبَ.}",
       "satir": 2
     }
   ]

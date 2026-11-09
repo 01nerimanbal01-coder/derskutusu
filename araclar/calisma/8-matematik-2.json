@@ -15,14 +15,13 @@
   "hatirla": [
     "İki pozitif doğal sayıyı kalansız bölen ortak bölenlerin en büyüğüne EBOB, sıfır dışındaki pozitif ortak katların en küçüğüne EKOK denir.",
     "Asal çarpanların üslü çarpımıyla hesaplamada EBOB için yalnız ortak asal çarpanların küçük üsleri, EKOK için tüm asal çarpanların büyük üsleri seçilir.",
-    "1 dışında ortak böleni olmayan iki pozitif doğal sayı aralarında asaldır; aralarında asal sayıların EBOB’u 1, EKOK’u ise bu iki sayının çarpımıdır.",
-    "Bütünü eş büyüklükte parçalara/gruplara ayırma problemlerinde ortak bölen (EBOB), tekrarlanan olayların ilk ortak zamanında ortak kat (EKOK) kullanılır ve a · b = EBOB(a, b) · EKOK(a, b) eşitliği sağlanır."
+    "1 dışında ortak böleni olmayan iki pozitif doğal sayı aralarında asaldır; aralarında asal sayıların EBOB’u 1, EKOK’u ise bu iki sayının çarpımıdır."
   ],
   "sorular": [
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki EBOB ve EKOK hesaplama şemasından yararlanarak tablodaki sayı çiftlerinin en büyük ortak bölenini ve en küçük ortak katını yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki sayı çiftlerinin asal çarpan açılımlarından yararlanarak en büyük ortak bölenini (EBOB) ve en küçük ortak katını (EKOK) yazınız. İlk satır örnektir.",
       "basliklar": [
         "Sayı çifti",
         "Asal çarpanlarla yazılışı",
@@ -84,14 +83,6 @@
         [
           "EBOB(14, 25)",
           "1"
-        ],
-        [
-          "EKOK(8, 9)",
-          "72"
-        ],
-        [
-          "EBOB(42, 70)",
-          "14"
         ]
       ]
     },
@@ -105,7 +96,8 @@
         "III. kart (16 ve 21)",
         "IV. kart (20 ve 35)"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -127,10 +119,6 @@
         {
           "metin": "Asal çarpanlarla EBOB hesaplanırken ortak asal çarpanların büyük üslü olanları seçilir.",
           "dogru": false
-        },
-        {
-          "metin": "Herhangi iki pozitif tam sayı birbiriyle çarpıldığında, EBOB(a, b) · EKOK(a, b) sonucuyla aynı değer elde edilir.",
-          "dogru": true
         }
       ]
     },
@@ -144,12 +132,13 @@
         "EBOB(A, B) = {us:2|2} · {us:3|2} · 5 ve EKOK(A, B) = {us:2|3} · {us:3|4} · 7",
         "EBOB(A, B) = 2 · 3 ve EKOK(A, B) = {us:2|5} · {us:3|6} · 5 · 7"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki iki depoda bulunan 48 litre ve 60 litre zeytinyağı, birbirine karıştırılmadan ve hiç artmayacak biçimde eşit hacimli şişelere doldurulacaktır. Bir şişenin hacmi en fazla kaç litre olur ve toplam kaç şişe gerekir?",
+      "soru": "İki farklı depoda bulunan 48 litre ve 60 litre zeytinyağı, birbirine karıştırılmadan ve hiç artmayacak biçimde eşit hacimli şişelere doldurulacaktır. Bir şişenin hacmi en fazla kaç litre olur ve toplam kaç şişe gerekir?",
       "cevap": "EBOB(48, 60) = 12 olduğundan bir şişe en fazla 12 L olur; 4 + 5 = 9 şişe gerekir.",
       "satir": 2
     },
@@ -163,7 +152,8 @@
         "4 kez",
         "6 kez"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "siralama",
@@ -186,13 +176,14 @@
         "25",
         "30"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki dikdörtgen levhanın santimetre cinsinden kenar uzunlukları olan a ve b doğal sayıları aralarında asaldır. EKOK(a, b) = 72 olduğuna göre EBOB(a, b) değerini ve levhanın alanını (a · b) bulunuz.",
-      "cevap": "Aralarında asal iki doğal sayının EBOB değeri 1’dir; levhanın alanı ise 1 · 72 = 72 cm² bulunur.",
+      "soru": "Kenar uzunlukları santimetre cinsinden a ve b doğal sayıları olan bir dikdörtgenin kenar uzunlukları aralarında asaldır. EKOK(a, b) = 72 olduğuna göre EBOB(a, b) değerini ve dikdörtgenin alanını (a · b) bulunuz.",
+      "cevap": "Aralarında asal iki doğal sayının EBOB değeri 1’dir; dikdörtgenin alanı 1 · 72 = 72 cm{us:|2} olur.",
       "satir": 2
     },
     {
@@ -245,10 +236,6 @@
         {
           "metin": "Aralarında asal olan iki doğal sayının EBOB değeri ___ olur.",
           "cevap": "bir"
-        },
-        {
-          "metin": "Ardışık iki pozitif doğal sayı daima aralarında ___ sayılardır.",
-          "cevap": "asal"
         }
       ],
       "fazla": [
@@ -265,13 +252,14 @@
         "III. problem kartı (İki tahta çubuğu eşit uzunlukta parçalara kesme)",
         "IV. problem kartı (İki farklı meyve grubunu eşit sayıda kasalara dizme)"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki tartışma kartında “Soruda ‘en az’ kelimesi geçiyorsa her zaman EKOK alınır.” iddiası yazılmıştır. Bu iddianın neden yanlış olduğunu eşit gruplama örneğiyle açıklayınız.",
-      "cevap": "İddia yanlıştır; eşit paketlere ayırmada paket sayısının en az olması için paket boyu EBOB ile bulunur.",
+      "soru": "Bir öğrencinin ileri sürdüğü “Problemde ‘en az’ ifadesi geçiyorsa her zaman EKOK alınır.” iddiasının neden yanlış olduğunu eşit büyüklükte gruplara ayırma örneğiyle açıklayınız.",
+      "cevap": "Yanlıştır; eşit gruplamada paket sayısının en az olması için paket boyu EBOB ile bulunur.",
       "satir": 2
     }
   ]

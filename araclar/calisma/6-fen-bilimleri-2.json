@@ -15,8 +15,7 @@
   "hatirla": [
     "Bilimsel model oluşturma; problemi tanımlama, araştırma ve veri toplama, çözüm geliştirme, modeli kurup test etme, kanıtlarla iyileştirme ve sunum adımlarını izler.",
     "Telif hakkı eser ve modelin kullanımını korur; patent hakkı ise buluşu üretme, kullanma ve satma hakkıdır (Türk Patent ve Marka Kurumu verir).",
-    "Güneş tutulmasında sıralama Güneş – Ay – Dünya’dır; yeni ay evresinde, gündüz ve Ay’ın gölgesinin düştüğü dar bölgede filtreli gözlükle izlenir.",
-    "Ay tutulmasında sıralama Güneş – Dünya – Ay’dır; dolunay evresinde, gece, geniş alanda ve Güneş tutulmasına göre daha uzun süre gözlemlenir."
+    "Güneş tutulmasında sıralama Güneş – Ay – Dünya’dır; yeni ay evresinde, gündüz ve Ay’ın gölgesinin düştüğü dar bölgede filtreli gözlükle izlenir."
   ],
   "sorular": [
     {
@@ -35,14 +34,6 @@
         [
           "Fergani",
           "Tutulma zamanlarını belirlemeye yönelik hesaplama yöntemleri geliştiren bilgin"
-        ],
-        [
-          "Bettânî",
-          "Güneş tutulmasının halka şeklinde gerçekleşebileceğini ortaya koyan astronom"
-        ],
-        [
-          "Filtreli gözlem aracı",
-          "Güneş tutulmasını göz sağlığına zarar vermeden izlemek için kullanılan gereç"
         ]
       ]
     },
@@ -56,12 +47,13 @@
         "K olayında Ay ile Güneş arasındaki uzaklık, Dünya ile Güneş arasındaki uzaklıktan fazladır.",
         "L olayı gece gözlemlenir ve K olayına göre Dünya’da daha geniş bir alandan izlenir."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
       "duzey": "hatirla",
-      "soru": "Model oluşturma ve tutulmalarla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
+      "soru": "Bilimsel çalışma ve tutulmalarla ilgili ifadelerden doğru olanlara D, yanlış olanlara Y kutusunu işaretleyiniz.",
       "ifadeler": [
         {
           "metin": "Güneş ve Ay tutulmaları ışığın doğrusal yayılması sonucunda oluşan gölge olaylarıdır.",
@@ -78,10 +70,6 @@
         {
           "metin": "Güneş tutulması Dünya’nın gündüzü yaşayan her noktasından aynı anda gözlemlenebilir.",
           "dogru": false
-        },
-        {
-          "metin": "Model test edildiğinde bir sorun görülürse model yeni kanıtlara göre geliştirilir ve raporlanır.",
-          "dogru": true
         }
       ]
     },
@@ -102,10 +90,6 @@
         {
           "metin": "Ülkemizde buluşlara ___ belgesini Türk Patent Kurumu verir.",
           "cevap": "patent"
-        },
-        {
-          "metin": "Modelde Mars ile Jüpiter arasına ___ kuşağı yerleştirilir.",
-          "cevap": "asteroit"
         }
       ],
       "fazla": [
@@ -122,12 +106,13 @@
         "3. madde — Asteroit kuşağının Dünya ile Mars arasına yerleştirilmesi",
         "4. madde — Halkası bulunan gaz devi gezegenlere halka eklenmesi"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki karşılaştırma kartından yararlanarak Güneş tutulması ve Ay tutulması tablosundaki boşlukları doldurunuz. İlk satır örnektir.",
+      "soru": "Güneş tutulması ve Ay tutulması karşılaştırma tablosundaki boşlukları doldurunuz. İlk satır örnektir.",
       "basliklar": [
         "Karşılaştırma Ölçütü",
         "Güneş Tutulması",
@@ -171,14 +156,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki karanlık sınıf deneyinde el feneri, büyük köpük küre ve küçük köpük küre aynı hizadadır. Bu düzenek hangi tutulmayı modeller ve küçük kürenin gölgesi nereye düşer?",
-      "cevap": "Güneş tutulmasını modeller; küçük kürenin gölgesi büyük kürenin üzerindeki dar bölgeye düşer.",
+      "soru": "Karanlık sınıfta yapılan deneyde el feneri (Güneş), küçük köpük küre (Ay) ve büyük köpük küre (Dünya) sırasıyla aynı doğrultuda dizilmiştir. Bu düzenek hangi tutulmayı temsil eder ve küçük kürenin gölgesi nereye düşer?",
+      "cevap": "Güneş tutulmasını temsil eder; küçük kürenin gölgesi büyük kürenin üzerindeki dar bölgeye düşer.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görselde verilen bilimsel bir model oluşturma basamaklarını gerçekleşme sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Güneş sistemi ve tutulmalar konusunda yapılan bilimsel tasarım sürecinin basamaklarını gerçekleşme sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "Problemi tanımlayıp önceki çalışmaları inceleyerek araştırma ve veri toplamak",
         "Verileri değerlendirerek çözüm yolları geliştirmek ve en uygun olanıyla modeli kurmak",
@@ -196,7 +181,8 @@
         "Yurdumuzda geçmişte izlenen ve gelecekte izlenecek başka tam Güneş tutulmaları da vardır.",
         "Antalya ve Ordu’da aynı gece dolunay evresinde tam Ay tutulması da gerçekleşmiştir."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -208,14 +194,15 @@
         "Her iki zamanda da; çünkü gök cisimlerinin sırası tutulma türünü etkilemez.",
         "Hiçbirinde; çünkü tutulma sırasında Dünya ve Ay’ın Güneş’e uzaklığı eşit olur."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki bilim tarihi kartlarında yer alan Fergani ve Bettânî’nin astronomi bilimine yaptığı ortak katkıyı ve Bettânî’nin yıl hesabı başarısını yazınız.",
+      "soru": "Türk-İslam bilginleri Fergani ve Bettânî’nin astronomi bilimine yaptığı ortak katkıyı ve Bettânî’nin yıl hesabı başarısını yazınız.",
       "cevap": "İkisi de tutulmaları hesaplamıştır; Bettânî 1 yılı gerçek değere çok yakın (365 gün 5 sa. 46 dk.) ölçmüştür.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "sifre",
@@ -253,14 +240,14 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki afişte “Özgün Güneş Sistemi Modelimi Nasıl Korurum?” sorusu yer almaktadır. Telif hakkı ile patent hakkı arasındaki farkı belirterek yanıtlayınız.",
+      "soru": "«Özgün Güneş Sistemi Tasarımımı Nasıl Korurum?» sorusunu telif hakkı ile patent hakkı arasındaki farkı belirterek yanıtlayınız.",
       "cevap": "Telif hakkı eserin izinsiz çoğaltılmasını önler; patent ise buluşu üretme ve satma hakkı verir.",
       "satir": 2
     },
     {
       "tur": "coktan",
       "duzey": "ust",
-      "soru": "Bir öğrenci hazırladığı Güneş sistemi modelini test ettiğinde iç gezegenler ile dış gezegenlerin hacimlerini birbirine eşit yaptığını fark ediyor. Bilimsel modelleme sürecine göre öğrenci hangi adımı uygulamalıdır?",
+      "soru": "Bir öğrenci hazırladığı Güneş sistemi düzeneğini test ettiğinde iç gezegenler ile dış gezegenlerin hacimlerini birbirine eşit yaptığını fark ediyor. Bilimsel çalışma sürecine göre öğrenci hangi adımı uygulamalıdır?",
       "secenekler": [
         "Hatayı görmezden gelerek modeli doğrudan bilim şenliğinde sunmalıdır.",
         "Gezegenlerin hacim oranlarını bilimsel verilere göre düzeltip proje raporuna işlemelidir.",

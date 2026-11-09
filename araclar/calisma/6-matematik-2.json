@@ -15,8 +15,7 @@
   "hatirla": [
     "Bir doğal sayının 2, 5 ve 10 ile tam bölünebilme durumu incelenirken yalnızca birler basamağındaki son rakama bakılır.",
     "Sayının son iki basamağının oluşturduğu sayı 4’ün katıysa veya 00 ise sayı 4’e tam bölünür; çift olmak tek başına 4 için yetmez.",
-    "Rakamları toplamı 3’ün katı olan sayılar 3’e, 9’un katı olan sayılar 9’a tam bölünür; 9’a bölünen her sayı 3’e de tam bölünür.",
-    "Bir sayının 6’ya tam bölünebilmesi için hem 2’ye (çift olma) hem de 3’e (rakamlar toplamı 3’ün katı olma) aynı anda bölünmesi gerekir."
+    "Rakamları toplamı 3’ün katı olan sayılar 3’e, 9’un katı olan sayılar 9’a tam bölünür; 9’a bölünen her sayı 3’e de tam bölünür."
   ],
   "sorular": [
     {
@@ -35,14 +34,6 @@
         [
           "5 ile tam bölünebilme",
           "Birler basamağındaki son rakamın 0 veya 5 olması"
-        ],
-        [
-          "6 ile tam bölünebilme",
-          "Sayının hem çift olması hem de rakamlar toplamının 3’ün katı olması"
-        ],
-        [
-          "9 ile tam bölünebilme",
-          "Basamaklarındaki rakamların toplamının 9’un katı olması"
         ]
       ]
     },
@@ -56,7 +47,8 @@
         "3. Kart: 4 726",
         "4. Kart: 5 130"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -78,10 +70,6 @@
         {
           "metin": "3 ile tam bölünen tek doğal sayılar aynı zamanda 6 ile de tam bölünür.",
           "dogru": false
-        },
-        {
-          "metin": "Son iki basamağı 00 olan doğal sayılar 4 ile kalansız bölünebilme koşulunu sağlar.",
-          "dogru": true
         }
       ]
     },
@@ -102,10 +90,6 @@
         {
           "metin": "4 ile bölünebilmede sayının son ___ basamağına bakılır.",
           "cevap": "iki"
-        },
-        {
-          "metin": "6’ya tam bölünen tüm doğal sayılar ___ sayıdır.",
-          "cevap": "çift"
         }
       ],
       "fazla": [
@@ -122,12 +106,13 @@
         "18",
         "21"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki kontrol panosunda verilen doğal sayıların 2, 3, 4, 5, 6, 9 ve 10 sayılarından hangilerine tam bölündüğünü tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen doğal sayıların rakamları toplamını ve 2, 3, 4, 5, 6, 9 ve 10 sayılarından hangilerine tam bölündüğünü yazınız. İlk satır örnektir.",
       "basliklar": [
         "Doğal Sayı",
         "Rakamlar Toplamı",
@@ -171,14 +156,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki kargo kolisinin dört basamaklı 7 3b0 takip kodu hem 4’e hem de 9’a tam bölünmektedir. Buna göre b yerine hangi rakam gelmelidir? İşlem gerekçenizi yazınız.",
+      "soru": "Bir kargo kolisinin dört basamaklı 7 3b0 takip kodu hem 4’e hem de 9’a tam bölünmektedir. Buna göre b yerine hangi rakam gelmelidir? İşlem gerekçenizi yazınız.",
       "cevap": "7+3+b+0=10+b toplamı 9’un katı olacağından b=8 olur; son iki basamak 80 sayısı 4’e tam bölünür.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görselde verilen dört basamaklı 4 3ab sayısının hem 6’ya hem 5’e tam bölünmesini sağlayan a ve b rakamlarını bulma adımlarını 1’den 4’e kadar sıralayınız.",
+      "soru": "Dört basamaklı 4 3ab sayısının hem 6’ya hem 5’e tam bölünmesini sağlayan a ve b rakamlarını bulma adımlarını 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "Sayının 5’e tam bölünmesi için birler basamağındaki b rakamının 0 veya 5 olabileceğini belirlemek",
         "Sayı aynı zamanda 6’ya bölüneceğinden çift olma koşulunu kullanıp b = 0 değerini seçmek",
@@ -196,7 +181,8 @@
         "635 sayısı 5 filtresinden geçer ancak tek sayı olduğu için 2, 4, 6 ve 10’a bölünemez.",
         "635 sayısının rakamları toplamı 14 olduğu için 3 ve 9 filtrelerinden kalansız geçer."
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -208,12 +194,13 @@
         "4",
         "6"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görseldeki konuşma kartında Mert “3’e bölünen her sayı 9’a da bölünür; çift olan her sayı 4’e de bölünür.” demiştir. Her iki iddiayı çürüten birer karşı örnek sayı yazınız.",
+      "soru": "Mert, «3’e bölünen her doğal sayı 9’a da bölünür; çift olan her doğal sayı 4’e de bölünür.» demiştir. Her iki iddiayı çürüten birer karşı örnek sayı yazınız.",
       "cevap": "123 sayısı 3’e bölünür (1+2+3=6) ama 9’a bölünmez; 14 sayısı çifttir ama 4’e tam bölünmez.",
       "satir": 2
     },
@@ -258,7 +245,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki fırında üretilen 468 adet simit altışarlı ve dokuzarlı paketlere hiç artmadan konulabilir mi? Bölünebilme kurallarıyla açıklayınız.",
+      "soru": "Bir fırında üretilen 468 adet simit altışarlı ve dokuzarlı paketlere hiç artmadan konulabilir mi? Bölünebilme kurallarıyla açıklayınız.",
       "cevap": "468 sayısı çifttir ve rakamlar toplamı 4+6+8=18 olduğundan 6’lı ve 9’lu paketlere tam bölünür.",
       "satir": 2
     },

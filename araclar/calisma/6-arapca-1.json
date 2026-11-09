@@ -11,8 +11,7 @@
   "hatirla": [
     "Anne ve baba tarafı akrabalar ayrı sözcüklerle adlandırılır: {ar:عَمّ}/{ar:عَمَّة} (amca/hala), {ar:خَال}/{ar:خَالَة} (dayı/teyze), {ar:جَدّ}/{ar:جَدَّة} (dede/nine), {ar:حَفِيد}/{ar:حَفِيدَة} (erkek/kız torun).",
     "Meslek adları tanıtılan kişinin cinsiyetine uyar: erkek için {ar:مُعَلِّم، طَبَّاخ، سَائِق، فَلَّاح، مُمَرِّض، بَيْطَرِيّ} kullanılırken kadın için sonuna {ar:ة} eklenir.",
-    "Kişiyi sormak için «{ar:مَنْ هَذَا؟}», mesleğini sormak için «{ar:مَا مِهْنَتُهُ؟} / {ar:مَا مِهْنَتُهَا؟}», çalışma yerini sormak için ise «{ar:أَيْنَ يَعْمَلُ؟} / {ar:أَيْنَ تَعْمَلُ؟}» kalıbı kullanılır.",
-    "İsmin başındaki {ar:ال} belirlilik takısının lamı kameri harflerden önce okunur ({ar:الْبَيْت، الْحَقِيبَة}); şemsi harflerden önce yazılır fakat ayrı ses olarak okunmaz, sonraki harf şeddelenir ({ar:الدَّرْس، التِّلْفَاز})."
+    "Kişiyi sormak için «{ar:مَنْ هَذَا؟}», mesleğini sormak için «{ar:مَا مِهْنَتُهُ؟} / {ar:مَا مِهْنَتُهَا؟}», çalışma yerini sormak için ise «{ar:أَيْنَ يَعْمَلُ؟} / {ar:أَيْنَ تَعْمَلُ؟}» kalıbı kullanılır."
   ],
   "sorular": [
     {
@@ -31,10 +30,6 @@
         [
           "{ar:بَيْطَرِيَّة}",
           "Kadın veteriner"
-        ],
-        [
-          "{ar:ضَابِط}",
-          "Erkek subay"
         ]
       ]
     },
@@ -48,7 +43,8 @@
         "3. kartta babanın kız kardeşi olan hala ve hemşirelik",
         "4. kartta annenin kız kardeşi olan teyze ve avukatlık"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -70,10 +66,6 @@
         {
           "metin": "{ar:الْحَقِيبَة} kelimesinde {ar:ح} kameri harf olduğu için {ar:ال} takısının lamı okunur.",
           "dogru": true
-        },
-        {
-          "metin": "Şemsi harfle başlayan {ar:التِّلْفَاز} kelimesinde lam harfi okunmadığı için yazıdan da çıkarılır.",
-          "dogru": false
         }
       ]
     },
@@ -94,10 +86,6 @@
         {
           "metin": "Bir erkeğin mesleğini sormak için «___ {ar:مِهْنَتُهُ؟}» denir.",
           "cevap": "{ar:مَا}"
-        },
-        {
-          "metin": "İki cümleyi ‘ve’ anlamıyla bağlamak için ___ kullanılır.",
-          "cevap": "{ar:وَ}"
         }
       ],
       "fazla": [
@@ -114,12 +102,13 @@
         "3. kutuda erkek polis {ar:شُرْطِيّ} ile erkek çiftçi {ar:فَلَّاح} eşleşmesi",
         "4. kutuda erkek hemşire {ar:مُمَرِّض} ile kadın hemşire {ar:مُمَرِّضَة} eşleşmesi"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki belirli isim kartlarını inceleyerek ilk harfin türünü (Kameri / Şemsi) ve kelimenin Türkçe anlamını tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki belirli isimleri inceleyerek ilk harfin türünü (Kameri / Şemsi) ve kelimenin Türkçe anlamını tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
         "Belirli İsim",
         "Harf Türü",
@@ -163,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki iki soru kalıbını inceleyerek {ar:مَا مِهْنَتُهُ؟} ve {ar:مَا مِهْنَتُهَا؟} sorularının hangi cinsiyetler için kullanıldığını ve aralarındaki ek farkını yazınız.",
+      "soru": "«{ar:مَا مِهْنَتُهُ؟}» ve «{ar:مَا مِهْنَتُهَا؟}» soru kalıplarını inceleyerek bu soruların hangi cinsiyetler için kullanıldığını ve aralarındaki zamir eki farkını yazınız.",
       "cevap": "{ar:ـهُ} erkeklerin, {ar:ـهَا} kadınların mesleğini sorar.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki akrabayı tanıtma basamaklarını ‘Kim? → Mesleği ne? → Özelliği ne? → Nerede çalışıyor?’ sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Bir akrabayı tanıtırken kullanılan cümleleri ‘Kim? → Mesleği ne? → Özelliği ne? → Nerede çalışıyor?’ sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:هَذَا خَالِي} (Bu, benim dayımdır — Akrabalık yakınlığı)",
         "{ar:هُوَ مُعَلِّمٌ} (O, bir öğretmendir — Yaptığı meslek)",
@@ -188,7 +177,8 @@
         "Soruda kadın akraba sorulduğu hâlde cevapta erkek akraba tanıtılmıştır",
         "Soruda kaç dayısı olduğu sorulduğu hâlde cevapta sayı bildiren kelime kullanılmamıştır"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -200,7 +190,8 @@
         "{ar:فَلَّاحٌ}",
         "{ar:سَائِقٌ}"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "sifre",
@@ -233,7 +224,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki {ar:الْبَيْت} ve {ar:الدَّرْس} kelimelerinde {ar:ال} takısındaki lam harfinin okunuş farkını başlangıç harflerinin özelliğiyle açıklayınız.",
+      "soru": "«{ar:الْبَيْت}» ve «{ar:الدَّرْس}» kelimelerinde {ar:ال} takısındaki lam harfinin okunuş farkını başlangıç harflerinin özelliğiyle açıklayınız.",
       "cevap": "{ar:ب} kameridir (lam okunur); {ar:د} şemsidir.",
       "satir": 2
     },
@@ -247,7 +238,8 @@
         "C kartındaki {ar:لَا يَعْمَلُ} (O erkek çalışmaz) ifadesinde",
         "D kartındaki {ar:لَا تَعْمَلُ} (O kadın çalışmaz) ifadesinde"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     }
   ],
   "yayin_tarihi": "2026-10-31"

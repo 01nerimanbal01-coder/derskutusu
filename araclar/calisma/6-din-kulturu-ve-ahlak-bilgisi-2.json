@@ -15,8 +15,7 @@
   "hatirla": [
     "Peygamberlik hakkında bilgi toplama süreci üç adımda yürütülür: güvenilir kaynaktan bulma, ayet ve hadisle doğrulama, düzenli kaydetme.",
     "Temel kaynak Kur’an-ı Kerim’dir; hadis kaynakları ve TDV İslâm Ansiklopedisi de kullanılır, ulaşılan bilgiyle birlikte kaynak adı deftere yazılır.",
-    "Maide 67 ve 92 tebliği, Ahzab 21 örnekliği, Nisa 165 müjdeleme ve uyarmayı; Meryem 56 sıdkı, Şuara 143 emaneti, Enbiya 62-63 fetaneti, Nisa 113 ismeti doğrular.",
-    "Buhari ve Tirmizi’deki hadisler Hz. Muhammed’in (sav) son peygamber, Hz. Âdem’in ilk insan olduğunu ve ibadetlerin uygulamalı öğretildiğini doğrular."
+    "Maide 67 ve 92 tebliği, Ahzab 21 örnekliği, Nisa 165 müjdeleme ve uyarmayı; Meryem 56 sıdkı, Şuara 143 emaneti, Enbiya 62-63 fetaneti, Nisa 113 ismeti doğrular."
   ],
   "sorular": [
     {
@@ -35,14 +34,6 @@
         [
           "Şuara suresi, 143. ayet",
           "Peygamberlerin her konuda güvenilir elçiler olması (emanet)"
-        ],
-        [
-          "Nisa suresi, 113. ayet",
-          "Allah’ın peygamberini hataya ve saptırılmaya karşı koruması (ismet)"
-        ],
-        [
-          "Buhari, Menâkıb (Tuğla benzetmesi)",
-          "Hz. Muhammed’in (sav) peygamberler zincirini tamamlayan son elçi olması"
         ]
       ]
     },
@@ -56,7 +47,8 @@
         "Babil halkıyla tartışmaktan kaçınıp şehri hemen terk etmek",
         "Putların kırılma nedenini açıklamadan sessiz kalmayı tercih etmek"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -78,10 +70,6 @@
         {
           "metin": "Kur’an-ı Kerim’de ismi anılan Hz. Lokman, Hz. Üzeyir ve Hz. Zülkarneyn’in peygamber olduğu kesin olarak bilinmektedir.",
           "dogru": false
-        },
-        {
-          "metin": "3-2-1 değerlendirme kartında “öğrendiğim üç bilgi, çalışmam gereken iki kavram ve dikkatimi çeken bir kavram” bölümleri yer alır.",
-          "dogru": true
         }
       ]
     },
@@ -102,10 +90,6 @@
         {
           "metin": "Hz. İbrahim’in ikna edici sorgulaması ___ sıfatına örnektir.",
           "cevap": "fetanet"
-        },
-        {
-          "metin": "Bilgilerin etkisini sebebiyle yazdığımız araca ___ denir.",
-          "cevap": "günlük"
         }
       ],
       "fazla": [
@@ -122,35 +106,36 @@
         "Yarım kalan kâğıdı yanına alarak çalışmayı ev ödevi olarak tamamlamalıdır.",
         "Etkinliği bırakıp yalnızca kendi grubunun ilk istasyondaki kâğıdını sunmalıdır."
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki doğrulama kartlarında yer alan ayet ve hadislerin peygamberlikle ilgili hangi bilgiyi doğruladığını tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tabloda verilen ayet ve hadis kaynaklarının peygamberlikle ilgili hangi bilgiyi doğruladığını yazınız. İlk satır örnektir.",
       "basliklar": [
-        "Karttaki Kaynak",
+        "Ayet / Hadis Kaynağı",
         "Doğruladığı Peygamberlik Bilgisi"
       ],
       "satirlar": [
         [
-          "1. Kart — Maide suresi, 67 ve 92. ayetler",
+          "1. Maide suresi, 67 ve 92. ayetler («Rabb’inden indirileni tebliğ et...»)",
           "Tebliğ görevi (Allah’tan indirileni eksiksiz ve apaçık duyurma)"
         ],
         [
-          "2. Kart — Nisa suresi, 165. ayet",
+          "2. Nisa suresi, 165. ayet («Müjdeleyici ve uyarıcı elçiler gönderdik.»)",
           {
             "b": "Müjdeleme ve uyarma görevi"
           }
         ],
         [
-          "3. Kart — İbrahim suresi, 4. ayet",
+          "3. İbrahim suresi, 4. ayet («Kendi kavminin diliyle gönderdik.»)",
           {
             "b": "Kendi kavminin diliyle gönderilip emirleri iyice açıklama"
           }
         ],
         [
-          "4. Kart — Buhari, Ezan (Namaz hadisi)",
+          "4. Buhari, Ezan hadisi («Ben namazı nasıl kılıyorsam siz de öyle kılın.»)",
           {
             "b": "İbadetlerin nasıl yapılacağını uygulamalı olarak gösterme"
           }
@@ -160,14 +145,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki hadis kartında yer alan “bina ve son tuğla” benzetmesi ile Tirmizi’de geçen “Âdem’in çocukları” hadisinin doğruladığı iki temel bilgiyi yazınız.",
+      "soru": "Hadislerde yer alan «bina ve son tuğla» benzetmesi (Buhari) ile Tirmizi’de geçen «İnsanlar Âdem’in çocuklarıdır ve Âdem topraktan yaratılmıştır.» hadisinin doğruladığı iki temel bilgiyi yazınız.",
       "cevap": "Tuğla örneği son peygamberin Hz. Muhammed, ilk insanın ise Hz. Âdem olduğunu gösterir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görselde verilen peygamber inancıyla ilgili bilimsel ve güvenilir bilgi toplama basamaklarını uygulanış sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Peygamber inancıyla ilgili bilimsel ve güvenilir bilgi toplama basamaklarını uygulanış sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "Kur’an-ı Kerim ve TDV İslâm Ansiklopedisi gibi güvenilir kaynaklardan bilgi aramak",
         "Ulaşılan bilgileri kullanılan kaynak adlarıyla birlikte çalışma defterine not etmek",
@@ -185,7 +170,8 @@
         "3 numaralı boşluğa Kur’an’da adı geçen peygamber sayısı olarak “yirmi sekiz” yazılmalıdır.",
         "4 numaralı boşluğa Kur’an’da peygamber anlamında kullanılan “resul ve nebi” yazılması uygundur."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -197,12 +183,13 @@
         "Hem “3 Bilgi” hem de “2 Kavram” bölümlerinin yer aldığı satırlarda",
         "“1 Kavram” bölümüne kavram yerine kıssa özeti yazdığı satırda"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görselde M. Asım Köksal’ın eserinden alınan kıssa kartı ile Enbiya suresi 62-63. ayetler birlikte verilmiştir. İki kaynağın birlikte kullanılması bilgi toplama sürecine ne kazandırır?",
+      "soru": "M. Asım Köksal’ın «Peygamberler Tarihi» eserinden alınan Hz. İbrahim kıssası ile Enbiya suresi 62-63. ayetlerin birlikte kullanılması bilgi toplama sürecine ne kazandırır?",
       "cevap": "Tarih eserindeki kıssa bilgisinin Kur’an ayetleriyle doğrulanmasını ve güvenirliğini sağlar.",
       "satir": 2
     },
@@ -247,7 +234,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki öğrenme günlüğü kartında “Beni en çok etkileyen bilgi” kısmını Hz. İbrahim kıssasıyla dolduracak olsaydınız bilgiyi ve etkilenme sebebinizi nasıl yazardınız?",
+      "soru": "Öğrenme günlüğünde «Beni en çok etkileyen bilgi» kısmını Hz. İbrahim kıssasıyla dolduracak olsaydınız bilgiyi ve etkilenme sebebinizi nasıl yazardınız?",
       "cevap": "Hz. İbrahim’in halkı azarlamak yerine soru sorarak düşündürüp ikna etmesi beni çok etkiledi.",
       "satir": 2
     },

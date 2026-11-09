@@ -23,7 +23,7 @@
         "Bir cüzün"
       ],
       "dogru": 3,
-      "gorsel": "<svg style=\"max-height:none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 78\" role=\"img\" aria-label=\"Bilgi kartları\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><rect x=\"4\" y=\"6\" width=\"352\" height=\"66\" rx=\"10\" fill=\"#edf3ff\"/><text x=\"14\" y=\"26\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">Okuma hedefi</text><text x=\"14\" y=\"46\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Bir bölümdeki dört hizbin hepsini</text><text x=\"14\" y=\"64\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">baştan sona okumak.</text></g></svg>"
+      "gorsel_var": true
     },
     {
       "tur": "eslestir",
@@ -41,20 +41,15 @@
         [
           "Hizip",
           "Cüzün beş sayfalık parçası"
-        ],
-        [
-          "Cüz",
-          "Dört hizipten oluşan bölüm"
         ]
       ]
     },
     {
       "tur": "acik",
-      "soru": "Etiketler yanlış yerlere yazılmıştır. Başlık ve kenar etiketi için doğru kavramları yazınız.",
+      "soru": "Bir öğrenci Kur’an sayfası incelerken «Sure başlığı» kısmına «Cüz numarası», «Sayfa kenarı» kısmına ise «Sure adı» yazmıştır. Etiketler yanlış yerlere yazıldığına göre başlık ve kenar etiketi için doğru kavramları yazınız.",
       "duzey": "uygula",
       "cevap": "Başlıkta sure adı, kenarda cüz numarası bulunmalıdır.",
-      "satir": 3,
-      "gorsel": "<svg style=\"max-height:none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 90\" role=\"img\" aria-label=\"Karışmış iki konum etiketi\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><rect x=\"1\" y=\"1\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#dce9ff\"/><text x=\"90.0\" y=\"20\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">Yer</text><rect x=\"181.0\" y=\"1\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#dce9ff\"/><text x=\"270.0\" y=\"20\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">Yazılan etiket</text><rect x=\"1\" y=\"31\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#f0f5fc\"/><text x=\"90.0\" y=\"50\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">Sure başlığı</text><rect x=\"181.0\" y=\"31\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#f0f5fc\"/><text x=\"270.0\" y=\"50\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">Cüz numarası</text><rect x=\"1\" y=\"61\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#f0f5fc\"/><text x=\"90.0\" y=\"80\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">Sayfa kenarı</text><rect x=\"181.0\" y=\"61\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#f0f5fc\"/><text x=\"270.0\" y=\"80\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">Sure adı</text></g></svg>"
+      "satir": 2
     },
     {
       "tur": "dy",
@@ -81,11 +76,10 @@
     },
     {
       "tur": "acik",
-      "soru": "Okuma günlüğündeki sonuç neden değiştirilmelidir?",
+      "soru": "Bir cüzün ilk üç hizbini tamamlayan öğrenci, okuma günlüğüne «Bu cüzün tamamını bitirdim.» yazmıştır. Okuma günlüğündeki bu sonuç neden değiştirilmelidir?",
       "duzey": "uygula",
       "cevap": "Bir cüz dört hiziptir. Öğrenci üç hizbi tamamladığı için bu cüzün son hizbini de okumalıdır.",
-      "gorsel": "<svg style=\"max-height:none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 114\" role=\"img\" aria-label=\"Bilgi kartları\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><rect x=\"4\" y=\"6\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#edf3ff\"/><text x=\"14\" y=\"26\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">Tamamlanan</text><text x=\"14\" y=\"46\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Bir cüzün ilk üç hizbi.</text><rect x=\"4\" y=\"60\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#ecf8f0\"/><text x=\"14\" y=\"80\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">Günlüğe yazılan</text><text x=\"14\" y=\"100\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Bu cüzün tamamını bitirdim.</text></g></svg>",
-      "satir": 3
+      "satir": 2
     },
     {
       "tur": "tablo",
@@ -99,12 +93,8 @@
       "satirlar": [
         [
           "1. gün: 1 hizip",
-          {
-            "b": "1"
-          },
-          {
-            "b": "3"
-          }
+          "1",
+          "3"
         ],
         [
           "2. gün: 2 hizip",
@@ -128,10 +118,9 @@
     },
     {
       "tur": "acik",
-      "soru": "Arkadaşının aranan ayeti bulabilmesi için bu nota hangi temel bilgi eklenmelidir?",
+      "soru": "Bir öğrenci arkadaşına yalnız «7. ayeti incele.» yazılı bir okuma notu vermiş, ancak arkadaşı hangi ayetin kastedildiğini bulamamıştır. Arkadaşının aranan ayeti bulabilmesi için bu nota hangi temel bilgi eklenmelidir?",
       "duzey": "uygula",
       "cevap": "Sure adı eklenmelidir. Sure adı ve ayet numarası birlikte verildiğinde hangi ayetin arandığı belli olur.",
-      "gorsel": "<svg style=\"max-height:none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 114\" role=\"img\" aria-label=\"Bilgi kartları\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><rect x=\"4\" y=\"6\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#edf3ff\"/><text x=\"14\" y=\"26\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">Okuma notu</text><text x=\"14\" y=\"46\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">7. ayeti incele.</text><rect x=\"4\" y=\"60\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#ecf8f0\"/><text x=\"14\" y=\"80\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">Durum</text><text x=\"14\" y=\"100\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Arkadaşı notu okudu ama ayeti bulamadı.</text></g></svg>",
       "satir": 3
     },
     {
@@ -179,15 +168,14 @@
         "İkinci hizip, cüzün ilk okuma bölümüdür."
       ],
       "dogru": 2,
-      "gorsel": "<svg style=\"max-height:none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 132\" role=\"img\" aria-label=\"Bilgi kartları\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><rect x=\"4\" y=\"6\" width=\"352\" height=\"66\" rx=\"10\" fill=\"#edf3ff\"/><text x=\"14\" y=\"26\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">Sayfa kenarı</text><text x=\"14\" y=\"46\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Cüz başında hizip numarası yok; sonra 2, 3</text><text x=\"14\" y=\"64\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">ve 4 görülüyor.</text><rect x=\"4\" y=\"78\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#ecf8f0\"/><text x=\"14\" y=\"98\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">Çıkarım</text><text x=\"14\" y=\"118\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Bu cüzde yalnız üç hizip olmalı.</text></g></svg>"
+      "gorsel_var": true
     },
     {
       "tur": "acik",
-      "soru": "Bu iki öğrenci aynı bilgiyi mi arıyor? Bakmaları gereken işaretleri ayrı ayrı yazınız.",
+      "soru": "A öğrencisi Kur’an’da hangi sureyi açtığını, B öğrencisi ise kaçıncı cüzde kaldığını öğrenmek istiyor. Bu iki öğrenci aynı bilgiyi mi arıyor? Bakmaları gereken işaretleri ayrı ayrı yazınız.",
       "duzey": "uygula",
       "cevap": "Aynı bilgiyi aramıyorlar. A sure başlığına, B sayfa kenarındaki cüz işaretine bakmalıdır.",
-      "gorsel": "<svg style=\"max-height:none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 114\" role=\"img\" aria-label=\"Bilgi kartları\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><rect x=\"4\" y=\"6\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#edf3ff\"/><text x=\"14\" y=\"26\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">A öğrencisi</text><text x=\"14\" y=\"46\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Hangi sureyi açtığını öğrenmek istiyor.</text><rect x=\"4\" y=\"60\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#ecf8f0\"/><text x=\"14\" y=\"80\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">B öğrencisi</text><text x=\"14\" y=\"100\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Kaçıncı cüzde kaldığını öğrenmek istiyor.</text></g></svg>",
-      "satir": 3
+      "satir": 2
     },
     {
       "tur": "coktan",
@@ -200,39 +188,35 @@
         "Üçüncü surenin on ikinci ayetini"
       ],
       "dogru": 1,
-      "gorsel": "<svg style=\"max-height:none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 60\" role=\"img\" aria-label=\"Sayfa kenarındaki iki numara\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><rect x=\"1\" y=\"1\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#dce9ff\"/><text x=\"90.0\" y=\"20\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">Cüz işareti</text><rect x=\"181.0\" y=\"1\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#dce9ff\"/><text x=\"270.0\" y=\"20\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">Hizip işareti</text><rect x=\"1\" y=\"31\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#f0f5fc\"/><text x=\"90.0\" y=\"50\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">12</text><rect x=\"181.0\" y=\"31\" width=\"178.0\" height=\"28\" rx=\"4\" fill=\"#f0f5fc\"/><text x=\"270.0\" y=\"50\" font-size=\"12\" fill=\"#172849\" text-anchor=\"middle\">3</text></g></svg>"
+      "gorsel_var": true
     },
     {
       "tur": "acik",
-      "soru": "Görseldeki okuma planına göre öğrenci ilk gün hedefin ne kadarını tamamlamıştır? Kitabın açıkladığı sayfa düzeniyle gerekçelendiriniz.",
+      "soru": "Haftalık okuma hedefi «iki hizip» olan bir öğrenci ilk gün «beş sayfa» okumuştur. Buna göre öğrenci ilk gün hedefin ne kadarını tamamlamıştır? Kitabın açıkladığı sayfa düzeniyle gerekçelendiriniz.",
       "duzey": "uygula",
       "cevap": "Hedefin yarısını tamamlamıştır. Beş sayfa bir hizip, haftalık hedef ise iki hiziptir.",
-      "satir": 3,
-      "gorsel": "<svg style=\"max-height:none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 114\" role=\"img\" aria-label=\"Hedef ve okunan bölüm\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><rect x=\"4\" y=\"6\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#edf3ff\"/><text x=\"14\" y=\"26\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">Haftalık hedef</text><text x=\"14\" y=\"46\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">İki hizip.</text><rect x=\"4\" y=\"60\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#ecf8f0\"/><text x=\"14\" y=\"80\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">İlk gün</text><text x=\"14\" y=\"100\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Beş sayfa okundu.</text></g></svg>"
+      "satir": 2
     },
     {
       "tur": "acik",
-      "soru": "Karttaki iki sayı neden çelişmez?",
+      "soru": "Kur’an-ı Kerim’in yapısını anlatan bir bilgi notunda hem «114 sure» hem de «30 cüz» sayıları yer almaktadır. Bu iki sayı neden çelişmez?",
       "duzey": "uygula",
       "cevap": "Sayılar farklı bölümlemeleri gösterir. Sureler ayetlerden oluşur; cüzler kitabın açıkladığı düzene göre okuma bölümleridir.",
-      "gorsel": "<svg style=\"max-height:none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 114\" role=\"img\" aria-label=\"Bilgi kartları\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><rect x=\"4\" y=\"6\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#edf3ff\"/><text x=\"14\" y=\"26\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">Birinci sayı</text><text x=\"14\" y=\"46\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">114 sure</text><rect x=\"4\" y=\"60\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#ecf8f0\"/><text x=\"14\" y=\"80\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">İkinci sayı</text><text x=\"14\" y=\"100\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">30 cüz</text></g></svg>",
       "satir": 3
     },
     {
       "tur": "acik",
-      "soru": "Görseldeki yanlış kayıtta numara neden değiştirilmelidir? Doğru kayıt nasıl olmalıdır?",
+      "soru": "Başlığında «Mülk suresi: 30 ayet» yazan surenin üç numaralı ayetini okuyan bir öğrenci, okuma kaydına yanlışlıkla «Mülk suresi, 30. ayet» yazmıştır. Bu yanlış kayıtta numara neden değiştirilmelidir ve doğru kayıt nasıl olmalıdır?",
       "duzey": "uygula",
       "cevap": "Başlıktaki 30, toplam ayet sayısıdır. Okuma kaydına Mülk suresinin 3. ayeti yazılmalıdır.",
-      "satir": 3,
-      "gorsel": "<svg style=\"max-height:none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 168\" role=\"img\" aria-label=\"Toplam ayet sayısı ile okunan ayet\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><rect x=\"4\" y=\"6\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#edf3ff\"/><text x=\"14\" y=\"26\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">Başlık bilgisi</text><text x=\"14\" y=\"46\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Mülk suresi: 30 ayet.</text><rect x=\"4\" y=\"60\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#ecf8f0\"/><text x=\"14\" y=\"80\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">Okunan yer</text><text x=\"14\" y=\"100\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Üç numaralı ayet.</text><rect x=\"4\" y=\"114\" width=\"352\" height=\"48\" rx=\"10\" fill=\"#fff4e6\"/><text x=\"14\" y=\"134\" font-size=\"13\" fill=\"#234a96\" text-anchor=\"start\">Yanlış kayıt</text><text x=\"14\" y=\"154\" font-size=\"13\" fill=\"#172849\" text-anchor=\"start\">Mülk suresi, 30. ayet.</text></g></svg>"
+      "satir": 2
     },
     {
       "tur": "acik",
-      "soru": "Çizimdeki ayet numaralarını saymadan, metni eşit uzunlukta parçalara bölerek ayetleri belirlemek doğru olur mu? Çizime göre açıklayınız.",
+      "soru": "Kur’an-ı Kerim’de ayetlerin uzunlukları birbirinden farklıdır. Buna göre ayet sonlarındaki numaraları saymadan, metni eşit uzunlukta parçalara bölerek ayetleri belirlemek doğru olur mu? Açıklayınız.",
       "duzey": "uygula",
-      "cevap": "Doğru olmaz. Çizimde üç ayetin uzunluğu farklıdır; ayetleri ayırırken eşit uzunluk değil, ayet işaretleri esas alınmalıdır.",
-      "satir": 3,
-      "gorsel": "<svg style=\"max-height:none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 108\" role=\"img\" aria-label=\"Farklı uzunlukta üç ayet ve sonlarındaki numaralar\"><g font-family=\"Noto Sans, sans-serif\" font-size=\"13\" fill=\"#172849\"><text x=\"8\" y=\"18\" font-size=\"12\" fill=\"#172849\" text-anchor=\"start\">Ayet uzunlukları — temsili çizim</text><rect x=\"12\" y=\"29\" width=\"300\" height=\"8\" rx=\"4\" fill=\"#3562ad\"/><circle cx=\"330\" cy=\"33\" r=\"9\" fill=\"#e6a23b\"/><text x=\"330\" y=\"37\" font-size=\"11\" fill=\"#172849\" text-anchor=\"middle\">1</text><rect x=\"12\" y=\"55\" width=\"115\" height=\"8\" rx=\"4\" fill=\"#3562ad\"/><circle cx=\"145\" cy=\"59\" r=\"9\" fill=\"#e6a23b\"/><text x=\"145\" y=\"63\" font-size=\"11\" fill=\"#172849\" text-anchor=\"middle\">2</text><rect x=\"12\" y=\"81\" width=\"235\" height=\"8\" rx=\"4\" fill=\"#3562ad\"/><circle cx=\"265\" cy=\"85\" r=\"9\" fill=\"#e6a23b\"/><text x=\"265\" y=\"89\" font-size=\"11\" fill=\"#172849\" text-anchor=\"middle\">3</text></g></svg>"
+      "cevap": "Doğru olmaz. Ayetlerin uzunluğu birbirinden farklıdır; ayetleri ayırırken eşit uzunluk değil, ayet işaretleri esas alınmalıdır.",
+      "satir": 3
     }
   ],
   "yayin_tarihi": "2026-10-02",

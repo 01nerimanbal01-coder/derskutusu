@@ -11,8 +11,7 @@
   "hatirla": [
     "Dinleme metninde Yasemin ailesini «{ar:هَذا … وَهُوَ …}» (eril) ve «{ar:هَذِهِ … وَهِيَ …}» (dişil) kalıbıyla tanıtır: dedesi aşçı ({ar:طَبّاخ}), ninesi Zehra emekli ({ar:مُتَقاعِدَة}), babası Ahmet avukat ({ar:مُحامٍ}), annesi Fatma öğretmendir ({ar:مُعَلِّمَة}).",
     "Kelimeler {ar:الْأَقارِب} (akrabalar: {ar:والِد، جَدَّة، جَدّ، والِدَة}) ve {ar:الْمِهَن} (meslekler: {ar:مُعَلِّم، طَبّاخ، مُحامِيَة، مُتَقاعِدَة}) olarak iki gruba ayrılır.",
-    "Dinlediğini anlamada {ar:مَن} kişiyi ({ar:مَنِ الْمُتَقاعِدَة؟}), {ar:ما اسْم} adı ({ar:ما اسْمُ الْوالِد؟}), {ar:هَل} ise evet/hayır cevabını ({ar:هَلِ الْوالِدَة مُحامِيَة؟ → لا، هِيَ مُعَلِّمَة}) sorar.",
-    "Kameri harflerden ({ar:ا ب ج ح خ ع غ ف ق ك م ه و ي}) önce {ar:ال} takısının lamı sükûnlu okunur ({ar:الْأَرْنَب، الْكُرَة}); şemsi harflerden ({ar:ت ث د ذ ر ز س ش ص ض ط ظ ل ن}) önce lam okunmaz ve sonraki harf şeddelenir ({ar:اَلتِّلْميذ، الشَّجَرَة})."
+    "Dinlediğini anlamada {ar:مَن} kişiyi ({ar:مَنِ الْمُتَقاعِدَة؟}), {ar:ما اسْم} adı ({ar:ما اسْمُ الْوالِد؟}), {ar:هَل} ise evet/hayır cevabını ({ar:هَلِ الْوالِدَة مُحامِيَة؟ → لا، هِيَ مُعَلِّمَة}) sorar."
   ],
   "sorular": [
     {
@@ -31,10 +30,6 @@
         [
           "{ar:السَّفينَة}",
           "Gemi"
-        ],
-        [
-          "{ar:النَّظّارَة}",
-          "Gözlük"
         ]
       ]
     },
@@ -48,7 +43,8 @@
         "Çalışma hayatını tamamlamış bir emeklidir",
         "Adliyede görev yapan bir avukattır"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -70,10 +66,6 @@
         {
           "metin": "{ar:الْقِطَّة} ve {ar:الْعِنَب} kelimeleri kameri harfle başladığı için lam harfi cezimli okunur.",
           "dogru": true
-        },
-        {
-          "metin": "{ar:تِلْميذ} kelimesine {ar:ال} eklendiğinde doğru harekeleme {ar:اَلْتِلْميذ} biçiminde lam üzerine sükûn konularak yapılır.",
-          "dogru": false
         }
       ]
     },
@@ -94,10 +86,6 @@
         {
           "metin": "Emekli büyüğün kim olduğunu «___ {ar:الْمُتَقاعِدَة؟}» sorar.",
           "cevap": "{ar:مَنِ}"
-        },
-        {
-          "metin": "Şemsi harfli {ar:شَجَرَة} kelimesi {ar:ال} alınca ___ yazılır.",
-          "cevap": "{ar:الشَّجَرَة}"
         }
       ],
       "fazla": [
@@ -114,12 +102,13 @@
         "3. kartta şemsi {ar:ت} harfinden önce lam’a sükûn konularak {ar:اَلْتِلْميذ} yazılması",
         "4. kartta şemsi {ar:ن} harfine şedde konularak {ar:النّافِذَة} yazılması"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki kelimeleri inceleyerek ait oldukları kavram grubunu ({ar:الْأَقارِب} Akrabalar / {ar:الْمِهَن} Meslekler) ve Türkçe anlamını tabloya yazınız. İlk satır örnektir.",
+      "soru": "Tablodaki Arapça kelimeleri inceleyerek ait oldukları kavram grubunu ({ar:الْأَقارِب} Akrabalar / {ar:الْمِهَن} Meslekler) ve Türkçe anlamını yazınız. İlk satır örnektir.",
       "basliklar": [
         "Arapça Kelime",
         "Kavram Grubu",
@@ -163,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki iki tanıtım cümlesini karşılaştırarak erkek ve kadın akrabalar için işaret zamiri ile kişi zamirinin nasıl değiştiğini yazınız.",
+      "soru": "1) «{ar:هَذا جَدّي · هُوَ طَبّاخ}» (Bu dedem, o aşçıdır) ve 2) «{ar:هَذِهِ أُمِّي · هِيَ مُعَلِّمَة}» (Bu annem, o öğretmendir) tanıtım cümlelerini karşılaştırarak erkek ve kadın akrabalar için işaret zamiri ile kişi zamirinin nasıl değiştiğini yazınız.",
       "cevap": "Erkekte {ar:هَذا / هُوَ}, kadında {ar:هَذِهِ / هِيَ} gelir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki Yasemin’in ailesini tanıttığı dinleme metni cümlelerini metindeki geçiş sırasına göre 1’den 4’e kadar numaralandırınız.",
+      "soru": "Yasemin’in ailesini tanıttığı dinleme metni cümlelerini metindeki geçiş sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:هَذا جَدّي وَهُوَ طَبّاخ} (Bu dedemdir ve o aşçıdır)",
         "{ar:وَهَذِهِ جَدَّتي زَهْرَة وَهِيَ مُتَقاعِدَة} (Bu ninem Zehra’dır ve o emeklidir)",
@@ -188,7 +177,8 @@
         "{ar:الْخُبْز} (Ekmek)",
         "{ar:الرُّمّان} (Nar)"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -200,7 +190,8 @@
         "{ar:لا، هُوَ طَبّاخ}",
         "{ar:نَعَمْ، هُوَ فَلّاح}"
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "sifre",
@@ -233,7 +224,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki {ar:بَيْت} ve {ar:الْبَيْت} kartlarını karşılaştırarak ismin başına gelen {ar:ال} takısının kelimenin anlamına nasıl bir fark kattığını açıklayınız.",
+      "soru": "«{ar:بَيْت}» ve «{ar:الْبَيْت}» kelimelerini karşılaştırarak ismin başına gelen {ar:ال} takısının kelimenin anlamına nasıl bir fark kattığını açıklayınız.",
       "cevap": "{ar:بَيْت} belirsiz (bir ev), {ar:الْبَيْت} belirlidir.",
       "satir": 2
     },
@@ -247,7 +238,8 @@
         "1. kart için {ar:والِدي طَبّاخ} — 2. kart için {ar:جَدَّتي مُتَقاعِدَة}",
         "1. kart için {ar:جَدّي مُعَلِّم} — 2. kart için {ar:والِدَتي فَلّاحَة}"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     }
   ],
   "yayin_tarihi": "2026-10-31"

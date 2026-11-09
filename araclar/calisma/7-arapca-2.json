@@ -35,10 +35,6 @@
         [
           "{ar:أَحْسَنْتِ}",
           "Aferin (kız öğrenciye)"
-        ],
-        [
-          "{ar:الْجَوَابُ الصَّحِيحُ}",
-          "Doğru cevap"
         ]
       ]
     },
@@ -58,21 +54,20 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki soru-cevap kartlarını inceleyerek cevabın türünü (Meslek Adı / Yapılan İş) ve Türkçe anlamını tabloya yazınız.",
+      "soru": "Tablodaki Arapça soru-cevap eşleşmelerini inceleyerek cevabın türünü (Meslek Adı / Yapılan İş) ve Türkçe anlamını tabloya yazınız. İlk satır örnektir.",
       "basliklar": [
-        "Soru ve Cevap Kartı",
+        "Soru ve Cevap",
         "Cevabın Türü",
         "Cevabın Türkçesi"
       ],
       "satirlar": [
         [
-          "1. Kart ({ar:مَنْ يَبِيعُ اللَّحْمَ؟ ← الْجَزَّارُ})",
+          "1. Eşleşme ({ar:مَنْ يَبِيعُ اللَّحْمَ؟ ← الْجَزَّارُ})",
           "Meslek adı",
           "Kasap"
         ],
         [
-          "2. Kart ({ar:مَاذَا يَفْعَلُ الْجَزَّارُ؟ ← يَبِيعُ اللَّحْمَ})",
+          "2. Eşleşme ({ar:مَاذَا يَفْعَلُ الْجَزَّارُ؟ ← يَبِيعُ اللَّحْمَ})",
           {
             "b": "Yapılan iş"
           },
@@ -81,7 +76,7 @@
           }
         ],
         [
-          "3. Kart ({ar:مَاذَا تَفْعَلُ الْمُذِيعَةُ؟ ← تُقَدِّمُ الْأَخْبَارَ})",
+          "3. Eşleşme ({ar:مَاذَا تَفْعَلُ الْمُذِيعَةُ؟ ← تُقَدِّمُ الْأَخْبَارَ})",
           {
             "b": "Yapılan iş"
           },
@@ -124,10 +119,6 @@
         {
           "metin": "«{ar:هَلِ اللُّعْبَةُ بَسِيطَةٌ أَمْ صَعْبَةٌ؟}» sorusu iki seçenek sunar ve oyunun kolay mı zor mu olduğunu sorar.",
           "dogru": true
-        },
-        {
-          "metin": "Bulmacada «{ar:طَيَّارٌ}» kelimesindeki şeddeli «{ar:ي}» harfi iki ayrı kutuya iki kez yazılır.",
-          "dogru": false
         }
       ]
     },
@@ -161,10 +152,6 @@
         {
           "metin": "Bir erkeğin mesleğini sorarken «{ar:مَا} ___» (Onun mesleği nedir?) kalıbı kullanılır.",
           "cevap": "{ar:مِهْنَتُهُ؟}"
-        },
-        {
-          "metin": "Annemi çok seviyorum «___ {ar:تَخْدِمُ الْمَرْضَى}» (çünkü o hastalara hizmet ediyor) cümlesi sebep bildirir.",
-          "cevap": "{ar:لِأَنَّهَا}"
         }
       ],
       "fazla": [
@@ -174,16 +161,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Görseldeki üç fiil kartında yer alan «{ar:أَفْحَصُ - يَفْحَصُ - تَفْحَصُ}» fiillerinin baş harflerinin hangi zamirleri gösterdiğini kısaca yazınız.",
-      "cevap": "{ar:أَ} ben ({ar:أَنَا}), {ar:يَـ} o-erkek ({ar:هُوَ}), {ar:تَـ} ise o-kadın ({ar:هِيَ}) zamirini gösterir.",
+      "soru": "«{ar:أَفْحَصُ الْمَرْضَى}», «{ar:يَفْحَصُ الْمَرْضَى}» ve «{ar:تَفْحَصُ الْمَرْضَى}» cümlelerinde yer alan «{ar:أَفْحَصُ - يَفْحَصُ - تَفْحَصُ}» fiillerinin baş harflerinin hangi kişi zamirlerini gösterdiğini kısaca yazınız.",
+      "cevap": "{ar:أَ} ben ({ar:أَنَا}), {ar:يَـ} o-erkek ({ar:هُوَ}), {ar:تَـ} o-kadın ({ar:هِيَ}) zamirini gösterir.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Sınıfta oynanan meslek bulma oyunundaki («{ar:هَيَّا نَلْعَبْ}») konuşmaları olayların akış sırasına göre 1’den 4’e kadar sıralayınız.",
+      "soru": "Sınıfta oynanan meslek bulma oyunundaki («{ar:هَيَّا نَلْعَبْ}») konuşmaları anlam sırasına göre 1’den 4’e kadar sıralayınız.",
       "ogeler": [
         "{ar:سَنَلْعَبُ لُعْبَةً جَمِيلَةً عَنِ الْمِهَنِ يَا طُلَّابُ.}",
         "{ar:هٰذَا رَائِعٌ يَا مُعَلِّمِي! هَيَّا نَبْدَأُ.}",
@@ -253,8 +238,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Görseldeki bilgi kartından yararlanarak annenin hemşire olduğunu ve hastalara hizmet ettiği için onun mesleğini sevdiğinizi anlatan Arapça cümleyi yazınız.",
+      "soru": "«{ar:أُمِّي مُمَرِّضَةٌ}», «{ar:أُحِبُّ مِهْنَتَهَا}» ve «{ar:لِأَنَّهَا تَخْدِمُ الْمَرْضَى}» ifadelerinden yararlanarak annenizin hemşire olduğunu ve hastalara hizmet ettiği için onun mesleğini sevdiğinizi anlatan Arapça cümleyi yazınız.",
       "cevap": "{ar:أُمِّي مُمَرِّضَةٌ، أُحِبُّ مِهْنَتَهَا لِأَنَّهَا تَخْدِمُ الْمَرْضَى.}",
       "satir": 2
     }

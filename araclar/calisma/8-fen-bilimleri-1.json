@@ -11,8 +11,7 @@
   "hatirla": [
     "Dünya kendi ekseni çevresinde dönerek gece ve gündüzü oluşturur; Güneş çevresinde ise 365 gün 6 saatte dolanır.",
     "Dönme ekseninin 23° 27′’lik eğimine eksen eğikliği denir; mevsimlerin iki temel nedeni eksen eğikliği ve dolanma hareketidir.",
-    "Geliş açısı 90° olan güneş ışınları küçük bir bölgeye toplanarak sıcaklığı artırır; dar açıyla inen ışınlar ise yayıldığı için yüzeyi daha az ısıtır.",
-    "Işınların düşme açısı 90°’ye yaklaştıkça gölge boyu kısalır. 21 Haziran ve 21 Aralık gün dönümü (solstis), 21 Mart ve 23 Eylül ise gece-gündüz eşitliği (ekinoks) tarihleridir."
+    "Geliş açısı 90° olan güneş ışınları küçük bir bölgeye toplanarak sıcaklığı artırır; dar açıyla inen ışınlar ise yayıldığı için yüzeyi daha az ısıtır."
   ],
   "sorular": [
     {
@@ -31,14 +30,6 @@
         [
           "Yengeç Dönencesi",
           "21 Haziran’da ışınların dik düştüğü Kuzey enlemi"
-        ],
-        [
-          "Oğlak Dönencesi",
-          "21 Aralık’ta ışınların dik düştüğü Güney enlemi"
-        ],
-        [
-          "ekinoks",
-          "21 Mart ve 23 Eylül’de gece-gündüz eşitliği"
         ]
       ]
     },
@@ -52,7 +43,8 @@
         "Eğik duran L kaynağının saniyede ürettiği ışık miktarı K kaynağından düşüktür.",
         "Geliş doğrultusu yatay zemine yaklaştıkça santimetrekare başına ısınma yükselir."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "gorsel_var": true
     },
     {
       "tur": "dy",
@@ -74,10 +66,6 @@
         {
           "metin": "21 Mart ve 23 Eylül tarihlerinde öğle vakti Güneş ışınları yalnızca dönenceler üzerine dik açıyla düşer.",
           "dogru": false
-        },
-        {
-          "metin": "Güneş ışınlarının yüzeye düşme açısı büyüdükçe yere dik duran bir çubuğun gölge boyu kısalır.",
-          "dogru": true
         }
       ]
     },
@@ -98,14 +86,6 @@
         {
           "metin": "Kuzey yarım kürede en uzun gündüz 21 ___ günü yaşanır.",
           "cevap": "Haziran"
-        },
-        {
-          "metin": "Güney yarım kürede yaz mevsimi 21 ___ tarihinde başlar.",
-          "cevap": "Aralık"
-        },
-        {
-          "metin": "Işınların geliş açısı 90°’ye yaklaştıkça gölge ___.",
-          "cevap": "kısalır"
         }
       ],
       "fazla": [
@@ -122,25 +102,26 @@
         "III. konumda Kuzey yarım küreye düşen birim yüzey enerjisi Güney’den fazladır.",
         "IV. konum olan 21 Mart’ta Kuzey’de ilkbahar, Güney’de sonbahar başlar."
       ],
-      "dogru": 2
+      "dogru": 2,
+      "gorsel_var": true
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Görseldeki takvim kartlarında verilen tarihlerde Türkiye’nin bulunduğu yarım kürede başlayan mevsimi ve öğle vakti Güneş ışınlarının dik düştüğü yeri yazarak tabloyu tamamlayınız.",
+      "soru": "Tabloda verilen önemli tarihlerde Türkiye’nin bulunduğu yarım kürede başlayan mevsimi ve öğle vakti Güneş ışınlarının dik düştüğü yeri yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
-        "Takvim Kartı",
+        "Önemli Tarih",
         "Türkiye’de Başlayan Mevsim",
         "Öğle Işınlarının Dik Düştüğü Yer"
       ],
       "satirlar": [
         [
-          "1. Kart (21 Haziran)",
+          "21 Haziran",
           "Yaz başlangıcı",
           "Yengeç Dönencesi"
         ],
         [
-          "2. Kart (23 Eylül)",
+          "23 Eylül",
           {
             "b": "Sonbahar başlangıcı"
           },
@@ -149,7 +130,7 @@
           }
         ],
         [
-          "3. Kart (21 Aralık)",
+          "21 Aralık",
           {
             "b": "Kış başlangıcı"
           },
@@ -158,7 +139,7 @@
           }
         ],
         [
-          "4. Kart (21 Mart)",
+          "21 Mart",
           {
             "b": "İlkbahar başlangıcı"
           },
@@ -171,14 +152,14 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "soru": "Görseldeki grafikte M şehrinde yere dik duran bir cismin yıl içindeki öğle vakti gölge boyu değişimi verilmiştir. M şehri hangi yarım kürede ve hangi özel enlem üzerinde yer alır? Gerekçesiyle yazınız.",
-      "cevap": "Güney yarım kürede, Oğlak Dönencesi üzerindedir; çünkü 21 Aralık’ta öğle gölgesi sıfır olmuştur.",
+      "soru": "M şehrinde yere dik duran bir cismin öğle vakti gölge boyu 21 Haziran’da en uzun değerine ulaşmakta, 21 Aralık’ta ise sıfır (0) olmaktadır. Buna göre M şehri hangi yarım kürede ve hangi özel enlem üzerinde yer alır? Gerekçesiyle yazınız.",
+      "cevap": "Güney Yarım Küre’de, Oğlak Dönencesi üzerindedir; çünkü 21 Aralık’ta öğle gölgesi sıfırdır.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "soru": "Görseldeki kavram halkalarını, 21 Haziran’da Kuzey yarım kürede yaz mevsiminin başlamasını açıklayan neden-sonuç zincirine göre 1’den 4’e kadar sıralayınız.",
+      "soru": "21 Haziran’da Kuzey Yarım Küre’de yaz mevsiminin başlamasını açıklayan aşağıdaki olayları neden-sonuç sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "Dünya’nın dolanma hareketi sırasında Kuzey yarım kürenin Güneş’e doğru eğik konuma gelmesi",
         "Güneş ışınlarının Kuzey yarım küre yüzeyine dik veya dike yakın açılarla düşmesi",
@@ -196,7 +177,8 @@
         "Eksen eğikliği olmasaydı da yıllık sıcaklık farklarının aynı şekilde süreceğini",
         "Mevsimlerin oluşumunun Dünya ile Güneş arasındaki uzaklık değişiminden kaynaklanmadığını"
       ],
-      "dogru": 3
+      "dogru": 3,
+      "gorsel_var": true
     },
     {
       "tur": "coktan",
@@ -208,12 +190,13 @@
         "Aynı boydaki iki direğin öğle gölgesi P yerleşiminde R yerleşimine kıyasla daha uzundur.",
         "İki yerleşim yerinde de karanlık ve aydınlık süreler birbirine denk ölçülür."
       ],
-      "dogru": 0
+      "dogru": 0,
+      "gorsel_var": true
     },
     {
       "tur": "kisa",
       "duzey": "ust",
-      "soru": "Görselde iki öğrencinin hazırladığı Dünya-Güneş modelleri karşılaştırılmıştır. 1. modelde dönme ekseni dolanma düzlemine tam dik (0° eğiklik), 2. modelde ise 23° 27′ eğiktir. 1. modeldeki gibi bir Dünya’da yıl boyunca neler gözlenirdi? Açıklayınız.",
+      "soru": "İki öğrencinin hazırladığı Dünya-Güneş düzeneklerinden birincisinde dönme ekseni dolanma düzlemine tam dik (0° eğiklik), ikincisinde ise 23° 27′ eğiktir. Birinci düzenekteki gibi eksen eğikliği olmayan (0°) bir Dünya’da yıl boyunca neler gözlenirdi? Açıklayınız.",
       "cevap": "Işınların düşme açısı yıl boyu değişmez, mevsim oluşmaz ve gece-gündüz daima 12 saat olurdu.",
       "satir": 2
     },
@@ -263,8 +246,8 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Görseldeki deney kartında özdeş iki el fenerinden çıkan eşit ışık demetlerinin dik ve eğik yüzeylerde oluşturduğu aydınlanma alanları verilmiştir. Bir öğrenci “Eğik yüzeyin az ısınması fenerden çıkan toplam enerjinin azalmasından kaynaklanır.” diyor. Bu hatayı toplam enerji ve birim yüzey enerjisi kavramlarıyla düzeltiniz.",
-      "cevap": "Toplam ışık enerjisi eşittir; eğik yüzeyde enerji geniş alana yayıldığından birim enerji azalır.",
+      "soru": "Özdeş iki el fenerinden çıkan eşit ışık demetlerinin dik ve eğik yüzeylerde oluşturduğu aydınlanma alanlarını inceleyen bir öğrenci, “Eğik yüzeyin az ısınması fenerden çıkan toplam enerjinin azalmasından kaynaklanır.” diyor. Bu hatayı toplam enerji ve birim yüzey enerjisi kavramlarıyla düzeltiniz.",
+      "cevap": "Toplam ışık enerjisi eşittir; eğik yüzeyde ışık geniş alana yayıldığından birim enerji azalır.",
       "satir": 2
     },
     {

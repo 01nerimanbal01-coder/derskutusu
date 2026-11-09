@@ -35,10 +35,6 @@
         [
           "{ar:مُسَاعَدَةُ الْوَالِدَيْنِ}",
           "Anne ve babaya yardım etmek"
-        ],
-        [
-          "{ar:تَرْتِيبُ الْغُرْفَةِ}",
-          "Odayı düzenlemek ve toplamak"
         ]
       ]
     },
@@ -58,8 +54,7 @@
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Sorumluluk kartlarındaki görevlerin hangi mekânda ({ar:فِي الْمَدْرَسَةِ} / {ar:فِي الْبَيْتِ}) yerine getirildiğini ve Türkçe anlamını yazarak tabloyu tamamlayınız.",
+      "soru": "Tablodaki Arapça sorumluluk ifadelerinin hangi mekânda ({ar:فِي الْمَدْرَسَةِ} / {ar:فِي الْبَيْتِ}) yerine getirildiğini ve Türkçe anlamını yazarak tabloyu tamamlayınız. İlk satır örnektir.",
       "basliklar": [
         "Sorumluluk İfadesi",
         "Uygulama Mekânı",
@@ -124,10 +119,6 @@
         {
           "metin": "Soru hemzesi («{ar:أَ}») ile başlayan iki seçenekli soru cümlelerinde «yoksa» anlamında «{ar:أَمْ}» bağlacı kullanılır.",
           "dogru": true
-        },
-        {
-          "metin": "«{ar:مَتَى سَنَخْتَارُ الأَنْدِيَةَ؟}» sorusuna sebep bildiren «{ar:لِأَنَّهَا تُحِبُّ الرَّسْمَ}» ifadesiyle cevap verilir.",
-          "dogru": false
         }
       ]
     },
@@ -161,10 +152,6 @@
         {
           "metin": "Cevabı «{ar:سَنَخْتَارُ الأَنْدِيَةَ الْيَوْمَ}» (Bugün seçeceğiz) olan soruda zaman soran «___» edatı kullanılır.",
           "cevap": "{ar:مَتَى}"
-        },
-        {
-          "metin": "Satrancı ve basketbolu birlikte sevdiğini söyleyen öğrenci «{ar:أُحِبُّ الشَّطْرَنْجَ} ___ {ar:كُرَةَ السَّلَّةِ}» der.",
-          "cevap": "{ar:وَ}"
         }
       ],
       "fazla": [
@@ -174,15 +161,13 @@
     {
       "tur": "kisa",
       "duzey": "uygula",
-      "gorsel_var": true,
-      "soru": "Soru-cevap kartındaki «{ar:لِمَاذَا تَخْتَارُ مَرْوَةُ نَادِيَ الرَّسْمِ؟ — لِأَنَّهَا تُحِبُّ الرَّسْمَ}» diyaloğunda neden «{ar:لِأَنَّهَا}» zamirinin kullanıldığını ve diyaloğun anlamını yazınız.",
-      "cevap": "Özne olan Merve kız (müennes) olduğu için ‘çünkü o’ anlamında dişil zamirli bağlaç kullanılmıştır.",
+      "soru": "«{ar:لِمَاذَا تَخْتَارُ مَرْوَةُ نَادِيَ الرَّسْمِ؟ — لِأَنَّهَا تُحِبُّ الرَّسْمَ}» konuşmasında neden «{ar:لِأَنَّهَا}» zamirinin kullanıldığını ve cümlelerin Türkçe anlamını yazınız.",
+      "cevap": "Merve müennes (dişil) olduğu için ‘çünkü o’ anlamında «{ar:لِأَنَّهَا}» bağlacı kullanılmıştır.",
       "satir": 2
     },
     {
       "tur": "siralama",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Bir öğrencinin sabahtan akşama kadar yerine getirdiği günlük sorumlulukları oluş sırasına göre 1’den 4’e kadar numaralandırınız.",
       "ogeler": [
         "{ar:أَسْتَيْقِظُ مُبَكِّرًا فِي الصَّبَاحِ وَأَذْهَبُ إِلَى الْمَدْرَسَةِ.}",
@@ -253,8 +238,7 @@
     {
       "tur": "acik",
       "duzey": "ust",
-      "gorsel_var": true,
-      "soru": "Karşılaştırma kartındaki bilgilerden yararlanarak erkek arkadaşınız Kerem ve kız arkadaşınız Sümeyye’nin kulüp tercihlerini «{ar:وَلٰكِنْ}» bağlacıyla anlatan birer Arapça cümle yazınız.",
+      "soru": "Erkek arkadaşınız Kerem için «{ar:يُحِبُّ الرَّسْمَ / نَادِي التِّكْنُولُوجِيَا}» ve kız arkadaşınız Sümeyye için «{ar:تُحِبُّ الشَّطْرَنْجَ / نَادِي الْمَكْتَبَةِ}» ifadelerini «{ar:وَلٰكِنْ}» bağlacıyla birleştirerek kulüp tercihlerini anlatan Arapça cümleleri yazınız.",
       "cevap": "{ar:صَدِيقِي يُحِبُّ الرَّسْمَ وَلٰكِنْ يُفَضِّلُ نَادِيَ التِّكْنُولُوجِيَا.}",
       "satir": 2
     }
