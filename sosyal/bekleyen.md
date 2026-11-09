@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 491 gönderi (Instagram: 0 bekleyen — 2166/2166 yayında; Facebook: 491 bekleyen).
+Toplam 520 gönderi (Instagram: 29 bekleyen — 2166/2195 yayında; Facebook: 520 bekleyen).
 
 ## bilgi-9-peygamberimizin-hayati-7
 Sıra: 2026-12-13 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-peygamberimizin-hayati-7.png
@@ -5311,4 +5311,439 @@ Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap ana
 Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.2.1.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
 Zümrenizle paylaşın; kâğıtlar herkese açık.
 #derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
+```
+
+## seri-cikti-t-8-3-1
+Sıra: 2027-04-05 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-1-1.png
+
+```
+Söz Varlığı: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.1: “Noktalama işaretlerine dikkat ederek sesli ve sessiz okur.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-2
+Sıra: 2027-04-05 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-2-1.png
+
+```
+8. sınıf Türkçe · T.8.3.2 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.2: “Metni türün özelliklerine uygun biçimde okur.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-3
+Sıra: 2027-04-05 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-3-1.png
+
+```
+Söz Varlığı konusunda öğrencileriniz nerede? 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.3: “Farklı yazı karakterleri ile yazılmış yazıları okur.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-3.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-4
+Sıra: 2027-04-05 21:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-4-1.png
+
+```
+8. sınıf Türkçe · T.8.3.4 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.4: “Okuma stratejilerini kullanır.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-4.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-6
+Sıra: 2027-04-06 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-6-1.png
+
+```
+Söz Varlığı konusunda öğrencileriniz nerede? 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.6: “Deyim, atasözü ve özdeyişlerin metne katkısını belirler.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-6.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.6 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-8
+Sıra: 2027-04-06 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-8-1.png
+
+```
+Söz Varlığı konusunda öğrencileriniz nerede? 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.8: “Metindeki anlatım bozukluklarını belirler.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-8.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.8 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-10
+Sıra: 2027-04-06 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-10-1.png
+
+```
+8. sınıf Türkçe · T.8.3.10 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.10: “Geçiş ve bağlantı ifadelerinin metnin anlamına olan katkısını değerlendirir.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-10.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.10 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-12
+Sıra: 2027-04-06 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-12-1.png
+
+```
+Anlama: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.12: “Görsel ve başlıktan hareketle okuyacağı metnin konusunu tahmin eder.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-12.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.12 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-13
+Sıra: 2027-04-06 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-13-1.png
+
+```
+Anlama konusunda öğrencileriniz nerede? 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.13: “Okuduklarını özetler.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-13.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.13 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-18
+Sıra: 2027-04-06 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-18-1.png
+
+```
+Anlama konusunda öğrencileriniz nerede? 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.18: “Metindeki yardımcı fikirleri belirler.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-18.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.18 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-20
+Sıra: 2027-04-06 21:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-20-1.png
+
+```
+8. sınıf Türkçe · T.8.3.20 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.20: “Okuduğu metinlerdeki hikâye unsurlarını belirler.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-20.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.20 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-21
+Sıra: 2027-04-07 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-21-1.png
+
+```
+Anlama: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.21: “Metnin içeriğini yorumlar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-21.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.21 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-22
+Sıra: 2027-04-07 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-22-1.png
+
+```
+Anlama konusunda öğrencileriniz nerede? 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.22: “Metinde ele alınan sorunlara farklı çözümler üretir.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-22.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.22 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-23
+Sıra: 2027-04-07 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-23-1.png
+
+```
+8. sınıf Türkçe · T.8.3.23 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.23: “Metinler arasında karşılaştırma yapar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-23.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.23 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-24
+Sıra: 2027-04-07 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-24-1.png
+
+```
+Anlama: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.24: “Metindeki gerçek ve kurgusal unsurları ayırt eder.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-24.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.24 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-27
+Sıra: 2027-04-07 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-27-1.png
+
+```
+Anlama: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.27: “Görsellerle ilgili soruları cevaplar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-27.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.27 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-28
+Sıra: 2027-04-07 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-28-1.png
+
+```
+Anlama konusunda öğrencileriniz nerede? 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.28: “Metinde önemli noktaların vurgulanış biçimlerini kavrar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-28.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.28 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-29
+Sıra: 2027-04-07 21:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-29-1.png
+
+```
+8. sınıf Türkçe · T.8.3.29 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.29: “Medya metinlerini analiz eder.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-29.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.29 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-30
+Sıra: 2027-04-08 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-30-1.png
+
+```
+Anlama: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.30: “Bilgi kaynaklarını etkili bir şekilde kullanır.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-30.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.30 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-31
+Sıra: 2027-04-08 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-31-1.png
+
+```
+Anlama konusunda öğrencileriniz nerede? 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.31: “Bilgi kaynaklarının güvenilirliğini sorgular.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-31.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.31 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-32
+Sıra: 2027-04-08 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-32-1.png
+
+```
+8. sınıf Türkçe · T.8.3.32 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.32: “Grafik, tablo ve çizelgeyle sunulan bilgileri yorumlar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-32.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.32 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-33
+Sıra: 2027-04-08 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-33-1.png
+
+```
+Anlama konusunda öğrencileriniz nerede? 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.33: “Edebî eserin yazılı metni ile medya sunumunu karşılaştırır.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-33.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.33 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-3-35
+Sıra: 2027-04-08 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-3-35-1.png
+
+```
+8. sınıf Türkçe · T.8.3.35 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.3.35: “Metindeki iş ve işlem basamaklarını kavrar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-3-35.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.3.35 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-4-2
+Sıra: 2027-04-08 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-2-1.png
+
+```
+Yazma: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.4.2: “Bilgilendirici metin yazar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-4-3
+Sıra: 2027-04-08 21:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-3-1.png
+
+```
+8. sınıf Türkçe · T.8.4.3 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.4.3: “Hikâye edici metin yazar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-3.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-4-5
+Sıra: 2027-04-09 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-5-1.png
+
+```
+Yazma: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.4.5: “Anlatımı desteklemek için grafik ve tablo kullanır.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-5.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.5 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-4-6
+Sıra: 2027-04-09 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-6-1.png
+
+```
+8. sınıf Türkçe · T.8.4.6 yazılısı hazır 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.4.6: “Bir işi işlem basamaklarına göre yazar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-6.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.6 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-4-10
+Sıra: 2027-04-09 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-10-1.png
+
+```
+Yazma: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.4.10: “Yazdıklarında yabancı dillerden alınmış, dilimize henüz yerleşmemiş kelimelerin Türkçelerini kullanır.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-10.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.10 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
+```
+
+## seri-cikti-t-8-4-19
+Sıra: 2027-04-09 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-t-8-4-19-1.png
+
+```
+Yazma: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Türkçe öğrenme çıktısı T.8.4.19: “Cümle türlerini tanır.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-turkce-t-8-4-19.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=turkce#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde T.8.4.19 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Türkçe öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #türkçe #maarifmodeli
 ```
