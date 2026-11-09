@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 478 gönderi (Instagram: 0 bekleyen — 2153/2153 yayında; Facebook: 478 bekleyen).
+Toplam 491 gönderi (Instagram: 13 bekleyen — 2153/2166 yayında; Facebook: 491 bekleyen).
 
 ## bilgi-9-peygamberimizin-hayati-7
 Sıra: 2026-12-13 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-peygamberimizin-hayati-7.png
@@ -5116,4 +5116,199 @@ Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap ana
 Sayfada “Öğrenme çıktısı yazılıları” bölümünde DKAB.7.2.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
 Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
 #derskutusu #öğrenmeçıktısı #7sınıf #dinkültürü #maarifmodeli
+```
+
+## seri-cikti-m-8-1-3-4
+Sıra: 2027-04-03 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-4-1.png
+
+```
+Kareköklü İfadeler konusunda öğrencileriniz nerede? 📝
+8. sınıf Matematik öğrenme çıktısı M.8.1.3.4: “Kareköklü ifadelerde çarpma ve bölme işlemlerini yapar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-1-3-4.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.1.3.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
+```
+
+## seri-cikti-m-8-1-3-5
+Sıra: 2027-04-03 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-5-1.png
+
+```
+8. sınıf Matematik · M.8.1.3.5 yazılısı hazır 📝
+8. sınıf Matematik öğrenme çıktısı M.8.1.3.5: “Kareköklü ifadelerde toplama ve çıkarma işlemlerini yapar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-1-3-5.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.1.3.5 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
+```
+
+## seri-cikti-m-8-1-3-6
+Sıra: 2027-04-03 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-6-1.png
+
+```
+Kareköklü İfadeler konusunda öğrencileriniz nerede? 📝
+8. sınıf Matematik öğrenme çıktısı M.8.1.3.6: “Kareköklü bir ifade ile çarpıldığında, sonucu bir doğal sayı yapan çarpanlara örnek verir.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-1-3-6.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.1.3.6 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
+```
+
+## seri-cikti-m-8-1-3-7
+Sıra: 2027-04-03 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-7-1.png
+
+```
+Kareköklü İfadeler konusunda öğrencileriniz nerede? 📝
+8. sınıf Matematik öğrenme çıktısı M.8.1.3.7: “Ondalık ifadelerin kareköklerini belirler.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-1-3-7.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.1.3.7 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
+```
+
+## seri-cikti-m-8-1-3-8
+Sıra: 2027-04-04 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-8-1.png
+
+```
+Kareköklü İfadeler konusunda öğrencileriniz nerede? 📝
+8. sınıf Matematik öğrenme çıktısı M.8.1.3.8: “Gerçek sayıları tanır, rasyonel ve irrasyonel sayılarla ilişkilendirir.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-1-3-8.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.1.3.8 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
+```
+
+## seri-cikti-m-8-4-1-1
+Sıra: 2027-04-04 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-4-1-1-1.png
+
+```
+Veri Analizi konusunda öğrencileriniz nerede? 📝
+8. sınıf Matematik öğrenme çıktısı M.8.4.1.1: “En fazla üç veri grubuna ait çizgi ve sütun grafiklerini yorumlar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-4-1-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.4.1.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
+```
+
+## seri-cikti-m-8-4-1-2
+Sıra: 2027-04-04 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-4-1-2-1.png
+
+```
+8. sınıf Matematik · M.8.4.1.2 yazılısı hazır 📝
+8. sınıf Matematik öğrenme çıktısı M.8.4.1.2: “Verileri sütun, daire veya çizgi grafiği ile gösterir ve bu gösterimler arasında uygun olan dönüşümleri yapar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-4-1-2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.4.1.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
+```
+
+## seri-cikti-m-8-5-1-1
+Sıra: 2027-04-04 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-1-1.png
+
+```
+Basit Olayların Olma Olasılığı: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Matematik öğrenme çıktısı M.8.5.1.1: “Bir olaya ait olası durumları belirler.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-5-1-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.5.1.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Matematik öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
+```
+
+## seri-cikti-m-8-5-1-2
+Sıra: 2027-04-04 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-2-1.png
+
+```
+8. sınıf Matematik · M.8.5.1.2 yazılısı hazır 📝
+8. sınıf Matematik öğrenme çıktısı M.8.5.1.2: ““Daha fazla”, “eşit”, “daha az” olasılıklı olayları ayırt eder, örnek verir.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz, değerlendirme ve yaratma düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-5-1-2.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.5.1.2 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
+```
+
+## seri-cikti-m-8-5-1-3
+Sıra: 2027-04-04 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-3-1.png
+
+```
+Basit Olayların Olma Olasılığı konusunda öğrencileriniz nerede? 📝
+8. sınıf Matematik öğrenme çıktısı M.8.5.1.3: “Eşit şansa sahip olan olaylarda her bir çıktının olasılık değerinin eşit olduğunu ve bu değerin 1/n olduğunu açıklar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, analiz, uygulama ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-5-1-3.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.5.1.3 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
+```
+
+## seri-cikti-m-8-5-1-4
+Sıra: 2027-04-05 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-4-1.png
+
+```
+Basit Olayların Olma Olasılığı: tek öğrenme çıktısı, tek yazılı 📝
+8. sınıf Matematik öğrenme çıktısı M.8.5.1.4: “Olasılık değerinin 0 ile 1 arasında (0 ve 1 dâhil) olduğunu anlar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, değerlendirme ve analiz düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-5-1-4.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.5.1.4 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Matematik öğretmeni arkadaşlarınızı etiketleyin.
+#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
+```
+
+## seri-cikti-m-8-5-1-5
+Sıra: 2027-04-05 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-5-1.png
+
+```
+8. sınıf Matematik · M.8.5.1.5 yazılısı hazır 📝
+8. sınıf Matematik öğrenme çıktısı M.8.5.1.5: “Basit bir olayın olma olasılığını hesaplar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, uygulama, analiz, değerlendirme ve kavrama düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-5-1-5.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.5.1.5 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Kaydedin, ünite sonunda lazım olacak. 📌
+#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
+```
+
+## seri-cikti-m-8-2-1-1
+Sıra: 2027-04-05 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-2-1-1-1.png
+
+```
+Cebirsel İfadeler ve Özdeşlikler konusunda öğrencileriniz nerede? 📝
+8. sınıf Matematik öğrenme çıktısı M.8.2.1.1: “Basit cebirsel ifadeleri anlar ve farklı biçimlerde yazar.”
+Bu kâğıt yalnız bu çıktıyı ölçer: 6 açık uçlu soru, 2 sayfa, 40 dakika, 100 puan. Sorular hatırlama, kavrama, uygulama, analiz ve değerlendirme düzeylerinde.
+Sorular MEB ders kitabına dayanır; öğrenci kâğıdındaki karekod cevap anahtarını açar.
+👉 Sınav kâğıdı (PDF): https://derskutusu.com/yazili/cikti/8-matematik-m-8-2-1-1.pdf
+👉 Bütün 8. sınıf kâğıtları: https://derskutusu.com/yazili?sinif=8&ders=matematik#cikti-yazililari
+Sayfada “Öğrenme çıktısı yazılıları” bölümünde M.8.2.1.1 kartındaki “Sınav kâğıdı” ya da “Cevap anahtarı” düğmesine dokunun. Ücretsiz, üyelik yok.
+Zümrenizle paylaşın; kâğıtlar herkese açık.
+#derskutusu #öğrenmeçıktısı #8sınıf #matematik #maarifmodeli
 ```
