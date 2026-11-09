@@ -11,7 +11,7 @@
     "Tek atomlu iyonların elektron dizilimlerini, izoelektronik tanecikleri ve değerlik elektron sayılarını belirler."
   ],
   "hatirla": [
-    "Aufbau enerji sırası: {us:1s|2} {us:2s|2} {us:2p|6} {us:3s|2} {us:3p|6} {us:4s|2} {us:3d|10} {us:4p|6}; Pauli ilkesiyle bir orbitale en fazla zıt spinli 2 elektron (↑↓) yerleşir.",
+    "Aufbau enerji sırası: {us:1s|2} {us:2s|2} {us:2‌p|6} {us:3s|2} {us:3‌p|6} {us:4s|2} {us:3d|10} {us:4‌p|6}; Pauli ilkesiyle bir orbitale en fazla zıt spinli 2 elektron (↑↓) yerleşir.",
     "Son orbital türünün yarı dolu ({us:s|1}, {us:p|3}, {us:d|5}) veya tam dolu ({us:s|2}, {us:p|6}, {us:d|10}) olması küresel simetridir; {alt:|24}Cr (...{us:4s|1} {us:3d|5}) ve {alt:|29}Cu (...{us:4s|1} {us:3d|10}) özel temel hâldir."
   ],
   "sorular": [
@@ -22,16 +22,16 @@
       "soru": "Atom ve iyonları temel hâl elektron dizilimlerinin son terimleriyle eşleştiriniz.",
       "ciftler": [
         [
-          "{alt:|8}O (Oksijen — Nötr)",
-          "... {us:2s|2} {us:2p|4}"
+          "{alt:|8}O (Oksijen · Nötr)",
+          "... {us:2s|2} {us:2‌p|4}"
         ],
         [
-          "{alt:|24}Cr (Krom — Nötr)",
-          "... {us:3p|6} {us:4s|1} {us:3d|5}"
+          "{alt:|24}Cr (Krom · Nötr)",
+          "... {us:3‌p|6} {us:4s|1} {us:3d|5}"
         ],
         [
-          "{alt:|29}Cu (Bakır — Nötr)",
-          "... {us:3p|6} {us:4s|1} {us:3d|10}"
+          "{alt:|29}Cu (Bakır · Nötr)",
+          "... {us:3‌p|6} {us:4s|1} {us:3d|10}"
         ]
       ]
     },
@@ -54,7 +54,7 @@
       "duzey": "analiz",
       "gorsel_var": true,
       "soru": "{alt:|21}{us:Sc|+} katyonu ile {alt:|20}Ca nötr atomunun elektron sayıları eşit (20 {us:e|-}) olduğu hâlde neden izoelektronik olmadıklarını yazınız.",
-      "cevap": "{alt:|20}Ca dizilimi [Ar] {us:4s|2} iken, {alt:|21}{us:Sc|+} katyonunda elektron 4s’den kopar ve dizilimi [Ar] {us:4s|1} {us:3d|1} olur.",
+      "cevap": "{alt:|20}Ca [Ar] {us:4s|2} iken, {alt:|21}{us:Sc|+} katyonunda elektron 4s'den kopar ve [Ar] {us:4s|1} {us:3d|1} olur.",
       "satir": 3
     },
     {
@@ -93,21 +93,19 @@
       "satirlar": [
         [
           "{alt:|7}N (Azot)",
-          "{us:2s|2} {us:2p|3}",
-          {
-            "b": "Gösterir ({us:p|3} yarı dolu)"
-          }
+          "{us:2s|2} {us:2‌p|3}",
+          "Gösterir ({us:p|3} yarı dolu)"
         ],
         [
           "{alt:|16}S (Kükürt)",
           {
-            "b": "{us:3s|2} {us:3p|4}"
+            "b": "{us:3s|2} {us:3‌p|4}"
           },
           "Göstermez ({us:p|4} kısmi dolu)"
         ],
         [
           "{alt:|16}{us:S|2-} (Sülfür İyonu)",
-          "{us:3s|2} {us:3p|6}",
+          "{us:3s|2} {us:3‌p|6}",
           {
             "b": "Gösterir ({us:p|6} tam dolu)"
           }
@@ -125,12 +123,12 @@
       "tur": "siralama",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki Aufbau (inşa) kuralına göre alt kabukların (orbitallerin) bağıl enerji ve dolma sırasını düşüktent yükseğe diziniz.",
+      "soru": "Görseldeki Aufbau (inşa) kuralına göre alt kabukların (orbitallerin) bağıl enerji ve dolma sırasını düşükten yükseğe diziniz.",
       "ogeler": [
         "1s ve 2s orbitallerinin sırasıyla 2'şer elektronla tam dolması ({us:1s|2} {us:2s|2})",
-        "2p (6 {us:e|-}) ve 3s (2 {us:e|-}) alt kabuklarının sırasıyla dolması ({us:2p|6} {us:3s|2})",
-        "3p alt kabuğunun 6 elektronla dolmasının ardından enerjisi 3d'den düşük olan 4s'nin dolması ({us:3p|6} {us:4s|2})",
-        "21. elektrondan itibaren 3d (10 {us:e|-}) ve ardından 4p (6 {us:e|-}) alt kabuklarının dolması ({us:3d|10} {us:4p|6})"
+        "2‌p (6 {us:e|-}) ve 3s (2 {us:e|-}) alt kabuklarının sırasıyla dolması ({us:2‌p|6} {us:3s|2})",
+        "3‌p alt kabuğunun 6 elektronla dolmasının ardından enerjisi 3d'den düşük olan 4s'nin dolması ({us:3‌p|6} {us:4s|2})",
+        "21. elektrondan itibaren 3d (10 {us:e|-}) ve ardından 4‌p (6 {us:e|-}) alt kabuklarının dolması ({us:3d|10} {us:4‌p|6})"
       ],
       "dogru_sira": [
         1,
@@ -156,7 +154,6 @@
     {
       "tur": "bosluk",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Cümlelerdeki boşlukları uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
@@ -202,7 +199,7 @@
       "soru": "Orbital şemaları ve dizilimlerle ilgili ifadelerden doğru olanlara D, yanlış olanlara Y yazınız.",
       "ifadeler": [
         {
-          "metin": "Nötr {alt:|6}C atomunun {us:1s|2} {us:2s|1} {us:2p|3} dizilimi dışarıdan enerji almış uyarılmış hâldir.",
+          "metin": "Nötr {alt:|6}C atomunun {us:1s|2} {us:2s|1} {us:2‌p|3} dizilimi dışarıdan enerji almış uyarılmış hâldir.",
           "dogru": true
         },
         {
@@ -225,33 +222,33 @@
       "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
       "satirlar": [
         {
-          "ipucu": "Elektronların düşük enerjiden yükseğe yerleşmesini belirten inşa ilkesi (6 harf)",
-          "cevap": "AUFBAU",
+          "ipucu": "Elektron sayıları ve dizilimleri aynı olan farklı tanecikler (14 harf)",
+          "cevap": "İZOELEKTRONİK",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Elektron alarak negatif (-) yükle yüklenmiş tanecik (5 harf)",
+          "cevap": "ANYON",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Elektronların bulunma olasılığının yüksek olduğu uzay bölgesi (7 harf)",
+          "cevap": "ORBİTAL",
           "anahtar": 0
         },
         {
           "ipucu": "Eş enerjili orbitallere elektronların önce tek tek yerleşmesi kuralı (4 harf)",
           "cevap": "HUND",
           "anahtar": 2
-        },
-        {
-          "ipucu": "Elektron alarak negatif (-) yükle yüklenmiş iyon (5 harf)",
-          "cevap": "ANYON",
-          "anahtar": 2
-        },
-        {
-          "ipucu": "Bir orbitalde en fazla 2 zıt spinli elektron bulunacağını belirten ilke (5 harf)",
-          "cevap": "PAULİ",
-          "anahtar": 1
         }
       ],
-      "sonuc": "ANYA"
+      "sonuc": "İYON"
     },
     {
       "tur": "acik",
       "duzey": "ust",
       "soru": "Krom ({alt:|24}Cr) nötr atomunun ve {alt:|24}{us:Cr|+} katyonunun temel hâl elektron dizilimlerini yazarak yarı dolu orbital sayılarını karşılaştırınız.",
-      "cevap": "Nötr {alt:|24}Cr: [Ar] {us:4s|1} {us:3d|5} (6 yarı dolu). {alt:|24}{us:Cr|+}: Elektron 4s’den kopar, [Ar] {us:3d|5} olur (5 yarı dolu).",
+      "cevap": "Nötr Cr ([Ar] {us:4s|1} {us:3d|5}) 6 yarı dolu, {us:Cr|+} ([Ar] {us:3d|5}) ise 5 yarı dolu orbitale sahiptir.",
       "satir": 3
     }
   ]

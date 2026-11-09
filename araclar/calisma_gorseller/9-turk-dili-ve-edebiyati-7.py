@@ -1,104 +1,130 @@
-"""9. sınıf Türk Dili ve Edebiyatı 7. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-turk-dili-ve-edebiyati-7 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {1: '<svg viewBox="0 0 350 262" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anlam belirsizliği '
+    'içeren örnek cümlenin analizi"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">İncelenen Cümle</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">“Gazeteci, yarışmada şairden sonra birinci</text><text x="11.0" '
+    'y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">olduğunu '
+    'açıkladı.”</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">1. '
+    'Olası Anlam</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Yarışmada önce şair birinci olmuş, daha</text><text x="11.0" y="122.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">sonra gazeteci birinci olmuştur</text><rect '
+    'x="4" y="133" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="150.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">2. Olası '
+    'Anlam</text><text x="11.0" y="168.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Şair konuşmasını bitirdikten sonra gazeteci</text><text x="11.0" y="187.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kendisinin birinci olduğunu açıklamıştır</text><rect x="4" y="198" '
+    'width="342" height="62" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="215.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Sorulan</text><text x="11.0" y="233.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tek bir cümleden iki '
+    'farklı anlam çıkması</text><text x="11.0" y="252.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">hangi anlatım ilkesini bozar?</text></svg>',
+ 2: '<svg viewBox="0 0 350 88" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anlatım ilkeleriyle '
+    'ilgili iki farklı örnek cümle"><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Cümle Örneği</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">“Kulağına alçak sesle</text><text x="87.5" y="58.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">gizli '
+    'sırlarını</text><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">fısıldadı.”</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2. Cümle Örneği</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">“Şeb-i yeldâyı</text><text x="262.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">müneccimle</text><text x="262.5" y="76.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">muvakkit ne '
+    'bilir.”</text></svg>',
+ 3: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diğer anlatım '
+    'özellikleri"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Akıcılık</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Kolay okunuş, ses</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">uyumu</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Özgünlük</text><text x="262.5" y="49.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Taklitten uzak üslup</text><rect x="4" y="71" '
+    'width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="89.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Tutarlılık</text><text x="87.5" y="107.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çelişkisiz mantık '
+    'ağı</text><rect x="179" y="71" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Boğumlama</text><text x="262.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Doğru hece telaffuzu</text></svg>',
+ 5: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deneme ve metin yazma '
+    'süreci"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Geliştirme</text><text '
+    'x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Örnekleme ve tanık</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Planlama</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Konu, amaç ve kitle</text><rect x="4" y="52" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Düzeltme</text><text x="87.5" y="88.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Duruluk ve imla</text><text x="87.5" y="107.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">denetimi</text><rect '
+    'x="179" y="52" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Taslak Yazım</text><text '
+    'x="262.5" y="88.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İçten '
+    '“ben” dili</text><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">kurgu</text></svg>',
+ 6: '<svg viewBox="0 0 350 187" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deneme metninde uzman '
+    'sözü aktarımı örneği"><rect x="4" y="3" width="342" height="99" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Deneme '
+    'Kesiti</text><text x="11.0" y="38.9" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">“Okumak insan zihnini özgürleştirir; nitekim</text><text x="11.0" y="57.3" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Montaigne de ‘Kitaplar benim en sadık yol</text><text x="11.0" '
+    'y="75.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">arkadaşlarımdır.’ diyerek bu gerçeği</text><text x="11.0" y="94.1" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">vurgular.”</text><rect x="4" y="105" width="342" height="80" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Sorulan</text><text x="11.0" y="140.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yazarın kendi görüşünü desteklemek için</text><text x="11.0" '
+    'y="159.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Montaigne’in '
+    'sözünü tırnak içinde aktarması</text><text x="11.0" y="177.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">hangi düşünceyi geliştirme yoludur?</text></svg>',
+ 7: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Metin dil bilgisinde '
+    'biçimsel ve anlamsal bağlantı"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Dil Bilgisi Boyutu</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kelime ve cümlelerin ekler, edatlar ve</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bağlaçlarla biçimsel '
+    'olarak bağlanması</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Anlam '
+    'Boyutu</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Paragraftaki cümlelerin aynı konu ve ana</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">düşünce etrafında bütünlük oluşturması</text></svg>',
+ 8: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Metin dil bilgisi ve '
+    'sözlü anlatım unsurları"><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Metin '
+    'İçi Bağlar</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Zamir, bağlaç ve</text><text x="87.5" y="58.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yönlendirici</text><text x="87.5" y="76.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ifadelerle kurulan</text><text x="87.5" '
+    'y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">yapı</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Düşünsel Uyum</text><text x="262.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Giriş, gelişme ve</text><text x="262.5" y="58.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">sonuç bölümleri</text><text x="262.5" '
+    'y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">arasındaki '
+    'mantıksal</text><text x="262.5" y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">bütünlük</text><rect x="4" y="108" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">Ses ve Ritim</text><text x="87.5" y="144.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kelimelerin ardışık</text><text x="87.5" y="163.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">okunuşunda</text><text x="87.5" y="181.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">pürüzsüz ses '
+    'uyumu</text><rect x="179" y="108" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Sözlü '
+    'Sunum</text><text x="262.5" y="144.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Vurgu, tonlama ve</text><text x="262.5" y="163.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">doğru nefes</text><text x="262.5" y="181.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kontrolü</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def dörtlu_kart(etiket, kartlar):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (b, alt, c, d) in enumerate(kartlar):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 9.8, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, alt, 8.2, LAC, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def akis_karti(etiket, adimlar):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (bas, alt, c, d) in enumerate(adimlar):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, bas, 9.8, c) + yazi(x + 40, 68, alt, 8.2, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},56 {x+85},52 {x+85},60" fill="{GRI}"/>'
-    return svg(360, 115, ic, etiket, 34)
-
-def uclu_pano(etiket, ust_baslik, kutular, ana_renk=MAVI, ana_acik=MAVI_A):
-    ic = kutu(4, 4, 352, 107, ana_acik, ana_renk) + yazi(180, 23, ust_baslik, 10, ana_renk)
-    for i, (b, alt, c, d) in enumerate(kutular):
-        x = 14 + i * 112
-        ic += kutu(x, 34, 104, 66, d, c) + yazi(x + 52, 55, b, 9.5, c) + yazi(x + 52, 78, alt, 8.2, SOLUK, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def bilgi_panosu(etiket, baslik, satir1, satir2, c=CAM, d=CAM_A, ic_d='#eaf7fa'):
-    ic = kutu(4, 4, 352, 107, d, c) + yazi(180, 25, baslik, 10, c)
-    ic += kutu(16, 36, 328, 64, ic_d, c) + yazi(180, 58, satir1, 9.6, LAC) + yazi(180, 82, satir2, 8.6, SOLUK, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def g0():
-    return dörtlu_kart('İyi bir anlatımın nitelikleri', [
-        ('Açıklık', 'Net ve tek anlamlı', MAVI, MAVI_A),
-        ('Duruluk', 'Gereksiz sözcük yok', YES, YES_A),
-        ('Yalınlık', 'Süsten uzak sade dil', TUR, TUR_A),
-        ('Özlülük', 'Az sözle derin anlam', MOR, MOR_A)
-    ])
-def g1():
-    return uclu_pano('Açıklık, duruluk ve yalınlık farkı', 'EN ÇOK KARIŞTIRILAN ÜÇ ANLATIM İLKESİ', [
-        ('Açıklık', 'Anlam bulanıklığı olmaması', MAVI, '#f4f8fe'),
-        ('Duruluk', 'Eş anlamlı tekrar olmaması', YES, YES_A),
-        ('Yalınlık', 'Ağır sanat/imge olmaması', TUR, TUR_A)
-    ], MAVI, MAVI_A)
-def g2():
-    return bilgi_panosu('Duruluk ve yalınlık ayrımı', 'SINAV UYARISI: DURULUK İLE YALINLIĞI KARIŞTIRMA!',
-        'Duruluk İhlali: “Gizli sır”, “sağlık ve sıhhat”, “alçak sesle fısıldamak” (Gereksiz sözcük)',
-        'Yalınlık İhlali: Ağır divan mazmunları, karmaşık ve süslü uzun tamlamalar (Sanatlı söyleyiş)', CAM, CAM_A)
-def g3():
-    return dörtlu_kart('Diğer anlatım özellikleri', [
-        ('Akıcılık', 'Kolay okunuş, ses uyumu', MAVI, MAVI_A),
-        ('Özgünlük', 'Taklitten uzak üslup', YES, YES_A),
-        ('Tutarlılık', 'Çelişkisiz mantık ağı', TUR, TUR_A),
-        ('Boğumlama', 'Doğru hece telaffuzu', MOR, MOR_A)
-    ])
-def g5():
-    return akis_karti('Deneme ve metin yazma süreci', [
-        ('1. Planlama', 'Konu, amaç ve kitle', MAVI, MAVI_A),
-        ('2. Taslak Yazım', 'İçten “ben” dili kurgu', YES, YES_A),
-        ('3. Geliştirme', 'Örnekleme ve tanık', TUR, TUR_A),
-        ('4. Düzeltme', 'Duruluk ve imla denetimi', MOR, MOR_A)
-    ])
-def g6():
-    return uclu_pano('Deneme ve mülakat üretimi', 'SÖZÜN İNCELİĞİ: DENEME YAZIMI VE MÜLAKAT SUNUMU', [
-        ('Deneme Üslubu', 'Samimi, kanıtsız düşünce', YES, YES_A),
-        ('Tanık Gösterme', 'Uzman sözü alıntılama', MAVI, '#f4f8fe'),
-        ('Mülakat Sorusu', 'Açık uçlu ve tarafsız', TUR, TUR_A)
-    ], YES, YES_A)
-def g7():
-    return bilgi_panosu('Bağlaşıklık, bağdaşıklık ve tutarlılık', 'METİN DİL BİLGİSİ: BAĞLAŞIKLIK VE BAĞDAŞIKLIK',
-        'Bağlaşıklık: Cümlelerin bağlaç, zamir ve eklerle dil bilgisi kurallarına uygun bağlanmasıdır',
-        'Bağdaşıklık ve Tutarlılık: Cümlelerin ana düşünce etrafında çelişmeden anlam bütünlüğü kurmasıdır.', TUR, TUR_A, '#fff6ea')
-def g8():
-    return dörtlu_kart('Yazılı ve sözlü iletişim', [
-        ('Bağlaşıklık', 'Dil bilgisel bağlar', MAVI, MAVI_A),
-        ('Bağdaşıklık', 'Anlamsal bütünlük', YES, YES_A),
-        ('Akıcılık', 'Pürüzsüz ses akışı', CAM, CAM_A),
-        ('Diksiyon', 'Vurgu ve tonlama', MOR, MOR_A)
-    ])
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[7]['gorsel'] = g7()
-    s[8]['gorsel'] = g8()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

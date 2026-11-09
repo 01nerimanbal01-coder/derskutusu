@@ -1,147 +1,136 @@
-"""9. sınıf İngilizce 8. hafta görselleri (SVG; insan figürü yok K024; K178 beyaz bant yok; max-height:24mm)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
-STIL = 'width:100%;max-height:24mm;display:block;margin:1mm auto;'
+"""9-ingilizce-8 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
+GORSELLER = {0: '<svg viewBox="0 0 350 223" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="9-ingilizce-8 study '
+    'habits"><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">On Time</text><text '
+    'x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Attend '
+    'classes · Hand in assignments</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">In Class</text><text x="11.0" y="84.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Take detailed notes · Join discussions</text><rect x="4" y="95" width="342" '
+    'height="80" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="112.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">SCHOOL SUBJECTS &amp; STUDY '
+    'HABITS</text><text x="11.0" y="130.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">(ÇALIŞMA ALIŞKANLIKLARI)</text><text x="11.0" y="149.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">For Exams</text><text x="11.0" y="167.4" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Revise regularly · Use study apps</text><rect x="4" y="178" '
+    'width="342" height="43" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="195.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Subjects</text><text x="11.0" y="213.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Maths, Physics, IT · '
+    'Biology, Geography</text></svg>',
+ 1: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Present Simple ve '
+    'Present Continuous zaman zarfları"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Present Simple Tense</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Genel alışkanlıklar ve rutinler · every day,</text><text x="11.0" '
+    'y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">usually, '
+    'normally</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Present '
+    'Continuous Tense</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Konuşma anındaki geçici eylemler · now,</text><text x="11.0" y="122.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">right now, today</text></svg>',
+ 2: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Adjective ve Adverb of '
+    'Manner cümle içi işlev farkı"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Adjective Usage</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Describes a noun or follows am/is/are (She is</text><text x="11.0" '
+    'y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">a careful '
+    'student)</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Adverb '
+    'Usage</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Describes an action verb (How does she</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">listen / speak / walk?)</text></svg>',
+ 3: '<svg viewBox="0 0 350 215" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="9-ingilizce-8 grammar '
+    'rules"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Before Main '
+    'Verb</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Subject + Adv + Verb</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">I usually take notes.</text><rect x="4" y="68" width="342" height="99" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="85.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">GRAMMAR RULES: WORD ORDER &amp; STATIVE</text><text x="11.0" y="103.9" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">VERBS</text><text '
+    'x="11.0" y="122.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">After '
+    'am / is / are</text><text x="11.0" y="140.7" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Subject + be + Adv</text><text x="11.0" y="159.1" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">She is always on time.</text><rect x="4" y="170" width="342" '
+    'height="43" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="187.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Stative Verbs (No -ing) know, want, '
+    'need,</text><text x="11.0" y="205.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">like understand, believe</text></svg>',
+ 5: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sıklık zarflarının '
+    'yüzdelik oranları"><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">%0 '
+    'Sıklık</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Hiçbir zaman</text><text x="87.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">yapılmayan eylemler</text><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Olumlu fiille)</text><rect x="179" y="3" width="167" height="82" '
+    'rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="30.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">%50 Sıklık</text><text x="262.5" y="48.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bazen, ara sıra</text><text x="262.5" '
+    'y="67.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">gerçekleşen '
+    'eylemler</text><rect x="4" y="89" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">%85 '
+    'Sıklık</text><text x="87.5" y="125.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Genellikle,</text><text x="87.5" y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">çoğunlukla yapılan</text><text x="87.5" y="162.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">alışkanlıklar</text><rect x="179" y="89" width="167" height="82" '
+    'rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="116.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">%100 Sıklık</text><text x="262.5" y="134.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Her zaman, istisnasız</text><text x="262.5" '
+    'y="153.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">tekrarlanan '
+    'rutinler</text></svg>',
+ 6: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Adverbs of frequency '
+    'cümle içi dizilim kuralları"><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Rule 1: Main Verbs</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Subject + [Frequency</text><text x="87.5" y="58.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Adverb] + Main '
+    'Verb</text><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">(V1)</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Rule 2: Verb &#x27;to be&#x27;</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Subject + am / is /</text><text x="262.5" y="58.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">are + '
+    '[Frequency</text><text x="262.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Adverb]</text><rect x="4" y="89" width="167" height="101" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="87.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">Rule 3: Negative</text><text x="87.5" y="125.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Adverbs</text><text x="87.5" y="144.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">&#x27;never&#x27; and '
+    '&#x27;rarely&#x27;</text><text x="87.5" y="162.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">are NOT used with</text><text x="87.5" y="181.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">don&#x27;t / doesn&#x27;t</text><rect x="179" y="89" width="167" '
+    'height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="125.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Question Form</text><text x="262.5" y="144.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">How often + do '
+    '/</text><text x="262.5" y="162.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">does + Subject + V1?</text></svg>',
+ 7: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eylem fiili ve durum '
+    'fiili zaman ipuçları"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Cümle İpucusu</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">“Look. ... right now.” (Konuşma anında</text><text x="11.0" y="57.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">devam eden laboratuvar deneyi)</text><rect '
+    'x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="85.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Cümle '
+    'İpucusu</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Fiil: &#x27;know&#x27; (Bilmek · zihinsel durum bildiren</text><text x="11.0" y="122.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">stative verb)</text></svg>',
+ 10: '<svg viewBox="0 0 350 70" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hard ve hardly '
+     'kullanılan iki örnek cümle"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+     'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#2451d6">1. Cümle</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="500" fill="#0b2257">“He works hard for</text><text x="87.5" y="58.2" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">his school exams.”</text><rect x="179" y="3" '
+     'width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Cümle</text><text x="262.5" y="39.8" '
+     'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">“He hardly works '
+     'for</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">his school exams.”</text></svg>'}
 
-def svg(ic, etiket):
-    return f'<svg viewBox="0 0 360 115" style="{STIL}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=9.2, renk=LAC, hiza='middle', ince=False):
-    temiz = str(metin).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{temiz}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def kart4(baslik, kartlar, etiket, ana_renk=MAVI, arka_renk=GRI_A):
-    ic = kutu(4, 4, 352, 107, arka_renk, ana_renk, 6, 0.75)
-    ic += yazi(180, 20, baslik, 9.8, ana_renk)
-    renkler = [(MAVI, MAVI_A), (YES, YES_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, d1, d2) in enumerate(kartlar):
-        c, a = renkler[i % 4]
-        x = 10 + i * 86
-        ic += kutu(x, 28, 80, 77, a, c, 5, 0.75)
-        ic += yazi(x + 40, 46, b, 8.4, c)
-        ic += f'<line x1="{x + 8}" y1="54" x2="{x + 72}" y2="54" stroke="{c}" stroke-width="0.6"/>'
-        ic += yazi(x + 40, 72, d1, 7.6, LAC, ince=True)
-        ic += yazi(x + 40, 90, d2, 7.2, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def karsilastir2(baslik, sol_b, sol_d1, sol_d2, sag_b, sag_d1, sag_d2, etiket, c1=MAVI, a1=MAVI_A, c2=TUR, a2=TUR_A):
-    ic = kutu(4, 4, 352, 107, GRI_A, c1, 6, 0.75)
-    ic += yazi(180, 20, baslik, 9.8, c1)
-    ic += kutu(12, 28, 162, 77, a1, c1, 6, 0.75)
-    ic += yazi(93, 46, sol_b, 8.8, c1)
-    ic += f'<line x1="22" y1="54" x2="164" y2="54" stroke="{c1}" stroke-width="0.6"/>'
-    ic += yazi(93, 72, sol_d1, 7.8, LAC, ince=True)
-    ic += yazi(93, 91, sol_d2, 7.4, SOLUK, ince=True)
-    ic += kutu(186, 28, 162, 77, a2, c2, 6, 0.75)
-    ic += yazi(267, 46, sag_b, 8.8, c2)
-    ic += f'<line x1="196" y1="54" x2="338" y2="54" stroke="{c2}" stroke-width="0.6"/>'
-    ic += yazi(267, 72, sag_d1, 7.8, LAC, ince=True)
-    ic += yazi(267, 91, sag_d2, 7.4, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def uclu_sema(baslik, uclu, etiket, ana_renk=YES, arka_renk=YES_A):
-    ic = kutu(4, 4, 352, 107, arka_renk, ana_renk, 6, 0.75)
-    ic += yazi(180, 20, baslik, 9.8, ana_renk)
-    renkler = [(MAVI, MAVI_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, d1, d2) in enumerate(uclu):
-        c, a = renkler[i % 3]
-        x = 12 + i * 114
-        ic += kutu(x, 28, 108, 77, a, c, 6, 0.75)
-        ic += yazi(x + 54, 46, b, 8.6, c)
-        ic += f'<line x1="{x + 10}" y1="54" x2="{x + 98}" y2="54" stroke="{c}" stroke-width="0.6"/>'
-        ic += yazi(x + 54, 72, d1, 7.6, LAC, ince=True)
-        ic += yazi(x + 54, 91, d2, 7.2, SOLUK, ince=True)
-    return svg(ic, etiket)
-
-
-def akis4(baslik, adimlar, etiket, ana_renk=CAM):
-    ic = kutu(4, 4, 352, 107, CAM_A, ana_renk, 6, 0.75)
-    ic += yazi(180, 20, baslik, 9.8, ana_renk)
-    renkler = [(MAVI, MAVI_A), (YES, YES_A), (TUR, TUR_A), (MOR, MOR_A)]
-    for i, (b, d1, d2) in enumerate(adimlar):
-        c, a = renkler[i % 4]
-        x = 8 + i * 87
-        ic += kutu(x, 28, 79, 77, a, c, 5, 0.75)
-        ic += yazi(x + 39.5, 46, b, 8.2, c)
-        ic += yazi(x + 39.5, 70, d1, 7.5, LAC, ince=True)
-        ic += yazi(x + 39.5, 89, d2, 7.1, SOLUK, ince=True)
-        if i < 3:
-            ox = x + 80.5
-            ic += f'<polygon points="{ox:.1f},62 {ox+5:.1f},66.5 {ox:.1f},71" fill="{ana_renk}"/>'
-    return svg(ic, etiket)
-
-def g0():
-    return kart4('SCHOOL SUBJECTS & STUDY HABITS (ÇALIŞMA ALIŞKANLIKLARI)', [
-        ('On Time', 'Attend classes', 'Hand in assignments'),
-        ('In Class', 'Take detailed notes', 'Join discussions'),
-        ('For Exams', 'Revise regularly', 'Use study apps'),
-        ('Subjects', 'Maths, Physics, IT', 'Biology, Geography')
-    ], '9-ingilizce-8 study habits')
-
-def g1():
-    return karsilastir2('PRESENT SIMPLE VS. PRESENT CONTINUOUS TENSE',
-        'Present Simple (Routines & Habits)', 'V1 / V-s · every day, usually, on Mondays', 'Normally, Berk studies alone.',
-        'Present Continuous (Actions Now)', 'am/is/are + V-ing · now, right now, today', 'Today, he is studying with friends.',
-        '9-ingilizce-8 present tenses')
-
-def g2():
-    return karsilastir2('ADVERBS OF MANNER (DURUM ZARFLARI: NASIL?)',
-        'Regular Adverbs (Adjective + -ly)', 'careful -> carefully · quiet -> quietly', 'quick -> quickly · clear -> clearly',
-        'Irregular Adverbs (No -ly!)', 'good -> well · hard -> hard (NOT hardly)', 'fast -> fast · early -> early · late -> late',
-        '9-ingilizce-8 adverbs of manner', YES, YES_A, MOR, MOR_A)
-
-def g3():
-    return uclu_sema('GRAMMAR RULES: WORD ORDER & STATIVE VERBS', [
-        ('Before Main Verb', 'Subject + Adv + Verb', 'I usually take notes.'),
-        ('After am / is / are', 'Subject + be + Adv', 'She is always on time.'),
-        ('Stative Verbs (No -ing)', 'know, want, need, like', 'understand, believe')
-    ], '9-ingilizce-8 grammar rules')
-
-def g5():
-    return akis4('ADVERBS OF FREQUENCY SCALE (SIKLIK ZARFLARI %100 -> %0)', [
-        ('100% Always', 'Every time', 'Her zaman / daima'),
-        ('85% Usually', '70% Often', 'Genellikle / sık sık'),
-        ('50% Sometimes', '10% Rarely', 'Bazen / nadiren'),
-        ('0% Never', 'Positive verb!', 'He never comes late')
-    ], '9-ingilizce-8 frequency scale')
-
-def g6():
-    return karsilastir2('SIKLIK ZARFLARININ CÜMLE İÇİNDEKİ YERİ',
-        'Asıl Fiillerden Önce (Main Verbs)', 'We often use educational apps.', 'He never forgets his homework.',
-        'To Be (am/is/are) Fiilinden Sonra', 'Our teacher is always polite.', 'They are usually in the library.',
-        '9-ingilizce-8 adverb position', CAM, CAM_A, TUR, TUR_A)
-
-def g7():
-    return karsilastir2('ACTION VERBS VS. STATIVE VERBS (DURUM FİİLLERİ)',
-        'Action Verbs (Eylem Fiilleri)', 'do -> are doing · study -> is studying', 'Konuşma anında -ing alır (right now)',
-        'Stative Verbs (Durum Fiilleri)', 'know, understand, like, want, need', 'Konuşma anında bile -ing ALMAZ!',
-        '9-ingilizce-8 stative verbs', MAVI, MAVI_A, KIR, KIR_A)
-
-def g10():
-    return karsilastir2('DİKKAT: HARD İLE HARDLY ARASINDAKİ ANLAM FARKI',
-        'hard (Sıfat ve Durum Zarfı)', 'He works hard. (Sıkı / çok çalışır.)', 'Olumlu ve yoğun çaba bildirir.',
-        'hardly (Sıklık / Derece Zarfı)', 'He hardly works. (Neredeyse hiç çalışmaz.)', 'Anlamca olumsuzdur (%5 sıklık).',
-        '9-ingilizce-8 hard vs hardly', YES, YES_A, TUR, TUR_A)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[7]['gorsel'] = g7()
-    s[10]['gorsel'] = g10()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

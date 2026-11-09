@@ -1,104 +1,158 @@
-"""9. sınıf Din Kültürü ve Ahlak Bilgisi 7. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-din-kulturu-ve-ahlak-bilgisi-7 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rûm suresi 20-24. '
+    'ayetlerin konuları"><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Rûm '
+    'Suresi 20. Ayet</text><text x="87.5" y="49.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Beşerin topraktan</text><text x="87.5" y="67.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(türâb) yaratılıp</text><text x="87.5" y="85.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yeryüzüne yayılması</text><rect x="179" y="3" '
+    'width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Rûm Suresi 21. Ayet</text><text x="262.5" '
+    'y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Eşler '
+    'arasında</text><text x="262.5" y="58.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">sekînet, meveddet</text><text x="262.5" y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">ve rahmet var</text><text x="262.5" y="95.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">edilmesi</text><rect x="4" y="108" '
+    'width="167" height="82" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="87.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Rûm Suresi 22. Ayet</text><text x="87.5" '
+    'y="144.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Göklerin-yerin</text><text x="87.5" y="163.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">yaratılması, dil ve</text><text x="87.5" y="181.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">renklerin farklılığı</text><rect x="179" '
+    'y="108" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="126.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Rûm Suresi 24. '
+    'Ayet</text><text x="262.5" y="144.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Şimşeğin korku-ümit</text><text x="262.5" y="163.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">vermesi ve yağmurla</text><text x="262.5" y="181.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">arzın dirilmesi</text></svg>',
+ 1: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rûm suresi 21. ayette '
+    'vurgulanan üç temel kavram"><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Sekînet İlkesi</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kalbin dinginliğe,</text><text x="87.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">güvene ve gönül</text><text x="87.5" y="76.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">huzuruna '
+    'kavuşması</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">Meveddet İlkesi</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Karşılıklı samimi</text><text x="262.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">sevgi ve muhabbet</text><text x="262.5" '
+    'y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bağı '
+    'kurulması</text><rect x="4" y="89" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="87.5" '
+    'y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Rahmet '
+    'İlkesi</text><text x="87.5" y="125.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Şefkat, merhamet ve</text><text x="87.5" y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">karşılıklı anlayış</text><text x="87.5" y="162.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">gösterilmesi</text><rect x="179" y="89" '
+    'width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="107.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Ayetin Sonu</text><text x="262.5" y="125.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">“Düşünen bir '
+    'toplum</text><text x="262.5" y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">için bunda nice</text><text x="262.5" y="162.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">deliller vardır.”</text></svg>',
+ 2: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dillerin ve renklerin '
+    'farklılığı"><rect x="4" y="3" width="342" height="117" rx="5" fill="#eaf7fa" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" '
+    'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">“Göklerin ve '
+    'yerin yaratılması ile dillerinizin</text><text x="11.0" y="38.7" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">ve renklerinizin farklı olması O’nun</text><text x="11.0" y="57.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">ayetlerindendir.”</text><text x="11.0" y="75.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Farklılıklar ayrımcılık sebebi değil, Yüce</text><text x="11.0" y="93.9" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Allah’ın yaratma '
+    'sanatındaki eşsiz</text><text x="11.0" y="112.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#5b6479">zenginliktir.</text></svg>',
+ 3: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ayet sonlarındaki '
+    'tefekkür çağrısı"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Yetefekkerûn</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Düşünen toplum (21)</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Li’l-âlimîn</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bilenler/âlimler (22)</text><rect x="4" y="52" width="167" '
+    'height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Yesmeûn</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İşiten toplum '
+    '(23)</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Ya’kılûn</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Aklını kullanan (24)</text></svg>',
+ 5: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rûm 20-27. ayetlerin '
+    'konu akışı"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Rûm '
+    '24</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Yağmur ve diriliş</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Rûm 20-21</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Yaratılış ve aile</text><rect x="4" y="52" width="167" height="45" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Rûm 25-27</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Düzen ve el-Hakîm</text><rect x="179" y="52" width="167" '
+    'height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Rûm 22-23</text><text x="262.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dil/renk ve '
+    'rızık</text></svg>',
+ 6: '<svg viewBox="0 0 350 262" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rûm suresi 27. ayetin '
+    'mesajı ve sonundaki ilahi sıfatlar"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">İlk Yaratılış</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Varlıkları yoktan başlatıp ilk kez yaratan Yüce</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Allah’tır</text><rect '
+    'x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="85.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Yeniden '
+    'Diriltme</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Ölümden sonra diriltmek O’nun için çok daha</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kolaydır</text><rect x="4" y="133" width="342" height="62" rx="5" '
+    'fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="150.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">Ayetin Sonundaki Sıfatlar</text><text x="11.0" y="168.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">“O; mutlak güç sahibidir, her işi hüküm '
+    've</text><text x="11.0" y="187.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">hikmet sahibidir.”</text><rect x="4" y="198" width="342" height="62" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="215.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Sorulan Esmâ Çifti</text><text x="11.0" y="233.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bu iki sıfatı ifade eden Esmâ-i Hüsnâ çifti</text><text x="11.0" '
+    'y="252.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">hangisidir?</text></svg>',
+ 7: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Temel Kur’an '
+    'kavramları"><rect x="4" y="3" width="342" height="80" rx="5" fill="#fff6ea" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Kâinattaki her '
+    'düzen ve nimet Allah’ın</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">varlığına işaret eden kevnî bir ayettir</text><text x="11.0" y="57.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">İnsan aklını kullanarak (tefekkür) '
+    'yaratılıştan</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#5b6479">ahiret bilincine ulaşır.</text></svg>',
+ 8: '<svg viewBox="0 0 350 212" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rûm suresi 20-27. '
+    'ayetlerde tefekkür ve yaratılış ilkeleri"><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Kevnî Âyetler</text><text x="87.5" y="49.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Evrendeki her bir</text><text x="87.5" y="67.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">düzen ve yaratılış</text><text x="87.5" '
+    'y="85.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">delili</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Tefekkür Bilinci</text><text x="262.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Varlıklar üzerinde</text><text x="262.5" y="58.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">derinlemesine</text><text x="262.5" y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">düşünerek ibret</text><text x="262.5" y="95.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">alma</text><rect x="4" y="108" width="167" '
+    'height="101" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="87.5" y="135.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Fıtrat ve Çeşitlilik</text><text x="87.5" '
+    'y="154.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dillerin ve '
+    'renklerin</text><text x="87.5" y="172.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">farklılığındaki ilahi</text><text x="87.5" y="190.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">hikmet</text><rect x="179" y="108" width="167" height="101" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="126.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Esmâ-i Hüsnâ</text><text x="262.5" y="144.9" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yüce Allah’ın</text><text x="262.5" y="163.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kâinattaki</text><text '
+    'x="262.5" y="181.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">tecellilerini anlatan</text><text x="262.5" y="200.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">güzel isimleri</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def dörtlu_kart(etiket, kartlar):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (b, alt, c, d) in enumerate(kartlar):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 9.8, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, alt, 8.2, LAC, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def akis_karti(etiket, adimlar):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (bas, alt, c, d) in enumerate(adimlar):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, bas, 9.8, c) + yazi(x + 40, 68, alt, 8.2, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},56 {x+85},52 {x+85},60" fill="{GRI}"/>'
-    return svg(360, 115, ic, etiket, 34)
-
-def uclu_pano(etiket, ust_baslik, kutular, ana_renk=MAVI, ana_acik=MAVI_A):
-    ic = kutu(4, 4, 352, 107, ana_acik, ana_renk) + yazi(180, 23, ust_baslik, 10, ana_renk)
-    for i, (b, alt, c, d) in enumerate(kutular):
-        x = 14 + i * 112
-        ic += kutu(x, 34, 104, 66, d, c) + yazi(x + 52, 55, b, 9.5, c) + yazi(x + 52, 78, alt, 8.2, SOLUK, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def bilgi_panosu(etiket, baslik, satir1, satir2, c=CAM, d=CAM_A, ic_d='#eaf7fa'):
-    ic = kutu(4, 4, 352, 107, d, c) + yazi(180, 25, baslik, 10, c)
-    ic += kutu(16, 36, 328, 64, ic_d, c) + yazi(180, 58, satir1, 9.6, LAC) + yazi(180, 82, satir2, 8.6, SOLUK, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def g0():
-    return dörtlu_kart('Rûm suresi kâinat delilleri', [
-        ('Rûm 20: Toprak', 'Beşerin yaratılışı', MAVI, MAVI_A),
-        ('Rûm 21: Aile', 'Sekînet ve rahmet', YES, YES_A),
-        ('Rûm 22: Çeşitlilik', 'Dil ve renk farkı', TUR, TUR_A),
-        ('Rûm 24: Yağmur', 'Toprağın dirilişi', MOR, MOR_A)
-    ])
-def g1():
-    return uclu_pano('Aile yuvasının üç manevi direği', 'RÛM SURESİ 21. AYET: AİLEDE HUZUR İLKELERİ', [
-        ('Sekînet', 'Gönül huzuru ve güven', MAVI, '#f4f8fe'),
-        ('Meveddet', 'Karşılıklı içten sevgi', YES, YES_A),
-        ('Rahmet', 'Şefkat ve merhamet', TUR, TUR_A)
-    ], YES, YES_A)
-def g2():
-    return bilgi_panosu('Dillerin ve renklerin farklılığı', 'RÛM SURESİ 22. AYET: EVRENSEL ÇEŞİTLİLİK VE BİLENLER',
-        '“Göklerin ve yerin yaratılması ile dillerinizin ve renklerinizin farklı olması O’nun ayetlerindendir.”',
-        'Farklılıklar ayrımcılık sebebi değil, Yüce Allah’ın yaratma sanatındaki eşsiz zenginliktir.', CAM, CAM_A)
-def g3():
-    return dörtlu_kart('Ayet sonlarındaki tefekkür çağrısı', [
-        ('Yetefekkerûn', 'Düşünen toplum (21)', MAVI, MAVI_A),
-        ('Li’l-âlimîn', 'Bilenler/âlimler (22)', YES, YES_A),
-        ('Yesmeûn', 'İşiten toplum (23)', TUR, TUR_A),
-        ('Ya’kılûn', 'Aklını kullanan (24)', MOR, MOR_A)
-    ])
-def g5():
-    return akis_karti('Rûm 20-27. ayetlerin konu akışı', [
-        ('1. Rûm 20-21', 'Yaratılış ve aile', MAVI, MAVI_A),
-        ('2. Rûm 22-23', 'Dil/renk ve rızık', YES, YES_A),
-        ('3. Rûm 24', 'Yağmur ve diriliş', TUR, TUR_A),
-        ('4. Rûm 25-27', 'Düzen ve el-Hakîm', MOR, MOR_A)
-    ])
-def g6():
-    return uclu_pano('İlk yaratma ve yeniden diriltme', 'RÛM SURESİ 27. AYET: AHİRET DELİLİ VE ESMÂ-İ HÜSNÂ', [
-        ('İlk Yaratma', 'Yoktan başlatan O’dur', MAVI, '#f4f8fe'),
-        ('Yeniden Diriltme', 'O’nun için daha kolay', YES, YES_A),
-        ('El-Azîz ve El-Hakîm', 'Mutlak güç ve hikmet', TUR, TUR_A)
-    ], MAVI, MAVI_A)
-def g7():
-    return bilgi_panosu('Temel Kur’an kavramları', 'ÂYET (DELİL) · SEKÎNET (HUZUR) · TEFEKKÜR (DERİN DÜŞÜNCE)',
-        'Kâinattaki her düzen ve nimet Allah’ın varlığına işaret eden kevnî bir ayettir',
-        'İnsan aklını kullanarak (tefekkür) yaratılıştan ahiret bilincine ulaşır.', TUR, TUR_A, '#fff6ea')
-def g8():
-    return dörtlu_kart('Rûm suresi anahtar terimleri', [
-        ('Meveddet', 'İçten sevgi bağı', YES, YES_A),
-        ('Ba’s / Haşir', 'Yeniden diriliş', MAVI, MAVI_A),
-        ('El-Azîz', 'Mutlak güç sahibi', TUR, TUR_A),
-        ('El-Hakîm', 'Hikmet sahibi', MOR, MOR_A)
-    ])
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[7]['gorsel'] = g7()
-    s[8]['gorsel'] = g8()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

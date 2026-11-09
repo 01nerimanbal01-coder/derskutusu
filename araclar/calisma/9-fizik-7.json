@@ -18,7 +18,6 @@
     {
       "tur": "eslestir",
       "duzey": "hatirla",
-      "gorsel_var": true,
       "soru": "Büyüklükleri eşit ve 10 N olan iki kuvvetin ({alt:F|1} = {alt:F|2} = 10 N) aralarındaki açıya göre bileşke büyüklüklerini (R) eşleştiriniz.",
       "ciftler": [
         [
@@ -33,14 +32,13 @@
           "Aralarındaki açı θ = 90° (Dik)",
           "R = 10{kok:2} N"
         ]
-      ],
-      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Eşit iki vektörde özel açılar\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\"/><rect x=\"10\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#e8eefe\"/><text x=\"50.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">θ = 0° (Aynı)</text><line x1=\"18\" y1=\"48\" x2=\"82\" y2=\"48\" stroke=\"#2451d6\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">R = 2F (Maksimum)</text><rect x=\"96\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#e3f6ea\"/><text x=\"136.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">θ = 60°</text><line x1=\"104\" y1=\"48\" x2=\"168\" y2=\"48\" stroke=\"#12a150\" stroke-width=\"0.8\"/><text x=\"135.0\" y=\"72.0\" text-anchor=\"end\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">R = F</text><path d=\"M 135.8 68.9 L 137.1 68.9 L 138.5 72.6 L 140.8 64.1 L 147.8 64.1\" fill=\"none\" stroke=\"#0b2257\" stroke-width=\"0.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"144.3\" y=\"72.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">3</text><rect x=\"182\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#fff1df\"/><text x=\"222.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">θ = 90° (Dik)</text><line x1=\"190\" y1=\"48\" x2=\"254\" y2=\"48\" stroke=\"#ee7d12\" stroke-width=\"0.8\"/><text x=\"206.0\" y=\"72.0\" text-anchor=\"end\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">R = F</text><path d=\"M 206.8 69.1 L 208.1 69.1 L 209.5 72.6 L 211.8 64.7 L 218.4 64.7\" fill=\"none\" stroke=\"#0b2257\" stroke-width=\"0.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"215.1\" y=\"72.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">2</text><text x=\"218.9\" y=\"72.0\" text-anchor=\"start\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\"> (dik)</text><rect x=\"268\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#f0e9fe\"/><text x=\"308.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">θ = 120°</text><line x1=\"276\" y1=\"48\" x2=\"340\" y2=\"48\" stroke=\"#7c3aed\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">R = F (Kendisine eşit)</text></svg>"
+      ]
     },
     {
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki kartezyen toplama kuralına göre başlangıcı orijin O(0, 0) olan A(-3, 5) ve B(6, -1) vektörlerinin bileşkesi R = A +",
+      "soru": "Görseldeki kartezyen toplama kuralına göre başlangıcı orijin O(0, 0) olan A(-3, 5) ve B(6, -1) vektörlerinin bileşkesi R = A + B aşağıdakilerden hangisidir?",
       "secenekler": [
         "3",
         "4",
@@ -48,17 +46,15 @@
         "7"
       ],
       "dogru": 2,
-      "cozum": "{alt:R|x} = -3 + 6 = 3 ve {alt:R|y} = 5 + (-1) = 4 olur. R(3, 4) vektörünün büyüklüğü |R| = {kok:{us:3|2} + {us:4|2}} = 5 birimdir.",
-      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Kartezyen koordinat sisteminde vektör\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e8eefe\"/><text x=\"180.0\" y=\"23.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">KARTEZYEN SİSTEMDE VEKTÖR GÖSTERİMİ VE TOPLAMA</text><rect x=\"14\" y=\"34\" width=\"104\" height=\"66\" rx=\"6\" fill=\"#f4f8fe\"/><text x=\"66.0\" y=\"55.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">A(x, y) Gösterimi</text><text x=\"66.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Başlangıç O(0, 0)</text><rect x=\"126\" y=\"34\" width=\"104\" height=\"66\" rx=\"6\" fill=\"#e3f6ea\"/><text x=\"178.0\" y=\"55.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Bileşke R(Rx, Ry)</text><text x=\"178.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Rx = Ax+Bx, Ry = Ay+By</text><rect x=\"238\" y=\"34\" width=\"104\" height=\"66\" rx=\"6\" fill=\"#fff1df\"/><text x=\"290.0\" y=\"55.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Büyüklük |R|</text><path d=\"M 264.8 75.0 L 266.1 75.0 L 267.5 78.6 L 269.8 70.3 L 313.8 70.3\" fill=\"none\" stroke=\"#5b6479\" stroke-width=\"0.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"291.8\" y=\"78.0\" text-anchor=\"middle\" font-size=\"8.0\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Rx² + Ry²</text></svg>"
+      "cozum": "{alt:R|x} = -3 + 6 = 3 ve {alt:R|y} = 5 + (-1) = 4 olur. R(3, 4) vektörünün büyüklüğü |R| = {kok:{us:3|2} + {us:4|2}} = 5 birimdir."
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
       "soru": "Büyüklükleri 6 N ve 10 N olan iki kuvvetin bileşkesinin (R) alabileceği en küçük ve en büyük değer aralığını yazınız.",
-      "cevap": "|10 - 6| ≤ R ≤ 10 + 6 kuralına göre bileşke en küçük 4 N.",
-      "satir": 2,
-      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Bileşke vektör sınır değerleri\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e0f4f8\"/><text x=\"180.0\" y=\"25.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0e8fa8\">İKİ VEKTÖRÜN BİLEŞKE ARALIĞI: |A - B| ≤ R ≤ A + B</text><rect x=\"16\" y=\"36\" width=\"328\" height=\"64\" rx=\"6\" fill=\"#eaf7fa\"/><text x=\"180.0\" y=\"58.0\" text-anchor=\"middle\" font-size=\"9.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">En büyük değer θ = 0° iken R_max = A + B · En küçük değer θ = 180° iken R_min = |A - B|</text><text x=\"180.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">İki vektör arasındaki açı arttıkça bileşke vektörün büyüklüğü (R) azalır.</text></svg>"
+      "cevap": "|10 - 6| ≤ R ≤ 10 + 6 kuralına göre bileşke kuvvet 4 N ≤ R ≤ 16 N aralığında değer alır.",
+      "satir": 2
     },
     {
       "tur": "dy",
@@ -82,8 +78,7 @@
           "metin": "Uç uca eklenen vektörler başladığı noktaya dönüp kapalı çokgen oluşturursa bileşke sıfırdır (R = 0).",
           "dogru": true
         }
-      ],
-      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Vektör temel özellikleri\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\"/><rect x=\"10\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#e8eefe\"/><text x=\"50.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">Eşit Vektör (K=L)</text><line x1=\"18\" y1=\"48\" x2=\"82\" y2=\"48\" stroke=\"#2451d6\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Yön ve şiddet aynı</text><rect x=\"96\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#fde8e7\"/><text x=\"136.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#d63a3a\">Zıt Vektör (K=-M)</text><line x1=\"104\" y1=\"48\" x2=\"168\" y2=\"48\" stroke=\"#d63a3a\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Yön 180° tam ters</text><rect x=\"182\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#fff1df\"/><text x=\"222.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">Skaler Çarpım</text><line x1=\"190\" y1=\"48\" x2=\"254\" y2=\"48\" stroke=\"#ee7d12\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">k<0 ise yön döner</text><rect x=\"268\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#e3f6ea\"/><text x=\"308.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">Kapalı Çokgen</text><line x1=\"276\" y1=\"48\" x2=\"340\" y2=\"48\" stroke=\"#12a150\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Uç uca dönerse R=0</text></svg>"
+      ]
     },
     {
       "tur": "tablo",
@@ -98,9 +93,7 @@
         [
           "F = 10 N, θ = 37°",
           "10 · 0,8 = 8 N",
-          {
-            "b": "10 · 0,6 = 6 N"
-          }
+          "10 · 0,6 = 6 N"
         ],
         [
           "F = 20 N, θ = 53°",
@@ -141,8 +134,7 @@
         2,
         3,
         4
-      ],
-      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Dik bileşenlerle bileşke hesabı\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\"/><rect x=\"10\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#e8eefe\"/><text x=\"50.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">1. Bileşen Ayır</text><text x=\"50.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Fx=Fcosθ, Fy=Fsinθ</text><polygon points=\"92,56 95,52 95,60\" fill=\"#9aa6bd\"/><rect x=\"96\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#e3f6ea\"/><text x=\"136.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">2. Yatay Topla</text><text x=\"136.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Rx = ΣFx hesapla</text><polygon points=\"178,56 181,52 181,60\" fill=\"#9aa6bd\"/><rect x=\"182\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#fff1df\"/><text x=\"222.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">3. Düşey Topla</text><text x=\"222.0\" y=\"68.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Ry = ΣFy hesapla</text><polygon points=\"264,56 267,52 267,60\" fill=\"#9aa6bd\"/><rect x=\"268\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#f0e9fe\"/><text x=\"308.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">4. Pisagor Al</text><text x=\"286.0\" y=\"68.0\" text-anchor=\"end\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">R = </text><path d=\"M 286.8 65.2 L 288.1 65.2 L 289.5 68.6 L 291.8 60.9 L 324.0 60.9\" fill=\"none\" stroke=\"#0b2257\" stroke-width=\"0.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"307.9\" y=\"68.0\" text-anchor=\"middle\" font-size=\"7.4\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">Rx²+Ry²</text></svg>"
+      ]
     },
     {
       "tur": "coktan",
@@ -156,8 +148,7 @@
         "12{kok:3}"
       ],
       "dogru": 1,
-      "cozum": "Eşit büyüklükteki (F) iki vektör arasındaki açı 120° olduğunda bileşke vektörün büyüklüğü vektörlerden birine eşittir: R = F = 12 N.",
-      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Eşit kuvvetlerde açı etkisi\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#e3f6ea\"/><text x=\"180.0\" y=\"23.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">F₁ = F₂ = F İKEN AÇIYA GÖRE BİLEŞKE</text><rect x=\"14\" y=\"34\" width=\"104\" height=\"66\" rx=\"6\" fill=\"#e3f6ea\"/><text x=\"66.0\" y=\"55.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">θ = 60° İken</text><text x=\"48.0\" y=\"78.0\" text-anchor=\"end\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">R = F</text><path d=\"M 48.8 75.2 L 50.1 75.2 L 51.5 78.6 L 53.8 70.8 L 60.3 70.8\" fill=\"none\" stroke=\"#5b6479\" stroke-width=\"0.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"57.1\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">3</text><text x=\"60.8\" y=\"78.0\" text-anchor=\"start\" font-size=\"7.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\"> (büyük)</text><rect x=\"126\" y=\"34\" width=\"104\" height=\"66\" rx=\"6\" fill=\"#f4f8fe\"/><text x=\"178.0\" y=\"55.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">θ = 90° İken</text><text x=\"162.0\" y=\"78.0\" text-anchor=\"end\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">R = F</text><path d=\"M 162.8 75.1 L 164.1 75.1 L 165.5 78.6 L 167.8 70.7 L 174.4 70.7\" fill=\"none\" stroke=\"#5b6479\" stroke-width=\"0.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"171.1\" y=\"78.0\" text-anchor=\"middle\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">2</text><text x=\"174.9\" y=\"78.0\" text-anchor=\"start\" font-size=\"7.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\"> (dik)</text><rect x=\"238\" y=\"34\" width=\"104\" height=\"66\" rx=\"6\" fill=\"#fff1df\"/><text x=\"290.0\" y=\"55.0\" text-anchor=\"middle\" font-size=\"9.5\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">θ = 120° İken</text><text x=\"290.0\" y=\"78.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">R = F (Tek kuvvete eşit)</text></svg>"
+      "cozum": "Eşit büyüklükteki (F) iki vektör arasındaki açı 120° olduğunda bileşke vektörün büyüklüğü vektörlerden birine eşittir: R = F = 12 N."
     },
     {
       "tur": "bosluk",
@@ -180,8 +171,7 @@
       ],
       "fazla": [
         "skaler"
-      ],
-      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Vektör toplama ve çıkarma yöntemleri\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#fff1df\"/><text x=\"180.0\" y=\"25.0\" text-anchor=\"middle\" font-size=\"10\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">UÇ UCA EKLEME · PARALELKENAR · VEKTÖR ÇIKARMA</text><rect x=\"16\" y=\"36\" width=\"328\" height=\"64\" rx=\"6\" fill=\"#fff6ea\"/><text x=\"180.0\" y=\"58.0\" text-anchor=\"middle\" font-size=\"9.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#0b2257\">Uç uca eklemede ilk başlangıçtan son bitişe çizilen ok bileşke vektörü (R) verir</text><text x=\"180.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"8.6\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#5b6479\">Vektör çıkarmada A - B = A + (-B) eşitliği kullanılır; çıkan vektör ters çevrilip toplanır.</text></svg>"
+      ]
     },
     {
       "tur": "eslestir",
@@ -201,8 +191,7 @@
           "M(5, -12) vektörü",
           "|M| = 13 birim"
         ]
-      ],
-      "gorsel": "<svg viewBox=\"0 0 360 115\" style=\"max-height:34mm\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Özel dik üçgenlerle büyüklük\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"107\" rx=\"6\" fill=\"#eef1f6\"/><rect x=\"10\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#e8eefe\"/><text x=\"50.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#2451d6\">3 - 4 - 5</text><line x1=\"18\" y1=\"48\" x2=\"82\" y2=\"48\" stroke=\"#2451d6\" stroke-width=\"0.8\"/><text x=\"50.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">K(3, 4) → |K| = 5</text><rect x=\"96\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#e3f6ea\"/><text x=\"136.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#12a150\">6 - 8 - 10</text><line x1=\"104\" y1=\"48\" x2=\"168\" y2=\"48\" stroke=\"#12a150\" stroke-width=\"0.8\"/><text x=\"136.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">L(-6, 8) → |L| = 10</text><rect x=\"182\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#fff1df\"/><text x=\"222.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#ee7d12\">5 - 12 - 13</text><line x1=\"190\" y1=\"48\" x2=\"254\" y2=\"48\" stroke=\"#ee7d12\" stroke-width=\"0.8\"/><text x=\"222.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">M(5, -12) → |M| = 13</text><rect x=\"268\" y=\"12\" width=\"80\" height=\"90\" rx=\"6\" fill=\"#f0e9fe\"/><text x=\"308.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"9.8\" font-family=\"Noto Sans, sans-serif\" font-weight=\"700\" fill=\"#7c3aed\">8 - 15 - 17</text><line x1=\"276\" y1=\"48\" x2=\"340\" y2=\"48\" stroke=\"#7c3aed\" stroke-width=\"0.8\"/><text x=\"308.0\" y=\"72.0\" text-anchor=\"middle\" font-size=\"8.2\" font-family=\"Noto Sans, sans-serif\" font-weight=\"400\" fill=\"#0b2257\">N(8, 15) → |N| = 17</text></svg>"
+      ]
     },
     {
       "tur": "dy",
@@ -238,29 +227,39 @@
           "anahtar": 0
         },
         {
-          "ipucu": "Kartezyen koordinat sisteminde yatay (x) eksenin adı (5 harf)",
-          "cevap": "APSİS",
-          "anahtar": 0
+          "ipucu": "Birden fazla kuvvetin yaptığı etkiyi tek başına yapan kuvvet (7 harf)",
+          "cevap": "BİLEŞKE",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Yalnız sayı ve birimle ifade edilen yönsüz büyüklük (6 harf)",
+          "cevap": "SKALER",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Büyüklükleri eşit, yönleri birbirine tam ters olan vektörler (3 harf)",
+          "cevap": "ZIT",
+          "anahtar": 2
+        },
+        {
+          "ipucu": "Vektörün ok ucunun gösterdiği taraf (3 harf)",
+          "cevap": "YÖN",
+          "anahtar": 1
         },
         {
           "ipucu": "Başlangıç noktası (0, 0) olan koordinat merkezi (6 harf)",
           "cevap": "ORİJİN",
           "anahtar": 1
-        },
-        {
-          "ipucu": "Yalnız sayı ve birimle ifade edilen yönsüz büyüklük (6 harf)",
-          "cevap": "SKALER",
-          "anahtar": 5
         }
       ],
-      "sonuc": "VARR"
+      "sonuc": "VEKTÖR"
     },
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Bir gemiyi her biri 100 kN kuvvet uygulayan iki römorkör çekerken aralarındaki açı 60° iken mi yoksa 120° iken mi",
-      "cevap": "60° iken bileşke R = 100{kok:3} kN, 120° iken R = 100 kN olur; açı küçüldükçe bileşke büyüdüğü için 60° iken daha büyüktür.",
-      "satir": 3
+      "soru": "Bir gemiyi her biri 100 kN kuvvet uygulayan iki römorkör çekerken aralarındaki açı 60° iken mi yoksa 120° iken mi bileşke kuvvet daha büyüktür? Açıklayınız.",
+      "cevap": "60° iken R = 100{kok:3} kN, 120° iken R = 100 kN olur; açı küçüldükçe bileşke kuvvet büyür.",
+      "satir": 2
     }
   ]
 }

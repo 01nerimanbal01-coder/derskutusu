@@ -54,8 +54,8 @@
       "duzey": "uygula",
       "gorsel_var": true,
       "soru": "Grafiği A(1, 5) ve B(4, 17) noktalarından geçen g(x) = ax + b doğrusal fonksiyonunun kuralını ve sıfırını (kökünü) bulunuz.",
-      "cevap": "Eğim a = {kesir:17 - 5|4 - 1} = 4. g(1) = 4(1) + b = 5 ⇒ b = 1, yani g(x) = 4x + 1. Sıfırı: 4x + 1 = 0 ⇒ x = -{kesir:1|4}.",
-      "satir": 3
+      "cevap": "Eğim a = 4 ve g(x) = 4x + 1 olup sıfırı 4x + 1 = 0 denkleminden x = -{kesir:1|4} bulunur.",
+      "satir": 2
     },
     {
       "tur": "dy",
@@ -94,9 +94,7 @@
         [
           "f(x) = 3x - 12",
           "a = 3, Sıfırı: x = 4",
-          {
-            "b": "Gerçek sayılarda artan (a > 0)"
-          }
+          "Gerçek sayılarda artan (a > 0)"
         ],
         [
           "g(x) = -2x + 10",
@@ -143,7 +141,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki kapalı aralık kuralına göre f: [-3, 4] → ℝ, f(x) = -2x + 7 fonksiyonunun alabileceği en büyük ve en küçük",
+      "soru": "Görseldeki kapalı aralık kuralına göre f: [-3, 4] → ℝ, f(x) = -2x + 7 fonksiyonunun alabileceği en büyük ve en küçük değerlerin toplamı kaçtır?",
       "secenekler": [
         "10",
         "12",
@@ -156,7 +154,6 @@
     {
       "tur": "bosluk",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Cümlelerdeki boşlukları uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
@@ -225,19 +222,24 @@
       "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
       "satirlar": [
         {
-          "ipucu": "Doğrusal fonksiyonda dikey değişimin yatay değişime sabit oranı (4 harf)",
-          "cevap": "EĞİM",
-          "anahtar": 0
-        },
-        {
           "ipucu": "f(x) = 0 denklemini sağlayan x değerine verilen diğer ad (3 harf)",
           "cevap": "KÖK",
           "anahtar": 1
         },
         {
-          "ipucu": "Görüntü kümesi değer kümesine eşit olan fonksiyon türü (5 harf)",
-          "cevap": "ÖRTEN",
-          "anahtar": 2
+          "ipucu": "f(x) = x gibi diğer fonksiyonların türetildiği temel fonksiyon (8 harf)",
+          "cevap": "REFERANS",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Eğimi sıfır (a = 0) olan f(x) = b türündeki fonksiyon (5 harf)",
+          "cevap": "SABİT",
+          "anahtar": 4
+        },
+        {
+          "ipucu": "Doğrusal fonksiyonda dikey değişimin yatay değişime sabit oranı (4 harf)",
+          "cevap": "EĞİM",
+          "anahtar": 0
         },
         {
           "ipucu": "Eğimi a > 0 olan doğrusal fonksiyonların değişim yönü (5 harf)",
@@ -245,13 +247,13 @@
           "anahtar": 4
         }
       ],
-      "sonuc": "EÖTN"
+      "sonuc": "ÖRTEN"
     },
     {
       "tur": "acik",
       "duzey": "ust",
       "soru": "200 m yükseklikten havalanıp dakikada 150 m yükselen bir İHA en çok 20 dk yükseldiğine göre h(t) kuralını ve görüntü kümesini yazınız.",
-      "cevap": "Kural: h(t) = 150t + 200 (t ∈ [0, 20]). En az h(0) = 200 m, en.",
+      "cevap": "Kural h(t) = 150t + 200 (t ∈ [0, 20]) olup görüntü kümesi [200, 3200] m aralığıdır.",
       "satir": 2
     }
   ]

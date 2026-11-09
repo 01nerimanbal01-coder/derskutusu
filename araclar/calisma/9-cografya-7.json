@@ -53,8 +53,8 @@
       "tur": "kisa",
       "duzey": "analiz",
       "gorsel_var": true,
-      "soru": "“Türkiye’de yıl içinde dört mevsim yaşanması” ile “aynı anda dört mevsim yaşanması” durumlarının hangi konum",
-      "cevap": "Yıl içinde dört mevsim Orta Kuşak (mutlak konum); aynı anda dört.",
+      "soru": "“Türkiye’de yıl içinde dört mevsim yaşanması” ile “aynı anda dört mevsim yaşanması” durumlarının hangi konum türleriyle ilgili olduğunu yazınız.",
+      "cevap": "Yıl içinde dört mevsim Orta Kuşak (mutlak), aynı anda dört mevsim ise göreceli konum sonucudur.",
       "satir": 2
     },
     {
@@ -94,9 +94,7 @@
         [
           "Hatay - Beysun (Yayladağı)",
           "36° Kuzey Paraleli",
-          {
-            "b": "Güneş ışınlarını en büyük açıyla alan en güney uç"
-          }
+          "Güneş ışınlarını en büyük açıyla alan en güney uç"
         ],
         [
           "Sinop - İnceburun",
@@ -125,12 +123,12 @@
       "tur": "siralama",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki enlem-boylam kurallarına göre denizlerimizi tuzluluk oran이 en fazla olandan en az olana doğru (güneyden kuzeye) sıraya diziniz.",
+      "soru": "Görseldeki enlem bilgilerine göre denizlerimizi tuzluluk oranı en fazla olandan en az olana doğru (güneyden kuzeye) sıraya diziniz.",
       "ogeler": [
-        "Akdeniz (Ekvator'a en yakın, buharlaşma ve tuzluluk en yüksek: ‰38)",
-        "Ege Denizi (Kuzeye çıkıldıkça tuzluluk azalır: ‰33)",
-        "Marmara Denizi (Geçiş denizi, tuzluluk orta düzeyde: ‰23)",
-        "Karadeniz (Ekvator'a en uzak ve bol yağışlı, tuzluluk en düşük: ‰18)"
+        "Akdeniz (En güneyde, sıcaklık ve buharlaşma en yüksek)",
+        "Ege Denizi (Akdeniz'in kuzeyinde, tuzluluk ikinci sırada)",
+        "Marmara Denizi (Ege ile Karadeniz arasında geçiş denizi)",
+        "Karadeniz (En kuzeyde, yağış ve tatlı su beslemesi fazla)"
       ],
       "dogru_sira": [
         1,
@@ -143,7 +141,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki boylam hesabına göre 45° Doğu meridyenindeki Iğdır’da yerel saat 12.00 iken, 26° Doğu meridyenindeki",
+      "soru": "Görseldeki boylam hesabına göre 45° Doğu meridyenindeki Iğdır’da yerel saat 12.00 iken, 26° Doğu meridyenindeki Çanakkale’de yerel saat kaçtır?",
       "secenekler": [
         "13.16",
         "11.16",
@@ -156,7 +154,6 @@
     {
       "tur": "bosluk",
       "duzey": "uygula",
-      "gorsel_var": true,
       "soru": "Cümlelerdeki boşlukları uygun kavramlarla tamamlayınız.",
       "cumleler": [
         {
@@ -179,7 +176,6 @@
     {
       "tur": "eslestir",
       "duzey": "hatirla",
-      "gorsel_var": true,
       "soru": "Türkiye’nin göreceli konum özelliklerini doğurduğu sonuçlarla eşleştiriniz.",
       "ciftler": [
         [
@@ -225,13 +221,8 @@
       "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
       "satirlar": [
         {
-          "ipucu": "Dağların güneşe dönük yamacını ifade eden coğrafi terim (4 harf)",
-          "cevap": "BAKI",
-          "anahtar": 0
-        },
-        {
-          "ipucu": "Ekvator'a paralel uzanan ve iklimi etkileyen açısal uzaklık (5 harf)",
-          "cevap": "ENLEM",
+          "ipucu": "Başlangıç paraleli olan 0° paralel dairesi (7 harf)",
+          "cevap": "EKVATOR",
           "anahtar": 0
         },
         {
@@ -242,16 +233,26 @@
         {
           "ipucu": "Yerel saat farklarını belirleyen meridyen yaylarının açısal değeri (6 harf)",
           "cevap": "BOYLAM",
-          "anahtar": 5
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Kış mevsiminde Orta Kuşak'ta sıcak ve soğuk hava kütlelerinin karşılaşmasıyla oluşan yağış (5 harf)",
+          "cevap": "CEPHE",
+          "anahtar": 1
+        },
+        {
+          "ipucu": "Bir yerin Ekvator'a ve Başlangıç Meridyeni'ne göre kesin konumu (6 harf)",
+          "cevap": "MUTLAK",
+          "anahtar": 0
         }
       ],
-      "sonuc": "BENM"
+      "sonuc": "ENLEM"
     },
     {
       "tur": "acik",
       "duzey": "ust",
-      "soru": "Rize ile Kars yaklaşık aynı enlemde yer aldığı hâlde Rize’de kışların Kars’tan çok daha ılıman geçmesinin nedenini",
-      "cevap": "Aynı enlemde olduklarından mutlak konumları aynıdır; fark.",
+      "soru": "Rize ile Kars yaklaşık aynı enlemde yer aldığı hâlde Rize’de kışların Kars’tan çok daha ılıman geçmesinin nedenini açıklayınız.",
+      "cevap": "Enlemleri aynıdır; fark Rize'nin denizel ve alçak, Kars'ın yüksek ve karasal olmasındandır.",
       "satir": 2
     }
   ]

@@ -7,7 +7,7 @@
   "konu": "Konuşma ve Yazma (Anlatma) Becerileri: Deneme-Mülakat Üretimi ve İyi Bir Anlatımın Nitelikleri",
   "ciktilar": [
     "Planlama, taslak oluşturma, düşünceyi geliştirme yollarını kullanma ve düzeltme aşamalarını izleyerek deneme veya mülakat üretir.",
-    "İyi bir anlatımın temel özellikleri olan açıklık, akıcılık, duruluk, yalınlık, özgünlük, özlülük ve tutarlılık ilkelerini analiz eder.",
+    "İyi bir anlatımın temel özellikleri olan açıklık, akıcılık, duruluk, yalınlık, özgünlük ile tutarlılık ilkelerini analiz eder.",
     "Sözlü anlatımda vurgu, tonlama, boğumlama (diksiyon) ve beden dili uyumunu; yazılı anlatımda bağdaşıklık ve bağlaşıklığı uygular."
   ],
   "hatirla": [
@@ -18,7 +18,6 @@
     {
       "tur": "eslestir",
       "duzey": "hatirla",
-      "gorsel_var": true,
       "soru": "İyi bir anlatımın temel ilkelerini açıklamalarıyla eşleştiriniz.",
       "ciftler": [
         [
@@ -39,7 +38,7 @@
       "tur": "coktan",
       "duzey": "kavrama",
       "gorsel_var": true,
-      "soru": "Görseldeki duruluk ve açıklık kurallarına göre “Genç gazeteci, ünlü şaire yarışmada birinci olduğunu söyledi.”",
+      "soru": "Görseldeki cümlede (“Gazeteci, yarışmada şairden sonra birinci olduğunu açıkladı.”) anlatımın hangi ilkesine aykırılık vardır?",
       "secenekler": [
         "Akıcılık",
         "Yalınlık",
@@ -54,8 +53,8 @@
       "duzey": "analiz",
       "gorsel_var": true,
       "soru": "Öğrencilerin sıkça karıştırdığı 'Duruluk' ilkesi ile 'Yalınlık' ilkesi arasındaki temel farkı kısaca yazınız.",
-      "cevap": "Duruluk cümlede gereksiz/eş anlamlı sözcük.",
-      "satir": 1
+      "cevap": "Duruluk cümlede gereksiz sözcük bulunmamasıdır; yalınlık ise süslü anlatımdan kaçınmaktır.",
+      "satir": 2
     },
     {
       "tur": "dy",
@@ -94,9 +93,7 @@
         [
           "“Beş yıllık tecrübelerini ve deneyimlerini paylaştı.”",
           "Duruluk İhlali",
-          {
-            "b": "Tecrübe ve deneyim eş anlamlıdır (gereksiz sözcük)"
-          }
+          "Tecrübe ve deneyim eş anlamlıdır (gereksiz sözcük)"
         ],
         [
           "“Yeni okula başlayan kardeşime çanta aldık.”",
@@ -130,7 +127,7 @@
         "Hazırlık ve Planlama: Konuyu, yazma amacını, hedef kitleyi ve ana düşünceyi belirleme",
         "Taslak Oluşturma: Giriş-gelişme-sonuç planına göre 'ben' diliyle samimi metni kaleme alma",
         "Geliştirme: Düşünceleri örnekleme, karşılaştırma ve tanık göstermeyle zenginleştirme",
-        "Gözden Geçirme ve Paylaşma: Yazım, noktalama ve duruluk/açıklık denetimi yapıp yayımlama"
+        "Gözden Geçirme ve Paylaşma: Yazım ve noktalama denetimi yapıp yayımlama"
       ],
       "dogru_sira": [
         1,
@@ -240,19 +237,29 @@
           "anahtar": 4
         },
         {
-          "ipucu": "Az sözle çok ve derin anlam ifade etme niteliği (7 harf)",
-          "cevap": "ÖZLÜLÜK",
-          "anahtar": 5
+          "ipucu": "Düşünceleri somutlaştırmak için örnekler verme yöntemi (9 harf)",
+          "cevap": "ÖRNEKLEME",
+          "anahtar": 3
+        },
+        {
+          "ipucu": "Uzman kişilerle soru-cevap tekniğiyle yapılan planlı görüşme (7 harf)",
+          "cevap": "MÜLAKAT",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Göndericiden alıcıya aktarılan duygu ve düşünce, mesaj (5 harf)",
+          "cevap": "İLETİ",
+          "anahtar": 2
         }
       ],
-      "sonuc": "DENÜ"
+      "sonuc": "DENEME"
     },
     {
       "tur": "acik",
       "duzey": "ust",
       "soru": "“İhtiyar yaşlı adam, karşılıklı mektuplaştığı torununa hediye aldı.” cümlesini duruluk ilkesine uygun biçimde düzelterek nedenini yazınız.",
-      "cevap": "“Yaşlı adam, mektuplaştığı torununa hediye aldı.” İhtiyar.",
-      "satir": 1
+      "cevap": "“Yaşlı adam, mektuplaştığı torununa hediye aldı.” ('İhtiyar' ve 'karşılıklı' gereksizdir).",
+      "satir": 2
     }
   ]
 }
