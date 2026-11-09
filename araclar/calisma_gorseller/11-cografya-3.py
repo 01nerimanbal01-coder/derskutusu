@@ -1,176 +1,142 @@
-"""11. sınıf Coğrafya 3. hafta (Web Tabanlı CBS Uygulamaları) görselleri.
-SVG; insan figürü yok (K024); görsel içi yazı Noto Sans; max-height:34mm; çizgiler <=0.75pt."""
+"""11-cografya-3 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.2, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def cbs_bilesen_kartlari():
-    kartlar = [
-        ('1. Donanım', 'Bilgisayar &amp; Sunucu', MAVI, MAVI_A),
-        ('2. Yazılım', 'CBS Programı &amp; Kod', YES, YES_A),
-        ('3. Veri Tabanı', 'Mekânsal &amp; Öznitelik', TUR, TUR_A),
-        ('4. Canlı Güç', 'Uzman &amp; Karar Verici', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (ad, oz, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 8, 82, 108, z, r)
-        ic += kutu(x + 8, 16, 66, 26, r, r, r=4)
-        ic += yazi(x + 41, 33, str(i + 1), 12.0, '#ffffff')
-        ic += yazi(x + 41, 62, ad, 8.8, r)
-        ic += f'<line x1="{x + 8}" y1="72" x2="{x + 74}" y2="72" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 41, 92, oz, 8.2, LAC, ince=True)
-    return svg(360, 125, ic, 'CBS temel bileşenleri kartı.', 34)
-
-
-def vektor_raster_semasi():
-    ic = kutu(6, 6, 348, 112, MAVI_A, MAVI)
-    ic += yazi(180, 22, 'MEKÂNSAL VERİ MODELLERİ: VEKTÖR VE RASTER', 10.0, MAVI)
-    ic += kutu(20, 36, 145, 70, '#ffffff', MAVI)
-    ic += yazi(92, 54, 'Vektör Veri Modeli', 9.2, MAVI)
-    ic += yazi(92, 72, '• Nokta: Kuyu, Direk, Durak', 8.2, LAC, ince=True)
-    ic += yazi(92, 86, '• Çizgi: Akarsu, Yol, Fay', 8.2, LAC, ince=True)
-    ic += yazi(92, 98, '• Poligon: Göl, Orman, Ada', 8.2, LAC, ince=True)
-    ic += kutu(195, 36, 145, 70, '#ffffff', TUR)
-    ic += yazi(267, 54, 'Raster Veri Modeli', 9.2, TUR)
-    ic += yazi(267, 72, '• Piksel ve Hücre Ağı', 8.2, LAC, ince=True)
-    ic += yazi(267, 86, '• Sayısal Yükseklik (DEM)', 8.2, LAC, ince=True)
-    ic += yazi(267, 98, '• Uydu Görüntüleri', 8.2, LAC, ince=True)
-    return svg(360, 125, ic, 'Vektör ve raster veri modelleri şeması.', 34)
-
-
-def tampon_bolge_kesiti():
-    ic = kutu(6, 6, 348, 112, CAM_A, CAM)
-    ic += yazi(180, 22, 'TAMPON BÖLGE (BUFFER) ANALİZİ VE TAŞKIN KORUMA', 9.8, CAM)
-    ic += kutu(16, 36, 96, 70, '#ffffff', CAM)
-    ic += yazi(64, 56, 'Akarsu Ekseni', 9.0, CAM)
-    ic += yazi(64, 76, 'Merkez çizgi', 8.4, LAC, ince=True)
-    ic += yazi(64, 92, 'Kaynak vektör', 8.4, CAM, ince=True)
-    ic += kutu(132, 36, 96, 70, TUR_A, TUR)
-    ic += yazi(180, 56, '500 m Tampon', 9.0, TUR)
-    ic += yazi(180, 76, 'Riskli Kuşak', 8.4, KIR, ince=True)
-    ic += yazi(180, 92, 'Yapılaşma Yasak', 8.4, TUR, ince=True)
-    ic += kutu(248, 36, 96, 70, YES_A, YES)
-    ic += yazi(296, 56, 'Güvenli Alan', 9.0, YESIL_K)
-    ic += yazi(296, 76, 'Taşkın Dışı', 8.4, LAC, ince=True)
-    ic += yazi(296, 92, 'İmar Uygun', 8.4, YES, ince=True)
-    return svg(360, 125, ic, 'Tampon bölge etki alanı kesiti.', 34)
-
-
-def oznitelik_tablosu_semasi():
-    ic = kutu(6, 6, 348, 112, MOR_A, MOR)
-    ic += yazi(180, 20, 'MEKÂNSAL VERİ VE ÖZNİTELİK TABLOSU İLİŞKİSİ', 9.8, MOR)
-    basliklar = [('ID', 40), ('Nesne Adı', 110), ('Geometri', 190), ('Risk Puanı', 270)]
-    for ad, x in basliklar:
-        ic += kutu(x - 20, 32, 65, 18, MOR, MOR, r=2)
-        ic += yazi(x + 12, 45, ad, 8.4, '#ffffff')
-    satirlar = [
-        ('01', 'Sakarya Nehri', 'Çizgi', 'Yüksek (85)'),
-        ('02', 'Sapanca Gölü', 'Poligon', 'Orta (45)'),
-        ('03', 'Deprem İstasyonu', 'Nokta', 'Düşük (10)'),
-    ]
-    for i, s in enumerate(satirlar):
-        y = 54 + i * 20
-        ic += kutu(20, y, 320, 18, '#ffffff', MOR, r=2)
-        ic += yazi(52, y + 13, s[0], 8.2, LAC, ince=True)
-        ic += yazi(122, y + 13, s[1], 8.2, LAC, ince=True)
-        ic += yazi(202, y + 13, s[2], 8.2, LAC, ince=True)
-        ic += yazi(282, y + 13, s[3], 8.2, KIR if 'Yüksek' in s[3] else LAC, ince=True)
-    return svg(360, 125, ic, 'Mekânsal öznitelik tablosu şeması.', 34)
-
-
-def cakistirma_overlay_semasi():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 20, 'ÇAKIŞTIRMA (OVERLAY) İLE YER SEÇİMİ KATMANLARI', 9.8, YESIL_K)
-    katmanlar = [
-        ('1. Eğim Katmanı', 'Düz &amp; Az Eğimli', 16, YES),
-        ('2. Jeoloji Katmanı', 'Sağlam Zemin', 102, TUR),
-        ('3. Ulaşım Katmanı', 'Ana Yola Yakın', 188, MAVI),
-        ('4. Sentez Harita', 'En Uygun Alan', 274, MOR),
-    ]
-    for baslik, acik, x, r in katmanlar:
-        ic += kutu(x, 34, 70, 72, '#ffffff', r)
-        ic += yazi(x + 35, 54, baslik, 8.2, r)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, acik, 7.8, LAC, ince=True)
-    return svg(360, 125, ic, 'Çakıştırma analizi yer seçimi katmanları.', 34)
-
-
-def heyelan_egim_diyagrami():
-    ic = kutu(6, 6, 348, 112, TUR_A, TUR)
-    ic += yazi(180, 22, 'EĞİM DERECESİ VE HEYELAN DUYARLILIK SINIFLARI', 9.8, TUR)
-    ic += kutu(20, 36, 145, 70, '#ffffff', YES)
-    ic += yazi(92, 56, '%0 - %15 Eğim', 9.2, YESIL_K)
-    ic += yazi(92, 76, 'Düşük Duyarlılık', 8.6, LAC, ince=True)
-    ic += yazi(92, 92, 'Yerleşime Çok Uygun', 8.6, YES, ince=True)
-    ic += kutu(195, 36, 145, 70, '#ffffff', KIR)
-    ic += yazi(267, 56, '>%35 Dik Eğim', 9.2, KIR)
-    ic += yazi(267, 76, 'Yüksek Heyelan Riski', 8.6, LAC, ince=True)
-    ic += yazi(267, 92, 'Yapılaşmaya Kapalı', 8.6, KIR, ince=True)
-    return svg(360, 125, ic, 'Eğim kademeleri ve heyelan risk diyagramı.', 34)
-
-
-def dem_yukseklik_kartlari():
-    ic = kutu(6, 6, 348, 112, CAM_A, CAM)
-    ic += yazi(180, 22, 'SAYISAL YÜKSEKLİK MODELİ (DEM) TÜREVLERİ', 10.0, CAM)
-    kartlar = [
-        ('Eğim Haritası', 'Yamaç dikliği derecesi', 16),
-        ('Bakı Haritası', 'Güneş alma cephesi', 102),
-        ('Akış Yönü', 'Su drenaj yönlenmesi', 188),
-        ('Havza Sınırı', 'Su ayrım çizgisi tespiti', 274),
-    ]
-    for b, a, x in kartlar:
-        ic += kutu(x, 36, 70, 70, '#ffffff', CAM)
-        ic += yazi(x + 35, 54, b, 8.4, CAM)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{CAM}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, a, 7.8, LAC, ince=True)
-    return svg(360, 125, ic, 'Sayısal Yükseklik Modeli analiz türevleri.', 34)
-
-
-def cbs_katman_sentez_kutulari():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 24, 'CBS ANALİZ AŞAMALARI', 10.2, YESIL_K)
-    kutular = ['Veri Girişi', 'Depolama', 'Mekânsal Analiz', 'Karar Destek']
-    for i, k in enumerate(kutular):
-        x = 16 + i * 85
-        ic += kutu(x, 42, 75, 52, '#ffffff', YESIL_K, r=4)
-        ic += yazi(x + 37, 66, f'{i + 1}. Adım', 8.2, TUR)
-        ic += yazi(x + 37, 82, k, 8.6, YESIL_K)
-    return svg(360, 125, ic, 'CBS analiz aşamaları akış kutuları.', 34)
+GORSELLER = {0: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CBS temel bileşenleri '
+    'kartı."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Donanım</text><text '
+    'x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Bilgisayar &amp; Sunucu</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">2. Yazılım</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">CBS Programı &amp; Kod</text><rect x="4" y="52" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">3. Veri Tabanı</text><text x="87.5" y="88.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mekânsal &amp; Öznitelik</text><rect x="179" '
+    'y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Canlı Güç</text><text '
+    'x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Uzman '
+    '&amp; Karar Verici</text></svg>',
+ 1: '<svg viewBox="0 0 350 214" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vektör ve raster veri '
+    'modelleri şeması."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">MEKÂNSAL VERİ MODELLERİ: VEKTÖR VE</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">RASTER</text><rect x="4" y="49" width="342" height="80" rx="5" '
+    'fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="66.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Vektör Veri Modeli</text><text x="11.0" y="84.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Nokta: Kuyu, Direk, Durak</text><text '
+    'x="11.0" y="103.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• '
+    'Çizgi: Akarsu, Yol, Fay</text><text x="11.0" y="121.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">• Poligon: Göl, Orman, Ada</text><rect x="4" y="132" width="342" height="80" rx="5" fill="#e8eefe" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="149.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">Raster Veri Modeli</text><text x="11.0" y="167.6" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Piksel ve Hücre Ağı</text><text x="11.0" '
+    'y="186.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Sayısal '
+    'Yükseklik (DEM)</text><text x="11.0" y="204.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">• Uydu Görüntüleri</text></svg>',
+ 2: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tampon bölge etki alanı '
+    'kesiti."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="87.5" '
+    'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">TAMPON '
+    'BÖLGE</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0e8fa8">(BUFFER) ANALİZİ ·</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0e8fa8">VE TAŞKIN KORUMA</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Akarsu Ekseni</text><text x="262.5" y="39.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Merkez çizgi · ·</text><text x="262.5" '
+    'y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kaynak '
+    'vektör</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" '
+    'y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">500 m '
+    'Tampon</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#d63a3a">Riskli Kuşak · ·</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#d63a3a">Yapılaşma Yasak</text><rect x="179" y="71" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Güvenli Alan</text><text x="262.5" y="107.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Taşkın Dışı · İmar ·</text><text x="262.5" '
+    'y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Uygun</text></svg>',
+ 3: '<svg viewBox="0 0 350 175" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CBS mekânsal veri ve '
+    'öznitelik kartları."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">01 · '
+    'Adapazarı Ovası</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Veri Tipi: Poligon</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Alan) · Risk: Yüksek</text><rect x="179" y="3" width="167" '
+    'height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">02 · Sakarya Nehri</text><text x="262.5" '
+    'y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Veri Tipi: '
+    'Çizgi (Hat) ·</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Uzunluk: 542 km</text><rect x="4" y="71" width="167" height="101" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="98.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">03 · Sapanca Gölü</text><text x="87.5" y="117.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Veri Tipi: Poligon</text><text x="87.5" '
+    'y="135.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Alan) · Tatlı '
+    'su</text><text x="87.5" y="153.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">kaynağı</text><rect x="179" y="71" width="167" height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">04 · Deprem</text><text x="262.5" y="107.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">İstasyonu</text><text x="262.5" y="126.3" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Veri Tipi: Nokta</text><text x="262.5" y="144.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Konum) · '
+    'Anlık</text><text x="262.5" y="163.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ölçüm</text></svg>',
+ 5: '<svg viewBox="0 0 350 160" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Çakıştırma analizi yer '
+    'seçimi katmanları."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0f6b45">ÇAKIŞTIRMA (OVERLAY) İLE YER SEÇİMİ ·</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">KATMANLARI</text><rect x="4" y="49" width="342" height="25" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="66.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">1. Eğim Katmanı: Düz &amp; Az Eğimli</text><rect x="4" y="77" width="342" '
+    'height="25" rx="5" fill="#e3f6ea" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="94.3" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">2. Jeoloji Katmanı: Sağlam Zemin</text><rect x="4" y="105" '
+    'width="342" height="25" rx="5" fill="#e3f6ea" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="122.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">3. Ulaşım Katmanı: Ana Yola Yakın</text><rect '
+    'x="4" y="133" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="150.3" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">4. Sentez Harita: En '
+    'Uygun Alan</text></svg>',
+ 6: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eğim kademeleri ve '
+    'heyelan risk diyagramı."><rect x="4" y="3" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">EĞİM '
+    'DERECESİ VE HEYELAN DUYARLILIK</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">SINIFLARI</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#fff1df" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">%0 - %15 Eğim</text><text x="11.0" y="84.5" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Düşük Duyarlılık · Yerleşime Çok Uygun</text><rect x="4" y="95" '
+    'width="342" height="43" rx="5" fill="#fff1df" stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" y="112.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">&gt;%35 Dik Eğim</text><text x="11.0" '
+    'y="130.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yüksek Heyelan '
+    'Riski · Yapılaşmaya Kapalı</text></svg>',
+ 8: '<svg viewBox="0 0 350 160" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sayısal Yükseklik Modeli '
+    'analiz türevleri."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">SAYISAL '
+    'YÜKSEKLİK MODELİ (DEM)</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">TÜREVLERİ</text><rect x="4" y="49" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="66.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Eğim Haritası: Yamaç dikliği derecesi</text><rect x="4" y="77" width="342" height="25" rx="5" '
+    'fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="94.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Bakı Haritası: Güneş alma cephesi</text><rect x="4" y="105" width="342" '
+    'height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="122.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Akış Yönü: Su drenaj yönlenmesi</text><rect '
+    'x="4" y="133" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="150.3" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Havza Sınırı: Su ayrım '
+    'çizgisi tespiti</text></svg>',
+ 10: '<svg viewBox="0 0 350 214" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CBS analiz aşamaları '
+     'akış kutuları."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+     'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">CBS ANALİZ '
+     'AŞAMALARI</text><rect x="4" y="31" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text '
+     'x="11.0" y="48.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">1. '
+     'Adım</text><text x="11.0" y="66.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+     'fill="#0f6b45">Veri Girişi</text><rect x="4" y="77" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+     'stroke-width="0.75"/><text x="11.0" y="94.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#ee7d12">2. Adım</text><text x="11.0" y="112.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#0f6b45">Depolama</text><rect x="4" y="123" width="342" height="43" rx="5" fill="#e3f6ea" '
+     'stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="140.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#ee7d12">3. Adım</text><text x="11.0" y="158.5" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Mekânsal Analiz</text><rect x="4" y="169" width="342" '
+     'height="43" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="186.1" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">4. Adım</text><text x="11.0" y="204.5" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Karar '
+     'Destek</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = cbs_bilesen_kartlari()
-    s[0]['en_fazla'] = 34
-    s[1]['gorsel'] = vektor_raster_semasi()
-    s[1]['en_fazla'] = 34
-    s[2]['gorsel'] = tampon_bolge_kesiti()
-    s[2]['en_fazla'] = 34
-    s[3]['gorsel'] = oznitelik_tablosu_semasi()
-    s[3]['en_fazla'] = 34
-    s[5]['gorsel'] = cakistirma_overlay_semasi()
-    s[5]['en_fazla'] = 34
-    s[6]['gorsel'] = heyelan_egim_diyagrami()
-    s[6]['en_fazla'] = 34
-    s[8]['gorsel'] = dem_yukseklik_kartlari()
-    s[8]['en_fazla'] = 34
-    s[10]['gorsel'] = cbs_katman_sentez_kutulari()
-    s[10]['en_fazla'] = 34
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

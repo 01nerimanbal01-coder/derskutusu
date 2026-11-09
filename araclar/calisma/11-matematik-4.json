@@ -31,12 +31,9 @@
         [
           "Ekstrapolasyon Hatası",
           "Gözlem aralığının çok dışındaki aşırı uçlar için hatalı tahmin yürütme"
-        ],
-        [
-          "Aykırı Değer Etkisi",
-          "Kümeden uzak tek bir noktanın korelasyon katsayısını yapay saptırması"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -50,7 +47,8 @@
         "Verilerin sadece tek bir kahve türü üzerinden hesaplanması hatası"
       ],
       "cevap": "A",
-      "dogru": 0
+      "dogru": 0,
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -64,7 +62,8 @@
         "Standart sapma değerini sıfırdan küçük kabul etme hatası"
       ],
       "cevap": "C",
-      "dogru": 2
+      "dogru": 2,
+      "en_fazla": 34
     },
     {
       "tur": "bosluk",
@@ -76,7 +75,8 @@
           "metin": "İki nicel değişken arasında güçlü matematiksel ilişki bulunsa dahi biri diğerinin kesin sebebi olmak zorunda değildir; bu duruma ___ yanılgısı denir.",
           "cevap": "nedensellik"
         }
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -108,12 +108,9 @@
         [
           "Artık (Kalıntı) Analizi",
           "Modelden sapan gerçek değerlerin dağılımını kontrol etme"
-        ],
-        [
-          "Alan Kısıtı Belirleme",
-          "Doğrusal modelin geçerli olduğu güvenilir gözlem aralığını çizme"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -127,7 +124,8 @@
         "O uç noktanın ölçüm hatası veya özel bir durum olup olmadığı incelenmelidir"
       ],
       "cevap": "D",
-      "dogru": 3
+      "dogru": 3,
+      "en_fazla": 34
     },
     {
       "tur": "bosluk",
@@ -152,7 +150,8 @@
         "Şehirdeki yağış miktarının her yıl düzenli olarak düşmesi"
       ],
       "cevap": "A",
-      "dogru": 0
+      "dogru": 0,
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -177,13 +176,15 @@
           "metin": "Model denkleminde gözlenen gerçek değer ile modelin tahmin ettiği değer arasındaki farka ___ (hata) denir.",
           "cevap": "kalıntı"
         }
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "acik",
       "duzey": "analiz",
       "soru": "İstatistikte iki değişken arasında yüksek korelasyon çıkmasının neden her zaman nedensellik anlamına gelmediğini açıklayınız.",
-      "cevap": "Çünkü her iki değişkeni de aynı anda etkileyen üçüncü bir gizli faktör bulunabilir."
+      "cevap": "Çünkü her iki değişkeni de aynı anda etkileyen üçüncü bir gizli faktör bulunabilir.",
+      "satir": 2
     }
   ]
 }

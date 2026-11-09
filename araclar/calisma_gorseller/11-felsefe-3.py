@@ -1,171 +1,136 @@
-"""11. sınıf Felsefe 3. hafta (Çevre Etiği Yaklaşımları) görselleri.
-SVG; insan figürü yok (K024); görsel içi yazı Noto Sans; max-height:34mm; çizgiler <=0.75pt."""
+"""11-felsefe-3 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.2, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def cevre_etigi_kartlari():
-    kartlar = [
-        ('1. Antroposentrik', 'İnsan Merkezli Araç', TUR, TUR_A),
-        ('2. Biyosentrik', 'Tüm Canlılar Eşit', YES, YES_A),
-        ('3. Ekosentrik', 'Canlı + Cansız Bütün', MAVI, MAVI_A),
-        ('4. Derin Ekoloji', 'Köklü Zihniyet Değişimi', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (ad, oz, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 8, 82, 108, z, r)
-        ic += kutu(x + 8, 16, 66, 26, r, r, r=4)
-        ic += yazi(x + 41, 33, str(i + 1), 12.0, '#ffffff')
-        ic += yazi(x + 41, 62, ad, 8.4, r)
-        ic += f'<line x1="{x + 8}" y1="72" x2="{x + 74}" y2="72" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 41, 92, oz, 8.0, LAC, ince=True)
-    return svg(360, 125, ic, 'Çevre etiği 4 temel yaklaşım kartı.', 34)
-
-
-def aracsal_icsel_deger_semasi():
-    ic = kutu(6, 6, 348, 112, MAVI_A, MAVI)
-    ic += yazi(180, 22, 'ÇEVRE FELSEFESİNDE DEĞER SINIFLANDIRMASI', 10.0, MAVI)
-    ic += kutu(20, 36, 145, 70, '#ffffff', TUR)
-    ic += yazi(92, 56, 'Araçsal Değer (Fayda)', 9.2, TUR)
-    ic += yazi(92, 76, 'Doğa insanın emrindedir', 8.6, LAC, ince=True)
-    ic += yazi(92, 92, 'Tüketim &amp; maddi kazanç', 8.6, TUR, ince=True)
-    ic += kutu(195, 36, 145, 70, '#ffffff', YES)
-    ic += yazi(267, 56, 'İçsel Değer (Öz Değer)', 9.2, YESIL_K)
-    ic += yazi(267, 76, 'Varlığın kendisi amaçtır', 8.6, LAC, ince=True)
-    ic += yazi(267, 92, 'Faydadan bağımsız ahlaki hak', 8.6, YES, ince=True)
-    return svg(360, 125, ic, 'Araçsal ve içsel değer karşılaştırması.', 34)
-
-
-def kusaklararasi_sorumluluk_kesiti():
-    ic = kutu(6, 6, 348, 112, TUR_A, TUR)
-    ic += yazi(180, 22, 'HANS JONAS: GELECEK KUŞAKLARA KARŞI SORUMLULUK', 9.8, TUR)
-    ic += kutu(16, 36, 96, 70, '#ffffff', MAVI)
-    ic += yazi(64, 56, 'Bugünkü Kuşak', 9.0, MAVI)
-    ic += yazi(64, 76, 'Teknolojik güç', 8.4, LAC, ince=True)
-    ic += yazi(64, 92, 'Tüketim kararı', 8.4, MAVI, ince=True)
-    ic += kutu(132, 36, 96, 70, '#ffffff', TUR)
-    ic += yazi(180, 56, 'Ahlaki Köprü', 9.0, TUR)
-    ic += yazi(180, 76, 'Sorumluluk ilkesi', 8.4, LAC, ince=True)
-    ic += yazi(180, 92, 'Özen &amp; sakınma', 8.4, TUR, ince=True)
-    ic += kutu(248, 36, 96, 70, '#ffffff', YES)
-    ic += yazi(296, 56, 'Gelecek Kuşak', 9.0, YESIL_K)
-    ic += yazi(296, 76, 'Varoluş hakkı', 8.4, LAC, ince=True)
-    ic += yazi(296, 92, 'Temiz bir dünya', 8.4, YES, ince=True)
-    return svg(360, 125, ic, 'Kuşaklararası etik sorumluluk kesiti.', 34)
-
-
-def biyotik_topluluk_dongusu():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 22, 'ALDO LEOPOLD: TOPRAK ETİĞİ VE BİYOTİK TOPLULUK', 9.8, YESIL_K)
-    kartlar = [
-        ('Toprak &amp; Kaya', 'Cansız mineral temel', 16),
-        ('Su &amp; Hava', 'Hayat döngüsü akışı', 102),
-        ('Bitki &amp; Hayvan', 'Biyotik ağ paydaşı', 188),
-        ('İnsan Türü', 'Eşit topluluk yurttaşı', 274),
-    ]
-    for b, a, x in kartlar:
-        ic += kutu(x, 36, 70, 70, '#ffffff', YESIL_K)
-        ic += yazi(x + 35, 54, b, 8.2, YESIL_K)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{YESIL_K}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, a, 7.8, LAC, ince=True)
-    return svg(360, 125, ic, 'Toprak etiği biyotik topluluk kartı.', 34)
-
-
-def sig_derin_ekoloji_tablosu():
-    ic = kutu(6, 6, 348, 112, MOR_A, MOR)
-    ic += yazi(180, 20, 'SIĞ EKOLOJİ İLE DERİN EKOLOJİ KARŞILAŞTIRMASI', 9.8, MOR)
-    satirlar = [
-        ('Ölçüt', 'Sığ Ekoloji', 'Derin Ekoloji', MOR),
-        ('Odak Noktası', 'İnsanın Çıkarları &amp; Refahı', 'Bütün Ekosistemin Dengesi', TUR),
-        ('Yaklaşım', 'Mevcut Tüketime Filtre Takma', 'Köklü Yaşam Tarzı Değişimi', YESIL_K),
-        ('Doğanın Rolü', 'Yalnızca Doğal Hammadde', 'İçsel Değer Taşıyan Canlı Ağ', MAVI),
-    ]
-    for i, (k1, k2, k3, r) in enumerate(satirlar):
-        y = 30 + i * 20
-        bg = '#ffffff' if i > 0 else MOR_A
-        ic += kutu(16, y, 328, 18, bg, r, r=2)
-        ic += yazi(70, y + 13, k1, 8.4, r)
-        ic += yazi(180, y + 13, k2, 8.2, LAC, ince=(i > 0))
-        ic += yazi(285, y + 13, k3, 8.2, LAC, ince=(i > 0))
-    return svg(360, 125, ic, 'Sığ ve derin ekoloji karşılaştırma tablosu.', 34)
-
-
-def ekolojik_ayakizi_semasi():
-    ic = kutu(6, 6, 348, 112, CAM_A, CAM)
-    ic += yazi(180, 22, 'EKOLOJİK AYAK İZİ VE DÜNYA TAŞIMA KAPASİTESİ', 10.0, CAM)
-    ic += kutu(20, 36, 145, 70, '#ffffff', KIR)
-    ic += yazi(92, 56, 'Aşırı Tüketim Çılgınlığı', 9.2, KIR)
-    ic += yazi(92, 76, 'Kaynakların tükenmesi', 8.6, LAC, ince=True)
-    ic += yazi(92, 92, 'Biyoçeşitlilik kaybı', 8.6, KIR, ince=True)
-    ic += kutu(195, 36, 145, 70, '#ffffff', YES)
-    ic += yazi(267, 56, 'Sürdürülebilir Uyum', 9.2, YESIL_K)
-    ic += yazi(267, 76, 'Döngüsel ekolojik yaşam', 8.6, LAC, ince=True)
-    ic += yazi(267, 92, 'Geleceğe saygılı tüketim', 8.6, YES, ince=True)
-    return svg(360, 125, ic, 'Ekolojik ayak izi ve denge şeması.', 34)
-
-
-def surdurulebilir_etik_kartlari():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 22, 'SÜRDÜRÜLEBİLİR ÇEVRE ETİĞİ BASAMAKLARI', 10.0, YESIL_K)
-    kartlar = [
-        ('1. Farkındalık', 'Ekolojik sınırları kavrama', 16),
-        ('2. Sadeleşme', 'Gereksiz tüketimi kısma', 102),
-        ('3. Koruma', 'Doğal habitatı savunma', 188),
-        ('4. Dayanışma', 'Bütün türlerle barışık olma', 274),
-    ]
-    for b, a, x in kartlar:
-        ic += kutu(x, 36, 70, 70, '#ffffff', YESIL_K)
-        ic += yazi(x + 35, 54, b, 8.2, YESIL_K)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{YESIL_K}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, a, 7.8, LAC, ince=True)
-    return svg(360, 125, ic, 'Sürdürülebilir çevre etiği adımları.', 34)
-
-
-def etik_deger_kutulari():
-    ic = kutu(6, 6, 348, 112, MOR_A, MOR)
-    ic += yazi(180, 24, 'ÇEVRE FELSEFESİ SORUMLULUK AŞAMALARI', 10.2, MOR)
-    kutular = ['Varlık Bilinci', 'İçsel Değer', 'Ahlaki Ödev', 'Biyotik Bütün']
-    for i, k in enumerate(kutular):
-        x = 16 + i * 85
-        ic += kutu(x, 42, 75, 52, '#ffffff', MOR, r=4)
-        ic += yazi(x + 37, 66, f'{i + 1}. İlke', 8.2, TUR)
-        ic += yazi(x + 37, 82, k, 8.4, MOR)
-    return svg(360, 125, ic, 'Çevre etiği sorumluluk akış kutuları.', 34)
+GORSELLER = {0: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Çevre etiği 4 temel '
+    'yaklaşım kartı."><rect x="4" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">1. '
+    'Antroposentrik</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">İnsan Merkezli Araç</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">2. Biyosentrik</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tüm Canlılar Eşit</text><rect x="4" y="52" '
+    'width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="79.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">3. Ekosentrik</text><text x="87.5" y="98.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Canlı + Cansız '
+    'Bütün</text><rect x="179" y="52" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="70.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Derin '
+    'Ekoloji</text><text x="262.5" y="88.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Köklü Zihniyet ·</text><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Değişimi</text></svg>',
+ 1: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Araçsal ve içsel değer '
+    'karşılaştırması."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">ÇEVRE '
+    'FELSEFESİNDE DEĞER</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">SINIFLANDIRMASI</text><rect x="4" y="49" width="342" height="62" rx="5" fill="#e8eefe" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="66.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">Araçsal Değer (Fayda)</text><text x="11.0" y="84.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Doğa insanın emrindedir</text><text x="11.0" '
+    'y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#ee7d12">Tüketim &amp; '
+    'maddi kazanç</text><rect x="4" y="114" width="342" height="62" rx="5" fill="#e8eefe" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="131.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">İçsel '
+    'Değer (Öz Değer)</text><text x="11.0" y="149.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Varlığın kendisi amaçtır</text><text x="11.0" y="168.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">Faydadan bağımsız ahlaki hak</text></svg>',
+ 2: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kuşaklararası etik '
+    'sorumluluk kesiti."><rect x="4" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">HANS '
+    'JONAS:</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#ee7d12">GELECEK</text><text x="87.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">KUŞAKLARA KARŞI ·</text><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">SORUMLULUK</text><rect x="179" y="3" width="167" height="82" rx="5" '
+    'fill="#fff1df" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="30.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Bugünkü Kuşak</text><text x="262.5" y="48.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Teknolojik güç · ·</text><text x="262.5" '
+    'y="67.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tüketim '
+    'kararı</text><rect x="4" y="89" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" '
+    'y="107.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Ahlaki '
+    'Köprü</text><text x="87.5" y="125.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sorumluluk ilkesi · ·</text><text x="87.5" y="144.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Özen &amp; sakınma</text><rect x="179" y="89" width="167" height="64" rx="5" '
+    'fill="#fff1df" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="107.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Gelecek Kuşak</text><text x="262.5" y="125.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Varoluş hakkı · Temiz</text><text x="262.5" '
+    'y="144.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bir '
+    'dünya</text></svg>',
+ 3: '<svg viewBox="0 0 350 160" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Toprak etiği biyotik '
+    'topluluk kartı."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">ALDO LEOPOLD: '
+    'TOPRAK ETİĞİ VE BİYOTİK ·</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">TOPLULUK</text><rect x="4" y="49" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="66.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Toprak &amp; Kaya: Cansız mineral temel</text><rect x="4" y="77" width="342" height="25" rx="5" '
+    'fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="94.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Su &amp; Hava: Hayat döngüsü akışı</text><rect x="4" y="105" width="342" '
+    'height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="122.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bitki &amp; Hayvan: Biyotik ağ '
+    'paydaşı</text><rect x="4" y="133" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" '
+    'y="150.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İnsan Türü: '
+    'Eşit topluluk yurttaşı</text></svg>',
+ 5: '<svg viewBox="0 0 350 214" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sığ ve derin ekoloji '
+    'karşılaştırma tablosu."><rect x="4" y="3" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">SIĞ '
+    'EKOLOJİ İLE DERİN EKOLOJİ</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">KARŞILAŞTIRMASI</text><rect x="4" y="49" width="342" height="25" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="66.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">Ölçüt Sığ Ekoloji Derin Ekoloji</text><rect x="4" y="77" width="342" height="43" '
+    'rx="5" fill="#f0e9fe" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="94.1" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#ee7d12">Odak Noktası İnsanın Çıkarları &amp; Refahı</text><text x="11.0" '
+    'y="112.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bütün '
+    'Ekosistemin Dengesi</text><rect x="4" y="123" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="140.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0f6b45">Yaklaşım Mevcut Tüketime Filtre Takma</text><text x="11.0" y="158.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Köklü Yaşam Tarzı Değişimi</text><rect x="4" '
+    'y="169" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="186.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Doğanın Rolü Yalnızca '
+    'Doğal Hammadde</text><text x="11.0" y="204.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">İçsel Değer Taşıyan Canlı Ağ</text></svg>',
+ 6: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ekolojik ayak izi ve '
+    'denge şeması."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">EKOLOJİK AYAK '
+    'İZİ VE DÜNYA TAŞIMA</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">KAPASİTESİ</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#e0f4f8" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Aşırı Tüketim Çılgınlığı</text><text x="11.0" y="84.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kaynakların tükenmesi · Biyoçeşitlilik kaybı</text><rect x="4" y="95" '
+    'width="342" height="62" rx="5" fill="#e0f4f8" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="112.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Sürdürülebilir Uyum</text><text x="11.0" '
+    'y="130.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Döngüsel '
+    'ekolojik yaşam</text><text x="11.0" y="149.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#12a150">Geleceğe saygılı tüketim</text></svg>',
+ 8: '<svg viewBox="0 0 350 160" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sürdürülebilir çevre '
+    'etiği adımları."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">SÜRDÜRÜLEBİLİR '
+    'ÇEVRE ETİĞİ</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">BASAMAKLARI</text><rect x="4" y="49" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="66.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">1. Farkındalık: Ekolojik sınırları kavrama</text><rect x="4" y="77" width="342" height="25" rx="5" '
+    'fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="94.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">2. Sadeleşme: Gereksiz tüketimi kısma</text><rect x="4" y="105" width="342" '
+    'height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="122.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">3. Koruma: Doğal habitatı savunma</text><rect '
+    'x="4" y="133" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="150.3" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">4. Dayanışma: Bütün '
+    'türlerle barışık olma</text></svg>',
+ 10: '<svg viewBox="0 0 350 214" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Çevre etiği sorumluluk '
+     'akış kutuları."><rect x="4" y="3" width="342" height="25" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" '
+     'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">ÇEVRE FELSEFESİ '
+     'SORUMLULUK AŞAMALARI</text><rect x="4" y="31" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+     'stroke-width="0.75"/><text x="11.0" y="48.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#ee7d12">1. İlke</text><text x="11.0" y="66.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#7c3aed">Varlık Bilinci</text><rect x="4" y="77" width="342" height="43" rx="5" '
+     'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="94.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#ee7d12">2. İlke</text><text x="11.0" y="112.5" text-anchor="start" font-family="Noto '
+     'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">İçsel Değer</text><rect x="4" y="123" width="342" height="43" '
+     'rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="140.1" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. İlke</text><text x="11.0" y="158.5" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Ahlaki Ödev</text><rect x="4" y="169" '
+     'width="342" height="43" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="186.1" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">4. İlke</text><text x="11.0" y="204.5" '
+     'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Biyotik '
+     'Bütün</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = cevre_etigi_kartlari()
-    s[0]['en_fazla'] = 34
-    s[1]['gorsel'] = aracsal_icsel_deger_semasi()
-    s[1]['en_fazla'] = 34
-    s[2]['gorsel'] = kusaklararasi_sorumluluk_kesiti()
-    s[2]['en_fazla'] = 34
-    s[3]['gorsel'] = biyotik_topluluk_dongusu()
-    s[3]['en_fazla'] = 34
-    s[5]['gorsel'] = sig_derin_ekoloji_tablosu()
-    s[5]['en_fazla'] = 34
-    s[6]['gorsel'] = ekolojik_ayakizi_semasi()
-    s[6]['en_fazla'] = 34
-    s[8]['gorsel'] = surdurulebilir_etik_kartlari()
-    s[8]['en_fazla'] = 34
-    s[10]['gorsel'] = etik_deger_kutulari()
-    s[10]['en_fazla'] = 34
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

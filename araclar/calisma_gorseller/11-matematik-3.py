@@ -1,169 +1,114 @@
-"""11. sınıf Matematik 3. hafta (Serpilme Diyagramı ve Korelasyon) görselleri.
-SVG; insan figürü yok (K024); görsel içi yazı Noto Sans; max-height:34mm; çizgiler <=0.75pt."""
+"""11-matematik-3 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.2, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def korelasyon_tur_kartlari():
-    kartlar = [
-        ('1. Güçlü Pozitif', 'r = +0,80 .. +1,00', YES, YES_A),
-        ('2. Güçlü Negatif', 'r = -0,80 .. -1,00', KIR, KIR_A),
-        ('3. Zayıf İlişki', 'r = ±0,20 .. ±0,40', TUR, TUR_A),
-        ('4. Sıfır İlişki', 'r ≈ 0,00 (Bağımsız)', MAVI, MAVI_A),
-    ]
-    ic = ''
-    for i, (ad, oz, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 8, 82, 108, z, r)
-        ic += kutu(x + 8, 16, 66, 26, r, r, r=4)
-        ic += yazi(x + 41, 33, str(i + 1), 12.0, '#ffffff')
-        ic += yazi(x + 41, 62, ad, 8.4, r)
-        ic += f'<line x1="{x + 8}" y1="72" x2="{x + 74}" y2="72" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 41, 92, oz, 8.0, LAC, ince=True)
-    return svg(360, 125, ic, 'Korelasyon türleri ve katsayı aralıkları kartı.', 34)
-
-
-def serpilme_nokta_bulutu():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 20, 'POZİTİF KORELASYON SERPİLME DİYAGRAMI (r ≈ +0,92)', 9.8, YESIL_K)
-    ic += '<line x1="30" y1="105" x2="330" y2="105" stroke="#0b2257" stroke-width="0.75"/>'
-    ic += '<line x1="30" y1="105" x2="30" y2="35" stroke="#0b2257" stroke-width="0.75"/>'
-    ic += yazi(180, 118, 'X Değişkeni (Çalışma Saati)', 8.0, LAC, ince=True)
-    ic += yazi(18, 40, 'Y', 8.0, LAC, ince=True)
-    # Noktalar ve eğilim çizgisi
-    ic += '<line x1="45" y1="95" x2="315" y2="45" stroke="#12a150" stroke-width="0.75" stroke-dasharray="3,3"/>'
-    noktalar = [(55, 92), (80, 88), (110, 80), (140, 75), (170, 68), (200, 64), (230, 58), (260, 52), (290, 48)]
-    for px, py in noktalar:
-        ic += f'<circle cx="{px}" cy="{py}" r="3" fill="#2451d6"/>'
-    return svg(360, 125, ic, 'Pozitif doğrusal serpilme diyagramı.', 34)
-
-
-def negatif_iliski_modeli():
-    ic = kutu(6, 6, 348, 112, KIR_A, KIR)
-    ic += yazi(180, 22, 'TERS YÖNLÜ (NEGATİF) KORELASYON İLİŞKİSİ', 10.0, KIR)
-    ic += kutu(20, 36, 145, 70, '#ffffff', TUR)
-    ic += yazi(92, 56, 'Sürat Artışı (V)', 9.2, TUR)
-    ic += yazi(92, 76, 'Ortalama hız yükselir', 8.6, LAC, ince=True)
-    ic += yazi(92, 92, 'X ekseni artış yönünde', 8.6, TUR, ince=True)
-    ic += kutu(195, 36, 145, 70, '#ffffff', KIR)
-    ic += yazi(267, 56, 'Varış Süresi (t)', 9.2, KIR)
-    ic += yazi(267, 76, 'Hedefe varış kısalır', 8.6, LAC, ince=True)
-    ic += yazi(267, 92, 'Y ekseni azalır (r &lt; 0)', 8.6, KIR, ince=True)
-    return svg(360, 125, ic, 'Negatif korelasyon model şeması.', 34)
-
-
-def korelasyon_aralik_cetveli():
-    ic = kutu(6, 6, 348, 112, MAVI_A, MAVI)
-    ic += yazi(180, 22, 'KORELASYON KATSAYISI (r) DEĞER CETVELİ [-1, +1]', 9.8, MAVI)
-    adımlar = [
-        ('-1.00', 'Tam Negatif Doğrusal', 16, KIR),
-        ('-0.50', 'Orta Negatif', 102, TUR),
-        ('0.00', 'Doğrusal İlişki Yok', 188, MAVI),
-        ('+1.00', 'Tam Pozitif Doğrusal', 274, YES),
-    ]
-    for deg, ad, x, r in adımlar:
-        ic += kutu(x, 36, 70, 70, '#ffffff', r)
-        ic += yazi(x + 35, 54, deg, 9.6, r)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, ad, 7.6, LAC, ince=True)
-    return svg(360, 125, ic, 'Korelasyon katsayısı sayı doğrusu cetveli.', 34)
-
-
-def korelasyon_tablosu():
-    ic = kutu(6, 6, 348, 112, MOR_A, MOR)
-    ic += yazi(180, 20, 'İKİ NİCEL DEĞİŞKEN ARASINDAKİ KORELASYON TABLOSU', 9.8, MOR)
-    satirlar = [
-        ('Değişken 1', 'Değişken 2', 'Korelasyon Katsayısı (r)', 'İlişki Türü', MOR),
-        ('Ders Çalışma Saati', 'Sınav Puanı', '+0,88', 'Güçlü Pozitif', YESIL_K),
-        ('Araç Yaşı', 'Piyasa Fiyatı', '-0,76', 'Güçlü Negatif', KIR),
-        ('Ayakkabı Ölçüsü', 'Sınav Başarısı', '0,02', 'Sıfır (İlişkisiz)', MAVI),
-    ]
-    for i, (k1, k2, k3, k4, r) in enumerate(satirlar):
-        y = 30 + i * 20
-        bg = '#ffffff' if i > 0 else MOR_A
-        ic += kutu(16, y, 328, 18, bg, r, r=2)
-        ic += yazi(60, y + 13, k1, 8.0, r)
-        ic += yazi(138, y + 13, k2, 8.0, LAC, ince=(i > 0))
-        ic += yazi(218, y + 13, k3, 8.2, LAC, ince=(i > 0))
-        ic += yazi(296, y + 13, k4, 8.0, LAC, ince=(i > 0))
-    return svg(360, 125, ic, 'Korelasyon örnekleri karşılaştırma tablosu.', 34)
-
-
-def dogrusal_model_tahmin():
-    ic = kutu(6, 6, 348, 112, CAM_A, CAM)
-    ic += yazi(180, 22, 'DOĞRUSAL MODEL: y = ax + b İLE TAHMİN', 10.0, CAM)
-    ic += kutu(20, 36, 145, 70, '#ffffff', CAM)
-    ic += yazi(92, 56, 'Model Formülü', 9.2, CAM)
-    ic += yazi(92, 76, 'y = 2x + 10', 9.4, LAC)
-    ic += yazi(92, 92, 'a: Eğim, b: Sabit', 8.2, CAM, ince=True)
-    ic += kutu(195, 36, 145, 70, '#ffffff', YES)
-    ic += yazi(267, 56, 'Tahmin Değeri', 9.2, YESIL_K)
-    ic += yazi(267, 76, 'x = 20 için', 8.6, LAC, ince=True)
-    ic += yazi(267, 92, 'y = 2(20) + 10 = 50', 8.8, YES, ince=True)
-    return svg(360, 125, ic, 'Doğrusal model denklem ve tahmin şeması.', 34)
-
-
-def aykiri_deger_etkisi_kartlari():
-    ic = kutu(6, 6, 348, 112, TUR_A, TUR)
-    ic += yazi(180, 22, 'SERPİLME GRAFİĞİNDE AYKIRI (UÇ) DEĞER ETKİSİ', 10.0, TUR)
-    kartlar = [
-        ('1. Tipik Küme', 'Genel doğrusal eğilim', 16),
-        ('2. Uç Veri Noktası', 'Kümeden çok uzakta nokta', 102),
-        ('3. Katsayı Sapması', 'r değerini yanıltıcı yapar', 188),
-        ('4. İnceleme Şartı', 'Özel sebep araştırılır', 274),
-    ]
-    for b, a, x in kartlar:
-        ic += kutu(x, 36, 70, 70, '#ffffff', TUR)
-        ic += yazi(x + 35, 54, b, 8.0, TUR)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{TUR}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, a, 7.8, LAC, ince=True)
-    return svg(360, 125, ic, 'Aykırı değer etkisi bilgi kartları.', 34)
-
-
-def istatistik_adimlari_kutulari():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 24, 'İKİ DEĞİŞKENLİ VERİ ANALİZİ AŞAMALARI', 10.0, YESIL_K)
-    kutular = ['Veri Toplama', 'Serpilme Grafiği', 'Korelasyon (r)', 'Model Kurma']
-    for i, k in enumerate(kutular):
-        x = 16 + i * 85
-        ic += kutu(x, 42, 75, 52, '#ffffff', YESIL_K, r=4)
-        ic += yazi(x + 37, 66, f'Adım {i + 1}', 8.2, TUR)
-        ic += yazi(x + 37, 82, k, 8.2, YESIL_K)
-    return svg(360, 125, ic, 'İki değişkenli analiz aşamaları kutuları.', 34)
+GORSELLER = {0: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Korelasyon türleri ve '
+    'katsayı aralıkları kartı."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Güçlü Pozitif r =</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">+0,80 .. +1,00</text><rect x="179" y="3" width="167" height="45" '
+    'rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Güçlü Negatif r =</text><text x="262.5" y="39.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">-0,80 .. '
+    '-1,00</text><rect x="4" y="52" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Zayıf İlişki '
+    'r =</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#12a150">±0,20 .. ±0,40</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Sıfır İlişki r ≈ 0,00</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">(Bağımsız)</text></svg>',
+ 1: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pozitif doğrusal serpilme '
+    'diyagramı."><rect x="4" y="3" width="342" height="80" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">POZİTİF '
+    'KORELASYON SERPİLME</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">DİYAGRAMI (r ≈ +0,92)</text><text x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Y</text><text x="11.0" y="75.4" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">X Değişkeni (Çalışma Saati)</text></svg>',
+ 2: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Negatif korelasyon model '
+    'şeması."><rect x="4" y="3" width="342" height="43" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">TERS YÖNLÜ '
+    '(NEGATİF) KORELASYON</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">İLİŞKİSİ</text><rect x="4" y="49" width="342" height="62" rx="5" fill="#fdeaea" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="66.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Sürat Artışı (V)</text><text x="11.0" y="84.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ortalama hız yükselir</text><text x="11.0" y="103.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#ee7d12">X ekseni artış '
+    'yönünde</text><rect x="4" y="114" width="342" height="62" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" '
+    'y="131.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">Varış Süresi '
+    '(t)</text><text x="11.0" y="149.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Hedefe varış kısalır</text><text x="11.0" y="168.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#d63a3a">Y ekseni azalır (r &lt; 0)</text></svg>',
+ 3: '<svg viewBox="0 0 350 152" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Korelasyon katsayısı '
+    'sayı doğrusu cetveli."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">KORELASYON KATSAYISI (r) DEĞER CETVELİ</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">[-1, +1]</text><rect x="4" y="49" width="342" height="23" rx="5" '
+    'fill="#e8eefe" stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" y="65.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#d63a3a">-1.00:</tspan> Tam Negatif '
+    'Doğrusal</text><rect x="4" y="75" width="342" height="23" rx="5" fill="#e8eefe" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="91.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan '
+    'font-weight="700" fill="#ee7d12">-0.50:</tspan> Orta Negatif</text><rect x="4" y="101" width="342" height="23" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="117.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#2451d6">0.00:</tspan> Doğrusal İlişki '
+    'Yok</text><rect x="4" y="127" width="342" height="23" rx="5" fill="#e8eefe" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="143.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan '
+    'font-weight="700" fill="#12a150">+1.00:</tspan> Tam Pozitif Doğrusal</text></svg>',
+ 5: '<svg viewBox="0 0 350 214" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Korelasyon örnekleri '
+    'karşılaştırma tablosu."><rect x="4" y="3" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">İKİ '
+    'NİCEL DEĞİŞKEN ARASINDAKİ</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">KORELASYON TABLOSU</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">Değişken 1 Değişken 2</text><text x="11.0" y="84.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Korelasyon Katsayısı (r) İlişki '
+    'Türü</text><rect x="4" y="95" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" '
+    'y="112.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0f6b45">Ders Çalışma '
+    'Saati Sınav Puanı +0,88</text><text x="11.0" y="130.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Güçlü Pozitif</text><rect x="4" y="141" width="342" height="25" rx="5" fill="#f0e9fe" '
+    'stroke="#d63a3a" stroke-width="0.75"/><text x="11.0" y="158.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#d63a3a">Araç Yaşı Piyasa Fiyatı -0,76 · Güçlü Negatif</text><rect x="4" y="169" '
+    'width="342" height="43" rx="5" fill="#f0e9fe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="186.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Ayakkabı Ölçüsü Sınav Başarısı '
+    '0,02</text><text x="11.0" y="204.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sıfır (İlişkisiz)</text></svg>',
+ 6: '<svg viewBox="0 0 350 86" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Doğrusal model denklem ve '
+    'tahmin şeması."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" '
+    'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">DOĞRUSAL MODEL: '
+    'y = ax + b İLE TAHMİN</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="48.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Model Formülü y = 2x + 10 a: Eğim, b: Sabit</text><rect x="4" y="59" width="342" height="25" rx="5" '
+    'fill="#e0f4f8" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="76.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">Tahmin Değeri x = 20 için y = 2(20) + 10\xa0=\xa050</text></svg>',
+ 8: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aykırı değer etkisi '
+    'bilgi kartları."><rect x="4" y="3" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">SERPİLME '
+    'GRAFİĞİNDE AYKIRI (UÇ) DEĞER</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">ETKİSİ</text><rect x="4" y="49" width="342" height="23" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="65.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#ee7d12">1. Tipik Küme:</tspan> Genel doğrusal eğilim</text><rect '
+    'x="4" y="75" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="92.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. Uç Veri '
+    'Noktası</text><text x="11.0" y="110.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kümeden çok uzakta nokta</text><rect x="4" y="121" width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="138.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">3. Katsayı Sapması r değerini yanıltıcı yapar</text><rect x="4" y="149" width="342" height="23" '
+    'rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="165.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#ee7d12">4. İnceleme Şartı:</tspan> '
+    'Özel sebep araştırılır</text></svg>',
+ 10: '<svg viewBox="0 0 350 142" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İki değişkenli analiz '
+     'aşamaları kutuları."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+     'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">İKİ '
+     'DEĞİŞKENLİ VERİ ANALİZİ AŞAMALARI</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+     'stroke-width="0.75"/><text x="11.0" y="48.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#ee7d12">Adım 1 · Veri Toplama</text><rect x="4" y="59" width="342" height="25" rx="5" fill="#e3f6ea" '
+     'stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="76.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#ee7d12">Adım 2 · Serpilme Grafiği</text><rect x="4" y="87" width="342" height="25" '
+     'rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="104.3" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Adım 3 · Korelasyon (r)</text><rect x="4" y="115" width="342" '
+     'height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="132.3" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Adım 4 · Model Kurma</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = korelasyon_tur_kartlari()
-    s[0]['en_fazla'] = 34
-    s[1]['gorsel'] = serpilme_nokta_bulutu()
-    s[1]['en_fazla'] = 34
-    s[2]['gorsel'] = negatif_iliski_modeli()
-    s[2]['en_fazla'] = 34
-    s[3]['gorsel'] = korelasyon_aralik_cetveli()
-    s[3]['en_fazla'] = 34
-    s[5]['gorsel'] = korelasyon_tablosu()
-    s[5]['en_fazla'] = 34
-    s[6]['gorsel'] = dogrusal_model_tahmin()
-    s[6]['en_fazla'] = 34
-    s[8]['gorsel'] = aykiri_deger_etkisi_kartlari()
-    s[8]['en_fazla'] = 34
-    s[10]['gorsel'] = istatistik_adimlari_kutulari()
-    s[10]['en_fazla'] = 34
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

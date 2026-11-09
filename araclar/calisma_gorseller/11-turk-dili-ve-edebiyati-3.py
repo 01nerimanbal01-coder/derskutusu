@@ -1,168 +1,121 @@
-"""11. sınıf Türk Dili ve Edebiyatı 3. hafta (Karagöz Oyunu, Mektup ve Dilekçe) görselleri.
-SVG; insan figürü yok (K024); görsel içi yazı Noto Sans; max-height:34mm; çizgiler <=0.75pt."""
+"""11-turk-dili-ve-edebiyati-3 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.2, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def karagoz_bolum_kartlari():
-    kartlar = [
-        ('1. Mukaddime', 'Giriş &amp; Perde Gazeli', MAVI, MAVI_A),
-        ('2. Muhavere', 'Karagöz-Hacivat Atışması', TUR, TUR_A),
-        ('3. Fasıl', 'Asıl Oyun &amp; Yan Tipler', YES, YES_A),
-        ('4. Bitiş', 'Kapanış &amp; Af Dileme', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (ad, oz, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 8, 82, 108, z, r)
-        ic += kutu(x + 8, 16, 66, 26, r, r, r=4)
-        ic += yazi(x + 41, 33, str(i + 1), 12.0, '#ffffff')
-        ic += yazi(x + 41, 62, ad, 8.4, r)
-        ic += f'<line x1="{x + 8}" y1="72" x2="{x + 74}" y2="72" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 41, 92, oz, 7.8, LAC, ince=True)
-    return svg(360, 125, ic, 'Karagöz oyunu dört temel bölüm kartı.', 34)
-
-
-def dil_catismasi_modeli():
-    ic = kutu(6, 6, 348, 112, TUR_A, TUR)
-    ic += yazi(180, 22, 'GÖLGE OYUNUNDA DİL ÇATIŞMASI VE MİZAH', 10.0, TUR)
-    ic += kutu(20, 36, 145, 70, '#ffffff', MAVI)
-    ic += yazi(92, 56, 'Hacivat (Yarı Aydın)', 9.2, MAVI)
-    ic += yazi(92, 76, 'Ağdalı Osmanlıca sözler', 8.4, LAC, ince=True)
-    ic += yazi(92, 92, 'Kitabi &amp; resmi üslup', 8.4, MAVI, ince=True)
-    ic += kutu(195, 36, 145, 70, '#ffffff', TUR)
-    ic += yazi(267, 56, 'Karagöz (Halk Adamı)', 9.2, TUR)
-    ic += yazi(267, 76, 'Sözleri yanlış anlama', 8.4, LAC, ince=True)
-    ic += yazi(267, 92, 'Halk nükte ve taşlaması', 8.4, TUR, ince=True)
-    return svg(360, 125, ic, 'Karagöz ve Hacivat dilsel çatışma şeması.', 34)
-
-
-def dilekce_yapi_kesiti():
-    ic = kutu(6, 6, 348, 112, MAVI_A, MAVI)
-    ic += yazi(180, 20, 'RESMÎ DİLEKÇE METNİNİN BİÇİMSEL YAPISI', 9.8, MAVI)
-    ic += kutu(16, 32, 328, 20, '#ffffff', MAVI, r=2)
-    ic += yazi(180, 46, 'KURUM ADI BAŞLIĞI (BÜYÜK HARFLERLE)', 8.8, MAVI)
-    ic += yazi(310, 46, 'Tarih', 8.0, LAC, ince=True)
-    ic += kutu(16, 56, 328, 30, '#ffffff', LAC, r=2)
-    ic += yazi(180, 70, 'Talep Metni (Açık, net ve saygılı üslup)', 8.4, LAC, ince=True)
-    ic += yazi(180, 82, 'Gereğini saygılarımla arz ederim.', 8.4, YESIL_K)
-    ic += yazi(50, 102, 'İletişim &amp; Adres', 8.0, LAC, ince=True)
-    ic += yazi(300, 102, 'İmza &amp; Ad Soyad', 8.0, LAC, ince=True)
-    return svg(360, 125, ic, 'Resmî dilekçe şablon yapısı.', 34)
-
-
-def mektup_turleri_kartlari():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 22, 'MEKTUP TÜRLERİ VE NİTELİKLERİ', 10.0, YESIL_K)
-    turler = [
-        ('1. Edebi Mektup', 'Sanat ve fikir tanıklığı', 16),
-        ('2. Resmî Mektup', 'Kurumlar arası yazışma', 102),
-        ('3. Özel Mektup', 'Samimi içten paylaşımlar', 188),
-        ('4. Açık Mektup', 'Topluma hitap eden yazı', 274),
-    ]
-    for b, a, x in turler:
-        ic += kutu(x, 36, 70, 70, '#ffffff', YESIL_K)
-        ic += yazi(x + 35, 54, b, 8.2, YESIL_K)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{YESIL_K}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, a, 7.6, LAC, ince=True)
-    return svg(360, 125, ic, 'Mektup türleri sınıflandırma kartı.', 34)
-
-
-def tipler_karsilastirma_tablosu():
-    ic = kutu(6, 6, 348, 112, MOR_A, MOR)
-    ic += yazi(180, 20, 'GELENEKSEL GÖLGE OYUNU TİPLERİ TABLOSU', 9.8, MOR)
-    satirlar = [
-        ('Tip Adı', 'Sosyal Konumu', 'Konuşma Dili', 'Temel Karakter Özelliği', MOR),
-        ('Karagöz', 'Sıradan Halk', 'Öz Türkçe / Argo', 'Açık sözlü, hazırcevap', TUR),
-        ('Hacivat', 'Yarı Aydın', 'Ağdalı Osmanlıca', 'Görgülü, kurnaz, arabulucu', MAVI),
-        ('Çelebi', 'Şehir Beyefendisi', 'Kibar İstanbul Ağzı', 'Züppe, mirasyedi genç', YESIL_K),
-    ]
-    for i, (k1, k2, k3, k4, r) in enumerate(satirlar):
-        y = 30 + i * 20
-        bg = '#ffffff' if i > 0 else MOR_A
-        ic += kutu(16, y, 328, 18, bg, r, r=2)
-        ic += yazi(50, y + 13, k1, 8.2, r)
-        ic += yazi(125, y + 13, k2, 8.0, LAC, ince=(i > 0))
-        ic += yazi(210, y + 13, k3, 7.8, LAC, ince=(i > 0))
-        ic += yazi(295, y + 13, k4, 7.8, LAC, ince=(i > 0))
-    return svg(360, 125, ic, 'Gölge oyunu tipleri karşılaştırma tablosu.', 34)
-
-
-def dilekce_yerlesim_plani():
-    ic = kutu(6, 6, 348, 112, CAM_A, CAM)
-    ic += yazi(180, 22, 'DİLEKÇEDE YERLEŞİM VE İMZA STANDARDI', 10.0, CAM)
-    ic += kutu(20, 36, 145, 70, '#ffffff', YES)
-    ic += yazi(92, 56, 'Sağ Köşeler', 9.2, YESIL_K)
-    ic += yazi(92, 76, '• Sağ Üst: Güncel Tarih', 8.4, LAC, ince=True)
-    ic += yazi(92, 92, '• Sağ Alt: Islak İmza &amp; Ad', 8.4, YESIL_K, ince=True)
-    ic += kutu(195, 36, 145, 70, '#ffffff', CAM)
-    ic += yazi(267, 56, 'Sol Alt Köşe', 9.2, CAM)
-    ic += yazi(267, 76, '• Açık İkametgâh Adresi', 8.4, LAC, ince=True)
-    ic += yazi(267, 92, '• İletişim Telefonu &amp; E-posta', 8.4, CAM, ince=True)
-    return svg(360, 125, ic, 'Dilekçe yerleşim planı şeması.', 34)
-
-
-def geleneksel_tiyatro_kartlari():
-    ic = kutu(6, 6, 348, 112, TUR_A, TUR)
-    ic += yazi(180, 22, 'GELENEKSEL TÜRK TİYATROSU BİLEŞENLERİ', 10.0, TUR)
-    kartlar = [
-        ('1. Karagöz', 'Gölge Oyunu &amp; Tasvir', 16),
-        ('2. Orta Oyunu', 'Meydan &amp; Canlı Oyuncu', 102),
-        ('3. Meddah', 'Tek Kişilik Anlatı', 188),
-        ('4. Köy Seyirliği', 'Kırsal Ritüel Oyunlar', 274),
-    ]
-    for b, a, x in kartlar:
-        ic += kutu(x, 36, 70, 70, '#ffffff', TUR)
-        ic += yazi(x + 35, 54, b, 8.2, TUR)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{TUR}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, a, 7.8, LAC, ince=True)
-    return svg(360, 125, ic, 'Geleneksel Türk tiyatrosu kolları kartı.', 34)
-
-
-def sahneleme_adimlari_kutulari():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 24, 'KARAGÖZ OYUNU SAHNELENME EVRELERİ', 10.0, YESIL_K)
-    kutular = ['Perde Gazeli', 'Muhavere', 'Fasıl Çatışması', 'Hatamız Affola']
-    for i, k in enumerate(kutular):
-        x = 16 + i * 85
-        ic += kutu(x, 42, 75, 52, '#ffffff', YESIL_K, r=4)
-        ic += yazi(x + 37, 66, f'Adım {i + 1}', 8.2, TUR)
-        ic += yazi(x + 37, 82, k, 8.2, YESIL_K)
-    return svg(360, 125, ic, 'Karagöz oyun evreleri kutuları.', 34)
+GORSELLER = {0: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Karagöz oyunu dört temel '
+    'bölüm kartı."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Mukaddime</text><text x="87.5" y="49.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Giriş &amp; Perde Gazeli</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">2. Muhavere</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Karagöz-Hacivat ·</text><text x="262.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Atışması</text><rect x="4" y="71" width="167" '
+    'height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Fasıl</text><text x="87.5" y="107.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Asıl Oyun &amp; Yan '
+    '·</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Tipler</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="98.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Bitiş</text><text x="262.5" y="117.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kapanış &amp; Af Dileme</text></svg>',
+ 1: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Karagöz ve Hacivat '
+    'dilsel çatışma şeması."><rect x="4" y="3" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">GÖLGE '
+    'OYUNUNDA DİL ÇATIŞMASI VE</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">MİZAH</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#fff1df" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Hacivat (Yarı Aydın)</text><text x="11.0" y="84.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ağdalı Osmanlıca sözler · Kitabi &amp; resmi üslup</text><rect x="4" '
+    'y="95" width="342" height="62" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="112.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Karagöz (Halk '
+    'Adamı)</text><text x="11.0" y="130.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sözleri yanlış anlama</text><text x="11.0" y="149.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#ee7d12">Halk nükte ve taşlaması</text></svg>',
+ 2: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Resmî dilekçe şablon '
+    'yapısı."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">KURUM ADI '
+    'BAŞLIĞI (BÜYÜK HARFLERLE)</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Tarih</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#e8eefe" stroke="#0b2257" '
+    'stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Talep Metni (Açık, net ve saygılı üslup)</text><text x="11.0" y="84.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Gereğini saygılarımla arz ederim.</text><rect '
+    'x="4" y="95" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="112.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">RESMÎ DİLEKÇE METNİNİN '
+    'BİÇİMSEL YAPISI</text><text x="11.0" y="130.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">İletişim &amp; Adres İmza &amp; Ad Soyad</text></svg>',
+ 3: '<svg viewBox="0 0 350 142" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mektup türleri '
+    'sınıflandırma kartı."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">MEKTUP '
+    'TÜRLERİ VE NİTELİKLERİ</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="48.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">1. Edebi Mektup: Sanat ve fikir tanıklığı</text><rect x="4" y="59" width="342" height="25" rx="5" '
+    'fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="76.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">2. Resmî Mektup: Kurumlar arası yazışma</text><rect x="4" y="87" width="342" '
+    'height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="104.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">3. Özel Mektup: Samimi içten '
+    'paylaşımlar</text><rect x="4" y="115" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text '
+    'x="11.0" y="132.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">4. '
+    'Açık Mektup: Topluma hitap eden yazı</text></svg>',
+ 5: '<svg viewBox="0 0 350 232" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gölge oyunu tipleri '
+    'karşılaştırma tablosu."><rect x="4" y="3" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">GELENEKSEL GÖLGE OYUNU TİPLERİ</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">TABLOSU</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">Tip Adı Sosyal Konumu Konuşma Dili</text><text x="11.0" y="84.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Temel Karakter '
+    'Özelliği</text><rect x="4" y="95" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="112.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#ee7d12">Karagöz Sıradan '
+    'Halk Öz Türkçe / Argo</text><text x="11.0" y="130.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Açık sözlü, hazırcevap</text><rect x="4" y="141" width="342" height="43" rx="5" fill="#f0e9fe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="158.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#2451d6">Hacivat Yarı Aydın Ağdalı Osmanlıca</text><text x="11.0" y="176.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Görgülü, kurnaz, '
+    'arabulucu</text><rect x="4" y="187" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#0f6b45" stroke-width="0.75"/><text '
+    'x="11.0" y="204.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0f6b45">Çelebi '
+    'Şehir Beyefendisi · Kibar İstanbul Ağzı</text><text x="11.0" y="222.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Züppe, mirasyedi genç</text></svg>',
+ 6: '<svg viewBox="0 0 350 160" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dilekçe yerleşim planı '
+    'şeması."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" '
+    'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">DİLEKÇEDE '
+    'YERLEŞİM VE İMZA STANDARDI</text><rect x="4" y="31" width="342" height="62" rx="5" fill="#e0f4f8" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="48.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">Sağ Köşeler</text><text x="11.0" y="66.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">• Sağ Üst: Güncel Tarih</text><text x="11.0" y="85.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0f6b45">• Sağ Alt: Islak İmza &amp; Ad</text><rect '
+    'x="4" y="96" width="342" height="62" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="113.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">Sol Alt Köşe</text><text '
+    'x="11.0" y="131.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">• Açık '
+    'İkametgâh Adresi</text><text x="11.0" y="150.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0e8fa8">• İletişim Telefonu &amp; E-posta</text></svg>',
+ 8: '<svg viewBox="0 0 350 142" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Geleneksel Türk '
+    'tiyatrosu kolları kartı."><rect x="4" y="3" width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#ee7d12">GELENEKSEL TÜRK TİYATROSU BİLEŞENLERİ</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="48.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">1. Karagöz: Gölge Oyunu &amp; Tasvir</text><rect x="4" y="59" width="342" '
+    'height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="76.3" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">2. Orta Oyunu: Meydan &amp; Canlı Oyuncu</text><rect x="4" '
+    'y="87" width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="104.3" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">3. Meddah: Tek Kişilik '
+    'Anlatı</text><rect x="4" y="115" width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="132.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">4. Köy '
+    'Seyirliği: Kırsal Ritüel Oyunlar</text></svg>',
+ 10: '<svg viewBox="0 0 350 142" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Karagöz oyun evreleri '
+     'kutuları."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+     'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">KARAGÖZ OYUNU '
+     'SAHNELENME EVRELERİ</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+     'stroke-width="0.75"/><text x="11.0" y="48.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#ee7d12">Adım 1 · Perde Gazeli</text><rect x="4" y="59" width="342" height="25" rx="5" fill="#e3f6ea" '
+     'stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="76.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#ee7d12">Adım 2 · Muhavere</text><rect x="4" y="87" width="342" height="25" rx="5" '
+     'fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="104.3" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Adım 3 · Fasıl Çatışması</text><rect x="4" y="115" width="342" '
+     'height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="132.3" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Adım 4 · Hatamız Affola</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = karagoz_bolum_kartlari()
-    s[0]['en_fazla'] = 34
-    s[1]['gorsel'] = dil_catismasi_modeli()
-    s[1]['en_fazla'] = 34
-    s[2]['gorsel'] = dilekce_yapi_kesiti()
-    s[2]['en_fazla'] = 34
-    s[3]['gorsel'] = mektup_turleri_kartlari()
-    s[3]['en_fazla'] = 34
-    s[5]['gorsel'] = tipler_karsilastirma_tablosu()
-    s[5]['en_fazla'] = 34
-    s[6]['gorsel'] = dilekce_yerlesim_plani()
-    s[6]['en_fazla'] = 34
-    s[8]['gorsel'] = geleneksel_tiyatro_kartlari()
-    s[8]['en_fazla'] = 34
-    s[10]['gorsel'] = sahneleme_adimlari_kutulari()
-    s[10]['en_fazla'] = 34
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

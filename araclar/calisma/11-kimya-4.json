@@ -10,7 +10,7 @@
   ],
   "hatirla": [
     "Kimyasal bir bağın kırılması daima endotermiktir (ısı alır, ΔH > 0); yeni bağların oluşması ise daima ekzotermiktir (ısı verir, ΔH < 0).",
-    "Gaz fazındaki tepkimelerin entalpi değişimi bağ enerjileriyle hesaplanır: ΔH = ΣE_kırılan (girenler) - ΣE_oluşan (ürünler).",
+    "Gaz fazındaki tepkimelerin entalpi değişimi bağ enerjileriyle hesaplanır: ΔH = ΣE{alt:kırılan} (girenler) - ΣE{alt:oluşan} (ürünler).",
     "Kırılan bağların toplam enerjisi oluşan bağların toplam enerjisinden büyükse tepkime endotermik; küçükse ekzotermiktir."
   ],
   "sorular": [
@@ -31,18 +31,15 @@
         [
           "Bağ Sağlamlığı",
           "Bağ enerjisi arttıkça atomlar arası bağın koparılmasının zorlaşması"
-        ],
-        [
-          "ΔH Bağıntısı",
-          "Kırılan toplam bağ enerjisi ile oluşan toplam bağ enerjisi farkı"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "H₂(g) + Cl₂(g) → 2HCl(g) tepkimesinde H-H: 436 kJ/mol, Cl-Cl: 242 kJ/mol ve H-Cl: 431 kJ/mol olduğuna göre tepkimenin entalpi değişimi (ΔH) kaç kJ'dür?",
+      "soru": "Görseldeki standart bağ enerjisi verilerine göre H{alt:2}(g) + Cl{alt:2}(g) → 2HCl(g) tepkimesinin entalpi değişimi (ΔH) kaç kJ'dür?",
       "secenekler": [
         "-184 kJ",
         "+184 kJ",
@@ -50,13 +47,14 @@
         "+370 kJ"
       ],
       "cevap": "A",
-      "dogru": 0
+      "dogru": 0,
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "analiz",
       "gorsel_var": true,
-      "soru": "Bir tepkimede kırılan bağların toplam enerjisi 1250 kJ, oluşan yeni bağların toplam enerjisi ise 1680 kJ olarak ölçülmüştür. Bu tepkime hakkında hangisi doğrudur?",
+      "soru": "Görseldeki deneysel bağ enerjisi toplamları verilen kimyasal tepkime hakkında aşağıdakilerden hangisi doğrudur?",
       "secenekler": [
         "Tepkime endotermiktir ve çevreden 430 kJ ısı soğurmuştur",
         "Tepkime boyunca hiçbir kimyasal bağ değişimi yaşanmamıştır",
@@ -64,7 +62,8 @@
         "Girenlerin toplam enerjisi ürünlerin toplam enerjisinden büyüktür"
       ],
       "cevap": "C",
-      "dogru": 2
+      "dogru": 2,
+      "en_fazla": 34
     },
     {
       "tur": "bosluk",
@@ -76,7 +75,8 @@
           "metin": "Gaz fazındaki bir mol kimyasal bağı standart şartlarda koparmak için gereken enerjiye standart ___ enerjisi denir.",
           "cevap": "bağ"
         }
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -98,28 +98,25 @@
       "soru": "Moleküllerdeki bağ sayılarını formülleriyle denk getiriniz.",
       "ciftler": [
         [
-          "Metan (CH₄)",
+          "Metan (CH{alt:4})",
           "4 tane özdeş C-H tekli kovalent bağı"
         ],
         [
-          "Su (H₂O)",
+          "Su (H{alt:2}O)",
           "2 tane özdeş O-H tekli kovalent bağı"
         ],
         [
-          "Azot Gazı (N₂)",
+          "Azot Gazı (N{alt:2})",
           "1 tane çok sağlam N≡N üçlü kovalent bağı"
-        ],
-        [
-          "Oksijen Gazı (O₂)",
-          "1 tane O=O ikili kovalent bağı"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "N₂ gazının çok kararlı bir element olmasının ve oda koşullarında tepkime vermeye karşı aşırı isteksiz (asal) davranmasının temel sebebi hangisidir?",
+      "soru": "N{alt:2} gazının çok kararlı bir element olmasının ve oda koşullarında tepkime vermeye karşı aşırı isteksiz (asal) davranmasının temel sebebi hangisidir?",
       "secenekler": [
         "Moleküldeki elektronların çekirdek etrafında dönmeyi bırakması",
         "Moleküldeki N atomlarının yalnızca zayıf van der Waals bağı yapması",
@@ -127,7 +124,8 @@
         "N atomları arasındaki N≡N üçlü bağının enerjisinin çok yüksek olması"
       ],
       "cevap": "D",
-      "dogru": 3
+      "dogru": 3,
+      "en_fazla": 34
     },
     {
       "tur": "bosluk",
@@ -152,12 +150,13 @@
         "Ürünlerdeki sıvıların kaynama noktalarının ölçülmesi mecburidir"
       ],
       "cevap": "A",
-      "dogru": 0
+      "dogru": 0,
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "degerlendir",
-      "soru": "CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(g) yanma tepkimesinin yüksek oranda ekzotermik çıkmasının tanecik düzeyindeki açıklaması nedir?",
+      "soru": "CH{alt:4}(g) + 2O{alt:2}(g) → CO{alt:2}(g) + 2H{alt:2}O(g) yanma tepkimesinin yüksek oranda ekzotermik çıkmasının tanecik düzeyindeki açıklaması nedir?",
       "secenekler": [
         "Metan molekülünün bağlarının oda sıcaklığında kendiliğinden kopması",
         "Ürünlerde oluşan C=O ve O-H bağlarının kırılan bağlardan çok daha sağlam olması",
@@ -177,13 +176,15 @@
           "metin": "Bağ enerjileriyle entalpi bulunurken formül: ΔH = ΣE(kırılan bağlar) - ΣE(___ bağlar) şeklindedir.",
           "cevap": "oluşan"
         }
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "acik",
       "duzey": "analiz",
       "soru": "Kimyasal bir bağın kırılmasının neden daima endotermik olduğunu tanecik düzeyinde açıklayınız.",
-      "cevap": "Çünkü birbirini çeken atom çekirdeklerini ayırmak için dışarıdan enerji verilmesi gerekir."
+      "cevap": "Çünkü birbirini çeken atom çekirdeklerini ayırmak için dışarıdan enerji verilmesi gerekir.",
+      "satir": 2
     }
   ]
 }

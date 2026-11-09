@@ -10,7 +10,7 @@
     "FİZ.11.1.3. İki boyutta sabit ivmeli hareket ile ilgili tümevarımsal akıl yürütebilme"
   ],
   "hatirla": [
-    "Hava sürtünmesinin ihmal edildiği ortamda serbest düşen cisim her saniye hızını yerçekimi ivmesi (g = 10 m/s²) kadar artırır.",
+    "Hava sürtünmesinin ihmal edildiği ortamda serbest düşen cisim her saniye hızını yerçekimi ivmesi (g = 10 m/s{us:|2}) kadar artırır.",
     "Yatay atış hareketi iki bağımsız hareketin bileşkesidir: Yatay doğrultuda sabit hızlı hareket, düşey doğrultuda serbest düşme hareketi.",
     "Eğik atışta maksimum menzile ulaşmak için fırlatma açısının 45° olması gerekir; tepe noktasında düşey hız sıfırdır."
   ],
@@ -32,18 +32,15 @@
         [
           "Eğik Atış",
           "Belli açıyla atılıp parabolik yörünge izleyen iki boyutlu hareket"
-        ],
-        [
-          "Düşey Atış",
-          "Aşağı veya yukarı yönde ilk hızla fırlatılan tek boyutlu hareket"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Sürtünmesiz bir ortamda serbest bırakılan bir cisim ilk t sürede h kadar yol almaktadır. Bu cisim hareketinin 3. saniyesi içinde (2t",
+      "soru": "Sürtünmesiz bir ortamda serbest bırakılan bir cisim ilk t sürede h kadar yol almaktadır. Bu cisim hareketinin 3. saniyesi içinde (2t - 3t aralığında) kaç h yol alır?",
       "secenekler": [
         "h",
         "3h",
@@ -51,7 +48,8 @@
         "9h"
       ],
       "cevap": "C",
-      "dogru": 0
+      "dogru": 2,
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -65,7 +63,8 @@
         "Düşey doğrultudaki ivmenin yatay hızı doğrudan desteklemesi nedeniyle"
       ],
       "cevap": "B",
-      "dogru": 0
+      "dogru": 1,
+      "en_fazla": 34
     },
     {
       "tur": "bosluk",
@@ -77,12 +76,13 @@
           "metin": "Eğik atış hareketinde cismin tepe noktasına ulaştığı anda düşey hızı sıfırdır ve cismin anlık hızı yalnızca ___ hız bileşenine eşittir.",
           "cevap": "yatay"
         }
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "analiz",
-      "soru": "Sürtünmesiz ortamda aynı yükseklikten aynı anda serbest bırakılan m ve 4m kütleli iki cismin yere çarpma süreleri ve yere çarpma",
+      "soru": "Sürtünmesiz ortamda aynı yükseklikten aynı anda serbest bırakılan m ve 4m kütleli iki cismin yere çarpma süreleri ve yere çarpma hızları için hangisi doğrudur?",
       "secenekler": [
         "4m kütleli cisim daha ağır olduğu için daha önce yere düşer",
         "Her iki cismin de düşme süreleri ve yere çarpma hızları birbirine eşittir",
@@ -90,7 +90,7 @@
         "Yerçekimi ivmesi kütleyle doğru orantılı olarak 4 kat artar"
       ],
       "cevap": "B",
-      "dogru": 0
+      "dogru": 1
     },
     {
       "tur": "eslestir",
@@ -109,18 +109,15 @@
         [
           "Tepe Noktası Düşey Hızı",
           "Eğik atışta daima sıfır olan anlık hız değeri"
-        ],
-        [
-          "Maksimum Menzil Açısı",
-          "Sürtünmesiz ortamda menzili en büyük yapan 45° açı"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "analiz",
       "gorsel_var": true,
-      "soru": "Görseldeki aynı V0 ilk hızıyla farklı açılarla fırlatılan cisimlerin menzil grafikleri verilmiştir. Birbirini 90°'ye tamamlayan",
+      "soru": "Görseldeki aynı V0 ilk hızıyla farklı açılarla fırlatılan cisimlerin menzil grafikleri verilmiştir. Birbirini 90°'ye tamamlayan açılarda (örneğin 30° ve 60°) hangi nicelik eşittir?",
       "secenekler": [
         "Çıkabildikleri maksimum yükseklikler (hmax)",
         "Havada kalma süreleri (tuçuş)",
@@ -128,7 +125,8 @@
         "Tepe noktasındaki anlık kinetik enerjileri"
       ],
       "cevap": "C",
-      "dogru": 0
+      "dogru": 2,
+      "en_fazla": 34
     },
     {
       "tur": "bosluk",
@@ -145,7 +143,7 @@
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "45 metre yükseklikten yatay 15 m/s hızla atılan cismin yere düşme süresi kaç saniyedir ve yere yatayda kaç metre uzakta çarpar? (g = 10 m/s² alınız.)",
+      "soru": "45 metre yükseklikten yatay 15 m/s hızla atılan cismin yere düşme süresi kaç saniyedir ve yere yatayda kaç metre uzakta çarpar? (g = 10 m/s{us:|2} alınız.)",
       "secenekler": [
         "2 saniye, 30 metre",
         "3 saniye, 45 metre",
@@ -153,7 +151,8 @@
         "5 saniye, 75 metre"
       ],
       "cevap": "B",
-      "dogru": 0
+      "dogru": 1,
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -178,13 +177,15 @@
           "metin": "Yatay atış hareketinde cismin konumunu belirlerken düşey eksendeki düşme ile yatay eksendeki ilerleme birbirinden ___ iki bağımsız harekettir.",
           "cevap": "bağımsız"
         }
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "acik",
       "duzey": "analiz",
       "soru": "Yatay atış hareketinde cismin yere düşme süresini hangi nicelik belirler?",
-      "cevap": "Yalnızca bırakıldığı düşey yükseklik ve yerçekimi ivmesi."
+      "cevap": "Yalnızca bırakıldığı düşey yükseklik (h) ve yerçekimi ivmesi (g) belirler.",
+      "satir": 2
     }
   ]
 }

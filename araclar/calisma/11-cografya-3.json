@@ -32,18 +32,15 @@
         [
           "Vektör Veri",
           "Mekânsal detayları nokta, çizgi ve alan olarak depolayan veri yapısı"
-        ],
-        [
-          "Raster Veri",
-          "Uydu görüntüleri ve yükseklik verilerini piksellerle gösteren yapı"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "kavrama",
       "gorsel_var": true,
-      "soru": "Bir belediyenin taşkın risk haritası hazırlarken nehir yatağını 'çizgi', yerleşim birimlerini 'poligon' ve su kuyularını 'nokta' olarak",
+      "soru": "Bir belediyenin taşkın risk haritası hazırlarken nehir yatağını 'çizgi', yerleşim birimlerini 'poligon' ve su kuyularını 'nokta' olarak tanımlaması hangi veri modelidir?",
       "secenekler": [
         "Piksel tabanlı raster veri modeli",
         "Geometrik detayları koordinatlarla saklayan vektör veri modeli",
@@ -51,13 +48,14 @@
         "Üç boyutlu animasyon modeli"
       ],
       "cevap": "B",
-      "dogru": 0
+      "dogru": 1,
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Taşkın riski taşıyan bir akarsu çevresinde 500 metrelik koruma kuşağı oluşturulup yapılaşmanın yasaklanması CBS'de hangi mekânsal",
+      "soru": "Taşkın riski taşıyan bir akarsu çevresinde 500 metrelik koruma kuşağı oluşturulup yapılaşmanın yasaklanması CBS'de hangi mekânsal analizdir?",
       "secenekler": [
         "En kısa yol ağ analizi",
         "Tampon bölge (buffer) analizi",
@@ -65,7 +63,8 @@
         "Jeotermal gradyent hesabı"
       ],
       "cevap": "B",
-      "dogru": 0
+      "dogru": 1,
+      "en_fazla": 34
     },
     {
       "tur": "bosluk",
@@ -77,7 +76,8 @@
           "metin": "CBS ortamında harita üzerindeki her bir grafik nesneye ait ad, nüfus, alan ve derinlik gibi bilgilerin tutulduğu tabloya ___ tablosu denir.",
           "cevap": "öznitelik"
         }
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -109,18 +109,15 @@
         [
           "Ulaşım Ağı Erişimi",
           "Ana arterlere ve kavşak noktalarına yakınlık belirleme"
-        ],
-        [
-          "Sulak Alan Koruması",
-          "İçme suyu havzası çevresinde yapılaşmayı sınırlandırma"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "degerlendir",
       "gorsel_var": true,
-      "soru": "Görseldeki çok kriterli çakıştırma (overlay) analizinde eğim, jeoloji, ulaşım ve mülkiyet katmanları üst üste bindirilmiştir. Bu analiz",
+      "soru": "Görseldeki çok kriterli çakıştırma (overlay) analizinde eğim, jeoloji, ulaşım ve mülkiyet katmanları üst üste bindirilmiştir. Bu analiz ne amaçla kullanılır?",
       "secenekler": [
         "Bölgenin yıllık ortalama sıcaklık değerini ölçmek",
         "Doğal afet riskini en aza indirecek en uygun yerleşim alanını belirlemek",
@@ -128,7 +125,8 @@
         "Maden rezervlerinin dünya borsa fiyatlarını tahmin etmek"
       ],
       "cevap": "B",
-      "dogru": 0
+      "dogru": 1,
+      "en_fazla": 34
     },
     {
       "tur": "bosluk",
@@ -145,7 +143,7 @@
       "tur": "coktan",
       "duzey": "analiz",
       "gorsel_var": true,
-      "soru": "Sayısal Yükseklik Modeli (DEM) verisi kullanılarak bir havzanın eğim, bakı ve akış yönü haritaları türetilmiştir. Bu haritalar hangi mekânsal",
+      "soru": "Sayısal Yükseklik Modeli (DEM) verisi kullanılarak bir havzanın eğim, bakı ve akış yönü haritaları türetilmiştir. Bu haritalar hangi mekânsal çalışmada kullanılır?",
       "secenekler": [
         "Taşkın ve erozyon riskli alanların önceden modellenmesinde",
         "Yeraltı madenlerinin kimyasal bileşiminin tespit edilmesinde",
@@ -153,12 +151,13 @@
         "Uluslararası deniz ticaret hukuku kurallarının belirlenmesinde"
       ],
       "cevap": "A",
-      "dogru": 0
+      "dogru": 0,
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "uygula",
-      "soru": "Büyükşehirlerde acil servis ambulanslarının ve itfaiye araçlarının olay yerine en hızlı şekilde ulaşabilmesi için web tabanlı CBS'de",
+      "soru": "Büyükşehirlerde acil servis ambulanslarının ve itfaiye araçlarının olay yerine en hızlı şekilde ulaşabilmesi için web tabanlı CBS'de hangi analiz uygulanır?",
       "secenekler": [
         "En kısa ve en hızlı rota belirleyen ağ (network) analizi",
         "Tek boyutlu spektral yansıma analizi",
@@ -178,13 +177,15 @@
           "metin": "Farklı coğrafi katmanların sayısal ortamda üst üste getirilerek ortak kesişim veya birleşimlerinin alınması işlemine ___ analizi denir.",
           "cevap": "çakıştırma"
         }
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "acik",
       "duzey": "analiz",
       "soru": "Tampon bölge (buffer) analizinin kentsel afet yönetimindeki temel işlevini yazınız.",
-      "cevap": "Tehlike kaynağı çevresinde etki alanını belirleyip."
+      "cevap": "Tehlike kaynağı çevresinde koruma kuşağı belirleyerek güvenli yerleşim planlaması sağlar.",
+      "satir": 2
     }
   ]
 }

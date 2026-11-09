@@ -1,168 +1,117 @@
-"""11. sınıf İngilizce 4. hafta (Preferences and Abilities) görselleri.
-SVG; insan figürü yok (K024); görsel içi yazı Noto Sans; max-height:34mm; çizgiler <=0.75pt."""
+"""11-ingilizce-4 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.2, renk=LAC, hiza="middle", ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def preference_structures_cards():
-    kartlar = [
-        ("1. Prefer", "V-ing + TO + V-ing", MAVI, MAVI_A),
-        ("2. Would Rather", "V1 + THAN + V1", TUR, TUR_A),
-        ("3. Would Prefer", "to V1 + RATHER THAN + V1", YES, YES_A),
-        ("4. Past Ability", "could vs was able to", MOR, MOR_A),
-    ]
-    ic = ""
-    for i, (ad, oz, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 8, 82, 108, z, r)
-        ic += kutu(x + 8, 16, 66, 26, r, r, r=4)
-        ic += yazi(x + 41, 33, str(i + 1), 12.0, "#ffffff")
-        ic += yazi(x + 41, 62, ad, 8.4, r)
-        ic += f'<line x1="{x + 8}" y1="72" x2="{x + 74}" y2="72" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 41, 92, oz, 7.6, LAC, ince=True)
-    return svg(360, 125, ic, "Grammatical preference structures cards.", 34)
-
-
-def would_rather_diagram():
-    ic = kutu(6, 6, 348, 112, TUR_A, TUR)
-    ic += yazi(180, 22, "WOULD RATHER: SPECIFIC CHOICE FORMULA", 10.0, TUR)
-    ic += kutu(20, 36, 145, 70, "#ffffff", TUR)
-    ic += yazi(92, 56, "Preferred Option", 9.2, TUR)
-    ic += yazi(92, 76, "Subject + would rather", 8.4, LAC, ince=True)
-    ic += yazi(92, 92, "+ Bare Verb 1 (cook)", 8.4, TUR, ince=True)
-    ic += kutu(195, 36, 145, 70, "#ffffff", YES)
-    ic += yazi(267, 56, "Alternative Option", 9.2, YESIL_K)
-    ic += yazi(267, 76, "+ THAN + Bare Verb 1", 8.4, LAC, ince=True)
-    ic += yazi(267, 92, "than eat cold fast food", 8.4, YES, ince=True)
-    return svg(360, 125, ic, "Would rather grammatical formula diagram.", 34)
-
-
-def past_ability_kesiti():
-    ic = kutu(6, 6, 348, 112, MAVI_A, MAVI)
-    ic += yazi(180, 22, "PAST ABILITY: COULD VS WAS / WERE ABLE TO", 10.0, MAVI)
-    ic += kutu(20, 36, 145, 70, "#ffffff", MAVI)
-    ic += yazi(92, 56, "COULD (General)", 9.2, MAVI)
-    ic += yazi(92, 76, "Past general ability", 8.4, LAC, ince=True)
-    ic += yazi(92, 92, "I could swim when I was 5", 8.2, MAVI, ince=True)
-    ic += kutu(195, 36, 145, 70, "#ffffff", YES)
-    ic += yazi(267, 56, "WAS ABLE TO (Specific)", 9.2, YESIL_K)
-    ic += yazi(267, 76, "Overcoming a challenge", 8.4, LAC, ince=True)
-    ic += yazi(267, 92, "We managed to escape fire", 8.2, YES, ince=True)
-    return svg(360, 125, ic, "Could vs was able to comparative diagram.", 34)
-
-
-def prefer_structure_flow():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 22, "PREFER PATTERNS: GENERAL ROUTINE PREFERENCES", 9.8, YESIL_K)
-    steps = [
-        ("Subject", "I / You / She", 16),
-        ("Verb: prefer", "habitual action", 102),
-        ("Gerund 1", "studying (V-ing)", 188),
-        ("Preposition: to", "to working (V-ing)", 274),
-    ]
-    for b, a, x in steps:
-        ic += kutu(x, 36, 70, 70, "#ffffff", YESIL_K)
-        ic += yazi(x + 35, 54, b, 8.2, YESIL_K)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{YESIL_K}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, a, 7.6, LAC, ince=True)
-    return svg(360, 125, ic, "Prefer sentence formation flowchart.", 34)
-
-
-def preference_matrix_table():
-    ic = kutu(6, 6, 348, 112, MOR_A, MOR)
-    ic += yazi(180, 20, "PREFERENCE STRUCTURES AND CONJUNCTIONS MATRIX", 9.8, MOR)
-    satirlar = [
-        ("Structure", "Verb Form", "Connector", "Context", MOR),
-        ("prefer", "Gerund (V-ing)", "TO", "General Routine", MAVI),
-        ("would rather", "Base Verb (V1)", "THAN", "Specific Moment", TUR),
-        ("would prefer", "Infinitive (to V1)", "RATHER THAN", "Specific Choice", YESIL_K),
-    ]
-    for i, (k1, k2, k3, k4, r) in enumerate(satirlar):
-        y = 30 + i * 20
-        bg = "#ffffff" if i > 0 else MOR_A
-        ic += kutu(16, y, 328, 18, bg, r, r=2)
-        ic += yazi(55, y + 13, k1, 8.0, r)
-        ic += yazi(130, y + 13, k2, 7.8, LAC, ince=(i > 0))
-        ic += yazi(210, y + 13, k3, 8.0, LAC, ince=(i > 0))
-        ic += yazi(295, y + 13, k4, 7.8, LAC, ince=(i > 0))
-    return svg(360, 125, ic, "Preference conjunctions matrix table.", 34)
-
-
-def ability_timeline_kesiti():
-    ic = kutu(6, 6, 348, 112, CAM_A, CAM)
-    ic += yazi(180, 22, "MODAL TIMELINE: ABILITY ACROSS TIME", 10.0, CAM)
-    ic += kutu(20, 36, 145, 70, "#ffffff", CAM)
-    ic += yazi(92, 56, "Present Ability", 9.2, CAM)
-    ic += yazi(92, 76, "can / am able to", 8.4, LAC, ince=True)
-    ic += yazi(92, 92, "I can speak German", 8.2, CAM, ince=True)
-    ic += kutu(195, 36, 145, 70, "#ffffff", TUR)
-    ic += yazi(267, 56, "Past Ability", 9.2, TUR)
-    ic += yazi(267, 76, "could (general)", 8.4, LAC, ince=True)
-    ic += yazi(267, 92, "was able to (specific)", 8.2, TUR, ince=True)
-    return svg(360, 125, ic, "Present vs past ability timeline diagram.", 34)
-
-
-def would_prefer_cards():
-    ic = kutu(6, 6, 348, 112, TUR_A, TUR)
-    ic += yazi(180, 22, "WOULD PREFER: CLAUSE COMPONENTS", 10.0, TUR)
-    kartlar = [
-        ("1. Subject", "We / They / He", 16),
-        ("2. Verb Form", "would prefer to V1", 102),
-        ("3. Connector", "rather than", 188),
-        ("4. Base Verb", "drive in traffic", 274),
-    ]
-    for b, a, x in kartlar:
-        ic += kutu(x, 36, 70, 70, "#ffffff", TUR)
-        ic += yazi(x + 35, 54, b, 8.2, TUR)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{TUR}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, a, 7.6, LAC, ince=True)
-    return svg(360, 125, ic, "Would prefer clause components cards.", 34)
-
-
-def grammar_rule_kutulari():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 24, "KEY GRAMMAR CHECKPOINTS", 10.0, YESIL_K)
-    kutular = ["prefer ... to", "would rather", "than ... V1", "was able to"]
-    for i, k in enumerate(kutular):
-        x = 16 + i * 85
-        ic += kutu(x, 42, 75, 52, "#ffffff", YESIL_K, r=4)
-        ic += yazi(x + 37, 66, f"Rule {i + 1}", 8.0, TUR)
-        ic += yazi(x + 37, 82, k, 8.0, YESIL_K)
-    return svg(360, 125, ic, "Grammar checkpoints overview boxes.", 34)
+GORSELLER = {0: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Grammatical preference '
+    'structures cards."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Prefer</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">V-ing + TO + V-ing</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">2. Would Rather</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">V1 + THAN + V1</text><rect x="4" y="52" width="167" height="64" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Would Prefer to</text><text x="87.5" y="88.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">V1 + RATHER THAN</text><text x="87.5" '
+    'y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">+ '
+    'V1</text><rect x="179" y="52" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="79.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Past Ability '
+    'could</text><text x="262.5" y="98.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">vs was able to</text></svg>',
+ 1: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Would rather grammatical '
+    'formula diagram."><rect x="4" y="3" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">WOULD '
+    'RATHER: SPECIFIC CHOICE</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">FORMULA</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Preferred Option</text><text x="11.0" y="84.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Subject + would rather + Bare Verb 1 (cook)</text><rect x="4" y="95" '
+    'width="342" height="43" rx="5" fill="#fff1df" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="112.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Alternative Option + THAN + Bare Verb '
+    '1</text><text x="11.0" y="130.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0f6b45">than eat cold fast food</text></svg>',
+ 2: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Could vs was able to '
+    'comparative diagram."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">PAST '
+    'ABILITY: COULD VS WAS / WERE ABLE</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">TO</text><rect x="4" y="49" width="342" height="62" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="66.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">COULD (General)</text><text x="11.0" y="84.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Past general ability</text><text x="11.0" '
+    'y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">I could swim '
+    'when I was 5</text><rect x="4" y="114" width="342" height="62" rx="5" fill="#e8eefe" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="131.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">WAS '
+    'ABLE TO (Specific)</text><text x="11.0" y="149.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Overcoming a challenge</text><text x="11.0" y="168.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#12a150">We managed to escape fire</text></svg>',
+ 3: '<svg viewBox="0 0 350 158" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Prefer sentence '
+    'formation flowchart."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">PREFER '
+    'PATTERNS: GENERAL ROUTINE</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">PREFERENCES</text><rect x="4" y="49" width="342" height="23" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="65.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#0f6b45">Subject:</tspan> I / You / She</text><rect x="4" y="75" '
+    'width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="92.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Verb: prefer habitual action</text><rect '
+    'x="4" y="103" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="120.3" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Gerund 1 studying '
+    '(V-ing)</text><rect x="4" y="131" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" '
+    'y="148.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Preposition: to '
+    'to working (V-ing)</text></svg>',
+ 5: '<svg viewBox="0 0 350 196" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Preference conjunctions '
+    'matrix table."><rect x="4" y="3" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">PREFERENCE '
+    'STRUCTURES AND</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">CONJUNCTIONS MATRIX</text><rect x="4" y="49" width="342" height="25" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="66.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">Structure Verb Form Connector Context</text><rect x="4" y="77" width="342" '
+    'height="25" rx="5" fill="#f0e9fe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="94.3" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">prefer Gerund (V-ing) TO · General Routine</text><rect x="4" '
+    'y="105" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="122.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#ee7d12">would rather Base Verb '
+    '(V1) THAN</text><text x="11.0" y="140.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Specific Moment</text><rect x="4" y="151" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="168.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0f6b45">would prefer Infinitive (to V1)</text><text x="11.0" y="186.5" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">RATHER THAN Specific Choice</text></svg>',
+ 6: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Present vs past ability '
+    'timeline diagram."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">MODAL '
+    'TIMELINE: ABILITY ACROSS TIME</text><rect x="4" y="31" width="342" height="43" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="48.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Present Ability can / am able to</text><text x="11.0" y="66.5" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0e8fa8">I can speak German</text><rect x="4" y="77" width="342" '
+    'height="43" rx="5" fill="#e0f4f8" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="94.1" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Past Ability could (general) was able to</text><text x="11.0" '
+    'y="112.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#ee7d12">(specific)</text></svg>',
+ 8: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Would prefer clause '
+    'components cards."><rect x="4" y="3" width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">WOULD '
+    'PREFER: CLAUSE COMPONENTS</text><rect x="4" y="31" width="342" height="23" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#ee7d12">1. Subject:</tspan> We / They / He</text><rect x="4" y="57" '
+    'width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="74.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. Verb Form would prefer to V1</text><rect '
+    'x="4" y="85" width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="102.3" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. Connector rather '
+    'than</text><rect x="4" y="113" width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="130.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">4. Base Verb '
+    'drive in traffic</text></svg>',
+ 10: '<svg viewBox="0 0 350 142" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Grammar checkpoints '
+     'overview boxes."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+     'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">KEY '
+     'GRAMMAR CHECKPOINTS</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+     'stroke-width="0.75"/><text x="11.0" y="48.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+     'font-weight="700" fill="#ee7d12">Rule 1 prefer ... to</text><rect x="4" y="59" width="342" height="25" rx="5" fill="#e3f6ea" '
+     'stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="76.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#ee7d12">Rule 2 would rather</text><rect x="4" y="87" width="342" height="25" rx="5" '
+     'fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="104.3" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Rule 3 than ... V1</text><rect x="4" y="115" width="342" height="25" '
+     'rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="132.3" text-anchor="start" font-family="Noto Sans, '
+     'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Rule 4 was able to</text></svg>'}
 
 
 def uygula(o):
-    s = o["sorular"]
-    s[0]["gorsel"] = preference_structures_cards()
-    s[0]["en_fazla"] = 34
-    s[1]["gorsel"] = would_rather_diagram()
-    s[1]["en_fazla"] = 34
-    s[2]["gorsel"] = past_ability_kesiti()
-    s[2]["en_fazla"] = 34
-    s[3]["gorsel"] = prefer_structure_flow()
-    s[3]["en_fazla"] = 34
-    s[5]["gorsel"] = preference_matrix_table()
-    s[5]["en_fazla"] = 34
-    s[6]["gorsel"] = ability_timeline_kesiti()
-    s[6]["en_fazla"] = 34
-    s[8]["gorsel"] = would_prefer_cards()
-    s[8]["en_fazla"] = 34
-    s[10]["gorsel"] = grammar_rule_kutulari()
-    s[10]["en_fazla"] = 34
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

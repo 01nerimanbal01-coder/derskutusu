@@ -10,8 +10,8 @@
   ],
   "hatirla": [
     "Bir maddenin yakıt olarak kullanılabilmesi için kolay tutuşabilmesi, yüksek ısıl değere sahip olması ve çevreye zehirli atık bırakmaması gerekir.",
-    "Hidrojen gazı (H2) birim kütle (gram) başına en yüksek yanma ısısına sahip temiz bir enerji taşıyıcısıdır; yanma ürünü yalnızca sudur.",
-    "Fosil yakıtların (kömür, petrol, doğal gaz) aşırı tüketimi atmosfere yüksek oranda CO2 salarak küresel ısınmaya ve sera etkisine yol açar."
+    "Hidrojen gazı (H{alt:2}) birim kütle (gram) başına en yüksek yanma ısısına sahip temiz bir enerji taşıyıcısıdır; yanma ürünü yalnızca sudur.",
+    "Fosil yakıtların (kömür, petrol, doğal gaz) aşırı tüketimi atmosfere yüksek oranda CO{alt:2} salarak küresel ısınmaya ve sera etkisine yol açar."
   ],
   "sorular": [
     {
@@ -21,42 +21,40 @@
       "soru": "Sol sütundaki yakıt türlerini sağ sütundaki temel kimyasal ve çevresel özellikleriyle eşleştiriniz.",
       "ciftler": [
         [
-          "Hidrojen Gazı (H2)",
+          "Hidrojen Gazı (H{alt:2})",
           "Gram başına en yüksek ısı veren ve yanınca sadece su oluşturan temiz yakıt"
         ],
         [
-          "Metan Gazı (CH4)",
+          "Metan Gazı (CH{alt:4})",
           "Doğal gazın ana bileşeni olan en temiz fosil hidrokarbon yakıtı"
         ],
         [
           "Kömür (Katı Yakıt)",
-          "Yandığında yüksek oranda kül, kükürt dioksit ve CO2 salan fosil yakıt"
-        ],
-        [
-          "Biyoetanol",
-          "Bitkisel şekerlerin fermantasyonuyla üretilen yenilenebilir sıvı yakıt"
+          "Yandığında yüksek oranda kül, kükürt dioksit ve CO{alt:2} salan fosil yakıt"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "analiz",
       "gorsel_var": true,
-      "soru": "Eşit kütledeki (1 gram) hidrojen (H2), metan (CH4) ve odun örnekleri tamamen yakıldığında açığa çıkan ısı miktarları kıyaslandığında hangisi",
+      "soru": "Görseldeki ısıl verim değerlerine göre 2 gram H{alt:2} gazının tamamen yanmasıyla açığa çıkan enerji, 4 gram doğal gazın (CH{alt:4}) yanmasıyla açığa çıkan enerjiden kaç kJ fazladır?",
       "secenekler": [
-        "142 kJ/g ile Hidrojen gazı",
-        "55 kJ/g ile Metan gazı",
-        "15 kJ/g ile Kuru odun",
-        "Hepsinin 1 gramının verdiği ısı birbirine eşittir"
+        "64 kJ",
+        "87 kJ",
+        "114 kJ",
+        "164 kJ"
       ],
       "cevap": "A",
-      "dogru": 0
+      "dogru": 0,
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "kavrama",
       "gorsel_var": true,
-      "soru": "Fosil yakıtların yanması sonucu bacalardan atmosfere salınan SO2 (kükürt dioksit) ve NO2 gazlarının sebep olduğu en önemli çevre sorunu hangisidir?",
+      "soru": "Fosil yakıtların yanması sonucu bacalardan atmosfere salınan SO{alt:2} (kükürt dioksit) ve NO{alt:2} gazlarının sebep olduğu en önemli çevre sorunu hangisidir?",
       "secenekler": [
         "Atmosferdeki ozon tabakasını yapay olarak kalınlaştırması",
         "Su buharıyla tepkimeye girerek asit yağmurlarına yol açması",
@@ -64,7 +62,8 @@
         "Topraktaki mineral dengesini kalıcı olarak zenginleştirmesi"
       ],
       "cevap": "B",
-      "dogru": 0
+      "dogru": 1,
+      "en_fazla": 34
     },
     {
       "tur": "bosluk",
@@ -76,7 +75,8 @@
           "metin": "1 gram yakıtın tamamen yanması sonucunda açığa çıkan enerji miktarına o yakıtın ___ değeri denir.",
           "cevap": "ısıl"
         }
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -98,22 +98,19 @@
       "soru": "Sol sütundaki yakıtları sağ sütundaki gram başına ısıl verim sırasıyla eşleştiriniz.",
       "ciftler": [
         [
-          "Hidrojen (H2)",
+          "Hidrojen (H{alt:2})",
           "En yüksek verim (~142 kJ/g)"
         ],
         [
-          "Doğal Gaz (CH4)",
+          "Doğal Gaz (CH{alt:4})",
           "Yüksek fosil verim (~55 kJ/g)"
         ],
         [
           "Benzin (Oktan)",
           "Orta sıvı verim (~44 kJ/g)"
-        ],
-        [
-          "Linyit Kömürü",
-          "Düşük katı verim (~18 kJ/g)"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -121,13 +118,14 @@
       "gorsel_var": true,
       "soru": "Görseldeki fotosentez ve biyoyakıt döngüsü incelendiğinde biyoetanolün karbon salınımı açısından 'karbon nötr' sayılmasının nedeni hangisidir?",
       "secenekler": [
-        "Yanarken açığa çıkardığı CO2 miktarının, bitki büyürken fotosentezle havadan bağladığı CO2'ye eşit olması",
+        "Yanarken açığa çıkardığı CO{alt:2} miktarının, bitki büyürken fotosentezle havadan bağladığı CO{alt:2}'ye eşit olması",
         "Yanma tepkimesinin endotermik olarak gerçekleşmesi",
         "Hiçbir zaman oksijen gazı tüketmemesi",
         "Sadece nükleer santrallerde atık olarak ortaya çıkması"
       ],
       "cevap": "A",
-      "dogru": 0
+      "dogru": 0,
+      "en_fazla": 34
     },
     {
       "tur": "bosluk",
@@ -135,7 +133,7 @@
       "soru": "Boş bırakılan yere uygun kavramı yazınız.",
       "cumleler": [
         {
-          "metin": "Fosil yakıtların başında gelen doğal gazın yaklaşık yüzde doksanını oluşturan hidrokarbon bileşiği ___ (CH4) gazıdır.",
+          "metin": "Fosil yakıtların başında gelen doğal gazın yaklaşık yüzde doksanını oluşturan hidrokarbon bileşiği ___ (CH{alt:4}) gazıdır.",
           "cevap": "metan"
         }
       ]
@@ -146,13 +144,14 @@
       "gorsel_var": true,
       "soru": "Bir yakıtın iyi bir enerji kaynağı sayılabilmesi için yanma entalpisinin (ΔH) işareti ve büyüklüğü nasıl olmalıdır?",
       "secenekler": [
-        "Pozitif (ΔH &gt; 0) ve çok küçük olmalıdır",
-        "Negatif (ΔH &lt; 0) ve mutlak değerce çok büyük olmalıdır",
+        "Pozitif (ΔH > 0) ve çok küçük olmalıdır",
+        "Negatif (ΔH < 0) ve mutlak değerce çok büyük olmalıdır",
         "Daima sıfıra eşit (ΔH = 0) olmalıdır",
         "Sıcaklık arttıkça hızla pozitife dönmelidir"
       ],
       "cevap": "B",
-      "dogru": 0
+      "dogru": 1,
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -177,13 +176,15 @@
           "metin": "Fosil yakıtların yanması sonucu atmosfere salınan ve küresel sıcaklık artışına yol açan en yaygın sera gazı ___ gazıdır.",
           "cevap": "karbondioksit"
         }
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "acik",
       "duzey": "analiz",
       "soru": "Hidrojen gazının ideal bir temiz enerji kaynağı kabul edilme nedenini yazınız.",
-      "cevap": "Yanma tepkimesi sonucunda yalnızca su buharı üretip."
+      "cevap": "Yanma tepkimesi sonucunda yalnızca su buharı üretip karbon salınımı yapmamasıdır.",
+      "satir": 2
     }
   ]
 }
