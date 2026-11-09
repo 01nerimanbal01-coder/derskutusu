@@ -2,7 +2,7 @@
 
 Her gönderi için: görseli indirin, Meta Business Suite'te Facebook sayfası + Instagram seçip görseli ekleyin, metni yapıştırın, paylaşın; aynı görseli hikâye olarak da paylaşın. Paylaşınca bu oturuma "paylaştım" yazın, kuyruk güncellenir.
 
-Toplam 491 gönderi (Instagram: 13 bekleyen — 2153/2166 yayında; Facebook: 491 bekleyen).
+Toplam 491 gönderi (Instagram: 0 bekleyen — 2166/2166 yayında; Facebook: 491 bekleyen).
 
 ## bilgi-9-peygamberimizin-hayati-7
 Sıra: 2026-12-13 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/bilgi-9-peygamberimizin-hayati-7.png
@@ -5119,7 +5119,7 @@ Din Kültürü ve Ahlak Bilgisi öğretmeni arkadaşlarınızı etiketleyin.
 ```
 
 ## seri-cikti-m-8-1-3-4
-Sıra: 2027-04-03 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-4-1.png
+Sıra: 2027-04-03 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-4-1.png
 
 ```
 Kareköklü İfadeler konusunda öğrencileriniz nerede? 📝
@@ -5134,7 +5134,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-m-8-1-3-5
-Sıra: 2027-04-03 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-5-1.png
+Sıra: 2027-04-03 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-5-1.png
 
 ```
 8. sınıf Matematik · M.8.1.3.5 yazılısı hazır 📝
@@ -5149,7 +5149,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-m-8-1-3-6
-Sıra: 2027-04-03 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-6-1.png
+Sıra: 2027-04-03 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-6-1.png
 
 ```
 Kareköklü İfadeler konusunda öğrencileriniz nerede? 📝
@@ -5164,7 +5164,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-m-8-1-3-7
-Sıra: 2027-04-03 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-7-1.png
+Sıra: 2027-04-03 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-7-1.png
 
 ```
 Kareköklü İfadeler konusunda öğrencileriniz nerede? 📝
@@ -5179,7 +5179,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-m-8-1-3-8
-Sıra: 2027-04-04 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-8-1.png
+Sıra: 2027-04-04 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-1-3-8-1.png
 
 ```
 Kareköklü İfadeler konusunda öğrencileriniz nerede? 📝
@@ -5194,7 +5194,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-m-8-4-1-1
-Sıra: 2027-04-04 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-4-1-1-1.png
+Sıra: 2027-04-04 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-4-1-1-1.png
 
 ```
 Veri Analizi konusunda öğrencileriniz nerede? 📝
@@ -5209,7 +5209,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-m-8-4-1-2
-Sıra: 2027-04-04 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-4-1-2-1.png
+Sıra: 2027-04-04 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-4-1-2-1.png
 
 ```
 8. sınıf Matematik · M.8.4.1.2 yazılısı hazır 📝
@@ -5224,7 +5224,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-m-8-5-1-1
-Sıra: 2027-04-04 15:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-1-1.png
+Sıra: 2027-04-04 15:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-1-1.png
 
 ```
 Basit Olayların Olma Olasılığı: tek öğrenme çıktısı, tek yazılı 📝
@@ -5239,7 +5239,7 @@ Matematik öğretmeni arkadaşlarınızı etiketleyin.
 ```
 
 ## seri-cikti-m-8-5-1-2
-Sıra: 2027-04-04 17:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-2-1.png
+Sıra: 2027-04-04 17:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-2-1.png
 
 ```
 8. sınıf Matematik · M.8.5.1.2 yazılısı hazır 📝
@@ -5254,7 +5254,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-m-8-5-1-3
-Sıra: 2027-04-04 19:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-3-1.png
+Sıra: 2027-04-04 19:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-3-1.png
 
 ```
 Basit Olayların Olma Olasılığı konusunda öğrencileriniz nerede? 📝
@@ -5269,7 +5269,7 @@ Zümrenizle paylaşın; kâğıtlar herkese açık.
 ```
 
 ## seri-cikti-m-8-5-1-4
-Sıra: 2027-04-05 09:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-4-1.png
+Sıra: 2027-04-05 09:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-4-1.png
 
 ```
 Basit Olayların Olma Olasılığı: tek öğrenme çıktısı, tek yazılı 📝
@@ -5284,7 +5284,7 @@ Matematik öğretmeni arkadaşlarınızı etiketleyin.
 ```
 
 ## seri-cikti-m-8-5-1-5
-Sıra: 2027-04-05 11:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-5-1.png
+Sıra: 2027-04-05 11:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-5-1-5-1.png
 
 ```
 8. sınıf Matematik · M.8.5.1.5 yazılısı hazır 📝
@@ -5299,7 +5299,7 @@ Kaydedin, ünite sonunda lazım olacak. 📌
 ```
 
 ## seri-cikti-m-8-2-1-1
-Sıra: 2027-04-05 13:00 · Bekleyen: instagram, facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-2-1-1-1.png
+Sıra: 2027-04-05 13:00 · Bekleyen: facebook · Görsel: https://derskutusu.com/sosyal/seri-cikti-m-8-2-1-1-1.png
 
 ```
 Cebirsel İfadeler ve Özdeşlikler konusunda öğrencileriniz nerede? 📝
