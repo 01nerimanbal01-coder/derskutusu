@@ -1,87 +1,101 @@
-"""9. sınıf Kimya 2. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-kimya-2 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Güvenlik piktogramları '
+    'uyarı kartları"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Yanıcı '
+    'Madde</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Alev sembolü</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Toksik / Zehirli</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kafatası simgesi</text><rect x="4" y="52" width="167" height="45" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Aşındırıcı</text><text x="87.5" y="88.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Korozif asit</text><rect x="179" y="52" '
+    'width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Patlayıcı Madde</text><text x="262.5" '
+    'y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Şarapnel '
+    'dağılımı</text></svg>',
+ 1: '<svg viewBox="0 0 350 120" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Asit çözeltisi hazırlama '
+    'güvenlik kuralı"><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">GÜVENLİK KURALI: '
+    'ASİT ÇÖZELTİSİ</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">HAZIRLAMA</text><rect x="4" y="49" width="342" height="23" rx="5" fill="#fde8e7" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="65.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#d63a3a">Hatalı / Tehlikeli:</tspan> Asidin üzerine su '
+    'dökmek</text><rect x="4" y="75" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="92.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Doğru '
+    'Yöntem:</text><text x="11.0" y="110.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Suya asit damla damla eklenir</text></svg>',
+ 2: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Egzotermik tepkime '
+    'sıçrama uyarısı kartı"><rect x="4" y="3" width="342" height="117" rx="5" fill="#eef1f6" stroke="#9aa6bd" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#ee7d12">EGZOTERMİK ISI ÇIKIŞI VE SIÇRAMA</text><text x="11.0" y="38.7" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">TEHLİKESİ</text><text x="11.0" y="57.1" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Derişik asit ile su tepkimesi ani ve yoğun ısı</text><text '
+    'x="11.0" y="75.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">açığa '
+    'çıkarır.</text><text x="11.0" y="93.9" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">Doğrudan su eklendiğinde buharlaşan su</text><text x="11.0" y="112.3" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">asidi çevreye sıçratır.</text></svg>',
+ 3: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Laboratuvar temel '
+    'güvenlik tedbirleri"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Koruyucu Önlük</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kıyafet ve ten</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">koruma</text><rect x="179" y="3" width="167" '
+    'height="64" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Çeker Ocak</text><text x="262.5" y="49.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Zehirli gaz '
+    'tahliyesi</text><rect x="4" y="71" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Güvenlik '
+    'Gözlüğü</text><text x="87.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Göz teması engeli</text><rect x="179" y="71" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Atık Şişesi</text><text x="262.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Lavaboya dökülmez</text></svg>',
+ 5: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kimya deneyi güvenlik '
+    'basamakları akış şeması"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Deney</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Çeker ocakta ölçüm</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Hazırlık</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Önlük ve gözlük</text><rect x="4" y="52" width="167" '
+    'height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Atık</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Etiketli '
+    'şişeye</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">İnceleme</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Piktogram kontrolü</text></svg>',
+ 6: '<svg viewBox="0 0 350 85" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Çevreye zararlı madde '
+    'uyarısı panosu"><rect x="4" y="3" width="342" height="80" rx="5" fill="#eaf7fa" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" '
+    'y="20.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Kurumuş Ağaç ve '
+    'Ters Dönmüş Balık</text><text x="11.0" y="38.6" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">Simgesi</text><text x="11.0" y="57.0" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Sucul ve karasal ekosisteme kalıcı toksik etki</text><text x="11.0" y="75.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">yapar, lavaboya '
+    'dökülmez.</text></svg>',
+ 8: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Laboratuvar destek ve '
+    'karıştırma araçları"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Baget</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Cam karıştırma</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">çubuğu</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Sacayak</text><text x="262.5" y="49.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Isıtma destek ayağı</text><rect x="4" y="71" '
+    'width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">İspirto Ocağı</text><text x="87.5" y="107.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Laboratuvar '
+    'ısı</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">kaynağı</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="98.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Piset</text><text x="262.5" y="117.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Saf su yıkama kabı</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def g0():
-    ic = kutu(4, 4, 352, 92, GRI_A, GRI)
-    piktolar = [('Yanıcı Madde', 'Alev sembolü', KIR, KIR_A), ('Toksik / Zehirli', 'Kafatası simgesi', MOR, MOR_A), ('Aşındırıcı', 'Korozif asit', TUR, TUR_A), ('Patlayıcı Madde', 'Şarapnel dağılımı', YES, YES_A)]
-    for i, (b, alt, c, d) in enumerate(piktolar):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 80, d, c) + yazi(x + 40, 30, b, 9.5, c) + f'<line x1="{x+8}" y1="40" x2="{x+72}" y2="40" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, alt, 8.5, LAC, ince=True)
-    return svg(360, 100, ic, 'Güvenlik piktogramları uyarı kartları', 34)
-
-def g1():
-    ic = kutu(4, 4, 352, 92, MAVI_A, MAVI) + yazi(180, 22, 'GÜVENLİK KURALI: ASİT ÇÖZELTİSİ HAZIRLAMA', 11, MAVI)
-    ic += kutu(20, 32, 150, 56, '#fde8e7', KIR) + yazi(95, 48, 'Hatalı / Tehlikeli:', 10, KIR) + yazi(95, 68, 'Asidin üzerine su dökmek', 9, LAC, ince=True)
-    ic += kutu(190, 32, 150, 56, YES_A, YES) + yazi(265, 48, 'Doğru Yöntem:', 10, YES) + yazi(265, 68, 'Suya asit damla damla eklenir', 9, LAC, ince=True)
-    return svg(360, 100, ic, 'Asit çözeltisi hazırlama güvenlik kuralı', 34)
-
-def g2():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI) + kutu(10, 10, 340, 74, TUR_A, TUR, 8)
-    ic += yazi(180, 28, 'EGZOTERMİK ISI ÇIKIŞI VE SIÇRAMA TEHLİKESİ', 11, TUR)
-    ic += yazi(180, 48, 'Derişik asit ile su tepkimesi ani ve yoğun ısı açığa çıkarır.', 10.5, LAC)
-    ic += yazi(180, 68, 'Doğrudan su eklendiğinde buharlaşan su asidi çevreye sıçratır.', 9.5, SOLUK, ince=True)
-    return svg(360, 96, ic, 'Egzotermik tepkime sıçrama uyarısı kartı', 34)
-
-def g3():
-    ic = kutu(4, 4, 352, 90, GRI_A, GRI)
-    kurallar = [('Koruyucu Önlük', 'Kıyafet ve ten koruma', MAVI, MAVI_A), ('Çeker Ocak', 'Zehirli gaz tahliyesi', TUR, TUR_A), ('Güvenlik Gözlüğü', 'Göz teması engeli', YES, YES_A), ('Atık Şişesi', 'Lavaboya dökülmez', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(kurallar):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 78, d, c) + yazi(x + 40, 30, b, 9.5, c) + f'<line x1="{x+8}" y1="42" x2="{x+72}" y2="42" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, alt, 8.5, LAC, ince=True)
-    return svg(360, 98, ic, 'Laboratuvar temel güvenlik tedbirleri', 34)
-
-def g5():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI)
-    adimlari = [('1. Hazırlık', 'Önlük ve gözlük', YES, YES_A), ('2. İnceleme', 'Piktogram kontrolü', MAVI, MAVI_A), ('3. Deney', 'Çeker ocakta ölçüm', TUR, TUR_A), ('4. Atık', 'Etiketli şişeye', MOR, MOR_A)]
-    for i, (bas, alt, c, d) in enumerate(adimlari):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 76, d, c) + yazi(x + 40, 30, bas, 10, c) + yazi(x + 40, 55, alt, 9, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},48 {x+85},44 {x+85},52" fill="{GRI}"/>'
-    return svg(360, 96, ic, 'Kimya deneyi güvenlik basamakları akış şeması', 34)
-
-def g6():
-    ic = kutu(4, 4, 352, 88, CAM_A, CAM) + yazi(180, 24, 'ÇEVREYE ZARARLI MADDE PİKTOGRAMI', 11, CAM)
-    ic += kutu(20, 36, 320, 44, '#eaf7fa', CAM) + yazi(180, 52, 'Kurumuş Ağaç ve Ters Dönmüş Balık Simgesi', 11, LAC) + yazi(180, 70, 'Sucul ve karasal ekosisteme kalıcı toksik etki yapar, lavaboya dökülmez.', 9, SOLUK, ince=True)
-    return svg(360, 96, ic, 'Çevreye zararlı madde uyarısı panosu', 34)
-
-def g8():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI)
-    araclar = [('Baget', 'Cam karıştırma çubuğu', MAVI, MAVI_A), ('Sacayak', 'Isıtma destek ayağı', TUR, TUR_A), ('İspirto Ocağı', 'Laboratuvar ısı kaynağı', YES, YES_A), ('Piset', 'Saf su yıkama kabı', MOR, MOR_A)]
-    for i, (b, tr, c, d) in enumerate(araclar):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 76, d, c) + yazi(x + 40, 32, b, 10, c) + f'<line x1="{x+8}" y1="42" x2="{x+72}" y2="42" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 62, tr, 8.5, LAC, ince=True)
-    return svg(360, 96, ic, 'Laboratuvar destek ve karıştırma araçları', 34)
-
-def g10():
-    ic = kutu(4, 4, 352, 88, YES_A, YES) + yazi(180, 22, 'ANAHTAR KAVRAM: D - E - N - E - Y', 11.5, YES)
-    harfler = [('1', 'D'), ('2', 'E'), ('3', 'N'), ('4', 'E'), ('5', 'Y')]
-    for i, (no, h) in enumerate(harfler):
-        x = 45 + i * 55
-        ic += kutu(x, 32, 45, 48, '#eaf8f0', YES) + yazi(x + 22.5, 46, no, 9.5, SOLUK, ince=True) + yazi(x + 22.5, 68, h, 16, LAC)
-    return svg(360, 96, ic, 'Deney şifresi harf kutuları', 34)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[8]['gorsel'] = g8()
-    s[10]['gorsel'] = g10()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

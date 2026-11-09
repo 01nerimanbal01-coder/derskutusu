@@ -1,168 +1,79 @@
-"""9. sınıf Fizik 1. hafta (fizik bilimi) çalışma kâğıdı görselleri (SVG; insan figürü yok; renkler açık hex)."""
-import math
+"""9-fizik-1 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK, KAHVE, ALTIN = '#9aa6bd', '#eef1f6', '#5b6479', '#8a5a2b', '#f2b705'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
-
-
-def svg(w, h, ic, etiket, en_fazla=None):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=12, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=8, kalin=1.4, ek=''):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"{ek}/>'
-
-
-def rozet(x, y, h, renk, r=9):
-    return f'<circle cx="{x}" cy="{y}" r="{r}" fill="{renk}"/>' + yazi(x, y + 4, h, 11, '#fff')
-
-
-def ok(x1, y1, x2, y2, renk=GRI, kalin=1.8):
-    a = math.atan2(y2 - y1, x2 - x1)
-    u = f'{x2:.1f},{y2:.1f} {x2 - 7 * math.cos(a - 0.45):.1f},{y2 - 7 * math.sin(a - 0.45):.1f} {x2 - 7 * math.cos(a + 0.45):.1f},{y2 - 7 * math.sin(a + 0.45):.1f}'
-    return f'<line x1="{x1}" y1="{y1}" x2="{x2 - 5 * math.cos(a):.1f}" y2="{y2 - 5 * math.sin(a):.1f}" stroke="{renk}" stroke-width="{kalin}"/><polygon points="{u}" fill="{renk}"/>'
-
-
-def yildiz(x, y, r, renk=ALTIN):
-    p = ' '.join(f'{x + (r if k % 2 == 0 else r * 0.45) * math.cos(-math.pi / 2 + k * math.pi / 5):.1f},{y + (r if k % 2 == 0 else r * 0.45) * math.sin(-math.pi / 2 + k * math.pi / 5):.1f}' for k in range(10))
-    return f'<polygon points="{p}" fill="{renk}"/>'
-
-
-SU, GOK = '#5aa9e6', '#dff1fd'
-
-
-def olaylar():
-    ic = ''
-    for i in range(4):
-        x0 = 4 + i * 89
-        ic += kutu(x0, 4, 84, 80, GOK if i != 3 else '#fff', GRI, 8, 1.2) + rozet(x0 + 13, 17, str(i + 1), LAC)
-    # 1 gökkuşağı
-    cx, cy = 46, 70
-    for k, c in enumerate([KIR, TUR, ALTIN, YES, MAVI, MOR]):
-        r = 34 - k * 3.2
-        ic += f'<path d="M{cx - r:.1f} {cy} a{r:.1f} {r:.1f} 0 0 1 {2 * r:.1f} 0" fill="none" stroke="{c}" stroke-width="3"/>'
-    ic += f'<ellipse cx="22" cy="70" rx="12" ry="6" fill="#fff"/><ellipse cx="70" cy="70" rx="12" ry="6" fill="#fff"/>'
-    # 2 rampa + kaykay
-    x = 93
-    ic += f'<path d="M{x + 6} 76 H{x + 60} V40 Q{x + 56} 72 {x + 6} 72 Z" fill="{SOLUK}"/>'
-    ic += f'<path d="M{x + 60} 38 Q{x + 66} 14 {x + 78} 30" fill="none" stroke="{TUR}" stroke-width="1.4" stroke-dasharray="3 3"/>'
-    ic += f'<g transform="rotate(-38 {x + 66} 24)"><rect x="{x + 56}" y="22" width="20" height="3" rx="1.5" fill="{KIR}"/><circle cx="{x + 60}" cy="27" r="1.8" fill="{LAC}"/><circle cx="{x + 72}" cy="27" r="1.8" fill="{LAC}"/></g>'
-    # 3 dev dalga
-    x = 182
-    ic += f'<path d="M{x + 4} 78 V58 Q{x + 22} 50 {x + 34} 30 Q{x + 48} 8 {x + 70} 26 Q{x + 56} 24 {x + 56} 40 Q{x + 58} 56 {x + 80} 58 V78 Z" fill="{SU}"/>'
-    ic += f'<path d="M{x + 60} 22 q6 -2 10 4" fill="none" stroke="#fff" stroke-width="2"/><rect x="{x + 66}" y="50" width="8" height="8" fill="{KAHVE}"/><path d="M{x + 64} 50 l6 -6 l6 6 Z" fill="{KIR}"/>'
-    # 4 pota ve top
-    x = 271
-    ic += f'<rect x="{x + 64}" y="18" width="4" height="60" fill="{SOLUK}"/><rect x="{x + 54}" y="18" width="12" height="18" fill="#fff" stroke="{SOLUK}" stroke-width="1.2"/><ellipse cx="{x + 48}" cy="36" rx="8" ry="2.4" fill="none" stroke="{KIR}" stroke-width="1.8"/>'
-    ic += f'<path d="M{x + 14} 64 Q{x + 26} 8 {x + 46} 30" fill="none" stroke="{TUR}" stroke-width="1.4" stroke-dasharray="3 3"/><circle cx="{x + 14}" cy="66" r="6" fill="{TUR}" stroke="{KAHVE}" stroke-width="1"/>'
-    return svg(360, 88, ic, 'Olaylar: 1 gökkuşağının oluşması, 2 kaykayın rampadan kayıp havada süzülmesi, 3 tsunaminin yayılması, 4 basketbol topunun potaya atılması', 22)
-
-
-def disiplin_tablosu():
-    sat = [('Güneş’in hareketleri', 'fizik, astronomi, coğrafya'), ('İklim olayları', 'fizik, coğrafya'), ('Su döngüsü', 'fizik, kimya, biyoloji, coğrafya'), ('Fotosentez', 'fizik, kimya, biyoloji')]
-    ic = kutu(4, 4, 352, 100, '#fff', MAVI, 6, 1.3) + f'<rect x="4" y="4" width="352" height="20" rx="6" fill="{MAVI_A}"/>'
-    ic += yazi(12, 18, 'Olay', 11.5, LAC, 'start') + yazi(140, 18, 'İnceleyen disiplinler', 11.5, LAC, 'start')
-    ic += f'<line x1="132" y1="4" x2="132" y2="104" stroke="{MAVI}" stroke-width="0.8"/>'
-    for k, (a, b) in enumerate(sat):
-        y = 24 + k * 20
-        ic += f'<line x1="4" y1="{y}" x2="356" y2="{y}" stroke="{MAVI}" stroke-width="0.8"/>' + yazi(12, y + 14, a, 11, LAC, 'start', True) + yazi(140, y + 14, b, 11, LAC, 'start', True)
-    return svg(360, 108, ic, 'Tablo. Güneş’in hareketleri: fizik, astronomi, coğrafya. İklim olayları: fizik, coğrafya. Su döngüsü: fizik, kimya, biyoloji, coğrafya. Fotosentez: fizik, kimya, biyoloji.', 31)
-
-
-def calgi():
-    ic = f'<ellipse cx="84" cy="44" rx="56" ry="34" fill="#e6b877" stroke="{KAHVE}" stroke-width="1.6"/><circle cx="96" cy="44" r="12" fill="{KAHVE}"/>'
-    ic += f'<rect x="130" y="36" width="160" height="16" fill="{KAHVE}"/><path d="M290 32 H330 a6 6 0 0 1 6 6 V50 a6 6 0 0 1 -6 6 H290 Z" fill="#6b4420"/>'
-    ic += ''.join(f'<line x1="56" y1="{39 + k * 3.4:.1f}" x2="326" y2="{39 + k * 3.4:.1f}" stroke="#f7f3e8" stroke-width="0.9"/>' for k in range(4))
-    ic += f'<rect x="52" y="36" width="5" height="16" fill="{LAC}"/>'
-    ic += ''.join(f'<rect x="{300 + k * 14}" y="22" width="5" height="10" rx="2" fill="{GRI}" stroke="{SOLUK}" stroke-width="0.8"/><rect x="{300 + k * 14}" y="56" width="5" height="10" rx="2" fill="{GRI}" stroke="{SOLUK}" stroke-width="0.8"/>' for k in range(2))
-    ic += f'<line x1="200" y1="16" x2="200" y2="38" stroke="{LAC}" stroke-width="1"/>' + rozet(200, 12, '1', LAC)
-    ic += f'<line x1="330" y1="76" x2="317" y2="66" stroke="{LAC}" stroke-width="1"/>' + rozet(336, 80, '2', LAC)
-    return svg(360, 92, ic, 'Telli çalgı: 1 numara tel, 2 numara akort vidası', 20)
-
-
-def is_semasi():
-    ad = [['Kandil', 'isi'], ['Hava', 'kanalları'], ['İs', 'odası'], None]
-    ic = ''
-    for i, a in enumerate(ad):
-        x = 6 + i * 90
-        bos = a is None
-        ic += kutu(x, 6, 76, 40, '#fff' if bos else TUR_A, TUR, 8, 1.4, ' stroke-dasharray="4 3"' if bos else '')
-        ic += yazi(x + 38, 32, '?', 15, TUR) if bos else ''.join(yazi(x + 38, 23 + k * 13, s, 11, LAC) for k, s in enumerate(a))
-        if i < 3:
-            ic += ok(x + 77, 26, x + 89, 26)
-    return svg(360, 52, ic, 'Şema: kandil isi, hava kanalları, is odası, soru işareti', 12)
-
-
-def tiyatro():
-    ic = f'<rect x="4" y="4" width="352" height="92" rx="8" fill="{GOK}"/>'
-    pts = 'M120 88 '
-    for k in range(8):
-        pts += f'H{148 + k * 26} V{80 - k * 9} '
-    ic += f'<path d="{pts}H352 V88 Z" fill="#d9c8a9" stroke="{KAHVE}" stroke-width="1"/>'
-    ic += f'<rect x="20" y="78" width="100" height="10" fill="#b79b6c" stroke="{KAHVE}" stroke-width="1"/>' + yazi(70, 72, 'Sahne', 11, LAC) + yazi(196, 24, 'Oturma alanı', 11, LAC)
-    ic += ''.join(f'<path d="M{96 + r * 0.5:.1f} {62 - r * 0.87:.1f} A{r} {r} 0 0 1 {96 + r * 0.98:.1f} {62 - r * 0.17:.1f}" fill="none" stroke="{MAVI}" stroke-width="1.5"/>' for r in (12, 22, 32))
-    return svg(360, 100, ic, 'Antik tiyatro kesiti: altta sahne, sahneye doğru basamak basamak eğimli oturma alanı, sahneden yayılan ses', 22)
-
-
-def araclar():
-    ic = kutu(4, 4, 172, 70, '#fff', GRI, 8, 1.2) + kutu(184, 4, 172, 70, '#fff', GRI, 8, 1.2)
-    ic += f'<rect x="68" y="12" width="44" height="34" rx="5" fill="{LAC}"/><rect x="72" y="16" width="36" height="22" rx="2" fill="#cfe8b9"/><path d="M76 34 l10 -8 l8 5 l12 -11" fill="none" stroke="#fff" stroke-width="1.6"/><path d="M90 20 a5 5 0 0 1 10 0 c0 4 -5 9 -5 9 s-5 -5 -5 -9 Z" fill="{KIR}"/>' + yazi(90, 64, 'GPS cihazı', 11.5, LAC)
-    ic += f'<path d="M258 28 a12 12 0 0 1 24 0 c0 6 -5 8 -5 13 h-14 c0 -5 -5 -7 -5 -13 Z" fill="{ALTIN}" stroke="{TUR}" stroke-width="1.2"/><rect x="263" y="41" width="14" height="7" rx="2" fill="{SOLUK}"/>' + ''.join(f'<line x1="{270 + 17 * math.cos(a):.1f}" y1="{28 + 17 * math.sin(a):.1f}" x2="{270 + 22 * math.cos(a):.1f}" y2="{28 + 22 * math.sin(a):.1f}" stroke="{TUR}" stroke-width="1.6" stroke-linecap="round"/>' for a in (-2.6, -2.0, -1.57, -1.14, -0.54)) + yazi(270, 64, 'LED lamba', 11.5, LAC)
-    return svg(360, 78, ic, 'İki araç: GPS cihazı ve LED lamba', 18)
-
-
-def ornek_kartlari():
-    kart = [('1', 'Gezegenlerin yörüngeleri hesaplanır.', MOR, MOR_A), ('2', 'Bitki dokusu mikroskopla görüntülenir.', YES, YES_A), ('3', 'Atom altı parçacıkların davranışı incelenir.', MAVI, MAVI_A)]
-    ic = ''
-    for i, (h, s, c, d) in enumerate(kart):
-        y = 4 + i * 29
-        ic += kutu(4, y, 352, 25, d, c, 8, 1.3) + rozet(21, y + 12.5, h, c) + yazi(38, y + 17, s, 11.5, LAC, 'start', True)
-    return svg(360, 91, ic, 'Örnekler: 1 Gezegenlerin yörüngeleri hesaplanır. 2 Bitki dokusu mikroskopla görüntülenir. 3 Atom altı parçacıkların davranışı incelenir.', 25)
-
-
-def atislar():
-    """Aynı noktadan aynı hızla iki atış: 50° potaya girer, 30° potadan önce yere düşer."""
-    ic = f'<line x1="10" y1="150" x2="350" y2="150" stroke="{GRI}" stroke-width="1.6"/>'
-    ic += f'<rect x="327" y="30" width="5" height="120" fill="{SOLUK}"/><rect x="318" y="30" width="6" height="44" rx="1" fill="#fff" stroke="{LAC}" stroke-width="1.4"/>'
-    ic += f'<line x1="288" y1="66" x2="318" y2="66" stroke="{TUR}" stroke-width="2.6"/>' + ''.join(f'<line x1="{290 + 6 * k}" y1="67" x2="{292 + 5 * k}" y2="80" stroke="{GRI}" stroke-width=".9"/>' for k in range(5))
-    ic += f'<path d="M40 150 Q160 7 300 64" fill="none" stroke="{MAVI}" stroke-width="1.8" stroke-dasharray="5 4"/>'
-    ic += f'<path d="M40 150 Q150 86.5 262 150" fill="none" stroke="{KIR}" stroke-width="1.8" stroke-dasharray="5 4"/>'
-    ic += f'<path d="M80 150 A40 40 0 0 0 65.7 119.4" fill="none" stroke="{MAVI}" stroke-width="1.3"/>' + yazi(168, 50, '50°', 12, MAVI)
-    ic += f'<path d="M100 150 A60 60 0 0 0 92 120" fill="none" stroke="{KIR}" stroke-width="1.3"/>' + yazi(150, 100, '30°', 12, KIR)
-    ic += f'<circle cx="40" cy="143" r="7" fill="{TUR}"/>' + yazi(40, 166, 'Atış noktası', 11, SOLUK, 'middle', True)
-    ic += f'<circle cx="262" cy="143" r="7" fill="{TUR}" opacity=".45"/>'
-    return svg(360, 172, ic, 'Aynı noktadan aynı hızla iki atış: 50 derecelik atış potaya girer, 30 derecelik atış potaya ulaşmadan yere düşer.', 38)
-
-
-def fotosentez():
-    """Fotosentezde üç süreç: ışığın soğurulması, CO2 ve suyun besine dönüşmesi, büyüme ve oksijen."""
-    ic = f'<circle cx="34" cy="34" r="16" fill="{ALTIN}"/>' + ''.join(f'<line x1="{34 + 21 * math.cos(a):.1f}" y1="{34 + 21 * math.sin(a):.1f}" x2="{34 + 27 * math.cos(a):.1f}" y2="{34 + 27 * math.sin(a):.1f}" stroke="{TUR}" stroke-width="1.6" stroke-linecap="round"/>' for a in [k * math.pi / 4 for k in range(8)])
-    ic += ok(56, 50, 150, 82, TUR, 1.6)
-    ic += f'<path d="M180 140 C178 110 180 80 182 50" fill="none" stroke="{YES}" stroke-width="3"/>'
-    ic += f'<path d="M181 100 C160 80 140 84 148 92 C156 102 172 104 181 100 Z" fill="{YES}"/><path d="M182 78 C204 58 222 64 214 72 C206 82 192 84 182 78 Z" fill="{YES}"/><path d="M182 52 C170 36 176 28 184 34 C190 40 188 48 182 52 Z" fill="{YES}"/>'
-    ic += f'<path d="M156 140 h50 l-6 26 h-38 Z" fill="{KAHVE}"/>'
-    ic += rozet(30, 114, '1', TUR) + yazi(44, 118, 'Işığın soğurulması', 11.5, LAC, 'start', True)
-    ic += rozet(232, 96, '2', MAVI) + yazi(244, 100, 'CO₂ ve suyun', 11.5, LAC, 'start', True) + yazi(244, 115, 'besine dönüşmesi', 11.5, LAC, 'start', True)
-    ic += rozet(232, 40, '3', YES) + yazi(244, 37, 'Büyüme ve', 11.5, LAC, 'start', True) + yazi(244, 52, 'oksijen salınması', 11.5, LAC, 'start', True)
-    return svg(360, 170, ic, 'Fotosentez: 1 ışığın soğurulması, 2 karbondioksit ve suyun besine dönüşmesi, 3 büyüme ve oksijen salınması.', 36)
+GORSELLER = {2: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Olayları inceleyen '
+    'disiplinler tablosu"><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Olay: Güneş’in</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">hareketleri</text><text x="87.5" y="58.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">İnceleyen disiplinler:</text><text x="87.5" y="76.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Fizik, astronomi,</text><text x="87.5" '
+    'y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">coğrafya</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="262.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">2. Olay: İklim</text><text x="262.5" y="49.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">olayları</text><text x="262.5" y="67.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İnceleyen disiplinler:</text><text x="262.5" '
+    'y="85.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Fizik, '
+    'coğrafya</text><rect x="4" y="108" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">3. Olay: Su '
+    'döngüsü</text><text x="87.5" y="144.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İnceleyen disiplinler:</text><text x="87.5" y="163.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Fizik, kimya, biyoloji,</text><text x="87.5" y="181.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">coğrafya</text><rect x="179" y="108" '
+    'width="167" height="82" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="135.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">4. Olay: Fotosentez</text><text x="262.5" '
+    'y="153.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İnceleyen '
+    'disiplinler:</text><text x="262.5" y="172.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Fizik, kimya, biyoloji</text></svg>',
+ 7: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Süleymaniye Camisi is '
+    'odası şeması"><rect x="4" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" '
+    'y="30.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">1. Aşama: '
+    'Kandil İsi</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Cami kandillerinden</text><text x="87.5" y="67.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">çıkan duman</text><rect x="179" y="3" width="167" height="82" rx="5" '
+    'fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. Aşama: Hava</text><text x="262.5" y="39.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Kanalları</text><text x="262.5" y="58.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hava akımıyla '
+    'isin</text><text x="262.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">taşınması</text><rect x="4" y="89" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="116.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">3. Aşama: İs Odası</text><text x="87.5" y="134.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İsin özel odada</text><text x="87.5" y="153.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">biriktirilmesi</text><rect x="179" y="89" '
+    'width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="107.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Aşama: [ ? ]</text><text x="262.5" '
+    'y="125.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Yapımı</text><text x="262.5" y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Biriken isin</text><text x="262.5" y="162.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">değerlendirilmesi</text></svg>',
+ 9: '<svg viewBox="0 0 350 70" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İki araç: GPS cihazı ve '
+    'LED lamba"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Araç: GPS '
+    'Cihazı</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Uydu sinyalleriyle</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">konum belirleme</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">2. Araç: LED Lamba</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yarı iletken '
+    'devreyle</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">aydınlatma</text></svg>',
+ 12: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aynı noktadan aynı '
+     'hızla iki atış: 50 derecelik atış potaya girer, 30 derecelik atış potaya ulaşmadan yere düşer."><rect x="4" y="3" width="342" '
+     'height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Atış Yörüngesi (50° Açı)</text><text '
+     'x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Atış '
+     'noktasından v₀ hızıyla 50° açıyla atılan</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="500" fill="#0b2257">top potaya girer.</text><rect x="4" y="68" width="342" height="62" rx="5" '
+     'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+     'font-size="1.01em" font-weight="700" fill="#ee7d12">2. Atış Yörüngesi (30° Açı)</text><text x="11.0" y="103.8" text-anchor="start" '
+     'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Aynı noktadan aynı v₀ hızıyla 30° açıyla '
+     'atılan</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+     'fill="#0b2257">top potadan önce yere düşer.</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = olaylar()
-    s[2]['gorsel'] = disiplin_tablosu()
-    s[5]['gorsel'] = calgi()
-    s[7]['gorsel'] = is_semasi()
-    s[8]['gorsel'] = tiyatro()
-    s[9]['gorsel'] = araclar()
-    s[11]['gorsel'] = ornek_kartlari()
-    s[12]['gorsel'] = atislar()
-    s[13]['gorsel'] = fotosentez()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

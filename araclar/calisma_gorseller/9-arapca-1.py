@@ -1,153 +1,123 @@
-"""9. sınıf Arapça 1. hafta (Selamlaşma ve Arapça Yazıya Başlangıç) çalışma kâğıdı görselleri.
-SVG; insan figürü yok (K024); metin arkası beyaz bant yok (K178); en_fazla=34."""
+"""9-arapca-1 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK, KAHVE, ALTIN = '#9aa6bd', '#eef1f6', '#5b6479', '#8a5a2b', '#f2b705'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
-
-
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2, ek=""):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"{ek}/>'
-
-
-def g0_selamlasma():
-    ic = kutu(4, 4, 352, 92, GRI_A, GRI)
-    kartlar = [
-        ('1. Sabah', 'صَبَاحُ الْخَيْرِ', TUR, TUR_A),
-        ('2. Karşılama', 'أَهْلًا وَسَهْلًا', YES, YES_A),
-        ('3. Veda', 'مَعَ السَّلَامَةِ', MAVI, MAVI_A),
-        ('4. Hâl Hatır', 'كَيْفَ حَالُكَ؟', MOR, MOR_A)
-    ]
-    for i, (b, a, c, d) in enumerate(kartlar):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 80, d, c, 6, 1.2)
-        ic += yazi(x + 40, 28, b, 10.5, c)
-        ic += f'<line x1="{x + 8}" y1="36" x2="{x + 72}" y2="36" stroke="{c}" stroke-width="0.8"/>'
-        ic += yazi(x + 40, 60, a, 13.5, LAC)
-    return svg(360, 100, ic, 'Dört temel Arapça selamlaşma ve hitap kartı', 34)
-
-
-def g1_harf_gruplari():
-    ic = kutu(4, 4, 352, 92, MAVI_A, MAVI)
-    ic += yazi(180, 22, 'KENDİNDEN SONRAYA BİTİŞMEYEN HARFLER', 11.5, MAVI)
-    harfler = [('Elif', 'ا'), ('Dal', 'د'), ('Zel', 'ذ'), ('Ra', 'ر'), ('Ze', 'ز'), ('Vav', 'و')]
-    for i, (ad, h) in enumerate(harfler):
-        x = 14 + i * 56
-        ic += kutu(x, 32, 50, 56, '#f4f8fe', MAVI, 6, 1.1)
-        ic += yazi(x + 25, 52, h, 18, LAC)
-        ic += yazi(x + 25, 78, ad, 9.5, SOLUK, ince=True)
-    return svg(360, 100, ic, 'Kendisinden sonraki harfe bitişmeyen altı Arapça harf', 34)
-
-
-def g2_diyalog():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI)
-    ic += kutu(10, 10, 160, 74, TUR_A, TUR, 8, 1.2)
-    ic += yazi(90, 28, 'Kerim (Hitap):', 11, TUR)
-    ic += yazi(90, 52, 'مَسَاءُ الْخَيْرِ', 15, LAC)
-    ic += yazi(90, 72, '(Hayırlı akşamlar)', 9.5, SOLUK, ince=True)
-
-    ic += kutu(190, 10, 160, 74, YES_A, YES, 8, 1.2)
-    ic += yazi(270, 28, 'Arkadaşı (Cevap):', 11, YES)
-    ic += yazi(270, 52, 'مَسَاءُ النُّورِ', 15, LAC)
-    ic += yazi(270, 72, '(Aydınlık akşamlar)', 9.5, SOLUK, ince=True)
-    return svg(360, 96, ic, 'Akşam selamlaşması diyalog kartları', 34)
-
-
-def g3_harekeler():
-    ic = kutu(4, 4, 352, 90, GRI_A, GRI)
-    harekeler = [
-        ('Şedde', 'ـّ', 'Harfi ikiler', KIR, KIR_A),
-        ('Yazı Yönü', '←', 'Sağdan sola', TUR, TUR_A),
-        ('Sükûn', 'ـْ', 'Sessiz durdurur', MAVI, MAVI_A),
-        ('Tenvin', 'ـٌ ـٍ ـً', 'Son çift ses', YES, YES_A)
-    ]
-    for i, (b, sembol, alt, c, d) in enumerate(harekeler):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 78, d, c, 6, 1.2)
-        ic += yazi(x + 40, 26, b, 10.5, c)
-        ic += yazi(x + 40, 50, sembol, 17, LAC)
-        ic += yazi(x + 40, 72, alt, 9, SOLUK, ince=True)
-    return svg(360, 98, ic, 'Temel Arapça hareke ve işaret kartları', 34)
-
-
-def g5_tanisma_akisi():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI)
-    adimlari = [
-        ('1. Selam', 'السَّلَامُ عَلَيْكُمْ', YES, YES_A),
-        ('2. Karşılık', 'وَعَلَيْكُمُ السَّلَامُ', MAVI, MAVI_A),
-        ('3. Hâl Hatır', 'كَيْفَ حَالُكَ؟', TUR, TUR_A),
-        ('4. Şükür', 'أَنَا بِخَيْرٍ', MOR, MOR_A)
-    ]
-    for i, (bas, ar, c, d) in enumerate(adimlari):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 76, d, c, 6, 1.2)
-        ic += yazi(x + 40, 26, bas, 10, c)
-        ic += yazi(x + 40, 52, ar, 12.5, LAC)
-        if i < 3:
-            ic += f'<polygon points="{x + 82},48 {x + 85},44 {x + 85},52" fill="{GRI}"/>'
-    return svg(360, 96, ic, 'Arapça tanışma ve selamlaşma sıralama akışı', 34)
-
-
-def g6_emir_panosu():
-    ic = kutu(4, 4, 352, 88, CAM_A, CAM)
-    ic += yazi(180, 24, 'SINIF İÇİ YÖNERGE PANOSU (MÜENNES / KIZ ÖĞRENCİ)', 11, CAM)
-    ic += kutu(20, 34, 150, 48, '#eaf7fa', CAM, 6, 1.1)
-    ic += yazi(95, 52, 'Müzekker (Erkek):', 10, SOLUK, ince=True)
-    ic += yazi(95, 70, 'اِقْرَأْ (Oku)', 13, LAC)
-
-    ic += kutu(190, 34, 150, 48, TUR_A, TUR, 6, 1.2)
-    ic += yazi(265, 52, 'Müennes (Kız Öğrenci):', 10, TUR)
-    ic += yazi(265, 70, 'اِقْرَئِي (Oku)', 14, TUR)
-    return svg(360, 96, ic, 'Öğretmen sınıf içi emir yönergesi panosu', 34)
-
-
-def g8_sinif_yonergeleri():
-    ic = kutu(4, 4, 352, 88, GRI_A, GRI)
-    eylemler = [
-        ('اِسْتَمِعْ', 'Dinle', MAVI, MAVI_A),
-        ('اُكْتُبْ', 'Yaz', TUR, TUR_A),
-        ('أَعِدْ', 'Tekrar et', YES, YES_A),
-        ('اُنْظُرْ', 'Bak', MOR, MOR_A)
-    ]
-    for i, (ar, tr, c, d) in enumerate(eylemler):
-        x = 10 + i * 86
-        ic += kutu(x, 10, 80, 76, d, c, 6, 1.2)
-        ic += yazi(x + 40, 36, ar, 14.5, c)
-        ic += f'<line x1="{x + 12}" y1="46" x2="{x + 68}" y2="46" stroke="{c}" stroke-width="0.8"/>'
-        ic += yazi(x + 40, 64, tr, 11, LAC)
-    return svg(360, 96, ic, 'Dört temel sınıf içi yönerge kartı', 34)
-
-
-def g10_sifre_seridi():
-    ic = kutu(4, 4, 352, 88, YES_A, YES)
-    ic += yazi(180, 22, 'ANAHTAR KELİME ŞİFRE ŞERİDİ', 11.5, YES)
-    harfler = [('1', 'S'), ('2', 'E'), ('3', 'L'), ('4', 'A'), ('5', 'M')]
-    for i, (no, h) in enumerate(harfler):
-        x = 45 + i * 55
-        ic += kutu(x, 32, 45, 48, '#eaf8f0', YES, 6, 1.2)
-        ic += yazi(x + 22.5, 46, no, 9.5, SOLUK, ince=True)
-        ic += yazi(x + 22.5, 68, h, 16, LAC)
-    return svg(360, 96, ic, 'Selam şifresi anahtar harf kutuları', 34)
+GORSELLER = {0: '<svg viewBox="0 0 350 128" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört temel Arapça '
+    'selamlaşma ve hitap kartı"><rect x="4" y="3" width="167" height="59" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="87.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">1. Sabah</text><text x="87.5" y="49.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">صَبَاحُ الْخَيْرِ</text><rect x="179" y="3" '
+    'width="167" height="59" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="24.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Karşılama</text><text x="262.5" y="49.8" '
+    'text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">أَهْلًا وَسَهْلًا</text><rect x="4" y="66" width="167" height="59" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="87.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">3. Veda</text><text x="87.5" y="112.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">مَعَ السَّلَامَةِ</text><rect x="179" y="66" '
+    'width="167" height="59" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="87.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Hâl Hatır</text><text x="262.5" y="112.8" '
+    'text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">كَيْفَ حَالُكَ؟</text></svg>',
+ 1: '<svg viewBox="0 0 350 422" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kendisinden sonraki '
+    'harfe bitişmeyen altı Arapça harf"><rect x="4" y="3" width="342" height="57" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="23.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">KENDİNDEN SONRAYA BİTİŞMEYEN</text><text x="11.0" y="48.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">HARFLER</text><rect x="4" y="63" width="342" height="57" rx="5" '
+    'fill="#f4f8fe" stroke="#2451d6" stroke-width="0.75"/><text x="175.0" y="83.8" text-anchor="middle" direction="rtl" '
+    'unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">ا</text><text x="11.0" '
+    'y="108.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">Elif</text><rect x="4" y="123" width="342" height="57" rx="5" fill="#f4f8fe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="175.0" y="143.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">د</text><text x="11.0" y="168.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Dal</text><rect x="4" y="183" width="342" '
+    'height="57" rx="5" fill="#f4f8fe" stroke="#2451d6" stroke-width="0.75"/><text x="175.0" y="203.8" text-anchor="middle" '
+    'direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">ذ</text><text x="11.0" y="228.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#5b6479">Zel</text><rect x="4" y="243" width="342" height="57" rx="5" fill="#f4f8fe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="175.0" y="263.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">ر</text><text x="11.0" y="288.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Ra</text><rect x="4" y="303" width="342" '
+    'height="57" rx="5" fill="#f4f8fe" stroke="#2451d6" stroke-width="0.75"/><text x="175.0" y="323.8" text-anchor="middle" '
+    'direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">ز</text><text x="11.0" y="348.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#5b6479">Ze</text><rect x="4" y="363" width="342" height="57" rx="5" fill="#f4f8fe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="175.0" y="383.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">و</text><text x="11.0" y="408.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Vav</text></svg>',
+ 2: '<svg viewBox="0 0 350 90" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Akşam selamlaşması '
+    'diyalog kartları"><rect x="4" y="3" width="167" height="84" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="87.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Kerim '
+    '(Hitap):</text><text x="87.5" y="49.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">مَسَاءُ الْخَيْرِ</text><text x="87.5" y="74.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">(Hayırlı akşamlar)</text><rect x="179" y="3" '
+    'width="167" height="84" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="24.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Arkadaşı (Cevap):</text><text x="262.5" '
+    'y="49.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">مَسَاءُ النُّورِ</text><text x="262.5" y="74.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">(Aydınlık akşamlar)</text></svg>',
+ 3: '<svg viewBox="0 0 350 128" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Temel Arapça hareke ve '
+    'işaret kartları"><rect x="4" y="3" width="167" height="59" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Şedde · '
+    'ـّ</text><text x="87.5" y="49.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">Harfi ikiler</text><rect x="179" y="3" width="167" height="59" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Yazı Yönü ← Sağdan</text><text x="262.5" y="49.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">sola</text><rect x="4" y="66" width="167" height="59" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="87.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Sükûn · ـْ</text><text x="87.5" y="112.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Sessiz durdurur</text><rect x="179" y="66" width="167" '
+    'height="59" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="87.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Tenvin · ـٌ ـٍ ـً</text><text x="262.5" '
+    'y="112.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Son çift '
+    'ses</text></svg>',
+ 5: '<svg viewBox="0 0 350 128" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arapça tanışma ve '
+    'selamlaşma sıralama akışı"><rect x="4" y="3" width="167" height="59" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Hâl Hatır</text><text x="87.5" y="49.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">كَيْفَ حَالُكَ؟</text><rect x="179" y="3" '
+    'width="167" height="59" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="24.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Selam</text><text x="262.5" y="49.8" '
+    'text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">السَّلَامُ عَلَيْكُمْ</text><rect x="4" y="66" width="167" height="59" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="87.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Şükür</text><text x="87.5" y="112.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">أَنَا بِخَيْرٍ</text><rect x="179" y="66" '
+    'width="167" height="59" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="87.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Karşılık</text><text x="262.5" y="112.8" '
+    'text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">وَعَلَيْكُمُ السَّلَامُ</text></svg>',
+ 6: '<svg viewBox="0 0 350 182" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Öğretmen sınıf içi emir '
+    'yönergesi panosu"><rect x="4" y="3" width="342" height="57" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text '
+    'x="11.0" y="23.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">SINIF '
+    'İÇİ YÖNERGE PANOSU (MÜENNES /</text><text x="11.0" y="48.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0e8fa8">KIZ ÖĞRENCİ)</text><rect x="4" y="63" width="342" height="57" rx="5" '
+    'fill="#eaf7fa" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="83.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">Müzekker (Erkek):</text><text x="11.0" y="108.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">اِقْرَأْ (Oku)</text><rect x="4" y="123" '
+    'width="342" height="57" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="143.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Müennes (Kız Öğrenci):</text><text x="11.0" '
+    'y="168.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">اِقْرَئِي '
+    '(Oku)</text></svg>',
+ 8: '<svg viewBox="0 0 350 102" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dört temel sınıf içi '
+    'yönerge kartı"><rect x="4" y="3" width="167" height="46" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="20.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">اِسْتَمِعْ</text><line x1="64.6" y1="24.8" x2="110.4" y2="24.8" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Dinle</text><rect x="179" y="3" width="167" height="46" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="20.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">اُكْتُبْ</text><line x1="243.7" y1="24.8" x2="281.3" y2="24.8" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Yaz</text><rect x="4" y="53" width="167" height="46" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="70.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">أَعِدْ</text><line x1="52.9" y1="74.8" x2="122.1" y2="74.8" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="90.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Tekrar\xa0et</text><rect x="179" y="53" width="167" height="46" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">اُنْظُرْ</text><line x1="243.7" y1="74.8" x2="281.3" y2="74.8" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="90.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Bak</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0_selamlasma()
-    s[1]['gorsel'] = g1_harf_gruplari()
-    s[2]['gorsel'] = g2_diyalog()
-    s[3]['gorsel'] = g3_harekeler()
-    s[5]['gorsel'] = g5_tanisma_akisi()
-    s[6]['gorsel'] = g6_emir_panosu()
-    s[8]['gorsel'] = g8_sinif_yonergeleri()
-    s[10]['gorsel'] = g10_sifre_seridi()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg
