@@ -1,164 +1,121 @@
-"""11. sınıf Din Kültürü 2. hafta görselleri.
-SVG; insan figürü yok (K024); görsel içi yazı Noto Sans; max-height:34mm; çizgiler <=0.75pt."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
+"""11-din-kulturu-ve-ahlak-bilgisi-2 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sünnetullah ve '
+    'mükellefiyet kavramları kartı."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">1. Sünnetullah</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Evrensel Yasalar</text><rect x="179" y="3" width="167" height="45" '
+    'rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. Cüzi İrade</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Özgür Tercih Gücü</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. Mükellef</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Akıl ve '
+    'Sorumluluk</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. '
+    'Tevekkül</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Emek ve Güven</text></svg>',
+ 1: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kader anlayışı '
+    'karşılaştırma modeli."><rect x="4" y="3" width="342" height="43" rx="5" fill="#fdeaea" stroke="#d63a3a" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d63a3a">DOĞRU '
+    'KADER ANLAYIŞI VE HATALI</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">YAKLAŞIM</text><rect x="4" y="49" width="342" height="62" rx="5" fill="#fdeaea" stroke="#d63a3a" '
+    'stroke-width="0.75"/><text x="11.0" y="66.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d63a3a">Hatalı Anlayış (Cebriye)</text><text x="11.0" y="84.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kader mahkûmuyum bahanesi · Tedbirsizlik &amp;</text><text x="11.0" '
+    'y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İhmal</text><rect x="4" y="114" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="131.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">İslami Kader İnancı</text><text x="11.0" y="149.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Akıl, irade ve tam sorumluluk</text><text x="11.0" y="168.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0f6b45">Tedbir + Emek + '
+    'Tevekkül</text></svg>',
+ 2: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mükellefiyet şartları '
+    'akıl ve irade kartı."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0f6b45">MÜKELLEFİYETİN İKİ TEMEL ZİHİNSEL</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">DİREĞİ</text><rect x="4" y="49" width="342" height="62" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="66.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">1. Akıl Sahibi Olmak</text><text x="11.0" y="84.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İyi ve kötüyü kavrama</text><text x="11.0" '
+    'y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0f6b45">Dini hitabı '
+    'anlama şartı</text><rect x="4" y="114" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="131.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">2. '
+    'Cüzi İrade Hürriyeti</text><text x="11.0" y="149.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Özgürce karar ve seçim gücü</text><text x="11.0" y="168.2" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">Ahlaki mesuliyetin kaynağı</text></svg>',
+ 3: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İlim, irade ve kudret '
+    'sıfatları şeması."><rect x="4" y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">İLAHİ '
+    'SIFATLAR VE</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">KULUN İRADESİ</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">DENGESİ</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">İlim Sıfatı</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Geçmişi &amp; Geleceği ·</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ezelî Bilme</text><rect '
+    'x="4" y="71" width="167" height="64" rx="5" fill="#fff1df" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">İrade Sıfatı</text><text '
+    'x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Külli '
+    'Dileme ·</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Evrensel Ölçü</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#fff1df" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Kudret Sıfatı</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mutlak Güç ·</text><text x="262.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yaratma Yetisi</text></svg>',
+ 5: '<svg viewBox="0 0 350 152" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ahlaki eylem basamakları '
+    'şeması."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">İNSANIN AHLAKİ '
+    'EYLEM VE MESULİYET</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">ADIMLARI</text><rect x="4" y="49" width="342" height="23" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="65.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#0e8fa8">1. Bilgi:</tspan> Akılla Ayırt Etme</text><rect x="4" y="75" '
+    'width="342" height="23" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="91.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#0e8fa8">2. '
+    'Tercih:</tspan> İradeyle Seçim</text><rect x="4" y="101" width="342" height="23" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="117.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#0e8fa8">3. Fiil:</tspan> Eyleme Dökme</text><rect x="4" y="127" '
+    'width="342" height="23" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="143.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#0e8fa8">4. '
+    'Mesuliyet:</tspan> Hesap Verme</text></svg>',
+ 6: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İlim, irade ve kudret '
+    'kavramları kartı."><rect x="4" y="3" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">ALLAH&#x27;IN EVRENİ</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">KUŞATAN ÜÇ TEMEL</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">SIFATI</text><rect x="179" y="3" width="167" '
+    'height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">1. İlim</text><text x="262.5" y="39.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kuşatıcı Bilgi '
+    '·</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Zorlama içermez</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">2. İrade</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Külli Takdir · Kural</text><text x="87.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Koyucu</text><rect x="179" y="71" width="167" '
+    'height="64" rx="5" fill="#f0e9fe" stroke="#0f6b45" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">3. Kudret</text><text x="262.5" y="107.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sonsuz Güç · '
+    'Var</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Eden Kudret</text></svg>',
+ 8: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ahlaki kavramlar '
+    'eşleştirme kartı."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">İNSANIN '
+    'TERCİH ALANI: HAYIR VE ŞER</text><rect x="4" y="31" width="342" height="23" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#0f6b45">Hidayet:</tspan> Hak Yolu Seçme</text><rect x="4" y="57" '
+    'width="342" height="23" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="73.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" '
+    'fill="#0f6b45">Dalalet:</tspan> Haktan Sapma</text><rect x="4" y="83" width="342" height="23" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="99.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#0f6b45">Hayır:</tspan> Faydalı İyilik</text><rect x="4" y="109" '
+    'width="342" height="23" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="125.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" '
+    'fill="#0f6b45">Şer:</tspan> Zararlı Kötülük</text></svg>'}
 
-def yazi(x, y, metin, boy=10.2, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def sunnetullah_kartlari():
-    kartlar = [
-        ('1. Sünnetullah', 'Evrensel Yasalar', YES, YES_A),
-        ('2. Cüzi İrade', 'Özgür Tercih Gücü', MAVI, MAVI_A),
-        ('3. Mükellef', 'Akıl ve Sorumluluk', TUR, TUR_A),
-        ('4. Tevekkül', 'Emek ve Güven', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (ad, oz, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 8, 82, 108, z, r)
-        ic += kutu(x + 8, 16, 66, 26, r, r, r=4)
-        ic += yazi(x + 41, 33, str(i + 1), 12.0, '#ffffff')
-        ic += yazi(x + 41, 62, ad, 9.1, r)
-        ic += f'<line x1="{x + 8}" y1="72" x2="{x + 74}" y2="72" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 41, 92, oz, 8.4, LAC, ince=True)
-    return svg(360, 125, ic, 'Sünnetullah ve mükellefiyet kavramları kartı.', 34)
-
-def yanlis_kader_karsilastirma():
-    ic = kutu(6, 6, 348, 112, KIR_A, KIR)
-    ic += yazi(180, 22, 'DOĞRU KADER ANLAYIŞI VE HATALI YAKLAŞIM', 10.3, KIR)
-    ic += kutu(20, 36, 145, 70, '#ffffff', KIR)
-    ic += yazi(92, 56, 'Hatalı Anlayış (Cebriye)', 9.4, KIR)
-    ic += yazi(92, 76, 'Kader mahkûmuyum bahanesi', 8.8, LAC, ince=True)
-    ic += yazi(92, 92, 'Tedbirsizlik &amp; İhmal', 8.8, KIR, ince=True)
-
-    ic += kutu(195, 36, 145, 70, YES_A, YES)
-    ic += yazi(267, 56, 'İslami Kader İnancı', 9.4, YESIL_K)
-    ic += yazi(267, 76, 'Akıl, irade ve tam sorumluluk', 8.8, LAC, ince=True)
-    ic += yazi(267, 92, 'Tedbir + Emek + Tevekkül', 8.8, YESIL_K, ince=True)
-    return svg(360, 125, ic, 'Kader anlayışı karşılaştırma modeli.', 34)
-
-def adalet_terazisi_semasi():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 22, 'MÜKELLEFİYETİN İKİ TEMEL ZİHİNSEL DİREĞİ', 10.3, YESIL_K)
-    ic += kutu(20, 36, 145, 70, '#ffffff', YES)
-    ic += yazi(92, 56, '1. Akıl Sahibi Olmak', 9.6, YESIL_K)
-    ic += yazi(92, 76, 'İyi ve kötüyü kavrama', 8.8, LAC, ince=True)
-    ic += yazi(92, 92, 'Dini hitabı anlama şartı', 8.8, YESIL_K, ince=True)
-
-    ic += kutu(195, 36, 145, 70, MAVI_A, MAVI)
-    ic += yazi(267, 56, '2. Cüzi İrade Hürriyeti', 9.6, MAVI)
-    ic += yazi(267, 76, 'Özgürce karar ve seçim gücü', 8.8, LAC, ince=True)
-    ic += yazi(267, 92, 'Ahlaki mesuliyetin kaynağı', 8.8, MAVI, ince=True)
-    return svg(360, 125, ic, 'Mükellefiyet şartları akıl ve irade kartı.', 34)
-
-def ilahi_sifatlar_ve_insan():
-    ic = kutu(6, 6, 348, 112, TUR_A, TUR)
-    ic += yazi(180, 22, 'İLAHİ SIFATLAR VE KULUN İRADESİ DENGESİ', 10.3, TUR)
-    ic += kutu(20, 38, 95, 68, '#ffffff', TUR)
-    ic += yazi(67, 58, 'İlim Sıfatı', 9.4, TUR)
-    ic += yazi(67, 78, 'Geçmişi &amp; Geleceği', 8.8, LAC, ince=True)
-    ic += yazi(67, 92, 'Ezelî Bilme', 8.8, TUR, ince=True)
-
-    ic += kutu(132, 38, 95, 68, '#ffffff', YES)
-    ic += yazi(179, 58, 'İrade Sıfatı', 9.4, YESIL_K)
-    ic += yazi(179, 78, 'Külli Dileme', 8.8, LAC, ince=True)
-    ic += yazi(179, 92, 'Evrensel Ölçü', 8.8, YESIL_K, ince=True)
-
-    ic += kutu(245, 38, 95, 68, '#ffffff', MAVI)
-    ic += yazi(292, 58, 'Kudret Sıfatı', 9.4, MAVI)
-    ic += yazi(292, 78, 'Mutlak Güç', 8.8, LAC, ince=True)
-    ic += yazi(292, 92, 'Yaratma Yetisi', 8.8, MAVI, ince=True)
-    return svg(360, 125, ic, 'İlim, irade ve kudret sıfatları şeması.', 34)
-
-def eylem_sorumluluk_basamaklari():
-    ic = kutu(6, 6, 348, 112, CAM_A, CAM)
-    ic += yazi(180, 20, 'İNSANIN AHLAKİ EYLEM VE MESULİYET ADIMLARI', 10.2, CAM)
-    adımlar = [
-        ('1. Bilgi', 'Akılla Ayırt Etme', 16),
-        ('2. Tercih', 'İradeyle Seçim', 102),
-        ('3. Fiil', 'Eyleme Dökme', 188),
-        ('4. Mesuliyet', 'Hesap Verme', 274),
-    ]
-    for b, d, x in adımlar:
-        ic += kutu(x, 36, 70, 70, '#ffffff', CAM)
-        ic += yazi(x + 35, 56, b, 9.3, CAM)
-        ic += f'<line x1="{x + 6}" y1="64" x2="{x + 64}" y2="64" stroke="{CAM}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 84, d, 8.2, LAC, ince=True)
-    return svg(360, 125, ic, 'Ahlaki eylem basamakları şeması.', 34)
-
-def uc_ilahi_sifat_semasi():
-    ic = kutu(6, 6, 348, 112, MOR_A, MOR)
-    ic += yazi(180, 22, 'ALLAH\'IN EVRENİ KUŞATAN ÜÇ TEMEL SIFATI', 10.3, MOR)
-    ic += kutu(20, 36, 95, 70, '#ffffff', MOR)
-    ic += yazi(67, 56, '1. İlim', 9.6, MOR)
-    ic += yazi(67, 76, 'Kuşatıcı Bilgi', 8.8, LAC, ince=True)
-    ic += yazi(67, 92, 'Zorlama içermez', 8.8, MOR, ince=True)
-
-    ic += kutu(132, 36, 95, 70, '#ffffff', TUR)
-    ic += yazi(179, 56, '2. İrade', 9.6, TUR)
-    ic += yazi(179, 76, 'Külli Takdir', 8.8, LAC, ince=True)
-    ic += yazi(179, 92, 'Kural Koyucu', 8.8, TUR, ince=True)
-
-    ic += kutu(245, 36, 95, 70, '#ffffff', YESIL_K)
-    ic += yazi(292, 56, '3. Kudret', 9.6, YESIL_K)
-    ic += yazi(292, 76, 'Sonsuz Güç', 8.8, LAC, ince=True)
-    ic += yazi(292, 92, 'Var Eden Kudret', 8.8, YESIL_K, ince=True)
-    return svg(360, 125, ic, 'İlim, irade ve kudret kavramları kartı.', 34)
-
-def ahlaki_kavramlar_kartlari():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 20, 'İNSANIN TERCİH ALANI: HAYIR VE ŞER', 10.1, YESIL_K)
-    kartlar = [
-        ('Hidayet', 'Hak Yolu Seçme', 16),
-        ('Dalalet', 'Haktan Sapma', 102),
-        ('Hayır', 'Faydalı İyilik', 188),
-        ('Şer', 'Zararlı Kötülük', 274),
-    ]
-    for s, snc, x in kartlar:
-        ic += kutu(x, 34, 70, 72, '#ffffff', YESIL_K)
-        ic += yazi(x + 35, 54, s, 8.8, YESIL_K)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{YESIL_K}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, snc, 8.4, LAC, ince=True)
-    return svg(360, 125, ic, 'Ahlaki kavramlar eşleştirme kartı.', 34)
-
-def irade_sifre_kutulari():
-    ic = kutu(6, 6, 348, 112, MAVI_A, MAVI)
-    ic += yazi(180, 24, 'ŞİFRE KAVRAMI BULMA KUTULARI', 10.4, MAVI)
-    harfler = ['İ', 'R', 'A', 'D', 'E']
-    for i, h in enumerate(harfler):
-        x = 55 + i * 52
-        ic += kutu(x, 42, 44, 52, '#ffffff', MAVI, r=4)
-        ic += yazi(x + 22, 74, h, 16.0, MAVI)
-        ic += yazi(x + 22, 36, f'{i + 1}. Harf', 8.4, LAC, ince=True)
-    return svg(360, 125, ic, 'İrade kavramı şifre kutuları.', 34)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = sunnetullah_kartlari()
-    s[0]['en_fazla'] = 34
-    s[1]['gorsel'] = yanlis_kader_karsilastirma()
-    s[1]['en_fazla'] = 34
-    s[2]['gorsel'] = adalet_terazisi_semasi()
-    s[2]['en_fazla'] = 34
-    s[3]['gorsel'] = ilahi_sifatlar_ve_insan()
-    s[3]['en_fazla'] = 34
-    s[5]['gorsel'] = eylem_sorumluluk_basamaklari()
-    s[5]['en_fazla'] = 34
-    s[6]['gorsel'] = uc_ilahi_sifat_semasi()
-    s[6]['en_fazla'] = 34
-    s[8]['gorsel'] = ahlaki_kavramlar_kartlari()
-    s[8]['en_fazla'] = 34
-    s[10]['gorsel'] = irade_sifre_kutulari()
-    s[10]['en_fazla'] = 34
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

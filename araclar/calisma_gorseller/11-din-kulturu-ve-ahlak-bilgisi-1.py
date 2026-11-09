@@ -1,174 +1,115 @@
-"""11. sınıf Din Kültürü ve Ahlak Bilgisi 1. hafta görselleri.
-SVG; insan figürü yok (K024); görsel içi yazı Noto Sans; max-height:34mm; çizgiler <=0.75pt."""
+"""11-din-kulturu-ve-ahlak-bilgisi-1 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.2, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def kader_kavram_kartlari():
-    kartlar = [
-        ('1. Külli İrade', 'Mutlak irade', MOR, MOR_A),
-        ('2. Cüzi İrade', 'Sorumlu seçim', MAVI, MAVI_A),
-        ('3. Tevekkül', 'Tedbir ve güven', YES, YES_A),
-        ('4. Ecel &amp; Ömür', 'Takdir edilen süre', TUR, TUR_A),
-    ]
-    ic = ''
-    for i, (ad, oz, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 8, 82, 108, z, r)
-        ic += kutu(x + 8, 16, 66, 26, r, r, r=4)
-        ic += yazi(x + 41, 33, str(i + 1), 12.0, '#ffffff')
-        ic += yazi(x + 41, 62, ad, 9.2, r)
-        ic += f'<line x1="{x + 8}" y1="72" x2="{x + 74}" y2="72" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 41, 92, oz, 8.8, LAC, ince=True)
-    return svg(360, 125, ic, 'Kader kavramları temel kartları.', 34)
-
-
-def kader_sorumluluk_akisi():
-    ic = kutu(6, 6, 348, 112, MAVI_A, MAVI)
-    ic += yazi(180, 22, 'İNSAN İRADESİ VE SORUMLULUK DÖNGÜSÜ', 10.3, MAVI)
-    ic += kutu(16, 36, 95, 70, YES_A, YES)
-    ic += yazi(63, 54, 'Akıl &amp; Cüzi İrade', 9.4, YESIL_K)
-    ic += yazi(63, 74, 'Özgür Tercih', 8.8, LAC, ince=True)
-    ic += yazi(63, 90, 'Emek Verme', 8.8, YESIL_K, ince=True)
-
-    ic += kutu(132, 36, 95, 70, TUR_A, TUR)
-    ic += yazi(179, 54, 'Eylem &amp; Çaba', 9.4, TUR)
-    ic += yazi(179, 74, 'Meşru Çalışma', 8.8, LAC, ince=True)
-    ic += yazi(179, 90, 'Tedbir Alma', 8.8, TUR, ince=True)
-
-    ic += kutu(248, 36, 95, 70, MOR_A, MOR)
-    ic += yazi(295, 54, 'Sonuç &amp; Mesuliyet', 9.4, MOR)
-    ic += yazi(295, 74, 'Kişisel Sorumluluk', 8.8, LAC, ince=True)
-    ic += yazi(295, 90, 'Tevekkül Bilinci', 8.8, MOR, ince=True)
-    return svg(360, 125, ic, 'İnsan iradesi ve sorumluluk döngüsü modeli.', 34)
-
-
-def evrensel_yasalar_semasi():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 22, 'EVRENDEKİ ÖLÇÜ VE YASALAR (SÜNNETULLAH)', 10.3, YESIL_K)
-    yasalar = [
-        ('Fiziksel Yasalar', 'Madde ve Enerji', MAVI, 16),
-        ('Biyolojik Yasalar', 'Canlılar ve Hayat', YES, 130),
-        ('Toplumsal Yasalar', 'Adalet ve Ahlak', TUR, 244),
-    ]
-    for b, d, r, x in yasalar:
-        ic += kutu(x, 36, 100, 70, '#ffffff', r)
-        ic += yazi(x + 50, 56, b, 9.4, r)
-        ic += f'<line x1="{x + 10}" y1="66" x2="{x + 90}" y2="66" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 50, 86, d, 8.8, LAC, ince=True)
-    return svg(360, 125, ic, 'Evrensel yasalar karşılaştırma şeması.', 34)
-
-
-def tevekkul_terazisi():
-    ic = kutu(6, 6, 348, 112, CAM_A, CAM)
-    ic += yazi(180, 22, 'DOĞRU TEVEKKÜL ANLAYIŞI DENGESİ', 10.3, CAM)
-    ic += kutu(20, 38, 145, 68, TUR_A, TUR)
-    ic += yazi(92, 58, '1. Kanat: Tedbir &amp; Gayret', 9.6, TUR)
-    ic += yazi(92, 78, 'Çalışma, emek, önlem', 8.9, LAC, ince=True)
-    ic += yazi(92, 92, 'Cüzi iradeyi kullanma', 8.9, TUR, ince=True)
-
-    ic += kutu(195, 38, 145, 68, YES_A, YES)
-    ic += yazi(267, 58, '2. Kanat: Teslimiyet &amp; Dua', 9.6, YESIL_K)
-    ic += yazi(267, 78, "Sonucu Allah'a bırakma", 8.9, LAC, ince=True)
-    ic += yazi(267, 92, 'Huzur ve rıza hali', 8.9, YESIL_K, ince=True)
-    return svg(360, 125, ic, 'Doğru tevekkül dengesi şeması.', 34)
-
-
-def sinav_tevekkul_basamaklari():
-    ic = kutu(6, 6, 348, 112, TUR_A, TUR)
-    ic += yazi(180, 20, 'BAŞARI VE TEVEKKÜL UYGULAMA ADIMLARI', 10.2, TUR)
-    adımlar = [
-        ('1. Karar', 'İradeyi koyma', 16),
-        ('2. Emek', 'Planlı çalışma', 102),
-        ('3. Gayret', 'Sınavda dikkat', 188),
-        ('4. Tevekkül', 'Huzurla güven', 274),
-    ]
-    for b, d, x in adımlar:
-        ic += kutu(x, 36, 70, 70, '#ffffff', TUR)
-        ic += yazi(x + 35, 56, b, 9.3, TUR)
-        ic += f'<line x1="{x + 6}" y1="64" x2="{x + 64}" y2="64" stroke="{TUR}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 84, d, 8.4, LAC, ince=True)
-    return svg(360, 125, ic, 'Başarı ve tevekkül uygulama basamakları.', 34)
-
-
-def toplumsal_yasa_semasi():
-    ic = kutu(6, 6, 348, 112, MOR_A, MOR)
-    ic += yazi(180, 22, 'TOPLUMLARIN GELİŞİMİNİ DÜZENLEYEN İLKELER', 10.2, MOR)
-    ic += kutu(20, 36, 95, 70, '#ffffff', MOR)
-    ic += yazi(67, 56, 'Fiziksel Yasa', 9.2, LAC)
-    ic += yazi(67, 82, 'Gezegen &amp; Su', 8.6, MOR, ince=True)
-
-    ic += kutu(132, 36, 95, 70, '#ffffff', MOR)
-    ic += yazi(179, 56, 'Biyolojik Yasa', 9.2, LAC)
-    ic += yazi(179, 82, 'Canlı &amp; Doğa', 8.6, MOR, ince=True)
-
-    ic += kutu(245, 36, 95, 70, YES_A, YES)
-    ic += yazi(292, 56, '[ ? = Toplumsal ]', 9.4, YESIL_K)
-    ic += yazi(292, 82, 'Adalet &amp; Barış', 8.6, YESIL_K, ince=True)
-    return svg(360, 125, ic, 'Toplumsal yasalar soru işareti diyagramı.', 34)
-
-
-def ayet_yasa_kartlari():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 20, 'AYETLER VE EVRENSEL YASA EŞLEŞTİRMELERİ', 10.1, YESIL_K)
-    kartlar = [
-        ('Gece &amp; Gündüz', 'Fiziksel Yasa', 16),
-        ('İnsanın Yaratılışı', 'Biyolojik Yasa', 102),
-        ('Kavimlerin Akıbeti', 'Toplumsal Yasa', 188),
-        ('Ölçülü Yağmur', 'Kader İlkesi', 274),
-    ]
-    for s, snc, x in kartlar:
-        ic += kutu(x, 34, 70, 72, '#ffffff', YESIL_K)
-        ic += yazi(x + 35, 54, s, 8.8, YESIL_K)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{YESIL_K}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, snc, 8.4, LAC, ince=True)
-    return svg(360, 125, ic, 'Ayetler ve evrensel yasalar tablosu.', 34)
-
-
-def kader_sifre_kutulari():
-    ic = kutu(6, 6, 348, 112, MAVI_A, MAVI)
-    ic += yazi(180, 24, 'KADER KAVRAMI ŞİFRE KUTULARI', 10.4, MAVI)
-    harfler = ['K', 'A', 'D', 'E', 'R']
-    for i, h in enumerate(harfler):
-        x = 55 + i * 52
-        ic += kutu(x, 42, 44, 52, '#ffffff', MAVI, r=4)
-        ic += yazi(x + 22, 74, h, 16.0, MAVI)
-        ic += yazi(x + 22, 36, f'{i + 1}. Harf', 8.4, LAC, ince=True)
-    return svg(360, 125, ic, 'Kader kavramı şifre kutuları.', 34)
+GORSELLER = {0: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kader kavramları temel '
+    'kartları."><rect x="4" y="3" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">1. Külli '
+    'İrade</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Mutlak irade</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">2. Cüzi İrade</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sorumlu seçim</text><rect x="4" y="52" width="167" height="45" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">3. Tevekkül</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tedbir ve güven</text><rect x="179" y="52" width="167" '
+    'height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">4. Ecel &amp; Ömür</text><text x="262.5" '
+    'y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Takdir edilen '
+    'süre</text></svg>',
+ 1: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İnsan iradesi ve '
+    'sorumluluk döngüsü modeli."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">İNSAN İRADESİ VE</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">SORUMLULUK</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">DÖNGÜSÜ</text><rect x="179" y="3" width="167" '
+    'height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Akıl &amp; Cüzi İrade</text><text x="262.5" '
+    'y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Özgür Tercih · '
+    'Emek ·</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Verme</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Eylem &amp; Çaba</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Meşru Çalışma · ·</text><text x="87.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tedbir Alma</text><rect x="179" y="71" '
+    'width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Sonuç &amp; Mesuliyet</text><text x="262.5" '
+    'y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kişisel '
+    'Sorumluluk · ·</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Tevekkül Bilinci</text></svg>',
+ 2: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Evrensel yasalar '
+    'karşılaştırma şeması."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0f6b45">EVRENDEKİ ÖLÇÜ VE</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">YASALAR</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">(SÜNNETULLAH)</text><rect x="179" y="3" width="167" height="64" '
+    'rx="5" fill="#e3f6ea" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Fiziksel Yasalar</text><text x="262.5" y="49.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Madde ve Enerji</text><rect x="4" y="71" '
+    'width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Biyolojik Yasalar</text><text x="87.5" '
+    'y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Canlılar ve '
+    'Hayat</text><rect x="179" y="71" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" '
+    'y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Toplumsal '
+    'Yasalar</text><text x="262.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Adalet ve Ahlak</text></svg>',
+ 3: '<svg viewBox="0 0 350 141" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Doğru tevekkül dengesi '
+    'şeması."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" '
+    'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">DOĞRU TEVEKKÜL '
+    'ANLAYIŞI DENGESİ</text><rect x="4" y="31" width="342" height="62" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="11.0" y="48.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">1. '
+    'Kanat: Tedbir &amp; Gayret</text><text x="11.0" y="66.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Çalışma, emek, önlem</text><text x="11.0" y="85.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#ee7d12">Cüzi iradeyi kullanma</text><rect x="4" y="96" width="342" '
+    'height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="113.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">2. Kanat: Teslimiyet &amp; Dua</text><text '
+    'x="11.0" y="131.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sonucu '
+    'Allah’a bırakma · Huzur ve rıza hali</text></svg>',
+ 5: '<svg viewBox="0 0 350 142" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Başarı ve tevekkül '
+    'uygulama basamakları."><rect x="4" y="3" width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">BAŞARI '
+    'VE TEVEKKÜL UYGULAMA ADIMLARI</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="48.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">1. Karar: İradeyi koyma</text><rect x="4" y="59" width="342" height="25" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="76.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">2. Emek: Planlı çalışma</text><rect x="4" y="87" width="342" height="25" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="104.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">3. Gayret: Sınavda dikkat</text><rect x="4" y="115" width="342" height="25" '
+    'rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="132.3" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">4. Tevekkül: Huzurla güven</text></svg>',
+ 6: '<svg viewBox="0 0 350 137" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Toplumsal yasalar soru '
+    'işareti diyagramı."><rect x="4" y="3" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">TOPLUMLARIN</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">GELİŞİMİNİ</text><text x="87.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">DÜZENLEYEN</text><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">İLKELER</text><rect x="179" y="3" width="167" height="82" '
+    'rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Fiziksel Yasa</text><text x="262.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">Gezegen &amp; Su</text><rect x="4" y="89" '
+    'width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="87.5" y="107.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Biyolojik Yasa</text><text x="87.5" y="125.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#7c3aed">Canlı &amp; '
+    'Doğa</text><rect x="179" y="89" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" '
+    'y="107.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">[ ? '
+    ']</text><text x="262.5" y="125.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0f6b45">Adalet &amp; Barış</text></svg>',
+ 8: '<svg viewBox="0 0 350 160" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ayetler ve evrensel '
+    'yasalar tablosu."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">AYETLER '
+    'VE EVRENSEL YASA</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">EŞLEŞTİRMELERİ</text><rect x="4" y="49" width="342" height="25" rx="5" fill="#e3f6ea" '
+    'stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="66.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Gece &amp; Gündüz: Fiziksel Yasa</text><rect x="4" y="77" width="342" height="25" '
+    'rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="94.3" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İnsanın Yaratılışı: Biyolojik Yasa</text><rect x="4" y="105" '
+    'width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="122.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kavimlerin Akıbeti: Toplumsal '
+    'Yasa</text><rect x="4" y="133" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" '
+    'y="150.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ölçülü Yağmur: '
+    'Kader İlkesi</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = kader_kavram_kartlari()
-    s[0]['en_fazla'] = 34
-    s[1]['gorsel'] = kader_sorumluluk_akisi()
-    s[1]['en_fazla'] = 34
-    s[2]['gorsel'] = evrensel_yasalar_semasi()
-    s[2]['en_fazla'] = 34
-    s[3]['gorsel'] = tevekkul_terazisi()
-    s[3]['en_fazla'] = 34
-    s[5]['gorsel'] = sinav_tevekkul_basamaklari()
-    s[5]['en_fazla'] = 34
-    s[6]['gorsel'] = toplumsal_yasa_semasi()
-    s[6]['en_fazla'] = 34
-    s[8]['gorsel'] = ayet_yasa_kartlari()
-    s[8]['en_fazla'] = 34
-    s[10]['gorsel'] = kader_sifre_kutulari()
-    s[10]['en_fazla'] = 34
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

@@ -1,168 +1,98 @@
-"""11. sınıf Matematik 1. hafta (İki Nicel Değişken ve Veri Toplama) görselleri.
-SVG; insan figürü yok (K024); görsel içi yazı Noto Sans; max-height:34mm; çizgiler <=0.75pt."""
+"""11-matematik-1 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.2, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def degisken_turleri_kartlari():
-    kartlar = [
-        ('1. Nicel Değişken', 'Sayısal &amp; Ölçülebilir', MAVI, MAVI_A),
-        ('2. Nitel Değişken', 'Kategorik &amp; Özellik', YES, YES_A),
-        ('3. Evren (Kitle)', 'Tüm Hedef Bireyler', TUR, TUR_A),
-        ('4. Örneklem', 'Seçilen Temsil Grubu', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (ad, oz, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 8, 82, 108, z, r)
-        ic += kutu(x + 8, 16, 66, 26, r, r, r=4)
-        ic += yazi(x + 41, 33, str(i + 1), 12.0, '#ffffff')
-        ic += yazi(x + 41, 62, ad, 9.1, r)
-        ic += f'<line x1="{x + 8}" y1="72" x2="{x + 74}" y2="72" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 41, 92, oz, 8.4, LAC, ince=True)
-    return svg(360, 125, ic, 'İstatistiksel değişken ve örneklem kartları.', 34)
-
-
-def sacilma_grafigi_modeli():
-    ic = kutu(6, 6, 348, 112, MAVI_A, MAVI)
-    ic += yazi(180, 22, 'İKİ NİCEL DEĞİŞKEN SAÇILMA (SCATTER) GRAFİĞİ', 10.3, MAVI)
-    ic += kutu(20, 36, 145, 70, '#ffffff', MAVI)
-    ic += yazi(92, 56, 'X Ekseni: Süre (saat)', 9.4, MAVI)
-    ic += yazi(92, 76, 'Haftalık Kitap Okuma', 8.8, LAC, ince=True)
-    ic += yazi(92, 92, 'Nicel Veri 1', 8.8, MAVI, ince=True)
-
-    ic += kutu(195, 36, 145, 70, YES_A, YES)
-    ic += yazi(267, 56, 'Y Ekseni: Puan (0-100)', 9.4, YESIL_K)
-    ic += yazi(267, 76, 'Türkçe Sınav Başarısı', 8.8, LAC, ince=True)
-    ic += yazi(267, 92, 'Nicel Veri 2', 8.8, YESIL_K, ince=True)
-    return svg(360, 125, ic, 'İki nicel değişken saçılma eksenleri.', 34)
-
-
-def sacilma_koordinat_krokisi():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 20, 'EŞLEŞMİŞ VERİ ÇİFTLERİ (x, y) KOORDİNAT DÜZLEMİ', 10.2, YESIL_K)
-    noktalar = [
-        ('(2 s, 65 p)', 16),
-        ('(4 s, 75 p)', 102),
-        ('(6 s, 85 p)', 188),
-        ('(8 s, 95 p)', 274),
-    ]
-    for p, x in noktalar:
-        ic += kutu(x, 36, 70, 70, '#ffffff', YESIL_K)
-        ic += yazi(x + 35, 56, p, 9.4, YESIL_K)
-        ic += f'<line x1="{x + 6}" y1="64" x2="{x + 64}" y2="64" stroke="{YESIL_K}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 84, 'Veri Noktası', 8.4, LAC, ince=True)
-    return svg(360, 125, ic, 'Eşleşmiş veri noktaları saçılma şeması.', 34)
-
-
-def evren_orneklem_venn():
-    ic = kutu(6, 6, 348, 112, TUR_A, TUR)
-    ic += yazi(180, 22, 'EVREN VE ÖRNEKLEM İLİŞKİSİ MODELİ', 10.3, TUR)
-    ic += kutu(20, 38, 145, 68, '#ffffff', TUR)
-    ic += yazi(92, 58, 'HEDEF EVREN', 9.6, TUR)
-    ic += yazi(92, 78, 'Okuldaki 1200 Öğrenci', 8.8, LAC, ince=True)
-    ic += yazi(92, 92, 'Bütünsel ana kitle', 8.8, TUR, ince=True)
-
-    ic += kutu(195, 38, 145, 68, YES_A, YES)
-    ic += yazi(267, 58, 'TEMSİLİ ÖRNEKLEM', 9.6, YESIL_K)
-    ic += yazi(267, 78, 'Rastgele Seçilen 100 Kişi', 8.8, LAC, ince=True)
-    ic += yazi(267, 92, 'Yansız alt küme', 8.8, YESIL_K, ince=True)
-    return svg(360, 125, ic, 'Evren ve örneklem bağıntı kartı.', 34)
-
-
-def istatistik_arastirma_adimlari():
-    ic = kutu(6, 6, 348, 112, CAM_A, CAM)
-    ic += yazi(180, 20, 'İKİ NİCEL DEĞİŞKENLİ ARAŞTIRMA SÜRECİ', 10.2, CAM)
-    adımlar = [
-        ('1. Soru', 'Nicel Kriter', 16),
-        ('2. Örneklem', 'Yansız Seçim', 102),
-        ('3. Veri', 'Eşleşmiş (x,y)', 188),
-        ('4. Analiz', 'Saçılma Grafiği', 274),
-    ]
-    for b, d, x in adımlar:
-        ic += kutu(x, 36, 70, 70, '#ffffff', CAM)
-        ic += yazi(x + 35, 56, b, 9.3, CAM)
-        ic += f'<line x1="{x + 6}" y1="64" x2="{x + 64}" y2="64" stroke="{CAM}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 84, d, 8.2, LAC, ince=True)
-    return svg(360, 125, ic, 'Araştırma planlama basamakları şeması.', 34)
-
-
-def arastirma_sorusu_karsilastirma():
-    ic = kutu(6, 6, 348, 112, MOR_A, MOR)
-    ic += yazi(180, 22, 'ARAŞTIRMA SORUSU DEĞERLENDİRME KRİTERLERİ', 10.2, MOR)
-    ic += kutu(20, 36, 145, 70, '#ffffff', MOR)
-    ic += yazi(92, 56, 'Hatalı / Nitel Soru', 9.4, KIR)
-    ic += yazi(92, 76, 'En sevilen yemek nedir?', 8.8, LAC, ince=True)
-    ic += yazi(92, 92, 'Tekil ve nitel veri', 8.8, KIR, ince=True)
-
-    ic += kutu(195, 36, 145, 70, YES_A, YES)
-    ic += yazi(267, 56, 'Doğru / İki Nicel Soru', 9.4, YESIL_K)
-    ic += yazi(267, 76, 'Ekran süresi &amp; Uyku süresi', 8.8, LAC, ince=True)
-    ic += yazi(267, 92, 'İki sayısal nicelik bağı', 8.8, YESIL_K, ince=True)
-    return svg(360, 125, ic, 'İki nicel araştırma sorusu kriter kartı.', 34)
-
-
-def degisken_ciftleri_kartlari():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 20, 'DEĞİŞKEN ÇİFTLERİ VE İSTATİSTİKSEL TÜRÜ', 10.1, YESIL_K)
-    kartlar = [
-        ('Zaman &amp; Boy', 'İki Nicel', 16),
-        ('Takım Tercihi', 'Tekil Nitel', 102),
-        ('Hız &amp; Mesafe', 'İki Nicel', 188),
-        ('Göz Rengi', 'Tekil Nitel', 274),
-    ]
-    for s, snc, x in kartlar:
-        ic += kutu(x, 34, 70, 72, '#ffffff', YESIL_K)
-        ic += yazi(x + 35, 54, s, 8.8, YESIL_K)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{YESIL_K}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, snc, 8.6, LAC, ince=True)
-    return svg(360, 125, ic, 'Değişken türleri eşleştirme tablosu.', 34)
-
-
-def veri_sifre_kutulari():
-    ic = kutu(6, 6, 348, 112, MAVI_A, MAVI)
-    ic += yazi(180, 24, 'ŞİFRE KAVRAMI BULMA KUTULARI', 10.4, MAVI)
-    harfler = ['V', 'E', 'R', 'İ']
-    for i, h in enumerate(harfler):
-        x = 75 + i * 56
-        ic += kutu(x, 42, 48, 52, '#ffffff', MAVI, r=4)
-        ic += yazi(x + 24, 74, h, 16.0, MAVI)
-        ic += yazi(x + 24, 36, f'{i + 1}. Harf', 8.4, LAC, ince=True)
-    return svg(360, 125, ic, 'Veri kavramı şifre kutuları.', 34)
+GORSELLER = {0: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İstatistiksel değişken '
+    've örneklem kartları."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Nicel Değişken</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Sayısal &amp; Ölçülebilir</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">2. Nitel Değişken</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kategorik &amp; Özellik</text><rect x="4" '
+    'y="52" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. Evren '
+    '(Kitle)</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Tüm Hedef Bireyler</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Örneklem</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Seçilen Temsil Grubu</text></svg>',
+ 1: '<svg viewBox="0 0 350 140" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İki nicel değişken '
+    'saçılma eksenleri."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">İKİ '
+    'NİCEL DEĞİŞKEN SAÇILMA (SCATTER)</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">GRAFİĞİ</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">X Ekseni: Süre (saat)</text><text x="11.0" y="84.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Haftalık Kitap Okuma · Nicel Veri '
+    '1</text><rect x="4" y="95" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="112.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Y Ekseni: Puan '
+    '(0-100)</text><text x="11.0" y="130.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Türkçe Sınav Başarısı · Nicel Veri 2</text></svg>',
+ 2: '<svg viewBox="0 0 350 160" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eşleşmiş veri noktaları '
+    'saçılma şeması."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">EŞLEŞMİŞ VERİ '
+    'ÇİFTLERİ (x, y) KOORDİNAT</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">DÜZLEMİ</text><rect x="4" y="49" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="66.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">(2 s, 65 p): Veri Noktası</text><rect x="4" y="77" width="342" height="25" rx="5" fill="#e3f6ea" '
+    'stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="94.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">(4 s, 75 p): Veri Noktası</text><rect x="4" y="105" width="342" height="25" '
+    'rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="122.3" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(6 s, 85 p): Veri Noktası</text><rect x="4" y="133" width="342" '
+    'height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="150.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(8 s, 95 p): Veri Noktası</text></svg>',
+ 3: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Evren ve örneklem '
+    'bağıntı kartı."><rect x="4" y="3" width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">EVREN VE '
+    'ÖRNEKLEM İLİŞKİSİ MODELİ</text><rect x="4" y="31" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="48.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">HEDEF EVREN</text><text x="11.0" y="66.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Okuldaki 1200 Öğrenci · Bütünsel ana kitle</text><rect x="4" y="77" width="342" '
+    'height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="94.1" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">TEMSİLİ ÖRNEKLEM</text><text x="11.0" y="112.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Rastgele Seçilen 100 Kişi '
+    '· Yansız alt küme</text></svg>',
+ 5: '<svg viewBox="0 0 350 142" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Araştırma planlama '
+    'basamakları şeması."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">İKİ '
+    'NİCEL DEĞİŞKENLİ ARAŞTIRMA SÜRECİ</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="48.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">1. Soru: Nicel Kriter</text><rect x="4" y="59" width="342" height="25" rx="5" fill="#e0f4f8" '
+    'stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="76.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">2. Örneklem: Yansız Seçim</text><rect x="4" y="87" width="342" height="25" rx="5" '
+    'fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="104.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">3. Veri: Eşleşmiş (x,y)</text><rect x="4" y="115" width="342" height="25" rx="5" '
+    'fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="132.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">4. Analiz: Saçılma Grafiği</text></svg>',
+ 6: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İki nicel araştırma '
+    'sorusu kriter kartı."><rect x="4" y="3" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">ARAŞTIRMA SORUSU DEĞERLENDİRME</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">KRİTERLERİ</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d63a3a">Hatalı / Nitel Soru</text><text x="11.0" y="84.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">En sevilen yemek nedir? · Tekil ve nitel '
+    'veri</text><rect x="4" y="95" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="112.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Doğru / İki '
+    'Nicel Soru</text><text x="11.0" y="130.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Ekran süresi &amp; Uyku süresi</text><text x="11.0" y="149.2" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0f6b45">İki sayısal nicelik bağı</text></svg>',
+ 8: '<svg viewBox="0 0 350 142" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Değişken türleri '
+    'eşleştirme tablosu."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0f6b45">DEĞİŞKEN ÇİFTLERİ VE İSTATİSTİKSEL TÜRÜ</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#e3f6ea" '
+    'stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="48.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Zaman &amp; Boy: İki Nicel</text><rect x="4" y="59" width="342" height="25" '
+    'rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="76.3" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Takım Tercihi: Tekil Nitel</text><rect x="4" y="87" width="342" '
+    'height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="104.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hız &amp; Mesafe: İki Nicel</text><rect x="4" '
+    'y="115" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="132.3" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Göz Rengi: Tekil '
+    'Nitel</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = degisken_turleri_kartlari()
-    s[0]['en_fazla'] = 34
-    s[1]['gorsel'] = sacilma_grafigi_modeli()
-    s[1]['en_fazla'] = 34
-    s[2]['gorsel'] = sacilma_koordinat_krokisi()
-    s[2]['en_fazla'] = 34
-    s[3]['gorsel'] = evren_orneklem_venn()
-    s[3]['en_fazla'] = 34
-    s[5]['gorsel'] = istatistik_arastirma_adimlari()
-    s[5]['en_fazla'] = 34
-    s[6]['gorsel'] = arastirma_sorusu_karsilastirma()
-    s[6]['en_fazla'] = 34
-    s[8]['gorsel'] = degisken_ciftleri_kartlari()
-    s[8]['en_fazla'] = 34
-    s[10]['gorsel'] = veri_sifre_kutulari()
-    s[10]['en_fazla'] = 34
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

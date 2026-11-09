@@ -1,159 +1,112 @@
-"""11. sınıf İngilizce 2. hafta görselleri.
-SVG; insan figürü yok (K024); görsel içi yazı Noto Sans; max-height:34mm; çizgiler <=0.75pt."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
+"""11-ingilizce-2 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Career idioms overview '
+    'cards."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="21.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">1. Outside the '
+    'Box</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Creative Thinking</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">2. Climb Ladder</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Steady Promotion</text><rect x="4" y="52" width="167" height="45" '
+    'rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. Midnight Oil</text><text x="87.5" y="88.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hard Diligent Work</text><rect x="179" y="52" '
+    'width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Learn the Ropes</text><text x="262.5" '
+    'y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Basic '
+    'Procedures</text></svg>',
+ 1: '<svg viewBox="0 0 350 159" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Thinking outside the box '
+    'dialogue card."><rect x="4" y="3" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">ENTREPRENEURIAL '
+    'DIALOGUE &amp;</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">CREATIVITY</text><rect x="4" y="49" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Startup Founder A</text><text x="11.0" y="84.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">To lead the robotics field, we must [ ? ]</text><rect x="4" y="95" '
+    'width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="112.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Target Idiom Solution</text><text x="11.0" '
+    'y="130.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Think outside '
+    'the box</text><text x="11.0" y="149.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0f6b45">Innovative &amp; fresh methods</text></svg>',
+ 2: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Connected speech '
+    'reductions model."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">CONNECTED SPEECH: AUXILIARY VERB</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">REDUCTIONS</text><rect x="4" y="49" width="342" height="62" rx="5" fill="#e8eefe" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="66.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Standard Written Form</text><text x="11.0" y="84.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">I am going to start</text><text x="11.0" '
+    'y="103.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#2451d6">I want to build '
+    'a venture</text><rect x="4" y="114" width="342" height="62" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="11.0" y="131.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#ee7d12">Natural Spoken Form</text><text x="11.0" y="149.8" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">I&#x27;m gonna start</text><text x="11.0" y="168.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#ee7d12">I wanna build a venture</text></svg>',
+ 3: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Core entrepreneurial '
+    'traits diagram."><rect x="4" y="3" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">CORE QUALITIES '
+    'OF</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0f6b45">SUCCESSFUL</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">ENTREPRENEURS</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">Visionary</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Future Trends · AI &amp;</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tech Focus</text><rect '
+    'x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="89.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Risk '
+    'Tolerant</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Bold Choices ·</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Calculated Risk</text><rect x="179" y="71" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#2451d6" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Resilient</text><text x="262.5" y="107.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Perseverance ·</text><text x="262.5" '
+    'y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Overcomes '
+    'Failure</text></svg>',
+ 5: '<svg viewBox="0 0 350 134" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Startup development '
+    'stages timeline."><rect x="4" y="3" width="342" height="25" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">STAGES '
+    'OF LAUNCHING A TECH VENTURE</text><rect x="4" y="31" width="342" height="23" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="47.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#7c3aed">1. Concept:</tspan> Identify Need</text><rect x="4" y="57" '
+    'width="342" height="23" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="73.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#7c3aed">2. '
+    'Prototype:</tspan> Test Product</text><rect x="4" y="83" width="342" height="23" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="11.0" y="99.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#7c3aed">3. Pitch:</tspan> Raise Funding</text><rect x="4" y="109" '
+    'width="342" height="23" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="125.0" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257"><tspan font-weight="700" fill="#7c3aed">4. '
+    'Scale Up:</tspan> Hire &amp; Grow</text></svg>',
+ 6: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Motivational note to '
+    'future self card."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">NOTE TO '
+    'MY FUTURE SELF (CAREER</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">MOTIVATION)</text><rect x="4" y="49" width="342" height="62" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="66.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">Target Ambition</text><text x="11.0" y="84.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Dear Future Self,</text><text x="11.0" y="103.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0e8fa8">Master quantum AI computing</text><rect x="4" '
+    'y="114" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" y="131.4" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Impact &amp; '
+    'Growth</text><text x="11.0" y="149.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Launch green tech enterprise</text><text x="11.0" y="168.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0f6b45">Inspire future innovators</text></svg>',
+ 8: '<svg viewBox="0 0 350 160" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Speech reductions '
+    'matching card."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">SPOKEN '
+    'REDUCTIONS AND STANDARD</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">FORMS</text><rect x="4" y="49" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="66.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">gonna going to</text><rect x="4" y="77" width="342" height="25" rx="5" fill="#e3f6ea" '
+    'stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="94.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">wanna want to</text><rect x="4" y="105" width="342" height="25" rx="5" '
+    'fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="122.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">gotta got to</text><rect x="4" y="133" width="342" height="25" rx="5" '
+    'fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="150.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">kinda kind of</text></svg>'}
 
-def yazi(x, y, metin, boy=10.2, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def career_idioms_cards():
-    cards = [
-        ('1. Outside the Box', 'Creative Thinking', YES, YES_A),
-        ('2. Climb Ladder', 'Steady Promotion', MAVI, MAVI_A),
-        ('3. Midnight Oil', 'Hard Diligent Work', TUR, TUR_A),
-        ('4. Learn the Ropes', 'Basic Procedures', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (ad, oz, r, z) in enumerate(cards):
-        x = 6 + i * 88
-        ic += kutu(x, 8, 82, 108, z, r)
-        ic += kutu(x + 8, 16, 66, 26, r, r, r=4)
-        ic += yazi(x + 41, 33, str(i + 1), 12.0, '#ffffff')
-        ic += yazi(x + 41, 62, ad, 9.0, r)
-        ic += f'<line x1="{x + 8}" y1="72" x2="{x + 74}" y2="72" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 41, 92, oz, 8.4, LAC, ince=True)
-    return svg(360, 125, ic, 'Career idioms overview cards.', 34)
-
-def outside_the_box_dialogue():
-    ic = kutu(6, 6, 348, 112, TUR_A, TUR)
-    ic += yazi(180, 22, 'ENTREPRENEURIAL DIALOGUE &amp; CREATIVITY', 10.3, TUR)
-    ic += kutu(20, 36, 145, 70, '#ffffff', TUR)
-    ic += yazi(92, 56, 'Startup Founder A', 9.6, TUR)
-    ic += yazi(92, 76, 'To lead the robotics field,', 8.8, LAC, ince=True)
-    ic += yazi(92, 92, 'we must [ ? ]', 8.8, TUR, ince=True)
-
-    ic += kutu(195, 36, 145, 70, YES_A, YES)
-    ic += yazi(267, 56, 'Target Idiom Solution', 9.6, YESIL_K)
-    ic += yazi(267, 76, 'Think outside the box', 8.8, LAC, ince=True)
-    ic += yazi(267, 92, 'Innovative &amp; fresh methods', 8.8, YESIL_K, ince=True)
-    return svg(360, 125, ic, 'Thinking outside the box dialogue card.', 34)
-
-def connected_speech_card():
-    ic = kutu(6, 6, 348, 112, MAVI_A, MAVI)
-    ic += yazi(180, 22, 'CONNECTED SPEECH: AUXILIARY VERB REDUCTIONS', 10.3, MAVI)
-    ic += kutu(20, 36, 145, 70, '#ffffff', MAVI)
-    ic += yazi(92, 56, 'Standard Written Form', 9.4, MAVI)
-    ic += yazi(92, 76, 'I am going to start', 8.8, LAC, ince=True)
-    ic += yazi(92, 92, 'I want to build a venture', 8.8, MAVI, ince=True)
-
-    ic += kutu(195, 36, 145, 70, TUR_A, TUR)
-    ic += yazi(267, 56, 'Natural Spoken Form', 9.4, TUR)
-    ic += yazi(267, 76, 'I\'m gonna start', 8.8, LAC, ince=True)
-    ic += yazi(267, 92, 'I wanna build a venture', 8.8, TUR, ince=True)
-    return svg(360, 125, ic, 'Connected speech reductions model.', 34)
-
-def entrepreneur_traits_diagram():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 22, 'CORE QUALITIES OF SUCCESSFUL ENTREPRENEURS', 10.3, YESIL_K)
-    ic += kutu(20, 38, 95, 68, '#ffffff', YES)
-    ic += yazi(67, 58, 'Visionary', 9.4, YESIL_K)
-    ic += yazi(67, 78, 'Future Trends', 8.8, LAC, ince=True)
-    ic += yazi(67, 92, 'AI &amp; Tech Focus', 8.8, YESIL_K, ince=True)
-
-    ic += kutu(132, 38, 95, 68, '#ffffff', TUR)
-    ic += yazi(179, 58, 'Risk Tolerant', 9.4, TUR)
-    ic += yazi(179, 78, 'Bold Choices', 8.8, LAC, ince=True)
-    ic += yazi(179, 92, 'Calculated Risk', 8.8, TUR, ince=True)
-
-    ic += kutu(245, 38, 95, 68, '#ffffff', MAVI)
-    ic += yazi(292, 58, 'Resilient', 9.4, MAVI)
-    ic += yazi(292, 78, 'Perseverance', 8.8, LAC, ince=True)
-    ic += yazi(292, 92, 'Overcomes Failure', 8.8, MAVI, ince=True)
-    return svg(360, 125, ic, 'Core entrepreneurial traits diagram.', 34)
-
-def startup_launch_steps():
-    ic = kutu(6, 6, 348, 112, MOR_A, MOR)
-    ic += yazi(180, 20, 'STAGES OF LAUNCHING A TECH VENTURE', 10.2, MOR)
-    steps = [
-        ('1. Concept', 'Identify Need', 16),
-        ('2. Prototype', 'Test Product', 102),
-        ('3. Pitch', 'Raise Funding', 188),
-        ('4. Scale Up', 'Hire &amp; Grow', 274),
-    ]
-    for b, d, x in steps:
-        ic += kutu(x, 36, 70, 70, '#ffffff', MOR)
-        ic += yazi(x + 35, 56, b, 9.3, MOR)
-        ic += f'<line x1="{x + 6}" y1="64" x2="{x + 64}" y2="64" stroke="{MOR}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 84, d, 8.4, LAC, ince=True)
-    return svg(360, 125, ic, 'Startup development stages timeline.', 34)
-
-def future_self_note_card():
-    ic = kutu(6, 6, 348, 112, CAM_A, CAM)
-    ic += yazi(180, 22, 'NOTE TO MY FUTURE SELF (CAREER MOTIVATION)', 10.3, CAM)
-    ic += kutu(20, 36, 145, 70, '#ffffff', CAM)
-    ic += yazi(92, 56, 'Target Ambition', 9.4, CAM)
-    ic += yazi(92, 76, 'Dear Future Self,', 8.8, LAC, ince=True)
-    ic += yazi(92, 92, 'Master quantum AI computing', 8.8, CAM, ince=True)
-
-    ic += kutu(195, 36, 145, 70, YES_A, YES)
-    ic += yazi(267, 56, 'Impact &amp; Growth', 9.4, YESIL_K)
-    ic += yazi(267, 76, 'Launch green tech enterprise', 8.8, LAC, ince=True)
-    ic += yazi(267, 92, 'Inspire future innovators', 8.8, YESIL_K, ince=True)
-    return svg(360, 125, ic, 'Motivational note to future self card.', 34)
-
-def reductions_matching_card():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 20, 'SPOKEN REDUCTIONS AND STANDARD FORMS', 10.1, YESIL_K)
-    kartlar = [
-        ('gonna', 'going to', 16),
-        ('wanna', 'want to', 102),
-        ('gotta', 'got to', 188),
-        ('kinda', 'kind of', 274),
-    ]
-    for s, snc, x in kartlar:
-        ic += kutu(x, 34, 70, 72, '#ffffff', YESIL_K)
-        ic += yazi(x + 35, 54, s, 9.0, YESIL_K)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{YESIL_K}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, snc, 8.8, LAC, ince=True)
-    return svg(360, 125, ic, 'Speech reductions matching card.', 34)
-
-def career_password_boxes():
-    ic = kutu(6, 6, 348, 112, TUR_A, TUR)
-    ic += yazi(180, 24, 'KEYWORD PASSWORD BOXES', 10.4, TUR)
-    harfler = ['C', 'A', 'R', 'E', 'E', 'R']
-    for i, h in enumerate(harfler):
-        x = 42 + i * 46
-        ic += kutu(x, 42, 40, 52, '#ffffff', TUR, r=4)
-        ic += yazi(x + 20, 74, h, 16.0, TUR)
-        ic += yazi(x + 20, 36, f'{i + 1}. Letter', 8.2, LAC, ince=True)
-    return svg(360, 125, ic, 'Career keyword password boxes.', 34)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = career_idioms_cards()
-    s[0]['en_fazla'] = 34
-    s[1]['gorsel'] = outside_the_box_dialogue()
-    s[1]['en_fazla'] = 34
-    s[2]['gorsel'] = connected_speech_card()
-    s[2]['en_fazla'] = 34
-    s[3]['gorsel'] = entrepreneur_traits_diagram()
-    s[3]['en_fazla'] = 34
-    s[5]['gorsel'] = startup_launch_steps()
-    s[5]['en_fazla'] = 34
-    s[6]['gorsel'] = future_self_note_card()
-    s[6]['en_fazla'] = 34
-    s[8]['gorsel'] = reductions_matching_card()
-    s[8]['en_fazla'] = 34
-    s[10]['gorsel'] = career_password_boxes()
-    s[10]['en_fazla'] = 34
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

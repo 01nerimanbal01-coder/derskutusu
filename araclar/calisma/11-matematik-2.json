@@ -31,12 +31,9 @@
         [
           "r = 0,05",
           "İki nicel değişken arasında doğrusal ilişki yok (ilişkisiz)"
-        ],
-        [
-          "r = -0,40",
-          "Orta-zayıf düzeyde negatif doğrusal ilişki"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -49,7 +46,8 @@
         "Değişkenler arasında tam bağımsızlığı",
         "Korelasyon katsayısının sıfır olduğunu"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "en_fazla": 34
     },
     {
       "tur": "kisa",
@@ -57,7 +55,8 @@
       "gorsel_var": true,
       "soru": "Korelasyon katsayısı (r) matematiksel olarak hangi iki reel sayı aralığında değer alır?",
       "cevap": "-1 ile +1 kapalı aralığında (-1 <= r <= +1) değer alır.",
-      "satir": 2
+      "satir": 2,
+      "en_fazla": 34
     },
     {
       "tur": "dy",
@@ -81,7 +80,8 @@
           "metin": "Negatif korelasyonda değişkenlerden biri artarken diğeri de eş zamanlı artış gösterir.",
           "dogru": false
         }
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "tablo",
@@ -96,14 +96,14 @@
         [
           "Ders çalışma süresi ve sınav başarısı",
           "Pozitif doğrusal",
-          "0,70 &lt; r &lt; 0,90"
+          "0,70 < r < 0,90"
         ],
         [
           "Aracın hızı ve varış süresi",
           {
             "b": "Negatif doğrusal"
           },
-          "-0,80 &lt; r &lt; -0,95"
+          "-0,80 < r < -0,95"
         ],
         [
           "Ayakkabı numarası ve matematik zekâsı",
@@ -116,7 +116,7 @@
           "Rakım (yükseklik) ve açık hava basıncı",
           "Negatif doğrusal",
           {
-            "b": "-0,85 &lt; r &lt; -1,00"
+            "b": "-0,85 < r < -1,00"
           }
         ]
       ]
@@ -131,7 +131,8 @@
         "Verilerin koordinat düzleminde serpme diyagramı olarak işaretlenmesi",
         "Noktaların dağılımına uygun bir doğrusal eğilim çizgisinin çizilmesi",
         "Korelasyon katsayısının (r) hesaplanıp ilişkinin gücünün yorumlanması"
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -144,7 +145,8 @@
         "Noktaların sağa yukarı dik bir doğru boyunca dizildiği diyagram",
         "Noktaların yatay düz bir çizgi üzerinde toplandığı diyagram"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "en_fazla": 34
     },
     {
       "tur": "kisa",
@@ -160,22 +162,19 @@
       "soru": "Sol sütundaki r katsayısı aralıklarını sağ sütundaki niteleme sınıflarıyla eşleştiriniz.",
       "ciftler": [
         [
-          "0,80 &lt;= |r| &lt;= 1,00",
+          "0,80 <= |r| <= 1,00",
           "Çok güçlü doğrusal ilişki"
         ],
         [
-          "0,60 &lt;= |r| &lt; 0,80",
+          "0,60 <= |r| < 0,80",
           "Güçlü doğrusal ilişki"
         ],
         [
-          "0,40 &lt;= |r| &lt; 0,60",
+          "0,40 <= |r| < 0,60",
           "Orta düzeyde doğrusal ilişki"
-        ],
-        [
-          "0,00 &lt;= |r| &lt; 0,20",
-          "İhmal edilebilir / Çok zayıf ilişki"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "dy",
@@ -203,7 +202,6 @@
     {
       "tur": "sifre",
       "duzey": "hatirla",
-      "gorsel_var": true,
       "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı kutulardaki harflerle şifre kavramı bulunuz.",
       "satirlar": [
         {
@@ -237,7 +235,8 @@
           "anahtar": 0
         }
       ],
-      "sonuc": "SERPME"
+      "sonuc": "SERPME",
+      "en_fazla": 34
     },
     {
       "tur": "acik",

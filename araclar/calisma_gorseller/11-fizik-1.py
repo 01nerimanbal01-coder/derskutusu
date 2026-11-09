@@ -1,167 +1,105 @@
-"""11. sınıf Fizik 1. hafta (Serbest Düşmede Hız Değişimi ve İvme) görselleri.
-SVG; insan figürü yok (K024); görsel içi yazı Noto Sans; max-height:34mm; çizgiler <=0.75pt."""
+"""11-fizik-1 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fdeaea', '#e0f4f8'
-ALTIN, YESIL_K = '#c9a227', '#0f6b45'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="500"'
-
-
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
-
-
-def yazi(x, y, metin, boy=10.2, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=0.75):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-
-def serbest_dusme_formulleri():
-    kartlar = [
-        ('1. Başlangıç', 'v0 = 0 (İlk hızsız)', MAVI, MAVI_A),
-        ('2. Anlık Hız', 'v = g · t', YES, YES_A),
-        ('3. Düşülen Yol', 'h = (1/2)·g·t²', TUR, TUR_A),
-        ('4. İvme Sabiti', 'a = g ≈ 10 m/s²', MOR, MOR_A),
-    ]
-    ic = ''
-    for i, (ad, oz, r, z) in enumerate(kartlar):
-        x = 6 + i * 88
-        ic += kutu(x, 8, 82, 108, z, r)
-        ic += kutu(x + 8, 16, 66, 26, r, r, r=4)
-        ic += yazi(x + 41, 33, str(i + 1), 12.0, '#ffffff')
-        ic += yazi(x + 41, 62, ad, 9.2, r)
-        ic += f'<line x1="{x + 8}" y1="72" x2="{x + 74}" y2="72" stroke="{r}" stroke-width="0.75"/>'
-        ic += yazi(x + 41, 92, oz, 8.6, LAC, ince=True)
-    return svg(360, 125, ic, 'Serbest düşme formülleri kartı.', 34)
-
-
-def havasiz_tup_deneyi():
-    ic = kutu(6, 6, 348, 112, MAVI_A, MAVI)
-    ic += yazi(180, 22, 'HAVASIZ ORTAMDA SERBEST DÜŞME DENEYİ', 10.3, MAVI)
-    ic += kutu(20, 36, 145, 70, YES_A, YES)
-    ic += yazi(92, 56, 'm Kütleli Bilye', 9.8, YESIL_K)
-    ic += yazi(92, 76, 'İvme: a = g = 10 m/s²', 8.9, LAC, ince=True)
-    ic += yazi(92, 92, 'Düşüş Süresi: t', 8.9, YESIL_K, ince=True)
-
-    ic += kutu(195, 36, 145, 70, TUR_A, TUR)
-    ic += yazi(267, 56, '10m Kütleli Gülle', 9.8, TUR)
-    ic += yazi(267, 76, 'İvme: a = g = 10 m/s²', 8.9, LAC, ince=True)
-    ic += yazi(267, 92, 'Düşüş Süresi: t (Aynı!)', 8.9, TUR, ince=True)
-    return svg(360, 125, ic, 'Havasız tüpte iki farklı kütlenin düşüşü.', 34)
-
-
-def saniye_adim_kesiti():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 20, '3 SANİYELİK SERBEST DÜŞMEDE HIZ VE YOL ADIMLARI', 10.2, YESIL_K)
-    adimlar = [
-        ('t = 1 s', 'v = 10 m/s · h = 5 m', 16),
-        ('t = 2 s', 'v = 20 m/s · h = 20 m', 130),
-        ('t = 3 s', 'v = 30 m/s · h = 45 m', 244),
-    ]
-    for zmn, dty, x in adimlar:
-        ic += kutu(x, 36, 100, 70, '#ffffff', YESIL_K)
-        ic += yazi(x + 50, 56, zmn, 9.6, YESIL_K)
-        ic += f'<line x1="{x + 8}" y1="66" x2="{x + 92}" y2="66" stroke="{YESIL_K}" stroke-width="0.75"/>'
-        ic += yazi(x + 50, 86, dty, 8.4, LAC, ince=True)
-    return svg(360, 125, ic, 'Saniyelerdeki hız ve konum adımları.', 34)
-
-
-def ivme_vektor_semasi():
-    ic = kutu(6, 6, 348, 112, TUR_A, TUR)
-    ic += yazi(180, 22, 'YER ÇEKİMİ İVMESİ VE SABİT DEĞERİ', 10.3, TUR)
-    ic += kutu(20, 38, 145, 68, '#ffffff', TUR)
-    ic += yazi(92, 58, 'Yer Çekimi İvmesi (g)', 9.6, TUR)
-    ic += yazi(92, 78, 'g ≈ 10 m/s² (Sabit)', 8.9, LAC, ince=True)
-    ic += yazi(92, 92, 'Yönü: Daima aşağı', 8.9, TUR, ince=True)
-
-    ic += kutu(195, 38, 145, 68, MAVI_A, MAVI)
-    ic += yazi(267, 58, 'Hız Değişimi (Δv)', 9.6, MAVI)
-    ic += yazi(267, 78, 'Δv = g · Δt = 10 m/s', 8.9, LAC, ince=True)
-    ic += yazi(267, 92, 'Her saniye 10 artar', 8.9, MAVI, ince=True)
-    return svg(360, 125, ic, 'Yer çekimi ivmesi ve hız değişimi şeması.', 34)
-
-
-def h_3h_5h_yol_kesiti():
-    ic = kutu(6, 6, 348, 112, CAM_A, CAM)
-    ic += yazi(180, 20, 'EŞİT ZAMAN ARALIKLARINDA ALINAN DÜŞEY YOLLAR', 10.2, CAM)
-    yollar = [
-        ('1. sn (0-1s)', 'Alınan: 5 m (h)', 16),
-        ('2. sn (1-2s)', 'Alınan: 15 m (3h)', 102),
-        ('3. sn (2-3s)', 'Alınan: 25 m (5h)', 188),
-        ('4. sn (3-4s)', 'Alınan: 35 m (7h)', 274),
-    ]
-    for b, d, x in yollar:
-        ic += kutu(x, 36, 70, 70, '#ffffff', CAM)
-        ic += yazi(x + 35, 56, b, 9.2, CAM)
-        ic += f'<line x1="{x + 6}" y1="64" x2="{x + 64}" y2="64" stroke="{CAM}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 84, d, 8.3, LAC, ince=True)
-    return svg(360, 125, ic, 'h, 3h, 5h, 7h yolu oranları şeması.', 34)
-
-
-def hiz_zaman_grafigi_semasi():
-    ic = kutu(6, 6, 348, 112, MOR_A, MOR)
-    ic += yazi(180, 22, 'SERBEST DÜŞME HIZ-ZAMAN (v-t) GRAFİK ÖZETİ', 10.2, MOR)
-    ic += kutu(20, 36, 145, 70, '#ffffff', MOR)
-    ic += yazi(92, 56, 'Eğim: İvme (a = g)', 9.6, MOR)
-    ic += yazi(92, 76, 'Eğim = Δv / Δt = 10 m/s²', 8.8, LAC, ince=True)
-    ic += yazi(92, 92, 'Doğrusal artan hız', 8.8, MOR, ince=True)
-
-    ic += kutu(195, 36, 145, 70, YES_A, YES)
-    ic += yazi(267, 56, 'Alan: Alınan Yol (h)', 9.6, YESIL_K)
-    ic += yazi(267, 76, '0-4 s Alan = (4·40)/2 = 80 m', 8.8, LAC, ince=True)
-    ic += yazi(267, 92, 'Toplam düşüş yolu', 8.8, YESIL_K, ince=True)
-    return svg(360, 125, ic, 'Hız zaman grafiği eğim ve alan analizi.', 34)
-
-
-def fizik_eslestirme_kartlari():
-    ic = kutu(6, 6, 348, 112, YES_A, YES)
-    ic += yazi(180, 20, 'SÜRE - HIZ - YOL EŞLEŞTİRME VERİLERİ', 10.1, YESIL_K)
-    kartlar = [
-        ('t = 2 s Hız', '20 m/s', 16),
-        ('t = 2 s Yol', '20 metre', 102),
-        ('h = 45 m Süre', '3 saniye', 188),
-        ('1 s Hız Artışı', '10 m/s (g)', 274),
-    ]
-    for s, snc, x in kartlar:
-        ic += kutu(x, 34, 70, 72, '#ffffff', YESIL_K)
-        ic += yazi(x + 35, 54, s, 9.0, YESIL_K)
-        ic += f'<line x1="{x + 6}" y1="62" x2="{x + 64}" y2="62" stroke="{YESIL_K}" stroke-width="0.75"/>'
-        ic += yazi(x + 35, 82, snc, 8.8, LAC, ince=True)
-    return svg(360, 125, ic, 'Serbest düşme büyüklükleri kartı.', 34)
-
-
-def konum_sifre_kutulari():
-    ic = kutu(6, 6, 348, 112, MAVI_A, MAVI)
-    ic += yazi(180, 24, 'ŞİFRE KAVRAMI BULMA KUTULARI', 10.4, MAVI)
-    harfler = ['K', 'O', 'N', 'U', 'M']
-    for i, h in enumerate(harfler):
-        x = 55 + i * 52
-        ic += kutu(x, 42, 44, 52, '#ffffff', MAVI, r=4)
-        ic += yazi(x + 22, 74, h, 16.0, MAVI)
-        ic += yazi(x + 22, 36, f'{i + 1}. Harf', 8.4, LAC, ince=True)
-    return svg(360, 125, ic, 'Konum kavramı şifre kutuları.', 34)
+GORSELLER = {0: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Serbest düşme temel '
+    'bağıntıları."><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Başlangıç '
+    'Koşulu</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İlk hız sıfırdır (v₀ = 0)</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">2. Anlık Hız v = g · t</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">bağıntısı</text><rect x="4" y="52" width="167" height="64" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">3. Düşülen Yol h =</text><text x="66.1" y="87.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">1</text><line x1="57.6" y1="92.0" x2="74.6" '
+    'y2="92.0" stroke="#ee7d12" stroke-width="0.75"/><text x="66.1" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">2</text><text x="78.1" y="98.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">· g · t²</text><rect x="179" y="52" width="167" height="64" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Yer Çekimi İvmesi</text><text x="262.5" y="88.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">a = g ≈ 10 '
+    'm/s²</text><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">(Sabit)</text></svg>',
+ 1: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Havasız tüpte iki farklı '
+    'kütlenin düşüşü."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">HAVASIZ '
+    'ORTAMDA SERBEST DÜŞME DENEYİ</text><rect x="4" y="31" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="11.0" y="48.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">m Kütleli Bilye</text><text x="11.0" y="66.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İvme: a = g = 10 m/s² · Düşüş Süresi: t</text><rect x="4" y="77" '
+    'width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="94.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">10m Kütleli Gülle</text><text x="11.0" '
+    'y="112.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İvme: a = g = '
+    '10 m/s² · Düşüş Süresi: t</text></svg>',
+ 2: '<svg viewBox="0 0 350 107" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Serbest düşmede hız ve '
+    'yol ilişkisi."><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Hız Artışı '
+    'İlkesi</text><text x="87.5" y="58.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Her saniye hız g</text><text x="87.5" y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">kadar artar v = g · t</text><rect x="179" y="3" width="167" height="101" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Düşey Yol İlkesi</text><text x="262.5" y="39.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yol zamanın</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">karesiyle '
+    'orantılıdır</text><text x="242.3" y="85.9" text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">h =</text><text x="254.3" y="75.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">1</text><line x1="245.8" y1="79.9" x2="262.8" y2="79.9" stroke="#0b2257" stroke-width="0.75"/><text '
+    'x="254.3" y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">2</text><text x="266.3" y="85.9" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">· g · t²</text></svg>',
+ 3: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yer çekimi ivmesi ve hız '
+    'değişimi şeması."><rect x="4" y="3" width="342" height="25" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">YER '
+    'ÇEKİMİ İVMESİ VE SABİT DEĞERİ</text><rect x="4" y="31" width="342" height="43" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="11.0" y="48.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Yer Çekimi İvmesi (g) g ≈ 10 m/s² (Sabit)</text><text x="11.0" y="66.5" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#ee7d12">Yönü: Daima aşağı</text><rect x="4" y="77" '
+    'width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" y="94.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Hız Değişimi (Δv)</text><text x="11.0" '
+    'y="112.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Δv = g · Δt = '
+    '10 m/s · Her saniye 10 artar</text></svg>',
+ 5: '<svg viewBox="0 0 350 160" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="h, 3h, 5h, 7h yolu '
+    'oranları şeması."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text '
+    'x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0e8fa8">EŞİT '
+    'ZAMAN ARALIKLARINDA ALINAN</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0e8fa8">DÜŞEY YOLLAR</text><rect x="4" y="49" width="342" height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" '
+    'stroke-width="0.75"/><text x="11.0" y="66.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">1. sn (0-1s): Alınan: 5 m (h)</text><rect x="4" y="77" width="342" height="25" rx="5" fill="#e0f4f8" '
+    'stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="94.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">2. sn (1-2s): Alınan: 15 m (3h)</text><rect x="4" y="105" width="342" height="25" '
+    'rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="122.3" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">3. sn (2-3s): Alınan: 25 m (5h)</text><rect x="4" y="133" width="342" '
+    'height="25" rx="5" fill="#e0f4f8" stroke="#0e8fa8" stroke-width="0.75"/><text x="11.0" y="150.3" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">4. sn (3-4s): Alınan: 35 m (7h)</text></svg>',
+ 6: '<svg viewBox="0 0 350 131" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Serbest düşme hız-zaman '
+    '(v-t) grafiği."><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Grafik Verileri '
+    '(0\xa0-\xa04 s) t = 0 anında hız: v₀ = 0</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">m/s t = 4 s anında hız: v = 40 m/s</text><rect x="4" y="49" width="342" '
+    'height="80" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Alan ve Eğim İlkesi</text><text x="58.9" y="93.8" '
+    'text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Eğim =</text><text x="73.6" '
+    'y="83.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Δv</text><line '
+    'x1="62.4" y1="87.8" x2="84.7" y2="87.8" stroke="#0b2257" stroke-width="0.75"/><text x="73.6" y="103.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Δt</text><text x="88.2" y="93.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">= g (Sabit ivme) v-t '
+    'grafiği</text><text x="11.0" y="121.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">altındaki alan = Δh</text></svg>',
+ 8: '<svg viewBox="0 0 350 142" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Serbest düşme '
+    'büyüklükleri kartı."><rect x="4" y="3" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text '
+    'x="11.0" y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">SÜRE - '
+    'HIZ - YOL EŞLEŞTİRME VERİLERİ</text><rect x="4" y="31" width="342" height="25" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="48.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">t = 2 s Hız: 20 m/s</text><rect x="4" y="59" width="342" height="25" rx="5" fill="#e3f6ea" '
+    'stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="76.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">t = 2 s Yol: 20 metre</text><rect x="4" y="87" width="342" height="25" rx="5" '
+    'fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="104.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">h = 45 m Süre: 3 saniye</text><rect x="4" y="115" width="342" height="25" rx="5" '
+    'fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="132.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">1 s Hız Artışı: 10 m/s (g)</text></svg>'}
 
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = serbest_dusme_formulleri()
-    s[0]['en_fazla'] = 34
-    s[1]['gorsel'] = havasiz_tup_deneyi()
-    s[1]['en_fazla'] = 34
-    s[2]['gorsel'] = saniye_adim_kesiti()
-    s[2]['en_fazla'] = 34
-    s[3]['gorsel'] = ivme_vektor_semasi()
-    s[3]['en_fazla'] = 34
-    s[5]['gorsel'] = h_3h_5h_yol_kesiti()
-    s[5]['en_fazla'] = 34
-    s[6]['gorsel'] = hiz_zaman_grafigi_semasi()
-    s[6]['en_fazla'] = 34
-    s[8]['gorsel'] = fizik_eslestirme_kartlari()
-    s[8]['en_fazla'] = 34
-    s[10]['gorsel'] = konum_sifre_kutulari()
-    s[10]['en_fazla'] = 34
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

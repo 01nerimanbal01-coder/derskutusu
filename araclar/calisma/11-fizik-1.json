@@ -9,8 +9,8 @@
     "FİZ.11.1.1. Serbest düşme hareketi yapan cisimlerin ivmesine yönelik tümevarımsal akıl yürütebilme."
   ],
   "hatirla": [
-    "Serbest düşme; hava sürtünmesinin ihmal edildiği ortamda yalnızca yer çekimi kuvveti etkisiyle ilk hızsız (v₀ = 0) bırakılan cismin düzgün hızlanan hareketidir.",
-    "Havasız ortamda düşen tüm cisimlerin ivmesi yer çekimi ivmesine (g ≈ 10 m/s²) eşittir; ivme cismin kütlesine, hacmine veya geometrisine bağlı değildir.",
+    "Serbest düşme; hava sürtünmesinin ihmal edildiği ortamda yalnızca yer çekimi kuvveti etkisiyle ilk hızsız (v{alt:0} = 0) bırakılan cismin düzgün hızlanan hareketidir.",
+    "Havasız ortamda düşen tüm cisimlerin ivmesi yer çekimi ivmesine (g ≈ 10 m/s{us:|2}) eşittir; ivme cismin kütlesine, hacmine veya geometrisine bağlı değildir.",
     "Serbest düşmede cisim her saniye hızını g kadar artırır (10 m/s, 20 m/s, 30 m/s...) ve ardışık eşit zaman aralıklarında katettiği yollar h, 3h, 5h, 7h oranlarını izler."
   ],
   "sorular": [
@@ -31,12 +31,9 @@
         [
           "Düşülen yol (h)",
           "t sürede {kesir:1|2}·g·t{us:|2} bağıntısıyla katettiği düşey mesafe"
-        ],
-        [
-          "Hız-zaman doğrusunun eğimi",
-          "Hareketteki sabit yer çekimi ivmesinin sayısal değerini vermesi"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -49,7 +46,8 @@
         "Demir bilye kütlesi küçük olduğu için yer çekiminden daha az etkilenip geç düşer.",
         "Kütlesi büyük olan cismin ivmesi kütleyle orantılı olarak 10 katına çıkar."
       ],
-      "dogru": 1
+      "dogru": 1,
+      "en_fazla": 34
     },
     {
       "tur": "kisa",
@@ -57,7 +55,8 @@
       "gorsel_var": true,
       "soru": "Hava direncinin ihmal edildiği ortamda serbest bırakılan bir taş 3 saniye sonra yere ulaşıyorsa yere çarpma hızı kaç m/s'dir? (g = 10 m/s{us:|2})",
       "cevap": "v = g·t = 10 · 3 = 30 m/s'dir.",
-      "satir": 2
+      "satir": 2,
+      "en_fazla": 34
     },
     {
       "tur": "dy",
@@ -81,7 +80,8 @@
           "metin": "Cismin kütlesi iki katına çıkarılırsa yer çekimi ivmesi de iki katına çıkar.",
           "dogru": false
         }
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "tablo",
@@ -134,11 +134,12 @@
       "gorsel_var": true,
       "soru": "Hava direncinin ihmal edildiği ortamda serbest bırakılan bir cismin ilk 4 saniye içinde her bir saniyede aldığı yolları küçükten büyüğe sıralayınız.",
       "ogeler": [
-        "1. saniyede alınan düşey yol: 5 m (h)",
-        "2. saniyede alınan düşey yol: 15 m (3h)",
-        "3. saniyede alınan düşey yol: 25 m (5h)",
-        "4. saniyede alınan düşey yol: 35 m (7h)"
-      ]
+        "Birinci saniyede alınan düşey yol: 5 m (h)",
+        "İkinci saniyede alınan düşey yol: 15 m (3h)",
+        "Üçüncü saniyede alınan düşey yol: 25 m (5h)",
+        "Dördüncü saniyede alınan düşey yol: 35 m (7h)"
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
@@ -151,7 +152,8 @@
         "80 metre",
         "100 metre"
       ],
-      "dogru": 2
+      "dogru": 2,
+      "en_fazla": 34
     },
     {
       "tur": "kisa",
@@ -177,12 +179,9 @@
         [
           "45 metre yüksekten düşüş süresi",
           "3 saniye"
-        ],
-        [
-          "Her saniyedeki hız artış miktarı",
-          "10 m/s"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "dy",
@@ -210,7 +209,6 @@
     {
       "tur": "sifre",
       "duzey": "hatirla",
-      "gorsel_var": true,
       "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı kutulardaki harflerle şifre kavramı bulunuz.",
       "satirlar": [
         {
@@ -239,13 +237,14 @@
           "anahtar": 0
         }
       ],
-      "sonuc": "KONUM"
+      "sonuc": "KONUM",
+      "en_fazla": 34
     },
     {
       "tur": "acik",
       "duzey": "ust",
       "soru": "Havasız ortamda serbest düşen bir cismin kütlesi neden yere düşme süresini etkilemez?",
-      "cevap": "g = F/m bağıntısında m kütleleri sadeleştiği için ivme kütleden bağımsızdır.",
+      "cevap": "g = {kesir:F|m} bağıntısında m kütleleri sadeleştiği için ivme kütleden bağımsızdır.",
       "satir": 2
     }
   ]

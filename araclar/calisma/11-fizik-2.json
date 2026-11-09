@@ -9,7 +9,7 @@
     "FİZ.11.1.2. Serbest düşme hareketi ile ilgili kanıt kullanabilme."
   ],
   "hatirla": [
-    "Serbest düşmede anlık hız v = g·t ve alınan düşey yol h = {kesir:1|2}·g·t{us:|2} bağıntısıyla hesaplanır; ivme sabit yer çekimi ivmesidir (g ≈ 10 m/s²).",
+    "Serbest düşmede anlık hız v = g·t ve alınan düşey yol h = {kesir:1|2}·g·t{us:|2} bağıntısıyla hesaplanır; ivme sabit yer çekimi ivmesidir (g ≈ 10 m/s{us:|2}).",
     "Eşit zaman aralıklarında (t sürede h, 2t sürede 4h, 3t sürede 9h...) katettiği yollar h, 3h, 5h, 7h oranlarını izler.",
     "Hız-zaman grafiğinin eğimi sabit yer çekimi ivmesini (g), grafiğin altında kalan alan ise yer değiştirmeyi (düşülen toplam yüksekliği) verir."
   ],
@@ -22,7 +22,7 @@
       "ciftler": [
         [
           "Hız-zaman grafiğinin eğimi",
-          "Hareketteki sabit yer çekimi ivmesi (g = 10 m/s²)"
+          "Hareketteki sabit yer çekimi ivmesi (g = 10 m/s{us:|2})"
         ],
         [
           "Hız-zaman grafiğinin altındaki alan",
@@ -31,33 +31,32 @@
         [
           "Konum-zaman grafiğinin eğrisi",
           "Zamanın karesiyle orantılı hızlanan parabolik yol değişimi"
-        ],
-        [
-          "İvme-zaman grafiğinin altındaki alan",
-          "Cismin hızındaki birim zamandaki toplam artış miktarı (Δv)"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki v-t grafiğine göre, serbest düşen bir cismin ilk 3 saniyede aldığı yol ile 4. saniye içinde tek başına aldığı yol kaçar metredir? (g = 10 m/s²)",
+      "soru": "Görseldeki v-t grafiğine göre, serbest düşen bir cismin ilk 3 saniyede aldığı yol ile 4. saniye içinde tek başına aldığı yol kaçar metredir? (g = 10 m/s{us:|2})",
       "secenekler": [
         "İlk 3 saniye: 30 m — 4. saniyede: 40 m",
         "İlk 3 saniye: 45 m — 4. saniyede: 35 m",
         "İlk 3 saniye: 20 m — 4. saniyede: 25 m",
         "İlk 3 saniye: 45 m — 4. saniyede: 80 m"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "en_fazla": 34
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Hava direncinin ihmal edildiği ortamda serbest bırakılan cisim 80 metre yüksekten yere kaç saniyede düşer? (g = 10 m/s²)",
-      "cevap": "h = {kesir:1|2}gt² => 80 = 5t² => t = 4 saniyede düşer.",
-      "satir": 2
+      "soru": "Hava direncinin ihmal edildiği ortamda serbest bırakılan cisim 80 metre yüksekten yere kaç saniyede düşer? (g = 10 m/s{us:|2})",
+      "cevap": "h = {kesir:1|2}gt{us:|2} => 80 = 5t{us:|2} => t = 4 saniyede düşer.",
+      "satir": 2,
+      "en_fazla": 34
     },
     {
       "tur": "dy",
@@ -81,12 +80,13 @@
           "metin": "Havasız ortamda aşağı yönde ilk hızla fırlatılan cisim ilk hızsız serbest düşme yapar.",
           "dogru": false
         }
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "tablo",
       "duzey": "uygula",
-      "soru": "Tabloda serbest düşen bir cismin t, 2t, 3t ve 4t anlarındaki hız ve konum verilerini inceleyerek boş hücreleri tamamlayınız. (g = 10 m/s², t = 1 s)",
+      "soru": "Tabloda serbest düşen bir cismin t, 2t, 3t ve 4t anlarındaki hız ve konum verilerini inceleyerek boş hücreleri tamamlayınız. (g = 10 m/s{us:|2}, t = 1 s)",
       "basliklar": [
         "Zaman Evresi",
         "Anlık Hız v (m/s)",
@@ -138,33 +138,35 @@
         "1 - 2 saniye aralığında alınan yol: 15 metre (3h)",
         "2 - 3 saniye aralığında alınan yol: 25 metre (5h)",
         "3 - 4 saniye aralığında alınan yol: 35 metre (7h)"
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "coktan",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki ivme-zaman grafiğinde serbest düşen cismin ivmesi a = 10 m/s² olarak sabittir. 5 saniyelik düşüş sonunda cismin hızındaki toplam değişim kaç m/s olur?",
+      "soru": "Görseldeki ivme-zaman grafiğinde serbest düşen cismin ivmesi a = 10 m/s{us:|2} olarak sabittir. 5 saniyelik düşüş sonunda cismin hızındaki toplam değişim kaç m/s olur?",
       "secenekler": [
         "25 m/s",
         "50 m/s",
         "75 m/s",
         "125 m/s"
       ],
-      "dogru": 1
+      "dogru": 1,
+      "en_fazla": 34
     },
     {
       "tur": "kisa",
       "duzey": "uygula",
       "soru": "Serbest düşen bir cismin t sürede ulaştığı v hızını düşülen h yoluna bağlayan zamansız hız formülü nedir?",
-      "cevap": "v² = 2·g·h bağıntısıdır.",
+      "cevap": "v{us:|2} = 2·g·h bağıntısıdır.",
       "satir": 2
     },
     {
       "tur": "eslestir",
       "duzey": "hatirla",
       "gorsel_var": true,
-      "soru": "Sol sütundaki düşüş sürelerini sağ sütundaki toplam düşüş mesafeleriyle eşleştiriniz. (g = 10 m/s²)",
+      "soru": "Sol sütundaki düşüş sürelerini sağ sütundaki toplam düşüş mesafeleriyle eşleştiriniz. (g = 10 m/s{us:|2})",
       "ciftler": [
         [
           "1 saniye düşüş",
@@ -177,12 +179,9 @@
         [
           "3 saniye düşüş",
           "45 metre toplam yol"
-        ],
-        [
-          "4 saniye düşüş",
-          "80 metre toplam yol"
         ]
-      ]
+      ],
+      "en_fazla": 34
     },
     {
       "tur": "dy",
@@ -210,7 +209,6 @@
     {
       "tur": "sifre",
       "duzey": "hatirla",
-      "gorsel_var": true,
       "soru": "İpuçlarındaki kavramları kutulara yazınız. Numaralı kutulardaki harflerle şifre kavramı bulunuz.",
       "satirlar": [
         {
@@ -244,7 +242,8 @@
           "anahtar": 0
         }
       ],
-      "sonuc": "GRAFİK"
+      "sonuc": "GRAFİK",
+      "en_fazla": 34
     },
     {
       "tur": "acik",
