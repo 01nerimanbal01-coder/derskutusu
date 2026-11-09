@@ -1,85 +1,137 @@
-"""9. sınıf kimya 5. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-kimya-5 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Orbital türleri ve '
+    'elektron kapasiteleri"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">s (l = '
+    '0)</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">1 kutu · Maks 2 e⁻</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">p (l = 1)</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">3 kutu · Maks 6 e⁻</text><rect x="4" y="52" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">d (l = 2)</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">5 kutu · Maks 10 e⁻</text><rect x="179" y="52" width="167" '
+    'height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">f (l = 3)</text><text x="262.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">7 kutu · Maks 14 '
+    'e⁻</text></svg>',
+ 1: '<svg viewBox="0 0 350 150" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Açısal momentum kuantum '
+    'sayıları ve Madelung enerji ilkesi"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Açısal Momentum (l) Değerleri s orbitali: l =</text><text x="11.0" y="38.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">0 · p orbitali: l = 1 · d orbitali: l = 2 · f '
+    'orbitali:</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">l = 3</text><rect x="4" y="68" width="342" height="80" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="85.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Kletchkowski - Madelung Kuralı</text><text x="11.0" y="103.6" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">1) (n + l) değeri büyük olanın enerjisi</text><text x="11.0" '
+    'y="122.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">büyüktür · 2) '
+    '(n + l) eşitse n büyük olanın</text><text x="11.0" y="140.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">enerjisi büyüktür</text></svg>',
+ 2: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Enerji düzeylerinde '
+    'orbital ve elektron kapasitesi bağıntıları"><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Katmandaki Orbital</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Sayısı</text><text x="87.5" y="58.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Her n. enerji</text><text x="87.5" y="76.7" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">düzeyinde toplam '
+    'n²</text><text x="87.5" y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">orbital bulunur</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Maksimum Elektron</text><text x="262.5" y="39.9" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Kapasitesi</text><text x="262.5" y="58.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Her n. katman en</text><text x="262.5" '
+    'y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">fazla 2n² '
+    'elektron</text><text x="262.5" y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">alabilir</text><rect x="4" y="108" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">K (n = 1) ve L (n = 2)</text><text x="87.5" y="144.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">n = 1 → yalnız s · n =</text><text x="87.5" y="163.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">2 → s ve p '
+    'alt</text><text x="87.5" y="181.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0f6b45">kabukları</text><rect x="179" y="108" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">M Katmanı (n = 3)</text><text x="262.5" y="144.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bulunan orbital</text><text x="262.5" y="163.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">türleri ve elektron</text><text x="262.5" '
+    'y="181.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kapasitesi = '
+    '?</text></svg>',
+ 3: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Atom orbitallerinin '
+    'temel kuralları"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. Katman '
+    '(K)</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Yalnız 1s vardır</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">2. Katman (L)</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">2s ve 2\u200cp vardır</text><rect x="4" y="52" width="167" '
+    'height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Eş Enerji</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">2px = 2py = '
+    '2pz</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Kapasite</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">1 kutuda maks 2 e⁻</text></svg>',
+ 5: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aufbau bağıl enerji '
+    'dizilimi akışı"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">3d '
+    '(n+l=5)</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">4s&#x27;den sonra dolar</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">3\u200cp (n+l=4)</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">M katmanı p</text><rect x="4" y="52" width="167" height="45" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">2\u200cp (n+l=3)</text><text x="87.5" y="88.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">3 eş orbital</text><rect x="179" y="52" '
+    'width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">2s (n+l=2)</text><text x="262.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Küresel alt '
+    'kabuk</text></svg>',
+ 6: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bohr atom modeli ve '
+    'Modern Atom Teorisi karşılaştırması"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Bohr Atom Modeli (1913)</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Elektronlar çekirdek çevresinde sabit</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yarıçaplı çemberlerde '
+    'dolanır</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Modern Atom '
+    'Teorisi</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Heisenberg Belirsizlik İlkesi: Elektronun yeri</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ve hızı aynı anda kesin bilinemez</text></svg>',
+ 7: '<svg viewBox="0 0 350 197" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Orbital şekilleri ve '
+    'elektron doluluk gösterimi"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Alt Kabuk Geometrileri</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Küresel simetrik ve çift loblu (x, y, z</text><text x="11.0" y="57.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yönelimli) '
+    'bölgeler</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" '
+    'y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Enerji Düzeyi '
+    'Başlangıcı</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Her katmanda yeni bir alt kabuk türü</text><text x="11.0" y="122.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">devreye girer</text><rect x="4" y="133" '
+    'width="342" height="62" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="150.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Orbital Doluluk Durumu</text><text x="11.0" '
+    'y="168.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Boş: ( ) · Tek '
+    'elektronlu: (↑) · Çift elektronlu:</text><text x="11.0" y="187.2" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">(↑↓)</text></svg>',
+ 8: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kuantum sayıları ve '
+    'Pauli ilkesi"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Baş Kuantum '
+    '(n)</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Katman ve uzaklık</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Açısal (l)</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Orbital türü (0..3)</text><rect x="4" y="52" width="167" height="45" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Dejener</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Aynı alt kabuk eş E</text><rect x="179" y="52" width="167" '
+    'height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Pauli İlkesi</text><text x="262.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Zıt spinli 2 '
+    'e⁻</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def g0():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    ogeler = [('s (l = 0)', '1 kutu · Maks 2 e⁻', MAVI, MAVI_A), ('p (l = 1)', '3 kutu · Maks 6 e⁻', YES, YES_A), ('d (l = 2)', '5 kutu · Maks 10 e⁻', TUR, TUR_A), ('f (l = 3)', '7 kutu · Maks 14 e⁻', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(ogeler):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 9.8, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, alt, 8.2, LAC, ince=True)
-    return svg(360, 115, ic, 'Orbital türleri ve elektron kapasiteleri', 34)
-
-def g1():
-    b, s1, s2 = ('MADELUNG-KLETCHKOWSKI (n + l) BAĞIL ENERJİ KURALI', '4s (4+0 = 4)  <  3d (3+2 = 5, n=3)  <  4p (4+1 = 5, n=4)', '(n+l) büyüdükçe enerji artar; (n+l) eşitse n sayısı büyük olanın enerjisi büyüktür.')
-    ic = kutu(4, 4, 352, 107, MAVI_A, MAVI) + yazi(180, 24, b, 10, MAVI)
-    ic += kutu(16, 36, 328, 64, '#f4f8fe', MAVI) + yazi(180, 58, s1, 9.8, LAC) + yazi(180, 82, s2, 8.8, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Madelung-Kletchkowski (n+l) bağıl enerji kuralı', 34)
-
-def g2():
-    b, s1, s2 = ('ENERJİ DÜZEYLERİNDE ORBİTAL (n²) VE ELEKTRON (2n²)HESABI', 'K (n=1): 1 orb, 2 e⁻ | L (n=2): 4 orb, 8 e⁻ | M (n=3): 9 orb, 18 e⁻', '3. katmanda (M) 3s (1), 3p (3) ve 3d (5) olmak üzere toplam 9 orbital bulunur.')
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI) + kutu(12, 12, 336, 91, TUR_A, TUR, 8)
-    ic += yazi(180, 32, b, 10, TUR) + yazi(180, 58, s1, 9.6, LAC) + yazi(180, 82, s2, 8.8, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Katmanlarda orbital ve elektron sayısı formülü', 34)
-
-def g3():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    ilkeler = [('1. Katman (K)', 'Yalnız 1s vardır', MAVI, MAVI_A), ('2. Katman (L)', '2s ve 2p vardır', TUR, TUR_A), ('Eş Enerji', '2px = 2py = 2pz', YES, YES_A), ('Kapasite', '1 kutuda maks 2 e⁻', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(ilkeler):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 9.8, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, alt, 8.2, LAC, ince=True)
-    return svg(360, 115, ic, 'Atom orbitallerinin temel kuralları', 34)
-
-def g5():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    adimlari = [('1. 2s (n+l=2)', 'Küresel alt kabuk', YES, YES_A), ('2. 2p (n+l=3)', '3 eş orbital', MAVI, MAVI_A), ('3. 3p (n+l=4)', 'M katmanı p', TUR, TUR_A), ('4. 3d (n+l=5)', '4s\'den sonra dolar', MOR, MOR_A)]
-    for i, (bas, alt, c, d) in enumerate(adimlari):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, bas, 9.5, c) + yazi(x + 40, 68, alt, 8.2, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},56 {x+85},52 {x+85},60" fill="{GRI}"/>'
-    return svg(360, 115, ic, 'Aufbau bağıl enerji dizilimi akışı', 34)
-
-def g6():
-    b, s1, s2 = ('BOHR YÖRÜNGESİ İLE MODERN ATOM ORBİTALİ FARKI', 'Yörünge: 2 boyutlu dairesel çizgi  |  Orbital: 3 boyutlu olasılık bulutu', 'Heisenberg Belirsizlik İlkesi gereği elektronun yeri ve hızı aynı anda kesin bilinemez.')
-    ic = kutu(4, 4, 352, 107, CAM_A, CAM) + yazi(180, 26, b, 10, CAM)
-    ic += kutu(20, 38, 320, 62, '#eaf7fa', CAM) + yazi(180, 60, s1, 9.8, LAC) + yazi(180, 84, s2, 8.8, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Bohr yörüngesi ve modern orbital karşılaştırması', 34)
-
-def g7():
-    b, s1, s2 = ('ORBİTAL GEOMETRİSİ VE KUTU DİYAGRAMI GÖSTERİMİ', 's: Küresel (n ≥ 1)  ·  p: Çift loblu (n ≥ 2)  ·  d: n ≥ 3  ·  f: n ≥ 4', 'Boş orbital: ( )   |   Yarı dolu orbital: (↑)   |   Tam dolu orbital: (↑↓)')
-    ic = kutu(4, 4, 352, 107, YES_A, YES) + yazi(180, 24, b, 10, YES)
-    ic += kutu(16, 36, 328, 64, '#eaf8f0', YES) + yazi(180, 58, s1, 9.6, LAC) + yazi(180, 82, s2, 8.8, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Orbital şekilleri ve doluluk türleri', 34)
-
-def g8():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    ogeler = [('Baş Kuantum (n)', 'Katman ve uzaklık', MAVI, MAVI_A), ('Açısal (l)', 'Orbital türü (0..3)', TUR, TUR_A), ('Dejener', 'Aynı alt kabuk eş E', YES, YES_A), ('Pauli İlkesi', 'Zıt spinli 2 e⁻', MOR, MOR_A)]
-    for i, (b, tr, c, d) in enumerate(ogeler):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 9.8, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, tr, 8.2, LAC, ince=True)
-    return svg(360, 115, ic, 'Kuantum sayıları ve Pauli ilkesi', 34)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[7]['gorsel'] = g7()
-    s[8]['gorsel'] = g8()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

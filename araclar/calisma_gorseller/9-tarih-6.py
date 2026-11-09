@@ -1,111 +1,131 @@
-"""9. sınıf Tarih 6. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-tarih-6 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tarihsel bilgi üretimi '
+    '5T basamakları"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Tarama</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kaynak ve belge</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">arama</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">2. Tasnif</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Zaman/mekân/konu</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">tasnifi</text><rect '
+    'x="4" y="71" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="98.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">3. Tahlil</text><text '
+    'x="87.5" y="117.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bilgi '
+    'yeterlilik analizi</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">4. Tenkit &amp; 5. Terkip</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Eleştiri ve sentez</text><text x="262.5" y="126.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yazımı</text></svg>',
+ 1: '<svg viewBox="0 0 350 132" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tarihsel kaynakların '
+    'oluştuğu döneme göre sınıflandırılması"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Ana (Birinci El) Kaynak Ölçütü</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Olayın yaşandığı dönemde veya hemen</text><text x="11.0" '
+    'y="57.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">sonrasında '
+    'oluşturulmuş özgün kanıt</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">İkinci El Kaynak Ölçütü</text><text x="11.0" y="103.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Olaydan uzun süre sonra ana kaynaklara</text><text x="11.0" y="122.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">dayanılarak hazırlanan '
+    'inceleme eseri</text></svg>',
+ 2: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tarih araştırmalarında '
+    'tasnif türleri örneği"><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Örnek '
+    'Araştırma</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Başlığı</text><text x="87.5" y="58.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">19. Yüzyılda</text><text x="87.5" y="76.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Balkanlar’da Mimari</text><text x="87.5" y="95.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tarihi</text><rect x="179" y="3" width="167" '
+    'height="101" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="30.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">19. Yüzyılda</text><text x="262.5" y="49.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Zamana göre</text><text '
+    'x="262.5" y="67.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">sınıflandırma (Çağ /</text><text x="262.5" y="85.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Yüzyıl)</text><rect x="4" y="108" width="167" height="82" rx="5" fill="#e3f6ea" '
+    'stroke="#0f6b45" stroke-width="0.75"/><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">Balkanlar’da</text><text x="87.5" y="144.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mekâna göre</text><text x="87.5" y="163.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">sınıflandırma</text><text x="87.5" y="181.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">(Coğrafya / Bölge)</text><rect x="179" y="108" width="167" height="82" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Mimari Tarihi</text><text x="262.5" y="144.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Konuya göre</text><text x="262.5" y="163.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">sınıflandırma (Alan '
+    '/</text><text x="262.5" y="181.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Tema)</text></svg>',
+ 3: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dış tenkit, iç tenkit ve '
+    'değişen bilgi"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Deney '
+    'Yoktur</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Kanıt: Belge ve</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">buluntu</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">Dış Tenkit</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kâğıt, mühür,</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">orijinallik</text><rect '
+    'x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">İç Tenkit</text><text '
+    'x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İçerik ve yazar</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">doğruluğu</text><rect x="179" y="71" width="167" height="64" rx="5" '
+    'fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Dinamik Bilgi</text><text x="262.5" y="107.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yeni kanıt bilgiyi</text><text x="262.5" '
+    'y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">yeniler</text></svg>',
+ 5: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="5T tarihsel araştırma '
+    'yöntemi aşamaları"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Terkip</text><text x="87.5" y="49.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Nesnel eseri oluştur</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Tahlil ve Tenkit</text><text x="262.5" y="39.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yeterlilik ve</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">doğrulama</text><rect '
+    'x="4" y="71" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Tasnif</text><text '
+    'x="87.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Yıl '
+    've konuya ayır</text><rect x="179" y="71" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Tarama</text><text x="262.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Arşivden belge topla</text></svg>',
+ 6: '<svg viewBox="0 0 350 150" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tarihsel araştırmada '
+    'bağlamsallık ilkesi"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Dönemin '
+    'Koşulları</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Tarihsel olaylar yaşandığı çağın siyasi, sosyal</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ve teknik imkânlarıyla incelenir</text><rect x="4" y="68" '
+    'width="342" height="80" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="85.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Yöntem Hatası</text><text x="11.0" y="103.6" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Geçmişteki bir olayı '
+    'bugünün değer yargıları</text><text x="11.0" y="122.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">ve kavramlarıyla yargılamak tarihsel</text><text x="11.0" y="140.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">gerçekliği bozar</text></svg>',
+ 8: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Malzeme türüne göre '
+    'tarihsel kaynaklar"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Yazılı '
+    'Kaynak</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Tablet, kitabe,</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">ferman</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">Sözlü Kaynak</text><text x="262.5" y="39.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Destan, efsane,</text><text x="262.5" '
+    'y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">atasözü</text><rect x="4" y="71" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Arkeolojik Eşya</text><text x="87.5" y="107.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kılıç, çanak, lahit</text><rect x="179" y="71" width="167" '
+    'height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Sesli/Görüntülü</text><text x="262.5" '
+    'y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Fotoğraf, '
+    'film, kayıt</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def dörtlu_kart(etiket, kartlar):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (b, alt, c, d) in enumerate(kartlar):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 9.8, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, alt, 8.2, LAC, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def akis_karti(etiket, adimlar):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (bas, alt, c, d) in enumerate(adimlar):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, bas, 9.8, c) + yazi(x + 40, 68, alt, 8.2, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},56 {x+85},52 {x+85},60" fill="{GRI}"/>'
-    return svg(360, 115, ic, etiket, 34)
-
-def uclu_pano(etiket, ust_baslik, kutular, ana_renk=MAVI, ana_acik=MAVI_A):
-    ic = kutu(4, 4, 352, 107, ana_acik, ana_renk) + yazi(180, 23, ust_baslik, 10, ana_renk)
-    for i, (b, alt, c, d) in enumerate(kutular):
-        x = 14 + i * 112
-        ic += kutu(x, 34, 104, 66, d, c) + yazi(x + 52, 55, b, 9.5, c) + yazi(x + 52, 78, alt, 8.2, SOLUK, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def bilgi_panosu(etiket, baslik, satir1, satir2, c=CAM, d=CAM_A, ic_d='#eaf7fa'):
-    ic = kutu(4, 4, 352, 107, d, c) + yazi(180, 25, baslik, 10, c)
-    ic += kutu(16, 36, 328, 64, ic_d, c) + yazi(180, 58, satir1, 9.6, LAC) + yazi(180, 82, satir2, 8.6, SOLUK, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def g0():
-    return dörtlu_kart('Tarihsel bilgi üretimi 5T basamakları', [
-        ('1. Tarama', 'Kaynak ve belge arama', MAVI, MAVI_A),
-        ('2. Tasnif', 'Zaman/mekân/konu tasnifi', YES, YES_A),
-        ('3. Tahlil', 'Bilgi yeterlilik analizi', TUR, TUR_A),
-        ('4. Tenkit & 5. Terkip', 'Eleştiri ve sentez yazımı', MOR, MOR_A)
-    ])
-
-def g1():
-    return uclu_pano('Birinci ve ikinci elden kaynaklar', 'OLUŞTUĞU DÖNEME GÖRE TARİHSEL KAYNAKLAR', [
-        ('Birinci Elden Kaynak', 'Olay dönemine ait kanıt', YES, YES_A),
-        ('Özgün Örnekler', 'Kitabe, ferman, sikke, tablet', MAVI, '#f4f8fe'),
-        ('İkinci Elden Kaynak', 'Sonradan yazılan tez/kitap', TUR, TUR_A)
-    ], MAVI, MAVI_A)
-
-def g2():
-    return bilgi_panosu('Üçlü tasnif (sınıflandırma) sistemi', 'TASNİF (SINIFLANDIRMA) TÜRLERİ · ZAMAN, MEKÂN VE KONU',
-        'Zamana Göre: Orta Çağ Tarihi  ·  Mekâna Göre: Anadolu Tarihi  ·  Konuya Göre: Tıp Tarihi',
-        '"Orta Çağ’da Anadolu’da Tıp Tarihi" başlığı her üç tasnif türünü aynı anda içerir.', CAM, CAM_A)
-
-def g3():
-    return dörtlu_kart('Dış tenkit, iç tenkit ve değişen bilgi', [
-        ('Deney Yoktur', 'Kanıt: Belge ve buluntu', MAVI, MAVI_A),
-        ('Dış Tenkit', 'Kağıt, mühür, orijinallik', TUR, TUR_A),
-        ('İç Tenkit', 'İçerik ve yazar doğruluğu', YES, YES_A),
-        ('Dinamik Bilgi', 'Yeni kanıt bilgiyi yeniler', MOR, MOR_A)
-    ])
-
-def g5():
-    return akis_karti('5T tarihsel araştırma akış şeması', [
-        ('1. Tarama', 'Arşivden belge topla', MAVI, MAVI_A),
-        ('2. Tasnif', 'Yıl ve konuya ayır', YES, YES_A),
-        ('3. Tahlil & 4. Tenkit', 'Yeterlilik ve doğrulama', TUR, TUR_A),
-        ('5. Terkip', 'Nesnel eseri oluştur', MOR, MOR_A)
-    ])
-
-def g6():
-    return uclu_pano('Tarihsel empati ve anakronizm yasağı', 'TARİHSEL ARAŞTIRMADA NESNELLİK VE BAĞLAMSALLIK', [
-        ('Dönemin Şartları', 'Yaşandığı çağla değerlendir', YES, YES_A),
-        ('Anakronizm Hatası', 'Çağları ve kavramı karıştırma', KIR, KIR_A),
-        ('Çoklu Bakış Açısı', 'Farklı arşivleri karşılaştır', MAVI, '#f4f8fe')
-    ], TUR, TUR_A)
-
-def g7():
-    return bilgi_panosu('İç tenkit, arkeolojik kaynak ve bağlam', 'İÇ TENKİT · ARKEOLOJİK BULUNTU · DÖNEM ŞARTLARI',
-        'İç Tenkit: Yazarın tarafsızlığını ve bilgilerin doğruluğunu çapraz kaynakla denetleme',
-        'Tarih Öncesi dönemlerde yazı olmadığı için yalnız arkeolojik buluntular kullanılır.', YES, YES_A, '#eaf8f0')
-
-def g8():
-    return dörtlu_kart('Malzeme türüne göre tarihsel kaynaklar', [
-        ('Yazılı Kaynak', 'Tablet, kitabe, ferman', MAVI, MAVI_A),
-        ('Sözlü Kaynak', 'Destan, efsane, atasözü', TUR, TUR_A),
-        ('Arkeolojik Eşya', 'Kılıç, çanak, lahit', YES, YES_A),
-        ('Sesli/Görüntülü', 'Fotoğraf, film, kayıt', MOR, MOR_A)
-    ])
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[7]['gorsel'] = g7()
-    s[8]['gorsel'] = g8()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

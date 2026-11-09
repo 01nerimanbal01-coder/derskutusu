@@ -33,10 +33,6 @@
         [
           "Boyun",
           "Birbirinden ayrı iki tepe arasında kalan çevresine göre alçak geçit"
-        ],
-        [
-          "Falez (Yalıyar)",
-          "İzohips eğrilerinin deniz kıyısında üst üste çakıştığı dik kıyı uçurumu"
         ]
       ]
     },
@@ -46,10 +42,10 @@
       "gorsel_var": true,
       "soru": "Görseldeki eğim bağıntısına göre 200 m yükseltideki K noktası ile 1000 m yükseltideki L noktası arası yatay uzaklık 16 km ise eğim yüzde kaçtır?",
       "secenekler": [
-        "%5",
-        "%8",
-        "%10",
-        "%20"
+        "%5‌",
+        "%8‌",
+        "%10‌",
+        "%12‌"
       ],
       "dogru": 0,
       "cozum": "h = 1000 - 200 = 800 m ve L = 16 km = 16.000 m olduğundan Eğim (%) = {kesir:800|16000} × 100 = %5 bulunur."
@@ -59,7 +55,7 @@
       "duzey": "kavrama",
       "gorsel_var": true,
       "soru": "Fiziki Türkiye haritasında Çukurova'nın yeşil, Konya Ovası'nın ise sarı tonlarla gösterilmesinin temel nedeni nedir?",
-      "cevap": "Fiziki haritada renkler yükselti basamağını gösterir; Çukurova 0-200 m, Konya.",
+      "cevap": "Renkler yükseltiyi gösterir; Çukurova 0-200 m (yeşil), Konya ise 1000 m (sarı) basamağındadır.",
       "satir": 2
     },
     {
@@ -99,9 +95,7 @@
         [
           "Yeşil Renk Basamağı",
           "Fiziki renklendirme",
-          {
-            "b": "0 - 500 metre arası alçak yükselti"
-          }
+          "0 - 500 metre arası alçak yükselti"
         ],
         [
           "Kahverengi Basamağı",
@@ -130,7 +124,7 @@
       "tur": "siralama",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki harita okuma ve mekânsal çözümleme adımlarını uygulama sırasına diziniz.",
+      "soru": "Görseldeki harita okuma ve yorumlama basamaklarını baştan sona doğru uygulama sırasına diziniz.",
       "ogeler": [
         "Harita başlığını okuyarak konuyu ve kullanım amacını belirleme",
         "Lejantı (harita anahtarını) inceleyerek sembol ve renkleri çözme",
@@ -198,10 +192,6 @@
         [
           "Noktalama Haritası",
           "Nüfus veya tarım ürünü miktarını belirli değerli noktalarla gösteren harita"
-        ],
-        [
-          "İzoplet (Eş Değer)",
-          "İzoterm veya izobar gibi sürekli verileri eş değer eğrilerle gösteren harita"
         ]
       ]
     },
@@ -236,25 +226,25 @@
         {
           "ipucu": "Harita üzerindeki sembol ve renklerin açıklandığı harita anahtarı (6 harf)",
           "cevap": "LEJANT",
-          "anahtar": 1
-        },
-        {
-          "ipucu": "Büyük ölçekli, sadece dağları değil mülkiyet sınırlarını da gösteren çizim (8 harf)",
-          "cevap": "KADASTRO",
-          "anahtar": 2
-        },
-        {
-          "ipucu": "Deniz seviyesinden aynı yükseltideki noktaları birleştiren eğri (7 harf)",
-          "cevap": "İZOHİPS",
-          "anahtar": 0
+          "anahtar": 5
         },
         {
           "ipucu": "Haritadaki küçültme oranını belirten temel bileşen (5 harf)",
           "cevap": "ÖLÇEK",
-          "anahtar": 4
+          "anahtar": 3
+        },
+        {
+          "ipucu": "İki nokta arasındaki hattın yandan görünüşünü veren kesit (6 harf)",
+          "cevap": "PROFİL",
+          "anahtar": 0
+        },
+        {
+          "ipucu": "Yükselti farkının yatay uzaklığa oranıyla bulunan diklik (4 harf)",
+          "cevap": "EĞİM",
+          "anahtar": 0
         }
       ],
-      "sonuc": "EDİK"
+      "sonuc": "TEPE"
     },
     {
       "tur": "acik",

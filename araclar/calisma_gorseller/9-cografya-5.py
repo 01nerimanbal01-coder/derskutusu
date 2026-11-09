@@ -1,83 +1,147 @@
-"""9. sınıf Coğrafya 5. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-cografya-5 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Topografya yer şekilleri '
+    'özet kartı"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Vadi</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Sivri uç yükseğe</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bakar</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Sırt</text><text x="262.5" y="49.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sivri uç alçağa bakar</text><rect x="4" '
+    'y="71" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="98.6" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Boyun</text><text '
+    'x="87.5" y="117.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İki '
+    'tepe arası geçit</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Falez</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Kıyıda çakışan</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">eğriler</text></svg>',
+ 1: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="K ve L noktaları arası '
+    'yükselti ve yatay uzaklık verileri"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">K Noktası Yükseltisi</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Deniz seviyesinden</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">200 metre yüksekte</text><rect x="179" y="3" '
+    'width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">L Noktası Yükseltisi</text><text x="262.5" '
+    'y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Deniz '
+    'seviyesinden</text><text x="262.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">1000 metre yüksekte</text><rect x="4" y="71" width="167" height="82" rx="5" fill="#e3f6ea" '
+    'stroke="#0f6b45" stroke-width="0.75"/><text x="87.5" y="89.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">Yatay Uzaklık (L)</text><text x="87.5" y="107.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">K ile L arası kuş</text><text x="87.5" '
+    'y="126.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">uçuşu 16 km (1 '
+    'km =</text><text x="87.5" y="144.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">1000 m)</text><rect x="179" y="71" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="98.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Eğim Bağıntısı</text><text x="270.6" y="126.0" text-anchor="end" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Eğim (%) =</text><text x="282.6" y="115.2" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">h</text><line x1="274.1" y1="120.0" x2="291.1" y2="120.0" '
+    'stroke="#0b2257" stroke-width="0.75"/><text x="282.6" y="135.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">L</text><text x="294.6" y="126.0" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">× 100</text></svg>',
+ 2: '<svg viewBox="0 0 350 88" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Çukurova ve Konya Ovası '
+    'fiziki harita yükselti verileri"><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Çukurova (Adana)</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Fiziki haritada yeşil</text><text x="87.5" y="58.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ton · Yükselti: '
+    '0–200</text><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">m</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Konya '
+    'Ovası</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Fiziki haritada sarı</text><text x="262.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">ton · Yükselti:</text><text x="262.5" y="76.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">950–1050 m</text></svg>',
+ 3: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İzohips haritalarının '
+    'temel kuralları"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Kıyı '
+    'Çizgisi</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Her zaman 0</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">metredir</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Eküidistans</text><text x="262.5" y="49.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Sabit yükselti farkı</text><rect x="4" y="71" width="167" height="45" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Sık Eğriler</text><text x="87.5" y="107.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Eğim ve diklik fazla</text><rect x="179" y="71" width="167" '
+    'height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Komşu Yamaç</text><text x="262.5" y="107.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Akarsu iki yanı '
+    'eşit</text></svg>',
+ 5: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Harita okuma ve mekânsal '
+    'analiz basamakları"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Çıkarım</text><text x="87.5" y="49.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Mekânsal ilişki kur</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Ölçek/Yön</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Konum ve mesafe</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bul</text><rect x="4" '
+    'y="71" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Lejant</text><text '
+    'x="87.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sembol ve rengi çöz</text><rect x="179" y="71" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Başlık</text><text x="262.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Konuyu ve alanı anla</text></svg>',
+ 6: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Harita ölçeği ve harita '
+    'uzunluğu verileri"><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="30.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Harita '
+    'Ölçeği</text><text x="50.0" y="47.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">1</text><line x1="21.0" y1="52.0" x2="79.0" y2="52.0" stroke="#0b2257" stroke-width="0.75"/><text x="50.0" y="67.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">300.000</text><text '
+    'x="82.5" y="58.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">kesir '
+    'ölçek</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" '
+    'y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Harita '
+    'Uzunluğu</text><text x="262.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">(HU)</text><text x="262.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">İki şehir arası cetvel</text><text x="262.5" y="76.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ölçümü: 5 cm</text><rect x="4" y="89" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="87.5" y="116.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Birim Dönüşümü</text><text x="87.5" y="135.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">1 km = 100.000 cm</text><rect x="179" y="89" '
+    'width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="107.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Sorulan Nicelik</text><text x="262.5" '
+    'y="125.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kuş uçuşu '
+    'gerçek</text><text x="262.5" y="144.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">uzunluk (GU) = ? km</text></svg>',
+ 7: '<svg viewBox="0 0 350 197" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Topografya haritası '
+    'kavramları"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">İzohips '
+    'Aralığı</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Ardışık iki eş yükselti eğrisi arasındaki sabit</text><text x="11.0" y="57.2" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">fark</text><rect x="4" y="68" width="342" height="62" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Kıyı Birikim Şekli</text><text x="11.0" y="103.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Akarsuyun taşıdığı alüvyonlarla kıyıda '
+    'oluşan</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ova</text><rect x="4" y="133" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="150.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">Topografik Kesit</text><text x="11.0" y="168.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İki nokta arasındaki doğrultunun yandan</text><text x="11.0" '
+    'y="187.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">görünüşü</text></svg>',
+ 8: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Harita terimleri ve '
+    'tematik yöntemler kartı"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">İzobat</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Eş derinlik eğrisi</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">Kapalı Çukur</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İçe ok (→) işareti</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Noktalama</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Birim nokta '
+    'dağılışı</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">İzoplet</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Eş değer eğrileri</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def g0():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    sekiller = [('Vadi', 'Sivri uç yükseğe bakar', MAVI, MAVI_A), ('Sırt', 'Sivri uç alçağa bakar', YES, YES_A), ('Boyun', 'İki tepe arası geçit', TUR, TUR_A), ('Falez', 'Kıyıda çakışan eğriler', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(sekiller):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 10.5, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, alt, 8.5, LAC, ince=True)
-    return svg(360, 115, ic, 'Topografya yer şekilleri özet kartı', 34)
-
-def g1():
-    ic = kutu(4, 4, 352, 107, MAVI_A, MAVI) + yazi(180, 24, 'HARİTADA EĞİM HESAPLAMA BAĞINTISI', 10.5, MAVI)
-    ic += kutu(20, 36, 320, 64, '#f4f8fe', MAVI) + yazi(180, 58, 'Eğim (%) = (Yükselti Farkı h / Yatay Uzaklık L) × 100', 10.5, LAC) + yazi(180, 82, 'K (200 m) ile L (1000 m) arası: h = 800 m, L = 16 km = 16.000 m', 9, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Eğim hesaplama formül ve veri panosu', 34)
-
-def g2():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI) + kutu(12, 12, 336, 91, TUR_A, TUR, 8)
-    ic += yazi(180, 32, 'FİZİKİ HARİTALARDA RENKLENDİRME YÖNTEMİ', 10.5, TUR)
-    ic += yazi(180, 58, '0-500 m: Yeşil  |  500-1000 m: Sarı  |  1000-1500 m: Turuncu  |  >1500 m: Kahve', 9.5, LAC)
-    ic += yazi(180, 82, 'Renkler bitki örtüsünü değil, deniz seviyesinden yükselti basamaklarını gösterir.', 9, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Fiziki haritalarda yükselti renk basamakları', 34)
-
-def g3():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    ilkeler = [('Kıyı Çizgisi', 'Her zaman 0 metredir', MAVI, MAVI_A), ('Eküidistans', 'Sabit yükselti farkı', TUR, TUR_A), ('Sık Eğriler', 'Eğim ve diklik fazla', YES, YES_A), ('Komşu Yamaç', 'Akarsu iki yanı eşit', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(ilkeler):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 10, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, alt, 8.5, LAC, ince=True)
-    return svg(360, 115, ic, 'İzohips haritalarının temel kuralları', 34)
-
-def g5():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    adimlari = [('1. Başlık', 'Konuyu ve alanı anla', YES, YES_A), ('2. Lejant', 'Sembol ve rengi çöz', MAVI, MAVI_A), ('3. Ölçek/Yön', 'Konum ve mesafe bul', TUR, TUR_A), ('4. Çıkarım', 'Mekânsal ilişki kur', MOR, MOR_A)]
-    for i, (bas, alt, c, d) in enumerate(adimlari):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, bas, 10, c) + yazi(x + 40, 68, alt, 8.5, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},56 {x+85},52 {x+85},60" fill="{GRI}"/>'
-    return svg(360, 115, ic, 'Harita okuma ve mekânsal analiz basamakları', 34)
-
-def g6():
-    ic = kutu(4, 4, 352, 107, CAM_A, CAM) + yazi(180, 26, 'GERÇEK UZUNLUK (GU) HESAPLAMA UYGULAMASI', 10.5, CAM)
-    ic += kutu(20, 38, 320, 62, '#eaf7fa', CAM) + yazi(180, 60, 'GU = Harita Uzunluğu (5 cm) × Ölçek Paydası (300.000)', 10.5, LAC) + yazi(180, 84, 'Santimetreyi kilometreye çevirmek için 5 sıfır silinir (1 km = 100.000 cm).', 9, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Gerçek uzunluk ölçek hesaplama panosu', 34)
-
-def g7():
-    ic = kutu(4, 4, 352, 107, YES_A, YES) + yazi(180, 24, 'TOPOGRAFYA UYGULAMALARI VE YER ŞEKİLLERİ', 10.5, YES)
-    ic += kutu(16, 36, 328, 64, '#eaf8f0', YES) + yazi(180, 58, 'Eküidistans (Eş Aralık)  ·  Delta Ovası (Birikim)  ·  Profil (Yan Kesit)', 10, LAC) + yazi(180, 82, 'İki nokta arasına çekilen doğrultunun yandan görünüşüne profil denir.', 9, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Eküidistans, delta ve profil kavram şeması', 34)
-
-def g8():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    turler = [('İzobat', 'Eş derinlik eğrisi', MAVI, MAVI_A), ('Kapalı Çukur', 'İçe ok (→) işareti', TUR, TUR_A), ('Noktalama', 'Birim nokta dağılışı', YES, YES_A), ('İzoplet', 'Eş değer eğrileri', MOR, MOR_A)]
-    for i, (b, tr, c, d) in enumerate(turler):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 10, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, tr, 8.5, LAC, ince=True)
-    return svg(360, 115, ic, 'Harita terimleri ve tematik yöntemler kartı', 34)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[7]['gorsel'] = g7()
-    s[8]['gorsel'] = g8()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

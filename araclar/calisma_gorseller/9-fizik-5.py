@@ -1,83 +1,177 @@
-"""9. sınıf Fizik 5. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-fizik-5 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Temel nicelikler, SI '
+    'birimleri ve ölçüm araçları"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="30.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Kütle (m) kg · Terazi</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Işık Şiddeti (I) cd · ·</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Fotometre</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Sıcaklık (T)</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">K · '
+    'Termometre</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Akım '
+    '(i)</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">A · Ampermetre</text></svg>',
+ 1: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KISAMUZ 7 temel nicelik '
+    've ölçüm araçları"><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="30.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Kütle '
+    've Uzunluk m</text><text x="87.5" y="48.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">(Terazi) · l (Şerit</text><text x="87.5" y="67.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">metre / Kumpas)</text><rect x="179" y="3" width="167" height="82" '
+    'rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Zaman ve Akım</text><text x="262.5" y="39.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Şiddeti t</text><text x="262.5" y="58.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">(Kronometre) · '
+    'I</text><text x="262.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">(Ampermetre)</text><rect x="4" y="89" width="167" height="82" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="87.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">Sıcaklık ve Işık</text><text x="87.5" y="125.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Şiddeti</text><text x="87.5" y="144.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">T (Termometre) · I</text><text x="87.5" '
+    'y="162.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">(Fotometre)</text><rect x="179" y="89" width="167" height="82" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="116.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Madde Miktarı n</text><text x="262.5" y="134.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">(Tanecik / mol</text><text x="262.5" y="153.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">sayısı)</text></svg>',
+ 2: '<svg viewBox="0 0 350 174" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kuvvet ve iş '
+    'niceliklerinin fiziksel bağıntıları"><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Dinamiğin Temel</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">İlkesi</text><text x="87.5" y="58.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kuvvet = Kütle ×</text><text x="87.5" '
+    'y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İvme (F = m · '
+    'a)</text><rect x="179" y="3" width="167" height="82" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">İvme '
+    'Tanımı</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Birim zamandaki hız</text><text x="291.2" y="67.2" text-anchor="end" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">değişimi (a =</text><text x="305.8" y="56.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Δv</text><line x1="294.7" y1="61.2" '
+    'x2="317.0" y2="61.2" stroke="#0b2257" stroke-width="0.75"/><text x="305.8" y="76.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">Δt</text><text x="320.5" y="67.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">)</text><rect x="4" y="89" width="167" '
+    'height="82" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="87.5" y="107.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Mekanik İş Bağıntısı</text><text x="87.5" '
+    'y="125.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">İş = Kuvvet × '
+    'Yer</text><text x="87.5" y="144.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Değiştirme (W = F ·</text><text x="87.5" y="162.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Δx)</text><rect x="179" y="89" width="167" height="82" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="116.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">Temel Birimler</text><text x="262.5" y="134.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kütle: kg · Uzunluk:</text><text x="262.5" '
+    'y="153.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">m · Zaman: '
+    's</text></svg>',
+ 3: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Temel-türetilmiş ve '
+    'skaler-vektörel çapraz tablo"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Temel-Skaler</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">7 KİSAMUZ niceliği</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Temel-Vektörel</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">YOKTUR (Boş küme)</text><rect x="4" y="52" '
+    'width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Türetilmiş-Skaler</text><text x="87.5" '
+    'y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sürat, Enerji, '
+    'Basınç</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Türetilmiş-Vektörel</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kuvvet, Hız, İvme</text></svg>',
+ 5: '<svg viewBox="0 0 350 157" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Temel birimlerden '
+    'türetilmiş birimlere geçiş"><rect x="4" y="3" width="167" height="83" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="130.0" y="30.8" text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Hız ve İvme v =</text><text x="144.6" y="20.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Δx</text><line x1="133.5" y1="24.8" x2="155.8" y2="24.8" '
+    'stroke="#2451d6" stroke-width="0.75"/><text x="144.6" y="40.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Δt</text><text x="89.5" y="67.8" text-anchor="end" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">· a =</text><text x="104.2" y="57.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Δv</text><line x1="93.0" y1="61.8" x2="115.4" '
+    'y2="61.8" stroke="#2451d6" stroke-width="0.75"/><text x="104.2" y="77.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Δt</text><rect x="179" y="3" width="167" height="83" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="30.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Güç Bağıntısı</text><text x="262.2" y="58.5" text-anchor="end" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">P =</text><text x="275.3" y="47.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">W</text><line x1="265.7" y1="52.5" x2="285.0" '
+    'y2="52.5" stroke="#0b2257" stroke-width="0.75"/><text x="275.3" y="67.7" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">t</text><rect x="4" y="90" width="167" height="64" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="108.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Temel Ölçümler</text><text x="87.5" y="126.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Uzunluk (m), Kütle</text><text x="87.5" '
+    'y="145.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(kg), Zaman '
+    '(s)</text><rect x="179" y="90" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="117.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Kuvvet '
+    'Bağıntısı</text><text x="262.5" y="136.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">F = m · a</text></svg>',
+ 6: '<svg viewBox="0 0 350 156" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SI birim dönüşümü soru '
+    'verileri ve katsayılar"><rect x="4" y="3" width="167" height="82" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Ortam '
+    'Sıcaklığı</text><text x="87.5" y="39.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Verisi</text><text x="87.5" y="58.0" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Termometre ölçümü:</text><text x="87.5" y="76.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">t = 27 °C</text><rect x="179" y="3" width="167" height="82" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Araç Sürati Verisi</text><text x="262.5" y="39.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hız '
+    'göstergesi</text><text x="297.8" y="67.2" text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ölçümü: v = 72</text><text x="315.5" y="56.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">km</text><line x1="301.3" y1="61.2" x2="329.7" y2="61.2" stroke="#0b2257" '
+    'stroke-width="0.75"/><text x="315.5" y="76.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">h</text><rect x="4" y="89" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="87.5" y="116.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">Sıcaklık Bağıntısı</text><text x="87.5" y="135.0" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">T(K) = t(°C) + 273</text><rect x="179" y="89" width="167" height="64" '
+    'rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="107.4" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Uzunluk ve Zaman</text><text x="262.5" y="125.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">1 km = 1000 m · 1 h =</text><text x="262.5" '
+    'y="144.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">3600 '
+    's</text></svg>',
+ 7: '<svg viewBox="0 0 350 178" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Basınç, öz kütle ve ısı '
+    'bağıntıları"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="11.0" '
+    'y="20.3" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Basınç '
+    'Bağıntısı</text><text x="280.4" y="48.0" text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Birim yüzeye dik etki eden kuvvet: P =</text><text x="292.4" y="37.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">F</text><line x1="283.9" y1="42.0" x2="300.9" y2="42.0" '
+    'stroke="#0b2257" stroke-width="0.75"/><text x="292.4" y="57.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0b2257">A</text><rect x="4" y="68" width="342" height="62" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="85.3" text-anchor="start" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Öz Kütle Bağıntısı</text><text x="185.6" y="113.0" text-anchor="end" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Birim hacmin kütlesi: d =</text><text '
+    'x="198.7" y="102.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">m</text><line x1="189.1" y1="107.0" x2="208.4" y2="107.0" stroke="#0b2257" stroke-width="0.75"/><text x="198.7" '
+    'y="122.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">V</text><rect '
+    'x="4" y="133" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" y="150.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Isı ve Enerji</text><text '
+    'x="11.0" y="168.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Sıcaklık farkıyla aktarılan enerji: Q</text></svg>',
+ 8: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Türetilmiş nicelikler ve '
+    'SI birimleri kartı"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">İvme '
+    '(a)</text><text x="99.0" y="49.0" text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Birimi:</text><text x="112.2" y="38.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0b2257">m</text><line x1="102.5" y1="43.0" x2="121.8" y2="43.0" stroke="#0b2257" stroke-width="0.75"/><text '
+    'x="112.2" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">s²</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">Elektrik Yükü (q)</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Birimi: Coulomb (A ·</text><text x="262.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">s)</text><rect x="4" y="71" width="167" '
+    'height="64" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="87.5" y="89.3" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Güç (P)</text><text x="120.4" y="117.0" '
+    'text-anchor="end" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Birimi: Watt (</text><text '
+    'x="132.4" y="106.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0b2257">J</text><line x1="123.9" y1="111.0" x2="140.9" y2="111.0" stroke="#0b2257" stroke-width="0.75"/><text x="132.4" '
+    'y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0b2257">s</text><text '
+    'x="144.4" y="117.0" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">)</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Hacim '
+    '(V)</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Birimi: Metreküp</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">(m³)</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def g0():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    temel = [('Kütle (m)', 'kg · Terazi', MAVI, MAVI_A), ('Işık Şiddeti (I)', 'cd · Fotometre', YES, YES_A), ('Sıcaklık (T)', 'K · Termometre', TUR, TUR_A), ('Akım (i)', 'A · Ampermetre', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(temel):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 10, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, alt, 8.5, LAC, ince=True)
-    return svg(360, 115, ic, 'Temel nicelikler, SI birimleri ve ölçüm araçları', 34)
-
-def g1():
-    ic = kutu(4, 4, 352, 107, MAVI_A, MAVI) + yazi(180, 24, 'SI BİRİM SİSTEMİNDE 7 TEMEL NİCELİK (KİSAMUZ)', 10.5, MAVI)
-    ic += kutu(16, 36, 328, 64, '#f4f8fe', MAVI) + yazi(180, 58, 'Kütle (kg) · Işık (cd) · Sıcaklık (K) · Akım (A) · Madde (mol) · Uzunluk (m) · Zaman (s)', 9, LAC) + yazi(180, 82, 'Dikkat: SI sıcaklık birimi °C değil Kelvin (K); kütle birimi g değil kilogramdır (kg)!', 8.5, KIR)
-    return svg(360, 115, ic, 'KISAMUZ 7 temel nicelik ve SI birimleri panosu', 34)
-
-def g2():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI) + kutu(12, 12, 336, 91, TUR_A, TUR, 8)
-    ic += yazi(180, 32, 'TÜRETİLMİŞ BİRİMLERİN TEMEL BİRİMLERLE İFADESİ', 10.5, TUR)
-    ic += yazi(180, 58, 'Kuvvet (F = m·a): 1 N = kg·m/s²   |   Enerji (W = F·x): 1 J = kg·m²/s²', 10, LAC)
-    ic += yazi(180, 82, 'Türetilmiş nicelikler birden fazla temel niceliğin çarpım veya bölümüyle kurulur.', 9, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Newton ve Joule birim türetme bağıntıları', 34)
-
-def g3():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    gruplar = [('Temel-Skaler', '7 KİSAMUZ niceliği', MAVI, MAVI_A), ('Temel-Vektörel', 'YOKTUR (Boş küme)', KIR, KIR_A), ('Türetilmiş-Skaler', 'Sürat, Enerji, Basınç', YES, YES_A), ('Türetilmiş-Vektörel', 'Kuvvet, Hız, İvme', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(gruplar):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 9.2, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, alt, 8.2, LAC, ince=True)
-    return svg(360, 115, ic, 'Temel-türetilmiş ve skaler-vektörel çapraz tablo', 34)
-
-def g5():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    adimlari = [('1. Temel', 'm, kg ve s ölç', YES, YES_A), ('2. Hız/İvme', 'm/s ve m/s² türet', MAVI, MAVI_A), ('3. Kuvvet (N)', 'F = m·a (kg·m/s²)', TUR, TUR_A), ('4. Güç (W)', 'P = W/t (kg·m²/s³)', MOR, MOR_A)]
-    for i, (bas, alt, c, d) in enumerate(adimlari):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, bas, 10, c) + yazi(x + 40, 68, alt, 8.2, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},56 {x+85},52 {x+85},60" fill="{GRI}"/>'
-    return svg(360, 115, ic, 'Temel birimlerden türetilmiş birimlere geçiş akışı', 34)
-
-def g6():
-    ic = kutu(4, 4, 352, 107, CAM_A, CAM) + yazi(180, 26, 'GÜNLÜK BİRİMLERİN SI BİRİMLERİNE DÖNÜŞÜMÜ', 10.5, CAM)
-    ic += kutu(20, 38, 320, 62, '#eaf7fa', CAM) + yazi(180, 60, 'T(K) = t(°C) + 273   |   1 km/h = (1000 m) / (3600 s) = (1 / 3,6) m/s', 10, LAC) + yazi(180, 84, 'Örnek: 27 °C = 300 K  ve  72 km/h = 72 / 3,6 = 20 m/s olarak hesaplanır.', 9, SOLUK, ince=True)
-    return svg(360, 115, ic, 'SI birim dönüşümü hesaplama kartı', 34)
-
-def g7():
-    ic = kutu(4, 4, 352, 107, YES_A, YES) + yazi(180, 24, 'BASINÇ, ÖZ KÜTLE VE ISI BİRİMLERİ', 10.5, YES)
-    ic += kutu(16, 36, 328, 64, '#eaf8f0', YES) + yazi(180, 58, 'Basınç (P = F/A): Pascal (Pa)  ·  Öz Kütle (d = m/V): kg/m³  ·  Isı (Q): Joule (J)', 9.5, LAC) + yazi(180, 82, 'Kalori, litre ve atmosfer günlük birimlerdir; SI standart birimi değildir.', 9, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Basınç, öz kütle ve ısı SI birimleri şeması', 34)
-
-def g8():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    turetilmis = [('İvme (a)', 'm / s²', MAVI, MAVI_A), ('Elektrik Yükü', 'Coulomb (A · s)', TUR, TUR_A), ('Güç (P)', 'Watt (J / s)', YES, YES_A), ('Hacim (V)', 'Metreküp (m³)', MOR, MOR_A)]
-    for i, (b, tr, c, d) in enumerate(turetilmis):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 10, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, tr, 8.5, LAC, ince=True)
-    return svg(360, 115, ic, 'Türetilmiş nicelikler ve SI birimleri kartı', 34)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[7]['gorsel'] = g7()
-    s[8]['gorsel'] = g8()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

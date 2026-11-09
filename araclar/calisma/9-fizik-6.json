@@ -33,10 +33,6 @@
         [
           "Bileşke Vektör (R)",
           "Birden fazla vektörün etkisini tek başına yapabilen toplam vektör"
-        ],
-        [
-          "Dengeleyici Kuvvet (-R)",
-          "Bileşke kuvvetle eşit büyüklükte ve zıt yönlü olup sistemi dengeleyen kuvvet"
         ]
       ]
     },
@@ -59,8 +55,8 @@
       "duzey": "uygula",
       "gorsel_var": true,
       "soru": "Sürtünmesiz yatay düzlemdeki cisme Doğu'ya 15 N ve 10 N, Batı'ya 18 N etki ediyorsa bileşke ve dengeleyici kuvvet nedir?",
-      "cevap": "Doğu toplamı 25 N olduğundan R = 25 - 18 = 7 N Doğu.",
-      "satir": 1
+      "cevap": "Bileşke R = 25 - 18 = 7 N Doğu, dengeleyici kuvvet ise E = 7 N Batı yönündedir.",
+      "satir": 2
     },
     {
       "tur": "dy",
@@ -99,9 +95,7 @@
         [
           "Madde miktarı ve çekim etkisi",
           "Kütle (m — birimi kg)",
-          {
-            "b": "Ağırlık (G — birimi N)"
-          }
+          "Ağırlık (G — birimi N)"
         ],
         [
           "Yörünge uzunluğu ve konum farkı",
@@ -112,9 +106,9 @@
         ],
         [
           "Birim zamandaki hareket",
-          "Sürat (v — yol / zaman)",
+          "Sürat (v — birim zamandaki yol)",
           {
-            "b": "Hız (v — yer değiştirme / zaman)"
+            "b": "Hız (v — birim zamandaki yer değiştirme)"
           }
         ],
         [
@@ -130,7 +124,7 @@
       "tur": "siralama",
       "duzey": "uygula",
       "gorsel_var": true,
-      "soru": "Görseldeki uç uca ekleme yöntemiyle iki vektörün (K + L) bileşkesini bulma adımlarını sıraya diziniz.",
+      "soru": "Görseldeki uç uca ekleme yöntemiyle iki vektörün bileşkesini (R = K + L) bulma adımlarını uygulama sırasına diziniz.",
       "ogeler": [
         "Birinci vektörü (K) yönü, doğrultusu ve büyüklüğü korunacak biçimde düzleme çizme",
         "İkinci vektörün (L) başlangıç noktasını K vektörünün ok ucuna (bitiş noktasına) taşıma",
@@ -198,10 +192,6 @@
         [
           "Yön",
           "Vektörün ok ucunun gösterdiği taraf (Örn: +x veya Doğu yönü)"
-        ],
-        [
-          "Büyüklük (|A|)",
-          "Vektörün birim cinsinden sayısal şiddeti (daima sıfır veya pozitiftir)"
         ]
       ]
     },
@@ -260,8 +250,8 @@
       "tur": "acik",
       "duzey": "ust",
       "soru": "400 m'lik dairesel pistte başladığı noktaya dönerek 1 tam turu 50 s'de koşan atletin süratini ve hızını karşılaştırınız.",
-      "cevap": "Alınan yol 400 m olduğundan skaler sürati 8 m/s'dir; ancak.",
-      "satir": 1
+      "cevap": "Alınan yol 400 m olduğundan sürati 8 {kesir:m|s}'dir; yer değiştirmesi 0 olduğundan ortalama hız 0'dır.",
+      "satir": 2
     }
   ]
 }

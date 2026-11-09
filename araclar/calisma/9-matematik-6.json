@@ -33,10 +33,6 @@
         [
           "{us:a|2} - {us:b|2} iki kare farkı özdeşliği",
           "(a - b) · (a + b)"
-        ],
-        [
-          "a · (b + c) = a · b + a · c",
-          "Çarpmanın toplama üzerine soldan dağılma özelliği"
         ]
       ]
     },
@@ -59,8 +55,8 @@
       "duzey": "uygula",
       "gorsel_var": true,
       "soru": "İki kare farkı özdeşliğinden yararlanarak {kesir:{us:2026|2} - {us:2024|2}|4} işleminin sonucunu bulunuz.",
-      "cevap": "(2026 - 2024)·(2026 + 2024) = 2 · 4050 = 8100 olur.",
-      "satir": 1
+      "cevap": "{kesir:(2026 - 2024)·(2026 + 2024)|4} = {kesir:2 · 4050|4} = 2025 bulunur.",
+      "satir": 3
     },
     {
       "tur": "dy",
@@ -99,9 +95,7 @@
         [
           "{us:103|2} = {us:(100 + 3)|2}",
           "{us:100|2} + 2·100·3 + {us:3|2}",
-          {
-            "b": "10000 + 600 + 9 = 10609"
-          }
+          "10000 + 600 + 9 = 10609"
         ],
         [
           "{us:98|2} = {us:(100 - 2)|2}",
@@ -198,10 +192,6 @@
         [
           "{us:x|2} - 10x + 25",
           "{us:(x - 5)|2} (Tam kare özdeşliği)"
-        ],
-        [
-          "ax + ay + bx + by",
-          "(x + y) · (a + b) (Gruplandırma yöntemi)"
         ]
       ]
     },
@@ -260,8 +250,8 @@
       "tur": "acik",
       "duzey": "ust",
       "soru": "x - {kesir:1|x} = 4 olduğuna göre {us:x|2} + {kesir:1|{us:x|2}} ifadesinin değerini tam kare özdeşliğiyle bulunuz.",
-      "cevap": "İki tarafın karesi alınırsa {us:x|2} - 2 +.",
-      "satir": 1
+      "cevap": "İki tarafın karesi alınırsa {us:x|2} - 2 + {kesir:1|{us:x|2}} = 16 olup sonuç 18 bulunur.",
+      "satir": 3
     }
   ]
 }

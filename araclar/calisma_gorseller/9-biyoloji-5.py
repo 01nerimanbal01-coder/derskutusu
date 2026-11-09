@@ -1,85 +1,147 @@
-"""9. sınıf Biyoloji 5. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-biyoloji-5 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kontrollü deney '
+    'değişkenleri ve tahmin kartı"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Bağımsız</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Değiştirilen neden</text><rect x="179" y="3" width="167" height="45" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Bağımlı Ölçülen</text><text x="262.5" y="39.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">sonuç</text><rect x="4" y="52" width="167" '
+    'height="45" rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Kontrol</text><text x="87.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sabit '
+    'tutulanlar</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Tahmin</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Eğer... ise... dır</text></svg>',
+ 1: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Enzim hızı sıcaklık '
+    'kontrollü deney düzeneği"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">KONTROLLÜ DENEY</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">· SICAKLIĞIN ENZİM</text><text x="87.5" y="58.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">HIZINA ETKİSİ</text><rect x="179" y="3" '
+    'width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">1. Tüp: 0 °C</text><text x="262.5" y="49.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Eşit enzim + '
+    'substrat</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" '
+    'y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">2. Tüp: 35 '
+    '°C</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#5b6479">Optimum tepkime</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#5b6479">hızı</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="98.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">3. Tüp: 70 °C</text><text x="262.5" y="117.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#5b6479">Enzim yapısı bozulur</text></svg>',
+ 2: '<svg viewBox="0 0 350 193" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bilimsel araştırma '
+    'döngüsü ve hipotez testi"><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">1. Hipotez ve</text><text x="87.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#2451d6">Tahmin</text><text x="87.5" y="58.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Gözlenen probleme</text><text x="87.5" y="76.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">geçici çözüm önerisi</text><text x="87.5" '
+    'y="95.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">kurulur</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">2. Kontrollü Deney</text><text x="262.5" y="49.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bağımsız değişkenin</text><text x="262.5" y="67.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bağımlı '
+    'değişkene</text><text x="262.5" y="85.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">etkisi ölçülür</text><rect x="4" y="108" width="167" height="82" rx="5" fill="#e3f6ea" '
+    'stroke="#0f6b45" stroke-width="0.75"/><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">3. Sonuçların Analizi</text><text x="87.5" y="144.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Deney verileri</text><text x="87.5" y="163.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">hipotezi '
+    'destekliyor</text><text x="87.5" y="181.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">mu sınanır</text><rect x="179" y="108" width="167" height="82" rx="5" fill="#f0e9fe" '
+    'stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">4. Bilimsel Karar</text><text x="262.5" y="144.6" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Desteklenirse</text><text x="262.5" y="163.0" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">genelleme;</text><text '
+    'x="262.5" y="181.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">desteklenmezse ?</text></svg>',
+ 3: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bilim etiğinin dört '
+    'temel ilkesi panosu"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Dürüstlük</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Veriyi doğru kaydet</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">Tarafsızlık</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ön yargıdan uzak ol</text><rect x="4" y="52" width="167" '
+    'height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Emeğe Saygı</text><text x="87.5" y="88.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kaynak ve '
+    'atıf</text><text x="87.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">göster</text><rect x="179" y="52" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="79.6" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Canlı Hakkı</text><text x="262.5" y="98.0" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Etik kurul onayı al</text></svg>',
+ 5: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bilimsel araştırma '
+    'süreci akış şeması"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Çıkarım</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Etik analiz ve yayım</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Deney</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kontrollü sınama</text><rect x="4" y="52" width="167" height="45" '
+    'rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Hipotez</text><text x="87.5" y="88.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tahmin cümlesi kur</text><rect x="179" y="52" '
+    'width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Gözlem</text><text x="262.5" y="88.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Problemi '
+    'belirle</text></svg>',
+ 6: '<svg viewBox="0 0 350 205" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Biyolojik araştırmalarda '
+    'etik denetim ilkeleri"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">1. '
+    'Katılımcı Güvenliği</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Araştırmada insan sağlığı ve mahremiyeti</text><text x="11.0" y="57.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">korunur</text><rect x="4" y="68" width="342" '
+    'height="43" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="85.1" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">2. Gönüllülük ve Bilgilendirme</text><text x="11.0" y="103.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Olası riskler açıklanarak '
+    'yazılı izin alınır</text><rect x="4" y="114" width="342" height="43" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="131.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">3. Kurumsal Denetim</text><text x="11.0" y="149.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Çalışma öncesinde bağımsız kurul onayı alınır</text><rect x="4" '
+    'y="160" width="342" height="43" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="177.1" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">4. Yayın '
+    'Dürüstlüğü</text><text x="11.0" y="195.5" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Özgünlük ve kaynak gösterimi denetlenir</text></svg>',
+ 7: '<svg viewBox="0 0 350 197" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bilimsel araştırma ve '
+    'yayın etiği ilkeleri"><rect x="4" y="3" width="342" height="62" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="20.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Canlı '
+    'Hakları ve Ahlak</text><text x="11.0" y="38.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Genetik ve tıbbi çalışmalarda yaşam hakkına</text><text x="11.0" y="57.2" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">saygı</text><rect x="4" y="68" width="342" '
+    'height="62" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="85.4" text-anchor="start" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Yayın Bütünlüğü</text><text x="11.0" y="103.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Tek bir araştırmanın '
+    'bütünlüğünün</text><text x="11.0" y="122.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">korunması</text><rect x="4" y="133" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#0f6b45" '
+    'stroke-width="0.75"/><text x="11.0" y="150.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#0f6b45">Deneysel Karşılaştırma</text><text x="11.0" y="168.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Sabit tutulan referans düzenekle ölçüm</text><text x="11.0" y="187.2" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yapma</text></svg>',
+ 8: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hayvan deneylerinde 3R '
+    'etik ilkesi kartı"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Replacement</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Hücre/simülasyon</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">seç</text><rect x="179" y="3" width="167" height="64" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Reduction</text><text x="262.5" y="49.0" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Hayvan sayısını azalt</text><rect x="4" '
+    'y="71" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Refinement</text><text '
+    'x="87.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Acı '
+    've stresi önle</text><rect x="179" y="71" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="89.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">İntihal Tarama</text><text x="262.5" y="107.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Kopya oranını sına</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def g0():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    kavramlar = [('Bağımsız', 'Değiştirilen neden', MAVI, MAVI_A), ('Bağımlı', 'Ölçülen sonuç', YES, YES_A), ('Kontrol', 'Sabit tutulanlar', TUR, TUR_A), ('Tahmin', 'Eğer... ise... dır', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(kavramlar):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 10.5, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, alt, 8.5, LAC, ince=True)
-    return svg(360, 115, ic, 'Kontrollü deney değişkenleri ve tahmin kartı', 34)
-
-def g1():
-    ic = kutu(4, 4, 352, 107, MAVI_A, MAVI) + yazi(180, 24, 'KONTROLLÜ DENEY · SICAKLIĞIN ENZİM HIZINA ETKİSİ', 10.5, MAVI)
-    ic += kutu(16, 36, 104, 64, '#f4f8fe', MAVI) + yazi(68, 56, '1. Tüp: 0 °C', 10, MAVI) + yazi(68, 78, 'Eşit enzim + substrat', 8.5, SOLUK, ince=True)
-    ic += kutu(128, 36, 104, 64, YES_A, YES) + yazi(180, 56, '2. Tüp: 35 °C', 10, YES) + yazi(180, 78, 'Optimum tepkime hızı', 8.5, SOLUK, ince=True)
-    ic += kutu(240, 36, 104, 64, KIR_A, KIR) + yazi(292, 56, '3. Tüp: 70 °C', 10, KIR) + yazi(292, 78, 'Enzim yapısı bozulur', 8.5, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Enzim hızı sıcaklık kontrollü deney düzeneği', 34)
-
-def g2():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI) + kutu(12, 12, 336, 91, TUR_A, TUR, 8)
-    ic += yazi(180, 32, 'HİPOTEZ DOĞRULANMAZSA İZLENECEK BİLİMSEL YOL', 10.5, TUR)
-    ic += yazi(180, 58, 'Deney verileri hipotezi desteklemezse veriler ASLA değiştirilmez!', 10.5, LAC)
-    ic += yazi(180, 82, 'Mevcut hipotez gözden geçirilerek revize edilir veya yeni hipotez kurulur.', 9, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Hipotez yenileme ve veri dürüstlüğü kartı', 34)
-
-def g3():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    ilkeler = [('Dürüstlük', 'Veriyi doğru kaydet', MAVI, MAVI_A), ('Tarafsızlık', 'Ön yargıdan uzak ol', TUR, TUR_A), ('Emeğe Saygı', 'Kaynak ve atıf göster', YES, YES_A), ('Canlı Hakkı', 'Etik kurul onayı al', MOR, MOR_A)]
-    for i, (b, alt, c, d) in enumerate(ilkeler):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 10, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, alt, 8.5, LAC, ince=True)
-    return svg(360, 115, ic, 'Bilim etiğinin dört temel ilkesi panosu', 34)
-
-def g5():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    adimlari = [('1. Gözlem', 'Problemi belirle', YES, YES_A), ('2. Hipotez', 'Tahmin cümlesi kur', MAVI, MAVI_A), ('3. Deney', 'Kontrollü sınama', TUR, TUR_A), ('4. Çıkarım', 'Etik analiz ve yayım', MOR, MOR_A)]
-    for i, (bas, alt, c, d) in enumerate(adimlari):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, bas, 10.5, c) + yazi(x + 40, 68, alt, 8.5, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},56 {x+85},52 {x+85},60" fill="{GRI}"/>'
-    return svg(360, 115, ic, 'Bilimsel araştırma süreci akış şeması', 34)
-
-def g6():
-    ic = kutu(4, 4, 352, 107, CAM_A, CAM) + yazi(180, 26, 'BİLİM ETİĞİNİ DENETLEME VE DOĞRULAMA ARAÇLARI', 10.5, CAM)
-    ic += kutu(20, 38, 320, 62, '#eaf7fa', CAM) + yazi(180, 60, 'Etik Kurul Onayı · Aydınlatılmış Onam Formu · İntihal Yazılımı', 10.5, LAC) + yazi(180, 84, 'Gönüllü bireylerin bilgilendirilmiş rızası Aydınlatılmış Onam ile belgelenir.', 9, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Bilim etiği denetim araçları panosu', 34)
-
-def g7():
-    ic = kutu(4, 4, 352, 107, YES_A, YES) + yazi(180, 24, 'BİYOGÜVENLİK, BİYOETİK VE YAYIN DÜRÜSTLÜĞÜ', 10.5, YES)
-    ic += kutu(16, 36, 328, 64, '#eaf8f0', YES) + yazi(180, 58, 'Biyoetik (Ahlaki Boyut)  ·  Dilimleme (Yapay Bölme)  ·  Kontrol Grubu', 10, LAC) + yazi(180, 82, 'Genetik araştırmalarda kişisel veri gizliliği ve biyogüvenlik esastır.', 9, SOLUK, ince=True)
-    return svg(360, 115, ic, 'Biyoetik ve yayın etiği özet kartı', 34)
-
-def g8():
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    ilkeler = [('Replacement', 'Hücre/simülasyon seç', MAVI, MAVI_A), ('Reduction', 'Hayvan sayısını azalt', TUR, TUR_A), ('Refinement', 'Acı ve stresi önle', YES, YES_A), ('İntihal Tarama', 'Kopya oranını sına', MOR, MOR_A)]
-    for i, (b, tr, c, d) in enumerate(ilkeler):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 9.5, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, tr, 8.5, LAC, ince=True)
-    return svg(360, 115, ic, 'Hayvan deneylerinde 3R etik ilkesi kartı', 34)
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[7]['gorsel'] = g7()
-    s[8]['gorsel'] = g8()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

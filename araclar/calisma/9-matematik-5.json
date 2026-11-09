@@ -33,10 +33,6 @@
         [
           "(a + b) + c = a + (b + c)",
           "Toplama işleminde birleşme özelliği"
-        ],
-        [
-          "a · 1 = 1 · a = a",
-          "Çarpma işleminde etkisiz (birim) eleman özelliği"
         ]
       ]
     },
@@ -99,9 +95,7 @@
         [
           "{kok:36}",
           "6 (Tam kare kök)",
-          {
-            "b": "Doğal (ℕ), Tam (ℤ) ve Rasyonel (ℚ)"
-          }
+          "Doğal (ℕ), Tam (ℤ) ve Rasyonel (ℚ)"
         ],
         [
           "-9",
@@ -198,10 +192,6 @@
         [
           "Rasyonel Sayılar (ℚ)",
           "a, b ∈ ℤ ve b ≠ 0 için {kesir:a|b} biçiminde yazılabilen sayılar"
-        ],
-        [
-          "İrrasyonel Sayılar (ℚ')",
-          "π, e, {kok:3} gibi iki tam sayının oranı şeklinde yazılamayan sayılar"
         ]
       ]
     },
@@ -234,33 +224,33 @@
       "soru": "İpuçlarına karşılık gelen kavramları yazarak anahtar kelimeyi bulunuz.",
       "satirlar": [
         {
+          "ipucu": "İki çokluğun birbirine bölünmesiyle yapılan karşılaştırma (4 harf)",
+          "cevap": "ORAN",
+          "anahtar": 0
+        },
+        {
           "ipucu": "Rasyonel ve irrasyonel sayıların birleşimiyle oluşan küme, gerçek (4 harf)",
           "cevap": "REEL",
           "anahtar": 0
         },
         {
-          "ipucu": "Toplamada 0, çarpmada 1 olan etkisiz eleman (5 harf)",
-          "cevap": "BİRİM",
-          "anahtar": 0
-        },
-        {
-          "ipucu": "a + (-a) = 0 eşitliğindeki (-a) elemanının adı (4 harf)",
-          "cevap": "TERS",
-          "anahtar": 0
+          "ipucu": "İşlem sonucunun yine aynı kümede kalması özelliği (6 harf)",
+          "cevap": "KAPALI",
+          "anahtar": 1
         },
         {
           "ipucu": "İki sayı arasında sonsuz sayı bulunması özelliği, yoğun (5 harf)",
           "cevap": "YOĞUN",
-          "anahtar": 0
+          "anahtar": 4
         }
       ],
-      "sonuc": "RBTY"
+      "sonuc": "ORAN"
     },
     {
       "tur": "acik",
       "duzey": "ust",
       "soru": "\"Bir rasyonel sayı ile bir irrasyonel sayının çarpımı her zaman irrasyoneldir.\" iddiasını çürüten karşı örneği yazınız.",
-      "cevap": "Rasyonel sayı 0 ∈ ℚ ve irrasyonel sayı {kok:5} ∈ ℚ' seçildiğinde 0 · {kok:5} = 0 ∈ ℚ (rasyonel) olur; iddia a = 0 için yanlıştır.",
+      "cevap": "Rasyonel a = 0 ve irrasyonel b = {kok:5} için 0 · {kok:5} = 0 ∈ ℚ olur; iddia a = 0 için yanlıştır.",
       "satir": 2
     }
   ]

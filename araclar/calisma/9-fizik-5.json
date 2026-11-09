@@ -33,10 +33,6 @@
         [
           "Sıcaklık (T)",
           "Kelvin (K) — Termometre"
-        ],
-        [
-          "Akım Şiddeti (i)",
-          "Amper (A) — Ampermetre"
         ]
       ]
     },
@@ -60,7 +56,7 @@
       "gorsel_var": true,
       "soru": "Kuvvet birimi Newton (N) ve iş/enerji birimi Joule (J)'ün temel SI birimleri (kg, m, s) cinsinden karşılıklarını yazınız.",
       "cevap": "1 Newton = kg·{kesir:m|{us:s|2}} ve 1 Joule = N·m = kg·{kesir:{us:m|2}|{us:s|2}} olarak ifade edilir.",
-      "satir": 2
+      "satir": 3
     },
     {
       "tur": "dy",
@@ -99,9 +95,7 @@
         [
           "Zaman (t)",
           "Saniye (s)",
-          {
-            "b": "Temel ve Skaler"
-          }
+          "Temel ve Skaler"
         ],
         [
           "Kuvvet (F)",
@@ -198,10 +192,6 @@
         [
           "Güç (P)",
           "Watt (W) = {kesir:Joule|saniye} = kg · {kesir:{us:m|2}|{us:s|3}}"
-        ],
-        [
-          "Hacim (V)",
-          "Metreküp ({us:m|3}) — Uzunluğun üçüncü kuvveti"
         ]
       ]
     },
@@ -275,8 +265,8 @@
       "tur": "acik",
       "duzey": "ust",
       "soru": "'Kütle' ile 'Ağırlık' kavramlarını temel/türetilmiş olma, SI birimi ve ölçme aracı bakımından karşılaştırınız.",
-      "cevap": "Kütle temel-skalerdir (kg, teraziyle ölçülür); ağırlık türetilmiş-vektöreldir (N, dinamometreyle ölçülür).",
-      "satir": 2
+      "cevap": "Kütle temel ve skalerdir (kg, terazi); ağırlık ise türetilmiş ve vektöreldir (N, dinamometre).",
+      "satir": 3
     }
   ]
 }

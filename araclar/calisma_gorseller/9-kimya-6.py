@@ -1,111 +1,145 @@
-"""9. sınıf Kimya 6. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-kimya-6 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Elektron dizilimi temel '
+    'ilkeleri"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Aufbau '
+    'Kuralı</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Düşük enerjiden</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">başla</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" '
+    'stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">Pauli İlkesi</text><text x="262.5" y="39.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">En çok 2 e⁻, zıt spin</text><text x="262.5" '
+    'y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">(↑↓)</text><rect x="4" y="71" width="167" height="64" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Hund Kuralı</text><text x="87.5" y="107.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Önce tek tek aynı</text><text x="87.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">yön (↑↑↑)</text><rect x="179" y="71" '
+    'width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">İzoelektronik</text><text x="262.5" y="107.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Aynı e⁻ sayısı '
+    've</text><text x="262.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">dizilimi</text></svg>',
+ 1: '<svg viewBox="0 0 350 175" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kükürt atomu temel hâl '
+    'elektron dizilimi verileri"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">İncelenen Atom</text><text x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kükürt (₁₆S) — Temel</text><text x="87.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">hâlde 16 '
+    'elektron</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="262.5" y="21.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">Aufbau Dolum Sırası</text><text x="262.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">1s → 2s → 2\u200cp → 3s → 3\u200cp</text><text x="262.5" y="58.2" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">→ 4s → 3d</text><rect '
+    'x="4" y="71" width="167" height="101" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="87.5" y="89.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Alt Kabuk</text><text '
+    'x="87.5" y="107.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0f6b45">Kapasiteleri s en</text><text x="87.5" y="126.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#0f6b45">fazla 2 e⁻ (1 orbital) ·</text><text x="87.5" y="144.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">p en fazla 6 e⁻ (3</text><text x="87.5" '
+    'y="163.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#0f6b45">orbital)</text><rect x="179" y="71" width="167" height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="98.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">Hund Kuralı</text><text x="262.5" y="117.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Eş enerjili orbitallere</text><text x="262.5" y="135.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">elektronlar önce tek</text><text x="262.5" '
+    'y="153.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">tek '
+    'yerleşir</text></svg>',
+ 2: '<svg viewBox="0 0 350 212" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fosfor atomu orbital '
+    'dizilimi soru verileri"><rect x="4" y="3" width="167" height="101" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="30.7" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">Verilen Element</text><text x="87.5" y="49.1" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Fosfor (₁₅P) —</text><text x="87.5" y="67.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Proton sayısı = 15</text><text x="87.5" '
+    'y="85.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Nötr '
+    'atom)</text><rect x="179" y="3" width="167" height="101" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" '
+    'y="21.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Pauli '
+    'İlkesi</text><text x="262.5" y="39.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Bir orbitalde zıt</text><text x="262.5" y="58.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">spinli en fazla 2</text><text x="262.5" y="76.7" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">elektron (↑↓)</text><text x="262.5" y="95.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">bulunur</text><rect '
+    'x="4" y="108" width="167" height="101" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="87.5" y="126.5" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Hund Kuralı</text><text '
+    'x="87.5" y="144.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Eş '
+    'enerjili 3 orbital</text><text x="87.5" y="163.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">aynı yönlü (↑)(↑)(↑)</text><text x="87.5" y="181.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">tek elektronlarla</text><text x="87.5" y="200.1" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">başlar</text><rect x="179" y="108" '
+    'width="167" height="101" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="126.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Sorulan Bilgiler</text><text x="262.5" '
+    'y="144.9" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Temel hâl '
+    'dizilimi,</text><text x="262.5" y="163.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">tam dolu ve yarı</text><text x="262.5" y="181.7" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">dolu orbital sayıları</text><text x="262.5" y="200.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">= ?</text></svg>',
+ 3: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Alt kabuklar ve enerji '
+    'kuralları"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">s ve p Kabuğu '
+    's: 1</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#2451d6">orb (2e⁻) · p: 3 (6e⁻)</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">d ve f Kabuğu d: 5</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">(10e⁻) · f: 7 (14e⁻)</text><rect x="4" y="52" width="167" height="45" '
+    'rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">Bağıl Enerji</text><text x="87.5" y="88.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">3\u200cp &lt; 4s &lt; 3d &lt; '
+    '4\u200cp</text><rect x="179" y="52" width="167" height="45" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Katman (2n²) n=1: 2</text><text x="262.5" y="88.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#7c3aed">· n=2: 8 · n=3: 18</text></svg>',
+ 5: '<svg viewBox="0 0 350 100" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aufbau orbital dolum '
+    'sırası"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.1" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Katman</text><text '
+    'x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">3s² '
+    '3p⁶ (8 e⁻)</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">Katman</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">1s² (2 e⁻)</text><rect x="4" y="52" width="167" height="45" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="87.5" y="70.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">4s → 3d Geçişi</text><text x="87.5" y="88.5" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">4s² → 3d¹⁰ → 4p⁶</text><rect x="179" y="52" width="167" height="45" '
+    'rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.1" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Katman</text><text x="262.5" y="88.5" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">2s² 2p⁶ (8 e⁻)</text></svg>',
+ 6: '<svg viewBox="0 0 350 224" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bakır atomunda küresel '
+    'simetri kararlılığı ilkesi"><rect x="4" y="3" width="342" height="43" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="11.0" y="20.1" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Soygaz Çekirdeği</text><text x="11.0" y="38.5" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">₁₈Ar: 1s² 2s² 2p⁶ 3s² 3p⁶ (İlk 18 elektron)</text><rect x="4" y="49" '
+    'width="342" height="43" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="66.1" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">İncelenen Atom</text><text x="11.0" y="84.5" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bakır (₂₉Cu) — Toplam 29 '
+    'elektron</text><rect x="4" y="95" width="342" height="62" rx="5" fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="11.0" '
+    'y="112.4" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Küresel Simetri '
+    'İlkesi</text><text x="11.0" y="130.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Atomlar d⁴ ve d⁹ yerine yarı dolu (d⁵) veya</text><text x="11.0" y="149.2" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">tam dolu (d¹⁰) dizilimi tercih eder</text><rect x="4" y="160" '
+    'width="342" height="62" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="11.0" y="177.4" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Özel Durum</text><text x="11.0" y="195.8" '
+    'text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">4s alt kabuğundan 3d alt '
+    'kabuğuna</text><text x="11.0" y="214.2" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">kendiliğinden 1 elektron geçer</text></svg>',
+ 8: '<svg viewBox="0 0 350 119" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="İyon dizilimleri ve '
+    'elektron koparma"><rect x="4" y="3" width="167" height="45" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">₁₁Na⁺ '
+    've ₉F⁻</text><text x="87.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">1s² 2s² 2p⁶ (10 e⁻)</text><rect x="179" y="3" width="167" height="45" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="21.1" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">₂₄Cr Atomu</text><text x="262.5" y="39.5" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">... 3p⁶ 4s¹ 3d⁵</text><rect x="4" y="52" width="167" height="64" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="79.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">₂₁Sc Atomu</text><text x="87.5" y="98.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">... 3p⁶ 4s² 3d¹</text><rect x="179" y="52" width="167" '
+    'height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="70.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">₂₂Ti²⁺ İyonu</text><text x="262.5" y="88.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Önce 4s² kopar '
+    '→</text><text x="262.5" y="107.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">...3d²</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def dörtlu_kart(etiket, kartlar):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (b, alt, c, d) in enumerate(kartlar):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 9.8, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, alt, 8.2, LAC, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def akis_karti(etiket, adimlar):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (bas, alt, c, d) in enumerate(adimlar):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, bas, 9.8, c) + yazi(x + 40, 68, alt, 8.2, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},56 {x+85},52 {x+85},60" fill="{GRI}"/>'
-    return svg(360, 115, ic, etiket, 34)
-
-def uclu_pano(etiket, ust_baslik, kutular, ana_renk=MAVI, ana_acik=MAVI_A):
-    ic = kutu(4, 4, 352, 107, ana_acik, ana_renk) + yazi(180, 23, ust_baslik, 10, ana_renk)
-    for i, (b, alt, c, d) in enumerate(kutular):
-        x = 14 + i * 112
-        ic += kutu(x, 34, 104, 66, d, c) + yazi(x + 52, 55, b, 9.5, c) + yazi(x + 52, 78, alt, 8.2, SOLUK, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def bilgi_panosu(etiket, baslik, satir1, satir2, c=CAM, d=CAM_A, ic_d='#eaf7fa'):
-    ic = kutu(4, 4, 352, 107, d, c) + yazi(180, 25, baslik, 10, c)
-    ic += kutu(16, 36, 328, 64, ic_d, c) + yazi(180, 58, satir1, 9.6, LAC) + yazi(180, 82, satir2, 8.6, SOLUK, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def g0():
-    return dörtlu_kart('Elektron dizilimi temel ilkeleri', [
-        ('Aufbau Kuralı', 'Düşük enerjiden başla', MAVI, MAVI_A),
-        ('Pauli İlkesi', 'En çok 2 e⁻, zıt spin (↑↓)', TUR, TUR_A),
-        ('Hund Kuralı', 'Önce tek tek aynı yön (↑↑↑)', YES, YES_A),
-        ('İzoelektronik', 'Aynı e⁻ sayısı ve dizilimi', MOR, MOR_A)
-    ])
-
-def g1():
-    return uclu_pano('Kükürt ve p bloğu orbital dağılımı', 'TEMEL HÂL ELEKTRON DİZİLİMİ · TAM VE YARI DOLU ORBİTALLER', [
-        ('₇N (1s² 2s² 2p³)', '2 tam dolu · 3 yarı dolu', MAVI, '#f4f8fe'),
-        ('₈O (1s² 2s² 2p⁴)', '3 tam dolu · 2 yarı dolu', YES, YES_A),
-        ('₁₆S (...3s² 3p⁴)', '7 tam dolu · 2 yarı dolu', TUR, TUR_A)
-    ], MAVI, MAVI_A)
-
-def g2():
-    return bilgi_panosu('Fosfor atomu orbital şeması', '₁₅P ATOMUNUN TEMEL HÂL DİZİLİMİ VE HUND KURALI',
-        '₁₅P : 1s² (↑↓)  2s² (↑↓)  2p⁶ (↑↓)(↑↓)(↑↓)  3s² (↑↓)  3p³ (↑)(↑)(↑)',
-        '1s(1) + 2s(1) + 2p(3) + 3s(1) = 6 tam dolu orbital  |  3p³ = 3 yarı dolu orbital', CAM, CAM_A)
-
-def g3():
-    return dörtlu_kart('Alt kabuklar ve enerji kuralları', [
-        ('s ve p Kabuğu', 's: 1 orb (2e⁻) · p: 3 (6e⁻)', MAVI, MAVI_A),
-        ('d ve f Kabuğu', 'd: 5 (10e⁻) · f: 7 (14e⁻)', YES, YES_A),
-        ('Bağıl Enerji', '3p < 4s < 3d < 4p', TUR, TUR_A),
-        ('Katman (2n²)', 'n=1: 2 · n=2: 8 · n=3: 18', MOR, MOR_A)
-    ])
-
-def g5():
-    return akis_karti('Aufbau orbital dolum sırası', [
-        ('1. Katman', '1s² (2 e⁻)', MAVI, MAVI_A),
-        ('2. Katman', '2s² 2p⁶ (8 e⁻)', YES, YES_A),
-        ('3. Katman', '3s² 3p⁶ (8 e⁻)', TUR, TUR_A),
-        ('4s → 3d Geçişi', '4s² → 3d¹⁰ → 4p⁶', MOR, MOR_A)
-    ])
-
-def g6():
-    return uclu_pano('Küresel simetri özel durumları', 'KÜRESEL SİMETRİ · KROM (₂₄Cr) VE BAKIR (₂₉Cu) ÖZEL DURUMU', [
-        ('₂₄Cr (Temel Hâl)', '[Ar] 4s¹ 3d⁵ (6 yarı dolu)', TUR, TUR_A),
-        ('₂₉Cu (Temel Hâl)', '[Ar] 4s¹ 3d¹⁰ (Tam dolu d)', YES, YES_A),
-        ('Kararlılık', 'Uyarılmış değil, temel hâl!', MAVI, '#f4f8fe')
-    ], TUR, TUR_A)
-
-def g7():
-    return bilgi_panosu('Orbital kapasitesi ve küresel simetri', 'ORBİTAL · ALT KABUK KAPASİTESİ · KÜRESEL SİMETRİ',
-        's¹ / s²  ·  p³ / p⁶  ·  d⁵ / d¹⁰ ile biten atomlar küresel simetri gösterir',
-        'Her bir orbital zıt spinli en fazla 2 elektron alır; d alt kabuğu 10 elektron alır.', YES, YES_A, '#eaf8f0')
-
-def g8():
-    return dörtlu_kart('İyon dizilimleri ve elektron koparma', [
-        ('₁₁Na⁺ ve ₉F⁻', '1s² 2s² 2p⁶ (10 e⁻)', MAVI, MAVI_A),
-        ('₂₄Cr Atomu', '... 3p⁶ 4s¹ 3d⁵', TUR, TUR_A),
-        ('₂₁Sc Atomu', '... 3p⁶ 4s² 3d¹', YES, YES_A),
-        ('₂₂Ti²⁺ İyonu', 'Önce 4s² kopar → ...3d²', MOR, MOR_A)
-    ])
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[7]['gorsel'] = g7()
-    s[8]['gorsel'] = g8()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

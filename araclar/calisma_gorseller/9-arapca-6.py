@@ -1,111 +1,129 @@
-"""9. sınıf Arapça 6. hafta görselleri (SVG; insan figürü yok; K178 beyaz bant yok; en_fazla=34)."""
-LAC, MAVI, TUR, YES, KIR, MOR, CAM = '#0b2257', '#2451d6', '#ee7d12', '#12a150', '#d63a3a', '#7c3aed', '#0e8fa8'
-MAVI_A, TUR_A, YES_A, MOR_A, KIR_A, CAM_A = '#e8eefe', '#fff1df', '#e3f6ea', '#f0e9fe', '#fde8e7', '#e0f4f8'
-GRI, GRI_A, SOLUK = '#9aa6bd', '#eef1f6', '#5b6479'
-YAZI = 'font-family="Noto Sans, sans-serif" font-weight="700"'
-INCE = 'font-family="Noto Sans, sans-serif" font-weight="400"'
+"""9-arapca-6 çalışma kâğıdı görselleri (SVG; K024 insan figürü yok; K150 EK 1:1 gövde puntosu; K183 0 çakışma)."""
 
-def svg(w, h, ic, etiket, en_fazla=34):
-    stil = f' style="max-height:{en_fazla}mm"' if en_fazla else ''
-    return f'<svg viewBox="0 0 {w} {h}"{stil} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{etiket}">{ic}</svg>'
+GORSELLER = {0: '<svg viewBox="0 0 350 128" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arapça işaret isimleri '
+    've soru edatları"><rect x="4" y="3" width="167" height="59" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Hâzâ '
+    '(هٰذَا)</text><text x="87.5" y="49.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Bu (Müzekker)</text><rect x="179" y="3" width="167" height="59" rx="5" fill="#e3f6ea" stroke="#12a150" '
+    'stroke-width="0.75"/><text x="262.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#12a150">Hâzihî (هٰذِهِ)</text><text x="262.5" y="49.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bu (Müennes)</text><rect x="4" y="66" width="167" height="59" rx="5" '
+    'fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="87.5" y="87.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#ee7d12">Men? (مَنْ)</text><text x="87.5" y="112.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Kim? (İnsan)</text><rect x="179" y="66" width="167" height="59" '
+    'rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="87.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Mâ? (مَا)</text><text x="262.5" y="112.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Ne? (Nesne)</text></svg>',
+ 1: '<svg viewBox="0 0 350 203" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="El- belirlilik takısı, '
+    'şemsî ve kamerî harfler"><rect x="4" y="3" width="167" height="109" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="37.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Kamerî '
+    'Harfler</text><text x="87.5" y="62.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">اَلْكِتَابُ · اَلْقَلَمُ (Lam</text><text x="87.5" y="87.3" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">harfi cezmli okunur)</text><rect x="179" y="3" width="167" height="109" rx="5" '
+    'fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="24.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Şemsî Harfler</text><text x="262.5" y="49.8" text-anchor="middle" '
+    'direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">ت ث د '
+    'ذ ر ز س ش ص ض ط ظ</text><text x="262.5" y="74.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">ل ن (Lam okunmaz,</text><text x="262.5" y="99.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">şedde alır)</text><rect x="4" y="116" width="167" height="84" rx="5" '
+    'fill="#e3f6ea" stroke="#0f6b45" stroke-width="0.75"/><text x="87.5" y="137.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#0f6b45">Şemsî Örnek</text><text x="87.5" y="162.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">اَلشَّمْسُ (eş-şemsü) ·</text><text x="87.5" '
+    'y="187.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">اَلدَّرْسُ '
+    '(ed-dersü)</text><rect x="179" y="116" width="167" height="84" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text '
+    'x="262.5" y="137.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#7c3aed">Belirlilik İşlevi</text><text x="262.5" y="162.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">İsimleri belirli</text><text x="262.5" y="187.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(marife) hâle getirir</text></svg>',
+ 2: '<svg viewBox="0 0 350 115" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Belirsiz ismin başına '
+    'el- takısı gelmesi örneği"><rect x="4" y="3" width="167" height="109" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="37.3" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Nekre (Belirsiz) İsim</text><text x="87.5" y="62.3" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">كِتَابٌ (kitâbun) ·</text><text x="87.5" y="87.3" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">مَدْرَسَةٌ '
+    '(medresetün)</text><rect x="179" y="3" width="167" height="109" rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text '
+    'x="262.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" '
+    'fill="#d97706">Marife (Belirli) İsim</text><text x="262.5" y="49.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">اَلْكِتَابُ (el-kitâbu) ·</text><text x="262.5" y="74.8" text-anchor="middle" '
+    'direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">اَلْمَدْرَسَةُ</text><text x="262.5" y="99.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">(el-medresetü)</text></svg>',
+ 3: '<svg viewBox="0 0 350 128" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tekil zamirler ve uyum '
+    'kuralları"><rect x="4" y="3" width="167" height="59" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" '
+    'y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Ene '
+    '(أَنَا)</text><text x="87.5" y="49.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Ben (Ortak)</text><rect x="179" y="3" width="167" height="59" rx="5" fill="#fff1df" stroke="#ee7d12" '
+    'stroke-width="0.75"/><text x="262.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#ee7d12">Ente / Enti</text><text x="262.5" y="49.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="500" fill="#0b2257">Sen (Eril / Dişil)</text><rect x="4" y="66" width="167" height="59" rx="5" '
+    'fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="87.8" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#12a150">Hüve / Hiye</text><text x="87.5" y="112.8" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">O (Eril / Dişil)</text><rect x="179" y="66" width="167" '
+    'height="59" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" y="87.8" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#7c3aed">Tâ-i Merbûta</text><text x="262.5" y="112.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Müennes eki '
+    '(ـة)</text></svg>',
+ 5: '<svg viewBox="0 0 350 138" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tanışma diyaloğu akış '
+    'şeması"><rect x="4" y="3" width="167" height="64" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text x="87.5" y="21.4" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">Memnuniyet</text><text '
+    'x="87.5" y="39.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">Teşerraftü</text><text x="87.5" y="58.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">bima’rifetik</text><rect x="179" y="3" width="167" height="64" rx="5" fill="#fff1df" '
+    'stroke="#d97706" stroke-width="0.75"/><text x="262.5" y="30.6" text-anchor="middle" font-family="Noto Sans, sans-serif" '
+    'font-size="1.01em" font-weight="700" fill="#d97706">Selamlaşma</text><text x="262.5" y="49.0" text-anchor="middle" font-family="Noto '
+    'Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Esselâmü aleyküm</text><rect x="4" y="71" width="167" '
+    'height="64" rx="5" fill="#e3f6ea" stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="89.4" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">Vedalaşma</text><text x="87.5" y="107.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Fursatün saîde '
+    '/</text><text x="87.5" y="126.2" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">İlel-likâ</text><rect x="179" y="71" width="167" height="64" rx="5" fill="#f0e9fe" stroke="#7c3aed" '
+    'stroke-width="0.75"/><text x="262.5" y="89.4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">İsim/Memleket</text><text x="262.5" y="107.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Mâ ismuke / Min</text><text x="262.5" y="126.2" text-anchor="middle" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">eyne</text></svg>',
+ 6: '<svg viewBox="0 0 350 115" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arapça sınıf içi '
+    'müzekker ve müennes emir fiil çekimi"><rect x="4" y="3" width="167" height="109" rx="5" fill="#e8eefe" stroke="#2451d6" '
+    'stroke-width="0.75"/><text x="87.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">Müzekker Emir (Eril)</text><text x="87.5" y="49.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">اُكْتُبْ (Yaz!) · اِجْلِسْ</text><text x="87.5" y="74.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Otur!) — '
+    'Sonu</text><text x="87.5" y="99.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">cezimli</text><rect x="179" y="3" width="167" height="109" rx="5" fill="#fff1df" stroke="#d97706" '
+    'stroke-width="0.75"/><text x="262.5" y="24.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#d97706">Müennes Emir (Dişil)</text><text x="262.5" y="49.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">اُكْتُبِي (Yaz!) · اِجْلِسِي</text><text x="262.5" y="74.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">(Otur!) — Sonu '
+    'ـِي</text><text x="262.5" y="99.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" '
+    'fill="#0b2257">ekli</text></svg>',
+ 7: '<svg viewBox="0 0 350 122" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arapça işaret ismi ve '
+    'soru edatı yapısı"><rect x="4" y="3" width="342" height="57" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="11.0" y="23.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#2451d6">İşaret '
+    've Zamir Uyumu</text><text x="11.0" y="48.8" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Eril ve dişil kelimelerde cinsiyet uyumu aranır</text><rect x="4" y="63" width="342" height="57" '
+    'rx="5" fill="#fff1df" stroke="#d97706" stroke-width="0.75"/><text x="11.0" y="83.8" text-anchor="start" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="700" fill="#d97706">Soru Edatı (هَلْ)</text><text x="11.0" y="108.8" text-anchor="start" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Olumlu veya olumsuz onay bildiren yanıt '
+    'alır</text></svg>',
+ 8: '<svg viewBox="0 0 350 128" style="max-height:none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sınıf eşyaları müzekker '
+    've müennes ayrımı"><rect x="4" y="3" width="167" height="59" rx="5" fill="#e8eefe" stroke="#2451d6" stroke-width="0.75"/><text '
+    'x="87.5" y="24.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#2451d6">هٰذَا دَفْتَرٌ</text><text x="87.5" y="49.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Defter (Eril)</text><rect x="179" y="3" width="167" height="59" '
+    'rx="5" fill="#fff1df" stroke="#ee7d12" stroke-width="0.75"/><text x="262.5" y="24.8" text-anchor="middle" direction="rtl" '
+    'unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#ee7d12">هٰذِهِ '
+    'حَقِيبَةٌ</text><text x="262.5" y="49.8" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="500" fill="#0b2257">Çanta (Dişil)</text><rect x="4" y="66" width="167" height="59" rx="5" fill="#e3f6ea" '
+    'stroke="#12a150" stroke-width="0.75"/><text x="87.5" y="87.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" '
+    'font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="700" fill="#12a150">هٰذَا حَاسُوبٌ</text><text x="87.5" y="112.8" '
+    'text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Bilgisayar '
+    '(Eril)</text><rect x="179" y="66" width="167" height="59" rx="5" fill="#f0e9fe" stroke="#7c3aed" stroke-width="0.75"/><text x="262.5" '
+    'y="87.8" text-anchor="middle" direction="rtl" unicode-bidi="isolate" font-family="Noto Sans, sans-serif" font-size="1.01em" '
+    'font-weight="700" fill="#7c3aed">هٰذِهِ مِمْحَاةٌ</text><text x="262.5" y="112.8" text-anchor="middle" font-family="Noto Sans, '
+    'sans-serif" font-size="1.01em" font-weight="500" fill="#0b2257">Silgi (Dişil)</text></svg>'}
 
-def yazi(x, y, metin, boy=11, renk=LAC, hiza='middle', ince=False):
-    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{hiza}" font-size="{boy}" {INCE if ince else YAZI} fill="{renk}">{metin}</text>'
-
-def kutu(x, y, w, h, dolgu, cizgi, r=6, kalin=1.2):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{dolgu}" stroke="{cizgi}" stroke-width="{kalin}"/>'
-
-def dörtlu_kart(etiket, kartlar):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (b, alt, c, d) in enumerate(kartlar):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, b, 9.8, c) + f'<line x1="{x+8}" y1="48" x2="{x+72}" y2="48" stroke="{c}" stroke-width="0.8"/>' + yazi(x + 40, 72, alt, 8.2, LAC, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def akis_karti(etiket, adimlar):
-    ic = kutu(4, 4, 352, 107, GRI_A, GRI)
-    for i, (bas, alt, c, d) in enumerate(adimlar):
-        x = 10 + i * 86
-        ic += kutu(x, 12, 80, 90, d, c) + yazi(x + 40, 36, bas, 9.8, c) + yazi(x + 40, 68, alt, 8.2, LAC, ince=True)
-        if i < 3:
-            ic += f'<polygon points="{x+82},56 {x+85},52 {x+85},60" fill="{GRI}"/>'
-    return svg(360, 115, ic, etiket, 34)
-
-def uclu_pano(etiket, ust_baslik, kutular, ana_renk=MAVI, ana_acik=MAVI_A):
-    ic = kutu(4, 4, 352, 107, ana_acik, ana_renk) + yazi(180, 23, ust_baslik, 10, ana_renk)
-    for i, (b, alt, c, d) in enumerate(kutular):
-        x = 14 + i * 112
-        ic += kutu(x, 34, 104, 66, d, c) + yazi(x + 52, 55, b, 9.5, c) + yazi(x + 52, 78, alt, 8.2, SOLUK, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def bilgi_panosu(etiket, baslik, satir1, satir2, c=CAM, d=CAM_A, ic_d='#eaf7fa'):
-    ic = kutu(4, 4, 352, 107, d, c) + yazi(180, 25, baslik, 10, c)
-    ic += kutu(16, 36, 328, 64, ic_d, c) + yazi(180, 58, satir1, 9.6, LAC) + yazi(180, 82, satir2, 8.6, SOLUK, ince=True)
-    return svg(360, 115, ic, etiket, 34)
-
-def g0():
-    return dörtlu_kart('Arapça işaret isimleri ve soru edatları', [
-        ('Hâzâ (هٰذَا)', 'Bu (Müzekker)', MAVI, MAVI_A),
-        ('Hâzihî (هٰذِهِ)', 'Bu (Müennes)', YES, YES_A),
-        ('Men? (مَنْ)', 'Kim? (İnsan)', TUR, TUR_A),
-        ('Mâ? (مَا)', 'Ne? (Nesne)', MOR, MOR_A)
-    ])
-
-def g1():
-    return uclu_pano('Belirlilik takısı ve şemsî-kamerî harfler', 'EL- (ال) TAKISI · ŞEMSÎ VE KAMERÎ HARFLER', [
-        ('Kamerî Harf', 'اَلْكِتَابُ (Lam okunur)', MAVI, '#f4f8fe'),
-        ('Şemsî Harf', 'اَلطَّالِبُ (Şeddeli)', TUR, TUR_A),
-        ('Tenvin Kuralı', 'ال gelince tenvin düşer', YES, YES_A)
-    ], MAVI, MAVI_A)
-
-def g2():
-    return bilgi_panosu('Nekra ve marife dönüşüm kartı', 'NEKRA (BELİRSİZ) → MARİFE (BELİRLİ) DÖNÜŞÜMÜ',
-        'قَلَمٌ (kalemun) → اَلْقَلَمُ (el-kalemu)  ·  سَبُّورَةٌ → اَلسَّبُّورَةُ',
-        'Bir kelimede ال takısı ile tenvin (çift hareke) asla bir arada bulunmaz.', CAM, CAM_A)
-
-def g3():
-    return dörtlu_kart('Tekil zamirler ve uyum kuralları', [
-        ('Ene (أَنَا)', 'Ben (Ortak)', MAVI, MAVI_A),
-        ('Ente / Enti', 'Sen (Eril / Dişil)', TUR, TUR_A),
-        ('Hüve / Hiye', 'O (Eril / Dişil)', YES, YES_A),
-        ('Tâ-i Merbûta', 'Müennes eki (ـة)', MOR, MOR_A)
-    ])
-
-def g5():
-    return akis_karti('Tanışma diyaloğu akış şeması', [
-        ('1. Selamlaşma', 'Esselâmü aleyküm', YES, YES_A),
-        ('2. İsim/Memleket', 'Mâ ismuke / Min eyne', MAVI, MAVI_A),
-        ('3. Memnuniyet', 'Teşerraftü bima’rifetik', TUR, TUR_A),
-        ('4. Vedalaşma', 'Fursatün saîde / İlel-likâ', MOR, MOR_A)
-    ])
-
-def g6():
-    return uclu_pano('Sınıf içi emir fiiller panosu', 'SINIF İÇİ YÖNERGELER · EMİR FİİLLER (الأَمْر)', [
-        ('Müzekker Emir', 'اِفْتَحْ · اِقْرَأْ (Cezimli)', MAVI, '#f4f8fe'),
-        ('Müennes Emir', 'اِفْتَحِي · اِقْرَئِي (ـِي ekli)', MOR, MOR_A),
-        ('Hitap Uyumu', 'يَا عَلِيُّ / يَا زَيْنَبُ', YES, YES_A)
-    ], MOR, MOR_A)
-
-def g7():
-    return bilgi_panosu('Zamir ve soru edatları özet kartı', 'İŞARET İSMİ, ZAMİR VE EVET/HAYIR SORULARI',
-        'Hâzihî (Bu - Dişil)  ·  Ente (Sen - Eril)  ·  Hel (هَلْ) → Ne’am (نَعَمْ) / Lâ (لَا)',
-        'Cinsiyet uyumu işaret ismi ve zamir seçiminde temel ölçüttür.', YES, YES_A, '#eaf8f0')
-
-def g8():
-    return dörtlu_kart('Sınıf eşyaları müzekker ve müennes ayrımı', [
-        ('هٰذَا دَفْتَرٌ', 'Defter (Eril)', MAVI, MAVI_A),
-        ('هٰذِهِ حَقِيبَةٌ', 'Çanta (Dişil)', TUR, TUR_A),
-        ('هٰذَا حَاسُوبٌ', 'Bilgisayar (Eril)', YES, YES_A),
-        ('هٰذِهِ مِمْحَاةٌ', 'Silgi (Dişil)', MOR, MOR_A)
-    ])
 
 def uygula(o):
-    s = o['sorular']
-    s[0]['gorsel'] = g0()
-    s[1]['gorsel'] = g1()
-    s[2]['gorsel'] = g2()
-    s[3]['gorsel'] = g3()
-    s[5]['gorsel'] = g5()
-    s[6]['gorsel'] = g6()
-    s[7]['gorsel'] = g7()
-    s[8]['gorsel'] = g8()
+    s = o.get("sorular", [])
+    for idx, svg in GORSELLER.items():
+        if int(idx) < len(s):
+            s[int(idx)]["gorsel"] = svg

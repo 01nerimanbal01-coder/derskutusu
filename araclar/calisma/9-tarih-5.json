@@ -33,10 +33,6 @@
         [
           "Tahlil (Çözümleme)",
           "Eldeki verilerin araştırma için yeterli ve elverişli olup olmadığının kontrolü"
-        ],
-        [
-          "Terkip (Sentez)",
-          "Doğrulanmış bilgilerin birleştirilerek tarihsel eserin kaleme alınması"
         ]
       ]
     },
@@ -44,7 +40,7 @@
       "tur": "coktan",
       "duzey": "kavrama",
       "gorsel_var": true,
-      "soru": "Görseldeki tenkit şemasına göre tarihçinin ferman ve hatıratlardaki bilgileri başka kaynaklarla çapraz kontrol ederek yazarın",
+      "soru": "Görseldeki tenkit şemasına göre tarihçinin ferman ve hatıratlardaki bilgileri başka kaynaklarla çapraz kontrol ederek yazarın güvenilirliğini denetlemesi hangi aşamadır?",
       "secenekler": [
         "İç Tenkit",
         "Dış Tenkit",
@@ -59,7 +55,7 @@
       "duzey": "kavrama",
       "gorsel_var": true,
       "soru": "Dış tenkit aşamasında bir belgenin sahte olup olmadığını anlamak için hangi fiziksel unsurlar incelenir?",
-      "cevap": "Belgenin adı, yazarı, yazıldığı tarih ile kâğıdın dokusu, mürekkebin kimyasal.",
+      "cevap": "Belgenin adı, yazarı, tarihi ile kâğıt dokusu ve mürekkebin kimyasal yapısı incelenir.",
       "satir": 2
     },
     {
@@ -99,9 +95,7 @@
         [
           "Zamana Göre Tasnif",
           "Yüzyıl, çağ veya dönem",
-          {
-            "b": "Orta Çağ Tarihi / 19. Yüzyıl Tarihi"
-          }
+          "Orta Çağ Tarihi / 19. Yüzyıl Tarihi"
         ],
         [
           "Mekâna Göre Tasnif",
@@ -132,10 +126,10 @@
       "gorsel_var": true,
       "soru": "Görseldeki 5T tarihsel araştırma yönteminin aşamalarını baştan sona doğru sıraya diziniz.",
       "ogeler": [
-        "1. Tarama: Arşiv, kütüphane ve müzelerden kaynak toplama",
-        "2. Tasnif: Kaynakları zaman, mekân ve konuya göre sınıflandırma",
-        "3. Tahlil ve 4. Tenkit: Yeterliliği çözümleme ve iç/dış eleştiri yapma",
-        "5. Terkip: Doğrulanmış verileri sentezleyerek eseri yazma"
+        "Tarama: Arşiv, kütüphane ve müzelerden konuyla ilgili kaynak toplama",
+        "Tasnif: Toplanan kaynakları zaman, mekân ve konuya göre sınıflandırma",
+        "Tahlil ve Tenkit: Kaynakların yeterliliğini çözümleme ve iç/dış eleştiri yapma",
+        "Terkip: Doğrulanmış verileri bir araya getirip sentezleyerek eseri yazma"
       ],
       "dogru_sira": [
         1,
@@ -198,10 +192,6 @@
         [
           "Nümizmatik (Meskûkât)",
           "Tahlil ve tenkitte eski madeni paraları (sikkeleri) inceleme"
-        ],
-        [
-          "Kimya (Karbon-14)",
-          "Dış tenkitte buluntu ve kâğıtların yaşını/orijinalliğini saptama"
         ]
       ]
     },
@@ -265,7 +255,7 @@
       "tur": "acik",
       "duzey": "ust",
       "soru": "Tarihsel bilginin üretim sürecindeki aşamaların \"doğrusal değil, dinamik ve sarmal\" olması ne anlama gelir?",
-      "cevap": "Aşamalar birbirinden kopuk değildir; tahlil veya tenkitte bilgi eksikliği görülürse tekrar.",
+      "cevap": "Aşamalar kopuk değildir; tahlil veya tenkitte eksiklik görülürse tekrar taramaya dönülür.",
       "satir": 2
     }
   ]
