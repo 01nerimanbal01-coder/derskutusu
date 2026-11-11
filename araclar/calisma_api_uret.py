@@ -81,7 +81,7 @@ Görevin: verilen sınıf, ders ve hafta için TEK bir çalışma kâğıdı JSO
 
 ÇIKTI
 Yalnız tek bir JSON nesnesi yaz; kod çiti (```), açıklama, yorum yok. Alanlar:
-{"konu": "kısa kâğıt başlığı (en çok 110 karakter)",
+{"konu": "kısa kâğıt başlığı (düz metin, en çok 110 karakter)",
  "hatirla": ["3-4 kısa bilgi maddesi (her biri en çok 190 karakter)"],
  "sorular": [12-14 soru],
  "gorseller": {"<sorunun 1 tabanlı sırası>": "<svg …>…</svg>"}}
@@ -107,7 +107,7 @@ KURALLAR
 4. Doğal sınav dili: "Aşağıdakilerden hangisi …?", "… boşluklara yazınız.", "… eşleştiriniz." Öğrenciye "sen" ya da "siz" diye tutarlı hitap; ifadeler kısa ve açık. Sınıf düzeyine uygun sözcükler.
 5. Ders kitabına, MEB kitabına, üniteye, özete ya da kaynağa atıf yapma ("ders kitabında", "kitaptaki", "ünitede", "kaynak notu" yasak).
 6. Kâğıt iki A4 sayfayı dolduracak kadar içerik taşısın ama taşmasın: 12-14 soru, 5-8'i görselli (tablo, şifre ve kavram haritası da görsel sayılır).
-SİTE GÖSTERİMİ (metin alanlarında; SVG içinde kullanma): {koyu:metin}, {kesir:a|b}, {us:x|2} (x²), {alt:H|2} (H₂), {kok:x} (√x). Kimya formülü H{alt:2}O biçiminde. Başka süslü parantez kullanma.
+SİTE GÖSTERİMİ (metin alanlarında; SVG içinde kullanma): {koyu:metin}, {kesir:a|b}, {us:x|2} (x²), {alt:H|2} (H₂), {kok:x} (√x). Kimya formülü H{alt:2}O biçiminde. Başka süslü parantez kullanma. "konu" düz metindir: gösterim kullanma (sayfa başlığına olduğu gibi basılır); birim üssü gerekiyorsa m², m³ yaz.
 GÖRSEL (SVG) KURALLARI
 - Geçerli XML: <svg viewBox="0 0 G Y" role="img" aria-label="…"> ile başlar; genişlik G en çok 600, yükseklik Y en çok 260. width/height verme; baskıda yer sınırlı olduğu için style="max-height:24mm" ver (geniş şema en çok 34mm); görseller yatay ve alçak olsun (oran en az 2,5:1). & yerine &amp;; HTML varlığı (&nbsp;) yok.
 - Yazılar font-family="Noto Sans, sans-serif", font-size 12-14, Türkçe karakterli; her yazı viewBox içinde kalır, yazılar ve şekiller üst üste binmez.
@@ -530,6 +530,9 @@ def sema_denetle(d, sinif):
         return sorunlar
     if not _dize(d['konu']) or len(d['konu']) > 160:
         sorunlar.append('"konu" dolu ve en çok 160 karakter olmalı')
+    elif '{' in d['konu'] or '}' in d['konu']:
+        sorunlar.append('"konu" düz metin olmalı: süslü parantezli gösterim ({us:…}, {kesir:…}, {kok:…}) kullanılmaz, '
+                        'çünkü sayfa başlığına olduğu gibi basılır; birim üssü gerekiyorsa m², m³ yazılabilir')
     h = d['hatirla']
     if not (isinstance(h, list) and 2 <= len(h) <= 5 and all(_dize(x) for x in h)):
         sorunlar.append('"hatirla" 2-5 dolu madde olmalı')

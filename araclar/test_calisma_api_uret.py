@@ -86,6 +86,26 @@ class Dogrulama(unittest.TestCase):
     def test_yayimlanmis_kagit_gecer(self):
         self.assertEqual(self.sorunlar(ornek_kagit()), [])
 
+    def test_konu_duz_metin(self):
+        # 11.11.2026: "m{us:|3}" başlığı <title> içine ham basılmış, yayın denetimi durmuştu.
+        d = ornek_kagit()
+        d['konu'] = 'Hacim ölçme: m{us:|3} ve dm{us:|3}'
+        self.assertTrue(any('düz metin' in s for s in self.sorunlar(d)))
+        d['konu'] = 'Hacim ölçme: m³ ve dm³'
+        self.assertEqual(self.sorunlar(d), [])
+
+    def test_duz_baslik(self):
+        import calisma_uret as cu
+        self.assertEqual(cu.duz_baslik('Hacim ölçme'), 'Hacim ölçme')
+        self.assertEqual(cu.duz_baslik('Hacim: m{us:|3} ve cm{us:|3}'), 'Hacim: m³ ve cm³')
+        self.assertEqual(cu.duz_baslik('{us:x|2} ve H{alt:2}O, {alt:H|2}'), 'x² ve H₂O, H₂')
+        self.assertEqual(cu.duz_baslik('{us:a|n + k}'), 'a üssü n + k')
+        self.assertEqual(cu.duz_baslik('{kesir:3|4} ile {kesir:1|1|2}'), '3 bölü 4 ile 1 tam 1 bölü 2')
+        self.assertEqual(cu.duz_baslik('{kok:16 + 9}, {kok:−27|3}'), 'karekök 16 + 9, küpkök −27')
+        self.assertEqual(cu.duz_baslik('{koyu:Önemli} {kesir:{us:x|2}|3}'), 'Önemli x² bölü 3')
+        for ham in ('m{us:|3}', '{kesir:1|2}', '{kok:2}', '{aci:ABC}', '{bilinmeyen:a|b}', 'yarım {us:x'):
+            self.assertNotRegex(cu.duz_baslik(ham), r'[{}√]')
+
     def tur_sorusu(self, d, tur):
         return next(s for s in d['sorular'] if s['tur'] == tur)
 

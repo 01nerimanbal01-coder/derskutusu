@@ -73,6 +73,44 @@ def sembol(metin):
     return re.sub(r'\|(?=[−+\d])', '|\u2060', ozet_uret.e(metin))
 
 
+_UST = str.maketrans('0123456789+-−n()', '⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁻ⁿ⁽⁾')
+_ALT = str.maketrans('0123456789+-−()', '₀₁₂₃₄₅₆₇₈₉₊₋₋₍₎')
+_GOSTERIM_IC = re.compile(r'\{([a-z]+):([^{}]*)\}')
+
+
+def duz_baslik(metin):
+    """Site gösterimini düz metne çevirir (<title>, meta açıklaması, içerik listesi başlığı).
+
+    Bu alanlar gösterim çözücüsünden geçmez. 11.11.2026: "m{us:|3}" başlığı sayfaya ham basılınca
+    yayın denetimi durmuş, site üç gün güncellenememişti."""
+    if '{' not in metin:
+        return metin
+
+    def cevir(m):
+        ad, p = m.group(1), [x.strip() for x in m.group(2).split('|')]
+        if ad == 'us':
+            taban, ust = ('|'.join(p[:-1]), p[-1])
+            return taban + ust.translate(_UST) if ust and all(ord(c) in _UST for c in ust) else f'{taban} üssü {ust}'
+        if ad == 'alt':
+            taban, alt = ('|'.join(p[:-1]), p[-1])
+            return taban + (alt.translate(_ALT) if all(ord(c) in _ALT for c in alt) else alt)
+        if ad == 'kesir' and len(p) == 2:
+            return f'{p[0]} bölü {p[1]}'
+        if ad == 'kesir' and len(p) == 3:
+            return f'{p[0]} tam {p[1]} bölü {p[2]}'
+        if ad == 'kok':
+            derece = p[1] if len(p) > 1 else '2'
+            return {'2': 'karekök ', '3': 'küpkök '}.get(derece, f'{derece}. dereceden kök ') + p[0]
+        return ' '.join(x for x in p if x)
+
+    for _ in range(8):   # iç içe gösterim: her turda en içteki çözülür
+        yeni = _GOSTERIM_IC.sub(cevir, metin)
+        if yeni == metin:
+            break
+        metin = yeni
+    return ' '.join(metin.replace('{', '').replace('}', '').split())
+
+
 sayfa = ozet_uret._sayfa.sayfa
 DERSLER = json.loads((PUBLIC / 'veri' / 'dersler.json').read_text(encoding='utf-8'))['dersler']
 TUR_AD = {'coktan': 'Çoktan seçmeli', 'dy': 'Doğru mu, yanlış mı?', 'bosluk': 'Boşluk doldurma', 'eslestir': 'Eşleştirme',
@@ -530,7 +568,8 @@ def pdf_yap(o, ad, cevapli, font_css, plan=None, olcek=None):
 
 def web_sayfasi(o, ad, plan=None):
     ders = DERSLER.get(o['ders'], o['ders'])
-    baslik = f'{o["sinif"]}. Sınıf {ders} {o["hafta"]}. Hafta Çalışma Kâğıdı: {o["konu"]}'
+    duz_konu = duz_baslik(o["konu"])   # başlık ve meta düz metin ister
+    baslik = f'{o["sinif"]}. Sınıf {ders} {o["hafta"]}. Hafta Çalışma Kâğıdı: {duz_konu}'
     ozet = f'ozet/{o["sinif"]}-{o["ders"]}-hafta-{o["hafta"]}.html'
     ozet_bag = f'<a class="dugme" href="/{ozet}">Konu özeti</a>' if (PUBLIC / ozet).exists() else ''
     if o['ders'] == 'ingilizce' and o['sinif'] in (5, 6):   # kelime.html (veri/kelimeler.json yalnız 5 ve 6)
@@ -551,7 +590,7 @@ def web_sayfasi(o, ad, plan=None):
     </div>
   </section>
   <section class="bolum"><div class="kap ck-sayfalar">{kagit_html(o, ad, plan=plan)}</div></section>'''
-    aciklama = f'{o["sinif"]}. sınıf {ders} {o["hafta"]}. hafta çalışma kâğıdı: {o["konu"]}. Görselli, çeşitli sorular; cevaplı ve cevapsız PDF.'
+    aciklama = f'{o["sinif"]}. sınıf {ders} {o["hafta"]}. hafta çalışma kâğıdı: {duz_konu}. Görselli, çeşitli sorular; cevaplı ve cevapsız PDF.'
     (PUBLIC / 'calisma').mkdir(exist_ok=True)
     (PUBLIC / 'calisma' / f'{ad}.html').write_text(sayfa(f'calisma/{ad}.html', baslik, aciklama, govde), encoding='utf-8')
     return {'sinif': o['sinif'], 'ders': o['ders'], 'tur': 'Çalışma kâğıdı', 'kitle': 'ogrenci', 'baslik': baslik,

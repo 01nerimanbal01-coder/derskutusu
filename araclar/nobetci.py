@@ -14,6 +14,7 @@ Yalnız standart kütüphane kullanır.
 import datetime as dt
 import json
 import os
+import random
 import re
 import socket
 import ssl
@@ -44,6 +45,8 @@ ONEMLI = [
 SERTIFIKA_UYARI_GUN = 14   # GitHub normalde 30 gün kala yeniler
 ALAN_ADI_UYARI_GUN = 45
 AJAN = 'Mozilla/5.0 (derskutusu-nobetci; +https://derskutusu.com)'
+ORNEK_SAYFA = 60   # olağan turda canlıda denenen site haritası adresi sayısı
+ORNEK_ESIK = 6     # bu kadarı 404 ise yayımlanan kopya bayat sayılır (yeni birkaç sayfa yayım bekliyor olabilir)
 
 
 def getir(adres, zaman=20, bayt=None):
@@ -124,6 +127,27 @@ def site_haritasi():
     with ThreadPoolExecutor(8) as h:
         sonuc = list(h.map(lambda a: (a, getir(a)[0]), adresler))
     return [f'Site haritasındaki sayfa açılmıyor: {a} (kod {k})' for a, k in sonuc if k != 200]
+
+
+def eksik_sayfalar():
+    """Depodaki site haritasından rastgele örnek alır; canlıda var mı bakar (her turda). (sorun, yeniden_yayimla)
+
+    09.11.2026: ortam onayında bekleyen eski bir çalışma bayat kopyayı yayımladı; sayfaların çoğu 404 verdi.
+    Tam tarama yalnız pazartesi derin turda olduğundan olağan tur bunu sayfa düzeyinde göremiyordu."""
+    yol = KLASOR / 'public' / 'sitemap.xml'
+    if not yol.exists():
+        return [], False
+    adresler = [a for a in re.findall(r'<loc>([^<]+)</loc>', yol.read_text(encoding='utf-8')) if a.startswith(KOK + '/')]
+    if len(adresler) < ORNEK_SAYFA:
+        return [], False
+    ornek = random.sample(adresler, ORNEK_SAYFA)
+    with ThreadPoolExecutor(8) as h:
+        sonuc = list(h.map(lambda a: (a, getir(a)[0]), ornek))
+    yok = [a for a, k in sonuc if k == 404]
+    if len(yok) < ORNEK_ESIK:
+        return [], False
+    return [f'Depodaki site haritasından denenen {ORNEK_SAYFA} sayfanın {len(yok)} tanesi canlıda yok (404); '
+            f'yayımlanan kopya bayat olabilir. Örnek: {", ".join(yok[:3])}'], True
 
 
 def dis_baglantilar():
@@ -213,7 +237,9 @@ def main():
     sorun, ana_var = sayfalar()
     z_sorun, yeniden_yayimla = ziyaret_ve_yayin()
     sorun += z_sorun
-    if yeniden_yayimla:
+    e_sorun, e_yayimla = eksik_sayfalar()
+    sorun += e_sorun
+    if yeniden_yayimla or e_yayimla:
         ana_var = False
     sorun += dns() + sertifika() + alan_adi()
     uyari = []

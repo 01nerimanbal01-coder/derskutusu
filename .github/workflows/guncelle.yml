@@ -26,7 +26,12 @@ jobs:
       name: github-pages
       url: ${{ steps.yayin.outputs.page_url }}
     steps:
+      # 11.11.2026: çalışma hangi commit için açılmış olursa olsun main'in GÜNCEL ucu yayımlanır.
+      # 09.11'de, 10.10 tarihli commit için ortam onayında bekleyen eski bir çalışma sonradan yürüyüp
+      # o bayat kopyayı yayımlamış, sitenin büyük bölümü 404 vermişti; ref verilince bu olamaz.
       - uses: actions/checkout@v5
+        with:
+          ref: main
 
       - uses: actions/setup-python@v6
         with:
