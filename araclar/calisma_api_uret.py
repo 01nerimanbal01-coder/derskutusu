@@ -71,7 +71,7 @@ AD_RE = re.compile(r'(\d+)-([a-z0-9]+(?:-[a-z0-9]+)*)-(\d+)')
 OZEL_RE = re.compile(r'ck-h(\d+)-(\d+-[a-z0-9-]+?)-([idg])')
 DIS_GONDERME = re.compile(r'(konu özet|özette|özetteki|yukarıdaki metin|önceki soru|bir önceki soruda|aşağıdaki metne göre)', re.I)
 YATAY_KESIR = re.compile(r'(?<![\w/.,:-])\d{1,3}/\d{1,3}(?![\d/]|[\s.]\d{3})|[½⅓⅔¼¾⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞]')
-GOSTERIM_AD = re.compile(r'\{([a-z]+):')
+GOSTERIM_AD = re.compile(r'\{([^\W\d_]+):')  # Türkçe harfli adlar da ({eğik:…}) yakalanır
 KISA_MM = 45             # calisma_uret.py "KISA: soru eklenmeli" eşiği
 ORTUSME_SORU, ORTUSME_KAGIT = 0.5, 0.2
 

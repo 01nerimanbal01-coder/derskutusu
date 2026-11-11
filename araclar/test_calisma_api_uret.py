@@ -94,6 +94,14 @@ class Dogrulama(unittest.TestCase):
         d['konu'] = 'Hacim ölçme: m³ ve dm³'
         self.assertEqual(self.sorunlar(d), [])
 
+    def test_turkce_harfli_gosterim_adi(self):
+        # 11.11.2026: "{eğik:…}" adı [a-z]+ ile arandığından yakalanmamış, dört sayfaya ham basılmıştı.
+        self.assertEqual(c.GOSTERIM_AD.findall('{eğik:tusks} {egik:trunk} {İpucu:x}'), ['eğik', 'egik', 'İpucu'])
+        d = ornek_kagit()
+        self.assertFalse(any('tanımsız gösterim' in s for s in c.icerik_denetle(d)))
+        d['konu'] += ' {eğik:trunk}'
+        self.assertTrue(any('tanımsız gösterim {eğik:' in s for s in c.icerik_denetle(d)))
+
     def test_duz_baslik(self):
         import calisma_uret as cu
         self.assertEqual(cu.duz_baslik('Hacim ölçme'), 'Hacim ölçme')

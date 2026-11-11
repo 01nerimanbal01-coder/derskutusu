@@ -452,7 +452,7 @@ def icerik_denetle(d, e_fonk):
         m = ATIF_RE.search(s)
         if m:
             h.append(f"{yol}: yasak ifade '{m.group(0)}'")
-        for m in re.finditer(r'\{([a-z]+):', s):
+        for m in re.finditer(r'\{([^\W\d_]+):', s):  # Türkçe harfli adlar da ({eğik:…}) yakalanır
             if m.group(1) not in GOSTERIM:
                 h.append(f'{yol}: tanımsız gösterim {{{m.group(1)}:...}}')
         for m in re.finditer(r'\{kesir:([^{}]+)\}', s):
