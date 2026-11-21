@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
-"""Yeniden üretilmeyen sayfalara (çalışma kâğıtları, KPSS vb.) ana sayfanın üst menüsünü ve alt bilgi bağlantılarını,
-sayfanın kitlesini (body data-kitle) ve öğrenci dalı konum çubuğunu uygular. Ana sayfa menüsü değişince çalıştırılır:
+"""Yeniden üretilmeyen sayfalara (çalışma kâğıtları, KPSS vb.) ortak üst menüyü ve alt bilgi bağlantılarını,
+sayfanın kitlesini (body data-kitle) ve öğrenci dalı konum çubuğunu uygular. Ortak menü değişince çalıştırılır:
     python3 araclar/ust_guncelle.py
 sayfa_uret.py / ozet_uret.py'nin ürettiği sayfalara da zararsızdır (aynı sonucu verir)."""
 import re
-from pathlib import Path
-from sayfa_uret import kitle_bul, PUBLIC, BETIK_SURUMLERI, SURUM, AGAC_CSS, ADSENSE_HARIC, ADSENSE_UST_KOD
+from sayfa_uret import kitle_bul, PUBLIC, BETIK_SURUMLERI, SURUM, AGAC_CSS, ADSENSE_HARIC, ADSENSE_UST_KOD, ortak_sablon
 from kesif_sablonlari import CSS as KESIF_CSS, RENK_CSS
 
-ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
-MENU = re.search(r'<nav class="menu" id="ana-menu"[^>]*>.*?</nav>', ana, re.S).group(0)
-ALT = re.search(r'<nav aria-label="Site">.*?</nav>', ana, re.S).group(0)
+MENU = re.search(r'<nav class="menu" id="ana-menu"[^>]*>.*?</nav>', ortak_sablon, re.S).group(0)
+ALT = re.search(r'<nav aria-label="Site">.*?</nav>', ortak_sablon, re.S).group(0)
 ALT = re.sub(r'href="#', 'href="/#', re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', ALT))
-ALT_BILGI = re.search(r'<nav aria-label="Bilgi">.*?</nav>', ana, re.S).group(0)
+ALT_BILGI = re.search(r'<nav aria-label="Bilgi">.*?</nav>', ortak_sablon, re.S).group(0)
 ALT_BILGI = re.sub(r'href="#', 'href="/#', re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', ALT_BILGI))
-ALT_SOSYAL = re.search(r'<div class="alt-sosyal">.*?</div>', ana, re.S).group(0)
+ALT_SOSYAL = re.search(r'<div class="alt-sosyal">.*?</div>', ortak_sablon, re.S).group(0)
 SURUMLER = [('stil.css', SURUM), ('kpss.css', SURUM), ('arapca.css', SURUM), ('tahta.js', BETIK_SURUMLERI['tahta.js']), ('kutuphane.js', BETIK_SURUMLERI['kutuphane.js']), ('asds.js', BETIK_SURUMLERI['asds.js']),
             *((d, re.search(r'v=([\w-]+)', s).group(1)) for d, s in (('kesif.css', KESIF_CSS), ('renkler.css', RENK_CSS), ('agac.css', AGAC_CSS)))]
 NPA_ETIKETI = re.compile(r'<script>\(window\.adsbygoogle=window\.adsbygoogle\|\|\[\]\)\.requestNonPersonalizedAds=1;</script>\n?')

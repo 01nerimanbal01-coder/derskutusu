@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""İç sayfaları (sinif.html, icerikler.html, gizlilik.html, 404.html) ana sayfanın üst ve alt bölümüyle üretir.
+"""İç sayfaları (sinif.html, icerikler.html, gizlilik.html, 404.html) ortak sayfa şablonuyla üretir.
 
-Ana sayfadaki simge takımı, üst menü ve alt bilgi değişince bu betik yeniden çalıştırılır:
+Ortak simge takımı, üst menü ve alt bilgi değişince bu betik yeniden çalıştırılır:
     python3 araclar/sayfa_uret.py
 Sayfaların kendi gövdeleri aşağıdaki GOVDE sözlüğündedir.
 """
@@ -10,13 +10,13 @@ from pathlib import Path
 from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
-ana = (PUBLIC / 'index.html').read_text(encoding='utf-8')
-SURUM = re.search(r'stil\.css\?v=(\d+)', ana).group(1)
+ortak_sablon = Path(__file__).with_name('ortak_sayfa.html').read_text(encoding='utf-8')
+SURUM = re.search(r'stil\.css\?v=(\d+)', ortak_sablon).group(1)
 BETIK_SURUMLERI = {'goruntule.js': '20261106-1', 'belgeler.js': '20261104-3', 'planlar.js': '20261105-1', 'agac.js': '20261104-3', 'yazili.js': '20261010-1', 'ortak.js': '20261106-3', 'tahta.js': '20261106-1', 'etkinlik.js': '20261017-9', 'arama.js': '20261104-2', 'kutuphane.js': '20261104-2', 'kelime.js': '20261104-2', 'arapca.js': '20261104-2', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261104-3', 'asds.js': '20261104-7'}
 
-simgeler = ana[ana.index('<!-- Simge takımı'):ana.index('</svg>\n\n<header') + len('</svg>')]
-ust = ana[ana.index('<header class="ust">'):ana.index('</header>') + len('</header>')]
-alt = ana[ana.index('<footer class="alt">'):ana.index('</footer>') + len('</footer>')]
+simgeler = ortak_sablon[ortak_sablon.index('<!-- Simge takımı'):ortak_sablon.index('</svg>\n\n<header') + len('</svg>')]
+ust = ortak_sablon[ortak_sablon.index('<header class="ust">'):ortak_sablon.index('</header>') + len('</header>')]
+alt = ortak_sablon[ortak_sablon.index('<footer class="alt">'):ortak_sablon.index('</footer>') + len('</footer>')]
 # İç sayfalarda bölüm bağlantıları ana sayfaya gider
 ust = re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', re.sub(r'(<a\b[^>]*\bhref=")#', r'\1/#', ust))
 alt = re.sub(r'href="([a-z0-9-]+\.html)', r'href="/\1', re.sub(r'(<a\b[^>]*\bhref=")#', r'\1/#', alt))
