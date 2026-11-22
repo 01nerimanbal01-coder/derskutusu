@@ -33,6 +33,7 @@ async function main() {
     page.on('pageerror', (error) => errors.push(error.message));
     await page.clock.setFixedTime(new Date('2026-11-22T12:00:00+03:00'));
     await page.goto(base, { waitUntil: 'load' });
+    await page.evaluate(() => document.fonts.ready);
     await expect(page.locator('.renkli-ust')).toBeVisible();
     return { page, context, errors };
   }
@@ -46,8 +47,11 @@ async function main() {
     const titleBox = await page.locator('.renkli-marka').boundingBox();
     const searchBox = await search.boundingBox();
     assert(Math.abs(titleBox.y + titleBox.height / 2 - searchBox.y - searchBox.height / 2) < 4, `${name}: 320 px başlık tek satıra sığmalı`);
+    const vitrinBefore = await page.locator('.vitrin').boundingBox();
     await menu.tap();
     await expect(menu).toHaveAttribute('aria-expanded', 'true');
+    const vitrinAfter = await page.locator('.vitrin').boundingBox();
+    assert(Math.abs(vitrinAfter.y - vitrinBefore.y) < 1, `${name}: menü açılırken vitrin yer değiştirdi`);
     await search.tap();
     await expect(menu).toHaveAttribute('aria-expanded', 'false');
     await expect(topic).toBeFocused();
@@ -93,13 +97,59 @@ async function main() {
       .reduce((sum, value, i) => sum + value * [0.2126, 0.7152, 0.0722][i], 0);
     const [x, y] = colors.map(luminance);
     assert((Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05) >= 4.5, `${name}: sosyal başlık kontrastı ${colors}`);
-    for (const width of [320, 360, 390, 768, 1440]) {
+    const gradeCard = page.locator('section[aria-labelledby="sinif-baslik"]');
+    await expect(gradeCard).toHaveCSS('display', 'block');
+    for (const width of [320, 360, 375, 390, 414, 430, 480, 768, 1181, 1280, 1440]) {
       await page.setViewportSize({ width, height: 860 });
-      for (const selector of ['.renkli-menu', '.hizli', '.sinif-kart', '[data-yeni-icerikler]']) {
+      for (const selector of ['.renkli-menu', '.hizli', 'section[aria-labelledby="sinif-baslik"]', '[data-yeni-icerikler]']) {
         const box = await page.locator(selector).boundingBox();
         assert(box && box.x >= -1 && box.x + box.width <= width + 1, `${name}: ${width} px taşması ${selector}`);
       }
+      const problems = await gradeCard.evaluate((section) => {
+        const frame = section.getBoundingClientRect();
+        const header = section.querySelector('.bolum-bas').getBoundingClientRect();
+        let previousRowBottom = header.bottom;
+        const issue = [];
+        for (const group of section.querySelectorAll('.grup')) {
+          const heading = group.querySelector('h3').getBoundingClientRect();
+          if (heading.top < header.bottom - 1) issue.push('Sınıf grubu başlığın altına geçmedi');
+          if (innerWidth <= 640 && heading.top < previousRowBottom - 1) issue.push('Grupların satırları çakışıyor');
+          let lastRight = frame.left;
+          let rowBottom = heading.bottom;
+          for (const link of group.querySelectorAll('li a')) {
+            const box = link.getBoundingClientRect();
+            const badge = link.firstElementChild;
+            const circle = badge.getBoundingClientRect();
+            const badgeText = document.createRange();
+            badgeText.selectNodeContents(badge);
+            const label = document.createRange();
+            label.selectNodeContents(link.lastElementChild);
+            if (box.width < 40 || circle.width < 38 || circle.height < 38) issue.push('Dokunma alanı dar');
+            if (getComputedStyle(badge).backgroundColor === 'rgba(0, 0, 0, 0)') issue.push('Renkli kutu görünmüyor');
+            for (const line of badgeText.getClientRects()) {
+              if (line.left < circle.left - 1 || line.right > circle.right + 1) issue.push('Rozette sınıf veya sınav adı kesiliyor');
+            }
+            if (box.left < lastRight - 1 || box.right > frame.right + 1) issue.push('Sınıf ve sınav düğmeleri taştı veya çakıştı');
+            for (const line of label.getClientRects()) {
+              if (line.left < box.left - 1 || line.right > box.right + 1) issue.push('Dokunma alanının dışında etiket');
+            }
+            lastRight = box.right;
+            rowBottom = Math.max(rowBottom, box.bottom);
+          }
+          previousRowBottom = rowBottom;
+        }
+        return issue;
+      });
+      assert.deepEqual(problems, [], `${name}: ${width} px sınıf kartı`);
     }
+    await page.setViewportSize({ width: 390, height: 844 });
+    const eight = gradeCard.locator('a[href="/sinif-8.html"]');
+    const visibleTarget = await eight.evaluate((link) => {
+      link.scrollIntoView({ block: 'center' });
+      const r = link.getBoundingClientRect();
+      return link.contains(document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2));
+    });
+    assert(visibleTarget, `${name}: 8. sınıf düğmesi başka öğenin arkasında`);
     await context.close();
   }
 
@@ -109,7 +159,7 @@ async function main() {
       try {
         await interactionChecks(browser, engine.name());
         await layoutChecks(browser, engine.name());
-        console.log(`${engine.name()}: menü, odak, slayt, öneri, tarih, koyu tema ve 5 ekran genişliği başarılı.`);
+        console.log(`${engine.name()}: menü, arama ve 11 genişlikte sınıf/sınav düğmeleri, etiketler ve dokunma alanları başarılı.`);
       } finally {
         await browser.close();
       }
