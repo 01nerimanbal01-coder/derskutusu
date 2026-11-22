@@ -9,7 +9,7 @@
   const konu = document.getElementById('hb-konu');
   const sonuc = document.getElementById('hb-sonuc');
   const sade = (metin) => metin.toLocaleLowerCase('tr').normalize('NFD')
-    .replace(/\p{M}/gu, '').replace(/ı/g, 'i').replace(/[^a-z0-9]+/g, ' ').trim();
+    .replace(/\p{M}/gu, '').replace(/ı/g, 'i').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
 
   let dersVerisi;
   let kayitlar = [];
@@ -70,7 +70,7 @@
 
     const aranan = sade(konu.value);
     const kelimeler = aranan ? aranan.split(' ') : [];
-    const eslesen = kayitlar.filter(({ sinifKodu, dersKodu, metin }) =>
+    const eslesen = konu.value.trim() && !aranan ? [] : kayitlar.filter(({ sinifKodu, dersKodu, metin }) =>
       (!sinif.value || sinif.value === sinifKodu) && (!ders.value || ders.value === dersKodu)
       && kelimeler.every((kelime) => metin.includes(kelime))).slice(0, 3);
     const liste = document.createElement('ul');
@@ -102,7 +102,7 @@
     dersVerisi = dersler;
     dersleriGuncelle();
     const sinifKodlari = new Set([...sinif.options].map((secenek) => secenek.value));
-    kayitlar = (icerikler || []).flatMap((kayit) => {
+    kayitlar = (icerikler || []).filter(yayinda).flatMap((kayit) => {
       const { baslik, tur, tarih, ders: dersKodu, sinif: sinifNo } = kayit;
       const sinifKodu = String(sinifNo);
       const kaynak = kayit.goruntule || kayit.hazirla || kayit.dosya || kayit.baglanti;

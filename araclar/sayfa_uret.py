@@ -12,7 +12,7 @@ from kesif_sablonlari import kesif_sayfa, kutuphane_govde
 PUBLIC = Path(__file__).resolve().parent.parent / 'public'
 ortak_sablon = Path(__file__).with_name('ortak_sayfa.html').read_text(encoding='utf-8')
 SURUM = re.search(r'stil\.css\?v=(\d+)', ortak_sablon).group(1)
-BETIK_SURUMLERI = {'goruntule.js': '20261106-1', 'belgeler.js': '20261104-3', 'planlar.js': '20261105-1', 'agac.js': '20261104-3', 'yazili.js': '20261010-1', 'ortak.js': '20261106-3', 'tahta.js': '20261106-1', 'etkinlik.js': '20261017-9', 'arama.js': '20261104-2', 'kutuphane.js': '20261104-2', 'kelime.js': '20261104-2', 'arapca.js': '20261104-2', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261104-3', 'asds.js': '20261104-7'}
+BETIK_SURUMLERI = {'goruntule.js': '20261106-1', 'belgeler.js': '20261104-3', 'planlar.js': '20261105-1', 'agac.js': '20261104-3', 'yazili.js': '20261010-1', 'ortak.js': '20261106-3', 'tahta.js': '20261106-1', 'etkinlik.js': '20261017-9', 'arama.js': '20261122-2', 'kutuphane.js': '20261104-2', 'kelime.js': '20261104-2', 'arapca.js': '20261104-2', 'yazili-cikti.js': '79d67c33e4', 'yazili-duzen.js': '20261104-3', 'asds.js': '20261104-7'}
 
 simgeler = ortak_sablon[ortak_sablon.index('<!-- Simge takımı'):ortak_sablon.index('</svg>\n\n<header') + len('</svg>')]
 ust = ortak_sablon[ortak_sablon.index('<header class="ust">'):ortak_sablon.index('</header>') + len('</header>')]

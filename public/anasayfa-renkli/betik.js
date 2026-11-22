@@ -7,6 +7,11 @@
   /* ---------- Menü ---------- */
   var menu = document.getElementById('menu');
   var menuAc = menu && menu.querySelector('.menu-ac');
+  var menuKapat = function () {
+    if (!menuAc) return;
+    menu.classList.remove('acik');
+    menuAc.setAttribute('aria-expanded', 'false');
+  };
   if (menuAc) {
     document.documentElement.classList.add('js');
     menuAc.addEventListener('click', function () {
@@ -15,8 +20,7 @@
     });
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && menu.classList.contains('acik')) {
-        menu.classList.remove('acik');
-        menuAc.setAttribute('aria-expanded', 'false');
+        menuKapat();
         menuAc.focus();
       }
     });
@@ -28,9 +32,9 @@
   if (araDugme && konu) {
     araDugme.addEventListener('click', function (e) {
       e.preventDefault();
-      var hedef = document.getElementById('hizli-bul');
-      hedef.scrollIntoView({ behavior: azalt && azalt.matches ? 'auto' : 'smooth', block: 'center' });
-      setTimeout(function () { konu.focus({ preventScroll: true }); }, azalt && azalt.matches ? 0 : 450);
+      menuKapat();
+      konu.focus({ preventScroll: true });
+      konu.scrollIntoView({ behavior: azalt && azalt.matches ? 'auto' : 'smooth', block: 'center' });
     });
   }
 
@@ -79,7 +83,7 @@
       durumYaz(); baslat();
     });
     slayt.addEventListener('keydown', function (e) {
-      if (e.target.closest && e.target.closest('input, select, textarea')) return;
+      if (!e.target.closest('.slayt-denetim')) return;
       if (e.key === 'ArrowRight') { e.preventDefault(); goster(sira + 1, true); baslat(); }
       else if (e.key === 'ArrowLeft') { e.preventDefault(); goster(sira - 1, true); baslat(); }
     });

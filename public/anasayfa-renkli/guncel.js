@@ -106,19 +106,21 @@
     const sonEkleme = [tarihMetni(yazili?.guncelleme), ...yayindakiler.map((icerik) => tarihMetni(icerik.tarih))]
       .filter((tarih) => tarih && yayinda({ tarih })).sort().at(-1);
     const sonEklemeYeri = document.querySelector('[data-son-ekleme]');
-    if (sonEklemeYeri && sonEkleme) sonEklemeYeri.replaceChildren('Son ekleme: ',
-      el('time', { datetime: sonEkleme }, tarihBicim.format(gun(sonEkleme))));
+    if (sonEklemeYeri && sonEkleme) {
+      sonEklemeYeri.replaceChildren('Son ekleme: ',
+        el('time', { datetime: sonEkleme }, tarihBicim.format(gun(sonEkleme))));
+      sonEklemeYeri.hidden = false;
+    }
     if (!liste) return;
 
     const vitrindekiKayitlar = (kayitlar) => kayitlar.flatMap((icerik) => {
       const adres = icerikYolu(icerik.goruntule);
       const tarih = tarihMetni(icerik.tarih);
       return adres && tarih && icerik.baslik && icerik.ders && icerik.sinif ? [{ ...icerik, adres, tarih }] : [];
-    }).sort(tarihSirasi);
-    const konuKartlari = vitrindekiKayitlar(ozetler).slice(0, 6);
-    const calismaKartlari = vitrindekiKayitlar(yayindakiler.filter((icerik) => icerik.tur === 'Çalışma kâğıdı'));
-    const secilenler = [...konuKartlari, ...yaziliKartlariGuncel,
-      ...calismaKartlari.slice(0, 8 - konuKartlari.length - yaziliKartlariGuncel.length)].sort(tarihSirasi);
+    });
+    const calismaKagitlari = yayindakiler.filter((icerik) => icerik.tur === 'Çalışma kâğıdı');
+    const secilenler = [...vitrindekiKayitlar([...ozetler, ...calismaKagitlari]), ...yaziliKartlariGuncel]
+      .sort(tarihSirasi).slice(0, 8);
     if (secilenler.length) liste.replaceChildren(...secilenler.map((icerik) => kart(icerik, dersler)));
   });
 })();

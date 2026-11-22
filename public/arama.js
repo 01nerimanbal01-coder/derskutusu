@@ -12,14 +12,13 @@ const Arama = (() => {
     let o = '';
     for (let i = 0; i < s.length; i++) {
       const h = s[i];
-      let k = HARF[h] ?? h.toLowerCase();
-      if (k.length !== 1 || !/[a-z0-9]/.test(k)) k = ' ';
-      o += k;
+      const k = (HARF[h] ?? h.toLowerCase()).normalize('NFD')[0];
+      o += /[\p{L}\p{N}\p{M}]/u.test(k) ? k : ' ';
     }
     return o;
   }
   // Kesme işareti kelimeyi bölmez: kur'an → kuran, Türkçe'nin → turkcenin.
-  const kelimeler = (s) => duz(String(s ?? '').replace(/['’‘`´]/g, '')).replace(/(\d)([a-z])/g, '$1 $2').replace(/([a-z])(\d)/g, '$1 $2').split(/\s+/).filter(Boolean);
+  const kelimeler = (s) => duz(String(s ?? '').replace(/['’‘`´]/g, '')).replace(/\p{M}/gu, '').replace(/(\d)(\p{L})/gu, '$1 $2').replace(/(\p{L})(\d)/gu, '$1 $2').split(/\s+/).filter(Boolean);
 
   // Damerau-Levenshtein (sınırlı): sınırı aşarsa sinir + 1 döner.
   function uzaklik(a, b, sinir) {
@@ -274,13 +273,23 @@ const Arama = (() => {
     for (let i = 0; i < ks.length;) {
       const q = ks[i];
       const son = yaziyor && i === ks.length - 1;
+      const sonraki = ks[i + 1] || '';
+      const hafta = sonraki.startsWith('hafta') && (sonraki === 'hafta' || EKLER.has(sonraki.slice(5)));
       // Sınıf: "8", "8. sınıf", "8.sınıfta", "sekizinci sınıf", "on birinci sınıf", "lise 2"
+      if (hafta && (/^\d{1,2}$/.test(q) || SAYI[q])) {
+        s.serbest.push(String(SAYI[q] || +q));
+        i++;
+        continue;
+      }
       if (/^\d{1,2}$/.test(q)) {
         const n = +q;
-        const sonraki = ks[i + 1] || '';
-        if (n >= 5 && n <= 12) { s.sinif = n; i++; while (i < ks.length && sinifKelimesi(ks[i])) i++; continue; }
-        if (sinifKelimesi(sonraki) || n < 5 || n > 12) {
-          if (sinifKelimesi(sonraki) || n <= 13) { s.sinifDisi = n; i++; while (i < ks.length && sinifKelimesi(ks[i])) i++; continue; }
+        const acikSinif = sinifKelimesi(sonraki);
+        if (acikSinif || (!s.sinif && n <= 13)) {
+          if (n >= 5 && n <= 12) s.sinif = n;
+          else s.sinifDisi = n;
+          i++;
+          while (i < ks.length && sinifKelimesi(ks[i])) i++;
+          continue;
         }
       }
       if (q === 'on' && ['birinci', 'ikinci', 'bir', 'iki'].includes(ks[i + 1])) { s.sinif = ks[i + 1].startsWith('bir') ? 11 : 12; i += 2; while (i < ks.length && sinifKelimesi(ks[i])) i++; continue; }
@@ -473,10 +482,11 @@ const Arama = (() => {
     const terimler = [...s.serbest, ...s.ipucu, ...s.dersler.flatMap((d) => kelimeler(DIZIN.dAd[d]))];
     const d = duz(metin);
     const araliklar = [];
-    const re = /[a-z0-9]+/g;
+    const re = /[\p{L}\p{N}\p{M}]+/gu;
     let m;
     while ((m = re.exec(d))) {
-      if (terimler.some((q) => eslesme(q, m[0], true) >= 0.7)) araliklar.push([m.index, m.index + m[0].length]);
+      const sozcuk = m[0].replace(/\p{M}/gu, '');
+      if (terimler.some((q) => eslesme(q, sozcuk, true) >= 0.7)) araliklar.push([m.index, m.index + m[0].length]);
     }
     return araliklar;
   }
