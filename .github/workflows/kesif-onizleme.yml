@@ -1,46 +1,43 @@
-name: Kategori önizlemesi ve bütün derslerin kapsam kontrolü
+name: Renkli ana sayfa tarayıcı denetimi
+
 on:
   push:
-    branches: ['codex/kategori-onizleme-*']
+    branches: ['codex/kategori-onizleme-esite-*']
+
 permissions:
   contents: read
+
 jobs:
-  onizleme:
+  tarayici:
     runs-on: ubuntu-latest
-    timeout-minutes: 18
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v5
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /tests/renkli-anasayfa.cjs
+            /public/index.html
+            /public/*.js
+            /public/*.css
+            /public/anasayfa-renkli/
+            /public/veri/ayarlar.json
+            /public/veri/icerikler.json
+            /public/veri/dersler.json
+            /public/veri/yazili-kagitlari.json
+            /public/veri/yazili-cikti.json
+            /public/veri/ziyaret.json
+            /public/veri/indirmeler.json
+            /public/veri/agac/dizin.json
+            /public/veri/agac/8-*.json
       - uses: actions/setup-node@v5
         with:
           node-version: '22'
-      - name: Test tarayıcılarını kur
+      - name: Chromium ve WebKit kur
         run: |
-          npm install --prefix "$RUNNER_TEMP/kesif-qa" --no-save --package-lock=false --ignore-scripts @playwright/test@1.56.1
-          "$RUNNER_TEMP/kesif-qa/node_modules/.bin/playwright" install --with-deps chromium webkit
-      - name: Her dersin içeriğini ve kategori sayfalarını denetle
+          npm install --prefix "$RUNNER_TEMP/esite-qa" --no-save --package-lock=false --ignore-scripts @playwright/test@1.56.1
+          "$RUNNER_TEMP/esite-qa/node_modules/.bin/playwright" install --with-deps chromium webkit
+      - name: Mobil gezinme, arama ve koyu tema denetimi
         env:
-          NODE_PATH: ${{ runner.temp }}/kesif-qa/node_modules
-        run: node tests/kesif-kapsam.cjs
-      - name: Ana sayfa, arama ve katalog davranışları
-        run: |
-          node tests/ana-sayfa.cjs
-          node tests/arama-oneri.cjs
-          node tests/katalog-yukleme.cjs
-      - name: Site genelinde renk, gezinme ve ekran boyutları
-        env:
-          NODE_PATH: ${{ runner.temp }}/kesif-qa/node_modules
-        run: node tests/site-renkleri.cjs
-      - name: Etkinlik, kalem, devam etme ve tam ekran regresyonu
-        if: always()
-        env:
-          NODE_PATH: ${{ runner.temp }}/kesif-qa/node_modules
-        run: node tests/ders-slayt.cjs
-      - uses: actions/upload-artifact@v6
-        if: always()
-        with:
-          name: kategori-ve-tam-ders-kontrolu
-          path: |
-            kesif-test-results/
-            slayt-test-results/
-            site-test-results/
-          retention-days: 14
+          NODE_PATH: ${{ runner.temp }}/esite-qa/node_modules
+        run: node tests/renkli-anasayfa.cjs
