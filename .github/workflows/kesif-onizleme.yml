@@ -9,7 +9,8 @@ permissions:
 
 jobs:
   tarayici:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    container: mcr.microsoft.com/playwright:v1.64.1-noble
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v5
@@ -33,11 +34,20 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: '22'
-      - name: Chromium ve WebKit kur
+      - name: Playwright test paketini kur
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
         run: |
-          npm install --prefix "$RUNNER_TEMP/esite-qa" --no-save --package-lock=false --ignore-scripts @playwright/test@1.56.1
-          "$RUNNER_TEMP/esite-qa/node_modules/.bin/playwright" install --with-deps chromium webkit
+          npm install --prefix "$RUNNER_TEMP/esite-qa" --no-save --package-lock=false --ignore-scripts @playwright/test@1.64.1 > "$RUNNER_TEMP/esite-kurulum.log" 2>&1 || {
+            tail -12 "$RUNNER_TEMP/esite-kurulum.log" | sed 's/^/::error::/'
+            exit 1
+          }
       - name: Mobil gezinme, arama ve koyu tema denetimi
         env:
           NODE_PATH: ${{ runner.temp }}/esite-qa/node_modules
-        run: node tests/renkli-anasayfa.cjs
+        run: |
+          node tests/renkli-anasayfa.cjs > "$RUNNER_TEMP/esite-denetim.log" 2>&1 || {
+            head -12 "$RUNNER_TEMP/esite-denetim.log" | sed 's/^/::error::/'
+            exit 1
+          }
+          cat "$RUNNER_TEMP/esite-denetim.log"
