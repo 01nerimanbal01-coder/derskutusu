@@ -124,11 +124,11 @@ button,input,select{font:inherit;color:inherit}
 .bolum-bas{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px 24px;margin-bottom:22px}
 .bolum-bas h2{font-size:clamp(28px,3vw,38px);font-weight:900}
 .bolum-bas p{color:var(--renkli-soluk);font-weight:700}
-.secim{display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:20px 40px;align-items:start}
+.secim{display:grid;grid-template-columns:repeat(2,minmax(0,1fr)) minmax(258px,.9fr);gap:20px clamp(20px,3vw,40px);align-items:start}
 .grup h3{font-size:14px;font-weight:900;letter-spacing:1.2px;text-transform:uppercase;color:var(--renkli-soluk);margin-bottom:12px}
-.daireler{display:grid;grid-template-columns:repeat(4,86px);gap:14px}
+.daireler{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 .sinif{display:flex;flex-direction:column;align-items:center;gap:8px;text-decoration:none;border-radius:20px}
-.daire{position:relative;display:grid;place-items:center;width:100%;aspect-ratio:1;border-radius:50%;background:var(--r);color:#fff;font-weight:900;font-size:42px;line-height:1;
+.daire{position:relative;display:grid;place-items:center;width:100%;max-width:86px;aspect-ratio:1;border-radius:50%;background:var(--r);color:#fff;font-weight:900;font-size:42px;line-height:1;
   box-shadow:inset 0 -7px 0 rgba(0,0,0,.14),0 14px 22px -14px var(--r);transition:transform .25s}
 .daire::after{content:"";position:absolute;left:22%;top:8%;width:46%;height:20%;border-radius:50%;background:rgba(255,255,255,.28)}
 .sinif:hover .daire{transform:translateY(-5px) rotate(-6deg)}
@@ -223,8 +223,6 @@ button,input,select{font:inherit;color:inherit}
 @media (max-width:1180px){
   .secim{grid-template-columns:repeat(2,minmax(0,1fr))}
   .secim .grup-sinav{grid-column:1/-1}
-  .daireler{grid-template-columns:repeat(4,minmax(0,1fr))}
-  .daire{max-width:86px}
   .dersler{grid-template-columns:repeat(4,minmax(0,1fr))}
   .kartlar{grid-template-columns:repeat(3,minmax(0,1fr))}
   .alt-ic{grid-template-columns:repeat(2,minmax(0,1fr))}
